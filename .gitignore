@@ -1,0 +1,63 @@
+# Reinforce Lab — WordPress Modernization
+
+# ---- Credentials and secrets — NEVER commit ----
+.env
+.env.*
+*.key
+*.pem
+wp-config.php
+wp-config-local.php
+auth.json
+credentials.json
+*-credentials.*
+.htpasswd
+
+# ---- Claude Code local session data ----
+.claude/
+!claude/
+
+# ---- WordPress core and vendor code (not ours) ----
+wp-admin/
+wp-includes/
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup*/
+wp-content/litespeed/
+node_modules/
+vendor/
+
+# ---- Database and site exports (large, and may contain customer data) ----
+*.sql
+*.sql.gz
+*.wpress
+*.zip
+*.tar
+*.tar.gz
+
+# ---- OS noise ----
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ---- Editor ----
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---- Logs ----
+*.log
+debug.log
+error_log
+
+# ---- Leftover rename artifact ----
+.gitignore.txt
+
+# ---- Notes ----
+# The 2GB All-in-One WP Migration backup is deliberately excluded by *.wpress.
+# Keep it in secure storage, not in version control.
+#
+# The URL Decision Register (.xlsx) IS committed on purpose — it is a working
+# document, not a binary artifact, and its history matters.
