@@ -191,6 +191,14 @@ Production has **5 Themer layouts**:
 
 **Still outstanding to close F-001:** the number of **Posts modules inside the "Blog" archive layout**. The layout list cannot show this; the layout must be opened in the builder.
 
+### Confirmed on reinforcelab.online 24 Aug 2026 — real stack `[VERIFIED]`
+
+Read-only inspection of `.online` (full locked stack active: Beaver Builder Pro, **Beaver Themer**, ACF PRO, PowerPack, Jetpack, LiteSpeed, Yoast Premium) confirms **11 `paged-N`→`flpaged` rewrite rules registered**, identical in shape to production and to the clean uniposh install. This closes the rewrite-rule half of F-001 on the actual rebuild environment: **Beaver Builder registers these rules unconditionally the moment the plugin is active** — they are not the trigger. The trigger is the **front end emitting** `/paged-N/M/` links, which occurs when an archive template carries 2+ Posts modules or two Themer layouts overlap a location.
+
+**Empirical seed-and-teardown reproduction on `.online` was offered and deliberately declined (Jamil, 24 Aug 2026).** The evidence is already sufficient on three independent fronts (Beaver Builder forum; production Themer layouts inspected; rewrite rules confirmed on the real `.online` stack). `.online` also has **0 published posts**, so a faithful reproduction would require seeding temporary content — rejected to keep the fresh build clean (consistent with F-003).
+
+**F-001 is CONFIRMED for rebuild purposes. Binding architectural rule stands:** every Beaver Themer archive template contains exactly ONE Posts module bound to the main query; no archive location is targeted by more than one layout. Only production-side gap remaining is **O-013** (count of Posts modules in production's "Blog" archive layout) — needed to explain production's existing 229 junk URLs, but **not blocking the rebuild**.
+
 ---
 
 ## F-002 — Robots.txt patterns validated against all 787 URLs
@@ -315,6 +323,42 @@ Executed by Jamil in the Beaver Themer **Footer** layout (Entire Site).
 **Net effect on the link problem: unchanged.** Six 404s plus one mislabel, sitewide, ~182 internal links each. Link 1 moved from one 404 to a different 404 — now at least the *correct* future URL.
 
 **O-009 remains open.**
+
+---
+
+## F-006 — Novamira MCP was mis-pointed at `uniposh-ah.com`; corrected to `.online`
+**Date:** 24 August 2026
+**Status:** `[VERIFIED — resolved]`
+
+**What was wrong.** The Novamira MCP connection wired into the AI client was bound to an **unrelated WordPress site** — `https://uniposh-ah.com` (site title "uniposh-ah.com", admin `rafiqulposhbd@gmail.com`, theme UniPosh Child), **not** `reinforcelab.online` as CLAUDE.md assumed. It was a Claude Desktop "Local dev" connector, so it did not appear in `claude mcp list`; it is being removed from the desktop app's Connectors UI.
+
+**No production risk.** Only read-only inspection ran against the wrong site before the mismatch was caught (`home_url()`, rewrite-rules read). `reinforcelab.com` was never touched. Rule 1 held.
+
+**The fix.** Removed the uniposh connector and registered `novamira-reinforcelab-onl` in Claude Code **user config** via the `@automattic/mcp-wordpress-remote` **application-password bridge** (Hostinger-recommended; OAuth from cloud clients can be blocked by Hostinger's firewall). Credentials passed only as env vars (`WP_API_URL`, `WP_API_USERNAME`, `WP_API_PASSWORD`); app password stored in plaintext in `~/.claude.json` — rotate via wp-admin → Users → Application Passwords if needed.
+
+**Verified in-session** through the new server: `home_url = site_url = https://reinforcelab.online`, `blog_public = 0` (noindex — correct for dev), WordPress 7.1.
+
+**Tooling note.** WP-CLI shell execution is unavailable on this host — `proc_open`/`exec` are disabled in PHP (Hostinger managed). So `novamira/run-wp-cli` fails; use **`novamira/execute-php`** for diagnostics (e.g. reading the `rewrite_rules` option instead of `wp rewrite list`).
+
+**Incidental evidence for F-001** (gathered on `uniposh-ah.com`, a clean Beaver Builder Pro install — transferable because it is the same locked-stack builder): the `paged-N` → `flpaged` rewrite rules are registered **unconditionally by Beaver Builder Pro** the moment the plugin is active (13 such rules present with no Themer, ACF, PowerPack, content, or archive templates). This refines F-001: the multi-Posts-module / overlapping-layout condition is what causes the front end to **emit and expose** `/paged-N/M/` links for Google to crawl — it is **not** what creates the rewrite rules. Standard `page/N/` pagination coexists correctly. O-013 (count of Posts modules in production's "Blog" archive layout) still stands as the item that closes F-001 outright.
+
+---
+
+## D-012 — SEO / GEO / AEO / AI-search build standard is BINDING
+**Date:** 10 September 2026 · **Status:** APPROVED — ACTIVE
+
+Every page, template, and component built on `.online` (and carried to production) must meet the standard in [seo-geo-aeo-standard.md](seo-geo-aeo-standard.md): semantic HTML + one H1, unique title/meta, self-canonical, correct indexability (`.online` stays noindex until launch), valid schema per template (Organization/Service/FAQPage/BreadcrumbList/Article/Person), consistent brand **entity** ("Reinforce Lab" everywhere — fixes the crawl's entity-inconsistency finding), Core Web Vitals budget, answer-first content with FAQ/Q&A blocks, `llms.txt` + AI-crawler policy, internal-link in/out (no orphans), and the F-001 archive rule (no `/paged-N/`). A page that skips a gate is not done.
+
+**Migration safety** is governed by [migration-and-data-requirements.md](migration-and-data-requirements.md): the `.online → .com` cutover is a content + URL migration, safe only when every one of the 787 URLs has an explicit disposition (PRESERVE / 301 / CONSOLIDATE / RETIRE→301 / KEEP-noindex) and a tested redirect map. **Migration must not be scheduled** until the blocking data lands (backlinks URL-level, full GSC pages+queries, GSC Page Indexing, GA4, WPCode inventory) and the redirect map is complete. 765 of 787 URLs are still PENDING.
+
+---
+
+## D-013 — Design direction locked: dark "Systems Grid" (frontal-calibrated)
+**Date:** 10 Sep 2026 · **Status:** APPROVED — ACTIVE · supersedes the earlier light draft
+
+Active design system `reinforce-lab-systems-grid` (stored on `.online` via Novamira): **dark** ground `#121011`, deep brand red **`#990000`** as the single accent (glow reserved for shapes, never text), **Oswald** headings + buttons (uppercase, Medium), **IBM Plex Sans** body, **IBM Plex Mono** bracketed eyebrows, **zero rounded corners**, full-bleed bands at 1280 inner width, encoded type scale. Calibrated against frontal.so (adapted, not cloned — red not orange).
+
+**Built so far on `.online`:** Home **hero** (locked H1/positioning, animated "SEO ENGINE" systems diagram — inputs → engine → priority-article output, red data-flow pulses, reduced-motion safe) and a **dark glassmorphism header** (native bb-theme header restyled: wordmark logo, Oswald uppercase nav assigned to the `header` location, red CTA button, transparent at top → frosted glass on scroll, content-aligned full-width). Site background set to `#121011`. Pages/nav link to `#` placeholders pending build. All output passes `novamira/check-design` and D-012.
 
 ---
 

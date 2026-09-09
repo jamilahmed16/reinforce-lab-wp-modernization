@@ -74,11 +74,13 @@ All 111 published posts on production were dated into a 9-week window in early 2
 
 ---
 
-## Current state (as of 20 August 2026)
+## Current state (as of 10 September 2026)
 
-**Phase:** DISCOVER complete. PRESERVE open. Building Home → About → service pages.
+**Phase:** DISCOVER complete. **Design system + Home hero + dark glass header BUILT** on `.online`. Strategy-first: the SEO/GEO/AEO build standard and the migration/data plan are written. Next: build the remaining Home sections → About → the 5 service pages.
 
-**The site is in trouble and that's the point of this project:**
+**Design system — LOCKED (D-013):** dark `#121011` ground, brand red `#990000` accent, **Oswald** headings+buttons, **IBM Plex Sans** body, **IBM Plex Mono** eyebrows, **zero rounded corners**, glass header, 1280 content width. Active on `.online` as `reinforce-lab-systems-grid` (Novamira design system). Every page must pass the **SEO/GEO/AEO build standard (D-012, `claude/seo-geo-aeo-standard.md`)**.
+
+**The DISCOVER baseline (still the reason this project exists):**
 
 - Organic traffic **−73%** in 90 days. 525 clicks (Jul 2025) → 27 (Aug 2026).
 - **Only 19.4% of known URLs are indexed** — 93 of 479.
@@ -95,14 +97,9 @@ All 111 published posts on production were dated into a 9-week window in early 2
 
 ## Immediate task
 
-**Confirm the root cause of the `/paged-N/` URLs.**
+**Build the remaining Home page sections on `.online`** (hero + dark glass header are done), then **About** and the **5 approved service pages** — each to the SEO/GEO/AEO build standard (D-012). `/paged-N/` root cause is CONFIRMED (F-001); Novamira is correctly connected to reinforcelab.online (F-006); WP-CLI shell exec is disabled on the host, use `novamira/execute-php`.
 
-```
-wp rewrite list --format=csv
-wp option get rewrite_rules --format=json
-```
-
-Also needed: full plugin list, and an inventory of every active **WPCode** and **Code Snippets** entry on production (read-only — ask Jamil to export it, do not connect to production).
+**Blocking the MIGRATION (not the build)** — Jamil to export: URL-level **backlinks**, full **GSC** pages+queries, **GSC Page Indexing**, **GA4** landing/conversions, and the production **WPCode/Code Snippets** inventory. See `claude/migration-and-data-requirements.md`. **Do not schedule the `.online → .com` migration** until these land and the 787-URL redirect map is complete and tested. 765 of 787 URLs are still PENDING.
 
 ---
 
@@ -113,6 +110,18 @@ Also needed: full plugin list, and an inventory of every active **WPCode** and *
 **When approval is needed: stop and ask.**
 **When data is missing: say what's missing.** Never invent SEO metrics, traffic, rankings, backlinks, or client results.
 **Distinguish** VERIFIED from INFERENCE from RECOMMENDATION.
+
+---
+
+## Model policy — cost/quality split *(agreed 24 Aug 2026)*
+
+**Default: Claude Sonnet 5** for routine `.online` work — `execute-php` diagnostics, drafting decision-log/report entries, config edits, routine PHP reads, building pages.
+
+**Switch to Claude Opus 4.8** for high-stakes, hard-to-reverse judgment — confirming a root cause, any **production change proposal**, migration planning, and anything touching the three rules.
+
+Switch with `/model`. Switching has no fee, but it invalidates the model-scoped prompt cache **once** — switch deliberately, not every few messages. Avoid Opus **fast mode** (`/fast`, premium-priced) when economizing.
+
+*Rationale:* Sonnet 5 is 2.5× cheaper than Opus 4.8 ($2/$10 vs $5/$25 per 1M tokens) and handles the routine work at negligible risk.
 
 ---
 
@@ -132,7 +141,9 @@ Decisions and findings must be written down or they are lost — a separate Cowo
 
 | Doc | Contains |
 |---|---|
-| `claude/decision-log.md` | D-001→D-011, F-001→F-005, open items |
+| `claude/decision-log.md` | D-001→D-013, F-001→F-006, open items |
+| `claude/seo-geo-aeo-standard.md` | **BINDING** build standard: SEO + schema + GEO/AEO/AI/LLM, per-template gates |
+| `claude/migration-and-data-requirements.md` | `.online → .com` redirect/URL map, data needed, launch QA gate |
 | `claude/phase-1-gsc-baseline.md` | 16-month Search Console analysis |
 | `claude/phase-1-indexation-diagnosis.md` | Why the site is de-indexing |
 | `claude/crawl-waste-fix-plan.md` | Root cause analysis + fix plan |
