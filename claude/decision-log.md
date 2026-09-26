@@ -591,6 +591,18 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-020 — Daily GitHub auto-sync (Windows Scheduled Task)
+**Date:** 26 September 2026 · **Status:** ACTIVE
+
+Backlog since 10 Sep committed + pushed (`253c001 → 85db50e`), so GitHub (`github.com/jamilahmed16/reinforce-lab-wp-modernization`, branch `main`) is current. Automated daily sync installed:
+- **Script:** [scripts/daily-git-sync.ps1](../scripts/daily-git-sync.ps1) — checks `git status`; if there are changes, `git add -A` + commit ("Daily sync <ts>") + `git push origin main`; logs to `scripts/git-sync.log` (gitignored). Prepends `D:\Git\cmd` to PATH (Task Scheduler's minimal PATH omits git).
+- **Task:** Windows Scheduled Task **"ReinforceLab Git Sync"**, **daily 8:00 PM**, run as Jamil Ahmed (**Interactive only** — runs when logged on; to run when logged off, edit the task in Task Scheduler and supply the account password).
+- Verified end-to-end: direct run committed+pushed (`85db50e → 1473db2`); scheduled trigger executes the script (logged "no changes" on a clean tree).
+
+**Note:** the daily sync covers the **repo only**. The design-preview HTML (landing/diagnostic/packages) lives in the session scratchpad and is published as claude.ai Artifacts — not in git. Say the word to copy them into `claude/design-previews/` so they're versioned + auto-synced too.
+
+---
+
 ## STILL OPEN — awaiting Jamil
 
 | Ref | Item | Why it matters |
