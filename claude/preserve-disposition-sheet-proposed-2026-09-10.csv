@@ -1,0 +1,834 @@
+#,url_path,type,indexation_status,gsc_clicks,gsc_impr,gsc_avg_pos,inlinks,prior_recommendation,approval_state,D014_disposition,rule
+1,/author/shammi/,Author archive,Not found (404),2,162,17.7,0,FIX — broken URL,PENDING,RETIRE-410,R1 junk/author
+2,/step/landing-page/,Post or Category,Not found (404),0,17,31.4,0,FIX — broken URL,PENDING,RETIRE-410,R1 junk/author
+3,/author/naurinazad/page/2/,Author archive,Not found (404),0,13,34.6,0,FIX — broken URL,PENDING,RETIRE-410,R1 junk/author
+4,/digital-marketing-campaign-analysis/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,1,FIX — broken URL,PENDING,HOLD,R10 uncertain
+5,/services/ai-first-business-systems/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,182,FIX — broken URL,PENDING,PRESERVE,R4 core/service/product
+6,/services/ai-search-optimization-services/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,182,FIX — broken URL,PENDING,PRESERVE,R4 core/service/product
+7,/services/creative/ai-search-optimization-services/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,182,FIX — broken URL,PENDING,PRESERVE,R4 core/service/product
+8,/services/creative/pharmaceutical-seo-services/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,182,FIX — broken URL,PENDING,PRESERVE,R4 core/service/product
+9,/services/generative-engine-optimization-service/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,182,FIX — broken URL,PENDING,PRESERVE,R4 core/service/product
+10,/services/seo-ai-search-audit/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,182,FIX — broken URL,PENDING,PRESERVE,R4 core/service/product
+11,/video-seo/,Post or Category,Not found (404),0,0,0.0,1,FIX — broken URL,PENDING,REBUILD-new,R7 on-strategy unindexed
+12,/author/abusayed/page/2/,(from GSC index report),Not found (404),0,0,0.0,0,FIX — broken URL,PENDING,RETIRE-410,R1 junk/author
+13,/author/abusayed/paged-3/18/,(from GSC index report),Not found (404),0,0,0.0,0,FIX — broken URL,PENDING,RETIRE-410,R1 junk/author
+14,/author/abusayed/paged-3/2/,(from GSC index report),Not found (404),0,0,0.0,0,FIX — broken URL,PENDING,RETIRE-410,R1 junk/author
+15,/author/abusayed/paged-3/4/,(from GSC index report),Not found (404),0,0,0.0,0,FIX — broken URL,PENDING,RETIRE-410,R1 junk/author
+16,/generate-leads-for-business/,(from GSC index report),Not found (404),0,0,0.0,0,FIX — broken URL,PENDING,RETIRE-410,R1 already-404 no-equity
+17,/ideas-for-personal-branding/,(from GSC index report),Not found (404),0,0,0.0,0,FIX — broken URL,PENDING,RETIRE-410,R1 already-404 no-equity
+18,/landing/,(from GSC index report),Not found (404),0,0,0.0,0,FIX — broken URL,PENDING,RETIRE-410,R1 already-404 no-equity
+19,/off-page-seo-checklist/,(from GSC index report),Not found (404),0,0,0.0,0,FIX — broken URL,PENDING,REBUILD-new,R7 on-strategy unindexed
+20,/wp-*.php,(from GSC index report),Not found (404),0,0,0.0,0,FIX — broken URL,PENDING,RETIRE-410,R1 already-404 no-equity
+21,/wp-content/*,(from GSC index report),Not found (404),0,0,0.0,0,FIX — broken URL,PENDING,RETIRE-410,R1 already-404 no-equity
+22,/wp-content/plugins/*,(from GSC index report),Not found (404),0,0,0.0,0,FIX — broken URL,PENDING,RETIRE-410,R1 already-404 no-equity
+23,/wp-content/themes/bb-theme-child/*,(from GSC index report),Not found (404),0,0,0.0,0,FIX — broken URL,PENDING,RETIRE-410,R1 already-404 no-equity
+24,/wp-content/uploads/*,(from GSC index report),Not found (404),0,0,0.0,0,FIX — broken URL,PENDING,RETIRE-410,R1 already-404 no-equity
+25,/successful-digital-marketing-campaign-examples/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),135,318804,43.4,0,PROTECT — TIER 1 + RELINK,APPROVED — PRESERVE,PRESERVE+REBUILD,R5 earner on-strategy
+26,/content-marketing-ideas-for-healthcare-industry/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),93,81965,43.9,0,PROTECT — TIER 1 + RELINK,APPROVED — PRESERVE,PRESERVE-URL+REWRITE,R6 earner off-positioning
+27,/copy-ai-review/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),62,75901,25.1,0,PROTECT — TIER 1 + RELINK,APPROVED — PRESERVE,HUB-REVIEW,R8b affiliate->hub
+28,/social-media-content-ideas-for-clothing-brand/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),713,111746,11.2,32,PROTECT — TIER 1,APPROVED — PRESERVE,HOLD,guardrail money/pos-1
+29,/best-examples-of-great-food-copywriting/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),688,55721,13.4,29,PROTECT — TIER 1,APPROVED — PRESERVE,HOLD,guardrail money/pos-1
+30,/social-media-content-ideas-for-churches/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),286,45445,21.1,29,PROTECT — TIER 1,APPROVED — PRESERVE,HOLD,guardrail money/pos-1
+31,/,Homepage,Not in a not-indexed list — presumed indexed (unconfirmed),273,11268,8.5,920,PROTECT — TIER 1,APPROVED — PRESERVE,PRESERVE,R4 core/service/product
+32,/social-media-content-ideas-for-restaurants/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),256,85563,25.2,46,PROTECT — TIER 1,APPROVED — PRESERVE,HOLD,guardrail money/pos-1
+33,/snapchat-content-ideas/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),255,75239,10.4,77,PROTECT — TIER 1,APPROVED — PRESERVE,HOLD,guardrail money/pos-1
+34,/content-marketing-for-banks/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),219,62791,36.0,619,PROTECT — TIER 1,APPROVED — PRESERVE,PRESERVE-URL+REWRITE,R6 earner off-positioning
+35,/social-media-content-ideas-for-hotels/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),202,50418,40.2,44,PROTECT — TIER 1,APPROVED — PRESERVE,PRESERVE-URL+REWRITE,R6 earner off-positioning
+36,/social-media-content-ideas-for-photographers/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),115,31477,27.6,41,PROTECT — TIER 1,APPROVED — PRESERVE,PRESERVE-URL+REWRITE,R6 earner off-positioning
+37,/top-advantages-and-disadvantages-of-using-social-media/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),112,150346,28.8,40,PROTECT — TIER 1,APPROVED — PRESERVE,PRESERVE+REBUILD,R5 earner on-strategy
+38,/social-media-content-ideas-for-nonprofits/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),95,26914,29.2,630,PROTECT — TIER 1,APPROVED — PRESERVE,PRESERVE-URL+REWRITE,R6 earner off-positioning
+39,/sensory-marketing-know-how-5-senses-marketing-works-best-for-businesses/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),90,43377,21.9,65,PROTECT — TIER 1,APPROVED — PRESERVE,PRESERVE+REBUILD,R5 earner on-strategy
+40,/creative-content-marketing-ideas/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),75,115396,39.6,59,PROTECT — TIER 1,APPROVED — PRESERVE,PRESERVE-URL+REWRITE,R6 earner off-positioning
+41,/services/website-maintenance-services/,Service page,Discovered - currently not indexed,66,277583,32.6,189,"RECOVER — never crawled, earns clicks",APPROVED — PRESERVE,PRESERVE,R4 core/service/product
+42,/writesonic-review/,Post or Category,Discovered - currently not indexed,34,42500,20.8,0,"RECOVER — never crawled, earns clicks",PENDING,HUB-REVIEW,R8b affiliate->hub
+43,/20-content-marketing-ideas-for-restaurants/,Post or Category,Discovered - currently not indexed,33,47095,58.3,69,"RECOVER — never crawled, earns clicks",PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+44,/a2-wordpress-hosting/,Post or Category,Discovered - currently not indexed,30,27510,17.7,0,"RECOVER — never crawled, earns clicks",PENDING,HUB-REVIEW,R8b affiliate->hub
+45,/how-to-avoid-zero-click-searches/,Post or Category,Discovered - currently not indexed,27,10805,45.9,16,"RECOVER — never crawled, earns clicks",PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+46,/youtube-seo/,Post or Category,Discovered - currently not indexed,24,206032,59.1,613,"RECOVER — never crawled, earns clicks",PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+47,/careers/,Corporate page,Discovered - currently not indexed,24,1747,6.6,187,"RECOVER — never crawled, earns clicks",PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+48,/services/wordpress-website-design-service/,Service page,Discovered - currently not indexed,22,281585,53.6,374,"RECOVER — never crawled, earns clicks",PENDING,PRESERVE,R4 core/service/product
+49,/real-estate-social-media-posts-ideas/,Post or Category,Discovered - currently not indexed,21,28368,40.8,571,"RECOVER — never crawled, earns clicks",PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+50,/how-can-companies-be-socially-responsible-marketers/,Post or Category,Discovered - currently not indexed,17,14226,34.4,0,"RECOVER — never crawled, earns clicks",PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+51,/seo-mistakes-to-avoid/,Post or Category,Discovered - currently not indexed,13,80749,45.2,608,"RECOVER — never crawled, earns clicks",PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+52,/jasper-review/,Post or Category,Discovered - currently not indexed,11,19339,27.1,0,"RECOVER — never crawled, earns clicks",PENDING,HUB-REVIEW,R8b affiliate->hub
+53,/management/,Corporate page,Discovered - currently not indexed,10,930,5.3,184,"RECOVER — never crawled, earns clicks",PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+54,/cloudways-hosting/,Post or Category,Discovered - currently not indexed,9,14402,24.1,0,"RECOVER — never crawled, earns clicks",PENDING,HUB-REVIEW,R8b affiliate->hub
+55,/content-marketing-vs-social-media-marketing/,Post or Category,Discovered - currently not indexed,8,53218,52.4,0,"RECOVER — never crawled, earns clicks",PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+56,/about-us/,Corporate page,Discovered - currently not indexed,8,2145,5.0,369,"RECOVER — never crawled, earns clicks",PENDING,PRESERVE,R4 core/service/product
+57,/kinsta-wordpress-hosting/,Post or Category,Discovered - currently not indexed,6,13789,35.8,0,"RECOVER — never crawled, earns clicks",PENDING,HUB-REVIEW,R8b affiliate->hub
+58,/clickup-review/,Post or Category,Discovered - currently not indexed,5,6149,46.0,27,"RECOVER — never crawled, earns clicks",PENDING,HUB-REVIEW,R8b affiliate->hub
+59,/what-does-an-seo-consultant-do/,Post or Category,Discovered - currently not indexed,4,617544,53.4,0,"RECOVER — never crawled, earns clicks",PENDING,REBUILD-new,R7 on-strategy unindexed
+60,/services/best-search-engine-optimization-services/,Service page,Discovered - currently not indexed,2,436634,63.8,194,"RECOVER — never crawled, earns clicks",PENDING,PRESERVE,R4 core/service/product
+61,/blog-promotion-ideas/,Blog index,Discovered - currently not indexed,2,48421,59.4,28,"RECOVER — never crawled, earns clicks",PENDING,HOLD,R10 uncertain
+62,/how-to-find-your-target-audience-on-instagram/,Post or Category,Discovered - currently not indexed,2,11661,43.3,33,"RECOVER — never crawled, earns clicks",PENDING,HOLD,R10 uncertain
+63,/clients/,Corporate page,Discovered - currently not indexed,2,314,6.7,185,"RECOVER — never crawled, earns clicks",PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+64,/author/sabera/,Author archive,Discovered - currently not indexed,2,239,10.5,0,"RECOVER — never crawled, earns clicks",PENDING,RETIRE-410,R1 junk/author
+65,/semrush-review/,Post or Category,Discovered - currently not indexed,1,6974,67.8,25,"RECOVER — never crawled, earns clicks",PENDING,HUB-REVIEW,R8b affiliate->hub
+66,/robots-txt-for-seo-a-complete-guide/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),49,86752,66.8,0,PROTECT — TIER 2 + RELINK,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+67,/content-marketing-for-plastic-surgeons/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),31,109742,56.8,0,PROTECT — TIER 2 + RELINK,PENDING,HOLD,guardrail money/pos-1
+68,/nexcess-wordpress-hosting/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),26,25261,24.3,0,PROTECT — TIER 2 + RELINK,PENDING,HUB-REVIEW,R8b affiliate->hub
+69,/ideas-for-personal-website-content/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),23,19288,40.6,0,PROTECT — TIER 2 + RELINK,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+70,/guide-to-ux-copywriting/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),22,23056,44.1,0,PROTECT — TIER 2 + RELINK,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+71,/namecheap-wordpress-hosting/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),10,65287,35.2,0,PROTECT — TIER 2 + RELINK,PENDING,HUB-REVIEW,R8b affiliate->hub
+72,/best-digital-marketing-agency-in-dhaka-bangladesh/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),48,84260,52.6,30,PROTECT — TIER 2,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+73,/our-team/,Corporate page,Not in a not-indexed list — presumed indexed (unconfirmed),29,1750,6.2,184,PROTECT — TIER 2,PENDING,PRESERVE,R4 core/service/product
+74,/flywheel-wordpress-hosting/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),27,32891,18.7,53,PROTECT — TIER 2,PENDING,HUB-REVIEW,R8b affiliate->hub
+75,/google-penalty-recovery/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),23,148927,44.6,73,PROTECT — TIER 2,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+76,/content-marketing-ideas-for-small-business/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),20,94558,56.7,55,PROTECT — TIER 2,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+77,/content-marketing-ideas-for-social-media/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),19,41726,47.9,86,PROTECT — TIER 2,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+78,/different-types-of-facebook-ads/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),19,30389,31.2,151,PROTECT — TIER 2,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+79,/contact-us/,Corporate page,Not in a not-indexed list — presumed indexed (unconfirmed),17,1520,13.3,185,PROTECT — TIER 2,PENDING,PRESERVE,R4 core/service/product
+80,/author/catherine/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),17,482,6.9,47,PROTECT — TIER 2,PENDING,RETIRE-410,R1 junk/author
+81,/simple-digital-marketing-strategies-that-you-need-to-survive-for/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),14,128213,54.1,25,PROTECT — TIER 2,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+82,/services/off-page-seo-services/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),13,47531,40.6,12,PROTECT — TIER 2,PENDING,PRESERVE,R4 core/service/product
+83,/dreamhost-wordpress-hosting/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),11,27257,34.6,23,PROTECT — TIER 2,PENDING,HUB-REVIEW,R8b affiliate->hub
+84,/a-complete-guide-to-social-media-management/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),10,100365,58.9,14,PROTECT — TIER 2,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+85,/how-to-write-seo-friendly-blog-posts/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),9,37432,61.2,0,PRESERVE — TIER 3 + RELINK,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+86,/the-anatomy-of-a-website/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),9,6216,43.0,0,PRESERVE — TIER 3 + RELINK,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+87,/ai-content-writing-tools/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),8,15261,62.5,0,PRESERVE — TIER 3 + RELINK,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+88,/b2b-seo/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),3,9515,72.7,0,PRESERVE — TIER 3 + RELINK,PENDING,REBUILD-new,R7 on-strategy unindexed
+89,/best-cloud-web-hosting-services/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),3,3156,34.7,0,PRESERVE — TIER 3 + RELINK,PENDING,HUB-REVIEW,R8b affiliate->hub
+90,/services/business-consultancy-service/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),2,2555,48.0,0,PRESERVE — TIER 3 + RELINK,PENDING,PRESERVE,R4 core/service/product
+91,/hostinger-web-hosting/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),2,1773,18.3,0,PRESERVE — TIER 3 + RELINK,PENDING,HUB-REVIEW,R8b affiliate->hub
+92,/dynamic-creative-optimization/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),1,10052,45.4,0,PRESERVE — TIER 3 + RELINK,PENDING,HOLD,R10 uncertain
+93,/snapchat-content-ideas/#How_to_Use_Snapchat_for_Business,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),1,6572,8.0,0,PRESERVE — TIER 3 + RELINK,PENDING,HOLD,guardrail money/pos-1
+94,/best-web-hosting-services/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),1,2442,26.1,0,PRESERVE — TIER 3 + RELINK,PENDING,HUB-REVIEW,R8b affiliate->hub
+95,/social-media-content-ideas-for-churches/#02_Post_about_your_Church_Ministry_Leaders,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),1,403,8.1,0,PRESERVE — TIER 3 + RELINK,PENDING,HOLD,guardrail money/pos-1
+96,/invest-in-seo/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),8,40250,44.4,87,PRESERVE — TIER 3,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+97,/church-marketing-strategies/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),8,38010,47.3,37,PRESERVE — TIER 3,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+98,/content-marketing-strategy-for-b2b/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),8,27386,66.4,43,PRESERVE — TIER 3,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+99,/portfolio/,Corporate page,Not in a not-indexed list — presumed indexed (unconfirmed),7,1859,4.1,367,PRESERVE — TIER 3,PENDING,PRESERVE,R4 core/service/product
+100,/seo-services/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),5,88963,55.8,24,PRESERVE — TIER 3,PENDING,PRESERVE,R4 core/service/product
+101,/services/content-marketing-services/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),5,1885,54.7,200,PRESERVE — TIER 3,PENDING,PRESERVE,R4 core/service/product
+102,/b2b-seo-agencies/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),4,406219,56.3,22,PRESERVE — TIER 3,PENDING,REBUILD-new,R7 on-strategy unindexed
+103,/author/catherine/page/2/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),4,200,26.1,17,PRESERVE — TIER 3,PENDING,RETIRE-410,R1 junk/author
+104,/rank-tracker-review/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),3,236899,71.1,90,PRESERVE — TIER 3,PENDING,HUB-REVIEW,R8b affiliate->hub
+105,/what-is-martech/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),3,71851,66.9,65,PRESERVE — TIER 3,PENDING,REBUILD-new,R7 on-strategy unindexed
+106,/blog/,Blog index,Not in a not-indexed list — presumed indexed (unconfirmed),3,1297,3.6,421,PRESERVE — TIER 3,PENDING,PRESERVE,R4 core/service/product
+107,/surfer-seo-review/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),2,60869,46.6,89,PRESERVE — TIER 3,PENDING,HUB-REVIEW,R8b affiliate->hub
+108,/services/technical-seo-services/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),2,27562,51.6,12,PRESERVE — TIER 3,PENDING,PRESERVE,R4 core/service/product
+109,/ux-writing-vs-copywriting/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),2,5351,40.3,45,PRESERVE — TIER 3,PENDING,HOLD,R10 uncertain
+110,/get-a-free-quote/,Corporate page,Not in a not-indexed list — presumed indexed (unconfirmed),2,1145,14.0,386,PRESERVE — TIER 3,PENDING,PRESERVE,R4 core/service/product
+111,/terms-conditions/,Corporate page,Not in a not-indexed list — presumed indexed (unconfirmed),2,443,7.3,193,PRESERVE — TIER 3,PENDING,PRESERVE,R4 core/service/product
+112,/projects/inpace-shop/,Project (CPT),Not in a not-indexed list — presumed indexed (unconfirmed),2,330,11.6,5,PRESERVE — TIER 3,PENDING,PRESERVE,R4 core/service/product
+113,/agency-partner-program-wp-engine-landing/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),1,8070,30.6,2,PRESERVE — TIER 3,PENDING,HUB-REVIEW,R8b affiliate->hub
+114,/wordpress-plugins-for-bloggers/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),1,3041,46.8,16,PRESERVE — TIER 3,PENDING,HOLD,R10 uncertain
+115,/projects/access-tutor/,Project (CPT),Not in a not-indexed list — presumed indexed (unconfirmed),1,534,16.8,5,PRESERVE — TIER 3,PENDING,PRESERVE,R4 core/service/product
+116,/projects/iba-alumni-lottery/,Project (CPT),Not in a not-indexed list — presumed indexed (unconfirmed),1,341,15.0,5,PRESERVE — TIER 3,PENDING,PRESERVE,R4 core/service/product
+117,/privacy-policy/,Corporate page,Not in a not-indexed list — presumed indexed (unconfirmed),1,180,10.2,184,PRESERVE — TIER 3,PENDING,PRESERVE,R4 core/service/product
+118,/author/jamilahmed/page/2/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),1,35,22.8,19,PRESERVE — TIER 3,PENDING,RETIRE-410,R1 junk/author
+119,/find-competitor-keywords/,Post or Category,Discovered - currently not indexed,0,133958,66.1,26,RECOVER — never crawled,PENDING,REBUILD-new,R7 on-strategy unindexed
+120,/bluehost-wordpress-hosting/,Post or Category,Discovered - currently not indexed,0,22223,40.5,0,RECOVER — never crawled,PENDING,HUB-REVIEW,R8b affiliate->hub
+121,/seo-content-creator-2/,Post or Category,Discovered - currently not indexed,0,20000,64.4,27,RECOVER — never crawled,PENDING,REBUILD-new,R7 on-strategy unindexed
+122,/services/best-website-copywriting-services/,Service page,Discovered - currently not indexed,0,19401,49.5,14,RECOVER — never crawled,PENDING,PRESERVE,R4 core/service/product
+123,/services/best-blog-writing-services/,Service page,Discovered - currently not indexed,0,10171,37.9,11,RECOVER — never crawled,PENDING,PRESERVE,R4 core/service/product
+124,/how-to-do-local-seo-audit-11-easy-steps/,Post or Category,Discovered - currently not indexed,0,8340,67.5,0,RECOVER — never crawled,PENDING,REBUILD-new,R7 on-strategy unindexed
+125,/a-complete-woocommerce-seo-guide/,Post or Category,Discovered - currently not indexed,0,6112,72.4,0,RECOVER — never crawled,PENDING,REBUILD-new,R7 on-strategy unindexed
+126,/services/,Service page,Discovered - currently not indexed,0,1290,4.0,372,RECOVER — never crawled,PENDING,PRESERVE,R4 core/service/product
+127,/the-ultimate-guide-to-branding-businesses-on-tiktok/,Post or Category,Discovered - currently not indexed,0,827,39.0,0,RECOVER — never crawled,PENDING,HOLD,R10 uncertain
+128,/guide-to-social-media-advertising/,Post or Category,Discovered - currently not indexed,0,209,45.1,20,RECOVER — never crawled,PENDING,HOLD,R10 uncertain
+129,/author/jamilahmed/,Author archive,Discovered - currently not indexed,0,162,6.4,44,RECOVER — never crawled,PENDING,RETIRE-410,R1 junk/author
+130,/best-seo-practices/,Post or Category,Discovered - currently not indexed,0,60,74.0,100,RECOVER — never crawled,PENDING,REBUILD-new,R7 on-strategy unindexed
+131,/digital-content-marketing-trends/,Post or Category,Discovered - currently not indexed,0,28,33.8,23,RECOVER — never crawled,PENDING,HOLD,R10 uncertain
+132,/product/wordpress-website-design-services/,WooCommerce,Discovered - currently not indexed,0,10,62.0,0,RECOVER — never crawled,PENDING,PRESERVE,R4 core/service/product
+133,/cost-to-advertise-on-instagram/,Post or Category,Discovered - currently not indexed,0,6,37.3,0,RECOVER — never crawled,PENDING,HOLD,R10 uncertain
+134,/social-media-management/,Post or Category,Discovered - currently not indexed,0,6,3.3,17,RECOVER — never crawled,PENDING,HOLD,R10 uncertain
+135,/content-marketing-strategy-plan/,Post or Category,Discovered - currently not indexed,0,5,21.4,19,RECOVER — never crawled,PENDING,HOLD,R10 uncertain
+136,/product/search-engine-optimization-service-enterprise-monthly/,WooCommerce,Discovered - currently not indexed,0,3,24.0,0,RECOVER — never crawled,PENDING,PRESERVE,R4 core/service/product
+137,/what-is-technical-seo-and-why-is-it-important/,Post or Category,Discovered - currently not indexed,0,3,5.3,60,RECOVER — never crawled,PENDING,REBUILD-new,R7 on-strategy unindexed
+138,/product/search-engine-optimization-service-starter-yearly/,WooCommerce,Discovered - currently not indexed,0,2,28.5,0,RECOVER — never crawled,PENDING,PRESERVE,R4 core/service/product
+139,/product/search-engine-optimization-service-growth-monthly/,WooCommerce,Discovered - currently not indexed,0,1,12.0,0,RECOVER — never crawled,PENDING,PRESERVE,R4 core/service/product
+140,/product/search-engine-optimization-service-growth-yearly/,WooCommerce,Discovered - currently not indexed,0,1,21.0,0,RECOVER — never crawled,PENDING,PRESERVE,R4 core/service/product
+141,/services/ecommerce-website-design-service/,Service page,Discovered - currently not indexed,0,0,0.0,10,RECOVER — never crawled,PENDING,PRESERVE,R4 core/service/product
+142,/content-marketing-ideas-for-real-estate/,Post or Category,Discovered - currently not indexed,0,0,0.0,47,RECOVER — never crawled,PENDING,CONSOLIDATE,R9 thin idea cluster
+143,/digital-marketing-metrics-to-measure/,Post or Category,Discovered - currently not indexed,0,0,0.0,78,RECOVER — never crawled,PENDING,HOLD,R10 uncertain
+144,/digital-marketing/social-media-marketing/,Post or Category,Discovered - currently not indexed,0,0,0.0,65,RECOVER — never crawled,PENDING,HOLD,R10 uncertain
+145,/how-much-facebook-advertising-cost/,Post or Category,Discovered - currently not indexed,0,0,0.0,7,RECOVER — never crawled,PENDING,HOLD,R10 uncertain
+146,/social-media-analytics/,Post or Category,Discovered - currently not indexed,0,0,0.0,20,RECOVER — never crawled,PENDING,HOLD,R10 uncertain
+147,/social-media/,Post or Category,Discovered - currently not indexed,0,0,0.0,35,RECOVER — never crawled,PENDING,HOLD,R10 uncertain
+148,/checkout/,(from GSC index report),Discovered - currently not indexed,0,0,0.0,0,RECOVER — never crawled,PENDING,KEEP-noindex,R3 transactional
+149,/dental-seo/,(from GSC index report),Discovered - currently not indexed,0,0,0.0,0,RECOVER — never crawled,PENDING,REBUILD-new,R7 on-strategy unindexed
+150,/digitalocean-web-hosting/,(from GSC index report),Discovered - currently not indexed,0,0,0.0,0,RECOVER — never crawled,PENDING,HUB-REVIEW,R8b affiliate->hub
+151,/healthcare/,(from GSC index report),Discovered - currently not indexed,0,0,0.0,0,RECOVER — never crawled,PENDING,REBUILD-new,R7 on-strategy unindexed
+152,/how-to-build-a-website-with-kamatera-managed-hosting/,(from GSC index report),Discovered - currently not indexed,0,0,0.0,0,RECOVER — never crawled,PENDING,HUB-REVIEW,R8b affiliate->hub
+153,/how-to-find-your-target-audience-on-social-media/,(from GSC index report),Discovered - currently not indexed,0,0,0.0,0,RECOVER — never crawled,PENDING,HOLD,R10 uncertain
+154,/know-a-to-z-of-conversational-marketing-to-increase-your-sales/,(from GSC index report),Discovered - currently not indexed,0,0,0.0,0,RECOVER — never crawled,PENDING,HOLD,R10 uncertain
+155,/my-account/,(from GSC index report),Discovered - currently not indexed,0,0,0.0,0,RECOVER — never crawled,PENDING,KEEP-noindex,R3 transactional
+156,/product/wordpress-web-design-and-development-growth/,(from GSC index report),Discovered - currently not indexed,0,0,0.0,0,RECOVER — never crawled,PENDING,PRESERVE,R4 core/service/product
+157,/product/wordpress-web-design-and-development-starter/,(from GSC index report),Discovered - currently not indexed,0,0,0.0,0,RECOVER — never crawled,PENDING,PRESERVE,R4 core/service/product
+158,/services/creative/,(from GSC index report),Discovered - currently not indexed,0,0,0.0,0,RECOVER — never crawled,PENDING,PRESERVE,R4 core/service/product
+159,/top-benefits-of-content-marketing/,(from GSC index report),Discovered - currently not indexed,0,0,0.0,0,RECOVER — never crawled,PENDING,HOLD,R10 uncertain
+160,/wp-engine-wordpress-hosting/,(from GSC index report),Discovered - currently not indexed,0,0,0.0,0,RECOVER — never crawled,PENDING,HUB-REVIEW,R8b affiliate->hub
+161,/marketing-for-websites/,Post or Category,Crawled - currently not indexed,8,33826,44.1,22,DECLINED BY GOOGLE — rebuild or remove,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+162,/services/best-affordable-seo-link-building-services/,Service page,Crawled - currently not indexed,3,34728,37.2,13,DECLINED BY GOOGLE — rebuild or remove,PENDING,PRESERVE,R4 core/service/product
+163,/services/best-seo-content-writing-services/,Service page,Crawled - currently not indexed,2,75636,57.9,12,DECLINED BY GOOGLE — rebuild or remove,PENDING,PRESERVE,R4 core/service/product
+164,/latest-seo-update-search-engine-updates/,Post or Category,Crawled - currently not indexed,2,10994,32.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,REBUILD-new,R7 on-strategy unindexed
+165,/author/farihaanika/,Author archive,Crawled - currently not indexed,2,238,12.9,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+166,/how-to-optimize-linkedin-profile-for-seo/,Post or Category,Crawled - currently not indexed,1,6906,58.1,60,DECLINED BY GOOGLE — rebuild or remove,PENDING,REBUILD-new,R7 on-strategy unindexed
+167,/best-ways-of-mobile-optimization-to-increase-your-conversions/,Post or Category,Crawled - currently not indexed,1,6039,69.5,21,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+168,/author/naurinazad/,Author archive,Crawled - currently not indexed,1,103,7.5,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+169,/ecommerce-retargeting-strategies-to-boost-sales/,Post or Category,Crawled - currently not indexed,0,5534,57.9,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+170,/how-to-use-keywords-in-content/,Post or Category,Crawled - currently not indexed,0,2223,41.6,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,REBUILD-new,R7 on-strategy unindexed
+171,/what-is-keyword-difficulty-in-seo/,Post or Category,Crawled - currently not indexed,0,839,84.2,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,REBUILD-new,R7 on-strategy unindexed
+172,/what-are-the-best-social-media-platforms-for-business/,Post or Category,Crawled - currently not indexed,0,490,25.0,24,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+173,/product/wordpress-web-design-and-development-enterprise/,WooCommerce,Crawled - currently not indexed,0,296,58.3,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,PRESERVE,R4 core/service/product
+174,/best-ways-of-using-content-marketing-for-brand-awareness/,Post or Category,Crawled - currently not indexed,0,144,58.3,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,CONSOLIDATE,R9 thin idea cluster
+175,/author/sabera/page/3/,Author archive,Crawled - currently not indexed,0,61,18.8,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+176,/what-is-content-marketing/,Post or Category,Crawled - currently not indexed,0,56,69.5,68,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+177,/product/search-engine-optimization-service-enterprise-yearly/,WooCommerce,Crawled - currently not indexed,0,35,68.4,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,PRESERVE,R4 core/service/product
+178,/video-marketing/,Post or Category,Crawled - currently not indexed,0,31,13.7,17,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+179,/content-ideas-for-personal-trainers/,Post or Category,Crawled - currently not indexed,0,26,7.4,25,DECLINED BY GOOGLE — rebuild or remove,PENDING,CONSOLIDATE,R9 thin idea cluster
+180,/author/naurinazad/page/3/,Author archive,Crawled - currently not indexed,0,25,24.8,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+181,/product/search-engine-optimization-service-starter-monthly/,WooCommerce,Crawled - currently not indexed,0,22,22.6,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,PRESERVE,R4 core/service/product
+182,/shop/,WooCommerce,Crawled - currently not indexed,0,17,6.8,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,PRESERVE,R4 core/service/product
+183,/blog/page/2/,Paginated archive,Crawled - currently not indexed,0,8,9.8,41,DECLINED BY GOOGLE — rebuild or remove,PENDING,KEEP-noindex,R3 archive pagination
+184,/complete-content-marketing-guide-that-you-need/,Post or Category,Crawled - currently not indexed,0,3,6.3,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+185,/author/shammi/page/2/,Author archive,Crawled - currently not indexed,0,2,15.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+186,/digital-marketing-competitor/,Post or Category,Crawled - currently not indexed,0,1,13.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+187,/what-is-social-media-marketing/,Post or Category,Crawled - currently not indexed,0,1,6.0,23,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+188,/b2b-marketing/page/2/,Paginated archive,Crawled - currently not indexed,0,0,0.0,17,DECLINED BY GOOGLE — rebuild or remove,PENDING,KEEP-noindex,R3 archive pagination
+189,/digital-marketing/content-marketing/page/2/,Paginated archive,Crawled - currently not indexed,0,0,0.0,17,DECLINED BY GOOGLE — rebuild or remove,PENDING,KEEP-noindex,R3 archive pagination
+190,/b2b-marketing/,Post or Category,Crawled - currently not indexed,0,0,0.0,133,DECLINED BY GOOGLE — rebuild or remove,PENDING,REBUILD-new,R7 on-strategy unindexed
+191,/business/,Post or Category,Crawled - currently not indexed,0,0,0.0,1581,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+192,/business/small-business/,Post or Category,Crawled - currently not indexed,0,0,0.0,103,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+193,/clothing-brand-marketing/,Post or Category,Crawled - currently not indexed,0,0,0.0,5,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+194,/digital-marketing-competitor-analysis/,Post or Category,Crawled - currently not indexed,0,0,0.0,29,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+195,/digital-marketing/content-marketing/,Post or Category,Crawled - currently not indexed,0,0,0.0,95,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+196,/digital-marketing/search-engine-optimization/,Post or Category,Crawled - currently not indexed,0,0,0.0,54,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+197,/digital-marketing/search-engine-optimization/local-seo/,Post or Category,Crawled - currently not indexed,0,0,0.0,26,DECLINED BY GOOGLE — rebuild or remove,PENDING,REBUILD-new,R7 on-strategy unindexed
+198,/seo-tips/,Post or Category,Crawled - currently not indexed,0,0,0.0,58,DECLINED BY GOOGLE — rebuild or remove,PENDING,REBUILD-new,R7 on-strategy unindexed
+199,/seo-website-design/,Post or Category,Crawled - currently not indexed,0,0,0.0,617,DECLINED BY GOOGLE — rebuild or remove,PENDING,REBUILD-new,R7 on-strategy unindexed
+200,/social-media-advertising/,Post or Category,Crawled - currently not indexed,0,0,0.0,20,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+201,/social-media-marketing-trends/,Post or Category,Crawled - currently not indexed,0,0,0.0,29,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+202,/strategy/,Post or Category,Crawled - currently not indexed,0,0,0.0,84,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+203,/trends/,Post or Category,Crawled - currently not indexed,0,0,0.0,11,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+204,/video-marketing-ideas-for-small-business/,Post or Category,Crawled - currently not indexed,0,0,0.0,26,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+205,/web-design/,Post or Category,Crawled - currently not indexed,0,0,0.0,23,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+206,/author-sitemap.xml,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+207,/author/abusayed/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+208,/author/catherine/feed/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+209,/author/shammi/feed/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+210,/b2b-marketing/feed/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+211,/category-sitemap.xml,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+212,/church-marketing/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+213,/church-marketing/page/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,KEEP-noindex,R3 archive pagination
+214,/clothing-brand-marketing/page/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,KEEP-noindex,R3 archive pagination
+215,/copywriting/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+216,/copywriting/page/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,KEEP-noindex,R3 archive pagination
+217,/digital-marketing-competitor/page/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,KEEP-noindex,R3 archive pagination
+218,/feed/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+219,/ftc-disclosure/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,PRESERVE,R4 core/service/product
+220,/get-a-,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+221,/google-my-business-optimization-service/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+222,/hotel-marketing/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+223,/hotel-marketing/page/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,KEEP-noindex,R3 archive pagination
+224,/legal-statement/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,PRESERVE,R4 core/service/product
+225,/page-sitemap.xml,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+226,/post-sitemap.xml,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+227,/product-category/uncategorized/feed/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+228,/product-sitemap.xml,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+229,/project/inpace/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,PRESERVE,R4 core/service/product
+230,/projects-sitemap.xml,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+231,/real-estate-marketing/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+232,/robots-txt-for-seo-a-complete-guide/feed/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+233,/serv.../content-marketing-services/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,HOLD,R10 uncertain
+234,/services/content-,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+235,/services/ecommerce-,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,PRESERVE,R4 core/service/product
+236,/services/graphic-design-services,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,PRESERVE,R4 core/service/product
+237,/services/ppc-management-services,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,PRESERVE,R4 core/service/product
+238,/shop/feed/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+239,/social-media-advertising/page/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,KEEP-noindex,R3 archive pagination
+240,/social-media-management/feed/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+241,/social-media-management/page/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,KEEP-noindex,R3 archive pagination
+242,/stablehost-wordpress-hosting/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,HUB-REVIEW,R8b affiliate->hub
+243,/trends/page/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,KEEP-noindex,R3 archive pagination
+244,/video-marekting/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+245,/video-marekting/feed/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+246,/web-hosting/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,HUB-REVIEW,R8b affiliate->hub
+247,/web-hosting/page/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,KEEP-noindex,R3 archive pagination
+248,/wp-json/wc/store/v1/cart/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,DECLINED BY GOOGLE — rebuild or remove,PENDING,RETIRE-410,R1 junk/author
+249,/best-local-search-engine-optimization-service/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,102060,60.4,0,HIGH IMPRESSION / ZERO CLICK,PENDING,HOLD,R10 uncertain
+250,/product/wordpress-web-design-and-development-growth/?add-to-cart=231223,Parameter URL,Not in a not-indexed list — presumed indexed (unconfirmed),0,6,9.8,0,FIX — parameter indexed,PENDING,PRESERVE,R4 core/service/product
+251,/product/search-engine-optimization-service-starter-yearly/?add-to-cart=227503,Parameter URL,Not in a not-indexed list — presumed indexed (unconfirmed),0,4,21.0,0,FIX — parameter indexed,PENDING,PRESERVE,R4 core/service/product
+252,/product/search-engine-optimization-service-enterprise-monthly/?add-to-cart=227503,Parameter URL,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,105.0,0,FIX — parameter indexed,PENDING,PRESERVE,R4 core/service/product
+253,/product/search-engine-optimization-service-enterprise-yearly/?add-to-cart=227503,Parameter URL,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,58.0,0,FIX — parameter indexed,PENDING,PRESERVE,R4 core/service/product
+254,/product/wordpress-web-design-and-development-starter/?add-to-cart=229278,Parameter URL,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,6.0,0,FIX — parameter indexed,PENDING,PRESERVE,R4 core/service/product
+255,/product/search-engine-optimization-service-enterprise-yearly/?add-to-cart=229210,Parameter URL,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,70.0,0,FIX — parameter indexed,PENDING,PRESERVE,R4 core/service/product
+256,/?wc-ajax=ppc-change-cart,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — parameter indexed,PENDING,RETIRE-410,R1 junk/author
+257,/?wc-ajax=ppc-create-order,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — parameter indexed,PENDING,RETIRE-410,R1 junk/author
+258,/?wc-ajax=ppc-create-payment-token,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — parameter indexed,PENDING,RETIRE-410,R1 junk/author
+259,/?wc-ajax=ppc-create-setup-token,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — parameter indexed,PENDING,RETIRE-410,R1 junk/author
+260,/?wc-ajax=ppc-save-checkout-form,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — parameter indexed,PENDING,RETIRE-410,R1 junk/author
+261,/?wc-ajax=ppc-update-customer-id,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — parameter indexed,PENDING,RETIRE-410,R1 junk/author
+262,/?wc-ajax=ppc-vault-paypal,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — parameter indexed,PENDING,RETIRE-410,R1 junk/author
+263,/product/search-engine-optimization-service-growth-yearly/?add-to-cart=229277,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — parameter indexed,PENDING,PRESERVE,R4 core/service/product
+264,/product/wordpress-website-design-services/?add-to-cart=229278,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — parameter indexed,PENDING,PRESERVE,R4 core/service/product
+265,/off-page-seo/,(from GSC index report),Page with redirect,0,0,0.0,0,FIX — malformed URL,PENDING,REBUILD-new,R7 on-strategy unindexed
+266,/successful-digital-marketing-campaign-examples//1000,(from GSC index report),Page with redirect,0,0,0.0,0,FIX — malformed URL,PENDING,HOLD,R10 uncertain
+267,/successful-digital-marketing-campaign-examples/1000,(from GSC index report),Page with redirect,0,0,0.0,0,FIX — malformed URL,PENDING,HOLD,R10 uncertain
+268,/services/social-media-management-service/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,289,12.2,0,REBUILD (no organic value),PENDING,PRESERVE,R4 core/service/product
+269,/services/social-media-marketing-service/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,191,25.4,204,REBUILD (no organic value),PENDING,PRESERVE,R4 core/service/product
+270,/services/creative/graphic-design-services/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,151,47.0,188,REBUILD (no organic value),PENDING,PRESERVE,R4 core/service/product
+271,/services/press-release-services/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,38,39.9,0,REBUILD (no organic value),PENDING,PRESERVE,R4 core/service/product
+272,/services/best-blog-writing-services,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,2,REBUILD (no organic value),PENDING,PRESERVE,R4 core/service/product
+273,/services/best-on-page-seo-services,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,1,REBUILD (no organic value),PENDING,PRESERVE,R4 core/service/product
+274,/services/best-seo-content-writing-services,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,1,REBUILD (no organic value),PENDING,PRESERVE,R4 core/service/product
+275,/services/content-marketing-services,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,1,REBUILD (no organic value),PENDING,PRESERVE,R4 core/service/product
+276,/services/wordpress-website-design-service,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,1,REBUILD (no organic value),PENDING,PRESERVE,R4 core/service/product
+277,/services/email-marketing-services/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,19316,60.3,0,LOW VALUE — review,PENDING,PRESERVE,R4 core/service/product
+278,/social-media-content-ideas-for-clothing-brand/#20_Social_Media_Content_Ideas_for_Clothing_Brand_in_2025,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,17914,7.5,0,LOW VALUE — review,PENDING,HOLD,guardrail money/pos-1
+279,/social-media-content-ideas-for-clothing-brand/#How_can_you_create_content_for_a_clothing_brand,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,15229,7.3,0,LOW VALUE — review,PENDING,HOLD,guardrail money/pos-1
+280,/services/best-on-page-seo-services/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,13195,48.9,12,LOW VALUE — review,PENDING,PRESERVE,R4 core/service/product
+281,/best-examples-of-great-food-copywriting/#Best_Examples_of_Great_Food_Copywriting,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,11051,5.6,0,LOW VALUE — review,PENDING,HOLD,guardrail money/pos-1
+282,/best-examples-of-great-food-copywriting/#What_is_Food_Copywriting,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,11051,5.6,0,LOW VALUE — review,PENDING,HOLD,guardrail money/pos-1
+283,/anchor-text-optimization-in-seo/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,9001,64.6,0,LOW VALUE — review,PENDING,REBUILD-new,R7 on-strategy unindexed
+284,/snapchat-content-ideas/#20_Creative_Snapchat_Content_Ideas,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,7684,8.0,0,LOW VALUE — review,PENDING,HOLD,guardrail money/pos-1
+285,/snapchat-content-ideas/#What_is_Snapchat,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,6760,8.0,0,LOW VALUE — review,PENDING,HOLD,guardrail money/pos-1
+286,/social-media-content-ideas-for-clothing-brand/#How_can_you_market_your_clothing_brand_on_social_media,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,6734,8.5,0,LOW VALUE — review,PENDING,HOLD,guardrail money/pos-1
+287,/services/ppc-management-services/,Service page,Not in a not-indexed list — presumed indexed (unconfirmed),0,6576,85.3,0,LOW VALUE — review,PENDING,PRESERVE,R4 core/service/product
+288,/snapchat-content-ideas/#What_is_a_streak_on_snapchat,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,4599,8.3,0,LOW VALUE — review,PENDING,HOLD,guardrail money/pos-1
+289,/social-media-content-ideas-for-restaurants/#21_Social_Media_Content_Ideas_for_Restaurants_2025,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,3669,7.5,0,LOW VALUE — review,PENDING,HOLD,guardrail money/pos-1
+290,/social-media-content-ideas-for-restaurants/#02_Host_competitions,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,3346,7.6,0,LOW VALUE — review,PENDING,HOLD,guardrail money/pos-1
+291,/content-marketing-for-banks/#16_Content_Marketing_for_Banks_2025,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,2404,8.1,0,LOW VALUE — review,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+292,/social-media-content-ideas-for-photographers/#20_Social_Media_Content_Ideas_for_Photographers_2025,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,2332,7.9,0,LOW VALUE — review,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+293,/social-media-content-ideas-for-photographers/#Why_Need_Social_Media_for_Photography_Business,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,2320,7.9,0,LOW VALUE — review,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+294,/20-content-marketing-ideas-for-restaurants/#20_Content_Marketing_Ideas_for_Restaurants_2024,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,2038,6.0,0,LOW VALUE — review,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+295,/20-content-marketing-ideas-for-restaurants/#Why_is_Content_Marketing_Important_for_Restaurants,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,2038,6.0,0,LOW VALUE — review,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+296,/content-marketing-for-banks/#Why_is_Social_Media_Content_Ideas_for_Banks_Important,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1960,8.1,0,LOW VALUE — review,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+297,/sensory-marketing-know-how-5-senses-marketing-works-best-for-businesses/#Five_Senses_Sensory_Marketing_are_8211,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1749,7.2,0,LOW VALUE — review,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+298,/social-media-content-ideas-for-restaurants/#01_Reshare_user-generated_content_UGC,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1714,6.2,0,LOW VALUE — review,PENDING,HOLD,guardrail money/pos-1
+299,/sensory-marketing-know-how-5-senses-marketing-works-best-for-businesses/#Know-How_5_Senses_Marketing_Works_Best_for_Businesses,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1708,7.2,0,LOW VALUE — review,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+300,/sensory-marketing-know-how-5-senses-marketing-works-best-for-businesses/#Why_Is_Sensory_Marketing_Important,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1689,7.3,0,LOW VALUE — review,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+301,/social-media-content-ideas-for-restaurants/#07_Provide_food_tips_and_tricks,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1645,9.2,0,LOW VALUE — review,PENDING,HOLD,guardrail money/pos-1
+302,/social-media-content-ideas-for-churches/#15_Social_Media_Content_Ideas_for_Churches_2025,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1605,7.2,0,LOW VALUE — review,PENDING,HOLD,guardrail money/pos-1
+303,/creative-content-marketing-ideas/#35_Creative_Content_Marketing_Ideas_2025,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1234,8.7,0,LOW VALUE — review,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+304,/creative-content-marketing-ideas/#How_to_Develop_a_Content_Strategy,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1223,8.7,0,LOW VALUE — review,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+305,/google-penalty-recovery/#How_to_Know_and_Check_a_Google_Penalty,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1180,7.5,0,LOW VALUE — review,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+306,/google-penalty-recovery/#Types_of_Google_Penalty,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1180,7.5,0,LOW VALUE — review,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+307,/google-penalty-recovery/#Ultimate_Guide_to_Google_Penalty_Recovery,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1180,7.5,0,LOW VALUE — review,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+308,/robots-txt-for-seo-a-complete-guide/#Robotstxt_For_SEO_How_to_Do_it,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1149,5.7,0,LOW VALUE — review,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+309,/robots-txt-for-seo-a-complete-guide/#Robotstxt_for_SEO_A_Complete_Guide,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1086,5.8,0,LOW VALUE — review,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+310,/robots-txt-for-seo-a-complete-guide/#1_Create_a_robotstxtfile,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1082,5.7,0,LOW VALUE — review,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+311,/author/sabera/page/2/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,27,27.8,0,ARCHITECTURE DECISION,PENDING,RETIRE-410,R1 junk/author
+312,/author/farihaanika/page/2/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,15,44.5,0,ARCHITECTURE DECISION,PENDING,RETIRE-410,R1 junk/author
+313,/blog-promotion-ideas/#10_Best_Ways_to_Promote_Your_Blog_Flawlessly,Blog index,Not in a not-indexed list — presumed indexed (unconfirmed),0,10,8.4,0,ARCHITECTURE DECISION,PENDING,HOLD,R10 uncertain
+314,/blog-promotion-ideas/#Why_do_you_need_to_Know_How_To_Promote_Your_Blog_for_Blog_Promotion,Blog index,Not in a not-indexed list — presumed indexed (unconfirmed),0,10,8.4,0,ARCHITECTURE DECISION,PENDING,HOLD,R10 uncertain
+315,/blog-promotion-ideas/#How_to_Make_a_Blog_Promotion_Strategy_for_Blog_Promotion,Blog index,Not in a not-indexed list — presumed indexed (unconfirmed),0,9,8.1,0,ARCHITECTURE DECISION,PENDING,HOLD,R10 uncertain
+316,/blog-promotion-ideas/#Where_To_Promote_Blog_for_Perfect_Blog_Promotion,Blog index,Not in a not-indexed list — presumed indexed (unconfirmed),0,9,8.1,0,ARCHITECTURE DECISION,PENDING,HOLD,R10 uncertain
+317,/author/naurinazad/page/6/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,6,36.8,0,ARCHITECTURE DECISION,PENDING,RETIRE-410,R1 junk/author
+318,/author/catherine/page/3/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,34.5,0,ARCHITECTURE DECISION,PENDING,RETIRE-410,R1 junk/author
+319,/web-design/page/2/,Paginated archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,9.0,0,ARCHITECTURE DECISION,PENDING,KEEP-noindex,R3 archive pagination
+320,/business/page/2/,Paginated archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,17,ARCHITECTURE DECISION,PENDING,KEEP-noindex,R3 archive pagination
+321,/business/small-business/page/2/,Paginated archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,17,ARCHITECTURE DECISION,PENDING,KEEP-noindex,R3 archive pagination
+322,/video-marketing/page/2/,Paginated archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,17,ARCHITECTURE DECISION,PENDING,KEEP-noindex,R3 archive pagination
+323,/author/naurinazad/paged-2/16/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,21,21.3,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+324,/trends/paged-2/12/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,11,3.9,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+325,/social-media-management/paged-3/16/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,9,22.8,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+326,/trends/paged-3/13/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,7,5.7,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+327,/business/paged-2/7/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,6,3.7,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+328,/author/naurinazad/paged-2/15/?et_blog,Parameter URL,Not in a not-indexed list — presumed indexed (unconfirmed),0,5,4.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+329,/digital-marketing/search-engine-optimization/local-seo/paged-2/18/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,5,60.4,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+330,/author/naurinazad/paged-2/16/?et_blog,Parameter URL,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,3.7,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+331,/author/catherine/paged-3/8/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,4.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+332,/healthcare/paged-3/3/,Malformed pagination,Crawled - currently not indexed,0,3,51.3,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+333,/hotel-marketing/paged-3/3/,Malformed pagination,Crawled - currently not indexed,0,3,38.7,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+334,/business/paged-2/5/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,33.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+335,/copywriting/paged-3/2/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,2.5,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+336,/real-estate-marketing/paged-3/7/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,5.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+337,/social-media-management/paged-3/14/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,93.5,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+338,/trends/paged-2/7/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,3.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+339,/video-marketing/paged-2/18/,Malformed pagination,Alternate page with proper canonical tag,0,2,7.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+340,/author/naurinazad/paged-3/2/?et_blog,Parameter URL,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,2.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+341,/author/catherine/paged-3/12/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,3.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+342,/author/naurinazad/paged-2/10/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,83.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+343,/author/sabera/paged-3/18/,Author archive,Alternate page with proper canonical tag,0,1,9.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+344,/business/paged-2/2/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,3.0,15,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+345,/business/paged-2/3/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,8.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+346,/business/paged-3/18/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,62.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+347,/church-marketing/paged-3/17/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,16.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+348,/copywriting/paged-3/18/,Malformed pagination,Crawled - currently not indexed,0,1,2.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+349,/digital-marketing/content-marketing/paged-2/18/,Malformed pagination,Crawled - currently not indexed,0,1,9.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+350,/digital-marketing/search-engine-optimization/local-seo/paged-3/2/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,3.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+351,/seo-tips/paged-3/2/,Malformed pagination,Alternate page with proper canonical tag,0,1,6.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+352,/social-media-management/paged-2/4/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,4.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+353,/video-marketing/paged-3/18/,Malformed pagination,Alternate page with proper canonical tag,0,1,4.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+354,/video-marketing/paged-3/3/,Malformed pagination,Alternate page with proper canonical tag,0,1,2.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+355,/web-design/paged-2/3/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,7.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+356,/author/catherine/paged-2/18/,Author archive,Alternate page with proper canonical tag,0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+357,/author/catherine/paged-2/2/,Author archive,Crawled - currently not indexed,0,0,0.0,15,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+358,/author/catherine/paged-2/3/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+359,/author/catherine/paged-3/18/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+360,/author/catherine/paged-3/2/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,15,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+361,/author/catherine/paged-3/3/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+362,/author/jamilahmed/paged-2/18/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,11,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+363,/author/jamilahmed/paged-2/2/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,17,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+364,/author/jamilahmed/paged-2/3/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,11,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+365,/author/jamilahmed/paged-3/18/,Author archive,Crawled - currently not indexed,0,0,0.0,11,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+366,/author/jamilahmed/paged-3/2/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,16,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+367,/author/jamilahmed/paged-3/3/,Author archive,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,12,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+368,/author/jamilahmed/paged-3/4/,Author archive,Crawled - currently not indexed,0,0,0.0,6,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+369,/b2b-marketing/paged-2/18/,Malformed pagination,Alternate page with proper canonical tag,0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+370,/b2b-marketing/paged-2/2/,Malformed pagination,Alternate page with proper canonical tag,0,0,0.0,15,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+371,/b2b-marketing/paged-2/3/,Malformed pagination,Alternate page with proper canonical tag,0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+372,/b2b-marketing/paged-3/18/,Malformed pagination,Alternate page with proper canonical tag,0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+373,/b2b-marketing/paged-3/2/,Malformed pagination,Alternate page with proper canonical tag,0,0,0.0,15,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+374,/b2b-marketing/paged-3/3/,Malformed pagination,Alternate page with proper canonical tag,0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+375,/blog/paged-2/16/,Malformed pagination,Crawled - currently not indexed,0,0,0.0,6,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+376,/blog/paged-2/17/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,7,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+377,/blog/paged-2/18/,Malformed pagination,Crawled - currently not indexed,0,0,0.0,23,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+378,/blog/paged-2/2/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,32,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+379,/blog/paged-2/3/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,21,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+380,/blog/paged-2/4/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,8,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+381,/blog/paged-2/5/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,6,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+382,/blog/paged-3/14/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,6,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+383,/blog/paged-3/15/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,8,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+384,/blog/paged-3/16/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,9,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+385,/blog/paged-3/17/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,8,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+386,/blog/paged-3/18/,Malformed pagination,Crawled - currently not indexed,0,0,0.0,23,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+387,/blog/paged-3/2/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,24,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+388,/blog/paged-3/3/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,17,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+389,/blog/paged-3/4/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,9,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+390,/blog/paged-3/5/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,9,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+391,/blog/paged-3/6/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,8,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+392,/blog/paged-3/7/,Malformed pagination,Crawled - currently not indexed,0,0,0.0,6,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+393,/business/paged-2/18/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+394,/business/paged-3/2/,Malformed pagination,Crawled - currently not indexed,0,0,0.0,15,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+395,/business/paged-3/3/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+396,/business/small-business/paged-2/18/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+397,/business/small-business/paged-2/2/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,15,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+398,/business/small-business/paged-2/3/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+399,/business/small-business/paged-3/18/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+400,/business/small-business/paged-3/2/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,15,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+401,/business/small-business/paged-3/3/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+402,/digital-marketing/content-marketing/paged-2/2/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,15,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+403,/digital-marketing/content-marketing/paged-2/3/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+404,/digital-marketing/content-marketing/paged-3/18/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+405,/digital-marketing/content-marketing/paged-3/2/,Malformed pagination,Crawled - currently not indexed,0,0,0.0,15,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+406,/digital-marketing/content-marketing/paged-3/3/,Malformed pagination,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+407,/video-marketing/paged-2/2/,Malformed pagination,Alternate page with proper canonical tag,0,0,0.0,15,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+408,/video-marketing/paged-2/3/,Malformed pagination,Alternate page with proper canonical tag,0,0,0.0,10,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+409,/video-marketing/paged-3/2/,Malformed pagination,Alternate page with proper canonical tag,0,0,0.0,15,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+410,/author/farihaanika/paged-2/16/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+411,/author/farihaanika/paged-2/17/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+412,/author/farihaanika/paged-2/18/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+413,/author/farihaanika/paged-2/3/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+414,/author/farihaanika/paged-2/4/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+415,/author/farihaanika/paged-3/4/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+416,/author/farihaanika/paged-3/8/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+417,/author/jamilahmed/paged-3/5/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+418,/author/jamilahmed/paged-3/6/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+419,/author/jamilahmed/paged-3/7/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+420,/author/naurinazad/paged-2/18/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+421,/author/naurinazad/paged-2/3/?et_blog,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+422,/author/sabera/paged-3/15/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+423,/author/sabera/paged-3/16/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+424,/author/sabera/paged-3/3/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+425,/author/shammi/paged-2/17/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+426,/author/shammi/paged-2/18/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+427,/b2b-marketing/paged-3/16/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+428,/b2b-marketing/paged-3/4/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+429,/blog/paged-3/8/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+430,/business/paged-3/5/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+431,/church-marketing/paged-2/18/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+432,/church-marketing/paged-2/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+433,/church-marketing/paged-3/15/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+434,/church-marketing/paged-3/18/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+435,/church-marketing/paged-3/3/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+436,/clothing-brand-marketing/paged-3/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+437,/clothing-brand-marketing/paged-3/3/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+438,/copywriting/paged-2/18/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+439,/copywriting/paged-2/2/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+440,/copywriting/paged-3/11/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+441,/copywriting/paged-3/12/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+442,/copywriting/paged-3/13/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+443,/copywriting/paged-3/15/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+444,/copywriting/paged-3/16/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+445,/copywriting/paged-3/3/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+446,/digital-marketing-competitor/paged-2/18/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+447,/digital-marketing-competitor/paged-2/3/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+448,/digital-marketing-competitor/paged-2/5/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+449,/digital-marketing-competitor/paged-3/3/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+450,/digital-marketing-competitor/paged-3/4/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+451,/digital-marketing-competitor/paged-3/5/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+452,/digital-marketing/content-marketing/paged-2/16/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+453,/digital-marketing/content-marketing/paged-3/4/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+454,/digital-marketing/paged-2/11/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+455,/digital-marketing/paged-2/13/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+456,/digital-marketing/paged-2/14/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+457,/digital-marketing/paged-2/15/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+458,/digital-marketing/paged-2/16/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+459,/digital-marketing/paged-2/18/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+460,/digital-marketing/paged-2/3/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+461,/digital-marketing/paged-3/16/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+462,/digital-marketing/paged-3/17/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+463,/digital-marketing/paged-3/18/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+464,/digital-marketing/paged-3/2/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+465,/digital-marketing/paged-3/4/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+466,/digital-marketing/paged-3/5/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+467,/digital-marketing/paged-3/6/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+468,/digital-marketing/paged-3/7/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+469,/healthcare/paged-2/12/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+470,/healthcare/paged-2/17/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+471,/healthcare/paged-2/4/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+472,/healthcare/paged-2/5/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+473,/hotel-marketing/paged-2/18/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+474,/hotel-marketing/paged-2/3/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+475,/hotel-marketing/paged-2/5/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+476,/hotel-marketing/paged-2/6/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+477,/hotel-marketing/paged-3/16/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+478,/hotel-marketing/paged-3/18/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+479,/hotel-marketing/paged-3/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+480,/product/search-engine-optimization-service-growth-yearly/?add-to-cart=229279,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,PRESERVE,R4 core/service/product
+481,/real-estate-marketing/paged-2/18/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+482,/real-estate-marketing/paged-2/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+483,/robots-txt-for-seo-a-complete-guide/?ref=openzap.com,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,REBUILD-new,R7 on-strategy unindexed
+484,/seo-tips/paged-2/16/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+485,/seo-tips/paged-2/17/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+486,/seo-tips/paged-2/18/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+487,/seo-tips/paged-2/3/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+488,/seo-tips/paged-3/18/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+489,/seo-tips/paged-3/4/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+490,/seo-tips/paged-3/5/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+491,/shop/paged-2/3/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+492,/shop/paged-3/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+493,/social-media-advertising/paged-2/15/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+494,/social-media-advertising/paged-2/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+495,/social-media-advertising/paged-3/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+496,/social-media-advertising/paged-3/4/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+497,/social-media-advertising/paged-3/5/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+498,/social-media-advertising/paged-3/7/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+499,/social-media-management/paged-2/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+500,/social-media-management/paged-2/6/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+501,/social-media-management/paged-3/10/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+502,/social-media-management/paged-3/9/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+503,/social-media/paged-3/18/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+504,/trends/paged-2/16/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+505,/trends/paged-2/17/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+506,/trends/paged-2/18/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+507,/trends/paged-2/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+508,/trends/paged-2/3/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+509,/trends/paged-2/4/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+510,/trends/paged-3/16/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+511,/trends/paged-3/17/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+512,/trends/paged-3/18/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+513,/trends/paged-3/3/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+514,/video-marekting/paged-2/13/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+515,/video-marekting/paged-2/15/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+516,/video-marekting/paged-2/16/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+517,/video-marekting/paged-2/17/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+518,/video-marekting/paged-2/3/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+519,/video-marekting/paged-2/4/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+520,/video-marekting/paged-3/3/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+521,/web-design/paged-2/14/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+522,/web-design/paged-2/15/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+523,/web-design/paged-2/16/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+524,/web-design/paged-2/17/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+525,/web-design/paged-2/18/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+526,/web-design/paged-3/16/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+527,/web-design/paged-3/18/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+528,/web-design/paged-3/2/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+529,/web-design/paged-3/4/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+530,/web-hosting/paged-2/13/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+531,/web-hosting/paged-2/14/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+532,/web-hosting/paged-2/15/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+533,/web-hosting/paged-2/16/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+534,/web-hosting/paged-2/17/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+535,/web-hosting/paged-2/18/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+536,/web-hosting/paged-2/3/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+537,/web-hosting/paged-3/15/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+538,/web-hosting/paged-3/16/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+539,/web-hosting/paged-3/17/,(from GSC index report),Alternate page with proper canonical tag,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+540,/web-hosting/paged-3/18/,(from GSC index report),Crawled - currently not indexed,0,0,0.0,0,FIX — crawl waste (rewrite bug),PENDING,RETIRE-410,R1 junk/author
+541,/sitemap_index.xml,Sitemap,Excluded by ‘noindex’ tag,0,0,0.0,182,OK — intentionally noindexed,PENDING,HOLD,R10 uncertain
+542,"/?s=%E7%9C%8B%E5%88%B0MLO 
+%E7%9C%9F%E9%A1%8C%EF%BC%8C%E9%80%9A%E9%81%8E%E4%BA%86Mortgage Loan 
+Origination (SAFE MLO) Exam%E8%80%83%E8%A9%A6%E7%9A%84%E4%B8%80%E5%8D%8A 
+%E2%9C%85 %E8%AB%8B%E5%9C%A8%E2%9E%A5 www.newdumpspdf.com 
+%F0%9F%A1%84%E7%B6%B2%E7%AB%99%E4%B8%8A%E5%85%8D%E8%B2%BB%E4%B8%8B%E8%BC%89%E2%9E%A5 
+MLO %F0%9F%A1%84%E9%A1%8C%E5%BA%ABMLO%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98",(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,HOLD,R10 uncertain
+543,/a-complete-guide-to-social-media-management/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+544,/author/abusayed/paged-2/2/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+545,/author/abusayed/paged-2/3/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+546,/author/abusayed/paged-3/3/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+547,/author/abusayed/paged-3/5/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+548,/best-local-search-engine-optimization-service/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+549,/best-ways-of-mobile-optimization-to-increase-your-conversions/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+550,/cart/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,KEEP-noindex,R3 transactional
+551,/content-ideas-for-personal-trainers/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+552,/content-marketing-for-plastic-surgeons/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+553,/content-marketing-ideas-for-small-business/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+554,/digital-marketing-competitor-analysis/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+555,/ecommerce-retargeting-strategies-to-boost-sales/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+556,/google-penalty-recovery/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+557,/guide-to-ux-copywriting/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+558,/hostinger-web-hosting/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+559,/latest-seo-update-search-engine-updates/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+560,"/page/2/?s=%E7%9C%8B%E5%88%B0MLO 
+%E7%9C%9F%E9%A1%8C%EF%BC%8C%E9%80%9A%E9%81%8E%E4%BA%86Mortgage Loan 
+Origination (SAFE MLO) Exam%E8%80%83%E8%A9%A6%E7%9A%84%E4%B8%80%E5%8D%8A 
+%E2%9C%85 %E8%AB%8B%E5%9C%A8%E2%9E%A5 www.newdumpspdf.com 
+%F0%9F%A1%84%E7%B6%B2%E7%AB%99%E4%B8%8A%E5%85%8D%E8%B2%BB%E4%B8%8B%E8%BC%89%E2%9E%A5 
+MLO %F0%9F%A1%84%E9%A1%8C%E5%BA%ABMLO%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98",(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,HOLD,R10 uncertain
+561,"/paged-2/18/?s=%E7%9C%8B%E5%88%B0MLO 
+%E7%9C%9F%E9%A1%8C%EF%BC%8C%E9%80%9A%E9%81%8E%E4%BA%86Mortgage Loan 
+Origination (SAFE MLO) Exam%E8%80%83%E8%A9%A6%E7%9A%84%E4%B8%80%E5%8D%8A 
+%E2%9C%85 %E8%AB%8B%E5%9C%A8%E2%9E%A5 www.newdumpspdf.com 
+%F0%9F%A1%84%E7%B6%B2%E7%AB%99%E4%B8%8A%E5%85%8D%E8%B2%BB%E4%B8%8B%E8%BC%89%E2%9E%A5 
+MLO %F0%9F%A1%84%E9%A1%8C%E5%BA%ABMLO%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98",(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+562,"/paged-2/2/?s=%E7%9C%8B%E5%88%B0MLO 
+%E7%9C%9F%E9%A1%8C%EF%BC%8C%E9%80%9A%E9%81%8E%E4%BA%86Mortgage Loan 
+Origination (SAFE MLO) Exam%E8%80%83%E8%A9%A6%E7%9A%84%E4%B8%80%E5%8D%8A 
+%E2%9C%85 %E8%AB%8B%E5%9C%A8%E2%9E%A5 www.newdumpspdf.com 
+%F0%9F%A1%84%E7%B6%B2%E7%AB%99%E4%B8%8A%E5%85%8D%E8%B2%BB%E4%B8%8B%E8%BC%89%E2%9E%A5 
+MLO %F0%9F%A1%84%E9%A1%8C%E5%BA%ABMLO%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98",(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+563,"/paged-2/3/?s=%E7%9C%8B%E5%88%B0MLO 
+%E7%9C%9F%E9%A1%8C%EF%BC%8C%E9%80%9A%E9%81%8E%E4%BA%86Mortgage Loan 
+Origination (SAFE MLO) Exam%E8%80%83%E8%A9%A6%E7%9A%84%E4%B8%80%E5%8D%8A 
+%E2%9C%85 %E8%AB%8B%E5%9C%A8%E2%9E%A5 www.newdumpspdf.com 
+%F0%9F%A1%84%E7%B6%B2%E7%AB%99%E4%B8%8A%E5%85%8D%E8%B2%BB%E4%B8%8B%E8%BC%89%E2%9E%A5 
+MLO %F0%9F%A1%84%E9%A1%8C%E5%BA%ABMLO%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98",(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+564,"/paged-3/18/?s=%E7%9C%8B%E5%88%B0MLO 
+%E7%9C%9F%E9%A1%8C%EF%BC%8C%E9%80%9A%E9%81%8E%E4%BA%86Mortgage Loan 
+Origination (SAFE MLO) Exam%E8%80%83%E8%A9%A6%E7%9A%84%E4%B8%80%E5%8D%8A 
+%E2%9C%85 %E8%AB%8B%E5%9C%A8%E2%9E%A5 www.newdumpspdf.com 
+%F0%9F%A1%84%E7%B6%B2%E7%AB%99%E4%B8%8A%E5%85%8D%E8%B2%BB%E4%B8%8B%E8%BC%89%E2%9E%A5 
+MLO %F0%9F%A1%84%E9%A1%8C%E5%BA%ABMLO%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98",(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+565,"/paged-3/2/?s=%E7%9C%8B%E5%88%B0MLO 
+%E7%9C%9F%E9%A1%8C%EF%BC%8C%E9%80%9A%E9%81%8E%E4%BA%86Mortgage Loan 
+Origination (SAFE MLO) Exam%E8%80%83%E8%A9%A6%E7%9A%84%E4%B8%80%E5%8D%8A 
+%E2%9C%85 %E8%AB%8B%E5%9C%A8%E2%9E%A5 www.newdumpspdf.com 
+%F0%9F%A1%84%E7%B6%B2%E7%AB%99%E4%B8%8A%E5%85%8D%E8%B2%BB%E4%B8%8B%E8%BC%89%E2%9E%A5 
+MLO %F0%9F%A1%84%E9%A1%8C%E5%BA%ABMLO%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98",(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+566,"/paged-3/3/?s=%E7%9C%8B%E5%88%B0MLO 
+%E7%9C%9F%E9%A1%8C%EF%BC%8C%E9%80%9A%E9%81%8E%E4%BA%86Mortgage Loan 
+Origination (SAFE MLO) Exam%E8%80%83%E8%A9%A6%E7%9A%84%E4%B8%80%E5%8D%8A 
+%E2%9C%85 %E8%AB%8B%E5%9C%A8%E2%9E%A5 www.newdumpspdf.com 
+%F0%9F%A1%84%E7%B6%B2%E7%AB%99%E4%B8%8A%E5%85%8D%E8%B2%BB%E4%B8%8B%E8%BC%89%E2%9E%A5 
+MLO %F0%9F%A1%84%E9%A1%8C%E5%BA%ABMLO%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98",(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+567,/podcast-for-business/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+568,/product-category/uncategorized/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,PRESERVE,R4 core/service/product
+569,/product-category/uncategorized/page/2/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,KEEP-noindex,R3 archive pagination
+570,/seo-services/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+571,/snapchat-content-ideas/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+572,/social-media-content-ideas-for-hotels/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+573,/social-media-content-ideas-for-restaurants/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+574,/social-media-marketing-trends/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+575,/video-marketing-ideas-for-small-business/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+576,/what-is-martech/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+577,/what-is-social-media-marketing/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+578,/youtube-seo/feed/,(from GSC index report),Excluded by ‘noindex’ tag,0,0,0.0,0,OK — intentionally noindexed,PENDING,RETIRE-410,R1 junk/author
+579,/social-media-content-ideas-for-churches/#09_Post_Pictures_of_your_Church,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,877,7.7,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+580,/content-marketing-for-banks/#What_is_Content_Marketing_for_Banks,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,861,8.2,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+581,/social-media-content-ideas-for-photographers/#Social_Media_Strategy_for_Photographers,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,832,8.5,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+582,/podcast-for-business/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,674,38.2,19,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+583,/social-media-content-ideas-for-churches/#06_Explain_a_Church_Term,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,628,7.9,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+584,/content-marketing-ideas-for-healthcare-industry/#10_Content_Marketing_Ideas_for_Healthcare_Industry_2025,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,595,7.7,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+585,/sensory-marketing-know-how-5-senses-marketing-works-best-for-businesses/#What_Is_Sensory_Marketing,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,574,7.4,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+586,/sensory-marketing-know-how-5-senses-marketing-works-best-for-businesses/#Brands_that_Employ_Sensory_Marketing_Examples,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,550,6.8,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+587,/social-media-content-ideas-for-churches/#04_Share_Inspiring_Stories_of_Church_Members,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,525,7.9,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+588,/content-marketing-ideas-for-healthcare-industry/#Why_is_Content_Marketing_Important_for_the_Healthcare_Brand_Industry,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,505,7.9,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+589,/successful-digital-marketing-campaign-examples/#10_Successful_Digital_Marketing_Campaign_Examples,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,417,13.1,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+590,/successful-digital-marketing-campaign-examples/#What_Is_a_Digital_Marketing_Campaign,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,401,13.0,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+591,/social-media-content-ideas-for-churches/#10_Share_Colorful_Invitations_of_Events,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,388,7.8,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+592,/social-media-content-ideas-for-restaurants/#15_Show_Off_Your_Restaurants_Best_Features,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,364,6.6,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+593,/social-media-content-ideas-for-restaurants/#11_Share_your_best-selling_recipes,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,329,7.7,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+594,/social-media-content-ideas-for-restaurants/#14_Share_Behind-the-scenes,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,315,7.7,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+595,/real-estate-social-media-posts-ideas/#20_Real_Estate_Social_Media_Posts_Ideas_2025,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,314,7.9,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+596,/social-media-content-ideas-for-restaurants/#08_Mention_your_restaurant8217s_health_and_safety_measures,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,311,6.6,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+597,/real-estate-social-media-posts-ideas/#Importance_of_Social_Media_Post_Ideas_for_Real_Estate,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,309,7.8,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+598,/social-media-content-ideas-for-churches/#03_Offer_Weekly_Bible_Study_Lists,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,289,7.3,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+599,/a2-wordpress-hosting/#How_to_Make_A_Website_with_A2_WordPress_Hosting_A_Step-by-Step_Guide,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,282,8.2,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+600,/social-media-content-ideas-for-churches/#05_Provide_Information_of_your_New_Church_Priests,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,276,8.5,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+601,/social-media-content-ideas-for-hotels/#25_Social_Media_Content_Ideas_for_Hotels_2025,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,259,6.6,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+602,/content-marketing-ideas-for-healthcare-industry/#How_Can_You_Promote_Health_Care_Services,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,246,8.3,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+603,/copy-ai-review/#What_is_Copy_AI,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,240,9.9,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+604,/social-media-content-ideas-for-churches/#08_Pass_Along_Posts_From_Others,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,239,7.2,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+605,/copy-ai-review/#How_does_CopyAI_work,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,236,9.9,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+606,/a2-wordpress-hosting/#A2_Hosting_Pricing_How_much_is_A2_Hosting,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,232,8.2,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+607,/social-media-content-ideas-for-hotels/#How_to_promote_a_hotel_on_social_media,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,230,6.8,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+608,/google-penalty-recovery/#White_Hat_vs_Black_Hat_SEO_Meet_SEO8217s_Friend_and_Enemy,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,219,9.1,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+609,/social-media-content-ideas-for-restaurants/#06_Share_pictures_of_food,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,215,8.1,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+610,/beaver-builder-review/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,203,25.1,91,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+611,/social-media-content-ideas-for-restaurants/#12_Let_customers_know_about_delivery_options,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,199,6.7,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+612,/ideas-for-personal-website-content/#Ideas_for_Personal_Website_Content,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,196,7.5,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+613,/ideas-for-personal-website-content/#What_is_a_Personal_Website,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,193,7.5,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+614,/copy-ai-review/#CopyAI_Writer_Is_CopyAI_Worth_It,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,176,9.8,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+615,/social-media-content-ideas-for-nonprofits/#20_Social_Media_Content_Ideas_for_Nonprofits_2025,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,144,7.7,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+616,/creative-content-marketing-ideas/#Importance_of_Content_Marketing,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,133,8.4,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+617,/content-marketing-for-banks/#16_Content_Marketing_for_Banks_2024,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,126,6.1,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+618,/social-media-content-ideas-for-nonprofits/#Why_should_nonprofits_focus_on_social_media,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,122,7.5,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+619,/social-media-content-ideas-for-nonprofits/#10_Encourage_Tags,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,113,7.5,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+620,/20-content-marketing-ideas-for-restaurants/#How_To_Market_A_Restaurant,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,111,7.0,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+621,/20-content-marketing-ideas-for-restaurants/#Ways_to_Use_Local_SEO_to_Increase_the_Numbers_of_Visit_Your_Restaurant,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,111,7.0,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+622,/a2-wordpress-hosting/#Is_A2_Hosting_reliable,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,105,8.6,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+623,/different-types-of-facebook-ads/#10_Different_Types_of_Facebook_Ads_for_2025,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,98,10.4,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+624,/different-types-of-facebook-ads/#Basic_knowledge_of_Facebook_Ads_Types,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,98,10.4,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+625,/copy-ai-review/#CopyAI_Pricing_How_Much_Does_CopyAI_Writing_tool_Cost,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,97,9.9,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+626,/copy-ai-review/#CopyAI_Alternatives_Best_Dedicated_AI_Copywriting_Tools_You_Must_Know,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,95,10.0,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+627,/successful-digital-marketing-campaign-examples/#How_Do_You_Plan_A_Digital_Campaign,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,92,9.9,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+628,/cloudways-hosting/#How_to_Make_a_Website_with_Cloudways_Hosting_8211_A_Step_by_Step_Guide,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,90,8.5,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+629,/nexcess-wordpress-hosting/#What_Is_Nexcess,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,90,7.9,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+630,/a2-wordpress-hosting/#What_is_A2_Hosting,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,88,8.8,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+631,/nexcess-wordpress-hosting/#Nexcess_Pricing_Is_Nexcess_Good_for_Hosting,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,83,7.8,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+632,/cloudways-hosting/#Cloudways_Managed_WordPress_Hosting_Why_Cloudways_Web_Hosting_is_So_Popular,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,82,8.5,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+633,/nexcess-wordpress-hosting/#How_To_Build_a_Website_with_Nexcess_WordPress_Hosting,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,82,7.7,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+634,/robots-txt-for-seo-a-complete-guide/#3_Set_directivesinyourRobottxt_for_SEO,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,77,5.9,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+635,/digital-marketing/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,74,7.1,122,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+636,/social-media-content-ideas-for-clothing-brand/#20_Social_Media_Content_Ideas_for_Clothing_Brand_2024,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,71,7.8,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+637,/social-media-content-ideas-for-hotels/#How_do_hotels_use_social_media_to_attract_customers,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,71,6.9,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE-URL+REWRITE,R6 earner off-positioning
+638,/seo-services/#What_Is_SEO_Service,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,66,6.0,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE,R4 core/service/product
+639,/seo-services/#Why_Should_You_Use_SEO_Service,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,66,6.0,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE,R4 core/service/product
+640,/how-can-companies-be-socially-responsible-marketers/#The_Importance_of_Social_Responsibility_and_Ethics_in_Marketing_as_8211,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,56,9.3,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE+REBUILD,R5 earner on-strategy
+641,/social-media-content-ideas-for-churches/#07_Provide_Upcoming_Events_Lists,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,44,6.8,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+642,/guide-to-ux-copywriting/#The_Ultimate_Guide_to_UX_Copywriting_2025,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,40,6.0,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+643,/guide-to-ux-copywriting/#What_Is_A_UX_Copywriter,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,40,6.0,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+644,/guide-to-ux-copywriting/#What_Is_UX_Copywriting,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,40,6.0,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+645,/social-media-content-ideas-for-restaurants/#10_Showcase_your_signature_dishes,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,40,7.3,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+646,/flywheel-wordpress-hosting/#How_To_Make_A_Website_With_Flywheel_WordPress_Hosting_From_Scratch_8211_A_Step_by_Step_Guide,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,39,8.6,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+647,/social-media-content-ideas-for-restaurants/#05_Support_local_causes_and_promote_community_activities,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,35,7.8,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+648,/how-can-companies-be-socially-responsible-marketers/#What_Corporate_Marketing_and_Social_Responsibility_Practice_Includes_8211,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,34,9.4,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+649,/youtube-seo/#8_Simple_YouTube_SEO_Tips_To_Rank_Your_Videos_Higher,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,34,8.5,0,REMOVE / CONSOLIDATE candidate,PENDING,REBUILD-new,R7 on-strategy unindexed
+650,/writesonic-review/#What_is_Writesonic,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,32,7.8,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+651,/writesonic-review/#Writesonic_Review_How_to_Use_Writesonic_AI_Writer_to_Generate_Better_Content,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,32,7.8,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+652,/social-media-content-ideas-for-restaurants/#09_Introduce_Your_Team_Members,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,28,8.1,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+653,/how-can-companies-be-socially-responsible-marketers/#How_Can_Companies_Be_Socially_Responsible_Marketers_in_2025,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,27,8.9,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+654,/social-media-content-ideas-for-nonprofits/#13_Post_Testimonials,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,26,8.6,0,REMOVE / CONSOLIDATE candidate,PENDING,CONSOLIDATE,R9 thin idea cluster
+655,/cloudways-hosting/#Cloudways_PricingHow_Much_Does_Cloudways_Charge_for_Hosting,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,22,8.6,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+656,/social-media-content-ideas-for-photographers/#20_Social_Media_Content_Ideas_for_Photographers_2024,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,22,8.2,0,REMOVE / CONSOLIDATE candidate,PENDING,CONSOLIDATE,R9 thin idea cluster
+657,/youtube-seo/#What_is_YouTube_SEO_Strategy,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,22,8.1,0,REMOVE / CONSOLIDATE candidate,PENDING,REBUILD-new,R7 on-strategy unindexed
+658,/flywheel-wordpress-hosting/#Flywheel_Pricing_Are_the_Prices_Justified,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,21,8.9,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+659,/robots-txt-for-seo-a-complete-guide/#How_does_a_robotstxt_file_appear,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,21,7.0,0,REMOVE / CONSOLIDATE candidate,PENDING,REBUILD-new,R7 on-strategy unindexed
+660,/robots-txt-for-seo-a-complete-guide/#What_is_Robotstxt,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,21,7.2,0,REMOVE / CONSOLIDATE candidate,PENDING,REBUILD-new,R7 on-strategy unindexed
+661,/social-media-content-ideas-for-nonprofits/#What_youll_need_to_start_promoting_your_nonprofit_organization_on_social_media,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,21,8.0,0,REMOVE / CONSOLIDATE candidate,PENDING,CONSOLIDATE,R9 thin idea cluster
+662,/robots-txt-for-seo-a-complete-guide/#2ModifytheRobottxtUser-Agent,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,19,6.8,0,REMOVE / CONSOLIDATE candidate,PENDING,REBUILD-new,R7 on-strategy unindexed
+663,/social-media-content-ideas-for-nonprofits/#12_Post_FAQs_about_your_Organizations_Services,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,19,8.1,0,REMOVE / CONSOLIDATE candidate,PENDING,CONSOLIDATE,R9 thin idea cluster
+664,/flywheel-wordpress-hosting/#Is_Flywheel_Good_for_Hosting,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,17,9.0,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+665,/nexcess-wordpress-hosting/#Nexcess_Web_Hosting_Is_Nexcess_good,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,17,9.2,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+666,/youtube-seo/#How_to_rank_YouTube_videos,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,17,9.0,0,REMOVE / CONSOLIDATE candidate,PENDING,REBUILD-new,R7 on-strategy unindexed
+667,/social-media-content-ideas-for-churches/#01_Share_Lyrics_of_the_Worship_Songs,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,16,7.8,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,guardrail money/pos-1
+668,/flywheel-wordpress-hosting/#What_is_Flywheel_WordPress_Hosting,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,15,7.9,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+669,/writesonic-review/#Writesonic_AI_Writers_for_AI_article_writing_What_makes_it_unique,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,15,9.3,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+670,/writesonic-review/#Writesonic_Pricing_How_much_does_a_Writesonic_AI_content_writer_charge,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,15,7.3,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+671,/cloudways-hosting/#Cloudways_Alternatives_Best_Cloud_Hosting_Providers_You_Must_Know,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,14,8.9,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+672,/cloudways-hosting/#What_Is_Cloudways_WordPress_Hosting,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,14,8.9,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+673,/best-digital-marketing-agency-in-dhaka-bangladesh/#Best_Digital_Marketing_Agency_in_Dhaka_Bangladesh,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,13,8.4,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+674,/best-digital-marketing-agency-in-dhaka-bangladesh/#Best_Digital_Marketing_Company_in_Dhaka_8211_Our_Digital_Solutions,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,13,8.4,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+675,/best-digital-marketing-agency-in-dhaka-bangladesh/#Why_Digital_Marketing,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,13,8.4,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+676,/writesonic-review/#Write_Sonic_Alternatives_You_Must_Know,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,13,7.6,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+677,/social-media-content-ideas-for-nonprofits/#07_Run_Polls_and_Ask_Questions,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,10,7.9,0,REMOVE / CONSOLIDATE candidate,PENDING,CONSOLIDATE,R9 thin idea cluster
+678,/social-media-content-ideas-for-nonprofits/#11_Record_a_Video_Tour_of_Your_Charity_Works,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,10,8.1,0,REMOVE / CONSOLIDATE candidate,PENDING,CONSOLIDATE,R9 thin idea cluster
+679,/social-media-content-ideas-for-nonprofits/#09_Share_Best_Fundraising_Advice8217s,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,9,7.4,0,REMOVE / CONSOLIDATE candidate,PENDING,CONSOLIDATE,R9 thin idea cluster
+680,/real-estate-social-media-posts-ideas/#Why_are_Social_Media_Content_Ideas_for_Realtors_Important,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,8,10.0,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+681,/flywheel-wordpress-hosting/#Best_Flywheel_Alternatives_You_Need_To_Know,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,7,8.7,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+682,/youtube-seo/#How_does_YouTube_Search_Engine_Optimization_work,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,7,8.1,0,REMOVE / CONSOLIDATE candidate,PENDING,REBUILD-new,R7 on-strategy unindexed
+683,/social-media-content-ideas-for-nonprofits/#04_Use_Hashtags_to_Get_Found,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,6,8.8,0,REMOVE / CONSOLIDATE candidate,PENDING,CONSOLIDATE,R9 thin idea cluster
+684,/youtube-seo/#What_is_YouTube_SEO,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,6,8.3,0,REMOVE / CONSOLIDATE candidate,PENDING,REBUILD-new,R7 on-strategy unindexed
+685,/content-marketing-ideas-for-healthcare-industry/#10_Content_Marketing_Ideas_for_Healthcare_Industry_2024,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,5,10.6,0,REMOVE / CONSOLIDATE candidate,PENDING,REBUILD-new,R7 on-strategy unindexed
+686,/content-marketing-strategy-for-b2b/#25_Content_Marketing_Strategy_for_B2B,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,5,8.0,0,REMOVE / CONSOLIDATE candidate,PENDING,REBUILD-new,R7 on-strategy unindexed
+687,/content-marketing-strategy-for-b2b/#B2B_Content_Marketing_Goals_of_B2B_Marketing_Lab,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,5,8.0,0,REMOVE / CONSOLIDATE candidate,PENDING,REBUILD-new,R7 on-strategy unindexed
+688,/how-can-companies-be-socially-responsible-marketers/#Foundational_Values_that_Any_Companies_Need_for_Their_Ethical_Marketing,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,5,8.2,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+689,/social-media-content-ideas-for-nonprofits/#03_Include_a_Visual_With_Every_Post,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,5,9.0,0,REMOVE / CONSOLIDATE candidate,PENDING,CONSOLIDATE,R9 thin idea cluster
+690,/digital-content-,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,4,29.8,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+691,/how-can-companies-be-socially-responsible-marketers/#Steps_you_should_take_for_building_your_CSR_initiative_from_start_to_finish_8211,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,4,7.5,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+692,/social-media-content-ideas-for-hotels/#25_Social_Media_Content_Ideas_for_Hotels_2022,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,4,4.0,0,REMOVE / CONSOLIDATE candidate,PENDING,CONSOLIDATE,R9 thin idea cluster
+693,/content-marketing-ideas-for-small-business/#16_Content_Marketing_Ideas_for_Small_Business_2024,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,11.3,0,REMOVE / CONSOLIDATE candidate,PENDING,CONSOLIDATE,R9 thin idea cluster
+694,/content-marketing-ideas-for-small-business/#Importance_of_Content_Marketing_for_Small_Business,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,11.3,0,REMOVE / CONSOLIDATE candidate,PENDING,CONSOLIDATE,R9 thin idea cluster
+695,/content-marketing-ideas-for-small-business/#Social_Media_Strategy,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,11.3,0,REMOVE / CONSOLIDATE candidate,PENDING,CONSOLIDATE,R9 thin idea cluster
+696,/ideas-for-personal-website-content/#What_is_Personal_Website,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,8.7,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+697,/hostinger-web-hosting/#Hostinger_Alternatives_Best_Web_Hosting_Providers_You_Must_Know,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,5.5,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+698,/hostinger-web-hosting/#Hostinger_Pricing_How_much_does_Hostinger_charge_for_hosting,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,5.5,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+699,/hostinger-web-hosting/#Hostinger_Web_Hosting_Is_Hostinger_a_good_host,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,5.5,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+700,/hostinger-web-hosting/#How_to_Make_A_Website_with_Hostinger_WordPress_hosting_A_Step-by-Step_Guide,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,5.5,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+701,/hostinger-web-hosting/#What_Is_Hostinger_Web_Hosting,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,5.5,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+702,/invest-in-seo/#5_Reasons_Why_Your_Business_Should_Invest_In_SEO,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,3.0,0,REMOVE / CONSOLIDATE candidate,PENDING,REBUILD-new,R7 on-strategy unindexed
+703,/invest-in-seo/#How_Much_Should_You_Invest_In_SEO,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,3.0,0,REMOVE / CONSOLIDATE candidate,PENDING,REBUILD-new,R7 on-strategy unindexed
+704,/invest-in-seo/#What_Is_SEO,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,3.0,0,REMOVE / CONSOLIDATE candidate,PENDING,REBUILD-new,R7 on-strategy unindexed
+705,/nexcess-wordpress-hosting/#Nexcess_Alternatives_Some_Other_Hosting_Providers_You_Must_Know,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,9.5,0,REMOVE / CONSOLIDATE candidate,PENDING,HUB-REVIEW,R8b affiliate->hub
+706,/best-examples-of-great-food-copywriting/chern--the-name-of-the-dish-or-restaurant-you-are-writing-about,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,1.0,0,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+707,/product-tag/wordpress-web-design/,WooCommerce,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,30.0,0,REMOVE / CONSOLIDATE candidate,PENDING,PRESERVE,R4 core/service/product
+708,/social-media-content-ideas-for-nonprofits/#05_Give_a_Shout-Out_to_Partners_and_Sponsors,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,13.0,0,REMOVE / CONSOLIDATE candidate,PENDING,CONSOLIDATE,R9 thin idea cluster
+709,/social-media-content-ideas-for-restaurants,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,1.0,0,REMOVE / CONSOLIDATE candidate,PENDING,CONSOLIDATE,R9 thin idea cluster
+710,//get-a-free-quote/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,76,REMOVE / CONSOLIDATE candidate,PENDING,HOLD,R10 uncertain
+711,/b2b-seo-agencies-2/,Post or Category,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,1,REMOVE / CONSOLIDATE candidate,PENDING,REBUILD-new,R7 on-strategy unindexed
+712,/wp-content/uploads/2022/03/Reinforce-Lab-Company-Profile.pdf,Asset / file,Crawled - currently not indexed,6,525,9.2,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+713,/wp-content/uploads/2023/09/Certificate-of-Incorporation-Reinforce-Lab-Limited.pdf,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),2,54,10.1,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+714,/wp-content/uploads/2020/03/Reinforce-Lab-Digital-Pricing-List-2020.pdf,Asset / file,Not found (404),1,95,14.1,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+715,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,71,16.5,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+716,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-3-scaled.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,62,14.1,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+717,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-3-scaled.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,33,13.6,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+718,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-inforgraphic-2.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,19,17.8,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+719,/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-2-scaled.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,14,20.4,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+720,/wp-content/uploads/2022/10/10-Successful-Digital-marketing-campaign.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,14,22.6,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+721,/wp-content/uploads/2021/10/Real-Estate-Social-Media-Posts-Ideas.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,13,24.2,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+722,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Churches.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,13,11.4,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+723,/wp-content/uploads/2022/10/10-Successful-Digital-marketing-campaign.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,13,30.2,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+724,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Photographers.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,12,15.2,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+725,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-1.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,11,17.6,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+726,/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-1-scaled.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,11,24.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+727,/wp-content/uploads/2021/10/social-media-content-ideas-for-churches-Infographic.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,10,13.1,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+728,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Churches.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,9,16.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+729,/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-1-scaled.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,9,22.6,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+730,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-1.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,6,16.5,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+731,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Nonprofits.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,6,14.2,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+732,/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media.jpeg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,5,14.2,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+733,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-inforgraphic-2.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,5,34.8,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+734,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,5,26.8,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+735,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,5,17.4,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+736,/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-2-scaled.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,5,20.8,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+737,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants-Infographic-1.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,4,10.5,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+738,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants-Infographic-2-scaled.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,4,27.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+739,/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-1.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,14.7,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+740,/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-3.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,35.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+741,/wp-content/uploads/2021/07/Creative-Content-Marketing-Ideas-Infographics-2.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,23.7,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+742,/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Infographic-2.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,18.3,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+743,/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-Infographic-2.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,20.7,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+744,/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media.jpeg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,28.7,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+745,/wp-content/uploads/2021/10/social-media-content-ideas-for-nonprofits-infographic.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,23.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+746,/wp-content/uploads/2022/10/Best-Examples-of-Great-Food-Copywriting.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,18.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+747,/wp-content/uploads/2022/11/Creative-Snapchat-Content-Ideas.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,18.7,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+748,/wp-content/uploads/2022/11/Creative-Snapchat-Content-Ideas.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,3,11.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+749,/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-3.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,21.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+750,/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-Infographic-3-scaled.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,21.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+751,/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-infographic-1.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,10.5,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+752,/wp-content/uploads/2021/09/Content-Marketing-for-Banks.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,4.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+753,/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels-infographic-1.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,11.5,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+754,/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,17.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+755,/wp-content/uploads/2022/02/How-can-companies-be-socially-responsible-marketers-infographic-2.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,16.5,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+756,/wp-content/uploads/2022/02/Sensory-Marketing-Infographic-1.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,14.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+757,/wp-content/uploads/2022/02/Sensory-Marketing-Infographic-2-scaled.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,9.5,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+758,/wp-content/uploads/2022/02/Sensory-Marketing-Infographic-3-scaled.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,26.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+759,/wp-content/uploads/2023/01/Flywheel-01.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,37.5,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+760,/wp-content/uploads/2023/03/8-Simple-YouTube-SEO-Tips-To-Rank-Your-Videos-Higher-in-Search.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,2,16.5,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+761,/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-1.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,10.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+762,/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-2.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,23.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+763,/wp-content/uploads/2021/07/Content-marketing-ideas-for-the-healthcare-industry.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,19.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+764,/wp-content/uploads/2021/07/Content-marketing-ideas-for-the-healthcare-industry.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,8.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+765,/wp-content/uploads/2021/07/Creative-Content-Marketing-Ideas-Infographics-3-scaled.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,21.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+766,/wp-content/uploads/2021/07/Creative-Content-Marketing-Ideas.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,23.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+767,/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Infographic-2.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,17.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+768,/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Inforgraphic-4.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,21.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+769,/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-Infographic-3-scaled.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,23.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+770,/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-infographic-1.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,16.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+771,/wp-content/uploads/2021/09/Content-Marketing-for-Banks-Infographic-1.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,1.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+772,/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels-infographic-4-scaled.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,4.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+773,/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,30.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+774,/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,19.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+775,/wp-content/uploads/2021/10/Real-Estate-Social-Media-Posts-Ideas.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,10.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+776,/wp-content/uploads/2021/10/social-media-content-ideas-for-nonprofits-infographic.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,9.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+777,/wp-content/uploads/2021/10/social-media-content-ideas-for-photographers-infographic.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,1.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+778,/wp-content/uploads/2022/01/Content-Marketing-vs-Social-Media-Marketing-Infographic-1.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,21.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+779,/wp-content/uploads/2022/01/Content-Marketing-vs-Social-Media-Marketing-Which-One-is-Best.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,50.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+780,/wp-content/uploads/2022/09/Ideas-for-Personal-Website-Content.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,24.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+781,/wp-content/uploads/2022/09/Ideas-for-Personal-Website-Content.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,14.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+782,/wp-content/uploads/2023/01/Bluehost-01.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,24.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+783,/wp-content/uploads/2023/02/Copy.-AI-Writer-1024x580.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,1.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+784,/wp-content/uploads/2023/03/8-Simple-YouTube-SEO-Tips-To-Rank-Your-Videos-Higher-in-Search-1024x551.jpg.webp,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,13.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+785,/wp-content/uploads/2023/03/Most-Common-SEO-Mistakes-To-Avoid-1.jpg,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,1,24.0,0,EXCLUDE — not a page,PENDING,RETIRE-410,R1 media file
+786,/wp-content/litespeed/avatar/5b6ba5d9216dd76f21cee6344bf696c6.jpg?ver=1787231186,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,0,EXCLUDE — not a page,PENDING,HOLD,R10 uncertain
+787,/wp-content/litespeed/avatar/acca34fa98ff1957c4195affee1b4b46.jpg?ver=1787204256,Asset / file,Not in a not-indexed list — presumed indexed (unconfirmed),0,0,0.0,0,EXCLUDE — not a page,PENDING,HOLD,R10 uncertain
+,NEW URLs — APPROVED 20 AUG 2026 (D-006). Do not exist yet. Build on reinforcelab.online.,,,0,0,0.0,0,,,HOLD,R10 uncertain
+N1,/services/ai-first-business-systems/,Service page — NEW,Does not exist yet,0,0,0.0,0,BUILD ON .ONLINE — new URL (§27),APPROVED — NEW URL,PRESERVE,R4 core/service/product
+N2,/services/ai-search-optimization/,Service page — NEW,Does not exist yet,0,0,0.0,0,BUILD ON .ONLINE — new URL (§27),APPROVED — NEW URL,PRESERVE,R4 core/service/product
+N3,/services/generative-engine-optimization/,Service page — NEW,Does not exist yet,0,0,0.0,0,BUILD ON .ONLINE — new URL (§27),APPROVED — NEW URL,PRESERVE,R4 core/service/product
+N4,/services/seo-ai-search-audit/,Service page — NEW,Does not exist yet,0,0,0.0,0,BUILD ON .ONLINE — new URL (§27),APPROVED — NEW URL,PRESERVE,R4 core/service/product
+N5,/services/pharmaceutical-seo/,Service page — NEW,Does not exist yet,0,0,0.0,0,BUILD ON .ONLINE — new URL (§27),APPROVED — NEW URL,PRESERVE,R4 core/service/product

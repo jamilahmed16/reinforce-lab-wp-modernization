@@ -362,16 +362,243 @@ Active design system `reinforce-lab-systems-grid` (stored on `.online` via Novam
 
 ---
 
+## GSC PRIMARY DATA RECEIVED — closes O-005 + O-010
+**Date:** 10 September 2026 · **Status:** `[VERIFIED — from GSC exports]`
+
+Jamil delivered the full Search Console evidence base in one batch (21 files, raw in [claude/data/gsc-2026-09/raw/](data/gsc-2026-09/raw/)): **Performance** (16 months, Web, **global** — not US-only SEMrush), **Page Indexing / Coverage** + 3 drilldowns + post-sitemap, and the **Links** report (external backlinks + 11 internal-link drilldowns). This supersedes every prior traffic figure, which was SEMrush estimate. **O-005, O-010 and O-011 (GA4) are closed** (GA4 answered for diagnosis — full landing-page CSV still ideal for per-URL register work). Remaining DISCOVER gap at the time: the **WPCode inventory** (O-014, since closed — see F-014). New item raised: **O-015** (production shows two homepage titles incl. the "AI Growth Systems" positioning — confirm which page and trace to an approval).
+
+### F-007 — Real global traffic: peak Jul 2025, impressions cliff Sep–Oct 2025
+16-month totals: **4,319 clicks / 5,951,488 impressions** (global). Monthly clicks/impressions:
+
+| | Jul'25 | Aug'25 | Sep'25 | Oct'25 | … | Aug'26 | Sep'26(part) |
+|---|---|---|---|---|---|---|---|
+| Clicks | 525 | 454 | 544 | 389 | | 41 | 8 |
+| Impressions | 1.12M | 1.03M | 630K | 226K | | 71K | 9K |
+
+The defining event is an **impressions cliff** — 1.03M (Aug'25) → 630K → **226K (Oct'25), ~−78% in two months** — while average position barely moved (~48–50). Clicks held ~2 more months, then bled out through 2026. Pages losing impressions while rank holds = loss of eligibility, not a ranking drop. Refines the earlier SEMrush-based "525→27" (real Aug'26 = 41). Devices: desktop 2,593 / mobile 1,689 / tablet 37 clicks. 395 clicks came via Google **Translated results** (international surfacing).
+
+### F-008 — The collapse is crawl-budget starvation + a small quality-rejection set (CORRECTS earlier framing)
+Coverage as of ~4 Sep 2026: **93 indexed / 346 not indexed** (439 known — confirms the "19.4% indexed" figure from GSC itself). Not-indexed reasons: Crawled–not-indexed **140**, Alternate w/ canonical **75**, Discovered–not-indexed **74**, noindex 38, 404 **13**, robots 3, redirect 3.
+
+**Correction to my first read of this data:** the 140 "Crawled – currently not indexed" is **not** mostly a sitewide quality verdict. The full 139-row list breaks down as ~**113 technical junk** Google is right to skip — **63 `/paged-N/M/` junk (F-001)**, 18 author archives, 11 `/page/N/`, 8 `wc-ajax`/`wp-json`, 7 `/feed/`, 6 sitemap `.xml` — and only **~20–25 real articles/services** genuinely crawled-and-rejected. So the dominant mechanism is **crawl budget consumed by junk**, which starves real pages (below), plus a smaller thin-content rejection set. This is a more fixable diagnosis than a blanket demotion.
+
+### F-009 — 58-pages-never-crawled claim proven at URL level (`Last crawled: 1970-01-01`)
+The "Discovered – not indexed" drilldown shows every URL with **`Last crawled: 1970-01-01`** — the epoch date = **Google has never fetched them**. Hard proof behind the "58 real pages never crawled" finding. The never-crawled set is exactly the commercial inventory the business needs: `/dental-seo/`, `/youtube-seo/`, `/a-complete-woocommerce-seo-guide/`, `/what-is-technical-seo…/`, `/how-to-do-local-seo-audit/`, plus review pages (kinsta, cloudways, semrush, jasper, …). Caveat: the discovered drilldown is a 39-row **sample** of the 74; the crawled 139-row export is complete.
+
+### F-010 — External link equity is ~93% concentrated on the homepage
+Only ~13 URLs have any external link. **Homepage: 261 incoming links from 50 sites**; every other page has 1–3. Total ≈ 281, so the homepage holds ~93%. Referring profile is thin and **directory-heavy** (jadirectives 91 — likely one sitewide link, designrush 24, ecommercefastlane 21, goodfirms 18, inpaceshop.com 16 = own project, advocategazi 15; long tail of single-link profile listings). **Migration implication:** retiring deep blog/junk pages costs almost no backlink equity; the homepage is the crown jewel and is preserved by default. De-risks the RETIRE decisions F-008/F-009 point to.
+
+### F-011 — Internal linking is nav/footer-dominated; content is orphaned
+Eleven pages sit at **104–107 internal links** (menu + footer: privacy, contact, terms, homepage, get-a-free-quote, 3 service pages, blog, our-team, portfolio), then a cliff — nonprofits-content 34, banks 27, small-business 18, rest in single digits or zero. Mechanism behind "337 URLs with zero internal links," and validates **O-002**. The `/paged-N/` junk sits *inside* the internal link graph (it appears as linking pages), which is how Google keeps rediscovering it; the least-linked content pages get their only inbound links from that junk, so removing junk also strips their thin linking — linking must be rebuilt deliberately.
+
+### F-012 — Backlink profile is branded/navigational, ~zero topical anchor equity (clean but weak)
+Site-level Links report: **~60 referring domains** (vs 50 for the homepage alone — ~10 more reach inner pages). Anchor-text distribution is dominated by **branded/navigational** terms — ranks 1–13 are "reinforce lab", "reinforce lab ltd", "visit website", "reinforcelab com", "reinforce lab limited", "visit / view website / source", followed by ~15 machine-**translated** brand variants (directory listings: "laboratorio de refuerzo", "güçlendirme laboratuvarı", "강화 연구소", …). **Topical anchors barely exist** and rank 17+: "content marketing", "digital marketing agency", "social media marketing service", "content writing service", "branding", "b2b". No spam/over-optimized anchors — the profile is **clean but thin**: there is no keyword-anchor authority to preserve or lose in migration. New/low-quality domains noted (t.co social shares across 7 targets; a bare IP `101.133.230.96` = likely scraper mirror). Reinforces F-010.
+
+### F-013 — GA4 (90 days): zero tracked business, bot-inflated traffic, real audience is Bangladesh; a 404 page is the #3 most-viewed
+GA4 property "Reinforce Lab Limited" (production), 12 Jun–9 Sep 2026, delivered as 7 screenshots + 1 PDF (in [data/gsc-2026-09/ga4/](data/gsc-2026-09/ga4/) — clean CSV exports would still be better for per-URL register work).
+
+- **No measurable conversion.** Total revenue **$0.00**, transactions **0**; Lead-acquisition report shows New / Qualified / Converted leads all **0**. Only **31 "key events"** fire in 90 days — **21 (68%) from Organic Search**, 8 Direct, 2 Referral. So "which pages produce business" (the O-011 question) ≈ **none trackable**; what little intent exists comes through Organic Search.
+- **Traffic is bot/low-engagement-inflated.** 751 users / 906 sessions, but by country: US 244 (12s avg, 4 key events), **China 102 (3s, 0)**, **Singapore 83 (1s, 0)** — China+Singapore = 185 users at near-zero engagement, almost certainly bot/spam. The genuinely engaged, converting audience is **Bangladesh: 50 users, 60% engagement, 4m44s, 20 of 31 key events (65%)** — i.e. the team + local leads. The 751 headcount is not 751 prospects.
+- **Direct = 61% of sessions** (556/906) — abnormally high; consistent with untagged/bot/brand traffic. Organic Search 30% but carries the engagement (56% rate, 1m07s) and the conversions.
+- **A 404 page is the #3 most-viewed page** — "Error 404 Page not found" = 73 views / 70 users (**5.6% of all pageviews**). Real users are hitting dead ends (the six footer 404s + junk), corroborating F-008/F-009 from the user side.
+- GSC-linked landing pages in GA4 match GSC Pages.csv (social-media-management guide, campaign-examples, seo-services on top) — cross-validates F-007. New **"AI Assistant" channel** appears (2 users) — GA4 now attributing some visits to AI assistants.
+
+**Production already surfaces the new positioning (O-015).** The property shows **two distinct homepage-style titles**: "Reinforce Lab Limited | Your Digital Growth Partner" (433 views) **and** "Reinforce Lab | AI Growth Systems, AI Search & SEO" (139 views). Jamil confirmed **all of this is `reinforcelab.com` (production) data** — so the "AI Growth Systems" title is production's own, not `.online` leaking in (an earlier contamination hypothesis, now retracted). Open question: is the second title the approved D-010 homepage change (and did the title flip mid-window, hence two rows), or a separate/unlogged production edit? Confirm which page carries it and trace it to an approval — connects to O-006/O-007 (production changing outside the chain). Recorded as O-015.
+
+**Also surfaced (record only — no production change):** malformed production slugs — `/services/content-` (truncated), `/video-marekting/` (typo, has its own `/feed/`), `/services/ppc-management-services` (no trailing slash), `/digital-marketing-competitor/` vs `/…-analysis/` (near-duplicate). Production already uses `/services/` (e.g. `/services/technical-seo-services/`), so the 5 approved new `/services/…` URLs must be checked against existing slugs at migration — no collision seen, but track it.
+
+**Data caveats:** Coverage chart retains only from 2026-06-11 (the Sep–Oct 2025 transition is visible in Performance, not Coverage); the 11 internal-link drilldowns are not labelled by target page in the export.
+
+---
+
+## F-014 — WPCode inventory (production): 2 active sample snippets, none SEO-relevant — closes O-014
+**Date:** 10 September 2026 · **Status:** `[VERIFIED — from WPCode Lite export]`
+
+Production runs **WPCode Lite v7.1** with exactly **two snippets, both active** (`auto_insert: 1`), both leftover WPCode **sample** snippets dated 2022-07-20 (export saved at [data/production-config/wpcode-snippets-2026-09-10.json](data/production-config/wpcode-snippets-2026-09-10.json)):
+
+1. **"Display a message after the 1st paragraph of posts"** (text, `after_paragraph`) — injects the literal string *"Thank you for reading this post, don't forget to subscribe!"* after paragraph 1 of **every post**. Harmless but low-value boilerplate on all post content. **Do not carry across at migration.**
+2. **"Completely Disable Comments"** (PHP, `everywhere`) — disables comments site-wide (removes comment support from all post types, closes comments/pings, hides existing comments, removes the admin menu). Its one `wp_safe_redirect` targets only the admin `edit-comments.php` screen — **not a front-end/SEO redirect.**
+
+**SEO verdict:** neither snippet touches rewrite rules, redirects, canonical, schema/JSON-LD, `robots`/noindex, or analytics. **WPCode is NOT a source of the `/paged-N/` junk, the indexation loss, or any hidden tracking.** One SEO-relevant negative ruled out.
+
+**Caveat:** this covers **WPCode-managed** code only. Code in the theme `functions.php`, mu-plugins, or other managers is not in this export (no separate "Code Snippets" plugin was present — the menu labelled "Code Snippets" *is* WPCode). Analytics/Search Console are wired via **Google Site Kit** (seen in the admin), not a WPCode snippet — relevant to O-015.
+
+**With F-014, DISCOVER data is complete:** GSC (Performance/Coverage/Links), GA4, and the production code inventory are all in hand. Only **O-015** (confirm the production homepage-title state) remains as a loose end, and it is not migration-blocking.
+
+---
+
+## F-015 — Production already runs 37 Yoast redirects, with multi-hop chains to flatten
+**Date:** 10 September 2026 · **Status:** `[VERIFIED — transcribed from Yoast Redirects screenshots]`
+
+Production has an existing redirect map in **Yoast SEO Premium → Redirects**: **37 rules** (36× 301, 1× 410 on an old project PNG). Full transcription: [data/production-config/yoast-redirects-2026-09-10.csv](data/production-config/yoast-redirects-2026-09-10.csv). (Transcribed from 4 screenshots — a Yoast CSV export would be authoritative if we want to be exact.) Confirms **Yoast Premium** is active (Redirects is a paid feature).
+
+**Why it matters:** the migration redirect map is **not starting from zero** — it must incorporate and not conflict with these 37, and Yoast Premium is the mechanism already in place to serve the new map.
+
+**⚠ Redirect chains present (SEO issue to flatten).** Several old URLs 301 to a target that itself 301s onward — Google discourages chains (equity loss, crawl waste):
+- `management-team-3` → `management-team-2` → `team-leads` → `/our-team` (**3 hops**)
+- `graphics-designing-services` → `/services/graphic-design-services` → `/services/creative/graphic-design-services`
+- `services/best-search-engine-optimization-services/link-building-seo-services` → `/services/link-building-seo-services` → `/services/best-affordable-seo-link-building-services`
+- `product/search-engine-optimization-services` → `…-starter-monthly` → `…-service-starter-monthly`
+
+When we build the migration map, **flatten every chain** so each old URL points directly to its final destination.
+
+**Also useful — current canonical service/product slugs** (the redirect *targets* reveal what production treats as live): `/services/best-search-engine-optimization-services`, `/services/best-on-page-seo-services`, `/services/off-page-seo-services`, `/services/best-affordable-seo-link-building-services`, `/services/creative/graphic-design-services`, `/services/content-marketing-services`, `/services/email-marketing-services`, `/services/ppc-management-services`, `/services/ecommerce-website-design-service`. Note the existing `/services/` and nested `/services/creative/` paths (cf. F-011) — the 5 approved new `/services/…` slugs (D-003) must be checked against these at migration to avoid collisions/new chains.
+
+---
+
+## D-014 — PRESERVE URL disposition rules APPROVED
+**Date:** 10 September 2026 · **Status:** APPROVED — ACTIVE
+
+The disposition framework in [preserve-disposition-rules.md](preserve-disposition-rules.md) is approved and governs how the 765 pending URLs are classified. Nine dispositions (PRESERVE / PRESERVE-URL+REWRITE / 301 / CONSOLIDATE / REBUILD / RETIRE→301 / RETIRE→410 / KEEP-noindex / HOLD), assigned by 10 first-match rules (R1–R10) driven by primary data (F-007→F-015). **Approved parameters:** equity = **≥8 clicks/16mo or indexed-and-ranking**; off-brand top earners **kept + rewritten/consolidated**; retire = **410 junk / 301 real**; money & position-1 pages **mandatory HOLD** for individual sign-off. Classification may now run into a proposed-disposition sheet; **application to any URL/redirect/site still requires per-URL or per-batch approval, executed only at the approved migration cutover.** No bulk ops (F-003); `.online` stays noindex (D-012).
+
+---
+
+## D-014b + F-016 — Full register classified (793 URLs); affiliate pages → HUB-REVIEW
+**Date:** 10 September 2026 · **Status:** D-014b APPROVED (affiliate hub) · classification `PROPOSED — awaiting batch review`
+
+**D-014b — affiliate hub.** Jamil directed that the hosting/tool **review (affiliate) pages** be **kept and consolidated under a siloed hub** (new **HUB-REVIEW** disposition), not RETIRE→301. Their value is affiliate commission, invisible to organic-click data. Trade-off flagged: topical dilution / entity inconsistency (F-008) — conditions to keep it SEO-safe recorded in [preserve-disposition-rules.md](preserve-disposition-rules.md) §6 D-e (silo path, consolidate thin ones, `rel="sponsored"`, FTC disclosure, deliberate indexation).
+
+**F-016 — full-register classification.** D-014 applied to all **793 rows** of the URL Decision Register (sheet 3 of `Reinforce_Lab_URL_Decision_Register_v3.xlsx`), using its per-row indexation status, clicks, impressions, position, type, and inlinks. Output: [preserve-disposition-sheet-proposed-2026-09-10.csv](preserve-disposition-sheet-proposed-2026-09-10.csv) (row-level, 793) and the **review artifact** [preserve-disposition-sheet-pagelevel-2026-09-10.csv](preserve-disposition-sheet-pagelevel-2026-09-10.csv) (**631 unique pages**, anchor fragments collapsed). Both carry the register's prior recommendation + approval state alongside the new D-014 disposition + rule fired.
+
+Proposed counts (fragment/anchor rows inflate totals — they collapse to their parent page at execution):
+
+| Disposition | Rows |
+|---|---|
+| RETIRE-410 (junk/media/404) | 377 |
+| HOLD (money/pos-1 + uncertain) | 116 |
+| PRESERVE (core/service/product) | 80 |
+| HUB-REVIEW (affiliate) | 59 |
+| PRESERVE+REBUILD (on-strategy earners) | 51 |
+| REBUILD-new (on-strategy, never-crawled) | 40 |
+| PRESERVE-URL+REWRITE (off-brand earners) | 32 |
+| KEEP-noindex (pagination/transactional) | 20 |
+| CONSOLIDATE (thin clusters) | 18 |
+
+**Status:** proposal only. Nothing applied. Next: Jamil reviews per batch; HOLD + money pages decided individually; approved rows → `APPROVED` state + tested redirect map (chains flattened, F-015); migration not scheduled until the map is complete.
+
+---
+
+## D-015 — URL disposition review (batch approvals, per D-014)
+**Date:** 12 September 2026 · **Status:** APPROVED — PLANNING (applied at migration cutover, not on production now)
+
+Bucket-by-bucket approval of the page-level sheet ([preserve-disposition-sheet-pagelevel-2026-09-10.csv](preserve-disposition-sheet-pagelevel-2026-09-10.csv), 631 pages), recorded in its `decision` column. Standing QA rule reaffirmed by Jamil: **the new site must ship error-free — no broken internal links, no dead redirects, no 404s** (extends D-012); the new IA links to none of the retired URLs, and every redirect must resolve single-hop.
+
+**✅ RETIRE-410 bucket — approved 12 Sep 2026.** Of 377 pages routed to 410, after review:
+- **353 → 410** (225 paged-N/junk, 71 disposable images, 56 author-archive pagination, 1 outdated 2020 pricing PDF).
+- **Carve-outs corrected out of 410:**
+  - **2 → PRESERVE** — real business docs to migrate: `Reinforce-Lab-Company-Profile.pdf` (525 impressions) and `Certificate-of-Incorporation-Reinforce-Lab-Limited.pdf`.
+  - **11 → CONFIG** (no redirect) — 6 sitemap `.xml` (Yoast-generated) + 5 `wp-*` wildcard/system patterns (robots.txt). Not redirect targets.
+  - **9 → 301 → /our-team** — base author archives (`/author/<name>/`), catching ~29 clicks; author *pagination* stays 410.
+  - **1 → FIX-REDIRECT** — `/ideas-for-personal-branding/` is a live Yoast redirect target that 404s (broken redirect); repoint the inbound redirect to a live page, retire the dead target.
+  - **1 → REBUILD-new** — `/generate-leads-for-business/` held as an on-strategy lead-gen rebuild candidate.
+
+**✅ PRESERVE bucket — approved 14 Sep 2026.** Of 78 auto-preserved, after review: **54 confirmed PRESERVE** (homepage, core pages, real service/product/project pages, 2 rescued PDFs). Corrected out: **7 duplicate slugs → 301** (no-trailing-slash twins), **9 `?add-to-cart=` → KEEP-noindex**, **2 empty taxonomies → KEEP-noindex**, **1 malformed → 410**. **AI-service slug reconciliation (D-003 cannibalization resolved):** kept the 4 approved slugs present (`ai-search-optimization`, `generative-engine-optimization`, `seo-ai-search-audit`, `pharmaceutical-seo`); **`ai-first-business-systems` → 301 → new `/services/ai-growth-systems/`** (build as 5th approved URL); 4 redundant variants (`*-services`, `creative/*`) → 301 to their canonical. Net: the 5 approved service URLs survive, no two live URLs compete.
+
+**✅ ALL BUCKETS COMPLETE — 631/631 pages decided (20 Sep 2026).** Every bucket reviewed and approved: PRESERVE+REBUILD (on-strategy earners), REBUILD-new (high-impression pages Google never ranked; 3 corrected out), HUB-REVIEW (Approach A — 20 affiliate reviews kept at slug under a new `/reviews/` hub with rel=sponsored + disclosure; 5 dead consolidated), KEEP-noindex (pagination + transactional), PRESERVE-URL+REWRITE (off-brand earners re-angled; 2 → industry pillars), CONSOLIDATE (thin/dup clusters), HOLD (66 → money pages PRESERVE+REBUILD, legacy categories 301'd to nearest new hub rather than recreated, on-strategy pages rebuilt, thin 0/0 → 410; ~12 junk items cleaned out).
+
+**Final disposition tally (631 pages):** RETIRE-410 369 · 301 47 · PRESERVE 44 · PRESERVE+REBUILD 39 · KEEP-noindex 31 · CONSOLIDATE 30 · REBUILD-new 28 · HUB-REVIEW 20 · CONFIG 12 · PRESERVE-URL+REWRITE 9 · FIX-REDIRECT 1 · DROP 1. Full per-URL detail (disposition + rule + decision) in [preserve-disposition-sheet-pagelevel-2026-09-10.csv](preserve-disposition-sheet-pagelevel-2026-09-10.csv).
+
+**Next after this:** build the tested single-hop redirect map from these dispositions (301/CONSOLIDATE targets flattened, deconflicted against the 37 existing Yoast redirects — F-015), and add the approved-new URLs (D-016) to the register. Nothing executes until the approved migration cutover.
+
+---
+
+## D-016 — "Search Authority OS" initiative + IA decisions
+**Date:** 15 September 2026 · **Status:** APPROVED — ACTIVE
+
+Reinforce Lab is productizing an AI content/SEO intelligence system, **Search Authority OS** — a productized **"Operating System" under the locked primary category "AI Growth Systems"** (one of several OS products planned under that umbrella; AI Growth Systems stays the parent brand/category). Strategy source: [reference/search-authority-os-strategy-2026-09-15.md](reference/search-authority-os-strategy-2026-09-15.md).
+
+**The product (summary).** Claude Code (brain/orchestrator) + Neon (memory) + GitHub (versioning) + Langfuse, with a research stack (Jina, Exa, Firecrawl, SEMrush, DataForSEO, SerpApi, social sentiment), an evidence/verification layer, QA gates, GSC/GA4/GTM 7-day reporting, a self-healing loop, and Pharma/Life-Sciences evidence connectors (PubMed, Europe PMC, PubChem, ClinicalTrials.gov, FDA/openFDA, patents). Sold as **3 packages** (Foundation / Growth OS / Enterprise, ~$5k→$35k+ setup, ~$1.5k→$15k/mo) plus **8–9 individual agents**, with the **Diagnostic Engine as Agent #1 / free lead magnet**. Reinforce Lab = R&D lab + agency case study; Accfintax (finance), JA Directives (education), Pharma as verticals. **Build order: site front-end first, then the OS MVP.**
+
+**Decisions locked (15 Sep 2026):**
+- **Brand:** governed by **D-013 dark "Systems Grid"** — the strategy doc's light/editorial/serif direction is **rejected/superseded**.
+- **Positioning:** Search Authority OS is **an OS product under AI Growth Systems** (not a rename, not a competitor to it).
+- **New URLs — `APPROVED — NEW URL`:**
+  - `/search-authority-os/` — the OS product page
+  - `/packages/` — pricing/packages
+  - **Agents hub `/services/agents/`** + 8 agent selling pages beneath it (grouped, Option 1 — decided 15 Sep, avoids collision with the AI service pages): `/services/agents/seo-intelligence/`, `/content-research/`, `/evidence-verification/`, `/aeo-geo-optimization/`, `/social-sentiment/`, `/competitor-intelligence/`, `/content-qa/`, `/search-performance/`
+  - **20-post content cluster** — on-strategy blog posts (feed the REBUILD-new / new-content pipeline)
+  - `/search-authority-diagnostic/` — **free** automated diagnostic (lead magnet, Agent #1) ✅ decided 15 Sep
+- These new URLs must be **added to the URL Decision Register** as approved-new before the IA is locked.
+
+**Funnel decided (O-016 CLOSED, 15 Sep):** keep BOTH the free diagnostic and the paid audit as distinct products — **`/search-authority-diagnostic/` (free, automated, lead capture) → `/services/seo-ai-search-audit/` (paid one-time deep audit) → `/packages/` (monthly OS retainer)**. Increasing commitment at each step; the free diagnostic feeds the paid offers; no cannibalization.
+
+**Packages & store decided (17 Sep):** high-ticket ($5k–$35k) sells consultatively, not via cart. So — **`/packages/` = a pricing/comparison page, CTA → free diagnostic / book a call, NO add-to-cart.** **WooCommerce stays (D-002) only for genuinely self-serve fixed-price items** (e.g. the paid audit as an optional buyable product); it is not used for the OS packages. **Legacy `/product/` tiers (SEO monthly/yearly, web-design — ~0 traffic) → CONSOLIDATE:** 301 the SEO tiers → `/packages/`, the web-design tiers → `/services/wordpress-website-design-service/` (single-hop). This supersedes their earlier PRESERVE in the D-015 review (10 rows updated on the disposition sheet). Store infrastructure kept: `/shop/` PRESERVE, `/cart` `/checkout` `/my-account` KEEP-noindex.
+
+**Still to decide one-by-one:** which of the 20-post cluster map to REBUILD-new vs brand-new (content planning, later).
+
+---
+
+## F-016 — Migration redirect map built & validated
+**Date:** 20 September 2026 · **Status:** `[VERIFIED — planning artifact; not applied to production]`
+
+Built from the 631 approved dispositions + the 37 existing Yoast redirects (F-015): [redirect-map-2026-09.csv](redirect-map-2026-09.csv).
+
+- **118 × 301** redirects, **all single-hop, all targets confirmed live** (a surviving PRESERVE/REBUILD/HUB/new URL) — **9 chains flattened** so no redirect points at another redirect; deconflicted against the existing Yoast rules.
+- **370 × 410** (Gone) — junk, media, dead 0/0 pages; no redirect, clean removal.
+- **0 unresolved / 0 broken targets** — satisfies the "new site ships error-free" rule (D-015): no dead redirects, and the new IA links to none of the retired URLs.
+
+Columns: `old_url, new_url, code, source, status`. **Applies only at the approved migration cutover** (§10). Before cutover, this map is the tested input; the approved-new URLs (D-016) still need building on `.online`.
+
+---
+
+## D-017 — Build kickoff on `.online` (approved-new URLs)
+**Date:** 20 September 2026 · **Status:** IN PROGRESS
+
+Confirmed `.online` live and safe (home_url=reinforcelab.online, `blog_public=0` noindex, full locked stack present; was near-greenfield — only `/home/` hero + a draft privacy page). **Step 1 done: 21 pages scaffolded as drafts** with correct hierarchy — `/search-authority-os/`, `/search-authority-diagnostic/`, `/packages/`, `/services/` + 5 approved service pages + `/services/agents/` + 8 agent pages, `/reviews/` + 2 pillars. Idempotent; content to follow.
+
+**Build order:** Home (below hero) → SAOS flagship (`/search-authority-os/`, `/packages/`, `/search-authority-diagnostic/`) → services + agents → `/reviews/` → REBUILD-new content (28, in F-003-safe batches). Each page to D-013 (Systems Grid) + D-012 (SEO standard), passing `check-design`. Nav menu wired once key pages have content.
+
+---
+
+## D-018 — Design system v2: "Systems Grid" evolved (square-glass) — APPROVED
+**Date:** 24 September 2026 · **Status:** APPROVED — ACTIVE · extends D-013
+
+After building the Search Authority OS landing preview and reviewing against reference designs Jamil supplied, the visual system evolved (still dark, still red `#990000`, still Oswald/IBM Plex, still **zero radius** — he explicitly chose square over rounded). New, approved elements:
+- **Frosted-glass cards** (blur + `rgba` fills + top highlight) on a soft red-black glow — replaces the flat hairline-grid cards. Soothing, per reference ③.
+- **Buttons:** dark **glass with a red glow bleed + a red `+` mark** (ref ④) — Jamil "loves it." Zero-radius (square) confirmed.
+- **Visible Systems Grid background** (~10% brighter) with a second larger red grid, **parallax** (drifts on scroll + mouse) and a **cursor-follow red glow** (softened; reduced-motion safe).
+- **CTA section:** red **portal/door** motif (ref ②).
+- **Footer:** **Aurora** treatment — giant `REINFORCE LAB` wordmark in a red→black gradient over a faint repeating-text texture, no imagery (ref ①).
+- **Hero:** three-line headline ("Stop publishing content. / Start building / search authority.") sized so the **entire hero + CTAs + engine animation fit one laptop/desktop screen**.
+
+**Preview artifact (look-and-feel, not live):** the Search Authority OS landing page. Long-form, sales-style, ICP pain-points, multiple CTAs, honest placeholders (no invented metrics).
+
+**Still to redesign (Jamil flagged):** the **header and footer** get reworked before pages are mass-produced (they are global chrome). Build blocker: **Novamira `.online` connection is down** (CONNECT_TIMEOUT) — must be reconnected before translating designs to Beaver Builder.
+
+---
+
+## D-019 — Information architecture hierarchy (confirmed)
+**Date:** 24 September 2026 · **Status:** APPROVED — ACTIVE
+
+**AI Growth Systems** is the brand/category umbrella. **Search Authority OS** is the flagship **product ("an OS") beneath it** — one of potentially several OS products under the umbrella.
+
+```
+AI Growth Systems  (umbrella / positioning)
+├─ Search Authority OS        /search-authority-os/      (flagship product)
+│    ├─ Diagnostic (free)     /search-authority-diagnostic/
+│    ├─ Packages (buy)        /packages/
+│    └─ Agents (OS modules)   /services/agents/…  (8)
+├─ Solutions / Services       /services/…
+│    (AI Search Optimization · GEO · SEO & AI Search Audit · Pharmaceutical SEO ·
+│     Automated SEO Content Systems · Marketing Automation)
+└─ (future OS products under the same umbrella)
+```
+
+- **`/services/ai-growth-systems/`** = the umbrella **pillar/overview** page ("what AI Growth Systems is") → links down to `/search-authority-os/` and the individual services. Not a peer service.
+- **`/search-authority-os/`** = the flagship **product** page beneath the pillar; sold via Packages, entered via the Diagnostic, built from the 8 Agents.
+
+**Still open (service set):** approve slugs for the two new Solutions not yet in the register — `/services/automated-seo-content-systems/` and `/services/marketing-automation/`; and decide keep-vs-consolidate for the ~19 legacy production `/services/*` pages (recommendation: consolidate into the 7 Solutions, keep only actively-sold legacy services).
+
+---
+
 ## STILL OPEN — awaiting Jamil
 
 | Ref | Item | Why it matters |
 |---|---|---|
 | O-002 | **17 orphaned ranked URLs** — approve internal linking? | Zero-risk, highest-leverage action available. Changes no URL, slug, canonical, or content. |
 | O-003 | **Beaver Builder Pro + Beaver Themer licences** — existing keys, or purchase? | Both unlicensed on `.online`. Blocks updates and support. |
-| O-005 | **Google Search Console export** — 12 months confirmed sufficient | The last blocking DISCOVER gap. All traffic figures to date are US-only SEMrush estimates. |
 | O-009 | **Production footer: leave the six 404s live until launch, or remove the links now?** | A menu edit is reversible and changes no URL. Leaving them means every visitor clicking your flagship services hits a dead end for the whole build period. |
-| O-010 | **GSC Page Indexing report** — needed to diagnose the Sept–Oct 2025 impression collapse | Highest-value open question in the project. Redesigning over an undiagnosed decline risks inheriting its cause. |
-| O-011 | **GA4 landing-page export** | Last evidence gap. We know which pages get clicks; we do not know which produce business. |
+| O-015 | **Two homepage titles on production** (F-013) — "…Your Digital Growth Partner" (433 views) and "…AI Growth Systems, AI Search & SEO" (139 views) | All GA4 data confirmed as `.com`. Confirm which page carries the AI-Growth-Systems title and whether it's the approved D-010 change or an unlogged edit. Ties to O-006/O-007. |
 | O-012 | **PowerPack for Beaver Builder 2.43.0** installed on `.online` — approve as part of the stack? | Not in the locked stack (§21), which requires a clear purpose and compatibility rationale per plugin. Also relevant to F-001: PowerPack ships its own Posts/Content modules with their own pagination behaviour, so it becomes a second variable in the archive-template design. |
 | O-013 | **Count of Posts modules inside the "Blog" archive layout** on production | The last item needed to close F-001. Cannot be read from the Themer Layouts list — the layout must be opened in the builder. |
 | O-006 | **`/content-marketing-for-plastic-surgeons/`** marked COMPLETE in the execution sheet — what changed, when, by whom? | Position-1 page. Need to know whether production changes have happened outside the approval chain. |
