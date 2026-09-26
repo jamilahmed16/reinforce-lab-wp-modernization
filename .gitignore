@@ -61,3 +61,6 @@ error_log
 #
 # The URL Decision Register (.xlsx) IS committed on purpose — it is a working
 # document, not a binary artifact, and its history matters.
+
+# Local automation logs
+scripts/*.log
