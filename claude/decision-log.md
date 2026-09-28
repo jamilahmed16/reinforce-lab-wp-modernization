@@ -597,7 +597,22 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
-## F-008 — SERP research: "AI Growth Systems" (Bing, Google, Google AI Mode, Semrush — screenshots from Jamil)
+## D-034 — Home copy v2 LIVE on `.online` (de-duplicated vs SAOS)
+**Date:** 28 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified · Approved by Jamil ("all yes")
+
+Applied `claude/drafts/home-copy-v2-2026-09-28.md` rev 2 to `reinforce-home.php` (v1.1). Server backup `reinforce-home.php.bak-20260928-pre-v2` (md5 `baa39587…`); live = repo (md5 `e5aedb62…`).
+- **Problem / How it works / Industries** rewritten at the AI Growth Systems (umbrella) level; How-it-works names the 4 layers (data, AI models, automated workflows, revenue dashboard) per F-018; steps now `<ol>` + `h3` (was `h4`).
+- **Packages** → teaser (Foundation / Growth OS / Enterprise, "Engagements start from $5,000 setup") → `/packages/` + diagnostic. Tier cards removed from Home.
+- **FAQ** → 6 company/category Q&As (What is an AI Growth System? · vs agency/tools · What is Reinforce Lab? · Founder — Jamil Ahmed, pharmacist and Semrush Ambassador, linked to https://www.linkedin.com/in/ahmedjamil16/ · Based: Dhaka + Katy TX, works with clients remotely · How to start). Facts confirmed by Jamil 28 Sep. **Removed the unverified "60–90 days" results claim.**
+- **Schema:** `FAQPage` (6 Q) added to Home via `wpseo_schema_graph` (same text as visible FAQ).
+- **Verified:** HTTP 200 · 1 H1 · no PHP errors · graph = WebPage, BreadcrumbList, WebSite "Reinforce Lab", Organization "Reinforce Lab", FAQPage(6) · no horizontal overflow at 1440/390.
+- **Overlap re-measured (F-017 method): SAOS text on Home 24.2% → 7.3%; Home text on SAOS 27.1% → 8.6%.**
+- **ID correction:** the overlap and SERP findings were first logged as F-007 / F-008, which collided with existing findings (F-007 traffic, F-008 crawl-budget). Renumbered to **F-017 / F-018**; commit messages 828c9c3 and 5f15eba still say F-007/F-008.
+- **Still open:** Home Yoast title/meta (title still "Home - reinforcelab.online"); Proof section still shared with SAOS; `Person` schema for the founder belongs on the About page (D-012 §3).
+
+---
+
+## F-018 — SERP research: "AI Growth Systems" (Bing, Google, Google AI Mode, Semrush — screenshots from Jamil)
 **Date:** 28 September 2026 · **Status:** RECORDED — applied to Home copy draft rev 2
 
 **VERIFIED (from screenshots):**
@@ -625,12 +640,12 @@ Yoast `company_name` and `website_name` were empty, so schema fell back to the W
 
 ---
 
-## F-007 — Home ↔ Search Authority OS content overlap: ~24–27%
-**Date:** 28 September 2026 · **Status:** MEASURED — recommendation pending Jamil
+## F-017 — Home ↔ Search Authority OS content overlap: ~24–27%
+**Date:** 28 September 2026 · **Status:** RESOLVED by D-034 (overlap now 7.3% / 8.6%)
 
 Main content only (header/footer excluded), live pages: Home 1,382 words, SAOS 1,539. 5-word-shingle overlap: **24.2% of SAOS text also appears on Home; 27.1% of Home text also appears on SAOS** (Jaccard 14.7%). 21 exact-duplicate blocks + 27 near-duplicates (≥75% similar). Concentrated in: Problem pains, the 4 process steps (3 identical), Packages (tiers, prices, features ~identical), FAQ (3 questions near-identical), Proof section, industry bullets (Pharma/B2B SaaS/Technology/Prof. Services identical), final-CTA microcopy, engine-diagram nodes. Unique to SAOS: System layers, Evidence layer, What-you-get, comparison table, 8 agents. Unique to Home: 3 outcomes, 6 capabilities, blog, flagship callout.
 - **Inference:** internal duplication isn't a penalty, but it blurs which page answers which query (Home = AI Growth Systems umbrella; SAOS = the product) — cannibalization + weaker AI-citation signal for the flagship.
-- **UPDATE 28 Sep — Jamil approved the direction** (Packages → teaser, company-level FAQ, umbrella-level Problem/Process/Industries). Draft copy: `claude/drafts/home-copy-v2-2026-09-28.md` (rev 2 after F-008 SERP research) — awaiting copy approval + 2 [VERIFY] facts. Projected overlap after change: ~7–9% (from 24–27%). Also flags the Home FAQ "How soon will we see results?" (60–90 day claim) as unverified — removed in the draft.
+- **UPDATE 28 Sep — Jamil approved the direction** (Packages → teaser, company-level FAQ, umbrella-level Problem/Process/Industries). Draft copy: `claude/drafts/home-copy-v2-2026-09-28.md` (rev 2 after F-018 SERP research) — awaiting copy approval + 2 [VERIFY] facts. Projected overlap after change: ~7–9% (from 24–27%). Also flags the Home FAQ "How soon will we see results?" (60–90 day claim) as unverified — removed in the draft.
 - **Recommendation (original):** keep the detail on SAOS; on Home replace duplicated blocks with shorter, distinct summaries that link down (packages → teaser to `/packages/`, FAQ → company-level questions, process/problem/industry copy rewritten at the umbrella level).
 
 ---
