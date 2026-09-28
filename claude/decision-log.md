@@ -606,7 +606,8 @@ Design source: `claude/design-previews/search-authority-diagnostic.html` (Hero +
 
 **Planned corrections vs mock-up:** industry dropdown → the 8 locked industries (D-022) + "Other", Finance under Professional Services; step headings h4 → h3; remove the "preview / not a live submission" text; add consent line linking the privacy policy.
 
-**Open questions (Jamil):** (1) form backend — Jetpack Forms (recommended) vs GoHighLevel embed; (2) notification email address; (3) how diagnostics are fulfilled today (OS MVP not yet built) — copy must not describe an automated system that doesn't exist yet; (4) privacy policy must be published before the form collects real data.
+**Answers (Jamil, 28 Sep):** notification email = **hello@reinforcelab.com**; privacy = **link the draft policy now, publish before launch**; form backend = **wants a long-term, scalable option — recommend before applying** (options + recommendation given in chat 28 Sep: custom on-brand form → WP REST endpoint → store entry (ACF) + email + webhook to n8n → GoHighLevel / Diagnostic agent; vs Jetpack Forms; vs GoHighLevel embed; vs Gravity Forms). **Clarification sent:** the SAOS *web page* is live on `.online` (D-032); the SAOS *software* (agents, Neon, research stack, Diagnostic agent #1) is not recorded as built — D-017 build order is "site front-end first, then the OS MVP". Awaiting Jamil's confirmation of how diagnostics are produced today.
+**Open questions (original):** (1) form backend — Jetpack Forms (recommended) vs GoHighLevel embed; (2) notification email address; (3) how diagnostics are fulfilled today (OS MVP not yet built) — copy must not describe an automated system that doesn't exist yet; (4) privacy policy must be published before the form collects real data.
 
 ---
 
