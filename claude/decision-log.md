@@ -597,8 +597,10 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
-## D-035 — Home keyword targeting "AI Growth Systems" + Yoast title/meta (DRAFT — pending Jamil)
-**Date:** 28 September 2026 · **Status:** DRAFT — nothing applied
+## D-035 — Home owns "AI Growth Systems" + Yoast title/meta LIVE on `.online`
+**Date:** 28 September 2026 · **Status:** APPLIED & VERIFIED on `.online` · Approved by Jamil (title A, meta approved, Home owns the keyword)
+
+**Applied:** page 33 Yoast title `AI Growth Systems for Search & Automation | Reinforce Lab`, meta as drafted below. Verified live: `<title>`, meta description and schema WebPage name all updated. **Decision locked: Home owns the head term "AI Growth Systems".** Open: role of `/services/ai-growth-systems/` (see recommendation in chat 28 Sep — keep as commercial "consulting & implementation" page vs fold into `/services/`), and Home → pillar internal link once that is decided.
 
 **Audit of live Home (VERIFIED, 28 Sep):** keyword in H1 ✅ ("Build AI Growth Systems to automate…") · in first 100 words ✅ · 2 H2 + 2 H3 contain it ✅ · 11 mentions / 1,420 words (~2.3%, natural) ✅ · FAQ definition "What is an AI Growth System?" + FAQPage schema ✅ · **title ❌ "Home - reinforcelab.online"** · **meta description ❌ none** · **0 internal links to the pillar `/services/ai-growth-systems/`** ❌ · WebPage schema name inherits the bad title ❌.
 
