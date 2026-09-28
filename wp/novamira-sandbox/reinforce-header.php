@@ -140,6 +140,12 @@ body a.fl-screen-reader-text:focus{clip:auto;width:auto;height:auto;overflow:vis
 /* ---------- mark body + inject background layers ---------- */
 add_filter('body_class', function ($c) { $c[] = 'rl-dark'; return $c; });
 
+/* ---------- schema: Organization legalName (Yoast 28 has no setting for it) ---------- */
+add_filter('wpseo_schema_organization', function ($data) {
+    if (is_array($data)) $data['legalName'] = 'Reinforce Lab Limited';
+    return $data;
+});
+
 /* ---------- theme markup cleanup (D-012 gates) ---------- */
 /* Theme footer (widgets + BB credit) out of the HTML, not just hidden; [reinforce_footer] replaces it. */
 add_filter('fl_footer_enabled', '__return_false');

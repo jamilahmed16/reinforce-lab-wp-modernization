@@ -597,6 +597,23 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-033 — Yoast entity name fixed on `.online`: "Reinforce Lab" / legalName "Reinforce Lab Limited"
+**Date:** 28 September 2026 · **Status:** LIVE on `.online` — verified · Approved by Jamil
+
+Yoast `company_name` and `website_name` were empty, so schema fell back to the WP site title "reinforcelab.online". Set `wpseo_titles.company_name` = `website_name` = **"Reinforce Lab"**; added `legalName` **"Reinforce Lab Limited"** via `wpseo_schema_organization` filter in `reinforce-header.php` (Yoast 28.5 has no legal-name setting). Verified on `/` and `/search-authority-os/`: Organization name "Reinforce Lab", legalName "Reinforce Lab Limited"; WebSite name "Reinforce Lab"; no errors. Server backup `reinforce-header.php.bak-20260928-pre-legalname`.
+- **Not changed:** WP `blogname` still "reinforcelab.online" (drives default `<title>` fallbacks like "Home - reinforcelab.online"); Yoast Organization `logo` still empty. Both need a decision.
+
+---
+
+## F-007 — Home ↔ Search Authority OS content overlap: ~24–27%
+**Date:** 28 September 2026 · **Status:** MEASURED — recommendation pending Jamil
+
+Main content only (header/footer excluded), live pages: Home 1,382 words, SAOS 1,539. 5-word-shingle overlap: **24.2% of SAOS text also appears on Home; 27.1% of Home text also appears on SAOS** (Jaccard 14.7%). 21 exact-duplicate blocks + 27 near-duplicates (≥75% similar). Concentrated in: Problem pains, the 4 process steps (3 identical), Packages (tiers, prices, features ~identical), FAQ (3 questions near-identical), Proof section, industry bullets (Pharma/B2B SaaS/Technology/Prof. Services identical), final-CTA microcopy, engine-diagram nodes. Unique to SAOS: System layers, Evidence layer, What-you-get, comparison table, 8 agents. Unique to Home: 3 outcomes, 6 capabilities, blog, flagship callout.
+- **Inference:** internal duplication isn't a penalty, but it blurs which page answers which query (Home = AI Growth Systems umbrella; SAOS = the product) — cannibalization + weaker AI-citation signal for the flagship.
+- **Recommendation (not applied):** keep the detail on SAOS; on Home replace duplicated blocks with shorter, distinct summaries that link down (packages → teaser to `/packages/`, FAQ → company-level questions, process/problem/industry copy rewritten at the umbrella level).
+
+---
+
 ## D-032 — Search Authority OS page built & LIVE on `.online`
 **Date:** 28 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified · Approved by Jamil ("yes all 8... and build the page properly")
 
