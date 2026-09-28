@@ -546,6 +546,8 @@ Columns: `old_url, new_url, code, source, status`. **Applies only at the approve
 
 Confirmed `.online` live and safe (home_url=reinforcelab.online, `blog_public=0` noindex, full locked stack present; was near-greenfield — only `/home/` hero + a draft privacy page). **Step 1 done: 21 pages scaffolded as drafts** with correct hierarchy — `/search-authority-os/`, `/search-authority-diagnostic/`, `/packages/`, `/services/` + 5 approved service pages + `/services/agents/` + 8 agent pages, `/reviews/` + 2 pillars. Idempotent; content to follow.
 
+**UPDATE 27 Sep 2026 — Novamira `.online` reconnected + 2 new service drafts added.** After the CONNECT_TIMEOUT outage, Novamira is stable again (doctor: OAuth fresh, WP 7.1.2, plugin 1.12.4, 112 abilities, mgmt permission intact; the only doctor "fail" is local Windows credential-file hygiene, not the site). Re-verified `blog_public=0` (noindex still ON). Scaffolded the 2 D-019-approved Solutions as drafts under `/services/` (parent page ID 68): **`seo-content-systems` (ID 85)** and **`marketing-automation` (ID 86)**. `/services/` now holds 8 children = 6 Solutions + the `ai-growth-systems` pillar + the `agents` hub. Total scaffolded drafts now **23**. Content still to follow.
+
 **Build order:** Home (below hero) → SAOS flagship (`/search-authority-os/`, `/packages/`, `/search-authority-diagnostic/`) → services + agents → `/reviews/` → REBUILD-new content (28, in F-003-safe batches). Each page to D-013 (Systems Grid) + D-012 (SEO standard), passing `check-design`. Nav menu wired once key pages have content.
 
 ---
@@ -587,7 +589,47 @@ AI Growth Systems  (umbrella / positioning)
 - **`/services/ai-growth-systems/`** = the umbrella **pillar/overview** page ("what AI Growth Systems is") → links down to `/search-authority-os/` and the individual services. Not a peer service.
 - **`/search-authority-os/`** = the flagship **product** page beneath the pillar; sold via Packages, entered via the Diagnostic, built from the 8 Agents.
 
-**Still open (service set):** approve slugs for the two new Solutions not yet in the register — `/services/automated-seo-content-systems/` and `/services/marketing-automation/`; and decide keep-vs-consolidate for the ~19 legacy production `/services/*` pages (recommendation: consolidate into the 7 Solutions, keep only actively-sold legacy services).
+**Service set — UPDATE 27 Sep 2026:** Two new Solutions **`APPROVED — NEW URL`** by Jamil: **`/services/seo-content-systems/`** (slug shortened from the proposed `automated-seo-content-systems`) and **`/services/marketing-automation/`**. Added to the approved-new register. The 6 Solutions are now locked: AI Search Optimization · GEO · SEO & AI Search Audit · Pharmaceutical SEO · **SEO Content Systems** · **Marketing Automation**.
+
+**Still open (service set):** decide keep-vs-consolidate for the ~19 legacy production `/services/*` pages (recommendation: consolidate into the 6 Solutions above, keep only actively-sold legacy services).
+
+---
+
+## D-022 — Industries axis added; Pharma moved Solutions → Industries
+**Date:** 28 September 2026 · **Status:** DECIDED in preview; sub-items open (slug, list reconciliation, scaffolding)
+
+Jamil raised the services-vs-industries taxonomy inconsistency (pharma was the only "X SEO" hybrid in Solutions). Resolved the pre-flagged architectural tension (see the earlier `/industries/` note): **AI Growth Systems umbrella now has THREE child axes — Search Authority OS (product) · Solutions (capabilities/WHAT) · Industries (verticals/WHO).**
+
+- **Solutions (5, pure capabilities):** AI Search Optimization · Generative Engine Optimization · SEO & AI Search Audit · SEO Content Systems · Marketing Automation. (Pharma removed.)
+- **Industries (6 verticals):** naming convention DECIDED 28 Sep — every industry carries a **"[Industry] SEO"** label + slug for keyword capture (Jamil's call, consistent with the original "Pharmaceutical SEO"). Labels: **Pharmaceutical SEO · E-commerce SEO · B2B SaaS SEO · Manufacturing SEO · Technology SEO · Professional Services SEO.** Slugs: `/industries/pharmaceutical-seo/`, `/ecommerce-seo/`, `/b2b-saas-seo/`, `/manufacturing-seo/`, `/technology-seo/`, `/professional-services-seo/`. Brand guard: keep the keyword in label/slug/title, but frame each page H1/content as the fuller "AI Growth Systems for [industry]" story so the SEO-only perception doesn't dilute the umbrella positioning. (Supersedes the earlier plain-name idea.)
+- **Nav representation:** Option B — Industries shown as a column inside the existing **Solutions ▾** mega-menu (Solutions | Industries | Agents | Flagship), no new top-nav item. Footer got a matching Industries column. Built into the chrome preview (Header & Footer artifact v4).
+
+**Open sub-items (need Jamil):**
+1. ~~Pharma slug~~ — RESOLVED: `/industries/pharmaceutical-seo/` (keyword kept). Pharma leaves Solutions; draft page ID 75 to be re-parented/renamed under /industries/ at scaffold time.
+2. ~~Growing Businesses~~ — RESOLVED 28 Sep: **OUT** (stage, not vertical).
+3. ~~Healthcare~~ — RESOLVED 28 Sep: **IN**.
+
+**Industries FINAL (8), confirmed 28 Sep 2026** — with the "[Industry] SEO" convention:
+**Pharmaceutical SEO · Healthcare SEO · B2B SaaS SEO · E-commerce SEO · Manufacturing SEO · Technology SEO · Professional Services SEO · Education SEO.** (Education added; E-commerce kept; Healthcare back in; Growing Businesses out.) Applied to chrome preview v6.
+Slugs: `/industries/{pharmaceutical,healthcare,b2b-saas,ecommerce,manufacturing,technology,professional-services,education}-seo/`.
+
+4. **Still open — SERVICES reconciliation (D-023).** The 12-item "What We Do" (positioning-content-2026-09-28.md) has not been mapped to Solutions pages yet. Until decided, Solutions stays at the current 5 in the chrome.
+5. Once services settle: update approved-new register + CLAUDE.md (locked-industries line → the 8 above; services), scaffold `/industries/` hub + 8 vertical drafts on `.online` (re-parent/rename page ID 75 → `/industries/pharmaceutical-seo/`). NOT done yet.
+
+---
+
+## D-021 — Global chrome (header + footer) reworked — APPROVED
+**Date:** 27 September 2026 · **Status:** APPROVED 28 Sep 2026 (chrome locks; applies across every page in the live build)
+
+**Amendment (28 Sep):** "Reviews" removed from the header nav, the mobile menu, AND the footer — Jamil: affiliate content stays out of global navigation. The `/reviews/` hub + 2 pillar drafts remain on `.online` but are unlinked from global chrome. Then **Portfolio + Blog added** after Packages (header + mobile). Final top nav: **Search Authority OS · Solutions ▾ · Packages · Portfolio · Blog · About · Contact** + CTA.
+
+The D-018-flagged rework of header + footer (global chrome) built as a dedicated preview before mass-producing pages. Decisions Jamil made this session:
+- **Header nav = mega-menu under "Solutions"** (chosen over a simple dropdown / flat minimal). Top bar: `Reinforce Lab` · **Search Authority OS · Solutions ▾ · Packages · Reviews · About · Contact** + CTA. The Solutions mega-panel = 3 cells: **AI Growth Systems** (pillar link + the 6 Solutions), **Agents** (8 OS modules), and a **Flagship promo** cell → Search Authority OS.
+- **Header CTA = "Get Your Diagnostic" → `/search-authority-diagnostic/`** (the free lead-magnet / funnel entry).
+- **Footer** kept ALL existing info intact (6 socials, brand blurb, BD+USA offices, phone/email, copyright, all legal links) but re-mapped columns to the IA: **Search Authority OS** / **Solutions** (locked 6, incl. new seo-content-systems + marketing-automation) / **Company** / **Resources**. Missing flagship links (OS, Diagnostic, Packages, Agents, Reviews) added.
+- Mobile: hamburger → slide-in menu with Solutions + Agents grouped.
+
+Preview artifact (look-and-feel, not live): "Header & Footer". Once approved, this becomes the global chrome applied across every page in the live `.online` build.
 
 ---
 
