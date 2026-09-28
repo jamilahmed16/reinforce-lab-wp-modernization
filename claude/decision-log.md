@@ -597,6 +597,26 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## F-008 — SERP research: "AI Growth Systems" (Bing, Google, Google AI Mode, Semrush — screenshots from Jamil)
+**Date:** 28 September 2026 · **Status:** RECORDED — applied to Home copy draft rev 2
+
+**VERIFIED (from screenshots):**
+- **Semrush (US, desktop, 29 Sep 2026):** "AI Growth Systems" volume **20 US / 40 global**, KD n/a, competitive density 0.43, intent n/a. 32 variations (1.3K total): *"ai systems for professional services firms law finance consulting growth"* **210, KD 8**; *"ai operating systems for 10x business growth"* 50; *"ai features in crm systems driving growth for startups"* 30; a long *"…ecommerce dtc brands service agency 2025 2026"* string at 880 (looks like noise — low confidence). No questions / related keywords returned.
+- **Google AI Overview** defines the term: *"an integrated network of AI tools, data layers, and automated workflows designed to handle business research, lead generation, and customer engagement 24/7"* (cites LinkedIn). Core components: Data Foundation · Signal Capture · Automation & Execution (n8n/Make).
+- **Google AI Mode** definition cites rapidneuron.com; architecture = AI Brain (LLMs) · Data Foundation (CRM) · Automation Layer (Make/n8n) · Front end/Dashboard; functional table = lead capture, instant response, qualification/routing, follow-up, database reactivation; section "Why systems beat tools & agencies" (asset vs expense, unified RevOps, human focus).
+- **Google organic (Dhaka, not personalised):** aigrowthsystems.blog, rapidneuron.com, Forsify (LinkedIn), swiftheadway.ai, blackwelldigital.com ("in 90 days"), csmgdigital.com, pumpmedya.com, HubSpot Community. Reinforce Lab not present.
+- **Bing:** growthsystems.ai, **"AI-Powered Growth Systems | Dhaka" Facebook page (91,566 followers)**, aihumangrowthsystems.com, growth100x.com, growth-ai.io, gitnexa.com, theultimategrowth.com, futuremadeuseful.com, data-mania.com, zdgrowthsystems.com. Reinforce Lab not present.
+
+**INFERENCE:**
+- The head term is a **category/positioning term, not a traffic driver** (20/mo US). Its value is entity association + inclusion in AI answers, which lift a clear, extractable definition.
+- Competitors frame it as **sales/lead automation for SMBs**; none lead with **search visibility (Google + AI search) + evidence** — that is Reinforce Lab's differentiator.
+- **Name-collision risk:** a Dhaka Facebook page called "AI-Powered Growth Systems" (91.5K followers) plus several `*growthsystems*` domains. Pair the term with the brand ("Reinforce Lab's AI Growth Systems") in titles, schema and first sentences.
+- Long-tail "ai systems for professional services firms law finance consulting growth" (210, KD 8) fits **`/industries/professional-services/`** (incl. Finance), not Home.
+
+**RECOMMENDATION (applied to draft rev 2 only):** add an answer-first definition ("What is an AI Growth System?") using the 4 layers AI engines use (data, AI models, automation, dashboard); add a systems-vs-agencies/tools answer; name Make/n8n; do **not** copy competitor claims ("24/7", "in 90 days", "$100K saved"). Not yet applied to `.online`.
+
+---
+
 ## D-033 — Yoast entity name fixed on `.online`: "Reinforce Lab" / legalName "Reinforce Lab Limited"
 **Date:** 28 September 2026 · **Status:** LIVE on `.online` — verified · Approved by Jamil
 
@@ -610,7 +630,7 @@ Yoast `company_name` and `website_name` were empty, so schema fell back to the W
 
 Main content only (header/footer excluded), live pages: Home 1,382 words, SAOS 1,539. 5-word-shingle overlap: **24.2% of SAOS text also appears on Home; 27.1% of Home text also appears on SAOS** (Jaccard 14.7%). 21 exact-duplicate blocks + 27 near-duplicates (≥75% similar). Concentrated in: Problem pains, the 4 process steps (3 identical), Packages (tiers, prices, features ~identical), FAQ (3 questions near-identical), Proof section, industry bullets (Pharma/B2B SaaS/Technology/Prof. Services identical), final-CTA microcopy, engine-diagram nodes. Unique to SAOS: System layers, Evidence layer, What-you-get, comparison table, 8 agents. Unique to Home: 3 outcomes, 6 capabilities, blog, flagship callout.
 - **Inference:** internal duplication isn't a penalty, but it blurs which page answers which query (Home = AI Growth Systems umbrella; SAOS = the product) — cannibalization + weaker AI-citation signal for the flagship.
-- **UPDATE 28 Sep — Jamil approved the direction** (Packages → teaser, company-level FAQ, umbrella-level Problem/Process/Industries). Draft copy: `claude/drafts/home-copy-v2-2026-09-28.md` — awaiting copy approval + 2 [VERIFY] facts. Projected overlap after change: ~7–9% (from 24–27%). Also flags the Home FAQ "How soon will we see results?" (60–90 day claim) as unverified — removed in the draft.
+- **UPDATE 28 Sep — Jamil approved the direction** (Packages → teaser, company-level FAQ, umbrella-level Problem/Process/Industries). Draft copy: `claude/drafts/home-copy-v2-2026-09-28.md` (rev 2 after F-008 SERP research) — awaiting copy approval + 2 [VERIFY] facts. Projected overlap after change: ~7–9% (from 24–27%). Also flags the Home FAQ "How soon will we see results?" (60–90 day claim) as unverified — removed in the draft.
 - **Recommendation (original):** keep the detail on SAOS; on Home replace duplicated blocks with shorter, distinct summaries that link down (packages → teaser to `/packages/`, FAQ → company-level questions, process/problem/industry copy rewritten at the umbrella level).
 
 ---
