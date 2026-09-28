@@ -597,6 +597,19 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-035 — Home keyword targeting "AI Growth Systems" + Yoast title/meta (DRAFT — pending Jamil)
+**Date:** 28 September 2026 · **Status:** DRAFT — nothing applied
+
+**Audit of live Home (VERIFIED, 28 Sep):** keyword in H1 ✅ ("Build AI Growth Systems to automate…") · in first 100 words ✅ · 2 H2 + 2 H3 contain it ✅ · 11 mentions / 1,420 words (~2.3%, natural) ✅ · FAQ definition "What is an AI Growth System?" + FAQPage schema ✅ · **title ❌ "Home - reinforcelab.online"** · **meta description ❌ none** · **0 internal links to the pillar `/services/ai-growth-systems/`** ❌ · WebPage schema name inherits the bad title ❌.
+
+**Draft title (pick one):** A `AI Growth Systems for Search & Automation | Reinforce Lab` (57) — recommended · B `AI Growth Systems | Reinforce Lab` (33).
+**Draft meta (157):** `Reinforce Lab builds AI Growth Systems that automate operations, improve your visibility in Google and AI search, and increase revenue. Book a strategy call.`
+
+**Decision needed — keyword ownership (cannibalization):** D-018 planned `/services/ai-growth-systems/` as the "what AI Growth Systems is" pillar, and Home now also defines the term. Recommendation: **Home owns the head term "AI Growth Systems"** (strongest page: 261 referring links from 50 sites per F-008 crawl data; term is 20/mo US so it is a brand/category play) and the pillar targets the deeper informational set ("how to build", components, examples — cf. "ai growth systems examples" in Google PAA), with Home ↔ pillar links both ways.
+**Production note:** this is `.online` only. Changing the live `.com` homepage title is a separate production change needing its own approval (Rule 2).
+
+---
+
 ## D-034 — Home copy v2 LIVE on `.online` (de-duplicated vs SAOS)
 **Date:** 28 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified · Approved by Jamil ("all yes")
 
