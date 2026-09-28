@@ -597,6 +597,19 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-036 — Search Authority Diagnostic page `/search-authority-diagnostic/` (page 65) — PLAN, pending Jamil
+**Date:** 28 September 2026 · **Status:** PLANNING — nothing written to `.online`
+
+Design source: `claude/design-previews/search-authority-diagnostic.html` (Hero + request form · 7 intelligence layers + Authority Score · What you receive (6) · How it works (5 steps) · Who it's for (3 tiers) · Final CTA). Same build method as SAOS (sandbox file `reinforce-diagnostic.php`, shortcode, scoped CSS, Yoast title/meta, Service/FAQ/Breadcrumb schema).
+
+**VERIFIED (28 Sep, read-only):** mock-up form is **not connected** (JS fakes success, "Preview only" note). On `.online`: Jetpack connected, **`contact-form` module active**, `feedback` post type exists → a real form is possible **without a new plugin**. Akismet not installed (no spam filtering beyond Jetpack defaults). WP admin email = jadirectives@gmail.com. Privacy policy = page 3 (**draft**).
+
+**Planned corrections vs mock-up:** industry dropdown → the 8 locked industries (D-022) + "Other", Finance under Professional Services; step headings h4 → h3; remove the "preview / not a live submission" text; add consent line linking the privacy policy.
+
+**Open questions (Jamil):** (1) form backend — Jetpack Forms (recommended) vs GoHighLevel embed; (2) notification email address; (3) how diagnostics are fulfilled today (OS MVP not yet built) — copy must not describe an automated system that doesn't exist yet; (4) privacy policy must be published before the form collects real data.
+
+---
+
 ## D-035 — Home owns "AI Growth Systems" + Yoast title/meta LIVE on `.online`
 **Date:** 28 September 2026 · **Status:** APPLIED & VERIFIED on `.online` · Approved by Jamil (title A, meta approved, Home owns the keyword)
 
