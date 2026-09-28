@@ -1,0 +1,369 @@
+<?php
+/**
+ * Plugin Name: Reinforce Lab — Homepage (Systems Grid)
+ * Description: Long-form landing homepage for Reinforce Lab. Provides [reinforce_home]. Relies on tokens/chrome from reinforce-header.php.
+ * Version: 1.0
+ */
+if (!defined('ABSPATH')) exit;
+
+add_action('wp_head', 'rl_home_css', 22);
+function rl_home_css() {
+    if (!is_front_page() && !is_page('home')) return; ?>
+<style id="rl-home-css">
+/* full-bleed breakout of theme container + kill content padding on home */
+.rl-home{position:relative;width:100vw;margin-left:calc(50% - 50vw)}
+body.home .fl-page-content,body.home .fl-content,body.home .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
+body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
+.rl-home *{box-sizing:border-box}
+.rl-home a{text-decoration:none;color:inherit}
+.rl-home .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
+.rl-home section{position:relative;padding-block:clamp(56px,8vw,96px)}
+.rl-home .band{border-top:1px solid var(--line)}
+.rl-home .band.alt{background:radial-gradient(90% 60% at 15% 0%,rgba(153,0,0,.10),transparent 55%),var(--bg-2)}
+.rl-home .ey{font-family:var(--f-mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);display:inline-flex;gap:.5em;align-items:center}
+.rl-home .ey b{color:var(--red-2);font-weight:500}
+.rl-home h1,.rl-home h2,.rl-home h3,.rl-home h4{font-family:var(--f-display);font-weight:600;text-transform:uppercase;margin:0;line-height:1.02;letter-spacing:.01em}
+.rl-home .lede{color:var(--ink-dim);font-size:clamp(16px,1.6vw,19px);max-width:60ch}
+.rl-home .head{max-width:64ch;margin-bottom:clamp(32px,5vw,52px)}
+.rl-home .head h2{font-size:clamp(28px,4.2vw,48px);margin-top:14px}.rl-home .head p{margin-top:18px}
+.rl-home .btn{font-family:var(--f-display);text-transform:uppercase;font-weight:600;letter-spacing:.05em;font-size:14px;padding:15px 26px;display:inline-flex;align-items:center;gap:.55em;border:1px solid transparent;cursor:pointer;transition:.2s;border-radius:0}
+.rl-home .btn::before{content:"+";font-family:var(--f-mono);font-weight:500;color:var(--red-3);font-size:1.15em;line-height:0}
+.rl-home .btn.p{background:linear-gradient(180deg,#241a1c,#120e0f);color:#fff;border-color:var(--red-line);box-shadow:14px 0 44px -14px var(--red-glow),inset 0 1px 0 var(--glass-hi)}
+.rl-home .btn.p:hover{border-color:var(--red-2);transform:translateY(-1px)}
+.rl-home .btn.g{background:var(--glass);backdrop-filter:blur(8px);color:var(--ink);border-color:var(--glass-line)}
+.rl-home .btn.g::before{color:var(--ink-faint)}.rl-home .btn.g:hover{border-color:var(--red-line);color:#fff}
+.rl-home .ar{transition:transform .2s}.rl-home .btn:hover .ar{transform:translateX(4px)}
+.rl-home .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+/* hero */
+.rl-home .hero{padding-block:clamp(30px,5vw,64px)}
+.rl-home .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(28px,4vw,56px);align-items:center}
+@media(max-width:940px){.rl-home .hero-grid{grid-template-columns:1fr;gap:36px}}
+.rl-home .h1{font-size:clamp(34px,5.1vw,64px);font-weight:700;letter-spacing:-.01em;line-height:1.02;text-transform:none}
+.rl-home .h1 .r{color:var(--red-2)}
+.rl-home .hero .lede{margin-top:18px}
+.rl-home .microtrust{margin-top:20px;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.04em;line-height:1.9}.rl-home .microtrust b{color:var(--ink-dim);font-weight:500}
+/* engine diagram */
+.rl-home .engine{border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px}
+.rl-home .engine .cap{display:flex;justify-content:space-between;margin-bottom:14px}
+.rl-home .engine .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-home .diagram{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center}
+@media(max-width:520px){.rl-home .diagram{grid-template-columns:1fr;text-align:center}}
+.rl-home .col{display:flex;flex-direction:column;gap:8px}
+.rl-home .node{border:1px solid var(--line-2);background:var(--bg);padding:9px 12px;font-family:var(--f-mono);font-size:11px;letter-spacing:.03em;color:var(--ink-dim);text-transform:uppercase}
+.rl-home .core{border:1px solid var(--red-line);background:linear-gradient(180deg,rgba(153,0,0,.11),rgba(153,0,0,.03));padding:20px 16px;text-align:center;box-shadow:0 0 40px -14px var(--red-glow)}
+.rl-home .core b{font-family:var(--f-display);text-transform:uppercase;font-weight:600;font-size:15px;display:block;letter-spacing:.04em}
+.rl-home .core small{font-family:var(--f-mono);font-size:10px;color:var(--ink-faint);letter-spacing:.12em}
+.rl-home .flow{position:relative;height:1px;background:var(--line-2);overflow:hidden;width:100%}
+.rl-home .flow::after{content:"";position:absolute;top:0;left:-40%;width:40%;height:100%;background:linear-gradient(90deg,transparent,var(--red-2),transparent);animation:rlflow 2.6s linear infinite}
+@keyframes rlflow{to{left:120%}}
+@media(prefers-reduced-motion:reduce){.rl-home .flow::after{animation:none;left:0;width:100%;opacity:.5}}
+/* cards */
+.rl-home .cols{display:grid;gap:16px}
+.rl-home .cols.c2{grid-template-columns:repeat(2,1fr)}.rl-home .cols.c3{grid-template-columns:repeat(3,1fr)}.rl-home .cols.c4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.rl-home .cols.c3,.rl-home .cols.c4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.rl-home .cols.c2,.rl-home .cols.c3,.rl-home .cols.c4{grid-template-columns:1fr}}
+.rl-home .cell{background:var(--glass);backdrop-filter:blur(16px);border:1px solid var(--glass-line);padding:26px;box-shadow:inset 0 1px 0 var(--glass-hi),0 24px 60px -40px rgba(0,0,0,.9);transition:.2s;display:block}
+.rl-home .cell:hover{border-color:var(--red-line);background:var(--glass-2)}
+.rl-home .cell .n{font-family:var(--f-mono);font-size:12px;color:var(--red-3);letter-spacing:.1em}
+.rl-home .cell h3{font-size:19px;margin:12px 0 8px}.rl-home .cell p{color:var(--ink-dim);font-size:14.5px}
+.rl-home .pmeta{font-family:var(--f-mono);font-size:11px;color:var(--red-3);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.rl-home .pcard{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.rl-home .pcard .pthumb{aspect-ratio:16/9;width:100%;background-size:cover;background-position:center;background-color:#0f0c0d;border-bottom:1px solid var(--red-line);position:relative}
+.rl-home .pcard .pthumb.ph-grid{background-image:linear-gradient(var(--grid-fine) 1px,transparent 1px),linear-gradient(90deg,var(--grid-fine) 1px,transparent 1px),radial-gradient(120% 130% at 100% 0%,rgba(153,0,0,.42),transparent 62%);background-size:20px 20px,20px 20px,100% 100%}
+.rl-home .pcard .pthumb .ptag{position:absolute;left:16px;bottom:12px;font-family:var(--f-display);text-transform:uppercase;font-size:clamp(20px,2.4vw,30px);font-weight:700;color:rgba(255,255,255,.92);letter-spacing:.01em;text-shadow:0 2px 20px rgba(0,0,0,.6)}
+.rl-home .pcard .pbody{padding:24px}
+/* outcomes */
+.rl-home .outcome{background:var(--glass);backdrop-filter:blur(16px);border:1px solid var(--glass-line);padding:32px 28px;box-shadow:inset 0 1px 0 var(--glass-hi);text-align:left}
+.rl-home .outcome .k{font-family:var(--f-mono);font-size:12px;color:var(--red-3);letter-spacing:.14em}
+.rl-home .outcome h3{font-size:22px;margin:14px 0 10px}.rl-home .outcome p{color:var(--ink-dim);font-size:15px}
+/* pains */
+.rl-home .pains{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:640px){.rl-home .pains{grid-template-columns:1fr}}
+.rl-home .pain{background:var(--glass);backdrop-filter:blur(16px);border:1px solid var(--glass-line);padding:22px 24px;display:flex;gap:16px;box-shadow:inset 0 1px 0 var(--glass-hi)}
+.rl-home .pain .x{color:var(--red-3);font-family:var(--f-mono);flex:none;margin-top:2px}.rl-home .pain p{color:var(--ink-dim);font-size:15px}.rl-home .pain b{color:var(--ink)}
+/* steps */
+.rl-home .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}@media(max-width:900px){.rl-home .steps{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.rl-home .steps{grid-template-columns:1fr}}
+.rl-home .step{background:var(--glass);backdrop-filter:blur(16px);border:1px solid var(--glass-line);padding:24px;box-shadow:inset 0 1px 0 var(--glass-hi)}
+.rl-home .step .k{font-family:var(--f-display);font-size:34px;color:var(--red-2);font-weight:700;opacity:.85}.rl-home .step h4{font-size:16px;margin:8px 0}.rl-home .step p{color:var(--ink-dim);font-size:14px}
+/* industries */
+.rl-home .icp .who{font-family:var(--f-mono);font-size:11px;color:var(--ink-faint);letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+.rl-home .icp h3{font-size:19px}.rl-home .icp p{color:var(--ink-dim);font-size:14px;margin-top:8px}
+/* flagship callout */
+.rl-home .flagship{border:1px solid var(--red-line);background:linear-gradient(120deg,rgba(153,0,0,.07),transparent 55%),var(--panel);padding:clamp(32px,5vw,56px);display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:center;box-shadow:0 24px 60px -46px rgba(0,0,0,.85)}
+@media(max-width:820px){.rl-home .flagship{grid-template-columns:1fr}}
+.rl-home .flagship .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--red-3);text-transform:uppercase}
+.rl-home .flagship h2{font-size:clamp(26px,3.6vw,40px);margin:12px 0 14px}
+/* proof */
+.rl-home .proof{border:1px dashed var(--line-2);background:var(--panel);padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}@media(max-width:760px){.rl-home .proof{grid-template-columns:repeat(2,1fr)}}@media(max-width:420px){.rl-home .proof{grid-template-columns:1fr}}
+.rl-home .stat .fig{font-family:var(--f-display);font-size:30px;font-weight:700;color:var(--ink)}.rl-home .stat .lab{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
+.rl-home .ph{font-family:var(--f-mono);font-size:11px;color:var(--red-2);border:1px solid var(--red);padding:2px 7px;display:inline-block;letter-spacing:.08em;text-transform:uppercase}
+/* packages */
+.rl-home .pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}@media(max-width:900px){.rl-home .pkgs{grid-template-columns:1fr}}
+.rl-home .pkg{background:var(--glass);backdrop-filter:blur(16px);border:1px solid var(--glass-line);padding:30px 26px;display:flex;flex-direction:column;gap:16px;box-shadow:inset 0 1px 0 var(--glass-hi),0 24px 60px -40px rgba(0,0,0,.9)}
+.rl-home .pkg.feat{background:linear-gradient(180deg,rgba(153,0,0,.14),var(--glass-2));border-color:var(--red-line);box-shadow:inset 0 1px 0 var(--glass-hi),0 0 70px -26px var(--red-glow)}
+.rl-home .pkg .tier{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--red-2);text-transform:uppercase}
+.rl-home .pkg h3{font-size:22px}.rl-home .pkg .price{font-family:var(--f-display);font-size:24px;font-weight:600}
+.rl-home .pkg .price small{display:block;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);font-weight:400;margin-top:6px;text-transform:none;letter-spacing:.03em}
+.rl-home .pkg ul{list-style:none;margin:4px 0;padding:0;display:grid;gap:10px}.rl-home .pkg li{font-size:14px;color:var(--ink-dim);display:flex;gap:10px}.rl-home .pkg li::before{content:"+";color:var(--red-2);font-family:var(--f-mono)}
+.rl-home .pkg .btn{margin-top:auto;justify-content:center}
+/* faq */
+.rl-home .faq details{border:1px solid var(--glass-line);background:var(--glass);backdrop-filter:blur(14px);margin-bottom:12px;box-shadow:inset 0 1px 0 var(--glass-hi)}
+.rl-home .faq summary{cursor:pointer;padding:20px 24px;font-family:var(--f-display);text-transform:uppercase;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.rl-home .faq summary::-webkit-details-marker{display:none}.rl-home .faq summary::after{content:"+";color:var(--red-2);font-family:var(--f-mono);font-size:20px}.rl-home .faq details[open] summary::after{content:"–"}
+.rl-home .faq p{padding:0 24px 22px;color:var(--ink-dim);font-size:15px;max-width:75ch}
+/* final */
+.rl-home .final{position:relative;overflow:hidden;border:1px solid var(--red-line);background:#0b090a;padding:clamp(48px,7vw,92px) clamp(24px,5vw,64px);text-align:center;box-shadow:inset 0 1px 0 var(--glass-hi),0 0 130px -46px var(--red-glow)}
+.rl-home .final::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(58% 96% at 50% 128%,rgba(226,59,59,.6),rgba(153,0,0,.28) 38%,transparent 70%),linear-gradient(180deg,transparent 40%,rgba(153,0,0,.10))}
+.rl-home .final::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(102deg,#0b090a 0%,rgba(11,9,10,.55) 28%,transparent 47%),linear-gradient(258deg,#0b090a 0%,rgba(11,9,10,.55) 28%,transparent 47%)}
+.rl-home .final>*{position:relative;z-index:2}.rl-home .final h2{font-size:clamp(30px,5vw,56px)}.rl-home .final .lede{margin:20px auto 0}.rl-home .final .cta-row{justify-content:center}
+.rl-home .center{text-align:center;margin-inline:auto}
+</style>
+<?php }
+
+add_shortcode('reinforce_home', 'rl_render_home');
+function rl_render_home() {
+    $u = 'rl_url_by_path';
+    $diag = function_exists('rl_url_by_path') ? rl_url_by_path('search-authority-diagnostic') : '#';
+    $svcs = function_exists('rl_url_by_path') ? rl_url_by_path('services') : '#';
+    $os   = function_exists('rl_url_by_path') ? rl_url_by_path('search-authority-os') : '#';
+    $pkg  = function_exists('rl_url_by_path') ? rl_url_by_path('packages') : '#';
+    $inds = function_exists('rl_url_by_path') ? rl_url_by_path('industries') : '#';
+    ob_start(); ?>
+<div class="rl-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="ey"><b>[</b>&nbsp;AI Growth Systems&nbsp;<b>]</b></span>
+        <h1 class="h1">Build <span class="r">AI Growth Systems</span> to automate operations, improve search visibility, and increase revenue.</h1>
+        <p class="lede">Reinforce Lab connects your website, content, and organic search visibility into one growth engine — data-driven SEO, AI Search, and content systems built for growth-stage founders and ambitious B2B brands, engineered for measurable results.</p>
+        <div class="cta-row">
+          <a class="btn p" href="<?php echo esc_url($diag); ?>">Book a Strategy Call <span class="ar">&rarr;</span></a>
+          <a class="btn g" href="<?php echo esc_url($svcs); ?>">Explore Services</a>
+        </div>
+        <p class="microtrust">Built for <b>Pharmaceutical &amp; Life Sciences · Healthcare · B2B SaaS · Manufacturing · Technology · Professional Services</b></p>
+      </div>
+      <div class="engine" aria-label="AI Growth System engine diagram">
+        <div class="cap"><span>Inputs</span><span>Engine</span><span>Outcomes</span></div>
+        <div class="diagram">
+          <div class="col">
+            <div class="node">Search &amp; SERP data</div>
+            <div class="node">Content &amp; website</div>
+            <div class="node">Competitor research</div>
+            <div class="node">Customer &amp; social signals</div>
+            <div class="node">AI-search visibility</div>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px">
+            <div class="flow"></div>
+            <div class="core"><b>AI Growth System</b><small>RESEARCH · VERIFY · BUILD · AUTOMATE · MONITOR</small></div>
+            <div class="flow"></div>
+          </div>
+          <div class="col">
+            <div class="node">Automated operations</div>
+            <div class="node">Content that ranks</div>
+            <div class="node">Cited in AI search</div>
+            <div class="node">Qualified pipeline</div>
+            <div class="node">Increased revenue</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOMES -->
+  <section class="band alt">
+    <div class="wrap">
+      <div class="head"><span class="ey"><b>[</b>&nbsp;Why AI Growth Systems&nbsp;<b>]</b></span><h2>One system. Three outcomes that move the business.</h2></div>
+      <div class="cols c3">
+        <div class="outcome"><div class="k">01</div><h3>Automate Operations</h3><p>Replace manual, disconnected marketing and research work with AI workflows that run continuously and scale without more headcount.</p></div>
+        <div class="outcome"><div class="k">02</div><h3>Improve Search Visibility</h3><p>Win on Google <em>and</em> AI search — SEO, GEO and AEO working together so you're found and cited where buyers now look.</p></div>
+        <div class="outcome"><div class="k">03</div><h3>Increase Revenue</h3><p>Turn visibility into qualified pipeline with content and systems engineered to convert intent, measured by business impact — not vanity metrics.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section>
+    <div class="wrap">
+      <div class="head"><span class="ey"><b>[</b>&nbsp;What We Do&nbsp;<b>]</b></span><h2>The capabilities behind the engine.</h2><p class="lede">Adopt the full system, or start with the piece where the pain is sharpest. Each links to a deeper page.</p></div>
+      <div class="cols c3">
+        <a class="cell" href="<?php echo esc_url($u('services/ai-search-optimization')); ?>"><div class="n">SEARCH</div><h3>AI Search Optimization &amp; SEO</h3><p>Enterprise, technical, international and local SEO plus AI Search Optimization — engineered as one strategy.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('services/generative-engine-optimization')); ?>"><div class="n">AI SEARCH</div><h3>GEO &amp; LLM Optimization</h3><p>Be the source AI engines cite — Generative Engine Optimization and LLM optimization for ChatGPT, Perplexity, AI Overviews.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('services/seo-content-systems')); ?>"><div class="n">CONTENT</div><h3>SEO Content Systems</h3><p>Research-led, evidence-verified content produced and QA'd as a system, not a one-off quota.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('services/ai-workflow-automation')); ?>"><div class="n">AUTOMATE</div><h3>AI Workflow &amp; Marketing Automation</h3><p>Automate repetitive operations and marketing processes with reliable, monitored AI workflows.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('services/lead-generation-systems')); ?>"><div class="n">GROWTH</div><h3>Lead Generation Systems</h3><p>Scalable systems that turn organic visibility into qualified, trackable pipeline.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('services/executive-ai-consulting')); ?>"><div class="n">ADVISORY</div><h3>Executive AI Consulting</h3><p>Architect the system, define what matters, and run the plays — with human judgment in the loop.</p></a>
+      </div>
+      <div class="cta-row"><a class="btn g" href="<?php echo esc_url($svcs); ?>">See all services <span class="ar">&rarr;</span></a></div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="band alt">
+    <div class="wrap">
+      <div class="head"><span class="ey"><b>[</b>&nbsp;The Problem&nbsp;<b>]</b></span><h2>Your growth is running on disconnected systems.</h2><p class="lede">SEO data sits in one tool. Content happens somewhere else. Automation is bolted on. Nobody connects the signals — and more content isn't the answer.</p></div>
+      <div class="pains">
+        <div class="pain"><span class="x">&#10005;</span><p><b>You rank on Google but vanish in AI search.</b> ChatGPT, Perplexity and AI Overviews now answer what your pages used to.</p></div>
+        <div class="pain"><span class="x">&#10005;</span><p><b>Manual work doesn't scale.</b> Five tools, three teams, zero feedback loops — and you are the integration layer.</p></div>
+        <div class="pain"><span class="x">&#10005;</span><p><b>Content can't prove what it claims.</b> In regulated fields, an unsupported statement is a liability, not a nuisance.</p></div>
+        <div class="pain"><span class="x">&#10005;</span><p><b>You measure output, not authority.</b> Word counts say nothing about whether you're winning the search.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SYSTEM / HOW -->
+  <section>
+    <div class="wrap">
+      <div class="head"><span class="ey"><b>[</b>&nbsp;How it works&nbsp;<b>]</b></span><h2>Research before generation. Measure after shipping.</h2></div>
+      <div class="steps">
+        <div class="step"><div class="k">01</div><h4>Research</h4><p>Search data, competitors, customer voice and authoritative evidence — assembled before a word is written.</p></div>
+        <div class="step"><div class="k">02</div><h4>Verify</h4><p>Every material claim gets a source, a freshness check, a confidence score. No evidence, no claim.</p></div>
+        <div class="step"><div class="k">03</div><h4>Build &amp; Automate</h4><p>Content and workflows built for Google and AI answers, then passed through SEO, AEO, GEO and quality gates.</p></div>
+        <div class="step"><div class="k">04</div><h4>Measure &amp; Heal</h4><p>Published, monitored, and — when a page slips — diagnosed and corrected. The system learns.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section class="band alt icp">
+    <div class="wrap">
+      <div class="head"><span class="ey"><b>[</b>&nbsp;Industries&nbsp;<b>]</b></span><h2>Tuned to your industry's buyers and rules.</h2><p class="lede">The system adapts its evidence sources, compliance posture and content strategy to your field.</p></div>
+      <div class="cols c4">
+        <a class="cell" href="<?php echo esc_url($u('industries/pharmaceutical')); ?>"><div class="who">Regulated</div><h3>Pharmaceutical &amp; Life Sciences</h3><p>Claims tied to PubMed, ClinicalTrials.gov, FDA and patents.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('industries/healthcare')); ?>"><div class="who">E-E-A-T</div><h3>Healthcare</h3><p>Evidence-backed, patient-safe content built for AI answers.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('industries/b2b-saas')); ?>"><div class="who">Velocity</div><h3>B2B SaaS</h3><p>Own the category before competitors define it.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('industries/ecommerce')); ?>"><div class="who">Conversion</div><h3>E-commerce</h3><p>Product, category and comparison content that ranks and sells.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('industries/manufacturing')); ?>"><div class="who">Technical</div><h3>Manufacturing</h3><p>Turn technical depth into searchable authority.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('industries/technology')); ?>"><div class="who">Complex</div><h3>Technology</h3><p>Rank for the long, specific queries that convert.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('industries/professional-services')); ?>"><div class="who">Reputation</div><h3>Professional Services</h3><p>Be the firm AI cites when a prospect asks.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('industries/education')); ?>"><div class="who">Authority</div><h3>Education</h3><p>Programs and expertise made discoverable across search and AI.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLAGSHIP OS -->
+  <section>
+    <div class="wrap">
+      <div class="flagship">
+        <div>
+          <div class="tag">[ Flagship Product ]</div>
+          <h2>Search Authority OS</h2>
+          <p class="lede">Our flagship AI system that continuously researches your market, verifies every claim against real evidence, produces high-value content, and monitors your visibility across Google and AI search — then improves itself over time.</p>
+          <div class="cta-row">
+            <a class="btn p" href="<?php echo esc_url($os); ?>">Explore Search Authority OS <span class="ar">&rarr;</span></a>
+            <a class="btn g" href="<?php echo esc_url($pkg); ?>">See packages</a>
+          </div>
+        </div>
+        <div class="engine" style="background:linear-gradient(180deg,var(--panel-2,#211a1b),var(--bg-2))">
+          <div class="cap"><span>Reinforce Lab OPS</span><span>Human Judgment</span></div>
+          <div class="core" style="margin-top:6px"><b>Search Authority OS</b><small>RESEARCH · VERIFY · WRITE · AUDIT · MONITOR</small></div>
+          <p class="microtrust" style="margin-top:14px">We architect the system, define what matters, and run the search plays for you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section class="band alt">
+    <div class="wrap">
+      <div class="head"><span class="ey"><b>[</b>&nbsp;Proof&nbsp;<b>]</b></span><h2>We run this system on ourselves.</h2><p class="lede">Reinforce Lab is its own R&amp;D lab. Your diagnostic establishes your real baseline — no borrowed numbers, no invented results.</p></div>
+      <div class="proof">
+        <div class="stat"><div class="fig"><span class="ph">Your baseline</span></div><div class="lab">Organic visibility today</div></div>
+        <div class="stat"><div class="fig"><span class="ph">Your gap</span></div><div class="lab">AI-search presence</div></div>
+        <div class="stat"><div class="fig"><span class="ph">Your opportunity</span></div><div class="lab">Uncaptured demand</div></div>
+        <div class="stat"><div class="fig"><span class="ph">Your plan</span></div><div class="lab">90-day priorities</div></div>
+      </div>
+      <p class="microtrust" style="margin-top:20px">Case studies and metrics are added only when verified. Placeholders above are replaced by your own diagnostic data.</p>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section>
+    <div class="wrap">
+      <div class="head"><span class="ey"><b>[</b>&nbsp;Packages&nbsp;<b>]</b></span><h2>Three ways to build your growth system.</h2><p class="lede">Every engagement begins with a diagnostic. Pricing shown is a starting framework, finalized to scope.</p></div>
+      <div class="pkgs">
+        <div class="pkg"><div class="tier">01 — Foundation</div><h3>Foundation</h3><div class="price">$5,000 <small>setup + $1,500–$2,500 / mo</small></div><ul><li>SEO + SERP intelligence</li><li>Web + social research</li><li>Evidence verification</li><li>AEO / GEO optimization</li><li>20–30 assets / month</li></ul><a class="btn g" href="<?php echo esc_url($pkg); ?>">Details &rarr;</a></div>
+        <div class="pkg feat"><div class="tier">02 — Growth OS · Most chosen</div><h3>Growth OS</h3><div class="price">$10,000 <small>setup + $3,500–$5,000 / mo</small></div><ul><li>Everything in Foundation</li><li>40–60 assets / month</li><li>Competitor + AI visibility monitoring</li><li>Original-data research</li><li>Self-improvement loop</li></ul><a class="btn p" href="<?php echo esc_url($pkg); ?>">Details &rarr;</a></div>
+        <div class="pkg"><div class="tier">03 — Enterprise</div><h3>Enterprise</h3><div class="price">$20k–$35k+ <small>setup + $7.5k–$15k+ / mo</small></div><ul><li>Everything in Growth OS</li><li>Scientific evidence connectors</li><li>Regulatory + patent intelligence</li><li>Human approval workflows</li><li>Enterprise governance</li></ul><a class="btn g" href="<?php echo esc_url($pkg); ?>">Details &rarr;</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="band alt faq">
+    <div class="wrap" style="max-width:900px">
+      <div class="head"><span class="ey"><b>[</b>&nbsp;Questions&nbsp;<b>]</b></span><h2>Before you book a call.</h2></div>
+      <details open><summary>Is this just an AI writer?</summary><p>No. AI writing is the last step. An AI Growth System researches your market, verifies claims against real evidence, automates operations and monitors performance — then produces content. The intelligence is the product; content is the output.</p></details>
+      <details><summary>Do you optimize for ChatGPT and AI Overviews, not just Google?</summary><p>Yes. AEO and GEO are built in. We track where you appear across ChatGPT, Perplexity, Gemini and AI Overviews, and structure content to be cited — not just ranked.</p></details>
+      <details><summary>Will the content actually be accurate?</summary><p>Every important claim is tied to a source with a confidence score. Weak or conflicting sources are flagged for human review — essential in regulated fields.</p></details>
+      <details><summary>What happens first?</summary><p>A diagnostic: a data-backed read of your organic visibility, AI-search presence, content authority, competitors and demand — with a prioritized 90-day plan. It establishes your real baseline before anything is built.</p></details>
+      <details><summary>How soon will we see results?</summary><p>Search authority compounds. Most engagements see early signals — indexation, rising impressions, first AI citations — within 60–90 days, with meaningful traffic and pipeline gains building through months 3–6. Your diagnostic sets a realistic timeline for your exact starting point; we don't promise overnight rankings.</p></details>
+      <details><summary>How is this different from a traditional SEO agency or a freelancer?</summary><p>An agency sells hours and deliverables; we build a system. Research, evidence verification, content production, AEO/GEO optimization and performance monitoring run as one continuous, self-improving loop — not disconnected tasks handed between tools and people.</p></details>
+      <details><summary>Do we keep control and own everything?</summary><p>Yes. You own all content, data and accounts. Human approval workflows and quality gates are standard — you decide what publishes automatically and what waits for review, and you can change that at any time.</p></details>
+      <details><summary>Can we start small instead of the full system?</summary><p>Yes. Begin with a single agent where the pain is sharpest — Search Intelligence, Content Research, Evidence Verification, AEO/GEO and more — then scale into the full OS when you're ready.</p></details>
+      <details><summary>What does it cost?</summary><p>Engagements start around $5,000 setup plus a monthly retainer, scaling by scope and industry. Final pricing is set after your diagnostic — see <a href="<?php echo esc_url($pkg); ?>">Packages</a> for the framework.</p></details>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section>
+    <div class="wrap">
+      <div class="head"><span class="ey"><b>[</b>&nbsp;Insights&nbsp;<b>]</b></span><h2>From the blog.</h2><p class="lede">Field notes on AI Search, GEO, evidence-based content, and building growth systems that compound.</p></div>
+      <div class="cols c3">
+        <?php
+        $bq = new WP_Query(array('post_type'=>'post','posts_per_page'=>3,'post_status'=>'publish','ignore_sticky_posts'=>true));
+        if ($bq->have_posts()) {
+          while ($bq->have_posts()) { $bq->the_post();
+            $thumb = get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>
+          <a class="cell pcard" href="<?php the_permalink(); ?>">
+            <div class="pthumb<?php echo $thumb ? '' : ' ph-grid'; ?>"<?php echo $thumb ? ' style="background-image:url('.esc_url($thumb).')"' : ''; ?>></div>
+            <div class="pbody">
+              <div class="pmeta"><?php echo esc_html(get_the_date()); ?></div>
+              <h3><?php echo esc_html(get_the_title()); ?></h3>
+              <p><?php echo esc_html(wp_trim_words(wp_strip_all_tags(get_the_excerpt()),24)); ?></p>
+            </div>
+          </a>
+          <?php }
+          wp_reset_postdata();
+        } else {
+          $ph = array(
+            array('AI Search','How to get cited by ChatGPT, Perplexity &amp; AI Overviews','The playbook for showing up inside AI answers — the structure, evidence and entity signals that get you referenced, not just ranked.'),
+            array('GEO','GEO vs SEO: what actually changes for 2026','Generative Engine Optimization is not a rebrand of SEO. Here is what is genuinely different — and what still matters more than ever.'),
+            array('Evidence','Building an evidence layer for regulated content','Why "no source, no claim" is becoming table stakes — and how to operationalize verification at scale without slowing the team down.'),
+          );
+          foreach ($ph as $p) { ?>
+          <div class="cell pcard">
+            <div class="pthumb ph-grid"><span class="ptag"><?php echo $p[0]; ?></span></div>
+            <div class="pbody">
+              <div class="pmeta"><?php echo $p[0]; ?> &middot; Coming soon</div>
+              <h3><?php echo $p[1]; ?></h3>
+              <p><?php echo $p[2]; ?></p>
+            </div>
+          </div>
+          <?php }
+        } ?>
+      </div>
+      <div class="cta-row"><a class="btn g" href="<?php echo esc_url(rl_url_by_path('blog')); ?>">Read the blog <span class="ar">&rarr;</span></a></div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section>
+    <div class="wrap">
+      <div class="final">
+        <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
+        <h2>Find out what's limiting your growth.</h2>
+        <p class="lede center">A data-backed diagnostic of your Google visibility, AI-search presence, content authority, competitors and demand — with a clear 90-day plan. No generic scorecard.</p>
+        <div class="cta-row">
+          <a class="btn p" href="<?php echo esc_url($diag); ?>">Book a Strategy Call <span class="ar">&rarr;</span></a>
+          <a class="btn g" href="<?php echo esc_url($pkg); ?>">Compare packages</a>
+        </div>
+        <p class="microtrust" style="margin-top:24px">For selected businesses and organizations · Confidential · No purchased lists</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+<?php
+    return ob_get_clean();
+}

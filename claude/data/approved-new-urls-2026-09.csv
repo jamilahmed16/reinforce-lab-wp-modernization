@@ -4,8 +4,30 @@ url,type,status,notes
 /services/generative-engine-optimization/,Service,APPROVED-NEW,D-003 approved 5
 /services/seo-ai-search-audit/,Service (paid audit),APPROVED-NEW,D-003 approved 5; paid step in the SAOS funnel
 /services/pharmaceutical-seo/,Service,APPROVED-NEW,D-003 approved 5
-/services/seo-content-systems/,Service,APPROVED-NEW,D-019 approved 27 Sep; slug shortened from automated-seo-content-systems
+/services/seo-content-systems/,Service,APPROVED-NEW,D-019/D-023; = "Content Strategy" (kept slug)
 /services/marketing-automation/,Service,APPROVED-NEW,D-019 approved 27 Sep
+/services/ai-workflow-automation/,Service,APPROVED-NEW,D-023 (28 Sep) new capability
+/services/enterprise-seo-strategy/,Service,APPROVED-NEW,D-023; 301 target for off-page/link-building
+/services/technical-seo/,Service,APPROVED-NEW,D-023; 301 target for technical-seo-services
+/services/international-seo/,Service,APPROVED-NEW,D-023 (28 Sep) new capability
+/services/llm-optimization/,Service,APPROVED-NEW,D-023 (28 Sep) new capability
+/services/lead-generation-systems/,Service,APPROVED-NEW,D-023; 301 target for ppc-management
+/services/executive-ai-consulting/,Service,APPROVED-NEW,D-023; 301 target for business-consultancy
+/services/local-seo/,Service,APPROVED-NEW,D-023; standalone (Jamil) — fresh build
+/services/best-search-engine-optimization-services/,Service (core SEO pillar),KEEP-EXISTING,D-023; keep slug — 420k impressions/16mo; SEO pillar
+/services/press-release-services/,Service (Digital PR),KEEP-EXISTING,D-023; rebuilt as Digital PR for GEO
+/services/wordpress-website-design-service/,Service (Web),KEEP-EXISTING,D-023; 259k impressions
+/services/ecommerce-website-design-service/,Service (Web),KEEP-EXISTING,D-023
+/services/website-maintenance-services/,Service (Web),KEEP-EXISTING,D-023; 258k impressions/60 clicks
+/industries/,Hub,APPROVED-NEW,D-022; industries hub
+/industries/pharmaceutical/,Industry,APPROVED-NEW,D-022; plain slug; moved from /services/ (page ID 75); label "Pharmaceutical & Life Sciences"
+/industries/healthcare/,Industry,APPROVED-NEW,D-022 (28 Sep) plain slug
+/industries/b2b-saas/,Industry,APPROVED-NEW,D-022 (28 Sep) plain slug
+/industries/ecommerce/,Industry,APPROVED-NEW,D-022 (28 Sep) plain slug
+/industries/manufacturing/,Industry,APPROVED-NEW,D-022 (28 Sep) plain slug
+/industries/technology/,Industry,APPROVED-NEW,D-022 (28 Sep) plain slug
+/industries/professional-services/,Industry,APPROVED-NEW,D-022 (28 Sep) plain slug
+/industries/education/,Industry,APPROVED-NEW,D-022 (28 Sep) plain slug
 /search-authority-os/,Product page,APPROVED-NEW,D-016; the OS product under AI Growth Systems
 /search-authority-diagnostic/,Lead-capture,APPROVED-NEW,D-016; free automated diagnostic (Agent #1 lead magnet)
 /packages/,Pricing,APPROVED-NEW,D-016; 3 packages / monthly OS retainer

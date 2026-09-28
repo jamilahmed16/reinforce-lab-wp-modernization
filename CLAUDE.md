@@ -54,7 +54,7 @@ Novamira gives you arbitrary PHP execution, database access and filesystem write
 
 **Methodology:** DISCOVER → PRESERVE → ARCHITECT → CONTENT → AI SEARCH → BUILD → QA → LAUNCH → MONITOR
 
-**Industries:** Pharmaceutical & Life Sciences · Healthcare · B2B SaaS · Manufacturing · Professional Services · Technology
+**Industries (8, D-022 · 28 Sep 2026 — plain names):** Pharmaceutical & Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services · Education. Own `Industries ▾` nav dropdown + `/industries/` axis (verticals = WHO). Pharma moved here from `/services/`. Slug style (keyword `-seo` vs plain) pending.
 
 **Approach:** Build fresh on `.online`, migrate content selectively. **Do NOT clone production.**
 
@@ -90,8 +90,9 @@ All 111 published posts on production were dated into a 9-week window in early 2
 
 **URL approvals so far:** 17 `APPROVED — PRESERVE` · 5 `APPROVED — NEW URL` · **765 PENDING**
 
-**Five approved new service URLs** (build on `.online`):
-`/services/ai-growth-systems/` · `/services/ai-search-optimization/` · `/services/generative-engine-optimization/` · `/services/seo-ai-search-audit/` · `/services/pharmaceutical-seo/`
+**Solutions = 12 locked capabilities** (D-023 · 28 Sep 2026; `AI Growth Systems` = umbrella pillar, not a peer):
+AI Workflow Automation · AI Search Optimization (AISO) · Enterprise SEO Strategy · Technical SEO · International SEO · SEO Content Systems (`/services/seo-content-systems/`) · GEO · LLM Optimization · Lead Generation Systems · Marketing Automation · Executive AI Consulting.
+**Kept in addition:** Search Engine Optimization (core SEO pillar, `/services/best-search-engine-optimization-services/`, 420k imp) · Local SEO · SEO & AI Search Audit (funnel) · Digital PR/Press Release · Web group (WordPress Design · E-commerce Design · Website Maintenance) · `/services/` hub. Full redirect/410 map + slugs: see D-023.
 
 ---
 

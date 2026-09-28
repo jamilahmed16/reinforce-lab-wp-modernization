@@ -278,6 +278,8 @@ Replace "AI-powered growth consultancy" and both instances of "AI-first business
 
 Final five approved new service URLs: `/services/ai-growth-systems/` · `/services/ai-search-optimization/` · `/services/generative-engine-optimization/` · `/services/seo-ai-search-audit/` · `/services/pharmaceutical-seo/`
 
+**⚠️ SUPERSEDED in part (D-022, 28 Sep 2026):** `/services/pharmaceutical-seo/` is **not built**. Pharmaceutical moved out of Solutions into the new Industries axis as **`/industries/pharmaceutical/`** (plain slug). The other four stand; D-023 then expanded the Solutions set well beyond five. Kept here as the record of what was approved on 20 Aug.
+
 ---
 
 ## D-010 — Production homepage H1 and intro change AUTHORISED
@@ -595,26 +597,158 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-030 — Homepage (long-form landing) built & LIVE on `.online`
+**Date:** 28 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified in browser
+
+First real page content. Jamil chose a **long-form landing homepage**. Built as sandbox file `wp-content/novamira-sandbox/reinforce-home.php` (shortcode `[reinforce_home]`, CSS scoped `.rl-home`, only loads on front page). Home page (ID 33) `post_content` = `[reinforce_home]`; **static front page set** (`show_on_front=page`, `page_on_front=33` — Jamil set it in Reading Settings). Full-bleed breakout of the bb-theme container; content at `--maxw` 1440.
+- **Sections:** Hero ("Build AI Growth Systems to automate operations, improve search visibility, and increase revenue" + engine diagram INPUTS→AI GROWTH SYSTEM→OUTCOMES + Book a Strategy Call / Explore Services) → 3 Outcomes (Automate · Improve visibility · Increase revenue) → What We Do (6 capability cards → deep pages) → Problem → How it works (Research/Verify/Build/Measure) → Industries (8, linked) → Flagship Search Authority OS callout → Proof (honest placeholders, no invented metrics) → Packages (3 tiers) → FAQ → Final CTA (portal). Verified hero, outcomes, flagship all render.
+- Internal links resolve to `?page_id=` form because target pages are still drafts; become pretty permalinks once those pages are published.
+- Hero engine diagram is a clean on-brand build (not the exact SEO-ENGINE/PRIORITY-ARTICLE version from Jamil's screenshots 16/17 — that artifact source wasn't available; swap in later if he provides the link).
+
+**"Nothing Found" root is resolved — the site now has a real homepage.**
+
+**FIX (28 Sep):** bb-theme's `.fl-page-content` had a white background (contrast issue — dark/invisible text, white bleed behind transparent sections). Added global rule in `reinforce-header.php`: `.fl-page,.fl-page-content,.fl-content,.fl-post-content,.fl-post{background:transparent!important;color:var(--ink)}` + content headings → `--ink`, content links → `--red-3`. Verified: content bg now transparent, **0 light blocks** on the page. Applies site-wide, so all future pages sit correctly on the dark base.
+
+---
+
+## D-029 — Live footer built & verified on `.online`
+**Date:** 28 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified in browser
+
+Added the square-glass footer (D-021 design) to the same sandbox chrome file (`reinforce-header.php`), rendered via `[reinforce_footer]` shortcode auto-hooked to `wp_footer` (priority 20); default bb-theme footer hidden (`.fl-page-footer-wrap` etc.).
+- **Container = 1440px** (matches header per D-028).
+- **Content:** 6 social icons; brand intro + 5 columns — **Search Authority OS** (OS/Diagnostic/Packages/Agents) · **Solutions** (the 12, links via `get_page_by_path` to `/services/*` where built) · **Industries** (8 plain names → `/industries/*`) · **Company** (Home/About/Services/Portfolio/Clients/Blog/Careers/Contact, `#` where unbuilt) · **Resources** (Free Quote/Sitemap/Privacy/Terms/FTC/Incorporation, `#`). Contact block: BD + USA offices + phones + hello@reinforcelab.com. Copyright bar (single — verified no duplicate). All original footer info preserved (D-011 intent).
+- Verified in browser: socials, columns, offices, copyright all render; one footer only.
+
+**Global chrome (header + footer) is now COMPLETE and live on `.online`.** Next: page content (homepage/hero) or the width-unification decision (Option A 1440-everything vs B wide-chrome) still pending.
+
+---
+
+## D-028 — Site container width = 1440px everywhere (Option A)
+**Date:** 28 September 2026 · **Status:** APPLIED & LIVE (updated 28 Sep — Option A chosen)
+
+**FINAL:** Jamil chose **Option A — 1440px everywhere** (header, footer, hero, all content sections). Single source of truth: `--maxw:1440px` in `reinforce-header.php`; `.rl-header .wrap` & `.rl-footer .wrap` use `var(--maxw)`; theme `fl-content-width` set to **1440**. So chrome and content share one container and always align (resolves the earlier header/hero mismatch permanently). Gutter stays `clamp(16px,4vw,64px)`. Text readability preserved via per-element `max-width` caps (~60–66ch).
+*(Superseded the interim "1440 chrome / 1280 content" split.)*
+
+Jamil's call: **header + footer use a wider 1440px container; page content stays 1280px.** Intentional "wide chrome / narrower content column" pattern — header/footer bands frame a narrower content column, so their edges deliberately sit ~80px outside the content (not the accidental mismatch from D-026 discussion). Applied: `.rl-header .wrap{max-width:1440px}` in `reinforce-header.php` (verified live: header wrap = 1440 at 1680 viewport). `--maxw` stays 1280 for content/sections. **Footer** (when built) uses 1440 to match the header. Theme Content Width in customizer stays 1280 for page content.
+
+---
+
+## D-027 — LiteSpeed Cache deactivated on `.online` for the build
+**Date:** 28 September 2026 · **Status:** ACTIVE (dev only)
+
+Jamil deactivated **LiteSpeed Cache** on `.online` for the duration of the build (it was masking front-end changes behind stale cache — see D-026). Effect: edits to sandbox code / pages now render immediately; no purge step needed during dev.
+⚠️ **Re-enable + reconfigure LiteSpeed before/at the migration to `.com`** — it's part of the locked stack and matters for launch performance. (Production `.com` LiteSpeed is separate and untouched.)
+
+---
+
+## D-026 — Live header built & verified on `.online` (Systems Grid chrome)
+**Date:** 28 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified in browser
+
+Translated the approved square-glass chrome (D-021 v9) into the live site header. Approach approved by Jamil: **faithful custom code** (not stock BB modules).
+- **Vehicle:** a Novamira **sandbox PHP file** `wp-content/novamira-sandbox/reinforce-header.php` (PHP writes are restricted to the sandbox; Novamira's `sandbox-loader.php` auto-includes it every request, with `.crashed` safe-mode recovery). NOT a mu-plugin (blocked) and NOT BB-node injection (fragile).
+- **What it does:** enqueues Oswald/IBM Plex + prints the chrome CSS/JS; adds body class `rl-dark` + fixed `#rl-grid` (parallax) & `#rl-glow` (cursor glow); registers `[reinforce_header]`, auto-renders at `wp_body_open`; hides old `.fl-page-header`.
+- **Renders from live data:** logo = white logo (option `reinforcelab_logo_white` → 155); nav = the **Primary** menu (D-024), built generically — grouped **Solutions** mega (SEO / AI Search & Content / Automation·Advisory·Web / Agents + flagship strip), **Industries** dropdown, plain items; **CTA → /search-authority-diagnostic/**. Mobile: burger → grouped full-screen slide-in.
+- **Fixes during build:** LiteSpeed cache masked first render (purge needed); bb-theme forced `flex-wrap:wrap` → set `nowrap` + raised mobile breakpoint to ≤1150px.
+- **Verified in browser:** desktop nav (1440), Solutions mega, Industries, mobile menu (375) all correct.
+- **Follow-up:** default page CONTENT is low-contrast on the new dark base (placeholder pages unstyled) — resolves as pages get built. Pre-existing Themer "Site Header" layout (ID 44) is superseded (output hidden); deletable later.
+- **UPDATE 28 Sep — deeper background + parallax (Jamil):** grid tokens bumped (`--grid .14`, `--grid-red .26`, `--grid-fine .055`); added second grid layer `#rl-grid2` (132px red grid + corner radial, z-index -1) parallaxing faster than `#rl-grid` for depth; front-grid parallax increased (~42px mouse), mouse tilt eased. Parallax is rAF-driven → pauses when the browser window is hidden (normal); verify with tab focused.
+
+---
+
+## D-025 — Logo set on `.online`
+**Date:** 28 September 2026 · **Status:** DONE
+
+Site logo configured on `.online` using **Jamil's own Media Library uploads** (he uploaded them; my pasted-image copies 156/157 were deleted):
+- **`custom_logo` = attachment 154** — "Official Reinforce Logo" (dark/color PNG). Renders via the theme/Beaver Themer site-logo.
+- **White version = attachment 155** — stored in option **`reinforcelab_logo_white`** for use in the dark header (Beaver Themer header module / custom logic to swap on dark backgrounds).
+
+---
+
+## D-024 — Primary nav menu built on `.online`
+**Date:** 28 September 2026 · **Status:** BUILT (drafts wired; content to follow)
+
+Built the WordPress **"Primary" nav menu (term_id 4, 47 items)** on `.online` via Novamira, wired to the scaffolded page IDs and matching the locked IA (D-019/D-022/D-023). **Assigned to theme location `header`** (registered locations: bar / header / footer).
+- **Top level:** Search Authority OS (64) · Solutions (68) · Industries (87) · Packages (66) · Portfolio # · Blog # · About # · Contact #
+- **Solutions** children: AI Growth Systems Overview (71) + 4 grouped sub-headers (class `mega-col-header`, url `#`): **SEO** (Search Engine Optimization #, Technical SEO 99, Enterprise SEO Strategy 98, International SEO 100, Local SEO 104, SEO & AI Search Audit 74) · **AI Search & Content** (AI Search Optimization 72, GEO 73, LLM Optimization 101, SEO Content Systems 85, Digital PR/Press Release #) · **Automation, Advisory & Web** (AI Workflow Automation 97, Marketing Automation 86, Lead Gen 102, Executive AI Consulting 103, WordPress Website Design #, E-commerce Website Design #, Website Maintenance #) · **Agents** (76 → 8 agents 77–84).
+- **Industries** children: pharmaceutical 75, healthcare 90, b2b-saas 91, ecommerce 92, manufacturing 93, technology 94, professional-services 95, education 96.
+- `#` placeholders = KEEP-EXISTING pages not yet scaffolded (core SEO pillar, Digital PR, 3 web pages) + Portfolio/Blog/About/Contact. They auto-link once those pages exist.
+- Idempotent (clears + rebuilds "Primary"). Mega grouping (3-level) to be rendered by the Beaver Themer/PowerPack header; sub-headers carry class `mega-col-header`.
+
+---
+
+## D-023 — Final service architecture (Solutions + Web + legacy redirect map)
+**Date:** 28 September 2026 · **Status:** APPROVED (planning; production URLs apply only at migration cutover) · sources: [positioning-content-2026-09-28.md](reference/positioning-content-2026-09-28.md), GSC 16-mo Pages.csv
+
+Reconciled the 12-item "What We Do" + legacy production services + earlier approved URLs into one de-duplicated set. **Data-backed** (16-mo GSC clicks/impressions/avg-position).
+
+### SOLUTIONS — the 12 locked capabilities (Jamil: "it's locked")
+`AI Growth Systems` (umbrella pillar, not a peer) · AI Workflow Automation · AI Search Optimization (AISO) · Enterprise SEO Strategy · Technical SEO · International SEO · **SEO Content Systems** (`/services/seo-content-systems/` — Jamil confirmed this NAME, not "Content Strategy"; the "Content Strategy" item from the What-We-Do list = this page) · GEO · LLM Optimization · Lead Generation Systems · Marketing Automation · Executive AI Consulting.
+
+### KEPT in addition (Jamil explicit)
+- **Search Engine Optimization (core SEO pillar)** — KEEP existing slug `/services/best-search-engine-optimization-services/` (**420,385 impressions**/16mo, pos 63 — biggest latent asset in /services/). Becomes the SEO pillar; Technical/Enterprise/International/Local sit under it and link up.
+- **Local SEO** — standalone page `/services/local-seo/` (fresh build; ~0 existing page data — demand was keyword-level).
+- **SEO & AI Search Audit** — `/services/seo-ai-search-audit/` stays (funnel/paid product, D-016).
+- **Press Release → Digital PR** — KEEP `/services/press-release-services/` (39 imp; forward bet on GEO/authority, rebuilt as Digital PR, not equity rescue).
+- **Web Design & Development group (KEEP):** `/services/wordpress-website-design-service/` (259,862 imp), `/services/ecommerce-website-design-service/`, `/services/website-maintenance-services/` (258,722 imp, 60 clicks).
+- **/services/** hub — KEEP (pos 4.2).
+
+### LEGACY REDIRECTS — 301 (data-backed; apply at cutover)
+| Legacy (impressions) | 301 → |
+|---|---|
+| best-seo-content-writing-services (74,989) | /services/seo-content-systems/ |
+| off-page-seo-services (47,499) | /services/enterprise-seo-strategy/ |
+| best-affordable-seo-link-building-services (34,775) | /services/enterprise-seo-strategy/ |
+| technical-seo-services (27,457) | /services/technical-seo/ |
+| email-marketing-services (19,339) | /services/marketing-automation/ |
+| best-website-copywriting-services (18,729) | /services/seo-content-systems/ |
+| best-on-page-seo-services (13,100) | /services/best-search-engine-optimization-services/ (core SEO) |
+| best-blog-writing-services (10,155) | /services/seo-content-systems/ |
+| ppc-management-services (6,572) | /services/lead-generation-systems/ |
+| business-consultancy-service (2,803) | /services/executive-ai-consulting/ |
+| content-marketing-services (1,756) | /services/seo-content-systems/ |
+| social-media-management-service (279) | /services/marketing-automation/ |
+| social-media-marketing-service (191) | /services/marketing-automation/ |
+
+### LEGACY 410 (eliminate)
+- `/services/creative/graphic-design-services/` (151 imp, off-strategy, no relevant target).
+
+### NEW service slugs to add to register + scaffold
+`/services/ai-workflow-automation/` · `/services/enterprise-seo-strategy/` · `/services/technical-seo/` · `/services/international-seo/` · `/services/llm-optimization/` · `/services/lead-generation-systems/` · `/services/executive-ai-consulting/` · `/services/local-seo/`. (Plus keep: core-SEO pillar slug, press-release-services, the 3 web slugs, seo-ai-search-audit, seo-content-systems, marketing-automation, ai-search-optimization, generative-engine-optimization, ai-growth-systems.)
+
+**Supersedes** earlier D-015 dispositions for these legacy rows and the earlier "5 Solutions" set. Disposition sheet + redirect-map CSV to be regenerated from this table before cutover. Pharma → Industries (D-022).
+
+**SCAFFOLDED on `.online` 28 Sep 2026 (drafts, idempotent):**
+- **Industries hub** `/industries/` = page **ID 87**; 8 industry drafts under it: pharmaceutical **75** (re-parented from /services/, renamed from pharmaceutical-seo), healthcare **90**, b2b-saas **91**, ecommerce **92**, manufacturing **93**, technology **94**, professional-services **95**, education **96**.
+- **8 new service drafts** under /services/ (parent 68): ai-workflow-automation **97**, enterprise-seo-strategy **98**, technical-seo **99**, international-seo **100**, llm-optimization **101**, lead-generation-systems **102**, executive-ai-consulting **103**, local-seo **104**.
+- Note: the pass accidentally created a duplicate `pharmaceutical` (ID 89) racing the re-parent of 75; **89 trashed**, 75 kept. Verified: industries hub has exactly 8 children.
+- **Not yet scaffolded (KEEP-EXISTING, come via rebuild/migration):** core SEO pillar, press-release/Digital PR, the 3 web pages. `blog_public=0` (noindex) verified before writes.
+
+---
+
 ## D-022 — Industries axis added; Pharma moved Solutions → Industries
 **Date:** 28 September 2026 · **Status:** DECIDED in preview; sub-items open (slug, list reconciliation, scaffolding)
 
 Jamil raised the services-vs-industries taxonomy inconsistency (pharma was the only "X SEO" hybrid in Solutions). Resolved the pre-flagged architectural tension (see the earlier `/industries/` note): **AI Growth Systems umbrella now has THREE child axes — Search Authority OS (product) · Solutions (capabilities/WHAT) · Industries (verticals/WHO).**
 
 - **Solutions (5, pure capabilities):** AI Search Optimization · Generative Engine Optimization · SEO & AI Search Audit · SEO Content Systems · Marketing Automation. (Pharma removed.)
-- **Industries (6 verticals):** naming convention DECIDED 28 Sep — every industry carries a **"[Industry] SEO"** label + slug for keyword capture (Jamil's call, consistent with the original "Pharmaceutical SEO"). Labels: **Pharmaceutical SEO · E-commerce SEO · B2B SaaS SEO · Manufacturing SEO · Technology SEO · Professional Services SEO.** Slugs: `/industries/pharmaceutical-seo/`, `/ecommerce-seo/`, `/b2b-saas-seo/`, `/manufacturing-seo/`, `/technology-seo/`, `/professional-services-seo/`. Brand guard: keep the keyword in label/slug/title, but frame each page H1/content as the fuller "AI Growth Systems for [industry]" story so the SEO-only perception doesn't dilute the umbrella positioning. (Supersedes the earlier plain-name idea.)
+- **Industries naming — REVERSED to plain vertical names (Jamil, 28 Sep, later same day):** drop "SEO" from every industry *label*. The brief "[Industry] SEO" labelling is superseded. Keyword capture happens on each page's H1/title/content, not the nav label. **Nav placement also changed: Industries is now its OWN top-nav dropdown (`Industries ▾`), removed from the Solutions mega** (chrome v9).
+- **SLUG decision RESOLVED (28 Sep): PLAIN slugs** — `/industries/pharmaceutical/`, `/healthcare/`, `/b2b-saas/`, `/ecommerce/`, `/manufacturing/`, `/technology/`, `/professional-services/`, `/education/`. Rationale: URL keywords are a minor/declining classic-SEO factor and irrelevant to AEO/GEO/LLM; clean entity URLs are better understood by AI/knowledge systems and future-proof (pages are broader than SEO). Keyword capture moves to title/H1/schema (e.g. title "Pharmaceutical SEO & AI Search"). Consistent with plain labels.
 - **Nav representation:** Option B — Industries shown as a column inside the existing **Solutions ▾** mega-menu (Solutions | Industries | Agents | Flagship), no new top-nav item. Footer got a matching Industries column. Built into the chrome preview (Header & Footer artifact v4).
 
 **Open sub-items (need Jamil):**
-1. ~~Pharma slug~~ — RESOLVED: `/industries/pharmaceutical-seo/` (keyword kept). Pharma leaves Solutions; draft page ID 75 to be re-parented/renamed under /industries/ at scaffold time.
+1. ~~Pharma slug~~ — **RESOLVED 28 Sep 2026 (Jamil): `/industries/pharmaceutical/` — plain, no `-seo` suffix.** This supersedes the earlier "keyword kept" wording that sat here; the plain-slug decision recorded above is the one that stands, and the build followed it. Pharma leaves Solutions; draft page ID 75 re-parented and renamed under `/industries/` — **done**, see D-023.
 2. ~~Growing Businesses~~ — RESOLVED 28 Sep: **OUT** (stage, not vertical).
 3. ~~Healthcare~~ — RESOLVED 28 Sep: **IN**.
 
-**Industries FINAL (8), confirmed 28 Sep 2026** — with the "[Industry] SEO" convention:
-**Pharmaceutical SEO · Healthcare SEO · B2B SaaS SEO · E-commerce SEO · Manufacturing SEO · Technology SEO · Professional Services SEO · Education SEO.** (Education added; E-commerce kept; Healthcare back in; Growing Businesses out.) Applied to chrome preview v6.
-Slugs: `/industries/{pharmaceutical,healthcare,b2b-saas,ecommerce,manufacturing,technology,professional-services,education}-seo/`.
+**Industries FINAL (8), confirmed 28 Sep 2026** — PLAIN labels (no "SEO" suffix):
+**Pharmaceutical & Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services · Education.** (Education added; E-commerce kept; Healthcare back in; Growing Businesses out.) Own `Industries ▾` nav dropdown (chrome v9).
+
+**🔒 LOCKED-LIST CHANGE APPROVED BY JAMIL — 28 September 2026.** Master Project Instructions §5 and §43 lock the target industries at **six** (Pharmaceutical & Life Sciences, Healthcare, B2B SaaS, Manufacturing, Professional Services, Technology). This decision **expands that locked list to eight** by adding **E-commerce** and **Education**. Jamil approved the change explicitly on 28 Sep 2026. The eight above are now the current locked list; §5/§43 are superseded on this point and should be updated at the next revision of the Master Instructions. Recorded here so the change is never treated as silent drift (§40, §43).
+
+**Slugs RESOLVED 28 Sep 2026 (Jamil): PLAIN — no `-seo` suffix.** `/industries/pharmaceutical/` · `/industries/healthcare/` · `/industries/b2b-saas/` · `/industries/ecommerce/` · `/industries/manufacturing/` · `/industries/technology/` · `/industries/professional-services/` · `/industries/education/`. Keyword capture lives in each page's title, H1, content and schema — not the URL.
 
 4. **Still open — SERVICES reconciliation (D-023).** The 12-item "What We Do" (positioning-content-2026-09-28.md) has not been mapped to Solutions pages yet. Until decided, Solutions stays at the current 5 in the chrome.
-5. Once services settle: update approved-new register + CLAUDE.md (locked-industries line → the 8 above; services), scaffold `/industries/` hub + 8 vertical drafts on `.online` (re-parent/rename page ID 75 → `/industries/pharmaceutical-seo/`). NOT done yet.
+5. Services settled in **D-023**; `/industries/` hub + 8 vertical drafts **scaffolded on `.online` 28 Sep** (page ID 75 re-parented and renamed to the plain `pharmaceutical` slug) — see D-023. **Still to do:** add the 8 industry URLs + the D-023 service slugs to the approved-new URL register, and update `CLAUDE.md`'s locked-industries line to the eight above.
 
 ---
 
@@ -660,4 +794,6 @@ Backlog since 10 Sep committed + pushed (`253c001 → 85db50e`), so GitHub (`git
 
 ---
 
-**Production status: UNTOUCHED. All 216 URLs: PENDING.**
+**Production status: UNTOUCHED**, except the two approved and verified changes on record — D-010 (homepage H1/intro/title/meta, live 25 Aug 2026) and D-011 (footer blurb + one link label, live 20 Aug 2026). Every other production URL remains `PENDING — NO CHANGE AUTHORIZED`.
+
+**URL register state:** all **631 unique pages** carry an approved *disposition* (D-014 / D-014b / D-015), and D-023 supersedes those dispositions for the legacy `/services/*` rows. A disposition is a **plan, not an authorisation** — nothing is applied to production until the approved migration cutover, which is not scheduled. *(The earlier line here read "All 216 URLs: PENDING", which matched neither the register nor this log. Corrected 28 Sep 2026.)*
