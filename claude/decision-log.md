@@ -597,6 +597,18 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-032 — Search Authority OS page built & LIVE on `.online`
+**Date:** 28 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified · Approved by Jamil ("yes all 8... and build the page properly")
+
+Flagship product page `/search-authority-os/` (page ID 64) built from the approved design `claude/design-previews/search-authority-os-landing.html`.
+- **Vehicle:** sandbox file `wp-content/novamira-sandbox/reinforce-saos.php` (repo: `wp/novamira-sandbox/reinforce-saos.php`), shortcode `[reinforce_saos]`, CSS scoped `.rl-saos`, loads only on this page. Page 64 `post_content` = `[reinforce_saos]`; **status draft → publish** (single page, site stays noindex; revert = set back to draft). Mock-up's own header/footer dropped (global chrome D-026/D-029 used).
+- **Sections (13):** breadcrumb → Hero + engine diagram → Problem (6) → The System (6 intelligence layers) → Research/Verify/Produce/Measure → Evidence chain → Industries (**all 8 locked**, Finance folded into Professional Services) → What you get (8) → Traditional vs SAOS table → 8 Agents → Proof (honest placeholders) → 3 Packages (**prices shown, same figures as homepage**) → FAQ (5) → Final CTA.
+- **Changes vs mock-up:** answer-first lede now opens "Search Authority OS is an AI-powered operating system from Reinforce Lab…"; industries 6 → 8 with new copy for E-commerce, Manufacturing, Technology, Education and Finance line in Professional Services; step/agent headings h4 → h3 (valid order); table row labels are `<th scope=row>` + hidden caption; industry/agent cards link to their pages; contextual up-link to `/services/ai-growth-systems/`; CTAs → `/search-authority-diagnostic/` and `/packages/`. Two mock-up mobile defects fixed (eyebrow wrap; vertical flow line rendered as a thick bar).
+- **D-012 gates (verified live):** HTTP 200 · **1 H1** · Yoast title "Search Authority OS: Evidence-Led SEO | Reinforce Lab" (53) · meta description 159 chars · robots noindex (correct for `.online`) · schema = Yoast WebPage + BreadcrumbList (Home > Search Authority OS) + Organization, plus **Service** (provider → #organization) and **FAQPage** (5 Q, same text as visible FAQ) added via `wpseo_schema_graph` · 21 internal links out (8 industries, 8 agents, agents hub, pillar, diagnostic, packages, home) · visible breadcrumb · no PHP errors · no horizontal overflow at 1440 / 390 · content server-rendered, no page JS.
+- **Known / follow-up:** links render as `?page_id=` until targets are published · no canonical while noindex (Yoast omits it; recheck at launch) · **site-wide: Yoast Organization/WebSite name = "reinforcelab.online", should be "Reinforce Lab" (legalName "Reinforce Lab Limited")** — Yoast Site Representation setting, needs approval · Home still needs Yoast title/meta · `rl-home`/`rl-saos` duplicate ~100 lines of component CSS — consolidate into a shared component sheet before the next page.
+
+---
+
 ## D-031 — Theme markup cleanup in the global chrome (one H1, skip link, no theme footer)
 **Date:** 28 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified · Approved by Jamil ("fix the header first")
 
@@ -622,7 +634,7 @@ First real page content. Jamil chose a **long-form landing homepage**. Built as 
 
 **UPDATE 28 Sep — fainter background grid VERIFIED live:** grid tokens reduced from the D-026 values (`--grid .14`, `--grid-red .26`, `--grid-fine .055`) to `--grid .035`, `--grid-red .06`, `--grid-fine .014`, plus `--grid-red2 .035`. Verified on the rendered homepage and by md5 of the live `reinforce-header.php` = repo copy (`ea2b6d34…`, before the D-031 edit).
 
-**Open (SAOS page, awaiting Jamil):** design source = `claude/design-previews/search-authority-os-landing.html` (chosen 28 Sep). **(1) Industries — DECIDED (Jamil, 28 Sep):** **all 8 locked industries (D-022)**, 4×2 grid matching the homepage — Pharma & Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services · Education (the mock-up's 6-card set is superseded); **Finance is kept, folded into Professional Services** (card copy + hero line: "Professional Services (incl. Finance)"), not deleted. Still pending: (2) show package prices on `/search-authority-os/`? (3) publish page 64 on `.online` or keep draft?
+**Open (SAOS page, awaiting Jamil):** design source = `claude/design-previews/search-authority-os-landing.html` (chosen 28 Sep). **(1) Industries — DECIDED (Jamil, 28 Sep):** **all 8 locked industries (D-022)**, 4×2 grid matching the homepage — Pharma & Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services · Education (the mock-up's 6-card set is superseded); **Finance is kept, folded into Professional Services** (card copy + hero line: "Professional Services (incl. Finance)"), not deleted. (2) Prices — shown (same figures already public on Home). (3) Page 64 published on `.online`. → Built: see **D-032**.
 
 **FIX (28 Sep):** bb-theme's `.fl-page-content` had a white background (contrast issue — dark/invisible text, white bleed behind transparent sections). Added global rule in `reinforce-header.php`: `.fl-page,.fl-page-content,.fl-content,.fl-post-content,.fl-post{background:transparent!important;color:var(--ink)}` + content headings → `--ink`, content links → `--red-3`. Verified: content bg now transparent, **0 light blocks** on the page. Applies site-wide, so all future pages sit correctly on the dark base.
 
