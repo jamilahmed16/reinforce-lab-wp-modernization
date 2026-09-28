@@ -103,6 +103,9 @@ body.rl-mopen #rl-mobile{transform:none;visibility:visible}
 @media(max-width:1150px){.rl-header .mainnav,.rl-header .hcta{display:none}.rl-header .burger{display:flex}}
 /* hide default theme footer (we render our own) */
 .fl-page-footer-wrap,.fl-page-footer,.fl-builder-content-primary+.fl-page-footer-wrap{display:none!important}
+/* skip link: visually hidden until keyboard focus (a11y) */
+.fl-screen-reader-text{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+body a.fl-screen-reader-text:focus{clip:auto;width:auto;height:auto;overflow:visible;top:12px;left:12px;z-index:100000;padding:12px 18px;background:var(--bg)!important;color:var(--ink)!important;border:1px solid var(--red-2)!important;box-shadow:0 0 24px -6px var(--red-glow)!important;outline:none;font-family:var(--f-display)!important;text-transform:uppercase;letter-spacing:.05em;font-size:14px!important;text-decoration:none}
 /* ---- footer ---- */
 .rl-footer{position:relative;overflow:hidden;border-top:1px solid var(--red-line);background:var(--bg-2);color:var(--ink-dim);background-image:radial-gradient(80% 65% at 50% 0%,rgba(153,0,0,.10),transparent 62%);font-family:var(--f-body)}
 .rl-footer *{box-sizing:border-box}
@@ -136,6 +139,27 @@ body.rl-mopen #rl-mobile{transform:none;visibility:visible}
 
 /* ---------- mark body + inject background layers ---------- */
 add_filter('body_class', function ($c) { $c[] = 'rl-dark'; return $c; });
+
+/* ---------- theme markup cleanup (D-012 gates) ---------- */
+/* Theme footer (widgets + BB credit) out of the HTML, not just hidden; [reinforce_footer] replaces it. */
+add_filter('fl_footer_enabled', '__return_false');
+
+/* Skip link first in tab order: theme prints it at fl_body_open:20, after our header (wp_body_open runs at fl_body_open:10). */
+add_action('after_setup_theme', function () {
+    if (remove_action('fl_body_open', 'FLTheme::skip_to_link', 20)) add_action('fl_body_open', 'FLTheme::skip_to_link', 5);
+}, 20);
+
+/* Pages rendered by a [reinforce_*] shortcode supply their own H1: strip the theme's
+   <header class="fl-post-header"><h1 class="fl-post-title"> so there is exactly one H1. */
+function rl_is_rl_page() {
+    return is_page() && strpos((string) get_post_field('post_content', get_queried_object_id()), '[reinforce_') !== false;
+}
+add_action('fl_before_post', function () { if (rl_is_rl_page()) ob_start(); }, 1);
+add_action('fl_before_post_content', function () {
+    if (!rl_is_rl_page()) return;
+    $html = ob_get_clean();
+    echo preg_replace('#<header class="fl-post-header">.*?</header><!-- \.fl-post-header -->#s', '', (string) $html);
+}, 1);
 
 add_action('wp_body_open', function () {
     echo '<div id="rl-grid2" aria-hidden="true"></div><div id="rl-grid" aria-hidden="true"></div><div id="rl-glow" aria-hidden="true"></div>';

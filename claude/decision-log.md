@@ -597,6 +597,19 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-031 — Theme markup cleanup in the global chrome (one H1, skip link, no theme footer)
+**Date:** 28 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified · Approved by Jamil ("fix the header first")
+
+A read of the live homepage showed the theme leaking markup that fails D-012 gates on every page. Fixed once in `wp-content/novamira-sandbox/reinforce-header.php` using bb-theme's own hooks (no theme files edited):
+- **Duplicate H1** — bb-theme prints `<header class="fl-post-header"><h1 class="fl-post-title">` on every page; CSS only hid it. Now stripped from the HTML (buffered between `fl_before_post` → `fl_before_post_content`) **only on pages whose content is a `[reinforce_*]` shortcode** (they supply their own H1). Blog posts / other templates untouched. Home: 2 H1 → **1**.
+- **Theme footer out of the HTML** — `fl_footer_enabled` → false. Removes the hidden footer widgets ("Archives"/"Categories" H2s) and the Beaver Builder credit link. `[reinforce_footer]` (D-029) unaffected.
+- **Skip link** — was rendering as visible blue text under the header and sat 11th in tab order. Now visually hidden until focus, on-brand focus style, and moved to `fl_body_open:5` so it is the **1st** Tab stop.
+- **Verified:** home HTTP 200, 1 H1, 0 widgets, 0 credit, 1 footer, no PHP errors; 404 page renders with chrome, no errors; skip link 1×1 before focus, visible on first Tab.
+- **Backup on server:** `novamira-sandbox/reinforce-header.php.bak-20260928-pre-h1fix` (md5 `ea2b6d34…`; loader only includes `*.php`, so it is inert). Repo copy = live (md5 `ced18db8…`).
+- **Still open:** Home has no Yoast title/meta (title is "Home - reinforcelab.online") — separate write, copy to be approved. 404 template has no H1 (pre-existing; address when a 404 page is designed). No canonical in HTML while noindex — recheck at launch.
+
+---
+
 ## D-030 — Homepage (long-form landing) built & LIVE on `.online`
 **Date:** 28 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified in browser
 
