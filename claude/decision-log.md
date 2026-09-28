@@ -610,7 +610,8 @@ Yoast `company_name` and `website_name` were empty, so schema fell back to the W
 
 Main content only (header/footer excluded), live pages: Home 1,382 words, SAOS 1,539. 5-word-shingle overlap: **24.2% of SAOS text also appears on Home; 27.1% of Home text also appears on SAOS** (Jaccard 14.7%). 21 exact-duplicate blocks + 27 near-duplicates (≥75% similar). Concentrated in: Problem pains, the 4 process steps (3 identical), Packages (tiers, prices, features ~identical), FAQ (3 questions near-identical), Proof section, industry bullets (Pharma/B2B SaaS/Technology/Prof. Services identical), final-CTA microcopy, engine-diagram nodes. Unique to SAOS: System layers, Evidence layer, What-you-get, comparison table, 8 agents. Unique to Home: 3 outcomes, 6 capabilities, blog, flagship callout.
 - **Inference:** internal duplication isn't a penalty, but it blurs which page answers which query (Home = AI Growth Systems umbrella; SAOS = the product) — cannibalization + weaker AI-citation signal for the flagship.
-- **Recommendation (not applied):** keep the detail on SAOS; on Home replace duplicated blocks with shorter, distinct summaries that link down (packages → teaser to `/packages/`, FAQ → company-level questions, process/problem/industry copy rewritten at the umbrella level).
+- **UPDATE 28 Sep — Jamil approved the direction** (Packages → teaser, company-level FAQ, umbrella-level Problem/Process/Industries). Draft copy: `claude/drafts/home-copy-v2-2026-09-28.md` — awaiting copy approval + 2 [VERIFY] facts. Projected overlap after change: ~7–9% (from 24–27%). Also flags the Home FAQ "How soon will we see results?" (60–90 day claim) as unverified — removed in the draft.
+- **Recommendation (original):** keep the detail on SAOS; on Home replace duplicated blocks with shorter, distinct summaries that link down (packages → teaser to `/packages/`, FAQ → company-level questions, process/problem/industry copy rewritten at the umbrella level).
 
 ---
 
