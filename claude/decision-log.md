@@ -597,6 +597,61 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-045 — Technical SEO page built on `.online` (page 99, published) — first page built on the shared kit
+**Date:** 29 September 2026 · **Status:** BUILT (Jamil: "yes, go ahead with Technical SEO")
+
+`/services/technical-seo/` is a D-023 new slug. At cutover the legacy production URL `/services/technical-seo-services/` (27,457 impressions over 16 months) **301s here, per D-023**. That production redirect stays PENDING until the migration is approved.
+- New file `wp/novamira-sandbox/reinforce-techseo.php` provides `[reinforce_techseo]`.
+- Page **99** was set to the shortcode and published; the publish was guarded (page empty, parent 68, `blog_public=0`).
+- Yoast title: "Technical SEO Services: Crawl, Index & Speed | Reinforce Lab" (60).
+- Meta: "Technical SEO from Reinforce Lab: crawlability, indexation, Core Web Vitals, structured data and AI-crawler access — root causes fixed, verified and safe for what already ranks."
+- **Built on the shared kit (D-044) from the start:** wrapper `rl-page rl-tseo` plus the `rl_kit_active` opt-in, with page-only CSS. The page is 140 KB with 12 sections; before the kit, an equivalent page would have been about 150 KB. It has been added to `claude/tools/style-fingerprint.mjs`.
+
+**Research (Exa, `agent_run_5c3bdd098b284e65ac680f4905256b0d`)** is saved in `claude/research/technical-seo-research-2026-09-29.md`.
+- **Competitors:** Vezadigital, Percepture, RankZero, FactoryJet, Foundgrove, Seer Interactive, Omega Function. Most are audit-led, with little post-fix verification and no "protect what ranks" promise.
+- **VERIFIED from Google / web.dev:**
+  - CWV thresholds: LCP ≤ 2.5 s, INP ≤ 200 ms, CLS ≤ 0.1, measured at p75; INP replaced FID on 12 Mar 2024;
+  - Search's 3 stages (crawling, indexing, serving);
+  - JS processing (crawl → render → index) and "not all bots can run JavaScript";
+  - rel=canonical is a strong signal, not a command;
+  - robots.txt blocks crawling, not indexing;
+  - sitemaps don't guarantee indexing;
+  - hreflang must be reciprocal;
+  - crawl-budget thresholds (1M+ pages, or 10k+ pages changing daily);
+  - structured data must represent the page.
+- **Flagged:** no AI vendor documents JS rendering. Vercel's study is cited only as a study, not stated as fact.
+
+**Structure:**
+- Hero, with a 3-line H1: "Fix what stops / search engines / and AI crawlers."
+- "Where can a page get stuck?" — crawl / render / index / serve, with what breaks at each, linked to Google sources.
+- "What does a technical SEO review cover?" — 9 areas, including AI access and hreflang.
+- "What are the Core Web Vitals thresholds?" — table with web.dev sources.
+- **"Which technical SEO beliefs are wrong?"** — 5 myth vs "Google says" pairs, each linked to the Google doc (differentiator).
+- A 5-step process ending in a verification crawl, and 8 deliverables (including a URL inventory, redirect map and developer-ready tickets).
+- 6 measures (crawl waste, CWV pass rate…).
+- **"We don't break what already ranks"** panel — the PRESERVE methodology, made public.
+- "Who it's for" and "Related services" (incl. the Search Performance Agent) as separate sections.
+- 6 FAQs and the final CTA.
+
+**Schema:** `Service` plus `FAQPage`; Yoast adds the breadcrumb.
+
+**Hero animation "Crawl, fix, index" (D-039 Step 3), 10 s loop:**
+1. A crawler maps HOME → 3 sections → 6 pages.
+2. Three faults surface: /POST-A **404**, /SAAS **SLOW**, and /GUIDE **ORPHAN** (dashed, unlinked).
+3. The phase label reads "Fixing root causes…". The 404 becomes "200 OK", SLOW becomes "FAST", and a new internal link draws to /GUIDE, which becomes "LINKED".
+4. Every page gets an indexed marker, and crawlable · renderable · indexable · fast light up.
+5. Soft fade and reset.
+- Preview fix: two child nodes overlapped by ~5 px; they were re-spaced before deploy.
+
+**Deliberately NOT used (needs Jamil):** our own DISCOVER findings as a case study — e.g. the Beaver Builder pagination defect (F-001) that created junk `/paged-N/` URLs on reinforcelab.com. It is strong, real proof of root-cause work, but it discloses production's state, so Jamil decides.
+
+**Deploy and verification:**
+- Created new; live md5 `31feaeef…` = repo.
+- HTTP 200, 1 H1 (3 lines), 12 H2, kit linked, noindex, no PHP errors, no `#` links, 9 Google / web.dev source links.
+- No overflow at 1440/390; the CWV table fits without scrolling; reduced motion static.
+
+---
+
 ## D-044 — Shared CSS kit: duplicated page CSS merged into one cached file
 **Date:** 29 September 2026 · **Status:** DONE (Jamil: "yes, do the CSS merge first")
 
