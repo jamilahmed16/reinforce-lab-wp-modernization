@@ -597,6 +597,62 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-056 — Core SEO pillar built on `.online` (page 190, published) at the kept production URL
+**Date:** 29 September 2026 · **Status:** DONE (Jamil: "yes, go ahead with the core SEO pillar")
+
+- **URL:** `/services/best-search-engine-optimization-services/` — production URL **kept** (D-023; 420,385 impressions / 16 months, avg position 63.4). No redirect for this page. It is the 301 target for `/services/best-on-page-seo-services/` (D-023), so it carries a full on-page SEO section (`#onpage`).
+- **New page 190** (no scaffold existed): guarded create checked the file was absent, no page at that path, parent 68 = `services`, `blog_public = 0`. Title "Search Engine Optimization Services", content `[reinforce_seo]`.
+- **Yoast:** title "Search Engine Optimization (SEO) Services | Reinforce Lab"; meta "SEO services built on Google's guidelines: technical SEO, on-page, content and authority run as one system and extended to AI search, for B2B and specialist brands."
+- **File:** `wp/novamira-sandbox/reinforce-seo.php` on the shared kit (D-044). After a caret-position fix (backup `.bak-20260929-185959`), live md5 = repo `74fad27b…`.
+- **Research:** `claude/research/core-seo-pillar-research-2026-09-29.md`. Covers: the production page read-only (via Exa; the egress proxy blocks reinforcelab.com directly), GSC query families, Google primary docs, 6 competitor pages, and the Ahrefs 2024 pricing survey.
+- **Pillar role:** a "What are SEO services, and what do they include?" section uses Google's own list of SEO services, then links down to 9 spokes: Technical, On-page (#onpage), SEO Content Systems, Digital PR, Local, International, Enterprise, AI Search Optimization, Audit. The `Service` schema has an `OfferCatalog` of the 7 spoke services.
+- **Hero animation "Four pillars":**
+  - The crawl · index · serve foundation lights up first.
+  - The technical, on-page, content and authority pillars fill in turn.
+  - Each finished pillar moves "YOUR PAGE" up one place in the results, until it ranks first.
+  - A "Search authority" beam then lights, and the AI overview shows "CITED: YOUR PAGE".
+  - 10 s loop, soft fade, reset.
+- **Sections:** answer-first lede · What's included · How Google decides what to show (3 stages, "no payment" quote) · On-page SEO (6) · Myths (5, from Google: meta keywords, word count, E-E-A-T, duplicate content, #1 guarantee) · Method (the locked 9-stage DISCOVER→MONITOR methodology) · B2B SEO · Consultant or agency · Deliverables · Measurement · Straight answer ("No one can guarantee you the top spot") · 8 industry cards · AI-search extensions (GEO, LLM, Search Authority OS) · 6 FAQs · final CTA.
+- **Not carried over from production:** the WooCommerce package prices and "Buy" buttons (see O-019), and the unsourced statistics. No prices, results or clients are claimed.
+- **Verified:**
+  - 1 H1 (three lines) and 14 H2.
+  - 8 cards; 12 linked cells; no `href="#"`.
+  - Kit loaded, no PHP errors, noindex.
+  - 390 px with no overflow; screenshots checked.
+  - Fingerprint tool now includes `seo`.
+
+---
+
+## O-019 — Production SEO packages ($2,000–$6,500/yr, WooCommerce "Buy") on the core SEO pillar — OPEN (Jamil to decide)
+**Date:** 29 September 2026 · **Status:** OPEN — production untouched; the URL stays `PENDING — NO CHANGE AUTHORIZED` until the migration.
+
+**Finding (VERIFIED, read-only):** production's `/services/best-search-engine-optimization-services/` sells three WooCommerce SEO packages:
+
+| Package | Price | Yearly-discount price |
+|---|---|---|
+| Starter | $2,000/yr ($167/mo) | $1,700 |
+| Growth | $3,500/yr ($292/mo) | $2,800 |
+| Enterprise | $6,500/yr ($542/mo) | $4,875 |
+
+- Deliverables are 150/200/300 key phrases, 30/40/60 pages and 6/12/24 SEO contents.
+- These quantities match WebFX's published tier quantities.
+- The rebuilt page on `.online` carries **no prices** until Jamil decides.
+
+**Why it matters (INFERENCE):**
+- $167–$542/mo sits below Ahrefs' 2024 survey average of $2,917/mo (agencies $3,209/mo), and well below the $5,000 setup of the Search Authority OS packages.
+- It also sits below the audit price set in D-053 (from $2,500).
+- It conflicts with the consultative, no-cart model (D-016).
+- Removing live "Buy" products also touches the WooCommerce store, which holds real customer data. Nothing on production changes without approval.
+
+**Options (RECOMMENDATION = B):**
+- **A.** Keep the packages as they are and republish them on the new page.
+- **B.** Retire the cart packages at migration. The page leads to the free diagnostic, the SEO & AI Search Audit and the Search Authority OS packages, with an optional "SEO programmes from $X/month" once Jamil sets X. The Woo products are unpublished only at migration, and existing orders and subscriptions are left untouched.
+- **C.** Keep a single entry-level SEO package, repriced and re-scoped (not WebFX-shaped).
+
+Also needed: whether any customer currently holds an active subscription to these products. That is a read-only WooCommerce check on production, which needs Jamil's approval.
+
+---
+
 ## D-055 — Digital PR & Link Building page built on `.online` (page 189, published) — carries the off-page / link-building intent (O-018 B)
 **Date:** 29 September 2026 · **Status:** DONE (Jamil: "B, then go ahead with Digital PR")
 
