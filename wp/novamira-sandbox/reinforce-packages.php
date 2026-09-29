@@ -128,6 +128,36 @@ body.rl-pkg-page .fl-page-content,body.rl-pkg-page .fl-content,body.rl-pkg-page 
 /* build additions */
 .rl-pkg .ey{flex-wrap:wrap;row-gap:.2em}
 .rl-pkg .mx-scroll{position:relative} /* contains the absolutely-positioned .sr labels so they can't widen the page on mobile */
+/* hero: left-aligned + visual (D-039) — overrides the centred mock-up hero */
+.rl-pkg .hero{text-align:left}
+.rl-pkg .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);align-items:center}
+@media(max-width:940px){.rl-pkg .hero-grid{grid-template-columns:1fr;gap:34px}}
+.rl-pkg .hero .h1{margin-inline:0;max-width:14ch}
+.rl-pkg .hero .lede{margin:18px 0 0}
+.rl-pkg .hero .hero-cta{justify-content:flex-start}
+/* hero visual: compounding staircase */
+.rl-pkg .stair{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 22px 12px;box-shadow:0 30px 80px -50px var(--red-glow)}
+.rl-pkg .stair .cap{display:flex;justify-content:space-between;gap:12px}
+.rl-pkg .stair .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-pkg .pk-grid{stroke:var(--line);stroke-dasharray:2 6}
+.rl-pkg .pk-axis{stroke:var(--line-2)}
+.rl-pkg .pk-b{transform-box:fill-box;transform-origin:50% 100%;animation:rlpRise 9s cubic-bezier(.2,.7,.2,1) infinite both;animation-delay:var(--d)}
+.rl-pkg .pk-blk{fill:rgba(255,255,255,.03);stroke:var(--line-2)}
+.rl-pkg .pk-b.feat .pk-blk{fill:rgba(153,0,0,.16);stroke:var(--red-2)}
+.rl-pkg .pk-mod{stroke:var(--ink-faint);stroke-width:2;opacity:.55}
+.rl-pkg .pk-b.feat .pk-mod{stroke:var(--red-3);opacity:.8}
+.rl-pkg .pk-cap{fill:var(--line-2)}.rl-pkg .pk-b.feat .pk-cap{fill:var(--red-3)}
+.rl-pkg .pk-n{font-family:var(--f-mono);font-size:11px;fill:var(--red-3);letter-spacing:.1em}
+.rl-pkg .pk-name{font-family:var(--f-display);font-size:13px;fill:var(--ink);letter-spacing:.05em;font-weight:600}
+.rl-pkg .pk-price{font-family:var(--f-mono);font-size:10.5px;fill:var(--ink-faint);letter-spacing:.04em}
+.rl-pkg .pk-curve{fill:none;stroke:var(--red-3);stroke-width:2.5;stroke-dashoffset:0;filter:drop-shadow(0 0 5px rgba(226,59,59,.6));animation:rlpDraw 9s linear infinite}
+.rl-pkg .pk-dot{fill:var(--red-3)}
+.rl-pkg .pk-lab{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;fill:var(--ink)}
+.rl-pkg .pk-end{animation:rlpEnd 9s linear infinite}
+@media(max-width:560px){.rl-pkg .stair .cap span+span{display:none}.rl-pkg .pk-name{font-size:14.5px;letter-spacing:.02em}.rl-pkg .pk-n{font-size:12px}.rl-pkg .pk-price{font-size:14px}.rl-pkg .pk-lab{font-size:14px}.rl-pkg .stair{padding:16px 12px 8px}}
+@keyframes rlpRise{0%{transform:scaleY(0);opacity:1}10%{transform:scaleY(1)}88%{transform:scaleY(1);opacity:1}96%{opacity:0}100%{transform:scaleY(0);opacity:0}}
+@keyframes rlpDraw{0%,22%{stroke-dashoffset:var(--L);opacity:1}55%{stroke-dashoffset:0}88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}
+@keyframes rlpEnd{0%,52%{opacity:0}58%,88%{opacity:1}96%,100%{opacity:0}}
 .rl-pkg .mx tbody th{padding:13px 16px;border-bottom:1px solid var(--line);text-align:left;font-weight:400;color:var(--ink-dim)}
 .rl-pkg a.cell{display:block;transition:.2s}.rl-pkg a.cell:hover{border-color:var(--red-line);background:var(--glass-2)}
 .rl-pkg .lede a,.rl-pkg .faq p a{color:var(--ink);border-bottom:1px solid var(--red-line)}
@@ -199,12 +229,18 @@ function rl_render_packages() {
 </ol></nav>
 
 <section class="hero">
-  <div class="wrap">
-    <span class="ey"><b>[</b>&nbsp;Packages&nbsp;<b>]</b></span>
-    <h1 class="h1">Three ways to build <span class="r">search authority.</span></h1>
-    <p class="lede center"><a href="<?php echo $u('search-authority-os'); ?>">Search Authority OS</a> comes in three packages — Foundation, Growth OS and Enterprise — from a focused foundation to a full enterprise intelligence engine. Every engagement starts with a diagnostic, so scope and price fit what you actually need, not a template.</p>
-    <div class="hero-cta"><a class="btn p" href="<?php echo $diag; ?>">Start with a diagnostic <span class="ar">&rarr;</span></a><a class="btn g" href="#plans">See the plans</a></div>
-    <p class="micro">Setup + monthly retainer · Pricing below is a starting framework, finalized to scope</p>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="ey"><b>[</b>&nbsp;Packages&nbsp;<b>]</b></span>
+      <h1 class="h1">Three ways to build <span class="r">search authority.</span></h1>
+      <p class="lede"><a href="<?php echo $u('search-authority-os'); ?>">Search Authority OS</a> comes in three packages — Foundation, Growth OS and Enterprise — from a focused foundation to a full enterprise intelligence engine. Every engagement starts with a diagnostic, so scope and price fit what you actually need, not a template.</p>
+      <div class="hero-cta"><a class="btn p" href="<?php echo $diag; ?>">Start with a diagnostic <span class="ar">&rarr;</span></a><a class="btn g" href="#plans">See the plans</a></div>
+      <p class="micro">Setup + monthly retainer · Pricing below is a starting framework, finalized to scope</p>
+    </div>
+    <figure class="stair rl-anim" role="img" aria-label="Three packages as a rising staircase — Foundation, Growth OS and Enterprise — each adding capabilities, with search authority compounding across them.">
+      <div class="cap" aria-hidden="true"><span>Scale path</span><span>Setup + monthly retainer</span></div>
+      <div aria-hidden="true"><svg viewBox="0 0 520 440" xmlns="http://www.w3.org/2000/svg" focusable="false"><line class="pk-grid" x1="40" y1="112" x2="490" y2="112"/><line class="pk-grid" x1="40" y1="192" x2="490" y2="192"/><line class="pk-grid" x1="40" y1="272" x2="490" y2="272"/><line class="pk-axis" x1="40" y1="352" x2="490" y2="352"/><g class="pk-b" style="--d:0s"><rect class="pk-blk" x="64" y="256" width="112" height="96"/><line class="pk-mod" x1="78" y1="338" x2="162" y2="338"/><line class="pk-mod" x1="78" y1="312" x2="148" y2="312"/><line class="pk-mod" x1="78" y1="286" x2="134" y2="286"/><rect class="pk-cap" x="64" y="256" width="112" height="3"/></g><text class="pk-n" x="64" y="376">01</text><text class="pk-name" x="86" y="376">FOUNDATION</text><text class="pk-price" x="64" y="394">$5k setup</text><g class="pk-b feat" style="--d:.55s"><rect class="pk-blk" x="204" y="176" width="112" height="176"/><line class="pk-mod" x1="218" y1="338" x2="302" y2="338"/><line class="pk-mod" x1="218" y1="312" x2="288" y2="312"/><line class="pk-mod" x1="218" y1="286" x2="274" y2="286"/><line class="pk-mod" x1="218" y1="260" x2="302" y2="260"/><line class="pk-mod" x1="218" y1="234" x2="288" y2="234"/><line class="pk-mod" x1="218" y1="208" x2="274" y2="208"/><rect class="pk-cap" x="204" y="176" width="112" height="3"/></g><text class="pk-n" x="204" y="376">02</text><text class="pk-name" x="226" y="376">GROWTH OS</text><text class="pk-price" x="204" y="394">$10k setup</text><g class="pk-b" style="--d:1.1s"><rect class="pk-blk" x="344" y="96" width="112" height="256"/><line class="pk-mod" x1="358" y1="338" x2="442" y2="338"/><line class="pk-mod" x1="358" y1="312" x2="428" y2="312"/><line class="pk-mod" x1="358" y1="286" x2="414" y2="286"/><line class="pk-mod" x1="358" y1="260" x2="442" y2="260"/><line class="pk-mod" x1="358" y1="234" x2="428" y2="234"/><line class="pk-mod" x1="358" y1="208" x2="414" y2="208"/><line class="pk-mod" x1="358" y1="182" x2="442" y2="182"/><line class="pk-mod" x1="358" y1="156" x2="428" y2="156"/><line class="pk-mod" x1="358" y1="130" x2="414" y2="130"/><rect class="pk-cap" x="344" y="96" width="112" height="3"/></g><text class="pk-n" x="344" y="376">03</text><text class="pk-name" x="366" y="376">ENTERPRISE</text><text class="pk-price" x="344" y="394">$20k+ setup</text><path class="pk-curve" d="M44.0,344.0 L55.0,342.8 L66.0,341.6 L77.0,340.3 L88.0,338.8 L99.0,337.3 L110.0,335.6 L121.0,333.8 L132.0,331.9 L143.0,329.8 L154.0,327.5 L165.0,325.1 L176.0,322.4 L187.0,319.6 L198.0,316.6 L209.0,313.3 L220.0,309.7 L231.0,305.9 L242.0,301.8 L253.0,297.3 L264.0,292.6 L275.0,287.4 L286.0,281.8 L297.0,275.8 L308.0,269.4 L319.0,262.4 L330.0,254.9 L341.0,246.8 L352.0,238.1 L363.0,228.7 L374.0,218.6 L385.0,207.7 L396.0,195.9 L407.0,183.2 L418.0,169.5 L429.0,154.8 L440.0,138.9 L451.0,121.8 L462.0,103.3 L473.0,83.4 L484.0,62.0" stroke-dasharray="552" style="--L:552"/><g class="pk-end"><rect x="478.0" y="56.0" width="12" height="12" class="pk-dot"/><text class="pk-lab" x="470.0" y="46.0" text-anchor="end">AUTHORITY COMPOUNDS</text></g></svg></div>
+    </figure>
   </div>
 </section>
 
