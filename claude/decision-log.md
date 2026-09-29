@@ -597,6 +597,35 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-059 — Lead Generation Systems page built on `.online` (page 102, published)
+**Date:** 29 September 2026 · **Status:** DONE (Jamil: "yes, go ahead with Lead Generation Systems")
+
+- **URL:** `/services/lead-generation-systems/` (D-023 new URL). Page 102: draft → publish, content `[reinforce_leadgen]`. Guarded create: file absent, page 102 empty draft under 68, `blog_public = 0`.
+- **Yoast:** title "B2B Lead Generation & PPC Management Services | Reinforce Lab"; meta "Lead generation systems that turn demand into qualified pipeline: channels, PPC, landing pages, qualification, routing and closed-loop CRM data that tells your ads which leads became revenue."
+- **Why this framing:** it is the D-023 301 target for `/services/ppc-management-services/` (6,576 imp, pos 85.3 — low equity), so it carries a full "What does our PPC management include?" section. Service `alternateName` = B2B lead generation / PPC management services / Google Ads management.
+- **File:** `wp/novamira-sandbox/reinforce-leadgen.php` on the shared kit (D-044). Live md5 = repo `5f3d00b5…`.
+- **Post-publish correction** (backup `.bak-20260929-192858`), because two lines weren't backed by fact or by a decision of Jamil's:
+  - "Four we still see in most accounts we audit" became "Four common habits" (no audit history to cite).
+  - FAQ "We don't charge per lead" became neutral: pricing is agreed after an audit, and media spend is reported separately. No pricing policy is set until Jamil decides one.
+- **Research:** `claude/research/lead-generation-research-2026-09-29.md`. Google Ads Help and Gartner were read directly; 6sense figures are not used because they could not be verified.
+- **Hero animation "Closed loop":**
+  - Search, paid ads, content and referrals flow into a landing page, then a form, then a "Fit?" check.
+  - Qualified leads go to sales, then a closed deal; the rest go to nurture.
+  - The closed deal is fed back as "conversion data → ad bidding", and Paid Ads lights up.
+  - Attract · convert · qualify · close the loop light in turn. 10 s loop, soft fade, reset.
+- **Sections:**
+  - answer-first lede;
+  - The system (6);
+  - How B2B buyers want to be found (Gartner 2025: 61% / 73% / 69%);
+  - PPC management (6);
+  - PPC myths (4, from Google Ads Help: Quality Score, landing page experience, offline conversions, EEA consent);
+  - Process (5); Deliverables (8); Measurement (6);
+  - Straight answer ("Cheap leads are expensive");
+  - 8 industry cards; 6 related; 6 FAQs; final CTA.
+- **Verified:** 1 H1 (three lines), 12 H2, 8 cards, kit loaded, no PHP errors, noindex, no `href="#"`, 390 px with no overflow; screenshots checked. Fingerprint tool now includes `lg`.
+
+---
+
 ## D-058 — Marketing Automation page built on `.online` (page 86, published)
 **Date:** 29 September 2026 · **Status:** DONE (Jamil: "yes, D-023 wins, then go ahead with Marketing Automation")
 
