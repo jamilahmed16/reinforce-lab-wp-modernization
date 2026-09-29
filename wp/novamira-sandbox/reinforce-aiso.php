@@ -201,6 +201,8 @@ body.rl-aiso-page .fl-page-content,body.rl-aiso-page .fl-content,body.rl-aiso-pa
 .rl-aiso .chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0}
 .rl-aiso .chips a,.rl-aiso .chips span{display:inline-block;border:1px solid var(--glass-line);background:var(--glass);padding:11px 15px;font-family:var(--f-display);text-transform:uppercase;font-size:14.5px;letter-spacing:.03em;transition:.2s}
 .rl-aiso .chips a:hover{border-color:var(--red-line);color:#fff}
+.rl-aiso .cell .more{margin-top:auto;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
+.rl-aiso a.cell:hover{background:var(--glass-2)}
 .rl-aiso .sub{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px}
 /* faq */
 .rl-aiso .faq details{border:1px solid var(--glass-line);background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);margin-bottom:12px;box-shadow:inset 0 1px 0 var(--glass-hi)}
@@ -355,22 +357,31 @@ function rl_render_aiso() {
   </div>
 </section>
 
-<section class="band alt" id="fit">
+<section class="band alt" id="who">
   <div class="wrap">
-    <div class="cols c2">
-      <div>
-        <p class="sub">Built for</p>
-        <ul class="chips"><?php echo $chip('industries/pharmaceutical', 'Pharmaceutical & Life Sciences') . $chip('industries/healthcare', 'Healthcare') . $chip('industries/b2b-saas', 'B2B SaaS') . $chip('industries/technology', 'Technology') . $chip('industries/professional-services', 'Professional Services') . $chip('industries/manufacturing', 'Manufacturing'); ?></ul>
-      </div>
-      <div>
-        <p class="sub">Works with</p>
-        <ul class="chips"><?php echo $chip('services/generative-engine-optimization', 'GEO') . $chip('services/llm-optimization', 'LLM Optimization') . $chip('services/technical-seo', 'Technical SEO') . $chip('services/seo-content-systems', 'SEO Content Systems') . $chip('services/press-release-services', 'Digital PR') . $chip('services/seo-ai-search-audit', 'SEO & AI Search Audit') . $chip('services/agents/aeo-geo-optimization', 'AEO/GEO Agent'); ?></ul>
-      </div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is AI Search Optimization for?</h2><p class="lede">Businesses whose buyers research before they buy — and industries where an AI getting the facts wrong carries real risk.</p></div>
+    <ul class="chips"><?php echo $chip('industries/pharmaceutical', 'Pharmaceutical & Life Sciences') . $chip('industries/healthcare', 'Healthcare') . $chip('industries/b2b-saas', 'B2B SaaS') . $chip('industries/technology', 'Technology') . $chip('industries/professional-services', 'Professional Services') . $chip('industries/manufacturing', 'Manufacturing'); ?></ul>
+  </div>
+</section>
+
+<section id="related">
+  <div class="wrap">
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with AI Search Optimization?</h2><p class="lede">AI Search Optimization is strongest when these pieces are in place. Add them as you need them.</p></div>
+    <div class="cols c3">
+      <?php foreach ([
+          ['services/generative-engine-optimization', 'Passage level', 'Generative Engine Optimization (GEO)', 'Structures your pages so generative engines extract and cite them.'],
+          ['services/llm-optimization', 'Entity level', 'LLM Optimization', 'Shapes how language models understand and describe your brand.'],
+          ['services/technical-seo', 'Foundation', 'Technical SEO', 'Makes sure search engines and AI crawlers can reach and read every page that matters.'],
+          ['services/seo-content-systems', 'Content', 'SEO Content Systems', 'Research-led, evidence-checked content that gives AI engines something worth citing.'],
+          ['services/seo-ai-search-audit', 'Starting point', 'SEO & AI Search Audit', 'A full review of your Google and AI-search performance with a prioritised fix list.'],
+          ['services/agents/aeo-geo-optimization', 'Always on', 'AEO/GEO Optimization Agent', 'The Search Authority OS agent that tracks where you appear in AI answers and structures pages to be cited.'],
+      ] as $r) { $l = $ex($r[0]); $in = '<span class="n">' . esc_html($r[1]) . '</span><h3>' . esc_html($r[2]) . '</h3><p>' . esc_html($r[3]) . '</p>';
+          echo $l ? '<a class="cell" href="' . $l . '">' . $in . '<span class="more">Explore &rarr;</span></a>' : '<div class="cell">' . $in . '</div>'; } ?>
     </div>
   </div>
 </section>
 
-<section class="faq" id="faq">
+<section class="faq band alt" id="faq">
   <div class="wrap" style="max-width:900px">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Questions&nbsp;<b>]</b></span><h2>About AI Search Optimization.</h2></div>
     <?php foreach (rl_aiso_faqs() as $k => $q) { ?>

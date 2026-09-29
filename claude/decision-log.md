@@ -651,6 +651,12 @@ Engine tabs (ChatGPT · Perplexity · Gemini · AI Overviews) step every 10 s on
 - No overflow at 1440/390; reduced motion static.
 - Preview fixes before deploy: the typed prompt was clipped, and the "Prompt" label crowded the tabs.
 
+**Revision (29 Sep, Jamil: "make two different section for these on this landing page"):** the combined "Built for / Works with" chip block was split into two sections.
+1. **"Who is AI Search Optimization for?"** — band section with a one-line qualifier and the 6 industry chips.
+2. **"What works with AI Search Optimization?"** — 6 cards, each with a role tag, name, one-line description and link: GEO (passage level), LLM Optimization (entity level), Technical SEO (foundation), SEO Content Systems (content), SEO & AI Search Audit (starting point), AEO/GEO Optimization Agent (always on).
+
+Digital PR was dropped from this list because it has no page yet; it is still covered in the "Authority" cause and step 05. The FAQ became a band section so backgrounds alternate. Backup `reinforce-aiso.php.bak-20260929-152727`; live md5 `53533432…` = repo. Verified: 1 H1, 10 H2, no PHP errors, no horizontal scroll after anchor clicks.
+
 ---
 
 ## D-040 — `/services/` hub built on `.online` (page 68, published)
