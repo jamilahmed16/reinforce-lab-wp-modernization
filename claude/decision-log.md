@@ -597,6 +597,52 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## O-016 — `/services/technical-seo-services/` (production): keep the URL, or 301 it? — DECISION NEEDED
+**Date:** 29 September 2026 · **Status:** OPEN — Jamil to decide · **Production untouched** (analysis used repo data only)
+
+Jamil asked how to keep the live .com page's SEO value and eventually rank in the top 5.
+
+**VERIFIED (repo data; GSC export 10 Sep 2026, 16 months, global):**
+- Page totals: **2 clicks, 27,457 impressions, avg position 51.5**; 12 internal links in. Crawl sheet: presumed indexed.
+- **No external backlinks recorded.** The page is not among the 13 pages in GSC "Top target pages" (the homepage holds ~93 % of external links — F-010). GSC link data is sampled, so the full backlink export (still blocking migration) should confirm.
+- Its queries:
+
+| Query | Impressions | Position | Clicks |
+|---|---|---|---|
+| "technical seo services" | 7,706 | 42.3 | 0 |
+| "technical seo service" | 7,132 | 49.8 | 0 |
+| "technical seo consultancy" | 2,403 | 77.9 | 0 |
+| "technical seo services company" | 1,389 | 32.0 | 0 |
+
+- **Conflict in our own records:**
+  - The page-level disposition sheet (10 Sep) marks it **"APPROVED: PRESERVE — rebuild to D-012 standard"**.
+  - D-023 (28 Sep) lists it as **301 → `/services/technical-seo/`**.
+  - Both cannot stand.
+
+**INFERENCE:** the value to protect is Google's 16-month association of this URL with the "technical seo services" query family (indexing history, impressions). It is not link equity (none recorded) or traffic (≈ 0). A 301 would pass signals, but a URL move usually brings a temporary fluctuation. Keeping the URL carries no risk at all.
+
+**RECOMMENDATION (for approval):** **Option B — keep the production URL** and publish the new Technical SEO page *at* `/services/technical-seo-services/`.
+- On `.online`: change page 99's slug from `technical-seo` to `technical-seo-services`, and remove that row from the D-023 redirect map.
+- Rationale: it honours the earlier PRESERVE approval, needs no redirect, and keeps the history intact. The "services" slug also mirrors the head query, though URL wording is a minor factor.
+- Option A (the 301 per D-023) remains acceptable: low risk, given no backlinks and ≈ 0 clicks.
+
+**Path to top 5 (RECOMMENDATION; no ranking can be guaranteed):**
+1. **Fix the domain first** — at migration: junk URLs, 19 % indexation, orphaned pages (F-001/F-003). A strong page on a weak domain stalls.
+2. **Page quality** — the new page, plus E-E-A-T: a named expert (Jamil), and real case studies with permission (awaiting Jamil).
+3. **Topic cluster** — 8–10 supporting articles, e.g. technical SEO checklist, Core Web Vitals, JavaScript SEO, robots.txt vs noindex, crawl budget, site migration, WordPress technical SEO, AI-crawler access. Rebuild the never-crawled `/what-is-technical-seo-and-why-is-it-important/` (already APPROVED: BUILD fresh). All link to the service page.
+4. **Internal links** — from home, the services hub, nav, related services and every cluster post, with descriptive anchors.
+5. **External authority** — currently zero to this page. Earn topical links through original research (e.g. an AI-crawler access study), a free technical checker, digital PR, and expert contributions.
+6. **Win closer queries first** — "technical seo services company" (pos 32), industry and platform variants (pharma, B2B SaaS, WordPress). Then climb the head term.
+7. **Measure** — monthly GSC position per query after launch.
+
+**Needs from Jamil:**
+- Choose A or B.
+- The live SERP top 10 for "technical seo services" (Semrush) for a gap analysis.
+- The backlink export.
+- Permission to use the F-001 story and any client results.
+
+---
+
 ## D-045 — Technical SEO page built on `.online` (page 99, published) — first page built on the shared kit
 **Date:** 29 September 2026 · **Status:** BUILT (Jamil: "yes, go ahead with Technical SEO")
 
