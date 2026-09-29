@@ -7,7 +7,7 @@ url,type,status,notes
 /services/seo-content-systems/,Service,APPROVED-NEW,D-019/D-023; = "Content Strategy" (kept slug)
 /services/marketing-automation/,Service,APPROVED-NEW,D-019 approved 27 Sep
 /services/ai-workflow-automation/,Service,APPROVED-NEW,D-023 (28 Sep) new capability
-/services/enterprise-seo-strategy/,Service,APPROVED-NEW,D-023; 301 target for off-page/link-building
+/services/enterprise-seo-strategy/,Service,APPROVED-NEW,D-023; off-page/link-building 301s moved to Digital PR (O-018 B)
 /services/technical-seo-services/,Service,APPROVED-PRESERVE,D-046: production URL kept (Jamil 29 Sep; was planned 301 to /services/technical-seo/ in D-023)
 /services/international-seo/,Service,APPROVED-NEW,D-023 (28 Sep) new capability
 /services/llm-optimization/,Service,APPROVED-NEW,D-023 (28 Sep) new capability
@@ -15,7 +15,7 @@ url,type,status,notes
 /services/executive-ai-consulting/,Service,APPROVED-NEW,D-023; 301 target for business-consultancy
 /services/local-seo/,Service,APPROVED-NEW,D-023; standalone (Jamil) — fresh build
 /services/best-search-engine-optimization-services/,Service (core SEO pillar),KEEP-EXISTING,D-023; keep slug — 420k impressions/16mo; SEO pillar
-/services/press-release-services/,Service (Digital PR),KEEP-EXISTING,D-023; rebuilt as Digital PR for GEO
+/services/press-release-services/,Service (Digital PR & link building),KEEP-EXISTING,D-023; rebuilt as Digital PR; 301 target for off-page/link-building (O-018 B)
 /services/wordpress-website-design-service/,Service (Web),KEEP-EXISTING,D-023; 259k impressions
 /services/ecommerce-website-design-service/,Service (Web),KEEP-EXISTING,D-023
 /services/website-maintenance-services/,Service (Web),KEEP-EXISTING,D-023; 258k impressions/60 clicks

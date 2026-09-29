@@ -597,6 +597,22 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-055 — Digital PR & Link Building page built on `.online` (page 189, published) — carries the off-page / link-building intent (O-018 B)
+**Date:** 29 September 2026 · **Status:** DONE (Jamil: "B, then go ahead with Digital PR")
+
+- **URL:** `/services/press-release-services/` — the production URL is **kept** (D-023, `APPROVED: PRESERVE — rebuild to D-012 standard`), so no redirect for this page. Its production slug stays; only the content is rebuilt on `.online`.
+- **New page 189** (no scaffold existed): guarded create checked the file was absent, no page at that path, parent 68 = `services`, `blog_public = 0`. Title "Digital PR & Link Building", parent 68, content `[reinforce_pr]`.
+- **Yoast:** title "Digital PR & Off-Page SEO Services | Reinforce Lab"; meta "Digital PR and link building that earns coverage, links and AI citations from relevant publications — original data, expert commentary, no bought links, within Google's link policies."
+- **Why this framing:** it is now the 301 target for `/services/off-page-seo-services/` and `/services/best-affordable-seo-link-building-services/` (O-018 B). Their queries — "off page seo services" 8,969 imp, "affordable seo link building services" 3,862 imp at pos 16.5, "affordable link building services", "off page seo company" — are answered in the H2 "What is off-page SEO, and where does link building fit?", the link-rules section, and the FAQ "Is affordable link building safe?". No prices or link counts are offered (none approved).
+- **File:** `wp/novamira-sandbox/reinforce-pr.php` on the shared kit (D-044). Live md5 = repo `533ef640…`.
+- **Research:** `claude/research/digital-pr-research-2026-09-29.md` — Exa agent run (8 agency pages, Google sources) plus the **Cision 2026 State of the Media PDF read directly**: 1,899 journalists, 19 markets; 79% relevance, 82% reject irrelevant pitches, 47% want more data, 66% rely on PR content, 53% reject promotional pitches, 97% prefer email, 64% one follow-up.
+- **Hero animation "Story to authority":** original-data bars build → pitches go to news site, trade press, industry blog and an AI answer → coverage lands with "LINK → YOUR SITE" (the AI answer shows "CITED: YOUR BRAND") → links flow to your site and its authority meter fills → pitch · coverage · links · citations light in turn. 10 s loop, soft fade, reset.
+- **Sections:** answer-first lede · Off-page SEO (links / coverage / citations) · What journalists want (6 Cision stats) · What we cover (9) · Link rules (5 myth/fact pairs from Google: bought links, sponsored/nofollow, press-release anchors, scaled guest posting, exact-match anchors) · Process (5) · Deliverables (8) · Measurement (6) · Straight answer ("Nobody honest can guarantee coverage") · 8 industry cards · 6 related · 6 FAQs · final CTA.
+- **Schema:** `Service` "Digital PR & Link Building" (alternateName Digital PR / Off-page SEO / Link building services) + `FAQPage` (6); breadcrumb Home › Services › Digital PR & Link Building.
+- **Verified:** 1 H1 (three lines), 12 H2, 8 cards, kit loaded, no PHP errors, noindex, no `href="#"`, 390 px no overflow; Services hub card now links to the page; section screenshots checked. Fingerprint tool now includes `pr`.
+
+---
+
 ## D-054 — Enterprise SEO Strategy page built on `.online` (page 98, published)
 **Date:** 29 September 2026 · **Status:** DONE (Jamil: "yes, go ahead with Enterprise SEO Strategy")
 
@@ -612,8 +628,10 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
-## O-018 — Legacy off-page / link-building URLs → `/services/enterprise-seo-strategy/`: intent mismatch — OPEN (Jamil to decide)
-**Date:** 29 September 2026 · **Status:** OPEN — production untouched; every URL below stays `PENDING — NO CHANGE AUTHORIZED` until Jamil decides.
+## O-018 — Legacy off-page / link-building URLs → `/services/enterprise-seo-strategy/`: intent mismatch — RESOLVED: Option B
+**Date:** 29 September 2026 · **Status:** RESOLVED 29 Sep 2026 (Jamil: "B, then go ahead with Digital PR")
+
+**Resolution:** both legacy URLs are `APPROVED: 301 → /services/press-release-services/` (Digital PR, rebuilt to carry the off-page / link-building intent). Also flattened: `/off-page-seo/` → `/services/press-release-services/` directly. Production's existing Yoast chains that end at the two legacy URLs (`…/link-building-seo-services`, `…/off-page-seo-services` variants, `redirect-map-2026-09.csv` rows 84, 85, 97) must be re-pointed to the new target at migration, so there are no multi-hop chains (F-015). Production untouched: the redirects happen only in the approved migration. Records updated: page-level disposition sheet rows 82, 162, 265; `approved-new-urls-2026-09.csv`; D-023 map.
 
 **Finding (VERIFIED, production GSC data, read-only):** D-023 maps two legacy production URLs to the enterprise page:
 - `/services/off-page-seo-services/` — 12 clicks, 47,499 impressions, avg position 40.8 (top query "off page seo services", 8,969 imp).
@@ -1557,8 +1575,8 @@ Reconciled the 12-item "What We Do" + legacy production services + earlier appro
 | Legacy (impressions) | 301 → |
 |---|---|
 | best-seo-content-writing-services (74,989) | /services/seo-content-systems/ |
-| off-page-seo-services (47,499) | /services/enterprise-seo-strategy/ |
-| best-affordable-seo-link-building-services (34,775) | /services/enterprise-seo-strategy/ |
+| off-page-seo-services (47,499) | ~~/services/enterprise-seo-strategy/~~ → /services/press-release-services/ (O-018 B) |
+| best-affordable-seo-link-building-services (34,775) | ~~/services/enterprise-seo-strategy/~~ → /services/press-release-services/ (O-018 B) |
 | ~~technical-seo-services (27,457)~~ | ~~/services/technical-seo/~~ **SUPERSEDED by D-046: URL kept, no redirect** |
 | email-marketing-services (19,339) | /services/marketing-automation/ |
 | best-website-copywriting-services (18,729) | /services/seo-content-systems/ |
