@@ -597,6 +597,48 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-058 — Marketing Automation page built on `.online` (page 86, published)
+**Date:** 29 September 2026 · **Status:** DONE (Jamil: "yes, D-023 wins, then go ahead with Marketing Automation")
+
+- **URL:** `/services/marketing-automation/` (approved new URL, 27 Sep 2026). Page 86: draft → publish, content `[reinforce_automation]`. Guarded create: file absent, page 86 empty draft under 68, `blog_public = 0`.
+- **Yoast:** title "Marketing Automation & Email Marketing Services | Reinforce Lab"; meta "Marketing automation that follows up every lead: nurture emails, lead scoring, CRM workflows and sales handoff, built on your platform, compliant with Gmail, CAN-SPAM and PECR rules."
+- **Why this framing:** under D-023 it is the 301 target for the email-marketing page (19,316 imp) and the two social-media pages. It therefore covers email marketing campaigns (Service `alternateName`) and social publishing workflows as part of automation.
+- **File:** `wp/novamira-sandbox/reinforce-automation.php` on the shared kit (D-044). Live md5 = repo `0a4f9775…`.
+- **Research:** `claude/research/marketing-automation-research-2026-09-29.md`. Gmail, FTC, ICO and Litmus pages were read directly.
+- **Hero animation "Nurture to handoff":**
+  - A form fill triggers a guide email and a "Clicked?" branch.
+  - YES leads get a case study and their lead score rises past the MQL line; NO leads wait for a new angle.
+  - Sales is alerted and a CRM deal is created.
+  - Trigger · nurture · score · handoff light in turn. 10 s loop, soft fade, reset.
+- **Sections:**
+  - answer-first lede;
+  - What it covers (9);
+  - **Email rules** — 5 myth/fact pairs from Gmail, FTC and ICO, marked "Not legal advice";
+  - Process (5); Deliverables (8);
+  - Measurement — why not open rates (Litmus: MPP 55% of opens, March 2024);
+  - Straight answer ("Automation makes bad follow-up faster");
+  - 8 industry cards; 6 related; 6 FAQs; final CTA.
+- **Not claimed:** no platform partnerships, prices, results or ROI multiples. The platform is "the one you already have".
+- **Verified:** 1 H1 (three lines), 10 H2, 8 cards, kit loaded, no PHP errors, noindex, no `href="#"`, 390 px with no overflow; screenshots checked. Fingerprint tool now includes `ma`.
+
+---
+
+## F-021 — Built pages link to unpublished draft pages (`?page_id=N`) — launch QA item
+**Date:** 29 September 2026 · **Status:** OPEN (no change made)
+
+**Finding (VERIFIED):**
+- `rl_url_by_path()` (`reinforce-header.php:180`) returns `get_permalink()` for any page found by path, including drafts. So links to unbuilt services render as `https://reinforcelab.online/?page_id=97` and similar, which 404 for visitors.
+- On the built pages, most such links come from the **Primary menu**. It was intentionally wired to drafts during the build (D-024): ids 71, 75, 77–84, 87, 90–97, 102, 103.
+- Some are **body links**, such as the related cards to Lead Gen (102), AI Workflow Automation (97) and Executive AI Consulting (103).
+
+**Impact:** none while `.online` is noindex and in build. At launch these would be broken internal links.
+
+**RECOMMENDATION (for Jamil, later):**
+1. Add to the launch QA gate: "no link to a non-published page". It is checked by crawling for `?page_id=`.
+2. Optionally make `rl_url_by_path()` return the fallback for non-published pages. The card code already renders a plain, unlinked card when the URL is empty. This is a one-line change in the shared header, so it affects every page and needs a regression pass.
+
+---
+
 ## D-057 — SEO Content Systems page built on `.online` (page 85, published)
 **Date:** 29 September 2026 · **Status:** DONE (Jamil: "B, then go ahead with SEO Content Systems")
 
