@@ -597,6 +597,53 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-043 — LLM Optimization page built on `.online` (page 101, published)
+**Date:** 29 September 2026 · **Status:** BUILT (Jamil: "yes, go ahead with LLM Optimization and for you use exa ai when deep research required")
+
+`/services/llm-optimization/` — a new slug from D-023, scaffolded 28 Sep; not a production URL. New sandbox file `wp/novamira-sandbox/reinforce-llm.php` provides `[reinforce_llm]`. Page **101** was set to the shortcode and **published**; the publish was guarded (page empty, parent 68, `blog_public=0`).
+- Yoast title: "LLM Optimization Services | Reinforce Lab".
+- Meta: "LLM Optimization from Reinforce Lab: make ChatGPT, Claude, Gemini and Perplexity describe your brand correctly — consistent facts, the right AI-crawler policy, tested answers."
+
+**Working rule (Jamil):** use **Exa AI** (agent_run) for deep research. The first run was `agent_run_4142235cd7904b8d964846322dcf2433`. Findings are saved in `claude/research/llm-optimization-research-2026-09-29.md`.
+- **Competitors:** 7 LLM-optimization pages (Proven ROI, UPLIFY, Zebora, Lureon, XLR8 AI, indexLLM.me, PrometixAI). Common gaps: measurement ambiguity, and no separation of training crawlers vs search crawlers.
+- **Primary-source facts VERIFIED:**
+  - llms.txt (Jeremy Howard, 3 Sep 2024; a proposal only);
+  - crawler purposes documented by OpenAI (GPTBot / OAI-SearchBot / ChatGPT-User), Anthropic (ClaudeBot / Claude-SearchBot / Claude-User) and Perplexity (PerplexityBot / Perplexity-User);
+  - Google-Extended does not affect Search inclusion or ranking;
+  - models have a training cutoff plus live retrieval (OpenAI help, Anthropic model docs, Google grounding docs).
+- **UNVERIFIED and deliberately not claimed:** that Wikidata is required by, or directly boosts, LLMs.
+
+**Positioning in the trio:** AISO = the program. GEO = pages and passages. **LLM Optimization = the brand as an entity** — how models describe you, and why they get it wrong.
+
+**Structure:**
+- Hero, with a 3-line H1: "Make AI describe / your brand / correctly."
+- "How does an AI model know about your brand?" — 2 routes (training memory vs live lookup), each with its fix, quoting OpenAI and Google.
+- **"Which AI crawlers should you allow?"** — a 9-row table of company, user agent, purpose and a source link, dated "checked 29 September 2026". This is the page's differentiator.
+- "Why do AI models get brands wrong?" — 6 causes, including name confusion (cf. F-018).
+- 5-step process, 8 deliverables and 5 measures.
+- Honesty panel: "Nobody can edit an AI model for you".
+- "Who it's for" and "Related services" as separate sections.
+- 6 FAQs and the final CTA.
+
+**Schema:** `Service` plus `FAQPage`; Yoast adds the breadcrumb.
+
+**Hero animation "Entity alignment" (D-039 Step 3), 10 s loop:**
+1. Six sources describing the brand (website, schema, profiles, directories, reviews, press) start scattered and inconsistent (≠).
+2. One by one they glide into place, connect to "Your brand · one entity" and turn consistent (=).
+3. The entity glows and a pulse reaches the "Model answer" panel ("Who is your brand?"), whose lines write in.
+4. "Consistent · correct · current" lights.
+5. The nodes glide back to scattered and the loop resets.
+
+**Deploy and verification:**
+- Created new; live md5 `1066b5a4…` = repo.
+- HTTP 200, 1 H1 (3 lines), 11 H2, noindex, no PHP errors, no `#` links; 9 crawler rows.
+- No overflow at 1440/390 (table scrolls inside its own box on mobile); reduced motion static.
+- HTML 147.5 KB — **close to the 150 KB budget (§2)**. The duplicated per-page CSS is the main weight, which strengthens the case for the CSS consolidation item.
+
+**Open for Jamil:** our **own** AI-crawler policy for reinforcelab.com and .online (what to allow or block per crawler). The page now explains the trade-off; the site itself has not chosen.
+
+---
+
 ## D-042 — GEO page built on `.online` (page 73, published)
 **Date:** 29 September 2026 · **Status:** BUILT (Jamil: "yes, go ahead with GEO")
 
