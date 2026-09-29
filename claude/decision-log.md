@@ -597,6 +597,51 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-042 — GEO page built on `.online` (page 73, published)
+**Date:** 29 September 2026 · **Status:** BUILT (Jamil: "yes, go ahead with GEO")
+
+`/services/generative-engine-optimization/` — **APPROVED — NEW URL (D-006)**. New sandbox file `wp/novamira-sandbox/reinforce-geo.php` provides `[reinforce_geo]`. Page **73** was set to the shortcode and **published**; the publish was guarded (page empty, parent 68, `blog_public=0`).
+- Yoast title: "GEO Services: Generative Engine Optimization | Reinforce Lab" (60).
+- Meta: "Generative Engine Optimization from Reinforce Lab: pages structured, sourced and written so ChatGPT, Perplexity, Gemini and AI Overviews can quote and cite them."
+- The shared layout CSS was copied from the AISO page (scoped `.rl-geo`); CSS consolidation is still an open item.
+
+**Positioning vs AISO (no duplication):** AISO is the umbrella program (access, entity, authority, measurement). GEO is the **content / passage layer**: how engines choose what to cite, and how pages are written to be extracted and cited. The two pages cross-link, and each FAQ explains the difference.
+
+**External facts used (VERIFIED at source, 29 Sep):**
+1. **GEO paper:** Aggarwal et al., "GEO: Generative Engine Optimization", ACM SIGKDD 2024 (Princeton University, IIT Delhi), arXiv 2311.09735. The abstract states GEO "can boost visibility by up to 40% in generative engine responses" and that efficacy "varies across domains". The page cites it with a link.
+   - The line "citations, quotations and statistics among the strongest methods; keyword stuffing was not" reflects the paper's method comparison (INFERENCE from the paper body; not in the abstract). **Jamil may want to re-check this wording.**
+2. **Query fan-out:** Google's own blog (blog.google, "Expanding AI Overviews and introducing AI Mode", Mar 2025) says AI Mode "uses a 'query fan-out' technique, issuing multiple related searches concurrently…".
+
+No Reinforce Lab metrics or results are claimed.
+
+**Structure:**
+- Hero, with a 3-line H1: "Write pages / AI engines / quote and cite."
+- "How do generative engines choose what to cite?" — 4 steps (fan-out, retrieve, extract, cite) plus the research box.
+- "What does a citable passage look like?" — before/after example.
+- "What makes a page worth citing?" — 6-point checklist.
+- "How does a GEO engagement run?" — 5 steps.
+- "What you get" — 8 deliverables.
+- "How do we measure GEO?" — 5 measures.
+- "We don't game AI engines" — no hidden text, no planted instructions, no fake reviews, no mass pages.
+- "Who is GEO for?" and "What works with GEO?" as **two separate sections**, per Jamil's AISO revision.
+- 6 FAQs and the final CTA.
+
+**Schema:** `Service` (alternateName GEO) plus `FAQPage`; Yoast adds the breadcrumb (Home › Services › Generative Engine Optimization).
+
+**Hero animation "Fan-out to citation" (D-039 Step 3), 10 s loop:**
+1. A buyer question fans out into 3 related searches.
+2. Retrieval pulses reach "Your page".
+3. Three passages are highlighted, lift across into the generated answer and are each cited [1].
+4. "Retrieved · extracted · cited" lights.
+5. Soft fade and reset.
+
+**Deploy and verification:**
+- Created new; live md5 `6f74b4e8…` = repo.
+- HTTP 200, 1 H1 (3 lines), 11 H2, noindex, no PHP errors, no `#` links. HTML 141 KB (under budget).
+- No overflow at 1440/390; reduced motion static.
+
+---
+
 ## D-041 — AI Search Optimization page built on `.online` (page 72, published)
 **Date:** 29 September 2026 · **Status:** BUILT (Jamil: "yes, go ahead with AI Search Optimization")
 
