@@ -103,6 +103,10 @@ body.rl-mopen #rl-mobile{transform:none;visibility:visible}
 @media(max-width:1150px){.rl-header .mainnav,.rl-header .hcta{display:none}.rl-header .burger{display:flex}}
 /* hide default theme footer (we render our own) */
 .fl-page-footer-wrap,.fl-page-footer,.fl-builder-content-primary+.fl-page-footer-wrap{display:none!important}
+/* shared hero-animation system (D-039): .rl-anim wraps each page's hero SVG; paused off-screen by JS; static for reduced motion */
+.rl-anim svg{display:block;width:100%;height:auto;overflow:visible}
+.rl-anim.is-paused,.rl-anim.is-paused *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.rl-anim,.rl-anim *{animation:none!important;transition:none!important}}
 /* skip link: visually hidden until keyboard focus (a11y) */
 .fl-screen-reader-text{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
 body a.fl-screen-reader-text:focus{clip:auto;width:auto;height:auto;overflow:visible;top:12px;left:12px;z-index:100000;padding:12px 18px;background:var(--bg)!important;color:var(--ink)!important;border:1px solid var(--red-2)!important;box-shadow:0 0 24px -6px var(--red-glow)!important;outline:none;font-family:var(--f-display)!important;text-transform:uppercase;letter-spacing:.05em;font-size:14px!important;text-decoration:none}
@@ -401,6 +405,9 @@ function rl_header_js() { ?>
   }
   function kick(){if(!raf){raf=true;requestAnimationFrame(apply);}}
   if(!reduce&&(grid||glow)){addEventListener('scroll',function(){sy=scrollY||0;kick();},{passive:true});addEventListener('mousemove',function(e){tmx=e.clientX/innerWidth;tmy=e.clientY/innerHeight;cx=e.clientX;cy=e.clientY;if(glow)glow.style.opacity=1;kick();},{passive:true});addEventListener('mouseleave',function(){if(glow)glow.style.opacity=0;});apply();}
+  // pause hero animations when off-screen (D-039)
+  var an=document.querySelectorAll('.rl-anim');
+  if(an.length&&'IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('is-paused',!e.isIntersecting);});},{rootMargin:'80px'});an.forEach(function(el){io.observe(el);});}
   var b=document.getElementById('rl-burger');
   if(b){b.addEventListener('click',function(){var o=document.body.classList.toggle('rl-mopen');b.setAttribute('aria-expanded',o?'true':'false');});}
   var mob=document.getElementById('rl-mobile');

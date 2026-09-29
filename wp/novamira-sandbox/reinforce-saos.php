@@ -182,6 +182,31 @@ body.rl-saos-page .fl-page-content,body.rl-saos-page .fl-content,body.rl-saos-pa
 /* mobile fixes (design preview defects): eyebrow wraps as units; vertical flow line stays 2px (inline width:100% overrode it) */
 .rl-saos .ey{flex-wrap:wrap;row-gap:.2em}
 @media(max-width:520px){.rl-saos .flow{width:2px!important}}
+/* hero visual: Authority loop (D-039) — unique to SAOS; Home keeps the engine */
+.rl-saos .loop{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 22px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
+.rl-saos .loop .cap{display:flex;justify-content:space-between;gap:12px}
+.rl-saos .loop .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-saos .lp-ring{fill:none;stroke:var(--line-2);stroke-width:1}
+.rl-saos .lp-ring2{fill:none;stroke:var(--line-2);stroke-width:1;stroke-dasharray:2 7;opacity:.7;transform-origin:260px 222px;animation:rlsSpin 60s linear infinite reverse}
+.rl-saos .lp-comet{animation:rlsSpin 10s linear infinite}
+.rl-saos .lp-tail{fill:none;stroke:var(--red-2);stroke-width:2}
+.rl-saos .lp-head{fill:var(--red-3);filter:drop-shadow(0 0 6px rgba(226,59,59,.9))}
+.rl-saos .lp-sq{fill:var(--bg);stroke:var(--line-2)}
+.rl-saos .lp-lit,.rl-saos .lp-halo,.rl-saos .lp-lab-on{opacity:0;animation:rlsLit 10s linear infinite;animation-delay:var(--d)}
+.rl-saos .lp-lit{fill:rgba(193,20,20,.45);stroke:var(--red-3)}
+.rl-saos .lp-halo{fill:none;stroke:var(--red-line)}
+.rl-saos .lp-lab{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;fill:var(--ink-dim)}
+.rl-saos .lp-lab-on{fill:#fff}
+.rl-saos .lp-sub{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.04em;fill:var(--ink-faint)}
+.rl-saos .lp-core{fill:rgba(153,0,0,.10);stroke:var(--red)}
+.rl-saos .lp-core-t{font-family:var(--f-display);font-size:15px;letter-spacing:.05em;fill:var(--ink);font-weight:600}
+.rl-saos .lp-core-s{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.16em;fill:var(--ink-faint)}
+.rl-saos .lp-axis{stroke:var(--line-2)}
+.rl-saos .lp-auth{fill:none;stroke:var(--red-3);stroke-width:2;stroke-dashoffset:0;animation:rlsAuth 10s linear infinite}
+@media(max-width:560px){.rl-saos .lp-sub,.rl-saos .loop .cap span+span{display:none}.rl-saos .lp-lab{font-size:17px;letter-spacing:.06em}.rl-saos .lp-core-t{font-size:17px}.rl-saos .loop{padding:16px 12px 8px}}
+@keyframes rlsSpin{to{transform:rotate(360deg)}}
+@keyframes rlsLit{0%{opacity:0}3%{opacity:1}14%{opacity:1}22%{opacity:0}100%{opacity:0}}
+@keyframes rlsAuth{0%{stroke-dashoffset:var(--L)}92%,100%{stroke-dashoffset:0}}
 </style>
 <?php }
 
@@ -258,30 +283,10 @@ function rl_render_saos() {
       </div>
       <p class="microtrust">Built for <b>Pharma &amp; Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services (incl. Finance) · Education</b><br>Search Intelligence &nbsp;+&nbsp; Evidence &nbsp;+&nbsp; Content &nbsp;+&nbsp; AI Search &nbsp;+&nbsp; Continuous Optimization</p>
     </div>
-    <div class="engine" role="img" aria-label="Search Authority OS engine: inputs (search and SERP data, web and competitor research, customer and social signals, domain evidence, AI-search visibility) flow through research, verify, write, audit and monitor to outputs (content that ranks, content AI engines cite, evidence-backed claims, recovered rankings, a 7-day authority report).">
-      <div class="cap" aria-hidden="true"><span>Inputs</span><span>Engine</span><span>Output</span></div>
-      <div class="diagram" aria-hidden="true">
-        <div class="col">
-          <div class="node">Search &amp; SERP data</div>
-          <div class="node">Web &amp; competitor research</div>
-          <div class="node">Customer &amp; social signals</div>
-          <div class="node">Domain evidence</div>
-          <div class="node">AI-search visibility</div>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:center;gap:12px">
-          <div class="flow" style="width:100%"></div>
-          <div class="core"><b>Search Authority OS</b><small>RESEARCH · VERIFY · WRITE · AUDIT · MONITOR</small></div>
-          <div class="flow" style="width:100%"></div>
-        </div>
-        <div class="col">
-          <div class="node">Content that ranks</div>
-          <div class="node">Content AI engines cite</div>
-          <div class="node">Evidence-backed claims</div>
-          <div class="node">Recovered rankings</div>
-          <div class="node">7-day authority report</div>
-        </div>
-      </div>
-    </div>
+    <figure class="loop rl-anim" role="img" aria-label="Search Authority OS runs as one continuous loop — research, verify, write, audit and monitor — and search authority rises with every lap.">
+      <div class="cap" aria-hidden="true"><span>The loop</span><span>Continuous · self-improving</span></div>
+      <div aria-hidden="true"><svg viewBox="-44 0 608 452" xmlns="http://www.w3.org/2000/svg" focusable="false"><circle class="lp-ring" cx="260" cy="222" r="150"/><circle class="lp-ring2" cx="260" cy="222" r="118"/><g class="lp-comet" style="transform-origin:260px 222px"><circle class="lp-tail" cx="260" cy="222" r="150" stroke-dasharray="74 942.5" transform="rotate(-118.3 260 222)"/><circle class="lp-head" cx="260" cy="72" r="5"/></g><g class="lp-node" style="--d:0s"><rect class="lp-sq" x="252.0" y="64.0" width="16" height="16"/><rect class="lp-lit" x="252.0" y="64.0" width="16" height="16"/><rect class="lp-halo" x="243.0" y="55.0" width="34" height="34"/><text class="lp-lab" x="260.0" y="26.0" text-anchor="middle">01 RESEARCH</text><text class="lp-lab lp-lab-on" x="260.0" y="26.0" text-anchor="middle">01 RESEARCH</text><text class="lp-sub" x="260.0" y="40.0" text-anchor="middle">demand · rivals · voice</text></g><g class="lp-node" style="--d:2s"><rect class="lp-sq" x="394.7" y="167.6" width="16" height="16"/><rect class="lp-lit" x="394.7" y="167.6" width="16" height="16"/><rect class="lp-halo" x="385.7" y="158.6" width="34" height="34"/><text class="lp-lab" x="431.2" y="166.4" text-anchor="start">02 VERIFY</text><text class="lp-lab lp-lab-on" x="431.2" y="166.4" text-anchor="start">02 VERIFY</text><text class="lp-sub" x="431.2" y="180.4" text-anchor="start">source · confidence</text></g><g class="lp-node" style="--d:4s"><rect class="lp-sq" x="340.2" y="335.4" width="16" height="16"/><rect class="lp-lit" x="340.2" y="335.4" width="16" height="16"/><rect class="lp-halo" x="331.2" y="326.4" width="34" height="34"/><text class="lp-lab" x="365.8" y="377.6" text-anchor="start">03 WRITE</text><text class="lp-lab lp-lab-on" x="365.8" y="377.6" text-anchor="start">03 WRITE</text><text class="lp-sub" x="365.8" y="391.6" text-anchor="start">built for AI answers</text></g><g class="lp-node" style="--d:6s"><rect class="lp-sq" x="163.8" y="335.4" width="16" height="16"/><rect class="lp-lit" x="163.8" y="335.4" width="16" height="16"/><rect class="lp-halo" x="154.8" y="326.4" width="34" height="34"/><text class="lp-lab" x="154.2" y="377.6" text-anchor="end">04 AUDIT</text><text class="lp-lab lp-lab-on" x="154.2" y="377.6" text-anchor="end">04 AUDIT</text><text class="lp-sub" x="154.2" y="391.6" text-anchor="end">SEO · AEO · GEO gates</text></g><g class="lp-node" style="--d:8s"><rect class="lp-sq" x="109.3" y="167.6" width="16" height="16"/><rect class="lp-lit" x="109.3" y="167.6" width="16" height="16"/><rect class="lp-halo" x="100.3" y="158.6" width="34" height="34"/><text class="lp-lab" x="88.8" y="166.4" text-anchor="end">05 MONITOR</text><text class="lp-lab lp-lab-on" x="88.8" y="166.4" text-anchor="end">05 MONITOR</text><text class="lp-sub" x="88.8" y="180.4" text-anchor="end">GSC · GA4 · AI visibility</text></g><rect class="lp-core" x="172.0" y="166.0" width="176" height="112"/><text class="lp-core-t" x="260" y="196" text-anchor="middle">SEARCH AUTHORITY OS</text><line class="lp-axis" x1="192" y1="257" x2="328" y2="257"/><polyline class="lp-auth" points="192.0,256.0 198.8,256.0 204.2,247.0 219.2,247.0 226.0,247.0 231.4,238.0 246.4,238.0 253.2,238.0 258.6,229.0 273.6,229.0 280.4,229.0 285.8,220.0 300.8,220.0 307.6,220.0 313.0,211.0 328.0,211.0" style="--L:161" stroke-dasharray="161"/><text class="lp-core-s" x="260" y="214" text-anchor="middle">AUTHORITY ↑ EVERY LAP</text></svg></div>
+    </figure>
   </div>
 </section>
 

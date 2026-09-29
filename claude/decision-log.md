@@ -602,6 +602,9 @@ AI Growth Systems  (umbrella / positioning)
 
 Based on `claude/research/competitor-and-hero-analysis-2026-09-29.md`. Jamil approved all three steps: **Step 1** fix Packages alignment, remove the Agents hero chips, build a shared animation system + a unique hero animation for the 5 live pages (Home and SAOS currently share the same engine visual — must differ); **Step 2** upgrade live-page content with what competitors publish and we don't (needs Jamil's facts — never invented); **Step 3** every new page ships with its own hero animation. Rules: one hero pattern (copy left, visual right; visual below CTAs on mobile); SVG + CSS only, transform/opacity, `prefers-reduced-motion` = static, paused off-screen, no layout shift, aria-described; excluded: legal, About, Blog, Contact.
 
+**Progress:**
+- ✅ **1/5 — Shared animation system + SAOS "Authority loop" (29 Sep).** `reinforce-header.php`: `.rl-anim` wrapper CSS (pause class, reduced-motion = static) + IntersectionObserver that pauses hero animations off-screen (live md5 `1aaef308…`). `reinforce-saos.php`: engine diagram (shared with Home) **replaced** by the Authority loop — 5-node ring Research → Verify → Write → Audit → Monitor, a pulse travels the ring (10 s lap), each stage lights as it passes, the "authority" step-line rises each lap; inline SVG ~3.4 KB, `role="img"` + aria-label; mobile hides sub-labels and enlarges stage labels (live md5 `93c7330b…` = repo). Verified: animates (frames at 0 / 2.6 / 5.2 s), reduced motion → `animation: none`, no horizontal overflow 1440/390, no new JS errors. Deploy note: large payloads now go through `novamira run … --input @file` (command-line limit hit once; nothing was written that time).
+
 ---
 
 ## D-038 — Agents hub `/services/agents/` (page 76) — BUILT & LIVE on `.online`
