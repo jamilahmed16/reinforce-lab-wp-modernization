@@ -597,6 +597,19 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-037 — Packages & Pricing page `/packages/` (page 66) — BUILT & LIVE on `.online`
+**Date:** 29 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified · Approved by Jamil (build order 29 Sep)
+
+Built from `claude/design-previews/packages.html` as sandbox file `reinforce-packages.php` (repo = live, md5 `9163be2c…`), shortcode `[reinforce_packages]`; page 66 content set and **published**. Pricing page only — **no cart / self-checkout** (D-017 packages decision).
+- **Sections:** breadcrumb → hero (answer-first: "Search Authority OS comes in three packages…", links SAOS) → 3 plans (Foundation $5,000 + $1,500–$2,500/mo · Growth OS $10,000 + $3,500–$5,000/mo · Enterprise $20k–$35k+ + $7,500–$15,000+/mo; full feature lists) → compare matrix (12 rows) → à la carte agents (A-01/03/04/08 linked + "See all 8 agents" → `/services/agents/`) → how it works (4) → FAQ (5) → final CTA → Diagnostic. All plan CTAs → `/search-authority-diagnostic/`.
+- **Fixes vs mock-up:** "before you spend a **rupee**" → "before you commit to a retainer" (pricing is USD); H1→H3 jump fixed with a screen-reader H2; matrix row labels `<th scope=row>` + caption + "Included/Not included" text for ✓/—; dead `#` links wired; mobile overflow (absolute `.sr` labels escaping the table scroller → `.mx-scroll{position:relative}`).
+- **Yoast:** title `Search Authority OS Packages & Pricing | Reinforce Lab` (54), meta (151).
+- **Schema:** Yoast WebPage + BreadcrumbList (Home > Packages) + Organization, plus **Service "Search Authority OS" with OfferCatalog** (3 Offers, USD PriceSpecification: 5000 / 10000 / min 20000 — setup fee; retainer in description) + **FAQPage (5)**.
+- **Verified live:** HTTP 200 · 1 H1 · noindex · no PHP errors · no horizontal overflow at 1440/390.
+- **Confirm (Jamil):** FAQ "Is there a contract?" states "You own everything produced" (from the approved mock-up) — confirm this is your policy. **Migration note:** legacy `/product/` SEO tiers 301 → `/packages/` (D-017).
+
+---
+
 ## D-036 — Search Authority Diagnostic page `/search-authority-diagnostic/` (page 65) — BUILT & LIVE on `.online`
 **Date:** 28–29 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified · Approved by Jamil ("Custom form + webhook and others as recommended .. go ahead")
 
