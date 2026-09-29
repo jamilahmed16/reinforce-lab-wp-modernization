@@ -597,6 +597,34 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-049 — Hero CTA buttons kept on one line (all pages)
+**Date:** 29 September 2026 · **Status:** DONE (Jamil, with a screenshot of the International SEO hero: "Keep the buttons in one line")
+
+**Measured first** (buttons' top offsets in the hero `.cta-row`, 10 pages × 1440 / 1280 / 1024 px):
+- International SEO wrapped at every width. Its primary label, "Check your international setup — free diagnostic", was 453 px in a 647 px column.
+- AISO, GEO, LLM and Technical SEO wrapped at 1280 and 1024. Services, Agents and SAOS wrapped at 1024.
+- Home and Packages were already fine.
+
+**Change:**
+1. **One consistent primary label on every hero:** "Get your free diagnostic →" (270 px). It matches the header CTA ("Get Your Diagnostic") and replaces 8 long, page-specific labels, e.g. "See which pages AI can cite — free diagnostic". The page-specific intent stays in the lede and the secondary button. Pages: services, aiso, geo, llm, techseo, intl, agents, saos (hero only; final CTAs unchanged).
+2. **International SEO secondary button:** "Choosing a structure" → "Site structures".
+3. **Tablet tightening:** on kit pages and Agents, from 941 to 1180 px, hero CTA gap 14 → 10 px and button side padding 26 → 18 px. This clears the last ~16 px at 1024 px.
+
+**Result:** all 10 pages keep both hero buttons on one line at 1440, 1280 and 1024 px. On phones (single-column layout) the buttons still stack, which is the intended mobile pattern.
+
+**Deploy:** backups `.bak-20260929-173421` (8 page files) and `.bak-20260929-173516` (kit + agents). Live md5s = repo:
+- services 70b79d7a…
+- aiso cc3b546e…
+- geo 25f6ef69…
+- llm b1168684…
+- techseo d1598d28…
+- intl b880ef98…
+- saos e5888c87…
+- agents 9acca64f…
+- kit 5736eca8…
+
+---
+
 ## D-048 — International SEO page built on `.online` (page 100, published)
 **Date:** 29 September 2026 · **Status:** BUILT (Jamil: "…then go straight on to International SEO")
 

@@ -223,7 +223,7 @@ function rl_render_llm() {
       <h1 class="h1">Make AI describe<br>your brand<br><span class="r">correctly.</span></h1>
       <p class="lede"><strong>LLM Optimization</strong> shapes how large language models — the AI behind ChatGPT, Claude, Gemini and Perplexity — understand, describe and recommend your brand. Reinforce Lab makes your brand facts consistent everywhere models learn from and look things up, then tests what the models actually say.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">See how AI describes you — free diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#crawlers">AI crawler guide</a>
       </div>
     </div>

@@ -199,7 +199,7 @@ function rl_render_techseo() {
       <h1 class="h1">Fix what stops<br>search engines<br><span class="r">and AI crawlers.</span></h1>
       <p class="lede"><strong>Technical SEO</strong> makes sure search engines and AI crawlers can crawl, render, understand and index the pages that matter — quickly, without errors and without wasting effort on junk URLs. Reinforce Lab finds the root causes, fixes them, and re-crawls to prove the fix worked.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Find your technical blockers — free diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#check">What we check</a>
       </div>
     </div>

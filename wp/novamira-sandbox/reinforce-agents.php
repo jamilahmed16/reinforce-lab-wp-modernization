@@ -67,6 +67,7 @@ body.rl-agents-page .fl-page-content,body.rl-agents-page .fl-content,body.rl-age
 .rl-agents .btn.g::before{color:var(--ink-faint)}.rl-agents .btn.g:hover{border-color:var(--red-line);color:#fff}
 .rl-agents .ar{transition:transform .2s}.rl-agents .btn:hover .ar{transform:translateX(4px)}
 .rl-agents .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+@media(min-width:941px) and (max-width:1180px){.rl-agents .hero .cta-row{gap:10px}.rl-agents .hero .cta-row .btn{padding-left:18px;padding-right:18px}} /* D-049 */
 /* hero */
 .rl-agents .hero{padding-block:clamp(36px,6vw,80px)}
 .rl-agents .h1{font-size:clamp(34px,5.1vw,64px);font-weight:700;letter-spacing:-.01em;margin-top:14px;max-width:18ch}
@@ -197,7 +198,7 @@ function rl_render_agents() {
     <h1 class="h1">Start with one agent. <span class="r">Scale into the full OS.</span></h1>
     <p class="lede"><strong>Search Authority OS agents</strong> are eight specialised AI agents from Reinforce Lab, each built to deliver one search outcome — from knowing what to rank for to recovering lost rankings. Run one on its own, or combine them into the full <a href="<?php echo $u('search-authority-os'); ?>">Search Authority OS</a>.</p>
     <div class="cta-row">
-      <a class="btn p" href="<?php echo $diag; ?>">Find the right agent — free diagnostic <span class="ar">&rarr;</span></a>
+      <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
       <a class="btn g" href="#agents">See the 8 agents</a>
     </div>
     </div>

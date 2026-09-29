@@ -203,7 +203,7 @@ function rl_render_geo() {
       <h1 class="h1">Write pages<br>AI engines<br><span class="r">quote and cite.</span></h1>
       <p class="lede"><strong>Generative Engine Optimization (GEO)</strong> structures and writes your content so AI search engines — ChatGPT, Perplexity, Gemini and Google AI Overviews — can retrieve it, extract a clear passage and cite your page in the answer. Reinforce Lab does GEO passage by passage, backed by evidence, and measures citations prompt by prompt.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">See which pages AI can cite — free diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#toolkit">What we optimize</a>
       </div>
     </div>

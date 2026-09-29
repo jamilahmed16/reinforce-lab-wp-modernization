@@ -124,3 +124,5 @@
 .rl-page .myth .f .tag{color:var(--red-3)}
 .rl-page .myth p{font-size:15px}.rl-page .myth .f p{color:var(--ink)}
 .rl-page .myth a{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--red-3)}
+/* hero CTAs stay on one line on small laptops/tablets (D-049) */
+@media(min-width:941px) and (max-width:1180px){.rl-page .hero .cta-row{gap:10px}.rl-page .hero .cta-row .btn{padding-left:18px;padding-right:18px}}

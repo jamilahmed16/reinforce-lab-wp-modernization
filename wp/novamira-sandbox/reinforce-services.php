@@ -252,7 +252,7 @@ function rl_render_services() {
       <h1 class="h1">Every service.<br>One connected<br><span class="r">growth system.</span></h1>
       <p class="lede"><strong>Reinforce Lab services</strong> cover search engine optimization, AI search optimization, content systems, marketing automation, lead generation and executive AI consulting — engineered to work together as one <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>, not as separate retainers.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Find where to start — free diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#all">See all services</a>
       </div>
     </div>

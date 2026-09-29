@@ -190,7 +190,7 @@ function rl_render_aiso() {
       <h1 class="h1">Be found in Google.<br>Be named in<br><span class="r">AI answers.</span></h1>
       <p class="lede"><strong>AI Search Optimization (AISO)</strong> makes your brand visible, accurately described and recommended when buyers ask ChatGPT, Perplexity, Gemini or Google AI Overviews about your category. Reinforce Lab runs it as one program with your SEO — measured engine by engine, on the questions your buyers actually ask.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Check your AI visibility — free diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#how">See how it works</a>
       </div>
     </div>

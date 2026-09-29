@@ -280,7 +280,7 @@ function rl_render_saos() {
       <h1 class="h1">Stop publishing content.<br>Start building<br><span class="r">search authority.</span></h1>
       <p class="lede"><strong>Search Authority OS</strong> is an AI-powered operating system from Reinforce Lab that continuously researches your market, verifies every claim against real evidence, produces high-value content, and monitors your visibility across Google <em>and</em> AI search — then improves itself over time.</p>
       <div class="hero-cta">
-        <a class="btn p" href="<?php echo $diag; ?>">Get Your Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#system">See the system</a>
       </div>
       <p class="microtrust">Built for <b>Pharma &amp; Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services (incl. Finance) · Education</b><br>Search Intelligence &nbsp;+&nbsp; Evidence &nbsp;+&nbsp; Content &nbsp;+&nbsp; AI Search &nbsp;+&nbsp; Continuous Optimization</p>
