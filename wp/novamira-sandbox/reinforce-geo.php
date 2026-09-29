@@ -76,46 +76,14 @@ function rl_geo_kf() {
 
 /* ---------- CSS (only on this page) ---------- */
 add_filter('body_class', function ($c) { if (rl_is_geo()) $c[] = 'rl-geo-page'; return $c; });
+add_filter('rl_kit_active', function ($on) { return $on || rl_is_geo(); });
 add_action('wp_head', 'rl_geo_css', 22);
 function rl_geo_css() {
     if (!rl_is_geo()) return; ?>
 <style id="rl-geo-css">
-.rl-geo{position:relative;width:100vw;margin-left:calc(50% - 50vw);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6}
+/* shared rules live in reinforce-kit.css (D-044) */
 body.rl-geo-page .fl-page-content,body.rl-geo-page .fl-content,body.rl-geo-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
-.rl-geo *{box-sizing:border-box}
-.rl-geo a{text-decoration:none;color:inherit}
-.rl-geo p{margin:0}
-.rl-geo h1,.rl-geo h2,.rl-geo h3,.rl-geo h4{font-family:var(--f-display);font-weight:600;text-transform:uppercase;margin:0;line-height:1.02;letter-spacing:.01em;text-wrap:balance;color:var(--ink)}
-.rl-geo .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
-.rl-geo section{position:relative;padding-block:clamp(56px,8vw,96px)}
-.rl-geo .band{border-top:1px solid var(--line)}
-.rl-geo .band.alt{background:radial-gradient(90% 60% at 15% 0%,rgba(153,0,0,.10),transparent 55%),var(--bg-2)}
-.rl-geo :focus-visible{outline:2px solid var(--red-2);outline-offset:3px}
-.rl-geo .ey{font-family:var(--f-mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);display:inline-flex;flex-wrap:wrap;row-gap:.2em;gap:.5em;align-items:center}
-.rl-geo .ey b{color:var(--red-2);font-weight:500}
-.rl-geo .lede{color:var(--ink-dim);font-size:clamp(16px,1.6vw,19px);max-width:62ch}
-.rl-geo .lede a,.rl-geo .faq p a,.rl-geo .inl{color:var(--ink);border-bottom:1px solid var(--red-line)}.rl-geo .lede a:hover,.rl-geo .faq p a:hover,.rl-geo .inl:hover{color:var(--red-3)}
-.rl-geo .head{max-width:64ch;margin-bottom:clamp(32px,5vw,52px)}
-.rl-geo .head h2{font-size:clamp(28px,4.2vw,48px);margin-top:14px}.rl-geo .head p{margin-top:18px}
-.rl-geo .crumbs{padding-top:clamp(18px,2.4vw,28px);font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
-.rl-geo .crumbs ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.6em}
-.rl-geo .crumbs li+li::before{content:"/";color:var(--red-2);margin-right:.6em}
-.rl-geo .crumbs a:hover{color:var(--ink)}.rl-geo .crumbs [aria-current]{color:var(--ink-dim)}
-.rl-geo .btn{font-family:var(--f-display);text-transform:uppercase;font-weight:600;letter-spacing:.05em;font-size:14px;padding:15px 26px;display:inline-flex;align-items:center;gap:.55em;border:1px solid transparent;cursor:pointer;transition:.2s;position:relative}
-.rl-geo .btn::before{content:"+";font-family:var(--f-mono);font-weight:500;color:var(--red-3);font-size:1.15em;line-height:0}
-.rl-geo .btn.p{background:linear-gradient(180deg,#241a1c,#120e0f);color:#fff;border-color:var(--red-line);box-shadow:14px 0 44px -14px var(--red-glow),inset 0 1px 0 var(--glass-hi)}
-.rl-geo .btn.p:hover{border-color:var(--red-2);transform:translateY(-1px)}
-.rl-geo .btn.g{background:var(--glass);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--ink);border-color:var(--glass-line)}
-.rl-geo .btn.g::before{color:var(--ink-faint)}.rl-geo .btn.g:hover{border-color:var(--red-line);color:#fff}
-.rl-geo .ar{transition:transform .2s}.rl-geo .btn:hover .ar{transform:translateX(4px)}
-.rl-geo .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
 /* hero */
-.rl-geo .hero{padding-block:clamp(36px,6vw,80px)}
-.rl-geo .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(28px,4vw,56px);align-items:center}
-@media(max-width:940px){.rl-geo .hero-grid{grid-template-columns:1fr;gap:34px}}
-.rl-geo .h1{font-size:clamp(34px,5.1vw,64px);font-weight:700;letter-spacing:-.01em;margin-top:14px}
-.rl-geo .h1 .r{color:var(--red-2)}
-.rl-geo .hero .lede{margin-top:18px}
 /* hero visual: fan-out to citation */
 .rl-geo .fan{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-geo .fan .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
@@ -123,19 +91,23 @@ body.rl-geo-page .fl-page-content,body.rl-geo-page .fl-content,body.rl-geo-page 
 .rl-geo .fan svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-geo .g-box,.rl-geo .g-pill,.rl-geo .g-doc,.rl-geo .g-ans{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
 .rl-geo .g-boxon,.rl-geo .g-pillon,.rl-geo .g-docon{fill:rgba(153,0,0,.08);stroke:var(--red-2);stroke-width:1;opacity:0}
-.rl-geo .g-boxon{animation-name:rlgBox}.rl-geo .g-docon{fill:none;animation-name:rlgDoc}
+.rl-geo .g-boxon{animation-name:rlgBox}
+.rl-geo .g-docon{fill:none;animation-name:rlgDoc}
 .rl-geo .g-ansglow{fill:none;stroke:var(--red-2);stroke-width:1;opacity:0;animation-name:rlgAns}
 .rl-geo .g-qt{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.08em;fill:var(--ink)}
 .rl-geo .g-st{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.12em;fill:var(--ink-dim)}
 .rl-geo .g-lab{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.2em;fill:var(--ink-faint)}
 .rl-geo .g-rule{stroke:var(--line-2);stroke-width:1}
-.rl-geo .g-h{fill:rgba(255,255,255,.22)}.rl-geo .g-b{fill:rgba(255,255,255,.10)}.rl-geo .g-ah{fill:rgba(255,255,255,.30)}
+.rl-geo .g-h{fill:rgba(255,255,255,.22)}
+.rl-geo .g-b{fill:rgba(255,255,255,.10)}
+.rl-geo .g-ah{fill:rgba(255,255,255,.30)}
 .rl-geo .g-e{fill:none;stroke:var(--line-2);stroke-width:1}
 .rl-geo .g-p{fill:none;stroke:var(--red-3);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:10 100;stroke-dashoffset:10;opacity:0}
 .rl-geo .g-hi{fill:rgba(153,0,0,.10);stroke:var(--red-2);stroke-width:1;opacity:0}
 .rl-geo .g-fly{fill:rgba(153,0,0,.18);stroke:var(--red-3);stroke-width:1;opacity:0}
 .rl-geo .g-seg,.rl-geo .g-chip{opacity:0}
-.rl-geo .g-chip rect{fill:var(--red-2)}.rl-geo .g-chip text{font-family:var(--f-mono);font-size:8.5px;fill:#fff}
+.rl-geo .g-chip rect{fill:var(--red-2)}
+.rl-geo .g-chip text{font-family:var(--f-mono);font-size:8.5px;fill:#fff}
 .rl-geo .g-cap{font-family:var(--f-mono);font-size:9px;letter-spacing:.2em;fill:var(--ink-faint)}
 .rl-geo .g-capon{fill:var(--ink);opacity:0;animation-name:rlgCap}
 .rl-geo .g-boxon,.rl-geo .g-pillon,.rl-geo .g-docon,.rl-geo .g-ansglow,.rl-geo .g-p,.rl-geo .g-hi,.rl-geo .g-fly,.rl-geo .g-seg,.rl-geo .g-chip,.rl-geo .g-capon{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
@@ -161,71 +133,18 @@ body.rl-geo-page .fl-page-content,body.rl-geo-page .fl-content,body.rl-geo-page 
 .rl-geo .research .src{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;color:var(--ink-faint)}
 .rl-geo .research a{color:var(--ink);border-bottom:1px solid var(--red-line)}
 .rl-geo .flow4{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:f}
-@media(max-width:900px){.rl-geo .flow4{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.rl-geo .flow4{grid-template-columns:1fr}}
+@media(max-width:900px){.rl-geo .flow4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.rl-geo .flow4{grid-template-columns:1fr}}
 .rl-geo .flow4 li{border:1px solid var(--glass-line);background:var(--glass);padding:22px;counter-increment:f;box-shadow:inset 0 1px 0 var(--glass-hi)}
 .rl-geo .flow4 li::before{content:counter(f,decimal-leading-zero);font-family:var(--f-mono);font-size:11.5px;color:var(--red-3);letter-spacing:.1em}
 .rl-geo .flow4 h3{font-size:16px;margin:8px 0}
 .rl-geo .flow4 p{color:var(--ink-dim);font-size:14px}
 /* comparison table */
-.rl-geo .tscroll{overflow-x:auto;position:relative;border:1px solid var(--glass-line);background:var(--glass)}
-.rl-geo table{width:100%;border-collapse:collapse;min-width:760px;font-size:14.5px}
-.rl-geo th,.rl-geo td{padding:16px 18px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
-.rl-geo thead th{font-family:var(--f-display);text-transform:uppercase;font-weight:600;font-size:15px;letter-spacing:.03em;color:var(--ink);background:rgba(255,255,255,.02)}
-.rl-geo thead th.us{color:var(--red-3);background:rgba(153,0,0,.10)}
-.rl-geo tbody th{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;width:15%}
-.rl-geo td{color:var(--ink-dim)}.rl-geo td.us{color:var(--ink);background:rgba(153,0,0,.06)}
-.rl-geo tbody tr:last-child th,.rl-geo tbody tr:last-child td{border-bottom:0}
-.rl-geo td a{color:var(--red-3);font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
 /* cards */
-.rl-geo .cols{display:grid;gap:16px}
-.rl-geo .c3{grid-template-columns:repeat(3,1fr)}.rl-geo .c2{grid-template-columns:repeat(2,1fr)}
-@media(max-width:900px){.rl-geo .c3{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.rl-geo .c3,.rl-geo .c2{grid-template-columns:1fr}}
-.rl-geo .cell{background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--glass-line);padding:24px;box-shadow:inset 0 1px 0 var(--glass-hi);transition:.2s;display:flex;flex-direction:column;gap:10px}
-.rl-geo .cell:hover{border-color:var(--red-line)}
-.rl-geo .cell .n{font-family:var(--f-mono);font-size:11.5px;color:var(--red-3);letter-spacing:.1em;text-transform:uppercase}
-.rl-geo .cell h3{font-size:18px}
-.rl-geo .cell p{color:var(--ink-dim);font-size:14.5px}
-.rl-geo .cell .fix{font-size:14px;color:var(--ink);border-top:1px solid var(--line);padding-top:10px;margin-top:auto}
-.rl-geo .cell .fix b{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;color:var(--red-3);font-weight:500;text-transform:uppercase;margin-right:6px}
 /* steps */
-.rl-geo .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
-@media(max-width:1000px){.rl-geo .steps{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.rl-geo .steps{grid-template-columns:1fr}}
-.rl-geo .step{background:var(--glass);border:1px solid var(--glass-line);padding:22px;box-shadow:inset 0 1px 0 var(--glass-hi)}
-.rl-geo .step .k{font-family:var(--f-display);font-size:30px;color:var(--red-2);font-weight:700;opacity:.85}
-.rl-geo .step h3{font-size:16px;margin:6px 0 8px}
-.rl-geo .step p{color:var(--ink-dim);font-size:14px}
 /* lists */
-.rl-geo .ticks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media(max-width:700px){.rl-geo .ticks{grid-template-columns:1fr}}
-.rl-geo .ticks li{border:1px solid var(--glass-line);background:var(--glass);padding:16px 18px 16px 42px;position:relative;color:var(--ink-dim);font-size:15px;box-shadow:inset 0 1px 0 var(--glass-hi)}
-.rl-geo .ticks li::before{content:"→";position:absolute;left:18px;top:16px;color:var(--red-3);font-family:var(--f-mono)}
-.rl-geo .ticks b{color:var(--ink);font-weight:600}
-.rl-geo .metric{border-left:2px solid var(--red-2);padding:4px 0 4px 18px}
-.rl-geo .metric h3{font-size:17px}.rl-geo .metric p{color:var(--ink-dim);font-size:14.5px;margin-top:6px}
-.rl-geo .honest{border:1px solid var(--red-line);background:linear-gradient(180deg,rgba(153,0,0,.10),var(--glass));padding:clamp(24px,4vw,40px);box-shadow:inset 0 1px 0 var(--glass-hi)}
-.rl-geo .honest h2{font-size:clamp(24px,3.2vw,36px)}
-.rl-geo .honest p{color:var(--ink-dim);margin-top:14px;max-width:75ch}
-.rl-geo .chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0}
-.rl-geo .chips a,.rl-geo .chips span{display:inline-block;border:1px solid var(--glass-line);background:var(--glass);padding:11px 15px;font-family:var(--f-display);text-transform:uppercase;font-size:14.5px;letter-spacing:.03em;transition:.2s}
-.rl-geo .chips a:hover{border-color:var(--red-line);color:#fff}
-.rl-geo .cell .more{margin-top:auto;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
-.rl-geo a.cell:hover{background:var(--glass-2)}
-.rl-geo .sub{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px}
 /* faq */
-.rl-geo .faq details{border:1px solid var(--glass-line);background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);margin-bottom:12px;box-shadow:inset 0 1px 0 var(--glass-hi)}
-.rl-geo .faq summary{cursor:pointer;padding:20px 24px;font-family:var(--f-display);text-transform:uppercase;font-size:16px;letter-spacing:.02em;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
-.rl-geo .faq summary::-webkit-details-marker{display:none}
-.rl-geo .faq summary::after{content:"+";color:var(--red-2);font-family:var(--f-mono);font-size:20px}
-.rl-geo .faq details[open] summary::after{content:"–"}
-.rl-geo .faq p{padding:0 24px 22px;color:var(--ink-dim);font-size:15px;max-width:75ch}
 /* final */
-.rl-geo .final{position:relative;overflow:hidden;border:1px solid var(--red-line);background:#0b090a;padding:clamp(48px,7vw,92px) clamp(24px,5vw,64px);text-align:center;box-shadow:inset 0 1px 0 var(--glass-hi),0 0 130px -46px var(--red-glow)}
-.rl-geo .final::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(58% 96% at 50% 128%,rgba(226,59,59,.6),rgba(153,0,0,.28) 38%,transparent 70%),linear-gradient(180deg,transparent 40%,rgba(153,0,0,.10))}
-.rl-geo .final::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(102deg,#0b090a 0%,rgba(11,9,10,.55) 28%,transparent 47%),linear-gradient(258deg,#0b090a 0%,rgba(11,9,10,.55) 28%,transparent 47%)}
-.rl-geo .final>*{position:relative;z-index:2}
-.rl-geo .final h2{font-size:clamp(30px,5vw,56px);margin-top:14px}
-.rl-geo .final .lede{margin:20px auto 0}
-.rl-geo .final .cta-row{justify-content:center}
 </style>
 <?php }
 
@@ -254,7 +173,7 @@ function rl_render_geo() {
     $chip = function ($path, $label) use ($ex) { $l = $ex($path); return '<li>' . ($l ? '<a href="' . $l . '">' . esc_html($label) . '</a>' : '<span>' . esc_html($label) . '</span>') . '</li>'; };
     $diag = $u('search-authority-diagnostic');
     ob_start(); ?>
-<div class="rl-geo">
+<div class="rl-page rl-geo">
 
 <nav class="crumbs wrap" aria-label="Breadcrumb"><ol>
   <li><a href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
