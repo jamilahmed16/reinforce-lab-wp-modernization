@@ -49,7 +49,7 @@ function rl_intl_svg() {
     $s .= '<g class="i-globe"><circle cx="260" cy="170" r="88"/><ellipse cx="260" cy="170" rx="88" ry="30"/><line x1="182" y1="128" x2="338" y2="128"/><line x1="182" y1="212" x2="338" y2="212"/>'
         . '<ellipse class="i-mer" cx="260" cy="170" rx="34" ry="88"/><ellipse class="i-mer i-mer2" cx="260" cy="170" rx="66" ry="88"/><line x1="260" y1="82" x2="260" y2="258"/></g>';
     $arcs = ['M322 34 Q430 34 430 152', 'M430 188 Q430 306 322 306', 'M198 306 Q90 306 90 188', 'M90 152 Q90 34 198 34', 'M260 52 V288', 'M368 170 H152'];
-    foreach ($arcs as $i => $d) $s .= '<path class="i-e" d="' . $d . '"/><path class="i-a i-a' . $i . '" pathLength="100" d="' . $d . '"/>';
+    foreach ($arcs as $i => $d) $s .= '<path class="i-e" d="' . $d . '"/><path class="i-a i-a' . $i . ($i > 3 ? ' i-x' : '') . '" pathLength="100" d="' . $d . '"/>' . ($i < 4 ? '<path class="i-sh i-sh' . $i . '" pathLength="100" d="' . $d . '"/>' : '');
     $srv = ['M260 170 V52', 'M260 170 H368', 'M260 170 V288', 'M260 170 H152'];
     foreach ($srv as $i => $d) $s .= '<path class="i-p i-p' . $i . '" pathLength="100" d="' . $d . '"/>';
     $s .= '<rect class="i-core" x="236" y="158" width="48" height="24"/><text class="i-ct" x="260" y="174" text-anchor="middle">SEARCH</text>';
@@ -73,6 +73,7 @@ function rl_intl_kf() {
     for ($i = 0; $i < 4; $i++) $k .= $lit("rliL$i", $first[$i], $first[$i] + 2) . ".rl-intl .i-l$i{animation-name:rliL$i}\n";
     $k .= $win('rliTag', 8, 36) . ".rl-intl .i-tag0{animation-name:rliTag}\n";
     for ($i = 0; $i < 4; $i++) { $s = 42 + $i * 7; $k .= $pul("rliP$i", $s, $s + 6) . $lit("rliOk$i", $s + 5, $s + 7) . ".rl-intl .i-p$i{animation-name:rliP$i}.rl-intl .i-ok$i{animation-name:rliOk$i}\n"; }
+    for ($i = 0; $i < 4; $i++) { $s = 36 + $i * 1.5; $k .= "@keyframes rliSh$i{0%,{$s}%{stroke-dashoffset:6;opacity:0}" . ($s + .5) . "%{opacity:.85}" . ($s + 3.5) . "%{opacity:.85}" . ($s + 4) . "%,100%{stroke-dashoffset:-100;opacity:0}}\n.rl-intl .i-sh$i{animation-name:rliSh$i}\n"; }
     $k .= $lit('rliCap', 72, 76);
     return $k;
 }
@@ -89,24 +90,26 @@ body.rl-intl-page .fl-page-content,body.rl-intl-page .fl-content,body.rl-intl-pa
 .rl-intl .mkt .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
 .rl-intl .mkt .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-intl .mkt svg{display:block;width:100%;height:auto;overflow:visible}
-.rl-intl .i-globe circle,.rl-intl .i-globe ellipse,.rl-intl .i-globe line{fill:none;stroke:rgba(243,237,230,.10);stroke-width:1}
+.rl-intl .i-globe circle,.rl-intl .i-globe ellipse,.rl-intl .i-globe line{fill:none;stroke:rgba(243,237,230,.08);stroke-width:.8}
 .rl-intl .i-mer{transform-box:fill-box;transform-origin:50% 50%;animation:rliTurn 12s linear infinite}
 .rl-intl .i-mer2{animation-delay:-6s}
 @keyframes rliTurn{0%{transform:scaleX(1)}50%{transform:scaleX(-1)}100%{transform:scaleX(1)}}
-.rl-intl .i-e{fill:none;stroke:var(--line-2);stroke-width:1;stroke-dasharray:3 4}
-.rl-intl .i-a{fill:none;stroke:var(--red-2);stroke-width:1.2;stroke-dasharray:100;stroke-dashoffset:100}
-.rl-intl .i-p{fill:none;stroke:var(--red-3);stroke-width:1.8;stroke-linecap:round;stroke-dasharray:10 100;stroke-dashoffset:10;opacity:0}
-.rl-intl .i-core{fill:var(--bg);stroke:var(--red-line);stroke-width:1}
+.rl-intl .i-e{fill:none;stroke:rgba(243,237,230,.07);stroke-width:.8;stroke-dasharray:2 4}
+.rl-intl .i-a{fill:none;stroke:rgba(226,59,59,.55);stroke-width:.8;stroke-linecap:round;stroke-dasharray:100;stroke-dashoffset:100}
+.rl-intl .i-a.i-x{stroke:rgba(226,59,59,.28);stroke-width:.6}
+.rl-intl .i-sh{fill:none;stroke:#fff;stroke-width:1;stroke-linecap:round;stroke-dasharray:6 100;stroke-dashoffset:6;opacity:0}
+.rl-intl .i-p{fill:none;stroke:var(--red-3);stroke-width:1.3;stroke-linecap:round;stroke-dasharray:8 100;stroke-dashoffset:8;opacity:0}
+.rl-intl .i-core{fill:var(--bg);stroke:rgba(226,59,59,.35);stroke-width:.8}
 .rl-intl .i-ct{font-family:var(--f-mono);font-size:8px;letter-spacing:.14em;fill:var(--ink-dim)}
-.rl-intl .i-n{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
-.rl-intl .i-lit{fill:rgba(153,0,0,.08);stroke:var(--red-2);stroke-width:1;opacity:0}
+.rl-intl .i-n{fill:var(--bg);stroke:rgba(243,237,230,.12);stroke-width:.8}
+.rl-intl .i-lit{fill:rgba(153,0,0,.07);stroke:rgba(226,59,59,.6);stroke-width:.8;opacity:0}
 .rl-intl .i-code{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.12em;fill:var(--red-3)}
 .rl-intl .i-url{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.06em;fill:var(--ink-dim)}
 .rl-intl .i-ok{fill:var(--red-2);opacity:0}
 .rl-intl .i-tag{font-family:var(--f-mono);font-size:8px;letter-spacing:.14em;fill:var(--ink-faint);opacity:0}
 .rl-intl .i-cap{font-family:var(--f-mono);font-size:9px;letter-spacing:.18em;fill:var(--ink-faint)}
 .rl-intl .i-capon{fill:var(--ink);opacity:0;animation-name:rliCap}
-.rl-intl .i-a,.rl-intl .i-p,.rl-intl .i-lit,.rl-intl .i-ok,.rl-intl .i-tag,.rl-intl .i-capon{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
+.rl-intl .i-a,.rl-intl .i-sh,.rl-intl .i-p,.rl-intl .i-lit,.rl-intl .i-ok,.rl-intl .i-tag,.rl-intl .i-capon{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
 .rl-intl .i-p{animation-timing-function:ease-in-out}
 @media(max-width:560px){.rl-intl .i-code,.rl-intl .i-url{font-size:11px;letter-spacing:.02em}.rl-intl .i-cap{font-size:10.5px;letter-spacing:.04em}.rl-intl .i-tag{font-size:9.5px;letter-spacing:.02em}.rl-intl .mkt .cap span+span{display:none}.rl-intl .mkt{padding:16px 10px 10px}}
 <?php echo rl_intl_kf(); ?>

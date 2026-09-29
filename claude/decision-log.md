@@ -597,6 +597,27 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-052 — International SEO lines refined; legacy local post approved for 301 (O-017 → A)
+**Date:** 29 September 2026 · **Status:** DONE (Jamil: "Make the lines sleek then option A")
+
+**1. International SEO hero — lines made sleek** (screenshot feedback: the completed hreflang network looked heavy):
+- ring arcs 1.2 px solid red → **0.8 px, soft red (55 % opacity), round caps**;
+- the two cross links (N–S, E–W) → **0.6 px at 28 % opacity**, so they read as secondary;
+- base dashed guides → 0.8 px, very faint;
+- node borders and lit states → 0.8 px, softer red;
+- centre box stroke softened; serve pulses 1.8 → 1.3 px; globe lines fainter;
+- **new:** a thin white highlight travels once around the four ring arcs after they draw (36–42 % of the loop).
+
+Deploy backup `.bak-20260929-180003`; live md5 `fbe80d30…` = repo. The change is scoped to `rl_intl_css()`. Fingerprint: two fresh runs are identical (0). Differences against the older snapshot come only from the D-049 button labels. New baseline saved.
+
+**2. O-017 resolved — Option A.** Production `/best-local-search-engine-optimization-service/` (95,538 impressions / 0 clicks, root-level "best-" post) will **301 → `/services/local-seo/`** at migration cutover.
+- It already matches `redirect-map-2026-09.csv` row 15 (single-hop).
+- The disposition sheet row was updated from "APPROVED (HOLD)" to "APPROVED: 301 → /services/local-seo/ (O-017 Option A)".
+- Its `/feed/` stays 410.
+- **Production is untouched until the approved migration** (Rule 2 satisfied: Jamil approved this specific URL).
+
+---
+
 ## D-051 — SEO & AI Search Audit page built on `.online` (page 74, published)
 **Date:** 29 September 2026 · **Status:** BUILT (Jamil: "…then SEO & AI Search Audit")
 
@@ -698,8 +719,8 @@ The page currently says "Quoted after scoping" and "the price and delivery date 
 
 ---
 
-## O-017 — Legacy `/best-local-search-engine-optimization-service/` (production): 301 to `/services/local-seo/`, or keep the URL? — DECISION NEEDED
-**Date:** 29 September 2026 · **Status:** OPEN — Jamil to decide · production untouched
+## O-017 — Legacy `/best-local-search-engine-optimization-service/` (production): 301 to `/services/local-seo/`, or keep the URL? — RESOLVED: Option A (301)
+**Date:** 29 September 2026 · **Status:** RESOLVED 29 Sep — Jamil: "…then option A" · production untouched until the approved migration
 
 **VERIFIED (repo data):**
 - The production post has 95,538 impressions (GSC Pages export) / 102,060 (crawl sheet), **0 clicks**, average position ≈ 60, **0 internal and 0 external links**, and is presumed indexed.
