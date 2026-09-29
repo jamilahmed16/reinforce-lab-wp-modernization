@@ -6,6 +6,91 @@
  */
 if (!defined('ABSPATH')) exit;
 
+/* ---------- Hero animation: Growth engine (D-039, Home) ----------
+   Inputs pulse into the core; the core runs its five stages; outcomes light in turn; a
+   return pulse feeds outcomes back into inputs. 10 s loop, soft fade 92–97 %, reset.
+   Transform/opacity/stroke-dashoffset only; keyframes generated per element. */
+function rl_home_ge_data() {
+    return [
+        'in'  => [['Search &', 'SERP data'], ['Content &', 'website'], ['Competitor', 'research'], ['Customer &', 'social signals'], ['AI-search', 'visibility']],
+        'out' => [['Automated', 'operations'], ['Content', 'that ranks'], ['Cited in', 'AI search'], ['Qualified', 'pipeline'], ['Increased', 'revenue']],
+        'st'  => ['Research', 'Verify', 'Build', 'Automate', 'Monitor'],
+    ];
+}
+function rl_home_ge_kf() {
+    $lit = function ($n, $s, $r, $f1 = 92, $f2 = 97) { return "@keyframes $n{0%,{$s}%{opacity:0}{$r}%,{$f1}%{opacity:1}{$f2}%,100%{opacity:0}}\n"; };
+    $pul = function ($n, $s, $e) { return "@keyframes $n{0%,{$s}%{stroke-dashoffset:10;opacity:0}" . ($s + 1) . "%{opacity:1}" . ($e - 1) . "%{opacity:1}{$e}%,100%{stroke-dashoffset:-100;opacity:0}}\n"; };
+    $k = '';
+    for ($i = 0; $i < 5; $i++) {
+        $s = $i * 3;
+        $k .= $lit("rlgI$i", $s, $s + 3) . $pul("rlgPI$i", $s + 2, $s + 14);
+        $k .= ".rl-home .ge-i$i .ge-nl{animation-name:rlgI$i}.rl-home .ge-pi$i{animation-name:rlgPI$i}\n";
+        $o = 58 + $i * 2.5;
+        $k .= $pul("rlgPO$i", $o, $o + 12) . $lit("rlgO$i", $o + 10, $o + 13);
+        $k .= ".rl-home .ge-po$i{animation-name:rlgPO$i}.rl-home .ge-o$i .ge-nl{animation-name:rlgO$i}\n";
+        $t = 22 + $i * 7;
+        $k .= $lit("rlgS$i", $t, $t + 2);
+        $k .= $i < 4 ? "@keyframes rlgT$i{0%,{$t}%{opacity:0}" . ($t + 2) . "%," . ($t + 6) . "%{opacity:1}" . ($t + 7.5) . "%,100%{opacity:0}}\n" : $lit("rlgT$i", $t, $t + 2);
+        $k .= ".rl-home .ge-s$i{animation-name:rlgS$i}.rl-home .ge-t$i{animation-name:rlgT$i}\n";
+    }
+    $k .= $lit('rlgCore', 18, 22) . $pul('rlgFB', 78, 91) . $lit('rlgFBL', 78, 82);
+    return $k;
+}
+function rl_home_ge_css() {
+    return '.rl-home .ge{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 12px;box-shadow:0 30px 80px -50px var(--red-glow)}
+.rl-home .ge .cap{display:flex;justify-content:space-between;margin-bottom:12px}
+.rl-home .ge .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-home .ge-n{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
+.rl-home .ge-nl{fill:rgba(153,0,0,.10);stroke:var(--red-2);stroke-width:1;opacity:0}
+.rl-home .ge-tx{font-family:var(--f-mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;fill:var(--ink-dim)}
+.rl-home .ge-e{fill:none;stroke:var(--line-2);stroke-width:1}
+.rl-home .ge-p{fill:none;stroke:var(--red-3);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:10 100;stroke-dashoffset:10;opacity:0}
+.rl-home .ge-c{fill:url(#rlgCoreG);stroke:var(--red-line);stroke-width:1}
+.rl-home .ge-cg{fill:none;stroke:var(--red-2);stroke-width:1;opacity:0;animation-name:rlgCore}
+.rl-home .ge-ct{font-family:var(--f-display);font-weight:600;font-size:17px;letter-spacing:.04em;text-transform:uppercase;fill:var(--ink)}
+.rl-home .ge-st{font-family:var(--f-mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;fill:var(--red-3);opacity:0}
+.rl-home .ge-sb{fill:rgba(255,255,255,.08)}
+.rl-home .ge-sl{fill:var(--red-2);opacity:0}
+.rl-home .ge-fb{fill:none;stroke:var(--line-2);stroke-width:1;stroke-dasharray:3 4}
+.rl-home .ge-fbl{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.18em;fill:var(--ink-faint)}
+.rl-home .ge-fbl-on{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.18em;fill:var(--ink);opacity:0;animation-name:rlgFBL}
+.rl-home .ge-pf{animation-name:rlgFB;stroke-dasharray:6 100}
+.rl-home .ge-nl,.rl-home .ge-p,.rl-home .ge-cg,.rl-home .ge-st,.rl-home .ge-sl,.rl-home .ge-fbl-on{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
+.rl-home .ge-p{animation-timing-function:ease-in-out}
+@media(max-width:560px){.rl-home .ge-tx{font-size:12.5px;letter-spacing:0}.rl-home .ge-fbl,.rl-home .ge-fbl-on{font-size:11px;letter-spacing:.06em}.rl-home .ge-st{font-size:11px;letter-spacing:.1em}.rl-home .ge{padding:16px 10px 8px}}
+' . rl_home_ge_kf();
+}
+function rl_home_ge_svg() {
+    $d = rl_home_ge_data(); $h = 'esc_html';
+    $node = function ($x, $y, $l, $cls) use ($h) {
+        return '<g class="' . $cls . '"><rect class="ge-n" x="' . $x . '" y="' . $y . '" width="150" height="40"/><rect class="ge-nl" x="' . $x . '" y="' . $y . '" width="150" height="40"/>'
+            . '<text class="ge-tx" x="' . ($x + 12) . '" y="' . ($y + 17) . '">' . $h(strtoupper($l[0])) . '</text><text class="ge-tx" x="' . ($x + 12) . '" y="' . ($y + 30) . '">' . $h(strtoupper($l[1])) . '</text></g>';
+    };
+    $s = '<svg viewBox="0 0 540 346" role="img" aria-labelledby="rlGeT"><title id="rlGeT">AI Growth System: five inputs (search and SERP data, content and website, competitor research, customer and social signals, AI-search visibility) feed one engine that researches, verifies, builds, automates and monitors, producing automated operations, content that ranks, citations in AI search, qualified pipeline and increased revenue — and the outcomes feed the next cycle.</title>'
+        . '<defs><linearGradient id="rlgCoreG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#990000" stop-opacity=".16"/><stop offset="1" stop-color="#990000" stop-opacity=".03"/></linearGradient></defs>';
+    $edges = '';
+    for ($i = 0; $i < 5; $i++) {
+        $cy = 40 + 54 * $i;
+        $pi = 'M150 ' . $cy . ' C178 ' . $cy . ' 176 148 200 148';
+        $po = 'M340 148 C364 148 362 ' . $cy . ' 390 ' . $cy;
+        $edges .= '<path class="ge-e" d="' . $pi . '"/><path class="ge-e" d="' . $po . '"/>'
+            . '<path class="ge-p ge-pi' . $i . '" pathLength="100" d="' . $pi . '"/><path class="ge-p ge-po' . $i . '" pathLength="100" d="' . $po . '"/>';
+    }
+    $fb = 'M465 276 V306 Q465 318 453 318 H87 Q75 318 75 306 V276';
+    $s .= $edges . '<path class="ge-fb" d="' . $fb . '"/><path class="ge-p ge-pf" pathLength="100" d="' . $fb . '"/>'
+        . '<text class="ge-fbl" x="270" y="338" text-anchor="middle">OUTCOMES FEED THE NEXT CYCLE</text><text class="ge-fbl-on" x="270" y="338" text-anchor="middle">OUTCOMES FEED THE NEXT CYCLE</text>';
+    foreach ($d['in'] as $i => $l) $s .= $node(0, 20 + 54 * $i, $l, 'ge-i' . $i);
+    foreach ($d['out'] as $i => $l) $s .= $node(390, 20 + 54 * $i, $l, 'ge-o' . $i);
+    $s .= '<rect class="ge-c" x="200" y="93" width="140" height="110"/><rect class="ge-cg" x="196" y="89" width="148" height="118"/>'
+        . '<text class="ge-ct" x="270" y="128" text-anchor="middle">AI Growth</text><text class="ge-ct" x="270" y="148" text-anchor="middle">System</text>';
+    foreach ($d['st'] as $j => $t) {
+        $x = 214 + $j * 23;
+        $s .= '<text class="ge-st ge-t' . $j . '" x="270" y="172" text-anchor="middle">' . $h(strtoupper($t)) . '</text>'
+            . '<rect class="ge-sb" x="' . $x . '" y="184" width="20" height="3"/><rect class="ge-sl ge-s' . $j . '" x="' . $x . '" y="184" width="20" height="3"/>';
+    }
+    return $s . '</svg>';
+}
+
 add_action('wp_head', 'rl_home_css', 22);
 function rl_home_css() {
     if (!is_front_page() && !is_page('home')) return; ?>
@@ -46,17 +131,9 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .engine{border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px}
 .rl-home .engine .cap{display:flex;justify-content:space-between;margin-bottom:14px}
 .rl-home .engine .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
-.rl-home .diagram{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center}
-@media(max-width:520px){.rl-home .diagram{grid-template-columns:1fr;text-align:center}}
-.rl-home .col{display:flex;flex-direction:column;gap:8px}
-.rl-home .node{border:1px solid var(--line-2);background:var(--bg);padding:9px 12px;font-family:var(--f-mono);font-size:11px;letter-spacing:.03em;color:var(--ink-dim);text-transform:uppercase}
 .rl-home .core{border:1px solid var(--red-line);background:linear-gradient(180deg,rgba(153,0,0,.11),rgba(153,0,0,.03));padding:20px 16px;text-align:center;box-shadow:0 0 40px -14px var(--red-glow)}
 .rl-home .core b{font-family:var(--f-display);text-transform:uppercase;font-weight:600;font-size:15px;display:block;letter-spacing:.04em}
 .rl-home .core small{font-family:var(--f-mono);font-size:10px;color:var(--ink-faint);letter-spacing:.12em}
-.rl-home .flow{position:relative;height:1px;background:var(--line-2);overflow:hidden;width:100%}
-.rl-home .flow::after{content:"";position:absolute;top:0;left:-40%;width:40%;height:100%;background:linear-gradient(90deg,transparent,var(--red-2),transparent);animation:rlflow 2.6s linear infinite}
-@keyframes rlflow{to{left:120%}}
-@media(prefers-reduced-motion:reduce){.rl-home .flow::after{animation:none;left:0;width:100%;opacity:.5}}
 /* cards */
 .rl-home .cols{display:grid;gap:16px}
 .rl-home .cols.c2{grid-template-columns:repeat(2,1fr)}.rl-home .cols.c3{grid-template-columns:repeat(3,1fr)}.rl-home .cols.c4{grid-template-columns:repeat(4,1fr)}
@@ -116,7 +193,7 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .final::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(102deg,#0b090a 0%,rgba(11,9,10,.55) 28%,transparent 47%),linear-gradient(258deg,#0b090a 0%,rgba(11,9,10,.55) 28%,transparent 47%)}
 .rl-home .final>*{position:relative;z-index:2}.rl-home .final h2{font-size:clamp(30px,5vw,56px)}.rl-home .final .lede{margin:20px auto 0}.rl-home .final .cta-row{justify-content:center}
 .rl-home .center{text-align:center;margin-inline:auto}
-</style>
+<?php echo rl_home_ge_css(); ?></style>
 <?php }
 
 /* ---------- FAQ data (markup + FAQPage schema share one source) ---------- */
@@ -168,30 +245,7 @@ function rl_render_home() {
         </div>
         <p class="microtrust">Built for <b>Pharmaceutical &amp; Life Sciences · Healthcare · B2B SaaS · Manufacturing · Technology · Professional Services</b></p>
       </div>
-      <div class="engine" aria-label="AI Growth System engine diagram">
-        <div class="cap"><span>Inputs</span><span>Engine</span><span>Outcomes</span></div>
-        <div class="diagram">
-          <div class="col">
-            <div class="node">Search &amp; SERP data</div>
-            <div class="node">Content &amp; website</div>
-            <div class="node">Competitor research</div>
-            <div class="node">Customer &amp; social signals</div>
-            <div class="node">AI-search visibility</div>
-          </div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:12px">
-            <div class="flow"></div>
-            <div class="core"><b>AI Growth System</b><small>RESEARCH · VERIFY · BUILD · AUTOMATE · MONITOR</small></div>
-            <div class="flow"></div>
-          </div>
-          <div class="col">
-            <div class="node">Automated operations</div>
-            <div class="node">Content that ranks</div>
-            <div class="node">Cited in AI search</div>
-            <div class="node">Qualified pipeline</div>
-            <div class="node">Increased revenue</div>
-          </div>
-        </div>
-      </div>
+      <figure class="ge rl-anim"><div class="cap" aria-hidden="true"><span>Inputs</span><span>Engine</span><span>Outcomes</span></div><?php echo rl_home_ge_svg(); ?></figure>
     </div>
   </section>
 
