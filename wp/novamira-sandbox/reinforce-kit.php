@@ -17,3 +17,17 @@ add_action('wp_head', function () {
     $v = file_exists($f) ? substr(md5_file($f), 0, 8) : '0';
     echo '<link rel="stylesheet" id="rl-kit-css" href="' . esc_url(content_url('novamira-sandbox/reinforce-kit.css') . '?ver=' . $v) . '" media="all">' . "\n";
 }, 21);
+
+/* Breadcrumb schema: WordPress texturizes "&" in titles to "&#038;", which Yoast then writes into
+   JSON-LD as a literal entity (seen on "SEO & AI Search Audit", D-051). Decode names so structured
+   data carries plain text. Site-wide and harmless for titles without entities. */
+add_filter('wpseo_schema_breadcrumb', function ($data) {
+    if (!empty($data['itemListElement']) && is_array($data['itemListElement'])) {
+        foreach ($data['itemListElement'] as &$it) {
+            if (isset($it['name']) && is_string($it['name'])) $it['name'] = html_entity_decode($it['name'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+            if (isset($it['item']['name']) && is_string($it['item']['name'])) $it['item']['name'] = html_entity_decode($it['item']['name'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+        }
+        unset($it);
+    }
+    return $data;
+});

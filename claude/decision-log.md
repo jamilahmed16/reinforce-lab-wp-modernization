@@ -597,6 +597,59 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-051 — SEO & AI Search Audit page built on `.online` (page 74, published)
+**Date:** 29 September 2026 · **Status:** BUILT (Jamil: "…then SEO & AI Search Audit")
+
+`/services/seo-ai-search-audit/` is an **APPROVED — NEW URL** (D-006). It is the paid one-time middle step of the D-016 funnel: free Diagnostic → **paid Audit** → Packages.
+- New file `wp/novamira-sandbox/reinforce-audit.php` provides `[reinforce_audit]` and is built on the kit.
+- Page **74** was published through the guarded create.
+- Yoast title: "SEO & AI Search Audit Services | Reinforce Lab".
+- Meta: "A one-time, human-led audit of your technical SEO, content, authority, competitors and AI search visibility — with evidence, a prioritised fix register and a roadmap."
+
+**Research (Exa `agent_run_b3959909e53a4ac5b6905931ab98dd05`)** is saved in `claude/research/seo-ai-audit-research-2026-09-29.md`.
+- **Competitors:** Sunny Patel, CW Brannan, O8, Edge Digital, Avante Visibility, Bradlee Bartlett, Clear Cited, Rankite.
+- **Market norms (self-reported):** $197–$5,000; 5–14 business days; fee often credited toward retainers; walkthroughs; 30/60/90 roadmaps.
+- **Buyer objections they answer:** "tool export", "no priorities", "disguised sales call", "pay twice", "guarantees".
+- **Openings used:** a documented AI-test method, explicit is/isn't boundaries, a fix register with confirmation criteria, and no guarantees.
+
+**Structure:**
+- Hero, with a 3-line H1: "See everything / holding back your / search growth."
+- **"Diagnostic, audit or package — which do you need?"** — a comparison table built from the D-016 funnel. Cost row: Free / "Quoted after scoping" / "From $5,000 setup" (the approved figure).
+- "What does the audit cover?" — 9 areas.
+- **"How do you measure AI search visibility properly?"** — a 4-step method (fixed questions, every engine, repeated runs, logged evidence) plus an example log line, **labelled "Illustrative example… not a real client result"**.
+- 8 deliverables and a 5-step process (scope → read-only access → crawl and research → human analysis → report and walkthrough).
+- **"What is — and isn't — in the audit?"** — boundaries: no tool export, no ranking or AI-citation promises, no implementation included, no disguised sales call.
+- 8 industry cards; "Who can fix what the audit finds?" (5 services plus Packages).
+- 6 FAQs and a final CTA that starts with the free diagnostic.
+
+**Schema:** `Service` plus `FAQPage`; Yoast adds the breadcrumb.
+
+**Hero animation "Audit sweep" (D-039 Step 3), 10 s loop:**
+1. A magnifier sweeps a website wireframe and stops on 5 issues: 404, CWV, THIN, SCHEMA and AI.
+2. They are written into a fix register, prioritised P1/P1/P2/P2/P3, with effort bars.
+3. A 30 · 60 · 90-day roadmap lights, then "Found by people · backed by evidence · prioritised".
+- Preview fix: the SCHEMA badge crossed the page edge and was moved left.
+
+**Fix (site-wide):** Yoast's BreadcrumbList carried "SEO **&#038;** AI Search Audit", because WordPress texturizes "&" in titles. A `wpseo_schema_breadcrumb` filter in `reinforce-kit.php` now decodes entities in breadcrumb names. Verified: breadcrumb = Home › Services › SEO & AI Search Audit, no entities left. Home, Services, SAOS and Packages had none.
+
+**Deploy and verification:**
+- Live md5s = repo: audit `597442e1…`, kit.php `09e3d1d6…` (backup `.bak-20260929-175409`).
+- HTTP 200, 1 H1 (3 lines), 10 H2, 8 cards, kit linked, noindex, no PHP errors, no `#` links. HTML 135.6 KB.
+- 390 px wide on mobile. Added to the style-fingerprint tool.
+
+**OPEN — facts only Jamil can set (not stated on the page):**
+- price or price range;
+- turnaround;
+- whether the fee is credited toward packages (and within what window);
+- a sample report;
+- walkthrough length;
+- whether a re-check is included;
+- how clients buy: request a quote (currently via the diagnostic form), or a WooCommerce product per D-016.
+
+The page currently says "Quoted after scoping" and "the price and delivery date are clear before any work starts". **Jamil to confirm that scoping-first process.**
+
+---
+
 ## D-050 — Local SEO page built on `.online` (page 104, published)
 **Date:** 29 September 2026 · **Status:** BUILT (Jamil: "yes, go ahead with Local SEO")
 
