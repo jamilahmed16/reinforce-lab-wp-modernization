@@ -597,6 +597,28 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-047 — "Who it's for" = all 8 industries as detail cards (Technical SEO; pattern for every service page)
+**Date:** 29 September 2026 · **Status:** DONE on Technical SEO (Jamil: "mention 8 cards as details with 2 to 3 points for each. you are only mentioning 7 industries but we have 8")
+
+**Defect:** the Technical SEO page listed 7 industry chips and omitted **Professional Services**. The locked list has 8 (D-022). AISO, GEO and LLM show 6 chips each, the same kind of gap.
+
+**Change:**
+- The chip row was replaced by **8 industry cards**: number, industry name (linked), **3 industry-specific technical SEO points**, and "Explore →" (aria-label "Technical SEO for <industry>").
+- Order follows the locked list: Pharmaceutical & Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services · Education.
+- Data lives in `rl_techseo_industries()` (single source).
+- The points are service capabilities, not claims or metrics. Examples: faceted-filter URL control (e-commerce), staging never indexed (SaaS), spec-sheet PDFs made indexable (manufacturing), hreflang for multi-campus sites (education).
+
+**Reusable pattern:** the `.inds8` / `.ind` styles were **added to the shared kit** (new classes only). Every future service page uses the same component with its own points.
+- Style fingerprint after the kit change: hub, AISO, GEO and LLM show **0 diffs**. Technical SEO changed only by the new section (+58 elements).
+- Layout: 4 columns on desktop, 2 on tablet, 1 on mobile.
+- Verified: 8 cards; no overflow at 390 px; no PHP errors.
+
+**Deploy:** backups `.bak-20260929-165521` (kit + page) and `.bak-20260929-165611` (link label shortened). Live md5s = repo: kit `a661ea32…`, techseo `ef122431…`.
+
+**Open:** apply the same 8-card section to **AISO, GEO and LLM** (currently 6 chips each). Each needs its own service-specific points, not copies.
+
+---
+
 ## D-046 — Technical SEO keeps its production URL `/services/technical-seo-services/` (no redirect)
 **Date:** 29 September 2026 · **Status:** APPROVED by Jamil ("B, keep the URL and rename the page") · resolves O-016 · **supersedes the D-023 row** "technical-seo-services → 301 /services/technical-seo/"
 

@@ -20,6 +20,20 @@ function rl_techseo_faqs() {
     ];
 }
 
+/* industries: the 8 locked verticals (D-022), each with technical SEO points specific to it */
+function rl_techseo_industries() {
+    return [
+        ['pharmaceutical', 'Pharmaceutical & Life Sciences', ['Separate HCP and patient sections, gated content and country versions indexed correctly', 'Frequently updated product and pipeline pages kept crawlable, current and free of duplicates', 'Clean HTML and structured data so evidence-heavy pages are read accurately']],
+        ['healthcare', 'Healthcare', ['Location and practitioner pages at scale without duplicate or thin URLs', 'Fast, stable pages on mobile for people searching on the go', 'Medical content with visible reviewer and update details, marked up to match']],
+        ['b2b-saas', 'B2B SaaS', ['JavaScript-heavy pages rendered so crawlers see the real content', 'Docs, changelogs and help centres organised without crawl waste', 'Marketing site, app and staging kept separate — staging never indexed']],
+        ['ecommerce', 'E-commerce', ['Filters and sorting that don’t multiply into endless URLs', 'Variants and out-of-stock or discontinued products handled with the right canonical or redirect', 'Category and product templates that pass Core Web Vitals']],
+        ['manufacturing', 'Manufacturing', ['Large catalogues and spec sheets, including PDFs, made crawlable and indexable', 'Distributor and regional sites without duplicate content', 'Legacy sites migrated without losing the pages that bring enquiries']],
+        ['technology', 'Technology', ['Architecture that keeps many products and integrations easy to find', 'JavaScript frameworks checked for what crawlers actually receive', 'Developer docs and API references structured for search and AI answers']],
+        ['professional-services', 'Professional Services', ['Service, location and team pages structured so each one can rank', 'Insights and articles kept fast, indexable and linked to the right services', 'Clean sites after mergers and rebrands — old domains redirected correctly']],
+        ['education', 'Education', ['Course pages that change every intake kept current and indexable', 'Large archives of news, events and past courses consolidated to cut crawl waste', 'Multi-campus and international versions paired with correct hreflang']],
+    ];
+}
+
 /* ---------- hero animation: Crawl, fix, index ----------
    A crawler maps a site tree; three faults surface (a broken link 404, a slow page, an orphan
    page with no links in); each is repaired in turn; every page is then marked indexed and the
@@ -325,7 +339,11 @@ function rl_render_techseo() {
 <section class="band alt" id="who">
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is technical SEO for?</h2><p class="lede">Sites losing traffic without a clear reason, sites with pages Google never indexes, and teams planning a redesign or migration.</p></div>
-    <ul class="chips"><?php echo $chip('industries/ecommerce', 'E-commerce') . $chip('industries/b2b-saas', 'B2B SaaS') . $chip('industries/technology', 'Technology') . $chip('industries/pharmaceutical', 'Pharmaceutical & Life Sciences') . $chip('industries/healthcare', 'Healthcare') . $chip('industries/manufacturing', 'Manufacturing') . $chip('industries/education', 'Education'); ?></ul>
+    <ul class="inds8">
+      <?php foreach (rl_techseo_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
+      <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('Technical SEO for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
+      <?php } ?>
+    </ul>
   </div>
 </section>
 
