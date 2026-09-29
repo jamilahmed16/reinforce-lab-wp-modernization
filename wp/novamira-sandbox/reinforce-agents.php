@@ -72,9 +72,36 @@ body.rl-agents-page .fl-page-content,body.rl-agents-page .fl-content,body.rl-age
 .rl-agents .h1{font-size:clamp(34px,5.1vw,64px);font-weight:700;letter-spacing:-.01em;margin-top:14px;max-width:18ch}
 .rl-agents .h1 .r{color:var(--red-2)}
 .rl-agents .hero .lede{margin-top:18px}
-.rl-agents .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;list-style:none;padding:0}
-.rl-agents .chips a{display:inline-flex;gap:.6em;align-items:center;border:1px solid var(--line-2);background:var(--bg);padding:8px 12px;font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-dim);transition:.15s}
-.rl-agents .chips a b{color:var(--red-3);font-weight:500}.rl-agents .chips a:hover{border-color:var(--red-line);color:var(--ink)}
+/* hero: two-column + agent pipeline visual (D-039) — replaces the A-01…A-08 chips */
+.rl-agents .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(28px,4vw,56px);align-items:center}
+@media(max-width:940px){.rl-agents .hero-grid{grid-template-columns:1fr;gap:34px}}
+.rl-agents .agmap{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 10px;box-shadow:0 30px 80px -50px var(--red-glow)}
+.rl-agents .agmap .cap{display:flex;justify-content:space-between;gap:12px}
+.rl-agents .agmap .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-agents .agmap svg{display:block;width:100%;height:auto;overflow:visible}
+.rl-agents .ag-guide{stroke:var(--line);stroke-dasharray:2 6}
+.rl-agents .ag-st{font-family:var(--f-mono);font-size:9.5px;fill:var(--red-3);letter-spacing:.14em}
+.rl-agents .ag-sn{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;fill:var(--ink-faint)}
+.rl-agents .ag-sn-on{fill:var(--ink);opacity:0;animation:rlaLit 8s ease infinite both;animation-delay:var(--d)}
+.rl-agents .ag-e{fill:none;stroke:var(--line-2);stroke-width:1}
+.rl-agents .ag-p{fill:none;stroke:var(--red-3);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:8 100;stroke-dashoffset:8;opacity:0;animation:rlaPulse 8s ease-in-out infinite both;animation-delay:var(--d)}
+.rl-agents .ag-p-fb{animation-name:rlaLoop}
+.rl-agents .ag-fb{fill:none;stroke:var(--line-2);stroke-dasharray:3 5}
+.rl-agents .ag-fbl{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.18em;fill:var(--ink-faint)}
+.rl-agents .ag-hit{fill:transparent}
+.rl-agents .ag-sq{fill:var(--bg);stroke:var(--ink-faint);transition:stroke .2s}
+.rl-agents .ag-lit{fill:var(--red-2);stroke:var(--red-3);opacity:0;animation:rlaLit 8s ease infinite both;animation-delay:var(--d)}
+.rl-agents .ag-halo{fill:none;stroke:var(--red-line);opacity:0;animation:rlaLit 8s ease infinite both;animation-delay:var(--d)}
+.rl-agents .ag-id{font-family:var(--f-mono);font-size:9.5px;fill:var(--red-3);letter-spacing:.1em}
+.rl-agents .ag-nm{font-family:var(--f-mono);font-size:8.5px;fill:var(--ink-dim);letter-spacing:.08em;transition:fill .2s}
+.rl-agents .agmap a{cursor:pointer;outline:none}
+.rl-agents .agmap a:hover .ag-sq,.rl-agents .agmap a:focus-visible .ag-sq{stroke:var(--red-3)}
+.rl-agents .agmap a:hover .ag-nm,.rl-agents .agmap a:focus-visible .ag-nm{fill:#fff}
+.rl-agents .agmap a:focus-visible .ag-hit{stroke:var(--red-2);stroke-width:1.2}
+@media(max-width:560px){.rl-agents .ag-nm,.rl-agents .agmap .cap span+span{display:none}.rl-agents .ag-id{font-size:14px}.rl-agents .ag-sn{font-size:11.5px;letter-spacing:.06em}.rl-agents .ag-st{font-size:12px}.rl-agents .ag-fbl{font-size:11px;letter-spacing:.08em}.rl-agents .agmap{padding:16px 10px 6px}}
+@keyframes rlaLit{0%{opacity:0}4%{opacity:1}20%{opacity:1}28%,100%{opacity:0}}
+@keyframes rlaPulse{0%{stroke-dashoffset:8;opacity:0}2%{opacity:1}16%{stroke-dashoffset:-100;opacity:1}18%,100%{stroke-dashoffset:-100;opacity:0}}
+@keyframes rlaLoop{0%{stroke-dashoffset:8;opacity:0}2%{opacity:1}26%{stroke-dashoffset:-100;opacity:1}28%,100%{stroke-dashoffset:-100;opacity:0}}
 /* agent cards */
 .rl-agents .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
 @media(max-width:820px){.rl-agents .grid2{grid-template-columns:1fr}}
@@ -152,6 +179,7 @@ function rl_render_agents() {
     $pkg = $u('packages');
     $A = [];
     foreach (rl_agents_list() as $a) $A[$a[0]] = $a;
+    $agLink = function ($id) use ($A, $u) { return '<a href="' . $u('services/agents/' . $A[$id][1]) . '" aria-label="' . esc_attr($id . ' ' . $A[$id][2] . ' Agent') . '">'; };
     $idlink = function ($id) use ($A, $u) { return '<a href="' . $u('services/agents/' . $A[$id][1]) . '">' . esc_html($id . ' ' . $A[$id][2]) . '</a>'; };
     ob_start(); ?>
 <div class="rl-agents">
@@ -163,7 +191,8 @@ function rl_render_agents() {
 </ol></nav>
 
 <section class="hero">
-  <div class="wrap">
+  <div class="wrap hero-grid">
+    <div>
     <span class="ey"><b>[</b>&nbsp;Search Authority OS&nbsp;<b>/</b>&nbsp;Agents&nbsp;<b>]</b></span>
     <h1 class="h1">Start with one agent. <span class="r">Scale into the full OS.</span></h1>
     <p class="lede"><strong>Search Authority OS agents</strong> are eight specialised AI agents from Reinforce Lab, each built to deliver one search outcome — from knowing what to rank for to recovering lost rankings. Run one on its own, or combine them into the full <a href="<?php echo $u('search-authority-os'); ?>">Search Authority OS</a>.</p>
@@ -171,9 +200,11 @@ function rl_render_agents() {
       <a class="btn p" href="<?php echo $diag; ?>">Find the right agent — free diagnostic <span class="ar">&rarr;</span></a>
       <a class="btn g" href="#agents">See the 8 agents</a>
     </div>
-    <ul class="chips" aria-label="Jump to an agent">
-      <?php foreach (rl_agents_list() as $a) echo '<li><a href="#' . esc_attr(strtolower($a[0])) . '"><b>' . esc_html($a[0]) . '</b>' . esc_html($a[2]) . '</a></li>'; ?>
-    </ul>
+    </div>
+    <figure class="agmap rl-anim">
+      <div class="cap" aria-hidden="true"><span>Agent pipeline</span><span>Select an agent</span></div>
+      <svg viewBox="0 0 524 440" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-labelledby="rlAgT"><title id="rlAgT">Search Authority OS agent pipeline: Understand, Verify, Optimize and QA, Measure and heal — performance feeds back into the next lap.</title><g aria-hidden="true"><line class="ag-guide" x1="64" y1="70" x2="64" y2="340"/><text class="ag-st" x="64" y="46" text-anchor="middle">01</text><text class="ag-sn" x="64" y="60" text-anchor="middle">UNDERSTAND</text><text class="ag-sn ag-sn-on" x="64" y="60" text-anchor="middle" style="--d:0s">UNDERSTAND</text><line class="ag-guide" x1="196" y1="70" x2="196" y2="340"/><text class="ag-st" x="196" y="46" text-anchor="middle">02</text><text class="ag-sn" x="196" y="60" text-anchor="middle">VERIFY</text><text class="ag-sn ag-sn-on" x="196" y="60" text-anchor="middle" style="--d:1.6s">VERIFY</text><line class="ag-guide" x1="328" y1="70" x2="328" y2="340"/><text class="ag-st" x="328" y="46" text-anchor="middle">03</text><text class="ag-sn" x="328" y="60" text-anchor="middle">OPTIMIZE & QA</text><text class="ag-sn ag-sn-on" x="328" y="60" text-anchor="middle" style="--d:3.2s">OPTIMIZE & QA</text><line class="ag-guide" x1="460" y1="70" x2="460" y2="340"/><text class="ag-st" x="460" y="46" text-anchor="middle">04</text><text class="ag-sn" x="460" y="60" text-anchor="middle">MEASURE & HEAL</text><text class="ag-sn ag-sn-on" x="460" y="60" text-anchor="middle" style="--d:4.8s">MEASURE & HEAL</text><path class="ag-e" d="M72,112 C130.0,112 130.0,211 188,211"/><path class="ag-p" d="M72,112 C130.0,112 130.0,211 188,211" pathLength="100" style="--d:.25s"/><path class="ag-e" d="M72,178 C130.0,178 130.0,211 188,211"/><path class="ag-p" d="M72,178 C130.0,178 130.0,211 188,211" pathLength="100" style="--d:.25s"/><path class="ag-e" d="M72,244 C130.0,244 130.0,211 188,211"/><path class="ag-p" d="M72,244 C130.0,244 130.0,211 188,211" pathLength="100" style="--d:.25s"/><path class="ag-e" d="M72,310 C130.0,310 130.0,211 188,211"/><path class="ag-p" d="M72,310 C130.0,310 130.0,211 188,211" pathLength="100" style="--d:.25s"/><path class="ag-e" d="M204,211 C262.0,211 262.0,178 320,178"/><path class="ag-p" d="M204,211 C262.0,211 262.0,178 320,178" pathLength="100" style="--d:1.85s"/><path class="ag-e" d="M204,211 C262.0,211 262.0,244 320,244"/><path class="ag-p" d="M204,211 C262.0,211 262.0,244 320,244" pathLength="100" style="--d:1.85s"/><path class="ag-e" d="M336,178 C394.0,178 394.0,211 452,211"/><path class="ag-p" d="M336,178 C394.0,178 394.0,211 452,211" pathLength="100" style="--d:3.45s"/><path class="ag-e" d="M336,244 C394.0,244 394.0,211 452,211"/><path class="ag-p" d="M336,244 C394.0,244 394.0,211 452,211" pathLength="100" style="--d:3.45s"/><path class="ag-fb" d="M460,221 L460,384 L64,384 L64,320"/><path class="ag-p ag-p-fb" d="M460,221 L460,384 L64,384 L64,320" pathLength="100" style="--d:5.4s"/><text class="ag-fbl" x="262.0" y="404" text-anchor="middle">PERFORMANCE FEEDS THE NEXT LAP</text></g><?php echo $agLink("A-01"); ?><g class="ag-n" style="--d:0s"><rect class="ag-hit" x="20" y="98" width="88" height="46"/><rect class="ag-sq" x="58" y="106" width="12" height="12"/><rect class="ag-lit" x="58" y="106" width="12" height="12"/><rect class="ag-halo" x="52" y="100" width="24" height="24"/><text class="ag-id" x="64" y="134" text-anchor="middle">A-01</text><text class="ag-nm" x="64" y="145" text-anchor="middle">SEARCH INTEL</text></g></a><?php echo $agLink("A-02"); ?><g class="ag-n" style="--d:0s"><rect class="ag-hit" x="20" y="164" width="88" height="46"/><rect class="ag-sq" x="58" y="172" width="12" height="12"/><rect class="ag-lit" x="58" y="172" width="12" height="12"/><rect class="ag-halo" x="52" y="166" width="24" height="24"/><text class="ag-id" x="64" y="200" text-anchor="middle">A-02</text><text class="ag-nm" x="64" y="211" text-anchor="middle">RESEARCH</text></g></a><?php echo $agLink("A-05"); ?><g class="ag-n" style="--d:0s"><rect class="ag-hit" x="20" y="230" width="88" height="46"/><rect class="ag-sq" x="58" y="238" width="12" height="12"/><rect class="ag-lit" x="58" y="238" width="12" height="12"/><rect class="ag-halo" x="52" y="232" width="24" height="24"/><text class="ag-id" x="64" y="266" text-anchor="middle">A-05</text><text class="ag-nm" x="64" y="277" text-anchor="middle">SENTIMENT</text></g></a><?php echo $agLink("A-06"); ?><g class="ag-n" style="--d:0s"><rect class="ag-hit" x="20" y="296" width="88" height="46"/><rect class="ag-sq" x="58" y="304" width="12" height="12"/><rect class="ag-lit" x="58" y="304" width="12" height="12"/><rect class="ag-halo" x="52" y="298" width="24" height="24"/><text class="ag-id" x="64" y="332" text-anchor="middle">A-06</text><text class="ag-nm" x="64" y="343" text-anchor="middle">COMPETITORS</text></g></a><?php echo $agLink("A-03"); ?><g class="ag-n" style="--d:1.6s"><rect class="ag-hit" x="152" y="197" width="88" height="46"/><rect class="ag-sq" x="190" y="205" width="12" height="12"/><rect class="ag-lit" x="190" y="205" width="12" height="12"/><rect class="ag-halo" x="184" y="199" width="24" height="24"/><text class="ag-id" x="196" y="233" text-anchor="middle">A-03</text><text class="ag-nm" x="196" y="244" text-anchor="middle">EVIDENCE</text></g></a><?php echo $agLink("A-04"); ?><g class="ag-n" style="--d:3.2s"><rect class="ag-hit" x="284" y="164" width="88" height="46"/><rect class="ag-sq" x="322" y="172" width="12" height="12"/><rect class="ag-lit" x="322" y="172" width="12" height="12"/><rect class="ag-halo" x="316" y="166" width="24" height="24"/><text class="ag-id" x="328" y="200" text-anchor="middle">A-04</text><text class="ag-nm" x="328" y="211" text-anchor="middle">AEO / GEO</text></g></a><?php echo $agLink("A-07"); ?><g class="ag-n" style="--d:3.2s"><rect class="ag-hit" x="284" y="230" width="88" height="46"/><rect class="ag-sq" x="322" y="238" width="12" height="12"/><rect class="ag-lit" x="322" y="238" width="12" height="12"/><rect class="ag-halo" x="316" y="232" width="24" height="24"/><text class="ag-id" x="328" y="266" text-anchor="middle">A-07</text><text class="ag-nm" x="328" y="277" text-anchor="middle">CONTENT QA</text></g></a><?php echo $agLink("A-08"); ?><g class="ag-n" style="--d:4.8s"><rect class="ag-hit" x="416" y="197" width="88" height="46"/><rect class="ag-sq" x="454" y="205" width="12" height="12"/><rect class="ag-lit" x="454" y="205" width="12" height="12"/><rect class="ag-halo" x="448" y="199" width="24" height="24"/><text class="ag-id" x="460" y="233" text-anchor="middle">A-08</text><text class="ag-nm" x="460" y="244" text-anchor="middle">PERFORMANCE</text></g></a></svg>
+    </figure>
   </div>
 </section>
 
