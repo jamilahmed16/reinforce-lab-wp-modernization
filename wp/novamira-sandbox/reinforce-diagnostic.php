@@ -19,11 +19,16 @@ function rl_diag_choices() {
     ];
 }
 function rl_diag_faqs() {
+    // [question, answer, optional link path, optional link label]
     return [
-        ['Is the Search Authority Diagnostic free?', 'Yes. The diagnostic is free. It is the first step before any engagement and establishes your real baseline before anything is built.'],
+        ['Is the Search Authority Diagnostic free?', 'Yes. The diagnostic is free. It is the first step before any engagement and establishes your real baseline before anything is built.', 'packages', 'See packages'],
+        ['What does the diagnostic include?', 'A review of seven dimensions of search authority — organic search, AI search, content authority, competitors, search demand, customer voice and technical foundation — each with its evidence and gap, plus a prioritized 90-day plan covering what to create, what to improve and what to stop.'],
+        ['Does it cover AI search like ChatGPT, Perplexity and AI Overviews?', 'Yes. We review your brand mentions, citations and entity visibility across ChatGPT, Perplexity and Google AI Overviews alongside your Google rankings, so you see where you stand in both.'],
+        ['Who is the diagnostic for?', 'Organizations with a real search opportunity — from enterprise teams in pharma, life sciences, healthcare and finance to established and early-stage businesses. Enterprise requests get priority review; established businesses also get a strategy call.'],
         ['What happens after I request it?', 'We review your details, research your site, search data, competitors and AI visibility, and pass the findings through a human quality check. You then receive your diagnostic and a prioritized 90-day plan.'],
+        ['Am I obligated to buy anything afterwards?', 'No. The diagnostic is free with no obligation. If you want help acting on the plan, we will recommend the package that fits — or you can implement it yourself.'],
         ['Is my information confidential?', 'Yes. Your details are used only to prepare your diagnostic and to contact you about it.'],
-        ['How is this different from the paid SEO & AI Search Audit?', 'The diagnostic is a free, focused read of where you stand and what to do next. The SEO & AI Search Audit is a paid, one-time deep audit for teams that need the full technical and content analysis.'],
+        ['How is this different from the paid SEO & AI Search Audit?', 'The diagnostic is a free, focused read of where you stand and what to do next. The SEO & AI Search Audit is a paid, one-time deep audit for teams that need the full technical and content analysis.', 'services/seo-ai-search-audit', 'About the SEO &amp; AI Search Audit'],
     ];
 }
 define('RL_DIAG_DESC', 'The Search Authority Diagnostic is a free, data-backed review from Reinforce Lab of your Google visibility, AI-search presence, content authority, competitors and demand signals, with a prioritized 90-day plan.');
@@ -352,8 +357,7 @@ function rl_render_diagnostic() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Questions&nbsp;<b>]</b></span><h2>About the diagnostic.</h2></div>
     <?php foreach (rl_diag_faqs() as $k => $q) {
         $a = esc_html($q[1]);
-        if ($k === 3) $a .= ' <a href="' . $u('services/seo-ai-search-audit') . '">About the SEO &amp; AI Search Audit</a>.';
-        if ($k === 0) $a .= ' <a href="' . $u('packages') . '">See packages</a>.'; ?>
+        if (!empty($q[2])) $a .= ' <a href="' . $u($q[2]) . '">' . $q[3] . '</a>.'; ?>
     <details<?php echo $k === 0 ? ' open' : ''; ?>><summary><h3 style="font:inherit;letter-spacing:inherit;margin:0"><?php echo esc_html($q[0]); ?></h3></summary><p><?php echo $a; ?></p></details>
     <?php } ?>
   </div>
