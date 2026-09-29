@@ -254,7 +254,7 @@ function rl_render_diagnostic() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Free&nbsp;<b>/</b>&nbsp;Search Authority Diagnostic&nbsp;<b>]</b></span>
-      <h1 class="h1">Find out what's limiting your <span class="r">search authority.</span></h1>
+      <h1 class="h1">Find out what's<br>limiting your<br><span class="r">search authority.</span></h1>
       <p class="lede">The <strong>Search Authority Diagnostic</strong> is a free, data-backed review from Reinforce Lab of your Google visibility, AI-search presence, content authority, competitors and demand signals. Not a generic SEO scorecard — what matters, what's missing, and what to do next.</p>
       <ul class="ticks">
         <li>Where you stand in Google <em>and</em> in AI answers (ChatGPT, Perplexity, AI Overviews)</li>
