@@ -4,25 +4,6 @@ Decisions explicitly made by Jamil Ahmed. Per Master Project Instructions §40 a
 
 ---
 
-## D-040 — `/services/` hub built on `.online` (page 68, published)
-**Date:** 29 September 2026 · **Status:** BUILT (Jamil: "yes, go ahead with the Services hub")
-
-New sandbox file `wp/novamira-sandbox/reinforce-services.php` provides `[reinforce_services]`; page **68** (`/services/`) content set to the shortcode and **published** (site still `blog_public=0` / noindex, checked in the same call). Yoast title "Services: AI Search, SEO & Automation | Reinforce Lab"; meta "Reinforce Lab services: AI search optimization, GEO, SEO, content systems, marketing automation and AI consulting — built to work as one AI Growth System."
-
-**Competitor check (Exa, 29 Sep; VERIFIED on their pages):** SCALZ.AI `/services/`, Fuel Online, Smarketa, ReachLLM, Loganix and AEO Engine list services by category (core AI search services vs supporting SEO/web), name the AI engines, and explain the process. **None routes a visitor by the problem they have** (INFERENCE) — that is the hub's differentiator here.
-
-**Structure:** breadcrumb → hero (3-line H1 "Every service. / One connected / growth system.", definition-style lede for AEO) → **"Start with the problem"** router (8 problems → the service that solves each) → **All services** in 4 groups from the D-023/D-024 IA (Search Engine Optimization 6 · AI Search & Content 5 · Automation & Growth 3 · Advisory & Web 4 = 18 services) → **Three ways in** (AI Growth Systems umbrella · Search Authority OS · Agents) → the locked 9-stage method (Discover → Monitor) → 8 industries → 6 FAQs → final CTA. Schema: `ItemList` of 18 `Service` items (provider = Organization) + `FAQPage`; Yoast supplies WebPage + BreadcrumbList. Pricing line reuses the approved "from $5,000 setup"; no invented metrics.
-
-**Hero animation "Capability grid" (D-039 Step 3):** the 4 groups light tile by tile, each group sends a pulse into its segment of the "AI Growth System" core, the core glows, then an output pulse lights "One system · measured on business impact". 10 s loop, soft fade and reset; reduced motion static; tiles are real links where the page exists.
-
-**Links:** services not yet scaffolded on `.online` (core SEO pillar, Digital PR, the 3 web pages — "KEEP-EXISTING", per D-023/D-024) render as **unlinked** cards/tiles, never `#`. Draft service pages link as `?page_id=` until each is published (same as the nav). ItemList `url` is only set where a page exists.
-
-**Fix during build:** the problem router squeezed long service names beside the problem text; changed to problem-above-links. Deploy backups: `reinforce-services.php.bak-20260929-150630`. Live md5 `576b11a8…` = repo. Verified: HTTP 200, 1 H1 (3 lines at 1440), noindex, no PHP errors, schema present (ItemList 18, FAQPage 6), no overflow at 1440/390, reduced motion static.
-
-**Production note:** `/services/` is a KEEP URL on production (pos 4.2). This build changes `.online` only; any production title/content change stays **PENDING — NO CHANGE AUTHORIZED** until approved at migration.
-
----
-
 ## D-001 — Development environment build strategy
 **Date:** 20 August 2026
 **Decision:** **BUILD FRESH on reinforcelab.online, migrate content selectively.**
@@ -613,6 +594,25 @@ AI Growth Systems  (umbrella / positioning)
 **Service set — UPDATE 27 Sep 2026:** Two new Solutions **`APPROVED — NEW URL`** by Jamil: **`/services/seo-content-systems/`** (slug shortened from the proposed `automated-seo-content-systems`) and **`/services/marketing-automation/`**. Added to the approved-new register. The 6 Solutions are now locked: AI Search Optimization · GEO · SEO & AI Search Audit · Pharmaceutical SEO · **SEO Content Systems** · **Marketing Automation**.
 
 **Still open (service set):** decide keep-vs-consolidate for the ~19 legacy production `/services/*` pages (recommendation: consolidate into the 6 Solutions above, keep only actively-sold legacy services).
+
+---
+
+## D-040 — `/services/` hub built on `.online` (page 68, published)
+**Date:** 29 September 2026 · **Status:** BUILT (Jamil: "yes, go ahead with the Services hub")
+
+New sandbox file `wp/novamira-sandbox/reinforce-services.php` provides `[reinforce_services]`; page **68** (`/services/`) content set to the shortcode and **published** (site still `blog_public=0` / noindex, checked in the same call). Yoast title "Services: AI Search, SEO & Automation | Reinforce Lab"; meta "Reinforce Lab services: AI search optimization, GEO, SEO, content systems, marketing automation and AI consulting — built to work as one AI Growth System."
+
+**Competitor check (Exa, 29 Sep; VERIFIED on their pages):** SCALZ.AI `/services/`, Fuel Online, Smarketa, ReachLLM, Loganix and AEO Engine list services by category (core AI search services vs supporting SEO/web), name the AI engines, and explain the process. **None routes a visitor by the problem they have** (INFERENCE) — that is the hub's differentiator here.
+
+**Structure:** breadcrumb → hero (3-line H1 "Every service. / One connected / growth system.", definition-style lede for AEO) → **"Start with the problem"** router (8 problems → the service that solves each) → **All services** in 4 groups from the D-023/D-024 IA (Search Engine Optimization 6 · AI Search & Content 5 · Automation & Growth 3 · Advisory & Web 4 = 18 services) → **Three ways in** (AI Growth Systems umbrella · Search Authority OS · Agents) → the locked 9-stage method (Discover → Monitor) → 8 industries → 6 FAQs → final CTA. Schema: `ItemList` of 18 `Service` items (provider = Organization) + `FAQPage`; Yoast supplies WebPage + BreadcrumbList. Pricing line reuses the approved "from $5,000 setup"; no invented metrics.
+
+**Hero animation "Capability grid" (D-039 Step 3):** the 4 groups light tile by tile, each group sends a pulse into its segment of the "AI Growth System" core, the core glows, then an output pulse lights "One system · measured on business impact". 10 s loop, soft fade and reset; reduced motion static; tiles are real links where the page exists.
+
+**Links:** services not yet scaffolded on `.online` (core SEO pillar, Digital PR, the 3 web pages — "KEEP-EXISTING", per D-023/D-024) render as **unlinked** cards/tiles, never `#`. Draft service pages link as `?page_id=` until each is published (same as the nav). ItemList `url` is only set where a page exists.
+
+**Fix during build:** the problem router squeezed long service names beside the problem text; changed to problem-above-links. Deploy backups: `reinforce-services.php.bak-20260929-150630`. Live md5 `576b11a8…` = repo. Verified: HTTP 200, 1 H1 (3 lines at 1440), noindex, no PHP errors, schema present (ItemList 18, FAQPage 6), no overflow at 1440/390, reduced motion static.
+
+**Production note:** `/services/` is a KEEP URL on production (pos 4.2). This build changes `.online` only; any production title/content change stays **PENDING — NO CHANGE AUTHORIZED** until approved at migration.
 
 ---
 
