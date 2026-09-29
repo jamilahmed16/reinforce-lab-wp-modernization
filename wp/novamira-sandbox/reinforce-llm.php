@@ -34,6 +34,20 @@ function rl_llm_crawlers() {
     ];
 }
 
+/* industries: the 8 locked verticals (D-022), each with LLM Optimization points specific to it (D-047) */
+function rl_llm_industries() {
+    return [
+        ['pharmaceutical', 'Pharmaceutical & Life Sciences', ['One consistent company, product and pipeline description across sites and registries', 'Outdated or wrong product facts traced and corrected at the source', 'Brand, generic and company names kept distinct to avoid confusion']],
+        ['healthcare', 'Healthcare', ['Practice, practitioner and location facts consistent across directories', 'Wrong descriptions of services or specialisms traced and fixed at the source', 'Organization and person markup linking official profiles']],
+        ['b2b-saas', 'B2B SaaS', ['Category and positioning stated identically on your site, review sites and profiles', 'Old pricing, features and product names cleaned up across the web', 'Clear separation from similarly named products']],
+        ['ecommerce', 'E-commerce', ['Brand, product-line and retailer facts consistent across marketplaces and listings', 'Outdated product information retired at the source', 'Brand and reseller names made unambiguous']],
+        ['manufacturing', 'Manufacturing', ['Company, plant, certification and capability facts aligned across directories', 'Legacy brand and acquisition names mapped to the current company', 'Product and part names kept consistent so models match them correctly']],
+        ['technology', 'Technology', ['Consistent descriptions of products, integrations and category', 'Rebrands and renamed products connected so models don’t mix them up', 'Founder, company and product clearly linked']],
+        ['professional-services', 'Professional Services', ['Firm, partner and practice-area facts consistent everywhere', 'Mergers and name changes reflected across profiles and directories', 'Named experts linked to the firm so models credit the right people']],
+        ['education', 'Education', ['Institution, campus and programme names consistent across listings', 'Discontinued courses and outdated facts removed at the source', 'Accreditation and affiliations stated clearly so models describe you correctly']],
+    ];
+}
+
 /* ---------- hero animation: Entity alignment ----------
    Six sources that describe your brand start scattered and inconsistent (≠); one by one they
    slide into place, connect to the brand entity and become consistent (=); the entity glows and
@@ -316,7 +330,11 @@ function rl_render_llm() {
 <section class="band alt" id="who">
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is LLM Optimization for?</h2><p class="lede">Brands that AI tools describe wrongly, vaguely or not at all — and teams in regulated fields, where a wrong description is a real risk.</p></div>
-    <ul class="chips"><?php echo $chip('industries/pharmaceutical', 'Pharmaceutical & Life Sciences') . $chip('industries/healthcare', 'Healthcare') . $chip('industries/b2b-saas', 'B2B SaaS') . $chip('industries/technology', 'Technology') . $chip('industries/professional-services', 'Professional Services') . $chip('industries/manufacturing', 'Manufacturing'); ?></ul>
+    <ul class="inds8">
+      <?php foreach (rl_llm_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
+      <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('LLM Optimization for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
+      <?php } ?>
+    </ul>
   </div>
 </section>
 

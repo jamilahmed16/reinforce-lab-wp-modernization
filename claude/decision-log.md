@@ -615,7 +615,19 @@ AI Growth Systems  (umbrella / positioning)
 
 **Deploy:** backups `.bak-20260929-165521` (kit + page) and `.bak-20260929-165611` (link label shortened). Live md5s = repo: kit `a661ea32…`, techseo `ef122431…`.
 
-**Open:** apply the same 8-card section to **AISO, GEO and LLM** (currently 6 chips each). Each needs its own service-specific points, not copies.
+**Done 29 Sep (Jamil: "give them the same 8 cards next, with points written for each service"):** AISO, GEO and LLM now each show the 8 industry cards. Each has its own service-specific points (24 cards), stored in `rl_aiso_industries()`, `rl_geo_industries()` and `rl_llm_industries()`:
+- **AISO** — visibility and accuracy in AI answers (e.g. SaaS: included in "best tool for…" shortlists).
+- **GEO** — citable passages (e.g. pharma: sourced mechanism, dosing and trial passages with PubMed / ClinicalTrials.gov citations and MLR review).
+- **LLM** — consistent entity facts (e.g. manufacturing: legacy brand and acquisition names mapped to the current company).
+
+The old chip rows were removed.
+
+**Deploy and verification:**
+- Backup `.bak-20260929-170944`. Live md5s = repo: aiso `62d3f8c8…`, geo `1a4606fb…`, llm `9f97e7d1…`.
+- Each page: 8 cards (Professional Services included), 0 chips, 1 H1, no PHP errors. HTML: AISO 134.8 KB, GEO 135.4 KB, LLM 141.9 KB.
+- Style fingerprint: hub and Technical SEO **0 diffs**. The three pages changed only by +60 elements each (the new section).
+
+All five service pages built so far now show the 8 industries.
 
 ---
 

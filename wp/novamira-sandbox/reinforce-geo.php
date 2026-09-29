@@ -20,6 +20,20 @@ function rl_geo_faqs() {
     ];
 }
 
+/* industries: the 8 locked verticals (D-022), each with GEO points specific to it (D-047) */
+function rl_geo_industries() {
+    return [
+        ['pharmaceutical', 'Pharmaceutical & Life Sciences', ['Mechanism, dosing and trial summaries written as sourced, self-contained passages', 'Citations to PubMed and ClinicalTrials.gov where the field requires it', 'Medical, legal and regulatory review before any passage ships']],
+        ['healthcare', 'Healthcare', ['Condition and treatment explainers built as clear question-and-answer passages', 'Reviewer, date and source shown with each clinical answer', 'Plain-language definitions that patients and AI engines can quote']],
+        ['b2b-saas', 'B2B SaaS', ['Comparison and alternatives pages with facts engines can extract', 'Use-case and “how to” passages mapped to buyer prompts', 'Integration and pricing-model explainers that stand on their own']],
+        ['ecommerce', 'E-commerce', ['Buying guides with clear, citable criteria and recommendations', 'Product comparison tables engines can lift', 'Sizing, compatibility and care answers written as standalone passages']],
+        ['manufacturing', 'Manufacturing', ['Specification and selection guides written as extractable passages', 'Material, standard and certification facts with named sources', 'Application notes that answer the questions engineers actually ask']],
+        ['technology', 'Technology', ['Definitions and architecture explainers written answer-first', 'Docs structured so each section answers one question', 'Performance claims tied to their source']],
+        ['professional-services', 'Professional Services', ['Insight articles that answer client questions directly', 'Regulation and process explainers with dated sources', 'Expert-attributed passages AI engines can credit']],
+        ['education', 'Education', ['Course overviews that answer what you learn, how long it takes and what comes next', 'Admissions and funding explained as clear steps', 'Research summaries with citations AI engines can use']],
+    ];
+}
+
 /* ---------- hero animation: Fan-out to citation ----------
    A buyer's question fans out into three related searches (query fan-out); the searches hit your
    page; three passages are highlighted, lifted into the generated answer and cited [1]; caption
@@ -295,7 +309,11 @@ function rl_render_geo() {
 <section class="band alt" id="who">
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is GEO for?</h2><p class="lede">Teams whose buyers ask detailed questions before they buy — and whose answers need to be accurate.</p></div>
-    <ul class="chips"><?php echo $chip('industries/pharmaceutical', 'Pharmaceutical & Life Sciences') . $chip('industries/healthcare', 'Healthcare') . $chip('industries/b2b-saas', 'B2B SaaS') . $chip('industries/technology', 'Technology') . $chip('industries/professional-services', 'Professional Services') . $chip('industries/education', 'Education'); ?></ul>
+    <ul class="inds8">
+      <?php foreach (rl_geo_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
+      <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('GEO for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
+      <?php } ?>
+    </ul>
   </div>
 </section>
 

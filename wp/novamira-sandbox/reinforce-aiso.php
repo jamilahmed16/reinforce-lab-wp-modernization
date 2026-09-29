@@ -20,6 +20,20 @@ function rl_aiso_faqs() {
     ];
 }
 
+/* industries: the 8 locked verticals (D-022), each with AI Search Optimization points specific to it (D-047) */
+function rl_aiso_industries() {
+    return [
+        ['pharmaceutical', 'Pharmaceutical & Life Sciences', ['Accurate AI answers about products and conditions, backed by sourced and reviewed claims', 'Separate visibility for healthcare-professional and patient questions', 'Monitoring for outdated or incorrect descriptions in AI answers']],
+        ['healthcare', 'Healthcare', ['Named in AI answers when patients compare providers and treatments', 'Clinical content with reviewer details AI engines can trust', 'Locations and services kept consistent so AI gives the right details']],
+        ['b2b-saas', 'B2B SaaS', ['Included in AI shortlists for “best tool for…” and comparison prompts', 'Accurate descriptions of features, integrations and pricing model', 'Mentions on the review sites and communities AI engines read']],
+        ['ecommerce', 'E-commerce', ['Products recommended when shoppers ask AI for options', 'Specs, availability and returns stated clearly and consistently', 'Reviews earned on sources AI engines cite']],
+        ['manufacturing', 'Manufacturing', ['Found when engineers and buyers ask AI for suppliers and specs', 'Specifications and certifications stated plainly for AI to quote', 'Distributor and product listings aligned so AI names the right source']],
+        ['technology', 'Technology', ['Clear category positioning so AI places you among the right peers', 'Documentation and integration pages AI engines can cite', 'Consistent product names across the web to avoid confusion']],
+        ['professional-services', 'Professional Services', ['Recommended when buyers ask AI for advisers in your field and region', 'Expertise shown through named experts, credentials and sourced insight', 'Service areas and specialisms described the same way everywhere']],
+        ['education', 'Education', ['Programmes surfaced when students ask AI to compare courses', 'Entry requirements and key dates kept current so AI answers correctly', 'Accreditation and outcomes stated clearly, with sources']],
+    ];
+}
+
 /* ---------- hero animation: Cited answer ----------
    A buyer's prompt types in; an AI answer writes itself; three sources appear and source [1] —
    your brand — lights, passes three checks (crawlable · structured · verified), and the three
@@ -274,7 +288,11 @@ function rl_render_aiso() {
 <section class="band alt" id="who">
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is AI Search Optimization for?</h2><p class="lede">Businesses whose buyers research before they buy — and industries where an AI getting the facts wrong carries real risk.</p></div>
-    <ul class="chips"><?php echo $chip('industries/pharmaceutical', 'Pharmaceutical & Life Sciences') . $chip('industries/healthcare', 'Healthcare') . $chip('industries/b2b-saas', 'B2B SaaS') . $chip('industries/technology', 'Technology') . $chip('industries/professional-services', 'Professional Services') . $chip('industries/manufacturing', 'Manufacturing'); ?></ul>
+    <ul class="inds8">
+      <?php foreach (rl_aiso_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
+      <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('AI Search Optimization for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
+      <?php } ?>
+    </ul>
   </div>
 </section>
 
