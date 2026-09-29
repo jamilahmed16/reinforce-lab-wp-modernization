@@ -597,6 +597,75 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-050 — Local SEO page built on `.online` (page 104, published)
+**Date:** 29 September 2026 · **Status:** BUILT (Jamil: "yes, go ahead with Local SEO")
+
+`/services/local-seo/` is a D-023 new slug.
+- New file `wp/novamira-sandbox/reinforce-local.php` provides `[reinforce_local]` and is built on the kit.
+- Page **104** was published through the guarded create.
+- Yoast title: "Local Search Engine Optimization Services | Reinforce Lab" (57). It targets the GSC query family we already appear for: "local search engine optimization company / service / services", about 28k impressions over 16 months.
+- Meta: "Local SEO from Reinforce Lab: Google Business Profile, consistent citations, compliant reviews and location pages — built on Google's own guidelines for local and AI search."
+
+**Research:** Exa `agent_run_00c3bff17f6e402197ef16470fe6fcb5` plus the repo GSC export, saved in `claude/research/local-seo-research-2026-09-29.md`.
+- **Competitors:** TechnSEO, B2BSEO.io, The Business Rover, Local SEO Services NYC, Taskcover, LocalGaps, THAT Agency. They are mostly consumer-focused, with unverified guarantees or "AI ranking" claims.
+- **VERIFIED:**
+  - Google: local results are based on relevance, distance and prominence ("popularity" in the current summary), and "no way to request or pay for a better local ranking";
+  - Business Profile rules: real-world name only (keywords can mean suspension); service-area businesses get one profile; no unstaffed virtual offices;
+  - reviews: incentives "strictly prohibited"; no selective asking;
+  - FTC final rule on fake reviews, 14 Aug 2024;
+  - LocalBusiness schema requires `name` and `address`;
+  - Apple Business Connect and Bing Places manage map listings;
+  - ChatGPT search uses location and partner providers; Gemini has Maps grounding.
+- **UNVERIFIED and not claimed:** Perplexity's local data source; review-reply rate as a ranking factor.
+
+**Structure:**
+- Hero, with a 3-line H1: "Get found by / customers / near you." The lede contains "local search engine optimization".
+- "How does Google rank local results?" — 3 factor cards, each with what we improve or can't change, plus Google's "no way to pay" quote and source.
+- 9 coverage areas.
+- **"Which local SEO tactics break the rules?"** — 5 myth vs "Google says" pairs plus the FTC source.
+- 5-step process, 8 deliverables and 6 measures (grid visibility, profile actions, reviews, citation accuracy, location-page leads, AI local answers).
+- Honesty panel: "Distance is the one thing no one can change".
+- 8 industry cards and 6 related services.
+- 6 FAQs and the final CTA.
+
+**Schema:** `Service` (alternateName "Local search engine optimization") plus `FAQPage`; Yoast adds the breadcrumb.
+
+**Hero animation "Local pack" (D-039 Step 3), 10 s loop:**
+1. The query "Accountant near me" appears and ripples spread from the searcher across a street map.
+2. Competitor pins and your red pin drop.
+3. Google's factors light in turn: relevance, distance (a dashed line to your pin) and prominence (your pin's halo).
+4. The local results list builds and "Your business" lights, with profile · reviews · citations checks.
+5. Soft fade and reset.
+- Preview fixes before deploy: the checks overlapped the next result (moved inside your row); a dashed line can't "draw", so it now fades in; the caption was reworded so it isn't presented as a verbatim Google quote.
+
+**Deploy and verification:**
+- Live md5 `0e94f7a4…` = repo.
+- HTTP 200, 1 H1 (3 lines), 11 H2, 8 cards, kit linked, noindex, no PHP errors, no `#` links. HTML 136.7 KB.
+- No overflow at 1440/390. Added to the style-fingerprint tool.
+
+---
+
+## O-017 — Legacy `/best-local-search-engine-optimization-service/` (production): 301 to `/services/local-seo/`, or keep the URL? — DECISION NEEDED
+**Date:** 29 September 2026 · **Status:** OPEN — Jamil to decide · production untouched
+
+**VERIFIED (repo data):**
+- The production post has 95,538 impressions (GSC Pages export) / 102,060 (crawl sheet), **0 clicks**, average position ≈ 60, **0 internal and 0 external links**, and is presumed indexed.
+- **Current records:** the disposition sheet says "APPROVED (HOLD): BUILD fresh on-strategy…"; `redirect-map-2026-09.csv` row 15 plans **301 → /services/local-seo/**.
+- D-023 said Local SEO had "~0 existing page data". That undercounted this legacy post.
+
+**Differences from the Technical SEO case (D-046):**
+- this URL is a **blog post at the site root**, not a `/services/` page;
+- its slug uses the keyword-stuffed "best-…" pattern that D-006 decided not to carry into new URLs.
+
+**RECOMMENDATION:** **keep the planned 301 → `/services/local-seo/`** (Option A).
+- A single-hop 301 carries its signals to the new service page.
+- The service stays inside the `/services/` architecture, and "best-…" is not revived.
+- Option B (keep the URL and publish Local SEO there) is possible but mixes a root-level "best-" post URL into the service structure.
+
+**Related:** `/how-to-do-local-seo-audit-11-easy-steps/` (8,340 impressions, never crawled) is already APPROVED: BUILD fresh. It should become a cluster article linking to Local SEO and the Audit page.
+
+---
+
 ## D-049 — Hero CTA buttons kept on one line (all pages)
 **Date:** 29 September 2026 · **Status:** DONE (Jamil, with a screenshot of the International SEO hero: "Keep the buttons in one line")
 
