@@ -1,7 +1,7 @@
 import { chromium } from '/opt/node22/lib/node_modules/playwright/index.mjs';
 import fs from 'fs'; import crypto from 'crypto';
 const tag=process.argv[2];
-const pages={svc:['services/','.rl-svc'],aiso:['services/ai-search-optimization/','.rl-aiso'],geo:['services/generative-engine-optimization/','.rl-geo'],llm:['services/llm-optimization/','.rl-llm'],tseo:['services/technical-seo/','.rl-tseo']};
+const pages={svc:['services/','.rl-svc'],aiso:['services/ai-search-optimization/','.rl-aiso'],geo:['services/generative-engine-optimization/','.rl-geo'],llm:['services/llm-optimization/','.rl-llm'],tseo:['services/technical-seo-services/','.rl-tseo']};
 const props=['display','position','width','height','margin','padding','font-family','font-size','font-weight','line-height','letter-spacing','text-transform','color','background-color','background-image','border','border-left','box-shadow','grid-template-columns','gap','justify-content','align-items','opacity','text-align','max-width','flex-direction','list-style-type','backdrop-filter','outline','fill','stroke','stroke-width','animation-name','transform','white-space','overflow-x'];
 const b = await chromium.launch({proxy:{server:process.env.HTTPS_PROXY}});
 const ctx = await b.newContext({ignoreHTTPSErrors:true,reducedMotion:'reduce'});

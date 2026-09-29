@@ -198,7 +198,7 @@ function rl_render_aiso() {
           <tr><th scope="row">Where it shows</th><td>Google and Bing results</td><td class="us">ChatGPT, Perplexity, Gemini, Google AI Overviews</td><td>The answer text and its source list</td><td>What a model says about you, with or without a search</td></tr>
           <tr><th scope="row">What we work on</th><td>Technical health, content, links</td><td class="us">AI-crawler access, entity, content, evidence, authority</td><td>Passage structure, answer blocks, citations</td><td>Entity consistency, descriptions, third-party coverage</td></tr>
           <tr><th scope="row">How it's measured</th><td>Rankings, clicks, conversions</td><td class="us">Mentions, citations, accuracy, share of voice, AI referrals</td><td>Citation rate per prompt</td><td>Accuracy and consistency of descriptions</td></tr>
-          <tr><th scope="row">Learn more</th><td><?php $l = $ex('services/best-search-engine-optimization-services'); echo $l ? '<a href="' . $l . '">SEO &rarr;</a>' : '<a href="' . $u('services/technical-seo') . '">Technical SEO &rarr;</a>'; ?></td><td class="us">You are here</td><td><a href="<?php echo $u('services/generative-engine-optimization'); ?>">GEO &rarr;</a></td><td><a href="<?php echo $u('services/llm-optimization'); ?>">LLM Optimization &rarr;</a></td></tr>
+          <tr><th scope="row">Learn more</th><td><?php $l = $ex('services/best-search-engine-optimization-services'); echo $l ? '<a href="' . $l . '">SEO &rarr;</a>' : '<a href="' . $u('services/technical-seo-services') . '">Technical SEO &rarr;</a>'; ?></td><td class="us">You are here</td><td><a href="<?php echo $u('services/generative-engine-optimization'); ?>">GEO &rarr;</a></td><td><a href="<?php echo $u('services/llm-optimization'); ?>">LLM Optimization &rarr;</a></td></tr>
         </tbody>
       </table>
     </div>
@@ -285,7 +285,7 @@ function rl_render_aiso() {
       <?php foreach ([
           ['services/generative-engine-optimization', 'Passage level', 'Generative Engine Optimization (GEO)', 'Structures your pages so generative engines extract and cite them.'],
           ['services/llm-optimization', 'Entity level', 'LLM Optimization', 'Shapes how language models understand and describe your brand.'],
-          ['services/technical-seo', 'Foundation', 'Technical SEO', 'Makes sure search engines and AI crawlers can reach and read every page that matters.'],
+          ['services/technical-seo-services', 'Foundation', 'Technical SEO', 'Makes sure search engines and AI crawlers can reach and read every page that matters.'],
           ['services/seo-content-systems', 'Content', 'SEO Content Systems', 'Research-led, evidence-checked content that gives AI engines something worth citing.'],
           ['services/seo-ai-search-audit', 'Starting point', 'SEO & AI Search Audit', 'A full review of your Google and AI-search performance with a prioritised fix list.'],
           ['services/agents/aeo-geo-optimization', 'Always on', 'AEO/GEO Optimization Agent', 'The Search Authority OS agent that tracks where you appear in AI answers and structures pages to be cited.'],

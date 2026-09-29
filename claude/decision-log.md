@@ -597,8 +597,35 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
-## O-016 — `/services/technical-seo-services/` (production): keep the URL, or 301 it? — DECISION NEEDED
-**Date:** 29 September 2026 · **Status:** OPEN — Jamil to decide · **Production untouched** (analysis used repo data only)
+## D-046 — Technical SEO keeps its production URL `/services/technical-seo-services/` (no redirect)
+**Date:** 29 September 2026 · **Status:** APPROVED by Jamil ("B, keep the URL and rename the page") · resolves O-016 · **supersedes the D-023 row** "technical-seo-services → 301 /services/technical-seo/"
+
+**Decision:** the rebuilt Technical SEO page launches at the existing production URL `/services/technical-seo-services/`. There is no redirect, so its 16-month indexing history (27,457 impressions on the "technical seo services" query family) stays attached to the same URL. This matches the 10 Sep page-level approval ("APPROVED: PRESERVE — rebuild to D-012 standard"). Register row changed to `APPROVED-PRESERVE` in `claude/data/approved-new-urls-2026-09.csv`. **Production is untouched**; the new content goes live there only at the approved migration.
+
+**Done on `.online`:** one guarded call. It checked that page 99 was the expected page and that no post used the new slug, backed up and md5-checked the 6 files, then wrote them and renamed the slug.
+- Page 99 slug `technical-seo` → **`technical-seo-services`**; it is live at https://reinforcelab.online/services/technical-seo-services/.
+- Every internal reference was updated (8): footer Solutions list (`reinforce-header.php`); Services hub card and "Organic traffic is falling" router (`reinforce-services.php`); related-service cards on AISO (and its comparison-table fallback link), GEO and LLM; `rl_is_techseo()`; and the style-fingerprint tool.
+- Backup suffix `.bak-20260929-165159`. Live md5s = repo:
+  - header 7dff6c7e…
+  - services 2558166f…
+  - aiso ce9794aa…
+  - geo 4173ddc8…
+  - llm 6309e34f…
+  - techseo f1171b19…
+
+**Verified:**
+- New URL: HTTP 200, 1 H1, page CSS and kit present, breadcrumb Home › Services › Technical SEO, no PHP errors.
+- Hub, AISO, GEO and LLM now link to the new URL (8/7/6/6 occurrences), with 0 old links and 0 `?page_id=99`.
+- Style fingerprint across hub/AISO/GEO/LLM: **0 diffs** vs the previous run. Technical SEO was added to the tool (481 elements).
+
+**Finding (F-019) — Yoast Premium auto-creates redirects on slug change.** The old `.online` URL `/services/technical-seo/` now returns **301 → /services/technical-seo-services/** with `x-redirect-by: Yoast SEO Premium`. The redirect manager added this entry automatically.
+- On `.online` that is harmless; it was a dev-only URL that nothing links to.
+- **For migration:** Yoast's stored redirects on `.online` must be reviewed and **not carried to production blindly**. Every production redirect needs explicit approval (Rule 2). Add this to the launch QA gate.
+
+---
+
+## O-016 — `/services/technical-seo-services/` (production): keep the URL, or 301 it? — RESOLVED → D-046 (Option B)
+**Date:** 29 September 2026 · **Status:** RESOLVED 29 Sep — Jamil: "B, keep the URL and rename the page" · **Production untouched** (analysis used repo data only)
 
 Jamil asked how to keep the live .com page's SEO value and eventually rank in the top 5.
 
@@ -1196,7 +1223,7 @@ Reconciled the 12-item "What We Do" + legacy production services + earlier appro
 | best-seo-content-writing-services (74,989) | /services/seo-content-systems/ |
 | off-page-seo-services (47,499) | /services/enterprise-seo-strategy/ |
 | best-affordable-seo-link-building-services (34,775) | /services/enterprise-seo-strategy/ |
-| technical-seo-services (27,457) | /services/technical-seo/ |
+| ~~technical-seo-services (27,457)~~ | ~~/services/technical-seo/~~ **SUPERSEDED by D-046: URL kept, no redirect** |
 | email-marketing-services (19,339) | /services/marketing-automation/ |
 | best-website-copywriting-services (18,729) | /services/seo-content-systems/ |
 | best-on-page-seo-services (13,100) | /services/best-search-engine-optimization-services/ (core SEO) |

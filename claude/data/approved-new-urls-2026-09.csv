@@ -8,7 +8,7 @@ url,type,status,notes
 /services/marketing-automation/,Service,APPROVED-NEW,D-019 approved 27 Sep
 /services/ai-workflow-automation/,Service,APPROVED-NEW,D-023 (28 Sep) new capability
 /services/enterprise-seo-strategy/,Service,APPROVED-NEW,D-023; 301 target for off-page/link-building
-/services/technical-seo/,Service,APPROVED-NEW,D-023; 301 target for technical-seo-services
+/services/technical-seo-services/,Service,APPROVED-PRESERVE,D-046: production URL kept (Jamil 29 Sep; was planned 301 to /services/technical-seo/ in D-023)
 /services/international-seo/,Service,APPROVED-NEW,D-023 (28 Sep) new capability
 /services/llm-optimization/,Service,APPROVED-NEW,D-023 (28 Sep) new capability
 /services/lead-generation-systems/,Service,APPROVED-NEW,D-023; 301 target for ppc-management

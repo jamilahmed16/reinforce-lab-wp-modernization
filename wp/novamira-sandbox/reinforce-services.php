@@ -14,7 +14,7 @@ function rl_services_groups() {
     return [
         ['seo', 'Search Engine Optimization', 'Search', 'Rankings and clicks in Google and Bing — built on technical health, strategy and authority.', [
             ['best-search-engine-optimization-services', 'Search Engine Optimization', 'SEO', 'The core SEO program: strategy, on-page, technical and authority work in one plan.'],
-            ['technical-seo', 'Technical SEO', 'Technical', 'Crawlability, indexation, architecture and speed — so search engines and AI crawlers can reach every page that matters.'],
+            ['technical-seo-services', 'Technical SEO', 'Technical', 'Crawlability, indexation, architecture and speed — so search engines and AI crawlers can reach every page that matters.'],
             ['enterprise-seo-strategy', 'Enterprise SEO Strategy', 'Enterprise', 'Search strategy for large sites and multi-team organisations — governance, priorities and authority at scale.'],
             ['international-seo', 'International SEO', 'International', 'Multi-country and multi-language search — hreflang, market targeting and localised content.'],
             ['local-seo', 'Local SEO', 'Local', 'Visibility in map results and local searches for every location you serve.'],
@@ -43,7 +43,7 @@ function rl_services_groups() {
 /* problem-first router: [problem, [service slugs]] */
 function rl_services_router() {
     return [
-        ['Organic traffic is falling', ['technical-seo', 'seo-ai-search-audit']],
+        ['Organic traffic is falling', ['technical-seo-services', 'seo-ai-search-audit']],
         ['We rank on Google but not in AI answers', ['ai-search-optimization', 'generative-engine-optimization']],
         ['AI tools describe us wrongly — or not at all', ['llm-optimization']],
         ['Content gets published but produces no pipeline', ['seo-content-systems']],

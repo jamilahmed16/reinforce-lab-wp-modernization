@@ -1,12 +1,12 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab — Technical SEO
- * Description: /services/technical-seo/ (D-023 new slug; legacy /services/technical-seo-services/ 301s here at cutover) — Technical SEO service page. Provides [reinforce_techseo]. Uses the shared kit (D-044). Hero animation "Crawl, fix, index" (D-039 Step 3).
+ * Description: /services/technical-seo/ (production URL kept — D-046; was /services/technical-seo/ on .online) — Technical SEO service page. Provides [reinforce_techseo]. Uses the shared kit (D-044). Hero animation "Crawl, fix, index" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
 
-function rl_is_techseo() { return is_page('technical-seo'); }
+function rl_is_techseo() { return is_page('technical-seo-services'); }
 
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_techseo_faqs() {

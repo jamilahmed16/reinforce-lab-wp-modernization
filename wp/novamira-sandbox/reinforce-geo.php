@@ -307,7 +307,7 @@ function rl_render_geo() {
           ['services/ai-search-optimization', 'The umbrella', 'AI Search Optimization', 'The full program for being visible, accurately described and recommended across AI search.'],
           ['services/llm-optimization', 'Entity level', 'LLM Optimization', 'Shapes how language models understand and describe your brand.'],
           ['services/seo-content-systems', 'Content', 'SEO Content Systems', 'Research-led, evidence-checked content produced as a system.'],
-          ['services/technical-seo', 'Foundation', 'Technical SEO', 'Makes sure search engines and AI crawlers can reach and read every page that matters.'],
+          ['services/technical-seo-services', 'Foundation', 'Technical SEO', 'Makes sure search engines and AI crawlers can reach and read every page that matters.'],
           ['services/seo-ai-search-audit', 'Starting point', 'SEO & AI Search Audit', 'A full review of your Google and AI-search performance with a prioritised fix list.'],
           ['services/agents/aeo-geo-optimization', 'Always on', 'AEO/GEO Optimization Agent', 'The Search Authority OS agent that tracks where you appear in AI answers and structures pages to be cited.'],
       ] as $r) { $l = $ex($r[0]); $in = '<span class="n">' . esc_html($r[1]) . '</span><h3>' . esc_html($r[2]) . '</h3><p>' . esc_html($r[3]) . '</p>';

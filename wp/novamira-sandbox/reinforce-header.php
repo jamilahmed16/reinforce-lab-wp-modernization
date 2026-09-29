@@ -287,7 +287,7 @@ function rl_render_footer() {
         'AI Workflow Automation' => 'services/ai-workflow-automation',
         'AI Search Optimization' => 'services/ai-search-optimization',
         'Enterprise SEO Strategy' => 'services/enterprise-seo-strategy',
-        'Technical SEO' => 'services/technical-seo',
+        'Technical SEO' => 'services/technical-seo-services',
         'International SEO' => 'services/international-seo',
         'SEO Content Systems' => 'services/seo-content-systems',
         'Generative Engine Optimization' => 'services/generative-engine-optimization',
