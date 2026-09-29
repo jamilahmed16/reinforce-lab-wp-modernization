@@ -10,75 +10,6 @@ define('RL_DIAG_NOTIFY', 'hello@reinforcelab.com');
 
 function rl_is_diag() { return is_page('search-authority-diagnostic'); }
 
-/* ---------- Hero animation: 7-layer scan (D-039 4/5) ----------
-   A scan line sweeps the seven intelligence layers; each bar fills as it passes, the
-   matching ring segment lights, then the score resolves to "?" — your score is the
-   unknown the diagnostic answers. Bar lengths are illustrative only (no numbers shown).
-   10s loop: scan 3–59% · hold to 86% · soft fade 86–93% · reset. */
-function rl_diag_scan_rows() {
-    return [['01', 'Organic', 150], ['02', 'AI Search', 96], ['03', 'Content', 172], ['04', 'Competitors', 120], ['05', 'Demand', 184], ['06', 'Voice', 78], ['07', 'Technical', 138]];
-}
-function rl_diag_scan_t($i) { $s = 6.8 + 8.07 * $i; return [round($s, 1), round($s + 7, 1)]; }
-function rl_diag_scan_css() {
-    $k = '';
-    foreach (rl_diag_scan_rows() as $i => $r) {
-        list($s, $e) = rl_diag_scan_t($i);
-        $k .= "@keyframes rldF$i{0%,{$s}%{transform:scaleX(0);opacity:1}{$e}%,86%{transform:scaleX(1);opacity:1}93%{transform:scaleX(1);opacity:0}94%,100%{transform:scaleX(0);opacity:0}}\n";
-        $k .= "@keyframes rldL$i{0%,{$s}%{opacity:.38}" . round($s + 2, 1) . "%,86%{opacity:1}93%,100%{opacity:.38}}\n";
-        $k .= "@keyframes rldS$i{0%," . round($e - 1, 1) . "%{opacity:0}" . round($e + 2, 1) . "%,86%{opacity:1}93%,100%{opacity:0}}\n";
-        $k .= ".rl-diag .sc-r$i .sc-f{animation-name:rldF$i}.rl-diag .sc-r$i .sc-lb{animation-name:rldL$i}.rl-diag .sc-r$i .sc-d,.rl-diag .sc-s$i{animation-name:rldS$i}\n";
-    }
-    return '.rl-diag .scan{margin:0 0 22px;padding:0 0 18px;border-bottom:1px solid var(--line-2)}
-.rl-diag .scan .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
-.rl-diag .scan .cap span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
-.rl-diag .scan .cap span:first-child::before{content:"";display:inline-block;width:6px;height:6px;background:var(--red-2);margin-right:8px;vertical-align:1px;animation:rldBlink 2s ease-in-out infinite}
-.rl-diag .sc-lb{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;fill:var(--ink);opacity:.38}
-.rl-diag .sc-lb .n{fill:var(--red-3)}
-.rl-diag .sc-t{stroke:var(--line-2);stroke-width:1}
-.rl-diag .sc-f{fill:url(#rldBar);transform-box:fill-box;transform-origin:0 50%;transform:scaleX(0)}
-.rl-diag .sc-d{fill:#fff;opacity:0}
-.rl-diag .sc-f,.rl-diag .sc-lb,.rl-diag .sc-d,.rl-diag .sc-s{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
-.rl-diag .sc-scan{animation:rldScan 10s linear infinite both}
-.rl-diag .sc-ln{stroke:var(--red-3);stroke-width:1}
-.rl-diag .sc-s0g{fill:none;stroke:rgba(255,255,255,.07);stroke-width:4}
-.rl-diag .sc-s{fill:none;stroke:var(--red-2);stroke-width:4;opacity:0}
-.rl-diag .sc-q{font-family:var(--f-display);font-weight:600;font-size:32px;fill:var(--ink);transform-box:fill-box;transform-origin:50% 50%;animation:rldQ 10s cubic-bezier(.45,0,.2,1) infinite both}
-.rl-diag .sc-ql{font-family:var(--f-mono);font-size:7.5px;letter-spacing:.2em;fill:var(--ink-faint)}
-.rl-diag .sc-h{fill:none;stroke:var(--red-line);stroke-width:1;transform-box:fill-box;transform-origin:50% 50%;opacity:0;animation:rldH 10s ease-out infinite both}
-@keyframes rldScan{0%,2%{transform:translateY(6px);opacity:0}4%{opacity:1}57%{opacity:1}59%{transform:translateY(124px);opacity:0}100%{transform:translateY(124px);opacity:0}}
-@keyframes rldQ{0%,64%{opacity:.28;transform:scale(1)}68%{opacity:1;transform:scale(1.1)}73%,86%{opacity:1;transform:scale(1)}93%,100%{opacity:.28;transform:scale(1)}}
-@keyframes rldH{0%,66%{opacity:0;transform:scale(.94)}70%{opacity:1}82%,100%{opacity:0;transform:scale(1.08)}}
-@keyframes rldBlink{0%,100%{opacity:1}50%{opacity:.25}}
-@media(max-width:560px){.rl-diag .sc-lb{font-size:12px;letter-spacing:.04em}.rl-diag .sc-ql{font-size:9px}.rl-diag .scan .cap span+span{display:none}}
-' . $k;
-}
-function rl_diag_scan_svg() {
-    $rows = '';
-    foreach (rl_diag_scan_rows() as $i => $r) {
-        $y = 14 + 17 * $i; $w = $r[2];
-        $rows .= '<g class="sc-r' . $i . '"><text class="sc-lb" x="0" y="' . ($y + 3.4) . '"><tspan class="n">' . $r[0] . '</tspan> ' . esc_html(strtoupper($r[1])) . '</text>'
-            . '<line class="sc-t" x1="118" y1="' . $y . '" x2="318" y2="' . $y . '"/>'
-            . '<rect class="sc-f" x="118" y="' . ($y - 1.5) . '" width="' . $w . '" height="3"/>'
-            . '<circle class="sc-d" cx="' . (118 + $w) . '" cy="' . $y . '" r="2.2"/></g>';
-    }
-    $seg = ''; $track = '';
-    for ($i = 0; $i < 7; $i++) {
-        $off = round(-$i * 100 / 7, 3);
-        $a = 'cx="416" cy="64" r="44" pathLength="100" stroke-dasharray="12.3 87.7" stroke-dashoffset="' . $off . '"';
-        $track .= '<circle class="sc-s0g" ' . $a . '/>';
-        $seg .= '<circle class="sc-s sc-s' . $i . '" ' . $a . '/>';
-    }
-    return '<svg viewBox="0 0 480 132" aria-hidden="true" focusable="false"><defs>'
-        . '<linearGradient id="rldBar" x1="0" x2="1"><stop offset="0" stop-color="#5a0a0d"/><stop offset="1" stop-color="#e23b3b"/></linearGradient>'
-        . '<linearGradient id="rldTrail" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e23b3b" stop-opacity="0"/><stop offset="1" stop-color="#e23b3b" stop-opacity=".16"/></linearGradient></defs>'
-        . $rows
-        . '<g class="sc-scan"><rect x="0" y="-16" width="318" height="16" fill="url(#rldTrail)"/><line class="sc-ln" x1="0" y1="0" x2="318" y2="0"/></g>'
-        . '<g transform="rotate(-90 416 64)">' . $track . $seg . '</g>'
-        . '<circle class="sc-h" cx="416" cy="64" r="53"/>'
-        . '<text class="sc-q" x="416" y="75" text-anchor="middle">?</text>'
-        . '<text class="sc-ql" x="416" y="126" text-anchor="middle">YOUR SCORE</text></svg>';
-}
-
 /* ---------- single source for form choices, FAQ and description ---------- */
 function rl_diag_choices() {
     return [
@@ -272,7 +203,7 @@ body.rl-diag-page .fl-page-content,body.rl-diag-page .fl-content,body.rl-diag-pa
 .rl-diag .faq details[open] summary::after{content:"–"}
 .rl-diag .faq p{padding:0 24px 22px;color:var(--ink-dim);font-size:15px;max-width:75ch}
 .rl-diag .faq p a{color:var(--ink);border-bottom:1px solid var(--red-line)}
-<?php echo rl_diag_scan_css(); ?></style>
+</style>
 <?php }
 
 /* ---------- schema: extend Yoast's graph ---------- */
@@ -334,7 +265,6 @@ function rl_render_diagnostic() {
     </div>
 
     <div class="form" id="request">
-      <figure class="scan rl-anim" role="img" aria-label="Diagnostic scan: seven intelligence layers are reviewed one by one and combined into your Search Authority Score"><div class="cap" aria-hidden="true"><span>Diagnostic scan</span><span>7 layers &rarr; 1 score</span></div><?php echo rl_diag_scan_svg(); ?></figure>
       <?php if ($state === 'ok') { ?>
       <div class="ok show" role="status">
         <div class="m">Request received</div>
