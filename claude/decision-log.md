@@ -597,6 +597,41 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-054 — Enterprise SEO Strategy page built on `.online` (page 98, published)
+**Date:** 29 September 2026 · **Status:** DONE (Jamil: "yes, go ahead with Enterprise SEO Strategy")
+
+- **URL:** `/services/enterprise-seo-strategy/` (D-023 new URL). Page 98: draft → publish, content `[reinforce_enterprise]`.
+- **Yoast:** title "Enterprise SEO Strategy Services | Reinforce Lab"; meta "Enterprise SEO strategy for large, complex sites: one SEO standard across teams, template fixes shipped through your sprints, safe migrations and authority built within Google's link policies."
+- **File:** `wp/novamira-sandbox/reinforce-enterprise.php`, on the shared kit (D-044). Guarded create: file absent, page 98 empty draft under 68, `blog_public = 0` checked first. Live md5 = repo `a4f9f7a7…`.
+- **Research:** `claude/research/enterprise-seo-research-2026-09-29.md` (Exa agent run + Google primary sources). Every Google claim on the page is quoted or paraphrased from those sources and linked.
+- **Hero animation "One standard, every page":** four teams → one SEO-standards gate (templates · QA gate · releases) → an 8×9 page grid lights column by column → earned links from press, partners and industry. 10 s loop, soft fade, reset; paused off-screen and under reduced motion (header).
+- **Sections:** answer-first lede · Why SEO breaks at scale (6) · What it covers (9 workstreams) · **Authority & off-page SEO** (Google's link-spam definition, 5 myth/fact pairs: bought links, sponsored/nofollow, press-release anchors, footer/template links, site reputation abuse; plus "what we do instead") · Migrations (5 steps, Google site-move quote) · Process (5) · Deliverables (8) · Measurement (6) · Straight answer · 8 industry cards (D-047) · 6 related services · 6 FAQs · final CTA.
+- **Schema:** `Service` + `FAQPage` (6) added to Yoast's graph; breadcrumb Home › Services › Enterprise SEO Strategy.
+- **Not claimed:** no prices, results, clients or case studies (none supplied); the F-001 case study is not used (permission pending); crawl-budget figures are given with Google's own "rough estimate" caveat.
+- **Verified:** 1 H1 (three lines), 12 H2, 8 industry cards, kit loaded, no PHP errors, noindex, no `href="#"`, no horizontal overflow at 390 px; section screenshots checked. Fingerprint tool now includes `ent`.
+
+---
+
+## O-018 — Legacy off-page / link-building URLs → `/services/enterprise-seo-strategy/`: intent mismatch — OPEN (Jamil to decide)
+**Date:** 29 September 2026 · **Status:** OPEN — production untouched; every URL below stays `PENDING — NO CHANGE AUTHORIZED` until Jamil decides.
+
+**Finding (VERIFIED, production GSC data, read-only):** D-023 maps two legacy production URLs to the enterprise page:
+- `/services/off-page-seo-services/` — 12 clicks, 47,499 impressions, avg position 40.8 (top query "off page seo services", 8,969 imp).
+- `/services/best-affordable-seo-link-building-services/` — 3 clicks, 34,775 impressions, avg position 37.2 ("affordable seo link building services" at avg position 16.5, 3,862 imp).
+
+**The problem (INFERENCE):** these searchers want *off-page SEO / affordable link building*. The enterprise page is about governance for large organisations. A 301 to a page that doesn't match the query intent may not carry the rankings across.
+
+**Mitigation already built:** the enterprise page has a substantial "Authority & off-page SEO" section (`#authority`) and an FAQ "Do you build links?", so the redirect target does answer the off-page question.
+
+**Options (RECOMMENDATION = B):**
+- **A.** Keep D-023 as is: 301 both to `/services/enterprise-seo-strategy/`.
+- **B.** 301 both to the future **Digital PR** page (`/services/press-release-services/`, rebuilt per D-023) — the closest intent match for ethical off-page / link building — and link from it to Enterprise.
+- **C.** Keep one legacy URL alive as an "Off-page SEO & link building" page (rebuilt, no paid-link offers).
+
+Nothing changes on production until Jamil approves a specific option for each URL.
+
+---
+
 ## D-053 — SEO & AI Search Audit pricing and terms set (delegated to Claude at industry standard)
 **Date:** 29 September 2026 · **Status:** APPROVED by delegation (Jamil: "What should be the audit pricing as industry standard go ahead")
 
