@@ -597,6 +597,62 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-041 — AI Search Optimization page built on `.online` (page 72, published)
+**Date:** 29 September 2026 · **Status:** BUILT (Jamil: "yes, go ahead with AI Search Optimization")
+
+`/services/ai-search-optimization/` — **APPROVED — NEW URL (D-006)**, not a production URL. New sandbox file `wp/novamira-sandbox/reinforce-aiso.php` provides `[reinforce_aiso]`; page **72** set to the shortcode and **published** (guarded: page empty, parent 68, `blog_public=0`). Yoast title "AI Search Optimization Services (AISO) | Reinforce Lab" (54); meta "Get your brand found, cited and described accurately in ChatGPT, Perplexity, Gemini and Google AI Overviews — AI Search Optimization from Reinforce Lab."
+
+**Competitor check (Exa, 29 Sep; VERIFIED on their pages):** Cite Solutions, Arobis AI, rank.ai, AEORanks, optimizeaisearch.com, pmax, Search Edge. The common standard is:
+- an answer-first definition;
+- a prompt set built from real buyer questions;
+- a baseline per engine against named competitors;
+- AI-crawler access (robots.txt, llms.txt, server-rendered pages);
+- entity and schema work;
+- third-party authority;
+- metrics such as mention rate, citation rate and share of voice;
+- an honest "no guarantees".
+
+**Where we go further (INFERENCE):**
+- a **description-accuracy** measure (does the AI describe you correctly?);
+- **evidence verification** — claims tied to sources and human-reviewed, which suits regulated industries;
+- a single **comparison table of SEO vs AISO vs GEO vs LLM Optimization**, linked to each service.
+
+**No borrowed statistics:** competitor figures such as "citation half-life", "73 % of sites" and "4–6 weeks" were not reused, because none of them are our data.
+
+**Structure** (content follows the D-012 standard: answer-first, question-shaped H2s):
+- hero, with a 3-line H1: "Be found in Google. / Be named in / AI answers.";
+- "What is AI Search Optimization — and how is it different?", with the comparison table;
+- "Why do brands disappear from AI answers?" — 6 causes, each with its fix;
+- "How does AI Search Optimization work?" — 5-step loop;
+- "What you get" — 8 deliverables;
+- "How do we measure AI visibility?" — 5 measures;
+- "No one can guarantee what an AI will say" (honesty panel);
+- "Built for" 6 industries and "Works with" 6 services plus the AEO/GEO Agent;
+- 6 FAQs and the final CTA.
+
+**Schema:** `Service` (alternateName AISO, provider → Organization, areaServed Worldwide) plus `FAQPage`. Yoast adds WebPage and BreadcrumbList (Home › Services › AI Search Optimization). HTML is 138 KB, under the §2 budget.
+
+**Hero animation "Cited answer" (D-039 Step 3), 10 s loop:**
+1. A buyer's prompt types in.
+2. An AI answer writes itself, with citation markers.
+3. Three sources appear. Source [1] "Your brand" lights, and a pulse links the marker to the source card.
+4. The checks tick: crawlable · structured · verified.
+5. The three measures light: mentioned · cited · described accurately.
+6. Soft fade and reset.
+
+Engine tabs (ChatGPT · Perplexity · Gemini · AI Overviews) step every 10 s on a 40 s cycle. The engine names match the already-published A-04 agent copy.
+
+**Open (facts, not invented):** exact engines monitored and prompts per tier remain on Jamil's facts list (competitor analysis §5). The page names only the four engines already published and gives no counts. The **AI-crawler policy** (GPTBot/ClaudeBot/PerplexityBot/Google-Extended) is still a decision for Jamil (standard §4). The page promises to "agree your crawler policy" with clients; it does not state our own.
+
+**Deploy and verification:**
+- Created new (no prior file); live md5 `7fd15aa4…` = repo.
+- HTTP 200, 1 H1 (3 lines), noindex, no PHP errors.
+- No `#` links: unbuilt pages (e.g. Digital PR) render as plain chips.
+- No overflow at 1440/390; reduced motion static.
+- Preview fixes before deploy: the typed prompt was clipped, and the "Prompt" label crowded the tabs.
+
+---
+
 ## D-040 — `/services/` hub built on `.online` (page 68, published)
 **Date:** 29 September 2026 · **Status:** BUILT (Jamil: "yes, go ahead with the Services hub")
 
