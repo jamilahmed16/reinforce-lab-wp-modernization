@@ -597,6 +597,53 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-057 — SEO Content Systems page built on `.online` (page 85, published)
+**Date:** 29 September 2026 · **Status:** DONE (Jamil: "B, then go ahead with SEO Content Systems")
+
+- **URL:** `/services/seo-content-systems/` (approved new URL, 27 Sep 2026). Page 85: draft → publish, content `[reinforce_content]`. Guarded create: file absent, page 85 empty draft under 68, `blog_public = 0`.
+- **Yoast:** title "SEO Content Writing Services & Content Systems | Reinforce Lab"; meta "SEO content writing run as a system: research, topic maps, expert-led briefs, human-edited pages, internal links and refreshes. Content that ranks, gets cited and converts."
+- **Why this framing:** under D-023 it is the 301 target for 4 legacy pages (~107k impressions in all), so it answers "seo content writing services", "seo blog writing services", "website copywriting services" and content-marketing searches in one place. The Service `alternateName` = SEO content writing services / SEO copywriting / Blog writing services.
+- **File:** `wp/novamira-sandbox/reinforce-content.php` on the shared kit (D-044). Live md5 = repo `edd6ca00…`.
+- **Research:** `claude/research/seo-content-systems-research-2026-09-29.md` — 6 competitors, Google's AI-content guidance, and the CMI 2026 B2B report (read directly).
+- **Hero animation "Content system":**
+  - A page moves through research → brief → draft → review → publish.
+  - It then joins a topic cluster: the pillar page and 6 supporting pages light and link.
+  - A refresh loop runs back to research.
+  - 10 s loop, soft fade, reset.
+- **Sections:** answer-first lede · What is an SEO content system (6 stages) · Why programmes stall (6 CMI 2026 stats) · **Does Google penalise AI content?** (5 myth/fact pairs, quoted from Google, plus our AI policy: people write, edit and fact-check; experts approve) · What we produce (9) · Process (5; "never in bulk", consistent with F-003) · Deliverables (8) · Measurement (6) · Straight answer ("More content is not a strategy") · 8 industry cards · 6 related · 6 FAQs · final CTA.
+- **Not claimed:** no volumes, prices, turnaround or results.
+- **Verified:** 1 H1 (three lines), 12 H2, 8 cards, kit loaded, no PHP errors, noindex, no `href="#"`, 390 px with no overflow; section screenshots checked. Fingerprint tool now includes `sc`.
+
+---
+
+## F-020 — Legacy content-service URLs: URL sheet says PRESERVE, D-023 says 301 → `/services/seo-content-systems/`
+**Date:** 29 September 2026 · **Status:** OPEN — needs Jamil's one-line confirmation. Nothing changed.
+
+**Finding (VERIFIED):** in `preserve-disposition-sheet-pagelevel-2026-09-10.csv`, 4 rows still read `APPROVED: PRESERVE — rebuild to D-012 standard`:
+
+| Row | Legacy URL |
+|---|---|
+| 101 | `/services/content-marketing-services/` |
+| 122 | `/services/best-website-copywriting-services/` |
+| 123 | `/services/best-blog-writing-services/` |
+| 163 | `/services/best-seo-content-writing-services/` |
+
+D-023 (28 Sep, later and explicit) maps all four to `301 → /services/seo-content-systems/`.
+
+The same gap likely exists for other D-023 redirects. Two are confirmed:
+- `best-on-page-seo-services` → core SEO pillar;
+- `email-marketing-services` / `ppc-management-services` / `business-consultancy-service` / social-media pages → their new targets.
+
+The O-018 rows were already updated.
+
+The hold-301s that point at these legacy URLs would become chains:
+- `/copywriting/` → best-website-copywriting;
+- `/serv.../content-marketing-services/` → content-marketing-services.
+
+**RECOMMENDATION:** confirm that D-023 supersedes the sheet. The sheet rows would then be updated to `APPROVED: 301 → <D-023 target>`, and the hold-301s flattened to the final target. I have not edited these approvals.
+
+---
+
 ## D-056 — Core SEO pillar built on `.online` (page 190, published) at the kept production URL
 **Date:** 29 September 2026 · **Status:** DONE (Jamil: "yes, go ahead with the core SEO pillar")
 
@@ -623,8 +670,10 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
-## O-019 — Production SEO packages ($2,000–$6,500/yr, WooCommerce "Buy") on the core SEO pillar — OPEN (Jamil to decide)
-**Date:** 29 September 2026 · **Status:** OPEN — production untouched; the URL stays `PENDING — NO CHANGE AUTHORIZED` until the migration.
+## O-019 — Production SEO packages ($2,000–$6,500/yr, WooCommerce "Buy") on the core SEO pillar — RESOLVED: Option B
+**Date:** 29 September 2026 · **Status:** RESOLVED 29 Sep 2026 (Jamil: "B, then go ahead with SEO Content Systems")
+
+**Resolution:** the cart packages are **retired at migration**. The rebuilt pillar leads to the free diagnostic, the SEO & AI Search Audit and the Search Authority OS packages. It shows "SEO programmes from $X/month" only once Jamil sets X (**still needed**). At migration the three Woo SEO products are **unpublished, not deleted**, and existing orders and subscriptions are left untouched. **Still needed before migration:** a read-only production check for active subscriptions to these products, which needs Jamil's OK because it is production. Production stays untouched until then.
 
 **Finding (VERIFIED, read-only):** production's `/services/best-search-engine-optimization-services/` sells three WooCommerce SEO packages:
 
