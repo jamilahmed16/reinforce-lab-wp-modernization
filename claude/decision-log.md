@@ -597,8 +597,18 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
-## D-036 — Search Authority Diagnostic page `/search-authority-diagnostic/` (page 65) — PLAN, pending Jamil
-**Date:** 28 September 2026 · **Status:** PLANNING — nothing written to `.online`
+## D-036 — Search Authority Diagnostic page `/search-authority-diagnostic/` (page 65) — BUILT & LIVE on `.online`
+**Date:** 28–29 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified · Approved by Jamil ("Custom form + webhook and others as recommended .. go ahead")
+
+**Built (29 Sep):** sandbox file `reinforce-diagnostic.php` (repo `wp/novamira-sandbox/reinforce-diagnostic.php`, live md5 `6452b700…` = repo), shortcode `[reinforce_diagnostic]`; page 65 content set and **published**; Yoast title `Free Search Authority Diagnostic | Reinforce Lab` (48) + meta (144).
+- **Form backend = custom form + webhook (Jamil).** Posts to `admin-post.php` (`rl_diag_request`). Each valid request → (a) private **ACF post type "Diagnostic Requests"** (`rl_diag_request`, ACF post-type ID 161, not public/queryable/REST) + **ACF field group "Diagnostic Request"** (ID 162, 12 fields); (b) email to **hello@reinforcelab.com** (Reply-To = requester); (c) JSON **webhook to option `rl_diag_webhook_url` — empty = OFF** (set it to the n8n URL later; no code change). Spam: honeypot, <3 s time trap, 5 requests/hour/IP. Validation: name + valid email + company required; selects whitelisted; 200-char caps.
+- **Copy = "we analyze…"** (Jamil: switch to system wording when the OS software runs diagnostics). Eyebrow "Agent 01" removed. Industry dropdown = 8 locked industries + Other (Finance under Professional Services). Consent line links the **draft** privacy policy (page 3) — **publish it before launch**.
+- **Added vs mock-up:** answer-first definition lede; breadcrumb; 4-question FAQ (free? · what happens next · confidential · vs paid SEO & AI Search Audit → `/services/seo-ai-search-audit/`); step headings h3; deliverables as a list; mock-up "preview / not live" text removed; ticks layout fix.
+- **Schema:** Yoast WebPage + BreadcrumbList (Home > Search Authority Diagnostic) + Organization, plus **Service** with `Offer` price 0 USD and **FAQPage** (4 Q).
+- **Verified live:** HTTP 200 · 1 H1 · noindex · no PHP errors · no horizontal overflow 1440/390 · success + error states render. **End-to-end test:** invalid → rejected (`?diag=invalid`); honeypot → silently dropped (no record); valid test → private record **ID 176 "TEST (Claude build check)"**, `email_sent = yes` (wp_mail accepted — **Jamil to confirm it arrived at hello@reinforcelab.com / check spam**). Test record can be deleted.
+- **Follow-ups:** Cloudflare Turnstile (needs keys) if spam appears; confirm mail deliverability from Hostinger (SMTP/sender domain) before launch; set `rl_diag_webhook_url` when n8n is ready.
+
+**Original plan (28 Sep):**
 
 Design source: `claude/design-previews/search-authority-diagnostic.html` (Hero + request form · 7 intelligence layers + Authority Score · What you receive (6) · How it works (5 steps) · Who it's for (3 tiers) · Final CTA). Same build method as SAOS (sandbox file `reinforce-diagnostic.php`, shortcode, scoped CSS, Yoast title/meta, Service/FAQ/Breadcrumb schema).
 
