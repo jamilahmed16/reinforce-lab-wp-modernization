@@ -189,24 +189,26 @@ body.rl-saos-page .fl-page-content,body.rl-saos-page .fl-content,body.rl-saos-pa
 .rl-saos .lp-ring{fill:none;stroke:var(--line-2);stroke-width:1}
 .rl-saos .lp-ring2{fill:none;stroke:var(--line-2);stroke-width:1;stroke-dasharray:2 7;opacity:.7;transform-origin:260px 222px;animation:rlsSpin 60s linear infinite reverse}
 .rl-saos .lp-comet{animation:rlsSpin 10s linear infinite}
-.rl-saos .lp-tail{fill:none;stroke:var(--red-2);stroke-width:2}
-.rl-saos .lp-head{fill:var(--red-3);filter:drop-shadow(0 0 6px rgba(226,59,59,.9))}
+.rl-saos .lp-tail{fill:none;stroke:var(--red-2);stroke-width:1.4;stroke-linecap:round;opacity:.8}
+.rl-saos .lp-head{fill:#fff;filter:drop-shadow(0 0 4px rgba(226,59,59,.85))}
 .rl-saos .lp-sq{fill:var(--bg);stroke:var(--line-2)}
-.rl-saos .lp-lit,.rl-saos .lp-halo,.rl-saos .lp-lab-on{opacity:0;animation:rlsLit 10s linear infinite;animation-delay:var(--d)}
-.rl-saos .lp-lit{fill:rgba(193,20,20,.45);stroke:var(--red-3)}
-.rl-saos .lp-halo{fill:none;stroke:var(--red-line)}
+.rl-saos .lp-lit,.rl-saos .lp-lab-on{opacity:0;animation:rlsLit 10s cubic-bezier(.45,0,.2,1) infinite both;animation-delay:var(--d)}
+.rl-saos .lp-halo{opacity:0;transform-box:fill-box;transform-origin:50% 50%;animation:rlsHalo 10s ease-out infinite both;animation-delay:var(--d)}
+.rl-saos .lp-lit{fill:rgba(153,0,0,.22);stroke:var(--red-2);stroke-width:1}
+.rl-saos .lp-halo{fill:none;stroke:var(--red-line);stroke-width:1}
 .rl-saos .lp-lab{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;fill:var(--ink-dim)}
 .rl-saos .lp-lab-on{fill:#fff}
 .rl-saos .lp-sub{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.04em;fill:var(--ink-faint)}
-.rl-saos .lp-core{fill:rgba(153,0,0,.10);stroke:var(--red)}
+.rl-saos .lp-core{fill:rgba(153,0,0,.08);stroke:var(--red-line);stroke-width:1}
 .rl-saos .lp-core-t{font-family:var(--f-display);font-size:15px;letter-spacing:.05em;fill:var(--ink);font-weight:600}
 .rl-saos .lp-core-s{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.16em;fill:var(--ink-faint)}
 .rl-saos .lp-axis{stroke:var(--line-2)}
-.rl-saos .lp-auth{fill:none;stroke:var(--red-3);stroke-width:2;stroke-dashoffset:0;animation:rlsAuth 10s linear infinite}
+.rl-saos .lp-auth{fill:none;stroke:var(--red-3);stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round;stroke-dashoffset:0;animation:rlsAuth 10s cubic-bezier(.45,0,.2,1) infinite both}
 @media(max-width:560px){.rl-saos .lp-sub,.rl-saos .loop .cap span+span{display:none}.rl-saos .lp-lab{font-size:17px;letter-spacing:.06em}.rl-saos .lp-core-t{font-size:17px}.rl-saos .loop{padding:16px 12px 8px}}
 @keyframes rlsSpin{to{transform:rotate(360deg)}}
-@keyframes rlsLit{0%{opacity:0}3%{opacity:1}14%{opacity:1}22%{opacity:0}100%{opacity:0}}
-@keyframes rlsAuth{0%{stroke-dashoffset:var(--L)}92%,100%{stroke-dashoffset:0}}
+@keyframes rlsLit{0%{opacity:0}5%,15%{opacity:1}26%,100%{opacity:0}}
+@keyframes rlsHalo{0%{opacity:0;transform:scale(.85)}5%{opacity:1}22%,100%{opacity:0;transform:scale(1.25)}}
+@keyframes rlsAuth{0%{stroke-dashoffset:var(--L);opacity:1}80%,90%{stroke-dashoffset:0;opacity:1}97%{stroke-dashoffset:0;opacity:0}100%{stroke-dashoffset:var(--L);opacity:0}}
 </style>
 <?php }
 
