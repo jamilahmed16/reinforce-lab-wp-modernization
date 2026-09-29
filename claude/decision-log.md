@@ -617,7 +617,14 @@ AI Growth Systems  (umbrella / positioning)
 ---
 
 ## F-020 — Legacy content-service URLs: URL sheet says PRESERVE, D-023 says 301 → `/services/seo-content-systems/`
-**Date:** 29 September 2026 · **Status:** OPEN — needs Jamil's one-line confirmation. Nothing changed.
+**Date:** 29 September 2026 · **Status:** RESOLVED 29 Sep 2026 (Jamil: "yes, D-023 wins")
+
+**Resolution applied (records only; production untouched, redirects happen at the approved migration):**
+- **URL sheet — 23 rows updated.**
+  - The 10 legacy service pages now read `APPROVED: 301 -> <D-023 target> (D-023; confirmed F-020)`. Those rows are 90, 101, 122, 123, 163, 268, 269, 277, 280 and 287.
+  - 13 dependent rows are flattened to the final target, each tagged `[flattened; was -> …]`. They are the HOLD category 301s (134, 144, 146, 147, 200, 201, 215, 233) and the dup-slug 301s (237, 272–275).
+- **`redirect-map-2026-09.csv`:** 22 rows flattened to single-hop (`source` tagged `+flattened`). This includes the O-018 chains (rows 51, 84, 85, 97) and production's existing Yoast chains into these pages. 12 direct rows were added for the legacy URLs themselves: the 10 D-023 pages and the 2 O-018 pages. The map now has 500 rows; none of them redirects into another redirect for these URLs.
+- **Out of scope, noted:** pre-existing multi-hop chains among `/product/…` WooCommerce URLs (SEO and WordPress-design products) remain. They belong with O-019 / the web-design pages and will be fixed when those are decided.
 
 **Finding (VERIFIED):** in `preserve-disposition-sheet-pagelevel-2026-09-10.csv`, 4 rows still read `APPROVED: PRESERVE — rebuild to D-012 standard`:
 
