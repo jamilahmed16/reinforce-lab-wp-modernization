@@ -65,24 +65,28 @@ function rl_diag_handle() {
         'outcome' => $cut($f['outcome'] ?? ''),
     ];
     if ($d['name'] === '' || $d['company'] === '' || !is_email($d['email'])) $go('invalid');
+    // request type (D-053): the audit page links here with ?interest=audit → hidden field; anything else = diagnostic
+    $audit = (($f['interest'] ?? '') === 'audit');
+    $type = $audit ? 'SEO & AI Search Audit' : 'Search Authority Diagnostic';
 
-    $id = wp_insert_post(['post_type' => 'rl_diag_request', 'post_status' => 'private', 'post_title' => $d['company'] . ' — ' . $d['name']], true);
+    $id = wp_insert_post(['post_type' => 'rl_diag_request', 'post_status' => 'private', 'post_title' => ($audit ? '[Audit] ' : '') . $d['company'] . ' — ' . $d['name']], true);
     if (is_wp_error($id) || !$id) $go('error');
     $save = function ($k, $v) use ($id) { function_exists('update_field') ? update_field($k, $v, $id) : update_post_meta($id, $k, $v); };
     foreach ($d as $k => $v) $save($k, $v);
     $save('submitted_at', current_time('mysql'));
+    update_post_meta($id, 'request_type', $type);
 
     $labels = ['name' => 'Name', 'email' => 'Email', 'company' => 'Company', 'website' => 'Website', 'role' => 'Role', 'industry' => 'Industry', 'challenge' => 'Biggest challenge', 'volume' => 'Monthly content volume', 'outcome' => 'Desired outcome'];
-    $body = "New Search Authority Diagnostic request\n\n";
+    $body = "New " . $type . " request\n\n";
     foreach ($labels as $k => $l) $body .= $l . ': ' . ($d[$k] !== '' ? $d[$k] : '—') . "\n";
     $body .= "\nSaved in WordPress: " . admin_url('post.php?post=' . $id . '&action=edit') . "\n";
-    $sent = wp_mail(RL_DIAG_NOTIFY, 'Diagnostic request — ' . $d['company'], $body, ['Reply-To: ' . $d['name'] . ' <' . $d['email'] . '>']);
+    $sent = wp_mail(RL_DIAG_NOTIFY, ($audit ? 'Audit request — ' : 'Diagnostic request — ') . $d['company'], $body, ['Reply-To: ' . $d['name'] . ' <' . $d['email'] . '>']);
     $save('email_sent', $sent ? 'yes' : 'no');
 
     $hook = trim((string) get_option('rl_diag_webhook_url', ''));
     if ($hook !== '') {
         wp_remote_post($hook, ['timeout' => 5, 'blocking' => false, 'headers' => ['Content-Type' => 'application/json'],
-            'body' => wp_json_encode(['type' => 'search_authority_diagnostic_request', 'id' => $id, 'submitted_at' => current_time('c'), 'data' => $d])]);
+            'body' => wp_json_encode(['type' => $audit ? 'seo_ai_search_audit_request' : 'search_authority_diagnostic_request', 'id' => $id, 'submitted_at' => current_time('c'), 'data' => $d])]);
         $save('webhook_sent', 'queued');
     }
     $go('ok');
@@ -238,6 +242,7 @@ add_shortcode('reinforce_diagnostic', 'rl_render_diagnostic');
 function rl_render_diagnostic() {
     $u = function ($path, $fallback = '#') { return esc_url(function_exists('rl_url_by_path') ? rl_url_by_path($path, $fallback) : $fallback); };
     $state = isset($_GET['diag']) ? sanitize_key($_GET['diag']) : '';
+    $is_audit = isset($_GET['interest']) && sanitize_key($_GET['interest']) === 'audit';
     $msgs = ['invalid' => 'Please add your name, a valid work email and your company.', 'limit' => 'Too many requests from this connection. Please try again in an hour or email hello@reinforcelab.com.', 'error' => 'Something went wrong saving your request. Please try again or email hello@reinforcelab.com.'];
     $c = rl_diag_choices();
     $opts = function ($k) use ($c) { $h = '<option value="">Select…</option>'; foreach ($c[$k] as $o) $h .= '<option>' . esc_html($o) . '</option>'; return $h; };
@@ -274,10 +279,11 @@ function rl_render_diagnostic() {
       <?php } else { ?>
       <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
         <input type="hidden" name="action" value="rl_diag_request">
+        <?php if ($is_audit) echo '<input type="hidden" name="interest" value="audit">'; ?>
         <input type="hidden" name="rl_ts" value="<?php echo (int) time(); ?>">
         <div class="hp" aria-hidden="true"><label for="rl_hp">Leave this field empty</label><input id="rl_hp" name="rl_hp" tabindex="-1" autocomplete="off"></div>
-        <span class="ft">Request your diagnostic</span>
-        <span class="fs">Takes ~2 minutes</span>
+        <span class="ft"><?php echo $is_audit ? 'Request your SEO &amp; AI Search Audit' : 'Request your diagnostic'; ?></span>
+        <span class="fs"><?php echo $is_audit ? 'Takes ~2 minutes · we reply with a scope and quote' : 'Takes ~2 minutes'; ?></span>
         <?php if (isset($msgs[$state])) echo '<p class="alert" role="alert">' . esc_html($msgs[$state]) . '</p>'; ?>
         <div class="grid2">
           <div class="field"><label for="name">Full name <span class="req" aria-hidden="true">*</span></label><input id="name" name="name" autocomplete="name" maxlength="200" required></div>

@@ -597,6 +597,47 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-053 — SEO & AI Search Audit pricing and terms set (delegated to Claude at industry standard)
+**Date:** 29 September 2026 · **Status:** APPROVED by delegation (Jamil: "What should be the audit pricing as industry standard go ahead")
+
+**Evidence:** the competitor research (D-051) shows paid audits at $197–$5,000.
+- The cheap end ($197–$500) is typically tool-led.
+- Human-led audits with AI-visibility testing sit at $1,500–$5,000: O8 $1,500, Edge £1,500, Clear Cited $2,500 Full / $4,500 Comprehensive, Avante $5,000.
+- Turnaround 5–14 business days; fee credits 30–90 days are common; walkthroughs 15–60 minutes.
+- Our packages start at $5,000 setup, so the audit must sit clearly below that.
+
+**Terms set:**
+- **Price: from $2,500** (USD, one-time) for a standard website. Large, multi-market or very large sites are **quoted after scoping**.
+- **Turnaround: 10 business days** from confirmed access and scope.
+- **Walkthrough: 60 minutes** with the client team.
+- **Fee credit: 100 %** toward a Search Authority OS package started **within 60 days**.
+- **How to buy:** a scoped request — consultative, matching D-016 (no cart). The audit page's "Request an audit" buttons open the diagnostic form with `?interest=audit`.
+- **Sample report:** not offered until one exists. **Re-check:** not included.
+
+**Implementation:**
+- **`reinforce-diagnostic.php`:** in audit mode the form title becomes "Request your SEO & AI Search Audit" ("we reply with a scope and quote") and carries a hidden `interest=audit` field. The handler then:
+  - prefixes the record title "[Audit]";
+  - stores `request_type` post meta;
+  - sends the email "Audit request — {company}" with the body "New SEO & AI Search Audit request";
+  - sets the webhook type `seo_ai_search_audit_request`.
+  - Normal diagnostic requests are unchanged (verified: the plain form has no `interest` field).
+- **`reinforce-audit.php`:**
+  - hero primary "Request an audit →";
+  - comparison-table cost "From $2,500 — credited toward a package within 60 days";
+  - **new Pricing section**: a "From $2,500" card plus 10 business days / 60-minute walkthrough / credited in full / quoted separately;
+  - new FAQ "How much does the audit cost, and how long does it take?" (7 FAQs);
+  - deliverable "60-minute walkthrough";
+  - final CTA "Request an audit" plus "Start with the free diagnostic";
+  - `Service.offers`: Offer USD 2500 with `PriceSpecification.minPrice` 2500;
+  - section bands re-balanced.
+- Deploy backup `.bak-20260929-182430`. Live md5s = repo: audit `bb6e00c0…`, diagnostic `118150ec…`.
+- **Verified:** 3 "Request an audit" links to `?interest=audit#request`; Offer present; the audit-mode form renders its title and hidden field; the normal form is unchanged; no PHP errors; 390 px on mobile.
+- **Not tested:** a live form submission. It would email hello@reinforcelab.com and create a record, so Jamil can test it.
+
+**Changeable at any time:** all terms live in `reinforce-audit.php` (pricing section, FAQ, table, schema). A change of price is a one-file edit.
+
+---
+
 ## D-052 — International SEO lines refined; legacy local post approved for 301 (O-017 → A)
 **Date:** 29 September 2026 · **Status:** DONE (Jamil: "Make the lines sleek then option A")
 

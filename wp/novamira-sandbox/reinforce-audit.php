@@ -16,6 +16,7 @@ function rl_audit_faqs() {
         ['Is the audit just an automated tool report?', 'No. We use crawlers and data tools to collect information, but people review every finding, check the evidence, remove false alarms and decide the priorities. Each issue in the fix register says what we found, why it matters and how to confirm it has been fixed.'],
         ['How do you test AI search visibility?', 'We agree a fixed set of buyer questions with you, run each one on each AI search tool we cover, and record the tool, date, location, language, whether you were mentioned or cited, and which sources were used. Because AI answers vary, we repeat the runs and report the results as dated observations, not guarantees.'],
         ['What do you need from us?', 'Read-only access to Google Search Console and Google Analytics, a list of your main competitors and markets, and a short call about your goals. Access to your CMS is optional and only needed for a deeper technical review.'],
+        ['How much does the audit cost, and how long does it take?', 'The SEO & AI Search Audit starts from $2,500 for a standard website and is delivered within 10 business days once access and scope are confirmed, followed by a 60-minute walkthrough. Large, multi-market or very large sites are quoted after scoping. If you start a Search Authority OS package within 60 days, the full audit fee is credited toward it.'],
         ['Do you fix the issues too?', 'The audit is a one-time analysis and plan. You can implement it in-house — the fix register is written for developers and content teams — or we can implement it through our services or a Search Authority OS package.'],
     ];
 }
@@ -139,6 +140,18 @@ body.rl-audit-page .fl-page-content,body.rl-audit-page .fl-content,body.rl-audit
 .rl-audit .method-ai p{color:var(--ink-dim);font-size:14px}
 .rl-audit .log{margin-top:18px;border:1px solid var(--red-line);background:#0b090a;padding:16px 20px;font-family:var(--f-mono);font-size:12px;line-height:1.8;color:var(--ink-dim);overflow-x:auto;white-space:pre}
 .rl-audit .log b{color:var(--ink);font-weight:500}.rl-audit .log i{color:var(--red-3);font-style:normal}
+/* pricing (D-053) */
+.rl-audit .price{display:grid;grid-template-columns:.9fr 1.1fr;gap:16px;align-items:stretch}
+@media(max-width:820px){.rl-audit .price{grid-template-columns:1fr}}
+.rl-audit .p-main{border:1px solid var(--red-line);background:linear-gradient(180deg,rgba(153,0,0,.14),var(--glass-2));padding:30px 28px;box-shadow:inset 0 1px 0 var(--glass-hi),0 0 70px -26px var(--red-glow);display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.rl-audit .p-from{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+.rl-audit .p-amt{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,6vw,64px);line-height:1;color:var(--ink)}
+.rl-audit .p-note{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;color:var(--ink-dim);margin-bottom:18px}
+.rl-audit .p-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.rl-audit .p-list{grid-template-columns:1fr}}
+.rl-audit .p-list li{border:1px solid var(--glass-line);background:var(--glass);padding:18px 20px;box-shadow:inset 0 1px 0 var(--glass-hi);display:flex;flex-direction:column;gap:4px}
+.rl-audit .p-list b{font-family:var(--f-display);text-transform:uppercase;font-weight:600;font-size:17px;letter-spacing:.02em;color:var(--ink)}
+.rl-audit .p-list span{color:var(--ink-dim);font-size:14px}
 /* is / isn't */
 .rl-audit .isnt{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media(max-width:760px){.rl-audit .isnt{grid-template-columns:1fr}}
@@ -161,6 +174,9 @@ add_filter('wpseo_schema_graph', function ($graph) {
         'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'A one-time, human-led audit of a website’s technical health, content, authority, competitors and visibility in Google and AI search, delivered as a written report, a prioritised fix register and a roadmap.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
+        'offers' => ['@type' => 'Offer', 'url' => $url, 'priceCurrency' => 'USD', 'price' => '2500',
+            'priceSpecification' => ['@type' => 'PriceSpecification', 'minPrice' => 2500, 'priceCurrency' => 'USD'],
+            'description' => 'From $2,500 for a standard website; larger or multi-market sites quoted after scoping.'],
     ];
     $graph[] = [
         '@type' => 'FAQPage', '@id' => $url . '#faq', 'isPartOf' => ['@id' => $url],
@@ -176,6 +192,7 @@ function rl_render_audit() {
     $ex = function ($path) { $l = function_exists('rl_url_by_path') ? rl_url_by_path($path, '') : ''; return $l ? esc_url($l) : ''; };
     $diag = $u('search-authority-diagnostic');
     $pkg = $u('packages');
+    $req = esc_url(add_query_arg('interest', 'audit', function_exists('rl_url_by_path') ? rl_url_by_path('search-authority-diagnostic', home_url('/')) : home_url('/')) . '#request');
     ob_start(); ?>
 <div class="rl-page rl-audit">
 
@@ -192,7 +209,7 @@ function rl_render_audit() {
       <h1 class="h1">See everything<br>holding back your<br><span class="r">search growth.</span></h1>
       <p class="lede">The <strong>SEO &amp; AI Search Audit</strong> is a one-time, in-depth review of your technical health, content, authority, competitors and visibility in Google and AI search. It is done by people, backed by evidence, and delivered as a prioritised plan your team can act on.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $req; ?>">Request an audit <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#covers">What's included</a>
       </div>
     </div>
@@ -213,7 +230,7 @@ function rl_render_audit() {
           <tr><th scope="row">What it is</th><td>A focused read of where you stand</td><td class="us">The full, one-time analysis and plan</td><td>An ongoing system that researches, writes, audits and monitors</td></tr>
           <tr><th scope="row">Depth</th><td>Seven layers, headline findings</td><td class="us">Every important page and template, competitors and a documented AI-visibility test</td><td>Continuous, month after month</td></tr>
           <tr><th scope="row">You get</th><td>Your biggest gaps and the next step</td><td class="us">Report, fix register, roadmap and a walkthrough</td><td>Content, fixes and reporting delivered for you</td></tr>
-          <tr><th scope="row">Cost</th><td class="hl">Free</td><td class="us">Quoted after scoping</td><td>From $5,000 setup</td></tr>
+          <tr><th scope="row">Cost</th><td class="hl">Free</td><td class="us">From $2,500 — credited toward a package within 60 days</td><td>From $5,000 setup</td></tr>
           <tr><th scope="row">Start</th><td><a href="<?php echo $diag; ?>">Request &rarr;</a></td><td class="us">You are here</td><td><a href="<?php echo $pkg; ?>">Compare &rarr;</a></td></tr>
         </tbody>
       </table>
@@ -266,12 +283,27 @@ note   repeat run 2/3 · same result · competitor cited from a comparison page<
       <li><b>Competitor benchmark</b> — where named competitors win, in Google and in AI answers.</li>
       <li><b>Opportunity map</b> — the content and pages worth creating or improving.</li>
       <li><b>Measurement check</b> — what your tracking can and can't tell you today.</li>
-      <li><b>Walkthrough session</b> — we take your team through the findings and answer questions.</li>
+      <li><b>60-minute walkthrough</b> — we take your team through the findings and answer questions.</li>
     </ul>
   </div>
 </section>
 
-<section class="band alt" id="how">
+<section class="band alt" id="pricing">
+  <div class="wrap">
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Pricing&nbsp;<b>]</b></span><h2>How much does the audit cost?</h2><p class="lede">One fixed price for a standard website, agreed before any work starts. Bigger or more complex sites are quoted after a short scoping call.</p></div>
+    <div class="price">
+      <div class="p-main"><span class="p-from">From</span><span class="p-amt">$2,500</span><span class="p-note">one-time · standard website</span><a class="btn p" href="<?php echo $req; ?>">Request an audit <span class="ar">&rarr;</span></a></div>
+      <ul class="p-list">
+        <li><b>10 business days</b><span>from confirmed access and scope to delivered report</span></li>
+        <li><b>60-minute walkthrough</b><span>with your team, to go through every priority</span></li>
+        <li><b>Credited in full</b><span>toward a Search Authority OS package started within 60 days</span></li>
+        <li><b>Quoted separately</b><span>for large, multi-market or very large sites</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="how">
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does the audit run?</h2><p class="lede">Scoped first, so the price and delivery date are clear before any work starts.</p></div>
     <ol class="steps">
@@ -284,7 +316,7 @@ note   repeat run 2/3 · same result · competitor cited from a comparison page<
   </div>
 </section>
 
-<section id="isnt">
+<section class="band alt" id="isnt">
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Clear boundaries&nbsp;<b>]</b></span><h2>What is — and isn't — in the audit?</h2></div>
     <div class="isnt">
@@ -294,7 +326,7 @@ note   repeat run 2/3 · same result · competitor cited from a comparison page<
   </div>
 </section>
 
-<section class="band alt" id="who">
+<section id="who">
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is the audit for?</h2><p class="lede">Teams that need the full picture before they commit budget — after a traffic drop, before a redesign or migration, or when AI tools ignore them.</p></div>
     <ul class="inds8">
@@ -305,7 +337,7 @@ note   repeat run 2/3 · same result · competitor cited from a comparison page<
   </div>
 </section>
 
-<section id="related">
+<section class="band alt" id="related">
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;After the audit&nbsp;<b>]</b></span><h2>Who can fix what the audit finds?</h2><p class="lede">Implement it yourself, or hand any part of the plan to the service built for it.</p></div>
     <div class="cols c3">
@@ -322,7 +354,7 @@ note   repeat run 2/3 · same result · competitor cited from a comparison page<
   </div>
 </section>
 
-<section class="faq band alt" id="faq">
+<section class="faq" id="faq">
   <div class="wrap" style="max-width:900px">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Questions&nbsp;<b>]</b></span><h2>About the audit.</h2></div>
     <?php foreach (rl_audit_faqs() as $k => $q) { ?>
@@ -338,8 +370,8 @@ note   repeat run 2/3 · same result · competitor cited from a comparison page<
       <h2>Not sure you need the full audit yet?</h2>
       <p class="lede">Start with the free Search Authority Diagnostic. If you need to go deeper, we'll scope the audit from there.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
-        <a class="btn g" href="<?php echo $pkg; ?>">Compare packages</a>
+        <a class="btn p" href="<?php echo $req; ?>">Request an audit <span class="ar">&rarr;</span></a>
+        <a class="btn g" href="<?php echo $diag; ?>">Start with the free diagnostic</a>
       </div>
     </div>
   </div>
