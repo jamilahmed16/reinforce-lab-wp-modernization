@@ -153,21 +153,8 @@ body.rl-tseo-page .fl-page-content,body.rl-tseo-page .fl-content,body.rl-tseo-pa
 .rl-tseo .stages p{color:var(--ink-dim);font-size:14px}
 .rl-tseo .stages .brk{margin-top:auto;border-top:1px solid var(--line);padding-top:10px;font-size:13.5px;color:var(--ink)}
 .rl-tseo .stages .brk b{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;color:var(--red-3);font-weight:500;text-transform:uppercase;margin-right:6px}
-.rl-tseo .src{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;color:var(--ink-faint);margin-top:16px}
-.rl-tseo .src a{color:var(--ink-dim);border-bottom:1px solid var(--red-line)}
 /* CWV + myths */
 .rl-tseo td.num{font-family:var(--f-display);font-size:20px;color:var(--ink);white-space:nowrap}
-.rl-tseo .myths{display:grid;gap:12px}
-.rl-tseo .myth{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--glass-line);background:var(--glass);box-shadow:inset 0 1px 0 var(--glass-hi)}
-@media(max-width:760px){.rl-tseo .myth{grid-template-columns:1fr}}
-.rl-tseo .myth > div{padding:20px 22px}
-.rl-tseo .myth .m{color:var(--ink-dim);border-right:1px solid var(--line)}
-@media(max-width:760px){.rl-tseo .myth .m{border-right:0;border-bottom:1px solid var(--line)}}
-.rl-tseo .myth .f{background:linear-gradient(90deg,rgba(153,0,0,.08),transparent)}
-.rl-tseo .myth .tag{display:block;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:6px}
-.rl-tseo .myth .f .tag{color:var(--red-3)}
-.rl-tseo .myth p{font-size:15px}.rl-tseo .myth .f p{color:var(--ink)}
-.rl-tseo .myth a{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--red-3)}
 </style>
 <?php }
 

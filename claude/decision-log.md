@@ -597,6 +597,61 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-048 — International SEO page built on `.online` (page 100, published)
+**Date:** 29 September 2026 · **Status:** BUILT (Jamil: "…then go straight on to International SEO")
+
+`/services/international-seo/` is a D-023 new slug with no production equivalent, so nothing needs preserving.
+- New file `wp/novamira-sandbox/reinforce-intl.php` provides `[reinforce_intl]` and is built on the shared kit.
+- Page **100** was set to the shortcode and published; the publish was guarded (page empty, parent 68, `blog_public=0`).
+- Yoast title: "International SEO Services | Reinforce Lab".
+- Meta: "International SEO from Reinforce Lab: site structure, hreflang, native localization and market-by-market reporting — built on Google's own guidance."
+
+**Research (Exa `agent_run_e14d64d08f804c7eb7a6d288dbb01d2b`)** is saved in `claude/research/international-seo-research-2026-09-29.md`.
+- **Competitors:** 8 (SEOCOM, Progression, ThrillSEO, Pinnacli, LASEO, SEOCUTTS, ForzaSEO, SUSO). They rarely cite Google, and none separates documented Search behaviour from unverified AI-assistant behaviour.
+- **VERIFIED (Google):**
+  - 4 URL structures with Google's pros and cons (parameters "not recommended");
+  - hreflang rules: 3 methods, reciprocal links, ISO 639-1 + ISO 3166-1 Alpha 2 codes, x-default;
+  - Google ignores `lang` attributes and the URL for language detection;
+  - avoid automatic locale redirects; Googlebot "usually originates from the USA";
+  - Search Console International Targeting is deprecated and country targeting is no longer supported;
+  - scaled content abuse includes low-value automated translation;
+  - same-language regional versions: use canonical + hreflang.
+- **UNVERIFIED and not claimed:** how ChatGPT, Perplexity or Gemini choose a regional version.
+
+**Structure:**
+- Hero, with a 3-line H1: "Reach every market / in its own / language."
+- "Country domains, subdomains or subdirectories?" — Google's comparison table, plus our labelled default: subdirectories for most B2B sites.
+- "How does hreflang work?" — 4 rules plus an HTML example block.
+- "Which international SEO beliefs are wrong?" — 5 myth vs "Google says" pairs with sources.
+- 9 workstreams, a 5-step market-by-market process, 8 deliverables and 6 measures (including "right version served" and AI answers per language).
+- Honesty panel: "Translation isn't localization — and hreflang doesn't steer AI".
+- **8 industry cards** with international points (D-047 pattern) and 6 related services (links to `/services/technical-seo-services/`).
+- 6 FAQs and the final CTA.
+
+**Schema:** `Service` plus `FAQPage`; Yoast adds the breadcrumb.
+
+**Hero animation "Market routing" (D-039 Step 3):**
+1. A slowly turning globe (meridians on a 12 s cycle) sits between 4 versions: EN · x-default `/`, DE `/de/`, FR-CA `/fr-ca/`, EN-GB `/uk/`.
+2. The hreflang links draw between every pair: 4 ring arcs plus 2 cross links, labelled "hreflang · every version lists every other".
+3. A search pulse from the centre is routed to each version, and each gets a "served" marker.
+4. "Right language · right market · right page" lights.
+5. 10 s loop with a soft fade.
+- Preview fixes before deploy: the served marker overlapped "X-DEFAULT", and the label crossed a link line.
+
+**Kit change:** the `.src` and `.myths` / `.myth` styles moved from the Technical SEO page into `reinforce-kit.css`, because two pages now use them.
+- The regression test caught a side effect: GEO's research box also uses a `src` class, and its first line gained a 16 px top margin. Fixed with `.rl-geo .research .src:first-child{margin-top:0}`.
+- **Final fingerprint: hub, AISO, GEO, LLM and Technical SEO all 0 diffs.** International SEO was added to the tool.
+
+**Bug found and fixed before sign-off:** on mobile the page was **662 px wide at a 390 px viewport**. The hreflang code block (`white-space:pre`) stretched its `1fr` grid track, so the rules list widened with it. Fixed by setting the grid to `minmax(0,1fr)` and `min-width:0` on its children; the code block keeps its own scroll. The page now measures 390 px.
+
+**Deploy and verification:**
+- Backups `.bak-20260929-171553` (kit + techseo), `.bak-20260929-171642` (geo) and `.bak-20260929-172140` (intl).
+- Live md5s = repo: kit `fde086c3…`, techseo `fbea4750…`, geo `9cada0f5…`, intl `fc6f20af…`.
+- HTTP 200, 1 H1 (3 lines), 12 H2, 8 industry cards, kit linked, noindex, no PHP errors, no `#` links. HTML 137.7 KB.
+- Reduced motion static; the structure table fits at 1440 px.
+
+---
+
 ## D-047 — "Who it's for" = all 8 industries as detail cards (Technical SEO; pattern for every service page)
 **Date:** 29 September 2026 · **Status:** DONE on Technical SEO (Jamil: "mention 8 cards as details with 2 to 3 points for each. you are only mentioning 7 industries but we have 8")
 

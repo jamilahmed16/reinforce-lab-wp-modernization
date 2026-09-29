@@ -145,6 +145,7 @@ body.rl-geo-page .fl-page-content,body.rl-geo-page .fl-content,body.rl-geo-page 
 .rl-geo .research p{color:var(--ink-dim);font-size:15px}
 .rl-geo .research p+p{margin-top:10px}
 .rl-geo .research .src{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;color:var(--ink-faint)}
+.rl-geo .research .src:first-child{margin-top:0} /* kit .src adds margin-top (D-048); keep GEO as it was */
 .rl-geo .research a{color:var(--ink);border-bottom:1px solid var(--red-line)}
 .rl-geo .flow4{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:f}
 @media(max-width:900px){.rl-geo .flow4{grid-template-columns:repeat(2,1fr)}}
