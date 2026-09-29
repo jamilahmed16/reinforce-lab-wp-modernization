@@ -597,6 +597,19 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-038 — Agents hub `/services/agents/` (page 76) — BUILT & LIVE on `.online`
+**Date:** 29 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified · Approved by Jamil ("yes, go ahead with the Agents page")
+
+No mock-up existed — styled after the SAOS page; content from the strategy doc ("8 Agent Selling Pages … each page should sell one specific business outcome, not technology"). Sandbox file `reinforce-agents.php` (repo = live, md5 `bcb6014c…`), shortcode `[reinforce_agents]`; page 76 content set and **published**.
+- **Sections:** breadcrumb (Home / Services / Agents) → hero (answer-first: "Search Authority OS agents are eight specialised AI agents from Reinforce Lab…", jump chips A-01…A-08) → 8 outcome-led agent cards (outcome line, 3 capabilities, "Best for", link to each agent page) → "Four stages. One loop." agent map (Understand A-01/02/05/06 · Verify A-03 · Optimize & QA A-04/07 · Measure & heal A-08) → single agent vs full OS (→ diagnostic / packages) → FAQ (5) → final CTA.
+- **Not duplicated from SAOS:** SAOS keeps its one-line agent cards; the hub adds capabilities, best-for and the stage map. No agent prices invented ("scoped after the diagnostic").
+- **Yoast:** title `AI SEO Agents for Search & AI Visibility | Reinforce Lab` (56), meta (153).
+- **Schema:** Yoast WebPage + BreadcrumbList (Home > Services > Agents) + Organization, plus **ItemList (8 agent pages)** + **FAQPage (5)**.
+- **Verified live:** HTTP 200 · 1 H1 · noindex · no PHP errors · no horizontal overflow at 1440/390.
+- **Known:** parent `/services/` (page 68) is still an **empty draft** → breadcrumb "Services" link is dead for visitors until the Services hub is built; the 8 individual agent pages (77–84) are empty drafts (links render as `?page_id=`).
+
+---
+
 ## D-037 — Packages & Pricing page `/packages/` (page 66) — BUILT & LIVE on `.online`
 **Date:** 29 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified · Approved by Jamil (build order 29 Sep)
 
