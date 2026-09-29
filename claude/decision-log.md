@@ -597,6 +597,33 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-060 — AI Workflow Automation page built on `.online` (page 97, published)
+**Date:** 29 September 2026 · **Status:** DONE (Jamil: "yes, go ahead with AI Workflow Automation")
+
+- **URL:** `/services/ai-workflow-automation/` (D-023 new URL; no legacy redirects). Page 97: draft → publish, content `[reinforce_aiwork]`. Guarded create: file absent, page 97 empty draft under 68, `blog_public = 0`. Publishing it also clears 1 of the F-021 draft links (the Marketing Automation and Lead Gen related cards now resolve).
+- **Yoast:** title "AI Workflow Automation Services | Reinforce Lab"; meta "AI workflow automation for triage, document extraction, drafting and system updates, built on your tools with human review, logging and testing, so AI does the busywork and people keep control."
+- **File:** `wp/novamira-sandbox/reinforce-aiwork.php` on the shared kit (D-044). Live md5 = repo `fe0599cb…`.
+- **Research:** `claude/research/ai-workflow-automation-research-2026-09-29.md`. The Commission AI Act page, NIST and McKinsey were read directly.
+  - **Date caution recorded:** the Commission now gives 2 December 2027 for high-risk obligations (AI Omnibus). The older August 2026 dates in secondary sources were not used.
+- **Hero animation "Human in the loop":**
+  - Emails, tickets, invoices and forms feed an AI step (classify · extract · draft), then a "Sure?" check.
+  - YES cases go to "Your systems" (CRM · ERP · Helpdesk). NO cases go to Human review, then "Approved", then the systems.
+  - An audit-log strip fills as each step happens.
+  - Capture · process · check · act light in turn. 10 s loop, soft fade, reset.
+- **Sections:**
+  - answer-first lede;
+  - What we automate (9);
+  - Why AI projects stall (McKinsey 2025: 88% / 62% / 39%, plus workflow redesign);
+  - **Guardrails** (6 controls; NIST AI RMF as checklist; EU AI Act chatbot-disclosure quote; "Not legal advice");
+  - Process (5, pilot with human review on every case); Deliverables (8);
+  - Measurement against baseline (6);
+  - Straight answer ("Not every process should be automated");
+  - 8 industry cards; 6 related; 6 FAQs (incl. "Does the EU AI Act apply to us?"); final CTA.
+- **Not claimed:** no prices, tools/partnerships, hours-saved figures or results.
+- **Verified:** 1 H1 (three lines), 11 H2, 8 cards, kit loaded, no PHP errors, noindex, no `href="#"`, 390 px with no overflow; screenshots checked. Fingerprint tool now includes `aw`.
+
+---
+
 ## D-059 — Lead Generation Systems page built on `.online` (page 102, published)
 **Date:** 29 September 2026 · **Status:** DONE (Jamil: "yes, go ahead with Lead Generation Systems")
 
