@@ -597,6 +597,13 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-039 — Hero system + per-page hero animations; competitor-driven content upgrade (APPROVED)
+**Date:** 29 September 2026 · **Status:** APPROVED by Jamil — executing one page at a time
+
+Based on `claude/research/competitor-and-hero-analysis-2026-09-29.md`. Jamil approved all three steps: **Step 1** fix Packages alignment, remove the Agents hero chips, build a shared animation system + a unique hero animation for the 5 live pages (Home and SAOS currently share the same engine visual — must differ); **Step 2** upgrade live-page content with what competitors publish and we don't (needs Jamil's facts — never invented); **Step 3** every new page ships with its own hero animation. Rules: one hero pattern (copy left, visual right; visual below CTAs on mobile); SVG + CSS only, transform/opacity, `prefers-reduced-motion` = static, paused off-screen, no layout shift, aria-described; excluded: legal, About, Blog, Contact.
+
+---
+
 ## D-038 — Agents hub `/services/agents/` (page 76) — BUILT & LIVE on `.online`
 **Date:** 29 September 2026 · **Status:** LIVE on `.online` (dev, noindex) — verified · Approved by Jamil ("yes, go ahead with the Agents page")
 
