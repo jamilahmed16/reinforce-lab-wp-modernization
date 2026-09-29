@@ -630,9 +630,12 @@ AI Growth Systems  (umbrella / positioning)
 
 D-023 (28 Sep, later and explicit) maps all four to `301 → /services/seo-content-systems/`.
 
-The same gap likely exists for other D-023 redirects. Two are confirmed:
-- `best-on-page-seo-services` → core SEO pillar;
-- `email-marketing-services` / `ppc-management-services` / `business-consultancy-service` / social-media pages → their new targets.
+The same gap exists for the other D-023 redirects (VERIFIED — each row still reads `APPROVED: PRESERVE — rebuild`):
+- row 280 `/services/best-on-page-seo-services/` → core SEO pillar;
+- row 277 `/services/email-marketing-services/` → marketing-automation;
+- row 287 `/services/ppc-management-services/` → lead-generation-systems;
+- row 90 `/services/business-consultancy-service/` → executive-ai-consulting;
+- rows 268 and 269, the social-media management and marketing pages → marketing-automation.
 
 The O-018 rows were already updated.
 
