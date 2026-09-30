@@ -597,6 +597,55 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-064 — Website Maintenance page built on `.online` (page 198, published) — Solutions menu complete
+**Date:** 30 September 2026 · **Status:** DONE (Jamil: "yes, go ahead with Website Maintenance")
+
+- **URL:** `/services/website-maintenance-services/` — production URL **kept** (D-023; 66 clicks, 277,583 imp, avg pos 32.6). No redirect for this page.
+- **New page 198:** guarded create (file absent, no page at that path, parent 68, `blog_public = 0`). Menu item 129 "Website Maintenance" was converted from `#` to page 198 in the same call (backup option `rl_menu_backup_20260930_mt`). **All 19 Solutions menu items now link to built, published pages.**
+- **Yoast:** title "Website Maintenance Services | Reinforce Lab" (drops production's "Best"); meta "Website maintenance services for WordPress: tested updates, off-site backups, security and uptime monitoring, speed and SEO health checks, support and a monthly report."
+- **File:** `wp/novamira-sandbox/reinforce-maintenance.php` on the shared kit (D-044). After the quote fix, live md5 = repo `0636496d…`.
+- **Correction after publishing** (backup `.bak-20260930-051243`):
+  - The WordPress.org quote is now verbatim.
+  - The host myth is re-tagged "The evidence", because it combines WordPress.org and Patchstack.
+- **Research:** `claude/research/website-maintenance-research-2026-09-30.md`. Patchstack and WordPress.org were read directly.
+- **Hero animation "A month of care":**
+  - 28 days tick over (daily backups), with weekly "UPD" days.
+  - The status panel lights: uptime, backups, updates, security, speed.
+  - A plugin-vulnerability alert then runs alert → check → patch → verify, and Security goes back to "Patched".
+  - Backup · update · protect · report light in turn. 10 s loop, soft fade, reset.
+- **Sections:**
+  - answer-first lede;
+  - What's included (9);
+  - Why WordPress needs maintenance (Patchstack: 11,334 / 91% / 5 hrs; WordPress.org quote);
+  - **Schedule table** (continuously / daily / weekly / monthly / quarterly);
+  - Myths (4: auto-updates, host security, untested backups, premium plugins);
+  - Process (5); Deliverables (8); Monthly report (6);
+  - Straight answer ("No one can promise a site will never be hacked");
+  - 8 industry cards; 6 related; 6 FAQs; final CTA.
+- **Verified:** 1 H1 (three lines), 12 H2, 8 cards, kit loaded, no PHP errors, noindex, no `href="#"`, menu link rendered, 390 px with no overflow; screenshots checked. Fingerprint tool now includes `mt`.
+
+---
+
+## O-021 — Maintenance service commitments stated on page 198 need Jamil's confirmation — OPEN
+**Date:** 30 September 2026 · **Status:** OPEN (content on `.online` only; nothing on production)
+
+The page describes a delivery routine that Jamil has not yet confirmed as the actual service standard:
+
+| When | What the page commits to |
+|---|---|
+| Continuously | Uptime monitoring, vulnerability alerts and protection rules |
+| Daily | Off-site backups |
+| Weekly | Updates tested on a staging site, then applied; forms and checkout tested |
+| Monthly | Core Web Vitals review, SEO health check, backup restore test, report |
+| Quarterly | User and access review, plugin audit |
+| Always | A "named team" for support; a change log; a monthly report |
+
+**No** prices, response-time SLAs or uptime guarantees are stated.
+
+**RECOMMENDATION:** confirm the routine, or give the real one, and state which tools deliver it (staging, backups, monitoring). The same applies to the "onboarding audit" for sites we didn't build. The schedule table is one section in `reinforce-maintenance.php` and can be changed in minutes.
+
+---
+
 ## D-063 — E-commerce Website Design page built on `.online` (page 197, published)
 **Date:** 30 September 2026 · **Status:** DONE (Jamil: "B, then go ahead with E-commerce Website Design")
 
