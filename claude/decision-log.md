@@ -597,6 +597,66 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-071 — Blog archive template built on `.online` (F-001 by design); `/blog/` page 220 set as the posts page
+**Date:** 30 September 2026 · **Status:** DONE (Jamil: "yes, go ahead with the Blog archive template")
+
+**State before (VERIFIED, read-only):**
+- 0 posts; only the default "Uncategorized" category; no `/blog/` page; `page_for_posts` = 0.
+- One Themer layout exists: 44 "Site Header", a draft, with no archive layouts.
+- Permalinks are `/%postname%/`; category base is the default `/category/`.
+- 12 Beaver Builder `…/paged-N/M/` → `flpaged` rewrite rules are registered (as F-001 found).
+
+**Decision (implementation):** the archive template is **code, not a Beaver Themer layout**. This is the same approach as every other page on `.online` (sandbox file + kit). It meets the F-001 rule in its strictest form:
+- there is **one loop, and it is the main query**;
+- pagination is core `the_posts_pagination()` → `/blog/page/N/`, `/category/x/page/N/`;
+- there are **zero Themer archive layouts**, so no location can be targeted twice and no Posts module exists to emit `/paged-N/`.
+
+The deploy aborts if a Themer archive layout exists. **Rule going forward: do not create a Beaver Themer archive layout.** This file is the single archive template.
+
+**File:** `wp/novamira-sandbox/reinforce-blog.php`, live md5 = repo `008a65a9…`. It renders via `template_redirect` (`get_header()` … `get_footer()`) for `is_home`, category, tag, author and date archives.
+- **Each archive type gets its own H1 and intro:**
+  - category and tag archives use the term description;
+  - author archives use the user bio;
+  - date archives use the date label;
+  - there is never a shared text block (the production failure: one layout with 670 identical words on every archive, F-001 evidence).
+- **Card per post:**
+  - featured image, if set;
+  - the real published date (F-003);
+  - primary category;
+  - H2 title, a 28-word excerpt, and "Read article".
+- There is a category filter bar (non-empty categories only; Uncategorized hidden). With no posts, an empty state with diagnostic and services CTAs shows.
+- **No hero animation** (Blog is excluded, D-039).
+
+**Protections:**
+1. Any request carrying `flpaged` (e.g. `/blog/paged-2/2/`) → **410**, matching the disposition sheet's approved RETIRE-410 for all `/paged-N/` URLs.
+2. **Robots:** page 2+ of any archive → `noindex, follow` (disposition sheet: `/blog/page/N/` = APPROVED KEEP-noindex). **Any empty archive** → `noindex, follow` (thin-page guard; RECOMMENDATION applied on `.online`).
+3. **Schema:** Yoast already emits `CollectionPage` + `BreadcrumbList` for `/blog/`. The template adds an `ItemList` of the articles on the page when posts exist.
+
+**Settings changed on `.online`:**
+- new page 220 "Blog", slug `blog` (production `/blog/` is APPROVED — PRESERVE);
+- `page_for_posts` 0 → 220 (backup option `rl_reading_backup_20260930`);
+- Yoast title "Blog | SEO, AI Search and Growth Systems | Reinforce Lab" plus a meta description;
+- Primary menu "Blog" item (150): `#` → page 220 (backup `rl_menu_backup_20260930_blog`);
+- footer "Blog" now uses `rl_url_by_path('blog')` (`reinforce-header.php` backup `.bak-20260930-120430`, live md5 = repo `ace683e8…`).
+
+**Verified:**
+- `/blog/`: 200, 1 H1 (3 lines), empty state, kit + page CSS, no PHP errors, 0 `href="#"` in content; CollectionPage schema.
+- Menu and footer links resolve.
+- `/blog/paged-2/2/` and `/category/uncategorized/paged-2/2/` return **410**; `/blog/page/2/` returns 404 (no posts yet).
+- `get_pagenum_link()` returns `/blog/page/2/`, `/blog/page/3/` and `/category/news/page/2/`, with no `paged-`.
+- 390 px with no overflow on `/blog/` and a category archive; screenshot checked.
+
+**Not verifiable yet (launch QA gate):**
+- **Post cards and pagination with real posts:** checking them would mean seeding test posts, which Jamil declined on 24 Aug (F-003).
+- **Archive robots rules:** the `.online` sitewide noindex (`blog_public` = 0) overrides them in output. Recheck both right after the first posts are migrated and again at launch.
+
+**Open for Jamil:**
+- **O-023 — category URL base.** Production category archives live at the root (e.g. `/business/`, `/digital-marketing/`), while `.online` uses the default `/category/x/`. The 20 HUB-REVIEW category rows need a decision before any category is created: keep root URLs (Yoast "strip category base") or map to `/category/x/`.
+- **O-024 — tag, date and author archive policy.** Author archives are mapped 301 → `/our-team/` on production. The crawl plan recommends one author page for Jamil. Tags and dates have no decision (Yoast currently: date archives noindex; tags index).
+- **The single post template** (`BlogPosting` + author `Person` + real dates) is not built yet. It is needed before the first post migrates.
+
+---
+
 ## D-070 — Contact page built on `.online` (page 219, `/contact-us/`, published) with a working form
 **Date:** 30 September 2026 · **Status:** DONE (Jamil: "go ahead with Contact")
 
