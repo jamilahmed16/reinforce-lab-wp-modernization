@@ -597,6 +597,53 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-070 — Contact page built on `.online` (page 219, `/contact-us/`, published) with a working form
+**Date:** 30 September 2026 · **Status:** DONE (Jamil: "go ahead with Contact")
+
+- **URL:** `/contact-us/`, the production URL, which is **APPROVED — PRESERVE, rebuild to D-012 standard** in the disposition sheet. The same slug means no redirect is needed.
+- **Created:** in one guarded call. It aborted if the file existed, if `blog_public` ≠ 0, if a page existed at `contact-us` or `contact`, or if the `rl_diag_request` post type was missing. Title "Contact", content `[reinforce_contact]`.
+- **Yoast:** title "Contact Reinforce Lab | Dhaka & Katy, Texas"; meta "Contact Reinforce Lab: email hello@reinforcelab.com, call our Dhaka or Katy, Texas office, or send a message about SEO, AI search and AI Growth Systems."
+- **File:** `wp/novamira-sandbox/reinforce-contact.php`, live md5 = repo `9d05ea5b…`. Uses the shared kit. **No hero animation** (Contact is excluded, D-039).
+- **Sections:**
+  - crumbs; 3-line H1 ("Contact / Reinforce Lab. / Let's talk growth."); answer-first lede;
+  - direct email and both phones; the form (hero right);
+  - offices (2); what happens next (3 steps); 4 FAQs; CTA to the diagnostic.
+  - **No response-time promise:** none has been supplied, so the page says only "we reply by email".
+  - No industry or service grids: this is a utility page, and the footer already links both.
+- **Facts:** the offices, phones and email are identical to the approved footer and the production `/contact-us/` page (read-only, 30 Sep). No new facts.
+- **Form (no new plugin):** it reuses the Diagnostic pipeline (D-034):
+  - `admin-post.php` action `rl_contact_msg`;
+  - honeypot, a <3 s bot check, 5 per hour per IP;
+  - fields: name*, email*, company, website, topic (5 fixed choices), message* (max 3,000 characters);
+  - stored as a private `rl_diag_request` entry with `request_type` "Contact message" and title "[Contact] …";
+  - emails hello@reinforcelab.com with Reply-To set to the sender;
+  - forwards `type: contact_message` JSON to `rl_diag_webhook_url` when that is set (currently empty = off);
+  - the consent line links the privacy policy (page 3, **still a draft**: it must be published before real data is collected, same as D-034).
+- **Schema:**
+  - WebPage becomes `['WebPage','ContactPage']`;
+  - on this page the Organization gains `email`, 2 `contactPoint` entries (BD, US) and 2 `location` Places with PostalAddress;
+  - `FAQPage` (4).
+- **Nav:** the Primary menu "Contact" item (152) changed from custom `#` to page 219 (backup option `rl_menu_backup_20260930_contact`). The footer "Contact Us" now uses `rl_url_by_path('contact-us')` (`reinforce-header.php` backup `.bak-20260930-113334`, live md5 = repo `c96e34ee…`).
+- **Verified:**
+  - 1 H1, 4 H2, kit loaded; noindex; no PHP errors; 0 `href="#"` in content;
+  - schema as above; menu and footer links resolve;
+  - form tests:
+    - a missing message redirects to `?sent=invalid` and shows the alert;
+    - the honeypot redirects to `?sent=ok` and stores nothing (0 contact entries);
+    - the success state renders.
+  - **A full end-to-end submission (stored entry + email) was not run**, to avoid sending a test email to the company inbox. Jamil can send one test message.
+  - 390 px with no overflow; desktop and mobile screenshots checked; the steps grid was set to 3 columns on desktop after the screenshot review.
+- Style fingerprint entry `contact` added.
+
+---
+
+## D-069 — Founding year confirmed: 2020
+**Date:** 30 September 2026 · **Status:** APPROVED (Jamil: "yes, 2020 is correct")
+
+Reinforce Lab began in Bangladesh in 2020. The About page keeps the year. Organization schema on About now carries `foundingDate: 2020` and `foundingLocation` Bangladesh (`reinforce-about.php` guarded update, backup `.bak-20260930-113334`, live md5 = repo `fb9beb8d…`).
+
+---
+
 ## D-068 — About page built on `.online` (page 218, `/about-us/`, published)
 **Date:** 30 September 2026 · **Status:** DONE (Jamil: "plain slugs, then go ahead with About")
 
@@ -616,7 +663,7 @@ AI Growth Systems  (umbrella / positioning)
   - positioning and core message: D-008, locked;
   - Jamil is Founder and CEO, a pharmacist, an SEO & AI search consultant and a Semrush Ambassador; LinkedIn `ahmedjamil16`; quote from the locked LinkedIn headline (D-008);
   - offices in Dhaka and Katy TX, and clients worldwide worked with remotely: confirmed by Jamil 28 Sep; addresses and phones from the approved footer (D-011/D-021);
-  - **"began in Bangladesh in 2020":** from the current production About page (read-only). WordPress dates that page 2018, so **Jamil to confirm the year**. It is not in schema (`foundingDate` is left out until confirmed).
+  - **"began in Bangladesh in 2020":** from the current production About page (read-only). **Confirmed by Jamil on 30 Sep (D-069)**; `foundingDate` added to schema.
   - The brand is "Reinforce Lab" throughout. The footer's "Ltd"/"Inc" entity names are not repeated on the page. No team size, clients, results or awards (none supplied).
 - **Schema (D-012 §3):**
   - Yoast's WebPage node becomes `['WebPage','AboutPage']`, with `about`/`mainEntity` pointing to the Organization;

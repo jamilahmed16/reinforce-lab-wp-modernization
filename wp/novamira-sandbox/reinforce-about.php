@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) exit;
 
 function rl_is_about() { return is_page('about-us') && (int) wp_get_post_parent_id(get_queried_object_id()) === 0; }
 
-/* Founder facts: confirmed by Jamil (D-008 locked positioning; 28 Sep Home FAQ facts). Founding year from the current production About page. */
+/* Founder facts: confirmed by Jamil (D-008 locked positioning; 28 Sep Home FAQ facts). Founding year 2020 confirmed by Jamil 30 Sep (D-069). */
 function rl_about_person() {
     return [
         'name' => 'Jamil Ahmed',
@@ -73,7 +73,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
         if (!is_array($n) || empty($n['@type'])) continue;
         $t = (array) $n['@type'];
         if (in_array('WebPage', $t, true) && isset($n['@id']) && strpos($n['@id'], $url) === 0) { $n['@type'] = ['WebPage', 'AboutPage']; $n['about'] = ['@id' => $org]; $n['mainEntity'] = ['@id' => $org]; }
-        if (in_array('Organization', $t, true)) { $n['founder'] = ['@id' => $pid]; }
+        if (in_array('Organization', $t, true)) { $n['founder'] = ['@id' => $pid]; $n['foundingDate'] = '2020'; $n['foundingLocation'] = ['@type' => 'Place', 'name' => 'Bangladesh']; }
     }
     unset($n);
     $graph[] = [
