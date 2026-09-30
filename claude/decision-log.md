@@ -597,6 +597,33 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-063 — E-commerce Website Design page built on `.online` (page 197, published)
+**Date:** 30 September 2026 · **Status:** DONE (Jamil: "B, then go ahead with E-commerce Website Design")
+
+- **URL:** `/services/ecommerce-website-design-service/` — production URL **kept** (D-023). Sheet row 141 shows 0 impressions (no measurable search equity), so it is effectively a fresh build.
+- **New page 197:** guarded create (file absent, no page at that path, parent 68, `blog_public = 0`). Menu item 128 "E-commerce Website Design" was converted from custom `#` to page 197 in the same guarded call. Backup option: `rl_menu_backup_20260930_ecd`.
+- **Yoast:** title "E-commerce Website Design Services | Reinforce Lab"; meta "E-commerce website design that gets stores found and bought from: product data for Google, easy browsing, a shorter checkout, fast pages and WCAG 2.2 AA accessibility, on WooCommerce."
+- **File:** `wp/novamira-sandbox/reinforce-ecomdesign.php` on the shared kit (D-044). Live md5 = repo `4a63e685…`.
+- **Correction after publishing** (backup `.bak-20260930-050542`): the accessibility card said WCAG 2.2 AA is "as EU e-commerce now requires". The EAA's harmonised standard maps to WCAG 2.1 AA, so the card now reads "with the European Accessibility Act in mind".
+- **Research:** `claude/research/ecommerce-design-research-2026-09-30.md`. Baymard and Google were read directly.
+- **Hero animation "Found to ordered":**
+  - A search result shows price, stock and rating; the store grid appears and one product is picked.
+  - The checkout drops 4 of 8 fields ("Fewer fields"), then ticks total up front, guest checkout and payment options.
+  - "Place order" becomes "Order placed".
+  - Found · browse · checkout · order light in turn. 10 s loop, soft fade, reset.
+- **Sections:**
+  - answer-first lede;
+  - What's included (9);
+  - **Why shoppers abandon carts** (Baymard: 70.22% average; 40 / 20 / 19 / 18 / 17%; 12–14 vs 23.48 form elements);
+  - How products get found in Google (merchant listings, Merchant Center, filter crawl control);
+  - Process (5); Deliverables (8);
+  - Straight answer ("Most lost sales happen at checkout");
+  - 8 industry cards; 6 related; 6 FAQs; final CTA.
+- **Pricing:** production sells the same three packages here as on the WordPress page, so **O-020 (B) applies to both pages**. No price is shown until Jamil sets X.
+- **Verified:** 1 H1 (three lines), 10 H2, 8 cards, kit loaded, no PHP errors, noindex, no `href="#"`, menu link rendered, 390 px with no overflow; screenshots checked. Fingerprint tool now includes `ecd`.
+
+---
+
 ## D-062 — Menu wiring fixed; WordPress Website Design page built on `.online` (page 196, published)
 **Date:** 30 September 2026 · **Status:** DONE (Jamil: "yes, fix the menu then go ahead with WordPress Website Design")
 
@@ -633,8 +660,10 @@ Previous state is saved in options `rl_menu_backup_20260930` and `rl_menu_backup
 
 ---
 
-## O-020 — Production WordPress design packages ($2,597 / $4,597 / $8,597, WooCommerce, "free hosting") — OPEN (Jamil to decide)
-**Date:** 30 September 2026 · **Status:** OPEN — production untouched.
+## O-020 — Production WordPress design packages ($2,597 / $4,597 / $8,597, WooCommerce, "free hosting") — RESOLVED: Option B
+**Date:** 30 September 2026 · **Status:** RESOLVED 30 Sep 2026 (Jamil: "B, then go ahead with E-commerce Website Design")
+
+**Resolution:** the cart packages are retired at migration, for both the WordPress and the E-commerce design pages (they sell the same three packages). Woo products are unpublished, not deleted; existing orders are untouched. The pages will show "Projects from $X" plus a written scope and quote after discovery. **Still needed from Jamil:** (1) the value of X, and (2) whether "free hosting for 1 year" and the 7/15-day delivery times are still offered. Until both are answered the page shows no price, hosting or delivery claim. Production stays untouched until the migration.
 
 **Finding (VERIFIED, read-only):** production's WordPress design page sells three WooCommerce packages:
 
