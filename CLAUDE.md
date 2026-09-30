@@ -54,7 +54,7 @@ Novamira gives you arbitrary PHP execution, database access and filesystem write
 
 **Methodology:** DISCOVER → PRESERVE → ARCHITECT → CONTENT → AI SEARCH → BUILD → QA → LAUNCH → MONITOR
 
-**Industries (8, D-022 · 28 Sep 2026 — plain names):** Pharmaceutical & Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services · Education. Own `Industries ▾` nav dropdown + `/industries/` axis (verticals = WHO). Pharma moved here from `/services/`. Slug style (keyword `-seo` vs plain) pending.
+**Industries (8, D-022 · 28 Sep 2026 — plain names):** Pharmaceutical & Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services · Education. Own `Industries ▾` nav dropdown + `/industries/` axis (verticals = WHO). Pharma moved here from `/services/`. Slugs are **plain** (`/industries/healthcare/`), D-067.
 
 **Approach:** Build fresh on `.online`, migrate content selectively. **Do NOT clone production.**
 

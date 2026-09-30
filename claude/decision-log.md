@@ -597,10 +597,53 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-068 — About page built on `.online` (page 218, `/about-us/`, published)
+**Date:** 30 September 2026 · **Status:** DONE (Jamil: "plain slugs, then go ahead with About")
+
+- **URL:** `/about-us/`, the production URL, which is **APPROVED — PRESERVE, rebuild to D-012 standard** in the disposition sheet. The same slug on `.online` means no redirect is needed at migration.
+- **Created:** a new page in one guarded call. It aborted if the file existed, if `blog_public` ≠ 0, or if a page already existed at `about-us` or `about`. Title "About", content `[reinforce_about]`.
+- **Yoast:** title "About Reinforce Lab | AI Growth Systems Company"; meta "Reinforce Lab builds AI Growth Systems that connect your website, content and search visibility. Founded by pharmacist and Semrush Ambassador Jamil Ahmed."
+- **File:** `wp/novamira-sandbox/reinforce-about.php`, live md5 = repo `c15a4bb4…`. Uses the shared kit (D-044). **No hero animation:** About is excluded by D-039. The hero's right-hand side is a static "At a glance" panel instead.
+- **Sections:**
+  - crumbs Home › About; 3-line H1; answer-first lede;
+  - What is an AI Growth System? (the 3 outcomes of the locked core message);
+  - Who founded Reinforce Lab? (founder card + LinkedIn);
+  - How does Reinforce Lab work? (the locked 9-stage methodology);
+  - What do we stand for? (4 working principles);
+  - 6 services; 8 industry cards (2 points each, from `rl_ind_data()`);
+  - offices; straight answer (why there are no logos or results); 6 FAQs; CTA.
+- **Facts used, and where they come from:**
+  - positioning and core message: D-008, locked;
+  - Jamil is Founder and CEO, a pharmacist, an SEO & AI search consultant and a Semrush Ambassador; LinkedIn `ahmedjamil16`; quote from the locked LinkedIn headline (D-008);
+  - offices in Dhaka and Katy TX, and clients worldwide worked with remotely: confirmed by Jamil 28 Sep; addresses and phones from the approved footer (D-011/D-021);
+  - **"began in Bangladesh in 2020":** from the current production About page (read-only). WordPress dates that page 2018, so **Jamil to confirm the year**. It is not in schema (`foundingDate` is left out until confirmed).
+  - The brand is "Reinforce Lab" throughout. The footer's "Ltd"/"Inc" entity names are not repeated on the page. No team size, clients, results or awards (none supplied).
+- **Schema (D-012 §3):**
+  - Yoast's WebPage node becomes `['WebPage','AboutPage']`, with `about`/`mainEntity` pointing to the Organization;
+  - new `Person` Jamil Ahmed (jobTitle, worksFor, description, knowsAbout, sameAs LinkedIn);
+  - the Organization node gets `founder` → Person;
+  - `FAQPage` (6).
+- **Nav:** the Primary menu "About" item (151) changed from custom `#` to page 218 (backup option `rl_menu_backup_20260930_about`). The footer "About Us" now uses `rl_url_by_path('about-us')` (`reinforce-header.php` guarded update, backup `.bak-20260930-112213`, live md5 = repo `69ee5b85…`).
+- **Verified:**
+  - 1 H1, 10 H2, 8 industry cards, `rl-kit-css`;
+  - noindex, no PHP errors, 0 `href="#"` in page content;
+  - schema graph as above; menu and footer links resolve;
+  - 390 px with no overflow; desktop full-page and mobile screenshots checked.
+- Style fingerprint entry `about` added.
+
+---
+
+## D-067 — Industry slugs are plain
+**Date:** 30 September 2026 · **Status:** APPROVED (Jamil: "plain slugs")
+
+Settles the D-022 open question: `/industries/{pharmaceutical, healthcare, b2b-saas, ecommerce, manufacturing, technology, professional-services, education}/`, as built in D-066. The keywords go in the title, H1 and content, not the slug. No production URL is affected (these are new URLs).
+
+---
+
 ## D-066 — Industries hub + 8 industry pages built on `.online` (pages 87, 75, 90–96, published)
 **Date:** 30 September 2026 · **Status:** DONE (Jamil: "First Agents … Then Industries Hub and its pages")
 
-- **URLs (D-022 axis, plain slugs as drafted):** `/industries/` and `/industries/{pharmaceutical, healthcare, b2b-saas, ecommerce, manufacturing, technology, professional-services, education}/`. The keyword `-seo` vs plain slug question from D-022 is still Jamil's to settle before migration; renaming later is one slug edit per page on `.online`.
+- **URLs (D-022 axis, plain slugs as drafted):** `/industries/` and `/industries/{pharmaceutical, healthcare, b2b-saas, ecommerce, manufacturing, technology, professional-services, education}/`. Slug style settled as plain by D-067.
 - **Deploy:** one guarded call. It aborted if the file existed, if `blog_public` ≠ 0, if the hub was not an empty draft at root with slug `industries`, or if any of the 8 pages was not an empty draft under 87 with its slug. Then: file written → opcache invalidated → 9 pages published → Yoast title and meta set.
 - **File:** `wp/novamira-sandbox/reinforce-industries.php`, live md5 = repo `fc10f8ab…`. It is one file: single source `rl_ind_data()`, shortcodes `[reinforce_industries]` (hub) and `[reinforce_industry]` (pages). `rl_ind_current()` only matches a child of the root `industries` page whose slug is in the data. Uses the shared kit (D-044).
 - **Hub:**

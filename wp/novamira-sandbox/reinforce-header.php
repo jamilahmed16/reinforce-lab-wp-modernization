@@ -351,7 +351,7 @@ function rl_render_footer() {
         <h4>Company</h4>
         <ul>
           <li><a href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="<?php echo esc_url(rl_url_by_path('about-us')); ?>">About Us</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('services')); ?>">Services</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Clients</a></li>
