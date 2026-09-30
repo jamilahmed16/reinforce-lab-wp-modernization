@@ -597,6 +597,68 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-062 — Menu wiring fixed; WordPress Website Design page built on `.online` (page 196, published)
+**Date:** 30 September 2026 · **Status:** DONE (Jamil: "yes, fix the menu then go ahead with WordPress Website Design")
+
+**Menu (Primary, `.online` only):** three menu items were custom `#` links. Each was converted to a page link, with parent and position unchanged. Guarded: each item had to be custom with url `#`, and its page had to be published.
+
+| Item id | Menu item | Now links to |
+|---|---|---|
+| 110 | "Search Engine Optimization" | page 190 |
+| 121 | "Digital PR / Press Release" | page 189 |
+| 127 | "WordPress Website Design" | page 196 (done with this page's create) |
+
+Previous state is saved in options `rl_menu_backup_20260930` and `rl_menu_backup_20260930_wpd`. Verified in the rendered header (desktop and mobile menu).
+
+**Page:**
+- **URL:** `/services/wordpress-website-design-service/` — production URL **kept** (D-023; 281,585 imp, pos 53.6). No redirect for this page. It is the approved CONSOLIDATE 301 target for the WooCommerce web-design product URLs.
+- **New page 196:** guarded create (file absent, no page at that path, parent 68 = services, `blog_public = 0`).
+- **Yoast:** title "WordPress Website Design Services | Reinforce Lab"; meta "WordPress website design services for B2B brands: custom design, editor-friendly builds, Core Web Vitals speed, WCAG 2.2 AA accessibility and redesigns that keep your rankings."
+- **File:** `wp/novamira-sandbox/reinforce-wpdesign.php` on the shared kit (D-044). Live md5 = repo `ba551611…`.
+- **Research:** `claude/research/wordpress-design-research-2026-09-30.md`. W3Techs 40.2% replaces production's outdated "38%".
+- **Hero animation "Wireframe to launch":**
+  - A browser frame's wireframe draws in, then the design fills: nav, hero, button, cards, footer.
+  - Six launch checks tick in turn: LCP ≤ 2.5 s, INP ≤ 200 ms, CLS ≤ 0.1, WCAG 2.2 AA, redirect map, schema & SEO.
+  - Plan · design · build · launch light in turn. 10 s loop, soft fade, reset.
+- **Sections:**
+  - answer-first lede;
+  - What's included (9);
+  - Standards (Core Web Vitals thresholds, WCAG 2.2 AA, EAA note, "Not legal advice");
+  - **Redesigns without losing rankings** (5 steps plus Google's "at least 1 year" quote);
+  - Process (5); Deliverables (8);
+  - Straight answer ("A beautiful site that loses its rankings is a failed redesign");
+  - 8 industry cards; 6 related; 6 FAQs; final CTA.
+- **Not claimed:** no prices, hosting, delivery times or page counts (O-020).
+- **Verified:** 1 H1 (three lines), 10 H2, 8 cards, kit loaded, no PHP errors, noindex, no `href="#"`, 390 px with no overflow; screenshots checked. Fingerprint tool now includes `wpd`.
+
+---
+
+## O-020 — Production WordPress design packages ($2,597 / $4,597 / $8,597, WooCommerce, "free hosting") — OPEN (Jamil to decide)
+**Date:** 30 September 2026 · **Status:** OPEN — production untouched.
+
+**Finding (VERIFIED, read-only):** production's WordPress design page sells three WooCommerce packages:
+
+| Package | Price | Pages | Free hosting (1 yr) | Ready in | Support |
+|---|---|---|---|---|---|
+| Starter | $2,597 | 5 | 5 GB | 7 days | 1 month |
+| Growth | $4,597 | 10 | 10 GB | 15 days | 3 months |
+| Enterprise | $8,597 | unlimited | 15 GB | 1 month | 6 months |
+
+Their product URLs already 301 here (CONSOLIDATE). The rebuilt page shows **no prices** until Jamil decides.
+
+**Differs from O-019 (INFERENCE):** fixed "from" prices are normal for web-design projects. Competitors range from productised ~$2k sites to $75k+ enterprise builds. So publishing a starting price is a reasonable choice here, unlike the monthly SEO retainers.
+
+**Open questions:**
+- Is "free hosting for 1 year" still offered? If not, it must not appear.
+- Are "7 days / 15 days" delivery times still true?
+
+**Options (RECOMMENDATION = B):**
+- **A.** Keep the three packages and the cart.
+- **B.** Retire the cart and publish "Projects from $X", with a written scope and quote after discovery. Woo products are unpublished (not deleted) at migration; existing orders are untouched.
+- **C.** Quote only, with no published price.
+
+---
+
 ## D-061 — Executive AI Consulting page built on `.online` (page 103, published)
 **Date:** 30 September 2026 · **Status:** DONE (Jamil: "yes, go ahead with Executive AI Consulting")
 
