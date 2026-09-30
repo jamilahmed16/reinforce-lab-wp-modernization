@@ -597,6 +597,42 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-061 — Executive AI Consulting page built on `.online` (page 103, published)
+**Date:** 30 September 2026 · **Status:** DONE (Jamil: "yes, go ahead with Executive AI Consulting")
+
+- **URL:** `/services/executive-ai-consulting/` (D-023 new URL). It is the 301 target for `/services/business-consultancy-service/` (2 clicks, 2,555 imp; low equity). Page 103: draft → publish, content `[reinforce_execai]`. Guarded create: file absent, page 103 empty draft under 68, `blog_public = 0`. With this, every service-page related card now resolves to a published page; the remaining F-021 draft links are the industry cards and the menu.
+- **Yoast:** title "Executive AI Consulting & AI Strategy | Reinforce Lab"; meta "Executive AI consulting for leadership teams: prioritised AI use cases, business cases, governance, EU AI Act mapping and AI literacy, with a roadmap supported through the first pilots."
+- **File:** `wp/novamira-sandbox/reinforce-execai.php` on the shared kit (D-044). After the Article 4 correction (backup `.bak-20260930-043810`), live md5 = repo `c00da429…`.
+- **Research:** `claude/research/executive-ai-consulting-research-2026-09-30.md`. Gartner, McKinsey and the AI Act Service Desk timeline were read directly.
+- **Correction before sign-off (see F-022):** the first version paraphrased the original Article 4 AI-literacy duty. The Digital Omnibus replaced it on 27 Jul 2026. The FAQ, timeline table and training card now state the amended duty ("take measures to support… no guaranteed individual level"), and a 27 Jul 2026 row was added.
+- **Hero animation "Matrix to roadmap":**
+  - 8 use cases appear on a value × feasibility matrix, and the "Do first" quadrant lights.
+  - A dashed "Risk check" flags one case.
+  - The chosen cases flow into a Q1–Q4 roadmap (Governance → Pilot → Scale → Review).
+  - Assess · prioritise · govern · roadmap light in turn. 10 s loop, soft fade, reset.
+- **Sections:**
+  - answer-first lede;
+  - Why AI initiatives fail (Gartner 30% / 40%+, McKinsey 39%);
+  - What it covers (9);
+  - **EU AI Act timeline table** (6 rows, Service Desk, "Not legal advice");
+  - Process (5); Deliverables (8); Measurement (6, incl. "projects stopped early");
+  - Straight answer ("Sometimes the answer is 'not yet'");
+  - 8 industry cards; 6 related; 6 FAQs; final CTA.
+- **Not claimed:** no prices, fixed durations, clients or results; "we are not resellers" is a positioning statement.
+- **Verified:** 1 H1 (three lines), 11 H2, 8 cards, kit loaded, no PHP errors, noindex, no `href="#"`, 390 px with no overflow (after one proxy retry); screenshots checked. Fingerprint tool now includes `ex`.
+
+---
+
+## F-022 — EU AI Act Article 4 (AI literacy) was amended by the Digital Omnibus on 27 Jul 2026
+**Date:** 30 September 2026 · **Status:** RECORDED (applied to page 103; nothing else affected)
+
+- **VERIFIED:** Regulation (EU) 2026/1744 (Digital Omnibus on AI; OJ 24 Jul 2026, in force 27 Jul 2026) replaced Article 4. It moves from "ensure, to their best extent, a sufficient level" to "take measures to support the development of AI literacy", and states that no specific individual level has to be guaranteed. The AI Act Service Desk's Article 4 page still shows the old text, under an "amended — not yet updated" disclaimer.
+- **Also from the Service Desk timeline (post-Omnibus):** high-risk Annex III rules apply from **2 Dec 2027**; Annex I from 2 Aug 2028; new prohibitions from 2 Dec 2026.
+- **Checked:** the AI Workflow Automation page (D-060) makes no literacy claim, and its dates (prohibitions Feb 2025, high-risk Dec 2027, chatbot disclosure) match the post-Omnibus timeline. No change needed.
+- **Rule for future pages:** quote AI Act duties from the Service Desk timeline plus the amended text, not from pre-July-2026 summaries.
+
+---
+
 ## D-060 — AI Workflow Automation page built on `.online` (page 97, published)
 **Date:** 29 September 2026 · **Status:** DONE (Jamil: "yes, go ahead with AI Workflow Automation")
 
