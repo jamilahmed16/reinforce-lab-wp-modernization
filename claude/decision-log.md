@@ -597,6 +597,39 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-066 — Industries hub + 8 industry pages built on `.online` (pages 87, 75, 90–96, published)
+**Date:** 30 September 2026 · **Status:** DONE (Jamil: "First Agents … Then Industries Hub and its pages")
+
+- **URLs (D-022 axis, plain slugs as drafted):** `/industries/` and `/industries/{pharmaceutical, healthcare, b2b-saas, ecommerce, manufacturing, technology, professional-services, education}/`. The keyword `-seo` vs plain slug question from D-022 is still Jamil's to settle before migration; renaming later is one slug edit per page on `.online`.
+- **Deploy:** one guarded call. It aborted if the file existed, if `blog_public` ≠ 0, if the hub was not an empty draft at root with slug `industries`, or if any of the 8 pages was not an empty draft under 87 with its slug. Then: file written → opcache invalidated → 9 pages published → Yoast title and meta set.
+- **File:** `wp/novamira-sandbox/reinforce-industries.php`, live md5 = repo `fc10f8ab…`. It is one file: single source `rl_ind_data()`, shortcodes `[reinforce_industries]` (hub) and `[reinforce_industry]` (pages). `rl_ind_current()` only matches a child of the root `industries` page whose slug is in the data. Uses the shared kit (D-044).
+- **Hub:**
+  - hero "Eight industries · one system" animation (8 sectors feed the AI Growth System core, lit in turn, 10 s loop);
+  - 8 industry cards;
+  - "Why does industry matter" (3 sourced points);
+  - how the system adapts (4 steps);
+  - 4 FAQs; CTA.
+  - Schema: ItemList (8) + FAQPage + breadcrumb.
+  - Yoast: "Industries | AI Growth Systems by Sector | Reinforce Lab".
+- **Each industry page:**
+  - 3-line H1; answer-first lede;
+  - hero animation (sector inputs → AI Growth System with its guardrail → growth line, 10 s loop, soft reset);
+  - the challenge (3); the evidence (2 sourced facts);
+  - 6 fitting services; 2 agents + Search Authority OS;
+  - a straight answer; 4 FAQs; CTA.
+  - Schema: Service ("AI Growth Systems for {sector}", BusinessAudience) + FAQPage + breadcrumb Home › Industries › {sector}.
+- **Sources:** `claude/research/industries-research-2026-09-30.md`. There are no client, result or sector-experience claims.
+- **Verified (all 9):**
+  - 1 H1; H2s: hub 5, pages 7; hub 8 industry cards;
+  - schema types present; noindex; no PHP errors; `rl-kit-css` loaded;
+  - 0 `href="#"` inside page content. The 41 in the header are the site-wide mega-menu column headers and unbuilt items, the same count on `/services/`;
+  - 390 px with no overflow on all 9 (2 after a proxy retry);
+  - full-page screenshots checked (hub, pharmaceutical, manufacturing).
+- **F-021 effect:** the Industries menu and every service page's industry cards now resolve to published pages. The remaining draft link in the menu is `?page_id=71` (AI Growth Systems overview, built last per plan).
+- Style fingerprint entries added: `ag`, `indhub`, `ind`.
+
+---
+
 ## D-065 — The 8 agent pages built on `.online` (pages 77–84, published) from one shared template
 **Date:** 30 September 2026 · **Status:** DONE (Jamil: "First Agents … Then Industries Hub and its pages")
 
