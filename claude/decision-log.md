@@ -597,6 +597,51 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-065 — The 8 agent pages built on `.online` (pages 77–84, published) from one shared template
+**Date:** 30 September 2026 · **Status:** DONE (Jamil: "First Agents … Then Industries Hub and its pages")
+
+- **URLs:** `/services/agents/{seo-intelligence, content-research, evidence-verification, aeo-geo-optimization, social-sentiment, competitor-intelligence, content-qa, search-performance}/` (D-016 approved-new).
+- **Pages 77–84:** draft → publish in one guarded call. Every page had to be an empty draft under hub 76 with the expected slug, and the call aborts entirely if any fails.
+- **Yoast:** each page's title is "{Name} Agent | Search Authority OS | Reinforce Lab" (A-07 "Content QA Auditor") with its own meta.
+- **Post titles aligned:** "AEO / GEO Optimization Agent" and "Content QA Auditor".
+- **File:** `wp/novamira-sandbox/reinforce-agent-pages.php`, live md5 = repo `31e8fc7f…`. It is **one template** with per-agent data in `rl_ag_data()`, shortcode `[reinforce_agent]`, and `rl_ag_current()` resolving the agent from the slug plus the parent `agents`. Editing an agent means editing one array entry.
+- **Content source:** the strategy doc ("8 Agent Selling Pages … each page should sell one specific business outcome, not technology") and the hub's existing agent definitions (outcomes, capabilities, best-for). No results, prices, clients or tool brand-claims beyond the hub's own (PubMed / ClinicalTrials.gov; ChatGPT, Perplexity, Gemini, AI Overviews).
+- **Honesty guard (see O-022):** every page states that a person reviews the output before it is delivered, and step 05 of the process is "Human review". No "fully automated", "24/7" or result claims.
+- **Hero animation "Agent loop"** (one family, labels per agent):
+  - The agent's 3 inputs feed the agent box (id + name); its 3 steps light in turn.
+  - Results pass a "Human review" diamond, then 3 outputs are delivered.
+  - Caption "Search Authority OS · Stage: …"; input · analyse · review · deliver light in turn. 10 s loop, soft fade, reset.
+- **Sections per page:**
+  - answer-first lede;
+  - the problem (3); how it works (4 steps + human review);
+  - deliverables (6);
+  - where it fits in Search Authority OS (stage plus 2 neighbour agents linked plus SAOS);
+  - straight answer (the agent's limits);
+  - 8 industry cards (2 points each, D-047);
+  - 4 FAQs; final CTA (diagnostic + packages).
+- **Schema:** `Service` (isRelatedTo Search Authority OS) + `FAQPage`; breadcrumb Home › Services › Agents › {Agent}.
+- **Hub alignment:** `reinforce-agents.php` A-01 renamed "Search Intelligence" → "SEO Intelligence" to match the menu, strategy doc and page (backup `.bak-20260930-091412`, live md5 `d7658cbe…`).
+- **Verified (all 8):** 1 H1 (three lines), 8 H2, 8 industry cards, Service + FAQPage (4), breadcrumb, no PHP errors, noindex, no `href="#"`; 390 px with no overflow (4 sampled, 1 after proxy retry); screenshots checked. The agent menu items now resolve to published pages, clearing 8 of the F-021 draft links.
+
+---
+
+## O-022 — The agent pages sell agents whose software is not recorded as built — confirm before launch
+**Date:** 30 September 2026 · **Status:** OPEN (content on `.online` only)
+
+**Finding (VERIFIED from the record):**
+- The 28 Sep note (Diagnostic section) says the Search Authority OS software (agents, Neon, research stack) "is not recorded as built", and "copy must not describe an automated system that doesn't exist yet".
+- The D-017 order is "site front-end first, then the OS MVP".
+- The strategy doc's MVP plan starts with 5 core agents for Reinforce Lab's own content, with commercial packaging only after 30–60 days of measurement.
+
+**What the pages do now:** they describe each agent's outcome and deliverables, state that a person reviews every output, and make no claims of full automation, results or clients. The hub (built earlier) and these pages still present the agents as **available to buy**.
+
+**Options before migration (RECOMMENDATION = A until the MVP is running):**
+- **A.** Keep the pages. The work is delivered as a service by the Reinforce Lab team with AI assistance while the software is built. Jamil confirms this is true today.
+- **B.** Add an "Early access" label and a waitlist CTA on each agent page (one line in the template).
+- **C.** Keep the pages unpublished until the matching agent exists.
+
+---
+
 ## D-064 — Website Maintenance page built on `.online` (page 198, published) — Solutions menu complete
 **Date:** 30 September 2026 · **Status:** DONE (Jamil: "yes, go ahead with Website Maintenance")
 
