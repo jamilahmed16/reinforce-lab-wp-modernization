@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Technical SEO
- * Description: /services/technical-seo/ (production URL kept — D-046; was /services/technical-seo/ on .online) — Technical SEO service page. Provides [reinforce_techseo]. Uses the shared kit (D-044). Hero animation "Crawl, fix, index" (D-039 Step 3).
+ * Plugin Name: Reinforce Lab - Technical SEO
+ * Description: /services/technical-seo/ (production URL kept - D-046; was /services/technical-seo/ on .online) - Technical SEO service page. Provides [reinforce_techseo]. Uses the shared kit (D-044). Hero animation "Crawl, fix, index" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -11,8 +11,8 @@ function rl_is_techseo() { return is_page('technical-seo-services'); }
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_techseo_faqs() {
     return [
-        ['What is technical SEO?', 'Technical SEO is the work that makes sure search engines and AI crawlers can crawl, render, understand and index the pages that matter on a website — quickly, without errors and without wasting effort on junk URLs. It covers crawlability, indexation, site architecture, page speed, structured data and access for crawlers.'],
-        ['How is a technical SEO audit different from what you deliver?', 'An audit lists problems. We trace each problem to its root cause — often one template or setting that creates hundreds of symptoms — fix it with your team or directly in WordPress, and then re-crawl the site to verify the fix worked.'],
+        ['What is technical SEO?', 'Technical SEO is the work that makes sure search engines and AI crawlers can crawl, render, understand and index the pages that matter on a website, quickly, without errors and without wasting effort on junk URLs. It covers crawlability, indexation, site architecture, page speed, structured data and access for crawlers.'],
+        ['How is a technical SEO audit different from what you deliver?', 'An audit lists problems. We trace each problem to its root cause (often one template or setting that creates hundreds of symptoms), fix it with your team or directly in WordPress, and then re-crawl the site to verify the fix worked.'],
         ['What are the Core Web Vitals thresholds?', 'Google’s web.dev guidance says a good experience means Largest Contentful Paint within 2.5 seconds, Interaction to Next Paint of 200 milliseconds or less, and Cumulative Layout Shift of 0.1 or less, measured at the 75th percentile of page loads on mobile and desktop. Interaction to Next Paint replaced First Input Delay on 12 March 2024.'],
         ['Does blocking a page in robots.txt remove it from Google?', 'No. Google’s documentation says robots.txt controls crawling, not indexing. If a page is blocked from crawling, Google cannot see a noindex rule on it, so the URL can still appear in results. To keep a page out of the index, it must be crawlable and carry a noindex rule.'],
         ['Do AI crawlers see the same page as Googlebot?', 'Not necessarily. Google renders JavaScript, but its own guidance notes that not all bots can run JavaScript. The major AI companies do not document whether their crawlers render JavaScript, and a Vercel study observed several that did not. The safe approach is to make important content available in the page’s initial HTML.'],
@@ -25,11 +25,11 @@ function rl_techseo_industries() {
     return [
         ['pharmaceutical', 'Pharmaceutical & Life Sciences', ['Separate HCP and patient sections, gated content and country versions indexed correctly', 'Frequently updated product and pipeline pages kept crawlable, current and free of duplicates', 'Clean HTML and structured data so evidence-heavy pages are read accurately']],
         ['healthcare', 'Healthcare', ['Location and practitioner pages at scale without duplicate or thin URLs', 'Fast, stable pages on mobile for people searching on the go', 'Medical content with visible reviewer and update details, marked up to match']],
-        ['b2b-saas', 'B2B SaaS', ['JavaScript-heavy pages rendered so crawlers see the real content', 'Docs, changelogs and help centres organised without crawl waste', 'Marketing site, app and staging kept separate — staging never indexed']],
+        ['b2b-saas', 'B2B SaaS', ['JavaScript-heavy pages rendered so crawlers see the real content', 'Docs, changelogs and help centres organised without crawl waste', 'Marketing site, app and staging kept separate: staging never indexed']],
         ['ecommerce', 'E-commerce', ['Filters and sorting that don’t multiply into endless URLs', 'Variants and out-of-stock or discontinued products handled with the right canonical or redirect', 'Category and product templates that pass Core Web Vitals']],
         ['manufacturing', 'Manufacturing', ['Large catalogues and spec sheets, including PDFs, made crawlable and indexable', 'Distributor and regional sites without duplicate content', 'Legacy sites migrated without losing the pages that bring enquiries']],
         ['technology', 'Technology', ['Architecture that keeps many products and integrations easy to find', 'JavaScript frameworks checked for what crawlers actually receive', 'Developer docs and API references structured for search and AI answers']],
-        ['professional-services', 'Professional Services', ['Service, location and team pages structured so each one can rank', 'Insights and articles kept fast, indexable and linked to the right services', 'Clean sites after mergers and rebrands — old domains redirected correctly']],
+        ['professional-services', 'Professional Services', ['Service, location and team pages structured so each one can rank', 'Insights and articles kept fast, indexable and linked to the right services', 'Clean sites after mergers and rebrands: old domains redirected correctly']],
         ['education', 'Education', ['Course pages that change every intake kept current and indexable', 'Large archives of news, events and past courses consolidated to cut crawl waste', 'Multi-campus and international versions paired with correct hreflang']],
     ];
 }
@@ -165,7 +165,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     $graph[] = [
         '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Technical SEO', 'serviceType' => 'Technical search engine optimization',
         'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
-        'description' => 'Technical SEO makes sure search engines and AI crawlers can crawl, render, understand and index the pages that matter — covering crawlability, indexation, site architecture, Core Web Vitals, structured data and crawler access, with root causes fixed and verified after release.',
+        'description' => 'Technical SEO makes sure search engines and AI crawlers can crawl, render, understand and index the pages that matter, covering crawlability, indexation, site architecture, Core Web Vitals, structured data and crawler access, with root causes fixed and verified after release.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
     ];
     $graph[] = [
@@ -197,7 +197,7 @@ function rl_render_techseo() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Technical SEO&nbsp;<b>]</b></span>
       <h1 class="h1">Fix what stops<br>search engines<br><span class="r">and AI crawlers.</span></h1>
-      <p class="lede"><strong>Technical SEO</strong> makes sure search engines and AI crawlers can crawl, render, understand and index the pages that matter — quickly, without errors and without wasting effort on junk URLs. Reinforce Lab finds the root causes, fixes them, and re-crawls to prove the fix worked.</p>
+      <p class="lede"><strong>Technical SEO</strong> makes sure search engines and AI crawlers can crawl, render, understand and index the pages that matter, quickly, without errors and without wasting effort on junk URLs. Reinforce Lab finds the root causes, fixes them, and re-crawls to prove the fix worked.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#check">What we check</a>
@@ -212,12 +212,12 @@ function rl_render_techseo() {
 
 <section class="band alt" id="stages">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;How search works&nbsp;<b>]</b></span><h2>Where can a page get stuck?</h2><p class="lede">Google describes Search in three stages — crawling, indexing and serving — and says not every page makes it through each one. For JavaScript sites, rendering sits in between. Technical SEO removes what blocks a page at each stage.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;How search works&nbsp;<b>]</b></span><h2>Where can a page get stuck?</h2><p class="lede">Google describes Search in three stages (crawling, indexing and serving) and says not every page makes it through each one. For JavaScript sites, rendering sits in between. Technical SEO removes what blocks a page at each stage.</p></div>
     <ol class="stages">
       <li><h3>Crawl</h3><p>The crawler finds and downloads the page by following links and sitemaps.</p><p class="brk"><b>Breaks when</b>Pages are blocked, orphaned, buried deep or lost in redirect chains.</p></li>
       <li><h3>Render</h3><p>The page's code runs so the full content can be read.</p><p class="brk"><b>Breaks when</b>Key content only appears after JavaScript that some crawlers never run.</p></li>
       <li><h3>Index</h3><p>The content is analysed and stored, with one version chosen as canonical.</p><p class="brk"><b>Breaks when</b>Duplicates, conflicting canonicals or stray noindex rules get in the way.</p></li>
-      <li><h3>Serve</h3><p>The page is shown for relevant searches — and used by AI features that draw on the index.</p><p class="brk"><b>Breaks when</b>The page is slow, unstable or unclear about what it is.</p></li>
+      <li><h3>Serve</h3><p>The page is shown for relevant searches, and used by AI features that draw on the index.</p><p class="brk"><b>Breaks when</b>The page is slow, unstable or unclear about what it is.</p></li>
     </ol>
     <p class="src">Sources: Google, <a href="<?php echo $g('fundamentals/how-search-works'); ?>" rel="noopener" target="_blank">How Google Search works</a> · <a href="<?php echo $g('crawling-indexing/javascript/javascript-seo-basics'); ?>" rel="noopener" target="_blank">JavaScript SEO basics</a></p>
   </div>
@@ -225,17 +225,17 @@ function rl_render_techseo() {
 
 <section id="check">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What we check&nbsp;<b>]</b></span><h2>What does a technical SEO review cover?</h2><p class="lede">Nine areas, checked against how Google documents them — and against what AI crawlers can actually read.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What we check&nbsp;<b>]</b></span><h2>What does a technical SEO review cover?</h2><p class="lede">Nine areas, checked against how Google documents them, and against what AI crawlers can actually read.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01 · Crawlability</span><h3>Can crawlers reach it?</h3><p>robots.txt, internal links, orphan pages, redirect chains, broken links and crawl traps such as endless pagination or filter URLs.</p></div>
       <div class="cell"><span class="n">02 · Indexation</span><h3>Should it be in the index?</h3><p>noindex rules, canonicals, duplicate and thin URLs, and what Search Console reports as crawled or discovered but not indexed.</p></div>
       <div class="cell"><span class="n">03 · Rendering</span><h3>Is the content in the HTML?</h3><p>Whether headings, text and links exist in the initial HTML or only appear after JavaScript runs.</p></div>
-      <div class="cell"><span class="n">04 · Performance</span><h3>Is it fast and stable?</h3><p>Core Web Vitals by template and device — loading, responsiveness and layout stability.</p></div>
+      <div class="cell"><span class="n">04 · Performance</span><h3>Is it fast and stable?</h3><p>Core Web Vitals by template and device: loading, responsiveness and layout stability.</p></div>
       <div class="cell"><span class="n">05 · Architecture</span><h3>Is the structure clear?</h3><p>URL patterns, click depth, breadcrumbs and internal links that send authority to the pages that matter.</p></div>
-      <div class="cell"><span class="n">06 · Sitemaps</span><h3>Do sitemaps help?</h3><p>Clean XML sitemaps that list only canonical, indexable URLs — no redirects, no errors, no junk.</p></div>
+      <div class="cell"><span class="n">06 · Sitemaps</span><h3>Do sitemaps help?</h3><p>Clean XML sitemaps that list only canonical, indexable URLs: no redirects, no errors, no junk.</p></div>
       <div class="cell"><span class="n">07 · Structured data</span><h3>Does the markup match?</h3><p>Schema that is valid and represents the visible page, as Google's guidelines require.</p></div>
       <div class="cell"><span class="n">08 · AI access</span><h3>Can AI crawlers read it?</h3><p>Crawler rules per AI company, server-rendered content, and pages that load without errors for bots.</p></div>
-      <div class="cell"><span class="n">09 · International</span><h3>Are languages paired?</h3><p>hreflang where you serve several languages or regions — every version listing itself and all the others.</p></div>
+      <div class="cell"><span class="n">09 · International</span><h3>Are languages paired?</h3><p>hreflang where you serve several languages or regions: every version listing itself and all the others.</p></div>
     </div>
   </div>
 </section>
@@ -247,13 +247,13 @@ function rl_render_techseo() {
       <table>
         <thead><tr><th scope="col">Metric</th><th scope="col">What it measures</th><th scope="col" class="us">"Good" threshold</th></tr></thead>
         <tbody>
-          <tr><th scope="row">LCP</th><td>Largest Contentful Paint — how fast the main content loads</td><td class="num us">≤ 2.5 s</td></tr>
-          <tr><th scope="row">INP</th><td>Interaction to Next Paint — how fast the page responds to clicks and taps</td><td class="num us">≤ 200 ms</td></tr>
-          <tr><th scope="row">CLS</th><td>Cumulative Layout Shift — how much the layout jumps while loading</td><td class="num us">≤ 0.1</td></tr>
+          <tr><th scope="row">LCP</th><td>Largest Contentful Paint: how fast the main content loads</td><td class="num us">≤ 2.5 s</td></tr>
+          <tr><th scope="row">INP</th><td>Interaction to Next Paint: how fast the page responds to clicks and taps</td><td class="num us">≤ 200 ms</td></tr>
+          <tr><th scope="row">CLS</th><td>Cumulative Layout Shift: how much the layout jumps while loading</td><td class="num us">≤ 0.1</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="src">Measured at the 75th percentile of page loads, on mobile and desktop. INP replaced First Input Delay on 12 March 2024. Sources: <a href="https://web.dev/articles/vitals" rel="noopener" target="_blank">web.dev — Web Vitals</a> · <a href="https://web.dev/blog/inp-cwv-march-12" rel="noopener" target="_blank">INP becomes a Core Web Vital</a></p>
+    <p class="src">Measured at the 75th percentile of page loads, on mobile and desktop. INP replaced First Input Delay on 12 March 2024. Sources: <a href="https://web.dev/articles/vitals" rel="noopener" target="_blank">web.dev: Web Vitals</a> · <a href="https://web.dev/blog/inp-cwv-march-12" rel="noopener" target="_blank">INP becomes a Core Web Vital</a></p>
   </div>
 </section>
 
@@ -261,8 +261,8 @@ function rl_render_techseo() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Myths vs Google&nbsp;<b>]</b></span><h2>Which technical SEO beliefs are wrong?</h2><p class="lede">Common assumptions, checked against Google's own documentation.</p></div>
     <div class="myths">
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Blocking a page in robots.txt removes it from Google."</p></div><div class="f"><span class="tag">Google says</span><p>robots.txt controls crawling. If a page is blocked, Google can't see its noindex rule — to keep it out of the index, let it be crawled and add noindex.</p><a href="<?php echo $g('crawling-indexing/robots-meta-tag'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"A canonical tag forces Google to pick that URL."</p></div><div class="f"><span class="tag">Google says</span><p>rel=canonical is a strong signal, not a command. Conflicting signals — say, a canonical and a redirect pointing different ways — can make Google choose another URL.</p><a href="<?php echo $g('crawling-indexing/consolidate-duplicate-urls'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Blocking a page in robots.txt removes it from Google."</p></div><div class="f"><span class="tag">Google says</span><p>robots.txt controls crawling. If a page is blocked, Google can't see its noindex rule. To keep it out of the index, let it be crawled and add noindex.</p><a href="<?php echo $g('crawling-indexing/robots-meta-tag'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"A canonical tag forces Google to pick that URL."</p></div><div class="f"><span class="tag">Google says</span><p>rel=canonical is a strong signal, not a command. Conflicting signals (say, a canonical and a redirect pointing different ways) can make Google choose another URL.</p><a href="<?php echo $g('crawling-indexing/consolidate-duplicate-urls'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"If it's in the sitemap, it will be indexed."</p></div><div class="f"><span class="tag">Google says</span><p>A sitemap helps discovery but doesn't guarantee that every URL in it will be crawled or indexed.</p><a href="<?php echo $g('crawling-indexing/sitemaps/overview'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Every site needs to worry about crawl budget."</p></div><div class="f"><span class="tag">Google says</span><p>Crawl budget mainly matters for very large sites (1 million+ pages), fast-changing sites with 10,000+ pages, or sites with many URLs stuck as "Discovered – currently not indexed". For most, the issue is junk URLs, not budget.</p><a href="https://developers.google.com/crawling/docs/crawl-budget" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"If Google can render our JavaScript, every crawler can."</p></div><div class="f"><span class="tag">Google says</span><p>Server-side or pre-rendering "is still a great idea" because "not all bots can run JavaScript". AI companies don't document whether their crawlers render it, and a Vercel study observed several that did not.</p><a href="<?php echo $g('crawling-indexing/javascript/javascript-seo-basics'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
@@ -274,7 +274,7 @@ function rl_render_techseo() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does a technical SEO engagement run?</h2><p class="lede">We don't stop at a list of problems. Every fix is traced to its cause and verified after release.</p></div>
     <ol class="steps">
-      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Crawl &amp; collect</h3><p>Crawl the site, and read Search Console, analytics and — where available — server logs.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Crawl &amp; collect</h3><p>Crawl the site, and read Search Console, analytics and (where available) server logs.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Find root causes</h3><p>Group symptoms by cause. One template or plugin setting can create hundreds of junk URLs.</p></li>
       <li class="step"><div class="k" aria-hidden="true">03</div><h3>Prioritise</h3><p>Rank fixes by impact and effort, with the pages that earn traffic protected first.</p></li>
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Fix safely</h3><p>Implement with your developers or directly in WordPress, tested on a copy of the site before going live.</p></li>
@@ -287,21 +287,21 @@ function rl_render_techseo() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>Technical audit</b> — every issue, grouped by root cause, with severity and affected URLs.</li>
-      <li><b>URL inventory</b> — which URLs earn traffic or links and must be protected.</li>
-      <li><b>Prioritised fix plan</b> — ranked by impact and effort, with clear acceptance criteria.</li>
-      <li><b>Developer-ready tickets</b> — or the fixes themselves, applied on WordPress.</li>
-      <li><b>Redirect map</b> — for any URL that has to change, tested before launch.</li>
-      <li><b>Core Web Vitals plan</b> — per template, on mobile and desktop.</li>
-      <li><b>Crawler &amp; sitemap setup</b> — robots rules, AI-crawler policy and clean sitemaps.</li>
-      <li><b>Verification crawl</b> — proof after release that each fix worked.</li>
+      <li><b>Technical audit</b>: every issue, grouped by root cause, with severity and affected URLs.</li>
+      <li><b>URL inventory</b>: which URLs earn traffic or links and must be protected.</li>
+      <li><b>Prioritised fix plan</b>: ranked by impact and effort, with clear acceptance criteria.</li>
+      <li><b>Developer-ready tickets</b>: or the fixes themselves, applied on WordPress.</li>
+      <li><b>Redirect map</b>: for any URL that has to change, tested before launch.</li>
+      <li><b>Core Web Vitals plan</b>: per template, on mobile and desktop.</li>
+      <li><b>Crawler &amp; sitemap setup</b>: robots rules, AI-crawler policy and clean sitemaps.</li>
+      <li><b>Verification crawl</b>: proof after release that each fix worked.</li>
     </ul>
   </div>
 </section>
 
 <section class="band alt" id="measure">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure technical SEO?</h2><p class="lede">By whether the right pages get crawled, indexed and served — not by a generic health score.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure technical SEO?</h2><p class="lede">By whether the right pages get crawled, indexed and served, not by a generic health score.</p></div>
     <div class="cols c3">
       <div class="metric"><h3>Indexed important pages</h3><p>Share of your valuable pages that are actually in the index.</p></div>
       <div class="metric"><h3>Crawl waste</h3><p>Share of crawled URLs that are junk, duplicates or errors.</p></div>
@@ -318,7 +318,7 @@ function rl_render_techseo() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Protect what works&nbsp;<b>]</b></span>
       <h2>We don't break what already ranks.</h2>
-      <p>Technical fixes can remove traffic as easily as they add it. Before we change anything, we inventory the URLs that earn traffic and links, map redirects for anything that must move, and test on a copy of the site. Nothing that already ranks changes without your approval — and every release is re-crawled.</p>
+      <p>Technical fixes can remove traffic as easily as they add it. Before we change anything, we inventory the URLs that earn traffic and links, map redirects for anything that must move, and test on a copy of the site. Nothing that already ranks changes without your approval, and every release is re-crawled.</p>
     </div>
   </div>
 </section>
@@ -341,7 +341,7 @@ function rl_render_techseo() {
       <?php foreach ([
           ['services/seo-ai-search-audit', 'Starting point', 'SEO & AI Search Audit', 'A full review of your Google and AI-search performance with a prioritised fix list.'],
           ['services/ai-search-optimization', 'AI search', 'AI Search Optimization', 'The full program for being visible, accurately described and recommended across AI search.'],
-          ['services/international-seo', 'Global', 'International SEO', 'Multi-country and multi-language search — hreflang, market targeting and localised content.'],
+          ['services/international-seo', 'Global', 'International SEO', 'Multi-country and multi-language search: hreflang, market targeting and localised content.'],
           ['services/enterprise-seo-strategy', 'Scale', 'Enterprise SEO Strategy', 'Search strategy for large sites and multi-team organisations.'],
           ['services/website-maintenance-services', 'Upkeep', 'Website Maintenance', 'Updates, security, backups and performance checks that keep your site healthy.'],
           ['services/agents/search-performance', 'Always on', 'Search Performance Agent', 'The Search Authority OS agent that reads Search Console and analytics continuously and diagnoses drops.'],
@@ -365,7 +365,7 @@ function rl_render_techseo() {
     <div class="final">
       <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
       <h2>What's stopping your pages from being indexed?</h2>
-      <p class="lede">The free Search Authority Diagnostic includes a technical foundation review — indexability, crawlability, architecture and the barriers holding you back.</p>
+      <p class="lede">The free Search Authority Diagnostic includes a technical foundation review: indexability, crawlability, architecture and the barriers holding you back.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('services'); ?>">All services</a>

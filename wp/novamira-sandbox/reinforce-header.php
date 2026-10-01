@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Header (Systems Grid)
+ * Plugin Name: Reinforce Lab - Header (Systems Grid)
  * Description: Site-wide square-glass header + mega-menu (D-018/D-021). Renders from the "Primary" nav menu and the site logo. Provides [reinforce_header]; also auto-renders at wp_body_open.
  * Version: 1.0
  * Author: Reinforce Lab
@@ -243,7 +243,7 @@ function rl_render_header() {
                 $colB = array_slice($plain, $half); ?>
               <div class="wrap ind-grid">
                 <div class="mega-col ind-intro">
-                  <h5><?php echo esc_html($t->title); ?> &mdash; Who We Serve</h5>
+                  <h5><?php echo esc_html($t->title); ?>: Who We Serve</h5>
                   <p>AI Growth Systems tuned to each industry's search behaviour, buyers, and compliance realities.</p>
                   <a class="mega-lead2" href="<?php echo esc_url($t->url); ?>">All <?php echo esc_html($t->title); ?> <span class="ar">&rarr;</span></a>
                 </div>
@@ -268,7 +268,7 @@ function rl_render_header() {
   <?php else:
     echo '<div class="m-sub">' . esc_html($t->title) . '</div>';
     foreach ($children as $c):
-      if ($has_class($c, 'mega-col-header')) { echo '<div class="m-sub">' . esc_html($t->title) . ' &mdash; ' . esc_html($c->title) . '</div>'; $gc = isset($kids[$c->ID]) ? $kids[$c->ID] : array(); foreach ($gc as $g) { echo '<a class="m-mini" href="' . esc_url($g->url) . '">' . esc_html($g->title) . '</a>'; } }
+      if ($has_class($c, 'mega-col-header')) { echo '<div class="m-sub">' . esc_html($t->title) . ' · ' . esc_html($c->title) . '</div>'; $gc = isset($kids[$c->ID]) ? $kids[$c->ID] : array(); foreach ($gc as $g) { echo '<a class="m-mini" href="' . esc_url($g->url) . '">' . esc_html($g->title) . '</a>'; } }
       else { echo '<a class="m-mini" href="' . esc_url($c->url) . '">' . esc_html($c->title) . '</a>'; }
     endforeach;
   endif; endforeach; ?>

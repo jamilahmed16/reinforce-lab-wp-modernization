@@ -22,6 +22,7 @@ A page does not ship until ALL of these pass:
 7. **Answer-first** — the page's core question is answered in the first sentence/þ block (see §4).
 8. **Internal links** — every new page links out to relevant pages AND is linked to from relevant pages (no orphans — this is the single biggest fix from DISCOVER).
 9. **Design pre-flight** (`novamira/check-design`) passes, and the F-001 archive rule holds (one Posts module per Themer archive template — never regenerate `/paged-N/` junk).
+10. **Copy rules (D-072)** pass: `python3 claude/tools/copy-check.py` reports 0 issues. No em dashes anywhere in website copy (titles, meta, schema, alt text, blog posts included), no emoji, no AI-style words from the banned list. When a wording choice is unclear, ask Jamil.
 
 ---
 

@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Local SEO
- * Description: /services/local-seo/ (D-023 new slug; production legacy /best-local-search-engine-optimization-service/ decision pending — O-017) — Local SEO service page. Provides [reinforce_local]. Uses the shared kit (D-044). Hero animation "Local pack" (D-039 Step 3).
+ * Plugin Name: Reinforce Lab - Local SEO
+ * Description: /services/local-seo/ (D-023 new slug; production legacy /best-local-search-engine-optimization-service/ decision pending - O-017) - Local SEO service page. Provides [reinforce_local]. Uses the shared kit (D-044). Hero animation "Local pack" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -11,12 +11,12 @@ function rl_is_local() { return is_page('local-seo'); }
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_local_faqs() {
     return [
-        ['What is local SEO?', 'Local SEO — local search engine optimization — makes a business visible when people nearby search for what it offers: in Google’s local results and Maps, on Apple Maps and Bing, and in AI answers. It covers the Google Business Profile and other map listings, consistent business details across directories, reviews, location and service-area pages, local structured data and local links.'],
-        ['How does Google rank local results?', 'Google says local results are mainly based on relevance, distance and prominence: how well a profile matches the search, how far the business is from the searcher, and how well known it is — including links and reviews. Google also says there is no way to request or pay for a better local ranking.'],
+        ['What is local SEO?', 'Local SEO (local search engine optimization) makes a business visible when people nearby search for what it offers: in Google’s local results and Maps, on Apple Maps and Bing, and in AI answers. It covers the Google Business Profile and other map listings, consistent business details across directories, reviews, location and service-area pages, local structured data and local links.'],
+        ['How does Google rank local results?', 'Google says local results are mainly based on relevance, distance and prominence: how well a profile matches the search, how far the business is from the searcher, and how well known it is, including links and reviews. Google also says there is no way to request or pay for a better local ranking.'],
         ['Can we add keywords to our Google Business Profile name?', 'No. Google’s guidelines say the name should reflect your real-world business name, as used on signage and stationery, and that adding unnecessary information to it is not permitted and can lead to the profile being suspended.'],
         ['How should we get more reviews?', 'Ask every customer, not only the happy ones, and make it easy for them. Google prohibits offering incentives for reviews and selectively asking for positive ones, and the US FTC’s rule on fake reviews, announced in August 2024, bans buying or selling fake reviews. Replying to reviews shows customers you value their feedback.'],
-        ['We don’t have a shopfront. Can we still do local SEO?', 'Yes. Google treats you as a service-area business: one profile for your central office with the areas you serve, and your address hidden from customers. You can’t list virtual offices unless they are staffed during business hours — so we build visibility through service-area pages, not fake locations.'],
-        ['Does local SEO help in AI search?', 'It can. OpenAI says ChatGPT search can use your location and sometimes works with other search providers for local results, and Google offers Gemini grounding with Google Maps data. Accurate, consistent listings and clear location pages give these tools correct facts to use — though no one controls what an AI answers.'],
+        ['We don’t have a shopfront. Can we still do local SEO?', 'Yes. Google treats you as a service-area business: one profile for your central office with the areas you serve, and your address hidden from customers. You can’t list virtual offices unless they are staffed during business hours, so we build visibility through service-area pages, not fake locations.'],
+        ['Does local SEO help in AI search?', 'It can. OpenAI says ChatGPT search can use your location and sometimes works with other search providers for local results, and Google offers Gemini grounding with Google Maps data. Accurate, consistent listings and clear location pages give these tools correct facts to use, though no one controls what an AI answers.'],
     ];
 }
 
@@ -29,14 +29,14 @@ function rl_local_industries() {
         ['ecommerce', 'E-commerce', ['Store locator and store pages for every physical location', 'Hours, stock and collection details consistent across maps', 'Store-level reviews managed location by location']],
         ['manufacturing', 'Manufacturing', ['Plants, depots and showrooms listed accurately on every map', 'Service-area profiles for field engineers and installers', 'Consistent listings in industrial directories and trade associations']],
         ['technology', 'Technology', ['Office and support-centre listings consistent across maps', 'Service-area pages for on-site IT and installation work', 'Local partner and reseller listings aligned with yours']],
-        ['professional-services', 'Professional Services', ['A profile for each real office — no virtual-office risk', 'Practice-area pages for each city you serve', 'Client reviews gathered within Google’s rules']],
+        ['professional-services', 'Professional Services', ['A profile for each real office: no virtual-office risk', 'Practice-area pages for each city you serve', 'Client reviews gathered within Google’s rules']],
         ['education', 'Education', ['Campus and admissions-office listings on Google, Apple and Bing', 'Campus pages with directions, open days and contacts', 'Consistent campus and department names across directories']],
     ];
 }
 
 /* ---------- hero animation: Local pack ----------
    A "near me" search goes out; ripples spread from the searcher across a street map; business pins
-   drop; Google's three local factors light in turn — relevance, distance (the dashed line to your
+   drop; Google's three local factors light in turn - relevance, distance (the dashed line to your
    pin) and prominence (your pin's halo); then the local results list builds and your listing lights,
    with profile · reviews · citations checked. 10 s loop, soft fade, reset. */
 function rl_local_svg() {
@@ -67,7 +67,7 @@ function rl_local_svg() {
         $s .= '<text class="o-ft" x="' . $x . '" y="344">' . $f . '</text><text class="o-ft o-fton o-f' . $i . '" x="' . $x . '" y="344">' . $f . '</text>'
             . '<rect class="o-fb" x="' . $x . '" y="356" width="150" height="3"/><rect class="o-fbon o-fb' . $i . '" x="' . $x . '" y="356" width="150" height="3"/>';
     }
-    $s .= '<text class="o-src" x="0" y="386">GOOGLE’S THREE LOCAL FACTORS — RELEVANCE · DISTANCE · PROMINENCE</text>';
+    $s .= '<text class="o-src" x="0" y="386">GOOGLE’S THREE LOCAL FACTORS: RELEVANCE · DISTANCE · PROMINENCE</text>';
     return $s . '</svg>';
 }
 function rl_local_kf() {
@@ -153,7 +153,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     $graph[] = [
         '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Local SEO', 'alternateName' => 'Local search engine optimization',
         'serviceType' => 'Local search engine optimization', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
-        'description' => 'Local SEO makes a business visible when people nearby search for what it offers — in Google’s local results and Maps, Apple Maps, Bing and AI answers — through Google Business Profile management, consistent citations, compliant reviews, location and service-area pages, LocalBusiness structured data and local links.',
+        'description' => 'Local SEO makes a business visible when people nearby search for what it offers (in Google’s local results and Maps, Apple Maps, Bing and AI answers) through Google Business Profile management, consistent citations, compliant reviews, location and service-area pages, LocalBusiness structured data and local links.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
     ];
     $graph[] = [
@@ -184,7 +184,7 @@ function rl_render_local() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Local SEO&nbsp;<b>]</b></span>
       <h1 class="h1">Get found by<br>customers<br><span class="r">near you.</span></h1>
-      <p class="lede"><strong>Local SEO</strong> — local search engine optimization — makes your business visible when people nearby search for what you offer: in Google's local results and Maps, on Apple Maps and Bing, and in AI answers. Reinforce Lab builds the profiles, citations, reviews and location pages that local visibility depends on, within Google's own guidelines.</p>
+      <p class="lede"><strong>Local SEO</strong> (local search engine optimization) makes your business visible when people nearby search for what you offer: in Google's local results and Maps, on Apple Maps and Bing, and in AI answers. Reinforce Lab builds the profiles, citations, reviews and location pages that local visibility depends on, within Google's own guidelines.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#rules">Listing rules</a>
@@ -199,13 +199,13 @@ function rl_render_local() {
 
 <section class="band alt" id="rank">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;How local ranking works&nbsp;<b>]</b></span><h2>How does Google rank local results?</h2><p class="lede">Google names three things. Two of them you can improve. One you can't — and anyone promising otherwise is guessing.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;How local ranking works&nbsp;<b>]</b></span><h2>How does Google rank local results?</h2><p class="lede">Google names three things. Two of them you can improve. One you can't, and anyone promising otherwise is guessing.</p></div>
     <div class="factors">
       <div class="factor"><span class="n">01 · Relevance</span><h3>Does your listing match the search?</h3><p>How well your profile and pages match what someone is looking for.</p><p class="we"><b>We improve</b>Categories, services, descriptions and location pages that say exactly what you do.</p></div>
-      <div class="factor"><span class="n">02 · Distance</span><h3>How far away are you?</h3><p>How close your business is to the searcher, or to the place they searched for.</p><p class="we"><b>We can't change</b>Your location — so we make sure every real location and service area is listed correctly.</p></div>
-      <div class="factor"><span class="n">03 · Prominence</span><h3>How well known are you?</h3><p>How recognised your business is, online and off — including links, articles and reviews.</p><p class="we"><b>We improve</b>Reviews, consistent citations, local links and mentions.</p></div>
+      <div class="factor"><span class="n">02 · Distance</span><h3>How far away are you?</h3><p>How close your business is to the searcher, or to the place they searched for.</p><p class="we"><b>We can't change</b>Your location, so we make sure every real location and service area is listed correctly.</p></div>
+      <div class="factor"><span class="n">03 · Prominence</span><h3>How well known are you?</h3><p>How recognised your business is, online and off, including links, articles and reviews.</p><p class="we"><b>We improve</b>Reviews, consistent citations, local links and mentions.</p></div>
     </div>
-    <p class="quote">"There's no way to request or pay for a better local ranking on Google." — Google Business Profile Help</p>
+    <p class="quote">"There's no way to request or pay for a better local ranking on Google."<br>Google Business Profile Help</p>
     <p class="src">Source: Google, <a href="<?php echo $gb(7091); ?>" rel="noopener" target="_blank">Tips to improve your local ranking</a></p>
   </div>
 </section>
@@ -214,14 +214,14 @@ function rl_render_local() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;What we do&nbsp;<b>]</b></span><h2>What does local SEO cover?</h2><p class="lede">Nine areas, each checked against the platform's own rules.</p></div>
     <div class="cols c3">
-      <div class="cell"><span class="n">01 · Google</span><h3>Google Business Profile</h3><p>Complete, accurate profiles — name, categories, services, hours, photos and posts — managed within Google's guidelines.</p></div>
+      <div class="cell"><span class="n">01 · Google</span><h3>Google Business Profile</h3><p>Complete, accurate profiles (name, categories, services, hours, photos and posts) managed within Google's guidelines.</p></div>
       <div class="cell"><span class="n">02 · Apple &amp; Bing</span><h3>Every map, not just Google</h3><p>Apple Business Connect and Bing Places kept in step, so Siri, Apple Maps and Bing show the same facts.</p></div>
       <div class="cell"><span class="n">03 · Citations</span><h3>Consistent business details</h3><p>Name, address and phone the same across directories and data sources, with duplicates cleaned up.</p></div>
-      <div class="cell"><span class="n">04 · Reviews</span><h3>A compliant review program</h3><p>Ask every customer, reply helpfully, and never incentivise or filter — as Google and the FTC require.</p></div>
-      <div class="cell"><span class="n">05 · Pages</span><h3>Location &amp; service-area pages</h3><p>A useful page for each real location or service area — never thin copies with the city name swapped.</p></div>
+      <div class="cell"><span class="n">04 · Reviews</span><h3>A compliant review program</h3><p>Ask every customer, reply helpfully, and never incentivise or filter, as Google and the FTC require.</p></div>
+      <div class="cell"><span class="n">05 · Pages</span><h3>Location &amp; service-area pages</h3><p>A useful page for each real location or service area, never thin copies with the city name swapped.</p></div>
       <div class="cell"><span class="n">06 · Schema</span><h3>LocalBusiness structured data</h3><p>Markup that matches each location page, with the name and address Google requires.</p></div>
       <div class="cell"><span class="n">07 · Authority</span><h3>Local links &amp; mentions</h3><p>Chambers, associations, partners, events and local press that make you better known where you work.</p></div>
-      <div class="cell"><span class="n">08 · AI search</span><h3>Local answers in AI</h3><p>Accurate listings and location facts that AI tools with local and map data can use — checked, not assumed.</p></div>
+      <div class="cell"><span class="n">08 · AI search</span><h3>Local answers in AI</h3><p>Accurate listings and location facts that AI tools with local and map data can use, checked, not assumed.</p></div>
       <div class="cell"><span class="n">09 · Tracking</span><h3>Calls, directions &amp; leads</h3><p>Profile actions, location-page conversions and map visibility across your service area.</p></div>
     </div>
   </div>
@@ -245,7 +245,7 @@ function rl_render_local() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does a local SEO engagement run?</h2><p class="lede">Foundations first, then the work that compounds.</p></div>
     <ol class="steps">
-      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Local audit</h3><p>Profiles, citations, reviews, location pages and competitors — mapped across your service area.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Local audit</h3><p>Profiles, citations, reviews, location pages and competitors, mapped across your service area.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Fix the foundations</h3><p>Claim and correct Google, Apple and Bing listings, and clean up inconsistent details.</p></li>
       <li class="step"><div class="k" aria-hidden="true">03</div><h3>Pages &amp; schema</h3><p>Build useful location and service-area pages with matching structured data.</p></li>
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Reviews &amp; authority</h3><p>Start a compliant review program and earn local links and mentions.</p></li>
@@ -258,21 +258,21 @@ function rl_render_local() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>Local audit</b> — listings, citations, reviews, pages and competitors per location.</li>
-      <li><b>Optimised profiles</b> — Google Business Profile, Apple Business Connect and Bing Places.</li>
-      <li><b>Citation clean-up</b> — consistent details and duplicates resolved.</li>
-      <li><b>Location &amp; service-area pages</b> — useful, unique and linked to your services.</li>
-      <li><b>LocalBusiness schema</b> — for every location page.</li>
-      <li><b>Review program</b> — request flow, reply guidelines and policy safeguards.</li>
-      <li><b>Local authority plan</b> — associations, partners, events and press.</li>
-      <li><b>Monthly local report</b> — visibility, calls, directions and leads by location.</li>
+      <li><b>Local audit</b>: listings, citations, reviews, pages and competitors per location.</li>
+      <li><b>Optimised profiles</b>: Google Business Profile, Apple Business Connect and Bing Places.</li>
+      <li><b>Citation clean-up</b>: consistent details and duplicates resolved.</li>
+      <li><b>Location &amp; service-area pages</b>: useful, unique and linked to your services.</li>
+      <li><b>LocalBusiness schema</b>: for every location page.</li>
+      <li><b>Review program</b>: request flow, reply guidelines and policy safeguards.</li>
+      <li><b>Local authority plan</b>: associations, partners, events and press.</li>
+      <li><b>Monthly local report</b>: visibility, calls, directions and leads by location.</li>
     </ul>
   </div>
 </section>
 
 <section id="measure">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure local SEO?</h2><p class="lede">By what local visibility turns into — not by a single ranking check from one spot.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure local SEO?</h2><p class="lede">By what local visibility turns into, not by a single ranking check from one spot.</p></div>
     <div class="cols c3">
       <div class="metric"><h3>Map visibility across your area</h3><p>Where you appear in local results across a grid of points, not just your street.</p></div>
       <div class="metric"><h3>Profile actions</h3><p>Calls, direction requests and website clicks from your profiles.</p></div>
@@ -289,14 +289,14 @@ function rl_render_local() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>Distance is the one thing no one can change.</h2>
-      <p>Someone searching three streets from a competitor will often see that competitor first — whatever anyone promises. We work on what can move: how relevant and how well known you are, the accuracy of every listing, and the quality of your location pages. And we never use tactics that put your profile at risk.</p>
+      <p>Someone searching three streets from a competitor will often see that competitor first, whatever anyone promises. We work on what can move: how relevant and how well known you are, the accuracy of every listing, and the quality of your location pages. And we never use tactics that put your profile at risk.</p>
     </div>
   </div>
 </section>
 
 <section class="band alt" id="who">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is local SEO for?</h2><p class="lede">Businesses with real locations or service areas — offices, clinics, stores, plants or field teams — whose customers search nearby.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is local SEO for?</h2><p class="lede">Businesses with real locations or service areas (offices, clinics, stores, plants or field teams) whose customers search nearby.</p></div>
     <ul class="inds8">
       <?php foreach (rl_local_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
       <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('Local SEO for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
@@ -310,7 +310,7 @@ function rl_render_local() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with local SEO?</h2><p class="lede">Local visibility rests on a healthy site and a clear brand. These services cover the rest.</p></div>
     <div class="cols c3">
       <?php foreach ([
-          ['services/technical-seo-services', 'Foundation', 'Technical SEO', 'Crawlability, indexation and speed — so location pages get found and indexed.'],
+          ['services/technical-seo-services', 'Foundation', 'Technical SEO', 'Crawlability, indexation and speed, so location pages get found and indexed.'],
           ['services/international-seo', 'Multi-country', 'International SEO', 'Language and country versions for businesses with locations abroad.'],
           ['services/llm-optimization', 'Entity level', 'LLM Optimization', 'One consistent description of your business, so AI tools get your details right.'],
           ['services/ai-search-optimization', 'AI search', 'AI Search Optimization', 'Visibility and accurate recommendations across AI search, including local prompts.'],
@@ -335,7 +335,7 @@ function rl_render_local() {
   <div class="wrap">
     <div class="final">
       <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
-      <h2>Are nearby customers finding you — or a competitor?</h2>
+      <h2>Are nearby customers finding you, or a competitor?</h2>
       <p class="lede">The free Search Authority Diagnostic reviews your listings, reviews and local visibility, and shows what to fix first.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>

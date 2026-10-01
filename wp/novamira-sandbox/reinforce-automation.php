@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Marketing Automation
- * Description: /services/marketing-automation/ (approved new URL, 27 Sep 2026; D-023 301 target for the legacy email-marketing and social-media service pages) — Marketing Automation service page. Provides [reinforce_automation]. Uses the shared kit (D-044). Hero animation "Nurture to handoff" (D-039 Step 3).
+ * Plugin Name: Reinforce Lab - Marketing Automation
+ * Description: /services/marketing-automation/ (approved new URL, 27 Sep 2026; D-023 301 target for the legacy email-marketing and social-media service pages) - Marketing Automation service page. Provides [reinforce_automation]. Uses the shared kit (D-044). Hero animation "Nurture to handoff" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -11,12 +11,12 @@ function rl_is_ma() { return is_page('marketing-automation'); }
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_ma_faqs() {
     return [
-        ['What is marketing automation?', 'Marketing automation is software that sends the right message to each lead at the right time based on what they do — filling in a form, clicking an email, visiting a pricing page. It runs nurture emails, scores leads, updates your CRM and alerts sales when a lead is ready, so no enquiry is forgotten and sales spends time on the leads most likely to buy.'],
-        ['Is marketing automation the same as email marketing?', 'No. Email marketing is one channel — newsletters and campaigns. Marketing automation connects email with your website, forms, CRM and sales team, and sends messages triggered by each person’s behaviour. We run both: campaigns for everyone, and automated journeys for each stage of the buying process.'],
-        ['Which platform do you use?', 'Usually the one you already have. Most businesses already pay for a CRM and an email platform that can automate far more than they use it for. We audit what you have, recommend changes only where they are needed, and build on it — so you keep ownership of your data and workflows.'],
+        ['What is marketing automation?', 'Marketing automation is software that sends the right message to each lead at the right time based on what they do: filling in a form, clicking an email, visiting a pricing page. It runs nurture emails, scores leads, updates your CRM and alerts sales when a lead is ready, so no enquiry is forgotten and sales spends time on the leads most likely to buy.'],
+        ['Is marketing automation the same as email marketing?', 'No. Email marketing is one channel: newsletters and campaigns. Marketing automation connects email with your website, forms, CRM and sales team, and sends messages triggered by each person’s behaviour. We run both: campaigns for everyone, and automated journeys for each stage of the buying process.'],
+        ['Which platform do you use?', 'Usually the one you already have. Most businesses already pay for a CRM and an email platform that can automate far more than they use it for. We audit what you have, recommend changes only where they are needed, and build on it, so you keep ownership of your data and workflows.'],
         ['Is our email compliant?', 'We check. Gmail requires every sender to authenticate with SPF or DKIM, and senders of more than 5,000 messages a day to Gmail accounts to use SPF, DKIM and DMARC, offer one-click unsubscribe and keep spam rates below 0.3%. In the US, CAN-SPAM applies to business-to-business email too; in the UK, PECR requires consent before emailing individuals, with a limited exception for existing customers.'],
         ['Why don’t you report open rates?', 'Because they are no longer reliable. Apple’s Mail Privacy Protection hides whether an email was actually opened, and Litmus reported that it accounted for 55% of all opens as of March 2024. We report clicks, replies, conversions, qualified leads and pipeline instead.'],
-        ['How long does it take to set up?', 'It depends on the state of your CRM and data. We start with an audit and the journeys that matter most — usually new-lead nurture and sales handoff — and launch those first, then add further workflows once the first ones are working.'],
+        ['How long does it take to set up?', 'It depends on the state of your CRM and data. We start with an audit and the journeys that matter most (usually new-lead nurture and sales handoff) and launch those first, then add further workflows once the first ones are working.'],
     ];
 }
 
@@ -126,7 +126,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     $graph[] = [
         '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Marketing Automation', 'alternateName' => ['Email marketing services', 'Lead nurturing', 'Marketing automation services'],
         'serviceType' => 'Marketing automation and email marketing', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
-        'description' => 'Marketing automation services: lead capture, email nurture journeys, lead scoring, CRM workflows, sales handoff, email campaigns and deliverability — built on your existing platform, compliant with sender and consent rules, and measured in pipeline.',
+        'description' => 'Marketing automation services: lead capture, email nurture journeys, lead scoring, CRM workflows, sales handoff, email campaigns and deliverability, built on your existing platform, compliant with sender and consent rules, and measured in pipeline.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
     ];
     $graph[] = [
@@ -159,7 +159,7 @@ function rl_render_automation() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Marketing Automation&nbsp;<b>]</b></span>
       <h1 class="h1">Follow up with<br>every lead,<br><span class="r">automatically.</span></h1>
-      <p class="lede"><strong>Marketing automation</strong> sends the right message to each lead at the right moment — nurture emails, lead scoring, CRM updates and sales alerts — based on what they actually do. Reinforce Lab designs, builds and runs these workflows on the platforms you already use, with deliverability and consent built in, and measures them in pipeline, not opens.</p>
+      <p class="lede"><strong>Marketing automation</strong> sends the right message to each lead at the right moment: nurture emails, lead scoring, CRM updates and sales alerts, based on what they actually do. Reinforce Lab designs, builds and runs these workflows on the platforms you already use, with deliverability and consent built in, and measures them in pipeline, not opens.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#rules">Email rules</a>
@@ -174,10 +174,10 @@ function rl_render_automation() {
 
 <section class="band alt" id="what">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What we do&nbsp;<b>]</b></span><h2>What does marketing automation cover?</h2><p class="lede">Everything between a lead arriving and a salesperson calling — plus the campaigns that keep customers engaged.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What we do&nbsp;<b>]</b></span><h2>What does marketing automation cover?</h2><p class="lede">Everything between a lead arriving and a salesperson calling, plus the campaigns that keep customers engaged.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01 · Capture</span><h3>Forms &amp; lead capture</h3><p>Forms, consent and routing that put every lead in the right place with the right permissions.</p></div>
-      <div class="cell"><span class="n">02 · Nurture</span><h3>Email nurture journeys</h3><p>Sequences triggered by behaviour — downloads, visits, clicks — that answer the next question a buyer has.</p></div>
+      <div class="cell"><span class="n">02 · Nurture</span><h3>Email nurture journeys</h3><p>Sequences triggered by behaviour (downloads, visits, clicks) that answer the next question a buyer has.</p></div>
       <div class="cell"><span class="n">03 · Score</span><h3>Lead scoring</h3><p>A scoring model agreed with sales, so "ready to talk" means the same thing to both teams.</p></div>
       <div class="cell"><span class="n">04 · CRM</span><h3>CRM workflows &amp; data</h3><p>Lifecycle stages, field rules, deduplication and syncs that keep your CRM trustworthy.</p></div>
       <div class="cell"><span class="n">05 · Handoff</span><h3>Sales alerts &amp; handoff</h3><p>Instant alerts and tasks when a lead is ready, with the context sales needs.</p></div>
@@ -191,12 +191,12 @@ function rl_render_automation() {
 
 <section id="rules">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Email rules&nbsp;<b>]</b></span><h2>What rules does your marketing email have to follow?</h2><p class="lede">Since February 2024, Gmail has enforced sender requirements, and privacy law has always applied. Five things we still hear — and what the rules actually say.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Email rules&nbsp;<b>]</b></span><h2>What rules does your marketing email have to follow?</h2><p class="lede">Since February 2024, Gmail has enforced sender requirements, and privacy law has always applied. Five things we still hear, and what the rules actually say.</p></div>
     <div class="myths">
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Email authentication is only for big senders."</p></div><div class="f"><span class="tag">Gmail says</span><p>All senders must set up SPF or DKIM. Senders of more than 5,000 messages a day to Gmail accounts need SPF, DKIM and DMARC.</p><a href="<?php echo $gm; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Hide the unsubscribe link to keep the list big."</p></div><div class="f"><span class="tag">Gmail says</span><p>Bulk senders' marketing messages must support one-click unsubscribe and show a clearly visible unsubscribe link — and keep spam rates below 0.3%.</p><a href="<?php echo $gm; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Hide the unsubscribe link to keep the list big."</p></div><div class="f"><span class="tag">Gmail says</span><p>Bulk senders' marketing messages must support one-click unsubscribe and show a clearly visible unsubscribe link, and keep spam rates below 0.3%.</p><a href="<?php echo $gm; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"B2B email is exempt from spam law."</p></div><div class="f"><span class="tag">FTC says</span><p>CAN-SPAM "makes no exception for business-to-business email". Opt-outs must be honoured within 10 business days.</p><a href="<?php echo $ftc; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Buy a list and start emailing."</p></div><div class="f"><span class="tag">ICO says</span><p>In the UK you must not email individuals without specific consent. The "soft opt-in" covers your own previous customers — not bought-in lists.</p><a href="<?php echo $ico; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Buy a list and start emailing."</p></div><div class="f"><span class="tag">ICO says</span><p>In the UK you must not email individuals without specific consent. The "soft opt-in" covers your own previous customers, not bought-in lists.</p><a href="<?php echo $ico; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Our agency sends it, so compliance is their problem."</p></div><div class="f"><span class="tag">FTC says</span><p>Even if you hire another company to handle your email marketing, "you can't contract away your legal responsibility to comply with the law."</p><a href="<?php echo $ftc; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
     </div>
     <p class="src">Sources: Google, <a href="<?php echo $gm; ?>" rel="noopener" target="_blank">Email sender guidelines</a> · US FTC, <a href="<?php echo $ftc; ?>" rel="noopener" target="_blank">CAN-SPAM Act compliance guide</a> · UK ICO, <a href="<?php echo $ico; ?>" rel="noopener" target="_blank">Electronic mail marketing</a>. Not legal advice.</p>
@@ -209,7 +209,7 @@ function rl_render_automation() {
     <ol class="steps">
       <li class="step"><div class="k" aria-hidden="true">01</div><h3>Audit</h3><p>Your CRM, email platform, data quality, deliverability and current journeys.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Map</h3><p>Buyer journeys, lifecycle stages and a lead-scoring model agreed with sales.</p></li>
-      <li class="step"><div class="k" aria-hidden="true">03</div><h3>Build</h3><p>Workflows, emails, forms and CRM rules — highest-value journeys first.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">03</div><h3>Build</h3><p>Workflows, emails, forms and CRM rules: highest-value journeys first.</p></li>
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Test</h3><p>Every branch, email and sync checked before anything goes live.</p></li>
       <li class="step"><div class="k" aria-hidden="true">05</div><h3>Optimise</h3><p>Monthly review of what creates pipeline, then the next journey.</p></li>
     </ol>
@@ -220,21 +220,21 @@ function rl_render_automation() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>Automation audit</b> — platform, CRM, data, deliverability and journeys.</li>
-      <li><b>Journey map</b> — lifecycle stages and the messages for each one.</li>
-      <li><b>Lead-scoring model</b> — agreed with sales, documented and synced.</li>
-      <li><b>Workflows built</b> — nurture, handoff, re-engagement and customer journeys.</li>
-      <li><b>Emails</b> — written, designed and tested across devices.</li>
-      <li><b>Deliverability setup</b> — SPF, DKIM, DMARC and one-click unsubscribe checked.</li>
-      <li><b>Documentation</b> — how every workflow works, so your team owns it.</li>
-      <li><b>Monthly report</b> — clicks, conversions, qualified leads and pipeline.</li>
+      <li><b>Automation audit</b>: platform, CRM, data, deliverability and journeys.</li>
+      <li><b>Journey map</b>: lifecycle stages and the messages for each one.</li>
+      <li><b>Lead-scoring model</b>: agreed with sales, documented and synced.</li>
+      <li><b>Workflows built</b>: nurture, handoff, re-engagement and customer journeys.</li>
+      <li><b>Emails</b>: written, designed and tested across devices.</li>
+      <li><b>Deliverability setup</b>: SPF, DKIM, DMARC and one-click unsubscribe checked.</li>
+      <li><b>Documentation</b>: how every workflow works, so your team owns it.</li>
+      <li><b>Monthly report</b>: clicks, conversions, qualified leads and pipeline.</li>
     </ul>
   </div>
 </section>
 
 <section class="band alt" id="measure">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure marketing automation?</h2><p class="lede">Not by open rates. Apple's Mail Privacy Protection hides whether an email was really opened — Litmus reported it accounted for 55% of all opens as of March 2024.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure marketing automation?</h2><p class="lede">Not by open rates. Apple's Mail Privacy Protection hides whether an email was really opened. Litmus reported it accounted for 55% of all opens as of March 2024.</p></div>
     <div class="cols c3">
       <div class="metric"><h3>Clicks &amp; replies</h3><p>Real signs that a person read and acted on the email.</p></div>
       <div class="metric"><h3>Conversions</h3><p>Demo requests, downloads and sign-ups from each journey.</p></div>
@@ -252,14 +252,14 @@ function rl_render_automation() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>Automation makes bad follow-up faster.</h2>
-      <p>If your data is messy, your message unclear or sales and marketing disagree on what a good lead is, automation will simply do the wrong thing at scale. That's why we fix the data and agree the definitions before we build anything — and why we start with the two or three journeys that matter most, not fifty workflows nobody maintains.</p>
+      <p>If your data is messy, your message unclear or sales and marketing disagree on what a good lead is, automation will simply do the wrong thing at scale. That's why we fix the data and agree the definitions before we build anything, and why we start with the two or three journeys that matter most, not fifty workflows nobody maintains.</p>
     </div>
   </div>
 </section>
 
 <section class="band alt" id="who">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is marketing automation for?</h2><p class="lede">Businesses with more leads than their team can follow up by hand — or a long buying cycle where timing decides who wins.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is marketing automation for?</h2><p class="lede">Businesses with more leads than their team can follow up by hand, or a long buying cycle where timing decides who wins.</p></div>
     <ul class="inds8">
       <?php foreach (rl_ma_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
       <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('Marketing automation for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
@@ -274,10 +274,10 @@ function rl_render_automation() {
     <div class="cols c3">
       <?php foreach ([
           ['services/lead-generation-systems', 'Leads', 'Lead Generation Systems', 'The campaigns, pages and offers that bring qualified leads in.'],
-          ['services/ai-workflow-automation', 'Operations', 'AI Workflow Automation', 'AI-powered workflows beyond marketing — operations, sales and service.'],
+          ['services/ai-workflow-automation', 'Operations', 'AI Workflow Automation', 'AI-powered workflows beyond marketing: operations, sales and service.'],
           ['services/seo-content-systems', 'Content', 'SEO Content Systems', 'The guides and case studies your nurture journeys send.'],
           ['services/best-search-engine-optimization-services', 'Search', 'Search Engine Optimization', 'Organic visibility that brings buyers to your forms in the first place.'],
-          ['services/executive-ai-consulting', 'Strategy', 'Executive AI Consulting', 'Where AI and automation should — and shouldn’t — go in your business.'],
+          ['services/executive-ai-consulting', 'Strategy', 'Executive AI Consulting', 'Where AI and automation should (and shouldn’t) go in your business.'],
           ['search-authority-os', 'System', 'Search Authority OS', 'Search, content and automation run as one operating system.'],
       ] as $r) { $l = $ex($r[0]); $in = '<span class="n">' . esc_html($r[1]) . '</span><h3>' . esc_html($r[2]) . '</h3><p>' . esc_html($r[3]) . '</p>';
           echo $l ? '<a class="cell" href="' . $l . '">' . $in . '<span class="more">Explore &rarr;</span></a>' : '<div class="cell">' . $in . '</div>'; } ?>

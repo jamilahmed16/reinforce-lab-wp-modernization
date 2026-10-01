@@ -597,6 +597,44 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-072 · Copy rules: no em dashes, no emojis, no AI words, anywhere on the website
+**Date:** 1 October 2026 · **Status:** APPROVED and APPLIED on `.online` (Jamil: "make sure we use no em dashes throughout reinforcelab.online website... no em dashes at all anywhere in the website content copy blog or whatsoever. Also, Never use any emojis anywhere. NO AI Slope and AI Words 100% avoid. If there is any confusion always ask.")
+
+**Rule (permanent, also in CLAUDE.md and build-standard gate 10):** every word on the site, including pages, blog posts, titles, meta descriptions, schema, alt text, menus and the emails the site sends:
+- no em dashes;
+- no emojis or emoji-like symbols;
+- no AI-style words.
+
+Ask Jamil when something is unclear. Check: `python3 claude/tools/copy-check.py` must report 0 issues.
+
+**Applied (1 Oct):**
+- **Em dashes, files:** 752 in visible copy across 32 sandbox files were replaced one by one, judged in context (comma, colon, semicolon, full stop or parentheses). Examples: "Two offices (Dhaka and Katy, Texas) and clients around the world", "Where AI should (and shouldn't) go". The 84 em dashes in code comments became hyphens.
+  - Quote attributions ("... — Google Search Central") became a line break.
+  - Package tier labels became "01 · Foundation".
+  - The mega-menu heading became "X: Who We Serve"; the mobile sub-label became "Parent · Child".
+  - Form email subjects became "Contact message: …" and "Diagnostic request: …".
+  - Admin entry titles became "Company | Name"; empty email fields became "not given".
+- **Em dashes, database:** 8 Yoast meta descriptions (pages 68, 72, 74, 99, 100, 101, 104, 189). Backup option `rl_metadesc_backup_20261001`. No other titles, content, menus or terms contained em dashes. The Yoast title separator is a plain hyphen.
+- **Emoji / symbols:** there were no true emojis. The ✓, ✕ and "not included" marks (Packages comparison table, SAOS and Home problem lists) and the ↳ bullet (Packages cards) were replaced with drawn SVG/CSS icons, so no device can render them as emoji.
+- **AI words removed:**
+  - "genuinely" (7), "quietly" (2);
+  - Home blog teasers rewritten (removed "more than ever", "table stakes", "operationalize").
+- **Deploy:** one guarded call for all 32 files (md5 check against the repo, parse check, backups `.bak-20261001-160705`); live md5 = repo for all.
+- **Verified:**
+  - all 44 published pages plus a category archive crawled: **0 em dashes, 0 emoji, 0 PHP errors** in the rendered HTML;
+  - icons checked by screenshot;
+  - `copy-check.py` reports 0 issues.
+
+**Open (O-025), asked 1 Oct:**
+1. **En dashes in number ranges** ("20–30 assets", "$1,500–$2,500"): keep them, or switch to "to" / a hyphen?
+2. **Borderline words** still on the site:
+   - "compound" / "compounding" (including the SEO H1 "SEO services that compound into authority" and the header's "one compounding growth engine");
+   - "engine" used as a metaphor ("intelligence engine", "opportunity engine") outside the locked "growth engine";
+   - "not just".
+3. **GEO page:** the deliberate bad-copy example ("Our cutting-edge approach leverages synergies...") in the "Before · hard to cite" box. Keep it as an illustration, or rewrite?
+
+---
+
 ## D-071 — Blog archive template built on `.online` (F-001 by design); `/blog/` page 220 set as the posts page
 **Date:** 30 September 2026 · **Status:** DONE (Jamil: "yes, go ahead with the Blog archive template")
 

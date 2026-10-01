@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — E-commerce Website Design
- * Description: /services/ecommerce-website-design-service/ (production URL kept, D-023; no measurable search equity) — E-commerce Website Design service page. Provides [reinforce_ecomdesign]. Uses the shared kit (D-044). Hero animation "Found to ordered" (D-039 Step 3).
+ * Plugin Name: Reinforce Lab - E-commerce Website Design
+ * Description: /services/ecommerce-website-design-service/ (production URL kept, D-023; no measurable search equity) - E-commerce Website Design service page. Provides [reinforce_ecomdesign]. Uses the shared kit (D-044). Hero animation "Found to ordered" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -11,10 +11,10 @@ function rl_is_ecd() { return is_page('ecommerce-website-design-service'); }
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_ecd_faqs() {
     return [
-        ['What do e-commerce website design services include?', 'E-commerce website design plans, designs and builds an online store: category and navigation structure, product pages, search and filters, cart and checkout, payments, shipping and tax, integrations with stock, ERP and email systems, product structured data, speed, accessibility and analytics — then launch and support.'],
+        ['What do e-commerce website design services include?', 'E-commerce website design plans, designs and builds an online store: category and navigation structure, product pages, search and filters, cart and checkout, payments, shipping and tax, integrations with stock, ERP and email systems, product structured data, speed, accessibility and analytics, then launch and support.'],
         ['Which platform should we use?', 'For most businesses already on WordPress, WooCommerce keeps your store, content and SEO in one place and avoids platform lock-in. If a hosted platform fits your catalogue, team or budget better, we will say so before any design work starts.'],
         ['Why do shoppers abandon their carts?', 'Baymard Institute puts the average documented cart abandonment rate at 70.22%. Leaving aside people who were just browsing, the top reasons are extra costs such as shipping, tax and fees (40%), slow delivery (20%), not trusting the site with card details (19%), being forced to create an account (18%) and a long or complicated checkout (17%). Most of these can be fixed through design.'],
-        ['How do our products show up in Google?', 'Google can show price, availability, ratings, shipping and returns directly in results when product pages carry product structured data — merchant listings markup for pages where people can buy — and when product data is shared through Google Merchant Center feeds. We set up both, and keep filter pages from wasting Google’s crawl.'],
+        ['How do our products show up in Google?', 'Google can show price, availability, ratings, shipping and returns directly in results when product pages carry product structured data (merchant listings markup for pages where people can buy) and when product data is shared through Google Merchant Center feeds. We set up both, and keep filter pages from wasting Google’s crawl.'],
         ['Does our store have to be accessible?', 'If you sell to consumers in the EU, the European Accessibility Act covers e-commerce services and has applied since 28 June 2025. We design and test to WCAG 2.2 level AA. This is not legal advice.'],
         ['How much does an online store cost?', 'It depends on the size of the catalogue, the number of templates, integrations such as ERP, stock and shipping, and whether products are being migrated from another platform. After a discovery call you get a written scope and quote.'],
     ];
@@ -183,10 +183,10 @@ function rl_render_ecomdesign() {
 
 <section class="band alt" id="what">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What's included&nbsp;<b>]</b></span><h2>What do our e-commerce website design services include?</h2><p class="lede">Everything a store needs to be found, browsed and bought from — designed around your catalogue and your customers.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What's included&nbsp;<b>]</b></span><h2>What do our e-commerce website design services include?</h2><p class="lede">Everything a store needs to be found, browsed and bought from, designed around your catalogue and your customers.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01 · Structure</span><h3>Categories &amp; navigation</h3><p>A catalogue structure that matches how customers shop and search.</p></div>
-      <div class="cell"><span class="n">02 · Products</span><h3>Product pages</h3><p>Clear photos, specs, prices, stock, delivery and returns — the answers that close the sale.</p></div>
+      <div class="cell"><span class="n">02 · Products</span><h3>Product pages</h3><p>Clear photos, specs, prices, stock, delivery and returns: the answers that close the sale.</p></div>
       <div class="cell"><span class="n">03 · Find</span><h3>Search &amp; filters</h3><p>On-site search and filters that help shoppers, without flooding Google with filter URLs.</p></div>
       <div class="cell"><span class="n">04 · Checkout</span><h3>Cart &amp; checkout</h3><p>Fewer fields, costs shown up front, guest checkout and the payment methods customers expect.</p></div>
       <div class="cell"><span class="n">05 · Google</span><h3>Product data for Google</h3><p>Merchant listings markup and Merchant Center feeds for price, stock, shipping and returns.</p></div>
@@ -216,9 +216,9 @@ function rl_render_ecomdesign() {
 
 <section class="band alt" id="google">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Found in Google&nbsp;<b>]</b></span><h2>How do products get found in Google?</h2><p class="lede">Google can show price, availability, ratings, shipping and returns right in search results — when your store gives it the data.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Found in Google&nbsp;<b>]</b></span><h2>How do products get found in Google?</h2><p class="lede">Google can show price, availability, ratings, shipping and returns right in search results, when your store gives it the data.</p></div>
     <div class="cols c3">
-      <div class="cell"><span class="n">Markup</span><h3>Merchant listings</h3><p>Product structured data on every page where customers can buy — price, stock, shipping and returns.</p></div>
+      <div class="cell"><span class="n">Markup</span><h3>Merchant listings</h3><p>Product structured data on every page where customers can buy: price, stock, shipping and returns.</p></div>
       <div class="cell"><span class="n">Feeds</span><h3>Merchant Center</h3><p>Product data shared with Google through Merchant Center feeds, kept in sync with your store.</p></div>
       <div class="cell"><span class="n">Crawl</span><h3>Controlled filters</h3><p>Filter and sort URLs kept out of the crawl, so Google spends its time on the pages that sell.</p></div>
     </div>
@@ -228,10 +228,10 @@ function rl_render_ecomdesign() {
 
 <section id="how">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does an e-commerce project run?</h2><p class="lede">Catalogue and checkout first — they decide whether the store sells.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does an e-commerce project run?</h2><p class="lede">Catalogue and checkout first: they decide whether the store sells.</p></div>
     <ol class="steps">
       <li class="step"><div class="k" aria-hidden="true">01</div><h3>Discover</h3><p>Products, customers, margins, fulfilment and any existing store's data.</p></li>
-      <li class="step"><div class="k" aria-hidden="true">02</div><h3>Structure</h3><p>Categories, filters, URLs and templates — and a redirect map if you're moving.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">02</div><h3>Structure</h3><p>Categories, filters, URLs and templates, and a redirect map if you're moving.</p></li>
       <li class="step"><div class="k" aria-hidden="true">03</div><h3>Design</h3><p>Product, category, cart and checkout designs, tested with real tasks.</p></li>
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Build &amp; integrate</h3><p>Store, payments, shipping, stock and feeds built and tested on staging.</p></li>
       <li class="step"><div class="k" aria-hidden="true">05</div><h3>Launch &amp; improve</h3><p>Go-live, monitoring, then checkout and conversion improvements.</p></li>
@@ -243,14 +243,14 @@ function rl_render_ecomdesign() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>Catalogue &amp; URL plan</b> — categories, filters and a redirect map for migrations.</li>
-      <li><b>Store design</b> — home, category, product, cart and checkout templates.</li>
-      <li><b>Store build</b> — WooCommerce set up with your products, payments, shipping and tax.</li>
-      <li><b>Product data</b> — merchant listings markup and a Merchant Center feed.</li>
-      <li><b>Integrations</b> — stock, ERP, email and analytics connected.</li>
-      <li><b>Speed &amp; accessibility report</b> — Core Web Vitals and WCAG 2.2 AA checks.</li>
-      <li><b>Training</b> — adding products, running offers and managing orders.</li>
-      <li><b>Launch support</b> — monitoring and fixes after go-live.</li>
+      <li><b>Catalogue &amp; URL plan</b>: categories, filters and a redirect map for migrations.</li>
+      <li><b>Store design</b>: home, category, product, cart and checkout templates.</li>
+      <li><b>Store build</b>: WooCommerce set up with your products, payments, shipping and tax.</li>
+      <li><b>Product data</b>: merchant listings markup and a Merchant Center feed.</li>
+      <li><b>Integrations</b>: stock, ERP, email and analytics connected.</li>
+      <li><b>Speed &amp; accessibility report</b>: Core Web Vitals and WCAG 2.2 AA checks.</li>
+      <li><b>Training</b>: adding products, running offers and managing orders.</li>
+      <li><b>Launch support</b>: monitoring and fixes after go-live.</li>
     </ul>
   </div>
 </section>
@@ -260,14 +260,14 @@ function rl_render_ecomdesign() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>Most lost sales happen at checkout, not in the design review.</h2>
-      <p>A store can look beautiful and still lose most of its buyers between the cart and the confirmation page. Surprise costs, forced accounts and long forms do more damage than any colour choice. We design the checkout with the same care as the home page — and measure where shoppers drop out after launch.</p>
+      <p>A store can look beautiful and still lose most of its buyers between the cart and the confirmation page. Surprise costs, forced accounts and long forms do more damage than any colour choice. We design the checkout with the same care as the home page, and measure where shoppers drop out after launch.</p>
     </div>
   </div>
 </section>
 
 <section class="band alt" id="who">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who are our online stores for?</h2><p class="lede">Retail and B2B businesses selling online — from a focused catalogue to trade ordering with customer-specific pricing.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who are our online stores for?</h2><p class="lede">Retail and B2B businesses selling online, from a focused catalogue to trade ordering with customer-specific pricing.</p></div>
     <ul class="inds8">
       <?php foreach (rl_ecd_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
       <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('Online stores for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>

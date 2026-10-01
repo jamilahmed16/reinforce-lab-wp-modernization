@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Digital PR & Link Building
- * Description: /services/press-release-services/ (production URL kept, D-023; rebuilt as Digital PR & link building; 301 target for the legacy off-page / link-building URLs, O-018 B) — Digital PR service page. Provides [reinforce_pr]. Uses the shared kit (D-044). Hero animation "Story to authority" (D-039 Step 3).
+ * Plugin Name: Reinforce Lab - Digital PR & Link Building
+ * Description: /services/press-release-services/ (production URL kept, D-023; rebuilt as Digital PR & link building; 301 target for the legacy off-page / link-building URLs, O-018 B) - Digital PR service page. Provides [reinforce_pr]. Uses the shared kit (D-044). Hero animation "Story to authority" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -12,10 +12,10 @@ function rl_is_pr() { return is_page('press-release-services'); }
 function rl_pr_faqs() {
     return [
         ['What is digital PR?', 'Digital PR is earning coverage, links and mentions from online publications by giving journalists something worth reporting: original data, expert commentary, useful resources or genuine news. For SEO, it is the safest way to build links, because each one is an editorial choice by the publication rather than a placement someone paid for.'],
-        ['What is off-page SEO?', 'Off-page SEO is everything outside your own website that affects how search engines and AI tools judge it — mainly links from other sites, mentions of your brand, coverage in the press and citations in AI answers. Google uses links to find pages and to judge how relevant they are.'],
-        ['Is affordable link building safe?', 'Cheap links are usually sold per link, as placements that pass ranking credit — and Google lists buying or selling links for ranking purposes as link spam. Paid placements are fine for exposure if they are qualified with rel="sponsored" or rel="nofollow". On a smaller budget we focus on link reclamation, partner links and expert commentary, which cost less and carry no policy risk.'],
+        ['What is off-page SEO?', 'Off-page SEO is everything outside your own website that affects how search engines and AI tools judge it: mainly links from other sites, mentions of your brand, coverage in the press and citations in AI answers. Google uses links to find pages and to judge how relevant they are.'],
+        ['Is affordable link building safe?', 'Cheap links are usually sold per link, as placements that pass ranking credit, and Google lists buying or selling links for ranking purposes as link spam. Paid placements are fine for exposure if they are qualified with rel="sponsored" or rel="nofollow". On a smaller budget we focus on link reclamation, partner links and expert commentary, which cost less and carry no policy risk.'],
         ['Do you guarantee a number of links?', 'No. Journalists and editors decide what they cover and link to, so any guaranteed link count is either a guess or a paid placement. We agree targets for relevant outlets and pages, report every piece of coverage and its link status, and adjust the campaign on what journalists respond to.'],
-        ['Do press releases help SEO?', 'A press release helps when it carries real news that journalists pick up and write about. Links inside distributed releases should not pass ranking credit — Google lists optimised anchor-text links in press releases distributed on other sites as link spam. We write releases for journalists, not for links.'],
+        ['Do press releases help SEO?', 'A press release helps when it carries real news that journalists pick up and write about. Links inside distributed releases should not pass ranking credit. Google lists optimised anchor-text links in press releases distributed on other sites as link spam. We write releases for journalists, not for links.'],
         ['How long does a digital PR campaign take?', 'A data-led campaign usually needs several weeks of research, writing and approval before outreach begins; reactive commentary can go out the same day. Coverage arrives after launch, and its effect on rankings builds over months rather than days.'],
     ];
 }
@@ -37,7 +37,7 @@ function rl_pr_industries() {
 /* ---------- hero animation: Story to authority ----------
    An original-data story builds; it is pitched to four outlets; coverage lands with a link (or, in an
    AI answer, a citation); links flow back to your site and its authority meter fills; the four
-   stages — pitch, coverage, links, citations — light in turn. 10 s loop, soft fade, reset. */
+   stages - pitch, coverage, links, citations - light in turn. 10 s loop, soft fade, reset. */
 function rl_pr_svg() {
     $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlPrT"><title id="rlPrT">An original-data story is pitched to news, trade and industry outlets; coverage links back to your site and AI answers cite your brand, so authority builds without bought links.</title>';
     $s .= '<rect class="p-b" x="0" y="112" width="130" height="126"/><text class="p-lab" x="12" y="130">ORIGINAL DATA</text><line class="p-rule" x1="12" y1="138" x2="118" y2="138"/>';
@@ -139,7 +139,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     $graph[] = [
         '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Digital PR & Link Building', 'alternateName' => ['Digital PR', 'Off-page SEO', 'Link building services'],
         'serviceType' => 'Digital PR and off-page SEO', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
-        'description' => 'Digital PR and off-page SEO that earns coverage, links and mentions from relevant publications through original data, expert commentary and newsworthy stories — within Google’s link policies, with no bought links — to build authority in Google and AI search.',
+        'description' => 'Digital PR and off-page SEO that earns coverage, links and mentions from relevant publications through original data, expert commentary and newsworthy stories, within Google’s link policies, with no bought links, to build authority in Google and AI search.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
     ];
     $graph[] = [
@@ -172,7 +172,7 @@ function rl_render_pr() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Digital PR&nbsp;<b>]</b></span>
       <h1 class="h1">Earn coverage<br>and links that<br><span class="r">build authority.</span></h1>
-      <p class="lede"><strong>Digital PR</strong> is off-page SEO done in the open. Reinforce Lab builds stories from original data and expert insight, pitches them to the journalists who cover your field, and earns the coverage, links and mentions that build your authority in Google and AI search — with no bought links and no keyword-stuffed press releases.</p>
+      <p class="lede"><strong>Digital PR</strong> is off-page SEO done in the open. Reinforce Lab builds stories from original data and expert insight, pitches them to the journalists who cover your field, and earns the coverage, links and mentions that build your authority in Google and AI search, with no bought links and no keyword-stuffed press releases.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#rules">Link rules</a>
@@ -187,10 +187,10 @@ function rl_render_pr() {
 
 <section class="band alt" id="offpage">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Off-page SEO&nbsp;<b>]</b></span><h2>What is off-page SEO, and where does link building fit?</h2><p class="lede">Off-page SEO is what other sites say about you. Links are part of it — so are coverage, mentions and citations in AI answers.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Off-page SEO&nbsp;<b>]</b></span><h2>What is off-page SEO, and where does link building fit?</h2><p class="lede">Off-page SEO is what other sites say about you. Links are part of it; so are coverage, mentions and citations in AI answers.</p></div>
     <div class="factors">
       <div class="factor"><span class="n">01 · Links</span><h3>How Google finds and judges you</h3><p>Google uses links to discover pages and as a signal of how relevant they are.</p><p class="we"><b>We earn</b>Editorial links from relevant publications to the pages that matter commercially.</p></div>
-      <div class="factor"><span class="n">02 · Coverage</span><h3>Who is talking about you</h3><p>Coverage in the publications your buyers read builds trust — and branded search — with or without a link.</p><p class="we"><b>We earn</b>Features, quotes and mentions in news, trade and industry media.</p></div>
+      <div class="factor"><span class="n">02 · Coverage</span><h3>Who is talking about you</h3><p>Coverage in the publications your buyers read builds trust (and branded search) with or without a link.</p><p class="we"><b>We earn</b>Features, quotes and mentions in news, trade and industry media.</p></div>
       <div class="factor"><span class="n">03 · Citations</span><h3>What AI answers say</h3><p>AI search tools lean on independent sources. Brands that trusted publications cover are easier to cite.</p><p class="we"><b>We track</b>Whether AI answers mention and cite you, alongside links.</p></div>
     </div>
     <p class="src">Source: Google, <a href="<?php echo $gd('crawling-indexing/links-crawlable'); ?>" rel="noopener" target="_blank">Link best practices</a> · <a href="<?php echo $gd('fundamentals/seo-starter-guide'); ?>" rel="noopener" target="_blank">SEO Starter Guide</a></p>
@@ -202,9 +202,9 @@ function rl_render_pr() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;What journalists want&nbsp;<b>]</b></span><h2>What makes journalists cover a story?</h2><p class="lede">Relevance, first and by a distance. Cision's 2026 survey of 1,899 journalists in 19 markets is the brief we work to.</p></div>
     <div class="cols c3">
       <div class="metric"><span class="num">79%</span><h3>Relevance wins</h3><p>are most likely to engage with a pitch relevant to their beat, audience or coverage area.</p></div>
-      <div class="metric"><span class="num">82%</span><h3>Irrelevance loses</h3><p>reject a pitch that isn't relevant to their audience or coverage — the top reason for deleting one.</p></div>
-      <div class="metric"><span class="num">47%</span><h3>Data is in demand</h3><p>want PR teams to send them more data or research — the most-requested resource.</p></div>
-      <div class="metric"><span class="num">66%</span><h3>PR feeds the news</h3><p>rely on PR-provided content — press releases, pitches, media kits — for story ideas.</p></div>
+      <div class="metric"><span class="num">82%</span><h3>Irrelevance loses</h3><p>reject a pitch that isn't relevant to their audience or coverage, the top reason for deleting one.</p></div>
+      <div class="metric"><span class="num">47%</span><h3>Data is in demand</h3><p>want PR teams to send them more data or research, the most-requested resource.</p></div>
+      <div class="metric"><span class="num">66%</span><h3>PR feeds the news</h3><p>rely on PR-provided content (press releases, pitches, media kits) for story ideas.</p></div>
       <div class="metric"><span class="num">53%</span><h3>No sales pitches</h3><p>reject pitches that are too promotional or sales-focused.</p></div>
       <div class="metric"><span class="num">97%</span><h3>Email, short, once</h3><p>prefer pitches by email; 64% say follow up once, and no more.</p></div>
     </div>
@@ -214,11 +214,11 @@ function rl_render_pr() {
 
 <section class="band alt" id="what">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What we do&nbsp;<b>]</b></span><h2>What does our digital PR and link building cover?</h2><p class="lede">Nine ways to earn links and coverage — each chosen for your pages, your market and your budget.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What we do&nbsp;<b>]</b></span><h2>What does our digital PR and link building cover?</h2><p class="lede">Nine ways to earn links and coverage, each chosen for your pages, your market and your budget.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01 · Data</span><h3>Original data studies</h3><p>Surveys, analysis of your own data and public datasets, turned into findings journalists can report.</p></div>
       <div class="cell"><span class="n">02 · Reactive</span><h3>Expert commentary</h3><p>Your experts offered to journalists on breaking news in your field, often the same day.</p></div>
-      <div class="cell"><span class="n">03 · News</span><h3>Press releases done right</h3><p>Releases for real news, written for journalists — never as a vehicle for keyword links.</p></div>
+      <div class="cell"><span class="n">03 · News</span><h3>Press releases done right</h3><p>Releases for real news, written for journalists, never as a vehicle for keyword links.</p></div>
       <div class="cell"><span class="n">04 · Assets</span><h3>Linkable resources</h3><p>Tools, guides, indexes and visual data that people cite and link to over time.</p></div>
       <div class="cell"><span class="n">05 · Product</span><h3>Product &amp; brand stories</h3><p>Launches, milestones and behind-the-scenes angles pitched to the right beats.</p></div>
       <div class="cell"><span class="n">06 · Reclaim</span><h3>Link reclamation</h3><p>Unlinked brand mentions and broken links to your site turned back into working links.</p></div>
@@ -233,11 +233,11 @@ function rl_render_pr() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Link rules&nbsp;<b>]</b></span><h2>Which link building tactics break Google's rules?</h2><p class="lede">Cheap link building usually means one of these. Here is what Google actually says.</p></div>
     <div class="myths">
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Buy links in bulk — it's cheaper per link."</p></div><div class="f"><span class="tag">Google says</span><p>Buying or selling links for ranking purposes is link spam: "creating links to or from a site primarily for the purpose of manipulating search rankings."</p><a href="<?php echo $spam; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Buy links in bulk; it's cheaper per link."</p></div><div class="f"><span class="tag">Google says</span><p>Buying or selling links for ranking purposes is link spam: "creating links to or from a site primarily for the purpose of manipulating search rankings."</p><a href="<?php echo $spam; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Paid placements have to be hidden."</p></div><div class="f"><span class="tag">Google says</span><p>Paying for advertising and sponsorship is normal. It isn't a violation when the links are qualified with rel="sponsored" or rel="nofollow".</p><a href="<?php echo $gd('crawling-indexing/qualify-outbound-links'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Put your keywords in the press release links."</p></div><div class="f"><span class="tag">Google says</span><p>Links with optimised anchor text in articles, guest posts or press releases distributed on other sites are listed as link spam.</p><a href="<?php echo $spam; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Run a guest-posting campaign at scale."</p></div><div class="f"><span class="tag">Google says</span><p>Large-scale article marketing or guest-posting campaigns with keyword-rich anchor text links are listed as link spam.</p><a href="<?php echo $spam; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Anchor text should be your exact keyword."</p></div><div class="f"><span class="tag">Google says</span><p>Good anchor text is descriptive, reasonably concise and relevant — written naturally, without keyword stuffing.</p><a href="<?php echo $gd('crawling-indexing/links-crawlable'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Anchor text should be your exact keyword."</p></div><div class="f"><span class="tag">Google says</span><p>Good anchor text is descriptive, reasonably concise and relevant, written naturally, without keyword stuffing.</p><a href="<?php echo $gd('crawling-indexing/links-crawlable'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
     </div>
     <p class="src">Source: Google, <a href="<?php echo $spam; ?>" rel="noopener" target="_blank">Spam policies for Google web search</a></p>
   </div>
@@ -248,7 +248,7 @@ function rl_render_pr() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does a digital PR campaign run?</h2><p class="lede">From the pages you need to rank to the journalists who can help them.</p></div>
     <ol class="steps">
       <li class="step"><div class="k" aria-hidden="true">01</div><h3>Discover</h3><p>Target pages, competitors' links and coverage, and the beats of the journalists who matter.</p></li>
-      <li class="step"><div class="k" aria-hidden="true">02</div><h3>Develop</h3><p>The story and the data behind it — fact-checked, then approved by you.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">02</div><h3>Develop</h3><p>The story and the data behind it, fact-checked, then approved by you.</p></li>
       <li class="step"><div class="k" aria-hidden="true">03</div><h3>Pitch</h3><p>Short, beat-specific emails to a researched list, with one follow-up.</p></li>
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Verify</h3><p>Every piece of coverage logged, with its link, target page and link attribute checked.</p></li>
       <li class="step"><div class="k" aria-hidden="true">05</div><h3>Report &amp; reuse</h3><p>What landed, what it changed, and the next angle from what journalists responded to.</p></li>
@@ -260,21 +260,21 @@ function rl_render_pr() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>Link &amp; coverage audit</b> — your links and mentions against competitors', by target page.</li>
-      <li><b>Campaign plan</b> — story angles, target pages and target outlets.</li>
-      <li><b>Research &amp; data asset</b> — the findings, charts and methodology journalists need.</li>
-      <li><b>Press materials</b> — release, pitches, expert quotes and visuals.</li>
-      <li><b>Media list</b> — journalists and outlets chosen by beat and audience.</li>
-      <li><b>Outreach</b> — personalised pitching and follow-up.</li>
-      <li><b>Coverage log</b> — every placement with link status, attribute and target page.</li>
-      <li><b>Monthly report</b> — coverage, links, referral traffic, rankings and AI citations.</li>
+      <li><b>Link &amp; coverage audit</b>: your links and mentions against competitors', by target page.</li>
+      <li><b>Campaign plan</b>: story angles, target pages and target outlets.</li>
+      <li><b>Research &amp; data asset</b>: the findings, charts and methodology journalists need.</li>
+      <li><b>Press materials</b>: release, pitches, expert quotes and visuals.</li>
+      <li><b>Media list</b>: journalists and outlets chosen by beat and audience.</li>
+      <li><b>Outreach</b>: personalised pitching and follow-up.</li>
+      <li><b>Coverage log</b>: every placement with link status, attribute and target page.</li>
+      <li><b>Monthly report</b>: coverage, links, referral traffic, rankings and AI citations.</li>
     </ul>
   </div>
 </section>
 
 <section class="band alt" id="measure">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure digital PR?</h2><p class="lede">By relevance and results — not by a raw count of links.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure digital PR?</h2><p class="lede">By relevance and results, not by a raw count of links.</p></div>
     <div class="cols c3">
       <div class="metric"><h3>Relevant coverage</h3><p>Pieces in publications your buyers actually read, by outlet and topic.</p></div>
       <div class="metric"><h3>Referring domains</h3><p>New, relevant sites linking to you, and the share that are editorial.</p></div>
@@ -291,7 +291,7 @@ function rl_render_pr() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>Nobody honest can guarantee coverage.</h2>
-      <p>Journalists decide what they write and what they link to. An agency that guarantees a number of links is either guessing or paying for placements — and paid links that pass ranking credit are exactly what Google's spam policies target. We guarantee the work: a story worth covering, pitched to the right people, with every result reported.</p>
+      <p>Journalists decide what they write and what they link to. An agency that guarantees a number of links is either guessing or paying for placements, and paid links that pass ranking credit are exactly what Google's spam policies target. We guarantee the work: a story worth covering, pitched to the right people, with every result reported.</p>
     </div>
   </div>
 </section>
@@ -337,7 +337,7 @@ function rl_render_pr() {
   <div class="wrap">
     <div class="final">
       <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
-      <h2>Who links to you — and who links to your competitors?</h2>
+      <h2>Who links to you, and who links to your competitors?</h2>
       <p class="lede">The free Search Authority Diagnostic reviews your authority, links and AI-search visibility, and shows what to fix first.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>

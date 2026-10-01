@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — About
- * Description: /about-us/ (APPROVED — PRESERVE, rebuilt to the D-012 standard). Provides [reinforce_about]. Uses the shared kit (D-044). No hero animation (About is excluded, D-039). Schema: AboutPage + Person (founder) + FAQPage; Organization gains founder.
+ * Plugin Name: Reinforce Lab - About
+ * Description: /about-us/ (APPROVED - PRESERVE, rebuilt to the D-012 standard). Provides [reinforce_about]. Uses the shared kit (D-044). No hero animation (About is excluded, D-039). Schema: AboutPage + Person (founder) + FAQPage; Organization gains founder.
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -23,7 +23,7 @@ function rl_about_faqs() {
         ['Who founded Reinforce Lab?', 'Reinforce Lab was founded by Jamil Ahmed, its Founder and CEO. Jamil is a pharmacist, an SEO and AI search consultant, and a Semrush Ambassador.'],
         ['Where is Reinforce Lab based?', 'Reinforce Lab has offices in Dhaka, Bangladesh and Katy, Texas, in the United States, and works with clients remotely around the world.'],
         ['When did Reinforce Lab start?', 'Reinforce Lab began building brands in Bangladesh in 2020 and now works with businesses internationally.'],
-        ['How is Reinforce Lab different from an SEO agency?', 'An agency usually sells separate tactics. We build one system — website, content, search and AI visibility, and the automation behind them — designed around your buyers and measured against revenue, not rankings alone.'],
+        ['How is Reinforce Lab different from an SEO agency?', 'An agency usually sells separate tactics. We build one system: website, content, search and AI visibility, and the automation behind them, designed around your buyers and measured against revenue, not rankings alone.'],
         ['How do I start working with Reinforce Lab?', 'Start with the free Search Authority Diagnostic. It reviews your search visibility, content and AI-search presence and shows what to fix first. From there we recommend the smallest system that solves the problem.'],
     ];
 }
@@ -112,7 +112,7 @@ function rl_render_about() {
         ['services/seo-content-systems', 'SEO Content Systems', 'Research-to-publish content workflows with review built in.'],
         ['services/ai-workflow-automation', 'AI Workflow Automation', 'Repetitive operations automated, with people in the loop.'],
         ['services/lead-generation-systems', 'Lead Generation Systems', 'Search traffic turned into qualified enquiries and pipeline.'],
-        ['services/executive-ai-consulting', 'Executive AI Consulting', 'Where AI helps your business — and where it doesn’t.'],
+        ['services/executive-ai-consulting', 'Executive AI Consulting', 'Where AI helps your business, and where it doesn’t.'],
     ];
     ob_start(); ?>
 <div class="rl-page rl-about">
@@ -148,10 +148,10 @@ function rl_render_about() {
 
 <section class="band alt" id="what">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What we do&nbsp;<b>]</b></span><h2>What is an AI Growth System?</h2><p class="lede">One connected system instead of separate tactics — built to automate operations, improve search visibility, and increase revenue.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What we do&nbsp;<b>]</b></span><h2>What is an AI Growth System?</h2><p class="lede">One connected system instead of separate tactics, built to automate operations, improve search visibility, and increase revenue.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01</span><h3>Automate operations</h3><p>AI workflows take over repetitive research, content and reporting work, with a person reviewing what matters.</p></div>
-      <div class="cell"><span class="n">02</span><h3>Improve search visibility</h3><p>Technical SEO, content and AI-search work that help the right buyers find you — in Google and in AI answers.</p></div>
+      <div class="cell"><span class="n">02</span><h3>Improve search visibility</h3><p>Technical SEO, content and AI-search work that help the right buyers find you, in Google and in AI answers.</p></div>
       <div class="cell"><span class="n">03</span><h3>Increase revenue</h3><p>Visibility connected to enquiries and pipeline, so success is measured in customers, not traffic alone.</p></div>
     </div>
   </div>
@@ -174,7 +174,7 @@ function rl_render_about() {
       <div class="txt">
         <p>Reinforce Lab was founded by <strong>Jamil Ahmed</strong>, who leads the company as Founder and CEO. He is a pharmacist, an SEO and AI search consultant, and a Semrush Ambassador.</p>
         <p>Jamil helps businesses design and implement AI Growth Systems using AI automation, AI Search Optimization, SEO, and intelligent workflows.</p>
-        <blockquote>“I build AI Growth Systems for businesses with AI Automation, AI Search &amp; SEO.”<br><small style="color:var(--ink-faint);font-size:13px">— Jamil Ahmed, LinkedIn</small></blockquote>
+        <blockquote>“I build AI Growth Systems for businesses with AI Automation, AI Search &amp; SEO.”<br><small style="color:var(--ink-faint);font-size:13px">Jamil Ahmed, LinkedIn</small></blockquote>
       </div>
     </div>
   </div>
@@ -195,7 +195,7 @@ function rl_render_about() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Principles&nbsp;<b>]</b></span><h2>What do we stand for?</h2><p class="lede">Four rules we work by.</p></div>
     <div class="cols c2">
-      <div class="cell"><span class="n">01</span><h3>Evidence before claims</h3><p>We cite our sources and never invent metrics, rankings or results — for our clients or for ourselves.</p></div>
+      <div class="cell"><span class="n">01</span><h3>Evidence before claims</h3><p>We cite our sources and never invent metrics, rankings or results, for our clients or for ourselves.</p></div>
       <div class="cell"><span class="n">02</span><h3>Preserve what already works</h3><p>Pages that earn traffic, links or trust are protected before anything is redesigned, moved or merged.</p></div>
       <div class="cell"><span class="n">03</span><h3>One system, not separate tactics</h3><p>Website, content, search and automation are planned together so each one strengthens the others.</p></div>
       <div class="cell"><span class="n">04</span><h3>People review the AI</h3><p>AI speeds up the work; a person checks what it produces before anything is published or delivered.</p></div>
@@ -242,7 +242,7 @@ function rl_render_about() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>Why are there no client logos or results on this page?</h2>
-      <p>Because we only publish what we can show. Case studies, client names and numbers go up with a client’s permission and the data to back them — not before. Until then, the fastest way to judge our work is the free diagnostic on your own site.</p>
+      <p>Because we only publish what we can show. Case studies, client names and numbers go up with a client’s permission and the data to back them, not before. Until then, the fastest way to judge our work is the free diagnostic on your own site.</p>
     </div>
   </div>
 </section>

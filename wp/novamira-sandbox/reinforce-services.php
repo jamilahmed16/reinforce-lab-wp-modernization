@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Services hub
- * Description: /services/ — every service grouped, a problem-first router, how services connect (AI Growth Systems · Search Authority OS · Agents), method, industries, FAQ. Provides [reinforce_services]. Hero animation "Capability grid" (D-039 Step 3). Relies on tokens/chrome from reinforce-header.php.
+ * Plugin Name: Reinforce Lab - Services hub
+ * Description: /services/ - every service grouped, a problem-first router, how services connect (AI Growth Systems · Search Authority OS · Agents), method, industries, FAQ. Provides [reinforce_services]. Hero animation "Capability grid" (D-039 Step 3). Relies on tokens/chrome from reinforce-header.php.
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -12,28 +12,28 @@ function rl_is_services() { return is_page('services') && !wp_get_post_parent_id
    [slug under /services/, name, short tile label, one-line description] */
 function rl_services_groups() {
     return [
-        ['seo', 'Search Engine Optimization', 'Search', 'Rankings and clicks in Google and Bing — built on technical health, strategy and authority.', [
+        ['seo', 'Search Engine Optimization', 'Search', 'Rankings and clicks in Google and Bing, built on technical health, strategy and authority.', [
             ['best-search-engine-optimization-services', 'Search Engine Optimization', 'SEO', 'The core SEO program: strategy, on-page, technical and authority work in one plan.'],
-            ['technical-seo-services', 'Technical SEO', 'Technical', 'Crawlability, indexation, architecture and speed — so search engines and AI crawlers can reach every page that matters.'],
-            ['enterprise-seo-strategy', 'Enterprise SEO Strategy', 'Enterprise', 'Search strategy for large sites and multi-team organisations — governance, priorities and authority at scale.'],
-            ['international-seo', 'International SEO', 'International', 'Multi-country and multi-language search — hreflang, market targeting and localised content.'],
+            ['technical-seo-services', 'Technical SEO', 'Technical', 'Crawlability, indexation, architecture and speed, so search engines and AI crawlers can reach every page that matters.'],
+            ['enterprise-seo-strategy', 'Enterprise SEO Strategy', 'Enterprise', 'Search strategy for large sites and multi-team organisations: governance, priorities and authority at scale.'],
+            ['international-seo', 'International SEO', 'International', 'Multi-country and multi-language search: hreflang, market targeting and localised content.'],
             ['local-seo', 'Local SEO', 'Local', 'Visibility in map results and local searches for every location you serve.'],
             ['seo-ai-search-audit', 'SEO & AI Search Audit', 'Audit', 'A full review of Google and AI-search performance with a prioritised fix list.'],
         ]],
-        ['ai', 'AI Search & Content', 'AI Search', 'Be the source AI engines find, trust and cite — with content produced as a system.', [
+        ['ai', 'AI Search & Content', 'AI Search', 'Be the source AI engines find, trust and cite, with content produced as a system.', [
             ['ai-search-optimization', 'AI Search Optimization (AISO)', 'AI Search', 'Be found, trusted and recommended in ChatGPT, Perplexity, Gemini and Google AI Overviews.'],
             ['generative-engine-optimization', 'Generative Engine Optimization (GEO)', 'GEO', 'Structure content and entity signals so generative engines extract, cite and link to you.'],
             ['llm-optimization', 'LLM Optimization', 'LLM', 'Shape how large language models understand and describe your brand, products and expertise.'],
-            ['seo-content-systems', 'SEO Content Systems', 'Content', 'Research-led, evidence-checked content run as a system — briefs, writing, QA and refresh.'],
+            ['seo-content-systems', 'SEO Content Systems', 'Content', 'Research-led, evidence-checked content run as a system: briefs, writing, QA and refresh.'],
             ['press-release-services', 'Digital PR', 'Digital PR', 'Earned mentions and coverage that build authority for Google and AI engines.'],
         ]],
         ['auto', 'Automation & Growth', 'Automation', 'Remove manual work and turn search demand into qualified pipeline.', [
-            ['ai-workflow-automation', 'AI Workflow Automation', 'Workflows', 'Automate repetitive business and marketing processes with AI workflows — with human approval where it matters.'],
+            ['ai-workflow-automation', 'AI Workflow Automation', 'Workflows', 'Automate repetitive business and marketing processes with AI workflows, with human approval where it matters.'],
             ['marketing-automation', 'Marketing Automation', 'Marketing', 'Email, nurture and CRM sequences that turn visitors into qualified conversations.'],
             ['lead-generation-systems', 'Lead Generation Systems', 'Lead Gen', 'Capture, qualify and route demand from search into your pipeline.'],
         ]],
         ['adv', 'Advisory & Web', 'Advisory/Web', 'Leadership direction on AI, and websites built to rank and convert.', [
-            ['executive-ai-consulting', 'Executive AI Consulting', 'Exec AI', 'A practical AI roadmap for leadership — where AI creates value, what to build first and how to measure it.'],
+            ['executive-ai-consulting', 'Executive AI Consulting', 'Exec AI', 'A practical AI roadmap for leadership: where AI creates value, what to build first and how to measure it.'],
             ['wordpress-website-design-service', 'WordPress Website Design', 'WordPress', 'Fast, well-structured WordPress sites built for search and AI discoverability.'],
             ['ecommerce-website-design-service', 'E-commerce Website Design', 'E-commerce', 'Online stores designed to rank, load fast and convert.'],
             ['website-maintenance-services', 'Website Maintenance', 'Maintenance', 'Updates, security, backups and performance checks that keep your site healthy.'],
@@ -45,7 +45,7 @@ function rl_services_router() {
     return [
         ['Organic traffic is falling', ['technical-seo-services', 'seo-ai-search-audit']],
         ['We rank on Google but not in AI answers', ['ai-search-optimization', 'generative-engine-optimization']],
-        ['AI tools describe us wrongly — or not at all', ['llm-optimization']],
+        ['AI tools describe us wrongly, or not at all', ['llm-optimization']],
         ['Content gets published but produces no pipeline', ['seo-content-systems']],
         ['Too much manual work in marketing and operations', ['ai-workflow-automation', 'marketing-automation']],
         ['Not enough qualified leads from search', ['lead-generation-systems']],
@@ -58,8 +58,8 @@ function rl_services_faqs() {
         ['What services does Reinforce Lab offer?', 'Reinforce Lab offers services in four groups: search engine optimization (core, technical, enterprise, international and local SEO, plus audits); AI search and content (AI Search Optimization, GEO, LLM Optimization, SEO Content Systems and Digital PR); automation and growth (AI Workflow Automation, Marketing Automation and Lead Generation Systems); and advisory and web (Executive AI Consulting, WordPress and e-commerce website design, and website maintenance). All of them are designed to work together as one AI Growth System.'],
         ['What is the difference between SEO, AI Search Optimization, GEO and LLM Optimization?', 'SEO earns rankings and clicks in search results. AI Search Optimization makes your brand visible and recommended across AI search experiences such as ChatGPT, Perplexity, Gemini and Google AI Overviews. GEO (Generative Engine Optimization) is the content and structure work that gets your pages extracted and cited inside generated answers. LLM Optimization focuses on how large language models understand and describe your brand as an entity. They overlap, so we plan them as one strategy.'],
         ['Do I need to buy every service?', 'No. Start with the service that solves your most urgent problem. Each one is built to plug into the wider AI Growth System, so you can add more as results come in.'],
-        ['Where should I start?', 'With the free Search Authority Diagnostic. It shows where your biggest gap is — Google visibility, AI search, content, competitors or technical foundations — and recommends the service or package that fits.'],
-        ['Do you work with regulated industries?', 'Yes. We work with pharmaceutical, life sciences and healthcare companies, where evidence matters. Important claims are tied to sources — such as PubMed and ClinicalTrials.gov where the field requires it — and a person reviews them before anything is published.'],
+        ['Where should I start?', 'With the free Search Authority Diagnostic. It shows where your biggest gap is (Google visibility, AI search, content, competitors or technical foundations) and recommends the service or package that fits.'],
+        ['Do you work with regulated industries?', 'Yes. We work with pharmaceutical, life sciences and healthcare companies, where evidence matters. Important claims are tied to sources (such as PubMed and ClinicalTrials.gov where the field requires it) and a person reviews them before anything is published.'],
         ['How is pricing set?', 'Services are scoped after the diagnostic, based on your site, market and goals. Search Authority OS engagements start from $5,000 setup; the packages page shows the tiers.'],
     ];
 }
@@ -97,7 +97,7 @@ function rl_services_cg_kf() {
 }
 function rl_services_cg_svg() {
     $G = rl_services_groups(); $h = 'esc_html';
-    $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlCgT"><title id="rlCgT">Reinforce Lab services in four groups — Search, AI Search and Content, Automation and Growth, Advisory and Web — connect into one AI Growth System, measured on business impact.</title>'
+    $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlCgT"><title id="rlCgT">Reinforce Lab services in four groups (Search, AI Search and Content, Automation and Growth, Advisory and Web) connect into one AI Growth System, measured on business impact.</title>'
         . '<defs><linearGradient id="rlcCoreG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#990000" stop-opacity=".16"/><stop offset="1" stop-color="#990000" stop-opacity=".03"/></linearGradient></defs>';
     $links = '';
     foreach ($G as $c => $g) {
@@ -250,7 +250,7 @@ function rl_render_services() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;AI Growth Systems&nbsp;<b>]</b></span>
       <h1 class="h1">Every service.<br>One connected<br><span class="r">growth system.</span></h1>
-      <p class="lede"><strong>Reinforce Lab services</strong> cover search engine optimization, AI search optimization, content systems, marketing automation, lead generation and executive AI consulting — engineered to work together as one <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>, not as separate retainers.</p>
+      <p class="lede"><strong>Reinforce Lab services</strong> cover search engine optimization, AI search optimization, content systems, marketing automation, lead generation and executive AI consulting, engineered to work together as one <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>, not as separate retainers.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#all">See all services</a>
@@ -276,7 +276,7 @@ function rl_render_services() {
 
 <section id="all">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;All services&nbsp;<b>]</b></span><h2>Four groups. One strategy.</h2><p class="lede">Search, AI search, automation and the web — planned together so each piece strengthens the others.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;All services&nbsp;<b>]</b></span><h2>Four groups. One strategy.</h2><p class="lede">Search, AI search, automation and the web, planned together so each piece strengthens the others.</p></div>
     <?php foreach (rl_services_groups() as $c => $g) { ?>
     <div class="grp" id="<?php echo esc_attr($g[0]); ?>">
       <div class="grp-h"><span class="k"><?php echo sprintf('%02d', $c + 1); ?></span><h3><?php echo esc_html($g[1]); ?></h3><p><?php echo esc_html($g[3]); ?></p></div>
@@ -304,7 +304,7 @@ function rl_render_services() {
 
 <section id="method">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;How we work&nbsp;<b>]</b></span><h2>One method on every engagement.</h2><p class="lede">Whatever you start with, the work follows the same nine stages — so nothing that already earns traffic is lost, and everything new is measured.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;How we work&nbsp;<b>]</b></span><h2>One method on every engagement.</h2><p class="lede">Whatever you start with, the work follows the same nine stages, so nothing that already earns traffic is lost, and everything new is measured.</p></div>
     <ol class="method"><?php foreach ($method as $m) echo '<li>' . esc_html($m) . '</li>'; ?></ol>
   </div>
 </section>
@@ -333,7 +333,7 @@ function rl_render_services() {
     <div class="final">
       <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
       <h2>Not sure which service you need?</h2>
-      <p class="lede">The free diagnostic shows where your biggest gap is — and which service, agent or package closes it.</p>
+      <p class="lede">The free diagnostic shows where your biggest gap is, and which service, agent or package closes it.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('packages'); ?>">Compare packages</a>

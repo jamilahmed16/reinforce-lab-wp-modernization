@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Packages & Pricing
- * Description: /packages/ (design: claude/design-previews/packages.html). Provides [reinforce_packages]. Pricing page only — no cart / self-checkout (D-017). Relies on tokens/chrome from reinforce-header.php.
+ * Plugin Name: Reinforce Lab - Packages & Pricing
+ * Description: /packages/ (design: claude/design-previews/packages.html). Provides [reinforce_packages]. Pricing page only - no cart / self-checkout (D-017). Relies on tokens/chrome from reinforce-header.php.
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -11,24 +11,24 @@ function rl_is_pkg() { return is_page('packages'); }
 /* ---------- single source for plans, FAQ (markup + schema) ---------- */
 function rl_pkg_plans() {
     return [
-        ['tier' => '01 — Foundation', 'name' => 'Search Authority Foundation', 'price' => '$5,000', 'monthly' => 'setup + $1,500–$2,500 / month', 'min' => 5000, 'max' => 5000, 'feat' => false, 'cta' => 'Start here',
-         'for' => 'Best entry point — get the intelligence engine running and start producing authority content.',
+        ['tier' => '01 · Foundation', 'name' => 'Search Authority Foundation', 'price' => '$5,000', 'monthly' => 'setup + $1,500–$2,500 / month', 'min' => 5000, 'max' => 5000, 'feat' => false, 'cta' => 'Start here',
+         'for' => 'Best entry point: get the intelligence engine running and start producing authority content.',
          'items' => ['SEO + SERP intelligence', 'Web research (Jina · Exa · Firecrawl)', 'Social sentiment &amp; complaint research', 'Evidence verification layer', 'AI Search / AEO / GEO optimization', 'Content strategy', '20–30 assets / month', 'Quality-control gates', 'GSC + GA4 reporting', '7-day performance reporting', 'Project-specific memory']],
-        ['tier' => '02 — Growth OS · Most chosen', 'name' => 'Search Authority Growth OS', 'price' => '$10,000', 'monthly' => 'setup + $3,500–$5,000 / month', 'min' => 10000, 'max' => 10000, 'feat' => true, 'cta' => 'Get the Growth OS', 'inc' => 'Everything in Foundation, plus:',
-         'for' => 'The core commercial offer — a self-improving engine that compounds authority month over month.',
+        ['tier' => '02 · Growth OS · Most chosen', 'name' => 'Search Authority Growth OS', 'price' => '$10,000', 'monthly' => 'setup + $3,500–$5,000 / month', 'min' => 10000, 'max' => 10000, 'feat' => true, 'cta' => 'Get the Growth OS', 'inc' => 'Everything in Foundation, plus:',
+         'for' => 'The core commercial offer: a self-improving engine that compounds authority month over month.',
          'items' => ['40–60 assets / month', 'Competitor intelligence', 'AI visibility monitoring', 'Original-data research', 'Content refresh engine', 'Cannibalization detection', 'SERP gap analysis', 'Voice-of-customer intelligence', 'Automated performance diagnosis', 'Internal-linking intelligence', 'Self-improvement feedback loop', 'Executive authority content', 'Custom reporting dashboard']],
-        ['tier' => '03 — Enterprise', 'name' => 'Enterprise Intelligence OS', 'price' => '$20k–$35k+', 'monthly' => 'setup + $7,500–$15,000+ / month', 'min' => 20000, 'max' => null, 'feat' => false, 'cta' => 'Talk to us', 'inc' => 'Everything in Growth OS, plus:',
-         'for' => 'For Pharma, Life Sciences, Finance, Healthcare and enterprise — evidence-grade, governed, multi-market.',
+        ['tier' => '03 · Enterprise', 'name' => 'Enterprise Intelligence OS', 'price' => '$20k–$35k+', 'monthly' => 'setup + $7,500–$15,000+ / month', 'min' => 20000, 'max' => null, 'feat' => false, 'cta' => 'Talk to us', 'inc' => 'Everything in Growth OS, plus:',
+         'for' => 'For Pharma, Life Sciences, Finance, Healthcare and enterprise: evidence-grade, governed, multi-market.',
          'items' => ['Scientific evidence connectors (PubMed, Europe PMC, PubChem, ClinicalTrials.gov, FDA)', 'Regulatory intelligence', 'Patent intelligence', 'Industry-specific evidence graph', 'Advanced fact verification', 'Multi-market intelligence', 'AI / LLM visibility monitoring', 'Self-healing optimization', 'Custom agents &amp; API integrations', 'Enterprise governance', 'Human approval workflows', 'Executive intelligence reports']],
     ];
 }
 function rl_pkg_faqs() {
     return [
-        ["Why can't I just buy online?", 'Because good work is scoped, not vending-machined. A $5k–$35k engagement depends on your industry, evidence requirements and goals. The diagnostic and a short call let us price it honestly — and let you see the intelligence before you commit.'],
+        ["Why can't I just buy online?", 'Because good work is scoped, not vending-machined. A $5k–$35k engagement depends on your industry, evidence requirements and goals. The diagnostic and a short call let us price it honestly, and let you see the intelligence before you commit.'],
         ['Is there a contract?', "It's a monthly retainer scoped to the plan. You own everything produced, and you can adjust scope as results come in."],
-        ['How fast will we see results?', "Publishing can begin quickly; search authority compounds over months and varies by site, topic and competition. We connect GSC and GA4 so you track real movement — we don't promise a ranking date."],
+        ['How fast will we see results?', "Publishing can begin quickly; search authority compounds over months and varies by site, topic and competition. We connect GSC and GA4 so you track real movement; we don't promise a ranking date."],
         ['Can we start small and scale up?', 'Yes. Begin with Foundation or a single agent, then move to Growth OS or Enterprise as the system proves out.'],
-        ['What makes this different from an agency or a tool?', 'An agency gives you people; a tool gives you software. Search Authority OS gives you an intelligence system — research, evidence, production, QA and self-healing — run by a team, tuned to your industry.'],
+        ['What makes this different from an agency or a tool?', 'An agency gives you people; a tool gives you software. Search Authority OS gives you an intelligence system (research, evidence, production, QA and self-healing) run by a team, tuned to your industry.'],
     ];
 }
 
@@ -91,7 +91,7 @@ body.rl-pkg-page .fl-page-content,body.rl-pkg-page .fl-content,body.rl-pkg-page 
 .rl-pkg .pkg li{font-size:14px;color:var(--ink-dim);display:flex;gap:10px}
 .rl-pkg .pkg li::before{content:"+";color:var(--red-3);font-family:var(--f-mono);flex:none}
 .rl-pkg .pkg li.inc{color:var(--ink);font-weight:600}
-.rl-pkg .pkg li.inc::before{content:"↳"}
+.rl-pkg .pkg li.inc::before{content:"";width:7px;height:7px;margin:4px 3px 0 2px;border-left:1.5px solid var(--red-3);border-bottom:1.5px solid var(--red-3)}
 .rl-pkg .pkg .btn{margin-top:auto;justify-content:center}
 .rl-pkg .mx-scroll{overflow-x:auto;border:1px solid var(--line)}
 .rl-pkg .mx{width:100%;border-collapse:collapse;font-size:14px;min-width:620px}
@@ -128,14 +128,14 @@ body.rl-pkg-page .fl-page-content,body.rl-pkg-page .fl-content,body.rl-pkg-page 
 /* build additions */
 .rl-pkg .ey{flex-wrap:wrap;row-gap:.2em}
 .rl-pkg .mx-scroll{position:relative} /* contains the absolutely-positioned .sr labels so they can't widen the page on mobile */
-/* hero: left-aligned + visual (D-039) — overrides the centred mock-up hero */
+/* hero: left-aligned + visual (D-039) - overrides the centred mock-up hero */
 .rl-pkg .hero{text-align:left}
 .rl-pkg .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);align-items:center}
 @media(max-width:940px){.rl-pkg .hero-grid{grid-template-columns:1fr;gap:34px}}
 .rl-pkg .hero .h1{margin-inline:0;max-width:14ch}
 .rl-pkg .hero .lede{margin:18px 0 0}
 .rl-pkg .hero .hero-cta{justify-content:flex-start}
-/* hero visual: compounding staircase — refined chart (D-039, rev 2): one-time build, then subtle ambient motion */
+/* hero visual: compounding staircase - refined chart (D-039, rev 2): one-time build, then subtle ambient motion */
 .rl-pkg .stair{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 22px 12px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-pkg .stair .cap{display:flex;justify-content:space-between;gap:12px}
 .rl-pkg .stair .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
@@ -185,7 +185,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
         '@type' => 'Service',
         '@id' => $url . '#service',
         'name' => 'Search Authority OS',
-        'description' => 'Search Authority OS packages from Reinforce Lab — Foundation, Growth OS and Enterprise Intelligence OS — scoped after a free diagnostic.',
+        'description' => 'Search Authority OS packages from Reinforce Lab: Foundation, Growth OS and Enterprise Intelligence OS, scoped after a free diagnostic.',
         'url' => $url,
         'provider' => ['@id' => home_url('/') . '#organization'],
         'hasOfferCatalog' => ['@type' => 'OfferCatalog', 'name' => 'Search Authority OS packages', 'itemListElement' => $offers],
@@ -222,8 +222,8 @@ function rl_render_packages() {
         ['Custom agents + API integrations', 0, 0, 1],
     ];
     $cell = function ($v) {
-        if ($v === 1) return '<td class="c yes"><span aria-hidden="true">✓</span><span class="sr">Included</span></td>';
-        if ($v === 0) return '<td class="c no"><span aria-hidden="true">—</span><span class="sr">Not included</span></td>';
+        if ($v === 1) return '<td class="c yes"><span aria-hidden="true"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg></span><span class="sr">Included</span></td>';
+        if ($v === 0) return '<td class="c no"><span aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span class="sr">Not included</span></td>';
         return '<td class="c">' . esc_html($v) . '</td>';
     };
     $agents = [['A-01', 'seo-intelligence', 'Search Intelligence', 'Know exactly what to rank for.'], ['A-03', 'evidence-verification', 'Evidence Verification', 'Fact-checked, sourced content.'], ['A-04', 'aeo-geo-optimization', 'AEO / GEO', 'Show up inside AI answers.'], ['A-08', 'search-performance', 'Search Performance', 'Diagnose drops, recover rankings.']];
@@ -240,11 +240,11 @@ function rl_render_packages() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Packages&nbsp;<b>]</b></span>
       <h1 class="h1">Three ways to build <span class="r">search authority.</span></h1>
-      <p class="lede"><a href="<?php echo $u('search-authority-os'); ?>">Search Authority OS</a> comes in three packages — Foundation, Growth OS and Enterprise — from a focused foundation to a full enterprise intelligence engine. Every engagement starts with a diagnostic, so scope and price fit what you actually need, not a template.</p>
+      <p class="lede"><a href="<?php echo $u('search-authority-os'); ?>">Search Authority OS</a> comes in three packages (Foundation, Growth OS and Enterprise), from a focused foundation to a full enterprise intelligence engine. Every engagement starts with a diagnostic, so scope and price fit what you actually need, not a template.</p>
       <div class="hero-cta"><a class="btn p" href="<?php echo $diag; ?>">Start with a diagnostic <span class="ar">&rarr;</span></a><a class="btn g" href="#plans">See the plans</a></div>
       <p class="micro">Setup + monthly retainer · Pricing below is a starting framework, finalized to scope</p>
     </div>
-    <figure class="stair rl-anim" role="img" aria-label="Three packages as a rising staircase — Foundation, Growth OS and Enterprise — each adding capabilities, with search authority compounding across them.">
+    <figure class="stair rl-anim" role="img" aria-label="Three packages as a rising staircase (Foundation, Growth OS and Enterprise), each adding capabilities, with search authority compounding across them.">
       <div class="cap" aria-hidden="true"><span>Scale path</span><span>Setup + monthly retainer</span></div>
       <div aria-hidden="true"><svg viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg" focusable="false"><defs><linearGradient id="pkgB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".07"/><stop offset="1" stop-color="#ffffff" stop-opacity=".01"/></linearGradient><linearGradient id="pkgBF" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c11414" stop-opacity=".34"/><stop offset="1" stop-color="#c11414" stop-opacity=".03"/></linearGradient><linearGradient id="pkgA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e23b3b" stop-opacity=".20"/><stop offset="1" stop-color="#e23b3b" stop-opacity="0"/></linearGradient><linearGradient id="pkgC" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e23b3b" stop-opacity=".25"/><stop offset=".6" stop-color="#e23b3b" stop-opacity=".85"/><stop offset="1" stop-color="#ff6b6b"/></linearGradient></defs><line class="pk-grid" x1="44" y1="104" x2="492" y2="104"/><line class="pk-grid" x1="44" y1="184" x2="492" y2="184"/><line class="pk-grid" x1="44" y1="264" x2="492" y2="264"/><line class="pk-axis" x1="44" y1="344" x2="492" y2="344"/><g class="pk-b" style="--d:.15s"><rect class="pk-blk" x="88.0" y="252" width="84" height="92" fill="url(#pkgB)"/><line class="pk-seg" x1="98.0" y1="324" x2="162.0" y2="324"/><line class="pk-seg" x1="98.0" y1="304" x2="162.0" y2="304"/><line class="pk-seg" x1="98.0" y1="284" x2="162.0" y2="284"/><line class="pk-seg" x1="98.0" y1="264" x2="162.0" y2="264"/><line class="pk-top" x1="88.0" y1="252" x2="172.0" y2="252"/></g><text class="pk-name" x="130" y="368" text-anchor="middle">FOUNDATION</text><text class="pk-price" x="130" y="385" text-anchor="middle">$5k setup</text><g class="pk-b feat" style="--d:.35s"><rect class="pk-blk" x="218.0" y="176" width="84" height="168" fill="url(#pkgBF)"/><line class="pk-seg" x1="228.0" y1="324" x2="292.0" y2="324"/><line class="pk-seg" x1="228.0" y1="304" x2="292.0" y2="304"/><line class="pk-seg" x1="228.0" y1="284" x2="292.0" y2="284"/><line class="pk-seg" x1="228.0" y1="264" x2="292.0" y2="264"/><line class="pk-seg" x1="228.0" y1="244" x2="292.0" y2="244"/><line class="pk-seg" x1="228.0" y1="224" x2="292.0" y2="224"/><line class="pk-seg" x1="228.0" y1="204" x2="292.0" y2="204"/><line class="pk-top" x1="218.0" y1="176" x2="302.0" y2="176"/></g><text class="pk-name" x="260" y="368" text-anchor="middle">GROWTH OS</text><text class="pk-price" x="260" y="385" text-anchor="middle">$10k setup</text><g class="pk-b" style="--d:.55s"><rect class="pk-blk" x="348.0" y="100" width="84" height="244" fill="url(#pkgB)"/><line class="pk-seg" x1="358.0" y1="324" x2="422.0" y2="324"/><line class="pk-seg" x1="358.0" y1="304" x2="422.0" y2="304"/><line class="pk-seg" x1="358.0" y1="284" x2="422.0" y2="284"/><line class="pk-seg" x1="358.0" y1="264" x2="422.0" y2="264"/><line class="pk-seg" x1="358.0" y1="244" x2="422.0" y2="244"/><line class="pk-seg" x1="358.0" y1="224" x2="422.0" y2="224"/><line class="pk-seg" x1="358.0" y1="204" x2="422.0" y2="204"/><line class="pk-seg" x1="358.0" y1="184" x2="422.0" y2="184"/><line class="pk-seg" x1="358.0" y1="164" x2="422.0" y2="164"/><line class="pk-seg" x1="358.0" y1="144" x2="422.0" y2="144"/><line class="pk-seg" x1="358.0" y1="124" x2="422.0" y2="124"/><line class="pk-top" x1="348.0" y1="100" x2="432.0" y2="100"/></g><text class="pk-name" x="390" y="368" text-anchor="middle">ENTERPRISE</text><text class="pk-price" x="390" y="385" text-anchor="middle">$20k+ setup</text><path class="pk-area" d="M58,334 C70.0,327.7 96.3,317.3 130,296 C163.7,274.7 216.7,236.7 260,206 C303.3,175.3 354.0,136.0 390,112 C426.0,88.0 461.7,70.3 476,62 L476,344 L58,344 Z" fill="url(#pkgA)"/><path class="pk-curve" d="M58,334 C70.0,327.7 96.3,317.3 130,296 C163.7,274.7 216.7,236.7 260,206 C303.3,175.3 354.0,136.0 390,112 C426.0,88.0 461.7,70.3 476,62" stroke="url(#pkgC)" stroke-dasharray="500" style="--L:500"/><path class="pk-shine" d="M58,334 C70.0,327.7 96.3,317.3 130,296 C163.7,274.7 216.7,236.7 260,206 C303.3,175.3 354.0,136.0 390,112 C426.0,88.0 461.7,70.3 476,62" stroke-dasharray="38 500" style="--L:500"/><rect class="pk-mk" x="126.5" y="292.5" width="7" height="7" style="--d:1.25s"/><rect class="pk-mk" x="256.5" y="202.5" width="7" height="7" style="--d:1.60s"/><rect class="pk-mk" x="386.5" y="108.5" width="7" height="7" style="--d:1.95s"/><g class="pk-head"><rect class="pk-halo" x="470" y="56" width="12" height="12"/><rect class="pk-dot" x="472" y="58" width="8" height="8"/><text class="pk-lab" x="462" y="48" text-anchor="end">AUTHORITY</text></g></svg></div>
     </figure>
@@ -269,7 +269,7 @@ function rl_render_packages() {
       </div>
       <?php } ?>
     </div>
-    <p class="micro center" style="margin-top:22px;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint)">No cart, no self-checkout. High-stakes work is scoped on a call — the diagnostic comes first.</p>
+    <p class="micro center" style="margin-top:22px;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint)">No cart, no self-checkout. High-stakes work is scoped on a call; the diagnostic comes first.</p>
   </div>
 </section>
 
@@ -305,7 +305,7 @@ function rl_render_packages() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;How it works&nbsp;<b>]</b></span><h2>From diagnostic to compounding authority.</h2></div>
     <ol class="cols c4" style="list-style:none;margin:0;padding:0">
       <li class="cell"><div class="n">01</div><h3>Diagnostic</h3><p>We establish your real baseline and the highest-value opportunities.</p></li>
-      <li class="cell"><div class="n">02</div><h3>Scope &amp; proposal</h3><p>A plan and price fit to your goals — no template retainer.</p></li>
+      <li class="cell"><div class="n">02</div><h3>Scope &amp; proposal</h3><p>A plan and price fit to your goals, no template retainer.</p></li>
       <li class="cell"><div class="n">03</div><h3>Build &amp; onboard</h3><p>The intelligence engine is configured to your market and evidence sources.</p></li>
       <li class="cell"><div class="n">04</div><h3>Publish &amp; self-heal</h3><p>Content ships, performance is monitored, and the system improves itself.</p></li>
     </ol>
@@ -326,7 +326,7 @@ function rl_render_packages() {
     <div class="final">
       <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
       <h2>Not sure which plan fits?</h2>
-      <p class="lede">Start with the diagnostic. It shows exactly where you stand and which plan matches the opportunity — before you commit to a retainer.</p>
+      <p class="lede">Start with the diagnostic. It shows exactly where you stand and which plan matches the opportunity, before you commit to a retainer.</p>
       <div class="cta"><a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a><a class="btn g" href="#plans">Compare plans again</a></div>
     </div>
   </div>

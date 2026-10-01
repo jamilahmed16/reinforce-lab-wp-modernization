@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — SEO Content Systems
- * Description: /services/seo-content-systems/ (approved new URL, 27 Sep 2026; D-023 301 target for the legacy content-writing, copywriting, blog-writing and content-marketing service pages) — SEO Content Systems service page. Provides [reinforce_content]. Uses the shared kit (D-044). Hero animation "Content system" (D-039 Step 3).
+ * Plugin Name: Reinforce Lab - SEO Content Systems
+ * Description: /services/seo-content-systems/ (approved new URL, 27 Sep 2026; D-023 301 target for the legacy content-writing, copywriting, blog-writing and content-marketing service pages) - SEO Content Systems service page. Provides [reinforce_content]. Uses the shared kit (D-044). Hero animation "Content system" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -13,9 +13,9 @@ function rl_content_faqs() {
     return [
         ['What is SEO content writing?', 'SEO content writing is creating web pages, articles and copy that answer what people search for, in a way search engines can understand and trust. Good SEO content is written for people first: it matches the searcher’s intent, shows real expertise, is easy to read, and links to related pages on your site.'],
         ['What is an SEO content system?', 'An SEO content system is the repeatable process behind the writing: research, a topic map, briefs, expert input, drafting, editing, publishing, internal linking and scheduled refreshes. It replaces one-off articles with a programme where every page has a purpose, an owner and a place in a topic cluster.'],
-        ['Do you use AI to write content?', 'We use AI where it helps — organising research, outlining, transcribing expert interviews and checking drafts. Every page is written and edited by people, fact-checked, and approved by you or your experts. Google says appropriate use of AI is not against its guidelines, but using AI gives content no special gains: quality is what counts.'],
-        ['Who writes the content, and how do you get our expertise?', 'Our writers do the writing; your experts supply what only they know. We interview your specialists, sales and customer teams, turn their knowledge into briefs and drafts, and send pages back for technical review, so the expertise on the page is genuinely yours.'],
-        ['How many articles will you publish each month?', 'As many as can be done well — agreed in the plan, not promised as a volume target. We publish steadily rather than in bulk, because Google treats many pages made mainly to rank as scaled content abuse, however they are produced.'],
+        ['Do you use AI to write content?', 'We use AI where it helps: organising research, outlining, transcribing expert interviews and checking drafts. Every page is written and edited by people, fact-checked, and approved by you or your experts. Google says appropriate use of AI is not against its guidelines, but using AI gives content no special gains: quality is what counts.'],
+        ['Who writes the content, and how do you get our expertise?', 'Our writers do the writing; your experts supply what only they know. We interview your specialists, sales and customer teams, turn their knowledge into briefs and drafts, and send pages back for technical review, so the expertise on the page is yours.'],
+        ['How many articles will you publish each month?', 'As many as can be done well, agreed in the plan, not promised as a volume target. We publish steadily rather than in bulk, because Google treats many pages made mainly to rank as scaled content abuse, however they are produced.'],
         ['Do you update existing content?', 'Yes. Refreshing, merging or removing outdated pages is part of every programme. Google’s starter guide recommends checking older content and updating it, or deleting it if it is no longer relevant.'],
     ];
 }
@@ -35,7 +35,7 @@ function rl_content_industries() {
 }
 
 /* ---------- hero animation: Content system ----------
-   A page moves through the pipeline — research, brief, draft, expert review, publish — each stage
+   A page moves through the pipeline - research, brief, draft, expert review, publish - each stage
    lighting as it passes; once published it joins a topic cluster: the pillar page and six supporting
    pages light and link to each other; then the refresh loop runs back to research. 10 s loop, soft
    fade, reset. */
@@ -123,7 +123,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     $graph[] = [
         '@type' => 'Service', '@id' => $url . '#service', 'name' => 'SEO Content Systems', 'alternateName' => ['SEO content writing services', 'SEO copywriting', 'Blog writing services'],
         'serviceType' => 'SEO content writing and content strategy', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
-        'description' => 'SEO content systems: research, topic maps, briefs, expert input, human-edited writing, publishing, internal linking and scheduled refreshes — people-first content that ranks in Google, gets cited in AI answers and converts.',
+        'description' => 'SEO content systems: research, topic maps, briefs, expert input, human-edited writing, publishing, internal linking and scheduled refreshes, people-first content that ranks in Google, gets cited in AI answers and converts.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
     ];
     $graph[] = [
@@ -171,7 +171,7 @@ function rl_render_content() {
 
 <section class="band alt" id="system">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;The system&nbsp;<b>]</b></span><h2>What is an SEO content system?</h2><p class="lede">It is the process behind the writing. Six stages, run the same way for every page — so quality doesn't depend on who happened to write it.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;The system&nbsp;<b>]</b></span><h2>What is an SEO content system?</h2><p class="lede">It is the process behind the writing. Six stages, run the same way for every page, so quality doesn't depend on who happened to write it.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01 · Research</span><h3>Search &amp; audience</h3><p>What your buyers search for at each stage, what already ranks, and what your competitors miss.</p></div>
       <div class="cell"><span class="n">02 · Map</span><h3>Topic map</h3><p>Pillar and cluster pages planned around your services, so each page has one job and none compete.</p></div>
@@ -187,7 +187,7 @@ function rl_render_content() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Why programmes stall&nbsp;<b>]</b></span><h2>Why do most content programmes stall?</h2><p class="lede">Not for lack of a strategy. The Content Marketing Institute's 2026 survey of 1,015 B2B marketers shows where it breaks.</p></div>
     <div class="cols c3">
-      <div class="metric"><span class="num">40%</span><h3>Content that converts</h3><p>name creating content that prompts action — such as a conversion — as a top challenge.</p></div>
+      <div class="metric"><span class="num">40%</span><h3>Content that converts</h3><p>name creating content that prompts action (such as a conversion) as a top challenge.</p></div>
       <div class="metric"><span class="num">39%</span><h3>Not enough resource</h3><p>cite constraints on time, people or budget.</p></div>
       <div class="metric"><span class="num">33%</span><h3>Hard to measure</h3><p>struggle to measure how effective their content is.</p></div>
       <div class="metric"><span class="num">89%</span><h3>AI is everywhere</h3><p>of AI users use it to generate or optimise written content.</p></div>
@@ -200,13 +200,13 @@ function rl_render_content() {
 
 <section class="band alt" id="ai">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;AI &amp; Google&nbsp;<b>]</b></span><h2>Does Google penalise AI-written content?</h2><p class="lede">No — Google judges quality, not how content was made. But it does act on content produced at scale to game rankings. Here is what Google actually says.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;AI &amp; Google&nbsp;<b>]</b></span><h2>Does Google penalise AI-written content?</h2><p class="lede">No. Google judges quality, not how content was made. But it does act on content produced at scale to game rankings. Here is what Google actually says.</p></div>
     <div class="myths">
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Google bans AI content."</p></div><div class="f"><span class="tag">Google says</span><p>"Appropriate use of AI or automation is not against our guidelines." Using it mainly to manipulate rankings is.</p><a href="<?php echo $ai; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"AI content gets a ranking boost."</p></div><div class="f"><span class="tag">Google says</span><p>"Using AI doesn't give content any special gains. It's just content."</p><a href="<?php echo $ai; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Publish hundreds of pages and some will rank."</p></div><div class="f"><span class="tag">Google says</span><p>Many pages made mainly to manipulate rankings, not help users, is scaled content abuse — "no matter how it's created".</p><a href="<?php echo $gd('blog/2024/03/core-update-spam-policies'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Longer articles always rank better."</p></div><div class="f"><span class="tag">Google says</span><p>There's no magical word count target — content length alone doesn't matter for ranking.</p><a href="<?php echo $gd('docs/fundamentals/seo-starter-guide'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Authorship doesn't matter."</p></div><div class="f"><span class="tag">Google says</span><p>Consider accurate author bylines wherever readers might ask "Who wrote this?" — and disclose AI use where they'd ask "How was this created?"</p><a href="<?php echo $ai; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Publish hundreds of pages and some will rank."</p></div><div class="f"><span class="tag">Google says</span><p>Many pages made mainly to manipulate rankings, not help users, is scaled content abuse, "no matter how it's created".</p><a href="<?php echo $gd('blog/2024/03/core-update-spam-policies'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Longer articles always rank better."</p></div><div class="f"><span class="tag">Google says</span><p>There's no magical word count target: content length alone doesn't matter for ranking.</p><a href="<?php echo $gd('docs/fundamentals/seo-starter-guide'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Authorship doesn't matter."</p></div><div class="f"><span class="tag">Google says</span><p>Consider accurate author bylines wherever readers might ask "Who wrote this?", and disclose AI use where they'd ask "How was this created?"</p><a href="<?php echo $ai; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
     </div>
     <p class="quote">Our policy: AI helps with research, outlines, transcripts and checks. People write, edit and fact-check every page, and your experts approve it.</p>
   </div>
@@ -214,9 +214,9 @@ function rl_render_content() {
 
 <section id="what">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What we write&nbsp;<b>]</b></span><h2>What content do we produce?</h2><p class="lede">SEO content writing, website copywriting and blog writing — all planned inside one system.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What we write&nbsp;<b>]</b></span><h2>What content do we produce?</h2><p class="lede">SEO content writing, website copywriting and blog writing, all planned inside one system.</p></div>
     <div class="cols c3">
-      <div class="cell"><span class="n">01 · Services</span><h3>Service &amp; solution pages</h3><p>The pages that sell — clear, specific and built to rank for buying-stage searches.</p></div>
+      <div class="cell"><span class="n">01 · Services</span><h3>Service &amp; solution pages</h3><p>The pages that sell: clear, specific and built to rank for buying-stage searches.</p></div>
       <div class="cell"><span class="n">02 · Pillars</span><h3>Pillar &amp; cluster pages</h3><p>In-depth hub pages and the supporting pages that build topical authority around them.</p></div>
       <div class="cell"><span class="n">03 · Blog</span><h3>SEO blog articles</h3><p>Articles that answer real questions your buyers ask, linked to the pages that convert.</p></div>
       <div class="cell"><span class="n">04 · Copy</span><h3>Website copywriting</h3><p>Home, about and landing-page copy that is clear to people and to search engines.</p></div>
@@ -224,19 +224,19 @@ function rl_render_content() {
       <div class="cell"><span class="n">06 · Proof</span><h3>Case studies</h3><p>Real projects and results, written up with your clients' approval.</p></div>
       <div class="cell"><span class="n">07 · Guides</span><h3>Guides &amp; resources</h3><p>Useful, citable resources that earn links and mentions over time.</p></div>
       <div class="cell"><span class="n">08 · Answers</span><h3>Answer-ready content</h3><p>Clear definitions, FAQs and facts that AI search tools can quote accurately.</p></div>
-      <div class="cell"><span class="n">09 · Refresh</span><h3>Content refreshes</h3><p>Existing pages updated, merged or retired — often the fastest win.</p></div>
+      <div class="cell"><span class="n">09 · Refresh</span><h3>Content refreshes</h3><p>Existing pages updated, merged or retired, often the fastest win.</p></div>
     </div>
   </div>
 </section>
 
 <section class="band alt" id="how">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does an SEO content engagement run?</h2><p class="lede">Audit what you have, plan what's missing, then publish steadily — never in bulk.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does an SEO content engagement run?</h2><p class="lede">Audit what you have, plan what's missing, then publish steadily, never in bulk.</p></div>
     <ol class="steps">
       <li class="step"><div class="k" aria-hidden="true">01</div><h3>Audit</h3><p>Every existing page: what ranks, what converts, what overlaps and what's out of date.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Plan</h3><p>Topic map, priorities and a publishing calendar tied to your services.</p></li>
-      <li class="step"><div class="k" aria-hidden="true">03</div><h3>Interview</h3><p>Your experts, sales and customer teams — the knowledge no competitor has.</p></li>
-      <li class="step"><div class="k" aria-hidden="true">04</div><h3>Produce</h3><p>Brief, write, edit, fact-check, approve and publish — page by page.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">03</div><h3>Interview</h3><p>Your experts, sales and customer teams: the knowledge no competitor has.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">04</div><h3>Produce</h3><p>Brief, write, edit, fact-check, approve and publish, page by page.</p></li>
       <li class="step"><div class="k" aria-hidden="true">05</div><h3>Refresh</h3><p>Measure every page and update, merge or retire on a schedule.</p></li>
     </ol>
   </div>
@@ -246,14 +246,14 @@ function rl_render_content() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>Content audit</b> — every page rated keep, improve, merge or retire.</li>
-      <li><b>Topic map</b> — pillars, clusters and the searches each page targets.</li>
-      <li><b>Editorial calendar</b> — agreed priorities and publishing dates.</li>
-      <li><b>Briefs</b> — intent, structure, questions and expert input for each page.</li>
-      <li><b>Written &amp; edited pages</b> — fact-checked and approved by your experts.</li>
-      <li><b>On-page setup</b> — titles, headings, schema and internal links.</li>
-      <li><b>Style &amp; AI guidelines</b> — how your content is written and how AI may be used.</li>
-      <li><b>Monthly report</b> — rankings, traffic, conversions and AI citations per page.</li>
+      <li><b>Content audit</b>: every page rated keep, improve, merge or retire.</li>
+      <li><b>Topic map</b>: pillars, clusters and the searches each page targets.</li>
+      <li><b>Editorial calendar</b>: agreed priorities and publishing dates.</li>
+      <li><b>Briefs</b>: intent, structure, questions and expert input for each page.</li>
+      <li><b>Written &amp; edited pages</b>: fact-checked and approved by your experts.</li>
+      <li><b>On-page setup</b>: titles, headings, schema and internal links.</li>
+      <li><b>Style &amp; AI guidelines</b>: how your content is written and how AI may be used.</li>
+      <li><b>Monthly report</b>: rankings, traffic, conversions and AI citations per page.</li>
     </ul>
   </div>
 </section>
@@ -267,7 +267,7 @@ function rl_render_content() {
       <div class="metric"><h3>Conversions</h3><p>Enquiries, sign-ups and assisted conversions from content.</p></div>
       <div class="metric"><h3>Engagement</h3><p>Whether readers stay, scroll and click through to the next step.</p></div>
       <div class="metric"><h3>Links &amp; citations</h3><p>Links earned and mentions in AI answers.</p></div>
-      <div class="metric"><h3>Content health</h3><p>Pages refreshed, merged or retired — and what that changed.</p></div>
+      <div class="metric"><h3>Content health</h3><p>Pages refreshed, merged or retired, and what that changed.</p></div>
     </div>
   </div>
 </section>
@@ -277,14 +277,14 @@ function rl_render_content() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>More content is not a strategy.</h2>
-      <p>Anyone can publish a hundred articles a month now. Most of them won't rank, won't be cited and won't sell — and publishing at that scale mainly to rank is exactly what Google's scaled-content policy targets. We would rather publish fewer pages that each answer a real question with real expertise, and keep them up to date.</p>
+      <p>Anyone can publish a hundred articles a month now. Most of them won't rank, won't be cited and won't sell, and publishing at that scale mainly to rank is exactly what Google's scaled-content policy targets. We would rather publish fewer pages that each answer a real question with real expertise, and keep them up to date.</p>
     </div>
   </div>
 </section>
 
 <section class="band alt" id="who">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who are SEO content systems for?</h2><p class="lede">Businesses with deep expertise that isn't yet on their website — and buyers who research before they talk to anyone.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who are SEO content systems for?</h2><p class="lede">Businesses with deep expertise that isn't yet on their website, and buyers who research before they talk to anyone.</p></div>
     <ul class="inds8">
       <?php foreach (rl_content_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
       <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('SEO content for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
@@ -298,7 +298,7 @@ function rl_render_content() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with SEO content?</h2><p class="lede">Content ranks when the site is sound and the brand is trusted. These services cover the rest.</p></div>
     <div class="cols c3">
       <?php foreach ([
-          ['services/best-search-engine-optimization-services', 'Pillar', 'Search Engine Optimization', 'All four pillars of SEO — technical, on-page, content and authority — as one system.'],
+          ['services/best-search-engine-optimization-services', 'Pillar', 'Search Engine Optimization', 'All four pillars of SEO (technical, on-page, content and authority) as one system.'],
           ['services/technical-seo-services', 'Foundation', 'Technical SEO', 'Crawling, indexing and speed, so new pages get found and indexed.'],
           ['services/press-release-services', 'Authority', 'Digital PR &amp; Link Building', 'Coverage and links that give your content the authority to rank.'],
           ['services/generative-engine-optimization', 'Citations', 'GEO', 'Content structured so AI engines can quote and cite it.'],
@@ -323,7 +323,7 @@ function rl_render_content() {
   <div class="wrap">
     <div class="final">
       <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
-      <h2>Is your content working — or just published?</h2>
+      <h2>Is your content working, or just published?</h2>
       <p class="lede">The free Search Authority Diagnostic reviews your content, indexing and AI-search visibility, and shows what to fix first.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>

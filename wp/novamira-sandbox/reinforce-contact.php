@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Contact
- * Description: /contact-us/ (APPROVED — PRESERVE, rebuilt to the D-012 standard). Provides [reinforce_contact] and the contact-form handler, which reuses the Diagnostic pipeline: stores a private rl_diag_request entry (request_type "Contact message"), emails hello@reinforcelab.com, and forwards JSON to rl_diag_webhook_url when set. Uses the shared kit (D-044). No hero animation (Contact is excluded, D-039). Schema: ContactPage + Organization contactPoint/location + FAQPage.
+ * Plugin Name: Reinforce Lab - Contact
+ * Description: /contact-us/ (APPROVED - PRESERVE, rebuilt to the D-012 standard). Provides [reinforce_contact] and the contact-form handler, which reuses the Diagnostic pipeline: stores a private rl_diag_request entry (request_type "Contact message"), emails hello@reinforcelab.com, and forwards JSON to rl_diag_webhook_url when set. Uses the shared kit (D-044). No hero animation (Contact is excluded, D-039). Schema: ContactPage + Organization contactPoint/location + FAQPage.
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -23,7 +23,7 @@ function rl_contact_faqs() {
     return [
         ['How do I contact Reinforce Lab?', 'Email hello@reinforcelab.com, call +880 1329-657096 in Bangladesh or +1 832 548 4553 in the United States, or send a message with the form on this page.'],
         ['Where are Reinforce Lab’s offices?', 'Reinforce Lab has two offices: Concord Tower, 113 Kazi Nazrul Islam Avenue, Dhaka, Bangladesh, and 2511 Pines Pointe Dr, Katy, Texas, USA.'],
-        ['Should I send a message or request the diagnostic?', 'If you want a review of your search visibility, request the free Search Authority Diagnostic — it collects the details we need to prepare it. For anything else, send a message here.'],
+        ['Should I send a message or request the diagnostic?', 'If you want a review of your search visibility, request the free Search Authority Diagnostic. It collects the details we need to prepare it. For anything else, send a message here.'],
         ['Do you work with clients outside Bangladesh and the United States?', 'Yes. Reinforce Lab works with clients around the world, remotely.'],
     ];
 }
@@ -57,7 +57,7 @@ function rl_contact_handle() {
     ];
     if ($d['name'] === '' || !is_email($d['email']) || trim($d['message']) === '') $go('invalid');
 
-    $id = wp_insert_post(['post_type' => 'rl_diag_request', 'post_status' => 'private', 'post_title' => '[Contact] ' . ($d['company'] !== '' ? $d['company'] . ' — ' : '') . $d['name']], true);
+    $id = wp_insert_post(['post_type' => 'rl_diag_request', 'post_status' => 'private', 'post_title' => '[Contact] ' . ($d['company'] !== '' ? $d['company'] . ' ' : '') . $d['name']], true);
     if (is_wp_error($id) || !$id) $go('error');
     foreach ($d as $k => $v) update_post_meta($id, $k, $v);
     update_post_meta($id, 'submitted_at', current_time('mysql'));
@@ -65,9 +65,9 @@ function rl_contact_handle() {
 
     $labels = ['name' => 'Name', 'email' => 'Email', 'company' => 'Company', 'website' => 'Website', 'topic' => 'About', 'message' => 'Message'];
     $body = "New contact message\n\n";
-    foreach ($labels as $k => $l) $body .= $l . ': ' . ($d[$k] !== '' ? $d[$k] : '—') . "\n";
+    foreach ($labels as $k => $l) $body .= $l . ': ' . ($d[$k] !== '' ? $d[$k] : 'not given') . "\n";
     $body .= "\nSaved in WordPress: " . admin_url('post.php?post=' . $id . '&action=edit') . "\n";
-    $sent = wp_mail(rl_contact_info()['email'], 'Contact message — ' . ($d['company'] !== '' ? $d['company'] : $d['name']), $body, ['Reply-To: ' . $d['name'] . ' <' . $d['email'] . '>']);
+    $sent = wp_mail(rl_contact_info()['email'], 'Contact message: ' . ($d['company'] !== '' ? $d['company'] : $d['name']), $body, ['Reply-To: ' . $d['name'] . ' <' . $d['email'] . '>']);
     update_post_meta($id, 'email_sent', $sent ? 'yes' : 'no');
 
     $hook = trim((string) get_option('rl_diag_webhook_url', ''));
@@ -205,7 +205,7 @@ function rl_render_contact() {
 
 <section class="band alt" id="offices">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Offices&nbsp;<b>]</b></span><h2>Where are Reinforce Lab’s offices?</h2><p class="lede">Two offices — Dhaka and Katy, Texas — and clients around the world.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Offices&nbsp;<b>]</b></span><h2>Where are Reinforce Lab’s offices?</h2><p class="lede">Two offices (Dhaka and Katy, Texas) and clients around the world.</p></div>
     <div class="cols c2">
       <?php foreach ($c['offices'] as $o) { ?>
       <div class="cell office"><span class="n"><?php echo esc_html($o[0]); ?></span><h3><?php echo esc_html($o[1]); ?></h3><p><?php echo implode('<br>', array_map('esc_html', $o[2])); ?><br><a href="tel:<?php echo esc_attr($o[4]); ?>"><?php echo esc_html($o[3]); ?></a></p></div>
@@ -220,7 +220,7 @@ function rl_render_contact() {
     <ol class="steps">
       <li class="step"><div class="k" aria-hidden="true">01</div><h3>We read it</h3><p>Your message goes straight to the Reinforce Lab team, not a ticket queue.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>We reply</h3><p>By email, with answers or the questions we need answered first.</p></li>
-      <li class="step"><div class="k" aria-hidden="true">03</div><h3>We suggest a next step</h3><p>Usually the free diagnostic — or a straight answer if we’re not the right fit.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">03</div><h3>We suggest a next step</h3><p>Usually the free diagnostic, or a straight answer if we’re not the right fit.</p></li>
     </ol>
   </div>
 </section>

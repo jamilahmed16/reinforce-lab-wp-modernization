@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Executive AI Consulting
- * Description: /services/executive-ai-consulting/ (D-023 new URL; 301 target for the legacy /services/business-consultancy-service/) — Executive AI Consulting service page. Provides [reinforce_execai]. Uses the shared kit (D-044). Hero animation "Matrix to roadmap" (D-039 Step 3).
+ * Plugin Name: Reinforce Lab - Executive AI Consulting
+ * Description: /services/executive-ai-consulting/ (D-023 new URL; 301 target for the legacy /services/business-consultancy-service/) - Executive AI Consulting service page. Provides [reinforce_execai]. Uses the shared kit (D-044). Hero animation "Matrix to roadmap" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -11,11 +11,11 @@ function rl_is_ex() { return is_page('executive-ai-consulting'); }
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_ex_faqs() {
     return [
-        ['What is executive AI consulting?', 'Executive AI consulting helps a leadership team decide where AI should — and shouldn’t — be used in the business: which use cases are worth funding, what data and governance they need, which regulations apply, and how the return will be measured. The output is a prioritised roadmap the board can approve and the business can act on.'],
-        ['Why do so many AI projects fail?', 'Gartner predicted that at least 30% of generative AI projects would be abandoned after proof of concept by the end of 2025, because of poor data quality, inadequate risk controls, escalating costs or unclear business value — and that over 40% of agentic AI projects will be cancelled by the end of 2027. Most failures are decided before the build: the wrong use case, no baseline, or no owner.'],
+        ['What is executive AI consulting?', 'Executive AI consulting helps a leadership team decide where AI should (and shouldn’t) be used in the business: which use cases are worth funding, what data and governance they need, which regulations apply, and how the return will be measured. The output is a prioritised roadmap the board can approve and the business can act on.'],
+        ['Why do so many AI projects fail?', 'Gartner predicted that at least 30% of generative AI projects would be abandoned after proof of concept by the end of 2025, because of poor data quality, inadequate risk controls, escalating costs or unclear business value, and that over 40% of agentic AI projects will be cancelled by the end of 2027. Most failures are decided before the build: the wrong use case, no baseline, or no owner.'],
         ['Does the EU AI Act affect us?', 'If you use or supply AI in the EU, parts of it already apply. AI literacy duties and the prohibited practices have applied since 2 February 2025; transparency rules, such as telling people when they are talking to a chatbot, since 2 August 2026; and rules for high-risk uses listed in Annex III apply from 2 December 2027. We map which of your use cases fall where. This is not legal advice.'],
-        ['What is AI literacy under the EU AI Act?', 'Article 4 has applied since 2 February 2025. Since the Digital Omnibus on AI took effect on 27 July 2026, providers and deployers of AI systems must take measures to support the development of AI literacy among the staff and others who operate or use AI on their behalf — reflecting their knowledge, experience and the context of use — without having to guarantee a specific level for any individual. Role-based training is part of every engagement.'],
-        ['Do you sell or recommend particular AI tools?', 'We are not resellers. We recommend tools only after the use case, data and risks are clear, and we test vendor claims — Gartner warns of “agent washing”, estimating that only about 130 of the thousands of agentic AI vendors are real.'],
+        ['What is AI literacy under the EU AI Act?', 'Article 4 has applied since 2 February 2025. Since the Digital Omnibus on AI took effect on 27 July 2026, providers and deployers of AI systems must take measures to support the development of AI literacy among the staff and others who operate or use AI on their behalf, reflecting their knowledge, experience and the context of use, without having to guarantee a specific level for any individual. Role-based training is part of every engagement.'],
+        ['Do you sell or recommend particular AI tools?', 'We are not resellers. We recommend tools only after the use case, data and risks are clear, and we test vendor claims. Gartner warns of “agent washing”, estimating that only about 130 of the thousands of agentic AI vendors are real.'],
         ['How long does an engagement take?', 'An assessment and roadmap usually takes a few weeks, depending on the size of the business and how many teams are involved. We then support the first pilots so the roadmap turns into measured results, not a slide deck.'],
     ];
 }
@@ -25,7 +25,7 @@ function rl_ex_industries() {
     return [
         ['pharmaceutical', 'Pharmaceutical & Life Sciences', ['AI use cases mapped against regulatory and quality requirements', 'Governance for medical, legal and regulatory review', 'Vendor due diligence for regulated data']],
         ['healthcare', 'Healthcare', ['Where AI can reduce admin without touching clinical judgement', 'Patient-data and consent questions settled first', 'Staff AI literacy by role']],
-        ['b2b-saas', 'B2B SaaS', ['AI in the product versus AI in operations — separate roadmaps', 'Build-versus-buy decisions for AI features', 'Transparency duties for customer-facing AI']],
+        ['b2b-saas', 'B2B SaaS', ['AI in the product versus AI in operations: separate roadmaps', 'Build-versus-buy decisions for AI features', 'Transparency duties for customer-facing AI']],
         ['ecommerce', 'E-commerce', ['Customer-service, content and merchandising use cases ranked', 'Chatbot disclosure and data use planned in', 'Return on AI measured per channel']],
         ['manufacturing', 'Manufacturing', ['Document, quoting and service use cases before the shop floor', 'Data readiness across ERP and legacy systems', 'Safety-related uses separated and governed']],
         ['technology', 'Technology', ['Internal AI use policy for engineering and support', 'Agentic AI pilots with clear value and controls', 'Vendor and model selection without the hype']],
@@ -36,7 +36,7 @@ function rl_ex_industries() {
 
 /* ---------- hero animation: Matrix to roadmap ----------
    AI use cases appear on a value × feasibility matrix; the "do first" quadrant lights; a risk check
-   flags one case for governance before it goes ahead; the chosen cases flow into a quarterly roadmap —
+   flags one case for governance before it goes ahead; the chosen cases flow into a quarterly roadmap -
    governance, pilot, scale, review; assess · prioritise · govern · roadmap light in turn. 10 s loop,
    soft fade, reset. */
 function rl_ex_svg() {
@@ -162,7 +162,7 @@ function rl_render_execai() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Executive AI Consulting&nbsp;<b>]</b></span>
       <h1 class="h1">An AI strategy<br>your board<br><span class="r">can act on.</span></h1>
-      <p class="lede"><strong>Executive AI consulting</strong> helps leadership teams decide where AI should — and shouldn't — go in their business: which use cases are worth funding, what data and governance they need, which regulations apply, and how the return will be measured. Reinforce Lab delivers a prioritised roadmap with the guardrails to match, then helps turn the first projects into measured results.</p>
+      <p class="lede"><strong>Executive AI consulting</strong> helps leadership teams decide where AI should (and shouldn't) go in their business: which use cases are worth funding, what data and governance they need, which regulations apply, and how the return will be measured. Reinforce Lab delivers a prioritised roadmap with the guardrails to match, then helps turn the first projects into measured results.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#ai-act">EU AI Act dates</a>
@@ -179,8 +179,8 @@ function rl_render_execai() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Why AI projects fail&nbsp;<b>]</b></span><h2>Why do so many AI initiatives fail?</h2><p class="lede">Rarely because the technology doesn't work. Usually because of decisions made before anything was built.</p></div>
     <div class="cols c3">
-      <div class="metric"><span class="num">30%</span><h3>Abandoned after the pilot</h3><p>of generative AI projects, Gartner predicted, would be abandoned after proof of concept by the end of 2025 — for poor data, weak risk controls, rising costs or unclear value.</p></div>
-      <div class="metric"><span class="num">40%+</span><h3>Agentic projects cancelled</h3><p>of agentic AI projects will be cancelled by the end of 2027, Gartner predicts — and only about 130 of thousands of "agentic" vendors are real.</p></div>
+      <div class="metric"><span class="num">30%</span><h3>Abandoned after the pilot</h3><p>of generative AI projects, Gartner predicted, would be abandoned after proof of concept by the end of 2025, for poor data, weak risk controls, rising costs or unclear value.</p></div>
+      <div class="metric"><span class="num">40%+</span><h3>Agentic projects cancelled</h3><p>of agentic AI projects will be cancelled by the end of 2027, Gartner predicts, and only about 130 of thousands of "agentic" vendors are real.</p></div>
       <div class="metric"><span class="num">39%</span><h3>See profit impact</h3><p>of organisations report any enterprise-level EBIT impact from AI, in McKinsey's 2025 global survey.</p></div>
     </div>
     <p class="src">Sources: Gartner, <a href="<?php echo $g1; ?>" rel="noopener" target="_blank">July 2024</a> and <a href="<?php echo $g2; ?>" rel="noopener" target="_blank">June 2025</a> press releases · McKinsey, <a href="<?php echo $mck; ?>" rel="noopener" target="_blank">The state of AI in 2025</a></p>
@@ -189,16 +189,16 @@ function rl_render_execai() {
 
 <section id="what">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What we do&nbsp;<b>]</b></span><h2>What does executive AI consulting cover?</h2><p class="lede">The decisions a leadership team has to own — made with evidence, not hype.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What we do&nbsp;<b>]</b></span><h2>What does executive AI consulting cover?</h2><p class="lede">The decisions a leadership team has to own, made with evidence, not hype.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01 · Opportunities</span><h3>AI opportunity assessment</h3><p>Where AI could save time, reduce cost or create revenue across your functions.</p></div>
-      <div class="cell"><span class="n">02 · Priorities</span><h3>Use-case prioritisation</h3><p>Every idea scored for value, feasibility and risk — so the first projects are the right ones.</p></div>
+      <div class="cell"><span class="n">02 · Priorities</span><h3>Use-case prioritisation</h3><p>Every idea scored for value, feasibility and risk, so the first projects are the right ones.</p></div>
       <div class="cell"><span class="n">03 · Value</span><h3>Business cases</h3><p>Costs, benefits and a baseline for each priority, so the return can actually be measured.</p></div>
       <div class="cell"><span class="n">04 · Data</span><h3>Data readiness</h3><p>Whether the data each use case needs exists, is good enough and can be used lawfully.</p></div>
-      <div class="cell"><span class="n">05 · Governance</span><h3>AI policy &amp; governance</h3><p>Who approves AI use, what staff may use, and how risk is reviewed — using the NIST AI RMF as a checklist.</p></div>
-      <div class="cell"><span class="n">06 · Regulation</span><h3>EU AI Act mapping</h3><p>Your role and duties for each use case — provider or deployer, transparency, high-risk or not.</p></div>
+      <div class="cell"><span class="n">05 · Governance</span><h3>AI policy &amp; governance</h3><p>Who approves AI use, what staff may use, and how risk is reviewed, using the NIST AI RMF as a checklist.</p></div>
+      <div class="cell"><span class="n">06 · Regulation</span><h3>EU AI Act mapping</h3><p>Your role and duties for each use case: provider or deployer, transparency, high-risk or not.</p></div>
       <div class="cell"><span class="n">07 · Vendors</span><h3>Tool &amp; vendor selection</h3><p>Independent assessment of tools and vendors against your use cases, not their marketing.</p></div>
-      <div class="cell"><span class="n">08 · People</span><h3>AI literacy &amp; training</h3><p>Role-based training for leaders and staff — the measures the AI Act asks organisations to take.</p></div>
+      <div class="cell"><span class="n">08 · People</span><h3>AI literacy &amp; training</h3><p>Role-based training for leaders and staff: the measures the AI Act asks organisations to take.</p></div>
       <div class="cell"><span class="n">09 · Roadmap</span><h3>Roadmap &amp; operating model</h3><p>What happens in what order, who owns it and how progress is reported to the board.</p></div>
     </div>
   </div>
@@ -206,14 +206,14 @@ function rl_render_execai() {
 
 <section class="band alt" id="ai-act">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;EU AI Act&nbsp;<b>]</b></span><h2>What does the EU AI Act already require?</h2><p class="lede">More than most leadership teams realise. The Act applies in stages — several of them already in force.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;EU AI Act&nbsp;<b>]</b></span><h2>What does the EU AI Act already require?</h2><p class="lede">More than most leadership teams realise. The Act applies in stages, several of them already in force.</p></div>
     <div class="tscroll" role="region" aria-label="EU AI Act application timeline" tabindex="0">
       <table>
         <thead><tr><th scope="col">Date</th><th scope="col">What applies</th><th scope="col">What it means for you</th></tr></thead>
         <tbody>
           <tr><th scope="row">1 Aug 2024</th><td>The AI Act enters into force</td><td>The clock starts on every later deadline.</td></tr>
           <tr><th scope="row">2 Feb 2025</th><td>Definitions, AI literacy and prohibited practices</td><td>Banned practices must stop; organisations must act on AI literacy for staff using AI.</td></tr>
-          <tr><th scope="row">2 Aug 2025</th><td>Rules for general-purpose AI models; governance in place</td><td>Mainly model providers — but it shapes the tools you buy.</td></tr>
+          <tr><th scope="row">2 Aug 2025</th><td>Rules for general-purpose AI models; governance in place</td><td>Mainly model providers, but it shapes the tools you buy.</td></tr>
           <tr><th scope="row">27 Jul 2026</th><td>Digital Omnibus on AI amends the Act</td><td>AI-literacy duty becomes: take measures to support it, no guaranteed individual level; some deadlines move.</td></tr>
           <tr><th scope="row">2 Aug 2026</th><td>Most rules apply, including transparency (Article 50); enforcement starts</td><td>Tell people when they're talking to a chatbot or seeing AI-generated content.</td></tr>
           <tr><th scope="row">2 Dec 2027</th><td>Rules for high-risk AI systems listed in Annex III</td><td>Uses such as CV screening need risk management, documentation and human oversight.</td></tr>
@@ -226,13 +226,13 @@ function rl_render_execai() {
 
 <section id="how">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does an engagement run?</h2><p class="lede">From a list of ideas to a board decision — then to the first measured results.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does an engagement run?</h2><p class="lede">From a list of ideas to a board decision, then to the first measured results.</p></div>
     <ol class="steps">
       <li class="step"><div class="k" aria-hidden="true">01</div><h3>Discover</h3><p>Interviews with leaders and teams; a review of processes, data and current AI use.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Assess</h3><p>Opportunities scored for value, feasibility and risk, with a baseline for each.</p></li>
       <li class="step"><div class="k" aria-hidden="true">03</div><h3>Decide</h3><p>A leadership workshop to agree priorities, budget, owners and guardrails.</p></li>
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Pilot</h3><p>The first one or two projects delivered and measured against the business case.</p></li>
-      <li class="step"><div class="k" aria-hidden="true">05</div><h3>Govern &amp; scale</h3><p>What works is scaled; what doesn't is stopped early — both reported to the board.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">05</div><h3>Govern &amp; scale</h3><p>What works is scaled; what doesn't is stopped early, both reported to the board.</p></li>
     </ol>
   </div>
 </section>
@@ -241,25 +241,25 @@ function rl_render_execai() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>AI opportunity map</b> — ideas from across the business, in one place.</li>
-      <li><b>Prioritised roadmap</b> — scored for value, feasibility and risk, with owners.</li>
-      <li><b>Business cases</b> — costs, benefits and baselines for the priorities.</li>
-      <li><b>AI use policy</b> — what staff may use, how, and who approves.</li>
-      <li><b>Risk &amp; regulation register</b> — EU AI Act role and duties per use case.</li>
-      <li><b>Vendor shortlist</b> — tools assessed against your requirements.</li>
-      <li><b>Leadership workshop</b> — priorities and guardrails agreed by the people accountable.</li>
-      <li><b>First-90-days plan</b> — the pilots, their measures and their owners.</li>
+      <li><b>AI opportunity map</b>: ideas from across the business, in one place.</li>
+      <li><b>Prioritised roadmap</b>: scored for value, feasibility and risk, with owners.</li>
+      <li><b>Business cases</b>: costs, benefits and baselines for the priorities.</li>
+      <li><b>AI use policy</b>: what staff may use, how, and who approves.</li>
+      <li><b>Risk &amp; regulation register</b>: EU AI Act role and duties per use case.</li>
+      <li><b>Vendor shortlist</b>: tools assessed against your requirements.</li>
+      <li><b>Leadership workshop</b>: priorities and guardrails agreed by the people accountable.</li>
+      <li><b>First-90-days plan</b>: the pilots, their measures and their owners.</li>
     </ul>
   </div>
 </section>
 
 <section id="measure">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure AI strategy?</h2><p class="lede">By what the business gets out of it — including the projects it was right to stop.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure AI strategy?</h2><p class="lede">By what the business gets out of it, including the projects it was right to stop.</p></div>
     <div class="cols c3">
       <div class="metric"><h3>Value against the business case</h3><p>Savings or revenue delivered compared with what was approved.</p></div>
       <div class="metric"><h3>Time to first result</h3><p>How long from decision to a measured pilot outcome.</p></div>
-      <div class="metric"><h3>Projects stopped early</h3><p>Weak ideas stopped before they became expensive — a success, not a failure.</p></div>
+      <div class="metric"><h3>Projects stopped early</h3><p>Weak ideas stopped before they became expensive, a success, not a failure.</p></div>
       <div class="metric"><h3>Adoption</h3><p>Whether people actually use the AI tools that were rolled out.</p></div>
       <div class="metric"><h3>Risk &amp; incidents</h3><p>Issues found by review before launch, and incidents after it.</p></div>
       <div class="metric"><h3>AI literacy coverage</h3><p>Share of staff trained for the way they use AI in their role.</p></div>
@@ -272,14 +272,14 @@ function rl_render_execai() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>Sometimes the answer is "not yet".</h2>
-      <p>If the data isn't there, the process isn't stable or the risk outweighs the return, the right decision is to wait — or to fix the foundations first. We would rather tell a board that than sell it a pilot destined to join the abandoned ones. Our job is a strategy you can defend, not the biggest possible AI budget.</p>
+      <p>If the data isn't there, the process isn't stable or the risk outweighs the return, the right decision is to wait, or to fix the foundations first. We would rather tell a board that than sell it a pilot destined to join the abandoned ones. Our job is a strategy you can defend, not the biggest possible AI budget.</p>
     </div>
   </div>
 </section>
 
 <section id="who">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is executive AI consulting for?</h2><p class="lede">Founders, CEOs and leadership teams who need to decide what AI means for their business — and be able to explain that decision.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is executive AI consulting for?</h2><p class="lede">Founders, CEOs and leadership teams who need to decide what AI means for their business, and be able to explain that decision.</p></div>
     <ul class="inds8">
       <?php foreach (rl_ex_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
       <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('Executive AI consulting for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>

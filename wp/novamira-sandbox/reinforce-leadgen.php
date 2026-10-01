@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Lead Generation Systems
- * Description: /services/lead-generation-systems/ (D-023 new URL; 301 target for the legacy /services/ppc-management-services/) — Lead Generation Systems service page. Provides [reinforce_leadgen]. Uses the shared kit (D-044). Hero animation "Closed loop" (D-039 Step 3).
+ * Plugin Name: Reinforce Lab - Lead Generation Systems
+ * Description: /services/lead-generation-systems/ (D-023 new URL; 301 target for the legacy /services/ppc-management-services/) - Lead Generation Systems service page. Provides [reinforce_leadgen]. Uses the shared kit (D-044). Hero animation "Closed loop" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -11,10 +11,10 @@ function rl_is_lg() { return is_page('lead-generation-systems'); }
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_lg_faqs() {
     return [
-        ['What is a lead generation system?', 'A lead generation system connects every step between a buyer’s first search and a closed deal: the channels that attract them, the landing pages and forms that convert them, the qualification and routing that get the right leads to sales quickly, and the closed-loop data that shows which campaigns created revenue — so budget moves to what works.'],
-        ['Do you manage PPC and Google Ads?', 'Yes. Paid search is usually one of the channels in the system. We structure campaigns, manage keywords and negatives, write and test ads, build the landing pages, set up conversion tracking and bid on the value of leads — using what happens in your CRM, not just form fills.'],
-        ['What is closed-loop reporting?', 'Closed-loop reporting connects a lead’s source to what happened next in your CRM — qualified, opportunity, won or lost. Google Ads can import these offline conversions, so bidding learns which searches produce customers rather than just enquiries.'],
-        ['Should we chase a better Quality Score?', 'Not directly. Google describes Quality Score as a diagnostic tool, not a key performance indicator, and says it is not an input in the ad auction. Its three components — expected click-through rate, ad relevance and landing page experience — are useful clues about what to improve.'],
+        ['What is a lead generation system?', 'A lead generation system connects every step between a buyer’s first search and a closed deal: the channels that attract them, the landing pages and forms that convert them, the qualification and routing that get the right leads to sales quickly, and the closed-loop data that shows which campaigns created revenue, so budget moves to what works.'],
+        ['Do you manage PPC and Google Ads?', 'Yes. Paid search is usually one of the channels in the system. We structure campaigns, manage keywords and negatives, write and test ads, build the landing pages, set up conversion tracking and bid on the value of leads, using what happens in your CRM, not just form fills.'],
+        ['What is closed-loop reporting?', 'Closed-loop reporting connects a lead’s source to what happened next in your CRM: qualified, opportunity, won or lost. Google Ads can import these offline conversions, so bidding learns which searches produce customers rather than just enquiries.'],
+        ['Should we chase a better Quality Score?', 'Not directly. Google describes Quality Score as a diagnostic tool, not a key performance indicator, and says it is not an input in the ad auction. Its three components (expected click-through rate, ad relevance and landing page experience) are useful clues about what to improve.'],
         ['Do we need Consent Mode?', 'If you advertise to users in the European Economic Area and use Google’s measurement or personalisation features, Google requires consent signals to be collected and passed on. Consent Mode’s ad_user_data setting is required for measurement uses such as enhanced conversions. We set this up with your consent platform.'],
         ['How is lead generation priced?', 'Scope and pricing are agreed after an audit of your current channels, tracking and CRM. Media spend is paid to the ad platforms and reported separately from management fees, so you can always see what the media itself cost.'],
     ];
@@ -37,7 +37,7 @@ function rl_lg_industries() {
 /* ---------- hero animation: Closed loop ----------
    Four channels send visitors to a landing page and form; a qualification step sends sales-ready
    leads to sales and the rest to nurture; a closed deal is fed back as conversion data to the paid
-   channel's bidding — the loop closes; attract · convert · qualify · close the loop light in turn.
+   channel's bidding - the loop closes; attract · convert · qualify · close the loop light in turn.
    10 s loop, soft fade, reset. */
 function rl_lg_svg() {
     $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlLgT"><title id="rlLgT">Search, paid ads, content and referrals send visitors to a landing page and form; qualified leads go to sales and the rest to nurture; closed deals are fed back as conversion data to improve ad bidding.</title>';
@@ -124,7 +124,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     $graph[] = [
         '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Lead Generation Systems', 'alternateName' => ['B2B lead generation', 'PPC management services', 'Google Ads management'],
         'serviceType' => 'Lead generation and paid search management', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
-        'description' => 'Lead generation systems that connect channels, landing pages, forms, qualification, routing and closed-loop measurement — including PPC and Google Ads management bid on the value of leads recorded in your CRM.',
+        'description' => 'Lead generation systems that connect channels, landing pages, forms, qualification, routing and closed-loop measurement, including PPC and Google Ads management bid on the value of leads recorded in your CRM.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
     ];
     $graph[] = [
@@ -156,7 +156,7 @@ function rl_render_leadgen() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Lead Generation&nbsp;<b>]</b></span>
       <h1 class="h1">Turn demand into<br>qualified pipeline,<br><span class="r">not form fills.</span></h1>
-      <p class="lede"><strong>Lead generation systems</strong> connect every step between a buyer's first search and a closed deal: the channels that attract them, the landing pages and forms that convert them, the qualification and routing that get the right leads to sales fast, and the closed-loop data that tells your ads which leads became revenue. Reinforce Lab builds and runs the whole system — including PPC and Google Ads.</p>
+      <p class="lede"><strong>Lead generation systems</strong> connect every step between a buyer's first search and a closed deal: the channels that attract them, the landing pages and forms that convert them, the qualification and routing that get the right leads to sales fast, and the closed-loop data that tells your ads which leads became revenue. Reinforce Lab builds and runs the whole system, including PPC and Google Ads.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#ppc">PPC management</a>
@@ -171,12 +171,12 @@ function rl_render_leadgen() {
 
 <section class="band alt" id="system">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;The system&nbsp;<b>]</b></span><h2>What is a lead generation system?</h2><p class="lede">Six parts that most businesses run separately — and lose leads between. We run them as one.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;The system&nbsp;<b>]</b></span><h2>What is a lead generation system?</h2><p class="lede">Six parts that most businesses run separately, and lose leads between. We run them as one.</p></div>
     <div class="cols c3">
-      <div class="cell"><span class="n">01 · Attract</span><h3>Channels</h3><p>Organic search, paid search, content and referrals — each chosen for where your buyers actually look.</p></div>
+      <div class="cell"><span class="n">01 · Attract</span><h3>Channels</h3><p>Organic search, paid search, content and referrals, each chosen for where your buyers actually look.</p></div>
       <div class="cell"><span class="n">02 · Convert</span><h3>Landing pages &amp; CRO</h3><p>A page for each offer and audience, tested and improved on what converts to pipeline.</p></div>
       <div class="cell"><span class="n">03 · Capture</span><h3>Forms &amp; data</h3><p>Forms that ask only what sales needs, with consent recorded and sources captured.</p></div>
-      <div class="cell"><span class="n">04 · Qualify</span><h3>Qualification &amp; routing</h3><p>Fit and intent checked, then leads routed to the right person — or to nurture.</p></div>
+      <div class="cell"><span class="n">04 · Qualify</span><h3>Qualification &amp; routing</h3><p>Fit and intent checked, then leads routed to the right person, or to nurture.</p></div>
       <div class="cell"><span class="n">05 · Handoff</span><h3>CRM &amp; speed to lead</h3><p>Every lead in the CRM with its source, and sales alerted while the lead is warm.</p></div>
       <div class="cell"><span class="n">06 · Close the loop</span><h3>Revenue feedback</h3><p>CRM outcomes fed back to your ad platforms and reports, so budget follows revenue.</p></div>
     </div>
@@ -197,12 +197,12 @@ function rl_render_leadgen() {
 
 <section class="band alt" id="ppc">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;PPC management&nbsp;<b>]</b></span><h2>What does our PPC management include?</h2><p class="lede">Paid search run as part of the system — measured on qualified pipeline, not clicks.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;PPC management&nbsp;<b>]</b></span><h2>What does our PPC management include?</h2><p class="lede">Paid search run as part of the system, measured on qualified pipeline, not clicks.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">Structure</span><h3>Campaign architecture</h3><p>Campaigns organised by intent and offer, so budget and messaging stay under control.</p></div>
-      <div class="cell"><span class="n">Keywords</span><h3>Keywords &amp; negatives</h3><p>High-intent terms in, irrelevant searches out — reviewed from real search-term data.</p></div>
+      <div class="cell"><span class="n">Keywords</span><h3>Keywords &amp; negatives</h3><p>High-intent terms in, irrelevant searches out, reviewed from real search-term data.</p></div>
       <div class="cell"><span class="n">Ads</span><h3>Ads &amp; testing</h3><p>Ads that match the searcher's intent, tested continuously.</p></div>
-      <div class="cell"><span class="n">Pages</span><h3>Landing pages</h3><p>Pages that match the ad and the search — one of the three signals Google uses to judge ad quality.</p></div>
+      <div class="cell"><span class="n">Pages</span><h3>Landing pages</h3><p>Pages that match the ad and the search, one of the three signals Google uses to judge ad quality.</p></div>
       <div class="cell"><span class="n">Bidding</span><h3>Bidding on value</h3><p>Conversion values and CRM outcomes that teach bidding which leads matter.</p></div>
       <div class="cell"><span class="n">Tracking</span><h3>Tracking &amp; consent</h3><p>Conversion tracking, enhanced conversions and Consent Mode set up correctly.</p></div>
     </div>
@@ -211,10 +211,10 @@ function rl_render_leadgen() {
 
 <section id="myths">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Myths&nbsp;<b>]</b></span><h2>Which PPC habits cost you money?</h2><p class="lede">Four common habits — and what Google's own documentation says.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Myths&nbsp;<b>]</b></span><h2>Which PPC habits cost you money?</h2><p class="lede">Four common habits, and what Google's own documentation says.</p></div>
     <div class="myths">
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Push Quality Score up and costs will fall."</p></div><div class="f"><span class="tag">Google says</span><p>Quality Score is a diagnostic tool, "not a key performance indicator", and "not an input in the ad auction".</p><a href="<?php echo $ga(6167118); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"The landing page is the website team's problem."</p></div><div class="f"><span class="tag">Google says</span><p>Landing page experience — how relevant and useful the page is — is one of the three components of Quality Score, alongside expected CTR and ad relevance.</p><a href="<?php echo $ga(6167118); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"The landing page is the website team's problem."</p></div><div class="f"><span class="tag">Google says</span><p>Landing page experience (how relevant and useful the page is) is one of the three components of Quality Score, alongside expected CTR and ad relevance.</p><a href="<?php echo $ga(6167118); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"A form fill is a conversion."</p></div><div class="f"><span class="tag">Google says</span><p>An ad often starts a path that ends in a sale offline. Importing offline conversions lets you measure what happens after the click or call.</p><a href="<?php echo $ga(2998031); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Consent is just a cookie-banner job."</p></div><div class="f"><span class="tag">Google says</span><p>For users in the EEA, the ad_user_data consent type is required for measurement uses such as enhanced conversions and tag-based conversion tracking.</p><a href="<?php echo $ga(13802165); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
     </div>
@@ -226,7 +226,7 @@ function rl_render_leadgen() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does a lead generation engagement run?</h2><p class="lede">Fix the measurement first. Everything else depends on it.</p></div>
     <ol class="steps">
       <li class="step"><div class="k" aria-hidden="true">01</div><h3>Audit</h3><p>Channels, tracking, forms, CRM and where leads are lost today.</p></li>
-      <li class="step"><div class="k" aria-hidden="true">02</div><h3>Define</h3><p>Ideal customer, offers, and what counts as a qualified lead — agreed with sales.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">02</div><h3>Define</h3><p>Ideal customer, offers, and what counts as a qualified lead, agreed with sales.</p></li>
       <li class="step"><div class="k" aria-hidden="true">03</div><h3>Build</h3><p>Tracking, landing pages, forms, routing and campaigns.</p></li>
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Launch</h3><p>Channels switched on in stages, with budgets capped until data arrives.</p></li>
       <li class="step"><div class="k" aria-hidden="true">05</div><h3>Optimise</h3><p>Budget moved weekly towards what creates qualified pipeline.</p></li>
@@ -238,21 +238,21 @@ function rl_render_leadgen() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>Lead-flow audit</b> — where leads come from, where they stall and where they're lost.</li>
-      <li><b>Lead definitions</b> — qualified-lead criteria and handoff rules agreed with sales.</li>
-      <li><b>Tracking plan</b> — conversions, sources, consent and CRM fields.</li>
-      <li><b>Landing pages &amp; forms</b> — built, tested and improved.</li>
-      <li><b>Campaigns</b> — PPC and other channels, set up and managed.</li>
-      <li><b>Routing &amp; alerts</b> — the right lead to the right person, fast.</li>
-      <li><b>Closed-loop setup</b> — CRM outcomes fed back to ads and reports.</li>
-      <li><b>Monthly report</b> — cost per qualified lead, pipeline and revenue by channel.</li>
+      <li><b>Lead-flow audit</b>: where leads come from, where they stall and where they're lost.</li>
+      <li><b>Lead definitions</b>: qualified-lead criteria and handoff rules agreed with sales.</li>
+      <li><b>Tracking plan</b>: conversions, sources, consent and CRM fields.</li>
+      <li><b>Landing pages &amp; forms</b>: built, tested and improved.</li>
+      <li><b>Campaigns</b>: PPC and other channels, set up and managed.</li>
+      <li><b>Routing &amp; alerts</b>: the right lead to the right person, fast.</li>
+      <li><b>Closed-loop setup</b>: CRM outcomes fed back to ads and reports.</li>
+      <li><b>Monthly report</b>: cost per qualified lead, pipeline and revenue by channel.</li>
     </ul>
   </div>
 </section>
 
 <section class="band alt" id="measure">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure lead generation?</h2><p class="lede">By what reaches sales and closes — not by the number of forms filled in.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure lead generation?</h2><p class="lede">By what reaches sales and closes, not by the number of forms filled in.</p></div>
     <div class="cols c3">
       <div class="metric"><h3>Qualified leads</h3><p>Leads that meet the definition you agreed with sales.</p></div>
       <div class="metric"><h3>Cost per qualified lead</h3><p>Spend divided by qualified leads, by channel and campaign.</p></div>
@@ -269,7 +269,7 @@ function rl_render_leadgen() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>Cheap leads are expensive.</h2>
-      <p>It is easy to lower cost per lead: loosen the targeting, shorten the form, offer something free. Sales then spends its week on people who were never going to buy. We optimise for qualified pipeline instead — which sometimes means fewer leads, a longer form and a higher cost per lead that is worth far more.</p>
+      <p>It is easy to lower cost per lead: loosen the targeting, shorten the form, offer something free. Sales then spends its week on people who were never going to buy. We optimise for qualified pipeline instead, which sometimes means fewer leads, a longer form and a higher cost per lead that is worth far more.</p>
     </div>
   </div>
 </section>
@@ -287,7 +287,7 @@ function rl_render_leadgen() {
 
 <section id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with lead generation?</h2><p class="lede">Leads need a system on both sides — visibility before, follow-up after.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with lead generation?</h2><p class="lede">Leads need a system on both sides: visibility before, follow-up after.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/marketing-automation', 'Follow-up', 'Marketing Automation', 'Nurture, scoring and sales handoff for every lead the system brings in.'],

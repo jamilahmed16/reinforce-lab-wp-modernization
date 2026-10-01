@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Search Authority Diagnostic
+ * Plugin Name: Reinforce Lab - Search Authority Diagnostic
  * Description: /search-authority-diagnostic/ (design: claude/design-previews/search-authority-diagnostic.html). Provides [reinforce_diagnostic] and the request-form handler: stores a private ACF "Diagnostic Request", emails RL_DIAG_NOTIFY, and forwards JSON to the webhook in option rl_diag_webhook_url when set (empty = off). Relies on tokens/chrome from reinforce-header.php.
  * Version: 1.0
  */
@@ -22,11 +22,11 @@ function rl_diag_faqs() {
     // [question, answer, optional link path, optional link label]
     return [
         ['Is the Search Authority Diagnostic free?', 'Yes. The diagnostic is free. It is the first step before any engagement and establishes your real baseline before anything is built.', 'packages', 'See packages'],
-        ['What does the diagnostic include?', 'A review of seven dimensions of search authority — organic search, AI search, content authority, competitors, search demand, customer voice and technical foundation — each with its evidence and gap, plus a prioritized 90-day plan covering what to create, what to improve and what to stop.'],
+        ['What does the diagnostic include?', 'A review of seven dimensions of search authority: organic search, AI search, content authority, competitors, search demand, customer voice and technical foundation, each with its evidence and gap, plus a prioritized 90-day plan covering what to create, what to improve and what to stop.'],
         ['Does it cover AI search like ChatGPT, Perplexity and AI Overviews?', 'Yes. We review your brand mentions, citations and entity visibility across ChatGPT, Perplexity and Google AI Overviews alongside your Google rankings, so you see where you stand in both.'],
-        ['Who is the diagnostic for?', 'Organizations with a real search opportunity — from enterprise teams in pharma, life sciences, healthcare and finance to established and early-stage businesses. Enterprise requests get priority review; established businesses also get a strategy call.'],
+        ['Who is the diagnostic for?', 'Organizations with a real search opportunity, from enterprise teams in pharma, life sciences, healthcare and finance to established and early-stage businesses. Enterprise requests get priority review; established businesses also get a strategy call.'],
         ['What happens after I request it?', 'We review your details, research your site, search data, competitors and AI visibility, and pass the findings through a human quality check. You then receive your diagnostic and a prioritized 90-day plan.'],
-        ['Am I obligated to buy anything afterwards?', 'No. The diagnostic is free with no obligation. If you want help acting on the plan, we will recommend the package that fits — or you can implement it yourself.'],
+        ['Am I obligated to buy anything afterwards?', 'No. The diagnostic is free with no obligation. If you want help acting on the plan, we will recommend the package that fits, or you can implement it yourself.'],
         ['Is my information confidential?', 'Yes. Your details are used only to prepare your diagnostic and to contact you about it.'],
         ['How is this different from the paid SEO & AI Search Audit?', 'The diagnostic is a free, focused read of where you stand and what to do next. The SEO & AI Search Audit is a paid, one-time deep audit for teams that need the full technical and content analysis.', 'services/seo-ai-search-audit', 'About the SEO &amp; AI Search Audit'],
     ];
@@ -69,7 +69,7 @@ function rl_diag_handle() {
     $audit = (($f['interest'] ?? '') === 'audit');
     $type = $audit ? 'SEO & AI Search Audit' : 'Search Authority Diagnostic';
 
-    $id = wp_insert_post(['post_type' => 'rl_diag_request', 'post_status' => 'private', 'post_title' => ($audit ? '[Audit] ' : '') . $d['company'] . ' — ' . $d['name']], true);
+    $id = wp_insert_post(['post_type' => 'rl_diag_request', 'post_status' => 'private', 'post_title' => ($audit ? '[Audit] ' : '') . $d['company'] . ' ' . $d['name']], true);
     if (is_wp_error($id) || !$id) $go('error');
     $save = function ($k, $v) use ($id) { function_exists('update_field') ? update_field($k, $v, $id) : update_post_meta($id, $k, $v); };
     foreach ($d as $k => $v) $save($k, $v);
@@ -78,9 +78,9 @@ function rl_diag_handle() {
 
     $labels = ['name' => 'Name', 'email' => 'Email', 'company' => 'Company', 'website' => 'Website', 'role' => 'Role', 'industry' => 'Industry', 'challenge' => 'Biggest challenge', 'volume' => 'Monthly content volume', 'outcome' => 'Desired outcome'];
     $body = "New " . $type . " request\n\n";
-    foreach ($labels as $k => $l) $body .= $l . ': ' . ($d[$k] !== '' ? $d[$k] : '—') . "\n";
+    foreach ($labels as $k => $l) $body .= $l . ': ' . ($d[$k] !== '' ? $d[$k] : 'not given') . "\n";
     $body .= "\nSaved in WordPress: " . admin_url('post.php?post=' . $id . '&action=edit') . "\n";
-    $sent = wp_mail(RL_DIAG_NOTIFY, ($audit ? 'Audit request — ' : 'Diagnostic request — ') . $d['company'], $body, ['Reply-To: ' . $d['name'] . ' <' . $d['email'] . '>']);
+    $sent = wp_mail(RL_DIAG_NOTIFY, ($audit ? 'Audit request: ' : 'Diagnostic request: ') . $d['company'], $body, ['Reply-To: ' . $d['name'] . ' <' . $d['email'] . '>']);
     $save('email_sent', $sent ? 'yes' : 'no');
 
     $hook = trim((string) get_option('rl_diag_webhook_url', ''));
@@ -260,11 +260,11 @@ function rl_render_diagnostic() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Free&nbsp;<b>/</b>&nbsp;Search Authority Diagnostic&nbsp;<b>]</b></span>
       <h1 class="h1">Find out what's<br>limiting your<br><span class="r">search authority.</span></h1>
-      <p class="lede">The <strong>Search Authority Diagnostic</strong> is a free, data-backed review from Reinforce Lab of your Google visibility, AI-search presence, content authority, competitors and demand signals. Not a generic SEO scorecard — what matters, what's missing, and what to do next.</p>
+      <p class="lede">The <strong>Search Authority Diagnostic</strong> is a free, data-backed review from Reinforce Lab of your Google visibility, AI-search presence, content authority, competitors and demand signals. Not a generic SEO scorecard: what matters, what's missing, and what to do next.</p>
       <ul class="ticks">
         <li>Where you stand in Google <em>and</em> in AI answers (ChatGPT, Perplexity, AI Overviews)</li>
         <li>The highest-value demand you're not capturing</li>
-        <li>A prioritized 90-day action plan — create, improve, stop</li>
+        <li>A prioritized 90-day action plan: create, improve, stop</li>
       </ul>
       <p class="micro">For selected businesses and organizations · <b>Confidential</b> · No purchased lists · No generic automated audit</p>
     </div>
@@ -306,7 +306,7 @@ function rl_render_diagnostic() {
 
 <section class="band alt" id="analyze">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What we analyze&nbsp;<b>]</b></span><h2>Seven intelligence layers.</h2><p class="lede">Not one meaningless SEO score — we review seven dimensions of authority, each with evidence and a gap.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What we analyze&nbsp;<b>]</b></span><h2>Seven intelligence layers.</h2><p class="lede">Not one meaningless SEO score. We review seven dimensions of authority, each with evidence and a gap.</p></div>
     <div class="cols c4">
       <div class="cell"><div class="n">01</div><h3>Organic Search</h3><p>Rankings, queries, impressions, CTR, visibility and the opportunities you're missing.</p></div>
       <div class="cell"><div class="n">02</div><h3>AI Search</h3><p>Brand mentions, citations and entity visibility across ChatGPT, Perplexity and AI Overviews.</p></div>
@@ -315,21 +315,21 @@ function rl_render_diagnostic() {
       <div class="cell"><div class="n">05</div><h3>Search Demand</h3><p>High-value queries, emerging topics, intent patterns and underserved demand.</p></div>
       <div class="cell"><div class="n">06</div><h3>Customer Voice</h3><p>The questions, objections and complaints in your customers' own language.</p></div>
       <div class="cell"><div class="n">07</div><h3>Technical Foundation</h3><p>Indexability, crawlability, architecture, internal linking and technical barriers.</p></div>
-      <div class="cell" style="border-color:var(--red-line)"><div class="n" aria-hidden="true">→</div><h3>Your Authority Score</h3><p>Seven weighted dimensions, each explainable — current state, evidence, gap, priority.</p></div>
+      <div class="cell" style="border-color:var(--red-line)"><div class="n" aria-hidden="true">→</div><h3>Your Authority Score</h3><p>Seven weighted dimensions, each explainable: current state, evidence, gap, priority.</p></div>
     </div>
   </div>
 </section>
 
 <section id="get">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What you receive&nbsp;<b>]</b></span><h2>A prioritized action plan — not a PDF you file away.</h2></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What you receive&nbsp;<b>]</b></span><h2>A prioritized action plan, not a PDF you file away.</h2></div>
     <ul class="deliv" style="list-style:none">
-      <li><span><b>What's working</b> — and what's quietly holding you back.</span></li>
+      <li><span><b>What's working</b> and what's holding you back.</span></li>
       <li><span><b>Your biggest opportunities</b>, ranked by impact × effort.</span></li>
-      <li><span><b>What to create</b> — the content that would actually move you.</span></li>
-      <li><span><b>What to improve</b> — the pages worth saving.</span></li>
-      <li><span><b>What to stop</b> — the effort that isn't paying off.</span></li>
-      <li><span><b>A 90-day plan</b> — sequenced P0 → P3, with the recommended system.</span></li>
+      <li><span><b>What to create</b>: the content that would actually move you.</span></li>
+      <li><span><b>What to improve</b>: the pages worth saving.</span></li>
+      <li><span><b>What to stop</b>: the effort that isn't paying off.</span></li>
+      <li><span><b>A 90-day plan</b>: sequenced P0 → P3, with the recommended system.</span></li>
     </ul>
   </div>
 </section>
@@ -340,7 +340,7 @@ function rl_render_diagnostic() {
     <ol class="steps" style="list-style:none;margin:0;padding:0">
       <li class="step"><div class="k" aria-hidden="true">01</div><h3>Request</h3><p>You share a few details. Two minutes.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Research</h3><p>We analyze your site, search data, competitors and AI visibility.</p></li>
-      <li class="step"><div class="k" aria-hidden="true">03</div><h3>Verify</h3><p>Findings are evidenced and confidence-rated — no invented data.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">03</div><h3>Verify</h3><p>Findings are evidenced and confidence-rated. No invented data.</p></li>
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Review</h3><p>A human quality gate before anything reaches you.</p></li>
       <li class="step"><div class="k" aria-hidden="true">05</div><h3>Deliver</h3><p>Your personalized Search Authority Diagnostic and 90-day plan.</p></li>
     </ol>
@@ -349,9 +349,9 @@ function rl_render_diagnostic() {
 
 <section id="who">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Built for organizations with something to protect — and to gain.</h2></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Built for organizations with something to protect, and to gain.</h2></div>
     <div class="q">
-      <div class="cell"><span class="tag">Priority</span><h3 style="margin:10px 0 8px;font-size:18px">Enterprise</h3><p>Pharma, Life Sciences, Healthcare, Finance or enterprise — a real content operation and a clear search problem. Priority review.</p></div>
+      <div class="cell"><span class="tag">Priority</span><h3 style="margin:10px 0 8px;font-size:18px">Enterprise</h3><p>Pharma, Life Sciences, Healthcare, Finance or enterprise, a real content operation and a clear search problem. Priority review.</p></div>
       <div class="cell"><span class="tag">Growth</span><h3 style="margin:10px 0 8px;font-size:18px">Established</h3><p>A meaningful search opportunity and active marketing. Diagnostic plus a strategy call.</p></div>
       <div class="cell"><span class="tag">Early</span><h3 style="margin:10px 0 8px;font-size:18px">Early stage</h3><p>Smaller or newer footprint. A focused read and an educational path forward.</p></div>
     </div>
@@ -374,7 +374,7 @@ function rl_render_diagnostic() {
     <div class="final">
       <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
       <h2>See what's really limiting your growth.</h2>
-      <p class="lede">The diagnostic establishes your real baseline — no borrowed numbers, no invented results — and shows exactly what to do next.</p>
+      <p class="lede">The diagnostic establishes your real baseline (no borrowed numbers, no invented results) and shows exactly what to do next.</p>
       <div class="cta">
         <a class="btn p" href="#request">Request My Diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('search-authority-os'); ?>">How Search Authority OS works</a>

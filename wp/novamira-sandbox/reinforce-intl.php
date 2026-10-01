@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — International SEO
- * Description: /services/international-seo/ (D-023 new slug) — International SEO service page. Provides [reinforce_intl]. Uses the shared kit (D-044). Hero animation "Market routing" (D-039 Step 3).
+ * Plugin Name: Reinforce Lab - International SEO
+ * Description: /services/international-seo/ (D-023 new slug) - International SEO service page. Provides [reinforce_intl]. Uses the shared kit (D-044). Hero animation "Market routing" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -14,8 +14,8 @@ function rl_intl_faqs() {
         ['What is international SEO?', 'International SEO makes sure search engines show the right language and country version of a website to each market, and that each version can rank on its own. It covers site structure, hreflang, localized content and keyword research per market, local authority, and reporting country by country.'],
         ['Should we use country domains, subdomains or subdirectories?', 'Google compares the options: country-code domains send the clearest country signal but cost more to run; subdomains are easy to separate; subdirectories on one domain are the lowest maintenance; URL parameters are not recommended. For most B2B companies we recommend subdirectories on one strong domain, unless a legal, brand or market reason points to country domains.'],
         ['What does hreflang do?', 'hreflang tells Google which pages are language or regional versions of each other, so searchers are shown the right one. Every version must list itself and all the others, using ISO language and region codes, and an x-default version can act as the fallback when no other version matches.'],
-        ['Should we redirect visitors to their country version automatically?', 'Google advises against automatically redirecting users to a different language version based on what you think their language is. Googlebot usually crawls from the USA, so automatic redirects can stop it — and users — from reaching every version. A visible language or country selector is the safer choice.'],
-        ['Can we use machine translation?', 'As a starting point, yes — but not as the finished page. Google’s spam policies list automated translation that adds little value, produced at scale, as scaled content abuse. We use translation tools for drafts and have native speakers review, adapt and localize every page that matters.'],
+        ['Should we redirect visitors to their country version automatically?', 'Google advises against automatically redirecting users to a different language version based on what you think their language is. Googlebot usually crawls from the USA, so automatic redirects can stop it (and users) from reaching every version. A visible language or country selector is the safer choice.'],
+        ['Can we use machine translation?', 'As a starting point, yes, but not as the finished page. Google’s spam policies list automated translation that adds little value, produced at scale, as scaled content abuse. We use translation tools for drafts and have native speakers review, adapt and localize every page that matters.'],
         ['Does hreflang control which version ChatGPT or Perplexity shows?', 'No AI company documents how its assistant chooses between country or language versions of a page, so no one can promise that. We implement what Google documents, keep each version clear and consistent, and check what AI tools answer in each market and language.'],
     ];
 }
@@ -23,7 +23,7 @@ function rl_intl_faqs() {
 /* industries: the 8 locked verticals (D-022), each with international SEO points (D-047) */
 function rl_intl_industries() {
     return [
-        ['pharmaceutical', 'Pharmaceutical & Life Sciences', ['Country-specific product information kept separate where approvals and labels differ', 'HCP and patient content localized with medical and regulatory review in each market', 'hreflang only between pages that are genuinely equivalent']],
+        ['pharmaceutical', 'Pharmaceutical & Life Sciences', ['Country-specific product information kept separate where approvals and labels differ', 'HCP and patient content localized with medical and regulatory review in each market', 'hreflang only between pages that are true equivalents']],
         ['healthcare', 'Healthcare', ['Services and locations presented in the languages patients use', 'Medical translations reviewed by native clinical reviewers', 'Local contact details and terms for each country']],
         ['b2b-saas', 'B2B SaaS', ['Localized landing pages, pricing and currency for each market', 'Docs and help-centre language versions paired correctly', 'Market-specific comparison and alternatives content']],
         ['ecommerce', 'E-commerce', ['Country stores with the right currency, shipping and returns', 'Products and variants mapped correctly across locales', 'Filter and sort URLs controlled in every language version']],
@@ -136,7 +136,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     $graph[] = [
         '@type' => 'Service', '@id' => $url . '#service', 'name' => 'International SEO', 'serviceType' => 'International search engine optimization',
         'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
-        'description' => 'International SEO makes sure search engines show the right language and country version of a website to each market — through site structure, hreflang, native localization, per-market keyword research, local authority and country-level reporting.',
+        'description' => 'International SEO makes sure search engines show the right language and country version of a website to each market, through site structure, hreflang, native localization, per-market keyword research, local authority and country-level reporting.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
     ];
     $graph[] = [
@@ -167,7 +167,7 @@ function rl_render_intl() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;International SEO&nbsp;<b>]</b></span>
       <h1 class="h1">Reach every market<br>in its own<br><span class="r">language.</span></h1>
-      <p class="lede"><strong>International SEO</strong> makes sure search engines show the right language and country version of your site to each market — and that every version earns rankings of its own. Reinforce Lab plans the structure, implements hreflang, localizes with native review and reports market by market, following Google's own guidance.</p>
+      <p class="lede"><strong>International SEO</strong> makes sure search engines show the right language and country version of your site to each market, and that every version earns rankings of its own. Reinforce Lab plans the structure, implements hreflang, localizes with native review and reports market by market, following Google's own guidance.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#structure">Site structures</a>
@@ -182,7 +182,7 @@ function rl_render_intl() {
 
 <section class="band alt" id="structure">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Site structure&nbsp;<b>]</b></span><h2>Country domains, subdomains or subdirectories?</h2><p class="lede">Google lists four ways to structure a multi-regional site. Each has trade-offs — this is how Google describes them.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Site structure&nbsp;<b>]</b></span><h2>Country domains, subdomains or subdirectories?</h2><p class="lede">Google lists four ways to structure a multi-regional site. Each has trade-offs; this is how Google describes them.</p></div>
     <div class="tscroll" role="region" aria-label="Comparison of international URL structures" tabindex="0">
       <table>
         <thead><tr><th scope="col">Structure</th><th scope="col">Example</th><th scope="col">Strengths (per Google)</th><th scope="col">Drawbacks (per Google)</th></tr></thead>
@@ -190,7 +190,7 @@ function rl_render_intl() {
           <tr><th scope="row">Country domain</th><td class="lvl">example.de</td><td>Clear geotargeting and easy separation; "a strong signal" of the target country; server location irrelevant</td><td>Targets one country only; more infrastructure; can be expensive or hard to get</td></tr>
           <tr><th scope="row">Subdomain</th><td class="lvl">de.example.com</td><td>Easy to set up and separate; allows different server locations</td><td>Users may not recognise the target country from the URL; separate sites to maintain</td></tr>
           <tr><th scope="row">Subdirectory</th><td class="lvl us">example.com/de/</td><td class="us">Lowest maintenance; easy to set up; same hosting</td><td class="us">Users may not recognise the target country from the URL; single server location</td></tr>
-          <tr><th scope="row">URL parameter</th><td class="lvl">example.com?loc=de</td><td>—</td><td>Not recommended by Google; hard to segment</td></tr>
+          <tr><th scope="row">URL parameter</th><td class="lvl">example.com?loc=de</td><td>n/a</td><td>Not recommended by Google; hard to segment</td></tr>
         </tbody>
       </table>
     </div>
@@ -200,12 +200,12 @@ function rl_render_intl() {
 
 <section id="hreflang">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;hreflang&nbsp;<b>]</b></span><h2>How does hreflang work?</h2><p class="lede">hreflang tells Google which pages are language or regional versions of each other, so each searcher gets the right one. Small mistakes make Google ignore it — these are the rules.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;hreflang&nbsp;<b>]</b></span><h2>How does hreflang work?</h2><p class="lede">hreflang tells Google which pages are language or regional versions of each other, so each searcher gets the right one. Small mistakes make Google ignore it. These are the rules.</p></div>
     <div class="hl">
       <ol class="rules">
-        <li><b>Every version lists every version</b><span>Each page lists itself and all its alternates. If page X links to page Y, page Y must link back — or the annotations may be ignored.</span></li>
+        <li><b>Every version lists every version</b><span>Each page lists itself and all its alternates. If page X links to page Y, page Y must link back, or the annotations may be ignored.</span></li>
         <li><b>Use valid codes</b><span>Language in ISO 639-1 (e.g. <code>de</code>), with an optional region in ISO 3166-1 Alpha 2 (e.g. <code>de-AT</code>). A region on its own is invalid.</span></li>
-        <li><b>Set a fallback</b><span><code>x-default</code> is used when no other version matches the user's language or region — often a language selector or global page.</span></li>
+        <li><b>Set a fallback</b><span><code>x-default</code> is used when no other version matches the user's language or region, often a language selector or global page.</span></li>
         <li><b>Pick one method</b><span>HTML tags, HTTP headers or the XML sitemap. Large sites usually manage hreflang in sitemaps.</span></li>
       </ol>
       <div>
@@ -229,7 +229,7 @@ function rl_render_intl() {
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"The HTML lang attribute tells Google what language a page is in."</p></div><div class="f"><span class="tag">Google says</span><p>Google uses the visible content of the page to decide its language. It doesn't use code-level language information such as lang attributes, or the URL.</p><a href="<?php echo $g('specialty/international/managing-multi-regional-sites'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Redirect visitors to their country version automatically, by IP."</p></div><div class="f"><span class="tag">Google says</span><p>Avoid automatic redirects between language versions. Googlebot usually crawls from the USA, so redirects can stop users and search engines from reaching every version.</p><a href="<?php echo $g('specialty/international/managing-multi-regional-sites'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Just set the target country in Search Console."</p></div><div class="f"><span class="tag">Google says</span><p>The International Targeting report is deprecated and country targeting is no longer supported. Google still uses hreflang.</p><a href="https://support.google.com/webmasters/answer/12474899" rel="noopener" target="_blank">Source &rarr;</a></div></div>
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Machine-translate every page — it's the fastest way to scale."</p></div><div class="f"><span class="tag">Google says</span><p>Its spam policies list automated transformations, including translating, that add little value as scaled content abuse. Translation needs real localization and review.</p><a href="<?php echo $g('essentials/spam-policies'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Machine-translate every page; it's the fastest way to scale."</p></div><div class="f"><span class="tag">Google says</span><p>Its spam policies list automated transformations, including translating, that add little value as scaled content abuse. Translation needs real localization and review.</p><a href="<?php echo $g('essentials/spam-policies'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Same-language pages for different countries will be penalised as duplicates."</p></div><div class="f"><span class="tag">Google says</span><p>For similar same-language pages across regions, pick a preferred version and use rel=canonical and hreflang so the right URL is served. Translated pages are not duplicates.</p><a href="<?php echo $g('specialty/international/localized-versions'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
     </div>
   </div>
@@ -237,24 +237,24 @@ function rl_render_intl() {
 
 <section id="check">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What we do&nbsp;<b>]</b></span><h2>What does international SEO involve?</h2><p class="lede">Nine workstreams — from deciding which markets are worth entering to proving each one pays back.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What we do&nbsp;<b>]</b></span><h2>What does international SEO involve?</h2><p class="lede">Nine workstreams, from deciding which markets are worth entering to proving each one pays back.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01 · Markets</span><h3>Market prioritisation</h3><p>Demand, competition and fit per country, so you enter the markets worth entering first.</p></div>
-      <div class="cell"><span class="n">02 · Structure</span><h3>Architecture decision</h3><p>Country domains, subdomains or subdirectories — chosen and documented with the reasons.</p></div>
-      <div class="cell"><span class="n">03 · hreflang</span><h3>Implementation &amp; QA</h3><p>Reciprocal annotations, valid codes and x-default — validated across every version.</p></div>
-      <div class="cell"><span class="n">04 · Research</span><h3>Native keyword research</h3><p>How each market actually searches — not a translation of your English keywords.</p></div>
+      <div class="cell"><span class="n">02 · Structure</span><h3>Architecture decision</h3><p>Country domains, subdomains or subdirectories, chosen and documented with the reasons.</p></div>
+      <div class="cell"><span class="n">03 · hreflang</span><h3>Implementation &amp; QA</h3><p>Reciprocal annotations, valid codes and x-default, validated across every version.</p></div>
+      <div class="cell"><span class="n">04 · Research</span><h3>Native keyword research</h3><p>How each market actually searches, not a translation of your English keywords.</p></div>
       <div class="cell"><span class="n">05 · Localization</span><h3>Native review</h3><p>Pages adapted for language, culture, units and currency, and reviewed by native speakers.</p></div>
       <div class="cell"><span class="n">06 · Authority</span><h3>Local signals</h3><p>Mentions, links and listings that matter in each market, not only at home.</p></div>
       <div class="cell"><span class="n">07 · Technical</span><h3>Per-locale technical SEO</h3><p>Sitemaps per locale, canonicals, crawlable language selectors and speed in each region.</p></div>
       <div class="cell"><span class="n">08 · Measurement</span><h3>Country-level reporting</h3><p>Search Console and analytics split by market, tied to enquiries and revenue.</p></div>
-      <div class="cell"><span class="n">09 · AI search</span><h3>AI answers per market</h3><p>What AI tools say about you in each language — observed and reported, not assumed.</p></div>
+      <div class="cell"><span class="n">09 · AI search</span><h3>AI answers per market</h3><p>What AI tools say about you in each language, observed and reported, not assumed.</p></div>
     </div>
   </div>
 </section>
 
 <section class="band alt" id="how">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does an international SEO engagement run?</h2><p class="lede">Market by market — so each launch is proven before the next one starts.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does an international SEO engagement run?</h2><p class="lede">Market by market, so each launch is proven before the next one starts.</p></div>
     <ol class="steps">
       <li class="step"><div class="k" aria-hidden="true">01</div><h3>Prioritise markets</h3><p>Score countries on demand, competition and readiness, and agree the order.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Decide the structure</h3><p>Choose the URL structure and write it down, with a redirect plan if anything moves.</p></li>
@@ -269,14 +269,14 @@ function rl_render_intl() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>Market priority model</b> — which countries to enter, in which order, and why.</li>
-      <li><b>Architecture decision record</b> — the chosen structure, alternatives and trade-offs.</li>
-      <li><b>hreflang map</b> — every page and its alternates, validated for return links and codes.</li>
-      <li><b>Native keyword research</b> — per market and language, mapped to pages.</li>
-      <li><b>Localization briefs</b> — what to adapt beyond the words, for each market.</li>
-      <li><b>Redirect &amp; migration plan</b> — for any URL that changes, tested before launch.</li>
-      <li><b>Per-locale sitemaps</b> — clean, canonical and in sync with hreflang.</li>
-      <li><b>Country dashboards</b> — impressions, clicks, enquiries and revenue by market.</li>
+      <li><b>Market priority model</b>: which countries to enter, in which order, and why.</li>
+      <li><b>Architecture decision record</b>: the chosen structure, alternatives and trade-offs.</li>
+      <li><b>hreflang map</b>: every page and its alternates, validated for return links and codes.</li>
+      <li><b>Native keyword research</b>: per market and language, mapped to pages.</li>
+      <li><b>Localization briefs</b>: what to adapt beyond the words, for each market.</li>
+      <li><b>Redirect &amp; migration plan</b>: for any URL that changes, tested before launch.</li>
+      <li><b>Per-locale sitemaps</b>: clean, canonical and in sync with hreflang.</li>
+      <li><b>Country dashboards</b>: impressions, clicks, enquiries and revenue by market.</li>
     </ul>
   </div>
 </section>
@@ -289,7 +289,7 @@ function rl_render_intl() {
       <div class="metric"><h3>Right version served</h3><p>Share of searchers landing on the version meant for their market.</p></div>
       <div class="metric"><h3>hreflang health</h3><p>Missing return links, invalid codes and orphaned versions over time.</p></div>
       <div class="metric"><h3>Indexed pages per locale</h3><p>Whether each version's important pages are actually in the index.</p></div>
-      <div class="metric"><h3>Enquiries &amp; revenue by market</h3><p>What each market brings in — the reason to be there.</p></div>
+      <div class="metric"><h3>Enquiries &amp; revenue by market</h3><p>What each market brings in: the reason to be there.</p></div>
       <div class="metric"><h3>AI answers per language</h3><p>How AI tools describe and recommend you in each market.</p></div>
     </div>
   </div>
@@ -299,15 +299,15 @@ function rl_render_intl() {
   <div class="wrap">
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
-      <h2>Translation isn't localization — and hreflang doesn't steer AI.</h2>
-      <p>A translated page that ignores how a market searches, buys and speaks rarely ranks. We research and adapt each market properly, with native review. And while Google documents how it uses hreflang, no AI company documents how its assistant picks a country version — so we don't promise it. We implement what Google documents and check what AI tools actually answer in each market.</p>
+      <h2>Translation isn't localization, and hreflang doesn't steer AI.</h2>
+      <p>A translated page that ignores how a market searches, buys and speaks rarely ranks. We research and adapt each market properly, with native review. And while Google documents how it uses hreflang, no AI company documents how its assistant picks a country version, so we don't promise it. We implement what Google documents and check what AI tools actually answer in each market.</p>
     </div>
   </div>
 </section>
 
 <section class="band alt" id="who">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is international SEO for?</h2><p class="lede">Companies selling in more than one country or language — or planning to — who need each market to perform on its own.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is international SEO for?</h2><p class="lede">Companies selling in more than one country or language (or planning to) who need each market to perform on its own.</p></div>
     <ul class="inds8">
       <?php foreach (rl_intl_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
       <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('International SEO for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
@@ -321,10 +321,10 @@ function rl_render_intl() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with international SEO?</h2><p class="lede">International SEO multiplies whatever your core site already does well. These services make sure that's a lot.</p></div>
     <div class="cols c3">
       <?php foreach ([
-          ['services/technical-seo-services', 'Foundation', 'Technical SEO', 'Crawlability, indexation and speed — the base every language version depends on.'],
+          ['services/technical-seo-services', 'Foundation', 'Technical SEO', 'Crawlability, indexation and speed: the base every language version depends on.'],
           ['services/ai-search-optimization', 'AI search', 'AI Search Optimization', 'Visibility, accuracy and recommendations across AI search, market by market.'],
           ['services/llm-optimization', 'Entity level', 'LLM Optimization', 'One consistent brand description across languages, so models don’t mix versions up.'],
-          ['services/seo-content-systems', 'Content', 'SEO Content Systems', 'Research-led, evidence-checked content produced as a system — in every language you serve.'],
+          ['services/seo-content-systems', 'Content', 'SEO Content Systems', 'Research-led, evidence-checked content produced as a system, in every language you serve.'],
           ['services/enterprise-seo-strategy', 'Scale', 'Enterprise SEO Strategy', 'Governance and priorities for large, multi-team, multi-market sites.'],
           ['services/local-seo', 'Local', 'Local SEO', 'Visibility in map results and local searches for every location you serve.'],
       ] as $r) { $l = $ex($r[0]); $in = '<span class="n">' . esc_html($r[1]) . '</span><h3>' . esc_html($r[2]) . '</h3><p>' . esc_html($r[3]) . '</p>';
@@ -347,7 +347,7 @@ function rl_render_intl() {
     <div class="final">
       <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
       <h2>Is each market seeing the right version of your site?</h2>
-      <p class="lede">The free Search Authority Diagnostic reviews your structure, hreflang and visibility market by market — and shows what to fix first.</p>
+      <p class="lede">The free Search Authority Diagnostic reviews your structure, hreflang and visibility market by market, and shows what to fix first.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('services'); ?>">All services</a>

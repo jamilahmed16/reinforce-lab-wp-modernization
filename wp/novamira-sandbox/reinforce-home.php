@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Homepage (Systems Grid)
+ * Plugin Name: Reinforce Lab - Homepage (Systems Grid)
  * Description: Long-form landing homepage for Reinforce Lab. Provides [reinforce_home]. Relies on tokens/chrome from reinforce-header.php.
  * Version: 1.1
  */
@@ -66,7 +66,7 @@ function rl_home_ge_svg() {
         return '<g class="' . $cls . '"><rect class="ge-n" x="' . $x . '" y="' . $y . '" width="150" height="40"/><rect class="ge-nl" x="' . $x . '" y="' . $y . '" width="150" height="40"/>'
             . '<text class="ge-tx" x="' . ($x + 12) . '" y="' . ($y + 17) . '">' . $h(strtoupper($l[0])) . '</text><text class="ge-tx" x="' . ($x + 12) . '" y="' . ($y + 30) . '">' . $h(strtoupper($l[1])) . '</text></g>';
     };
-    $s = '<svg viewBox="0 0 540 346" role="img" aria-labelledby="rlGeT"><title id="rlGeT">AI Growth System: five inputs (search and SERP data, content and website, competitor research, customer and social signals, AI-search visibility) feed one engine that researches, verifies, builds, automates and monitors, producing automated operations, content that ranks, citations in AI search, qualified pipeline and increased revenue — and the outcomes feed the next cycle.</title>'
+    $s = '<svg viewBox="0 0 540 346" role="img" aria-labelledby="rlGeT"><title id="rlGeT">AI Growth System: five inputs (search and SERP data, content and website, competitor research, customer and social signals, AI-search visibility) feed one engine that researches, verifies, builds, automates and monitors, producing automated operations, content that ranks, citations in AI search, qualified pipeline and increased revenue, and the outcomes feed the next cycle.</title>'
         . '<defs><linearGradient id="rlgCoreG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#990000" stop-opacity=".16"/><stop offset="1" stop-color="#990000" stop-opacity=".03"/></linearGradient></defs>';
     $edges = '';
     for ($i = 0; $i < 5; $i++) {
@@ -199,9 +199,9 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 /* ---------- FAQ data (markup + FAQPage schema share one source) ---------- */
 function rl_home_faqs() {
     return [
-        ['What is an AI Growth System?', 'An AI Growth System is a connected set of data, AI models and automated workflows that runs research, content, search visibility, lead handling and reporting as one continuous process — so growth stops depending on manual hand-offs between tools and teams. Each system is built on four layers: a data foundation (your CRM, analytics and search data), AI models for research, writing and classification, an automation layer built on tools such as Make or n8n, and a dashboard that measures business outcomes.'],
-        ['How is an AI Growth System different from hiring an agency or buying AI tools?', 'An agency bills for hours and deliverables, and each new AI tool adds another disconnected subscription. An AI Growth System is infrastructure: the research, content, search and lead workflows are built once, connected to your data, and keep improving — so your people spend their time on strategy, review and relationships instead of repetitive work.'],
-        ['What is Reinforce Lab?', 'Reinforce Lab builds AI Growth Systems that connect your website, content and organic search visibility into one growth engine — combining AI automation, AI search optimization, SEO and data-driven workflows. We run our own website, content and search operations on the same systems we build for clients.'],
+        ['What is an AI Growth System?', 'An AI Growth System is a connected set of data, AI models and automated workflows that runs research, content, search visibility, lead handling and reporting as one continuous process, so growth stops depending on manual hand-offs between tools and teams. Each system is built on four layers: a data foundation (your CRM, analytics and search data), AI models for research, writing and classification, an automation layer built on tools such as Make or n8n, and a dashboard that measures business outcomes.'],
+        ['How is an AI Growth System different from hiring an agency or buying AI tools?', 'An agency bills for hours and deliverables, and each new AI tool adds another disconnected subscription. An AI Growth System is infrastructure: the research, content, search and lead workflows are built once, connected to your data, and keep improving, so your people spend their time on strategy, review and relationships instead of repetitive work.'],
+        ['What is Reinforce Lab?', 'Reinforce Lab builds AI Growth Systems that connect your website, content and organic search visibility into one growth engine, combining AI automation, AI search optimization, SEO and data-driven workflows. We run our own website, content and search operations on the same systems we build for clients.'],
         ['Who founded Reinforce Lab?', 'Reinforce Lab was founded by <a href="https://www.linkedin.com/in/ahmedjamil16/" rel="noopener" target="_blank">Jamil Ahmed</a>, a pharmacist and Semrush Ambassador.'],
         ['Where is Reinforce Lab based?', 'Reinforce Lab has offices in Dhaka, Bangladesh and Katy, Texas, USA, and works with clients remotely.'],
         ['How do we start working together?', 'With a diagnostic of your visibility, content, workflows and demand, followed by a prioritized plan. Book a strategy call and we’ll scope it with you.'],
@@ -238,7 +238,7 @@ function rl_render_home() {
       <div>
         <span class="ey"><b>[</b>&nbsp;AI Growth Systems&nbsp;<b>]</b></span>
         <h1 class="h1">Build <span class="r">AI Growth Systems</span> to automate operations, improve search visibility, and increase revenue.</h1>
-        <p class="lede">Reinforce Lab connects your website, content, and organic search visibility into one growth engine — data-driven SEO, AI Search, and content systems built for growth-stage founders and ambitious B2B brands, engineered for measurable results.</p>
+        <p class="lede">Reinforce Lab connects your website, content, and organic search visibility into one growth engine: data-driven SEO, AI Search, and content systems built for growth-stage founders and ambitious B2B brands, engineered for measurable results.</p>
         <div class="cta-row">
           <a class="btn p" href="<?php echo esc_url($diag); ?>">Book a Strategy Call <span class="ar">&rarr;</span></a>
           <a class="btn g" href="<?php echo esc_url($svcs); ?>">Explore Services</a>
@@ -255,8 +255,8 @@ function rl_render_home() {
       <div class="head"><span class="ey"><b>[</b>&nbsp;Why AI Growth Systems&nbsp;<b>]</b></span><h2>One system. Three outcomes that move the business.</h2></div>
       <div class="cols c3">
         <div class="outcome"><div class="k">01</div><h3>Automate Operations</h3><p>Replace manual, disconnected marketing and research work with AI workflows that run continuously and scale without more headcount.</p></div>
-        <div class="outcome"><div class="k">02</div><h3>Improve Search Visibility</h3><p>Win on Google <em>and</em> AI search — SEO, GEO and AEO working together so you're found and cited where buyers now look.</p></div>
-        <div class="outcome"><div class="k">03</div><h3>Increase Revenue</h3><p>Turn visibility into qualified pipeline with content and systems engineered to convert intent, measured by business impact — not vanity metrics.</p></div>
+        <div class="outcome"><div class="k">02</div><h3>Improve Search Visibility</h3><p>Win on Google <em>and</em> AI search: SEO, GEO and AEO working together so you're found and cited where buyers now look.</p></div>
+        <div class="outcome"><div class="k">03</div><h3>Increase Revenue</h3><p>Turn visibility into qualified pipeline with content and systems engineered to convert intent, measured by business impact, not vanity metrics.</p></div>
       </div>
     </div>
   </section>
@@ -266,12 +266,12 @@ function rl_render_home() {
     <div class="wrap">
       <div class="head"><span class="ey"><b>[</b>&nbsp;What We Do&nbsp;<b>]</b></span><h2>The capabilities behind the engine.</h2><p class="lede">Adopt the full system, or start with the piece where the pain is sharpest. Each links to a deeper page.</p></div>
       <div class="cols c3">
-        <a class="cell" href="<?php echo esc_url($u('services/ai-search-optimization')); ?>"><div class="n">SEARCH</div><h3>AI Search Optimization &amp; SEO</h3><p>Enterprise, technical, international and local SEO plus AI Search Optimization — engineered as one strategy.</p></a>
-        <a class="cell" href="<?php echo esc_url($u('services/generative-engine-optimization')); ?>"><div class="n">AI SEARCH</div><h3>GEO &amp; LLM Optimization</h3><p>Be the source AI engines cite — Generative Engine Optimization and LLM optimization for ChatGPT, Perplexity, AI Overviews.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('services/ai-search-optimization')); ?>"><div class="n">SEARCH</div><h3>AI Search Optimization &amp; SEO</h3><p>Enterprise, technical, international and local SEO plus AI Search Optimization, engineered as one strategy.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('services/generative-engine-optimization')); ?>"><div class="n">AI SEARCH</div><h3>GEO &amp; LLM Optimization</h3><p>Be the source AI engines cite: Generative Engine Optimization and LLM optimization for ChatGPT, Perplexity, AI Overviews.</p></a>
         <a class="cell" href="<?php echo esc_url($u('services/seo-content-systems')); ?>"><div class="n">CONTENT</div><h3>SEO Content Systems</h3><p>Research-led, evidence-verified content produced and QA'd as a system, not a one-off quota.</p></a>
         <a class="cell" href="<?php echo esc_url($u('services/ai-workflow-automation')); ?>"><div class="n">AUTOMATE</div><h3>AI Workflow &amp; Marketing Automation</h3><p>Automate repetitive operations and marketing processes with reliable, monitored AI workflows.</p></a>
         <a class="cell" href="<?php echo esc_url($u('services/lead-generation-systems')); ?>"><div class="n">GROWTH</div><h3>Lead Generation Systems</h3><p>Scalable systems that turn organic visibility into qualified, trackable pipeline.</p></a>
-        <a class="cell" href="<?php echo esc_url($u('services/executive-ai-consulting')); ?>"><div class="n">ADVISORY</div><h3>Executive AI Consulting</h3><p>Architect the system, define what matters, and run the plays — with human judgment in the loop.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('services/executive-ai-consulting')); ?>"><div class="n">ADVISORY</div><h3>Executive AI Consulting</h3><p>Architect the system, define what matters, and run the plays, with human judgment in the loop.</p></a>
       </div>
       <div class="cta-row"><a class="btn g" href="<?php echo esc_url($svcs); ?>">See all services <span class="ar">&rarr;</span></a></div>
     </div>
@@ -282,10 +282,10 @@ function rl_render_home() {
     <div class="wrap">
       <div class="head"><span class="ey"><b>[</b>&nbsp;The Problem&nbsp;<b>]</b></span><h2>Growth stalls when marketing, search and operations run apart.</h2><p class="lede">Your website, content, search visibility, CRM and team workflows each live in their own tool. Every hand-off is manual, every report is stitched together by hand, and nobody can see which effort actually produces revenue.</p></div>
       <div class="pains">
-        <div class="pain"><span class="x" aria-hidden="true">&#10005;</span><p><b>Manual work eats the week.</b> Reporting, briefs, follow-ups and publishing still run on copy-paste — time your team should spend on decisions.</p></div>
-        <div class="pain"><span class="x" aria-hidden="true">&#10005;</span><p><b>Search visibility is fragmenting.</b> Buyers now research in Google, ChatGPT, Perplexity and AI Overviews. Most growth plans still measure only one of them.</p></div>
-        <div class="pain"><span class="x" aria-hidden="true">&#10005;</span><p><b>Leads leak between systems.</b> Traffic arrives and forms get filled — then nothing connects the visit to the pipeline or the next action.</p></div>
-        <div class="pain"><span class="x" aria-hidden="true">&#10005;</span><p><b>Reports describe activity, not revenue.</b> Rankings and traffic charts say little about what is actually growing the business.</p></div>
+        <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Manual work eats the week.</b> Reporting, briefs, follow-ups and publishing still run on copy-paste. That is time your team should spend on decisions.</p></div>
+        <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Search visibility is fragmenting.</b> Buyers now research in Google, ChatGPT, Perplexity and AI Overviews. Most growth plans still measure only one of them.</p></div>
+        <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Leads leak between systems.</b> Traffic arrives and forms get filled, then nothing connects the visit to the pipeline or the next action.</p></div>
+        <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Reports describe activity, not revenue.</b> Rankings and traffic charts say little about what is actually growing the business.</p></div>
       </div>
     </div>
   </section>
@@ -293,12 +293,12 @@ function rl_render_home() {
   <!-- SYSTEM / HOW -->
   <section>
     <div class="wrap">
-      <div class="head"><span class="ey"><b>[</b>&nbsp;How it works&nbsp;<b>]</b></span><h2>How an AI Growth System is built.</h2><p class="lede">Every system connects four layers — your data, AI models, automated workflows and a revenue dashboard. We build it in four stages, run as one loop, whether we start with search, content, automation or lead generation.</p></div>
+      <div class="head"><span class="ey"><b>[</b>&nbsp;How it works&nbsp;<b>]</b></span><h2>How an AI Growth System is built.</h2><p class="lede">Every system connects four layers: your data, AI models, automated workflows and a revenue dashboard. We build it in four stages, run as one loop, whether we start with search, content, automation or lead generation.</p></div>
       <ol class="steps" style="list-style:none;margin:0;padding:0">
         <li class="step"><div class="k" aria-hidden="true">01</div><h3>Diagnose</h3><p>Map your website, search visibility, content, workflows and funnel. Find where time, traffic and revenue are being lost.</p></li>
         <li class="step"><div class="k" aria-hidden="true">02</div><h3>Architect</h3><p>Design the system: which workflows to automate, which searches to own, and which data feeds which decision.</p></li>
-        <li class="step"><div class="k" aria-hidden="true">03</div><h3>Build &amp; Automate</h3><p>Implement the workflows, pages, content engines and integrations — with human approval where it matters.</p></li>
-        <li class="step"><div class="k" aria-hidden="true">04</div><h3>Measure &amp; Improve</h3><p>Track business outcomes — hours saved, qualified pipeline, visibility in Google and AI search — and tune the system every cycle.</p></li>
+        <li class="step"><div class="k" aria-hidden="true">03</div><h3>Build &amp; Automate</h3><p>Implement the workflows, pages, content engines and integrations, with human approval where it matters.</p></li>
+        <li class="step"><div class="k" aria-hidden="true">04</div><h3>Measure &amp; Improve</h3><p>Track business outcomes: hours saved, qualified pipeline, visibility in Google and AI search, and tune the system every cycle.</p></li>
       </ol>
     </div>
   </section>
@@ -314,7 +314,7 @@ function rl_render_home() {
         <a class="cell" href="<?php echo esc_url($u('industries/ecommerce')); ?>"><div class="who">Conversion</div><h3>E-commerce</h3><p>Catalog content and search visibility measured against orders, not traffic.</p></a>
         <a class="cell" href="<?php echo esc_url($u('industries/manufacturing')); ?>"><div class="who">Technical</div><h3>Manufacturing</h3><p>Make technical capability findable and route RFQs to the right team faster.</p></a>
         <a class="cell" href="<?php echo esc_url($u('industries/technology')); ?>"><div class="who">Complex sale</div><h3>Technology</h3><p>Content and lead systems for multi-stakeholder buying committees.</p></a>
-        <a class="cell" href="<?php echo esc_url($u('industries/professional-services')); ?>"><div class="who">Referral</div><h3>Professional Services</h3><p>Authority and lead capture for firms — including finance, legal and consulting.</p></a>
+        <a class="cell" href="<?php echo esc_url($u('industries/professional-services')); ?>"><div class="who">Referral</div><h3>Professional Services</h3><p>Authority and lead capture for firms, including finance, legal and consulting.</p></a>
         <a class="cell" href="<?php echo esc_url($u('industries/education')); ?>"><div class="who">Enrollment</div><h3>Education</h3><p>Program visibility and enquiry automation across the full enrollment cycle.</p></a>
       </div>
     </div>
@@ -327,7 +327,7 @@ function rl_render_home() {
         <div>
           <div class="tag">[ Flagship Product ]</div>
           <h2>Search Authority OS</h2>
-          <p class="lede">Our flagship AI system that continuously researches your market, verifies every claim against real evidence, produces high-value content, and monitors your visibility across Google and AI search — then improves itself over time.</p>
+          <p class="lede">Our flagship AI system that continuously researches your market, verifies every claim against real evidence, produces high-value content, and monitors your visibility across Google and AI search, then improves itself over time.</p>
           <div class="cta-row">
             <a class="btn p" href="<?php echo esc_url($os); ?>">Explore Search Authority OS <span class="ar">&rarr;</span></a>
             <a class="btn g" href="<?php echo esc_url($pkg); ?>">See packages</a>
@@ -345,7 +345,7 @@ function rl_render_home() {
   <!-- PROOF -->
   <section class="band alt">
     <div class="wrap">
-      <div class="head"><span class="ey"><b>[</b>&nbsp;Proof&nbsp;<b>]</b></span><h2>We run this system on ourselves.</h2><p class="lede">Reinforce Lab is its own R&amp;D lab. Your diagnostic establishes your real baseline — no borrowed numbers, no invented results.</p></div>
+      <div class="head"><span class="ey"><b>[</b>&nbsp;Proof&nbsp;<b>]</b></span><h2>We run this system on ourselves.</h2><p class="lede">Reinforce Lab is its own R&amp;D lab. Your diagnostic establishes your real baseline: no borrowed numbers, no invented results.</p></div>
       <div class="proof">
         <div class="stat"><div class="fig"><span class="ph">Your baseline</span></div><div class="lab">Organic visibility today</div></div>
         <div class="stat"><div class="fig"><span class="ph">Your gap</span></div><div class="lab">AI-search presence</div></div>
@@ -356,10 +356,10 @@ function rl_render_home() {
     </div>
   </section>
 
-  <!-- PACKAGES (teaser — detail lives on /packages/ and /search-authority-os/) -->
+  <!-- PACKAGES (teaser: detail lives on /packages/ and /search-authority-os/) -->
   <section>
     <div class="wrap">
-      <div class="head"><span class="ey"><b>[</b>&nbsp;Packages&nbsp;<b>]</b></span><h2>Start with a diagnostic. Scale when it's working.</h2><p class="lede">Three engagement levels — <b style="color:var(--ink)">Foundation</b>, <b style="color:var(--ink)">Growth OS</b> and <b style="color:var(--ink)">Enterprise</b> — from a focused starting system to full enterprise governance. Every engagement begins with a diagnostic, and pricing is set to scope. Engagements start from $5,000 setup.</p>
+      <div class="head"><span class="ey"><b>[</b>&nbsp;Packages&nbsp;<b>]</b></span><h2>Start with a diagnostic. Scale when it's working.</h2><p class="lede">Three engagement levels: <b style="color:var(--ink)">Foundation</b>, <b style="color:var(--ink)">Growth OS</b> and <b style="color:var(--ink)">Enterprise</b>, from a focused starting system to full enterprise governance. Every engagement begins with a diagnostic, and pricing is set to scope. Engagements start from $5,000 setup.</p>
         <div class="cta-row"><a class="btn p" href="<?php echo esc_url($pkg); ?>">Compare packages <span class="ar">&rarr;</span></a><a class="btn g" href="<?php echo esc_url($diag); ?>">Get your diagnostic</a></div>
       </div>
     </div>
@@ -397,9 +397,9 @@ function rl_render_home() {
           wp_reset_postdata();
         } else {
           $ph = array(
-            array('AI Search','How to get cited by ChatGPT, Perplexity &amp; AI Overviews','The playbook for showing up inside AI answers — the structure, evidence and entity signals that get you referenced, not just ranked.'),
-            array('GEO','GEO vs SEO: what actually changes for 2026','Generative Engine Optimization is not a rebrand of SEO. Here is what is genuinely different — and what still matters more than ever.'),
-            array('Evidence','Building an evidence layer for regulated content','Why "no source, no claim" is becoming table stakes — and how to operationalize verification at scale without slowing the team down.'),
+            array('AI Search','How to get cited by ChatGPT, Perplexity &amp; AI Overviews','The playbook for showing up inside AI answers: the structure, evidence and entity signals that get you referenced, not just ranked.'),
+            array('GEO','GEO vs SEO: what actually changes for 2026','Generative Engine Optimization is not a rebrand of SEO. What changes, what stays the same, and where to put your effort first.'),
+            array('Evidence','Building an evidence layer for regulated content','Why "no source, no claim" is now the standard for regulated content, and how to check every claim without slowing the team down.'),
           );
           foreach ($ph as $p) { ?>
           <div class="cell pcard">
@@ -423,7 +423,7 @@ function rl_render_home() {
       <div class="final">
         <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
         <h2>Find out what's limiting your growth.</h2>
-        <p class="lede center">A data-backed diagnostic of your Google visibility, AI-search presence, content authority, competitors and demand — with a clear 90-day plan. No generic scorecard.</p>
+        <p class="lede center">A data-backed diagnostic of your Google visibility, AI-search presence, content authority, competitors and demand, with a clear 90-day plan. No generic scorecard.</p>
         <div class="cta-row">
           <a class="btn p" href="<?php echo esc_url($diag); ?>">Book a Strategy Call <span class="ar">&rarr;</span></a>
           <a class="btn g" href="<?php echo esc_url($pkg); ?>">Compare packages</a>

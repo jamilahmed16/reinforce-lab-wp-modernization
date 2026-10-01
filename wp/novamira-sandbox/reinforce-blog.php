@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Blog archive template
+ * Plugin Name: Reinforce Lab - Blog archive template
  * Description: The single archive template for /blog/ (posts page) and every category, tag, author and date archive. F-001 by design: ONE loop, bound to the main query, core pagination (/page/N/ only), and no Beaver Themer archive layout at all, so no location can be targeted twice. Requests carrying Beaver Builder's `flpaged` var (/paged-N/M/ junk) get a 410. Paginated archives (page 2+) are noindex,follow (disposition sheet: KEEP-noindex). Uses the shared kit (D-044). No hero animation (Blog is excluded, D-039).
  * Version: 1.0
  */
@@ -88,7 +88,7 @@ function rl_blog_heading() {
         $label = is_day() ? get_the_date('j F Y') : (is_month() ? get_the_date('F Y') : get_the_date('Y'));
         return ['Archive', ['Articles from', $label], 'Everything Reinforce Lab published in ' . $label . '.'];
     }
-    return ['Blog', ['Insights on AI', 'growth systems', '<r>and search.</r>'], '<strong>The Reinforce Lab blog</strong> covers SEO, AI search, content systems and automation — practical articles for growth-stage founders and B2B teams who want search to drive revenue.'];
+    return ['Blog', ['Insights on AI', 'growth systems', '<r>and search.</r>'], '<strong>The Reinforce Lab blog</strong> covers SEO, AI search, content systems and automation: practical articles for growth-stage founders and B2B teams who want search to drive revenue.'];
 }
 
 /* ---------- render: one loop, the main query, core pagination ---------- */

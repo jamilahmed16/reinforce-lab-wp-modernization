@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — SEO & AI Search Audit
- * Description: /services/seo-ai-search-audit/ (approved new URL, D-006; paid one-time audit in the D-016 funnel: free diagnostic → paid audit → packages) — service page. Provides [reinforce_audit]. Uses the shared kit (D-044). Hero animation "Audit sweep" (D-039 Step 3).
+ * Plugin Name: Reinforce Lab - SEO & AI Search Audit
+ * Description: /services/seo-ai-search-audit/ (approved new URL, D-006; paid one-time audit in the D-016 funnel: free diagnostic → paid audit → packages) - service page. Provides [reinforce_audit]. Uses the shared kit (D-044). Hero animation "Audit sweep" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -12,12 +12,12 @@ function rl_is_audit() { return is_page('seo-ai-search-audit'); }
 function rl_audit_faqs() {
     return [
         ['What is an SEO & AI Search Audit?', 'The SEO & AI Search Audit is a one-time, in-depth review of a website’s technical health, content, authority, competitors and visibility in Google and AI search. It is carried out by people rather than exported from a tool, and delivered as a written report, a prioritised fix register and a roadmap your team can act on.'],
-        ['How is it different from the free Search Authority Diagnostic?', 'The free diagnostic is a focused read of where you stand and what to do next. The audit is the full, paid analysis: every important page and template, your competitors, and a documented test of your AI search visibility — with evidence behind each finding.'],
+        ['How is it different from the free Search Authority Diagnostic?', 'The free diagnostic is a focused read of where you stand and what to do next. The audit is the full, paid analysis: every important page and template, your competitors, and a documented test of your AI search visibility, with evidence behind each finding.'],
         ['Is the audit just an automated tool report?', 'No. We use crawlers and data tools to collect information, but people review every finding, check the evidence, remove false alarms and decide the priorities. Each issue in the fix register says what we found, why it matters and how to confirm it has been fixed.'],
         ['How do you test AI search visibility?', 'We agree a fixed set of buyer questions with you, run each one on each AI search tool we cover, and record the tool, date, location, language, whether you were mentioned or cited, and which sources were used. Because AI answers vary, we repeat the runs and report the results as dated observations, not guarantees.'],
         ['What do you need from us?', 'Read-only access to Google Search Console and Google Analytics, a list of your main competitors and markets, and a short call about your goals. Access to your CMS is optional and only needed for a deeper technical review.'],
         ['How much does the audit cost, and how long does it take?', 'The SEO & AI Search Audit starts from $2,500 for a standard website and is delivered within 10 business days once access and scope are confirmed, followed by a 60-minute walkthrough. Large, multi-market or very large sites are quoted after scoping. If you start a Search Authority OS package within 60 days, the full audit fee is credited toward it.'],
-        ['Do you fix the issues too?', 'The audit is a one-time analysis and plan. You can implement it in-house — the fix register is written for developers and content teams — or we can implement it through our services or a Search Authority OS package.'],
+        ['Do you fix the issues too?', 'The audit is a one-time analysis and plan. You can implement it in-house: the fix register is written for developers and content teams, or we can implement it through our services or a Search Authority OS package.'],
     ];
 }
 
@@ -222,7 +222,7 @@ function rl_render_audit() {
 
 <section class="band alt" id="compare">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Where it fits&nbsp;<b>]</b></span><h2>Diagnostic, audit or package — which do you need?</h2><p class="lede">Three steps, each a bigger commitment than the last. Most teams start with the free diagnostic.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Where it fits&nbsp;<b>]</b></span><h2>Diagnostic, audit or package: which do you need?</h2><p class="lede">Three steps, each a bigger commitment than the last. Most teams start with the free diagnostic.</p></div>
     <div class="tscroll" role="region" aria-label="Comparison of the free diagnostic, the audit and the packages" tabindex="0">
       <table>
         <thead><tr><th scope="col">&nbsp;</th><th scope="col">Search Authority Diagnostic</th><th scope="col" class="us">SEO &amp; AI Search Audit</th><th scope="col">Search Authority OS packages</th></tr></thead>
@@ -230,7 +230,7 @@ function rl_render_audit() {
           <tr><th scope="row">What it is</th><td>A focused read of where you stand</td><td class="us">The full, one-time analysis and plan</td><td>An ongoing system that researches, writes, audits and monitors</td></tr>
           <tr><th scope="row">Depth</th><td>Seven layers, headline findings</td><td class="us">Every important page and template, competitors and a documented AI-visibility test</td><td>Continuous, month after month</td></tr>
           <tr><th scope="row">You get</th><td>Your biggest gaps and the next step</td><td class="us">Report, fix register, roadmap and a walkthrough</td><td>Content, fixes and reporting delivered for you</td></tr>
-          <tr><th scope="row">Cost</th><td class="hl">Free</td><td class="us">From $2,500 — credited toward a package within 60 days</td><td>From $5,000 setup</td></tr>
+          <tr><th scope="row">Cost</th><td class="hl">Free</td><td class="us">From $2,500, credited toward a package within 60 days</td><td>From $5,000 setup</td></tr>
           <tr><th scope="row">Start</th><td><a href="<?php echo $diag; ?>">Request &rarr;</a></td><td class="us">You are here</td><td><a href="<?php echo $pkg; ?>">Compare &rarr;</a></td></tr>
         </tbody>
       </table>
@@ -240,16 +240,16 @@ function rl_render_audit() {
 
 <section id="covers">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What we review&nbsp;<b>]</b></span><h2>What does the audit cover?</h2><p class="lede">Nine areas, reviewed together — because a content problem is often a technical problem, and an AI-visibility problem is often an authority problem.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What we review&nbsp;<b>]</b></span><h2>What does the audit cover?</h2><p class="lede">Nine areas, reviewed together, because a content problem is often a technical problem, and an AI-visibility problem is often an authority problem.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01 · Technical</span><h3>Technical foundation</h3><p>Crawling, indexing, rendering, architecture, redirects, sitemaps and Core Web Vitals.</p></div>
       <div class="cell"><span class="n">02 · Content</span><h3>Content &amp; topical depth</h3><p>What you cover, what's thin or duplicated, what's missing, and where pages compete with each other.</p></div>
       <div class="cell"><span class="n">03 · Authority</span><h3>Links &amp; mentions</h3><p>Who links to you and mentions you, how that compares with competitors, and risky links.</p></div>
-      <div class="cell"><span class="n">04 · AI search</span><h3>AI search visibility</h3><p>Whether AI tools mention, cite and describe you correctly — tested with a documented method.</p></div>
+      <div class="cell"><span class="n">04 · AI search</span><h3>AI search visibility</h3><p>Whether AI tools mention, cite and describe you correctly, tested with a documented method.</p></div>
       <div class="cell"><span class="n">05 · Entity</span><h3>Brand &amp; entity accuracy</h3><p>Consistency of your name, description and profiles, and errors AI tools repeat.</p></div>
       <div class="cell"><span class="n">06 · Competitors</span><h3>Competitor benchmark</h3><p>Where named competitors win in Google and AI answers, and why.</p></div>
       <div class="cell"><span class="n">07 · Demand</span><h3>Search demand &amp; gaps</h3><p>The high-value questions and queries you're not yet capturing.</p></div>
-      <div class="cell"><span class="n">08 · Local &amp; global</span><h3>Local and international</h3><p>Listings, location pages, hreflang and country versions — where they apply.</p></div>
+      <div class="cell"><span class="n">08 · Local &amp; global</span><h3>Local and international</h3><p>Listings, location pages, hreflang and country versions, where they apply.</p></div>
       <div class="cell"><span class="n">09 · Measurement</span><h3>Tracking you can trust</h3><p>Search Console, analytics and conversion tracking checked, so progress can be measured.</p></div>
     </div>
   </div>
@@ -257,7 +257,7 @@ function rl_render_audit() {
 
 <section class="band alt" id="ai-method">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;How we test AI visibility&nbsp;<b>]</b></span><h2>How do you measure AI search visibility properly?</h2><p class="lede">Asking ChatGPT one question once proves nothing — answers change between sessions. This is the method we use, and every result is logged.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;How we test AI visibility&nbsp;<b>]</b></span><h2>How do you measure AI search visibility properly?</h2><p class="lede">Asking ChatGPT one question once proves nothing. Answers change between sessions. This is the method we use, and every result is logged.</p></div>
     <ol class="method-ai">
       <li><h3>Fix the questions</h3><p>Agree a set of real buyer questions with you before testing starts.</p></li>
       <li><h3>Run every engine</h3><p>Ask each question on each AI search tool in scope.</p></li>
@@ -268,7 +268,7 @@ function rl_render_audit() {
 prompt <b>"best technical SEO partner for a B2B SaaS company"</b>
 mentioned <i>no</i>   cited <i>no</i>   sources <b>3 competitors · 1 directory · 1 forum</b>
 note   repeat run 2/3 · same result · competitor cited from a comparison page</pre>
-    <p class="src">Illustrative example of the log format — not a real client result.</p>
+    <p class="src">Illustrative example of the log format, not a real client result.</p>
   </div>
 </section>
 
@@ -276,14 +276,14 @@ note   repeat run 2/3 · same result · competitor cited from a comparison page<
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>Written report</b> — findings in plain language, with the evidence behind each one.</li>
-      <li><b>Fix register</b> — every issue with severity, effort, owner and how to confirm it's fixed.</li>
-      <li><b>Prioritised roadmap</b> — what to do first, next and later.</li>
-      <li><b>AI visibility log</b> — every prompt test, with engine, date, sources and result.</li>
-      <li><b>Competitor benchmark</b> — where named competitors win, in Google and in AI answers.</li>
-      <li><b>Opportunity map</b> — the content and pages worth creating or improving.</li>
-      <li><b>Measurement check</b> — what your tracking can and can't tell you today.</li>
-      <li><b>60-minute walkthrough</b> — we take your team through the findings and answer questions.</li>
+      <li><b>Written report</b>: findings in plain language, with the evidence behind each one.</li>
+      <li><b>Fix register</b>: every issue with severity, effort, owner and how to confirm it's fixed.</li>
+      <li><b>Prioritised roadmap</b>: what to do first, next and later.</li>
+      <li><b>AI visibility log</b>: every prompt test, with engine, date, sources and result.</li>
+      <li><b>Competitor benchmark</b>: where named competitors win, in Google and in AI answers.</li>
+      <li><b>Opportunity map</b>: the content and pages worth creating or improving.</li>
+      <li><b>Measurement check</b>: what your tracking can and can't tell you today.</li>
+      <li><b>60-minute walkthrough</b>: we take your team through the findings and answer questions.</li>
     </ul>
   </div>
 </section>
@@ -311,24 +311,24 @@ note   repeat run 2/3 · same result · competitor cited from a comparison page<
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Access &amp; data</h3><p>Read-only access to Search Console and analytics; CMS access only if needed.</p></li>
       <li class="step"><div class="k" aria-hidden="true">03</div><h3>Crawl &amp; research</h3><p>Crawl the site, test AI visibility and research demand and competitors.</p></li>
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Analyse &amp; verify</h3><p>People review every finding, check the evidence and set the priorities.</p></li>
-      <li class="step"><div class="k" aria-hidden="true">05</div><h3>Report &amp; walkthrough</h3><p>Deliver the report, fix register and roadmap — and walk your team through them.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">05</div><h3>Report &amp; walkthrough</h3><p>Deliver the report, fix register and roadmap, and walk your team through them.</p></li>
     </ol>
   </div>
 </section>
 
 <section class="band alt" id="isnt">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Clear boundaries&nbsp;<b>]</b></span><h2>What is — and isn't — in the audit?</h2></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Clear boundaries&nbsp;<b>]</b></span><h2>What is (and isn't) in the audit?</h2></div>
     <div class="isnt">
       <div class="yes"><h3>The audit is</h3><ul><li>A human-led analysis, with tools used to collect data</li><li>Evidence-backed: every finding shows what we saw and where</li><li>Prioritised by impact and effort</li><li>Written for the people who will fix things</li><li>Yours to keep and use in-house</li></ul></div>
-      <div class="no"><h3>The audit isn't</h3><ul><li>An automated tool export with your logo on it</li><li>A promise of rankings or AI citations — nobody can honestly make one</li><li>Implementation — that's a separate service if you want it</li><li>A sales call in disguise — the plan stands on its own</li></ul></div>
+      <div class="no"><h3>The audit isn't</h3><ul><li>An automated tool export with your logo on it</li><li>A promise of rankings or AI citations: nobody can honestly make one</li><li>Implementation: that's a separate service if you want it</li><li>A sales call in disguise: the plan stands on its own</li></ul></div>
     </div>
   </div>
 </section>
 
 <section id="who">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is the audit for?</h2><p class="lede">Teams that need the full picture before they commit budget — after a traffic drop, before a redesign or migration, or when AI tools ignore them.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is the audit for?</h2><p class="lede">Teams that need the full picture before they commit budget: after a traffic drop, before a redesign or migration, or when AI tools ignore them.</p></div>
     <ul class="inds8">
       <?php foreach (rl_audit_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
       <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('SEO & AI Search Audit for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
@@ -342,12 +342,12 @@ note   repeat run 2/3 · same result · competitor cited from a comparison page<
     <div class="head"><span class="ey"><b>[</b>&nbsp;After the audit&nbsp;<b>]</b></span><h2>Who can fix what the audit finds?</h2><p class="lede">Implement it yourself, or hand any part of the plan to the service built for it.</p></div>
     <div class="cols c3">
       <?php foreach ([
-          ['services/technical-seo-services', 'Technical', 'Technical SEO', 'Crawlability, indexation, speed and structured data — fixed and verified.'],
+          ['services/technical-seo-services', 'Technical', 'Technical SEO', 'Crawlability, indexation, speed and structured data, fixed and verified.'],
           ['services/ai-search-optimization', 'AI search', 'AI Search Optimization', 'Visibility, accuracy and recommendations across AI search.'],
           ['services/seo-content-systems', 'Content', 'SEO Content Systems', 'Research-led, evidence-checked content produced as a system.'],
           ['services/llm-optimization', 'Entity level', 'LLM Optimization', 'Consistent brand facts so AI tools describe you correctly.'],
           ['services/local-seo', 'Local', 'Local SEO', 'Listings, reviews and location pages for every place you serve.'],
-          ['packages', 'Everything', 'Search Authority OS packages', 'The full system, run month after month — from $5,000 setup.'],
+          ['packages', 'Everything', 'Search Authority OS packages', 'The full system, run month after month, from $5,000 setup.'],
       ] as $r) { $l = $ex($r[0]); $in = '<span class="n">' . esc_html($r[1]) . '</span><h3>' . esc_html($r[2]) . '</h3><p>' . esc_html($r[3]) . '</p>';
           echo $l ? '<a class="cell" href="' . $l . '">' . $in . '<span class="more">Explore &rarr;</span></a>' : '<div class="cell">' . $in . '</div>'; } ?>
     </div>

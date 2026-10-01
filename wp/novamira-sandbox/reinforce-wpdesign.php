@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — WordPress Website Design
- * Description: /services/wordpress-website-design-service/ (production URL kept, D-023; 281,585 impressions / 16 months; WooCommerce web-design product URLs 301 here) — WordPress Website Design service page. Provides [reinforce_wpdesign]. Uses the shared kit (D-044). Hero animation "Wireframe to launch" (D-039 Step 3).
+ * Plugin Name: Reinforce Lab - WordPress Website Design
+ * Description: /services/wordpress-website-design-service/ (production URL kept, D-023; 281,585 impressions / 16 months; WooCommerce web-design product URLs 301 here) - WordPress Website Design service page. Provides [reinforce_wpdesign]. Uses the shared kit (D-044). Hero animation "Wireframe to launch" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -11,11 +11,11 @@ function rl_is_wpd() { return is_page('wordpress-website-design-service'); }
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_wpd_faqs() {
     return [
-        ['What do WordPress website design services include?', 'A WordPress website design service plans, designs and builds a website on WordPress: discovery and sitemap, wireframes, visual design, content, development, SEO foundations, performance, accessibility, integrations with your CRM and analytics, testing and launch — plus training so your team can edit the site themselves.'],
+        ['What do WordPress website design services include?', 'A WordPress website design service plans, designs and builds a website on WordPress: discovery and sitemap, wireframes, visual design, content, development, SEO foundations, performance, accessibility, integrations with your CRM and analytics, testing and launch, plus training so your team can edit the site themselves.'],
         ['Why build on WordPress?', 'WordPress runs 40.2% of all websites (W3Techs, September 2026), so it is well supported, flexible and not tied to one agency. Your team can update content without a developer, and the site can grow from a few pages to thousands.'],
-        ['Will a redesign hurt our rankings?', 'It can, if URLs change without a plan. We keep URLs wherever possible, map every changed URL to its closest new page with a permanent redirect, test everything on a staging site, and monitor Search Console after launch. Google recommends keeping redirects for as long as possible — generally at least a year.'],
+        ['Will a redesign hurt our rankings?', 'It can, if URLs change without a plan. We keep URLs wherever possible, map every changed URL to its closest new page with a permanent redirect, test everything on a staging site, and monitor Search Console after launch. Google recommends keeping redirects for as long as possible, generally at least a year.'],
         ['How fast will the site be?', 'We build to Google’s Core Web Vitals: Largest Contentful Paint within 2.5 seconds, Interaction to Next Paint of 200 milliseconds or less, and Cumulative Layout Shift of 0.1 or less, measured at the 75th percentile of real visits. We check against these before launch and monitor them after.'],
-        ['Will the site be accessible?', 'We design and test to WCAG 2.2 level AA — the W3C’s current accessibility guidelines. If you sell to consumers online in the EU, the European Accessibility Act has applied to e-commerce services since 28 June 2025. This is not legal advice.'],
+        ['Will the site be accessible?', 'We design and test to WCAG 2.2 level AA, the W3C’s current accessibility guidelines. If you sell to consumers online in the EU, the European Accessibility Act has applied to e-commerce services since 28 June 2025. This is not legal advice.'],
         ['How much does a WordPress website cost?', 'It depends on the number of page templates, how much content needs writing or moving, the integrations you need and whether an existing site is being migrated. After a discovery call you get a written scope and quote.'],
     ];
 }
@@ -35,15 +35,15 @@ function rl_wpd_industries() {
 }
 
 /* ---------- hero animation: Wireframe to launch ----------
-   A page is planned as a wireframe inside a browser frame, then designed — header, hero, button, cards
-   and footer fill in — and finally passes the launch checks: Core Web Vitals, accessibility, the redirect
+   A page is planned as a wireframe inside a browser frame, then designed - header, hero, button, cards
+   and footer fill in - and finally passes the launch checks: Core Web Vitals, accessibility, the redirect
    map and SEO; plan · design · build · launch light in turn. 10 s loop, soft fade, reset. */
 function rl_wp_svg() {
     $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlWpT"><title id="rlWpT">A website is wireframed, designed and built in WordPress, then passes launch checks for speed, accessibility, redirects and SEO.</title>';
     $s .= '<rect class="p-fr" x="0" y="0" width="320" height="320"/><line class="p-rule" x1="0" y1="26" x2="320" y2="26"/>';
     foreach ([0, 1, 2] as $i) $s .= '<rect class="p-dot" x="' . (10 + $i * 12) . '" y="9" width="8" height="8"/>';
     $s .= '<rect class="p-url" x="56" y="7" width="190" height="12"/><text class="p-ut" x="64" y="16">YOURDOMAIN.COM</text>';
-    /* blocks: [class, x, y, w, h] — wireframe outline, then design fill */
+    /* blocks: [class, x, y, w, h] - wireframe outline, then design fill */
     $blk = [['b0', 14, 38, 292, 22], ['b1', 14, 70, 292, 96], ['b2', 14, 178, 90, 64], ['b3', 115, 178, 90, 64], ['b4', 216, 178, 90, 64], ['b5', 14, 254, 292, 52]];
     foreach ($blk as $i => $b) {
         $s .= '<rect class="p-wf p-w' . $i . '" pathLength="100" x="' . $b[1] . '" y="' . $b[2] . '" width="' . $b[3] . '" height="' . $b[4] . '"/><rect class="p-fill p-d' . $i . '" x="' . $b[1] . '" y="' . $b[2] . '" width="' . $b[3] . '" height="' . $b[4] . '"/>';
@@ -160,7 +160,7 @@ function rl_render_wpdesign() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;WordPress Website Design&nbsp;<b>]</b></span>
       <h1 class="h1">WordPress sites<br>built to rank<br><span class="r">and convert.</span></h1>
-      <p class="lede"><strong>WordPress website design services</strong> from Reinforce Lab plan, design and build fast, accessible WordPress sites that your team can edit and Google can crawl — with your search rankings protected through every redesign and migration. WordPress runs 40.2% of all websites; we make yours one that brings in qualified leads.</p>
+      <p class="lede"><strong>WordPress website design services</strong> from Reinforce Lab plan, design and build fast, accessible WordPress sites that your team can edit and Google can crawl, with your search rankings protected through every redesign and migration. WordPress runs 40.2% of all websites; we make yours one that brings in qualified leads.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#redesign">Redesign safely</a>
@@ -175,11 +175,11 @@ function rl_render_wpdesign() {
 
 <section class="band alt" id="what">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What's included&nbsp;<b>]</b></span><h2>What do our WordPress website design services include?</h2><p class="lede">Everything from the first sitemap to the first month after launch — designed around how your buyers search and decide.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What's included&nbsp;<b>]</b></span><h2>What do our WordPress website design services include?</h2><p class="lede">Everything from the first sitemap to the first month after launch, designed around how your buyers search and decide.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01 · Discovery</span><h3>Goals, audience &amp; sitemap</h3><p>What the site must achieve, who it's for, and the pages and structure that get them there.</p></div>
       <div class="cell"><span class="n">02 · UX</span><h3>Wireframes &amp; journeys</h3><p>Page layouts and paths to enquiry, tested before any design polish.</p></div>
-      <div class="cell"><span class="n">03 · Design</span><h3>Custom visual design</h3><p>A design system built on your brand — not a theme with your logo on it.</p></div>
+      <div class="cell"><span class="n">03 · Design</span><h3>Custom visual design</h3><p>A design system built on your brand, not a theme with your logo on it.</p></div>
       <div class="cell"><span class="n">04 · Build</span><h3>WordPress development</h3><p>Clean, reusable templates your team can edit without breaking the layout.</p></div>
       <div class="cell"><span class="n">05 · Content</span><h3>Content &amp; copy</h3><p>Page copy written for people and search, or your existing content moved and improved.</p></div>
       <div class="cell"><span class="n">06 · SEO</span><h3>SEO foundations</h3><p>Titles, headings, schema, internal links and sitemaps built in from the start.</p></div>
@@ -193,11 +193,11 @@ function rl_render_wpdesign() {
 
 <section id="standards">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Standards&nbsp;<b>]</b></span><h2>What standards does every site meet?</h2><p class="lede">Published standards, not opinions — so "done" means the same thing to you and to us.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Standards&nbsp;<b>]</b></span><h2>What standards does every site meet?</h2><p class="lede">Published standards, not opinions, so "done" means the same thing to you and to us.</p></div>
     <div class="cols c3">
-      <div class="metric"><span class="num">2.5s</span><h3>Largest Contentful Paint</h3><p>The main content loads within 2.5 seconds — Google's "good" threshold for loading.</p></div>
+      <div class="metric"><span class="num">2.5s</span><h3>Largest Contentful Paint</h3><p>The main content loads within 2.5 seconds, Google's "good" threshold for loading.</p></div>
       <div class="metric"><span class="num">200ms</span><h3>Interaction to Next Paint</h3><p>The page responds to clicks and taps in 200 milliseconds or less.</p></div>
-      <div class="metric"><span class="num">0.1</span><h3>Cumulative Layout Shift</h3><p>Nothing jumps around while the page loads — a layout shift score of 0.1 or less.</p></div>
+      <div class="metric"><span class="num">0.1</span><h3>Cumulative Layout Shift</h3><p>Nothing jumps around while the page loads: a layout shift score of 0.1 or less.</p></div>
     </div>
     <p class="quote">Accessibility is built to WCAG 2.2 level AA, the W3C's current guidelines. For businesses selling online to EU consumers, the European Accessibility Act has applied to e-commerce services since 28 June 2025.</p>
     <p class="src">Sources: Google, <a href="<?php echo $cwv; ?>" rel="noopener" target="_blank">Web Vitals</a> (75th percentile of page loads) · W3C, <a href="<?php echo $wcag; ?>" rel="noopener" target="_blank">WCAG 2.2</a> · European Commission, <a href="<?php echo $eaa; ?>" rel="noopener" target="_blank">European Accessibility Act</a>. Not legal advice.</p>
@@ -206,7 +206,7 @@ function rl_render_wpdesign() {
 
 <section class="band alt" id="redesign">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Redesigns&nbsp;<b>]</b></span><h2>How do we redesign without losing your rankings?</h2><p class="lede">Most redesigns that lose traffic lose it at launch — through changed URLs nobody mapped. We treat every redesign as a migration.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Redesigns&nbsp;<b>]</b></span><h2>How do we redesign without losing your rankings?</h2><p class="lede">Most redesigns that lose traffic lose it at launch, through changed URLs nobody mapped. We treat every redesign as a migration.</p></div>
     <ol class="steps">
       <li class="step"><div class="k" aria-hidden="true">01</div><h3>Inventory</h3><p>Every URL with traffic, links or impressions, from crawls, Search Console and analytics.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Keep URLs</h3><p>Pages that rank keep their addresses wherever possible.</p></li>
@@ -214,7 +214,7 @@ function rl_render_wpdesign() {
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Test on staging</h3><p>Redirects, titles, schema, speed and forms checked before launch.</p></li>
       <li class="step"><div class="k" aria-hidden="true">05</div><h3>Monitor</h3><p>Search Console, rankings and conversions watched daily after launch.</p></li>
     </ol>
-    <p class="quote">"Keep the redirects for as long as possible, generally at least 1 year." — Google Search Central, Site moves and migrations</p>
+    <p class="quote">"Keep the redirects for as long as possible, generally at least 1 year."<br>Google Search Central, Site moves and migrations</p>
     <p class="src">Source: Google, <a href="<?php echo $move; ?>" rel="noopener" target="_blank">Site moves with URL changes</a></p>
   </div>
 </section>
@@ -236,14 +236,14 @@ function rl_render_wpdesign() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>Sitemap &amp; wireframes</b> — the structure and layout of every page type.</li>
-      <li><b>Design system</b> — colours, type, components and page templates.</li>
-      <li><b>WordPress build</b> — editor-friendly templates and reusable blocks.</li>
-      <li><b>SEO setup</b> — titles, schema, sitemaps, internal links and analytics.</li>
-      <li><b>Redirect map</b> — every changed URL mapped and tested.</li>
-      <li><b>Performance &amp; accessibility report</b> — Core Web Vitals and WCAG 2.2 AA checks.</li>
-      <li><b>Training</b> — so your team can publish and update with confidence.</li>
-      <li><b>Launch support</b> — monitoring and fixes in the weeks after go-live.</li>
+      <li><b>Sitemap &amp; wireframes</b>: the structure and layout of every page type.</li>
+      <li><b>Design system</b>: colours, type, components and page templates.</li>
+      <li><b>WordPress build</b>: editor-friendly templates and reusable blocks.</li>
+      <li><b>SEO setup</b>: titles, schema, sitemaps, internal links and analytics.</li>
+      <li><b>Redirect map</b>: every changed URL mapped and tested.</li>
+      <li><b>Performance &amp; accessibility report</b>: Core Web Vitals and WCAG 2.2 AA checks.</li>
+      <li><b>Training</b>: so your team can publish and update with confidence.</li>
+      <li><b>Launch support</b>: monitoring and fixes in the weeks after go-live.</li>
     </ul>
   </div>
 </section>
@@ -253,7 +253,7 @@ function rl_render_wpdesign() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>A beautiful site that loses its rankings is a failed redesign.</h2>
-      <p>Design matters, but a new website is judged by what happens after launch: does it keep the traffic you had, load quickly, work for everyone and turn visitors into enquiries? We plan for those outcomes from the first meeting — and we'd rather keep a ranking URL than rename it for the sake of a tidier sitemap.</p>
+      <p>Design matters, but a new website is judged by what happens after launch: does it keep the traffic you had, load quickly, work for everyone and turn visitors into enquiries? We plan for those outcomes from the first meeting, and we'd rather keep a ranking URL than rename it for the sake of a tidier sitemap.</p>
     </div>
   </div>
 </section>

@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Enterprise SEO Strategy
- * Description: /services/enterprise-seo-strategy/ (D-023 new slug; legacy off-page / link-building URLs mapped here — intent check O-018) — Enterprise SEO Strategy service page. Provides [reinforce_enterprise]. Uses the shared kit (D-044). Hero animation "One standard, every page" (D-039 Step 3).
+ * Plugin Name: Reinforce Lab - Enterprise SEO Strategy
+ * Description: /services/enterprise-seo-strategy/ (D-023 new slug; legacy off-page / link-building URLs mapped here - intent check O-018) - Enterprise SEO Strategy service page. Provides [reinforce_enterprise]. Uses the shared kit (D-044). Hero animation "One standard, every page" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -11,12 +11,12 @@ function rl_is_ent() { return is_page('enterprise-seo-strategy'); }
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_ent_faqs() {
     return [
-        ['What is enterprise SEO?', 'Enterprise SEO is search engine optimization for large, complex organisations — sites with thousands of pages or more, several teams publishing and building, and often several countries or brands. The work shifts from fixing single pages to setting standards for templates, releases, migrations and content, so every page the organisation ships meets them, and to earning authority that a large brand can defend.'],
+        ['What is enterprise SEO?', 'Enterprise SEO is search engine optimization for large, complex organisations: sites with thousands of pages or more, several teams publishing and building, and often several countries or brands. The work shifts from fixing single pages to setting standards for templates, releases, migrations and content, so every page the organisation ships meets them, and to earning authority that a large brand can defend.'],
         ['How is enterprise SEO different from regular SEO?', 'The techniques are the same; the scale and the people are not. One template mistake can repeat across thousands of URLs, fixes have to go through engineering queues, and content, product, development and regional teams all change the site. Enterprise SEO adds governance, ticket-ready specifications, release checks and reporting by page group and market.'],
-        ['Do you build links?', 'We build authority the way Google allows: digital PR with genuinely newsworthy material, partner and industry relationships, and resources worth citing. We don’t buy links that pass ranking credit, run link exchanges or place keyword links in press releases — Google lists those as link spam. Paid placements are fine for exposure, qualified with rel="sponsored" or rel="nofollow".'],
+        ['Do you build links?', 'We build authority the way Google allows: digital PR with newsworthy material, partner and industry relationships, and resources worth citing. We don’t buy links that pass ranking credit, run link exchanges or place keyword links in press releases. Google lists those as link spam. Paid placements are fine for exposure, qualified with rel="sponsored" or rel="nofollow".'],
         ['Will a site migration lose our rankings?', 'Google says to expect temporary fluctuation during a move, and that larger sites can take longer than a few weeks to settle. What protects rankings is the preparation: a complete old-to-new URL map, permanent server-side redirects kept for at least a year, a staged move where possible, and close monitoring afterwards.'],
-        ['Does crawl budget matter for our site?', 'It depends on size and how often content changes. Google’s crawl budget guide is aimed at sites with about a million or more pages that change weekly, or 10,000 or more that change daily — and Google calls those rough estimates, not exact thresholds. Below that, index quality usually matters more than crawl budget.'],
-        ['How do you work with our in-house teams?', 'Inside your existing process. We write standards and checklists your teams can own, turn fixes into tickets with acceptance criteria, review releases before they ship, and report what shipped, what stalled and what it changed — by page group, market and business outcome.'],
+        ['Does crawl budget matter for our site?', 'It depends on size and how often content changes. Google’s crawl budget guide is aimed at sites with about a million or more pages that change weekly, or 10,000 or more that change daily, and Google calls those rough estimates, not exact thresholds. Below that, index quality usually matters more than crawl budget.'],
+        ['How do you work with our in-house teams?', 'Inside your existing process. We write standards and checklists your teams can own, turn fixes into tickets with acceptance criteria, review releases before they ship, and report what shipped, what stalled and what it changed, by page group, market and business outcome.'],
     ];
 }
 
@@ -39,7 +39,7 @@ function rl_ent_industries() {
    grid lights in a wave as the standard rolls out across templates; earned links from press,
    partners and industry sources flow into the site. 10 s loop, soft fade, reset. */
 function rl_ent_svg() {
-    $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlEnT"><title id="rlEnT">Content, development, product and regional teams work through one SEO standard — templates, a QA gate and releases — so every page meets it, while earned links from press, partners and industry sources build authority.</title>';
+    $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlEnT"><title id="rlEnT">Content, development, product and regional teams work through one SEO standard (templates, a QA gate and releases) so every page meets it, while earned links from press, partners and industry sources build authority.</title>';
     $teams = ['CONTENT', 'DEVELOPMENT', 'PRODUCT', 'REGIONS'];
     foreach ($teams as $i => $t) {
         $y = 30 + $i * 58; $cy = $y + 18;
@@ -165,7 +165,7 @@ function rl_render_enterprise() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Enterprise SEO&nbsp;<b>]</b></span>
       <h1 class="h1">One SEO standard<br>for every team<br><span class="r">and every page.</span></h1>
-      <p class="lede"><strong>Enterprise SEO strategy</strong> is search engine optimization for large, complex organisations — many pages, many teams, often many markets. Reinforce Lab sets the standards your templates, releases and migrations must meet, gets fixes shipped through your engineering process, and builds authority within Google's link policies — then reports what it changed by page group, market and revenue.</p>
+      <p class="lede"><strong>Enterprise SEO strategy</strong> is search engine optimization for large, complex organisations: many pages, many teams, often many markets. Reinforce Lab sets the standards your templates, releases and migrations must meet, gets fixes shipped through your engineering process, and builds authority within Google's link policies, then reports what it changed by page group, market and revenue.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#authority">How we build links</a>
@@ -182,9 +182,9 @@ function rl_render_enterprise() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;The problem at scale&nbsp;<b>]</b></span><h2>Why does SEO break in large organisations?</h2><p class="lede">Rarely because nobody knows what to do. Usually because nobody owns the standard, and the site changes faster than anyone checks it.</p></div>
     <div class="cols c3">
-      <div class="cell"><span class="n">01 · Templates</span><h3>One mistake, thousands of URLs</h3><p>A faulty pagination, filter or canonical rule in one template repeats on every page built from it — and junk URLs crowd out the pages that matter.</p></div>
+      <div class="cell"><span class="n">01 · Templates</span><h3>One mistake, thousands of URLs</h3><p>A faulty pagination, filter or canonical rule in one template repeats on every page built from it, and junk URLs crowd out the pages that matter.</p></div>
       <div class="cell"><span class="n">02 · Queues</span><h3>Fixes wait behind features</h3><p>SEO issues sit in engineering backlogs without clear specifications, owners or acceptance criteria, so they don't ship.</p></div>
-      <div class="cell"><span class="n">03 · Releases</span><h3>Every launch is a risk</h3><p>Redesigns, platform changes and rebrands change URLs, rendering and internal links — often without an SEO check before release.</p></div>
+      <div class="cell"><span class="n">03 · Releases</span><h3>Every launch is a risk</h3><p>Redesigns, platform changes and rebrands change URLs, rendering and internal links, often without an SEO check before release.</p></div>
       <div class="cell"><span class="n">04 · Teams</span><h3>Many publishers, no rules</h3><p>Content, product, regional and agency teams publish to their own conventions, creating duplicates and pages that compete with each other.</p></div>
       <div class="cell"><span class="n">05 · Authority</span><h3>Shortcuts that backfire</h3><p>Pressure for quick links leads to paid placements and exchanges that Google treats as link spam.</p></div>
       <div class="cell"><span class="n">06 · Reporting</span><h3>Averages hide the problem</h3><p>Site-wide totals mask the page groups and markets that are falling, so the wrong work gets prioritised.</p></div>
@@ -194,7 +194,7 @@ function rl_render_enterprise() {
 
 <section id="what">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What we do&nbsp;<b>]</b></span><h2>What does enterprise SEO strategy cover?</h2><p class="lede">Nine workstreams under one standard — scoped to what your organisation needs, not sold as a bundle.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What we do&nbsp;<b>]</b></span><h2>What does enterprise SEO strategy cover?</h2><p class="lede">Nine workstreams under one standard, scoped to what your organisation needs, not sold as a bundle.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01 · Governance</span><h3>SEO standards &amp; ownership</h3><p>Written standards, a clear owner for each rule, and checklists your content, product and engineering teams can follow.</p></div>
       <div class="cell"><span class="n">02 · Templates</span><h3>Template-level technical SEO</h3><p>Crawling, indexing, rendering, canonicals, pagination and faceted navigation fixed where they are generated.</p></div>
@@ -202,7 +202,7 @@ function rl_render_enterprise() {
       <div class="cell"><span class="n">04 · Migrations</span><h3>Migrations &amp; replatforming</h3><p>URL maps, redirect plans, staged moves and post-launch monitoring for redesigns, mergers and domain changes.</p></div>
       <div class="cell"><span class="n">05 · Markets</span><h3>International architecture</h3><p>Country and language structure, hreflang and market launches governed from one standard.</p></div>
       <div class="cell"><span class="n">06 · Content</span><h3>Content systems at scale</h3><p>Topic ownership, briefs and editorial QA so many teams publish helpful, non-competing pages.</p></div>
-      <div class="cell"><span class="n">07 · Authority</span><h3>Digital PR &amp; earned links</h3><p>Newsworthy data, expert commentary and partner relationships that earn links and mentions — never bought.</p></div>
+      <div class="cell"><span class="n">07 · Authority</span><h3>Digital PR &amp; earned links</h3><p>Newsworthy data, expert commentary and partner relationships that earn links and mentions, never bought.</p></div>
       <div class="cell"><span class="n">08 · AI search</span><h3>Visibility in AI answers</h3><p>How AI search tools describe and cite your brand, tracked alongside classic search.</p></div>
       <div class="cell"><span class="n">09 · Reporting</span><h3>Forecasts &amp; reporting</h3><p>Baselines by page group and market, forecasts with stated assumptions, and reporting tied to leads and revenue.</p></div>
     </div>
@@ -211,14 +211,14 @@ function rl_render_enterprise() {
 
 <section class="band alt" id="authority">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Authority &amp; off-page SEO&nbsp;<b>]</b></span><h2>How do we build authority without link spam?</h2><p class="lede">Off-page SEO is where enterprise brands take the most avoidable risk. These are the link rules we work to — in Google's own words.</p></div>
-    <p class="quote">"Link spam is the practice of creating links to or from a site primarily for the purpose of manipulating search rankings." — Google Search spam policies</p>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Authority &amp; off-page SEO&nbsp;<b>]</b></span><h2>How do we build authority without link spam?</h2><p class="lede">Off-page SEO is where enterprise brands take the most avoidable risk. These are the link rules we work to, in Google's own words.</p></div>
+    <p class="quote">"Link spam is the practice of creating links to or from a site primarily for the purpose of manipulating search rankings."<br>Google Search spam policies</p>
     <div class="myths" style="margin-top:28px">
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Buying links in bulk is the fastest way to rank."</p></div><div class="f"><span class="tag">Google says</span><p>Buying or selling links for ranking purposes — for money, goods, services or free products — is listed as link spam, along with automated link programs and excessive link exchanges.</p><a href="<?php echo $spam; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Buying links in bulk is the fastest way to rank."</p></div><div class="f"><span class="tag">Google says</span><p>Buying or selling links for ranking purposes (for money, goods, services or free products) is listed as link spam, along with automated link programs and excessive link exchanges.</p><a href="<?php echo $spam; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Any paid placement breaks Google's rules."</p></div><div class="f"><span class="tag">Google says</span><p>Buying links for advertising and sponsorship is a normal part of the web. It isn't a violation as long as the links are qualified with rel="sponsored" or rel="nofollow".</p><a href="<?php echo $gd('search/docs/crawling-indexing/qualify-outbound-links'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Keyword links in press releases and guest posts build authority."</p></div><div class="f"><span class="tag">Google says</span><p>Links with optimised anchor text in articles, guest posts or press releases distributed on other sites are listed as link spam.</p><a href="<?php echo $spam; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"A sitewide footer link on partner sites is free authority."</p></div><div class="f"><span class="tag">Google says</span><p>Widely distributed links in the footers or templates of various sites are listed as link spam.</p><a href="<?php echo $spam; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Publish on a big site's subfolder to borrow its rankings."</p></div><div class="f"><span class="tag">Google says</span><p>Publishing third-party content on a host mainly to exploit the host's ranking signals is site reputation abuse — enforced since 5 May 2024.</p><a href="<?php echo $gd('search/blog/2024/11/site-reputation-abuse'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Publish on a big site's subfolder to borrow its rankings."</p></div><div class="f"><span class="tag">Google says</span><p>Publishing third-party content on a host mainly to exploit the host's ranking signals is site reputation abuse, enforced since 5 May 2024.</p><a href="<?php echo $gd('search/blog/2024/11/site-reputation-abuse'); ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
     </div>
     <div class="instead">
       <h3 class="sub">What we do instead</h3>
@@ -236,26 +236,26 @@ function rl_render_enterprise() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Migrations&nbsp;<b>]</b></span><h2>How do we protect rankings during a migration?</h2><p class="lede">Migrations are where large sites lose the most visibility in the least time. The protection is in the preparation.</p></div>
     <ol class="steps">
-      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Inventory</h3><p>Every URL that has traffic, links or impressions — from crawls, logs, Search Console and analytics.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Inventory</h3><p>Every URL that has traffic, links or impressions, from crawls, logs, Search Console and analytics.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>URL map</h3><p>Each old URL mapped to its closest new equivalent, reviewed and signed off.</p></li>
       <li class="step"><div class="k" aria-hidden="true">03</div><h3>Redirects</h3><p>Permanent server-side redirects, tested in staging and kept for at least a year.</p></li>
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Staged launch</h3><p>Move in steps where possible, changing one thing at a time.</p></li>
       <li class="step"><div class="k" aria-hidden="true">05</div><h3>Monitor</h3><p>Crawl errors, indexing and rankings watched daily until the new URLs settle.</p></li>
     </ol>
-    <p class="quote">"Expect temporary fluctuation in site ranking during the move." — Google Search Central, Site moves with URL changes</p>
+    <p class="quote">"Expect temporary fluctuation in site ranking during the move."<br>Google Search Central, Site moves with URL changes</p>
     <p class="src">Source: Google, <a href="<?php echo $move; ?>" rel="noopener" target="_blank">Site moves and migrations</a></p>
   </div>
 </section>
 
 <section class="band alt" id="how">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does an enterprise SEO engagement run?</h2><p class="lede">Baseline first, standards second, then shipped work — measured by page group.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does an enterprise SEO engagement run?</h2><p class="lede">Baseline first, standards second, then shipped work, measured by page group.</p></div>
     <ol class="steps">
       <li class="step"><div class="k" aria-hidden="true">01</div><h3>Discover</h3><p>Crawl, logs, Search Console and analytics, plus interviews with the teams that change the site.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Baseline</h3><p>Performance by page group and market, and a roadmap ranked by impact and effort, with owners.</p></li>
       <li class="step"><div class="k" aria-hidden="true">03</div><h3>Standards</h3><p>SEO standards, release checklists and ticket-ready specifications for your teams.</p></li>
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Ship</h3><p>Fixes, content and authority work delivered through your sprints and approval routes.</p></li>
-      <li class="step"><div class="k" aria-hidden="true">05</div><h3>Measure</h3><p>What shipped, what stalled and what it changed — then the next priority.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">05</div><h3>Measure</h3><p>What shipped, what stalled and what it changed, then the next priority.</p></li>
     </ol>
   </div>
 </section>
@@ -264,21 +264,21 @@ function rl_render_enterprise() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>Enterprise SEO audit</b> — crawl, logs, templates, content and links, by page group.</li>
-      <li><b>Prioritised roadmap</b> — impact, effort, owner and dependencies for every item.</li>
-      <li><b>SEO standards</b> — rules for templates, content, internal links, schema and releases.</li>
-      <li><b>Ticket-ready specifications</b> — with acceptance criteria your developers can build to.</li>
-      <li><b>Release QA</b> — pre-launch and post-launch checks for every significant change.</li>
-      <li><b>Migration plan</b> — URL map, redirect rules and monitoring when you move or merge.</li>
-      <li><b>Authority programme</b> — digital PR and partner links within Google's policies.</li>
-      <li><b>Reporting</b> — visibility, traffic, leads and revenue by page group and market.</li>
+      <li><b>Enterprise SEO audit</b>: crawl, logs, templates, content and links, by page group.</li>
+      <li><b>Prioritised roadmap</b>: impact, effort, owner and dependencies for every item.</li>
+      <li><b>SEO standards</b>: rules for templates, content, internal links, schema and releases.</li>
+      <li><b>Ticket-ready specifications</b>: with acceptance criteria your developers can build to.</li>
+      <li><b>Release QA</b>: pre-launch and post-launch checks for every significant change.</li>
+      <li><b>Migration plan</b>: URL map, redirect rules and monitoring when you move or merge.</li>
+      <li><b>Authority programme</b>: digital PR and partner links within Google's policies.</li>
+      <li><b>Reporting</b>: visibility, traffic, leads and revenue by page group and market.</li>
     </ul>
   </div>
 </section>
 
 <section class="band alt" id="measure">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure enterprise SEO?</h2><p class="lede">By page group and market — not a single site-wide average.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure enterprise SEO?</h2><p class="lede">By page group and market, not a single site-wide average.</p></div>
     <div class="cols c3">
       <div class="metric"><h3>Indexed, useful pages</h3><p>Share of important pages indexed, and junk URLs removed from the crawl.</p></div>
       <div class="metric"><h3>Visibility by page group</h3><p>Impressions, clicks and rankings for each template and market.</p></div>
@@ -295,14 +295,14 @@ function rl_render_enterprise() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>Enterprise SEO is won in the ticket queue.</h2>
-      <p>Most large sites already have audits full of the right recommendations. What they lack is the standard, the owner and the ticket that gets each one shipped — and a check that stops the next release from undoing it. That is where we spend our time. We won't promise rankings, and we won't take shortcuts with links that put a brand at risk.</p>
+      <p>Most large sites already have audits full of the right recommendations. What they lack is the standard, the owner and the ticket that gets each one shipped, and a check that stops the next release from undoing it. That is where we spend our time. We won't promise rankings, and we won't take shortcuts with links that put a brand at risk.</p>
     </div>
   </div>
 </section>
 
 <section class="band alt" id="who">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is enterprise SEO for?</h2><p class="lede">Organisations with large or complex sites — many pages, many teams, several markets or brands — where search is a meaningful channel.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is enterprise SEO for?</h2><p class="lede">Organisations with large or complex sites (many pages, many teams, several markets or brands) where search is a meaningful channel.</p></div>
     <ul class="inds8">
       <?php foreach (rl_ent_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
       <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('Enterprise SEO for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
@@ -316,7 +316,7 @@ function rl_render_enterprise() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with enterprise SEO?</h2><p class="lede">Enterprise strategy sets the standard. These services deliver the specialist work within it.</p></div>
     <div class="cols c3">
       <?php foreach ([
-          ['services/technical-seo-services', 'Foundation', 'Technical SEO', 'Crawling, indexing, rendering and speed — fixed at the template level.'],
+          ['services/technical-seo-services', 'Foundation', 'Technical SEO', 'Crawling, indexing, rendering and speed, fixed at the template level.'],
           ['services/international-seo', 'Multi-country', 'International SEO', 'Country and language architecture, hreflang and market launches.'],
           ['services/seo-content-systems', 'Content', 'SEO Content Systems', 'Briefs, workflows and editorial QA for many publishing teams.'],
           ['services/press-release-services', 'Authority', 'Digital PR', 'Newsworthy stories and data that earn coverage and links.'],
@@ -341,7 +341,7 @@ function rl_render_enterprise() {
   <div class="wrap">
     <div class="final">
       <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
-      <h2>Is your SEO standard shipping — or stuck in the backlog?</h2>
+      <h2>Is your SEO standard shipping, or stuck in the backlog?</h2>
       <p class="lede">The free Search Authority Diagnostic reviews your indexing, templates, authority and AI-search visibility, and shows what to fix first.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>

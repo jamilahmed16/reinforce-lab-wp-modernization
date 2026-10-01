@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Search Authority OS (Systems Grid)
+ * Plugin Name: Reinforce Lab - Search Authority OS (Systems Grid)
  * Description: Flagship product page /search-authority-os/ (design: claude/design-previews/search-authority-os-landing.html). Provides [reinforce_saos]. Relies on tokens/chrome from reinforce-header.php.
  * Version: 1.0
  */
@@ -11,11 +11,11 @@ function rl_is_saos() { return is_page('search-authority-os'); }
 /* ---------- page data (single source for markup + schema) ---------- */
 function rl_saos_faqs() {
     return [
-        ['Is this just an AI writer?', 'No. AI writing is the last step. Search Authority OS researches your market, verifies claims against real evidence, and monitors performance — then produces content. The intelligence is the product; the content is the output.'],
+        ['Is this just an AI writer?', 'No. AI writing is the last step. Search Authority OS researches your market, verifies claims against real evidence, and monitors performance, then produces content. The intelligence is the product; the content is the output.'],
         ['Will the content actually be accurate?', 'Every important factual claim is tied to a source with a confidence score. Weak or conflicting sources are flagged for human review. In regulated fields, this is the difference between publishable and a liability.'],
-        ['Does it optimize for ChatGPT and AI Overviews, not just Google?', 'Yes. AEO and GEO are built in. The system tracks where you appear across ChatGPT, Perplexity, Gemini and AI Overviews, and structures content to be cited — not just ranked.'],
-        ['Do we keep control?', 'Yes. Human approval workflows and quality gates are standard. You decide what publishes automatically and what waits for review — and you can change that at any time.'],
-        ['What happens first?', 'A Search Authority Diagnostic: a data-backed read of your organic visibility, AI-search presence, content authority, competitors and demand — with a prioritized 90-day plan. It establishes your real baseline before anything is built.'],
+        ['Does it optimize for ChatGPT and AI Overviews, not just Google?', 'Yes. AEO and GEO are built in. The system tracks where you appear across ChatGPT, Perplexity, Gemini and AI Overviews, and structures content to be cited, not just ranked.'],
+        ['Do we keep control?', 'Yes. Human approval workflows and quality gates are standard. You decide what publishes automatically and what waits for review, and you can change that at any time.'],
+        ['What happens first?', 'A Search Authority Diagnostic: a data-backed read of your organic visibility, AI-search presence, content authority, competitors and demand, with a prioritized 90-day plan. It establishes your real baseline before anything is built.'],
     ];
 }
 define('RL_SAOS_DESC', 'Search Authority OS is an AI-powered operating system from Reinforce Lab that researches your market, verifies every claim against real evidence, produces high-value content, and monitors your visibility across Google and AI search.');
@@ -182,7 +182,7 @@ body.rl-saos-page .fl-page-content,body.rl-saos-page .fl-content,body.rl-saos-pa
 /* mobile fixes (design preview defects): eyebrow wraps as units; vertical flow line stays 2px (inline width:100% overrode it) */
 .rl-saos .ey{flex-wrap:wrap;row-gap:.2em}
 @media(max-width:520px){.rl-saos .flow{width:2px!important}}
-/* hero visual: Authority loop (D-039) — unique to SAOS; Home keeps the engine */
+/* hero visual: Authority loop (D-039) - unique to SAOS; Home keeps the engine */
 .rl-saos .loop{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 22px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-saos .loop .cap{display:flex;justify-content:space-between;gap:12px}
 .rl-saos .loop .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
@@ -261,7 +261,7 @@ function rl_render_saos() {
         ['evidence-verification', 'Evidence Verification', 'Fact-checked, sourced content.'],
         ['aeo-geo-optimization', 'AEO / GEO Optimization', 'Show up inside AI answers.'],
         ['social-sentiment', 'Social Sentiment', 'Write from real customer voice.'],
-        ['competitor-intelligence', 'Competitor Intelligence', 'See where rivals win — and don’t.'],
+        ['competitor-intelligence', 'Competitor Intelligence', 'See where rivals win, and don’t.'],
         ['content-qa', 'Content QA Auditor', 'A quality gate before anything ships.'],
         ['search-performance', 'Search Performance', 'Diagnose drops, recover rankings.'],
     ];
@@ -278,14 +278,14 @@ function rl_render_saos() {
     <div>
       <span class="ey"><b>[</b>&nbsp;AI Growth Systems&nbsp;<b>/</b>&nbsp;Search Authority OS&nbsp;<b>]</b></span>
       <h1 class="h1">Stop publishing content.<br>Start building<br><span class="r">search authority.</span></h1>
-      <p class="lede"><strong>Search Authority OS</strong> is an AI-powered operating system from Reinforce Lab that continuously researches your market, verifies every claim against real evidence, produces high-value content, and monitors your visibility across Google <em>and</em> AI search — then improves itself over time.</p>
+      <p class="lede"><strong>Search Authority OS</strong> is an AI-powered operating system from Reinforce Lab that continuously researches your market, verifies every claim against real evidence, produces high-value content, and monitors your visibility across Google <em>and</em> AI search, then improves itself over time.</p>
       <div class="hero-cta">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#system">See the system</a>
       </div>
       <p class="microtrust">Built for <b>Pharma &amp; Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services (incl. Finance) · Education</b><br>Search Intelligence &nbsp;+&nbsp; Evidence &nbsp;+&nbsp; Content &nbsp;+&nbsp; AI Search &nbsp;+&nbsp; Continuous Optimization</p>
     </div>
-    <figure class="loop rl-anim" role="img" aria-label="Search Authority OS runs as one continuous loop — research, verify, write, audit and monitor — and search authority rises with every lap.">
+    <figure class="loop rl-anim" role="img" aria-label="Search Authority OS runs as one continuous loop (research, verify, write, audit and monitor) and search authority rises with every lap.">
       <div class="cap" aria-hidden="true"><span>The loop</span><span>Continuous · self-improving</span></div>
       <div aria-hidden="true"><svg viewBox="-44 0 608 452" xmlns="http://www.w3.org/2000/svg" focusable="false"><circle class="lp-ring" cx="260" cy="222" r="150"/><circle class="lp-ring2" cx="260" cy="222" r="118"/><g class="lp-comet" style="transform-origin:260px 222px"><circle class="lp-tail" cx="260" cy="222" r="150" stroke-dasharray="74 942.5" transform="rotate(-118.3 260 222)"/><circle class="lp-head" cx="260" cy="72" r="5"/></g><g class="lp-node" style="--d:0s"><rect class="lp-sq" x="252.0" y="64.0" width="16" height="16"/><rect class="lp-lit" x="252.0" y="64.0" width="16" height="16"/><rect class="lp-halo" x="243.0" y="55.0" width="34" height="34"/><text class="lp-lab" x="260.0" y="26.0" text-anchor="middle">01 RESEARCH</text><text class="lp-lab lp-lab-on" x="260.0" y="26.0" text-anchor="middle">01 RESEARCH</text><text class="lp-sub" x="260.0" y="40.0" text-anchor="middle">demand · rivals · voice</text></g><g class="lp-node" style="--d:2s"><rect class="lp-sq" x="394.7" y="167.6" width="16" height="16"/><rect class="lp-lit" x="394.7" y="167.6" width="16" height="16"/><rect class="lp-halo" x="385.7" y="158.6" width="34" height="34"/><text class="lp-lab" x="431.2" y="166.4" text-anchor="start">02 VERIFY</text><text class="lp-lab lp-lab-on" x="431.2" y="166.4" text-anchor="start">02 VERIFY</text><text class="lp-sub" x="431.2" y="180.4" text-anchor="start">source · confidence</text></g><g class="lp-node" style="--d:4s"><rect class="lp-sq" x="340.2" y="335.4" width="16" height="16"/><rect class="lp-lit" x="340.2" y="335.4" width="16" height="16"/><rect class="lp-halo" x="331.2" y="326.4" width="34" height="34"/><text class="lp-lab" x="365.8" y="377.6" text-anchor="start">03 WRITE</text><text class="lp-lab lp-lab-on" x="365.8" y="377.6" text-anchor="start">03 WRITE</text><text class="lp-sub" x="365.8" y="391.6" text-anchor="start">built for AI answers</text></g><g class="lp-node" style="--d:6s"><rect class="lp-sq" x="163.8" y="335.4" width="16" height="16"/><rect class="lp-lit" x="163.8" y="335.4" width="16" height="16"/><rect class="lp-halo" x="154.8" y="326.4" width="34" height="34"/><text class="lp-lab" x="154.2" y="377.6" text-anchor="end">04 AUDIT</text><text class="lp-lab lp-lab-on" x="154.2" y="377.6" text-anchor="end">04 AUDIT</text><text class="lp-sub" x="154.2" y="391.6" text-anchor="end">SEO · AEO · GEO gates</text></g><g class="lp-node" style="--d:8s"><rect class="lp-sq" x="109.3" y="167.6" width="16" height="16"/><rect class="lp-lit" x="109.3" y="167.6" width="16" height="16"/><rect class="lp-halo" x="100.3" y="158.6" width="34" height="34"/><text class="lp-lab" x="88.8" y="166.4" text-anchor="end">05 MONITOR</text><text class="lp-lab lp-lab-on" x="88.8" y="166.4" text-anchor="end">05 MONITOR</text><text class="lp-sub" x="88.8" y="180.4" text-anchor="end">GSC · GA4 · AI visibility</text></g><rect class="lp-core" x="172.0" y="166.0" width="176" height="112"/><text class="lp-core-t" x="260" y="196" text-anchor="middle">SEARCH AUTHORITY OS</text><line class="lp-axis" x1="192" y1="257" x2="328" y2="257"/><polyline class="lp-auth" points="192.0,256.0 198.8,256.0 204.2,247.0 219.2,247.0 226.0,247.0 231.4,238.0 246.4,238.0 253.2,238.0 258.6,229.0 273.6,229.0 280.4,229.0 285.8,220.0 300.8,220.0 307.6,220.0 313.0,211.0 328.0,211.0" style="--L:161" stroke-dasharray="161"/><text class="lp-core-s" x="260" y="214" text-anchor="middle">AUTHORITY ↑ EVERY LAP</text></svg></div>
     </figure>
@@ -297,15 +297,15 @@ function rl_render_saos() {
     <div class="head">
       <span class="ey"><b>[</b>&nbsp;The Problem&nbsp;<b>]</b></span>
       <h2>Your search strategy is running on disconnected systems.</h2>
-      <p class="lede">SEO data sits in one tool. Content research happens somewhere else. Writers don't know what customers are complaining about. Nobody is connecting the signals — and more content isn't the answer.</p>
+      <p class="lede">SEO data sits in one tool. Content research happens somewhere else. Writers don't know what customers are complaining about. Nobody is connecting the signals, and more content isn't the answer.</p>
     </div>
     <div class="pains">
-      <div class="pain"><span class="x" aria-hidden="true">✕</span><p><b>You rank on Google but vanish in AI search.</b> ChatGPT, Perplexity and AI Overviews now answer what your pages used to. You find out from a prospect, weeks late.</p></div>
-      <div class="pain"><span class="x" aria-hidden="true">✕</span><p><b>Your content can't prove what it claims.</b> In regulated industries, an unsupported statement isn't a nuisance — it's a liability.</p></div>
-      <div class="pain"><span class="x" aria-hidden="true">✕</span><p><b>AI writes an article in 30 seconds.</b> That's not the problem. Thin, unverified, undifferentiated content that Google quietly stops indexing — that's the problem.</p></div>
-      <div class="pain"><span class="x" aria-hidden="true">✕</span><p><b>You measure output, not authority.</b> Word counts and publish cadence tell you nothing about whether you're actually winning the search.</p></div>
-      <div class="pain"><span class="x" aria-hidden="true">✕</span><p><b>Rankings slip and no one knows why.</b> SERP shifted? Intent changed? Content decayed? Cannibalization? By the time you diagnose it, the traffic is gone.</p></div>
-      <div class="pain"><span class="x" aria-hidden="true">✕</span><p><b>Every tool is a silo.</b> Five subscriptions, three teams, zero feedback loops. You are the integration layer — and it doesn't scale.</p></div>
+      <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>You rank on Google but vanish in AI search.</b> ChatGPT, Perplexity and AI Overviews now answer what your pages used to. You find out from a prospect, weeks late.</p></div>
+      <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Your content can't prove what it claims.</b> In regulated industries, an unsupported statement isn't a nuisance; it's a liability.</p></div>
+      <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>AI writes an article in 30 seconds.</b> That's not the problem. Thin, unverified, undifferentiated content that Google stops indexing. That's the problem.</p></div>
+      <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>You measure output, not authority.</b> Word counts and publish cadence tell you nothing about whether you're actually winning the search.</p></div>
+      <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Rankings slip and no one knows why.</b> SERP shifted? Intent changed? Content decayed? Cannibalization? By the time you diagnose it, the traffic is gone.</p></div>
+      <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Every tool is a silo.</b> Five subscriptions, three teams, zero feedback loops. You are the integration layer, and it doesn't scale.</p></div>
     </div>
     <div class="hero-cta" style="margin-top:32px"><a class="btn g" href="<?php echo $diag; ?>">Find out where you stand <span class="ar">&rarr;</span></a></div>
   </div>
@@ -316,15 +316,15 @@ function rl_render_saos() {
     <div class="head">
       <span class="ey"><b>[</b>&nbsp;The System&nbsp;<b>]</b></span>
       <h2>One intelligence system for everything that determines your search authority.</h2>
-      <p class="lede">Not an AI writer. Search Authority OS is the flagship of Reinforce Lab's <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth Systems</a>: it researches before it generates, verifies before it publishes, and measures after it ships — as one continuous loop.</p>
+      <p class="lede">Not an AI writer. Search Authority OS is the flagship of Reinforce Lab's <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth Systems</a>: it researches before it generates, verifies before it publishes, and measures after it ships, as one continuous loop.</p>
     </div>
     <div class="cols c3">
-      <div class="cell"><div class="n">01</div><h3>Search Intelligence</h3><p>Rankings, queries, SERP structure and real demand — not a static keyword list.</p></div>
+      <div class="cell"><div class="n">01</div><h3>Search Intelligence</h3><p>Rankings, queries, SERP structure and real demand, not a static keyword list.</p></div>
       <div class="cell"><div class="n">02</div><h3>Web &amp; Competitor Intelligence</h3><p>What the market asks, what rivals cover, and the gaps worth owning.</p></div>
       <div class="cell"><div class="n">03</div><h3>Social &amp; Customer Voice</h3><p>The questions, objections and complaints in your customers' own language.</p></div>
-      <div class="cell"><div class="n">04</div><h3>AI Search Intelligence</h3><p>Where you appear — or don't — across ChatGPT, Perplexity, Gemini and AI Overviews.</p></div>
+      <div class="cell"><div class="n">04</div><h3>AI Search Intelligence</h3><p>Where you appear (or don't) across ChatGPT, Perplexity, Gemini and AI Overviews.</p></div>
       <div class="cell"><div class="n">05</div><h3>Domain Evidence</h3><p>For regulated fields: PubMed, Europe PMC, ClinicalTrials.gov, FDA, patents.</p></div>
-      <div class="cell"><div class="n">06</div><h3>Performance Intelligence</h3><p>GSC, GA4 and AI visibility, read continuously — so decay is caught, not discovered.</p></div>
+      <div class="cell"><div class="n">06</div><h3>Performance Intelligence</h3><p>GSC, GA4 and AI visibility, read continuously, so decay is caught, not discovered.</p></div>
     </div>
   </div>
 </section>
@@ -336,10 +336,10 @@ function rl_render_saos() {
       <h2>Content is the output. Intelligence is the product.</h2>
     </div>
     <ol class="steps" style="list-style:none;margin:0;padding:0">
-      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Research</h3><p>Search data, competitors, customer voice and authoritative evidence — assembled before a word is written.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Research</h3><p>Search data, competitors, customer voice and authoritative evidence, assembled before a word is written.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Verify</h3><p>Every material claim gets a source, a freshness check, a confidence score. No evidence, no claim.</p></li>
       <li class="step"><div class="k" aria-hidden="true">03</div><h3>Produce &amp; QA</h3><p>Written for Google and AI answers, then passed through SEO, AEO, GEO and evidence quality gates.</p></li>
-      <li class="step"><div class="k" aria-hidden="true">04</div><h3>Measure &amp; Heal</h3><p>Published, monitored, and — when a page slips — diagnosed and corrected. The system learns.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">04</div><h3>Measure &amp; Heal</h3><p>Published, monitored, and (when a page slips) diagnosed and corrected. The system learns.</p></li>
     </ol>
   </div>
 </section>
@@ -349,7 +349,7 @@ function rl_render_saos() {
     <div class="head">
       <span class="ey"><b>[</b>&nbsp;The Evidence Layer&nbsp;<b>]</b></span>
       <h2>Every important claim carries a verifiable trail.</h2>
-      <p class="lede">The difference between content that sounds authoritative and content that <em>is</em>. This is what most AI content operations skip — and what regulated buyers require.</p>
+      <p class="lede">The difference between content that sounds authoritative and content that <em>is</em>. This is what most AI content operations skip, and what regulated buyers require.</p>
     </div>
     <ol class="chain" style="list-style:none;margin:0;padding:0" aria-label="Evidence chain">
       <li class="chip"><div class="t">Claim</div><div class="v">Statement</div></li>
@@ -386,7 +386,7 @@ function rl_render_saos() {
   <div class="wrap">
     <div class="head">
       <span class="ey"><b>[</b>&nbsp;What you get&nbsp;<b>]</b></span>
-      <h2>A monthly authority portfolio — not a content quota.</h2>
+      <h2>A monthly authority portfolio, not a content quota.</h2>
       <p class="lede">The objective is never the number. But here's what a month can look like:</p>
     </div>
     <div class="cols c4">
@@ -397,7 +397,7 @@ function rl_render_saos() {
       <div class="cell"><h3>Case &amp; problem-solving</h3><p>Proof that turns interest into trust.</p></div>
       <div class="cell"><h3>Executive thought leadership</h3><p>Authority content in the founder's voice.</p></div>
       <div class="cell"><h3>Industry reports</h3><p>Pillar assets that define the category.</p></div>
-      <div class="cell"><h3>7-day authority report</h3><p>Organic, AI visibility and business signals — every week.</p></div>
+      <div class="cell"><h3>7-day authority report</h3><p>Organic, AI visibility and business signals, every week.</p></div>
     </div>
   </div>
 </section>
@@ -431,7 +431,7 @@ function rl_render_saos() {
   <div class="wrap">
     <div class="head">
       <span class="ey"><b>[</b>&nbsp;Modular by design&nbsp;<b>]</b></span>
-      <h2>Run the whole OS — or start with one agent.</h2>
+      <h2>Run the whole OS, or start with one agent.</h2>
       <p class="lede">Each agent sells a specific outcome. Adopt the system, or begin where the pain is sharpest.</p>
     </div>
     <div class="cols c4">
@@ -448,7 +448,7 @@ function rl_render_saos() {
     <div class="head">
       <span class="ey"><b>[</b>&nbsp;Proof&nbsp;<b>]</b></span>
       <h2>Reinforce Lab runs this system on itself.</h2>
-      <p class="lede">We are our own R&amp;D lab. Your diagnostic establishes your real baseline — no borrowed numbers, no invented results.</p>
+      <p class="lede">We are our own R&amp;D lab. Your diagnostic establishes your real baseline: no borrowed numbers, no invented results.</p>
     </div>
     <div class="proof">
       <div class="stat"><div class="fig"><span class="ph">Your baseline</span></div><div class="lab">Organic visibility today</div></div>
@@ -469,21 +469,21 @@ function rl_render_saos() {
     </div>
     <div class="pkgs">
       <div class="pkg">
-        <div class="tier">01 — Foundation</div>
+        <div class="tier">01 · Foundation</div>
         <h3>Search Authority Foundation</h3>
         <div class="price">$5,000 <small>setup + $1,500–$2,500 / month</small></div>
         <ul><li>SEO + SERP intelligence</li><li>Web + social research</li><li>Evidence verification</li><li>AEO / GEO optimization</li><li>20–30 assets / month</li><li>GSC + GA4 + 7-day reporting</li></ul>
         <a class="btn g" href="<?php echo $diag; ?>">Start here <span class="ar">&rarr;</span></a>
       </div>
       <div class="pkg feat">
-        <div class="tier">02 — Growth OS · Most chosen</div>
+        <div class="tier">02 · Growth OS · Most chosen</div>
         <h3>Search Authority Growth OS</h3>
         <div class="price">$10,000 <small>setup + $3,500–$5,000 / month</small></div>
         <ul><li>Everything in Foundation</li><li>40–60 assets / month</li><li>Competitor + AI visibility monitoring</li><li>Original-data research</li><li>Cannibalization + gap analysis</li><li>Self-improvement feedback loop</li></ul>
         <a class="btn p" href="<?php echo $diag; ?>">Get the Growth OS <span class="ar">&rarr;</span></a>
       </div>
       <div class="pkg">
-        <div class="tier">03 — Enterprise</div>
+        <div class="tier">03 · Enterprise</div>
         <h3>Enterprise Intelligence OS</h3>
         <div class="price">$20k–$35k+ <small>setup + $7,500–$15,000+ / month</small></div>
         <ul><li>Everything in Growth OS</li><li>Scientific evidence connectors</li><li>Regulatory + patent intelligence</li><li>Industry evidence graph</li><li>Human approval workflows</li><li>Enterprise governance</li></ul>
@@ -507,7 +507,7 @@ function rl_render_saos() {
     <div class="final">
       <span class="ey"><b>[</b>&nbsp;Start with the diagnostic&nbsp;<b>]</b></span>
       <h2>Find out what's limiting your search authority.</h2>
-      <p class="lede">A data-backed diagnostic of your Google visibility, AI-search presence, content authority, competitors and demand signals. No generic scorecard — what matters, what's missing, and what to do next.</p>
+      <p class="lede">A data-backed diagnostic of your Google visibility, AI-search presence, content authority, competitors and demand signals. No generic scorecard: what matters, what's missing, and what to do next.</p>
       <div class="hero-cta">
         <a class="btn p" href="<?php echo $diag; ?>">Request My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $pkg; ?>">Compare packages</a>

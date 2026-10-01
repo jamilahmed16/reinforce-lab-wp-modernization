@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — AI Workflow Automation
- * Description: /services/ai-workflow-automation/ (D-023 new URL; no legacy redirects) — AI Workflow Automation service page. Provides [reinforce_aiwork]. Uses the shared kit (D-044). Hero animation "Human in the loop" (D-039 Step 3).
+ * Plugin Name: Reinforce Lab - AI Workflow Automation
+ * Description: /services/ai-workflow-automation/ (D-023 new URL; no legacy redirects) - AI Workflow Automation service page. Provides [reinforce_aiwork]. Uses the shared kit (D-044). Hero animation "Human in the loop" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -11,11 +11,11 @@ function rl_is_aw() { return is_page('ai-workflow-automation'); }
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_aw_faqs() {
     return [
-        ['What is AI workflow automation?', 'AI workflow automation uses AI models together with integrations between your systems to handle repetitive work that involves reading, sorting or writing — triaging emails and tickets, extracting data from documents, drafting replies, updating records. A person reviews anything the AI isn’t confident about, and every step is logged.'],
-        ['How is it different from ordinary automation?', 'Traditional automation follows fixed rules: if this, then that. It breaks when the input is messy. AI can read unstructured input — an email, a PDF, a free-text form — classify it and extract what matters, so work that used to need a person can flow automatically, with rules and human checks around it.'],
-        ['Which tools do you use?', 'Whatever fits your stack. We usually build on the systems you already have — your CRM, helpdesk, email and document storage — connected through an integration platform and an AI model chosen for the task. The choice is made after mapping the process, not before.'],
+        ['What is AI workflow automation?', 'AI workflow automation uses AI models together with integrations between your systems to handle repetitive work that involves reading, sorting or writing: triaging emails and tickets, extracting data from documents, drafting replies, updating records. A person reviews anything the AI isn’t confident about, and every step is logged.'],
+        ['How is it different from ordinary automation?', 'Traditional automation follows fixed rules: if this, then that. It breaks when the input is messy. AI can read unstructured input (an email, a PDF, a free-text form), classify it and extract what matters, so work that used to need a person can flow automatically, with rules and human checks around it.'],
+        ['Which tools do you use?', 'Whatever fits your stack. We usually build on the systems you already have (your CRM, helpdesk, email and document storage) connected through an integration platform and an AI model chosen for the task. The choice is made after mapping the process, not before.'],
         ['Is our data safe?', 'We design for it: only the data a step needs is sent to an AI model, access is limited to the accounts that need it, and we document where each piece of data goes. Sensitive processes can be kept inside your own environment or given a human review step.'],
-        ['What does “human in the loop” mean?', 'It means the workflow sends uncertain or high-stakes cases to a person before anything happens — for example, a refund above a limit or an email the AI isn’t sure how to answer. Confident, routine cases go straight through. The threshold is yours to set and change.'],
+        ['What does “human in the loop” mean?', 'It means the workflow sends uncertain or high-stakes cases to a person before anything happens, for example, a refund above a limit or an email the AI isn’t sure how to answer. Confident, routine cases go straight through. The threshold is yours to set and change.'],
         ['Does the EU AI Act apply to us?', 'It depends on what the AI does. The Act bans a small set of practices (in force since February 2025) and puts strict duties on high-risk uses such as CV sorting in recruitment, due from December 2027. It also requires that people are made aware when they are talking to a chatbot. Most back-office automation is lower risk, but we check each use case. This is not legal advice.'],
     ];
 }
@@ -168,7 +168,7 @@ function rl_render_aiwork() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;AI Workflow Automation&nbsp;<b>]</b></span>
       <h1 class="h1">Let AI do<br>the busywork.<br><span class="r">Keep control.</span></h1>
-      <p class="lede"><strong>AI workflow automation</strong> uses AI models and integrations to handle repetitive work that involves reading, sorting and writing — triaging emails and tickets, extracting data from documents, drafting replies, updating your CRM — with a person approving anything the AI isn't sure about. Reinforce Lab maps your processes, builds the workflows on the tools you already use, and runs them with testing, logging and human checkpoints built in.</p>
+      <p class="lede"><strong>AI workflow automation</strong> uses AI models and integrations to handle repetitive work that involves reading, sorting and writing: triaging emails and tickets, extracting data from documents, drafting replies, updating your CRM, with a person approving anything the AI isn't sure about. Reinforce Lab maps your processes, builds the workflows on the tools you already use, and runs them with testing, logging and human checkpoints built in.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#guardrails">Our guardrails</a>
@@ -183,12 +183,12 @@ function rl_render_aiwork() {
 
 <section class="band alt" id="what">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What we automate&nbsp;<b>]</b></span><h2>What can AI workflow automation do?</h2><p class="lede">The repetitive work between your systems — where people copy, sort, summarise and chase.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What we automate&nbsp;<b>]</b></span><h2>What can AI workflow automation do?</h2><p class="lede">The repetitive work between your systems, where people copy, sort, summarise and chase.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01 · Triage</span><h3>Inbox &amp; ticket triage</h3><p>Emails and tickets read, categorised, prioritised and routed to the right person or queue.</p></div>
       <div class="cell"><span class="n">02 · Extract</span><h3>Document data extraction</h3><p>Invoices, forms, orders and contracts turned into structured data in your systems.</p></div>
       <div class="cell"><span class="n">03 · Draft</span><h3>Drafted replies</h3><p>Responses drafted from your policies and history, sent after review where it matters.</p></div>
-      <div class="cell"><span class="n">04 · Update</span><h3>CRM &amp; record updates</h3><p>Records created and updated from emails, calls and forms — no more copy and paste.</p></div>
+      <div class="cell"><span class="n">04 · Update</span><h3>CRM &amp; record updates</h3><p>Records created and updated from emails, calls and forms. No more copy and paste.</p></div>
       <div class="cell"><span class="n">05 · Enrich</span><h3>Lead enrichment &amp; routing</h3><p>New leads researched, scored and routed to sales with the context they need.</p></div>
       <div class="cell"><span class="n">06 · Summarise</span><h3>Reports &amp; summaries</h3><p>Meetings, threads and data summarised into the updates people actually read.</p></div>
       <div class="cell"><span class="n">07 · Answer</span><h3>Knowledge assistants</h3><p>Answers drawn from your own documents and policies, with sources shown.</p></div>
@@ -202,7 +202,7 @@ function rl_render_aiwork() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Why AI projects stall&nbsp;<b>]</b></span><h2>Why do so many AI projects stall at the pilot?</h2><p class="lede">Almost everyone uses AI. Few have built it into how work actually flows. McKinsey's 2025 global survey shows the gap.</p></div>
     <div class="cols c3">
-      <div class="metric"><span class="num">88%</span><h3>Use AI somewhere</h3><p>of respondents say their organisation regularly uses AI in at least one business function — up from 78% a year earlier.</p></div>
+      <div class="metric"><span class="num">88%</span><h3>Use AI somewhere</h3><p>of respondents say their organisation regularly uses AI in at least one business function, up from 78% a year earlier.</p></div>
       <div class="metric"><span class="num">62%</span><h3>Trying AI agents</h3><p>say their organisation is at least experimenting with AI agents.</p></div>
       <div class="metric"><span class="num">39%</span><h3>See profit impact</h3><p>report any impact on EBIT at the enterprise level from AI.</p></div>
     </div>
@@ -213,7 +213,7 @@ function rl_render_aiwork() {
 
 <section class="band alt" id="guardrails">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Guardrails&nbsp;<b>]</b></span><h2>How do we keep AI automation safe?</h2><p class="lede">Six controls in every workflow we build. We use the NIST AI Risk Management Framework — govern, map, measure, manage — as our checklist.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Guardrails&nbsp;<b>]</b></span><h2>How do we keep AI automation safe?</h2><p class="lede">Six controls in every workflow we build. We use the NIST AI Risk Management Framework (govern, map, measure, manage) as our checklist.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01 · People</span><h3>Human in the loop</h3><p>Uncertain or high-stakes cases go to a person before anything happens.</p></div>
       <div class="cell"><span class="n">02 · Thresholds</span><h3>Confidence limits</h3><p>Clear rules for what runs automatically, set by you and easy to change.</p></div>
@@ -222,7 +222,7 @@ function rl_render_aiwork() {
       <div class="cell"><span class="n">05 · Data</span><h3>Minimum data, limited access</h3><p>Only what each step needs is shared, and only the right accounts can see it.</p></div>
       <div class="cell"><span class="n">06 · Disclosure</span><h3>Honest with people</h3><p>Anyone talking to an AI assistant is told so, as the EU AI Act requires for chatbots.</p></div>
     </div>
-    <p class="quote">"When using AI systems such as chatbots, humans should be made aware that they are interacting with a machine so they can take an informed decision." — European Commission, AI Act</p>
+    <p class="quote">"When using AI systems such as chatbots, humans should be made aware that they are interacting with a machine so they can take an informed decision."<br>European Commission, AI Act</p>
     <p class="src">Sources: European Commission, <a href="<?php echo $eu; ?>" rel="noopener" target="_blank">AI Act</a> · NIST, <a href="<?php echo $nist; ?>" rel="noopener" target="_blank">AI Risk Management Framework</a>. Not legal advice.</p>
   </div>
 </section>
@@ -231,11 +231,11 @@ function rl_render_aiwork() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does an AI automation project run?</h2><p class="lede">One workflow at a time, measured against how it works today.</p></div>
     <ol class="steps">
-      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Map</h3><p>How the work is done today — steps, systems, volumes, exceptions and time spent.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Map</h3><p>How the work is done today: steps, systems, volumes, exceptions and time spent.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Prioritise</h3><p>The workflows with the most volume, the least risk and the clearest rules first.</p></li>
       <li class="step"><div class="k" aria-hidden="true">03</div><h3>Pilot</h3><p>One workflow built with human review on every case until it proves itself.</p></li>
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Measure</h3><p>Time saved, accuracy and override rate against the baseline.</p></li>
-      <li class="step"><div class="k" aria-hidden="true">05</div><h3>Scale</h3><p>Automation widened where it earns trust — then handed over with documentation.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">05</div><h3>Scale</h3><p>Automation widened where it earns trust, then handed over with documentation.</p></li>
     </ol>
   </div>
 </section>
@@ -244,14 +244,14 @@ function rl_render_aiwork() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>Process map</b> — how the work flows today and where time goes.</li>
-      <li><b>Automation roadmap</b> — workflows ranked by value, effort and risk.</li>
-      <li><b>Built workflows</b> — integrations, AI steps, rules and review queues.</li>
-      <li><b>Test set</b> — real examples each workflow is checked against.</li>
-      <li><b>Guardrails</b> — thresholds, logging, access controls and data map.</li>
-      <li><b>Documentation</b> — how each workflow works and how to change it.</li>
-      <li><b>Team training</b> — so your people can run and improve it.</li>
-      <li><b>Monthly report</b> — hours saved, accuracy, overrides and cost per task.</li>
+      <li><b>Process map</b>: how the work flows today and where time goes.</li>
+      <li><b>Automation roadmap</b>: workflows ranked by value, effort and risk.</li>
+      <li><b>Built workflows</b>: integrations, AI steps, rules and review queues.</li>
+      <li><b>Test set</b>: real examples each workflow is checked against.</li>
+      <li><b>Guardrails</b>: thresholds, logging, access controls and data map.</li>
+      <li><b>Documentation</b>: how each workflow works and how to change it.</li>
+      <li><b>Team training</b>: so your people can run and improve it.</li>
+      <li><b>Monthly report</b>: hours saved, accuracy, overrides and cost per task.</li>
     </ul>
   </div>
 </section>
@@ -275,7 +275,7 @@ function rl_render_aiwork() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>Not every process should be automated.</h2>
-      <p>Some work is rare, high-stakes or depends on judgement that a model can't be trusted with. Automating it creates risk, not savings. We will tell you which processes to leave alone, which to automate fully, and which to automate with a person approving the result — and we measure every workflow against how it worked before.</p>
+      <p>Some work is rare, high-stakes or depends on judgement that a model can't be trusted with. Automating it creates risk, not savings. We will tell you which processes to leave alone, which to automate fully, and which to automate with a person approving the result, and we measure every workflow against how it worked before.</p>
     </div>
   </div>
 </section>
@@ -296,7 +296,7 @@ function rl_render_aiwork() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with AI workflow automation?</h2><p class="lede">Automation pays off most when strategy, marketing and sales run on the same system.</p></div>
     <div class="cols c3">
       <?php foreach ([
-          ['services/executive-ai-consulting', 'Strategy', 'Executive AI Consulting', 'Where AI should — and shouldn’t — go in your business, and in what order.'],
+          ['services/executive-ai-consulting', 'Strategy', 'Executive AI Consulting', 'Where AI should (and shouldn’t) go in your business, and in what order.'],
           ['services/marketing-automation', 'Marketing', 'Marketing Automation', 'Nurture, scoring and sales handoff for every lead.'],
           ['services/lead-generation-systems', 'Sales', 'Lead Generation Systems', 'Channels, landing pages, qualification and routing as one system.'],
           ['services/seo-content-systems', 'Content', 'SEO Content Systems', 'Content workflows where AI assists and people write, edit and approve.'],

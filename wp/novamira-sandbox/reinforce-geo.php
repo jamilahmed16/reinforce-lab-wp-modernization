@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Generative Engine Optimization
- * Description: /services/generative-engine-optimization/ (approved new URL, D-006) — GEO service page. Provides [reinforce_geo]. Hero animation "Fan-out to citation" (D-039 Step 3). Relies on tokens/chrome from reinforce-header.php.
+ * Plugin Name: Reinforce Lab - Generative Engine Optimization
+ * Description: /services/generative-engine-optimization/ (approved new URL, D-006) - GEO service page. Provides [reinforce_geo]. Hero animation "Fan-out to citation" (D-039 Step 3). Relies on tokens/chrome from reinforce-header.php.
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -11,12 +11,12 @@ function rl_is_geo() { return is_page('generative-engine-optimization'); }
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_geo_faqs() {
     return [
-        ['What is Generative Engine Optimization (GEO)?', 'Generative Engine Optimization (GEO) is the practice of structuring and writing content so that generative AI search engines — such as ChatGPT, Perplexity, Gemini and Google AI Overviews — can retrieve it, extract a clear passage and cite the page in the answer they generate. It works at the level of passages, evidence and structure rather than keywords alone.'],
-        ['What is the difference between GEO and SEO?', 'SEO helps a page rank in a list of search results. GEO helps a passage from that page get used and cited inside an AI-generated answer. GEO depends on good SEO — engines can only cite pages they can crawl and trust — but it adds answer-first writing, sourced facts and passage-level structure.'],
+        ['What is Generative Engine Optimization (GEO)?', 'Generative Engine Optimization (GEO) is the practice of structuring and writing content so that generative AI search engines (such as ChatGPT, Perplexity, Gemini and Google AI Overviews) can retrieve it, extract a clear passage and cite the page in the answer they generate. It works at the level of passages, evidence and structure rather than keywords alone.'],
+        ['What is the difference between GEO and SEO?', 'SEO helps a page rank in a list of search results. GEO helps a passage from that page get used and cited inside an AI-generated answer. GEO depends on good SEO (engines can only cite pages they can crawl and trust), but it adds answer-first writing, sourced facts and passage-level structure.'],
         ['How is GEO different from AI Search Optimization?', 'AI Search Optimization is the wider program for being visible and recommended across AI search, including AI-crawler access, entity clarity and third-party authority. GEO is the content layer inside it: making individual pages and passages worth extracting and citing.'],
-        ['Does GEO work for Google AI Overviews and AI Mode?', 'Yes. Google’s AI features draw on pages Google can crawl and index, and AI Mode breaks a question into several related searches — a technique Google calls query fan-out. Pages that clearly answer those related questions, with evidence, give Google more to use.'],
+        ['Does GEO work for Google AI Overviews and AI Mode?', 'Yes. Google’s AI features draw on pages Google can crawl and index, and AI Mode breaks a question into several related searches, a technique Google calls query fan-out. Pages that clearly answer those related questions, with evidence, give Google more to use.'],
         ['What kind of content gets cited most?', 'Content that answers a question directly and can stand on its own: clear definitions, step-by-step explanations, comparison tables and specific facts with a named source. Vague, promotional copy gives an AI engine nothing reliable to quote.'],
-        ['Do you use AI to write GEO content?', 'We use AI for research and drafting support. People set the angle, verify every important claim against its source and approve each page before it is published — which matters most in regulated industries.'],
+        ['Do you use AI to write GEO content?', 'We use AI for research and drafting support. People set the angle, verify every important claim against its source and approve each page before it is published, which matters most in regulated industries.'],
     ];
 }
 
@@ -170,7 +170,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     $graph[] = [
         '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Generative Engine Optimization', 'alternateName' => 'GEO',
         'serviceType' => 'Generative engine optimization', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
-        'description' => 'Generative Engine Optimization structures and writes content so AI search engines such as ChatGPT, Perplexity, Gemini and Google AI Overviews can retrieve it, extract a clear passage and cite the page — through answer-first passages, sourced facts, clear structure and structured data.',
+        'description' => 'Generative Engine Optimization structures and writes content so AI search engines such as ChatGPT, Perplexity, Gemini and Google AI Overviews can retrieve it, extract a clear passage and cite the page, through answer-first passages, sourced facts, clear structure and structured data.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
     ];
     $graph[] = [
@@ -201,7 +201,7 @@ function rl_render_geo() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;GEO&nbsp;<b>]</b></span>
       <h1 class="h1">Write pages<br>AI engines<br><span class="r">quote and cite.</span></h1>
-      <p class="lede"><strong>Generative Engine Optimization (GEO)</strong> structures and writes your content so AI search engines — ChatGPT, Perplexity, Gemini and Google AI Overviews — can retrieve it, extract a clear passage and cite your page in the answer. Reinforce Lab does GEO passage by passage, backed by evidence, and measures citations prompt by prompt.</p>
+      <p class="lede"><strong>Generative Engine Optimization (GEO)</strong> structures and writes your content so AI search engines (ChatGPT, Perplexity, Gemini and Google AI Overviews) can retrieve it, extract a clear passage and cite your page in the answer. Reinforce Lab does GEO passage by passage, backed by evidence, and measures citations prompt by prompt.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#toolkit">What we optimize</a>
@@ -216,17 +216,17 @@ function rl_render_geo() {
 
 <section class="band alt" id="engines">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;How it works&nbsp;<b>]</b></span><h2>How do generative engines choose what to cite?</h2><p class="lede">A generative engine doesn't hand out a list of ten links. It searches, reads, picks passages and writes an answer — citing the sources it relied on.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;How it works&nbsp;<b>]</b></span><h2>How do generative engines choose what to cite?</h2><p class="lede">A generative engine doesn't hand out a list of ten links. It searches, reads, picks passages and writes an answer, citing the sources it relied on.</p></div>
     <ol class="flow4">
       <li><h3>The question expands</h3><p>Engines often break one question into several related searches. Google calls this "query fan-out" in AI Mode.</p></li>
       <li><h3>Pages are retrieved</h3><p>The engine pulls candidate pages it can crawl and trusts for each of those searches.</p></li>
-      <li><h3>Passages are extracted</h3><p>It reads passages, not whole pages — and keeps the ones that answer clearly and specifically.</p></li>
+      <li><h3>Passages are extracted</h3><p>It reads passages, not whole pages, and keeps the ones that answer clearly and specifically.</p></li>
       <li><h3>The answer is written and cited</h3><p>The chosen passages are combined into one answer, with links to the pages they came from.</p></li>
     </ol>
     <div class="research">
       <p class="src">What the research says</p>
-      <p>The term GEO comes from a peer-reviewed study by researchers at Princeton University and IIT Delhi, presented at ACM KDD 2024. Testing content changes across a benchmark of diverse queries, they found that GEO methods could boost a source's visibility in generative engine responses by up to 40% — and that the best method varies by domain. Adding citations to credible sources, quotations and statistics were among the strongest methods; keyword stuffing was not.</p>
-      <p class="src">Source: Aggarwal et al., "GEO: Generative Engine Optimization", KDD 2024 — <a href="https://arxiv.org/abs/2311.09735" rel="noopener" target="_blank">arxiv.org/abs/2311.09735</a></p>
+      <p>The term GEO comes from a peer-reviewed study by researchers at Princeton University and IIT Delhi, presented at ACM KDD 2024. Testing content changes across a benchmark of diverse queries, they found that GEO methods could boost a source's visibility in generative engine responses by up to 40%, and that the best method varies by domain. Adding citations to credible sources, quotations and statistics were among the strongest methods; keyword stuffing was not.</p>
+      <p class="src">Source: Aggarwal et al., "GEO: Generative Engine Optimization", KDD 2024. <a href="https://arxiv.org/abs/2311.09735" rel="noopener" target="_blank">arxiv.org/abs/2311.09735</a></p>
     </div>
   </div>
 </section>
@@ -247,7 +247,7 @@ function rl_render_geo() {
     <div class="cols c3">
       <div class="cell"><span class="n">01 · Answers</span><h3>Answer-first passages</h3><p>Each section opens with a short, direct answer to one question, then adds the detail.</p></div>
       <div class="cell"><span class="n">02 · Structure</span><h3>Question-shaped headings</h3><p>Headings that match how people actually ask, so each passage maps to a real prompt.</p></div>
-      <div class="cell"><span class="n">03 · Evidence</span><h3>Sourced facts and figures</h3><p>Specific claims with a named source — verified by a person before publishing.</p></div>
+      <div class="cell"><span class="n">03 · Evidence</span><h3>Sourced facts and figures</h3><p>Specific claims with a named source, verified by a person before publishing.</p></div>
       <div class="cell"><span class="n">04 · Independence</span><h3>Passages that stand alone</h3><p>No "as mentioned above". Every passage makes sense when it is lifted out on its own.</p></div>
       <div class="cell"><span class="n">05 · Formats</span><h3>Definitions, steps and tables</h3><p>The formats engines extract most cleanly: definitions, numbered steps and comparisons.</p></div>
       <div class="cell"><span class="n">06 · Signals</span><h3>Structured data and real freshness</h3><p>Schema that matches the visible content, and genuine update dates only when content really changes.</p></div>
@@ -259,7 +259,7 @@ function rl_render_geo() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does a GEO engagement run?</h2><p class="lede">Five steps. The first sets the baseline every later change is measured against.</p></div>
     <ol class="steps">
-      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Map prompts to pages</h3><p>Match the questions your buyers ask to the pages that should be cited for them — and find the gaps.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Map prompts to pages</h3><p>Match the questions your buyers ask to the pages that should be cited for them, and find the gaps.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Passage audit</h3><p>Score each target page for answers, evidence, structure and whether passages stand on their own.</p></li>
       <li class="step"><div class="k" aria-hidden="true">03</div><h3>Rewrite &amp; restructure</h3><p>Rewrite the passages that matter and create the missing pages, in your voice.</p></li>
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Evidence &amp; schema</h3><p>Tie claims to sources, have a person verify them, and add structured data that matches the page.</p></li>
@@ -272,14 +272,14 @@ function rl_render_geo() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>Prompt-to-page map</b> — which page should answer which buyer question.</li>
-      <li><b>Passage audit</b> — a score and fix list for every target page.</li>
-      <li><b>Rewritten passages</b> — answer-first, sourced and in your voice.</li>
-      <li><b>New pages</b> — for the questions no page answers yet.</li>
-      <li><b>Evidence log</b> — every important claim and the source behind it.</li>
-      <li><b>Structured data</b> — FAQ, Article and Service markup that matches the page.</li>
-      <li><b>Citation tracking</b> — which prompts cite you, and which passage they quote.</li>
-      <li><b>Refresh plan</b> — when each page needs updating, based on real changes.</li>
+      <li><b>Prompt-to-page map</b>: which page should answer which buyer question.</li>
+      <li><b>Passage audit</b>: a score and fix list for every target page.</li>
+      <li><b>Rewritten passages</b>: answer-first, sourced and in your voice.</li>
+      <li><b>New pages</b>: for the questions no page answers yet.</li>
+      <li><b>Evidence log</b>: every important claim and the source behind it.</li>
+      <li><b>Structured data</b>: FAQ, Article and Service markup that matches the page.</li>
+      <li><b>Citation tracking</b>: which prompts cite you, and which passage they quote.</li>
+      <li><b>Refresh plan</b>: when each page needs updating, based on real changes.</li>
     </ul>
   </div>
 </section>
@@ -289,7 +289,7 @@ function rl_render_geo() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure GEO?</h2><p class="lede">We measure the output of each answer, not just the ranking of each page.</p></div>
     <div class="cols c3">
       <div class="metric"><h3>Citation rate</h3><p>How often your pages are cited for the prompts you target.</p></div>
-      <div class="metric"><h3>Cited pages</h3><p>Which of your pages engines rely on — and which never get used.</p></div>
+      <div class="metric"><h3>Cited pages</h3><p>Which of your pages engines rely on, and which never get used.</p></div>
       <div class="metric"><h3>Passage pickup</h3><p>Which passage is quoted, so we know what wording works.</p></div>
       <div class="metric"><h3>Prominence</h3><p>Whether you are the main source or one of several.</p></div>
       <div class="metric"><h3>AI referral traffic</h3><p>Visits and conversions from AI tools, tracked in your analytics.</p></div>
@@ -302,14 +302,14 @@ function rl_render_geo() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;No tricks&nbsp;<b>]</b></span>
       <h2>We don't game AI engines.</h2>
-      <p>No hidden text, no instructions planted for AI crawlers, no fake reviews and no mass-produced pages. Tricks like these can backfire when engines update, and they break the trust GEO depends on. We make pages genuinely more useful, more specific and better sourced — and we measure whether it works.</p>
+      <p>No hidden text, no instructions planted for AI crawlers, no fake reviews and no mass-produced pages. Tricks like these can backfire when engines update, and they break the trust GEO depends on. We make pages more useful, more specific and better sourced, and we measure whether it works.</p>
     </div>
   </div>
 </section>
 
 <section class="band alt" id="who">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is GEO for?</h2><p class="lede">Teams whose buyers ask detailed questions before they buy — and whose answers need to be accurate.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is GEO for?</h2><p class="lede">Teams whose buyers ask detailed questions before they buy, and whose answers need to be accurate.</p></div>
     <ul class="inds8">
       <?php foreach (rl_geo_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
       <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('GEO for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>

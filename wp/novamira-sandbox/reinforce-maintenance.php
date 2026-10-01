@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Website Maintenance
- * Description: /services/website-maintenance-services/ (production URL kept, D-023; 66 clicks, 277,583 impressions / 16 months, avg position 32.6) — Website Maintenance service page. Provides [reinforce_maintenance]. Uses the shared kit (D-044). Hero animation "A month of care" (D-039 Step 3).
+ * Plugin Name: Reinforce Lab - Website Maintenance
+ * Description: /services/website-maintenance-services/ (production URL kept, D-023; 66 clicks, 277,583 impressions / 16 months, avg position 32.6) - Website Maintenance service page. Provides [reinforce_maintenance]. Uses the shared kit (D-044). Hero animation "A month of care" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -11,12 +11,12 @@ function rl_is_mt() { return is_page('website-maintenance-services'); }
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_mt_faqs() {
     return [
-        ['What do website maintenance services include?', 'Website maintenance services keep a website secure, fast and working. They cover software updates for WordPress core, plugins and themes; off-site backups and restore tests; security and vulnerability monitoring; uptime monitoring; speed and Core Web Vitals; SEO health such as broken links, redirects and indexing errors; form and checkout testing; small content changes; and support when something goes wrong — with a monthly report.'],
+        ['What do website maintenance services include?', 'Website maintenance services keep a website secure, fast and working. They cover software updates for WordPress core, plugins and themes; off-site backups and restore tests; security and vulnerability monitoring; uptime monitoring; speed and Core Web Vitals; SEO health such as broken links, redirects and indexing errors; form and checkout testing; small content changes; and support when something goes wrong, with a monthly report.'],
         ['How often should a WordPress site be updated?', 'Security fixes should be applied as soon as they are available and tested, because attackers move fast: Patchstack found that heavily exploited WordPress vulnerabilities reached mass exploitation in a median of 5 hours. Routine updates are best applied on a regular schedule, tested on a staging copy first so nothing breaks on the live site.'],
         ['Aren’t automatic updates enough?', 'No. Updates only help once a fix exists, and Patchstack reports that 46% of WordPress vulnerabilities in 2025 had no fix from the developer by the time they were made public. Maintenance adds vulnerability monitoring, protection rules, tested backups and someone accountable when something breaks.'],
-        ['Doesn’t our web host handle security?', 'Only part of it. WordPress’s own hardening guide notes that hosts are responsible for the infrastructure, not the application you install on it — your plugins, themes and settings. In Patchstack’s large-scale test of hosting companies, only 26% of vulnerability attacks were blocked.'],
+        ['Doesn’t our web host handle security?', 'Only part of it. WordPress’s own hardening guide notes that hosts are responsible for the infrastructure, not the application you install on it: your plugins, themes and settings. In Patchstack’s large-scale test of hosting companies, only 26% of vulnerability attacks were blocked.'],
         ['Do you maintain websites you didn’t build?', 'Yes. Every new site starts with an onboarding audit: we take a full backup, check updates, plugins, security, speed and SEO health, fix anything urgent, and then move the site onto the regular maintenance schedule.'],
-        ['How much does website maintenance cost?', 'It depends on the size and complexity of the site — a brochure site needs less than a busy online store with many plugins and integrations. After the onboarding audit you get a monthly plan with the scope written down.'],
+        ['How much does website maintenance cost?', 'It depends on the size and complexity of the site: a brochure site needs less than a busy online store with many plugins and integrations. After the onboarding audit you get a monthly plan with the scope written down.'],
     ];
 }
 
@@ -36,8 +36,8 @@ function rl_mt_industries() {
 
 /* ---------- hero animation: A month of care ----------
    Days of the month tick over as daily backups complete, with weekly update days marked; the status
-   panel lights — uptime, backups, updates, security, speed; then a plugin vulnerability alert arrives
-   and is handled — alert, check, patch, verify — before security turns green again; backup · update ·
+   panel lights - uptime, backups, updates, security, speed; then a plugin vulnerability alert arrives
+   and is handled - alert, check, patch, verify - before security turns green again; backup · update ·
    protect · report light in turn. 10 s loop, soft fade, reset. */
 function rl_mt_svg() {
     $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlMtT"><title id="rlMtT">Over a month, the website is backed up daily and updated weekly; uptime, backups, updates, security and speed are monitored; when a plugin vulnerability alert arrives it is checked, patched and verified.</title>';
@@ -180,9 +180,9 @@ function rl_render_maintenance() {
 
 <section class="band alt" id="what">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What's included&nbsp;<b>]</b></span><h2>What do our website maintenance services include?</h2><p class="lede">Everything that keeps a WordPress site safe, fast and working — so your team can focus on the business.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What's included&nbsp;<b>]</b></span><h2>What do our website maintenance services include?</h2><p class="lede">Everything that keeps a WordPress site safe, fast and working, so your team can focus on the business.</p></div>
     <div class="cols c3">
-      <div class="cell"><span class="n">01 · Updates</span><h3>Tested updates</h3><p>WordPress core, plugins and themes updated — tested on a staging copy first.</p></div>
+      <div class="cell"><span class="n">01 · Updates</span><h3>Tested updates</h3><p>WordPress core, plugins and themes updated, tested on a staging copy first.</p></div>
       <div class="cell"><span class="n">02 · Backups</span><h3>Off-site backups</h3><p>Regular backups stored away from your server, with restores tested so you know they work.</p></div>
       <div class="cell"><span class="n">03 · Security</span><h3>Security monitoring</h3><p>Vulnerability alerts, protection rules and malware scans, acted on quickly.</p></div>
       <div class="cell"><span class="n">04 · Uptime</span><h3>Uptime monitoring</h3><p>Checks around the clock, with alerts the moment your site goes down.</p></div>
@@ -199,11 +199,11 @@ function rl_render_maintenance() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Why it matters&nbsp;<b>]</b></span><h2>Why does WordPress need regular maintenance?</h2><p class="lede">Because the risk is in the add-ons, and it moves fast. Patchstack's analysis of 2025 shows the scale.</p></div>
     <div class="cols c3">
-      <div class="metric"><span class="num">11,334</span><h3>New vulnerabilities</h3><p>found in the WordPress ecosystem in 2025 — a 42% increase on 2024.</p></div>
+      <div class="metric"><span class="num">11,334</span><h3>New vulnerabilities</h3><p>found in the WordPress ecosystem in 2025, a 42% increase on 2024.</p></div>
       <div class="metric"><span class="num">91%</span><h3>In plugins</h3><p>of them were in plugins and 9% in themes. Only six were in WordPress core.</p></div>
       <div class="metric"><span class="num">5 hrs</span><h3>To mass exploitation</h3><p>the median time for heavily exploited vulnerabilities to be attacked at scale.</p></div>
     </div>
-    <p class="quote">"Fundamentally, security is not about perfectly secure systems… What security is though is risk reduction, not risk elimination." — WordPress.org, Hardening WordPress</p>
+    <p class="quote">"Fundamentally, security is not about perfectly secure systems… What security is though is risk reduction, not risk elimination."<br>WordPress.org, Hardening WordPress</p>
     <p class="src">Sources: Patchstack, <a href="<?php echo $ps; ?>" rel="noopener" target="_blank">State of WordPress Security in 2026</a> (updated 25 February 2026) · WordPress.org, <a href="<?php echo $hard; ?>" rel="noopener" target="_blank">Hardening WordPress</a></p>
   </div>
 </section>
@@ -228,11 +228,11 @@ function rl_render_maintenance() {
 
 <section id="myths">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Myths&nbsp;<b>]</b></span><h2>Is it enough to turn on automatic updates?</h2><p class="lede">Four assumptions that leave WordPress sites exposed — and what the evidence says.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Myths&nbsp;<b>]</b></span><h2>Is it enough to turn on automatic updates?</h2><p class="lede">Four assumptions that leave WordPress sites exposed, and what the evidence says.</p></div>
     <div class="myths">
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Automatic updates keep us safe."</p></div><div class="f"><span class="tag">Patchstack found</span><p>46% of vulnerabilities had no fix from the developer by the time they were made public — so there was nothing to update to.</p><a href="<?php echo $ps; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Automatic updates keep us safe."</p></div><div class="f"><span class="tag">Patchstack found</span><p>46% of vulnerabilities had no fix from the developer by the time they were made public, so there was nothing to update to.</p><a href="<?php echo $ps; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Our host takes care of security."</p></div><div class="f"><span class="tag">The evidence</span><p>WordPress.org notes hosts are responsible for the infrastructure, not the application you install. In Patchstack's test of hosting companies, only 26% of vulnerability attacks were blocked.</p><a href="<?php echo $hard; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"We have backups, so we're covered."</p></div><div class="f"><span class="tag">WordPress.org says</span><p>Verify the backups you created are there and usable — "This is essential." A backup you have never restored is a hope, not a plan.</p><a href="<?php echo $upg; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"We have backups, so we're covered."</p></div><div class="f"><span class="tag">WordPress.org says</span><p>Verify the backups you created are there and usable: "This is essential." A backup you have never restored is a hope, not a plan.</p><a href="<?php echo $upg; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Premium plugins are safer than free ones."</p></div><div class="f"><span class="tag">Patchstack found</span><p>Premium components had three times more known exploited vulnerabilities than free ones in 2025.</p><a href="<?php echo $ps; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
     </div>
   </div>
@@ -240,7 +240,7 @@ function rl_render_maintenance() {
 
 <section class="band alt" id="how">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does website maintenance start?</h2><p class="lede">An audit first — so we know exactly what we're looking after.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does website maintenance start?</h2><p class="lede">An audit first, so we know exactly what we're looking after.</p></div>
     <ol class="steps">
       <li class="step"><div class="k" aria-hidden="true">01</div><h3>Onboard</h3><p>Access, a full backup and a record of how the site is set up.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Audit</h3><p>Updates, plugins, security, speed, SEO health and forms checked.</p></li>
@@ -255,14 +255,14 @@ function rl_render_maintenance() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>Onboarding audit</b> — the state of your site, with urgent issues fixed.</li>
-      <li><b>Maintenance schedule</b> — backups, updates, checks and reviews on a fixed routine.</li>
-      <li><b>Staging site</b> — where every update is tested before it goes live.</li>
-      <li><b>Security monitoring</b> — vulnerability alerts, protection rules and malware scans.</li>
-      <li><b>Uptime monitoring</b> — alerts the moment the site goes down.</li>
-      <li><b>Change log</b> — every update, fix and change recorded.</li>
-      <li><b>Support</b> — a named team for fixes and content changes.</li>
-      <li><b>Monthly report</b> — uptime, updates, backups, security, speed and SEO health.</li>
+      <li><b>Onboarding audit</b>: the state of your site, with urgent issues fixed.</li>
+      <li><b>Maintenance schedule</b>: backups, updates, checks and reviews on a fixed routine.</li>
+      <li><b>Staging site</b>: where every update is tested before it goes live.</li>
+      <li><b>Security monitoring</b>: vulnerability alerts, protection rules and malware scans.</li>
+      <li><b>Uptime monitoring</b>: alerts the moment the site goes down.</li>
+      <li><b>Change log</b>: every update, fix and change recorded.</li>
+      <li><b>Support</b>: a named team for fixes and content changes.</li>
+      <li><b>Monthly report</b>: uptime, updates, backups, security, speed and SEO health.</li>
     </ul>
   </div>
 </section>
@@ -286,14 +286,14 @@ function rl_render_maintenance() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>No one can promise a site will never be hacked.</h2>
-      <p>What maintenance can promise is that risk is kept low, problems are spotted fast, and there is always a tested backup to fall back on. We would rather tell you that honestly than sell you a guarantee — and we'll show you, every month, exactly what we did to keep your site safe.</p>
+      <p>What maintenance can promise is that risk is kept low, problems are spotted fast, and there is always a tested backup to fall back on. We would rather tell you that honestly than sell you a guarantee, and we'll show you, every month, exactly what we did to keep your site safe.</p>
     </div>
   </div>
 </section>
 
 <section class="band alt" id="who">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is website maintenance for?</h2><p class="lede">Any business whose website brings in leads or orders — and can't afford to be down, slow or hacked.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is website maintenance for?</h2><p class="lede">Any business whose website brings in leads or orders, and can't afford to be down, slow or hacked.</p></div>
     <ul class="inds8">
       <?php foreach (rl_mt_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
       <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('Website maintenance for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
@@ -332,7 +332,7 @@ function rl_render_maintenance() {
   <div class="wrap">
     <div class="final">
       <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
-      <h2>When was your website last backed up — and tested?</h2>
+      <h2>When was your website last backed up, and tested?</h2>
       <p class="lede">The free Search Authority Diagnostic reviews your site's health, speed and search visibility, and shows what to fix first.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>

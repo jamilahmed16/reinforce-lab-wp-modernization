@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — AI Search Optimization
- * Description: /services/ai-search-optimization/ (approved new URL, D-006) — AISO service page. Provides [reinforce_aiso]. Hero animation "Cited answer" (D-039 Step 3). Relies on tokens/chrome from reinforce-header.php.
+ * Plugin Name: Reinforce Lab - AI Search Optimization
+ * Description: /services/ai-search-optimization/ (approved new URL, D-006) - AISO service page. Provides [reinforce_aiso]. Hero animation "Cited answer" (D-039 Step 3). Relies on tokens/chrome from reinforce-header.php.
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -11,10 +11,10 @@ function rl_is_aiso() { return is_page('ai-search-optimization'); }
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_aiso_faqs() {
     return [
-        ['What is AI Search Optimization?', 'AI Search Optimization (AISO) is the work of making a brand visible, accurately described and recommended when people ask AI search tools — such as ChatGPT, Perplexity, Gemini and Google AI Overviews — about its category. It combines AI-crawler access, entity and schema work, answer-first content, evidence and third-party authority, and it is measured prompt by prompt, engine by engine.'],
-        ['How is AI Search Optimization different from SEO?', 'SEO earns rankings and clicks in a list of results. AI Search Optimization earns a place inside the answer itself, where the AI names a few brands and cites a few sources. They share foundations — crawlable pages, authority and clear content — so Reinforce Lab runs them as one program rather than two.'],
+        ['What is AI Search Optimization?', 'AI Search Optimization (AISO) is the work of making a brand visible, accurately described and recommended when people ask AI search tools (such as ChatGPT, Perplexity, Gemini and Google AI Overviews) about its category. It combines AI-crawler access, entity and schema work, answer-first content, evidence and third-party authority, and it is measured prompt by prompt, engine by engine.'],
+        ['How is AI Search Optimization different from SEO?', 'SEO earns rankings and clicks in a list of results. AI Search Optimization earns a place inside the answer itself, where the AI names a few brands and cites a few sources. They share foundations: crawlable pages, authority and clear content, so Reinforce Lab runs them as one program rather than two.'],
         ['Which AI search engines do you cover?', 'We track where you appear across ChatGPT, Perplexity, Gemini and Google AI Overviews, and we look at other assistants where they matter in your market. Each engine is measured separately, because a brand can be recommended in one and missing from another.'],
-        ['Can you guarantee my brand will appear in AI answers?', 'No — and you should be wary of anyone who does. Nobody controls what an AI model says. What we control are the inputs: whether AI crawlers can reach your site, whether your brand is described consistently, whether content worth citing exists, and whether trusted third parties mention you. We improve those inputs and measure the results.'],
+        ['Can you guarantee my brand will appear in AI answers?', 'No, and you should be wary of anyone who does. Nobody controls what an AI model says. What we control are the inputs: whether AI crawlers can reach your site, whether your brand is described consistently, whether content worth citing exists, and whether trusted third parties mention you. We improve those inputs and measure the results.'],
         ['How long does AI Search Optimization take?', 'It depends on your starting point. Fixes such as AI-crawler access and structured data can be picked up as soon as the engines re-read your pages; broader gains across your full prompt set take consistent work over months. We set expectations after the baseline and report against it.'],
         ['Do I still need SEO if I invest in AI search?', 'Yes. AI search tools draw heavily on pages that are already crawlable, well-structured and trusted in search. Strong SEO makes AI Search Optimization work harder, and the same fixes usually improve both.'],
     ];
@@ -35,12 +35,12 @@ function rl_aiso_industries() {
 }
 
 /* ---------- hero animation: Cited answer ----------
-   A buyer's prompt types in; an AI answer writes itself; three sources appear and source [1] —
-   your brand — lights, passes three checks (crawlable · structured · verified), and the three
+   A buyer's prompt types in; an AI answer writes itself; three sources appear and source [1] -
+   your brand - lights, passes three checks (crawlable · structured · verified), and the three
    measures light: mentioned · cited · described accurately. 10 s loop, soft fade, reset.
    Engine tabs step every 10 s (40 s cycle). */
 function rl_aiso_svg() {
-    $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlAiT"><title id="rlAiT">A buyer asks an AI search engine a question; the answer cites your brand as source one — crawlable, structured and verified — and the brand is mentioned, cited and described accurately.</title>'
+    $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlAiT"><title id="rlAiT">A buyer asks an AI search engine a question; the answer cites your brand as source one (crawlable, structured and verified) and the brand is mentioned, cited and described accurately.</title>'
         . '<defs><clipPath id="rlaiType"><rect class="ai-typ" x="16" y="52" width="352" height="24"/></clipPath></defs>';
     $tabs = ['CHATGPT', 'PERPLEXITY', 'GEMINI', 'AI OVERVIEWS'];
     foreach ($tabs as $i => $t) $s .= '<text class="ai-tab" x="' . (4 + $i * 128) . '" y="16">' . $t . '</text><text class="ai-tab ai-tab-on ai-tab' . $i . '" x="' . (4 + $i * 128) . '" y="16">' . $t . '</text>';
@@ -157,7 +157,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     $graph[] = [
         '@type' => 'Service', '@id' => $url . '#service', 'name' => 'AI Search Optimization', 'alternateName' => 'AISO',
         'serviceType' => 'AI search optimization', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
-        'description' => 'AI Search Optimization makes a brand visible, accurately described and recommended in AI search tools such as ChatGPT, Perplexity, Gemini and Google AI Overviews — through AI-crawler access, entity and schema work, answer-first content, evidence and third-party authority, measured per engine.',
+        'description' => 'AI Search Optimization makes a brand visible, accurately described and recommended in AI search tools such as ChatGPT, Perplexity, Gemini and Google AI Overviews, through AI-crawler access, entity and schema work, answer-first content, evidence and third-party authority, measured per engine.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
     ];
     $graph[] = [
@@ -188,7 +188,7 @@ function rl_render_aiso() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;AI Search Optimization&nbsp;<b>]</b></span>
       <h1 class="h1">Be found in Google.<br>Be named in<br><span class="r">AI answers.</span></h1>
-      <p class="lede"><strong>AI Search Optimization (AISO)</strong> makes your brand visible, accurately described and recommended when buyers ask ChatGPT, Perplexity, Gemini or Google AI Overviews about your category. Reinforce Lab runs it as one program with your SEO — measured engine by engine, on the questions your buyers actually ask.</p>
+      <p class="lede"><strong>AI Search Optimization (AISO)</strong> makes your brand visible, accurately described and recommended when buyers ask ChatGPT, Perplexity, Gemini or Google AI Overviews about your category. Reinforce Lab runs it as one program with your SEO, measured engine by engine, on the questions your buyers actually ask.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#how">See how it works</a>
@@ -203,7 +203,7 @@ function rl_render_aiso() {
 
 <section class="band alt" id="what">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Definitions&nbsp;<b>]</b></span><h2>What is AI Search Optimization — and how is it different?</h2><p class="lede">Four disciplines get mixed up. They overlap, but each has its own goal. AI Search Optimization is the umbrella for being visible in AI search; GEO and LLM Optimization are specialist layers inside it.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Definitions&nbsp;<b>]</b></span><h2>What is AI Search Optimization, and how is it different?</h2><p class="lede">Four disciplines get mixed up. They overlap, but each has its own goal. AI Search Optimization is the umbrella for being visible in AI search; GEO and LLM Optimization are specialist layers inside it.</p></div>
     <div class="tscroll" role="region" aria-label="Comparison of SEO, AI Search Optimization, GEO and LLM Optimization" tabindex="0">
       <table>
         <thead><tr><th scope="col"><span class="sr" style="position:absolute;left:-9999px">Aspect</span></th><th scope="col">SEO</th><th scope="col" class="us">AI Search Optimization</th><th scope="col">GEO</th><th scope="col">LLM Optimization</th></tr></thead>
@@ -221,12 +221,12 @@ function rl_render_aiso() {
 
 <section id="why">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;The problem&nbsp;<b>]</b></span><h2>Why do brands disappear from AI answers?</h2><p class="lede">Ranking on Google does not mean an AI will name you. These are the usual reasons — and what we do about each.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;The problem&nbsp;<b>]</b></span><h2>Why do brands disappear from AI answers?</h2><p class="lede">Ranking on Google does not mean an AI will name you. These are the usual reasons, and what we do about each.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01 · Access</span><h3>AI crawlers can't read you</h3><p>Robots rules, firewalls or script-only pages stop AI crawlers from reaching the content you want quoted.</p><p class="fix"><b>Fix</b>Crawler policy, llms.txt and server-rendered pages.</p></div>
-      <div class="cell"><span class="n">02 · Entity</span><h3>The AI isn't sure who you are</h3><p>Different names, descriptions and profiles across the web make your brand hard to identify — or easy to confuse.</p><p class="fix"><b>Fix</b>One consistent entity, schema and linked profiles.</p></div>
+      <div class="cell"><span class="n">02 · Entity</span><h3>The AI isn't sure who you are</h3><p>Different names, descriptions and profiles across the web make your brand hard to identify, or easy to confuse.</p><p class="fix"><b>Fix</b>One consistent entity, schema and linked profiles.</p></div>
       <div class="cell"><span class="n">03 · Content</span><h3>Nothing clean to quote</h3><p>Long pages that never answer the question directly give AI engines nothing to lift.</p><p class="fix"><b>Fix</b>Answer-first pages built around real buyer questions.</p></div>
-      <div class="cell"><span class="n">04 · Evidence</span><h3>Claims without sources</h3><p>Unsupported claims are risky to repeat — especially in health, pharma and finance.</p><p class="fix"><b>Fix</b>Every important claim tied to a source and checked by a person.</p></div>
+      <div class="cell"><span class="n">04 · Evidence</span><h3>Claims without sources</h3><p>Unsupported claims are risky to repeat, especially in health, pharma and finance.</p><p class="fix"><b>Fix</b>Every important claim tied to a source and checked by a person.</p></div>
       <div class="cell"><span class="n">05 · Authority</span><h3>No one else vouches for you</h3><p>AI engines lean on independent sources. If trusted third parties never mention you, a competitor gets named instead.</p><p class="fix"><b>Fix</b>Earned mentions, reviews and digital PR.</p></div>
       <div class="cell"><span class="n">06 · Measurement</span><h3>No one is checking</h3><p>Most teams don't know which prompts mention them, or whether the description is even right.</p><p class="fix"><b>Fix</b>A tracked prompt set, engine by engine.</p></div>
     </div>
@@ -237,7 +237,7 @@ function rl_render_aiso() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;How it works&nbsp;<b>]</b></span><h2>How does AI Search Optimization work?</h2><p class="lede">Five steps, run as a loop. Measurement comes first, so every fix is judged against a baseline.</p></div>
     <ol class="steps">
-      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Baseline</h3><p>Build a prompt set from real buyer questions — search queries, sales and customer questions — and record where you are mentioned, cited and described, against named competitors.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Baseline</h3><p>Build a prompt set from real buyer questions (search queries, sales and customer questions) and record where you are mentioned, cited and described, against named competitors.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Open access</h3><p>Check that AI crawlers can reach the right pages, agree your crawler policy, publish an llms.txt and make sure content is in the page's HTML.</p></li>
       <li class="step"><div class="k" aria-hidden="true">03</div><h3>Clarify the entity</h3><p>One name, one description, structured data and linked profiles, so every engine knows who you are, what you do and who you serve.</p></li>
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Content &amp; evidence</h3><p>Answer-first pages and question-led headings, with every important claim sourced and reviewed before it ships.</p></li>
@@ -250,14 +250,14 @@ function rl_render_aiso() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>AI visibility baseline</b> — where you appear in ChatGPT, Perplexity, Gemini and Google AI Overviews today.</li>
-      <li><b>Your prompt set</b> — the buyer questions that matter to revenue, agreed with you.</li>
-      <li><b>Competitor comparison</b> — who gets named and cited instead of you, and why.</li>
-      <li><b>AI-access fixes</b> — crawler policy, llms.txt and rendering checks.</li>
-      <li><b>Entity &amp; schema plan</b> — Organization, Service and FAQ markup and consistent profiles.</li>
-      <li><b>Content priorities</b> — the pages to create, rewrite or refresh first.</li>
-      <li><b>Accuracy review</b> — where AI tools describe you wrongly, and the sources behind it.</li>
-      <li><b>Monthly reporting</b> — mentions, citations, accuracy and AI referral traffic, with next actions.</li>
+      <li><b>AI visibility baseline</b>: where you appear in ChatGPT, Perplexity, Gemini and Google AI Overviews today.</li>
+      <li><b>Your prompt set</b>: the buyer questions that matter to revenue, agreed with you.</li>
+      <li><b>Competitor comparison</b>: who gets named and cited instead of you, and why.</li>
+      <li><b>AI-access fixes</b>: crawler policy, llms.txt and rendering checks.</li>
+      <li><b>Entity &amp; schema plan</b>: Organization, Service and FAQ markup and consistent profiles.</li>
+      <li><b>Content priorities</b>: the pages to create, rewrite or refresh first.</li>
+      <li><b>Accuracy review</b>: where AI tools describe you wrongly, and the sources behind it.</li>
+      <li><b>Monthly reporting</b>: mentions, citations, accuracy and AI referral traffic, with next actions.</li>
     </ul>
   </div>
 </section>
@@ -280,14 +280,14 @@ function rl_render_aiso() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>No one can guarantee what an AI will say.</h2>
-      <p>AI answers change from one session to the next, and no agency controls the models. What we control are the inputs — access, entity, content, evidence and authority — and we measure the outputs on a fixed prompt set so you can see what the work is doing. If a prompt stays flat, we tell you and change the plan.</p>
+      <p>AI answers change from one session to the next, and no agency controls the models. What we control are the inputs: access, entity, content, evidence and authority, and we measure the outputs on a fixed prompt set so you can see what the work is doing. If a prompt stays flat, we tell you and change the plan.</p>
     </div>
   </div>
 </section>
 
 <section class="band alt" id="who">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is AI Search Optimization for?</h2><p class="lede">Businesses whose buyers research before they buy — and industries where an AI getting the facts wrong carries real risk.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is AI Search Optimization for?</h2><p class="lede">Businesses whose buyers research before they buy, and industries where an AI getting the facts wrong carries real risk.</p></div>
     <ul class="inds8">
       <?php foreach (rl_aiso_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
       <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('AI Search Optimization for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
@@ -326,7 +326,7 @@ function rl_render_aiso() {
   <div class="wrap">
     <div class="final">
       <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
-      <h2>Do AI tools recommend you — or a competitor?</h2>
+      <h2>Do AI tools recommend you, or a competitor?</h2>
       <p class="lede">The free Search Authority Diagnostic shows where you stand in Google and in AI answers, and what to fix first.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>

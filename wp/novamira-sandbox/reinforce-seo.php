@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — Search Engine Optimization (core SEO pillar)
- * Description: /services/best-search-engine-optimization-services/ (production URL kept, D-023; 420k impressions / 16 months) — the core SEO pillar; Technical, On-page, Content, Authority, Local, International and Enterprise link up to it. 301 target for /services/best-on-page-seo-services/. Provides [reinforce_seo]. Uses the shared kit (D-044). Hero animation "Four pillars" (D-039 Step 3).
+ * Plugin Name: Reinforce Lab - Search Engine Optimization (core SEO pillar)
+ * Description: /services/best-search-engine-optimization-services/ (production URL kept, D-023; 420k impressions / 16 months) - the core SEO pillar; Technical, On-page, Content, Authority, Local, International and Enterprise link up to it. 301 target for /services/best-on-page-seo-services/. Provides [reinforce_seo]. Uses the shared kit (D-044). Hero animation "Four pillars" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -11,12 +11,12 @@ function rl_is_seo() { return is_page('best-search-engine-optimization-services'
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_seo_faqs() {
     return [
-        ['What are SEO services?', 'SEO services — search engine optimization services — improve how search engines find, understand and rank your website, so more of the right people reach it from Google and AI search. They usually cover technical SEO, on-page optimization, content, and authority building such as digital PR, plus keyword research and reporting.'],
+        ['What are SEO services?', 'SEO services (search engine optimization services) improve how search engines find, understand and rank your website, so more of the right people reach it from Google and AI search. They usually cover technical SEO, on-page optimization, content, and authority building such as digital PR, plus keyword research and reporting.'],
         ['What do SEO services include?', 'Google lists the services a good SEO provides: a review of your site content or structure, technical advice on development (hosting, redirects, error pages, JavaScript), content development, keyword research, SEO training, expertise in specific markets and geographies, and optimizing for generative AI. We cover all of them, grouped into four pillars: technical, on-page, content and authority.'],
         ['How long does SEO take to work?', 'Google says some changes take effect in a few hours and others take several months, and that you should generally wait a few weeks to judge whether a change helped. A full SEO programme builds over months: technical fixes first, then content and authority that compound over time.'],
-        ['Can you guarantee a first-page or number-one ranking?', 'No — and Google itself says no one can guarantee a #1 ranking on Google, and to beware of anyone who claims to. We commit to the work, to following Google’s guidelines, and to reporting honestly what changed.'],
-        ['Do I need an SEO consultant or an SEO agency?', 'If you have a team that can implement changes, a consultant who sets the strategy and standards may be enough. If you need the work done — fixes, content, outreach and reporting — a managed SEO service is usually the better fit. Google notes that small local businesses can often do much of the work themselves.'],
-        ['Does SEO still matter with AI search?', 'Yes. AI search tools draw on web pages that can be crawled, understood and trusted — the same foundations SEO builds. We extend SEO with AI search optimization, so your brand is visible and described accurately in AI answers as well as in Google’s results.'],
+        ['Can you guarantee a first-page or number-one ranking?', 'No, and Google itself says no one can guarantee a #1 ranking on Google, and to beware of anyone who claims to. We commit to the work, to following Google’s guidelines, and to reporting honestly what changed.'],
+        ['Do I need an SEO consultant or an SEO agency?', 'If you have a team that can implement changes, a consultant who sets the strategy and standards may be enough. If you need the work done (fixes, content, outreach and reporting), a managed SEO service is usually the better fit. Google notes that small local businesses can often do much of the work themselves.'],
+        ['Does SEO still matter with AI search?', 'Yes. AI search tools draw on web pages that can be crawled, understood and trusted: the same foundations SEO builds. We extend SEO with AI search optimization, so your brand is visible and described accurately in AI answers as well as in Google’s results.'],
     ];
 }
 
@@ -35,12 +35,12 @@ function rl_seo_industries() {
 }
 
 /* ---------- hero animation: Four pillars ----------
-   Google's three stages (crawl · index · serve) form the foundation; four pillars — technical,
-   on-page, content, authority — rise in turn and carry a "search authority" beam. Each finished
+   Google's three stages (crawl · index · serve) form the foundation; four pillars - technical,
+   on-page, content, authority - rise in turn and carry a "search authority" beam. Each finished
    pillar moves your result up one place in the search results, until it ranks first and the AI
    overview cites it. 10 s loop, soft fade, reset. */
 function rl_seo_svg() {
-    $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlSeT"><title id="rlSeT">On a foundation of crawling, indexing and serving, four pillars — technical SEO, on-page SEO, content and authority — rise in turn; with each one your page climbs the search results until it ranks first and is cited in the AI overview.</title>';
+    $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlSeT"><title id="rlSeT">On a foundation of crawling, indexing and serving, four pillars (technical SEO, on-page SEO, content and authority) rise in turn; with each one your page climbs the search results until it ranks first and is cited in the AI overview.</title>';
     $s .= '<rect class="s-b" x="0" y="300" width="250" height="28"/><rect class="s-on s-fnd" x="0" y="300" width="250" height="28"/><text class="s-ft" x="125" y="318" text-anchor="middle">CRAWL · INDEX · SERVE</text>';
     foreach (['TECHNICAL', 'ON-PAGE', 'CONTENT', 'AUTHORITY'] as $i => $c) {
         $x = 12 + $i * 60; $cx = $x + 20;
@@ -56,7 +56,7 @@ function rl_seo_svg() {
         $s .= '<g class="s-r s-r' . $k . '"><rect class="s-rb" x="290" y="' . $y . '" width="230" height="44"/><text class="s-rn" x="302" y="' . ($y + 17) . '">RESULT</text><rect class="s-bar" x="302" y="' . ($y + 25) . '" width="' . [150, 130, 160, 120][$k] . '" height="4"/><rect class="s-bar" x="302" y="' . ($y + 33) . '" width="96" height="4"/></g>';
     }
     $s .= '<g class="s-you"><rect class="s-yb" x="290" y="316" width="230" height="44"/><text class="s-yt" x="302" y="333">YOUR PAGE</text><rect class="s-ybar" x="302" y="341" width="150" height="4"/><rect class="s-ybar" x="302" y="349" width="96" height="4"/></g>';
-    $s .= '<text class="s-cap" x="0" y="384">BUILT ON GOOGLE’S THREE STAGES — CRAWL · INDEX · SERVE</text>';
+    $s .= '<text class="s-cap" x="0" y="384">BUILT ON GOOGLE’S THREE STAGES: CRAWL · INDEX · SERVE</text>';
     return $s . '</svg>';
 }
 function rl_seo_kf() {
@@ -139,7 +139,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     $graph[] = [
         '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Search Engine Optimization Services', 'alternateName' => ['SEO services', 'SEO consulting'],
         'serviceType' => 'Search engine optimization', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
-        'description' => 'Search engine optimization services covering the four pillars of SEO — technical SEO, on-page SEO, content and authority — built to Google’s guidelines and extended to AI search, measured in leads and revenue.',
+        'description' => 'Search engine optimization services covering the four pillars of SEO (technical SEO, on-page SEO, content and authority), built to Google’s guidelines and extended to AI search, measured in leads and revenue.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
         'hasOfferCatalog' => ['@type' => 'OfferCatalog', 'name' => 'SEO services', 'itemListElement' => array_map(function ($p) { return ['@type' => 'Offer', 'itemOffered' => ['@type' => 'Service', 'name' => $p[0], 'url' => $p[1]]]; }, array_values(array_filter(array_map(function ($s) { $l = function_exists('rl_url_by_path') ? rl_url_by_path('services/' . $s[0], '') : ''; return $l ? [$s[1], $l] : null; }, [['technical-seo-services', 'Technical SEO'], ['seo-content-systems', 'SEO Content Systems'], ['press-release-services', 'Digital PR & Link Building'], ['local-seo', 'Local SEO'], ['international-seo', 'International SEO'], ['enterprise-seo-strategy', 'Enterprise SEO Strategy'], ['ai-search-optimization', 'AI Search Optimization']]))))],
     ];
@@ -173,7 +173,7 @@ function rl_render_seo() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;SEO&nbsp;<b>]</b></span>
       <h1 class="h1">SEO services<br>that compound<br><span class="r">into authority.</span></h1>
-      <p class="lede"><strong>Search engine optimization (SEO) services</strong> help search engines find, understand and trust your website, so the right customers reach you from Google and from AI answers. Reinforce Lab runs all four pillars — technical SEO, on-page SEO, content and authority — as one system, built to Google's own guidelines and measured in leads and revenue, not rankings alone.</p>
+      <p class="lede"><strong>Search engine optimization (SEO) services</strong> help search engines find, understand and trust your website, so the right customers reach you from Google and from AI answers. Reinforce Lab runs all four pillars (technical SEO, on-page SEO, content and authority) as one system, built to Google's own guidelines and measured in leads and revenue, not rankings alone.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#what">What's included</a>
@@ -188,16 +188,16 @@ function rl_render_seo() {
 
 <section class="band alt" id="what">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What's included&nbsp;<b>]</b></span><h2>What are SEO services, and what do they include?</h2><p class="lede">Google's own list of what a good SEO provides is a fair checklist. We cover every item — organised into the disciplines below, each with its own specialist page.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What's included&nbsp;<b>]</b></span><h2>What are SEO services, and what do they include?</h2><p class="lede">Google's own list of what a good SEO provides is a fair checklist. We cover every item, organised into the disciplines below, each with its own specialist page.</p></div>
     <ul class="gl" aria-label="Services Google lists for an SEO">
       <li>Site content &amp; structure review</li><li>Technical advice</li><li>Content development</li><li>Keyword research</li><li>SEO training</li><li>Market &amp; geography expertise</li><li>Optimizing for generative AI</li>
     </ul>
     <div class="cols c3">
       <?php foreach ([
-          ['services/technical-seo-services', '01 · Technical', 'Technical SEO', 'Crawling, indexing, rendering, speed and site architecture — so search engines can reach and understand every page.'],
+          ['services/technical-seo-services', '01 · Technical', 'Technical SEO', 'Crawling, indexing, rendering, speed and site architecture, so search engines can reach and understand every page.'],
           ['#onpage', '02 · On-page', 'On-page SEO', 'Titles, snippets, headings, internal links and structured data that tell search engines what each page is about.'],
           ['services/seo-content-systems', '03 · Content', 'SEO Content Systems', 'Keyword research, briefs and helpful content produced as a repeatable system.'],
-          ['services/press-release-services', '04 · Authority', 'Digital PR &amp; Link Building', 'Coverage, links and mentions earned from relevant publications — never bought.'],
+          ['services/press-release-services', '04 · Authority', 'Digital PR &amp; Link Building', 'Coverage, links and mentions earned from relevant publications, never bought.'],
           ['services/local-seo', '05 · Local', 'Local SEO', 'Google Business Profile, citations, reviews and location pages for nearby customers.'],
           ['services/international-seo', '06 · Markets', 'International SEO', 'Country and language versions, hreflang and market-by-market launches.'],
           ['services/enterprise-seo-strategy', '07 · Scale', 'Enterprise SEO Strategy', 'Governance, templates, releases and migrations for large, complex sites.'],
@@ -214,11 +214,11 @@ function rl_render_seo() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;How search works&nbsp;<b>]</b></span><h2>How does Google decide what to show?</h2><p class="lede">Google works in three stages, and not every page makes it through each one. SEO makes sure yours does.</p></div>
     <div class="factors">
-      <div class="factor"><span class="n">01 · Crawling</span><h3>Can Google find the page?</h3><p>Google discovers pages mainly through links and sitemaps, then downloads and renders them.</p><p class="we"><b>We make sure</b>Important pages are linked, reachable and rendered — and junk URLs don't waste the crawl.</p></div>
+      <div class="factor"><span class="n">01 · Crawling</span><h3>Can Google find the page?</h3><p>Google discovers pages mainly through links and sitemaps, then downloads and renders them.</p><p class="we"><b>We make sure</b>Important pages are linked, reachable and rendered, and junk URLs don't waste the crawl.</p></div>
       <div class="factor"><span class="n">02 · Indexing</span><h3>Does Google understand it?</h3><p>Google analyses the content, picks a canonical version from duplicates, and decides whether to store it. Indexing isn't guaranteed.</p><p class="we"><b>We make sure</b>Each page is unique, clearly canonical and worth indexing.</p></div>
-      <div class="factor"><span class="n">03 · Serving</span><h3>Is it the best answer?</h3><p>For each search, Google returns what it judges most relevant and highest quality, using hundreds of factors.</p><p class="we"><b>We make sure</b>The page answers the search better than the alternatives — and is trusted.</p></div>
+      <div class="factor"><span class="n">03 · Serving</span><h3>Is it the best answer?</h3><p>For each search, Google returns what it judges most relevant and highest quality, using hundreds of factors.</p><p class="we"><b>We make sure</b>The page answers the search better than the alternatives, and is trusted.</p></div>
     </div>
-    <p class="quote">"Google doesn't accept payment to crawl a site more frequently, or rank it higher. If anyone tells you otherwise, they're wrong." — Google Search Central</p>
+    <p class="quote">"Google doesn't accept payment to crawl a site more frequently, or rank it higher. If anyone tells you otherwise, they're wrong."<br>Google Search Central</p>
     <p class="src">Source: Google, <a href="<?php echo $gd('fundamentals/how-search-works'); ?>" rel="noopener" target="_blank">In-depth guide to how Google Search works</a></p>
   </div>
 </section>
@@ -230,7 +230,7 @@ function rl_render_seo() {
       <div class="cell"><span class="n">Titles</span><h3>Title links</h3><p>A title unique to the page, clear and concise, that accurately describes its content.</p></div>
       <div class="cell"><span class="n">Snippets</span><h3>Meta descriptions</h3><p>A short, relevant summary that helps people decide to click from the results.</p></div>
       <div class="cell"><span class="n">Structure</span><h3>Headings &amp; readability</h3><p>Well-organised, easy-to-read content broken into sections with helpful headings.</p></div>
-      <div class="cell"><span class="n">Language</span><h3>How people search</h3><p>The words your customers actually use — beginners and experts alike — written naturally, never stuffed.</p></div>
+      <div class="cell"><span class="n">Language</span><h3>How people search</h3><p>The words your customers actually use (beginners and experts alike), written naturally, never stuffed.</p></div>
       <div class="cell"><span class="n">Links</span><h3>Internal links &amp; anchor text</h3><p>Descriptive links that connect related pages and tell search engines what each one covers.</p></div>
       <div class="cell"><span class="n">Schema</span><h3>URLs &amp; structured data</h3><p>Descriptive URLs and structured data that match what the page shows.</p></div>
     </div>
@@ -243,9 +243,9 @@ function rl_render_seo() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Myths&nbsp;<b>]</b></span><h2>Which SEO beliefs can you stop worrying about?</h2><p class="lede">Google's own starter guide lists things it believes you shouldn't focus on. Here are five we still hear every week.</p></div>
     <div class="myths">
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"You need the meta keywords tag."</p></div><div class="f"><span class="tag">Google says</span><p>Google Search doesn't use the keywords meta tag.</p><a href="<?php echo $sg; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Pages need at least 2,000 words to rank."</p></div><div class="f"><span class="tag">Google says</span><p>Content length alone doesn't matter for ranking — there's no magical word count target.</p><a href="<?php echo $sg; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Pages need at least 2,000 words to rank."</p></div><div class="f"><span class="tag">Google says</span><p>Content length alone doesn't matter for ranking; there's no magical word count target.</p><a href="<?php echo $sg; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"E-E-A-T is a ranking factor you can score."</p></div><div class="f"><span class="tag">Google says</span><p>E-E-A-T isn't a ranking factor. Showing real experience and expertise still helps people trust your content.</p><a href="<?php echo $sg; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
-      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Duplicate content gets you penalised."</p></div><div class="f"><span class="tag">Google says</span><p>Duplicate content isn't a violation of its spam policies — but it can waste crawling and confuse users, so we still fix it.</p><a href="<?php echo $sg; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
+      <div class="myth"><div class="m"><span class="tag">Myth</span><p>"Duplicate content gets you penalised."</p></div><div class="f"><span class="tag">Google says</span><p>Duplicate content isn't a violation of its spam policies, but it can waste crawling and confuse users, so we still fix it.</p><a href="<?php echo $sg; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
       <div class="myth"><div class="m"><span class="tag">Myth</span><p>"This agency can guarantee you the #1 spot."</p></div><div class="f"><span class="tag">Google says</span><p>No one can guarantee a #1 ranking on Google. Beware of anyone who claims to, or claims a "special relationship" with Google.</p><a href="<?php echo $need; ?>" rel="noopener" target="_blank">Source &rarr;</a></div></div>
     </div>
   </div>
@@ -255,7 +255,7 @@ function rl_render_seo() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Method&nbsp;<b>]</b></span><h2>How does Reinforce Lab run an SEO programme?</h2><p class="lede">Nine stages, in order. Protecting what already ranks comes before building anything new.</p></div>
     <div class="cols c3">
-      <div class="cell"><span class="n">01 · Discover</span><h3>Baseline</h3><p>Search Console, analytics, crawl and competitors — what ranks, what doesn't, and why.</p></div>
+      <div class="cell"><span class="n">01 · Discover</span><h3>Baseline</h3><p>Search Console, analytics, crawl and competitors: what ranks, what doesn't, and why.</p></div>
       <div class="cell"><span class="n">02 · Preserve</span><h3>Protect what works</h3><p>Every URL with traffic, links or impressions is kept or redirected deliberately.</p></div>
       <div class="cell"><span class="n">03 · Architect</span><h3>Site structure</h3><p>Pillars, supporting pages and internal links mapped to how customers search.</p></div>
       <div class="cell"><span class="n">04 · Content</span><h3>Helpful pages</h3><p>People-first content that answers each search better than the alternatives.</p></div>
@@ -263,7 +263,7 @@ function rl_render_seo() {
       <div class="cell"><span class="n">06 · Build</span><h3>Implement</h3><p>Technical fixes, templates, schema and pages built to one standard.</p></div>
       <div class="cell"><span class="n">07 · QA</span><h3>Check before launch</h3><p>Indexing, redirects, schema, speed and mobile checked page by page.</p></div>
       <div class="cell"><span class="n">08 · Launch</span><h3>Release safely</h3><p>Changes shipped in steps, not in one risky batch.</p></div>
-      <div class="cell"><span class="n">09 · Monitor</span><h3>Measure &amp; iterate</h3><p>Rankings, traffic, leads and AI visibility tracked — then the next priority.</p></div>
+      <div class="cell"><span class="n">09 · Monitor</span><h3>Measure &amp; iterate</h3><p>Rankings, traffic, leads and AI visibility tracked, then the next priority.</p></div>
     </div>
   </div>
 </section>
@@ -272,7 +272,7 @@ function rl_render_seo() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;B2B SEO&nbsp;<b>]</b></span><h2>How is B2B SEO different?</h2><p class="lede">Fewer searches, bigger deals, longer decisions. B2B SEO is judged by pipeline, not traffic.</p></div>
     <div class="cols c3">
-      <div class="cell"><span class="n">Buying groups</span><h3>Several people decide</h3><p>Content for each role in the decision — the user, the budget holder and the technical evaluator.</p></div>
+      <div class="cell"><span class="n">Buying groups</span><h3>Several people decide</h3><p>Content for each role in the decision: the user, the budget holder and the technical evaluator.</p></div>
       <div class="cell"><span class="n">Intent</span><h3>Low volume, high value</h3><p>Searches with a few dozen impressions can be worth more than thousands of casual visits.</p></div>
       <div class="cell"><span class="n">Pipeline</span><h3>Measured in revenue</h3><p>Organic leads followed into your CRM, so SEO is judged by the deals it helps create.</p></div>
     </div>
@@ -286,7 +286,7 @@ function rl_render_seo() {
       <div class="cell"><span class="n">SEO consulting</span><h3>You have the team</h3><p>We set the strategy, standards and priorities, review what your team ships, and train them. Best when you have developers and writers who can implement.</p></div>
       <div class="cell"><span class="n">Managed SEO</span><h3>You need the work done</h3><p>We do the technical fixes, content and outreach, and report on results. Best when SEO has no owner in-house.</p></div>
     </div>
-    <p class="quote">"If you run a small local business, you can probably do much of the work yourself." — Google, Do you need an SEO?</p>
+    <p class="quote">"If you run a small local business, you can probably do much of the work yourself."<br>Google, Do you need an SEO?</p>
   </div>
 </section>
 
@@ -294,14 +294,14 @@ function rl_render_seo() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>SEO audit &amp; baseline</b> — technical, content, authority and competitors.</li>
-      <li><b>Keyword &amp; topic map</b> — the searches that matter, mapped to pages.</li>
-      <li><b>Prioritised roadmap</b> — what to fix and build first, and why.</li>
-      <li><b>Technical fixes</b> — crawling, indexing, speed and structured data.</li>
-      <li><b>On-page optimisation</b> — titles, snippets, headings and internal links.</li>
-      <li><b>Content</b> — new and improved pages that answer real searches.</li>
-      <li><b>Authority</b> — digital PR and earned links within Google's policies.</li>
-      <li><b>Monthly reporting</b> — rankings, traffic, leads and AI visibility.</li>
+      <li><b>SEO audit &amp; baseline</b>: technical, content, authority and competitors.</li>
+      <li><b>Keyword &amp; topic map</b>: the searches that matter, mapped to pages.</li>
+      <li><b>Prioritised roadmap</b>: what to fix and build first, and why.</li>
+      <li><b>Technical fixes</b>: crawling, indexing, speed and structured data.</li>
+      <li><b>On-page optimisation</b>: titles, snippets, headings and internal links.</li>
+      <li><b>Content</b>: new and improved pages that answer real searches.</li>
+      <li><b>Authority</b>: digital PR and earned links within Google's policies.</li>
+      <li><b>Monthly reporting</b>: rankings, traffic, leads and AI visibility.</li>
     </ul>
   </div>
 </section>
@@ -325,7 +325,7 @@ function rl_render_seo() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>No one can guarantee you the top spot.</h2>
-      <p>Google says so itself. What we can promise is the work that makes rankings likely: a site Google can crawl and index, pages that answer searches better than the alternatives, and authority earned the right way — with every change explained and every result reported, good or bad.</p>
+      <p>Google says so itself. What we can promise is the work that makes rankings likely: a site Google can crawl and index, pages that answer searches better than the alternatives, and authority earned the right way, with every change explained and every result reported, good or bad.</p>
     </div>
   </div>
 </section>

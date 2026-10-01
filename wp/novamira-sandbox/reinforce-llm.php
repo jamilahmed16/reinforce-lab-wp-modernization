@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab — LLM Optimization
- * Description: /services/llm-optimization/ (D-023 new slug) — LLM Optimization service page (entity & description layer). Provides [reinforce_llm]. Hero animation "Entity alignment" (D-039 Step 3). Relies on tokens/chrome from reinforce-header.php.
+ * Plugin Name: Reinforce Lab - LLM Optimization
+ * Description: /services/llm-optimization/ (D-023 new slug) - LLM Optimization service page (entity & description layer). Provides [reinforce_llm]. Hero animation "Entity alignment" (D-039 Step 3). Relies on tokens/chrome from reinforce-header.php.
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -11,9 +11,9 @@ function rl_is_llm() { return is_page('llm-optimization'); }
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_llm_faqs() {
     return [
-        ['What is LLM Optimization?', 'LLM Optimization is the work of shaping how large language models — the AI behind tools such as ChatGPT, Claude, Gemini and Perplexity — understand, describe and recommend a brand. It makes the facts about a brand consistent and easy to find everywhere models learn from and look things up, then checks what the models actually say.'],
-        ['How is LLM Optimization different from GEO and AI Search Optimization?', 'AI Search Optimization is the full program for being visible in AI search. GEO works on pages and passages so they get cited in answers. LLM Optimization works on the brand itself as an entity: who you are, what you do and who you serve, stated the same way everywhere — so models describe you correctly even when no page is cited.'],
-        ['Can you fix wrong information ChatGPT or another AI says about us?', 'Not by editing the model — no one outside the AI company can do that. We find where the wrong information comes from, correct it at the source, publish clear and current facts on your own site, and re-test. Tools that search the web can pick up corrections quickly; what a model learned in training changes only when it is retrained.'],
+        ['What is LLM Optimization?', 'LLM Optimization is the work of shaping how large language models (the AI behind tools such as ChatGPT, Claude, Gemini and Perplexity) understand, describe and recommend a brand. It makes the facts about a brand consistent and easy to find everywhere models learn from and look things up, then checks what the models actually say.'],
+        ['How is LLM Optimization different from GEO and AI Search Optimization?', 'AI Search Optimization is the full program for being visible in AI search. GEO works on pages and passages so they get cited in answers. LLM Optimization works on the brand itself as an entity: who you are, what you do and who you serve, stated the same way everywhere, so models describe you correctly even when no page is cited.'],
+        ['Can you fix wrong information ChatGPT or another AI says about us?', 'Not by editing the model; no one outside the AI company can do that. We find where the wrong information comes from, correct it at the source, publish clear and current facts on your own site, and re-test. Tools that search the web can pick up corrections quickly; what a model learned in training changes only when it is retrained.'],
         ['Should we block AI crawlers?', 'It depends on the crawler. Some collect data for training models, others fetch pages for AI search answers. OpenAI, for example, says sites that opt out of its search crawler will not be shown in ChatGPT search answers, while its separate training crawler can be blocked without that effect. We help you set a policy per crawler, based on what you want.'],
         ['What is llms.txt, and do we need one?', 'llms.txt is a proposal, published by Jeremy Howard in September 2024, for a plain-text file at a site’s root that points AI agents to a site’s most useful pages. It is not an official standard and no major AI company has said it relies on it, so we treat it as a low-cost extra, not a ranking factor.'],
         ['How long does LLM Optimization take?', 'Corrections on your own site and profiles can be picked up quickly by AI tools that search the web. Changes to what a model learned during training take longer, because they depend on the next training cycle. We baseline how each model describes you first, then report changes against that baseline.'],
@@ -58,7 +58,7 @@ function rl_llm_nodes() {
     return [['WEBSITE', 75, 40, -14, -10], ['SCHEMA', 75, 120, -22, 8], ['PROFILES', 75, 200, -10, 16], ['DIRECTORIES', 445, 40, 16, -12], ['REVIEWS', 445, 120, 22, -6], ['PRESS', 445, 200, 12, 14]];
 }
 function rl_llm_svg() {
-    $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlLlmT"><title id="rlLlmT">Six sources that describe your brand — website, schema, profiles, directories, reviews and press — move from inconsistent to consistent and connect to one brand entity, so the AI model describes the brand consistently, correctly and currently.</title>';
+    $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlLlmT"><title id="rlLlmT">Six sources that describe your brand (website, schema, profiles, directories, reviews and press) move from inconsistent to consistent and connect to one brand entity, so the AI model describes the brand consistently, correctly and currently.</title>';
     foreach (rl_llm_nodes() as $i => $n) {
         list($lab, $cx, $cy) = $n;
         $left = $cx < 260; $ex = $left ? $cx + 65 : $cx - 65; $tx = $left ? 205 : 315;
@@ -190,7 +190,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     $graph[] = [
         '@type' => 'Service', '@id' => $url . '#service', 'name' => 'LLM Optimization', 'alternateName' => 'Large language model optimization',
         'serviceType' => 'LLM optimization', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
-        'description' => 'LLM Optimization shapes how large language models such as those behind ChatGPT, Claude, Gemini and Perplexity understand, describe and recommend a brand — by making brand facts consistent and current across the sources models learn from and look up, setting an AI-crawler policy, and testing what models say.',
+        'description' => 'LLM Optimization shapes how large language models such as those behind ChatGPT, Claude, Gemini and Perplexity understand, describe and recommend a brand, by making brand facts consistent and current across the sources models learn from and look up, setting an AI-crawler policy, and testing what models say.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
     ];
     $graph[] = [
@@ -221,7 +221,7 @@ function rl_render_llm() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;LLM Optimization&nbsp;<b>]</b></span>
       <h1 class="h1">Make AI describe<br>your brand<br><span class="r">correctly.</span></h1>
-      <p class="lede"><strong>LLM Optimization</strong> shapes how large language models — the AI behind ChatGPT, Claude, Gemini and Perplexity — understand, describe and recommend your brand. Reinforce Lab makes your brand facts consistent everywhere models learn from and look things up, then tests what the models actually say.</p>
+      <p class="lede"><strong>LLM Optimization</strong> shapes how large language models (the AI behind ChatGPT, Claude, Gemini and Perplexity) understand, describe and recommend your brand. Reinforce Lab makes your brand facts consistent everywhere models learn from and look things up, then tests what the models actually say.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#crawlers">AI crawler guide</a>
@@ -238,8 +238,8 @@ function rl_render_llm() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;How AI knows you&nbsp;<b>]</b></span><h2>How does an AI model know about your brand?</h2><p class="lede">There are two routes, and they need different fixes. The AI companies document both.</p></div>
     <div class="routes">
-      <div class="route"><span class="n">Route 01 · Memory</span><h3>What it learned in training</h3><p>Models are trained on data up to a cut-off date. OpenAI's own help pages say its models "do not incorporate information about events beyond that, unless tools are used." Whatever the web said about you before that date is baked in.</p><p class="fix"><b>Fix</b>Consistent, accurate facts about you across the web — so the next training round learns the right story.</p></div>
-      <div class="route"><span class="n">Route 02 · Lookup</span><h3>What it looks up live</h3><p>With search switched on, tools such as ChatGPT search, Perplexity and Gemini with Google Search grounding fetch current pages and cite them. Google says grounding lets Gemini cite "verifiable sources beyond its knowledge cutoff."</p><p class="fix"><b>Fix</b>Clear, current, crawlable pages that state your facts plainly — and a crawler policy that lets search bots in.</p></div>
+      <div class="route"><span class="n">Route 01 · Memory</span><h3>What it learned in training</h3><p>Models are trained on data up to a cut-off date. OpenAI's own help pages say its models "do not incorporate information about events beyond that, unless tools are used." Whatever the web said about you before that date is baked in.</p><p class="fix"><b>Fix</b>Consistent, accurate facts about you across the web, so the next training round learns the right story.</p></div>
+      <div class="route"><span class="n">Route 02 · Lookup</span><h3>What it looks up live</h3><p>With search switched on, tools such as ChatGPT search, Perplexity and Gemini with Google Search grounding fetch current pages and cite them. Google says grounding lets Gemini cite "verifiable sources beyond its knowledge cutoff."</p><p class="fix"><b>Fix</b>Clear, current, crawlable pages that state your facts plainly, and a crawler policy that lets search bots in.</p></div>
     </div>
   </div>
 </section>
@@ -257,7 +257,7 @@ function rl_render_llm() {
         </tbody>
       </table>
     </div>
-    <p class="tnote">Summarised from each company's own crawler documentation, checked 29 September 2026. Crawler names and rules change — we re-check them for every client. Google's AI Overviews and AI Mode use pages indexed for Google Search; Google-Extended does not control that.</p>
+    <p class="tnote">Summarised from each company's own crawler documentation, checked 29 September 2026. Crawler names and rules change; we re-check them for every client. Google's AI Overviews and AI Mode use pages indexed for Google Search; Google-Extended does not control that.</p>
   </div>
 </section>
 
@@ -265,11 +265,11 @@ function rl_render_llm() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;The problem&nbsp;<b>]</b></span><h2>Why do AI models get brands wrong?</h2><p class="lede">Models repeat what the web tells them. When the web is unclear, the answer is too.</p></div>
     <div class="cols c3">
-      <div class="cell"><span class="n">01 · Inconsistency</span><h3>Different stories in different places</h3><p>Your site, profiles and directories describe you in different words — or list different services.</p></div>
+      <div class="cell"><span class="n">01 · Inconsistency</span><h3>Different stories in different places</h3><p>Your site, profiles and directories describe you in different words, or list different services.</p></div>
       <div class="cell"><span class="n">02 · Outdated facts</span><h3>Old information still online</h3><p>Past services, old prices or former addresses keep being repeated long after they changed.</p></div>
       <div class="cell"><span class="n">03 · Name confusion</span><h3>Someone else shares your name</h3><p>Similar brand names get merged, and their facts end up in your description.</p></div>
       <div class="cell"><span class="n">04 · No source of truth</span><h3>Nothing clearly states the facts</h3><p>Without a clear About page and structured data, models have to guess who you are and what you do.</p></div>
-      <div class="cell"><span class="n">05 · Thin coverage</span><h3>Few independent mentions</h3><p>When trusted third parties rarely mention you, models know little — or lean on competitors.</p></div>
+      <div class="cell"><span class="n">05 · Thin coverage</span><h3>Few independent mentions</h3><p>When trusted third parties rarely mention you, models know little, or lean on competitors.</p></div>
       <div class="cell"><span class="n">06 · Blocked access</span><h3>The wrong crawlers blocked</h3><p>A blanket block on "AI bots" can shut out the search crawlers that would have cited your current facts.</p></div>
     </div>
   </div>
@@ -279,7 +279,7 @@ function rl_render_llm() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does LLM Optimization work?</h2><p class="lede">Five steps, starting with what the models say about you today.</p></div>
     <ol class="steps">
-      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Entity baseline</h3><p>Ask each model the questions buyers ask — who you are, what you do, how you compare — and record every answer.</p></li>
+      <li class="step"><div class="k" aria-hidden="true">01</div><h3>Entity baseline</h3><p>Ask each model the questions buyers ask (who you are, what you do, how you compare) and record every answer.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Trace the errors</h3><p>For each wrong or missing fact, find the pages and profiles it most likely comes from.</p></li>
       <li class="step"><div class="k" aria-hidden="true">03</div><h3>Set the source of truth</h3><p>One clear description, a facts-rich About page, and Organization schema that links your official profiles.</p></li>
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Align the web</h3><p>Update profiles, directories and listings to match, correct outdated pages, and agree your AI-crawler policy.</p></li>
@@ -292,14 +292,14 @@ function rl_render_llm() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Deliverables&nbsp;<b>]</b></span><h2>What you get.</h2></div>
     <ul class="ticks">
-      <li><b>Model description report</b> — how each AI model describes you today, answer by answer.</li>
-      <li><b>Error log</b> — every wrong, outdated or missing fact, with its likely source.</li>
-      <li><b>Brand fact sheet</b> — the agreed name, description, services and key facts, in one place.</li>
-      <li><b>About page &amp; schema</b> — a facts-first About page and Organization markup linking your official profiles.</li>
-      <li><b>Profile alignment</b> — the profiles and listings to update, with the exact wording.</li>
-      <li><b>AI-crawler policy</b> — which crawlers to allow or block, set in your robots rules.</li>
-      <li><b>llms.txt</b> — an optional map of your key pages for AI agents.</li>
-      <li><b>Re-test reports</b> — what changed in each model's answers since the baseline.</li>
+      <li><b>Model description report</b>: how each AI model describes you today, answer by answer.</li>
+      <li><b>Error log</b>: every wrong, outdated or missing fact, with its likely source.</li>
+      <li><b>Brand fact sheet</b>: the agreed name, description, services and key facts, in one place.</li>
+      <li><b>About page &amp; schema</b>: a facts-first About page and Organization markup linking your official profiles.</li>
+      <li><b>Profile alignment</b>: the profiles and listings to update, with the exact wording.</li>
+      <li><b>AI-crawler policy</b>: which crawlers to allow or block, set in your robots rules.</li>
+      <li><b>llms.txt</b>: an optional map of your key pages for AI agents.</li>
+      <li><b>Re-test reports</b>: what changed in each model's answers since the baseline.</li>
     </ul>
   </div>
 </section>
@@ -322,14 +322,14 @@ function rl_render_llm() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>Nobody can edit an AI model for you.</h2>
-      <p>No agency can change what a model learned or make it say something. What we can do is fix what models read: your own pages, your profiles and the sources that describe you — and keep the crawlers that fetch fresh facts able to reach you. AI tools that search the web pick those fixes up first; trained memory follows as models are retrained.</p>
+      <p>No agency can change what a model learned or make it say something. What we can do is fix what models read: your own pages, your profiles and the sources that describe you, and keep the crawlers that fetch fresh facts able to reach you. AI tools that search the web pick those fixes up first; trained memory follows as models are retrained.</p>
     </div>
   </div>
 </section>
 
 <section class="band alt" id="who">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is LLM Optimization for?</h2><p class="lede">Brands that AI tools describe wrongly, vaguely or not at all — and teams in regulated fields, where a wrong description is a real risk.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is LLM Optimization for?</h2><p class="lede">Brands that AI tools describe wrongly, vaguely or not at all, and teams in regulated fields, where a wrong description is a real risk.</p></div>
     <ul class="inds8">
       <?php foreach (rl_llm_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
       <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('LLM Optimization for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
