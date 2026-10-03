@@ -206,7 +206,7 @@ function rl_render_aiwork() {
       <div class="metric"><span class="num">62%</span><h3>Trying AI agents</h3><p>say their organisation is at least experimenting with AI agents.</p></div>
       <div class="metric"><span class="num">39%</span><h3>See profit impact</h3><p>report any impact on EBIT at the enterprise level from AI.</p></div>
     </div>
-    <p class="quote">The organisations getting the most value are redesigning their workflows, not just adding AI tools to them. That is where we start.</p>
+    <p class="quote">The organisations getting the most value are redesigning their workflows instead of adding AI tools on top. That is where we start.</p>
     <p class="src">Source: McKinsey, <a href="<?php echo $mck; ?>" rel="noopener" target="_blank">The state of AI in 2025: Agents, innovation, and transformation</a> (November 2025)</p>
   </div>
 </section>
@@ -264,7 +264,7 @@ function rl_render_aiwork() {
       <div class="metric"><h3>Turnaround time</h3><p>How quickly requests are handled from arrival to done.</p></div>
       <div class="metric"><h3>Accuracy</h3><p>Share of cases handled correctly, checked against a sample.</p></div>
       <div class="metric"><h3>Override rate</h3><p>How often people change or reject what the AI did.</p></div>
-      <div class="metric"><h3>Cost per task</h3><p>Including AI and platform costs, not just labour saved.</p></div>
+      <div class="metric"><h3>Cost per task</h3><p>Labour saved, minus AI and platform costs.</p></div>
       <div class="metric"><h3>Adoption</h3><p>Whether the team actually uses the workflow, week by week.</p></div>
     </div>
   </div>

@@ -100,7 +100,7 @@ function rl_render_about() {
         ['Preserve', 'Protect every page that already earns traffic, links or trust before anything changes.'],
         ['Architect', 'Design the site structure, URLs and internal links around how buyers search.'],
         ['Content', 'Plan and write evidence-led content for each stage of the buying journey.'],
-        ['AI search', 'Make your facts clear and consistent for AI answers, not just blue links.'],
+        ['AI search', 'Make your facts clear and consistent for AI answers as well as blue links.'],
         ['Build', 'Build the pages, schema and automation to a written quality standard.'],
         ['QA', 'Check every page against that standard before it goes live.'],
         ['Launch', 'Go live with redirects mapped and tested, URL by URL.'],

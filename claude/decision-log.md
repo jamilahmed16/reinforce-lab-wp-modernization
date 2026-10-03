@@ -655,7 +655,7 @@ AI Growth Systems  (umbrella / positioning)
 3. **GEO "Before" example replaced:** "We help brands grow online with smart, results-driven strategies tailored to every business." It is still vague, but contains no banned words. The checker exception was removed.
 
 **"Engine" as a metaphor: KEEP** (Jamil, 3 Oct: "Keep it"). Uses such as "intelligence engine" and "opportunity engine" stay, alongside the locked "growth engine".
-**Still open:** "not just" (kept until Jamil answers).
+**"Not just": REMOVED** (Jamil, 3 Oct: "remove not just"). 12 uses rewritten in 10 files, e.g. "cited as well as ranked", "a researched brief with sources instead of a bare keyword", "Every map, Google included". The phrase was added to the banned list in `copy-check.py`. Deployed guarded (backups `.bak-20261003-084809`), live md5 = repo, live pages checked with 0 left. **O-025 is closed.**
 
 **Deploy:** 16 files, guarded (backups `.bak-20261003-083522`), live md5 = repo. **Verified:** 45 pages crawled, with 0 em dashes, 0 en dashes, 0 "compound", 0 emoji and 0 PHP errors; `copy-check.py` reports 0 issues (it now also flags en dashes and "compound").
 

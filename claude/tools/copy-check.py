@@ -17,7 +17,7 @@ BANNED = [r'delv\w*', r'leverag\w*', r'seamless\w*', r'unlock\w*', r'elevat\w*',
           r'bespoke', r'meticulous\w*', r'intricate', r'boast\w*', r'showcas\w*', r'underscor\w*',
           r'more than ever', r'genuinely', r'truly', r'world[- ]class', r'next[- ]level', r'state[- ]of[- ]the[- ]art',
           r'best[- ]in[- ]class', r'effortless\w*', r'unparalleled', r'look no further', r'table stakes',
-          r'operationali[sz]\w*', r'quietly', r'compound\w*', r'navigate the', r'in the world of', r'whether you\'?re a']
+          r'operationali[sz]\w*', r'quietly', r'compound\w*', r'not just', r'navigate the', r'in the world of', r'whether you\'?re a']
 WORDS = re.compile(r'\b(' + '|'.join(BANNED) + r')\b', re.I)
 
 files = sys.argv[1:] or sorted(glob.glob('wp/novamira-sandbox/*.php') + glob.glob('wp/novamira-sandbox/*.css'))

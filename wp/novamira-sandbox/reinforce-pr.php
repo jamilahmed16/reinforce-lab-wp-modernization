@@ -278,7 +278,7 @@ function rl_render_pr() {
     <div class="cols c3">
       <div class="metric"><h3>Relevant coverage</h3><p>Pieces in publications your buyers actually read, by outlet and topic.</p></div>
       <div class="metric"><h3>Referring domains</h3><p>New, relevant sites linking to you, and the share that are editorial.</p></div>
-      <div class="metric"><h3>Links to target pages</h3><p>Links reaching the pages you need to rank, not just the home page.</p></div>
+      <div class="metric"><h3>Links to target pages</h3><p>Links reaching the pages you need to rank, beyond the home page.</p></div>
       <div class="metric"><h3>Referral traffic &amp; leads</h3><p>Visits and conversions from coverage.</p></div>
       <div class="metric"><h3>Rankings &amp; brand search</h3><p>Movement for target pages and growth in searches for your name.</p></div>
       <div class="metric"><h3>AI citations</h3><p>Whether AI answers mention and cite you, and which sources they use.</p></div>

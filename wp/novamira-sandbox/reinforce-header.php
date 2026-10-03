@@ -151,7 +151,7 @@ add_filter('wpseo_schema_organization', function ($data) {
 });
 
 /* ---------- theme markup cleanup (D-012 gates) ---------- */
-/* Theme footer (widgets + BB credit) out of the HTML, not just hidden; [reinforce_footer] replaces it. */
+/* Theme footer (widgets + BB credit) removed from the HTML, not hidden; [reinforce_footer] replaces it. */
 add_filter('fl_footer_enabled', '__return_false');
 
 /* Skip link first in tab order: theme prints it at fl_body_open:20, after our header (wp_body_open runs at fl_body_open:10). */

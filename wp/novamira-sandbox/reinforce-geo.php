@@ -286,7 +286,7 @@ function rl_render_geo() {
 
 <section id="measure">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure GEO?</h2><p class="lede">We measure the output of each answer, not just the ranking of each page.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure GEO?</h2><p class="lede">We measure what each answer says about you, as well as where each page ranks.</p></div>
     <div class="cols c3">
       <div class="metric"><h3>Citation rate</h3><p>How often your pages are cited for the prompts you target.</p></div>
       <div class="metric"><h3>Cited pages</h3><p>Which of your pages engines rely on, and which never get used.</p></div>

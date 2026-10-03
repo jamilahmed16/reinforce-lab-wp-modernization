@@ -13,7 +13,7 @@ function rl_saos_faqs() {
     return [
         ['Is this just an AI writer?', 'No. AI writing is the last step. Search Authority OS researches your market, verifies claims against real evidence, and monitors performance, then produces content. The intelligence is the product; the content is the output.'],
         ['Will the content actually be accurate?', 'Every important factual claim is tied to a source with a confidence score. Weak or conflicting sources are flagged for human review. In regulated fields, this is the difference between publishable and a liability.'],
-        ['Does it optimize for ChatGPT and AI Overviews, not just Google?', 'Yes. AEO and GEO are built in. The system tracks where you appear across ChatGPT, Perplexity, Gemini and AI Overviews, and structures content to be cited, not just ranked.'],
+        ['Does it optimize for ChatGPT and AI Overviews as well as Google?', 'Yes. AEO and GEO are built in. The system tracks where you appear across ChatGPT, Perplexity, Gemini and AI Overviews, and structures content to be cited as well as ranked.'],
         ['Do we keep control?', 'Yes. Human approval workflows and quality gates are standard. You decide what publishes automatically and what waits for review, and you can change that at any time.'],
         ['What happens first?', 'A Search Authority Diagnostic: a data-backed read of your organic visibility, AI-search presence, content authority, competitors and demand, with a prioritized 90-day plan. It establishes your real baseline before anything is built.'],
     ];

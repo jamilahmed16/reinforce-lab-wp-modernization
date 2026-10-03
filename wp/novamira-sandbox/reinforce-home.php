@@ -397,7 +397,7 @@ function rl_render_home() {
           wp_reset_postdata();
         } else {
           $ph = array(
-            array('AI Search','How to get cited by ChatGPT, Perplexity &amp; AI Overviews','The playbook for showing up inside AI answers: the structure, evidence and entity signals that get you referenced, not just ranked.'),
+            array('AI Search','How to get cited by ChatGPT, Perplexity &amp; AI Overviews','The playbook for showing up inside AI answers: the structure, evidence and entity signals that get you referenced as well as ranked.'),
             array('GEO','GEO vs SEO: what actually changes for 2026','Generative Engine Optimization is not a rebrand of SEO. What changes, what stays the same, and where to put your effort first.'),
             array('Evidence','Building an evidence layer for regulated content','Why "no source, no claim" is now the standard for regulated content, and how to check every claim without slowing the team down.'),
           );

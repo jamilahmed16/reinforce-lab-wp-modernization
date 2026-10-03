@@ -215,7 +215,7 @@ function rl_render_local() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;What we do&nbsp;<b>]</b></span><h2>What does local SEO cover?</h2><p class="lede">Nine areas, each checked against the platform's own rules.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01 · Google</span><h3>Google Business Profile</h3><p>Complete, accurate profiles (name, categories, services, hours, photos and posts) managed within Google's guidelines.</p></div>
-      <div class="cell"><span class="n">02 · Apple &amp; Bing</span><h3>Every map, not just Google</h3><p>Apple Business Connect and Bing Places kept in step, so Siri, Apple Maps and Bing show the same facts.</p></div>
+      <div class="cell"><span class="n">02 · Apple &amp; Bing</span><h3>Every map, Google included</h3><p>Apple Business Connect and Bing Places kept in step, so Siri, Apple Maps and Bing show the same facts.</p></div>
       <div class="cell"><span class="n">03 · Citations</span><h3>Consistent business details</h3><p>Name, address and phone the same across directories and data sources, with duplicates cleaned up.</p></div>
       <div class="cell"><span class="n">04 · Reviews</span><h3>A compliant review program</h3><p>Ask every customer, reply helpfully, and never incentivise or filter, as Google and the FTC require.</p></div>
       <div class="cell"><span class="n">05 · Pages</span><h3>Location &amp; service-area pages</h3><p>A useful page for each real location or service area, never thin copies with the city name swapped.</p></div>
@@ -274,7 +274,7 @@ function rl_render_local() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Measurement&nbsp;<b>]</b></span><h2>How do we measure local SEO?</h2><p class="lede">By what local visibility turns into, not by a single ranking check from one spot.</p></div>
     <div class="cols c3">
-      <div class="metric"><h3>Map visibility across your area</h3><p>Where you appear in local results across a grid of points, not just your street.</p></div>
+      <div class="metric"><h3>Map visibility across your area</h3><p>Where you appear in local results across a grid of points around your area.</p></div>
       <div class="metric"><h3>Profile actions</h3><p>Calls, direction requests and website clicks from your profiles.</p></div>
       <div class="metric"><h3>Reviews</h3><p>Volume, rating and reply rate over time, per location.</p></div>
       <div class="metric"><h3>Citation accuracy</h3><p>Share of listings with correct, consistent business details.</p></div>

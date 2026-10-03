@@ -28,7 +28,7 @@ function rl_ag_data() {
         'content-research' => [
             'id' => 'A-02', 'name' => 'Content Research', 'stage' => 'Understand',
             'h1' => ['Research-backed', 'topics, not', 'guesses.'],
-            'lede' => 'The <strong>Content Research Agent</strong> gives writers what they need to publish something better than what already ranks. It maps what the market asks and what already ranks, finds the information gaps competitors leave open, and hands your writers a researched brief with sources, not just a keyword.',
+            'lede' => 'The <strong>Content Research Agent</strong> gives writers what they need to publish something better than what already ranks. It maps what the market asks and what already ranks, finds the information gaps competitors leave open, and hands your writers a researched brief with sources instead of a bare keyword.',
             'anim' => [['SERP CONTENT', 'QUESTIONS', 'RIVAL PAGES'], ['MAP', 'GAPS', 'ANGLES'], ['RESEARCH BRIEF', 'OUTLINE', 'SOURCES']],
             'problems' => [['Copycat content', 'Articles that rewrite the top results add nothing new, and rank like it.'], ['Thin briefs', 'Writers get a keyword and a word count, then guess the rest.'], ['Missed questions', 'The questions buyers actually ask go unanswered.']],
             'does' => [['Map the topic', 'What already ranks, and what each result covers.'], ['Collect the questions', 'What people ask about the topic, across search and communities.'], ['Find the gaps', 'What competitors leave out, get wrong or cover thinly.'], ['Brief the writer', 'Angle, structure, questions to answer and sources to use.']],
