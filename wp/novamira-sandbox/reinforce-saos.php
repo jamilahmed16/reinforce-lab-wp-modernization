@@ -165,7 +165,7 @@ body.rl-saos-page .fl-page-content,body.rl-saos-page .fl-content,body.rl-saos-pa
 .rl-saos .faq summary{cursor:pointer;padding:20px 24px;font-family:var(--f-display);text-transform:uppercase;font-size:16px;letter-spacing:.02em;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
 .rl-saos .faq summary::-webkit-details-marker{display:none}
 .rl-saos .faq summary::after{content:"+";color:var(--red-2);font-family:var(--f-mono);font-size:20px}
-.rl-saos .faq details[open] summary::after{content:"–"}
+.rl-saos .faq details[open] summary::after{content:"\2212"}
 .rl-saos .faq p{padding:0 24px 22px;color:var(--ink-dim);font-size:15px;max-width:75ch}
 .rl-saos .final{position:relative;overflow:hidden;border:1px solid var(--red-line);border-radius:var(--r-lg); background:#0b090a;padding:clamp(48px,7vw,92px) clamp(24px,5vw,64px);text-align:center; box-shadow:inset 0 1px 0 var(--glass-hi),0 0 130px -46px var(--red-glow)}
 .rl-saos .final::before{content:"";position:absolute;inset:0;pointer-events:none; background:radial-gradient(58% 96% at 50% 128%,rgba(226,59,59,.6),rgba(153,0,0,.28) 38%,transparent 70%),linear-gradient(180deg,transparent 40%,rgba(153,0,0,.10))}
@@ -471,21 +471,21 @@ function rl_render_saos() {
       <div class="pkg">
         <div class="tier">01 · Foundation</div>
         <h3>Search Authority Foundation</h3>
-        <div class="price">$5,000 <small>setup + $1,500–$2,500 / month</small></div>
-        <ul><li>SEO + SERP intelligence</li><li>Web + social research</li><li>Evidence verification</li><li>AEO / GEO optimization</li><li>20–30 assets / month</li><li>GSC + GA4 + 7-day reporting</li></ul>
+        <div class="price">$5,000 <small>setup + $1,500 to $2,500 / month</small></div>
+        <ul><li>SEO + SERP intelligence</li><li>Web + social research</li><li>Evidence verification</li><li>AEO / GEO optimization</li><li>20 to 30 assets / month</li><li>GSC + GA4 + 7-day reporting</li></ul>
         <a class="btn g" href="<?php echo $diag; ?>">Start here <span class="ar">&rarr;</span></a>
       </div>
       <div class="pkg feat">
         <div class="tier">02 · Growth OS · Most chosen</div>
         <h3>Search Authority Growth OS</h3>
-        <div class="price">$10,000 <small>setup + $3,500–$5,000 / month</small></div>
-        <ul><li>Everything in Foundation</li><li>40–60 assets / month</li><li>Competitor + AI visibility monitoring</li><li>Original-data research</li><li>Cannibalization + gap analysis</li><li>Self-improvement feedback loop</li></ul>
+        <div class="price">$10,000 <small>setup + $3,500 to $5,000 / month</small></div>
+        <ul><li>Everything in Foundation</li><li>40 to 60 assets / month</li><li>Competitor + AI visibility monitoring</li><li>Original-data research</li><li>Cannibalization + gap analysis</li><li>Self-improvement feedback loop</li></ul>
         <a class="btn p" href="<?php echo $diag; ?>">Get the Growth OS <span class="ar">&rarr;</span></a>
       </div>
       <div class="pkg">
         <div class="tier">03 · Enterprise</div>
         <h3>Enterprise Intelligence OS</h3>
-        <div class="price">$20k–$35k+ <small>setup + $7,500–$15,000+ / month</small></div>
+        <div class="price">$20k to $35k+ <small>setup + $7,500 to $15,000+ / month</small></div>
         <ul><li>Everything in Growth OS</li><li>Scientific evidence connectors</li><li>Regulatory + patent intelligence</li><li>Industry evidence graph</li><li>Human approval workflows</li><li>Enterprise governance</li></ul>
         <a class="btn g" href="<?php echo $diag; ?>">Talk to us <span class="ar">&rarr;</span></a>
       </div>

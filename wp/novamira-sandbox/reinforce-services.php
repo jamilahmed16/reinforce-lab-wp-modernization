@@ -77,7 +77,7 @@ function rl_services_link($slug) {
 /* ---------- hero animation: Capability grid ----------
    Four service groups light tile by tile; each group sends a pulse down into its segment of the
    "AI Growth System" core; when all four are in, the core glows and an output pulse lights the
-   caption. 10 s loop, soft fade 92–97 %, reset. Tiles are links where the page exists. */
+   caption. 10 s loop, soft fade 92-97 %, reset. Tiles are links where the page exists. */
 function rl_services_cg_kf() {
     $lit = function ($n, $s, $r) { return "@keyframes $n{0%,{$s}%{opacity:0}{$r}%,92%{opacity:1}97%,100%{opacity:0}}\n"; };
     $pul = function ($n, $s, $e) { return "@keyframes $n{0%,{$s}%{stroke-dashoffset:10;opacity:0}" . ($s + 1) . "%{opacity:1}" . ($e - 1) . "%{opacity:1}{$e}%,100%{stroke-dashoffset:-100;opacity:0}}\n"; };
@@ -293,7 +293,7 @@ function rl_render_services() {
 
 <section class="band alt" id="system">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;How it fits together&nbsp;<b>]</b></span><h2>Three ways in.</h2><p class="lede">Buy one service, run one agent, or connect everything into a system that compounds.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;How it fits together&nbsp;<b>]</b></span><h2>Three ways in.</h2><p class="lede">Buy one service, run one agent, or connect everything into one system where each part strengthens the others.</p></div>
     <div class="ways">
       <a class="way feat" href="<?php echo $u('services/ai-growth-systems'); ?>"><span class="tag">The umbrella</span><h3>AI Growth Systems</h3><p>Consulting and implementation that connects your website, content and search visibility into one growth engine.</p><span class="more">Explore &rarr;</span></a>
       <a class="way" href="<?php echo $u('search-authority-os'); ?>"><span class="tag">Flagship product</span><h3>Search Authority OS</h3><p>Our AI system that researches your market, verifies claims, produces content and monitors visibility across Google and AI search.</p><span class="more">See how it works &rarr;</span></a>

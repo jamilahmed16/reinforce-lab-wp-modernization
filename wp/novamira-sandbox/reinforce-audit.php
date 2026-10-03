@@ -38,7 +38,7 @@ function rl_audit_industries() {
 /* ---------- hero animation: Audit sweep ----------
    A magnifier sweeps a website wireframe; five issues surface where it stops (404, slow template,
    thin content, missing schema, not cited in AI); they are written into a prioritised fix register
-   (P1–P3 with effort), then a 30 · 60 · 90-day roadmap lights. 10 s loop, soft fade, reset. */
+   (P1 to P3 with effort), then a 30 · 60 · 90-day roadmap lights. 10 s loop, soft fade, reset. */
 function rl_audit_issues() {
     // code, x, y, register label, priority, effort width
     return [['404', 60, 92, 'BROKEN LINKS', 'P1', 40], ['CWV', 186, 124, 'SLOW TEMPLATE', 'P1', 70], ['AI', 120, 282, 'NOT CITED IN AI', 'P2', 60], ['THIN', 64, 204, 'THIN CONTENT', 'P2', 50], ['SCHEMA', 150, 236, 'MISSING SCHEMA', 'P3', 30]];

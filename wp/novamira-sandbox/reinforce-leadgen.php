@@ -191,7 +191,7 @@ function rl_render_leadgen() {
       <div class="metric"><span class="num">73%</span><h3>Avoid irrelevant outreach</h3><p>actively avoid suppliers who send them irrelevant outreach.</p></div>
       <div class="metric"><span class="num">69%</span><h3>Notice mixed messages</h3><p>report inconsistencies between a supplier's website and what its sellers say.</p></div>
     </div>
-    <p class="src">Source: Gartner, <a href="<?php echo $gartner; ?>" rel="noopener" target="_blank">Sales survey of 632 B2B buyers</a> (conducted August–September 2024, published June 2025)</p>
+    <p class="src">Source: Gartner, <a href="<?php echo $gartner; ?>" rel="noopener" target="_blank">Sales survey of 632 B2B buyers</a> (conducted August to September 2024, published June 2025)</p>
   </div>
 </section>
 

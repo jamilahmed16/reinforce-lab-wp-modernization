@@ -243,7 +243,7 @@ function rl_render_local() {
 
 <section id="how">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does a local SEO engagement run?</h2><p class="lede">Foundations first, then the work that compounds.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Process&nbsp;<b>]</b></span><h2>How does a local SEO engagement run?</h2><p class="lede">Foundations first, then the work that builds on them.</p></div>
     <ol class="steps">
       <li class="step"><div class="k" aria-hidden="true">01</div><h3>Local audit</h3><p>Profiles, citations, reviews, location pages and competitors, mapped across your service area.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Fix the foundations</h3><p>Claim and correct Google, Apple and Bing listings, and clean up inconsistent details.</p></li>

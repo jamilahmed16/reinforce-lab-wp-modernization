@@ -208,7 +208,7 @@ function rl_render_pr() {
       <div class="metric"><span class="num">53%</span><h3>No sales pitches</h3><p>reject pitches that are too promotional or sales-focused.</p></div>
       <div class="metric"><span class="num">97%</span><h3>Email, short, once</h3><p>prefer pitches by email; 64% say follow up once, and no more.</p></div>
     </div>
-    <p class="src">Source: Cision, <a href="<?php echo $cision; ?>" rel="noopener" target="_blank">2026 State of the Media Report</a> (survey January–February 2026)</p>
+    <p class="src">Source: Cision, <a href="<?php echo $cision; ?>" rel="noopener" target="_blank">2026 State of the Media Report</a> (survey January to February 2026)</p>
   </div>
 </section>
 

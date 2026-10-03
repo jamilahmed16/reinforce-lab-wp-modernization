@@ -231,7 +231,7 @@ function rl_render_header() {
                   <div class="txt">
                     <div class="tag">[ Flagship Product ]</div>
                     <h4>Search Authority OS</h4>
-                    <p>The AI system that turns your website, content, and organic search into one compounding growth engine.</p>
+                    <p>The AI system that turns your website, content, and organic search into one growth engine.</p>
                   </div>
                   <?php foreach ($plain as $pl): ?><a class="mega-lead2" href="<?php echo esc_url($pl->url); ?>"><?php echo esc_html($pl->title); ?> <span class="ar">&rarr;</span></a><?php endforeach; ?>
                   <a class="btn g sm" href="<?php echo esc_url($sos); ?>">Explore the OS <span class="ar">&rarr;</span></a>

@@ -143,7 +143,7 @@ body.rl-agents-page .fl-page-content,body.rl-agents-page .fl-content,body.rl-age
 .rl-agents .faq summary{cursor:pointer;padding:20px 24px;font-family:var(--f-display);text-transform:uppercase;font-size:16px;letter-spacing:.02em;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
 .rl-agents .faq summary::-webkit-details-marker{display:none}
 .rl-agents .faq summary::after{content:"+";color:var(--red-2);font-family:var(--f-mono);font-size:20px}
-.rl-agents .faq details[open] summary::after{content:"–"}
+.rl-agents .faq details[open] summary::after{content:"\2212"}
 .rl-agents .faq p{padding:0 24px 22px;color:var(--ink-dim);font-size:15px;max-width:75ch}
 /* final */
 .rl-agents .final{position:relative;overflow:hidden;border:1px solid var(--red-line);background:#0b090a;padding:clamp(48px,7vw,92px) clamp(24px,5vw,64px);text-align:center;box-shadow:inset 0 1px 0 var(--glass-hi),0 0 130px -46px var(--red-glow)}
@@ -250,7 +250,7 @@ function rl_render_agents() {
         <a class="btn g" href="<?php echo $diag; ?>">Find your starting agent <span class="ar">&rarr;</span></a>
       </div>
       <div class="opt feat">
-        <span class="tag">Compounding</span>
+        <span class="tag">Fully connected</span>
         <h3>The full Search Authority OS</h3>
         <ul><li>You have gaps across research, evidence, AI search and performance</li><li>You want every stage feeding the next</li><li>You need a system that improves month over month</li></ul>
         <a class="btn p" href="<?php echo $pkg; ?>">Compare packages <span class="ar">&rarr;</span></a>

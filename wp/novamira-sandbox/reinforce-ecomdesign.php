@@ -209,7 +209,7 @@ function rl_render_ecomdesign() {
       <div class="metric"><span class="num">18%</span><h3>Forced to register</h3><p>left because the site wanted them to create an account.</p></div>
       <div class="metric"><span class="num">17%</span><h3>Checkout too long</h3><p>abandoned because the checkout was too long or complicated.</p></div>
     </div>
-    <p class="quote">An ideal checkout can be as short as 12–14 form elements. Baymard's benchmark puts the average US checkout at 23.48. That gap is where we start.</p>
+    <p class="quote">An ideal checkout can be as short as 12 to 14 form elements. Baymard's benchmark puts the average US checkout at 23.48. That gap is where we start.</p>
     <p class="src">Source: Baymard Institute, <a href="<?php echo $bay; ?>" rel="noopener" target="_blank">Cart abandonment rate statistics</a> (updated 22 September 2025; reasons exclude shoppers who were "just browsing")</p>
   </div>
 </section>

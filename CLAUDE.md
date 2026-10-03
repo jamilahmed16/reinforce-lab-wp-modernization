@@ -58,8 +58,9 @@ Novamira gives you arbitrary PHP execution, database access and filesystem write
 
 **Copy rules (D-072, 1 Oct 2026), apply to every word on reinforcelab.online, including pages, blog posts, titles, meta descriptions, schema, alt text, menus and emails the site sends:**
 - **No em dashes. Ever.** Use a comma, colon, full stop or parentheses instead.
+- **No en dashes either.** Number and date ranges are written with "to": "20 to 30 assets", "$1,500 to $2,500", "August to September 2024" (D-073).
 - **No emojis.** Icons are drawn (SVG/CSS), never emoji or emoji-like symbols.
-- **No AI slop or AI words** (delve, leverage, seamless, unlock, elevate, robust, cutting-edge, game-changer, landscape, empower, harness, synergy, holistic, streamline, foster, genuinely, truly, "more than ever", "table stakes" and the rest of the list in `claude/tools/copy-check.py`). Plain, specific, human language.
+- **No AI slop or AI words** (delve, leverage, seamless, unlock, elevate, robust, cutting-edge, game-changer, landscape, empower, harness, synergy, holistic, streamline, foster, genuinely, truly, "more than ever", "table stakes", "compound/compounding" and the rest of the list in `claude/tools/copy-check.py`). Plain, specific, human language.
 - **If anything is unclear, ask Jamil.**
 - Check every page with `python3 claude/tools/copy-check.py` before it ships (0 issues required).
 

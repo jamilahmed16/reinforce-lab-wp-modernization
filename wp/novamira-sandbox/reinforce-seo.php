@@ -13,7 +13,7 @@ function rl_seo_faqs() {
     return [
         ['What are SEO services?', 'SEO services (search engine optimization services) improve how search engines find, understand and rank your website, so more of the right people reach it from Google and AI search. They usually cover technical SEO, on-page optimization, content, and authority building such as digital PR, plus keyword research and reporting.'],
         ['What do SEO services include?', 'Google lists the services a good SEO provides: a review of your site content or structure, technical advice on development (hosting, redirects, error pages, JavaScript), content development, keyword research, SEO training, expertise in specific markets and geographies, and optimizing for generative AI. We cover all of them, grouped into four pillars: technical, on-page, content and authority.'],
-        ['How long does SEO take to work?', 'Google says some changes take effect in a few hours and others take several months, and that you should generally wait a few weeks to judge whether a change helped. A full SEO programme builds over months: technical fixes first, then content and authority that compound over time.'],
+        ['How long does SEO take to work?', 'Google says some changes take effect in a few hours and others take several months, and that you should generally wait a few weeks to judge whether a change helped. A full SEO programme builds over months: technical fixes first, then content and authority that build over time.'],
         ['Can you guarantee a first-page or number-one ranking?', 'No, and Google itself says no one can guarantee a #1 ranking on Google, and to beware of anyone who claims to. We commit to the work, to following Google’s guidelines, and to reporting honestly what changed.'],
         ['Do I need an SEO consultant or an SEO agency?', 'If you have a team that can implement changes, a consultant who sets the strategy and standards may be enough. If you need the work done (fixes, content, outreach and reporting), a managed SEO service is usually the better fit. Google notes that small local businesses can often do much of the work themselves.'],
         ['Does SEO still matter with AI search?', 'Yes. AI search tools draw on web pages that can be crawled, understood and trusted: the same foundations SEO builds. We extend SEO with AI search optimization, so your brand is visible and described accurately in AI answers as well as in Google’s results.'],
@@ -172,7 +172,7 @@ function rl_render_seo() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;SEO&nbsp;<b>]</b></span>
-      <h1 class="h1">SEO services<br>that compound<br><span class="r">into authority.</span></h1>
+      <h1 class="h1">SEO services<br>that build<br><span class="r">lasting authority.</span></h1>
       <p class="lede"><strong>Search engine optimization (SEO) services</strong> help search engines find, understand and trust your website, so the right customers reach you from Google and from AI answers. Reinforce Lab runs all four pillars (technical SEO, on-page SEO, content and authority) as one system, built to Google's own guidelines and measured in leads and revenue, not rankings alone.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>

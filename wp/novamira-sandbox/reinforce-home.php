@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) exit;
 
 /* ---------- Hero animation: Growth engine (D-039, Home) ----------
    Inputs pulse into the core; the core runs its five stages; outcomes light in turn; a
-   return pulse feeds outcomes back into inputs. 10 s loop, soft fade 92–97 %, reset.
+   return pulse feeds outcomes back into inputs. 10 s loop, soft fade 92-97 %, reset.
    Transform/opacity/stroke-dashoffset only; keyframes generated per element. */
 function rl_home_ge_data() {
     return [
@@ -185,7 +185,7 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 /* faq */
 .rl-home .faq details{border:1px solid var(--glass-line);background:var(--glass);backdrop-filter:blur(14px);margin-bottom:12px;box-shadow:inset 0 1px 0 var(--glass-hi)}
 .rl-home .faq summary{cursor:pointer;padding:20px 24px;font-family:var(--f-display);text-transform:uppercase;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
-.rl-home .faq summary::-webkit-details-marker{display:none}.rl-home .faq summary::after{content:"+";color:var(--red-2);font-family:var(--f-mono);font-size:20px}.rl-home .faq details[open] summary::after{content:"–"}
+.rl-home .faq summary::-webkit-details-marker{display:none}.rl-home .faq summary::after{content:"+";color:var(--red-2);font-family:var(--f-mono);font-size:20px}.rl-home .faq details[open] summary::after{content:"\2212"}
 .rl-home .faq p{padding:0 24px 22px;color:var(--ink-dim);font-size:15px;max-width:75ch}
 /* final */
 .rl-home .final{position:relative;overflow:hidden;border:1px solid var(--red-line);background:#0b090a;padding:clamp(48px,7vw,92px) clamp(24px,5vw,64px);text-align:center;box-shadow:inset 0 1px 0 var(--glass-hi),0 0 130px -46px var(--red-glow)}
@@ -378,7 +378,7 @@ function rl_render_home() {
   <!-- BLOG -->
   <section>
     <div class="wrap">
-      <div class="head"><span class="ey"><b>[</b>&nbsp;Insights&nbsp;<b>]</b></span><h2>From the blog.</h2><p class="lede">Field notes on AI Search, GEO, evidence-based content, and building growth systems that compound.</p></div>
+      <div class="head"><span class="ey"><b>[</b>&nbsp;Insights&nbsp;<b>]</b></span><h2>From the blog.</h2><p class="lede">Field notes on AI Search, GEO, evidence-based content, and building growth systems that keep improving.</p></div>
       <div class="cols c3">
         <?php
         $bq = new WP_Query(array('post_type'=>'post','posts_per_page'=>3,'post_status'=>'publish','ignore_sticky_posts'=>true));

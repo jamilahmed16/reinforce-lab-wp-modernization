@@ -597,6 +597,69 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-074 · Blog post types: one single-post template, 11 types (plus 2 later)
+**Date:** 3 October 2026 · **Status:** APPROVED (Jamil: "yes to all"). Not built yet; the shared long-form base is next.
+
+**Context (Jamil):** "we write long SEO posts not generic short bullshits... majority of our articles will be long", with a separate format per type.
+
+**Build rule:** **one** single-post template, not one Themer layout per type. Each post has an "Article type" field, and the template adds that type's sections.
+- **Why:** on production, two singular Themer layouts overlapped on one post (the F-001 overlap trigger), and separate layouts would repeat that.
+- One template also means a design change happens once.
+
+**Shared long-form base (every type):**
+- answer-first opening plus key takeaways;
+- sticky table of contents; reading time;
+- author box (Jamil Ahmed, credentials, LinkedIn);
+- real published and "last updated" dates (F-003: never bulk redated);
+- sources list; FAQs; related posts; CTA;
+- `BlogPosting` schema with author `Person` (D-012 §3);
+- must pass `copy-check.py` (D-072).
+
+**Types:**
+| # | Type | Sections only this type gets | Extra schema |
+|---|---|---|---|
+| 1 | Guide (pillar) | chapters, "start here" paths, glossary, links to supporting posts | — |
+| 2 | How-To | before-you-start box (tools, time, level), numbered steps with screenshots, mistakes, troubleshooting | HowTo markup allowed; no rich result expected (Google retired How-to rich results in 2023) |
+| 3 | Explainer ("What is…") | quotable definition box, how it works, examples, related terms | — |
+| 4 | Best / List | summary table first, "how we chose", item cards, best by use case | ItemList |
+| 5 | Review | verdict box and score, pros and cons, dated pricing, who it is for, alternatives, affiliate disclosure | Review (third-party products only) |
+| 6 | Comparison ("X vs Y") | side-by-side table, winner by use case, verdict | ItemList |
+| 7 | Industry | industry box linking `/industries/x/`, sector rules, sector services | — |
+| 8 | Updates | prominent date, what changed / what it means / what to do, official source, update log | — |
+| 9 | Case Study | challenge, approach, measured results, client quote. **Published only with a named, consenting client and real data** | — |
+| 10 | Research / Data | method, charts, dataset, "cite this" box | Dataset where it fits |
+| 11 | Product & Service | subtypes: deep dive, use case / playbook, launch / changelog. **Status label required** (Available / Early access / In development) on agent and Search Authority OS posts until O-022 is settled; "we make this" disclosure; "what it doesn't do"; product box linking the service page and diagnostic; must target a different query than its service page (no cannibalisation, as D-035) | `about` → the service node; **never** Review or star ratings on our own services; no Product/Offer markup in posts |
+| later | Opinion; Checklist / Template | founder byline up front / printable checklist and download | — |
+
+**Not allowed:** "Best agencies" lists that rank Reinforce Lab first.
+
+---
+
+## D-073 · Copy answers (closes O-025 items 1 to 3)
+**Date:** 3 October 2026 · **Status:** APPROVED and APPLIED on `.online` (Jamil: "1 to 30, remove compound, replace example")
+
+1. **Ranges use "to", never an en dash:** "20 to 30 assets", "$1,500 to $2,500 / month", "$20k to $35k+", "12 to 14 form elements", "P1 to P3", "August to September 2024", "January to February 2026". The Diagnostic form's volume options are now "1 to 10", "11 to 30", "31 to 50" and "50+" (the handler validates against the same list).
+   - The open-FAQ icon was an en dash and is now a true minus sign (`\2212`), in the kit and on 4 page styles.
+   - The quoted Search Console status uses a plain hyphen: "Discovered - currently not indexed".
+   - **0 en dashes remain.**
+2. **"Compound/compounding" removed (9 places):**
+   - SEO H1 → "SEO services / that build / lasting authority.";
+   - header → "one growth engine.";
+   - Packages: "a system that builds search authority month after month", "search authority builds over months", H2 "From diagnostic to lasting authority.";
+   - Services: "one system where each part strengthens the others";
+   - Local: "the work that builds on them";
+   - Home: "growth systems that keep improving";
+   - SEO FAQ: "build over time";
+   - Agents tag "Compounding" → "Fully connected".
+   - Added to the banned list.
+3. **GEO "Before" example replaced:** "We help brands grow online with smart, results-driven strategies tailored to every business." It is still vague, but contains no banned words. The checker exception was removed.
+
+**Still open:** "engine" as a metaphor (outside the locked "growth engine") and "not just" (Jamil did not answer; kept until he does).
+
+**Deploy:** 16 files, guarded (backups `.bak-20261003-083522`), live md5 = repo. **Verified:** 45 pages crawled, with 0 em dashes, 0 en dashes, 0 "compound", 0 emoji and 0 PHP errors; `copy-check.py` reports 0 issues (it now also flags en dashes and "compound").
+
+---
+
 ## D-072 · Copy rules: no em dashes, no emojis, no AI words, anywhere on the website
 **Date:** 1 October 2026 · **Status:** APPROVED and APPLIED on `.online` (Jamil: "make sure we use no em dashes throughout reinforcelab.online website... no em dashes at all anywhere in the website content copy blog or whatsoever. Also, Never use any emojis anywhere. NO AI Slope and AI Words 100% avoid. If there is any confusion always ask.")
 

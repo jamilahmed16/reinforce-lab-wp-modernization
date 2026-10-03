@@ -37,7 +37,7 @@ function rl_geo_industries() {
 /* ---------- hero animation: Fan-out to citation ----------
    A buyer's question fans out into three related searches (query fan-out); the searches hit your
    page; three passages are highlighted, lifted into the generated answer and cited [1]; caption
-   "retrieved · extracted · cited" lights. 10 s loop, soft fade 92–97 %, reset. */
+   "retrieved · extracted · cited" lights. 10 s loop, soft fade 92-97 %, reset. */
 function rl_geo_svg() {
     $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlGeoT"><title id="rlGeoT">A buyer question fans out into related searches; the searches retrieve your page; three passages are extracted into the AI-generated answer and each is cited to your page.</title>';
     $s .= '<rect class="g-box" x="110" y="0" width="300" height="30"/><rect class="g-boxon" x="110" y="0" width="300" height="30"/><text class="g-qt" x="260" y="19" text-anchor="middle">HOW SHOULD WE CHOOSE A PROVIDER?</text>';
@@ -235,7 +235,7 @@ function rl_render_geo() {
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Example&nbsp;<b>]</b></span><h2>What does a citable passage look like?</h2><p class="lede">The same idea, written two ways. Only one gives an AI engine something it can safely quote.</p></div>
     <div class="ba">
-      <div class="before"><span class="tag">Before · hard to cite</span><blockquote>"Our cutting-edge approach leverages synergies to maximise your digital presence across every platform."</blockquote><ul><li>No question answered</li><li>No specific fact or source</li><li>Could describe any company</li></ul></div>
+      <div class="before"><span class="tag">Before · hard to cite</span><blockquote>"We help brands grow online with smart, results-driven strategies tailored to every business."</blockquote><ul><li>No question answered</li><li>No specific fact or source</li><li>Could describe any company</li></ul></div>
       <div class="after"><span class="tag">After · built to be cited</span><blockquote>"Generative Engine Optimization (GEO) structures content so AI search engines can extract and cite it. It focuses on answer-first passages, sourced facts and clear headings."</blockquote><ul><li>Answers "what is GEO?" in the first sentence</li><li>Defines the term and names what it covers</li><li>Stands on its own if quoted</li></ul></div>
     </div>
   </div>

@@ -15,7 +15,7 @@ function rl_diag_choices() {
     return [
         'industry' => ['Pharmaceutical & Life Sciences', 'Healthcare', 'B2B SaaS', 'E-commerce', 'Manufacturing', 'Technology', 'Professional Services (incl. Finance)', 'Education', 'Other'],
         'challenge' => ['Low organic visibility', 'Declining rankings', 'Poor AI-search visibility', "Content isn't generating results", 'Competitors are outperforming us', 'Need a scalable content system', 'Need better SEO / AEO / GEO', 'Need enterprise search intelligence'],
-        'volume' => ['1–10', '11–30', '31–50', '50+'],
+        'volume' => ['1 to 10', '11 to 30', '31 to 50', '50+'],
     ];
 }
 function rl_diag_faqs() {
@@ -204,7 +204,7 @@ body.rl-diag-page .fl-page-content,body.rl-diag-page .fl-content,body.rl-diag-pa
 .rl-diag .faq summary{cursor:pointer;padding:20px 24px;font-family:var(--f-display);text-transform:uppercase;font-size:16px;letter-spacing:.02em;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
 .rl-diag .faq summary::-webkit-details-marker{display:none}
 .rl-diag .faq summary::after{content:"+";color:var(--red-2);font-family:var(--f-mono);font-size:20px}
-.rl-diag .faq details[open] summary::after{content:"–"}
+.rl-diag .faq details[open] summary::after{content:"\2212"}
 .rl-diag .faq p{padding:0 24px 22px;color:var(--ink-dim);font-size:15px;max-width:75ch}
 .rl-diag .faq p a{color:var(--ink);border-bottom:1px solid var(--red-line)}
 </style>
