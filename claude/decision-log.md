@@ -597,6 +597,49 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-075 · Single post template: shared long-form base built on `.online`
+**Date:** 3 October 2026 · **Status:** DONE (Jamil: "go ahead with the long-form base"). Type-specific sections come next, one type at a time.
+
+**File:** `wp/novamira-sandbox/reinforce-post.php`, live md5 = repo `24b637e3…`. It is **the one template for every post** (D-074) and renders via `template_redirect` like the archive template (D-071).
+- There is **no Beaver Themer singular layout**, so no post can be targeted twice (the production overlap trigger in F-001).
+- The create call aborted if a singular layout existed, if the file existed, or if the site was not noindex.
+
+**Editor fields** (ACF local group, defined in code, in the post editor sidebar):
+- Article type (the 13 types from D-074; default Guide);
+- Status label (shown only for Product & Service: Available / Early access / In development);
+- Short answer; Key takeaways (one per line);
+- Last substantive update (date: set only for real content changes, F-003);
+- FAQs ("Question? | Answer" per line); Sources ("Title | URL" per line).
+
+**What every post renders:**
+- Breadcrumb Home › Blog › Category › Title.
+- Type tag (plus the status tag for Product & Service) and a category tag; H1 = the post title.
+- Byline linking Jamil to `/about-us/#founder`; published date; "Updated" only when the update field is later than publication; reading time (230 wpm).
+- Featured image (eager, high priority).
+- Short-answer box, then Key takeaways, then the article body. Ids are added to every H2/H3; wide tables scroll inside the article on phones (kit `.tscroll`).
+- **Sticky contents list** built from the H2s (sidebar on desktop, collapsible "Contents" on phones).
+- FAQs, then a numbered Sources list (external, `noopener`).
+- **Author box:** Jamil, Founder and CEO, with the confirmed bio (pharmacist, SEO and AI search consultant, Semrush Ambassador), About and LinkedIn links. The WP author bio is empty, so it uses the D-068 facts.
+- **Related articles:** 3 from the same category; a secondary query with no pagination, so the F-001 archive rule is unaffected.
+- Diagnostic CTA.
+- Hooks `rl_post_type_sections_before/after` are where each type's own sections will plug in.
+
+**Schema:**
+- Yoast's Article becomes `['Article','BlogPosting']`, with real `datePublished`; `dateModified` = the update field, or publication when unset (never the WP modified time, F-003). It adds `genre` (type), `abstract` (short answer) and `citation` (sources).
+- Jamil's Yoast `Person` gains jobTitle, description, knowsAbout, LinkedIn `sameAs`, worksFor and `url` → About.
+- `FAQPage` when FAQs exist.
+
+**Entity fix:** the About page's Person `@id` now equals Yoast's own `@id` for Jamil (`…/#/schema/person/ecf64c…`), so the About page and every post describe one person. `reinforce-about.php`: backup `.bak-20261003-085121`, live md5 = repo `d85bd87b…`.
+
+**Verified (no post written to the database, per F-003):** a sample How-To article was rendered **in memory** through the live template. Yoast indexable saving was switched off for that run.
+- Desktop and 390 px screenshots checked: 1 H1, 5-item contents list, answer, takeaways, table, FAQ, sources, author box, CTA.
+- At 390 px the page is exactly 390 wide; the first render overflowed because of the kit's 760 px table minimum, which was fixed with the `.tscroll` wrap.
+- The schema output was checked as described above. `copy-check.py`: 0 issues.
+
+**At the first real post:** recheck the template live (schema in Rich Results Test, robots, `sw390`), and add a style-fingerprint entry once a post URL exists.
+
+---
+
 ## D-074 · Blog post types: one single-post template, 11 types (plus 2 later)
 **Date:** 3 October 2026 · **Status:** APPROVED (Jamil: "yes to all"). Not built yet; the shared long-form base is next.
 

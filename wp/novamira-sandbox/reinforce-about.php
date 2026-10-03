@@ -67,7 +67,8 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!is_array($graph) || !rl_is_about()) return $graph;
     $url = get_permalink(get_queried_object_id());
     $org = home_url('/#organization');
-    $pid = home_url('/#/schema/person/jamil-ahmed');
+    $ju = get_user_by('login', 'jamilahmed');
+    $pid = ($ju && function_exists('rl_person_schema_id')) ? rl_person_schema_id($ju->ID) : home_url('/#/schema/person/jamil-ahmed'); // same @id Yoast gives Jamil on posts
     $f = rl_about_person();
     foreach ($graph as &$n) {
         if (!is_array($n) || empty($n['@type'])) continue;
