@@ -654,7 +654,8 @@ AI Growth Systems  (umbrella / positioning)
    - Added to the banned list.
 3. **GEO "Before" example replaced:** "We help brands grow online with smart, results-driven strategies tailored to every business." It is still vague, but contains no banned words. The checker exception was removed.
 
-**Still open:** "engine" as a metaphor (outside the locked "growth engine") and "not just" (Jamil did not answer; kept until he does).
+**"Engine" as a metaphor: KEEP** (Jamil, 3 Oct: "Keep it"). Uses such as "intelligence engine" and "opportunity engine" stay, alongside the locked "growth engine".
+**Still open:** "not just" (kept until Jamil answers).
 
 **Deploy:** 16 files, guarded (backups `.bak-20261003-083522`), live md5 = repo. **Verified:** 45 pages crawled, with 0 em dashes, 0 en dashes, 0 "compound", 0 emoji and 0 PHP errors; `copy-check.py` reports 0 issues (it now also flags en dashes and "compound").
 
