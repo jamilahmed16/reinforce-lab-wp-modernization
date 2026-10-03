@@ -597,6 +597,33 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-077 · Blog templates: one type at a time, own design per type, mockup before code
+**Date:** 3 October 2026 · **Status:** APPROVED (Jamil: "Why every blog templates look and feel almost similar and looks like a common template" … "work on one template at a time. Otherwise it always happens")
+
+**Finding:** the D-076 build gave all 11 types the same page shell (same hero, same sidebar layout, same order) and the same box style for every type-specific section. The review screenshots also used one placeholder article for every type, so the templates read as one generic template.
+
+**Decision:**
+- One code file still renders all posts. That is what F-001 requires, and it says nothing about the look.
+- **Each type now gets its own page design** (hero, layout and signature component), inside the D-013 design system.
+
+**Process, per type:**
+1. A static design mockup with realistic content for that type.
+2. Jamil reviews it.
+3. Only the approved design is built into the live template.
+4. Then the next type starts.
+
+The D-076 per-type sections stay live but are treated as placeholders until each type's design is approved. The multi-type review page (artifact `M1HRwpUmNwG46meKUJ4Gto`) is superseded.
+
+**Type 1, Guide:** mockup `claude/design-previews/blog-guide-template-mockup.html`, published privately at https://claude.ai/artifact/G7CE2VXznAD2fQxKPB52dD. It is book-style:
+- cover hero with a contents plate (chapters, minutes, glossary) and "Start here" paths;
+- sticky chapter rail with reading progress (a progress bar and "Chapter 2 of 6" on phones);
+- outlined chapter numbers opening each chapter, pull quote, note and figure styles, and "next chapter" links;
+- back matter: A to Z glossary, a "this guide and its articles" hub map, FAQs and sources side by side, author box, CTA.
+
+Sample content only. Awaiting Jamil's review.
+
+---
+
 ## D-076 · Type-specific sections built for all 11 post types (plus Case Study rule change)
 **Date:** 3 October 2026 · **Status:** DONE (Jamil: "Go ahead"; Case Study "should it wait for a named client?": "No"; Product & Service subtypes "okay").
 

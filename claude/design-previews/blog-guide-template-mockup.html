@@ -1,0 +1,338 @@
+<title>Guide Template Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a book. Cover hero with a contents plate, a sticky chapter rail with reading progress, chapters that open like a book chapter, an A to Z glossary and a hub map at the back. Dark only: it is the Reinforce Lab site (D-013). */
+:root{
+  --bg:#121011; --bg-2:#0e0c0d; --panel:#1a1617; --panel-2:#211c1d;
+  --ink:#f2eeee; --ink-dim:#b8b0b1; --ink-faint:#7f7778;
+  --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
+  --red:#990000; --red-2:#c21a1a; --red-3:#e23b3b; --red-line:rgba(226,59,59,.38);
+  --f-display:"Oswald","Arial Narrow",sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1280px; --g:clamp(16px,3vw,32px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink-dim);font-family:var(--f-body);font-size:16px;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;background-position:-1px -1px}
+a{color:var(--ink)}
+:focus-visible{outline:2px solid var(--red-3);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--g)}
+.mono{font-family:var(--f-mono)}
+h1,h2,h3,h4{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);margin:0;line-height:1.02;letter-spacing:.005em;text-wrap:balance}
+
+/* mock notice + site chrome (simplified) */
+.mocknote{background:var(--red);color:#fff;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-align:center;padding:7px var(--g)}
+.chrome{border-bottom:1px solid var(--line-2);background:rgba(18,16,17,.86);backdrop-filter:blur(14px)}
+.chrome .wrap{display:flex;justify-content:space-between;align-items:center;height:62px;gap:16px}
+.logo{font-family:var(--f-display);font-weight:700;letter-spacing:.04em;color:var(--ink);font-size:18px;text-transform:uppercase}
+.logo b{color:var(--red-3)}
+.chrome nav{display:flex;gap:22px;font-family:var(--f-display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.chrome nav span{color:var(--ink-dim)}
+.chrome nav span.on{color:var(--ink)}
+.cta-s{font-family:var(--f-display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid var(--red-2);padding:9px 14px;background:linear-gradient(180deg,rgba(194,26,26,.35),rgba(153,0,0,.2))}
+
+/* ---------- COVER ---------- */
+.crumbs{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);padding-top:26px}
+.crumbs a{color:var(--ink-faint);text-decoration:none}
+.cover{padding-block:clamp(26px,4vw,48px) clamp(34px,5vw,60px);display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.85fr);gap:clamp(28px,5vw,64px);align-items:end}
+.kicker{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:20px}
+.kind{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:var(--red);padding:6px 10px}
+.cat{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:5px 10px}
+.cover h1{font-size:clamp(40px,6.4vw,84px);line-height:.95;letter-spacing:-.005em}
+.cover h1 em{font-style:normal;color:var(--red-3)}
+.standfirst{font-size:clamp(17px,1.6vw,20px);line-height:1.55;color:var(--ink-dim);max-width:640px;margin:22px 0 0}
+.byline{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:26px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint)}
+.byline .who{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.av{width:34px;height:34px;border:1px solid var(--red-line);display:grid;place-items:center;font-family:var(--f-display);font-size:15px;color:var(--ink);background:var(--bg-2)}
+.byline b{color:var(--ink-dim);font-weight:500}
+
+/* contents plate */
+.plate{border:1px solid var(--line-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));box-shadow:0 40px 90px -60px rgba(194,26,26,.6)}
+.plate-top{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line-2)}
+.plate-top div{padding:16px 18px;border-right:1px solid var(--line)}
+.plate-top div:last-child{border-right:0}
+.plate-top b{display:block;font-family:var(--f-display);font-size:30px;font-weight:500;color:var(--ink);line-height:1}
+.plate-top span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.plate ol{list-style:none;margin:0;padding:8px 0}
+.plate li a{display:grid;grid-template-columns:44px 1fr auto;gap:8px;align-items:baseline;padding:9px 18px;text-decoration:none;color:var(--ink-dim);font-size:14.5px}
+.plate li a:hover{background:rgba(255,255,255,.03);color:var(--ink)}
+.plate .n{font-family:var(--f-mono);font-size:12px;color:var(--red-3)}
+.plate .m{font-family:var(--f-mono);font-size:11px;color:var(--ink-faint)}
+
+/* start here paths */
+.paths{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-2);border:1px solid var(--line-2);margin-bottom:clamp(40px,6vw,72px)}
+.path{background:var(--bg);padding:20px 22px;display:grid;gap:8px;text-decoration:none;transition:background .2s}
+.path:hover{background:var(--panel)}
+.path .w{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.path .t{font-family:var(--f-display);font-size:21px;text-transform:uppercase;color:var(--ink);line-height:1.1}
+.path .go{font-family:var(--f-mono);font-size:12px;color:var(--red-3)}
+.paths-h{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.paths-h span{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+.paths-h i{flex:1;height:1px;background:var(--line-2)}
+
+/* ---------- BOOK BODY ---------- */
+.book{display:grid;grid-template-columns:250px minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:start;padding-bottom:40px}
+.rail{position:sticky;top:20px}
+.rail .lbl{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);display:flex;justify-content:space-between;margin-bottom:12px}
+.rail ol{list-style:none;margin:0;padding:0;position:relative}
+.rail ol::before{content:"";position:absolute;left:15px;top:6px;bottom:6px;width:1px;background:var(--line-2)}
+.rail .fill{position:absolute;left:15px;top:6px;width:1px;background:var(--red-3);height:0;transition:height .15s linear}
+.rail li a{position:relative;display:grid;grid-template-columns:32px 1fr;gap:10px;padding:8px 0;text-decoration:none;color:var(--ink-faint);font-size:14px;line-height:1.35}
+.rail li a .d{width:31px;height:31px;display:grid;place-items:center;font-family:var(--f-mono);font-size:11px;border:1px solid var(--line-2);background:var(--bg);position:relative;z-index:1}
+.rail li a.on{color:var(--ink)}
+.rail li a.on .d,.rail li a.done .d{border-color:var(--red-2);color:#fff;background:var(--red)}
+.rail li a.done{color:var(--ink-dim)}
+.rail .pct{margin-top:16px;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+
+.text{max-width:740px;min-width:0}
+.answer{border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:24px 26px;margin-bottom:22px}
+.answer .t{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 10px}
+.answer p{margin:0;font-size:19px;line-height:1.6;color:var(--ink)}
+.takeaways{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:56px}
+.takeaways div{background:var(--bg-2);padding:16px 18px;display:grid;grid-template-columns:28px 1fr;gap:8px;font-size:15px;color:var(--ink-dim)}
+.takeaways div b{font-family:var(--f-mono);font-size:11.5px;color:var(--red-3);font-weight:500;padding-top:2px}
+
+.chapter{padding-top:12px;margin-top:64px;scroll-margin-top:24px}
+.chapter:first-of-type{margin-top:0}
+.ch-open{display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:end;border-bottom:1px solid var(--line-2);padding-bottom:20px;margin-bottom:26px}
+.ch-num{font-family:var(--f-display);font-weight:700;font-size:clamp(72px,9vw,118px);line-height:.78;color:transparent;-webkit-text-stroke:1.5px var(--red-3)}
+.ch-meta{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:10px}
+.ch-open h2{font-size:clamp(28px,3.4vw,40px)}
+.prose p{margin:0 0 1.15em;font-size:17.5px;line-height:1.78}
+.prose h3{font-size:22px;margin:1.6em 0 .55em}
+.prose strong{color:var(--ink);font-weight:600}
+.prose ul{padding-left:1.2em;margin:0 0 1.2em}
+.prose li{margin:.4em 0;font-size:17px}
+.prose li::marker{color:var(--red-3)}
+.term{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--red-3)}
+.pull{margin:30px 0;padding:0 0 0 22px;border-left:2px solid var(--red-2);font-family:var(--f-display);font-size:clamp(22px,2.4vw,28px);line-height:1.2;text-transform:uppercase;color:var(--ink)}
+.note{display:grid;grid-template-columns:auto 1fr;gap:14px;border:1px solid var(--line-2);background:var(--panel);padding:16px 18px;margin:26px 0;font-size:15.5px}
+.note b{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3);padding-top:3px;white-space:nowrap}
+.figure{margin:30px 0;border:1px solid var(--line-2);background:var(--bg-2);padding:20px}
+.figure svg{display:block;width:100%;height:auto}
+.figure figcaption{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);margin-top:12px}
+.ch-end{margin-top:26px;border:1px dashed var(--line-2);padding:14px 18px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:center}
+.ch-end span{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
+.ch-end a{font-family:var(--f-display);font-size:15px;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;color:var(--ink)}
+.ch-end a i{color:var(--red-3);font-style:normal}
+
+/* ---------- BACK MATTER ---------- */
+.back{border-top:1px solid var(--line-2);padding-block:56px 20px;margin-top:40px}
+.back-h{display:flex;align-items:baseline;gap:16px;margin-bottom:22px}
+.back-h span{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3)}
+.back-h h2{font-size:clamp(26px,3vw,36px)}
+.glossary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.gl{background:var(--bg-2);padding:18px 20px;display:grid;grid-template-columns:34px 1fr;gap:12px}
+.gl .l{font-family:var(--f-display);font-size:30px;color:var(--red-3);line-height:1}
+.gl dt{font-family:var(--f-display);text-transform:uppercase;font-size:17px;color:var(--ink);margin-bottom:4px}
+.gl dd{margin:0;font-size:14.5px;color:var(--ink-dim)}
+.hub{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:0;border:1px solid var(--line-2)}
+.hub-core{background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:28px;border-right:1px solid var(--line-2);display:grid;align-content:center;gap:10px}
+.hub-core span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+.hub-core b{font-family:var(--f-display);font-size:26px;text-transform:uppercase;color:var(--ink);line-height:1.05}
+.hub ul{list-style:none;margin:0;padding:0}
+.hub li a{display:grid;grid-template-columns:110px 1fr 20px;gap:14px;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.hub li:last-child a{border-bottom:0}
+.hub li a:hover{background:rgba(255,255,255,.03)}
+.hub .ty{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
+.hub .ar{color:var(--ink-faint)}
+.faq details{border:1px solid var(--line);background:var(--panel);margin-bottom:8px}
+.faq summary{cursor:pointer;list-style:none;padding:16px 18px;font-family:var(--f-display);text-transform:uppercase;font-size:16px;color:var(--ink);display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red-3);font-family:var(--f-mono)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:0;padding:0 18px 16px;font-size:15.5px}
+.twocol{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
+.sources ol{margin:0;padding-left:1.4em;font-size:14.5px}
+.sources li{padding:6px 0;color:var(--ink-faint)}
+.sources a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.author{display:grid;grid-template-columns:84px 1fr;gap:20px;border:1px solid var(--line-2);background:var(--panel);padding:24px;margin-top:40px}
+.author .av{width:84px;height:84px;font-size:32px}
+.author .nm{font-family:var(--f-display);font-size:24px;text-transform:uppercase;color:var(--ink);margin:0}
+.author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 10px}
+.author p{margin:0 0 10px;font-size:15px}
+.author .links{display:flex;gap:18px;font-size:14px}
+.final{margin-block:56px 70px;border:1px solid var(--red-line);background:radial-gradient(70% 120% at 50% 100%,rgba(153,0,0,.35),transparent 70%),var(--bg-2);padding:clamp(28px,5vw,56px);text-align:center}
+.final h2{font-size:clamp(28px,4vw,46px);margin:10px 0 12px}
+.final p{max-width:560px;margin:0 auto 22px}
+.btn{display:inline-block;font-family:var(--f-display);text-transform:uppercase;letter-spacing:.08em;font-size:14px;text-decoration:none;color:#fff;border:1px solid var(--red-2);background:var(--red);padding:13px 22px}
+
+/* mobile chapter bar */
+.mbar{display:none}
+@media(max-width:1000px){
+  .cover{grid-template-columns:1fr}
+  .book{grid-template-columns:1fr}
+  .rail{display:none}
+  .mbar{display:block;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(18,16,17,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-2);margin-inline:calc(var(--g) * -1);padding:10px var(--g) 0}
+  .mbar .row{display:flex;justify-content:space-between;gap:10px;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);padding-bottom:9px}
+  .mbar .row span:last-child{color:var(--ink-faint)}
+  .mbar .bar{height:2px;background:var(--line-2)}
+  .mbar .bar i{display:block;height:100%;width:0;background:var(--red-3)}
+}
+@media(max-width:700px){
+  .chrome nav{display:none}
+  .paths,.takeaways,.glossary,.twocol,.hub{grid-template-columns:1fr}
+  .hub-core{border-right:0;border-bottom:1px solid var(--line-2)}
+  .hub li a{grid-template-columns:1fr 20px}.hub .ty{grid-column:1/-1}
+  .plate-top b{font-size:24px}
+  .ch-open{grid-template-columns:1fr;gap:10px}
+  .ch-num{font-size:64px}
+  .prose p{font-size:16.5px}
+  .author{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rail .fill{transition:none}}
+</style>
+
+<div class="mocknote">DESIGN MOCKUP · GUIDE TEMPLATE · sample content for layout review, not published</div>
+<header class="chrome"><div class="wrap"><span class="logo">Reinforce <b>/</b> Lab</span><nav aria-label="Site (mockup)"><span>Search Authority OS</span><span>Solutions</span><span>Industries</span><span>Packages</span><span class="on">Blog</span><span>About</span><span>Contact</span></nav><span class="cta-s">Get your diagnostic</span></div></header>
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="#">Home</a> / <a href="#">Blog</a> / <a href="#">AI Search</a> / AI search optimization guide</nav>
+
+  <section class="cover">
+    <div>
+      <div class="kicker"><span class="kind">Guide</span><span class="cat">AI Search</span><span class="cat">Pillar</span></div>
+      <h1>AI search optimization: <em>the complete guide</em></h1>
+      <p class="standfirst">How ChatGPT, Perplexity, Gemini and Google AI Overviews choose what to say about your business, and the work that makes your brand the source they cite.</p>
+      <div class="byline">
+        <span class="who"><span class="av" aria-hidden="true">J</span>Jamil Ahmed</span>
+        <span>Published <b>15 Sep 2026</b></span>
+        <span>Updated <b>28 Sep 2026</b></span>
+      </div>
+    </div>
+    <aside class="plate" aria-label="In this guide">
+      <div class="plate-top"><div><b>6</b><span>Chapters</span></div><div><b>24</b><span>Min read</span></div><div><b>A to Z</b><span>Glossary</span></div></div>
+      <ol id="plate"></ol>
+    </aside>
+  </section>
+
+  <div class="paths-h"><span>Start here</span><i></i></div>
+  <div class="paths">
+    <a class="path" href="#ch-1"><span class="w">New to AI search</span><span class="t">Start with how AI answers are built</span><span class="go">Chapter 01 &rarr;</span></a>
+    <a class="path" href="#ch-3"><span class="w">You already rank on Google</span><span class="t">See why rankings and citations differ</span><span class="go">Chapter 03 &rarr;</span></a>
+    <a class="path" href="#ch-6"><span class="w">You need a plan this quarter</span><span class="t">Go straight to the 90-day plan</span><span class="go">Chapter 06 &rarr;</span></a>
+  </div>
+
+  <div class="mbar" aria-hidden="true"><div class="row"><span id="mb-ch">Chapter 01 of 06</span><span id="mb-pct">0% read</span></div><div class="bar"><i id="mb-bar"></i></div></div>
+
+  <div class="book">
+    <aside class="rail" aria-label="Chapters">
+      <div class="lbl"><span>Chapters</span><span id="rail-pct">0%</span></div>
+      <ol id="rail"><span class="fill" id="fill"></span></ol>
+      <p class="pct">About 24 min in total</p>
+    </aside>
+
+    <article class="text">
+      <div class="answer"><p class="t">Short answer</p><p>AI search optimization is the work of making AI tools describe your business correctly and cite your pages when buyers ask about your category. It rests on normal SEO, then adds clear facts, quotable passages and consistent profiles across the web.</p></div>
+      <div class="takeaways">
+        <div><b>01</b>AI answers draw on pages search engines can crawl and trust.</div>
+        <div><b>02</b>Clear, quotable passages get cited more often than vague copy.</div>
+        <div><b>03</b>Your facts must match across your site, profiles and directories.</div>
+        <div><b>04</b>Measure mentions and citations on a fixed set of real buyer questions.</div>
+      </div>
+
+      <section class="chapter" id="ch-1">
+        <div class="ch-open"><span class="ch-num" aria-hidden="true">01</span><div><p class="ch-meta">Chapter 1 · 4 min</p><h2>How AI answers are built</h2></div></div>
+        <div class="prose">
+          <p>When someone asks an AI search tool a question, it does not invent the answer from nothing. It looks for pages that match the question, reads the most useful passages and writes a short answer, often with links to the pages it used.</p>
+          <p>That means your pages compete twice: once to be found, and again to be the passage the tool chooses to quote. A page can rank well and still never be cited, because its best information is buried or vague.</p>
+          <div class="pull">Ranking gets you considered. A clear passage gets you cited.</div>
+          <p>Google says there are no extra technical requirements to appear in AI Overviews beyond what it asks of any page in Search. The page must be indexed and eligible to show a snippet. The rest is the quality and clarity of what you publish.</p>
+          <figure class="figure">
+            <svg viewBox="0 0 640 150" role="img" aria-label="Question, retrieve pages, pick passages, write answer, cite sources">
+              <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#b8b0b1" text-anchor="middle">
+                <rect x="4" y="40" width="108" height="56" fill="#1a1617" stroke="rgba(255,255,255,.18)"/><text x="58" y="72">QUESTION</text>
+                <rect x="136" y="40" width="108" height="56" fill="#1a1617" stroke="rgba(255,255,255,.18)"/><text x="190" y="72">RETRIEVE PAGES</text>
+                <rect x="268" y="40" width="108" height="56" fill="#1a1617" stroke="#e23b3b"/><text x="322" y="72" fill="#f2eeee">PICK PASSAGES</text>
+                <rect x="400" y="40" width="108" height="56" fill="#1a1617" stroke="rgba(255,255,255,.18)"/><text x="454" y="72">WRITE ANSWER</text>
+                <rect x="532" y="40" width="104" height="56" fill="#990000" stroke="#c21a1a"/><text x="584" y="72" fill="#ffffff">CITE SOURCES</text>
+                <g stroke="#7f7778" stroke-width="1.2"><line x1="112" y1="68" x2="134" y2="68"/><line x1="244" y1="68" x2="266" y2="68"/><line x1="376" y1="68" x2="398" y2="68"/><line x1="508" y1="68" x2="530" y2="68"/></g>
+                <text x="322" y="122" fill="#e23b3b" font-size="10">YOUR PAGE WINS OR LOSES HERE</text>
+              </g>
+            </svg>
+            <figcaption>Figure 1.1 · Simplified flow of an AI search answer</figcaption>
+          </figure>
+        </div>
+        <div class="ch-end"><span>End of chapter 1</span><a href="#ch-2">Next: Why your facts must agree <i>&rarr;</i></a></div>
+      </section>
+
+      <section class="chapter" id="ch-2">
+        <div class="ch-open"><span class="ch-num" aria-hidden="true">02</span><div><p class="ch-meta">Chapter 2 · 4 min</p><h2>Why your facts must agree everywhere</h2></div></div>
+        <div class="prose">
+          <p>AI tools learn who you are from many places: your website, your <a class="term" href="#g-schema">structured data</a>, business profiles, directories, reviews and press coverage. When those sources disagree, the tool has to guess, and it may guess wrong.</p>
+          <h3>Start with one source of truth</h3>
+          <p>Write down the name, description, services, locations and key facts you want every AI tool to repeat. Then make your About page, your Organization schema and your main profiles say exactly that.</p>
+          <ul><li>One business name, written the same way everywhere</li><li>One short description of what you do and who you serve</li><li>The same address and phone number on every listing</li></ul>
+          <div class="note"><b>Tip</b><span>When an AI tool describes you wrongly, check old directory listings and any profile that was not updated after a rebrand or move.</span></div>
+        </div>
+        <div class="ch-end"><span>End of chapter 2</span><a href="#ch-3">Next: Rankings and citations <i>&rarr;</i></a></div>
+      </section>
+
+      <section class="chapter" id="ch-3">
+        <div class="ch-open"><span class="ch-num" aria-hidden="true">03</span><div><p class="ch-meta">Chapter 3 · 4 min</p><h2>Rankings and citations are different</h2></div></div>
+        <div class="prose"><p>Chapters 3 to 6 continue in the same pattern: a numbered chapter opener, readable text, figures, notes and a link to the next chapter. They are shortened here so the review stays quick.</p></div>
+      </section>
+      <section class="chapter" id="ch-4"><div class="ch-open"><span class="ch-num" aria-hidden="true">04</span><div><p class="ch-meta">Chapter 4 · 4 min</p><h2>Writing passages AI tools can quote</h2></div></div><div class="prose"><p>Shortened for the mockup.</p></div></section>
+      <section class="chapter" id="ch-5"><div class="ch-open"><span class="ch-num" aria-hidden="true">05</span><div><p class="ch-meta">Chapter 5 · 4 min</p><h2>Measuring AI visibility</h2></div></div><div class="prose"><p>Shortened for the mockup.</p></div></section>
+      <section class="chapter" id="ch-6"><div class="ch-open"><span class="ch-num" aria-hidden="true">06</span><div><p class="ch-meta">Chapter 6 · 4 min</p><h2>Your 90-day plan</h2></div></div><div class="prose"><p>Shortened for the mockup.</p></div></section>
+    </article>
+  </div>
+
+  <section class="back" aria-labelledby="gl-h">
+    <div class="back-h"><span>Back matter</span><h2 id="gl-h">Glossary A to Z</h2></div>
+    <dl class="glossary">
+      <div class="gl"><span class="l" aria-hidden="true">A</span><div><dt>AI Overviews</dt><dd>Google's AI-written summaries shown at the top of some search results, with links to source pages.</dd></div></div>
+      <div class="gl"><span class="l" aria-hidden="true">C</span><div><dt>Citation</dt><dd>A link or named reference to your page inside an AI answer.</dd></div></div>
+      <div class="gl"><span class="l" aria-hidden="true">E</span><div><dt>Entity</dt><dd>A thing a search engine can identify on its own, such as your company or your founder.</dd></div></div>
+      <div class="gl" id="g-schema"><span class="l" aria-hidden="true">S</span><div><dt>Structured data</dt><dd>Code on a page that states facts in a format machines read directly, such as your business name and address.</dd></div></div>
+    </dl>
+  </section>
+
+  <section class="back" aria-labelledby="hub-h">
+    <div class="back-h"><span>Go deeper</span><h2 id="hub-h">This guide and its articles</h2></div>
+    <div class="hub">
+      <div class="hub-core"><span>Pillar guide</span><b>AI search optimization: the complete guide</b><span>You are here</span></div>
+      <ul>
+        <li><a href="#"><span class="ty">Explainer</span><span>What is generative engine optimization?</span><span class="ar" aria-hidden="true">&rarr;</span></a></li>
+        <li><a href="#"><span class="ty">How-To</span><span>How to build a prompt set from real buyer questions</span><span class="ar" aria-hidden="true">&rarr;</span></a></li>
+        <li><a href="#"><span class="ty">Comparison</span><span>GEO vs SEO: what changes and what stays</span><span class="ar" aria-hidden="true">&rarr;</span></a></li>
+        <li><a href="#"><span class="ty">Service</span><span>AI Search Optimization services</span><span class="ar" aria-hidden="true">&rarr;</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="back twocol" aria-label="Questions and sources">
+    <div class="faq"><div class="back-h"><span>Questions</span><h2>FAQs</h2></div>
+      <details open><summary>Do I need a separate strategy for each AI tool?</summary><p>No. The foundations are shared: crawlable pages, clear facts and consistent profiles. You then check each tool on the same set of questions.</p></details>
+      <details><summary>How long until AI answers change?</summary><p>It varies by tool and topic. Changes to pages that tools fetch live can show up sooner than changes to what a model learned in training.</p></details>
+    </div>
+    <div class="sources"><div class="back-h"><span>Evidence</span><h2>Sources</h2></div>
+      <ol><li><a href="#">Google Search Central, AI features and your website</a></li><li><a href="#">Google Search Central, Creating helpful content</a></li><li><a href="#">Google Search Central, Introduction to structured data</a></li></ol>
+    </div>
+  </section>
+
+  <aside class="author" aria-label="About the author"><span class="av" aria-hidden="true">J</span><div><p class="nm">Jamil Ahmed</p><p class="role">Founder and CEO, Reinforce Lab</p><p>Pharmacist, SEO and AI search consultant, and Semrush Ambassador. Jamil builds AI Growth Systems for businesses using AI automation, AI Search Optimization, SEO and intelligent workflows.</p><div class="links"><a href="#">About Jamil</a><a href="#">LinkedIn</a></div></div></aside>
+
+  <section class="final"><span class="mono" style="font-size:11.5px;letter-spacing:.18em;color:var(--red-3)">START HERE</span><h2>See how AI tools describe your business</h2><p>The free Search Authority Diagnostic checks your visibility in Google and AI answers, and shows what to fix first.</p><a class="btn" href="#">Get your free diagnostic &rarr;</a></section>
+</div>
+
+<script>
+const chapters=[...document.querySelectorAll('.chapter')].map(s=>({id:s.id,n:s.querySelector('.ch-num').textContent,t:s.querySelector('h2').textContent,m:s.querySelector('.ch-meta').textContent.split('·')[1].trim()}));
+document.getElementById('plate').innerHTML=chapters.map(c=>`<li><a href="#${c.id}"><span class="n">${c.n}</span><span>${c.t}</span><span class="m">${c.m}</span></a></li>`).join('');
+const rail=document.getElementById('rail');
+rail.insertAdjacentHTML('beforeend',chapters.map(c=>`<li><a href="#${c.id}" data-id="${c.id}"><span class="d">${c.n}</span><span>${c.t}</span></a></li>`).join(''));
+const links=[...rail.querySelectorAll('a')], secs=chapters.map(c=>document.getElementById(c.id)), art=document.querySelector('.text');
+function update(){
+  const r=art.getBoundingClientRect(), h=art.offsetHeight-innerHeight*0.6;
+  const p=Math.max(0,Math.min(1,(-r.top+innerHeight*0.25)/Math.max(h,1)));
+  let cur=0; secs.forEach((s,i)=>{ if(s.getBoundingClientRect().top<innerHeight*0.35) cur=i; });
+  links.forEach((a,i)=>{a.classList.toggle('on',i===cur);a.classList.toggle('done',i<cur);});
+  const last=links[cur]; if(last){const fill=document.getElementById('fill'); fill.style.height=(last.offsetTop+15)+'px';}
+  const pct=Math.round(p*100)+'%';
+  document.getElementById('rail-pct').textContent=pct; document.getElementById('mb-pct').textContent=pct+' read';
+  document.getElementById('mb-bar').style.width=pct; document.getElementById('mb-ch').textContent='Chapter '+chapters[cur].n+' of 0'+chapters.length;
+}
+addEventListener('scroll',update,{passive:true}); addEventListener('resize',update); update();
+</script>
