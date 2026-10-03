@@ -597,6 +597,45 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-076 · Type-specific sections built for all 11 post types (plus Case Study rule change)
+**Date:** 3 October 2026 · **Status:** DONE (Jamil: "Go ahead"; Case Study "should it wait for a named client?": "No"; Product & Service subtypes "okay").
+
+**Case Study rule (amends D-074):** a case study no longer needs a *named* client. The client may be anonymised ("A UK pharmaceutical manufacturer"), but:
+- **the client must approve the case study**;
+- **every result must be real and measured** (CLAUDE.md: never invent client results).
+
+Enforced in code: a Case Study saved as Published without the "Client approved" box ticked is put back to Draft.
+
+**Product & Service subtype label:** Jamil approved "Deep dive", but "deep dive" is on the banned AI-word list (D-072). The visible label is **"How it works"** (internal key `deepdive`), pending Jamil's choice.
+
+**File:** `wp/novamira-sandbox/reinforce-post-types.php`, live md5 = repo `62c81dff…` (guarded create). It plugs into the base template's hooks (D-075) and adds an ACF local group whose fields show only for the selected type. Simple one-per-line inputs ("A | B") keep editing quick.
+
+| Type | Before the article | After the article | Extra schema |
+|---|---|---|---|
+| Guide | Start here paths (who it is for → section or URL) | Glossary; "Go deeper" supporting articles | — |
+| How-To | Before you start (time, level, what you need); Steps at a glance (anchored `#step-n`) | Common mistakes; Troubleshooting | HowTo (steps, totalTime, tools) |
+| Explainer | Definition box (term + quotable definition) | Related terms | DefinedTerm; Article `about` the term |
+| Best / List | At-a-glance table (rank, name, best for, verdict); How we chose | The list (ranked items, anchored `#item-n`) | ItemList (ascending) |
+| Review | Affiliate disclosure (if ticked); verdict box with score / 10, pros and cons | Pricing with the "checked on" date; Who it is for; Alternatives | Review of a third-party Product (rating /10, positive/negative notes). The field says never our own services |
+| Comparison | Side-by-side table (2 to 4 options) | Winner by use case; Verdict | ItemList of options |
+| Industry | Industry box (summary + link to `/industries/x/`) | Sector rules to know; Services for that industry (from `rl_ind_data`) | Article `about` the industry |
+| Updates | The update in brief (what changed / what it means / what to do) + official source | Update log (dated) | — |
+| Case Study | Client and industry, challenge, measured results tiles; Our approach | Approved client quote | — (no Review/rating) |
+| Research | Key findings; Method and sample, dataset download | "Cite this research" box | Article + Report; Dataset when a dataset URL is set |
+| Product & Service | "Reinforce Lab makes this" disclosure; product box (subtype, service, status label, links to the service page and diagnostic) | What it does not do; Changelog | Article `about` the Service (`…/#service`); never Review or ratings |
+
+Opinion and Checklist use the base only, as agreed (added later).
+
+**Verified (in memory, no posts written, F-003):**
+- All 11 types rendered through the live template with sample fields: no template errors (the only warnings came from the in-memory query object).
+- The expected schema nodes appear for each type.
+- **Every type is exactly 390 px wide on phones.** Desktop screenshots checked for Review, Product & Service, Best/List and Case Study.
+- `copy-check.py`: 0 issues.
+
+**At the first real post of each type:** validate the schema in Google's Rich Results Test and check the live layout.
+
+---
+
 ## D-075 · Single post template: shared long-form base built on `.online`
 **Date:** 3 October 2026 · **Status:** DONE (Jamil: "go ahead with the long-form base"). Type-specific sections come next, one type at a time.
 
