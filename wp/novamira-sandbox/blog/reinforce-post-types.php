@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - Post type sections
- * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide, How-To, Best / List and Review have their own design files (reinforce-post-guide.php, -howto.php, -list.php, -review.php).
+ * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide, How-To, Best / List, Review and Comparison have their own design files (reinforce-post-guide.php, -howto.php, -list.php, -review.php, -comparison.php).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -53,11 +53,7 @@ add_action('acf/init', function () {
             $ta('rl_e_related', 'Related terms', 'explainer', 'One per line: Term | URL (URL optional)', 4),
             // Best / List fields live in reinforce-post-list.php (D-077)
             // Review fields live in reinforce-post-review.php (D-077)
-            // Comparison
-            $ta('rl_c_options', 'Options compared', 'comparison', 'One per line, 2 to 4 options.', 3),
-            $ta('rl_c_rows', 'Comparison rows', 'comparison', 'One per line: Criterion | value for option 1 | value for option 2 (and so on)', 8),
-            $ta('rl_c_winners', 'Winner by use case', 'comparison', 'One per line: Use case | Option', 4),
-            $ta('rl_c_verdict', 'Verdict', 'comparison', 'Two or three sentences.', 3),
+            // Comparison fields live in reinforce-post-comparison.php (D-077)
             // Industry
             $sel('rl_i_industry', 'Industry', 'industry', rl_pt_industries()),
             $ta('rl_i_rules', 'Sector rules and cautions', 'industry', 'One per line: Rule | What it means for this topic', 4),
@@ -129,16 +125,6 @@ add_action('rl_post_type_sections_before', function ($type, $id, $d) {
             $term = rl_pt_m($id, 'rl_e_term'); $def = rl_pt_m($id, 'rl_e_definition');
             if ($term !== '' && $def !== '') echo '<section class="ptb def"><p class="t">Definition</p><dl><dt>' . esc_html($term) . '</dt><dd>' . esc_html($def) . '</dd></dl></section>';
             break;
-        case 'comparison':
-            $opts = rl_post_lines(get_post_meta($id, 'rl_c_options', true)); $rows = rl_pt_rows(get_post_meta($id, 'rl_c_rows', true));
-            if ($opts && $rows) {
-                $h = '<div class="tscroll"><table class="pt-table"><thead><tr><th scope="col">Criterion</th>';
-                foreach ($opts as $o) $h .= '<th scope="col">' . esc_html($o) . '</th>';
-                $h .= '</tr></thead><tbody>';
-                foreach ($rows as $r) { $h .= '<tr><th scope="row">' . esc_html($r[0]) . '</th>'; foreach ($opts as $i => $o) $h .= '<td>' . esc_html($r[$i + 1] ?? '') . '</td>'; $h .= '</tr>'; }
-                echo rl_pt_box('summary', 'Side by side', $h . '</tbody></table></div>');
-            }
-            break;
         case 'industry':
             $k = rl_pt_m($id, 'rl_i_industry');
             if ($k !== '' && function_exists('rl_ind_data') && isset(rl_ind_data()[$k])) {
@@ -201,11 +187,6 @@ add_action('rl_post_type_sections_after', function ($type, $id, $d) {
             $r = rl_pt_rows(get_post_meta($id, 'rl_e_related', true), 1);
             if ($r) echo rl_pt_box('related-terms', 'Related terms', '<ul class="links">' . implode('', array_map(function ($x) { return '<li>' . rl_pt_link($x[0], $x[1] ?? '') . '</li>'; }, $r)) . '</ul>');
             break;
-        case 'comparison':
-            $w = rl_pt_rows(get_post_meta($id, 'rl_c_winners', true)); $v = rl_pt_m($id, 'rl_c_verdict');
-            if ($w) { $h = '<dl class="gloss">'; foreach ($w as $r) $h .= '<dt>' . esc_html($r[0]) . '</dt><dd>' . esc_html($r[1]) . '</dd>'; echo rl_pt_box('winners', 'Winner by use case', $h . '</dl>'); }
-            if ($v !== '') echo rl_pt_box('verdict', 'Our verdict', '<p>' . esc_html($v) . '</p>');
-            break;
         case 'industry':
             $rules = rl_pt_rows(get_post_meta($id, 'rl_i_rules', true));
             if ($rules) { $h = '<dl class="gloss">'; foreach ($rules as $r) $h .= '<dt>' . esc_html($r[0]) . '</dt><dd>' . esc_html($r[1]) . '</dd>'; echo rl_pt_box('rules', 'Sector rules to know', $h . '</dl>'); }
@@ -247,10 +228,6 @@ add_filter('wpseo_schema_graph', function ($graph) {
         case 'explainer':
             $term = rl_pt_m($id, 'rl_e_term'); $def = rl_pt_m($id, 'rl_e_definition');
             if ($term !== '' && $def !== '') { $add = ['@type' => 'DefinedTerm', '@id' => $url . '#term', 'name' => $term, 'description' => $def, 'url' => $url]; $about = ['@id' => $url . '#term']; }
-            break;
-        case 'comparison':
-            $opts = rl_post_lines(get_post_meta($id, 'rl_c_options', true));
-            if ($opts) $add = ['@type' => 'ItemList', '@id' => $url . '#options', 'name' => get_the_title($id), 'numberOfItems' => count($opts), 'itemListElement' => array_map(function ($o, $i) { return ['@type' => 'ListItem', 'position' => $i + 1, 'name' => $o]; }, $opts, array_keys($opts))];
             break;
         case 'research':
             $ds = esc_url_raw(rl_pt_m($id, 'rl_rs_dataset'));
