@@ -295,7 +295,7 @@ function rl_review_render($c) {
 </section>
 
 <?php if ($card) { ?>
-<div class="r-mbar" aria-label="Verdict at a glance"><div><?php if ($r['score'] !== null) { ?><span class="s"><?php echo esc_html(rl_review_num($r['score'])); ?><small> / 10</small></span><br><?php } ?><span class="n"><?php echo esc_html($p . ($r['price'] !== '' ? ' · from ' . $r['price'] : '')); ?></span></div><?php echo $visit(); ?></div>
+<div class="r-mbar" aria-label="Verdict at a glance"><div class="mi"><?php if ($r['score'] !== null) { ?><span class="s"><?php echo esc_html(rl_review_num($r['score'])); ?><small> / 10</small></span><?php } ?><span class="n"><?php echo esc_html($p . ($r['price'] !== '' ? ' · from ' . $r['price'] : '')); ?></span></div><?php echo $visit(); ?></div>
 <?php } ?>
 </div>
 <?php
@@ -510,9 +510,10 @@ add_action('wp_head', function () {
   .rl-review .r-cond div:nth-child(3n){border-right:0}
   .rl-review .r-cond div:nth-child(n+4){border-top:1px dashed var(--line-2)}
   .rl-review .r-mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:12px;align-items:center;justify-content:space-between;padding:10px var(--gutter,16px) calc(10px + env(safe-area-inset-bottom,0px));background:rgba(18,16,17,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line-2)}
+  .rl-review .r-mbar .mi{min-width:0;display:grid;gap:4px}
   .rl-review .r-mbar .s{font-family:var(--f-display);font-size:24px;color:var(--ink);line-height:1}
   .rl-review .r-mbar .s small{font-family:var(--f-mono);font-size:10.5px;color:var(--ink-faint)}
-  .rl-review .r-mbar .n{font-family:var(--f-mono);font-size:11px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em}
+  .rl-review .r-mbar .n{font-family:var(--f-mono);font-size:11px;line-height:1.3;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .rl-review .r-mbar .go{padding:10px 14px;font-size:13px;flex:none}
   body.rl-review-page{padding-bottom:72px}
 }

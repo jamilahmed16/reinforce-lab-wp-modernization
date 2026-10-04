@@ -20,7 +20,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
-| D-088 | Review template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
+| D-089 | Review template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Review template") | this file |
+| D-088 | Review template: design mockup v1 for review | 4 Oct | APPROVED, built as D-089 | this file |
 | D-087 | Best / List template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Best/List template") | this file |
 | D-086 | Best / List template: design mockup v1 for review | 4 Oct | APPROVED, built as D-087 | this file |
 | D-085 | How-To template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the How-To template") | this file |
@@ -145,6 +146,29 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-089 · Review template built on `.online` from the approved mockup
+**Date:** 4 October 2026 · **Status:** DONE (Jamil: "approved, build the Review template")
+
+**Files:** new `blog/reinforce-post-review.php` (added to the loader after the Best / List file); `blog/reinforce-post.php` hands Review posts to `rl_review_render()`; the old review boxes, fields and Review schema were removed from `blog/reinforce-post-types.php` (no posts existed, so no data was affected).
+
+**How an editor writes a Review:**
+- **Product and test conditions:** product reviewed (third-party only, D-076), kind (software, product or service), version tested, test period, plan tested, "We paid for it ourselves" (on by default; off changes the disclosure to say the vendor gave access), test site or setup, affiliate switch.
+- **Verdict:** verdict word (Highly recommended, Recommended, Good with limits, Not recommended), the verdict text, "Buy it if" and "Skip it if" lines.
+- **Scorecard:** criteria as `Criterion | Weight | What it measures` plus the scores (comma separated). The headline score is the weighted average, so the scorecard total and the headline always match. A plain score field is used only when there are no criteria.
+- **Test log:** `YYYY-MM-DD | What we did | What happened | Measured result`; a line starting with `*` is a key finding (filled marker).
+- **Commercial details:** price from, price checked date, free trial, best for, pricing plans (`Plan | Price | What you get`; the plan named in "Plan tested" is marked), alternatives (`Name | Best for | From | Extra column | URL`) with an optional extra column heading and this product's value, visit link and button text, final verdict.
+- **Light service CTA** after the pros and cons.
+- **Body:** the article text sits under the verdict and before the test log; images with captions show in a screenshot frame.
+
+**Behaviour:** verdict card stays in view on desktop (score, verdict, price, trial, best for, visit button, jump links); on phones a bottom bar shows the score and visit button (the page adds bottom padding so it never covers the footer). Visit links are `rel="sponsored nofollow"` when affiliate.
+
+**Schema:** Review with `itemReviewed` (SoftwareApplication, Product or Service, with version), rating out of 10, author (Jamil's Yoast Person id), publisher, date, reviewBody, positive and negative notes; plus the base BlogPosting, Person and FAQPage. **Guard:** no Review schema when the product name is Reinforce Lab or one of our products (D-076).
+
+**Checks:** in-memory preview with the mockup's placeholder content (nothing saved, F-003): schema nodes Article/BlogPosting, Person, FAQPage, Review; no PHP notices; desktop 1440 and phone 390 with no horizontal scroll; `copy-check.py` 0 issues on the file and the rendered page; all 3 visit links sponsored; `rl.py parity` 39 files, 0 differences; live blog and Technical SEO pages still 390 wide.
+**Fixed during the build:** the phone bottom bar wrapped to three lines; it now keeps the score and one line of text.
 
 ---
 
