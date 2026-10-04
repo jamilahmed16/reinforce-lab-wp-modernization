@@ -360,7 +360,7 @@ function rl_research_render($c) {
           var b=el('rect',{x:x(0),y:by,width:Math.max(0,x(r[1])-x(0)),height:bh,fill:RED,opacity:.9}); svg.appendChild(b);
           svg.appendChild(txt({x:x(r[1])+6,y:by+bh-4,fill:INK,'font-size':11.5,'font-family':MONO},fmt(r[1],sfx)));
           var hit=el('rect',{x:0,y:y0,width:W,height:rowH,fill:'transparent'}); svg.appendChild(hit);
-          hit.addEventListener('pointerenter',function(){ b.setAttribute('opacity',1); b.setAttribute('stroke',INK); tipAt((x(0)+x(r[1]))/2,by+4,r); });
+          hit.addEventListener('pointerenter',function(){ b.setAttribute('opacity',1); b.setAttribute('stroke',INK); tipAt(x(r[1])+120,by+bh+18,r); });
           hit.addEventListener('pointerleave',function(){ b.setAttribute('opacity',.9); b.removeAttribute('stroke'); tip.style.opacity=0; });
         });
       }
@@ -403,7 +403,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if ($x['dataset'] !== '') {
         $ext = strtolower(pathinfo((string) parse_url($x['dataset'], PHP_URL_PATH), PATHINFO_EXTENSION));
         $fmt = ['csv' => 'text/csv', 'json' => 'application/json', 'xlsx' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'zip' => 'application/zip'];
-        $ds = ['@type' => 'Dataset', '@id' => $url . '#dataset', 'name' => get_the_title($id), 'description' => $x['method'] !== '' ? $x['method'] : ($d['answer'] !== '' ? $d['answer'] : get_the_title($id)),
+        $ds = ['@type' => 'Dataset', '@id' => $url . '#dataset', 'name' => get_the_title($id), 'description' => mb_strlen($x['method']) >= 50 ? $x['method'] : trim($x['method'] . ' ' . ($d['answer'] !== '' ? $d['answer'] : get_the_title($id))), // search engines want 50 or more characters
             'url' => $url, 'creator' => ['@id' => home_url('/#organization')], 'isAccessibleForFree' => true, 'datePublished' => get_the_date('Y-m-d', $id),
             'distribution' => [array_filter(['@type' => 'DataDownload', 'contentUrl' => $x['dataset'], 'encodingFormat' => $fmt[$ext] ?? null])]];
         if ($x['coverage'] !== '') $ds['temporalCoverage'] = $x['coverage'];

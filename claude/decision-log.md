@@ -20,7 +20,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
-| D-100 | Research template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
+| D-101 | Research template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Research template") | this file |
+| D-100 | Research template: design mockup v1 for review | 4 Oct | APPROVED, built as D-101 | this file |
 | D-099 | Case Study template built on `.online` from the approved mockup (v2) | 4 Oct | DONE (Jamil: "approved, build the Case Study template") | this file |
 | D-098 | Case Study template: design mockup v1 and v2 (7 additions) for review | 4 Oct | APPROVED, built as D-099 | this file |
 | D-097 | Updates template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Updates template") | this file |
@@ -160,8 +161,32 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 ---
 
+## D-101 · Research template built on `.online` from the approved mockup
+**Date:** 4 October 2026 · **Status:** DONE (Jamil: "approved, build the Research template")
+
+**Files:** new `blog/reinforce-post-research.php` (added to the loader); `blog/reinforce-post.php` hands Research posts to `rl_research_render()`; the old Research fields, boxes and schema moved out of `blog/reinforce-post-types.php` (no Research posts existed on `.online`, checked first, so no data was affected). Keys `rl_rs_findings`, `rl_rs_method`, `rl_rs_sample` and `rl_rs_dataset` are kept. Only Product / Service still uses the shared boxes.
+
+**The two open choices from D-100 are optional fields, not fixed wording:** the report number and the licence line show only when filled in, so Jamil decides per study. Neither is filled in on any post.
+
+**How an editor writes a Research post:**
+- **Study card:** report number (optional), sample and its detail, data collected (plus the same dates as `YYYY-MM-DD/YYYY-MM-DD` for the Dataset markup), markets, method in one line, checked by. "Get the data" shows only when a dataset URL is set.
+- **Headline finding:** `Number | Sentence | Sample size`.
+- **Key findings:** up to 5, `Number | Finding | Detail | Figure number`. Each gets its own anchor (`#finding-1`) and a button that copies a link to it. A line without `|` shows as a finding with no number.
+- **Figures:** up to 4 (repeater): title, takeaway, chart (horizontal bars or columns), data `Label | Number`, suffix (e.g. %), tooltip text, sample and source. Drawn in the browser as one red series, with tooltip, "Show as a table", download and link. A % chart runs 0 to 100.
+- **What we found:** an intro before the figures; the article body follows them.
+- **How we ran the study:** at a glance (sample, period, sources, analysis), up to 4 steps, definitions, limits.
+- **What this means for you** (up to 3 readers), **CTA**, **data and citation** (file card, licence, Plain / APA / Link citation with copy), **version history** (`YYYY-MM-DD | Version | What changed`, `!` marks a correction; newest first; the newest version shows in the card and the citation).
+- Related studies: the three newest other Research posts, shown only when they exist.
+
+**Schema:** the article is Article, BlogPosting and Report, with `reportNumber` and `version` when set. A Dataset node (when a dataset URL is set) with download and file format, `temporalCoverage`, `license` (when a licence URL is set), version, `variableMeasured` from the figure titles, and a description of at least 50 characters. dateModified follows the newest version date (never a future date). Verified in memory.
+
+**Checks:** in-memory preview with the mockup's sample content and with a bare post (nothing saved, F-003): no PHP notices; `copy-check.py` 0 issues on the file and the rendered page; desktop 1440 and phone 390 with no horizontal scroll and no script errors; tooltips, table toggle and citation styles checked; `rl.py parity` 45 files, 0 differences.
+**Fixed during the build:** the bar chart tooltip covered the figure title; it now sits beside the bar.
+
+---
+
 ## D-100 · Research template: design mockup v1 for review
-**Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S REVIEW (Jamil: "yes, go ahead with the Research mockup"; D-077 process)
+**Date:** 4 October 2026 · **Status:** APPROVED, built as D-101 (Jamil: "approved, build the Research template"; D-077 process)
 
 **Mockup:** `claude/design-previews/blog-research-template-mockup.html`, published privately (claude.ai artifact "Research Template Mockup"). Sample topic: which sources AI answer tools cite for B2B buyer questions. **Every figure, finding and sample size is sample data**: the page banner says so and each data block carries a "Sample data" tag. The AI tools are not named, so no claim is made about a real product.
 
