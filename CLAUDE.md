@@ -162,7 +162,7 @@ Decisions and findings must be written down or they are lost — a separate Cowo
 
 | Doc | Contains |
 |---|---|
-| `claude/decision-log.md` | D-001→D-013, F-001→F-006, open items |
+| `claude/decision-log.md` | Index of every D/F/O entry, the current month in full, open items. Earlier months: `claude/decisions/2026-08.md`, `claude/decisions/2026-09.md` |
 | `claude/seo-geo-aeo-standard.md` | **BINDING** build standard: SEO + schema + GEO/AEO/AI/LLM, per-template gates |
 | `claude/migration-and-data-requirements.md` | `.online → .com` redirect/URL map, data needed, launch QA gate |
 | `claude/phase-1-gsc-baseline.md` | 16-month Search Console analysis |
