@@ -624,6 +624,13 @@ Sample content only. Awaiting Jamil's review.
 
 **Review 1 (4 Oct):** "Pillar" chip removed. **Chip rule: at most two chips on a post hero, the type plus one main category** (Jamil: "use only two categories as chips"). Mockup v2 published.
 
+**Review 2 (4 Oct):** in-article service CTA added (Jamil: "Add a call to action to an appropriate service/solution we provide in between the article. Light weight design and conversion optimized"). Mockup v3.
+- **Design:** a slim band in the text column with thin red rules, a red left edge and a faint red wash; no heavy panel.
+- **Content:** a label naming the service ("Reinforce Lab service · AI Search Optimization"), a question headline tied to the chapter just read, and one line on what we do.
+- **One primary button** ("See how it works") plus a quiet text link to the free diagnostic as the low-commitment alternative. No invented proof or numbers.
+- **Placement:** after the chapter whose topic matches the service (here after Chapter 2, about 40% into the article). Stacks on phones.
+- **For the build:** editor fields to pick the service (from the services list) and the chapter it follows, with the headline and sub line written per post.
+
 ---
 
 ## D-076 · Type-specific sections built for all 11 post types (plus Case Study rule change)
