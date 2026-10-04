@@ -1,0 +1,363 @@
+<title>Review Template Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a lab test report. Report header with test conditions, the verdict and score up front, buy-if / skip-if, a dated test log, a scorecard, pricing with the tested plan marked, a comparison with alternatives, and a verdict card that stays in view (side card on desktop, bottom bar on phones). Dark only: it is the Reinforce Lab site (D-013). */
+:root{
+  --bg:#121011; --bg-2:#0e0c0d; --panel:#1a1617; --panel-2:#211c1d;
+  --ink:#f2eeee; --ink-dim:#b8b0b1; --ink-faint:#7f7778;
+  --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
+  --red:#990000; --red-2:#c21a1a; --red-3:#e23b3b; --red-line:rgba(226,59,59,.38); --ok:#3fa36b; --ok-line:rgba(63,163,107,.45);
+  --f-display:"Oswald","Arial Narrow",sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1280px; --g:clamp(16px,3vw,32px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink-dim);font-family:var(--f-body);font-size:16px;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;background-position:-1px -1px}
+a{color:var(--ink)}
+:focus-visible{outline:2px solid var(--red-3);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--g)}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);margin:0;line-height:1.04;text-wrap:balance}
+.ic{width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square}
+.mono{font-family:var(--f-mono)}
+
+.mocknote{background:var(--red);color:#fff;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-align:center;padding:7px var(--g)}
+.chrome{border-bottom:1px solid var(--line-2);background:rgba(18,16,17,.9)}
+.chrome .wrap{display:flex;justify-content:space-between;align-items:center;height:62px;gap:16px}
+.logo{font-family:var(--f-display);font-weight:700;letter-spacing:.04em;color:var(--ink);font-size:18px;text-transform:uppercase}
+.logo b{color:var(--red-3)}
+.chrome nav{display:flex;gap:22px;font-family:var(--f-display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.chrome nav span.on{color:var(--ink)}
+.cta-s{font-family:var(--f-display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid var(--red-2);padding:9px 14px;background:rgba(153,0,0,.35)}
+
+/* report header */
+.crumbs{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);padding-top:26px}
+.crumbs a{color:var(--ink-faint);text-decoration:none}
+.hero{padding-block:clamp(24px,4vw,40px) 0}
+.kicker{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+.kind{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:var(--red);padding:6px 10px}
+.cat{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:5px 10px}
+.hero h1{font-size:clamp(34px,4.8vw,62px);line-height:1;max-width:980px}
+.hero h1 .pn{color:var(--red-3)}
+.stand{font-size:clamp(17px,1.5vw,19px);line-height:1.55;max-width:680px;margin:18px 0 0}
+.byline{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);align-items:center}
+.byline .who{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.av{width:34px;height:34px;border:1px solid var(--red-line);display:grid;place-items:center;font-family:var(--f-display);font-size:15px;color:var(--ink);background:var(--bg-2)}
+.byline b{color:var(--ink-dim);font-weight:500}
+.fresh,.fresh b{color:var(--ok)!important}
+.cond{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin-top:28px;border:1px solid var(--line-2);background:var(--bg-2)}
+.cond div{padding:12px 16px;border-right:1px dashed var(--line-2);min-width:0}
+.cond div:last-child{border-right:0}
+.cond span{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+.cond b{display:block;color:var(--ink);font-weight:500;font-size:14.5px;margin-top:3px;overflow-wrap:anywhere}
+.disc{font-size:13.5px;color:var(--ink-faint);border:1px dashed var(--line-2);border-top:0;padding:10px 16px;margin:0}
+.disc b{color:var(--ink-dim);font-weight:500}
+
+/* verdict block */
+.verdict{display:grid;grid-template-columns:240px minmax(0,1fr);border:1px solid var(--red-line);background:radial-gradient(80% 140% at 0% 0%,rgba(153,0,0,.22),transparent 60%),var(--panel);margin-top:28px}
+.score{border-right:1px solid var(--red-line);padding:24px;display:flex;flex-direction:column;justify-content:center;gap:10px;background:var(--bg-2)}
+.score .lb{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3)}
+.score .big{font-family:var(--f-display);font-weight:600;font-size:88px;line-height:.85;color:var(--ink)}
+.score .big small{font-family:var(--f-mono);font-size:14px;font-weight:400;color:var(--ink-faint);margin-left:4px}
+.meter{display:grid;grid-template-columns:repeat(10,1fr);gap:3px}
+.meter i{height:8px;background:var(--line-2)}
+.meter i.on{background:var(--red-3)}
+.meter i.half{background:linear-gradient(90deg,var(--red-3) 50%,var(--line-2) 50%)}
+.score .word{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.06em;color:var(--ink);font-size:17px}
+.vtext{padding:24px 28px;min-width:0}
+.vtext .lb{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 10px}
+.vtext p.v{margin:0;color:var(--ink);font-size:19px;line-height:1.6}
+.bs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border-top:1px solid var(--red-line);grid-column:1/-1}
+.bs div{background:var(--panel);padding:18px 22px}
+.bs .h{display:flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 10px}
+.bs .buy .h{color:var(--ok)} .bs .skip .h{color:var(--red-3)}
+.bs ul{list-style:none;margin:0;padding:0}
+.bs li{padding:6px 0;border-top:1px solid var(--line);font-size:15px}
+.bs li:first-child{border-top:0}
+
+/* body + sticky verdict card */
+.main{display:grid;grid-template-columns:minmax(0,780px) minmax(0,1fr);gap:clamp(30px,5vw,64px);padding-block:clamp(36px,5vw,56px) 20px;align-items:start}
+.card{position:sticky;top:20px;border:1px solid var(--line-2);background:var(--panel);align-self:start}
+.card .top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;border-bottom:1px solid var(--line-2)}
+.card .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);line-height:1}
+.card .nm small{display:block;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;color:var(--ink-faint);margin-top:6px}
+.card .sc{font-family:var(--f-display);font-size:38px;color:var(--ink);line-height:1}
+.card .sc small{font-family:var(--f-mono);font-size:11px;color:var(--ink-faint)}
+.card dl{margin:0;padding:6px 18px}
+.card dl div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid var(--line);font-size:14px}
+.card dl div:first-child{border-top:0}
+.card dt{color:var(--ink-faint)} .card dd{margin:0;color:var(--ink);text-align:right}
+.card .acts{padding:14px 18px 18px;display:grid;gap:8px}
+.go{display:block;text-align:center;font-family:var(--f-display);text-transform:uppercase;letter-spacing:.07em;font-size:14px;text-decoration:none;color:#fff;background:var(--red);border:1px solid var(--red-2);padding:12px 18px}
+.card .chk{font-family:var(--f-mono);font-size:11px;color:var(--ink-faint);text-align:center}
+.card .jump{display:flex;flex-wrap:wrap;gap:6px 14px;padding:12px 18px;border-top:1px solid var(--line-2);font-size:13px}
+.card .jump a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--line-2)}
+
+.sec{scroll-margin-top:20px}
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:46px 0 16px}
+.sec-h span{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3)}
+.sec-h h2{font-size:clamp(24px,2.8vw,30px)}
+.prose p{font-size:17.5px;line-height:1.75;margin:0 0 1.1em}
+.prose strong{color:var(--ink);font-weight:600}
+
+/* scorecard */
+.scard{border:1px solid var(--line-2);background:var(--bg-2)}
+.srow{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.6fr) 44px;gap:16px;align-items:center;padding:14px 18px;border-top:1px solid var(--line)}
+.srow:first-child{border-top:0}
+.srow .c{color:var(--ink);font-size:15px}
+.srow .c .w{font-style:normal;font-family:var(--f-mono);font-size:10.5px;color:var(--ink-faint);margin-left:6px}
+.srow .c small{display:block;font-size:13px;color:var(--ink-faint);margin-top:2px}
+.srow .bar{height:6px;background:var(--line-2)} .srow .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--red-3))}
+.srow b{font-family:var(--f-mono);font-weight:500;color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
+.stotal{display:flex;justify-content:space-between;align-items:baseline;padding:14px 18px;border-top:1px solid var(--red-line);background:var(--panel)}
+.stotal span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+.stotal b{font-family:var(--f-display);font-size:26px;color:var(--ink);font-weight:500}
+
+/* pros cons */
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.pc>div{background:var(--panel);padding:18px 20px}
+.pc .h{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 8px}
+.pros .h{color:var(--ok)} .cons .h{color:var(--red-3)}
+.pc ul{list-style:none;margin:0;padding:0}
+.pc li{display:grid;grid-template-columns:18px 1fr;gap:8px;padding:8px 0;border-top:1px solid var(--line);font-size:15px}
+.pc li:first-child{border-top:0}
+.pros .ic{color:var(--ok);margin-top:4px} .cons .ic{color:var(--red-3);margin-top:4px}
+
+/* test log */
+.log{list-style:none;margin:0;padding:0;position:relative}
+.log::before{content:"";position:absolute;left:112px;top:8px;bottom:8px;width:1px;background:var(--line-2)}
+.log li{display:grid;grid-template-columns:100px 24px minmax(0,1fr);gap:0 12px;padding:0 0 22px}
+.log time{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);padding-top:2px;text-align:right}
+.log .dot{width:11px;height:11px;margin:6px 0 0 1px;background:var(--bg);border:2px solid var(--red-3);position:relative;z-index:1}
+.log li.key .dot{background:var(--red-3)}
+.log h3{font-family:var(--f-body);text-transform:none;font-size:16.5px;font-weight:600;letter-spacing:0;margin:0 0 4px}
+.log p{margin:0;font-size:15.5px}
+.log .m{display:inline-block;font-family:var(--f-mono);font-size:11.5px;color:var(--ink);background:var(--panel-2);border:1px solid var(--line-2);padding:1px 7px;margin-top:6px}
+
+/* evidence */
+.shot{margin:0;border:1px solid var(--line-2);background:var(--bg-2)}
+.shot::before{content:"";display:block;height:27px;border-bottom:1px solid var(--line);background-image:linear-gradient(var(--line-2),var(--line-2)),linear-gradient(var(--line-2),var(--line-2)),linear-gradient(var(--line-2),var(--line-2));background-size:8px 8px;background-repeat:no-repeat;background-position:12px 9px,26px 9px,40px 9px}
+.shot .ph{height:200px;display:grid;place-items:center;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(255,255,255,.02) 14px 28px)}
+.shot figcaption{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);padding:10px 12px;border-top:1px solid var(--line)}
+
+/* pricing */
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.plan{background:var(--bg-2);padding:20px;display:grid;gap:6px;align-content:start;position:relative}
+.plan.tested{background:var(--panel);box-shadow:inset 0 3px 0 var(--red-3)}
+.plan .tg{justify-self:start;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--red);padding:2px 7px}
+.plan h3{font-size:19px}
+.plan .pr{font-family:var(--f-display);font-size:30px;color:var(--ink);font-weight:500;line-height:1.1}
+.plan .pr small{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);font-weight:400}
+.plan p{margin:0;font-size:14.5px}
+.pnote{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);margin-top:8px}
+
+/* alternatives */
+.tw{overflow-x:auto;border:1px solid var(--line-2);background:var(--bg-2)}
+table{width:100%;border-collapse:collapse;min-width:600px;font-size:14.5px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;background:var(--panel)}
+tbody th{color:var(--ink);font-weight:600}
+tbody tr:last-child>*{border-bottom:0}
+tr.this{background:linear-gradient(90deg,rgba(153,0,0,.2),transparent 70%)}
+tr.this th{box-shadow:inset 3px 0 0 var(--red-2)}
+td.num{font-family:var(--f-mono);color:var(--ink);white-space:nowrap}
+.tg2{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin-left:8px;font-weight:500}
+
+/* in-article CTA */
+.icta{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 28px;align-items:center;margin:40px 0 0;padding:20px 0 20px 20px;border-top:1px solid var(--red-line);border-bottom:1px solid var(--red-line);border-left:3px solid var(--red-2);background:linear-gradient(90deg,rgba(153,0,0,.12),transparent 70%)}
+.icta .lbl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 6px}
+.icta .hd{font-family:var(--f-display);font-weight:600;text-transform:uppercase;font-size:clamp(19px,2vw,22px);line-height:1.15;color:var(--ink);margin:0 0 6px}
+.icta .csub{margin:0;font-size:15px}
+.act2{display:grid;gap:8px;justify-items:start;padding-right:20px}
+.go2{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.07em;font-size:14px;text-decoration:none;color:#fff;background:var(--red);border:1px solid var(--red-2);padding:12px 18px;white-space:nowrap}
+.alt{font-size:13.5px;color:var(--ink-faint);text-decoration:none;border-bottom:1px solid var(--line-2)}
+
+/* final verdict */
+.final{border:1px solid var(--red-line);background:var(--panel);padding:24px 26px;margin-top:46px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:20px;align-items:center}
+.final .fs{font-family:var(--f-display);font-size:56px;color:var(--ink);line-height:.9}
+.final .fs small{display:block;font-family:var(--f-mono);font-size:10.5px;color:var(--ink-faint);letter-spacing:.12em;margin-top:6px}
+.final h2{font-size:22px;margin-bottom:6px}
+.final p{margin:0;font-size:15.5px}
+
+/* back matter */
+.back{border-top:1px solid var(--line-2);margin-top:30px;padding-block:44px 10px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
+.back .sec-h{margin-top:0}
+.faq details{border:1px solid var(--line);background:var(--panel);margin-bottom:8px}
+.faq summary{cursor:pointer;list-style:none;padding:15px 18px;font-family:var(--f-display);text-transform:uppercase;font-size:15px;color:var(--ink);display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red-3);font-family:var(--f-mono)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:0;padding:0 18px 15px;font-size:15px}
+.src ol{margin:0;padding-left:1.4em;font-size:14.5px} .src li{padding:6px 0;color:var(--ink-faint)}
+.src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.author .av{width:72px;height:72px;font-size:28px}
+.author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
+.author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}
+.author p{margin:0 0 8px;font-size:15px}
+
+/* phone bottom bar */
+.mbar{display:none}
+@media(max-width:1000px){
+  .main{grid-template-columns:minmax(0,1fr)}
+  .card{display:none}
+  .cond{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .cond div:nth-child(3){border-right:0}
+  .cond div:nth-child(n+4){border-top:1px dashed var(--line-2)}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:10;gap:12px;align-items:center;justify-content:space-between;padding:10px var(--g) calc(10px + env(safe-area-inset-bottom,0px));background:rgba(18,16,17,.96);backdrop-filter:blur(12px);border-top:1px solid var(--line-2)}
+  .mbar .s{font-family:var(--f-display);font-size:24px;color:var(--ink);line-height:1}
+  .mbar .s small{font-family:var(--f-mono);font-size:10.5px;color:var(--ink-faint)}
+  .mbar .n{font-family:var(--f-mono);font-size:11px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em}
+  .mbar .go{padding:10px 14px;font-size:13px}
+  body{padding-bottom:70px}
+}
+@media(max-width:700px){
+  .chrome nav{display:none}
+  .cond{grid-template-columns:1fr 1fr}
+  .cond div{border-right:1px dashed var(--line-2)!important;border-top:1px dashed var(--line-2)}
+  .cond div:nth-child(2n){border-right:0!important}
+  .cond div:nth-child(-n+2){border-top:0}
+  .cond div:last-child:nth-child(odd){grid-column:1/-1}
+  .verdict{grid-template-columns:1fr}
+  .score{border-right:0;border-bottom:1px solid var(--red-line);padding:20px 18px}
+  .score .big{font-size:68px}
+  .vtext{padding:20px 18px}
+  .vtext p.v{font-size:17px}
+  .bs,.pc,.plans,.back{grid-template-columns:1fr}
+  .srow{grid-template-columns:minmax(0,1fr) 44px;gap:6px 12px}
+  .srow .bar{grid-column:1/-1;grid-row:2}
+  .log::before{left:7px}
+  .log li{grid-template-columns:24px minmax(0,1fr)}
+  .log time{grid-column:2;text-align:left;order:-1}
+  .log .dot{grid-row:1/3;grid-column:1}
+  .icta{grid-template-columns:1fr;padding-left:16px} .act2{padding-right:16px}
+  .final{grid-template-columns:1fr}
+  .author{grid-template-columns:1fr}
+  .prose p{font-size:16.5px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<div class="mocknote">DESIGN MOCKUP · REVIEW TEMPLATE · the product, scores and prices are placeholders for layout review</div>
+<header class="chrome"><div class="wrap"><span class="logo">Reinforce <b>/</b> Lab</span><nav aria-label="Site (mockup)"><span>Search Authority OS</span><span>Solutions</span><span>Industries</span><span>Packages</span><span class="on">Blog</span><span>About</span><span>Contact</span></nav><span class="cta-s">Get your diagnostic</span></div></header>
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="#">Home</a> / <a href="#">Blog</a> / <a href="#">Technical SEO</a> / Crawlwise review</nav>
+  <section class="hero">
+    <div class="kicker"><span class="kind">Review</span><span class="cat">Technical SEO</span></div>
+    <h1><span class="pn">Crawlwise review:</span> we crawled a 12,000-page site with it for a month</h1>
+    <p class="stand">Crawlwise promises a full technical audit in under an hour. We ran it on a real site against our usual crawler and checked every issue it reported by hand.</p>
+    <div class="byline"><span class="who"><span class="av" aria-hidden="true">J</span>Jamil Ahmed</span><span>Published <b>3 Sep 2026</b></span><span class="fresh">Updated <b>1 Oct 2026</b></span></div>
+
+    <div class="cond" aria-label="Test conditions">
+      <div><span>Version tested</span><b>4.2</b></div>
+      <div><span>Test period</span><b>August to September 2026</b></div>
+      <div><span>Plan tested</span><b>Pro, paid by us</b></div>
+      <div><span>Test site</span><b>12,000 URLs, WordPress</b></div>
+      <div><span>Price checked</span><b>1 Oct 2026</b></div>
+    </div>
+    <p class="disc"><b>Disclosure:</b> we paid for our own licence. Some links are affiliate links; if you buy through them we may earn a commission at no extra cost to you. It does not change the score.</p>
+
+    <section class="verdict" aria-label="Our verdict">
+      <div class="score">
+        <span class="lb">Our score</span>
+        <span class="big">8.2<small>/ 10</small></span>
+        <div class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="half"></i><i></i></div>
+        <span class="word">Recommended</span>
+      </div>
+      <div class="vtext">
+        <p class="lb">The verdict</p>
+        <p class="v">Crawlwise is the fastest crawler we have used on a mid-sized site, and its issue list was right 9 times out of 10. It falls short on JavaScript pages and its exports need cleaning, so large or script-heavy sites still need a second tool.</p>
+      </div>
+      <div class="bs">
+        <div class="buy"><p class="h"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg>Buy it if</p><ul><li>You audit sites of 1,000 to 50,000 pages</li><li>You want a clear fix list for a developer</li><li>You run audits every month</li></ul></div>
+        <div class="skip"><p class="h"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg>Skip it if</p><ul><li>Your site is built mostly in JavaScript</li><li>You need raw data for your own reports</li><li>You crawl over 200,000 URLs</li></ul></div>
+      </div>
+    </section>
+  </section>
+</div>
+
+<div class="wrap">
+  <div class="main">
+    <article>
+      <section class="sec" id="what"><div class="sec-h"><span>Background</span><h2>What Crawlwise is</h2></div>
+        <div class="prose"><p>Crawlwise is a desktop and cloud SEO crawler. It visits every page on a site the way a search engine does, then lists technical problems such as broken links, redirect chains, missing titles and pages blocked from indexing.</p><p>We tested the <strong>Pro plan</strong>, which we paid for ourselves, on a 12,000-page WordPress site we know well, so we could check each finding against what we already knew was wrong.</p></div>
+      </section>
+
+      <section class="sec" id="log"><div class="sec-h"><span>Test log</span><h2>What happened when we used it</h2></div>
+        <ol class="log">
+          <li><time datetime="2026-08-04">4 Aug 2026</time><span class="dot" aria-hidden="true"></span><div><h3>Setup and first crawl</h3><p>Installed in a few minutes. The first full crawl of 12,000 URLs finished in 41 minutes on default settings.</p><span class="m">12,000 URLs · 41 min</span></div></li>
+          <li class="key"><time datetime="2026-08-11">11 Aug 2026</time><span class="dot" aria-hidden="true"></span><div><h3>Checked every issue by hand</h3><p>Of 212 issues reported, 191 were real. Most false alarms were redirects it flagged as chains when they were single hops.</p><span class="m">191 of 212 correct</span></div></li>
+          <li><time datetime="2026-08-25">25 Aug 2026</time><span class="dot" aria-hidden="true"></span><div><h3>JavaScript rendering test</h3><p>On pages that load content with JavaScript, it missed links our usual crawler found. Rendering mode helped but tripled crawl time.</p><span class="m">Rendering on · 2 h 05 min</span></div></li>
+          <li><time datetime="2026-09-15">15 Sep 2026</time><span class="dot" aria-hidden="true"></span><div><h3>Scheduled monthly audit</h3><p>Ran on schedule and emailed a change report showing new and fixed issues since the last crawl.</p><span class="m">14 new · 37 fixed</span></div></li>
+        </ol>
+        <figure class="shot"><div class="ph">Screenshot: the Crawlwise issues dashboard</div><figcaption>Fig. 1 · The issues view after the first crawl, grouped by severity</figcaption></figure>
+      </section>
+
+      <section class="sec" id="scores"><div class="sec-h"><span>Scorecard</span><h2>How it scored</h2></div>
+        <div class="scard">
+          <div class="srow"><span class="c">Accuracy <em class="w">30%</em><small>Issues that were real when checked by hand</small></span><span class="bar"><i style="width:88%"></i></span><b>8.8</b></div>
+          <div class="srow"><span class="c">Speed <em class="w">20%</em><small>Time to crawl 12,000 URLs</small></span><span class="bar"><i style="width:92%"></i></span><b>9.2</b></div>
+          <div class="srow"><span class="c">JavaScript pages <em class="w">20%</em><small>Links and content found on script-heavy pages</small></span><span class="bar"><i style="width:62%"></i></span><b>6.2</b></div>
+          <div class="srow"><span class="c">Reporting <em class="w">15%</em><small>Clarity of the fix list and exports</small></span><span class="bar"><i style="width:78%"></i></span><b>7.8</b></div>
+          <div class="srow"><span class="c">Value <em class="w">15%</em><small>Price against what you get</small></span><span class="bar"><i style="width:84%"></i></span><b>8.4</b></div>
+          <div class="stotal"><span>Weighted score</span><b>8.2 / 10</b></div>
+        </div>
+      </section>
+
+      <section class="sec" id="proscons"><div class="sec-h"><span>In short</span><h2>Pros and cons</h2></div>
+        <div class="pc">
+          <div class="pros"><p class="h">What we liked</p><ul><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Fast crawls on mid-sized sites</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Fix list a developer can act on</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Monthly change reports by email</span></li></ul></div>
+          <div class="cons"><p class="h">What could be better</p><ul><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg><span>Weak on JavaScript pages</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg><span>Exports need cleaning before use</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg><span>Redirect chains sometimes over-reported</span></li></ul></div>
+        </div>
+      </section>
+
+      <aside class="icta" aria-label="Reinforce Lab service"><div><p class="lbl">Reinforce Lab service · Technical SEO</p><p class="hd">Got a crawl report full of issues?</p><p class="csub">We sort what matters from what does not, and fix the causes in your templates and settings.</p></div><div class="act2"><a class="go2" href="#">See how it works &rarr;</a><a class="alt" href="#">Or get a free diagnostic first</a></div></aside>
+
+      <section class="sec" id="pricing"><div class="sec-h"><span>Pricing</span><h2>Plans and what they cost</h2></div>
+        <div class="plans">
+          <div class="plan"><h3>Starter</h3><p class="pr">$19 <small>a month</small></p><p>Up to 5,000 URLs per crawl. One site.</p></div>
+          <div class="plan tested"><span class="tg">Plan we tested</span><h3>Pro</h3><p class="pr">$49 <small>a month</small></p><p>Up to 100,000 URLs. Scheduled crawls and change reports.</p></div>
+          <div class="plan"><h3>Agency</h3><p class="pr">$129 <small>a month</small></p><p>Up to 500,000 URLs. Client reports and team seats.</p></div>
+        </div>
+        <p class="pnote">Billed yearly. Prices from the vendor site, checked 1 Oct 2026. Prices change; check before you buy.</p>
+      </section>
+
+      <section class="sec" id="alts"><div class="sec-h"><span>Alternatives</span><h2>How it compares</h2></div>
+        <div class="tw"><table>
+          <thead><tr><th scope="col">Tool</th><th scope="col">Best for</th><th scope="col">From</th><th scope="col">JavaScript pages</th></tr></thead>
+          <tbody>
+            <tr class="this"><th scope="row">Crawlwise<span class="tg2">This review</span></th><td>Mid-sized sites, monthly audits</td><td class="num">$19 a month</td><td>Partial</td></tr>
+            <tr><th scope="row"><a href="#">Spiderbay</a></th><td>Very large sites and raw data</td><td class="num">$99 a month</td><td>Full</td></tr>
+            <tr><th scope="row"><a href="#">Indexa</a></th><td>Beginners and one-off checks</td><td class="num">Free plan</td><td>No</td></tr>
+          </tbody>
+        </table></div>
+      </section>
+
+      <section class="final" aria-label="Final verdict"><div class="fs">8.2<small>OUT OF 10</small></div><div><h2>Final verdict: recommended</h2><p>For sites up to 50,000 pages that are not built in JavaScript, Crawlwise is the quickest way we know to a fix list you can trust.</p></div><a class="go" href="#" rel="sponsored nofollow">Try Crawlwise &rarr;</a></section>
+    </article>
+
+    <aside class="card" aria-label="Verdict at a glance">
+      <div class="top"><span class="nm">Crawlwise<small>Version 4.2</small></span><span class="sc">8.2<small>/10</small></span></div>
+      <dl><div><dt>Verdict</dt><dd>Recommended</dd></div><div><dt>Price from</dt><dd>$19 a month</dd></div><div><dt>Free trial</dt><dd>14 days</dd></div><div><dt>Best for</dt><dd>Sites up to 50,000 pages</dd></div></dl>
+      <div class="acts"><a class="go" href="#" rel="sponsored nofollow">Try Crawlwise &rarr;</a><span class="chk">Price checked 1 Oct 2026</span></div>
+      <nav class="jump" aria-label="In this review"><a href="#log">Test log</a><a href="#scores">Scorecard</a><a href="#pricing">Pricing</a><a href="#alts">Alternatives</a></nav>
+    </aside>
+  </div>
+
+  <section class="back" aria-label="Questions and sources">
+    <div class="faq"><div class="sec-h"><span>Questions</span><h2>FAQs</h2></div>
+      <details open><summary>Is Crawlwise good for beginners?</summary><p>Yes for reading the results, since issues come with plain explanations. Setting up rendering and schedules takes some learning.</p></details>
+      <details><summary>Did the vendor pay for this review?</summary><p>No. We paid for our own Pro licence and the vendor did not see the review before it was published.</p></details>
+    </div>
+    <div class="src"><div class="sec-h"><span>Evidence</span><h2>Sources</h2></div>
+      <ol><li><a href="#">Crawlwise documentation, Rendering mode</a></li><li><a href="#">Crawlwise pricing page, checked 1 Oct 2026</a></li><li><a href="#">Google Search Central, JavaScript SEO basics</a></li></ol>
+    </div>
+  </section>
+
+  <aside class="author" aria-label="About the author"><span class="av" aria-hidden="true">J</span><div><p class="nm">Jamil Ahmed</p><p class="role">Founder and CEO, Reinforce Lab</p><p>Pharmacist, SEO and AI search consultant, and Semrush Ambassador.</p></div></aside>
+</div>
+
+<div class="mbar" aria-label="Verdict at a glance"><div><span class="s">8.2<small> / 10</small></span><br><span class="n">Crawlwise · from $19 a month</span></div><a class="go" href="#" rel="sponsored nofollow">Try Crawlwise &rarr;</a></div>

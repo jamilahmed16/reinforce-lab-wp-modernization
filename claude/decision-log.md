@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-088 | Review template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
 | D-087 | Best / List template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Best/List template") | this file |
 | D-086 | Best / List template: design mockup v1 for review | 4 Oct | APPROVED, built as D-087 | this file |
 | D-085 | How-To template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the How-To template") | this file |
@@ -144,6 +145,26 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-088 · Review template: design mockup v1 for review
+**Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S REVIEW (Jamil: "yes, go ahead with the Review mockup"; D-077 process)
+
+**Mockup:** `claude/design-previews/blog-review-template-mockup.html`, published privately (claude.ai artifact "Review Template Mockup"). The product (Crawlwise), its alternatives, scores and prices are placeholders, marked as such on the page.
+
+**Design: a lab test report**, different from the Guide (book), How-To (workbench) and Best / List (shortlist board):
+- **Report header:** two chips (Review + category), title with the product name in red, standfirst, byline with the "Updated" date in green.
+- **Test conditions strip:** version tested, test period, plan tested (and who paid), test site, price checked; the disclosure sits directly under it (we paid for our own licence; affiliate links do not change the score).
+- **Verdict block up front:** big score with a 10-step meter and a verdict word (e.g. Recommended), the verdict in two or three sentences, then "Buy it if" and "Skip it if" side by side.
+- **Verdict card that stays in view:** on desktop a side card (score, verdict, price from, free trial, best for, visit button, price-checked date, jump links); on phones a bottom bar with the score and the visit button.
+- **Test log:** dated entries on a line, each with what happened and one measured result tag; key findings get a filled marker. A screenshot frame for evidence.
+- **Scorecard:** each criterion with its weight, a one-line definition and a bar; the weighted score at the bottom equals the headline score.
+- **Pros and cons** (drawn icons), **the light in-article service CTA**, **pricing plans** with the plan we tested marked, **how it compares** with alternatives (this product's row highlighted), and a **final verdict** with the visit button.
+- FAQs (including "Did the vendor pay for this review?"), sources, author box.
+
+**Rules carried over from D-076:** third-party products only, never our own services (self-reviews are not eligible for review rich results); visit links `rel="sponsored nofollow"` when affiliate.
+**Checks:** `copy-check.py` 0 issues; desktop 1440 and phone 390 with no horizontal scroll. Fixed before publishing: the odd fifth test-condition cell and the score block layout on phones.
 
 ---
 
