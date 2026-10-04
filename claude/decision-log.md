@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-094 | Industry template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
 | D-093 | Explainer template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Explainer template") | this file |
 | D-092 | Explainer template: design mockup v1 for review | 4 Oct | APPROVED, built as D-093 | this file |
 | D-091 | Comparison template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Comparison template") | this file |
@@ -150,6 +151,26 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-094 · Industry template: design mockup v1 for review
+**Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S REVIEW (Jamil: "yes, go ahead with the Industry mockup"; D-077 process)
+
+**Mockup:** `claude/design-previews/blog-industry-template-mockup.html`, published privately (claude.ai artifact "Industry Template Mockup"). Sample topic: "SEO for pharmaceutical companies: what works under strict promotion rules". Sample content, marked as such on the page.
+
+**Design: a sector briefing**, different from the Guide, How-To, Best / List, Review, Comparison and Explainer:
+- **Briefing cover:** a striped red band reading "Industry briefing" down the side, two chips (Industry + category), the sector named, the title with its second half in red, "Written for" (the audience), **"Reviewed for accuracy by"** (e.g. Jamil Ahmed, Pharmacist; optional), "Markets covered", byline with the "Updated" date in green.
+- **Sector at a glance:** four tiles on what makes search different in this industry (search risk, rules, buyers, proof).
+- **Sector rules** as a compliance checklist (R1, R2, R3) with the market each applies to and what it means for search, plus a "general guidance, not legal or regulatory advice" note.
+- **Buyer journey:** three stages on a track (Learn, Evaluate, Partner), each with who searches, real example questions, and the content that answers them.
+- **Light in-article service CTA** pointing to the industry page.
+- **Where to start:** five numbered moves with impact and effort bars; **what works and what to avoid** side by side.
+- **Industry card:** the industry page link and up to three relevant services (from the industry data already used on the industry pages).
+- FAQs, sources, author box.
+
+**Expert review line:** the reviewer is shown only when the editor fills it in. For pharma and healthcare posts Jamil can be named as the pharmacist reviewer (a confirmed fact, D-068). **When built:** the reviewer goes into schema as `reviewedBy` on the page, and the article `about` is the industry.
+**Checks:** `copy-check.py` 0 issues; desktop 1440 and phone 390 with no horizontal scroll.
 
 ---
 

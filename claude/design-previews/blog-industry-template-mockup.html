@@ -1,0 +1,286 @@
+<title>Industry Template Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a sector briefing. A briefing cover with the sector band, who it is for and who reviewed it; the sector at a glance; the sector rules as a compliance checklist; the buyer journey as a track of stages with real questions; where to start as prioritised moves with effort and impact; works / avoid; the industry page and services. Dark only: it is the Reinforce Lab site (D-013). */
+:root{
+  --bg:#121011; --bg-2:#0e0c0d; --panel:#1a1617; --panel-2:#211c1d;
+  --ink:#f2eeee; --ink-dim:#b8b0b1; --ink-faint:#7f7778;
+  --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
+  --red:#990000; --red-2:#c21a1a; --red-3:#e23b3b; --red-line:rgba(226,59,59,.38); --ok:#3fa36b; --ok-line:rgba(63,163,107,.45); --amber:#d39b3a;
+  --f-display:"Oswald","Arial Narrow",sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1280px; --g:clamp(16px,3vw,32px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink-dim);font-family:var(--f-body);font-size:16px;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;background-position:-1px -1px}
+a{color:var(--ink)}
+:focus-visible{outline:2px solid var(--red-3);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--g)}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);margin:0;line-height:1.04;text-wrap:balance}
+.ic{width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square}
+
+.mocknote{background:var(--red);color:#fff;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-align:center;padding:7px var(--g)}
+.chrome{border-bottom:1px solid var(--line-2);background:rgba(18,16,17,.9)}
+.chrome .wrap{display:flex;justify-content:space-between;align-items:center;height:62px;gap:16px}
+.logo{font-family:var(--f-display);font-weight:700;letter-spacing:.04em;color:var(--ink);font-size:18px;text-transform:uppercase}
+.logo b{color:var(--red-3)}
+.chrome nav{display:flex;gap:22px;font-family:var(--f-display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.chrome nav span.on{color:var(--ink)}
+.cta-s{font-family:var(--f-display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid var(--red-2);padding:9px 14px;background:rgba(153,0,0,.35)}
+
+/* briefing cover */
+.crumbs{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);padding-top:26px}
+.crumbs a{color:var(--ink-faint);text-decoration:none}
+.cover{display:grid;grid-template-columns:64px minmax(0,1fr);margin-top:clamp(22px,3vw,34px);border:1px solid var(--line-2);background:linear-gradient(180deg,var(--panel),var(--bg-2))}
+.band{background:repeating-linear-gradient(180deg,var(--red) 0 10px,#7a0000 10px 20px);display:flex;align-items:center;justify-content:center}
+.band span{writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--f-mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#fff;white-space:nowrap}
+.cv{padding:clamp(22px,3vw,36px);display:grid;gap:16px;min-width:0}
+.cv-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:center}
+.kicker{display:flex;flex-wrap:wrap;gap:10px}
+.kind{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:var(--red);padding:6px 10px}
+.cat{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:5px 10px}
+.sector{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.sector b{color:var(--ink);font-weight:500}
+.cv h1{font-size:clamp(34px,4.8vw,62px);line-height:1;max-width:980px}
+.cv h1 em{font-style:normal;color:var(--red-3)}
+.stand{font-size:clamp(17px,1.5vw,19px);line-height:1.55;max-width:720px;margin:0}
+.meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px dashed var(--line-2);padding-top:16px;gap:16px}
+.meta span{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:4px}
+.meta b{color:var(--ink);font-weight:500;font-size:14.5px}
+.meta .rev b{display:flex;align-items:center;gap:8px}
+.meta .rev svg{color:var(--ok)}
+.byline{display:flex;flex-wrap:wrap;gap:10px 22px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);align-items:center}
+.byline .who{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.av{width:34px;height:34px;border:1px solid var(--red-line);display:grid;place-items:center;font-family:var(--f-display);font-size:15px;color:var(--ink);background:var(--bg-2)}
+.byline b{color:var(--ink-dim);font-weight:500}
+.byline .fresh,.byline .fresh b{color:var(--ok)}
+
+/* at a glance */
+.glance{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2);border-top:0}
+.gl{background:var(--bg-2);padding:16px 18px;display:grid;gap:4px;align-content:start}
+.gl .k{font-family:var(--f-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3)}
+.gl b{font-family:var(--f-display);font-size:19px;text-transform:uppercase;color:var(--ink);font-weight:500;line-height:1.1}
+.gl p{margin:0;font-size:13.5px}
+
+/* main */
+.main{max-width:900px;margin:0 auto;padding-block:clamp(34px,5vw,52px) 10px}
+.answer{border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px 24px;margin-bottom:24px}
+.answer .t,.sec-h span{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 8px}
+.answer p{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
+.prose p{font-size:17.5px;line-height:1.75;margin:0 0 1.1em}
+.prose strong{color:var(--ink);font-weight:600}
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:46px 0 16px}
+.sec-h h2{font-size:clamp(24px,2.8vw,30px)}
+.sec-h p{flex-basis:100%;margin:2px 0 0;font-size:15px}
+
+/* rules checklist */
+.rules{border:1px solid var(--line-2);background:var(--panel)}
+.rules .rh{display:flex;justify-content:space-between;gap:10px;padding:12px 18px;border-bottom:1px solid var(--line-2);background:var(--bg-2);font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.rules .rh b{color:var(--amber);font-weight:500;display:flex;gap:8px;align-items:center}
+.rule{display:grid;grid-template-columns:70px minmax(0,1fr) minmax(0,1.3fr);gap:16px;padding:16px 18px;border-top:1px solid var(--line);align-items:start}
+.rule:first-of-type{border-top:0}
+.rule .code{font-family:var(--f-mono);font-size:11px;color:var(--amber);border:1px solid rgba(211,155,58,.45);padding:3px 6px;text-align:center}
+.rule h3{font-family:var(--f-body);text-transform:none;letter-spacing:0;font-size:16px;font-weight:600}
+.rule h3 small{display:block;font-family:var(--f-mono);font-size:10.5px;font-weight:400;letter-spacing:.08em;color:var(--ink-faint);margin-top:4px;text-transform:uppercase}
+.rule p{margin:0;font-size:15px}
+.rule p b{color:var(--ink);font-weight:500}
+.rnote{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);margin-top:8px}
+
+/* buyer journey */
+.journey{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));position:relative}
+.journey::before{content:"";position:absolute;left:0;right:0;top:19px;height:2px;background:linear-gradient(90deg,var(--line-2),var(--red-3))}
+.stage{position:relative;padding-right:18px;display:grid;gap:10px;align-content:start}
+.stage .dot{width:40px;height:40px;display:grid;place-items:center;background:var(--bg);border:2px solid var(--red-3);font-family:var(--f-display);font-size:18px;color:var(--ink);position:relative;z-index:1}
+.stage:last-child .dot{background:var(--red)}
+.stage h3{font-size:19px;margin-top:4px}
+.stage .who{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+.qs{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.qs li{font-family:var(--f-mono);font-size:12.5px;color:var(--ink);background:var(--bg-2);border:1px solid var(--line-2);padding:7px 10px}
+.qs li::before{content:"? ";color:var(--red-3)}
+.stage .ct{font-size:14px;border-top:1px solid var(--line);padding-top:8px}
+.stage .ct b{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;margin-bottom:2px}
+
+/* where to start */
+.moves{list-style:none;margin:0;padding:0;border:1px solid var(--line-2)}
+.mv{display:grid;grid-template-columns:56px minmax(0,1fr) 170px;gap:16px;align-items:center;padding:16px 18px;border-top:1px solid var(--line)}
+.mv:first-child{border-top:0;background:linear-gradient(90deg,rgba(153,0,0,.16),transparent 70%)}
+.mv .n{font-family:var(--f-display);font-size:34px;color:transparent;-webkit-text-stroke:1.2px var(--red-3);line-height:1}
+.mv:first-child .n{color:var(--red-3)}
+.mv h3{font-family:var(--f-body);text-transform:none;letter-spacing:0;font-size:16.5px;font-weight:600;margin-bottom:3px}
+.mv p{margin:0;font-size:14.5px}
+.tags{display:grid;gap:6px}
+.tg{display:grid;grid-template-columns:52px 1fr;align-items:center;gap:8px;font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
+.tg .bar{display:flex;gap:2px} .tg .bar i{width:16px;height:6px;background:var(--line-2)}
+.tg.imp .bar i.on{background:var(--ok)} .tg.eff .bar i.on{background:var(--amber)}
+
+/* works / avoid */
+.wa{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.wa>div{background:var(--panel);padding:18px 20px}
+.wa .h{display:flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 8px}
+.wk .h{color:var(--ok)} .av2 .h{color:var(--red-3)}
+.wa ul{list-style:none;margin:0;padding:0}
+.wa li{display:grid;grid-template-columns:18px 1fr;gap:8px;padding:8px 0;border-top:1px solid var(--line);font-size:15px}
+.wa li:first-child{border-top:0}
+.wk .ic{color:var(--ok);margin-top:4px} .av2 .ic{color:var(--red-3);margin-top:4px}
+
+/* industry card */
+.indcard{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border:1px solid var(--red-line);background:var(--panel);margin-top:46px}
+.indcard .l{padding:24px 26px;border-right:1px solid var(--line-2);background:radial-gradient(90% 140% at 0% 0%,rgba(153,0,0,.22),transparent 60%);display:grid;gap:10px;align-content:start}
+.indcard .l .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3)}
+.indcard .l h2{font-size:26px}
+.indcard .l p{margin:0;font-size:15px}
+.indcard .l a.more{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.06em;font-size:14px;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--red-line);justify-self:start}
+.indcard ul{list-style:none;margin:0;padding:0}
+.indcard li a{display:grid;grid-template-columns:minmax(0,1fr) 20px;gap:10px;padding:14px 20px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px}
+.indcard li:last-child a{border-bottom:0}
+.indcard li a small{display:block;font-size:13px;color:var(--ink-faint)}
+.indcard li a span.ar{color:var(--red-3)}
+
+/* CTA */
+.icta{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 28px;align-items:center;margin:40px 0 0;padding:20px 0 20px 20px;border-top:1px solid var(--red-line);border-bottom:1px solid var(--red-line);border-left:3px solid var(--red-2);background:linear-gradient(90deg,rgba(153,0,0,.12),transparent 70%)}
+.icta .lbl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 6px}
+.icta .hd{font-family:var(--f-display);font-weight:600;text-transform:uppercase;font-size:clamp(19px,2vw,22px);line-height:1.15;color:var(--ink);margin:0 0 6px}
+.icta .csub{margin:0;font-size:15px}
+.act2{display:grid;gap:8px;justify-items:start;padding-right:20px}
+.go2{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.07em;font-size:14px;text-decoration:none;color:#fff;background:var(--red);border:1px solid var(--red-2);padding:12px 18px;white-space:nowrap}
+.alt{font-size:13.5px;color:var(--ink-faint);text-decoration:none;border-bottom:1px solid var(--line-2)}
+
+/* back matter */
+.back{border-top:1px solid var(--line-2);margin-top:50px;padding-block:44px 10px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
+.back .sec-h{margin-top:0}
+.faq details{border:1px solid var(--line);background:var(--panel);margin-bottom:8px}
+.faq summary{cursor:pointer;list-style:none;padding:15px 18px;font-family:var(--f-display);text-transform:uppercase;font-size:15px;color:var(--ink);display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red-3);font-family:var(--f-mono)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:0;padding:0 18px 15px;font-size:15px}
+.src ol{margin:0;padding-left:1.4em;font-size:14.5px} .src li{padding:6px 0;color:var(--ink-faint)}
+.src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.author .av{width:72px;height:72px;font-size:28px}
+.author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
+.author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}
+.author p{margin:0 0 8px;font-size:15px}
+
+@media(max-width:1000px){
+  .glance{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .chrome nav{display:none}
+  .cover{grid-template-columns:1fr}
+  .band{height:36px} .band span{writing-mode:horizontal-tb;transform:none;letter-spacing:.2em}
+  .meta{grid-template-columns:1fr}
+  .glance{grid-template-columns:1fr}
+  .rule{grid-template-columns:56px minmax(0,1fr);gap:10px 12px}
+  .rule p{grid-column:2}
+  .journey{grid-template-columns:1fr;gap:26px}
+  .journey::before{left:19px;right:auto;top:0;bottom:0;width:2px;height:auto;background:linear-gradient(180deg,var(--line-2),var(--red-3))}
+  .stage{padding-right:0;padding-left:56px}
+  .stage .dot{position:absolute;left:0;top:0}
+  .mv{grid-template-columns:44px minmax(0,1fr)}
+  .mv .tags{grid-column:2}
+  .wa,.back,.indcard{grid-template-columns:1fr}
+  .indcard .l{border-right:0;border-bottom:1px solid var(--line-2)}
+  .icta{grid-template-columns:1fr;padding-left:16px} .act2{padding-right:16px}
+  .author{grid-template-columns:1fr}
+  .prose p{font-size:16.5px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<div class="mocknote">DESIGN MOCKUP · INDUSTRY TEMPLATE · sample content for layout review, not published</div>
+<header class="chrome"><div class="wrap"><span class="logo">Reinforce <b>/</b> Lab</span><nav aria-label="Site (mockup)"><span>Search Authority OS</span><span>Solutions</span><span>Industries</span><span>Packages</span><span class="on">Blog</span><span>About</span><span>Contact</span></nav><span class="cta-s">Get your diagnostic</span></div></header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ok" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+  <symbol id="no" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+  <symbol id="warn" viewBox="0 0 16 16"><path d="M8 2l7 12H1z M8 6v4 M8 12v1" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+</svg>
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="#">Home</a> / <a href="#">Blog</a> / <a href="#">Pharmaceutical</a> / SEO for pharma companies</nav>
+  <section class="cover" aria-label="Industry briefing">
+    <div class="band" aria-hidden="true"><span>Industry briefing</span></div>
+    <div class="cv">
+      <div class="cv-top"><div class="kicker"><span class="kind">Industry</span><span class="cat">Pharmaceutical</span></div><span class="sector">Sector <b>Pharmaceutical &amp; Life Sciences</b></span></div>
+      <h1>SEO for pharmaceutical companies: <em>what works under strict promotion rules</em></h1>
+      <p class="stand">How pharma and life sciences companies can earn search and AI visibility without breaking the rules on promoting medicines.</p>
+      <div class="meta">
+        <div><span>Written for</span><b>Marketing and medical affairs teams</b></div>
+        <div class="rev"><span>Reviewed for accuracy by</span><b><svg class="ic"><use href="#ok"/></svg>Jamil Ahmed, Pharmacist</b></div>
+        <div><span>Markets covered</span><b>UK, EU and US</b></div>
+      </div>
+      <div class="byline"><span class="who"><span class="av" aria-hidden="true">J</span>Jamil Ahmed</span><span>Published <b>22 Sep 2026</b></span><span class="fresh">Updated <b>2 Oct 2026</b></span></div>
+    </div>
+  </section>
+  <div class="glance" aria-label="The sector at a glance">
+    <div class="gl"><span class="k">Search risk</span><b>Your money or your life</b><p>Health content is held to Google's highest quality bar.</p></div>
+    <div class="gl"><span class="k">Rules</span><b>Strict promotion limits</b><p>What you can say about medicines depends on the market and the audience.</p></div>
+    <div class="gl"><span class="k">Buyers</span><b>Many people, long cycles</b><p>Clinicians, procurement and patients all search differently.</p></div>
+    <div class="gl"><span class="k">Proof</span><b>Evidence first</b><p>Claims need sources readers and AI tools can check.</p></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="main">
+    <div class="answer"><p class="t">Short answer</p><p>Pharma SEO works when it answers the questions clinicians, patients and partners ask, with content that is accurate, sourced and reviewed, and that never promotes prescription medicines where the rules forbid it. Unbranded disease education and corporate content carry most of the search value.</p></div>
+    <div class="prose"><p>Most pharma websites are built for compliance first and search second. That keeps them safe, but it also leaves the questions people ask Google and AI tools to be answered by forums, news sites and competitors.</p></div>
+
+    <div class="sec-h" id="rules"><span>Sector rules</span><h2>Rules to know before you publish</h2><p>Check every page against these before it goes live. Your own regulatory team has the final word.</p></div>
+    <div class="rules">
+      <div class="rh"><span>Rule and what it means for search</span><b><svg class="ic"><use href="#warn"/></svg>Compliance</b></div>
+      <div class="rule"><span class="code">R1</span><h3>No promotion of prescription medicines to the public<small>UK and EU</small></h3><p>Patient-facing pages can educate about conditions, but <b>cannot promote a prescription medicine</b>. Keep product detail behind a healthcare professional gate.</p></div>
+      <div class="rule"><span class="code">R2</span><h3>Fair balance in the US<small>US</small></h3><p>Where product claims are allowed, <b>risk information must sit alongside benefits</b>, including in snippets you write for search.</p></div>
+      <div class="rule"><span class="code">R3</span><h3>Health content is held to a higher standard<small>Google, all markets</small></h3><p>Show who wrote and reviewed each page, their qualifications, and the sources behind every claim.</p></div>
+    </div>
+    <p class="rnote">General guidance, not legal or regulatory advice.</p>
+
+    <div class="sec-h" id="journey"><span>Buyer journey</span><h2>What your audiences search for</h2></div>
+    <div class="journey">
+      <div class="stage"><span class="dot">1</span><h3>Learn</h3><span class="who">Patients, carers</span><ul class="qs"><li>what causes condition x</li><li>condition x treatment options</li></ul><p class="ct"><b>Content that answers</b>Unbranded disease education, reviewed by clinicians.</p></div>
+      <div class="stage"><span class="dot">2</span><h3>Evaluate</h3><span class="who">Clinicians</span><ul class="qs"><li>condition x guidelines 2026</li><li>trial results for drug class y</li></ul><p class="ct"><b>Content that answers</b>Gated HCP resources, study summaries, guidance pages.</p></div>
+      <div class="stage"><span class="dot">3</span><h3>Partner</h3><span class="who">Procurement, partners</span><ul class="qs"><li>contract manufacturer for sterile products</li><li>company x pipeline</li></ul><p class="ct"><b>Content that answers</b>Corporate, pipeline and capability pages.</p></div>
+    </div>
+
+    <aside class="icta" aria-label="Reinforce Lab service"><div><p class="lbl">Reinforce Lab service · Pharmaceutical &amp; Life Sciences</p><p class="hd">Need search content your regulatory team will sign off?</p><p class="csub">We plan and write pharma content with review built in, so it ranks and gets approved.</p></div><div class="act2"><a class="go2" href="#">See how we work with pharma &rarr;</a><a class="alt" href="#">Or get a free diagnostic first</a></div></aside>
+
+    <div class="sec-h" id="moves"><span>Where to start</span><h2>Five moves, in order</h2></div>
+    <ol class="moves">
+      <li class="mv"><span class="n">1</span><div><h3>Fix the technical basics</h3><p>Make sure Google can crawl and index your corporate and disease pages.</p></div><div class="tags"><span class="tg imp">Impact<span class="bar"><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="tg eff">Effort<span class="bar"><i class="on"></i><i></i><i></i></span></span></div></li>
+      <li class="mv"><span class="n">2</span><div><h3>Add authors and reviewers</h3><p>Name the writer and the medical reviewer on every health page.</p></div><div class="tags"><span class="tg imp">Impact<span class="bar"><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="tg eff">Effort<span class="bar"><i class="on"></i><i></i><i></i></span></span></div></li>
+      <li class="mv"><span class="n">3</span><div><h3>Build unbranded education pages</h3><p>Answer the top patient questions for your therapy areas.</p></div><div class="tags"><span class="tg imp">Impact<span class="bar"><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="tg eff">Effort<span class="bar"><i class="on"></i><i class="on"></i><i></i></span></span></div></li>
+      <li class="mv"><span class="n">4</span><div><h3>Strengthen corporate pages</h3><p>Pipeline, capabilities and partnering pages for B2B searches.</p></div><div class="tags"><span class="tg imp">Impact<span class="bar"><i class="on"></i><i class="on"></i><i></i></span></span><span class="tg eff">Effort<span class="bar"><i class="on"></i><i class="on"></i><i></i></span></span></div></li>
+      <li class="mv"><span class="n">5</span><div><h3>Track AI answers</h3><p>Check what AI tools say about your company and therapy areas each month.</p></div><div class="tags"><span class="tg imp">Impact<span class="bar"><i class="on"></i><i class="on"></i><i></i></span></span><span class="tg eff">Effort<span class="bar"><i class="on"></i><i></i><i></i></span></span></div></li>
+    </ol>
+
+    <div class="sec-h"><span>In this sector</span><h2>What works and what to avoid</h2></div>
+    <div class="wa">
+      <div class="wk"><p class="h"><svg class="ic"><use href="#ok"/></svg>Works</p><ul><li><svg class="ic"><use href="#ok"/></svg><span>Plain-language disease pages with named reviewers</span></li><li><svg class="ic"><use href="#ok"/></svg><span>Citing guidelines and published studies</span></li><li><svg class="ic"><use href="#ok"/></svg><span>Separate areas for patients and professionals</span></li></ul></div>
+      <div class="av2"><p class="h"><svg class="ic"><use href="#no"/></svg>Avoid</p><ul><li><svg class="ic"><use href="#no"/></svg><span>Product names in patient-facing titles where promotion is restricted</span></li><li><svg class="ic"><use href="#no"/></svg><span>Unsourced claims about outcomes</span></li><li><svg class="ic"><use href="#no"/></svg><span>Publishing before medical and legal review</span></li></ul></div>
+    </div>
+
+    <section class="indcard" aria-label="Our work in this industry">
+      <div class="l"><span class="k">Industry</span><h2>Pharmaceutical &amp; Life Sciences</h2><p>How we help pharma and life sciences companies grow search and AI visibility within the rules.</p><a class="more" href="#">How we work with pharma &rarr;</a></div>
+      <ul>
+        <li><a href="#"><span>SEO Content Systems<small>Reviewed, compliant content at scale</small></span><span class="ar" aria-hidden="true">&rarr;</span></a></li>
+        <li><a href="#"><span>Technical SEO<small>Crawl, index and site structure</small></span><span class="ar" aria-hidden="true">&rarr;</span></a></li>
+        <li><a href="#"><span>AI Search Optimization<small>How AI tools describe your company</small></span><span class="ar" aria-hidden="true">&rarr;</span></a></li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="back" aria-label="Questions and sources">
+    <div class="faq"><div class="sec-h"><span>Questions</span><h2>FAQs</h2></div>
+      <details open><summary>Can pharma companies do SEO at all?</summary><p>Yes. Corporate, pipeline and unbranded disease education content can all be optimised. Product promotion rules decide what you can say and to whom.</p></details>
+      <details><summary>Who should review pharma content?</summary><p>A qualified medical reviewer for accuracy, and your regulatory or legal team for compliance, before anything is published.</p></details>
+    </div>
+    <div class="src"><div class="sec-h"><span>Evidence</span><h2>Sources</h2></div>
+      <ol><li><a href="#">Google Search Quality Rater Guidelines, Your Money or Your Life</a></li><li><a href="#">MHRA, Blue Guide: advertising and promotion of medicines in the UK</a></li><li><a href="#">FDA, Prescription drug advertising</a></li></ol>
+    </div>
+  </section>
+
+  <aside class="author" aria-label="About the author"><span class="av" aria-hidden="true">J</span><div><p class="nm">Jamil Ahmed</p><p class="role">Founder and CEO, Reinforce Lab</p><p>Pharmacist, SEO and AI search consultant, and Semrush Ambassador.</p></div></aside>
+</div>

@@ -86,6 +86,7 @@ scripts/
 ## Current status (4 October 2026)
 
 - **Built on `.online`:** Home, About, Contact, Services hub and all service pages, Industries hub and 8 industries, Search Authority OS, Diagnostic, Packages, Agents, Blog archive, the single-post base with 11 post types, and the Guide, How-To, Best / List, Review, Comparison and Explainer templates.
+- **In review:** Industry blog template mockup (D-094).
 - **Next:** the remaining blog templates, one type at a time (D-077). Then the founder bio and the merge into `main` (D-084).
 - **Migration to reinforcelab.com:** not scheduled. Blocked on the data listed in [migration-and-data-requirements.md](claude/migration-and-data-requirements.md).
 - **Live site and GitHub match:** checked with `rl.py parity` (0 differences).
