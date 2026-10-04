@@ -1,0 +1,406 @@
+<title>Best/List Template Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a shortlist board. Podium of the top three in the hero, the scoring weights as one bar, a sticky ranked shortlist, a sortable comparison table, then one spec sheet per pick with its score breakdown. Dark only: it is the Reinforce Lab site (D-013). */
+:root{
+  --bg:#121011; --bg-2:#0e0c0d; --panel:#1a1617; --panel-2:#211c1d;
+  --ink:#f2eeee; --ink-dim:#b8b0b1; --ink-faint:#7f7778;
+  --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
+  --red:#990000; --red-2:#c21a1a; --red-3:#e23b3b; --red-line:rgba(226,59,59,.38); --ok:#3fa36b;
+  --f-display:"Oswald","Arial Narrow",sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1280px; --g:clamp(16px,3vw,32px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink-dim);font-family:var(--f-body);font-size:16px;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;background-position:-1px -1px}
+a{color:var(--ink)}
+:focus-visible{outline:2px solid var(--red-3);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--g)}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);margin:0;line-height:1.04;text-wrap:balance}
+.ic{width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.num{font-variant-numeric:tabular-nums}
+
+.mocknote{background:var(--red);color:#fff;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-align:center;padding:7px var(--g)}
+.chrome{border-bottom:1px solid var(--line-2);background:rgba(18,16,17,.9)}
+.chrome .wrap{display:flex;justify-content:space-between;align-items:center;height:62px;gap:16px}
+.logo{font-family:var(--f-display);font-weight:700;letter-spacing:.04em;color:var(--ink);font-size:18px;text-transform:uppercase}
+.logo b{color:var(--red-3)}
+.chrome nav{display:flex;gap:22px;font-family:var(--f-display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.chrome nav span.on{color:var(--ink)}
+.cta-s{font-family:var(--f-display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid var(--red-2);padding:9px 14px;background:rgba(153,0,0,.35)}
+
+/* hero + podium */
+.crumbs{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);padding-top:26px}
+.crumbs a{color:var(--ink-faint);text-decoration:none}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(28px,5vw,64px);align-items:center;padding-block:clamp(26px,4vw,44px) clamp(28px,4vw,40px)}
+.kicker{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+.kind{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:var(--red);padding:6px 10px}
+.cat{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:5px 10px}
+.hero h1{font-size:clamp(36px,5vw,66px);line-height:.98}
+.hero h1 .yr{color:var(--red-3)}
+.stand{font-size:clamp(17px,1.5vw,19px);line-height:1.55;max-width:560px;margin:20px 0 0}
+.byline{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:24px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);align-items:center}
+.byline .who{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.av{width:34px;height:34px;border:1px solid var(--red-line);display:grid;place-items:center;font-family:var(--f-display);font-size:15px;color:var(--ink);background:var(--bg-2)}
+.byline b{color:var(--ink-dim);font-weight:500}
+.fresh{color:var(--ok)!important}
+.podium-h{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:10px}
+.podium{display:grid;grid-template-columns:1fr 1.12fr 1fr;align-items:end;gap:8px}
+.pd{display:grid;gap:6px;text-decoration:none;border:1px solid var(--line-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:16px;position:relative;transition:border-color .2s}
+.pd:hover{border-color:var(--red-line)}
+.pd::after{content:"";position:absolute;left:-1px;right:-1px;bottom:-1px;height:4px;background:var(--line-2)}
+.pd1{order:2;padding-block:26px 22px;border-color:var(--red-line);background:radial-gradient(120% 90% at 50% 0%,rgba(153,0,0,.28),transparent 65%),var(--panel)}
+.pd1::after{background:var(--red-3)}
+.pd2{order:1}.pd3{order:3}
+.pl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3)}
+.pn{font-family:var(--f-display);font-size:21px;text-transform:uppercase;color:var(--ink);line-height:1.05}
+.pd1 .pn{font-size:25px}
+.ps{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint)} .ps b{font-family:var(--f-display);font-size:30px;color:var(--ink);font-weight:500}
+.pd1 .ps b{font-size:38px}
+.pf{font-size:13.5px;color:var(--ink-dim)}
+.step-base{display:grid;grid-template-columns:1fr 1.12fr 1fr;gap:8px;margin-top:6px;font-family:var(--f-mono);font-size:11px;color:var(--ink-faint);text-align:center}
+
+/* method strip */
+.method{border-block:1px solid var(--line-2);background:rgba(14,12,13,.7)}
+.method .wrap{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(18px,3vw,40px);align-items:center;padding-block:18px}
+.facts{display:flex;gap:26px}
+.facts div{display:grid}
+.facts b{font-family:var(--f-display);font-size:28px;font-weight:500;color:var(--ink);line-height:1}
+.facts span,.wlab,.checked span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.wbar{display:flex;gap:2px;margin-top:6px;min-width:0}
+.wbar span{min-width:0;background:var(--panel-2);border-top:2px solid var(--red-2);padding:7px 8px;font-size:12px;line-height:1.35;color:var(--ink-dim)}
+.wbar span b{display:block}
+.wbar span b{font-family:var(--f-mono);font-weight:500;color:var(--ink);margin-right:6px}
+.checked{text-align:right}
+.checked b{display:block;color:var(--ink);font-size:14.5px;font-weight:500}
+.checked a{font-size:13px;color:var(--ink-dim)}
+.disc{font-size:13.5px;color:var(--ink-faint);padding-top:14px}
+.disc b{color:var(--ink-dim);font-weight:500}
+
+/* sticky shortlist */
+.short{position:sticky;top:0;z-index:6;background:rgba(18,16,17,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-2);margin-top:28px}
+.short .wrap{display:flex;align-items:center;gap:16px;height:54px}
+.short .lbl{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);white-space:nowrap}
+.short ol{list-style:none;margin:0;padding:0;display:flex;gap:6px;flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.short ol::-webkit-scrollbar{display:none}
+.short a{display:flex;align-items:center;gap:8px;height:34px;padding:0 10px;border:1px solid var(--line-2);background:var(--bg-2);text-decoration:none;color:var(--ink-dim);font-size:13px;white-space:nowrap}
+.short a b{font-family:var(--f-mono);font-size:11px;color:var(--red-3);font-weight:500}
+.short a em{font-style:normal;font-family:var(--f-mono);font-size:11px;color:var(--ink-faint)}
+.short a.on{border-color:var(--red-2);color:var(--ink)}
+.short .cmp{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--red-line);white-space:nowrap}
+
+/* main column */
+.main{max-width:900px;padding-block:clamp(30px,4vw,48px) 10px}
+.answer{border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px 24px;margin-bottom:24px}
+.answer .t,.sec-h span{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 8px}
+.answer p{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
+.intro p{font-size:17.5px;line-height:1.75;margin:0 0 1.1em}
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:44px 0 16px}
+.sec-h h2{font-size:clamp(24px,2.8vw,30px)}
+
+/* comparison table */
+.tw{overflow-x:auto;border:1px solid var(--line-2);background:var(--bg-2)}
+table{width:100%;border-collapse:collapse;min-width:680px;font-size:14.5px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle}
+thead th{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;background:var(--panel)}
+thead button{all:unset;cursor:pointer;display:inline-flex;gap:6px;align-items:center;color:var(--ink)}
+thead button::after{content:"";width:0;height:0;border:4px solid transparent;border-top-color:var(--ink-faint);margin-top:4px}
+thead button[aria-sort="ascending"]::after{border-top-color:transparent;border-bottom-color:var(--red-3);margin-top:-4px}
+thead button[aria-sort="descending"]::after{border-top-color:var(--red-3)}
+tbody th{color:var(--ink);font-weight:600}
+tbody th a{text-decoration:none;color:var(--ink)}
+tbody tr:last-child>*{border-bottom:0}
+tr.top{background:linear-gradient(90deg,rgba(153,0,0,.2),transparent 70%)}
+tr.top td.rk{box-shadow:inset 3px 0 0 var(--red-2)}
+.rk{font-family:var(--f-mono);color:var(--red-3);width:40px}
+.tag{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--red);padding:2px 6px;margin-left:10px;font-weight:500}
+.mini{display:inline-block;width:60px;height:4px;background:var(--line-2);margin-right:10px;vertical-align:middle}
+.mini i{display:block;height:100%;background:var(--red-3)}
+td.num{font-family:var(--f-mono);color:var(--ink);white-space:nowrap}
+.tnote{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);margin-top:8px}
+
+/* picks: spec sheets */
+.pick{display:grid;grid-template-columns:120px minmax(0,1fr);border:1px solid var(--line-2);background:var(--panel);margin-top:22px;scroll-margin-top:70px}
+.pick.first{border-color:var(--red-line);box-shadow:0 30px 80px -60px rgba(226,59,59,.6)}
+.rail{border-right:1px solid var(--line-2);background:var(--bg-2);display:flex;flex-direction:column;align-items:center;padding:22px 10px;gap:18px}
+.rank{font-family:var(--f-display);font-weight:700;font-size:84px;line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--red-3)}
+.pick.first .rank{color:var(--red);-webkit-text-stroke:1.5px var(--red-2)}
+.plate{border:1px solid var(--line-2);width:84px;text-align:center;padding:10px 4px;background:var(--panel)}
+.plate b{display:block;font-family:var(--f-display);font-size:30px;color:var(--ink);font-weight:500;line-height:1}
+.plate span{font-family:var(--f-mono);font-size:10px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em}
+.pick .body{padding:22px 26px 24px;min-width:0}
+.bdg{display:inline-block;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);border:1px solid var(--red-line);padding:3px 8px;margin:0 0 10px}
+.pick.first .bdg{background:var(--red);color:#fff;border-color:var(--red-2)}
+.pick h2{font-size:clamp(26px,3vw,34px)}
+.bf{margin:6px 0 12px;font-size:15px}
+.bf b{color:var(--ink);font-weight:500}
+.vd{color:var(--ink);font-size:17px;line-height:1.7;margin:0 0 18px}
+.bks{display:grid;gap:7px;margin-bottom:20px;padding:14px 16px;border:1px solid var(--line);background:var(--bg-2)}
+.br{display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr) 34px;gap:12px;align-items:center;font-size:13.5px}
+.br small{font-family:var(--f-mono);font-size:10.5px;color:var(--ink-faint)}
+.bt{height:6px;background:var(--line-2)} .bt i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--red-3))}
+.br b{font-family:var(--f-mono);font-weight:500;color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.lb{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 8px}
+.pc ul{list-style:none;margin:0;padding:0}
+.pc li{display:grid;grid-template-columns:18px 1fr;gap:8px;padding:7px 0;border-top:1px solid var(--line);font-size:14.5px}
+.pc li:first-child{border-top:0}
+.pros .ic{color:var(--ok);margin-top:4px} .cons .ic{color:var(--red-3);margin-top:4px}
+.spec{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:20px 0 0}
+.spec div{background:var(--bg-2);padding:12px 14px}
+.spec dt{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.spec dd{margin:4px 0 0;color:var(--ink);font-size:15px}
+.skip{margin:16px 0 0;font-size:14.5px;border-left:2px solid var(--line-2);padding-left:12px}
+.skip b{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);font-weight:500;margin-right:6px}
+.act{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;margin-top:20px}
+.go{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.07em;font-size:14px;text-decoration:none;color:#fff;background:var(--red);border:1px solid var(--red-2);padding:12px 18px}
+.pick:not(.first) .go{background:transparent;border-color:var(--line-2)}
+.pick:not(.first) .go:hover{border-color:var(--red-2)}
+.chk{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint)}
+
+/* light in-article CTA (same pattern as Guide and How-To) */
+.icta{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 28px;align-items:center;margin:30px 0 8px;padding:20px 0 20px 20px;border-top:1px solid var(--red-line);border-bottom:1px solid var(--red-line);border-left:3px solid var(--red-2);background:linear-gradient(90deg,rgba(153,0,0,.12),transparent 70%)}
+.icta .lbl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 6px}
+.icta .hd{font-family:var(--f-display);font-weight:600;text-transform:uppercase;font-size:clamp(19px,2vw,22px);line-height:1.15;color:var(--ink);margin:0 0 6px}
+.icta .csub{margin:0;font-size:15px}
+.act2{display:grid;gap:8px;justify-items:start;padding-right:20px}
+.go2{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.07em;font-size:14px;text-decoration:none;color:#fff;background:var(--red);border:1px solid var(--red-2);padding:12px 18px;white-space:nowrap}
+.alt{font-size:13.5px;color:var(--ink-faint);text-decoration:none;border-bottom:1px solid var(--line-2)}
+
+/* pick by need */
+.needs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.nd{background:var(--bg);padding:18px 20px;text-decoration:none;display:grid;grid-template-columns:auto 1fr auto;gap:4px 12px;align-items:baseline;transition:background .2s}
+.nd:hover{background:var(--panel)}
+.nd .if{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.nd .q{color:var(--ink);font-size:15.5px}
+.nd .arr{color:var(--red-3)}
+.nd .pk{grid-column:2/4;font-family:var(--f-display);text-transform:uppercase;font-size:19px;color:var(--ink-dim)}
+.nd .pk b{color:var(--ink);font-weight:600}
+.nd .why{grid-column:2/4;font-size:13.5px;color:var(--ink-faint)}
+
+/* also considered + how we chose */
+.also{list-style:none;margin:0;padding:0;border:1px solid var(--line-2)}
+.also li{display:grid;grid-template-columns:200px 1fr;gap:16px;padding:14px 18px;border-top:1px solid var(--line);font-size:15px}
+.also li:first-child{border-top:0}
+.also b{color:var(--ink);font-weight:500}
+.how{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.how div{border-top:2px solid var(--red-2);padding-top:12px}
+.how h3{font-size:17px;margin-bottom:6px}
+.how p{margin:0;font-size:15px}
+
+/* back matter */
+.back{border-top:1px solid var(--line-2);margin-top:50px;padding-block:44px 10px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
+.back .sec-h{margin-top:0}
+.faq details{border:1px solid var(--line);background:var(--panel);margin-bottom:8px}
+.faq summary{cursor:pointer;list-style:none;padding:15px 18px;font-family:var(--f-display);text-transform:uppercase;font-size:15px;color:var(--ink);display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red-3);font-family:var(--f-mono)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:0;padding:0 18px 15px;font-size:15px}
+.src ol{margin:0;padding-left:1.4em;font-size:14.5px} .src li{padding:6px 0;color:var(--ink-faint)}
+.src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.author .av{width:72px;height:72px;font-size:28px}
+.author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
+.author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}
+.author p{margin:0 0 8px;font-size:15px}
+
+@media(max-width:1000px){
+  .hero{grid-template-columns:1fr}
+  .method .wrap{grid-template-columns:1fr}
+  .checked{text-align:left}
+  .short .cmp{display:none}
+}
+@media(max-width:700px){
+  .chrome nav{display:none}
+  .podium,.step-base{grid-template-columns:1fr}
+  .step-base{display:none}
+  .pd1,.pd2,.pd3{order:0}
+  .pd{grid-template-columns:1fr auto;align-items:baseline}
+  .pd .pl,.pd .pn{grid-column:1/-1}
+  .facts{gap:18px}
+  .wbar{flex-wrap:wrap}
+  .wbar span{flex:1 1 45%!important}
+  .pick{grid-template-columns:1fr}
+  .rail{flex-direction:row;justify-content:space-between;border-right:0;border-bottom:1px solid var(--line-2);padding:14px 16px}
+  .rank{font-size:56px}
+  .pick .body{padding:18px 16px 20px}
+  .br{grid-template-columns:1fr 34px;gap:4px 10px}
+  .br .bt{grid-column:1/-1;grid-row:2}
+  .pc,.needs,.how,.back{grid-template-columns:1fr}
+  .spec{grid-template-columns:1fr 1fr}
+  .also li{grid-template-columns:1fr;gap:4px}
+  .icta{grid-template-columns:1fr;padding-left:16px} .act2{padding-right:16px}
+  .author{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<div class="mocknote">DESIGN MOCKUP · BEST / LIST TEMPLATE · product names, scores and prices are placeholders for layout review</div>
+<header class="chrome"><div class="wrap"><span class="logo">Reinforce <b>/</b> Lab</span><nav aria-label="Site (mockup)"><span>Search Authority OS</span><span>Solutions</span><span>Industries</span><span>Packages</span><span class="on">Blog</span><span>About</span><span>Contact</span></nav><span class="cta-s">Get your diagnostic</span></div></header>
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="#">Home</a> / <a href="#">Blog</a> / <a href="#">WordPress</a> / Best managed WordPress hosting</nav>
+  <section class="hero">
+    <div>
+      <div class="kicker"><span class="kind">Best / List</span><span class="cat">WordPress</span></div>
+      <h1>The best managed WordPress hosting for business sites in <span class="yr">2026</span></h1>
+      <p class="stand">We moved the same business site to 5 managed hosts, measured speed and uptime for six weeks, and ranked them on what matters to a site that brings in leads.</p>
+      <div class="byline"><span class="who"><span class="av" aria-hidden="true">J</span>Jamil Ahmed</span><span>Published <b>12 Aug 2026</b></span><span class="fresh">Updated <b>1 Oct 2026</b></span></div>
+    </div>
+    <div>
+      <div class="podium-h"><span>Our picks</span><span>Score out of 10</span></div>
+      <div class="podium"><a class="pd pd1" href="#pick-1"><span class="pl">Top pick</span><span class="pn">Northwind Host</span><span class="ps"><b>9.1</b> / 10</span><span class="pf">From $25 a month</span></a><a class="pd pd2" href="#pick-2"><span class="pl">Best value</span><span class="pn">Copperline</span><span class="ps"><b>8.7</b> / 10</span><span class="pf">From $12 a month</span></a><a class="pd pd3" href="#pick-3"><span class="pl">Best for high traffic</span><span class="pn">Tidewell Cloud</span><span class="ps"><b>8.4</b> / 10</span><span class="pf">From $60 a month</span></a></div>
+      <div class="step-base" aria-hidden="true"><span>2</span><span>1</span><span>3</span></div>
+    </div>
+  </section>
+</div>
+
+<section class="method" aria-label="How we ranked">
+  <div class="wrap">
+    <div class="facts"><div><b>5</b><span>Hosts tested</span></div><div><b>6</b><span>Weeks measured</span></div><div><b>5</b><span>Criteria</span></div></div>
+    <div><span class="wlab">How the score is weighted</span><div class="wbar"><span style="flex:30" title="Speed 30%"><b>30%</b>Speed</span><span style="flex:25" title="Uptime and support 25%"><b>25%</b>Uptime and support</span><span style="flex:20" title="Security and backups 20%"><b>20%</b>Security and backups</span><span style="flex:15" title="Ease of use 15%"><b>15%</b>Ease of use</span><span style="flex:10" title="Price 10%"><b>10%</b>Price</span></div></div>
+    <div class="checked"><span>Prices checked</span><b>1 Oct 2026</b><a href="#how">How we tested</a></div>
+  </div>
+  <div class="wrap"><p class="disc" style="margin:0;padding-block:0 14px"><b>Disclosure:</b> some links on this page are affiliate links. If you buy through them we may earn a commission, at no extra cost to you. It does not change the ranking.</p></div>
+</section>
+
+<nav class="short" aria-label="The shortlist">
+  <div class="wrap">
+    <span class="lbl">Shortlist</span>
+    <ol id="sl"><li><a href="#pick-1"><b>1</b><span>Northwind Host</span><em>9.1</em></a></li><li><a href="#pick-2"><b>2</b><span>Copperline</span><em>8.7</em></a></li><li><a href="#pick-3"><b>3</b><span>Tidewell Cloud</span><em>8.4</em></a></li><li><a href="#pick-4"><b>4</b><span>Larkspur WP</span><em>8.3</em></a></li><li><a href="#pick-5"><b>5</b><span>Bramble Press</span><em>8.1</em></a></li></ol>
+    <a class="cmp" href="#compare">Compare all</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="main">
+    <div class="answer"><p class="t">Short answer</p><p>Northwind Host is the best managed WordPress host for most business sites: it was the fastest in our tests and its support knew WordPress. Copperline is the best value, and Tidewell Cloud is the pick for high-traffic sites.</p></div>
+    <div class="intro"><p>Cheap shared hosting is fine for a hobby blog. For a site that brings in enquiries, slow pages and downtime cost you leads. Managed WordPress hosts handle updates, backups and caching for you, and they differ more than their sales pages suggest.</p></div>
+
+    <div class="sec-h" id="compare"><span>At a glance</span><h2>Compare all 5</h2></div>
+    <div class="tw">
+      <table id="ct">
+        <thead><tr><th scope="col"><button type="button" data-k="rank" aria-sort="ascending">#</button></th><th scope="col">Host</th><th scope="col">Best for</th><th scope="col"><button type="button" data-k="score">Score</button></th><th scope="col"><button type="button" data-k="price">From</button></th><th scope="col">Refund window</th></tr></thead>
+        <tbody><tr class=top data-score="9.1" data-price="25" data-rank="1"><td class="rk">1</td><th scope="row"><a href="#pick-1">Northwind Host</a><span class=tag>Top pick</span></th><td>Most business sites</td><td class="num"><span class="mini"><i style="width:91.0%"></i></span>9.1</td><td class="num">$25</td><td>30-day refund</td></tr><tr data-score="8.7" data-price="12" data-rank="2"><td class="rk">2</td><th scope="row"><a href="#pick-2">Copperline</a></th><td>Small business sites</td><td class="num"><span class="mini"><i style="width:87.0%"></i></span>8.7</td><td class="num">$12</td><td>14-day refund</td></tr><tr data-score="8.4" data-price="60" data-rank="3"><td class="rk">3</td><th scope="row"><a href="#pick-3">Tidewell Cloud</a></th><td>Sites over 100,000 visits a month</td><td class="num"><span class="mini"><i style="width:84.0%"></i></span>8.4</td><td class="num">$60</td><td>30-day refund</td></tr><tr data-score="8.3" data-price="40" data-rank="4"><td class="rk">4</td><th scope="row"><a href="#pick-4">Larkspur WP</a></th><td>Teams managing many client sites</td><td class="num"><span class="mini"><i style="width:83.0%"></i></span>8.3</td><td class="num">$40</td><td>60-day refund</td></tr><tr data-score="8.1" data-price="35" data-rank="5"><td class="rk">5</td><th scope="row"><a href="#pick-5">Bramble Press</a></th><td>WooCommerce shops</td><td class="num"><span class="mini"><i style="width:81.0%"></i></span>8.1</td><td class="num">$35</td><td>30-day refund</td></tr></tbody>
+      </table>
+    </div>
+    <p class="tnote">Sort by score or price. Prices are the entry plan per month, billed yearly, checked 1 Oct 2026.</p>
+
+    <div class="sec-h"><span>The ranking</span><h2>Our picks in detail</h2></div>
+    <article class="pick first" id="pick-1">
+  <div class="rail"><span class="rank" aria-hidden="true">1</span><div class="plate"><b>9.1</b><span>out of 10</span></div></div>
+  <div class="body">
+    <p class="bdg">Top pick</p>
+    <h2><span class="vh">1. </span>Northwind Host</h2>
+    <p class="bf">Best for: <b>Most business sites</b></p>
+    <p class="vd">The fastest host we tested on real pages, with support that answered WordPress questions properly. It costs more than the budget options, and it is worth it for a site that brings in leads.</p>
+    <div class="bks" aria-label="Score breakdown"><div class="br"><span>Speed <small>30%</small></span><span class="bt"><i style="width:94.0%"></i></span><b>9.4</b></div><div class="br"><span>Uptime and support <small>25%</small></span><span class="bt"><i style="width:92.0%"></i></span><b>9.2</b></div><div class="br"><span>Security and backups <small>20%</small></span><span class="bt"><i style="width:90.0%"></i></span><b>9.0</b></div><div class="br"><span>Ease of use <small>15%</small></span><span class="bt"><i style="width:88.0%"></i></span><b>8.8</b></div><div class="br"><span>Price <small>10%</small></span><span class="bt"><i style="width:82.0%"></i></span><b>8.2</b></div></div>
+    <div class="pc"><div><p class="lb">What we liked</p><ul class="pros"><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Fastest load times in our tests</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Staging site and daily backups included</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Support staff who know WordPress</span></li></ul></div><div><p class="lb">What could be better</p><ul class="cons"><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg><span>Email hosting costs extra</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg><span>Storage is tight on the entry plan</span></li></ul></div></div>
+    <dl class="spec"><div><dt>Price from</dt><dd>$25 a month</dd></div><div><dt>Refund window</dt><dd>30-day refund</dd></div><div><dt>Data centres</dt><dd>9 regions</dd></div></dl>
+    <p class="skip"><b>Skip it if</b> Your site has under 1,000 visits a month and no leads depend on it.</p>
+    <div class="act"><a class="go" href="#" rel="sponsored nofollow">Visit Northwind Host <span aria-hidden="true">&rarr;</span></a><span class="chk">Price checked 1 Oct 2026</span></div>
+  </div>
+</article><article class="pick" id="pick-2">
+  <div class="rail"><span class="rank" aria-hidden="true">2</span><div class="plate"><b>8.7</b><span>out of 10</span></div></div>
+  <div class="body">
+    <p class="bdg">Best value</p>
+    <h2><span class="vh">2. </span>Copperline</h2>
+    <p class="bf">Best for: <b>Small business sites</b></p>
+    <p class="vd">Good speed and the easiest dashboard in the group, for about half the price of our top pick. Support is slower at busy times.</p>
+    <div class="bks" aria-label="Score breakdown"><div class="br"><span>Speed <small>30%</small></span><span class="bt"><i style="width:84.0%"></i></span><b>8.4</b></div><div class="br"><span>Uptime and support <small>25%</small></span><span class="bt"><i style="width:86.0%"></i></span><b>8.6</b></div><div class="br"><span>Security and backups <small>20%</small></span><span class="bt"><i style="width:84.0%"></i></span><b>8.4</b></div><div class="br"><span>Ease of use <small>15%</small></span><span class="bt"><i style="width:90.0%"></i></span><b>9.0</b></div><div class="br"><span>Price <small>10%</small></span><span class="bt"><i style="width:96.0%"></i></span><b>9.6</b></div></div>
+    <div class="pc"><div><p class="lb">What we liked</p><ul class="pros"><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Lowest price for the speed</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Very easy to set up</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Free SSL and a free migration</span></li></ul></div><div><p class="lb">What could be better</p><ul class="cons"><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg><span>Support replies slow down at peak times</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg><span>No staging on the cheapest plan</span></li></ul></div></div>
+    <dl class="spec"><div><dt>Price from</dt><dd>$12 a month</dd></div><div><dt>Refund window</dt><dd>14-day refund</dd></div><div><dt>Data centres</dt><dd>4 regions</dd></div></dl>
+    <p class="skip"><b>Skip it if</b> You run a shop or expect sudden traffic spikes.</p>
+    <div class="act"><a class="go" href="#" rel="sponsored nofollow">Visit Copperline <span aria-hidden="true">&rarr;</span></a><span class="chk">Price checked 1 Oct 2026</span></div>
+  </div>
+</article><aside class="icta" aria-label="Reinforce Lab service"><div><p class="lbl">Reinforce Lab service · Website Maintenance</p><p class="hd">Moving your site to a new host?</p><p class="csub">We plan the move, keep every URL the same, and check speed and rankings afterwards.</p></div><div class="act2"><a class="go2" href="#">See how it works &rarr;</a><a class="alt" href="#">Or get a free diagnostic first</a></div></aside><article class="pick" id="pick-3">
+  <div class="rail"><span class="rank" aria-hidden="true">3</span><div class="plate"><b>8.4</b><span>out of 10</span></div></div>
+  <div class="body">
+    <p class="bdg">Best for high traffic</p>
+    <h2><span class="vh">3. </span>Tidewell Cloud</h2>
+    <p class="bf">Best for: <b>Sites over 100,000 visits a month</b></p>
+    <p class="vd">Held its speed under heavy load better than any other host here. The control panel takes time to learn, and the price only makes sense at scale.</p>
+    <div class="bks" aria-label="Score breakdown"><div class="br"><span>Speed <small>30%</small></span><span class="bt"><i style="width:92.0%"></i></span><b>9.2</b></div><div class="br"><span>Uptime and support <small>25%</small></span><span class="bt"><i style="width:88.0%"></i></span><b>8.8</b></div><div class="br"><span>Security and backups <small>20%</small></span><span class="bt"><i style="width:86.0%"></i></span><b>8.6</b></div><div class="br"><span>Ease of use <small>15%</small></span><span class="bt"><i style="width:74.0%"></i></span><b>7.4</b></div><div class="br"><span>Price <small>10%</small></span><span class="bt"><i style="width:66.0%"></i></span><b>6.6</b></div></div>
+    <div class="pc"><div><p class="lb">What we liked</p><ul class="pros"><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Stays fast under heavy traffic</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Built-in CDN in 14 regions</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Detailed server logs</span></li></ul></div><div><p class="lb">What could be better</p><ul class="cons"><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg><span>Hardest dashboard to learn</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg><span>Expensive for small sites</span></li></ul></div></div>
+    <dl class="spec"><div><dt>Price from</dt><dd>$60 a month</dd></div><div><dt>Refund window</dt><dd>30-day refund</dd></div><div><dt>Data centres</dt><dd>14 regions</dd></div></dl>
+    <p class="skip"><b>Skip it if</b> Your site is small or you want a simple dashboard.</p>
+    <div class="act"><a class="go" href="#" rel="sponsored nofollow">Visit Tidewell Cloud <span aria-hidden="true">&rarr;</span></a><span class="chk">Price checked 1 Oct 2026</span></div>
+  </div>
+</article><article class="pick" id="pick-4">
+  <div class="rail"><span class="rank" aria-hidden="true">4</span><div class="plate"><b>8.3</b><span>out of 10</span></div></div>
+  <div class="body">
+    <p class="bdg">Best for agencies</p>
+    <h2><span class="vh">4. </span>Larkspur WP</h2>
+    <p class="bf">Best for: <b>Teams managing many client sites</b></p>
+    <p class="vd">Built for people who look after many sites: one dashboard, client billing and bulk updates. Single-site owners pay for tools they will not use.</p>
+    <div class="bks" aria-label="Score breakdown"><div class="br"><span>Speed <small>30%</small></span><span class="bt"><i style="width:82.0%"></i></span><b>8.2</b></div><div class="br"><span>Uptime and support <small>25%</small></span><span class="bt"><i style="width:84.0%"></i></span><b>8.4</b></div><div class="br"><span>Security and backups <small>20%</small></span><span class="bt"><i style="width:86.0%"></i></span><b>8.6</b></div><div class="br"><span>Ease of use <small>15%</small></span><span class="bt"><i style="width:84.0%"></i></span><b>8.4</b></div><div class="br"><span>Price <small>10%</small></span><span class="bt"><i style="width:74.0%"></i></span><b>7.4</b></div></div>
+    <div class="pc"><div><p class="lb">What we liked</p><ul class="pros"><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Manage many sites from one screen</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Client billing and handover built in</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Bulk plugin updates with rollback</span></li></ul></div><div><p class="lb">What could be better</p><ul class="cons"><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg><span>Pricier than single-site hosts</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg><span>Fewer regions than the leaders</span></li></ul></div></div>
+    <dl class="spec"><div><dt>Price from</dt><dd>$40 a month</dd></div><div><dt>Refund window</dt><dd>60-day refund</dd></div><div><dt>Data centres</dt><dd>6 regions</dd></div></dl>
+    <p class="skip"><b>Skip it if</b> You only have one site.</p>
+    <div class="act"><a class="go" href="#" rel="sponsored nofollow">Visit Larkspur WP <span aria-hidden="true">&rarr;</span></a><span class="chk">Price checked 1 Oct 2026</span></div>
+  </div>
+</article><article class="pick" id="pick-5">
+  <div class="rail"><span class="rank" aria-hidden="true">5</span><div class="plate"><b>8.1</b><span>out of 10</span></div></div>
+  <div class="body">
+    <p class="bdg">Best for stores</p>
+    <h2><span class="vh">5. </span>Bramble Press</h2>
+    <p class="bf">Best for: <b>WooCommerce shops</b></p>
+    <p class="vd">The only host here that tunes its servers for WooCommerce checkouts, which kept cart pages quick. For sites without a shop, others score higher.</p>
+    <div class="bks" aria-label="Score breakdown"><div class="br"><span>Speed <small>30%</small></span><span class="bt"><i style="width:80.0%"></i></span><b>8.0</b></div><div class="br"><span>Uptime and support <small>25%</small></span><span class="bt"><i style="width:82.0%"></i></span><b>8.2</b></div><div class="br"><span>Security and backups <small>20%</small></span><span class="bt"><i style="width:84.0%"></i></span><b>8.4</b></div><div class="br"><span>Ease of use <small>15%</small></span><span class="bt"><i style="width:78.0%"></i></span><b>7.8</b></div><div class="br"><span>Price <small>10%</small></span><span class="bt"><i style="width:76.0%"></i></span><b>7.6</b></div></div>
+    <div class="pc"><div><p class="lb">What we liked</p><ul class="pros"><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Cart and checkout pages stay fast</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Payment-safe security settings</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg><span>Order-aware backups</span></li></ul></div><div><p class="lb">What could be better</p><ul class="cons"><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg><span>General speed behind the top three</span></li><li><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg><span>Support hours are limited at weekends</span></li></ul></div></div>
+    <dl class="spec"><div><dt>Price from</dt><dd>$35 a month</dd></div><div><dt>Refund window</dt><dd>30-day refund</dd></div><div><dt>Data centres</dt><dd>5 regions</dd></div></dl>
+    <p class="skip"><b>Skip it if</b> You do not sell online.</p>
+    <div class="act"><a class="go" href="#" rel="sponsored nofollow">Visit Bramble Press <span aria-hidden="true">&rarr;</span></a><span class="chk">Price checked 1 Oct 2026</span></div>
+  </div>
+</article>
+
+    <div class="sec-h"><span>Quick decision</span><h2>Pick by what you need</h2></div>
+    <div class="needs"><a class="nd" href="#pick-2"><span class="if">If</span><span class="q">You run a small business site</span><span class="arr" aria-hidden="true">&rarr;</span><span class="pk">Pick <b>Copperline</b></span><span class="why">Lowest cost for good speed</span></a><a class="nd" href="#pick-1"><span class="if">If</span><span class="q">Leads come from your site</span><span class="arr" aria-hidden="true">&rarr;</span><span class="pk">Pick <b>Northwind Host</b></span><span class="why">Fastest pages, best support</span></a><a class="nd" href="#pick-5"><span class="if">If</span><span class="q">You sell online</span><span class="arr" aria-hidden="true">&rarr;</span><span class="pk">Pick <b>Bramble Press</b></span><span class="why">Checkout pages stay quick</span></a><a class="nd" href="#pick-4"><span class="if">If</span><span class="q">You look after client sites</span><span class="arr" aria-hidden="true">&rarr;</span><span class="pk">Pick <b>Larkspur WP</b></span><span class="why">One dashboard for every site</span></a></div>
+
+    <div class="sec-h"><span>Not on the list</span><h2>Also considered</h2></div>
+    <ul class="also">
+      <li><b>Harbour Sites</b><span>Fast, but support could not restore a backup within a working day in our test.</span></li>
+      <li><b>Kestrel Hosting</b><span>Good value on paper, but renewal prices more than double after the first year.</span></li>
+    </ul>
+
+    <div class="sec-h" id="how"><span>Method</span><h2>How we chose</h2></div>
+    <div class="how">
+      <div><h3>Same site, every host</h3><p>We moved one real business site, about 40 pages with forms and images, to each host on its entry plan.</p></div>
+      <div><h3>Measured, not quoted</h3><p>Page speed from three regions every hour and uptime checks every minute, from August to September 2026.</p></div>
+      <div><h3>Support tested blind</h3><p>We asked each support team the same three WordPress questions and timed and graded the answers.</p></div>
+    </div>
+  </div>
+
+  <section class="back" aria-label="Questions and sources">
+    <div class="faq"><div class="sec-h"><span>Questions</span><h2>FAQs</h2></div>
+      <details open><summary>Is managed WordPress hosting worth the extra cost?</summary><p>For a site that brings in leads or sales, usually yes. You pay for speed, backups and support that knows WordPress, which saves time when something breaks.</p></details>
+      <details><summary>Can I move hosts without losing rankings?</summary><p>Yes, if every URL stays the same and the new host is at least as fast. Check speed and Search Console for a few weeks after the move.</p></details>
+    </div>
+    <div class="src"><div class="sec-h"><span>Evidence</span><h2>Sources</h2></div>
+      <ol><li><a href="#">WordPress.org, Hosting requirements</a></li><li><a href="#">Google Search Central, Core Web Vitals</a></li><li><a href="#">Each host's published pricing pages, checked 1 Oct 2026</a></li></ol>
+    </div>
+  </section>
+
+  <aside class="author" aria-label="About the author"><span class="av" aria-hidden="true">J</span><div><p class="nm">Jamil Ahmed</p><p class="role">Founder and CEO, Reinforce Lab</p><p>Pharmacist, SEO and AI search consultant, and Semrush Ambassador.</p></div></aside>
+</div>
+
+<script>
+(function(){
+  var tb=document.querySelector('#ct tbody'), btns=[].slice.call(document.querySelectorAll('#ct thead button'));
+  btns.forEach(function(b){ b.addEventListener('click',function(){
+    var k=b.dataset.k, cur=b.getAttribute('aria-sort'), dir=cur==='ascending'?'descending':(cur==='descending'?'ascending':(k==='score'?'descending':'ascending'));
+    btns.forEach(function(x){x.removeAttribute('aria-sort');}); b.setAttribute('aria-sort',dir);
+    var rows=[].slice.call(tb.rows); rows.sort(function(a,c){var d=parseFloat(a.dataset[k])-parseFloat(c.dataset[k]);return dir==='ascending'?d:-d;});
+    rows.forEach(function(r){tb.appendChild(r);});
+  });});
+  var picks=[].slice.call(document.querySelectorAll('.pick')), chips=[].slice.call(document.querySelectorAll('#sl a'));
+  function cur(){ var c=-1; picks.forEach(function(p,i){ if(p.getBoundingClientRect().top<innerHeight*0.4) c=i; });
+    chips.forEach(function(a,i){ a.classList.toggle('on',i===c); if(i===c){ a.setAttribute('aria-current','true'); } else a.removeAttribute('aria-current'); }); }
+  addEventListener('scroll',cur,{passive:true}); cur();
+})();
+</script>

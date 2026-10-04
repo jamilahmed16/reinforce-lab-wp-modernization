@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-086 | Best / List template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
 | D-085 | How-To template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the How-To template") | this file |
 | D-084 | Founder bio: drafts for review | 4 Oct | DEFERRED until the blog templates are finished | this file |
 | D-083 | GitHub navigation: README, folder guides, generated site map | 4 Oct | DONE | this file |
@@ -142,6 +143,26 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-086 · Best / List template: design mockup v1 for review
+**Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S REVIEW (Jamil: "yes, go ahead with the Best/List mockup"; D-077 process)
+
+**Mockup:** `claude/design-previews/blog-list-template-mockup.html`, published privately (claude.ai artifact "Best/List Template Mockup"). Product names, scores and prices in it are placeholders, marked as such on the page.
+
+**Design: a shortlist board**, different from the Guide (book) and How-To (workbench):
+- **Hero with a podium:** the top three picks as podium blocks (Top pick in the middle, raised), each with its label, score and starting price. Two chips only (Best / List + category). "Updated" date shown in green, since freshness matters for list posts.
+- **Method strip:** hosts tested, weeks measured, criteria; the score weighting as one proportional bar; the date prices were checked; the affiliate disclosure.
+- **Sticky shortlist bar:** every pick with rank and score, the current one highlighted while scrolling, and "Compare all".
+- **Comparison table:** sortable by rank, score and price; top pick row highlighted; scrolls inside its own box on phones.
+- **One spec sheet per pick:** big rank numeral and score plate, badge, "Best for", verdict, score breakdown bars per criterion (the overall score is the weighted sum, so the numbers always agree), what we liked / what could be better (drawn icons, no emoji), price, refund window, data centres, "Skip it if", visit button (`rel="sponsored nofollow"`) and the price-checked date.
+- **The light in-article service CTA** (same pattern as Guide and How-To), after pick 2.
+- **Pick by what you need:** four "If ... pick ..." cards linking to the pick.
+- **Also considered** (with the reason each was left out), **How we chose**, FAQs and sources, author box.
+
+**Checks:** `copy-check.py` 0 issues; desktop 1440 and phone 390 with no horizontal scroll. Fixed before publishing: hero alignment and cut-off weighting labels.
+**When built:** ItemList schema (already in the base), one Product per pick is not planned because the scores are our editorial ranking, not reviews of each product.
 
 ---
 
