@@ -20,7 +20,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
-| D-094 | Industry template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
+| D-095 | Industry template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Industry template") | this file |
+| D-094 | Industry template: design mockup v1 for review | 4 Oct | APPROVED, built as D-095 | this file |
 | D-093 | Explainer template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Explainer template") | this file |
 | D-092 | Explainer template: design mockup v1 for review | 4 Oct | APPROVED, built as D-093 | this file |
 | D-091 | Comparison template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Comparison template") | this file |
@@ -151,6 +152,28 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-095 · Industry template built on `.online` from the approved mockup
+**Date:** 4 October 2026 · **Status:** DONE (Jamil: "approved, build the Industry template")
+
+**Files:** new `blog/reinforce-post-industry.php` (added to the loader); `blog/reinforce-post.php` hands Industry posts to `rl_industry_render()`; the old industry boxes, fields and schema were removed from `blog/reinforce-post-types.php` (no posts existed, so no data was affected). `rl_pt_industries()` stays there because Case Study uses it too. Keys `rl_i_industry` and `rl_i_rules` are kept.
+
+**How an editor writes an Industry post:**
+- **Cover:** industry (one of the 8; names the sector on the cover and fills the industry card), written for, **reviewed for accuracy by** (`Name, qualification`; only a real reviewer who checked the post; empty hides it), markets covered.
+- **Sector at a glance:** up to 4, `Label | Headline | One line`.
+- **Sector rules:** `Rule | Market | What it means for search`, numbered R1, R2 automatically, with an editable note underneath (default "General guidance, not legal or regulatory advice.").
+- **Buyer journey:** up to 4 stages, `Stage | Who searches | Question one; Question two | Content that answers`.
+- **Where to start:** up to 6 moves, `Move | What to do | Impact 1 to 3 | Effort 1 to 3`; the heading counts them ("Five moves, in order").
+- **What works / What to avoid** lines; the light CTA (after the buyer journey) links to the chosen service, or to the industry page when no service is chosen.
+- **Body:** text before the first H2 is the intro; H2 sections show after the buyer journey.
+- **Industry card:** the industry name, summary, page link and its first three services, read from the same industry data the industry pages use (`rl_ind_data()`), so it stays in step with them.
+
+**Schema:** the article's `about` is the industry; when a reviewer is named the WebPage gets `reviewedBy` and `lastReviewed`. If the reviewer is Jamil, `reviewedBy` points to his existing Yoast Person record; anyone else is added as a Person with their qualification as job title. Verified in memory: reviewedBy = Jamil's Person id, about = Pharmaceutical & Life Sciences.
+
+**Checks:** in-memory preview with the mockup's pharma content (nothing saved, F-003): no PHP notices; desktop 1440 and phone 390 with no horizontal scroll; `copy-check.py` 0 issues on the file and the rendered page; `rl.py parity` 42 files, 0 differences; live blog and Pharmaceutical industry pages still 390 wide.
+**Fixed during the build:** the cover band class renamed so it cannot pick up the kit's `.band` section style.
 
 ---
 
