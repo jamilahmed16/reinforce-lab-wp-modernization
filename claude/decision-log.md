@@ -622,6 +622,8 @@ The D-076 per-type sections stay live but are treated as placeholders until each
 
 Sample content only. Awaiting Jamil's review.
 
+**Review 1 (4 Oct):** "Pillar" chip removed. **Chip rule: at most two chips on a post hero, the type plus one main category** (Jamil: "use only two categories as chips"). Mockup v2 published.
+
 ---
 
 ## D-076 · Type-specific sections built for all 11 post types (plus Case Study rule change)
