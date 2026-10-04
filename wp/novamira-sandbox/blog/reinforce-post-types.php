@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - Post type sections
- * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide, How-To, Best / List, Review, Comparison, Explainer and Industry have their own design files (reinforce-post-guide.php, -howto.php, -list.php, -review.php, -comparison.php, -explainer.php, -industry.php).
+ * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide, How-To, Best / List, Review, Comparison, Explainer, Industry and Updates have their own design files (reinforce-post-guide.php, -howto.php, -list.php, -review.php, -comparison.php, -explainer.php, -industry.php, -updates.php).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -52,12 +52,7 @@ add_action('acf/init', function () {
             // Review fields live in reinforce-post-review.php (D-077)
             // Comparison fields live in reinforce-post-comparison.php (D-077)
             // Industry fields live in reinforce-post-industry.php (D-077)
-            // Updates
-            $ta('rl_u_what', 'What changed', 'updates', '', 3),
-            $ta('rl_u_means', 'What it means', 'updates', '', 3),
-            $ta('rl_u_do', 'What to do', 'updates', 'One action per line.', 4),
-            $tx('rl_u_source', 'Official source', 'updates', 'Title | URL'),
-            $ta('rl_u_log', 'Update log', 'updates', 'One per line: YYYY-MM-DD | What was added or corrected', 4),
+            // Updates fields live in reinforce-post-updates.php (D-077)
             // Case Study
             $tx('rl_cs_client', 'Client', 'casestudy', 'The client name, or an anonymised description such as "A UK pharmaceutical manufacturer".'),
             $tf('rl_cs_named', 'Client agreed to be named', 'casestudy', 'Off = the client is shown anonymised.'),
@@ -116,18 +111,6 @@ function rl_pt_svc_link($path) {
 add_action('rl_post_type_sections_before', function ($type, $id, $d) {
     $u = function ($path) { return function_exists('rl_url_by_path') ? rl_url_by_path($path, '') : ''; };
     switch ($type) {
-        case 'updates':
-            $w = rl_pt_m($id, 'rl_u_what'); $m = rl_pt_m($id, 'rl_u_means'); $do = rl_post_lines(get_post_meta($id, 'rl_u_do', true));
-            if ($w !== '' || $m !== '' || $do) {
-                echo '<section class="ptb upd"><p class="t">The update in brief</p><div class="g3">'
-                    . '<div><p class="sub">What changed</p><p>' . esc_html($w) . '</p></div>'
-                    . '<div><p class="sub">What it means</p><p>' . esc_html($m) . '</p></div>'
-                    . '<div><p class="sub">What to do</p>' . rl_pt_ul($do) . '</div></div>';
-                $src = rl_pt_rows(get_post_meta($id, 'rl_u_source', true));
-                if ($src) echo '<p class="srcl">Official source: ' . rl_pt_link($src[0][0], $src[0][1]) . '</p>';
-                echo '</section>';
-            }
-            break;
         case 'casestudy':
             $client = rl_pt_m($id, 'rl_cs_client'); $k = rl_pt_m($id, 'rl_cs_industry');
             $indname = ($k !== '' && function_exists('rl_ind_data') && isset(rl_ind_data()[$k])) ? rl_ind_data()[$k]['name'] : '';
@@ -167,10 +150,6 @@ function rl_pt_minutes_label($m) { $m = (int) round($m); if ($m < 60) return $m 
 /* ---------- after the body ---------- */
 add_action('rl_post_type_sections_after', function ($type, $id, $d) {
     switch ($type) {
-        case 'updates':
-            $log = rl_pt_rows(get_post_meta($id, 'rl_u_log', true));
-            if ($log) { $h = '<dl class="gloss log">'; foreach ($log as $r) { $dt = rl_pt_date($r[0]); $h .= '<dt><time datetime="' . esc_attr($dt) . '">' . esc_html($dt ? date_i18n('j M Y', strtotime($dt)) : $r[0]) . '</time></dt><dd>' . esc_html($r[1]) . '</dd>'; } echo rl_pt_box('log', 'Update log', $h . '</dl>'); }
-            break;
         case 'casestudy':
             $q = rl_pt_m($id, 'rl_cs_quote'); $by = rl_pt_m($id, 'rl_cs_quote_by');
             if ($q !== '') echo '<figure class="ptb quote"><blockquote>' . esc_html($q) . '</blockquote>' . ($by !== '' ? '<figcaption>' . esc_html($by) . '</figcaption>' : '') . '</figure>';

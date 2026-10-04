@@ -40,6 +40,7 @@ foreach ([
     'blog/reinforce-post-list.php',
     'blog/reinforce-post-review.php',
     'blog/reinforce-post-types.php',
+    'blog/reinforce-post-updates.php',
     'blog/reinforce-post.php',
     'services/reinforce-pr.php',
     'saos/reinforce-saos.php',
