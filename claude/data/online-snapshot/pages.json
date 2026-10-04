@@ -914,5 +914,24 @@
    "_yoast_wpseo_metadesc": "Articles on SEO, AI search, content systems and automation from Reinforce Lab, for growth-stage founders and B2B teams who want search to drive revenue."
   },
   "rl_fields": []
+ },
+ {
+  "id": 221,
+  "type": "page",
+  "status": "publish",
+  "title": "Awards",
+  "slug": "awards",
+  "parent": 0,
+  "path": "/awards/",
+  "template": null,
+  "content": "[reinforce_awards]",
+  "excerpt": "",
+  "date": "2026-10-04 19:34:02",
+  "modified": "2026-10-04 19:34:02",
+  "seo": {
+   "_yoast_wpseo_title": "Awards and Recognition | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Reinforce Lab won HackerNoon Startups of The Year 2024 in Dhaka and DesignRush's June 2025 list. Every award links to the page that confirms it."
+  },
+  "rl_fields": []
  }
 ]

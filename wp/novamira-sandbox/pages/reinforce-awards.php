@@ -120,6 +120,7 @@ body.rl-awards-page .fl-page-content,body.rl-awards-page .fl-content,body.rl-awa
 .rl-awards .a-feature .by{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3);margin:0}
 .rl-awards .a-feature h3{font-size:clamp(24px,2.6vw,32px);margin:0}
 .rl-awards .a-feature p{margin:0;font-size:15.5px;color:var(--ink-dim)}
+.rl-awards .a-feature .btn{justify-self:start}
 .rl-awards .a-facts{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;font-family:var(--f-mono);font-size:12px;color:var(--ink-dim);border-top:1px solid var(--line);padding-top:12px}
 .rl-awards .a-facts b{color:var(--ink);font-weight:500}
 .rl-awards .a-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}

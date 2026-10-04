@@ -36,7 +36,7 @@ Full working rules: [`CLAUDE.md`](CLAUDE.md).
 
 | Section | Pages | Code folder |
 |---|---|---|
-| Home, About, Contact | 3 | [`pages/`](wp/novamira-sandbox/pages/) |
+| Home, About, Awards, Contact | 4 | [`pages/`](wp/novamira-sandbox/pages/) |
 | Services hub and service pages | 19 | [`services/`](wp/novamira-sandbox/services/) |
 | Industries hub and 8 industries | 9 | [`industries/`](wp/novamira-sandbox/industries/) |
 | Search Authority OS, Diagnostic, Packages, Agents | 12 | [`saos/`](wp/novamira-sandbox/saos/) |
@@ -57,7 +57,7 @@ wp/
   novamira-sandbox/          theme code, file for file as it is on reinforcelab.online
     reinforce-loader.php     the only file WordPress loads; it loads the rest in order
     core/                    header, footer, shared style kit
-    pages/                   Home, About, Contact
+    pages/                   Home, About, Awards, Contact
     services/                services hub and every service page
     industries/              industries hub and the 8 industry pages
     saos/                    Search Authority OS, Diagnostic, Packages, Agents
@@ -85,8 +85,8 @@ scripts/
 
 ## Current status (4 October 2026)
 
-- **Built on `.online`:** Home, About, Contact, Services hub and all service pages, Industries hub and 8 industries, Search Authority OS, Diagnostic, Packages, Agents, Blog archive, the single-post base with 11 post types, and the Guide, How-To, Best / List, Review, Comparison, Explainer, Industry, Updates, Case Study, Research and Product / Service templates (all blog templates done).
-- **In review:** a separate Awards page mockup (D-105); the About page rebuild waits on facts from Jamil (F-023).
+- **Built on `.online`:** Home, About, Awards, Contact, Services hub and all service pages, Industries hub and 8 industries, Search Authority OS, Diagnostic, Packages, Agents, Blog archive, the single-post base with 11 post types, and the Guide, How-To, Best / List, Review, Comparison, Explainer, Industry, Updates, Case Study, Research and Product / Service templates (all blog templates done).
+- **Awards page live on `.online`** at `/awards/` (D-106). The About page rebuild waits on facts from Jamil (F-023).
 - **Next:** the merge of this branch into `main` (D-084). Then the founder bio and the merge into `main` (D-084).
 - **Migration to reinforcelab.com:** not scheduled. Blocked on the data listed in [migration-and-data-requirements.md](claude/migration-and-data-requirements.md).
 - **Live site and GitHub match:** checked with `rl.py parity` (0 differences).

@@ -13,12 +13,13 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 |---|---|---|---|---|---|
 | 33 | Home | [/](https://reinforcelab.online/) | publish | [`pages/reinforce-home.php`](../wp/novamira-sandbox/pages/reinforce-home.php) | AI Growth Systems for Search & Automation \| Reinforce Lab |
 
-## Company (2)
+## Company (3)
 
 | ID | Page | URL | Status | Renders from | SEO title |
 |---|---|---|---|---|---|
 | 218 | About | [/about-us/](https://reinforcelab.online/about-us/) | publish | [`pages/reinforce-about.php`](../wp/novamira-sandbox/pages/reinforce-about.php) | About Reinforce Lab \| AI Growth Systems Company |
 | 219 | Contact | [/contact-us/](https://reinforcelab.online/contact-us/) | publish | [`pages/reinforce-contact.php`](../wp/novamira-sandbox/pages/reinforce-contact.php) | Contact Reinforce Lab \| Dhaka & Katy, Texas |
+| 221 | Awards | [/awards/](https://reinforcelab.online/awards/) | publish | [`pages/reinforce-awards.php`](../wp/novamira-sandbox/pages/reinforce-awards.php) | Awards and Recognition \| Reinforce Lab |
 
 ## Services (19)
 

@@ -20,7 +20,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
-| D-105 | Separate Awards page (About stays separate): design mockup v1 for review | 4 Oct | AWAITING REVIEW; new URL needs approval | this file |
+| D-106 | Awards page built on `.online` at `/awards/` (page 221) | 4 Oct | DONE (Jamil: "use /awards/, drop the amber items, build it") | this file |
+| D-105 | Separate Awards page (About stays separate): design mockup v1 for review | 4 Oct | APPROVED, built as D-106 | this file |
 | F-023 | Reputation and recognition research: one independently verified award (HackerNoon, Dhaka 2024), conflicting public facts | 4 Oct | `[VERIFIED where marked; rest SELF-REPORTED]` | this file |
 | D-104 | Founder bio for the author box: Jamil's own wording, applied on `.online` | 4 Oct | DONE (Jamil: "Like this now modify this") | this file |
 | D-103 | Product / Service template built on `.online`: all blog templates done | 4 Oct | DONE (Jamil: "approved, build the Product / Service template") | this file |
@@ -166,8 +167,30 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 ---
 
+## D-106 · Awards page built on `.online` at `/awards/` (page 221)
+**Date:** 4 October 2026 · **Status:** DONE (Jamil: "use /awards/, drop the amber items, build it"; CEO Monthly: "eliminate")
+
+- **URL:** `/awards/`, a new top-level page. **APPROVED: NEW URL** by Jamil (rule 2). Not a production URL; nothing changes on `reinforcelab.com`. Breadcrumb Home › About › Awards.
+- **Created:** one guarded call (aborted if `blog_public` ≠ 0, if a page existed at `awards`, or if the shortcode was missing). Title "Awards", content `[reinforce_awards]`, author Jamil.
+- **Yoast:** title "Awards and Recognition | Reinforce Lab"; meta "Reinforce Lab won HackerNoon Startups of The Year 2024 in Dhaka and DesignRush's June 2025 list. Every award links to the page that confirms it." (144 characters).
+- **File:** new `wp/novamira-sandbox/pages/reinforce-awards.php` (added to the loader after About). Shared kit (D-044); no hero animation (company page, like About, D-039).
+- **Content: only VERIFIED items from F-023, each with a source link.**
+  - **Featured award:** HackerNoon Startups of The Year 2024, winner in Dhaka.
+  - **Cards:** DesignRush Best Digital Marketing Agencies of June 2025; HackerNoon 11th in Marketing worldwide; HackerNoon honourable mentions in Creative Agency and Media Production; GoodFirms 8th of 442 SEO agencies and 8th of 166 digital marketing companies in Bangladesh (dated October 2026); HackerNoon Startups of the Week.
+  - **Partners:** Semrush Agency Partner. **WP Engine Agency Partner** is confirmed but appears only when the option `rl_awards_wpengine_url` holds Jamil's partner page link (not yet supplied), so every card links to a source.
+  - **Reviews:** Google 4.6 from 8 reviews; directory profiles (Clutch, GoodFirms, DesignRush, HackerNoon).
+  - **Press:** Tech Cloud Ltd and Notionhive lists (labelled "Mention by another agency"), our EIN Presswire release (labelled "Our press release"), Onalytica interview; a note on why "As seen on" outlet logos are not shown.
+  - Timeline by year, 4 FAQs, 8 sources, CTA to the diagnostic and About.
+- **Dropped, as Jamil decided:** FindBestFirms, GoodFirms Branding, DesignRush Content Marketing (no list found), CEO Monthly (vanity award, F-023). The Semrush Ambassador card was also left out (no Semrush page names Jamil); the title stays in his bio.
+- **Schema:** Yoast WebPage `about` the Organization; the Organization node gets `award` with the four confirmed awards and honours; `FAQPage` (4).
+- **Verified:** HTTP 200; `noindex, nofollow`; 1 H1, 8 H2; no `href="#"` inside the page content; schema as above; no PHP notices; `copy-check.py` 0 issues on the file and the live page; desktop 1440 and phone 390 with no horizontal scroll. Sandbox network retries sometimes dropped jQuery, the logo or the kit CSS during screenshots (the same on About); direct requests return 200, and clean runs show no script errors. `rl.py parity` 47 files, 0 differences; snapshot and site map refreshed (50 pages).
+- **Fixed during the build:** the "See it on HackerNoon" button stretched across the feature card.
+- **Not done (needs Jamil):** where the page is linked from (main menu under About, the About page, the footer); the WP Engine and Crunchbase links; the URL Decision Register (xlsx) still needs the new URL added.
+
+---
+
 ## D-105 · Separate Awards page: design mockup v1 for review
-**Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S REVIEW (Jamil: "i want to build a separate Awards Page keeping a separate about page"). **New URL: not yet approved** (rule 2: a slug needs Jamil's approval).
+**Date:** 4 October 2026 · **Status:** APPROVED, built as D-106 (Jamil: "i want to build a separate Awards Page keeping a separate about page"; then "use /awards/, drop the amber items, build it").
 
 **Mockup:** `claude/design-previews/awards-page-mockup.html`, published privately (claude.ai artifact "Awards Page Mockup"). Content comes only from F-023.
 
