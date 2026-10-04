@@ -88,7 +88,8 @@ function rl_list_picks($id) {
     unset($p);
     return $cache[$id] = $out;
 }
-function rl_list_num($x) { return rtrim(rtrim(number_format((float) $x, 1), '0'), '.'); }
+function rl_list_num($x) { return number_format((float) $x, 1); }
+function rl_list_pct($x) { return rtrim(rtrim(number_format((float) $x, 1), '0'), '.'); }
 
 /* ---------- render (called from rl_post_output inside the loop) ---------- */
 function rl_list_render($c) {
@@ -167,7 +168,7 @@ function rl_list_render($c) {
 <section class="l-method" aria-label="How we ranked">
   <div class="wrap row">
     <?php if ($facts) { ?><div class="facts"><?php foreach ($facts as $f) echo '<div><b>' . esc_html($f[0]) . '</b><span>' . esc_html($f[1]) . '</span></div>'; ?></div><?php } ?>
-    <?php if ($crit) { ?><div class="wb"><span class="wlab">How the score is weighted</span><div class="wbar"><?php foreach ($crit as $cr) { $pc = rl_list_num($cr[1] / $tw * 100); echo '<span style="flex:' . esc_attr($cr[1]) . '"><b>' . esc_html($pc) . '%</b>' . esc_html($cr[0]) . '</span>'; } ?></div></div><?php } ?>
+    <?php if ($crit) { ?><div class="wb"><span class="wlab">How the score is weighted</span><div class="wbar"><?php foreach ($crit as $cr) { $pc = rl_list_pct($cr[1] / $tw * 100); echo '<span style="flex:' . esc_attr($cr[1]) . '"><b>' . esc_html($pc) . '%</b>' . esc_html($cr[0]) . '</span>'; } ?></div></div><?php } ?>
     <?php if ($checked_h || $method) { ?><div class="checked"><?php if ($checked_h) { ?><span>Prices checked</span><b><?php echo esc_html($checked_h); ?></b><?php } ?><?php if ($method) { ?><a href="#how">How we tested</a><?php } ?></div><?php } ?>
   </div>
   <?php if ($aff) { ?><div class="wrap"><p class="disc"><b>Disclosure:</b> some links on this page are affiliate links. If you buy through them we may earn a commission, at no extra cost to you. It does not change the ranking.</p></div><?php } ?>
@@ -232,7 +233,7 @@ function rl_list_render($c) {
         <?php if ($p['verdict'] !== '') { ?><p class="vd"><?php echo esc_html($p['verdict']); ?></p><?php } ?>
         <?php if ($p['more'] !== '') { ?><div class="l-prose more"><?php echo wp_kses_post(wpautop($p['more'])); ?></div><?php } ?>
         <?php if ($crit && count($p['scores']) >= count($crit)) { ?>
-        <div class="bks" aria-label="Score breakdown"><?php foreach ($crit as $ci => $cr) echo '<div class="br"><span>' . esc_html($cr[0]) . ' <small>' . esc_html(rl_list_num($cr[1] / $tw * 100)) . '%</small></span><span class="bt" aria-hidden="true"><i style="width:' . esc_attr($p['scores'][$ci] * 10) . '%"></i></span><b>' . esc_html(rl_list_num($p['scores'][$ci])) . '</b></div>'; ?></div>
+        <div class="bks" aria-label="Score breakdown"><?php foreach ($crit as $ci => $cr) echo '<div class="br"><span>' . esc_html($cr[0]) . ' <small>' . esc_html(rl_list_pct($cr[1] / $tw * 100)) . '%</small></span><span class="bt" aria-hidden="true"><i style="width:' . esc_attr($p['scores'][$ci] * 10) . '%"></i></span><b>' . esc_html(rl_list_num($p['scores'][$ci])) . '</b></div>'; ?></div>
         <?php } ?>
         <?php if ($p['pros'] || $p['cons']) { ?>
         <div class="pc">
@@ -400,7 +401,7 @@ add_action('wp_head', function () {
 .rl-list .pf{font-size:13.5px;color:var(--ink-dim)}
 .rl-list .l-feat{margin-top:0;margin-bottom:clamp(28px,4vw,44px)}
 .rl-list .l-feat img{display:block;width:100%;height:auto;border:1px solid var(--line)}
-.rl-list .l-method{border-block:1px solid var(--line-2);background:rgba(14,12,13,.7)}
+.rl-list .l-method{padding-block:0;border-block:1px solid var(--line-2);background:rgba(14,12,13,.7)}
 .rl-list .l-method .row{display:flex;flex-wrap:wrap;gap:18px clamp(18px,3vw,40px);align-items:center;padding-block:18px}
 .rl-list .l-method .wb{flex:1 1 360px;min-width:0}
 .rl-list .facts{display:flex;gap:26px}
@@ -455,7 +456,7 @@ add_action('wp_head', function () {
 .rl-list .l-table thead button::after{content:"";width:0;height:0;border:4px solid transparent;border-top-color:var(--ink-faint);margin-top:4px}
 .rl-list .l-table thead button[aria-sort="ascending"]::after{border-top-color:transparent;border-bottom-color:var(--red-3);margin-top:-4px}
 .rl-list .l-table thead button[aria-sort="descending"]::after{border-top-color:var(--red-3)}
-.rl-list .l-table tbody th{color:var(--ink);font-weight:600}
+.rl-list .l-table tbody th{color:var(--ink);font-family:var(--f-body);font-size:15px;font-weight:600;letter-spacing:0;text-transform:none}
 .rl-list .l-table tbody th a{text-decoration:none;color:var(--ink)}
 .rl-list .l-table tbody tr:last-child>*{border-bottom:0}
 .rl-list .l-table tr.top{background:linear-gradient(90deg,rgba(153,0,0,.2),transparent 70%)}

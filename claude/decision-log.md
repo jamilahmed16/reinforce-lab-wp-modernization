@@ -20,7 +20,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
-| D-086 | Best / List template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
+| D-087 | Best / List template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Best/List template") | this file |
+| D-086 | Best / List template: design mockup v1 for review | 4 Oct | APPROVED, built as D-087 | this file |
 | D-085 | How-To template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the How-To template") | this file |
 | D-084 | Founder bio: drafts for review | 4 Oct | DEFERRED until the blog templates are finished | this file |
 | D-083 | GitHub navigation: README, folder guides, generated site map | 4 Oct | DONE | this file |
@@ -143,6 +144,27 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-087 · Best / List template built on `.online` from the approved mockup
+**Date:** 4 October 2026 · **Status:** DONE (Jamil: "approved, build the Best/List template")
+
+**Files:** new `blog/reinforce-post-list.php` (added to the loader after the How-To file); `blog/reinforce-post.php` hands list posts to `rl_list_render()`; the old list boxes, fields and ItemList code were removed from `blog/reinforce-post-types.php` (no posts existed, so no data was affected).
+
+**How an editor writes a Best / List post:**
+- **Picks** are an ACF PRO repeater, in ranked order. Per pick: name, badge, best for, verdict, scores (one per criterion, comma separated), overall score (only when there are no criteria), price from, what we liked, what could be better, key facts (`Label | Value`; the first one is also a table column), skip it if, visit link, more detail (optional longer notes).
+- **Scoring criteria:** `Criterion | Weight` lines. The overall score is calculated as the weighted average of the pick's scores, so the numbers on the page always agree.
+- **Method strip:** up to 3 facts (`Number | Label`), prices checked date, affiliate switch (shows the disclosure and marks visit links `rel="sponsored nofollow"`).
+- **Pick by what you need** (`Need | Pick name | Why`, linked to the pick by name), **Also considered** (`Name | Reason`), **How we chose** (up to 3, `Heading | Text`), the in-article CTA (service, after which pick, headline, one line, button), and the "What the items are" label for the table heading.
+- **Body:** text before the first H2 is the intro under the short answer; H2 sections show after "Pick by what you need" as further reading.
+
+**Behaviour:** podium of the top three (Top pick raised in the middle; stacks on phones), sticky shortlist bar under the header with the current pick highlighted, comparison table sortable by rank, score and price (scrolls inside its own box on phones).
+
+**Schema:** ItemList of the picks (name and `#pick-N` url) plus the base BlogPosting, Person and FAQPage. No per-pick Review or rating (D-086 recommendation: the scores are an editorial ranking).
+
+**Checks:** in-memory preview with the mockup's placeholder data (nothing saved, F-003): schema nodes Article/BlogPosting, Person, FAQPage, ItemList; no PHP notices; desktop 1440 and phone 390 with no horizontal scroll; `copy-check.py` 0 issues on the file and the rendered page; `rl.py parity` 38 files, 0 differences; live blog and Website Maintenance pages still 390 wide.
+**Fixed during the build:** the kit's section padding left a gap above the method strip; the kit's table-header style leaked into the pick names in the table; scores now always show one decimal (9.0, not 9).
 
 ---
 

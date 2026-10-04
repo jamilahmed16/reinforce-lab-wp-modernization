@@ -72,7 +72,8 @@ lines = [
     'Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinforce-post.php) '
     '(all types), [`blog/reinforce-post-types.php`](../wp/novamira-sandbox/blog/reinforce-post-types.php) '
     '(per-type fields), [`blog/reinforce-post-guide.php`](../wp/novamira-sandbox/blog/reinforce-post-guide.php) (Guide), '
-    '[`blog/reinforce-post-howto.php`](../wp/novamira-sandbox/blog/reinforce-post-howto.php) (How-To).',
+    '[`blog/reinforce-post-howto.php`](../wp/novamira-sandbox/blog/reinforce-post-howto.php) (How-To), '
+    '[`blog/reinforce-post-list.php`](../wp/novamira-sandbox/blog/reinforce-post-list.php) (Best / List).',
     '',
 ]
 for g in ORDER:
