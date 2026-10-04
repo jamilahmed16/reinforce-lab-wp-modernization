@@ -14,6 +14,7 @@ Back to [project documents](../README.md).
 | [blog-industry-template-mockup.html](blog-industry-template-mockup.html) | Approved, built (D-095) | [`blog/reinforce-post-industry.php`](../../wp/novamira-sandbox/blog/reinforce-post-industry.php) |
 | [blog-updates-template-mockup.html](blog-updates-template-mockup.html) | Approved, built (D-097) | [`blog/reinforce-post-updates.php`](../../wp/novamira-sandbox/blog/reinforce-post-updates.php) |
 | [blog-casestudy-template-mockup.html](blog-casestudy-template-mockup.html) | Approved, built (D-099) | [`blog/reinforce-post-casestudy.php`](../../wp/novamira-sandbox/blog/reinforce-post-casestudy.php) |
+| [blog-research-template-mockup.html](blog-research-template-mockup.html) | Awaiting review (D-100) | not built yet |
 | [search-authority-os-landing.html](search-authority-os-landing.html) | Built | [`saos/reinforce-saos.php`](../../wp/novamira-sandbox/saos/reinforce-saos.php) |
 | [search-authority-diagnostic.html](search-authority-diagnostic.html) | Built | [`saos/reinforce-diagnostic.php`](../../wp/novamira-sandbox/saos/reinforce-diagnostic.php) |
 | [packages.html](packages.html) | Built | [`saos/reinforce-packages.php`](../../wp/novamira-sandbox/saos/reinforce-packages.php) |

@@ -1,0 +1,438 @@
+<title>Research Template Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a published report. A study card beside the title (report number, version, sample, period, method, who checked it, data and citation buttons), the headline number, key findings as a numbered ledger with a link for each, numbered figures with source, table view and CSV, the method in four steps with definitions and limits, what this means by reader, the data and citation panel, version history with corrections, related studies. Dark only: it is the Reinforce Lab site (D-013). */
+:root{
+  --bg:#121011; --bg-2:#0e0c0d; --panel:#1a1617; --panel-2:#211c1d;
+  --ink:#f2eeee; --ink-dim:#b8b0b1; --ink-faint:#7f7778;
+  --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
+  --red:#990000; --red-2:#c21a1a; --red-3:#e23b3b; --red-line:rgba(226,59,59,.38); --ok:#3fa36b; --ok-line:rgba(63,163,107,.45); --amber:#d39b3a;
+  --f-display:"Oswald","Arial Narrow",sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1280px; --g:clamp(16px,3vw,32px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink-dim);font-family:var(--f-body);font-size:16px;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;background-position:-1px -1px}
+a{color:var(--ink)}
+:focus-visible{outline:2px solid var(--red-3);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--g)}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);margin:0;line-height:1.04;text-wrap:balance}
+.ic{width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square}
+.sample{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);border:1px dashed rgba(211,155,58,.6);padding:1px 6px;white-space:nowrap}
+
+.mocknote{background:var(--red);color:#fff;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-align:center;padding:7px var(--g)}
+.chrome{border-bottom:1px solid var(--line-2);background:rgba(18,16,17,.9)}
+.chrome .wrap{display:flex;justify-content:space-between;align-items:center;height:62px;gap:16px}
+.logo{font-family:var(--f-display);font-weight:700;letter-spacing:.04em;color:var(--ink);font-size:18px;text-transform:uppercase}
+.logo b{color:var(--red-3)}
+.chrome nav{display:flex;gap:22px;font-family:var(--f-display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.chrome nav span.on{color:var(--ink)}
+.cta-s{font-family:var(--f-display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid var(--red-2);padding:9px 14px;background:rgba(153,0,0,.35)}
+
+/* header + file card */
+.crumbs{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);padding-top:26px}
+.crumbs a{color:var(--ink-faint);text-decoration:none}
+.hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);gap:clamp(28px,5vw,60px);align-items:start;padding-block:clamp(24px,4vw,40px) 0}
+.kicker{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+.kind{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:var(--red);padding:6px 10px}
+.cat{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:5px 10px}
+.hero h1{font-size:clamp(34px,4.6vw,60px);line-height:1}
+.hero h1 em{font-style:normal;color:var(--red-3)}
+.stand{font-size:clamp(17px,1.5vw,19px);line-height:1.55;margin:18px 0 0;max-width:640px}
+.byline{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);align-items:center}
+.byline .who{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.av{width:34px;height:34px;border:1px solid var(--red-line);display:grid;place-items:center;font-family:var(--f-display);font-size:15px;color:var(--ink);background:var(--bg-2)}
+.byline b{color:var(--ink-dim);font-weight:500}
+
+/* main */
+.main{max-width:900px;margin:0 auto;padding-block:clamp(34px,5vw,52px) 10px}
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:46px 0 16px}
+.sec-h span{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3)}
+.sec-h h2{font-size:clamp(24px,2.8vw,30px)}
+.answer{border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px 24px;margin-bottom:24px}
+.answer .t{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 8px}
+.answer p{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
+.prose p{font-size:17.5px;line-height:1.75;margin:0 0 1.1em}
+.prose strong{color:var(--ink);font-weight:600}
+
+/* CTA */
+.icta{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 28px;align-items:center;margin:40px 0 0;padding:20px 0 20px 20px;border-top:1px solid var(--red-line);border-bottom:1px solid var(--red-line);border-left:3px solid var(--red-2);background:linear-gradient(90deg,rgba(153,0,0,.12),transparent 70%)}
+.icta .lbl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 6px}
+.icta .hd{font-family:var(--f-display);font-weight:600;text-transform:uppercase;font-size:clamp(19px,2vw,22px);line-height:1.15;color:var(--ink);margin:0 0 6px}
+.icta .csub{margin:0;font-size:15px}
+.act2{display:grid;gap:8px;justify-items:start;padding-right:20px}
+.go2{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.07em;font-size:14px;text-decoration:none;color:#fff;background:var(--red);border:1px solid var(--red-2);padding:12px 18px;white-space:nowrap}
+.alt{font-size:13.5px;color:var(--ink-faint);text-decoration:none;border-bottom:1px solid var(--line-2)}
+
+/* back matter */
+.back{border-top:1px solid var(--line-2);margin-top:50px;padding-block:44px 10px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
+.back .sec-h{margin-top:0}
+.faq details{border:1px solid var(--line);background:var(--panel);margin-bottom:8px}
+.faq summary{cursor:pointer;list-style:none;padding:15px 18px;font-family:var(--f-display);text-transform:uppercase;font-size:15px;color:var(--ink);display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red-3);font-family:var(--f-mono)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:0;padding:0 18px 15px;font-size:15px}
+.src ol{margin:0;padding-left:1.4em;font-size:14.5px} .src li{padding:6px 0;color:var(--ink-faint)}
+.src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.author .av{width:72px;height:72px;font-size:28px}
+.author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
+.author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}
+.author p{margin:0 0 8px;font-size:15px}
+
+
+
+/* study card (right of the title) */
+.study{border:1px solid var(--line-2);background:linear-gradient(180deg,var(--panel),var(--bg-2))}
+.study .sh{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line-2);background:repeating-linear-gradient(135deg,transparent 0 10px,rgba(255,255,255,.018) 10px 20px)}
+.study .sh span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+.study .sh .ver{color:var(--ink);border:1px solid var(--line-2);padding:2px 8px;background:var(--bg-2)}
+.study dl{margin:0;padding:4px 18px 8px}
+.study dl div{display:grid;grid-template-columns:104px minmax(0,1fr);gap:12px;padding:9px 0;border-top:1px solid var(--line);font-size:14px}
+.study dl div:first-child{border-top:0}
+.study dt{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);padding-top:3px}
+.study dd{margin:0;color:var(--ink)}
+.study dd small{display:block;color:var(--ink-faint);font-size:12.5px}
+.study .acts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line-2)}
+.study .acts a,.study .acts button{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 10px;font-family:var(--f-display);font-size:13px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;color:var(--ink);background:transparent;border:0;cursor:pointer}
+.study .acts a{background:var(--red);color:#fff}
+.study .acts button{border-left:1px solid var(--line-2)}
+.study .acts button:hover{background:var(--panel-2)}
+
+/* headline number */
+.head-stat{margin-top:clamp(30px,4vw,44px);display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px 30px;align-items:center;border-top:1px solid var(--red-line);border-bottom:1px solid var(--red-line);padding:22px 0}
+.head-stat .big{font-family:var(--f-display);font-weight:600;font-size:clamp(64px,8vw,104px);line-height:.85;color:var(--red-3)}
+.head-stat p{margin:0;color:var(--ink);font-size:clamp(18px,1.8vw,22px);line-height:1.45;max-width:640px}
+.head-stat .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);display:block;margin-bottom:6px}
+.head-stat .n{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);text-align:right;line-height:1.7}
+
+/* key findings ledger */
+.findings{list-style:none;margin:0;padding:0;border:1px solid var(--line-2);counter-reset:f}
+.fd{display:grid;grid-template-columns:150px minmax(0,1fr) auto;gap:6px 22px;align-items:start;padding:18px 20px;border-top:1px solid var(--line);position:relative;scroll-margin-top:90px}
+.fd:first-child{border-top:0}
+.fd:target{background:linear-gradient(90deg,rgba(153,0,0,.16),transparent 70%)}
+.fd .st{font-family:var(--f-display);font-size:38px;line-height:1;color:var(--ink);font-weight:500}
+.fd .st small{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3);margin-top:6px;font-weight:400}
+.fd h3{font-family:var(--f-body);text-transform:none;letter-spacing:0;font-size:18px;font-weight:600;line-height:1.4;margin:0 0 4px}
+.fd p{margin:0;font-size:15px}
+.fd .fig{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.fd .lnk{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);background:none;border:1px solid var(--line-2);padding:5px 8px;cursor:pointer;white-space:nowrap}
+.fd .lnk:hover{color:var(--ink);border-color:var(--red-line)}
+
+/* study at a glance strip */
+.glance{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2);margin:0}
+.glance div{background:var(--bg-2);padding:14px 16px}
+.glance dt{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3)}
+.glance dd{margin:6px 0 0;color:var(--ink);font-size:14.5px;line-height:1.5}
+
+/* figures */
+.figure{margin:30px 0 0;border:1px solid var(--line-2);background:var(--bg-2);scroll-margin-top:90px}
+.figure .fh2{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;padding:16px 18px 0}
+.figure .no{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--red);padding:3px 8px;align-self:start}
+.figure .fh2 b{font-family:var(--f-display);font-size:19px;text-transform:uppercase;color:var(--ink);font-weight:500;line-height:1.2}
+.figure .fh2 p{grid-column:2;margin:0;font-size:14.5px;color:var(--ink-dim)}
+.figure .plot{position:relative;padding:10px 18px 0}
+.figure svg{display:block;width:100%}
+.figure .tip{position:absolute;pointer-events:none;background:var(--panel-2);border:1px solid var(--line-2);padding:6px 10px;font-family:var(--f-mono);font-size:12px;color:var(--ink);white-space:nowrap;transform:translate(-50%,-115%);opacity:0;transition:opacity .12s}
+.figure .tip b{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);font-weight:500}
+.figure .ff{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 18px;align-items:center;padding:10px 18px 14px;border-top:1px solid var(--line);margin-top:6px}
+.figure .ff .src2{font-family:var(--f-mono);font-size:10.5px;color:var(--ink-faint);margin:0}
+.figure .ff .tools{display:flex;flex-wrap:wrap;gap:8px}
+.figure .ff .tools a,.figure .ff .tools button{background:none;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-dim);text-decoration:none;border:1px solid var(--line-2);padding:4px 8px;cursor:pointer;list-style:none}
+.figure .ff .tools button[aria-expanded="true"]{color:var(--ink);border-color:var(--red-line)}
+.figure table{border-collapse:collapse;margin:0 18px 16px;font-family:var(--f-mono);font-size:12.5px;width:calc(100% - 36px);max-width:520px}
+.figure th,.figure td{border-bottom:1px solid var(--line);padding:5px 8px;text-align:left;color:var(--ink-dim);font-weight:400;background:none}
+.figure td.n{text-align:right;color:var(--ink);font-variant-numeric:tabular-nums}
+
+/* method */
+.steps{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.steps li{background:var(--bg);padding:16px 16px 18px;display:grid;gap:6px;align-content:start}
+.steps .n{font-family:var(--f-display);font-size:30px;line-height:1;color:transparent;-webkit-text-stroke:1.2px var(--red-3);font-weight:700}
+.steps h3{font-family:var(--f-body);text-transform:none;letter-spacing:0;font-size:16px;font-weight:600}
+.steps p{margin:0;font-size:14px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-top:16px}
+.defs,.limits{border:1px solid var(--line-2);padding:16px 18px}
+.defs .k,.limits .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;display:block;margin-bottom:8px}
+.defs .k{color:var(--ink-faint)} .limits .k{color:var(--amber)}
+.limits{border-color:rgba(211,155,58,.35);background:linear-gradient(180deg,rgba(211,155,58,.05),transparent)}
+.defs dl{margin:0}
+.defs dt{color:var(--ink);font-weight:600;font-size:14.5px;margin-top:10px}
+.defs dt:first-child{margin-top:0}
+.defs dd{margin:2px 0 0;font-size:14px}
+.limits ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.limits li{display:grid;grid-template-columns:14px 1fr;gap:8px;font-size:14px;color:var(--ink-dim)}
+.limits li::before{content:"";width:8px;height:8px;border:1.5px solid var(--amber);margin-top:6px}
+
+/* what this means */
+.means{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.mn{background:var(--bg);padding:18px 20px;display:grid;gap:6px;align-content:start}
+.mn .k{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3)}
+.mn h3{font-size:17px}
+.mn p{margin:0;font-size:14.5px}
+
+/* data and citation */
+.data{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);border:1px solid var(--line-2);background:var(--panel)}
+.data>div{padding:20px 22px}
+.data>div+div{border-left:1px solid var(--line-2)}
+.data .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);display:block;margin-bottom:10px}
+.dl-file{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:center;text-decoration:none;border:1px solid var(--line-2);background:var(--bg-2);padding:12px 14px}
+.dl-file:hover{border-color:var(--red-line)}
+.dl-file .ext{width:44px;height:52px;border:1px solid var(--red-line);display:grid;place-items:end center;padding-bottom:6px;font-family:var(--f-mono);font-size:10.5px;color:var(--red-3);position:relative}
+.dl-file .ext::before{content:"";position:absolute;top:-1px;right:-1px;width:12px;height:12px;background:var(--panel);border-left:1px solid var(--red-line);border-bottom:1px solid var(--red-line)}
+.dl-file b{display:block;color:var(--ink);font-weight:600;font-size:15px}
+.dl-file span{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint)}
+.lic{margin:12px 0 0;font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.cite-tabs{display:flex;gap:0;border:1px solid var(--line-2);width:max-content;margin-bottom:10px}
+.cite-tabs button{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;background:none;border:0;color:var(--ink-faint);padding:5px 10px;cursor:pointer}
+.cite-tabs button+button{border-left:1px solid var(--line-2)}
+.cite-tabs button[aria-pressed="true"]{background:var(--red);color:#fff}
+.cite-box{font-family:var(--f-mono);font-size:12.5px;line-height:1.65;color:var(--ink);background:var(--bg-2);border:1px solid var(--line);padding:12px 14px;margin:0;white-space:pre-wrap;word-break:break-word}
+.copy{margin-top:10px;font-family:var(--f-display);font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);background:none;border:1px solid var(--line-2);padding:8px 14px;cursor:pointer}
+.copy:hover{border-color:var(--red-line)}
+
+/* versions */
+.versions{width:100%;border-collapse:collapse;font-size:14px;border:1px solid var(--line-2)}
+.versions th,.versions td{text-align:left;padding:10px 14px;border-top:1px solid var(--line);vertical-align:top;background:none;color:var(--ink-dim);font-weight:400}
+.versions thead th{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);border-top:0;background:var(--bg-2)}
+.versions td:first-child{font-family:var(--f-mono);color:var(--ink);white-space:nowrap}
+.versions td:nth-child(2){font-family:var(--f-mono);white-space:nowrap}
+.versions .cx{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);border:1px solid rgba(211,155,58,.5);padding:1px 6px;margin-right:6px}
+
+/* related research */
+.more{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.rr{background:var(--bg);padding:18px 20px;text-decoration:none;display:grid;gap:8px;align-content:start;transition:background .2s}
+.rr:hover{background:var(--panel)}
+.rr .k{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3)}
+.rr b{font-family:var(--f-display);font-size:19px;text-transform:uppercase;color:var(--ink);font-weight:500;line-height:1.15}
+.rr .r{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint)}
+
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--panel-2);border:1px solid var(--line-2);color:var(--ink);font-family:var(--f-mono);font-size:12px;padding:8px 14px;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.on{opacity:1}
+
+@media(max-width:1000px){
+  .hero{grid-template-columns:1fr}
+  .glance,.steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .more{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .chrome nav{display:none}
+  .head-stat{grid-template-columns:1fr;gap:8px}
+  .head-stat .n{text-align:left}
+  .fd{grid-template-columns:1fr;gap:6px}
+  .fd .lnk{justify-self:start}
+  .glance,.steps,.two,.means,.more,.back{grid-template-columns:1fr}
+  .data{grid-template-columns:1fr} .data>div+div{border-left:0;border-top:1px solid var(--line-2)}
+  .versions td:nth-child(2){white-space:normal}
+  .icta{grid-template-columns:1fr;padding-left:16px} .act2{padding-right:16px}
+  .author{grid-template-columns:1fr}
+  .prose p{font-size:16.5px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<div class="mocknote">DESIGN MOCKUP · RESEARCH TEMPLATE · every figure, finding and sample size here is sample data for layout review, never a real study result</div>
+<header class="chrome"><div class="wrap"><span class="logo">Reinforce <b>/</b> Lab</span><nav aria-label="Site (mockup)"><span>Search Authority OS</span><span>Solutions</span><span>Industries</span><span>Packages</span><span class="on">Blog</span><span>About</span><span>Contact</span></nav><span class="cta-s">Get your diagnostic</span></div></header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="dl" viewBox="0 0 16 16"><path d="M8 2v8M4.5 6.5L8 10l3.5-3.5M3 13h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+  <symbol id="ln" viewBox="0 0 16 16"><path d="M6.5 9.5l3-3M7 4.5l1.5-1.5a2.5 2.5 0 013.5 3.5L10.5 8M9 11.5L7.5 13A2.5 2.5 0 014 9.5L5.5 8" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+</svg>
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="#">Home</a> / <a href="#">Blog</a> / <a href="#">Research</a> / AI search citations study</nav>
+  <section class="hero">
+    <div>
+      <div class="kicker"><span class="kind">Original Research</span><span class="cat">AI Search</span></div>
+      <h1>Which sources AI search tools cite <em>when B2B buyers ask for help</em></h1>
+      <p class="stand">We asked three AI answer tools 400 questions that B2B buyers ask before they choose a supplier, and recorded every source each answer cited.</p>
+      <div class="byline"><span class="who"><span class="av" aria-hidden="true">J</span>Jamil Ahmed</span><span>Published <b>15 Sep 2026</b></span><span>Updated <b>22 Sep 2026</b></span></div>
+    </div>
+    <aside class="study" aria-label="Study at a glance">
+      <div class="sh"><span>Report RL-R-2026-03</span><span class="ver">Version 1.1</span></div>
+      <dl>
+        <div><dt>Sample</dt><dd>1,200 answers <small>400 questions, 3 AI answer tools</small></dd></div>
+        <div><dt>Collected</dt><dd>1 to 31 July 2026</dd></div>
+        <div><dt>Markets</dt><dd>UK and US, English</dd></div>
+        <div><dt>Method</dt><dd>Answers collected by hand, each citation classified by two people</dd></div>
+        <div><dt>Checked by</dt><dd>Second analyst, every classification <small><span class="sample">Sample data</span></small></dd></div>
+      </dl>
+      <div class="acts"><a href="#data"><svg class="ic"><use href="#dl"/></svg>Get the data</a><button type="button" data-goto="cite">Cite this</button></div>
+    </aside>
+  </section>
+
+  <section class="head-stat" aria-label="Headline finding">
+    <span class="big">61%</span>
+    <p><span class="k">Headline finding</span>Six in ten AI answers to B2B buyer questions cited at least one vendor website, not only publishers or review sites.</p>
+    <span class="n">n = 1,200 answers<br><span class="sample">Sample data</span></span>
+  </section>
+</div>
+
+<div class="wrap">
+  <div class="main">
+    <div class="answer"><p class="t">In short</p><p>AI answer tools cite vendor websites more often than many marketers expect, most of all for pricing and shortlist questions. The pages they cite are mostly guides and comparison pages that answer the question in the first paragraph, not product pages.</p></div>
+
+    <div class="sec-h"><span>Results</span><h2>Key findings</h2><span class="sample">Sample data</span></div>
+    <ol class="findings">
+      <li class="fd" id="finding-1"><span class="st">61%<small>Finding 1</small></span><div><h3>Six in ten answers cited at least one vendor website.</h3><p>Industry publications came second (48%) and review sites third (39%). <a class="fig" href="#figure-1">See Figure 1</a></p></div><button class="lnk" type="button" data-copy="#finding-1"><svg class="ic" style="width:11px;height:11px;vertical-align:-1px"><use href="#ln"/></svg> Link</button></li>
+      <li class="fd" id="finding-2"><span class="st">81%<small>Finding 2</small></span><div><h3>Pricing questions cited a vendor website most often.</h3><p>Definition questions cited one least often (38%). <a class="fig" href="#figure-2">See Figure 2</a></p></div><button class="lnk" type="button" data-copy="#finding-2"><svg class="ic" style="width:11px;height:11px;vertical-align:-1px"><use href="#ln"/></svg> Link</button></li>
+      <li class="fd" id="finding-3"><span class="st">2.1&times;<small>Finding 3</small></span><div><h3>Pages that answer the question in the first 100 words were cited 2.1 times as often.</h3><p>Compared with pages on the same topic that put the answer further down.</p></div><button class="lnk" type="button" data-copy="#finding-3"><svg class="ic" style="width:11px;height:11px;vertical-align:-1px"><use href="#ln"/></svg> Link</button></li>
+      <li class="fd" id="finding-4"><span class="st">27%<small>Finding 4</small></span><div><h3>Only 27% of cited vendor pages were product or service pages.</h3><p>The rest were guides, comparison pages and pricing pages.</p></div><button class="lnk" type="button" data-copy="#finding-4"><svg class="ic" style="width:11px;height:11px;vertical-align:-1px"><use href="#ln"/></svg> Link</button></li>
+      <li class="fd" id="finding-5"><span class="st">3.4<small>Finding 5</small></span><div><h3>Each answer cited 3.4 sources on average.</h3><p>One in five answers cited no source at all.</p></div><button class="lnk" type="button" data-copy="#finding-5"><svg class="ic" style="width:11px;height:11px;vertical-align:-1px"><use href="#ln"/></svg> Link</button></li>
+    </ol>
+
+    <div class="sec-h" id="figures"><span>The data</span><h2>What we found</h2></div>
+    <div class="prose"><p>Vendor websites were the most cited source type across all three tools. That held for every question type except definitions, where reference sites and industry publications led.</p></div>
+
+    <figure class="figure" id="figure-1">
+      <div class="fh2"><span class="no">Figure 1</span><b>Share of answers citing each source type</b><p>Vendor websites were cited in more answers than any other source type.</p></div>
+      <div class="plot" data-chart="bars"><svg role="img" aria-label="Horizontal bar chart. Vendor websites 61%, industry publications 48%, review and comparison sites 39%, reference sites 31%, forums and communities 24%, government and standards bodies 12%."></svg><div class="tip" aria-hidden="true"></div></div>
+      <div class="ff"><p class="src2">n = 1,200 answers. An answer can cite more than one source type. <span class="sample">Sample data</span></p><div class="tools"><button type="button" class="tt" aria-expanded="false">Show as a table</button><a href="#data">Download CSV</a><a href="#figure-1" data-copy="#figure-1">Link</a></div></div><table hidden><thead><tr><th>Source type</th><th>Share of answers</th></tr></thead><tbody></tbody></table>
+    </figure>
+
+    <figure class="figure" id="figure-2">
+      <div class="fh2"><span class="no">Figure 2</span><b>Answers citing a vendor website, by question type</b><p>The closer the buyer is to choosing, the more often a vendor site was cited.</p></div>
+      <div class="plot" data-chart="cols"><svg role="img" aria-label="Column chart. Share of answers citing a vendor website: definition questions 38%, how-to 57%, comparison 66%, shortlist 72%, pricing 81%."></svg><div class="tip" aria-hidden="true"></div></div>
+      <div class="ff"><p class="src2">n = 240 answers per question type. <span class="sample">Sample data</span></p><div class="tools"><button type="button" class="tt" aria-expanded="false">Show as a table</button><a href="#data">Download CSV</a><a href="#figure-2" data-copy="#figure-2">Link</a></div></div><table hidden><thead><tr><th>Question type</th><th>Cited a vendor site</th></tr></thead><tbody></tbody></table>
+    </figure>
+
+    <div class="prose" style="margin-top:28px"><p>The vendor pages that were cited had one thing in common: <strong>they answered the buyer's question in plain words near the top</strong>, then backed it up with detail. Product pages written as sales copy were rarely cited, even for questions about that product type.</p></div>
+
+    <div class="sec-h" id="method"><span>Method</span><h2>How we ran the study</h2></div>
+    <dl class="glance" aria-label="Study at a glance">
+      <div><dt>Sample</dt><dd>400 questions, 3 tools, 1,200 answers</dd></div>
+      <div><dt>Period</dt><dd>1 to 31 July 2026</dd></div>
+      <div><dt>Sources</dt><dd>Answers saved as screenshots and text</dd></div>
+      <div><dt>Analysis</dt><dd>Each citation classified twice; disagreements settled by a third person</dd></div>
+    </dl>
+    <ol class="steps">
+      <li><span class="n">1</span><h3>Write the questions</h3><p>400 questions from sales calls, Search Console and forums, across 8 industries.</p></li>
+      <li><span class="n">2</span><h3>Collect the answers</h3><p>Each question asked once in each tool, logged out, from a UK or US location.</p></li>
+      <li><span class="n">3</span><h3>Classify the citations</h3><p>Every cited source put into one of six types by two people working apart.</p></li>
+      <li><span class="n">4</span><h3>Analyse</h3><p>Shares calculated per answer, then split by question type and industry.</p></li>
+    </ol>
+    <div class="two">
+      <div class="defs"><span class="k">Definitions</span><dl><dt>Cited</dt><dd>The answer shows a link to the source or names it.</dd><dt>Vendor website</dt><dd>The website of a company that sells the service in question.</dd><dt>Question type</dt><dd>Definition, how-to, comparison, shortlist or pricing, set before collection.</dd></dl></div>
+      <div class="limits"><span class="k">Limits of this study</span><ul><li>AI answers change from day to day. We asked each question once per tool.</li><li>Questions were in English, for UK and US buyers only.</li><li>We measured citations, not clicks or sales.</li><li>Three tools only. Results may differ in others.</li></ul></div>
+    </div>
+
+    <div class="sec-h"><span>Use it</span><h2>What this means for you</h2></div>
+    <div class="means">
+      <div class="mn"><span class="k">Marketing leads</span><h3>Publish the pages buyers ask about</h3><p>Pricing, comparison and shortlist pages were cited most. If you do not have them, someone else answers for you.</p></div>
+      <div class="mn"><span class="k">SEO and content teams</span><h3>Answer first, then explain</h3><p>Put a plain answer in the first 100 words of each guide, then the detail and evidence.</p></div>
+      <div class="mn"><span class="k">Founders</span><h3>Track how AI tools describe you</h3><p>Ask the questions your buyers ask, every month, and note who gets cited.</p></div>
+    </div>
+
+    <aside class="icta" aria-label="Reinforce Lab service"><div><p class="lbl">Reinforce Lab service · AI Search Optimization</p><p class="hd">Want AI tools to cite your site?</p><p class="csub">We find the questions your buyers ask, check who gets cited today, and build the pages that answer them.</p></div><div class="act2"><a class="go2" href="#">See how it works &rarr;</a><a class="alt" href="#">Or get a free diagnostic first</a></div></aside>
+
+    <div class="sec-h" id="data"><span>Open data</span><h2>Data and citation</h2></div>
+    <div class="data">
+      <div>
+        <span class="k">Dataset</span>
+        <a class="dl-file" href="#"><span class="ext">CSV</span><span><b>ai-citations-b2b-2026.csv</b><span>1,200 rows · 14 columns · 180 KB</span></span></a>
+        <p class="lic">Free to use and share with a link to this page. <span class="sample">Licence to be agreed</span></p>
+      </div>
+      <div id="cite">
+        <span class="k">Cite this research</span>
+        <div class="cite-tabs" role="group" aria-label="Citation style"><button type="button" aria-pressed="true" data-style="plain">Plain</button><button type="button" aria-pressed="false" data-style="apa">APA</button><button type="button" aria-pressed="false" data-style="html">Link</button></div>
+        <pre class="cite-box" id="cite-box"></pre>
+        <button class="copy" type="button" data-copy-cite>Copy citation</button>
+      </div>
+    </div>
+
+    <div class="sec-h"><span>Record</span><h2>Version history</h2></div>
+    <table class="versions">
+      <thead><tr><th>Version</th><th>Date</th><th>What changed</th></tr></thead>
+      <tbody>
+        <tr><td>1.1</td><td>22 Sep 2026</td><td><span class="cx">Correction</span>Figure 2: pricing questions 81%, not 84%. One answer had been counted twice.</td></tr>
+        <tr><td>1.0</td><td>15 Sep 2026</td><td>First published.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <section aria-labelledby="rel-h" style="margin-top:46px">
+    <div class="sec-h" style="margin-top:0"><span>More research</span><h2 id="rel-h">Related studies</h2><span class="sample">Sample data</span></div>
+    <div class="more">
+      <a class="rr" href="#"><span class="k">Technical SEO</span><b>How many blog URLs Google never crawls</b><span class="r">Report RL-R-2026-02 · 40 sites</span></a>
+      <a class="rr" href="#"><span class="k">AI Search</span><b>Do AI answers match Google's top ten?</b><span class="r">Report RL-R-2026-01 · 600 queries</span></a>
+      <a class="rr" href="#"><span class="k">Content</span><b>What makes a B2B guide get linked to</b><span class="r">Report RL-R-2025-04 · 2,000 pages</span></a>
+    </div>
+  </section>
+
+  <section class="back" aria-label="Questions and sources">
+    <div class="faq"><div class="sec-h"><span>Questions</span><h2>FAQs</h2></div>
+      <details open><summary>Can I use these figures?</summary><p>Yes. Quote any finding and link to this page. The dataset is free to download.</p></details>
+      <details><summary>Will you run the study again?</summary><p>Yes, every six months, so changes over time can be compared. Each run gets its own report number.</p></details>
+    </div>
+    <div class="src"><div class="sec-h"><span>Evidence</span><h2>Sources</h2></div>
+      <ol><li><a href="#">The question list and coding guide used for this study</a></li></ol>
+    </div>
+  </section>
+
+  <aside class="author" aria-label="About the author"><span class="av" aria-hidden="true">J</span><div><p class="nm">Jamil Ahmed</p><p class="role">Founder and CEO, Reinforce Lab</p><p>Pharmacist, SEO and AI search consultant, and Semrush Ambassador.</p></div></aside>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var NS='http://www.w3.org/2000/svg', MONO='IBM Plex Mono, monospace', RED='#e23b3b';
+  var sets={
+    bars:{rows:[["Vendor websites",61],["Industry publications",48],["Review and comparison sites",39],["Reference sites",31],["Forums and communities",24],["Government and standards bodies",12]],unit:'of answers'},
+    cols:{rows:[["Definition",38],["How-to",57],["Comparison",66],["Shortlist",72],["Pricing",81]],unit:'cited a vendor site'}
+  };
+  function el(n,a){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  function txt(a,s){var t=el('text',a);t.textContent=s;return t;}
+  document.querySelectorAll('.plot[data-chart]').forEach(function(box){
+    var kind=box.dataset.chart, set=sets[kind], svg=box.querySelector('svg'), tip=box.querySelector('.tip');
+    var tb=box.parentNode.querySelector('tbody'); set.rows.forEach(function(r){var tr=document.createElement('tr');tr.innerHTML='<td>'+r[0]+'</td><td class="n">'+r[1]+'%</td>';tb.appendChild(tr);});
+    function tipAt(x,y,r){tip.innerHTML='<b>'+r[0]+'</b>'+r[1]+'% '+set.unit;tip.style.left=Math.min(Math.max(x,70),box.clientWidth-70)+'px';tip.style.top=y+'px';tip.style.opacity=1;}
+    function draw(){
+      var W=box.clientWidth-36; svg.innerHTML='';
+      if(kind==='bars'){
+        var narrow=W<560, lw=narrow?12:250, rowH=narrow?46:34, H=set.rows.length*rowH+24; svg.setAttribute('viewBox','0 0 '+W+' '+H); svg.style.height=H+'px';
+        var x=function(v){return lw+v/100*(W-lw-44);};
+        [0,25,50,75,100].forEach(function(v){svg.appendChild(el('line',{x1:x(v),x2:x(v),y1:0,y2:H-20,stroke:'rgba(255,255,255,.07)'}));svg.appendChild(txt({x:x(v),y:H-4,'text-anchor':'middle',fill:'#7f7778','font-size':10.5,'font-family':MONO},v+'%'));});
+        set.rows.forEach(function(r,i){
+          var y0=i*rowH, by=narrow?y0+20:y0+8, bh=narrow?16:18;
+          svg.appendChild(txt({x:narrow?0:lw-12,y:narrow?y0+14:by+13,'text-anchor':narrow?'start':'end',fill:'#b8b0b1','font-size':12.5,'font-family':'IBM Plex Sans, sans-serif'},r[0]));
+          var b=el('rect',{x:x(0),y:by,width:x(r[1])-x(0),height:bh,fill:RED,opacity:.9}); svg.appendChild(b);
+          svg.appendChild(txt({x:x(r[1])+6,y:by+bh-4,fill:'#f2eeee','font-size':11.5,'font-family':MONO},r[1]+'%'));
+          var hit=el('rect',{x:0,y:y0,width:W,height:rowH,fill:'transparent'}); svg.appendChild(hit);
+          hit.addEventListener('pointerenter',function(){b.setAttribute('opacity',1);b.setAttribute('stroke','#f2eeee');tipAt(x(r[1])/2+18,by+10,r);});
+          hit.addEventListener('pointerleave',function(){b.setAttribute('opacity',.9);b.removeAttribute('stroke');tip.style.opacity=0;});
+        });
+      } else {
+        var H=W<560?220:250, L=40, B=26, T=20; svg.setAttribute('viewBox','0 0 '+W+' '+H); svg.style.height=H+'px';
+        var y=function(v){return T+(1-v/100)*(H-T-B);}, n=set.rows.length, slot=(W-L)/n, bw=Math.min(64,slot*.56);
+        [0,25,50,75,100].forEach(function(v){svg.appendChild(el('line',{x1:L,x2:W,y1:y(v),y2:y(v),stroke:'rgba(255,255,255,.07)'}));svg.appendChild(txt({x:L-8,y:y(v)+4,'text-anchor':'end',fill:'#7f7778','font-size':10.5,'font-family':MONO},v+'%'));});
+        set.rows.forEach(function(r,i){
+          var cx=L+slot*i+slot/2, b=el('rect',{x:cx-bw/2,y:y(r[1]),width:bw,height:y(0)-y(r[1]),fill:RED,opacity:.9}); svg.appendChild(b);
+          svg.appendChild(txt({x:cx,y:y(r[1])-6,'text-anchor':'middle',fill:'#f2eeee','font-size':11.5,'font-family':MONO},r[1]+'%'));
+          svg.appendChild(txt({x:cx,y:H-6,'text-anchor':'middle',fill:'#b8b0b1','font-size':W<560?10.5:12,'font-family':'IBM Plex Sans, sans-serif'},r[0]));
+          var hit=el('rect',{x:L+slot*i,y:0,width:slot,height:H,fill:'transparent'}); svg.appendChild(hit);
+          hit.addEventListener('pointerenter',function(){b.setAttribute('opacity',1);b.setAttribute('stroke','#f2eeee');tipAt(cx+18,y(r[1])+4,r);});
+          hit.addEventListener('pointerleave',function(){b.setAttribute('opacity',.9);b.removeAttribute('stroke');tip.style.opacity=0;});
+        });
+      }
+    }
+    draw(); var t; addEventListener('resize',function(){clearTimeout(t);t=setTimeout(draw,120);});
+  });
+
+  document.querySelectorAll('.tt').forEach(function(b){b.addEventListener('click',function(){var t=b.closest('.figure').querySelector('table'),o=t.hidden;t.hidden=!o;b.setAttribute('aria-expanded',o?'true':'false');b.textContent=o?'Hide the table':'Show as a table';});});
+  var url='https://reinforcelab.com/blog/ai-search-citations-b2b/';
+  var cites={plain:'Reinforce Lab (2026). Which sources AI search tools cite when B2B buyers ask for help. Report RL-R-2026-03, version 1.1. '+url,
+    apa:'Ahmed, J. (2026, September 15). Which sources AI search tools cite when B2B buyers ask for help (Report RL-R-2026-03, Version 1.1). Reinforce Lab. '+url,
+    html:'<a href="'+url+'">Reinforce Lab study of AI search citations (2026)</a>'};
+  var box=document.getElementById('cite-box'), style='plain'; box.textContent=cites.plain;
+  document.querySelectorAll('.cite-tabs button').forEach(function(b){b.addEventListener('click',function(){style=b.dataset.style;box.textContent=cites[style];document.querySelectorAll('.cite-tabs button').forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});});});
+  var toast=document.getElementById('toast'), tt;
+  function say(s){toast.textContent=s;toast.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('on');},1600);}
+  function copy(s,msg){try{navigator.clipboard.writeText(s).then(function(){say(msg);},function(){say(msg);});}catch(e){say(msg);}}
+  document.querySelector('[data-copy-cite]').addEventListener('click',function(){copy(cites[style],'Citation copied');});
+  document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();var h=b.dataset.copy;history.replaceState(null,'',h);copy(url+h,'Link copied');});});
+  document.querySelector('[data-goto="cite"]').addEventListener('click',function(){document.getElementById('cite').scrollIntoView({block:'center'});});
+})();
+</script>

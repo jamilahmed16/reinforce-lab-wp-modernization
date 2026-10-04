@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-100 | Research template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
 | D-099 | Case Study template built on `.online` from the approved mockup (v2) | 4 Oct | DONE (Jamil: "approved, build the Case Study template") | this file |
 | D-098 | Case Study template: design mockup v1 and v2 (7 additions) for review | 4 Oct | APPROVED, built as D-099 | this file |
 | D-097 | Updates template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Updates template") | this file |
@@ -156,6 +157,30 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-100 · Research template: design mockup v1 for review
+**Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S REVIEW (Jamil: "yes, go ahead with the Research mockup"; D-077 process)
+
+**Mockup:** `claude/design-previews/blog-research-template-mockup.html`, published privately (claude.ai artifact "Research Template Mockup"). Sample topic: which sources AI answer tools cite for B2B buyer questions. **Every figure, finding and sample size is sample data**: the page banner says so and each data block carries a "Sample data" tag. The AI tools are not named, so no claim is made about a real product.
+
+**Design: a published report**, different from the nine built templates:
+- **Header:** two chips (Original Research + category), the title with its point in red, standfirst, byline with published and updated dates.
+- **Study card** beside the title: report number (e.g. RL-R-2026-03), version, sample, collection period, markets, method, who checked the work, and two buttons: "Get the data" and "Cite this".
+- **Headline number:** the one figure the study is known for, with its sample size.
+- **Key findings:** a numbered ledger of up to 5, each a stat plus one plain sentence that can be quoted on its own, a link to its figure, and a "Link" button that copies a link to that finding (each finding has its own anchor).
+- **Numbered figures:** Figure 1 horizontal bars, Figure 2 columns. Each has a title, the takeaway in one line, a hover tooltip, the sample size and source, "Show as a table", "Download CSV" and a link. One series in brand red, the same colour already checked against the dark surface (D-098).
+- **How we ran the study:** sample, period, sources and analysis at a glance; the method in four steps; definitions; **limits of this study** (in amber, as honest notes).
+- **What this means for you:** one card per reader (marketing leads, SEO and content teams, founders), then **the light in-article service CTA**.
+- **Data and citation:** dataset download card (file name, rows, columns, size), licence line, citation in Plain, APA or Link form with a copy button.
+- **Version history:** each version with its date and what changed; corrections tagged.
+- Related studies, FAQs, sources, author box.
+
+**Proposed schema for the build:** the article as Report (already in place), the Dataset node made fuller (period covered, what was measured, licence, CSV download), version and dateModified taken from the version history, and each key finding kept as plain text so AI tools can quote it.
+
+**For Jamil to decide at the build:** the dataset licence wording (the mockup shows "Free to use and share with a link to this page", tagged "Licence to be agreed"); whether report numbers are used.
+**Checks:** `copy-check.py` 0 issues; desktop 1440 and phone 390 with no horizontal scroll and no script errors; chart tooltips and the table toggle checked. Fixed before publishing: the source line under each figure had been inside the folded table, so it was hidden; the longest bar label was cut off on desktop and the 0% axis label on phone.
 
 ---
 
