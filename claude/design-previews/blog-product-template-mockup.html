@@ -1,0 +1,413 @@
+<title>Product Service Template Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a product sheet. A spec plate beside the title ("We make this" disclosure, product code and name, status badge, what it is, part of, best for, links), then one of three middles by subtype: How it works (problem strip, a four-step flow with the human decision marked, what goes in and out, one worked example), Use case (the situation, what you need, a playbook with who and when, signs it is working), Launch (release card with new, changed and fixed, what changes for current users, changelog). Shared: does and does not do, who it is for, CTA, related articles. Dark only: it is the Reinforce Lab site (D-013). */
+:root{
+  --bg:#121011; --bg-2:#0e0c0d; --panel:#1a1617; --panel-2:#211c1d;
+  --ink:#f2eeee; --ink-dim:#b8b0b1; --ink-faint:#7f7778;
+  --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
+  --red:#990000; --red-2:#c21a1a; --red-3:#e23b3b; --red-line:rgba(226,59,59,.38); --ok:#3fa36b; --ok-line:rgba(63,163,107,.45); --amber:#d39b3a;
+  --f-display:"Oswald","Arial Narrow",sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1280px; --g:clamp(16px,3vw,32px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink-dim);font-family:var(--f-body);font-size:16px;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;background-position:-1px -1px}
+a{color:var(--ink)}
+:focus-visible{outline:2px solid var(--red-3);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--g)}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);margin:0;line-height:1.04;text-wrap:balance}
+.ic{width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square}
+.sample{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);border:1px dashed rgba(211,155,58,.6);padding:1px 6px;white-space:nowrap}
+
+.mocknote{background:var(--red);color:#fff;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-align:center;padding:7px var(--g)}
+.chrome{border-bottom:1px solid var(--line-2);background:rgba(18,16,17,.9)}
+.chrome .wrap{display:flex;justify-content:space-between;align-items:center;height:62px;gap:16px}
+.logo{font-family:var(--f-display);font-weight:700;letter-spacing:.04em;color:var(--ink);font-size:18px;text-transform:uppercase}
+.logo b{color:var(--red-3)}
+.chrome nav{display:flex;gap:22px;font-family:var(--f-display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.chrome nav span.on{color:var(--ink)}
+.cta-s{font-family:var(--f-display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid var(--red-2);padding:9px 14px;background:rgba(153,0,0,.35)}
+
+/* header + file card */
+.crumbs{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);padding-top:26px}
+.crumbs a{color:var(--ink-faint);text-decoration:none}
+.hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);gap:clamp(28px,5vw,60px);align-items:start;padding-block:clamp(24px,4vw,40px) 0}
+.kicker{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+.kind{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:var(--red);padding:6px 10px}
+.cat{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:5px 10px}
+.hero h1{font-size:clamp(34px,4.6vw,60px);line-height:1}
+.hero h1 em{font-style:normal;color:var(--red-3)}
+.stand{font-size:clamp(17px,1.5vw,19px);line-height:1.55;margin:18px 0 0;max-width:640px}
+.byline{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);align-items:center}
+.byline .who{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.av{width:34px;height:34px;border:1px solid var(--red-line);display:grid;place-items:center;font-family:var(--f-display);font-size:15px;color:var(--ink);background:var(--bg-2)}
+.byline b{color:var(--ink-dim);font-weight:500}
+
+/* main */
+.main{max-width:900px;margin:0 auto;padding-block:clamp(34px,5vw,52px) 10px}
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:46px 0 16px}
+.sec-h span{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3)}
+.sec-h h2{font-size:clamp(24px,2.8vw,30px)}
+.answer{border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px 24px;margin-bottom:24px}
+.answer .t{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 8px}
+.answer p{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
+.prose p{font-size:17.5px;line-height:1.75;margin:0 0 1.1em}
+.prose strong{color:var(--ink);font-weight:600}
+
+/* CTA */
+.icta{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 28px;align-items:center;margin:40px 0 0;padding:20px 0 20px 20px;border-top:1px solid var(--red-line);border-bottom:1px solid var(--red-line);border-left:3px solid var(--red-2);background:linear-gradient(90deg,rgba(153,0,0,.12),transparent 70%)}
+.icta .lbl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 6px}
+.icta .hd{font-family:var(--f-display);font-weight:600;text-transform:uppercase;font-size:clamp(19px,2vw,22px);line-height:1.15;color:var(--ink);margin:0 0 6px}
+.icta .csub{margin:0;font-size:15px}
+.act2{display:grid;gap:8px;justify-items:start;padding-right:20px}
+.go2{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.07em;font-size:14px;text-decoration:none;color:#fff;background:var(--red);border:1px solid var(--red-2);padding:12px 18px;white-space:nowrap}
+.alt{font-size:13.5px;color:var(--ink-faint);text-decoration:none;border-bottom:1px solid var(--line-2)}
+
+/* back matter */
+.back{border-top:1px solid var(--line-2);margin-top:50px;padding-block:44px 10px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
+.back .sec-h{margin-top:0}
+.faq details{border:1px solid var(--line);background:var(--panel);margin-bottom:8px}
+.faq summary{cursor:pointer;list-style:none;padding:15px 18px;font-family:var(--f-display);text-transform:uppercase;font-size:15px;color:var(--ink);display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red-3);font-family:var(--f-mono)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:0;padding:0 18px 15px;font-size:15px}
+.src ol{margin:0;padding-left:1.4em;font-size:14.5px} .src li{padding:6px 0;color:var(--ink-faint)}
+.src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.author .av{width:72px;height:72px;font-size:28px}
+.author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
+.author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}
+.author p{margin:0 0 8px;font-size:15px}
+
+
+
+/* mockup-only subtype switcher */
+.switch{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;padding:10px var(--g);background:var(--bg-2);border-bottom:1px solid var(--line-2);font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);justify-content:center}
+.switch .grp{display:flex;border:1px solid var(--line-2)}
+.switch button{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:none;border:0;color:var(--ink-dim);padding:6px 12px;cursor:pointer}
+.switch button+button{border-left:1px solid var(--line-2)}
+.switch button[aria-pressed="true"]{background:var(--red);color:#fff}
+.pg[data-sub="deepdive"] [data-only]:not([data-only~="deepdive"]),.pg[data-sub="usecase"] [data-only]:not([data-only~="usecase"]),.pg[data-sub="launch"] [data-only]:not([data-only~="launch"]){display:none!important}
+
+/* spec plate */
+.plate{border:1px solid var(--line-2);background:linear-gradient(180deg,var(--panel),var(--bg-2))}
+.made{display:flex;align-items:center;gap:10px;padding:11px 18px;background:rgba(153,0,0,.18);border-bottom:1px solid var(--red-line);font-size:13.5px;color:var(--ink)}
+.made svg{width:16px;height:16px;flex:none;fill:none;stroke:var(--red-3);stroke-width:1.8}
+.made b{font-weight:600}
+.pid{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 16px;padding:18px;border-bottom:1px solid var(--line)}
+.pid .code{grid-row:span 2;width:62px;height:62px;border:1px solid var(--red-line);display:grid;place-items:center;font-family:var(--f-display);font-size:22px;color:var(--red-3);background:repeating-linear-gradient(135deg,transparent 0 6px,rgba(226,59,59,.06) 6px 12px)}
+.pid b{font-family:var(--f-display);font-size:24px;text-transform:uppercase;color:var(--ink);font-weight:500;line-height:1.05}
+.pid p{margin:0;font-size:14px}
+.status{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 18px;border-bottom:1px solid var(--line)}
+.status .k{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.badge{display:inline-flex;align-items:center;gap:7px;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;border:1px solid}
+.badge::before{content:"";width:7px;height:7px;background:currentColor}
+.badge.dev{color:var(--amber);border-color:rgba(211,155,58,.55)}
+.badge.early{color:#7fb2e5;border-color:rgba(127,178,229,.5)}
+.badge.live{color:var(--ok);border-color:var(--ok-line)}
+.plate dl{margin:0;padding:4px 18px 8px}
+.plate dl div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;padding:9px 0;border-top:1px solid var(--line);font-size:14px}
+.plate dl div:first-child{border-top:0}
+.plate dt{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);padding-top:3px}
+.plate dd{margin:0;color:var(--ink)}
+.plate dd a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.plate .acts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line-2)}
+.plate .acts a{display:flex;align-items:center;justify-content:center;padding:13px 10px;font-family:var(--f-display);font-size:13px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;color:var(--ink)}
+.plate .acts a:first-child{background:var(--red);color:#fff}
+.plate .acts a+a{border-left:1px solid var(--line-2)}
+
+/* problem strip */
+.probs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.pb{background:var(--bg);padding:16px 18px;display:grid;gap:4px;align-content:start}
+.pb b{color:var(--ink);font-weight:600;font-size:15.5px}
+.pb p{margin:0;font-size:14px}
+
+/* how it works: the flow */
+.flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;counter-reset:st;border:1px solid var(--line-2);background:var(--bg-2)}
+.st{position:relative;padding:18px 18px 16px;display:grid;gap:6px;align-content:start;border-left:1px solid var(--line)}
+.st:first-child{border-left:0}
+.st::after{content:"";position:absolute;right:-7px;top:26px;width:12px;height:12px;background:var(--bg-2);border-top:1px solid var(--red-3);border-right:1px solid var(--red-3);transform:rotate(45deg);z-index:1}
+.st:last-child::after{display:none}
+.st .n{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3)}
+.st h3{font-size:18px}
+.st p{margin:0;font-size:14px}
+.st .out{margin-top:6px;font-family:var(--f-mono);font-size:11px;color:var(--ink);border-top:1px dashed var(--line-2);padding-top:8px}
+.st .out span{color:var(--ink-faint)}
+.st.human{background:linear-gradient(180deg,rgba(63,163,107,.08),transparent)}
+.st .who{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ok);border:1px solid var(--ok-line);padding:2px 7px;justify-self:start}
+.st .who svg{width:11px;height:11px;fill:none;stroke:currentColor;stroke-width:1.8}
+.io{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;margin-top:12px}
+.io div{border:1px dashed var(--line-2);padding:12px 14px;font-size:14px}
+.io .k{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:4px}
+
+/* worked example */
+.walk{border:1px solid var(--line-2);background:var(--panel)}
+.walk .wh{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;padding:14px 18px;border-bottom:1px solid var(--line-2)}
+.walk .wh b{font-family:var(--f-display);font-size:18px;text-transform:uppercase;color:var(--ink);font-weight:500}
+.walk ol{list-style:none;margin:0;padding:0}
+.walk li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding:14px 18px;border-top:1px solid var(--line)}
+.walk li:first-child{border-top:0}
+.walk .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);padding-top:2px}
+.walk p{margin:0;font-size:15px;color:var(--ink)}
+.walk .claim{font-family:var(--f-mono);font-size:13px;background:var(--bg-2);border-left:2px solid var(--red-3);padding:8px 12px;color:var(--ink)}
+.walk .meter{display:flex;align-items:center;gap:10px;margin-top:6px;font-family:var(--f-mono);font-size:12px;color:var(--ink-dim)}
+.walk .meter i{display:block;width:160px;height:8px;background:var(--line-2);position:relative}
+.walk .meter i::after{content:"";position:absolute;inset:0 auto 0 0;width:var(--v);background:var(--amber)}
+.walk .flag{color:var(--amber)}
+
+/* use case: plays */
+.plays{list-style:none;margin:0;padding:0;border:1px solid var(--line-2)}
+.play{display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:16px;padding:18px 20px;border-top:1px solid var(--line);align-items:start}
+.play:first-child{border-top:0}
+.play .n{font-family:var(--f-display);font-size:40px;line-height:.9;color:transparent;-webkit-text-stroke:1.2px var(--red-3);font-weight:700}
+.play h3{font-family:var(--f-body);text-transform:none;letter-spacing:0;font-size:17px;font-weight:600;margin-bottom:4px}
+.play p{margin:0;font-size:14.5px}
+.play dl{margin:0;display:grid;gap:6px;font-size:13px}
+.play dt{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.play dd{margin:0;color:var(--ink)}
+.need{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 22px}
+.need li{display:grid;grid-template-columns:18px 1fr;gap:8px;font-size:15px;color:var(--ink)}
+.need li::before{content:"";width:12px;height:12px;border:1.5px solid var(--red-3);margin-top:5px}
+.signs{border:1px solid var(--ok-line);background:linear-gradient(180deg,rgba(63,163,107,.06),transparent);padding:16px 18px}
+.signs .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ok);display:block;margin-bottom:8px}
+.signs ul{margin:0;padding:0 0 0 1.1em;display:grid;gap:6px;font-size:15px}
+.signs li::marker{color:var(--ok)}
+
+/* launch: release card + timeline */
+.release{display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px 26px;border:1px solid var(--red-line);background:radial-gradient(90% 140% at 0% 0%,rgba(153,0,0,.18),transparent 60%),var(--panel);padding:22px 24px}
+.release .v{font-family:var(--f-display);font-size:56px;line-height:.9;color:var(--ink)}
+.release .v small{display:block;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-top:8px}
+.release h3{font-size:22px;margin-bottom:8px}
+.release ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.release li{display:grid;grid-template-columns:62px 1fr;gap:10px;font-size:15px;color:var(--ink)}
+.release .tag{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line-2);padding:2px 0;text-align:center;align-self:start;margin-top:3px;color:var(--ink-dim)}
+.release .tag.new{color:var(--ok);border-color:var(--ok-line)}
+.release .tag.fix{color:var(--amber);border-color:rgba(211,155,58,.5)}
+.log{list-style:none;margin:0;padding:0;position:relative}
+.log::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--line-2)}
+.log li{display:grid;grid-template-columns:12px 110px minmax(0,1fr);gap:14px;padding:0 0 16px}
+.log li::before{content:"";width:12px;height:12px;background:var(--bg);border:2px solid var(--red-3);margin-top:4px;position:relative;z-index:1}
+.log li:first-child::before{background:var(--red-3)}
+.log time{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);padding-top:2px}
+.log p{margin:0;font-size:15px;color:var(--ink)}
+
+/* does not do */
+.nots{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.nots>div{background:var(--bg);padding:18px 20px}
+.nots .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;display:block;margin-bottom:10px}
+.nots .yes .k{color:var(--ok)} .nots .no .k{color:var(--red-3)}
+.nots ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.nots li{display:grid;grid-template-columns:16px 1fr;gap:10px;font-size:15px;color:var(--ink)}
+.nots li svg{width:14px;height:14px;margin-top:4px;fill:none;stroke-width:2;stroke-linecap:square}
+.nots .yes svg{stroke:var(--ok)} .nots .no svg{stroke:var(--red-3)}
+.honest{margin-top:12px;border-left:3px solid var(--amber);padding:12px 16px;background:linear-gradient(90deg,rgba(211,155,58,.07),transparent);font-size:15px}
+.honest b{color:var(--ink)}
+
+/* fit */
+.fit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.fit>div{border:1px solid var(--line-2);padding:16px 18px}
+.fit .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);display:block;margin-bottom:8px}
+.fit ul{margin:0;padding-left:1.1em;display:grid;gap:6px;font-size:15px}
+.fit li::marker{color:var(--red-3)}
+
+/* related */
+.more{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.rr{background:var(--bg);padding:18px 20px;text-decoration:none;display:grid;gap:8px;align-content:start}
+.rr:hover{background:var(--panel)}
+.rr .k{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3)}
+.rr b{font-family:var(--f-display);font-size:19px;text-transform:uppercase;color:var(--ink);font-weight:500;line-height:1.15}
+
+@media(max-width:1000px){
+  .hero{grid-template-columns:1fr}
+  .flow{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .st:nth-child(3){border-left:0}
+  .st:nth-child(n+3){border-top:1px solid var(--line)}
+  .st:nth-child(2)::after{display:none}
+  .more{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .chrome nav{display:none}
+  .flow{grid-template-columns:1fr}
+  .st{border-left:0;border-top:1px solid var(--line)} .st:first-child{border-top:0}
+  .st::after{right:auto;left:24px;top:auto;bottom:-7px;transform:rotate(135deg)}
+  .st:nth-child(2)::after{display:block}
+  .probs,.io,.nots,.fit,.need,.more,.back{grid-template-columns:1fr}
+  .walk li{grid-template-columns:1fr;gap:4px}
+  .play{grid-template-columns:44px minmax(0,1fr)} .play dl{grid-column:2}
+  .play .n{font-size:32px}
+  .release{grid-template-columns:1fr}
+  .log li{grid-template-columns:12px minmax(0,1fr)} .log li p{grid-column:2}
+  .icta{grid-template-columns:1fr;padding-left:16px} .act2{padding-right:16px}
+  .author{grid-template-columns:1fr}
+  .prose p{font-size:16.5px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<div class="pg" data-sub="deepdive">
+<div class="mocknote">DESIGN MOCKUP · PRODUCT / SERVICE TEMPLATE · copy, versions and dates are sample content for layout review; the product status follows O-022</div>
+<div class="switch" role="group" aria-label="Mockup only: show a subtype"><span>Mockup only · subtype</span><span class="grp"><button type="button" aria-pressed="true" data-sub="deepdive">How it works</button><button type="button" aria-pressed="false" data-sub="usecase">Use case</button><button type="button" aria-pressed="false" data-sub="launch">Launch</button></span></div>
+<header class="chrome"><div class="wrap"><span class="logo">Reinforce <b>/</b> Lab</span><nav aria-label="Site (mockup)"><span>Search Authority OS</span><span>Solutions</span><span>Industries</span><span>Packages</span><span class="on">Blog</span><span>About</span><span>Contact</span></nav><span class="cta-s">Get your diagnostic</span></div></header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ok" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7"/></symbol>
+  <symbol id="no" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"/></symbol>
+  <symbol id="mk" viewBox="0 0 16 16"><path d="M8 1.5l5.5 2.5v4c0 3.2-2.4 5.6-5.5 6.5C4.9 13.6 2.5 11.2 2.5 8V4z"/><path d="M5.5 8l2 2 3-3.5"/></symbol>
+  <symbol id="pp" viewBox="0 0 16 16"><circle cx="8" cy="5" r="2.6"/><path d="M3 14c.6-3 2.6-4.5 5-4.5s4.4 1.5 5 4.5"/></symbol>
+</svg>
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="#">Home</a> / <a href="#">Blog</a> / <a href="#">Agents</a> / Evidence Verification</nav>
+  <section class="hero">
+    <div>
+      <div class="kicker"><span class="kind" data-only="deepdive">How it works</span><span class="kind" data-only="usecase">Use case</span><span class="kind" data-only="launch">Launch</span><span class="cat">Agents</span></div>
+      <h1 data-only="deepdive">How the Evidence Verification Agent <em>checks a claim before it is published</em></h1>
+      <h1 data-only="usecase">Using evidence verification <em>to get pages through medical-legal review</em></h1>
+      <h1 data-only="launch">Evidence Verification Agent 0.3: <em>domain sources and review flags</em></h1>
+      <p class="stand" data-only="deepdive">A plain walk through the four steps: what goes in, what the agent does at each step, where a person decides, and what comes out.</p>
+      <p class="stand" data-only="usecase">A playbook for content teams in regulated fields: what to prepare, who does what, and how the evidence log shortens review.</p>
+      <p class="stand" data-only="launch">What is new in this release, what changed for teams already using it, and what it still does not do.</p>
+      <div class="byline"><span class="who"><span class="av" aria-hidden="true">J</span>Jamil Ahmed</span><span>Published <b>15 Sep 2026</b></span></div>
+    </div>
+    <aside class="plate" aria-label="About this product">
+      <div class="made"><svg aria-hidden="true"><use href="#mk"/></svg><span><b>We make this.</b> This article is about our own product.</span></div>
+      <div class="pid"><span class="code">A-03</span><b>Evidence Verification Agent</b><p>Every claim sourced and checked.</p></div>
+      <div class="status"><span class="k">Status</span><span class="badge dev" data-only="deepdive usecase">In development</span><span class="badge early" data-only="launch">Early access</span></div>
+      <dl>
+        <div><dt>What it is</dt><dd>An AI agent, run by our team</dd></div>
+        <div><dt>Part of</dt><dd><a href="#">Search Authority OS</a></dd></div>
+        <div><dt>Best for</dt><dd>Regulated and expertise-led industries</dd></div>
+        <div data-only="launch"><dt>Version</dt><dd>0.3 · 12 Sep 2026</dd></div>
+      </dl>
+      <div class="acts"><a href="#">About the agent</a><a href="#">Free diagnostic</a></div>
+    </aside>
+  </section>
+</div>
+
+<div class="wrap">
+  <div class="main">
+    <div class="answer"><p class="t">In short</p>
+      <p data-only="deepdive">The agent pulls every important claim out of a draft, matches each one to a source, scores how strong the evidence is, and sends anything weak or conflicting to a person. Your reviewers keep the final say.</p>
+      <p data-only="usecase">Run the agent on a draft before it goes to medical-legal review. Reviewers get a claim-by-claim evidence log instead of hunting for sources, and only the flagged claims need their time.</p>
+      <p data-only="launch">Version 0.3 checks medical claims against PubMed and ClinicalTrials.gov and sends weak evidence to a named reviewer. It still does not approve content on its own.</p>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <div data-only="deepdive">
+      <div class="sec-h"><span>The problem</span><h2>What goes wrong without it</h2></div>
+      <div class="probs">
+        <div class="pb"><b>Unsupported claims</b><p>Statistics and statements with no source, or a source that does not say it.</p></div>
+        <div class="pb"><b>Outdated facts</b><p>Figures that were true years ago, still published today.</p></div>
+        <div class="pb"><b>Risk in regulated fields</b><p>In health, finance and law, one wrong claim can cost more than the page earns.</p></div>
+      </div>
+
+      <div class="sec-h" id="how"><span>Step by step</span><h2>How it works</h2></div>
+      <ol class="flow" data-only="deepdive">
+        <li class="st"><span class="n">Step 1</span><h3>Extract claims</h3><p>Every statistic, fact and statement that needs support.</p><div class="out"><span>Out:</span> a list of claims</div></li>
+        <li class="st"><span class="n">Step 2</span><h3>Match sources</h3><p>Each claim linked to the source that supports it.</p><div class="out"><span>Out:</span> claim and source pairs</div></li>
+        <li class="st"><span class="n">Step 3</span><h3>Score confidence</h3><p>How strong, recent and relevant the evidence is.</p><div class="out"><span>Out:</span> a score per claim</div></li>
+        <li class="st human"><span class="n">Step 4</span><h3>Flag for review</h3><p>Weak, conflicting or missing evidence sent to a person.</p><span class="who"><svg aria-hidden="true"><use href="#pp"/></svg>A person decides</span><div class="out"><span>Out:</span> the evidence log</div></li>
+      </ol>
+      <div class="io"><div><span class="k">What goes in</span>A draft page, the sources you already use, and the domain databases your field relies on.</div><div><span class="k">What comes out</span>A claim-by-claim evidence log, confidence scores, review flags and suggested corrections.</div></div>
+
+      <div class="sec-h"><span>Example</span><h2>One claim, start to finish</h2></div>
+      <div class="walk">
+        <div class="wh"><b>A sentence from a draft</b><span class="sample">Sample content</span></div>
+        <ol>
+          <li><span class="k">The claim</span><p class="claim">"Most adults with high blood pressure do not know they have it."</p></li>
+          <li><span class="k">Sources found</span><p>Two national health surveys and one review article. One survey is eight years old.</p></li>
+          <li><span class="k">Confidence</span><div><p>Medium: the newest source supports a lower share than "most".</p><div class="meter"><i style="--v:55%"></i>Medium</div></div></li>
+          <li><span class="k">Result</span><p><span class="flag">Flagged for review</span>, with a suggested rewrite using the newest figure and its source.</p></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- USE CASE -->
+    <div data-only="usecase">
+      <div class="sec-h"><span>The situation</span><h2>Where this helps</h2></div>
+      <div class="prose"><p>A pharmaceutical content team publishes four pages a month. Every page goes to medical-legal review, and reviewers spend most of their time finding the source behind each claim. Pages wait weeks in the queue.</p></div>
+
+      <div class="sec-h"><span>Before you start</span><h2>What you need</h2></div>
+      <ul class="need"><li>The drafts, in one shared place</li><li>The sources your team trusts, as a list</li><li>A named reviewer for each therapy area</li><li>Your house rules for claims and wording</li></ul>
+
+      <div class="sec-h" id="how"><span>The playbook</span><h2>Step by step</h2></div>
+      <ol class="plays">
+        <li class="play"><span class="n">1</span><div><h3>Run the draft through the agent</h3><p>Before review, not after. The agent returns the evidence log with every claim sourced and scored.</p></div><dl><div><dt>Who</dt><dd>Content lead</dd></div><div><dt>Time</dt><dd>Same day</dd></div></dl></li>
+        <li class="play"><span class="n">2</span><div><h3>Fix what is flagged</h3><p>The writer replaces weak sources and rewrites claims the evidence does not support.</p></div><dl><div><dt>Who</dt><dd>Writer</dd></div><div><dt>Time</dt><dd>1 to 2 days</dd></div></dl></li>
+        <li class="play"><span class="n">3</span><div><h3>Send the page with its log</h3><p>Reviewers see each claim beside its source, and only the remaining flags need their judgement.</p></div><dl><div><dt>Who</dt><dd>Medical reviewer</dd></div><div><dt>Time</dt><dd>As your process allows</dd></div></dl></li>
+        <li class="play"><span class="n">4</span><div><h3>Keep the log on file</h3><p>The evidence log stays with the approved page as an audit trail for the next review.</p></div><dl><div><dt>Who</dt><dd>Compliance</dd></div><div><dt>Time</dt><dd>On approval</dd></div></dl></li>
+      </ol>
+
+      <div class="signs" style="margin-top:16px"><span class="k">Signs it is working</span><ul><li>Reviewers send back fewer pages for missing sources.</li><li>Each approved page has an evidence log on file.</li><li>Writers fix weak claims before review, not after.</li></ul></div>
+    </div>
+
+    <!-- LAUNCH -->
+    <div data-only="launch">
+      <div class="sec-h"><span>This release</span><h2>What is new</h2><span class="sample">Sample content</span></div>
+      <div class="release">
+        <div class="v">0.3<small>12 Sep 2026</small></div>
+        <div><h3>Domain sources and review flags</h3>
+          <ul>
+            <li><span class="tag new">New</span>Checks medical claims against PubMed and ClinicalTrials.gov.</li>
+            <li><span class="tag new">New</span>Sends each flagged claim to a named reviewer, not a shared inbox.</li>
+            <li><span class="tag">Changed</span>Confidence now takes the age of a source into account.</li>
+            <li><span class="tag fix">Fixed</span>Claims inside tables were sometimes missed.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sec-h"><span>If you already use it</span><h2>What changes for you</h2></div>
+      <div class="prose"><p>Nothing to set up. Your next evidence log will include the domain sources, and flags will go to the reviewer named for each therapy area. Tell us if a reviewer is missing.</p></div>
+      <div class="sec-h"><span>Record</span><h2>Changelog</h2></div>
+      <ol class="log">
+        <li><time datetime="2026-09-12">12 Sep 2026</time><p>0.3: domain sources and review flags.</p></li>
+        <li><time datetime="2026-08-20">20 Aug 2026</time><p>0.2: suggested corrections for weak claims.</p></li>
+        <li><time datetime="2026-07-30">30 Jul 2026</time><p>0.1: first version, for internal use.</p></li>
+      </ol>
+    </div>
+
+    <div class="sec-h"><span>Honest limits</span><h2>What it does and does not do</h2></div>
+    <div class="nots">
+      <div class="yes"><span class="k">It does</span><ul><li><svg aria-hidden="true"><use href="#ok"/></svg>Find a source for every important claim</li><li><svg aria-hidden="true"><use href="#ok"/></svg>Score how strong the evidence is</li><li><svg aria-hidden="true"><use href="#ok"/></svg>Flag weak or conflicting evidence</li></ul></div>
+      <div class="no"><span class="k">It does not</span><ul><li><svg aria-hidden="true"><use href="#no"/></svg>Approve content on its own</li><li><svg aria-hidden="true"><use href="#no"/></svg>Replace medical, legal or compliance review</li><li><svg aria-hidden="true"><use href="#no"/></svg>Judge tone, brand or style</li></ul></div>
+    </div>
+    <p class="honest"><b>A confidence score is not a sign-off.</b> Anything the agent flags goes to a person, and in regulated fields your own reviewers keep the final say.</p>
+
+    <div class="sec-h"><span>Fit</span><h2>Who it is for</h2></div>
+    <div class="fit">
+      <div><span class="k">A good fit if</span><ul><li>You publish in health, finance or law</li><li>Review slows your publishing down</li><li>You need an audit trail for claims</li></ul></div>
+      <div><span class="k">Not the right tool if</span><ul><li>You need content written, not checked</li><li>Your pages make few factual claims</li></ul></div>
+    </div>
+
+    <aside class="icta" aria-label="Reinforce Lab service"><div><p class="lbl">Reinforce Lab · Search Authority OS</p><p class="hd">See the agent on your own content</p><p class="csub">We run it on one of your pages and walk you through the evidence log.</p></div><div class="act2"><a class="go2" href="#">About the agent &rarr;</a><a class="alt" href="#">Or get a free diagnostic first</a></div></aside>
+  </div>
+
+  <section aria-labelledby="rel-h" style="margin-top:46px">
+    <div class="sec-h" style="margin-top:0"><span>More on this product</span><h2 id="rel-h">Related articles</h2><span class="sample">Sample content</span></div>
+    <div class="more">
+      <a class="rr" href="#"><span class="k">How it works</span><b>How the Content QA Auditor decides what ships</b></a>
+      <a class="rr" href="#"><span class="k">Use case</span><b>Sourcing statistics for B2B buying guides</b></a>
+      <a class="rr" href="#"><span class="k">Launch</span><b>Evidence Verification Agent 0.2: suggested corrections</b></a>
+    </div>
+  </section>
+
+  <section class="back" aria-label="Questions and sources">
+    <div class="faq"><div class="sec-h"><span>Questions</span><h2>FAQs</h2></div>
+      <details open><summary>Does it replace our medical or legal review?</summary><p>No. It prepares an evidence log that makes that review faster and more thorough. Final approval stays with your reviewers.</p></details>
+      <details><summary>Which sources does it use?</summary><p>Official and primary sources first, and domain databases such as PubMed and ClinicalTrials.gov for medical and life-sciences content.</p></details>
+    </div>
+    <div class="src"><div class="sec-h"><span>Evidence</span><h2>Sources</h2></div>
+      <ol><li><a href="#">PubMed, National Library of Medicine</a></li><li><a href="#">ClinicalTrials.gov</a></li></ol>
+    </div>
+  </section>
+
+  <aside class="author" aria-label="About the author"><span class="av" aria-hidden="true">J</span><div><p class="nm">Jamil Ahmed</p><p class="role">Founder and CEO, Reinforce Lab</p><p>Pharmacist, SEO and AI search consultant, and Semrush Ambassador.</p></div></aside>
+</div>
+<script>
+document.querySelectorAll('.switch button').forEach(function(b){ b.addEventListener('click',function(){ document.querySelector('.pg').setAttribute('data-sub',b.dataset.sub); document.querySelectorAll('.switch button').forEach(function(o){ o.setAttribute('aria-pressed',o===b?'true':'false'); }); }); });
+</script>
+</div>

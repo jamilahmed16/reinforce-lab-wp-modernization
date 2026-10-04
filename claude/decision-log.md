@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-102 | Product / Service template: design mockup v1 (three subtypes) for review | 4 Oct | AWAITING REVIEW | this file |
 | D-101 | Research template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Research template") | this file |
 | D-100 | Research template: design mockup v1 for review | 4 Oct | APPROVED, built as D-101 | this file |
 | D-099 | Case Study template built on `.online` from the approved mockup (v2) | 4 Oct | DONE (Jamil: "approved, build the Case Study template") | this file |
@@ -158,6 +159,25 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-102 · Product / Service template: design mockup v1 for review
+**Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S REVIEW (Jamil: "yes, go ahead with the Product / Service mockup"; D-077 process)
+
+**Mockup:** `claude/design-previews/blog-product-template-mockup.html`, published privately (claude.ai artifact "Product Service Template Mockup"). Sample product: the Evidence Verification Agent (A-03), using the wording already on its agent page. Titles, versions, dates, the worked example and the playbook are sample content, tagged on the page. **Status shown as "In development"** (and "Early access" in the Launch view) because O-022 is still open; no claim that the agent is live.
+
+**Design: a product sheet**, different from the ten built templates. A switcher at the top (mockup only) shows the three subtypes; in the build the subtype field picks the layout.
+- **Shared header:** two chips (subtype + category), title with its point in red, standfirst, byline.
+- **Spec plate** beside the title: the **"We make this. This article is about our own product."** disclosure at the top, product code and name with its one-line promise, **status badge** (In development, Early access or Available), what it is, part of (links to Search Authority OS), best for, version (Launch only), and two buttons: the product page and the free diagnostic.
+- **How it works:** the problem in three cards, a **four-step flow** (each step with its output, and the step where **a person decides** marked in green), what goes in and what comes out, and **one worked example** taken from start to finish.
+- **Use case:** the situation, **what you need** before you start, a **playbook** of numbered steps with who does it and when, and **signs it is working** (no invented numbers).
+- **Launch:** a **release card** (version, date, items tagged New, Changed, Fixed), what changes for people already using it, and the **changelog** as a timeline.
+- **Shared after the middle:** **what it does and does not do** side by side with an honest note, **who it is for and not for**, the light in-article CTA, related articles about the same product, FAQs, sources, author box.
+
+**Rules carried over (D-076):** the disclosure always shows; a status label is required on agent and Search Authority OS posts until O-022 is settled; "What it does not do" is required; the post must target a different search than its product page; schema is Article `about` the Service, **never Review, ratings, Product or Offer markup**.
+**Open item carried over:** the visible label for the "deep dive" subtype is "How it works" (D-076: "deep dive" is on the banned word list); the mockup uses it.
+**Checks:** `copy-check.py` 0 issues; all three subtypes at desktop 1440 and phone 390 with no horizontal scroll and no script errors. Fixed before publishing: the subtype switcher showed both status badges at once (a CSS rule lost to a more specific one).
 
 ---
 
