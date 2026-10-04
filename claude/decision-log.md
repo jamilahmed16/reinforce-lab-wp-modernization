@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-090 | Comparison template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
 | D-089 | Review template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Review template") | this file |
 | D-088 | Review template: design mockup v1 for review | 4 Oct | APPROVED, built as D-089 | this file |
 | D-087 | Best / List template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Best/List template") | this file |
@@ -146,6 +147,25 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-090 · Comparison template: design mockup v1 for review
+**Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S REVIEW (Jamil: "yes, go ahead with the Comparison mockup"; D-077 process)
+
+**Mockup:** `claude/design-previews/blog-comparison-template-mockup.html`, published privately (claude.ai artifact "Comparison Template Mockup"). Sample topic: "In-house SEO team vs SEO agency" (a decision our buyers make, and no claims about real products). Sample content, marked as such on the page.
+
+**Design: a head-to-head**, different from the Guide (book), How-To (workbench), Best / List (shortlist board) and Review (lab report):
+- **Centred header**, two chips (Comparison + category), "Updated" date in green.
+- **Face-off:** Option A and Option B on either side of a VS line, each with a one-line description and "Choose it if". A in brand red, B in a pale neutral, used consistently through the page.
+- **Tally bar:** rounds won by each side and ties, as one proportional bar.
+- **Round by round:** each criterion is a row with A's side, the round name and a winner pointer in the middle (arrow towards the winner, or Tie), and B's side; the winning side is lightly tinted. On phones each round stacks with labels.
+- **"What matters most to you?"** picker: the reader ticks rounds and the page names the winner for them (or a tie), counting only the rounds they picked.
+- **Side-by-side details table**, **winner by situation** cards, **"Or use both"** note for the hybrid option.
+- **The light in-article service CTA**, then **our verdict**, FAQs and sources, author box.
+
+**When built:** 2 options in the face-off (3 supported later if Jamil wants it); the winner of each round is set by the editor; ItemList schema of the options stays (from D-076), no ratings.
+**Checks:** `copy-check.py` 0 issues; desktop 1440 and phone 390 with no horizontal scroll.
 
 ---
 

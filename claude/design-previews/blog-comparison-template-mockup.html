@@ -1,0 +1,306 @@
+<title>Comparison Template Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a head-to-head. Two contenders face off across a VS line, a tally bar of rounds won, then round by round (each criterion a row, the winner marked by a pointer), a side-by-side table, a "what matters to you" picker that names the winner for the reader, winner by use case, and when to use both. Dark only: it is the Reinforce Lab site (D-013). */
+:root{
+  --bg:#121011; --bg-2:#0e0c0d; --panel:#1a1617; --panel-2:#211c1d;
+  --ink:#f2eeee; --ink-dim:#b8b0b1; --ink-faint:#7f7778;
+  --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
+  --red:#990000; --red-2:#c21a1a; --red-3:#e23b3b; --red-line:rgba(226,59,59,.38);
+  --a:#e23b3b; --a-soft:rgba(226,59,59,.14); --a-line:rgba(226,59,59,.45);
+  --b:#d8cfd0; --b-soft:rgba(216,207,208,.08); --b-line:rgba(216,207,208,.4);
+  --f-display:"Oswald","Arial Narrow",sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1280px; --g:clamp(16px,3vw,32px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink-dim);font-family:var(--f-body);font-size:16px;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;background-position:-1px -1px}
+a{color:var(--ink)}
+:focus-visible{outline:2px solid var(--red-3);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--g)}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);margin:0;line-height:1.04;text-wrap:balance}
+
+.mocknote{background:var(--red);color:#fff;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-align:center;padding:7px var(--g)}
+.chrome{border-bottom:1px solid var(--line-2);background:rgba(18,16,17,.9)}
+.chrome .wrap{display:flex;justify-content:space-between;align-items:center;height:62px;gap:16px}
+.logo{font-family:var(--f-display);font-weight:700;letter-spacing:.04em;color:var(--ink);font-size:18px;text-transform:uppercase}
+.logo b{color:var(--red-3)}
+.chrome nav{display:flex;gap:22px;font-family:var(--f-display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.chrome nav span.on{color:var(--ink)}
+.cta-s{font-family:var(--f-display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid var(--red-2);padding:9px 14px;background:rgba(153,0,0,.35)}
+
+/* hero */
+.crumbs{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);padding-top:26px}
+.crumbs a{color:var(--ink-faint);text-decoration:none}
+.hero{padding-block:clamp(24px,4vw,40px) 0;text-align:center}
+.kicker{display:flex;justify-content:center;gap:10px;margin-bottom:18px}
+.kind{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:var(--red);padding:6px 10px}
+.cat{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:5px 10px}
+.hero h1{font-size:clamp(32px,4.4vw,56px);max-width:900px;margin:0 auto}
+.stand{font-size:clamp(17px,1.5vw,19px);line-height:1.55;max-width:680px;margin:16px auto 0}
+.byline{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 22px;margin-top:20px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);align-items:center}
+.byline .who{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.av{width:34px;height:34px;border:1px solid var(--red-line);display:grid;place-items:center;font-family:var(--f-display);font-size:15px;color:var(--ink);background:var(--bg-2)}
+.byline b{color:var(--ink-dim);font-weight:500}
+.byline .fresh,.byline .fresh b{color:#3fa36b}
+
+/* face-off */
+.face{display:grid;grid-template-columns:minmax(0,1fr) 88px minmax(0,1fr);margin-top:34px;text-align:left}
+.side{border:1px solid var(--line-2);background:var(--panel);padding:24px 26px;display:grid;gap:10px;align-content:start}
+.side.a{border-color:var(--a-line);background:linear-gradient(135deg,var(--a-soft),transparent 60%),var(--panel);border-right:0}
+.side.b{border-color:var(--b-line);background:linear-gradient(225deg,var(--b-soft),transparent 60%),var(--panel);border-left:0;text-align:right}
+.tagline{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase}
+.a .tagline{color:var(--a)} .b .tagline{color:var(--b)}
+.side h2{font-size:clamp(26px,3vw,38px)}
+.side p{margin:0;font-size:15.5px}
+.side .ch{border-top:1px solid var(--line);padding-top:10px;font-size:14.5px;color:var(--ink)}
+.side .ch b{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;display:block;margin-bottom:2px}
+.vs{display:grid;place-items:center;position:relative;border-block:1px solid var(--line-2);background:var(--bg-2)}
+.vs::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(var(--a-line),var(--b-line))}
+.vs span{position:relative;z-index:1;font-family:var(--f-display);font-weight:700;font-size:34px;color:var(--ink);background:var(--bg-2);padding:8px 0;letter-spacing:.04em}
+/* tally */
+.tally{margin-top:14px;text-align:left}
+.tally .row{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:6px}
+.tally .row b{color:var(--ink);font-weight:500}
+.tbar{display:flex;height:12px;gap:2px}
+.tbar i{display:block}
+.tbar .ta{background:var(--a)} .tbar .tt{background:var(--line-2)} .tbar .tb{background:var(--b)}
+
+/* main */
+.main{max-width:900px;margin:0 auto;padding-block:clamp(34px,5vw,52px) 10px}
+.answer{border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px 24px;margin-bottom:24px}
+.answer .t,.sec-h span{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 8px}
+.answer p{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
+.prose p{font-size:17.5px;line-height:1.75;margin:0 0 1.1em}
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:46px 0 16px}
+.sec-h h2{font-size:clamp(24px,2.8vw,30px)}
+
+/* rounds */
+.rounds{border:1px solid var(--line-2)}
+.rhead{display:grid;grid-template-columns:minmax(0,1fr) 120px minmax(0,1fr);background:var(--panel);border-bottom:1px solid var(--line-2);font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase}
+.rhead span{padding:10px 18px}
+.rhead .ha{color:var(--a)} .rhead .hb{color:var(--b);text-align:right} .rhead .hc{color:var(--ink-faint);text-align:center}
+.round{display:grid;grid-template-columns:minmax(0,1fr) 120px minmax(0,1fr);border-top:1px solid var(--line)}
+.round:first-of-type{border-top:0}
+.round .pa,.round .pb{padding:16px 18px;font-size:15px;min-width:0}
+.round .pb{text-align:right}
+.round .mid{display:grid;align-content:center;justify-items:center;gap:6px;padding:12px 6px;background:var(--bg-2);border-inline:1px solid var(--line)}
+.round .mid h3{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;font-weight:500;color:var(--ink);text-align:center;line-height:1.35}
+.ptr{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;white-space:nowrap}
+.ptr.wa{color:#fff;background:var(--red)}
+.ptr.wb{color:var(--bg);background:var(--b)}
+.ptr.tie{color:var(--ink-dim);border:1px solid var(--line-2)}
+.round.wa .pa{background:linear-gradient(90deg,var(--a-soft),transparent);color:var(--ink)}
+.round.wb .pb{background:linear-gradient(270deg,var(--b-soft),transparent);color:var(--ink)}
+.round .lbl{display:none}
+
+/* picker */
+.pick{border:1px solid var(--line-2);background:var(--panel);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}
+.pick .q{padding:20px 22px;border-right:1px solid var(--line-2)}
+.pick .q p{margin:0 0 12px;font-size:15px;color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line-2);background:var(--bg-2);padding:8px 12px;font-size:14px;cursor:pointer;color:var(--ink-dim)}
+.chips input{appearance:none;width:14px;height:14px;border:1px solid var(--line-2);margin:0;display:grid;place-items:center;cursor:pointer}
+.chips input:checked{background:var(--red);border-color:var(--red-2)}
+.chips input:checked::after{content:"";width:7px;height:4px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg) translate(1px,-1px)}
+.chips label:has(input:checked){border-color:var(--red-line);color:var(--ink)}
+.pick .res{padding:20px 22px;display:grid;align-content:center;gap:8px;background:var(--bg-2)}
+.pick .res .t{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+.pick .res .w{font-family:var(--f-display);text-transform:uppercase;font-size:30px;line-height:1.05;color:var(--ink)}
+.pick .res .w.ca{color:var(--a)} .pick .res .w.cb{color:var(--b)}
+.pick .res .s{font-size:14px}
+
+/* table */
+.tw{overflow-x:auto;border:1px solid var(--line-2);background:var(--bg-2)}
+table{width:100%;border-collapse:collapse;min-width:600px;font-size:14.5px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;background:var(--panel)}
+thead th.ca{color:var(--a);box-shadow:inset 0 -2px 0 var(--a)} thead th.cb{color:var(--b);box-shadow:inset 0 -2px 0 var(--b)}
+tbody th{color:var(--ink);font-weight:600;width:24%}
+tbody tr:last-child>*{border-bottom:0}
+
+/* winners by use case */
+.uses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.use{background:var(--bg);padding:18px 20px;display:grid;gap:6px}
+.use .u{font-size:15.5px;color:var(--ink)}
+.use .p{font-family:var(--f-display);text-transform:uppercase;font-size:18px}
+.use .p.ca{color:var(--a)} .use .p.cb{color:var(--b)}
+.use .why{font-size:13.5px;color:var(--ink-faint)}
+
+/* both */
+.both{display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px;align-items:center;border:1px dashed var(--line-2);padding:22px 24px;margin-top:22px}
+.both .mix{width:64px;height:64px;display:grid;grid-template-columns:1fr 1fr}
+.both .mix i:first-child{background:var(--a)} .both .mix i:last-child{background:var(--b)}
+.both h3{font-size:19px;margin-bottom:6px}
+.both p{margin:0;font-size:15.5px}
+
+/* CTA */
+.icta{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 28px;align-items:center;margin:40px 0 0;padding:20px 0 20px 20px;border-top:1px solid var(--red-line);border-bottom:1px solid var(--red-line);border-left:3px solid var(--red-2);background:linear-gradient(90deg,rgba(153,0,0,.12),transparent 70%)}
+.icta .lbl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 6px}
+.icta .hd{font-family:var(--f-display);font-weight:600;text-transform:uppercase;font-size:clamp(19px,2vw,22px);line-height:1.15;color:var(--ink);margin:0 0 6px}
+.icta .csub{margin:0;font-size:15px}
+.act2{display:grid;gap:8px;justify-items:start;padding-right:20px}
+.go2{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.07em;font-size:14px;text-decoration:none;color:#fff;background:var(--red);border:1px solid var(--red-2);padding:12px 18px;white-space:nowrap}
+.alt{font-size:13.5px;color:var(--ink-faint);text-decoration:none;border-bottom:1px solid var(--line-2)}
+
+/* verdict */
+.verdict{border:1px solid var(--red-line);background:var(--panel);padding:24px 26px;margin-top:46px}
+.verdict .t{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 10px}
+.verdict p{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
+
+/* back matter */
+.back{border-top:1px solid var(--line-2);margin-top:50px;padding-block:44px 10px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
+.back .sec-h{margin-top:0}
+.faq details{border:1px solid var(--line);background:var(--panel);margin-bottom:8px}
+.faq summary{cursor:pointer;list-style:none;padding:15px 18px;font-family:var(--f-display);text-transform:uppercase;font-size:15px;color:var(--ink);display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red-3);font-family:var(--f-mono)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:0;padding:0 18px 15px;font-size:15px}
+.src ol{margin:0;padding-left:1.4em;font-size:14.5px} .src li{padding:6px 0;color:var(--ink-faint)}
+.src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.author .av{width:72px;height:72px;font-size:28px}
+.author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
+.author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}
+.author p{margin:0 0 8px;font-size:15px}
+
+@media(max-width:760px){
+  .chrome nav{display:none}
+  .face{grid-template-columns:1fr}
+  .side.a{border-right:1px solid var(--a-line);border-bottom:0}
+  .side.b{border-left:1px solid var(--b-line);border-top:0;text-align:left}
+  .vs{border-block:0;border-inline:1px solid var(--line-2);height:56px}
+  .vs::before{top:50%;bottom:auto;left:0;right:0;width:auto;height:1px;background:linear-gradient(90deg,var(--a-line),var(--b-line))}
+  .vs span{padding:0 12px}
+  .rhead{display:none}
+  .round{grid-template-columns:1fr}
+  .round .mid{grid-row:1;border-inline:0;border-bottom:1px solid var(--line);grid-auto-flow:column;justify-content:space-between;padding:10px 16px}
+  .round .pb{text-align:left}
+  .round .lbl{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px}
+  .round .pa .lbl{color:var(--a)} .round .pb .lbl{color:var(--b)}
+  .round .pa{border-bottom:1px solid var(--line)}
+  .pick{grid-template-columns:1fr} .pick .q{border-right:0;border-bottom:1px solid var(--line-2)}
+  .uses,.back{grid-template-columns:1fr}
+  .both{grid-template-columns:1fr}
+  .icta{grid-template-columns:1fr;padding-left:16px} .act2{padding-right:16px}
+  .author{grid-template-columns:1fr}
+  .prose p{font-size:16.5px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<div class="mocknote">DESIGN MOCKUP · COMPARISON TEMPLATE · sample content for layout review, not published</div>
+<header class="chrome"><div class="wrap"><span class="logo">Reinforce <b>/</b> Lab</span><nav aria-label="Site (mockup)"><span>Search Authority OS</span><span>Solutions</span><span>Industries</span><span>Packages</span><span class="on">Blog</span><span>About</span><span>Contact</span></nav><span class="cta-s">Get your diagnostic</span></div></header>
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="#">Home</a> / <a href="#">Blog</a> / <a href="#">SEO Strategy</a> / In-house SEO vs agency</nav>
+  <section class="hero">
+    <div class="kicker"><span class="kind">Comparison</span><span class="cat">SEO Strategy</span></div>
+    <h1>In-house SEO team vs SEO agency: which is right for your business?</h1>
+    <p class="stand">Seven rounds, from cost to control, judged on what we see when companies make this choice. Pick what matters to you and see which side wins for you.</p>
+    <div class="byline"><span class="who"><span class="av" aria-hidden="true">J</span>Jamil Ahmed</span><span>Published <b>20 Sep 2026</b></span><span class="fresh">Updated <b>2 Oct 2026</b></span></div>
+
+    <div class="face">
+      <div class="side a"><span class="tagline">Option A</span><h2>In-house team</h2><p>People on your payroll who work only on your site and know your business from the inside.</p><p class="ch"><b>Choose it if</b>SEO is central to revenue and you can hire and keep specialists.</p></div>
+      <div class="vs" aria-hidden="true"><span>VS</span></div>
+      <div class="side b"><span class="tagline">Option B</span><h2>SEO agency</h2><p>An outside team with specialists in content, technical SEO and links, working to a retainer.</p><p class="ch"><b>Choose it if</b>You need a full set of skills now, without hiring a team.</p></div>
+    </div>
+    <div class="tally" aria-label="Rounds won">
+      <div class="row"><span>In-house <b>3</b></span><span>Tie <b>1</b></span><span><b>3</b> Agency</span></div>
+      <div class="tbar" aria-hidden="true"><i class="ta" style="flex:3"></i><i class="tt" style="flex:1"></i><i class="tb" style="flex:3"></i></div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <div class="main">
+    <div class="answer"><p class="t">Short answer</p><p>An agency is usually the better start for companies spending under the cost of two full-time specialists, because you get every skill at once. An in-house team wins once SEO drives a large share of revenue and you need someone inside every product decision.</p></div>
+    <div class="prose"><p>Most companies ask this question after SEO has started to matter, but before they know what it needs. The answer depends less on which option is better in general and more on your budget, how fast you need results, and how close SEO sits to your product.</p></div>
+
+    <div class="sec-h" id="rounds"><span>Round by round</span><h2>How they compare</h2></div>
+    <div class="rounds">
+      <div class="rhead" aria-hidden="true"><span class="ha">In-house team</span><span class="hc">Round</span><span class="hb">SEO agency</span></div>
+      <div class="round wb"><div class="pa"><span class="lbl">In-house team</span>Salaries, tools and training for each specialist. Costs rise with every skill you add.</div><div class="mid"><h3>Cost</h3><span class="ptr wb">Agency &rarr;</span></div><div class="pb"><span class="lbl">SEO agency</span>One monthly retainer covers several specialists and their tools.</div></div>
+      <div class="round wb"><div class="pa"><span class="lbl">In-house team</span>Hiring takes months, then people need time to learn the site.</div><div class="mid"><h3>Speed to start</h3><span class="ptr wb">Agency &rarr;</span></div><div class="pb"><span class="lbl">SEO agency</span>Work can start within weeks of signing.</div></div>
+      <div class="round wb"><div class="pa"><span class="lbl">In-house team</span>Depth in the skills you hire for, gaps everywhere else.</div><div class="mid"><h3>Range of skills</h3><span class="ptr wb">Agency &rarr;</span></div><div class="pb"><span class="lbl">SEO agency</span>Technical, content and links specialists on one team.</div></div>
+      <div class="round wa"><div class="pa"><span class="lbl">In-house team</span>Knows your products, customers and politics, and hears about changes first.</div><div class="mid"><h3>Knowing your business</h3><span class="ptr wa">&larr; In-house</span></div><div class="pb"><span class="lbl">SEO agency</span>Learns your business from briefings and calls, and can miss context.</div></div>
+      <div class="round wa"><div class="pa"><span class="lbl">In-house team</span>In the room for product and site decisions, so SEO is built in early.</div><div class="mid"><h3>Day-to-day access</h3><span class="ptr wa">&larr; In-house</span></div><div class="pb"><span class="lbl">SEO agency</span>Available on agreed hours and channels.</div></div>
+      <div class="round wa"><div class="pa"><span class="lbl">In-house team</span>You set the priorities every week.</div><div class="mid"><h3>Control</h3><span class="ptr wa">&larr; In-house</span></div><div class="pb"><span class="lbl">SEO agency</span>Priorities follow the agreed scope; changes may need a new brief.</div></div>
+      <div class="round"><div class="pa"><span class="lbl">In-house team</span>Clear ownership, but results depend on a few people.</div><div class="mid"><h3>Accountability</h3><span class="ptr tie">Tie</span></div><div class="pb"><span class="lbl">SEO agency</span>Contracted deliverables, but the agency can be replaced.</div></div>
+    </div>
+
+    <div class="sec-h" id="you"><span>Your call</span><h2>What matters most to you?</h2></div>
+    <div class="pick">
+      <div class="q"><p>Tick the rounds that matter for your business.</p>
+        <div class="chips" id="chips">
+          <label><input type="checkbox" id="c1" data-w="b" checked>Cost</label>
+          <label><input type="checkbox" id="c2" data-w="b">Speed to start</label>
+          <label><input type="checkbox" id="c3" data-w="b" checked>Range of skills</label>
+          <label><input type="checkbox" id="c4" data-w="a">Knowing your business</label>
+          <label><input type="checkbox" id="c5" data-w="a">Day-to-day access</label>
+          <label><input type="checkbox" id="c6" data-w="a">Control</label>
+          <label><input type="checkbox" id="c7" data-w="t">Accountability</label>
+        </div>
+      </div>
+      <div class="res" aria-live="polite"><span class="t">For you</span><span class="w cb" id="win">SEO agency</span><span class="s" id="why">Wins 2 of the 2 rounds you picked.</span></div>
+    </div>
+
+    <div class="sec-h" id="table"><span>Side by side</span><h2>The details</h2></div>
+    <div class="tw"><table>
+      <thead><tr><th scope="col"></th><th scope="col" class="ca">In-house team</th><th scope="col" class="cb">SEO agency</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">What you pay for</th><td>Salaries, benefits, tools, training</td><td>A monthly retainer or project fee</td></tr>
+        <tr><th scope="row">Time to first work</th><td>3 to 6 months, including hiring</td><td>2 to 4 weeks</td></tr>
+        <tr><th scope="row">Skills covered</th><td>The ones you hire</td><td>Technical, content, links, reporting</td></tr>
+        <tr><th scope="row">Main risk</th><td>Losing a key person</td><td>Shallow knowledge of your business</td></tr>
+        <tr><th scope="row">Best for</th><td>Large sites where SEO drives revenue</td><td>Growing companies building SEO from scratch</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="sec-h"><span>Quick decision</span><h2>Winner by situation</h2></div>
+    <div class="uses">
+      <div class="use"><span class="u">You are starting SEO from scratch</span><span class="p cb">SEO agency</span><span class="why">Every skill from day one, no hiring.</span></div>
+      <div class="use"><span class="u">SEO drives most of your revenue</span><span class="p ca">In-house team</span><span class="why">Someone inside every product decision.</span></div>
+      <div class="use"><span class="u">You need results this quarter</span><span class="p cb">SEO agency</span><span class="why">Starts within weeks.</span></div>
+      <div class="use"><span class="u">Your product changes every week</span><span class="p ca">In-house team</span><span class="why">Hears about changes first.</span></div>
+    </div>
+    <div class="both"><span class="mix" aria-hidden="true"><i></i><i></i></span><div><h3>Or use both</h3><p>Many companies keep one in-house SEO lead who owns priorities and brings in an agency for technical work and content at scale. It costs more than either alone, and it covers the gaps in each.</p></div></div>
+
+    <aside class="icta" aria-label="Reinforce Lab service"><div><p class="lbl">Reinforce Lab service · Enterprise SEO Strategy</p><p class="hd">Not sure which way to go?</p><p class="csub">We look at your site, team and budget, and tell you what to hire, what to outsource and in what order.</p></div><div class="act2"><a class="go2" href="#">See how it works &rarr;</a><a class="alt" href="#">Or get a free diagnostic first</a></div></aside>
+
+    <section class="verdict" aria-label="Our verdict"><p class="t">Our verdict</p><p>Start with an agency if you are building SEO from scratch or need a full set of skills fast. Move to an in-house team, or a lead plus an agency, once SEO drives enough revenue to justify specialists on the payroll.</p></section>
+  </div>
+
+  <section class="back" aria-label="Questions and sources">
+    <div class="faq"><div class="sec-h"><span>Questions</span><h2>FAQs</h2></div>
+      <details open><summary>Is an agency cheaper than an in-house SEO?</summary><p>Usually, until you need more than one or two specialists full time. Compare the full cost of each hire, including tools and training, with the retainer.</p></details>
+      <details><summary>Can I switch from an agency to in-house later?</summary><p>Yes. Ask the agency for full access to every account and document from the start, so the handover is simple.</p></details>
+    </div>
+    <div class="src"><div class="sec-h"><span>Evidence</span><h2>Sources</h2></div>
+      <ol><li><a href="#">Google Search Central, Do you need an SEO?</a></li><li><a href="#">Google Search Central, SEO Starter Guide</a></li></ol>
+    </div>
+  </section>
+
+  <aside class="author" aria-label="About the author"><span class="av" aria-hidden="true">J</span><div><p class="nm">Jamil Ahmed</p><p class="role">Founder and CEO, Reinforce Lab</p><p>Pharmacist, SEO and AI search consultant, and Semrush Ambassador.</p></div></aside>
+</div>
+
+<script>
+(function(){
+  var boxes=[].slice.call(document.querySelectorAll('#chips input')), w=document.getElementById('win'), y=document.getElementById('why');
+  var names={a:'In-house team',b:'SEO agency'};
+  function run(){
+    var on=boxes.filter(function(b){return b.checked;}), a=0, b=0;
+    on.forEach(function(x){ if(x.dataset.w==='a') a++; else if(x.dataset.w==='b') b++; });
+    w.className='w';
+    if(!on.length){ w.textContent='Pick a round'; y.textContent='Tick at least one round to see a result.'; return; }
+    if(a===b){ w.textContent='It is a tie'; y.textContent='Each side wins '+a+' of the '+on.length+' rounds you picked. Look at the use cases below.'; return; }
+    var k=a>b?'a':'b'; w.textContent=names[k]; w.classList.add(k==='a'?'ca':'cb');
+    y.textContent='Wins '+(k==='a'?a:b)+' of the '+on.length+' round'+(on.length>1?'s':'')+' you picked.';
+  }
+  boxes.forEach(function(b){b.addEventListener('change',run);}); run();
+})();
+</script>
