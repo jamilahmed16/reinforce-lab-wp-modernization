@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - Post type sections
- * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide, How-To, Best / List, Review, Comparison, Explainer, Industry and Updates have their own design files (reinforce-post-guide.php, -howto.php, -list.php, -review.php, -comparison.php, -explainer.php, -industry.php, -updates.php).
+ * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide, How-To, Best / List, Review, Comparison, Explainer, Industry, Updates and Case Study have their own design files (reinforce-post-guide.php, -howto.php, -list.php, -review.php, -comparison.php, -explainer.php, -industry.php, -updates.php, -casestudy.php).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -53,16 +53,7 @@ add_action('acf/init', function () {
             // Comparison fields live in reinforce-post-comparison.php (D-077)
             // Industry fields live in reinforce-post-industry.php (D-077)
             // Updates fields live in reinforce-post-updates.php (D-077)
-            // Case Study
-            $tx('rl_cs_client', 'Client', 'casestudy', 'The client name, or an anonymised description such as "A UK pharmaceutical manufacturer".'),
-            $tf('rl_cs_named', 'Client agreed to be named', 'casestudy', 'Off = the client is shown anonymised.'),
-            $tf('rl_cs_permission', 'Client approved this case study', 'casestudy', 'Required. A case study without approval cannot be published.'),
-            $sel('rl_cs_industry', 'Industry', 'casestudy', rl_pt_industries()),
-            $ta('rl_cs_challenge', 'Challenge', 'casestudy', '', 3),
-            $ta('rl_cs_approach', 'Approach', 'casestudy', 'One step per line.', 4),
-            $ta('rl_cs_results', 'Measured results', 'casestudy', 'One per line: Metric | Result | Period and data source. Real, measured numbers only.', 4),
-            $ta('rl_cs_quote', 'Client quote', 'casestudy', 'Exact words, approved by the client.', 3),
-            $tx('rl_cs_quote_by', 'Quote by', 'casestudy', 'Name and role, or role only if anonymised.'),
+            // Case Study fields and the approval guard live in reinforce-post-casestudy.php (D-077)
             // Research
             $ta('rl_rs_findings', 'Key findings', 'research', 'One per line.', 5),
             $ta('rl_rs_method', 'Method', 'research', 'How the data was collected and analysed.', 4),
@@ -76,14 +67,6 @@ add_action('acf/init', function () {
         ],
     ]);
 });
-
-/* Case studies need client approval before they can go live. */
-add_action('acf/save_post', function ($post_id) {
-    if (get_post_type($post_id) !== 'post' || get_post_status($post_id) !== 'publish') return;
-    if ((string) get_post_meta($post_id, 'rl_type', true) !== 'casestudy') return;
-    if (get_post_meta($post_id, 'rl_cs_permission', true)) return;
-    wp_update_post(['ID' => $post_id, 'post_status' => 'draft']); // stays a draft until the approval box is ticked
-}, 20);
 
 /* ---------- helpers ---------- */
 function rl_pt_rows($v, $min = 2) {
@@ -111,22 +94,6 @@ function rl_pt_svc_link($path) {
 add_action('rl_post_type_sections_before', function ($type, $id, $d) {
     $u = function ($path) { return function_exists('rl_url_by_path') ? rl_url_by_path($path, '') : ''; };
     switch ($type) {
-        case 'casestudy':
-            $client = rl_pt_m($id, 'rl_cs_client'); $k = rl_pt_m($id, 'rl_cs_industry');
-            $indname = ($k !== '' && function_exists('rl_ind_data') && isset(rl_ind_data()[$k])) ? rl_ind_data()[$k]['name'] : '';
-            $res = rl_pt_rows(get_post_meta($id, 'rl_cs_results', true));
-            $h = '<div class="facts">' . ($client !== '' ? '<div><span>Client</span><b>' . esc_html($client) . '</b></div>' : '') . ($indname ? '<div><span>Industry</span><b>' . esc_html($indname) . '</b></div>' : '') . '</div>';
-            $ch = rl_pt_m($id, 'rl_cs_challenge');
-            if ($ch !== '') $h .= '<p class="sub">The challenge</p><p>' . esc_html($ch) . '</p>';
-            if ($res) {
-                $h .= '<div class="metrics">';
-                foreach ($res as $r) $h .= '<div class="mt"><b>' . esc_html($r[1]) . '</b><span>' . esc_html($r[0]) . '</span>' . (!empty($r[2]) ? '<small>' . esc_html($r[2]) . '</small>' : '') . '</div>';
-                $h .= '</div>';
-            }
-            if ($client !== '' || $ch !== '' || $res) echo rl_pt_box('case', 'Case study', $h);
-            $ap = rl_post_lines(get_post_meta($id, 'rl_cs_approach', true));
-            if ($ap) echo rl_pt_box('approach', 'Our approach', '<ol class="num">' . implode('', array_map(function ($x) { return '<li>' . esc_html($x) . '</li>'; }, $ap)) . '</ol>');
-            break;
         case 'research':
             $f = rl_post_lines(get_post_meta($id, 'rl_rs_findings', true));
             if ($f) echo rl_pt_box('findings', 'Key findings', '<ol class="num">' . implode('', array_map(function ($x) { return '<li>' . esc_html($x) . '</li>'; }, $f)) . '</ol>');
@@ -150,10 +117,6 @@ function rl_pt_minutes_label($m) { $m = (int) round($m); if ($m < 60) return $m 
 /* ---------- after the body ---------- */
 add_action('rl_post_type_sections_after', function ($type, $id, $d) {
     switch ($type) {
-        case 'casestudy':
-            $q = rl_pt_m($id, 'rl_cs_quote'); $by = rl_pt_m($id, 'rl_cs_quote_by');
-            if ($q !== '') echo '<figure class="ptb quote"><blockquote>' . esc_html($q) . '</blockquote>' . ($by !== '' ? '<figcaption>' . esc_html($by) . '</figcaption>' : '') . '</figure>';
-            break;
         case 'research':
             $cite = 'Reinforce Lab (' . get_the_date('Y', $id) . '). ' . get_the_title($id) . '. ' . get_permalink($id);
             echo rl_pt_box('cite', 'Cite this research', '<p class="mono">' . esc_html($cite) . '</p>');
