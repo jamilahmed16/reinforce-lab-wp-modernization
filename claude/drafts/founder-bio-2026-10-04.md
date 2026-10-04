@@ -1,6 +1,6 @@
 # Founder bio: drafts for Jamil's approval (4 Oct 2026)
 
-Status: DRAFT. Nothing below is on `.online` yet.
+Status: author box DONE with Jamil's own wording (D-104), not these options. The About page section and Person schema line below are still drafts, not applied.
 
 Built only from confirmed facts: Founder and CEO of Reinforce Lab (founded 2020, Bangladesh); pharmacist; SEO and AI search consultant; Semrush Ambassador; offices in Dhaka and Katy, Texas; clients worldwide; builds AI Growth Systems with AI automation, AI Search Optimization, SEO and workflows (D-008 LinkedIn headline, D-068, D-069).
 Lines marked INFERENCE are reasonable readings of those facts, not stated facts. Jamil to confirm or cut.

@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-104 | Founder bio for the author box: Jamil's own wording, applied on `.online` | 4 Oct | DONE (Jamil: "Like this now modify this") | this file |
 | D-103 | Product / Service template built on `.online`: all blog templates done | 4 Oct | DONE (Jamil: "approved, build the Product / Service template") | this file |
 | D-102 | Product / Service template: design mockup v1 (three subtypes) for review | 4 Oct | APPROVED, built as D-103 | this file |
 | D-101 | Research template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Research template") | this file |
@@ -160,6 +161,20 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-104 · Founder bio for the author box: Jamil's own wording, applied on `.online`
+**Date:** 4 October 2026 · **Status:** DONE (Jamil supplied the text: "Like this now modify this"; D-084 item 1)
+
+**The bio (Jamil's wording, two fixes only):**
+> Jamil Ahmed is an SEO and AI search consultant. He founded Reinforce Lab in 2020 and runs it as CEO. Jamil is a pharmacist and a Semrush Ambassador. He builds AI Growth Systems for companies: website, content and search visibility connected by AI automation, so the business is found on Google and in AI answers and turns that attention into revenue.
+
+Fixes: "He is builds" to "He builds"; the spaced hyphen before "website" became a colon (D-072, no dashes). Copy check 0 issues. Pronoun "he" is Jamil's own.
+
+**Where it lives:** the WordPress user profile of `jamilahmed` (user 3), field "Biographical Info" (`description`), on `.online` only. It was empty before (recorded), so every author box showed the built-in default text; the author box in every post design reads this field first. **VERIFIED:** an in-memory post render shows the new bio in the author box. **INFERENCE, not yet verifiable:** Yoast also uses this field as the Person `description` on posts; there are no published posts by Jamil on `.online` to check it on.
+
+**Not changed (for Jamil to decide):** the About page founder section and its Person schema line still use the earlier wording ("Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador."), and the longer About draft in `claude/drafts/founder-bio-2026-10-04.md` is unused. Production is untouched.
 
 ---
 
