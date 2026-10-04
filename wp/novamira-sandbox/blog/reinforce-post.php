@@ -249,13 +249,14 @@ function rl_post_output() {
         $founder = function_exists('rl_about_person') && $aname === rl_about_person()['name'] ? rl_about_person() : null;
         $bio = trim(wp_strip_all_tags(get_the_author_meta('description', $aid)));
         $about = $u('about-us');
-        // Guide, How-To, Best / List, Review, Comparison and Explainer posts use their own approved designs (D-077); every other type keeps this layout until its design is approved.
+        // Guide, How-To, Best / List, Review, Comparison, Explainer and Industry posts use their own approved designs (D-077); every other type keeps this layout until its design is approved.
         if ($d['type'] === 'guide' && function_exists('rl_guide_render')) { rl_guide_render(compact('id', 'd', 'body', 'toc', 'mins', 'blog_url', 'cat', 'aname', 'founder', 'bio', 'about', 'u')); continue; }
         if ($d['type'] === 'howto' && function_exists('rl_howto_render')) { rl_howto_render(compact('id', 'd', 'body', 'toc', 'mins', 'blog_url', 'cat', 'aname', 'founder', 'bio', 'about', 'u')); continue; }
         if ($d['type'] === 'list' && function_exists('rl_list_render')) { rl_list_render(compact('id', 'd', 'body', 'toc', 'mins', 'blog_url', 'cat', 'aname', 'founder', 'bio', 'about', 'u')); continue; }
         if ($d['type'] === 'review' && function_exists('rl_review_render')) { rl_review_render(compact('id', 'd', 'body', 'toc', 'mins', 'blog_url', 'cat', 'aname', 'founder', 'bio', 'about', 'u')); continue; }
         if ($d['type'] === 'comparison' && function_exists('rl_cmp_render')) { rl_cmp_render(compact('id', 'd', 'body', 'toc', 'mins', 'blog_url', 'cat', 'aname', 'founder', 'bio', 'about', 'u')); continue; }
         if ($d['type'] === 'explainer' && function_exists('rl_explainer_render')) { rl_explainer_render(compact('id', 'd', 'body', 'toc', 'mins', 'blog_url', 'cat', 'aname', 'founder', 'bio', 'about', 'u')); continue; }
+        if ($d['type'] === 'industry' && function_exists('rl_industry_render')) { rl_industry_render(compact('id', 'd', 'body', 'toc', 'mins', 'blog_url', 'cat', 'aname', 'founder', 'bio', 'about', 'u')); continue; }
         ?>
 <div class="rl-page rl-post">
 

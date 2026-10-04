@@ -36,6 +36,7 @@ foreach ([
     'blog/reinforce-post-explainer.php',
     'blog/reinforce-post-guide.php',
     'blog/reinforce-post-howto.php',
+    'blog/reinforce-post-industry.php',
     'blog/reinforce-post-list.php',
     'blog/reinforce-post-review.php',
     'blog/reinforce-post-types.php',

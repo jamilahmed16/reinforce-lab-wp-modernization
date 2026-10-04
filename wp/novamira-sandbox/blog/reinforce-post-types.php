@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - Post type sections
- * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide, How-To, Best / List, Review, Comparison and Explainer have their own design files (reinforce-post-guide.php, -howto.php, -list.php, -review.php, -comparison.php, -explainer.php).
+ * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide, How-To, Best / List, Review, Comparison, Explainer and Industry have their own design files (reinforce-post-guide.php, -howto.php, -list.php, -review.php, -comparison.php, -explainer.php, -industry.php).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -51,9 +51,7 @@ add_action('acf/init', function () {
             // Best / List fields live in reinforce-post-list.php (D-077)
             // Review fields live in reinforce-post-review.php (D-077)
             // Comparison fields live in reinforce-post-comparison.php (D-077)
-            // Industry
-            $sel('rl_i_industry', 'Industry', 'industry', rl_pt_industries()),
-            $ta('rl_i_rules', 'Sector rules and cautions', 'industry', 'One per line: Rule | What it means for this topic', 4),
+            // Industry fields live in reinforce-post-industry.php (D-077)
             // Updates
             $ta('rl_u_what', 'What changed', 'updates', '', 3),
             $ta('rl_u_means', 'What it means', 'updates', '', 3),
@@ -118,13 +116,6 @@ function rl_pt_svc_link($path) {
 add_action('rl_post_type_sections_before', function ($type, $id, $d) {
     $u = function ($path) { return function_exists('rl_url_by_path') ? rl_url_by_path($path, '') : ''; };
     switch ($type) {
-        case 'industry':
-            $k = rl_pt_m($id, 'rl_i_industry');
-            if ($k !== '' && function_exists('rl_ind_data') && isset(rl_ind_data()[$k])) {
-                $ind = rl_ind_data()[$k]; $l = $u('industries/' . $k);
-                echo rl_pt_box('indbox', 'Industry: ' . $ind['name'], '<p>' . esc_html($ind['sum']) . '</p>' . ($l ? '<a class="more" href="' . esc_url($l) . '">How we work with ' . esc_html($ind['name']) . ' &rarr;</a>' : ''));
-            }
-            break;
         case 'updates':
             $w = rl_pt_m($id, 'rl_u_what'); $m = rl_pt_m($id, 'rl_u_means'); $do = rl_post_lines(get_post_meta($id, 'rl_u_do', true));
             if ($w !== '' || $m !== '' || $do) {
@@ -176,16 +167,6 @@ function rl_pt_minutes_label($m) { $m = (int) round($m); if ($m < 60) return $m 
 /* ---------- after the body ---------- */
 add_action('rl_post_type_sections_after', function ($type, $id, $d) {
     switch ($type) {
-        case 'industry':
-            $rules = rl_pt_rows(get_post_meta($id, 'rl_i_rules', true));
-            if ($rules) { $h = '<dl class="gloss">'; foreach ($rules as $r) $h .= '<dt>' . esc_html($r[0]) . '</dt><dd>' . esc_html($r[1]) . '</dd>'; echo rl_pt_box('rules', 'Sector rules to know', $h . '</dl>'); }
-            $k = rl_pt_m($id, 'rl_i_industry');
-            if ($k !== '' && function_exists('rl_ind_data') && isset(rl_ind_data()[$k]) && function_exists('rl_url_by_path')) {
-                $h = '<ul class="links">';
-                foreach (array_slice(rl_ind_data()[$k]['svc'], 0, 4) as $s) { $l = rl_url_by_path($s[0], ''); $h .= '<li>' . rl_pt_link($s[1], $l) . ($s[2] ? '<span class="muted"> · ' . esc_html($s[2]) . '</span>' : '') . '</li>'; }
-                echo rl_pt_box('indsvc', 'Services for ' . rl_ind_data()[$k]['name'], $h . '</ul>');
-            }
-            break;
         case 'updates':
             $log = rl_pt_rows(get_post_meta($id, 'rl_u_log', true));
             if ($log) { $h = '<dl class="gloss log">'; foreach ($log as $r) { $dt = rl_pt_date($r[0]); $h .= '<dt><time datetime="' . esc_attr($dt) . '">' . esc_html($dt ? date_i18n('j M Y', strtotime($dt)) : $r[0]) . '</time></dt><dd>' . esc_html($r[1]) . '</dd>'; } echo rl_pt_box('log', 'Update log', $h . '</dl>'); }
@@ -222,10 +203,6 @@ add_filter('wpseo_schema_graph', function ($graph) {
                     'distribution' => [['@type' => 'DataDownload', 'contentUrl' => $ds]]];
                 $s = rl_pt_m($id, 'rl_rs_sample'); if ($s !== '') $add['variableMeasured'] = $s;
             }
-            break;
-        case 'industry':
-            $k = rl_pt_m($id, 'rl_i_industry');
-            if ($k !== '' && function_exists('rl_ind_data') && isset(rl_ind_data()[$k])) $about = ['@type' => 'Thing', 'name' => rl_ind_data()[$k]['name']];
             break;
         case 'product':
             [$sl, $sn] = rl_pt_svc_link(rl_pt_m($id, 'rl_p_service'));
