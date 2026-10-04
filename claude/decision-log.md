@@ -597,6 +597,53 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-078 · Guide template built on `.online` from the approved mockup
+**Date:** 4 October 2026 · **Status:** DONE (Jamil: "approved, build the Guide template")
+
+**Files:**
+- `wp/novamira-sandbox/reinforce-post-guide.php` (new; guarded create; live md5 = repo `92df9ea5…`).
+- `reinforce-post.php`: hands Guide posts to `rl_guide_render()`, one line (backup `.bak-20261004-110803`, md5 `b8f2a263…`).
+- `reinforce-post-types.php`: the placeholder Guide fields and boxes from D-076 were removed, so nothing is defined twice (md5 `9f6ae46f…`).
+
+There is still **one** template entry point and no Themer singular layout (F-001). Other types keep the base layout until their own design is approved (D-077).
+
+**How the editor's input maps to the design:**
+- **Chapters are built automatically from the H2 headings:** chapter number, minutes per chapter, contents plate, chapter rail, "End of chapter / Next" links. Text before the first H2 renders as an intro.
+- **Cover:**
+  - title (the part after a colon shows in red);
+  - standfirst = the WordPress excerpt;
+  - two chips only (Guide + main category, D-077 review 1);
+  - byline with published and real updated dates;
+  - plate with chapters, total minutes and "A to Z" when a glossary exists.
+- **New Guide fields:**
+  - Start here paths ("Who it is for | Card text | #heading-id or URL", up to 3; shows "Chapter NN" when the link is a chapter);
+  - in-article CTA: service (from the services list), after chapter N (default 2), headline, one line, button text. The diagnostic link is added automatically;
+  - Glossary ("Term | Definition", sorted A to Z; anchors `#term-…`; text links to `#term-…` get a dotted underline);
+  - Supporting articles hub ("Type | Title | URL"; when empty, 3 related articles show instead).
+- **In the body:**
+  - a quote block renders as the large pull quote;
+  - a paragraph or block with the CSS class `tip` renders as the Tip box;
+  - image blocks render as framed figures with captions;
+  - tables scroll on phones.
+- **Shared parts still used:** short answer, numbered key takeaways, FAQs and sources side by side, author box, diagnostic CTA.
+- **Phones:** the chapter rail becomes a sticky "Chapter NN of NN · % read" bar with a progress line.
+- **Schema:** the base BlogPosting, Person and FAQPage, **plus a DefinedTermSet** for the glossary.
+
+**Verified (in memory, no post written, F-003):**
+- A sample guide with 6 chapters was rendered through the live template: 1 H1, the 6 chapter ids built from the H2s, every section present, schema as above.
+- Desktop and phone screenshots compared against the mockup.
+- **Fixed after the first render:**
+  - the excerpt printed raw `<p>` tags;
+  - the CTA line picked up the kit's `.sub` style;
+  - the kit's section padding doubled the chapter gaps.
+- Phone width is exactly 390 px; `copy-check.py`: 0 issues.
+
+**At the first real guide:** Rich Results Test, the live phone check, and confirming the sticky bar's top offset against the live header.
+
+**Next (D-077 process):** design mockup for the next type, chosen by Jamil.
+
+---
+
 ## D-077 · Blog templates: one type at a time, own design per type, mockup before code
 **Date:** 3 October 2026 · **Status:** APPROVED (Jamil: "Why every blog templates look and feel almost similar and looks like a common template" … "work on one template at a time. Otherwise it always happens")
 

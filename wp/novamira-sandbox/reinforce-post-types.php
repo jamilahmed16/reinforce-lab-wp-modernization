@@ -45,10 +45,7 @@ add_action('acf/init', function () {
         'key' => 'group_rl_post_types', 'title' => 'Article type sections (Reinforce Lab)', 'position' => 'normal', 'menu_order' => 5,
         'location' => [[['param' => 'post_type', 'operator' => '==', 'value' => 'post']]],
         'fields' => [
-            // Guide
-            $ta('rl_g_start', 'Start here paths', 'guide', 'One per line: Who it is for | #section-id or URL. Example: New to SEO | #what-is-seo'),
-            $ta('rl_g_glossary', 'Glossary', 'guide', 'One per line: Term | Plain definition', 6),
-            $ta('rl_g_series', 'Supporting articles', 'guide', 'One per line: Article title | URL'),
+            // Guide fields live in reinforce-post-guide.php (D-077)
             // How-To
             $num('rl_h_minutes', 'Time needed (minutes)', 'howto', 1, 10000),
             $sel('rl_h_level', 'Level', 'howto', ['beginner' => 'Beginner', 'intermediate' => 'Intermediate', 'advanced' => 'Advanced']),
@@ -146,14 +143,6 @@ function rl_pt_svc_link($path) {
 add_action('rl_post_type_sections_before', function ($type, $id, $d) {
     $u = function ($path) { return function_exists('rl_url_by_path') ? rl_url_by_path($path, '') : ''; };
     switch ($type) {
-        case 'guide':
-            $rows = rl_pt_rows(get_post_meta($id, 'rl_g_start', true));
-            if ($rows) {
-                $h = '<ul class="paths">';
-                foreach ($rows as $r) $h .= '<li>' . rl_pt_link($r[0], $r[1] ?? '') . '</li>';
-                echo rl_pt_box('start', 'Start here', $h . '</ul>');
-            }
-            break;
         case 'howto':
             $min = (float) get_post_meta($id, 'rl_h_minutes', true);
             $lvl = rl_pt_m($id, 'rl_h_level');
@@ -263,12 +252,6 @@ function rl_pt_minutes_label($m) { $m = (int) round($m); if ($m < 60) return $m 
 /* ---------- after the body ---------- */
 add_action('rl_post_type_sections_after', function ($type, $id, $d) {
     switch ($type) {
-        case 'guide':
-            $g = rl_pt_rows(get_post_meta($id, 'rl_g_glossary', true));
-            if ($g) { $h = '<dl class="gloss">'; foreach ($g as $r) $h .= '<dt id="term-' . esc_attr(sanitize_title($r[0])) . '">' . esc_html($r[0]) . '</dt><dd>' . esc_html($r[1]) . '</dd>'; echo rl_pt_box('glossary', 'Glossary', $h . '</dl>'); }
-            $s = rl_pt_rows(get_post_meta($id, 'rl_g_series', true));
-            if ($s) echo rl_pt_box('series', 'Go deeper', '<ul class="links">' . implode('', array_map(function ($r) { return '<li>' . rl_pt_link($r[0], $r[1]) . '</li>'; }, $s)) . '</ul>');
-            break;
         case 'howto':
             $mi = rl_post_lines(get_post_meta($id, 'rl_h_mistakes', true));
             if ($mi) echo rl_pt_box('mistakes', 'Common mistakes', rl_pt_ul($mi, 'cons'));
