@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - Post type sections
- * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide and How-To have their own design files (reinforce-post-guide.php, reinforce-post-howto.php).
+ * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide, How-To and Best / List have their own design files (reinforce-post-guide.php, reinforce-post-howto.php, reinforce-post-list.php).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -51,9 +51,7 @@ add_action('acf/init', function () {
             $tx('rl_e_term', 'Term', 'explainer', 'The exact term being defined.'),
             $ta('rl_e_definition', 'Definition', 'explainer', 'One or two sentences, written to be quoted.', 3),
             $ta('rl_e_related', 'Related terms', 'explainer', 'One per line: Term | URL (URL optional)', 4),
-            // Best / List
-            $ta('rl_l_method', 'How we chose', 'list', 'Criteria and how items were tested or judged.', 4),
-            $ta('rl_l_items', 'Items (in ranked order)', 'list', 'One per line: Name | Best for | One-line verdict | URL (URL optional)', 8),
+            // Best / List fields live in reinforce-post-list.php (D-077)
             // Review
             $tx('rl_r_product', 'Product reviewed', 'review', 'Third-party products only. Never our own services (self-reviews are not eligible).'),
             $num('rl_r_score', 'Score out of 10', 'review', 0, 10),
@@ -141,16 +139,6 @@ add_action('rl_post_type_sections_before', function ($type, $id, $d) {
             $term = rl_pt_m($id, 'rl_e_term'); $def = rl_pt_m($id, 'rl_e_definition');
             if ($term !== '' && $def !== '') echo '<section class="ptb def"><p class="t">Definition</p><dl><dt>' . esc_html($term) . '</dt><dd>' . esc_html($def) . '</dd></dl></section>';
             break;
-        case 'list':
-            $items = rl_pt_rows(get_post_meta($id, 'rl_l_items', true), 1);
-            if ($items) {
-                $h = '<div class="tscroll"><table class="pt-table"><thead><tr><th scope="col">#</th><th scope="col">Name</th><th scope="col">Best for</th><th scope="col">Verdict</th></tr></thead><tbody>';
-                foreach ($items as $i => $r) $h .= '<tr><td class="n">' . ($i + 1) . '</td><th scope="row"><a href="#item-' . ($i + 1) . '">' . esc_html($r[0]) . '</a></th><td>' . esc_html($r[1] ?? '') . '</td><td>' . esc_html($r[2] ?? '') . '</td></tr>';
-                echo rl_pt_box('summary', 'At a glance', $h . '</tbody></table></div>');
-            }
-            $m = rl_pt_m($id, 'rl_l_method');
-            if ($m !== '') echo rl_pt_box('method', 'How we chose', '<p>' . esc_html($m) . '</p>');
-            break;
         case 'review':
             if (get_post_meta($id, 'rl_r_affiliate', true)) echo '<p class="disc">Disclosure: this review contains affiliate links. If you buy through them we may earn a commission, at no extra cost to you. It does not change our verdict.</p>';
             $score = get_post_meta($id, 'rl_r_score', true); $verdict = rl_pt_m($id, 'rl_r_verdict'); $prod = rl_pt_m($id, 'rl_r_product');
@@ -233,14 +221,6 @@ add_action('rl_post_type_sections_after', function ($type, $id, $d) {
             $r = rl_pt_rows(get_post_meta($id, 'rl_e_related', true), 1);
             if ($r) echo rl_pt_box('related-terms', 'Related terms', '<ul class="links">' . implode('', array_map(function ($x) { return '<li>' . rl_pt_link($x[0], $x[1] ?? '') . '</li>'; }, $r)) . '</ul>');
             break;
-        case 'list':
-            $items = rl_pt_rows(get_post_meta($id, 'rl_l_items', true), 1);
-            if ($items) {
-                $h = '<ol class="items">';
-                foreach ($items as $i => $r) $h .= '<li id="item-' . ($i + 1) . '"><span class="k">' . sprintf('%02d', $i + 1) . '</span><div><b>' . rl_pt_link($r[0], $r[3] ?? '') . '</b>' . (!empty($r[1]) ? '<p class="sub">Best for: ' . esc_html($r[1]) . '</p>' : '') . (!empty($r[2]) ? '<p>' . esc_html($r[2]) . '</p>' : '') . '</div></li>';
-                echo rl_pt_box('itembox', 'The list', $h . '</ol>');
-            }
-            break;
         case 'review':
             $price = rl_pt_m($id, 'rl_r_price'); $pd = rl_pt_date(rl_pt_m($id, 'rl_r_price_date'));
             $for = rl_post_lines(get_post_meta($id, 'rl_r_for', true)); $alts = rl_pt_rows(get_post_meta($id, 'rl_r_alts', true), 1);
@@ -294,11 +274,6 @@ add_filter('wpseo_schema_graph', function ($graph) {
         case 'explainer':
             $term = rl_pt_m($id, 'rl_e_term'); $def = rl_pt_m($id, 'rl_e_definition');
             if ($term !== '' && $def !== '') { $add = ['@type' => 'DefinedTerm', '@id' => $url . '#term', 'name' => $term, 'description' => $def, 'url' => $url]; $about = ['@id' => $url . '#term']; }
-            break;
-        case 'list':
-            $items = rl_pt_rows(get_post_meta($id, 'rl_l_items', true), 1);
-            if ($items) $add = ['@type' => 'ItemList', '@id' => $url . '#list', 'name' => get_the_title($id), 'numberOfItems' => count($items), 'itemListOrder' => 'https://schema.org/ItemListOrderAscending',
-                'itemListElement' => array_map(function ($r, $i) use ($url) { return ['@type' => 'ListItem', 'position' => $i + 1, 'name' => $r[0], 'url' => !empty($r[3]) ? $r[3] : $url . '#item-' . ($i + 1)]; }, $items, array_keys($items))];
             break;
         case 'review':
             $prod = rl_pt_m($id, 'rl_r_product'); $score = get_post_meta($id, 'rl_r_score', true);
