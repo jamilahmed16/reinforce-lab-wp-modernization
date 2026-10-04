@@ -20,7 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
-| D-084 | Founder bio: drafts for review | 4 Oct | AWAITING JAMIL'S CHOICE | this file |
+| D-084 | Founder bio: drafts for review | 4 Oct | DEFERRED until the blog templates are finished | this file |
 | D-083 | GitHub navigation: README, folder guides, generated site map | 4 Oct | DONE | this file |
 | D-082 | How-To template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
 | D-081 | Step B, part 2: decision log split into an index, the current month and monthly archives | 4 Oct | DONE | this file |
@@ -146,6 +146,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 ## D-084 · Founder bio: drafts for review
 **Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S CHOICE (Jamil: "You already know my bio. write a better one my bio is poor")
+
+**Deferred (4 Oct):** Jamil: "can you do it just after finishing the templates first". The bio choice and the merge of this branch into `main` wait until every blog template is built. Return to both straight after the last template.
 
 Drafts in `claude/drafts/founder-bio-2026-10-04.md`: two author-box options (A: what Jamil builds; B: why a reader should trust the article), a longer About founder section, and a one-line Person schema description. Built only from confirmed facts (D-008, D-068, D-069); two lines are marked INFERENCE for Jamil to confirm or cut. The file also lists facts that would strengthen the bio if Jamil supplies them (years in SEO, pharmacy qualification, Ambassador since, talks or named clients). Nothing changed on `.online`. Once chosen, the bio goes into the author box (`blog/reinforce-post.php`, `blog/reinforce-post-guide.php`), the About founder section and the Person schema in `pages/reinforce-about.php`, and the mockups.
 
