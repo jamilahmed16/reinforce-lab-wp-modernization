@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| F-023 | Reputation and recognition research: one independently verified award (HackerNoon, Dhaka 2024), conflicting public facts | 4 Oct | `[VERIFIED where marked; rest SELF-REPORTED]` | this file |
 | D-104 | Founder bio for the author box: Jamil's own wording, applied on `.online` | 4 Oct | DONE (Jamil: "Like this now modify this") | this file |
 | D-103 | Product / Service template built on `.online`: all blog templates done | 4 Oct | DONE (Jamil: "approved, build the Product / Service template") | this file |
 | D-102 | Product / Service template: design mockup v1 (three subtypes) for review | 4 Oct | APPROVED, built as D-103 | this file |
@@ -161,6 +162,19 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## F-023 · Reputation and recognition: what can be shown, and what public sources disagree on
+**Date:** 4 October 2026 · **Status:** `[VERIFIED where marked; rest SELF-REPORTED]` (Jamil: "research about reinforce lab it's reputation awards with claude and exai as well")
+
+Full brief with every source: `claude/research/reputation-and-recognition-2026-10-04.md`. Web search plus Exa.
+
+- **VERIFIED, safe to show with a link:** HackerNoon Startups of The Year 2024, **winner in Dhaka, Bangladesh** (HackerNoon's own Asia winners page); a HackerNoon "Startups of the Week" feature (Nov 2025); Semrush Agency Partner listing; Onalytica interview with Jamil (2018), which also documents his pharma career (oncology international business from 2012, Square Group, Janssen) and B.Pharm from East West University.
+- **VERIFIED but not recommended:** CEO Monthly "Most Impactful Branding & Marketing CEO of the Year 2024 (Bangladesh)". CEO Monthly belongs to AI Global Media, described on Wikipedia as an organiser of vanity awards (ASA ruling 2018).
+- **SELF-REPORTED only:** HackerNoon "#11 in Marketing globally", GoodFirms top SEO and Branding, FindBestFirms best WordPress agency, WP Engine partner, "first Bangladeshi Semrush certified agency", Fit Small Business / SaleHoo / Onalytica influencer lists, 160+ clients, 12.98 million BDT raised, INPACE acquisition (April 2021) and European origin.
+- **Reviews:** Google 4.6 from 8 reviews (2021); Clutch and GoodFirms profiles have **no reviews**. No complaints or negative coverage found.
+- **Public facts disagree:** founding year (2018, 2020, 2021, 2022 across sources), size (2 to 9 up to 11 to 50), US office (Katy, Houston, a "Texas, Georgia" error, a Las Vegas address on GoodFirms), Dhaka suite (1402 vs 601), origin story. **Jamil to settle these before the About page uses them.** Directory profiles are Jamil's accounts, not production pages; nothing was changed anywhere.
 
 ---
 

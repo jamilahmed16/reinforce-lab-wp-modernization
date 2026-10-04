@@ -1,0 +1,79 @@
+# Reinforce Lab: reputation, recognition and public mentions
+
+**Date:** 4 October 2026 · **For:** the About page rebuild (Jamil: "research about reinforce lab it's reputation awards with claude and exai as well") · **Finding:** F-023
+
+**How this was done:** web search (standard and extended) plus Exa search and page reads. Each item is marked:
+
+- **VERIFIED:** seen on the awarding or listing body's own page.
+- **SELF-REPORTED:** only found in Reinforce Lab's or Jamil's own posts, press releases or profiles.
+- **NOT FOUND:** searched for, with no independent source found.
+
+Two sites (hackernoon.com, clutch.co) block this environment's direct fetch; they were read through Exa instead. Nothing here is invented. Where sources disagree, both are listed and Jamil decides.
+
+---
+
+## 1. Awards and recognition
+
+| Recognition | Who gave it | Year | Status | Source |
+|---|---|---|---|---|
+| **Startups of The Year 2024: winner in Dhaka, Bangladesh** | HackerNoon (community vote) | 2024 (announced 24 Apr 2025) | **VERIFIED.** HackerNoon's Asia winners page: "Congratulations Reinforce Lab Limited, winner of Startups of The Year 2024 in Dhaka, Bangladesh." | [HackerNoon: Winners, Asia](https://hackernoon.com/startups-of-the-year-2024-winners-asia) · [company page](https://hackernoon.com/company/reinforcelablimited) |
+| "#11 in Marketing globally, against 8,000 marketing startups" | HackerNoon | 2024 | **SELF-REPORTED** only (company LinkedIn post). Not seen on a HackerNoon page. | [LinkedIn post, May 2025](https://www.linkedin.com/posts/reinforcelabltd_ventures-healthcare-education-activity-7325487533310517249-hDep) |
+| HackerNoon "Startups of the Week" feature | HackerNoon | 14 Nov 2025 | **VERIFIED** (feature article lists Reinforce Lab, "nominated amongst the top startups in Marketing, Creative Agency, and Media Production"). | [HackerNoon Startups of the Week](https://terminal.hackernoon.com/meet-manc-sport-reinforce-lab-limited-and-klatch-technologies-hackernoon-startups-of-the-week) |
+| **Most Impactful Branding & Marketing CEO of the Year 2024 (Bangladesh): Jamil Ahmed** | CEO Monthly, Chairperson Awards 2024 | 2024 | **VERIFIED** (winner page on CEO Monthly). **Caution:** CEO Monthly is one of the magazines of AI Global Media, which Wikipedia describes as an organiser of "vanity awards" whose winners are invited to buy publicity, trophies and logos; in 2018 the UK Advertising Standards Authority upheld a complaint about how it presented its selection process. [Wikipedia: AI Global Media](https://en.wikipedia.org/wiki/AI_Global_Media) | [CEO Monthly winner page](https://www.ceo-review.com/winners/reinforce-lab-reinventing-digital-transformation/) |
+| Top SEO and Branding Company | GoodFirms | 2024 or earlier | **SELF-REPORTED** (press release, DesignRush profile). The GoodFirms profile exists but shows no badge text and "No reviews submitted yet". | [GoodFirms profile](https://www.goodfirms.co/company/reinforce-lab-limited) · [press release](https://www.einpresswire.com/article/753486845/reinforce-lab-a-rising-global-digital-marketing-leader-expanding-across-continents) |
+| Best WordPress Agency | FindBestFirms | 2024 or earlier | **NOT FOUND** independently; only in the company's own press release and DesignRush text. | [press release](https://www.einpresswire.com/article/753486845/reinforce-lab-a-rising-global-digital-marketing-leader-expanding-across-continents) |
+| "First Bangladeshi Semrush certified digital agency" | (claim about Semrush) | May 2023 | **SELF-REPORTED** (Jamil's LinkedIn post). "First" is not confirmed by Semrush. | [LinkedIn post, May 2023](https://www.linkedin.com/posts/ahmedjamil16_digitalmarketing-marketingdigital-marketingstrategy-activity-7062009276659085314-XO_C) |
+
+## 2. Partnerships and credentials
+
+| Item | Status | Source |
+|---|---|---|
+| **Semrush Agency Partner** listing (Dhaka and Katy, "10 to 49 employees, established 2022") | **VERIFIED** in search results for the Semrush agency directory; the profile page itself did not load for a direct read. | [agencies.semrush.com/reinforce-lab-ltd](https://agencies.semrush.com/reinforce-lab-ltd) |
+| **Jamil Ahmed: Semrush Ambassador**, since May 2025 | **SELF-REPORTED** (LinkedIn); no Semrush page found naming him. Already used on the site. | [LinkedIn](https://www.linkedin.com/in/ahmedjamil16/) |
+| WP Engine certified agency partner | **SELF-REPORTED** (press release, DesignRush). Not checked on WP Engine's site. | [press release](https://www.einpresswire.com/article/753486845/reinforce-lab-a-rising-global-digital-marketing-leader-expanding-across-continents) |
+
+## 3. Jamil Ahmed: earlier recognition and press
+
+| Item | Status | Source |
+|---|---|---|
+| Interview: "Interview with Jamil Ahmed", Onalytica blog, 7 Sep 2018 | **VERIFIED.** Also gives his career: international business at a leading oncology pharma company from 2012, Square Group (2016), Product Manager, Immunology, Janssen (Johnson & Johnson) (2017); B.Pharm, East West University, Dhaka. | [Onalytica](https://onalytica.com/blog/posts/interview-jamil-ahmed/) |
+| Top 3 Business Intelligence Marketing Influencer (Onalytica, 2018) | **SELF-REPORTED** (LinkedIn 2020, about.me). The interview is real; the ranking page was not found. | [about.me](https://about.me/jamil_ahmed) |
+| Top E-commerce Influencers 2018 (Fit Small Business) | **SELF-REPORTED.** Only on Jamil's own blog (jadirectives.com) and LinkedIn; the year varies between 2018 and 2019 in his own posts. The Fit Small Business list itself was not found. | [jadirectives.com](https://jadirectives.com/jamil-ahmed-named-top-ecommerce-influencer-by-fit-small-business/) |
+| Top 50 E-commerce Online Sellers & Influencers (SaleHoo) | **SELF-REPORTED** (about.me, LinkedIn). | [about.me](https://about.me/jamil_ahmed) |
+
+## 4. Reviews and ratings (what a buyer would find)
+
+| Platform | What it shows | Status |
+|---|---|---|
+| Google Business profile (Dhaka) | 4.6 out of 5 from 8 reviews; visible reviews dated 2021 | VERIFIED via Exa place listing |
+| Clutch | Profile live, **0 reviews**, "Founded in 2020", 2 to 9 employees, Suite 601 address (old) | VERIFIED |
+| GoodFirms | Profile updated to the AI Growth Systems positioning, **no reviews**, "Founded 2021", 2 to 9 employees, also lists a Las Vegas address (AlphaZero Technologies) | VERIFIED |
+| DesignRush | Profile with old "full-service marketing agency" text, "Year founded 2018", "Texas, Georgia" address error | VERIFIED |
+| Client testimonials on reinforcelab.com | Bikroy (content partner since June 2022), Mrco International | On own site |
+
+**No complaints or negative coverage were found** in any search.
+
+## 5. Where public facts disagree (Jamil to settle before the About page uses any of them)
+
+| Fact | What different sources say |
+|---|---|
+| **Founded** | 2018 (DesignRush, Onalytica 2018 interview already calls him "CEO at Reinforce Lab"), 2020 (Clutch, production About page, our own decisions), 2021 (GoodFirms, LinkedIn), 2022 (HackerNoon, Semrush; press release says incorporated in Dhaka July 2022) |
+| **Origin story** | Press release and DesignRush: "began as a European startup", "acquired by INPACE Management Services Limited (Bangladesh BPO) in April 2021"; LinkedIn shows a presence in Tallinn, Estonia. Production About page: "began our journey of building brands in 2020 in Bangladesh". |
+| **Size** | 2 to 9 (Clutch, GoodFirms), 11 (LinkedIn), 10 to 49 (Semrush), 15 people (Semrush text), 11 to 50 (HackerNoon) |
+| **Clients** | "160+ clients" and "12.98 million BDT raised" (press release, Oct 2024); "50+ companies served, 60+ projects" (2022 company profile PDF) |
+| **Leadership** | Press release: Chairman Md. Kamrul Ahsan, Md. Rahat Khan, CEO and MD Jamil Ahmed. LinkedIn: Rahat Khan, Chairperson of the Board. |
+| **US office** | Katy, Texas (site); "Houston" (HackerNoon LinkedIn post); "Texas, Georgia" (DesignRush, an error); Las Vegas address on GoodFirms |
+| **Dhaka address** | Suite 1402, Level 13 (current site) vs Suite 601, Level 6 (Clutch, 2022 PDF) |
+
+## 6. What this means for the About page (RECOMMENDATION)
+
+**Safe to use now, with a link to the source:**
+- HackerNoon Startups of The Year 2024, winner in Dhaka.
+- Semrush Agency Partner.
+- Jamil's background: pharmacist (B.Pharm, East West University), pharma international business and brand roles from 2012 (including Square Group and Janssen), interviewed by Onalytica in 2018. This gives the About page a real story: a pharma marketer who moved into SEO and now builds AI Growth Systems, which also explains the pharma and healthcare focus.
+
+**Recommend not featuring:** the CEO Monthly award. It is real, but a buyer or journalist who looks it up finds the "vanity awards" description above, which works against the page's "evidence before claims" principle. Jamil's call.
+
+**Use only after Jamil confirms (and ideally sends proof):** the HackerNoon "#11 in Marketing" rank, GoodFirms and FindBestFirms awards, WP Engine partnership, "first Bangladeshi Semrush certified agency", the influencer lists, the 160+ clients figure, the funding figure, the INPACE acquisition and European origin.
+
+**Fix outside the site (Jamil's accounts, not production pages):** directory profiles disagree on founding year, size and address (Clutch, GoodFirms, DesignRush, LinkedIn). Consistent facts across these profiles help both trust and how AI tools describe the company. Getting a few verified client reviews on Clutch or GoodFirms would also help, as both show none.

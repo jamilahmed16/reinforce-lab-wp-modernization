@@ -23,3 +23,4 @@ Each brief links to the page it informed in the [site map](../site-map.md).
 | [ecommerce-design](ecommerce-design-research-2026-09-30.md) | `/services/ecommerce-website-design-service/` | 30 Sep |
 | [website-maintenance](website-maintenance-research-2026-09-30.md) | `/services/website-maintenance-services/` | 30 Sep |
 | [industries](industries-research-2026-09-30.md) | `/industries/` and the 8 industry pages | 30 Sep |
+| [reputation-and-recognition](reputation-and-recognition-2026-10-04.md) | About page rebuild: awards, reviews, public mentions, conflicting facts (F-023) | 4 Oct |
