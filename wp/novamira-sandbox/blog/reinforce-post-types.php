@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - Post type sections
- * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now.
+ * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide and How-To have their own design files (reinforce-post-guide.php, reinforce-post-howto.php).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -46,13 +46,7 @@ add_action('acf/init', function () {
         'location' => [[['param' => 'post_type', 'operator' => '==', 'value' => 'post']]],
         'fields' => [
             // Guide fields live in reinforce-post-guide.php (D-077)
-            // How-To
-            $num('rl_h_minutes', 'Time needed (minutes)', 'howto', 1, 10000),
-            $sel('rl_h_level', 'Level', 'howto', ['beginner' => 'Beginner', 'intermediate' => 'Intermediate', 'advanced' => 'Advanced']),
-            $ta('rl_h_tools', 'What you need', 'howto', 'One per line: tools, access or files.', 4),
-            $ta('rl_h_steps', 'Steps', 'howto', 'One per line, in order: Step title | What to do', 8),
-            $ta('rl_h_mistakes', 'Common mistakes', 'howto', 'One per line.', 4),
-            $ta('rl_h_trouble', 'Troubleshooting', 'howto', 'One per line: Problem | Fix', 4),
+            // How-To fields live in reinforce-post-howto.php (D-077)
             // Explainer
             $tx('rl_e_term', 'Term', 'explainer', 'The exact term being defined.'),
             $ta('rl_e_definition', 'Definition', 'explainer', 'One or two sentences, written to be quoted.', 3),
@@ -143,23 +137,6 @@ function rl_pt_svc_link($path) {
 add_action('rl_post_type_sections_before', function ($type, $id, $d) {
     $u = function ($path) { return function_exists('rl_url_by_path') ? rl_url_by_path($path, '') : ''; };
     switch ($type) {
-        case 'howto':
-            $min = (float) get_post_meta($id, 'rl_h_minutes', true);
-            $lvl = rl_pt_m($id, 'rl_h_level');
-            $tools = rl_post_lines(get_post_meta($id, 'rl_h_tools', true));
-            $steps = rl_pt_rows(get_post_meta($id, 'rl_h_steps', true));
-            if ($min || $lvl || $tools) {
-                $facts = '';
-                if ($min) $facts .= '<div><span>Time</span><b>' . esc_html(rl_pt_minutes_label($min)) . '</b></div>';
-                if ($lvl) $facts .= '<div><span>Level</span><b>' . esc_html(ucfirst($lvl)) . '</b></div>';
-                echo rl_pt_box('before', 'Before you start', ($facts ? '<div class="facts">' . $facts . '</div>' : '') . ($tools ? '<p class="sub">What you need</p>' . rl_pt_ul($tools, 'ticks2') : ''));
-            }
-            if ($steps) {
-                $h = '<ol class="steps-list">';
-                foreach ($steps as $i => $s) $h .= '<li id="step-' . ($i + 1) . '"><span class="k">' . sprintf('%02d', $i + 1) . '</span><div><b>' . esc_html($s[0]) . '</b><p>' . esc_html($s[1]) . '</p></div></li>';
-                echo rl_pt_box('stepsbox', 'Steps at a glance', $h . '</ol>');
-            }
-            break;
         case 'explainer':
             $term = rl_pt_m($id, 'rl_e_term'); $def = rl_pt_m($id, 'rl_e_definition');
             if ($term !== '' && $def !== '') echo '<section class="ptb def"><p class="t">Definition</p><dl><dt>' . esc_html($term) . '</dt><dd>' . esc_html($def) . '</dd></dl></section>';
@@ -252,12 +229,6 @@ function rl_pt_minutes_label($m) { $m = (int) round($m); if ($m < 60) return $m 
 /* ---------- after the body ---------- */
 add_action('rl_post_type_sections_after', function ($type, $id, $d) {
     switch ($type) {
-        case 'howto':
-            $mi = rl_post_lines(get_post_meta($id, 'rl_h_mistakes', true));
-            if ($mi) echo rl_pt_box('mistakes', 'Common mistakes', rl_pt_ul($mi, 'cons'));
-            $tr = rl_pt_rows(get_post_meta($id, 'rl_h_trouble', true));
-            if ($tr) { $h = '<dl class="gloss">'; foreach ($tr as $r) $h .= '<dt>' . esc_html($r[0]) . '</dt><dd>' . esc_html($r[1]) . '</dd>'; echo rl_pt_box('trouble', 'Troubleshooting', $h . '</dl>'); }
-            break;
         case 'explainer':
             $r = rl_pt_rows(get_post_meta($id, 'rl_e_related', true), 1);
             if ($r) echo rl_pt_box('related-terms', 'Related terms', '<ul class="links">' . implode('', array_map(function ($x) { return '<li>' . rl_pt_link($x[0], $x[1] ?? '') . '</li>'; }, $r)) . '</ul>');
@@ -320,17 +291,6 @@ add_filter('wpseo_schema_graph', function ($graph) {
     $pid = rl_person_schema_id(get_post_field('post_author', $id));
     $add = null; $about = null;
     switch ($d['type']) {
-        case 'howto':
-            $steps = rl_pt_rows(get_post_meta($id, 'rl_h_steps', true));
-            if ($steps) {
-                $add = ['@type' => 'HowTo', '@id' => $url . '#howto', 'name' => get_the_title($id), 'mainEntityOfPage' => ['@id' => $url],
-                    'step' => array_map(function ($s, $i) use ($url) { return ['@type' => 'HowToStep', 'position' => $i + 1, 'name' => $s[0], 'text' => $s[1], 'url' => $url . '#step-' . ($i + 1)]; }, $steps, array_keys($steps))];
-                $min = (int) round((float) get_post_meta($id, 'rl_h_minutes', true));
-                if ($min) $add['totalTime'] = 'PT' . ($min >= 60 ? intdiv($min, 60) . 'H' : '') . ($min % 60 ? ($min % 60) . 'M' : '');
-                $tools = rl_post_lines(get_post_meta($id, 'rl_h_tools', true));
-                if ($tools) $add['tool'] = array_map(function ($t) { return ['@type' => 'HowToTool', 'name' => $t]; }, $tools);
-            }
-            break;
         case 'explainer':
             $term = rl_pt_m($id, 'rl_e_term'); $def = rl_pt_m($id, 'rl_e_definition');
             if ($term !== '' && $def !== '') { $add = ['@type' => 'DefinedTerm', '@id' => $url . '#term', 'name' => $term, 'description' => $def, 'url' => $url]; $about = ['@id' => $url . '#term']; }

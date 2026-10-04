@@ -249,8 +249,9 @@ function rl_post_output() {
         $founder = function_exists('rl_about_person') && $aname === rl_about_person()['name'] ? rl_about_person() : null;
         $bio = trim(wp_strip_all_tags(get_the_author_meta('description', $aid)));
         $about = $u('about-us');
-        // Guide posts use their own approved design (D-077); every other type keeps this layout until its design is approved.
+        // Guide and How-To posts use their own approved designs (D-077); every other type keeps this layout until its design is approved.
         if ($d['type'] === 'guide' && function_exists('rl_guide_render')) { rl_guide_render(compact('id', 'd', 'body', 'toc', 'mins', 'blog_url', 'cat', 'aname', 'founder', 'bio', 'about', 'u')); continue; }
+        if ($d['type'] === 'howto' && function_exists('rl_howto_render')) { rl_howto_render(compact('id', 'd', 'body', 'toc', 'mins', 'blog_url', 'cat', 'aname', 'founder', 'bio', 'about', 'u')); continue; }
         ?>
 <div class="rl-page rl-post">
 
