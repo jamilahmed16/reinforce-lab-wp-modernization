@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-082 | How-To template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
 | D-081 | Step B, part 2: decision log split into an index, the current month and monthly archives | 4 Oct | DONE | this file |
 | D-080 | Step B, part 1: theme code in folders with one loader | 4 Oct | DONE (Jamil: "yes, do step A and step B one after another") | this file |
 | D-079 | Step A: tools and a database snapshot in the repo | 4 Oct | DONE (Jamil: "yes, do step A and step B one after another") | this file |
@@ -138,6 +139,25 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-082 · How-To template: design mockup v1 for review
+**Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S REVIEW (Jamil: "go ahead with the How-To mockup"; D-077 process)
+
+**Mockup:** `claude/design-previews/blog-howto-template-mockup.html`, published privately (claude.ai artifact "How-To Template Mockup").
+
+**Design: a workbench**, different from the Guide's book:
+- **Job-ticket hero:** time, level meter, cost; a "Before you start, you need" checklist; "When you finish" result. Two chips only (How-To + category, per the D-077 chip rule).
+- **Sticky step tracker:** every step as a pill, the current one highlighted, done ones filled, "2 of 5 done" and a progress line. On phones it shows the count and the line only.
+- **Steps on a vertical track:** numbered nodes that turn into a filled check when the step is marked done; per step "Step N of M · minutes", a "Why" line, lettered actions, a keyboard-key style, a screenshot frame with caption, a green "You should see" check, and a "Mark step done" box.
+- **The light in-article service CTA** (same pattern as the approved Guide CTA), placed after the step it matches (here Technical SEO after step 2).
+- **Sticky side panel:** your progress, "Avoid these" (drawn cross icons, no emoji), "If something goes wrong" troubleshooting.
+- **Finish card**, then FAQs and sources side by side and the author box.
+
+**Checks:** `copy-check.py` 0 issues; desktop 1440 and phone 390 with no horizontal scroll. Fixed before publishing: the side panel was not sticking, and the "You should see" box now stacks on phones.
+
+**GitHub note (same day):** Jamil could not see the work on GitHub. Every commit since 28 Sep is on the branch `claude/great-wright-cg4kqo` (81 commits ahead of `main`, `main` 0 ahead, so a clean fast-forward). `main` is unchanged pending Jamil's choice to merge. His Windows daily sync pushes to `main` without pulling, so after any merge his local copy must `git pull` first.
 
 ---
 

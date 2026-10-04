@@ -1,0 +1,352 @@
+<title>How-To Template Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a workbench. Job ticket hero, a sticky step tracker, steps on a vertical track with checks, an avoid panel, troubleshooting, a finish card. Dark only: it is the Reinforce Lab site (D-013). */
+:root{
+  --bg:#121011; --bg-2:#0e0c0d; --panel:#1a1617; --panel-2:#211c1d;
+  --ink:#f2eeee; --ink-dim:#b8b0b1; --ink-faint:#7f7778;
+  --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
+  --red:#990000; --red-2:#c21a1a; --red-3:#e23b3b; --red-line:rgba(226,59,59,.38); --ok:#3fa36b;
+  --f-display:"Oswald","Arial Narrow",sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1280px; --g:clamp(16px,3vw,32px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink-dim);font-family:var(--f-body);font-size:16px;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;background-position:-1px -1px}
+a{color:var(--ink)}
+:focus-visible{outline:2px solid var(--red-3);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--g)}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);margin:0;line-height:1.04;text-wrap:balance}
+svg.i{width:14px;height:14px;flex:none;display:inline-block;vertical-align:-2px}
+
+.mocknote{background:var(--red);color:#fff;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-align:center;padding:7px var(--g)}
+.chrome{border-bottom:1px solid var(--line-2);background:rgba(18,16,17,.9)}
+.chrome .wrap{display:flex;justify-content:space-between;align-items:center;height:62px;gap:16px}
+.logo{font-family:var(--f-display);font-weight:700;letter-spacing:.04em;color:var(--ink);font-size:18px;text-transform:uppercase}
+.logo b{color:var(--red-3)}
+.chrome nav{display:flex;gap:22px;font-family:var(--f-display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.chrome nav span{color:var(--ink-dim)} .chrome nav span.on{color:var(--ink)}
+.cta-s{font-family:var(--f-display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid var(--red-2);padding:9px 14px;background:rgba(153,0,0,.35)}
+
+/* ---------- HERO: job ticket ---------- */
+.crumbs{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);padding-top:26px}
+.crumbs a{color:var(--ink-faint);text-decoration:none}
+.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.95fr);gap:clamp(28px,5vw,64px);align-items:start;padding-block:clamp(26px,4vw,44px) clamp(30px,4vw,48px)}
+.kicker{display:flex;gap:10px;margin-bottom:20px}
+.kind{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:var(--red);padding:6px 10px}
+.cat{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:5px 10px}
+.hero h1{font-size:clamp(36px,5.2vw,68px);line-height:.98}
+.hero h1 .verb{color:var(--red-3)}
+.stand{font-size:clamp(17px,1.5vw,19px);line-height:1.55;max-width:600px;margin:20px 0 0}
+.byline{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:24px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);align-items:center}
+.byline .who{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.av{width:34px;height:34px;border:1px solid var(--red-line);display:grid;place-items:center;font-family:var(--f-display);font-size:15px;color:var(--ink);background:var(--bg-2)}
+.byline b{color:var(--ink-dim);font-weight:500}
+
+.ticket{border:1px solid var(--line-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));position:relative}
+.ticket::before,.ticket::after{content:"";position:absolute;width:18px;height:18px;background:var(--bg);border:1px solid var(--line-2);top:calc(50% - 9px);transform:rotate(45deg)}
+.ticket::before{left:-10px;border-right:0;border-top:0} .ticket::after{right:-10px;border-left:0;border-bottom:0}
+.t-head{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;border-bottom:1px dashed var(--line-2);font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+.t-head b{color:var(--red-3);font-weight:500}
+.t-specs{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}
+.t-specs div{padding:16px 18px;border-right:1px solid var(--line)} .t-specs div:last-child{border-right:0}
+.t-specs span{display:block;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:6px}
+.t-specs b{font-family:var(--f-display);font-size:24px;font-weight:500;color:var(--ink);line-height:1}
+.level{display:flex;gap:4px;margin-top:8px} .level i{width:18px;height:4px;background:var(--line-2)} .level i.on{background:var(--red-3)}
+.t-need,.t-result{padding:16px 18px}
+.t-need{border-bottom:1px solid var(--line)}
+.t-label{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 10px}
+.need{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.need label{display:flex;gap:10px;align-items:flex-start;cursor:pointer;font-size:14.5px;color:var(--ink-dim)}
+.need input{appearance:none;width:16px;height:16px;border:1px solid var(--line-2);background:var(--bg);margin:3px 0 0;flex:none;display:grid;place-items:center;cursor:pointer}
+.need input:checked{background:var(--red);border-color:var(--red-2)}
+.need input:checked::after{content:"";width:8px;height:4px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg) translate(1px,-1px)}
+.t-result p{margin:0;color:var(--ink);font-size:15.5px}
+
+/* ---------- step tracker (sticky) ---------- */
+.tracker{position:sticky;top:0;z-index:6;background:rgba(18,16,17,.94);backdrop-filter:blur(12px);border-block:1px solid var(--line-2)}
+.tracker .wrap{display:flex;align-items:center;gap:18px;height:56px}
+.tracker .lbl{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);white-space:nowrap}
+.tracker ol{list-style:none;margin:0;padding:0;display:flex;flex:1;gap:6px;min-width:0}
+.tracker li{flex:1;min-width:0}
+.tracker a{display:flex;align-items:center;gap:8px;height:34px;padding:0 10px;border:1px solid var(--line-2);text-decoration:none;color:var(--ink-faint);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:var(--bg-2)}
+.tracker a b{font-family:var(--f-mono);font-size:11px;font-weight:500;color:var(--ink-faint)}
+.tracker a.on{border-color:var(--red-2);color:var(--ink)} .tracker a.on b{color:var(--red-3)}
+.tracker a.done{background:rgba(153,0,0,.22);border-color:var(--red-line);color:var(--ink-dim)} .tracker a.done b{color:var(--red-3)}
+.tracker .count{font-family:var(--f-mono);font-size:11px;color:var(--ink-faint);white-space:nowrap}
+.tracker .tbar{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:var(--red-3);transition:width .25s}
+.tracker{position:sticky}
+
+/* ---------- main column ---------- */
+.main{display:grid;grid-template-columns:minmax(0,760px) minmax(0,1fr);gap:clamp(30px,5vw,64px);padding-block:clamp(34px,5vw,56px) 20px}
+.answer{border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px 24px;margin-bottom:36px}
+.answer .t{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 8px}
+.answer p{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
+.intro p{font-size:17.5px;line-height:1.75;margin:0 0 1.1em}
+
+/* steps on a track */
+.track{position:relative;margin-top:30px;padding-left:72px}
+.track::before{content:"";position:absolute;left:23px;top:10px;bottom:30px;width:2px;background:var(--line-2)}
+.step{position:relative;padding-bottom:46px;scroll-margin-top:80px}
+.node{position:absolute;left:-72px;top:0;width:48px;height:48px;display:grid;place-items:center;background:var(--bg);border:2px solid var(--line-2);font-family:var(--f-display);font-size:20px;color:var(--ink);transition:.2s}
+.step.done .node{background:var(--red);border-color:var(--red-2)}
+.step.done .node span{display:none}
+.step.done .node::after{content:"";width:16px;height:8px;border-left:3px solid #fff;border-bottom:3px solid #fff;transform:rotate(-45deg) translate(1px,-2px)}
+.s-meta{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin:2px 0 8px}
+.step h2{font-size:clamp(24px,2.8vw,32px)}
+.why{margin:10px 0 16px;color:var(--ink);font-size:16px;border-left:2px solid var(--red-2);padding-left:12px}
+.step p{font-size:17px;line-height:1.75;margin:0 0 1em}
+.step ol.do{margin:0 0 1em;padding:0;list-style:none;counter-reset:d}
+.step ol.do li{counter-increment:d;display:grid;grid-template-columns:30px 1fr;gap:8px;padding:9px 0;border-top:1px solid var(--line);font-size:16.5px}
+.step ol.do li::before{content:counter(d,lower-alpha);font-family:var(--f-mono);font-size:12px;color:var(--red-3);padding-top:3px}
+.step ol.do li:first-child{border-top:0}
+kbd{font-family:var(--f-mono);font-size:.88em;color:var(--ink);background:var(--panel-2);border:1px solid var(--line-2);border-bottom-width:2px;padding:1px 6px}
+.shot{margin:18px 0;border:1px solid var(--line-2);background:var(--bg-2)}
+.shot .bar{display:flex;gap:6px;padding:9px 12px;border-bottom:1px solid var(--line)} .shot .bar i{width:8px;height:8px;background:var(--line-2)}
+.shot .ph{height:190px;display:grid;place-items:center;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(255,255,255,.02) 14px 28px)}
+.shot figcaption{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);padding:10px 12px;border-top:1px solid var(--line)}
+.see{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;border:1px solid rgba(63,163,107,.45);background:rgba(63,163,107,.07);padding:14px 16px;margin:18px 0 14px;font-size:15.5px;color:var(--ink)}
+.see .lb{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ok);padding-top:3px;white-space:nowrap}
+.mark{display:inline-flex;align-items:center;gap:10px;cursor:pointer;font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);border:1px solid var(--line-2);padding:9px 14px;background:var(--bg-2)}
+.mark input{appearance:none;width:15px;height:15px;border:1px solid var(--line-2);margin:0;display:grid;place-items:center;cursor:pointer}
+.mark input:checked{background:var(--red);border-color:var(--red-2)}
+.mark input:checked::after{content:"";width:8px;height:4px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg) translate(1px,-1px)}
+.mark:has(input:checked){color:var(--ink);border-color:var(--red-line)}
+
+/* light service CTA (same pattern as the approved Guide CTA) */
+.icta{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 28px;align-items:center;margin:0 0 46px;padding:20px 0 20px 20px;border-top:1px solid var(--red-line);border-bottom:1px solid var(--red-line);border-left:3px solid var(--red-2);background:linear-gradient(90deg,rgba(153,0,0,.12),transparent 70%)}
+.icta .lbl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 6px}
+.icta .hd{font-family:var(--f-display);font-weight:600;text-transform:uppercase;font-size:clamp(19px,2vw,22px);line-height:1.15;color:var(--ink);margin:0 0 6px}
+.icta .csub{margin:0;font-size:15px}
+.icta .act{display:grid;gap:8px;justify-items:start;padding-right:20px}
+.icta .go{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.07em;font-size:14px;text-decoration:none;color:#fff;background:var(--red);border:1px solid var(--red-2);padding:12px 18px;white-space:nowrap}
+.icta .alt{font-size:13.5px;color:var(--ink-faint);text-decoration:none;border-bottom:1px solid var(--line-2)}
+
+/* finish card */
+.finish{position:relative;border:1px solid var(--red-line);background:radial-gradient(80% 140% at 0% 0%,rgba(153,0,0,.25),transparent 60%),var(--panel);padding:26px 28px;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;margin-left:72px}
+.finish .flag{width:56px;height:56px;display:grid;place-items:center;border:2px solid var(--red-2);background:var(--red)}
+.finish h2{font-size:26px;margin-bottom:6px}
+.finish p{margin:0;color:var(--ink-dim)}
+
+/* side rail: avoid + trouble */
+.side{display:grid;gap:22px;align-content:start;align-self:start;position:sticky;top:80px}
+.avoid{border:1px solid rgba(226,59,59,.45);background:rgba(153,0,0,.08);padding:18px 20px}
+.side .t{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 12px}
+.avoid ul{list-style:none;margin:0;padding:0}
+.avoid li{display:grid;grid-template-columns:18px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--line);font-size:14.5px;color:var(--ink-dim)}
+.avoid li:first-child{border-top:0}
+.avoid svg{color:var(--red-3);margin-top:3px}
+.trouble{border:1px solid var(--line-2);background:var(--panel);padding:18px 20px}
+.trouble details{border-top:1px solid var(--line)} .trouble details:first-of-type{border-top:0}
+.trouble summary{cursor:pointer;list-style:none;padding:11px 0;color:var(--ink);font-size:14.5px;display:flex;justify-content:space-between;gap:10px}
+.trouble summary::-webkit-details-marker{display:none}
+.trouble summary::after{content:"+";color:var(--red-3);font-family:var(--f-mono)}
+.trouble details[open] summary::after{content:"\2212"}
+.trouble p{margin:0 0 12px;font-size:14px}
+.progress{border:1px solid var(--line-2);background:var(--bg-2);padding:16px 20px}
+.progress .bar{height:4px;background:var(--line-2);margin:10px 0 8px} .progress .bar i{display:block;height:100%;width:0;background:var(--red-3);transition:width .25s}
+.progress span{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint)}
+
+/* back matter */
+.back{border-top:1px solid var(--line-2);padding-block:46px 10px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
+.back-h{display:flex;align-items:baseline;gap:14px;margin-bottom:18px}
+.back-h span{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3)}
+.back-h h2{font-size:28px}
+.faq details{border:1px solid var(--line);background:var(--panel);margin-bottom:8px}
+.faq summary{cursor:pointer;list-style:none;padding:15px 18px;font-family:var(--f-display);text-transform:uppercase;font-size:15px;color:var(--ink);display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red-3);font-family:var(--f-mono)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:0;padding:0 18px 15px;font-size:15px}
+.src ol{margin:0;padding-left:1.4em;font-size:14.5px} .src li{padding:6px 0;color:var(--ink-faint)}
+.src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.author .av{width:72px;height:72px;font-size:28px}
+.author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
+.author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}
+.author p{margin:0 0 8px;font-size:15px}
+
+/* mobile bottom step bar */
+.mstep{display:none}
+@media(max-width:1000px){
+  .hero,.main{grid-template-columns:1fr}
+  .side{position:static}
+  .tracker ol{display:none}
+  .tracker .wrap{justify-content:space-between}
+}
+@media(max-width:700px){
+  .chrome nav{display:none}
+  .t-specs b{font-size:20px}
+  .track{padding-left:56px} .node{left:-56px;width:40px;height:40px;font-size:17px} .track::before{left:19px}
+  .finish{margin-left:0;grid-template-columns:1fr}
+  .icta{grid-template-columns:1fr;padding-left:16px} .icta .act{padding-right:16px}
+  .back{grid-template-columns:1fr}
+  .author{grid-template-columns:1fr}
+  .step p,.step ol.do li{font-size:16px}
+  .see{grid-template-columns:1fr;gap:6px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.progress .bar i,.node{transition:none}}
+</style>
+
+<div class="mocknote">DESIGN MOCKUP · HOW-TO TEMPLATE · sample content for layout review, not published</div>
+<header class="chrome"><div class="wrap"><span class="logo">Reinforce <b>/</b> Lab</span><nav aria-label="Site (mockup)"><span>Search Authority OS</span><span>Solutions</span><span>Industries</span><span>Packages</span><span class="on">Blog</span><span>About</span><span>Contact</span></nav><span class="cta-s">Get your diagnostic</span></div></header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="x" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="square"/></symbol>
+  <symbol id="flag" viewBox="0 0 24 24"><path d="M6 3v18M6 4h11l-2 4 2 4H6" stroke="#fff" stroke-width="2" fill="none"/></symbol>
+</svg>
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="#">Home</a> / <a href="#">Blog</a> / <a href="#">Technical SEO</a> / Check if Google indexed a page</nav>
+  <section class="hero">
+    <div>
+      <div class="kicker"><span class="kind">How-To</span><span class="cat">Technical SEO</span></div>
+      <h1><span class="verb">How to check</span> whether Google has indexed a page</h1>
+      <p class="stand">Find out in a few minutes whether a page is in Google's index, why it might not be, and what to fix before you ask Google to look again.</p>
+      <div class="byline"><span class="who"><span class="av" aria-hidden="true">J</span>Jamil Ahmed</span><span>Published <b>15 Sep 2026</b></span><span>Updated <b>28 Sep 2026</b></span></div>
+    </div>
+    <aside class="ticket" aria-label="Job ticket">
+      <div class="t-head"><span>Job ticket</span><b>5 steps</b></div>
+      <div class="t-specs">
+        <div><span>Time</span><b>15 min</b></div>
+        <div><span>Level</span><b>Beginner</b><div class="level" aria-hidden="true"><i class="on"></i><i></i><i></i></div></div>
+        <div><span>Cost</span><b>Free</b></div>
+      </div>
+      <div class="t-need"><p class="t-label">Before you start, you need</p>
+        <ul class="need">
+          <li><label><input type="checkbox" id="n1">Owner or full user access to Google Search Console</label></li>
+          <li><label><input type="checkbox" id="n2">The full URL of the page, including https://</label></li>
+          <li><label><input type="checkbox" id="n3">Access to edit the page, if you need to fix it</label></li>
+        </ul>
+      </div>
+      <div class="t-result"><p class="t-label">When you finish</p><p>You will know whether the page is indexed, the reason if it is not, and the fix to make first.</p></div>
+    </aside>
+  </section>
+</div>
+
+<div class="tracker" aria-label="Steps">
+  <div class="wrap">
+    <span class="lbl">Steps</span>
+    <ol id="trk"></ol>
+    <span class="count" id="cnt">0 of 5 done</span>
+  </div>
+  <i class="tbar" id="tbar" aria-hidden="true"></i>
+</div>
+
+<div class="wrap">
+  <div class="main">
+    <article>
+      <div class="answer"><p class="t">Short answer</p><p>Paste the full URL into the URL Inspection tool in Google Search Console. It tells you whether the page is on Google, when Google last crawled it, and which URL Google treats as the main version. A site: search is not a reliable check.</p></div>
+      <div class="intro"><p>Google keeps only some of the pages it finds. A page can be crawled and still left out, or kept under a different URL than the one you expect. These five steps find out which, using free tools.</p></div>
+
+      <div class="track">
+        <section class="step" id="step-1">
+          <span class="node" aria-hidden="true"><span>1</span></span>
+          <p class="s-meta">Step 1 of 5 · 3 min</p>
+          <h2>Open the URL Inspection tool</h2>
+          <p class="why">Why: it is the only check that reads Google's own record of the page.</p>
+          <ol class="do"><li>Sign in to Google Search Console and pick the property that contains the page.</li><li>Click the search bar at the top, labelled "Inspect any URL".</li><li>Paste the full URL and press <kbd>Enter</kbd>.</li></ol>
+          <figure class="shot"><div class="bar"><i></i><i></i><i></i></div><div class="ph">Screenshot: URL Inspection search bar</div><figcaption>Fig. 1 · The inspection bar sits at the top of every Search Console page</figcaption></figure>
+          <div class="see"><span class="lb">You should see</span><span>A report titled "URL Inspection" with either "URL is on Google" or "URL is not on Google".</span></div>
+          <label class="mark"><input type="checkbox" data-step="1" id="m1">Mark step 1 done</label>
+        </section>
+
+        <section class="step" id="step-2">
+          <span class="node" aria-hidden="true"><span>2</span></span>
+          <p class="s-meta">Step 2 of 5 · 3 min</p>
+          <h2>Read the indexing status</h2>
+          <p class="why">Why: the status tells you which of the next steps you need.</p>
+          <p>If the report says <strong>URL is on Google</strong>, the page is indexed and you can stop here. If it says <strong>URL is not on Google</strong>, open the "Page indexing" section to see the reason.</p>
+          <div class="see"><span class="lb">You should see</span><span>A reason such as "Crawled, currently not indexed" or "Excluded by noindex tag".</span></div>
+          <label class="mark"><input type="checkbox" data-step="2" id="m2">Mark step 2 done</label>
+        </section>
+
+        <aside class="icta" aria-label="Reinforce Lab service">
+          <div><p class="lbl">Reinforce Lab service · Technical SEO</p><p class="hd">Hundreds of pages not indexed?</p><p class="csub">When many URLs share one status, the cause is usually one template or setting. We trace it and fix it at the source.</p></div>
+          <div class="act"><a class="go" href="#">See how it works &rarr;</a><a class="alt" href="#">Or get a free diagnostic first</a></div>
+        </aside>
+
+        <section class="step" id="step-3">
+          <span class="node" aria-hidden="true"><span>3</span></span>
+          <p class="s-meta">Step 3 of 5 · 4 min</p>
+          <h2>Compare the canonical URLs</h2>
+          <p class="why">Why: Google may be indexing a different version of the page.</p>
+          <p>Under "Page indexing", compare <strong>User-declared canonical</strong> with <strong>Google-selected canonical</strong>. If they differ, Google treats another URL as the main version.</p>
+          <div class="see"><span class="lb">You should see</span><span>Both lines showing the same URL. If not, note the URL Google chose.</span></div>
+          <label class="mark"><input type="checkbox" data-step="3" id="m3">Mark step 3 done</label>
+        </section>
+
+        <section class="step" id="step-4">
+          <span class="node" aria-hidden="true"><span>4</span></span>
+          <p class="s-meta">Step 4 of 5 · 3 min</p>
+          <h2>Fix the cause</h2>
+          <p class="why">Why: asking Google to look again changes nothing until the cause is gone.</p>
+          <p>Remove a noindex rule you did not intend, unblock the page in robots.txt, or point the canonical to the right URL. Thin or duplicate pages need better content.</p>
+          <label class="mark"><input type="checkbox" data-step="4" id="m4">Mark step 4 done</label>
+        </section>
+
+        <section class="step" id="step-5">
+          <span class="node" aria-hidden="true"><span>5</span></span>
+          <p class="s-meta">Step 5 of 5 · 2 min</p>
+          <h2>Request indexing</h2>
+          <p class="why">Why: it asks Google to crawl the fixed page sooner.</p>
+          <p>Run "Test live URL" first to confirm the fix, then click <strong>Request indexing</strong>.</p>
+          <div class="see"><span class="lb">You should see</span><span>"Indexing requested". It does not guarantee indexing, and timing varies.</span></div>
+          <label class="mark"><input type="checkbox" data-step="5" id="m5">Mark step 5 done</label>
+        </section>
+      </div>
+
+      <div class="finish" id="finish">
+        <span class="flag" aria-hidden="true"><svg width="26" height="26"><use href="#flag"/></svg></span>
+        <div><h2>Done: you know where the page stands</h2><p>Check the URL again in a week. If it is still not indexed, look at whether the page offers something the indexed pages on the topic do not.</p></div>
+      </div>
+    </article>
+
+    <aside class="side" aria-label="Help while you work">
+      <div class="progress"><p class="t">Your progress</p><div class="bar"><i id="pbar"></i></div><span id="ptxt">0 of 5 steps done</span></div>
+      <div class="avoid"><p class="t">Avoid these</p><ul>
+        <li><svg class="i"><use href="#x"/></svg><span>Relying on a site: search. It is a rough guide, not a record.</span></li>
+        <li><svg class="i"><use href="#x"/></svg><span>Requesting indexing before you fix the cause.</span></li>
+        <li><svg class="i"><use href="#x"/></svg><span>Inspecting the wrong property, such as http instead of https.</span></li>
+      </ul></div>
+      <div class="trouble"><p class="t">If something goes wrong</p>
+        <details><summary>"Request indexing" is greyed out</summary><p>You need owner or full user access to the property. Ask the owner to add you.</p></details>
+        <details><summary>"URL is not in property"</summary><p>The URL belongs to a different property. Check the domain, protocol and www.</p></details>
+        <details><summary>The live test passes but the page is still not indexed</summary><p>Indexing is not guaranteed. Improve the page and check again in a week.</p></details>
+      </div>
+    </aside>
+  </div>
+
+  <section class="back" aria-label="Questions and sources">
+    <div class="faq"><div class="back-h"><span>Questions</span><h2>FAQs</h2></div>
+      <details open><summary>How long does indexing take?</summary><p>It varies by site and page. Requesting indexing can speed up a recrawl, but it does not guarantee indexing.</p></details>
+      <details><summary>Does a site: search show every indexed page?</summary><p>No. Use Search Console for a reliable answer.</p></details>
+    </div>
+    <div class="src"><div class="back-h"><span>Evidence</span><h2>Sources</h2></div>
+      <ol><li><a href="#">Google Search Console Help, URL Inspection tool</a></li><li><a href="#">Google Search Central, How Search works</a></li></ol>
+    </div>
+  </section>
+
+  <aside class="author" aria-label="About the author"><span class="av" aria-hidden="true">J</span><div><p class="nm">Jamil Ahmed</p><p class="role">Founder and CEO, Reinforce Lab</p><p>Pharmacist, SEO and AI search consultant, and Semrush Ambassador.</p></div></aside>
+</div>
+
+<script>
+const steps=[...document.querySelectorAll('.step')];
+document.getElementById('trk').innerHTML=steps.map((s,i)=>`<li><a href="#${s.id}" data-i="${i}"><b>0${i+1}</b>${s.querySelector('h2').textContent}</a></li>`).join('');
+const tl=[...document.querySelectorAll('#trk a')];
+function sync(){
+  const done=steps.map(s=>s.querySelector('input[data-step]').checked);
+  steps.forEach((s,i)=>s.classList.toggle('done',done[i]));
+  tl.forEach((a,i)=>a.classList.toggle('done',done[i]));
+  const n=done.filter(Boolean).length, pct=Math.round(n/steps.length*100)+'%';
+  document.getElementById('cnt').textContent=n+' of '+steps.length+' done';
+  document.getElementById('ptxt').textContent=n+' of '+steps.length+' steps done';
+  document.getElementById('pbar').style.width=pct; document.getElementById('tbar').style.width=pct;
+}
+function cur(){ let c=0; steps.forEach((s,i)=>{ if(s.getBoundingClientRect().top<innerHeight*0.4) c=i; }); tl.forEach((a,i)=>a.classList.toggle('on',i===c)); }
+document.querySelectorAll('input[data-step]').forEach(x=>x.addEventListener('change',sync));
+addEventListener('scroll',cur,{passive:true}); cur(); sync();
+</script>
