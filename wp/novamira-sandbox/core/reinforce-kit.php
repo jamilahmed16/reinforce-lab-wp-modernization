@@ -15,7 +15,7 @@ add_action('wp_head', function () {
     if (!rl_kit_active()) return;
     $f = __DIR__ . '/reinforce-kit.css';
     $v = file_exists($f) ? substr(md5_file($f), 0, 8) : '0';
-    echo '<link rel="stylesheet" id="rl-kit-css" href="' . esc_url(content_url('novamira-sandbox/reinforce-kit.css') . '?ver=' . $v) . '" media="all">' . "\n";
+    echo '<link rel="stylesheet" id="rl-kit-css" href="' . esc_url(content_url('novamira-sandbox/core/reinforce-kit.css') . '?ver=' . $v) . '" media="all">' . "\n";
 }, 21);
 
 /* Breadcrumb schema: WordPress texturizes "&" in titles to "&#038;", which Yoast then writes into

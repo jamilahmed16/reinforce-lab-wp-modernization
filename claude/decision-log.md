@@ -597,6 +597,46 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-080 · Step B, part 1: theme code in folders with one loader
+**Date:** 4 October 2026 · **Status:** DONE (Jamil: "yes, do step A and step B one after another")
+
+**Why:** 35 files in one flat folder would not scale to 11 post-type designs and more pages.
+
+**Constraint (VERIFIED by reading `novamira/includes/sandbox-loader.php`):**
+- Novamira loads **top-level `*.php` only**, in `glob()` order.
+- A fatal error while loading puts the **whole sandbox into safe mode** (every custom page disabled).
+
+**Layout:**
+- `reinforce-loader.php` is the only top-level file. It requires the folder files in the **exact previous load order** (the server's real glob order was read and matched), so hook registration order is unchanged.
+- Folders:
+  - `core/`: header, kit.php, kit.css;
+  - `pages/`: home, about, contact;
+  - `saos/`: saos, diagnostic, packages, agents, agent-pages;
+  - `services/`: the hub plus 18 service pages;
+  - `industries/`;
+  - `blog/`: blog, post, post-types, post-guide.
+- The one code change: `core/reinforce-kit.php` now links `novamira-sandbox/core/reinforce-kit.css`.
+- Documented in `wp/README.md`, plus a "Repository layout" section in CLAUDE.md. **A new file must be added to the loader list.**
+
+**Migration (one guarded call):**
+- It checked noindex, no safe mode, and every live file equal to git HEAD, and parse-checked every new file.
+- It backed up every old file to `_backups/20261004-112407-restructure/` and moved the 128 legacy `.bak-*` files into `_backups/legacy/`.
+- It wrote the folder files, deleted the old top-level files, and **wrote the loader last** (so no request could load a file twice), then cleared opcache and purged the LiteSpeed cache.
+- A rollback script was prepared (restore the backup folder, remove the loader and folders); it was not needed.
+
+**Verified after:**
+- one top-level PHP file; no `.crashed` marker;
+- `rl.py parity` 0 differences across 36 files; `rl.py crawl` 45 pages, 0 flags;
+- kit.css served from `core/` (200, text/css); every sampled page 1 H1 with no PHP notices;
+- 10 key pages exactly 390 px wide on phones;
+- contact and diagnostic form handlers answer (invalid test → redirect, nothing saved);
+- `/blog/paged-2/2/` still returns 410;
+- snapshot refreshed.
+
+**Tooling:** `rl.py` deploy, parity and backups handle subfolders; `copy-check.py` now scans subfolders.
+
+---
+
 ## D-079 · Step A: tools and a database snapshot in the repo
 **Date:** 4 October 2026 · **Status:** DONE (Jamil: "yes, do step A and step B one after another")
 

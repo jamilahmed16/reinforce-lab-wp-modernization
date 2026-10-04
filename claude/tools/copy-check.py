@@ -20,7 +20,7 @@ BANNED = [r'delv\w*', r'leverag\w*', r'seamless\w*', r'unlock\w*', r'elevat\w*',
           r'operationali[sz]\w*', r'quietly', r'compound\w*', r'not just', r'navigate the', r'in the world of', r'whether you\'?re a']
 WORDS = re.compile(r'\b(' + '|'.join(BANNED) + r')\b', re.I)
 
-files = sys.argv[1:] or sorted(glob.glob('wp/novamira-sandbox/*.php') + glob.glob('wp/novamira-sandbox/*.css'))
+files = sys.argv[1:] or sorted(glob.glob('wp/novamira-sandbox/**/*.php', recursive=True) + glob.glob('wp/novamira-sandbox/**/*.css', recursive=True))
 found = 0
 for f in files:
     raw = open(f, encoding='utf8').read()
