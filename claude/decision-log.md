@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-105 | Separate Awards page (About stays separate): design mockup v1 for review | 4 Oct | AWAITING REVIEW; new URL needs approval | this file |
 | F-023 | Reputation and recognition research: one independently verified award (HackerNoon, Dhaka 2024), conflicting public facts | 4 Oct | `[VERIFIED where marked; rest SELF-REPORTED]` | this file |
 | D-104 | Founder bio for the author box: Jamil's own wording, applied on `.online` | 4 Oct | DONE (Jamil: "Like this now modify this") | this file |
 | D-103 | Product / Service template built on `.online`: all blog templates done | 4 Oct | DONE (Jamil: "approved, build the Product / Service template") | this file |
@@ -162,6 +163,20 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-105 · Separate Awards page: design mockup v1 for review
+**Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S REVIEW (Jamil: "i want to build a separate Awards Page keeping a separate about page"). **New URL: not yet approved** (rule 2: a slug needs Jamil's approval).
+
+**Mockup:** `claude/design-previews/awards-page-mockup.html`, published privately (claude.ai artifact "Awards Page Mockup"). Content comes only from F-023.
+
+**Design: an evidence page.** Title "Recognition you can check for yourself", with the listing rules beside it (each item links to the awarding body's own page; how it was decided; our own press releases marked as ours; no awards sold with a publicity package). A tally that counts confirmed items only (1 award, 1 partner listing, Google 4.6 from 8 reviews, first founder interview 2018). The HackerNoon Dhaka 2024 win as a feature card (drawn seal, year, announced date, decided by public vote, "Confirmed at source", link). Other awards, partnerships, reviews, interviews and press releases, a timeline by year, a CTA to About, FAQs and sources. Items that still need proof (HackerNoon #11 in Marketing, GoodFirms, FindBestFirms, Semrush Ambassador page, WP Engine) show as dashed amber cards in the mockup only; none go live without a source link.
+
+**Why this differs from the production homepage:** the production "As seen on" strip shows news logos that come from wire syndication of our own October 2024 press release, and the "5+ Global Recognition" and "80+ Featured in" counters cannot be backed by sources (F-023). The mockup lists the release as ours and explains why outlet logos are not shown. Production is untouched.
+
+**Open for Jamil:** the slug (`/awards/` or `/about-us/awards/`), proof links for the amber items, and whether the "no awards sold with a publicity package" rule stays (it excludes the CEO Monthly award, F-023).
+**Checks:** `copy-check.py` 0 issues; desktop 1440 and phone 390 with no horizontal scroll and no script errors. Drawn seal, no third-party logos (none supplied).
 
 ---
 

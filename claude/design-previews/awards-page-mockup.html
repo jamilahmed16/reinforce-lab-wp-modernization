@@ -1,0 +1,265 @@
+<title>Awards Page Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: an evidence page. Title with the listing rule beside it, an at-a-glance tally of confirmed items only, the confirmed award as a feature card with how it was decided and a link to the source, other awards, partnerships and credentials, reviews and where to find them, interviews and our own press releases (marked as ours), a timeline by year, CTA to About, FAQs and sources. Items still needing proof are dashed amber cards in the mockup only. Dark only: it is the Reinforce Lab site (D-013). */
+:root{
+  --bg:#121011; --bg-2:#0e0c0d; --panel:#1a1617; --panel-2:#211c1d;
+  --ink:#f2eeee; --ink-dim:#b8b0b1; --ink-faint:#7f7778;
+  --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
+  --red:#990000; --red-2:#c21a1a; --red-3:#e23b3b; --red-line:rgba(226,59,59,.38); --ok:#3fa36b; --ok-line:rgba(63,163,107,.45); --amber:#d39b3a;
+  --f-display:"Oswald","Arial Narrow",sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1280px; --g:clamp(16px,3vw,32px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink-dim);font-family:var(--f-body);font-size:16px;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;background-position:-1px -1px}
+a{color:var(--ink)}
+:focus-visible{outline:2px solid var(--red-3);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--g)}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);margin:0;line-height:1.04;text-wrap:balance}
+.ic{width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square}
+.sample{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);border:1px dashed rgba(211,155,58,.6);padding:1px 6px;white-space:nowrap}
+
+.mocknote{background:var(--red);color:#fff;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-align:center;padding:7px var(--g)}
+.chrome{border-bottom:1px solid var(--line-2);background:rgba(18,16,17,.9)}
+.chrome .wrap{display:flex;justify-content:space-between;align-items:center;height:62px;gap:16px}
+.logo{font-family:var(--f-display);font-weight:700;letter-spacing:.04em;color:var(--ink);font-size:18px;text-transform:uppercase}
+.logo b{color:var(--red-3)}
+.chrome nav{display:flex;gap:22px;font-family:var(--f-display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.chrome nav span.on{color:var(--ink)}
+.cta-s{font-family:var(--f-display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid var(--red-2);padding:9px 14px;background:rgba(153,0,0,.35)}
+
+/* header + file card */
+.crumbs{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);padding-top:26px}
+.crumbs a{color:var(--ink-faint);text-decoration:none}
+.hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);gap:clamp(28px,5vw,60px);align-items:start;padding-block:clamp(24px,4vw,40px) 0}
+.kicker{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+.kind{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:var(--red);padding:6px 10px}
+.cat{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:5px 10px}
+.hero h1{font-size:clamp(34px,4.6vw,60px);line-height:1}
+.hero h1 em{font-style:normal;color:var(--red-3)}
+.stand{font-size:clamp(17px,1.5vw,19px);line-height:1.55;margin:18px 0 0;max-width:640px}
+.byline{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);align-items:center}
+.byline .who{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.av{width:34px;height:34px;border:1px solid var(--red-line);display:grid;place-items:center;font-family:var(--f-display);font-size:15px;color:var(--ink);background:var(--bg-2)}
+.byline b{color:var(--ink-dim);font-weight:500}
+
+/* main */
+.main{max-width:900px;margin:0 auto;padding-block:clamp(34px,5vw,52px) 10px}
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:46px 0 16px}
+.sec-h span{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3)}
+.sec-h h2{font-size:clamp(24px,2.8vw,30px)}
+.answer{border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px 24px;margin-bottom:24px}
+.answer .t{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 8px}
+.answer p{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
+.prose p{font-size:17.5px;line-height:1.75;margin:0 0 1.1em}
+.prose strong{color:var(--ink);font-weight:600}
+
+/* CTA */
+.icta{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 28px;align-items:center;margin:40px 0 0;padding:20px 0 20px 20px;border-top:1px solid var(--red-line);border-bottom:1px solid var(--red-line);border-left:3px solid var(--red-2);background:linear-gradient(90deg,rgba(153,0,0,.12),transparent 70%)}
+.icta .lbl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 6px}
+.icta .hd{font-family:var(--f-display);font-weight:600;text-transform:uppercase;font-size:clamp(19px,2vw,22px);line-height:1.15;color:var(--ink);margin:0 0 6px}
+.icta .csub{margin:0;font-size:15px}
+.act2{display:grid;gap:8px;justify-items:start;padding-right:20px}
+.go2{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.07em;font-size:14px;text-decoration:none;color:#fff;background:var(--red);border:1px solid var(--red-2);padding:12px 18px;white-space:nowrap}
+.alt{font-size:13.5px;color:var(--ink-faint);text-decoration:none;border-bottom:1px solid var(--line-2)}
+
+/* back matter */
+.back{border-top:1px solid var(--line-2);margin-top:50px;padding-block:44px 10px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
+.back .sec-h{margin-top:0}
+.faq details{border:1px solid var(--line);background:var(--panel);margin-bottom:8px}
+.faq summary{cursor:pointer;list-style:none;padding:15px 18px;font-family:var(--f-display);text-transform:uppercase;font-size:15px;color:var(--ink);display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red-3);font-family:var(--f-mono)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:0;padding:0 18px 15px;font-size:15px}
+.src ol{margin:0;padding-left:1.4em;font-size:14.5px} .src li{padding:6px 0;color:var(--ink-faint)}
+.src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.author .av{width:72px;height:72px;font-size:28px}
+.author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
+.author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}
+.author p{margin:0 0 8px;font-size:15px}
+
+
+
+/* awards page */
+.proof{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:2px 8px;border:1px solid}
+.proof.ok{color:var(--ok);border-color:var(--ok-line)}
+.proof.wait{color:var(--amber);border-color:rgba(211,155,58,.55);border-style:dashed}
+.proof svg{width:11px;height:11px;fill:none;stroke:currentColor;stroke-width:2}
+.aw-hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.95fr);gap:clamp(28px,5vw,60px);align-items:end;padding-block:clamp(28px,4vw,44px) 0}
+.aw-hero h1{font-size:clamp(38px,5vw,66px);line-height:.98}
+.aw-hero h1 em{font-style:normal;color:var(--red-3)}
+.rule{border:1px solid var(--line-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:18px 20px}
+.rule .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);display:block;margin-bottom:8px}
+.rule ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.rule li{display:grid;grid-template-columns:16px 1fr;gap:10px;font-size:14.5px;color:var(--ink)}
+.rule li svg{width:14px;height:14px;margin-top:4px;fill:none;stroke:var(--ok);stroke-width:2}
+
+.tally{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2);margin-top:clamp(30px,4vw,44px)}
+.tally div{background:var(--bg-2);padding:16px 18px}
+.tally b{display:block;font-family:var(--f-display);font-size:40px;line-height:1;color:var(--ink);font-weight:500}
+.tally span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+
+.feature{display:grid;grid-template-columns:220px minmax(0,1fr);border:1px solid var(--red-line);background:radial-gradient(90% 140% at 0% 0%,rgba(153,0,0,.2),transparent 60%),var(--panel)}
+.seal{display:grid;place-items:center;padding:26px;border-right:1px solid var(--red-line)}
+.seal svg{width:150px;height:150px}
+.feature .body{padding:24px 26px;display:grid;gap:10px;align-content:start}
+.feature .by{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3)}
+.feature h3{font-size:clamp(24px,2.6vw,32px)}
+.feature p{margin:0;font-size:15.5px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:var(--f-mono);font-size:12px;color:var(--ink-dim);border-top:1px solid var(--line);padding-top:12px}
+.facts b{color:var(--ink);font-weight:500}
+.go-src{justify-self:start;font-family:var(--f-display);font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);text-decoration:none;border:1px solid var(--line-2);padding:9px 14px}
+.go-src:hover{border-color:var(--red-line)}
+
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.cards.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{border:1px solid var(--line-2);background:var(--bg-2);padding:18px 20px;display:grid;gap:8px;align-content:start}
+.card.wait{border-style:dashed;border-color:rgba(211,155,58,.45);background:transparent}
+.card .top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.card .yr{font-family:var(--f-mono);font-size:11px;color:var(--ink-faint)}
+.card h3{font-size:19px;line-height:1.1}
+.card .who{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--red-3)}
+.card p{margin:0;font-size:14px}
+.card a.src{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line);justify-self:start}
+
+.rating{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center}
+.rating b{font-family:var(--f-display);font-size:44px;line-height:1;color:var(--ink);font-weight:500}
+.stars{display:flex;gap:3px}
+.stars i{width:14px;height:14px;background:var(--amber);clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.stars i.h{background:linear-gradient(90deg,var(--amber) 60%,var(--line-2) 60%)}
+
+.press{border:1px solid var(--line-2)}
+.pr{display:grid;grid-template-columns:110px minmax(0,1fr) auto;gap:16px;padding:16px 18px;border-top:1px solid var(--line);align-items:start}
+.pr:first-child{border-top:0}
+.pr time{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);padding-top:3px}
+.pr b{color:var(--ink);font-weight:600;font-size:15.5px;display:block}
+.pr p{margin:4px 0 0;font-size:14px}
+.pr .kind{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:2px 8px;white-space:nowrap}
+.note{margin-top:12px;border-left:3px solid var(--amber);padding:12px 16px;background:linear-gradient(90deg,rgba(211,155,58,.07),transparent);font-size:14.5px}
+.note b{color:var(--ink)}
+
+.tl{list-style:none;margin:0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;left:58px;top:6px;bottom:6px;width:2px;background:var(--line-2)}
+.tl li{display:grid;grid-template-columns:48px 22px minmax(0,1fr);gap:0 12px;padding:0 0 18px;align-items:start}
+.tl .y{font-family:var(--f-display);font-size:20px;color:var(--ink);text-align:right;line-height:1.1}
+.tl .d{width:12px;height:12px;border:2px solid var(--red-3);background:var(--bg);margin:5px 0 0 5px;position:relative;z-index:1}
+.tl p{margin:0;font-size:15px;color:var(--ink)}
+.tl p span{display:block;font-size:13px;color:var(--ink-faint)}
+
+@media(max-width:1000px){.aw-hero{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){
+  .chrome nav{display:none}
+  .tally{grid-template-columns:1fr 1fr}
+  .feature{grid-template-columns:1fr}.seal{border-right:0;border-bottom:1px solid var(--red-line);padding:18px}.seal svg{width:120px;height:120px}
+  .cards,.cards.two,.back{grid-template-columns:1fr}
+  .pr{grid-template-columns:1fr;gap:6px}.pr .kind{justify-self:start}
+  .icta{grid-template-columns:1fr;padding-left:16px}.act2{padding-right:16px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<div class="mocknote">DESIGN MOCKUP · AWARDS PAGE · dashed amber cards are items that need proof before they can go live; they are shown so Jamil can see the full layout</div>
+<header class="chrome"><div class="wrap"><span class="logo">Reinforce <b>/</b> Lab</span><nav aria-label="Site (mockup)"><span>Search Authority OS</span><span>Solutions</span><span>Industries</span><span>Packages</span><span>Blog</span><span class="on">About</span><span>Contact</span></nav><span class="cta-s">Get your diagnostic</span></div></header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ok" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7"/></symbol>
+  <symbol id="clk" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/></symbol>
+</svg>
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="#">Home</a> / <a href="#">About</a> / Awards</nav>
+  <section class="aw-hero">
+    <div>
+      <div class="kicker"><span class="kind">Awards and recognition</span></div>
+      <h1>Recognition you can <em>check for yourself</em></h1>
+      <p class="stand">Every award, partnership and listing on this page links to the page that confirms it. If we cannot link to it, it is not here.</p>
+    </div>
+    <aside class="rule" aria-label="How we list recognition">
+      <span class="k">How we list recognition</span>
+      <ul>
+        <li><svg aria-hidden="true"><use href="#ok"/></svg>Each item links to the awarding or listing body's own page.</li>
+        <li><svg aria-hidden="true"><use href="#ok"/></svg>We say how it was decided: a vote, a review, or a listing.</li>
+        <li><svg aria-hidden="true"><use href="#ok"/></svg>Our own press releases are marked as ours, not as press coverage.</li>
+        <li><svg aria-hidden="true"><use href="#ok"/></svg>We do not list awards that are sold with a publicity package.</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section class="tally" aria-label="At a glance">
+    <div><b>1</b><span>Award, independently confirmed</span></div>
+    <div><b>1</b><span>Agency partner listing</span></div>
+    <div><b>4.6</b><span>Google rating, 8 reviews</span></div>
+    <div><b>2018</b><span>First interview with our founder</span></div>
+  </section>
+</div>
+
+<div class="wrap">
+  <div class="main">
+    <div class="sec-h" id="awards"><span>Awards</span><h2>What we have won</h2></div>
+    <article class="feature">
+      <div class="seal" aria-hidden="true">
+        <svg viewBox="0 0 160 160"><circle cx="80" cy="80" r="74" fill="none" stroke="#e23b3b" stroke-width="1.5"/><circle cx="80" cy="80" r="62" fill="none" stroke="rgba(226,59,59,.4)" stroke-dasharray="2 4"/><text x="80" y="58" text-anchor="middle" fill="#b8b0b1" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="2">STARTUPS OF</text><text x="80" y="71" text-anchor="middle" fill="#b8b0b1" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="2">THE YEAR</text><text x="80" y="104" text-anchor="middle" fill="#f2eeee" font-family="Oswald, sans-serif" font-size="34" font-weight="600">2024</text><text x="80" y="122" text-anchor="middle" fill="#e23b3b" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="2">DHAKA WINNER</text></svg>
+      </div>
+      <div class="body">
+        <span class="by">HackerNoon · Startups of The Year</span>
+        <h3>Winner, Startups of The Year 2024 in Dhaka</h3>
+        <p>Chosen by community vote among the startups nominated in Dhaka, in HackerNoon's yearly awards for startups in more than 4,200 cities.</p>
+        <div class="facts"><span>Year <b>2024</b></span><span>Announced <b>24 Apr 2025</b></span><span>Decided by <b>public vote</b></span><span class="proof ok"><svg aria-hidden="true"><use href="#ok"/></svg>Confirmed at source</span></div>
+        <a class="go-src" href="#">See it on HackerNoon &rarr;</a>
+      </div>
+    </article>
+
+    <div class="cards" style="margin-top:12px">
+      <div class="card"><div class="top"><span class="who">HackerNoon</span><span class="yr">Nov 2025</span></div><h3>Startups of the Week</h3><p>Featured as one of three startups of the week, from the Startups of The Year database.</p><span class="proof ok"><svg aria-hidden="true"><use href="#ok"/></svg>Confirmed at source</span><a class="src" href="#">Read the feature</a></div>
+      <div class="card wait"><div class="top"><span class="who">HackerNoon</span><span class="yr">2024</span></div><h3>#11 in Marketing, worldwide</h3><p>Rank among marketing startups in Startups of The Year 2024.</p><span class="proof wait"><svg aria-hidden="true"><use href="#clk"/></svg>Needs a HackerNoon link</span></div>
+      <div class="card wait"><div class="top"><span class="who">GoodFirms</span><span class="yr">Year?</span></div><h3>Top SEO and Branding Company</h3><p>Listed as a top company in a GoodFirms category.</p><span class="proof wait"><svg aria-hidden="true"><use href="#clk"/></svg>Needs the GoodFirms list link</span></div>
+      <div class="card wait"><div class="top"><span class="who">FindBestFirms</span><span class="yr">Year?</span></div><h3>Best WordPress Agency</h3><p>FindBestFirms links to our site three times; the award page is still needed.</p><span class="proof wait"><svg aria-hidden="true"><use href="#clk"/></svg>Needs the award page link</span></div>
+    </div>
+
+    <div class="sec-h" id="partners"><span>Partners</span><h2>Partnerships and credentials</h2></div>
+    <div class="cards">
+      <div class="card"><div class="top"><span class="who">Semrush</span><span class="yr">Listed</span></div><h3>Semrush Agency Partner</h3><p>Listed in the Semrush Agency Partners directory, with offices in Dhaka and Katy, Texas.</p><span class="proof ok"><svg aria-hidden="true"><use href="#ok"/></svg>Confirmed at source</span><a class="src" href="#">See the listing</a></div>
+      <div class="card wait"><div class="top"><span class="who">Semrush</span><span class="yr">May 2025</span></div><h3>Founder: Semrush Ambassador</h3><p>Jamil Ahmed, Founder and CEO, is a Semrush Ambassador.</p><span class="proof wait"><svg aria-hidden="true"><use href="#clk"/></svg>Needs a Semrush page that names Jamil</span></div>
+      <div class="card wait"><div class="top"><span class="who">WP Engine</span><span class="yr">Year?</span></div><h3>WP Engine agency partner</h3><p>Partner programme for agencies that build on WP Engine hosting.</p><span class="proof wait"><svg aria-hidden="true"><use href="#clk"/></svg>Needs the WP Engine partner page</span></div>
+    </div>
+
+    <div class="sec-h" id="reviews"><span>Reviews</span><h2>What clients say, and where</h2></div>
+    <div class="cards two">
+      <div class="card"><div class="top"><span class="who">Google</span><span class="yr">Dhaka office</span></div><div class="rating"><b>4.6</b><div><div class="stars" aria-label="4.6 out of 5"><i></i><i></i><i></i><i></i><i class="h"></i></div><p>From 8 Google reviews</p></div></div><a class="src" href="#">Read the reviews on Google</a></div>
+      <div class="card"><div class="top"><span class="who">Directories</span><span class="yr">Profiles</span></div><h3>Find us on</h3><p>Clutch · GoodFirms · DesignRush · Semrush Agency Partners · HackerNoon. Reviews from clients on these sites are welcome.</p><a class="src" href="#">Leave us a review on Clutch</a></div>
+    </div>
+
+    <div class="sec-h" id="press"><span>Press</span><h2>Interviews and press releases</h2></div>
+    <div class="press">
+      <div class="pr"><time datetime="2018-09-07">7 Sep 2018</time><div><b>Interview with Jamil Ahmed</b><p>Onalytica asks our founder about his move from pharmaceutical brand marketing into business intelligence and digital marketing.</p></div><span class="kind">Interview</span></div>
+      <div class="pr"><time datetime="2024-10-22">22 Oct 2024</time><div><b>Reinforce Lab expands across continents</b><p>Our announcement of the US office in Katy, Texas, distributed by EIN Presswire.</p></div><span class="kind">Our press release</span></div>
+    </div>
+    <p class="note"><b>About "As seen on" logos.</b> Our press releases are republished by news sites through wire services. That is not the same as those outlets writing about us, so we list the release itself rather than their logos.</p>
+
+    <div class="sec-h"><span>Timeline</span><h2>Recognition by year</h2></div>
+    <ol class="tl">
+      <li><span class="y">2018</span><span class="d"></span><p>Onalytica interview with our founder<span>Interview</span></p></li>
+      <li><span class="y">2024</span><span class="d"></span><p>Winner, HackerNoon Startups of The Year 2024 in Dhaka<span>Award, public vote</span></p></li>
+      <li><span class="y">2025</span><span class="d"></span><p>HackerNoon Startups of the Week<span>Feature</span></p></li>
+    </ol>
+
+    <aside class="icta" aria-label="Reinforce Lab"><div><p class="lbl">Reinforce Lab · About</p><p class="hd">Want to know more about how we work?</p><p class="csub">Read our story, meet the team behind the work, or see what the free diagnostic shows on your own site.</p></div><div class="act2"><a class="go2" href="#">About Reinforce Lab &rarr;</a><a class="alt" href="#">Or get a free diagnostic first</a></div></aside>
+  </div>
+
+  <section class="back" aria-label="Questions">
+    <div class="faq"><div class="sec-h"><span>Questions</span><h2>FAQs</h2></div>
+      <details open><summary>Why are some awards not listed?</summary><p>We only list recognition we can link to on the awarding body's own site, and we leave out awards sold with a publicity package.</p></details>
+      <details><summary>How can I check an award?</summary><p>Each card links to the page that confirms it. Open the link and look for Reinforce Lab by name.</p></details>
+    </div>
+    <div class="src"><div class="sec-h"><span>Evidence</span><h2>Sources</h2></div>
+      <ol><li><a href="#">HackerNoon: Startups of The Year 2024 winners, Asia</a></li><li><a href="#">Semrush Agency Partners: Reinforce Lab</a></li><li><a href="#">Onalytica: Interview with Jamil Ahmed</a></li></ol>
+    </div>
+  </section>
+  <div style="height:40px"></div>
+</div>
