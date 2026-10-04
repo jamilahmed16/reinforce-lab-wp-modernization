@@ -20,7 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
-| D-098 | Case Study template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
+| D-098 | Case Study template: design mockup v1 and v2 (7 additions) for review | 4 Oct | AWAITING REVIEW (v2) | this file |
 | D-097 | Updates template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Updates template") | this file |
 | D-096 | Updates template: design mockup v1 for review | 4 Oct | APPROVED, built as D-097 | this file |
 | D-095 | Industry template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Industry template") | this file |
@@ -172,6 +172,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 - **What made the difference:** three lessons for readers; **the light in-article service CTA**; **services used** as cards linking to the service and industry pages.
 - **How we measured:** periods compared, data sources, "shared with permission", and that results depend on many factors.
 - FAQs (including why the client is or is not named), sources, author box.
+
+**v2, same day** (Jamil asked "is it enough detailed for industry standard case study", then "yes, add 1 to 7 and update the mockup"). Added:
+1. **Results chart over time** (organic clicks a month, January to August) with markers for "Work started" and "Template fix live", hover tooltip with crosshair, the end value labelled, the source under it, and "Show the figures as a table". One series in brand red; colour checked with the dataviz validator against the dark surface (all checks pass).
+2. **Evidence screenshots:** a gallery of three (before, after, example page), each with date and caption.
+3. **Client profile:** company size, markets, website, what they tried before.
+4. **What did not go to plan:** problem and how we handled it, side by side.
+5. **Other things that changed:** listed under "How we measured" (core update, seasonality, a trade show) with how each was accounted for.
+6. **What's next:** the ongoing work.
+7. **Related case studies:** three cards at the end, before the FAQs.
+All new client details and figures carry the "Sample data" tag. Copy check 0 issues; desktop and phone with no horizontal scroll. Fixed before publishing: the screenshot placeholders shared a class with the phase timeline.
 
 **Rules carried over (D-076):** the publish guard stays: a case study cannot go live until "Client approved this case study" is ticked; anonymised unless the client agreed in writing to be named; measured results only, with period and source; the quote only as approved by the client.
 **Checks:** `copy-check.py` 0 issues; desktop 1440 and phone 390 with no horizontal scroll. Fixed before publishing: the sample tag in the client card and one awkward line.

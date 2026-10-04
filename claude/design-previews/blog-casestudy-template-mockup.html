@@ -163,8 +163,71 @@ h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;c
 .author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}
 .author p{margin:0 0 8px;font-size:15px}
 
+
+/* 1 trend chart */
+.trend{margin-top:14px;border:1px solid var(--line-2);background:var(--bg-2);padding:16px 18px 12px}
+.trend .th{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:baseline}
+.trend .th b{font-family:var(--f-display);font-size:18px;text-transform:uppercase;color:var(--ink);font-weight:500}
+.trend .th span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+.plot{position:relative;margin-top:10px}
+.plot svg{display:block;width:100%;height:260px}
+.plot .tip{position:absolute;pointer-events:none;background:var(--panel-2);border:1px solid var(--line-2);padding:6px 10px;font-family:var(--f-mono);font-size:12px;color:var(--ink);white-space:nowrap;transform:translate(-50%,-110%);opacity:0;transition:opacity .12s}
+.plot .tip b{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);font-weight:500}
+.trend details{margin-top:8px;font-size:13.5px}
+.trend summary{cursor:pointer;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim)}
+.trend table{border-collapse:collapse;margin-top:8px;font-family:var(--f-mono);font-size:12.5px;width:100%;max-width:420px}
+.trend th,.trend td{border-bottom:1px solid var(--line);padding:5px 8px;text-align:left;color:var(--ink-dim)}
+.trend td.n{text-align:right;color:var(--ink);font-variant-numeric:tabular-nums}
+.trend .src2{font-family:var(--f-mono);font-size:10.5px;color:var(--ink-faint);margin:8px 0 0}
+
+/* 3 client profile */
+.profile{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:18px 0 0}
+.profile div{background:var(--bg-2);padding:12px 14px}
+.profile dt{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.profile dd{margin:4px 0 0;color:var(--ink);font-size:14.5px}
+
+/* 2 evidence */
+.evidence{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.ev{margin:0;border:1px solid var(--line-2);background:var(--bg-2)}
+.ev::before{content:"";display:block;height:24px;border-bottom:1px solid var(--line);background-image:linear-gradient(var(--line-2),var(--line-2)),linear-gradient(var(--line-2),var(--line-2)),linear-gradient(var(--line-2),var(--line-2));background-size:7px 7px;background-repeat:no-repeat;background-position:10px 8px,22px 8px,34px 8px}
+.ev .shot-ph{height:150px;display:grid;place-items:center;font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);text-align:center;padding:10px;background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(255,255,255,.02) 14px 28px)}
+.ev figcaption{font-size:13px;padding:10px 12px;border-top:1px solid var(--line)}
+.ev figcaption b{display:block;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;margin-bottom:2px}
+
+/* 4 obstacles */
+.obst{border:1px solid var(--line-2)}
+.ob{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-top:1px solid var(--line)}
+.ob:first-child{border-top:0}
+.ob>div{padding:16px 18px}
+.ob>div+div{border-left:1px solid var(--line);background:linear-gradient(90deg,rgba(63,163,107,.05),transparent)}
+.ob .l{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px}
+.ob .p .l{color:var(--amber)} .ob .h .l{color:var(--ok)}
+.ob p{margin:0;font-size:15px;color:var(--ink)}
+
+/* 6 next */
+.next{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:start;border:1px solid var(--line-2);background:var(--panel);padding:18px 20px;margin-top:22px}
+.next .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--red);padding:3px 8px}
+.next h3{font-size:18px;margin-bottom:4px}
+.next p{margin:0;font-size:15px}
+
+/* 5 other factors */
+.factors{list-style:none;margin:10px 0 0;padding:0}
+.factors li{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:14px;padding:8px 0;border-top:1px solid var(--line);font-size:14px}
+.factors li:first-child{border-top:0}
+.factors b{color:var(--ink);font-weight:500}
+
+/* 7 related case studies */
+.more{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.cs{background:var(--bg);padding:18px 20px;text-decoration:none;display:grid;gap:8px;align-content:start;transition:background .2s}
+.cs:hover{background:var(--panel)}
+.cs .k{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3)}
+.cs b{font-family:var(--f-display);font-size:19px;text-transform:uppercase;color:var(--ink);font-weight:500;line-height:1.15}
+.cs .r{font-family:var(--f-mono);font-size:12px;color:var(--ok)}
+
 @media(max-width:1000px){
   .hero{grid-template-columns:1fr}
+  .profile{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .evidence,.more{grid-template-columns:1fr 1fr}
   .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:760px){
@@ -173,7 +236,11 @@ h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;c
   .act{grid-template-columns:1fr;gap:10px}
   .act .no{grid-auto-flow:column;justify-content:start;align-items:end;gap:12px}
   .act .no b{font-size:44px}
-  .lessons,.svcs,.back{grid-template-columns:1fr}
+  .lessons,.svcs,.back,.evidence,.more,.profile{grid-template-columns:1fr}
+  .ob{grid-template-columns:1fr} .ob>div+div{border-left:0;border-top:1px solid var(--line)}
+  .factors li{grid-template-columns:1fr;gap:2px}
+  .next{grid-template-columns:1fr}
+  .plot svg{height:220px}
   .quote{padding:22px 20px}
   .method{grid-template-columns:1fr;gap:6px}
   .icta{grid-template-columns:1fr;padding-left:16px} .act2{padding-right:16px}
@@ -219,6 +286,12 @@ h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;c
       <div class="tile"><span class="m">HCP enquiries a month</span><span class="ba"><span class="from">9</span><span class="arrow">&rarr;</span><span class="to">22</span></span><span class="d">+13</span><span class="src">Client CRM, Feb vs Aug 2026</span></div>
       <div class="tile"><span class="m">Pages through review</span><span class="ba"><span class="to">48</span></span><span class="d">0 rejected</span><span class="src">Client review log, Mar to Aug 2026</span></div>
     </div>
+    <div class="trend">
+      <div class="th"><b>Organic clicks a month</b><span>January to August 2026 · <span class="sample">Sample data</span></span></div>
+      <div class="plot" id="plot"><svg id="chart" role="img" aria-label="Organic clicks a month rose from about 1,200 in January and February to 3,100 in August, after work started in March."></svg><div class="tip" id="tip" aria-hidden="true"></div></div>
+      <p class="src2">Source: client's Google Search Console, shared with permission. Markers show when work started and when the template fix went live.</p>
+      <details><summary>Show the figures as a table</summary><table id="ttab"><thead><tr><th>Month</th><th>Clicks</th></tr></thead><tbody></tbody></table></details>
+    </div>
   </section>
 </div>
 
@@ -229,6 +302,12 @@ h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;c
     <section class="act" aria-labelledby="a1"><div class="no"><b>1</b>The brief</div><div>
       <h2 id="a1">The challenge</h2>
       <div class="prose"><p>The client's site had grown to more than 700 pages, but Google showed fewer than 150. Enquiries from healthcare professionals had stalled, and every page change needed medical and legal sign-off, which slowed fixes down.</p></div>
+      <dl class="profile" aria-label="Client profile">
+        <div><dt>Company size</dt><dd>200 to 500 staff</dd></div>
+        <div><dt>Markets</dt><dd>UK and EU</dd></div>
+        <div><dt>Website</dt><dd>700+ pages, WordPress</dd></div>
+        <div><dt>Tried before</dt><dd>In-house blog, one agency audit</dd></div>
+      </dl>
       <ul class="goals"><li>Get product and disease-area pages indexed</li><li>Grow enquiries from healthcare professionals</li><li>Keep every page compliant</li></ul>
     </div></section>
 
@@ -241,9 +320,21 @@ h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;c
       </ol>
     </div></section>
 
+    <div class="sec-h" id="obstacles"><span>Honest notes</span><h2>What did not go to plan</h2></div>
+    <div class="obst">
+      <div class="ob"><div class="p"><span class="l">Problem</span><p>Medical review took three weeks per page at first, so publishing fell behind.</p></div><div class="h"><span class="l">How we handled it</span><p>We booked review slots a month ahead and sent pages in batches of four.</p></div></div>
+      <div class="ob"><div class="p"><span class="l">Problem</span><p>Merging duplicate pages broke links in old email campaigns.</p></div><div class="h"><span class="l">How we handled it</span><p>We added redirects for every old URL and checked the top 200 links by hand.</p></div></div>
+    </div>
+
     <section class="act" aria-labelledby="a3"><div class="no"><b>3</b>The outcome</div><div>
       <h2 id="a3">What changed</h2>
       <div class="prose"><p>Within six weeks of the template fix, Google had indexed most of the blocked pages. The new disease-area pages started bringing in searches from clinicians, and the review workflow meant <strong>no page was sent back by the client's compliance team</strong>.</p></div>
+      <div class="evidence" style="margin-top:22px">
+        <figure class="ev"><div class="shot-ph">Screenshot: Search Console page indexing, February 2026</div><figcaption><b>Before · Feb 2026</b>Most product pages listed as "Excluded by noindex tag".</figcaption></figure>
+        <figure class="ev"><div class="shot-ph">Screenshot: Search Console page indexing, August 2026</div><figcaption><b>After · Aug 2026</b>Product pages indexed after the template fix.</figcaption></figure>
+        <figure class="ev"><div class="shot-ph">Screenshot: a new disease-area page with its reviewer</div><figcaption><b>Example page · Jun 2026</b>Writer and medical reviewer named on the page.</figcaption></figure>
+      </div>
+      <div class="next"><span class="k">What's next</span><div><h3>Ongoing work</h3><p>Monthly technical checks, six more disease-area pages each quarter, and tracking how AI tools describe the client's products.</p></div></div>
     </div></section>
 
     <figure class="quote">
@@ -268,8 +359,17 @@ h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;c
       <a class="svc" href="#"><span class="k">Industry</span><b>Pharmaceutical</b><span>How we work with pharma</span></a>
     </div>
 
-    <div class="method"><span class="k">How we measured</span><p>Figures compare February 2026 (before work started) with August 2026, from the client's Google Search Console and CRM, shared with permission. Results depend on many factors, including the site's history and competition.</p></div>
+    <div class="method"><span class="k">How we measured</span><div><p>Figures compare February 2026 (before work started) with August 2026, from the client's Google Search Console and CRM, shared with permission. Results depend on many factors, including the site's history and competition.</p><ul class="factors" aria-label="Other things that changed"><li><b>Google core update, March 2026</b><span>Rankings across the sector moved. We compared against page groups we did not change.</span></li><li><b>Seasonal demand</b><span>We checked the same months in 2025: they were flat, so the rise is not seasonal.</span></li><li><b>Client trade show, May 2026</b><span>Branded searches rose for two weeks; we left branded clicks out of the totals.</span></li></ul></div></div>
   </div>
+
+  <section class="relcs" aria-labelledby="rel-h" style="margin-top:46px">
+    <div class="sec-h" style="margin-top:0"><span>More case studies</span><h2 id="rel-h">Related work</h2><span class="sample">Sample data</span></div>
+    <div class="more">
+      <a class="cs" href="#"><span class="k">Healthcare</span><b>A private clinic group doubles booked consultations from search</b><span class="r">Booked consultations +96%</span></a>
+      <a class="cs" href="#"><span class="k">Manufacturing</span><b>An industrial supplier wins enquiries in three new markets</b><span class="r">Enquiries from new markets: 0 to 41 a month</span></a>
+      <a class="cs" href="#"><span class="k">B2B SaaS</span><b>A software company gets cited in AI answers for its category</b><span class="r">Cited in 18 of 25 tracked AI answers</span></a>
+    </div>
+  </section>
 
   <section class="back" aria-label="Questions and sources">
     <div class="faq"><div class="sec-h"><span>Questions</span><h2>FAQs</h2></div>
@@ -283,3 +383,35 @@ h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;c
 
   <aside class="author" aria-label="About the author"><span class="av" aria-hidden="true">J</span><div><p class="nm">Jamil Ahmed</p><p class="role">Founder and CEO, Reinforce Lab</p><p>Pharmacist, SEO and AI search consultant, and Semrush Ambassador.</p></div></aside>
 </div>
+
+<script>
+(function(){
+  var data=[["Jan",1150],["Feb",1200],["Mar",1180],["Apr",1650],["May",2100],["Jun",2500],["Jul",2850],["Aug",3100]];
+  var marks=[[2,"Work started"],[2.6,"Template fix live"]];
+  var svg=document.getElementById('chart'), tip=document.getElementById('tip'), box=document.getElementById('plot'), NS='http://www.w3.org/2000/svg';
+  var tb=document.querySelector('#ttab tbody'); data.forEach(function(d){ var r=document.createElement('tr'); r.innerHTML='<td>'+d[0]+' 2026</td><td class="n">'+d[1].toLocaleString('en-GB')+'</td>'; tb.appendChild(r); });
+  function el(n,a){ var e=document.createElementNS(NS,n); for(var k in a) e.setAttribute(k,a[k]); return e; }
+  function draw(){
+    var W=box.clientWidth, H=svg.clientHeight||260, L=48, R=14, T=22, B=26; svg.setAttribute('viewBox','0 0 '+W+' '+H); svg.innerHTML='';
+    var max=3500, x=function(i){return L+i*(W-L-R)/(data.length-1);}, y=function(v){return T+(1-v/max)*(H-T-B);};
+    [0,1000,2000,3000].forEach(function(v){ svg.appendChild(el('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:'rgba(255,255,255,.08)'})); var t=el('text',{x:L-8,y:y(v)+4,'text-anchor':'end',fill:'#7f7778','font-size':11,'font-family':'IBM Plex Mono, monospace'}); t.textContent=v.toLocaleString('en-GB'); svg.appendChild(t); });
+    data.forEach(function(d,i){ var t=el('text',{x:x(i),y:H-6,'text-anchor':'middle',fill:'#7f7778','font-size':11,'font-family':'IBM Plex Mono, monospace'}); t.textContent=d[0]; svg.appendChild(t); });
+    marks.forEach(function(m,k){ var mx=x(m[0]); svg.appendChild(el('line',{x1:mx,x2:mx,y1:T-8,y2:H-B,stroke:'#d39b3a','stroke-dasharray':'3 3','stroke-width':1})); var t=el('text',{x:mx+(k?6:-6),y:T-10+(k?12:0),'text-anchor':k?'start':'end',fill:'#d39b3a','font-size':10.5,'font-family':'IBM Plex Mono, monospace'}); t.textContent=m[1]; svg.appendChild(t); });
+    var pts=data.map(function(d,i){return x(i)+','+y(d[1]);}).join(' ');
+    svg.appendChild(el('polygon',{points:x(0)+','+y(0)+' '+pts+' '+x(data.length-1)+','+y(0),fill:'rgba(226,59,59,.10)'}));
+    svg.appendChild(el('polyline',{points:pts,fill:'none',stroke:'#e23b3b','stroke-width':2,'stroke-linejoin':'round'}));
+    var last=data.length-1; svg.appendChild(el('circle',{cx:x(last),cy:y(data[last][1]),r:5,fill:'#e23b3b',stroke:'#0e0c0d','stroke-width':2}));
+    var lt=el('text',{x:x(last)-8,y:y(data[last][1])-10,'text-anchor':'end',fill:'#f2eeee','font-size':12,'font-family':'IBM Plex Mono, monospace'}); lt.textContent='3,100'; svg.appendChild(lt);
+    var cross=el('line',{y1:T,y2:H-B,stroke:'rgba(255,255,255,.3)',opacity:0}); svg.appendChild(cross);
+    var dot=el('circle',{r:5,fill:'#e23b3b',stroke:'#0e0c0d','stroke-width':2,opacity:0}); svg.appendChild(dot);
+    var hit=el('rect',{x:L,y:0,width:W-L-R,height:H,fill:'transparent'}); svg.appendChild(hit);
+    function show(cx){ var i=Math.max(0,Math.min(data.length-1,Math.round((cx-L)/((W-L-R)/(data.length-1))))), px=x(i), py=y(data[i][1]);
+      cross.setAttribute('x1',px); cross.setAttribute('x2',px); cross.setAttribute('opacity',1); dot.setAttribute('cx',px); dot.setAttribute('cy',py); dot.setAttribute('opacity',1);
+      tip.innerHTML='<b>'+data[i][0]+' 2026</b>'+data[i][1].toLocaleString('en-GB')+' clicks'; tip.style.left=Math.min(Math.max(px,60),W-60)+'px'; tip.style.top=py+'px'; tip.style.opacity=1; }
+    function hide(){ cross.setAttribute('opacity',0); dot.setAttribute('opacity',0); tip.style.opacity=0; }
+    hit.addEventListener('pointermove',function(e){ var r=svg.getBoundingClientRect(); show(e.clientX-r.left); });
+    hit.addEventListener('pointerleave',hide);
+  }
+  draw(); var t; addEventListener('resize',function(){ clearTimeout(t); t=setTimeout(draw,120); });
+})();
+</script>
