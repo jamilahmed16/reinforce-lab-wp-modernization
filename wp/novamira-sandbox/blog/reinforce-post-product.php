@@ -95,7 +95,7 @@ function rl_product_data($id) {
     $hn = array_map('trim', explode('|', $m('rl_p_honest'), 2));
     $rd = function_exists('rl_pt_date') ? rl_pt_date($m('rl_p_release_date')) : '';
     return $cache[$id] = [
-        'sub' => $sub, 'sub_label' => trim(explode('/', $subs[$sub] ?? 'How it works')[0]), // chip shows Use case, Launch 'svc' => $svc, 'kind' => rl_product_kind($svc),
+        'sub' => $sub, 'sub_label' => trim(explode('/', $subs[$sub] ?? 'How it works')[0]), 'svc' => $svc, 'kind' => rl_product_kind($svc),
         'name' => $m('rl_p_name') !== '' ? $m('rl_p_name') : ($svc !== '' ? $names[$svc] : ''), 'code' => $m('rl_p_code'), 'promise' => $m('rl_p_promise'),
         'what' => $m('rl_p_what'), 'part' => $part, 'part_name' => $part !== '' ? $names[$part] : '', 'bestfor' => $m('rl_p_bestfor'), 'version' => $m('rl_p_version'),
         'problems' => array_slice(rl_product_rows(get_post_meta($id, 'rl_p_problems', true), 1), 0, 3), 'steps' => $steps, 'in' => $m('rl_p_in'), 'out' => $m('rl_p_out'),
