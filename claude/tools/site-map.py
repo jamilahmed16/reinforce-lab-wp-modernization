@@ -71,7 +71,7 @@ lines = [
     'Shared styles: [`core/reinforce-kit.css`](../wp/novamira-sandbox/core/reinforce-kit.css).',
     'Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinforce-post.php) '
     '(all types), [`blog/reinforce-post-types.php`](../wp/novamira-sandbox/blog/reinforce-post-types.php) '
-    '(per-type fields), [`blog/reinforce-post-guide.php`](../wp/novamira-sandbox/blog/reinforce-post-guide.php) (Guide), '
+    '(shared lists and helpers), [`blog/reinforce-post-guide.php`](../wp/novamira-sandbox/blog/reinforce-post-guide.php) (Guide), '
     '[`blog/reinforce-post-howto.php`](../wp/novamira-sandbox/blog/reinforce-post-howto.php) (How-To), '
     '[`blog/reinforce-post-list.php`](../wp/novamira-sandbox/blog/reinforce-post-list.php) (Best / List), '
     '[`blog/reinforce-post-review.php`](../wp/novamira-sandbox/blog/reinforce-post-review.php) (Review), '
@@ -80,7 +80,8 @@ lines = [
     '[`blog/reinforce-post-industry.php`](../wp/novamira-sandbox/blog/reinforce-post-industry.php) (Industry), '
     '[`blog/reinforce-post-updates.php`](../wp/novamira-sandbox/blog/reinforce-post-updates.php) (Updates), '
     '[`blog/reinforce-post-casestudy.php`](../wp/novamira-sandbox/blog/reinforce-post-casestudy.php) (Case Study), '
-    '[`blog/reinforce-post-research.php`](../wp/novamira-sandbox/blog/reinforce-post-research.php) (Research).',
+    '[`blog/reinforce-post-research.php`](../wp/novamira-sandbox/blog/reinforce-post-research.php) (Research), '
+    '[`blog/reinforce-post-product.php`](../wp/novamira-sandbox/blog/reinforce-post-product.php) (Product / Service).',
     '',
 ]
 for g in ORDER:

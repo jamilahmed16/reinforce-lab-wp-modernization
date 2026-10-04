@@ -346,7 +346,8 @@ add_action('wp_head', function () {
 .rl-pd .p-plate dl div:first-child{border-top:0}
 .rl-pd .p-plate dt{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);padding-top:3px}
 .rl-pd .p-plate dd{margin:0;color:var(--ink)}
-.rl-pd .p-plate dd a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.rl-pd .p-plate dd a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--red-line);text-underline-offset:4px}
+.rl-pd .p-plate dd a:hover{text-decoration-color:var(--red-3)}
 .rl-pd .p-plate .acts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line-2)}
 .rl-pd .p-plate .acts.one{grid-template-columns:1fr}
 .rl-pd .p-plate .acts a{display:flex;align-items:center;justify-content:center;padding:13px 10px;font-family:var(--f-display);font-size:13px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;color:#fff;background:var(--red);transition:background .15s}

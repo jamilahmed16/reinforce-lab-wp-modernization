@@ -20,7 +20,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
-| D-102 | Product / Service template: design mockup v1 (three subtypes) for review | 4 Oct | AWAITING REVIEW | this file |
+| D-103 | Product / Service template built on `.online`: all blog templates done | 4 Oct | DONE (Jamil: "approved, build the Product / Service template") | this file |
+| D-102 | Product / Service template: design mockup v1 (three subtypes) for review | 4 Oct | APPROVED, built as D-103 | this file |
 | D-101 | Research template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Research template") | this file |
 | D-100 | Research template: design mockup v1 for review | 4 Oct | APPROVED, built as D-101 | this file |
 | D-099 | Case Study template built on `.online` from the approved mockup (v2) | 4 Oct | DONE (Jamil: "approved, build the Case Study template") | this file |
@@ -162,8 +163,32 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 ---
 
+## D-103 · Product / Service template built on `.online`: all blog templates done
+**Date:** 4 October 2026 · **Status:** DONE (Jamil: "approved, build the Product / Service template")
+
+**Files:** new `blog/reinforce-post-product.php` (added to the loader); `blog/reinforce-post.php` hands Product / Service posts to `rl_product_render()`. The Product fields, boxes and schema moved out of `blog/reinforce-post-types.php`, which now holds only the shared lists (services, industries, subtypes) and small helpers. No Product posts existed on `.online` (checked first), so no data was affected. Keys `rl_p_subtype`, `rl_p_service`, `rl_p_limits` and `rl_p_changelog` are kept; the status label is still the base field `rl_status`.
+
+**Subtype label:** Jamil approved the mockup without naming another label, so the first subtype stays **"How it works"** (internal key `deepdive`). The chip shows "How it works", "Use case" or "Launch".
+
+**How an editor writes a Product / Service post:**
+- **Spec plate:** service or product (links the plate, the CTA and the schema), code (optional), name shown (defaults to the service name), one-line promise, what it is, part of (linked), best for, version. The disclosure always shows: "We make this. This article is about our own product" (or "service" for services).
+- **Status guard (D-074, O-022):** a post about an agent or Search Authority OS without a status label is put back to draft on save, and any preview shows an amber banner. Badges: In development (amber), Early access (blue), Available (green).
+- **How it works:** problems (`Problem | Sentence`, up to 3), steps (`Step | What happens | What comes out`, up to 5; `*` marks where a person decides), what goes in and out, an example (`Label | Text`; `>` shows the text as a quote).
+- **Use case:** the situation, what you need, the playbook (`Step | What to do | Who | When`), signs it is working.
+- **Launch:** version, release date, headline, items (`new`, `changed` or `fixed` | Text), what changes for current users.
+- **For every subtype:** the body after the middle section, changelog (`YYYY-MM-DD | Change`, newest first), it does / it does not, honest note (`Lead | More`), fit, CTA to the product page, related articles (same product first, then other Product posts).
+
+**Schema:** the article is `about` the Service (`…/#service`, provider the Organization). Any Review, AggregateRating, Product or Offer node, or review, rating or offer property on the article, is removed for these posts (D-076). Verified in memory.
+
+**Checks:** in-memory previews of all three subtypes and of a post with no status label (nothing saved, F-003): no PHP notices; `copy-check.py` 0 issues on the file and the rendered pages; desktop 1440 and phone 390 with no horizontal scroll and no script errors; Case Study and Research previews re-run after the post-types file was trimmed, no notices; `rl.py parity` 46 files, 0 differences.
+**Fixed during the build:** a code comment placed mid-line cut off two data keys (caught by the notice check before any post used it); the link in the plate now uses an underline, as a border was overridden.
+
+**All blog templates are now built** (D-077): Guide, How-To, Best / List, Review, Comparison, Explainer, Industry, Updates, Case Study, Research and Product / Service. Opinion and Checklist use the base single-post design, as agreed. Next, as agreed in D-084: the founder bio choice, the merge into `main`, and the reminder to `git pull` before the daily sync.
+
+---
+
 ## D-102 · Product / Service template: design mockup v1 for review
-**Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S REVIEW (Jamil: "yes, go ahead with the Product / Service mockup"; D-077 process)
+**Date:** 4 October 2026 · **Status:** APPROVED, built as D-103 (Jamil: "approved, build the Product / Service template"; D-077 process)
 
 **Mockup:** `claude/design-previews/blog-product-template-mockup.html`, published privately (claude.ai artifact "Product Service Template Mockup"). Sample product: the Evidence Verification Agent (A-03), using the wording already on its agent page. Titles, versions, dates, the worked example and the playbook are sample content, tagged on the page. **Status shown as "In development"** (and "Early access" in the Launch view) because O-022 is still open; no claim that the agent is live.
 
