@@ -20,7 +20,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
-| D-090 | Comparison template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
+| D-091 | Comparison template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Comparison template") | this file |
+| D-090 | Comparison template: design mockup v1 for review | 4 Oct | APPROVED, built as D-091 | this file |
 | D-089 | Review template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Review template") | this file |
 | D-088 | Review template: design mockup v1 for review | 4 Oct | APPROVED, built as D-089 | this file |
 | D-087 | Best / List template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Best/List template") | this file |
@@ -147,6 +148,25 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-091 · Comparison template built on `.online` from the approved mockup
+**Date:** 4 October 2026 · **Status:** DONE (Jamil: "approved, build the Comparison template"). Two options, as noted in D-090; three-way comparisons can be added later if Jamil asks.
+
+**Files:** new `blog/reinforce-post-comparison.php` (added to the loader); `blog/reinforce-post.php` hands Comparison posts to `rl_cmp_render()`; the old comparison boxes, fields and ItemList code were removed from `blog/reinforce-post-types.php` (no posts existed, so no data was affected). The field keys `rl_c_rows`, `rl_c_winners` and `rl_c_verdict` are kept with compatible formats.
+
+**How an editor writes a Comparison:**
+- **Option A and B:** name, one line, "Choose it if". A shows in red and B in a pale neutral everywhere on the page.
+- **Rounds:** `Round | Winner | What A is like | What B is like`; the winner can be A, B, Tie or the option's name. The tally bar and the "what matters to you" picker are worked out from these lines.
+- **Side-by-side details:** `Row | A | B`. **Winner by situation:** `Situation | A or B | Why`. **Or use both** (optional), **our verdict**, and the light service CTA (shown before the verdict).
+- **Body:** text before the first H2 is the intro under the short answer; H2 sections show after the comparison as further reading.
+
+**Behaviour:** the picker starts by showing the result across all rounds, then names the winner (or a tie) for the rounds the reader ticks. On phones the face-off stacks with the VS line across, and each round stacks with A and B labels.
+
+**Schema:** ItemList of the two options (no ratings), plus the base BlogPosting, Person and FAQPage.
+
+**Checks:** in-memory preview with the mockup's content (nothing saved, F-003): schema nodes Article/BlogPosting, Person, FAQPage, ItemList; no PHP notices; desktop 1440 and phone 390 with no horizontal scroll; picker tested with three rounds ticked (correct result); `copy-check.py` 0 issues on the file and the rendered page; `rl.py parity` 40 files, 0 differences; live blog and Enterprise SEO pages still 390 wide.
 
 ---
 
