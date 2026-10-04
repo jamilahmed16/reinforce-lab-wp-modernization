@@ -1,0 +1,918 @@
+[
+ {
+  "id": 3,
+  "type": "page",
+  "status": "draft",
+  "title": "Privacy Policy",
+  "slug": "privacy-policy",
+  "parent": 0,
+  "path": "/?page_id=3",
+  "template": null,
+  "content": "<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Who we are</h2>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>Our website address is: http://reinforcelab.online.</p>\n<!-- /wp:paragraph -->\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Comments</h2>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection.</p>\n<!-- /wp:paragraph -->\n<!-- wp:paragraph -->\n<p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p>\n<!-- /wp:paragraph -->\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Media</h2>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p>\n<!-- /wp:paragraph -->\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Cookies</h2>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p>\n<!-- /wp:paragraph -->\n<!-- wp:paragraph -->\n<p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p>\n<!-- /wp:paragraph -->\n<!-- wp:paragraph -->\n<p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &quot;Remember Me&quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p>\n<!-- /wp:paragraph -->\n<!-- wp:paragraph -->\n<p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p>\n<!-- /wp:paragraph -->\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Embedded content from other websites</h2>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p>\n<!-- /wp:paragraph -->\n<!-- wp:paragraph -->\n<p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p>\n<!-- /wp:paragraph -->\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Who we share your data with</h2>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>If you request a password reset, your IP address will be included in the reset email.</p>\n<!-- /wp:paragraph -->\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">How long we retain your data</h2>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p>\n<!-- /wp:paragraph -->\n<!-- wp:paragraph -->\n<p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p>\n<!-- /wp:paragraph -->\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What rights you have over your data</h2>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p>\n<!-- /wp:paragraph -->\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Where your data is sent</h2>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>Visitor comments may be checked through an automated spam detection service.</p>\n<!-- /wp:paragraph -->\n",
+  "excerpt": "",
+  "date": "2026-04-02 18:07:58",
+  "modified": "2026-04-02 18:07:58",
+  "seo": [],
+  "rl_fields": []
+ },
+ {
+  "id": 33,
+  "type": "page",
+  "status": "publish",
+  "title": "Home",
+  "slug": "home",
+  "parent": 0,
+  "path": "/",
+  "template": null,
+  "content": "[reinforce_home]",
+  "excerpt": "",
+  "date": "2026-09-01 19:40:52",
+  "modified": "2026-09-28 19:14:20",
+  "seo": {
+   "_yoast_wpseo_title": "AI Growth Systems for Search & Automation | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Reinforce Lab builds AI Growth Systems that automate operations, improve your visibility in Google and AI search, and increase revenue. Book a strategy call."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 64,
+  "type": "page",
+  "status": "publish",
+  "title": "Search Authority OS",
+  "slug": "search-authority-os",
+  "parent": 0,
+  "path": "/search-authority-os/",
+  "template": null,
+  "content": "[reinforce_saos]",
+  "excerpt": "",
+  "date": "2026-09-28 18:36:32",
+  "modified": "2026-09-28 18:36:32",
+  "seo": {
+   "_yoast_wpseo_title": "Search Authority OS: Evidence-Led SEO | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Search Authority OS researches your market, verifies every claim against real evidence, and grows your visibility in Google and AI search. Get your diagnostic."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 65,
+  "type": "page",
+  "status": "publish",
+  "title": "Search Authority Diagnostic",
+  "slug": "search-authority-diagnostic",
+  "parent": 0,
+  "path": "/search-authority-diagnostic/",
+  "template": null,
+  "content": "[reinforce_diagnostic]",
+  "excerpt": "",
+  "date": "2026-09-29 08:34:06",
+  "modified": "2026-09-29 08:34:06",
+  "seo": {
+   "_yoast_wpseo_title": "Free Search Authority Diagnostic | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Get a free, data-backed read of your Google and AI-search visibility, content authority, competitors and demand, plus a prioritized 90-day plan."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 66,
+  "type": "page",
+  "status": "publish",
+  "title": "Packages",
+  "slug": "packages",
+  "parent": 0,
+  "path": "/packages/",
+  "template": null,
+  "content": "[reinforce_packages]",
+  "excerpt": "",
+  "date": "2026-09-29 10:15:41",
+  "modified": "2026-09-29 10:15:41",
+  "seo": {
+   "_yoast_wpseo_title": "Search Authority OS Packages & Pricing | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Compare Search Authority OS packages: Foundation from $5,000 setup, Growth OS and Enterprise. Scoped to your goals and starting with a free diagnostic."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 67,
+  "type": "page",
+  "status": "draft",
+  "title": "Reviews",
+  "slug": "reviews",
+  "parent": 0,
+  "path": "/?page_id=67",
+  "template": null,
+  "content": "",
+  "excerpt": "",
+  "date": "2026-09-20 14:24:42",
+  "modified": "2026-09-20 14:24:42",
+  "seo": [],
+  "rl_fields": []
+ },
+ {
+  "id": 68,
+  "type": "page",
+  "status": "publish",
+  "title": "Services",
+  "slug": "services",
+  "parent": 0,
+  "path": "/services/",
+  "template": null,
+  "content": "[reinforce_services]",
+  "excerpt": "",
+  "date": "2026-09-29 15:03:41",
+  "modified": "2026-09-29 15:03:41",
+  "seo": {
+   "_yoast_wpseo_title": "Services: AI Search, SEO & Automation | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Reinforce Lab services: AI search optimization, GEO, SEO, content systems, marketing automation and AI consulting, built to work as one AI Growth System."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 69,
+  "type": "page",
+  "status": "draft",
+  "title": "Best WordPress Hosting",
+  "slug": "best-wordpress-hosting",
+  "parent": 67,
+  "path": "/?page_id=69",
+  "template": null,
+  "content": "",
+  "excerpt": "",
+  "date": "2026-09-20 14:24:42",
+  "modified": "2026-09-20 14:24:42",
+  "seo": [],
+  "rl_fields": []
+ },
+ {
+  "id": 70,
+  "type": "page",
+  "status": "draft",
+  "title": "Best SEO & AI Tools",
+  "slug": "best-seo-ai-tools",
+  "parent": 67,
+  "path": "/?page_id=70",
+  "template": null,
+  "content": "",
+  "excerpt": "",
+  "date": "2026-09-20 14:24:42",
+  "modified": "2026-09-20 14:24:42",
+  "seo": [],
+  "rl_fields": []
+ },
+ {
+  "id": 71,
+  "type": "page",
+  "status": "draft",
+  "title": "AI Growth Systems",
+  "slug": "ai-growth-systems",
+  "parent": 68,
+  "path": "/?page_id=71",
+  "template": null,
+  "content": "",
+  "excerpt": "",
+  "date": "2026-09-20 14:24:42",
+  "modified": "2026-09-20 14:24:42",
+  "seo": [],
+  "rl_fields": []
+ },
+ {
+  "id": 72,
+  "type": "page",
+  "status": "publish",
+  "title": "AI Search Optimization",
+  "slug": "ai-search-optimization",
+  "parent": 68,
+  "path": "/services/ai-search-optimization/",
+  "template": null,
+  "content": "[reinforce_aiso]",
+  "excerpt": "",
+  "date": "2026-09-29 15:17:32",
+  "modified": "2026-09-29 15:17:32",
+  "seo": {
+   "_yoast_wpseo_title": "AI Search Optimization Services (AISO) | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Get your brand found, cited and described accurately in ChatGPT, Perplexity, Gemini and Google AI Overviews. AI Search Optimization from Reinforce Lab."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 73,
+  "type": "page",
+  "status": "publish",
+  "title": "Generative Engine Optimization",
+  "slug": "generative-engine-optimization",
+  "parent": 68,
+  "path": "/services/generative-engine-optimization/",
+  "template": null,
+  "content": "[reinforce_geo]",
+  "excerpt": "",
+  "date": "2026-09-29 15:41:30",
+  "modified": "2026-09-29 15:41:30",
+  "seo": {
+   "_yoast_wpseo_title": "GEO Services: Generative Engine Optimization | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Generative Engine Optimization from Reinforce Lab: pages structured, sourced and written so ChatGPT, Perplexity, Gemini and AI Overviews can quote and cite them."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 74,
+  "type": "page",
+  "status": "publish",
+  "title": "SEO & AI Search Audit",
+  "slug": "seo-ai-search-audit",
+  "parent": 68,
+  "path": "/services/seo-ai-search-audit/",
+  "template": null,
+  "content": "[reinforce_audit]",
+  "excerpt": "",
+  "date": "2026-09-29 17:53:05",
+  "modified": "2026-09-29 17:53:05",
+  "seo": {
+   "_yoast_wpseo_title": "SEO & AI Search Audit Services | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "A one-time, human-led audit of your technical SEO, content, authority, competitors and AI search visibility, with evidence, a prioritised fix register and a roadmap."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 75,
+  "type": "page",
+  "status": "publish",
+  "title": "Pharmaceutical & Life Sciences",
+  "slug": "pharmaceutical",
+  "parent": 87,
+  "path": "/industries/pharmaceutical/",
+  "template": null,
+  "content": "[reinforce_industry]",
+  "excerpt": "",
+  "date": "2026-09-30 09:26:29",
+  "modified": "2026-09-30 09:26:29",
+  "seo": {
+   "_yoast_wpseo_title": "Pharmaceutical & Life Sciences SEO and AI Search | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Search, content and AI visibility for pharmaceutical and life sciences companies, built around medical-legal review, evidence and the rules for promoting medicines."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 76,
+  "type": "page",
+  "status": "publish",
+  "title": "Agents",
+  "slug": "agents",
+  "parent": 68,
+  "path": "/services/agents/",
+  "template": null,
+  "content": "[reinforce_agents]",
+  "excerpt": "",
+  "date": "2026-09-29 10:44:06",
+  "modified": "2026-09-29 10:44:06",
+  "seo": {
+   "_yoast_wpseo_title": "AI SEO Agents for Search & AI Visibility | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Eight AI agents for search authority: search intelligence, evidence verification, AEO/GEO, competitor and performance. Start with one or run the full OS."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 77,
+  "type": "page",
+  "status": "publish",
+  "title": "SEO Intelligence Agent",
+  "slug": "seo-intelligence",
+  "parent": 76,
+  "path": "/services/agents/seo-intelligence/",
+  "template": null,
+  "content": "[reinforce_agent]",
+  "excerpt": "",
+  "date": "2026-09-30 09:11:01",
+  "modified": "2026-09-30 09:11:01",
+  "seo": {
+   "_yoast_wpseo_title": "SEO Intelligence Agent | Search Authority OS | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "The SEO Intelligence Agent shows which searches are worth winning: demand, intent and value turned into a prioritised topic and page plan, reviewed by people."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 78,
+  "type": "page",
+  "status": "publish",
+  "title": "Content Research Agent",
+  "slug": "content-research",
+  "parent": 76,
+  "path": "/services/agents/content-research/",
+  "template": null,
+  "content": "[reinforce_agent]",
+  "excerpt": "",
+  "date": "2026-09-30 09:11:01",
+  "modified": "2026-09-30 09:11:01",
+  "seo": {
+   "_yoast_wpseo_title": "Content Research Agent | Search Authority OS | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "The Content Research Agent turns topics into researched briefs: what ranks, what people ask, what competitors miss, and the sources writers need."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 79,
+  "type": "page",
+  "status": "publish",
+  "title": "Evidence Verification Agent",
+  "slug": "evidence-verification",
+  "parent": 76,
+  "path": "/services/agents/evidence-verification/",
+  "template": null,
+  "content": "[reinforce_agent]",
+  "excerpt": "",
+  "date": "2026-09-30 09:11:01",
+  "modified": "2026-09-30 09:11:01",
+  "seo": {
+   "_yoast_wpseo_title": "Evidence Verification Agent | Search Authority OS | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "The Evidence Verification Agent ties every important claim to a source, scores confidence and flags weak evidence for human review."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 80,
+  "type": "page",
+  "status": "publish",
+  "title": "AEO / GEO Optimization Agent",
+  "slug": "aeo-geo-optimization",
+  "parent": 76,
+  "path": "/services/agents/aeo-geo-optimization/",
+  "template": null,
+  "content": "[reinforce_agent]",
+  "excerpt": "",
+  "date": "2026-09-30 09:11:01",
+  "modified": "2026-09-30 09:13:29",
+  "seo": {
+   "_yoast_wpseo_title": "AEO / GEO Optimization Agent | Search Authority OS | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "The AEO / GEO Optimization Agent tracks where you appear in AI answers and makes your pages and brand facts easier for AI to cite correctly."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 81,
+  "type": "page",
+  "status": "publish",
+  "title": "Social Sentiment Agent",
+  "slug": "social-sentiment",
+  "parent": 76,
+  "path": "/services/agents/social-sentiment/",
+  "template": null,
+  "content": "[reinforce_agent]",
+  "excerpt": "",
+  "date": "2026-09-30 09:11:01",
+  "modified": "2026-09-30 09:11:01",
+  "seo": {
+   "_yoast_wpseo_title": "Social Sentiment Agent | Search Authority OS | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "The Social Sentiment Agent turns real customer questions, objections and complaints from public conversations into topics, angles and FAQs."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 82,
+  "type": "page",
+  "status": "publish",
+  "title": "Competitor Intelligence Agent",
+  "slug": "competitor-intelligence",
+  "parent": 76,
+  "path": "/services/agents/competitor-intelligence/",
+  "template": null,
+  "content": "[reinforce_agent]",
+  "excerpt": "",
+  "date": "2026-09-30 09:11:01",
+  "modified": "2026-09-30 09:11:01",
+  "seo": {
+   "_yoast_wpseo_title": "Competitor Intelligence Agent | Search Authority OS | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "The Competitor Intelligence Agent maps where rivals win in search and AI answers, finds the gaps worth owning and watches for their next move."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 83,
+  "type": "page",
+  "status": "publish",
+  "title": "Content QA Auditor",
+  "slug": "content-qa",
+  "parent": 76,
+  "path": "/services/agents/content-qa/",
+  "template": null,
+  "content": "[reinforce_agent]",
+  "excerpt": "",
+  "date": "2026-09-30 09:11:01",
+  "modified": "2026-09-30 09:13:29",
+  "seo": {
+   "_yoast_wpseo_title": "Content QA Auditor | Search Authority OS | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "The Content QA Auditor checks every asset against SEO, AEO, GEO and evidence standards before it ships, with human approval where it matters."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 84,
+  "type": "page",
+  "status": "publish",
+  "title": "Search Performance Agent",
+  "slug": "search-performance",
+  "parent": 76,
+  "path": "/services/agents/search-performance/",
+  "template": null,
+  "content": "[reinforce_agent]",
+  "excerpt": "",
+  "date": "2026-09-30 09:11:01",
+  "modified": "2026-09-30 09:11:01",
+  "seo": {
+   "_yoast_wpseo_title": "Search Performance Agent | Search Authority OS | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "The Search Performance Agent detects slipping pages, diagnoses the cause, recommends the fix and tracks recovery across Search Console, GA4 and AI search."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 85,
+  "type": "page",
+  "status": "publish",
+  "title": "SEO Content Systems",
+  "slug": "seo-content-systems",
+  "parent": 68,
+  "path": "/services/seo-content-systems/",
+  "template": null,
+  "content": "[reinforce_content]",
+  "excerpt": "",
+  "date": "2026-09-29 19:11:05",
+  "modified": "2026-09-29 19:11:05",
+  "seo": {
+   "_yoast_wpseo_title": "SEO Content Writing Services & Content Systems | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "SEO content writing run as a system: research, topic maps, expert-led briefs, human-edited pages, internal links and refreshes. Content that ranks, gets cited and converts."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 86,
+  "type": "page",
+  "status": "publish",
+  "title": "Marketing Automation",
+  "slug": "marketing-automation",
+  "parent": 68,
+  "path": "/services/marketing-automation/",
+  "template": null,
+  "content": "[reinforce_automation]",
+  "excerpt": "",
+  "date": "2026-09-29 19:19:56",
+  "modified": "2026-09-29 19:19:56",
+  "seo": {
+   "_yoast_wpseo_title": "Marketing Automation & Email Marketing Services | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Marketing automation that follows up every lead: nurture emails, lead scoring, CRM workflows and sales handoff, built on your platform, compliant with Gmail, CAN-SPAM and PECR rules."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 87,
+  "type": "page",
+  "status": "publish",
+  "title": "Industries",
+  "slug": "industries",
+  "parent": 0,
+  "path": "/industries/",
+  "template": null,
+  "content": "[reinforce_industries]",
+  "excerpt": "",
+  "date": "2026-09-30 09:26:29",
+  "modified": "2026-09-30 09:26:29",
+  "seo": {
+   "_yoast_wpseo_title": "Industries | AI Growth Systems by Sector | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "AI Growth Systems for eight sectors: pharmaceutical, healthcare, B2B SaaS, e-commerce, manufacturing, technology, professional services and education."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 90,
+  "type": "page",
+  "status": "publish",
+  "title": "Healthcare",
+  "slug": "healthcare",
+  "parent": 87,
+  "path": "/industries/healthcare/",
+  "template": null,
+  "content": "[reinforce_industry]",
+  "excerpt": "",
+  "date": "2026-09-30 09:26:29",
+  "modified": "2026-09-30 09:26:29",
+  "seo": {
+   "_yoast_wpseo_title": "Healthcare SEO and AI Search | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Healthcare SEO and AI search for clinics and providers: local visibility, clinician-reviewed content, accurate AI answers and accessible, privacy-aware websites."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 91,
+  "type": "page",
+  "status": "publish",
+  "title": "B2B SaaS",
+  "slug": "b2b-saas",
+  "parent": 87,
+  "path": "/industries/b2b-saas/",
+  "template": null,
+  "content": "[reinforce_industry]",
+  "excerpt": "",
+  "date": "2026-09-30 09:26:29",
+  "modified": "2026-09-30 09:26:29",
+  "seo": {
+   "_yoast_wpseo_title": "B2B SaaS SEO and AI Growth | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "B2B SaaS SEO, AI search and demand systems for software companies: buying-stage content, AI recommendations and funnels measured to pipeline."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 92,
+  "type": "page",
+  "status": "publish",
+  "title": "E-commerce",
+  "slug": "ecommerce",
+  "parent": 87,
+  "path": "/industries/ecommerce/",
+  "template": null,
+  "content": "[reinforce_industry]",
+  "excerpt": "",
+  "date": "2026-09-30 09:26:29",
+  "modified": "2026-09-30 09:26:29",
+  "seo": {
+   "_yoast_wpseo_title": "E-commerce SEO and AI Search | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "E-commerce SEO and AI search for online stores: ranking category and product pages, product data for Google and AI, crawl control and a checkout that converts."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 93,
+  "type": "page",
+  "status": "publish",
+  "title": "Manufacturing",
+  "slug": "manufacturing",
+  "parent": 87,
+  "path": "/industries/manufacturing/",
+  "template": null,
+  "content": "[reinforce_industry]",
+  "excerpt": "",
+  "date": "2026-09-30 09:26:29",
+  "modified": "2026-09-30 09:26:29",
+  "seo": {
+   "_yoast_wpseo_title": "Manufacturing SEO and B2B Lead Generation | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "SEO and lead generation for manufacturers: application and specification content engineers search for, multi-market sites and quote-request systems."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 94,
+  "type": "page",
+  "status": "publish",
+  "title": "Technology",
+  "slug": "technology",
+  "parent": 87,
+  "path": "/industries/technology/",
+  "template": null,
+  "content": "[reinforce_industry]",
+  "excerpt": "",
+  "date": "2026-09-30 09:26:29",
+  "modified": "2026-09-30 09:26:29",
+  "seo": {
+   "_yoast_wpseo_title": "Technology Company SEO and AI Search | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "SEO and AI search for technology companies: JavaScript rendering fixed, technical content buyers trust and a consistent product description across AI tools."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 95,
+  "type": "page",
+  "status": "publish",
+  "title": "Professional Services",
+  "slug": "professional-services",
+  "parent": 87,
+  "path": "/industries/professional-services/",
+  "template": null,
+  "content": "[reinforce_industry]",
+  "excerpt": "",
+  "date": "2026-09-30 09:26:29",
+  "modified": "2026-09-30 09:26:29",
+  "seo": {
+   "_yoast_wpseo_title": "Professional Services SEO and Marketing | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "SEO, local SEO and AI search for law, accounting, finance and consulting firms: practice-area visibility, expert-led content and accurate AI answers."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 96,
+  "type": "page",
+  "status": "publish",
+  "title": "Education",
+  "slug": "education",
+  "parent": 87,
+  "path": "/industries/education/",
+  "template": null,
+  "content": "[reinforce_industry]",
+  "excerpt": "",
+  "date": "2026-09-30 09:26:29",
+  "modified": "2026-09-30 09:26:29",
+  "seo": {
+   "_yoast_wpseo_title": "Education SEO and Student Recruitment | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "SEO and AI search for universities, colleges and training providers: course pages students trust, accurate AI answers and enquiry-to-application journeys."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 97,
+  "type": "page",
+  "status": "publish",
+  "title": "AI Workflow Automation",
+  "slug": "ai-workflow-automation",
+  "parent": 68,
+  "path": "/services/ai-workflow-automation/",
+  "template": null,
+  "content": "[reinforce_aiwork]",
+  "excerpt": "",
+  "date": "2026-09-29 20:23:17",
+  "modified": "2026-09-29 20:23:17",
+  "seo": {
+   "_yoast_wpseo_title": "AI Workflow Automation Services | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "AI workflow automation for triage, document extraction, drafting and system updates, built on your tools with human review, logging and testing, so AI does the busywork and people keep control."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 98,
+  "type": "page",
+  "status": "publish",
+  "title": "Enterprise SEO Strategy",
+  "slug": "enterprise-seo-strategy",
+  "parent": 68,
+  "path": "/services/enterprise-seo-strategy/",
+  "template": null,
+  "content": "[reinforce_enterprise]",
+  "excerpt": "",
+  "date": "2026-09-29 18:37:36",
+  "modified": "2026-09-29 18:37:36",
+  "seo": {
+   "_yoast_wpseo_title": "Enterprise SEO Strategy Services | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Enterprise SEO strategy for large, complex sites: one SEO standard across teams, template fixes shipped through your sprints, safe migrations and authority built within Google's link policies."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 99,
+  "type": "page",
+  "status": "publish",
+  "title": "Technical SEO",
+  "slug": "technical-seo-services",
+  "parent": 68,
+  "path": "/services/technical-seo-services/",
+  "template": null,
+  "content": "[reinforce_techseo]",
+  "excerpt": "",
+  "date": "2026-09-29 16:43:37",
+  "modified": "2026-09-29 16:51:59",
+  "seo": {
+   "_yoast_wpseo_title": "Technical SEO Services: Crawl, Index & Speed | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Technical SEO from Reinforce Lab: crawlability, indexation, Core Web Vitals, structured data and AI-crawler access, with root causes fixed, verified and safe for what already ranks."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 100,
+  "type": "page",
+  "status": "publish",
+  "title": "International SEO",
+  "slug": "international-seo",
+  "parent": 68,
+  "path": "/services/international-seo/",
+  "template": null,
+  "content": "[reinforce_intl]",
+  "excerpt": "",
+  "date": "2026-09-29 17:15:53",
+  "modified": "2026-09-29 17:15:53",
+  "seo": {
+   "_yoast_wpseo_title": "International SEO Services | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "International SEO from Reinforce Lab: site structure, hreflang, native localization and market-by-market reporting, built on Google's own guidance."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 101,
+  "type": "page",
+  "status": "publish",
+  "title": "LLM Optimization",
+  "slug": "llm-optimization",
+  "parent": 68,
+  "path": "/services/llm-optimization/",
+  "template": null,
+  "content": "[reinforce_llm]",
+  "excerpt": "",
+  "date": "2026-09-29 15:56:52",
+  "modified": "2026-09-29 15:56:52",
+  "seo": {
+   "_yoast_wpseo_title": "LLM Optimization Services | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "LLM Optimization from Reinforce Lab: make ChatGPT, Claude, Gemini and Perplexity describe your brand correctly, with consistent facts, the right AI-crawler policy and tested answers."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 102,
+  "type": "page",
+  "status": "publish",
+  "title": "Lead Generation Systems",
+  "slug": "lead-generation-systems",
+  "parent": 68,
+  "path": "/services/lead-generation-systems/",
+  "template": null,
+  "content": "[reinforce_leadgen]",
+  "excerpt": "",
+  "date": "2026-09-29 19:28:38",
+  "modified": "2026-09-29 19:28:38",
+  "seo": {
+   "_yoast_wpseo_title": "B2B Lead Generation & PPC Management Services | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Lead generation systems that turn demand into qualified pipeline: channels, PPC, landing pages, qualification, routing and closed-loop CRM data that tells your ads which leads became revenue."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 103,
+  "type": "page",
+  "status": "publish",
+  "title": "Executive AI Consulting",
+  "slug": "executive-ai-consulting",
+  "parent": 68,
+  "path": "/services/executive-ai-consulting/",
+  "template": null,
+  "content": "[reinforce_execai]",
+  "excerpt": "",
+  "date": "2026-09-30 04:37:36",
+  "modified": "2026-09-30 04:37:36",
+  "seo": {
+   "_yoast_wpseo_title": "Executive AI Consulting & AI Strategy | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Executive AI consulting for leadership teams: prioritised AI use cases, business cases, governance, EU AI Act mapping and AI literacy, with a roadmap supported through the first pilots."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 104,
+  "type": "page",
+  "status": "publish",
+  "title": "Local SEO",
+  "slug": "local-seo",
+  "parent": 68,
+  "path": "/services/local-seo/",
+  "template": null,
+  "content": "[reinforce_local]",
+  "excerpt": "",
+  "date": "2026-09-29 17:45:46",
+  "modified": "2026-09-29 17:45:46",
+  "seo": {
+   "_yoast_wpseo_title": "Local Search Engine Optimization Services | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Local SEO from Reinforce Lab: Google Business Profile, consistent citations, compliant reviews and location pages, built on Google's own guidelines for local and AI search."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 189,
+  "type": "page",
+  "status": "publish",
+  "title": "Digital PR & Link Building",
+  "slug": "press-release-services",
+  "parent": 68,
+  "path": "/services/press-release-services/",
+  "template": null,
+  "content": "[reinforce_pr]",
+  "excerpt": "",
+  "date": "2026-09-29 18:48:58",
+  "modified": "2026-09-29 18:48:58",
+  "seo": {
+   "_yoast_wpseo_title": "Digital PR & Off-Page SEO Services | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Digital PR and link building that earns coverage, links and AI citations from relevant publications: original data, expert commentary, no bought links, within Google's link policies."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 190,
+  "type": "page",
+  "status": "publish",
+  "title": "Search Engine Optimization Services",
+  "slug": "best-search-engine-optimization-services",
+  "parent": 68,
+  "path": "/services/best-search-engine-optimization-services/",
+  "template": null,
+  "content": "[reinforce_seo]",
+  "excerpt": "",
+  "date": "2026-09-29 18:58:48",
+  "modified": "2026-09-29 18:58:48",
+  "seo": {
+   "_yoast_wpseo_title": "Search Engine Optimization (SEO) Services | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "SEO services built on Google's guidelines: technical SEO, on-page, content and authority run as one system and extended to AI search, for B2B and specialist brands."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 196,
+  "type": "page",
+  "status": "publish",
+  "title": "WordPress Website Design",
+  "slug": "wordpress-website-design-service",
+  "parent": 68,
+  "path": "/services/wordpress-website-design-service/",
+  "template": null,
+  "content": "[reinforce_wpdesign]",
+  "excerpt": "",
+  "date": "2026-09-30 04:58:03",
+  "modified": "2026-09-30 04:58:03",
+  "seo": {
+   "_yoast_wpseo_title": "WordPress Website Design Services | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "WordPress website design services for B2B brands: custom design, editor-friendly builds, Core Web Vitals speed, WCAG 2.2 AA accessibility and redesigns that keep your rankings."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 197,
+  "type": "page",
+  "status": "publish",
+  "title": "E-commerce Website Design",
+  "slug": "ecommerce-website-design-service",
+  "parent": 68,
+  "path": "/services/ecommerce-website-design-service/",
+  "template": null,
+  "content": "[reinforce_ecomdesign]",
+  "excerpt": "",
+  "date": "2026-09-30 05:05:23",
+  "modified": "2026-09-30 05:05:23",
+  "seo": {
+   "_yoast_wpseo_title": "E-commerce Website Design Services | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "E-commerce website design that gets stores found and bought from: product data for Google, easy browsing, a shorter checkout, fast pages and WCAG 2.2 AA accessibility, on WooCommerce."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 198,
+  "type": "page",
+  "status": "publish",
+  "title": "Website Maintenance Services",
+  "slug": "website-maintenance-services",
+  "parent": 68,
+  "path": "/services/website-maintenance-services/",
+  "template": null,
+  "content": "[reinforce_maintenance]",
+  "excerpt": "",
+  "date": "2026-09-30 05:12:20",
+  "modified": "2026-09-30 05:12:20",
+  "seo": {
+   "_yoast_wpseo_title": "Website Maintenance Services | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Website maintenance services for WordPress: tested updates, off-site backups, security and uptime monitoring, speed and SEO health checks, support and a monthly report."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 218,
+  "type": "page",
+  "status": "publish",
+  "title": "About",
+  "slug": "about-us",
+  "parent": 0,
+  "path": "/about-us/",
+  "template": null,
+  "content": "[reinforce_about]",
+  "excerpt": "",
+  "date": "2026-09-30 11:22:06",
+  "modified": "2026-09-30 11:22:06",
+  "seo": {
+   "_yoast_wpseo_title": "About Reinforce Lab | AI Growth Systems Company",
+   "_yoast_wpseo_metadesc": "Reinforce Lab builds AI Growth Systems that connect your website, content and search visibility. Founded by pharmacist and Semrush Ambassador Jamil Ahmed."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 219,
+  "type": "page",
+  "status": "publish",
+  "title": "Contact",
+  "slug": "contact-us",
+  "parent": 0,
+  "path": "/contact-us/",
+  "template": null,
+  "content": "[reinforce_contact]",
+  "excerpt": "",
+  "date": "2026-09-30 11:33:32",
+  "modified": "2026-09-30 11:33:32",
+  "seo": {
+   "_yoast_wpseo_title": "Contact Reinforce Lab | Dhaka & Katy, Texas",
+   "_yoast_wpseo_metadesc": "Contact Reinforce Lab: email hello@reinforcelab.com, call our Dhaka or Katy, Texas office, or send a message about SEO, AI search and AI Growth Systems."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 220,
+  "type": "page",
+  "status": "publish",
+  "title": "Blog",
+  "slug": "blog",
+  "parent": 0,
+  "path": "/blog/",
+  "template": null,
+  "content": "",
+  "excerpt": "",
+  "date": "2026-09-30 12:04:29",
+  "modified": "2026-09-30 12:04:29",
+  "seo": {
+   "_yoast_wpseo_title": "Blog | SEO, AI Search and Growth Systems | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Articles on SEO, AI search, content systems and automation from Reinforce Lab, for growth-stage founders and B2B teams who want search to drive revenue."
+  },
+  "rl_fields": []
+ }
+]

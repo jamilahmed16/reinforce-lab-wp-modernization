@@ -1,0 +1,76 @@
+{
+ "rl_menu_backup_20260930": {
+  "110": {
+   "object": "custom",
+   "order": 5,
+   "parent": 109,
+   "title": "Search Engine Optimization",
+   "type": "custom",
+   "url": "#"
+  },
+  "121": {
+   "object": "custom",
+   "order": 16,
+   "parent": 116,
+   "title": "Digital PR / Press Release",
+   "type": "custom",
+   "url": "#"
+  }
+ },
+ "rl_menu_backup_20260930_about": {
+  "id": 151,
+  "order": 46,
+  "parent": 0,
+  "type": "custom",
+  "url": "#"
+ },
+ "rl_menu_backup_20260930_blog": {
+  "id": 150,
+  "order": 45,
+  "parent": 0,
+  "type": "custom",
+  "url": "#"
+ },
+ "rl_menu_backup_20260930_contact": {
+  "id": 152,
+  "order": 47,
+  "parent": 0,
+  "type": "custom",
+  "url": "#"
+ },
+ "rl_menu_backup_20260930_ecd": {
+  "id": 128,
+  "order": 23,
+  "parent": 122,
+  "type": "custom",
+  "url": "#"
+ },
+ "rl_menu_backup_20260930_mt": {
+  "id": 129,
+  "order": 24,
+  "parent": 122,
+  "type": "custom",
+  "url": "#"
+ },
+ "rl_menu_backup_20260930_wpd": {
+  "id": 127,
+  "order": 22,
+  "parent": 122,
+  "type": "custom",
+  "url": "#"
+ },
+ "rl_metadesc_backup_20261001": {
+  "100": "International SEO from Reinforce Lab: site structure, hreflang, native localization and market-by-market reporting — built on Google's own guidance.",
+  "101": "LLM Optimization from Reinforce Lab: make ChatGPT, Claude, Gemini and Perplexity describe your brand correctly — consistent facts, the right AI-crawler policy, tested answers.",
+  "104": "Local SEO from Reinforce Lab: Google Business Profile, consistent citations, compliant reviews and location pages — built on Google's own guidelines for local and AI search.",
+  "189": "Digital PR and link building that earns coverage, links and AI citations from relevant publications — original data, expert commentary, no bought links, within Google's link policies.",
+  "68": "Reinforce Lab services: AI search optimization, GEO, SEO, content systems, marketing automation and AI consulting — built to work as one AI Growth System.",
+  "72": "Get your brand found, cited and described accurately in ChatGPT, Perplexity, Gemini and Google AI Overviews — AI Search Optimization from Reinforce Lab.",
+  "74": "A one-time, human-led audit of your technical SEO, content, authority, competitors and AI search visibility — with evidence, a prioritised fix register and a roadmap.",
+  "99": "Technical SEO from Reinforce Lab: crawlability, indexation, Core Web Vitals, structured data and AI-crawler access — root causes fixed, verified and safe for what already ranks."
+ },
+ "rl_reading_backup_20260930": {
+  "page_for_posts": 0,
+  "show_on_front": "page"
+ }
+}

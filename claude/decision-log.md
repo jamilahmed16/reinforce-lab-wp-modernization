@@ -597,6 +597,31 @@ AI Growth Systems  (umbrella / positioning)
 
 ---
 
+## D-079 · Step A: tools and a database snapshot in the repo
+**Date:** 4 October 2026 · **Status:** DONE (Jamil: "yes, do step A and step B one after another")
+
+**Finding:** all 35 sandbox files on `.online` matched GitHub, but three things lived outside it:
+1. the database side of the site (pages, Yoast meta, menus, settings);
+2. the deploy and QA tools (in a temporary session folder);
+3. 125 deploy backups on the server.
+
+**Done:**
+- **`claude/tools/rl.py`** (new), one CLI with these commands:
+  - `deploy` (guarded update or `--create`; noindex check, live md5 must equal git HEAD, PHP parse check, backup to `novamira-sandbox/_backups/<stamp>/`, opcache clear, md5 confirm);
+  - `parity` (live vs repo md5);
+  - `snapshot` (database export, secret-like values redacted);
+  - `backups` (list, `--prune-days`);
+  - `crawl` (every published page: em and en dashes, emoji, PHP notices, noindex);
+  - `preview-post` (in-memory render through the live post template, nothing saved, F-003).
+- **`claude/tools/shot.mjs`** (new): `width` (390 px check), `page` and `html` screenshots, with a git-ignored asset cache (`claude/tools/.cache/`).
+- **`claude/tools/README.md`** rewritten, including the standard change routine.
+- **`claude/data/online-snapshot/`** (new): pages.json (49 pages and posts with content, SEO meta and `rl_` fields), menus.json, menu_locations, options, yoast (IndexNow key redacted), terms, active_plugins, themer_layouts, rl_options (rollback copies), sandbox-md5.json. **Re-run `rl.py snapshot` after every change.**
+- **Backups:** pruning older than 7 days found none to delete (the oldest is 28 Sep). The backups are not publicly readable (sandbox `.htaccess` returns 403, verified).
+
+**Verified:** parity 0 differences; snapshot written; crawl of 45 pages with 0 flags; preview-post reproduces the Guide with its schema; `shot.mjs width` returns 390 for /blog/ and /about-us/.
+
+---
+
 ## D-078 · Guide template built on `.online` from the approved mockup
 **Date:** 4 October 2026 · **Status:** DONE (Jamil: "approved, build the Guide template")
 

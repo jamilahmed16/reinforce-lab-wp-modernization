@@ -1,0 +1,17 @@
+{
+ "blog_public": "0",
+ "blogdescription": "",
+ "blogname": "reinforcelab.online",
+ "category_base": "",
+ "date_format": "F j, Y",
+ "default_category": "1",
+ "page_for_posts": "220",
+ "page_on_front": "33",
+ "permalink_structure": "/%postname%/",
+ "posts_per_page": "10",
+ "show_on_front": "page",
+ "stylesheet": "bb-theme",
+ "tag_base": "",
+ "template": "bb-theme",
+ "timezone_string": ""
+}
