@@ -12,7 +12,7 @@ Back to [project documents](../README.md).
 | [blog-comparison-template-mockup.html](blog-comparison-template-mockup.html) | Approved, built (D-091) | [`blog/reinforce-post-comparison.php`](../../wp/novamira-sandbox/blog/reinforce-post-comparison.php) |
 | [blog-explainer-template-mockup.html](blog-explainer-template-mockup.html) | Approved, built (D-093) | [`blog/reinforce-post-explainer.php`](../../wp/novamira-sandbox/blog/reinforce-post-explainer.php) |
 | [blog-industry-template-mockup.html](blog-industry-template-mockup.html) | Approved, built (D-095) | [`blog/reinforce-post-industry.php`](../../wp/novamira-sandbox/blog/reinforce-post-industry.php) |
-| [blog-updates-template-mockup.html](blog-updates-template-mockup.html) | Awaiting review (D-096) | not built yet |
+| [blog-updates-template-mockup.html](blog-updates-template-mockup.html) | Approved, built (D-097) | [`blog/reinforce-post-updates.php`](../../wp/novamira-sandbox/blog/reinforce-post-updates.php) |
 | [search-authority-os-landing.html](search-authority-os-landing.html) | Built | [`saos/reinforce-saos.php`](../../wp/novamira-sandbox/saos/reinforce-saos.php) |
 | [search-authority-diagnostic.html](search-authority-diagnostic.html) | Built | [`saos/reinforce-diagnostic.php`](../../wp/novamira-sandbox/saos/reinforce-diagnostic.php) |
 | [packages.html](packages.html) | Built | [`saos/reinforce-packages.php`](../../wp/novamira-sandbox/saos/reinforce-packages.php) |

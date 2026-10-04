@@ -20,7 +20,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
-| D-096 | Updates template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
+| D-097 | Updates template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Updates template") | this file |
+| D-096 | Updates template: design mockup v1 for review | 4 Oct | APPROVED, built as D-097 | this file |
 | D-095 | Industry template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Industry template") | this file |
 | D-094 | Industry template: design mockup v1 for review | 4 Oct | APPROVED, built as D-095 | this file |
 | D-093 | Explainer template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Explainer template") | this file |
@@ -153,6 +154,28 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-097 · Updates template built on `.online` from the approved mockup
+**Date:** 4 October 2026 · **Status:** DONE (Jamil: "approved, build the Updates template")
+
+**Files:** new `blog/reinforce-post-updates.php` (added to the loader); `blog/reinforce-post.php` hands Updates posts to `rl_updates_render()`; the old updates boxes and fields were removed from `blog/reinforce-post-types.php` (no posts existed, so no data was affected). Keys `rl_u_what`, `rl_u_means`, `rl_u_do`, `rl_u_source` and `rl_u_log` are kept.
+
+**How an editor writes an Updates post:**
+- **Dateline:** status (Announced, Rolling out, Complete, Confirmed, Unconfirmed; Rolling out pulses gently), official source (`Name | URL`), **last checked** (date and time, UTC; update it each time the source is checked).
+- **Rollout timeline:** up to 5 stages, `Stage | Date or note | done, now or next`.
+- **The update in brief:** headline and text for what changed and what it means, headline and action lines for what to do. The heading counts the parts.
+- **Sites to watch:** `Site type | high, medium or low | Note` (Watch closely, Watch, Lower risk), with an editable note saying it is our reading.
+- **Do now / this week / later** action lines.
+- **Official statement:** the exact words, word for word, and the date; shown only when filled in, with the source link.
+- **Live log:** `YYYY-MM-DD HH:MM | What changed in this post` (time optional, UTC), sorted newest first automatically; a line starting with `!` is tagged "Correction".
+- **CTA** after the official statement; the body follows as the in-depth part.
+
+**Schema:** dateModified on the article and page follows the newest live log entry or "last checked" time, whichever is later (never a future time); plus the base BlogPosting, Person and FAQPage. Verified in memory: dateModified moved from 29 Sep 17:00 to 3 Oct 14:00 UTC. No NewsArticle markup (D-096).
+
+**Checks:** in-memory preview with the mockup's content, dates moved into the past (nothing saved, F-003): no PHP notices; desktop 1440 and phone 390 with no horizontal scroll; `copy-check.py` 0 issues on the file and the rendered page; `rl.py parity` 43 files, 0 differences; live blog and SEO & AI Search Audit pages still 390 wide.
+**Fixed during the build:** the "This week" action header wrapped beside its subtitle on desktop; the subtitle now sits under the heading.
 
 ---
 

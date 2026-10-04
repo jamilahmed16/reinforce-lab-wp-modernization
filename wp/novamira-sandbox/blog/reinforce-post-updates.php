@@ -353,9 +353,9 @@ add_action('wp_head', function () {
 .rl-upd .acts.n2{grid-template-columns:repeat(2,minmax(0,1fr))}
 .rl-upd .acts.n1{grid-template-columns:minmax(0,1fr)}
 .rl-upd .when{border:1px solid var(--line-2);background:var(--bg-2);min-width:0}
-.rl-upd .when .wh{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:12px 16px;border-bottom:1px solid var(--line-2)}
+.rl-upd .when .wh{display:grid;gap:2px;padding:12px 16px;border-bottom:1px solid var(--line-2)}
 .rl-upd .when .wh b{font-family:var(--f-display);font-size:18px;text-transform:uppercase;color:var(--ink);font-weight:500}
-.rl-upd .when .wh span{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);text-align:right}
+.rl-upd .when .wh span{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
 .rl-upd .when.now{border-color:var(--red-line)}
 .rl-upd .when.now .wh{background:linear-gradient(90deg,rgba(153,0,0,.25),transparent)}
 .rl-upd .when ul{list-style:none;margin:0;padding:6px 16px 12px}
