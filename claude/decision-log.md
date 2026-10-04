@@ -165,12 +165,12 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## D-104 · Founder bio for the author box: Jamil's own wording, applied on `.online`
-**Date:** 4 October 2026 · **Status:** DONE (Jamil supplied the text: "Like this now modify this"; D-084 item 1)
+**Date:** 4 October 2026 · **Status:** DONE (Jamil supplied the text: "Like this now modify this", then "Write it properly"; D-084 item 1)
 
 **The bio (Jamil's wording, two fixes only):**
-> Jamil Ahmed is an SEO and AI search consultant. He founded Reinforce Lab in 2020 and runs it as CEO. Jamil is a pharmacist and a Semrush Ambassador. He builds AI Growth Systems for companies: website, content and search visibility connected by AI automation, so the business is found on Google and in AI answers and turns that attention into revenue.
+> Jamil Ahmed is an SEO and AI search consultant, a pharmacist and a Semrush Ambassador. He founded Reinforce Lab in 2020 and leads it as CEO. Jamil builds AI Growth Systems for companies: he connects their website, content and search visibility with AI automation, so they are found on Google and in AI answers and turn that attention into revenue.
 
-Fixes: "He is builds" to "He builds"; the spaced hyphen before "website" became a colon (D-072, no dashes). Copy check 0 issues. Pronoun "he" is Jamil's own.
+**Revised the same day** (Jamil: "Write it properly"): the roles are now in one opening sentence, "runs it" became "leads it", and the last sentence says what Jamil does for companies. The first applied version (Jamil's wording with two fixes) is replaced and kept here for the record: "Jamil Ahmed is an SEO and AI search consultant. He founded Reinforce Lab in 2020 and runs it as CEO. Jamil is a pharmacist and a Semrush Ambassador. He builds AI Growth Systems for companies: website, content and search visibility connected by AI automation, so the business is found on Google and in AI answers and turns that attention into revenue." Copy check 0 issues. Pronoun "he" is Jamil's own.
 
 **Where it lives:** the WordPress user profile of `jamilahmed` (user 3), field "Biographical Info" (`description`), on `.online` only. It was empty before (recorded), so every author box showed the built-in default text; the author box in every post design reads this field first. **VERIFIED:** an in-memory post render shows the new bio in the author box. **INFERENCE, not yet verifiable:** Yoast also uses this field as the Person `description` on posts; there are no published posts by Jamil on `.online` to check it on.
 
