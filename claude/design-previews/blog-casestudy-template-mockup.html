@@ -1,0 +1,285 @@
+<title>Case Study Template Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a project file. A client file card (named or anonymised, approved badge, industry, services, period), the results as before-and-after tiles with period and data source, the story in three acts (the brief, what we did as phases, what changed), the client quote, what made the difference, services used, and how the results were measured. Dark only: it is the Reinforce Lab site (D-013). */
+:root{
+  --bg:#121011; --bg-2:#0e0c0d; --panel:#1a1617; --panel-2:#211c1d;
+  --ink:#f2eeee; --ink-dim:#b8b0b1; --ink-faint:#7f7778;
+  --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
+  --red:#990000; --red-2:#c21a1a; --red-3:#e23b3b; --red-line:rgba(226,59,59,.38); --ok:#3fa36b; --ok-line:rgba(63,163,107,.45); --amber:#d39b3a;
+  --f-display:"Oswald","Arial Narrow",sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1280px; --g:clamp(16px,3vw,32px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink-dim);font-family:var(--f-body);font-size:16px;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;background-position:-1px -1px}
+a{color:var(--ink)}
+:focus-visible{outline:2px solid var(--red-3);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--g)}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);margin:0;line-height:1.04;text-wrap:balance}
+.ic{width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square}
+.sample{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);border:1px dashed rgba(211,155,58,.6);padding:1px 6px;white-space:nowrap}
+
+.mocknote{background:var(--red);color:#fff;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-align:center;padding:7px var(--g)}
+.chrome{border-bottom:1px solid var(--line-2);background:rgba(18,16,17,.9)}
+.chrome .wrap{display:flex;justify-content:space-between;align-items:center;height:62px;gap:16px}
+.logo{font-family:var(--f-display);font-weight:700;letter-spacing:.04em;color:var(--ink);font-size:18px;text-transform:uppercase}
+.logo b{color:var(--red-3)}
+.chrome nav{display:flex;gap:22px;font-family:var(--f-display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.chrome nav span.on{color:var(--ink)}
+.cta-s{font-family:var(--f-display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid var(--red-2);padding:9px 14px;background:rgba(153,0,0,.35)}
+
+/* header + file card */
+.crumbs{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);padding-top:26px}
+.crumbs a{color:var(--ink-faint);text-decoration:none}
+.hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);gap:clamp(28px,5vw,60px);align-items:start;padding-block:clamp(24px,4vw,40px) 0}
+.kicker{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+.kind{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:var(--red);padding:6px 10px}
+.cat{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:5px 10px}
+.hero h1{font-size:clamp(34px,4.6vw,60px);line-height:1}
+.hero h1 em{font-style:normal;color:var(--red-3)}
+.stand{font-size:clamp(17px,1.5vw,19px);line-height:1.55;margin:18px 0 0;max-width:640px}
+.byline{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);align-items:center}
+.byline .who{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.av{width:34px;height:34px;border:1px solid var(--red-line);display:grid;place-items:center;font-family:var(--f-display);font-size:15px;color:var(--ink);background:var(--bg-2)}
+.byline b{color:var(--ink-dim);font-weight:500}
+
+.file{border:1px solid var(--line-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));position:relative}
+.file::before{content:"";position:absolute;top:-1px;left:22px;width:110px;height:8px;background:var(--red);clip-path:polygon(0 0,100% 0,92% 100%,8% 100%)}
+.fh{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:16px 18px;border-bottom:1px dashed var(--line-2)}
+.fh span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+.appr{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ok);border:1px solid var(--ok-line);padding:3px 8px}
+.client{padding:18px;border-bottom:1px solid var(--line);display:grid;gap:6px}
+.client .k{font-family:var(--f-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+.client b{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);font-weight:500;line-height:1.1}
+.client p{margin:0;font-size:13.5px}
+.client .sample{justify-self:start}
+.file dl{margin:0;padding:6px 18px 14px}
+.file dl div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;padding:9px 0;border-top:1px solid var(--line);font-size:14px}
+.file dl div:first-child{border-top:0}
+.file dt{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);padding-top:3px}
+.file dd{margin:0;color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips a{font-size:12.5px;color:var(--ink);text-decoration:none;border:1px solid var(--line-2);padding:2px 8px;background:var(--bg-2)}
+
+/* results */
+.results{margin-top:clamp(30px,4vw,44px)}
+.rh{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:12px}
+.rh span{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3)}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.tile{background:var(--bg-2);padding:20px 20px 18px;display:grid;gap:8px;align-content:start;position:relative}
+.tile .m{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.tile .ba{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.tile .from{font-family:var(--f-display);font-size:20px;color:var(--ink-faint);text-decoration:line-through;text-decoration-thickness:1px}
+.tile .arrow{color:var(--red-3);font-family:var(--f-mono)}
+.tile .to{font-family:var(--f-display);font-size:40px;color:var(--ink);line-height:1;font-weight:500}
+.tile .d{font-family:var(--f-mono);font-size:12px;color:var(--ok)}
+.tile .src{font-family:var(--f-mono);font-size:10.5px;color:var(--ink-faint);border-top:1px solid var(--line);padding-top:8px}
+.tile .sample{position:absolute;top:10px;right:10px}
+
+/* main */
+.main{max-width:900px;margin:0 auto;padding-block:clamp(34px,5vw,52px) 10px}
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:46px 0 16px}
+.sec-h span{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3)}
+.sec-h h2{font-size:clamp(24px,2.8vw,30px)}
+.answer{border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px 24px;margin-bottom:24px}
+.answer .t{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 8px}
+.answer p{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
+.prose p{font-size:17.5px;line-height:1.75;margin:0 0 1.1em}
+.prose strong{color:var(--ink);font-weight:600}
+
+/* three acts */
+.act{display:grid;grid-template-columns:110px minmax(0,1fr);gap:22px;border-top:1px solid var(--line-2);padding-top:26px;margin-top:40px}
+.act .no{font-family:var(--f-display);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);display:grid;gap:6px;align-content:start}
+.act .no b{font-size:56px;line-height:.8;color:transparent;-webkit-text-stroke:1.3px var(--red-3);font-weight:700}
+.act h2{font-size:clamp(24px,2.8vw,30px);margin-bottom:12px}
+.goals{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:6px}
+.goals li{display:grid;grid-template-columns:18px 1fr;gap:8px;font-size:15.5px;color:var(--ink)}
+.goals li::before{content:"";width:10px;height:10px;border:2px solid var(--red-3);margin-top:7px}
+
+.phases{list-style:none;margin:6px 0 0;padding:0;position:relative}
+.phases::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--line-2)}
+.ph{display:grid;grid-template-columns:16px minmax(0,1fr);gap:16px;padding-bottom:20px}
+.ph::before{content:"";width:16px;height:16px;background:var(--bg);border:2px solid var(--red-3);margin-top:3px;position:relative;z-index:1}
+.ph .w{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
+.ph h3{font-family:var(--f-body);text-transform:none;letter-spacing:0;font-size:17px;font-weight:600;margin:2px 0 4px}
+.ph p{margin:0;font-size:15px}
+.ph .dl{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.ph .dl span{font-family:var(--f-mono);font-size:11px;color:var(--ink);background:var(--bg-2);border:1px solid var(--line-2);padding:2px 8px}
+
+/* quote */
+.quote{margin:40px 0 0;border:1px solid var(--red-line);background:radial-gradient(90% 140% at 0% 0%,rgba(153,0,0,.2),transparent 60%),var(--panel);padding:30px 32px;position:relative}
+.quote .mk{position:absolute;top:10px;right:22px;font-family:var(--f-display);font-size:120px;line-height:1;color:rgba(226,59,59,.18)}
+.quote blockquote{margin:0;color:var(--ink);font-size:clamp(20px,2.2vw,25px);line-height:1.5;max-width:760px;position:relative}
+.quote figcaption{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:18px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint)}
+.quote figcaption b{color:var(--ink);font-weight:500}
+
+/* lessons */
+.lessons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.ls{background:var(--bg);padding:18px 20px;display:grid;gap:6px;align-content:start}
+.ls .n{font-family:var(--f-mono);font-size:11px;color:var(--red-3)}
+.ls h3{font-size:17px}
+.ls p{margin:0;font-size:14.5px}
+
+/* services used */
+.svcs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.svc{border:1px solid var(--line-2);background:var(--panel);padding:16px 18px;text-decoration:none;display:grid;gap:4px;transition:border-color .2s}
+.svc:hover{border-color:var(--red-line)}
+.svc .k{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3)}
+.svc b{font-family:var(--f-display);font-size:18px;text-transform:uppercase;color:var(--ink);font-weight:500}
+.svc span:last-child{font-size:13.5px;color:var(--ink-dim)}
+
+/* method */
+.method{border:1px dashed var(--line-2);padding:16px 18px;margin-top:40px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:start}
+.method .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);padding-top:2px}
+.method p{margin:0;font-size:14px}
+
+/* CTA */
+.icta{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 28px;align-items:center;margin:40px 0 0;padding:20px 0 20px 20px;border-top:1px solid var(--red-line);border-bottom:1px solid var(--red-line);border-left:3px solid var(--red-2);background:linear-gradient(90deg,rgba(153,0,0,.12),transparent 70%)}
+.icta .lbl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 6px}
+.icta .hd{font-family:var(--f-display);font-weight:600;text-transform:uppercase;font-size:clamp(19px,2vw,22px);line-height:1.15;color:var(--ink);margin:0 0 6px}
+.icta .csub{margin:0;font-size:15px}
+.act2{display:grid;gap:8px;justify-items:start;padding-right:20px}
+.go2{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.07em;font-size:14px;text-decoration:none;color:#fff;background:var(--red);border:1px solid var(--red-2);padding:12px 18px;white-space:nowrap}
+.alt{font-size:13.5px;color:var(--ink-faint);text-decoration:none;border-bottom:1px solid var(--line-2)}
+
+/* back matter */
+.back{border-top:1px solid var(--line-2);margin-top:50px;padding-block:44px 10px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
+.back .sec-h{margin-top:0}
+.faq details{border:1px solid var(--line);background:var(--panel);margin-bottom:8px}
+.faq summary{cursor:pointer;list-style:none;padding:15px 18px;font-family:var(--f-display);text-transform:uppercase;font-size:15px;color:var(--ink);display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red-3);font-family:var(--f-mono)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:0;padding:0 18px 15px;font-size:15px}
+.src ol{margin:0;padding-left:1.4em;font-size:14.5px} .src li{padding:6px 0;color:var(--ink-faint)}
+.src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.author .av{width:72px;height:72px;font-size:28px}
+.author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
+.author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}
+.author p{margin:0 0 8px;font-size:15px}
+
+@media(max-width:1000px){
+  .hero{grid-template-columns:1fr}
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .chrome nav{display:none}
+  .tiles{grid-template-columns:1fr}
+  .act{grid-template-columns:1fr;gap:10px}
+  .act .no{grid-auto-flow:column;justify-content:start;align-items:end;gap:12px}
+  .act .no b{font-size:44px}
+  .lessons,.svcs,.back{grid-template-columns:1fr}
+  .quote{padding:22px 20px}
+  .method{grid-template-columns:1fr;gap:6px}
+  .icta{grid-template-columns:1fr;padding-left:16px} .act2{padding-right:16px}
+  .author{grid-template-columns:1fr}
+  .prose p{font-size:16.5px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<div class="mocknote">DESIGN MOCKUP · CASE STUDY TEMPLATE · client, figures and quote are sample data for layout review, never real results</div>
+<header class="chrome"><div class="wrap"><span class="logo">Reinforce <b>/</b> Lab</span><nav aria-label="Site (mockup)"><span>Search Authority OS</span><span>Solutions</span><span>Industries</span><span>Packages</span><span class="on">Blog</span><span>About</span><span>Contact</span></nav><span class="cta-s">Get your diagnostic</span></div></header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ok" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+</svg>
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="#">Home</a> / <a href="#">Blog</a> / <a href="#">Case Studies</a> / Pharma manufacturer</nav>
+  <section class="hero">
+    <div>
+      <div class="kicker"><span class="kind">Case Study</span><span class="cat">Pharmaceutical</span></div>
+      <h1>How a pharmaceutical manufacturer <em>got its product pages indexed again</em></h1>
+      <p class="stand">A technical fix and a content plan that passed medical review brought hundreds of unindexed pages back into Google within six months.</p>
+      <div class="byline"><span class="who"><span class="av" aria-hidden="true">J</span>Jamil Ahmed</span><span>Published <b>15 Sep 2026</b></span></div>
+    </div>
+    <aside class="file" aria-label="Project file">
+      <div class="fh"><span>Project file</span><span class="appr"><svg class="ic"><use href="#ok"/></svg>Approved by client</span></div>
+      <div class="client"><span class="k">Client</span><b>A UK pharmaceutical manufacturer</b><p>Anonymised at the client's request. Figures shared with permission.</p><span class="sample">Sample data</span></div>
+      <dl>
+        <div><dt>Industry</dt><dd>Pharmaceutical &amp; Life Sciences</dd></div>
+        <div><dt>Project</dt><dd>March to August 2026</dd></div>
+        <div><dt>Services</dt><dd><span class="chips"><a href="#">Technical SEO</a><a href="#">SEO Content Systems</a></span></dd></div>
+        <div><dt>Team</dt><dd>SEO lead, technical SEO, writer, medical reviewer</dd></div>
+      </dl>
+    </aside>
+  </section>
+
+  <section class="results" aria-label="Results">
+    <div class="rh"><span>The results</span><span class="sample">Sample data</span></div>
+    <div class="tiles">
+      <div class="tile"><span class="m">Indexed pages</span><span class="ba"><span class="from">140</span><span class="arrow">&rarr;</span><span class="to">610</span></span><span class="d">+470 pages</span><span class="src">Search Console, Feb vs Aug 2026</span></div>
+      <div class="tile"><span class="m">Organic clicks a month</span><span class="ba"><span class="from">1,200</span><span class="arrow">&rarr;</span><span class="to">3,100</span></span><span class="d">+158%</span><span class="src">Search Console, Feb vs Aug 2026</span></div>
+      <div class="tile"><span class="m">HCP enquiries a month</span><span class="ba"><span class="from">9</span><span class="arrow">&rarr;</span><span class="to">22</span></span><span class="d">+13</span><span class="src">Client CRM, Feb vs Aug 2026</span></div>
+      <div class="tile"><span class="m">Pages through review</span><span class="ba"><span class="to">48</span></span><span class="d">0 rejected</span><span class="src">Client review log, Mar to Aug 2026</span></div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <div class="main">
+    <div class="answer"><p class="t">In short</p><p>Most product pages were blocked from Google by a template setting. We fixed the template, rebuilt the site structure, and wrote disease-area pages with medical review built in. Indexed pages rose from 140 to 610 in six months.</p></div>
+
+    <section class="act" aria-labelledby="a1"><div class="no"><b>1</b>The brief</div><div>
+      <h2 id="a1">The challenge</h2>
+      <div class="prose"><p>The client's site had grown to more than 700 pages, but Google showed fewer than 150. Enquiries from healthcare professionals had stalled, and every page change needed medical and legal sign-off, which slowed fixes down.</p></div>
+      <ul class="goals"><li>Get product and disease-area pages indexed</li><li>Grow enquiries from healthcare professionals</li><li>Keep every page compliant</li></ul>
+    </div></section>
+
+    <section class="act" aria-labelledby="a2"><div class="no"><b>2</b>The work</div><div>
+      <h2 id="a2">What we did</h2>
+      <ol class="phases">
+        <li class="ph"><div><span class="w">Weeks 1 to 2</span><h3>Audit and root cause</h3><p>A crawl showed a noindex tag added by one product template.</p><div class="dl"><span>Technical audit</span><span>Fix list</span></div></div></li>
+        <li class="ph"><div><span class="w">Weeks 3 to 6</span><h3>Fix and restructure</h3><p>Removed the tag, merged duplicate pages and rebuilt internal links by therapy area.</p><div class="dl"><span>Template fix</span><span>Redirect map</span><span>New site structure</span></div></div></li>
+        <li class="ph"><div><span class="w">Months 2 to 6</span><h3>Content with review built in</h3><p>48 disease-area pages, each written, medically reviewed and approved before publishing.</p><div class="dl"><span>48 pages</span><span>Review workflow</span></div></div></li>
+      </ol>
+    </div></section>
+
+    <section class="act" aria-labelledby="a3"><div class="no"><b>3</b>The outcome</div><div>
+      <h2 id="a3">What changed</h2>
+      <div class="prose"><p>Within six weeks of the template fix, Google had indexed most of the blocked pages. The new disease-area pages started bringing in searches from clinicians, and the review workflow meant <strong>no page was sent back by the client's compliance team</strong>.</p></div>
+    </div></section>
+
+    <figure class="quote">
+      <span class="mk" aria-hidden="true">&ldquo;</span>
+      <blockquote>Placeholder for the client's exact words, used only after the client has approved them in writing.</blockquote>
+      <figcaption><b>Head of Digital</b><span>Client</span><span class="sample">Sample data</span></figcaption>
+    </figure>
+
+    <div class="sec-h"><span>Lessons</span><h2>What made the difference</h2></div>
+    <div class="lessons">
+      <div class="ls"><span class="n">01</span><h3>Find the cause first</h3><p>One template setting blocked hundreds of pages. Fixing it did more than any amount of new content.</p></div>
+      <div class="ls"><span class="n">02</span><h3>Plan review into the work</h3><p>Booking medical review slots up front kept publishing on schedule.</p></div>
+      <div class="ls"><span class="n">03</span><h3>Structure by therapy area</h3><p>Grouping pages the way clinicians search helped Google and readers find them.</p></div>
+    </div>
+
+    <aside class="icta" aria-label="Reinforce Lab service"><div><p class="lbl">Reinforce Lab service · Technical SEO</p><p class="hd">Pages missing from Google?</p><p class="csub">We find what is blocking them, fix the cause, and show you the change in Search Console.</p></div><div class="act2"><a class="go2" href="#">See how it works &rarr;</a><a class="alt" href="#">Or get a free diagnostic first</a></div></aside>
+
+    <div class="sec-h"><span>Services used</span><h2>How we helped</h2></div>
+    <div class="svcs">
+      <a class="svc" href="#"><span class="k">Service</span><b>Technical SEO</b><span>Crawl, index and site structure</span></a>
+      <a class="svc" href="#"><span class="k">Service</span><b>SEO Content Systems</b><span>Content with review built in</span></a>
+      <a class="svc" href="#"><span class="k">Industry</span><b>Pharmaceutical</b><span>How we work with pharma</span></a>
+    </div>
+
+    <div class="method"><span class="k">How we measured</span><p>Figures compare February 2026 (before work started) with August 2026, from the client's Google Search Console and CRM, shared with permission. Results depend on many factors, including the site's history and competition.</p></div>
+  </div>
+
+  <section class="back" aria-label="Questions and sources">
+    <div class="faq"><div class="sec-h"><span>Questions</span><h2>FAQs</h2></div>
+      <details open><summary>Why is the client not named?</summary><p>The client agreed to share the work and the figures but asked not to be named. We only name clients who say yes in writing.</p></details>
+      <details><summary>How long did it take to see results?</summary><p>Indexing recovered within about six weeks of the template fix. Traffic and enquiries grew over the following months.</p></details>
+    </div>
+    <div class="src"><div class="sec-h"><span>Evidence</span><h2>Sources</h2></div>
+      <ol><li><a href="#">Google Search Central, Block indexing with noindex</a></li></ol>
+    </div>
+  </section>
+
+  <aside class="author" aria-label="About the author"><span class="av" aria-hidden="true">J</span><div><p class="nm">Jamil Ahmed</p><p class="role">Founder and CEO, Reinforce Lab</p><p>Pharmacist, SEO and AI search consultant, and Semrush Ambassador.</p></div></aside>
+</div>

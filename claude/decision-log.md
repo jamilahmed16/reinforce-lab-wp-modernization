@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-098 | Case Study template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
 | D-097 | Updates template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Updates template") | this file |
 | D-096 | Updates template: design mockup v1 for review | 4 Oct | APPROVED, built as D-097 | this file |
 | D-095 | Industry template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Industry template") | this file |
@@ -154,6 +155,26 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-098 · Case Study template: design mockup v1 for review
+**Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S REVIEW (Jamil: "yes, go ahead with the Case Study mockup"; D-077 process)
+
+**Mockup:** `claude/design-previews/blog-casestudy-template-mockup.html`, published privately (claude.ai artifact "Case Study Template Mockup"). Sample topic: an anonymised pharmaceutical manufacturer whose product pages were blocked from Google. **Every client detail, figure and quote is sample data**: the page banner says so, and the client card, results and quote each carry a "Sample data" tag. No real client result is shown or implied.
+
+**Design: a project file**, different from the eight built templates:
+- **Header:** two chips (Case Study + category), the title with its outcome in red, standfirst, byline.
+- **Project file card:** a red file tab, **"Approved by client"** badge, the client (named, or anonymised as in the sample), industry, project period, services used (linked chips), team.
+- **Results:** up to four before-and-after tiles: the old figure struck through, the new figure, the change, and the period and data source under each.
+- **The story in three acts:** 1 The brief (challenge and goals), 2 The work (phases with timing and what was delivered), 3 The outcome.
+- **Client quote:** the client's exact, approved words with name or role.
+- **What made the difference:** three lessons for readers; **the light in-article service CTA**; **services used** as cards linking to the service and industry pages.
+- **How we measured:** periods compared, data sources, "shared with permission", and that results depend on many factors.
+- FAQs (including why the client is or is not named), sources, author box.
+
+**Rules carried over (D-076):** the publish guard stays: a case study cannot go live until "Client approved this case study" is ticked; anonymised unless the client agreed in writing to be named; measured results only, with period and source; the quote only as approved by the client.
+**Checks:** `copy-check.py` 0 issues; desktop 1440 and phone 390 with no horizontal scroll. Fixed before publishing: the sample tag in the client card and one awkward line.
 
 ---
 
