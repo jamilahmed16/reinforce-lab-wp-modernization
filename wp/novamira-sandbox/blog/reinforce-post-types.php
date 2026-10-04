@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - Post type sections
- * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide, How-To and Best / List have their own design files (reinforce-post-guide.php, reinforce-post-howto.php, reinforce-post-list.php).
+ * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide, How-To, Best / List and Review have their own design files (reinforce-post-guide.php, -howto.php, -list.php, -review.php).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -52,17 +52,7 @@ add_action('acf/init', function () {
             $ta('rl_e_definition', 'Definition', 'explainer', 'One or two sentences, written to be quoted.', 3),
             $ta('rl_e_related', 'Related terms', 'explainer', 'One per line: Term | URL (URL optional)', 4),
             // Best / List fields live in reinforce-post-list.php (D-077)
-            // Review
-            $tx('rl_r_product', 'Product reviewed', 'review', 'Third-party products only. Never our own services (self-reviews are not eligible).'),
-            $num('rl_r_score', 'Score out of 10', 'review', 0, 10),
-            $ta('rl_r_verdict', 'Verdict', 'review', 'Two or three sentences.', 3),
-            $ta('rl_r_pros', 'Pros', 'review', 'One per line.', 4),
-            $ta('rl_r_cons', 'Cons', 'review', 'One per line.', 4),
-            $tx('rl_r_price', 'Price', 'review', 'As shown on the vendor site, e.g. "From $29 a month".'),
-            ['key' => 'field_rl_r_price_date', 'name' => 'rl_r_price_date', 'label' => 'Price checked on', 'type' => 'date_picker', 'display_format' => 'j M Y', 'return_format' => 'Y-m-d', 'conditional_logic' => $show('review')],
-            $ta('rl_r_for', 'Who it is for', 'review', 'One per line.', 3),
-            $ta('rl_r_alts', 'Alternatives', 'review', 'One per line: Name | URL (URL optional)', 3),
-            $tf('rl_r_affiliate', 'Contains affiliate links', 'review', 'Shows the disclosure at the top of the post.'),
+            // Review fields live in reinforce-post-review.php (D-077)
             // Comparison
             $ta('rl_c_options', 'Options compared', 'comparison', 'One per line, 2 to 4 options.', 3),
             $ta('rl_c_rows', 'Comparison rows', 'comparison', 'One per line: Criterion | value for option 1 | value for option 2 (and so on)', 8),
@@ -139,16 +129,6 @@ add_action('rl_post_type_sections_before', function ($type, $id, $d) {
             $term = rl_pt_m($id, 'rl_e_term'); $def = rl_pt_m($id, 'rl_e_definition');
             if ($term !== '' && $def !== '') echo '<section class="ptb def"><p class="t">Definition</p><dl><dt>' . esc_html($term) . '</dt><dd>' . esc_html($def) . '</dd></dl></section>';
             break;
-        case 'review':
-            if (get_post_meta($id, 'rl_r_affiliate', true)) echo '<p class="disc">Disclosure: this review contains affiliate links. If you buy through them we may earn a commission, at no extra cost to you. It does not change our verdict.</p>';
-            $score = get_post_meta($id, 'rl_r_score', true); $verdict = rl_pt_m($id, 'rl_r_verdict'); $prod = rl_pt_m($id, 'rl_r_product');
-            $pros = rl_post_lines(get_post_meta($id, 'rl_r_pros', true)); $cons = rl_post_lines(get_post_meta($id, 'rl_r_cons', true));
-            if ($verdict !== '' || $score !== '') {
-                $h = '<div class="vtop">' . ($score !== '' ? '<div class="score"><b>' . esc_html(rtrim(rtrim(number_format((float) $score, 1), '0'), '.')) . '</b><span>/ 10</span></div>' : '') . '<div><p class="pn">' . esc_html($prod) . '</p><p>' . esc_html($verdict) . '</p></div></div>';
-                if ($pros || $cons) $h .= '<div class="pc"><div><p class="sub">Pros</p>' . rl_pt_ul($pros, 'pros') . '</div><div><p class="sub">Cons</p>' . rl_pt_ul($cons, 'cons') . '</div></div>';
-                echo rl_pt_box('verdict', 'Our verdict', $h);
-            }
-            break;
         case 'comparison':
             $opts = rl_post_lines(get_post_meta($id, 'rl_c_options', true)); $rows = rl_pt_rows(get_post_meta($id, 'rl_c_rows', true));
             if ($opts && $rows) {
@@ -221,13 +201,6 @@ add_action('rl_post_type_sections_after', function ($type, $id, $d) {
             $r = rl_pt_rows(get_post_meta($id, 'rl_e_related', true), 1);
             if ($r) echo rl_pt_box('related-terms', 'Related terms', '<ul class="links">' . implode('', array_map(function ($x) { return '<li>' . rl_pt_link($x[0], $x[1] ?? '') . '</li>'; }, $r)) . '</ul>');
             break;
-        case 'review':
-            $price = rl_pt_m($id, 'rl_r_price'); $pd = rl_pt_date(rl_pt_m($id, 'rl_r_price_date'));
-            $for = rl_post_lines(get_post_meta($id, 'rl_r_for', true)); $alts = rl_pt_rows(get_post_meta($id, 'rl_r_alts', true), 1);
-            if ($price !== '') echo rl_pt_box('price', 'Pricing', '<p><b>' . esc_html($price) . '</b>' . ($pd ? ' <span class="muted">(checked ' . esc_html(date_i18n('j M Y', strtotime($pd))) . ')</span>' : '') . '</p><p class="muted">Prices change. Check the vendor site before you buy.</p>');
-            if ($for) echo rl_pt_box('for', 'Who it is for', rl_pt_ul($for, 'ticks2'));
-            if ($alts) echo rl_pt_box('alts', 'Alternatives', '<ul class="links">' . implode('', array_map(function ($x) { return '<li>' . rl_pt_link($x[0], $x[1] ?? '') . '</li>'; }, $alts)) . '</ul>');
-            break;
         case 'comparison':
             $w = rl_pt_rows(get_post_meta($id, 'rl_c_winners', true)); $v = rl_pt_m($id, 'rl_c_verdict');
             if ($w) { $h = '<dl class="gloss">'; foreach ($w as $r) $h .= '<dt>' . esc_html($r[0]) . '</dt><dd>' . esc_html($r[1]) . '</dd>'; echo rl_pt_box('winners', 'Winner by use case', $h . '</dl>'); }
@@ -274,19 +247,6 @@ add_filter('wpseo_schema_graph', function ($graph) {
         case 'explainer':
             $term = rl_pt_m($id, 'rl_e_term'); $def = rl_pt_m($id, 'rl_e_definition');
             if ($term !== '' && $def !== '') { $add = ['@type' => 'DefinedTerm', '@id' => $url . '#term', 'name' => $term, 'description' => $def, 'url' => $url]; $about = ['@id' => $url . '#term']; }
-            break;
-        case 'review':
-            $prod = rl_pt_m($id, 'rl_r_product'); $score = get_post_meta($id, 'rl_r_score', true);
-            if ($prod !== '' && $score !== '') {
-                $add = ['@type' => 'Review', '@id' => $url . '#review', 'name' => get_the_title($id), 'itemReviewed' => ['@type' => 'Product', 'name' => $prod],
-                    'reviewRating' => ['@type' => 'Rating', 'ratingValue' => (float) $score, 'bestRating' => 10, 'worstRating' => 0], 'author' => ['@id' => $pid],
-                    'publisher' => ['@id' => home_url('/#organization')], 'datePublished' => get_the_date('c', $id), 'mainEntityOfPage' => ['@id' => $url]];
-                $v = rl_pt_m($id, 'rl_r_verdict'); if ($v !== '') $add['reviewBody'] = $v;
-                $pros = rl_post_lines(get_post_meta($id, 'rl_r_pros', true)); $cons = rl_post_lines(get_post_meta($id, 'rl_r_cons', true));
-                $li = function ($xs) { return ['@type' => 'ItemList', 'itemListElement' => array_map(function ($x, $i) { return ['@type' => 'ListItem', 'position' => $i + 1, 'name' => $x]; }, $xs, array_keys($xs))]; };
-                if ($pros) $add['positiveNotes'] = $li($pros);
-                if ($cons) $add['negativeNotes'] = $li($cons);
-            }
             break;
         case 'comparison':
             $opts = rl_post_lines(get_post_meta($id, 'rl_c_options', true));
