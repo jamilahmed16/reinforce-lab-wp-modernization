@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - Post type sections
- * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide, How-To, Best / List, Review and Comparison have their own design files (reinforce-post-guide.php, -howto.php, -list.php, -review.php, -comparison.php).
+ * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide, How-To, Best / List, Review, Comparison and Explainer have their own design files (reinforce-post-guide.php, -howto.php, -list.php, -review.php, -comparison.php, -explainer.php).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -47,10 +47,7 @@ add_action('acf/init', function () {
         'fields' => [
             // Guide fields live in reinforce-post-guide.php (D-077)
             // How-To fields live in reinforce-post-howto.php (D-077)
-            // Explainer
-            $tx('rl_e_term', 'Term', 'explainer', 'The exact term being defined.'),
-            $ta('rl_e_definition', 'Definition', 'explainer', 'One or two sentences, written to be quoted.', 3),
-            $ta('rl_e_related', 'Related terms', 'explainer', 'One per line: Term | URL (URL optional)', 4),
+            // Explainer fields live in reinforce-post-explainer.php (D-077)
             // Best / List fields live in reinforce-post-list.php (D-077)
             // Review fields live in reinforce-post-review.php (D-077)
             // Comparison fields live in reinforce-post-comparison.php (D-077)
@@ -121,10 +118,6 @@ function rl_pt_svc_link($path) {
 add_action('rl_post_type_sections_before', function ($type, $id, $d) {
     $u = function ($path) { return function_exists('rl_url_by_path') ? rl_url_by_path($path, '') : ''; };
     switch ($type) {
-        case 'explainer':
-            $term = rl_pt_m($id, 'rl_e_term'); $def = rl_pt_m($id, 'rl_e_definition');
-            if ($term !== '' && $def !== '') echo '<section class="ptb def"><p class="t">Definition</p><dl><dt>' . esc_html($term) . '</dt><dd>' . esc_html($def) . '</dd></dl></section>';
-            break;
         case 'industry':
             $k = rl_pt_m($id, 'rl_i_industry');
             if ($k !== '' && function_exists('rl_ind_data') && isset(rl_ind_data()[$k])) {
@@ -183,10 +176,6 @@ function rl_pt_minutes_label($m) { $m = (int) round($m); if ($m < 60) return $m 
 /* ---------- after the body ---------- */
 add_action('rl_post_type_sections_after', function ($type, $id, $d) {
     switch ($type) {
-        case 'explainer':
-            $r = rl_pt_rows(get_post_meta($id, 'rl_e_related', true), 1);
-            if ($r) echo rl_pt_box('related-terms', 'Related terms', '<ul class="links">' . implode('', array_map(function ($x) { return '<li>' . rl_pt_link($x[0], $x[1] ?? '') . '</li>'; }, $r)) . '</ul>');
-            break;
         case 'industry':
             $rules = rl_pt_rows(get_post_meta($id, 'rl_i_rules', true));
             if ($rules) { $h = '<dl class="gloss">'; foreach ($rules as $r) $h .= '<dt>' . esc_html($r[0]) . '</dt><dd>' . esc_html($r[1]) . '</dd>'; echo rl_pt_box('rules', 'Sector rules to know', $h . '</dl>'); }
@@ -225,10 +214,6 @@ add_filter('wpseo_schema_graph', function ($graph) {
     $pid = rl_person_schema_id(get_post_field('post_author', $id));
     $add = null; $about = null;
     switch ($d['type']) {
-        case 'explainer':
-            $term = rl_pt_m($id, 'rl_e_term'); $def = rl_pt_m($id, 'rl_e_definition');
-            if ($term !== '' && $def !== '') { $add = ['@type' => 'DefinedTerm', '@id' => $url . '#term', 'name' => $term, 'description' => $def, 'url' => $url]; $about = ['@id' => $url . '#term']; }
-            break;
         case 'research':
             $ds = esc_url_raw(rl_pt_m($id, 'rl_rs_dataset'));
             if ($ds) {

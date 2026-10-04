@@ -33,6 +33,7 @@ foreach ([
     'services/reinforce-maintenance.php',
     'saos/reinforce-packages.php',
     'blog/reinforce-post-comparison.php',
+    'blog/reinforce-post-explainer.php',
     'blog/reinforce-post-guide.php',
     'blog/reinforce-post-howto.php',
     'blog/reinforce-post-list.php',
