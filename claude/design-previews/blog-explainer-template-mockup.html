@@ -1,0 +1,329 @@
+<title>Explainer Template Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a reference entry. The term set like a dictionary headword with its definition as the quotable block, an info box of key facts, the idea at three depths (10 seconds, one minute, in depth), how it works as a flow, what it is and is not, a worked example, and related terms as a small concept map. Dark only: it is the Reinforce Lab site (D-013). */
+:root{
+  --bg:#121011; --bg-2:#0e0c0d; --panel:#1a1617; --panel-2:#211c1d;
+  --ink:#f2eeee; --ink-dim:#b8b0b1; --ink-faint:#7f7778;
+  --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
+  --red:#990000; --red-2:#c21a1a; --red-3:#e23b3b; --red-line:rgba(226,59,59,.38); --ok:#3fa36b; --ok-line:rgba(63,163,107,.45);
+  --f-display:"Oswald","Arial Narrow",sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1280px; --g:clamp(16px,3vw,32px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink-dim);font-family:var(--f-body);font-size:16px;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;background-position:-1px -1px}
+a{color:var(--ink)}
+:focus-visible{outline:2px solid var(--red-3);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--g)}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);margin:0;line-height:1.04;text-wrap:balance}
+.ic{width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square}
+
+.mocknote{background:var(--red);color:#fff;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-align:center;padding:7px var(--g)}
+.chrome{border-bottom:1px solid var(--line-2);background:rgba(18,16,17,.9)}
+.chrome .wrap{display:flex;justify-content:space-between;align-items:center;height:62px;gap:16px}
+.logo{font-family:var(--f-display);font-weight:700;letter-spacing:.04em;color:var(--ink);font-size:18px;text-transform:uppercase}
+.logo b{color:var(--red-3)}
+.chrome nav{display:flex;gap:22px;font-family:var(--f-display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.chrome nav span.on{color:var(--ink)}
+.cta-s{font-family:var(--f-display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid var(--red-2);padding:9px 14px;background:rgba(153,0,0,.35)}
+
+/* entry header */
+.crumbs{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);padding-top:26px}
+.crumbs a{color:var(--ink-faint);text-decoration:none}
+.entry{padding-block:clamp(24px,4vw,40px) 0}
+.kicker{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.kind{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:var(--red);padding:6px 10px}
+.cat{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:5px 10px}
+.q{font-family:var(--f-mono);font-size:13px;letter-spacing:.06em;color:var(--ink-faint);margin:0 0 8px}
+.head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 22px}
+.term{font-size:clamp(46px,8vw,112px);line-height:.9;letter-spacing:-.005em}
+.abbr{font-family:var(--f-display);font-size:clamp(26px,3.6vw,46px);color:var(--red-3);font-weight:500}
+.gram{display:flex;flex-wrap:wrap;gap:8px 18px;margin:16px 0 0;font-family:var(--f-mono);font-size:12.5px;color:var(--ink-faint)}
+.gram i{font-style:italic;color:var(--ink-dim)}
+.gram b{color:var(--ink);font-weight:500}
+.byline{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:18px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);align-items:center}
+.byline .who{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.av{width:34px;height:34px;border:1px solid var(--red-line);display:grid;place-items:center;font-family:var(--f-display);font-size:15px;color:var(--ink);background:var(--bg-2)}
+.byline b{color:var(--ink-dim);font-weight:500}
+.byline .fresh,.byline .fresh b{color:var(--ok)}
+
+/* definition */
+.def{margin-top:28px;border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 28px;align-items:start;padding:26px 28px}
+.def .lb{grid-column:1/-1;font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0}
+.def blockquote{margin:0;color:var(--ink);font-size:clamp(19px,2vw,24px);line-height:1.5;max-width:880px}
+.def blockquote b{font-weight:600}
+.copy{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);background:var(--bg-2);border:1px solid var(--line-2);padding:9px 12px;cursor:pointer;white-space:nowrap}
+.copy:hover{border-color:var(--red-line)}
+.def .src{grid-column:1/-1;font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);margin:0}
+
+/* body + infobox */
+.main{display:grid;grid-template-columns:minmax(0,760px) minmax(0,1fr);gap:clamp(30px,5vw,64px);padding-block:clamp(36px,5vw,52px) 10px;align-items:start}
+.info{position:sticky;top:20px;border:1px solid var(--line-2);background:var(--panel)}
+.info .ih{display:flex;justify-content:space-between;align-items:baseline;padding:14px 18px;border-bottom:1px solid var(--line-2);background:var(--bg-2)}
+.info .ih b{font-family:var(--f-display);font-size:20px;text-transform:uppercase;color:var(--ink);font-weight:600}
+.info .ih span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.info dl{margin:0;padding:4px 18px 8px}
+.info dl div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:14px}
+.info dl div:first-child{border-top:0}
+.info dt{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);padding-top:3px}
+.info dd{margin:0;color:var(--ink)}
+.info dd a{color:var(--ink);border-bottom:1px solid var(--red-line);text-decoration:none}
+.info .toc{border-top:1px solid var(--line-2);padding:12px 18px 16px}
+.info .toc p{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 8px}
+.info .toc ol{margin:0;padding-left:1.3em;font-size:14px}
+.info .toc li{padding:3px 0}
+.info .toc a{color:var(--ink-dim);text-decoration:none}
+.info .toc a:hover{color:var(--ink)}
+
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:46px 0 16px}
+.sec-h span{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3)}
+.sec-h h2{font-size:clamp(24px,2.8vw,30px)}
+.prose p{font-size:17.5px;line-height:1.75;margin:0 0 1.1em}
+.prose strong{color:var(--ink);font-weight:600}
+.prose a{color:var(--ink);border-bottom:1px dotted var(--red-3);text-decoration:none}
+
+/* three depths */
+.depth{display:grid;gap:0;border:1px solid var(--line-2)}
+.lv{display:grid;grid-template-columns:150px minmax(0,1fr);border-top:1px solid var(--line-2)}
+.lv:first-child{border-top:0}
+.lv .tag{padding:18px;background:var(--bg-2);border-right:1px solid var(--line-2);display:grid;align-content:start;gap:6px}
+.lv .tag b{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);font-weight:500;line-height:1}
+.lv .tag span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+.lv .tx{padding:18px 22px;font-size:16.5px;line-height:1.7;color:var(--ink)}
+.lv .tx p{margin:0 0 .8em} .lv .tx p:last-child{margin:0}
+.lv.deep .tx{color:var(--ink-dim)}
+.lv.deep .tx a{color:var(--ink);font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--red-line)}
+.meter{display:flex;gap:3px;margin-top:4px}
+.meter i{width:14px;height:4px;background:var(--line-2)} .meter i.on{background:var(--red-3)}
+
+/* how it works */
+.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;counter-reset:f}
+.fs{position:relative;border:1px solid var(--line-2);background:var(--panel);padding:18px 16px 18px;margin-right:22px;counter-increment:f}
+.fs:last-child{margin-right:0}
+.fs:not(:last-child)::after{content:"";position:absolute;right:-22px;top:50%;width:22px;height:1px;background:var(--red-3)}
+.fs:not(:last-child)::before{content:"";position:absolute;right:-22px;top:calc(50% - 4px);border:4px solid transparent;border-left-color:var(--red-3);border-right:0}
+.fs .n{font-family:var(--f-mono);font-size:11px;color:var(--red-3)}
+.fs .n::before{content:counter(f,decimal-leading-zero)}
+.fs h3{font-size:17px;margin:6px 0 6px}
+.fs p{margin:0;font-size:14px}
+
+/* is / is not */
+.isnot{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.isnot>div{background:var(--panel);padding:18px 20px}
+.isnot .h{display:flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 8px}
+.is .h{color:var(--ok)} .not .h{color:var(--red-3)}
+.isnot ul{list-style:none;margin:0;padding:0}
+.isnot li{display:grid;grid-template-columns:18px 1fr;gap:8px;padding:8px 0;border-top:1px solid var(--line);font-size:15px}
+.isnot li:first-child{border-top:0}
+.is .ic{color:var(--ok);margin-top:4px} .not .ic{color:var(--red-3);margin-top:4px}
+
+/* example */
+.ex{border:1px solid var(--line-2);background:var(--bg-2)}
+.ex .eh{display:flex;justify-content:space-between;gap:12px;padding:12px 18px;border-bottom:1px dashed var(--line-2);font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.ex .eh b{color:var(--red-3);font-weight:500}
+.ex .ba{display:grid;grid-template-columns:1fr 1fr}
+.ex .ba>div{padding:18px 20px}
+.ex .ba>div+div{border-left:1px solid var(--line-2);background:linear-gradient(180deg,rgba(63,163,107,.06),transparent)}
+.ex .ba p.l{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 8px;color:var(--ink-faint)}
+.ex .ba>div+div p.l{color:var(--ok)}
+.ex .ba p{margin:0;font-size:15px}
+.ex .ba q{display:block;color:var(--ink);border-left:2px solid var(--line-2);padding-left:12px;margin-top:8px;quotes:none;font-size:15px}
+.ex .ba>div+div q{border-left-color:var(--ok)}
+
+/* related terms map */
+.map{display:grid;grid-template-columns:1fr auto 1fr;grid-template-rows:auto auto;gap:14px 0;align-items:center;position:relative}
+.map .core{grid-column:2;grid-row:1/3;border:2px solid var(--red-2);background:var(--red);color:#fff;font-family:var(--f-display);font-size:22px;text-transform:uppercase;padding:18px 22px;text-align:center;margin-inline:22px;position:relative;z-index:1}
+.map .core small{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;opacity:.8}
+.rt{border:1px solid var(--line-2);background:var(--panel);padding:14px 16px;text-decoration:none;display:grid;gap:4px;position:relative}
+.rt:hover{border-color:var(--red-line)}
+.rt b{font-family:var(--f-display);font-size:17px;text-transform:uppercase;color:var(--ink);font-weight:500}
+.rt span{font-size:13.5px;color:var(--ink-dim)}
+.rt .k{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
+.map .l1{grid-column:1;grid-row:1} .map .l2{grid-column:1;grid-row:2} .map .r1{grid-column:3;grid-row:1} .map .r2{grid-column:3;grid-row:2}
+.map .l1::after,.map .l2::after{content:"";position:absolute;right:-22px;top:50%;width:22px;height:1px;background:var(--line-2)}
+.map .r1::before,.map .r2::before{content:"";position:absolute;left:-22px;top:50%;width:22px;height:1px;background:var(--line-2)}
+
+/* CTA */
+.icta{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 28px;align-items:center;margin:40px 0 0;padding:20px 0 20px 20px;border-top:1px solid var(--red-line);border-bottom:1px solid var(--red-line);border-left:3px solid var(--red-2);background:linear-gradient(90deg,rgba(153,0,0,.12),transparent 70%)}
+.icta .lbl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 6px}
+.icta .hd{font-family:var(--f-display);font-weight:600;text-transform:uppercase;font-size:clamp(19px,2vw,22px);line-height:1.15;color:var(--ink);margin:0 0 6px}
+.icta .csub{margin:0;font-size:15px}
+.act2{display:grid;gap:8px;justify-items:start;padding-right:20px}
+.go2{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.07em;font-size:14px;text-decoration:none;color:#fff;background:var(--red);border:1px solid var(--red-2);padding:12px 18px;white-space:nowrap}
+.alt{font-size:13.5px;color:var(--ink-faint);text-decoration:none;border-bottom:1px solid var(--line-2)}
+
+/* cite */
+.cite{border:1px dashed var(--line-2);padding:16px 18px;margin-top:40px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 18px;align-items:center}
+.cite .lb{grid-column:1/-1;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin:0}
+.cite code{font-family:var(--f-mono);font-size:13px;color:var(--ink);word-break:break-word}
+
+/* back matter */
+.back{border-top:1px solid var(--line-2);margin-top:50px;padding-block:44px 10px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
+.back .sec-h{margin-top:0}
+.faq details{border:1px solid var(--line);background:var(--panel);margin-bottom:8px}
+.faq summary{cursor:pointer;list-style:none;padding:15px 18px;font-family:var(--f-display);text-transform:uppercase;font-size:15px;color:var(--ink);display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red-3);font-family:var(--f-mono)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:0;padding:0 18px 15px;font-size:15px}
+.src2 ol{margin:0;padding-left:1.4em;font-size:14.5px} .src2 li{padding:6px 0;color:var(--ink-faint)}
+.src2 a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.author .av{width:72px;height:72px;font-size:28px}
+.author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
+.author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}
+.author p{margin:0 0 8px;font-size:15px}
+
+@media(max-width:1000px){
+  .main{grid-template-columns:minmax(0,1fr)}
+  .info{position:static;order:-1}
+  .flow{grid-template-columns:1fr 1fr;gap:22px 0}
+  .fs:nth-child(2){margin-right:0}
+  .fs:nth-child(2)::after,.fs:nth-child(2)::before{display:none}
+}
+@media(max-width:700px){
+  .chrome nav{display:none}
+  .def{grid-template-columns:1fr;padding:20px 18px}
+  .lv{grid-template-columns:1fr}
+  .lv .tag{border-right:0;border-bottom:1px solid var(--line-2);grid-auto-flow:column;justify-content:space-between;align-items:center}
+  .flow{grid-template-columns:1fr;gap:22px}
+  .fs{margin-right:0}
+  .fs::after{right:auto!important;left:24px;top:auto!important;bottom:-22px;width:1px!important;height:22px}
+  .fs::before{right:auto!important;left:20px;top:auto!important;bottom:-22px;border:4px solid transparent!important;border-top-color:var(--red-3)!important;border-bottom:0!important}
+  .fs:nth-child(2)::after,.fs:nth-child(2)::before{display:block}
+  .fs:last-child::after,.fs:last-child::before{display:none}
+  .isnot,.ex .ba,.back{grid-template-columns:1fr}
+  .ex .ba>div+div{border-left:0;border-top:1px solid var(--line-2)}
+  .map{grid-template-columns:1fr;grid-template-rows:none;gap:8px}
+  .map .core{grid-column:1;grid-row:1;margin:0 0 6px}
+  .map .l1,.map .l2,.map .r1,.map .r2{grid-column:1;grid-row:auto}
+  .map .rt::after,.map .rt::before{display:none}
+  .icta{grid-template-columns:1fr;padding-left:16px} .act2{padding-right:16px}
+  .cite{grid-template-columns:1fr}
+  .author{grid-template-columns:1fr}
+  .prose p{font-size:16.5px}
+  .info dl div{grid-template-columns:100px minmax(0,1fr)}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<div class="mocknote">DESIGN MOCKUP · EXPLAINER TEMPLATE · sample content for layout review, not published</div>
+<header class="chrome"><div class="wrap"><span class="logo">Reinforce <b>/</b> Lab</span><nav aria-label="Site (mockup)"><span>Search Authority OS</span><span>Solutions</span><span>Industries</span><span>Packages</span><span class="on">Blog</span><span>About</span><span>Contact</span></nav><span class="cta-s">Get your diagnostic</span></div></header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ok" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+  <symbol id="no" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+  <symbol id="cp" viewBox="0 0 16 16"><path d="M5 5h8v8H5zM3 11V3h8" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+</svg>
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="#">Home</a> / <a href="#">Blog</a> / <a href="#">AI Search</a> / What is GEO?</nav>
+  <section class="entry">
+    <div class="kicker"><span class="kind">Explainer</span><span class="cat">AI Search</span></div>
+    <p class="q">What is generative engine optimization?</p>
+    <div class="head"><h1 class="term">Generative Engine Optimization</h1><span class="abbr">(GEO)</span></div>
+    <div class="gram"><span><i>noun</i></span><span>Also called <b>AI search optimization</b>, <b>LLM optimization</b></span><span>Field <b>Search marketing</b></span></div>
+    <div class="byline"><span class="who"><span class="av" aria-hidden="true">J</span>Jamil Ahmed</span><span>Published <b>12 Sep 2026</b></span><span class="fresh">Updated <b>2 Oct 2026</b></span></div>
+
+    <div class="def">
+      <p class="lb">Definition</p>
+      <blockquote id="defq"><b>Generative engine optimization (GEO)</b> is the work of making your content easy for AI answer tools such as ChatGPT, Perplexity, Gemini and Google AI Overviews to find, trust and cite, so your brand appears inside the answers they write.</blockquote>
+      <button class="copy" type="button" id="cpy"><svg class="ic"><use href="#cp"/></svg><span>Copy definition</span></button>
+      <p class="src">Reinforce Lab definition. The term comes from a 2023 research paper by Aggarwal and others.</p>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <div class="main">
+    <article>
+      <div class="sec-h"><span>Three levels</span><h2>GEO explained</h2></div>
+      <div class="depth">
+        <div class="lv"><div class="tag"><b>10 sec</b><span>The idea</span><span class="meter" aria-hidden="true"><i class="on"></i><i></i><i></i></span></div><div class="tx"><p>SEO gets you ranked in search results. GEO gets you quoted in AI answers.</p></div></div>
+        <div class="lv"><div class="tag"><b>1 min</b><span>The basics</span><span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span></div><div class="tx"><p>AI answer tools read many pages and write one answer, often with a few sources cited. GEO makes your pages the ones they pick: clear facts near the top, claims backed by sources, and your brand described the same way across the web.</p></div></div>
+        <div class="lv deep"><div class="tag"><b>In depth</b><span>The full article</span><span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span></div><div class="tx"><p>The sections below cover how AI tools choose sources, what GEO changes on a page, and how to measure it. <a href="#how">Read on &darr;</a></p></div></div>
+      </div>
+
+      <div class="sec-h" id="how"><span>How it works</span><h2>From question to cited answer</h2></div>
+      <div class="flow">
+        <div class="fs"><span class="n"></span><h3>Question</h3><p>Someone asks an AI tool a question in plain words.</p></div>
+        <div class="fs"><span class="n"></span><h3>Retrieval</h3><p>The tool searches for pages that match and reads the useful passages.</p></div>
+        <div class="fs"><span class="n"></span><h3>Selection</h3><p>It keeps passages that are clear, specific and backed by sources.</p></div>
+        <div class="fs"><span class="n"></span><h3>Answer</h3><p>It writes one answer and cites a few of the pages it used.</p></div>
+      </div>
+      <div class="prose" style="margin-top:22px"><p>GEO works on the middle two steps. If your page is not found, or its key facts are buried, the tool cites someone else. That is why <strong>GEO builds on SEO</strong> rather than replacing it: a page that is never crawled can never be cited.</p></div>
+
+      <div class="sec-h"><span>Clearing it up</span><h2>What GEO is and is not</h2></div>
+      <div class="isnot">
+        <div class="is"><p class="h"><svg class="ic"><use href="#ok"/></svg>GEO is</p><ul><li><svg class="ic"><use href="#ok"/></svg><span>Writing facts AI tools can lift and quote</span></li><li><svg class="ic"><use href="#ok"/></svg><span>Backing claims with sources and data</span></li><li><svg class="ic"><use href="#ok"/></svg><span>Describing your brand the same way everywhere</span></li></ul></div>
+        <div class="not"><p class="h"><svg class="ic"><use href="#no"/></svg>GEO is not</p><ul><li><svg class="ic"><use href="#no"/></svg><span>A replacement for SEO</span></li><li><svg class="ic"><use href="#no"/></svg><span>Stuffing pages with questions and keywords</span></li><li><svg class="ic"><use href="#no"/></svg><span>Something one tool or plugin can do for you</span></li></ul></div>
+      </div>
+
+      <div class="sec-h"><span>Example</span><h2>GEO on a real page</h2></div>
+      <div class="ex">
+        <div class="eh"><span>Service page, opening paragraph</span><b>Before and after</b></div>
+        <div class="ba">
+          <div><p class="l">Before</p><p>Vague opening, no facts an AI tool can quote.</p><q>We are passionate about delivering results for clients across many industries.</q></div>
+          <div><p class="l">After</p><p>Who, what and where in the first two sentences.</p><q>Reinforce Lab builds AI Growth Systems that connect your website, content and search visibility. Offices in Dhaka and Katy, Texas.</q></div>
+        </div>
+      </div>
+
+      <aside class="icta" aria-label="Reinforce Lab service"><div><p class="lbl">Reinforce Lab service · Generative Engine Optimization</p><p class="hd">Want AI tools to cite your brand?</p><p class="csub">We find where AI answers mention your competitors and not you, and fix the pages and sources behind it.</p></div><div class="act2"><a class="go2" href="#">See how it works &rarr;</a><a class="alt" href="#">Or get a free diagnostic first</a></div></aside>
+
+      <div class="sec-h"><span>Related terms</span><h2>Where GEO sits</h2></div>
+      <div class="map">
+        <a class="rt l1" href="#"><span class="k">Foundation</span><b>SEO</b><span>Getting pages found and ranked in search results.</span></a>
+        <a class="rt l2" href="#"><span class="k">Overlaps</span><b>AEO</b><span>Answer engine optimization: shaping content as direct answers.</span></a>
+        <div class="core">GEO<small>This entry</small></div>
+        <a class="rt r1" href="#"><span class="k">Same goal</span><b>LLM optimization</b><span>Making brands known to the models behind AI tools.</span></a>
+        <a class="rt r2" href="#"><span class="k">Where it shows</span><b>AI Overviews</b><span>Google's AI summaries at the top of results.</span></a>
+      </div>
+
+      <div class="cite"><p class="lb">Cite this page</p><code id="cite">Reinforce Lab (2026). What is generative engine optimization (GEO)? reinforcelab.com/blog/what-is-geo/</code><button class="copy" type="button" id="cpy2"><svg class="ic"><use href="#cp"/></svg><span>Copy</span></button></div>
+    </article>
+
+    <aside class="info" aria-label="Key facts">
+      <div class="ih"><b>GEO</b><span>Key facts</span></div>
+      <dl>
+        <div><dt>Short for</dt><dd>Generative engine optimization</dd></div>
+        <div><dt>Term from</dt><dd>2023 research paper</dd></div>
+        <div><dt>Applies to</dt><dd>ChatGPT, Perplexity, Gemini, Google AI Overviews</dd></div>
+        <div><dt>Builds on</dt><dd><a href="#">SEO</a></dd></div>
+        <div><dt>Measured by</dt><dd>Citations and brand mentions in AI answers</dd></div>
+      </dl>
+      <nav class="toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#how">How it works</a></li><li><a href="#">What it is and is not</a></li><li><a href="#">Example</a></li><li><a href="#">Related terms</a></li></ol></nav>
+    </aside>
+  </div>
+
+  <section class="back" aria-label="Questions and sources">
+    <div class="faq"><div class="sec-h"><span>Questions</span><h2>FAQs</h2></div>
+      <details open><summary>Is GEO the same as SEO?</summary><p>No. SEO gets pages ranked in search results; GEO gets content cited inside AI answers. GEO depends on SEO, because AI tools mostly cite pages they can find.</p></details>
+      <details><summary>How do you measure GEO?</summary><p>Track how often AI tools mention or cite your brand for the questions your buyers ask, and compare it with your competitors over time.</p></details>
+    </div>
+    <div class="src2"><div class="sec-h"><span>Evidence</span><h2>Sources</h2></div>
+      <ol><li><a href="#">Aggarwal and others (2023), GEO: Generative Engine Optimization, arXiv</a></li><li><a href="#">Google Search Central, AI features and your website</a></li></ol>
+    </div>
+  </section>
+
+  <aside class="author" aria-label="About the author"><span class="av" aria-hidden="true">J</span><div><p class="nm">Jamil Ahmed</p><p class="role">Founder and CEO, Reinforce Lab</p><p>Pharmacist, SEO and AI search consultant, and Semrush Ambassador.</p></div></aside>
+</div>
+
+<script>
+(function(){
+  function wire(btn,src){
+    var b=document.getElementById(btn), t=document.getElementById(src); if(!b||!t) return;
+    b.addEventListener('click',function(){
+      var txt=t.textContent.trim(), lab=b.querySelector('span'), old=lab.textContent;
+      function done(m){ lab.textContent=m; setTimeout(function(){lab.textContent=old;},1600); }
+      if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(function(){done('Copied');},function(){sel(t);done('Selected');}); }
+      else { sel(t); done('Selected'); }
+    });
+  }
+  function sel(el){ try{ var r=document.createRange(); r.selectNodeContents(el); var s=getSelection(); s.removeAllRanges(); s.addRange(r); }catch(e){} }
+  wire('cpy','defq'); wire('cpy2','cite');
+})();
+</script>

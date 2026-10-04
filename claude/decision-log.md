@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-092 | Explainer template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
 | D-091 | Comparison template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Comparison template") | this file |
 | D-090 | Comparison template: design mockup v1 for review | 4 Oct | APPROVED, built as D-091 | this file |
 | D-089 | Review template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Review template") | this file |
@@ -148,6 +149,24 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-092 · Explainer template: design mockup v1 for review
+**Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S REVIEW (Jamil: "yes, go ahead with the Explainer mockup"; D-077 process)
+
+**Mockup:** `claude/design-previews/blog-explainer-template-mockup.html`, published privately (claude.ai artifact "Explainer Template Mockup"). Sample topic: "What is generative engine optimization (GEO)?", linked to our GEO service. Sample content, marked as such on the page.
+
+**Design: a reference entry**, different from the Guide (book), How-To (workbench), Best / List (shortlist board), Review (lab report) and Comparison (head-to-head):
+- **Headword header:** the search question in small type, the term set very large with its abbreviation in red, then "noun", "Also called" and "Field" like a dictionary line. Two chips (Explainer + category), "Updated" date in green.
+- **Definition block:** the quotable one-to-two sentence definition (the passage AI tools and featured snippets lift), a "Copy definition" button, and where the term comes from.
+- **Key facts info box:** short for, where the term comes from, applies to, builds on (linked), measured by, plus "On this page" links. Sticky on desktop, first after the definition on phones.
+- **Three levels:** 10 seconds, 1 minute, in depth (the full article), all visible (nothing hidden in tabs), each with a small depth meter.
+- **How it works** as a 4-step flow with arrows (stacks on phones), **what it is and is not** side by side, a **before and after example**, the light in-article service CTA, **related terms** as a small concept map around the term, and a **"Cite this page"** line with a copy button.
+- FAQs, sources, author box.
+
+**When built:** DefinedTerm schema for the term and its definition (kept from D-076), with the related terms as `isRelatedTo` style links where they have URLs.
+**Checks:** `copy-check.py` 0 issues; desktop 1440 and phone 390 with no horizontal scroll. Changed before publishing: the "after" example now uses the locked positioning wording.
 
 ---
 
