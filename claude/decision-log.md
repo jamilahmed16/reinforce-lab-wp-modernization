@@ -20,7 +20,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
-| D-098 | Case Study template: design mockup v1 and v2 (7 additions) for review | 4 Oct | AWAITING REVIEW (v2) | this file |
+| D-099 | Case Study template built on `.online` from the approved mockup (v2) | 4 Oct | DONE (Jamil: "approved, build the Case Study template") | this file |
+| D-098 | Case Study template: design mockup v1 and v2 (7 additions) for review | 4 Oct | APPROVED, built as D-099 | this file |
 | D-097 | Updates template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Updates template") | this file |
 | D-096 | Updates template: design mockup v1 for review | 4 Oct | APPROVED, built as D-097 | this file |
 | D-095 | Industry template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Industry template") | this file |
@@ -158,8 +159,29 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 ---
 
+## D-099 · Case Study template built on `.online` from the approved mockup
+**Date:** 4 October 2026 · **Status:** DONE (Jamil: "approved, build the Case Study template")
+
+**Files:** new `blog/reinforce-post-casestudy.php` (added to the loader); `blog/reinforce-post.php` hands Case Study posts to `rl_casestudy_render()`; the old case study fields, boxes and the publish guard moved out of `blog/reinforce-post-types.php` into the new file (no case study posts existed, so no data was affected). Only Research and Product/Service still use the shared boxes.
+
+**How an editor writes a Case Study post:**
+- **Approval first:** "Client approved this case study" must be ticked. Without it a published case study is put back to draft on save, and any preview shows a "Not approved" banner and hides the client quote (D-076).
+- **Project file:** client (anonymised by default; "Client agreed to be named" names them), a note on how they are shown, industry (links to its `/industries/` page), project period, services used (linked chips), team.
+- **Results:** up to 4 lines, `Metric | Before | After | Change | Period and source`.
+- **Results chart:** title, points `Label | Number`, markers `Label | Text` (`Mar+0.6` places a marker part way to the next point), source. Drawn in the browser as one red series with a crosshair tooltip and a "Show the figures as a table" view.
+- **The three acts:** challenge, client profile (`Label | Value`, up to 4), goals; phases `When | Phase | What we did | Deliverable; Deliverable`; what did not go to plan `Problem | How we handled it`; outcome, then the body, evidence screenshots (media gallery, up to 6; the image title is the label and the caption the text), what's next.
+- **Client quote and role, lessons (up to 3), CTA, how we measured, other factors** `What changed | How we accounted for it`.
+- **Related case studies:** the three newest other case study posts, shown only when they exist.
+
+**Schema:** the base BlogPosting, Person and FAQPage, plus on the article: `about` = the client as an Organization when named, otherwise the industry; `mentions` = each service used as a Service with its page URL. Verified in memory for both cases.
+
+**Checks:** in-memory preview with the mockup's sample content (nothing saved, F-003): no PHP notices; `copy-check.py` 0 issues on the file and the rendered page; desktop 1440 and phone 390 with no horizontal scroll; chart tooltip checked; approval-off preview shows the banner and no quote; `rl.py parity` 44 files, 0 differences.
+**Tool fix found during the build:** `rl.py preview-post` returned only the first item of array fields (services, gallery), because WordPress already takes item 0 of a filtered single meta value. The preview now passes values the way WordPress stores them, and writes the schema graph next to the HTML (`out.html.schema.json`). Earlier previews used no array fields, so their checks stand.
+
+---
+
 ## D-098 · Case Study template: design mockup v1 for review
-**Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S REVIEW (Jamil: "yes, go ahead with the Case Study mockup"; D-077 process)
+**Date:** 4 October 2026 · **Status:** APPROVED, built as D-099 (Jamil: "approved, build the Case Study template"; D-077 process)
 
 **Mockup:** `claude/design-previews/blog-casestudy-template-mockup.html`, published privately (claude.ai artifact "Case Study Template Mockup"). Sample topic: an anonymised pharmaceutical manufacturer whose product pages were blocked from Google. **Every client detail, figure and quote is sample data**: the page banner says so, and the client card, results and quote each carry a "Sample data" tag. No real client result is shown or implied.
 

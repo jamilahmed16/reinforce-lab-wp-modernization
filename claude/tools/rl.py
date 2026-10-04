@@ -233,7 +233,7 @@ $id = 990001; $s = json_decode(base64_decode("%s"), true); $meta = $s["meta"];
 add_filter("wpseo_should_save_indexable", "__return_false"); add_filter("wpseo_frontend_presenters", "__return_empty_array");
 $p = new WP_Post((object)["ID"=>$id,"post_author"=>3,"post_date"=>$s["date"] ?? "2026-09-15 10:00:00","post_date_gmt"=>$s["date"] ?? "2026-09-15 10:00:00","post_modified"=>$s["date"] ?? "2026-09-15 10:00:00","post_modified_gmt"=>$s["date"] ?? "2026-09-15 10:00:00","post_title"=>$s["title"],"post_content"=>$s["body"],"post_excerpt"=>$s["excerpt"] ?? "","post_status"=>"publish","post_type"=>"post","post_name"=>"preview","post_parent"=>0,"menu_order"=>0,"comment_status"=>"closed","ping_status"=>"closed","comment_count"=>0,"guid"=>"","post_mime_type"=>"","filter"=>"raw"]);
 wp_cache_set($id, $p, "posts");
-add_filter("get_post_metadata", function ($v, $oid, $key, $single) use ($id, $meta) { if ((int) $oid !== $id) return $v; if ($key === "") return array_map(function ($x) { return [$x]; }, $meta); if (!isset($meta[$key])) return $single ? "" : []; return $single ? $meta[$key] : [$meta[$key]]; }, 1, 4);
+add_filter("get_post_metadata", function ($v, $oid, $key, $single) use ($id, $meta) { if ((int) $oid !== $id) return $v; if ($key === "") return array_map(function ($x) { return [$x]; }, $meta); if (!isset($meta[$key])) return $single ? "" : []; return [$meta[$key]]; }, 1, 4);
 global $wp_query, $wp_the_query, $post;
 $wp_query = new WP_Query(); $wp_query->query_vars = $wp_query->fill_query_vars([]); $wp_query->posts = [$p]; $wp_query->post = $p; $wp_query->post_count = 1; $wp_query->found_posts = 1;
 $wp_query->is_single = true; $wp_query->is_singular = true; $wp_query->queried_object = $p; $wp_query->queried_object_id = $id; $wp_the_query = $wp_query; $post = $p;
@@ -245,6 +245,7 @@ return ["html" => $html, "schema" => $g];
     open(args[1], 'w', encoding='utf8').write(rv['html'])
     print('written', args[1], len(rv['html']), 'bytes')
     print('schema nodes:', [n['@type'] for n in rv['schema']])
+    json.dump(rv['schema'], open(args[1] + '.schema.json', 'w', encoding='utf8'), indent=1)
     real = [e['message'] for e in errs if 'update_post_' not in e['message']]
     print('php notices from the template:', real or 'none (in-memory query warnings ignored)')
 

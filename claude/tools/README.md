@@ -14,7 +14,7 @@ Run from the repository root. Requires the Novamira CLI (connected to `.online`)
 | `python3 claude/tools/rl.py snapshot` | Exports the database side of the site to `claude/data/online-snapshot/` (pages and posts with content, Yoast meta and `rl_` fields; menus; reading and permalink settings; Yoast settings; categories; plugins; Themer layouts; `rl_` options; the sandbox md5 manifest). Secret-like values are redacted. Run after every change and commit the result. | no |
 | `python3 claude/tools/rl.py backups [--prune-days N]` | Lists deploy backups; with `--prune-days` deletes those older than N days. Every backed-up version is also in git history. | only with prune |
 | `python3 claude/tools/rl.py crawl` | Fetches every published page and flags em or en dashes, emoji, PHP notices, or a missing noindex. | no |
-| `python3 claude/tools/rl.py preview-post spec.json out.html` | Renders a post **in memory** through the live single-post template (nothing is saved, F-003). `spec.json`: `{"title", "excerpt", "body_file" or "body", "meta": {"rl_type": "guide", …}}`. Prints the schema node types. | no |
+| `python3 claude/tools/rl.py preview-post spec.json out.html` | Renders a post **in memory** through the live single-post template (nothing is saved, F-003). `spec.json`: `{"title", "excerpt", "body_file" or "body", "meta": {"rl_type": "guide", …}}`. Prints the schema node types and writes the full graph to `out.html.schema.json`. | no |
 
 ## `shot.mjs`: screenshots and phone width
 
