@@ -20,7 +20,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
-| D-092 | Explainer template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
+| D-093 | Explainer template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Explainer template") | this file |
+| D-092 | Explainer template: design mockup v1 for review | 4 Oct | APPROVED, built as D-093 | this file |
 | D-091 | Comparison template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Comparison template") | this file |
 | D-090 | Comparison template: design mockup v1 for review | 4 Oct | APPROVED, built as D-091 | this file |
 | D-089 | Review template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Review template") | this file |
@@ -149,6 +150,28 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-093 · Explainer template built on `.online` from the approved mockup
+**Date:** 4 October 2026 · **Status:** DONE (Jamil: "approved, build the Explainer template")
+
+**Files:** new `blog/reinforce-post-explainer.php` (added to the loader); `blog/reinforce-post.php` hands Explainer posts to `rl_explainer_render()`; the old explainer boxes, fields and DefinedTerm code were removed from `blog/reinforce-post-types.php` (no posts existed, so no data was affected). The keys `rl_e_term`, `rl_e_definition` and `rl_e_related` are kept.
+
+**How an editor writes an Explainer:**
+- **Headword:** search question, term, abbreviation, word type (default "noun"), also called (comma separated), field.
+- **Definition** (written to be quoted, starting with the term; the term is set in bold automatically) and where it comes from.
+- **Key facts:** `Label | Value | URL` (URL optional; a path such as `/services/...` works).
+- **Three levels:** "In 10 seconds" and "In 1 minute"; the third level ("In depth") is the article body and links to the first section below.
+- **How it works:** up to 5 steps, `Step | What happens`. **It is / It is not** lines. **Example:** what it shows, before and after (`Note | Text`).
+- **Related terms:** up to 4, `Term | One line | Relation | URL`, laid out around the term. The light service CTA shows after the example.
+- **Body:** the full article sits after "How it works". Its H2s are added to "On this page" in the key facts box, together with the fixed sections.
+
+**Behaviour:** "Copy definition" and "Copy" (cite this page) copy to the clipboard, or select the text when the browser refuses. The key facts box stays in view on desktop and sits first after the definition on phones.
+
+**Schema:** DefinedTerm (name, definition, alternate names from the abbreviation and "also called"), and the article's `about` points to it; plus the base BlogPosting, Person and FAQPage.
+
+**Checks:** in-memory preview with the mockup's GEO content (nothing saved, F-003): schema nodes Article/BlogPosting, Person, FAQPage, DefinedTerm; no PHP notices; desktop 1440 and phone 390 with no horizontal scroll; `copy-check.py` 0 issues on the file and the rendered page; `rl.py parity` 41 files, 0 differences; live blog and GEO pages still 390 wide.
 
 ---
 

@@ -75,7 +75,8 @@ lines = [
     '[`blog/reinforce-post-howto.php`](../wp/novamira-sandbox/blog/reinforce-post-howto.php) (How-To), '
     '[`blog/reinforce-post-list.php`](../wp/novamira-sandbox/blog/reinforce-post-list.php) (Best / List), '
     '[`blog/reinforce-post-review.php`](../wp/novamira-sandbox/blog/reinforce-post-review.php) (Review), '
-    '[`blog/reinforce-post-comparison.php`](../wp/novamira-sandbox/blog/reinforce-post-comparison.php) (Comparison).',
+    '[`blog/reinforce-post-comparison.php`](../wp/novamira-sandbox/blog/reinforce-post-comparison.php) (Comparison), '
+    '[`blog/reinforce-post-explainer.php`](../wp/novamira-sandbox/blog/reinforce-post-explainer.php) (Explainer).',
     '',
 ]
 for g in ORDER:
