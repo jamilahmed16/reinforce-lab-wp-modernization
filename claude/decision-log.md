@@ -176,7 +176,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 - **Shared after the middle:** **what it does and does not do** side by side with an honest note, **who it is for and not for**, the light in-article CTA, related articles about the same product, FAQs, sources, author box.
 
 **Rules carried over (D-076):** the disclosure always shows; a status label is required on agent and Search Authority OS posts until O-022 is settled; "What it does not do" is required; the post must target a different search than its product page; schema is Article `about` the Service, **never Review, ratings, Product or Offer markup**.
-**Open item carried over:** the visible label for the "deep dive" subtype is "How it works" (D-076: "deep dive" is on the banned word list); the mockup uses it.
+**Open item carried over:** the first subtype (internal key `deepdive`) is labelled "How it works", because the name first approved is on the banned word list (D-076); the mockup uses "How it works".
 **Checks:** `copy-check.py` 0 issues; all three subtypes at desktop 1440 and phone 390 with no horizontal scroll and no script errors. Fixed before publishing: the subtype switcher showed both status badges at once (a CSS rule lost to a more specific one).
 
 ---
