@@ -71,7 +71,8 @@ lines = [
     'Shared styles: [`core/reinforce-kit.css`](../wp/novamira-sandbox/core/reinforce-kit.css).',
     'Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinforce-post.php) '
     '(all types), [`blog/reinforce-post-types.php`](../wp/novamira-sandbox/blog/reinforce-post-types.php) '
-    '(per-type fields), [`blog/reinforce-post-guide.php`](../wp/novamira-sandbox/blog/reinforce-post-guide.php) (Guide).',
+    '(per-type fields), [`blog/reinforce-post-guide.php`](../wp/novamira-sandbox/blog/reinforce-post-guide.php) (Guide), '
+    '[`blog/reinforce-post-howto.php`](../wp/novamira-sandbox/blog/reinforce-post-howto.php) (How-To).',
     '',
 ]
 for g in ORDER:

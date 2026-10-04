@@ -20,9 +20,10 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-085 | How-To template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the How-To template") | this file |
 | D-084 | Founder bio: drafts for review | 4 Oct | DEFERRED until the blog templates are finished | this file |
 | D-083 | GitHub navigation: README, folder guides, generated site map | 4 Oct | DONE | this file |
-| D-082 | How-To template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
+| D-082 | How-To template: design mockup v1 for review | 4 Oct | APPROVED, built as D-085 | this file |
 | D-081 | Step B, part 2: decision log split into an index, the current month and monthly archives | 4 Oct | DONE | this file |
 | D-080 | Step B, part 1: theme code in folders with one loader | 4 Oct | DONE (Jamil: "yes, do step A and step B one after another") | this file |
 | D-079 | Step A: tools and a database snapshot in the repo | 4 Oct | DONE (Jamil: "yes, do step A and step B one after another") | this file |
@@ -141,6 +142,28 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-085 · How-To template built on `.online` from the approved mockup
+**Date:** 4 October 2026 · **Status:** DONE (Jamil: "approved, build the How-To template")
+
+**Files:** new `blog/reinforce-post-howto.php` (added to the loader after the Guide file); `blog/reinforce-post.php` hands How-To posts to `rl_howto_render()`; the old How-To boxes, fields and schema were removed from `blog/reinforce-post-types.php` (no posts existed, so no data was affected).
+
+**How an editor writes a How-To:**
+- **Every H2 in the body is one step.** Text before the first H2 is the intro. Ordered lists inside a step show as lettered actions (a, b, c). Images with captions show in a screenshot frame. `<kbd>` shows as a key. A paragraph with class `tip` is a Tip box.
+- **Job ticket fields:** Time (minutes), Level, Cost, "Before you start, you need" (one per line), "When you finish".
+- **Step details:** one line per step, in order: `Minutes | Why this step matters | You should see`.
+- **Side panel:** "Avoid these" (one per line), "If something goes wrong" (`Problem | Fix`).
+- **Finish card:** headline (default "Done: all steps complete") and what to do next.
+- **In-article CTA:** service, after which step, headline, one line, button (same light pattern as the Guide). If set after the last step it shows below the finish card.
+
+**Behaviour:** sticky step tracker under the header (pills on desktop, count and line on phones); "Mark step done" turns the node into a check, fills the tracker and the progress bar, and is remembered in the reader's browser only (no data sent anywhere). Two chips only (How-To + category, D-077).
+
+**Schema:** HowTo node built from the steps on the page (name = H2, text = first paragraph, url = `#step-N`), `totalTime`, `tool`, `description` from the excerpt; plus the base BlogPosting, Person and FAQPage.
+
+**Checks:** in-memory preview (nothing saved, F-003) through the live template: schema nodes Article/BlogPosting, Person, FAQPage, HowTo; no PHP notices; desktop 1440 and phone 390 with no horizontal scroll; `copy-check.py` 0 issues on the file and the rendered page; `rl.py parity` 37 files, 0 differences; live blog, About and Technical SEO pages still 390 wide.
+**Fixed during the build:** the theme's Bootstrap styles `.progress` and `.mark`, so those classes were renamed (`h-prog`, `h-mark`); lettered actions no longer break around inline elements such as `<kbd>`.
 
 ---
 

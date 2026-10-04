@@ -163,7 +163,7 @@ function rl_howto_render($c) {
           <?php if ($s['why'] !== '') { ?><p class="why"><b>Why:</b> <?php echo esc_html($s['why']); ?></p><?php } ?>
           <div class="h-prose"><?php echo $s['html']; ?></div>
           <?php if ($s['see'] !== '') { ?><div class="see"><span class="lb">You should see</span><span><?php echo esc_html($s['see']); ?></span></div><?php } ?>
-          <label class="mark"><input type="checkbox" data-step="<?php echo (int) $k; ?>">Mark step <?php echo (int) $k; ?> done</label>
+          <label class="h-mark"><input type="checkbox" data-step="<?php echo (int) $k; ?>">Mark step <?php echo (int) $k; ?> done</label>
         </section>
         <?php if ($cta && $cta['after'] === $k && $k < $n) { ?>
         <aside class="h-icta" aria-label="Reinforce Lab service">
@@ -188,7 +188,7 @@ function rl_howto_render($c) {
 
     <?php if ($n) { ?>
     <aside class="h-side" aria-label="Help while you work">
-      <div class="progress"><p class="t">Your progress</p><div class="bar"><i data-h="pbar"></i></div><span data-h="ptxt">0 of <?php echo (int) $n; ?> steps done</span></div>
+      <div class="h-prog"><p class="t">Your progress</p><div class="bar"><i data-h="pbar"></i></div><span data-h="ptxt">0 of <?php echo (int) $n; ?> steps done</span></div>
       <?php if ($avoid) { ?>
       <div class="avoid"><p class="t">Avoid these</p><ul><?php foreach ($avoid as $a) echo '<li><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="square"/></svg><span>' . esc_html($a) . '</span></li>'; ?></ul></div>
       <?php } ?>
@@ -334,7 +334,7 @@ add_action('wp_head', function () {
 .rl-howto input[type=checkbox]{appearance:none;-webkit-appearance:none;width:16px;height:16px;border:1px solid var(--line-2);background:var(--bg);margin:3px 0 0;flex:none;display:grid;place-items:center;cursor:pointer;border-radius:0}
 .rl-howto input[type=checkbox]:checked{background:var(--red);border-color:var(--red-2)}
 .rl-howto input[type=checkbox]:checked::after{content:"";width:8px;height:4px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg) translate(1px,-1px)}
-.rl-howto .t-result p{margin:0;color:var(--ink);font-size:15.5px}
+.rl-howto .t-result p:not(.t-label){margin:0;color:var(--ink);font-size:15.5px}
 .rl-howto .h-feat{margin-top:0;margin-bottom:clamp(30px,4vw,48px)}
 .rl-howto .h-feat img{display:block;width:100%;height:auto;border:1px solid var(--line)}
 .rl-howto .h-tracker{position:sticky;top:72px;z-index:6;background:rgba(18,16,17,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-block:1px solid var(--line-2)}
@@ -367,15 +367,15 @@ add_action('wp_head', function () {
 .rl-howto .h-prose ul{padding-left:1.2em}
 .rl-howto .h-prose ul li::marker{color:var(--red-3)}
 .rl-howto .h-prose ol{margin:0 0 1em;padding:0;list-style:none;counter-reset:d}
-.rl-howto .h-prose ol>li{counter-increment:d;display:grid;grid-template-columns:30px 1fr;gap:8px;padding:9px 0;margin:0;border-top:1px solid var(--line);font-size:16.5px}
+.rl-howto .h-prose ol>li{counter-increment:d;position:relative;padding:9px 0 9px 38px;margin:0;border-top:1px solid var(--line);font-size:16.5px}
 .rl-howto .h-prose ol>li:first-child{border-top:0}
-.rl-howto .h-prose ol>li::before{content:counter(d,lower-alpha);font-family:var(--f-mono);font-size:12px;color:var(--red-3);padding-top:3px}
-.rl-howto kbd{font-family:var(--f-mono);font-size:.88em;color:var(--ink);background:var(--panel-2,var(--panel));border:1px solid var(--line-2);border-bottom-width:2px;padding:1px 6px}
+.rl-howto .h-prose ol>li::before{content:counter(d,lower-alpha);position:absolute;left:0;top:13px;font-family:var(--f-mono);font-size:12px;line-height:1.4;color:var(--red-3)}
+.rl-howto kbd{display:inline;white-space:nowrap;font-family:var(--f-mono);font-size:.88em;color:var(--ink);background:var(--panel-2,var(--panel));border:1px solid var(--line-2);border-bottom-width:2px;padding:1px 6px}
 .rl-howto .h-prose code{font-family:var(--f-mono);font-size:.9em;color:var(--ink);background:var(--panel);padding:1px 5px}
 .rl-howto .h-prose figure:not(.wp-block-table){margin:18px 0;border:1px solid var(--line-2);background:var(--bg-2)}
 .rl-howto .h-prose figure:not(.wp-block-table)::before{content:"";display:block;height:27px;border-bottom:1px solid var(--line);background-image:linear-gradient(var(--line-2),var(--line-2)),linear-gradient(var(--line-2),var(--line-2)),linear-gradient(var(--line-2),var(--line-2));background-size:8px 8px;background-repeat:no-repeat;background-position:12px 9px,26px 9px,40px 9px}
 .rl-howto .h-prose figure img{display:block;width:100%;height:auto}
-.rl-howto .h-prose figcaption{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);padding:10px 12px;border-top:1px solid var(--line);margin:0}
+.rl-howto .h-prose figcaption{text-align:left;font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);padding:10px 12px;border-top:1px solid var(--line);margin:0}
 .rl-howto .h-prose .tscroll{overflow-x:auto;max-width:100%}
 .rl-howto .h-prose table{width:100%;border-collapse:collapse;font-size:15px}
 .rl-howto .h-prose th,.rl-howto .h-prose td{border:1px solid var(--line-2);padding:10px 12px;text-align:left;vertical-align:top}
@@ -395,9 +395,9 @@ add_action('wp_head', function () {
 .rl-howto .why b{font-weight:600}
 .rl-howto .see{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;border:1px solid rgba(63,163,107,.45);background:rgba(63,163,107,.07);padding:14px 16px;margin:18px 0 14px;font-size:15.5px;color:var(--ink)}
 .rl-howto .see .lb{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ok);padding-top:3px;white-space:nowrap}
-.rl-howto .mark{display:inline-flex;align-items:center;gap:10px;cursor:pointer;font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);border:1px solid var(--line-2);padding:9px 14px;background:var(--bg-2)}
-.rl-howto .mark input{margin:0;width:15px;height:15px}
-.rl-howto .mark:has(input:checked){color:var(--ink);border-color:var(--red-line)}
+.rl-howto .h-mark{display:inline-flex;align-items:center;gap:10px;cursor:pointer;font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);border:1px solid var(--line-2);padding:9px 14px;background:var(--bg-2)}
+.rl-howto .h-mark input{margin:0;width:15px;height:15px}
+.rl-howto .h-mark:has(input:checked){color:var(--ink);border-color:var(--red-line)}
 .rl-howto .h-icta{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 28px;align-items:center;margin:0 0 46px;padding:20px 0 20px 20px;border-top:1px solid var(--red-line);border-bottom:1px solid var(--red-line);border-left:3px solid var(--red-2);background:linear-gradient(90deg,rgba(153,0,0,.12),transparent 70%)}
 .rl-howto .h-finish + .h-icta{margin:36px 0 0}
 .rl-howto .h-icta .lbl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 6px}
@@ -414,10 +414,10 @@ add_action('wp_head', function () {
 .rl-howto .h-finish p{margin:0;color:var(--ink-dim)}
 .rl-howto .h-side{display:grid;gap:22px;align-content:start;align-self:start;position:sticky;top:150px}
 .rl-howto .h-side .t{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 12px}
-.rl-howto .progress{border:1px solid var(--line-2);background:var(--bg-2);padding:16px 20px}
-.rl-howto .progress .bar{height:4px;background:var(--line-2);margin:10px 0 8px}
-.rl-howto .progress .bar i{display:block;height:100%;width:0;background:var(--red-3);transition:width .25s}
-.rl-howto .progress span{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint)}
+.rl-howto .h-prog{border:1px solid var(--line-2);background:var(--bg-2);padding:16px 20px}
+.rl-howto .h-prog .bar{height:4px;background:var(--line-2);margin:10px 0 8px}
+.rl-howto .h-prog .bar i{display:block;height:100%;width:0;background:var(--red-3);transition:width .25s}
+.rl-howto .h-prog span{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint)}
 .rl-howto .avoid{border:1px solid rgba(226,59,59,.45);background:rgba(153,0,0,.08);padding:18px 20px}
 .rl-howto .avoid ul{list-style:none;margin:0;padding:0}
 .rl-howto .avoid li{display:grid;grid-template-columns:18px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--line);font-size:14.5px;color:var(--ink-dim)}
@@ -468,6 +468,6 @@ add_action('wp_head', function () {
   .rl-howto .h-prose p,.rl-howto .h-prose li,.rl-howto .h-prose ol>li{font-size:16px}
   .rl-howto .see{grid-template-columns:1fr;gap:6px}
 }
-@media(prefers-reduced-motion:reduce){.rl-howto .progress .bar i,.rl-howto .node,.rl-howto .h-tracker .tbar{transition:none}}
+@media(prefers-reduced-motion:reduce){.rl-howto .h-prog .bar i,.rl-howto .node,.rl-howto .h-tracker .tbar{transition:none}}
 </style>
 <?php }, 24);
