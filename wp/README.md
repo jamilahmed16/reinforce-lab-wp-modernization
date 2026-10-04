@@ -13,6 +13,8 @@ Novamira loads **top-level `*.php` files only**, so there is one top-level file,
 | `industries/` | The Industries hub and the 8 industry pages (one file) |
 | `blog/` | Blog archive template, single post template, post-type sections, and one file per approved post-type design (`reinforce-post-guide.php`, …) |
 
+Which file builds which page (with page IDs and URLs): [`claude/site-map.md`](../claude/site-map.md).
+
 ## Adding a file
 
 1. Put it in the right folder, named `reinforce-<name>.php`.

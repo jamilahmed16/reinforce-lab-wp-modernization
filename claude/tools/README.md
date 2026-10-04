@@ -30,6 +30,10 @@ The dev-site proxy drops random assets, so static assets are cached in `claude/t
 
 `python3 claude/tools/copy-check.py [files…]`: no em or en dashes, no emoji or emoji-like symbols, no banned AI words. Must report 0 issues before anything ships.
 
+## `site-map.py`: page, URL and file
+
+`python3 claude/tools/site-map.py` rewrites `claude/site-map.md` from the last snapshot: every page with its ID, URL, status, the file that renders it and its SEO title. Run it after `rl.py snapshot`.
+
 ## Style fingerprint (visual-regression check for CSS refactors)
 
 Records the computed style and box of every element inside each page's wrapper at 1440 px and 390 px, then diffs two runs. Used for D-044 (CSS merge).
@@ -49,5 +53,5 @@ Add pages to the `pages` map as they are built. It caches static assets for dete
 2. `copy-check.py`, then `php -l` on the file.
 3. `rl.py deploy <file>` (or `--create`).
 4. Check: `shot.mjs width …`, screenshots, and `rl.py crawl` for site-wide copy changes.
-5. `rl.py snapshot` if pages, menus, Yoast or settings changed.
+5. `rl.py snapshot` if pages, menus, Yoast or settings changed, then `site-map.py`.
 6. Record the change in `claude/decision-log.md`, commit and push.

@@ -152,7 +152,8 @@ Decisions and findings must be written down or they are lost — a separate Cowo
 | Path | Contains |
 |---|---|
 | `wp/novamira-sandbox/` | All theme code, mirroring `.online` file for file: `reinforce-loader.php` plus `core/`, `pages/`, `saos/`, `services/`, `industries/`, `blog/` (see `wp/README.md`) |
-| `claude/tools/` | `rl.py` (deploy, parity, snapshot, backups, crawl, preview-post), `shot.mjs`, `copy-check.py`, style fingerprint (see `claude/tools/README.md`) |
+| `README.md`, `claude/site-map.md` | Repository home and navigation; every page with its ID, URL and file (regenerate with `site-map.py`) |
+| `claude/tools/` | `rl.py` (deploy, parity, snapshot, backups, crawl, preview-post), `shot.mjs`, `copy-check.py`, `site-map.py`, style fingerprint (see `claude/tools/README.md`) |
 | `claude/data/online-snapshot/` | The database side of `.online` (pages, SEO meta, menus, settings). Refresh with `rl.py snapshot` after every change |
 | `claude/decision-log.md` | Index of every decision and finding, open items, and the current month in full. Earlier months are in `claude/decisions/` |
 | `claude/design-previews/` | Approved design mockups |
