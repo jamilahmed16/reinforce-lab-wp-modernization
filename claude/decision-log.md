@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-096 | Updates template: design mockup v1 for review | 4 Oct | AWAITING REVIEW | this file |
 | D-095 | Industry template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Industry template") | this file |
 | D-094 | Industry template: design mockup v1 for review | 4 Oct | APPROVED, built as D-095 | this file |
 | D-093 | Explainer template built on `.online` from the approved mockup | 4 Oct | DONE (Jamil: "approved, build the Explainer template") | this file |
@@ -152,6 +153,27 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-096 · Updates template: design mockup v1 for review
+**Date:** 4 October 2026 · **Status:** AWAITING JAMIL'S REVIEW (Jamil: "yes, go ahead with the Updates mockup"; D-077 process)
+
+**Mockup:** `claude/design-previews/blog-updates-template-mockup.html`, published privately (claude.ai artifact "Updates Template Mockup"). Sample topic: a placeholder "October 2026 core update". The update, dates and the official statement are placeholders, marked as such on the page; nothing in it is presented as real news.
+
+**Design: a news desk bulletin**, different from the seven built templates:
+- **Dateline bar:** two chips (Update + category), a **status pill** (Rolling out, Complete, Confirmed or Unconfirmed; Rolling out pulses gently, still with reduced motion), the official source and "Last checked" date and time.
+- **Rollout timeline:** four stages (e.g. Announced, Rolling out, Complete, Review results) with the current stage marked "Now" and expected ones dimmed.
+- **The update in three parts:** what changed, what it means, what to do.
+- **Sites to watch:** each site type with a watch level (Watch closely, Watch, Lower risk) and a note, plus a line saying it is our reading, not Google's statement.
+- **What to do, and when:** Now, This week, Later.
+- **What Google said:** the official statement quoted word for word, with date and link (the template will only show it when the editor pastes the exact words).
+- **The light in-article service CTA**, then the in-depth body.
+- **Live log** beside the article (first on phones): timestamped changes to the post, newest first, with corrections tagged.
+- FAQs, sources, author box.
+
+**When built:** the "Last checked" time and the live log make freshness visible; the post's dateModified follows the latest log entry. No NewsArticle markup unless Jamil wants it (BlogPosting stays, as for every type).
+**Checks:** `copy-check.py` 0 issues; desktop 1440 and phone 390 with no horizontal scroll. Fixed before publishing: the live log entries were squeezed into a narrow column; status dots are square (zero rounded corners, D-013).
 
 ---
 

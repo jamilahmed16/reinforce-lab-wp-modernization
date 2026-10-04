@@ -1,0 +1,266 @@
+<title>Updates Template Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a news desk bulletin. A dateline header with a status pill and the official source, the rollout timeline, the update in brief (changed / means / do), who is affected with a watch level, an action list by when, the official statement, and a live log of changes to this post beside the article. Dark only: it is the Reinforce Lab site (D-013). */
+:root{
+  --bg:#121011; --bg-2:#0e0c0d; --panel:#1a1617; --panel-2:#211c1d;
+  --ink:#f2eeee; --ink-dim:#b8b0b1; --ink-faint:#7f7778;
+  --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
+  --red:#990000; --red-2:#c21a1a; --red-3:#e23b3b; --red-line:rgba(226,59,59,.38); --ok:#3fa36b; --amber:#d39b3a;
+  --f-display:"Oswald","Arial Narrow",sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1280px; --g:clamp(16px,3vw,32px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink-dim);font-family:var(--f-body);font-size:16px;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;background-position:-1px -1px}
+a{color:var(--ink)}
+:focus-visible{outline:2px solid var(--red-3);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--g)}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);margin:0;line-height:1.04;text-wrap:balance}
+.ic{width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square}
+
+.mocknote{background:var(--red);color:#fff;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-align:center;padding:7px var(--g)}
+.chrome{border-bottom:1px solid var(--line-2);background:rgba(18,16,17,.9)}
+.chrome .wrap{display:flex;justify-content:space-between;align-items:center;height:62px;gap:16px}
+.logo{font-family:var(--f-display);font-weight:700;letter-spacing:.04em;color:var(--ink);font-size:18px;text-transform:uppercase}
+.logo b{color:var(--red-3)}
+.chrome nav{display:flex;gap:22px;font-family:var(--f-display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.chrome nav span.on{color:var(--ink)}
+.cta-s{font-family:var(--f-display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid var(--red-2);padding:9px 14px;background:rgba(153,0,0,.35)}
+
+/* dateline header */
+.crumbs{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);padding-top:26px}
+.crumbs a{color:var(--ink-faint);text-decoration:none}
+.desk{padding-block:clamp(22px,3vw,34px) 0}
+.ticker{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;border-block:1px solid var(--line-2);padding:10px 0;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
+.kind{color:#fff;background:var(--red);padding:5px 10px;letter-spacing:.2em}
+.cat{color:var(--ink-dim);border:1px solid var(--line-2);padding:4px 10px;letter-spacing:.16em}
+.status{display:inline-flex;align-items:center;gap:8px;color:var(--amber);border:1px solid rgba(211,155,58,.5);padding:4px 10px}
+.status i{width:8px;height:8px;background:var(--amber);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.25}}
+.ticker .sp{flex:1}
+.ticker b{color:var(--ink);font-weight:500}
+.desk h1{font-size:clamp(34px,5vw,64px);line-height:1;max-width:1000px;margin-top:22px}
+.stand{font-size:clamp(17px,1.5vw,19px);line-height:1.55;max-width:720px;margin:16px 0 0}
+.byline{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:20px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);align-items:center}
+.byline .who{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.av{width:34px;height:34px;border:1px solid var(--red-line);display:grid;place-items:center;font-family:var(--f-display);font-size:15px;color:var(--ink);background:var(--bg-2)}
+.byline b{color:var(--ink-dim);font-weight:500}
+.byline .fresh,.byline .fresh b{color:var(--ok)}
+
+/* rollout timeline */
+.roll{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:26px;border:1px solid var(--line-2);background:var(--bg-2)}
+.rs{padding:14px 16px;border-right:1px solid var(--line);position:relative;display:grid;gap:4px}
+.rs:last-child{border-right:0}
+.rs::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--line-2)}
+.rs.done::before{background:var(--red-3)}
+.rs.now::before{background:linear-gradient(90deg,var(--red-3) 50%,var(--line-2) 50%)}
+.rs .s{font-family:var(--f-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+.rs.now .s{color:var(--amber)}
+.rs b{font-family:var(--f-display);font-size:18px;text-transform:uppercase;color:var(--ink);font-weight:500}
+.rs.next b{color:var(--ink-faint)}
+.rs time{font-family:var(--f-mono);font-size:12px;color:var(--ink-dim)}
+
+/* main + live log */
+.main{display:grid;grid-template-columns:minmax(0,780px) minmax(0,1fr);gap:clamp(30px,5vw,64px);padding-block:clamp(34px,5vw,52px) 10px;align-items:start}
+.answer{border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px 24px;margin-bottom:24px}
+.answer .t,.sec-h span{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 8px}
+.answer p{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:46px 0 16px}
+.sec-h h2{font-size:clamp(24px,2.8vw,30px)}
+.prose p{font-size:17.5px;line-height:1.75;margin:0 0 1.1em}
+.prose strong{color:var(--ink);font-weight:600}
+
+/* brief */
+.brief{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.bf{background:var(--panel);padding:18px 18px 20px;display:grid;gap:8px;align-content:start}
+.bf .n{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3)}
+.bf h3{font-size:18px}
+.bf p{margin:0;font-size:15px}
+.bf ul{margin:0;padding-left:1.1em;font-size:15px} .bf li{padding:2px 0} .bf li::marker{color:var(--red-3)}
+
+/* affected */
+.aff{border:1px solid var(--line-2)}
+.ar{display:grid;grid-template-columns:minmax(0,1fr) 150px minmax(0,1.2fr);gap:16px;align-items:center;padding:14px 18px;border-top:1px solid var(--line)}
+.ar:first-child{border-top:0}
+.ar b{color:var(--ink);font-weight:600;font-size:15.5px}
+.ar p{margin:0;font-size:14.5px}
+.lvl{display:grid;gap:5px}
+.lvl span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase}
+.lvl .m{display:flex;gap:3px} .lvl .m i{flex:1;height:6px;background:var(--line-2)}
+.lvl.hi span{color:var(--red-3)} .lvl.hi .m i{background:var(--red-3)}
+.lvl.md span{color:var(--amber)} .lvl.md .m i:nth-child(-n+2){background:var(--amber)}
+.lvl.lo span{color:var(--ok)} .lvl.lo .m i:first-child{background:var(--ok)}
+.anote{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);margin-top:8px}
+
+/* actions */
+.acts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.when{border:1px solid var(--line-2);background:var(--bg-2)}
+.when .wh{display:flex;justify-content:space-between;align-items:baseline;padding:12px 16px;border-bottom:1px solid var(--line-2)}
+.when .wh b{font-family:var(--f-display);font-size:18px;text-transform:uppercase;color:var(--ink);font-weight:500}
+.when .wh span{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.when.now{border-color:var(--red-line)} .when.now .wh{background:linear-gradient(90deg,rgba(153,0,0,.25),transparent)}
+.when ul{list-style:none;margin:0;padding:6px 16px 12px}
+.when li{display:grid;grid-template-columns:18px 1fr;gap:8px;padding:8px 0;border-top:1px solid var(--line);font-size:14.5px}
+.when li:first-child{border-top:0}
+.when li::before{content:"";width:12px;height:12px;border:1px solid var(--line-2);margin-top:5px}
+.when.now li::before{border-color:var(--red-3)}
+
+/* official */
+.official{border:1px solid var(--line-2);background:var(--panel);display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;padding:22px 24px;align-items:start}
+.official .mk{font-family:var(--f-display);font-size:64px;line-height:.7;color:var(--red-3)}
+.official blockquote{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
+.official .by{margin:12px 0 0;font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint)}
+.official .by a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--red-line)}
+
+/* live log */
+.log{position:sticky;top:20px;border:1px solid var(--line-2);background:var(--panel)}
+.log .lh{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line-2);background:var(--bg-2)}
+.log .lh b{font-family:var(--f-display);font-size:19px;text-transform:uppercase;color:var(--ink);font-weight:600;display:flex;align-items:center;gap:10px}
+.log .lh b i{width:8px;height:8px;background:var(--red-3);animation:pulse 1.6s ease-in-out infinite}
+.log .lh span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+.log ol{list-style:none;margin:0;padding:6px 18px 10px;position:relative}
+.log li{display:grid;grid-template-columns:14px minmax(0,1fr);gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.log li:first-child{border-top:0}
+.log li::before{content:"";width:9px;height:9px;margin-top:6px;border:2px solid var(--line-2)}
+.log li.new::before{border-color:var(--red-3);background:var(--red-3)}
+.log time{display:block;font-family:var(--f-mono);font-size:11px;color:var(--ink-faint)}
+.log li.new time{color:var(--red-3)}
+.log p{margin:2px 0 0;font-size:14px;color:var(--ink)}
+.log .tag{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);border:1px solid rgba(211,155,58,.45);padding:0 5px;margin-left:6px}
+.log .ft{border-top:1px solid var(--line-2);padding:12px 18px;font-size:13px}
+.log .ft a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--line-2)}
+
+/* CTA */
+.icta{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 28px;align-items:center;margin:40px 0 0;padding:20px 0 20px 20px;border-top:1px solid var(--red-line);border-bottom:1px solid var(--red-line);border-left:3px solid var(--red-2);background:linear-gradient(90deg,rgba(153,0,0,.12),transparent 70%)}
+.icta .lbl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 6px}
+.icta .hd{font-family:var(--f-display);font-weight:600;text-transform:uppercase;font-size:clamp(19px,2vw,22px);line-height:1.15;color:var(--ink);margin:0 0 6px}
+.icta .csub{margin:0;font-size:15px}
+.act2{display:grid;gap:8px;justify-items:start;padding-right:20px}
+.go2{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.07em;font-size:14px;text-decoration:none;color:#fff;background:var(--red);border:1px solid var(--red-2);padding:12px 18px;white-space:nowrap}
+.alt{font-size:13.5px;color:var(--ink-faint);text-decoration:none;border-bottom:1px solid var(--line-2)}
+
+/* back matter */
+.back{border-top:1px solid var(--line-2);margin-top:50px;padding-block:44px 10px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
+.back .sec-h{margin-top:0}
+.faq details{border:1px solid var(--line);background:var(--panel);margin-bottom:8px}
+.faq summary{cursor:pointer;list-style:none;padding:15px 18px;font-family:var(--f-display);text-transform:uppercase;font-size:15px;color:var(--ink);display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red-3);font-family:var(--f-mono)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:0;padding:0 18px 15px;font-size:15px}
+.src ol{margin:0;padding-left:1.4em;font-size:14.5px} .src li{padding:6px 0;color:var(--ink-faint)}
+.src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.author .av{width:72px;height:72px;font-size:28px}
+.author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
+.author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}
+.author p{margin:0 0 8px;font-size:15px}
+
+@media(max-width:1000px){
+  .main{grid-template-columns:minmax(0,1fr)}
+  .log{position:static;order:-1}
+  .acts{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .chrome nav{display:none}
+  .ticker .sp{display:none}
+  .roll{grid-template-columns:1fr 1fr}
+  .rs:nth-child(2){border-right:0} .rs:nth-child(n+3){border-top:1px solid var(--line)}
+  .brief{grid-template-columns:1fr}
+  .ar{grid-template-columns:minmax(0,1fr) 120px;gap:8px 14px} .ar p{grid-column:1/-1}
+  .official{grid-template-columns:1fr} .official .mk{font-size:48px}
+  .icta{grid-template-columns:1fr;padding-left:16px} .act2{padding-right:16px}
+  .back{grid-template-columns:1fr}
+  .author{grid-template-columns:1fr}
+  .prose p{font-size:16.5px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.status i,.log .lh b i{animation:none}}
+</style>
+
+<div class="mocknote">DESIGN MOCKUP · UPDATES TEMPLATE · the update, dates and statement are placeholders for layout review</div>
+<header class="chrome"><div class="wrap"><span class="logo">Reinforce <b>/</b> Lab</span><nav aria-label="Site (mockup)"><span>Search Authority OS</span><span>Solutions</span><span>Industries</span><span>Packages</span><span class="on">Blog</span><span>About</span><span>Contact</span></nav><span class="cta-s">Get your diagnostic</span></div></header>
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="#">Home</a> / <a href="#">Blog</a> / <a href="#">Search Updates</a> / October 2026 core update</nav>
+  <section class="desk">
+    <div class="ticker"><span class="kind">Update</span><span class="cat">Search Updates</span><span class="status"><i aria-hidden="true"></i>Rolling out</span><span class="sp"></span><span>Source <b>Google Search Central</b></span><span>Last checked <b>10 Oct 2026, 14:00 UTC</b></span></div>
+    <h1>Google's October 2026 core update: what changed and what to do</h1>
+    <p class="stand">Google started rolling out a core update on 8 October. Here is what Google has said, which sites to watch, and what to do while it rolls out.</p>
+    <div class="byline"><span class="who"><span class="av" aria-hidden="true">J</span>Jamil Ahmed</span><span>Published <b>8 Oct 2026</b></span><span class="fresh">Updated <b>10 Oct 2026</b></span></div>
+
+    <div class="roll" aria-label="Rollout">
+      <div class="rs done"><span class="s">Done</span><b>Announced</b><time datetime="2026-10-08">8 Oct 2026</time></div>
+      <div class="rs now"><span class="s">Now</span><b>Rolling out</b><time>Started 8 Oct</time></div>
+      <div class="rs next"><span class="s">Expected</span><b>Complete</b><time>About 2 weeks</time></div>
+      <div class="rs next"><span class="s">Then</span><b>Review results</b><time>1 week after</time></div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <div class="main">
+    <article>
+      <div class="answer"><p class="t">Short answer</p><p>A core update changes how Google ranks pages across all topics. Do not make big changes while it rolls out. Note your rankings now, wait until Google says it is complete, then compare and fix pages that dropped.</p></div>
+
+      <div class="sec-h" id="brief"><span>In brief</span><h2>The update in three parts</h2></div>
+      <div class="brief">
+        <div class="bf"><span class="n">01 · What changed</span><h3>Ranking systems updated</h3><p>Google updated several core ranking systems. It applies to all sites and languages.</p></div>
+        <div class="bf"><span class="n">02 · What it means</span><h3>Rankings may move</h3><p>Some pages will rise and others fall. A drop does not mean a penalty.</p></div>
+        <div class="bf"><span class="n">03 · What to do</span><h3>Watch, then act</h3><ul><li>Record rankings today</li><li>Wait for completion</li><li>Improve pages that dropped</li></ul></div>
+      </div>
+
+      <div class="sec-h" id="who"><span>Who is affected</span><h2>Sites to watch</h2></div>
+      <div class="aff">
+        <div class="ar"><b>Health and finance sites</b><div class="lvl hi"><span>Watch closely</span><span class="m" aria-hidden="true"><i></i><i></i><i></i></span></div><p>Core updates often move pages where accuracy matters most.</p></div>
+        <div class="ar"><b>Sites with thin or copied pages</b><div class="lvl md"><span>Watch</span><span class="m" aria-hidden="true"><i></i><i></i><i></i></span></div><p>Pages that add little beyond other results tend to lose ground.</p></div>
+        <div class="ar"><b>Sites with original, expert content</b><div class="lvl lo"><span>Lower risk</span><span class="m" aria-hidden="true"><i></i><i></i><i></i></span></div><p>Still worth checking, but less likely to see large drops.</p></div>
+      </div>
+      <p class="anote">Our reading of past core updates, not a statement from Google.</p>
+
+      <div class="sec-h" id="do"><span>Your next steps</span><h2>What to do, and when</h2></div>
+      <div class="acts">
+        <div class="when now"><div class="wh"><b>Now</b><span>Today</span></div><ul><li>Export rankings and traffic for your top pages</li><li>Pause large site changes</li></ul></div>
+        <div class="when"><div class="wh"><b>This week</b><span>During rollout</span></div><ul><li>Check Search Console daily</li><li>Note which page types move</li></ul></div>
+        <div class="when"><div class="wh"><b>Later</b><span>After it completes</span></div><ul><li>Compare before and after</li><li>Improve pages that dropped</li></ul></div>
+      </div>
+
+      <div class="sec-h" id="official"><span>Official source</span><h2>What Google said</h2></div>
+      <figure class="official">
+        <span class="mk" aria-hidden="true">&ldquo;</span>
+        <div><blockquote>Placeholder for Google's exact statement, quoted word for word from the official announcement.</blockquote><figcaption class="by">Google Search Central, 8 Oct 2026 · <a href="#">Read the announcement</a></figcaption></div>
+      </figure>
+
+      <aside class="icta" aria-label="Reinforce Lab service"><div><p class="lbl">Reinforce Lab service · SEO &amp; AI Search Audit</p><p class="hd">Rankings dropped after the update?</p><p class="csub">We compare your pages with the ones that gained, and tell you what to fix first.</p></div><div class="act2"><a class="go2" href="#">See how it works &rarr;</a><a class="alt" href="#">Or get a free diagnostic first</a></div></aside>
+
+      <div class="sec-h"><span>In depth</span><h2>How core updates work</h2></div>
+      <div class="prose"><p>Core updates are broad changes to how Google judges content. They are not aimed at one site or one tactic, which is why <strong>there is no single fix</strong>. Pages that drop usually need to be more useful than the pages that now rank above them.</p></div>
+    </article>
+
+    <aside class="log" aria-label="Live updates to this post">
+      <div class="lh"><b><i aria-hidden="true"></i>Live log</b><span>Newest first</span></div>
+      <ol>
+        <li class="new"><div><time datetime="2026-10-10T14:00Z">10 Oct, 14:00 UTC</time><p>Still rolling out. No change to Google's guidance.</p></div></li>
+        <li><div><time datetime="2026-10-09T09:30Z">9 Oct, 09:30 UTC</time><p>Added the "Who is affected" section.</p></div></li>
+        <li><div><time datetime="2026-10-08T18:10Z">8 Oct, 18:10 UTC</time><p>Corrected the start date.<span class="tag">Correction</span></p></div></li>
+        <li><div><time datetime="2026-10-08T17:00Z">8 Oct, 17:00 UTC</time><p>First published after Google's announcement.</p></div></li>
+      </ol>
+      <div class="ft"><a href="#official">Official source</a></div>
+    </aside>
+  </div>
+
+  <section class="back" aria-label="Questions and sources">
+    <div class="faq"><div class="sec-h"><span>Questions</span><h2>FAQs</h2></div>
+      <details open><summary>Should I change my site during a core update?</summary><p>Avoid big changes until the rollout is complete, so you can see what the update did on its own.</p></details>
+      <details><summary>How long do core updates take?</summary><p>Google usually says when an update starts and when it is complete. Past core updates have taken about two weeks.</p></details>
+    </div>
+    <div class="src"><div class="sec-h"><span>Evidence</span><h2>Sources</h2></div>
+      <ol><li><a href="#">Google Search Status Dashboard</a></li><li><a href="#">Google Search Central, Core updates and your site</a></li></ol>
+    </div>
+  </section>
+
+  <aside class="author" aria-label="About the author"><span class="av" aria-hidden="true">J</span><div><p class="nm">Jamil Ahmed</p><p class="role">Founder and CEO, Reinforce Lab</p><p>Pharmacist, SEO and AI search consultant, and Semrush Ambassador.</p></div></aside>
+</div>
