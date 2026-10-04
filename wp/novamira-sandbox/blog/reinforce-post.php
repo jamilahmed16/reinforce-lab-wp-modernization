@@ -259,6 +259,7 @@ function rl_post_output() {
         if ($d['type'] === 'industry' && function_exists('rl_industry_render')) { rl_industry_render(compact('id', 'd', 'body', 'toc', 'mins', 'blog_url', 'cat', 'aname', 'founder', 'bio', 'about', 'u')); continue; }
         if ($d['type'] === 'updates' && function_exists('rl_updates_render')) { rl_updates_render(compact('id', 'd', 'body', 'toc', 'mins', 'blog_url', 'cat', 'aname', 'founder', 'bio', 'about', 'u')); continue; }
         if ($d['type'] === 'casestudy' && function_exists('rl_casestudy_render')) { rl_casestudy_render(compact('id', 'd', 'body', 'toc', 'mins', 'blog_url', 'cat', 'aname', 'founder', 'bio', 'about', 'u')); continue; }
+        if ($d['type'] === 'research' && function_exists('rl_research_render')) { rl_research_render(compact('id', 'd', 'body', 'toc', 'mins', 'blog_url', 'cat', 'aname', 'founder', 'bio', 'about', 'u')); continue; }
         ?>
 <div class="rl-page rl-post">
 

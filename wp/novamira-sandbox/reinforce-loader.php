@@ -16,6 +16,7 @@ foreach ([
     'services/reinforce-automation.php',
     'blog/reinforce-blog.php',
     'blog/reinforce-post-casestudy.php',
+    'blog/reinforce-post-research.php',
     'pages/reinforce-contact.php',
     'services/reinforce-content.php',
     'saos/reinforce-diagnostic.php',

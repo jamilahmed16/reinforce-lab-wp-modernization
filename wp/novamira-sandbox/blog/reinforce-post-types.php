@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - Post type sections
- * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide, How-To, Best / List, Review, Comparison, Explainer, Industry, Updates and Case Study have their own design files (reinforce-post-guide.php, -howto.php, -list.php, -review.php, -comparison.php, -explainer.php, -industry.php, -updates.php, -casestudy.php).
+ * Description: The sections each article type adds to the single post template (D-074, D-076). Fields are an ACF local group whose fields show only for their type. Renders through rl_post_type_sections_before/after (reinforce-post.php) and extends the post schema. Opinion and Checklist use the base only for now. Guide, How-To, Best / List, Review, Comparison, Explainer, Industry, Updates, Case Study and Research have their own design files (reinforce-post-guide.php, -howto.php, -list.php, -review.php, -comparison.php, -explainer.php, -industry.php, -updates.php, -casestudy.php, -research.php).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -54,11 +54,7 @@ add_action('acf/init', function () {
             // Industry fields live in reinforce-post-industry.php (D-077)
             // Updates fields live in reinforce-post-updates.php (D-077)
             // Case Study fields and the approval guard live in reinforce-post-casestudy.php (D-077)
-            // Research
-            $ta('rl_rs_findings', 'Key findings', 'research', 'One per line.', 5),
-            $ta('rl_rs_method', 'Method', 'research', 'How the data was collected and analysed.', 4),
-            $tx('rl_rs_sample', 'Sample', 'research', 'e.g. "1,200 URLs from 40 sites, crawled July 2026".'),
-            ['key' => 'field_rl_rs_dataset', 'name' => 'rl_rs_dataset', 'label' => 'Dataset URL', 'type' => 'url', 'conditional_logic' => $show('research')],
+            // Research fields live in reinforce-post-research.php (D-077)
             // Product & Service
             $sel('rl_p_subtype', 'Subtype', 'product', rl_pt_subtypes()),
             $sel('rl_p_service', 'Service or product', 'product', rl_pt_services(), 'The page this post supports. The post must target a different search query than that page.'),
@@ -94,12 +90,6 @@ function rl_pt_svc_link($path) {
 add_action('rl_post_type_sections_before', function ($type, $id, $d) {
     $u = function ($path) { return function_exists('rl_url_by_path') ? rl_url_by_path($path, '') : ''; };
     switch ($type) {
-        case 'research':
-            $f = rl_post_lines(get_post_meta($id, 'rl_rs_findings', true));
-            if ($f) echo rl_pt_box('findings', 'Key findings', '<ol class="num">' . implode('', array_map(function ($x) { return '<li>' . esc_html($x) . '</li>'; }, $f)) . '</ol>');
-            $m = rl_pt_m($id, 'rl_rs_method'); $s = rl_pt_m($id, 'rl_rs_sample'); $ds = esc_url(rl_pt_m($id, 'rl_rs_dataset'));
-            if ($m !== '' || $s !== '') echo rl_pt_box('method', 'Method', ($s !== '' ? '<p class="sub">Sample</p><p>' . esc_html($s) . '</p>' : '') . ($m !== '' ? '<p>' . esc_html($m) . '</p>' : '') . ($ds ? '<a class="more" href="' . $ds . '" rel="noopener" target="_blank">Download the dataset &rarr;</a>' : ''));
-            break;
         case 'product':
             echo '<p class="disc">Reinforce Lab makes this. This article is about our own ' . (strpos(rl_pt_m($id, 'rl_p_service'), 'agents') !== false || rl_pt_m($id, 'rl_p_service') === 'search-authority-os' ? 'product' : 'service') . '.</p>';
             $sub = rl_pt_m($id, 'rl_p_subtype');
@@ -117,10 +107,6 @@ function rl_pt_minutes_label($m) { $m = (int) round($m); if ($m < 60) return $m 
 /* ---------- after the body ---------- */
 add_action('rl_post_type_sections_after', function ($type, $id, $d) {
     switch ($type) {
-        case 'research':
-            $cite = 'Reinforce Lab (' . get_the_date('Y', $id) . '). ' . get_the_title($id) . '. ' . get_permalink($id);
-            echo rl_pt_box('cite', 'Cite this research', '<p class="mono">' . esc_html($cite) . '</p>');
-            break;
         case 'product':
             $lim = rl_post_lines(get_post_meta($id, 'rl_p_limits', true));
             if ($lim) echo rl_pt_box('limits', 'What it does not do', rl_pt_ul($lim, 'cons'));
@@ -137,15 +123,6 @@ add_filter('wpseo_schema_graph', function ($graph) {
     $pid = rl_person_schema_id(get_post_field('post_author', $id));
     $add = null; $about = null;
     switch ($d['type']) {
-        case 'research':
-            $ds = esc_url_raw(rl_pt_m($id, 'rl_rs_dataset'));
-            if ($ds) {
-                $desc = rl_pt_m($id, 'rl_rs_method') ?: $d['answer'];
-                $add = ['@type' => 'Dataset', '@id' => $url . '#dataset', 'name' => get_the_title($id), 'description' => $desc, 'url' => $url, 'creator' => ['@id' => home_url('/#organization')],
-                    'distribution' => [['@type' => 'DataDownload', 'contentUrl' => $ds]]];
-                $s = rl_pt_m($id, 'rl_rs_sample'); if ($s !== '') $add['variableMeasured'] = $s;
-            }
-            break;
         case 'product':
             [$sl, $sn] = rl_pt_svc_link(rl_pt_m($id, 'rl_p_service'));
             if ($sl) $about = ['@type' => 'Service', '@id' => $sl . '#service', 'name' => $sn, 'url' => $sl, 'provider' => ['@id' => home_url('/#organization')]];
@@ -155,7 +132,6 @@ add_filter('wpseo_schema_graph', function ($graph) {
         if (!is_array($n) || empty($n['@type'])) continue;
         if (in_array('Article', (array) $n['@type'], true)) {
             if ($about) $n['about'] = $about;
-            if ($d['type'] === 'research') $n['@type'] = ['Article', 'BlogPosting', 'Report'];
         }
     }
     unset($n);
