@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-120 | Privacy Policy published on `.online` (page 3, `/privacy-policy/`) with a reusable legal-page template | 5 Oct | DONE (Jamil's six answers; review by Jamil with Claude as adviser) | this file |
 | D-119 | Footer: Get a Free Quote, Sitemap and Privacy Policy wired | 5 Oct | DONE (Jamil: "First these 3") | this file |
 | D-118 | Titles and meta on 26 pages within limits; all 8 agent titles on one pattern; LinkedIn, Crunchbase, Facebook, Instagram added; footer social icons live | 5 Oct | DONE (Jamil: "approve all, switch all 8 agents to the same pattern" + 4 profile URLs) | this file |
 | D-117 | F-025 fixes 1 to 3: site name, Organization profiles and contact point, our own llms.txt | 5 Oct | DONE (Jamil: "yes, fix 1 to 3 and use the directory profiles") | this file |
@@ -179,6 +180,19 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-120 · Privacy Policy published on `.online`
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "draft the privacy policy first one by one", then answers: Reinforce Lab Inc yes; Hostinger; 24 months okay; GA4 yes; the store moves here with a payment gateway to be chosen; review "me and you [as an advisor lawyar]")
+
+- **URL:** `/privacy-policy/` (page 3, production URL kept; URL Register: PRESERVE). Published on `.online` only (noindex site). The old content (WordPress's default template, draft) saved in `claude/data/backups/privacy-page-3-before-2026-10-05.json`.
+- **Template:** new `pages/reinforce-legal.php`, reusable for Terms and FTC Disclosure: the text stays editable in WordPress inside `[reinforce_legal updated="..." lede="..."] ... [/reinforce_legal]`; the file adds breadcrumb, hero (H1, lede, last updated), an automatic contents list from the H2s, and prose and table styles. Fixed during checks: the column and an inherited table `min-width: 760px` made the phone layout 776 px wide; now 390.
+- **Content** (`claude/drafts/privacy-policy-final-2026-10-05.html`): built from what the site was checked to do (form fields, private records, email to hello@, hashed IP for one hour, no cookies today, Google Fonts and Jetpack Stats) plus Jamil's answers: Google Analytics only after consent (cookie table), Orders and payments for the store, Hostinger as host and mail provider, retention (24 months for enquiries, 14 months for analytics, tax rules for orders).
+- **SEO:** title "Privacy Policy | Reinforce Lab"; meta 152 characters.
+- **Review:** Claude is not a lawyer. The text was checked against GDPR Article 13, the UK and EU cookie rules and US state privacy basics; the checklist and open risks are in `claude/drafts/privacy-policy-draft-2026-10-05.md`. **Before launch:** cookie consent banner and "Cookie settings" footer link with GA4 behind consent; GA4 retention set to 14 months; payment provider named; Hostinger and Google data processing terms accepted. **For a lawyer:** EU or UK representative (Article 27), Bangladesh law, client agreements.
+- **Effect:** the footer Privacy Policy item is now a link (D-119 wiring), and the Contact and Diagnostic "See our Privacy Policy" links now open the page instead of a 404.
+- **Verified:** HTTP 200, noindex, 1 H1, contents list, 2 tables, no PHP notices, `copy-check.py` 0 issues, phone width 390, desktop and phone reviewed.
 
 ---
 

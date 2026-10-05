@@ -1,6 +1,6 @@
 # Privacy Policy: draft for Jamil (5 Oct 2026)
 
-**Status:** DRAFT for review. Not on the site yet. Page: `/privacy-policy/` (page 3, kept from production, URL Register: PRESERVE). Replaces WordPress's default template, which is still in page 3.
+**Status:** FINAL TEXT published on `.online` 5 Oct (D-120) after Jamil's answers; final text in `claude/drafts/privacy-policy-final-2026-10-05.html`. Below: the first draft, then the requirements review. Page: `/privacy-policy/` (page 3, kept from production, URL Register: PRESERVE). Replaces WordPress's default template, which is still in page 3.
 **Important:** this is a plain-language draft based on what the site actually does (checked 5 Oct, below). It is not legal advice. Please have it checked by you or a lawyer before it is published, especially the `[CONFIRM]` points.
 
 **What was checked on `.online` (VERIFIED):** the Contact and Diagnostic/Audit forms and their handlers (fields, storage as private WordPress records, email to hello@reinforcelab.com, optional webhook currently off, hashed IP for a one-hour spam limit); no cookies set for visitors; outside requests only to Google Fonts and Jetpack Stats (Automattic); no advertising or tracking pixels; no Google Analytics on `.online`; links (not embeds) to LinkedIn, Facebook and Instagram.
@@ -132,3 +132,36 @@ Email: hello@reinforcelab.com · Phone: +880 1329-657096 · USA: +1 832 548 4553
 4. **Analytics at launch:** will Google Analytics 4 (or anything else that uses cookies) run on the new site? Production has GA4 data today. If yes, the policy needs a cookie section and the site needs a consent banner for EU and UK visitors.
 5. **WooCommerce store:** production runs a WooCommerce store with customer data. Will the store move to the new site? If yes, the policy needs a section on orders, payments and delivery.
 6. **Legal review:** will you or a lawyer check it before publishing?
+
+---
+
+## Jamil's answers (5 Oct) and the review
+
+**Answers:** Reinforce Lab Inc is the US company; Hostinger hosts the website and the mailbox; 24 months for enquiries is OK; Google Analytics 4 will run at launch; the WooCommerce store moves to the new site (payment gateway or API still to be chosen); review by Jamil, with Claude as adviser.
+
+**About the review:** Claude is not a lawyer and this is not legal advice. The final text was checked against the published requirements below, and the open risks are listed so Jamil can decide whether a lawyer should look at them.
+
+| Requirement (what a privacy notice must say) | Where it is in the final text |
+|---|---|
+| GDPR Art. 13(1)(a,b): who is responsible and how to contact them; DPO | Who we are (no DPO appointed, contact email) |
+| Art. 13(1)(c,d): purposes, legal bases, legitimate interests | How we use your information (table) |
+| Art. 13(1)(e): recipients | Who we share it with |
+| Art. 13(1)(f): transfers outside the UK/EU and safeguards | International transfers |
+| Art. 13(2)(a): how long data is kept | How long we keep it |
+| Art. 13(2)(b,c,d): rights, withdrawing consent, complaining to a regulator | Your rights |
+| Art. 13(2)(e): whether giving data is required | What we collect ("Fields marked as required...") |
+| Art. 13(2)(f): automated decisions | How we use your information (last paragraph) |
+| UK and EU cookie rules (PECR, ePrivacy): consent before non-essential cookies | Cookies (analytics only after consent; settings link) |
+| US state privacy laws: categories, purposes, no sale or sharing for targeted ads, rights | What we collect, How we use it, Your rights (US paragraph) |
+| Card payments: card data handled by the provider | Orders and payments |
+
+**Must be done before launch, or the policy will not match the site (RECOMMENDATION):**
+1. **Cookie consent banner** with a "Cookie settings" link in the footer, and Google Analytics loading only after consent (Google Consent Mode). The policy already describes this; the site does not have it yet. A plugin would need approval; it can also be built in the theme.
+2. **Google Analytics data retention set to 14 months** in GA4 (Admin, Data retention), to match the policy. Google's default is 2 months.
+3. **Name the payment provider** on the page before the store opens, and re-check the store cookie durations once WooCommerce is installed.
+4. **Accept Hostinger's and Google's data processing terms** (Hostinger account; GA4 Admin, Data processing terms).
+
+**Ask a lawyer about (risk, not settled):**
+5. **EU or UK representative (GDPR and UK GDPR Article 27):** a company outside the EU or UK that regularly offers services to people there may need a named representative. Depends on how much of the business targets EU and UK clients.
+6. **Bangladesh data protection law:** check with local counsel which rules currently apply to Reinforce Lab Limited.
+7. **Business terms:** the policy says client data is covered by client agreements; make sure those agreements do say so.
