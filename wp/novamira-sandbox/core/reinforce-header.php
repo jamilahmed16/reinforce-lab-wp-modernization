@@ -387,7 +387,7 @@ function rl_render_footer() {
           <li><a href="<?php echo esc_url(rl_url_by_path('awards')); ?>">Awards</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('services')); ?>">Services</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('portfolio')); ?>">Portfolio</a></li>
-          <li><a href="#">Clients</a></li>
+          <li><a href="<?php echo esc_url(rl_url_by_path('clients')); ?>">Clients</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('blog')); ?>">Blog</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('contact-us')); ?>">Contact Us</a></li>
         </ul>
