@@ -67,7 +67,16 @@ body.rl-about-page .fl-page-content,body.rl-about-page .fl-content,body.rl-about
 .rl-about .story{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,64px);align-items:stretch}
 .rl-about .story .head{margin-bottom:clamp(24px,3vw,34px)}
 .rl-about .ms{border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:clamp(22px,2.6vw,32px);box-shadow:0 30px 80px -50px var(--red-glow)}
-.rl-about .story .txt p{color:var(--ink-dim);font-size:16.5px;margin:0 0 16px}
+.rl-about .story .txt{display:flex;flex-direction:column}
+.rl-about .story .txt p{color:var(--ink-dim);font-size:17px;line-height:1.7;margin:0 0 16px}
+.rl-about .route{list-style:none;margin:auto 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.rl-about .route li{background:var(--bg-2);padding:16px 18px;position:relative}
+.rl-about .route li+li::before{content:"";position:absolute;left:-6px;top:50%;width:10px;height:10px;margin-top:-5px;border-top:1px solid var(--red-2);border-right:1px solid var(--red-2);transform:rotate(45deg);background:var(--bg-2)}
+.rl-about .route .y{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--red-3);text-transform:uppercase}
+.rl-about .route b{display:block;font-family:var(--f-display);text-transform:uppercase;letter-spacing:.03em;font-size:20px;color:var(--ink);margin:6px 0 2px;font-weight:600}
+.rl-about .route small{color:var(--ink-dim);font-size:13.5px}
+@media(max-width:900px){.rl-about .route{margin-top:12px}}
+@media(max-width:560px){.rl-about .route{grid-template-columns:1fr}.rl-about .route li+li::before{display:none}}
 .rl-about .story .txt p:first-child{color:var(--ink)}
 .rl-about .story .sub{margin-top:0}
 .rl-about .tl{list-style:none;margin:0;padding:0;border-left:1px solid var(--red-line)}
@@ -249,6 +258,11 @@ function rl_render_about() {
         <p>Reinforce Lab started in 2020 in Tallinn, Estonia, as a full-service digital marketing agency. In 2021 we expanded to Bangladesh, where Reinforce Lab Limited was founded on 1 April 2021, and built our team in Dhaka.</p>
         <p>Years of running search, content and marketing for clients showed us the same problem again and again: the work was split across separate tools, separate agencies and a lot of manual effort, and nobody connected the pieces.</p>
         <p>So we changed what we sell. Today Reinforce Lab helps businesses scale with automation: we connect the website, content and search visibility into one system and let AI take over the repetitive work, with a person checking what matters.</p>
+        <ol class="route" aria-label="Where Reinforce Lab has worked from">
+          <li><span class="y">2020</span><b>Tallinn</b><small>Where we started</small></li>
+          <li><span class="y">2021</span><b>Dhaka</b><small>Reinforce Lab Limited</small></li>
+          <li><span class="y">Today</span><b>Dhaka · Katy</b><small>Two offices, clients worldwide</small></li>
+        </ol>
       </div>
       <aside class="ms" aria-label="Milestones">
         <h3 class="sub">Milestones</h3>

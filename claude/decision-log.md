@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-113 | About page: Our story and Milestones aligned as two equal columns | 5 Oct | DONE (Jamil: "either separate it with section or make it aligned") | this file |
 | D-112 | About page: "Why are there no client logos or results" section removed | 5 Oct | DONE (Jamil: "remove this") | this file |
 | D-111 | About page founder profile rebuilt from the verified 2018 Onalytica career facts | 5 Oct | DONE on `.online`; Jamil to confirm facts and send a headshot | this file |
 | D-110 | About page rebuilt on `.online` to the v2 company-led copy (`/about-us/`, page 218) | 5 Oct | DONE (Jamil: "dates are right, no Estonia office, keep all, build it") | this file |
@@ -170,6 +171,15 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-113 · About page: Our story and Milestones aligned
+**Date:** 5 October 2026 · **Status:** DONE (Jamil, marked-up screenshot: "either separate it with section or make it aligned in terms of position and design")
+
+- **Chosen:** aligned, not split. The eyebrow and H2 moved into the left column, so both columns start on the same line. Milestones became a framed panel (same style as the hero's "At a glance" box), and the columns stretch to equal height.
+- **Bottom edge:** a three-step strip pinned to the foot of the text column (2020 Tallinn, where we started; 2021 Dhaka, Reinforce Lab Limited; Today Dhaka and Katy, two offices), so the text column ends level with the panel. Story text 17px. On phones the strip stacks and the panel follows the text.
+- **Verified:** section screenshots at 1440 and 390; `copy-check.py` 0 issues; no PHP notices.
 
 ---
 
