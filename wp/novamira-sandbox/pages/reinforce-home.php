@@ -246,7 +246,7 @@ function rl_render_home() {
           <a class="btn p" href="<?php echo esc_url($diag); ?>">Book a Strategy Call <span class="ar">&rarr;</span></a>
           <a class="btn g" href="<?php echo esc_url($svcs); ?>">Explore Services</a>
         </div>
-        <p class="microtrust">Built for <b>Pharmaceutical &amp; Life Sciences · Healthcare · B2B SaaS · Manufacturing · Technology · Professional Services</b></p>
+        <p class="microtrust">Built for <b>Pharmaceutical &amp; Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services · Education</b></p>
       </div>
       <figure class="ge rl-anim"><div class="cap" aria-hidden="true"><span>Inputs</span><span>Engine</span><span>Outcomes</span></div><?php echo rl_home_ge_svg(); ?></figure>
     </div>

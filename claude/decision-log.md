@@ -187,7 +187,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 - **Packages:** H1 60 to 64 px; padding 72 to 80 px; kit grid; chart panel stretches to the text column.
 - **Agents hub:** pipeline diagram capped at 390 px tall on desktop so the panel matches the text column (was 41 px off at each end).
 - **Verified:** `hero-audit.mjs` on all 45 pages: 42 within the standard; Blog, Diagnostic and Contact are exceptions by design. Panel edges 0 px from the text on the six fixed pages at 1440 and 1900 px. Phone width 390 on each; no PHP notices; `copy-check.py` 0 issues.
-- **Noticed, not changed:** Home's "Built for" line lists 6 of the 8 industries (no E-commerce or Education).
+- **Home "Built for" line** (Jamil: "yes, add both"): now lists all 8 industries in the D-022 order, adding E-commerce and Education. Hero still level at 1440 and 1900 px; phone width 390.
 
 ---
 
