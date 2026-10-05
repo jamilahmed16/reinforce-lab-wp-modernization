@@ -22,6 +22,7 @@ Run from the repository root. Requires the Novamira CLI (connected to `.online`)
 node claude/tools/shot.mjs width blog/ about-us/            # each must print 390
 node claude/tools/shot.mjs page industries/healthcare/ out   # out-desktop.jpg, out-phone.jpg
 node claude/tools/shot.mjs html preview.html out             # screenshot an rl.py preview-post render
+node claude/tools/shot.mjs sections about-us/ out            # out-d0.jpg, out-m0.jpg ... one per section, for review
 node claude/tools/shot.mjs sections about-us/ out           # out-d0.jpg, out-m0.jpg ... one per section, for review
 ```
 
