@@ -8,15 +8,39 @@
 if (!defined('ABSPATH')) exit;
 
 /* ---------- assets ---------- */
-add_action('wp_enqueue_scripts', function () {
-    /* fonts self-hosted (D-123): no request to Google Fonts (privacy, LG Munich 2022) and faster first paint */
-    $f = __DIR__ . '/reinforce-fonts.css';
-    wp_enqueue_style('rl-fonts', content_url('novamira-sandbox/core/reinforce-fonts.css'), array(), file_exists($f) ? (string) filemtime($f) : null);
-}, 5);
-/* preload the two fonts the first screen needs, so the H1 does not rewrap when they arrive (Home CLS, F-025) */
+/* fonts self-hosted (D-123): no request to Google Fonts (privacy, LG Munich 2022) and faster first paint.
+   The sandbox folder only serves CSS and JS, so the woff2 files are copied to uploads/reinforce-fonts/
+   (again whenever a file changes) and the @font-face rules are printed inline with those URLs. */
+function rl_fonts_base() {
+    static $base = null;
+    if ($base !== null) return $base;
+    $up = wp_upload_dir(null, false);
+    $dir = trailingslashit($up['basedir']) . 'reinforce-fonts/';
+    $src = __DIR__ . '/fonts/';
+    if (!is_dir($dir)) wp_mkdir_p($dir);
+    foreach ((array) glob($src . '*.woff2') as $f) {
+        $to = $dir . basename($f);
+        if (!file_exists($to) || filesize($to) !== filesize($f)) @copy($f, $to);
+    }
+    return $base = trailingslashit($up['baseurl']) . 'reinforce-fonts/';
+}
 add_action('wp_head', function () {
-    foreach (['oswald-latin.woff2', 'ibm-plex-sans-latin.woff2'] as $f) echo '<link rel="preload" href="' . esc_url(content_url('novamira-sandbox/core/fonts/' . $f)) . '" as="font" type="font/woff2" crossorigin>' . "\n";
+    $base = rl_fonts_base();
+    foreach (['oswald-latin.woff2', 'ibm-plex-sans-latin.woff2'] as $f) echo '<link rel="preload" href="' . esc_url($base . $f) . '" as="font" type="font/woff2" crossorigin>' . "\n";
+    $css = (string) @file_get_contents(__DIR__ . '/reinforce-fonts.css');
+    $css = preg_replace('#/\*.*?\*/#s', '', $css);
+    $css = preg_replace_callback('#url\(fonts/([a-z0-9\-]+\.woff2)\)#', function ($m) use ($base) { return 'url(' . esc_url($base . $m[1]) . ')'; }, $css);
+    echo '<style id="rl-fonts">' . trim($css) . "</style>\n";
 }, 1);
+/* Beaver Builder: no Google Fonts stylesheet and no prefetch hints for it (the site fonts are local) */
+add_filter('fl_builder_google_fonts_pre_enqueue', '__return_empty_array');
+add_filter('fl_builder_preload_google_fonts', '__return_false');
+add_filter('wp_resource_hints', function ($urls) {
+    return array_values(array_filter((array) $urls, function ($u) {
+        $h = is_array($u) ? (isset($u['href']) ? $u['href'] : '') : $u;
+        return strpos($h, 'fonts.googleapis.com') === false && strpos($h, 'fonts.gstatic.com') === false;
+    }));
+}, 99);
 
 add_action('wp_head', 'rl_header_css', 20);
 function rl_header_css() { ?>
