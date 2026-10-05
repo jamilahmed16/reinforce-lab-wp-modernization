@@ -11,6 +11,7 @@ foreach ([
     'pages/reinforce-awards.php',
     'pages/reinforce-legal.php',
     'pages/reinforce-portfolio.php',
+    'pages/reinforce-clients.php',
     'saos/reinforce-agent-visuals.php',
     'saos/reinforce-agent-pages.php',
     'saos/reinforce-agents.php',
