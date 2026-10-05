@@ -394,16 +394,6 @@ function rl_render_about() {
   </div>
 </section>
 
-<section>
-  <div class="wrap">
-    <div class="honest">
-      <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
-      <h2>Why are there no client logos or results on this page?</h2>
-      <p>Because we only publish what we can show. Client names, case studies and numbers go up with the client’s permission and the data to back them, not before. Our awards are listed on <a href="<?php echo $u('awards'); ?>">their own page</a> with a link to each source. The fastest way to judge our work is the free diagnostic on your own site.</p>
-    </div>
-  </div>
-</section>
-
 <section class="faq" id="faq">
   <div class="wrap" style="max-width:900px">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Questions&nbsp;<b>]</b></span><h2>About Reinforce Lab.</h2></div>

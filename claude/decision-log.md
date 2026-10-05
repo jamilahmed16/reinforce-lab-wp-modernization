@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-112 | About page: "Why are there no client logos or results" section removed | 5 Oct | DONE (Jamil: "remove this") | this file |
 | D-111 | About page founder profile rebuilt from the verified 2018 Onalytica career facts | 5 Oct | DONE on `.online`; Jamil to confirm facts and send a headshot | this file |
 | D-110 | About page rebuilt on `.online` to the v2 company-led copy (`/about-us/`, page 218) | 5 Oct | DONE (Jamil: "dates are right, no Estonia office, keep all, build it") | this file |
 | D-109 | Origin story from Jamil: started in Tallinn, Estonia 2020; expanded to Bangladesh 2021; About draft v2 | 5 Oct | RECORDED; About copy in review | this file |
@@ -169,6 +170,14 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-112 · About page: "no client logos" section removed
+**Date:** 5 October 2026 · **Status:** DONE (Jamil, with a screenshot of the section: "remove this")
+
+- Removed the "Straight answer" block ("Why are there no client logos or results on this page?") from `pages/reinforce-about.php`. The page now has 10 H2s; no PHP notices; deployed and verified live.
+- The "Evidence before claims" principle and the sourced Recognition cards stay.
 
 ---
 
