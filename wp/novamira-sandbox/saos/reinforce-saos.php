@@ -26,6 +26,8 @@ add_action('wp_head', 'rl_saos_css', 22);
 function rl_saos_css() {
     if (!rl_is_saos()) return; ?>
 <style id="rl-saos-css">
+.rl-saos .src{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;line-height:1.7;color:var(--ink-faint);margin:16px 0 0}
+.rl-saos .src a{color:var(--ink-dim);border-bottom:1px solid var(--red-line);text-decoration:none}
 /* full-bleed breakout of theme container + kill content padding */
 .rl-saos{position:relative;width:100vw;margin-left:calc(50% - 50vw);--r:0px;--r-lg:0px;--pill:0px;color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6}
 body.rl-saos-page .fl-page-content,body.rl-saos-page .fl-content,body.rl-saos-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
@@ -309,6 +311,7 @@ function rl_render_saos() {
       <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Every tool is a silo.</b> Five subscriptions, three teams, zero feedback loops. You are the integration layer, and it doesn't scale.</p></div>
     </div>
     <div class="hero-cta" style="margin-top:32px"><a class="btn g" href="<?php echo $diag; ?>">Find out where you stand <span class="ar">&rarr;</span></a></div>
+    <p class="src">Sources: <a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">Google Search Central: AI features and your website</a> · <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" rel="noopener" target="_blank">Google Search Central: Creating helpful, reliable, people-first content</a> · <a href="https://developers.google.com/search/docs/essentials/spam-policies" rel="noopener" target="_blank">Google Search Central: Spam policies</a></p>
   </div>
 </section>
 
@@ -327,6 +330,7 @@ function rl_render_saos() {
       <div class="cell"><div class="n">05</div><h3>Domain Evidence</h3><p>For regulated fields: PubMed, Europe PMC, ClinicalTrials.gov, FDA, patents.</p></div>
       <div class="cell"><div class="n">06</div><h3>Performance Intelligence</h3><p>GSC, GA4 and AI visibility, read continuously, so decay is caught, not discovered.</p></div>
     </div>
+    <p class="src">Sources: <a href="https://pubmed.ncbi.nlm.nih.gov/" rel="noopener" target="_blank">PubMed</a> · <a href="https://europepmc.org/" rel="noopener" target="_blank">Europe PMC</a> · <a href="https://clinicaltrials.gov/" rel="noopener" target="_blank">ClinicalTrials.gov</a> · <a href="https://www.fda.gov/" rel="noopener" target="_blank">U.S. Food and Drug Administration</a></p>
   </div>
 </section>
 

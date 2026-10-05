@@ -99,6 +99,8 @@ add_action('wp_head', 'rl_diag_css', 22);
 function rl_diag_css() {
     if (!rl_is_diag()) return; ?>
 <style id="rl-diag-css">
+.rl-diag .src{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;line-height:1.7;color:var(--ink-faint);margin:16px 0 0}
+.rl-diag .src a{color:var(--ink-dim);border-bottom:1px solid var(--red-line);text-decoration:none}
 .rl-diag{position:relative;width:100vw;margin-left:calc(50% - 50vw);--r:0px;--pill:0px;color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6}
 body.rl-diag-page .fl-page-content,body.rl-diag-page .fl-content,body.rl-diag-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
 .rl-diag *{box-sizing:border-box}
@@ -321,6 +323,7 @@ function rl_render_diagnostic() {
       <div class="cell"><div class="n">07</div><h3>Technical Foundation</h3><p>Indexability, crawlability, architecture, internal linking and technical barriers.</p></div>
       <div class="cell" style="border-color:var(--red-line)"><div class="n" aria-hidden="true">→</div><h3>Your Authority Score</h3><p>Seven weighted dimensions, each explainable: current state, evidence, gap, priority.</p></div>
     </div>
+    <p class="src">Sources: <a href="https://support.google.com/webmasters/answer/7576553" rel="noopener" target="_blank">Google Search Console Help: Performance report</a> · <a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">Google Search Central: AI features and your website</a> · <a href="https://platform.openai.com/docs/bots" rel="noopener" target="_blank">OpenAI: crawlers and user agents</a></p>
   </div>
 </section>
 

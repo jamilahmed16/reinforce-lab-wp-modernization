@@ -96,6 +96,8 @@ add_action('wp_head', 'rl_home_css', 22);
 function rl_home_css() {
     if (!is_front_page() && !is_page('home')) return; ?>
 <style id="rl-home-css">
+.rl-home .src{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;line-height:1.7;color:var(--ink-faint);margin:16px 0 0}
+.rl-home .src a{color:var(--ink-dim);border-bottom:1px solid var(--red-line);text-decoration:none}
 /* full-bleed breakout of theme container + kill content padding on home */
 .rl-home{position:relative;width:100vw;margin-left:calc(50% - 50vw)}
 body.home .fl-page-content,body.home .fl-content,body.home .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
@@ -290,6 +292,7 @@ function rl_render_home() {
         <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Leads leak between systems.</b> Traffic arrives and forms get filled, then nothing connects the visit to the pipeline or the next action.</p></div>
         <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Reports describe activity, not revenue.</b> Rankings and traffic charts say little about what is actually growing the business.</p></div>
       </div>
+      <p class="src">Sources: <a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">Google Search Central: AI features and your website</a> · <a href="https://platform.openai.com/docs/bots" rel="noopener" target="_blank">OpenAI: crawlers and user agents</a> · <a href="https://docs.perplexity.ai/guides/bots" rel="noopener" target="_blank">Perplexity: crawlers</a></p>
     </div>
   </section>
 

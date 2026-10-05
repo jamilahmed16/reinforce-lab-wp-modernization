@@ -230,6 +230,7 @@ function rl_render_aiso() {
       <div class="cell"><span class="n">05 · Authority</span><h3>No one else vouches for you</h3><p>AI engines lean on independent sources. If trusted third parties never mention you, a competitor gets named instead.</p><p class="fix"><b>Fix</b>Earned mentions, reviews and digital PR.</p></div>
       <div class="cell"><span class="n">06 · Measurement</span><h3>No one is checking</h3><p>Most teams don't know which prompts mention them, or whether the description is even right.</p><p class="fix"><b>Fix</b>A tracked prompt set, engine by engine.</p></div>
     </div>
+    <p class="src">Sources: <a href="https://developers.google.com/search/docs/crawling-indexing/robots/intro" rel="noopener" target="_blank">Google Search Central: Robots.txt introduction</a> · <a href="https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers" rel="noopener" target="_blank">Google: common crawlers, including Google-Extended</a> · <a href="https://platform.openai.com/docs/bots" rel="noopener" target="_blank">OpenAI: crawlers and user agents</a> · <a href="https://docs.perplexity.ai/guides/bots" rel="noopener" target="_blank">Perplexity: crawlers</a></p>
   </div>
 </section>
 
@@ -243,6 +244,7 @@ function rl_render_aiso() {
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Content &amp; evidence</h3><p>Answer-first pages and question-led headings, with every important claim sourced and reviewed before it ships.</p></li>
       <li class="step"><div class="k" aria-hidden="true">05</div><h3>Authority &amp; monitoring</h3><p>Earn the third-party mentions AI engines trust, re-run the prompt set, and correct anything the engines get wrong.</p></li>
     </ol>
+    <p class="src">Sources: <a href="https://llmstxt.org/" rel="noopener" target="_blank">llms.txt proposal (llmstxt.org)</a> · <a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" rel="noopener" target="_blank">Google Search Central: Intro to structured data</a> · <a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">Google Search Central: AI features and your website</a> · <a href="https://arxiv.org/abs/2311.09735" rel="noopener" target="_blank">Aggarwal et al., GEO: Generative Engine Optimization (arXiv, 2023)</a></p>
   </div>
 </section>
 

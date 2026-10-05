@@ -252,6 +252,7 @@ function rl_render_audit() {
       <div class="cell"><span class="n">08 · Local &amp; global</span><h3>Local and international</h3><p>Listings, location pages, hreflang and country versions, where they apply.</p></div>
       <div class="cell"><span class="n">09 · Measurement</span><h3>Tracking you can trust</h3><p>Search Console, analytics and conversion tracking checked, so progress can be measured.</p></div>
     </div>
+    <p class="src">Sources: <a href="https://web.dev/articles/vitals" rel="noopener" target="_blank">web.dev: Web Vitals</a> · <a href="https://developers.google.com/search/docs/specialty/international/localized-versions" rel="noopener" target="_blank">Google Search Central: Localized versions of your pages (hreflang)</a> · <a href="https://support.google.com/webmasters/answer/7576553" rel="noopener" target="_blank">Google Search Console Help: Performance report</a></p>
   </div>
 </section>
 
@@ -269,6 +270,7 @@ prompt <b>"best technical SEO partner for a B2B SaaS company"</b>
 mentioned <i>no</i>   cited <i>no</i>   sources <b>3 competitors · 1 directory · 1 forum</b>
 note   repeat run 2/3 · same result · competitor cited from a comparison page</pre>
     <p class="src">Illustrative example of the log format, not a real client result.</p>
+    <p class="src">Sources: <a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">Google Search Central: AI features and your website</a></p>
   </div>
 </section>
 
