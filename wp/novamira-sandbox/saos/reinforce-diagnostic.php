@@ -64,7 +64,7 @@ function rl_diag_handle() {
         'volume' => $pick('volume'),
         'outcome' => $cut($f['outcome'] ?? ''),
     ];
-    if ($d['name'] === '' || $d['company'] === '' || !is_email($d['email'])) $go('invalid');
+    if ($d['name'] === '' || $d['company'] === '' || !is_email($d['email']) || empty($f['consent'])) $go('invalid');
     // request type (D-053): the audit page links here with ?interest=audit → hidden field; anything else = diagnostic
     $audit = (($f['interest'] ?? '') === 'audit');
     $type = $audit ? 'SEO & AI Search Audit' : 'Search Authority Diagnostic';
@@ -75,6 +75,7 @@ function rl_diag_handle() {
     foreach ($d as $k => $v) $save($k, $v);
     $save('submitted_at', current_time('mysql'));
     update_post_meta($id, 'request_type', $type);
+    update_post_meta($id, 'consent', 'yes, ' . current_time('mysql') . ', form notice of 5 Oct 2026 (D-123)');
 
     $labels = ['name' => 'Name', 'email' => 'Email', 'company' => 'Company', 'website' => 'Website', 'role' => 'Role', 'industry' => 'Industry', 'challenge' => 'Biggest challenge', 'volume' => 'Monthly content volume', 'outcome' => 'Desired outcome'];
     $body = "New " . $type . " request\n\n";
@@ -196,6 +197,7 @@ body.rl-diag-page .fl-page-content,body.rl-diag-page .fl-content,body.rl-diag-pa
 .rl-diag .ticks li::before{position:absolute;left:0;top:0}
 .rl-diag .step h3{font-size:14px;margin:6px 0}
 .rl-diag .field .req{color:var(--red-3)}
+.rl-diag .consent{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:14px;color:var(--ink-dim);line-height:1.5;cursor:pointer}.rl-diag .consent input{width:18px;height:18px;margin-top:2px;flex:0 0 auto;accent-color:var(--red-2)}
 .rl-diag .hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
 .rl-diag .alert{margin-top:14px;padding:12px 14px;border:1px solid var(--red-2);background:rgba(153,0,0,.12);font-size:14px;color:var(--ink)}
 .rl-diag .form .note a{color:var(--ink-dim);border-bottom:1px solid var(--red-line)}
@@ -297,8 +299,9 @@ function rl_render_diagnostic() {
           <div class="field"><label for="volume">Monthly content volume</label><select id="volume" name="volume"><?php echo $opts('volume'); ?></select></div>
           <div class="field"><label for="outcome">Desired outcome</label><input id="outcome" name="outcome" placeholder="e.g. pipeline, authority" maxlength="200"></div>
         </div>
+        <label class="consent"><input type="checkbox" name="consent" value="1" required> <span>I agree that Reinforce Lab may use these details to prepare my diagnostic and contact me about it.</span></label>
         <button class="btn p full" type="submit" style="margin-top:18px">Request My Search Authority Diagnostic <span class="ar">&rarr;</span></button>
-        <p class="note">We use your details only to prepare your diagnostic and contact you about it. See our <a href="<?php echo esc_url($privacy); ?>">Privacy Policy</a>.</p>
+        <p class="note">We use your details only to prepare your diagnostic and contact you about it. We keep your details for up to 24 months, stored with our host, Hostinger, and we never sell them. You can withdraw your consent or ask us to delete them at any time: <a href="mailto:hello@reinforcelab.com">hello@reinforcelab.com</a>. See our <a href="<?php echo esc_url($privacy); ?>">Privacy Policy</a>.</p>
       </form>
       <?php } ?>
     </div>

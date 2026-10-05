@@ -55,13 +55,14 @@ function rl_contact_handle() {
         'topic' => in_array($topic, rl_contact_topics(), true) ? $topic : '',
         'message' => mb_substr(sanitize_textarea_field((string) ($f['message'] ?? '')), 0, 3000),
     ];
-    if ($d['name'] === '' || !is_email($d['email']) || trim($d['message']) === '') $go('invalid');
+    if ($d['name'] === '' || !is_email($d['email']) || trim($d['message']) === '' || empty($f['consent'])) $go('invalid');
 
     $id = wp_insert_post(['post_type' => 'rl_diag_request', 'post_status' => 'private', 'post_title' => '[Contact] ' . ($d['company'] !== '' ? $d['company'] . ' ' : '') . $d['name']], true);
     if (is_wp_error($id) || !$id) $go('error');
     foreach ($d as $k => $v) update_post_meta($id, $k, $v);
     update_post_meta($id, 'submitted_at', current_time('mysql'));
     update_post_meta($id, 'request_type', 'Contact message');
+    update_post_meta($id, 'consent', 'yes, ' . current_time('mysql') . ', form notice of 5 Oct 2026 (D-123)');
 
     $labels = ['name' => 'Name', 'email' => 'Email', 'company' => 'Company', 'website' => 'Website', 'topic' => 'About', 'message' => 'Message'];
     $body = "New contact message\n\n";
@@ -106,6 +107,7 @@ body.rl-contact-page .fl-page-content,body.rl-contact-page .fl-content,body.rl-c
 .rl-contact .field select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ink-faint) 50%),linear-gradient(135deg,var(--ink-faint) 50%,transparent 50%);background-position:calc(100% - 18px) 50%,calc(100% - 13px) 50%;background-size:5px 5px,5px 5px;background-repeat:no-repeat}
 .rl-contact .form .note{font-family:var(--f-mono);font-size:10.5px;color:var(--ink-faint);margin-top:14px;line-height:1.7}
 .rl-contact .form .note a{color:var(--ink-dim);border-bottom:1px solid var(--red-line)}
+.rl-contact .consent{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:14px;color:var(--ink-dim);line-height:1.5;cursor:pointer}.rl-contact .consent input{width:18px;height:18px;margin-top:2px;flex:0 0 auto;accent-color:var(--red-2)}
 .rl-contact .hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
 .rl-contact .alert{margin-top:14px;padding:12px 14px;border:1px solid var(--red-2);background:rgba(153,0,0,.12);font-size:14px;color:var(--ink)}
 .rl-contact .ok{text-align:center;padding:30px 10px}
@@ -195,8 +197,9 @@ function rl_render_contact() {
           <div class="field full"><label for="topic">What is it about?</label><select id="topic" name="topic"><option value="">Select…</option><?php foreach (rl_contact_topics() as $t) echo '<option>' . esc_html($t) . '</option>'; ?></select></div>
           <div class="field full"><label for="msg">Message <span class="req" aria-hidden="true">*</span></label><textarea id="msg" name="message" maxlength="3000" required></textarea></div>
         </div>
+        <label class="consent"><input type="checkbox" name="consent" value="1" required> <span>I agree that Reinforce Lab may use these details to reply to my message.</span></label>
         <button class="btn p" type="submit" style="margin-top:18px;width:100%;justify-content:center">Send message <span class="ar">&rarr;</span></button>
-        <p class="note">We use your details only to reply to your message. See our <a href="<?php echo esc_url($privacy); ?>">Privacy Policy</a>.</p>
+        <p class="note">We use your details only to reply to your message. We keep your details for up to 24 months, stored with our host, Hostinger, and we never sell them. You can withdraw your consent or ask us to delete them at any time: <a href="mailto:hello@reinforcelab.com">hello@reinforcelab.com</a>. See our <a href="<?php echo esc_url($privacy); ?>">Privacy Policy</a>.</p>
       </form>
       <?php } ?>
     </div>

@@ -9,8 +9,14 @@ if (!defined('ABSPATH')) exit;
 
 /* ---------- assets ---------- */
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('rl-fonts', 'https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap', array(), null);
+    /* fonts self-hosted (D-123): no request to Google Fonts (privacy, LG Munich 2022) and faster first paint */
+    $f = __DIR__ . '/reinforce-fonts.css';
+    wp_enqueue_style('rl-fonts', content_url('novamira-sandbox/core/reinforce-fonts.css'), array(), file_exists($f) ? (string) filemtime($f) : null);
 }, 5);
+/* preload the two fonts the first screen needs, so the H1 does not rewrap when they arrive (Home CLS, F-025) */
+add_action('wp_head', function () {
+    foreach (['oswald-latin.woff2', 'ibm-plex-sans-latin.woff2'] as $f) echo '<link rel="preload" href="' . esc_url(content_url('novamira-sandbox/core/fonts/' . $f)) . '" as="font" type="font/woff2" crossorigin>' . "\n";
+}, 1);
 
 add_action('wp_head', 'rl_header_css', 20);
 function rl_header_css() { ?>
