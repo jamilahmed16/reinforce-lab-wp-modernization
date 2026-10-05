@@ -329,7 +329,7 @@ function rl_render_industries() {
     <figure class="inf rl-anim">
       <div class="cap" aria-hidden="true"><span>Industries</span><span>Eight industries · one system</span></div>
       <?php echo rl_indhub_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Eight industries', 'kind' => 'chips', 'items' => ['Pharma & life sci', 'Healthcare', 'B2B SaaS', 'E-commerce', 'Manufacturing', 'Technology', 'Professional svcs', 'Education']], ['label' => '', 'kind' => 'core', 'title' => 'AI Growth Systems', 'sub' => 'Industry rules built in']], 'One system · eight industries'); ?></figure>
   </div>
 </section>
 
@@ -427,7 +427,7 @@ function rl_render_industry() {
     <figure class="inf rl-anim">
       <div class="cap" aria-hidden="true"><span><?php echo esc_html($d['name']); ?></span><span>Context · system · guardrails · growth</span></div>
       <?php echo rl_ind_svg($d); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Context', 'kind' => 'chips', 'items' => $d['real']], ['label' => '', 'kind' => 'core', 'title' => $d['name'], 'sub' => 'AI Growth System'], ['label' => 'System', 'kind' => 'chips', 'items' => ['Search', 'Content', 'AI search', 'Automation'], 'join' => false], ['label' => 'Guardrails', 'kind' => 'rows', 'items' => array_map(function ($t) { return [$t, 'ok']; }, $d['guard'])], ['label' => 'Growth', 'kind' => 'rows', 'items' => [['Search, content and automation working as one', 'hi']]]], 'Context · system · guardrails · growth'); ?></figure>
   </div>
 </section>
 

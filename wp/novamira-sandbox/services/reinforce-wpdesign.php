@@ -169,7 +169,7 @@ function rl_render_wpdesign() {
     <figure class="wpf rl-anim">
       <div class="cap" aria-hidden="true"><span>WordPress build</span><span>Plan · design · build · launch</span></div>
       <?php echo rl_wp_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'The build', 'kind' => 'steps', 'items' => ['Plan', 'Design', 'Build', 'Launch']], ['label' => 'Launch checks', 'kind' => 'rows', 'items' => [['LCP ≤ 2.5 s', 'ok'], ['INP ≤ 200 ms', 'ok'], ['CLS ≤ 0.1', 'ok'], ['WCAG 2.2 AA', 'ok'], ['Redirect map', 'ok'], ['Schema & SEO', 'ok']]]], 'yourdomain.com · ready to launch'); ?></figure>
   </div>
 </section>
 

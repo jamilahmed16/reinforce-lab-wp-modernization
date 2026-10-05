@@ -165,7 +165,7 @@ function rl_render_content() {
     <figure class="csy rl-anim">
       <div class="cap" aria-hidden="true"><span>Content system</span><span>Pipeline · cluster · refresh</span></div>
       <?php echo rl_sc_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'The pipeline', 'kind' => 'steps', 'items' => ['Research', 'Brief', 'Draft', 'Review', 'Publish', 'Refresh']], ['label' => 'The topic cluster', 'kind' => 'core', 'title' => 'Pillar page', 'sub' => 'Linked to every page below'], ['label' => '', 'kind' => 'chips', 'items' => ['Guide', 'How-to', 'FAQ', 'Comparison', 'Glossary', 'Case study'], 'join' => false]], 'One system · every page briefed, reviewed, linked and refreshed'); ?></figure>
   </div>
 </section>
 

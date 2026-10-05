@@ -174,7 +174,7 @@ function rl_render_maintenance() {
     <figure class="mtf rl-anim">
       <div class="cap" aria-hidden="true"><span>Website care</span><span>Backup · update · protect · report</span></div>
       <?php echo rl_mt_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Every month', 'kind' => 'steps', 'items' => ['Backup', 'Update', 'Protect', 'Report']], ['label' => 'Incident', 'kind' => 'steps', 'items' => [['Alert: vulnerable plugin', 'x'], 'Check', 'Patch', ['Verified · patched', 'ok']]], ['label' => 'Status', 'kind' => 'chips', 'items' => [['Uptime', 'ok'], ['Backups', 'ok'], ['Updates', 'ok'], ['Security', 'ok'], ['Speed', 'ok']]]], 'Backup · update · protect · report'); ?></figure>
   </div>
 </section>
 

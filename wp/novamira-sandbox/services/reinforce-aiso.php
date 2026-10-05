@@ -197,7 +197,7 @@ function rl_render_aiso() {
     <figure class="ans rl-anim">
       <div class="cap" aria-hidden="true"><span>AI answer</span><span>Source [1] = you</span></div>
       <?php echo rl_aiso_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'The question', 'kind' => 'rows', 'items' => ['Who are the most trusted providers in our category?']], ['label' => 'Asked in', 'kind' => 'chips', 'items' => ['ChatGPT', 'Perplexity', 'Gemini', 'AI Overviews'], 'join' => false], ['label' => 'AI answer · sources', 'kind' => 'rows', 'items' => [['[1] Your brand', 'hi'], ['[2] Source', 'dim'], ['[3] Source', 'dim']]], ['label' => 'What gets you cited', 'kind' => 'chips', 'items' => ['+ Crawlable', '+ Structured', '+ Verified'], 'join' => false], ['label' => 'Result', 'kind' => 'chips', 'items' => [['Mentioned', 'ok'], ['Cited', 'ok'], ['Described accurately', 'ok']]]], ''); ?></figure>
   </div>
 </section>
 

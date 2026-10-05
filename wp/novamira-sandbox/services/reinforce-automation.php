@@ -168,7 +168,7 @@ function rl_render_automation() {
     <figure class="mfl rl-anim">
       <div class="cap" aria-hidden="true"><span>Marketing automation</span><span>Trigger · nurture · score · handoff</span></div>
       <?php echo rl_ma_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Trigger', 'kind' => 'rows', 'items' => ['Form fill']], ['label' => 'Nurture', 'kind' => 'rows', 'items' => ['Email · guide', 'Clicked? Yes: email · case study', ['Clicked? No: wait · new angle', 'dim']]], ['label' => 'Score', 'kind' => 'steps', 'items' => ['Lead score', ['MQL', 'hi']]], ['label' => 'Handoff', 'kind' => 'rows', 'items' => ['Sales alert', ['CRM · deal created', 'hi']]]], 'Trigger · nurture · score · handoff'); ?></figure>
   </div>
 </section>
 

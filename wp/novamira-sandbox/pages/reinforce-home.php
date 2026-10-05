@@ -248,7 +248,7 @@ function rl_render_home() {
         </div>
         <p class="microtrust">Built for <b>Pharmaceutical &amp; Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services · Education</b></p>
       </div>
-      <figure class="ge rl-anim"><div class="cap" aria-hidden="true"><span>Inputs</span><span>Engine</span><span>Outcomes</span></div><?php echo rl_home_ge_svg(); ?></figure>
+      <figure class="ge rl-anim"><div class="cap" aria-hidden="true"><span>Inputs</span><span>Engine</span><span>Outcomes</span></div><?php echo rl_home_ge_svg(); ?><?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Inputs', 'kind' => 'chips', 'items' => ['Search & SERP data', 'Content & website', 'Competitor research', 'Customer & social signals', 'AI-search visibility']], ['label' => 'Engine', 'kind' => 'core', 'title' => 'AI Growth System', 'sub' => 'Verify · build · automate · monitor'], ['label' => 'Outcomes', 'kind' => 'rows', 'items' => ['Automated operations', 'Content that ranks', 'Cited in AI search', 'Qualified pipeline', ['Increased revenue', 'hi']]]], 'Outcomes feed the next cycle'); ?></figure>
     </div>
   </section>
 

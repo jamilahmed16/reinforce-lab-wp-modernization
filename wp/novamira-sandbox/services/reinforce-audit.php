@@ -216,7 +216,7 @@ function rl_render_audit() {
     <figure class="swp rl-anim">
       <div class="cap" aria-hidden="true"><span>Audit sweep</span><span>Issues &rarr; fix register</span></div>
       <?php echo rl_audit_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Audit sweep', 'kind' => 'chips', 'items' => ['404', 'CWV', 'AI', 'Thin', 'Schema']], ['label' => 'Fix register', 'kind' => 'rows', 'items' => [['P1 · Broken links', 'hi'], 'P1 · Slow template', 'P2 · Not cited in AI', 'P2 · Thin content', 'P3 · Missing schema']], ['label' => 'Roadmap', 'kind' => 'steps', 'items' => ['30 days', '60 days', '90 days']]], 'Found by people · backed by evidence · prioritised'); ?></figure>
   </div>
 </section>
 

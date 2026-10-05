@@ -32,6 +32,7 @@ foreach ([
     'industries/reinforce-industries.php',
     'services/reinforce-intl.php',
     'core/reinforce-kit.php',
+    'core/reinforce-phone-hero.php',
     'services/reinforce-leadgen.php',
     'services/reinforce-llm.php',
     'services/reinforce-local.php',

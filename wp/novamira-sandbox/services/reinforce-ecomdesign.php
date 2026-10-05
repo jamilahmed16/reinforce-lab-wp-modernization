@@ -177,7 +177,7 @@ function rl_render_ecomdesign() {
     <figure class="ecf rl-anim">
       <div class="cap" aria-hidden="true"><span>Online store</span><span>Found · browse · checkout · order</span></div>
       <?php echo rl_ec_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Found', 'kind' => 'rows', 'items' => ['In search · price and stock shown']], ['label' => 'Checkout', 'kind' => 'rows', 'items' => [['Fewer fields', 'ok'], ['Total shown up front', 'ok'], ['Guest checkout', 'ok'], ['Payment options', 'ok']]], ['label' => '', 'kind' => 'rows', 'items' => [['Order placed', 'hi']]]], 'Found · browse · checkout · order'); ?></figure>
   </div>
 </section>
 

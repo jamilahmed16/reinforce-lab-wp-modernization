@@ -193,7 +193,7 @@ function rl_render_local() {
     <figure class="lpk rl-anim">
       <div class="cap" aria-hidden="true"><span>Local search</span><span>Relevance · distance · prominence</span></div>
       <?php echo rl_local_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'The search', 'kind' => 'rows', 'items' => ['Accountant near me']], ['label' => 'Local results', 'kind' => 'rows', 'items' => [['Competitor', 'dim'], ['Your business', 'hi'], ['Competitor', 'dim']]], ['label' => 'What moves you up', 'kind' => 'chips', 'items' => ['+ Profile', '+ Reviews', '+ Citations'], 'join' => false], ['label' => 'Google’s three local factors', 'kind' => 'steps', 'items' => ['Relevance', 'Distance', 'Prominence']]], ''); ?></figure>
   </div>
 </section>
 

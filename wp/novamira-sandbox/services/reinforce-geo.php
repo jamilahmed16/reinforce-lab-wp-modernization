@@ -210,7 +210,7 @@ function rl_render_geo() {
     <figure class="fan rl-anim">
       <div class="cap" aria-hidden="true"><span>Query fan-out</span><span>Passage &rarr; citation</span></div>
       <?php echo rl_geo_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'The question', 'kind' => 'rows', 'items' => ['How should we choose a provider?']], ['label' => 'Query fan-out', 'kind' => 'rows', 'items' => ['Selection criteria', 'Typical costs', 'Red flags']], ['label' => 'Retrieved from', 'kind' => 'rows', 'items' => [['Your page', 'hi']]], ['label' => 'Generated answer', 'kind' => 'rows', 'items' => [['[1] Your page cited', 'hi']]]], 'Retrieved · extracted · cited'); ?></figure>
   </div>
 </section>
 

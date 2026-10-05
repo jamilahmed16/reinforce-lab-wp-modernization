@@ -230,7 +230,7 @@ function rl_render_llm() {
     <figure class="ent rl-anim">
       <div class="cap" aria-hidden="true"><span>Entity alignment</span><span>Sources &rarr; model</span></div>
       <?php echo rl_llm_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Sources', 'kind' => 'chips', 'items' => ['Website', 'Schema', 'Profiles', 'Directories', 'Reviews', 'Press']], ['label' => '', 'kind' => 'core', 'title' => 'Your brand', 'sub' => 'One entity · facts aligned'], ['label' => 'Model answer', 'kind' => 'rows', 'items' => [['"Who is your brand?" answered correctly', 'hi']]]], 'Consistent · correct · current'); ?></figure>
   </div>
 </section>
 

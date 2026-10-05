@@ -174,7 +174,7 @@ function rl_render_enterprise() {
     <figure class="gov rl-anim">
       <div class="cap" aria-hidden="true"><span>Governance</span><span>Teams · standard · pages · links</span></div>
       <?php echo rl_ent_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Teams', 'kind' => 'chips', 'items' => ['Content', 'Development', 'Product', 'Regions']], ['label' => '', 'kind' => 'core', 'title' => 'SEO standards', 'sub' => 'One standard for every team'], ['label' => 'Applied through', 'kind' => 'steps', 'items' => ['Templates', 'QA gate', 'Releases']], ['label' => 'Earned links', 'kind' => 'chips', 'items' => ['Press', 'Partners', 'Industry']]], 'One standard · every team · every page'); ?></figure>
   </div>
 </section>
 

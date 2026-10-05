@@ -176,7 +176,7 @@ function rl_render_intl() {
     <figure class="mkt rl-anim">
       <div class="cap" aria-hidden="true"><span>Market routing</span><span>hreflang &rarr; right page</span></div>
       <?php echo rl_intl_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Search', 'kind' => 'rows', 'items' => ['One query, many markets']], ['label' => 'Hreflang routes to', 'kind' => 'rows', 'items' => ['EN · x-default → /', 'DE → /de/', 'FR-CA → /fr-ca/', ['EN-GB → /uk/', 'hi']]]], 'Hreflang · every version lists every other · right language, right market, right page'); ?></figure>
   </div>
 </section>
 

@@ -182,7 +182,7 @@ function rl_render_seo() {
     <figure class="pil rl-anim">
       <div class="cap" aria-hidden="true"><span>Search engine optimization</span><span>Four pillars · one system</span></div>
       <?php echo rl_seo_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Google’s three stages', 'kind' => 'steps', 'items' => ['Crawl', 'Index', 'Serve']], ['label' => 'The four pillars', 'kind' => 'chips', 'items' => ['Technical', 'On-page', 'Content', 'Authority']], ['label' => '', 'kind' => 'core', 'title' => 'Search authority', 'sub' => 'Four pillars · one system'], ['label' => 'Result', 'kind' => 'rows', 'items' => [['AI Overview · cited: your page', 'hi'], 'Search result · your page']]], ''); ?></figure>
   </div>
 </section>
 

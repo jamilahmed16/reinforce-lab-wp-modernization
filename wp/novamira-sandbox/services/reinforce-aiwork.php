@@ -177,7 +177,7 @@ function rl_render_aiwork() {
     <figure class="awf rl-anim">
       <div class="cap" aria-hidden="true"><span>AI workflow</span><span>Capture · process · check · act</span></div>
       <?php echo rl_aw_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Inputs', 'kind' => 'chips', 'items' => ['Emails', 'Tickets', 'Invoices', 'Forms']], ['label' => 'AI step', 'kind' => 'steps', 'items' => ['Classify', 'Extract', 'Draft']], ['label' => 'Check', 'kind' => 'rows', 'items' => ['Sure? Yes: straight to your systems', ['Sure? No: human review, then approved', 'hi']]], ['label' => 'Your systems', 'kind' => 'chips', 'items' => ['CRM', 'ERP', 'Helpdesk']]], 'Audit log · every step recorded'); ?></figure>
   </div>
 </section>
 

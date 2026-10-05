@@ -165,7 +165,7 @@ function rl_render_leadgen() {
     <figure class="lgl rl-anim">
       <div class="cap" aria-hidden="true"><span>Lead generation</span><span>Attract · convert · qualify · close the loop</span></div>
       <?php echo rl_lg_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Channels', 'kind' => 'chips', 'items' => ['Search', 'Paid ads', 'Content', 'Referrals']], ['label' => 'Convert', 'kind' => 'steps', 'items' => ['Landing page', 'Form']], ['label' => 'Qualify', 'kind' => 'rows', 'items' => [['Fit? Yes: sales → closed deal', 'hi'], ['Not yet: nurture', 'dim']]]], 'Conversion data → ad bidding'); ?></figure>
   </div>
 </section>
 

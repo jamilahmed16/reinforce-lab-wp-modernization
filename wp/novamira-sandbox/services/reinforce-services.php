@@ -259,7 +259,7 @@ function rl_render_services() {
     <figure class="cg rl-anim">
       <div class="cap" aria-hidden="true"><span>Capabilities</span><span>Select a service</span></div>
       <?php echo rl_services_cg_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Search', 'kind' => 'chips', 'items' => ['SEO', 'Technical', 'Enterprise', 'International', 'Local', 'Audit']], ['label' => 'AI search and content', 'kind' => 'chips', 'items' => ['AI search', 'GEO', 'LLM', 'Content', 'Digital PR'], 'join' => false], ['label' => 'Automation', 'kind' => 'chips', 'items' => ['Workflows', 'Marketing', 'Lead gen'], 'join' => false], ['label' => 'Advisory and web', 'kind' => 'chips', 'items' => ['Exec AI', 'WordPress', 'E-commerce', 'Maintenance'], 'join' => false], ['label' => '', 'kind' => 'core', 'title' => 'AI Growth System', 'sub' => 'One system · measured on business impact']], ''); ?></figure>
   </div>
 </section>
 

@@ -171,7 +171,7 @@ function rl_render_execai() {
     <figure class="exm rl-anim">
       <div class="cap" aria-hidden="true"><span>AI strategy</span><span>Assess · prioritise · govern · roadmap</span></div>
       <?php echo rl_ex_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Use cases · value × feasibility', 'kind' => 'chips', 'items' => [['Do first', 'hi'], 'Plan', 'Quick wins', ['Drop', 'dim']]], ['label' => 'Then', 'kind' => 'rows', 'items' => ['Risk check']], ['label' => 'Roadmap', 'kind' => 'steps', 'items' => ['Q1', 'Q2', 'Q3', 'Q4']], ['label' => 'Governance', 'kind' => 'steps', 'items' => ['Pilot', 'Scale', 'Review']]], 'Assess · prioritise · govern'); ?></figure>
   </div>
 </section>
 

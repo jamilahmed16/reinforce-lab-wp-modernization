@@ -181,7 +181,7 @@ function rl_render_pr() {
     <figure class="prw rl-anim">
       <div class="cap" aria-hidden="true"><span>Digital PR</span><span>Story · coverage · links · citations</span></div>
       <?php echo rl_pr_svg(); ?>
-    </figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'The story', 'kind' => 'core', 'title' => 'Original data', 'sub' => 'Pitched to the right outlets'], ['label' => 'Coverage', 'kind' => 'rows', 'items' => ['News site', 'Trade press', 'Industry blog']], ['label' => 'Results', 'kind' => 'rows', 'items' => [['Link → your site', 'ok'], ['AI answer · cited: your brand', 'hi']]]], 'Pitch · coverage · links · citations'); ?></figure>
   </div>
 </section>
 
