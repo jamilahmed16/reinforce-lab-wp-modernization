@@ -72,3 +72,9 @@ python3 claude/tools/seo-audit.py out.json   # all published pages from the snap
 ```
 
 Per page: title and meta length, H1 and heading order, schema types, Organization fields, answer-first opening, FAQ visible vs schema, question-shaped H2s, internal links in and out, outside citations, images, size. Report: `claude/research/seo-aeo-geo-readiness-2026-10-05.md`.
+
+## Blog post tools (D-134)
+
+- `readability.py <url-or-file> [--max-grade 8]`: Flesch-Kincaid grade of the article text only (not menu, footer, tables). Every post must be grade 8.0 or lower; lists the hardest sentences to rewrite. Exit code 1 on fail.
+- `serp-semantics.py <slug> <our-url-or-draft|-> <competitor urls...>`: fetches the competitor pages through the .online server, finds the terms 3+ of them use and the questions in their headings, and lists which terms our page does not use yet. Report: `claude/research/serp/<slug>/report.md`. Procedure: `claude/blog-post-procedure.md`.
+

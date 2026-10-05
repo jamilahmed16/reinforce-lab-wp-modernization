@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-134 | Blog post rules: 8th-grade reading level for every post; top-10 competitor analysis with Exa before writing, competitor semantics used in the post; first post reworked to both rules | 5 Oct | DONE (Jamil: "the reading difficulty should be 8th grader for all posts .... before writing any post must analyze top 10 results in google with exa ai...") | this file |
 | D-133 | Related reading at the end of every post: posts first, topped up with the most relevant pages when there are fewer than 3 related posts (all post templates) | 5 Oct | DONE (Jamil: "There must an option for related post or something like that in the end of the post") | this file |
 | F-027 | Review of the first post "What Is an AI Growth System?": strong structure, schema and sources; gaps are first-hand evidence, a body diagram, readability and the author photo | 5 Oct | FIXED except the author photo (awaiting Jamil) | this file |
 | D-132 | First blog post published on `.online`: Explainer "What Is an AI Growth System?" (post 330, `/what-is-an-ai-growth-system/`); Home FAQ shortened to link to it | 5 Oct | DONE (Jamil: URL, definition and author yes; tools "keep as written"; no price; root URL like production posts) | this file |
@@ -195,6 +196,21 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-134 · Blog post rules: grade 8 reading level and top-10 competitor semantics
+**Date:** 5 October 2026 · **Status:** DONE; binding for every post (Jamil: "the reading difficulty should be 8th grader for all posts .... before writing any post must analyze top 10 results in google with exa ai and find out semantics and use with in the posts for outrank the competitors"; then "Talk about Claude Code, SEO Tools used in \"How does Reinforce Lab use one itself\". We followed a structured and data driven process for Reinforce Lab and started implantation of AI Growth Systems in Reinforce Lab")
+
+- **Rules written into `CLAUDE.md`** (copy rules section) and the full steps into `claude/blog-post-procedure.md`.
+- **New tools:** `claude/tools/readability.py` (Flesch-Kincaid grade of the article text; grade 8.0 or lower to pass) and `claude/tools/serp-semantics.py` (competitor pages fetched through the .online server one per call; common terms, heading questions, gaps against our page; report in `claude/research/serp/<slug>/`). Limitation stated in the procedure: Exa cannot reproduce Google's ranking, so Google's order comes from a Google results page; Exa supplies URLs, its own top results, and the text of pages the server cannot read.
+- **Applied to "What Is an AI Growth System?" (post 330):**
+  - Reading level: grade 5.8 (Flesch-Kincaid), reading ease 74, 11.3 words per sentence. Sentences still above grade 8 are the approved definition, the author bio and short labels.
+  - Competitor set: 14 pages (Google results from Jamil's screenshot: Forsify on LinkedIn, Data-Mania, Novus Pathway, IB Solutions, Ikigai, Mervyn Chua; Bing's: Future Made Useful, SEnuke; Exa's: Pointer Strategy, GREX, GrowthX, Data-Mania AI-native, Digital Estate Media, GTM Labs). 12 fetched; SEnuke and Pointer Strategy read through Exa. AI Human Growth Systems (410) and aigrowthsystems.blog (404) no longer exist.
+  - Added from the analysis: buyer signals and intent, clean data, lead scoring and routing, the full funnel (outreach, onboarding, retention), several AI agents with one job each, the alternative names (AI growth engine, growth operating system); 4 FAQs competitors answer in headings (same as an AI growth engine? what data? how long before results? privacy laws GDPR and CCPA); sources added: California Attorney General CCPA page, Google traffic-drop guidance. 10 FAQs, 9 sources. Common competitor terms missing from the post: 188 to 170 (the rest are generic words).
+  - "How does Reinforce Lab use one itself?" rewritten as Jamil asked: the structured, data-driven process and the start of Reinforce Lab's own AI growth system, naming the tools the records show were used: Google Search Console (16 months), Google Analytics 4, Screaming Frog (21 Aug 2026 crawl), Semrush (search demand), Exa (research), Claude Code (Anthropic's AI coding agent, connected to WordPress), Yoast SEO; plus the automatic checks (writing rules, grade 8, 10-point standard), sources read on the day, founder approval with logged decisions, one post at a time. Ahrefs appears in old notes without confirmed use, so it is not named.
+- **Page weight:** line-break whitespace between tags is now removed on every front-end page (`<script>`, `<pre>`, `<textarea>` untouched); 5 pages pixel-identical before and after on desktop and phone; about 3.5 KB saved per page. The post is 150,788 bytes, 0.5% over the "< 150 KB where feasible" budget because of added article content, not code: accepted as a content-driven exception.
+- **Backups:** `claude/data/backups/post-330-before-d134-2026-10-05.json`; body v3 `claude/drafts/blog-what-is-an-ai-growth-system-body-v3-2026-10-05.html`.
 
 ---
 

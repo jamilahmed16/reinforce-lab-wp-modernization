@@ -64,6 +64,10 @@ Novamira gives you arbitrary PHP execution, database access and filesystem write
 - **If anything is unclear, ask Jamil.**
 - Check every page with `python3 claude/tools/copy-check.py` before it ships (0 issues required).
 
+**Blog post rules (D-134, 5 Oct 2026), every post, no exceptions:**
+- **Reading level: 8th grade or below.** Check with `python3 claude/tools/readability.py <post-url-or-draft>` (Flesch-Kincaid grade 8.0 or lower required). Short sentences, everyday words.
+- **Before writing, analyse the top 10 results.** Use Exa to find the pages ranking for the keyword (Google's own order from a Google results screenshot or Jamil's check), read them, then run `python3 claude/tools/serp-semantics.py <slug> - <urls...>`. Use the terms, entities and questions the competitors cover where they fit, answer what they miss, and run the tool again on the draft. Report saved in `claude/research/serp/<slug>/`. Full procedure: `claude/blog-post-procedure.md`.
+
 **Approach:** Build fresh on `.online`, migrate content selectively. **Do NOT clone production.**
 
 ---
