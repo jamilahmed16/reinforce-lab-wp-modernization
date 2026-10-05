@@ -26,6 +26,7 @@ def template(path):
     if path.startswith('services/'): return 'service'
     if path in ('services', 'industries'): return 'hub'
     if path.startswith('industries/'): return 'industry'
+    if path.startswith('portfolio/'): return 'project'
     return {'about-us': 'about', 'contact-us': 'contact', 'blog': 'blog', 'awards': 'company'}.get(path, 'product')
 
 def types_of(n):
@@ -43,6 +44,10 @@ def audit(p):
     can = s.find('link', rel='canonical'); can = can['href'] if can else ''
     rob = s.find('meta', attrs={'name': 'robots'}); rob = rob['content'] if rob else ''
     r.update(title=t, title_len=len(t), title_brand='Reinforce Lab' in t, meta=md, meta_len=len(md), canonical_ok=(can == url), robots=rob)
+    og = {m.get('property'): m.get('content', '') for m in s.find_all('meta', property=True)}
+    r['og_image'] = og.get('og:image', ''); r['og_site_name'] = og.get('og:site_name', ''); r['og_title'] = bool(og.get('og:title')); r['og_desc'] = bool(og.get('og:description'))
+    r['twitter_card'] = (s.find('meta', attrs={'name': 'twitter:card'}) or {}).get('content', '') if s.find('meta', attrs={'name': 'twitter:card'}) else ''
+    r['html_lang'] = (s.html.get('lang') if s.html else '') or ''
     # landmarks
     r['landmarks'] = {k: bool(s.find(k)) for k in ('header', 'main', 'nav', 'footer')}
     # schema
@@ -54,6 +59,16 @@ def audit(p):
         except Exception as e:
             r.setdefault('schema_errors', []).append(str(e)[:80])
     ts = sorted({x for n in graph for x in types_of(n)})
+    ids = set(); refs = set()
+    def walk(o):
+        if isinstance(o, dict):
+            if set(o.keys()) == {'@id'}: refs.add(o['@id'])
+            elif o.get('@id'): ids.add(o['@id'])
+            for v in o.values(): walk(v)
+        elif isinstance(o, list):
+            for v in o: walk(v)
+    walk(graph)
+    r['schema_dangling'] = sorted(x for x in refs - ids if x.startswith(SITE))
     r['schema_types'] = ts
     org = next((n for n in graph if 'Organization' in types_of(n)), {})
     r['org'] = {k: bool(org.get(k)) for k in ('name', 'legalName', 'logo', 'sameAs', 'contactPoint', 'foundingDate', 'award')}
@@ -79,7 +94,7 @@ def audit(p):
         nx = h1.find_next('p')
         lede = nx.get_text(' ', strip=True) if nx else ''
     r['lede'] = lede[:240]; r['lede_words'] = len(lede.split())
-    r['answer_first'] = bool(re.search(r'\b(is|are|helps?|makes?|builds?|gives?|means|turns?|connects?|runs?)\b', ' '.join(lede.split()[:30]), re.I))
+    r['answer_first'] = bool(re.search(r'\b(is|are|was|has|have|helps?|makes?|builds?|gives?|means|turns?|connects?|runs?|sends?|keeps?|uses?|structures?|shows?|finds?|brings?|checks?|covers?|comes|tells?|sells?|won|reviews?|email|call|how|which|what)\b', ' '.join(lede.split()[:30]), re.I))
     r['brand_early'] = 'Reinforce Lab' in ' '.join(text.split()[:200])
     r['faq_visible'] = len(main.select('.faq details, details'))
     r['lists'] = len(main.find_all(['ul', 'ol'])); r['tables'] = len(main.find_all('table'))

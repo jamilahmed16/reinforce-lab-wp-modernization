@@ -52,6 +52,17 @@ add_action('wp_enqueue_scripts', function () {
     if (!rl_is_rl_page()) return;
     foreach (['global-styles', 'wp-block-library', 'wp-block-library-theme', 'classic-theme-styles'] as $h) { wp_dequeue_style($h); wp_deregister_style($h); }
 }, 100);
+/* global styles are printed by core hooks, not a normal enqueue: unhook them on the same pages */
+add_action('wp', function () {
+    if (is_admin() || !rl_is_rl_page()) return;
+    remove_action('wp_enqueue_scripts', 'wp_enqueue_global_styles');
+    remove_action('wp_footer', 'wp_enqueue_global_styles', 1);
+    remove_action('wp_body_open', 'wp_global_styles_render_svg_filters');
+});
+/* no emojis on this site (copy rules D-072): drop the emoji detection script and styles everywhere */
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+remove_action('wp_enqueue_scripts', 'wp_enqueue_emoji_styles');
 
 add_action('wp_head', 'rl_header_css', 20);
 function rl_header_css() { ?>
