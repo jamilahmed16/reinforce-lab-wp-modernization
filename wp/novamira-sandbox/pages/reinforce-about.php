@@ -243,7 +243,7 @@ function rl_render_about() {
         <dt>Founder and CEO</dt><dd><a href="#founder"><?php echo esc_html($f['name']); ?></a></dd>
         <dt>What we build</dt><dd>AI Growth Systems: search, content and automation as one system</dd>
         <dt>Offices</dt><dd>Dhaka, Bangladesh · Katy, Texas, USA</dd>
-        <dt>Clients</dt><dd>Worldwide, working remotely</dd>
+        <dt>Clients</dt><dd><a href="<?php echo $u('clients'); ?>"><?php echo function_exists('rl_clients_list') ? count(rl_clients_list()) : ''; ?> named clients</a>, worldwide, working remotely</dd>
         <dt>Industries</dt><dd>8, from pharmaceutical to education</dd>
         <dt>Recognition</dt><dd>HackerNoon Startups of The Year 2024, winner in Dhaka (<a href="<?php echo $u('awards'); ?>">Awards</a>)</dd>
       </dl>

@@ -101,6 +101,7 @@ body.rl-project-page .fl-post-meta,body.rl-project-page .fl-post-nav,body.rl-pro
 .rl-portfolio .chips li{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-dim);border:1px solid var(--line-2);padding:3px 9px;margin:0}
 .rl-portfolio .p-note{margin:0 0 18px;border-left:3px solid var(--red-3);padding:12px 16px;background:linear-gradient(90deg,rgba(153,0,0,.1),transparent);font-size:15px;color:var(--ink-dim)}
 .rl-portfolio .p-note b{color:var(--ink)}
+.rl-portfolio .p-note a{color:var(--ink);border-bottom:1px solid var(--red-line);text-decoration:none}
 .rl-portfolio .p-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 .rl-portfolio .p-card{border:1px solid var(--line-2);background:var(--bg-2);display:grid;grid-template-rows:auto 1fr;margin:0}
 .rl-portfolio .p-shot{position:relative;border-bottom:1px solid var(--line-2);background:radial-gradient(120% 120% at 100% 0%,rgba(153,0,0,.22),transparent 55%),var(--panel);aspect-ratio:16/7;overflow:hidden}
@@ -216,7 +217,7 @@ function rl_render_portfolio() {
 <section id="projects">
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Projects&nbsp;<b>]</b></span><h2>What has Reinforce Lab built?</h2></div>
-    <p class="p-note"><b>Case studies with results are on the way.</b> We publish a number only when we can show where it comes from and the client agrees, so the projects below describe the work, not the results.</p>
+    <p class="p-note"><b>Case studies with results are on the way.</b> We publish a number only when we can show where it comes from and the client agrees, so the projects below describe the work, not the results. <a href="<?php echo $u('clients'); ?>">See all our clients</a>.</p>
     <div class="p-grid">
     <?php foreach ($data as $i => $p) {
         $ind = $p[2][0] !== '' ? '<a href="' . $u($p[2][1]) . '">' . esc_html($p[2][0]) . '</a>' : '';
