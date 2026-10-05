@@ -63,7 +63,7 @@ The self-hosted, preloaded fonts (D-123) removed the font-swap shift. Lab readin
 | Item | Pages | Owner / next step |
 |---|---|---|
 | ~~Outside citations~~ **DONE same day** | Sources added to the 8 agent pages, Home, Search Authority OS, Diagnostic, AI Search Optimization and the Audit: 42 of 53 pages now cite primary sources. Packages and the two hubs make no outside claims and link to sourced pages | See F-026 in `claude/decision-log.md` |
-| Question-shaped H2s | Home, Search Authority OS, Diagnostic | Claude drafts, Jamil approves (Home copy is approved design) |
+| ~~Question-shaped H2s~~ **DONE same day** | 3 per page on Home, Search Authority OS and Diagnostic, wording approved by Jamil | F-026 |
 | Blog posts | 0 published | Content phase; topic clusters per D-012 |
 | `dateModified` in schema | 47 of 53 have none | Appears when a page is edited after publishing; never by a bulk pass (F-003) |
 | `<main>` element | Theme uses `div role="main"` | Works as a landmark; optional theme template change |
