@@ -163,5 +163,22 @@ Email: hello@reinforcelab.com · Phone: +880 1329-657096 · USA: +1 832 548 4553
 
 **Ask a lawyer about (risk, not settled):**
 5. **EU or UK representative (GDPR and UK GDPR Article 27):** a company outside the EU or UK that regularly offers services to people there may need a named representative. Depends on how much of the business targets EU and UK clients.
-6. **Bangladesh data protection law:** check with local counsel which rules currently apply to Reinforce Lab Limited.
+6. **Bangladesh data protection law:** the Personal Data Protection Ordinance 2025 is now built into v2 (D-123); check with local counsel which of its rules apply now and which after the 18-month window, and whether registration with the authority is needed.
 7. **Business terms:** the policy says client data is covered by client agreements; make sure those agreements do say so.
+
+---
+
+## v2 (5 Oct, D-123): other countries' rules built in
+
+Jamil: "same way update privacy policy". What changed and why (sources in the D-123 entry of `claude/decision-log.md`):
+
+| Rule | Built in as |
+|---|---|
+| Bangladesh PDPO 2025: explicit consent, notice at collection, withdrawal, access, correction, deletion | Consent tick box on both forms with the notice next to it; consent stored with the date; Bangladesh paragraph under "Depending on where you live" |
+| LG Munich 2022 (Google Fonts) | Fonts served from our own site; no requests to Google Fonts on any page (tested) |
+| EDPB Guidelines 05/2021 (what is a transfer) | International transfers section rewritten |
+| CCPA/CPRA: honour Global Privacy Control | US paragraph: GPC treated as an opt-out, analytics not loaded |
+| GDPR art. 33 | 72-hour breach notice to the authority |
+| Children (COPPA, GDPR art. 8, PDPO) | Children section: under 18, no tracking or profiling |
+
+v2 text: `privacy-policy-final-2026-10-05.html` (live on page 3). v1: `privacy-policy-v1-2026-10-05.html`.

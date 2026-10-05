@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-123 | Privacy Policy v2 on `.online` (page 3): country rules (EU, UK, Bangladesh PDPO 2025, US with GPC) built in; consent tick box on the Contact and Diagnostic forms; fonts self-hosted, no Google Fonts requests | 5 Oct | DONE (Jamil: "same way update privacy policy") | this file |
 | D-122 | FTC and Affiliate Disclosure published (page 224, `/ftc-disclosure/`); affiliate links labelled "Ad" automatically site-wide | 5 Oct | DONE (Jamil: "Semrush and WP Engine affiliate links") | this file |
 | D-121 | Terms & Conditions published on `.online` (page 223, `/terms-conditions/`), Bangladesh law, website and store, rules from BD, US, UK and EU built in | 5 Oct | DONE (Jamil: "USD, full payment up front, businesses only, rest okay ... Read other countries rules and implement as well") | this file |
 | D-120 | Privacy Policy published on `.online` (page 3, `/privacy-policy/`) with a reusable legal-page template | 5 Oct | DONE (Jamil's six answers; review by Jamil with Claude as adviser) | this file |
@@ -182,6 +183,22 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-123 · Privacy Policy v2: other countries' rules built in, consent on forms, fonts self-hosted
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "same way update privacy policy then e Portfolio, Clients, Careers, Certificate of Incorporation")
+
+- **Rules read (not legal advice):**
+  - Bangladesh Personal Data Protection Ordinance 2025 (gazetted 6 Nov 2025; 18-month window to comply): data belongs to the person, explicit consent, a notice when data is collected (purpose, retention, transfers, how to withdraw), access, correction and deletion rights (https://www.thedailystar.net/tech-startup/news/bangladeshs-personal-data-protection-ordinance-2025-key-takeaways-4015401 ; https://bd-scl.com/insights/personal-data-protection-ordinance-2025-compliance.html ; https://www.consentstack.io/regulations/bd-pdpo).
+  - LG Munich, 20 Jan 2022: loading Google Fonts from Google's servers sends the visitor's IP to Google without a legal basis (https://www.activemind.legal/guides/ruling-google-fonts/). Beaver Builder documents the same fix: load fonts locally (https://docs.wpbeaverbuilder.com/beaver-builder/developer/how-to-tips/load-google-fonts-locally-gdpr).
+  - EDPB Guidelines 05/2021: a person sending their own data to a company abroad is not a "transfer" (https://www.goodwinlaw.com/en/insights/blogs/2021/12/edpb-defines-a-transfer-under-the-gdpr), so the transfers section now says forms and email go directly to us, and providers use their own safeguards.
+  - California (CCPA/CPRA): a Global Privacy Control browser signal must be treated as an opt-out (https://community.commandersact.com/consent-management/knowledge-base/ccpa-and-global-privacy-control).
+- **Policy text v2** (`claude/drafts/privacy-policy-final-2026-10-05.html`; v1 kept as `privacy-policy-v1-2026-10-05.html`; page backup `claude/data/backups/privacy-page-3-before-2026-10-05.json`): fonts served from our own site; forms show the notice and ask for a tick before sending, and we record the consent; consent added as a legal basis for form replies; a "Depending on where you live" section (EU/EEA, UK, Bangladesh PDPO, US with GPC, everyone else); children under 18; 72-hour breach notice; transfers rewritten.
+- **Forms** (`pages/reinforce-contact.php`, `saos/reinforce-diagnostic.php`): a required consent tick box; the notice says why, 24-month retention, Hostinger storage, never sold, how to withdraw or delete, with a Privacy Policy link; the server rejects a submission without the tick (`?sent=invalid`, tested) and stores `consent` (date and notice version) on the submission.
+- **Fonts** (`core/reinforce-header.php`, `core/reinforce-fonts.css`, `core/fonts/*.woff2`, SIL Open Font License): the sandbox folder returns 403 for woff2, so the files are copied to `wp-content/uploads/reinforce-fonts/` and the `@font-face` rules are printed inline with preload for Oswald and IBM Plex Sans. Beaver Builder's Google Fonts stylesheet is blocked (`fl_builder_google_fonts_pre_enqueue`, `fl_enable_google_fonts_enqueue`, and a `style_loader_tag` filter, because the theme's Customizer font still came through), and Google font hints are removed. Customizer custom CSS (post 52) lost its first line, an `@import` of Google Fonts Oswald 300 to 700 (no 300 weight is used; backup `claude/data/backups/custom-css-post-52-before-2026-10-05.json`).
+- **Verified:** Home, About, Privacy, Contact in Chromium: 0 requests to fonts.googleapis.com or fonts.gstatic.com, all woff2 200, Oswald on the H1, 8 faces loaded; curl on 8 more templates: 0 Google Fonts references; parity 61 files, 0 differences; `copy-check.py` 0 issues.
+- **Launch items (on the QA gate):** the consent banner must honour GPC and offer a "Cookie settings" footer link before GA4 loads; GA4 retention set to 14 months; payment provider named in the policy.
 
 ---
 
