@@ -285,7 +285,7 @@ function rl_render_home() {
   <!-- PROBLEM -->
   <section class="band alt">
     <div class="wrap">
-      <div class="head"><span class="ey"><b>[</b>&nbsp;The Problem&nbsp;<b>]</b></span><h2>Growth stalls when marketing, search and operations run apart.</h2><p class="lede">Your website, content, search visibility, CRM and team workflows each live in their own tool. Every hand-off is manual, every report is stitched together by hand, and nobody can see which effort actually produces revenue.</p></div>
+      <div class="head"><span class="ey"><b>[</b>&nbsp;The Problem&nbsp;<b>]</b></span><h2>Why does growth stall when marketing, search and operations run apart?</h2><p class="lede">Your website, content, search visibility, CRM and team workflows each live in their own tool. Every hand-off is manual, every report is stitched together by hand, and nobody can see which effort actually produces revenue.</p></div>
       <div class="pains">
         <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Manual work eats the week.</b> Reporting, briefs, follow-ups and publishing still run on copy-paste. That is time your team should spend on decisions.</p></div>
         <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Search visibility is fragmenting.</b> Buyers now research in Google, ChatGPT, Perplexity and AI Overviews. Most growth plans still measure only one of them.</p></div>
@@ -299,7 +299,7 @@ function rl_render_home() {
   <!-- SYSTEM / HOW -->
   <section>
     <div class="wrap">
-      <div class="head"><span class="ey"><b>[</b>&nbsp;How it works&nbsp;<b>]</b></span><h2>How an AI Growth System is built.</h2><p class="lede">Every system connects four layers: your data, AI models, automated workflows and a revenue dashboard. We build it in four stages, run as one loop, whether we start with search, content, automation or lead generation.</p></div>
+      <div class="head"><span class="ey"><b>[</b>&nbsp;How it works&nbsp;<b>]</b></span><h2>How is an AI Growth System built?</h2><p class="lede">Every system connects four layers: your data, AI models, automated workflows and a revenue dashboard. We build it in four stages, run as one loop, whether we start with search, content, automation or lead generation.</p></div>
       <ol class="steps" style="list-style:none;margin:0;padding:0">
         <li class="step"><div class="k" aria-hidden="true">01</div><h3>Diagnose</h3><p>Map your website, search visibility, content, workflows and funnel. Find where time, traffic and revenue are being lost.</p></li>
         <li class="step"><div class="k" aria-hidden="true">02</div><h3>Architect</h3><p>Design the system: which workflows to automate, which searches to own, and which data feeds which decision.</p></li>
@@ -374,7 +374,7 @@ function rl_render_home() {
   <!-- FAQ (company + category level; product FAQs live on /search-authority-os/) -->
   <section class="band alt faq">
     <div class="wrap" style="max-width:900px">
-      <div class="head"><span class="ey"><b>[</b>&nbsp;Questions&nbsp;<b>]</b></span><h2>About AI Growth Systems and Reinforce Lab.</h2></div>
+      <div class="head"><span class="ey"><b>[</b>&nbsp;Questions&nbsp;<b>]</b></span><h2>What should you know about AI Growth Systems?</h2></div>
       <?php foreach (rl_home_faqs() as $k => $f) { ?>
       <details<?php echo $k === 0 ? ' open' : ''; ?>><summary><h3 style="font:inherit;letter-spacing:inherit;margin:0"><?php echo esc_html($f[0]); ?></h3></summary><p><?php echo $f[1]; ?></p></details>
       <?php } ?>

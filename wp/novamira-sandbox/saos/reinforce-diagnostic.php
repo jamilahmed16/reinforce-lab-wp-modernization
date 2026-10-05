@@ -312,7 +312,7 @@ function rl_render_diagnostic() {
 
 <section class="band alt" id="analyze">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What we analyze&nbsp;<b>]</b></span><h2>Seven intelligence layers.</h2><p class="lede">Not one meaningless SEO score. We review seven dimensions of authority, each with evidence and a gap.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What we analyze&nbsp;<b>]</b></span><h2>What does the diagnostic review?</h2><p class="lede">Not one meaningless SEO score. We review seven dimensions of authority, each with evidence and a gap.</p></div>
     <div class="cols c4">
       <div class="cell"><div class="n">01</div><h3>Organic Search</h3><p>Rankings, queries, impressions, CTR, visibility and the opportunities you're missing.</p></div>
       <div class="cell"><div class="n">02</div><h3>AI Search</h3><p>Brand mentions, citations and entity visibility across ChatGPT, Perplexity and AI Overviews.</p></div>
@@ -343,7 +343,7 @@ function rl_render_diagnostic() {
 
 <section class="band alt" id="how">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;How it works&nbsp;<b>]</b></span><h2>From request to report.</h2></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;How it works&nbsp;<b>]</b></span><h2>How does the diagnostic work?</h2></div>
     <ol class="steps" style="list-style:none;margin:0;padding:0">
       <li class="step"><div class="k" aria-hidden="true">01</div><h3>Request</h3><p>You share a few details. Two minutes.</p></li>
       <li class="step"><div class="k" aria-hidden="true">02</div><h3>Research</h3><p>We analyze your site, search data, competitors and AI visibility.</p></li>
@@ -367,7 +367,7 @@ function rl_render_diagnostic() {
 
 <section class="band alt faq" id="faq">
   <div class="wrap" style="max-width:900px">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Questions&nbsp;<b>]</b></span><h2>About the diagnostic.</h2></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Questions&nbsp;<b>]</b></span><h2>What do people ask about the diagnostic?</h2></div>
     <?php foreach (rl_diag_faqs() as $k => $q) {
         $a = esc_html($q[1]);
         if (!empty($q[2])) $a .= ' <a href="' . $u($q[2]) . '">' . $q[3] . '</a>.'; ?>

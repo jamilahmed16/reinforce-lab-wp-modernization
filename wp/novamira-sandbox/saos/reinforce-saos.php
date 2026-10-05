@@ -299,7 +299,7 @@ function rl_render_saos() {
   <div class="wrap">
     <div class="head">
       <span class="ey"><b>[</b>&nbsp;The Problem&nbsp;<b>]</b></span>
-      <h2>Your search strategy is running on disconnected systems.</h2>
+      <h2>Why does search strategy break on disconnected systems?</h2>
       <p class="lede">SEO data sits in one tool. Content research happens somewhere else. Writers don't know what customers are complaining about. Nobody is connecting the signals, and more content isn't the answer.</p>
     </div>
     <div class="pains">
@@ -411,7 +411,7 @@ function rl_render_saos() {
   <div class="wrap">
     <div class="head">
       <span class="ey"><b>[</b>&nbsp;The difference&nbsp;<b>]</b></span>
-      <h2>Traditional content operation vs. Search Authority OS.</h2>
+      <h2>How is Search Authority OS different from a content team?</h2>
     </div>
     <div class="cmp-scroll">
       <table class="cmp">
@@ -500,7 +500,7 @@ function rl_render_saos() {
 
 <section class="band alt faq" id="faq">
   <div class="wrap" style="max-width:900px">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Questions&nbsp;<b>]</b></span><h2>Before you book a diagnostic.</h2></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Questions&nbsp;<b>]</b></span><h2>What should you know before booking a diagnostic?</h2></div>
     <?php foreach (rl_saos_faqs() as $k => $f) { ?>
     <details<?php echo $k === 0 ? ' open' : ''; ?>><summary><h3 style="font:inherit;letter-spacing:inherit;margin:0"><?php echo esc_html($f[0]); ?></h3></summary><p><?php echo esc_html($f[1]); ?></p></details>
     <?php } ?>
