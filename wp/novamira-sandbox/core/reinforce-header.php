@@ -129,7 +129,7 @@ body a.fl-screen-reader-text:focus{clip:auto;width:auto;height:auto;overflow:vis
 .rl-footer .f-col h4{font-family:var(--f-display);text-transform:uppercase;font-size:15px;letter-spacing:.07em;color:var(--ink);margin:0 0 18px;position:relative;padding-bottom:10px}
 .rl-footer .f-col h4::after{content:"";position:absolute;left:0;bottom:0;width:26px;height:2px;background:var(--red)}
 .rl-footer .f-col ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
-.rl-footer .f-col a{color:var(--ink-dim);font-size:14px;transition:.15s;display:inline-block}.rl-footer .f-col a:hover{color:#fff;transform:translateX(4px)}
+.rl-footer .f-col li>span{color:var(--ink-faint);font-size:14px}.rl-footer .f-col a{color:var(--ink-dim);font-size:14px;transition:.15s;display:inline-block}.rl-footer .f-col a:hover{color:#fff;transform:translateX(4px)}
 .rl-footer .f-col .flag{color:var(--ink)}.rl-footer .f-col .flag:hover{color:var(--red-3)}
 .rl-footer .f-contact{margin-top:clamp(38px,5vw,60px);border-top:1px solid var(--line);padding-top:clamp(30px,4vw,46px);text-align:center}
 .rl-footer .f-contact .ct{font-family:var(--f-display);text-transform:uppercase;font-size:18px;letter-spacing:.08em;color:var(--ink);margin-bottom:clamp(24px,3vw,34px)}
@@ -361,9 +361,10 @@ function rl_render_footer() {
       <div class="f-col">
         <h4>Resources</h4>
         <ul>
-          <li><a href="#">Get a Free Quote</a></li>
-          <li><a href="#">Sitemap</a></li>
-          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="<?php echo esc_url(rl_url_by_path('search-authority-diagnostic')); ?>">Get a Free Quote</a></li>
+          <li><a href="<?php echo esc_url(home_url('/sitemap_index.xml')); ?>">Sitemap</a></li>
+          <?php $rl_pp = get_privacy_policy_url(); /* WordPress privacy page (page 3): a link only once it is published, plain text until then (D-119) */ ?>
+          <li><?php echo $rl_pp ? '<a href="' . esc_url($rl_pp) . '">Privacy Policy</a>' : '<span>Privacy Policy</span>'; ?></li>
           <li><a href="#">Terms &amp; Conditions</a></li>
           <li><a href="#">FTC Disclosure</a></li>
           <li><a href="#">Certificate of Incorporation</a></li>

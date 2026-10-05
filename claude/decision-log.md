@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-119 | Footer: Get a Free Quote, Sitemap and Privacy Policy wired | 5 Oct | DONE (Jamil: "First these 3") | this file |
 | D-118 | Titles and meta on 26 pages within limits; all 8 agent titles on one pattern; LinkedIn, Crunchbase, Facebook, Instagram added; footer social icons live | 5 Oct | DONE (Jamil: "approve all, switch all 8 agents to the same pattern" + 4 profile URLs) | this file |
 | D-117 | F-025 fixes 1 to 3: site name, Organization profiles and contact point, our own llms.txt | 5 Oct | DONE (Jamil: "yes, fix 1 to 3 and use the directory profiles") | this file |
 | F-025 | SEO, AEO, GEO and LLM readiness of all 45 pages: page structure ready; site-wide entity settings and content depth are the gaps | 5 Oct | FINDING; fix list awaits Jamil | [research](research/seo-aeo-geo-readiness-2026-10-05.md) |
@@ -178,6 +179,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-119 · Footer: three placeholder links wired
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "Sitemap: point it at the sitemap. Get a Free Quote: point it at the Diagnostic page. Privacy Policy: point it at the privacy page ... First these 3")
+
+- **Get a Free Quote** → `/search-authority-diagnostic/` (200). **Sitemap** → `/sitemap_index.xml` (200).
+- **Privacy Policy:** page 3 is still a **draft** (a link would 404 for visitors) and holds WordPress's default template ("Suggested text: Our website address is: http://reinforcelab.online ..."). The footer now uses WordPress's privacy-page setting (`get_privacy_policy_url()`, page 3): plain text until the page is published, then a link automatically.
+- **Found, not changed:** the Contact and Diagnostic form notes link to `get_permalink(3)` (`?page_id=3`), which visitors also get as a 404 while page 3 is a draft.
+- `#` links on a page: 20 to 17. No PHP notices; `copy-check.py` 0 issues.
 
 ---
 
