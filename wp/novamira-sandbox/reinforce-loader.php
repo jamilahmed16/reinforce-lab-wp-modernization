@@ -15,6 +15,7 @@ foreach ([
     'saos/reinforce-agent-visuals.php',
     'saos/reinforce-agent-pages.php',
     'saos/reinforce-agents.php',
+    'services/reinforce-aigrowth.php',
     'services/reinforce-aiso.php',
     'services/reinforce-aiwork.php',
     'services/reinforce-audit.php',
