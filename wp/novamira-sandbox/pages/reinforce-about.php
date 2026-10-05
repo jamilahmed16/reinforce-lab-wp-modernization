@@ -16,6 +16,7 @@ function rl_about_person() {
         'name' => 'Jamil Ahmed',
         'job' => 'Founder and CEO',
         'linkedin' => 'https://www.linkedin.com/in/ahmedjamil16/',
+        'interview' => 'https://onalytica.com/blog/posts/interview-jamil-ahmed/', // Onalytica, 7 Sep 2018: career and education source (verified, F-023)
     ];
 }
 
@@ -83,6 +84,21 @@ body.rl-about-page .fl-page-content,body.rl-about-page .fl-content,body.rl-about
 @media(max-width:1000px){.rl-about .c4{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:900px){.rl-about .story{grid-template-columns:1fr}}
 @media(max-width:600px){.rl-about .c4{grid-template-columns:1fr}.rl-about .glance dl{grid-template-columns:minmax(0,36%) 1fr}}
+.rl-about .founder .card .ph{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;margin:0 0 20px;border:1px solid var(--line-2)}
+.rl-about .cred{margin:0 0 20px;display:grid;grid-template-columns:auto 1fr;column-gap:18px}
+.rl-about .cred dt,.rl-about .cred dd{margin:0;padding:12px 0;border-top:1px solid var(--line)}
+.rl-about .cred dt{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3);padding-top:15px}
+.rl-about .cred dd{color:var(--ink);font-size:15px}
+.rl-about .founder .card .links{margin-top:0}
+.rl-about .founder .txt .sub{margin-top:0}
+.rl-about .founder blockquote small{color:var(--ink-faint);font-size:13px}
+.rl-about .path{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.rl-about .path li{background:var(--bg-2);padding:20px 22px}
+.rl-about .path .y{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--red-3);text-transform:uppercase}
+.rl-about .path h4{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.03em;font-size:17px;color:var(--ink);margin:8px 0 6px}
+.rl-about .path p{margin:0;color:var(--ink-dim);font-size:14.5px}
+@media(max-width:1000px){.rl-about .path{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.rl-about .path{grid-template-columns:1fr}.rl-about .cred{grid-template-columns:minmax(0,36%) 1fr}}
 </style>
 <?php }
 
@@ -112,9 +128,12 @@ add_filter('wpseo_schema_graph', function ($graph) {
         '@type' => 'Person', '@id' => $pid, 'name' => $f['name'], 'url' => $url,
         'jobTitle' => $f['job'], 'worksFor' => ['@id' => $org],
         'description' => 'Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.',
-        'knowsAbout' => ['Search engine optimization', 'AI search optimization', 'AI automation', 'Pharmacy'],
+        'knowsAbout' => ['Search engine optimization', 'AI search optimization', 'AI automation', 'Pharmacy', 'Pharmaceutical marketing'],
+        'alumniOf' => ['@type' => 'CollegeOrUniversity', 'name' => 'East West University', 'address' => ['@type' => 'PostalAddress', 'addressLocality' => 'Dhaka', 'addressCountry' => 'BD']],
+        'subjectOf' => ['@type' => 'Article', 'headline' => 'Interview with Jamil Ahmed', 'url' => $f['interview'], 'datePublished' => '2018-09-07', 'publisher' => ['@type' => 'Organization', 'name' => 'Onalytica']],
         'sameAs' => [$f['linkedin']],
     ];
+    if ($ph = get_option('rl_about_founder_photo')) $graph[count($graph) - 1]['image'] = $ph;
     $graph[] = ['@type' => 'FAQPage', '@id' => $url . '#faq', 'isPartOf' => ['@id' => $url], 'mainEntity' => array_map(function ($q) { return ['@type' => 'Question', 'name' => $q[0], 'acceptedAnswer' => ['@type' => 'Answer', 'text' => $q[1]]]; }, rl_about_faqs())];
     return $graph;
 }, 20);
@@ -174,6 +193,17 @@ function rl_render_about() {
         ['Google', 'Reviews', '4.6 from 8 reviews.', 'https://www.google.com/maps/search/?api=1&query=Reinforce+Lab+Limited+Concord+Tower+Dhaka'],
     ];
     $inds = function_exists('rl_ind_data') ? rl_ind_data() : [];
+    $photo = get_option('rl_about_founder_photo'); // headshot URL; the photo shows once Jamil supplies one
+    $career = [
+        ['2012', 'International business, oncology pharma', 'Country manager for markets in South Asia, West Africa and Latin America.'],
+        ['2016', 'International marketing, Square Group', 'New business, product registration and brand positioning.'],
+        ['2017', 'Product Manager, Janssen', 'Immunology, at the pharmaceutical companies of Johnson & Johnson.'],
+        ['2018', 'Interviewed by Onalytica', 'On business intelligence, data and digital marketing.'],
+        ['2020', 'Starts Reinforce Lab', 'A full-service digital marketing agency in Tallinn, Estonia.'],
+        ['2021', 'Reinforce Lab Limited', 'Founded in Bangladesh on 1 April 2021.'],
+        ['2025', 'Semrush Ambassador', 'Named a Semrush Ambassador in May 2025.'],
+        ['Today', 'CEO, AI Growth Systems', 'Leads the shift to search, content and automation as one system.'],
+    ];
     ob_start(); ?>
 <div class="rl-page rl-about">
 
@@ -310,20 +340,35 @@ function rl_render_about() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Leadership&nbsp;<b>]</b></span><h2>Who leads Reinforce Lab?</h2></div>
     <div class="founder">
       <div class="card">
+        <?php if ($photo) { ?><img class="ph" src="<?php echo esc_url($photo); ?>" alt="Jamil Ahmed, Founder and CEO of Reinforce Lab" width="600" height="750" loading="lazy"><?php } ?>
         <p class="nm"><?php echo esc_html($f['name']); ?></p>
         <p class="role"><?php echo esc_html($f['job']); ?>, Reinforce Lab</p>
-        <ul>
-          <li>Pharmacist</li>
-          <li>SEO &amp; AI search consultant</li>
-          <li>Semrush Ambassador</li>
-        </ul>
-        <a class="btn g" href="<?php echo esc_url($f['linkedin']); ?>" rel="noopener" target="_blank">Jamil on LinkedIn <span class="ar">&rarr;</span></a>
+        <dl class="cred">
+          <dt>Education</dt><dd>B.Pharm, East West University, Dhaka</dd>
+          <dt>Pharma career</dt><dd>From 2012: international business, Square Group, Janssen (Johnson &amp; Johnson)</dd>
+          <dt>Markets</dt><dd>Sri Lanka, Ghana, Kenya, Mauritania, Puerto Rico, Cuba</dd>
+          <dt>Today</dt><dd>SEO and AI search consultant · Semrush Ambassador</dd>
+        </dl>
+        <div class="links">
+          <a class="btn g" href="<?php echo esc_url($f['linkedin']); ?>" rel="noopener" target="_blank">Jamil on LinkedIn <span class="ar">&rarr;</span></a>
+          <a class="btn g" href="<?php echo esc_url($f['interview']); ?>" rel="noopener" target="_blank">2018 interview <span class="ar">&rarr;</span></a>
+        </div>
       </div>
       <div class="txt">
-        <p><strong>Jamil Ahmed</strong> founded Reinforce Lab and leads it as CEO. He is an SEO and AI search consultant, a pharmacist and a Semrush Ambassador.</p>
-        <p>Jamil took the company from a full-service agency in Tallinn to an AI Growth Systems company: the website, content and search visibility built as one system, connected with AI automation, and measured against revenue.</p>
+        <h3 class="sub">From pharmaceutical marketing to AI Growth Systems</h3>
+        <p><strong>Jamil Ahmed</strong> founded Reinforce Lab and leads it as CEO. He is an SEO and AI search consultant, a pharmacist and a Semrush Ambassador, and his whole career has been about one job: putting the right product in front of the right people, with claims that stand up.</p>
+        <p>He trained as a pharmacist at East West University in Dhaka and started in pharmaceutical international business in 2012, at an oncology company in Bangladesh. As country manager for markets including Sri Lanka, Ghana, Kenya, Mauritania, Puerto Rico and Cuba, he registered and marketed more than 16 oncology brands and 5 general medicine brands in Sri Lanka, and helped bring the antibiotic ciprofloxacin (brand Xbac) onto Ghana's Essential Medicines List through the Ghana National Drugs Program.</p>
+        <p>He went on to international marketing at Square Group in 2016 and, in 2017, to Product Manager for Immunology at Janssen, the pharmaceutical companies of Johnson &amp; Johnson, where he ran promotional plans, trained sales teams and worked with key opinion leaders.</p>
+        <p>Regulated marketing taught him that every claim needs evidence and every message has to survive medical and legal review. He brought that discipline to digital marketing, started Reinforce Lab in Tallinn in 2020 and took it to Bangladesh in 2021. Today he leads the company's shift to AI Growth Systems: the website, content and search visibility built as one system, connected with AI automation, and measured against revenue.</p>
+        <blockquote>“I build AI Growth Systems for businesses with AI Automation, AI Search &amp; SEO.”<br><small>Jamil Ahmed, LinkedIn</small></blockquote>
       </div>
     </div>
+    <h3 class="sub">Career path</h3>
+    <ol class="path">
+      <?php foreach ($career as $c) { ?>
+      <li><span class="y"><?php echo esc_html($c[0]); ?></span><h4><?php echo esc_html($c[1]); ?></h4><p><?php echo esc_html($c[2]); ?></p></li>
+      <?php } ?>
+    </ol>
   </div>
 </section>
 
