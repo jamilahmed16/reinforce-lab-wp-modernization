@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - Clients
- * Description: /clients/ (production URL kept, D-127). Provides [reinforce_clients]. The 46 client logos shown on reinforcelab.com/clients/, imported into the media library (attachments listed in option rl_client_logos; sources in claude/data/client-logos-2026-10.csv). Jamil confirmed all are real clients and may be shown (5 Oct 2026). Uses the shared kit (D-044). Schema: CollectionPage with an ItemList of Organization, FAQPage.
+ * Description: /clients/ (production URL kept, D-127). Provides [reinforce_clients]. The 46 client logos shown on reinforcelab.com/clients/, imported into the media library (originals in option rl_client_logos, white versions in rl_client_logos_white; sources in claude/data/client-logos-2026-10.csv). Jamil confirmed all are real clients and may be shown (5 Oct 2026). Uses the shared kit (D-044). Schema: CollectionPage with an ItemList of Organization, FAQPage.
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -78,19 +78,17 @@ body.rl-clients-page .fl-page-content,body.rl-clients-page .fl-content,body.rl-c
 .rl-clients .c-tally div{background:var(--bg-2);padding:20px 22px;margin:0}
 .rl-clients .c-tally dt{font-family:var(--f-display);font-size:44px;line-height:1;color:var(--ink);font-weight:500;margin:0}
 .rl-clients .c-tally dd{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:6px 0 0}
-/* logos drawn in one light tone on the dark ground: grayscale + invert turns each logo's white box black, and screen blending drops the black (D-127 v2) */
-.rl-clients .lg{filter:grayscale(1) invert(1) contrast(1.1);mix-blend-mode:screen;opacity:.78;transition:opacity .2s}
-.rl-clients .c-peek{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));flex:1;isolation:isolate;background:var(--bg-2)}
+/* white versions of each logo (D-127 v3, made from the originals: every mark white, white areas inside marks see-through) */
+.rl-clients .lg{opacity:.88;transition:opacity .2s}
+.rl-clients .c-peek{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));flex:1;background:var(--bg-2)}
 .rl-clients .c-peek span{display:grid;place-items:center;padding:14px 16px;min-height:80px;border-top:1px solid var(--line)}
 .rl-clients .c-peek span:not(:nth-child(3n)){border-right:1px solid var(--line)}
 .rl-clients .c-peek img{max-width:100%;max-height:46px;width:auto;height:auto;object-fit:contain}
-.rl-clients .c-wall{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));margin:0;padding:0;list-style:none;isolation:isolate;background:var(--bg)}
+.rl-clients .c-wall{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));margin:0;padding:0;list-style:none;background:var(--bg)}
 .rl-clients .c-wall li{display:grid;place-items:center;height:112px;padding:18px 22px;margin:0;border-bottom:1px solid var(--line)}
 .rl-clients .c-wall li:not(:nth-child(6n)){border-right:1px solid var(--line)}
 .rl-clients .c-wall li:hover .lg{opacity:1}
 .rl-clients .c-wall li:last-child{border-right:0}
-/* light-coloured logos turn dark grey when inverted: lift them to match the rest */
-.rl-clients .lg.lift{filter:grayscale(1) invert(1) brightness(1.9) contrast(1.3)}
 .rl-clients .c-wall img{max-width:100%;max-height:64px;width:auto;height:auto;object-fit:contain}
 .rl-clients .c-all{margin:34px 0 0;border-top:1px solid var(--line-2);padding-top:22px}
 .rl-clients .c-all h3{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 14px;font-weight:500}
@@ -119,10 +117,11 @@ function rl_render_clients() {
     $map = (array) get_option('rl_client_logos', []);
     $list = rl_clients_list();
     $proj = rl_clients_projects();
-    $lift = ['martinet-goal', 'microinspire', 'mixed-global-series', 'btf-tennis', 'thz-bangladesh', 'eco-fast-fashion'];
-    $logo = function ($name, $slug, $lazy = true) use ($map, $lift) {
-        if (empty($map[$slug])) return '';
-        return wp_get_attachment_image((int) $map[$slug], 'full', false, ['class' => in_array($slug, $lift, true) ? 'lg lift' : 'lg', 'alt' => $name . ' logo', 'loading' => $lazy ? 'lazy' : 'eager', 'decoding' => 'async']);
+    $white = (array) get_option('rl_client_logos_white', []);
+    $logo = function ($name, $slug, $lazy = true) use ($map, $white) {
+        $id = !empty($white[$slug]) ? (int) $white[$slug] : (!empty($map[$slug]) ? (int) $map[$slug] : 0);
+        if (!$id) return '';
+        return wp_get_attachment_image($id, 'full', false, ['class' => 'lg', 'alt' => $name . ' logo', 'loading' => $lazy ? 'lazy' : 'eager', 'decoding' => 'async']);
     };
     $purl = function ($slug) { $p = get_page_by_path($slug, OBJECT, 'rl_project'); return ($p && $p->post_status === 'publish') ? get_permalink($p) : ''; };
     $peek = ['United International University', 'Beacon Pharmaceuticals', 'Bikroy.com', 'HP', 'Accesstel', 'Union Properties'];
