@@ -34,7 +34,12 @@ add_action('wp_head', function () {
 }, 1);
 /* Beaver Builder: no Google Fonts stylesheet and no prefetch hints for it (the site fonts are local) */
 add_filter('fl_builder_google_fonts_pre_enqueue', '__return_empty_array');
+add_filter('fl_enable_google_fonts_enqueue', '__return_false');
 add_filter('fl_builder_preload_google_fonts', '__return_false');
+/* the theme's Customizer fonts still come through as an "fl-builder-google-fonts-*" stylesheet: never print it */
+add_filter('style_loader_tag', function ($tag, $handle, $href) {
+    return (strpos((string) $href, 'fonts.googleapis.com') !== false || strpos((string) $href, 'fonts.gstatic.com') !== false) ? '' : $tag;
+}, 99, 3);
 add_filter('wp_resource_hints', function ($urls) {
     return array_values(array_filter((array) $urls, function ($u) {
         $h = is_array($u) ? (isset($u['href']) ? $u['href'] : '') : $u;
