@@ -97,3 +97,5 @@ Two sites (hackernoon.com, clutch.co) block this environment's direct fetch; the
 - **"#11 in Marketing": now VERIFIED.** Jamil's screenshot of HackerNoon's own leaderboard (`startups.hackernoon.com/industry/marketing`, Startups of The Year 2024) shows "#11 Reinforce Lab Limited" (Dhaka; tags Marketing, Creative Agency, Media Production). Consistent with the published results, which name 10 (winner, 2 runners-up, 7 honourable mentions) of 8k marketing startups. [Marketing leaderboard](https://startups.hackernoon.com/industry/marketing)
 
 **Update 5 Oct 2026 (D-108):** Jamil set the founding date to 1 April 2021 (matching Crunchbase) for every place the site states it.
+
+**Update 5 Oct 2026 (D-109):** Jamil confirmed the origin: a full-service digital marketing agency started in Tallinn, Estonia in 2020, expanded to Bangladesh in 2021. This explains the 2020 dates and the "European startup" line.

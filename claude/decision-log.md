@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-109 | Origin story from Jamil: started in Tallinn, Estonia 2020; expanded to Bangladesh 2021; About draft v2 | 5 Oct | RECORDED; About copy in review | this file |
 | D-108 | Founding date is 1 April 2021 everywhere (replaces 2020, D-069) | 5 Oct | DONE (Jamil: "1 April 2021 everywhere") | this file |
 | D-107 | `/awards/` linked from the footer only (Company column, after About Us) | 5 Oct | DONE (Jamil: "it will be in the footer only for now") | this file |
 | D-106 | Awards page built on `.online` at `/awards/` (page 221) | 4 Oct | DONE (Jamil: "use /awards/, drop the amber items, build it") | this file |
@@ -166,6 +167,17 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-109 · Origin story from Jamil; About page draft v2
+**Date:** 5 October 2026 · **Status:** RECORDED (fact from Jamil); About copy DRAFT v2 in review, nothing built.
+
+- **Jamil's words:** "We started as a full service digital marketing agency from Tallin, Estonia, 2020, and then we expanded to Bangladesh in 2021. Now we shifted to scale businesses with automation and reduce repetitive work."
+- **What it settles (F-023):** the 2020 dates (Clutch, the old production About page) and the "began as a European startup" line in the press release and on DesignRush describe the Tallinn start. 1 April 2021 (D-108) is read as the date of Reinforce Lab Limited in Bangladesh. `[CONFIRM]` with Jamil before the build; D-108 values on `.online` are unchanged.
+- **Still unexplained:** the 2018 Onalytica interview calls Jamil "CEO at Reinforce Lab", two years before the Tallinn start.
+- **About draft v2** (`claude/drafts/about-page-content-2026-10-05.md`): the origin story and a milestone timeline (2020 Tallinn, 2021 Bangladesh, then the D-106 awards), services cut to a short summary with links, no culture or careers section (Jamil: "remove"), team and client proof left as `[LATER]` slots.
+- **Context Jamil sent:** a Google AI Overview for "reinforce lab limited history" says "Founded around 2020 to 2021" and cites Facebook, LinkedIn, Crunchbase and HackerNoon, not the website. INFERENCE: one plain FAQ answer on About ("When and where did Reinforce Lab start?") gives AI answers a first-party source to cite.
 
 ---
 
