@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| F-024 | Hero audit, 45 pages: 36 match the kit standard; Search Authority OS, Home and Awards heroes are out of line | 5 Oct | FINDING; fixes await Jamil | [research](research/hero-audit-2026-10-05.md) |
 | D-113 | About page: Our story and Milestones aligned as two equal columns | 5 Oct | DONE (Jamil: "either separate it with section or make it aligned") | this file |
 | D-112 | About page: "Why are there no client logos or results" section removed | 5 Oct | DONE (Jamil: "remove this") | this file |
 | D-111 | About page founder profile rebuilt from the verified 2018 Onalytica career facts | 5 Oct | APPROVED (Jamil: "keep both sentences, keep all career details"); headshot to follow | this file |
@@ -171,6 +172,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## F-024 · Hero audit: 36 of 45 heroes match; Search Authority OS, Home and Awards do not
+**Date:** 5 October 2026 · **Status:** FINDING (Jamil: "Audit entire website for the hero sections"); fixes need Jamil's go-ahead.
+
+- **Method:** `claude/tools/hero-audit.mjs` on all 45 published pages at 1440 px, and 10 pages at 1900 px; hero screenshots reviewed. Full report: `claude/research/hero-audit-2026-10-05.md`.
+- **Standard (36 pages):** kit hero, 80 px padding, H1 64 px uppercase on 3 lines, 19 px lede, visual panel about 620 by 505 px with edges within 25 px of the text column.
+- **Out of line:** Search Authority OS (older hero; panel 434 px against 576 px of text, 71 px gaps; 4-line H1); Home (same older hero; the only sentence-case H1; 88 px gaps); Awards (193 px rules panel against 456 px of text); Diagnostic (H1 58 px; the form is 85 px taller at each end); Packages (H1 60 px); Agents hub (41 px gaps); Contact (form 113 px longer at the bottom).
+- **Recommendation:** one hero rule for every page; move Search Authority OS and Home onto the kit hero with panels stretched to the text height; Jamil to decide the Home H1 case (the locked core message is 5 lines in uppercase at 64 px).
 
 ---
 

@@ -56,3 +56,11 @@ Add pages to the `pages` map as they are built. It caches static assets for dete
 4. Check: `shot.mjs width …`, screenshots, and `rl.py crawl` for site-wide copy changes.
 5. `rl.py snapshot` if pages, menus, Yoast or settings changed, then `site-map.py`.
 6. Record the change in `claude/decision-log.md`, commit and push.
+
+## `hero-audit.mjs`: hero consistency check (F-024)
+
+```bash
+node claude/tools/hero-audit.mjs paths.txt out.json 1440 shots/   # one line per page path; '' is Home
+```
+
+Measures H1 size, case and line count, hero padding, and how far the visual panel's top and bottom edges are from the text column's. Report: `claude/research/hero-audit-2026-10-05.md`.
