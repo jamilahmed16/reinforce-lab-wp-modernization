@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-107 | `/awards/` linked from the footer only (Company column, after About Us) | 5 Oct | DONE (Jamil: "it will be in the footer only for now") | this file |
 | D-106 | Awards page built on `.online` at `/awards/` (page 221) | 4 Oct | DONE (Jamil: "use /awards/, drop the amber items, build it") | this file |
 | D-105 | Separate Awards page (About stays separate): design mockup v1 for review | 4 Oct | APPROVED, built as D-106 | this file |
 | F-023 | Reputation and recognition research: one independently verified award (HackerNoon, Dhaka 2024), conflicting public facts | 4 Oct | `[VERIFIED where marked; rest SELF-REPORTED]` | this file |
@@ -167,6 +168,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 ---
 
+## D-107 · `/awards/` linked from the footer only
+**Date:** 5 October 2026 · **Status:** DONE (Jamil: "it will be in the footer only for now")
+
+- **Change:** one link, "Awards", added to the footer's Company column after "About Us" in `core/reinforce-header.php` (`rl_render_footer()`), using `rl_url_by_path('awards')` like the other links. The footer is on every page, so `/awards/` now has a site-wide internal link.
+- **Not changed:** the main menu and the About page. Jamil may revisit this later ("for now").
+- **Verified:** the link renders on `/`, `/about-us/` and `/awards/` and points to `https://reinforcelab.online/awards/` (HTTP 200); `rl.py parity` 47 files, 0 differences.
+- **Still open from D-106:** the WP Engine and Crunchbase links; `/awards/` in the URL Decision Register.
+
+---
+
 ## D-106 · Awards page built on `.online` at `/awards/` (page 221)
 **Date:** 4 October 2026 · **Status:** DONE (Jamil: "use /awards/, drop the amber items, build it"; CEO Monthly: "eliminate")
 
@@ -185,7 +196,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 - **Schema:** Yoast WebPage `about` the Organization; the Organization node gets `award` with the four confirmed awards and honours; `FAQPage` (4).
 - **Verified:** HTTP 200; `noindex, nofollow`; 1 H1, 8 H2; no `href="#"` inside the page content; schema as above; no PHP notices; `copy-check.py` 0 issues on the file and the live page; desktop 1440 and phone 390 with no horizontal scroll. Sandbox network retries sometimes dropped jQuery, the logo or the kit CSS during screenshots (the same on About); direct requests return 200, and clean runs show no script errors. `rl.py parity` 47 files, 0 differences; snapshot and site map refreshed (50 pages).
 - **Fixed during the build:** the "See it on HackerNoon" button stretched across the feature card.
-- **Not done (needs Jamil):** where the page is linked from (main menu under About, the About page, the footer); the WP Engine and Crunchbase links; the URL Decision Register (xlsx) still needs the new URL added.
+- **Not done (needs Jamil):** where the page is linked from (decided in D-107: footer only); the WP Engine and Crunchbase links; the URL Decision Register (xlsx) still needs the new URL added.
 
 ---
 
