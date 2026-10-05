@@ -20,9 +20,10 @@ function rl_ph($groups, $foot = '') {
             $h .= '<div class="ph-core' . $step() . '"><b>' . esc_html($g['title']) . '</b>' . (!empty($g['sub']) ? '<span>' . esc_html($g['sub']) . '</span>' : '') . '</div>';
         } else {
             $h .= '<ul class="ph-' . $kind . '">';
-            foreach ($g['items'] as $it) {
+            foreach ($g['items'] as $ii => $it) {
                 $t = is_array($it) ? $it[0] : $it; $f = is_array($it) ? ' ph-' . $it[1] : '';
-                $h .= '<li class="ph-i' . $f . $step() . '">' . esc_html($t) . '</li>';
+                if ($kind === 'steps') $h .= '<li class="ph-st">' . ($ii > 0 ? '<span class="ph-a" aria-hidden="true">&rarr;</span>' : '') . '<span class="ph-i' . $f . $step() . '">' . esc_html($t) . '</span></li>';
+                else $h .= '<li class="ph-i' . $f . $step() . '">' . esc_html($t) . '</li>';
             }
             $h .= '</ul>';
         }
@@ -36,16 +37,16 @@ add_action('wp_head', function () {
     for ($i = 0; $i < 16; $i++) { $on = round(3 + $i * 4.4, 1); $k .= "@keyframes rlPh$i{0%,{$on}%{opacity:.28}" . ($on + 3) . "%,92%{opacity:1}97%,100%{opacity:.28}}.rl-ph .ph-s$i{animation-name:rlPh$i}"; } ?>
 <style id="rl-ph-css">
 .rl-ph{display:none}
-@media(max-width:560px){.rl-anim:has(>.rl-ph)>:not(.rl-ph):not(.cap){display:none!important}.rl-ph{display:block}}
+@media(max-width:560px){.rl-anim:has(>.rl-ph)>:not(.rl-ph):not(.cap){display:none!important}.rl-anim>.rl-ph{display:block!important;flex:none;width:100%}}
 .rl-ph{font-family:var(--f-mono);text-align:left}
 .rl-ph .ph-l{font-size:10px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase;margin:0 0 8px}
 .rl-ph ul{list-style:none;margin:0;padding:0}
 .rl-ph .ph-i{border:1px solid rgba(243,237,230,.16);background:var(--bg);color:var(--ink);font-size:12.5px;line-height:1.35;letter-spacing:.04em;text-transform:uppercase;padding:8px 10px;margin:0}
 .rl-ph .ph-chips{display:flex;flex-wrap:wrap;gap:6px}
 .rl-ph .ph-rows{display:grid;gap:6px}
-.rl-ph .ph-steps{display:flex;flex-wrap:wrap;gap:6px 18px}
-.rl-ph .ph-steps .ph-i{position:relative}
-.rl-ph .ph-steps .ph-i+.ph-i::before{content:"\2192";position:absolute;left:-15px;top:50%;transform:translateY(-50%);color:var(--red-3);font-size:12px}
+.rl-ph .ph-steps{display:flex;flex-wrap:wrap;gap:6px}
+.rl-ph .ph-st{display:flex;align-items:center;gap:6px;margin:0}
+.rl-ph .ph-a{color:var(--red-3);font-size:13px}
 .rl-ph .ph-hi{border-color:var(--red-2);background:rgba(153,0,0,.18)}
 .rl-ph .ph-dim{color:var(--ink-dim)}
 .rl-ph .ph-x{border-color:var(--red-2);color:var(--red-3)}

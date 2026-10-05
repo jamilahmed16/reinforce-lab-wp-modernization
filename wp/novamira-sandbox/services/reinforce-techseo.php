@@ -206,7 +206,7 @@ function rl_render_techseo() {
     <figure class="crawl rl-anim">
       <div class="cap" aria-hidden="true"><span>Site crawl</span><span>Crawl &rarr; fix &rarr; index</span></div>
       <?php echo rl_techseo_svg(); ?>
-    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Site crawl', 'kind' => 'chips', 'items' => ['Home', 'Services', 'Blog', 'Industries']], ['label' => 'Root causes fixed', 'kind' => 'rows', 'items' => [['404 → 200 OK', 'ok'], ['Slow → fast', 'ok'], ['Orphan → linked', 'ok']]], ['label' => '', 'kind' => 'steps', 'items' => ['Crawling', 'Fixing root causes', ['Verified & indexed', 'hi']]], ['label' => 'Result', 'kind' => 'chips', 'items' => [['Crawlable', 'ok'], ['Renderable', 'ok'], ['Indexable', 'ok']]]], 'Crawl → fix → index'); ?></figure>
+    <?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Pages crawled', 'kind' => 'chips', 'items' => ['Home', 'Services', 'Blog', 'Industries']], ['label' => 'Root causes fixed', 'kind' => 'rows', 'items' => [['404 → 200 OK', 'ok'], ['Slow → fast', 'ok'], ['Orphan → linked', 'ok']]], ['label' => '', 'kind' => 'steps', 'items' => ['Crawling', 'Fixing root causes', ['Verified & indexed', 'hi']]], ['label' => 'Result', 'kind' => 'chips', 'items' => [['Crawlable', 'ok'], ['Renderable', 'ok'], ['Indexable', 'ok']]]], 'Crawl → fix → index'); ?></figure>
   </div>
 </section>
 

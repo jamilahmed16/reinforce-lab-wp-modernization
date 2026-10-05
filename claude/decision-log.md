@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-116 | Phone versions of every other hero diagram (25 pages), shared `rl_ph()` component | 5 Oct | DONE (Jamil: "apply all", then "Phone versions on all heroes") | this file |
 | D-115 | Each of the 8 agent pages gets its own hero visual | 5 Oct | DONE (Jamil: "all of the hero images look similar that's should not be like that") | this file |
 | D-114 | Heroes brought to one standard: Search Authority OS, Home (capitals), Awards, Diagnostic, Packages, Agents hub | 5 Oct | DONE (Jamil: "use capitals") | this file |
 | F-024 | Hero audit, 45 pages: 36 match the kit standard; Search Authority OS, Home and Awards heroes are out of line | 5 Oct | FINDING; fixes await Jamil | [research](research/hero-audit-2026-10-05.md) |
@@ -174,6 +175,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-116 · Phone versions of every hero diagram
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "apply all"; asked to confirm, chose "Phone versions on all heroes")
+
+- **Measured first** (390 px phone): diagram labels on Home, the Services and Agents hubs, all 18 service pages and the industry template rendered at about 5 to 8 px; Search Authority OS and Packages at about 8 to 9 px. The 8 agent pages were already fixed (D-115).
+- **Built:** `core/reinforce-phone-hero.php` (new, loaded after the kit) with `rl_ph($groups, $foot)`: the diagram's own content as real HTML text in boxes (12.5 px labels), with red highlights, ticks, step arrows, a core box, down arrows between groups, and the same 10 s step-by-step reveal (paused off-screen; static for reduced motion via `.rl-anim`). It sits inside each hero figure; at 560 px and below the figure's SVG is hidden and the phone version shows; above 560 px it is hidden, so desktop is unchanged.
+- **Applied to 25 pages:** Home, Search Authority OS, Packages, Services hub, Agents hub, the 18 service pages, the Industries hub and the industry template (8 pages, filled from each industry's own context and guardrails). Each uses the labels of its own desktop drawing.
+- **Verified:** every page has exactly one phone version and no PHP notices; at 390 px the SVG is hidden, labels are 12.5 px, and page width is 390; desktop hero audit unchanged (42 within the standard, Diagnostic and Contact by design); phone screenshots reviewed and fixed (Search Authority OS and Packages laid out in a row, labels repeating the panel caption, and arrows left behind when a step row wrapped). `copy-check.py` 0 issues.
 
 ---
 
