@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-132 | First blog post published on `.online`: Explainer "What Is an AI Growth System?" (post 330, `/what-is-an-ai-growth-system/`); Home FAQ shortened to link to it | 5 Oct | DONE (Jamil: URL, definition and author yes; tools "keep as written"; no price; root URL like production posts) | this file |
 | D-131 | AI Growth Systems pillar built and published on `.online` (page 71, `/services/ai-growth-systems/`), primary keyword "ai growth systems"; Home links to it | 5 Oct | DONE (Jamil: "/services/ai-growth-systems/ Yes") | this file |
 | D-130 | Keyword map v1: Home "reinforce lab", About "about reinforce lab", `/services/ai-growth-systems/` "ai growth systems", first blog post "what is an ai growth system"; replaces D-035 keyword ownership | 5 Oct | APPROVED (Jamil: "Replace D-035 with today's plan"); Yoast focus keyphrases set | this file |
 | F-026 | SEO/AEO/GEO/LLM readiness, second pass (53 pages): all technical, schema and answer-engine gates pass; fixed brand-early openings, share image, llms.txt, page weight; sources added to 13 pages (42 of 53 now cite); question H2s on Home, SAOS, Diagnostic; open: blog | 5 Oct | DONE | `claude/research/seo-aeo-geo-readiness-2026-10-05-v2.md` |
@@ -192,6 +193,20 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-132 · First blog post: "What Is an AI Growth System?"
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil approved the draft: URL "Yes", definition "Yes", author "Yes", tools "Keep as written", price in the post "No")
+
+- **URL:** `/what-is-an-ai-growth-system/` (post 330), not `/blog/...`. Production's 111 posts all sit at the root (`/%postname%/`, VERIFIED in GSC Pages.csv; D-071), and changing the pattern would move every production post URL (Rule 2). Jamil chose the root pattern: "/what-is-an-ai-growth-system/ (Recommended)". Every future post follows the same rule; `/blog/` lists them.
+- **Post:** Explainer template (D-077), author Jamil Ahmed, primary keyword "what is an ai growth system" (D-130, Yoast focus keyphrase), title "What Is an AI Growth System? | Reinforce Lab" (44), meta 152. Definition, key facts, 10-second and 1-minute versions, how it works (5 steps), it is / is not, before-and-after enquiry example, related terms, in-article CTA to `/services/ai-growth-systems/`, body of about 1,300 words (four layers incl. signal capture, an illustrative worked example clearly labelled as not a client case, comparison table, what to measure, what drives cost with no prices, failure modes and what stays human, five-question test, how to start), 6 FAQs, 7 sources. Draft and field data: `claude/drafts/blog-what-is-an-ai-growth-system-draft-2026-10-05.md`, `...-post-2026-10-05.json`.
+- **SERP basis (Jamil's screenshots, 5 Oct):** Bing: futuremadeuseful.com #1 and first in the AI summary; SEnuke #2. Google: the AI Overview cites a LinkedIn (Forsify) article and lists data foundation, signal capture, automated workflows, continuous learning loop; the post covers all four by name. Gaps filled: worked example with real tools, cost drivers, failure modes, regulated-industry and data-protection points, a self-test.
+- **Linked:** Home FAQ "What is an AI Growth System?" shortened to one sentence plus "Read the full explanation" (FAQ schema text updated to match); `/services/ai-growth-systems/` links to it ("Read what an AI growth system is"); `/blog/` lists it; post sitemap; `llms.txt` gains an "Articles" section (all published posts, automatic).
+- **Also changed:** `blog/reinforce-post-types.php` adds AI Growth Systems as a CTA service; `core/reinforce-header.php` drops WordPress block CSS on posts with no block markup (this post 170 KB to 143 KB, screenshots identical); `claude/tools/seo-audit.py` no longer strips `<header>`/`<footer>` inside the content (post templates wrap the H1 in `<header>`).
+- **Fixed after publishing:** the "Field" line showed "Text" (the converter read the draft table's header row); set to "Marketing operations, search and automation" and verified.
+- **Verified:** 200, noindex, 1 H1, schema BlogPosting + Person + FAQPage (6) + DefinedTerm, no PHP notices, 143 KB, share image, 4 outside source domains, phone width 390, `copy-check.py` 0 issues; site-wide audit passes on all 55 pages.
+- **F-003:** one post, published singly.
 
 ---
 

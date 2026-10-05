@@ -79,7 +79,10 @@ def audit(p):
     r['faq_schema_q'] = faq_schema
     # content: drop chrome
     for sel in ['header', 'footer', '#rl-mobile', 'script', 'style', 'noscript', '.rl-footer', '.rl-header', '.rl-ph']:
-        for e in s.select(sel): e.decompose()
+        for e in s.select(sel):
+            # keep <header>/<footer> used inside the content (post templates wrap the H1 in <header>)
+            if sel in ('header', 'footer') and e.find_parent(class_='rl-page'): continue
+            e.decompose()
     main = s.select_one('.rl-page') or s.select_one('[class^="rl-"]') or s.body or s
     hs = [(h.name, h.get_text(' ', strip=True)) for h in main.find_all(re.compile('^h[1-6]$'))]
     r['h1'] = sum(1 for h in hs if h[0] == 'h1')
