@@ -8,14 +8,14 @@
 
 | Page | Now | Proposed | Chars |
 |---|---|---|---|
-| /industries/pharmaceutical/ | Pharmaceutical & Life Sciences SEO and AI Search | Reinforce Lab (64) | **Pharma & Life Sciences SEO and AI Search | Reinforce Lab** | 56 |
-| /services/agents/evidence-verification/ | Evidence Verification Agent | Search Authority OS | Reinforce Lab (65) | **Evidence Verification AI Agent | Reinforce Lab** | 46 |
-| /services/agents/aeo-geo-optimization/ | AEO / GEO Optimization Agent | Search Authority OS | Reinforce Lab (66) | **AEO / GEO Optimization AI Agent | Reinforce Lab** | 47 |
-| /services/agents/competitor-intelligence/ | Competitor Intelligence Agent | Search Authority OS | Reinforce Lab (67) | **Competitor Intelligence AI Agent | Reinforce Lab** | 48 |
-| /services/agents/search-performance/ | Search Performance Agent | Search Authority OS | Reinforce Lab (62) | **Search Performance AI Agent | Reinforce Lab** | 43 |
-| /services/seo-content-systems/ | SEO Content Writing Services & Content Systems | Reinforce Lab (62) | **SEO Content Writing Services & Systems | Reinforce Lab** | 54 |
-| /services/marketing-automation/ | Marketing Automation & Email Marketing Services | Reinforce Lab (63) | **Marketing Automation & Email Services | Reinforce Lab** | 53 |
-| /services/lead-generation-systems/ | B2B Lead Generation & PPC Management Services | Reinforce Lab (61) | **B2B Lead Generation & PPC Services | Reinforce Lab** | 50 |
+| /industries/pharmaceutical/ | Pharmaceutical & Life Sciences SEO and AI Search \| Reinforce Lab (64) | **Pharma & Life Sciences SEO and AI Search \| Reinforce Lab** | 56 |
+| /services/agents/evidence-verification/ | Evidence Verification Agent \| Search Authority OS \| Reinforce Lab (65) | **Evidence Verification AI Agent \| Reinforce Lab** | 46 |
+| /services/agents/aeo-geo-optimization/ | AEO / GEO Optimization Agent \| Search Authority OS \| Reinforce Lab (66) | **AEO / GEO Optimization AI Agent \| Reinforce Lab** | 47 |
+| /services/agents/competitor-intelligence/ | Competitor Intelligence Agent \| Search Authority OS \| Reinforce Lab (67) | **Competitor Intelligence AI Agent \| Reinforce Lab** | 48 |
+| /services/agents/search-performance/ | Search Performance Agent \| Search Authority OS \| Reinforce Lab (62) | **Search Performance AI Agent \| Reinforce Lab** | 43 |
+| /services/seo-content-systems/ | SEO Content Writing Services & Content Systems \| Reinforce Lab (62) | **SEO Content Writing Services & Systems \| Reinforce Lab** | 54 |
+| /services/marketing-automation/ | Marketing Automation & Email Marketing Services \| Reinforce Lab (63) | **Marketing Automation & Email Services \| Reinforce Lab** | 53 |
+| /services/lead-generation-systems/ | B2B Lead Generation & PPC Management Services \| Reinforce Lab (61) | **B2B Lead Generation & PPC Services \| Reinforce Lab** | 50 |
 
 Agent titles: the 4 long ones drop "Search Authority OS" and say "AI Agent" instead (the page still names Search Authority OS in the opening and schema). The other 4 agent titles are within 60 and stay as they are, unless you want all 8 on the same pattern.
 
