@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-130 | Keyword map v1: Home "reinforce lab", About "about reinforce lab", `/services/ai-growth-systems/` "ai growth systems", first blog post "what is an ai growth system"; replaces D-035 keyword ownership | 5 Oct | APPROVED (Jamil: "Replace D-035 with today's plan"); Yoast focus keyphrases set | this file |
 | F-026 | SEO/AEO/GEO/LLM readiness, second pass (53 pages): all technical, schema and answer-engine gates pass; fixed brand-early openings, share image, llms.txt, page weight; sources added to 13 pages (42 of 53 now cite); question H2s on Home, SAOS, Diagnostic; open: blog | 5 Oct | DONE | `claude/research/seo-aeo-geo-readiness-2026-10-05-v2.md` |
 | D-129 | Founding date changed to 19 April 2022 everywhere (incorporation date on the RJSC certificate), replacing D-108's 1 April 2021 | 5 Oct | DONE (Jamil: "Change the founding date to 19 April 2022 everywhere.") | this file |
 | D-128 | Certificate of Incorporation published at its production URL (same PDF path), footer linked; RJSC no. C-180618/2022 added to Organization schema, Terms and Privacy; uploads on `.online` now send `X-Robots-Tag: noindex` | 5 Oct | DONE (Jamil sent the PDF; "Public, I'll upload it") | this file |
@@ -190,6 +191,23 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-130 · Keyword map v1 (replaces D-035's keyword ownership)
+**Date:** 5 October 2026 · **Status:** APPROVED by Jamil ("ai growth system", then "/services/ai-growth-systems/ Yes then Blog \"what is an ai growth system\"", then, shown D-035 side by side, "Replace D-035 with today's plan")
+
+| Page | Primary keyword | Why |
+|---|---|---|
+| Home `/` | reinforce lab | VERIFIED GSC (16 months, production): "reinforce lab" 100 clicks, 611 impressions, 16.4% CTR, position 2.5. Home keeps "AI Growth Systems" in its title and H1 as the category |
+| About `/about-us/` | about reinforce lab | Entity page (founder, founding date, offices); production About: 1,961 impressions, 5 clicks |
+| `/services/ai-growth-systems/` (page 71) | ai growth systems | The category's commercial pillar: what Reinforce Lab builds and how to engage. Semrush (D-008): "ai growth systems" 20 US / 40 global per month, a category play |
+| Blog post (first) | what is an ai growth system | Informational definition; links to page 71 |
+
+- **Replaces D-035** (28 Sep: Home owns "AI Growth Systems"; page 71 = "ai growth systems consulting"). **Consequence:** Home's FAQ "What is an AI Growth System?" (with FAQPage schema) would compete with the blog post; it is to be shortened to a brief answer linking to the post when the post is published.
+- **Yoast focus keyphrases set:** page 33 "reinforce lab", page 218 "about reinforce lab", page 71 "ai growth systems".
+- **Found (VERIFIED GSC):** "reinforce labs" (with an s) has 5,462 impressions at 0.57% CTR, position 6.1, the site's largest query by impressions; INFERENCE: searches for a different company with a similar name. Clear entity naming (schema, llms.txt) is the response; no action on production.
+- **Rule from now on:** one primary keyword per page, recorded here before the page is built.
 
 ---
 
