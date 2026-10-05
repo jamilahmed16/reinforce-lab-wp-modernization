@@ -10,7 +10,7 @@ function rl_is_about() { return is_page('about-us') && (int) wp_get_post_parent_
 
 /* Founder facts: confirmed by Jamil (D-008 locked positioning; 28 Sep Home FAQ facts).
    Origin (Jamil, 5 Oct, D-109): started in Tallinn, Estonia in 2020 as a full-service digital marketing agency; expanded to Bangladesh in 2021.
-   Reinforce Lab Limited founded 1 April 2021, Bangladesh (D-108). No Estonian office today. */
+   Reinforce Lab Limited founded (incorporated) 19 April 2022 in Dhaka, RJSC no. C-180618/2022 (D-129, replaces D-108's 1 April 2021). No Estonian office today. */
 function rl_about_person() {
     return [
         'name' => 'Jamil Ahmed',
@@ -23,7 +23,7 @@ function rl_about_person() {
 function rl_about_faqs() {
     return [
         ['What is Reinforce Lab?', 'Reinforce Lab is an AI Growth Systems company. We connect a company\'s website, content and organic search visibility into one growth engine, with AI automation taking over the repetitive work, and measure it against enquiries and revenue.'],
-        ['When and where did Reinforce Lab start?', 'Reinforce Lab started in Tallinn, Estonia in 2020 as a full-service digital marketing agency. It expanded to Bangladesh in 2021, where Reinforce Lab Limited was founded on 1 April 2021.'],
+        ['When and where did Reinforce Lab start?', 'Reinforce Lab started in Tallinn, Estonia in 2020 as a full-service digital marketing agency. It expanded to Bangladesh in 2021, and Reinforce Lab Limited was founded in Dhaka on 19 April 2022.'],
         ['Who founded Reinforce Lab?', 'Jamil Ahmed, who leads the company as Founder and CEO. Jamil is a pharmacist, an SEO and AI search consultant, and a Semrush Ambassador.'],
         ['Where is Reinforce Lab based?', 'Reinforce Lab has offices in Dhaka, Bangladesh and Katy, Texas, in the United States, and works with clients remotely around the world.'],
         ['How is Reinforce Lab different from a digital marketing agency?', 'We started as one. An agency usually sells separate tactics; we now build one system: website, content, search and AI visibility, and the automation behind them, designed around your buyers and measured against revenue, not rankings alone.'],
@@ -69,14 +69,14 @@ body.rl-about-page .fl-page-content,body.rl-about-page .fl-content,body.rl-about
 .rl-about .ms{border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:clamp(22px,2.6vw,32px);box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-about .story .txt{display:flex;flex-direction:column}
 .rl-about .story .txt p{color:var(--ink-dim);font-size:17px;line-height:1.7;margin:0 0 16px}
-.rl-about .route{list-style:none;margin:auto 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.rl-about .route{list-style:none;margin:auto 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
 .rl-about .route li{background:var(--bg-2);padding:16px 18px;position:relative}
 .rl-about .route li+li::before{content:"";position:absolute;left:-6px;top:50%;width:10px;height:10px;margin-top:-5px;border-top:1px solid var(--red-2);border-right:1px solid var(--red-2);transform:rotate(45deg);background:var(--bg-2)}
 .rl-about .route .y{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--red-3);text-transform:uppercase}
 .rl-about .route b{display:block;font-family:var(--f-display);text-transform:uppercase;letter-spacing:.03em;font-size:20px;color:var(--ink);margin:6px 0 2px;font-weight:600}
 .rl-about .route small{color:var(--ink-dim);font-size:13.5px}
 @media(max-width:900px){.rl-about .route{margin-top:12px}}
-@media(max-width:560px){.rl-about .route{grid-template-columns:1fr}.rl-about .route li+li::before{display:none}}
+@media(max-width:560px){.rl-about .route{grid-template-columns:repeat(2,minmax(0,1fr))}.rl-about .route li:nth-child(3)::before{display:none}.rl-about .route li+li::before{display:none}}
 .rl-about .story .txt p:first-child{color:var(--ink)}
 .rl-about .story .sub{margin-top:0}
 .rl-about .tl{list-style:none;margin:0;padding:0;border-left:1px solid var(--red-line)}
@@ -127,8 +127,8 @@ add_filter('wpseo_schema_graph', function ($graph) {
         if (in_array('WebPage', $t, true) && isset($n['@id']) && strpos($n['@id'], $url) === 0) { $n['@type'] = ['WebPage', 'AboutPage']; $n['about'] = ['@id' => $org]; $n['mainEntity'] = ['@id' => $org]; }
         if (in_array('Organization', $t, true)) {
             $n['founder'] = ['@id' => $pid];
-            $n['foundingDate'] = '2021-04-01';
-            $n['foundingLocation'] = ['@type' => 'Place', 'name' => 'Bangladesh'];
+            $n['foundingDate'] = '2022-04-19';
+            $n['foundingLocation'] = ['@type' => 'Place', 'name' => 'Dhaka, Bangladesh'];
             $n['areaServed'] = 'Worldwide';
             $n['knowsAbout'] = ['Search engine optimization', 'AI search optimization', 'Generative engine optimization', 'Content systems', 'AI workflow automation', 'Marketing automation', 'Lead generation', 'Executive AI consulting', 'WordPress website design'];
             if (function_exists('rl_awards_schema_list')) $n['award'] = rl_awards_schema_list();
@@ -159,7 +159,8 @@ function rl_render_about() {
     $f = rl_about_person();
     $timeline = [
         ['2020', 'Reinforce Lab starts in Tallinn, Estonia, as a full-service digital marketing agency.'],
-        ['2021', 'Expands to Bangladesh: Reinforce Lab Limited is founded on 1 April 2021.'],
+        ['2021', 'Expands to Bangladesh and builds a team in Dhaka.'],
+        ['2022', 'Reinforce Lab Limited is founded in Dhaka on 19 April 2022.'],
         ['2024', 'Winner in Dhaka, HackerNoon Startups of The Year 2024, and 11th of about 8,000 startups in Marketing.'],
         ['2025', 'Named in DesignRush\'s Best Digital Marketing Agencies of June 2025.'],
         ['2026', 'Ranked 8th of 442 SEO agencies in Bangladesh on GoodFirms (October).'],
@@ -211,7 +212,7 @@ function rl_render_about() {
         ['2017', 'Product Manager, Janssen', 'Immunology, at the pharmaceutical companies of Johnson & Johnson.'],
         ['2018', 'Interviewed by Onalytica', 'On business intelligence, data and digital marketing.'],
         ['2020', 'Starts Reinforce Lab', 'A full-service digital marketing agency in Tallinn, Estonia.'],
-        ['2021', 'Reinforce Lab Limited', 'Founded in Bangladesh on 1 April 2021.'],
+        ['2022', 'Reinforce Lab Limited', 'Founded in Dhaka on 19 April 2022.'],
         ['2025', 'Semrush Ambassador', 'Named a Semrush Ambassador in May 2025.'],
         ['Today', 'CEO, AI Growth Systems', 'Leads the shift to search, content and automation as one system.'],
     ];
@@ -238,7 +239,7 @@ function rl_render_about() {
       <p class="cap">At a glance</p>
       <dl>
         <dt>Started</dt><dd>2020, Tallinn, Estonia</dd>
-        <dt>Founded</dt><dd>1 April 2021, Bangladesh (Reinforce Lab Limited)</dd>
+        <dt>Founded</dt><dd>19 April 2022, Dhaka, Bangladesh (Reinforce Lab Limited)</dd>
         <dt>Founder and CEO</dt><dd><a href="#founder"><?php echo esc_html($f['name']); ?></a></dd>
         <dt>What we build</dt><dd>AI Growth Systems: search, content and automation as one system</dd>
         <dt>Offices</dt><dd>Dhaka, Bangladesh · Katy, Texas, USA</dd>
@@ -255,12 +256,13 @@ function rl_render_about() {
     <div class="story">
       <div class="txt">
         <div class="head"><span class="ey"><b>[</b>&nbsp;Our story&nbsp;<b>]</b></span><h2>How did Reinforce Lab start?</h2></div>
-        <p>Reinforce Lab started in 2020 in Tallinn, Estonia, as a full-service digital marketing agency. In 2021 we expanded to Bangladesh, where Reinforce Lab Limited was founded on 1 April 2021, and built our team in Dhaka.</p>
+        <p>Reinforce Lab started in 2020 in Tallinn, Estonia, as a full-service digital marketing agency. In 2021 we expanded to Bangladesh and built our team in Dhaka, and on 19 April 2022 we founded Reinforce Lab Limited there.</p>
         <p>Years of running search, content and marketing for clients showed us the same problem again and again: the work was split across separate tools, separate agencies and a lot of manual effort, and nobody connected the pieces.</p>
         <p>So we changed what we sell. Today Reinforce Lab helps businesses scale with automation: we connect the website, content and search visibility into one system and let AI take over the repetitive work, with a person checking what matters.</p>
         <ol class="route" aria-label="Where Reinforce Lab has worked from">
           <li><span class="y">2020</span><b>Tallinn</b><small>Where we started</small></li>
-          <li><span class="y">2021</span><b>Dhaka</b><small>Reinforce Lab Limited</small></li>
+          <li><span class="y">2021</span><b>Dhaka</b><small>Our team in Bangladesh</small></li>
+          <li><span class="y">2022</span><b>Dhaka</b><small>Reinforce Lab Limited founded</small></li>
           <li><span class="y">Today</span><b>Dhaka · Katy</b><small>Two offices, clients worldwide</small></li>
         </ol>
       </div>

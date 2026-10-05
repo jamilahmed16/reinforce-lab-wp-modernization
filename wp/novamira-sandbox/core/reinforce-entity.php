@@ -53,7 +53,7 @@ function rl_llms_txt() {
     $home = get_post((int) get_option('page_on_front'));
     $t = "# Reinforce Lab\n\n";
     $t .= "> Reinforce Lab builds AI Growth Systems: a company's website, content and organic search visibility connected into one growth engine, with AI automation doing the repetitive work and people reviewing what matters. Search Authority OS is its flagship.\n\n";
-    $t .= "- Legal name: Reinforce Lab Limited, founded in Bangladesh on 1 April 2021 (the company started in Tallinn, Estonia, in 2020)\n";
+    $t .= "- Legal name: Reinforce Lab Limited, founded in Dhaka, Bangladesh on 19 April 2022 (RJSC registration no. C-180618/2022). The business started in Tallinn, Estonia, in 2020 and expanded to Bangladesh in 2021\n";
     $t .= "- Founder and CEO: Jamil Ahmed, pharmacist, SEO and AI search consultant, Semrush Ambassador\n";
     $t .= "- Offices: Dhaka, Bangladesh, and Katy, Texas, USA; clients worldwide\n";
     $t .= "- Contact: hello@reinforcelab.com, +880 1329-657096, +1 832 548 4553\n";
