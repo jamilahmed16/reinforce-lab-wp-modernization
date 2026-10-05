@@ -32,7 +32,8 @@ body.rl-legal-page .fl-page-content,body.rl-legal-page .fl-content,body.rl-legal
 .rl-legal .prose table{width:100%;border-collapse:collapse;margin:8px 0 20px;font-size:15px}
 .rl-legal .prose th,.rl-legal .prose td{border:1px solid var(--line-2);padding:10px 12px;text-align:left;vertical-align:top}
 .rl-legal .prose th{color:var(--ink);font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;background:rgba(255,255,255,.03)}
-@media(max-width:900px){.rl-legal .lg{grid-template-columns:1fr}.rl-legal .toc{position:static}}
+@media(max-width:900px){.rl-legal .lg{grid-template-columns:minmax(0,1fr)}.rl-legal .toc{position:static}}
+.rl-legal .prose{overflow-wrap:anywhere}
 @media(max-width:600px){.rl-legal .prose table,.rl-legal .prose thead,.rl-legal .prose tbody,.rl-legal .prose tr,.rl-legal .prose th,.rl-legal .prose td{display:block}.rl-legal .prose thead{display:none}.rl-legal .prose td{border-top:0}.rl-legal .prose tr{border-top:1px solid var(--line-2);margin-bottom:10px}}
 </style>
 <?php }, 22);
