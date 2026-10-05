@@ -74,9 +74,11 @@ body.rl-agents-page .fl-page-content,body.rl-agents-page .fl-content,body.rl-age
 .rl-agents .h1 .r{color:var(--red-2)}
 .rl-agents .hero .lede{margin-top:18px}
 /* hero: two-column + agent pipeline visual (D-039) - replaces the A-01…A-08 chips */
-.rl-agents .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(28px,4vw,56px);align-items:center}
+.rl-agents .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(28px,4vw,56px);align-items:stretch}
 @media(max-width:940px){.rl-agents .hero-grid{grid-template-columns:1fr;gap:34px}}
-.rl-agents .agmap{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 10px;box-shadow:0 30px 80px -50px var(--red-glow)}
+/* panel matches the text column height (F-024): diagram capped and centred */
+.rl-agents .agmap{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 10px;box-shadow:0 30px 80px -50px var(--red-glow);display:flex;flex-direction:column}
+@media(min-width:941px){.rl-agents .agmap>svg{width:100%;max-height:390px;margin-block:auto}}
 .rl-agents .agmap .cap{display:flex;justify-content:space-between;gap:12px}
 .rl-agents .agmap .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-agents .agmap svg{display:block;width:100%;height:auto;overflow:visible}

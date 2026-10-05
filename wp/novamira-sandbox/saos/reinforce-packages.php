@@ -73,7 +73,7 @@ body.rl-pkg-page .fl-page-content,body.rl-pkg-page .fl-content,body.rl-pkg-page 
 .rl-pkg .btn.g:hover{border-color:var(--red-line);color:#fff}
 .rl-pkg .btn.full{width:100%;justify-content:center}
 .rl-pkg .hero{padding-block:clamp(40px,6vw,72px);text-align:center}
-.rl-pkg .h1{font-size:clamp(32px,5vw,60px);font-weight:700;letter-spacing:-.01em;line-height:1.02;max-width:16ch;margin-inline:auto}
+.rl-pkg .h1{font-size:clamp(34px,5.1vw,64px);font-weight:700;letter-spacing:-.01em;line-height:1.02;max-width:16ch;margin-inline:auto}
 .rl-pkg .h1 .r{color:var(--red-2)}
 .rl-pkg .hero .lede{margin:18px auto 0}
 .rl-pkg .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px;justify-content:center}
@@ -129,14 +129,16 @@ body.rl-pkg-page .fl-page-content,body.rl-pkg-page .fl-content,body.rl-pkg-page 
 .rl-pkg .ey{flex-wrap:wrap;row-gap:.2em}
 .rl-pkg .mx-scroll{position:relative} /* contains the absolutely-positioned .sr labels so they can't widen the page on mobile */
 /* hero: left-aligned + visual (D-039) - overrides the centred mock-up hero */
-.rl-pkg .hero{text-align:left}
-.rl-pkg .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);align-items:center}
+/* kit hero standard (F-024): padding, grid; the chart panel stretches to the text column */
+.rl-pkg .hero{text-align:left;padding-block:clamp(36px,6vw,80px)}
+.rl-pkg .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(28px,4vw,56px);align-items:stretch}
 @media(max-width:940px){.rl-pkg .hero-grid{grid-template-columns:1fr;gap:34px}}
 .rl-pkg .hero .h1{margin-inline:0;max-width:14ch}
 .rl-pkg .hero .lede{margin:18px 0 0}
 .rl-pkg .hero .hero-cta{justify-content:flex-start}
 /* hero visual: rising staircase - refined chart (D-039, rev 2): one-time build, then subtle ambient motion */
-.rl-pkg .stair{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 22px 12px;box-shadow:0 30px 80px -50px var(--red-glow)}
+.rl-pkg .stair{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 22px 12px;box-shadow:0 30px 80px -50px var(--red-glow);display:flex;flex-direction:column}
+.rl-pkg .stair>div:not(.cap){flex:1;display:flex;align-items:center}.rl-pkg .stair svg{width:100%;height:auto}
 .rl-pkg .stair .cap{display:flex;justify-content:space-between;gap:12px}
 .rl-pkg .stair .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-pkg .pk-grid{stroke:var(--line);opacity:.7}

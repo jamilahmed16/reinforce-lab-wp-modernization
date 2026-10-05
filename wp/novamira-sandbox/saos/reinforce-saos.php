@@ -284,7 +284,7 @@ function rl_render_saos() {
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#system">See the system</a>
       </div>
-      <p class="microtrust">Built for <b>Pharma &amp; Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services (incl. Finance) · Education</b><br>Search Intelligence &nbsp;+&nbsp; Evidence &nbsp;+&nbsp; Content &nbsp;+&nbsp; AI Search &nbsp;+&nbsp; Continuous Optimization</p>
+      <p class="microtrust">Built for <b>Pharma &amp; Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services (incl. Finance) · Education</b></p>
     </div>
     <figure class="loop rl-anim" role="img" aria-label="Search Authority OS runs as one continuous loop (research, verify, write, audit and monitor) and search authority rises with every lap.">
       <div class="cap" aria-hidden="true"><span>The loop</span><span>Continuous · self-improving</span></div>

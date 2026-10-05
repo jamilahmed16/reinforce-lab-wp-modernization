@@ -37,7 +37,8 @@ function rl_home_ge_kf() {
     return $k;
 }
 function rl_home_ge_css() {
-    return '.rl-home .ge{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 12px;box-shadow:0 30px 80px -50px var(--red-glow)}
+    return '.rl-home .ge{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 12px;box-shadow:0 30px 80px -50px var(--red-glow);display:flex;flex-direction:column}
+.rl-home .ge>svg{width:100%;height:auto;margin-block:auto}
 .rl-home .ge .cap{display:flex;justify-content:space-between;margin-bottom:12px}
 .rl-home .ge .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-home .ge-n{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
@@ -120,10 +121,12 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .ar{transition:transform .2s}.rl-home .btn:hover .ar{transform:translateX(4px)}
 .rl-home .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
 /* hero */
-.rl-home .hero{padding-block:clamp(30px,5vw,64px)}
-.rl-home .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(28px,4vw,56px);align-items:center}
+/* hero matches the kit hero on every other page (F-024): padding, grid; the engine panel stretches to the text column */
+.rl-home .hero{padding-block:clamp(36px,6vw,80px)}
+.rl-home .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(28px,4vw,56px);align-items:stretch}
 @media(max-width:940px){.rl-home .hero-grid{grid-template-columns:1fr;gap:36px}}
-.rl-home .h1{font-size:clamp(34px,5.1vw,64px);font-weight:700;letter-spacing:-.01em;line-height:1.02;text-transform:none}
+/* capitals like every other H1 (Jamil, 5 Oct); smaller than 64px because the locked core message is long */
+.rl-home .h1{font-size:clamp(30px,4vw,52px);font-weight:700;letter-spacing:-.01em;line-height:1.02;margin-top:14px}
 .rl-home .h1 .r{color:var(--red-2)}
 .rl-home .hero .lede{margin-top:18px}
 .rl-home .microtrust{margin-top:20px;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.04em;line-height:1.9}.rl-home .microtrust b{color:var(--ink-dim);font-weight:500}

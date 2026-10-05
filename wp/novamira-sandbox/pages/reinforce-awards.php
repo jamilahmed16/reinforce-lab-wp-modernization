@@ -108,7 +108,13 @@ function rl_awards_css() {
 body.rl-awards-page .fl-page-content,body.rl-awards-page .fl-content,body.rl-awards-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
 .rl-awards{--ok:#3fa36b;--ok-line:rgba(63,163,107,.45);--amber:#d39b3a}
 .rl-awards .ic{width:12px;height:12px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square}
-.rl-awards .a-rule{margin:0;border:1px solid var(--line-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 22px}
+/* hero panel holds the tally and the listing rules and stretches to the text column (F-024) */
+.rl-awards .hero-grid{align-items:stretch}
+.rl-awards .a-rule{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:0;display:flex;flex-direction:column;box-shadow:0 30px 80px -50px var(--red-glow)}
+.rl-awards .a-rule .a-tally{grid-template-columns:repeat(2,minmax(0,1fr));border:0;border-bottom:1px solid var(--line-2);flex:1}
+.rl-awards .a-rule .a-tally div{display:flex;flex-direction:column;justify-content:center;padding:20px 22px}
+.rl-awards .a-rule .a-tally dt{font-size:48px}
+.rl-awards .a-rules{padding:20px 22px}
 .rl-awards .a-rule .cap{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 10px}
 .rl-awards .a-rule ul{margin:0;padding:0;list-style:none;display:grid;gap:9px}
 .rl-awards .a-rule li{display:grid;grid-template-columns:16px 1fr;gap:10px;font-size:15px;color:var(--ink);margin:0}
@@ -208,7 +214,14 @@ function rl_render_awards() {
         <a class="btn g" href="<?php echo $u('about-us'); ?>">About Reinforce Lab</a>
       </div>
     </div>
-    <aside class="a-rule" aria-label="How we list recognition">
+    <aside class="a-rule" aria-label="Recognition at a glance, and how we list it">
+      <dl class="a-tally">
+        <div><dt>2</dt><dd>Awards, independently confirmed</dd></div>
+        <div><dt>11th</dt><dd>of about 8,000, HackerNoon Marketing 2024</dd></div>
+        <div><dt>8th</dt><dd>of 442 SEO agencies, GoodFirms Bangladesh</dd></div>
+        <div><dt>4.6</dt><dd>Google rating, 8 reviews</dd></div>
+      </dl>
+      <div class="a-rules">
       <p class="cap">How we list recognition</p>
       <ul>
         <li><?php echo $ok; ?><span>Each item links to the awarding or listing body's own page.</span></li>
@@ -216,18 +229,8 @@ function rl_render_awards() {
         <li><?php echo $ok; ?><span>Our own press releases are marked as ours, not as press coverage.</span></li>
         <li><?php echo $ok; ?><span>We do not list awards that are sold with a publicity package.</span></li>
       </ul>
+      </div>
     </aside>
-  </div>
-</section>
-
-<section class="band alt" aria-label="At a glance">
-  <div class="wrap">
-    <dl class="a-tally">
-      <div><dt>2</dt><dd>Awards, independently confirmed</dd></div>
-      <div><dt>11th</dt><dd>of about 8,000, HackerNoon Marketing 2024</dd></div>
-      <div><dt>8th</dt><dd>of 442 SEO agencies, GoodFirms Bangladesh</dd></div>
-      <div><dt>4.6</dt><dd>Google rating, 8 reviews</dd></div>
-    </dl>
   </div>
 </section>
 

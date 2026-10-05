@@ -48,3 +48,12 @@ One rule for every hero: **eyebrow, H1 (64 px, uppercase, 3 lines where the word
 7. **Contact:** leave as it is (forms are taller than text by nature), or add the office hours or a short "what happens next" list under the contact rows to fill the column.
 
 Every change is on `.online` only and checked again with the same measurement script afterwards.
+
+## After the fixes (same day, D-114)
+
+Jamil: "use capitals" (Home H1). Re-measured all 45 pages at 1440 px with `hero-audit.mjs`:
+
+- **42 of 45 within the standard** (H1 64 px in capitals, 80 px padding, panel edges within 25 px of the text column). Home's H1 is 52 px in capitals by design (the locked core message), 4 lines.
+- **Search Authority OS, Home, Awards, Packages, Agents hub:** panel top and bottom now exactly level with the text column (0 px) at 1440 and 1900 px.
+- **Exceptions by design:** Blog (text-only hero); Search Authority Diagnostic and Contact (the form is longer than the text; both start on the same line).
+- Phone width 390 px on every changed page; no PHP notices; `copy-check.py` 0 issues.

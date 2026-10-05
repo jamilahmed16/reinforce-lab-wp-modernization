@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-114 | Heroes brought to one standard: Search Authority OS, Home (capitals), Awards, Diagnostic, Packages, Agents hub | 5 Oct | DONE (Jamil: "use capitals") | this file |
 | F-024 | Hero audit, 45 pages: 36 match the kit standard; Search Authority OS, Home and Awards heroes are out of line | 5 Oct | FINDING; fixes await Jamil | [research](research/hero-audit-2026-10-05.md) |
 | D-113 | About page: Our story and Milestones aligned as two equal columns | 5 Oct | DONE (Jamil: "either separate it with section or make it aligned") | this file |
 | D-112 | About page: "Why are there no client logos or results" section removed | 5 Oct | DONE (Jamil: "remove this") | this file |
@@ -172,6 +173,21 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-114 · Heroes brought to one standard (F-024 fixes)
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "use capitals", after the F-024 audit)
+
+- **Rule now on every page:** eyebrow, H1 in capitals, lede, buttons on the left; one panel on the right whose top and bottom line up with the text column. Padding 80 px; grid 1.02/0.98.
+- **Search Authority OS** (`saos/reinforce-saos.php`): dropped the full-screen-height hero; kit padding, grid, H1 margin and 19 px lede; the loop panel stretches to the text column with the loop centred. Removed the second line under the buttons ("Search Intelligence + Evidence + Content + AI Search + Continuous Optimization"), which repeated the loop.
+- **Home** (`pages/reinforce-home.php`): H1 now in capitals (was the only sentence-case H1), 52 px so the locked core message fits 4 lines; kit padding and grid; the engine panel stretches to the text column. Wording unchanged.
+- **Awards** (`pages/reinforce-awards.php`): the four-number tally moved from its own band into the hero panel above the listing rules; the panel stretches to the text column. The separate tally band is gone.
+- **Search Authority Diagnostic:** H1 58 to 64 px; kit padding and grid; text starts level with the top of the form.
+- **Packages:** H1 60 to 64 px; padding 72 to 80 px; kit grid; chart panel stretches to the text column.
+- **Agents hub:** pipeline diagram capped at 390 px tall on desktop so the panel matches the text column (was 41 px off at each end).
+- **Verified:** `hero-audit.mjs` on all 45 pages: 42 within the standard; Blog, Diagnostic and Contact are exceptions by design. Panel edges 0 px from the text on the six fixed pages at 1440 and 1900 px. Phone width 390 on each; no PHP notices; `copy-check.py` 0 issues.
+- **Noticed, not changed:** Home's "Built for" line lists 6 of the 8 industries (no E-commerce or Education).
 
 ---
 

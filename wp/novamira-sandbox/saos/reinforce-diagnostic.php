@@ -129,10 +129,11 @@ body.rl-diag-page .fl-page-content,body.rl-diag-page .fl-content,body.rl-diag-pa
 .rl-diag .btn.g::before{color:var(--ink-faint)}
 .rl-diag .btn.g:hover{border-color:var(--red-line);color:#fff}
 .rl-diag .btn.full{width:100%;justify-content:center;padding:17px}
-.rl-diag .hero{padding-block:clamp(36px,5vw,64px)}
-.rl-diag .hero-grid{display:grid;grid-template-columns:1fr .92fr;gap:clamp(28px,4vw,54px);align-items:center}
+/* kit hero standard (F-024); the form is taller than the text, so both start on the same line */
+.rl-diag .hero{padding-block:clamp(36px,6vw,80px)}
+.rl-diag .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(28px,4vw,56px);align-items:start}
 @media(max-width:940px){.rl-diag .hero-grid{grid-template-columns:1fr;gap:34px}}
-.rl-diag .h1{font-size:clamp(32px,4.8vw,58px);font-weight:700;letter-spacing:-.01em;line-height:1.02}
+.rl-diag .h1{font-size:clamp(34px,5.1vw,64px);font-weight:700;letter-spacing:-.01em;line-height:1.02;margin-top:14px}
 .rl-diag .h1 .r{color:var(--red-2)}
 .rl-diag .hero .lede{margin-top:18px}
 .rl-diag .ticks{margin-top:22px;display:grid;gap:10px}
