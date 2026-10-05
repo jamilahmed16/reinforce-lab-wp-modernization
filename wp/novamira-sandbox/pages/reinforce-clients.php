@@ -78,24 +78,32 @@ body.rl-clients-page .fl-page-content,body.rl-clients-page .fl-content,body.rl-c
 .rl-clients .c-tally div{background:var(--bg-2);padding:20px 22px;margin:0}
 .rl-clients .c-tally dt{font-family:var(--f-display);font-size:44px;line-height:1;color:var(--ink);font-weight:500;margin:0}
 .rl-clients .c-tally dd{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:6px 0 0}
-.rl-clients .c-peek{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line-2);flex:1}
-.rl-clients .c-peek span{background:#f4f0eb;display:grid;place-items:center;padding:12px;min-height:72px}
-.rl-clients .c-peek img{max-width:100%;max-height:44px;width:auto;height:auto;object-fit:contain}
-.rl-clients .c-wall{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;margin:0;padding:0;list-style:none;border-top:1px solid var(--line-2);border-left:1px solid var(--line-2)}
-.rl-clients .c-wall li{background:var(--bg-2);display:grid;grid-template-rows:auto auto;margin:0;border-right:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
-.rl-clients .c-logo{background:#f4f0eb;display:grid;place-items:center;height:104px;padding:14px 16px}
-.rl-clients .c-logo img{max-width:100%;max-height:68px;width:auto;height:auto;object-fit:contain}
-.rl-clients .c-name{font-family:var(--f-mono);font-size:11px;line-height:1.35;color:var(--ink-dim);padding:9px 12px;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:6px}
-.rl-clients .c-name a{color:var(--red-3);text-decoration:none;white-space:nowrap}
-.rl-clients .c-note{margin:14px 0 0;font-size:14.5px;color:var(--ink-faint)}
+/* logos drawn in one light tone on the dark ground: grayscale + invert turns each logo's white box black, and screen blending drops the black (D-127 v2) */
+.rl-clients .lg{filter:grayscale(1) invert(1) contrast(1.1);mix-blend-mode:screen;opacity:.78;transition:opacity .2s}
+.rl-clients .c-peek{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));flex:1;isolation:isolate;background:var(--bg-2)}
+.rl-clients .c-peek span{display:grid;place-items:center;padding:14px 16px;min-height:80px;border-top:1px solid var(--line)}
+.rl-clients .c-peek span:not(:nth-child(3n)){border-right:1px solid var(--line)}
+.rl-clients .c-peek img{max-width:100%;max-height:46px;width:auto;height:auto;object-fit:contain}
+.rl-clients .c-wall{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));margin:0;padding:0;list-style:none;isolation:isolate;background:var(--bg)}
+.rl-clients .c-wall li{display:grid;place-items:center;height:112px;padding:18px 22px;margin:0;border-bottom:1px solid var(--line)}
+.rl-clients .c-wall li:not(:nth-child(6n)){border-right:1px solid var(--line)}
+.rl-clients .c-wall li:hover .lg{opacity:1}
+.rl-clients .c-wall img{max-width:100%;max-height:64px;width:auto;height:auto;object-fit:contain}
+.rl-clients .c-all{margin:34px 0 0;border-top:1px solid var(--line-2);padding-top:22px}
+.rl-clients .c-all h3{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 14px;font-weight:500}
+.rl-clients .c-names{columns:4;column-gap:28px;margin:0;padding:0;list-style:none}
+.rl-clients .c-names li{break-inside:avoid;font-size:14.5px;line-height:1.45;color:var(--ink-dim);padding:4px 0;margin:0}
+.rl-clients .c-names a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.rl-clients .c-names a:hover{color:var(--red-3)}
+.rl-clients .c-note{margin:16px 0 0;font-size:13.5px;color:var(--ink-faint)}
 .rl-clients .c-work{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 .rl-clients .c-work a{border:1px solid var(--line-2);background:var(--bg-2);padding:18px 20px;display:grid;gap:8px;text-decoration:none;color:var(--ink)}
 .rl-clients .c-work a:hover{border-color:var(--red-line)}
 .rl-clients .c-work b{font-family:var(--f-display);font-weight:500;font-size:19px;text-transform:uppercase;letter-spacing:.02em}
 .rl-clients .c-work span{font-size:14.5px;color:var(--ink-dim)}
 .rl-clients .c-work em{font-style:normal;font-family:var(--f-mono);font-size:11.5px;color:var(--red-3)}
-@media(max-width:1100px){.rl-clients .c-wall{grid-template-columns:repeat(4,minmax(0,1fr))}.rl-clients .c-work{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:760px){.rl-clients .c-wall{grid-template-columns:repeat(2,minmax(0,1fr))}.rl-clients .c-logo{height:88px}.rl-clients .c-work{grid-template-columns:1fr}}
+@media(max-width:1100px){.rl-clients .c-wall{grid-template-columns:repeat(4,minmax(0,1fr))}.rl-clients .c-wall li:not(:nth-child(6n)){border-right:0}.rl-clients .c-wall li:not(:nth-child(4n)){border-right:1px solid var(--line)}.rl-clients .c-names{columns:3}.rl-clients .c-work{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.rl-clients .c-wall{grid-template-columns:repeat(3,minmax(0,1fr))}.rl-clients .c-wall li{height:84px;padding:12px}.rl-clients .c-wall li:not(:nth-child(4n)){border-right:0}.rl-clients .c-wall li:not(:nth-child(3n)){border-right:1px solid var(--line)}.rl-clients .c-wall img{max-height:46px}.rl-clients .c-names{columns:2;column-gap:18px}.rl-clients .c-work{grid-template-columns:1fr}}
 </style>
 <?php }, 22);
 
@@ -110,7 +118,7 @@ function rl_render_clients() {
     $proj = rl_clients_projects();
     $logo = function ($name, $slug, $lazy = true) use ($map) {
         if (empty($map[$slug])) return '';
-        return wp_get_attachment_image((int) $map[$slug], 'full', false, ['alt' => $name . ' logo', 'loading' => $lazy ? 'lazy' : 'eager', 'decoding' => 'async']);
+        return wp_get_attachment_image((int) $map[$slug], 'full', false, ['class' => 'lg', 'alt' => $name . ' logo', 'loading' => $lazy ? 'lazy' : 'eager', 'decoding' => 'async']);
     };
     $purl = function ($slug) { $p = get_page_by_path($slug, OBJECT, 'rl_project'); return ($p && $p->post_status === 'publish') ? get_permalink($p) : ''; };
     $peek = ['United International University', 'Beacon Pharmaceuticals', 'Bikroy.com', 'HP', 'Accesstel', 'Union Properties'];
@@ -146,13 +154,12 @@ function rl_render_clients() {
 <section id="clients">
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Clients&nbsp;<b>]</b></span><h2>Who has Reinforce Lab worked with?</h2></div>
-    <ul class="c-wall">
-    <?php foreach ($list as $name => $slug) {
-        $link = isset($proj[$name]) ? $purl($proj[$name]) : '';
-        echo '<li><span class="c-logo">' . $logo($name, $slug) . '</span><span class="c-name">' . esc_html($name) . ($link ? '<a href="' . esc_url($link) . '">Project &rarr;</a>' : '') . '</span></li>';
-    } ?>
-    </ul>
-    <p class="c-note">Logos are the property of their owners and are shown with the clients' permission.</p>
+    <ul class="c-wall"><?php foreach ($list as $name => $slug) echo '<li title="' . esc_attr($name) . '">' . $logo($name, $slug) . '</li>'; ?></ul>
+    <div class="c-all">
+      <h3>All <?php echo count($list); ?> clients</h3>
+      <ul class="c-names"><?php foreach ($list as $name => $slug) { $link = isset($proj[$name]) ? $purl($proj[$name]) : ''; echo '<li>' . ($link ? '<a href="' . esc_url($link) . '">' . esc_html($name) . '</a>' : esc_html($name)) . '</li>'; } ?></ul>
+      <p class="c-note">Names with a link have a project page in our portfolio. Logos are the property of their owners and are shown with the clients' permission.</p>
+    </div>
   </div>
 </section>
 
