@@ -46,20 +46,21 @@ function rl_aigrowth_industries() {
 
 /* hero visual: the four layers feeding three outcomes */
 function rl_aigrowth_svg() {
-    $s = '<svg viewBox="0 0 520 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlAgT"><title id="rlAgT">An AI Growth System: four layers (data, AI models, automated workflows and a dashboard) connected into one loop that produces three outcomes: hours saved, search visibility and qualified pipeline, with people approving what matters.</title>';
+    /* 520 x 392: same proportions as the other service hero visuals (F-024) */
+    $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlAgT"><title id="rlAgT">An AI Growth System: four layers (data, AI models, automated workflows and a dashboard) connected into one loop that produces three outcomes: hours saved, search visibility and qualified pipeline, with people approving what matters.</title>';
     $layers = [['01', 'DATA', 'CRM · ANALYTICS · SEARCH CONSOLE'], ['02', 'AI MODELS', 'RESEARCH · WRITING · CLASSIFYING'], ['03', 'WORKFLOWS', 'MAKE · N8N · YOUR TOOLS'], ['04', 'DASHBOARD', 'OUTCOMES, NOT ACTIVITY']];
     foreach ($layers as $i => $l) {
-        $y = 14 + $i * 74;
-        $s .= '<rect class="ag-l' . ($i === 3 ? ' ag-on' : '') . '" x="0" y="' . $y . '" width="300" height="58"/>'
-            . '<text class="ag-n" x="16" y="' . ($y + 25) . '">' . $l[0] . '</text><text class="ag-t" x="52" y="' . ($y + 25) . '">' . $l[1] . '</text>'
-            . '<text class="ag-s" x="52" y="' . ($y + 43) . '">' . $l[2] . '</text>';
-        if ($i < 3) $s .= '<line class="ag-k" x1="150" y1="' . ($y + 58) . '" x2="150" y2="' . ($y + 74) . '"/>';
+        $y = 4 + $i * 90;
+        $s .= '<rect class="ag-l' . ($i === 3 ? ' ag-on' : '') . '" x="0" y="' . $y . '" width="300" height="70"/>'
+            . '<text class="ag-n" x="16" y="' . ($y + 31) . '">' . $l[0] . '</text><text class="ag-t" x="52" y="' . ($y + 31) . '">' . $l[1] . '</text>'
+            . '<text class="ag-s" x="52" y="' . ($y + 52) . '">' . $l[2] . '</text>';
+        if ($i < 3) $s .= '<line class="ag-k" x1="150" y1="' . ($y + 70) . '" x2="150" y2="' . ($y + 90) . '"/>';
     }
-    $s .= '<path class="ag-loop" d="M300 270 H318 V43 H300"/><text class="ag-s" x="326" y="160" transform="rotate(90 326 160)">LOOP: TUNED EVERY CYCLE</text>';
-    foreach ([['HOURS SAVED', 56], ['SEARCH VISIBILITY', 140], ['QUALIFIED PIPELINE', 224]] as $o) {
-        $s .= '<line class="ag-k" x1="300" y1="' . ($o[1] + 0) . '" x2="358" y2="' . $o[1] . '"/><rect class="ag-o" x="358" y="' . ($o[1] - 24) . '" width="162" height="48"/><text class="ag-ot" x="372" y="' . ($o[1] + 4) . '">' . $o[0] . '</text>';
+    $s .= '<path class="ag-loop" d="M300 309 H320 V39 H300"/><text class="ag-s" x="330" y="174" transform="rotate(90 330 174)" text-anchor="middle">LOOP: TUNED EVERY CYCLE</text>';
+    foreach ([['HOURS SAVED', 66], ['SEARCH VISIBILITY', 174], ['QUALIFIED PIPELINE', 282]] as $o) {
+        $s .= '<line class="ag-k" x1="320" y1="' . $o[1] . '" x2="350" y2="' . $o[1] . '"/><rect class="ag-o" x="350" y="' . ($o[1] - 30) . '" width="170" height="60"/><text class="ag-ot" x="366" y="' . ($o[1] + 4) . '">' . $o[0] . '</text>';
     }
-    $s .= '<text class="ag-s" x="358" y="300">+ PEOPLE APPROVE WHAT MATTERS</text>';
+    $s .= '<line class="ag-rule" x1="0" y1="362" x2="520" y2="362"/><text class="ag-s ag-ap" x="0" y="385">+ PEOPLE APPROVE WHAT MATTERS</text>';
     return $s . '</svg>';
 }
 
@@ -76,12 +77,14 @@ body.rl-aigrowth-page .fl-page-content,body.rl-aigrowth-page .fl-content,body.rl
 .rl-aigrowth .ag-l{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
 .rl-aigrowth .ag-l.ag-on{fill:rgba(153,0,0,.10);stroke:var(--red-2)}
 .rl-aigrowth .ag-n{font-family:var(--f-mono);font-size:10px;fill:var(--red-3)}
-.rl-aigrowth .ag-t{font-family:var(--f-display);font-size:17px;letter-spacing:.04em;fill:var(--ink)}
-.rl-aigrowth .ag-s{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.12em;fill:var(--ink-faint)}
+.rl-aigrowth .ag-t{font-family:var(--f-display);font-size:20px;letter-spacing:.04em;fill:var(--ink)}
+.rl-aigrowth .ag-s{font-family:var(--f-mono);font-size:9px;letter-spacing:.12em;fill:var(--ink-faint)}
 .rl-aigrowth .ag-k{stroke:var(--line-2);stroke-width:1;stroke-dasharray:3 4}
 .rl-aigrowth .ag-loop{fill:none;stroke:var(--red-2);stroke-width:1.4}
 .rl-aigrowth .ag-o{fill:var(--bg);stroke:var(--red-line);stroke-width:1}
-.rl-aigrowth .ag-ot{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.12em;fill:var(--ink)}
+.rl-aigrowth .ag-rule{stroke:var(--line-2);stroke-width:1}
+.rl-aigrowth .ag-ap{fill:var(--red-3)}
+.rl-aigrowth .ag-ot{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;fill:var(--ink)}
 .rl-aigrowth .lay{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0;padding:0;list-style:none}
 .rl-aigrowth .lay li{border:1px solid var(--line-2);background:var(--bg-2);padding:20px;margin:0;display:grid;gap:8px;align-content:start}
 .rl-aigrowth .lay .k{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--red-3)}
