@@ -24,7 +24,7 @@ function rl_portfolio_data() {
             'The alumni association of the Institute of Business Administration needed one place for its reunion: a database of alumni, online registration, and a fair prize draw.',
             ['Alumni database with graduation years and contact details', 'Online reunion registration', 'A random draw that picks a registered alumnus, with results on the site', 'Responsive design for phone and desktop'],
             ['Python', 'Django', 'MySQL', 'jQuery'], ''],
-        ['Signature Jeans', 'Signature Jeans BD', ['E-commerce', 'industries/ecommerce'], 'E-commerce website', '',
+        ['Signature Jeans', 'Signature Jeans BD', ['E-commerce', 'industries/ecommerce'], 'E-commerce website', '2024',
             'A Dhaka denim brand selling online needed a store where shoppers can find the right fit and order.',
             ['Online store with product and size pages', 'Checkout and order management'],
             ['WordPress', 'WooCommerce'], 'https://signaturejeansbd.com/'],
