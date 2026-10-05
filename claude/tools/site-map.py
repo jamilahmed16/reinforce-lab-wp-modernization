@@ -29,6 +29,8 @@ pages = json.load(open(SNAP, encoding='utf-8'))
 def group(path):
     if path == '/':
         return 'Home'
+    if path.startswith('/projects/'):
+        return 'Projects'
     if path.startswith('/services/agents/'):
         return 'Agents'
     for prefix, name in (('/services/', 'Services'), ('/industries/', 'Industries'), ('/blog/', 'Blog')):
@@ -45,10 +47,10 @@ def link(rel):
     return f'[`{rel}`](../wp/novamira-sandbox/{rel})'
 
 
-ORDER = ['Home', 'Company', 'Services', 'Industries', 'Search Authority OS', 'Agents', 'Blog', 'Drafts']
+ORDER = ['Home', 'Company', 'Projects', 'Services', 'Industries', 'Search Authority OS', 'Agents', 'Blog', 'Drafts']
 rows = {g: [] for g in ORDER}
 for p in pages:
-    if p['type'] != 'page':
+    if p['type'] not in ('page', 'rl_project'):
         continue
     tags = re.findall(r'\[(reinforce_\w+)', p['content'] or '')
     files = sorted({shortcodes[t] for t in tags if t in shortcodes} - {'core/reinforce-header.php'})

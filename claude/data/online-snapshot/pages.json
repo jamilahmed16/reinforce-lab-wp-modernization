@@ -993,5 +993,62 @@
    "_yoast_wpseo_metadesc": "Projects by Reinforce Lab: WooCommerce stores, Django web apps and WordPress sites for retail, education and law firms, with what each client needed and got."
   },
   "rl_fields": []
+ },
+ {
+  "id": 228,
+  "type": "rl_project",
+  "status": "publish",
+  "title": "Inpace Shop",
+  "slug": "inpace-shop",
+  "parent": 0,
+  "path": "/projects/inpace-shop/",
+  "template": null,
+  "content": "[reinforce_project]",
+  "excerpt": "An online store for cameras and computer accessories",
+  "date": "2023-03-21 11:32:24",
+  "modified": "2023-03-21 11:32:24",
+  "seo": {
+   "_yoast_wpseo_title": "Inpace Shop: WooCommerce Store Rebuild | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "How Reinforce Lab rebuilt the Inpace Shop online store on WooCommerce: product search, order tracking, real product photos and faster pages, in 2021."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 229,
+  "type": "rl_project",
+  "status": "publish",
+  "title": "AccessTUTOR",
+  "slug": "access-tutor",
+  "parent": 0,
+  "path": "/projects/access-tutor/",
+  "template": null,
+  "content": "[reinforce_project]",
+  "excerpt": "An online tutoring platform for exam students",
+  "date": "2023-03-16 10:00:00",
+  "modified": "2023-03-16 10:00:00",
+  "seo": {
+   "_yoast_wpseo_title": "AccessTUTOR: Online Tutoring Platform | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "How Reinforce Lab built AccessTUTOR, a Django tutoring platform for exam students, with course management, quizzes and Google Meet class details."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 230,
+  "type": "rl_project",
+  "status": "publish",
+  "title": "IBA Alumni Lottery",
+  "slug": "iba-alumni-lottery",
+  "parent": 0,
+  "path": "/projects/iba-alumni-lottery/",
+  "template": null,
+  "content": "[reinforce_project]",
+  "excerpt": "A reunion website with an alumni database and a fair prize draw",
+  "date": "2023-03-21 12:02:47",
+  "modified": "2023-03-21 12:02:47",
+  "seo": {
+   "_yoast_wpseo_title": "IBA Alumni Lottery: Reunion Website | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "How Reinforce Lab built the IBA Alumni Association reunion site: an alumni database, online registration and a random prize draw in Python and Django."
+  },
+  "rl_fields": []
  }
 ]

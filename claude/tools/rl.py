@@ -140,7 +140,7 @@ def cmd_snapshot(args):
     rv, errs = php(r'''
 $keys = ["_yoast_wpseo_title","_yoast_wpseo_metadesc","_yoast_wpseo_schema_page_type","_yoast_wpseo_meta-robots-noindex","_yoast_wpseo_canonical"];
 $pages = [];
-foreach (get_posts(["post_type" => ["page","post"], "post_status" => ["publish","draft","private","pending","future"], "numberposts" => -1, "orderby" => "ID", "order" => "ASC"]) as $p) {
+foreach (get_posts(["post_type" => ["page","post","rl_project"], "post_status" => ["publish","draft","private","pending","future"], "numberposts" => -1, "orderby" => "ID", "order" => "ASC"]) as $p) {
   $m = []; foreach ($keys as $k) { $v = get_post_meta($p->ID, $k, true); if ($v !== "") $m[$k] = $v; }
   $rl = []; foreach (get_post_meta($p->ID) as $k => $v) if (strpos($k, "rl_") === 0) $rl[$k] = maybe_unserialize($v[0]);
   $pages[] = ["id" => $p->ID, "type" => $p->post_type, "status" => $p->post_status, "title" => $p->post_title, "slug" => $p->post_name, "parent" => $p->post_parent,
@@ -200,7 +200,7 @@ return ["total" => count($all), "deleted" => count($del), "kept" => count($all) 
 
 # ---------------------------------------------------------------- crawl
 def cmd_crawl(args):
-    urls, _ = php('return array_map("get_permalink", get_posts(["post_type" => ["page","post"], "post_status" => "publish", "numberposts" => -1, "fields" => "ids"]));')
+    urls, _ = php('return array_map("get_permalink", get_posts(["post_type" => ["page","post","rl_project"], "post_status" => "publish", "numberposts" => -1, "fields" => "ids"]));')
     urls = list(urls) + [SITE + '/category/uncategorized/']
     emo = re.compile('[\U0001F000-\U0001FAFF☀-➿️]')
     bad = 0

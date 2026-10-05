@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-125 | Project pages rebuilt on `.online` at the production URLs `/projects/inpace-shop/`, `/projects/access-tutor/`, `/projects/iba-alumni-lottery/` (post type `rl_project`, no `/projects/` archive); Portfolio cards link to them | 5 Oct | DONE (Jamil: "Rebuild at same URLs") | this file |
 | D-124 | Portfolio page built (page 227, `/portfolio/`) with the six projects already public on production as placeholders; menu and footer links set; Careers hidden | 5 Oct | DONE (Jamil: "build the page with dummy portfolio ... read the .com site for portfolio"; Careers "Hide for now") | this file |
 | D-123 | Privacy Policy v2 on `.online` (page 3): country rules (EU, UK, Bangladesh PDPO 2025, US with GPC) built in; consent tick box on the Contact and Diagnostic forms; fonts self-hosted, no Google Fonts requests | 5 Oct | DONE (Jamil: "same way update privacy policy") | this file |
 | D-122 | FTC and Affiliate Disclosure published (page 224, `/ftc-disclosure/`); affiliate links labelled "Ad" automatically site-wide | 5 Oct | DONE (Jamil: "Semrush and WP Engine affiliate links") | this file |
@@ -184,6 +185,19 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-125 · Project pages rebuilt at the production URLs
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil sent the three production URLs, then chose "Rebuild at same URLs")
+
+- **URLs (production kept; URL Register: mark PRESERVE, Jamil):** `/projects/inpace-shop/` (post 228), `/projects/access-tutor/` (229), `/projects/iba-alumni-lottery/` (230). GSC 16 months (VERIFIED, `claude/data/gsc-2026-09/performance/Pages.csv`): 2 clicks / 325 impressions, 1 / 512, 1 / 341. Production also has a Yoast 301 `projects/access-tutor-copy` to `/projects/inpace-shop` (`claude/data/production-config/yoast-redirects-2026-09-10.csv`); keep it in the migration redirect map.
+- **How:** a public post type `rl_project` with rewrite slug `projects` and **no archive**, so `/projects/` itself does not exist (404, tested) and no unapproved URL is created. Original production publish dates kept (16 and 21 Mar 2023). Content `[reinforce_project]`, rendered from `rl_project_details()` in `pages/reinforce-portfolio.php`. The theme's blog sidebar is switched off for this type, and `rl_is_rl_page()` (header) now also strips the theme title on project pages.
+- **Content:** rewritten from the production pages (read-only, Exa) to the copy rules (production used "seamless", "cutting-edge", "robust", "revolutionizing", "empowering"). Facts only: client, industry, period, team, work, the brief, what we built, stack, what the client got. Production's unsourced claims ("increase in student engagement", "a resounding success") are left out; each page says results are published only with a source and client approval.
+- **Page:** hero with project facts panel; the brief; what we built (4 blocks) and stack; what the client got; other projects; CTA. Schema: WebPage with `mainEntity` CreativeWork (creator = Organization, client as `sourceOrganization`); Yoast breadcrumb Home > Portfolio > project. Yoast titles 54, 53, 51; metas 149, 145, 150.
+- **Portfolio:** the three cards now show "Read the project" instead of the client-site link.
+- **Tools:** `rl.py` snapshot and crawl, and `site-map.py`, now include `rl_project` (site map section "Projects").
+- **Verified:** all three 200, 1 H1, no PHP notices, full width, phone width 390, `copy-check.py` 0 issues.
 
 ---
 

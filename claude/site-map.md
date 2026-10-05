@@ -25,6 +25,14 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 | 224 | FTC Disclosure | [/ftc-disclosure/](https://reinforcelab.online/ftc-disclosure/) | publish | [`pages/reinforce-legal.php`](../wp/novamira-sandbox/pages/reinforce-legal.php) | FTC and Affiliate Disclosure \| Reinforce Lab |
 | 227 | Portfolio | [/portfolio/](https://reinforcelab.online/portfolio/) | publish | [`pages/reinforce-portfolio.php`](../wp/novamira-sandbox/pages/reinforce-portfolio.php) | Portfolio: Websites, Stores and Web Apps \| Reinforce Lab |
 
+## Projects (3)
+
+| ID | Page | URL | Status | Renders from | SEO title |
+|---|---|---|---|---|---|
+| 228 | Inpace Shop | [/projects/inpace-shop/](https://reinforcelab.online/projects/inpace-shop/) | publish | [`pages/reinforce-portfolio.php`](../wp/novamira-sandbox/pages/reinforce-portfolio.php) | Inpace Shop: WooCommerce Store Rebuild \| Reinforce Lab |
+| 229 | AccessTUTOR | [/projects/access-tutor/](https://reinforcelab.online/projects/access-tutor/) | publish | [`pages/reinforce-portfolio.php`](../wp/novamira-sandbox/pages/reinforce-portfolio.php) | AccessTUTOR: Online Tutoring Platform \| Reinforce Lab |
+| 230 | IBA Alumni Lottery | [/projects/iba-alumni-lottery/](https://reinforcelab.online/projects/iba-alumni-lottery/) | publish | [`pages/reinforce-portfolio.php`](../wp/novamira-sandbox/pages/reinforce-portfolio.php) | IBA Alumni Lottery: Reunion Website \| Reinforce Lab |
+
 ## Services (19)
 
 | ID | Page | URL | Status | Renders from | SEO title |
