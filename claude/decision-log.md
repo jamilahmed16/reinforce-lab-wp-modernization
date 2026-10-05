@@ -20,6 +20,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-133 | Related reading at the end of every post: posts first, topped up with the most relevant pages when there are fewer than 3 related posts (all post templates) | 5 Oct | DONE (Jamil: "There must an option for related post or something like that in the end of the post") | this file |
+| F-027 | Review of the first post "What Is an AI Growth System?": strong structure, schema and sources; gaps are first-hand evidence, a body diagram, readability and the author photo | 5 Oct | OPEN, fixes proposed | this file |
 | D-132 | First blog post published on `.online`: Explainer "What Is an AI Growth System?" (post 330, `/what-is-an-ai-growth-system/`); Home FAQ shortened to link to it | 5 Oct | DONE (Jamil: URL, definition and author yes; tools "keep as written"; no price; root URL like production posts) | this file |
 | D-131 | AI Growth Systems pillar built and published on `.online` (page 71, `/services/ai-growth-systems/`), primary keyword "ai growth systems"; Home links to it | 5 Oct | DONE (Jamil: "/services/ai-growth-systems/ Yes") | this file |
 | D-130 | Keyword map v1: Home "reinforce lab", About "about reinforce lab", `/services/ai-growth-systems/` "ai growth systems", first blog post "what is an ai growth system"; replaces D-035 keyword ownership | 5 Oct | APPROVED (Jamil: "Replace D-035 with today's plan"); Yoast focus keyphrases set | this file |
@@ -193,6 +195,22 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-133 · Related reading on every post
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "There must an option for related post or something like that in the end of the post")
+
+- **Found:** every post template already had a "Related articles" section, but it showed other posts only, so with one post published it was hidden.
+- **Changed (`blog/reinforce-post.php` + the 8 type templates):** new helpers `rl_post_rel_pages()` and `rl_post_rel_section()`. When there are no related posts, a "Related reading" section (`#related-reading`) shows 3 pages; when there are 1 or 2, the list is topped up to 3. Page order: the post's own in-article CTA page, then AI Growth Systems, Search Authority OS and the Search Authority Diagnostic, then the post's related-term links, then Services; never the current page; each card shows its type, title, a short description (Yoast meta) and "Read more". Case Study and Research keep their own card designs and get the fallback section only when they have no related posts.
+- **Live on the first post:** AI Growth Systems, Search Authority OS, Search Authority Diagnostic. Checked on desktop and phone; no PHP notices; one `id="related"` per page.
+
+## F-027 · Review of the first post
+**Date:** 5 October 2026 · **Status:** OPEN (Jamil: "now analyze the post and tell me how good the post is")
+
+- **Measured (VERIFIED):** 2,593 visible words, 18 H2 (7 questions), 12 lists, 1 table, 0 images (10 SVG icons), 4 outside source domains (7 sources), 9 internal links out, 3 in; keyword "ai growth system" in title, H1 and first 100 words, 32 uses (about 1.2%); definition 38 words; average sentence 19 words, Flesch reading ease about 57 (fairly hard); schema BlogPosting, Person, FAQPage (6), DefinedTerm; 143 KB; author bio present (347 characters) but no photo.
+- **Strong:** quotable definition and DefinedTerm schema (what AI answers lift); covers all four components in Google's AI Overview; worked example, comparison table, failure modes and self-test that the top results lack; primary sources only; no invented numbers; correct internal links both ways.
+- **Weak:** (1) no first-hand evidence: the worked example is illustrative, and nothing shows a system Reinforce Lab has actually built or runs on itself (Home says "We run this system on ourselves"); (2) no diagram in the article body (the four-layer diagram exists on the service page); (3) readability is on the hard side for a definition page; (4) author box has no photo (headshot still awaited); (5) demand for the term is small (Semrush, D-008: 20 US / 40 global a month), so the value is AI citations and category ownership, not traffic; (6) no other posts link to it yet.
 
 ---
 
