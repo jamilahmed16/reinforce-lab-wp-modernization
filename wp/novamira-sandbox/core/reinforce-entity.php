@@ -25,6 +25,9 @@ add_filter('wpseo_schema_organization', function ($data) {
     if (!is_array($data)) return $data;
     $data['sameAs'] = array_values(array_unique(array_merge(isset($data['sameAs']) ? (array) $data['sameAs'] : [], rl_entity_profiles())));
     $data['email'] = 'hello@reinforcelab.com';
+    /* company registration, from the RJSC Certificate of Incorporation (D-128) */
+    $data['identifier'] = ['@type' => 'PropertyValue', 'propertyID' => 'RJSC company registration number (Bangladesh)', 'value' => 'C-180618/2022'];
+    $data['address'] = ['@type' => 'PostalAddress', 'streetAddress' => 'Suite #1402, Level-13, Concord Tower, 113 Kazi Nazrul Islam Avenue', 'addressLocality' => 'Dhaka', 'postalCode' => '1000', 'addressCountry' => 'BD'];
     $data['contactPoint'] = [
         ['@type' => 'ContactPoint', 'contactType' => 'sales', 'email' => 'hello@reinforcelab.com', 'telephone' => '+880-1329-657096', 'areaServed' => 'BD'],
         ['@type' => 'ContactPoint', 'contactType' => 'sales', 'email' => 'hello@reinforcelab.com', 'telephone' => '+1-832-548-4553', 'areaServed' => 'US'],
