@@ -38,7 +38,10 @@ function rl_agv_svg($slug, $a) {
     if (!isset($m[$slug])) return '';
     $fn = 'rl_agv_' . str_replace('-', '_', $slug);
     $id = 'rlAgv' . substr(md5($slug), 0, 6);
-    return '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="' . $id . '"><title id="' . $id . '">' . esc_html($a['name'] . ' Agent: ' . $m[$slug][1]) . '</title>' . $fn() . '</svg>';
+    $title = esc_html($a['name'] . ' Agent: ' . $m[$slug][1]);
+    /* desktop drawing, plus a simpler phone drawing with fewer, larger labels (shown at 560 px and below) */
+    return '<svg class="agv-d" viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="' . $id . '"><title id="' . $id . '">' . $title . '</title>' . $fn() . '</svg>'
+        . '<svg class="agv-m" viewBox="0 0 320 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="' . $id . 'm"><title id="' . $id . 'm">' . $title . '</title>' . call_user_func($fn . '_m') . '</svg>';
 }
 function rl_agv_cap($slug) { $m = rl_agv_meta(); return isset($m[$slug]) ? $m[$slug][0] : ''; }
 
@@ -211,6 +214,115 @@ function rl_agv_search_performance() {
     return $s . rl_agv_foot('SEARCH CONSOLE · GA4 · AI VISIBILITY', 'A-08');
 }
 
+/* ---------- phone drawings (viewBox 320 x 392, labels 11 px) ---------- */
+function rl_agv_mfoot($id) { return rl_agv_l(0, 360, 320, 360, 'v-l2') . rl_agv_t(0, 382, $id . ' · REVIEWED BY A PERSON', 'm-lab'); }
+
+function rl_agv_seo_intelligence_m() {
+    $s = rl_agv_t(0, 12, 'BUSINESS VALUE', 'm-lab') . rl_agv_l(20, 20, 20, 160, 'v-l2') . rl_agv_l(20, 160, 300, 160, 'v-l2') . rl_agv_t(300, 176, 'DIFFICULTY', 'm-lab', 'end');
+    $s .= rl_agv_l(160, 20, 160, 160, 'v-dash') . rl_agv_l(20, 90, 300, 90, 'v-dash') . rl_agv_r(21, 21, 138, 68, 'v-bh', 1) . rl_agv_t(28, 38, 'QUICK WINS', 'm-tr');
+    foreach ([[200, 50], [250, 74], [60, 124], [110, 140], [210, 120], [270, 140]] as $p) $s .= rl_agv_c($p[0], $p[1], 3.5);
+    foreach ([[60, 66], [104, 54], [136, 76]] as $i => $p) $s .= rl_agv_c($p[0], $p[1], 8, 'v-ring', 2 + $i) . rl_agv_c($p[0], $p[1], 4, 'v-dotr', 2 + $i);
+    $s .= rl_agv_t(0, 204, 'PAGE PLAN', 'm-lab');
+    foreach ([['P1', 'QUICK WIN · EXISTING PAGE'], ['P2', 'NEW PAGE · HIGH INTENT'], ['P3', 'REFRESH · NEAR PAGE ONE']] as $i => $r) { $y = 214 + $i * 46; $s .= rl_agv_r(0, $y, 320, 38) . rl_agv_r(0, $y, 320, 38, 'v-bh', 5 + $i) . rl_agv_t(12, $y + 24, $r[0], 'm-tr') . rl_agv_t(44, $y + 24, $r[1], 'm-tb'); }
+    return $s . rl_agv_mfoot('A-01');
+}
+function rl_agv_content_research_m() {
+    $s = rl_agv_t(0, 12, 'WHAT THE TOP PAGES COVER', 'm-lab');
+    foreach (['R1', 'R2', 'R3', 'R4'] as $j => $c) $s .= rl_agv_t(168 + $j * 30, 32, $c, 'm-lab', 'middle');
+    $s .= rl_agv_t(296, 32, 'GAP', 'm-tr', 'middle');
+    $cov = [['DEFINITION', [1, 1, 1, 1]], ['COST', [0, 0, 0, 0]], ['COMPARISON', [1, 0, 1, 0]], ['RISKS', [0, 0, 0, 0]]];
+    foreach ($cov as $i => $r) {
+        $y = 40 + $i * 42; $gap = array_sum($r[1]) === 0;
+        $s .= rl_agv_r(0, $y, 320, 34) . ($gap ? rl_agv_r(0, $y, 320, 34, 'v-bh', 2 + ($i > 1 ? 1 : 0)) : '') . rl_agv_t(10, $y + 22, $r[0], $gap ? 'm-tb' : 'm-t');
+        foreach ($r[1] as $j => $v) $s .= rl_agv_r(160 + $j * 30, $y + 9, 16, 16, $v ? 'v-cell' : 'v-cell0');
+        if ($gap) $s .= rl_agv_r(288, $y + 9, 16, 16, 'v-cellr');
+    }
+    $s .= rl_agv_t(0, 226, 'RESEARCH BRIEF', 'm-lab') . rl_agv_r(0, 236, 320, 108) . rl_agv_t(12, 262, 'H2 · COST', 'm-tr', 'start', 4) . rl_agv_t(12, 286, 'H2 · RISKS', 'm-tr', 'start', 5);
+    foreach ([0, 1, 2] as $i) $s .= rl_agv_r(12 + $i * 46, 304, 38, 26) . rl_agv_t(31 + $i * 46, 321, '[' . ($i + 1) . ']', 'm-t', 'middle') . rl_agv_r(12 + $i * 46, 304, 38, 26, 'v-bh', 6 + $i);
+    $s .= rl_agv_t(308, 321, 'SOURCES', 'm-lab', 'end');
+    return $s . rl_agv_mfoot('A-02');
+}
+function rl_agv_evidence_verification_m() {
+    $s = rl_agv_t(0, 12, 'DRAFT', 'm-lab') . rl_agv_r(0, 20, 320, 96);
+    foreach ([34, 47, 60, 73, 86, 99] as $k => $y) $s .= rl_agv_r(12, $y, $k % 2 ? 230 : 270, 4, 'v-line');
+    foreach ([[33, 40, 120, 'C1'], [59, 90, 110, 'C2'], [85, 30, 130, 'C3']] as $c) $s .= rl_agv_r(12 + $c[1], $c[0] - 2, $c[2], 8, 'v-claim') . rl_agv_t(310, $c[0] + 5, $c[3], 'm-tr', 'end');
+    $s .= rl_agv_t(0, 138, 'CLAIM LEDGER', 'm-lab');
+    foreach ([['PEER-REVIEWED', 5, 'VERIFIED', 'ok'], ['TRADE SOURCE', 3, 'CHECK DATE', 'warn'], ['NONE FOUND', 0, 'TO A PERSON', 'flag']] as $i => $r) {
+        $y = 148 + $i * 66;
+        $s .= rl_agv_r(0, $y, 320, 56) . rl_agv_r(0, $y, 320, 56, $r[3] === 'flag' ? 'v-bflag' : 'v-bh', 2 + $i * 2) . rl_agv_t(12, $y + 22, 'C' . ($i + 1), 'm-tr') . rl_agv_t(44, $y + 22, $r[0], $r[3] === 'flag' ? 'm-tr' : 'm-tb');
+        for ($k = 0; $k < 5; $k++) $s .= rl_agv_r(44 + $k * 14, $y + 32, 10, 10, $k < $r[1] ? 'v-cell' : 'v-cell0');
+        $s .= rl_agv_t(308, $y + 42, $r[2], $r[3] === 'ok' ? 'm-tb' : 'm-tr', 'end');
+        if ($r[3] === 'ok') $s .= rl_agv_tick(120, $y + 31, 3 + $i * 2);
+    }
+    return $s . rl_agv_mfoot('A-03');
+}
+function rl_agv_aeo_geo_optimization_m() {
+    $s = rl_agv_t(0, 12, 'PAGE SECTIONS MADE ANSWER-READY', 'm-lab');
+    foreach (['DEFINITION', 'FAQ', 'KEY FACTS'] as $i => $c) $s .= rl_agv_r($i * 108, 22, 100, 34) . rl_agv_r($i * 108, 22, 100, 34, 'v-bh', 1 + $i) . rl_agv_t($i * 108 + 50, 43, $c, 'm-tb', 'middle');
+    $s .= rl_agv_t(0, 86, 'AI ENGINE', 'm-lab');
+    foreach (['M', 'C', 'A'] as $k => $l) $s .= rl_agv_t(236 + $k * 26, 86, $l, 'm-lab', 'middle');
+    foreach (['CHATGPT', 'PERPLEXITY', 'GEMINI', 'AI OVERVIEWS'] as $i => $e) {
+        $y = 96 + $i * 56;
+        $s .= rl_agv_r(0, $y, 320, 46) . rl_agv_t(12, $y + 28, $e, 'm-tb');
+        foreach ([0, 1, 2] as $k) $s .= rl_agv_r(228 + $k * 26, $y + 15, 16, 16, 'v-cell0') . rl_agv_r(228 + $k * 26, $y + 15, 16, 16, 'v-cellr', 4 + $k + ($i % 2));
+    }
+    $s .= rl_agv_t(0, 340, 'M MENTIONED · C CITED · A ACCURATE', 'm-lab');
+    return $s . rl_agv_mfoot('A-04');
+}
+function rl_agv_social_sentiment_m() {
+    $s = rl_agv_t(0, 12, 'WHERE CUSTOMERS TALK', 'm-lab');
+    foreach (['FORUMS', 'REVIEWS', 'SOCIAL'] as $i => $c) $s .= rl_agv_r($i * 108, 22, 100, 32) . rl_agv_r($i * 108, 22, 100, 32, 'v-bh', $i) . rl_agv_t($i * 108 + 50, 42, $c, 'm-tb', 'middle');
+    $s .= rl_agv_t(0, 82, 'THEMES', 'm-lab');
+    foreach ([['OBJECTION', 'PRICE AND VALUE', 6], ['CONFUSION', 'HOW TO START', 5], ['QUESTION', 'CAN WE TRUST IT', 4]] as $i => $t) {
+        $y = 92 + $i * 58;
+        $s .= rl_agv_r(0, $y, 320, 48) . rl_agv_r(0, $y, 320, 48, 'v-bh', 3 + $i) . rl_agv_t(12, $y + 20, $t[0], 'm-tr') . rl_agv_t(12, $y + 38, $t[1], 'm-tb');
+        for ($k = 0; $k < $t[2]; $k++) $s .= rl_agv_r(300 - $k * 13, $y + 30, 9, 9, 'v-cell');
+    }
+    $s .= rl_agv_t(0, 278, 'OUTPUTS', 'm-lab');
+    foreach (['FAQ TOPICS', 'NEW ANGLES'] as $i => $c) $s .= rl_agv_r($i * 166, 288, 154, 40) . rl_agv_r($i * 166, 288, 154, 40, 'v-bh', 7 + $i) . rl_agv_t($i * 166 + 77, 313, $c, 'm-tb', 'middle');
+    return $s . rl_agv_mfoot('A-05');
+}
+function rl_agv_competitor_intelligence_m() {
+    $cx = 160; $cy = 122; $R = 78;
+    $ax = ['PRICING', 'GUIDES', 'COMPARE', 'TOOLS', 'CASES', 'FAQ'];
+    $pt = function ($i, $f) use ($cx, $cy, $R) { $a = deg2rad(-90 + $i * 60); return round($cx + cos($a) * $R * $f, 1) . ',' . round($cy + sin($a) * $R * $f, 1); };
+    $s = rl_agv_r(0, 6, 10, 5, 'v-rivk') . rl_agv_t(16, 12, 'RIVALS', 'm-lab') . rl_agv_r(0, 22, 10, 5, 'v-youk') . rl_agv_t(16, 28, 'YOU', 'm-lab');
+    foreach ([0.5, 1] as $f) { $p = []; for ($i = 0; $i < 6; $i++) $p[] = $pt($i, $f); $s .= '<polygon class="v-grid" points="' . implode(' ', $p) . '"/>'; }
+    for ($i = 0; $i < 6; $i++) { list($x, $y) = explode(',', $pt($i, 1)); $s .= rl_agv_l($cx, $cy, $x, $y, 'v-grid'); list($lx, $ly) = explode(',', $pt($i, 1.24)); $s .= rl_agv_t($lx, (float) $ly + 4, $ax[$i], 'm-lab', 'middle'); }
+    $p = []; foreach ([0.9, 0.8, 0.95, 0.55, 0.7, 0.85] as $i => $f) $p[] = $pt($i, $f); $s .= '<polygon class="v-riv" points="' . implode(' ', $p) . '"/>';
+    $p = []; foreach ([0.75, 0.85, 0.3, 0.6, 0.35, 0.8] as $i => $f) $p[] = $pt($i, $f); $s .= '<polygon class="v-you v-dw v-d1" pathLength="100" points="' . implode(' ', $p) . '"/>';
+    foreach ([2, 4] as $k => $i) { list($x, $y) = explode(',', $pt($i, 0.62)); $s .= rl_agv_c($x, $y, 13, 'v-ring', 2 + $k) . rl_agv_t($x, (float) $y + 4, 'GAP', 'm-tr', 'middle'); }
+    $s .= rl_agv_t(0, 240, 'ALERTS', 'm-lab');
+    foreach (['NEW COMPARISON PAGE', 'CITED IN AN AI ANSWER'] as $i => $t) { $y = 250 + $i * 48; $s .= rl_agv_r(0, $y, 320, 40) . rl_agv_r(0, $y, 320, 40, 'v-bh', 4 + $i) . rl_agv_t(12, $y + 25, 'RIVAL', 'm-tr') . rl_agv_t(66, $y + 25, $t, 'm-tb'); }
+    return $s . rl_agv_mfoot('A-06');
+}
+function rl_agv_content_qa_m() {
+    $s = rl_agv_t(0, 12, 'DRAFT CHECKED IN THREE LANES', 'm-lab');
+    foreach ([['SEO CHECK', -1], ['AEO / GEO CHECK', -1], ['EVIDENCE CHECK', 1]] as $i => $ln) {
+        $y = 22 + $i * 58;
+        $s .= rl_agv_r(0, $y, 320, 48) . rl_agv_t(12, $y + 18, $ln[0], 'm-lab');
+        for ($k = 0; $k < 4; $k++) { $x = 12 + $k * 30; $s .= rl_agv_r($x, $y + 25, 14, 14, 'v-cell0') . ($k === $ln[1] ? rl_agv_r($x, $y + 25, 14, 14, 'v-cellr', 2 + $i * 2) . '<path class="v-x" d="M' . ($x + 4) . ' ' . ($y + 29) . ' l6 6 m0 -6 l-6 6"/>' : rl_agv_tick($x + 2, $y + 26, 1 + $i * 2)); }
+        $s .= rl_agv_t(308, $y + 36, $ln[1] < 0 ? 'PASS' : 'FIX NEEDED', $ln[1] < 0 ? 'm-tb' : 'm-tr', 'end');
+    }
+    $s .= rl_agv_r(0, 206, 154, 84) . rl_agv_r(0, 206, 154, 84, 'v-bflag', 7) . rl_agv_t(12, 230, 'FIX LIST', 'm-tr') . rl_agv_t(12, 252, 'UPDATE OLD DATE', 'm-tb') . rl_agv_r(12, 266, 110, 4, 'v-line');
+    $s .= rl_agv_r(166, 206, 154, 84) . rl_agv_r(166, 206, 154, 84, 'v-bh', 9) . rl_agv_t(243, 248, 'APPROVED', 'v-stamp', 'middle', 9) . rl_agv_t(243, 272, 'BY A PERSON', 'm-lab', 'middle');
+    $s .= rl_agv_t(0, 316, 'AUDIT TRAIL', 'm-lab');
+    foreach ([326, 338] as $k => $y) $s .= rl_agv_r(0, $y, $k ? 200 : 280, 4, 'v-line', 10 + $k);
+    return $s . rl_agv_mfoot('A-07');
+}
+function rl_agv_search_performance_m() {
+    $s = rl_agv_t(0, 12, 'SEARCH CLICKS', 'm-lab') . rl_agv_l(10, 20, 10, 150, 'v-l2') . rl_agv_l(10, 150, 310, 150, 'v-l2') . rl_agv_l(10, 85, 310, 85, 'v-dash');
+    $s .= '<path class="v-line3" d="M10 50 L40 46 L70 54 L100 44 L130 50 L150 48 L170 96 L190 120 L220 126 L250 122 L280 128"/>' . rl_agv_dw('M280 128 C292 110 300 86 310 64', 9, 'v-lrd');
+    $s .= rl_agv_c(170, 96, 7, 'v-ring', 1) . rl_agv_t(182, 92, 'DROP DETECTED', 'm-tr', 'start', 2) . rl_agv_t(306, 58, 'RECOVERY', 'm-tr', 'end', 10);
+    $s .= rl_agv_t(0, 180, 'LIKELY CAUSES', 'm-lab');
+    foreach (['INTENT SHIFTED', 'CONTENT DECAYED', 'PAGES COMPETE'] as $i => $t) {
+        $y = 190 + $i * 46; $root = ($i === 1);
+        $s .= rl_agv_r(0, $y, 320, 38) . rl_agv_r(0, $y, 320, 38, $root ? 'v-bflag' : 'v-bdim', 3 + $i) . rl_agv_t(12, $y + 24, $t, $root ? 'm-tb' : 'm-t');
+    }
+    $s .= rl_agv_t(308, 260, 'ROOT CAUSE', 'm-tr', 'end', 6);
+    return $s . rl_agv_mfoot('A-08');
+}
+
 /* ---------- CSS + keyframes (printed inside the agent page's style block) ---------- */
 function rl_agv_css() {
     $k = '';
@@ -250,6 +362,8 @@ function rl_agv_css() {
 /* highlights are visible by default; the keyframes hide them until their step, so reduced motion shows the complete drawing */
 .rl-ag .v-dw{stroke-dasharray:100;stroke-dashoffset:0}
 .rl-ag .v-k,.rl-ag .v-dw{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
-@media(max-width:560px){.rl-ag .v-t,.rl-ag .v-tb,.rl-ag .v-tr{font-size:9.5px;letter-spacing:.02em}.rl-ag .v-lab{font-size:8.5px;letter-spacing:.06em}.rl-ag .agf .cap span+span{display:none}.rl-ag .agf{padding:16px 10px 10px}}
+.rl-ag .m-t{font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;fill:var(--ink-dim)}.rl-ag .m-tb{font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;fill:var(--ink)}.rl-ag .m-tr{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;fill:var(--red-3)}.rl-ag .m-lab{font-family:var(--f-mono);font-size:9px;letter-spacing:.12em;fill:var(--ink-faint)}
+.rl-ag .agv-m{display:none}
+@media(max-width:560px){.rl-ag .agf .agv-d{display:none}.rl-ag .agf .agv-m{display:block}.rl-ag .agf .cap span+span{display:none}.rl-ag .agf{padding:16px 12px 10px}}
 ' . $k;
 }
