@@ -9,6 +9,7 @@ if (!defined('ABSPATH')) exit;
 foreach ([
     'pages/reinforce-about.php',
     'pages/reinforce-awards.php',
+    'pages/reinforce-legal.php',
     'saos/reinforce-agent-visuals.php',
     'saos/reinforce-agent-pages.php',
     'saos/reinforce-agents.php',
