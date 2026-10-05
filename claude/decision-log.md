@@ -22,7 +22,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 |---|---|---|---|---|
 | D-113 | About page: Our story and Milestones aligned as two equal columns | 5 Oct | DONE (Jamil: "either separate it with section or make it aligned") | this file |
 | D-112 | About page: "Why are there no client logos or results" section removed | 5 Oct | DONE (Jamil: "remove this") | this file |
-| D-111 | About page founder profile rebuilt from the verified 2018 Onalytica career facts | 5 Oct | DONE on `.online`; Jamil to confirm facts and send a headshot | this file |
+| D-111 | About page founder profile rebuilt from the verified 2018 Onalytica career facts | 5 Oct | APPROVED (Jamil: "keep both sentences, keep all career details"); headshot to follow | this file |
 | D-110 | About page rebuilt on `.online` to the v2 company-led copy (`/about-us/`, page 218) | 5 Oct | DONE (Jamil: "dates are right, no Estonia office, keep all, build it") | this file |
 | D-109 | Origin story from Jamil: started in Tallinn, Estonia 2020; expanded to Bangladesh 2021; About draft v2 | 5 Oct | RECORDED; About copy in review | this file |
 | D-108 | Founding date is 1 April 2021 everywhere (replaces 2020, D-069) | 5 Oct | DONE (Jamil: "1 April 2021 everywhere") | this file |
@@ -192,7 +192,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## D-111 · Founder profile on About rebuilt (verified career facts)
-**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "this is pathetically POOR profile of mine"); career facts and photo waiting on Jamil.
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "this is pathetically POOR profile of mine"). **APPROVED 5 Oct:** "keep both sentences, keep all career details i will add image later". Headshot to follow (Jamil adds it); the 2018 "CEO at Reinforce Lab" question is still open.
 
 - **Source:** "Interview with Jamil Ahmed", Onalytica, 7 Sep 2018 (re-read via Exa, 5 Oct): B.Pharm, East West University; international business at an oncology pharmaceutical company in Bangladesh from 2012, country manager for Sri Lanka, Latin America (Puerto Rico, Cuba) and West Africa (Ghana, Kenya, Mauritania); registered and marketed 16+ oncology and 5 general medicine brands in Sri Lanka; ciprofloxacin (Xbac) onto Ghana's Essential Medicines List via the Ghana National Drugs Program; Executive International Marketing, Square Group (2016); Product Manager, Immunology, Janssen Pharmaceutical Companies of Johnson & Johnson (2017). The interview's "No. 1" descriptions of his employers are not repeated.
 - **Section now:** profile card (credentials list: education, pharma career, markets, today; LinkedIn and interview buttons; photo slot), a four-paragraph bio "From pharmaceutical marketing to AI Growth Systems", the LinkedIn headline quote, and an 8-step career path (2012 to Today).
