@@ -363,7 +363,7 @@ function rl_agv_css() {
 .rl-ag .v-dw{stroke-dasharray:100;stroke-dashoffset:0}
 .rl-ag .v-k,.rl-ag .v-dw{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
 .rl-ag .m-t{font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;fill:var(--ink-dim)}.rl-ag .m-tb{font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;fill:var(--ink)}.rl-ag .m-tr{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;fill:var(--red-3)}.rl-ag .m-lab{font-family:var(--f-mono);font-size:9px;letter-spacing:.12em;fill:var(--ink-faint)}
-.rl-ag .agv-m{display:none}
-@media(max-width:560px){.rl-ag .agf .agv-d{display:none}.rl-ag .agf .agv-m{display:block}.rl-ag .agf .cap span+span{display:none}.rl-ag .agf{padding:16px 12px 10px}}
+.rl-ag .agf svg.agv-m{display:none}
+@media(max-width:560px){.rl-ag .agf svg.agv-d{display:none}.rl-ag .agf svg.agv-m{display:block}.rl-ag .agf .cap span+span{display:none}.rl-ag .agf{padding:16px 12px 10px}}
 ' . $k;
 }

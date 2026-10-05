@@ -192,7 +192,8 @@ Newest month first; within a month, entries are in the order they appear in the 
   - **A-08 Search Performance:** clicks line with a detected drop, five causes checked, the root cause found, a recovery line and plan.
 - **Rules kept:** illustrative only (no numbers, no client data); each SVG has its own title describing it; the panel cap names the agent and the visual; every visual ends with "REVIEWED BY A PERSON". Reduced motion shows the complete drawing with all highlights on.
 - **Removed:** the shared diagram code and its keyframes from `reinforce-agent-pages.php`.
-- **Verified:** all 8 SVGs parse as XML; rendered side by side (static and lit) and fixed overlaps in A-03, A-04, A-06 and A-08 before deploying; live on all 8 pages with no PHP notices; panel edges within the hero standard (F-024); phone width 390 on all 8; `copy-check.py` 0 issues. On phones the diagram labels are small (about 6 px), as they were before.
+- **Phone versions** (Jamil: "yes, make phone versions with larger labels"): each agent also has a simpler phone drawing (`rl_agv_*_m()`, viewBox 320 by 392) with fewer labels at 11 px (about 11 to 12 px on screen, was about 6 px), laid out top to bottom. Shown at 560 px and below; the desktop drawing is hidden there, and the phone drawing is hidden above it. Checked on all 8 pages at 390 px; desktop unchanged (hero edges as before).
+- **Verified:** all 8 SVGs parse as XML; rendered side by side (static and lit) and fixed overlaps in A-03, A-04, A-06 and A-08 before deploying; live on all 8 pages with no PHP notices; panel edges within the hero standard (F-024); phone width 390 on all 8; `copy-check.py` 0 issues.
 
 ---
 
