@@ -29,9 +29,9 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 
 | ID | Page | URL | Status | Renders from | SEO title |
 |---|---|---|---|---|---|
-| 228 | Inpace Shop | [/projects/inpace-shop/](https://reinforcelab.online/projects/inpace-shop/) | publish | [`pages/reinforce-portfolio.php`](../wp/novamira-sandbox/pages/reinforce-portfolio.php) | Inpace Shop: WooCommerce Store Rebuild \| Reinforce Lab |
-| 229 | AccessTUTOR | [/projects/access-tutor/](https://reinforcelab.online/projects/access-tutor/) | publish | [`pages/reinforce-portfolio.php`](../wp/novamira-sandbox/pages/reinforce-portfolio.php) | AccessTUTOR: Online Tutoring Platform \| Reinforce Lab |
-| 230 | IBA Alumni Lottery | [/projects/iba-alumni-lottery/](https://reinforcelab.online/projects/iba-alumni-lottery/) | publish | [`pages/reinforce-portfolio.php`](../wp/novamira-sandbox/pages/reinforce-portfolio.php) | IBA Alumni Lottery: Reunion Website \| Reinforce Lab |
+| 228 | Inpace Shop | [/portfolio/inpace-shop/](https://reinforcelab.online/portfolio/inpace-shop/) | publish | [`pages/reinforce-portfolio.php`](../wp/novamira-sandbox/pages/reinforce-portfolio.php) | Inpace Shop: WooCommerce Store Rebuild \| Reinforce Lab |
+| 229 | AccessTUTOR | [/portfolio/access-tutor/](https://reinforcelab.online/portfolio/access-tutor/) | publish | [`pages/reinforce-portfolio.php`](../wp/novamira-sandbox/pages/reinforce-portfolio.php) | AccessTUTOR: Online Tutoring Platform \| Reinforce Lab |
+| 230 | IBA Alumni Lottery | [/portfolio/iba-alumni-lottery/](https://reinforcelab.online/portfolio/iba-alumni-lottery/) | publish | [`pages/reinforce-portfolio.php`](../wp/novamira-sandbox/pages/reinforce-portfolio.php) | IBA Alumni Lottery: Reunion Website \| Reinforce Lab |
 
 ## Services (19)
 

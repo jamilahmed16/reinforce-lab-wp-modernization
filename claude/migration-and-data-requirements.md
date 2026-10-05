@@ -27,6 +27,8 @@ The site is being **rebuilt fresh** (D-001), so the migration is a **content + U
 | `RETIRE → parent/301` | removed | **301 to nearest relevant** (not to home by default) |
 | `KEEP (noindex)` | kept but not indexed (e.g. thin utility) | none |
 
+Approved moves so far are collected in `claude/data/approved-redirects-2026-10.csv` (D-126).
+
 **The redirect map = the disposition of all 787 URLs.** Today: **17 PRESERVE, 5 NEW, 765 PENDING.** The redirect map cannot be finished until the 765 are decided — and that needs the data in §3.
 
 ---

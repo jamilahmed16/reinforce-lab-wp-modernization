@@ -44,3 +44,6 @@ url,type,status,notes
 /reviews/,Hub,APPROVED-NEW,D-016/hub-A; affiliate reviews hub
 /reviews/best-wordpress-hosting/,Pillar (comparison),APPROVED-NEW,hosting comparison pillar
 /reviews/best-seo-ai-tools/,Pillar (comparison),APPROVED-NEW,tools comparison pillar
+/portfolio/inpace-shop/,Project page,APPROVED-NEW,D-126 (Jamil 5 Oct 2026: "it should be under /portfolio/ no /projects"); replaces production /projects/inpace-shop/ (301)
+/portfolio/access-tutor/,Project page,APPROVED-NEW,D-126; replaces production /projects/access-tutor/ (301)
+/portfolio/iba-alumni-lottery/,Project page,APPROVED-NEW,D-126; replaces production /projects/iba-alumni-lottery/ (301)

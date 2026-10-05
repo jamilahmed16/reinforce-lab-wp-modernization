@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-126 | Project pages moved from `/projects/<slug>/` to `/portfolio/<slug>/`; production `/projects/` URLs get 301s (tested on `.online`, in `claude/data/approved-redirects-2026-10.csv`) | 5 Oct | DONE (Jamil: "it should be under https://reinforcelab.online/portfolio/ no \"/projects\"") | this file |
 | D-125 | Project pages rebuilt on `.online` at the production URLs `/projects/inpace-shop/`, `/projects/access-tutor/`, `/projects/iba-alumni-lottery/` (post type `rl_project`, no `/projects/` archive); Portfolio cards link to them | 5 Oct | DONE (Jamil: "Rebuild at same URLs") | this file |
 | D-124 | Portfolio page built (page 227, `/portfolio/`) with the six projects already public on production as placeholders; menu and footer links set; Careers hidden | 5 Oct | DONE (Jamil: "build the page with dummy portfolio ... read the .com site for portfolio"; Careers "Hide for now") | this file |
 | D-123 | Privacy Policy v2 on `.online` (page 3): country rules (EU, UK, Bangladesh PDPO 2025, US with GPC) built in; consent tick box on the Contact and Diagnostic forms; fonts self-hosted, no Google Fonts requests | 5 Oct | DONE (Jamil: "same way update privacy policy") | this file |
@@ -188,8 +189,18 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 ---
 
+## D-126 · Project pages moved under /portfolio/
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "it should be under https://reinforcelab.online/portfolio/ no \"/projects\"")
+
+- **New URLs (APPROVED-NEW, added to `claude/data/approved-new-urls-2026-09.csv`):** `/portfolio/inpace-shop/`, `/portfolio/access-tutor/`, `/portfolio/iba-alumni-lottery/`. The `rl_project` rewrite slug is now `portfolio`, still with no archive, so `/portfolio/` remains the Portfolio page (200) and `/projects/` is 404.
+- **Redirects (production URLs change at migration, approved by Jamil for these four):** `/projects/inpace-shop/`, `/projects/access-tutor/`, `/projects/iba-alumni-lottery/` 301 to the matching `/portfolio/<slug>/`; the old production Yoast redirect `/projects/access-tutor-copy` now goes straight to `/portfolio/inpace-shop/` (one hop, no chain). Recorded in the new `claude/data/approved-redirects-2026-10.csv` in the redirect-map columns from `claude/migration-and-data-requirements.md` §2. Already live on `.online` (a `template_redirect` in `pages/reinforce-portfolio.php`) so they can be tested: all four return 301 to the right page.
+- **Yoast:** its stored indexables for posts 228 to 230 still had `/projects/` permalinks (og:url); they were deleted so Yoast rebuilt them. No `/projects/` left in the page HTML.
+- **Verified:** 3 project pages 200 with 1 H1; Portfolio links to all three; `site-map.py` groups `/portfolio/<slug>/` as Projects.
+
+---
+
 ## D-125 · Project pages rebuilt at the production URLs
-**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil sent the three production URLs, then chose "Rebuild at same URLs")
+**Date:** 5 October 2026 · **Status:** URLs SUPERSEDED by D-126 (now `/portfolio/<slug>/`); content and template stand. DONE on `.online` (Jamil sent the three production URLs, then chose "Rebuild at same URLs")
 
 - **URLs (production kept; URL Register: mark PRESERVE, Jamil):** `/projects/inpace-shop/` (post 228), `/projects/access-tutor/` (229), `/projects/iba-alumni-lottery/` (230). GSC 16 months (VERIFIED, `claude/data/gsc-2026-09/performance/Pages.csv`): 2 clicks / 325 impressions, 1 / 512, 1 / 341. Production also has a Yoast 301 `projects/access-tutor-copy` to `/projects/inpace-shop` (`claude/data/production-config/yoast-redirects-2026-09-10.csv`); keep it in the migration redirect map.
 - **How:** a public post type `rl_project` with rewrite slug `projects` and **no archive**, so `/projects/` itself does not exist (404, tested) and no unapproved URL is created. Original production publish dates kept (16 and 21 Mar 2023). Content `[reinforce_project]`, rendered from `rl_project_details()` in `pages/reinforce-portfolio.php`. The theme's blog sidebar is switched off for this type, and `rl_is_rl_page()` (header) now also strips the theme title on project pages.

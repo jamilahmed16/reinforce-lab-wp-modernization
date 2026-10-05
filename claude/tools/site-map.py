@@ -29,7 +29,7 @@ pages = json.load(open(SNAP, encoding='utf-8'))
 def group(path):
     if path == '/':
         return 'Home'
-    if path.startswith('/projects/'):
+    if path.startswith('/portfolio/') and path != '/portfolio/':
         return 'Projects'
     if path.startswith('/services/agents/'):
         return 'Agents'

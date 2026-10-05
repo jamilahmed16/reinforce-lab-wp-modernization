@@ -1,0 +1,5 @@
+old_url,status_code,GSC_clicks,GSC_impr,backlinks,disposition,destination_url,redirect_type,canonical,notes
+https://reinforcelab.com/projects/inpace-shop/,200,2,325,UNKNOWN (Jamil export pending),APPROVED-MOVE,https://reinforcelab.com/portfolio/inpace-shop/,301,self,D-126; GSC 16 months from claude/data/gsc-2026-09/performance/Pages.csv; tested on .online
+https://reinforcelab.com/projects/access-tutor/,200,1,512,UNKNOWN (Jamil export pending),APPROVED-MOVE,https://reinforcelab.com/portfolio/access-tutor/,301,self,D-126; tested on .online
+https://reinforcelab.com/projects/iba-alumni-lottery/,200,1,341,UNKNOWN (Jamil export pending),APPROVED-MOVE,https://reinforcelab.com/portfolio/iba-alumni-lottery/,301,self,D-126; tested on .online
+https://reinforcelab.com/projects/access-tutor-copy/,301,,,UNKNOWN,APPROVED-MOVE,https://reinforcelab.com/portfolio/inpace-shop/,301,,D-126; existing production Yoast 301 to /projects/inpace-shop; pointed straight at the new URL so there is no chain

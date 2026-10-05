@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - Portfolio
- * Description: /portfolio/ (production URL kept, rule R4 core page, D-124) and the project pages /projects/<slug>/ (production URLs kept, D-125). Provides [reinforce_portfolio]. PLACEHOLDER LIST: the six projects already shown on reinforcelab.com/portfolio/, facts taken read-only from production (Exa, 5 Oct 2026); Jamil will send the real portfolio. No results or numbers appear without a source. Uses the shared kit (D-044). Schema: CollectionPage with an ItemList of CreativeWork, FAQPage.
+ * Description: /portfolio/ (production URL kept, rule R4 core page, D-124) and the project pages /portfolio/<slug>/ (D-125, D-126: moved from production /projects/<slug>/, 301 at migration). Provides [reinforce_portfolio]. PLACEHOLDER LIST: the six projects already shown on reinforcelab.com/portfolio/, facts taken read-only from production (Exa, 5 Oct 2026); Jamil will send the real portfolio. No results or numbers appear without a source. Uses the shared kit (D-044). Schema: CollectionPage with an ItemList of CreativeWork, FAQPage.
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -281,8 +281,9 @@ function rl_render_portfolio() {
 }
 
 /* =========================================================================
-   Project pages: /projects/<slug>/ (production URLs kept, PRESERVE, Jamil 5 Oct 2026, D-125).
-   Post type rl_project with the "projects" slug and NO archive, so no /projects/ index URL exists.
+   Project pages: /portfolio/<slug>/ (Jamil 5 Oct 2026: "it should be under /portfolio/ no /projects", D-126).
+   Production has them at /projects/<slug>/: those URLs 301 here (below, and in the migration redirect map).
+   Post type rl_project with the "portfolio" slug and NO archive: /portfolio/ itself stays the Portfolio page.
    Content rewritten from the production project pages (read-only, Exa); facts only, no results.
    ========================================================================= */
 add_action('init', function () {
@@ -290,11 +291,20 @@ add_action('init', function () {
         'label' => 'Projects', 'labels' => ['name' => 'Projects', 'singular_name' => 'Project'],
         'public' => true, 'has_archive' => false, 'show_in_rest' => true, 'menu_icon' => 'dashicons-portfolio',
         'supports' => ['title', 'editor', 'author', 'excerpt', 'revisions'],
-        'rewrite' => ['slug' => 'projects', 'with_front' => false],
+        'rewrite' => ['slug' => 'portfolio', 'with_front' => false],
     ]);
 });
 
 function rl_is_project() { return is_singular('rl_project'); }
+
+/* production URLs /projects/<slug>/ (and the old Yoast redirect access-tutor-copy) go to /portfolio/<slug>/ with a 301 (D-126) */
+add_action('template_redirect', function () {
+    $path = trim((string) wp_parse_url(isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '', PHP_URL_PATH), '/');
+    if (!preg_match('#^projects/([a-z0-9-]+)$#', $path, $m)) return;
+    $slug = $m[1] === 'access-tutor-copy' ? 'inpace-shop' : $m[1];
+    $post = get_page_by_path($slug, OBJECT, 'rl_project');
+    if ($post && $post->post_status === 'publish') { wp_safe_redirect(get_permalink($post), 301); exit; }
+}, 1);
 
 /* keyed by post slug */
 function rl_project_details() {
