@@ -47,14 +47,20 @@ add_filter('wp_resource_hints', function ($urls) {
     }));
 }, 99);
 
-/* pages built from [reinforce_*] shortcodes use no blocks: drop WordPress block-editor CSS there (about 21 KB of inline CSS per page, F-026) */
+/* pages built from [reinforce_*] shortcodes, and posts without block markup, use no blocks: drop WordPress block-editor CSS there (about 21 KB of inline CSS per page, F-026) */
+/* also posts written in plain HTML (no block markup): they use the post templates' own styles */
+function rl_no_block_css() {
+    if (rl_is_rl_page()) return true;
+    if (!is_singular('post')) return false;
+    return strpos((string) get_post_field('post_content', get_queried_object_id()), '<!-- wp:') === false;
+}
 add_action('wp_enqueue_scripts', function () {
-    if (!rl_is_rl_page()) return;
+    if (!rl_no_block_css()) return;
     foreach (['global-styles', 'wp-block-library', 'wp-block-library-theme', 'classic-theme-styles'] as $h) { wp_dequeue_style($h); wp_deregister_style($h); }
 }, 100);
 /* global styles are printed by core hooks, not a normal enqueue: unhook them on the same pages */
 add_action('wp', function () {
-    if (is_admin() || !rl_is_rl_page()) return;
+    if (is_admin() || !rl_no_block_css()) return;
     remove_action('wp_enqueue_scripts', 'wp_enqueue_global_styles');
     remove_action('wp_footer', 'wp_enqueue_global_styles', 1);
     remove_action('wp_body_open', 'wp_global_styles_render_svg_filters');
