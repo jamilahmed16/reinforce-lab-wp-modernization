@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) exit;
 
 function rl_is_about() { return is_page('about-us') && (int) wp_get_post_parent_id(get_queried_object_id()) === 0; }
 
-/* Founder facts: confirmed by Jamil (D-008 locked positioning; 28 Sep Home FAQ facts). Founding year 2020 confirmed by Jamil 30 Sep (D-069). */
+/* Founder facts: confirmed by Jamil (D-008 locked positioning; 28 Sep Home FAQ facts). Founding date 1 April 2021, set by Jamil 5 Oct (D-108; replaces 2020 from D-069). */
 function rl_about_person() {
     return [
         'name' => 'Jamil Ahmed',
@@ -22,7 +22,7 @@ function rl_about_faqs() {
         ['What is Reinforce Lab?', 'Reinforce Lab builds AI Growth Systems that connect your website, content, and organic search visibility into one growth engine. We design and implement data-driven SEO, AI search and content systems for growth-stage founders and B2B companies who want measurable revenue.'],
         ['Who founded Reinforce Lab?', 'Reinforce Lab was founded by Jamil Ahmed, its Founder and CEO. Jamil is a pharmacist, an SEO and AI search consultant, and a Semrush Ambassador.'],
         ['Where is Reinforce Lab based?', 'Reinforce Lab has offices in Dhaka, Bangladesh and Katy, Texas, in the United States, and works with clients remotely around the world.'],
-        ['When did Reinforce Lab start?', 'Reinforce Lab began building brands in Bangladesh in 2020 and now works with businesses internationally.'],
+        ['When did Reinforce Lab start?', 'Reinforce Lab was founded in Bangladesh on 1 April 2021 and now works with businesses internationally.'],
         ['How is Reinforce Lab different from an SEO agency?', 'An agency usually sells separate tactics. We build one system: website, content, search and AI visibility, and the automation behind them, designed around your buyers and measured against revenue, not rankings alone.'],
         ['How do I start working with Reinforce Lab?', 'Start with the free Search Authority Diagnostic. It reviews your search visibility, content and AI-search presence and shows what to fix first. From there we recommend the smallest system that solves the problem.'],
     ];
@@ -74,7 +74,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
         if (!is_array($n) || empty($n['@type'])) continue;
         $t = (array) $n['@type'];
         if (in_array('WebPage', $t, true) && isset($n['@id']) && strpos($n['@id'], $url) === 0) { $n['@type'] = ['WebPage', 'AboutPage']; $n['about'] = ['@id' => $org]; $n['mainEntity'] = ['@id' => $org]; }
-        if (in_array('Organization', $t, true)) { $n['founder'] = ['@id' => $pid]; $n['foundingDate'] = '2020'; $n['foundingLocation'] = ['@type' => 'Place', 'name' => 'Bangladesh']; }
+        if (in_array('Organization', $t, true)) { $n['founder'] = ['@id' => $pid]; $n['foundingDate'] = '2021-04-01'; $n['foundingLocation'] = ['@type' => 'Place', 'name' => 'Bangladesh']; }
     }
     unset($n);
     $graph[] = [
@@ -139,7 +139,7 @@ function rl_render_about() {
       <dl>
         <dt>What</dt><dd>AI Growth Systems: SEO, AI search, content and automation as one system</dd>
         <dt>Founder</dt><dd><a href="#founder"><?php echo esc_html($f['name']); ?></a>, <?php echo esc_html($f['job']); ?></dd>
-        <dt>Started</dt><dd>2020, Bangladesh</dd>
+        <dt>Started</dt><dd>1 April 2021, Bangladesh</dd>
         <dt>Offices</dt><dd>Dhaka, Bangladesh · Katy, Texas, USA</dd>
         <dt>Clients</dt><dd>Worldwide, working remotely</dd>
       </dl>

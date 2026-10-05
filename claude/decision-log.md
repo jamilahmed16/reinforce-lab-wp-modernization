@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-108 | Founding date is 1 April 2021 everywhere (replaces 2020, D-069) | 5 Oct | DONE (Jamil: "1 April 2021 everywhere") | this file |
 | D-107 | `/awards/` linked from the footer only (Company column, after About Us) | 5 Oct | DONE (Jamil: "it will be in the footer only for now") | this file |
 | D-106 | Awards page built on `.online` at `/awards/` (page 221) | 4 Oct | DONE (Jamil: "use /awards/, drop the amber items, build it") | this file |
 | D-105 | Separate Awards page (About stays separate): design mockup v1 for review | 4 Oct | APPROVED, built as D-106 | this file |
@@ -77,7 +78,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 | D-019 | Information architecture hierarchy (confirmed) | 24 Sep | APPROVED — ACTIVE | [2026-09](decisions/2026-09.md) |
 | D-071 | Blog archive template built on `.online` (F-001 by design); `/blog/` page 220 set as the pos... | 30 Sep | DONE (Jamil: "yes, go ahead with the Blog archive template") | [2026-09](decisions/2026-09.md) |
 | D-070 | Contact page built on `.online` (page 219, `/contact-us/`, published) with a working form | 30 Sep | DONE (Jamil: "go ahead with Contact") | [2026-09](decisions/2026-09.md) |
-| D-069 | Founding year confirmed: 2020 | 30 Sep | APPROVED (Jamil: "yes, 2020 is correct") | [2026-09](decisions/2026-09.md) |
+| D-069 | Founding year confirmed: 2020 | 30 Sep | SUPERSEDED by D-108 (1 April 2021) | [2026-09](decisions/2026-09.md) |
 | D-068 | About page built on `.online` (page 218, `/about-us/`, published) | 30 Sep | DONE (Jamil: "plain slugs, then go ahead with About") | [2026-09](decisions/2026-09.md) |
 | D-067 | Industry slugs are plain | 30 Sep | APPROVED (Jamil: "plain slugs") | [2026-09](decisions/2026-09.md) |
 | D-066 | Industries hub + 8 industry pages built on `.online` (pages 87, 75, 90–96, published) | 30 Sep | DONE (Jamil: "First Agents … Then Industries Hub and its... | [2026-09](decisions/2026-09.md) |
@@ -165,6 +166,19 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-108 · Founding date is 1 April 2021 everywhere
+**Date:** 5 October 2026 · **Status:** DONE (Jamil: "1 April 2021 everywhere"). Replaces D-069 (2020).
+
+- **Why:** public sources disagree (2018, 2020, 2021, 2022; F-023). Crunchbase shows "Founded Apr 1, 2021"; Jamil chose that date for every place the site states it.
+- **Changed on `.online` (all of them, after a full search of the theme code and the database for 2020):**
+  - `pages/reinforce-about.php`: FAQ "When did Reinforce Lab start?" now reads "Reinforce Lab was founded in Bangladesh on 1 April 2021 and now works with businesses internationally."; "At a glance" Started: "1 April 2021, Bangladesh"; Organization `foundingDate` "2021-04-01" (was "2020"); header comment.
+  - Jamil's author bio (user 3 `description`): "He founded Reinforce Lab in 2021 and leads it as CEO." (was 2020; the rest is Jamil's wording, unchanged).
+  - Yoast `wpseo_titles` `org-founding-date`: "2021-04-01" (was empty), so the site-wide Organization node carries `foundingDate` on every page, not only About.
+- **Verified:** About shows the new FAQ and Started line, no "2020" left in its HTML; `foundingDate":"2021-04-01"` in the schema on `/about-us/` and on `/`; the bio reads back from the database (no published post yet shows an author box). `copy-check.py` 0 issues on the file; `rl.py parity` 47 files, 0 differences; snapshot refreshed.
+- **Not changed:** `reinforcelab.com` (production About still says 2020; changing it needs a separate approval under rule 2). Third-party profiles are Jamil's to update: Clutch says "Founded in 2020"; DesignRush and the Onalytica interview point to 2018.
 
 ---
 
