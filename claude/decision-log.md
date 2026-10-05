@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| F-026 | SEO/AEO/GEO/LLM readiness, second pass (53 pages): all technical, schema and answer-engine gates pass; fixed brand-early openings, share image, llms.txt, page weight; open: citations on 16 pages, 3 pages need question H2s, blog | 5 Oct | FIXES DONE; citations next | `claude/research/seo-aeo-geo-readiness-2026-10-05-v2.md` |
 | D-129 | Founding date changed to 19 April 2022 everywhere (incorporation date on the RJSC certificate), replacing D-108's 1 April 2021 | 5 Oct | DONE (Jamil: "Change the founding date to 19 April 2022 everywhere.") | this file |
 | D-128 | Certificate of Incorporation published at its production URL (same PDF path), footer linked; RJSC no. C-180618/2022 added to Organization schema, Terms and Privacy; uploads on `.online` now send `X-Robots-Tag: noindex` | 5 Oct | DONE (Jamil sent the PDF; "Public, I'll upload it") | this file |
 | D-127 | Clients page built (page 277, `/clients/`) with the 46 client logos from production, imported into the `.online` media library; footer Clients linked | 5 Oct | DONE (Jamil: logos "Download from production"; "Yes, all are real clients") | this file |
@@ -189,6 +190,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## F-026 · Readiness audit, second pass, and fixes
+**Date:** 5 October 2026 · **Status:** FIXES DONE on `.online` (Jamil: "go ahead check all the seo, GEO, LLMs, AI Searches, AEO readiness")
+
+- **Report:** `claude/research/seo-aeo-geo-readiness-2026-10-05-v2.md`. 53 published pages audited with the extended `claude/tools/seo-audit.py`.
+- **Passing on 53 of 53:** one H1, heading order, titles and metas within limits and unique, noindex, schema parses with no broken references, FAQ schema matches visible FAQs, answer-first openings, brand named early, share image, alt text, HTML under 150 KB (93 to 135 KB). Organization entity complete (founding date, RJSC identifier, address, contacts, 9 profiles). Home CLS 0.005 in the lab (was 0.154), 0 Google Fonts requests.
+- **Fixed:** "Reinforce Lab's" in the openings of the 8 agent pages, Audit and Packages, and the FTC lede (page 224, backup `claude/data/backups/ftc-page-224-before-lede-2026-10-05.json`); default share image (attachment 328, source `claude/design-previews/og-default/`) as Yoast default and front-page image; `llms.txt` now 54 links (Portfolio, Clients, projects, legal pages, certificate); block-library CSS and global styles removed on shortcode pages and the emoji script removed site-wide (`core/reinforce-header.php`); Clients linked from About and Portfolio.
+- **Open:** outside citations on 16 commercial pages (next task); question-shaped H2s on Home, Search Authority OS and Diagnostic (needs Jamil's approval); blog posts; launch items (canonical check, AI-crawler policy, VAT/BIN).
 
 ---
 
