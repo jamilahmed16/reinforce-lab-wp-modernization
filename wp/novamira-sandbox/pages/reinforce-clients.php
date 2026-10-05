@@ -81,8 +81,8 @@ body.rl-clients-page .fl-page-content,body.rl-clients-page .fl-content,body.rl-c
 .rl-clients .c-peek{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line-2);flex:1}
 .rl-clients .c-peek span{background:#f4f0eb;display:grid;place-items:center;padding:12px;min-height:72px}
 .rl-clients .c-peek img{max-width:100%;max-height:44px;width:auto;height:auto;object-fit:contain}
-.rl-clients .c-wall{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2);margin:0;padding:0;list-style:none}
-.rl-clients .c-wall li{background:var(--bg-2);display:grid;grid-template-rows:auto auto;margin:0}
+.rl-clients .c-wall{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;margin:0;padding:0;list-style:none;border-top:1px solid var(--line-2);border-left:1px solid var(--line-2)}
+.rl-clients .c-wall li{background:var(--bg-2);display:grid;grid-template-rows:auto auto;margin:0;border-right:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
 .rl-clients .c-logo{background:#f4f0eb;display:grid;place-items:center;height:104px;padding:14px 16px}
 .rl-clients .c-logo img{max-width:100%;max-height:68px;width:auto;height:auto;object-fit:contain}
 .rl-clients .c-name{font-family:var(--f-mono);font-size:11px;line-height:1.35;color:var(--ink-dim);padding:9px 12px;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:6px}
