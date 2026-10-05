@@ -17,7 +17,7 @@ function rl_pt_services() {
         'services/marketing-automation' => 'Marketing Automation', 'services/lead-generation-systems' => 'Lead Generation Systems',
         'services/ai-workflow-automation' => 'AI Workflow Automation', 'services/executive-ai-consulting' => 'Executive AI Consulting',
         'services/wordpress-website-design-service' => 'WordPress Website Design', 'services/ecommerce-website-design-service' => 'E-commerce Website Design',
-        'services/website-maintenance-services' => 'Website Maintenance', 'search-authority-os' => 'Search Authority OS',
+        'services/website-maintenance-services' => 'Website Maintenance', 'services/ai-growth-systems' => 'AI Growth Systems', 'search-authority-os' => 'Search Authority OS',
         'search-authority-diagnostic' => 'Search Authority Diagnostic', 'services/agents' => 'Agents (all)',
         'services/agents/seo-intelligence' => 'SEO Intelligence Agent', 'services/agents/content-research' => 'Content Research Agent',
         'services/agents/evidence-verification' => 'Evidence Verification Agent', 'services/agents/aeo-geo-optimization' => 'AEO / GEO Optimization Agent',

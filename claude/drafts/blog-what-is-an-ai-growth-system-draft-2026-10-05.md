@@ -1,6 +1,6 @@
 # Blog draft for Jamil: "What is an AI growth system?" (5 Oct 2026)
 
-**Status:** DRAFT for review. Not on the site. Nothing is published until Jamil approves (F-003: one post at a time).
+**Status:** APPROVED by Jamil (5 Oct, with the price removed). Not on the site. Nothing is published until Jamil approves (F-003: one post at a time).
 **Primary keyword (D-130):** what is an ai growth system · **Post type:** Explainer (D-077 template)
 **URL (new, needs Jamil's approval):** `/blog/what-is-an-ai-growth-system/`
 **Yoast title (44):** What Is an AI Growth System? | Reinforce Lab
@@ -8,7 +8,7 @@
 **Author:** Jamil Ahmed · **Links to:** `/services/ai-growth-systems/` (commercial page), Search Authority OS, AI Workflow Automation, Marketing Automation, Lead Generation Systems.
 **When published:** Home's FAQ "What is an AI Growth System?" is shortened to a brief answer linking here (D-130).
 
-**What this adds that the current top results do not (SERP of 5 Oct, Jamil's screenshot):** futuremadeuseful.com (#1, quoted first in Bing's AI summary) gives a sound definition and loop but no worked example with real tools, no cost, no build time, no failure modes and no rules for regulated industries; SEnuke (#2) is a product pitch without outside sources. This post adds: one enquiry traced through a real system step by step, a comparison with chatbots, AI tools, agents, marketing automation and agencies, what it costs (our published price as one data point), what goes wrong, what must stay human (with NIST, Google and data-protection sources), and a five-question test of whether a business needs one.
+**What this adds that the current top results do not (SERP of 5 Oct, Jamil's screenshot):** futuremadeuseful.com (#1, quoted first in Bing's AI summary) gives a sound definition and loop but no worked example with real tools, no cost, no build time, no failure modes and no rules for regulated industries; SEnuke (#2) is a product pitch without outside sources. This post adds: one enquiry traced through a real system step by step, a comparison with chatbots, AI tools, agents, marketing automation and agencies, what drives the cost, what goes wrong, what must stay human (with NIST, Google and data-protection sources), and a five-question test of whether a business needs one.
 
 ---
 
@@ -78,7 +78,7 @@ An AI growth system joins those steps so the output of one becomes the input of 
 
 Every AI growth system we build has the same four layers. What changes from one business to the next is the data, the workflows and what is measured.
 
-1. **Data.** Your CRM, website analytics, Google Search Console, content library and sales notes, connected so each step works from the same facts. Without this layer, AI works from guesses.
+1. **Data.** Your CRM, website analytics, Google Search Console, content library and sales notes, connected so each step works from the same facts. This includes signal capture: recording what buyers do (the searches that bring them in, the pages they read, the forms they fill in, the replies they send) so the system can act on it. Without this layer, AI works from guesses.
 2. **AI models.** Models that research, summarise, classify and draft, given clear instructions, your approved sources and your standards. They supply capacity, not judgment.
 3. **Workflows.** The automated steps between tools, built on platforms such as Make or n8n and on the software you already pay for. This is where most manual hours are removed, and where approval points are placed.
 4. **Reporting.** A dashboard that tracks outcomes the business cares about (hours saved, visibility in Google and AI search, qualified pipeline, revenue) rather than activity counts.
@@ -122,7 +122,7 @@ Google reports clicks from its AI features inside the normal Search Console perf
 
 ### What does an AI growth system cost?
 
-It depends on how many workflows, data sources and approval steps are involved, so any honest price comes after a look at the current setup. As one published reference point, Reinforce Lab's Search Authority OS, an AI growth system for search and content, starts at $5,000 setup plus $1,500 to $2,500 a month. A narrower system, such as automated enquiry handling on tools you already own, is usually smaller in scope; a multi-market or regulated system is larger.
+It depends on scope: how many workflows, data sources and approval steps are involved, how much content it produces, and whether it works in a regulated field or across several markets. A single workflow on tools you already use, such as automated enquiry handling, is a small project. A system that researches, produces and monitors content across markets is a large one. Any honest price comes after mapping the current process, which is why it is worth starting with a diagnostic rather than a price list.
 
 ### What goes wrong, and what must stay human?
 
@@ -175,8 +175,8 @@ Pick one goal and one path: for example, from a buyer's question in search to a 
 
 ## For Jamil to confirm
 
-1. The URL `/blog/what-is-an-ai-growth-system/` (new URL).
-2. The definition wording (it becomes the quotable line AI tools will lift).
-3. "We prefer tools you already pay for" and "Make or n8n": true of how you build?
-4. The cost section quotes the Search Authority OS price from Packages. OK to repeat it here?
-5. Author: Jamil Ahmed.
+1. URL `/blog/what-is-an-ai-growth-system/`: Jamil Yes.
+2. Definition wording: Jamil Yes.
+3. Tools: Jamil "Keep as written" (Make or n8n, plus the client's existing software; matches Home).
+4. ~~Price in the cost section~~ Jamil: No. Removed; the section explains what drives cost instead.
+5. Author Jamil Ahmed: Jamil Yes.
