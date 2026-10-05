@@ -140,48 +140,8 @@ function rl_ag_current() {
 }
 function rl_is_ag() { return rl_ag_current() !== ''; }
 
-/* ---------- hero animation: Agent loop (one family, labels per agent) ----------
-   The agent's three inputs light and feed the agent; its three steps run in turn; results pass a human
-   review gate; its three outputs are delivered; input · analyse · review · deliver light in turn.
-   10 s loop, soft fade, reset. */
-function rl_ag_svg($a) {
-    list($in, $st, $out) = $a['anim'];
-    $name = strtoupper($a['name']);
-    $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlAgPT"><title id="rlAgPT">' . esc_html($a['name']) . ' Agent: ' . esc_html(ucwords(strtolower(implode(', ', $in)))) . ' are analysed in three steps: ' . esc_html(strtolower(implode(', ', $st))) . ', then reviewed by a person before ' . esc_html(strtolower(implode(', ', $out))) . ' are delivered.</title>';
-    $box = function ($cls, $x, $y, $w, $h, $t, $tc = 'a-t') { return '<rect class="a-b" x="' . $x . '" y="' . $y . '" width="' . $w . '" height="' . $h . '"/><rect class="a-on ' . $cls . '" x="' . $x . '" y="' . $y . '" width="' . $w . '" height="' . $h . '"/>' . ($t !== '' ? '<text class="' . $tc . '" x="' . ($x + $w / 2) . '" y="' . ($y + $h / 2 + 3.5) . '" text-anchor="middle">' . esc_html($t) . '</text>' : ''); };
-    $edge = function ($cls, $d) { return '<path class="a-e" d="' . $d . '"/><path class="a-p ' . $cls . '" pathLength="100" d="' . $d . '"/>'; };
-    $s .= '<text class="a-lab" x="0" y="20">INPUTS</text><text class="a-lab" x="400" y="20">OUTPUTS</text>';
-    foreach ($in as $i => $t) { $y = 36 + $i * 60; $cy = $y + 17; $s .= $edge('a-pi' . $i, 'M118 ' . $cy . ' C136 ' . $cy . ' 130 128 148 128') . $box('a-in' . $i, 0, $y, 118, 34, $t); }
-    $s .= $box('a-core', 148, 36, 160, 164, '') . '<text class="a-id" x="160" y="56">' . esc_html($a['id']) . ' AGENT</text><text class="a-h" x="160" y="74">' . esc_html($name) . '</text><line class="a-rule" x1="160" y1="84" x2="296" y2="84"/>';
-    foreach ($st as $i => $t) {
-        $y = 112 + $i * 32;
-        $s .= '<rect class="a-sq" x="160" y="' . ($y - 9) . '" width="10" height="10"/><rect class="a-sqon a-s' . $i . '" x="160" y="' . ($y - 9) . '" width="10" height="10"/><text class="a-ct" x="178" y="' . $y . '">' . esc_html($t) . '</text>';
-    }
-    $s .= $edge('a-pg', 'M308 128 H330');
-    $s .= '<polygon class="a-b" points="354,104 378,128 354,152 330,128"/><polygon class="a-on a-gate" points="354,104 378,128 354,152 330,128"/><text class="a-gt" x="354" y="172" text-anchor="middle">HUMAN</text><text class="a-gt" x="354" y="184" text-anchor="middle">REVIEW</text>';
-    foreach ($out as $i => $t) { $y = 36 + $i * 60; $cy = $y + 17; $s .= $edge('a-po' . $i, 'M378 128 C390 128 386 ' . $cy . ' 400 ' . $cy) . $box('a-out' . $i, 400, $y, 120, 34, $t, 'a-t a-to'); }
-    $s .= '<text class="a-cap" x="260" y="262" text-anchor="middle">SEARCH AUTHORITY OS · STAGE: ' . esc_html(strtoupper($a['stage'])) . '</text>';
-    $s .= '<line class="a-rule2" x1="0" y1="352" x2="520" y2="352"/>';
-    foreach (['INPUT', 'ANALYSE', 'REVIEW', 'DELIVER'] as $i => $f) {
-        $x = $i * 136;
-        $s .= '<text class="a-ft" x="' . $x . '" y="372">' . $f . '</text><text class="a-ft a-fton a-f' . $i . '" x="' . $x . '" y="372">' . $f . '</text>'
-            . '<rect class="a-fb" x="' . $x . '" y="382" width="112" height="3"/><rect class="a-fbon a-fb' . $i . '" x="' . $x . '" y="382" width="112" height="3"/>';
-    }
-    return $s . '</svg>';
-}
-function rl_ag_kf() {
-    $lit = function ($n, $s, $r) { return "@keyframes $n{0%,{$s}%{opacity:0}{$r}%,92%{opacity:1}97%,100%{opacity:0}}\n"; };
-    $pul = function ($n, $s, $e) { return "@keyframes $n{0%,{$s}%{stroke-dashoffset:10;opacity:0}" . ($s + 1) . "%{opacity:1}" . ($e - 1) . "%{opacity:1}{$e}%,100%{stroke-dashoffset:-100;opacity:0}}\n"; };
-    $k = '';
-    for ($i = 0; $i < 3; $i++) { $s = 2 + $i * 3; $k .= $lit("rlagIn$i", $s, $s + 2) . $pul("rlagPi$i", $s + 1, $s + 8) . ".rl-ag .a-in$i{animation-name:rlagIn$i}.rl-ag .a-pi$i{animation-name:rlagPi$i}\n"; }
-    $k .= $lit('rlagCore', 12, 15);
-    for ($i = 0; $i < 3; $i++) { $s = 16 + $i * 5; $k .= $lit("rlagS$i", $s, $s + 2) . ".rl-ag .a-s$i{animation-name:rlagS$i}\n"; }
-    $k .= $pul('rlagPg', 31, 36) . $lit('rlagGate', 36, 39);
-    for ($i = 0; $i < 3; $i++) { $s = 40 + $i * 4; $k .= $pul("rlagPo$i", $s, $s + 6) . $lit("rlagOut$i", $s + 5, $s + 7) . ".rl-ag .a-po$i{animation-name:rlagPo$i}.rl-ag .a-out$i{animation-name:rlagOut$i}\n"; }
-    $k .= ".rl-ag .a-core{animation-name:rlagCore}.rl-ag .a-pg{animation-name:rlagPg}.rl-ag .a-gate{animation-name:rlagGate}\n" . $lit('rlagCap', 60, 64);
-    foreach ([2, 12, 36, 45] as $i => $s) $k .= $lit("rlagF$i", $s, $s + 3) . "@keyframes rlagFb$i{0%,{$s}%{transform:scaleX(0);opacity:1}" . ($s + 6) . "%,92%{transform:scaleX(1);opacity:1}97%,100%{transform:scaleX(1);opacity:0}}\n.rl-ag .a-f$i{animation-name:rlagF$i}.rl-ag .a-fb$i{animation-name:rlagFb$i}\n";
-    return $k;
-}
+/* ---------- hero visual: one per agent (D-115), in saos/reinforce-agent-visuals.php ---------- */
+function rl_ag_svg($a) { return function_exists('rl_agv_svg') ? rl_agv_svg(rl_ag_current(), $a) : ''; }
 
 /* ---------- CSS (page-specific only; shared rules live in reinforce-kit.css, D-044) ---------- */
 add_filter('body_class', function ($c) { if (rl_is_ag()) $c[] = 'rl-ag-page'; return $c; });
@@ -195,30 +155,7 @@ body.rl-ag-page .fl-page-content,body.rl-ag-page .fl-content,body.rl-ag-page .fl
 .rl-ag .agf .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
 .rl-ag .agf .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-ag .agf svg{display:block;width:100%;height:auto;overflow:visible}
-.rl-ag .a-b{fill:var(--bg);stroke:rgba(243,237,230,.12);stroke-width:.8}
-.rl-ag .a-on{fill:rgba(153,0,0,.09);stroke:rgba(226,59,59,.65);stroke-width:.8;opacity:0}
-.rl-ag .a-t{font-family:var(--f-mono);font-size:8px;letter-spacing:.08em;fill:var(--ink-dim)}
-.rl-ag .a-to{fill:var(--ink)}
-.rl-ag .a-lab{font-family:var(--f-mono);font-size:8px;letter-spacing:.2em;fill:var(--ink-faint)}
-.rl-ag .a-id{font-family:var(--f-mono);font-size:8px;letter-spacing:.18em;fill:var(--red-3)}
-.rl-ag .a-h{font-family:var(--f-display);font-weight:600;font-size:11px;letter-spacing:.05em;fill:var(--ink)}
-.rl-ag .a-rule{stroke:rgba(243,237,230,.1);stroke-width:.8}
-.rl-ag .a-sq{fill:none;stroke:rgba(243,237,230,.25);stroke-width:.8}
-.rl-ag .a-sqon{fill:var(--red-2);opacity:0}
-.rl-ag .a-ct{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.12em;fill:var(--ink-dim)}
-.rl-ag .a-gt{font-family:var(--f-mono);font-size:7.5px;letter-spacing:.16em;fill:var(--ink-faint)}
-.rl-ag .a-e{fill:none;stroke:rgba(243,237,230,.14);stroke-width:.8}
-.rl-ag .a-p{fill:none;stroke:var(--red-3);stroke-width:1.3;stroke-linecap:round;stroke-dasharray:8 100;stroke-dashoffset:8;opacity:0}
-.rl-ag .a-cap{font-family:var(--f-mono);font-size:8px;letter-spacing:.16em;fill:var(--ink-faint);opacity:0;animation-name:rlagCap}
-.rl-ag .a-rule2{stroke:var(--line-2);stroke-width:1}
-.rl-ag .a-ft{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.16em;fill:var(--ink-faint)}
-.rl-ag .a-fton{fill:var(--ink);opacity:0}
-.rl-ag .a-fb{fill:rgba(255,255,255,.08)}
-.rl-ag .a-fbon{fill:var(--red-2);transform-box:fill-box;transform-origin:0 50%;transform:scaleX(0)}
-.rl-ag .a-on,.rl-ag .a-sqon,.rl-ag .a-p,.rl-ag .a-cap,.rl-ag .a-fton,.rl-ag .a-fbon{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
-.rl-ag .a-p{animation-timing-function:ease-in-out}
-@media(max-width:560px){.rl-ag .a-t{font-size:8.5px;letter-spacing:0}.rl-ag .a-ct{font-size:10px;letter-spacing:.04em}.rl-ag .a-h{font-size:11.5px}.rl-ag .a-lab,.rl-ag .a-id,.rl-ag .a-gt{font-size:9px;letter-spacing:.06em}.rl-ag .a-cap{font-size:9px;letter-spacing:.04em}.rl-ag .a-ft{font-size:11px;letter-spacing:.04em}.rl-ag .agf .cap span+span{display:none}.rl-ag .agf{padding:16px 10px 10px}}
-<?php echo rl_ag_kf(); ?>
+<?php if (function_exists('rl_agv_css')) echo rl_agv_css(); ?>
 .rl-ag .ind ul li{font-size:14px}
 </style>
 <?php }
@@ -275,7 +212,7 @@ function rl_render_agent() {
       </div>
     </div>
     <figure class="agf rl-anim">
-      <div class="cap" aria-hidden="true"><span><?php echo esc_html($a['id'] . ' · ' . $a['name']); ?></span><span>Input · analyse · review · deliver</span></div>
+      <div class="cap" aria-hidden="true"><span><?php echo esc_html($a['id'] . ' · ' . $a['name']); ?></span><span><?php echo esc_html(function_exists('rl_agv_cap') ? rl_agv_cap(rl_ag_current()) : ''); ?></span></div>
       <?php echo rl_ag_svg($a); ?>
     </figure>
   </div>

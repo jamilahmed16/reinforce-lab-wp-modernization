@@ -8,7 +8,7 @@ Novamira loads **top-level `*.php` files only**, so there is one top-level file,
 |---|---|
 | `core/` | Site-wide parts: header, mega menu, mobile menu, footer, helpers (`reinforce-header.php`); the shared page kit (`reinforce-kit.php` + `reinforce-kit.css`) |
 | `pages/` | Company pages: Home, About, Awards, Contact |
-| `saos/` | Search Authority OS, Diagnostic (form handler), Packages, Agents hub, the 8 agent pages |
+| `saos/` | Search Authority OS, Diagnostic (form handler), Packages, Agents hub, the 8 agent pages, and their 8 hero visuals (`reinforce-agent-visuals.php`) |
 | `services/` | The Services hub and every service page |
 | `industries/` | The Industries hub and the 8 industry pages (one file) |
 | `blog/` | Blog archive template, single post template, post-type sections, and one file per approved post-type design (`reinforce-post-guide.php`, …) |

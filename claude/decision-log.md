@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-115 | Each of the 8 agent pages gets its own hero visual | 5 Oct | DONE (Jamil: "all of the hero images look similar that's should not be like that") | this file |
 | D-114 | Heroes brought to one standard: Search Authority OS, Home (capitals), Awards, Diagnostic, Packages, Agents hub | 5 Oct | DONE (Jamil: "use capitals") | this file |
 | F-024 | Hero audit, 45 pages: 36 match the kit standard; Search Authority OS, Home and Awards heroes are out of line | 5 Oct | FINDING; fixes await Jamil | [research](research/hero-audit-2026-10-05.md) |
 | D-113 | About page: Our story and Milestones aligned as two equal columns | 5 Oct | DONE (Jamil: "either separate it with section or make it aligned") | this file |
@@ -173,6 +174,25 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-115 · One hero visual per agent page
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "for all the individual agents all of the hero images look similar that's should not be like that .. if required build one by one")
+
+- **Before:** all 8 agent pages drew the same diagram (three inputs, the agent, a human review gate, three outputs) with only the labels changed.
+- **Now:** new file `saos/reinforce-agent-visuals.php` (loaded before `saos/reinforce-agent-pages.php`) draws a different picture of each agent's own job, in the same panel, size and 10 s loop:
+  - **A-01 SEO Intelligence:** value against difficulty map; the quick-win corner feeds a ranked page plan (P1 to P5).
+  - **A-02 Content Research:** what the top four pages cover by subtopic; uncovered rows become gaps and H2s in a research brief with sources.
+  - **A-03 Evidence Verification:** claims highlighted in a draft, matched in a claim ledger (source, confidence, status); the unsourced claim goes to a person.
+  - **A-04 AEO / GEO Optimization:** page blocks made answer-ready (five checks), tracked in ChatGPT, Perplexity, Gemini and AI Overviews as mentioned, cited and described accurately.
+  - **A-05 Social Sentiment:** forum, review and social comments grouped into an objection, a confusion and a question, then FAQ topics, new angles and copy in customers' words; tone bar.
+  - **A-06 Competitor Intelligence:** topic-coverage radar of rivals against you with the gaps marked, rival alerts, and target pages.
+  - **A-07 Content QA:** SEO, AEO and GEO, and evidence check lanes; one failed check goes to the fix list; approved by a person, with an audit trail.
+  - **A-08 Search Performance:** clicks line with a detected drop, five causes checked, the root cause found, a recovery line and plan.
+- **Rules kept:** illustrative only (no numbers, no client data); each SVG has its own title describing it; the panel cap names the agent and the visual; every visual ends with "REVIEWED BY A PERSON". Reduced motion shows the complete drawing with all highlights on.
+- **Removed:** the shared diagram code and its keyframes from `reinforce-agent-pages.php`.
+- **Verified:** all 8 SVGs parse as XML; rendered side by side (static and lit) and fixed overlaps in A-03, A-04, A-06 and A-08 before deploying; live on all 8 pages with no PHP notices; panel edges within the hero standard (F-024); phone width 390 on all 8; `copy-check.py` 0 issues. On phones the diagram labels are small (about 6 px), as they were before.
 
 ---
 
