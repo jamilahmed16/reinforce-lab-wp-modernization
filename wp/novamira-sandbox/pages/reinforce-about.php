@@ -64,12 +64,14 @@ body.rl-about-page .fl-page-content,body.rl-about-page .fl-content,body.rl-about
 @media(max-width:900px){.rl-about .founder{grid-template-columns:1fr}.rl-about .steps9{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.rl-about .steps9{grid-template-columns:1fr}.rl-about .glance{padding:18px 16px}.rl-about .glance dl{column-gap:14px}}
 .rl-about .sub{font-family:var(--f-display);font-weight:600;text-transform:uppercase;letter-spacing:.03em;color:var(--ink);font-size:clamp(20px,2.2vw,26px);margin:clamp(34px,4vw,48px) 0 18px}
-.rl-about .story{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,64px);align-items:start}
+.rl-about .story{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,64px);align-items:stretch}
+.rl-about .story .head{margin-bottom:clamp(24px,3vw,34px)}
+.rl-about .ms{border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:clamp(22px,2.6vw,32px);box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-about .story .txt p{color:var(--ink-dim);font-size:16.5px;margin:0 0 16px}
 .rl-about .story .txt p:first-child{color:var(--ink)}
 .rl-about .story .sub{margin-top:0}
 .rl-about .tl{list-style:none;margin:0;padding:0;border-left:1px solid var(--red-line)}
-.rl-about .tl li{position:relative;padding:0 0 22px 26px}
+.rl-about .tl li{position:relative;padding:0 0 20px 26px}
 .rl-about .tl li:last-child{padding-bottom:0}
 .rl-about .tl li::before{content:"";position:absolute;left:-5px;top:5px;width:9px;height:9px;background:var(--red);box-shadow:0 0 12px var(--red-glow)}
 .rl-about .tl .y{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--red-3);text-transform:uppercase}
@@ -241,21 +243,21 @@ function rl_render_about() {
 
 <section class="band alt" id="story">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Our story&nbsp;<b>]</b></span><h2>How did Reinforce Lab start?</h2></div>
     <div class="story">
       <div class="txt">
+        <div class="head"><span class="ey"><b>[</b>&nbsp;Our story&nbsp;<b>]</b></span><h2>How did Reinforce Lab start?</h2></div>
         <p>Reinforce Lab started in 2020 in Tallinn, Estonia, as a full-service digital marketing agency. In 2021 we expanded to Bangladesh, where Reinforce Lab Limited was founded on 1 April 2021, and built our team in Dhaka.</p>
         <p>Years of running search, content and marketing for clients showed us the same problem again and again: the work was split across separate tools, separate agencies and a lot of manual effort, and nobody connected the pieces.</p>
         <p>So we changed what we sell. Today Reinforce Lab helps businesses scale with automation: we connect the website, content and search visibility into one system and let AI take over the repetitive work, with a person checking what matters.</p>
       </div>
-      <div>
+      <aside class="ms" aria-label="Milestones">
         <h3 class="sub">Milestones</h3>
         <ol class="tl">
           <?php foreach ($timeline as $t) { ?>
           <li><span class="y"><?php echo esc_html($t[0]); ?></span><p><?php echo esc_html($t[1]); ?></p></li>
           <?php } ?>
         </ol>
-      </div>
+      </aside>
     </div>
   </div>
 </section>
