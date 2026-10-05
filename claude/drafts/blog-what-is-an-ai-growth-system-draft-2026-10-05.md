@@ -33,7 +33,7 @@
 
 **In 10 seconds:** It connects the tools and steps that usually run separately (research, content, search, enquiries, reporting) so each one feeds the next, and AI does the repetitive work in between.
 
-**In 1 minute:** Most growth work is split across separate tools and people: someone researches, someone writes, someone checks rankings, someone copies enquiries into the CRM, someone builds a report. An AI growth system links those steps. Your data (CRM, analytics, Search Console) feeds AI models that research and draft; automated workflows move the results between tools; a dashboard reports what changed in hours, visibility and pipeline. People stay in charge of what gets published, sent and promised. It is not a single product: it is built around one business goal first, then extended.
+**In 1 minute:** Most growth work is split across separate tools and people: someone researches, someone writes, someone checks rankings, someone copies enquiries into the CRM, someone builds a report. An AI growth system links those steps. Your data (CRM, analytics, Search Console) feeds AI models that research and draft. Automated workflows move the results between tools. A dashboard reports what changed in hours, visibility and pipeline. People stay in charge of what gets published, sent and promised. It is not a single product: it is built around one business goal first, then extended.
 
 **How it works** (Step | What happens)
 1. Collect | Data from your CRM, analytics, Search Console and sales conversations lands in one place.
@@ -157,7 +157,7 @@ Pick one goal and one path: for example, from a buyer's question in search to a 
 1. **Is an AI growth system a software product?** Not usually a single one. It is built from your existing tools, AI models and automation platforms, connected around your goals. Some companies package a system as a product, such as Reinforce Lab's Search Authority OS for search and content.
 2. **Does an AI growth system replace a marketing team?** No. It removes repetitive research, production, reporting and follow-up work so a team spends more time on strategy, review and customers. People remain responsible for what is said and decided.
 3. **Is SEO part of an AI growth system?** Yes. Being found in Google and in AI answers is one of the loops it runs, and search data is one of its main inputs. SEO is a part of the system, not the whole of it.
-4. **How long does it take to build one?** It depends on scope. A single workflow on tools you already use is a much smaller project than a multi-market content and search system; the timeline is set after mapping the current process.
+4. **How long does it take to build one?** It depends on scope. A single workflow on tools you already use is a small project. A content and search system across several markets is a large one. The timeline is set after mapping the current process.
 5. **What tools are used?** Usually your CRM, analytics and Search Console, an automation platform such as Make or n8n, and AI models for research, drafting and classification. We prefer tools you already pay for.
 6. **Can a small business use one?** Yes, if it starts small: one goal, one path and the tools it already has.
 
