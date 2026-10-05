@@ -153,7 +153,7 @@ function rl_render_aigrowth() {
 
 <section class="band alt" id="layers">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;The four layers&nbsp;<b>]</b></span><h2>What does an AI Growth System include?</h2><p class="lede">Every AI Growth System we build has the same four layers. What changes from one business to the next is the data, the workflows and what the dashboard measures.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;The four layers&nbsp;<b>]</b></span><h2>What does an AI Growth System include?</h2><p class="lede">Every AI Growth System we build has the same four layers. What changes from one business to the next is the data, the workflows and what the dashboard measures. New to the idea? <a href="<?php echo esc_url(home_url('/what-is-an-ai-growth-system/')); ?>">Read what an AI growth system is</a>.</p></div>
     <ol class="lay">
       <li><span class="k">01 · Data</span><h3>Data foundation</h3><p>Your CRM, analytics, Search Console and content data, cleaned and connected so every later step works from the same facts.</p><span class="eg">Example: one view of each lead, from first search to sales call.</span></li>
       <li><span class="k">02 · AI models</span><h3>AI models</h3><p>Models that research, write, summarise and classify, given clear instructions, your sources and your standards.</p><span class="eg">Example: a researched content brief, with sources, from one topic.</span></li>
