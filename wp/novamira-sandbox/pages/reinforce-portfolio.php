@@ -368,6 +368,9 @@ function rl_project_url_by_name($name) {
 }
 
 add_filter('body_class', function ($c) { if (rl_is_project()) $c[] = 'rl-project-page'; return $c; });
+/* full width: no blog sidebar on project pages */
+add_filter('theme_mod_fl-blog-layout', function ($v) { return rl_is_project() ? 'no-sidebar' : $v; });
+add_filter('fl_theme_mods', function ($m) { if (rl_is_project()) $m['fl-blog-layout'] = 'no-sidebar'; return $m; });
 add_filter('rl_kit_active', function ($on) { return $on || rl_is_project(); });
 /* the portfolio CSS (cards, chips, panel) is shared with the project pages */
 add_action('wp_head', function () { if (rl_is_project() && !rl_is_portfolio()) { rl_portfolio_css_body(); } }, 22);
