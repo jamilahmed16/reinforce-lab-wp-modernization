@@ -14,7 +14,7 @@ function rl_ag_data() {
         'seo-intelligence' => [
             'id' => 'A-01', 'name' => 'SEO Intelligence', 'stage' => 'Understand',
             'h1' => ['Know exactly', 'what to rank for', 'and why.'],
-            'lede' => 'The <strong>SEO Intelligence Agent</strong> tells you which searches are worth winning. It reads your Search Console data, rankings, search-result layouts and demand, separates high-value opportunities from vanity keywords, and turns them into a prioritised plan of topics and pages, reviewed by the Reinforce Lab team before it reaches you.',
+            'lede' => 'Reinforce Lab’s <strong>SEO Intelligence Agent</strong> tells you which searches are worth winning. It reads your Search Console data, rankings, search-result layouts and demand, separates high-value opportunities from vanity keywords, and turns them into a prioritised plan of topics and pages, reviewed by the Reinforce Lab team before it reaches you.',
             'anim' => [['SEARCH CONSOLE', 'SERP DATA', 'KEYWORD DATA'], ['DEMAND', 'INTENT', 'VALUE'], ['PRIORITY TOPICS', 'PAGE PLAN', 'QUICK WINS']],
             'problems' => [['Chasing volume', 'High-volume keywords that never turn into leads eat the budget.'], ['Guessing intent', 'Pages target a keyword but not what the searcher actually wants.'], ['No priorities', 'Hundreds of ideas, and no clear order to do them in.']],
             'does' => [['Read the data', 'Search Console queries, rankings, search-result features and demand.'], ['Judge intent', 'What each search is really asking for, and which page should answer it.'], ['Score value', 'Opportunity weighed by relevance to what you sell, difficulty and position.'], ['Plan', 'A ranked list of topics and pages, with quick wins marked.']],
@@ -28,7 +28,7 @@ function rl_ag_data() {
         'content-research' => [
             'id' => 'A-02', 'name' => 'Content Research', 'stage' => 'Understand',
             'h1' => ['Research-backed', 'topics, not', 'guesses.'],
-            'lede' => 'The <strong>Content Research Agent</strong> gives writers what they need to publish something better than what already ranks. It maps what the market asks and what already ranks, finds the information gaps competitors leave open, and hands your writers a researched brief with sources instead of a bare keyword.',
+            'lede' => 'Reinforce Lab’s <strong>Content Research Agent</strong> gives writers what they need to publish something better than what already ranks. It maps what the market asks and what already ranks, finds the information gaps competitors leave open, and hands your writers a researched brief with sources instead of a bare keyword.',
             'anim' => [['SERP CONTENT', 'QUESTIONS', 'RIVAL PAGES'], ['MAP', 'GAPS', 'ANGLES'], ['RESEARCH BRIEF', 'OUTLINE', 'SOURCES']],
             'problems' => [['Copycat content', 'Articles that rewrite the top results add nothing new, and rank like it.'], ['Thin briefs', 'Writers get a keyword and a word count, then guess the rest.'], ['Missed questions', 'The questions buyers actually ask go unanswered.']],
             'does' => [['Map the topic', 'What already ranks, and what each result covers.'], ['Collect the questions', 'What people ask about the topic, across search and communities.'], ['Find the gaps', 'What competitors leave out, get wrong or cover thinly.'], ['Brief the writer', 'Angle, structure, questions to answer and sources to use.']],
@@ -42,7 +42,7 @@ function rl_ag_data() {
         'evidence-verification' => [
             'id' => 'A-03', 'name' => 'Evidence Verification', 'stage' => 'Verify',
             'h1' => ['Every claim', 'sourced and', 'checked.'],
-            'lede' => 'The <strong>Evidence Verification Agent</strong> makes sure what you publish is true and can be backed up. It ties every important claim to a source, scores how confident the evidence is, and flags weak or conflicting sources for a person to review, using domain sources such as PubMed and ClinicalTrials.gov where the field requires it.',
+            'lede' => 'Reinforce Lab’s <strong>Evidence Verification Agent</strong> makes sure what you publish is true and can be backed up. It ties every important claim to a source, scores how confident the evidence is, and flags weak or conflicting sources for a person to review, using domain sources such as PubMed and ClinicalTrials.gov where the field requires it.',
             'anim' => [['DRAFT CLAIMS', 'SOURCES', 'DOMAIN DATA'], ['MATCH', 'SCORE', 'FLAG'], ['SOURCED CLAIMS', 'CONFIDENCE', 'REVIEW FLAGS']],
             'problems' => [['Unsupported claims', 'Statistics and statements with no source, or a source that doesn’t say it.'], ['Outdated facts', 'Figures that were true years ago, still published today.'], ['Risk in regulated fields', 'In health, finance and law, one wrong claim can cost more than the page earns.']],
             'does' => [['Extract claims', 'Every statistic, fact and statement that needs support.'], ['Match sources', 'Each claim linked to the source that supports it.'], ['Score confidence', 'How strong, recent and relevant the evidence is.'], ['Flag for review', 'Weak, conflicting or missing evidence sent to a person.']],
@@ -56,7 +56,7 @@ function rl_ag_data() {
         'aeo-geo-optimization' => [
             'id' => 'A-04', 'name' => 'AEO / GEO Optimization', 'stage' => 'Optimize & QA',
             'h1' => ['Show up inside', 'AI answers,', 'accurately.'],
-            'lede' => 'The <strong>AEO / GEO Optimization Agent</strong> helps your brand appear correctly in AI answers. It tracks where you are mentioned and cited across ChatGPT, Perplexity, Gemini and Google’s AI Overviews, structures your pages so AI systems can extract and cite them, and strengthens the facts AI tools use to describe you.',
+            'lede' => 'Reinforce Lab’s <strong>AEO / GEO Optimization Agent</strong> helps your brand appear correctly in AI answers. It tracks where you are mentioned and cited across ChatGPT, Perplexity, Gemini and Google’s AI Overviews, structures your pages so AI systems can extract and cite them, and strengthens the facts AI tools use to describe you.',
             'anim' => [['AI ANSWERS', 'YOUR PAGES', 'ENTITY FACTS'], ['TRACK', 'STRUCTURE', 'ALIGN'], ['CITATION REPORT', 'PAGE FIXES', 'ENTITY FIXES']],
             'problems' => [['Invisible in AI', 'You rank on Google but AI answers recommend competitors.'], ['Described wrongly', 'AI tools get your services, prices or facts wrong.'], ['Hard to cite', 'Pages bury the answer, so AI systems quote someone else.']],
             'does' => [['Track answers', 'Where you are mentioned or cited for the prompts that matter.'], ['Diagnose', 'Why competitors are cited instead: structure, facts or authority.'], ['Structure pages', 'Clear answers, definitions and data that can be extracted and cited.'], ['Align facts', 'One consistent description of your brand across the sources AI uses.']],
@@ -70,7 +70,7 @@ function rl_ag_data() {
         'social-sentiment' => [
             'id' => 'A-05', 'name' => 'Social Sentiment', 'stage' => 'Understand',
             'h1' => ['Write in your', 'customers’', 'own words.'],
-            'lede' => 'The <strong>Social Sentiment Agent</strong> brings the real voice of your customers into your content. It collects the questions, objections and complaints people post in forums, reviews and social channels, groups them into themes, and turns them into topics, angles and FAQs, so your content sounds like the people you sell to.',
+            'lede' => 'Reinforce Lab’s <strong>Social Sentiment Agent</strong> brings the real voice of your customers into your content. It collects the questions, objections and complaints people post in forums, reviews and social channels, groups them into themes, and turns them into topics, angles and FAQs, so your content sounds like the people you sell to.',
             'anim' => [['FORUMS', 'REVIEWS', 'SOCIAL POSTS'], ['COLLECT', 'CLUSTER', 'TRANSLATE'], ['TOP OBJECTIONS', 'FAQ TOPICS', 'NEW ANGLES']],
             'problems' => [['Written for insiders', 'Content uses your language, not the words customers search with.'], ['Objections ignored', 'The doubts that stop a purchase never get answered.'], ['Stale topics', 'Content plans miss what people are talking about right now.']],
             'does' => [['Collect', 'Public posts, reviews and discussions about your topic, category and competitors.'], ['Cluster', 'Group them into recurring questions, objections and complaints.'], ['Weigh', 'Separate recurring themes from one-off noise.'], ['Translate', 'Turn themes into topics, angles, FAQs and wording for your content.']],
@@ -84,7 +84,7 @@ function rl_ag_data() {
         'competitor-intelligence' => [
             'id' => 'A-06', 'name' => 'Competitor Intelligence', 'stage' => 'Understand',
             'h1' => ['Find the gaps', 'your rivals', 'leave open.'],
-            'lede' => 'The <strong>Competitor Intelligence Agent</strong> shows where your competitors win in search, and where they don’t. It maps what they cover, rank for and get cited for in AI answers, identifies the gaps worth owning, and keeps watch so a competitor’s move doesn’t surprise you.',
+            'lede' => 'Reinforce Lab’s <strong>Competitor Intelligence Agent</strong> shows where your competitors win in search, and where they don’t. It maps what they cover, rank for and get cited for in AI answers, identifies the gaps worth owning, and keeps watch so a competitor’s move doesn’t surprise you.',
             'anim' => [['RIVAL RANKINGS', 'RIVAL CONTENT', 'AI CITATIONS'], ['MAP', 'COMPARE', 'MONITOR'], ['GAP LIST', 'THREAT ALERTS', 'TARGET PAGES']],
             'problems' => [['Blind spots', 'You don’t know which searches your rivals own, or why.'], ['Surprises', 'A competitor’s new content takes your rankings before anyone notices.'], ['Copying the leader', 'Plans follow the biggest rival instead of the gaps it leaves.']],
             'does' => [['Map', 'Which searches, topics and AI prompts each competitor wins.'], ['Compare', 'Your coverage against theirs, page by page and topic by topic.'], ['Find gaps', 'Where demand is real and competitors are weak or absent.'], ['Monitor', 'New content, ranking moves and citations over time.']],
@@ -98,7 +98,7 @@ function rl_ag_data() {
         'content-qa' => [
             'id' => 'A-07', 'name' => 'Content QA', 'stage' => 'Optimize & QA',
             'h1' => ['A quality gate', 'before anything', 'ships.'],
-            'lede' => 'The <strong>Content QA Auditor</strong> checks every piece before it is published. Each asset is tested against your SEO, AEO, GEO and evidence standards, thin, unsupported or off-brand content is caught before it goes live, and a human approval step stays in place where it matters.',
+            'lede' => 'Reinforce Lab’s <strong>Content QA Auditor</strong> checks every piece before it is published. Each asset is tested against your SEO, AEO, GEO and evidence standards, thin, unsupported or off-brand content is caught before it goes live, and a human approval step stays in place where it matters.',
             'anim' => [['DRAFT', 'STANDARDS', 'EVIDENCE LOG'], ['SEO CHECK', 'AEO/GEO CHECK', 'EVIDENCE CHECK'], ['FIX LIST', 'APPROVAL', 'AUDIT TRAIL']],
             'problems' => [['Quality drifts at scale', 'The more you publish, the more inconsistent it gets.'], ['Mistakes reach the live site', 'Missing titles, broken links, unsupported claims, found by customers.'], ['Scaled-content risk', 'Pages produced in volume without enough value can breach Google’s policies.']],
             'does' => [['Check SEO', 'Titles, headings, links, schema and search intent.'], ['Check AEO/GEO', 'Clear answers, definitions and citable structure.'], ['Check evidence', 'Every important claim has a source and passes review.'], ['Gate', 'A pass, or a specific fix list, then human approval.']],
@@ -112,7 +112,7 @@ function rl_ag_data() {
         'search-performance' => [
             'id' => 'A-08', 'name' => 'Search Performance', 'stage' => 'Measure & heal',
             'h1' => ['Diagnose drops.', 'Recover', 'rankings.'],
-            'lede' => 'The <strong>Search Performance Agent</strong> finds out why pages slip and what to do about it. It reads your Search Console, GA4 and AI visibility data, diagnoses decay, intent shifts and pages competing with each other, recommends the fix, and tracks whether it worked.',
+            'lede' => 'Reinforce Lab’s <strong>Search Performance Agent</strong> finds out why pages slip and what to do about it. It reads your Search Console, GA4 and AI visibility data, diagnoses decay, intent shifts and pages competing with each other, recommends the fix, and tracks whether it worked.',
             'anim' => [['SEARCH CONSOLE', 'GA4', 'AI VISIBILITY'], ['DETECT', 'DIAGNOSE', 'FIX'], ['DROP ALERTS', 'ROOT CAUSE', 'RECOVERY PLAN']],
             'problems' => [['Unexplained drops', 'Traffic falls and nobody can say why.'], ['Slow decay', 'Pages lose ground month by month until they disappear.'], ['Fixes nobody checks', 'Changes are made, but no one measures whether they worked.']],
             'does' => [['Detect', 'Pages and queries losing clicks, impressions or position.'], ['Diagnose', 'Decay, intent shifts, competition, cannibalisation or technical causes.'], ['Recommend', 'The fix for each page: refresh, merge, redirect or rebuild.'], ['Track', 'Whether the fix worked, then what to do next.']],

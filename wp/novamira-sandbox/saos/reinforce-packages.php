@@ -242,7 +242,7 @@ function rl_render_packages() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Packages&nbsp;<b>]</b></span>
       <h1 class="h1">Three ways to build <span class="r">search authority.</span></h1>
-      <p class="lede"><a href="<?php echo $u('search-authority-os'); ?>">Search Authority OS</a> comes in three packages (Foundation, Growth OS and Enterprise), from a focused foundation to a full enterprise intelligence engine. Every engagement starts with a diagnostic, so scope and price fit what you actually need, not a template.</p>
+      <p class="lede"><a href="<?php echo $u('search-authority-os'); ?>">Search Authority OS</a>, Reinforce Lab’s flagship system, comes in three packages (Foundation, Growth OS and Enterprise), from a focused foundation to a full enterprise intelligence engine. Every engagement starts with a diagnostic, so scope and price fit what you actually need, not a template.</p>
       <div class="hero-cta"><a class="btn p" href="<?php echo $diag; ?>">Start with a diagnostic <span class="ar">&rarr;</span></a><a class="btn g" href="#plans">See the plans</a></div>
       <p class="micro">Setup + monthly retainer · Pricing below is a starting framework, finalized to scope</p>
     </div>

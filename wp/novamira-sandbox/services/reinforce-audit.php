@@ -207,7 +207,7 @@ function rl_render_audit() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;SEO &amp; AI Search Audit&nbsp;<b>]</b></span>
       <h1 class="h1">See everything<br>holding back your<br><span class="r">search growth.</span></h1>
-      <p class="lede">The <strong>SEO &amp; AI Search Audit</strong> is a one-time, in-depth review of your technical health, content, authority, competitors and visibility in Google and AI search. It is done by people, backed by evidence, and delivered as a prioritised plan your team can act on.</p>
+      <p class="lede">Reinforce Lab’s <strong>SEO &amp; AI Search Audit</strong> is a one-time, in-depth review of your technical health, content, authority, competitors and visibility in Google and AI search. It is done by people, backed by evidence, and delivered as a prioritised plan your team can act on.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $req; ?>">Request an audit <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#covers">What's included</a>

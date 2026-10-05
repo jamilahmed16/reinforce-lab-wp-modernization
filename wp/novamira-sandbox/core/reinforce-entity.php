@@ -58,11 +58,14 @@ function rl_llms_txt() {
     $t .= "- Offices: Dhaka, Bangladesh, and Katy, Texas, USA; clients worldwide\n";
     $t .= "- Contact: hello@reinforcelab.com, +880 1329-657096, +1 832 548 4553\n";
     $t .= "- Industries: Pharmaceutical & Life Sciences, Healthcare, B2B SaaS, E-commerce, Manufacturing, Technology, Professional Services, Education\n";
-    $t .= "\n## Company\n\n" . ($home ? '- [Home](' . home_url('/') . '): ' . trim((string) get_post_meta($home->ID, '_yoast_wpseo_metadesc', true)) . "\n" : '') . $line('about-us') . $line('awards') . $line('contact-us');
+    $t .= "\n## Company\n\n" . ($home ? '- [Home](' . home_url('/') . '): ' . trim((string) get_post_meta($home->ID, '_yoast_wpseo_metadesc', true)) . "\n" : '') . $line('about-us') . $line('awards') . $line('portfolio') . $line('clients') . $line('contact-us');
+    $proj = get_posts(['post_type' => 'rl_project', 'post_status' => 'publish', 'numberposts' => -1, 'orderby' => 'title', 'order' => 'ASC']);
+    if ($proj) { $t .= "\n## Portfolio projects\n\n"; foreach ($proj as $pp) { $d = html_entity_decode(trim((string) get_post_meta($pp->ID, '_yoast_wpseo_metadesc', true)), ENT_QUOTES, 'UTF-8'); $t .= '- [' . html_entity_decode(get_the_title($pp), ENT_QUOTES, 'UTF-8') . '](' . get_permalink($pp) . ')' . ($d !== '' ? ': ' . $d : '') . "\n"; } }
     $t .= $sec('Search Authority OS', ['search-authority-os', 'packages', 'search-authority-diagnostic', 'services/agents']);
     $t .= $sec('Services', array_merge(['services'], $children('services', ['services/agents'])));
     $t .= $sec('Industries', array_merge(['industries'], $children('industries')));
-    $t .= $sec('Optional', array_merge($children('services/agents'), ['blog']));
+    $t .= $sec('Optional', array_merge($children('services/agents'), ['blog', 'privacy-policy', 'terms-conditions', 'ftc-disclosure']));
+    if (($coi = get_option('rl_coi_attachment')) && ($cu = wp_get_attachment_url($coi))) $t .= '- [Certificate of Incorporation](' . $cu . '): Reinforce Lab Limited, RJSC registration no. C-180618/2022, 19 April 2022 (PDF)' . "\n";
     return $t;
 }
 add_action('parse_request', function () {

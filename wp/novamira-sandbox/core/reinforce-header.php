@@ -47,6 +47,12 @@ add_filter('wp_resource_hints', function ($urls) {
     }));
 }, 99);
 
+/* pages built from [reinforce_*] shortcodes use no blocks: drop WordPress block-editor CSS there (about 21 KB of inline CSS per page, F-026) */
+add_action('wp_enqueue_scripts', function () {
+    if (!rl_is_rl_page()) return;
+    foreach (['global-styles', 'wp-block-library', 'wp-block-library-theme', 'classic-theme-styles'] as $h) { wp_dequeue_style($h); wp_deregister_style($h); }
+}, 100);
+
 add_action('wp_head', 'rl_header_css', 20);
 function rl_header_css() { ?>
 <style id="rl-header-css">
