@@ -95,6 +95,7 @@ body.rl-aigrowth-page .fl-page-content,body.rl-aigrowth-page .fl-content,body.rl
 .rl-aigrowth .price b{font-family:var(--f-display);font-size:30px;color:var(--ink);font-weight:500;display:block;line-height:1.1;margin-bottom:4px}
 @media(max-width:1000px){.rl-aigrowth .lay{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.rl-aigrowth .lay{grid-template-columns:1fr}.rl-aigrowth .price{grid-template-columns:1fr}}
+@media(max-width:560px){.rl-aigrowth .agv .cap span+span{display:none}.rl-aigrowth .agv{padding:16px 10px 10px}}
 </style>
 <?php }, 22);
 

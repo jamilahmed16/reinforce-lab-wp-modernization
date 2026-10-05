@@ -104,6 +104,7 @@ body.home .fl-page-content,body.home .fl-content,body.home .fl-post-content{padd
 body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home *{box-sizing:border-box}
 .rl-home a{text-decoration:none;color:inherit}
+.rl-home a.inl{color:var(--ink);border-bottom:1px solid var(--red-line)}.rl-home a.inl:hover{color:var(--red-3)}
 .rl-home .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
 .rl-home section{position:relative;padding-block:clamp(56px,8vw,96px)}
 .rl-home .band{border-top:1px solid var(--line)}
@@ -299,7 +300,7 @@ function rl_render_home() {
   <!-- SYSTEM / HOW -->
   <section>
     <div class="wrap">
-      <div class="head"><span class="ey"><b>[</b>&nbsp;How it works&nbsp;<b>]</b></span><h2>How is an AI Growth System built?</h2><p class="lede">Every system connects four layers: your data, AI models, automated workflows and a revenue dashboard. We build it in four stages, run as one loop, whether we start with search, content, automation or lead generation.</p></div>
+      <div class="head"><span class="ey"><b>[</b>&nbsp;How it works&nbsp;<b>]</b></span><h2>How is an AI Growth System built?</h2><p class="lede">Every system connects four layers: your data, AI models, automated workflows and a revenue dashboard. We build it in four stages, run as one loop, whether we start with search, content, automation or lead generation. <a class="inl" href="<?php echo esc_url($u('services/ai-growth-systems')); ?>">See the systems we build</a>.</p></div>
       <ol class="steps" style="list-style:none;margin:0;padding:0">
         <li class="step"><div class="k" aria-hidden="true">01</div><h3>Diagnose</h3><p>Map your website, search visibility, content, workflows and funnel. Find where time, traffic and revenue are being lost.</p></li>
         <li class="step"><div class="k" aria-hidden="true">02</div><h3>Architect</h3><p>Design the system: which workflows to automate, which searches to own, and which data feeds which decision.</p></li>
