@@ -88,6 +88,9 @@ body.rl-clients-page .fl-page-content,body.rl-clients-page .fl-content,body.rl-c
 .rl-clients .c-wall li{display:grid;place-items:center;height:112px;padding:18px 22px;margin:0;border-bottom:1px solid var(--line)}
 .rl-clients .c-wall li:not(:nth-child(6n)){border-right:1px solid var(--line)}
 .rl-clients .c-wall li:hover .lg{opacity:1}
+.rl-clients .c-wall li:last-child{border-right:0}
+/* light-coloured logos turn dark grey when inverted: lift them to match the rest */
+.rl-clients .lg.lift{filter:grayscale(1) invert(1) brightness(1.9) contrast(1.3)}
 .rl-clients .c-wall img{max-width:100%;max-height:64px;width:auto;height:auto;object-fit:contain}
 .rl-clients .c-all{margin:34px 0 0;border-top:1px solid var(--line-2);padding-top:22px}
 .rl-clients .c-all h3{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 14px;font-weight:500}
@@ -116,9 +119,10 @@ function rl_render_clients() {
     $map = (array) get_option('rl_client_logos', []);
     $list = rl_clients_list();
     $proj = rl_clients_projects();
-    $logo = function ($name, $slug, $lazy = true) use ($map) {
+    $lift = ['martinet-goal', 'microinspire', 'mixed-global-series', 'btf-tennis', 'thz-bangladesh', 'eco-fast-fashion'];
+    $logo = function ($name, $slug, $lazy = true) use ($map, $lift) {
         if (empty($map[$slug])) return '';
-        return wp_get_attachment_image((int) $map[$slug], 'full', false, ['class' => 'lg', 'alt' => $name . ' logo', 'loading' => $lazy ? 'lazy' : 'eager', 'decoding' => 'async']);
+        return wp_get_attachment_image((int) $map[$slug], 'full', false, ['class' => in_array($slug, $lift, true) ? 'lg lift' : 'lg', 'alt' => $name . ' logo', 'loading' => $lazy ? 'lazy' : 'eager', 'decoding' => 'async']);
     };
     $purl = function ($slug) { $p = get_page_by_path($slug, OBJECT, 'rl_project'); return ($p && $p->post_status === 'publish') ? get_permalink($p) : ''; };
     $peek = ['United International University', 'Beacon Pharmaceuticals', 'Bikroy.com', 'HP', 'Accesstel', 'Union Properties'];
