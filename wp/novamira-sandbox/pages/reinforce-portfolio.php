@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - Portfolio
- * Description: /portfolio/ (production URL kept, rule R4 core page, D-124). Provides [reinforce_portfolio]. PLACEHOLDER LIST: the six projects already shown on reinforcelab.com/portfolio/, facts taken read-only from production (Exa, 5 Oct 2026); Jamil will send the real portfolio. No results or numbers appear without a source. Uses the shared kit (D-044). Schema: CollectionPage with an ItemList of CreativeWork, FAQPage.
+ * Description: /portfolio/ (production URL kept, rule R4 core page, D-124) and the project pages /projects/<slug>/ (production URLs kept, D-125). Provides [reinforce_portfolio]. PLACEHOLDER LIST: the six projects already shown on reinforcelab.com/portfolio/, facts taken read-only from production (Exa, 5 Oct 2026); Jamil will send the real portfolio. No results or numbers appear without a source. Uses the shared kit (D-044). Schema: CollectionPage with an ItemList of CreativeWork, FAQPage.
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -82,9 +82,12 @@ add_filter('wpseo_schema_graph', function ($graph) {
 /* ---------- CSS ---------- */
 add_action('wp_head', 'rl_portfolio_css', 22);
 function rl_portfolio_css() {
-    if (!rl_is_portfolio()) return; ?>
+    if (rl_is_portfolio()) rl_portfolio_css_body();
+}
+function rl_portfolio_css_body() { ?>
 <style id="rl-portfolio-css">
-body.rl-portfolio-page .fl-page-content,body.rl-portfolio-page .fl-content,body.rl-portfolio-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
+body.rl-portfolio-page .fl-page-content,body.rl-portfolio-page .fl-content,body.rl-portfolio-page .fl-post-content,body.rl-project-page .fl-page-content,body.rl-project-page .fl-content,body.rl-project-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
+body.rl-project-page .fl-post-meta,body.rl-project-page .fl-post-nav,body.rl-project-page .fl-comments{display:none!important}
 .rl-portfolio .ic{width:12px;height:12px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square}
 .rl-portfolio .hero-grid{align-items:stretch}
 .rl-portfolio .p-panel{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));display:flex;flex-direction:column;box-shadow:0 30px 80px -50px var(--red-glow)}
@@ -122,7 +125,27 @@ body.rl-portfolio-page .fl-page-content,body.rl-portfolio-page .fl-content,body.
 .rl-portfolio .p-work b{font-family:var(--f-display);font-weight:500;font-size:19px;text-transform:uppercase;letter-spacing:.02em}
 .rl-portfolio .p-work span{font-size:14.5px;color:var(--ink-dim)}
 .rl-portfolio .p-work em{font-style:normal;font-family:var(--f-mono);font-size:11.5px;color:var(--red-3)}
+.rl-portfolio .p-cs{font-family:var(--f-mono);font-size:11.5px;color:var(--red-3);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.rl-project .pj-tag{font-size:.5em;line-height:1.15;display:inline-block;margin-top:10px}
+.rl-project .pj-panel .p-shot{aspect-ratio:16/6}
+.rl-project .pj-facts{margin:0;display:grid}
+.rl-project .pj-facts div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;padding:11px 20px;border-top:1px solid var(--line);margin:0}
+.rl-project .pj-facts dt{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);padding-top:3px}
+.rl-project .pj-facts dd{margin:0;font-size:14.5px;color:var(--ink)}
+.rl-project .pj-facts dd a{color:var(--ink);border-bottom:1px solid var(--red-line);text-decoration:none}
+.rl-project .pj-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start}
+.rl-project .pj-intro{margin:0;font-size:17px;color:var(--ink-dim)}
+.rl-project .pj-blocks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.rl-project .pj-b{border:1px solid var(--line-2);background:var(--bg-2);padding:20px 22px;display:grid;gap:8px;align-content:start;margin:0}
+.rl-project .pj-b .n{font-family:var(--f-mono);font-size:11px;color:var(--red-3);letter-spacing:.12em}
+.rl-project .pj-b h3{font-size:21px;margin:0;line-height:1.15}
+.rl-project .pj-b p{margin:0;font-size:15px;color:var(--ink-dim)}
+.rl-project .pj-stack{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:16px}
+.rl-project .pj-stack .lbl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.rl-project .pj-got{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 28px;margin-bottom:18px}
+.rl-project .pj-more{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:1000px){.rl-portfolio .p-work{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.rl-project .pj-two,.rl-project .pj-blocks,.rl-project .pj-got,.rl-project .pj-more{grid-template-columns:1fr}.rl-project .pj-facts div{grid-template-columns:84px minmax(0,1fr);padding:10px 16px}}
 @media(max-width:760px){.rl-portfolio .p-grid,.rl-portfolio .p-work{grid-template-columns:1fr}.rl-portfolio .p-shot{aspect-ratio:16/8}}
 </style>
 <?php }
@@ -208,7 +231,7 @@ function rl_render_portfolio() {
           <ul class="p-built"><?php foreach ($p[6] as $b) echo '<li>' . $ok . '<span>' . esc_html($b) . '</span></li>'; ?></ul>
           <div class="p-foot">
             <ul class="chips"><?php foreach ($p[7] as $s) echo '<li>' . esc_html($s) . '</li>'; ?></ul>
-            <?php if ($p[8] !== '') echo '<a class="p-site" href="' . esc_url($p[8]) . '"' . $ext . '>Visit the site</a>'; ?>
+            <?php $cs = rl_project_url_by_name($p[0]); if ($cs) echo '<a class="p-cs" href="' . esc_url($cs) . '">Read the project &rarr;</a>'; elseif ($p[8] !== '') echo '<a class="p-site" href="' . esc_url($p[8]) . '"' . $ext . '>Visit the site</a>'; ?>
           </div>
         </div>
       </article>
@@ -244,6 +267,217 @@ function rl_render_portfolio() {
       <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
       <h2>See what we would fix first on your site.</h2>
       <p class="lede">The free Search Authority Diagnostic reviews your visibility, content and AI-search presence, and shows what to fix first.</p>
+      <div class="cta-row">
+        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn g" href="<?php echo $u('contact-us'); ?>">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+<?php
+    return ob_get_clean();
+}
+
+/* =========================================================================
+   Project pages: /projects/<slug>/ (production URLs kept, PRESERVE, Jamil 5 Oct 2026, D-125).
+   Post type rl_project with the "projects" slug and NO archive, so no /projects/ index URL exists.
+   Content rewritten from the production project pages (read-only, Exa); facts only, no results.
+   ========================================================================= */
+add_action('init', function () {
+    register_post_type('rl_project', [
+        'label' => 'Projects', 'labels' => ['name' => 'Projects', 'singular_name' => 'Project'],
+        'public' => true, 'has_archive' => false, 'show_in_rest' => true, 'menu_icon' => 'dashicons-portfolio',
+        'supports' => ['title', 'editor', 'author', 'excerpt', 'revisions'],
+        'rewrite' => ['slug' => 'projects', 'with_front' => false],
+    ]);
+});
+
+function rl_is_project() { return is_singular('rl_project'); }
+
+/* keyed by post slug */
+function rl_project_details() {
+    return [
+        'inpace-shop' => [
+            'name' => 'Inpace Shop', 'tagline' => 'An online store for cameras and computer accessories',
+            'lede' => 'INPACE Shop sells camera equipment and computer accessories from three shops in Dhaka: BCS Computer City in Agargaon, Multiplan Center and Eastern Plus. We rebuilt its online store on WooCommerce so customers can find products, pay and track their orders.',
+            'facts' => [['Client', 'INPACE Management Services Limited'], ['Industry', 'E-commerce'], ['Project', 'August to October 2021'], ['Team', 'Senior developer, product photographer, client service manager, project manager'], ['Work', 'E-commerce development, product photography, social media management']],
+            'ind' => 'industries/ecommerce', 'site' => 'https://inpaceshop.com/', 'type' => 'E-commerce website',
+            'needed_intro' => 'The old store was hard to use. Its design was dated and busy, so shoppers struggled to find what they came for.',
+            'needed' => ['Pages loaded slowly', 'Navigation was broken', 'Few payment and shipping options', 'Many visitors left before reaching a product'],
+            'built' => [
+                ['A WooCommerce store', 'A new store with customer accounts to manage orders, order tracking, and a payment gateway connected for secure checkout.'],
+                ['Search and navigation', 'Clear categories and product search, so customers reach the right camera or accessory in a few clicks.'],
+                ['Real product photos', 'We photographed the products in stock, so shoppers see what they will receive rather than stock images.'],
+                ['Faster pages', 'Hosting on Kinsta with caching, automatic backups and SSL, plus compressed images and minified code.'],
+            ],
+            'stack' => ['WordPress', 'WooCommerce', 'Kinsta hosting', 'Product photography', 'Social media'],
+            'got' => ['A rebuilt store that is easier to browse and buy from', 'Order tracking and customer accounts', 'Photos of the real products', 'A faster, secured site with automatic backups'],
+            'date' => '2023-03-21 11:32:24',
+        ],
+        'access-tutor' => [
+            'name' => 'AccessTUTOR', 'tagline' => 'An online tutoring platform for exam students',
+            'lede' => 'AccessTUTOR, part of Accesstel, connects students with private tutors in Maths, Science, English and other subjects. We designed and built the platform for students preparing for HSC and university admission exams.',
+            'facts' => [['Client', 'Accesstel'], ['Industry', 'Education'], ['Project', 'July to September 2021'], ['Team', 'Senior developer, UX and UI designer, client manager, project manager'], ['Work', 'Landing page design, branding, front-end and back-end development']],
+            'ind' => 'industries/education', 'site' => '', 'type' => 'Web application',
+            'needed_intro' => 'AccessTUTOR wanted an online learning platform where students take classes with tutors, and which the team could grow over time.',
+            'needed' => ['Course management that is simple for tutors', 'Quizzes and exams so students can track progress', 'Video classes through Google Meet', 'A platform that works on phones as well as computers'],
+            'built' => [
+                ['Course management', 'Tutors set up courses with videos, audio and other media, and add quizzes and exams so students can check what they have learned.'],
+                ['A flexible back end', 'Built with Python, Django and a relational database, so new features and new courses can be added as the platform grows.'],
+                ['Google Meet in the dashboard', 'Google did not then allow other platforms to schedule and start Meet calls automatically. We used the Google Meet API to bring each call\'s date, time and participants into the dashboard, so the team manages classes in one place.'],
+                ['Built for every screen', 'A responsive front end that works on desktops, laptops, tablets and phones, with a clean interface students can find their way around.'],
+            ],
+            'stack' => ['Python', 'Django', 'Relational database', 'Google Meet API', 'Responsive front end'],
+            'got' => ['A tutoring platform with its own brand and landing page', 'Course management with quizzes and exams', 'Video class details in one dashboard', 'A design that works on any device'],
+            'date' => '2023-03-16 10:00:00',
+        ],
+        'iba-alumni-lottery' => [
+            'name' => 'IBA Alumni Lottery', 'tagline' => 'A reunion website with an alumni database and a fair prize draw',
+            'lede' => 'The IBA Alumni Association brings together graduates of the Institute of Business Administration, a business school in Bangladesh. For its reunion we built one website: a database of alumni, online registration, and a prize draw that picks winners at random.',
+            'facts' => [['Client', 'IBA Alumni Association'], ['Industry', 'Education'], ['Project', 'August to October 2021'], ['Team', 'Front-end and back-end developers'], ['Work', 'Full stack web development']],
+            'ind' => 'industries/education', 'site' => '', 'type' => 'Web application',
+            'needed_intro' => 'The association wanted a central place for its alumni and for the reunion programme.',
+            'needed' => ['All reunion information in one place', 'A database of alumni that stays up to date', 'Online registration for the reunion', 'A prize draw that everyone can trust'],
+            'built' => [
+                ['Alumni database', 'A MySQL database of alumni with graduation years and contact details, easy to update as new graduates join.'],
+                ['Reunion registration', 'Alumni register for the reunion online, from a phone or a computer.'],
+                ['A random prize draw', 'A custom draw in Python and Django picks a registered alumnus at random, and alumni see the results on the site, so the draw is fair and open.'],
+                ['What it taught us', 'Python, Django and jQuery were new to some of the team, and the draw logic took real problem solving. The project made us better at working through a hard brief together.'],
+            ],
+            'stack' => ['Python', 'Django', 'MySQL', 'jQuery'],
+            'got' => ['One website for the reunion', 'An alumni database that can be kept current', 'Online registration', 'A random draw with results anyone can check'],
+            'date' => '2023-03-21 12:02:47',
+        ],
+    ];
+}
+function rl_project_current() {
+    if (!rl_is_project()) return null;
+    $d = rl_project_details(); $s = get_post_field('post_name', get_queried_object_id());
+    return isset($d[$s]) ? $d[$s] + ['slug' => $s] : null;
+}
+/* the Portfolio card links to the project page when one is published */
+function rl_project_url_by_name($name) {
+    foreach (rl_project_details() as $slug => $p) {
+        if ($p['name'] !== $name) continue;
+        $post = get_page_by_path($slug, OBJECT, 'rl_project');
+        return ($post && $post->post_status === 'publish') ? get_permalink($post) : '';
+    }
+    return '';
+}
+
+add_filter('body_class', function ($c) { if (rl_is_project()) $c[] = 'rl-project-page'; return $c; });
+add_filter('rl_kit_active', function ($on) { return $on || rl_is_project(); });
+/* the portfolio CSS (cards, chips, panel) is shared with the project pages */
+add_action('wp_head', function () { if (rl_is_project() && !rl_is_portfolio()) { rl_portfolio_css_body(); } }, 22);
+
+add_filter('wpseo_schema_graph', function ($graph) {
+    if (!is_array($graph) || !($p = rl_project_current())) return $graph;
+    $url = get_permalink(get_queried_object_id());
+    $org = home_url('/#organization');
+    $facts = array_column($p['facts'], 1, 0);
+    $work = ['@type' => 'CreativeWork', '@id' => $url . '#project', 'name' => $p['name'], 'headline' => $p['tagline'], 'description' => $p['lede'], 'creator' => ['@id' => $org], 'sourceOrganization' => ['@type' => 'Organization', 'name' => $facts['Client']], 'genre' => $p['type'], 'keywords' => implode(', ', $p['stack']), 'dateCreated' => '2021'];
+    if ($p['site']) $work['url'] = $p['site'];
+    foreach ($graph as &$n) {
+        if (!is_array($n) || empty($n['@type'])) continue;
+        if (in_array('WebPage', (array) $n['@type'], true) && isset($n['@id']) && strpos($n['@id'], $url) === 0) { $n['mainEntity'] = ['@id' => $url . '#project']; $n['about'] = ['@id' => $url . '#project']; }
+    }
+    unset($n);
+    $graph[] = $work;
+    return $graph;
+}, 20);
+
+/* Yoast breadcrumb: Home > Portfolio > project */
+add_filter('wpseo_breadcrumb_links', function ($links) {
+    if (!rl_is_project() || count($links) < 2) return $links;
+    $pf = get_page_by_path('portfolio');
+    if ($pf) array_splice($links, 1, 0, [['url' => get_permalink($pf), 'text' => 'Portfolio', 'id' => $pf->ID]]);
+    return $links;
+});
+
+add_shortcode('reinforce_project', 'rl_render_project');
+function rl_render_project() {
+    $p = rl_project_current();
+    if (!$p) return '';
+    $u = function ($path, $fallback = '#') { return esc_url(function_exists('rl_url_by_path') ? rl_url_by_path($path, $fallback) : $fallback); };
+    $diag = $u('search-authority-diagnostic');
+    $ok = '<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg>';
+    $ext = ' rel="noopener" target="_blank"';
+    $others = array_filter(rl_project_details(), function ($k) use ($p) { return $k !== $p['slug']; }, ARRAY_FILTER_USE_KEY);
+    ob_start(); ?>
+<div class="rl-page rl-portfolio rl-project">
+
+<nav class="crumbs wrap" aria-label="Breadcrumb"><ol>
+  <li><a href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
+  <li><a href="<?php echo $u('portfolio'); ?>">Portfolio</a></li>
+  <li><span aria-current="page"><?php echo esc_html($p['name']); ?></span></li>
+</ol></nav>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="ey"><b>[</b>&nbsp;Project&nbsp;&middot;&nbsp;<?php echo esc_html($p['type']); ?>&nbsp;<b>]</b></span>
+      <h1 class="h1"><?php echo esc_html($p['name']); ?><br><span class="r pj-tag"><?php echo esc_html($p['tagline']); ?></span></h1>
+      <p class="lede"><?php echo esc_html($p['lede']); ?></p>
+      <div class="cta-row">
+        <a class="btn p" href="#built">What we built <span class="ar">&rarr;</span></a>
+        <?php if ($p['site']) echo '<a class="btn g" href="' . esc_url($p['site']) . '"' . $ext . '>Visit the site</a>'; else echo '<a class="btn g" href="' . $u('portfolio') . '">All projects</a>'; ?>
+      </div>
+    </div>
+    <aside class="p-panel pj-panel" aria-label="Project facts">
+      <div class="p-shot"><?php echo rl_portfolio_frame($p['type'], 'h'); ?><span class="tag"><?php echo esc_html($p['type']); ?></span></div>
+      <dl class="pj-facts"><?php foreach ($p['facts'] as $f) {
+          $v = esc_html($f[1]);
+          if ($f[0] === 'Industry') $v = '<a href="' . $u($p['ind']) . '">' . $v . '</a>';
+          echo '<div><dt>' . esc_html($f[0]) . '</dt><dd>' . $v . '</dd></div>';
+      } ?></dl>
+    </aside>
+  </div>
+</section>
+
+<section id="needed">
+  <div class="wrap">
+    <div class="head"><span class="ey"><b>[</b>&nbsp;The brief&nbsp;<b>]</b></span><h2>What did <?php echo esc_html($p['name']); ?> need?</h2></div>
+    <div class="pj-two">
+      <p class="pj-intro"><?php echo esc_html($p['needed_intro']); ?></p>
+      <ul class="p-built"><?php foreach ($p['needed'] as $n) echo '<li>' . $ok . '<span>' . esc_html($n) . '</span></li>'; ?></ul>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="built">
+  <div class="wrap">
+    <div class="head"><span class="ey"><b>[</b>&nbsp;The work&nbsp;<b>]</b></span><h2>What did Reinforce Lab build?</h2></div>
+    <div class="pj-blocks"><?php foreach ($p['built'] as $i => $b) echo '<article class="pj-b"><span class="n">0' . ($i + 1) . '</span><h3>' . esc_html($b[0]) . '</h3><p>' . esc_html($b[1]) . '</p></article>'; ?></div>
+    <div class="pj-stack"><span class="lbl">Built with</span><ul class="chips"><?php foreach ($p['stack'] as $s) echo '<li>' . esc_html($s) . '</li>'; ?></ul></div>
+  </div>
+</section>
+
+<section id="delivered">
+  <div class="wrap">
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Delivered&nbsp;<b>]</b></span><h2>What the client got</h2></div>
+    <ul class="p-built pj-got"><?php foreach ($p['got'] as $g) echo '<li>' . $ok . '<span>' . esc_html($g) . '</span></li>'; ?></ul>
+    <p class="p-note"><b>About results.</b> This page describes the work we delivered. We publish traffic or sales figures only when we can show their source and the client agrees.</p>
+  </div>
+</section>
+
+<section class="band alt" id="more">
+  <div class="wrap">
+    <div class="head"><span class="ey"><b>[</b>&nbsp;More work&nbsp;<b>]</b></span><h2>Other projects</h2></div>
+    <div class="p-work pj-more">
+      <?php foreach ($others as $slug => $o) { $ou = rl_project_url_by_name($o['name']); if (!$ou) continue; echo '<a href="' . esc_url($ou) . '"><b>' . esc_html($o['name']) . '</b><span>' . esc_html($o['tagline']) . '</span><em>' . esc_html($o['type']) . ' &rarr;</em></a>'; } ?>
+      <a href="<?php echo $u('portfolio'); ?>"><b>All projects</b><span>Stores, web applications and websites we have built.</span><em>Portfolio &rarr;</em></a>
+    </div>
+  </div>
+</section>
+
+<section id="start">
+  <div class="wrap">
+    <div class="final">
+      <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
+      <h2>Planning a site or a platform like this?</h2>
+      <p class="lede">Tell us what you need, or start with the free Search Authority Diagnostic to see what to fix first on your current site.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('contact-us'); ?>">Contact us</a>

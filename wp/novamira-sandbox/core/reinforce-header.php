@@ -197,7 +197,7 @@ add_action('after_setup_theme', function () {
 /* Pages rendered by a [reinforce_*] shortcode supply their own H1: strip the theme's
    <header class="fl-post-header"><h1 class="fl-post-title"> so there is exactly one H1. */
 function rl_is_rl_page() {
-    return is_page() && strpos((string) get_post_field('post_content', get_queried_object_id()), '[reinforce_') !== false;
+    return (is_page() || is_singular('rl_project')) && strpos((string) get_post_field('post_content', get_queried_object_id()), '[reinforce_') !== false;
 }
 add_action('fl_before_post', function () { if (rl_is_rl_page()) ob_start(); }, 1);
 add_action('fl_before_post_content', function () {
