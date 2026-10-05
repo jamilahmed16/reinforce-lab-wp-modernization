@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-129 | Founding date changed to 19 April 2022 everywhere (incorporation date on the RJSC certificate), replacing D-108's 1 April 2021 | 5 Oct | DONE (Jamil: "Change the founding date to 19 April 2022 everywhere.") | this file |
 | D-128 | Certificate of Incorporation published at its production URL (same PDF path), footer linked; RJSC no. C-180618/2022 added to Organization schema, Terms and Privacy; uploads on `.online` now send `X-Robots-Tag: noindex` | 5 Oct | DONE (Jamil sent the PDF; "Public, I'll upload it") | this file |
 | D-127 | Clients page built (page 277, `/clients/`) with the 46 client logos from production, imported into the `.online` media library; footer Clients linked | 5 Oct | DONE (Jamil: logos "Download from production"; "Yes, all are real clients") | this file |
 | D-126 | Project pages moved from `/projects/<slug>/` to `/portfolio/<slug>/`; production `/projects/` URLs get 301s (tested on `.online`, in `claude/data/approved-redirects-2026-10.csv`) | 5 Oct | DONE (Jamil: "it should be under https://reinforcelab.online/portfolio/ no \"/projects\"") | this file |
@@ -42,7 +43,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 | D-111 | About page founder profile rebuilt from the verified 2018 Onalytica career facts | 5 Oct | APPROVED (Jamil: "keep both sentences, keep all career details"); headshot to follow | this file |
 | D-110 | About page rebuilt on `.online` to the v2 company-led copy (`/about-us/`, page 218) | 5 Oct | DONE (Jamil: "dates are right, no Estonia office, keep all, build it") | this file |
 | D-109 | Origin story from Jamil: started in Tallinn, Estonia 2020; expanded to Bangladesh 2021; About draft v2 | 5 Oct | RECORDED; About copy in review | this file |
-| D-108 | Founding date is 1 April 2021 everywhere (replaces 2020, D-069) | 5 Oct | DONE (Jamil: "1 April 2021 everywhere") | this file |
+| D-108 | Founding date is 1 April 2021 everywhere (replaces 2020, D-069) | 5 Oct | SUPERSEDED by D-129 (19 April 2022); was DONE (Jamil: "1 April 2021 everywhere") | this file |
 | D-107 | `/awards/` linked from the footer only (Company column, after About Us) | 5 Oct | DONE (Jamil: "it will be in the footer only for now") | this file |
 | D-106 | Awards page built on `.online` at `/awards/` (page 221) | 4 Oct | DONE (Jamil: "use /awards/, drop the amber items, build it") | this file |
 | D-105 | Separate Awards page (About stays separate): design mockup v1 for review | 4 Oct | APPROVED, built as D-106 | this file |
@@ -188,6 +189,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-129 · Founding date is 19 April 2022
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "Change the founding date to 19 April 2022 everywhere."). Supersedes D-108 (1 April 2021).
+
+- **Source:** the RJSC Certificate of Incorporation, No. C-180618/2022, dated 19 April 2022 (D-128).
+- **Changed:** About page (`pages/reinforce-about.php`): Organization `foundingDate` 2022-04-19 and `foundingLocation` Dhaka, Bangladesh; "At a glance" Founded; story paragraph; route strip now 2020 Tallinn, 2021 Dhaka (our team in Bangladesh), 2022 Dhaka (Reinforce Lab Limited founded), Today (4 columns, 2 x 2 on phone); milestones (2021 expands to Bangladesh, 2022 Limited founded); founder career line; FAQ "When and where did Reinforce Lab start?". `/llms.txt` legal-name line (`core/reinforce-entity.php`) now gives the founding date and RJSC number. Yoast setting `org-founding-date` was also 2021-04-01 and fed the Organization schema on every page: now 2022-04-19 (backup `claude/data/backups/yoast-founding-date-before-2026-10-05.json`).
+- **Kept (history, not the founding date):** started in Tallinn in 2020 and expanded to Bangladesh in 2021 (Jamil, D-109); the 2021 project dates in the portfolio (from production's project pages); Clients "Working with clients since 2021".
+- **Verified:** `foundingDate` 2022-04-19 on Services, Contact, Awards, About, Clients and a project page (Home outputs none); no "April 2021" or "2021-04" left on any checked page; About story checked on desktop and phone; `copy-check.py` 0 issues.
 
 ---
 
