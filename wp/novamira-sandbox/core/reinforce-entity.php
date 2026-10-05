@@ -64,6 +64,8 @@ function rl_llms_txt() {
     $t .= $sec('Search Authority OS', ['search-authority-os', 'packages', 'search-authority-diagnostic', 'services/agents']);
     $t .= $sec('Services', array_merge(['services'], $children('services', ['services/agents'])));
     $t .= $sec('Industries', array_merge(['industries'], $children('industries')));
+    $posts = get_posts(['post_type' => 'post', 'post_status' => 'publish', 'numberposts' => 30]);
+    if ($posts) { $t .= "\n## Articles\n\n"; foreach ($posts as $pp) { $d = html_entity_decode(trim((string) get_post_meta($pp->ID, '_yoast_wpseo_metadesc', true)), ENT_QUOTES, 'UTF-8'); $t .= '- [' . html_entity_decode(get_the_title($pp), ENT_QUOTES, 'UTF-8') . '](' . get_permalink($pp) . ')' . ($d !== '' ? ': ' . $d : '') . "\n"; } }
     $t .= $sec('Optional', array_merge($children('services/agents'), ['blog', 'privacy-policy', 'terms-conditions', 'ftc-disclosure']));
     if (($coi = get_option('rl_coi_attachment')) && ($cu = wp_get_attachment_url($coi))) $t .= '- [Certificate of Incorporation](' . $cu . '): Reinforce Lab Limited, RJSC registration no. C-180618/2022, 19 April 2022 (PDF)' . "\n";
     return $t;
