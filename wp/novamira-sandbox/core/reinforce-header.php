@@ -70,6 +70,16 @@ remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action('wp_enqueue_scripts', 'wp_enqueue_emoji_styles');
 
+/* remove line-break whitespace between tags in the whole front-end page (about 4 KB per page); <script>, <pre>, <textarea> untouched (F-027) */
+add_action('template_redirect', function () {
+    if (is_admin() || wp_doing_ajax() || (defined('REST_REQUEST') && REST_REQUEST) || is_feed() || is_robots()) return;
+    ob_start(function ($html) {
+        if (stripos($html, '<html') === false) return $html;
+        $parts = preg_split('#(<script\b.*?</script>|<pre\b.*?</pre>|<textarea\b.*?</textarea>)#is', $html, -1, PREG_SPLIT_DELIM_CAPTURE);
+        foreach ($parts as $i => $part) { if ($i % 2 === 0) $parts[$i] = preg_replace('/>[ \t]*\R\s*</', '><', $part); }
+        return implode('', $parts);
+    });
+}, 0);
 /* minify every inline <style> printed in <head> (comments, line breaks, spaces around { } ; , >): about 1 to 2 KB per page, nothing else touched */
 add_action('wp_head', function () { if (!is_admin()) ob_start(); }, 0);
 add_action('wp_head', function () {
