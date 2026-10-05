@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-128 | Certificate of Incorporation published at its production URL (same PDF path), footer linked; RJSC no. C-180618/2022 added to Organization schema, Terms and Privacy; uploads on `.online` now send `X-Robots-Tag: noindex` | 5 Oct | DONE (Jamil sent the PDF; "Public, I'll upload it") | this file |
 | D-127 | Clients page built (page 277, `/clients/`) with the 46 client logos from production, imported into the `.online` media library; footer Clients linked | 5 Oct | DONE (Jamil: logos "Download from production"; "Yes, all are real clients") | this file |
 | D-126 | Project pages moved from `/projects/<slug>/` to `/portfolio/<slug>/`; production `/projects/` URLs get 301s (tested on `.online`, in `claude/data/approved-redirects-2026-10.csv`) | 5 Oct | DONE (Jamil: "it should be under https://reinforcelab.online/portfolio/ no \"/projects\"") | this file |
 | D-125 | Project pages rebuilt on `.online` at the production URLs `/projects/inpace-shop/`, `/projects/access-tutor/`, `/projects/iba-alumni-lottery/` (post type `rl_project`, no `/projects/` archive); Portfolio cards link to them | 5 Oct | DONE (Jamil: "Rebuild at same URLs") | this file |
@@ -187,6 +188,17 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-128 · Certificate of Incorporation; RJSC number on the site
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil uploaded `Certificate-of-Incorporation-Reinforce-Lab-Limited.pdf`; earlier: "Public, I'll upload it")
+
+- **The certificate (VERIFIED, read from the PDF):** "REINFORCE LAB LTD." incorporated under the Companies Act (Act XVIII) of 1994, a limited company, **No. C-180618/2022**, given at Dhaka on **19 April 2022** by the Assistant Registrar, RJSC; Issue No. 292581; digitally signed (PDF metadata: author RJSC, created 19 Apr 2022).
+- **URL kept:** production serves this PDF at `/wp-content/uploads/2023/09/Certificate-of-Incorporation-Reinforce-Lab-Limited.pdf` (GSC 16 months: 2 clicks, 52 impressions). The unmodified file (MD5 e47934a0..., 325,325 bytes, so the digital signature still verifies) is now at the same path on `.online` (attachment 324, option `rl_coi_attachment`). No HTML page was created (a new URL would need approval); the footer "Certificate of Incorporation" opens the PDF in a new tab, as on production.
+- **Registration number used:** Organization schema `identifier` (PropertyValue, RJSC company registration number) and `address` (Dhaka office) in `core/reinforce-entity.php`; Terms & Conditions "Who we are" (with the incorporation date) and Privacy Policy "Who we are" (drafts updated too; page backup `claude/data/backups/terms-privacy-before-rjsc-2026-10-05.json`). This closes the RJSC part of the EU E-Commerce Directive art. 5 item (D-121); the VAT/BIN number is still pending.
+- **Found and fixed, noindex gap:** `.online` sends noindex on pages (`blog_public` 0) but files in uploads (PDFs, images) had no robots header and robots.txt allows all. Added `wp-content/uploads/.htaccess` with `Header set X-Robots-Tag "noindex, nofollow"` (copy in `claude/data/online-config/uploads-htaccess.txt`); verified on the PDF and a logo. Marked in the file and on the launch gate: do NOT copy it to reinforcelab.com.
+- **For Jamil to decide (not changed):** the site gives the founding date as 1 April 2021 everywhere (D-108, About schema `foundingDate`), while the legal company was incorporated on 19 April 2022. Both can be true (business start vs company registration); options are in the report.
 
 ---
 

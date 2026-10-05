@@ -1,0 +1,5 @@
+# reinforcelab.online ONLY (D-128): keep uploaded files (PDFs, images) out of search while this is the development site.
+# Do NOT copy this file to reinforcelab.com.
+<IfModule mod_headers.c>
+Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>
