@@ -70,6 +70,18 @@ remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action('wp_enqueue_scripts', 'wp_enqueue_emoji_styles');
 
+/* minify every inline <style> printed in <head> (comments, line breaks, spaces around { } ; , >): about 1 to 2 KB per page, nothing else touched */
+add_action('wp_head', function () { if (!is_admin()) ob_start(); }, 0);
+add_action('wp_head', function () {
+    if (is_admin()) return;
+    echo preg_replace_callback('#(<style\b[^>]*>)(.*?)(</style>)#s', function ($m) {
+        $c = preg_replace('#/\*.*?\*/#s', '', $m[2]);
+        $c = preg_replace('/\s*([{};,>])\s*/', '$1', $c);
+        $c = trim(preg_replace('/\s+/', ' ', $c));
+        return $m[1] . str_replace(';}', '}', $c) . $m[3];
+    }, (string) ob_get_clean());
+}, PHP_INT_MAX);
+
 add_action('wp_head', 'rl_header_css', 20);
 function rl_header_css() { ?>
 <style id="rl-header-css">
