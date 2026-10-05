@@ -62,7 +62,7 @@ The self-hosted, preloaded fonts (D-123) removed the font-swap shift. Lab readin
 
 | Item | Pages | Owner / next step |
 |---|---|---|
-| **Outside citations** (AI engines weight corroborated claims) | 16 commercial pages: Home, Search Authority OS, Diagnostic, Packages, Services hub, AI Search Optimization, SEO & AI Search Audit, Agents hub, 8 agent pages. (No citation needed: Privacy, Terms, FTC, Contact, Blog index, Clients, 2 project pages) | Claude: research and add 2 to 4 primary sources per page (Google Search Central, official AI-engine docs, standards bodies), one page group at a time, RECOMMENDED next task |
+| ~~Outside citations~~ **DONE same day** | Sources added to the 8 agent pages, Home, Search Authority OS, Diagnostic, AI Search Optimization and the Audit: 42 of 53 pages now cite primary sources. Packages and the two hubs make no outside claims and link to sourced pages | See F-026 in `claude/decision-log.md` |
 | Question-shaped H2s | Home, Search Authority OS, Diagnostic | Claude drafts, Jamil approves (Home copy is approved design) |
 | Blog posts | 0 published | Content phase; topic clusters per D-012 |
 | `dateModified` in schema | 47 of 53 have none | Appears when a page is edited after publishing; never by a bulk pass (F-003) |
