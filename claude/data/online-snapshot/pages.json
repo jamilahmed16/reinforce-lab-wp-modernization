@@ -164,17 +164,20 @@
  {
   "id": 71,
   "type": "page",
-  "status": "draft",
+  "status": "publish",
   "title": "AI Growth Systems",
   "slug": "ai-growth-systems",
   "parent": 68,
-  "path": "/?page_id=71",
+  "path": "/services/ai-growth-systems/",
   "template": null,
-  "content": "",
+  "content": "[reinforce_aigrowth]",
   "excerpt": "",
-  "date": "2026-09-20 14:24:42",
-  "modified": "2026-09-20 14:24:42",
-  "seo": [],
+  "date": "2026-10-05 21:31:27",
+  "modified": "2026-10-05 21:31:27",
+  "seo": {
+   "_yoast_wpseo_title": "AI Growth Systems: Design, Build and Run | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Reinforce Lab designs, builds and runs AI Growth Systems: your data, AI models, automated workflows and a dashboard, connected to save hours and grow pipeline."
+  },
   "rl_fields": []
  },
  {

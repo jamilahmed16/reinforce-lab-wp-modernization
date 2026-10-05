@@ -34,11 +34,12 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 | 229 | AccessTUTOR | [/portfolio/access-tutor/](https://reinforcelab.online/portfolio/access-tutor/) | publish | [`pages/reinforce-portfolio.php`](../wp/novamira-sandbox/pages/reinforce-portfolio.php) | AccessTUTOR: Online Tutoring Platform \| Reinforce Lab |
 | 230 | IBA Alumni Lottery | [/portfolio/iba-alumni-lottery/](https://reinforcelab.online/portfolio/iba-alumni-lottery/) | publish | [`pages/reinforce-portfolio.php`](../wp/novamira-sandbox/pages/reinforce-portfolio.php) | IBA Alumni Lottery: Reunion Website \| Reinforce Lab |
 
-## Services (19)
+## Services (20)
 
 | ID | Page | URL | Status | Renders from | SEO title |
 |---|---|---|---|---|---|
 | 68 | Services | [/services/](https://reinforcelab.online/services/) | publish | [`services/reinforce-services.php`](../wp/novamira-sandbox/services/reinforce-services.php) | Services: AI Search, SEO & Automation \| Reinforce Lab |
+| 71 | AI Growth Systems | [/services/ai-growth-systems/](https://reinforcelab.online/services/ai-growth-systems/) | publish | [`services/reinforce-aigrowth.php`](../wp/novamira-sandbox/services/reinforce-aigrowth.php) | AI Growth Systems: Design, Build and Run \| Reinforce Lab |
 | 72 | AI Search Optimization | [/services/ai-search-optimization/](https://reinforcelab.online/services/ai-search-optimization/) | publish | [`services/reinforce-aiso.php`](../wp/novamira-sandbox/services/reinforce-aiso.php) | AI Search Optimization Services (AISO) \| Reinforce Lab |
 | 73 | Generative Engine Optimization | [/services/generative-engine-optimization/](https://reinforcelab.online/services/generative-engine-optimization/) | publish | [`services/reinforce-geo.php`](../wp/novamira-sandbox/services/reinforce-geo.php) | GEO Services: Generative Engine Optimization \| Reinforce Lab |
 | 74 | SEO & AI Search Audit | [/services/seo-ai-search-audit/](https://reinforcelab.online/services/seo-ai-search-audit/) | publish | [`services/reinforce-audit.php`](../wp/novamira-sandbox/services/reinforce-audit.php) | SEO & AI Search Audit Services \| Reinforce Lab |
@@ -100,11 +101,10 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 |---|---|---|---|---|---|
 | 220 | Blog | [/blog/](https://reinforcelab.online/blog/) | publish | [`blog/reinforce-blog.php`](../wp/novamira-sandbox/blog/reinforce-blog.php) | Blog \| SEO, AI Search and Growth Systems \| Reinforce Lab |
 
-## Drafts (4)
+## Drafts (3)
 
 | ID | Page | URL | Status | Renders from | SEO title |
 |---|---|---|---|---|---|
 | 67 | Reviews | /?page_id=67 | draft | WordPress editor |  |
 | 69 | Best WordPress Hosting | /?page_id=69 | draft | WordPress editor |  |
 | 70 | Best SEO & AI Tools | /?page_id=70 | draft | WordPress editor |  |
-| 71 | AI Growth Systems | /?page_id=71 | draft | WordPress editor |  |

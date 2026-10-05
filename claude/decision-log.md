@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-131 | AI Growth Systems pillar built and published on `.online` (page 71, `/services/ai-growth-systems/`), primary keyword "ai growth systems"; Home links to it | 5 Oct | DONE (Jamil: "/services/ai-growth-systems/ Yes") | this file |
 | D-130 | Keyword map v1: Home "reinforce lab", About "about reinforce lab", `/services/ai-growth-systems/` "ai growth systems", first blog post "what is an ai growth system"; replaces D-035 keyword ownership | 5 Oct | APPROVED (Jamil: "Replace D-035 with today's plan"); Yoast focus keyphrases set | this file |
 | F-026 | SEO/AEO/GEO/LLM readiness, second pass (53 pages): all technical, schema and answer-engine gates pass; fixed brand-early openings, share image, llms.txt, page weight; sources added to 13 pages (42 of 53 now cite); question H2s on Home, SAOS, Diagnostic; open: blog | 5 Oct | DONE | `claude/research/seo-aeo-geo-readiness-2026-10-05-v2.md` |
 | D-129 | Founding date changed to 19 April 2022 everywhere (incorporation date on the RJSC certificate), replacing D-108's 1 April 2021 | 5 Oct | DONE (Jamil: "Change the founding date to 19 April 2022 everywhere.") | this file |
@@ -191,6 +192,18 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-131 · AI Growth Systems pillar page built
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "/services/ai-growth-systems/ Yes then Blog \"what is an ai growth system\"")
+
+- **URL:** `/services/ai-growth-systems/` (approved new URL, D-003 / D-006a). Page 71 was an empty draft; now published with `[reinforce_aigrowth]`, new file `services/reinforce-aigrowth.php` (added to the loader). Primary keyword "ai growth systems" (D-130, Yoast focus keyphrase set). Yoast title "AI Growth Systems: Design, Build and Run | Reinforce Lab" (56), meta 159.
+- **Content (facts consistent with Home and Packages):** hero with a four-layer diagram (data, AI models, workflows, dashboard, feeding hours saved, search visibility, qualified pipeline; phone version via `rl_ph`); the four layers in depth with an example each; six systems by use case linking to Search Authority OS, SEO Content Systems, AI Workflow Automation, Marketing Automation, Lead Generation Systems and Executive AI Consulting, each with what it is measured by; the engagement (Diagnose, Architect, Build and automate, Measure and improve); deliverables; price teaser ("From $5,000 setup", the Search Authority OS Foundation price from Packages); comparison with an agency retainer and buying AI tools; straight answer on oversight, sourced to the NIST AI Risk Management Framework and Google's AI-content guidance; the 8 industries; 6 FAQs; Diagnostic CTA. No client results or invented numbers.
+- **Schema:** Service with an OfferCatalog of the six systems, FAQPage (6, matching the visible FAQ), WebPage `citation` (NIST, Google).
+- **Links in:** menu "AI Growth Systems (Overview)", footer, Services hub, Search Authority OS, and a new contextual link in Home's "How is an AI Growth System built?" section ("See the systems we build").
+- **Verified:** 200, 1 H1, no PHP notices, 119 KB, 7 of 9 H2s are questions, answer-first, brand early, share image, `copy-check.py` 0 issues, phone width 390, listed in `llms.txt`; site-wide audit still passes on all 54 pages.
+- **Next (D-130):** the blog post "what is an ai growth system"; when it is published, Home's FAQ answer "What is an AI Growth System?" is shortened to a brief answer linking to it.
 
 ---
 
