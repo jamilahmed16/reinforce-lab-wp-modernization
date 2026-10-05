@@ -3,6 +3,7 @@
 //   node claude/tools/shot.mjs width <path> [<path> ...]          page width at 390 px (must equal 390), e.g. blog/ about-us/
 //   node claude/tools/shot.mjs page <path> <out-prefix>           desktop (1440) + phone (390) full-page JPEGs of a live page
 //   node claude/tools/shot.mjs html <file.html> <out-prefix>      same, for HTML from `rl.py preview-post` (served as if on .online)
+//   node claude/tools/shot.mjs sections <path> <out-prefix> [css]  one JPEG per section (default `.rl-page > section`), desktop and phone, for review
 //
 // The dev-site proxy drops random assets, so every static asset is cached in claude/tools/.cache/
 // on first fetch (with retries) and replayed. Only the HTML document is fetched fresh.
@@ -57,4 +58,15 @@ if (mode === 'page' || mode === 'html') {
   }
   await b.close(); process.exit(0);
 }
-console.log('usage: node claude/tools/shot.mjs width|page|html ...'); await b.close(); process.exit(2);
+if (mode === 'sections') {
+  const [src, out, sel = '.rl-page > section'] = args;
+  for (const [w, h, dsf, tag] of [[1440, 900, 0.6, 'd'], [390, 844, 1, 'm']]) {
+    const p = await page(w, h, dsf);
+    if (!(await open(p, SITE + src.replace(/^\//, '') + '?nc=' + Date.now()))) { console.log(tag, 'load failed'); continue; }
+    const s = p.locator(sel), n = await s.count();
+    for (let i = 0; i < n; i++) await s.nth(i).screenshot({ path: `${out}-${tag}${i}.jpg`, type: 'jpeg', quality: 70 });
+    console.log(tag, n, 'sections');
+  }
+  await b.close(); process.exit(0);
+}
+console.log('usage: node claude/tools/shot.mjs width|page|html|sections ...'); await b.close(); process.exit(2);

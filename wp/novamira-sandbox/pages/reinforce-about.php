@@ -1,14 +1,16 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - About
- * Description: /about-us/ (APPROVED - PRESERVE, rebuilt to the D-012 standard). Provides [reinforce_about]. Uses the shared kit (D-044). No hero animation (About is excluded, D-039). Schema: AboutPage + Person (founder) + FAQPage; Organization gains founder.
- * Version: 1.0
+ * Description: /about-us/ (APPROVED - PRESERVE, rebuilt to the D-012 standard; company-led copy v2, D-110). Provides [reinforce_about]. Uses the shared kit (D-044). No hero animation (About is excluded, D-039). Schema: AboutPage + Person (founder) + FAQPage; Organization gains founder, foundingDate, award, knowsAbout, areaServed.
+ * Version: 2.0
  */
 if (!defined('ABSPATH')) exit;
 
 function rl_is_about() { return is_page('about-us') && (int) wp_get_post_parent_id(get_queried_object_id()) === 0; }
 
-/* Founder facts: confirmed by Jamil (D-008 locked positioning; 28 Sep Home FAQ facts). Founding date 1 April 2021, set by Jamil 5 Oct (D-108; replaces 2020 from D-069). */
+/* Founder facts: confirmed by Jamil (D-008 locked positioning; 28 Sep Home FAQ facts).
+   Origin (Jamil, 5 Oct, D-109): started in Tallinn, Estonia in 2020 as a full-service digital marketing agency; expanded to Bangladesh in 2021.
+   Reinforce Lab Limited founded 1 April 2021, Bangladesh (D-108). No Estonian office today. */
 function rl_about_person() {
     return [
         'name' => 'Jamil Ahmed',
@@ -19,12 +21,13 @@ function rl_about_person() {
 
 function rl_about_faqs() {
     return [
-        ['What is Reinforce Lab?', 'Reinforce Lab builds AI Growth Systems that connect your website, content, and organic search visibility into one growth engine. We design and implement data-driven SEO, AI search and content systems for growth-stage founders and B2B companies who want measurable revenue.'],
-        ['Who founded Reinforce Lab?', 'Reinforce Lab was founded by Jamil Ahmed, its Founder and CEO. Jamil is a pharmacist, an SEO and AI search consultant, and a Semrush Ambassador.'],
+        ['What is Reinforce Lab?', 'Reinforce Lab is an AI Growth Systems company. We connect a company\'s website, content and organic search visibility into one growth engine, with AI automation taking over the repetitive work, and measure it against enquiries and revenue.'],
+        ['When and where did Reinforce Lab start?', 'Reinforce Lab started in Tallinn, Estonia in 2020 as a full-service digital marketing agency. It expanded to Bangladesh in 2021, where Reinforce Lab Limited was founded on 1 April 2021.'],
+        ['Who founded Reinforce Lab?', 'Jamil Ahmed, who leads the company as Founder and CEO. Jamil is a pharmacist, an SEO and AI search consultant, and a Semrush Ambassador.'],
         ['Where is Reinforce Lab based?', 'Reinforce Lab has offices in Dhaka, Bangladesh and Katy, Texas, in the United States, and works with clients remotely around the world.'],
-        ['When did Reinforce Lab start?', 'Reinforce Lab was founded in Bangladesh on 1 April 2021 and now works with businesses internationally.'],
-        ['How is Reinforce Lab different from an SEO agency?', 'An agency usually sells separate tactics. We build one system: website, content, search and AI visibility, and the automation behind them, designed around your buyers and measured against revenue, not rankings alone.'],
-        ['How do I start working with Reinforce Lab?', 'Start with the free Search Authority Diagnostic. It reviews your search visibility, content and AI-search presence and shows what to fix first. From there we recommend the smallest system that solves the problem.'],
+        ['How is Reinforce Lab different from a digital marketing agency?', 'We started as one. An agency usually sells separate tactics; we now build one system: website, content, search and AI visibility, and the automation behind them, designed around your buyers and measured against revenue, not rankings alone.'],
+        ['Which industries does Reinforce Lab work with?', 'Eight: Pharmaceutical & Life Sciences, Healthcare, B2B SaaS, E-commerce, Manufacturing, Technology, Professional Services and Education.'],
+        ['How do I start working with Reinforce Lab?', 'Start with the free Search Authority Diagnostic. It reviews your search visibility, content and AI search presence and shows what to fix first. From there we recommend the smallest system that solves the problem.'],
     ];
 }
 
@@ -59,6 +62,27 @@ body.rl-about-page .fl-page-content,body.rl-about-page .fl-content,body.rl-about
 .rl-about .ind ul{margin:0;padding-left:18px;color:var(--ink-dim);font-size:14.5px}
 @media(max-width:900px){.rl-about .founder{grid-template-columns:1fr}.rl-about .steps9{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.rl-about .steps9{grid-template-columns:1fr}.rl-about .glance{padding:18px 16px}.rl-about .glance dl{column-gap:14px}}
+.rl-about .sub{font-size:clamp(20px,2.2vw,26px);margin:clamp(34px,4vw,48px) 0 18px}
+.rl-about .story{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,64px);align-items:start}
+.rl-about .story .txt p{color:var(--ink-dim);font-size:16.5px;margin:0 0 16px}
+.rl-about .story .txt p:first-child{color:var(--ink)}
+.rl-about .story .sub{margin-top:0}
+.rl-about .tl{list-style:none;margin:0;padding:0;border-left:1px solid var(--red-line)}
+.rl-about .tl li{position:relative;padding:0 0 22px 26px}
+.rl-about .tl li:last-child{padding-bottom:0}
+.rl-about .tl li::before{content:"";position:absolute;left:-5px;top:5px;width:9px;height:9px;background:var(--red);box-shadow:0 0 12px var(--red-glow)}
+.rl-about .tl .y{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--red-3);text-transform:uppercase}
+.rl-about .tl p{margin:4px 0 0;color:var(--ink);font-size:15.5px}
+.rl-about .c4{grid-template-columns:repeat(4,1fr)}
+.rl-about .note{color:var(--ink-dim);font-size:16px;max-width:80ch;margin:22px 0 0}
+.rl-about .links{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px}
+.rl-about .reg{margin-top:16px;border:1px solid var(--red-line);background:linear-gradient(180deg,rgba(153,0,0,.08),var(--glass));padding:clamp(20px,3vw,30px)}
+.rl-about .reg h3{margin:0 0 10px}
+.rl-about .reg p{margin:0;color:var(--ink-dim);font-size:15.5px;max-width:80ch}
+.rl-about a.cell{color:inherit;text-decoration:none;display:flex;flex-direction:column;gap:8px}
+@media(max-width:1000px){.rl-about .c4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.rl-about .story{grid-template-columns:1fr}}
+@media(max-width:600px){.rl-about .c4{grid-template-columns:1fr}}
 </style>
 <?php }
 
@@ -74,7 +98,14 @@ add_filter('wpseo_schema_graph', function ($graph) {
         if (!is_array($n) || empty($n['@type'])) continue;
         $t = (array) $n['@type'];
         if (in_array('WebPage', $t, true) && isset($n['@id']) && strpos($n['@id'], $url) === 0) { $n['@type'] = ['WebPage', 'AboutPage']; $n['about'] = ['@id' => $org]; $n['mainEntity'] = ['@id' => $org]; }
-        if (in_array('Organization', $t, true)) { $n['founder'] = ['@id' => $pid]; $n['foundingDate'] = '2021-04-01'; $n['foundingLocation'] = ['@type' => 'Place', 'name' => 'Bangladesh']; }
+        if (in_array('Organization', $t, true)) {
+            $n['founder'] = ['@id' => $pid];
+            $n['foundingDate'] = '2021-04-01';
+            $n['foundingLocation'] = ['@type' => 'Place', 'name' => 'Bangladesh'];
+            $n['areaServed'] = 'Worldwide';
+            $n['knowsAbout'] = ['Search engine optimization', 'AI search optimization', 'Generative engine optimization', 'Content systems', 'AI workflow automation', 'Marketing automation', 'Lead generation', 'Executive AI consulting', 'WordPress website design'];
+            if (function_exists('rl_awards_schema_list')) $n['award'] = rl_awards_schema_list();
+        }
     }
     unset($n);
     $graph[] = [
@@ -96,6 +127,26 @@ function rl_render_about() {
     $ex = function ($path) { $l = function_exists('rl_url_by_path') ? rl_url_by_path($path, '') : ''; return $l ? esc_url($l) : ''; };
     $diag = $u('search-authority-diagnostic');
     $f = rl_about_person();
+    $timeline = [
+        ['2020', 'Reinforce Lab starts in Tallinn, Estonia, as a full-service digital marketing agency.'],
+        ['2021', 'Expands to Bangladesh: Reinforce Lab Limited is founded on 1 April 2021.'],
+        ['2024', 'Winner in Dhaka, HackerNoon Startups of The Year 2024, and 11th of about 8,000 startups in Marketing.'],
+        ['2025', 'Named in DesignRush\'s Best Digital Marketing Agencies of June 2025.'],
+        ['2026', 'Ranked 8th of 442 SEO agencies in Bangladesh on GoodFirms (October).'],
+        ['Today', 'Builds AI Growth Systems: search, content and automation as one system, with Search Authority OS as the flagship.'],
+    ];
+    $groups = [
+        ['01', 'Search', 'Rankings and clicks in Google and Bing, built on technical health, strategy and authority.'],
+        ['02', 'AI Search and Content', 'Being the source AI engines find, trust and cite, with content produced as a system.'],
+        ['03', 'Automation and Growth', 'Less manual work, and search demand turned into qualified pipeline.'],
+        ['04', 'Advisory and Web', 'Leadership direction on AI, and websites built to rank and convert.'],
+    ];
+    $engage = [
+        ['Diagnostic', 'The free Search Authority Diagnostic sets your real baseline and shows what to fix first.'],
+        ['Scope and proposal', 'A plan and price fitted to your goals. No template retainer.'],
+        ['Build and onboard', 'The system is set up for your market, your buyers and your evidence sources.'],
+        ['Run and improve', 'Work ships, performance is monitored, and the system is adjusted as results come in.'],
+    ];
     $method = [
         ['Discover', 'Audit what you have: search data, indexation, content and technical health.'],
         ['Preserve', 'Protect every page that already earns traffic, links or trust before anything changes.'],
@@ -107,14 +158,22 @@ function rl_render_about() {
         ['Launch', 'Go live with redirects mapped and tested, URL by URL.'],
         ['Monitor', 'Track visibility, leads and revenue, and fix what the data shows.'],
     ];
-    $svc = [
-        ['services/best-search-engine-optimization-services', 'Search Engine Optimization', 'The core search programme: technical, content and authority.'],
-        ['services/ai-search-optimization', 'AI Search Optimization', 'Accurate, consistent visibility in AI answers and AI Overviews.'],
-        ['services/seo-content-systems', 'SEO Content Systems', 'Research-to-publish content workflows with review built in.'],
-        ['services/ai-workflow-automation', 'AI Workflow Automation', 'Repetitive operations automated, with people in the loop.'],
-        ['services/lead-generation-systems', 'Lead Generation Systems', 'Search traffic turned into qualified enquiries and pipeline.'],
-        ['services/executive-ai-consulting', 'Executive AI Consulting', 'Where AI helps your business, and where it doesn’t.'],
+    $principles = [
+        ['Evidence before claims', 'We cite our sources and never invent metrics, rankings or results, for our clients or for ourselves.'],
+        ['Preserve what already works', 'Pages that earn traffic, links or trust are protected before anything is redesigned, moved or merged.'],
+        ['One system, not separate tactics', 'Website, content, search and automation are planned together so each one strengthens the others.'],
+        ['People review the AI', 'AI speeds up the work; a person checks what it produces before anything is published or delivered.'],
+        ['Measured on business results', 'We report enquiries, pipeline and revenue next to rankings and traffic.'],
+        ['You own the work', 'Everything we produce for you is yours.'],
     ];
+    $recognition = [
+        ['HackerNoon', 'Startups of The Year 2024', 'Winner, Dhaka.', 'https://hackernoon.com/startups-of-the-year-2024-winners-asia'],
+        ['DesignRush', 'Best Digital Marketing Agencies', 'June 2025.', 'https://www.newsfilecorp.com/release/255349/DesignRush-Names-the-Best-Digital-Marketing-Agencies-of-June-2025'],
+        ['GoodFirms', 'Top SEO Agencies in Bangladesh', '8th of 442 (October 2026).', 'https://www.goodfirms.co/seo-agencies/bangladesh'],
+        ['Semrush', 'Agency Partner', 'Listed in the Semrush Agency Partners directory.', 'https://agencies.semrush.com/reinforce-lab-ltd'],
+        ['Google', 'Reviews', '4.6 from 8 reviews.', 'https://www.google.com/maps/search/?api=1&query=Reinforce+Lab+Limited+Concord+Tower+Dhaka'],
+    ];
+    $inds = function_exists('rl_ind_data') ? rl_ind_data() : [];
     ob_start(); ?>
 <div class="rl-page rl-about">
 
@@ -127,40 +186,128 @@ function rl_render_about() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;About Reinforce Lab&nbsp;<b>]</b></span>
-      <h1 class="h1">About Reinforce Lab.<br>We build AI<br><span class="r">growth systems.</span></h1>
-      <p class="lede"><strong>Reinforce Lab builds AI Growth Systems</strong> that connect your website, content, and organic search visibility into one growth engine. Founded by pharmacist and Semrush Ambassador <strong>Jamil Ahmed</strong>, we work with growth-stage founders and B2B companies from offices in Dhaka, Bangladesh and Katy, Texas.</p>
+      <h1 class="h1">We build the system that gets a company <span class="r">found, trusted and chosen.</span></h1>
+      <p class="lede"><strong>Reinforce Lab</strong> started in Tallinn, Estonia in 2020 as a full-service digital marketing agency and expanded to Bangladesh in 2021. Today we build <strong>AI Growth Systems</strong>: a company's website, content and search visibility connected into one engine, with AI automation taking over the repetitive work so the business can grow without adding headcount for every task.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
-        <a class="btn g" href="#founder">Meet the founder</a>
+        <a class="btn g" href="#story">Our story</a>
       </div>
     </div>
     <aside class="glance" aria-label="Reinforce Lab at a glance">
       <p class="cap">At a glance</p>
       <dl>
-        <dt>What</dt><dd>AI Growth Systems: SEO, AI search, content and automation as one system</dd>
-        <dt>Founder</dt><dd><a href="#founder"><?php echo esc_html($f['name']); ?></a>, <?php echo esc_html($f['job']); ?></dd>
-        <dt>Started</dt><dd>1 April 2021, Bangladesh</dd>
+        <dt>Started</dt><dd>2020, Tallinn, Estonia</dd>
+        <dt>Reinforce Lab Limited</dt><dd>Founded 1 April 2021, Bangladesh</dd>
+        <dt>Founder and CEO</dt><dd><a href="#founder"><?php echo esc_html($f['name']); ?></a></dd>
+        <dt>What we build</dt><dd>AI Growth Systems: search, content and automation as one system</dd>
         <dt>Offices</dt><dd>Dhaka, Bangladesh · Katy, Texas, USA</dd>
         <dt>Clients</dt><dd>Worldwide, working remotely</dd>
+        <dt>Industries</dt><dd>8, from pharmaceutical to education</dd>
+        <dt>Recognition</dt><dd>HackerNoon Startups of The Year 2024, winner in Dhaka (<a href="<?php echo $u('awards'); ?>">Awards</a>)</dd>
       </dl>
     </aside>
   </div>
 </section>
 
-<section class="band alt" id="what">
+<section class="band alt" id="story">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;What we do&nbsp;<b>]</b></span><h2>What is an AI Growth System?</h2><p class="lede">One connected system instead of separate tactics, built to automate operations, improve search visibility, and increase revenue.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Our story&nbsp;<b>]</b></span><h2>How did Reinforce Lab start?</h2></div>
+    <div class="story">
+      <div class="txt">
+        <p>Reinforce Lab started in 2020 in Tallinn, Estonia, as a full-service digital marketing agency. In 2021 we expanded to Bangladesh, where Reinforce Lab Limited was founded on 1 April 2021, and built our team in Dhaka.</p>
+        <p>Years of running search, content and marketing for clients showed us the same problem again and again: the work was split across separate tools, separate agencies and a lot of manual effort, and nobody connected the pieces.</p>
+        <p>So we changed what we sell. Today Reinforce Lab helps businesses scale with automation: we connect the website, content and search visibility into one system and let AI take over the repetitive work, with a person checking what matters.</p>
+      </div>
+      <div>
+        <h3 class="sub">Milestones</h3>
+        <ol class="tl">
+          <?php foreach ($timeline as $t) { ?>
+          <li><span class="y"><?php echo esc_html($t[0]); ?></span><p><?php echo esc_html($t[1]); ?></p></li>
+          <?php } ?>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="what">
+  <div class="wrap">
+    <div class="head"><span class="ey"><b>[</b>&nbsp;What we build&nbsp;<b>]</b></span><h2>What is an AI Growth System?</h2><p class="lede">One connected system instead of separate tactics, built to do three jobs.</p></div>
     <div class="cols c3">
       <div class="cell"><span class="n">01</span><h3>Automate operations</h3><p>AI workflows take over repetitive research, content and reporting work, with a person reviewing what matters.</p></div>
-      <div class="cell"><span class="n">02</span><h3>Improve search visibility</h3><p>Technical SEO, content and AI-search work that help the right buyers find you, in Google and in AI answers.</p></div>
-      <div class="cell"><span class="n">03</span><h3>Increase revenue</h3><p>Visibility connected to enquiries and pipeline, so success is measured in customers, not traffic alone.</p></div>
+      <div class="cell"><span class="n">02</span><h3>Improve search visibility</h3><p>Technical SEO, content and AI search work help the right buyers find you, in Google and in AI answers.</p></div>
+      <div class="cell"><span class="n">03</span><h3>Increase revenue</h3><p>Visibility is connected to enquiries and pipeline, so success is counted in customers.</p></div>
+    </div>
+    <h3 class="sub">Four groups of services, one strategy</h3>
+    <div class="cols c4">
+      <?php foreach ($groups as $g) { ?>
+      <div class="cell"><span class="n"><?php echo esc_html($g[0]); ?></span><h3><?php echo esc_html($g[1]); ?></h3><p><?php echo esc_html($g[2]); ?></p></div>
+      <?php } ?>
+    </div>
+    <p class="note">Our flagship, <a href="<?php echo $u('search-authority-os'); ?>">Search Authority OS</a>, runs search authority as one loop: research, verify, write, audit, monitor.</p>
+    <div class="links">
+      <a class="btn g" href="<?php echo $u('services'); ?>">See all services</a>
+      <a class="btn g" href="<?php echo $u('search-authority-os'); ?>">Search Authority OS</a>
+      <a class="btn g" href="<?php echo $u('packages'); ?>">Packages and pricing</a>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="who">
+  <div class="wrap">
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Who we work with&nbsp;<b>]</b></span><h2>Who is Reinforce Lab for?</h2><p class="lede">Growth-stage founders and B2B companies that need search to produce customers, not only traffic, and want less manual work behind it. Most fit one of three situations.</p></div>
+    <div class="cols c3">
+      <div class="cell"><span class="n">01</span><h3>Search has stopped producing leads</h3><p>Traffic is falling, or the leads have dried up, and nobody can say why.</p></div>
+      <div class="cell"><span class="n">02</span><h3>Missing from AI answers</h3><p>They rank on Google but not in ChatGPT, Perplexity or AI Overviews, or AI tools describe them wrongly.</p></div>
+      <div class="cell"><span class="n">03</span><h3>Too much repetitive work</h3><p>Their team spends hours on marketing and reporting work that a system could do.</p></div>
+    </div>
+    <?php if ($inds) { ?>
+    <h3 class="sub">Eight industries</h3>
+    <ul class="chips">
+      <?php foreach ($inds as $slug => $d) { $l = $ex('industries/' . $slug); ?>
+      <li><?php echo $l ? '<a href="' . $l . '">' . esc_html($d['name']) . '</a>' : '<span>' . esc_html($d['name']) . '</span>'; ?></li>
+      <?php } ?>
+    </ul>
+    <?php } ?>
+    <div class="reg">
+      <h3>Why regulated fields come naturally to us</h3>
+      <p>Our founder is a pharmacist. In pharmaceuticals and healthcare a wrong claim can do harm, so evidence checking is built into how we write for every client: claims carry a source, conflicting sources are investigated, and anything unverified goes to a person before it is published.</p>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="head"><span class="ey"><b>[</b>&nbsp;How we work&nbsp;<b>]</b></span><h2>How does an engagement with Reinforce Lab work?</h2><p class="lede">It starts with a diagnostic, not a proposal.</p></div>
+    <div class="cols c4">
+      <?php foreach ($engage as $i => $e) { ?>
+      <div class="cell"><span class="n"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo esc_html($e[0]); ?></h3><p><?php echo esc_html($e[1]); ?></p></div>
+      <?php } ?>
+    </div>
+    <p class="note">There is no cart and no self-checkout: work at this level is scoped on a call after the diagnostic.</p>
+    <h3 class="sub">The nine-stage method behind every project</h3>
+    <ol class="steps9">
+      <?php foreach ($method as $i => $m) { ?>
+      <li><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo esc_html($m[0]); ?></h3><p><?php echo esc_html($m[1]); ?></p></li>
+      <?php } ?>
+    </ol>
+  </div>
+</section>
+
+<section class="band alt" id="principles">
+  <div class="wrap">
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Principles&nbsp;<b>]</b></span><h2>What do we stand for?</h2><p class="lede">Six rules we work by.</p></div>
+    <div class="cols c3">
+      <?php foreach ($principles as $i => $p) { ?>
+      <div class="cell"><span class="n"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo esc_html($p[0]); ?></h3><p><?php echo esc_html($p[1]); ?></p></div>
+      <?php } ?>
     </div>
   </div>
 </section>
 
 <section id="founder">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;The founder&nbsp;<b>]</b></span><h2>Who founded Reinforce Lab?</h2></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Leadership&nbsp;<b>]</b></span><h2>Who leads Reinforce Lab?</h2></div>
     <div class="founder">
       <div class="card">
         <p class="nm"><?php echo esc_html($f['name']); ?></p>
@@ -173,64 +320,28 @@ function rl_render_about() {
         <a class="btn g" href="<?php echo esc_url($f['linkedin']); ?>" rel="noopener" target="_blank">Jamil on LinkedIn <span class="ar">&rarr;</span></a>
       </div>
       <div class="txt">
-        <p>Reinforce Lab was founded by <strong>Jamil Ahmed</strong>, who leads the company as Founder and CEO. He is a pharmacist, an SEO and AI search consultant, and a Semrush Ambassador.</p>
-        <p>Jamil helps businesses design and implement AI Growth Systems using AI automation, AI Search Optimization, SEO, and intelligent workflows.</p>
-        <blockquote>“I build AI Growth Systems for businesses with AI Automation, AI Search &amp; SEO.”<br><small style="color:var(--ink-faint);font-size:13px">Jamil Ahmed, LinkedIn</small></blockquote>
+        <p><strong>Jamil Ahmed</strong> founded Reinforce Lab and leads it as CEO. He is an SEO and AI search consultant, a pharmacist and a Semrush Ambassador.</p>
+        <p>Jamil took the company from a full-service agency in Tallinn to an AI Growth Systems company: the website, content and search visibility built as one system, connected with AI automation, and measured against revenue.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="band alt" id="how">
+<section class="band alt" id="recognition">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;How we work&nbsp;<b>]</b></span><h2>How does Reinforce Lab work?</h2><p class="lede">Every engagement follows the same nine-stage method, from first audit to ongoing monitoring.</p></div>
-    <ol class="steps9">
-      <?php foreach ($method as $i => $m) { ?>
-      <li><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo esc_html($m[0]); ?></h3><p><?php echo esc_html($m[1]); ?></p></li>
-      <?php } ?>
-    </ol>
-  </div>
-</section>
-
-<section id="principles">
-  <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Principles&nbsp;<b>]</b></span><h2>What do we stand for?</h2><p class="lede">Four rules we work by.</p></div>
-    <div class="cols c2">
-      <div class="cell"><span class="n">01</span><h3>Evidence before claims</h3><p>We cite our sources and never invent metrics, rankings or results, for our clients or for ourselves.</p></div>
-      <div class="cell"><span class="n">02</span><h3>Preserve what already works</h3><p>Pages that earn traffic, links or trust are protected before anything is redesigned, moved or merged.</p></div>
-      <div class="cell"><span class="n">03</span><h3>One system, not separate tactics</h3><p>Website, content, search and automation are planned together so each one strengthens the others.</p></div>
-      <div class="cell"><span class="n">04</span><h3>People review the AI</h3><p>AI speeds up the work; a person checks what it produces before anything is published or delivered.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="band alt" id="services">
-  <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>]</b></span><h2>Which services does Reinforce Lab offer?</h2><p class="lede">Six places most clients start. <a href="<?php echo $u('services'); ?>">See all services</a> or the <a href="<?php echo $u('search-authority-os'); ?>">Search Authority OS</a>.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Recognition&nbsp;<b>]</b></span><h2>What has Reinforce Lab been recognised for?</h2><p class="lede">Every item links to the page that confirms it.</p></div>
     <div class="cols c3">
-      <?php foreach ($svc as $s) { $l = $ex($s[0]); ?>
-      <div class="cell"><span class="n">Service</span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($s[1]) . '</a>' : esc_html($s[1]); ?></h3><p><?php echo esc_html($s[2]); ?></p><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr($s[1]) . '">Explore &rarr;</a>'; ?></div>
+      <?php foreach ($recognition as $r) { ?>
+      <a class="cell" href="<?php echo esc_url($r[3]); ?>" rel="noopener" target="_blank"><span class="n"><?php echo esc_html($r[0]); ?></span><h3><?php echo esc_html($r[1]); ?></h3><p><?php echo esc_html($r[2]); ?></p><span class="more">See the source &rarr;</span></a>
       <?php } ?>
+      <a class="cell" href="<?php echo $u('awards'); ?>"><span class="n">All of it</span><h3>Awards and recognition</h3><p>Every award, ranking, partner listing and mention, with dates and sources.</p><span class="more">See all awards &rarr;</span></a>
     </div>
   </div>
 </section>
 
-<?php if (function_exists('rl_ind_data')) { ?>
-<section id="industries">
+<section id="offices">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Industries&nbsp;<b>]</b></span><h2>Which industries do we work with?</h2><p class="lede">Eight sectors, each with its own buyers, rules and trust signals.</p></div>
-    <ul class="inds8">
-      <?php $i = 0; foreach (rl_ind_data() as $slug => $d) { $l = $ex('industries/' . $slug); ?>
-      <li class="ind"><span class="k"><?php echo sprintf('%02d', ++$i); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d['name']) . '</a>' : esc_html($d['name']); ?></h3><ul><?php foreach (array_slice($d['chal'], 0, 2) as $c) echo '<li>' . esc_html($c[0]) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('AI Growth Systems for ' . $d['name']) . '">Explore &rarr;</a>'; ?></li>
-      <?php } ?>
-    </ul>
-  </div>
-</section>
-<?php } ?>
-
-<section class="band alt" id="offices">
-  <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Offices&nbsp;<b>]</b></span><h2>Where is Reinforce Lab based?</h2><p class="lede">Two offices, clients worldwide.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Offices&nbsp;<b>]</b></span><h2>Where is Reinforce Lab based?</h2><p class="lede">Two offices, clients worldwide. Email <a href="mailto:hello@reinforcelab.com">hello@reinforcelab.com</a>.</p></div>
     <div class="cols c2">
       <div class="cell office"><span class="n">Bangladesh</span><h3>Dhaka</h3><p>Suite #1402, Level-13, Concord Tower,<br>113 Kazi Nazrul Islam Avenue, Dhaka 1000, Bangladesh.<br><a href="tel:+8801329657096">+880 1329-657096</a></p></div>
       <div class="cell office"><span class="n">United States</span><h3>Katy, Texas</h3><p>2511 Pines Pointe Dr, Katy, TX 77493, USA.<br><a href="tel:+18325484553">+1 832 548 4553</a></p></div>
@@ -243,7 +354,7 @@ function rl_render_about() {
     <div class="honest">
       <span class="ey"><b>[</b>&nbsp;Straight answer&nbsp;<b>]</b></span>
       <h2>Why are there no client logos or results on this page?</h2>
-      <p>Because we only publish what we can show. Case studies, client names and numbers go up with a client’s permission and the data to back them, not before. Until then, the fastest way to judge our work is the free diagnostic on your own site.</p>
+      <p>Because we only publish what we can show. Client names, case studies and numbers go up with the client’s permission and the data to back them, not before. Our awards are listed on <a href="<?php echo $u('awards'); ?>">their own page</a> with a link to each source. The fastest way to judge our work is the free diagnostic on your own site.</p>
     </div>
   </div>
 </section>
@@ -262,7 +373,7 @@ function rl_render_about() {
     <div class="final">
       <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
       <h2>See where your growth system stands.</h2>
-      <p class="lede">The free Search Authority Diagnostic reviews your visibility, content and AI-search presence, and shows what to fix first.</p>
+      <p class="lede">The free Search Authority Diagnostic reviews your visibility, content and AI search presence, and shows what to fix first.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('services'); ?>">All services</a>

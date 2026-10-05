@@ -78,12 +78,17 @@ function rl_awards_faqs() {
 add_filter('body_class', function ($c) { if (rl_is_awards()) $c[] = 'rl-awards-page'; return $c; });
 add_filter('rl_kit_active', function ($on) { return $on || rl_is_awards(); });
 
+/* Awards for Organization `award` in schema; also used by About (D-110). */
+function rl_awards_schema_list() {
+    return ['Startups of The Year 2024, winner in Dhaka, Bangladesh (HackerNoon)', 'Best Digital Marketing Agencies of June 2025 (DesignRush)', 'Startups of The Year 2024, 11th in Marketing worldwide (HackerNoon)', 'Startups of The Year 2024, honourable mentions in Creative Agency and Media Production (HackerNoon)'];
+}
+
 /* ---------- schema ---------- */
 add_filter('wpseo_schema_graph', function ($graph) {
     if (!is_array($graph) || !rl_is_awards()) return $graph;
     $url = get_permalink(get_queried_object_id());
     $org = home_url('/#organization');
-    $award = ['Startups of The Year 2024, winner in Dhaka, Bangladesh (HackerNoon)', 'Best Digital Marketing Agencies of June 2025 (DesignRush)', 'Startups of The Year 2024, 11th in Marketing worldwide (HackerNoon)', 'Startups of The Year 2024, honourable mentions in Creative Agency and Media Production (HackerNoon)'];
+    $award = rl_awards_schema_list();
     foreach ($graph as &$n) {
         if (!is_array($n) || empty($n['@type'])) continue;
         $t = (array) $n['@type'];
