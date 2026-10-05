@@ -36,6 +36,8 @@ function rl_awards_data() {
             ['GoodFirms', 'https://www.goodfirms.co/company/reinforce-lab-limited'],
             ['DesignRush', 'https://www.designrush.com/agency/profile/reinforce-lab-ltd'],
             ['HackerNoon', 'https://hackernoon.com/company/reinforcelablimited'],
+            ['Crunchbase', 'https://www.crunchbase.com/organization/reinforce-lab'],
+            ['LinkedIn', 'https://www.linkedin.com/company/reinforcelabltd/'],
         ],
         'press' => [
             ['2026-07-13', 'Jul 2026', 'Best SEO Service Company in Bangladesh: 25 Agencies Reviewed', 'Tech Cloud Ltd, a Dhaka agency, lists us 25th, noting "transparent communication" and our 4.6 Google rating.', 'Mention by another agency', 'https://techcloudltd.com/blog/best-seo-service-company-in-bangladesh/'],

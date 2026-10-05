@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-118 | Titles and meta on 26 pages within limits; all 8 agent titles on one pattern; LinkedIn, Crunchbase, Facebook, Instagram added; footer social icons live | 5 Oct | DONE (Jamil: "approve all, switch all 8 agents to the same pattern" + 4 profile URLs) | this file |
 | D-117 | F-025 fixes 1 to 3: site name, Organization profiles and contact point, our own llms.txt | 5 Oct | DONE (Jamil: "yes, fix 1 to 3 and use the directory profiles") | this file |
 | F-025 | SEO, AEO, GEO and LLM readiness of all 45 pages: page structure ready; site-wide entity settings and content depth are the gaps | 5 Oct | FINDING; fix list awaits Jamil | [research](research/seo-aeo-geo-readiness-2026-10-05.md) |
 | D-116 | Phone versions of every other hero diagram (25 pages), shared `rl_ph()` component | 5 Oct | DONE (Jamil: "apply all", then "Phone versions on all heroes") | this file |
@@ -177,6 +178,18 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-118 · Titles and meta fixed; social profiles live
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "approve all, switch all 8 agents to the same pattern", with the LinkedIn, Instagram, Crunchbase and Facebook URLs)
+
+- **Titles and meta (F-025 fix 5):** the approved draft (`claude/drafts/titles-meta-draft-2026-10-05.md`) applied to 26 pages as Yoast title and description: 8 titles shortened, 20 descriptions brought to 140 to 160 characters, and all 8 agent titles now "<Agent> AI Agent | Reinforce Lab" (incl. the 4 that were within 60: SEO Intelligence, Content Research, Social Sentiment, Content QA). Every old and new value saved in `claude/data/backups/titles-meta-before-after-2026-10-05.json`. Reference copies in the agent and industry files updated to match. Post dates not touched (F-003).
+- **Re-audit:** 45 of 45 titles 60 or fewer characters, 45 of 45 descriptions 140 to 160, no duplicates.
+- **Profiles:** Organization `sameAs` now 9: LinkedIn (company), Crunchbase, Facebook, Instagram (from Jamil) plus the 5 directory profiles. Awards page "Find us on" adds Crunchbase and LinkedIn.
+- **Footer social icons:** Facebook, Instagram and LinkedIn now link to the real accounts (new tab, labelled "Reinforce Lab on ..."). X, Tumblr and Pinterest icons removed: no accounts given, and a `#` link is a dead end.
+- **Still `#` (20 links, F-025 fix 4):** footer Portfolio, Clients, Careers, Get a Free Quote, Sitemap, Privacy Policy, Terms & Conditions, FTC Disclosure, Certificate of Incorporation, and the mega-menu group headings.
+- **Verified:** no PHP notices; phone width 390; `copy-check.py` 0 issues; parity clean.
 
 ---
 

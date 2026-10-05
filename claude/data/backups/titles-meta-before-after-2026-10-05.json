@@ -1,0 +1,314 @@
+[
+ {
+  "id": 75,
+  "path": "industries/pharmaceutical",
+  "old": {
+   "title": "Pharmaceutical & Life Sciences SEO and AI Search | Reinforce Lab",
+   "meta": "Search, content and AI visibility for pharmaceutical and life sciences companies, built around medical-legal review, evidence and the rules for promoting medicines."
+  },
+  "new": {
+   "title": "Pharma & Life Sciences SEO and AI Search | Reinforce Lab",
+   "meta": "Search, content and AI visibility for pharma and life sciences companies, built around medical-legal review, evidence and the rules on promoting medicines."
+  }
+ },
+ {
+  "id": 79,
+  "path": "services/agents/evidence-verification",
+  "old": {
+   "title": "Evidence Verification Agent | Search Authority OS | Reinforce Lab",
+   "meta": "The Evidence Verification Agent ties every important claim to a source, scores confidence and flags weak evidence for human review."
+  },
+  "new": {
+   "title": "Evidence Verification AI Agent | Reinforce Lab",
+   "meta": "The Evidence Verification Agent ties every important claim in your content to a source, scores confidence and flags weak evidence for a person to review."
+  }
+ },
+ {
+  "id": 80,
+  "path": "services/agents/aeo-geo-optimization",
+  "old": {
+   "title": "AEO / GEO Optimization Agent | Search Authority OS | Reinforce Lab",
+   "meta": "The AEO / GEO Optimization Agent tracks where you appear in AI answers and makes your pages and brand facts easier for AI to cite correctly."
+  },
+  "new": {
+   "title": "AEO / GEO Optimization AI Agent | Reinforce Lab",
+   "meta": "The AEO / GEO Optimization Agent tracks where you appear in AI answers and makes your pages and brand facts easier for AI to cite correctly."
+  }
+ },
+ {
+  "id": 82,
+  "path": "services/agents/competitor-intelligence",
+  "old": {
+   "title": "Competitor Intelligence Agent | Search Authority OS | Reinforce Lab",
+   "meta": "The Competitor Intelligence Agent maps where rivals win in search and AI answers, finds the gaps worth owning and watches for their next move."
+  },
+  "new": {
+   "title": "Competitor Intelligence AI Agent | Reinforce Lab",
+   "meta": "The Competitor Intelligence Agent maps where rivals win in search and AI answers, finds the gaps worth owning and watches for their next move."
+  }
+ },
+ {
+  "id": 84,
+  "path": "services/agents/search-performance",
+  "old": {
+   "title": "Search Performance Agent | Search Authority OS | Reinforce Lab",
+   "meta": "The Search Performance Agent detects slipping pages, diagnoses the cause, recommends the fix and tracks recovery across Search Console, GA4 and AI search."
+  },
+  "new": {
+   "title": "Search Performance AI Agent | Reinforce Lab",
+   "meta": "The Search Performance Agent detects slipping pages, diagnoses the cause, recommends the fix and tracks recovery across Search Console, GA4 and AI search."
+  }
+ },
+ {
+  "id": 81,
+  "path": "services/agents/social-sentiment",
+  "old": {
+   "title": "Social Sentiment Agent | Search Authority OS | Reinforce Lab",
+   "meta": "The Social Sentiment Agent turns real customer questions, objections and complaints from public conversations into topics, angles and FAQs."
+  },
+  "new": {
+   "title": "Social Sentiment AI Agent | Reinforce Lab",
+   "meta": "The Social Sentiment Agent turns real customer questions, objections and complaints from forums, reviews and social posts into topics, angles and FAQs."
+  }
+ },
+ {
+  "id": 85,
+  "path": "services/seo-content-systems",
+  "old": {
+   "title": "SEO Content Writing Services & Content Systems | Reinforce Lab",
+   "meta": "SEO content writing run as a system: research, topic maps, expert-led briefs, human-edited pages, internal links and refreshes. Content that ranks, gets cited and converts."
+  },
+  "new": {
+   "title": "SEO Content Writing Services & Systems | Reinforce Lab",
+   "meta": "SEO content writing run as a system: research, topic maps, expert-led briefs, human-edited pages, internal links and refreshes that rank and get cited."
+  }
+ },
+ {
+  "id": 86,
+  "path": "services/marketing-automation",
+  "old": {
+   "title": "Marketing Automation & Email Marketing Services | Reinforce Lab",
+   "meta": "Marketing automation that follows up every lead: nurture emails, lead scoring, CRM workflows and sales handoff, built on your platform, compliant with Gmail, CAN-SPAM and PECR rules."
+  },
+  "new": {
+   "title": "Marketing Automation & Email Services | Reinforce Lab",
+   "meta": "Marketing automation that follows up every lead: nurture emails, lead scoring, CRM workflows and sales handoff, within Gmail, CAN-SPAM and PECR rules."
+  }
+ },
+ {
+  "id": 102,
+  "path": "services/lead-generation-systems",
+  "old": {
+   "title": "B2B Lead Generation & PPC Management Services | Reinforce Lab",
+   "meta": "Lead generation systems that turn demand into qualified pipeline: channels, PPC, landing pages, qualification, routing and closed-loop CRM data that tells your ads which leads became revenue."
+  },
+  "new": {
+   "title": "B2B Lead Generation & PPC Services | Reinforce Lab",
+   "meta": "Lead generation systems that turn demand into qualified pipeline: PPC, landing pages, lead qualification and CRM data that shows which leads became revenue."
+  }
+ },
+ {
+  "id": 73,
+  "path": "services/generative-engine-optimization",
+  "old": {
+   "title": "GEO Services: Generative Engine Optimization | Reinforce Lab",
+   "meta": "Generative Engine Optimization from Reinforce Lab: pages structured, sourced and written so ChatGPT, Perplexity, Gemini and AI Overviews can quote and cite them."
+  },
+  "new": {
+   "title": "GEO Services: Generative Engine Optimization | Reinforce Lab",
+   "meta": "Generative Engine Optimization (GEO) from Reinforce Lab: pages structured, sourced and written so ChatGPT, Perplexity and AI Overviews quote and cite you."
+  }
+ },
+ {
+  "id": 74,
+  "path": "services/seo-ai-search-audit",
+  "old": {
+   "title": "SEO & AI Search Audit Services | Reinforce Lab",
+   "meta": "A one-time, human-led audit of your technical SEO, content, authority, competitors and AI search visibility, with evidence, a prioritised fix register and a roadmap."
+  },
+  "new": {
+   "title": "SEO & AI Search Audit Services | Reinforce Lab",
+   "meta": "A one-time, human-led audit of your technical SEO, content, authority, competitors and AI search visibility, with a prioritised fix register and roadmap."
+  }
+ },
+ {
+  "id": 90,
+  "path": "industries/healthcare",
+  "old": {
+   "title": "Healthcare SEO and AI Search | Reinforce Lab",
+   "meta": "Healthcare SEO and AI search for clinics and providers: local visibility, clinician-reviewed content, accurate AI answers and accessible, privacy-aware websites."
+  },
+  "new": {
+   "title": "Healthcare SEO and AI Search | Reinforce Lab",
+   "meta": "Healthcare SEO and AI search for clinics and providers: local visibility, clinician-reviewed content, accurate AI answers and privacy-aware websites."
+  }
+ },
+ {
+  "id": 97,
+  "path": "services/ai-workflow-automation",
+  "old": {
+   "title": "AI Workflow Automation Services | Reinforce Lab",
+   "meta": "AI workflow automation for triage, document extraction, drafting and system updates, built on your tools with human review, logging and testing, so AI does the busywork and people keep control."
+  },
+  "new": {
+   "title": "AI Workflow Automation Services | Reinforce Lab",
+   "meta": "AI workflow automation for triage, document extraction, drafting and system updates, with human review and logging: AI does the busywork, people keep control."
+  }
+ },
+ {
+  "id": 98,
+  "path": "services/enterprise-seo-strategy",
+  "old": {
+   "title": "Enterprise SEO Strategy Services | Reinforce Lab",
+   "meta": "Enterprise SEO strategy for large, complex sites: one SEO standard across teams, template fixes shipped through your sprints, safe migrations and authority built within Google's link policies."
+  },
+  "new": {
+   "title": "Enterprise SEO Strategy Services | Reinforce Lab",
+   "meta": "Enterprise SEO strategy for large sites: one SEO standard across teams, template fixes shipped in your sprints, safe migrations and authority you earn."
+  }
+ },
+ {
+  "id": 99,
+  "path": "services/technical-seo-services",
+  "old": {
+   "title": "Technical SEO Services: Crawl, Index & Speed | Reinforce Lab",
+   "meta": "Technical SEO from Reinforce Lab: crawlability, indexation, Core Web Vitals, structured data and AI-crawler access, with root causes fixed, verified and safe for what already ranks."
+  },
+  "new": {
+   "title": "Technical SEO Services: Crawl, Index & Speed | Reinforce Lab",
+   "meta": "Technical SEO: crawlability, indexation, Core Web Vitals, structured data and AI-crawler access, with root causes fixed and verified, safe for what ranks."
+  }
+ },
+ {
+  "id": 101,
+  "path": "services/llm-optimization",
+  "old": {
+   "title": "LLM Optimization Services | Reinforce Lab",
+   "meta": "LLM Optimization from Reinforce Lab: make ChatGPT, Claude, Gemini and Perplexity describe your brand correctly, with consistent facts, the right AI-crawler policy and tested answers."
+  },
+  "new": {
+   "title": "LLM Optimization Services | Reinforce Lab",
+   "meta": "LLM Optimization: make ChatGPT, Claude, Gemini and Perplexity describe your brand correctly, with consistent facts, the right crawler policy and tested answers."
+  }
+ },
+ {
+  "id": 103,
+  "path": "services/executive-ai-consulting",
+  "old": {
+   "title": "Executive AI Consulting & AI Strategy | Reinforce Lab",
+   "meta": "Executive AI consulting for leadership teams: prioritised AI use cases, business cases, governance, EU AI Act mapping and AI literacy, with a roadmap supported through the first pilots."
+  },
+  "new": {
+   "title": "Executive AI Consulting & AI Strategy | Reinforce Lab",
+   "meta": "Executive AI consulting for leadership teams: prioritised use cases, business cases, governance, EU AI Act mapping and a roadmap through the first pilots."
+  }
+ },
+ {
+  "id": 104,
+  "path": "services/local-seo",
+  "old": {
+   "title": "Local Search Engine Optimization Services | Reinforce Lab",
+   "meta": "Local SEO from Reinforce Lab: Google Business Profile, consistent citations, compliant reviews and location pages, built on Google's own guidelines for local and AI search."
+  },
+  "new": {
+   "title": "Local Search Engine Optimization Services | Reinforce Lab",
+   "meta": "Local SEO from Reinforce Lab: Google Business Profile, consistent citations, compliant reviews and location pages, built on Google's local search guidelines."
+  }
+ },
+ {
+  "id": 189,
+  "path": "services/press-release-services",
+  "old": {
+   "title": "Digital PR & Off-Page SEO Services | Reinforce Lab",
+   "meta": "Digital PR and link building that earns coverage, links and AI citations from relevant publications: original data, expert commentary, no bought links, within Google's link policies."
+  },
+  "new": {
+   "title": "Digital PR & Off-Page SEO Services | Reinforce Lab",
+   "meta": "Digital PR and link building that earns coverage, links and AI citations: original data and expert commentary, no bought links, within Google's policies."
+  }
+ },
+ {
+  "id": 190,
+  "path": "services/best-search-engine-optimization-services",
+  "old": {
+   "title": "Search Engine Optimization (SEO) Services | Reinforce Lab",
+   "meta": "SEO services built on Google's guidelines: technical SEO, on-page, content and authority run as one system and extended to AI search, for B2B and specialist brands."
+  },
+  "new": {
+   "title": "Search Engine Optimization (SEO) Services | Reinforce Lab",
+   "meta": "SEO services built on Google's guidelines: technical SEO, on-page, content and authority run as one system and extended to AI search for B2B brands."
+  }
+ },
+ {
+  "id": 196,
+  "path": "services/wordpress-website-design-service",
+  "old": {
+   "title": "WordPress Website Design Services | Reinforce Lab",
+   "meta": "WordPress website design services for B2B brands: custom design, editor-friendly builds, Core Web Vitals speed, WCAG 2.2 AA accessibility and redesigns that keep your rankings."
+  },
+  "new": {
+   "title": "WordPress Website Design Services | Reinforce Lab",
+   "meta": "WordPress website design for B2B brands: custom design, editor-friendly builds, fast Core Web Vitals, WCAG 2.2 AA accessibility and rankings kept safe."
+  }
+ },
+ {
+  "id": 197,
+  "path": "services/ecommerce-website-design-service",
+  "old": {
+   "title": "E-commerce Website Design Services | Reinforce Lab",
+   "meta": "E-commerce website design that gets stores found and bought from: product data for Google, easy browsing, a shorter checkout, fast pages and WCAG 2.2 AA accessibility, on WooCommerce."
+  },
+  "new": {
+   "title": "E-commerce Website Design Services | Reinforce Lab",
+   "meta": "E-commerce website design on WooCommerce: product data for Google, easy browsing, a shorter checkout, fast pages and WCAG 2.2 AA accessibility."
+  }
+ },
+ {
+  "id": 198,
+  "path": "services/website-maintenance-services",
+  "old": {
+   "title": "Website Maintenance Services | Reinforce Lab",
+   "meta": "Website maintenance services for WordPress: tested updates, off-site backups, security and uptime monitoring, speed and SEO health checks, support and a monthly report."
+  },
+  "new": {
+   "title": "Website Maintenance Services | Reinforce Lab",
+   "meta": "Website maintenance for WordPress: tested updates, off-site backups, security and uptime monitoring, speed and SEO checks, support and a monthly report."
+  }
+ },
+ {
+  "id": 77,
+  "path": "services/agents/seo-intelligence",
+  "old": {
+   "title": "SEO Intelligence Agent | Search Authority OS | Reinforce Lab",
+   "meta": "The SEO Intelligence Agent shows which searches are worth winning: demand, intent and value turned into a prioritised topic and page plan, reviewed by people."
+  },
+  "new": {
+   "title": "SEO Intelligence AI Agent | Reinforce Lab",
+   "meta": "The SEO Intelligence Agent shows which searches are worth winning: demand, intent and value turned into a prioritised topic and page plan, reviewed by people."
+  }
+ },
+ {
+  "id": 78,
+  "path": "services/agents/content-research",
+  "old": {
+   "title": "Content Research Agent | Search Authority OS | Reinforce Lab",
+   "meta": "The Content Research Agent turns topics into researched briefs: what ranks, what people ask, what competitors miss, and the sources writers need."
+  },
+  "new": {
+   "title": "Content Research AI Agent | Reinforce Lab",
+   "meta": "The Content Research Agent turns topics into researched briefs: what ranks, what people ask, what competitors miss, and the sources writers need."
+  }
+ },
+ {
+  "id": 83,
+  "path": "services/agents/content-qa",
+  "old": {
+   "title": "Content QA Auditor | Search Authority OS | Reinforce Lab",
+   "meta": "The Content QA Auditor checks every asset against SEO, AEO, GEO and evidence standards before it ships, with human approval where it matters."
+  },
+  "new": {
+   "title": "Content QA AI Agent | Reinforce Lab",
+   "meta": "The Content QA Auditor checks every asset against SEO, AEO, GEO and evidence standards before it ships, with human approval where it matters."
+  }
+ }
+]

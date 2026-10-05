@@ -1,6 +1,6 @@
 # Titles and meta descriptions: draft for Jamil (5 Oct 2026)
 
-**Status:** DRAFT for approval. Nothing changed on `.online` yet. From the F-025 audit: 8 titles over 60 characters, 18 meta descriptions over 160, 2 under 140.
+**Status:** APPROVED and APPLIED 5 Oct (D-118), plus the other 4 agent titles on the same pattern. From the F-025 audit: 8 titles over 60 characters, 18 meta descriptions over 160, 2 under 140.
 **Rules used:** titles 60 characters or fewer, ending "| Reinforce Lab"; descriptions 140 to 160 characters; the main keyword kept near the front; same facts as the page, nothing new; D-072 copy rules (0 issues in `copy-check.py`).
 **Source of truth for the values:** `claude/drafts/titles-meta-draft-2026-10-05.py`.
 

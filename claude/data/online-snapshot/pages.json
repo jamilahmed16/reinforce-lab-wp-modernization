@@ -208,7 +208,7 @@
   "modified": "2026-09-29 15:41:30",
   "seo": {
    "_yoast_wpseo_title": "GEO Services: Generative Engine Optimization | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "Generative Engine Optimization from Reinforce Lab: pages structured, sourced and written so ChatGPT, Perplexity, Gemini and AI Overviews can quote and cite them."
+   "_yoast_wpseo_metadesc": "Generative Engine Optimization (GEO) from Reinforce Lab: pages structured, sourced and written so ChatGPT, Perplexity and AI Overviews quote and cite you."
   },
   "rl_fields": []
  },
@@ -227,7 +227,7 @@
   "modified": "2026-09-29 17:53:05",
   "seo": {
    "_yoast_wpseo_title": "SEO & AI Search Audit Services | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "A one-time, human-led audit of your technical SEO, content, authority, competitors and AI search visibility, with evidence, a prioritised fix register and a roadmap."
+   "_yoast_wpseo_metadesc": "A one-time, human-led audit of your technical SEO, content, authority, competitors and AI search visibility, with a prioritised fix register and roadmap."
   },
   "rl_fields": []
  },
@@ -245,8 +245,8 @@
   "date": "2026-09-30 09:26:29",
   "modified": "2026-09-30 09:26:29",
   "seo": {
-   "_yoast_wpseo_title": "Pharmaceutical & Life Sciences SEO and AI Search | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "Search, content and AI visibility for pharmaceutical and life sciences companies, built around medical-legal review, evidence and the rules for promoting medicines."
+   "_yoast_wpseo_title": "Pharma & Life Sciences SEO and AI Search | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Search, content and AI visibility for pharma and life sciences companies, built around medical-legal review, evidence and the rules on promoting medicines."
   },
   "rl_fields": []
  },
@@ -283,7 +283,7 @@
   "date": "2026-09-30 09:11:01",
   "modified": "2026-09-30 09:11:01",
   "seo": {
-   "_yoast_wpseo_title": "SEO Intelligence Agent | Search Authority OS | Reinforce Lab",
+   "_yoast_wpseo_title": "SEO Intelligence AI Agent | Reinforce Lab",
    "_yoast_wpseo_metadesc": "The SEO Intelligence Agent shows which searches are worth winning: demand, intent and value turned into a prioritised topic and page plan, reviewed by people."
   },
   "rl_fields": []
@@ -302,7 +302,7 @@
   "date": "2026-09-30 09:11:01",
   "modified": "2026-09-30 09:11:01",
   "seo": {
-   "_yoast_wpseo_title": "Content Research Agent | Search Authority OS | Reinforce Lab",
+   "_yoast_wpseo_title": "Content Research AI Agent | Reinforce Lab",
    "_yoast_wpseo_metadesc": "The Content Research Agent turns topics into researched briefs: what ranks, what people ask, what competitors miss, and the sources writers need."
   },
   "rl_fields": []
@@ -321,8 +321,8 @@
   "date": "2026-09-30 09:11:01",
   "modified": "2026-09-30 09:11:01",
   "seo": {
-   "_yoast_wpseo_title": "Evidence Verification Agent | Search Authority OS | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "The Evidence Verification Agent ties every important claim to a source, scores confidence and flags weak evidence for human review."
+   "_yoast_wpseo_title": "Evidence Verification AI Agent | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "The Evidence Verification Agent ties every important claim in your content to a source, scores confidence and flags weak evidence for a person to review."
   },
   "rl_fields": []
  },
@@ -340,7 +340,7 @@
   "date": "2026-09-30 09:11:01",
   "modified": "2026-09-30 09:13:29",
   "seo": {
-   "_yoast_wpseo_title": "AEO / GEO Optimization Agent | Search Authority OS | Reinforce Lab",
+   "_yoast_wpseo_title": "AEO / GEO Optimization AI Agent | Reinforce Lab",
    "_yoast_wpseo_metadesc": "The AEO / GEO Optimization Agent tracks where you appear in AI answers and makes your pages and brand facts easier for AI to cite correctly."
   },
   "rl_fields": []
@@ -359,8 +359,8 @@
   "date": "2026-09-30 09:11:01",
   "modified": "2026-09-30 09:11:01",
   "seo": {
-   "_yoast_wpseo_title": "Social Sentiment Agent | Search Authority OS | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "The Social Sentiment Agent turns real customer questions, objections and complaints from public conversations into topics, angles and FAQs."
+   "_yoast_wpseo_title": "Social Sentiment AI Agent | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "The Social Sentiment Agent turns real customer questions, objections and complaints from forums, reviews and social posts into topics, angles and FAQs."
   },
   "rl_fields": []
  },
@@ -378,7 +378,7 @@
   "date": "2026-09-30 09:11:01",
   "modified": "2026-09-30 09:11:01",
   "seo": {
-   "_yoast_wpseo_title": "Competitor Intelligence Agent | Search Authority OS | Reinforce Lab",
+   "_yoast_wpseo_title": "Competitor Intelligence AI Agent | Reinforce Lab",
    "_yoast_wpseo_metadesc": "The Competitor Intelligence Agent maps where rivals win in search and AI answers, finds the gaps worth owning and watches for their next move."
   },
   "rl_fields": []
@@ -397,7 +397,7 @@
   "date": "2026-09-30 09:11:01",
   "modified": "2026-09-30 09:13:29",
   "seo": {
-   "_yoast_wpseo_title": "Content QA Auditor | Search Authority OS | Reinforce Lab",
+   "_yoast_wpseo_title": "Content QA AI Agent | Reinforce Lab",
    "_yoast_wpseo_metadesc": "The Content QA Auditor checks every asset against SEO, AEO, GEO and evidence standards before it ships, with human approval where it matters."
   },
   "rl_fields": []
@@ -416,7 +416,7 @@
   "date": "2026-09-30 09:11:01",
   "modified": "2026-09-30 09:11:01",
   "seo": {
-   "_yoast_wpseo_title": "Search Performance Agent | Search Authority OS | Reinforce Lab",
+   "_yoast_wpseo_title": "Search Performance AI Agent | Reinforce Lab",
    "_yoast_wpseo_metadesc": "The Search Performance Agent detects slipping pages, diagnoses the cause, recommends the fix and tracks recovery across Search Console, GA4 and AI search."
   },
   "rl_fields": []
@@ -435,8 +435,8 @@
   "date": "2026-09-29 19:11:05",
   "modified": "2026-09-29 19:11:05",
   "seo": {
-   "_yoast_wpseo_title": "SEO Content Writing Services & Content Systems | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "SEO content writing run as a system: research, topic maps, expert-led briefs, human-edited pages, internal links and refreshes. Content that ranks, gets cited and converts."
+   "_yoast_wpseo_title": "SEO Content Writing Services & Systems | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "SEO content writing run as a system: research, topic maps, expert-led briefs, human-edited pages, internal links and refreshes that rank and get cited."
   },
   "rl_fields": []
  },
@@ -454,8 +454,8 @@
   "date": "2026-09-29 19:19:56",
   "modified": "2026-09-29 19:19:56",
   "seo": {
-   "_yoast_wpseo_title": "Marketing Automation & Email Marketing Services | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "Marketing automation that follows up every lead: nurture emails, lead scoring, CRM workflows and sales handoff, built on your platform, compliant with Gmail, CAN-SPAM and PECR rules."
+   "_yoast_wpseo_title": "Marketing Automation & Email Services | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Marketing automation that follows up every lead: nurture emails, lead scoring, CRM workflows and sales handoff, within Gmail, CAN-SPAM and PECR rules."
   },
   "rl_fields": []
  },
@@ -493,7 +493,7 @@
   "modified": "2026-09-30 09:26:29",
   "seo": {
    "_yoast_wpseo_title": "Healthcare SEO and AI Search | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "Healthcare SEO and AI search for clinics and providers: local visibility, clinician-reviewed content, accurate AI answers and accessible, privacy-aware websites."
+   "_yoast_wpseo_metadesc": "Healthcare SEO and AI search for clinics and providers: local visibility, clinician-reviewed content, accurate AI answers and privacy-aware websites."
   },
   "rl_fields": []
  },
@@ -626,7 +626,7 @@
   "modified": "2026-09-29 20:23:17",
   "seo": {
    "_yoast_wpseo_title": "AI Workflow Automation Services | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "AI workflow automation for triage, document extraction, drafting and system updates, built on your tools with human review, logging and testing, so AI does the busywork and people keep control."
+   "_yoast_wpseo_metadesc": "AI workflow automation for triage, document extraction, drafting and system updates, with human review and logging: AI does the busywork, people keep control."
   },
   "rl_fields": []
  },
@@ -645,7 +645,7 @@
   "modified": "2026-09-29 18:37:36",
   "seo": {
    "_yoast_wpseo_title": "Enterprise SEO Strategy Services | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "Enterprise SEO strategy for large, complex sites: one SEO standard across teams, template fixes shipped through your sprints, safe migrations and authority built within Google's link policies."
+   "_yoast_wpseo_metadesc": "Enterprise SEO strategy for large sites: one SEO standard across teams, template fixes shipped in your sprints, safe migrations and authority you earn."
   },
   "rl_fields": []
  },
@@ -664,7 +664,7 @@
   "modified": "2026-09-29 16:51:59",
   "seo": {
    "_yoast_wpseo_title": "Technical SEO Services: Crawl, Index & Speed | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "Technical SEO from Reinforce Lab: crawlability, indexation, Core Web Vitals, structured data and AI-crawler access, with root causes fixed, verified and safe for what already ranks."
+   "_yoast_wpseo_metadesc": "Technical SEO: crawlability, indexation, Core Web Vitals, structured data and AI-crawler access, with root causes fixed and verified, safe for what ranks."
   },
   "rl_fields": []
  },
@@ -702,7 +702,7 @@
   "modified": "2026-09-29 15:56:52",
   "seo": {
    "_yoast_wpseo_title": "LLM Optimization Services | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "LLM Optimization from Reinforce Lab: make ChatGPT, Claude, Gemini and Perplexity describe your brand correctly, with consistent facts, the right AI-crawler policy and tested answers."
+   "_yoast_wpseo_metadesc": "LLM Optimization: make ChatGPT, Claude, Gemini and Perplexity describe your brand correctly, with consistent facts, the right crawler policy and tested answers."
   },
   "rl_fields": []
  },
@@ -720,8 +720,8 @@
   "date": "2026-09-29 19:28:38",
   "modified": "2026-09-29 19:28:38",
   "seo": {
-   "_yoast_wpseo_title": "B2B Lead Generation & PPC Management Services | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "Lead generation systems that turn demand into qualified pipeline: channels, PPC, landing pages, qualification, routing and closed-loop CRM data that tells your ads which leads became revenue."
+   "_yoast_wpseo_title": "B2B Lead Generation & PPC Services | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Lead generation systems that turn demand into qualified pipeline: PPC, landing pages, lead qualification and CRM data that shows which leads became revenue."
   },
   "rl_fields": []
  },
@@ -740,7 +740,7 @@
   "modified": "2026-09-30 04:37:36",
   "seo": {
    "_yoast_wpseo_title": "Executive AI Consulting & AI Strategy | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "Executive AI consulting for leadership teams: prioritised AI use cases, business cases, governance, EU AI Act mapping and AI literacy, with a roadmap supported through the first pilots."
+   "_yoast_wpseo_metadesc": "Executive AI consulting for leadership teams: prioritised use cases, business cases, governance, EU AI Act mapping and a roadmap through the first pilots."
   },
   "rl_fields": []
  },
@@ -759,7 +759,7 @@
   "modified": "2026-09-29 17:45:46",
   "seo": {
    "_yoast_wpseo_title": "Local Search Engine Optimization Services | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "Local SEO from Reinforce Lab: Google Business Profile, consistent citations, compliant reviews and location pages, built on Google's own guidelines for local and AI search."
+   "_yoast_wpseo_metadesc": "Local SEO from Reinforce Lab: Google Business Profile, consistent citations, compliant reviews and location pages, built on Google's local search guidelines."
   },
   "rl_fields": []
  },
@@ -778,7 +778,7 @@
   "modified": "2026-09-29 18:48:58",
   "seo": {
    "_yoast_wpseo_title": "Digital PR & Off-Page SEO Services | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "Digital PR and link building that earns coverage, links and AI citations from relevant publications: original data, expert commentary, no bought links, within Google's link policies."
+   "_yoast_wpseo_metadesc": "Digital PR and link building that earns coverage, links and AI citations: original data and expert commentary, no bought links, within Google's policies."
   },
   "rl_fields": []
  },
@@ -797,7 +797,7 @@
   "modified": "2026-09-29 18:58:48",
   "seo": {
    "_yoast_wpseo_title": "Search Engine Optimization (SEO) Services | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "SEO services built on Google's guidelines: technical SEO, on-page, content and authority run as one system and extended to AI search, for B2B and specialist brands."
+   "_yoast_wpseo_metadesc": "SEO services built on Google's guidelines: technical SEO, on-page, content and authority run as one system and extended to AI search for B2B brands."
   },
   "rl_fields": []
  },
@@ -816,7 +816,7 @@
   "modified": "2026-09-30 04:58:03",
   "seo": {
    "_yoast_wpseo_title": "WordPress Website Design Services | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "WordPress website design services for B2B brands: custom design, editor-friendly builds, Core Web Vitals speed, WCAG 2.2 AA accessibility and redesigns that keep your rankings."
+   "_yoast_wpseo_metadesc": "WordPress website design for B2B brands: custom design, editor-friendly builds, fast Core Web Vitals, WCAG 2.2 AA accessibility and rankings kept safe."
   },
   "rl_fields": []
  },
@@ -835,7 +835,7 @@
   "modified": "2026-09-30 05:05:23",
   "seo": {
    "_yoast_wpseo_title": "E-commerce Website Design Services | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "E-commerce website design that gets stores found and bought from: product data for Google, easy browsing, a shorter checkout, fast pages and WCAG 2.2 AA accessibility, on WooCommerce."
+   "_yoast_wpseo_metadesc": "E-commerce website design on WooCommerce: product data for Google, easy browsing, a shorter checkout, fast pages and WCAG 2.2 AA accessibility."
   },
   "rl_fields": []
  },
@@ -854,7 +854,7 @@
   "modified": "2026-09-30 05:12:20",
   "seo": {
    "_yoast_wpseo_title": "Website Maintenance Services | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "Website maintenance services for WordPress: tested updates, off-site backups, security and uptime monitoring, speed and SEO health checks, support and a monthly report."
+   "_yoast_wpseo_metadesc": "Website maintenance for WordPress: tested updates, off-site backups, security and uptime monitoring, speed and SEO checks, support and a monthly report."
   },
   "rl_fields": []
  },

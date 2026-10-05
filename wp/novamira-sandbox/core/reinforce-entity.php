@@ -6,9 +6,13 @@
  */
 if (!defined('ABSPATH')) exit;
 
-/* Verified profiles only (F-023). Add LinkedIn, Crunchbase and social accounts when Jamil supplies the URLs. */
+/* Directory profiles verified in F-023; LinkedIn, Crunchbase, Facebook and Instagram from Jamil (5 Oct, D-118). */
 function rl_entity_profiles() {
     return [
+        'https://www.linkedin.com/company/reinforcelabltd/',
+        'https://www.crunchbase.com/organization/reinforce-lab',
+        'https://www.facebook.com/reinforcelabltd/',
+        'https://www.instagram.com/reinforcelabltd/',
         'https://clutch.co/profile/reinforce-lab',
         'https://www.goodfirms.co/company/reinforce-lab-limited',
         'https://www.designrush.com/agency/profile/reinforce-lab-ltd',
