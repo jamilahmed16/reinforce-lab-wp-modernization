@@ -1050,5 +1050,24 @@
    "_yoast_wpseo_metadesc": "How Reinforce Lab built the IBA Alumni Association reunion site: an alumni database, online registration and a random prize draw in Python and Django."
   },
   "rl_fields": []
+ },
+ {
+  "id": 277,
+  "type": "page",
+  "status": "publish",
+  "title": "Clients",
+  "slug": "clients",
+  "parent": 0,
+  "path": "/clients/",
+  "template": null,
+  "content": "[reinforce_clients]",
+  "excerpt": "",
+  "date": "2026-10-05 19:44:00",
+  "modified": "2026-10-05 19:44:00",
+  "seo": {
+   "_yoast_wpseo_title": "Clients: 46 Businesses We Have Worked With | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Reinforce Lab's clients include United International University, Beacon Pharmaceuticals, Bikroy.com, HP and Accesstel, plus stores, academies and firms."
+  },
+  "rl_fields": []
  }
 ]

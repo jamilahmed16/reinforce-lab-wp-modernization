@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-127 | Clients page built (page 277, `/clients/`) with the 46 client logos from production, imported into the `.online` media library; footer Clients linked | 5 Oct | DONE (Jamil: logos "Download from production"; "Yes, all are real clients") | this file |
 | D-126 | Project pages moved from `/projects/<slug>/` to `/portfolio/<slug>/`; production `/projects/` URLs get 301s (tested on `.online`, in `claude/data/approved-redirects-2026-10.csv`) | 5 Oct | DONE (Jamil: "it should be under https://reinforcelab.online/portfolio/ no \"/projects\"") | this file |
 | D-125 | Project pages rebuilt on `.online` at the production URLs `/projects/inpace-shop/`, `/projects/access-tutor/`, `/projects/iba-alumni-lottery/` (post type `rl_project`, no `/projects/` archive); Portfolio cards link to them | 5 Oct | DONE (Jamil: "Rebuild at same URLs") | this file |
 | D-124 | Portfolio page built (page 227, `/portfolio/`) with the six projects already public on production as placeholders; menu and footer links set; Careers hidden | 5 Oct | DONE (Jamil: "build the page with dummy portfolio ... read the .com site for portfolio"; Careers "Hide for now") | this file |
@@ -186,6 +187,17 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-127 · Clients page with the 46 client logos
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil sent a screenshot of reinforcelab.com/clients/, then chose "Download from production (Recommended)" and "Yes, all are real clients")
+
+- **URL:** `/clients/` (production URL kept; URL Register: PRESERVE, Jamil to mark). New page 277, `[reinforce_clients]`, new file `pages/reinforce-clients.php` (added to the loader). Yoast title "Clients: 46 Businesses We Have Worked With | Reinforce Lab" (58), meta 152.
+- **Logos:** the `.online` server fetched production's `/clients/` HTML and the 46 logo images with plain GET requests (read-only; nothing changed on production). Imported as attachments 231 to 276 named `client-<slug>`, alt "<Client> logo", source URL in `_rl_source_url`; map in option `rl_client_logos`; list with sources in `claude/data/client-logos-2026-10.csv`. Names cleaned from production's alt text (e.g. "Micro International" is MRCO International per its logo, "Sofovel" is Sofosvel, "fbs" is the Faculty of Business Studies, University of Dhaka). Most files are 226 x 100 px, as on production.
+- **Page:** hero with tally (46 clients, since 2021) and six logos; logo wall (6 columns, 4 on tablet, 2 on phone) on light tiles with each client's name in text; "Project" links on AccessTUTOR, IBA Alumni Association, INPACE and Inpace Shop to their `/portfolio/<slug>/` pages; project cards; FAQ; CTA. Schema: CollectionPage, ItemList of 46 Organization with logo, FAQPage.
+- **Links:** footer Clients links to the page (no menu item exists).
+- **Verified:** 200, 1 H1, 46 logos load, no PHP notices, `copy-check.py` 0 issues, phone width 390.
 
 ---
 

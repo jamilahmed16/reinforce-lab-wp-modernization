@@ -13,7 +13,7 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 |---|---|---|---|---|---|
 | 33 | Home | [/](https://reinforcelab.online/) | publish | [`pages/reinforce-home.php`](../wp/novamira-sandbox/pages/reinforce-home.php) | AI Growth Systems for Search & Automation \| Reinforce Lab |
 
-## Company (7)
+## Company (8)
 
 | ID | Page | URL | Status | Renders from | SEO title |
 |---|---|---|---|---|---|
@@ -24,6 +24,7 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 | 223 | Terms & Conditions | [/terms-conditions/](https://reinforcelab.online/terms-conditions/) | publish | [`pages/reinforce-legal.php`](../wp/novamira-sandbox/pages/reinforce-legal.php) | Terms & Conditions \| Reinforce Lab |
 | 224 | FTC Disclosure | [/ftc-disclosure/](https://reinforcelab.online/ftc-disclosure/) | publish | [`pages/reinforce-legal.php`](../wp/novamira-sandbox/pages/reinforce-legal.php) | FTC and Affiliate Disclosure \| Reinforce Lab |
 | 227 | Portfolio | [/portfolio/](https://reinforcelab.online/portfolio/) | publish | [`pages/reinforce-portfolio.php`](../wp/novamira-sandbox/pages/reinforce-portfolio.php) | Portfolio: Websites, Stores and Web Apps \| Reinforce Lab |
+| 277 | Clients | [/clients/](https://reinforcelab.online/clients/) | publish | [`pages/reinforce-clients.php`](../wp/novamira-sandbox/pages/reinforce-clients.php) | Clients: 46 Businesses We Have Worked With \| Reinforce Lab |
 
 ## Projects (3)
 
