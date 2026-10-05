@@ -313,9 +313,9 @@ function rl_list_render($c) {
 <section class="band alt rel" id="related"><div class="wrap"><div class="head"><span class="ey"><b>[</b>&nbsp;Keep reading&nbsp;<b>]</b></span><h2>Related articles</h2></div><ul class="posts">
 <?php while ($rq->have_posts()) { $rq->the_post(); $rd = rl_post_data(get_the_ID()); ?>
   <li class="post"><span class="m"><?php echo esc_html($rd['type_label']); ?> · <?php echo esc_html(get_the_date('j M Y')); ?></span><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3><a class="more" href="<?php the_permalink(); ?>" aria-label="<?php echo esc_attr('Read: ' . get_the_title()); ?>">Read article &rarr;</a></li>
-<?php } wp_reset_postdata(); ?>
+<?php } wp_reset_postdata(); echo rl_post_rel_pages($id, 3 - $rq->post_count); ?>
 </ul></div></section>
-<?php } ?>
+<?php } else echo rl_post_rel_section($id); ?>
 
 <section id="start">
   <div class="wrap">

@@ -53,6 +53,39 @@ function rl_post_pairs($v) {
     foreach (rl_post_lines($v) as $l) { $p = array_map('trim', explode('|', $l, 2)); if (count($p) === 2 && $p[0] !== '' && $p[1] !== '') $out[] = $p; }
     return $out;
 }
+/* ---------- related reading: top up with pages when there are not yet enough related posts ----------
+   Order: the post's own in-article CTA page, its related-term links, then the core pages. Never the current page. */
+function rl_post_rel_candidates($id) {
+    $paths = [];
+    foreach (['rl_e_cta_service', 'rl_cta_service'] as $k) { $v = trim((string) get_post_meta($id, $k, true)); if ($v !== '') $paths[] = $v; }
+    foreach (rl_post_lines(get_post_meta($id, 'rl_e_related', true)) as $l) {
+        $parts = array_map('trim', explode('|', $l)); $u = (string) end($parts);
+        $host = (string) wp_parse_url($u, PHP_URL_HOST); $path = trim((string) wp_parse_url($u, PHP_URL_PATH), '/');
+        if ($path !== '' && ($host === '' || $host === wp_parse_url(home_url(), PHP_URL_HOST))) $paths[] = $path;
+    }
+    return array_values(array_unique(array_merge($paths, ['services/ai-growth-systems', 'search-authority-os', 'search-authority-diagnostic', 'services'])));
+}
+function rl_post_rel_pages($id, $need) {
+    if ($need < 1) return '';
+    $labels = function_exists('rl_pt_services') ? rl_pt_services() : [];
+    $out = ''; $n = 0;
+    foreach (rl_post_rel_candidates($id) as $path) {
+        $pg = get_page_by_path($path);
+        if (!$pg || $pg->post_status !== 'publish' || (int) $pg->ID === (int) $id) continue;
+        $title = $labels[$path] ?? get_the_title($pg);
+        $kind = strpos($path, 'services/') === 0 ? 'Service' : ($path === 'search-authority-diagnostic' ? 'Free diagnostic' : 'Reinforce Lab');
+        $desc = trim((string) get_post_meta($pg->ID, '_yoast_wpseo_metadesc', true));
+        $url = get_permalink($pg);
+        $out .= '<li class="post"><span class="m">' . esc_html($kind) . '</span><h3><a href="' . esc_url($url) . '">' . esc_html($title) . '</a></h3>' . ($desc !== '' ? '<p class="d">' . esc_html(wp_trim_words($desc, 18)) . '</p>' : '') . '<a class="more" href="' . esc_url($url) . '" aria-label="' . esc_attr('Read: ' . $title) . '">Read more &rarr;</a></li>';
+        if (++$n >= $need) break;
+    }
+    return $out;
+}
+function rl_post_rel_section($id) {
+    $items = rl_post_rel_pages($id, 3);
+    if ($items === '') return '';
+    return '<section class="band alt rel" id="related"><div class="wrap"><div class="head"><span class="ey"><b>[</b>&nbsp;Keep reading&nbsp;<b>]</b></span><h2>Related reading</h2></div><ul class="posts">' . $items . '</ul></div></section>';
+}
 function rl_post_data($id) {
     static $cache = [];
     if (isset($cache[$id])) return $cache[$id];
@@ -179,6 +212,7 @@ body.rl-post-page .fl-page-content,body.rl-post-page .fl-content,body.rl-post-pa
 .rl-post .author p{margin:0 0 10px;color:var(--ink-dim);font-size:15px}
 .rl-post .author .links{display:flex;flex-wrap:wrap;gap:16px;font-size:14px}
 .rl-post .author .links a{color:var(--ink);border-bottom:1px solid var(--red-line)}
+.rl-post .rel .post .d{margin:6px 0 0;font-size:14.5px;color:var(--ink-dim)}
 .rl-post .rel .posts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
 .rl-post .rel .post{background:var(--bg-2);padding:22px;display:flex;flex-direction:column;gap:10px}
 .rl-post .rel .post .m{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
@@ -355,11 +389,11 @@ function rl_post_output() {
     <ul class="posts">
       <?php while ($rel->have_posts()) { $rel->the_post(); $rd = rl_post_data(get_the_ID()); ?>
       <li class="post"><span class="m"><?php echo esc_html($rd['type_label']); ?> · <?php echo esc_html(get_the_date('j M Y')); ?></span><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3><a class="more" href="<?php the_permalink(); ?>" aria-label="<?php echo esc_attr('Read: ' . get_the_title()); ?>">Read article &rarr;</a></li>
-      <?php } wp_reset_postdata(); ?>
+      <?php } wp_reset_postdata(); echo rl_post_rel_pages($id, 3 - $rel->post_count); ?>
     </ul>
   </div>
 </section>
-<?php } ?>
+<?php } else echo rl_post_rel_section($id); ?>
 
 <section class="<?php echo $hasrel ? '' : 'band alt'; ?>" id="start">
   <div class="wrap">

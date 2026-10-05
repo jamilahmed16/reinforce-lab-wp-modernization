@@ -245,7 +245,7 @@ function rl_casestudy_render($c) {
     <?php } wp_reset_postdata(); ?>
     </div>
   </section>
-  <?php } ?>
+  <?php } else echo rl_post_rel_section($id); ?>
 
   <?php if ($d['faqs'] || $d['sources']) { ?>
   <div class="cs-back">
