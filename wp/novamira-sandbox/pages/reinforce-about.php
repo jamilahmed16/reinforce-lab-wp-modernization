@@ -62,7 +62,7 @@ body.rl-about-page .fl-page-content,body.rl-about-page .fl-content,body.rl-about
 .rl-about .ind ul{margin:0;padding-left:18px;color:var(--ink-dim);font-size:14.5px}
 @media(max-width:900px){.rl-about .founder{grid-template-columns:1fr}.rl-about .steps9{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.rl-about .steps9{grid-template-columns:1fr}.rl-about .glance{padding:18px 16px}.rl-about .glance dl{column-gap:14px}}
-.rl-about .sub{font-size:clamp(20px,2.2vw,26px);margin:clamp(34px,4vw,48px) 0 18px}
+.rl-about .sub{font-family:var(--f-display);font-weight:600;text-transform:uppercase;letter-spacing:.03em;color:var(--ink);font-size:clamp(20px,2.2vw,26px);margin:clamp(34px,4vw,48px) 0 18px}
 .rl-about .story{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,64px);align-items:start}
 .rl-about .story .txt p{color:var(--ink-dim);font-size:16.5px;margin:0 0 16px}
 .rl-about .story .txt p:first-child{color:var(--ink)}
@@ -82,7 +82,7 @@ body.rl-about-page .fl-page-content,body.rl-about-page .fl-content,body.rl-about
 .rl-about a.cell{color:inherit;text-decoration:none;display:flex;flex-direction:column;gap:8px}
 @media(max-width:1000px){.rl-about .c4{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:900px){.rl-about .story{grid-template-columns:1fr}}
-@media(max-width:600px){.rl-about .c4{grid-template-columns:1fr}}
+@media(max-width:600px){.rl-about .c4{grid-template-columns:1fr}.rl-about .glance dl{grid-template-columns:minmax(0,36%) 1fr}}
 </style>
 <?php }
 
@@ -197,7 +197,7 @@ function rl_render_about() {
       <p class="cap">At a glance</p>
       <dl>
         <dt>Started</dt><dd>2020, Tallinn, Estonia</dd>
-        <dt>Reinforce Lab Limited</dt><dd>Founded 1 April 2021, Bangladesh</dd>
+        <dt>Founded</dt><dd>1 April 2021, Bangladesh (Reinforce Lab Limited)</dd>
         <dt>Founder and CEO</dt><dd><a href="#founder"><?php echo esc_html($f['name']); ?></a></dd>
         <dt>What we build</dt><dd>AI Growth Systems: search, content and automation as one system</dd>
         <dt>Offices</dt><dd>Dhaka, Bangladesh · Katy, Texas, USA</dd>

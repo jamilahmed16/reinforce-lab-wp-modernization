@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-110 | About page rebuilt on `.online` to the v2 company-led copy (`/about-us/`, page 218) | 5 Oct | DONE (Jamil: "dates are right, no Estonia office, keep all, build it") | this file |
 | D-109 | Origin story from Jamil: started in Tallinn, Estonia 2020; expanded to Bangladesh 2021; About draft v2 | 5 Oct | RECORDED; About copy in review | this file |
 | D-108 | Founding date is 1 April 2021 everywhere (replaces 2020, D-069) | 5 Oct | DONE (Jamil: "1 April 2021 everywhere") | this file |
 | D-107 | `/awards/` linked from the footer only (Company column, after About Us) | 5 Oct | DONE (Jamil: "it will be in the footer only for now") | this file |
@@ -167,6 +168,19 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-110 · About page rebuilt to the v2 company-led copy
+**Date:** 5 October 2026 · **Status:** DONE (Jamil: "dates are right, no Estonia office, keep all, build it")
+
+- **Decisions in Jamil's answer:** the dates stand (started in Tallinn 2020; Reinforce Lab Limited founded in Bangladesh 1 April 2021); no Estonian office, so Tallinn appears only as the starting point; all `[CONFIRM]` lines kept (reason for the shift, "built our team in Dhaka", the pharmacist link to evidence checking, "Measured on business results"); the new H1 is used ("keep all").
+- **File:** `pages/reinforce-about.php` v2.0, same URL `/about-us/` (APPROVED, PRESERVE), same shortcode. Sections: hero with facts panel; Our story with milestones (2020, 2021, 2024, 2025, 2026, Today); What we build (3 jobs, 4 service groups, Search Authority OS, links); Who we work with (3 situations, 8 industry links, regulated fields); How we work (4 engagement steps, the 9-stage method); 6 principles; Leadership; Recognition (5 sourced cards plus a link to `/awards/`); Offices; Straight answer; 7 FAQs; CTA. No team, culture or careers section; team and client proof wait for Jamil.
+- **Copy:** exactly the v2 draft (`claude/drafts/about-page-content-2026-10-05.md`), except the facts-panel label "Reinforce Lab Limited" became "Founded" (value "1 April 2021, Bangladesh (Reinforce Lab Limited)") because the long label squeezed the phone layout.
+- **Yoast meta description** (page 218): "Reinforce Lab began in Tallinn, Estonia in 2020 and expanded to Bangladesh in 2021. We build AI Growth Systems: search, content and automation as one." (150). Was: "Reinforce Lab builds AI Growth Systems that connect your website, content and search visibility. Founded by pharmacist and Semrush Ambassador Jamil Ahmed." Title unchanged.
+- **Schema:** AboutPage; Organization gains `areaServed` Worldwide, `knowsAbout` (9 services) and `award` (the same 4 entries as `/awards/`, now from the shared `rl_awards_schema_list()` in `pages/reinforce-awards.php`), keeps `founder`, `foundingDate` 2021-04-01, `foundingLocation` Bangladesh; Person (Jamil); FAQPage (7).
+- **Verified:** HTTP 200; `noindex, nofollow`; 1 H1, 11 H2; no `href="#"` in the content; no PHP notices; schema as above; `/awards/` schema unchanged; `copy-check.py` 0 issues on the file and the live page; phone width 390 with no horizontal scroll; section screenshots at 1440 and 390 reviewed (fixed: H3 subheadings rendered grey and letter-spaced; phone facts panel label column).
+- **Tooling:** `shot.mjs sections <path> <prefix> [css]` saves one JPEG per section for review.
 
 ---
 

@@ -1,6 +1,6 @@
 # About page: content draft v2 for Jamil (5 Oct 2026)
 
-**Status:** DRAFT v2 for review. Nothing is built or changed on `.online` yet. Replaces the copy of `/about-us/` (page APPROVED, PRESERVE; same URL).
+**Status:** APPROVED and BUILT on `.online` (D-110, 5 Oct). Jamil kept every `[CONFIRM]` line; no Estonian office. Replaces the copy of `/about-us/` (page APPROVED, PRESERVE; same URL).
 **Brief (Jamil):** "no team details yet, draft the About page anyway. Based on the service we are providing create an about us page content." Earlier: "it does not feel like a company about".
 
 **v2 changes (Jamil, 5 Oct):**
