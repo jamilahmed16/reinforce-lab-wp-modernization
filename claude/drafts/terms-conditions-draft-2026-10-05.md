@@ -1,6 +1,6 @@
 # Terms & Conditions: draft for Jamil (5 Oct 2026)
 
-**Status:** DRAFT for review. Not on the site yet. Page: `/terms-conditions/` (production URL kept; URL Register: PRESERVE). Will use the same legal-page template as the Privacy Policy (D-120).
+**Status:** FINAL TEXT published on `.online` 5 Oct as page 223 (D-121); final text in `claude/drafts/terms-conditions-final-2026-10-05.html`. Below: the first draft, then the research that changed it. Page: `/terms-conditions/` (production URL kept; URL Register: PRESERVE). Will use the same legal-page template as the Privacy Policy (D-120).
 **Brief (Jamil):** "Bangladesh law, cover website and store sales and Terms & Conditions".
 **Checked (VERIFIED, read-only via Exa):** the current production Terms page is a generic web template (it mentions the AARP and the American Automobile Association, and has an unfinished "send an e-mail to." sentence). The production store sells **service packages**, for example "Search Engine Optimization Service (Enterprise-Yearly)" at $407 and "WordPress Web Design and Development (Enterprise)" at $8,597, so the store terms below are written for services bought online, not physical goods.
 **Not legal advice.** Claude is not a lawyer; the `[CONFIRM]` points are business decisions only Jamil can make, and the review list at the end says what a Bangladesh lawyer should check.
@@ -128,3 +128,27 @@ Email: hello@reinforcelab.com · Phone: +880 1329-657096 · USA: +1 832 548 4553
 - The Consumer Rights Protection Act 2009 and the Ministry of Commerce's digital commerce rules for online sales (delivery and refund time limits for online orders).
 - That the liability limit and the Dhaka courts clause hold for international clients.
 - VAT on services sold online from Bangladesh, and how prices should show it.
+
+---
+
+## Jamil's answers and the rules research (5 Oct)
+
+**Answers:** USD; full payment up front; businesses only; the rest as proposed. Jamil: "Read other countries rules and implement as well".
+
+**Not legal advice.** Each rule below was read from public sources and built into the final text; a lawyer in Bangladesh should still sign it off.
+
+| Rule | Source | Built in as |
+|---|---|---|
+| Bangladesh Consumer Rights Protection Act 2009, s.2(19): a consumer buys without resale or commercial purpose | https://forum.daffodilvarsity.edu.bd/index.php/topic,16113.0.html | Store is for businesses only; buyer confirms it when ordering |
+| Bangladesh Digital Commerce Operation Guidelines 2021: refund within 7 days by the same payment method, seller bears the cost | https://www.tbsnews.net/economy/e-commerce-cos-must-deliver-products-within-5-days-268159 ; https://mahbub-law.com/ministry-of-commerce-issues-detailed-guidelines-on-e-commerce-business | All refunds within 7 days, to the same method, cost paid by us |
+| Bangladesh VAT and SD Act 2012: exported services are zero-rated | https://taxsummaries.pwc.com/bangladesh/corporate/other-taxes | No Bangladesh VAT on qualifying exported services; VAT added for Bangladesh clients |
+| Bangladesh is a New York Convention party (1992); Arbitration Act 2001; BIAC | https://www.reedsmith.com/en/perspectives/2025/06/navigating-international-arbitration-in-bangladesh ; https://www.legal500.com/guides/?p=117854 | Disputes: email first, then BIAC arbitration in Dhaka, enforceable abroad; courts only for urgent relief |
+| New York GOL 5-903: auto-renewal of service contracts needs written notice 15 to 30 days before, also for businesses; renewals of one month or less exempt | https://newyork.public.law/laws/n.y._general_obligations_law_section_5-903 | Yearly packages do not auto-renew (30-day notice, renew only on confirmation); monthly packages auto-renew with cancel any time |
+| US ROSCA (FTC click-to-cancel rule vacated July 2025) | https://www.cooley.com/news/insight/2025/2025-07-11-click-to-cancel-just-got-cancelled-eighth-circuit-vacates-entirety-of-ftcs-negative-option-rule | Renewal terms shown before payment; cancel by one email |
+| UK Unfair Contract Terms Act 1977: no exclusion of death or personal injury from negligence; other limits must be reasonable | https://cms.law/en/gbr/legal-updates/exclusion-and-limitation-clauses | Liability cap carves out death, personal injury, fraud and anything the law does not allow |
+| EU VAT reverse charge (Directive 2006/112/EC art. 196) | https://www.commenda.io/blog/reverse-charge-mechanism-explained-for-non-eu-businesses | EU and UK business clients give their VAT number; invoice says "reverse charge" |
+| EU E-Commerce Directive art. 5: registration number and VAT number on the website | https://www.arnoldporter.com/en/perspectives/publications/2002/09/ecommerce-directive | **Pending:** Reinforce Lab Limited's RJSC registration number and VAT/BIN number from Jamil |
+
+**Changed from the first draft because of the research:** refunds 14 days to 7 days; yearly renewals no longer automatic (was automatic with a 7-day reminder, which would not satisfy New York); disputes go to BIAC arbitration instead of Dhaka courts only; the liability cap now carves out death, personal injury and fraud; a tax section for Bangladesh, EU/UK and US clients; a "businesses only" section.
+
+**Still for a lawyer and an accountant:** confirm the BIAC clause and the cap for the main client countries; confirm the conditions for zero-rating exported services (foreign-currency receipt) and whether Reinforce Lab Limited's BIN must appear on the site; US sales tax on services in states where clients are based.

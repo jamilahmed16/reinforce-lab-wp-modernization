@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-121 | Terms & Conditions published on `.online` (page 223, `/terms-conditions/`), Bangladesh law, website and store, rules from BD, US, UK and EU built in | 5 Oct | DONE (Jamil: "USD, full payment up front, businesses only, rest okay ... Read other countries rules and implement as well") | this file |
 | D-120 | Privacy Policy published on `.online` (page 3, `/privacy-policy/`) with a reusable legal-page template | 5 Oct | DONE (Jamil's six answers; review by Jamil with Claude as adviser) | this file |
 | D-119 | Footer: Get a Free Quote, Sitemap and Privacy Policy wired | 5 Oct | DONE (Jamil: "First these 3") | this file |
 | D-118 | Titles and meta on 26 pages within limits; all 8 agent titles on one pattern; LinkedIn, Crunchbase, Facebook, Instagram added; footer social icons live | 5 Oct | DONE (Jamil: "approve all, switch all 8 agents to the same pattern" + 4 profile URLs) | this file |
@@ -180,6 +181,19 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-121 · Terms & Conditions published on `.online`
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "Bangladesh law, cover website and store sales and Terms & Conditions"; then "USD, full payment up front, businesses only, rest okay" and "Read other countries rules and implement as well")
+
+- **URL:** `/terms-conditions/` (production URL kept; URL Register: PRESERVE, Jamil to mark it). New page 223 on `.online`, author Jamil, legal-page template (D-120). Footer "Terms & Conditions" now links to it.
+- **Production checked read-only (Exa):** the current terms are a generic template (mentions AARP and the American Automobile Association); the store sells service packages (e.g. SEO Enterprise-Yearly $407; WordPress Enterprise $8,597).
+- **Content** (`claude/drafts/terms-conditions-final-2026-10-05.html`): website use, content and names, links, businesses only, packages, prices (USD, full payment up front) and tax by client country, contract start, onboarding within 2 business days, monthly auto-renewal (cancel by email) and yearly packages renewing only on confirmation after a 30-day notice, refunds (full within 14 days before work starts; pro-rata after; delivered work fixed not refunded; refunds within 7 days to the same method at our cost), client delays (30 days), no guaranteed results, signed agreements prevail, liability cap (12 months of fees) with death, personal injury and fraud carved out, Bangladesh law, BIAC arbitration in Dhaka with court relief for urgent matters.
+- **Rules research:** Bangladesh (Consumer Rights Protection Act 2009, Digital Commerce Operation Guidelines 2021, VAT Act 2012, Arbitration Act 2001 and the New York Convention), US (New York GOL 5-903, ROSCA), UK (Unfair Contract Terms Act 1977), EU (VAT reverse charge, E-Commerce Directive art. 5). Sources and what each changed: `claude/drafts/terms-conditions-draft-2026-10-05.md`.
+- **Pending from Jamil:** the RJSC company registration number and VAT/BIN number (EU E-Commerce Directive art. 5 asks for them on the site).
+- **Not legal advice:** Claude is not a lawyer; a Bangladesh lawyer and an accountant should confirm the arbitration clause, the cap, and the VAT and US sales-tax points.
+- **Verified:** HTTP 200, noindex, 1 H1, 19-item contents list, no PHP notices, `copy-check.py` 0 issues, phone width 390.
 
 ---
 

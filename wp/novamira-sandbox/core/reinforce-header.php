@@ -365,7 +365,7 @@ function rl_render_footer() {
           <li><a href="<?php echo esc_url(home_url('/sitemap_index.xml')); ?>">Sitemap</a></li>
           <?php $rl_pp = get_privacy_policy_url(); /* WordPress privacy page (page 3): a link only once it is published, plain text until then (D-119) */ ?>
           <li><?php echo $rl_pp ? '<a href="' . esc_url($rl_pp) . '">Privacy Policy</a>' : '<span>Privacy Policy</span>'; ?></li>
-          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="<?php echo esc_url(rl_url_by_path('terms-conditions')); ?>">Terms &amp; Conditions</a></li>
           <li><a href="#">FTC Disclosure</a></li>
           <li><a href="#">Certificate of Incorporation</a></li>
         </ul>
