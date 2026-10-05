@@ -84,3 +84,5 @@
 | 10 | Stop loading the emoji script and other unused theme scripts on our pages | Medium, test carefully | Approve |
 | 11 | AI-crawler policy for `robots.txt` at launch | Decision | Yes, production change under Rule 1 |
 | 12 | Start the blog: first posts per service and industry cluster | Ongoing | Topics and approval |
+
+**Update 5 Oct (D-117):** fixes 1 to 3 done: site name is "Reinforce Lab"; Organization has 5 verified profile links (`sameAs`) and 2 contact points; `/llms.txt` rebuilt from the live pages (all 45, working links). LinkedIn, Crunchbase and social URLs still to come from Jamil.

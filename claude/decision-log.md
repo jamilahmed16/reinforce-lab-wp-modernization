@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-117 | F-025 fixes 1 to 3: site name, Organization profiles and contact point, our own llms.txt | 5 Oct | DONE (Jamil: "yes, fix 1 to 3 and use the directory profiles") | this file |
 | F-025 | SEO, AEO, GEO and LLM readiness of all 45 pages: page structure ready; site-wide entity settings and content depth are the gaps | 5 Oct | FINDING; fix list awaits Jamil | [research](research/seo-aeo-geo-readiness-2026-10-05.md) |
 | D-116 | Phone versions of every other hero diagram (25 pages), shared `rl_ph()` component | 5 Oct | DONE (Jamil: "apply all", then "Phone versions on all heroes") | this file |
 | D-115 | Each of the 8 agent pages gets its own hero visual | 5 Oct | DONE (Jamil: "all of the hero images look similar that's should not be like that") | this file |
@@ -176,6 +177,18 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-117 · Entity fixes: site name, Organization profiles, llms.txt
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "yes, fix 1 to 3 and use the directory profiles")
+
+- **Backup first:** the old `llms.txt`, site name and Yoast llms settings saved to `claude/data/backups/llms-txt-and-sitename-2026-10-05.json`.
+- **1. Site name:** WordPress `blogname` "reinforcelab.online" changed to "Reinforce Lab". `og:site_name` and the WebSite schema now read "Reinforce Lab". No page title changed: all 45 pages have their own Yoast titles; only fallback templates (future posts, archives, 404) use the site name, and they now end in "Reinforce Lab". Tagline left empty (not asked).
+- **2. Organization schema** (new `core/reinforce-entity.php`, loaded after the kit): `sameAs` with the 5 profiles verified in F-023 (Clutch, GoodFirms, DesignRush, HackerNoon, Semrush Agency Partners); `email`; two `contactPoint` entries (sales, Dhaka +880-1329-657096 for BD, Katy +1-832-548-4553 for US). LinkedIn, Crunchbase and social profiles to be added when Jamil sends the URLs.
+- **3. llms.txt:** Yoast's generator switched off (`enable_llms_txt` false) and its static file removed (it had empty links and 5 pages). `/llms.txt` is now served by `rl_llms_txt()`, built from the live pages on each request: company summary, key facts (legal name and founding, founder, offices, contact, industries) and all 45 published pages with working links and their meta descriptions, grouped Company, Search Authority OS, Services, Industries, Optional (agents, blog). Plain text, `X-Robots-Tag: noindex`.
+- **Verified:** `/llms.txt` 200, 45 links, no HTML entities, `copy-check.py` 0 issues; Organization on Home, Local SEO and About shows 5 `sameAs`, 2 `contactPoint`, email and legalName; titles unchanged; no PHP notices; parity clean.
+- **At launch:** the llms.txt URLs follow the site URL automatically; `X-Robots-Tag: noindex` on it can stay.
 
 ---
 

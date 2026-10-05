@@ -35,7 +35,7 @@
   "enable_headless_rest_endpoints": true,
   "enable_index_now": true,
   "enable_link_suggestions": true,
-  "enable_llms_txt": true,
+  "enable_llms_txt": false,
   "enable_metabox_insights": true,
   "enable_schema": true,
   "enable_schema_aggregation_endpoint": false,

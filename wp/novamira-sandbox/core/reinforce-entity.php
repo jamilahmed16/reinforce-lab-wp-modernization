@@ -33,8 +33,8 @@ function rl_llms_txt() {
     $line = function ($path) {
         $p = get_page_by_path($path);
         if (!$p || $p->post_status !== 'publish') return '';
-        $d = trim((string) get_post_meta($p->ID, '_yoast_wpseo_metadesc', true));
-        return '- [' . get_the_title($p) . '](' . get_permalink($p) . ')' . ($d !== '' ? ': ' . $d : '') . "\n";
+        $d = html_entity_decode(trim((string) get_post_meta($p->ID, '_yoast_wpseo_metadesc', true)), ENT_QUOTES, 'UTF-8');
+        return '- [' . html_entity_decode(get_the_title($p), ENT_QUOTES, 'UTF-8') . '](' . get_permalink($p) . ')' . ($d !== '' ? ': ' . $d : '') . "\n";
     };
     $sec = function ($title, $paths) use ($line) { $s = ''; foreach ($paths as $p) $s .= $line($p); return $s !== '' ? "\n## $title\n\n" . $s : ''; };
     $children = function ($parent, $skip = []) {
