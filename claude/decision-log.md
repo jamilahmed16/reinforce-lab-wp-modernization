@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-124 | Portfolio page built (page 227, `/portfolio/`) with the six projects already public on production as placeholders; menu and footer links set; Careers hidden | 5 Oct | DONE (Jamil: "build the page with dummy portfolio ... read the .com site for portfolio"; Careers "Hide for now") | this file |
 | D-123 | Privacy Policy v2 on `.online` (page 3): country rules (EU, UK, Bangladesh PDPO 2025, US with GPC) built in; consent tick box on the Contact and Diagnostic forms; fonts self-hosted, no Google Fonts requests | 5 Oct | DONE (Jamil: "same way update privacy policy") | this file |
 | D-122 | FTC and Affiliate Disclosure published (page 224, `/ftc-disclosure/`); affiliate links labelled "Ad" automatically site-wide | 5 Oct | DONE (Jamil: "Semrush and WP Engine affiliate links") | this file |
 | D-121 | Terms & Conditions published on `.online` (page 223, `/terms-conditions/`), Bangladesh law, website and store, rules from BD, US, UK and EU built in | 5 Oct | DONE (Jamil: "USD, full payment up front, businesses only, rest okay ... Read other countries rules and implement as well") | this file |
@@ -183,6 +184,20 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-124 · Portfolio page built with placeholder projects; Careers hidden
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "i will give the portfolio later now build the page with dummy posrtfolio you can read the .com site for portfolio"; Clients: "I'll send names and logos"; Careers: "Hide for now"; Certificate: "Public, I'll upload it")
+
+- **URL:** `/portfolio/` (production URL kept; rule R4 core page, `claude/preserve-disposition-rules.md`). New page 227, `[reinforce_portfolio]`, new file `pages/reinforce-portfolio.php` (added to the loader). Yoast title "Portfolio: Websites, Stores and Web Apps | Reinforce Lab" (56), meta 157.
+- **Placeholder content, not invented:** the six projects already shown on reinforcelab.com/portfolio/ (Inpace Shop, AccessTUTOR, IBA Alumni Lottery, Signature Jeans, Beyond Borders, Advocate Gazi). Facts read-only via Exa from production `/portfolio/` and `/projects/inpace-shop/`, `/projects/access-tutor/`, `/projects/iba-alumni-lottery/` (client names, project periods, tasks, stack); client sites inpaceshop.com, signaturejeansbd.com, advocategazi.com (footer credits Reinforce Lab, (c) 2022). No results, numbers or quotes: the page says case studies with results are on the way and that a number appears only with a source and client approval. All data in one array, `rl_portfolio_data()`, for Jamil's real list.
+- **[CONFIRM] for Jamil:** Beyond Borders: client, industry, year and URL unknown (shown as "Website, content and SEO" only). Signature Jeans: year unknown, and abusayeddev.com also lists the site as its own work (a freelancer of ours?). Advocate Gazi "2022" is INFERENCE from its footer.
+- **Not created:** production's `/projects/<slug>/` detail pages (URLs PENDING); cards link to the client sites instead.
+- **Page:** hero with a tally panel (projects, industries, first project 2021, offices) and types of work; project cards with a drawn frame per work type (store, app, site; screenshots later), client and industry link, what they needed, what we built, stack, site link; services strip (WordPress, E-commerce, SEO, Maintenance); FAQ; Diagnostic CTA. Schema: CollectionPage, ItemList of 6 CreativeWork (creator = Organization), FAQPage.
+- **Links:** Primary menu items 48 and 149 "Portfolio" changed from `#` to page 227 (backup `claude/data/backups/portfolio-menu-items-before-2026-10-05.json`); footer Portfolio links to it; footer Careers removed until there is a page.
+- **Verified:** HTTP 200, noindex, 1 H1, no PHP notices, `copy-check.py` 0 issues, phone width 390, parity 62 files 0 differences.
+- **Waiting on Jamil:** real portfolio list (with screenshots and sourced results); client names and logos for `/clients/`; the Certificate of Incorporation file (to be public).
 
 ---
 

@@ -974,5 +974,24 @@
    "_yoast_wpseo_metadesc": "Reinforce Lab earns a commission from Semrush and WP Engine affiliate links. Here is how we label them, our partner ties, and how we decide what to recommend."
   },
   "rl_fields": []
+ },
+ {
+  "id": 227,
+  "type": "page",
+  "status": "publish",
+  "title": "Portfolio",
+  "slug": "portfolio",
+  "parent": 0,
+  "path": "/portfolio/",
+  "template": null,
+  "content": "[reinforce_portfolio]",
+  "excerpt": "",
+  "date": "2026-10-05 19:21:00",
+  "modified": "2026-10-05 19:21:00",
+  "seo": {
+   "_yoast_wpseo_title": "Portfolio: Websites, Stores and Web Apps | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Projects by Reinforce Lab: WooCommerce stores, Django web apps and WordPress sites for retail, education and law firms, with what each client needed and got."
+  },
+  "rl_fields": []
  }
 ]

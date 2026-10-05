@@ -13,7 +13,7 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 |---|---|---|---|---|---|
 | 33 | Home | [/](https://reinforcelab.online/) | publish | [`pages/reinforce-home.php`](../wp/novamira-sandbox/pages/reinforce-home.php) | AI Growth Systems for Search & Automation \| Reinforce Lab |
 
-## Company (6)
+## Company (7)
 
 | ID | Page | URL | Status | Renders from | SEO title |
 |---|---|---|---|---|---|
@@ -23,6 +23,7 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 | 221 | Awards | [/awards/](https://reinforcelab.online/awards/) | publish | [`pages/reinforce-awards.php`](../wp/novamira-sandbox/pages/reinforce-awards.php) | Awards and Recognition \| Reinforce Lab |
 | 223 | Terms & Conditions | [/terms-conditions/](https://reinforcelab.online/terms-conditions/) | publish | [`pages/reinforce-legal.php`](../wp/novamira-sandbox/pages/reinforce-legal.php) | Terms & Conditions \| Reinforce Lab |
 | 224 | FTC Disclosure | [/ftc-disclosure/](https://reinforcelab.online/ftc-disclosure/) | publish | [`pages/reinforce-legal.php`](../wp/novamira-sandbox/pages/reinforce-legal.php) | FTC and Affiliate Disclosure \| Reinforce Lab |
+| 227 | Portfolio | [/portfolio/](https://reinforcelab.online/portfolio/) | publish | [`pages/reinforce-portfolio.php`](../wp/novamira-sandbox/pages/reinforce-portfolio.php) | Portfolio: Websites, Stores and Web Apps \| Reinforce Lab |
 
 ## Services (19)
 
