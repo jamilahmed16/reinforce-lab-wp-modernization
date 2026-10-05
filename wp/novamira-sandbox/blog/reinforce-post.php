@@ -54,16 +54,17 @@ function rl_post_pairs($v) {
     return $out;
 }
 /* ---------- related reading: top up with pages when there are not yet enough related posts ----------
-   Order: the post's own in-article CTA page, its related-term links, then the core pages. Never the current page. */
+   Order: the post's own in-article CTA page, the core pages, then its related-term links. Never the current page. */
 function rl_post_rel_candidates($id) {
-    $paths = [];
+    $paths = []; $terms = [];
     foreach (['rl_e_cta_service', 'rl_cta_service'] as $k) { $v = trim((string) get_post_meta($id, $k, true)); if ($v !== '') $paths[] = $v; }
     foreach (rl_post_lines(get_post_meta($id, 'rl_e_related', true)) as $l) {
         $parts = array_map('trim', explode('|', $l)); $u = (string) end($parts);
         $host = (string) wp_parse_url($u, PHP_URL_HOST); $path = trim((string) wp_parse_url($u, PHP_URL_PATH), '/');
-        if ($path !== '' && ($host === '' || $host === wp_parse_url(home_url(), PHP_URL_HOST))) $paths[] = $path;
+        if ($path !== '' && ($host === '' || $host === wp_parse_url(home_url(), PHP_URL_HOST))) $terms[] = $path;
     }
-    return array_values(array_unique(array_merge($paths, ['services/ai-growth-systems', 'search-authority-os', 'search-authority-diagnostic', 'services'])));
+    /* core pages before related-term links: the explainer already links its related terms in its own map */
+    return array_values(array_unique(array_merge($paths, ['services/ai-growth-systems', 'search-authority-os', 'search-authority-diagnostic'], $terms, ['services'])));
 }
 function rl_post_rel_pages($id, $need) {
     if ($need < 1) return '';
@@ -84,7 +85,7 @@ function rl_post_rel_pages($id, $need) {
 function rl_post_rel_section($id) {
     $items = rl_post_rel_pages($id, 3);
     if ($items === '') return '';
-    return '<section class="band alt rel" id="related"><div class="wrap"><div class="head"><span class="ey"><b>[</b>&nbsp;Keep reading&nbsp;<b>]</b></span><h2>Related reading</h2></div><ul class="posts">' . $items . '</ul></div></section>';
+    return '<section class="band alt rel" id="related-reading"><div class="wrap"><div class="head"><span class="ey"><b>[</b>&nbsp;Keep reading&nbsp;<b>]</b></span><h2>Related reading</h2></div><ul class="posts">' . $items . '</ul></div></section>';
 }
 function rl_post_data($id) {
     static $cache = [];
