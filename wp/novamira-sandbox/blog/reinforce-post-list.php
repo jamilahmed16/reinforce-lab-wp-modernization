@@ -171,7 +171,7 @@ function rl_list_render($c) {
     <?php if ($crit) { ?><div class="wb"><span class="wlab">How the score is weighted</span><div class="wbar"><?php foreach ($crit as $cr) { $pc = rl_list_pct($cr[1] / $tw * 100); echo '<span style="flex:' . esc_attr($cr[1]) . '"><b>' . esc_html($pc) . '%</b>' . esc_html($cr[0]) . '</span>'; } ?></div></div><?php } ?>
     <?php if ($checked_h || $method) { ?><div class="checked"><?php if ($checked_h) { ?><span>Prices checked</span><b><?php echo esc_html($checked_h); ?></b><?php } ?><?php if ($method) { ?><a href="#how">How we tested</a><?php } ?></div><?php } ?>
   </div>
-  <?php if ($aff) { ?><div class="wrap"><p class="disc"><b>Disclosure:</b> some links on this page are affiliate links. If you buy through them we may earn a commission, at no extra cost to you. It does not change the ranking.</p></div><?php } ?>
+  <?php if ($aff) { ?><div class="wrap"><p class="disc"><b>Ad:</b> the "Visit" links marked "Ad" on this page are affiliate links. If you buy through them we earn a commission, at no extra cost to you. It does not change the ranking. <a href="<?php echo esc_url(home_url('/ftc-disclosure/')); ?>">How we handle affiliate links</a>.</p></div><?php } ?>
 </section>
 <?php } ?>
 
@@ -246,7 +246,7 @@ function rl_list_render($c) {
         <?php } ?>
         <?php if ($p['skip'] !== '') { ?><p class="skip"><b>Skip it if</b> <?php echo esc_html($p['skip']); ?></p><?php } ?>
         <?php if ($p['url'] !== '' || $checked_h) { ?>
-        <div class="act"><?php if ($p['url'] !== '') { ?><a class="go" href="<?php echo esc_url($p['url']); ?>" rel="<?php echo esc_attr($rel); ?>" target="_blank">Visit <?php echo esc_html($p['name']); ?> <span aria-hidden="true">&rarr;</span></a><?php } ?><?php if ($checked_h && $p['price'] !== '') { ?><span class="chk">Price checked <?php echo esc_html($checked_h); ?></span><?php } ?></div>
+        <div class="act"><?php if ($p['url'] !== '') { ?><a class="go" href="<?php echo esc_url($p['url']); ?>" rel="<?php echo esc_attr($rel); ?>" target="_blank">Visit <?php echo esc_html($p['name']); ?> <span aria-hidden="true">&rarr;</span></a><?php if ($aff && function_exists('rl_aff_label')) echo rl_aff_label(); ?><?php } ?><?php if ($checked_h && $p['price'] !== '') { ?><span class="chk">Price checked <?php echo esc_html($checked_h); ?></span><?php } ?></div>
         <?php } ?>
       </div>
     </article>

@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-122 | FTC and Affiliate Disclosure published (page 224, `/ftc-disclosure/`); affiliate links labelled "Ad" automatically site-wide | 5 Oct | DONE (Jamil: "Semrush and WP Engine affiliate links") | this file |
 | D-121 | Terms & Conditions published on `.online` (page 223, `/terms-conditions/`), Bangladesh law, website and store, rules from BD, US, UK and EU built in | 5 Oct | DONE (Jamil: "USD, full payment up front, businesses only, rest okay ... Read other countries rules and implement as well") | this file |
 | D-120 | Privacy Policy published on `.online` (page 3, `/privacy-policy/`) with a reusable legal-page template | 5 Oct | DONE (Jamil's six answers; review by Jamil with Claude as adviser) | this file |
 | D-119 | Footer: Get a Free Quote, Sitemap and Privacy Policy wired | 5 Oct | DONE (Jamil: "First these 3") | this file |
@@ -181,6 +182,19 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-122 · FTC and Affiliate Disclosure; affiliate links labelled automatically
+**Date:** 5 October 2026 · **Status:** DONE on `.online` (Jamil: "Semrush and WP Engine affiliate links. RJSC company registration number and VAT/BIN number as me later before ship to live")
+
+- **Rules read (not legal advice):** FTC Endorsement Guides 2023: disclose clearly and next to the link, on the same page; a separate disclosure page alone is not enough (https://www.infolawgroup.com/insights/2023/7/31/ftc-releases-updated-endorsement-guides-10-key-takeaways). UK ASA/CAP: label affiliate content as "Ad"; "some links may earn us a commission" and "#aff" are not enough (https://www.asa.org.uk/static/790d2e01-e3f8-4fea-b3c99ef91a9f04dc/Influencerguidance2023v4-FINAL.pdf). Google: affiliate links need `rel="sponsored"` (https://developers.google.com/search/blog/2021/07/link-tagging-and-link-spam-update).
+- **Page:** `/ftc-disclosure/` (production URL kept; Register: "declined by Google, rebuild or remove", now rebuilt). New page 224, legal template. Title "FTC and Affiliate Disclosure | Reinforce Lab"; meta 158. Content: the short version; relationships (Semrush affiliate programme and Agency Partners listing, Jamil a Semrush Ambassador; WP Engine affiliate programme and agency partner); how links are labelled; how we decide what to recommend; why we disclose; contact. Footer "FTC Disclosure" links to it.
+- **Automatic labelling** (new `core/reinforce-affiliate.php`): in page and post content, links that match the Semrush or WP Engine affiliate formats (`semrush.sjv.io`, `semrush.com` with `ref`/`irclickid`-style parameters, `wpengine.com` with `w_agcid` or `partnerspecialoffer`, `wpengine.sjv.io`), or that an editor marks `rel="sponsored"` or class `aff`, get `rel="sponsored nofollow noopener"`, an "Ad" label next to the link, and a note at the top naming the partners and linking to the disclosure. Ordinary citation links to semrush.com or wpengine.com are untouched. Tested locally (7 URLs) and live.
+- **Templates:** the List and Review post templates' vague "some links are affiliate links" wording replaced with a specific "Ad" note and link to the disclosure; their "Visit" buttons carry the "Ad" label when the post's affiliate switch is on.
+- **Pending:** Jamil's real affiliate link formats (to confirm the patterns); RJSC registration number and VAT/BIN number before launch (now on the launch QA gate in `claude/migration-and-data-requirements.md`, with the other legal-page launch items).
+- **`[CONFIRM]` wording:** "We recommend tools because we use them or have tested them for clients" and "We do not accept payment for reviews" are stated as policy; Jamil to confirm they are true.
+- **Verified:** HTTP 200, 1 H1, no PHP notices, `copy-check.py` 0 issues, phone width 390; `#` links per page 15.
 
 ---
 

@@ -112,7 +112,7 @@ function rl_review_render($c) {
     $diag = $u('search-authority-diagnostic');
     $ok = '<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg>';
     $no = '<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg>';
-    $visit = function ($cls = 'go') use ($r, $rel) { return $r['url'] !== '' ? '<a class="' . $cls . '" href="' . esc_url($r['url']) . '" rel="' . esc_attr($rel) . '" target="_blank">' . esc_html($r['button']) . ' <span aria-hidden="true">&rarr;</span></a>' : ''; };
+    $visit = function ($cls = 'go') use ($r, $rel) { return $r['url'] !== '' ? '<a class="' . $cls . '" href="' . esc_url($r['url']) . '" rel="' . esc_attr($rel) . '" target="_blank">' . esc_html($r['button']) . ' <span aria-hidden="true">&rarr;</span></a>' . ($r['aff'] && function_exists('rl_aff_label') ? rl_aff_label() : '') : ''; };
     $meter = '';
     if ($r['score'] !== null) { $full = (int) floor($r['score']); $frac = $r['score'] - $full; for ($i = 1; $i <= 10; $i++) $meter .= '<i' . ($i <= $full ? ' class="on"' : ($i === $full + 1 && $frac > 0.001 ? ' class="half"' : '')) . '></i>'; }
     $jump = array_filter(['log' => $r['log'] ? 'Test log' : '', 'scores' => $r['crit'] ? 'Scorecard' : '', 'pricing' => $r['plans'] ? 'Pricing' : '', 'alts' => $r['alts'] ? 'Alternatives' : '']);
@@ -139,7 +139,7 @@ function rl_review_render($c) {
   <?php if ($cond) { ?>
   <dl class="r-cond c<?php echo count($cond); ?>" aria-label="Test conditions"><?php foreach ($cond as $x) echo '<div><dt>' . esc_html($x[0]) . '</dt><dd>' . esc_html($x[1]) . '</dd></div>'; ?></dl>
   <?php } ?>
-  <p class="r-disc<?php echo $cond ? ' under' : ''; ?>"><b>Disclosure:</b> <?php echo $r['paid'] ? 'we paid for our own access.' : 'the vendor gave us free access for this test, and did not see the review before it was published.'; ?><?php echo $r['aff'] ? ' Some links are affiliate links; if you buy through them we may earn a commission at no extra cost to you. It does not change the score.' : ' We earn nothing if you buy.'; ?></p>
+  <p class="r-disc<?php echo $cond ? ' under' : ''; ?>"><b>Disclosure:</b> <?php echo $r['paid'] ? 'we paid for our own access.' : 'the vendor gave us free access for this test, and did not see the review before it was published.'; ?><?php echo $r['aff'] ? ' The "Visit" links marked "Ad" are affiliate links: if you buy through them we earn a commission, at no extra cost to you. It does not change the score. <a href="' . esc_url(home_url('/ftc-disclosure/')) . '">How we handle affiliate links</a>.' : ' We earn nothing if you buy.'; ?></p>
 
   <?php if ($r['score'] !== null || $r['verdict'] !== '' || $r['buy'] || $r['skip']) { ?>
   <section class="r-verdict<?php echo $r['score'] === null ? ' noscore' : ''; ?>" aria-label="Our verdict">

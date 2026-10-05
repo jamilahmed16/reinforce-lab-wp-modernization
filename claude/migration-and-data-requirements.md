@@ -93,6 +93,8 @@ Built from GSC (item 2) + the locked positioning. Structure:
 - [ ] Analytics + GSC verified on the new production; property/settings carried over
 - [ ] Rollback ready (`.wpress` backup); monitoring plan (GSC coverage + rankings, weekly, 6+ weeks)
 - [ ] Production changes only via per-URL approval (Rules 1 & 2 hold to the last minute)
+- [ ] **Legal pages (D-120 to D-122):** Reinforce Lab Limited's RJSC registration number and VAT/BIN number added to Terms and Privacy (Jamil supplies before launch); payment provider named in the Privacy Policy before the store opens; cookie consent banner and "Cookie settings" footer link live, with GA4 loading only after consent; GA4 data retention set to 14 months; Hostinger and Google data processing terms accepted
+- [ ] **Affiliate links (D-122):** real Semrush and WP Engine affiliate link formats checked against `rl_aff_partner()` in `core/reinforce-affiliate.php` (labelled "Ad", `rel="sponsored"`)
 
 ---
 
