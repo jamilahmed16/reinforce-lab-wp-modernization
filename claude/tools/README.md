@@ -64,3 +64,11 @@ node claude/tools/hero-audit.mjs paths.txt out.json 1440 shots/   # one line per
 ```
 
 Measures H1 size, case and line count, hero padding, and how far the visual panel's top and bottom edges are from the text column's. Report: `claude/research/hero-audit-2026-10-05.md`.
+
+## `seo-audit.py`: SEO, AEO, GEO readiness (F-025)
+
+```bash
+python3 claude/tools/seo-audit.py out.json   # all published pages from the snapshot; reads the live HTML
+```
+
+Per page: title and meta length, H1 and heading order, schema types, Organization fields, answer-first opening, FAQ visible vs schema, question-shaped H2s, internal links in and out, outside citations, images, size. Report: `claude/research/seo-aeo-geo-readiness-2026-10-05.md`.

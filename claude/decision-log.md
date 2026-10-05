@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| F-025 | SEO, AEO, GEO and LLM readiness of all 45 pages: page structure ready; site-wide entity settings and content depth are the gaps | 5 Oct | FINDING; fix list awaits Jamil | [research](research/seo-aeo-geo-readiness-2026-10-05.md) |
 | D-116 | Phone versions of every other hero diagram (25 pages), shared `rl_ph()` component | 5 Oct | DONE (Jamil: "apply all", then "Phone versions on all heroes") | this file |
 | D-115 | Each of the 8 agent pages gets its own hero visual | 5 Oct | DONE (Jamil: "all of the hero images look similar that's should not be like that") | this file |
 | D-114 | Heroes brought to one standard: Search Authority OS, Home (capitals), Awards, Diagnostic, Packages, Agents hub | 5 Oct | DONE (Jamil: "use capitals") | this file |
@@ -175,6 +176,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## F-025 · SEO, AEO, GEO and LLM readiness audit (45 pages)
+**Date:** 5 October 2026 · **Status:** FINDING (Jamil: "Check how much the all the pages created are ready for SEO, AEO, GEO, AI Searches, LLMs"); fixes need Jamil's go-ahead one at a time.
+
+- **Method:** new `claude/tools/seo-audit.py` on the live HTML of all 45 published pages against the D-012 standard; site-wide files and Yoast settings; lab performance at phone size on 6 pages (PageSpeed API quota exhausted; sandbox network makes load times unreliable). Report: `claude/research/seo-aeo-geo-readiness-2026-10-05.md`.
+- **Ready:** one H1 and clean heading order on 45 of 45; answer-first openings 45 of 45; FAQs with matching FAQPage schema on all 44 commercial pages; required schema per template on 45 of 45; question-shaped H2s on 41; text server-rendered; copy rules 0 issues; pages light (108 to 158 KB, 17 to 18 requests).
+- **Gaps:** `llms.txt` broken (Yoast auto mode, empty links, 5 pages); WordPress site title is "reinforcelab.online"; Organization has no `sameAs` or `contactPoint`; no `og:image`; 26 `#` placeholder links in header and footer; 18 meta descriptions over 160 and 8 titles over 60 characters; 18 pages cite no outside source; agent pages, Packages and Audit do not name Reinforce Lab near the top; `dateModified` on 4 of 45; Home lab CLS 0.154 from the late web font; emoji, jQuery and Bootstrap scripts on every page; no AI-crawler policy in robots (launch decision); 0 blog posts.
+- **Canonical:** none output while noindex (Yoast behaviour); verify at launch.
 
 ---
 

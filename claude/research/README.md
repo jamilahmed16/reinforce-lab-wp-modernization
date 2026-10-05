@@ -25,3 +25,4 @@ Each brief links to the page it informed in the [site map](../site-map.md).
 | [industries](industries-research-2026-09-30.md) | `/industries/` and the 8 industry pages | 30 Sep |
 | [reputation-and-recognition](reputation-and-recognition-2026-10-04.md) | About page rebuild: awards, reviews, public mentions, conflicting facts (F-023) | 4 Oct |
 | [hero-audit](hero-audit-2026-10-05.md) | Hero sections on all 45 published pages: size, case, alignment of text and visual (F-024) | 5 Oct |
+| [seo-aeo-geo-readiness](seo-aeo-geo-readiness-2026-10-05.md) | All 45 pages against the D-012 SEO, AEO, GEO and LLM standard, with a ranked fix list (F-025) | 5 Oct |
