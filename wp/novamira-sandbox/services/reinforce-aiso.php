@@ -154,6 +154,11 @@ body.rl-aiso-page .fl-page-content,body.rl-aiso-page .fl-content,body.rl-aiso-pa
 @media(max-width:560px){.rl-aiso .ai-tab{font-size:11px;letter-spacing:.02em}.rl-aiso .ai-q{font-size:10.5px;letter-spacing:0}.rl-aiso .ai-ct,.rl-aiso .ai-cton,.rl-aiso .ai-cn{font-size:11px;letter-spacing:.02em}.rl-aiso .ai-ck{font-size:10px;letter-spacing:.02em}.rl-aiso .ai-mt{font-size:11px;letter-spacing:.02em}.rl-aiso .ai-pl{font-size:10px}.rl-aiso .ans .cap span+span{display:none}.rl-aiso .ans{padding:16px 10px 10px}}
 <?php echo rl_aiso_kf(); ?>
 .rl-aiso .note{max-width:900px;margin:28px 0 0;color:var(--ink-dim);font-size:15px;line-height:1.65}
+/* byline */
+.rl-aiso .byl{margin:22px 0 0;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+.rl-aiso .byl a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.rl-aiso .byl a:hover{color:var(--ink)}
+.rl-aiso .byl span{color:var(--red-3);margin:0 6px}
 /* conversion points */
 .rl-aiso .nudge{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 28px;align-items:center;border:1px solid var(--red-line);background:linear-gradient(90deg,rgba(153,0,0,.12),transparent);padding:22px 24px;margin-top:32px}
 .rl-aiso .nudge p{margin:0;color:var(--ink-dim);max-width:680px}
@@ -181,6 +186,12 @@ body.rl-aiso-page .fl-page-content,body.rl-aiso-page .fl-content,body.rl-aiso-pa
 </style>
 <?php }
 
+/* Jamil's Person @id, the same one About and the posts use */
+function rl_aiso_person_id() {
+    $ju = get_user_by('login', 'jamilahmed');
+    return ($ju && function_exists('rl_person_schema_id')) ? rl_person_schema_id($ju->ID) : home_url('/#/schema/person/jamil-ahmed');
+}
+
 /* ---------- schema: extend Yoast's graph ---------- */
 add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_aiso() || !is_array($graph)) return $graph;
@@ -190,7 +201,19 @@ add_filter('wpseo_schema_graph', function ($graph) {
         'serviceType' => 'AI search optimization', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'AI Search Optimization makes a brand visible, accurately described and recommended in AI search tools such as ChatGPT, Perplexity, Gemini and Google AI Overviews, through AI-crawler access, entity and schema work, answer-first content, evidence and third-party authority, measured per engine.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
+        'offers' => ['@type' => 'Offer', 'url' => home_url('/packages/'), 'price' => '5000', 'priceCurrency' => 'USD',
+            'description' => 'Part of every Search Authority OS package: Foundation from $5,000 setup plus $1,500 to $2,500 a month.'],
     ];
+    $pid = rl_aiso_person_id();
+    foreach ($graph as &$n) {
+        if (is_array($n) && in_array('WebPage', (array) ($n['@type'] ?? []), true) && ($n['@id'] ?? '') === $url) {
+            $n['dateModified'] = get_post_modified_time('c', true, get_queried_object_id());
+            $n['reviewedBy'] = ['@id' => $pid];
+            $n['lastReviewed'] = get_post_modified_time('Y-m-d', true, get_queried_object_id());
+        }
+    }
+    unset($n);
+    $graph[] = ['@type' => 'Person', '@id' => $pid, 'name' => 'Jamil Ahmed', 'jobTitle' => 'Founder and CEO', 'url' => home_url('/about-us/'), 'worksFor' => ['@id' => home_url('/#organization')]];
     $graph[] = [
         '@type' => 'FAQPage', '@id' => $url . '#faq', 'isPartOf' => ['@id' => $url],
         'mainEntity' => array_map(function ($q) { return ['@type' => 'Question', 'name' => $q[0], 'acceptedAnswer' => ['@type' => 'Answer', 'text' => $q[1]]]; }, rl_aiso_faqs()),
@@ -224,6 +247,7 @@ function rl_render_aiso() {
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#how">See how it works</a>
       </div>
+      <p class="byl">Led by <a href="<?php echo $u('about-us'); ?>">Jamil Ahmed</a>, founder <span aria-hidden="true">/</span> Last updated <time datetime="<?php echo esc_attr(get_the_modified_date('Y-m-d')); ?>"><?php echo esc_html(get_the_modified_date('j F Y')); ?></time></p>
     </div>
     <figure class="ans rl-anim">
       <div class="cap" aria-hidden="true"><span>AI answer</span><span>Source [1] = you</span></div>

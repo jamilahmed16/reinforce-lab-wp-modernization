@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-137 | AI Search Optimization page: SEO/GEO gaps closed (dateModified and visible last-updated date, price Offer in the Service schema, "Led by Jamil Ahmed" with reviewedBy, page-specific share image); main landmark already present, audit tool corrected | 6 Oct | DONE (Jamil: "Do all that required using a checklist") | this file |
 | D-136 | AI Search Optimization page: six conversion points added (mid-page CTAs after How it works, deliverables with price, and the agency checklist; client logo strip; FAQ links; Talk to us and next-step line in the final CTA); no content removed | 6 Oct | DONE (Jamil: "Go ahead") | this file |
 | D-135 | Keyword map v2: `/services/ai-search-optimization/` owns "ai search optimization services" with AI SEO secondaries; 4 new FAQs (cost FAQ shows Search Authority OS prices); 3 future posts; page tuned on `.online` | 6 Oct | DONE (Jamil approved the map and "keep it" for the price) | this file |
 | D-134 | Blog post rules: 8th-grade reading level for every post; top-10 competitor analysis with Exa before writing, competitor semantics used in the post; first post reworked to both rules | 5 Oct | DONE (Jamil: "the reading difficulty should be 8th grader for all posts .... before writing any post must analyze top 10 results in google with exa ai...") | this file |
@@ -198,6 +199,19 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-137 · AI Search Optimization page: SEO, GEO and AI search gaps closed
+**Date:** 6 October 2026 · **Status:** DONE on `.online` (Jamil: "Do all that required using a checklist make sure everything is done properly")
+
+- **Freshness:** page 72's modified date set to 6 Oct 2026 (one page, content unchanged; was 29 Sep), so Yoast now prints `dateModified` and the sitemap `lastmod` is 6 Oct. The hero shows "Last updated 6 October 2026" in a `<time>` element, read from the same date.
+- **Price in schema:** Service `offers`: USD 5000, link to `/packages/`, description "Part of every Search Authority OS package: Foundation from $5,000 setup plus $1,500 to $2,500 a month." (matches the Packages page).
+- **Named expert:** hero line "Led by Jamil Ahmed, founder", linked to About; WebPage `reviewedBy` Jamil (same Person `@id` as About and the posts) and `lastReviewed`. No photo until the headshot arrives.
+- **Share image:** attachment 335, 1200 x 630, made from the default card (source `claude/design-previews/og-aiso/`); set as the page's Open Graph and X image through Yoast (`WPSEO_Meta::set_value`, because a plain `update_post_meta` on the `-id` keys did not save); width, height and type now printed.
+- **Correction (F):** the earlier report that no page has a main landmark was wrong. Beaver Builder's content wrapper carries `role="main"` on every page; `seo-audit.py` only looked for the `<main>` tag. The audit now counts `role="main"`: 55 of 55 pages. No theme change made.
+- **Checklist run (all pass):** PHP lint; copy-check 0 (file, share card and live HTML); reading grade 7.4; audit gates pass on all 55 pages (no broken schema references, FAQ 10 in schema and visible, title 54, meta 153, no duplicate title or meta); page 132 KB; no PHP log entries; desktop and phone (390) checked.
+- **Still open (need Jamil or launch):** a real result or case study for AI search (none on file, none invented); founder headshot; canonical tags (absent while `.online` is noindex, launch list); actual AI citations can only be measured after launch.
 
 ---
 

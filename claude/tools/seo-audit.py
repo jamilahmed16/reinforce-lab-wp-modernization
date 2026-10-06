@@ -50,6 +50,7 @@ def audit(p):
     r['html_lang'] = (s.html.get('lang') if s.html else '') or ''
     # landmarks
     r['landmarks'] = {k: bool(s.find(k)) for k in ('header', 'main', 'nav', 'footer')}
+    r['landmarks']['main'] = r['landmarks']['main'] or bool(s.find(attrs={'role': 'main'}))  # Beaver Builder marks its content div role="main"
     # schema
     graph = []
     for sc in s.find_all('script', type='application/ld+json'):
