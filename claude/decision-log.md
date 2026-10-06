@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-136 | AI Search Optimization page: six conversion points added (mid-page CTAs after How it works, deliverables with price, and the agency checklist; client logo strip; FAQ links; Talk to us and next-step line in the final CTA); no content removed | 6 Oct | DONE (Jamil: "Go ahead") | this file |
 | D-135 | Keyword map v2: `/services/ai-search-optimization/` owns "ai search optimization services" with AI SEO secondaries; 4 new FAQs (cost FAQ shows Search Authority OS prices); 3 future posts; page tuned on `.online` | 6 Oct | DONE (Jamil approved the map and "keep it" for the price) | this file |
 | D-134 | Blog post rules: 8th-grade reading level for every post; top-10 competitor analysis with Exa before writing, competitor semantics used in the post; first post reworked to both rules | 5 Oct | DONE (Jamil: "the reading difficulty should be 8th grader for all posts .... before writing any post must analyze top 10 results in google with exa ai...") | this file |
 | D-133 | Related reading at the end of every post: posts first, topped up with the most relevant pages when there are fewer than 3 related posts (all post templates) | 5 Oct | DONE (Jamil: "There must an option for related post or something like that in the end of the post") | this file |
@@ -197,6 +198,21 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-136 · AI Search Optimization page: conversion points
+**Date:** 6 October 2026 · **Status:** DONE on `.online` (Jamil: "I don't want to change anything that is included. But there are less call to action for conversion", then "Go ahead" to all six additions)
+
+- **Found (VERIFIED, live page before the change):** 2 places to act (hero and final section, both the diagnostic) with 10 sections and about 2,100 words between them; the price only inside a closed FAQ; no client proof; no contact or packages path.
+- **Added to page 72 (`services/reinforce-aiso.php`), nothing removed:**
+  1. After How it works: "Step 1 is free." with the diagnostic button.
+  2. After the deliverables: price strip "From $5,000 setup" (Search Authority OS, $1,500 to $2,500 a month, as on Packages) with diagnostic and packages buttons.
+  3. After the agency checklist: "Ask us these five questions." with a Talk to us button (`/contact-us/`).
+  4. Client strip under the hero: 6 white logos (UIU, Beacon Pharmaceuticals, Bikroy.com, HP, Accesstel, Union Properties), "Businesses that have worked with Reinforce Lab", link to `/clients/`. Worded so it does not claim they bought AI search optimization.
+  5. FAQ links (markup only, FAQ schema unchanged): cost answer links to Packages and the diagnostic; guarantee answer links to the diagnostic.
+  6. Final section: Talk to us button and a "What happens next" line taken from the Diagnostic page's own FAQ (research, human check, diagnostic with a prioritized 90-day plan).
+- **Result:** buttons on the page 4 to 9, plus 3 FAQ links and the clients link; visible words 2,356 to 2,515; 131 KB; audit gates pass; copy-check 0; desktop and phone (390) checked.
 
 ---
 

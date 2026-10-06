@@ -24,6 +24,14 @@ function rl_aiso_faqs() {
     ];
 }
 
+/* links shown under some FAQ answers (markup only; the FAQPage schema keeps the plain answer) */
+function rl_aiso_faq_links() {
+    return [
+        'Can you guarantee my brand will appear in AI answers?' => [['search-authority-diagnostic', 'See where you stand today: free diagnostic']],
+        'How much do AI search optimization services cost?' => [['packages', 'See the packages'], ['search-authority-diagnostic', 'Get your free diagnostic']],
+    ];
+}
+
 /* industries: the 8 locked verticals (D-022), each with AI Search Optimization points specific to it (D-047) */
 function rl_aiso_industries() {
     return [
@@ -146,6 +154,24 @@ body.rl-aiso-page .fl-page-content,body.rl-aiso-page .fl-content,body.rl-aiso-pa
 @media(max-width:560px){.rl-aiso .ai-tab{font-size:11px;letter-spacing:.02em}.rl-aiso .ai-q{font-size:10.5px;letter-spacing:0}.rl-aiso .ai-ct,.rl-aiso .ai-cton,.rl-aiso .ai-cn{font-size:11px;letter-spacing:.02em}.rl-aiso .ai-ck{font-size:10px;letter-spacing:.02em}.rl-aiso .ai-mt{font-size:11px;letter-spacing:.02em}.rl-aiso .ai-pl{font-size:10px}.rl-aiso .ans .cap span+span{display:none}.rl-aiso .ans{padding:16px 10px 10px}}
 <?php echo rl_aiso_kf(); ?>
 .rl-aiso .note{max-width:900px;margin:28px 0 0;color:var(--ink-dim);font-size:15px;line-height:1.65}
+/* conversion points */
+.rl-aiso .nudge{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 28px;align-items:center;border:1px solid var(--red-line);background:linear-gradient(90deg,rgba(153,0,0,.12),transparent);padding:22px 24px;margin-top:32px}
+.rl-aiso .nudge p{margin:0;color:var(--ink-dim);max-width:680px}
+.rl-aiso .nudge b{font-family:var(--f-display);font-size:26px;color:var(--ink);font-weight:500;display:block;line-height:1.15;margin-bottom:6px;text-transform:uppercase}
+.rl-aiso .nudge .btns{display:flex;flex-wrap:wrap;gap:12px}
+.rl-aiso .flinks{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:4px}
+.rl-aiso .flinks a{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--red-3);text-decoration:none}
+.rl-aiso .flinks a:hover{color:var(--ink)}
+.rl-aiso .final .next{max-width:640px;margin:14px auto 0;color:var(--ink-faint);font-size:14.5px}
+.rl-aiso .proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0}
+.rl-aiso .proof-row{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:28px;align-items:center}
+.rl-aiso .proof-t,.rl-aiso .proof-a{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:0;max-width:200px}
+.rl-aiso .proof-a{color:var(--red-3);text-decoration:none;white-space:nowrap}
+.rl-aiso .proof-l{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));list-style:none;margin:0;padding:0}
+.rl-aiso .proof-l li{display:grid;place-items:center;height:64px;padding:0 16px;margin:0}
+.rl-aiso .proof-l li+li{border-left:1px solid var(--line)}
+.rl-aiso .proof-l img{max-width:100%;max-height:40px;width:auto;height:auto;object-fit:contain;opacity:.85}
+@media(max-width:900px){.rl-aiso .nudge{grid-template-columns:1fr}.rl-aiso .proof-row{grid-template-columns:1fr;gap:14px}.rl-aiso .proof-t{max-width:none}.rl-aiso .proof-l{grid-template-columns:repeat(3,minmax(0,1fr))}.rl-aiso .proof-l li{height:72px}.rl-aiso .proof-l li:nth-child(4){border-left:0}.rl-aiso .proof-l li:nth-child(n+4){border-top:1px solid var(--line)}}
 /* comparison table */
 /* cards */
 /* steps */
@@ -206,6 +232,20 @@ function rl_render_aiso() {
   </div>
 </section>
 
+<?php $wl = (array) get_option('rl_client_logos_white', []); $ol = (array) get_option('rl_client_logos', []);
+$proof = ['United International University' => 'united-international-university', 'Beacon Pharmaceuticals' => 'beacon-pharmaceuticals', 'Bikroy.com' => 'bikroy-com', 'HP' => 'hp', 'Accesstel' => 'accesstel', 'Union Properties' => 'union-properties'];
+$imgs = '';
+foreach ($proof as $name => $slug) { $id = !empty($wl[$slug]) ? (int) $wl[$slug] : (!empty($ol[$slug]) ? (int) $ol[$slug] : 0); if ($id) $imgs .= '<li>' . wp_get_attachment_image($id, 'full', false, ['class' => 'lg', 'alt' => $name . ' logo', 'loading' => 'lazy', 'decoding' => 'async', 'sizes' => '160px']) . '</li>'; }
+if ($imgs) { ?>
+<section class="proof" aria-label="Clients">
+  <div class="wrap proof-row">
+    <p class="proof-t">Businesses that have worked with Reinforce Lab</p>
+    <ul class="proof-l"><?php echo $imgs; ?></ul>
+    <a class="proof-a" href="<?php echo $u('clients'); ?>">See all 46 clients &rarr;</a>
+  </div>
+</section>
+<?php } ?>
+
 <section class="band alt" id="what">
   <div class="wrap">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Definitions&nbsp;<b>]</b></span><h2>What is AI Search Optimization, and how is it different?</h2><p class="lede">Four disciplines get mixed up. They overlap, but each has its own goal. AI Search Optimization is the umbrella for being visible in AI search; GEO and LLM Optimization are specialist layers inside it. You will also see it sold as AI SEO, AI optimization (AIO), answer engine optimization (AEO) or AI-powered search engine optimization: different names for the same goal.</p></div>
@@ -250,6 +290,10 @@ function rl_render_aiso() {
       <li class="step"><div class="k" aria-hidden="true">05</div><h3>Authority &amp; monitoring</h3><p>Earn the third-party mentions AI engines trust, re-run the prompt set, and correct anything the engines get wrong.</p></li>
     </ol>
     <p class="src">Sources: <a href="https://llmstxt.org/" rel="noopener" target="_blank">llms.txt proposal (llmstxt.org)</a> · <a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" rel="noopener" target="_blank">Google Search Central: Intro to structured data</a> · <a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">Google Search Central: AI features and your website</a> · <a href="https://arxiv.org/abs/2311.09735" rel="noopener" target="_blank">Aggarwal et al., GEO: Generative Engine Optimization (arXiv, 2023)</a></p>
+    <div class="nudge">
+      <p><b>Step 1 is free.</b>The Search Authority Diagnostic is your baseline: where you stand in Google and in AI answers today, and what to fix first.</p>
+      <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
+    </div>
   </div>
 </section>
 
@@ -266,6 +310,10 @@ function rl_render_aiso() {
       <li><b>Accuracy review</b>: where AI tools describe you wrongly, and the sources behind it.</li>
       <li><b>Monthly reporting</b>: mentions, citations, accuracy and AI referral traffic, with next actions.</li>
     </ul>
+    <div class="nudge">
+      <p><b>From $5,000 setup</b>AI search optimization is part of every Search Authority OS package, from $5,000 setup plus $1,500 to $2,500 a month. Not ready to commit? Start with the free diagnostic.</p>
+      <div class="btns"><a class="btn p" href="<?php echo $diag; ?>">Get your diagnostic <span class="ar">&rarr;</span></a><a class="btn g" href="<?php echo $u('packages'); ?>">See the packages <span class="ar">&rarr;</span></a></div>
+    </div>
   </div>
 </section>
 
@@ -303,6 +351,10 @@ function rl_render_aiso() {
       <li class="step"><div class="k" aria-hidden="true">04</div><h3>Where do your claims come from?</h3><p>Results and statistics should come with a source or a client you can call. Be careful with large percentages that have neither.</p></li>
       <li class="step"><div class="k" aria-hidden="true">05</div><h3>What can't you promise?</h3><p>The honest answer is placement in AI answers. Nobody controls the models, so a guarantee is a warning sign.</p></li>
     </ol>
+    <div class="nudge">
+      <p><b>Ask us these five questions.</b>Book a call and put them to us directly. You will get straight answers, including what we cannot promise.</p>
+      <a class="btn p" href="<?php echo $u('contact-us'); ?>">Talk to us <span class="ar">&rarr;</span></a>
+    </div>
   </div>
 </section>
 
@@ -338,7 +390,7 @@ function rl_render_aiso() {
   <div class="wrap" style="max-width:900px">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Questions&nbsp;<b>]</b></span><h2>About AI Search Optimization.</h2></div>
     <?php foreach (rl_aiso_faqs() as $k => $q) { ?>
-    <details<?php echo $k === 0 ? ' open' : ''; ?>><summary><h3 style="font:inherit;letter-spacing:inherit;margin:0"><?php echo esc_html($q[0]); ?></h3></summary><p><?php echo esc_html($q[1]); ?></p></details>
+    <details<?php echo $k === 0 ? ' open' : ''; ?>><summary><h3 style="font:inherit;letter-spacing:inherit;margin:0"><?php echo esc_html($q[0]); ?></h3></summary><p><?php echo esc_html($q[1]); ?></p><?php $fl = rl_aiso_faq_links(); if (!empty($fl[$q[0]])) { echo '<p class="flinks">'; foreach ($fl[$q[0]] as $x) echo '<a href="' . $u($x[0]) . '">' . esc_html($x[1]) . ' &rarr;</a>'; echo '</p>'; } ?></details>
     <?php } ?>
   </div>
 </section>
@@ -349,8 +401,10 @@ function rl_render_aiso() {
       <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
       <h2>Do AI tools recommend you, or a competitor?</h2>
       <p class="lede">The free Search Authority Diagnostic shows where you stand in Google and in AI answers, and what to fix first.</p>
+      <p class="next">What happens next: we research your site, search data, competitors and AI visibility, a person checks the findings, and you receive your diagnostic with a prioritized 90-day plan.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn g" href="<?php echo $u('contact-us'); ?>">Talk to us</a>
         <a class="btn g" href="<?php echo $u('search-authority-os'); ?>">How Search Authority OS works</a>
       </div>
     </div>
