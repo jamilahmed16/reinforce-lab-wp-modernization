@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-135 | Keyword map v2: `/services/ai-search-optimization/` owns "ai search optimization services" with AI SEO secondaries; 4 new FAQs (cost FAQ shows Search Authority OS prices); 3 future posts; page tuned on `.online` | 6 Oct | DONE (Jamil approved the map and "keep it" for the price) | this file |
 | D-134 | Blog post rules: 8th-grade reading level for every post; top-10 competitor analysis with Exa before writing, competitor semantics used in the post; first post reworked to both rules | 5 Oct | DONE (Jamil: "the reading difficulty should be 8th grader for all posts .... before writing any post must analyze top 10 results in google with exa ai...") | this file |
 | D-133 | Related reading at the end of every post: posts first, topped up with the most relevant pages when there are fewer than 3 related posts (all post templates) | 5 Oct | DONE (Jamil: "There must an option for related post or something like that in the end of the post") | this file |
 | F-027 | Review of the first post "What Is an AI Growth System?": strong structure, schema and sources; gaps are first-hand evidence, a body diagram, readability and the author photo | 5 Oct | FIXED except the author photo (awaiting Jamil) | this file |
@@ -196,6 +197,31 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-135 · Keyword map v2: AI search optimization services
+**Date:** 6 October 2026 · **Status:** DONE on `.online` (Jamil returned the map with "Continue from where you left off" and, on the cost FAQ, "Should it show the Search Authority OS price ($5,000 setup), keep it": read as approval of the map and of showing the price)
+
+| Page | Primary keyword | Secondary keywords |
+|---|---|---|
+| `/services/ai-search-optimization/` (page 72) | ai search optimization services | ai seo services, ai seo service, ai search engine optimization services, ai powered / ai-powered search engine optimization services, ai search service (kept) |
+| Future post | which citation analysis service is best for ai seo (90, KD 1) | |
+| Future post | how is ai impacting the seo consulting services industry (30) | |
+| Future post | how much do ai seo agency services cost pricing comparison (30) | ai seo content writing pricing per article (2,900, KD 17) |
+
+Volumes: Semrush, Jamil's screenshots (`claude/data/semrush/keywords-2026-10-06.md`). "what is ai optimization aio for search engines services", "what is ai seo or aio services for agencies" and "how can ai seo services improve my website's visibility" are answered on page 72 (FAQs).
+
+- **Competitor semantics (D-134 method on a service page):** 14 results from the Semrush SERP screenshots; 8 fetched and analysed, 6 read with Exa (Thrive x2, DareAISearch, Blueleaf, Trefoil, NP Digital). Report: `claude/research/serp/ai-search-optimization-services/report.md`. Ranking service pages are about 970 to 3,640 words; list pages ("best AI SEO agencies") 3,660 to 5,360 and often rank their own company first.
+- **Page 72 changed:**
+  - H1 "AI Search Optimization Services. Be named in AI answers."; lede opens with "Reinforce Lab's AI search optimization services (also called AI SEO services)" and names Copilot and AI Mode.
+  - Definitions lede names the other labels buyers see: AI SEO, AIO, AEO, AI-powered search engine optimization. Deliverables H2 "What do our AI SEO services include?"
+  - New section "How do you choose an AI SEO agency?" (5 questions: prompts, engines, site changes, sources for claims, what cannot be promised).
+  - Measurement: cited versus recommended counted separately; GA4 and Search Console for AI referrals; AI visibility tools named as options (Semrush AI Visibility Toolkit, Ahrefs Brand Radar, Profound, Peec AI) without claiming we use them.
+  - FAQs 6 to 10: "What are AI SEO services?", "How can AI SEO services improve my website's visibility?", "How much do AI search optimization services cost?" (Foundation $5,000 setup plus $1,500 to $2,500 a month; AI visibility monitoring from Growth OS $10,000 setup plus $3,500 to $5,000 a month; audit from $2,500; diagnostic free; matches the Packages page), "Do I need a separate AI SEO agency?" (also covers agency versus tool). First FAQ adds "also called AI optimization (AIO) or AI SEO".
+  - Natural term additions: traditional SEO, large language models, search intent, link building, content roadmap, topical authority, search visibility.
+  - Service schema name "AI Search Optimization Services" with alternate names; Yoast focus keyphrase "ai search optimization services"; meta "AI search optimization services from Reinforce Lab: get your brand found, cited and described accurately in ChatGPT, Perplexity, Gemini and AI Overviews." (153); title unchanged (54).
+- **Checks:** copy-check 0; audit gates pass (55 pages, 10 FAQ in schema and visible, 9 question H2s, 125 KB); reading grade 7.5; desktop and phone (390) checked. Common competitor terms missing from the page: 460 to 415 (the rest are generic words or do not fit).
 
 ---
 

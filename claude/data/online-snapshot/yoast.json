@@ -65,7 +65,7 @@
    false
   ],
   "indexing_first_time": true,
-  "indexing_reason": "permalink_settings_changed",
+  "indexing_reason": "post_type_made_public",
   "indexing_started": false,
   "keyword_analysis_active": true,
   "last_known_no_unindexed": {
@@ -78,7 +78,8 @@
   },
   "last_known_public_post_types": [
    "post",
-   "page"
+   "page",
+   "rl_project"
   ],
   "last_known_public_taxonomies": [
    "category",
@@ -94,7 +95,9 @@
   "ms_defaults_set": false,
   "msverify": "",
   "myyoast-oauth": false,
-  "new_post_types": [],
+  "new_post_types": {
+   "2": "rl_project"
+  },
   "new_taxonomies": [],
   "permalink_structure": "/%postname%/",
   "previous_version": "28.4",
@@ -127,7 +130,7 @@
   "semrush_integration_active": true,
   "semrush_tokens": [],
   "should_redirect_after_install_free": false,
-  "show_new_content_type_notification": false,
+  "show_new_content_type_notification": true,
   "show_onboarding_notice": true,
   "site_kit_configuration_permanently_dismissed": false,
   "site_kit_connected": false,
