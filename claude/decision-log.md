@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| F-028 | Full site audit of `.online` (55 URLs, desktop and phone, axe-core, HTTP): 8 P1 items (zero-radius rule broken by theme buttons, colour contrast, no favicon, empty blog card image, unstyled 404 and search, form email without SMTP, consent/GA4); type-scale, CTA-label and footer-name inconsistencies for Jamil | 6 Oct | OPEN (Jamil: "Check again across entire website...") | `claude/research/site-audit-2026-10-06.md` |
 | D-137 | AI Search Optimization page: SEO/GEO gaps closed (dateModified and visible last-updated date, price Offer in the Service schema, "Led by Jamil Ahmed" with reviewedBy, page-specific share image); main landmark already present, audit tool corrected | 6 Oct | DONE (Jamil: "Do all that required using a checklist") | this file |
 | D-136 | AI Search Optimization page: six conversion points added (mid-page CTAs after How it works, deliverables with price, and the agency checklist; client logo strip; FAQ links; Talk to us and next-step line in the final CTA); no content removed | 6 Oct | DONE (Jamil: "Go ahead") | this file |
 | D-135 | Keyword map v2: `/services/ai-search-optimization/` owns "ai search optimization services" with AI SEO secondaries; 4 new FAQs (cost FAQ shows Search Authority OS prices); 3 future posts; page tuned on `.online` | 6 Oct | DONE (Jamil approved the map and "keep it" for the price) | this file |
@@ -199,6 +200,17 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## F-028 · Full site audit: design consistency, accessibility, functions, performance
+**Date:** 6 October 2026 · **Status:** OPEN, report delivered (Jamil: "Check again across entire website about what's missing and a complete audit for inconsistency in text size, design, UI, and whatsoever is required for a industry standard website functionalities and anything required for optimization")
+
+- **Report:** `claude/research/site-audit-2026-10-06.md`. 55 URLs at 1440 and 390 px, axe-core on every page, HTTP checks, every internal link, one page per template reviewed visually. Read-only; nothing changed.
+- **Passing (VERIFIED):** no horizontal scroll; CLS at most 0.003; H1, H2, lede, eyebrow, buttons, container and section spacing consistent on nearly all pages; 0 broken internal links; 0 images without alt; skip link and phone menu everywhere; forms labelled and protected.
+- **P1:** 4 px rounded corners on every button, the menu button and some cards (Beaver Builder theme `.btn`, against D-013); colour contrast of `#e23b3b` and `#877d75` small text at 4.2 to 4.5:1 (841 elements, 51 pages); no favicon or site icon; empty grey image box on the blog card; 404 and search pages in the old default layout; form email sent without SMTP; consent banner and GA4 (launch list).
+- **For Jamil:** body text size (14.5 px on most pages) and 11 card-title sizes; 12 px minimum; container 1440 vs 1280 in D-013; LiteSpeed Cache inactive; nine labels for the diagnostic button; footer legal names, duplicate phone number, US office not in schema; author, date and category archives (production URL patterns, Rule 2).
+- **Correction to the audit method:** a first crawl reported JavaScript errors and Helvetica headings; they came from the sandbox proxy dropping assets and disappeared with cached assets. Not site defects.
 
 ---
 
