@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-143 | Button groups: wherever two or more buttons sit together they are the same size (desktop side by side at the longest label's width; phone stacked, full width, equal height) | 7 Oct | DONE (Jamil: "All the buttons size must be equal where ever there are two buttons") | this file |
 | D-142 | Phone footer reorganised like Jamil's reference (Semrush): the five link columns collapse into rows with a chevron and open on tap; desktop unchanged | 7 Oct | DONE (Jamil: "Organize it for Mobile device like the reference image attached") | this file |
 | D-141 | Last three axe items fixed: post entry headers are plain blocks in all 12 post templates, Services diagram role group, hidden labels for the empty first table headers (Audit page, post 330 body); axe 0 on every page | 7 Oct | DONE (Jamil: "Go ahead") | this file |
 | D-140 | Accessibility fixes from F-028: link names start with the visible text (axe label mismatch 249 to 0), footer column titles no longer headings (heading order 57 to 0), tap targets padded to 24px (2,800 small targets to 24, all inline in lists or text), form checkboxes 24px | 7 Oct | DONE (Jamil: "Go ahead") | this file |
@@ -207,6 +208,14 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-143 · Equal buttons in every button group
+**Date:** 7 October 2026 · **Status:** DONE on `.online` (Jamil, with phone screenshots of the Home hero and a closing call to action: "All the buttons size must be equal where ever there are two buttons")
+
+- **Rule (`core/reinforce-header.php`, applies to every page and to future ones):** any element in the main content that holds two or more `.btn` becomes a grid of equal columns (`:has(> .btn ~ .btn)`): side by side at the width of the longest label on desktop, labels centred; at 760 px and below the buttons stack, full width of their container and of equal height (a wrapped label makes its partner the same height). Centred groups (closing call to action) stay centred. The header button is not affected.
+- **Checked (VERIFIED, all 57 URLs at 1440 and 390):** 212 button groups, all equal in width and height; no horizontal overflow; every group that should be centred is centred.
 
 ---
 
