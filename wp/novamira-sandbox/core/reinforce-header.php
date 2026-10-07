@@ -243,7 +243,7 @@ body .rl-footer .f-direct a,body .rl-page .myth a,body .rl-agents a.more,body .r
 #fl-main-content :has(> .btn ~ .btn){display:grid!important;grid-auto-flow:column;grid-auto-columns:1fr;width:max-content;max-width:100%;gap:14px}
 #fl-main-content :has(> .btn ~ .btn) > .btn{justify-content:center;white-space:nowrap;margin:0}
 #fl-main-content .final :has(> .btn ~ .btn),#fl-main-content [style*="text-align:center"] :has(> .btn ~ .btn){margin-inline:auto}
-@media(max-width:760px){#fl-main-content :has(> .btn ~ .btn){grid-auto-flow:row;grid-template-columns:1fr;width:100%}#fl-main-content :has(> .btn ~ .btn) > .btn{white-space:normal}}
+@media(max-width:760px){#fl-main-content :has(> .btn ~ .btn){grid-auto-flow:row;grid-template-columns:1fr;grid-auto-rows:1fr;width:100%}#fl-main-content :has(> .btn ~ .btn) > .btn{white-space:normal}}
 </style>
 <?php }
 
