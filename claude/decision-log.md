@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-144 | Migration approach: one switch (new pages plus kept production posts copied unchanged at the same URLs and dates, new design), posts rewritten after launch; 16 author URLs 301 to /blog/ supersede the September plan (/our-team and 410); checklist in `claude/migration-checklist.md` | 7 Oct | APPROVED (Jamil: "1. Yes 2. today's decision (all 16 go to /blog/)"); bylines pending | `claude/migration-checklist.md` |
 | D-143 | Button groups: wherever two or more buttons sit together they are the same size (desktop side by side at the longest label's width; phone stacked, full width, equal height) | 7 Oct | DONE (Jamil: "All the buttons size must be equal where ever there are two buttons") | this file |
 | D-142 | Phone footer reorganised like Jamil's reference (Semrush): the five link columns collapse into rows with a chevron and open on tap; desktop unchanged | 7 Oct | DONE (Jamil: "Organize it for Mobile device like the reference image attached") | this file |
 | D-141 | Last three axe items fixed: post entry headers are plain blocks in all 12 post templates, Services diagram role group, hidden labels for the empty first table headers (Audit page, post 330 body); axe 0 on every page | 7 Oct | DONE (Jamil: "Go ahead") | this file |
@@ -208,6 +209,17 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-144 · Migration approach: one switch, posts carried across unchanged
+**Date:** 7 October 2026 · **Status:** APPROVED (Jamil: "1. Yes 2. today's decision (all 16 go to /blog/)"); byline question pending
+
+- **Approach:** the new pages and the kept production posts go live together in one switch. Kept posts are copied to `.online` unchanged (same slug, title, words, images, publish date, category, Yoast title and meta) in the new design; rewrites happen one at a time after launch. The copy is one controlled import of existing posts, not new publishing: the agreed exception to F-003, with modified dates kept at production's values.
+- **What the copy changes (stated to Jamil):** the design; links inside the text that point to redirected or retired URLs go straight to the final page (wording untouched); 3 Beaver Builder posts become plain content; old Divi and Monarch metadata (about 650 fields) not copied. Author: pending (recommendation: real writer or "Reinforce Lab team" as byline, Jamil only on his own posts, "Reviewed by" only after a real review).
+- **Author archives:** the 16 production author URLs 301 to `/blog/` (D-139). This **supersedes** the September page-level plan, which had the main author pages 301 to `/our-team` and their `/page/N/` pages as 410.
+- **Checklist:** `claude/migration-checklist.md` lists every task before the switch (data and decisions, read-only production inventory, post carry-over, redirect map in code with a zero-failure test over every known old URL, internal link scan, page parity, launch inputs, the switch runbook including Novamira removed from production) and after it (rewrites one at a time, weekly monitoring for 6+ weeks, improvements). Jamil asked for "100% accuracy": the test covers every URL in the register, Search Console, backlinks, production sitemaps and internal links, and Yoast redirects, with 0 failures as the gate; URLs that appear in no source are caught after launch through the 404 log.
+- **Migration still not scheduled:** it waits for the backlink export, the decisions in A1, the redirect map sign-off and a passing test.
 
 ---
 
