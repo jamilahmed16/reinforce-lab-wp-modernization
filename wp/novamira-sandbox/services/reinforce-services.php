@@ -97,7 +97,7 @@ function rl_services_cg_kf() {
 }
 function rl_services_cg_svg() {
     $G = rl_services_groups(); $h = 'esc_html';
-    $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlCgT"><title id="rlCgT">Reinforce Lab services in four groups (Search, AI Search and Content, Automation and Growth, Advisory and Web) connect into one AI Growth System, measured on business impact.</title>'
+    $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="group" aria-labelledby="rlCgT"><title id="rlCgT">Reinforce Lab services in four groups (Search, AI Search and Content, Automation and Growth, Advisory and Web) connect into one AI Growth System, measured on business impact.</title>'
         . '<defs><linearGradient id="rlcCoreG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#990000" stop-opacity=".16"/><stop offset="1" stop-color="#990000" stop-opacity=".03"/></linearGradient></defs>';
     $links = '';
     foreach ($G as $c => $g) {

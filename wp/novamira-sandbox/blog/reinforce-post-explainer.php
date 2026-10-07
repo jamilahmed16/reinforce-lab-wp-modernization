@@ -100,7 +100,7 @@ function rl_explainer_render($c) {
   <li><span aria-current="page"><?php echo esc_html(wp_trim_words($title, 8)); ?></span></li>
 </ol></nav>
 
-<header class="wrap e-entry">
+<div class="wrap e-entry">
   <div class="e-kicker"><span class="e-kind">Explainer</span><?php if ($c['cat']) echo '<a class="e-cat" href="' . esc_url(get_category_link($c['cat'])) . '">' . esc_html($c['cat']->name) . '</a>'; ?></div>
   <?php if ($x['question'] !== '') { ?><p class="e-q"><?php echo esc_html($x['question']); ?></p><?php } ?>
   <div class="e-head"><h1 class="e-term"><?php echo esc_html($term); ?><?php if ($x['abbr'] !== '') echo ' <span class="e-abbr">(' . esc_html($x['abbr']) . ')</span>'; ?></h1></div>
@@ -120,7 +120,7 @@ function rl_explainer_render($c) {
     <?php if ($x['def_note'] !== '') { ?><p class="src"><?php echo esc_html($x['def_note']); ?></p><?php } ?>
   </div>
   <?php } ?>
-</header>
+</div>
 
 <?php if (has_post_thumbnail($id)) { ?><figure class="wrap e-feat"><?php echo get_the_post_thumbnail($id, 'full', ['loading' => 'eager', 'fetchpriority' => 'high']); ?></figure><?php } ?>
 

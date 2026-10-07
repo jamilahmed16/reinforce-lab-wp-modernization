@@ -95,7 +95,7 @@ function rl_industry_render($c) {
 </ol></nav>
 
 <div class="wrap">
-  <header class="i-cover">
+  <div class="i-cover">
     <div class="i-band" aria-hidden="true"><span>Industry briefing</span></div>
     <div class="cv">
       <div class="cv-top">
@@ -111,7 +111,7 @@ function rl_industry_render($c) {
         <?php if ($d['updated'] !== '') { ?><span class="fresh">Updated <time datetime="<?php echo esc_attr($d['updated']); ?>"><b><?php echo esc_html(date_i18n('j M Y', strtotime($d['updated']))); ?></b></time></span><?php } ?>
       </div>
     </div>
-  </header>
+  </div>
   <?php if ($x['glance']) { ?>
   <div class="i-glance n<?php echo count($x['glance']); ?>" aria-label="The sector at a glance"><?php foreach ($x['glance'] as $g) echo '<div class="gl"><span class="k">' . esc_html($g[0]) . '</span><b>' . esc_html($g[1]) . '</b>' . (!empty($g[2]) ? '<p>' . esc_html($g[2]) . '</p>' : '') . '</div>'; ?></div>
   <?php } ?>

@@ -90,7 +90,7 @@ function rl_cmp_render($c) {
   <li><span aria-current="page"><?php echo esc_html(wp_trim_words($title, 8)); ?></span></li>
 </ol></nav>
 
-<header class="wrap c-hero">
+<div class="wrap c-hero">
   <div class="c-kicker"><span class="c-kind">Comparison</span><?php if ($c['cat']) echo '<a class="c-cat" href="' . esc_url(get_category_link($c['cat'])) . '">' . esc_html($c['cat']->name) . '</a>'; ?></div>
   <h1 class="c-h1"><?php echo esc_html($title); ?></h1>
   <?php if ($standfirst !== '') { ?><p class="c-stand"><?php echo esc_html($standfirst); ?></p><?php } ?>
@@ -113,7 +113,7 @@ function rl_cmp_render($c) {
   </div>
   <?php } ?>
   <?php } ?>
-</header>
+</div>
 
 <?php if (has_post_thumbnail($id)) { ?><figure class="wrap c-feat"><?php echo get_the_post_thumbnail($id, 'full', ['loading' => 'eager', 'fetchpriority' => 'high']); ?></figure><?php } ?>
 

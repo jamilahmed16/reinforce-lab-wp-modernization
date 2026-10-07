@@ -155,7 +155,7 @@ function rl_research_render($c) {
 </ol></nav>
 
 <div class="wrap">
-  <header class="r-hero<?php echo $card ? '' : ' solo'; ?>">
+  <div class="r-hero<?php echo $card ? '' : ' solo'; ?>">
     <div>
       <div class="r-kicker"><span class="r-kind">Original Research</span><?php if ($c['cat']) echo '<a class="r-cat" href="' . esc_url(get_category_link($c['cat'])) . '">' . esc_html($c['cat']->name) . '</a>'; ?></div>
       <h1 class="r-h1"><?php echo $h1; ?></h1>
@@ -174,7 +174,7 @@ function rl_research_render($c) {
       <div class="acts<?php echo $x['dataset'] !== '' ? '' : ' one'; ?>"><?php if ($x['dataset'] !== '') echo '<a href="#data">' . $dl . 'Get the data</a>'; ?><a class="cite-go" href="#cite">Cite this</a></div>
     </aside>
     <?php } ?>
-  </header>
+  </div>
 
   <?php if ($x['headline']) { ?>
   <section class="r-head" aria-label="Headline finding">

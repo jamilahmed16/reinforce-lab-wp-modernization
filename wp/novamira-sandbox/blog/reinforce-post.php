@@ -306,7 +306,7 @@ function rl_post_output() {
   <li><span aria-current="page"><?php echo esc_html(wp_trim_words(get_the_title(), 8)); ?></span></li>
 </ol></nav>
 
-<header class="hero">
+<div class="hero">
   <div class="wrap">
     <div class="tags">
       <span class="tag type"><?php echo esc_html($d['type_label']); ?></span>
@@ -322,7 +322,7 @@ function rl_post_output() {
     </div>
     <?php if (has_post_thumbnail()) { ?><figure class="feat"><?php the_post_thumbnail('full', ['loading' => 'eager', 'fetchpriority' => 'high']); ?></figure><?php } ?>
   </div>
-</header>
+</div>
 
 <div class="wrap grid<?php echo $toc ? '' : ' notoc'; ?>">
   <article>

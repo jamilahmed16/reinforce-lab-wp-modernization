@@ -225,7 +225,7 @@ function rl_render_audit() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Where it fits&nbsp;<b>]</b></span><h2>Diagnostic, audit or package: which do you need?</h2><p class="lede">Three steps, each a bigger commitment than the last. Most teams start with the free diagnostic.</p></div>
     <div class="tscroll" role="region" aria-label="Comparison of the free diagnostic, the audit and the packages" tabindex="0">
       <table>
-        <thead><tr><th scope="col">&nbsp;</th><th scope="col">Search Authority Diagnostic</th><th scope="col" class="us">SEO &amp; AI Search Audit</th><th scope="col">Search Authority OS packages</th></tr></thead>
+        <thead><tr><th scope="col"><span class="sr" style="position:absolute;left:-9999px">Compared on</span></th><th scope="col">Search Authority Diagnostic</th><th scope="col" class="us">SEO &amp; AI Search Audit</th><th scope="col">Search Authority OS packages</th></tr></thead>
         <tbody>
           <tr><th scope="row">What it is</th><td>A focused read of where you stand</td><td class="us">The full, one-time analysis and plan</td><td>An ongoing system that researches, writes, audits and monitors</td></tr>
           <tr><th scope="row">Depth</th><td>Seven layers, headline findings</td><td class="us">Every important page and template, competitors and a documented AI-visibility test</td><td>Continuous, month after month</td></tr>

@@ -141,7 +141,7 @@ function rl_product_render($c) {
 </ol></nav>
 
 <div class="wrap">
-  <header class="p-hero">
+  <div class="p-hero">
     <div>
       <div class="p-kicker"><span class="p-kind"><?php echo esc_html($x['sub_label']); ?></span><?php if ($c['cat']) echo '<a class="p-cat" href="' . esc_url(get_category_link($c['cat'])) . '">' . esc_html($c['cat']->name) . '</a>'; ?></div>
       <h1 class="p-h1"><?php echo $h1; ?></h1>
@@ -159,7 +159,7 @@ function rl_product_render($c) {
       <?php if ($rows) { ?><dl><?php foreach ($rows as $r) echo '<div><dt>' . esc_html($r[0]) . '</dt><dd>' . ($r[2] ? '<a href="' . esc_url($r[2]) . '">' . esc_html($r[1]) . '</a>' : esc_html($r[1])) . '</dd></div>'; ?></dl><?php } ?>
       <div class="acts<?php echo $purl ? '' : ' one'; ?>"><?php if ($purl) echo '<a href="' . esc_url($purl) . '">' . esc_html($about) . '</a>'; ?><a class="sec" href="<?php echo esc_url($diag); ?>">Free diagnostic</a></div>
     </aside>
-  </header>
+  </div>
 </div>
 
 <?php if (has_post_thumbnail($id)) { ?><figure class="wrap p-feat"><?php echo get_the_post_thumbnail($id, 'full', ['loading' => 'eager', 'fetchpriority' => 'high']); ?></figure><?php } ?>

@@ -122,7 +122,7 @@ function rl_casestudy_render($c) {
 </ol></nav>
 
 <div class="wrap">
-  <header class="cs-hero<?php echo $x['client'] !== '' ? '' : ' solo'; ?>">
+  <div class="cs-hero<?php echo $x['client'] !== '' ? '' : ' solo'; ?>">
     <div>
       <div class="cs-kicker"><span class="cs-kind">Case Study</span><?php if ($c['cat']) echo '<a class="cs-cat" href="' . esc_url(get_category_link($c['cat'])) . '">' . esc_html($c['cat']->name) . '</a>'; ?></div>
       <h1 class="cs-h1"><?php echo $h1; ?></h1>
@@ -146,7 +146,7 @@ function rl_casestudy_render($c) {
       } ?></dl><?php } ?>
     </aside>
     <?php } ?>
-  </header>
+  </div>
 
   <?php if ($x['results']) { ?>
   <section class="results" aria-label="Results">

@@ -87,7 +87,7 @@ function rl_guide_render($c) {
   <li><span aria-current="page"><?php echo esc_html(wp_trim_words($title, 8)); ?></span></li>
 </ol></nav>
 
-<header class="wrap g-cover">
+<div class="wrap g-cover">
   <div>
     <div class="g-kicker"><span class="g-kind">Guide</span><?php if ($c['cat']) echo '<a class="g-cat" href="' . esc_url(get_category_link($c['cat'])) . '">' . esc_html($c['cat']->name) . '</a>'; ?></div>
     <h1 class="g-h1"><?php echo count($tparts) === 2 ? esc_html($tparts[0]) . ':<em>' . esc_html($tparts[1]) . '</em>' : esc_html($title); ?></h1>
@@ -104,7 +104,7 @@ function rl_guide_render($c) {
     <ol><?php foreach ($chapters as $i => $ch) echo '<li><a href="#' . esc_attr($ch['id']) . '"><span class="n">' . $nn($i + 1) . '</span><span>' . esc_html($ch['title']) . '</span><span class="m">' . (int) $ch['mins'] . ' min</span></a></li>'; ?></ol>
   </aside>
   <?php } ?>
-</header>
+</div>
 
 <?php if (has_post_thumbnail($id)) { ?><figure class="wrap g-feat"><?php echo get_the_post_thumbnail($id, 'full', ['loading' => 'eager', 'fetchpriority' => 'high']); ?></figure><?php } ?>
 

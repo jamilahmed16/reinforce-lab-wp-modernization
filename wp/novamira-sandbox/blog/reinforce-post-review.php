@@ -127,7 +127,7 @@ function rl_review_render($c) {
   <li><span aria-current="page"><?php echo esc_html(wp_trim_words($title, 8)); ?></span></li>
 </ol></nav>
 
-<header class="wrap r-hero">
+<div class="wrap r-hero">
   <div class="r-kicker"><span class="r-kind">Review</span><?php if ($c['cat']) echo '<a class="r-cat" href="' . esc_url(get_category_link($c['cat'])) . '">' . esc_html($c['cat']->name) . '</a>'; ?></div>
   <h1 class="r-h1"><?php echo $h1; ?></h1>
   <?php if ($standfirst !== '') { ?><p class="r-stand"><?php echo esc_html($standfirst); ?></p><?php } ?>
@@ -155,7 +155,7 @@ function rl_review_render($c) {
     <?php } ?>
   </section>
   <?php } ?>
-</header>
+</div>
 
 <?php if (has_post_thumbnail($id)) { ?><figure class="wrap r-feat"><?php echo get_the_post_thumbnail($id, 'full', ['loading' => 'eager', 'fetchpriority' => 'high']); ?></figure><?php } ?>
 

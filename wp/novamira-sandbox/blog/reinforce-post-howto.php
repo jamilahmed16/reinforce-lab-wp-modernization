@@ -105,7 +105,7 @@ function rl_howto_render($c) {
   <li><span aria-current="page"><?php echo esc_html(wp_trim_words($title, 8)); ?></span></li>
 </ol></nav>
 
-<header class="wrap h-hero<?php echo ($specs || $need || $result) ? '' : ' solo'; ?>">
+<div class="wrap h-hero<?php echo ($specs || $need || $result) ? '' : ' solo'; ?>">
   <div>
     <div class="h-kicker"><span class="h-kind">How-To</span><?php if ($c['cat']) echo '<a class="h-cat" href="' . esc_url(get_category_link($c['cat'])) . '">' . esc_html($c['cat']->name) . '</a>'; ?></div>
     <h1 class="h-h1"><?php echo $h1; ?></h1>
@@ -132,7 +132,7 @@ function rl_howto_render($c) {
     <?php if ($result !== '') { ?><div class="t-result"><p class="t-label">When you finish</p><p><?php echo esc_html($result); ?></p></div><?php } ?>
   </aside>
   <?php } ?>
-</header>
+</div>
 
 <?php if (has_post_thumbnail($id)) { ?><figure class="wrap h-feat"><?php echo get_the_post_thumbnail($id, 'full', ['loading' => 'eager', 'fetchpriority' => 'high']); ?></figure><?php } ?>
 

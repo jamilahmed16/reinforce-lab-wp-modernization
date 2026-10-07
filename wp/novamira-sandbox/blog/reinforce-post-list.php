@@ -134,7 +134,7 @@ function rl_list_render($c) {
   <li><span aria-current="page"><?php echo esc_html(wp_trim_words($title, 8)); ?></span></li>
 </ol></nav>
 
-<header class="wrap l-hero<?php echo $n ? '' : ' solo'; ?>">
+<div class="wrap l-hero<?php echo $n ? '' : ' solo'; ?>">
   <div>
     <div class="l-kicker"><span class="l-kind">Best / List</span><?php if ($c['cat']) echo '<a class="l-cat" href="' . esc_url(get_category_link($c['cat'])) . '">' . esc_html($c['cat']->name) . '</a>'; ?></div>
     <h1 class="l-h1"><?php echo $h1; ?></h1>
@@ -160,7 +160,7 @@ function rl_list_render($c) {
     </div>
   </div>
   <?php } ?>
-</header>
+</div>
 
 <?php if (has_post_thumbnail($id)) { ?><figure class="wrap l-feat"><?php echo get_the_post_thumbnail($id, 'full', ['loading' => 'eager', 'fetchpriority' => 'high']); ?></figure><?php } ?>
 

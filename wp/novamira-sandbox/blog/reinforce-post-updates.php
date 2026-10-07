@@ -113,7 +113,7 @@ function rl_updates_render($c) {
   <li><span aria-current="page"><?php echo esc_html(wp_trim_words($title, 8)); ?></span></li>
 </ol></nav>
 
-<header class="wrap u-desk">
+<div class="wrap u-desk">
   <div class="ticker">
     <span class="u-kind">Update</span><?php if ($c['cat']) echo '<a class="u-cat" href="' . esc_url(get_category_link($c['cat'])) . '">' . esc_html($c['cat']->name) . '</a>'; ?>
     <?php if (isset($statuses[$x['status']])) { ?><span class="status s-<?php echo esc_attr($x['status']); ?>"><i aria-hidden="true"></i><?php echo esc_html($statuses[$x['status']]); ?></span><?php } ?>
@@ -135,7 +135,7 @@ function rl_updates_render($c) {
     <?php } ?>
   </ol>
   <?php } ?>
-</header>
+</div>
 
 <?php if (has_post_thumbnail($id)) { ?><figure class="wrap u-feat"><?php echo get_the_post_thumbnail($id, 'full', ['loading' => 'eager', 'fetchpriority' => 'high']); ?></figure><?php } ?>
 
