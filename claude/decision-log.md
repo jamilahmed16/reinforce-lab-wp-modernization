@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-140 | Accessibility fixes from F-028: link names start with the visible text (axe label mismatch 249 to 0), footer column titles no longer headings (heading order 57 to 0), tap targets padded to 24px (2,800 small targets to 24, all inline in lists or text), form checkboxes 24px | 7 Oct | DONE (Jamil: "Go ahead") | this file |
 | D-139 | Jamil's design decisions on F-028: body text 16px, card titles 20px, 12px minimum, container 1440 (supersedes D-013's 1280), one button label "Get your free diagnostic", footer names kept, US office in schema, LiteSpeed Cache stays off, author/date/Uncategorized archives retired (301 to /blog/) | 7 Oct | DONE on `.online` | this file |
 | D-138 | F-028 P1 fixes on `.online`: zero radius everywhere, accessible colour tokens, blog grid and post share image, kit-styled 404 and search, SMTP code (waits for mailbox), cookie choice bar with GPC and consent-gated GA4, privacy policy row | 7 Oct | DONE (Jamil: "Do it all") | this file |
 | O-026 | Favicon and site icon: Jamil asked to be reminded later (reminder scheduled 8 Oct) | 7 Oct | OPEN | this file |
@@ -204,6 +205,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-140 · Accessibility fixes: link names, footer headings, tap targets
+**Date:** 7 October 2026 · **Status:** DONE on `.online` (Jamil: "Go ahead")
+
+- **Link names (WCAG 2.5.3):** every link's accessible name now starts with its visible words. "Explore →" links on the 8 industry cards of 21 service pages and the agent pages ("Explore: AI Search Optimization for Healthcare"); "Read more" and "Read article" links in the post templates and the blog; the Services diagram tiles ("SEO: Search Engine Optimization"); the Agents hub diagram (a space added between the agent number and name, and names such as "A-01 Search Intel: SEO Intelligence Agent") and its "Explore agent" links. axe label-content-name-mismatch: 249 to 0.
+- **Footer headings:** the five footer column titles were `h4` straight after page `h2`s; now `<p class="f-h">` with the same computed style (Oswald 15px, weight 400). axe heading-order: 57 to 0.
+- **Tap targets (WCAG 2.5.8):** padding on breadcrumbs, footer links (list gap reduced from 11 to 7px so the footer keeps its height), "Explore" and "Source" links, footer phone and email, legal contents links and standalone links; form checkboxes 24px on every form. Small targets on phone: about 2,800 to 24; the 24 left are 20 to 23px links inside lists and running text with space around them (INFERENCE: covered by the spacing exception; the crawler does not measure spacing).
+- **Checks (VERIFIED, all 57 URLs at 1440 and 390):** no overflow, 0 rounded corners, 0 contrast failures, 0 text under 12px, no console errors. **Still flagged by axe (P3, not in this batch):** links inside the Home hero SVG (nested interactive, 1), an empty first table header on 2 pages, and a banner landmark inside the post (1).
 
 ---
 
