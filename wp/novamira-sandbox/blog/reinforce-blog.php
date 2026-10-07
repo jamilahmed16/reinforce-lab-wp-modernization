@@ -24,12 +24,14 @@ add_action('template_redirect', function () {
 add_action('wp', function () {
     if (is_admin() || is_feed()) return;
     $default = (int) get_option('default_category');
-    if (is_author() || is_date() || ($default && is_category($default))) {
+    $author_path = (bool) preg_match('#^/author/[^/]+(/|$)#', (string) wp_parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH)); // includes production's former authors and their /page/N/ and /paged-N/ URLs
+    if (is_author() || is_date() || ($default && is_category($default)) || $author_path) {
         $blog = (int) get_option('page_for_posts');
         wp_safe_redirect($blog ? get_permalink($blog) : home_url('/'), 301, 'Reinforce Lab');
         exit;
     }
 }, 0);
+add_filter('wpseo_sitemap_exclude_taxonomy', function ($ex, $tax) { return $tax === 'category' && !get_categories(['hide_empty' => true, 'exclude' => [(int) get_option('default_category')]]) ? true : $ex; }, 10, 2); // no category sitemap while only Uncategorized exists
 add_filter('wpseo_exclude_from_sitemap_by_term_ids', function ($ids) { $d = (int) get_option('default_category'); return $d ? array_merge((array) $ids, [$d]) : $ids; });
 
 /* ---------- robots: page 2+ of any archive, and any empty archive, = noindex,follow ---------- */
