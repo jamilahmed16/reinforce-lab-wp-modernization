@@ -222,7 +222,7 @@ function rl_render_agents() {
         <p class="out"><?php echo esc_html($a[3]); ?></p>
         <ul><?php foreach ($a[4] as $li) echo '<li>' . esc_html($li) . '</li>'; ?></ul>
         <p class="for"><b>Best for:</b> <?php echo esc_html($a[5]); ?></p>
-        <a class="more" href="<?php echo $link; ?>" aria-label="Explore the <?php echo esc_attr($a[2]); ?> Agent">Explore agent &rarr;</a>
+        <a class="more" href="<?php echo $link; ?>" aria-label="Explore agent: <?php echo esc_attr($a[2]); ?> Agent">Explore agent &rarr;</a>
       </article>
       <?php } ?>
     </div>
