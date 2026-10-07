@@ -48,11 +48,11 @@ Tasks:
 ### A4. Redirect map in code and the zero-failure test (gate)
 
 - [ ] All approved 301s, 410s and merges implemented in code on `.online` (one source file, versioned in git).
-- [ ] **Test harness over every known old URL**: the 793-row register, Search Console's 425 pages and link targets, the backlink export, production's sitemaps and internal links, and the Yoast redirects. For each URL it checks: final status as approved (200, 301 to target, or 410), final URL equals the approved target, **at most one redirect hop**, no loops, the target is indexable with a self-canonical, query-string and trailing-slash variants behave the same. **Pass mark: 0 failures.** **(gate)**
+- [ ] **Redirect test over every known old URL**: the 793-row register, Search Console's 425 pages and link targets, the backlink export, production's sitemaps and internal links, and the Yoast redirects. For each URL it checks: final status as approved (200, 301 to target, or 410), final URL equals the approved target, **at most one redirect hop**, no loops, the target is indexable with a self-canonical, query-string and trailing-slash variants behave the same. **Pass mark: 0 failures.** **(gate)**
 - [ ] **Internal link scan** of every page and post on `.online`: 0 links to a 404, 410 or redirect; 0 links to `reinforcelab.online` (all switch to the live domain). **(gate)**
 - [ ] Every URL a backlink points to resolves to a 200 page (directly or by one 301). **(gate)**
 
-Note on "100% accuracy": the harness guarantees 100% for every URL that appears in any of the sources above. A URL that exists nowhere in our data (for example an old link on a third-party site that no export shows) can only be caught after launch, by watching the 404 log (B2).
+Note on "100% accuracy": the redirect test guarantees 100% for every URL that appears in any of the sources above. A URL that exists nowhere in our data (for example an old link on a third-party site that no export shows) can only be caught after launch, by watching the 404 log (B2).
 
 ### A5. Pages and site quality (mostly done)
 
@@ -72,7 +72,7 @@ Note on "100% accuracy": the harness guarantees 100% for every URL that appears 
 - [ ] Turn indexing on: WordPress "discourage search engines" off, `wp-content/uploads/.htaccess` noindex header **not** copied, canonical tags present (they are off only because `.online` is noindex).
 - [ ] Domain switch to `https://reinforcelab.com` (search-replace of the domain in content and settings), SSL valid, `http` and `www` redirect to the main address in one hop.
 - [ ] Security headers on the live server (HSTS, nosniff, referrer policy, frame protection), version numbers hidden.
-- [ ] Re-run the A4 harness against the live domain within the first hour: 0 failures, or roll back. **(gate)**
+- [ ] Re-run the A4 redirect test against the live domain within the first hour: 0 failures, or roll back. **(gate)**
 - [ ] Submit the XML sitemap in Search Console; request indexing for Home and the main service pages.
 
 ---
@@ -108,5 +108,5 @@ Note on "100% accuracy": the harness guarantees 100% for every URL that appears 
 3. Read-only production inventory (me, after your OK).
 4. Final redirect map file for URL-by-URL sign-off (me, then Jamil).
 5. Carry the kept posts across and implement the map in code (me).
-6. Harness and link scan to 0 failures (me).
+6. Redirect test and link scan to 0 failures (me).
 7. Launch inputs (Jamil) and the switch (together, on an agreed date).
