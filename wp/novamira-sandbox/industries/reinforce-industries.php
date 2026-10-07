@@ -383,7 +383,7 @@ function rl_render_industries() {
       <h2>See how your industry shows up in search and AI.</h2>
       <p class="lede">The free Search Authority Diagnostic reviews your visibility, content and AI-search presence against your industry, and shows what to fix first.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('services'); ?>">All services</a>
       </div>
     </div>
@@ -502,7 +502,7 @@ function rl_render_industry() {
       <h2>How does your business show up in search and AI?</h2>
       <p class="lede">The free Search Authority Diagnostic reviews your visibility, content and AI-search presence, and shows what to fix first.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('industries'); ?>">All industries</a>
       </div>
     </div>

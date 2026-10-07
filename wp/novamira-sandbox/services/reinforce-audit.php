@@ -373,7 +373,7 @@ note   repeat run 2/3 · same result · competitor cited from a comparison page<
       <p class="lede">Start with the free Search Authority Diagnostic. If you need to go deeper, we'll scope the audit from there.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $req; ?>">Request an audit <span class="ar">&rarr;</span></a>
-        <a class="btn g" href="<?php echo $diag; ?>">Start with the free diagnostic</a>
+        <a class="btn g" href="<?php echo $diag; ?>">Get your free diagnostic</a>
       </div>
     </div>
   </div>

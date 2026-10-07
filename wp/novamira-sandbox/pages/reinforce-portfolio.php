@@ -196,7 +196,7 @@ function rl_render_portfolio() {
       <p class="lede"><strong>Reinforce Lab has built online stores, web applications and websites for retailers, schools, associations and professional firms</strong>, on WordPress, WooCommerce and Python with Django. Each project below says what the client needed, what we built and the tools we used.</p>
       <div class="cta-row">
         <a class="btn p" href="#projects">See the projects <span class="ar">&rarr;</span></a>
-        <a class="btn g" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic</a>
+        <a class="btn g" href="<?php echo $diag; ?>">Get your free diagnostic</a>
       </div>
     </div>
     <aside class="p-panel" aria-label="Portfolio at a glance">
@@ -269,7 +269,7 @@ function rl_render_portfolio() {
       <h2>See what we would fix first on your site.</h2>
       <p class="lede">The free Search Authority Diagnostic reviews your visibility, content and AI-search presence, and shows what to fix first.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('contact-us'); ?>">Contact us</a>
       </div>
     </div>
@@ -493,7 +493,7 @@ function rl_render_project() {
       <h2>Planning a site or a platform like this?</h2>
       <p class="lede">Tell us what you need, or start with the free Search Authority Diagnostic to see what to fix first on your current site.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('contact-us'); ?>">Contact us</a>
       </div>
     </div>

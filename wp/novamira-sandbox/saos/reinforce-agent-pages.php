@@ -310,7 +310,7 @@ function rl_render_agent() {
       <h2>Is this the agent you need first?</h2>
       <p class="lede">The free Search Authority Diagnostic shows where your biggest search gap is, and which agent or package closes it.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('packages'); ?>">Compare packages</a>
       </div>
     </div>

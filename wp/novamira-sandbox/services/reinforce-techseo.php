@@ -367,7 +367,7 @@ function rl_render_techseo() {
       <h2>What's stopping your pages from being indexed?</h2>
       <p class="lede">The free Search Authority Diagnostic includes a technical foundation review: indexability, crawlability, architecture and the barriers holding you back.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('services'); ?>">All services</a>
       </div>
     </div>

@@ -302,7 +302,7 @@ function rl_render_diagnostic() {
           <div class="field"><label for="outcome">Desired outcome</label><input id="outcome" name="outcome" placeholder="e.g. pipeline, authority" maxlength="200"></div>
         </div>
         <label class="consent"><input type="checkbox" name="consent" value="1" required> <span>I agree that Reinforce Lab may use these details to prepare my diagnostic and contact me about it.</span></label>
-        <button class="btn p full" type="submit" style="margin-top:18px">Request My Search Authority Diagnostic <span class="ar">&rarr;</span></button>
+        <button class="btn p full" type="submit" style="margin-top:18px">Get your free diagnostic <span class="ar">&rarr;</span></button>
         <p class="note">We use your details only to prepare your diagnostic and contact you about it. We keep your details for up to 24 months, stored with our host, Hostinger, and we never sell them. You can withdraw your consent or ask us to delete them at any time: <a href="mailto:hello@reinforcelab.com">hello@reinforcelab.com</a>. See our <a href="<?php echo esc_url($privacy); ?>">Privacy Policy</a>.</p>
       </form>
       <?php } ?>

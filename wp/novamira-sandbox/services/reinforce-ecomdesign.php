@@ -309,7 +309,7 @@ function rl_render_ecomdesign() {
       <h2>Where is your store losing sales?</h2>
       <p class="lede">The free Search Authority Diagnostic reviews your store's visibility in Google, its speed and its path to purchase, and shows what to fix first.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('services'); ?>">All services</a>
       </div>
     </div>

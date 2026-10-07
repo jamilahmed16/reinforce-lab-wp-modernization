@@ -339,7 +339,7 @@ function rl_render_header() {
         <?php endif; endforeach; ?>
       </ul>
     </nav>
-    <a class="btn p hcta" href="<?php echo esc_url($cta); ?>">Get Your Diagnostic <span class="ar">&rarr;</span></a>
+    <a class="btn p hcta" href="<?php echo esc_url($cta); ?>">Get Your Free Diagnostic <span class="ar">&rarr;</span></a>
     <button class="burger" id="rl-burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -355,7 +355,7 @@ function rl_render_header() {
       else { echo '<a class="m-mini" href="' . esc_url($c->url) . '">' . esc_html($c->title) . '</a>'; }
     endforeach;
   endif; endforeach; ?>
-  <a class="btn p m-cta" href="<?php echo esc_url($cta); ?>">Get Your Diagnostic <span class="ar">&rarr;</span></a>
+  <a class="btn p m-cta" href="<?php echo esc_url($cta); ?>">Get Your Free Diagnostic <span class="ar">&rarr;</span></a>
 </div>
 <?php
     return ob_get_clean();
@@ -443,7 +443,7 @@ function rl_render_footer() {
       <div class="f-col">
         <h4>Resources</h4>
         <ul>
-          <li><a href="<?php echo esc_url(rl_url_by_path('search-authority-diagnostic')); ?>">Get a Free Quote</a></li>
+          <li><a href="<?php echo esc_url(rl_url_by_path('search-authority-diagnostic')); ?>">Get your free diagnostic</a></li>
           <li><a href="<?php echo esc_url(home_url('/sitemap_index.xml')); ?>">Sitemap</a></li>
           <?php $rl_pp = get_privacy_policy_url(); /* WordPress privacy page (page 3): a link only once it is published, plain text until then (D-119) */ ?>
           <li><?php echo $rl_pp ? '<a href="' . esc_url($rl_pp) . '">Privacy Policy</a>' : '<span>Privacy Policy</span>'; ?></li>

@@ -335,7 +335,7 @@ function rl_render_services() {
       <h2>Not sure which service you need?</h2>
       <p class="lede">The free diagnostic shows where your biggest gap is, and which service, agent or package closes it.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('packages'); ?>">Compare packages</a>
       </div>
     </div>

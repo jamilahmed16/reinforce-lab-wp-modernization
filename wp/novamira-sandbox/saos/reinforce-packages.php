@@ -243,7 +243,7 @@ function rl_render_packages() {
       <span class="ey"><b>[</b>&nbsp;Packages&nbsp;<b>]</b></span>
       <h1 class="h1">Three ways to build <span class="r">search authority.</span></h1>
       <p class="lede"><a href="<?php echo $u('search-authority-os'); ?>">Search Authority OS</a>, Reinforce Lab’s flagship system, comes in three packages (Foundation, Growth OS and Enterprise), from a focused foundation to a full enterprise intelligence engine. Every engagement starts with a diagnostic, so scope and price fit what you actually need, not a template.</p>
-      <div class="hero-cta"><a class="btn p" href="<?php echo $diag; ?>">Start with a diagnostic <span class="ar">&rarr;</span></a><a class="btn g" href="#plans">See the plans</a></div>
+      <div class="hero-cta"><a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a><a class="btn g" href="#plans">See the plans</a></div>
       <p class="micro">Setup + monthly retainer · Pricing below is a starting framework, finalized to scope</p>
     </div>
     <figure class="stair rl-anim" role="img" aria-label="Three packages as a rising staircase (Foundation, Growth OS and Enterprise), each adding capabilities, with search authority growing at each level.">
@@ -329,7 +329,7 @@ function rl_render_packages() {
       <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
       <h2>Not sure which plan fits?</h2>
       <p class="lede">Start with the diagnostic. It shows exactly where you stand and which plan matches the opportunity, before you commit to a retainer.</p>
-      <div class="cta"><a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a><a class="btn g" href="#plans">Compare plans again</a></div>
+      <div class="cta"><a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a><a class="btn g" href="#plans">Compare plans again</a></div>
     </div>
   </div>
 </section>

@@ -310,7 +310,7 @@ function rl_render_saos() {
       <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Rankings slip and no one knows why.</b> SERP shifted? Intent changed? Content decayed? Cannibalization? By the time you diagnose it, the traffic is gone.</p></div>
       <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Every tool is a silo.</b> Five subscriptions, three teams, zero feedback loops. You are the integration layer, and it doesn't scale.</p></div>
     </div>
-    <div class="hero-cta" style="margin-top:32px"><a class="btn g" href="<?php echo $diag; ?>">Find out where you stand <span class="ar">&rarr;</span></a></div>
+    <div class="hero-cta" style="margin-top:32px"><a class="btn g" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a></div>
     <p class="src">Sources: <a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">Google Search Central: AI features and your website</a> · <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" rel="noopener" target="_blank">Google Search Central: Creating helpful, reliable, people-first content</a> · <a href="https://developers.google.com/search/docs/essentials/spam-policies" rel="noopener" target="_blank">Google Search Central: Spam policies</a></p>
   </div>
 </section>
@@ -514,7 +514,7 @@ function rl_render_saos() {
       <h2>Find out what's limiting your search authority.</h2>
       <p class="lede">A data-backed diagnostic of your Google visibility, AI-search presence, content authority, competitors and demand signals. No generic scorecard: what matters, what's missing, and what to do next.</p>
       <div class="hero-cta">
-        <a class="btn p" href="<?php echo $diag; ?>">Request My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $pkg; ?>">Compare packages</a>
       </div>
       <p class="microtrust" style="margin-top:24px">For selected businesses and organizations · Confidential · No purchased lists</p>

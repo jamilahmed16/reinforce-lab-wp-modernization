@@ -246,7 +246,7 @@ function rl_render_home() {
         <h1 class="h1">Build <span class="r">AI Growth Systems</span> to automate operations, improve search visibility, and increase revenue.</h1>
         <p class="lede">Reinforce Lab connects your website, content, and organic search visibility into one growth engine: data-driven SEO, AI Search, and content systems built for growth-stage founders and ambitious B2B brands, engineered for measurable results.</p>
         <div class="cta-row">
-          <a class="btn p" href="<?php echo esc_url($diag); ?>">Book a Strategy Call <span class="ar">&rarr;</span></a>
+          <a class="btn p" href="<?php echo esc_url($diag); ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
           <a class="btn g" href="<?php echo esc_url($svcs); ?>">Explore Services</a>
         </div>
         <p class="microtrust">Built for <b>Pharmaceutical &amp; Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services · Education</b></p>
@@ -367,7 +367,7 @@ function rl_render_home() {
   <section>
     <div class="wrap">
       <div class="head"><span class="ey"><b>[</b>&nbsp;Packages&nbsp;<b>]</b></span><h2>Start with a diagnostic. Scale when it's working.</h2><p class="lede">Three engagement levels: <b style="color:var(--ink)">Foundation</b>, <b style="color:var(--ink)">Growth OS</b> and <b style="color:var(--ink)">Enterprise</b>, from a focused starting system to full enterprise governance. Every engagement begins with a diagnostic, and pricing is set to scope. Engagements start from $5,000 setup.</p>
-        <div class="cta-row"><a class="btn p" href="<?php echo esc_url($pkg); ?>">Compare packages <span class="ar">&rarr;</span></a><a class="btn g" href="<?php echo esc_url($diag); ?>">Get your diagnostic</a></div>
+        <div class="cta-row"><a class="btn p" href="<?php echo esc_url($pkg); ?>">Compare packages <span class="ar">&rarr;</span></a><a class="btn g" href="<?php echo esc_url($diag); ?>">Get your free diagnostic</a></div>
       </div>
     </div>
   </section>
@@ -432,7 +432,7 @@ function rl_render_home() {
         <h2>Find out what's limiting your growth.</h2>
         <p class="lede center">A data-backed diagnostic of your Google visibility, AI-search presence, content authority, competitors and demand, with a clear 90-day plan. No generic scorecard.</p>
         <div class="cta-row">
-          <a class="btn p" href="<?php echo esc_url($diag); ?>">Book a Strategy Call <span class="ar">&rarr;</span></a>
+          <a class="btn p" href="<?php echo esc_url($diag); ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
           <a class="btn g" href="<?php echo esc_url($pkg); ?>">Compare packages</a>
         </div>
         <p class="microtrust" style="margin-top:24px">For selected businesses and organizations · Confidential · No purchased lists</p>

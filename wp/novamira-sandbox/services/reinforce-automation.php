@@ -301,7 +301,7 @@ function rl_render_automation() {
       <h2>How many leads go cold before anyone calls?</h2>
       <p class="lede">The free Search Authority Diagnostic reviews how leads reach you and what happens next, and shows what to fix first.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('services'); ?>">All services</a>
       </div>
     </div>

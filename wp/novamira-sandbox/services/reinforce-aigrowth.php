@@ -270,7 +270,7 @@ function rl_render_aigrowth() {
       <h2>Find the first system worth building.</h2>
       <p class="lede">The free Search Authority Diagnostic shows where time, traffic and revenue are being lost, and which system to build first.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('search-authority-os'); ?>">How Search Authority OS works</a>
       </div>
     </div>

@@ -249,7 +249,7 @@ function rl_render_agents() {
         <span class="tag">Start focused</span>
         <h3>A single agent</h3>
         <ul><li>You have one clear, urgent problem</li><li>You want proof before committing to a system</li><li>Your team already covers the other stages</li></ul>
-        <a class="btn g" href="<?php echo $diag; ?>">Find your starting agent <span class="ar">&rarr;</span></a>
+        <a class="btn g" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
       </div>
       <div class="opt feat">
         <span class="tag">Fully connected</span>
@@ -280,7 +280,7 @@ function rl_render_agents() {
       <h2>Not sure which agent you need?</h2>
       <p class="lede">The free diagnostic shows where your biggest search gap is, and which agent or package closes it.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('search-authority-os'); ?>">How Search Authority OS works</a>
       </div>
     </div>

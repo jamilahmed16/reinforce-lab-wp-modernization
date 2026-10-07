@@ -321,7 +321,7 @@ function rl_render_execai() {
       <h2>Is your AI plan ready for the board?</h2>
       <p class="lede">Start with the free diagnostic: a review of where you stand today and where AI and automation would pay off first.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('services'); ?>">All services</a>
       </div>
     </div>

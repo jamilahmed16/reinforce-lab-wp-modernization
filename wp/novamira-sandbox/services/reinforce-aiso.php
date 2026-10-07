@@ -336,7 +336,7 @@ if ($imgs) { ?>
     </ul>
     <div class="nudge">
       <p><b>From $5,000 setup</b>AI search optimization is part of every Search Authority OS package, from $5,000 setup plus $1,500 to $2,500 a month. Not ready to commit? Start with the free diagnostic.</p>
-      <div class="btns"><a class="btn p" href="<?php echo $diag; ?>">Get your diagnostic <span class="ar">&rarr;</span></a><a class="btn g" href="<?php echo $u('packages'); ?>">See the packages <span class="ar">&rarr;</span></a></div>
+      <div class="btns"><a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a><a class="btn g" href="<?php echo $u('packages'); ?>">See the packages <span class="ar">&rarr;</span></a></div>
     </div>
   </div>
 </section>
@@ -427,7 +427,7 @@ if ($imgs) { ?>
       <p class="lede">The free Search Authority Diagnostic shows where you stand in Google and in AI answers, and what to fix first.</p>
       <p class="next">What happens next: we research your site, search data, competitors and AI visibility, a person checks the findings, and you receive your diagnostic with a prioritized 90-day plan.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('contact-us'); ?>">Talk to us</a>
         <a class="btn g" href="<?php echo $u('search-authority-os'); ?>">How Search Authority OS works</a>
       </div>

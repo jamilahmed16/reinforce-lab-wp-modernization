@@ -302,7 +302,7 @@ function rl_render_wpdesign() {
       <h2>Is your website helping you win business?</h2>
       <p class="lede">The free Search Authority Diagnostic reviews your site's speed, structure, search visibility and conversion paths, and shows what to fix first.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('services'); ?>">All services</a>
       </div>
     </div>

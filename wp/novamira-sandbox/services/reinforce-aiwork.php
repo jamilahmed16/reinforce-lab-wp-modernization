@@ -324,7 +324,7 @@ function rl_render_aiwork() {
       <h2>Where are your people losing hours every week?</h2>
       <p class="lede">The free diagnostic reviews how work and leads flow through your business, and shows where automation would pay off first.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('services'); ?>">All services</a>
       </div>
     </div>

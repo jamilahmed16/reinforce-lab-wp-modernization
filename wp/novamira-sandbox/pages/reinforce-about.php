@@ -428,7 +428,7 @@ function rl_render_about() {
       <h2>See where your growth system stands.</h2>
       <p class="lede">The free Search Authority Diagnostic reviews your visibility, content and AI search presence, and shows what to fix first.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('services'); ?>">All services</a>
       </div>
     </div>

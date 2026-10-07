@@ -351,7 +351,7 @@ function rl_render_geo() {
       <h2>Which of your pages would an AI quote today?</h2>
       <p class="lede">The free Search Authority Diagnostic shows where you are cited, where competitors are cited instead, and which pages to fix first.</p>
       <div class="cta-row">
-        <a class="btn p" href="<?php echo $diag; ?>">Get My Search Authority Diagnostic <span class="ar">&rarr;</span></a>
+        <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="<?php echo $u('services/ai-search-optimization'); ?>">AI Search Optimization</a>
       </div>
     </div>
