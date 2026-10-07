@@ -59,7 +59,7 @@ body.rl-pkg-page .fl-page-content,body.rl-pkg-page .fl-content,body.rl-pkg-page 
 .rl-pkg section{position:relative;padding-block:clamp(52px,8vw,92px)}
 .rl-pkg .ey{font-family:var(--f-mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);display:inline-flex;gap:.5em;align-items:center}
 .rl-pkg .ey b{color:var(--red-3);font-weight:500}
-.rl-pkg .lede{color:var(--ink-dim);font-size:clamp(15px,1.6vw,19px);max-width:62ch}
+.rl-pkg .lede{color:var(--ink-dim);font-size:clamp(16px,1.6vw,19px);max-width:62ch}
 .rl-pkg .head{max-width:66ch;margin-bottom:clamp(28px,5vw,48px)}
 .rl-pkg .head h2{font-size:clamp(26px,4vw,44px);margin-top:14px}
 .rl-pkg .head p{margin-top:16px}

@@ -120,7 +120,7 @@ body.rl-diag-page .fl-page-content,body.rl-diag-page .fl-content,body.rl-diag-pa
 .rl-diag section{position:relative;padding-block:clamp(52px,8vw,92px)}
 .rl-diag .ey{font-family:var(--f-mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);display:inline-flex;gap:.5em;align-items:center}
 .rl-diag .ey b{color:var(--red-3);font-weight:500}
-.rl-diag .lede{color:var(--ink-dim);font-size:clamp(15px,1.6vw,19px);max-width:60ch}
+.rl-diag .lede{color:var(--ink-dim);font-size:clamp(16px,1.6vw,19px);max-width:60ch}
 .rl-diag .head{max-width:64ch;margin-bottom:clamp(28px,5vw,48px)}
 .rl-diag .head h2{font-size:clamp(26px,4vw,44px);margin-top:14px}
 .rl-diag .head p{margin-top:16px}
