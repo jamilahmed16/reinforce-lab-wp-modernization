@@ -226,6 +226,7 @@ body .rl-footer .f-col a{padding-block:2px}body .rl-footer .f-col ul{gap:7px}
 body nav.crumbs a,body nav.crumbs [aria-current]{display:inline-block;padding-block:5px}
 body .rl-page a.more,body .rl-page .more a,body .rl-page .p-cs,body .rl-page .p-site,body .rl-page .a-src,body .rl-page .proof-a{display:inline-block;padding-block:3px}
 body .rl-page input[type=checkbox]{width:22px;height:22px;flex:none}
+body .rl-footer .f-direct a,body .rl-page .myth a,body .rl-agents a.more,body .rl-legal .toc a{display:inline-block;padding-block:4px}
 </style>
 <?php }
 
