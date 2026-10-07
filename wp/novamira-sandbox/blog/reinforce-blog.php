@@ -17,6 +17,21 @@ add_action('template_redirect', function () {
     nocache_headers();
 }, 0);
 
+/* ---------- thin archives retired (Jamil, 7 Oct 2026, F-028 C6): author and date archives and the default
+   "Uncategorized" category 301 to /blog/. One author site; production's /author/<name>/ URLs (7, with
+   impressions) are listed in the URL register with the same target. Runs on 'wp' before Yoast's own
+   archive redirect (which would send them to the home page). Feeds are left alone. ---------- */
+add_action('wp', function () {
+    if (is_admin() || is_feed()) return;
+    $default = (int) get_option('default_category');
+    if (is_author() || is_date() || ($default && is_category($default))) {
+        $blog = (int) get_option('page_for_posts');
+        wp_safe_redirect($blog ? get_permalink($blog) : home_url('/'), 301, 'Reinforce Lab');
+        exit;
+    }
+}, 0);
+add_filter('wpseo_exclude_from_sitemap_by_term_ids', function ($ids) { $d = (int) get_option('default_category'); return $d ? array_merge((array) $ids, [$d]) : $ids; });
+
 /* ---------- robots: page 2+ of any archive, and any empty archive, = noindex,follow ---------- */
 add_filter('wpseo_robots', function ($robots) {
     if (!rl_is_blog_archive()) return $robots;
