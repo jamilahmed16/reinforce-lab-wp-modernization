@@ -22,7 +22,7 @@ add_action('template_redirect', function () {
    impressions) are listed in the URL register with the same target. Runs on 'wp' before Yoast's own
    archive redirect (which would send them to the home page). Feeds are left alone. ---------- */
 add_action('wp', function () {
-    if (is_admin() || is_feed()) return;
+    if (is_admin() || is_feed() || (string) get_query_var('flpaged') !== '' || strpos((string) ($_SERVER['REQUEST_URI'] ?? ''), '/paged-') !== false) return; // F-001 junk keeps its approved 410
     $default = (int) get_option('default_category');
     $author_path = (bool) preg_match('#^/author/[^/]+(/|$)#', (string) wp_parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH)); // includes production's former authors and their /page/N/ and /paged-N/ URLs
     if (is_author() || is_date() || ($default && is_category($default)) || $author_path) {
