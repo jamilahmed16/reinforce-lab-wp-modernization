@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-142 | Phone footer reorganised like Jamil's reference (Semrush): the five link columns collapse into rows with a chevron and open on tap; desktop unchanged | 7 Oct | DONE (Jamil: "Organize it for Mobile device like the reference image attached") | this file |
 | D-141 | Last three axe items fixed: post entry headers are plain blocks in all 12 post templates, Services diagram role group, hidden labels for the empty first table headers (Audit page, post 330 body); axe 0 on every page | 7 Oct | DONE (Jamil: "Go ahead") | this file |
 | D-140 | Accessibility fixes from F-028: link names start with the visible text (axe label mismatch 249 to 0), footer column titles no longer headings (heading order 57 to 0), tap targets padded to 24px (2,800 small targets to 24, all inline in lists or text), form checkboxes 24px | 7 Oct | DONE (Jamil: "Go ahead") | this file |
 | D-139 | Jamil's design decisions on F-028: body text 16px, card titles 20px, 12px minimum, container 1440 (supersedes D-013's 1280), one button label "Get your free diagnostic", footer names kept, US office in schema, LiteSpeed Cache stays off, author/date/Uncategorized archives retired (301 to /blog/) | 7 Oct | DONE on `.online` | this file |
@@ -206,6 +207,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-142 · Phone footer: collapsible rows
+**Date:** 7 October 2026 · **Status:** DONE on `.online` (Jamil, with phone screenshots and a Semrush footer reference: "Organize it for Mobile device like the reference image attached")
+
+- **Before:** on phone the footer listed all five columns fully expanded (about 40 links), a very long scroll.
+- **Now (`core/reinforce-header.php`):** each column is a `<details>` with the title as `<summary>`. At 680 px and below: one column, a hairline between rows, the title left and a drawn chevron right (no icon font, no emoji), rows closed on load, a tap opens one; the chevron turns up when open. Above 680 px the columns stay open and a click does not close them, so desktop looks as before. Rows are open in the HTML and closed by a few lines of script, so links still show without JavaScript; native `<details>` works with keyboard and screen readers, and the links stay in the page for crawlers.
+- **Checked (VERIFIED):** phone 390 px: 5 rows closed on load, the second opens on tap, no horizontal scroll; desktop 1440: all open, unchanged after a click. The brand intro, social links, office block and bottom line are unchanged.
+- **Note:** the video in Jamil's screenshots ("Midnight Echoes") is the phone's picture-in-picture player, not part of the site.
 
 ---
 
