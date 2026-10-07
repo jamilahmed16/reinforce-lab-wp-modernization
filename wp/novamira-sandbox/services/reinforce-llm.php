@@ -332,7 +332,7 @@ function rl_render_llm() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is LLM Optimization for?</h2><p class="lede">Brands that AI tools describe wrongly, vaguely or not at all, and teams in regulated fields, where a wrong description is a real risk.</p></div>
     <ul class="inds8">
       <?php foreach (rl_llm_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
-      <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('LLM Optimization for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
+      <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('Explore: LLM Optimization for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
       <?php } ?>
     </ul>
   </div>

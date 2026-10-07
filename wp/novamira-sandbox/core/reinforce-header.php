@@ -206,8 +206,8 @@ body a.fl-screen-reader-text:focus{clip:auto;width:auto;height:auto;overflow:vis
 .rl-footer .f-intro .brand{display:flex;align-items:center;gap:10px;font-family:var(--f-display);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:18px;color:var(--ink);margin-bottom:16px}
 .rl-footer .f-intro .dot{width:11px;height:11px;background:var(--red);box-shadow:0 0 14px var(--red-glow)}
 .rl-footer .f-intro p{color:var(--ink-dim);font-size:14.5px;max-width:42ch;line-height:1.75;margin:0}
-.rl-footer .f-col h4{font-family:var(--f-display);text-transform:uppercase;font-size:15px;letter-spacing:.07em;color:var(--ink);margin:0 0 18px;position:relative;padding-bottom:10px}
-.rl-footer .f-col h4::after{content:"";position:absolute;left:0;bottom:0;width:26px;height:2px;background:var(--red)}
+.rl-footer .f-col .f-h{font-family:var(--f-display);text-transform:uppercase;font-size:15px;font-weight:400;line-height:21px;letter-spacing:.07em;color:var(--ink);margin:0 0 18px;position:relative;padding-bottom:10px}
+.rl-footer .f-col .f-h::after{content:"";position:absolute;left:0;bottom:0;width:26px;height:2px;background:var(--red)}
 .rl-footer .f-col ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
 .rl-footer .f-col li>span{color:var(--ink-faint);font-size:14px}.rl-footer .f-col a{color:var(--ink-dim);font-size:14px;transition:.15s;display:inline-block}.rl-footer .f-col a:hover{color:#fff;transform:translateX(4px)}
 .rl-footer .f-col .flag{color:var(--ink)}.rl-footer .f-col .flag:hover{color:var(--red-3)}
@@ -221,6 +221,11 @@ body a.fl-screen-reader-text:focus{clip:auto;width:auto;height:auto;overflow:vis
 .rl-footer .f-ck{background:none;border:0;padding:6px 2px;font:inherit;color:var(--ink-dim);cursor:pointer;text-decoration:underline;text-underline-offset:3px}.rl-footer .f-ck:hover{color:var(--ink)}
 /* D-013 zero rounded corners: the Beaver Builder theme gives .btn and buttons a 4px radius; reset it everywhere */
 .btn,a.btn,button,.rl-header .burger,.rl-page .card,input,select,textarea{border-radius:0!important}
+/* tap targets of at least 24px (WCAG 2.2, 2.5.8): padding on small standalone links; footer list gap reduced by the same amount so the footer keeps its height */
+body .rl-footer .f-col a{padding-block:2px}body .rl-footer .f-col ul{gap:7px}
+body nav.crumbs a,body nav.crumbs [aria-current]{display:inline-block;padding-block:5px}
+body .rl-page a.more,body .rl-page .more a,body .rl-page .p-cs,body .rl-page .p-site,body .rl-page .a-src,body .rl-page .proof-a{display:inline-block;padding-block:3px}
+body .rl-page input[type=checkbox]{width:22px;height:22px;flex:none}
 </style>
 <?php }
 
@@ -403,7 +408,7 @@ function rl_render_footer() {
         <p>Reinforce Lab builds AI Growth Systems that connect your website, content, and organic search visibility into one growth engine. We design and implement data-driven SEO, AI Search automation, and content systems for growth-stage founders and B2B companies who want measurable revenue.</p>
       </div>
       <div class="f-col">
-        <h4>Search Authority OS</h4>
+        <p class="f-h">Search Authority OS</p>
         <ul>
           <li><a class="flag" href="<?php echo esc_url(rl_url_by_path('search-authority-os')); ?>">Search Authority OS</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('search-authority-diagnostic')); ?>">Free Diagnostic</a></li>
@@ -412,7 +417,7 @@ function rl_render_footer() {
         </ul>
       </div>
       <div class="f-col">
-        <h4>Solutions</h4>
+        <p class="f-h">Solutions</p>
         <ul>
           <?php foreach ($solutions as $label => $path): $flag = ($label === 'AI Growth Systems') ? ' class="flag"' : ''; ?>
           <li><a<?php echo $flag; ?> href="<?php echo esc_url(rl_url_by_path($path)); ?>"><?php echo esc_html($label); ?></a></li>
@@ -420,7 +425,7 @@ function rl_render_footer() {
         </ul>
       </div>
       <div class="f-col">
-        <h4>Industries</h4>
+        <p class="f-h">Industries</p>
         <ul>
           <?php foreach ($industries as $label => $path): ?>
           <li><a href="<?php echo esc_url(rl_url_by_path($path)); ?>"><?php echo esc_html($label); ?></a></li>
@@ -428,7 +433,7 @@ function rl_render_footer() {
         </ul>
       </div>
       <div class="f-col">
-        <h4>Company</h4>
+        <p class="f-h">Company</p>
         <ul>
           <li><a href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('about-us')); ?>">About Us</a></li>
@@ -441,7 +446,7 @@ function rl_render_footer() {
         </ul>
       </div>
       <div class="f-col">
-        <h4>Resources</h4>
+        <p class="f-h">Resources</p>
         <ul>
           <li><a href="<?php echo esc_url(rl_url_by_path('search-authority-diagnostic')); ?>">Get your free diagnostic</a></li>
           <li><a href="<?php echo esc_url(home_url('/sitemap_index.xml')); ?>">Sitemap</a></li>

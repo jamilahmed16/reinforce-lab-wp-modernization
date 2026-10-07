@@ -110,7 +110,7 @@ function rl_services_cg_svg() {
             $y = 32 + $j * 30; $l = rl_services_link($t[0]);
             $tile = '<g class="cg-t' . $c . '_' . $j . '"><rect class="cg-hit" x="' . $x . '" y="' . $y . '" width="119" height="24"/><rect class="cg-tl" x="' . $x . '" y="' . $y . '" width="119" height="24"/>'
                 . '<text class="cg-tx" x="' . ($x + 10) . '" y="' . ($y + 15.5) . '">' . $h(strtoupper($t[2])) . '</text></g>';
-            $s .= $l ? '<a href="' . $l . '" aria-label="' . esc_attr($t[1]) . '">' . $tile . '</a>' : $tile;
+            $s .= $l ? '<a href="' . $l . '" aria-label="' . esc_attr(strcasecmp($t[2], $t[1]) === 0 ? $t[1] : $t[2] . ': ' . $t[1]) . '">' . $tile . '</a>' : $tile;
         }
     }
     $s .= '<rect class="cg-core" x="100" y="272" width="320" height="56"/><rect class="cg-cg" x="96" y="268" width="328" height="64"/>'

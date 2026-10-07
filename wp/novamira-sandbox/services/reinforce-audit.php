@@ -333,7 +333,7 @@ note   repeat run 2/3 · same result · competitor cited from a comparison page<
     <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is the audit for?</h2><p class="lede">Teams that need the full picture before they commit budget: after a traffic drop, before a redesign or migration, or when AI tools ignore them.</p></div>
     <ul class="inds8">
       <?php foreach (rl_audit_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
-      <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('SEO & AI Search Audit for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
+      <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('Explore: SEO & AI Search Audit for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
       <?php } ?>
     </ul>
   </div>

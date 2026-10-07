@@ -159,7 +159,7 @@ function rl_blog_render() {
           <span class="meta"><time datetime="<?php echo esc_attr(get_the_date('c')); ?>"><?php echo esc_html(get_the_date('j M Y')); ?></time><?php if ($cat && (int) $cat->term_id !== (int) get_option('default_category')) echo ' · <a href="' . esc_url(get_category_link($cat)) . '">' . esc_html($cat->name) . '</a>'; ?></span>
           <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
           <p><?php echo esc_html(wp_trim_words(get_the_excerpt(), 28)); ?></p>
-          <a class="more" href="<?php the_permalink(); ?>" aria-label="<?php echo esc_attr('Read: ' . get_the_title()); ?>">Read article &rarr;</a>
+          <a class="more" href="<?php the_permalink(); ?>" aria-label="<?php echo esc_attr('Read article: ' . get_the_title()); ?>">Read article &rarr;</a>
         </div>
       </li>
       <?php } ?>

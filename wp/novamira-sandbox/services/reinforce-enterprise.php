@@ -305,7 +305,7 @@ function rl_render_enterprise() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is enterprise SEO for?</h2><p class="lede">Organisations with large or complex sites (many pages, many teams, several markets or brands) where search is a meaningful channel.</p></div>
     <ul class="inds8">
       <?php foreach (rl_ent_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
-      <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('Enterprise SEO for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
+      <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('Explore: Enterprise SEO for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
       <?php } ?>
     </ul>
   </div>

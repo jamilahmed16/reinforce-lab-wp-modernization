@@ -77,7 +77,7 @@ function rl_post_rel_pages($id, $need) {
         $kind = strpos($path, 'services/') === 0 ? 'Service' : ($path === 'search-authority-diagnostic' ? 'Free diagnostic' : 'Reinforce Lab');
         $desc = trim((string) get_post_meta($pg->ID, '_yoast_wpseo_metadesc', true));
         $url = get_permalink($pg);
-        $out .= '<li class="post"><span class="m">' . esc_html($kind) . '</span><h3><a href="' . esc_url($url) . '">' . esc_html($title) . '</a></h3>' . ($desc !== '' ? '<p class="d">' . esc_html(wp_trim_words($desc, 18)) . '</p>' : '') . '<a class="more" href="' . esc_url($url) . '" aria-label="' . esc_attr('Read: ' . $title) . '">Read more &rarr;</a></li>';
+        $out .= '<li class="post"><span class="m">' . esc_html($kind) . '</span><h3><a href="' . esc_url($url) . '">' . esc_html($title) . '</a></h3>' . ($desc !== '' ? '<p class="d">' . esc_html(wp_trim_words($desc, 18)) . '</p>' : '') . '<a class="more" href="' . esc_url($url) . '" aria-label="' . esc_attr('Read more: ' . $title) . '">Read more &rarr;</a></li>';
         if (++$n >= $need) break;
     }
     return $out;
@@ -389,7 +389,7 @@ function rl_post_output() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Keep reading&nbsp;<b>]</b></span><h2>Related articles</h2></div>
     <ul class="posts">
       <?php while ($rel->have_posts()) { $rel->the_post(); $rd = rl_post_data(get_the_ID()); ?>
-      <li class="post"><span class="m"><?php echo esc_html($rd['type_label']); ?> · <?php echo esc_html(get_the_date('j M Y')); ?></span><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3><a class="more" href="<?php the_permalink(); ?>" aria-label="<?php echo esc_attr('Read: ' . get_the_title()); ?>">Read article &rarr;</a></li>
+      <li class="post"><span class="m"><?php echo esc_html($rd['type_label']); ?> · <?php echo esc_html(get_the_date('j M Y')); ?></span><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3><a class="more" href="<?php the_permalink(); ?>" aria-label="<?php echo esc_attr('Read article: ' . get_the_title()); ?>">Read article &rarr;</a></li>
       <?php } wp_reset_postdata(); echo rl_post_rel_pages($id, 3 - $rel->post_count); ?>
     </ul>
   </div>

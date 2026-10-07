@@ -338,7 +338,7 @@ function rl_render_industries() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;The industries&nbsp;<b>]</b></span><h2>Which industries do we work with?</h2><p class="lede">Eight sectors where search decides who gets considered, and where getting the details wrong is expensive.</p></div>
     <ul class="inds8">
       <?php $i = 0; foreach (rl_ind_data() as $slug => $d) { $l = $ex('industries/' . $slug); ?>
-      <li class="ind"><span class="k"><?php echo sprintf('%02d', ++$i); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d['name']) . '</a>' : esc_html($d['name']); ?></h3><p class="sum"><?php echo esc_html($d['sum']); ?></p><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('AI Growth Systems for ' . $d['name']) . '">Explore &rarr;</a>'; ?></li>
+      <li class="ind"><span class="k"><?php echo sprintf('%02d', ++$i); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d['name']) . '</a>' : esc_html($d['name']); ?></h3><p class="sum"><?php echo esc_html($d['sum']); ?></p><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('Explore: AI Growth Systems for ' . $d['name']) . '">Explore &rarr;</a>'; ?></li>
       <?php } ?>
     </ul>
   </div>

@@ -301,7 +301,7 @@ function rl_render_pr() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Who it's for&nbsp;<b>]</b></span><h2>Who is digital PR for?</h2><p class="lede">Brands with expertise or data worth sharing, in markets where authority decides who ranks and who gets cited.</p></div>
     <ul class="inds8">
       <?php foreach (rl_pr_industries() as $i => $d) { $l = $ex('industries/' . $d[0]); ?>
-      <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('Digital PR for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
+      <li class="ind"><span class="k"><?php echo sprintf('%02d', $i + 1); ?></span><h3><?php echo $l ? '<a href="' . $l . '">' . esc_html($d[1]) . '</a>' : esc_html($d[1]); ?></h3><ul><?php foreach ($d[2] as $pt) echo '<li>' . esc_html($pt) . '</li>'; ?></ul><?php if ($l) echo '<a class="more" href="' . $l . '" aria-label="' . esc_attr('Explore: Digital PR for ' . $d[1]) . '">Explore &rarr;</a>'; ?></li>
       <?php } ?>
     </ul>
   </div>
