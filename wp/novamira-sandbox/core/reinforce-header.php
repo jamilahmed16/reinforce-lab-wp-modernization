@@ -208,6 +208,18 @@ body a.fl-screen-reader-text:focus{clip:auto;width:auto;height:auto;overflow:vis
 .rl-footer .f-intro p{color:var(--ink-dim);font-size:14.5px;max-width:42ch;line-height:1.75;margin:0}
 .rl-footer .f-col .f-h{font-family:var(--f-display);text-transform:uppercase;font-size:15px;font-weight:400;line-height:21px;letter-spacing:.07em;color:var(--ink);margin:0 0 18px;position:relative;padding-bottom:10px}
 .rl-footer .f-col .f-h::after{content:"";position:absolute;left:0;bottom:0;width:26px;height:2px;background:var(--red)}
+/* footer columns are <details> (D-142): always open on desktop; on phone they collapse into rows with a chevron, like an app menu */
+.rl-footer .f-col>summary{list-style:none;cursor:default;display:block}.rl-footer .f-col>summary::-webkit-details-marker{display:none}
+@media(max-width:680px){
+.rl-footer .f-main{grid-template-columns:1fr;gap:0}
+.rl-footer .f-intro{margin-bottom:22px}
+.rl-footer .f-col{border-top:1px solid var(--line)}.rl-footer .f-col:last-child{border-bottom:1px solid var(--line)}
+.rl-footer .f-col>summary.f-h{cursor:pointer;display:flex;align-items:center;justify-content:space-between;margin:0;padding:20px 2px;font-size:17px;min-height:24px}
+.rl-footer .f-col>summary.f-h::after{position:static;width:10px;height:10px;background:none;border-right:2px solid var(--ink-dim);border-bottom:2px solid var(--ink-dim);transform:translateY(-3px) rotate(45deg);transition:transform .2s;flex:none;margin-right:6px}
+.rl-footer .f-col[open]>summary.f-h::after{transform:translateY(2px) rotate(-135deg)}
+.rl-footer .f-col>summary.f-h:focus-visible{outline:2px solid var(--red-3);outline-offset:2px}
+.rl-footer .f-col ul{padding:0 2px 20px}
+}
 .rl-footer .f-col ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
 .rl-footer .f-col li>span{color:var(--ink-faint);font-size:14px}.rl-footer .f-col a{color:var(--ink-dim);font-size:14px;transition:.15s;display:inline-block}.rl-footer .f-col a:hover{color:#fff;transform:translateX(4px)}
 .rl-footer .f-col .flag{color:var(--ink)}.rl-footer .f-col .flag:hover{color:var(--red-3)}
@@ -408,33 +420,33 @@ function rl_render_footer() {
         <div class="brand"><span class="dot"></span>Reinforce&nbsp;Lab</div>
         <p>Reinforce Lab builds AI Growth Systems that connect your website, content, and organic search visibility into one growth engine. We design and implement data-driven SEO, AI Search automation, and content systems for growth-stage founders and B2B companies who want measurable revenue.</p>
       </div>
-      <div class="f-col">
-        <p class="f-h">Search Authority OS</p>
+      <details class="f-col" open>
+        <summary class="f-h">Search Authority OS</summary>
         <ul>
           <li><a class="flag" href="<?php echo esc_url(rl_url_by_path('search-authority-os')); ?>">Search Authority OS</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('search-authority-diagnostic')); ?>">Free Diagnostic</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('packages')); ?>">Packages &amp; Pricing</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('services/agents')); ?>">Agents</a></li>
         </ul>
-      </div>
-      <div class="f-col">
-        <p class="f-h">Solutions</p>
+      </details>
+      <details class="f-col" open>
+        <summary class="f-h">Solutions</summary>
         <ul>
           <?php foreach ($solutions as $label => $path): $flag = ($label === 'AI Growth Systems') ? ' class="flag"' : ''; ?>
           <li><a<?php echo $flag; ?> href="<?php echo esc_url(rl_url_by_path($path)); ?>"><?php echo esc_html($label); ?></a></li>
           <?php endforeach; ?>
         </ul>
-      </div>
-      <div class="f-col">
-        <p class="f-h">Industries</p>
+      </details>
+      <details class="f-col" open>
+        <summary class="f-h">Industries</summary>
         <ul>
           <?php foreach ($industries as $label => $path): ?>
           <li><a href="<?php echo esc_url(rl_url_by_path($path)); ?>"><?php echo esc_html($label); ?></a></li>
           <?php endforeach; ?>
         </ul>
-      </div>
-      <div class="f-col">
-        <p class="f-h">Company</p>
+      </details>
+      <details class="f-col" open>
+        <summary class="f-h">Company</summary>
         <ul>
           <li><a href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('about-us')); ?>">About Us</a></li>
@@ -445,9 +457,9 @@ function rl_render_footer() {
           <li><a href="<?php echo esc_url(rl_url_by_path('blog')); ?>">Blog</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('contact-us')); ?>">Contact Us</a></li>
         </ul>
-      </div>
-      <div class="f-col">
-        <p class="f-h">Resources</p>
+      </details>
+      <details class="f-col" open>
+        <summary class="f-h">Resources</summary>
         <ul>
           <li><a href="<?php echo esc_url(rl_url_by_path('search-authority-diagnostic')); ?>">Get your free diagnostic</a></li>
           <li><a href="<?php echo esc_url(home_url('/sitemap_index.xml')); ?>">Sitemap</a></li>
@@ -457,8 +469,14 @@ function rl_render_footer() {
           <li><a href="<?php echo esc_url(rl_url_by_path('ftc-disclosure')); ?>">FTC Disclosure</a></li>
           <li><a href="<?php echo esc_url(($coi = get_option('rl_coi_attachment')) ? wp_get_attachment_url($coi) : '#'); ?>" target="_blank" rel="noopener">Certificate of Incorporation <span class="screen-reader-text">(PDF)</span></a></li>
         </ul>
-      </div>
+      </details>
     </div>
+    <script>
+(function(){var m=window.matchMedia('(max-width:680px)'),c=document.querySelectorAll('.rl-footer details.f-col');
+function set(){for(var i=0;i<c.length;i++){if(m.matches)c[i].removeAttribute('open');else c[i].setAttribute('open','')}}
+for(var i=0;i<c.length;i++)c[i].querySelector('summary').addEventListener('click',function(e){if(!m.matches)e.preventDefault()});
+set();if(m.addEventListener)m.addEventListener('change',set);})();
+</script>
     <div class="f-contact">
       <div class="ct">Contact Us</div>
       <div class="f-offices">
