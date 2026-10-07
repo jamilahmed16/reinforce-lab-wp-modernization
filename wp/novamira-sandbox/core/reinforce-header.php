@@ -218,6 +218,7 @@ body a.fl-screen-reader-text:focus{clip:auto;width:auto;height:auto;overflow:vis
 .rl-footer .f-office p{color:var(--ink-dim);font-size:14px;line-height:1.85;margin:0}.rl-footer .f-office .ph{color:var(--ink);font-weight:600;margin-top:10px;display:block}
 .rl-footer .f-direct{margin-top:26px;font-size:14px;color:var(--ink-dim)}.rl-footer .f-direct a{color:var(--ink)}.rl-footer .f-direct a:hover{color:var(--red-3)}
 .rl-footer .f-bottom{border-top:1px solid var(--line);background:#0d0b0c;padding:15px;text-align:center;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.03em}.rl-footer .f-bottom b{color:var(--red-3);font-weight:500}
+.rl-footer .f-ck{background:none;border:0;padding:6px 2px;font:inherit;color:var(--ink-dim);cursor:pointer;text-decoration:underline;text-underline-offset:3px}.rl-footer .f-ck:hover{color:var(--ink)}
 /* D-013 zero rounded corners: the Beaver Builder theme gives .btn and buttons a 4px radius; reset it everywhere */
 .btn,a.btn,button,.rl-header .burger,.rl-page .card,input,select,textarea{border-radius:0!important}
 </style>
@@ -461,7 +462,7 @@ function rl_render_footer() {
       <div class="f-direct">Contact: <a href="tel:+8801329657096">+880 1329-657096</a> &nbsp;&middot;&nbsp; Email: <a href="mailto:hello@reinforcelab.com">hello@reinforcelab.com</a></div>
     </div>
   </div>
-  <div class="f-bottom">&copy; <?php echo esc_html(date('Y')); ?> Reinforce Lab Ltd &middot; All Rights Reserved &middot; Created By <b>Reinforce Lab Ltd.</b></div>
+  <div class="f-bottom">&copy; <?php echo esc_html(date('Y')); ?> Reinforce Lab Ltd &middot; All Rights Reserved &middot; Created By <b>Reinforce Lab Ltd.</b> &middot; <button type="button" class="f-ck" data-rl-consent-open>Cookie settings</button></div>
 </footer>
 <?php
     return ob_get_clean();

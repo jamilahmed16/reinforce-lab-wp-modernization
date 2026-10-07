@@ -41,6 +41,7 @@ foreach ([
     'core/reinforce-entity.php',
     'core/reinforce-affiliate.php',
     'core/reinforce-mail.php',
+    'core/reinforce-consent.php',
     'services/reinforce-leadgen.php',
     'services/reinforce-llm.php',
     'services/reinforce-local.php',
