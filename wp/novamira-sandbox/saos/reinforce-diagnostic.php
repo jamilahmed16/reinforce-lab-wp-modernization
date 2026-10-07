@@ -140,7 +140,7 @@ body.rl-diag-page .fl-page-content,body.rl-diag-page .fl-content,body.rl-diag-pa
 .rl-diag .h1 .r{color:var(--red-2)}
 .rl-diag .hero .lede{margin-top:18px}
 .rl-diag .ticks{margin-top:22px;display:grid;gap:10px}
-.rl-diag .ticks li{list-style:none;display:flex;gap:11px;color:var(--ink-dim);font-size:15px}
+.rl-diag .ticks li{list-style:none;display:flex;gap:11px;color:var(--ink-dim);font-size:16px}
 .rl-diag .ticks li::before{content:"›";color:var(--red-3);font-family:var(--f-mono)}
 .rl-diag .hero .micro{margin-top:20px;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.04em}
 .rl-diag .hero .micro b{color:var(--ink-dim);font-weight:500}
@@ -168,18 +168,18 @@ body.rl-diag-page .fl-page-content,body.rl-diag-page .fl-content,body.rl-diag-pa
 .rl-diag .cell{background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--glass-line);padding:24px;box-shadow:inset 0 1px 0 var(--glass-hi);transition:.2s}
 .rl-diag .cell:hover{border-color:var(--red-line);background:var(--glass-2)}
 .rl-diag .cell .n{font-family:var(--f-mono);font-size:12px;color:var(--red-3);letter-spacing:.1em}
-.rl-diag .cell h3{font-size:17px;margin:10px 0 7px}
-.rl-diag .cell p{color:var(--ink-dim);font-size:14px}
+.rl-diag .cell h3{font-size:20px;margin:10px 0 7px}
+.rl-diag .cell p{color:var(--ink-dim);font-size:16px}
 .rl-diag .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
 @media(max-width:900px){.rl-diag .steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.rl-diag .steps{grid-template-columns:1fr}}
 .rl-diag .step{background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--glass-line);padding:20px;box-shadow:inset 0 1px 0 var(--glass-hi)}
 .rl-diag .step .k{font-family:var(--f-display);font-size:30px;color:var(--red-3);font-weight:700;opacity:.8}
 .rl-diag .step h4{font-size:14px;margin:6px 0 6px}
-.rl-diag .step p{color:var(--ink-dim);font-size:13px}
+.rl-diag .step p{color:var(--ink-dim);font-size:16px}
 .rl-diag .deliv{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 @media(max-width:640px){.rl-diag .deliv{grid-template-columns:1fr}}
-.rl-diag .deliv li{background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--glass-line);padding:16px 18px;display:flex;gap:12px;color:var(--ink-dim);font-size:15px;box-shadow:inset 0 1px 0 var(--glass-hi)}
+.rl-diag .deliv li{background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--glass-line);padding:16px 18px;display:flex;gap:12px;color:var(--ink-dim);font-size:16px;box-shadow:inset 0 1px 0 var(--glass-hi)}
 .rl-diag .deliv li::before{content:"→";color:var(--red-3);font-family:var(--f-mono)}
 .rl-diag .deliv b{color:var(--ink);font-weight:600}
 .rl-diag .q{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -197,9 +197,9 @@ body.rl-diag-page .fl-page-content,body.rl-diag-page .fl-content,body.rl-diag-pa
 /* ticks: block items so inline <em> doesn't become its own flex column (design-preview defect) */
 .rl-diag .ticks li{display:block;position:relative;padding-left:20px}
 .rl-diag .ticks li::before{position:absolute;left:0;top:0}
-.rl-diag .step h3{font-size:14px;margin:6px 0}
+.rl-diag .step h3{font-size:20px;margin:6px 0}
 .rl-diag .field .req{color:var(--red-3)}
-.rl-diag .consent{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:14px;color:var(--ink-dim);line-height:1.5;cursor:pointer}.rl-diag .consent input{width:18px;height:18px;margin-top:2px;flex:0 0 auto;accent-color:var(--red-2)}
+.rl-diag .consent{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:16px;color:var(--ink-dim);line-height:1.5;cursor:pointer}.rl-diag .consent input{width:18px;height:18px;margin-top:2px;flex:0 0 auto;accent-color:var(--red-2)}
 .rl-diag .hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
 .rl-diag .alert{margin-top:14px;padding:12px 14px;border:1px solid var(--red-2);background:rgba(153,0,0,.12);font-size:14px;color:var(--ink)}
 .rl-diag .form .note a{color:var(--ink-dim);border-bottom:1px solid var(--red-line)}
@@ -210,7 +210,7 @@ body.rl-diag-page .fl-page-content,body.rl-diag-page .fl-content,body.rl-diag-pa
 .rl-diag .faq summary::-webkit-details-marker{display:none}
 .rl-diag .faq summary::after{content:"+";color:var(--red-2);font-family:var(--f-mono);font-size:20px}
 .rl-diag .faq details[open] summary::after{content:"\2212"}
-.rl-diag .faq p{padding:0 24px 22px;color:var(--ink-dim);font-size:15px;max-width:75ch}
+.rl-diag .faq p{padding:0 24px 22px;color:var(--ink-dim);font-size:16px;max-width:75ch}
 .rl-diag .faq p a{color:var(--ink);border-bottom:1px solid var(--red-line)}
 </style>
 <?php }

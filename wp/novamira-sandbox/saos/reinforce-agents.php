@@ -114,7 +114,7 @@ body.rl-agents-page .fl-page-content,body.rl-agents-page .fl-content,body.rl-age
 .rl-agents .agent h3{font-size:22px}
 .rl-agents .agent .out{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.03em;font-size:15px;color:var(--ink-dim)}
 .rl-agents .agent ul{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:9px}
-.rl-agents .agent li{font-size:14.5px;color:var(--ink-dim);display:flex;gap:10px}
+.rl-agents .agent li{font-size:16px;color:var(--ink-dim);display:flex;gap:10px}
 .rl-agents .agent li::before{content:"›";color:var(--red-2);font-family:var(--f-mono);flex:none}
 .rl-agents .agent .for{font-family:var(--f-mono);font-size:12px;letter-spacing:.04em;color:var(--ink-faint);border-top:1px solid var(--line);padding-top:12px;margin-top:auto}
 .rl-agents .agent .for b{color:var(--ink-dim);font-weight:500}
@@ -125,8 +125,8 @@ body.rl-agents-page .fl-page-content,body.rl-agents-page .fl-content,body.rl-age
 @media(max-width:900px){.rl-agents .map{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.rl-agents .map{grid-template-columns:1fr}}
 .rl-agents .stage{border:1px solid var(--glass-line);background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:22px;box-shadow:inset 0 1px 0 var(--glass-hi);position:relative}
 .rl-agents .stage .k{font-family:var(--f-display);font-size:30px;color:var(--red-3);font-weight:700;opacity:.8}
-.rl-agents .stage h3{font-size:16px;margin:6px 0 8px}
-.rl-agents .stage p{color:var(--ink-dim);font-size:14px}
+.rl-agents .stage h3{font-size:20px;margin:6px 0 8px}
+.rl-agents .stage p{color:var(--ink-dim);font-size:16px}
 .rl-agents .stage .ids{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
 .rl-agents .stage .ids a{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;border:1px solid var(--line-2);padding:4px 7px;color:var(--ink-dim)}
 .rl-agents .stage .ids a:hover{border-color:var(--red-line);color:var(--ink)}
@@ -136,9 +136,9 @@ body.rl-agents-page .fl-page-content,body.rl-agents-page .fl-content,body.rl-age
 .rl-agents .opt{border:1px solid var(--glass-line);background:var(--glass);padding:30px 26px;box-shadow:inset 0 1px 0 var(--glass-hi);display:flex;flex-direction:column;gap:14px}
 .rl-agents .opt.feat{background:linear-gradient(180deg,rgba(153,0,0,.14),var(--glass-2));border-color:var(--red-line);box-shadow:inset 0 1px 0 var(--glass-hi),0 0 70px -26px var(--red-glow)}
 .rl-agents .opt .tag{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--red-3);text-transform:uppercase}
-.rl-agents .opt h3{font-size:22px}
+.rl-agents .opt h3{font-size:20px}
 .rl-agents .opt ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
-.rl-agents .opt li{font-size:14.5px;color:var(--ink-dim);display:flex;gap:10px}.rl-agents .opt li::before{content:"+";color:var(--red-2);font-family:var(--f-mono)}
+.rl-agents .opt li{font-size:16px;color:var(--ink-dim);display:flex;gap:10px}.rl-agents .opt li::before{content:"+";color:var(--red-2);font-family:var(--f-mono)}
 .rl-agents .opt .btn{margin-top:auto;justify-content:center}
 /* faq */
 .rl-agents .faq details{border:1px solid var(--glass-line);background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);margin-bottom:12px;box-shadow:inset 0 1px 0 var(--glass-hi)}
@@ -146,7 +146,7 @@ body.rl-agents-page .fl-page-content,body.rl-agents-page .fl-content,body.rl-age
 .rl-agents .faq summary::-webkit-details-marker{display:none}
 .rl-agents .faq summary::after{content:"+";color:var(--red-2);font-family:var(--f-mono);font-size:20px}
 .rl-agents .faq details[open] summary::after{content:"\2212"}
-.rl-agents .faq p{padding:0 24px 22px;color:var(--ink-dim);font-size:15px;max-width:75ch}
+.rl-agents .faq p{padding:0 24px 22px;color:var(--ink-dim);font-size:16px;max-width:75ch}
 /* final */
 .rl-agents .final{position:relative;overflow:hidden;border:1px solid var(--red-line);background:#0b090a;padding:clamp(48px,7vw,92px) clamp(24px,5vw,64px);text-align:center;box-shadow:inset 0 1px 0 var(--glass-hi),0 0 130px -46px var(--red-glow)}
 .rl-agents .final::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(58% 96% at 50% 128%,rgba(226,59,59,.6),rgba(153,0,0,.28) 38%,transparent 70%),linear-gradient(180deg,transparent 40%,rgba(153,0,0,.10))}
