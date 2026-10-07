@@ -239,6 +239,11 @@ body nav.crumbs a,body nav.crumbs [aria-current]{display:inline-block;padding-bl
 body .rl-page a.more,body .rl-page .more a,body .rl-page .p-cs,body .rl-page .p-site,body .rl-page .a-src,body .rl-page .proof-a{display:inline-block;padding-block:3px}
 body input[type=checkbox]{width:24px;height:24px;flex:none}
 body .rl-footer .f-direct a,body .rl-page .myth a,body .rl-agents a.more,body .rl-legal .toc a{display:inline-block;padding-block:4px}
+/* D-143: wherever two or more buttons sit together they are the same size: side by side at the width of the longest label on desktop, stacked full width on phone */
+#fl-main-content :has(> .btn ~ .btn){display:grid!important;grid-auto-flow:column;grid-auto-columns:1fr;width:max-content;max-width:100%;gap:14px}
+#fl-main-content :has(> .btn ~ .btn) > .btn{justify-content:center;white-space:nowrap;margin:0}
+#fl-main-content .final :has(> .btn ~ .btn),#fl-main-content [style*="text-align:center"] :has(> .btn ~ .btn){margin-inline:auto}
+@media(max-width:760px){#fl-main-content :has(> .btn ~ .btn){grid-auto-flow:row;grid-template-columns:1fr;width:100%}#fl-main-content :has(> .btn ~ .btn) > .btn{white-space:normal}}
 </style>
 <?php }
 
