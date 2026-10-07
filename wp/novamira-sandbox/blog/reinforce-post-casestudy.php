@@ -293,7 +293,7 @@ function rl_casestudy_render($c) {
   var box=document.querySelector('.rl-cs .plot'); if(!box) return;
   var cfg=JSON.parse(box.getAttribute('data-chart')), data=cfg.d, marks=cfg.m||[], svg=box.querySelector('svg'), tip=box.querySelector('.tip'), NS='http://www.w3.org/2000/svg';
   var cs=getComputedStyle(document.documentElement), col=function(v,f){ var x=cs.getPropertyValue(v).trim(); return x||f; };
-  var RED=col('--red-3','#e23b3b'), FAINT=col('--ink-faint','#7f7778'), INK=col('--ink','#f2eeee'), AMB='#d39b3a', BG=col('--bg-2','#0e0c0d');
+  var RED=col('--red-3','#e85050'), FAINT=col('--ink-faint','#7f7778'), INK=col('--ink','#f2eeee'), AMB='#d39b3a', BG=col('--bg-2','#0e0c0d');
   var fmt=function(v){ return Number(v).toLocaleString('en-GB'); };
   function el(n,a){ var e=document.createElementNS(NS,n); for(var k in a) e.setAttribute(k,a[k]); return e; }
   function nice(m){ var p=Math.pow(10,Math.floor(Math.log10(m||1))), s=[1,2,2.5,5,10]; for(var i=0;i<s.length;i++){ if(s[i]*p*4>=m) return s[i]*p; } return 10*p; }

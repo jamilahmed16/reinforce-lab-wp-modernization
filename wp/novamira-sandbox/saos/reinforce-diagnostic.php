@@ -174,7 +174,7 @@ body.rl-diag-page .fl-page-content,body.rl-diag-page .fl-content,body.rl-diag-pa
 @media(max-width:900px){.rl-diag .steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.rl-diag .steps{grid-template-columns:1fr}}
 .rl-diag .step{background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--glass-line);padding:20px;box-shadow:inset 0 1px 0 var(--glass-hi)}
-.rl-diag .step .k{font-family:var(--f-display);font-size:30px;color:var(--red-2);font-weight:700;opacity:.85}
+.rl-diag .step .k{font-family:var(--f-display);font-size:30px;color:var(--red-3);font-weight:700;opacity:.8}
 .rl-diag .step h4{font-size:14px;margin:6px 0 6px}
 .rl-diag .step p{color:var(--ink-dim);font-size:13px}
 .rl-diag .deliv{display:grid;grid-template-columns:1fr 1fr;gap:12px}

@@ -326,7 +326,7 @@ function rl_research_render($c) {
   var root=document.querySelector('.rl-rs'); if(!root) return;
   var NS='http://www.w3.org/2000/svg', MONO='IBM Plex Mono, monospace', SANS='IBM Plex Sans, sans-serif';
   var cs=getComputedStyle(document.documentElement), col=function(v,f){ var x=cs.getPropertyValue(v).trim(); return x||f; };
-  var RED=col('--red-3','#e23b3b'), FAINT=col('--ink-faint','#7f7778'), DIM=col('--ink-dim','#b8b0b1'), INK=col('--ink','#f2eeee');
+  var RED=col('--red-3','#e85050'), FAINT=col('--ink-faint','#7f7778'), DIM=col('--ink-dim','#b8b0b1'), INK=col('--ink','#f2eeee');
   function el(n,a){ var e=document.createElementNS(NS,n); for(var k in a) e.setAttribute(k,a[k]); return e; }
   function txt(a,s){ var t=el('text',a); t.textContent=s; return t; }
   function fmt(v,s){ return Number(v).toLocaleString('en-GB',{maximumFractionDigits:1})+(s||''); }

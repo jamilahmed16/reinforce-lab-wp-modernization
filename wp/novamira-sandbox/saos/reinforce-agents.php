@@ -124,7 +124,7 @@ body.rl-agents-page .fl-page-content,body.rl-agents-page .fl-content,body.rl-age
 .rl-agents .map{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;list-style:none;margin:0;padding:0}
 @media(max-width:900px){.rl-agents .map{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.rl-agents .map{grid-template-columns:1fr}}
 .rl-agents .stage{border:1px solid var(--glass-line);background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:22px;box-shadow:inset 0 1px 0 var(--glass-hi);position:relative}
-.rl-agents .stage .k{font-family:var(--f-display);font-size:30px;color:var(--red-2);font-weight:700;opacity:.85}
+.rl-agents .stage .k{font-family:var(--f-display);font-size:30px;color:var(--red-3);font-weight:700;opacity:.8}
 .rl-agents .stage h3{font-size:16px;margin:6px 0 8px}
 .rl-agents .stage p{color:var(--ink-dim);font-size:14px}
 .rl-agents .stage .ids{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
@@ -135,7 +135,7 @@ body.rl-agents-page .fl-page-content,body.rl-agents-page .fl-content,body.rl-age
 @media(max-width:760px){.rl-agents .choose{grid-template-columns:1fr}}
 .rl-agents .opt{border:1px solid var(--glass-line);background:var(--glass);padding:30px 26px;box-shadow:inset 0 1px 0 var(--glass-hi);display:flex;flex-direction:column;gap:14px}
 .rl-agents .opt.feat{background:linear-gradient(180deg,rgba(153,0,0,.14),var(--glass-2));border-color:var(--red-line);box-shadow:inset 0 1px 0 var(--glass-hi),0 0 70px -26px var(--red-glow)}
-.rl-agents .opt .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--red-2);text-transform:uppercase}
+.rl-agents .opt .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--red-3);text-transform:uppercase}
 .rl-agents .opt h3{font-size:22px}
 .rl-agents .opt ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
 .rl-agents .opt li{font-size:14.5px;color:var(--ink-dim);display:flex;gap:10px}.rl-agents .opt li::before{content:"+";color:var(--red-2);font-family:var(--f-mono)}

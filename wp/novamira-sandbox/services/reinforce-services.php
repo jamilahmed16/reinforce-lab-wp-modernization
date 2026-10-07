@@ -191,7 +191,7 @@ body.rl-svc-page .fl-page-content,body.rl-svc-page .fl-content,body.rl-svc-page 
 .rl-svc .way{border:1px solid var(--glass-line);background:var(--glass);padding:28px 26px;box-shadow:inset 0 1px 0 var(--glass-hi);display:flex;flex-direction:column;gap:12px;transition:.2s}
 .rl-svc .way:hover{border-color:var(--red-line)}
 .rl-svc .way.feat{background:linear-gradient(180deg,rgba(153,0,0,.14),var(--glass-2));border-color:var(--red-line);box-shadow:inset 0 1px 0 var(--glass-hi),0 0 70px -26px var(--red-glow)}
-.rl-svc .way .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--red-2);text-transform:uppercase}
+.rl-svc .way .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--red-3);text-transform:uppercase}
 .rl-svc .way h3{font-size:22px}
 .rl-svc .way p{color:var(--ink-dim);font-size:15px}
 .rl-svc .way .more{margin-top:auto;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}

@@ -97,8 +97,8 @@ function rl_header_css() { ?>
 <style id="rl-header-css">
 :root{
   --bg:#121011;--bg-2:#171314;--panel:#1a1516;--line:#2c2525;--line-2:#3a3130;
-  --red:#990000;--red-2:#c11414;--red-3:#e23b3b;--red-glow:rgba(180,20,20,.55);--red-line:rgba(153,0,0,.50);
-  --ink:#f3ede6;--ink-dim:#bcb2a9;--ink-faint:#877d75;
+  --red:#990000;--red-2:#c11414;--red-3:#e85050;--red-glow:rgba(180,20,20,.55);--red-line:rgba(153,0,0,.50);
+  --ink:#f3ede6;--ink-dim:#bcb2a9;--ink-faint:#8f857d;
   --glass:rgba(30,23,25,.45);--glass-2:rgba(44,30,33,.55);--glass-line:rgba(255,255,255,.08);--glass-hi:rgba(255,255,255,.14);
   --grid:rgba(243,237,230,.035);--grid-red:rgba(180,20,20,.06);--grid-fine:rgba(243,237,230,.014);--grid-red2:rgba(200,30,30,.035);
   --maxw:1440px;--gutter:clamp(16px,4vw,64px);
@@ -218,6 +218,8 @@ body a.fl-screen-reader-text:focus{clip:auto;width:auto;height:auto;overflow:vis
 .rl-footer .f-office p{color:var(--ink-dim);font-size:14px;line-height:1.85;margin:0}.rl-footer .f-office .ph{color:var(--ink);font-weight:600;margin-top:10px;display:block}
 .rl-footer .f-direct{margin-top:26px;font-size:14px;color:var(--ink-dim)}.rl-footer .f-direct a{color:var(--ink)}.rl-footer .f-direct a:hover{color:var(--red-3)}
 .rl-footer .f-bottom{border-top:1px solid var(--line);background:#0d0b0c;padding:15px;text-align:center;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.03em}.rl-footer .f-bottom b{color:var(--red-3);font-weight:500}
+/* D-013 zero rounded corners: the Beaver Builder theme gives .btn and buttons a 4px radius; reset it everywhere */
+.btn,a.btn,button,.rl-header .burger,.rl-page .card,input,select,textarea{border-radius:0!important}
 </style>
 <?php }
 

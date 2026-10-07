@@ -65,7 +65,7 @@
 @media(max-width:1000px){.rl-page .steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.rl-page .steps{grid-template-columns:1fr}}
 .rl-page .step{background:var(--glass);border:1px solid var(--glass-line);padding:22px;box-shadow:inset 0 1px 0 var(--glass-hi)}
-.rl-page .step .k{font-family:var(--f-display);font-size:30px;color:var(--red-2);font-weight:700;opacity:.85}
+.rl-page .step .k{font-family:var(--f-display);font-size:30px;color:var(--red-3);font-weight:700;opacity:.8}
 .rl-page .step h3{font-size:16px;margin:6px 0 8px}
 .rl-page .step p{color:var(--ink-dim);font-size:14px}
 .rl-page .ticks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}

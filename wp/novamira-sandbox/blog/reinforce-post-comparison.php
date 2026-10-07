@@ -261,7 +261,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
 add_action('wp_head', function () {
     if (!rl_is_cmp_view()) return; ?>
 <style id="rl-cmp-css">
-.rl-cmp{color:var(--ink-dim);--a:#e23b3b;--a-soft:rgba(226,59,59,.14);--a-line:rgba(226,59,59,.45);--b:#d8cfd0;--b-soft:rgba(216,207,208,.08);--b-line:rgba(216,207,208,.4);--ok:#3fa36b}
+.rl-cmp{color:var(--ink-dim);--a:#e85050;--a-soft:rgba(226,59,59,.14);--a-line:rgba(226,59,59,.45);--b:#d8cfd0;--b-soft:rgba(216,207,208,.08);--b-line:rgba(216,207,208,.4);--ok:#3fa36b}
 .rl-cmp h1,.rl-cmp h2,.rl-cmp h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);line-height:1.04;letter-spacing:.005em;text-wrap:balance}
 .rl-cmp .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .rl-cmp .c-hero{padding-block:clamp(24px,4vw,40px) 0;text-align:center}
