@@ -224,7 +224,7 @@ function rl_ind_css() {
 body.rl-indhub-page .fl-page-content,body.rl-indhub-page .fl-content,body.rl-indhub-page .fl-post-content,body.rl-ind-page .fl-page-content,body.rl-ind-page .fl-content,body.rl-ind-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
 .rl-ind .inf,.rl-indhub .inf{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-ind .inf .cap,.rl-indhub .inf .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
-.rl-ind .inf .cap span,.rl-indhub .inf .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-ind .inf .cap span,.rl-indhub .inf .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-ind .inf svg,.rl-indhub .inf svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-ind .n-b{fill:var(--bg);stroke:rgba(243,237,230,.12);stroke-width:.8}
 .rl-ind .n-on{fill:rgba(153,0,0,.09);stroke:rgba(226,59,59,.65);stroke-width:.8;opacity:0}
@@ -263,8 +263,8 @@ body.rl-indhub-page .fl-page-content,body.rl-indhub-page .fl-content,body.rl-ind
 <?php echo rl_is_indhub() ? rl_indhub_kf() : rl_ind_kf(); ?>
 .rl-ind .fact .src,.rl-indhub .fact .src{margin-top:auto}
 .rl-ind .fact,.rl-indhub .fact{display:flex;flex-direction:column;gap:10px}
-.rl-ind .fact p,.rl-indhub .fact p{color:var(--ink-dim);font-size:15px}
-.rl-indhub .ind .sum{color:var(--ink-dim);font-size:14.5px;margin:0}
+.rl-ind .fact p,.rl-indhub .fact p{color:var(--ink-dim);font-size:16px}
+.rl-indhub .ind .sum{color:var(--ink-dim);font-size:16px;margin:0}
 </style>
 <?php }
 

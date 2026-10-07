@@ -97,7 +97,7 @@ function rl_aw_css() {
 body.rl-aw-page .fl-page-content,body.rl-aw-page .fl-content,body.rl-aw-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
 .rl-aw .awf{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-aw .awf .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
-.rl-aw .awf .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-aw .awf .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-aw .awf svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-aw .w-b{fill:var(--bg);stroke:rgba(243,237,230,.12);stroke-width:.8}
 .rl-aw .w-on{fill:rgba(153,0,0,.09);stroke:rgba(226,59,59,.65);stroke-width:.8;opacity:0}

@@ -90,7 +90,7 @@ function rl_ex_css() {
 body.rl-ex-page .fl-page-content,body.rl-ex-page .fl-content,body.rl-ex-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
 .rl-ex .exm{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-ex .exm .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
-.rl-ex .exm .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-ex .exm .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-ex .exm svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-ex .x-q{fill:var(--bg);stroke:rgba(243,237,230,.12);stroke-width:.8}
 .rl-ex .x-on{fill:rgba(153,0,0,.1);stroke:rgba(226,59,59,.6);stroke-width:.8;opacity:0}

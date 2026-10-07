@@ -95,7 +95,7 @@ function rl_mt_css() {
 body.rl-mt-page .fl-page-content,body.rl-mt-page .fl-content,body.rl-mt-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
 .rl-mt .mtf{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-mt .mtf .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
-.rl-mt .mtf .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-mt .mtf .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-mt .mtf svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-mt .t-lab{font-family:var(--f-mono);font-size:8px;letter-spacing:.2em;fill:var(--ink-faint)}
 .rl-mt .t-day{fill:rgba(255,255,255,.03);stroke:rgba(243,237,230,.1);stroke-width:.6}

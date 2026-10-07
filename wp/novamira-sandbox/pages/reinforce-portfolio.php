@@ -94,55 +94,55 @@ body.rl-project-page .fl-post-meta,body.rl-project-page .fl-post-nav,body.rl-pro
 .rl-portfolio .p-tally{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line-2);border-bottom:1px solid var(--line-2);margin:0;flex:1}
 .rl-portfolio .p-tally div{background:var(--bg-2);padding:20px 22px;margin:0;display:flex;flex-direction:column;justify-content:center}
 .rl-portfolio .p-tally dt{font-family:var(--f-display);font-size:44px;line-height:1;color:var(--ink);font-weight:500;margin:0}
-.rl-portfolio .p-tally dd{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:6px 0 0}
+.rl-portfolio .p-tally dd{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:6px 0 0}
 .rl-portfolio .p-kinds{padding:18px 22px}
-.rl-portfolio .p-kinds .cap{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 10px}
+.rl-portfolio .p-kinds .cap{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--red-3);margin:0 0 10px}
 .rl-portfolio .chips{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
-.rl-portfolio .chips li{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-dim);border:1px solid var(--line-2);padding:3px 9px;margin:0}
-.rl-portfolio .p-note{margin:0 0 18px;border-left:3px solid var(--red-3);padding:12px 16px;background:linear-gradient(90deg,rgba(153,0,0,.1),transparent);font-size:15px;color:var(--ink-dim)}
+.rl-portfolio .chips li{font-family:var(--f-mono);font-size:12px;color:var(--ink-dim);border:1px solid var(--line-2);padding:3px 9px;margin:0}
+.rl-portfolio .p-note{margin:0 0 18px;border-left:3px solid var(--red-3);padding:12px 16px;background:linear-gradient(90deg,rgba(153,0,0,.1),transparent);font-size:16px;color:var(--ink-dim)}
 .rl-portfolio .p-note b{color:var(--ink)}
 .rl-portfolio .p-note a{color:var(--ink);border-bottom:1px solid var(--red-line);text-decoration:none}
 .rl-portfolio .p-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 .rl-portfolio .p-card{border:1px solid var(--line-2);background:var(--bg-2);display:grid;grid-template-rows:auto 1fr;margin:0}
 .rl-portfolio .p-shot{position:relative;border-bottom:1px solid var(--line-2);background:radial-gradient(120% 120% at 100% 0%,rgba(153,0,0,.22),transparent 55%),var(--panel);aspect-ratio:16/7;overflow:hidden}
 .rl-portfolio .p-shot svg{position:absolute;inset:0;width:100%;height:100%}
-.rl-portfolio .p-shot .tag{position:absolute;left:14px;top:12px;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
-.rl-portfolio .p-shot .yr{position:absolute;right:14px;top:12px;font-family:var(--f-mono);font-size:11px;color:var(--ink-faint)}
+.rl-portfolio .p-shot .tag{position:absolute;left:14px;top:12px;font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
+.rl-portfolio .p-shot .yr{position:absolute;right:14px;top:12px;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint)}
 .rl-portfolio .p-body{padding:18px 20px 20px;display:grid;gap:10px;align-content:start}
-.rl-portfolio .p-body h3{font-size:24px;line-height:1.1;margin:0}
+.rl-portfolio .p-body h3{font-size:20px;line-height:1.1;margin:0}
 .rl-portfolio .p-who{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);margin:-4px 0 0}
 .rl-portfolio .p-who a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
-.rl-portfolio .p-body p{margin:0;font-size:15px;color:var(--ink-dim)}
-.rl-portfolio .p-body .lbl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:4px 0 0}
+.rl-portfolio .p-body p{margin:0;font-size:16px;color:var(--ink-dim)}
+.rl-portfolio .p-body .lbl{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:4px 0 0}
 .rl-portfolio .p-built{margin:0;padding:0;list-style:none;display:grid;gap:6px}
-.rl-portfolio .p-built li{display:grid;grid-template-columns:14px 1fr;gap:9px;font-size:14.5px;color:var(--ink);margin:0}
+.rl-portfolio .p-built li{display:grid;grid-template-columns:14px 1fr;gap:9px;font-size:16px;color:var(--ink);margin:0}
 .rl-portfolio .p-built li .ic{margin-top:5px;color:var(--red-3)}
 .rl-portfolio .p-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:center;border-top:1px solid var(--line);padding-top:12px;margin-top:4px}
-.rl-portfolio .p-site{font-family:var(--f-mono);font-size:11.5px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.rl-portfolio .p-site{font-family:var(--f-mono);font-size:12px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--red-line)}
 .rl-portfolio .p-site:hover{color:var(--red-3)}
 .rl-portfolio .p-work{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 .rl-portfolio .p-work a{border:1px solid var(--line-2);background:var(--bg-2);padding:18px 20px;display:grid;gap:8px;text-decoration:none;color:var(--ink)}
 .rl-portfolio .p-work a:hover{border-color:var(--red-line)}
 .rl-portfolio .p-work b{font-family:var(--f-display);font-weight:500;font-size:19px;text-transform:uppercase;letter-spacing:.02em}
-.rl-portfolio .p-work span{font-size:14.5px;color:var(--ink-dim)}
-.rl-portfolio .p-work em{font-style:normal;font-family:var(--f-mono);font-size:11.5px;color:var(--red-3)}
-.rl-portfolio .p-cs{font-family:var(--f-mono);font-size:11.5px;color:var(--red-3);text-decoration:none;border-bottom:1px solid var(--red-line)}
+.rl-portfolio .p-work span{font-size:16px;color:var(--ink-dim)}
+.rl-portfolio .p-work em{font-style:normal;font-family:var(--f-mono);font-size:12px;color:var(--red-3)}
+.rl-portfolio .p-cs{font-family:var(--f-mono);font-size:12px;color:var(--red-3);text-decoration:none;border-bottom:1px solid var(--red-line)}
 .rl-project .pj-tag{font-size:.5em;line-height:1.15;display:inline-block;margin-top:10px}
 .rl-project .pj-panel .p-shot{aspect-ratio:16/6}
 .rl-project .pj-facts{margin:0;display:grid}
 .rl-project .pj-facts div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;padding:11px 20px;border-top:1px solid var(--line);margin:0}
-.rl-project .pj-facts dt{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);padding-top:3px}
-.rl-project .pj-facts dd{margin:0;font-size:14.5px;color:var(--ink)}
+.rl-project .pj-facts dt{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);padding-top:3px}
+.rl-project .pj-facts dd{margin:0;font-size:16px;color:var(--ink)}
 .rl-project .pj-facts dd a{color:var(--ink);border-bottom:1px solid var(--red-line);text-decoration:none}
 .rl-project .pj-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start}
 .rl-project .pj-intro{margin:0;font-size:17px;color:var(--ink-dim)}
 .rl-project .pj-blocks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .rl-project .pj-b{border:1px solid var(--line-2);background:var(--bg-2);padding:20px 22px;display:grid;gap:8px;align-content:start;margin:0}
-.rl-project .pj-b .n{font-family:var(--f-mono);font-size:11px;color:var(--red-3);letter-spacing:.12em}
-.rl-project .pj-b h3{font-size:21px;margin:0;line-height:1.15}
-.rl-project .pj-b p{margin:0;font-size:15px;color:var(--ink-dim)}
+.rl-project .pj-b .n{font-family:var(--f-mono);font-size:12px;color:var(--red-3);letter-spacing:.12em}
+.rl-project .pj-b h3{font-size:20px;margin:0;line-height:1.15}
+.rl-project .pj-b p{margin:0;font-size:16px;color:var(--ink-dim)}
 .rl-project .pj-stack{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:16px}
-.rl-project .pj-stack .lbl{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.rl-project .pj-stack .lbl{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
 .rl-project .pj-got{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 28px;margin-bottom:18px}
 .rl-project .pj-more{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:1000px){.rl-portfolio .p-work{grid-template-columns:repeat(2,minmax(0,1fr))}}

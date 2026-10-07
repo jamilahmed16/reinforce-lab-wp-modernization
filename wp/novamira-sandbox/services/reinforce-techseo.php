@@ -121,7 +121,7 @@ body.rl-tseo-page .fl-page-content,body.rl-tseo-page .fl-content,body.rl-tseo-pa
 /* hero visual: crawl, fix, index */
 .rl-tseo .crawl{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-tseo .crawl .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
-.rl-tseo .crawl .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-tseo .crawl .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-tseo .crawl svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-tseo .t-e{fill:none;stroke:var(--line-2);stroke-width:1}
 .rl-tseo .t-p{fill:none;stroke:var(--red-3);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:10 100;stroke-dashoffset:10;opacity:0}
@@ -149,10 +149,10 @@ body.rl-tseo-page .fl-page-content,body.rl-tseo-page .fl-content,body.rl-tseo-pa
 @media(max-width:900px){.rl-tseo .stages{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.rl-tseo .stages{grid-template-columns:1fr}}
 .rl-tseo .stages li{border:1px solid var(--glass-line);background:var(--glass);padding:22px;counter-increment:s;box-shadow:inset 0 1px 0 var(--glass-hi);display:flex;flex-direction:column;gap:8px}
 .rl-tseo .stages li::before{content:counter(s,decimal-leading-zero);font-family:var(--f-mono);font-size:11.5px;color:var(--red-3);letter-spacing:.1em}
-.rl-tseo .stages h3{font-size:17px}
-.rl-tseo .stages p{color:var(--ink-dim);font-size:14px}
-.rl-tseo .stages .brk{margin-top:auto;border-top:1px solid var(--line);padding-top:10px;font-size:13.5px;color:var(--ink)}
-.rl-tseo .stages .brk b{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;color:var(--red-3);font-weight:500;text-transform:uppercase;margin-right:6px}
+.rl-tseo .stages h3{font-size:20px}
+.rl-tseo .stages p{color:var(--ink-dim);font-size:16px}
+.rl-tseo .stages .brk{margin-top:auto;border-top:1px solid var(--line);padding-top:10px;font-size:16px;color:var(--ink)}
+.rl-tseo .stages .brk b{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;color:var(--red-3);font-weight:500;text-transform:uppercase;margin-right:6px}
 /* CWV + myths */
 .rl-tseo td.num{font-family:var(--f-display);font-size:20px;color:var(--ink);white-space:nowrap}
 </style>

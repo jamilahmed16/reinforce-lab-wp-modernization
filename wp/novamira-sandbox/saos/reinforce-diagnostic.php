@@ -99,7 +99,7 @@ add_action('wp_head', 'rl_diag_css', 22);
 function rl_diag_css() {
     if (!rl_is_diag()) return; ?>
 <style id="rl-diag-css">
-.rl-diag .src{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;line-height:1.7;color:var(--ink-faint);margin:16px 0 0}
+.rl-diag .src{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;line-height:1.7;color:var(--ink-faint);margin:16px 0 0}
 .rl-diag .src a{color:var(--ink-dim);border-bottom:1px solid var(--red-line);text-decoration:none}
 .rl-diag{position:relative;width:100vw;margin-left:calc(50% - 50vw);--r:0px;--pill:0px;color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6}
 body.rl-diag-page .fl-page-content,body.rl-diag-page .fl-content,body.rl-diag-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
@@ -110,7 +110,7 @@ body.rl-diag-page .fl-page-content,body.rl-diag-page .fl-content,body.rl-diag-pa
 .rl-diag .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
 .rl-diag :focus-visible{outline:2px solid var(--red-2);outline-offset:3px}
 .rl-diag .lede a,.rl-diag .inl{color:var(--ink);border-bottom:1px solid var(--red-line)}.rl-diag .lede a:hover,.rl-diag .inl:hover{color:var(--red-3)}
-.rl-diag .crumbs{padding-top:clamp(18px,2.4vw,28px);font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
+.rl-diag .crumbs{padding-top:clamp(18px,2.4vw,28px);font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
 .rl-diag .crumbs ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.6em}
 .rl-diag .crumbs li+li::before{content:"/";color:var(--red-2);margin-right:.6em}
 .rl-diag .crumbs a:hover{color:var(--ink)}.rl-diag .crumbs [aria-current]{color:var(--ink-dim)}
@@ -146,16 +146,16 @@ body.rl-diag-page .fl-page-content,body.rl-diag-page .fl-content,body.rl-diag-pa
 .rl-diag .hero .micro b{color:var(--ink-dim);font-weight:500}
 .rl-diag .form{background:var(--glass);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--glass-line);box-shadow:inset 0 1px 0 var(--glass-hi),0 30px 70px -44px rgba(0,0,0,.95);padding:26px}
 .rl-diag .form .ft{font-family:var(--f-display);text-transform:uppercase;font-size:19px;font-weight:600}
-.rl-diag .form .fs{font-family:var(--f-mono);font-size:11px;color:var(--ink-faint);letter-spacing:.1em;text-transform:uppercase;margin-top:4px;display:block}
+.rl-diag .form .fs{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.1em;text-transform:uppercase;margin-top:4px;display:block}
 .rl-diag .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
 @media(max-width:520px){.rl-diag .grid2{grid-template-columns:1fr}}
 .rl-diag .field{display:flex;flex-direction:column;gap:6px}
 .rl-diag .field.full{grid-column:1/-1}
-.rl-diag .field label{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
+.rl-diag .field label{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
 .rl-diag .field input,.rl-diag .field select{font-family:var(--f-body);font-size:14px;background:var(--bg);border:1px solid var(--line-2);color:var(--ink);padding:11px 12px;border-radius:0;transition:.15s}
 .rl-diag .field input:focus,.rl-diag .field select:focus{outline:none;border-color:var(--red-2);box-shadow:0 0 0 1px var(--red-line)}
 .rl-diag .field select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ink-faint) 50%),linear-gradient(135deg,var(--ink-faint) 50%,transparent 50%);background-position:calc(100% - 18px) 50%,calc(100% - 13px) 50%;background-size:5px 5px,5px 5px;background-repeat:no-repeat}
-.rl-diag .form .note{font-family:var(--f-mono);font-size:10.5px;color:var(--ink-faint);margin-top:14px;line-height:1.7}
+.rl-diag .form .note{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);margin-top:14px;line-height:1.7}
 .rl-diag .ok{display:none;text-align:center;padding:30px 10px}
 .rl-diag .ok .m{font-family:var(--f-display);text-transform:uppercase;font-size:22px;margin-bottom:10px}
 .rl-diag .ok p{color:var(--ink-dim);font-size:14px}
@@ -184,7 +184,7 @@ body.rl-diag-page .fl-page-content,body.rl-diag-page .fl-content,body.rl-diag-pa
 .rl-diag .deliv b{color:var(--ink);font-weight:600}
 .rl-diag .q{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 @media(max-width:760px){.rl-diag .q{grid-template-columns:1fr}}
-.rl-diag .q .cell .tag{font-family:var(--f-mono);font-size:11px;color:var(--red-3);letter-spacing:.1em;text-transform:uppercase}
+.rl-diag .q .cell .tag{font-family:var(--f-mono);font-size:12px;color:var(--red-3);letter-spacing:.1em;text-transform:uppercase}
 .rl-diag .final{position:relative;overflow:hidden;border:1px solid var(--red-line);background:#0b090a;padding:clamp(44px,7vw,88px) clamp(24px,5vw,64px);text-align:center;box-shadow:inset 0 1px 0 var(--glass-hi),0 0 130px -46px var(--red-glow)}
 .rl-diag .final::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(58% 96% at 50% 128%,rgba(226,59,59,.6),rgba(153,0,0,.28) 38%,transparent 70%),linear-gradient(180deg,transparent 40%,rgba(153,0,0,.10))}
 .rl-diag .final::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(102deg,#0b090a 0%,rgba(11,9,10,.55) 28%,transparent 47%),linear-gradient(258deg,#0b090a 0%,rgba(11,9,10,.55) 28%,transparent 47%)}

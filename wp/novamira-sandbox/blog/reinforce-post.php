@@ -213,10 +213,10 @@ body.rl-post-page .fl-page-content,body.rl-post-page .fl-content,body.rl-post-pa
 .rl-post .author p{margin:0 0 10px;color:var(--ink-dim);font-size:15px}
 .rl-post .author .links{display:flex;flex-wrap:wrap;gap:16px;font-size:14px}
 .rl-post .author .links a{color:var(--ink);border-bottom:1px solid var(--red-line)}
-.rl-post .rel .post .d{margin:6px 0 0;font-size:14.5px;color:var(--ink-dim)}
+.rl-post .rel .post .d{margin:6px 0 0;font-size:16px;color:var(--ink-dim)}
 .rl-post .rel .posts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
 .rl-post .rel .post{background:var(--bg-2);padding:22px;display:flex;flex-direction:column;gap:10px}
-.rl-post .rel .post .m{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+.rl-post .rel .post .m{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
 .rl-post .rel .post h3{font-size:19px;line-height:1.2;margin:0}
 .rl-post .rel .post h3 a{color:var(--ink)}
 .rl-post .rel .post h3 a:hover{color:var(--red-3)}

@@ -30,7 +30,7 @@ body.rl-system-page .fl-page-content,body.rl-system-page .fl-content,body.rl-sys
 .rl-sys .results a{display:grid;grid-template-columns:120px minmax(0,1fr) auto;gap:6px 24px;align-items:baseline;padding:20px 4px}
 .rl-sys .results .t{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
 .rl-sys .results h2{font-size:21px;line-height:1.2;margin:0;color:var(--ink)}
-.rl-sys .results p{grid-column:2;margin:0;color:var(--ink-dim);font-size:15px;max-width:75ch}
+.rl-sys .results p{grid-column:2;margin:0;color:var(--ink-dim);font-size:16px;max-width:75ch}
 .rl-sys .results .go{grid-row:1;grid-column:3;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint)}
 .rl-sys .results a:hover h2,.rl-sys .results a:hover .go{color:var(--red-3)}
 @media(max-width:700px){.rl-sys .results a{grid-template-columns:1fr}.rl-sys .results p{grid-column:1}.rl-sys .results .go{display:none}}

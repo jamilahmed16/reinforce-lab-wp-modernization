@@ -101,7 +101,7 @@ body.rl-geo-page .fl-page-content,body.rl-geo-page .fl-content,body.rl-geo-page 
 /* hero visual: fan-out to citation */
 .rl-geo .fan{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-geo .fan .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
-.rl-geo .fan .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-geo .fan .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-geo .fan svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-geo .g-box,.rl-geo .g-pill,.rl-geo .g-doc,.rl-geo .g-ans{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
 .rl-geo .g-boxon,.rl-geo .g-pillon,.rl-geo .g-docon{fill:rgba(153,0,0,.08);stroke:var(--red-2);stroke-width:1;opacity:0}
@@ -133,18 +133,18 @@ body.rl-geo-page .fl-page-content,body.rl-geo-page .fl-content,body.rl-geo-page 
 @media(max-width:760px){.rl-geo .ba{grid-template-columns:1fr}}
 .rl-geo .ba > div{border:1px solid var(--glass-line);background:var(--glass);padding:24px;box-shadow:inset 0 1px 0 var(--glass-hi)}
 .rl-geo .ba .after{border-color:var(--red-line);background:linear-gradient(180deg,rgba(153,0,0,.10),var(--glass))}
-.rl-geo .ba .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.rl-geo .ba .tag{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
 .rl-geo .ba .after .tag{color:var(--red-3)}
 .rl-geo .ba blockquote{margin:12px 0 14px;font-size:17px;line-height:1.55;color:var(--ink)}
 .rl-geo .ba .before blockquote{color:var(--ink-dim)}
 .rl-geo .ba ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
-.rl-geo .ba li{font-size:14px;color:var(--ink-dim);display:flex;gap:10px}
+.rl-geo .ba li{font-size:16px;color:var(--ink-dim);display:flex;gap:10px}
 .rl-geo .ba .before li::before{content:"×";color:var(--ink-faint);font-family:var(--f-mono)}
 .rl-geo .ba .after li::before{content:"+";color:var(--red-3);font-family:var(--f-mono)}
 .rl-geo .research{border-left:2px solid var(--red-2);padding:6px 0 6px 22px;margin-top:clamp(28px,4vw,40px);max-width:80ch}
-.rl-geo .research p{color:var(--ink-dim);font-size:15px}
+.rl-geo .research p{color:var(--ink-dim);font-size:16px}
 .rl-geo .research p+p{margin-top:10px}
-.rl-geo .research .src{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;color:var(--ink-faint)}
+.rl-geo .research .src{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:var(--ink-faint)}
 .rl-geo .research .src:first-child{margin-top:0} /* kit .src adds margin-top (D-048); keep GEO as it was */
 .rl-geo .research a{color:var(--ink);border-bottom:1px solid var(--red-line)}
 .rl-geo .flow4{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:f}
@@ -152,8 +152,8 @@ body.rl-geo-page .fl-page-content,body.rl-geo-page .fl-content,body.rl-geo-page 
 @media(max-width:520px){.rl-geo .flow4{grid-template-columns:1fr}}
 .rl-geo .flow4 li{border:1px solid var(--glass-line);background:var(--glass);padding:22px;counter-increment:f;box-shadow:inset 0 1px 0 var(--glass-hi)}
 .rl-geo .flow4 li::before{content:counter(f,decimal-leading-zero);font-family:var(--f-mono);font-size:11.5px;color:var(--red-3);letter-spacing:.1em}
-.rl-geo .flow4 h3{font-size:16px;margin:8px 0}
-.rl-geo .flow4 p{color:var(--ink-dim);font-size:14px}
+.rl-geo .flow4 h3{font-size:20px;margin:8px 0}
+.rl-geo .flow4 p{color:var(--ink-dim);font-size:16px}
 /* comparison table */
 /* cards */
 /* steps */

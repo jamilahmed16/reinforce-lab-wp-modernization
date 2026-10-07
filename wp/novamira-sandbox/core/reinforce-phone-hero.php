@@ -39,7 +39,7 @@ add_action('wp_head', function () {
 .rl-ph{display:none}
 @media(max-width:560px){.rl-anim:has(>.rl-ph)>:not(.rl-ph):not(.cap){display:none!important}.rl-anim>.rl-ph{display:block!important;flex:none;width:100%}}
 .rl-ph{font-family:var(--f-mono);text-align:left}
-.rl-ph .ph-l{font-size:10px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase;margin:0 0 8px}
+.rl-ph .ph-l{font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase;margin:0 0 8px}
 .rl-ph ul{list-style:none;margin:0;padding:0}
 .rl-ph .ph-i{border:1px solid rgba(243,237,230,.16);background:var(--bg);color:var(--ink);font-size:12.5px;line-height:1.35;letter-spacing:.04em;text-transform:uppercase;padding:8px 10px;margin:0}
 .rl-ph .ph-chips{display:flex;flex-wrap:wrap;gap:6px}
@@ -53,11 +53,11 @@ add_action('wp_head', function () {
 .rl-ph .ph-ok::before{content:"";display:inline-block;width:9px;height:4px;border-left:2px solid #5fb37a;border-bottom:2px solid #5fb37a;transform:rotate(-45deg);margin:0 9px 3px 1px}
 .rl-ph .ph-core{border:1px solid var(--red-2);background:linear-gradient(180deg,rgba(153,0,0,.2),var(--bg));padding:12px 14px}
 .rl-ph .ph-core b{display:block;font-family:var(--f-display);font-weight:600;font-size:18px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink);line-height:1.2}
-.rl-ph .ph-core span{display:block;font-size:11px;letter-spacing:.12em;color:var(--red-3);text-transform:uppercase;margin-top:5px}
+.rl-ph .ph-core span{display:block;font-size:12px;letter-spacing:.12em;color:var(--red-3);text-transform:uppercase;margin-top:5px}
 .rl-ph .ph-ar{height:24px;position:relative}
 .rl-ph .ph-ar::before{content:"";position:absolute;left:18px;top:3px;bottom:3px;width:1px;background:var(--red-line)}
 .rl-ph .ph-ar::after{content:"";position:absolute;left:14px;bottom:4px;width:7px;height:7px;border-right:1px solid var(--red-3);border-bottom:1px solid var(--red-3);transform:rotate(45deg)}
-.rl-ph .ph-f{margin:14px 0 0;padding-top:10px;border-top:1px solid var(--line-2);font-size:10px;line-height:1.5;letter-spacing:.14em;color:var(--ink-faint);text-transform:uppercase}
+.rl-ph .ph-f{margin:14px 0 0;padding-top:10px;border-top:1px solid var(--line-2);font-size:12px;line-height:1.5;letter-spacing:.14em;color:var(--ink-faint);text-transform:uppercase}
 .rl-ph .ph-k{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
 <?php echo $k; ?>
 

@@ -85,7 +85,7 @@ function rl_wpd_css() {
 body.rl-wpd-page .fl-page-content,body.rl-wpd-page .fl-content,body.rl-wpd-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
 .rl-wpd .wpf{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-wpd .wpf .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
-.rl-wpd .wpf .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-wpd .wpf .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-wpd .wpf svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-wpd .p-fr{fill:var(--bg);stroke:rgba(243,237,230,.14);stroke-width:.8}
 .rl-wpd .p-rule{stroke:rgba(243,237,230,.1);stroke-width:.8}

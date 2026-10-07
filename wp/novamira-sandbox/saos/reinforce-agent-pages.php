@@ -161,10 +161,10 @@ function rl_ag_css() {
 body.rl-ag-page .fl-page-content,body.rl-ag-page .fl-content,body.rl-ag-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
 .rl-ag .agf{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-ag .agf .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
-.rl-ag .agf .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-ag .agf .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-ag .agf svg{display:block;width:100%;height:auto;overflow:visible}
 <?php if (function_exists('rl_agv_css')) echo rl_agv_css(); ?>
-.rl-ag .ind ul li{font-size:14px}
+.rl-ag .ind ul li{font-size:16px}
 </style>
 <?php }
 

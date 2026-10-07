@@ -100,7 +100,7 @@ function rl_local_css() {
 body.rl-local-page .fl-page-content,body.rl-local-page .fl-content,body.rl-local-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
 .rl-local .lpk{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-local .lpk .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
-.rl-local .lpk .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-local .lpk .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-local .lpk svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-local .o-q,.rl-local .o-map{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
 .rl-local .o-qt{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.12em;fill:var(--ink);animation:rlloType 10s linear infinite both}
@@ -137,11 +137,11 @@ body.rl-local-page .fl-page-content,body.rl-local-page .fl-content,body.rl-local
 .rl-local .factors{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 @media(max-width:820px){.rl-local .factors{grid-template-columns:1fr}}
 .rl-local .factor{border:1px solid var(--glass-line);background:var(--glass);padding:24px;box-shadow:inset 0 1px 0 var(--glass-hi);display:flex;flex-direction:column;gap:10px}
-.rl-local .factor .n{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
+.rl-local .factor .n{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
 .rl-local .factor h3{font-size:20px}
-.rl-local .factor p{color:var(--ink-dim);font-size:14.5px}
-.rl-local .factor .we{margin-top:auto;border-top:1px solid var(--line);padding-top:10px;color:var(--ink);font-size:14px}
-.rl-local .factor .we b{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;color:var(--red-3);font-weight:500;text-transform:uppercase;margin-right:6px}
+.rl-local .factor p{color:var(--ink-dim);font-size:16px}
+.rl-local .factor .we{margin-top:auto;border-top:1px solid var(--line);padding-top:10px;color:var(--ink);font-size:16px}
+.rl-local .factor .we b{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;color:var(--red-3);font-weight:500;text-transform:uppercase;margin-right:6px}
 .rl-local .quote{margin-top:22px;border-left:2px solid var(--red-2);padding:6px 0 6px 20px;font-size:17px;color:var(--ink);max-width:70ch}
 </style>
 <?php }

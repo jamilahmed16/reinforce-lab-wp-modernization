@@ -83,7 +83,7 @@ add_action('wp_head', function () {
 body.rl-aigrowth-page .fl-page-content,body.rl-aigrowth-page .fl-content,body.rl-aigrowth-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
 .rl-aigrowth .agv{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-aigrowth .agv .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
-.rl-aigrowth .agv .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-aigrowth .agv .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-aigrowth .agv svg{display:block;width:100%;height:auto}
 .rl-aigrowth .ag-l{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
 .rl-aigrowth .ag-l.ag-on{fill:rgba(153,0,0,.10);stroke:var(--red-2)}
@@ -98,11 +98,11 @@ body.rl-aigrowth-page .fl-page-content,body.rl-aigrowth-page .fl-content,body.rl
 .rl-aigrowth .ag-ot{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;fill:var(--ink)}
 .rl-aigrowth .lay{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0;padding:0;list-style:none}
 .rl-aigrowth .lay li{border:1px solid var(--line-2);background:var(--bg-2);padding:20px;margin:0;display:grid;gap:8px;align-content:start}
-.rl-aigrowth .lay .k{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--red-3)}
-.rl-aigrowth .lay h3{font-size:21px;margin:0}
-.rl-aigrowth .lay p{margin:0;font-size:15px;color:var(--ink-dim)}
-.rl-aigrowth .lay .eg{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);border-top:1px solid var(--line);padding-top:10px;margin-top:4px}
-.rl-aigrowth .sys .cell .m{font-family:var(--f-mono);font-size:11px;color:var(--ink-faint);border-top:1px solid var(--line);padding-top:10px;margin-top:8px;display:block}
+.rl-aigrowth .lay .k{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--red-3)}
+.rl-aigrowth .lay h3{font-size:20px;margin:0}
+.rl-aigrowth .lay p{margin:0;font-size:16px;color:var(--ink-dim)}
+.rl-aigrowth .lay .eg{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);border-top:1px solid var(--line);padding-top:10px;margin-top:4px}
+.rl-aigrowth .sys .cell .m{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);border-top:1px solid var(--line);padding-top:10px;margin-top:8px;display:block}
 .rl-aigrowth .sys .cell .m b{color:var(--red-3);font-weight:500}
 .rl-aigrowth .price{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center;border:1px solid var(--red-line);background:linear-gradient(90deg,rgba(153,0,0,.12),transparent);padding:22px 24px}
 .rl-aigrowth .price p{margin:0;color:var(--ink-dim)}

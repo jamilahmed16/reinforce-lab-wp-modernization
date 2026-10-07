@@ -92,7 +92,7 @@ function rl_pr_css() {
 body.rl-pr-page .fl-page-content,body.rl-pr-page .fl-content,body.rl-pr-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
 .rl-pr .prw{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-pr .prw .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
-.rl-pr .prw .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-pr .prw .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-pr .prw svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-pr .p-b{fill:var(--bg);stroke:rgba(243,237,230,.12);stroke-width:.8}
 .rl-pr .p-site{stroke:rgba(226,59,59,.35)}
@@ -124,11 +124,11 @@ body.rl-pr-page .fl-page-content,body.rl-pr-page .fl-content,body.rl-pr-page .fl
 .rl-pr .factors{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 @media(max-width:820px){.rl-pr .factors{grid-template-columns:1fr}}
 .rl-pr .factor{border:1px solid var(--glass-line);background:var(--glass);padding:24px;box-shadow:inset 0 1px 0 var(--glass-hi);display:flex;flex-direction:column;gap:10px}
-.rl-pr .factor .n{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
+.rl-pr .factor .n{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
 .rl-pr .factor h3{font-size:20px}
-.rl-pr .factor p{color:var(--ink-dim);font-size:14.5px}
-.rl-pr .factor .we{margin-top:auto;border-top:1px solid var(--line);padding-top:10px;color:var(--ink);font-size:14px}
-.rl-pr .factor .we b{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;color:var(--red-3);font-weight:500;text-transform:uppercase;margin-right:6px}
+.rl-pr .factor p{color:var(--ink-dim);font-size:16px}
+.rl-pr .factor .we{margin-top:auto;border-top:1px solid var(--line);padding-top:10px;color:var(--ink);font-size:16px}
+.rl-pr .factor .we b{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;color:var(--red-3);font-weight:500;text-transform:uppercase;margin-right:6px}
 </style>
 <?php }
 

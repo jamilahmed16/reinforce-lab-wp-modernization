@@ -88,7 +88,7 @@ function rl_intl_css() {
 body.rl-intl-page .fl-page-content,body.rl-intl-page .fl-content,body.rl-intl-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
 .rl-intl .mkt{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-intl .mkt .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
-.rl-intl .mkt .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-intl .mkt .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-intl .mkt svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-intl .i-globe circle,.rl-intl .i-globe ellipse,.rl-intl .i-globe line{fill:none;stroke:rgba(243,237,230,.08);stroke-width:.8}
 .rl-intl .i-mer{transform-box:fill-box;transform-origin:50% 50%;animation:rliTurn 12s linear infinite}
@@ -121,10 +121,10 @@ body.rl-intl-page .fl-page-content,body.rl-intl-page .fl-content,body.rl-intl-pa
 .rl-intl .rules li{border:1px solid var(--glass-line);background:var(--glass);padding:16px 18px 16px 52px;position:relative;counter-increment:r;box-shadow:inset 0 1px 0 var(--glass-hi)}
 .rl-intl .rules li::before{content:counter(r,decimal-leading-zero);position:absolute;left:18px;top:17px;font-family:var(--f-mono);font-size:11.5px;color:var(--red-3);letter-spacing:.1em}
 .rl-intl .rules b{display:block;font-family:var(--f-display);text-transform:uppercase;font-weight:600;font-size:15px;letter-spacing:.02em;margin-bottom:4px}
-.rl-intl .rules span{color:var(--ink-dim);font-size:14.5px}
+.rl-intl .rules span{color:var(--ink-dim);font-size:16px}
 .rl-intl .code{margin:0;border:1px solid var(--red-line);background:#0b090a;padding:20px 22px;overflow-x:auto;font-family:var(--f-mono);font-size:12.5px;line-height:1.75;color:var(--ink-dim);white-space:pre}
 .rl-intl .code .c{color:var(--ink-faint)}.rl-intl .code .t{color:var(--red-3)}.rl-intl .code .v{color:var(--ink)}
-.rl-intl .code-cap{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:10px;display:block}
+.rl-intl .code-cap{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:10px;display:block}
 .rl-intl td.lvl{white-space:nowrap}
 </style>
 <?php }

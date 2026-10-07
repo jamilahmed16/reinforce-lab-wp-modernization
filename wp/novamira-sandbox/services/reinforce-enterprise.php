@@ -93,7 +93,7 @@ function rl_ent_css() {
 body.rl-ent-page .fl-page-content,body.rl-ent-page .fl-content,body.rl-ent-page .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
 .rl-ent .gov{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 20px 14px;box-shadow:0 30px 80px -50px var(--red-glow)}
 .rl-ent .gov .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
-.rl-ent .gov .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-ent .gov .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-ent .gov svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-ent .e-e{fill:none;stroke:rgba(243,237,230,.08);stroke-width:.8}
 .rl-ent .e-ed{stroke-dasharray:2 4}

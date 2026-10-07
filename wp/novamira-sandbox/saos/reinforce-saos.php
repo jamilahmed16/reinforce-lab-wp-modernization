@@ -26,7 +26,7 @@ add_action('wp_head', 'rl_saos_css', 22);
 function rl_saos_css() {
     if (!rl_is_saos()) return; ?>
 <style id="rl-saos-css">
-.rl-saos .src{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;line-height:1.7;color:var(--ink-faint);margin:16px 0 0}
+.rl-saos .src{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;line-height:1.7;color:var(--ink-faint);margin:16px 0 0}
 .rl-saos .src a{color:var(--ink-dim);border-bottom:1px solid var(--red-line);text-decoration:none}
 /* full-bleed breakout of theme container + kill content padding */
 .rl-saos{position:relative;width:100vw;margin-left:calc(50% - 50vw);--r:0px;--r-lg:0px;--pill:0px;color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6}
@@ -45,13 +45,13 @@ body.rl-saos-page .fl-page-content,body.rl-saos-page .fl-content,body.rl-saos-pa
 .rl-saos .lede a,.rl-saos .inl{color:var(--ink);border-bottom:1px solid var(--red-line)}.rl-saos .lede a:hover,.rl-saos .inl:hover{color:var(--red-3)}
 .rl-saos :focus-visible{outline:2px solid var(--red-2);outline-offset:3px}
 /* breadcrumb */
-.rl-saos .crumbs{padding-top:clamp(18px,2.4vw,28px);font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
+.rl-saos .crumbs{padding-top:clamp(18px,2.4vw,28px);font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
 .rl-saos .crumbs ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.6em}
 .rl-saos .crumbs li+li::before{content:"/";color:var(--red-2);margin-right:.6em}
 .rl-saos .crumbs a:hover{color:var(--ink)}.rl-saos .crumbs [aria-current]{color:var(--ink-dim)}
 /* linked cards */
 .rl-saos a.cell,.rl-saos a.agent{display:block}
-.rl-saos .more{display:inline-block;margin-top:14px;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
+.rl-saos .more{display:inline-block;margin-top:14px;font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
 .rl-saos .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
 .rl-saos .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
 /* ---- ported from design preview (scoped) ---- */
@@ -123,12 +123,12 @@ body.rl-saos-page .fl-page-content,body.rl-saos-page .fl-content,body.rl-saos-pa
 .rl-saos .step p{color:var(--ink-dim);font-size:14px}
 .rl-saos .chain{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch}
 .rl-saos .chip{border:1px solid var(--glass-line);background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:var(--r);padding:16px 18px;flex:1 1 150px;min-width:0;box-shadow:inset 0 1px 0 var(--glass-hi)}
-.rl-saos .chip .t{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;color:var(--ink-faint);text-transform:uppercase}
+.rl-saos .chip .t{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--ink-faint);text-transform:uppercase}
 .rl-saos .chip .v{font-family:var(--f-display);text-transform:uppercase;font-size:15px;margin-top:6px}
 .rl-saos .chip.on{border-color:var(--red-2);box-shadow:inset 0 1px 0 var(--glass-hi),0 0 30px -8px var(--red-glow)}
 .rl-saos .icp .cell{position:relative}
 .rl-saos .icp h3{font-size:20px}
-.rl-saos .icp .who{font-family:var(--f-mono);font-size:11px;color:var(--ink-faint);letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+.rl-saos .icp .who{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
 .rl-saos .icp ul{margin:14px 0 0;padding-left:0;list-style:none;display:grid;gap:9px}
 .rl-saos .icp li{color:var(--ink-dim);font-size:14px;display:flex;gap:10px}
 .rl-saos .icp li::before{content:"›";color:var(--red-2);font-family:var(--f-mono)}
@@ -144,7 +144,7 @@ body.rl-saos-page .fl-page-content,body.rl-saos-page .fl-content,body.rl-saos-pa
 @media(max-width:900px){.rl-saos .pkgs{grid-template-columns:1fr}}
 .rl-saos .pkg{background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--glass-line);border-radius:var(--r-lg);padding:30px 26px;display:flex;flex-direction:column;gap:16px;box-shadow:inset 0 1px 0 var(--glass-hi),0 24px 60px -40px rgba(0,0,0,.9)}
 .rl-saos .pkg.feat{background:linear-gradient(180deg,rgba(153,0,0,.14),var(--glass-2));border-color:var(--red-line);box-shadow:inset 0 1px 0 var(--glass-hi),0 0 70px -26px var(--red-glow)}
-.rl-saos .pkg .tier{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--red-3);text-transform:uppercase}
+.rl-saos .pkg .tier{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--red-3);text-transform:uppercase}
 .rl-saos .pkg h3{font-size:23px}
 .rl-saos .pkg .price{font-family:var(--f-display);font-size:26px;font-weight:600}
 .rl-saos .pkg .price small{display:block;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);font-weight:400;letter-spacing:.04em;margin-top:6px;text-transform:none}
@@ -154,15 +154,15 @@ body.rl-saos-page .fl-page-content,body.rl-saos-page .fl-content,body.rl-saos-pa
 .rl-saos .pkg .btn{margin-top:auto;justify-content:center}
 .rl-saos .agent{background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--glass-line);border-radius:var(--r);padding:20px;box-shadow:inset 0 1px 0 var(--glass-hi);transition:.2s}
 .rl-saos .agent:hover{border-color:var(--red-line);background:var(--glass-2)}
-.rl-saos .agent .id{font-family:var(--f-mono);font-size:11px;color:var(--red-3);letter-spacing:.1em}
+.rl-saos .agent .id{font-family:var(--f-mono);font-size:12px;color:var(--red-3);letter-spacing:.1em}
 .rl-saos .agent h4{font-size:15px;margin:9px 0 6px}
 .rl-saos .agent p{font-size:13px;color:var(--ink-faint)}
 .rl-saos .proof{border:1px dashed var(--line-2);background:var(--panel);padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
 @media(max-width:760px){.rl-saos .proof{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:420px){.rl-saos .proof{grid-template-columns:1fr}}
 .rl-saos .stat .fig{font-family:var(--f-display);font-size:38px;font-weight:700;color:var(--ink)}
-.rl-saos .stat .lab{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
-.rl-saos .ph{font-family:var(--f-mono);font-size:11px;color:var(--red-3);border:1px solid var(--red);padding:2px 7px;display:inline-block;letter-spacing:.08em;text-transform:uppercase}
+.rl-saos .stat .lab{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
+.rl-saos .ph{font-family:var(--f-mono);font-size:12px;color:var(--red-3);border:1px solid var(--red);padding:2px 7px;display:inline-block;letter-spacing:.08em;text-transform:uppercase}
 .rl-saos .faq details{border:1px solid var(--glass-line);background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:var(--r);margin-bottom:12px;box-shadow:inset 0 1px 0 var(--glass-hi)}
 .rl-saos .faq summary{cursor:pointer;padding:20px 24px;font-family:var(--f-display);text-transform:uppercase;font-size:16px;letter-spacing:.02em;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
 .rl-saos .faq summary::-webkit-details-marker{display:none}
@@ -188,7 +188,7 @@ body.rl-saos-page .fl-page-content,body.rl-saos-page .fl-content,body.rl-saos-pa
 .rl-saos .loop{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 22px 14px;box-shadow:0 30px 80px -50px var(--red-glow);display:flex;flex-direction:column}
 .rl-saos .loop>div:not(.cap){flex:1;display:flex;align-items:center}.rl-saos .loop svg{width:100%;height:auto}
 .rl-saos .loop .cap{display:flex;justify-content:space-between;gap:12px}
-.rl-saos .loop .cap span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.rl-saos .loop .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-saos .lp-ring{fill:none;stroke:var(--line-2);stroke-width:1}
 .rl-saos .lp-ring2{fill:none;stroke:var(--line-2);stroke-width:1;stroke-dasharray:2 7;opacity:.7;transform-origin:260px 222px;animation:rlsSpin 60s linear infinite reverse}
 .rl-saos .lp-comet{animation:rlsSpin 10s linear infinite}
