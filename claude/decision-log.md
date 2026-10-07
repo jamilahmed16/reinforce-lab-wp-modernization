@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-139 | Jamil's design decisions on F-028: body text 16px, card titles 20px, 12px minimum, container 1440 (supersedes D-013's 1280), one button label "Get your free diagnostic", footer names kept, US office in schema, LiteSpeed Cache stays off, author/date/Uncategorized archives retired (301 to /blog/) | 7 Oct | DONE on `.online` | this file |
 | D-138 | F-028 P1 fixes on `.online`: zero radius everywhere, accessible colour tokens, blog grid and post share image, kit-styled 404 and search, SMTP code (waits for mailbox), cookie choice bar with GPC and consent-gated GA4, privacy policy row | 7 Oct | DONE (Jamil: "Do it all") | this file |
 | O-026 | Favicon and site icon: Jamil asked to be reminded later (reminder scheduled 8 Oct) | 7 Oct | OPEN | this file |
 | O-027 | SMTP mailbox and password for form email; DMARC records for both domains; GA4 measurement ID and 14-month retention | 7 Oct | OPEN (Jamil) | this file |
@@ -203,6 +204,23 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-139 · Design decisions on the audit: type scale, button label, US office, archives
+**Date:** 7 October 2026 · **Status:** DONE on `.online` (Jamil: body "16", card titles "One", small text "12", width "1440 px", button label "Get your free diagnostic (Recommended)", footer names "No", US office "Yes", LiteSpeed Cache "No", archives "Yes")
+
+- **Method for the type scale:** a browser scan of all 57 URLs (55 pages, 404, search) at 1440 and 390 px traced, for every visible text element, the CSS rule that wins its font size; only those rules were changed at source. SVG diagram text was excluded (it scales with the drawing). 286 declarations in 39 files.
+  - **Body text 16px** (was 13 to 15.5px; 14.5px on most pages). Hero intros on Diagnostic and Packages now `clamp(16px, ...)`.
+  - **12px minimum** for all text (was 10 to 11.5px for labels, breadcrumbs, sources, phone-hero labels, form labels).
+  - **Card titles 20px** (was 11 sizes from 11 to 32px), plus a kit default `.rl-page h3` 20px. **Kept as they are:** FAQ questions (16px, they are the FAQ summary), and four section subheadings that sit above groups of cards (About "Career path" 26px, Services group headings 26px, Enterprise SEO "What we do instead" 22px, Awards feature 32px).
+  - **Result (VERIFIED, re-scan):** 0 body-text elements under 16px, 0 elements under 12px, 0 card titles off 20px; no horizontal overflow at 390 or 1440 on any page.
+- **Container width 1440 px** stays (it is what every page uses); this supersedes the "1280 content width" in D-013. `CLAUDE.md` updated.
+- **One button label:** every button to the diagnostic reads "Get your free diagnostic" (header "Get Your Free Diagnostic"), replacing "Get My Search Authority Diagnostic" (31), "Book a Strategy Call" (Home), "Get a Free Quote" (footer), "Request My Search Authority Diagnostic" (form submit and SAOS), "Start with a diagnostic", "Start with the free diagnostic", "Find out where you stand", "Find your starting agent", "Get your diagnostic". 42 buttons in 33 files. The three package-tier buttons ("Start here", "Get the Growth OS", "Talk to us") stay, as they choose a plan.
+- **Footer names:** unchanged (Jamil: "No").
+- **US office:** Organization schema now has both addresses (Dhaka; 2511 Pines Pointe Dr, Katy, TX 77493) and `subOrganization` "Reinforce Lab (United States)", legalName "Reinforce Lab Inc", telephone +1-832-548-4553 (`core/reinforce-entity.php`).
+- **LiteSpeed Cache:** stays inactive (Jamil: "No").
+- **Archives retired:** author archives, date archives and the default "Uncategorized" category 301 to `/blog/` (`blog/reinforce-blog.php`, on `wp` before Yoast's own archive redirect); every `/author/...` path does the same, including production's former authors; `/paged-N/` junk keeps its approved 410 (F-001). Yoast author and date archives off; author sitemap gone; no category sitemap while only Uncategorized exists. **Found (VERIFIED, GSC 16 months):** 7 production author archives had impressions (`/author/catherine/` 16 clicks, 489 impressions; `/author/sabera/` 221; `/author/farihaanika/` 264). 16 production author URLs added to `claude/data/approved-redirects-2026-10.csv` as APPROVED-RETIRE, 301 to `/blog/`. No date or category archive URLs appear in the production data.
 
 ---
 

@@ -90,7 +90,7 @@ All 111 published posts on production were dated into a 9-week window in early 2
 
 **Phase:** DISCOVER complete. **Design system + Home hero + dark glass header BUILT** on `.online`. Strategy-first: the SEO/GEO/AEO build standard and the migration/data plan are written. Next: build the remaining Home sections → About → the 5 service pages.
 
-**Design system — LOCKED (D-013):** dark `#121011` ground, brand red `#990000` accent, **Oswald** headings+buttons, **IBM Plex Sans** body, **IBM Plex Mono** eyebrows, **zero rounded corners**, glass header, 1280 content width. Active on `.online` as `reinforce-lab-systems-grid` (Novamira design system). Every page must pass the **SEO/GEO/AEO build standard (D-012, `claude/seo-geo-aeo-standard.md`)**.
+**Design system — LOCKED (D-013):** dark `#121011` ground, brand red `#990000` accent, **Oswald** headings+buttons, **IBM Plex Sans** body, **IBM Plex Mono** eyebrows, **zero rounded corners**, glass header, 1440 container width (D-139, was 1280), body text 16px, card titles 20px, nothing under 12px, one diagnostic button label "Get your free diagnostic" (D-139). Active on `.online` as `reinforce-lab-systems-grid` (Novamira design system). Every page must pass the **SEO/GEO/AEO build standard (D-012, `claude/seo-geo-aeo-standard.md`)**.
 
 **The DISCOVER baseline (still the reason this project exists):**
 
