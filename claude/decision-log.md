@@ -20,6 +20,9 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-138 | F-028 P1 fixes on `.online`: zero radius everywhere, accessible colour tokens, blog grid and post share image, kit-styled 404 and search, SMTP code (waits for mailbox), cookie choice bar with GPC and consent-gated GA4, privacy policy row | 7 Oct | DONE (Jamil: "Do it all") | this file |
+| O-026 | Favicon and site icon: Jamil asked to be reminded later (reminder scheduled 8 Oct) | 7 Oct | OPEN | this file |
+| O-027 | SMTP mailbox and password for form email; DMARC records for both domains; GA4 measurement ID and 14-month retention | 7 Oct | OPEN (Jamil) | this file |
 | F-028 | Full site audit of `.online` (55 URLs, desktop and phone, axe-core, HTTP): 8 P1 items (zero-radius rule broken by theme buttons, colour contrast, no favicon, empty blog card image, unstyled 404 and search, form email without SMTP, consent/GA4); type-scale, CTA-label and footer-name inconsistencies for Jamil | 6 Oct | OPEN (Jamil: "Check again across entire website...") | `claude/research/site-audit-2026-10-06.md` |
 | D-137 | AI Search Optimization page: SEO/GEO gaps closed (dateModified and visible last-updated date, price Offer in the Service schema, "Led by Jamil Ahmed" with reviewedBy, page-specific share image); main landmark already present, audit tool corrected | 6 Oct | DONE (Jamil: "Do all that required using a checklist") | this file |
 | D-136 | AI Search Optimization page: six conversion points added (mid-page CTAs after How it works, deliverables with price, and the agency checklist; client logo strip; FAQ links; Talk to us and next-step line in the final CTA); no content removed | 6 Oct | DONE (Jamil: "Go ahead") | this file |
@@ -200,6 +203,21 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-138 · Site audit P1 fixes (F-028)
+**Date:** 7 October 2026 · **Status:** DONE on `.online` (Jamil: "Do it all", for the P1 list; favicon: "Remind me later")
+
+- **Zero radius (A1):** global rule in `core/reinforce-header.php` resets the Beaver Builder theme's 4 px radius on `.btn`, buttons, the menu button, cards and form fields (D-013).
+- **Contrast (B1):** `--red-3` #e23b3b to **#e85050** and `--ink-faint` #877d75 to **#8f857d** (4.5:1 or better on #121011, #171314, #1a1516 and the red-tinted panels); small labels that used `--red-2` as text (`.tag`, `.tier`, `.ph`) now use `--red-3`; large step numbers `--red-3` at opacity .8 (3:1 for large text). Hard-coded copies of the old values in 14 files updated.
+- **Blog card (A7):** the "empty grey box" was the grid's divider colour painted behind empty grid cells, not a missing image slot. Hairlines are now drawn per card. The post templates show the featured image as a large top image, so no featured image was added; the post got its own share image instead (attachment 336, source `claude/design-previews/og-post-330/`).
+- **404 and search (A8):** new `pages/reinforce-system.php`. 404 and 410 keep their status codes; message, search box, six popular pages, diagnostic call to action. Search matches titles, meta descriptions and focus keyphrases as well as content (our pages store only a shortcode in `post_content`), one list with no pagination, noindex.
+- **SMTP (C4):** found (VERIFIED, DNS from the server): both domains use Titan Email; SPF allows only `spf.titan.email`; `.com` has Titan DKIM (`titan1`), `.online` none; no DMARC on either; WordPress was sending from `wordpress@reinforcelab.online` through the web server's sendmail, which SPF does not cover. New `core/reinforce-mail.php` sends through `smtp.titan.email:465` as a `reinforcelab.com` mailbox, From name "Reinforce Lab", last failure kept in `rl_mail_last_error`. **Off until** `RL_SMTP_USER` and `RL_SMTP_PASS` are defined in `wp-config.php` (secrets never in git). Needs Jamil (O-027).
+- **Consent and GA4 (C7):** new `core/reinforce-consent.php`, built to the existing Privacy Policy: bar on first visit, Decline and Accept with equal weight, nothing loads before Accept, Decline removes `_ga` cookies, Global Privacy Control counts as decline, "Cookie settings" in the footer reopens it, choice kept 6 months in local storage. GA4 loads only when option `rl_ga4_id` holds an ID (none yet, O-027). Tested in a browser with a temporary test ID (removed): no Google request before Accept or after Decline, one after Accept, GPC browser stores "denied". Jetpack Stats unchanged: verified it sets no cookies; the policy covers it under legitimate interest.
+- **Privacy Policy (page 3):** one row added to the cookie table for the stored choice (`rl_consent`, local storage, 6 months) and GPC added to the decline sentence; "Last updated" 7 October 2026. Backup `claude/data/backups/privacy-page-3-before-consent-row-2026-10-07.json`.
+- **Favicon (C1):** not built; Jamil asked to be reminded (O-026, reminder 8 Oct).
+- **Tools:** `shot.mjs` joins its cache-buster with `&` when the path already has a query.
 
 ---
 
