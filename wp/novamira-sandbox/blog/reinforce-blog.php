@@ -46,8 +46,9 @@ body.rl-blog-page .fl-page-content,body.rl-blog-page .fl-content,body.rl-blog-pa
 .rl-blog .cats{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .rl-blog .cats a{display:inline-block;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:7px 12px;transition:.15s}
 .rl-blog .cats a:hover,.rl-blog .cats a[aria-current]{color:var(--ink);border-color:var(--red-2)}
-.rl-blog .posts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-.rl-blog .post{background:var(--bg-2);display:flex;flex-direction:column}
+/* hairlines drawn per card (not a grid background), so empty grid cells stay transparent when a row is not full */
+.rl-blog .posts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:1px}
+.rl-blog .post{background:var(--bg-2);display:flex;flex-direction:column;box-shadow:0 0 0 1px var(--line)}
 .rl-blog .post .img{display:block;aspect-ratio:16/9;overflow:hidden;background:var(--panel)}
 .rl-blog .post .img img{width:100%;height:100%;object-fit:cover;display:block}
 .rl-blog .post .body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
