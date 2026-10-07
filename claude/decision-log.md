@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-141 | Last three axe items fixed: post entry headers are plain blocks in all 12 post templates, Services diagram role group, hidden labels for the empty first table headers (Audit page, post 330 body); axe 0 on every page | 7 Oct | DONE (Jamil: "Go ahead") | this file |
 | D-140 | Accessibility fixes from F-028: link names start with the visible text (axe label mismatch 249 to 0), footer column titles no longer headings (heading order 57 to 0), tap targets padded to 24px (2,800 small targets to 24, all inline in lists or text), form checkboxes 24px | 7 Oct | DONE (Jamil: "Go ahead") | this file |
 | D-139 | Jamil's design decisions on F-028: body text 16px, card titles 20px, 12px minimum, container 1440 (supersedes D-013's 1280), one button label "Get your free diagnostic", footer names kept, US office in schema, LiteSpeed Cache stays off, author/date/Uncategorized archives retired (301 to /blog/) | 7 Oct | DONE on `.online` | this file |
 | D-138 | F-028 P1 fixes on `.online`: zero radius everywhere, accessible colour tokens, blog grid and post share image, kit-styled 404 and search, SMTP code (waits for mailbox), cookie choice bar with GPC and consent-gated GA4, privacy policy row | 7 Oct | DONE (Jamil: "Do it all") | this file |
@@ -205,6 +206,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-141 · Last accessibility items: banner landmark, diagram group, table headers
+**Date:** 7 October 2026 · **Status:** DONE on `.online` (Jamil: "Go ahead")
+
+- **Banner landmark:** every post template (`blog/reinforce-post*.php`, 12 files) opened with a `<header>` outside the article, which assistive tech reads as a second page banner. Each is now a `<div>` with the same class; no CSS targets the element, the post looks the same (checked).
+- **Services diagram:** the SVG holds links, so `role="img"` (which hides its content) became `role="group"`, still named by its title.
+- **Empty table headers:** a visually hidden label for the first column: "Compared on" on the SEO & AI Search Audit page (`services/reinforce-audit.php`) and "Term" in the body of post 330 (one post, markup only; backup `claude/data/backups/post-330-before-th-label-2026-10-07.json`; its modified date is now 7 Oct).
+- **Result (VERIFIED):** axe reports no violations on the affected pages; with D-140, axe is at 0 site-wide.
 
 ---
 
