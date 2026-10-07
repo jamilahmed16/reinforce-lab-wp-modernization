@@ -13,7 +13,7 @@ Nothing on reinforcelab.com changes until the switch itself (Rules 1 and 2). Eve
 ### A1. Data and decisions (Jamil)
 
 - [ ] **Backlink export, page by page** (Semrush: Backlinks, export by target URL). Every URL with a backlink must resolve to a live page. **(Jamil)**
-- [x] **The 20 "HUB-REVIEW" posts** are affiliate reviews, already decided in D-014b (10 Sep): keep all at their URLs under a `/reviews/` hub. Figures and flags: `claude/research/review-posts-proposal-2026-10-07.md`. Optional: drop the 3 weakest (WP Engine partner landing page, Beaver Builder review, Bluehost). **(Jamil, optional)**
+- [x] **The 20 "HUB-REVIEW" posts** are affiliate reviews, already decided in D-014b (10 Sep): keep all at their URLs under a `/reviews/` hub. Figures and flags: `claude/research/review-posts-proposal-2026-10-07.md`. The 3 weakest (WP Engine partner landing page, Beaver Builder review, Bluehost) stay for now and are redirected later (Jamil).
 - [ ] **The store.** `/shop/` is planned PRESERVE and 8 product pages CONSOLIDATE, and production holds real customer and order data. Decide: does the store continue on the new site? If yes, customer and order data must be moved safely (never a database clone), and the payment provider must be named in the Privacy Policy. **(Jamil)**
 - [x] **Bylines** (D-145): Jamil will rewrite every old post with new content and images, and each rewritten post carries his name. Titles may change in a rewrite; the URL (slug) stays unless a change is approved for that URL, with a 301.
 - [ ] **URL-by-URL sign-off of the final redirect map** (all 631 unique pages, plus anything the backlink export adds). The September dispositions are a plan; Rule 2 needs approval per URL, given on the final map file. **(Jamil)**
@@ -36,7 +36,7 @@ What changes, and why:
 - **3 posts built with Beaver Builder** become plain content (words and images the same).
 - **Old Divi and Monarch leftovers** (about 650 metadata fields) are not copied.
 - **Modified date:** set to production's value, so nothing looks freshly edited in bulk (F-003).
-- **Author (D-145):** Jamil Ahmed on every post once he has rewritten it. A post carried across before its rewrite shows "Reinforce Lab team" until then (proposed, to confirm). Reviews under his name must be first-hand (product actually used, test dates, paid or not, affiliate relationship stated).
+- **Author (D-145):** Jamil Ahmed on every post once he has rewritten it. A post carried across before its rewrite shows "Reinforce Lab team" until then (confirmed). Reviews under his name must be first-hand (product actually used, test dates, paid or not, affiliate relationship stated).
 
 Tasks:
 - [ ] Copy the kept posts (PRESERVE, PRESERVE+REBUILD, PRESERVE-URL+REWRITE, plus HUB-REVIEW posts kept) with the rules above. One controlled import, no new publishing; recorded as the agreed exception to F-003.
