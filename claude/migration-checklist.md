@@ -13,9 +13,9 @@ Nothing on reinforcelab.com changes until the switch itself (Rules 1 and 2). Eve
 ### A1. Data and decisions (Jamil)
 
 - [ ] **Backlink export, page by page** (Semrush: Backlinks, export by target URL). Every URL with a backlink must resolve to a live page. **(Jamil)**
-- [ ] **20 undecided posts** ("HUB-REVIEW"): keep, redirect or merge, one by one. I prepare a proposal per post with its Search Console numbers. **(Jamil)**
+- [x] **The 20 "HUB-REVIEW" posts** are affiliate reviews, already decided in D-014b (10 Sep): keep all at their URLs under a `/reviews/` hub. Figures and flags: `claude/research/review-posts-proposal-2026-10-07.md`. Optional: drop the 3 weakest (WP Engine partner landing page, Beaver Builder review, Bluehost). **(Jamil, optional)**
 - [ ] **The store.** `/shop/` is planned PRESERVE and 8 product pages CONSOLIDATE, and production holds real customer and order data. Decide: does the store continue on the new site? If yes, customer and order data must be moved safely (never a database clone), and the payment provider must be named in the Privacy Policy. **(Jamil)**
-- [ ] **Bylines on carried posts** (see A3). **(Jamil)**
+- [x] **Bylines** (D-145): Jamil will rewrite every old post with new content and images, and each rewritten post carries his name. Titles may change in a rewrite; the URL (slug) stays unless a change is approved for that URL, with a 301.
 - [ ] **URL-by-URL sign-off of the final redirect map** (all 631 unique pages, plus anything the backlink export adds). The September dispositions are a plan; Rule 2 needs approval per URL, given on the final map file. **(Jamil)**
 - [x] Search Console pages, queries and indexing export (10 Sep). GA4 screenshots. WPCode inventory (F-014).
 - [x] Author archives: all 16 production author URLs 301 to `/blog/` (D-139, D-144; supersedes the September plan of `/our-team` and 410).
@@ -36,12 +36,13 @@ What changes, and why:
 - **3 posts built with Beaver Builder** become plain content (words and images the same).
 - **Old Divi and Monarch leftovers** (about 650 metadata fields) are not copied.
 - **Modified date:** set to production's value, so nothing looks freshly edited in bulk (F-003).
-- **Author:** decision pending (Jamil). Recommendation: keep each post's real writer as the byline (or "Reinforce Lab team"), and put Jamil as author only on posts he wrote; add "Reviewed by Jamil Ahmed" only after he has actually reviewed a post. Search engines and readers judge trust by real authorship, and author pages are retired, so no new URLs appear.
+- **Author (D-145):** Jamil Ahmed on every post once he has rewritten it. A post carried across before its rewrite shows "Reinforce Lab team" until then (proposed, to confirm). Reviews under his name must be first-hand (product actually used, test dates, paid or not, affiliate relationship stated).
 
 Tasks:
 - [ ] Copy the kept posts (PRESERVE, PRESERVE+REBUILD, PRESERVE-URL+REWRITE, plus HUB-REVIEW posts kept) with the rules above. One controlled import, no new publishing; recorded as the agreed exception to F-003.
 - [ ] Posts planned **REBUILD-new** (23): carried across as they are until each rewrite, or redirected now, per the map. **(Jamil decides with the map)**
 - [ ] Every **301 and CONSOLIDATE target** exists and returns 200 before the switch.
+- [ ] **Build the `/reviews/` hub** and its two pillars `/reviews/best-wordpress-hosting/` and `/reviews/best-seo-ai-tools/` (approved new URLs, D-016), so the 20 reviews are linked from the site.
 - [ ] Copy the media files the kept posts use.
 - [ ] Every carried post passes: copy check on new text only (old wording is not rewritten before launch), schema valid, images load, no layout overflow on phone.
 
@@ -57,7 +58,7 @@ Note on "100% accuracy": the redirect test guarantees 100% for every URL that ap
 ### A5. Pages and site quality (mostly done)
 
 - [x] All built pages pass the SEO/GEO/AEO standard; accessibility (axe) at 0; type scale, buttons, contrast, zero radius, 404 and search pages, consent bar (D-135 to D-143).
-- [ ] All 17 PRESERVE pages: content and title parity with production confirmed page by page. **(gate)**
+- [ ] **Page parity for the 17 pages kept at the same URL** (Home, Website Maintenance, 15 posts): each one is live on the new site at exactly the same address, returns 200, and still answers what people searched for to find it (topic and main sections kept, nothing that ranks dropped), so Google sees the same page continuing. Checked one by one before the switch. **(gate)**
 - [ ] Favicon and site icon (Jamil asked for a reminder, O-026). Recommended before launch: without it Google results show a blank icon.
 - [ ] SMTP mailbox login for form email (code ready, O-027). **(Jamil)**
 - [ ] GA4 measurement ID, retention 14 months (consent bar ready). **(Jamil)**

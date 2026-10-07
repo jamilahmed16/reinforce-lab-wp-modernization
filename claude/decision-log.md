@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-145 | Bylines: Jamil rewrites every old post (new content and images) and each rewritten post carries his name; titles may change, slugs only with per-URL approval; the 20 HUB-REVIEW posts are already decided (D-014b), `/reviews/` hub to build before launch | 7 Oct | APPROVED (Jamil) | `claude/research/review-posts-proposal-2026-10-07.md` |
 | D-144 | Migration approach: one switch (new pages plus kept production posts copied unchanged at the same URLs and dates, new design), posts rewritten after launch; 16 author URLs 301 to /blog/ supersede the September plan (/our-team and 410); checklist in `claude/migration-checklist.md` | 7 Oct | APPROVED (Jamil: "1. Yes 2. today's decision (all 16 go to /blog/)"); bylines pending | `claude/migration-checklist.md` |
 | D-143 | Button groups: wherever two or more buttons sit together they are the same size (desktop side by side at the longest label's width; phone stacked, full width, equal height) | 7 Oct | DONE (Jamil: "All the buttons size must be equal where ever there are two buttons") | this file |
 | D-142 | Phone footer reorganised like Jamil's reference (Semrush): the five link columns collapse into rows with a chevron and open on tap; desktop unchanged | 7 Oct | DONE (Jamil: "Organize it for Mobile device like the reference image attached") | this file |
@@ -209,6 +210,17 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-145 · Bylines, review posts and page parity
+**Date:** 7 October 2026 · **Status:** APPROVED (Jamil: "I will rewrite every single old post with new fresh contents with planned format and new images so I can put on my name to everyone post ....we will change some if the old titles as well.")
+
+- **Bylines:** every old post is rewritten by Jamil with new content and images, then published under his name. Titles may change in a rewrite; a URL (slug) change needs approval for that URL and a 301. Proposed for confirmation: a post carried across before its rewrite shows "Reinforce Lab team".
+- **Correction (F):** I told Jamil there were "20 undecided posts". Wrong: the 20 HUB-REVIEW rows are the affiliate reviews, already decided in D-014b (keep at their URLs under a `/reviews/` hub). Every one of the 630 rows in the page-level sheet carries an approved decision; what remains is Jamil's sign-off of the final redirect map (Rule 2). Figures and three weak candidates to drop: `claude/research/review-posts-proposal-2026-10-07.md`.
+- **New pre-launch task:** build `/reviews/` and its pillars `/reviews/best-wordpress-hosting/` and `/reviews/best-seo-ai-tools/` (approved new URLs, D-016).
+- **Reviews under Jamil's name** must be first-hand (product used, test period, paid or not, affiliate link labelled); where a product was not used, the honest format is a comparison or overview.
+- **Page parity explained to Jamil:** the 17 pages approved to keep their URL (Home, Website Maintenance, 15 posts) must each be live at the same address on the new site and still answer what people searched for, checked before the switch.
 
 ---
 
