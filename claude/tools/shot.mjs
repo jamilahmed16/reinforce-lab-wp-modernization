@@ -43,12 +43,12 @@ async function open(p, url) {
 if (mode === 'width') {
   const p = await page(390, 844, 1);
   let bad = 0;
-  for (const u of args) { const ok = await open(p, SITE + u.replace(/^\//, '') + '?nc=' + Date.now()); const w = ok ? await p.evaluate(() => document.documentElement.scrollWidth) : 'err'; if (w !== 390) bad++; console.log(u, w); }
+  for (const u of args) { const ok = await open(p, SITE + u.replace(/^\//, '') + (u.includes('?') ? '&' : '?') + 'nc=' + Date.now()); const w = ok ? await p.evaluate(() => document.documentElement.scrollWidth) : 'err'; if (w !== 390) bad++; console.log(u, w); }
   await b.close(); process.exit(bad ? 1 : 0);
 }
 if (mode === 'page' || mode === 'html') {
   const [src, out] = args;
-  let url = SITE + src.replace(/^\//, '') + '?nc=' + Date.now();
+  let url = SITE + src.replace(/^\//, '') + (src.includes('?') ? '&' : '?') + 'nc=' + Date.now();
   if (mode === 'html') { previewHtml = fs.readFileSync(src, 'utf8'); url = SITE + '__preview'; }
   for (const [w, h, dsf, tag] of [[1440, 900, 1, 'desktop'], [390, 844, 2, 'phone']]) {
     const p = await page(w, h, dsf);
@@ -62,7 +62,7 @@ if (mode === 'sections') {
   const [src, out, sel = '.rl-page > section'] = args;
   for (const [w, h, dsf, tag] of [[1440, 900, 0.6, 'd'], [390, 844, 1, 'm']]) {
     const p = await page(w, h, dsf);
-    if (!(await open(p, SITE + src.replace(/^\//, '') + '?nc=' + Date.now()))) { console.log(tag, 'load failed'); continue; }
+    if (!(await open(p, SITE + src.replace(/^\//, '') + (src.includes('?') ? '&' : '?') + 'nc=' + Date.now()))) { console.log(tag, 'load failed'); continue; }
     const s = p.locator(sel), n = await s.count();
     for (let i = 0; i < n; i++) await s.nth(i).screenshot({ path: `${out}-${tag}${i}.jpg`, type: 'jpeg', quality: 70 });
     console.log(tag, n, 'sections');

@@ -12,6 +12,7 @@ foreach ([
     'pages/reinforce-legal.php',
     'pages/reinforce-portfolio.php',
     'pages/reinforce-clients.php',
+    'pages/reinforce-system.php',
     'saos/reinforce-agent-visuals.php',
     'saos/reinforce-agent-pages.php',
     'saos/reinforce-agents.php',
