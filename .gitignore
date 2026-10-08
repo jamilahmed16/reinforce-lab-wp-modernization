@@ -66,3 +66,4 @@ error_log
 scripts/*.log
 claude/tools/.cache/
 __pycache__/
+claude/data/production-inventory-*/state.json
