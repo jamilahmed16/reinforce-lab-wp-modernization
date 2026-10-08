@@ -91,7 +91,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /author/shammi/page/2/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),,,0,2,,0,approved-2026-10 gsc register,APPROVED: 410 (author pagination)
 /author/shammi/paged-2/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
 /author/shammi/paged-2/18/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
-/b2b-marketing/,KEEP,,register (D-014/015/023),200,,0,0,,101,crawl linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012) | slug: rebuild as b2b hub (inl=133) or noindex if thin
+/b2b-marketing/,301,/industries/b2b-saas/,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),200,,0,0,,101,approved-2026-10 crawl linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012) | slug: rebuild as b2b hub (inl=133) or noindex if thin
 /b2b-marketing/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /b2b-marketing/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
 /b2b-marketing/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
@@ -105,9 +105,9 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /b2b-seo-agencies-2/,301,/b2b-seo-agencies/,register (D-014/015/023),301,/b2b-seo-agencies/,0,0,,1,crawl linked-from-production register yoast-redirect,"APPROVED: carry Yoast 301 -> /b2b-seo-agencies/ (dup, F-015)"
 /b2b-seo-agencies/,KEEP,,register (D-014/015/023),200,,4,379463,,22,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
 /b2b-seo/,KEEP,,register (D-014/015/023),200,,3,8338,,13,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
-/basic-on-page-seo-checklist/,UNDECIDED,,,404,,,,,12,crawl linked-from-production,
+/basic-on-page-seo-checklist/,410,,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),404,,,,,12,approved-2026-10 crawl linked-from-production,
 /beaver-builder-review/,KEEP,,register (D-014/015/023),200,,0,218,,115,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
-/benefits-of-digital-marketing-for-small-businesses/,UNDECIDED,,,404,,,,,1,crawl linked-from-production,
+/benefits-of-digital-marketing-for-small-businesses/,410,,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),404,,,,,1,approved-2026-10 crawl linked-from-production,
 /best-cloud-web-hosting-services/,KEEP,,register (D-014/015/023),200,,3,3196,,83,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
 /best-digital-marketing-agency-in-dhaka-bangladesh/,KEEP,,register (D-014/015/023),200,,0,21,,31,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
 /best-examples-of-great-food-copywriting/,KEEP,,register (D-014/015/023),200,,0,10534,2,24,backlinks crawl gsc linked-from-production register sitemap,APPROVED (HOLD): PRESERVE money page at slug + rebuild to D-012; re-angle where natural
@@ -269,8 +269,8 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /digital-marketing/paged-3/6/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /digital-marketing/paged-3/7/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /digital-marketing/search-engine-optimization/,301,/services/best-search-engine-optimization-services/,register (D-014/015/023),200,,0,0,,100,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /services/best-search-engine-optimization-services/ (legacy category, not recreated — avoids F-001)"
-/digital-marketing/search-engine-optimization/local-seo/,KEEP,,register (D-014/015/023),200,,0,0,,46,crawl linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012) | slug: build as /services/local-seo/ (flatten deep nesting)
-/digital-marketing/search-engine-optimization/local-seo/page/2/,KEEP-NOINDEX,,pagination follows /digital-marketing/search-engine-optimization/local-seo/,200,,,,,5,crawl linked-from-production,
+/digital-marketing/search-engine-optimization/local-seo/,301,/services/local-seo/,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),200,,0,0,,46,approved-2026-10 crawl linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012) | slug: build as /services/local-seo/ (flatten deep nesting)
+/digital-marketing/search-engine-optimization/local-seo/page/2/,301,/services/local-seo/,pagination follows /digital-marketing/search-engine-optimization/local-seo/,200,,,,,5,crawl linked-from-production,
 /digital-marketing/search-engine-optimization/local-seo/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,3,,2,crawl gsc linked-from-production register,APPROVED: 410
 /digital-marketing/search-engine-optimization/local-seo/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
 /digital-marketing/search-engine-optimization/local-seo/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
@@ -300,20 +300,20 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /find-competitor-keywords/,KEEP,,register (D-014/015/023),200,,0,133918,,29,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
 /flywheel-wordpress-hosting/,KEEP,,register (D-014/015/023),200,,0,7,,5,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
-/food-content-marketing/,UNDECIDED,,,404,,,,,2,crawl linked-from-production,
+/food-content-marketing/,410,,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),404,,,,,2,approved-2026-10 crawl linked-from-production,
 /ftc-disclosure/,KEEP,,register (D-014/015/023),200,,0,0,,2,crawl linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
 /generate-leads-for-business/,KEEP,,register (D-014/015/023),404,,0,0,,6,crawl linked-from-production register,APPROVED: REBUILD candidate (on-strategy lead-gen)
 /get-a-/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 — junk (search-spam / cache / malformed slug)
 /get-a-free-quote/,301,/get-a-free-quote/,register (D-014/015/023) | LOOP,200,,2,1135,1,576,backlinks crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /get-a-free-quote/ (double-slash malformed)
 /google-analytics-behavior-reports-2/,301,/google-analytics-behavior-reports/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
-/google-my-business-optimization-service/,KEEP,,register (D-014/015/023),200,,0,0,,17,crawl linked-from-production register sitemap,APPROVED (HOLD): BUILD fresh on-strategy (big impressions) | slug: /services/google-business-profile-optimization/
+/google-my-business-optimization-service/,301,/services/local-seo/,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),200,,0,0,,17,approved-2026-10 crawl linked-from-production register sitemap,APPROVED (HOLD): BUILD fresh on-strategy (big impressions) | slug: /services/google-business-profile-optimization/
 /google-penalty-recovery/,KEEP,,register (D-014/015/023),200,,0,79,,26,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
 /google-penalty-recovery/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /guide-to-social-media-advertising/,301,/blog/,register (D-014/015/023),200,,0,199,,25,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /blog/ (consolidate into live pillar)
 /guide-to-ux-copywriting/,KEEP,,register (D-014/015/023),200,,0,39,,12,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
 /guide-to-ux-copywriting/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
-/healthcare/,KEEP,,register (D-014/015/023),200,,0,0,,9,crawl linked-from-production register sitemap,"APPROVED: BUILD fresh on-strategy (D-012) | slug: build as INDUSTRY landing page (one of 6 industries), not blog category"
-/healthcare/page/2/,KEEP-NOINDEX,,pagination follows /healthcare/,200,,,,,5,crawl linked-from-production,
+/healthcare/,301,/industries/healthcare/,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),200,,0,0,,9,approved-2026-10 crawl linked-from-production register sitemap,"APPROVED: BUILD fresh on-strategy (D-012) | slug: build as INDUSTRY landing page (one of 6 industries), not blog category"
+/healthcare/page/2/,301,/industries/healthcare/,pagination follows /healthcare/,200,,,,,5,crawl linked-from-production,
 /healthcare/paged-2/12/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /healthcare/paged-2/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /healthcare/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
@@ -359,9 +359,9 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /latest-seo-update-search-engine-updates/,KEEP,,register (D-014/015/023),200,,2,10989,,21,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
 /latest-seo-update-search-engine-updates/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /legal-statement/,KEEP,,register (D-014/015/023),200,,0,0,,2,crawl linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
-/link-building-tools/,UNDECIDED,,,404,,,,,1,crawl linked-from-production,
-/linkedin-content-ideas-for-businesses/,UNDECIDED,,,404,,,,,1,crawl linked-from-production,
-/liquidweb-wordpress-hosting/,UNDECIDED,,,404,,,,,12,crawl linked-from-production,
+/link-building-tools/,410,,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),404,,,,,1,approved-2026-10 crawl linked-from-production,
+/linkedin-content-ideas-for-businesses/,410,,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),404,,,,,1,approved-2026-10 crawl linked-from-production,
+/liquidweb-wordpress-hosting/,410,,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),404,,,,,12,approved-2026-10 crawl linked-from-production,
 /logossliderwp/features-logo/,301,/logossliderwp/benzinga/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
 /management-team-2/,301,/our-team/,production Yoast redirect (target to re-check) | chain flattened (1),,,,,,0,yoast-redirect,
 /management-team-3/,301,/our-team/,production Yoast redirect (target to re-check) | chain flattened (1),,,,,,0,yoast-redirect,
@@ -458,7 +458,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /project/inpace/,KEEP,,register (D-014/015/023),,,0,0,,0,register,APPROVED: PRESERVE — rebuild to D-012 standard
 /project/microinspire-a-project-of-reinforce-lab/,301,/project/microinspire/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
 /project/mrco-international-a-project-of-reinforce-lab/,301,/project/mrco-international/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
-/project/uiu/,UNDECIDED,,,404,,,,,1,crawl linked-from-production,
+/project/uiu/,301,/clients/,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),404,,,,,1,approved-2026-10 crawl linked-from-production,
 /projects-sitemap.xml,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
 /projects/access-tutor-copy/,301,/portfolio/inpace-shop/,approved-redirects-2026-10 (D-126; existing production Yoa),,,,,,0,approved-2026-10 yoast-redirect,
 /projects/access-tutor/,301,/portfolio/access-tutor/,approved-redirects-2026-10 (D-126; tested on .online),200,,1,512,,5,approved-2026-10 crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
@@ -482,7 +482,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /search-engine-optimization/basic-on-page-seo-checklist/,301,/basic-on-page-seo-checklist/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
 /semrush-review/,KEEP,,register (D-014/015/023),200,,1,6598,,20,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
 /sensory-marketing-know-how-5-senses-marketing-works-best-for-businesses/,KEEP,,register (D-014/015/023),200,,0,519,,18,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
-/seo-content-creator-2/,KEEP,,register (D-014/015/023),200,,0,20000,,23,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012) | slug: build as /seo-content-creator/ (drop -2)
+/seo-content-creator-2/,301,/services/seo-content-systems/,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),200,,0,20000,,23,approved-2026-10 crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012) | slug: build as /seo-content-creator/ (drop -2)
 /seo-mistakes-to-avoid/,KEEP,,register (D-014/015/023),200,,13,76948,,494,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
 /seo-services/,KEEP,,register (D-014/015/023),200,,0,48,,18,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
 /seo-services/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
@@ -499,7 +499,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /seo-tips/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,0,2,,2,crawl gsc linked-from-production,
 /seo-tips/paged-3/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /seo-tips/paged-3/5/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
-/seo-website-design/,KEEP,,register (D-014/015/023),200,,0,0,,503,crawl linked-from-production register sitemap,"APPROVED: BUILD fresh on-strategy (D-012) | slug: consider /services/ placement (inl=617, key link hub)"
+/seo-website-design/,301,/services/wordpress-website-design-service/,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct) | LOOP | chain flattened (1),200,,0,0,,503,approved-2026-10 crawl linked-from-production register sitemap,"APPROVED: BUILD fresh on-strategy (D-012) | slug: consider /services/ placement (inl=617, key link hub)"
 /serv.../content-marketing-services/,301,/services/seo-content-systems/,register (D-014/015/023),,,0,0,,0,register,APPROVED (HOLD): 301 -> /services/seo-content-systems/ (truncated dup) [flattened; was -> /services/content-marketing-services/; D-023/O-018]
 /services/,KEEP,,register (D-014/015/023),200,,0,1146,,454,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
 /services/ai-first-business-systems/,301,/services/ai-growth-systems/,register (D-014/015/023),,,0,0,,0,register,APPROVED: 301 -> /services/ai-growth-systems/ (dedupe AI service) — BUILD this as approved 5th URL
@@ -795,7 +795,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /wp-content/uploads/2023/03/8-Simple-YouTube-SEO-Tips-To-Rank-Your-Videos-Higher-in-Search.jpg,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410 (disposable image)
 /wp-content/uploads/2023/03/Most-Common-SEO-Mistakes-To-Avoid-1.jpg,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
 /wp-content/uploads/2023/09/Certificate-of-Incorporation-Reinforce-Lab-Limited.pdf,KEEP,,register (D-014/015/023),not fetched (asset or utility),,2,52,,222,crawl gsc linked-from-production register,APPROVED: PRESERVE — rebuild to D-012 standard
-/wp-content/uploads/2024/11/Beyond-Borders-client-of-reinforce-lab-limited.png,UNDECIDED,,,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/wp-content/uploads/2024/11/Beyond-Borders-client-of-reinforce-lab-limited.png,KEEP,,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),not fetched (asset or utility),,,,,1,approved-2026-10 crawl linked-from-production,
 /wp-engine-wordpress-hosting/,301,/reviews/,register (D-014/015/023),200,,0,0,,23,crawl linked-from-production register sitemap,"APPROVED: 301 -> /reviews/ hub (dead affiliate page, 0/0)"
 /wp-json/wc/store/v1/cart/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /writesonic-review/,KEEP,,register (D-014/015/023),200,,0,13,,14,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed

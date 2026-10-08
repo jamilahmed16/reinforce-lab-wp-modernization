@@ -16,14 +16,15 @@ Nothing on reinforcelab.com changes until the switch itself (Rules 1 and 2). Eve
 - [x] **The 20 "HUB-REVIEW" posts** are affiliate reviews, already decided in D-014b (10 Sep): keep all at their URLs under a `/reviews/` hub. Figures and flags: `claude/research/review-posts-proposal-2026-10-07.md`. The 3 weakest (WP Engine partner landing page, Beaver Builder review, Bluehost) stay for now and are redirected later (Jamil).
 - [ ] **The store.** `/shop/` is planned PRESERVE and 8 product pages CONSOLIDATE, and production holds real customer and order data. Decide: does the store continue on the new site? If yes, customer and order data must be moved safely (never a database clone), and the payment provider must be named in the Privacy Policy. **(Jamil)**
 - [x] **Bylines** (D-145): Jamil will rewrite every old post with new content and images, and each rewritten post carries his name. Titles may change in a rewrite; the URL (slug) stays unless a change is approved for that URL, with a 301.
+- [x] The 14 open redirect decisions (D-146); the draft map has 0 undecided URLs.
 - [ ] **URL-by-URL sign-off of the final redirect map** (all 631 unique pages, plus anything the backlink export adds). The September dispositions are a plan; Rule 2 needs approval per URL, given on the final map file. **(Jamil)**
 - [x] Search Console pages, queries and indexing export (10 Sep). GA4 screenshots. WPCode inventory (F-014).
 - [x] Author archives: all 16 production author URLs 301 to `/blog/` (D-139, D-144; supersedes the September plan of `/our-team` and 410).
 
 ### A2. Read-only inventory of production (needs Jamil's OK to fetch, no changes)
 
-- [ ] Fetch production's sitemaps and crawl its internal links (plain GET from the `.online` server, read-only), so the URL list also contains every URL production itself links to.
-- [ ] Production's Yoast redirects (already exported: `claude/data/production-config/yoast-redirects-2026-09-10.csv`) folded into the map, pointed straight at final targets (no chains).
+- [x] Fetch production's sitemaps and crawl its internal links (plain GET from the `.online` server, read-only), so the URL list also contains every URL production itself links to.
+- [x] Production's Yoast redirects (already exported: `claude/data/production-config/yoast-redirects-2026-09-10.csv`) folded into the map, pointed straight at final targets (no chains).
 - [ ] Production media used by kept posts: list of `/wp-content/uploads/...` files to copy, at the same paths.
 
 ### A3. Carry the kept posts across (`.online`)
@@ -59,7 +60,7 @@ Note on "100% accuracy": the redirect test guarantees 100% for every URL that ap
 
 - [x] All built pages pass the SEO/GEO/AEO standard; accessibility (axe) at 0; type scale, buttons, contrast, zero radius, 404 and search pages, consent bar (D-135 to D-143).
 - [ ] **Page parity for the 17 pages kept at the same URL** (Home, Website Maintenance, 15 posts): each one is live on the new site at exactly the same address, returns 200, and still answers what people searched for to find it (topic and main sections kept, nothing that ranks dropped), so Google sees the same page continuing. Checked one by one before the switch. **(gate)**
-- [ ] Favicon and site icon (Jamil asked for a reminder, O-026). Recommended before launch: without it Google results show a blank icon.
+- [x] Favicon and site icon (D-147). At the switch, copy the root `favicon.ico` and the site icon attachment with the rest.
 - [ ] SMTP mailbox login for form email (code ready, O-027). **(Jamil)**
 - [ ] GA4 measurement ID, retention 14 months (consent bar ready). **(Jamil)**
 - [ ] VAT/BIN number on Terms and Privacy. **(Jamil)**

@@ -32,6 +32,8 @@ add_action('wp_head', function () {
     $css = preg_replace_callback('#url\(fonts/([a-z0-9\-]+\.woff2)\)#', function ($m) use ($base) { return 'url(' . esc_url($base . $m[1]) . ')'; }, $css);
     echo '<style id="rl-fonts">' . trim($css) . "</style>\n";
 }, 1);
+/* browser bar colour on phones; the site icon itself is the WordPress Site Icon (logo mark on #121011, D-146) */
+add_action('wp_head', function () { echo '<meta name="theme-color" content="#121011">' . "\n"; }, 2);
 /* Beaver Builder: no Google Fonts stylesheet and no prefetch hints for it (the site fonts are local) */
 add_filter('fl_builder_google_fonts_pre_enqueue', '__return_empty_array');
 add_filter('fl_enable_google_fonts_enqueue', '__return_false');

@@ -20,7 +20,9 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
-| F-029 | Read-only production inventory (8 Oct): 193 sitemap URLs, 509 URLs reached (223 live, 18 redirect, 19 broken links production itself points to), 18,791 internal links, 2,060 image uses; merged with register, Search Console, backlinks, Yoast redirects and later approvals into a draft map of 802 old URLs; every URL that is live, has clicks or backlinks has an approved fate; 14 decisions left | 8 Oct | OPEN (14 decisions, Jamil) | `claude/data/redirect-map-decisions-needed.md` |
+| D-147 | Site icon: the logo mark (white and logo red on #121011) as the WordPress Site Icon (32, 180, 192, 270 px), `favicon.ico` (16, 32, 48 px) in the site root, theme colour #121011; closes O-026 and F-028 C1 | 8 Oct | DONE (Jamil: "go ahead") | `claude/design-previews/site-icon/` |
+| D-146 | The 14 redirect-map decisions approved as recommended: 6 old pages 301 to built pages, 6 dead pages 410, `/project/uiu/` 301 to `/clients/`, Beyond Borders image kept; the map has 0 undecided URLs | 8 Oct | APPROVED (Jamil: "go ahead") | `claude/data/approved-redirects-2026-10.csv` |
+| F-029 | Read-only production inventory (8 Oct): 193 sitemap URLs, 509 URLs reached (223 live, 18 redirect, 19 broken links production itself points to), 18,791 internal links, 2,060 image uses; merged with register, Search Console, backlinks, Yoast redirects and later approvals into a draft map of 802 old URLs; every URL that is live, has clicks or backlinks has an approved fate; 14 decisions left | 8 Oct | DECISIONS DONE (D-146); backlink export and URL-by-URL sign-off open | `claude/data/redirect-map-decisions-needed.md` |
 | D-145 | Bylines: Jamil rewrites every old post (new content and images) and each rewritten post carries his name; titles may change, slugs only with per-URL approval; the 20 HUB-REVIEW posts are already decided (D-014b), `/reviews/` hub to build before launch | 7 Oct | APPROVED (Jamil) | `claude/research/review-posts-proposal-2026-10-07.md` |
 | D-144 | Migration approach: one switch (new pages plus kept production posts copied unchanged at the same URLs and dates, new design), posts rewritten after launch; 16 author URLs 301 to /blog/ supersede the September plan (/our-team and 410); checklist in `claude/migration-checklist.md` | 7 Oct | APPROVED (Jamil: "1. Yes 2. today's decision (all 16 go to /blog/)"); bylines pending | `claude/migration-checklist.md` |
 | D-143 | Button groups: wherever two or more buttons sit together they are the same size (desktop side by side at the longest label's width; phone stacked, full width, equal height) | 7 Oct | DONE (Jamil: "All the buttons size must be equal where ever there are two buttons") | this file |
@@ -29,7 +31,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 | D-140 | Accessibility fixes from F-028: link names start with the visible text (axe label mismatch 249 to 0), footer column titles no longer headings (heading order 57 to 0), tap targets padded to 24px (2,800 small targets to 24, all inline in lists or text), form checkboxes 24px | 7 Oct | DONE (Jamil: "Go ahead") | this file |
 | D-139 | Jamil's design decisions on F-028: body text 16px, card titles 20px, 12px minimum, container 1440 (supersedes D-013's 1280), one button label "Get your free diagnostic", footer names kept, US office in schema, LiteSpeed Cache stays off, author/date/Uncategorized archives retired (301 to /blog/) | 7 Oct | DONE on `.online` | this file |
 | D-138 | F-028 P1 fixes on `.online`: zero radius everywhere, accessible colour tokens, blog grid and post share image, kit-styled 404 and search, SMTP code (waits for mailbox), cookie choice bar with GPC and consent-gated GA4, privacy policy row | 7 Oct | DONE (Jamil: "Do it all") | this file |
-| O-026 | Favicon and site icon: Jamil asked to be reminded later (reminder scheduled 8 Oct) | 7 Oct | OPEN | this file |
+| O-026 | Favicon and site icon: Jamil asked to be reminded later (reminder scheduled 8 Oct) | 7 Oct | CLOSED (D-147) | this file |
 | O-027 | SMTP mailbox and password for form email; DMARC records for both domains; GA4 measurement ID and 14-month retention | 7 Oct | OPEN (Jamil) | this file |
 | F-028 | Full site audit of `.online` (55 URLs, desktop and phone, axe-core, HTTP): 8 P1 items (zero-radius rule broken by theme buttons, colour contrast, no favicon, empty blog card image, unstyled 404 and search, form email without SMTP, consent/GA4); type-scale, CTA-label and footer-name inconsistencies for Jamil | 6 Oct | OPEN (Jamil: "Check again across entire website...") | `claude/research/site-audit-2026-10-06.md` |
 | D-137 | AI Search Optimization page: SEO/GEO gaps closed (dateModified and visible last-updated date, price Offer in the Service schema, "Led by Jamil Ahmed" with reviewedBy, page-specific share image); main landmark already present, audit tool corrected | 6 Oct | DONE (Jamil: "Do all that required using a checklist") | this file |
@@ -211,6 +213,27 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-147 · Site icon and favicon
+**Date:** 8 October 2026 · **Status:** DONE (reminder given 8 Oct; Jamil: "go ahead" on "make it from the logo mark")
+
+- **Icon:** the two-block logo mark cut from the official logo (attachment 154): top block white, bottom block the logo's own red (#c21f25), centred on a square #121011 tile, no rounded corners. Sources and preview: `claude/design-previews/site-icon/`.
+- **On `.online`:** uploaded as attachment 340 and set as the WordPress Site Icon (option `site_icon`), which prints `<link rel="icon">` (32, 192), `apple-touch-icon` (180) and the Windows tile (270). `favicon.ico` (16, 32, 48 px) written to the site root, because the server answers `/favicon.ico` itself with a 404 before WordPress runs (verified: LiteSpeed static 404). `<meta name="theme-color" content="#121011">` added in `core/reinforce-header.php`.
+- **Verified:** home page prints all four icon tags and the theme colour; `/favicon.ico` 200 `image/x-icon`; icon files 200.
+- **Migration:** the root `favicon.ico` and attachment 340 must go across at the switch (added to the checklist).
+
+---
+
+## D-146 · The 14 redirect-map decisions
+**Date:** 8 October 2026 · **Status:** APPROVED (asked: "Reply "approve all", or give the numbers you want changed." Jamil: "go ahead")
+
+- **301:** `/healthcare/` to `/industries/healthcare/`; `/digital-marketing/search-engine-optimization/local-seo/` and `/google-my-business-optimization-service/` to `/services/local-seo/`; `/seo-website-design/` to `/services/wordpress-website-design-service/`; `/b2b-marketing/` to `/industries/b2b-saas/`; `/seo-content-creator-2/` to `/services/seo-content-systems/`; `/project/uiu/` to `/clients/`. All 6 targets return 200 on `.online` (checked 8 Oct).
+- **410:** `/basic-on-page-seo-checklist/`, `/liquidweb-wordpress-hosting/`, `/food-content-marketing/`, `/benefits-of-digital-marketing-for-small-businesses/`, `/link-building-tools/`, `/linkedin-content-ideas-for-businesses/` (already 404 on production).
+- **Kept:** `/wp-content/uploads/2024/11/Beyond-Borders-client-of-reinforce-lab-limited.png`.
+- **Recorded in** `claude/data/approved-redirects-2026-10.csv` (14 rows). Map rebuilt: 802 old URLs, 0 undecided (410: 446; 301: 148 plus 39 query variants; keep: 117 plus 6 query variants; keep with noindex: 34; config: 12).
+- **Still open before the redirects go into code:** the Semrush backlink export (may add URLs) and Jamil's URL-by-URL sign-off of the final map file (Rule 2).
 
 ---
 

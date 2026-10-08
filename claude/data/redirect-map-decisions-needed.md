@@ -1,5 +1,7 @@
 # Redirect map: 14 decisions needed from Jamil (8 Oct 2026)
 
+**APPROVED 8 Oct 2026 (D-146):** Jamil approved every recommendation below ("go ahead"). Recorded in `claude/data/approved-redirects-2026-10.csv`.
+
 Draft map: `claude/data/redirect-map-draft.csv` (802 old URLs from every source). Every URL that is live on production, has Search Console clicks or has backlinks already has an approved fate. These 14 remain.
 
 ## A. September decisions that name a different address (6)
