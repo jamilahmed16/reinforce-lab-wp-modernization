@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| F-029 | Read-only production inventory (8 Oct): 193 sitemap URLs, 509 URLs reached (223 live, 18 redirect, 19 broken links production itself points to), 18,791 internal links, 2,060 image uses; merged with register, Search Console, backlinks, Yoast redirects and later approvals into a draft map of 802 old URLs; every URL that is live, has clicks or backlinks has an approved fate; 14 decisions left | 8 Oct | OPEN (14 decisions, Jamil) | `claude/data/redirect-map-decisions-needed.md` |
 | D-145 | Bylines: Jamil rewrites every old post (new content and images) and each rewritten post carries his name; titles may change, slugs only with per-URL approval; the 20 HUB-REVIEW posts are already decided (D-014b), `/reviews/` hub to build before launch | 7 Oct | APPROVED (Jamil) | `claude/research/review-posts-proposal-2026-10-07.md` |
 | D-144 | Migration approach: one switch (new pages plus kept production posts copied unchanged at the same URLs and dates, new design), posts rewritten after launch; 16 author URLs 301 to /blog/ supersede the September plan (/our-team and 410); checklist in `claude/migration-checklist.md` | 7 Oct | APPROVED (Jamil: "1. Yes 2. today's decision (all 16 go to /blog/)"); bylines pending | `claude/migration-checklist.md` |
 | D-143 | Button groups: wherever two or more buttons sit together they are the same size (desktop side by side at the longest label's width; phone stacked, full width, equal height) | 7 Oct | DONE (Jamil: "All the buttons size must be equal where ever there are two buttons") | this file |
@@ -210,6 +211,17 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## F-029 · Production inventory and the draft redirect map
+**Date:** 8 October 2026 · **Status:** OPEN, 14 decisions for Jamil (fetch approved: "GO AHEAD")
+
+- **Inventory (read-only, `claude/tools/prod-inventory.py`):** plain GET requests from the `.online` server, one at a time with pauses, no redirects followed. 193 URLs in production's 6 Yoast sitemaps; 509 URLs reached through sitemaps and internal links: 223 return 200, 18 redirect, 19 are broken links production itself points to, 57 assets or utility pages and 192 parameter or `/paged-N/` junk URLs recorded without fetching. 18,791 internal links and 2,060 image uses recorded. Output: `claude/data/production-inventory-2026-10-08/`. A first run on 7 Oct stopped at 725 fetches on a transport timeout and lost its data; the tool now retries and checkpoints.
+- **Draft map (`claude/tools/redirect-map.py`):** merges the September register (631 pages, approved decisions), Search Console pages, Search Console's linked pages, production's Yoast redirects, the inventory and later approvals (D-126, D-139, D-144, approved new URLs), plus the approved rules: `/paged-N/` = 410 (F-001), archive pagination follows its archive, query variants follow their page, chains flattened to one hop. Result: 802 old URLs: 440 return 410, 178 redirect (301), 128 keep their URL, 36 keep with noindex, 12 config (sitemaps, robots), 8 undecided. Output: `claude/data/redirect-map-draft.csv`.
+- **Found:** a parser bug (decisions written with "→") was fixed before reporting; `/best-local-search-engine-optimization-service/` (95,538 impressions) is already decided, 301 to `/services/local-seo/`.
+- **Left for Jamil (`claude/data/redirect-map-decisions-needed.md`):** 6 September rows whose note names a different slug, 7 pages already dead on production, 1 image.
+- **Still missing for the gate:** the page-by-page backlink export from Semrush (Search Console's linked pages are in; Semrush may show more).
 
 ---
 

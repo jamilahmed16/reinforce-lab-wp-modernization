@@ -1,0 +1,803 @@
+old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_impr,backlink_target,linked_from_prod,sources,decision_text
+/,KEEP,,register (D-014/015/023),200,,250,11257,261,1132,backlinks crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/20-content-marketing-ideas-for-restaurants/,KEEP,,register (D-014/015/023),200,,0,97,,44,crawl gsc linked-from-production register sitemap,APPROVED: keep URL + rewrite/re-angle to positioning; candidate for topic-cluster pillar
+/?wc-ajax=ppc-change-cart,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/?wc-ajax=ppc-create-order,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/?wc-ajax=ppc-create-payment-token,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/?wc-ajax=ppc-create-setup-token,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/?wc-ajax=ppc-save-checkout-form,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/?wc-ajax=ppc-update-customer-id,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/?wc-ajax=ppc-vault-paypal,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/a-complete-guide-to-social-media-management/,KEEP,,register (D-014/015/023),200,,10,100971,,16,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/a-complete-guide-to-social-media-management/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/a-complete-woocommerce-seo-guide/,KEEP,,register (D-014/015/023),200,,0,6107,,12,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/a2-wordpress-hosting/,KEEP,,register (D-014/015/023),200,,0,88,,28,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/about-us/,KEEP,,register (D-014/015/023),200,,5,1961,,453,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/affordable-seo-services/,301,/services/best-search-engine-optimization-services/,production Yoast redirect (target to re-check),301,/services/best-search-engine-optimization-services/,,,,3,crawl linked-from-production yoast-redirect,
+/agency-partner-program-wp-engine-landing/,KEEP,,register (D-014/015/023),200,,2,7340,,2,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/ai-content-writing-tools/,KEEP,,register (D-014/015/023),200,,6,17321,,31,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/anchor-text-optimization-in-seo/,KEEP,,register (D-014/015/023),200,,0,8606,,17,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/author-sitemap.xml,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
+/author/abusayed/,301,/blog/,D-139/D-144 author pattern (supersedes register),,,0,0,,0,register,APPROVED: 301 -> /our-team
+/author/abusayed/page/2/,301,/blog/,D-139/D-144 author pattern (supersedes register),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/abusayed/paged-2/2/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/abusayed/paged-2/3/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/abusayed/paged-3/18/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/abusayed/paged-3/2/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/abusayed/paged-3/3/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/abusayed/paged-3/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/abusayed/paged-3/5/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/catherine/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),200,,16,489,,58,approved-2026-10 crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /our-team
+/author/catherine/feed/,301,/blog/,D-139/D-144 author pattern (supersedes register),,,0,0,,0,register,APPROVED: 301 -> /our-team
+/author/catherine/page/2/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),200,,3,161,,5,approved-2026-10 crawl gsc linked-from-production register,APPROVED: 410 (author pagination)
+/author/catherine/page/3/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),,,0,2,,0,approved-2026-10 gsc register,APPROVED: 410 (author pagination)
+/author/catherine/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410 (author pagination)
+/author/catherine/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410 (author pagination)
+/author/catherine/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410 (author pagination)
+/author/catherine/paged-3/12/,410,,register (D-014/015/023),,,0,1,,0,register,APPROVED: 410 (author pagination)
+/author/catherine/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410 (author pagination)
+/author/catherine/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410 (author pagination)
+/author/catherine/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410 (author pagination)
+/author/catherine/paged-3/8/,410,,register (D-014/015/023),,,0,3,,0,register,APPROVED: 410 (author pagination)
+/author/farihaanika/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),200,,2,264,,8,approved-2026-10 crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /our-team
+/author/farihaanika/page/2/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),200,,0,15,,5,approved-2026-10 crawl gsc linked-from-production register,APPROVED: 410 (author pagination)
+/author/farihaanika/paged-2/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/farihaanika/paged-2/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/farihaanika/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410 (author pagination)
+/author/farihaanika/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/author/farihaanika/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410 (author pagination)
+/author/farihaanika/paged-2/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/farihaanika/paged-3/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/author/farihaanika/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/author/farihaanika/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/author/farihaanika/paged-3/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/farihaanika/paged-3/8/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/jamilahmed/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),200,,0,135,,62,approved-2026-10 crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /our-team
+/author/jamilahmed/page/2/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),200,,1,38,,5,approved-2026-10 crawl gsc linked-from-production register,APPROVED: 410 (author pagination)
+/author/jamilahmed/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410 (author pagination)
+/author/jamilahmed/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410 (author pagination)
+/author/jamilahmed/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410 (author pagination)
+/author/jamilahmed/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410 (author pagination)
+/author/jamilahmed/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410 (author pagination)
+/author/jamilahmed/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410 (author pagination)
+/author/jamilahmed/paged-3/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/jamilahmed/paged-3/5/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/jamilahmed/paged-3/6/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/jamilahmed/paged-3/7/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/naurinazad/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),,,1,103,,0,approved-2026-10 gsc register,APPROVED: 301 -> /our-team
+/author/naurinazad/page/2/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),,,0,13,,0,approved-2026-10 gsc register,APPROVED: 410 (author pagination)
+/author/naurinazad/page/3/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),,,0,21,,0,approved-2026-10 gsc register,APPROVED: 410 (author pagination)
+/author/naurinazad/page/6/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),,,0,4,,0,approved-2026-10 gsc register,APPROVED: 410 (author pagination)
+/author/naurinazad/paged-2/10/,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (author pagination)
+/author/naurinazad/paged-2/15/?et_blog,410,,register (D-014/015/023),,,0,5,,0,register,APPROVED: 410 (author pagination)
+/author/naurinazad/paged-2/16/,410,,register (D-014/015/023),,,0,21,,0,gsc register,APPROVED: 410 (author pagination)
+/author/naurinazad/paged-2/16/?et_blog,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410 (author pagination)
+/author/naurinazad/paged-2/18/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/naurinazad/paged-2/3/?et_blog,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/naurinazad/paged-3/2/?et_blog,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (author pagination)
+/author/sabera/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),200,,2,221,,6,approved-2026-10 crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /our-team
+/author/sabera/page/2/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),200,,0,27,,5,approved-2026-10 crawl gsc linked-from-production register,APPROVED: 410 (author pagination)
+/author/sabera/page/3/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),,,0,61,,0,approved-2026-10 gsc register,APPROVED: 410 (author pagination)
+/author/sabera/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/author/sabera/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/author/sabera/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/author/sabera/paged-3/15/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/sabera/paged-3/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/sabera/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,1,,2,crawl gsc linked-from-production register,APPROVED: 410 (author pagination)
+/author/sabera/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/author/sabera/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410 (author pagination)
+/author/shammi/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),,,2,162,,0,approved-2026-10 gsc register,APPROVED: 301 -> /our-team
+/author/shammi/feed/,301,/blog/,D-139/D-144 author pattern (supersedes register),,,0,0,,0,register,APPROVED: 301 -> /our-team
+/author/shammi/page/2/,301,/blog/,approved-redirects-2026-10 (D-139: target /blog/ confirmed),,,0,2,,0,approved-2026-10 gsc register,APPROVED: 410 (author pagination)
+/author/shammi/paged-2/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/author/shammi/paged-2/18/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (author pagination)
+/b2b-marketing/,KEEP,,register (D-014/015/023),200,,0,0,,101,crawl linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012) | slug: rebuild as b2b hub (inl=133) or noindex if thin
+/b2b-marketing/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/b2b-marketing/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/b2b-marketing/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/b2b-marketing/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/b2b-marketing/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/b2b-marketing/paged-3/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/b2b-marketing/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/b2b-marketing/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/b2b-marketing/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/b2b-marketing/paged-3/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/b2b-seo-agencies-2/,301,/b2b-seo-agencies/,register (D-014/015/023),301,/b2b-seo-agencies/,0,0,,1,crawl linked-from-production register yoast-redirect,"APPROVED: carry Yoast 301 -> /b2b-seo-agencies/ (dup, F-015)"
+/b2b-seo-agencies/,KEEP,,register (D-014/015/023),200,,4,379463,,22,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/b2b-seo/,KEEP,,register (D-014/015/023),200,,3,8338,,13,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/basic-on-page-seo-checklist/,UNDECIDED,,,404,,,,,12,crawl linked-from-production,
+/beaver-builder-review/,KEEP,,register (D-014/015/023),200,,0,218,,115,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/benefits-of-digital-marketing-for-small-businesses/,UNDECIDED,,,404,,,,,1,crawl linked-from-production,
+/best-cloud-web-hosting-services/,KEEP,,register (D-014/015/023),200,,3,3196,,83,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/best-digital-marketing-agency-in-dhaka-bangladesh/,KEEP,,register (D-014/015/023),200,,0,21,,31,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/best-examples-of-great-food-copywriting/,KEEP,,register (D-014/015/023),200,,0,10534,2,24,backlinks crawl gsc linked-from-production register sitemap,APPROVED (HOLD): PRESERVE money page at slug + rebuild to D-012; re-angle where natural
+/best-examples-of-great-food-copywriting/chern--the-name-of-the-dish-or-restaurant-you-are-writing-about/,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 — junk (search-spam / cache / malformed slug)
+/best-local-search-engine-optimization-service/,301,/services/local-seo/,register (D-014/015/023),200,,0,95538,,26,crawl gsc linked-from-production register sitemap,APPROVED: 301 → /services/local-seo/ (Jamil
+/best-local-search-engine-optimization-service/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/best-seo-practices/,KEEP,,register (D-014/015/023),200,,0,17,,129,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/best-ways-of-mobile-optimization-to-increase-your-conversions/,KEEP,,register (D-014/015/023),200,,1,4482,,21,crawl gsc linked-from-production register sitemap,APPROVED (HOLD): keep URL + rebuild/rewrite (has impressions)
+/best-ways-of-mobile-optimization-to-increase-your-conversions/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/best-ways-of-using-content-marketing-for-brand-awareness/,301,/creative-content-marketing-ideas/,register (D-014/015/023),200,,0,106,,19,crawl gsc linked-from-production register sitemap,"APPROVED: 301 -> /creative-content-marketing-ideas/ (thin, fold into content-ideas cluster)"
+/best-web-hosting-services/,KEEP,,register (D-014/015/023),200,,1,2463,,95,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/blog-promotion-ideas/,KEEP,,register (D-014/015/023),200,,0,5,,28,crawl gsc linked-from-production register sitemap,APPROVED (HOLD): keep URL + rebuild/rewrite (has impressions)
+/blog/,KEEP,,register (D-014/015/023),200,,3,1193,1,495,backlinks crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/blog/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,5,,5,crawl gsc linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/blog/paged-2/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/blog/paged-2/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/blog/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/blog/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/blog/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/blog/paged-2/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/blog/paged-2/5/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/blog/paged-3/14/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/blog/paged-3/15/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/blog/paged-3/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/blog/paged-3/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/blog/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/blog/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/blog/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/blog/paged-3/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/blog/paged-3/5/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/blog/paged-3/6/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/blog/paged-3/7/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/blog/paged-3/8/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/bluehost-wordpress-hosting/,KEEP,,register (D-014/015/023),200,,0,20980,,30,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/business/,301,/blog/,register (D-014/015/023),200,,0,0,,1301,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /blog/ (legacy category, not recreated — avoids F-001)"
+/business/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/business/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/business/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,1,,4,crawl gsc linked-from-production register,APPROVED: 410
+/business/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,1,,2,crawl gsc linked-from-production register,APPROVED: 410
+/business/paged-2/5/,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410
+/business/paged-2/7/,410,,register (D-014/015/023),,,0,6,,0,register,APPROVED: 410
+/business/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,1,,2,crawl gsc linked-from-production register,APPROVED: 410
+/business/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/business/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/business/paged-3/5/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/business/small-business/,301,/blog/,register (D-014/015/023),200,,0,0,,169,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /blog/ (legacy category, not recreated — avoids F-001)"
+/business/small-business/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/business/small-business/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/business/small-business/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/business/small-business/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/business/small-business/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/business/small-business/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/business/small-business/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/careers/,KEEP,,register (D-014/015/023),200,,18,1702,,227,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/cart/,KEEP-NOINDEX,,register (D-014/015/023),not fetched (asset or utility),,0,0,,0,crawl register sitemap,APPROVED: KEEP-noindex — WooCommerce transactional page
+/category-sitemap.xml,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
+/checkout/,KEEP-NOINDEX,,register (D-014/015/023),not fetched (asset or utility),,0,0,,0,crawl register sitemap,APPROVED: KEEP-noindex — WooCommerce transactional page
+/church-marketing-strategies-2021/,301,/church-marketing-strategies/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/church-marketing-strategies/,KEEP,,register (D-014/015/023),200,,7,35396,,40,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/church-marketing/,301,/social-media-content-ideas-for-churches/,register (D-014/015/023),200,,0,0,,7,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /social-media-content-ideas-for-churches/ (legacy category, not recreated — avoids F-001)"
+/church-marketing/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/church-marketing/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/church-marketing/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/church-marketing/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/church-marketing/paged-3/15/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/church-marketing/paged-3/17/,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410
+/church-marketing/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/church-marketing/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/church-marketing/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/clickup-review/,KEEP,,register (D-014/015/023),200,,5,6149,,22,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/clients/,KEEP,,register (D-014/015/023),200,,2,294,,225,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/clothing-brand-marketing/,301,/social-media-content-ideas-for-clothing-brand/,register (D-014/015/023),200,,0,0,,7,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /social-media-content-ideas-for-clothing-brand/ (legacy category, not recreated — avoids F-001)"
+/clothing-brand-marketing/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/clothing-brand-marketing/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/clothing-brand-marketing/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/clothing-brand-marketing/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/clothing-brand-marketing/paged-3/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/clothing-brand-marketing/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/clothing-brand-marketing/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/cloudways-hosting/,KEEP,,register (D-014/015/023),200,,0,14,,22,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/complete-content-marketing-guide-that-you-need/,301,/creative-content-marketing-ideas/,register (D-014/015/023),200,,0,2,,24,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /creative-content-marketing-ideas/ (consolidate into live pillar)
+/contact-us/,KEEP,,register (D-014/015/023),200,,16,1546,,225,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/content-ideas-for-personal-branding/,301,/blog/,production Yoast redirect (target to re-check) | chain flattened (1),,,,,,0,yoast-redirect,
+/content-ideas-for-personal-trainers/,301,/creative-content-marketing-ideas/,register (D-014/015/023),200,,0,7,,25,crawl gsc linked-from-production register sitemap,"APPROVED: 301 -> /creative-content-marketing-ideas/ (thin, fold into content-ideas cluster)"
+/content-ideas-for-personal-trainers/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/content-marketing-for-banks/,KEEP,,register (D-014/015/023),200,,0,23,,505,crawl gsc linked-from-production register sitemap,APPROVED: keep URL + rewrite as INDUSTRY pillar content (finance/healthcare vertical)
+/content-marketing-for-plastic-surgeons/,KEEP,,register (D-014/015/023),200,,29,106306,,22,crawl gsc linked-from-production register sitemap,APPROVED (HOLD): PRESERVE money page at slug + rebuild to D-012; re-angle where natural
+/content-marketing-for-plastic-surgeons/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/content-marketing-ideas-for-healthcare-industry/,KEEP,,register (D-014/015/023),200,,0,232,,26,crawl gsc linked-from-production register sitemap,APPROVED: keep URL + rewrite as INDUSTRY pillar content (finance/healthcare vertical)
+/content-marketing-ideas-for-real-estate/,301,/creative-content-marketing-ideas/,register (D-014/015/023),200,,0,0,,50,crawl linked-from-production register sitemap,"APPROVED: 301 -> /creative-content-marketing-ideas/ (thin, fold into content-ideas cluster)"
+/content-marketing-ideas-for-small-business/,KEEP,,register (D-014/015/023),200,,20,90621,2,64,backlinks crawl gsc linked-from-production register sitemap,APPROVED: keep URL + rewrite/re-angle to positioning; candidate for topic-cluster pillar
+/content-marketing-ideas-for-small-business/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/content-marketing-ideas-for-social-media/,KEEP,,register (D-014/015/023),200,,18,41952,,91,crawl gsc linked-from-production register sitemap,APPROVED: keep URL + rewrite/re-angle to positioning; candidate for topic-cluster pillar
+/content-marketing-strategy-for-b2b/,KEEP,,register (D-014/015/023),200,,0,5,,44,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/content-marketing-strategy-plan/,301,/creative-content-marketing-ideas/,register (D-014/015/023),200,,0,4,,20,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /creative-content-marketing-ideas/ (consolidate into live pillar)
+/content-marketing-vs-social-media-marketing/,KEEP,,register (D-014/015/023),200,,8,47743,,27,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/copy-ai-review/,KEEP,,register (D-014/015/023),200,,0,95,,22,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/copywriting/,301,/services/seo-content-systems/,register (D-014/015/023),200,,0,0,,11,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /services/seo-content-systems/ (legacy category, not recreated — avoids F-001) [flattened; was -> /services/best-website-copywriting-ser"
+/copywriting/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/copywriting/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/copywriting/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/copywriting/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/copywriting/paged-3/11/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/copywriting/paged-3/12/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/copywriting/paged-3/13/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/copywriting/paged-3/15/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/copywriting/paged-3/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/copywriting/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,1,,2,crawl gsc linked-from-production register,APPROVED: 410
+/copywriting/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,2,,4,crawl gsc linked-from-production register,APPROVED: 410
+/copywriting/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/cost-to-advertise-on-instagram/,301,/blog/,register (D-014/015/023),200,,0,6,,17,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /blog/ (consolidate into live pillar)
+/creative-content-marketing-ideas/,KEEP,,register (D-014/015/023),200,,0,127,,64,crawl gsc linked-from-production register sitemap,APPROVED: keep URL + rewrite/re-angle to positioning; candidate for topic-cluster pillar
+/dental-seo/,KEEP,,register (D-014/015/023),200,,0,0,,18,crawl linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/different-types-of-facebook-ads/,KEEP,,register (D-014/015/023),200,,0,95,,122,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/digital-content-/,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410 — junk (search-spam / cache / malformed slug)
+/digital-content-marketing-trends/,301,/creative-content-marketing-ideas/,register (D-014/015/023),200,,0,12,,25,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /creative-content-marketing-ideas/ (consolidate into live pillar)
+/digital-marketing-campaign-analysis/,301,/blog/,register (D-014/015/023),404,,0,0,,2,crawl linked-from-production register,"APPROVED (HOLD): 301 -> /blog/ (legacy category, not recreated — avoids F-001)"
+/digital-marketing-competitor-analysis/,301,/blog/,register (D-014/015/023),200,,0,0,,24,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /blog/ (legacy category, not recreated — avoids F-001)"
+/digital-marketing-competitor-analysis/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing-competitor/,301,/blog/,register (D-014/015/023),200,,0,1,,7,crawl gsc linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /blog/ (legacy category, not recreated — avoids F-001)"
+/digital-marketing-competitor/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/digital-marketing-competitor/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/digital-marketing-competitor/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/digital-marketing-competitor/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/digital-marketing-competitor/paged-2/5/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing-competitor/paged-3/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/digital-marketing-competitor/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/digital-marketing-competitor/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/digital-marketing-competitor/paged-3/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing-competitor/paged-3/5/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing-metrics-to-measure/,301,/blog/,register (D-014/015/023),200,,0,0,,30,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /blog/ (legacy category, not recreated — avoids F-001)"
+/digital-marketing/,KEEP,,register (D-014/015/023),200,,0,74,,175,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/digital-marketing/content-marketing/,301,/blog/,register (D-014/015/023),200,,0,0,,130,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /blog/ (legacy category, not recreated — avoids F-001)"
+/digital-marketing/content-marketing/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/digital-marketing/content-marketing/paged-2/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing/content-marketing/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,1,,2,crawl gsc linked-from-production register,APPROVED: 410
+/digital-marketing/content-marketing/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/digital-marketing/content-marketing/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/digital-marketing/content-marketing/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/digital-marketing/content-marketing/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/digital-marketing/content-marketing/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/digital-marketing/content-marketing/paged-3/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing/page/2/,KEEP-NOINDEX,,pagination follows /digital-marketing/,200,,,,,5,crawl linked-from-production,
+/digital-marketing/paged-2/11/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing/paged-2/13/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing/paged-2/14/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing/paged-2/15/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing/paged-2/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/digital-marketing/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/digital-marketing/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/digital-marketing/paged-3/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing/paged-3/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/digital-marketing/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/digital-marketing/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/digital-marketing/paged-3/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing/paged-3/5/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing/paged-3/6/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing/paged-3/7/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/digital-marketing/search-engine-optimization/,301,/services/best-search-engine-optimization-services/,register (D-014/015/023),200,,0,0,,100,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /services/best-search-engine-optimization-services/ (legacy category, not recreated — avoids F-001)"
+/digital-marketing/search-engine-optimization/local-seo/,KEEP,,register (D-014/015/023),200,,0,0,,46,crawl linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012) | slug: build as /services/local-seo/ (flatten deep nesting)
+/digital-marketing/search-engine-optimization/local-seo/page/2/,KEEP-NOINDEX,,pagination follows /digital-marketing/search-engine-optimization/local-seo/,200,,,,,5,crawl linked-from-production,
+/digital-marketing/search-engine-optimization/local-seo/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,3,,2,crawl gsc linked-from-production register,APPROVED: 410
+/digital-marketing/search-engine-optimization/local-seo/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/digital-marketing/search-engine-optimization/local-seo/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/digital-marketing/search-engine-optimization/local-seo/paged-3/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/digital-marketing/search-engine-optimization/local-seo/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,1,,4,crawl gsc linked-from-production register,APPROVED: 410
+/digital-marketing/search-engine-optimization/local-seo/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/digital-marketing/search-engine-optimization/page/2/,301,/services/best-search-engine-optimization-services/,pagination follows /digital-marketing/search-engine-optimization/,200,,,,,5,crawl linked-from-production,
+/digital-marketing/search-engine-optimization/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/digital-marketing/search-engine-optimization/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/digital-marketing/search-engine-optimization/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/digital-marketing/search-engine-optimization/paged-3/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/digital-marketing/search-engine-optimization/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/digital-marketing/search-engine-optimization/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/digital-marketing/social-media-marketing/,301,/services/marketing-automation/,register (D-014/015/023),200,,0,0,,83,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /services/marketing-automation/ (legacy category, not recreated — avoids F-001) [flattened; was -> /services/social-media-marketing-serv"
+/digital-marketing/social-media-marketing/page/2/,301,/services/marketing-automation/,pagination follows /digital-marketing/social-media-marketing/,200,,,,,5,crawl linked-from-production,
+/digital-marketing/social-media-marketing/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/digital-marketing/social-media-marketing/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/digital-marketing/social-media-marketing/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/digital-marketing/social-media-marketing/paged-3/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/digital-marketing/social-media-marketing/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/digital-marketing/social-media-marketing/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/digitalocean-web-hosting/,301,/reviews/,register (D-014/015/023),200,,0,0,,30,crawl linked-from-production register sitemap,"APPROVED: 301 -> /reviews/ hub (dead affiliate page, 0/0)"
+/dreamhost-wordpress-hosting/,KEEP,,register (D-014/015/023),200,,11,26081,,31,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/dynamic-creative-optimization/,KEEP,,register (D-014/015/023),200,,1,10265,,16,crawl gsc linked-from-production register sitemap,APPROVED (HOLD): BUILD fresh on-strategy (big impressions)
+/ecommerce-retargeting-strategies-to-boost-sales/,KEEP,,register (D-014/015/023),200,,0,5493,,28,crawl gsc linked-from-production register sitemap,APPROVED (HOLD): BUILD fresh on-strategy (big impressions)
+/ecommerce-retargeting-strategies-to-boost-sales/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/find-competitor-keywords/,KEEP,,register (D-014/015/023),200,,0,133918,,29,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/flywheel-wordpress-hosting/,KEEP,,register (D-014/015/023),200,,0,7,,5,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/food-content-marketing/,UNDECIDED,,,404,,,,,2,crawl linked-from-production,
+/ftc-disclosure/,KEEP,,register (D-014/015/023),200,,0,0,,2,crawl linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/generate-leads-for-business/,KEEP,,register (D-014/015/023),404,,0,0,,6,crawl linked-from-production register,APPROVED: REBUILD candidate (on-strategy lead-gen)
+/get-a-/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 — junk (search-spam / cache / malformed slug)
+/get-a-free-quote/,301,/get-a-free-quote/,register (D-014/015/023) | LOOP,200,,2,1135,1,576,backlinks crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /get-a-free-quote/ (double-slash malformed)
+/google-analytics-behavior-reports-2/,301,/google-analytics-behavior-reports/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/google-my-business-optimization-service/,KEEP,,register (D-014/015/023),200,,0,0,,17,crawl linked-from-production register sitemap,APPROVED (HOLD): BUILD fresh on-strategy (big impressions) | slug: /services/google-business-profile-optimization/
+/google-penalty-recovery/,KEEP,,register (D-014/015/023),200,,0,79,,26,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/google-penalty-recovery/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/guide-to-social-media-advertising/,301,/blog/,register (D-014/015/023),200,,0,199,,25,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /blog/ (consolidate into live pillar)
+/guide-to-ux-copywriting/,KEEP,,register (D-014/015/023),200,,0,39,,12,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/guide-to-ux-copywriting/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/healthcare/,KEEP,,register (D-014/015/023),200,,0,0,,9,crawl linked-from-production register sitemap,"APPROVED: BUILD fresh on-strategy (D-012) | slug: build as INDUSTRY landing page (one of 6 industries), not blog category"
+/healthcare/page/2/,KEEP-NOINDEX,,pagination follows /healthcare/,200,,,,,5,crawl linked-from-production,
+/healthcare/paged-2/12/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/healthcare/paged-2/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/healthcare/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/healthcare/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/healthcare/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/healthcare/paged-2/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/healthcare/paged-2/5/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/healthcare/paged-3/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/healthcare/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/healthcare/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,3,,2,crawl gsc linked-from-production register,APPROVED: 410
+/hostinger-web-hosting/,KEEP,,register (D-014/015/023),200,,0,2,,17,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/hostinger-web-hosting/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/hotel-marketing/,301,/social-media-content-ideas-for-hotels/,register (D-014/015/023),200,,0,0,,7,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /social-media-content-ideas-for-hotels/ (legacy category, not recreated — avoids F-001)"
+/hotel-marketing/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/hotel-marketing/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/hotel-marketing/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/hotel-marketing/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/hotel-marketing/paged-2/5/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/hotel-marketing/paged-2/6/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/hotel-marketing/paged-3/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/hotel-marketing/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/hotel-marketing/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/hotel-marketing/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,3,,2,crawl gsc linked-from-production register,APPROVED: 410
+/how-can-companies-be-socially-responsible-marketers/,KEEP,,register (D-014/015/023),200,,0,4,,18,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/how-much-facebook-advertising-cost/,410,,register (D-014/015/023),200,,0,0,,10,crawl linked-from-production register sitemap,"APPROVED (HOLD): 410 — thin, 0 clicks / 0 impressions"
+/how-to-avoid-zero-click-searches/,KEEP,,register (D-014/015/023),200,,25,10156,,18,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/how-to-build-a-website-with-kamatera-managed-hosting/,301,/reviews/,register (D-014/015/023),200,,0,0,,29,crawl linked-from-production register sitemap,"APPROVED: 301 -> /reviews/ hub (dead affiliate page, 0/0)"
+/how-to-do-local-seo-audit-11-easy-steps/,KEEP,,register (D-014/015/023),200,,0,8304,,26,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/how-to-find-your-target-audience-on-instagram/,KEEP,,register (D-014/015/023),200,,2,10492,,29,crawl gsc linked-from-production register sitemap,APPROVED (HOLD): keep URL + rebuild/rewrite (has impressions)
+/how-to-find-your-target-audience-on-social-media/,410,,register (D-014/015/023),200,,0,0,,24,crawl linked-from-production register sitemap,"APPROVED (HOLD): 410 — thin, 0 clicks / 0 impressions"
+/how-to-make-a-website-with-cloudways-web-hosting/,301,/cloudways-hosting/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/how-to-optimize-linkedin-profile-for-seo/,KEEP,,register (D-014/015/023),200,,1,6904,,12,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/how-to-use-keywords-in-content/,KEEP,,register (D-014/015/023),200,,0,2213,,22,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/how-to-write-seo-friendly-blog-posts/,KEEP,,register (D-014/015/023),200,,9,38106,,30,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/ideas-for-personal-branding/,301,/blog/,register (D-014/015/023),404,,0,0,,2,crawl linked-from-production register,APPROVED: 301 -> /blog/ (consolidate into live pillar)
+/ideas-for-personal-website-content/,KEEP,,register (D-014/015/023),200,,0,192,,20,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/invest-in-seo/,KEEP,,register (D-014/015/023),200,,0,2,,111,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/jasper-review/,KEEP,,register (D-014/015/023),200,,10,17708,,15,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/kinsta-wordpress-hosting/,KEEP,,register (D-014/015/023),200,,5,12735,,26,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/know-a-to-z-of-conversational-marketing-to-increase-your-sales/,410,,register (D-014/015/023),200,,0,0,,21,crawl linked-from-production register sitemap,"APPROVED (HOLD): 410 — thin, 0 clicks / 0 impressions"
+/landing/,410,,register (D-014/015/023),404,,0,0,,3,crawl linked-from-production register,APPROVED: 410
+/latest-seo-update-2022-14-search-engine-updates/,301,/latest-seo-update-search-engine-updates/,production Yoast redirect (target to re-check),301,/latest-seo-update-search-engine-updates/,,,,1,crawl linked-from-production yoast-redirect,
+/latest-seo-update-search-engine-updates/,KEEP,,register (D-014/015/023),200,,2,10989,,21,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/latest-seo-update-search-engine-updates/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/legal-statement/,KEEP,,register (D-014/015/023),200,,0,0,,2,crawl linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/link-building-tools/,UNDECIDED,,,404,,,,,1,crawl linked-from-production,
+/linkedin-content-ideas-for-businesses/,UNDECIDED,,,404,,,,,1,crawl linked-from-production,
+/liquidweb-wordpress-hosting/,UNDECIDED,,,404,,,,,12,crawl linked-from-production,
+/logossliderwp/features-logo/,301,/logossliderwp/benzinga/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/management-team-2/,301,/our-team/,production Yoast redirect (target to re-check) | chain flattened (1),,,,,,0,yoast-redirect,
+/management-team-3/,301,/our-team/,production Yoast redirect (target to re-check) | chain flattened (1),,,,,,0,yoast-redirect,
+/management-team/,301,/management/,production Yoast redirect (target to re-check),301,/management/,,,,1,crawl linked-from-production yoast-redirect,
+/management/,KEEP,,register (D-014/015/023),200,,10,873,,224,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/marketing-for-websites/,KEEP,,register (D-014/015/023),200,,8,33815,,23,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/my-account/,KEEP-NOINDEX,,register (D-014/015/023),not fetched (asset or utility),,0,0,,0,crawl register sitemap,APPROVED: KEEP-noindex — WooCommerce transactional page
+/namecheap-wordpress-hosting/,KEEP,,register (D-014/015/023),200,,10,61839,,31,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/nexcess-wordpress-hosting/,KEEP,,register (D-014/015/023),200,,0,2,,31,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/off-page-seo-checklist/,KEEP,,register (D-014/015/023),404,,0,0,,6,crawl linked-from-production register,APPROVED: BUILD fresh on-strategy (D-012)
+/off-page-seo/,301,/services/press-release-services/,register (D-014/015/023),301,/services/off-page-seo-services/,0,0,,4,crawl linked-from-production register,APPROVED: 301 -> /services/press-release-services/ (flattened; was -> /services/off-page-seo-services/; O-018 B)
+/on-page-seo/,301,/services/best-search-engine-optimization-services/,production Yoast redirect (target to re-check) | chain flattened (1),301,/services/best-on-page-seo-services/,,,,4,crawl linked-from-production yoast-redirect,
+/our-team/,KEEP,,register (D-014/015/023),200,,29,1775,1,224,backlinks crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/our-teams/,301,/our-team/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/page-sitemap.xml,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
+/podcast-for-business/,301,/blog/,register (D-014/015/023),200,,0,644,,23,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /blog/ (consolidate into live pillar)
+/podcast-for-business/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/portfolio/,KEEP,,register (D-014/015/023),200,,7,1745,2,448,backlinks crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/post-sitemap.xml,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
+/privacy-policy/,KEEP,,register (D-014/015/023),200,,1,201,,224,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/product-category/uncategorized/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,25,crawl linked-from-production register,APPROVED: KEEP-noindex (empty taxonomy archive)
+/product-category/uncategorized/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/product-category/uncategorized/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/product-category/uncategorized/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/product-category/uncategorized/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/product-category/uncategorized/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/product-category/uncategorized/paged-3/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/product-category/uncategorized/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/product-category/uncategorized/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/product-category/wordpress-web-design/,301,/product-category/wordpress-web-design-and-development/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/product-sitemap.xml,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
+/product-tag/wordpress-web-design/,KEEP-NOINDEX,,register (D-014/015/023),,,0,1,,0,register,APPROVED: KEEP-noindex (empty taxonomy archive)
+/product/e-commerce-consultation/,301,/services/ecommerce-website-design-service/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/product/search-engine-optimization-service-enterprise-monthly/,301,/packages/,register (D-014/015/023),200,,0,3,,8,crawl gsc linked-from-production register sitemap,"APPROVED: 301 -> /packages/ (legacy SEO tier superseded by SAOS packages, D-016)"
+/product/search-engine-optimization-service-enterprise-monthly/?add-to-cart=227503,KEEP-NOINDEX,,register (D-014/015/023),not fetched (asset or utility),,0,3,,1,crawl gsc linked-from-production register,"APPROVED: KEEP-noindex (cart-action URL, param)"
+/product/search-engine-optimization-service-enterprise-monthly/?add-to-cart=229277,301 (as page),/packages/,inherits /product/search-engine-optimization-service-enterprise-monthly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-enterprise-monthly/?add-to-cart=229279,301 (as page),/packages/,inherits /product/search-engine-optimization-service-enterprise-monthly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-enterprise-monthly/?add-to-cart=231223,301 (as page),/packages/,inherits /product/search-engine-optimization-service-enterprise-monthly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-enterprise-yearly/,301,/packages/,register (D-014/015/023),200,,0,35,,9,crawl gsc linked-from-production register sitemap,"APPROVED: 301 -> /packages/ (legacy SEO tier superseded by SAOS packages, D-016)"
+/product/search-engine-optimization-service-enterprise-yearly/?add-to-cart=227503,KEEP-NOINDEX,,register (D-014/015/023),not fetched (asset or utility),,0,3,,1,crawl gsc linked-from-production register,"APPROVED: KEEP-noindex (cart-action URL, param)"
+/product/search-engine-optimization-service-enterprise-yearly/?add-to-cart=229210,KEEP-NOINDEX,,register (D-014/015/023),,,0,2,,0,gsc register,"APPROVED: KEEP-noindex (cart-action URL, param)"
+/product/search-engine-optimization-service-enterprise-yearly/?add-to-cart=229276,301 (as page),/packages/,inherits /product/search-engine-optimization-service-enterprise-yearly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-enterprise-yearly/?add-to-cart=229278,301 (as page),/packages/,inherits /product/search-engine-optimization-service-enterprise-yearly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-enterprise-yearly/?add-to-cart=231223,301 (as page),/packages/,inherits /product/search-engine-optimization-service-enterprise-yearly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-growth-monthly/,301,/packages/,register (D-014/015/023),200,,0,1,,8,crawl gsc linked-from-production register sitemap,"APPROVED: 301 -> /packages/ (legacy SEO tier superseded by SAOS packages, D-016)"
+/product/search-engine-optimization-service-growth-monthly/?add-to-cart=229275,301 (as page),/packages/,inherits /product/search-engine-optimization-service-growth-monthly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-growth-monthly/?add-to-cart=229278,301 (as page),/packages/,inherits /product/search-engine-optimization-service-growth-monthly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-growth-monthly/?add-to-cart=229279,301 (as page),/packages/,inherits /product/search-engine-optimization-service-growth-monthly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-growth-monthly/?add-to-cart=231223,301 (as page),/packages/,inherits /product/search-engine-optimization-service-growth-monthly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-growth-yearly/,301,/packages/,register (D-014/015/023),200,,0,1,,6,crawl linked-from-production register sitemap,"APPROVED: 301 -> /packages/ (legacy SEO tier superseded by SAOS packages, D-016)"
+/product/search-engine-optimization-service-growth-yearly/?add-to-cart=227503,301 (as page),/packages/,inherits /product/search-engine-optimization-service-growth-yearly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-growth-yearly/?add-to-cart=229275,301 (as page),/packages/,inherits /product/search-engine-optimization-service-growth-yearly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-growth-yearly/?add-to-cart=229277,KEEP-NOINDEX,,register (D-014/015/023),,,0,0,,0,register,"APPROVED: KEEP-noindex (cart-action URL, param)"
+/product/search-engine-optimization-service-growth-yearly/?add-to-cart=229278,301 (as page),/packages/,inherits /product/search-engine-optimization-service-growth-yearly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-growth-yearly/?add-to-cart=229279,KEEP-NOINDEX,,register (D-014/015/023),not fetched (asset or utility),,0,0,,1,crawl linked-from-production register,"APPROVED: KEEP-noindex (cart-action URL, param)"
+/product/search-engine-optimization-service-starter-monthly/,301,/packages/,register (D-014/015/023),200,,0,22,,2,crawl gsc linked-from-production register sitemap,"APPROVED: 301 -> /packages/ (legacy SEO tier superseded by SAOS packages, D-016)"
+/product/search-engine-optimization-service-starter-monthly/?add-to-cart=229210,301 (as page),/packages/,inherits /product/search-engine-optimization-service-starter-monthly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-starter-monthly/?add-to-cart=229278,301 (as page),/packages/,inherits /product/search-engine-optimization-service-starter-monthly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-starter-monthly/?add-to-cart=229279,301 (as page),/packages/,inherits /product/search-engine-optimization-service-starter-monthly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-starter-monthly/?add-to-cart=231223,301 (as page),/packages/,inherits /product/search-engine-optimization-service-starter-monthly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-starter-yearly/,301,/packages/,register (D-014/015/023),200,,0,2,,7,crawl gsc linked-from-production register sitemap,"APPROVED: 301 -> /packages/ (legacy SEO tier superseded by SAOS packages, D-016)"
+/product/search-engine-optimization-service-starter-yearly/?add-to-cart=227503,KEEP-NOINDEX,,register (D-014/015/023),,,0,4,,0,gsc register,"APPROVED: KEEP-noindex (cart-action URL, param)"
+/product/search-engine-optimization-service-starter-yearly/?add-to-cart=229210,301 (as page),/packages/,inherits /product/search-engine-optimization-service-starter-yearly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-starter-yearly/?add-to-cart=229276,301 (as page),/packages/,inherits /product/search-engine-optimization-service-starter-yearly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-starter-yearly/?add-to-cart=229277,301 (as page),/packages/,inherits /product/search-engine-optimization-service-starter-yearly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-service-starter-yearly/?add-to-cart=231223,301 (as page),/packages/,inherits /product/search-engine-optimization-service-starter-yearly/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/search-engine-optimization-services/,301,/packages/,production Yoast redirect (target to re-check) | chain flattened (2),,,,,,0,yoast-redirect,
+/product/search-engine-optimization-starter-monthly/,301,/packages/,production Yoast redirect (target to re-check) | chain flattened (1),,,,,,0,yoast-redirect,
+/product/wordpress-web-design-and-development-enterprise/,301,/services/wordpress-website-design-service/,register (D-014/015/023) | LOOP | chain flattened (1),200,,0,296,,6,crawl gsc linked-from-production register sitemap,"APPROVED: 301 -> /services/wordpress-website-design-service/ (legacy web-design tier, D-016)"
+/product/wordpress-web-design-and-development-enterprise/?add-to-cart=229275,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-web-design-and-development-enterprise/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/wordpress-web-design-and-development-enterprise/?add-to-cart=229277,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-web-design-and-development-enterprise/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/wordpress-web-design-and-development-enterprise/?add-to-cart=229278,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-web-design-and-development-enterprise/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/wordpress-web-design-and-development-enterprise/?add-to-cart=229279,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-web-design-and-development-enterprise/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/wordpress-web-design-and-development-growth/,301,/services/wordpress-website-design-service/,register (D-014/015/023) | LOOP | chain flattened (1),200,,0,0,,2,crawl linked-from-production register sitemap,"APPROVED: 301 -> /services/wordpress-website-design-service/ (legacy web-design tier, D-016)"
+/product/wordpress-web-design-and-development-growth/?add-to-cart=227503,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-web-design-and-development-growth/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/wordpress-web-design-and-development-growth/?add-to-cart=229275,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-web-design-and-development-growth/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/wordpress-web-design-and-development-growth/?add-to-cart=229277,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-web-design-and-development-growth/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/wordpress-web-design-and-development-growth/?add-to-cart=229279,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-web-design-and-development-growth/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/wordpress-web-design-and-development-growth/?add-to-cart=231223,KEEP-NOINDEX,,register (D-014/015/023),,,0,6,,0,gsc register,"APPROVED: KEEP-noindex (cart-action URL, param)"
+/product/wordpress-web-design-and-development-starter/,301,/services/wordpress-website-design-service/,register (D-014/015/023) | LOOP | chain flattened (1),200,,0,0,,6,crawl linked-from-production register sitemap,"APPROVED: 301 -> /services/wordpress-website-design-service/ (legacy web-design tier, D-016)"
+/product/wordpress-web-design-and-development-starter/?add-to-cart=229210,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-web-design-and-development-starter/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/wordpress-web-design-and-development-starter/?add-to-cart=229276,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-web-design-and-development-starter/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/wordpress-web-design-and-development-starter/?add-to-cart=229277,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-web-design-and-development-starter/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/wordpress-web-design-and-development-starter/?add-to-cart=229278,KEEP-NOINDEX,,register (D-014/015/023),not fetched (asset or utility),,0,3,,1,crawl gsc linked-from-production register,"APPROVED: KEEP-noindex (cart-action URL, param)"
+/product/wordpress-web-design-and-development/,301,/services/wordpress-website-design-service/,production Yoast redirect (target to re-check) | LOOP | chain flattened (2),,,,,,0,yoast-redirect,
+/product/wordpress-website-design-services-starter/,301,/services/wordpress-website-design-service/,production Yoast redirect (target to re-check) | LOOP | chain flattened (2),,,,,,0,yoast-redirect,
+/product/wordpress-website-design-services/,301,/services/wordpress-website-design-service/,register (D-014/015/023) | LOOP | chain flattened (1),200,,0,5,,8,crawl gsc linked-from-production register sitemap,"APPROVED: 301 -> /services/wordpress-website-design-service/ (legacy web-design tier, D-016)"
+/product/wordpress-website-design-services/?add-to-cart=229210,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-website-design-services/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/wordpress-website-design-services/?add-to-cart=229275,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-website-design-services/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/wordpress-website-design-services/?add-to-cart=229276,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-website-design-services/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/product/wordpress-website-design-services/?add-to-cart=229278,KEEP-NOINDEX,,register (D-014/015/023),,,0,0,,0,register,"APPROVED: KEEP-noindex (cart-action URL, param)"
+/product/wordpress-website-design-services/?add-to-cart=229279,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-website-design-services/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/project/inpace-a-project-of-reinforce-lab/,301,/project/inpace/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/project/inpace/,KEEP,,register (D-014/015/023),,,0,0,,0,register,APPROVED: PRESERVE — rebuild to D-012 standard
+/project/microinspire-a-project-of-reinforce-lab/,301,/project/microinspire/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/project/mrco-international-a-project-of-reinforce-lab/,301,/project/mrco-international/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/project/uiu/,UNDECIDED,,,404,,,,,1,crawl linked-from-production,
+/projects-sitemap.xml,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
+/projects/access-tutor-copy/,301,/portfolio/inpace-shop/,approved-redirects-2026-10 (D-126; existing production Yoa),,,,,,0,approved-2026-10 yoast-redirect,
+/projects/access-tutor/,301,/portfolio/access-tutor/,approved-redirects-2026-10 (D-126; tested on .online),200,,1,512,,5,approved-2026-10 crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/projects/iba-alumni-lottery/,301,/portfolio/iba-alumni-lottery/,approved-redirects-2026-10 (D-126; tested on .online),200,,1,341,,5,approved-2026-10 crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/projects/inpace-shop/,301,/portfolio/inpace-shop/,approved-redirects-2026-10 (D-126; GSC 16 months from clau),200,,2,325,,5,approved-2026-10 crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/rank-tracker-review/,KEEP,,register (D-014/015/023),200,,2,223476,,115,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/real-estate-marketing/,301,/real-estate-social-media-posts-ideas/,register (D-014/015/023),200,,0,0,,7,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /real-estate-social-media-posts-ideas/ (legacy category, not recreated — avoids F-001)"
+/real-estate-marketing/page/2/,301,/real-estate-social-media-posts-ideas/,pagination follows /real-estate-marketing/,200,,,,,5,crawl linked-from-production,
+/real-estate-marketing/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/real-estate-marketing/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/real-estate-marketing/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/real-estate-marketing/paged-3/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/real-estate-marketing/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/real-estate-marketing/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/real-estate-marketing/paged-3/7/,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410
+/real-estate-social-media-posts-ideas/,KEEP,,register (D-014/015/023),200,,0,8,,512,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/robots-txt-for-seo-a-complete-guide/,KEEP,,register (D-014/015/023),200,,0,19,,22,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/robots-txt-for-seo-a-complete-guide/?ref=openzap.com,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 — ?ref param dup of preserved canonical
+/robots-txt-for-seo-a-complete-guide/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/search-engine-optimization/,301,/services/best-search-engine-optimization-services/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/search-engine-optimization/basic-on-page-seo-checklist/,301,/basic-on-page-seo-checklist/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/semrush-review/,KEEP,,register (D-014/015/023),200,,1,6598,,20,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/sensory-marketing-know-how-5-senses-marketing-works-best-for-businesses/,KEEP,,register (D-014/015/023),200,,0,519,,18,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/seo-content-creator-2/,KEEP,,register (D-014/015/023),200,,0,20000,,23,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012) | slug: build as /seo-content-creator/ (drop -2)
+/seo-mistakes-to-avoid/,KEEP,,register (D-014/015/023),200,,13,76948,,494,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/seo-services/,KEEP,,register (D-014/015/023),200,,0,48,,18,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/seo-services/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/seo-tips/,KEEP,,register (D-014/015/023),200,,0,0,,98,crawl linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/seo-tips/page/2/,KEEP-NOINDEX,,pagination follows /seo-tips/,200,,0,1,,5,crawl gsc linked-from-production,
+/seo-tips/paged-2/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/seo-tips/paged-2/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/seo-tips/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/seo-tips/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/seo-tips/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/seo-tips/paged-3/17/,410,,F-001 paged junk rule,,,0,1,,0,gsc,
+/seo-tips/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/seo-tips/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,1,,4,crawl gsc linked-from-production register,APPROVED: 410
+/seo-tips/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,0,2,,2,crawl gsc linked-from-production,
+/seo-tips/paged-3/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/seo-tips/paged-3/5/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/seo-website-design/,KEEP,,register (D-014/015/023),200,,0,0,,503,crawl linked-from-production register sitemap,"APPROVED: BUILD fresh on-strategy (D-012) | slug: consider /services/ placement (inl=617, key link hub)"
+/serv.../content-marketing-services/,301,/services/seo-content-systems/,register (D-014/015/023),,,0,0,,0,register,APPROVED (HOLD): 301 -> /services/seo-content-systems/ (truncated dup) [flattened; was -> /services/content-marketing-services/; D-023/O-018]
+/services/,KEEP,,register (D-014/015/023),200,,0,1146,,454,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/services/ai-first-business-systems/,301,/services/ai-growth-systems/,register (D-014/015/023),,,0,0,,0,register,APPROVED: 301 -> /services/ai-growth-systems/ (dedupe AI service) — BUILD this as approved 5th URL
+/services/ai-growth-systems/,KEEP,,approved new URL (D-003 + D-016; AI-first->AI Gr),404,,,,,222,crawl linked-from-production,
+/services/ai-search-optimization-services/,301,/services/ai-search-optimization/,register (D-014/015/023),404,,0,0,,222,crawl linked-from-production register,APPROVED: 301 -> /services/ai-search-optimization/ (dedupe AI service)
+/services/ai-search-optimization/,KEEP,,register (D-014/015/023),,,0,0,,0,register,APPROVED: PRESERVE — approved new service URL (D-003)
+/services/best-affordable-seo-link-building-services/,301,/services/press-release-services/,register (D-014/015/023),200,,3,34775,,13,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /services/press-release-services/ (O-018 Option B; supersedes D-023 enterprise target)
+/services/best-blog-writing-services/,301,/services/seo-content-systems/,register (D-014/015/023),200,,0,10155,,16,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /services/seo-content-systems/ (dup slug) [flattened; was -> /services/best-blog-writing-services/; D-023/O-018]
+/services/best-on-page-seo-services/,301,/services/best-search-engine-optimization-services/,register (D-014/015/023),200,,0,13100,,15,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /services/best-search-engine-optimization-services/ (D-023; confirmed F-020)
+/services/best-search-engine-optimization-services/,KEEP,,register (D-014/015/023),200,,2,420385,,239,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/services/best-search-engine-optimization-services/?add-to-cart=220924,KEEP (as page),,inherits /services/best-search-engine-optimization-services/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/services/best-search-engine-optimization-services/?add-to-cart=229275,KEEP (as page),,inherits /services/best-search-engine-optimization-services/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/services/best-search-engine-optimization-services/?add-to-cart=229276,KEEP (as page),,inherits /services/best-search-engine-optimization-services/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/services/best-search-engine-optimization-services/?add-to-cart=229277,KEEP (as page),,inherits /services/best-search-engine-optimization-services/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/services/best-search-engine-optimization-services/?add-to-cart=229278,KEEP (as page),,inherits /services/best-search-engine-optimization-services/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/services/best-search-engine-optimization-services/?add-to-cart=229279,KEEP (as page),,inherits /services/best-search-engine-optimization-services/,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/services/best-search-engine-optimization-services/link-building-seo-services/,301,/services/press-release-services/,production Yoast redirect (target to re-check) | chain flattened (2),,,,,,0,yoast-redirect,
+/services/best-search-engine-optimization-services/off-page-seo-services/,301,/services/press-release-services/,production Yoast redirect (target to re-check) | chain flattened (1),301,/services/off-page-seo-services/,,,,5,crawl linked-from-production yoast-redirect,
+/services/best-search-engine-optimization-services/on-page-seo-services/,301,/services/best-search-engine-optimization-services/,production Yoast redirect (target to re-check) | chain flattened (1),,,,,,0,yoast-redirect,
+/services/best-seo-content-writing-services/,301,/services/seo-content-systems/,register (D-014/015/023),200,,2,74989,,14,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /services/seo-content-systems/ (dup slug) [flattened; was -> /services/best-seo-content-writing-services/; D-023/O-018]
+/services/best-website-copywriting-services/,301,/services/seo-content-systems/,register (D-014/015/023),200,,0,18729,,16,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /services/seo-content-systems/ (D-023; confirmed F-020)
+/services/business-consultancy-service/,301,/services/executive-ai-consulting/,register (D-014/015/023),200,,2,2803,,10,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /services/executive-ai-consulting/ (D-023; confirmed F-020)
+/services/content-/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/services/content-marketing-service/,301,/services/seo-content-systems/,production Yoast redirect (target to re-check) | chain flattened (1),,,,,,0,yoast-redirect,
+/services/content-marketing-services/,301,/services/seo-content-systems/,register (D-014/015/023),200,,5,1756,2,248,backlinks crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /services/seo-content-systems/ (dup slug) [flattened; was -> /services/content-marketing-services/; D-023/O-018]
+/services/creative/,KEEP,,register (D-014/015/023),200,,0,0,,2,crawl linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/services/creative/ai-search-optimization-services/,301,/services/ai-search-optimization/,register (D-014/015/023),404,,0,0,,222,crawl linked-from-production register,APPROVED: 301 -> /services/ai-search-optimization/ (dedupe AI service)
+/services/creative/graphic-design-services/,KEEP,,register (D-014/015/023),200,,0,151,1,228,backlinks crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/services/creative/pharmaceutical-seo-services/,301,/services/pharmaceutical-seo/,register (D-014/015/023),404,,0,0,,222,crawl linked-from-production register,APPROVED: 301 -> /services/pharmaceutical-seo/ (dedupe AI service)
+/services/e-mail-marketing-service/,301,/services/marketing-automation/,production Yoast redirect (target to re-check) | chain flattened (1),,,,,,0,yoast-redirect,
+/services/ecommerce-/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 (malformed/truncated slug)
+/services/ecommerce-website-design-service/,KEEP,,register (D-014/015/023),200,,0,0,,12,crawl linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/services/email-marketing-services/,301,/services/marketing-automation/,register (D-014/015/023),200,,0,19339,,16,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /services/marketing-automation/ (D-023; confirmed F-020)
+/services/generative-engine-optimization-service/,301,/services/generative-engine-optimization/,register (D-014/015/023),404,,0,0,,222,crawl linked-from-production register,APPROVED: 301 -> /services/generative-engine-optimization/ (dedupe AI service)
+/services/generative-engine-optimization/,KEEP,,register (D-014/015/023),,,0,0,,0,register,APPROVED: PRESERVE — approved new service URL (D-003)
+/services/graphic-design-services/,301,/services/creative/graphic-design-services/,register (D-014/015/023),301,/services/creative/graphic-design-services/,0,0,,2,crawl linked-from-production register yoast-redirect,APPROVED: 301 -> /services/creative/graphic-design-services/ (dup slug)
+/services/graphics-designing-services/,301,/services/creative/graphic-design-services/,production Yoast redirect (target to re-check) | chain flattened (1),,,,,,0,yoast-redirect,
+/services/link-building-seo-services/,301,/services/press-release-services/,production Yoast redirect (target to re-check) | chain flattened (1),301,/services/best-affordable-seo-link-building-services/,,,,1,crawl linked-from-production yoast-redirect,
+/services/off-page-seo-services/,301,/services/press-release-services/,register (D-014/015/023),200,,12,47499,,12,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /services/press-release-services/ (O-018 Option B; supersedes D-023 enterprise target)
+/services/pharmaceutical-seo/,KEEP,,register (D-014/015/023),,,0,0,,0,register,APPROVED: PRESERVE — approved new service URL (D-003)
+/services/ppc-management-service/,301,/services/lead-generation-systems/,production Yoast redirect (target to re-check) | chain flattened (1),,,,,,0,yoast-redirect,
+/services/ppc-management-services/,301,/services/lead-generation-systems/,register (D-014/015/023),200,,0,6572,,9,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /services/lead-generation-systems/ (D-023; confirmed F-020)
+/services/press-release-services/,KEEP,,register (D-014/015/023),200,,0,39,,9,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/services/seo-ai-search-audit/,KEEP,,register (D-014/015/023),404,,0,0,,222,crawl linked-from-production register,APPROVED: PRESERVE — approved new service URL (D-003)
+/services/social-media-management-service/,301,/services/marketing-automation/,register (D-014/015/023),200,,0,279,,6,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /services/marketing-automation/ (D-023; confirmed F-020)
+/services/social-media-marketing-service/,301,/services/marketing-automation/,register (D-014/015/023),200,,0,191,3,249,backlinks crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /services/marketing-automation/ (D-023; confirmed F-020)
+/services/technical-seo-services/,KEEP,,register (D-014/015/023),200,,2,27457,,12,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/services/website-maintenance-services/,KEEP,,register (D-014/015/023),200,,60,258722,,229,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/services/wordpress-website-design-service/,301,/services/wordpress-website-design-service/,register (D-014/015/023) | LOOP,200,,17,259862,,457,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /services/wordpress-website-design-service/ (dup slug)
+/services/wordpress-website-design-service/?add-to-cart=220915,301 (as page),/services/wordpress-website-design-service/,inherits /services/wordpress-website-design-service/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/services/wordpress-website-design-service/?add-to-cart=227503,301 (as page),/services/wordpress-website-design-service/,inherits /services/wordpress-website-design-service/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/services/wordpress-website-design-service/?add-to-cart=229210,301 (as page),/services/wordpress-website-design-service/,inherits /services/wordpress-website-design-service/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/shop/,KEEP,,register (D-014/015/023),200,,0,17,,5,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/shop/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/shop/page/2/,KEEP-NOINDEX,,pagination follows /shop/,200,,,,,5,crawl linked-from-production,
+/shop/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/shop/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/shop/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/shop/paged-3/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/shop/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/shop/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/simple-digital-marketing-strategies-that-you-need-to-survive-for/,KEEP,,register (D-014/015/023),200,,14,128404,,23,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/sitemap_index.xml,CONFIG,,register (D-014/015/023),not fetched (asset or utility),,0,0,,222,crawl linked-from-production register,APPROVED: config-managed (Yoast sitemap index)
+/snapchat-content-ideas/,KEEP,,register (D-014/015/023),200,,0,4324,1,29,backlinks crawl gsc linked-from-production register sitemap,APPROVED (HOLD): PRESERVE money page at slug + rebuild to D-012; re-angle where natural
+/snapchat-content-ideas/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/social-media-advertising/,301,/services/marketing-automation/,register (D-014/015/023),200,,0,0,,30,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /services/marketing-automation/ (legacy category, not recreated — avoids F-001) [flattened; was -> /services/social-media-marketing-serv"
+/social-media-advertising/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/social-media-advertising/paged-2/15/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/social-media-advertising/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/social-media-advertising/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/social-media-advertising/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/social-media-advertising/paged-3/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/social-media-advertising/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/social-media-advertising/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/social-media-advertising/paged-3/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/social-media-advertising/paged-3/5/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/social-media-advertising/paged-3/7/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/social-media-analytics/,301,/services/marketing-automation/,register (D-014/015/023),200,,0,0,,23,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /services/marketing-automation/ (legacy category, not recreated — avoids F-001) [flattened; was -> /services/social-media-marketing-serv"
+/social-media-content-ideas-for-churches/,KEEP,,register (D-014/015/023),200,,0,15,,27,crawl gsc linked-from-production register sitemap,APPROVED (HOLD): PRESERVE money page at slug + rebuild to D-012; re-angle where natural
+/social-media-content-ideas-for-clothing-brand/,KEEP,,register (D-014/015/023),200,,0,6638,1,32,backlinks crawl gsc linked-from-production register sitemap,APPROVED (HOLD): PRESERVE money page at slug + rebuild to D-012; re-angle where natural
+/social-media-content-ideas-for-hotels/,KEEP,,register (D-014/015/023),200,,0,66,,39,crawl gsc linked-from-production register sitemap,APPROVED: keep URL + rewrite/re-angle to positioning; candidate for topic-cluster pillar
+/social-media-content-ideas-for-hotels/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/social-media-content-ideas-for-nonprofits/,KEEP,,register (D-014/015/023),200,,0,1,,518,crawl gsc linked-from-production register sitemap,APPROVED: keep URL + rewrite/re-angle to positioning; candidate for topic-cluster pillar
+/social-media-content-ideas-for-photographers/,KEEP,,register (D-014/015/023),200,,0,789,,47,crawl gsc linked-from-production register sitemap,APPROVED: keep URL + rewrite/re-angle to positioning; candidate for topic-cluster pillar
+/social-media-content-ideas-for-restaurants/,301,/social-media-content-ideas-for-restaurants/,register (D-014/015/023) | LOOP,200,,0,1,1,40,backlinks crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /social-media-content-ideas-for-restaurants/ (trailing-slash dup of the earner)
+/social-media-content-ideas-for-restaurants/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/social-media-management/,301,/services/marketing-automation/,register (D-014/015/023),200,,0,6,,31,crawl gsc linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /services/marketing-automation/ (legacy category, not recreated — avoids F-001) [flattened; was -> /services/social-media-management-ser"
+/social-media-management/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/social-media-management/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/social-media-management/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/social-media-management/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/social-media-management/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/social-media-management/paged-2/4/,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410
+/social-media-management/paged-2/6/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/social-media-management/paged-3/10/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/social-media-management/paged-3/14/,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410
+/social-media-management/paged-3/16/,410,,register (D-014/015/023),,,0,9,,0,gsc register,APPROVED: 410
+/social-media-management/paged-3/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/social-media-management/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/social-media-management/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/social-media-management/paged-3/9/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/social-media-marketing-trends/,301,/services/marketing-automation/,register (D-014/015/023),200,,0,0,,23,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /services/marketing-automation/ (legacy category, not recreated — avoids F-001) [flattened; was -> /services/social-media-marketing-serv"
+/social-media-marketing-trends/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/social-media/,301,/services/marketing-automation/,register (D-014/015/023),200,,0,0,,49,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /services/marketing-automation/ (legacy category, not recreated — avoids F-001) [flattened; was -> /services/social-media-marketing-serv"
+/social-media/page/2/,301,/services/marketing-automation/,pagination follows /social-media/,200,,,,,5,crawl linked-from-production,
+/social-media/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/social-media/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/social-media/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/social-media/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/social-media/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/social-media/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/stablehost-wordpress-hosting/,301,/reviews/,register (D-014/015/023),200,,0,0,,30,crawl linked-from-production register sitemap,"APPROVED: 301 -> /reviews/ hub (dead affiliate page, 0/0)"
+/step/landing-page/,410,,register (D-014/015/023),,,0,17,,0,gsc register,APPROVED: 410
+/strategy/,301,/blog/,register (D-014/015/023),200,,0,0,,144,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /blog/ (legacy category, not recreated — avoids F-001)"
+/strategy/page/2/,301,/blog/,pagination follows /strategy/,200,,,,,5,crawl linked-from-production,
+/strategy/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/strategy/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/strategy/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/strategy/paged-3/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/strategy/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/strategy/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/successful-digital-marketing-campaign-examples/,KEEP,,register (D-014/015/023),200,,0,92,3,21,backlinks crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/successful-digital-marketing-campaign-examples/1000/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 — junk (search-spam / cache / malformed slug)
+/surfer-seo-review/,KEEP,,register (D-014/015/023),200,,2,58155,,113,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/team-leads/,301,/our-team/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/terms-conditions/,KEEP,,register (D-014/015/023),200,,3,469,,233,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/the-anatomy-of-a-website/,KEEP,,register (D-014/015/023),200,,8,5962,,6,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/the-ultimate-guide-to-branding-businesses-on-tiktok/,301,/blog/,register (D-014/015/023),200,,0,813,,15,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /blog/ (consolidate into live pillar)
+/top-advantages-and-disadvantages-of-using-social-media/,KEEP,,register (D-014/015/023),200,,105,137540,,40,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/top-benefits-of-content-marketing/,410,,register (D-014/015/023),200,,0,0,,43,crawl linked-from-production register sitemap,"APPROVED (HOLD): 410 — thin, 0 clicks / 0 impressions"
+/trends/,301,/blog/,register (D-014/015/023),200,,0,0,,17,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /blog/ (legacy category, not recreated — avoids F-001)"
+/trends/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/trends/paged-2/12/,410,,register (D-014/015/023),,,0,11,,0,gsc register,APPROVED: 410
+/trends/paged-2/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/trends/paged-2/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/trends/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/trends/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/trends/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/trends/paged-2/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/trends/paged-2/7/,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410
+/trends/paged-3/13/,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410
+/trends/paged-3/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/trends/paged-3/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/trends/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/trends/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/trends/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/ux-copywriting/,301,/guide-to-ux-copywriting/,production Yoast redirect (target to re-check),301,/guide-to-ux-copywriting/,,,,3,crawl linked-from-production yoast-redirect,
+/ux-writing-vs-copywriting/,KEEP,,register (D-014/015/023),200,,2,5178,,18,crawl gsc linked-from-production register sitemap,APPROVED (HOLD): keep URL + rebuild/rewrite (has impressions)
+/video-marekting/,410,,register (D-014/015/023),200,,0,0,,7,crawl linked-from-production register sitemap,APPROVED: 410
+/video-marekting/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/video-marekting/page/2/,410,,pagination follows /video-marekting/,200,,,,,5,crawl linked-from-production,
+/video-marekting/paged-2/13/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/video-marekting/paged-2/15/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/video-marekting/paged-2/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/video-marekting/paged-2/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/video-marekting/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/video-marekting/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/video-marekting/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/video-marekting/paged-2/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/video-marekting/paged-3/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/video-marekting/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/video-marekting/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/video-marketing-ideas-for-small-business/,410,,register (D-014/015/023),200,,0,0,,21,crawl linked-from-production register sitemap,"APPROVED (HOLD): 410 — thin, 0 clicks / 0 impressions"
+/video-marketing-ideas-for-small-business/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/video-marketing/,301,/blog/,register (D-014/015/023),200,,0,30,,11,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /blog/ (consolidate into live pillar)
+/video-marketing/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/video-marketing/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,2,,2,crawl gsc linked-from-production register,APPROVED: 410
+/video-marketing/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/video-marketing/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/video-marketing/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,1,,2,crawl gsc linked-from-production register,APPROVED: 410
+/video-marketing/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/video-marketing/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,1,,2,crawl gsc linked-from-production register,APPROVED: 410
+/video-seo/,KEEP,,register (D-014/015/023),404,,0,0,,1,crawl linked-from-production register,APPROVED: BUILD fresh on-strategy (D-012)
+/web-design/,301,/services/wordpress-website-design-service/,register (D-014/015/023) | LOOP | chain flattened (1),200,,0,0,,47,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /services/wordpress-website-design-service/ (legacy category, not recreated — avoids F-001)"
+/web-design/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,1,,5,crawl gsc linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/web-design/paged-2/14/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/web-design/paged-2/15/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/web-design/paged-2/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/web-design/paged-2/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/web-design/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/web-design/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/web-design/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,1,,2,crawl gsc linked-from-production register,APPROVED: 410
+/web-design/paged-3/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/web-design/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/web-design/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
+/web-design/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/web-design/paged-3/4/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/web-hosting/,301,/reviews/,register (D-014/015/023),200,,0,0,,41,crawl linked-from-production register sitemap,"APPROVED: 301 -> /reviews/ hub (dead affiliate page, 0/0)"
+/web-hosting/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/web-hosting/paged-2/13/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/web-hosting/paged-2/14/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/web-hosting/paged-2/15/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/web-hosting/paged-2/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/web-hosting/paged-2/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/web-hosting/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/web-hosting/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/web-hosting/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/web-hosting/paged-3/15/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/web-hosting/paged-3/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/web-hosting/paged-3/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/web-hosting/paged-3/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
+/web-hosting/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
+/web-hosting/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
+/what-are-the-best-social-media-platforms-for-business/,301,/blog/,register (D-014/015/023),200,,0,486,,23,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /blog/ (consolidate into live pillar)
+/what-does-an-seo-consultant-do/,KEEP,,register (D-014/015/023),200,,4,582200,,15,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/what-is-content-marketing/,301,/creative-content-marketing-ideas/,register (D-014/015/023),200,,0,1,,24,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /creative-content-marketing-ideas/ (consolidate into live pillar)
+/what-is-keyword-difficulty-in-seo/,KEEP,,register (D-014/015/023),200,,0,824,,16,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/what-is-martech/,KEEP,,register (D-014/015/023),200,,3,68863,,17,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/what-is-martech/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/what-is-social-media-marketing/,301,/blog/,register (D-014/015/023),200,,0,1,,25,crawl linked-from-production register sitemap,APPROVED: 301 -> /blog/ (consolidate into live pillar)
+/what-is-social-media-marketing/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/what-is-technical-seo-and-why-is-it-important/,KEEP,,register (D-014/015/023),200,,0,1,,13,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
+/wordpress-plugins-for-bloggers/,KEEP,,register (D-014/015/023),200,,1,3044,,16,crawl gsc linked-from-production register sitemap,APPROVED (HOLD): keep URL + rebuild/rewrite (has impressions)
+/wp-*.php,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
+/wp-content/*/,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
+/wp-content/litespeed/avatar/5b6ba5d9216dd76f21cee6344bf696c6.jpg?ver=1787231186,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 — junk (search-spam / cache / malformed slug)
+/wp-content/litespeed/avatar/acca34fa98ff1957c4195affee1b4b46.jpg?ver=1787204256,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 — junk (search-spam / cache / malformed slug)
+/wp-content/plugins/*/,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
+/wp-content/themes/bb-theme-child/*/,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
+/wp-content/uploads/*/,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
+/wp-content/uploads/2020/02/Best-Sport-Accessories-A-Project-of-Reinforce-Lab-Digital.png,410,,production Yoast redirect,,,,,,0,yoast-redirect,
+/wp-content/uploads/2020/03/Reinforce-Lab-Digital-Pricing-List-2020.pdf,410,,register (D-014/015/023),not fetched (asset or utility),,0,78,,1,crawl gsc linked-from-production register,APPROVED: 410 (outdated 2020 pricing)
+/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-1.jpg,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-1.jpg.webp,410,,register (D-014/015/023),,,0,3,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-2.jpg.webp,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-3.jpg,410,,register (D-014/015/023),,,0,3,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-3.jpg.webp,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/07/Content-marketing-ideas-for-the-healthcare-industry.jpg,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/07/Content-marketing-ideas-for-the-healthcare-industry.jpg.webp,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/07/Creative-Content-Marketing-Ideas-Infographics-2.jpg.webp,410,,register (D-014/015/023),,,0,3,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/07/Creative-Content-Marketing-Ideas-Infographics-3-scaled.jpg.webp,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/07/Creative-Content-Marketing-Ideas.jpg,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Infographic-2.jpg,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Infographic-2.jpg.webp,410,,register (D-014/015/023),,,0,3,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Inforgraphic-4.jpg.webp,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-Infographic-2.jpg.webp,410,,register (D-014/015/023),,,0,3,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-Infographic-3-scaled.jpg,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-Infographic-3-scaled.jpg.webp,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-infographic-1.jpg,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-infographic-1.jpg.webp,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media.jpeg,410,,register (D-014/015/023),,,0,5,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media.jpeg.webp,410,,register (D-014/015/023),,,0,3,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/09/Content-Marketing-for-Banks-Infographic-1.jpg,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/09/Content-Marketing-for-Banks.jpg,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels-infographic-1.jpg,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels-infographic-4-scaled.jpg.webp,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels.jpg,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels.jpg.webp,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Real-Estate-Social-Media-Posts-Ideas.jpg,410,,register (D-014/015/023),,,0,13,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Real-Estate-Social-Media-Posts-Ideas.jpg.webp,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Churches.jpg,410,,register (D-014/015/023),,,0,9,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Churches.jpg.webp,410,,register (D-014/015/023),,,0,13,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-1.jpg,410,,register (D-014/015/023),,,0,6,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-1.jpg.webp,410,,register (D-014/015/023),,,0,11,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-3-scaled.jpg,410,,register (D-014/015/023),,,0,33,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-3-scaled.jpg.webp,410,,register (D-014/015/023),,,0,62,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-inforgraphic-2.jpg,410,,register (D-014/015/023),,,0,5,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-inforgraphic-2.jpg.webp,410,,register (D-014/015/023),,,0,19,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand.jpg,410,,register (D-014/015/023),,,0,71,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand.jpg.webp,410,,register (D-014/015/023),,,0,5,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Nonprofits.jpg,410,,register (D-014/015/023),,,0,6,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Photographers.jpg,410,,register (D-014/015/023),,,0,12,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants-Infographic-1.jpg.webp,410,,register (D-014/015/023),,,0,4,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants-Infographic-2-scaled.jpg.webp,410,,register (D-014/015/023),,,0,4,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants.jpg,410,,register (D-014/015/023),,,0,5,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants.jpg.webp,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/social-media-content-ideas-for-churches-Infographic.jpg.webp,410,,register (D-014/015/023),,,0,10,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/social-media-content-ideas-for-nonprofits-infographic.jpg,410,,register (D-014/015/023),,,0,3,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/social-media-content-ideas-for-nonprofits-infographic.jpg.webp,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2021/10/social-media-content-ideas-for-photographers-infographic.jpg,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-1-scaled.jpg,410,,register (D-014/015/023),,,0,11,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-1-scaled.jpg.webp,410,,register (D-014/015/023),,,0,9,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-2-scaled.jpg,410,,register (D-014/015/023),,,0,5,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-2-scaled.jpg.webp,410,,register (D-014/015/023),,,0,14,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/01/Content-Marketing-vs-Social-Media-Marketing-Infographic-1.jpg.webp,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/01/Content-Marketing-vs-Social-Media-Marketing-Which-One-is-Best.jpg.webp,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/02/How-can-companies-be-socially-responsible-marketers-infographic-2.jpg.webp,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/02/Sensory-Marketing-Infographic-1.jpg,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/02/Sensory-Marketing-Infographic-2-scaled.jpg.webp,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/02/Sensory-Marketing-Infographic-3-scaled.jpg,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/03/Reinforce-Lab-Company-Profile.pdf,KEEP,,register (D-014/015/023),not fetched (asset or utility),,6,520,,1,crawl gsc linked-from-production register,APPROVED: PRESERVE — rebuild to D-012 standard
+/wp-content/uploads/2022/09/Ideas-for-Personal-Website-Content.jpg,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/09/Ideas-for-Personal-Website-Content.jpg.webp,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/10/10-Successful-Digital-marketing-campaign.jpg,410,,register (D-014/015/023),,,0,13,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/10/10-Successful-Digital-marketing-campaign.jpg.webp,410,,register (D-014/015/023),,,0,14,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/10/Best-Examples-of-Great-Food-Copywriting.jpg,410,,register (D-014/015/023),,,0,3,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/11/Creative-Snapchat-Content-Ideas.jpg,410,,register (D-014/015/023),,,0,3,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2022/11/Creative-Snapchat-Content-Ideas.jpg.webp,410,,register (D-014/015/023),,,0,3,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2023/01/Bluehost-01.jpg,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2023/01/Flywheel-01.jpg,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2023/02/Copy.-AI-Writer-1024x580.jpg,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2023/03/8-Simple-YouTube-SEO-Tips-To-Rank-Your-Videos-Higher-in-Search-1024x551.jpg.webp,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2023/03/8-Simple-YouTube-SEO-Tips-To-Rank-Your-Videos-Higher-in-Search.jpg,410,,register (D-014/015/023),,,0,2,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2023/03/Most-Common-SEO-Mistakes-To-Avoid-1.jpg,410,,register (D-014/015/023),,,0,1,,0,gsc register,APPROVED: 410 (disposable image)
+/wp-content/uploads/2023/09/Certificate-of-Incorporation-Reinforce-Lab-Limited.pdf,KEEP,,register (D-014/015/023),not fetched (asset or utility),,2,52,,222,crawl gsc linked-from-production register,APPROVED: PRESERVE — rebuild to D-012 standard
+/wp-content/uploads/2024/11/Beyond-Borders-client-of-reinforce-lab-limited.png,UNDECIDED,,,not fetched (asset or utility),,,,,1,crawl linked-from-production,
+/wp-engine-wordpress-hosting/,301,/reviews/,register (D-014/015/023),200,,0,0,,23,crawl linked-from-production register sitemap,"APPROVED: 301 -> /reviews/ hub (dead affiliate page, 0/0)"
+/wp-json/wc/store/v1/cart/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/writesonic-review/,KEEP,,register (D-014/015/023),200,,0,13,,14,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
+/youtube-seo/,KEEP,,register (D-014/015/023),200,,0,6,,499,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
+/youtube-seo/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410

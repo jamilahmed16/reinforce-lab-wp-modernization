@@ -20,19 +20,20 @@ P = lambda *a: os.path.join(ROOT, *a)
 
 def path_of(u):
     u = u.strip()
-    if not u: return None
+    if not u or ' ' in u.strip(): return None
     if u.startswith('http'):
         p = urlparse(u)
         if p.netloc.lower().replace('www.', '') not in ('reinforcelab.com', ''): return None
         path, q = p.path or '/', p.query
     else:
         path, _, q = u.partition('?'); path = '/' + path.lstrip('/')
+    path = re.sub(r'/{2,}', '/', path)
     if not re.search(r'\.[a-z0-9]{2,5}$', path, re.I) and not path.endswith('/'): path += '/'
     return path + ('?' + q if q else '')
 
 def parse_decision(d):
     d = d.strip()
-    m = re.search(r'301\s*->\s*(/[^\s;,)\]]*)', d)
+    m = re.search(r'301\s*(?:->|→)\s*(/[^\s;,)\]]*)', d)
     if m: return '301', path_of(m.group(1))
     if re.search(r'\b410\b', d): return '410', ''
     if 'KEEP-noindex' in d: return 'KEEP-NOINDEX', ''
@@ -97,6 +98,22 @@ def main():
     for p, r in rows.items():
         if p.startswith('/author/') and '/paged-' not in p and r['decision_source'].startswith('register'):
             r.update(action='301', target='/blog/', decision_source='D-139/D-144 author pattern (supersedes register)')
+    # approved new URLs (D-003/D-006/D-016): pages that exist on the new site
+    for x in csv.DictReader(open(P('claude', 'data', 'approved-new-urls-2026-09.csv'))):
+        p = path_of(x['url'])
+        if p and p in rows and rows[p]['action'] == 'UNDECIDED':
+            rows[p].update(action='KEEP', decision_source='approved new URL (' + x['notes'][:30] + ')')
+    # F-001: every Beaver Builder /paged-N/M/ junk URL is 410 (approved RETIRE-410)
+    for p, r in rows.items():
+        if re.search(r'/paged-\d+/', p) and r['action'] == 'UNDECIDED':
+            r.update(action='410', decision_source='F-001 paged junk rule')
+    # archive pagination /X/page/N/ follows its archive X (301 to the same target, 410, or noindex if X is kept)
+    for p, r in rows.items():
+        m = re.match(r'^(.*/)page/\d+/$', p)
+        if m and r['action'] == 'UNDECIDED' and m.group(1) in rows:
+            b = rows[m.group(1)]
+            a = {'KEEP': 'KEEP-NOINDEX'}.get(b['action'], b['action'])
+            if a != 'UNDECIDED': r.update(action=a, target=b['target'], decision_source='pagination follows ' + m.group(1))
     # query-string variants inherit their page's fate unless decided themselves
     for p, r in rows.items():
         if '?' in p and r['action'] == 'UNDECIDED':
