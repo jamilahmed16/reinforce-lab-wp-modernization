@@ -25,6 +25,8 @@ UA = 'Mozilla/5.0 (compatible; ReinforceLab-migration-inventory; read-only)'
 MAXP = int(sys.argv[1]) if len(sys.argv) > 1 else 1500
 OUT = os.path.join(ROOT, 'claude', 'data', 'production-inventory-' + datetime.date.today().isoformat())
 os.makedirs(OUT, exist_ok=True)
+# recorded but not fetched: query-string variants and Beaver Builder /paged-N/ junk (approved 410, F-001)
+NOFETCH = re.compile(r'\?|/paged-\d+')
 SKIP = re.compile(r'/wp-admin|/wp-login|/wp-json|xmlrpc|add-to-cart|/cart/|/checkout/|/my-account/|/feed/?$|\?replytocom=|/wp-content/|/wp-includes/|\.(?:pdf|jpe?g|png|gif|webp|svg|zip|mp4|css|js|xml|txt|ico)(?:\?|$)', re.I)
 
 def get(url):
@@ -33,15 +35,15 @@ if (is_wp_error($r)) return array('s' => 0, 'e' => $r->get_error_message());
 $ct = (string) wp_remote_retrieve_header($r, 'content-type');
 return array('s' => wp_remote_retrieve_response_code($r), 'loc' => (string) wp_remote_retrieve_header($r, 'location'), 'ct' => $ct,
   'b' => (stripos($ct, 'html') !== false || stripos($ct, 'xml') !== false) ? base64_encode(substr(wp_remote_retrieve_body($r), 0, 900000)) : '');""" % (base64.b64encode(url.encode()).decode(), UA)
-    for t in range(3):
+    for t in range(4):
         try:
             rv, errs = rl.php(code, timeout=90)
             if isinstance(rv, dict):
                 rv['b'] = base64.b64decode(rv.get('b') or '').decode('utf-8', 'replace')
                 return rv
-        except Exception as e:
-            err = str(e)
-        time.sleep(3)
+        except BaseException as e:  # rl.php exits on a transport error; retry instead of dying
+            if isinstance(e, KeyboardInterrupt): raise
+        time.sleep(5 * (t + 1))
     return {'s': 0, 'e': 'fetch failed', 'b': ''}
 
 def norm(u, base):
@@ -55,6 +57,7 @@ def norm(u, base):
 def main():
     from bs4 import BeautifulSoup
     log = open(os.path.join(OUT, 'progress.log'), 'a')
+    state_f = os.path.join(OUT, 'state.json')
     # 1. sitemaps
     smap = {}
     idx = get(BASE + '/sitemap_index.xml')
@@ -69,10 +72,16 @@ def main():
     print(len(smap), 'sitemap URLs', file=log, flush=True)
     # 2-3. crawl
     queue = collections.deque(sorted(smap)); seen = set(queue); pages = {}; links = []; images = set()
+    if os.path.exists(state_f):  # resume after an interruption
+        st0 = json.load(open(state_f)); queue = collections.deque(st0['queue']); seen = set(st0['seen']); pages = st0['pages']; links = st0['links']; images = set(map(tuple, st0['images']))
+        print('resumed at', len(pages), 'pages', file=log, flush=True)
     while queue and len(pages) < MAXP:
         u = queue.popleft()
-        if SKIP.search(urlparse(u).path + ('?' + urlparse(u).query if urlparse(u).query else '')):
+        full = urlparse(u).path + ('?' + urlparse(u).query if urlparse(u).query else '')
+        if SKIP.search(full):
             pages[u] = {'s': 'not fetched (asset or utility)', 'loc': '', 'title': ''}; continue
+        if NOFETCH.search(full):
+            pages[u] = {'s': 'not fetched (query or paged junk)', 'loc': '', 'title': ''}; continue
         r = get(u); time.sleep(0.8)
         title = ''
         if r.get('s') == 200 and 'html' in r.get('ct', ''):
@@ -95,7 +104,9 @@ def main():
             pages[u] = {'s': r.get('s'), 'loc': r.get('loc', ''), 'title': '', 'err': r.get('e', '')}
             loc = norm(r.get('loc', ''), u) if r.get('loc') else None
             if loc and loc not in seen: seen.add(loc); queue.append(loc)
-        if len(pages) % 25 == 0: print(len(pages), 'pages,', len(queue), 'queued', file=log, flush=True)
+        if len(pages) % 25 == 0:
+            print(len(pages), 'pages,', len(queue), 'queued', file=log, flush=True)
+            json.dump({'queue': list(queue), 'seen': list(seen), 'pages': pages, 'links': links, 'images': sorted(images)}, open(state_f, 'w'))
     with open(os.path.join(OUT, 'pages.csv'), 'w', newline='') as f:
         w = csv.writer(f); w.writerow(['url', 'in_sitemap', 'status', 'redirect_to', 'title', 'canonical', 'robots'])
         for u, p in sorted(pages.items()): w.writerow([u, smap.get(u, ('', ''))[0], p['s'], p.get('loc', ''), p.get('title', ''), p.get('canonical', ''), p.get('robots', '')])
