@@ -175,10 +175,6 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 @media(max-width:820px){.rl-home .flagship{grid-template-columns:1fr}}
 .rl-home .flagship .tag{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--red-3);text-transform:uppercase}
 .rl-home .flagship h2{font-size:clamp(26px,3.6vw,40px);margin:12px 0 14px}
-/* proof */
-.rl-home .proof{border:1px dashed var(--line-2);background:var(--panel);padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}@media(max-width:760px){.rl-home .proof{grid-template-columns:repeat(2,1fr)}}@media(max-width:420px){.rl-home .proof{grid-template-columns:1fr}}
-.rl-home .stat .fig{font-family:var(--f-display);font-size:30px;font-weight:700;color:var(--ink)}.rl-home .stat .lab{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
-.rl-home .ph{font-family:var(--f-mono);font-size:12px;color:var(--red-3);border:1px solid var(--red);padding:2px 7px;display:inline-block;letter-spacing:.08em;text-transform:uppercase}
 /* D-160 layout variety, the rest. Outcomes: three statements, no boxes */
 .rl-home .oc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
 .rl-home .oc-i{padding:6px clamp(20px,3vw,40px) 6px clamp(20px,3vw,40px);border-left:1px solid var(--red-line)}
@@ -525,19 +521,7 @@ function rl_render_home() {
     </div>
   </section>
 
-  <!-- PROOF -->
-  <section class="band alt">
-    <div class="wrap">
-      <div class="head"><span class="ey"><b>[</b>&nbsp;Proof&nbsp;<b>]</b></span><h2>We run this system on ourselves.</h2><p class="lede">Reinforce Lab is its own R&amp;D lab. Your diagnostic establishes your real baseline: no borrowed numbers, no invented results.</p></div>
-      <div class="proof">
-        <div class="stat"><div class="fig"><span class="ph">Your baseline</span></div><div class="lab">Organic visibility today</div></div>
-        <div class="stat"><div class="fig"><span class="ph">Your gap</span></div><div class="lab">AI-search presence</div></div>
-        <div class="stat"><div class="fig"><span class="ph">Your opportunity</span></div><div class="lab">Uncaptured demand</div></div>
-        <div class="stat"><div class="fig"><span class="ph">Your plan</span></div><div class="lab">90-day priorities</div></div>
-      </div>
-      <p class="microtrust" style="margin-top:20px">Case studies and metrics are added only when verified. Placeholders above are replaced by your own diagnostic data.</p>
-    </div>
-  </section>
+  <!-- PROOF removed until there are real results (D-162) -->
 
   <!-- CLIENTS (D-156) -->
   <?php $white = (array) get_option('rl_client_logos_white', []); $names = function_exists('rl_clients_list') ? array_flip(rl_clients_list()) : []; ?>
