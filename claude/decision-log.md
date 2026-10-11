@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-169 | Hero diagram directed as "one cycle of growth": D-168 scan beam removed; a 12 s GSAP loop in five beats (ingest, absorb, process, emit, compound) using the diagram's own parts, a one-off power-on intro, layered depth on mouse move and hover tracing from each input; speed holds (desktop 93, 98, 98, 97; mobile 95, 91, 95, 95; CLS 0; axe 0) | 11 Oct | DONE, waiting on Jamil's view (Jamil: "I don't like it the last one ... First can you think like a director and then design to make it feel stunning") | `pages/reinforce-home.php`, `core/reinforce-motion.js`, `core/reinforce-motion.php` |
 | D-168 | Hero: the scan powers the system diagram (option B): a dot grid behind the diagram and a vertical beam that sweeps left to right in step with its 10 s cycle (inputs, engine, outcomes), reading the diagram's own CSS clock; desktop only, 3 KB; speed unchanged (desktop 97, mobile 95, CLS 0) | 11 Oct | DONE (Jamil: "B. The scan powers the hero diagram (recommended)") | `core/reinforce-gescan.js` |
 | D-167 | Closing CTA gets a "diagnostic scan" (WebGL radar sweep over a square-dot grid, desktop only, 2.8 KB); LiteSpeed Cache activated on .online (page cache only, all optimisation off, object cache off, form pages uncached, deploy purges the cache); supersedes the D-139 "no caching" choice. Home with cache: desktop median 97.5, mobile 95, server wait 0.9 s to about 0.55 s, CLS 0 | 11 Oct | DONE (Jamil: "give a different animation like the wave one ... Yes, After that test speed again and then enable LiteSpeed caching") | `core/reinforce-scan.js`, `core/reinforce-speed.php`, `claude/tools/rl.py` |
 | D-166 | Mobile load time: home drops the unused render-blocking files (jQuery and Migrate, Font Awesome, animate.css, lightbox, theme scripts; Bootstrap and skin kept, removal tested and changes the layout); Oswald fallback tuned per weight; 3D field boots on first interaction. Mobile 90 to 94 to 98 (median 96), LCP 2.9 s to about 2.2 s, CLS 0; desktop median 95.5 (proxy-bound server response) | 11 Oct | DONE (Jamil: "Fix the mobile load time first"); page caching question for Jamil | `core/reinforce-speed.php` |
@@ -236,6 +237,27 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-169 · Hero diagram: one cycle of growth
+**Date:** 11 October 2026 · **Status:** DONE, waiting on Jamil's view (Jamil, with a screenshot of the hero diagram: "I don't like it the last one. Can you think of something with the thing already have in this portion that looks amazing for animation hero section right side design elements ... First can you think like a director and then design to make it feel stunning")
+
+- **Removed:** the D-168 scan beam (`core/reinforce-gescan.js` deleted from the repo; the live copy deleted after a backup in `_backups/<stamp>-removed`). Its CSS and canvas are gone from the home page.
+- **Director's idea:** no new decoration. The diagram's own parts (inputs, wires, engine, stage readout, outcomes, feedback path) tell one story per loop: signals come in, the engine works on them, results go out, and results feed the next cycle.
+- **The loop (12 s, GSAP timeline, repeats while on screen):**
+  - Ingest (0 to 2.4 s): each input box fills red from the left in turn and sends a small square packet along its wire into the engine.
+  - Absorb (2.4 to 6.9 s): the engine glows and a short red trace runs round its border.
+  - Process (3.0 s on): the five stages light one by one and their bars fill.
+  - Emit (7.0 s on): packets leave for the outcomes, each outcome lights as its packet lands.
+  - Compound (9.5 to 11.1 s): a packet runs the feedback path back to the inputs, the feedback label lights, the inputs flicker.
+  - Breathe (11.2 to 12 s): everything settles before the next cycle.
+- **Power-on intro (once):** each wire draws in red and cools to grey, then the loop starts.
+- **Depth and hover (desktop with a mouse only):** the layers (inputs, wires, engine, outcomes) move a few pixels at different rates with the pointer; hovering an input turns its two wires red and lights its outcome.
+- **Markup:** `rl_home_ge_svg()` adds a fill rect per box, layer groups (`ge-L-in`, `ge-L-edges`, `ge-L-core`, `ge-L-out`), the engine trace path and an empty packets group. The old CSS keyframes are switched off once GSAP takes over (`.ge-gs`), so without JavaScript or with reduced motion the D-039 CSS animation still runs as before.
+- **Bug found and fixed:** packets showed at rest before their beat (a `fromTo` drew its first frame at build time); fixed with `immediateRender: false`.
+- **Rules as before (D-163 to D-165):** set up in idle time after load, desktop motion only inside `gsap.matchMedia`, off for reduced motion, paused off screen, no new library (GSAP already loaded), hero heading (the LCP element) untouched.
+- **Checked:** filmed the hero (video and frame sheet); scroll test no layout shift and no console errors; axe 0 at 390 and 1440. Lighthouse (cached home, 4 runs): desktop 93, 98, 98, 97 (median 97.5); mobile 95, 91, 95, 95 (median 95); CLS 0 in every run. Pass mark (desktop 96, mobile 90, no shift) met.
 
 ---
 
