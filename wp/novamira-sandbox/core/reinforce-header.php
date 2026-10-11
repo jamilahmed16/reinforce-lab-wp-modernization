@@ -104,7 +104,7 @@ function rl_header_css() { ?>
   --glass:rgba(30,23,25,.45);--glass-2:rgba(44,30,33,.55);--glass-line:rgba(255,255,255,.08);--glass-hi:rgba(255,255,255,.14);
   --grid:rgba(243,237,230,.035);--grid-red:rgba(180,20,20,.06);--grid-fine:rgba(243,237,230,.014);--grid-red2:rgba(200,30,30,.035);
   --maxw:1440px;--gutter:clamp(16px,4vw,64px);
-  --f-display:'Oswald','Arial Narrow',sans-serif;--f-body:'IBM Plex Sans',system-ui,sans-serif;--f-mono:'IBM Plex Mono',ui-monospace,monospace;
+  --f-display:'Oswald','Oswald Fallback',sans-serif;--f-body:'IBM Plex Sans','Plex Sans Fallback',system-ui,sans-serif;--f-mono:'IBM Plex Mono',ui-monospace,monospace;
 }
 /* dark base (design system D-018) */
 body.rl-dark{background:var(--bg);color:var(--ink);font-family:var(--f-body)}
