@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-158 | Home layout variety, first 3: section headings with an intro use the full width (heading left, intro right), What we do as a numbered index, How it works as a timeline; words unchanged | 11 Oct | DONE (Jamil: "Go ahead with the first 3"); next sections and the Proof question wait for him | `pages/reinforce-home.php` |
 | D-157 | Home Clients logos: two rows of 12 scrolling right to left in an endless loop (row 2 slower), edges faded, pause on hover, still for reduced motion; Pro Tennis Academy logo to be replaced when Jamil sends it | 11 Oct | DONE (Jamil: "I want the logos in two line and moving from right to left smooth motion") | `pages/reinforce-home.php` |
 | D-156 | Home: Clients section ("Companies we've worked with.") between Proof and Recognition, the same 24 logos in production home's order, white versions from /clients/, link to all 46 | 11 Oct | DONE (Jamil: "I want a client section before ... Recognition") | `pages/reinforce-home.php` |
 | D-155 | Testimonial: the "..." marking the left-out sentence removed, and the note about it; the shortened quote stays as written | 11 Oct | DONE (Jamil: "“...” remove it and keep it as you written") | `pages/reinforce-home.php` |
@@ -225,6 +226,18 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-158 · Home page: less repetition, first three changes
+**Date:** 11 October 2026 · **Status:** DONE (Jamil: "i think it looks boring to see same pattern from top to bottom"; asked "Go ahead with the first 3?", Jamil: "Go ahead with the first 3? (yes / no)", taken as yes)
+
+- **Found (review of the full page):** 9 of 13 sections had the same build (label and heading on the left half, right half empty, then a grid of equal dark boxes); page about 13,000px tall at 1440.
+- **1. Headings:** every section heading that has an intro now uses the full width at 900px and up: label and heading left, intro right with a thin red rule (one column below 900px). Packages keeps its own two-column layout (D-154). CSS only.
+- **2. What we do:** the 6 service boxes became a numbered index: 01 to 06 in outlined numbers, tag and title, description, and an arrow box; hover draws a red edge, tints the row and fills the arrow. Same links and words.
+- **3. How it works:** the 4 boxes became a timeline: one rail from grey to red with a node per stage (last one filled), large outlined stage numbers that turn red on hover. Vertical rail on phone. Same words. Classes `.ix` and `.tline` (no kit or Bootstrap clash).
+- **Not changed yet (waiting for Jamil):** Outcomes, Problem, Industries, Clients and Recognition merge, Blog, and the Proof question (remove until there are real numbers, or merge into the diagnostic section).
+- **Checked:** phone width 390, axe 0 at 390 and 1440, copy check 0.
 
 ---
 
