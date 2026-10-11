@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-173 | Jamil's PageSpeed Insights report (home, mobile: performance 95, accessibility 100, best practices 100, SEO 66, agentic 3/3) worked through: header logo served at its shown size (13 KB to 4 KB, width and height set), two early layout reads in the header script removed, header button light starts after 3 s. Home after: mobile 95, 95, 96, 97; desktop 98, 97, 97, 96, 91, 98 (median 97); CLS 0. SEO 66 is the required noindex on .online. Left open: cache lifetimes, Bootstrap/skin render-blocking CSS, HTTP/2 | 12 Oct | DONE (Jamil sent the report: "before that, real screenshot from my chrome browser") | `core/reinforce-header.php`, `uploads/reinforce-brand/` |
 | D-172 | Service and industry pages made lean (as the home page, D-166): unused jQuery, theme scripts, Font Awesome, animate.css and lightbox removed (/services/agents/ excluded); card reveals moved to IntersectionObserver; motion files load on the first scroll, pointer move, touch or key press (home unchanged). 58 full-page screenshots identical before and after. Technical SEO desktop 97, 97, 97 and mobile 96, 96, 97 (was 97 and 91 to 92); healthcare desktop 97, 96, 97 and mobile 97, 97, 96 (was 96 to 97 and 91); page weight 275 KB to 185 KB; CLS 0 to 0.006; axe 0 | 11 Oct | DONE (Jamil: "yes, do it") | `core/reinforce-speed.php`, `core/reinforce-motion.php`, `core/reinforce-motion.js` |
 | D-171 | Scroll motion phase 3 on the service and industry pages (shared .rl-page kit; /services/agents/ excluded): headings reveal line by line, cards, steps, metrics, myth rows and lists rise in turn, process steps fill a red top line in order, link cards tilt with a sheen, reading-progress bar, closing CTA glow; WebGL scenes now load on the home page only. Service page desktop 97, 97, 97, mobile 92, 91, 91 (before 97 to 98, 91 to 92); industry page desktop 96, 97, 97, mobile 91, 91, 91 (before 98, 91 to 92); CLS 0 to 0.003; axe 0 | 11 Oct | DONE (Jamil: "then Go ahead with Phase 3") | `core/reinforce-motion.js`, `core/reinforce-motion.php` |
 | D-170 | Header call-to-action button: a short white light travels round its border once every 6 s (CSS and inline SVG, no script; faster on hover; off for reduced motion). Final values set by Jamil: core line 0.6 px white at 85%, halo 3 px white at 14%, glow 3 px blur white at 45% | 11 Oct | DONE (Jamil: "Can you create a moving line in the header call to action button", then the thickness values) | `core/reinforce-header.php` |
@@ -240,6 +241,24 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-173 · PageSpeed Insights report on the home page
+**Date:** 12 October 2026 · **Status:** DONE (Jamil sent a full-page screenshot of PageSpeed Insights from his own Chrome: "before that, real screenshot from my chrome browser")
+
+- **His report (VERIFIED from the screenshot, mobile, 12 Oct 01:57):** performance 95, accessibility 100, best practices 100, SEO 66, agentic browsing 3/3; FCP 1.4 s, LCP 2.7 s, TBT 20 ms, CLS 0, speed index 3.3 s. The screenshot is too small to read the item details, so the same report was run here (Lighthouse 13.5, all categories) to get them.
+- **SEO 66:** the only failing SEO item is "Page is blocked from indexing", i.e. the noindex that `.online` must keep (CLAUDE.md). Not a defect; goes away on the live site.
+- **Fixed:**
+  - *Improve image delivery / image without width and height:* the header logo was the 1024 x 205 original (13 KB) shown at 170 x 34. Resized copies made on the server with the WordPress image editor from the media-library file: `uploads/reinforce-brand/reinforce-logo-white-340.webp` (4.2 KB) and `-510.webp` (6.6 KB); header uses them with `srcset` 2x/3x and `width="170" height="34"` (falls back to the original if the files are missing). Header checked at 1440 and phone: same look.
+  - *Forced reflow (70 to 100 ms in the page's own script):* the header script read `scrollY` and `innerWidth/innerHeight` while the page was still loading. Now: no scroll check at load (a page restored mid-way fires a scroll event; tested reload at 1,492 px and an anchor link, both slim), and the mouse glow takes its position from the first mouse move (tested: follows the pointer, background parallax and slim header still work, no errors).
+  - *Header button light (D-170):* it redraws on the main thread every frame (not composited); its first pass now starts after 3 s. Home desktop over 8 runs before this was median 94.5 (99, 94, 95, 94, 94, 97, 98, 94), under the 96 mark; after: 98, 97, 97, 96, 91, 98 (median 97).
+- **Measured after (home, Lighthouse, cached):** mobile 95, 95, 96, 97 (LCP 2.3 to 2.7 s); desktop median 97; CLS 0; the image and forced-reflow items pass.
+- **Left open (RECOMMENDATION):**
+  - *Cache lifetimes:* static files are cached for 7 days; files with a version in their URL (our scripts, fonts, theme CSS) could be cached for a year. Server rule (`.htaccess`), helps returning visitors only; best set with the live-site LiteSpeed setup (migration checklist A6).
+  - *Render-blocking CSS / unused CSS:* Bootstrap (21 KB, about 97% unused on the home page) and the theme skin (9.5 KB) still block the first paint (about 0.4 to 0.7 s on a throttled phone). Removing them changed the layout (D-166); the way forward is a small copy with only the rules our pages use. Separate task, needs the full screenshot comparison.
+  - *Modern HTTP:* requests show as HTTP/1.1 in the runs here, which go through the sandbox proxy; cannot tell from the screenshot what Google's test saw. Check on the live host at launch.
+  - *Minify JavaScript:* `reinforce-motion.js` could save 2 KB. Not worth a build step now.
 
 ---
 
