@@ -531,7 +531,7 @@ function rl_header_js() { ?>
   // slimmer header after 80px of scroll, back above 40px (D-164)
   var hd=document.querySelector('.rl-header'),slim=false;
   function hdSlim(){var y=scrollY||0;if(!slim&&y>80){slim=true;hd.classList.add('slim');}else if(slim&&y<40){slim=false;hd.classList.remove('slim');}}
-  if(hd){addEventListener('scroll',hdSlim,{passive:true});requestAnimationFrame(hdSlim);} /* first check after the first frame: reading scrollY during parsing forced an early layout (D-173) */
+  if(hd){addEventListener('scroll',hdSlim,{passive:true});} /* no check at load: reading scrollY then forced an early layout (D-173); a page restored mid-way fires a scroll event, which sets it */
   var grid=document.getElementById('rl-grid'),grid2=document.getElementById('rl-grid2'),glow=document.getElementById('rl-glow');
   var sy=0,mx=.5,my=.5,cx=null,cy=null,gx=null,gy=null,tmx=.5,tmy=.5,raf=false; /* glow position starts at the first mouse move: reading the window size during load forced an early layout (D-173) */
   function apply(){
