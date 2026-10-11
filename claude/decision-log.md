@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-153 | Home: Testimonials section after Recognition with the two client quotes from production's home (Md. Arifin Hussain, Bikroy; Mohammad Mozammal Haque, Mrco International), word for word except one sentence left out (marked "..."), square photos, no stars, no review schema | 11 Oct | DONE (Jamil: "Create a section for testimonial") | `pages/reinforce-home.php` |
 | F-031 | Two GoodFirms badges on production's home page (Top SEO Services Company Bangladesh, Top Branding Company Bangladesh) point to files that return 404 on reinforcelab.com (`/wp-content/uploads/2024/10/...svg`); visitors see broken images; production not changed (Rule 1) | 11 Oct | OPEN (Jamil: originals from GoodFirms) | this file |
 | D-152 | Home: own Recognition section after Proof with the six badges from production's home (GoodFirms x4, FindBestFirms, DesignRush), self-hosted, each linked to the directory's page, plus a link to /awards/ | 11 Oct | DONE (Jamil: "build a section with the images in the home page I want to have a separate section for this") | `pages/reinforce-home.php` |
 | F-030 | `.online` inner pages all return the server's own 404 (Hostinger static page) since some time between 8 and 11 Oct; home and `/?page_id=` work, so the WordPress rewrite rules in `.htaccess` are missing or broken; Novamira cannot connect; site still noindex | 11 Oct | CLOSED (Jamil re-saved permalinks; 55 of 55 pages 200) | this file |
@@ -220,6 +221,18 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-153 · Home page: Testimonials section
+**Date:** 11 October 2026 · **Status:** DONE (Jamil, with a screenshot of production's "What Client's Saying": "Create a section for testimonial")
+
+- **Where:** Home, after Recognition and before Packages (`#testimonials`, alternate band, so the page keeps its light/dark rhythm: Proof, Recognition, Testimonials, Packages).
+- **Text:** copied word for word from production's home page (read-only fetch, 11 Oct), not retyped from the screenshot. One sentence left out of Mr Haque's quote ("The collaborative approach and seamless communication of Reinforce Lab team made the whole journey easy and enjoyable."), because "seamless" is on the copy-rules list (D-072) and a client's words cannot be edited; the cut is marked "..." and the section says so. "Reinforce Lab Ltd." in Mr Hussain's quote kept as written (it is his wording). Roles written "Head of Marketing, Bikroy" (comma for the pipe).
+- **Photos:** production's files, copied to `wp-content/uploads/reinforce-testimonials/`, 240px squares (zero radius rule, D-013). Mr Haque's original is cut to a circle in the file itself; filled white (his photo background) and cropped inside the circle. Copies in `claude/data/testimonials/`.
+- **Left out on purpose:** the five stars (no rating source behind them) and Review/AggregateRating schema (Google does not show reviews a business publishes about itself; such markup can be treated as spam).
+- **Design:** two cards (one on phone), drawn red quote mark, client name 20px Oswald, role 12px mono, quote 16px. The glass blur drew a second frame inside each card, so the cards use the solid panel background.
+- **Checked:** phone width 390, axe 0 at 390 and 1440, copy check 0.
 
 ---
 
