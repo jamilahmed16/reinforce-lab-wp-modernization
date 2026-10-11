@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-166 | Mobile load time: home drops the unused render-blocking files (jQuery and Migrate, Font Awesome, animate.css, lightbox, theme scripts; Bootstrap and skin kept, removal tested and changes the layout); Oswald fallback tuned per weight; 3D field boots on first interaction. Mobile 90 to 94 to 98 (median 96), LCP 2.9 s to about 2.2 s, CLS 0; desktop median 95.5 (proxy-bound server response) | 11 Oct | DONE (Jamil: "Fix the mobile load time first"); page caching question for Jamil | `core/reinforce-speed.php` |
 | D-165 | Home: 3D "signal field" behind "One system. Three outcomes" (hand-written WebGL, 2.7 KB, desktop only, lazy, pauses off-screen; CSS dotted field on phones), card animations (badges and testimonials rise with a 3D turn, pointer tilt with sheen, trophy draws, outcomes rise), motion setup moved to idle tasks, font swap fixed (size-matched fallbacks, Plex Mono optional); pass mark met: desktop median 96, mobile median 90, CLS 0 to 0.003 | 11 Oct | DONE (Jamil: "option 2"; pass mark desktop 96+, mobile 90+, no layout shift) | `core/reinforce-signal.js`, `core/reinforce-motion.js`, `core/reinforce-fonts.css` |
 | D-164 | Scroll motion, phase 2: home headings reveal line by line (SplitText, reverted after), services and industries rows fade up in turn, red reading-progress bar, closing CTA glow builds on scroll; header slims on scroll sitewide (desktop, transform only, no layout shift); Lighthouse desktop 96, mobile 90 (baseline 91) | 11 Oct | DONE (Jamil asked for phase 2); phase 3 (service and industry pages) waits | `core/reinforce-motion.js`, `core/reinforce-header.php` |
 | D-163 | Scroll motion, phase 1: GSAP 3.15 + ScrollTrigger self-hosted (home only, deferred, about 46 KB compressed); How it works rail draws with scroll, Search Authority OS holds while its five stages light up, Packages ladder rises; Lenis off; no change to text, hero or SEO; Lighthouse desktop 96 before and after, mobile 91 before, 89 after (median, within run-to-run noise) | 11 Oct | DONE (Jamil: "Go ahead with Phase 1? yes"); phase 2 waits for approval | `core/reinforce-motion.php`, `core/reinforce-motion.js` |
@@ -233,6 +234,20 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-166 · Home page mobile load time
+**Date:** 11 October 2026 · **Status:** DONE (Jamil: "Fix the mobile load time first")
+
+- **Cause (VERIFIED, Lighthouse):** seven files blocked the first paint on phones: jQuery 3.7.1 and jQuery Migrate (in the head), Font Awesome 7 CSS, Bootstrap 4 CSS, the Beaver Builder theme skin, PowerPack animate.css and the Magnific Popup CSS; plus 0.75 to 1 s server response through the sandbox proxy.
+- **Home page facts (VERIFIED):** no inline script uses jQuery; the only Font Awesome icon is the search icon in the Beaver Builder theme header, which is hidden (`.fl-page-header{display:none}`, our own header replaces it); no animate.css classes; no lightbox links. The theme scripts (theme.min.js, bootstrap.js, fitvids, magnific, throttle) serve that hidden header and lightboxes.
+- **Change:** `core/reinforce-speed.php` (new, in loader). On pages that opt in through the `rl_lean_page` filter (home only for now; never when the page builder is open) it removes Font Awesome, animate.css and the lightbox CSS (at print time, they are added late by the plugins), the five theme scripts, and jQuery when nothing left depends on it. Bootstrap CSS and the skin stay: removing them was tested and changed the layout (page 300px shorter at 1440); inlining them was tested and refused (Bootstrap 162 KB, skin 68 KB uncompressed).
+- **Side effect handled:** the page now paints before Oswald arrives, so the hero H1 re-wrapped on the font swap (CLS 0.07 to 0.08 on desktop). `'Oswald Fallback'` is now one face per weight, measured with fontTools on the site's own uppercase headings and buttons: Arial at 400 (71.7%), Arial Bold at 600 (76.8%) and 700 (78.4%), with matching ascent and descent overrides.
+- **3D field:** now boots on the visitor's first scroll, pointer move, touch or key press, so its WebGL setup never lands in the page-load window (until then the CSS dotted field shows).
+- **Visual check:** full-page screenshots before and after, desktop and phone: same page height, only the moving logos and 3D dots differ between captures.
+- **Measured (Lighthouse 13.5, home):** mobile 94, 96, 96, 98 then 96, 96, 94 (median 96, was 90); mobile LCP about 2.1 to 2.6 s (median about 2.2 s, was 2.9 to 3.0 s); mobile first paint 1.8 s (was 2.3 s); CLS 0 to 0.001. Desktop 97, 95, 96, 95, 97, 93, 96, 95, then 94, 94, 97, 96, 97, 95 (median 95.5, was 96); desktop LCP 0.8 to 1.2 s, following the server response time (0.75 to 0.96 s through the proxy). Scroll test: CLS 0 on home at 1440 and 390, no console errors. axe 0.
+- **Open:** the remaining desktop and mobile delay is server response time (no page cache; Jamil chose no caching in D-139). Page caching would cut it; asked Jamil whether to revisit.
 
 ---
 
