@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-163 | Scroll motion, phase 1: GSAP 3.15 + ScrollTrigger self-hosted (home only, deferred, about 46 KB compressed); How it works rail draws with scroll, Search Authority OS holds while its five stages light up, Packages ladder rises; Lenis off; no change to text, hero or SEO; Lighthouse desktop 96 before and after, mobile 91 before, 89 after (median, within run-to-run noise) | 11 Oct | DONE (Jamil: "Go ahead with Phase 1? yes"); phase 2 waits for approval | `core/reinforce-motion.php`, `core/reinforce-motion.js` |
 | D-162 | Home Proof section ("We run this system on ourselves", four placeholder tags) removed until there are real results; same placeholder block still on /search-authority-os/ (Jamil to decide) | 11 Oct | DONE (Jamil: "Remove and", message cut off) | `pages/reinforce-home.php` |
 | D-161 | Home Recognition leads with the HackerNoon award: featured card "Winner, Startups of The Year 2024 in Dhaka" plus 11th in Marketing, two honourable mentions and Startups of the Week, each linked to HackerNoon; text from the /awards/ source; sub-heading now "Awards and recognition." | 11 Oct | DONE (Jamil: "what about my hackernoon startup award") | `pages/reinforce-home.php` |
 | D-160 | Home layout variety, the rest: Outcomes as three statements, Problem with the heading held left and a list right, Industries as a two-column list with drawn icons, Recognition merged into Clients, Blog split (heading left, posts right); words unchanged; Proof untouched | 11 Oct | DONE (Jamil: "1. yes") | `pages/reinforce-home.php` |
@@ -230,6 +231,19 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-163 · Scroll motion, phase 1
+**Date:** 11 October 2026 · **Status:** DONE, phase 2 waits for Jamil (Jamil: "Go ahead with Phase 1? yes"; Lenis question unanswered, kept off as recommended)
+
+- **Scope agreed (11 Oct):** Jamil pasted a general "3D and motion website" brief and asked how to add motion "only for scroll" without losing SEO and speed. Kept from the brief: GSAP + ScrollTrigger, text and list reveals, the marquee (exists, D-157). Not used: theme change (stack locked), WebGL/3D hero and preloader (delay LCP), custom cursor and page transitions (code weight, keyboard and screen-reader cost). Lenis smooth scroll off (takes over native scrolling).
+- **Files:** `core/reinforce-motion.php` (new, in loader: prints the motion CSS and the three scripts with `defer` at the end of the page, only where the `rl_motion_active` filter is true, Home only for now), `core/reinforce-motion.js` (new, 4.8 KB), `core/vendor/gsap.min.js` and `core/vendor/ScrollTrigger.min.js` (GSAP 3.15.0, free "no charge" standard licence, self-hosted, no CDN), `pages/reinforce-home.php` (filter on, Search Authority OS stage list).
+- **Moments:** (1) How it works: the rail fills with scroll (scrubbed) and each stage's node and number turn red as the fill reaches it; the stage text rises in once. Vertical on phone. (2) Search Authority OS: the five stages are now a real list (Research, Verify, Write, Audit, Monitor, each with one line taken from the section's own wording); on desktop the section holds for about one screen while the stages light up in turn with a progress bar; on phone no hold, the stages light up as you scroll. (3) Packages: the ladder steps rise one after another and the rail fills red.
+- **SEO and speed rules applied:** nothing is hidden by CSS; the script hides and reveals only after it runs, so crawlers and visitors without JavaScript see the full page. The hero is not animated. Only transform and opacity move. `prefers-reduced-motion` gets no motion (gsap.matchMedia). No render loop; ScrollTrigger only reacts to scroll.
+- **Measured (Lighthouse 13.5, home, 3 runs each, through the sandbox proxy, medians):** desktop 96 before, 96 after (LCP 0.9 s, CLS 0, TBT 0 to 20 ms). Mobile 91 before, 89 after (runs 83, 89, 93; LCP 2.6 to 3.1 s; one run had CLS 0.185). Page weight 279 KiB to 327 KiB (+48 KiB, the scripts; served with Brotli: gsap 27.5 KB).
+- **Found (existing, not caused by motion):** (a) Mobile LCP is about 2.9 s before and after: the hero H1 waits behind render-blocking Font Awesome CSS from Beaver Builder (about 1 s) and jQuery Migrate, plus about 1 s server response (no page cache). (b) The hero button row shifts when the web fonts load (CLS 0.015 in the baseline; 0.185 in one run when Oswald arrived late). Both for the speed phase: font fallback metrics, remove unused Font Awesome on the home page, page caching decision.
+- **Checked:** motion runs on 1440 and 390 (stages light in order, hold only on desktop, ladder fully visible at the end), page width 390, axe 0 at 390 and 1440, copy check 0, scripts absent on `/blog/`.
 
 ---
 
