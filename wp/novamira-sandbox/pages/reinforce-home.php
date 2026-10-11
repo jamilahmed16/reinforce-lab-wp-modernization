@@ -175,6 +175,13 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 @media(max-width:820px){.rl-home .flagship{grid-template-columns:1fr}}
 .rl-home .flagship .tag{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--red-3);text-transform:uppercase}
 .rl-home .flagship h2{font-size:clamp(26px,3.6vw,40px);margin:12px 0 14px}
+/* D-165 signal field behind "One system. Three outcomes": the CSS dotted floor is the still version (phones, reduced motion, no WebGL); the WebGL canvas fades in over it on desktop */
+.rl-home .sig-sec{overflow:hidden;padding-bottom:clamp(56px,13vw,190px)}
+.rl-home .sig-sec>.wrap{position:relative;z-index:2}
+.rl-home .sig-bg,.rl-home .sig-cv{position:absolute;left:0;right:0;bottom:0;height:78%;pointer-events:none;z-index:1}
+.rl-home .sig-bg{background-image:radial-gradient(rgba(232,80,80,.32) 1px,transparent 1.4px);background-size:22px 22px;transform:perspective(520px) rotateX(58deg);transform-origin:50% 100%;-webkit-mask-image:linear-gradient(to top,#000 10%,transparent 85%);mask-image:linear-gradient(to top,#000 10%,transparent 85%);opacity:.55;transition:opacity 1.2s}
+.rl-home .sig-cv{width:100%;opacity:0;transition:opacity 1.4s;-webkit-mask-image:linear-gradient(to top,#000 55%,transparent 100%);mask-image:linear-gradient(to top,#000 55%,transparent 100%)}
+.rl-home .sig-cv.on{opacity:1}.rl-home .sig-sec:has(.sig-cv.on) .sig-bg{opacity:0}
 /* Search Authority OS stage list (D-163): plain list without JavaScript; the motion script lights the stages in turn */
 .rl-home .os-steps{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:6px}
 .rl-home .os-steps li{display:grid;grid-template-columns:34px 92px minmax(0,1fr);align-items:center;gap:12px;margin:0;padding:9px 12px;border:1px solid var(--line);background:rgba(255,255,255,.01)}
@@ -435,8 +442,10 @@ function rl_render_home() {
     </div>
   </section>
 
-  <!-- OUTCOMES -->
-  <section class="band alt">
+  <!-- OUTCOMES (3D signal field behind, D-165: decorative canvas, CSS dotted field as the still version) -->
+  <section class="band alt sig-sec">
+    <div class="sig-bg" aria-hidden="true"></div>
+    <canvas class="sig-cv" aria-hidden="true"></canvas>
     <div class="wrap">
       <div class="head"><span class="ey"><b>[</b>&nbsp;Why AI Growth Systems&nbsp;<b>]</b></span><h2>One system. Three outcomes that move the business.</h2></div>
       <div class="oc">

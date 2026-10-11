@@ -36,12 +36,16 @@ add_action('wp_head', function () {
 .rl-progress{position:fixed;left:0;top:0;right:0;height:2px;z-index:60;background:var(--red);transform-origin:left center;transform:scaleX(0);box-shadow:0 0 10px var(--red-glow);pointer-events:none}
 .rl-mo .rl-home .final::before{opacity:var(--glow,1)}
 .rl-mo .rl-home .final{box-shadow:inset 0 1px 0 var(--glass-hi),0 0 calc(60px + 90px * var(--glow,1)) calc(-56px + 10px * var(--glow,1)) var(--red-glow)}
+.rl-mo .rl-home .quote blockquote::before{opacity:var(--q,1);transform:translateY(calc((1 - var(--q,1)) * -16px))}
+.rl-mo .rl-home .rec,.rl-mo .rl-home .quote,.rl-mo .rl-home .bl-posts .pcard,.rl-mo .rl-home .hn{position:relative;will-change:transform}
+.rl-mo .rl-home .sheen{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .4s;background:radial-gradient(420px circle at var(--sx,50%) var(--sy,50%),rgba(255,255,255,.07),transparent 60%);z-index:3}
+.rl-mo .rl-home .tilting>.sheen{opacity:1}
 </style>
 <?php }, 23);
 
 /* Scripts at the end of the page with defer: they never block the first paint or the hero (LCP). */
 add_action('wp_footer', function () {
     if (!rl_motion_active()) return;
-    foreach (['vendor/gsap.min.js', 'vendor/ScrollTrigger.min.js', 'vendor/SplitText.min.js', 'reinforce-motion.js'] as $rel)
+    foreach (['vendor/gsap.min.js', 'vendor/ScrollTrigger.min.js', 'vendor/SplitText.min.js', 'reinforce-motion.js', 'reinforce-signal.js'] as $rel)
         echo '<script src="' . esc_url(rl_motion_src($rel)) . '" defer></script>' . "\n";
 }, 30);

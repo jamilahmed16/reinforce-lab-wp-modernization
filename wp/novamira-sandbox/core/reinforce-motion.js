@@ -7,6 +7,9 @@
  * Phase 2 (D-164): section headings reveal line by line (SplitText, undone afterwards so the heading HTML is
  * exactly as served), services and industries rows fade up in turn, a thin red reading-progress bar, and the
  * closing call-to-action glows as it comes into view. (The slimmer header is sitewide, in core/reinforce-header.php.)
+ * Phase 3 (D-165): outcome statements rise in turn over the 3D signal field (core/reinforce-signal.js); award
+ * badges and testimonial cards rise with a slight 3D turn; the HackerNoon trophy draws itself and its results
+ * follow; testimonial quote marks drop in; cards tilt toward the pointer with a soft sheen (desktop, fine pointer).
  * Rules: nothing is hidden before this script runs, the hero is never touched, only transform/opacity animate,
  * and visitors with prefers-reduced-motion get no motion at all (gsap.matchMedia reverts everything).
  */
@@ -130,6 +133,60 @@
     gsap.fromTo(fin, { '--glow': 0.2 }, { '--glow': 1, ease: 'none', scrollTrigger: { trigger: fin, start: 'top bottom', end: 'center 55%', scrub: 0.6 } });
   }
 
+
+  /* 8. Outcomes: the three statements rise in turn as the section enters. */
+  function outcomes() {
+    var it = document.querySelectorAll('.rl-home .oc > .oc-i');
+    if (!it.length) return;
+    gsap.from(it, { y: 40, opacity: 0, duration: 1.1, ease: 'expo.out', stagger: 0.14, scrollTrigger: { trigger: it[0].parentNode, start: 'top 82%', once: true } });
+  }
+
+  /* 9. Cards rise into place with a slight 3D turn: award badges, testimonials. */
+  function cardsIn() {
+    [['.rl-home .recs > li', 0.08], ['.rl-home .quotes > .quote', 0.15]].forEach(function (g) {
+      var els = document.querySelectorAll(g[0]);
+      if (!els.length) return;
+      gsap.from(els, { y: 60, rotationX: -14, opacity: 0, transformPerspective: 900, transformOrigin: '50% 100%', duration: 1.1, ease: 'expo.out', stagger: g[1],
+        scrollTrigger: { trigger: els[0].parentNode, start: 'top 85%', once: true } });
+    });
+    /* testimonial quote marks drop in after their card */
+    var qs = document.querySelectorAll('.rl-home .quote');
+    if (qs.length) gsap.fromTo(qs, { '--q': 0 }, { '--q': 1, duration: 0.9, ease: EASE, stagger: 0.15, delay: 0.35,
+      scrollTrigger: { trigger: qs[0].parentNode, start: 'top 85%', once: true } });
+  }
+
+  /* 10. HackerNoon award: the trophy outline draws itself, then the three results follow. */
+  function award() {
+    var hn = document.querySelector('.rl-home .hn');
+    if (!hn) return;
+    var paths = [].slice.call(hn.querySelectorAll('.cup path'));
+    paths.forEach(function (p) { var L = p.getTotalLength ? p.getTotalLength() : 100; p.style.strokeDasharray = L; p.style.strokeDashoffset = L; });
+    gsap.timeline({ scrollTrigger: { trigger: hn, start: 'top 80%', once: true } })
+      .to(paths, { strokeDashoffset: 0, duration: 1.4, ease: 'power2.inOut', stagger: 0.15 })
+      .from(hn.querySelectorAll('ul > li'), { x: 30, opacity: 0, duration: 0.9, ease: EASE, stagger: 0.12 }, 0.3);
+    return paths;
+  }
+
+  /* 11. Pointer tilt with a light sheen (desktop with a mouse only). */
+  function tilt() {
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return [];
+    var els = [].slice.call(document.querySelectorAll('.rl-home .rec, .rl-home .quote, .rl-home .bl-posts .pcard, .rl-home .hn'));
+    var offs = [];
+    els.forEach(function (el) {
+      var big = el.classList.contains('hn'), max = big ? 2.5 : 6;
+      var sh = el.querySelector(':scope > .sheen');
+      if (!sh) { sh = document.createElement('span'); sh.className = 'sheen'; sh.setAttribute('aria-hidden', 'true'); el.appendChild(sh); }
+      gsap.set(el, { transformPerspective: 900 });
+      var rx = gsap.quickTo(el, 'rotationX', { duration: 0.6, ease: EASE }), ry = gsap.quickTo(el, 'rotationY', { duration: 0.6, ease: EASE });
+      function move(e) { var r = el.getBoundingClientRect(), px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height;
+        ry((px - 0.5) * max * 2); rx((0.5 - py) * max * 2); el.style.setProperty('--sx', (px * 100).toFixed(1) + '%'); el.style.setProperty('--sy', (py * 100).toFixed(1) + '%'); el.classList.add('tilting'); }
+      function leave() { rx(0); ry(0); el.classList.remove('tilting'); }
+      el.addEventListener('pointermove', move); el.addEventListener('pointerleave', leave);
+      offs.push(function () { el.removeEventListener('pointermove', move); el.removeEventListener('pointerleave', leave); el.classList.remove('tilting'); if (sh.parentNode) sh.parentNode.removeChild(sh); });
+    });
+    return offs;
+  }
+
   var mm = gsap.matchMedia();
   mm.add({ motion: '(prefers-reduced-motion: no-preference)', wide: '(min-width: 901px)' }, function (ctx) {
     if (!ctx.conditions.motion) return;
@@ -141,7 +198,13 @@
     rows();
     var bar = progress();
     glow();
+    outcomes();
+    cardsIn();
+    var cup = award();
+    var offs = ctx.conditions.wide ? tilt() : [];
     return function () {
+      offs.forEach(function (f) { f(); });
+      if (cup) cup.forEach(function (p) { p.style.strokeDasharray = ''; p.style.strokeDashoffset = ''; });
       root.classList.remove('rl-mo');
       if (bar && bar.parentNode) bar.parentNode.removeChild(bar);
       document.querySelectorAll('.rl-home .tline li.on, .rl-home .os-steps li.on').forEach(function (li) { li.classList.remove('on'); });
