@@ -179,6 +179,40 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .proof{border:1px dashed var(--line-2);background:var(--panel);padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}@media(max-width:760px){.rl-home .proof{grid-template-columns:repeat(2,1fr)}}@media(max-width:420px){.rl-home .proof{grid-template-columns:1fr}}
 .rl-home .stat .fig{font-family:var(--f-display);font-size:30px;font-weight:700;color:var(--ink)}.rl-home .stat .lab{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
 .rl-home .ph{font-family:var(--f-mono);font-size:12px;color:var(--red-3);border:1px solid var(--red);padding:2px 7px;display:inline-block;letter-spacing:.08em;text-transform:uppercase}
+/* D-158 layout variety. (1) Section headings with an intro use the full width: label and heading left, intro right (one column on phone). */
+@media(min-width:900px){
+.rl-home .head:has(> p){max-width:none;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);column-gap:clamp(40px,7vw,120px);align-items:end}
+.rl-home .head:has(> p) > .ey{grid-column:1;grid-row:1;justify-self:start}
+.rl-home .head:has(> p) > h2{grid-column:1;grid-row:2;margin-bottom:0}
+.rl-home .head:has(> p) > p{grid-column:2;grid-row:1/span 2;align-self:end;margin:0;padding-left:28px;border-left:1px solid var(--red-line);max-width:60ch}
+.rl-home .pk-split .head:has(> p){display:block;max-width:64ch}.rl-home .pk-split .head:has(> p) > p{padding-left:0;border-left:0;margin-top:18px}
+}
+/* (2) What we do: a numbered index, one row per service */
+.rl-home .ix{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-2);counter-reset:ix}
+.rl-home .ix li{margin:0;border-bottom:1px solid var(--line-2)}
+.rl-home .ix a{display:grid;grid-template-columns:72px minmax(0,1.15fr) minmax(0,1.5fr) 48px;gap:24px;align-items:center;padding:26px 8px;position:relative;transition:background .25s}
+.rl-home .ix a::before{content:"";position:absolute;left:0;top:-1px;bottom:-1px;width:2px;background:var(--red);transform:scaleY(0);transform-origin:top;transition:transform .25s}
+.rl-home .ix a:hover{background:linear-gradient(90deg,rgba(153,0,0,.10),transparent 70%)}
+.rl-home .ix a:hover::before{transform:scaleY(1)}
+.rl-home .ix .no{font-family:var(--f-display);font-size:34px;font-weight:700;line-height:1;color:transparent;-webkit-text-stroke:1px var(--red-2);padding-left:14px}
+.rl-home .ix .tg{display:block;font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3);margin-bottom:6px}
+.rl-home .ix h3{font-size:24px;line-height:1.15;margin:0;transition:color .2s}
+.rl-home .ix p{margin:0;color:var(--ink-dim);font-size:16px;max-width:60ch}
+.rl-home .ix .go{justify-self:end;width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--line-2);color:var(--ink-dim);transition:all .25s}
+.rl-home .ix a:hover h3{color:var(--red-3)}.rl-home .ix a:hover .go{border-color:var(--red);background:var(--red);color:#fff;transform:translateX(4px)}
+@media(max-width:900px){.rl-home .ix a{grid-template-columns:52px minmax(0,1fr) 40px;row-gap:8px;padding:22px 4px}.rl-home .ix .no{font-size:26px;padding-left:8px;grid-row:1/span 2}.rl-home .ix p{grid-column:2;grid-row:2}.rl-home .ix .go{grid-column:3;grid-row:1/span 2}}
+/* (3) How it works: four stages on one rail */
+.rl-home .tline{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 clamp(20px,3vw,40px);position:relative}
+.rl-home .tline::before{content:"";position:absolute;left:0;right:0;top:9px;height:1px;background:linear-gradient(90deg,var(--line-2),var(--red-2) 60%,var(--red))}
+.rl-home .tline li{position:relative;margin:0;padding-top:44px}
+.rl-home .tline .nd{position:absolute;top:0;left:0;width:19px;height:19px;border:1px solid var(--red-2);background:var(--bg);display:grid;place-items:center}
+.rl-home .tline .nd::after{content:"";width:7px;height:7px;background:var(--red-2)}
+.rl-home .tline li:last-child .nd{background:var(--red);border-color:var(--red);box-shadow:0 0 24px -2px var(--red-glow)}.rl-home .tline li:last-child .nd::after{background:#fff}
+.rl-home .tline .k{font-family:var(--f-display);font-size:clamp(56px,6vw,88px);font-weight:700;line-height:.85;color:transparent;-webkit-text-stroke:1px var(--line-2);letter-spacing:-.02em;margin-bottom:18px;transition:-webkit-text-stroke-color .3s}
+.rl-home .tline li:hover .k{-webkit-text-stroke-color:var(--red-2)}
+.rl-home .tline h3{font-size:20px;margin:0 0 10px}
+.rl-home .tline p{margin:0;color:var(--ink-dim);font-size:16px}
+@media(max-width:900px){.rl-home .tline{grid-template-columns:1fr;gap:34px}.rl-home .tline::before{left:9px;right:auto;top:10px;bottom:10px;width:1px;height:auto;background:linear-gradient(180deg,var(--line-2),var(--red))}.rl-home .tline li{padding:0 0 0 46px}.rl-home .tline .k{font-size:48px;margin-bottom:10px}}
 /* clients (D-156, motion D-157): the 24 logos from production's home in two rows that scroll right to left; each row holds its logos twice
    (second copy aria-hidden) and moves by half its width, so the loop has no seam. Hover pauses; reduced motion shows a still, wrapped row. */
 .rl-home .cl-rows{display:grid;gap:14px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
@@ -359,14 +393,14 @@ function rl_render_home() {
   <section>
     <div class="wrap">
       <div class="head"><span class="ey"><b>[</b>&nbsp;What We Do&nbsp;<b>]</b></span><h2>The capabilities behind the engine.</h2><p class="lede">Adopt the full system, or start with the piece where the pain is sharpest. Each links to a deeper page.</p></div>
-      <div class="cols c3">
-        <a class="cell" href="<?php echo esc_url($u('services/ai-search-optimization')); ?>"><div class="n">SEARCH</div><h3>AI Search Optimization &amp; SEO</h3><p>Enterprise, technical, international and local SEO plus AI Search Optimization, engineered as one strategy.</p></a>
-        <a class="cell" href="<?php echo esc_url($u('services/generative-engine-optimization')); ?>"><div class="n">AI SEARCH</div><h3>GEO &amp; LLM Optimization</h3><p>Be the source AI engines cite: Generative Engine Optimization and LLM optimization for ChatGPT, Perplexity, AI Overviews.</p></a>
-        <a class="cell" href="<?php echo esc_url($u('services/seo-content-systems')); ?>"><div class="n">CONTENT</div><h3>SEO Content Systems</h3><p>Research-led, evidence-verified content produced and QA'd as a system, not a one-off quota.</p></a>
-        <a class="cell" href="<?php echo esc_url($u('services/ai-workflow-automation')); ?>"><div class="n">AUTOMATE</div><h3>AI Workflow &amp; Marketing Automation</h3><p>Automate repetitive operations and marketing processes with reliable, monitored AI workflows.</p></a>
-        <a class="cell" href="<?php echo esc_url($u('services/lead-generation-systems')); ?>"><div class="n">GROWTH</div><h3>Lead Generation Systems</h3><p>Scalable systems that turn organic visibility into qualified, trackable pipeline.</p></a>
-        <a class="cell" href="<?php echo esc_url($u('services/executive-ai-consulting')); ?>"><div class="n">ADVISORY</div><h3>Executive AI Consulting</h3><p>Architect the system, define what matters, and run the plays, with human judgment in the loop.</p></a>
-      </div>
+      <ol class="ix">
+        <li><a href="<?php echo esc_url($u('services/ai-search-optimization')); ?>"><span class="no" aria-hidden="true">01</span><div><span class="tg">SEARCH</span><h3>AI Search Optimization &amp; SEO</h3></div><p>Enterprise, technical, international and local SEO plus AI Search Optimization, engineered as one strategy.</p><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" focusable="false"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a></li>
+        <li><a href="<?php echo esc_url($u('services/generative-engine-optimization')); ?>"><span class="no" aria-hidden="true">02</span><div><span class="tg">AI SEARCH</span><h3>GEO &amp; LLM Optimization</h3></div><p>Be the source AI engines cite: Generative Engine Optimization and LLM optimization for ChatGPT, Perplexity, AI Overviews.</p><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" focusable="false"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a></li>
+        <li><a href="<?php echo esc_url($u('services/seo-content-systems')); ?>"><span class="no" aria-hidden="true">03</span><div><span class="tg">CONTENT</span><h3>SEO Content Systems</h3></div><p>Research-led, evidence-verified content produced and QA'd as a system, not a one-off quota.</p><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" focusable="false"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a></li>
+        <li><a href="<?php echo esc_url($u('services/ai-workflow-automation')); ?>"><span class="no" aria-hidden="true">04</span><div><span class="tg">AUTOMATE</span><h3>AI Workflow &amp; Marketing Automation</h3></div><p>Automate repetitive operations and marketing processes with reliable, monitored AI workflows.</p><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" focusable="false"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a></li>
+        <li><a href="<?php echo esc_url($u('services/lead-generation-systems')); ?>"><span class="no" aria-hidden="true">05</span><div><span class="tg">GROWTH</span><h3>Lead Generation Systems</h3></div><p>Scalable systems that turn organic visibility into qualified, trackable pipeline.</p><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" focusable="false"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a></li>
+        <li><a href="<?php echo esc_url($u('services/executive-ai-consulting')); ?>"><span class="no" aria-hidden="true">06</span><div><span class="tg">ADVISORY</span><h3>Executive AI Consulting</h3></div><p>Architect the system, define what matters, and run the plays, with human judgment in the loop.</p><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" focusable="false"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a></li>
+      </ol>
       <div class="cta-row"><a class="btn g" href="<?php echo esc_url($svcs); ?>">See all services <span class="ar">&rarr;</span></a></div>
     </div>
   </section>
@@ -389,11 +423,11 @@ function rl_render_home() {
   <section>
     <div class="wrap">
       <div class="head"><span class="ey"><b>[</b>&nbsp;How it works&nbsp;<b>]</b></span><h2>How is an AI Growth System built?</h2><p class="lede">Every system connects four layers: your data, AI models, automated workflows and a revenue dashboard. We build it in four stages, run as one loop, whether we start with search, content, automation or lead generation. <a class="inl" href="<?php echo esc_url($u('services/ai-growth-systems')); ?>">See the systems we build</a>.</p></div>
-      <ol class="steps" style="list-style:none;margin:0;padding:0">
-        <li class="step"><div class="k" aria-hidden="true">01</div><h3>Diagnose</h3><p>Map your website, search visibility, content, workflows and funnel. Find where time, traffic and revenue are being lost.</p></li>
-        <li class="step"><div class="k" aria-hidden="true">02</div><h3>Architect</h3><p>Design the system: which workflows to automate, which searches to own, and which data feeds which decision.</p></li>
-        <li class="step"><div class="k" aria-hidden="true">03</div><h3>Build &amp; Automate</h3><p>Implement the workflows, pages, content engines and integrations, with human approval where it matters.</p></li>
-        <li class="step"><div class="k" aria-hidden="true">04</div><h3>Measure &amp; Improve</h3><p>Track business outcomes: hours saved, qualified pipeline, visibility in Google and AI search, and tune the system every cycle.</p></li>
+      <ol class="tline">
+        <li><span class="nd" aria-hidden="true"></span><div class="k" aria-hidden="true">01</div><h3>Diagnose</h3><p>Map your website, search visibility, content, workflows and funnel. Find where time, traffic and revenue are being lost.</p></li>
+        <li><span class="nd" aria-hidden="true"></span><div class="k" aria-hidden="true">02</div><h3>Architect</h3><p>Design the system: which workflows to automate, which searches to own, and which data feeds which decision.</p></li>
+        <li><span class="nd" aria-hidden="true"></span><div class="k" aria-hidden="true">03</div><h3>Build &amp; Automate</h3><p>Implement the workflows, pages, content engines and integrations, with human approval where it matters.</p></li>
+        <li><span class="nd" aria-hidden="true"></span><div class="k" aria-hidden="true">04</div><h3>Measure &amp; Improve</h3><p>Track business outcomes: hours saved, qualified pipeline, visibility in Google and AI search, and tune the system every cycle.</p></li>
       </ol>
     </div>
   </section>
