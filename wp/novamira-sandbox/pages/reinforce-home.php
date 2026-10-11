@@ -183,9 +183,9 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .recs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;list-style:none;margin:0;padding:0}@media(max-width:1100px){.rl-home .recs{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.rl-home .recs{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
 .rl-home .rec{display:flex;flex-direction:column;height:100%;border:1px solid var(--glass-line);background:var(--panel);transition:border-color .2s}
 .rl-home .rec:hover{border-color:var(--red-line)}
-.rl-home .rec .tile{background:#f4f4f4;display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;padding:18px}
-.rl-home .rec img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
-.rl-home .rec .cap{padding:14px 14px 16px;display:flex;flex-direction:column;gap:4px}
+.rl-home .rec .tile{background:#f4f4f4;display:flex;align-items:center;justify-content:center;height:200px;padding:20px;box-sizing:border-box;overflow:hidden}@media(max-width:560px){.rl-home .rec .tile{height:160px;padding:16px}}
+.rl-home .rec img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.rl-home .rec .cap{padding:14px 14px 16px;display:flex;flex-direction:column;gap:4px;flex:1}
 .rl-home .rec .who{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
 .rl-home .rec .what{font-size:16px;line-height:1.35;color:var(--ink-dim)}
 .rl-home .rec:hover .what{color:var(--ink)}
