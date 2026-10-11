@@ -20,6 +20,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-155 | Testimonial: the "..." marking the left-out sentence removed, and the note about it; the shortened quote stays as written | 11 Oct | DONE (Jamil: "“...” remove it and keep it as you written") | `pages/reinforce-home.php` |
+| D-154 | Home Packages teaser: the empty right side now holds a ladder (free diagnostic, then Foundation, Growth OS, Enterprise with setup and monthly prices from the /packages/ source), each row a link | 11 Oct | DONE (Jamil: "The right side like boring") | `pages/reinforce-home.php` |
 | D-153 | Home: Testimonials section after Recognition with the two client quotes from production's home (Md. Arifin Hussain, Bikroy; Mohammad Mozammal Haque, Mrco International), word for word except one sentence left out (marked "..."), square photos, no stars, no review schema | 11 Oct | DONE (Jamil: "Create a section for testimonial") | `pages/reinforce-home.php` |
 | F-031 | Two GoodFirms badges on production's home page (Top SEO Services Company Bangladesh, Top Branding Company Bangladesh) point to files that return 404 on reinforcelab.com (`/wp-content/uploads/2024/10/...svg`); visitors see broken images; production not changed (Rule 1) | 11 Oct | OPEN (Jamil: originals from GoodFirms) | this file |
 | D-152 | Home: own Recognition section after Proof with the six badges from production's home (GoodFirms x4, FindBestFirms, DesignRush), self-hosted, each linked to the directory's page, plus a link to /awards/ | 11 Oct | DONE (Jamil: "build a section with the images in the home page I want to have a separate section for this") | `pages/reinforce-home.php` |
@@ -221,6 +223,23 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-155 · Testimonial shown without the "..."
+**Date:** 11 October 2026 · **Status:** DONE (Jamil: "“...” remove it and keep it as you written")
+
+- Mr Haque's quote keeps the sentence left out in D-153 out, but the "..." that marked the gap and the line explaining it ("Where we shortened a quote...") are removed. Lede now "In their own words." The left-out sentence is recorded in D-153.
+
+---
+
+## D-154 · Home Packages teaser: ladder on the right
+**Date:** 11 October 2026 · **Status:** DONE (Jamil, screenshot of the section: "The right side like boring")
+
+- The section is now two columns at desktop: the existing text and buttons left (unchanged), and a ladder right: Step 0 free Search Authority Diagnostic (dashed, links to the diagnostic), then 01 Foundation, 02 Growth OS (highlighted, "Most chosen" as on /packages/), 03 Enterprise, each with setup and monthly price and linking to /packages/. A rail runs through the steps, grey to red.
+- Names and prices come from `rl_pkg_plans()` in `saos/reinforce-packages.php`, so the home page cannot show a different price from /packages/.
+- One column on tablet and phone (ladder under the buttons). Class "rung", not "step": the kit already styles `.step` (it drew a second box around each row).
+- Checked: phone width 390, axe 0 at 390 and 1440, copy check 0.
 
 ---
 
