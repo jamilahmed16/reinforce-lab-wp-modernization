@@ -179,6 +179,16 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .proof{border:1px dashed var(--line-2);background:var(--panel);padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}@media(max-width:760px){.rl-home .proof{grid-template-columns:repeat(2,1fr)}}@media(max-width:420px){.rl-home .proof{grid-template-columns:1fr}}
 .rl-home .stat .fig{font-family:var(--f-display);font-size:30px;font-weight:700;color:var(--ink)}.rl-home .stat .lab{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
 .rl-home .ph{font-family:var(--f-mono);font-size:12px;color:var(--red-3);border:1px solid var(--red);padding:2px 7px;display:inline-block;letter-spacing:.08em;text-transform:uppercase}
+/* recognition (D-152): badges on light tiles, because two badges have dark text */
+.rl-home .badges{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;list-style:none;margin:0;padding:0}@media(max-width:1100px){.rl-home .badges{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.rl-home .badges{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.rl-home .badge{display:flex;flex-direction:column;height:100%;border:1px solid var(--glass-line);background:var(--panel);transition:border-color .2s}
+.rl-home .badge:hover{border-color:var(--red-line)}
+.rl-home .badge .tile{background:#f4f4f4;display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;padding:18px}
+.rl-home .badge img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.rl-home .badge .cap{padding:14px 14px 16px;display:flex;flex-direction:column;gap:4px}
+.rl-home .badge .who{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
+.rl-home .badge .what{font-size:16px;line-height:1.35;color:var(--ink-dim)}
+.rl-home .badge:hover .what{color:var(--ink)}
 /* packages */
 .rl-home .pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}@media(max-width:900px){.rl-home .pkgs{grid-template-columns:1fr}}
 .rl-home .pkg{background:var(--glass);backdrop-filter:blur(16px);border:1px solid var(--glass-line);padding:30px 26px;display:flex;flex-direction:column;gap:16px;box-shadow:inset 0 1px 0 var(--glass-hi),0 24px 60px -40px rgba(0,0,0,.9)}
@@ -226,6 +236,21 @@ add_filter('wpseo_schema_graph', function ($graph) {
     ];
     return $graph;
 }, 20);
+
+/* Recognition badges (D-152), the six from production's home page. Files are served from uploads/reinforce-badges/ (copies in claude/data/award-badges/), never hotlinked.
+ * The two GoodFirms Bangladesh badges are cut from Jamil's screenshot: production's own copies return 404 (11 Oct 2026); replace with the originals from GoodFirms when Jamil has them. */
+function rl_home_badges() {
+    $gf = 'https://www.goodfirms.co/company/reinforce-lab-limited';
+    return [
+        ['file' => 'goodfirms-research-partner.svg', 'w' => 209, 'h' => 260, 'who' => 'GoodFirms', 'what' => 'Research partner', 'alt' => 'GoodFirms research partner badge', 'url' => 'https://www.goodfirms.co/resources/app-development-trends-change-how-you-develop-an-app'],
+        ['file' => 'goodfirms-top-seo-services-bangladesh.png', 'w' => 221, 'h' => 190, 'who' => 'GoodFirms', 'what' => 'Top SEO services company, Bangladesh', 'alt' => 'GoodFirms badge: Top SEO Services Company Bangladesh', 'url' => $gf],
+        ['file' => 'goodfirms-top-digital-marketing.svg', 'w' => 140, 'h' => 146, 'who' => 'GoodFirms', 'what' => 'Top digital marketing company', 'alt' => 'GoodFirms badge: Top Digital Marketing Company', 'url' => 'https://www.goodfirms.co/directory/country/top-digital-marketing-companies/bangladesh'],
+        ['file' => 'findbestfirms-wordpress-development-aug-2024.png', 'w' => 560, 'h' => 560, 'who' => 'FindBestFirms', 'what' => 'Top WordPress development, August 2024', 'alt' => 'FindBestFirms badge: Top WordPress Development, August 2024', 'url' => 'https://findbestfirms.com/company/reinforce-lab-limited/'],
+        ['file' => 'goodfirms-top-branding-bangladesh.png', 'w' => 221, 'h' => 190, 'who' => 'GoodFirms', 'what' => 'Top branding company, Bangladesh', 'alt' => 'GoodFirms badge: Top Branding Company Bangladesh', 'url' => $gf],
+        ['file' => 'designrush-top-content-marketing.png', 'w' => 432, 'h' => 474, 'who' => 'DesignRush', 'what' => 'Top content marketing agencies', 'alt' => 'DesignRush badge: Top Content Marketing Agencies', 'url' => 'https://www.designrush.com/agency/profile/reinforce-lab-ltd'],
+    ];
+}
+function rl_home_badge_src($file) { $up = wp_upload_dir(); return trailingslashit($up['baseurl']) . 'reinforce-badges/' . $file; }
 
 add_shortcode('reinforce_home', 'rl_render_home');
 function rl_render_home() {
@@ -360,6 +385,18 @@ function rl_render_home() {
         <div class="stat"><div class="fig"><span class="ph">Your plan</span></div><div class="lab">90-day priorities</div></div>
       </div>
       <p class="microtrust" style="margin-top:20px">Case studies and metrics are added only when verified. Placeholders above are replaced by your own diagnostic data.</p>
+    </div>
+  </section>
+
+  <!-- RECOGNITION (D-152): each badge links to the page on the directory's own site -->
+  <section id="recognition">
+    <div class="wrap">
+      <div class="head"><span class="ey"><b>[</b>&nbsp;Recognition&nbsp;<b>]</b></span><h2>Recognized by independent directories.</h2><p class="lede">GoodFirms, FindBestFirms and DesignRush list and rank agencies on their own research. Select a badge to see it on their site. <a class="inl" href="<?php echo esc_url($u('awards')); ?>">See all awards</a>.</p></div>
+      <ul class="badges">
+        <?php foreach (rl_home_badges() as $b) { ?>
+        <li><a class="badge" href="<?php echo esc_url($b['url']); ?>" target="_blank" rel="noopener"><span class="tile"><img src="<?php echo esc_url(rl_home_badge_src($b['file'])); ?>" alt="<?php echo esc_attr($b['alt']); ?>" width="<?php echo (int) $b['w']; ?>" height="<?php echo (int) $b['h']; ?>" loading="lazy" decoding="async"></span><span class="cap"><span class="who"><?php echo esc_html($b['who']); ?></span><span class="what"><?php echo esc_html($b['what']); ?></span></span></a></li>
+        <?php } ?>
+      </ul>
     </div>
   </section>
 
