@@ -2,8 +2,8 @@
  * Reinforce Lab signal field (D-165). A hand-written WebGL background for the home page's second section:
  * a perspective field of small square points in the brand reds that rolls in slow waves, with three brighter
  * pulses travelling toward the three outcomes. No library (about 5 KB).
- * Rules: decorative only (canvas is aria-hidden, all text stays HTML above it); starts after page load when
- * the browser is idle and only when the section is near the screen; the render loop stops when the section
+ * Rules: decorative only (canvas is aria-hidden, all text stays HTML above it); starts on the visitor's first
+ * scroll or pointer move (never in the page-load window) and only when the section is near the screen; the render loop stops when the section
  * leaves the screen or the tab is hidden; pixel ratio capped at 1.5; never runs on small screens, with
  * prefers-reduced-motion, with Save-Data, or without WebGL (the CSS dotted field underneath stays instead).
  */
@@ -113,7 +113,14 @@
     sec.addEventListener('pointerleave', function () { tmx = tmy = 0; });
   }
 
-  /* after load, when the browser is idle: never competes with the first paint */
-  function later() { (window.requestIdleCallback || function (cb) { setTimeout(cb, 300); })(boot, { timeout: 2000 }); }
-  if (document.readyState === 'complete') later(); else window.addEventListener('load', later);
+  /* Boot on the visitor's first scroll, pointer move, touch or key press (D-166): the WebGL setup (context and
+     shader compile) is the one long task in this file, so it never lands in the page-load window. Until then
+     the CSS dotted field shows; the canvas fades in over it. */
+  var booted = false, evs = ['scroll', 'pointermove', 'touchstart', 'keydown', 'wheel'];
+  function go() {
+    if (booted) return; booted = true;
+    evs.forEach(function (e) { window.removeEventListener(e, go, true); });
+    (window.requestIdleCallback || function (cb) { setTimeout(cb, 1); })(boot, { timeout: 800 });
+  }
+  evs.forEach(function (e) { window.addEventListener(e, go, { capture: true, passive: true }); });
 })();
