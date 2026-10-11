@@ -175,6 +175,13 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 @media(max-width:820px){.rl-home .flagship{grid-template-columns:1fr}}
 .rl-home .flagship .tag{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--red-3);text-transform:uppercase}
 .rl-home .flagship h2{font-size:clamp(26px,3.6vw,40px);margin:12px 0 14px}
+/* Search Authority OS stage list (D-163): plain list without JavaScript; the motion script lights the stages in turn */
+.rl-home .os-steps{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:6px}
+.rl-home .os-steps li{display:grid;grid-template-columns:34px 92px minmax(0,1fr);align-items:center;gap:12px;margin:0;padding:9px 12px;border:1px solid var(--line);background:rgba(255,255,255,.01)}
+.rl-home .os-steps .os-n{width:34px;height:24px;display:grid;place-items:center;border:1px solid var(--line-2);font-family:var(--f-mono);font-size:12px;color:var(--ink-faint)}
+.rl-home .os-steps b{font-family:var(--f-display);text-transform:uppercase;font-weight:600;font-size:16px;letter-spacing:.04em;color:var(--ink-dim)}
+.rl-home .os-steps li>span:last-child{font-size:16px;color:var(--ink-dim);line-height:1.35}
+@media(max-width:560px){.rl-home .os-steps li{grid-template-columns:30px minmax(0,1fr)}.rl-home .os-steps li>span:last-child{grid-column:2}}
 /* D-160 layout variety, the rest. Outcomes: three statements, no boxes */
 .rl-home .oc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
 .rl-home .oc-i{padding:6px clamp(20px,3vw,40px) 6px clamp(20px,3vw,40px);border-left:1px solid var(--red-line)}
@@ -397,6 +404,9 @@ function rl_home_testimonials() {
     ];
 }
 
+/* scroll motion on the home page only (D-163) */
+add_filter('rl_motion_active', function ($on) { return $on || is_front_page(); });
+
 add_shortcode('reinforce_home', 'rl_render_home');
 function rl_render_home() {
     $u = 'rl_url_by_path';
@@ -514,7 +524,15 @@ function rl_render_home() {
         </div>
         <div class="engine" style="background:linear-gradient(180deg,var(--panel-2,#211a1b),var(--bg-2))">
           <div class="cap"><span>Reinforce Lab OPS</span><span>Human Judgment</span></div>
-          <div class="core" style="margin-top:6px"><b>Search Authority OS</b><small>RESEARCH · VERIFY · WRITE · AUDIT · MONITOR</small></div>
+          <div class="core" style="margin-top:6px"><b>Search Authority OS</b></div>
+          <ol class="os-steps">
+            <li><span class="os-n" aria-hidden="true">01</span><b>Research</b><span>Your market, buyers and competitors</span></li>
+            <li><span class="os-n" aria-hidden="true">02</span><b>Verify</b><span>Every claim against real evidence</span></li>
+            <li><span class="os-n" aria-hidden="true">03</span><b>Write</b><span>High-value content people search for</span></li>
+            <li><span class="os-n" aria-hidden="true">04</span><b>Audit</b><span>Quality checks before anything goes live</span></li>
+            <li><span class="os-n" aria-hidden="true">05</span><b>Monitor</b><span>Visibility in Google and AI search</span></li>
+          </ol>
+          <span class="os-bar" aria-hidden="true"><i></i></span>
           <p class="microtrust" style="margin-top:14px">We architect the system, define what matters, and run the search plays for you.</p>
         </div>
       </div>
