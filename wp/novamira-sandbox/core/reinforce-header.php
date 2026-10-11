@@ -331,7 +331,10 @@ function rl_render_header() {
 <header class="rl-header">
   <div class="wrap nav">
     <a class="brand" href="<?php echo esc_url(home_url('/')); ?>">
-      <?php if ($logo): ?><img src="<?php echo esc_url($logo); ?>" alt="Reinforce Lab"><?php else: ?><span class="brandtext"><span class="dot"></span>Reinforce&nbsp;Lab</span><?php endif; ?>
+      <?php if ($logo):
+        /* D-173: the header logo is shown 170 x 34; serve resized copies (2x and 3x, 4 KB and 6.5 KB) instead of the 1024 px original (13 KB), with its size set so space is kept before it loads */
+        $up = wp_upload_dir(); $lf = '/reinforce-brand/reinforce-logo-white-';
+        if (file_exists($up['basedir'] . $lf . '340.webp') && file_exists($up['basedir'] . $lf . '510.webp')): ?><img src="<?php echo esc_url($up['baseurl'] . $lf . '340.webp'); ?>" srcset="<?php echo esc_url($up['baseurl'] . $lf . '340.webp'); ?> 2x, <?php echo esc_url($up['baseurl'] . $lf . '510.webp'); ?> 3x" width="170" height="34" alt="Reinforce Lab"><?php else: ?><img src="<?php echo esc_url($logo); ?>" alt="Reinforce Lab"><?php endif; else: ?><span class="brandtext"><span class="dot"></span>Reinforce&nbsp;Lab</span><?php endif; ?>
     </a>
     <nav class="mainnav" aria-label="Primary">
       <ul>
@@ -528,7 +531,7 @@ function rl_header_js() { ?>
   // slimmer header after 80px of scroll, back above 40px (D-164)
   var hd=document.querySelector('.rl-header'),slim=false;
   function hdSlim(){var y=scrollY||0;if(!slim&&y>80){slim=true;hd.classList.add('slim');}else if(slim&&y<40){slim=false;hd.classList.remove('slim');}}
-  if(hd){addEventListener('scroll',hdSlim,{passive:true});hdSlim();}
+  if(hd){addEventListener('scroll',hdSlim,{passive:true});requestAnimationFrame(hdSlim);} /* first check after the first frame: reading scrollY during parsing forced an early layout (D-173) */
   var grid=document.getElementById('rl-grid'),grid2=document.getElementById('rl-grid2'),glow=document.getElementById('rl-glow');
   var sy=0,mx=.5,my=.5,cx=innerWidth/2,cy=innerHeight/2,gx=cx,gy=cy,tmx=.5,tmy=.5,raf=false;
   function apply(){
