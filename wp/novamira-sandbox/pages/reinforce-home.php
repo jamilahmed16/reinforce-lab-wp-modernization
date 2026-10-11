@@ -64,7 +64,7 @@ function rl_home_ge_css() {
 function rl_home_ge_svg() {
     $d = rl_home_ge_data(); $h = 'esc_html';
     $node = function ($x, $y, $l, $cls) use ($h) {
-        return '<g class="' . $cls . '"><rect class="ge-n" x="' . $x . '" y="' . $y . '" width="150" height="40"/><rect class="ge-nl" x="' . $x . '" y="' . $y . '" width="150" height="40"/>'
+        return '<g class="' . $cls . '"><rect class="ge-n" x="' . $x . '" y="' . $y . '" width="150" height="40"/><rect class="ge-fill" x="' . $x . '" y="' . $y . '" width="150" height="40"/><rect class="ge-nl" x="' . $x . '" y="' . $y . '" width="150" height="40"/>'
             . '<text class="ge-tx" x="' . ($x + 12) . '" y="' . ($y + 17) . '">' . $h(strtoupper($l[0])) . '</text><text class="ge-tx" x="' . ($x + 12) . '" y="' . ($y + 30) . '">' . $h(strtoupper($l[1])) . '</text></g>';
     };
     $s = '<svg viewBox="0 0 540 346" role="img" aria-labelledby="rlGeT"><title id="rlGeT">AI Growth System: five inputs (search and SERP data, content and website, competitor research, customer and social signals, AI-search visibility) feed one engine that researches, verifies, builds, automates and monitors, producing automated operations, content that ranks, citations in AI search, qualified pipeline and increased revenue, and the outcomes feed the next cycle.</title>'
@@ -78,18 +78,18 @@ function rl_home_ge_svg() {
             . '<path class="ge-p ge-pi' . $i . '" pathLength="100" d="' . $pi . '"/><path class="ge-p ge-po' . $i . '" pathLength="100" d="' . $po . '"/>';
     }
     $fb = 'M465 276 V306 Q465 318 453 318 H87 Q75 318 75 306 V276';
-    $s .= $edges . '<path class="ge-fb" d="' . $fb . '"/><path class="ge-p ge-pf" pathLength="100" d="' . $fb . '"/>'
-        . '<text class="ge-fbl" x="270" y="338" text-anchor="middle">OUTCOMES FEED THE NEXT CYCLE</text><text class="ge-fbl-on" x="270" y="338" text-anchor="middle">OUTCOMES FEED THE NEXT CYCLE</text>';
-    foreach ($d['in'] as $i => $l) $s .= $node(0, 20 + 54 * $i, $l, 'ge-i' . $i);
-    foreach ($d['out'] as $i => $l) $s .= $node(390, 20 + 54 * $i, $l, 'ge-o' . $i);
-    $s .= '<rect class="ge-c" x="200" y="93" width="140" height="110"/><rect class="ge-cg" x="196" y="89" width="148" height="118"/>'
+    $s .= '<g class="ge-L ge-L-edges">' . $edges . '<path class="ge-fb" d="' . $fb . '"/><path class="ge-p ge-pf" pathLength="100" d="' . $fb . '"/>'
+        . '<text class="ge-fbl" x="270" y="338" text-anchor="middle">OUTCOMES FEED THE NEXT CYCLE</text><text class="ge-fbl-on" x="270" y="338" text-anchor="middle">OUTCOMES FEED THE NEXT CYCLE</text><g class="ge-pk"></g></g>';
+    $s .= '<g class="ge-L ge-L-in">'; foreach ($d['in'] as $i => $l) $s .= $node(0, 20 + 54 * $i, $l, 'ge-i' . $i); $s .= '</g>';
+    $s .= '<g class="ge-L ge-L-out">'; foreach ($d['out'] as $i => $l) $s .= $node(390, 20 + 54 * $i, $l, 'ge-o' . $i); $s .= '</g>';
+    $s .= '<g class="ge-L ge-L-core"><rect class="ge-c" x="200" y="93" width="140" height="110"/><rect class="ge-cg" x="196" y="89" width="148" height="118"/><path class="ge-trace" pathLength="100" d="M200 93 H340 V203 H200 Z"/>'
         . '<text class="ge-ct" x="270" y="128" text-anchor="middle">AI Growth</text><text class="ge-ct" x="270" y="148" text-anchor="middle">System</text>';
     foreach ($d['st'] as $j => $t) {
         $x = 214 + $j * 23;
         $s .= '<text class="ge-st ge-t' . $j . '" x="270" y="172" text-anchor="middle">' . $h(strtoupper($t)) . '</text>'
             . '<rect class="ge-sb" x="' . $x . '" y="184" width="20" height="3"/><rect class="ge-sl ge-s' . $j . '" x="' . $x . '" y="184" width="20" height="3"/>';
     }
-    return $s . '</svg>';
+    return $s . '</g></svg>';
 }
 
 add_action('wp_head', 'rl_home_css', 22);
@@ -175,11 +175,14 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 @media(max-width:820px){.rl-home .flagship{grid-template-columns:1fr}}
 .rl-home .flagship .tag{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--red-3);text-transform:uppercase}
 .rl-home .flagship h2{font-size:clamp(26px,3.6vw,40px);margin:12px 0 14px}
-/* D-168 hero scan behind the diagram (desktop WebGL, reinforce-gescan.js): under the SVG and caption, above the panel background */
-.rl-home .ge{position:relative;overflow:hidden}
-.rl-home .ge>.cap,.rl-home .ge>svg{position:relative;z-index:1}
-.rl-home .ge-cv{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:0;transition:opacity 1.2s}
-.rl-home .ge-cv.on{opacity:1}
+/* D-169 hero diagram direction ("one cycle of growth", core/reinforce-motion.js heroSystem): new layers are invisible
+   until the script takes over (.ge-gs), so without JavaScript or with reduced motion the diagram looks exactly as before */
+.rl-home .ge-fill{fill:rgba(153,0,0,.22);opacity:0}
+.rl-home .ge-trace{fill:none;stroke:var(--red-3);stroke-width:1.6;stroke-dasharray:14 86;stroke-linecap:square;opacity:0}
+.rl-home .ge.ge-gs .ge-nl,.rl-home .ge.ge-gs .ge-p,.rl-home .ge.ge-gs .ge-cg,.rl-home .ge.ge-gs .ge-st,.rl-home .ge.ge-gs .ge-sl,.rl-home .ge.ge-gs .ge-fbl-on{animation:none!important}
+.rl-home .ge.ge-gs .ge-tx{transition:fill .5s}
+.rl-home .ge-L{transition:transform .9s cubic-bezier(.22,1,.36,1)}
+.rl-home .ge.ge-gs .ge-L-in>g,.rl-home .ge.ge-gs .ge-L-out>g{cursor:default}
 /* D-167 diagnostic scan behind the closing call to action (desktop WebGL, reinforce-scan.js); above the panel's glow, below its text */
 .rl-home .final .scan-cv{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:0;transition:opacity 1.4s}
 .rl-home .final .scan-cv.on{opacity:1}
@@ -446,7 +449,7 @@ function rl_render_home() {
         </div>
         <p class="microtrust">Built for <b>Pharmaceutical &amp; Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services · Education</b></p>
       </div>
-      <figure class="ge rl-anim"><canvas class="ge-cv" aria-hidden="true"></canvas><div class="cap" aria-hidden="true"><span>Inputs</span><span>Engine</span><span>Outcomes</span></div><?php echo rl_home_ge_svg(); ?><?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Inputs', 'kind' => 'chips', 'items' => ['Search & SERP data', 'Content & website', 'Competitor research', 'Customer & social signals', 'AI-search visibility']], ['label' => 'Engine', 'kind' => 'core', 'title' => 'AI Growth System', 'sub' => 'Verify · build · automate · monitor'], ['label' => 'Outcomes', 'kind' => 'rows', 'items' => ['Automated operations', 'Content that ranks', 'Cited in AI search', 'Qualified pipeline', ['Increased revenue', 'hi']]]], 'Outcomes feed the next cycle'); ?></figure>
+      <figure class="ge rl-anim"><div class="cap" aria-hidden="true"><span>Inputs</span><span>Engine</span><span>Outcomes</span></div><?php echo rl_home_ge_svg(); ?><?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Inputs', 'kind' => 'chips', 'items' => ['Search & SERP data', 'Content & website', 'Competitor research', 'Customer & social signals', 'AI-search visibility']], ['label' => 'Engine', 'kind' => 'core', 'title' => 'AI Growth System', 'sub' => 'Verify · build · automate · monitor'], ['label' => 'Outcomes', 'kind' => 'rows', 'items' => ['Automated operations', 'Content that ranks', 'Cited in AI search', 'Qualified pipeline', ['Increased revenue', 'hi']]]], 'Outcomes feed the next cycle'); ?></figure>
     </div>
   </section>
 

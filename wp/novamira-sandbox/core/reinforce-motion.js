@@ -10,6 +10,7 @@
  * Phase 3 (D-165): outcome statements rise in turn over the 3D signal field (core/reinforce-signal.js); award
  * badges and testimonial cards rise with a slight 3D turn; the HackerNoon trophy draws itself and its results
  * follow; testimonial quote marks drop in; cards tilt toward the pointer with a soft sheen (desktop, fine pointer).
+ * D-169: the hero diagram plays a directed 12 s "one cycle of growth" loop (heroSystem).
  * Rules: nothing is hidden before this script runs, the hero is never touched, only transform/opacity animate,
  * and visitors with prefers-reduced-motion get no motion at all (gsap.matchMedia reverts everything).
  */
@@ -189,6 +190,132 @@
     return offs;
   }
 
+
+  /* 12. Hero diagram, "one cycle of growth" (D-169). A 12 s directed loop on the existing SVG: ingest (inputs
+     ignite, packets travel into the engine), absorb (engine breathes, a light traces its border), process (the
+     five stages read out and their bars fill), emit (packets fan out, outcomes fill left to right), compound
+     (a comet runs the feedback loop back to the inputs), breathe. A one-off "power on" draws the connectors
+     first. Desktop with a mouse adds depth (the three columns move at different rates) and hover tracing of one
+     signal. Nothing is hidden at load: the script only adds light to a diagram that is already fully drawn. */
+  function heroSystem(wide) {
+    var fig = document.querySelector('.rl-home .ge');
+    var svg = fig && fig.querySelector('svg');
+    if (!svg || !svg.querySelector('.ge-trace')) return null;
+    var NS = 'http://www.w3.org/2000/svg', $$ = function (s) { return [].slice.call(svg.querySelectorAll(s)); }, $ = function (s) { return svg.querySelector(s); };
+    var idx = [0, 1, 2, 3, 4];
+    var ins = idx.map(function (i) { return $('.ge-i' + i); }), outs = idx.map(function (i) { return $('.ge-o' + i); });
+    var pin = idx.map(function (i) { return $('.ge-pi' + i); }), pout = idx.map(function (i) { return $('.ge-po' + i); });
+    var edges = $$('.ge-e'), fb = $('.ge-pf'), fbl = $('.ge-fbl-on'), core = $('.ge-cg'), trace = $('.ge-trace');
+    var stT = $$('.ge-st'), stB = $$('.ge-sl'), pk = $('.ge-pk');
+    var txDim = getComputedStyle($('.ge-tx')).fill, txOn = '#f4efe9', red = '#e85050', edgeCol = getComputedStyle(edges[0]).stroke;
+    fig.classList.add('ge-gs');
+    gsap.set([$$('.ge-nl'), $$('.ge-p'), core, stT, fbl, trace, $$('.ge-fill')], { opacity: 0 });
+    gsap.set($$('.ge-fill').concat(stB), { scaleX: 0, transformOrigin: '0% 50%' });
+    gsap.set(stB, { opacity: 1 });
+
+    function packet() {
+      var g = document.createElementNS(NS, 'g');
+      g.innerHTML = '<rect x="-7" y="-7" width="14" height="14" fill="' + red + '" opacity=".22"/><rect x="-3" y="-3" width="6" height="6" fill="' + txOn + '"/>';
+      pk.appendChild(g); gsap.set(g, { opacity: 0 });
+      return g;
+    }
+    /* a packet with its glowing tail (the existing dashed .ge-p path) travelling along one curve */
+    function travel(tl, path, at, dur) {
+      var g = packet(), L = path.getTotalLength(), o = { p: 0 };
+      tl.set(g, { opacity: 1 }, at).set(path, { opacity: 1 }, at)
+        .fromTo(o, { p: 0 }, { p: 1.1, duration: dur, ease: 'power2.inOut', onUpdate: function () {
+          var pt = path.getPointAtLength(Math.min(o.p, 1) * L);
+          g.setAttribute('transform', 'translate(' + pt.x.toFixed(1) + ' ' + pt.y.toFixed(1) + ')');
+          path.style.strokeDashoffset = 10 - o.p * 100;
+          g.style.opacity = o.p > 1 ? 0 : 1;
+        } }, at)
+        .set([g, path], { opacity: 0 }, at + dur);
+    }
+    function ignite(tl, node, at) {
+      tl.to(node.querySelector('.ge-fill'), { opacity: 1, scaleX: 1, duration: 0.55, ease: 'power3.out' }, at)
+        .to(node.querySelector('.ge-nl'), { opacity: 1, duration: 0.3 }, at)
+        .to(node.querySelectorAll('.ge-tx'), { fill: txOn, duration: 0.3 }, at);
+    }
+    function settle(tl, nodes, at) {
+      var f = nodes.map(function (n) { return n.querySelector('.ge-fill'); }), l = nodes.map(function (n) { return n.querySelector('.ge-nl'); });
+      var t = []; nodes.forEach(function (n) { t = t.concat([].slice.call(n.querySelectorAll('.ge-tx'))); });
+      tl.to(f, { opacity: 0, duration: 0.7, ease: 'power2.in' }, at).set(f, { scaleX: 0 }, at + 0.7)
+        .to(l, { opacity: 0, duration: 0.7 }, at).to(t, { fill: txDim, duration: 0.7 }, at);
+    }
+
+    var T = gsap.timeline({ repeat: -1, paused: true, defaults: { ease: 'power2.out' } });
+    /* 1. ingest 0 to 2.4 s */
+    ins.forEach(function (g, i) { var at = i * 0.38; ignite(T, g, at); travel(T, pin[i], at + 0.2, 0.95); });
+    /* 2. absorb: the engine breathes, the trace starts */
+    T.to(core, { opacity: 1, duration: 0.35 }, 2.15).to(core, { opacity: 0.4, duration: 0.8 }, 2.5)
+      .fromTo(trace, { opacity: 0, strokeDashoffset: 0 }, { opacity: 1, duration: 0.3 }, 2.4)
+      .to(trace, { strokeDashoffset: -400, duration: 4.6, ease: 'none' }, 2.4)
+      .to(trace, { opacity: 0, duration: 0.4 }, 6.9);
+    settle(T, ins, 3.0);
+    /* 3. process 3 to 7 s: the five stages read out, bars fill */
+    stT.forEach(function (t, j) {
+      var at = 3.0 + j * 0.8;
+      T.to(t, { opacity: 1, duration: 0.25 }, at).to(stB[j], { scaleX: 1, duration: 0.7, ease: 'power1.inOut' }, at);
+      if (j < stT.length - 1) T.to(t, { opacity: 0, duration: 0.2 }, at + 0.68); else T.to(t, { opacity: 0, duration: 0.4 }, 9.0);
+    });
+    /* 4. emit 7 to 9.4 s: packets fan out, outcomes fill */
+    T.to(core, { opacity: 1, duration: 0.3 }, 6.9).to(core, { opacity: 0.4, duration: 0.6 }, 7.2);
+    outs.forEach(function (g, i) { var at = 7.0 + i * 0.3; travel(T, pout[i], at, 0.85); ignite(T, g, at + 0.72); });
+    /* 5. compound 9.4 to 11.2 s: comet on the feedback loop, label lights, inputs flicker */
+    travel(T, fb, 9.5, 1.6);
+    T.to(fbl, { opacity: 1, duration: 0.4 }, 9.7).to(fbl, { opacity: 0, duration: 0.6 }, 11.3)
+      .to(ins.map(function (g) { return g.querySelector('.ge-nl'); }), { opacity: 0.8, duration: 0.15, stagger: 0.05, yoyo: true, repeat: 1 }, 10.95);
+    /* 6. breathe 11.2 to 12 s */
+    settle(T, outs, 11.2);
+    T.to(stB, { scaleX: 0, duration: 0.5, ease: 'power2.in' }, 11.3).to(core, { opacity: 0, duration: 0.6 }, 11.3)
+      .to({}, { duration: 0.01 }, 12);
+
+    /* one-off "power on": every connector draws in red, then cools to its normal grey, and the loop starts */
+    var intro = gsap.timeline({ paused: true, onComplete: function () { T.play(0); } });
+    edges.forEach(function (e, i) {
+      var L = e.getTotalLength();
+      intro.fromTo(e, { strokeDasharray: L + ' ' + L, strokeDashoffset: L, stroke: red }, { strokeDashoffset: 0, duration: 0.7, ease: 'power2.inOut' }, (i % 2 ? 0.35 : 0) + Math.floor(i / 2) * 0.06)
+        .to(e, { stroke: edgeCol, duration: 0.6 }, 0.9 + Math.floor(i / 2) * 0.06);
+    });
+    intro.to(core, { opacity: 1, duration: 0.3 }, 0.55).to(core, { opacity: 0, duration: 0.6 }, 1.0);
+
+    /* runs only while the diagram is on screen */
+    var started = false;
+    var st = ScrollTrigger.create({ trigger: fig, start: 'top bottom', end: 'bottom top', onToggle: function (self) {
+      if (self.isActive) { if (!started) { started = true; intro.play(0); } else if (!intro.isActive()) T.play(); }
+      else { T.pause(); }
+    } });
+    if (st.isActive && !started) { started = true; intro.play(0); }
+
+    var offs = [];
+    if (wide && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      /* depth: inputs, connectors, engine and outcomes move at different rates with the pointer */
+      var hero = fig.closest('section') || fig;
+      var layers = [['.ge-L-in', -7, -4], ['.ge-L-edges', -2, -1], ['.ge-L-core', 3, 2], ['.ge-L-out', 8, 5]].map(function (d) {
+        var el = $(d[0]); return { x: gsap.quickTo(el, 'x', { duration: 0.9, ease: EASE }), y: gsap.quickTo(el, 'y', { duration: 0.9, ease: EASE }), dx: d[1], dy: d[2] };
+      });
+      var mv = function (e) { var r = hero.getBoundingClientRect(), nx = (e.clientX - r.left) / r.width - 0.5, ny = (e.clientY - r.top) / r.height - 0.5;
+        layers.forEach(function (l) { l.x(nx * l.dx * 2); l.y(ny * l.dy * 2); }); };
+      var lv = function () { layers.forEach(function (l) { l.x(0); l.y(0); }); };
+      hero.addEventListener('pointermove', mv); hero.addEventListener('pointerleave', lv);
+      offs.push(function () { hero.removeEventListener('pointermove', mv); hero.removeEventListener('pointerleave', lv); });
+      /* hover an input: trace its route through the engine to its outcome */
+      ins.forEach(function (g, i) {
+        var route = [edges[2 * i], edges[2 * i + 1]], target = outs[i].querySelector('.ge-nl');
+        var on = function () { gsap.to(route, { stroke: red, duration: 0.3, overwrite: 'auto' }); gsap.to([g.querySelector('.ge-nl'), target], { opacity: 1, duration: 0.3, overwrite: 'auto' }); };
+        var off = function () { gsap.to(route, { stroke: edgeCol, duration: 0.5, overwrite: 'auto' }); gsap.to([g.querySelector('.ge-nl'), target], { opacity: 0, duration: 0.5, overwrite: 'auto' }); };
+        g.addEventListener('pointerenter', on); g.addEventListener('pointerleave', off);
+        offs.push(function () { g.removeEventListener('pointerenter', on); g.removeEventListener('pointerleave', off); });
+      });
+    }
+    return function () {
+      T.kill(); intro.kill(); st.kill(); offs.forEach(function (f) { f(); });
+      while (pk.firstChild) pk.removeChild(pk.firstChild);
+      fig.classList.remove('ge-gs');
+      gsap.set(svg.querySelectorAll('*'), { clearProps: 'all' });
+    };
+  }
+
   /* Setup runs after the page has loaded, one feature per task with a yield in between (D-165): on a slow
      phone no single task gets long, so the motion adds almost nothing to Total Blocking Time. */
   var idle = window.requestIdleCallback ? function (fn) { window.requestIdleCallback(fn, { timeout: 600 }); } : function (fn) { setTimeout(fn, 1); };
@@ -199,7 +326,9 @@
       if (!ctx.conditions.motion) return;
       var wide = ctx.conditions.wide, bar = null, cup = null, offs = [], live = true;
       root.classList.add('rl-mo');
+      var heroOff = null;
       var tasks = [
+        function () { heroOff = heroSystem(wide); },
         function () { timeline(wide); }, function () { osEngine(wide); }, ladder
       ].concat(headings(), [
         rows, function () { bar = progress(); }, glow, outcomes, cardsIn,
@@ -213,6 +342,7 @@
       })(0);
       return function () {
         live = false;
+        if (heroOff) heroOff();
         offs.forEach(function (f) { f(); });
         if (cup) cup.forEach(function (p) { p.style.strokeDasharray = ''; p.style.strokeDashoffset = ''; });
         root.classList.remove('rl-mo');
