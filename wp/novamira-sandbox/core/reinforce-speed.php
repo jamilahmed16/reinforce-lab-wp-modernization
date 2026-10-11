@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - page speed
- * Description: Removes theme and plugin files a page does not use (D-166). The home page is built entirely by [reinforce_home] with its own header, footer and vanilla JavaScript, so the Beaver Builder theme's jQuery stack, Font Awesome (only used by the hidden BB header search icon), PowerPack's animate.css and the lightbox are dead weight there; seven of them blocked the first paint on phones. Bootstrap CSS and the theme skin stay: removing them was tested and changes the layout (page wrappers and spacing use them). Pages opt in through the rl_lean_page filter: home (D-166), service and industry pages (D-172).
+ * Description: Removes theme and plugin files a page does not use (D-166). The home page is built entirely by [reinforce_home] with its own header, footer and vanilla JavaScript, so the Beaver Builder theme's jQuery stack, Font Awesome (only used by the hidden BB header search icon), PowerPack's animate.css and the lightbox are dead weight there; seven of them blocked the first paint on phones. Bootstrap CSS and the theme skin stay: removing them was tested and changes the layout (page wrappers and spacing use them). Pages opt in through the rl_lean_page filter: home (D-166), service and industry pages (D-172), all other pages, posts, blog index, search and 404 (D-176).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -34,13 +34,13 @@ add_action('template_redirect', function () {
     if (is_page(['contact-us', 'search-authority-diagnostic'])) do_action('litespeed_control_set_nocache', 'Reinforce Lab: page with a form (D-167)');
 }, 0);
 
-/* D-172: service and industry pages (shared .rl-page kit, built by shortcodes with our own header and footer) use none
-   of the removed files either: no inline jQuery, no lightbox links, no animate.css classes, the only Font Awesome icon
-   is the hidden theme search icon. The AI agents pages under /services/agents/ are left out (different layout, not tested). */
+/* D-172: service and industry pages; D-176: every other front-end view too (pages, the blog post template, the blog
+   index, search results, 404). None uses the removed files: checked on all 27 remaining URLs, no inline jQuery
+   (the only matches were the word "jQuery" in portfolio structured data), no Beaver Builder modules, no lightbox
+   links, no embeds, no animate.css classes; the one form and Font Awesome icon on each page are the hidden theme
+   search box. Archives (category, tag, date, author) are retired (D-139) and stay as they were. */
 add_filter('rl_lean_page', function ($on) {
-    if ($on || !is_page()) return $on;
-    $u = get_page_uri();
-    return (bool) preg_match('#^(services|industries)(/|$)#', $u) && strpos($u, 'services/agents') !== 0;
+    return $on || is_page() || is_single() || is_home() || is_search() || is_404();
 });
 
 /* D-174 / D-175: on lean pages two render-blocking theme files are replaced, at the same place in the page so the

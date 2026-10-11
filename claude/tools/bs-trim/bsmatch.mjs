@@ -19,7 +19,7 @@ for (const w of [1440, 390]) {
   });
   const p = await ctx.newPage();
   for (const u of urls) {
-    for (let t = 0; t < 4; t++) { try { await p.goto('https://reinforcelab.online' + u + '?nc=' + Date.now(), { waitUntil: 'load', timeout: 120000 }); break; } catch (e) {} }
+    for (let t = 0; t < 4; t++) { try { await p.goto('https://reinforcelab.online' + u + (u.includes('?') ? '&' : '?') + 'nc=' + Date.now(), { waitUntil: 'load', timeout: 120000 }); break; } catch (e) {} }
     await p.waitForTimeout(500);
     const r = await p.evaluate((sels) => {
       const strip = sel => { let s = sel.replace(/::?-?[a-zA-Z-]+(\((?:[^()]|\([^()]*\))*\))?/g, '').trim();

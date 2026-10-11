@@ -19,7 +19,7 @@ for (const w of [1440, 390]) {
   });
   const p = await ctx.newPage();
   for (const u of urls) {
-    for (let t = 0; t < 4; t++) { try { await p.goto('https://reinforcelab.online' + u + '?nc=' + Date.now(), { waitUntil: 'load', timeout: 120000 }); break; } catch (e) {} }
+    for (let t = 0; t < 4; t++) { try { await p.goto('https://reinforcelab.online' + u + (u.includes('?') ? '&' : '?') + 'nc=' + Date.now(), { waitUntil: 'load', timeout: 120000 }); break; } catch (e) {} }
     await p.waitForTimeout(300);
     const snap = () => p.evaluate((PROPS) => { const out = []; const els = document.querySelectorAll('body *');
       els.forEach((el, i) => { for (const pe of ['', '::before', '::after']) { const cs = getComputedStyle(el, pe || null); if (pe && (cs.content === 'none' || cs.content === 'normal')) continue; out.push(i + pe + '|' + PROPS.map(k => cs.getPropertyValue(k)).join('|')); } });
