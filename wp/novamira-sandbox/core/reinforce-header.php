@@ -26,7 +26,7 @@ function rl_fonts_base() {
 }
 add_action('wp_head', function () {
     $base = rl_fonts_base();
-    foreach (['oswald-latin.woff2', 'ibm-plex-sans-latin.woff2'] as $f) echo '<link rel="preload" href="' . esc_url($base . $f) . '" as="font" type="font/woff2" crossorigin>' . "\n";
+    foreach (['oswald-latin.woff2', 'ibm-plex-sans-latin.woff2', 'ibm-plex-mono-latin-400.woff2'] as $f) echo '<link rel="preload" href="' . esc_url($base . $f) . '" as="font" type="font/woff2" crossorigin>' . "\n";
     $css = (string) @file_get_contents(__DIR__ . '/reinforce-fonts.css');
     $css = preg_replace('#/\*.*?\*/#s', '', $css);
     $css = preg_replace_callback('#url\(fonts/([a-z0-9\-]+\.woff2)\)#', function ($m) use ($base) { return 'url(' . esc_url($base . $m[1]) . ')'; }, $css);
