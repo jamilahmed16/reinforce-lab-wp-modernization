@@ -175,6 +175,9 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 @media(max-width:820px){.rl-home .flagship{grid-template-columns:1fr}}
 .rl-home .flagship .tag{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--red-3);text-transform:uppercase}
 .rl-home .flagship h2{font-size:clamp(26px,3.6vw,40px);margin:12px 0 14px}
+/* D-167 diagnostic scan behind the closing call to action (desktop WebGL, reinforce-scan.js); above the panel's glow, below its text */
+.rl-home .final .scan-cv{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:0;transition:opacity 1.4s}
+.rl-home .final .scan-cv.on{opacity:1}
 /* D-165 signal field behind "One system. Three outcomes": the CSS dotted floor is the still version (phones, reduced motion, no WebGL); the WebGL canvas fades in over it on desktop */
 .rl-home .sig-sec{overflow:hidden;padding-bottom:clamp(56px,15vw,220px)}
 .rl-home .sig-sec>.wrap{position:relative;z-index:2}
@@ -677,6 +680,7 @@ function rl_render_home() {
   <section>
     <div class="wrap">
       <div class="final">
+        <canvas class="scan-cv" aria-hidden="true"></canvas>
         <span class="ey"><b>[</b>&nbsp;Start here&nbsp;<b>]</b></span>
         <h2>Find out what's limiting your growth.</h2>
         <p class="lede center">A data-backed diagnostic of your Google visibility, AI-search presence, content authority, competitors and demand, with a clear 90-day plan. No generic scorecard.</p>
