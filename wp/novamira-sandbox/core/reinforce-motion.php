@@ -53,9 +53,21 @@ add_action('wp_head', function () {
 add_action('wp_footer', function () {
     if (!rl_motion_active()) return;
     $files = ['vendor/gsap.min.js', 'vendor/ScrollTrigger.min.js', 'vendor/SplitText.min.js', 'reinforce-motion.js'];
-    if (is_front_page()) $files = array_merge($files, ['reinforce-signal.js', 'reinforce-scan.js']); /* the two WebGL scenes exist only on the home page */
-    foreach ($files as $rel)
-        echo '<script src="' . esc_url(rl_motion_src($rel)) . '" defer></script>' . "\n";
+    if (is_front_page()) {
+        $files = array_merge($files, ['reinforce-signal.js', 'reinforce-scan.js']); /* the two WebGL scenes exist only on the home page */
+        foreach ($files as $rel)
+            echo '<script src="' . esc_url(rl_motion_src($rel)) . '" defer></script>' . "\n";
+        return;
+    }
+    /* Other pages (D-172): nothing animates until the visitor scrolls, so the motion files load on the first scroll,
+       pointer move, touch or key press. Reading and starting GSAP costs 60 to 100 ms of main thread; this keeps it out
+       of the page load. In order (async=false), after the load event. */
+    $src = array_map(function ($rel) { return esc_url_raw(rl_motion_src($rel)); }, $files); ?>
+<script>(function(){var s=<?php echo wp_json_encode($src); ?>,ev=['scroll','pointermove','touchstart','keydown','wheel'],d=0;
+function go(){if(d)return;d=1;ev.forEach(function(e){removeEventListener(e,go,true);});window.rlMotionLate=true;s.forEach(function(u){var t=document.createElement('script');t.src=u;t.async=false;document.body.appendChild(t);});}
+function arm(){ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true});});}
+if(document.readyState==='complete')arm();else addEventListener('load',arm);})();</script>
+<?php
 }, 30);
 
 /* Phase 3 (D-171): service and industry pages opt in (the shared .rl-page kit). The AI agents pages under

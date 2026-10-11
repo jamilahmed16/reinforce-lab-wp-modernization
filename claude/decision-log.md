@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-172 | Service and industry pages made lean (as the home page, D-166): unused jQuery, theme scripts, Font Awesome, animate.css and lightbox removed (/services/agents/ excluded); card reveals moved to IntersectionObserver; motion files load on the first scroll, pointer move, touch or key press (home unchanged). 58 full-page screenshots identical before and after. Technical SEO desktop 97, 97, 97 and mobile 96, 96, 97 (was 97 and 91 to 92); healthcare desktop 97, 96, 97 and mobile 97, 97, 96 (was 96 to 97 and 91); page weight 275 KB to 185 KB; CLS 0 to 0.006; axe 0 | 11 Oct | DONE (Jamil: "yes, do it") | `core/reinforce-speed.php`, `core/reinforce-motion.php`, `core/reinforce-motion.js` |
 | D-171 | Scroll motion phase 3 on the service and industry pages (shared .rl-page kit; /services/agents/ excluded): headings reveal line by line, cards, steps, metrics, myth rows and lists rise in turn, process steps fill a red top line in order, link cards tilt with a sheen, reading-progress bar, closing CTA glow; WebGL scenes now load on the home page only. Service page desktop 97, 97, 97, mobile 92, 91, 91 (before 97 to 98, 91 to 92); industry page desktop 96, 97, 97, mobile 91, 91, 91 (before 98, 91 to 92); CLS 0 to 0.003; axe 0 | 11 Oct | DONE (Jamil: "then Go ahead with Phase 3") | `core/reinforce-motion.js`, `core/reinforce-motion.php` |
 | D-170 | Header call-to-action button: a short white light travels round its border once every 6 s (CSS and inline SVG, no script; faster on hover; off for reduced motion). Final values set by Jamil: core line 0.6 px white at 85%, halo 3 px white at 14%, glow 3 px blur white at 45% | 11 Oct | DONE (Jamil: "Can you create a moving line in the header call to action button", then the thickness values) | `core/reinforce-header.php` |
 | D-169 | Hero diagram directed as "one cycle of growth": D-168 scan beam removed; a 12 s GSAP loop in five beats (ingest, absorb, process, emit, compound) using the diagram's own parts, a one-off power-on intro, layered depth on mouse move and hover tracing from each input; speed holds (desktop 93, 98, 98, 97; mobile 95, 91, 95, 95; CLS 0; axe 0) | 11 Oct | DONE, waiting on Jamil's view (Jamil: "I don't like it the last one ... First can you think like a director and then design to make it feel stunning") | `pages/reinforce-home.php`, `core/reinforce-motion.js`, `core/reinforce-motion.php` |
@@ -239,6 +240,19 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-172 · Service and industry pages: lean page and late motion
+**Date:** 11 October 2026 · **Status:** DONE (Jamil, on the D-171 recommendation: "yes, do it")
+
+- **Checked first (VERIFIED):** the service and industry pages load the same unused files the home page had before D-166: jQuery and Migrate, the theme scripts (theme.min.js, bootstrap, fitvids, magnific, throttle), Font Awesome (only the hidden theme search icon), animate.css and the lightbox CSS. No inline script uses jQuery, no lightbox links, no videos or embeds; the FAQ is native `<details>`, the phone menu and mega menu are our own plain JavaScript.
+- **Change 1, lean page:** `core/reinforce-speed.php` adds the same `rl_lean_page` opt-in for every page under `/services/` and `/industries/` (29 pages). `/services/agents/` is left out (different layout, not tested).
+- **Visual check:** full-page screenshots of all 29 pages at 1440 and 390 before and after (58 pairs): same page sizes, pixel difference under 0.2% on every pair, no errors, no sideways scroll. Phone menu opens and closes, mega menu opens, FAQ toggles, `jQuery` undefined.
+- **Problem found:** with the theme files gone the page paints sooner, and on desktop the reading and start-up of the GSAP files (60 to 100 ms tasks, measured with the motion script blocked as well, so not the motion itself) fell inside the load window: desktop 94 to 97, under the 96 mark. Moving the card reveals from one ScrollTrigger per card to IntersectionObserver did not change that (setup steps measured under 15 ms each).
+- **Change 2, late motion:** on these pages the motion files (GSAP, ScrollTrigger, SplitText, `reinforce-motion.js`) now load on the visitor's first scroll, pointer move, touch or key press, in order, after the load event (the rule the WebGL scenes already follow). Whatever is already on screen at that moment stays as it is; only what is below gets the reveal (`window.rlMotionLate`). The home page still loads them at once (its hero loop must start on its own).
+- **Measured (Lighthouse, cached, 3 runs):** technical SEO desktop 97, 97, 97 and mobile 96, 96, 97 (before D-171: 97 to 98 and 91 to 92); healthcare desktop 97, 96, 97 and mobile 97, 97, 96 (before: 98 and 91 to 92). Mobile LCP 2.2 to 2.5 s (was 2.9 s). Page weight 275 KB to 185 KB. CLS 0 to 0.006. Scroll test: motion runs, nothing left hidden, no layout shift, no errors. axe 0 at 390 and 1440 on technical SEO, healthcare and both hubs.
+- **Noted, not changed:** the phone menu does not close with the Escape key (it closes with the menu button or a link); it never did. Small accessibility improvement for later.
 
 ---
 

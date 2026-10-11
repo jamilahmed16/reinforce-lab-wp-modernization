@@ -98,6 +98,7 @@
     if (!SplitText) return [];
     /* one task per heading, so the line splitting never adds up to one long task */
     return [].slice.call(document.querySelectorAll('.rl-home section:not(.hero) h2, .rl-home .rec-sub h3, .rl-page section:not(.hero) .head h2, .rl-page .final h2, .rl-page .honest h2')).map(function (h) {
+      if (window.rlMotionLate && h.getBoundingClientRect().top < window.innerHeight * 0.92) return function () {};
       return function () {
         SplitText.create(h, {
           type: 'lines', mask: 'lines', autoSplit: true,
@@ -197,6 +198,12 @@
   /* 13. Service and industry pages (D-171): cards, steps, metrics, myth rows and lists rise in turn as they enter.
      IntersectionObserver instead of one ScrollTrigger per item (D-172): no layout reads during setup, so the setup
      stays a short task on pages that paint early. */
+  /* Loaded late (first scroll, D-172): leave what is already on screen as it is; only what is below gets the reveal. */
+  function below(els) {
+    if (!window.rlMotionLate) return [].slice.call(els);
+    var lim = window.innerHeight * 0.92;
+    return [].filter.call(els, function (el) { return el.getBoundingClientRect().top > lim; });
+  }
   function inView(els, margin, fn) {
     var io = new IntersectionObserver(function (es) {
       var hit = es.filter(function (e) { return e.isIntersecting; }).map(function (e) { io.unobserve(e.target); return e.target; });
@@ -206,7 +213,7 @@
     return io;
   }
   function kitRise() {
-    var items = document.querySelectorAll('.rl-page .cols > *, .rl-page .steps > li, .rl-page .myths > .myth, .rl-page .inds8 > li, .rl-page .ticks > li, .rl-page .honest');
+    var items = below(document.querySelectorAll('.rl-page .cols > *, .rl-page .steps > li, .rl-page .myths > .myth, .rl-page .inds8 > li, .rl-page .ticks > li, .rl-page .honest'));
     if (!items.length) return null;
     gsap.set(items, { opacity: 0, y: 30 });
     return inView(items, '0px 0px -10% 0px', function (batch) { gsap.to(batch, { opacity: 1, y: 0, duration: 0.9, ease: EASE, stagger: 0.08, overwrite: true }); });
