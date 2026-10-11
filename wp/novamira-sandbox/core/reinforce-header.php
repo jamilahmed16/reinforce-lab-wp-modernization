@@ -531,19 +531,19 @@ function rl_header_js() { ?>
   // slimmer header after 80px of scroll, back above 40px (D-164)
   var hd=document.querySelector('.rl-header'),slim=false;
   function hdSlim(){var y=scrollY||0;if(!slim&&y>80){slim=true;hd.classList.add('slim');}else if(slim&&y<40){slim=false;hd.classList.remove('slim');}}
-  if(hd){addEventListener('scroll',hdSlim,{passive:true});requestAnimationFrame(hdSlim);} /* first check after the first frame: reading scrollY during parsing forced an early layout (D-173) */
+  if(hd){addEventListener('scroll',hdSlim,{passive:true});} /* no check at load: reading scrollY then forced an early layout (D-173); a page restored mid-way fires a scroll event, which sets it */
   var grid=document.getElementById('rl-grid'),grid2=document.getElementById('rl-grid2'),glow=document.getElementById('rl-glow');
-  var sy=0,mx=.5,my=.5,cx=innerWidth/2,cy=innerHeight/2,gx=cx,gy=cy,tmx=.5,tmy=.5,raf=false;
+  var sy=0,mx=.5,my=.5,cx=null,cy=null,gx=null,gy=null,tmx=.5,tmy=.5,raf=false; /* glow position starts at the first mouse move: reading the window size during load forced an early layout (D-173) */
   function apply(){
     // ease mouse tilt for smoothness
     mx+=(tmx-mx)*.10; my+=(tmy-my)*.10;
     if(grid){var px=(mx-.5)*42,py=(my-.5)*42+sy*0.14;grid.style.transform='translate3d('+px.toFixed(1)+'px,'+py.toFixed(1)+'px,0)';}
     if(grid2){var px2=(mx-.5)*78,py2=(my-.5)*78+sy*0.28;grid2.style.transform='translate3d('+px2.toFixed(1)+'px,'+py2.toFixed(1)+'px,0)';}
-    if(glow){gx+=(cx-gx)*.18;gy+=(cy-gy)*.18;glow.style.transform='translate('+gx.toFixed(1)+'px,'+gy.toFixed(1)+'px) translate(-50%,-50%)';}
+    if(glow&&gx!==null){gx+=(cx-gx)*.18;gy+=(cy-gy)*.18;glow.style.transform='translate('+gx.toFixed(1)+'px,'+gy.toFixed(1)+'px) translate(-50%,-50%)';}
     if(Math.abs(gx-cx)>.5||Math.abs(gy-cy)>.5||Math.abs(tmx-mx)>.002||Math.abs(tmy-my)>.002){requestAnimationFrame(apply);}else{raf=false;}
   }
   function kick(){if(!raf){raf=true;requestAnimationFrame(apply);}}
-  if(!reduce&&(grid||glow)){addEventListener('scroll',function(){sy=scrollY||0;kick();},{passive:true});addEventListener('mousemove',function(e){tmx=e.clientX/innerWidth;tmy=e.clientY/innerHeight;cx=e.clientX;cy=e.clientY;if(glow)glow.style.opacity=1;kick();},{passive:true});addEventListener('mouseleave',function(){if(glow)glow.style.opacity=0;});apply();}
+  if(!reduce&&(grid||glow)){addEventListener('scroll',function(){sy=scrollY||0;kick();},{passive:true});addEventListener('mousemove',function(e){tmx=e.clientX/innerWidth;tmy=e.clientY/innerHeight;cx=e.clientX;cy=e.clientY;if(gx===null){gx=cx;gy=cy;}if(glow)glow.style.opacity=1;kick();},{passive:true});addEventListener('mouseleave',function(){if(glow)glow.style.opacity=0;});}
   // pause hero animations when off-screen (D-039)
   var an=document.querySelectorAll('.rl-anim');
   if(an.length&&'IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('is-paused',!e.isIntersecting);});},{rootMargin:'80px'});an.forEach(function(el){io.observe(el);});}
