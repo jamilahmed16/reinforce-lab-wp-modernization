@@ -189,6 +189,16 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .rec .who{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
 .rl-home .rec .what{font-size:16px;line-height:1.35;color:var(--ink-dim)}
 .rl-home .rec:hover .what{color:var(--ink)}
+/* testimonials (D-153): client words as published on production, square photos, no star ratings (no rating source) */
+.rl-home .quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}@media(max-width:820px){.rl-home .quotes{grid-template-columns:1fr}}
+.rl-home .quote{margin:0;display:flex;flex-direction:column;gap:24px;padding:clamp(24px,3vw,36px);background:var(--glass);backdrop-filter:blur(14px);border:1px solid var(--glass-line);box-shadow:inset 0 1px 0 var(--glass-hi)}
+.rl-home .quote blockquote{margin:0;padding:0;border:0;position:relative}
+.rl-home .quote blockquote::before{content:"\201C";display:block;font-family:var(--f-display);font-size:56px;line-height:.8;color:var(--red-2);margin-bottom:6px}
+.rl-home .quote blockquote p{margin:0;font-size:16px;line-height:1.65;color:var(--ink);max-width:62ch}
+.rl-home .quote figcaption{margin-top:auto;display:flex;align-items:center;gap:16px;padding-top:20px;border-top:1px solid var(--line)}
+.rl-home .quote img{width:64px;height:64px;object-fit:cover;flex:none;display:block;border:1px solid var(--line-2)}
+.rl-home .quote .nm{font-family:var(--f-display);text-transform:uppercase;font-size:20px;line-height:1.15;color:var(--ink);display:block}
+.rl-home .quote .rl{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);display:block;margin-top:6px}
 /* packages */
 .rl-home .pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}@media(max-width:900px){.rl-home .pkgs{grid-template-columns:1fr}}
 .rl-home .pkg{background:var(--glass);backdrop-filter:blur(16px);border:1px solid var(--glass-line);padding:30px 26px;display:flex;flex-direction:column;gap:16px;box-shadow:inset 0 1px 0 var(--glass-hi),0 24px 60px -40px rgba(0,0,0,.9)}
@@ -250,7 +260,20 @@ function rl_home_badges() {
         ['file' => 'designrush-top-content-marketing.png', 'w' => 432, 'h' => 474, 'who' => 'DesignRush', 'what' => 'Top content marketing agencies', 'alt' => 'DesignRush badge: Top Content Marketing Agencies', 'url' => 'https://www.designrush.com/agency/profile/reinforce-lab-ltd'],
     ];
 }
-function rl_home_badge_src($file) { $up = wp_upload_dir(); return trailingslashit($up['baseurl']) . 'reinforce-badges/' . $file; }
+function rl_home_upload($rel) { $up = wp_upload_dir(); return trailingslashit($up['baseurl']) . $rel; }
+function rl_home_badge_src($file) { return rl_home_upload('reinforce-badges/' . $file); }
+
+/* Testimonials (D-153): text copied word for word from production's home page (read 11 Oct 2026). One sentence left out of the second
+ * quote (it uses a word on the copy-rules list, D-072), marked "...". Photos: production's files, cropped square (copies in claude/data/testimonials/).
+ * No Review or AggregateRating schema: Google does not show reviews a business publishes about itself. */
+function rl_home_testimonials() {
+    return [
+        ['name' => 'Md. Arifin Hussain', 'role' => 'Head of Marketing, Bikroy', 'photo' => 'arifin-hussain-bikroy-240.jpg',
+         'quote' => 'We hereby certify that Reinforce Lab Ltd. is working as our Content Partner since June 2022 till date. During the above tenure, its performance seems great and they have achieved all the assigned work that is provided to them. We wish them success in the coming future.'],
+        ['name' => 'Mohammad Mozammal Haque', 'role' => 'Managing Director, Mrco International', 'photo' => 'mozammal-haque-mrco-240.jpg',
+         'quote' => 'We are extremely pleased with the exceptional WordPress Web Design & Development service provided by Reinforce Lab. Their team\'s professionalism and expertise exceeded our expectations. The tailored solution they offered perfectly captured our brand identity. ... We\'re thrilled with the results and look forward to future collaborations. Happy to stay with Reinforce Lab.'],
+    ];
+}
 
 add_shortcode('reinforce_home', 'rl_render_home');
 function rl_render_home() {
@@ -397,6 +420,21 @@ function rl_render_home() {
         <li><a class="rec" href="<?php echo esc_url($b['url']); ?>" target="_blank" rel="noopener"><span class="tile"><img src="<?php echo esc_url(rl_home_badge_src($b['file'])); ?>" alt="<?php echo esc_attr($b['alt']); ?>" width="<?php echo (int) $b['w']; ?>" height="<?php echo (int) $b['h']; ?>" loading="lazy" decoding="async"></span><span class="cap"><span class="who"><?php echo esc_html($b['who']); ?></span><span class="what"><?php echo esc_html($b['what']); ?></span></span></a></li>
         <?php } ?>
       </ul>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS (D-153): words as the clients wrote them on production's home page; "..." marks a sentence left out -->
+  <section class="band alt" id="testimonials">
+    <div class="wrap">
+      <div class="head"><span class="ey"><b>[</b>&nbsp;Testimonials&nbsp;<b>]</b></span><h2>What clients say.</h2><p class="lede">In their own words. Where we shortened a quote, the cut is marked with "...".</p></div>
+      <div class="quotes">
+        <?php foreach (rl_home_testimonials() as $t) { ?>
+        <figure class="quote">
+          <blockquote><p><?php echo esc_html($t['quote']); ?></p></blockquote>
+          <figcaption><img src="<?php echo esc_url(rl_home_upload('reinforce-testimonials/' . $t['photo'])); ?>" alt="<?php echo esc_attr($t['name']); ?>" width="64" height="64" loading="lazy" decoding="async"><span><span class="nm"><?php echo esc_html($t['name']); ?></span><span class="rl"><?php echo esc_html($t['role']); ?></span></span></figcaption>
+        </figure>
+        <?php } ?>
+      </div>
     </div>
   </section>
 
