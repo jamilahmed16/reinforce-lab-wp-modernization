@@ -149,9 +149,10 @@ body.rl-dark .fl-page,body.rl-dark .fl-page-content,body.rl-dark .fl-content,bod
 /* moving line round the header button (D-170): a short light travels the border once, rests, repeats; pure CSS, paused for reduced motion */
 .rl-header .hcta{position:relative}
 .rl-header .hl{position:absolute;inset:-1px;width:calc(100% + 2px);height:calc(100% + 2px);overflow:visible;pointer-events:none}
-.rl-header .hl rect{width:calc(100% - 1px);height:calc(100% - 1px);fill:none;stroke-dasharray:16 84;stroke-dashoffset:0;opacity:0;animation:rl-hl 6s linear infinite}
-.rl-header .hl .h{stroke:var(--red-2);stroke-width:4;stroke-opacity:.35}
-.rl-header .hl .c{stroke:#f4efe9;stroke-width:1.5}
+.rl-header .hl rect{width:calc(100% - 1px);height:calc(100% - 1px);fill:none;stroke-dasharray:12 88;stroke-dashoffset:0;opacity:0;animation:rl-hl 6s linear infinite}
+.rl-header .hl .h{stroke:#fff;stroke-width:3;stroke-opacity:.14}
+.rl-header .hl .c{stroke:#fff;stroke-width:1;stroke-opacity:.85}
+.rl-header .hl{filter:drop-shadow(0 0 3px rgba(255,255,255,.45))}
 .rl-header .hcta:hover .hl rect{animation-duration:3s}
 @keyframes rl-hl{0%{stroke-dashoffset:0;opacity:0}6%{opacity:1}58%{opacity:1}64%{stroke-dashoffset:-100;opacity:0}100%{stroke-dashoffset:-100;opacity:0}}
 @media(prefers-reduced-motion:reduce){.rl-header .hl{display:none}}
