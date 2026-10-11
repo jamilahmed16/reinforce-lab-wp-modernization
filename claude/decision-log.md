@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-168 | Hero: the scan powers the system diagram (option B): a dot grid behind the diagram and a vertical beam that sweeps left to right in step with its 10 s cycle (inputs, engine, outcomes), reading the diagram's own CSS clock; desktop only, 3 KB; speed unchanged (desktop 97, mobile 95, CLS 0) | 11 Oct | DONE (Jamil: "B. The scan powers the hero diagram (recommended)") | `core/reinforce-gescan.js` |
 | D-167 | Closing CTA gets a "diagnostic scan" (WebGL radar sweep over a square-dot grid, desktop only, 2.8 KB); LiteSpeed Cache activated on .online (page cache only, all optimisation off, object cache off, form pages uncached, deploy purges the cache); supersedes the D-139 "no caching" choice. Home with cache: desktop median 97.5, mobile 95, server wait 0.9 s to about 0.55 s, CLS 0 | 11 Oct | DONE (Jamil: "give a different animation like the wave one ... Yes, After that test speed again and then enable LiteSpeed caching") | `core/reinforce-scan.js`, `core/reinforce-speed.php`, `claude/tools/rl.py` |
 | D-166 | Mobile load time: home drops the unused render-blocking files (jQuery and Migrate, Font Awesome, animate.css, lightbox, theme scripts; Bootstrap and skin kept, removal tested and changes the layout); Oswald fallback tuned per weight; 3D field boots on first interaction. Mobile 90 to 94 to 98 (median 96), LCP 2.9 s to about 2.2 s, CLS 0; desktop median 95.5 (proxy-bound server response) | 11 Oct | DONE (Jamil: "Fix the mobile load time first"); page caching question for Jamil | `core/reinforce-speed.php` |
 | D-165 | Home: 3D "signal field" behind "One system. Three outcomes" (hand-written WebGL, 2.7 KB, desktop only, lazy, pauses off-screen; CSS dotted field on phones), card animations (badges and testimonials rise with a 3D turn, pointer tilt with sheen, trophy draws, outcomes rise), motion setup moved to idle tasks, font swap fixed (size-matched fallbacks, Plex Mono optional); pass mark met: desktop median 96, mobile median 90, CLS 0 to 0.003 | 11 Oct | DONE (Jamil: "option 2"; pass mark desktop 96+, mobile 90+, no layout shift) | `core/reinforce-signal.js`, `core/reinforce-motion.js`, `core/reinforce-fonts.css` |
@@ -235,6 +236,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-168 · Hero diagram scan
+**Date:** 11 October 2026 · **Status:** DONE (Jamil asked whether the closing call-to-action scan in the hero would be harmful; answer: not for SEO or speed if built the same way, but the exact copy would repeat the ending and compete with the hero diagram; options A exact copy, B scan powers the diagram, C leave the hero. Jamil: "B. The scan powers the hero diagram (recommended)")
+
+- **What:** `core/reinforce-gescan.js` (new, 3 KB compressed). Behind the hero's Inputs / Engine / Outcomes diagram, a grid of small square points in the brand reds with a vertical beam that sweeps left to right in step with the diagram's 10 s CSS cycle (`rl_home_ge_kf()`): across the inputs while they light (0 to 18%), slowly through the engine while its five stages run (18 to 57%), across the outcomes (58 to 83%), weaker during the feedback pulse, gone at the reset (92 to 100%). Points light behind the beam and fade; a few flash as findings. The beam reads the diagram's own animation clock (`.ge-cg` `getAnimations()`), so it never drifts and stops when the diagram is paused off screen (D-039).
+- **Placement:** canvas inside `figure.ge` under the SVG and caption (z-index 0 and 1), above the panel background; the diagram boxes are opaque, so the points show only in the gaps.
+- **Rules as for the other scenes (D-165, D-167):** desktop only, boots on the first interaction, draws only while on screen and the tab is visible, pixel ratio capped at 1.5, off with reduced motion, Save-Data, low memory or no WebGL. The hero heading (the page's LCP element) is not touched; a canvas is never an LCP candidate.
+- **Checked:** in-step captures at 25%, 34% and 65% of the cycle (beam at the engine edge with inputs lit, inside the engine on "Verify", crossing to the outcomes with the out-pulses); no console errors; axe 0 at 390 and 1440. Lighthouse (cached home, 4 runs): desktop 97, 98, 97, 97; mobile 95, 94, 95, 95; CLS 0.
 
 ---
 
