@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-161 | Home Recognition leads with the HackerNoon award: featured card "Winner, Startups of The Year 2024 in Dhaka" plus 11th in Marketing, two honourable mentions and Startups of the Week, each linked to HackerNoon; text from the /awards/ source; sub-heading now "Awards and recognition." | 11 Oct | DONE (Jamil: "what about my hackernoon startup award") | `pages/reinforce-home.php` |
 | D-160 | Home layout variety, the rest: Outcomes as three statements, Problem with the heading held left and a list right, Industries as a two-column list with drawn icons, Recognition merged into Clients, Blog split (heading left, posts right); words unchanged; Proof untouched | 11 Oct | DONE (Jamil: "1. yes") | `pages/reinforce-home.php` |
 | D-159 | Section intros back under the heading on the left (the split headings of D-158 step 1 removed); index and timeline kept | 11 Oct | DONE (Jamil: "the right text can be on the left after the heading") | `pages/reinforce-home.php` |
 | D-158 | Home layout variety, first 3: section headings with an intro use the full width (heading left, intro right), What we do as a numbered index, How it works as a timeline; words unchanged | 11 Oct | DONE (Jamil: "Go ahead with the first 3"); next sections and the Proof question wait for him | `pages/reinforce-home.php` |
@@ -228,6 +229,17 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-161 · HackerNoon award on the home page
+**Date:** 11 October 2026 · **Status:** DONE (Jamil: "great. what about my hackernoon startup award")
+
+- **Gap:** the HackerNoon results (all VERIFIED in F-023, `claude/research/reputation-and-recognition-2026-10-04.md`) were on `/awards/` only; the home page showed just the six directory badges.
+- **Now:** the Recognition part of the Clients section opens with a featured card: drawn trophy, "HackerNoon · Startups of The Year", "Winner, Startups of The Year 2024 in Dhaka", the one-line explanation (public vote, more than 4,200 cities) and "See it on HackerNoon" (Asia winners page). Beside it, the three other HackerNoon results, each linking to its HackerNoon page: 11th in Marketing worldwide (2024), two honourable mentions (2024), Startups of the Week (Nov 2025). The six badges follow underneath.
+- **Single source:** title, text, links and the three results come from `rl_awards_data()` in `pages/reinforce-awards.php`, so home and `/awards/` cannot disagree.
+- **Copy:** sub-heading "Recognized by independent directories." became "Awards and recognition." (HackerNoon is a public vote, not a directory); intro: "A startup award decided by public vote, and rankings by GoodFirms, FindBestFirms and DesignRush. Each one links to the page on its own site."
+- **Checked:** phone width 390, axe 0 at 390 and 1440, copy check 0.
 
 ---
 
