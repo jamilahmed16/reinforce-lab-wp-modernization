@@ -179,13 +179,20 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .proof{border:1px dashed var(--line-2);background:var(--panel);padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}@media(max-width:760px){.rl-home .proof{grid-template-columns:repeat(2,1fr)}}@media(max-width:420px){.rl-home .proof{grid-template-columns:1fr}}
 .rl-home .stat .fig{font-family:var(--f-display);font-size:30px;font-weight:700;color:var(--ink)}.rl-home .stat .lab{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
 .rl-home .ph{font-family:var(--f-mono);font-size:12px;color:var(--red-3);border:1px solid var(--red);padding:2px 7px;display:inline-block;letter-spacing:.08em;text-transform:uppercase}
-/* clients (D-156): the 24 logos from production's home, white versions from /clients/ (option rl_client_logos_white); 1px gap draws the grid lines */
-.rl-home .cl-wall{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;margin:0;padding:0;list-style:none;background:var(--line);border:1px solid var(--line)}
-.rl-home .cl-wall li{display:grid;place-items:center;height:112px;padding:18px 22px;margin:0;background:var(--bg)}
-.rl-home .cl-wall img{max-width:100%;max-height:60px;width:auto;height:auto;object-fit:contain;opacity:.86;transition:opacity .2s}
-.rl-home .cl-wall li:hover img{opacity:1}
-@media(max-width:1100px){.rl-home .cl-wall{grid-template-columns:repeat(4,minmax(0,1fr))}}
-@media(max-width:760px){.rl-home .cl-wall{grid-template-columns:repeat(3,minmax(0,1fr))}.rl-home .cl-wall li{height:84px;padding:12px}.rl-home .cl-wall img{max-height:44px}}
+/* clients (D-156, motion D-157): the 24 logos from production's home in two rows that scroll right to left; each row holds its logos twice
+   (second copy aria-hidden) and moves by half its width, so the loop has no seam. Hover pauses; reduced motion shows a still, wrapped row. */
+.rl-home .cl-rows{display:grid;gap:14px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.rl-home .cl-row{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rl-home .cl-track{display:flex;width:max-content;animation:rl-cl-scroll 60s linear infinite}
+.rl-home .cl-row.r2 .cl-track{animation-duration:72s}
+.rl-home .cl-row:hover .cl-track{animation-play-state:paused}
+.rl-home .cl-set{display:flex;margin:0;padding:0;list-style:none}
+.rl-home .cl-set li{flex:none;width:220px;height:112px;display:grid;place-items:center;padding:18px 26px;margin:0;border-right:1px solid var(--line)}
+.rl-home .cl-set img{max-width:100%;max-height:60px;width:auto;height:auto;object-fit:contain;opacity:.86;transition:opacity .2s}
+.rl-home .cl-set li:hover img{opacity:1}
+@keyframes rl-cl-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:760px){.rl-home .cl-set li{width:150px;height:84px;padding:12px 16px}.rl-home .cl-set img{max-height:42px}.rl-home .cl-track{animation-duration:45s}.rl-home .cl-row.r2 .cl-track{animation-duration:54s}}
+@media(prefers-reduced-motion:reduce){.rl-home .cl-rows{-webkit-mask-image:none;mask-image:none}.rl-home .cl-track{animation:none;width:auto}.rl-home .cl-set{flex-wrap:wrap}.rl-home .cl-set[aria-hidden]{display:none}}
 .rl-home .cl-more{margin-top:22px}
 /* recognition (D-152): badges on light tiles, because two badges have dark text; class "rec", not "badge" (Bootstrap 4 styles .badge) */
 .rl-home .recs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;list-style:none;margin:0;padding:0}@media(max-width:1100px){.rl-home .recs{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.rl-home .recs{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
@@ -449,11 +456,18 @@ function rl_render_home() {
   <section id="clients">
     <div class="wrap">
       <div class="head"><span class="ey"><b>[</b>&nbsp;Clients&nbsp;<b>]</b></span><h2>Companies we've worked with.</h2><p class="lede">Universities, pharmaceutical companies, online marketplaces, property firms and growing brands.</p></div>
-      <ul class="cl-wall">
-        <?php foreach (rl_home_client_slugs() as $slug) { if (empty($white[$slug])) continue; $nm = isset($names[$slug]) ? $names[$slug] : $slug; ?>
-        <li title="<?php echo esc_attr($nm); ?>"><?php echo wp_get_attachment_image($white[$slug], 'full', false, ['alt' => $nm . ' logo', 'loading' => 'lazy', 'decoding' => 'async']); ?></li>
+      <?php $rows = array_chunk(array_values(array_filter(rl_home_client_slugs(), function ($sl) use ($white) { return !empty($white[$sl]); })), 12); ?>
+      <div class="cl-rows">
+        <?php foreach ($rows as $ri => $row) { $set = function ($hidden) use ($row, $white, $names) { ?>
+          <ul class="cl-set"<?php echo $hidden ? ' aria-hidden="true"' : ''; ?>>
+            <?php foreach ($row as $slug) { $nm = isset($names[$slug]) ? $names[$slug] : $slug; ?>
+            <li title="<?php echo esc_attr($nm); ?>"><?php echo wp_get_attachment_image($white[$slug], 'full', false, ['alt' => $hidden ? '' : $nm . ' logo', 'loading' => 'lazy', 'decoding' => 'async']); ?></li>
+            <?php } ?>
+          </ul>
+        <?php }; ?>
+        <div class="cl-row r<?php echo $ri + 1; ?>"><div class="cl-track"><?php $set(false); $set(true); ?></div></div>
         <?php } ?>
-      </ul>
+      </div>
       <p class="cl-more"><a class="more" href="<?php echo esc_url($u('clients')); ?>">See all <?php echo $names ? count($names) : 46; ?> clients &rarr;</a></p>
     </div>
   </section>
