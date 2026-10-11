@@ -179,16 +179,16 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .proof{border:1px dashed var(--line-2);background:var(--panel);padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}@media(max-width:760px){.rl-home .proof{grid-template-columns:repeat(2,1fr)}}@media(max-width:420px){.rl-home .proof{grid-template-columns:1fr}}
 .rl-home .stat .fig{font-family:var(--f-display);font-size:30px;font-weight:700;color:var(--ink)}.rl-home .stat .lab{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
 .rl-home .ph{font-family:var(--f-mono);font-size:12px;color:var(--red-3);border:1px solid var(--red);padding:2px 7px;display:inline-block;letter-spacing:.08em;text-transform:uppercase}
-/* recognition (D-152): badges on light tiles, because two badges have dark text */
-.rl-home .badges{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;list-style:none;margin:0;padding:0}@media(max-width:1100px){.rl-home .badges{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.rl-home .badges{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
-.rl-home .badge{display:flex;flex-direction:column;height:100%;border:1px solid var(--glass-line);background:var(--panel);transition:border-color .2s}
-.rl-home .badge:hover{border-color:var(--red-line)}
-.rl-home .badge .tile{background:#f4f4f4;display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;padding:18px}
-.rl-home .badge img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
-.rl-home .badge .cap{padding:14px 14px 16px;display:flex;flex-direction:column;gap:4px}
-.rl-home .badge .who{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
-.rl-home .badge .what{font-size:16px;line-height:1.35;color:var(--ink-dim)}
-.rl-home .badge:hover .what{color:var(--ink)}
+/* recognition (D-152): badges on light tiles, because two badges have dark text; class "rec", not "badge" (Bootstrap 4 styles .badge) */
+.rl-home .recs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;list-style:none;margin:0;padding:0}@media(max-width:1100px){.rl-home .recs{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.rl-home .recs{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.rl-home .rec{display:flex;flex-direction:column;height:100%;border:1px solid var(--glass-line);background:var(--panel);transition:border-color .2s}
+.rl-home .rec:hover{border-color:var(--red-line)}
+.rl-home .rec .tile{background:#f4f4f4;display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;padding:18px}
+.rl-home .rec img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.rl-home .rec .cap{padding:14px 14px 16px;display:flex;flex-direction:column;gap:4px}
+.rl-home .rec .who{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
+.rl-home .rec .what{font-size:16px;line-height:1.35;color:var(--ink-dim)}
+.rl-home .rec:hover .what{color:var(--ink)}
 /* packages */
 .rl-home .pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}@media(max-width:900px){.rl-home .pkgs{grid-template-columns:1fr}}
 .rl-home .pkg{background:var(--glass);backdrop-filter:blur(16px);border:1px solid var(--glass-line);padding:30px 26px;display:flex;flex-direction:column;gap:16px;box-shadow:inset 0 1px 0 var(--glass-hi),0 24px 60px -40px rgba(0,0,0,.9)}
@@ -392,9 +392,9 @@ function rl_render_home() {
   <section id="recognition">
     <div class="wrap">
       <div class="head"><span class="ey"><b>[</b>&nbsp;Recognition&nbsp;<b>]</b></span><h2>Recognized by independent directories.</h2><p class="lede">GoodFirms, FindBestFirms and DesignRush list and rank agencies on their own research. Select a badge to see it on their site. <a class="inl" href="<?php echo esc_url($u('awards')); ?>">See all awards</a>.</p></div>
-      <ul class="badges">
+      <ul class="recs">
         <?php foreach (rl_home_badges() as $b) { ?>
-        <li><a class="badge" href="<?php echo esc_url($b['url']); ?>" target="_blank" rel="noopener"><span class="tile"><img src="<?php echo esc_url(rl_home_badge_src($b['file'])); ?>" alt="<?php echo esc_attr($b['alt']); ?>" width="<?php echo (int) $b['w']; ?>" height="<?php echo (int) $b['h']; ?>" loading="lazy" decoding="async"></span><span class="cap"><span class="who"><?php echo esc_html($b['who']); ?></span><span class="what"><?php echo esc_html($b['what']); ?></span></span></a></li>
+        <li><a class="rec" href="<?php echo esc_url($b['url']); ?>" target="_blank" rel="noopener"><span class="tile"><img src="<?php echo esc_url(rl_home_badge_src($b['file'])); ?>" alt="<?php echo esc_attr($b['alt']); ?>" width="<?php echo (int) $b['w']; ?>" height="<?php echo (int) $b['h']; ?>" loading="lazy" decoding="async"></span><span class="cap"><span class="who"><?php echo esc_html($b['who']); ?></span><span class="what"><?php echo esc_html($b['what']); ?></span></span></a></li>
         <?php } ?>
       </ul>
     </div>
