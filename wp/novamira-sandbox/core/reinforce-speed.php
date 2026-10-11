@@ -24,5 +24,5 @@ add_action('wp_enqueue_scripts', function () {
 
 /* Font Awesome and animate.css are enqueued by the builder plugins after the hook above; drop their tags at print time */
 add_filter('style_loader_tag', function ($tag, $handle) {
-    return (rl_lean_page() && in_array($handle, ['font-awesome-5', 'font-awesome', 'pp-animate', 'jquery-magnificpopup'], true) && !(class_exists('FLBuilderModel') && FLBuilderModel::is_builder_active())) ? '' : $tag;
+    return (rl_lean_page() && in_array($handle, array_merge(['font-awesome-5', 'font-awesome', 'pp-animate', 'jquery-magnificpopup'], (array) apply_filters('rl_lean_styles_extra', ['bootstrap-4', 'fl-automator-skin'])), true) && !(class_exists('FLBuilderModel') && FLBuilderModel::is_builder_active())) ? '' : $tag;
 }, 10, 2);
