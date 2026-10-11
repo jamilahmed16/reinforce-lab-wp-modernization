@@ -176,11 +176,11 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .flagship .tag{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--red-3);text-transform:uppercase}
 .rl-home .flagship h2{font-size:clamp(26px,3.6vw,40px);margin:12px 0 14px}
 /* D-165 signal field behind "One system. Three outcomes": the CSS dotted floor is the still version (phones, reduced motion, no WebGL); the WebGL canvas fades in over it on desktop */
-.rl-home .sig-sec{overflow:hidden;padding-bottom:clamp(56px,13vw,190px)}
+.rl-home .sig-sec{overflow:hidden;padding-bottom:clamp(56px,15vw,220px)}
 .rl-home .sig-sec>.wrap{position:relative;z-index:2}
 .rl-home .sig-bg,.rl-home .sig-cv{position:absolute;left:0;right:0;bottom:0;height:78%;pointer-events:none;z-index:1}
 .rl-home .sig-bg{background-image:radial-gradient(rgba(232,80,80,.32) 1px,transparent 1.4px);background-size:22px 22px;transform:perspective(520px) rotateX(58deg);transform-origin:50% 100%;-webkit-mask-image:linear-gradient(to top,#000 10%,transparent 85%);mask-image:linear-gradient(to top,#000 10%,transparent 85%);opacity:.55;transition:opacity 1.2s}
-.rl-home .sig-cv{width:100%;opacity:0;transition:opacity 1.4s;-webkit-mask-image:linear-gradient(to top,#000 55%,transparent 100%);mask-image:linear-gradient(to top,#000 55%,transparent 100%)}
+.rl-home .sig-cv{width:100%;opacity:0;transition:opacity 1.4s;-webkit-mask-image:linear-gradient(to top,#000 45%,transparent 80%);mask-image:linear-gradient(to top,#000 45%,transparent 80%)}
 .rl-home .sig-cv.on{opacity:1}.rl-home .sig-sec:has(.sig-cv.on) .sig-bg{opacity:0}
 /* Search Authority OS stage list (D-163): plain list without JavaScript; the motion script lights the stages in turn */
 .rl-home .os-steps{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:6px}
