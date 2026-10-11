@@ -20,6 +20,11 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| F-030 | `.online` inner pages all return the server's own 404 (Hostinger static page) since some time between 8 and 11 Oct; home and `/?page_id=` work, so the WordPress rewrite rules in `.htaccess` are missing or broken; Novamira cannot connect; site still noindex | 11 Oct | OPEN (Jamil: re-save permalinks) | this file |
+| D-151 | Citation-tool post: allowed, on Jamil's standard (deep research, official documentation, industry reputation, try features where possible, never claim use that did not happen, built to convert); "Explore Search Authority OS" kept | 11 Oct | APPROVED (Jamil) | this file |
+| D-150 | AI crawlers allowed at launch (ChatGPT, Perplexity, Claude, Google AI and others); planned robots.txt written, not live | 11 Oct | APPROVED (Jamil: "allow them all. Yes.") | `claude/data/robots-launch.txt` |
+| D-149 | Redirect sign-off method: Jamil checks one list of the 241 addresses that matter (live, clicks, backlinks, or shop), most important first; the ~575 junk and dead addresses are approved as one group by rule | 11 Oct | APPROVED (Jamil: "yes, do it this way"); list waiting for his check | `claude/redirect-signoff-list.md` |
+| D-148 | Shop closed: `/shop/`, cart, checkout and store archives redirect to `/packages/` (account page to `/contact-us/`), empty store categories and tag 410, product pages keep their approved targets; Jamil keeps an export of past orders; customer data is not moved | 11 Oct | APPROVED (Jamil: "B. Close the shop") | `claude/data/approved-redirects-2026-10.csv` |
 | D-147 | Site icon: the logo mark (white and logo red on #121011) as the WordPress Site Icon (32, 180, 192, 270 px), `favicon.ico` (16, 32, 48 px) in the site root, theme colour #121011; closes O-026 and F-028 C1 | 8 Oct | DONE (Jamil: "go ahead") | `claude/design-previews/site-icon/` |
 | D-146 | The 14 redirect-map decisions approved as recommended: 6 old pages 301 to built pages, 6 dead pages 410, `/project/uiu/` 301 to `/clients/`, Beyond Borders image kept; the map has 0 undecided URLs | 8 Oct | APPROVED (Jamil: "go ahead") | `claude/data/approved-redirects-2026-10.csv` |
 | F-029 | Read-only production inventory (8 Oct): 193 sitemap URLs, 509 URLs reached (223 live, 18 redirect, 19 broken links production itself points to), 18,791 internal links, 2,060 image uses; merged with register, Search Console, backlinks, Yoast redirects and later approvals into a draft map of 802 old URLs; every URL that is live, has clicks or backlinks has an approved fate; 14 decisions left | 8 Oct | DECISIONS DONE (D-146); backlink export and URL-by-URL sign-off open | `claude/data/redirect-map-decisions-needed.md` |
@@ -213,6 +218,50 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## F-030 · `.online` inner pages return the server's 404
+**Date:** 11 October 2026 · **Status:** OPEN, needs Jamil in WordPress admin
+
+- **Seen (VERIFIED, 11 Oct):** `/` returns 200; `/services/`, `/blog/`, `/industries/healthcare/`, `/packages/`, `/robots.txt`, `/wp-json/` all return Hostinger's static 404 page ("This Page Does Not Exist", 4,511 bytes, last modified 22 Apr 2025), served by LiteSpeed before WordPress runs. `/?page_id=72` reaches WordPress and 301s to `/services/ai-search-optimization/`. `/wp-admin/` and `/wp-login.php` work. Novamira fails ("OAuth metadata is malformed or unavailable"), because its discovery address is one of the broken ones.
+- **Cause (INFERENCE):** the WordPress rewrite block in `public_html/.htaccess` is missing or broken. On 8 Oct after D-147 every page tested returned 200, so it changed between 8 and 11 Oct; who or what changed it is not known.
+- **Safe:** home still prints `noindex, nofollow`; Rule 3 holds.
+- **Fix (Jamil):** WordPress admin, Settings, Permalinks, Save Changes (no other change). If that does not fix it, Hostinger File Manager: check `public_html/.htaccess` holds the standard WordPress block.
+- **Waiting on it:** checking the D-148 targets on `.online`, the `/reviews/` build, carrying posts across, parity checks.
+
+---
+
+## D-151 · Citation-tool post standard; button label kept
+**Date:** 11 October 2026 · **Status:** APPROVED (Jamil: "definitely we will research them and try some of the functions if possible. also, before writing, we will research extremely well so that every information we give is accurate and up to date, research industry reputation, we will also read their official documentation ... it must drive value to visitor to convert them into customers")
+
+- The post may describe tools from their official documentation and reputation research. Features we tried are stated as tried; everything else is credited to the tool's own documentation. We never say we used a tool we did not use. Blog rules D-134 apply.
+- "Explore Search Authority OS" stays (Jamil asked which is better): it names the product, so a first-time visitor and Google both know where the link goes.
+
+---
+
+## D-150 · AI crawlers allowed
+**Date:** 11 October 2026 · **Status:** APPROVED (Jamil: "Recommendation: allow them all. Yes.")
+
+- At launch, robots.txt allows GPTBot, OAI-SearchBot, ChatGPT-User, PerplexityBot, Perplexity-User, ClaudeBot, Claude-SearchBot, Claude-User, Google-Extended and Applebot-Extended. Plan: `claude/data/robots-launch.txt`. Not live; `.online` stays noindex.
+
+---
+
+## D-149 · How the redirect map is signed off
+**Date:** 11 October 2026 · **Status:** APPROVED (Jamil: "yes, do it this way")
+
+- `claude/redirect-signoff-list.md` (and `.csv`): the 241 old addresses that are live on production, have Google clicks, have links from other sites, or belong to the closed shop, most important first, with the plan in plain words: 106 stay, 104 move, 18 stay hidden from Google, 13 removed.
+- The remaining old addresses (junk `/paged-N/` copies, query variants, feeds, dead links) follow the fixed rules and are approved as one group with the list.
+- Jamil replies "approved" or gives line numbers to change. This is the per-URL approval Rule 2 asks for.
+
+---
+
+## D-148 · Shop closed
+**Date:** 11 October 2026 · **Status:** APPROVED (Jamil: "B. Close the shop. Each product address goes to the closest service page, and you keep an export of past orders for your records.")
+
+- **Redirects (in the sign-off list):** `/shop/`, `/shop/page/2/`, `/cart/`, `/checkout/` to `/packages/`; `/my-account/` to `/contact-us/`; the two web-design store categories to `/services/wordpress-website-design-service/`; the empty Uncategorized store category, its page 2, the store tag and `/product-sitemap.xml` 410. The 19 product pages keep their September targets (SEO tiers to `/packages/`, web-design tiers to `/services/wordpress-website-design-service/`, e-commerce consultation to `/services/ecommerce-website-design-service/`).
+- **Customer and order data:** not moved to the new site. Jamil exports past orders from production's WooCommerce admin for his records before the switch (read-only export; I do not touch production).
+- Targets not yet re-checked on `.online` because of F-030.
 
 ---
 

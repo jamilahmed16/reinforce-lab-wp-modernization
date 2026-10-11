@@ -14,10 +14,10 @@ Nothing on reinforcelab.com changes until the switch itself (Rules 1 and 2). Eve
 
 - [ ] **Backlink export, page by page** (Semrush: Backlinks, export by target URL). Every URL with a backlink must resolve to a live page. **(Jamil)**
 - [x] **The 20 "HUB-REVIEW" posts** are affiliate reviews, already decided in D-014b (10 Sep): keep all at their URLs under a `/reviews/` hub. Figures and flags: `claude/research/review-posts-proposal-2026-10-07.md`. The 3 weakest (WP Engine partner landing page, Beaver Builder review, Bluehost) stay for now and are redirected later (Jamil).
-- [ ] **The store.** `/shop/` is planned PRESERVE and 8 product pages CONSOLIDATE, and production holds real customer and order data. Decide: does the store continue on the new site? If yes, customer and order data must be moved safely (never a database clone), and the payment provider must be named in the Privacy Policy. **(Jamil)**
+- [x] **The store** is closed (D-148): shop, cart and product addresses redirect; customer data is not moved. **(Jamil)** export past orders from production's WooCommerce admin before the switch.
 - [x] **Bylines** (D-145): Jamil will rewrite every old post with new content and images, and each rewritten post carries his name. Titles may change in a rewrite; the URL (slug) stays unless a change is approved for that URL, with a 301.
 - [x] The 14 open redirect decisions (D-146); the draft map has 0 undecided URLs.
-- [ ] **URL-by-URL sign-off of the final redirect map** (all 631 unique pages, plus anything the backlink export adds). The September dispositions are a plan; Rule 2 needs approval per URL, given on the final map file. **(Jamil)**
+- [ ] **Sign-off of the redirect map** with the 241-line list `claude/redirect-signoff-list.md` (D-149); the rest approved as one group by rule. Was: URL-by-URL sign-off of the final redirect map** (all 631 unique pages, plus anything the backlink export adds). The September dispositions are a plan; Rule 2 needs approval per URL, given on the final map file. **(Jamil)**
 - [x] Search Console pages, queries and indexing export (10 Sep). GA4 screenshots. WPCode inventory (F-014).
 - [x] Author archives: all 16 production author URLs 301 to `/blog/` (D-139, D-144; supersedes the September plan of `/our-team` and 410).
 
@@ -65,7 +65,7 @@ Note on "100% accuracy": the redirect test guarantees 100% for every URL that ap
 - [ ] GA4 measurement ID, retention 14 months (consent bar ready). **(Jamil)**
 - [ ] VAT/BIN number on Terms and Privacy. **(Jamil)**
 - [ ] Affiliate link formats (Semrush, WP Engine) checked. **(Jamil)**
-- [ ] AI-crawler policy in robots.txt agreed.
+- [x] AI-crawler policy agreed: all AI crawlers allowed (D-150); robots.txt for launch in `claude/data/robots-launch.txt`.
 
 ### A6. The switch itself (runbook, gate)
 

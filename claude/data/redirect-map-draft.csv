@@ -162,9 +162,9 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /business/small-business/paged-3/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
 /business/small-business/paged-3/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
 /careers/,KEEP,,register (D-014/015/023),200,,18,1702,,227,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
-/cart/,KEEP-NOINDEX,,register (D-014/015/023),not fetched (asset or utility),,0,0,,0,crawl register sitemap,APPROVED: KEEP-noindex — WooCommerce transactional page
+/cart/,301,/packages/,approved-redirects-2026-10 (D-148: shop closed (Jamil 11 O),not fetched (asset or utility),,0,0,,0,approved-2026-10 crawl register sitemap,APPROVED: KEEP-noindex — WooCommerce transactional page
 /category-sitemap.xml,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
-/checkout/,KEEP-NOINDEX,,register (D-014/015/023),not fetched (asset or utility),,0,0,,0,crawl register sitemap,APPROVED: KEEP-noindex — WooCommerce transactional page
+/checkout/,301,/packages/,approved-redirects-2026-10 (D-148: shop closed (Jamil 11 O),not fetched (asset or utility),,0,0,,0,approved-2026-10 crawl register sitemap,APPROVED: KEEP-noindex — WooCommerce transactional page
 /church-marketing-strategies-2021/,301,/church-marketing-strategies/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
 /church-marketing-strategies/,KEEP,,register (D-014/015/023),200,,7,35396,,40,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
 /church-marketing/,301,/social-media-content-ideas-for-churches/,register (D-014/015/023),200,,0,0,,7,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /social-media-content-ideas-for-churches/ (legacy category, not recreated — avoids F-001)"
@@ -368,7 +368,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /management-team/,301,/management/,production Yoast redirect (target to re-check),301,/management/,,,,1,crawl linked-from-production yoast-redirect,
 /management/,KEEP,,register (D-014/015/023),200,,10,873,,224,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
 /marketing-for-websites/,KEEP,,register (D-014/015/023),200,,8,33815,,23,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
-/my-account/,KEEP-NOINDEX,,register (D-014/015/023),not fetched (asset or utility),,0,0,,0,crawl register sitemap,APPROVED: KEEP-noindex — WooCommerce transactional page
+/my-account/,301,/contact-us/,approved-redirects-2026-10 (D-148: shop closed (Jamil 11 O),not fetched (asset or utility),,0,0,,0,approved-2026-10 crawl register sitemap,APPROVED: KEEP-noindex — WooCommerce transactional page
 /namecheap-wordpress-hosting/,KEEP,,register (D-014/015/023),200,,10,61839,,31,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
 /nexcess-wordpress-hosting/,KEEP,,register (D-014/015/023),200,,0,2,,31,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
 /off-page-seo-checklist/,KEEP,,register (D-014/015/023),404,,0,0,,6,crawl linked-from-production register,APPROVED: BUILD fresh on-strategy (D-012)
@@ -382,18 +382,19 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /portfolio/,KEEP,,register (D-014/015/023),200,,7,1745,2,448,backlinks crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
 /post-sitemap.xml,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
 /privacy-policy/,KEEP,,register (D-014/015/023),200,,1,201,,224,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
-/product-category/uncategorized/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,25,crawl linked-from-production register,APPROVED: KEEP-noindex (empty taxonomy archive)
+/product-category/uncategorized/,410,,approved-redirects-2026-10 (D-148: shop closed (Jamil 11 O),200,,0,0,,25,approved-2026-10 crawl linked-from-production register,APPROVED: KEEP-noindex (empty taxonomy archive)
 /product-category/uncategorized/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
-/product-category/uncategorized/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/product-category/uncategorized/page/2/,410,,approved-redirects-2026-10 (D-148: shop closed (Jamil 11 O),200,,0,0,,5,approved-2026-10 crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
 /product-category/uncategorized/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
 /product-category/uncategorized/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
 /product-category/uncategorized/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
 /product-category/uncategorized/paged-3/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
 /product-category/uncategorized/paged-3/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
 /product-category/uncategorized/paged-3/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
-/product-category/wordpress-web-design/,301,/product-category/wordpress-web-design-and-development/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
-/product-sitemap.xml,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
-/product-tag/wordpress-web-design/,KEEP-NOINDEX,,register (D-014/015/023),,,0,1,,0,register,APPROVED: KEEP-noindex (empty taxonomy archive)
+/product-category/wordpress-web-design-and-development/,301,/services/wordpress-website-design-service/,approved-redirects-2026-10 (D-148: shop closed (Jamil 11 O) | LOOP | chain flattened (1),,,,,,0,approved-2026-10,
+/product-category/wordpress-web-design/,301,/services/wordpress-website-design-service/,approved-redirects-2026-10 (D-148: shop closed (Jamil 11 O) | LOOP | chain flattened (1),,,,,,0,approved-2026-10 yoast-redirect,
+/product-sitemap.xml,410,,approved-redirects-2026-10 (D-148: shop closed (Jamil 11 O),,,0,0,,0,approved-2026-10 register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
+/product-tag/wordpress-web-design/,410,,approved-redirects-2026-10 (D-148: shop closed (Jamil 11 O),,,0,1,,0,approved-2026-10 register,APPROVED: KEEP-noindex (empty taxonomy archive)
 /product/e-commerce-consultation/,301,/services/ecommerce-website-design-service/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
 /product/search-engine-optimization-service-enterprise-monthly/,301,/packages/,register (D-014/015/023),200,,0,3,,8,crawl gsc linked-from-production register sitemap,"APPROVED: 301 -> /packages/ (legacy SEO tier superseded by SAOS packages, D-016)"
 /product/search-engine-optimization-service-enterprise-monthly/?add-to-cart=227503,KEEP-NOINDEX,,register (D-014/015/023),not fetched (asset or utility),,0,3,,1,crawl gsc linked-from-production register,"APPROVED: KEEP-noindex (cart-action URL, param)"
@@ -552,9 +553,9 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /services/wordpress-website-design-service/?add-to-cart=220915,301 (as page),/services/wordpress-website-design-service/,inherits /services/wordpress-website-design-service/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
 /services/wordpress-website-design-service/?add-to-cart=227503,301 (as page),/services/wordpress-website-design-service/,inherits /services/wordpress-website-design-service/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
 /services/wordpress-website-design-service/?add-to-cart=229210,301 (as page),/services/wordpress-website-design-service/,inherits /services/wordpress-website-design-service/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
-/shop/,KEEP,,register (D-014/015/023),200,,0,17,,5,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
+/shop/,301,/packages/,approved-redirects-2026-10 (D-148: shop closed (Jamil 11 O),200,,0,17,,5,approved-2026-10 crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
 /shop/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
-/shop/page/2/,KEEP-NOINDEX,,pagination follows /shop/,200,,,,,5,crawl linked-from-production,
+/shop/page/2/,301,/packages/,approved-redirects-2026-10 (D-148: shop closed (Jamil 11 O),200,,,,,5,approved-2026-10 crawl linked-from-production,
 /shop/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
 /shop/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
 /shop/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
