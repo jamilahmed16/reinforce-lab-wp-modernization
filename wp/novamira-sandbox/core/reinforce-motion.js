@@ -223,7 +223,7 @@
     function travel(tl, path, at, dur) {
       var g = packet(), L = path.getTotalLength(), o = { p: 0 };
       tl.set(g, { opacity: 1 }, at).set(path, { opacity: 1 }, at)
-        .fromTo(o, { p: 0 }, { p: 1.1, duration: dur, ease: 'power2.inOut', onUpdate: function () {
+        .fromTo(o, { p: 0 }, { p: 1.1, duration: dur, ease: 'power2.inOut', immediateRender: false, onUpdate: function () {
           var pt = path.getPointAtLength(Math.min(o.p, 1) * L);
           g.setAttribute('transform', 'translate(' + pt.x.toFixed(1) + ' ' + pt.y.toFixed(1) + ')');
           path.style.strokeDashoffset = 10 - o.p * 100;
