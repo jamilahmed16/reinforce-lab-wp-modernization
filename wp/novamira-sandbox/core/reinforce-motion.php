@@ -40,12 +40,28 @@ add_action('wp_head', function () {
 .rl-mo .rl-home .rec,.rl-mo .rl-home .quote,.rl-mo .rl-home .bl-posts .pcard,.rl-mo .rl-home .hn{position:relative;will-change:transform}
 .rl-mo .rl-home .sheen{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .4s;background:radial-gradient(420px circle at var(--sx,50%) var(--sy,50%),rgba(255,255,255,.07),transparent 60%);z-index:3}
 .rl-mo .rl-home .tilting>.sheen{opacity:1}
+.rl-mo .rl-page .final::before{opacity:var(--glow,1)}
+.rl-mo .rl-page .steps>li{position:relative}
+.rl-mo .rl-page .st-fill{position:absolute;left:-1px;right:-1px;top:-1px;height:2px;background:var(--red-2);transform-origin:left center;transform:scaleX(0);box-shadow:0 0 12px var(--red-glow);pointer-events:none}
+.rl-mo .rl-page a.cell{position:relative;will-change:transform}
+.rl-mo .rl-page .sheen{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .4s;background:radial-gradient(420px circle at var(--sx,50%) var(--sy,50%),rgba(255,255,255,.07),transparent 60%);z-index:3}
+.rl-mo .rl-page .tilting>.sheen{opacity:1}
 </style>
 <?php }, 23);
 
 /* Scripts at the end of the page with defer: they never block the first paint or the hero (LCP). */
 add_action('wp_footer', function () {
     if (!rl_motion_active()) return;
-    foreach (['vendor/gsap.min.js', 'vendor/ScrollTrigger.min.js', 'vendor/SplitText.min.js', 'reinforce-motion.js', 'reinforce-signal.js', 'reinforce-scan.js'] as $rel)
+    $files = ['vendor/gsap.min.js', 'vendor/ScrollTrigger.min.js', 'vendor/SplitText.min.js', 'reinforce-motion.js'];
+    if (is_front_page()) $files = array_merge($files, ['reinforce-signal.js', 'reinforce-scan.js']); /* the two WebGL scenes exist only on the home page */
+    foreach ($files as $rel)
         echo '<script src="' . esc_url(rl_motion_src($rel)) . '" defer></script>' . "\n";
 }, 30);
+
+/* Phase 3 (D-171): service and industry pages opt in (the shared .rl-page kit). The AI agents pages under
+   /services/agents/ use a different layout and stay as they are. */
+add_filter('rl_motion_active', function ($on) {
+    if ($on || !is_page()) return $on;
+    $u = get_page_uri();
+    return (bool) preg_match('#^(services|industries)(/|$)#', $u) && strpos($u, 'services/agents') !== 0;
+});

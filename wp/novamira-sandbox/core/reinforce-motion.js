@@ -11,6 +11,9 @@
  * badges and testimonial cards rise with a slight 3D turn; the HackerNoon trophy draws itself and its results
  * follow; testimonial quote marks drop in; cards tilt toward the pointer with a soft sheen (desktop, fine pointer).
  * D-169: the hero diagram plays a directed 12 s "one cycle of growth" loop (heroSystem).
+ * D-171: service and industry pages (shared .rl-page kit) get the same language, lighter: section headings
+ * reveal line by line, cards, steps, metrics, myth rows and lists rise in turn, process steps fill a red line in
+ * sequence, link cards tilt with a sheen, reading-progress bar, closing call-to-action glow.
  * Rules: nothing is hidden before this script runs, the hero is never touched, only transform/opacity animate,
  * and visitors with prefers-reduced-motion get no motion at all (gsap.matchMedia reverts everything).
  */
@@ -94,7 +97,7 @@
   function headings() {
     if (!SplitText) return [];
     /* one task per heading, so the line splitting never adds up to one long task */
-    return [].slice.call(document.querySelectorAll('.rl-home section:not(.hero) h2, .rl-home .rec-sub h3')).map(function (h) {
+    return [].slice.call(document.querySelectorAll('.rl-home section:not(.hero) h2, .rl-home .rec-sub h3, .rl-page section:not(.hero) .head h2, .rl-page .final h2, .rl-page .honest h2')).map(function (h) {
       return function () {
         SplitText.create(h, {
           type: 'lines', mask: 'lines', autoSplit: true,
@@ -131,7 +134,7 @@
 
   /* 7. Closing call-to-action: the red glow builds up as the panel comes into view. */
   function glow() {
-    var fin = document.querySelector('.rl-home .final');
+    var fin = document.querySelector('.rl-home .final, .rl-page .final');
     if (!fin) return;
     gsap.fromTo(fin, { '--glow': 0.2 }, { '--glow': 1, ease: 'none', scrollTrigger: { trigger: fin, start: 'top bottom', end: 'center 55%', scrub: 0.6 } });
   }
@@ -173,7 +176,7 @@
   /* 11. Pointer tilt with a light sheen (desktop with a mouse only). */
   function tilt() {
     if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return [];
-    var els = [].slice.call(document.querySelectorAll('.rl-home .rec, .rl-home .quote, .rl-home .bl-posts .pcard, .rl-home .hn'));
+    var els = [].slice.call(document.querySelectorAll('.rl-home .rec, .rl-home .quote, .rl-home .bl-posts .pcard, .rl-home .hn, .rl-page a.cell'));
     var offs = [];
     els.forEach(function (el) {
       var big = el.classList.contains('hn'), max = big ? 2.5 : 6;
@@ -190,6 +193,29 @@
     return offs;
   }
 
+
+  /* 13. Service and industry pages (D-171): cards, steps, metrics, myth rows and lists rise in turn as they enter. */
+  function kitRise() {
+    var items = document.querySelectorAll('.rl-page .cols > *, .rl-page .steps > li, .rl-page .myths > .myth, .rl-page .inds8 > li, .rl-page .ticks > li, .rl-page .honest');
+    if (!items.length) return;
+    gsap.set(items, { opacity: 0, y: 30 });
+    ScrollTrigger.batch(items, {
+      start: 'top 90%', once: true,
+      onEnter: function (batch) { gsap.to(batch, { opacity: 1, y: 0, duration: 0.9, ease: EASE, stagger: 0.08, overwrite: true }); }
+    });
+  }
+
+  /* 14. Process steps: a red line runs along the top of each step in order, like a stage completing. */
+  function kitSteps() {
+    var lists = document.querySelectorAll('.rl-page .steps');
+    var fills = [];
+    lists.forEach(function (ol) {
+      var f = [].slice.call(ol.querySelectorAll(':scope > li')).map(function (li) { var e = ensure(li, 'st-fill'); fills.push(e); return e; });
+      if (!f.length) return;
+      gsap.to(f, { scaleX: 1, duration: 0.7, ease: 'power2.inOut', stagger: 0.22, delay: 0.3, scrollTrigger: { trigger: ol, start: 'top 80%', once: true } });
+    });
+    return fills;
+  }
 
   /* 12. Hero diagram, "one cycle of growth" (D-169). A 12 s directed loop on the existing SVG: ingest (inputs
      ignite, packets travel into the engine), absorb (engine breathes, a light traces its border), process (the
@@ -324,14 +350,14 @@
     var mm = gsap.matchMedia();
     mm.add({ motion: '(prefers-reduced-motion: no-preference)', wide: '(min-width: 901px)' }, function (ctx) {
       if (!ctx.conditions.motion) return;
-      var wide = ctx.conditions.wide, bar = null, cup = null, offs = [], live = true;
+      var wide = ctx.conditions.wide, bar = null, cup = null, offs = [], stf = [], live = true;
       root.classList.add('rl-mo');
       var heroOff = null;
       var tasks = [
         function () { heroOff = heroSystem(wide); },
         function () { timeline(wide); }, function () { osEngine(wide); }, ladder
       ].concat(headings(), [
-        rows, function () { bar = progress(); }, glow, outcomes, cardsIn,
+        rows, kitRise, function () { stf = kitSteps() || []; }, function () { bar = progress(); }, glow, outcomes, cardsIn,
         function () { cup = award(); }, function () { if (wide) offs = tilt(); },
         function () { ScrollTrigger.refresh(); }
       ]);
@@ -347,6 +373,7 @@
         if (cup) cup.forEach(function (p) { p.style.strokeDasharray = ''; p.style.strokeDashoffset = ''; });
         root.classList.remove('rl-mo');
         if (bar && bar.parentNode) bar.parentNode.removeChild(bar);
+        stf.forEach(function (e) { if (e.parentNode) e.parentNode.removeChild(e); });
         document.querySelectorAll('.rl-home .tline li.on, .rl-home .os-steps li.on').forEach(function (li) { li.classList.remove('on'); });
       };
     });
