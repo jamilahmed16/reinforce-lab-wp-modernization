@@ -20,7 +20,9 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
-| F-030 | `.online` inner pages all return the server's own 404 (Hostinger static page) since some time between 8 and 11 Oct; home and `/?page_id=` work, so the WordPress rewrite rules in `.htaccess` are missing or broken; Novamira cannot connect; site still noindex | 11 Oct | OPEN (Jamil: re-save permalinks) | this file |
+| F-031 | Two GoodFirms badges on production's home page (Top SEO Services Company Bangladesh, Top Branding Company Bangladesh) point to files that return 404 on reinforcelab.com (`/wp-content/uploads/2024/10/...svg`); visitors see broken images; production not changed (Rule 1) | 11 Oct | OPEN (Jamil: originals from GoodFirms) | this file |
+| D-152 | Home: own Recognition section after Proof with the six badges from production's home (GoodFirms x4, FindBestFirms, DesignRush), self-hosted, each linked to the directory's page, plus a link to /awards/ | 11 Oct | DONE (Jamil: "build a section with the images in the home page I want to have a separate section for this") | `pages/reinforce-home.php` |
+| F-030 | `.online` inner pages all return the server's own 404 (Hostinger static page) since some time between 8 and 11 Oct; home and `/?page_id=` work, so the WordPress rewrite rules in `.htaccess` are missing or broken; Novamira cannot connect; site still noindex | 11 Oct | CLOSED (Jamil re-saved permalinks; 55 of 55 pages 200) | this file |
 | D-151 | Citation-tool post: allowed, on Jamil's standard (deep research, official documentation, industry reputation, try features where possible, never claim use that did not happen, built to convert); "Explore Search Authority OS" kept | 11 Oct | APPROVED (Jamil) | this file |
 | D-150 | AI crawlers allowed at launch (ChatGPT, Perplexity, Claude, Google AI and others); planned robots.txt written, not live | 11 Oct | APPROVED (Jamil: "allow them all. Yes.") | `claude/data/robots-launch.txt` |
 | D-149 | Redirect sign-off method: Jamil checks one list of the 241 addresses that matter (live, clicks, backlinks, or shop), most important first; the ~575 junk and dead addresses are approved as one group by rule | 11 Oct | APPROVED (Jamil: "yes, do it this way"); list waiting for his check | `claude/redirect-signoff-list.md` |
@@ -221,8 +223,28 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 ---
 
+## F-031 · Two badge images broken on production
+**Date:** 11 October 2026 · **Status:** OPEN (no change to production)
+
+- Production's home page shows two GoodFirms badges from `https://reinforcelab.com/wp-content/uploads/2024/10/Reinforce-Lab-Limited-Top-SEO-Services_Company-Bangladesh.svg` and `...Top-Branding_Company-Bangladesh.svg`. Both return 404 (read-only GET, 11 Oct, with a normal browser identity too). Visitors to reinforcelab.com see two empty images in its Recognitions section.
+- On `.online` (D-152) these two are cut from Jamil's screenshot. Better: the original badge files from Jamil's GoodFirms account, to replace the cut copies.
+
+---
+
+## D-152 · Home page: Recognition section
+**Date:** 11 October 2026 · **Status:** DONE (Jamil, with a screenshot of production's Recognitions section: "build a section with the images in the home page I want to have a separate section for this")
+
+- **Where:** its own section on the Home page, after Proof and before Packages (`#recognition`).
+- **What:** the six badges from production's home page, in production's order: GoodFirms research partner, GoodFirms Top SEO Services Company Bangladesh, GoodFirms Top Digital Marketing Company, FindBestFirms Top WordPress Development (Aug 2024), GoodFirms Top Branding Company Bangladesh, DesignRush Top Content Marketing Agencies. Each links (new tab) to the directory page production links to; DesignRush links to the agency profile already used on `/awards/`. Heading "Recognized by independent directories." and a link to `/awards/`.
+- **Images:** copied to `wp-content/uploads/reinforce-badges/` (copies in `claude/data/award-badges/`), not loaded from the directories, so no visitor data goes to third parties. Four from the files production uses; two cut from Jamil's screenshot (F-031).
+- **Design:** badges sit on light #f4f4f4 tiles of one fixed height (200px, 160px on phone), because two badges have dark text that would vanish on the dark ground; square corners; captions 12px mono source + 16px text; 6 across at 1440, 3 on tablet, 2 on phone.
+- **Found while building:** Bootstrap 4 (theme) styles `.badge` (nowrap, centred), which pushed the phone page to 539px; classes renamed `.recs`/`.rec`.
+- **Checked:** phone width 390, all six images load, axe 0 at 390 and 1440, copy check 0.
+
+---
+
 ## F-030 · `.online` inner pages return the server's 404
-**Date:** 11 October 2026 · **Status:** OPEN, needs Jamil in WordPress admin
+**Date:** 11 October 2026 · **Status:** CLOSED the same day: Jamil re-saved Settings, Permalinks. Re-checked: all 55 published pages 200, all 9 redirect targets 200, `/robots.txt` 200, Novamira connects, theme files match git (parity 0 differences).
 
 - **Seen (VERIFIED, 11 Oct):** `/` returns 200; `/services/`, `/blog/`, `/industries/healthcare/`, `/packages/`, `/robots.txt`, `/wp-json/` all return Hostinger's static 404 page ("This Page Does Not Exist", 4,511 bytes, last modified 22 Apr 2025), served by LiteSpeed before WordPress runs. `/?page_id=72` reaches WordPress and 301s to `/services/ai-search-optimization/`. `/wp-admin/` and `/wp-login.php` work. Novamira fails ("OAuth metadata is malformed or unavailable"), because its discovery address is one of the broken ones.
 - **Cause (INFERENCE):** the WordPress rewrite block in `public_html/.htaccess` is missing or broken. On 8 Oct after D-147 every page tested returned 200, so it changed between 8 and 11 Oct; who or what changed it is not known.
