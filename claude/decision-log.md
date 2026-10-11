@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-157 | Home Clients logos: two rows of 12 scrolling right to left in an endless loop (row 2 slower), edges faded, pause on hover, still for reduced motion; Pro Tennis Academy logo to be replaced when Jamil sends it | 11 Oct | DONE (Jamil: "I want the logos in two line and moving from right to left smooth motion") | `pages/reinforce-home.php` |
 | D-156 | Home: Clients section ("Companies we've worked with.") between Proof and Recognition, the same 24 logos in production home's order, white versions from /clients/, link to all 46 | 11 Oct | DONE (Jamil: "I want a client section before ... Recognition") | `pages/reinforce-home.php` |
 | D-155 | Testimonial: the "..." marking the left-out sentence removed, and the note about it; the shortened quote stays as written | 11 Oct | DONE (Jamil: "“...” remove it and keep it as you written") | `pages/reinforce-home.php` |
 | D-154 | Home Packages teaser: the empty right side now holds a ladder (free diagnostic, then Foundation, Growth OS, Enterprise with setup and monthly prices from the /packages/ source), each row a link | 11 Oct | DONE (Jamil: "The right side like boring") | `pages/reinforce-home.php` |
@@ -224,6 +225,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-157 · Home Clients logos move
+**Date:** 11 October 2026 · **Status:** DONE (Jamil: "I want the logos in two line and moving from right to left smooth motion"; "I will give you pro tennis logo and you add that later")
+
+- The 24 logos (D-156) are now two rows of 12 (row 1 Accesstel to Panorama, row 2 INPACE to Sofosvel), both moving right to left without a seam: each row holds its logos twice and moves by half its width (CSS animation, no script). Row 1 takes 60s per loop, row 2 72s (45s and 54s on phone), so the rows drift apart slightly. Both ends fade out.
+- Hovering a row pauses it. Visitors with "reduce motion" set get still rows that wrap. The repeated copy is `aria-hidden` with empty alt, so screen readers hear each client once.
+- Checked: motion measured (both rows move left, row 2 slower), page width 390 on phone, axe 0 at 390 and 1440, copy check 0.
+- Open: Jamil will send a new Pro Tennis Academy Dhaka logo; it replaces the white circle here and on `/clients/`.
 
 ---
 
