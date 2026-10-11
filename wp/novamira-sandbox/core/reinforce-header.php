@@ -146,6 +146,15 @@ body.rl-dark .fl-page,body.rl-dark .fl-page-content,body.rl-dark .fl-content,bod
 .rl-header .btn.sm{padding:11px 18px;font-size:13px}
 .rl-header .ar{transition:transform .2s}.rl-header .btn:hover .ar{transform:translateX(3px)}
 .rl-header .hcta{flex-shrink:0}
+/* moving line round the header button (D-170): a short light travels the border once, rests, repeats; pure CSS, paused for reduced motion */
+.rl-header .hcta{position:relative}
+.rl-header .hl{position:absolute;inset:-1px;width:calc(100% + 2px);height:calc(100% + 2px);overflow:visible;pointer-events:none}
+.rl-header .hl rect{width:calc(100% - 1px);height:calc(100% - 1px);fill:none;stroke-dasharray:16 84;stroke-dashoffset:0;opacity:0;animation:rl-hl 6s linear infinite}
+.rl-header .hl .h{stroke:var(--red-2);stroke-width:4;stroke-opacity:.35}
+.rl-header .hl .c{stroke:#f4efe9;stroke-width:1.5}
+.rl-header .hcta:hover .hl rect{animation-duration:3s}
+@keyframes rl-hl{0%{stroke-dashoffset:0;opacity:0}6%{opacity:1}58%{opacity:1}64%{stroke-dashoffset:-100;opacity:0}100%{stroke-dashoffset:-100;opacity:0}}
+@media(prefers-reduced-motion:reduce){.rl-header .hl{display:none}}
 /* mega */
 .rl-header .has-mega{position:static}
 .rl-header .mega{position:absolute;left:0;right:0;top:100%;background:rgba(20,16,17,.94);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-top:1px solid var(--red-line);border-bottom:1px solid var(--line);box-shadow:0 40px 80px -30px rgba(0,0,0,.9),inset 0 1px 0 var(--glass-hi);opacity:0;visibility:hidden;transform:translateY(-8px);transition:.22s;pointer-events:none}
@@ -374,7 +383,7 @@ function rl_render_header() {
         <?php endif; endforeach; ?>
       </ul>
     </nav>
-    <a class="btn p hcta" href="<?php echo esc_url($cta); ?>">Get Your Free Diagnostic <span class="ar">&rarr;</span></a>
+    <a class="btn p hcta" href="<?php echo esc_url($cta); ?>">Get Your Free Diagnostic <span class="ar">&rarr;</span><svg class="hl" aria-hidden="true" focusable="false"><rect class="h" x="0.5" y="0.5" width="100%" height="100%" pathLength="100"/><rect class="c" x="0.5" y="0.5" width="100%" height="100%" pathLength="100"/></svg></a>
     <button class="burger" id="rl-burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
