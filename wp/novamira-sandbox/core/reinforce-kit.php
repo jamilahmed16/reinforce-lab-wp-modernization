@@ -14,6 +14,9 @@ function rl_kit_active() { return (bool) apply_filters('rl_kit_active', false); 
 add_action('wp_head', function () {
     if (!rl_kit_active()) return;
     $f = __DIR__ . '/reinforce-kit.css';
+    /* D-175: on lean pages (home, services, industries) the kit is printed inline at the same spot: one less file
+       blocking the first paint (it cost about 0.6 s on a throttled phone). Other pages keep the cached file. */
+    if (function_exists('rl_lean_page') && rl_lean_page() && is_readable($f)) { echo '<style id="rl-kit-inline">' . str_replace('</', '<\\/', file_get_contents($f)) . "</style>\n"; return; }
     $v = file_exists($f) ? substr(md5_file($f), 0, 8) : '0';
     echo '<link rel="stylesheet" id="rl-kit-css" href="' . esc_url(content_url('novamira-sandbox/core/reinforce-kit.css') . '?ver=' . $v) . '" media="all">' . "\n";
 }, 21);

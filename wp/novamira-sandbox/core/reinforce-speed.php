@@ -43,13 +43,21 @@ add_filter('rl_lean_page', function ($on) {
     return (bool) preg_match('#^(services|industries)(/|$)#', $u) && strpos($u, 'services/agents') !== 0;
 });
 
-/* D-174: on lean pages the full Bootstrap 4 file (162 KB, about 97% unused, blocked the first paint) is replaced, at
-   the same place in the page so the cascade order is unchanged, by an inline copy of only the rules these pages use
-   (core/reinforce-bootstrap-lean.css, about 8 KB, built by claude/tools/bs-trim). Falls back to the normal link if
-   the file is missing. */
+/* D-174 / D-175: on lean pages two render-blocking theme files are replaced, at the same place in the page so the
+   cascade order is unchanged, by inline copies of only the rules these pages use (built by claude/tools/bs-trim):
+   Bootstrap 4 (162 KB, 92 of 2,634 selectors used, copy 8 KB) and the theme skin (68 KB, 228 of 959, copy 21 KB).
+   Each copy records the md5 of the file it was cut from; if the theme changes that file (theme update, Customizer
+   save writes a new skin), the full file is used again until the copy is rebuilt. Never while the builder is open. */
+function rl_trimmed_tag($tag, $copy, $source) {
+    $f = __DIR__ . '/' . $copy;
+    if (!is_readable($f) || !$source || !is_readable($source)) return $tag;
+    $css = file_get_contents($f);
+    if (!preg_match('/Source md5 ([a-f0-9]{32})/', $css, $m) || md5_file($source) !== $m[1]) return $tag;
+    return '<style id="' . esc_attr(basename($copy, '.css')) . '">' . str_replace('</', '<\\/', $css) . "</style>\n";
+}
 add_filter('style_loader_tag', function ($tag, $handle) {
-    if ($handle !== 'bootstrap-4' || !rl_lean_page() || (class_exists('FLBuilderModel') && FLBuilderModel::is_builder_active())) return $tag;
-    $f = __DIR__ . '/reinforce-bootstrap-lean.css';
-    if (!is_readable($f)) return $tag;
-    return '<style id="bootstrap-4-lean">' . str_replace('</', '<\\/', file_get_contents($f)) . "</style>\n";
+    if (!in_array($handle, ['bootstrap-4', 'fl-automator-skin'], true) || !rl_lean_page() || (class_exists('FLBuilderModel') && FLBuilderModel::is_builder_active())) return $tag;
+    $src = wp_styles()->registered[$handle]->src ?? '';
+    $path = $src ? str_replace(content_url(), WP_CONTENT_DIR, strtok($src, '?')) : '';
+    return rl_trimmed_tag($tag, $handle === 'bootstrap-4' ? 'reinforce-bootstrap-lean.css' : 'reinforce-skin-lean.css', $path);
 }, 10, 2);

@@ -1,5 +1,5 @@
 import tinycss2, json, sys
-src = open('bootstrap-4.min.css').read()
+src = open(sys.argv[1] if len(sys.argv) > 1 else 'bootstrap-4.min.css').read()  # usage: bsparse.py [input.css]
 rules = tinycss2.parse_stylesheet(src, skip_comments=True, skip_whitespace=True)
 def split_sel(prelude):
     parts, cur, depth = [], [], 0
