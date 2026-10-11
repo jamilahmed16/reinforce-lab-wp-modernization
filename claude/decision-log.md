@@ -20,6 +20,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-171 | Scroll motion phase 3 on the service and industry pages (shared .rl-page kit; /services/agents/ excluded): headings reveal line by line, cards, steps, metrics, myth rows and lists rise in turn, process steps fill a red top line in order, link cards tilt with a sheen, reading-progress bar, closing CTA glow; WebGL scenes now load on the home page only. Service page desktop 97, 97, 97, mobile 92, 91, 91 (before 97 to 98, 91 to 92); industry page desktop 96, 97, 97, mobile 91, 91, 91 (before 98, 91 to 92); CLS 0 to 0.003; axe 0 | 11 Oct | DONE (Jamil: "then Go ahead with Phase 3") | `core/reinforce-motion.js`, `core/reinforce-motion.php` |
+| D-170 | Header call-to-action button: a short white light travels round its border once every 6 s (CSS and inline SVG, no script; faster on hover; off for reduced motion). Final values set by Jamil: core line 0.6 px white at 85%, halo 3 px white at 14%, glow 3 px blur white at 45% | 11 Oct | DONE (Jamil: "Can you create a moving line in the header call to action button", then the thickness values) | `core/reinforce-header.php` |
 | D-169 | Hero diagram directed as "one cycle of growth": D-168 scan beam removed; a 12 s GSAP loop in five beats (ingest, absorb, process, emit, compound) using the diagram's own parts, a one-off power-on intro, layered depth on mouse move and hover tracing from each input; speed holds (desktop 93, 98, 98, 97; mobile 95, 91, 95, 95; CLS 0; axe 0) | 11 Oct | DONE, waiting on Jamil's view (Jamil: "I don't like it the last one ... First can you think like a director and then design to make it feel stunning") | `pages/reinforce-home.php`, `core/reinforce-motion.js`, `core/reinforce-motion.php` |
 | D-168 | Hero: the scan powers the system diagram (option B): a dot grid behind the diagram and a vertical beam that sweeps left to right in step with its 10 s cycle (inputs, engine, outcomes), reading the diagram's own CSS clock; desktop only, 3 KB; speed unchanged (desktop 97, mobile 95, CLS 0) | 11 Oct | DONE (Jamil: "B. The scan powers the hero diagram (recommended)") | `core/reinforce-gescan.js` |
 | D-167 | Closing CTA gets a "diagnostic scan" (WebGL radar sweep over a square-dot grid, desktop only, 2.8 KB); LiteSpeed Cache activated on .online (page cache only, all optimisation off, object cache off, form pages uncached, deploy purges the cache); supersedes the D-139 "no caching" choice. Home with cache: desktop median 97.5, mobile 95, server wait 0.9 s to about 0.55 s, CLS 0 | 11 Oct | DONE (Jamil: "give a different animation like the wave one ... Yes, After that test speed again and then enable LiteSpeed caching") | `core/reinforce-scan.js`, `core/reinforce-speed.php`, `claude/tools/rl.py` |
@@ -237,6 +239,26 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-171 · Scroll motion, phase 3: service and industry pages
+**Date:** 11 October 2026 · **Status:** DONE (Jamil: "then Go ahead with Phase 3")
+
+- **Scope:** every page under `/services/` and `/industries/` (the shared `.rl-page` kit: 19 service pages, the services hub, 8 industry pages and the industries hub), through the `rl_motion_active` filter in `core/reinforce-motion.php`. The AI agents pages under `/services/agents/` use a different layout and are left out.
+- **Motion (lighter than the home page, no WebGL):** section headings (`.head h2`, the closing h2, the honest-note h2) reveal line by line and the split is undone afterwards; cards, metrics, steps, myth rows, industry tiles, tick lists and the honest note rise in turn as they enter (`ScrollTrigger.batch`); process steps fill a red line along their top one after another; link cards (`a.cell`) tilt toward the pointer with a soft sheen (desktop with a mouse); red reading-progress bar; the closing call to action's glow builds on scroll. The hero is not touched.
+- **Script loading:** the two WebGL scenes (`reinforce-signal.js`, `reinforce-scan.js`) now load on the home page only; service and industry pages get GSAP, ScrollTrigger, SplitText and `reinforce-motion.js` (deferred, at the end of the page).
+- **Checked (VERIFIED):** scroll test at 1440 and 390 on technical SEO, healthcare, the industries hub, the services hub and home: layout shift 0, no console errors, nothing left hidden after scrolling, no split markup left, all step lines filled, no sideways scroll. axe 0 at 390 and 1440 on technical SEO and healthcare. Frames captured (cards rising, step lines filling).
+- **Speed (Lighthouse, cached, 3 runs each):** technical SEO desktop 97, 97, 97 (before 97, 98, 98), mobile 92, 91, 91 (before 92, 91, 92); healthcare desktop 96, 97, 97 (before 98, 98, 98), mobile 91, 91, 91 (before 91, 91, 92). CLS 0 to 0.003. Page weight up about 57 KB (the motion scripts). Pass mark (desktop 96, mobile 90, no shift) met, with little room on mobile.
+- **RECOMMENDATION (not done):** mobile LCP on these pages is about 2.9 s because they still load the theme's unused jQuery, Font Awesome and animate.css; extending the D-166 lean-page filter to them would likely give the same gain as on the home page. Needs its own test per template.
+
+---
+
+## D-170 · Moving light on the header call-to-action button
+**Date:** 11 October 2026 · **Status:** DONE (Jamil, with a screenshot of the header: "Can you create a moving line in the header call to action button")
+
+- **What:** a short light (12% of the border) travels round the "Get your free diagnostic" button in the header once every 6 s, then rests; twice as fast on hover. Inline SVG with two rects on the border (`pathLength` 100, `stroke-dashoffset` keyframes), pure CSS, no script; hidden for reduced motion. Desktop header only (the button is hidden below 1151 px).
+- **Look, as Jamil set it:** first version red with a white head; Jamil: "use white moving light more sleek its too thick and make it lighter and a bit glowing". Final values from Jamil: core line 0.6 px white at 85%, halo 3 px white at 14%, glow (drop shadow) 3 px blur white at 45%.
 
 ---
 
