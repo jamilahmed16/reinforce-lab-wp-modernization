@@ -4,6 +4,7 @@
  "bb-theme-builder/bb-theme-builder.php",
  "bbpowerpack/bb-powerpack.php",
  "jetpack/jetpack.php",
+ "litespeed-cache/litespeed-cache.php",
  "novamira-pro/novamira-pro.php",
  "novamira/novamira.php",
  "wordpress-seo-premium/wp-seo-premium.php",

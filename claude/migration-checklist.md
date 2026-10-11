@@ -73,6 +73,7 @@ Note on "100% accuracy": the redirect test guarantees 100% for every URL that ap
 - [ ] **Novamira plugins and AI Abilities removed** from the copy that becomes production (Rule 1). **(gate)**
 - [ ] Turn indexing on: WordPress "discourage search engines" off, `wp-content/uploads/.htaccess` noindex header **not** copied, canonical tags present (they are off only because `.online` is noindex).
 - [ ] Domain switch to `https://reinforcelab.com` (search-replace of the domain in content and settings), SSL valid, `http` and `www` redirect to the main address in one hop.
+- [ ] LiteSpeed Cache on the live site with the `.online` settings (D-167: page cache only, optimisations off, form pages uncached); purge after the switch.
 - [ ] Security headers on the live server (HSTS, nosniff, referrer policy, frame protection), version numbers hidden.
 - [ ] Re-run the A4 redirect test against the live domain within the first hour: 0 failures, or roll back. **(gate)**
 - [ ] Submit the XML sitemap in Search Console; request indexing for Home and the main service pages.
