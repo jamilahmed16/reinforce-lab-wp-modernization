@@ -199,6 +199,23 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .quote img{width:64px;height:64px;object-fit:cover;flex:none;display:block;border:1px solid var(--line-2)}
 .rl-home .quote .nm{font-family:var(--f-display);text-transform:uppercase;font-size:20px;line-height:1.15;color:var(--ink);display:block}
 .rl-home .quote .rl{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);display:block;margin-top:6px}
+/* packages teaser (D-154): text left, ladder of the three levels right */
+.rl-home .pk-split{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center}@media(max-width:960px){.rl-home .pk-split{grid-template-columns:1fr}}
+.rl-home .pk-split .head{margin-bottom:0}
+.rl-home .ladder{list-style:none;margin:0;padding:0;position:relative;display:grid;gap:12px}
+.rl-home .ladder::before{content:"";position:absolute;left:23px;top:28px;bottom:28px;width:1px;background:linear-gradient(180deg,var(--line-2),var(--red-2))}
+.rl-home .ladder .step{position:relative}
+.rl-home .ladder .step>a{display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:16px;row-gap:4px;padding:18px 22px 18px 0;border:1px solid var(--glass-line);background:var(--panel);transition:border-color .2s,transform .2s}
+.rl-home .ladder .step.diag>a{border-style:dashed;background:transparent}
+.rl-home .ladder .step>a:hover{border-color:var(--red-line);transform:translateX(4px)}
+.rl-home .ladder .step.feat>a{border-color:var(--red-line);background:linear-gradient(90deg,rgba(153,0,0,.16),var(--panel) 70%);box-shadow:0 0 60px -30px var(--red-glow)}
+.rl-home .ladder .dot{grid-row:1/span 3;justify-self:center;align-self:center;width:13px;height:13px;border:1px solid var(--red-2);background:var(--bg);position:relative;z-index:1}
+.rl-home .ladder .feat .dot,.rl-home .ladder .step:last-child .dot{background:var(--red)}
+.rl-home .ladder .tl{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
+.rl-home .ladder .tl em{font-style:normal;color:var(--ink);border:1px solid var(--red-line);padding:1px 6px;margin-left:6px}
+.rl-home .ladder .nm{font-family:var(--f-display);text-transform:uppercase;font-size:20px;line-height:1.15;color:var(--ink)}
+.rl-home .ladder .pr{font-size:16px;color:var(--ink-dim)}.rl-home .ladder .pr b{color:var(--ink);font-weight:600}
+@media(max-width:560px){.rl-home .ladder .step>a{grid-template-columns:36px minmax(0,1fr);column-gap:10px;padding-right:14px}.rl-home .ladder::before{left:17px}}
 /* packages */
 .rl-home .pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}@media(max-width:900px){.rl-home .pkgs{grid-template-columns:1fr}}
 .rl-home .pkg{background:var(--glass);backdrop-filter:blur(16px);border:1px solid var(--glass-line);padding:30px 26px;display:flex;flex-direction:column;gap:16px;box-shadow:inset 0 1px 0 var(--glass-hi),0 24px 60px -40px rgba(0,0,0,.9)}
@@ -264,14 +281,14 @@ function rl_home_upload($rel) { $up = wp_upload_dir(); return trailingslashit($u
 function rl_home_badge_src($file) { return rl_home_upload('reinforce-badges/' . $file); }
 
 /* Testimonials (D-153): text copied word for word from production's home page (read 11 Oct 2026). One sentence left out of the second
- * quote (it uses a word on the copy-rules list, D-072), marked "...". Photos: production's files, cropped square (copies in claude/data/testimonials/).
+ * quote (it uses a word on the copy-rules list, D-072); not marked, at Jamil's request (D-155). Photos: production's files, cropped square (copies in claude/data/testimonials/).
  * No Review or AggregateRating schema: Google does not show reviews a business publishes about itself. */
 function rl_home_testimonials() {
     return [
         ['name' => 'Md. Arifin Hussain', 'role' => 'Head of Marketing, Bikroy', 'photo' => 'arifin-hussain-bikroy-240.jpg',
          'quote' => 'We hereby certify that Reinforce Lab Ltd. is working as our Content Partner since June 2022 till date. During the above tenure, its performance seems great and they have achieved all the assigned work that is provided to them. We wish them success in the coming future.'],
         ['name' => 'Mohammad Mozammal Haque', 'role' => 'Managing Director, Mrco International', 'photo' => 'mozammal-haque-mrco-240.jpg',
-         'quote' => 'We are extremely pleased with the exceptional WordPress Web Design & Development service provided by Reinforce Lab. Their team\'s professionalism and expertise exceeded our expectations. The tailored solution they offered perfectly captured our brand identity. ... We\'re thrilled with the results and look forward to future collaborations. Happy to stay with Reinforce Lab.'],
+         'quote' => 'We are extremely pleased with the exceptional WordPress Web Design & Development service provided by Reinforce Lab. Their team\'s professionalism and expertise exceeded our expectations. The tailored solution they offered perfectly captured our brand identity. We\'re thrilled with the results and look forward to future collaborations. Happy to stay with Reinforce Lab.'],
     ];
 }
 
@@ -423,10 +440,10 @@ function rl_render_home() {
     </div>
   </section>
 
-  <!-- TESTIMONIALS (D-153): words as the clients wrote them on production's home page; "..." marks a sentence left out -->
+  <!-- TESTIMONIALS (D-153): words as the clients wrote them on production's home page; one sentence left out of the second (D-155) -->
   <section class="band alt" id="testimonials">
     <div class="wrap">
-      <div class="head"><span class="ey"><b>[</b>&nbsp;Testimonials&nbsp;<b>]</b></span><h2>What clients say.</h2><p class="lede">In their own words. Where we shortened a quote, the cut is marked with "...".</p></div>
+      <div class="head"><span class="ey"><b>[</b>&nbsp;Testimonials&nbsp;<b>]</b></span><h2>What clients say.</h2><p class="lede">In their own words.</p></div>
       <div class="quotes">
         <?php foreach (rl_home_testimonials() as $t) { ?>
         <figure class="quote">
@@ -440,10 +457,18 @@ function rl_render_home() {
 
   <!-- PACKAGES (teaser: detail lives on /packages/ and /search-authority-os/) -->
   <section>
-    <div class="wrap">
+    <div class="wrap pk-split">
       <div class="head"><span class="ey"><b>[</b>&nbsp;Packages&nbsp;<b>]</b></span><h2>Start with a diagnostic. Scale when it's working.</h2><p class="lede">Three engagement levels: <b style="color:var(--ink)">Foundation</b>, <b style="color:var(--ink)">Growth OS</b> and <b style="color:var(--ink)">Enterprise</b>, from a focused starting system to full enterprise governance. Every engagement begins with a diagnostic, and pricing is set to scope. Engagements start from $5,000 setup.</p>
         <div class="cta-row"><a class="btn p" href="<?php echo esc_url($pkg); ?>">Compare packages <span class="ar">&rarr;</span></a><a class="btn g" href="<?php echo esc_url($diag); ?>">Get your free diagnostic</a></div>
       </div>
+      <?php if (function_exists('rl_pkg_plans')) { /* D-154: the three levels as a ladder, from the single source on /packages/ */ ?>
+      <ol class="ladder">
+        <li class="step diag"><a href="<?php echo esc_url($diag); ?>"><span class="dot" aria-hidden="true"></span><span class="tl">Step 0 · Free</span><span class="nm">Search Authority Diagnostic</span><span class="pr">Your baseline, gaps and first fixes</span></a></li>
+        <?php foreach (rl_pkg_plans() as $p) { $t = explode(' · ', $p['tier']); ?>
+        <li class="step<?php echo $p['feat'] ? ' feat' : ''; ?>"><a href="<?php echo esc_url($pkg); ?>"><span class="dot" aria-hidden="true"></span><span class="tl"><?php echo esc_html($t[0] . ' · ' . $t[1]); ?><?php if (!empty($t[2])) { ?> <em><?php echo esc_html($t[2]); ?></em><?php } ?></span><span class="nm"><?php echo esc_html($p['name']); ?></span><span class="pr"><b><?php echo esc_html($p['price']); ?></b> <?php echo esc_html($p['monthly']); ?></span></a></li>
+        <?php } ?>
+      </ol>
+      <?php } ?>
     </div>
   </section>
 
