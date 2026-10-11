@@ -194,27 +194,34 @@
   }
 
 
-  /* 13. Service and industry pages (D-171): cards, steps, metrics, myth rows and lists rise in turn as they enter. */
+  /* 13. Service and industry pages (D-171): cards, steps, metrics, myth rows and lists rise in turn as they enter.
+     IntersectionObserver instead of one ScrollTrigger per item (D-172): no layout reads during setup, so the setup
+     stays a short task on pages that paint early. */
+  function inView(els, margin, fn) {
+    var io = new IntersectionObserver(function (es) {
+      var hit = es.filter(function (e) { return e.isIntersecting; }).map(function (e) { io.unobserve(e.target); return e.target; });
+      if (hit.length) fn(hit);
+    }, { rootMargin: margin });
+    [].forEach.call(els, function (el) { io.observe(el); });
+    return io;
+  }
   function kitRise() {
     var items = document.querySelectorAll('.rl-page .cols > *, .rl-page .steps > li, .rl-page .myths > .myth, .rl-page .inds8 > li, .rl-page .ticks > li, .rl-page .honest');
-    if (!items.length) return;
+    if (!items.length) return null;
     gsap.set(items, { opacity: 0, y: 30 });
-    ScrollTrigger.batch(items, {
-      start: 'top 90%', once: true,
-      onEnter: function (batch) { gsap.to(batch, { opacity: 1, y: 0, duration: 0.9, ease: EASE, stagger: 0.08, overwrite: true }); }
-    });
+    return inView(items, '0px 0px -10% 0px', function (batch) { gsap.to(batch, { opacity: 1, y: 0, duration: 0.9, ease: EASE, stagger: 0.08, overwrite: true }); });
   }
 
   /* 14. Process steps: a red line runs along the top of each step in order, like a stage completing. */
   function kitSteps() {
     var lists = document.querySelectorAll('.rl-page .steps');
+    if (!lists.length) return null;
     var fills = [];
-    lists.forEach(function (ol) {
-      var f = [].slice.call(ol.querySelectorAll(':scope > li')).map(function (li) { var e = ensure(li, 'st-fill'); fills.push(e); return e; });
-      if (!f.length) return;
-      gsap.to(f, { scaleX: 1, duration: 0.7, ease: 'power2.inOut', stagger: 0.22, delay: 0.3, scrollTrigger: { trigger: ol, start: 'top 80%', once: true } });
+    lists.forEach(function (ol) { ol._f = [].slice.call(ol.querySelectorAll(':scope > li')).map(function (li) { var e = ensure(li, 'st-fill'); fills.push(e); return e; }); });
+    var io = inView(lists, '0px 0px -20% 0px', function (hit) {
+      hit.forEach(function (ol) { gsap.to(ol._f, { scaleX: 1, duration: 0.7, ease: 'power2.inOut', stagger: 0.22, delay: 0.3 }); });
     });
-    return fills;
+    return { io: io, fills: fills };
   }
 
   /* 12. Hero diagram, "one cycle of growth" (D-169). A 12 s directed loop on the existing SVG: ingest (inputs
@@ -350,14 +357,14 @@
     var mm = gsap.matchMedia();
     mm.add({ motion: '(prefers-reduced-motion: no-preference)', wide: '(min-width: 901px)' }, function (ctx) {
       if (!ctx.conditions.motion) return;
-      var wide = ctx.conditions.wide, bar = null, cup = null, offs = [], stf = [], live = true;
+      var wide = ctx.conditions.wide, bar = null, cup = null, offs = [], kio = null, kst = null, live = true;
       root.classList.add('rl-mo');
       var heroOff = null;
       var tasks = [
         function () { heroOff = heroSystem(wide); },
         function () { timeline(wide); }, function () { osEngine(wide); }, ladder
       ].concat(headings(), [
-        rows, kitRise, function () { stf = kitSteps() || []; }, function () { bar = progress(); }, glow, outcomes, cardsIn,
+        rows, function () { kio = kitRise(); }, function () { kst = kitSteps(); }, function () { bar = progress(); }, glow, outcomes, cardsIn,
         function () { cup = award(); }, function () { if (wide) offs = tilt(); },
         function () { ScrollTrigger.refresh(); }
       ]);
@@ -373,7 +380,8 @@
         if (cup) cup.forEach(function (p) { p.style.strokeDasharray = ''; p.style.strokeDashoffset = ''; });
         root.classList.remove('rl-mo');
         if (bar && bar.parentNode) bar.parentNode.removeChild(bar);
-        stf.forEach(function (e) { if (e.parentNode) e.parentNode.removeChild(e); });
+        if (kio) kio.disconnect();
+        if (kst) { kst.io.disconnect(); kst.fills.forEach(function (e) { if (e.parentNode) e.parentNode.removeChild(e); }); }
         document.querySelectorAll('.rl-home .tline li.on, .rl-home .os-steps li.on').forEach(function (li) { li.classList.remove('on'); });
       };
     });

@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - page speed
- * Description: Removes theme and plugin files a page does not use (D-166). The home page is built entirely by [reinforce_home] with its own header, footer and vanilla JavaScript, so the Beaver Builder theme's jQuery stack, Font Awesome (only used by the hidden BB header search icon), PowerPack's animate.css and the lightbox are dead weight there; seven of them blocked the first paint on phones. Bootstrap CSS and the theme skin stay: removing them was tested and changes the layout (page wrappers and spacing use them). Pages opt in through the rl_lean_page filter; home only for now.
+ * Description: Removes theme and plugin files a page does not use (D-166). The home page is built entirely by [reinforce_home] with its own header, footer and vanilla JavaScript, so the Beaver Builder theme's jQuery stack, Font Awesome (only used by the hidden BB header search icon), PowerPack's animate.css and the lightbox are dead weight there; seven of them blocked the first paint on phones. Bootstrap CSS and the theme skin stay: removing them was tested and changes the layout (page wrappers and spacing use them). Pages opt in through the rl_lean_page filter: home (D-166), service and industry pages (D-172).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -33,3 +33,12 @@ add_filter('style_loader_tag', function ($tag, $handle) {
 add_action('template_redirect', function () {
     if (is_page(['contact-us', 'search-authority-diagnostic'])) do_action('litespeed_control_set_nocache', 'Reinforce Lab: page with a form (D-167)');
 }, 0);
+
+/* D-172: service and industry pages (shared .rl-page kit, built by shortcodes with our own header and footer) use none
+   of the removed files either: no inline jQuery, no lightbox links, no animate.css classes, the only Font Awesome icon
+   is the hidden theme search icon. The AI agents pages under /services/agents/ are left out (different layout, not tested). */
+add_filter('rl_lean_page', function ($on) {
+    if ($on || !is_page()) return $on;
+    $u = get_page_uri();
+    return (bool) preg_match('#^(services|industries)(/|$)#', $u) && strpos($u, 'services/agents') !== 0;
+});
