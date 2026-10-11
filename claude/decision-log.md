@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-159 | Section intros back under the heading on the left (the split headings of D-158 step 1 removed); index and timeline kept | 11 Oct | DONE (Jamil: "the right text can be on the left after the heading") | `pages/reinforce-home.php` |
 | D-158 | Home layout variety, first 3: section headings with an intro use the full width (heading left, intro right), What we do as a numbered index, How it works as a timeline; words unchanged | 11 Oct | DONE (Jamil: "Go ahead with the first 3"); next sections and the Proof question wait for him | `pages/reinforce-home.php` |
 | D-157 | Home Clients logos: two rows of 12 scrolling right to left in an endless loop (row 2 slower), edges faded, pause on hover, still for reduced motion; Pro Tennis Academy logo to be replaced when Jamil sends it | 11 Oct | DONE (Jamil: "I want the logos in two line and moving from right to left smooth motion") | `pages/reinforce-home.php` |
 | D-156 | Home: Clients section ("Companies we've worked with.") between Proof and Recognition, the same 24 logos in production home's order, white versions from /clients/, link to all 46 | 11 Oct | DONE (Jamil: "I want a client section before ... Recognition") | `pages/reinforce-home.php` |
@@ -226,6 +227,13 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-159 · Section intros under the heading again
+**Date:** 11 October 2026 · **Status:** DONE (Jamil: "the right text can be on the left after the heading")
+
+- The split headings from D-158 (heading left, intro right) are removed: label, heading and intro stack on the left as before. The numbered services index and the How it works timeline stay.
 
 ---
 
