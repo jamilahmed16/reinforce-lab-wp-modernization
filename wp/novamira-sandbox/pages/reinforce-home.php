@@ -216,6 +216,20 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .rec-sub p{margin:0;color:var(--ink-dim);font-size:16px;max-width:60ch}
 @media(max-width:900px){.rl-home .rec-sub{grid-template-columns:1fr}}
 .rl-home .rec .tile{height:160px}
+/* HackerNoon award, featured above the badges (D-161); text from rl_awards_data() on /awards/ */
+.rl-home .hn{display:grid;grid-template-columns:auto minmax(0,1.3fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(28px,4vw,44px);margin-bottom:24px;border:1px solid var(--red-line);background:linear-gradient(120deg,rgba(153,0,0,.18),var(--panel) 60%);box-shadow:0 0 90px -40px var(--red-glow)}
+.rl-home .hn .cup{width:96px;height:96px;display:grid;place-items:center;border:1px solid var(--red-line);background:rgba(153,0,0,.12);color:var(--red-3)}
+.rl-home .hn .by{display:block;font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3);margin-bottom:10px}
+.rl-home .hn h4{font-family:var(--f-display);text-transform:uppercase;font-weight:700;font-size:clamp(26px,3vw,38px);line-height:1.05;margin:0 0 12px;color:var(--ink)}
+.rl-home .hn p{margin:0;color:var(--ink-dim);font-size:16px;max-width:56ch}
+.rl-home .hn .src-l{display:inline-block;margin-top:16px;color:var(--ink);border-bottom:1px solid var(--red-line);font-size:16px}
+.rl-home .hn .src-l:hover{color:var(--red-3)}
+.rl-home .hn ul{list-style:none;margin:0;padding:0;border-left:1px solid var(--red-line)}
+.rl-home .hn li{margin:0;padding:12px 0 12px 22px;border-bottom:1px solid var(--line)}.rl-home .hn li:last-child{border-bottom:0}
+.rl-home .hn li a{display:block;color:var(--ink);font-size:16px;line-height:1.35}.rl-home .hn li a:hover{color:var(--red-3)}
+.rl-home .hn li small{display:block;font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);margin-top:4px}
+@media(max-width:1000px){.rl-home .hn{grid-template-columns:auto minmax(0,1fr)}.rl-home .hn ul{grid-column:1/-1}}
+@media(max-width:560px){.rl-home .hn{grid-template-columns:1fr}.rl-home .hn .cup{width:72px;height:72px}}
 /* Blog: heading and button left, posts right as wide cards */
 .rl-home .bl-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:clamp(40px,6vw,96px);align-items:start}
 .rl-home .bl-split .head{margin-bottom:24px}
@@ -544,7 +558,16 @@ function rl_render_home() {
       </div>
       <p class="cl-more"><a class="more" href="<?php echo esc_url($u('clients')); ?>">See all <?php echo $names ? count($names) : 46; ?> clients &rarr;</a></p>
       <!-- RECOGNITION (D-152, merged into Clients D-160): each badge links to the page on the directory's own site -->
-      <div class="rec-sub" id="recognition"><span class="ey"><b>[</b>&nbsp;Recognition&nbsp;<b>]</b></span><h3>Recognized by independent directories.</h3><p>GoodFirms, FindBestFirms and DesignRush list and rank agencies on their own research. Select a badge to see it on their site. <a class="inl" href="<?php echo esc_url($u('awards')); ?>">See all awards</a>.</p></div>
+      <div class="rec-sub" id="recognition"><span class="ey"><b>[</b>&nbsp;Recognition&nbsp;<b>]</b></span><h3>Awards and recognition.</h3><p>A startup award decided by public vote, and rankings by GoodFirms, FindBestFirms and DesignRush. Each one links to the page on its own site. <a class="inl" href="<?php echo esc_url($u('awards')); ?>">See all awards</a>.</p></div>
+      <?php if (function_exists('rl_awards_data')) { $ad = rl_awards_data(); $ft = $ad['feature']; $hnx = array_values(array_filter($ad['awards'], function ($a) { return $a[0] === 'HackerNoon'; })); /* D-161 */ ?>
+      <div class="hn">
+        <span class="cup" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" focusable="false"><path d="M15 7h18v11c0 5-4 9-9 9s-9-4-9-9V7z"/><path d="M15 11H8v3c0 4 3 7 7 7M33 11h7v3c0 4-3 7-7 7"/><path d="M24 27v7M17 41h14M19 34h10v7H19z"/><path d="M21 14l3-3 3 3"/></svg></span>
+        <div><span class="by"><?php echo esc_html($ft['by']); ?></span><h4><?php echo esc_html($ft['title']); ?></h4><p><?php echo esc_html($ft['text']); ?></p><a class="src-l" href="<?php echo esc_url($ft['url']); ?>" target="_blank" rel="noopener"><?php echo esc_html($ft['link']); ?> &rarr;</a></div>
+        <ul>
+          <?php foreach ($hnx as $a) { ?><li><a href="<?php echo esc_url($a[4]); ?>" target="_blank" rel="noopener"><?php echo esc_html($a[2]); ?><small><?php echo esc_html($a[0] . ', ' . $a[1]); ?></small></a></li><?php } ?>
+        </ul>
+      </div>
+      <?php } ?>
       <ul class="recs">
         <?php foreach (rl_home_badges() as $b) { ?>
         <li><a class="rec" href="<?php echo esc_url($b['url']); ?>" target="_blank" rel="noopener"><span class="tile"><img src="<?php echo esc_url(rl_home_badge_src($b['file'])); ?>" alt="<?php echo esc_attr($b['alt']); ?>" width="<?php echo (int) $b['w']; ?>" height="<?php echo (int) $b['h']; ?>" loading="lazy" decoding="async"></span><span class="cap"><span class="who"><?php echo esc_html($b['who']); ?></span><span class="what"><?php echo esc_html($b['what']); ?></span></span></a></li>
