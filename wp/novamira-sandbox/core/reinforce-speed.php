@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - page speed
- * Description: Removes theme and plugin files a page does not use (D-166). The home page is built entirely by [reinforce_home] with its own header, footer and vanilla JavaScript, so the Beaver Builder theme's jQuery stack, Font Awesome (only used by the hidden BB header search icon), PowerPack's animate.css and the lightbox are dead weight there; seven of them blocked the first paint on phones. Bootstrap CSS and the theme skin stay (the page wrappers use them). Pages opt in through the rl_lean_page filter; home only for now.
+ * Description: Removes theme and plugin files a page does not use (D-166). The home page is built entirely by [reinforce_home] with its own header, footer and vanilla JavaScript, so the Beaver Builder theme's jQuery stack, Font Awesome (only used by the hidden BB header search icon), PowerPack's animate.css and the lightbox are dead weight there; seven of them blocked the first paint on phones. Bootstrap CSS and the theme skin stay: removing them was tested and changes the layout (page wrappers and spacing use them). Pages opt in through the rl_lean_page filter; home only for now.
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
@@ -24,5 +24,5 @@ add_action('wp_enqueue_scripts', function () {
 
 /* Font Awesome and animate.css are enqueued by the builder plugins after the hook above; drop their tags at print time */
 add_filter('style_loader_tag', function ($tag, $handle) {
-    return (rl_lean_page() && in_array($handle, array_merge(['font-awesome-5', 'font-awesome', 'pp-animate', 'jquery-magnificpopup'], (array) apply_filters('rl_lean_styles_extra', ['bootstrap-4', 'fl-automator-skin'])), true) && !(class_exists('FLBuilderModel') && FLBuilderModel::is_builder_active())) ? '' : $tag;
+    return (rl_lean_page() && in_array($handle, ['font-awesome-5', 'font-awesome', 'pp-animate', 'jquery-magnificpopup'], true) && !(class_exists('FLBuilderModel') && FLBuilderModel::is_builder_active())) ? '' : $tag;
 }, 10, 2);
