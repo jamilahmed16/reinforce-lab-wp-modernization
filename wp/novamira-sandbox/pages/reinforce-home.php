@@ -175,6 +175,11 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 @media(max-width:820px){.rl-home .flagship{grid-template-columns:1fr}}
 .rl-home .flagship .tag{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--red-3);text-transform:uppercase}
 .rl-home .flagship h2{font-size:clamp(26px,3.6vw,40px);margin:12px 0 14px}
+/* D-168 hero scan behind the diagram (desktop WebGL, reinforce-gescan.js): under the SVG and caption, above the panel background */
+.rl-home .ge{position:relative;overflow:hidden}
+.rl-home .ge>.cap,.rl-home .ge>svg{position:relative;z-index:1}
+.rl-home .ge-cv{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:0;transition:opacity 1.2s}
+.rl-home .ge-cv.on{opacity:1}
 /* D-167 diagnostic scan behind the closing call to action (desktop WebGL, reinforce-scan.js); above the panel's glow, below its text */
 .rl-home .final .scan-cv{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:0;transition:opacity 1.4s}
 .rl-home .final .scan-cv.on{opacity:1}
@@ -441,7 +446,7 @@ function rl_render_home() {
         </div>
         <p class="microtrust">Built for <b>Pharmaceutical &amp; Life Sciences · Healthcare · B2B SaaS · E-commerce · Manufacturing · Technology · Professional Services · Education</b></p>
       </div>
-      <figure class="ge rl-anim"><div class="cap" aria-hidden="true"><span>Inputs</span><span>Engine</span><span>Outcomes</span></div><?php echo rl_home_ge_svg(); ?><?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Inputs', 'kind' => 'chips', 'items' => ['Search & SERP data', 'Content & website', 'Competitor research', 'Customer & social signals', 'AI-search visibility']], ['label' => 'Engine', 'kind' => 'core', 'title' => 'AI Growth System', 'sub' => 'Verify · build · automate · monitor'], ['label' => 'Outcomes', 'kind' => 'rows', 'items' => ['Automated operations', 'Content that ranks', 'Cited in AI search', 'Qualified pipeline', ['Increased revenue', 'hi']]]], 'Outcomes feed the next cycle'); ?></figure>
+      <figure class="ge rl-anim"><canvas class="ge-cv" aria-hidden="true"></canvas><div class="cap" aria-hidden="true"><span>Inputs</span><span>Engine</span><span>Outcomes</span></div><?php echo rl_home_ge_svg(); ?><?php if (function_exists('rl_ph')) echo rl_ph([['label' => 'Inputs', 'kind' => 'chips', 'items' => ['Search & SERP data', 'Content & website', 'Competitor research', 'Customer & social signals', 'AI-search visibility']], ['label' => 'Engine', 'kind' => 'core', 'title' => 'AI Growth System', 'sub' => 'Verify · build · automate · monitor'], ['label' => 'Outcomes', 'kind' => 'rows', 'items' => ['Automated operations', 'Content that ranks', 'Cited in AI search', 'Qualified pipeline', ['Increased revenue', 'hi']]]], 'Outcomes feed the next cycle'); ?></figure>
     </div>
   </section>
 

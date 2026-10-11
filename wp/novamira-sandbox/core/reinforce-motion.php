@@ -46,6 +46,6 @@ add_action('wp_head', function () {
 /* Scripts at the end of the page with defer: they never block the first paint or the hero (LCP). */
 add_action('wp_footer', function () {
     if (!rl_motion_active()) return;
-    foreach (['vendor/gsap.min.js', 'vendor/ScrollTrigger.min.js', 'vendor/SplitText.min.js', 'reinforce-motion.js', 'reinforce-signal.js', 'reinforce-scan.js'] as $rel)
+    foreach (['vendor/gsap.min.js', 'vendor/ScrollTrigger.min.js', 'vendor/SplitText.min.js', 'reinforce-motion.js', 'reinforce-signal.js', 'reinforce-scan.js', 'reinforce-gescan.js'] as $rel)
         echo '<script src="' . esc_url(rl_motion_src($rel)) . '" defer></script>' . "\n";
 }, 30);
