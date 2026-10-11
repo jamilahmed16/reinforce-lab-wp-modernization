@@ -179,14 +179,7 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .proof{border:1px dashed var(--line-2);background:var(--panel);padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}@media(max-width:760px){.rl-home .proof{grid-template-columns:repeat(2,1fr)}}@media(max-width:420px){.rl-home .proof{grid-template-columns:1fr}}
 .rl-home .stat .fig{font-family:var(--f-display);font-size:30px;font-weight:700;color:var(--ink)}.rl-home .stat .lab{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
 .rl-home .ph{font-family:var(--f-mono);font-size:12px;color:var(--red-3);border:1px solid var(--red);padding:2px 7px;display:inline-block;letter-spacing:.08em;text-transform:uppercase}
-/* D-158 layout variety. (1) Section headings with an intro use the full width: label and heading left, intro right (one column on phone). */
-@media(min-width:900px){
-.rl-home .head:has(> p){max-width:none;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);column-gap:clamp(40px,7vw,120px);align-items:end}
-.rl-home .head:has(> p) > .ey{grid-column:1;grid-row:1;justify-self:start}
-.rl-home .head:has(> p) > h2{grid-column:1;grid-row:2;margin-bottom:0}
-.rl-home .head:has(> p) > p{grid-column:2;grid-row:1/span 2;align-self:end;margin:0;padding-left:28px;border-left:1px solid var(--red-line);max-width:60ch}
-.rl-home .pk-split .head:has(> p){display:block;max-width:64ch}.rl-home .pk-split .head:has(> p) > p{padding-left:0;border-left:0;margin-top:18px}
-}
+/* D-158 layout variety (the split headings of step 1 were taken back at Jamil's request, D-159: intro stays under the heading) */
 /* (2) What we do: a numbered index, one row per service */
 .rl-home .ix{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-2);counter-reset:ix}
 .rl-home .ix li{margin:0;border-bottom:1px solid var(--line-2)}
