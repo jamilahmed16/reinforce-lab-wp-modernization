@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-160 | Home layout variety, the rest: Outcomes as three statements, Problem with the heading held left and a list right, Industries as a two-column list with drawn icons, Recognition merged into Clients, Blog split (heading left, posts right); words unchanged; Proof untouched | 11 Oct | DONE (Jamil: "1. yes") | `pages/reinforce-home.php` |
 | D-159 | Section intros back under the heading on the left (the split headings of D-158 step 1 removed); index and timeline kept | 11 Oct | DONE (Jamil: "the right text can be on the left after the heading") | `pages/reinforce-home.php` |
 | D-158 | Home layout variety, first 3: section headings with an intro use the full width (heading left, intro right), What we do as a numbered index, How it works as a timeline; words unchanged | 11 Oct | DONE (Jamil: "Go ahead with the first 3"); next sections and the Proof question wait for him | `pages/reinforce-home.php` |
 | D-157 | Home Clients logos: two rows of 12 scrolling right to left in an endless loop (row 2 slower), edges faded, pause on hover, still for reduced motion; Pro Tennis Academy logo to be replaced when Jamil sends it | 11 Oct | DONE (Jamil: "I want the logos in two line and moving from right to left smooth motion") | `pages/reinforce-home.php` |
@@ -227,6 +228,19 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-160 · Home page: the remaining sections redesigned
+**Date:** 11 October 2026 · **Status:** DONE (Jamil, asked "Redesign the remaining sections the same way?": "1. yes"); Proof question still open
+
+- **Outcomes:** the three boxes became three large statements side by side ("Automate / Operations" with the second word in red), divided by thin red rules, no boxes. Stacked with a left rule on phone.
+- **The problem:** heading and intro on the left stay in place (sticky) while the four problems run as a list on the right: red cross in a square, title in Oswald, text below. Sources line kept under the list. One column on phone.
+- **Industries:** the 8 boxes became a two-column list. Each row: a drawn line icon (flask, cross, layers, bag, factory, chip, briefcase, cap; SVG, no emoji), name with its tag, one line of text, arrow. Hover fills the icon red. Same links.
+- **Clients and Recognition:** one section. Moving logos (D-157), "See all 46 clients", then a divider and "Recognition" as a sub-heading (h3) with the six badges (tiles 160px). One section heading fewer.
+- **Blog:** heading, intro and "Read the blog" on the left; posts on the right as wide cards (image left, text right). Works for one post now and three later.
+- **Not changed:** Hero, Search Authority OS, Proof (waits for Jamil), Testimonials, Packages, Questions, Start here. All words as before.
+- **Result:** page height at 1440 down from 13,267px to 12,559px. Phone width 390, axe 0 at 390 and 1440, copy check 0.
 
 ---
 
