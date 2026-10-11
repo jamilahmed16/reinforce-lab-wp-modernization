@@ -20,6 +20,7 @@ Safety rules built in:
   * updates abort unless the live file still matches git HEAD (no overwriting unknown changes)
   * every new file is parse-checked with token_get_all(TOKEN_PARSE) before it is written
   * every overwritten file is copied to novamira-sandbox/_backups/<stamp>/ first (protected by the sandbox .htaccess)
+  * after a successful deploy the LiteSpeed page cache is purged (D-167), so no visitor or check sees an old page
 """
 import base64, hashlib, json, os, re, subprocess, sys, tempfile, time, urllib.request
 
@@ -95,7 +96,8 @@ foreach ($items as $it) {
 $stamp = gmdate("Ymd-His"); $out = [];
 foreach ($items as $it) { $f = $root . $it[0]; if (file_exists($f)) { $b = $root . "_backups/" . $stamp . "/" . $it[0]; wp_mkdir_p(dirname($b)); if (!copy($f, $b)) return ["abort" => "backup failed: " . $it[0]]; } }
 foreach ($items as $it) { $f = $root . $it[0]; wp_mkdir_p(dirname($f)); file_put_contents($f, base64_decode($it[2])); if (function_exists("opcache_invalidate")) opcache_invalidate($f, true); $out[$it[0]] = md5_file($f); }
-return ["ok" => true, "backup" => "_backups/" . $stamp, "md5" => $out];
+$purged = false; if (defined("LSCWP_V") || has_action("litespeed_purge_all")) { do_action("litespeed_purge_all"); $purged = true; }
+return ["ok" => true, "backup" => "_backups/" . $stamp, "md5" => $out, "cache_purged" => $purged];
 ''' % b64(json.dumps(items))
     rv, errs = php(code)
     print(json.dumps(rv, indent=1))

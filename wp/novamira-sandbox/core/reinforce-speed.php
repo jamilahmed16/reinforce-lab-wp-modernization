@@ -26,3 +26,10 @@ add_action('wp_enqueue_scripts', function () {
 add_filter('style_loader_tag', function ($tag, $handle) {
     return (rl_lean_page() && in_array($handle, ['font-awesome-5', 'font-awesome', 'pp-animate', 'jquery-magnificpopup'], true) && !(class_exists('FLBuilderModel') && FLBuilderModel::is_builder_active())) ? '' : $tag;
 }, 10, 2);
+
+/* LiteSpeed page cache (D-167): pages with a form stay uncached. Their anti-spam check prints the current time
+   into the form ("submitted too fast" test), which a cached copy would freeze. The forms post to admin-post.php,
+   which is never cached. */
+add_action('template_redirect', function () {
+    if (is_page(['contact-us', 'search-authority-diagnostic'])) do_action('litespeed_control_set_nocache', 'Reinforce Lab: page with a form (D-167)');
+}, 0);
