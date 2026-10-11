@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-156 | Home: Clients section ("Companies we've worked with.") between Proof and Recognition, the same 24 logos in production home's order, white versions from /clients/, link to all 46 | 11 Oct | DONE (Jamil: "I want a client section before ... Recognition") | `pages/reinforce-home.php` |
 | D-155 | Testimonial: the "..." marking the left-out sentence removed, and the note about it; the shortened quote stays as written | 11 Oct | DONE (Jamil: "“...” remove it and keep it as you written") | `pages/reinforce-home.php` |
 | D-154 | Home Packages teaser: the empty right side now holds a ladder (free diagnostic, then Foundation, Growth OS, Enterprise with setup and monthly prices from the /packages/ source), each row a link | 11 Oct | DONE (Jamil: "The right side like boring") | `pages/reinforce-home.php` |
 | D-153 | Home: Testimonials section after Recognition with the two client quotes from production's home (Md. Arifin Hussain, Bikroy; Mohammad Mozammal Haque, Mrco International), word for word except one sentence left out (marked "..."), square photos, no stars, no review schema | 11 Oct | DONE (Jamil: "Create a section for testimonial") | `pages/reinforce-home.php` |
@@ -223,6 +224,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-156 · Home page: Clients section
+**Date:** 11 October 2026 · **Status:** DONE (Jamil, with a screenshot of production's "Companies we've worked with": "I want a client section before "[ Recognition ] Recognized by independent directories." section")
+
+- **Where:** Home, after Proof and before Recognition (`#clients`). Home order now: ... Search Authority OS, Proof, Clients, Recognition, Testimonials, Packages, Questions, Blog, Start here.
+- **What:** the same 24 clients as production's home, in the same order (Accesstel to Sofosvel). Logos are the white versions already made for `/clients/` (D-127, option `rl_client_logos_white`), so nothing new was uploaded. Grid 6 across at desktop, 4 on tablet, 3 on phone, 1px lines. "See all 46 clients" links to `/clients/`.
+- **Copy:** heading "Companies we've worked with."; lede names only sectors that are in the list (UIU and FBS, Beacon Pharmaceuticals, Bikroy.com, Union Properties and Panorama).
+- **Checked:** all 24 images load, phone width 390, axe 0 at 390 and 1440, copy check 0.
 
 ---
 
