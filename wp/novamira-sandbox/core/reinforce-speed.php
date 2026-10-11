@@ -26,3 +26,21 @@ add_action('wp_enqueue_scripts', function () {
 add_filter('style_loader_tag', function ($tag, $handle) {
     return (rl_lean_page() && in_array($handle, ['font-awesome-5', 'font-awesome', 'pp-animate', 'jquery-magnificpopup'], true) && !(class_exists('FLBuilderModel') && FLBuilderModel::is_builder_active())) ? '' : $tag;
 }, 10, 2);
+
+/* Inline the two small stylesheets the page still needs (Bootstrap 4, theme skin), in place and in the same
+   order, so the first paint does not wait for two more round trips (D-166). Relative url() references are
+   rewritten to absolute ones. Falls back to the normal <link> if a file cannot be read. */
+add_filter('style_loader_tag', function ($tag, $handle, $href) {
+    if (!rl_lean_page() || !in_array($handle, ['bootstrap-4', 'fl-automator-skin'], true)) return $tag;
+    if (class_exists('FLBuilderModel') && FLBuilderModel::is_builder_active()) return $tag;
+    $src = strtok($href, '?');
+    $path = null;
+    foreach ([[content_url(), WP_CONTENT_DIR], [includes_url(), ABSPATH . WPINC . '/']] as $map)
+        if (strpos($src, $map[0]) === 0) { $path = rtrim($map[1], '/') . '/' . ltrim(substr($src, strlen($map[0])), '/'); break; }
+    if (!$path || !is_readable($path) || filesize($path) > 60000) return $tag;
+    $css = (string) file_get_contents($path);
+    $base = trailingslashit(dirname($src));
+    $css = preg_replace_callback('#url\(\s*([\'"]?)(?!data:|https?:|//|/)([^\'")]+)\1\s*\)#i', function ($m) use ($base) { return 'url(' . $base . $m[2] . ')'; }, $css);
+    $css = preg_replace('#/\*\# sourceMappingURL=[^*]*\*/#', '', $css);
+    return '<style id="' . esc_attr($handle) . '-inline">' . $css . "</style>\n";
+}, 20, 3);
