@@ -146,10 +146,10 @@ body.rl-dark .fl-page,body.rl-dark .fl-page-content,body.rl-dark .fl-content,bod
 .rl-header .btn.sm{padding:11px 18px;font-size:13px}
 .rl-header .ar{transition:transform .2s}.rl-header .btn:hover .ar{transform:translateX(3px)}
 .rl-header .hcta{flex-shrink:0}
-/* moving line round the header button (D-170): a short light travels the border once, rests, repeats; pure CSS, paused for reduced motion */
+/* moving line round the header button (D-170): a short light travels the border once, rests, repeats; pure CSS, paused for reduced motion; first pass after 3 s so it is not redrawn during page load (D-173) */
 .rl-header .hcta{position:relative}
 .rl-header .hl{position:absolute;inset:-1px;width:calc(100% + 2px);height:calc(100% + 2px);overflow:visible;pointer-events:none}
-.rl-header .hl rect{width:calc(100% - 1px);height:calc(100% - 1px);fill:none;stroke-dasharray:12 88;stroke-dashoffset:0;opacity:0;animation:rl-hl 6s linear infinite}
+.rl-header .hl rect{width:calc(100% - 1px);height:calc(100% - 1px);fill:none;stroke-dasharray:12 88;stroke-dashoffset:0;opacity:0;animation:rl-hl 6s linear 3s infinite}
 .rl-header .hl .h{stroke:#fff;stroke-width:3;stroke-opacity:.14}
 .rl-header .hl .c{stroke:#fff;stroke-width:.6;stroke-opacity:.85}
 .rl-header .hl{filter:drop-shadow(0 0 3px rgba(255,255,255,.45))}
