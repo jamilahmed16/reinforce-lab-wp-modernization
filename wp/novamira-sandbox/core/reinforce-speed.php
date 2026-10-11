@@ -42,3 +42,14 @@ add_filter('rl_lean_page', function ($on) {
     $u = get_page_uri();
     return (bool) preg_match('#^(services|industries)(/|$)#', $u) && strpos($u, 'services/agents') !== 0;
 });
+
+/* D-174: on lean pages the full Bootstrap 4 file (162 KB, about 97% unused, blocked the first paint) is replaced, at
+   the same place in the page so the cascade order is unchanged, by an inline copy of only the rules these pages use
+   (core/reinforce-bootstrap-lean.css, about 8 KB, built by claude/tools/bs-trim). Falls back to the normal link if
+   the file is missing. */
+add_filter('style_loader_tag', function ($tag, $handle) {
+    if ($handle !== 'bootstrap-4' || !rl_lean_page() || (class_exists('FLBuilderModel') && FLBuilderModel::is_builder_active())) return $tag;
+    $f = __DIR__ . '/reinforce-bootstrap-lean.css';
+    if (!is_readable($f)) return $tag;
+    return '<style id="bootstrap-4-lean">' . str_replace('</', '<\\/', file_get_contents($f)) . "</style>\n";
+}, 10, 2);
