@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-165 | Home: 3D "signal field" behind "One system. Three outcomes" (hand-written WebGL, 2.7 KB, desktop only, lazy, pauses off-screen; CSS dotted field on phones), card animations (badges and testimonials rise with a 3D turn, pointer tilt with sheen, trophy draws, outcomes rise), motion setup moved to idle tasks, font swap fixed (size-matched fallbacks, Plex Mono optional); pass mark met: desktop median 96, mobile median 90, CLS 0 to 0.003 | 11 Oct | DONE (Jamil: "option 2"; pass mark desktop 96+, mobile 90+, no layout shift) | `core/reinforce-signal.js`, `core/reinforce-motion.js`, `core/reinforce-fonts.css` |
 | D-164 | Scroll motion, phase 2: home headings reveal line by line (SplitText, reverted after), services and industries rows fade up in turn, red reading-progress bar, closing CTA glow builds on scroll; header slims on scroll sitewide (desktop, transform only, no layout shift); Lighthouse desktop 96, mobile 90 (baseline 91) | 11 Oct | DONE (Jamil asked for phase 2); phase 3 (service and industry pages) waits | `core/reinforce-motion.js`, `core/reinforce-header.php` |
 | D-163 | Scroll motion, phase 1: GSAP 3.15 + ScrollTrigger self-hosted (home only, deferred, about 46 KB compressed); How it works rail draws with scroll, Search Authority OS holds while its five stages light up, Packages ladder rises; Lenis off; no change to text, hero or SEO; Lighthouse desktop 96 before and after, mobile 91 before, 89 after (median, within run-to-run noise) | 11 Oct | DONE (Jamil: "Go ahead with Phase 1? yes"); phase 2 waits for approval | `core/reinforce-motion.php`, `core/reinforce-motion.js` |
 | D-162 | Home Proof section ("We run this system on ourselves", four placeholder tags) removed until there are real results; same placeholder block still on /search-authority-os/ (Jamil to decide) | 11 Oct | DONE (Jamil: "Remove and", message cut off) | `pages/reinforce-home.php` |
@@ -232,6 +233,19 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-165 · 3D signal field, card animations, font-swap fix
+**Date:** 11 October 2026 · **Status:** DONE (Jamil: "option 2"; "Pass mark: desktop stays at 96 or above, mobile at 90 or above, with no layout shift. If the 3D can't meet that, I scale it down or switch to option 3.")
+
+- **Research (11 Oct):** gsap.com/showcase renders its list with JavaScript and could not be read here; patterns taken from published case studies of GSAP award sites (fromanother, Iventions, Mat Voyce, MANA Yerba Mate, Joseph Santamaria) and Awwwards' GSAP collection: one motion language, transform/opacity only, WebGL only for one or two moments, lazy WebGL contexts paused off-screen, pixel ratio capped, reduced-motion respected.
+- **3D signal field (option 2 of 3):** `core/reinforce-signal.js` (new, 2.7 KB compressed, no library). About 7,200 square points (zero-radius rule) in the brand reds on a perspective field behind "One system. Three outcomes that move the business."; slow waves, three brighter pulses travelling toward the three outcomes, slight response to the pointer and to scroll. Text stays HTML above it (canvas `aria-hidden`). Starts after load when the browser is idle, only near the screen; 0 frames drawn when scrolled away (measured); pauses when the tab is hidden; pixel ratio capped at 1.5. Never runs below 768px, with reduced motion, Save-Data or under 4 GB device memory: those visitors see a CSS dotted floor instead. First version overlapped the outcome text; field lowered and pulses softened.
+- **Card animations (`core/reinforce-motion.js`):** outcome statements rise in turn; award badges and testimonial cards rise with a slight 3D turn; testimonial quote marks drop in; the HackerNoon trophy outline draws itself, then its three results slide in; badges, testimonials, the blog card and the HackerNoon card tilt toward the pointer (up to 6 degrees, 2.5 on the large award card) with a soft light sheen (desktop with a mouse only).
+- **First measurement failed the mobile mark** (84 to 87): the setup of all animations ran as one long task (mobile blocking time 170 to 260 ms). Fix: setup now starts after load and runs one feature per idle task (each heading split separately). Mobile blocking time back to 0 to 130 ms.
+- **Font swap (existing issue, D-163 F(b)) fixed so the "no layout shift" mark holds:** (1) IBM Plex Mono `font-display: optional` (it moved the hero diagram, CLS 0.164 in one run). Preloading it was tried and dropped: it pushed mobile LCP to 3.2 s. (2) Size-matched fallbacks `'Oswald Fallback'` (Arial scaled 72.3%, ascent 165%, descent 40%) and `'Plex Sans Fallback'` (102.8%, 99.7%, 26.8%), computed from the fonts' own metrics with fontTools, placed second in `--f-display` and `--f-body`; the swap no longer moves the hero buttons (was CLS up to 0.185 on mobile).
+- **Final measurement (Lighthouse 13.5, home, 4 runs each):** desktop 96, 96, 95, 96 (median 96); mobile 90, 90, 93, 89 (median 90); CLS mobile 0 in all runs, desktop 0 to 0.003. Page 338 KiB. axe 0 at 390 and 1440. No console errors. Phone 390 wide.
+- **Note:** desktop frame rate measured only in software rendering (about 17 frames per second in the test browser, no GPU); real graphics hardware runs it at screen rate.
 
 ---
 
