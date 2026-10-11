@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-162 | Home Proof section ("We run this system on ourselves", four placeholder tags) removed until there are real results; same placeholder block still on /search-authority-os/ (Jamil to decide) | 11 Oct | DONE (Jamil: "Remove and", message cut off) | `pages/reinforce-home.php` |
 | D-161 | Home Recognition leads with the HackerNoon award: featured card "Winner, Startups of The Year 2024 in Dhaka" plus 11th in Marketing, two honourable mentions and Startups of the Week, each linked to HackerNoon; text from the /awards/ source; sub-heading now "Awards and recognition." | 11 Oct | DONE (Jamil: "what about my hackernoon startup award") | `pages/reinforce-home.php` |
 | D-160 | Home layout variety, the rest: Outcomes as three statements, Problem with the heading held left and a list right, Industries as a two-column list with drawn icons, Recognition merged into Clients, Blog split (heading left, posts right); words unchanged; Proof untouched | 11 Oct | DONE (Jamil: "1. yes") | `pages/reinforce-home.php` |
 | D-159 | Section intros back under the heading on the left (the split headings of D-158 step 1 removed); index and timeline kept | 11 Oct | DONE (Jamil: "the right text can be on the left after the heading") | `pages/reinforce-home.php` |
@@ -229,6 +230,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-162 · Home Proof section removed
+**Date:** 11 October 2026 · **Status:** DONE (asked: remove it, or merge it into the diagnostic section; Jamil: "Remove and", the rest of the message did not arrive)
+
+- Removed from Home: the Proof section (heading "We run this system on ourselves.", four placeholder tags "Your baseline / Your gap / Your opportunity / Your plan", and the note under them), plus its styles. To come back when there are real, verified case-study results.
+- Home order now: Hero, Why AI Growth Systems, What we do, The problem, How it works, Industries, Search Authority OS, Clients and recognition, Testimonials, Packages, Questions, Blog, Start here.
+- **Open:** `/search-authority-os/` (`saos/reinforce-saos.php`, line 458) has the same four placeholder tags; not changed, Jamil to decide. Jamil's "and..." not yet known.
+- Checked: phone width 390, axe 0 at 390 and 1440.
 
 ---
 
