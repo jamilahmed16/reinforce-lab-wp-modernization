@@ -179,6 +179,14 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .proof{border:1px dashed var(--line-2);background:var(--panel);padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}@media(max-width:760px){.rl-home .proof{grid-template-columns:repeat(2,1fr)}}@media(max-width:420px){.rl-home .proof{grid-template-columns:1fr}}
 .rl-home .stat .fig{font-family:var(--f-display);font-size:30px;font-weight:700;color:var(--ink)}.rl-home .stat .lab{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
 .rl-home .ph{font-family:var(--f-mono);font-size:12px;color:var(--red-3);border:1px solid var(--red);padding:2px 7px;display:inline-block;letter-spacing:.08em;text-transform:uppercase}
+/* clients (D-156): the 24 logos from production's home, white versions from /clients/ (option rl_client_logos_white); 1px gap draws the grid lines */
+.rl-home .cl-wall{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;margin:0;padding:0;list-style:none;background:var(--line);border:1px solid var(--line)}
+.rl-home .cl-wall li{display:grid;place-items:center;height:112px;padding:18px 22px;margin:0;background:var(--bg)}
+.rl-home .cl-wall img{max-width:100%;max-height:60px;width:auto;height:auto;object-fit:contain;opacity:.86;transition:opacity .2s}
+.rl-home .cl-wall li:hover img{opacity:1}
+@media(max-width:1100px){.rl-home .cl-wall{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:760px){.rl-home .cl-wall{grid-template-columns:repeat(3,minmax(0,1fr))}.rl-home .cl-wall li{height:84px;padding:12px}.rl-home .cl-wall img{max-height:44px}}
+.rl-home .cl-more{margin-top:22px}
 /* recognition (D-152): badges on light tiles, because two badges have dark text; class "rec", not "badge" (Bootstrap 4 styles .badge) */
 .rl-home .recs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;list-style:none;margin:0;padding:0}@media(max-width:1100px){.rl-home .recs{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.rl-home .recs{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
 .rl-home .rec{display:flex;flex-direction:column;height:100%;border:1px solid var(--glass-line);background:var(--panel);transition:border-color .2s}
@@ -263,6 +271,14 @@ add_filter('wpseo_schema_graph', function ($graph) {
     ];
     return $graph;
 }, 20);
+
+/* Clients (D-156): production home's "Companies we've worked with", same 24 and same order (slugs from rl_clients_list() on /clients/) */
+function rl_home_client_slugs() {
+    return ['accesstel', 'bikroy-com', 'united-international-university', 'hp', 'nz-group', 'iba-alumni-association',
+        'union-properties', 'accesstutor', 'ja-directives', 'paperleaf', 'faculty-of-business-studies-university-of-dhaka', 'panorama-property-management',
+        'inpace', 'crizonix', 'tnt-global-sourcing', 'dipto-health', 'mrco-international', 'microinspire',
+        'eco-fast-fashion', 'pro-tennis-academy-dhaka', 'mint-bangladesh', 'beacon-pharmaceuticals', 'we-connect', 'sofosvel'];
+}
 
 /* Recognition badges (D-152), the six from production's home page. Files are served from uploads/reinforce-badges/ (copies in claude/data/award-badges/), never hotlinked.
  * The two GoodFirms Bangladesh badges are cut from Jamil's screenshot: production's own copies return 404 (11 Oct 2026); replace with the originals from GoodFirms when Jamil has them. */
@@ -425,6 +441,20 @@ function rl_render_home() {
         <div class="stat"><div class="fig"><span class="ph">Your plan</span></div><div class="lab">90-day priorities</div></div>
       </div>
       <p class="microtrust" style="margin-top:20px">Case studies and metrics are added only when verified. Placeholders above are replaced by your own diagnostic data.</p>
+    </div>
+  </section>
+
+  <!-- CLIENTS (D-156) -->
+  <?php $white = (array) get_option('rl_client_logos_white', []); $names = function_exists('rl_clients_list') ? array_flip(rl_clients_list()) : []; ?>
+  <section id="clients">
+    <div class="wrap">
+      <div class="head"><span class="ey"><b>[</b>&nbsp;Clients&nbsp;<b>]</b></span><h2>Companies we've worked with.</h2><p class="lede">Universities, pharmaceutical companies, online marketplaces, property firms and growing brands.</p></div>
+      <ul class="cl-wall">
+        <?php foreach (rl_home_client_slugs() as $slug) { if (empty($white[$slug])) continue; $nm = isset($names[$slug]) ? $names[$slug] : $slug; ?>
+        <li title="<?php echo esc_attr($nm); ?>"><?php echo wp_get_attachment_image($white[$slug], 'full', false, ['alt' => $nm . ' logo', 'loading' => 'lazy', 'decoding' => 'async']); ?></li>
+        <?php } ?>
+      </ul>
+      <p class="cl-more"><a class="more" href="<?php echo esc_url($u('clients')); ?>">See all <?php echo $names ? count($names) : 46; ?> clients &rarr;</a></p>
     </div>
   </section>
 
