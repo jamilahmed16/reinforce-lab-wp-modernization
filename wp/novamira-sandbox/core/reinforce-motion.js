@@ -1,9 +1,12 @@
 /*!
  * Reinforce Lab scroll motion (D-163). Needs GSAP + ScrollTrigger (loaded before this file, all deferred).
- * Phase 1: three moments on the home page.
+ * Phase 1 (D-163): three moments on the home page.
  *   1. How it works: the rail draws itself with scroll and each stage lights up as the line reaches it.
  *   2. Search Authority OS: the section holds for a moment (desktop) while the five stages light up in turn.
  *   3. Packages: the ladder steps rise one after another and the rail fills.
+ * Phase 2 (D-164): section headings reveal line by line (SplitText, undone afterwards so the heading HTML is
+ * exactly as served), services and industries rows fade up in turn, a thin red reading-progress bar, and the
+ * closing call-to-action glows as it comes into view. (The slimmer header is sitewide, in core/reinforce-header.php.)
  * Rules: nothing is hidden before this script runs, the hero is never touched, only transform/opacity animate,
  * and visitors with prefers-reduced-motion get no motion at all (gsap.matchMedia reverts everything).
  */
@@ -11,7 +14,9 @@
   'use strict';
   if (!window.gsap || !window.ScrollTrigger) return;
   var gsap = window.gsap, ScrollTrigger = window.ScrollTrigger;
+  var SplitText = window.SplitText;
   gsap.registerPlugin(ScrollTrigger);
+  if (SplitText) gsap.registerPlugin(SplitText);
 
   var EASE = 'power3.out';
   var root = document.documentElement;
@@ -80,6 +85,51 @@
       .fromTo(fill, { scaleY: 0 }, { scaleY: 1, duration: 1.2, ease: 'power2.inOut' }, 0.2);
   }
 
+
+  /* 4. Section headings (never the hero): lines slide up from a mask, once; the split is reverted when done. */
+  function headings() {
+    if (!SplitText) return;
+    var hs = document.querySelectorAll('.rl-home section:not(.hero) h2, .rl-home .rec-sub h3');
+    hs.forEach(function (h) {
+      SplitText.create(h, {
+        type: 'lines', mask: 'lines', autoSplit: true,
+        onSplit: function (self) {
+          return gsap.from(self.lines, {
+            yPercent: 105, duration: 1.1, ease: 'expo.out', stagger: 0.09,
+            scrollTrigger: { trigger: h, start: 'top 88%', once: true },
+            onComplete: function () { self.revert(); }
+          });
+        }
+      });
+    });
+  }
+
+  /* 5. Services index and industries list: rows fade up in turn as they enter. */
+  function rows() {
+    var items = document.querySelectorAll('.rl-home .ix > li, .rl-home .ind > li');
+    if (!items.length) return;
+    gsap.set(items, { opacity: 0, y: 26 });
+    ScrollTrigger.batch(items, {
+      start: 'top 90%', once: true,
+      onEnter: function (batch) { gsap.to(batch, { opacity: 1, y: 0, duration: 0.9, ease: EASE, stagger: 0.08, overwrite: true }); }
+    });
+  }
+
+  /* 6. Reading progress: a 2px red bar across the top of the window. */
+  function progress() {
+    var bar = document.querySelector('.rl-progress');
+    if (!bar) { bar = document.createElement('div'); bar.className = 'rl-progress'; bar.setAttribute('aria-hidden', 'true'); document.body.appendChild(bar); }
+    gsap.to(bar, { scaleX: 1, ease: 'none', scrollTrigger: { trigger: document.documentElement, start: 'top top', end: 'bottom bottom', scrub: 0.3 } });
+    return bar;
+  }
+
+  /* 7. Closing call-to-action: the red glow builds up as the panel comes into view. */
+  function glow() {
+    var fin = document.querySelector('.rl-home .final');
+    if (!fin) return;
+    gsap.fromTo(fin, { '--glow': 0.2 }, { '--glow': 1, ease: 'none', scrollTrigger: { trigger: fin, start: 'top bottom', end: 'center 55%', scrub: 0.6 } });
+  }
+
   var mm = gsap.matchMedia();
   mm.add({ motion: '(prefers-reduced-motion: no-preference)', wide: '(min-width: 901px)' }, function (ctx) {
     if (!ctx.conditions.motion) return;
@@ -87,8 +137,13 @@
     timeline(ctx.conditions.wide);
     osEngine(ctx.conditions.wide);
     ladder();
+    headings();
+    rows();
+    var bar = progress();
+    glow();
     return function () {
       root.classList.remove('rl-mo');
+      if (bar && bar.parentNode) bar.parentNode.removeChild(bar);
       document.querySelectorAll('.rl-home .tline li.on, .rl-home .os-steps li.on').forEach(function (li) { li.classList.remove('on'); });
     };
   });

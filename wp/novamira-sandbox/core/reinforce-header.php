@@ -174,6 +174,16 @@ body.rl-dark .fl-page,body.rl-dark .fl-page-content,body.rl-dark .fl-content,bod
 body.rl-mopen .rl-header .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 body.rl-mopen .rl-header .burger span:nth-child(2){opacity:0}
 body.rl-mopen .rl-header .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+/* slimmer header once the page is scrolled (D-164): moved with transform, so the page below never shifts; desktop only (the phone menu is placed against the full 72px) */
+@media(min-width:1151px){
+.rl-header{transition:transform .5s cubic-bezier(.22,1,.36,1),background-color .5s,box-shadow .5s}
+.rl-header .nav{transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.rl-header .brand img{transition:transform .5s cubic-bezier(.22,1,.36,1);transform-origin:left center}
+.rl-header.slim{transform:translateY(-14px);background:rgba(14,12,13,.92);box-shadow:0 10px 30px -18px rgba(0,0,0,.9)}
+.rl-header.slim .nav{transform:translateY(7px)}
+.rl-header.slim .brand img{transform:scale(.88)}
+}
+@media(prefers-reduced-motion:reduce){.rl-header,.rl-header .nav,.rl-header .brand img{transition:none}}
 #rl-mobile{position:fixed;inset:72px 0 0;z-index:49;background:rgba(15,12,13,.98);backdrop-filter:blur(16px);transform:translateX(100%);transition:transform .3s;overflow-y:auto;padding:22px var(--gutter) 60px;visibility:hidden;font-family:var(--f-body)}
 body.rl-mopen #rl-mobile{transform:none;visibility:visible}
 #rl-mobile a{display:block;font-family:var(--f-display);text-transform:uppercase;font-size:18px;letter-spacing:.03em;color:var(--ink);padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none}
@@ -505,6 +515,10 @@ function rl_header_js() { ?>
 <script>
 (function(){
   var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // slimmer header after 80px of scroll, back above 40px (D-164)
+  var hd=document.querySelector('.rl-header'),slim=false;
+  function hdSlim(){var y=scrollY||0;if(!slim&&y>80){slim=true;hd.classList.add('slim');}else if(slim&&y<40){slim=false;hd.classList.remove('slim');}}
+  if(hd){addEventListener('scroll',hdSlim,{passive:true});hdSlim();}
   var grid=document.getElementById('rl-grid'),grid2=document.getElementById('rl-grid2'),glow=document.getElementById('rl-glow');
   var sy=0,mx=.5,my=.5,cx=innerWidth/2,cy=innerHeight/2,gx=cx,gy=cy,tmx=.5,tmy=.5,raf=false;
   function apply(){
