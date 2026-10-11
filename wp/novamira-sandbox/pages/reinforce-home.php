@@ -179,6 +179,51 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .proof{border:1px dashed var(--line-2);background:var(--panel);padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}@media(max-width:760px){.rl-home .proof{grid-template-columns:repeat(2,1fr)}}@media(max-width:420px){.rl-home .proof{grid-template-columns:1fr}}
 .rl-home .stat .fig{font-family:var(--f-display);font-size:30px;font-weight:700;color:var(--ink)}.rl-home .stat .lab{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
 .rl-home .ph{font-family:var(--f-mono);font-size:12px;color:var(--red-3);border:1px solid var(--red);padding:2px 7px;display:inline-block;letter-spacing:.08em;text-transform:uppercase}
+/* D-160 layout variety, the rest. Outcomes: three statements, no boxes */
+.rl-home .oc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.rl-home .oc-i{padding:6px clamp(20px,3vw,40px) 6px clamp(20px,3vw,40px);border-left:1px solid var(--red-line)}
+.rl-home .oc-i:first-child{padding-left:0;border-left:0}
+.rl-home .oc-i .k{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--red-3)}
+.rl-home .oc-i h3{font-size:clamp(28px,3vw,40px);line-height:1.02;margin:16px 0 16px}
+.rl-home .oc-i h3 span{display:block;color:var(--red-3)}
+.rl-home .oc-i p{margin:0;color:var(--ink-dim);font-size:16px;max-width:38ch}
+@media(max-width:900px){.rl-home .oc{grid-template-columns:1fr;gap:28px}.rl-home .oc-i,.rl-home .oc-i:first-child{padding:0 0 0 22px;border-left:1px solid var(--red-line)}}
+/* Problem: heading held on the left, problems as a list on the right */
+.rl-home .pr-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(40px,7vw,120px);align-items:start}
+.rl-home .pr-split .head{position:sticky;top:110px;margin-bottom:0}
+.rl-home .pr-split .pains{grid-template-columns:1fr;gap:0;border-top:1px solid var(--line-2)}
+.rl-home .pr-split .pain{background:none;backdrop-filter:none;box-shadow:none;border:0;border-bottom:1px solid var(--line-2);padding:28px 0;gap:22px;align-items:flex-start}
+.rl-home .pr-split .pain .x{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--red-line);background:rgba(153,0,0,.10);margin-top:0}
+.rl-home .pr-split .pain p{font-size:16px;line-height:1.6}.rl-home .pr-split .pain b{display:block;font-family:var(--f-display);font-weight:600;text-transform:uppercase;font-size:20px;line-height:1.15;margin-bottom:6px;letter-spacing:.01em}
+@media(max-width:900px){.rl-home .pr-split{grid-template-columns:1fr;gap:32px}.rl-home .pr-split .head{position:static}}
+/* Industries: two-column list with drawn icons */
+.rl-home .ind{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(24px,4vw,64px);border-top:1px solid var(--line-2)}
+.rl-home .ind li{margin:0;border-bottom:1px solid var(--line-2)}
+.rl-home .ind a{display:grid;grid-template-columns:48px minmax(0,1fr) 24px;gap:6px 20px;align-items:center;padding:22px 4px;transition:background .25s}
+.rl-home .ind .ic{grid-row:1/span 2;width:48px;height:48px;display:grid;place-items:center;border:1px solid var(--line-2);color:var(--red-3);transition:all .25s}
+.rl-home .ind .t{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.rl-home .ind h3{font-size:20px;margin:0;transition:color .2s}
+.rl-home .ind .who{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+.rl-home .ind p{grid-column:2;margin:0;color:var(--ink-dim);font-size:16px}
+.rl-home .ind .ar2{grid-column:3;grid-row:1/span 2;color:var(--ink-faint);transition:all .25s}
+.rl-home .ind a:hover{background:linear-gradient(90deg,rgba(153,0,0,.10),transparent 75%)}
+.rl-home .ind a:hover .ic{border-color:var(--red);background:var(--red);color:#fff}.rl-home .ind a:hover h3{color:var(--red-3)}.rl-home .ind a:hover .ar2{color:var(--red-3);transform:translateX(4px)}
+@media(max-width:900px){.rl-home .ind{grid-template-columns:1fr}}
+/* Clients + recognition in one section */
+.rl-home .rec-sub{margin-top:clamp(56px,7vw,88px);padding-top:clamp(32px,4vw,44px);border-top:1px solid var(--line-2);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:12px clamp(32px,5vw,72px);align-items:end;margin-bottom:28px}
+.rl-home .rec-sub .ey{grid-column:1/-1}
+.rl-home .rec-sub h3{font-size:clamp(24px,2.6vw,32px);line-height:1.1;margin:0}
+.rl-home .rec-sub p{margin:0;color:var(--ink-dim);font-size:16px;max-width:60ch}
+@media(max-width:900px){.rl-home .rec-sub{grid-template-columns:1fr}}
+.rl-home .rec .tile{height:160px}
+/* Blog: heading and button left, posts right as wide cards */
+.rl-home .bl-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:clamp(40px,6vw,96px);align-items:start}
+.rl-home .bl-split .head{margin-bottom:24px}
+.rl-home .bl-posts{display:grid;gap:16px}
+.rl-home .bl-posts .pcard{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);padding:0}
+.rl-home .bl-posts .pthumb{min-height:220px;height:100%;aspect-ratio:auto}
+@media(max-width:900px){.rl-home .bl-split{grid-template-columns:1fr}}
+@media(max-width:600px){.rl-home .bl-posts .pcard{grid-template-columns:1fr}.rl-home .bl-posts .pthumb{min-height:180px}}
 /* D-158 layout variety (the split headings of step 1 were taken back at Jamil's request, D-159: intro stays under the heading) */
 /* (2) What we do: a numbered index, one row per service */
 .rl-home .ix{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-2);counter-reset:ix}
@@ -374,10 +419,10 @@ function rl_render_home() {
   <section class="band alt">
     <div class="wrap">
       <div class="head"><span class="ey"><b>[</b>&nbsp;Why AI Growth Systems&nbsp;<b>]</b></span><h2>One system. Three outcomes that move the business.</h2></div>
-      <div class="cols c3">
-        <div class="outcome"><div class="k">01</div><h3>Automate Operations</h3><p>Replace manual, disconnected marketing and research work with AI workflows that run continuously and scale without more headcount.</p></div>
-        <div class="outcome"><div class="k">02</div><h3>Improve Search Visibility</h3><p>Win on Google <em>and</em> AI search: SEO, GEO and AEO working together so you're found and cited where buyers now look.</p></div>
-        <div class="outcome"><div class="k">03</div><h3>Increase Revenue</h3><p>Turn visibility into qualified pipeline with content and systems engineered to convert intent, measured by business impact, not vanity metrics.</p></div>
+      <div class="oc">
+        <div class="oc-i"><div class="k">01</div><h3>Automate <span>Operations</span></h3><p>Replace manual, disconnected marketing and research work with AI workflows that run continuously and scale without more headcount.</p></div>
+        <div class="oc-i"><div class="k">02</div><h3>Improve <span>Search Visibility</span></h3><p>Win on Google <em>and</em> AI search: SEO, GEO and AEO working together so you're found and cited where buyers now look.</p></div>
+        <div class="oc-i"><div class="k">03</div><h3>Increase <span>Revenue</span></h3><p>Turn visibility into qualified pipeline with content and systems engineered to convert intent, measured by business impact, not vanity metrics.</p></div>
       </div>
     </div>
   </section>
@@ -400,8 +445,9 @@ function rl_render_home() {
 
   <!-- PROBLEM -->
   <section class="band alt">
-    <div class="wrap">
+    <div class="wrap pr-split">
       <div class="head"><span class="ey"><b>[</b>&nbsp;The Problem&nbsp;<b>]</b></span><h2>Why does growth stall when marketing, search and operations run apart?</h2><p class="lede">Your website, content, search visibility, CRM and team workflows each live in their own tool. Every hand-off is manual, every report is stitched together by hand, and nobody can see which effort actually produces revenue.</p></div>
+      <div>
       <div class="pains">
         <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Manual work eats the week.</b> Reporting, briefs, follow-ups and publishing still run on copy-paste. That is time your team should spend on decisions.</p></div>
         <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Search visibility is fragmenting.</b> Buyers now research in Google, ChatGPT, Perplexity and AI Overviews. Most growth plans still measure only one of them.</p></div>
@@ -409,6 +455,7 @@ function rl_render_home() {
         <div class="pain"><span class="x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><p><b>Reports describe activity, not revenue.</b> Rankings and traffic charts say little about what is actually growing the business.</p></div>
       </div>
       <p class="src">Sources: <a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">Google Search Central: AI features and your website</a> · <a href="https://platform.openai.com/docs/bots" rel="noopener" target="_blank">OpenAI: crawlers and user agents</a> · <a href="https://docs.perplexity.ai/guides/bots" rel="noopener" target="_blank">Perplexity: crawlers</a></p>
+      </div>
     </div>
   </section>
 
@@ -429,16 +476,16 @@ function rl_render_home() {
   <section class="band alt icp">
     <div class="wrap">
       <div class="head"><span class="ey"><b>[</b>&nbsp;Industries&nbsp;<b>]</b></span><h2>Built around how your industry buys.</h2><p class="lede">The same system, configured for your market's buyers, regulations and sales cycle.</p></div>
-      <div class="cols c4">
-        <a class="cell" href="<?php echo esc_url($u('industries/pharmaceutical')); ?>"><div class="who">Regulated</div><h3>Pharmaceutical &amp; Life Sciences</h3><p>Compliant content and automated workflows for long, evidence-driven buying cycles.</p></a>
-        <a class="cell" href="<?php echo esc_url($u('industries/healthcare')); ?>"><div class="who">Trust</div><h3>Healthcare</h3><p>Visibility for patient- and provider-facing search, with review workflows built in.</p></a>
-        <a class="cell" href="<?php echo esc_url($u('industries/b2b-saas')); ?>"><div class="who">Pipeline</div><h3>B2B SaaS</h3><p>Search, content and lead routing connected to trial, demo and revenue data.</p></a>
-        <a class="cell" href="<?php echo esc_url($u('industries/ecommerce')); ?>"><div class="who">Conversion</div><h3>E-commerce</h3><p>Catalog content and search visibility measured against orders, not traffic.</p></a>
-        <a class="cell" href="<?php echo esc_url($u('industries/manufacturing')); ?>"><div class="who">Technical</div><h3>Manufacturing</h3><p>Make technical capability findable and route RFQs to the right team faster.</p></a>
-        <a class="cell" href="<?php echo esc_url($u('industries/technology')); ?>"><div class="who">Complex sale</div><h3>Technology</h3><p>Content and lead systems for multi-stakeholder buying committees.</p></a>
-        <a class="cell" href="<?php echo esc_url($u('industries/professional-services')); ?>"><div class="who">Referral</div><h3>Professional Services</h3><p>Authority and lead capture for firms, including finance, legal and consulting.</p></a>
-        <a class="cell" href="<?php echo esc_url($u('industries/education')); ?>"><div class="who">Enrollment</div><h3>Education</h3><p>Program visibility and enquiry automation across the full enrollment cycle.</p></a>
-      </div>
+      <ul class="ind">
+        <li><a href="<?php echo esc_url($u('industries/pharmaceutical')); ?>"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" focusable="false"><path d="M9 3h6M10 3v6l-5 10.5V21h14v-1.5L14 9V3M7.5 15h9"/></svg></span><div class="t"><h3>Pharmaceutical &amp; Life Sciences</h3><span class="who">Regulated</span></div><p>Compliant content and automated workflows for long, evidence-driven buying cycles.</p><span class="ar2" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" focusable="false"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a></li>
+        <li><a href="<?php echo esc_url($u('industries/healthcare')); ?>"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" focusable="false"><path d="M9 4h6v5h5v6h-5v5H9v-5H4V9h5z"/></svg></span><div class="t"><h3>Healthcare</h3><span class="who">Trust</span></div><p>Visibility for patient- and provider-facing search, with review workflows built in.</p><span class="ar2" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" focusable="false"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a></li>
+        <li><a href="<?php echo esc_url($u('industries/b2b-saas')); ?>"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" focusable="false"><path d="M12 3l9 5-9 5-9-5 9-5zM3 12.5l9 5 9-5M3 17l9 5 9-5"/></svg></span><div class="t"><h3>B2B SaaS</h3><span class="who">Pipeline</span></div><p>Search, content and lead routing connected to trial, demo and revenue data.</p><span class="ar2" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" focusable="false"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a></li>
+        <li><a href="<?php echo esc_url($u('industries/ecommerce')); ?>"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" focusable="false"><path d="M4 8h16l-1.5 12h-13L4 8zM9 8V4h6v4"/></svg></span><div class="t"><h3>E-commerce</h3><span class="who">Conversion</span></div><p>Catalog content and search visibility measured against orders, not traffic.</p><span class="ar2" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" focusable="false"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a></li>
+        <li><a href="<?php echo esc_url($u('industries/manufacturing')); ?>"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" focusable="false"><path d="M3 21V11l6 3.5V11l6 3.5V5h6v16H3zM7 17h2M12 17h2"/></svg></span><div class="t"><h3>Manufacturing</h3><span class="who">Technical</span></div><p>Make technical capability findable and route RFQs to the right team faster.</p><span class="ar2" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" focusable="false"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a></li>
+        <li><a href="<?php echo esc_url($u('industries/technology')); ?>"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" focusable="false"><path d="M7 7h10v10H7zM10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></span><div class="t"><h3>Technology</h3><span class="who">Complex sale</span></div><p>Content and lead systems for multi-stakeholder buying committees.</p><span class="ar2" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" focusable="false"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a></li>
+        <li><a href="<?php echo esc_url($u('industries/professional-services')); ?>"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" focusable="false"><path d="M3 8h18v12H3zM9 8V4h6v4M3 13h18"/></svg></span><div class="t"><h3>Professional Services</h3><span class="who">Referral</span></div><p>Authority and lead capture for firms, including finance, legal and consulting.</p><span class="ar2" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" focusable="false"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a></li>
+        <li><a href="<?php echo esc_url($u('industries/education')); ?>"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" focusable="false"><path d="M2 9l10-5 10 5-10 5L2 9zM6 11v5.5l6 3 6-3V11M22 9v6"/></svg></span><div class="t"><h3>Education</h3><span class="who">Enrollment</span></div><p>Program visibility and enquiry automation across the full enrollment cycle.</p><span class="ar2" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" focusable="false"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a></li>
+      </ul>
     </div>
   </section>
 
@@ -496,13 +543,8 @@ function rl_render_home() {
         <?php } ?>
       </div>
       <p class="cl-more"><a class="more" href="<?php echo esc_url($u('clients')); ?>">See all <?php echo $names ? count($names) : 46; ?> clients &rarr;</a></p>
-    </div>
-  </section>
-
-  <!-- RECOGNITION (D-152): each badge links to the page on the directory's own site -->
-  <section id="recognition">
-    <div class="wrap">
-      <div class="head"><span class="ey"><b>[</b>&nbsp;Recognition&nbsp;<b>]</b></span><h2>Recognized by independent directories.</h2><p class="lede">GoodFirms, FindBestFirms and DesignRush list and rank agencies on their own research. Select a badge to see it on their site. <a class="inl" href="<?php echo esc_url($u('awards')); ?>">See all awards</a>.</p></div>
+      <!-- RECOGNITION (D-152, merged into Clients D-160): each badge links to the page on the directory's own site -->
+      <div class="rec-sub" id="recognition"><span class="ey"><b>[</b>&nbsp;Recognition&nbsp;<b>]</b></span><h3>Recognized by independent directories.</h3><p>GoodFirms, FindBestFirms and DesignRush list and rank agencies on their own research. Select a badge to see it on their site. <a class="inl" href="<?php echo esc_url($u('awards')); ?>">See all awards</a>.</p></div>
       <ul class="recs">
         <?php foreach (rl_home_badges() as $b) { ?>
         <li><a class="rec" href="<?php echo esc_url($b['url']); ?>" target="_blank" rel="noopener"><span class="tile"><img src="<?php echo esc_url(rl_home_badge_src($b['file'])); ?>" alt="<?php echo esc_attr($b['alt']); ?>" width="<?php echo (int) $b['w']; ?>" height="<?php echo (int) $b['h']; ?>" loading="lazy" decoding="async"></span><span class="cap"><span class="who"><?php echo esc_html($b['who']); ?></span><span class="what"><?php echo esc_html($b['what']); ?></span></span></a></li>
@@ -555,9 +597,12 @@ function rl_render_home() {
 
   <!-- BLOG -->
   <section>
-    <div class="wrap">
+    <div class="wrap bl-split">
+      <div>
       <div class="head"><span class="ey"><b>[</b>&nbsp;Insights&nbsp;<b>]</b></span><h2>From the blog.</h2><p class="lede">Field notes on AI Search, GEO, evidence-based content, and building growth systems that keep improving.</p></div>
-      <div class="cols c3">
+      <div class="cta-row"><a class="btn g" href="<?php echo esc_url(rl_url_by_path('blog')); ?>">Read the blog <span class="ar">&rarr;</span></a></div>
+      </div>
+      <div class="bl-posts">
         <?php
         $bq = new WP_Query(array('post_type'=>'post','posts_per_page'=>3,'post_status'=>'publish','ignore_sticky_posts'=>true));
         if ($bq->have_posts()) {
@@ -591,7 +636,6 @@ function rl_render_home() {
           <?php }
         } ?>
       </div>
-      <div class="cta-row"><a class="btn g" href="<?php echo esc_url(rl_url_by_path('blog')); ?>">Read the blog <span class="ar">&rarr;</span></a></div>
     </div>
   </section>
 
