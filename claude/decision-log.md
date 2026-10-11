@@ -20,6 +20,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
+| D-164 | Scroll motion, phase 2: home headings reveal line by line (SplitText, reverted after), services and industries rows fade up in turn, red reading-progress bar, closing CTA glow builds on scroll; header slims on scroll sitewide (desktop, transform only, no layout shift); Lighthouse desktop 96, mobile 90 (baseline 91) | 11 Oct | DONE (Jamil asked for phase 2); phase 3 (service and industry pages) waits | `core/reinforce-motion.js`, `core/reinforce-header.php` |
 | D-163 | Scroll motion, phase 1: GSAP 3.15 + ScrollTrigger self-hosted (home only, deferred, about 46 KB compressed); How it works rail draws with scroll, Search Authority OS holds while its five stages light up, Packages ladder rises; Lenis off; no change to text, hero or SEO; Lighthouse desktop 96 before and after, mobile 91 before, 89 after (median, within run-to-run noise) | 11 Oct | DONE (Jamil: "Go ahead with Phase 1? yes"); phase 2 waits for approval | `core/reinforce-motion.php`, `core/reinforce-motion.js` |
 | D-162 | Home Proof section ("We run this system on ourselves", four placeholder tags) removed until there are real results; same placeholder block still on /search-authority-os/ (Jamil to decide) | 11 Oct | DONE (Jamil: "Remove and", message cut off) | `pages/reinforce-home.php` |
 | D-161 | Home Recognition leads with the HackerNoon award: featured card "Winner, Startups of The Year 2024 in Dhaka" plus 11th in Marketing, two honourable mentions and Startups of the Week, each linked to HackerNoon; text from the /awards/ source; sub-heading now "Awards and recognition." | 11 Oct | DONE (Jamil: "what about my hackernoon startup award") | `pages/reinforce-home.php` |
@@ -231,6 +232,18 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-164 · Scroll motion, phase 2
+**Date:** 11 October 2026 · **Status:** DONE (Jamil: "Now ... Next: Phase 2, lighter motion across the rest of the home page"); phase 3 waits for approval
+
+- **Headings:** every home section heading below the hero (h2, and the Recognition h3) slides up line by line out of a mask once, as it enters (`expo.out`, 1.1 s, 0.09 s between lines). GSAP SplitText 3.15 (free, self-hosted, `core/vendor/SplitText.min.js`, 3.7 KB compressed). The split is reverted when the reveal ends, so the heading HTML is exactly what the server sent (checked: no split elements left after scrolling).
+- **Rows:** the services index (6 rows) and the industries list (8 rows) fade up in turn as they enter (ScrollTrigger.batch, 0.08 s stagger).
+- **Progress bar:** 2px red bar across the top of the window, filled with page scroll. Home only.
+- **Closing CTA:** the red glow under "Find out what's limiting your growth." builds from 20% to full as the panel comes into view (CSS variable `--glow`, scrubbed).
+- **Header (sitewide, `core/reinforce-header.php`):** after 80px of scroll the header becomes 14px slimmer with a darker background and a slightly smaller logo; back above 40px. Done with transform (header moved up 14px, contents down 7px), so the page below never moves (layout shift measured during a full scroll: none added). Desktop only (at 1150px and below the phone menu is placed against the full 72px header). Plain script, no GSAP, so it works on every page.
+- **Measured:** Lighthouse home, 3 runs: desktop 96, 97, 96 (baseline 96); mobile 90, 90, 90 (baseline 91), mobile blocking time 70 to 100 ms (SplitText work, inside Google's good range of 200 ms), CLS 0 to 0.015 (the existing font swap). Page weight 333 KiB. axe 0 at 390 and 1440. Phone width 390 on Home and About. No console errors.
 
 ---
 
