@@ -91,19 +91,21 @@
 
   /* 4. Section headings (never the hero): lines slide up from a mask, once; the split is reverted when done. */
   function headings() {
-    if (!SplitText) return;
-    var hs = document.querySelectorAll('.rl-home section:not(.hero) h2, .rl-home .rec-sub h3');
-    hs.forEach(function (h) {
-      SplitText.create(h, {
-        type: 'lines', mask: 'lines', autoSplit: true,
-        onSplit: function (self) {
-          return gsap.from(self.lines, {
-            yPercent: 105, duration: 1.1, ease: 'expo.out', stagger: 0.09,
-            scrollTrigger: { trigger: h, start: 'top 88%', once: true },
-            onComplete: function () { self.revert(); }
-          });
-        }
-      });
+    if (!SplitText) return [];
+    /* one task per heading, so the line splitting never adds up to one long task */
+    return [].slice.call(document.querySelectorAll('.rl-home section:not(.hero) h2, .rl-home .rec-sub h3')).map(function (h) {
+      return function () {
+        SplitText.create(h, {
+          type: 'lines', mask: 'lines', autoSplit: true,
+          onSplit: function (self) {
+            return gsap.from(self.lines, {
+              yPercent: 105, duration: 1.1, ease: 'expo.out', stagger: 0.09,
+              scrollTrigger: { trigger: h, start: 'top 88%', once: true },
+              onComplete: function () { self.revert(); }
+            });
+          }
+        });
+      };
     });
   }
 
@@ -187,31 +189,40 @@
     return offs;
   }
 
-  var mm = gsap.matchMedia();
-  mm.add({ motion: '(prefers-reduced-motion: no-preference)', wide: '(min-width: 901px)' }, function (ctx) {
-    if (!ctx.conditions.motion) return;
-    root.classList.add('rl-mo');
-    timeline(ctx.conditions.wide);
-    osEngine(ctx.conditions.wide);
-    ladder();
-    headings();
-    rows();
-    var bar = progress();
-    glow();
-    outcomes();
-    cardsIn();
-    var cup = award();
-    var offs = ctx.conditions.wide ? tilt() : [];
-    return function () {
-      offs.forEach(function (f) { f(); });
-      if (cup) cup.forEach(function (p) { p.style.strokeDasharray = ''; p.style.strokeDashoffset = ''; });
-      root.classList.remove('rl-mo');
-      if (bar && bar.parentNode) bar.parentNode.removeChild(bar);
-      document.querySelectorAll('.rl-home .tline li.on, .rl-home .os-steps li.on').forEach(function (li) { li.classList.remove('on'); });
-    };
-  });
+  /* Setup runs after the page has loaded, one feature per task with a yield in between (D-165): on a slow
+     phone no single task gets long, so the motion adds almost nothing to Total Blocking Time. */
+  var idle = window.requestIdleCallback ? function (fn) { window.requestIdleCallback(fn, { timeout: 600 }); } : function (fn) { setTimeout(fn, 1); };
 
-  /* lazy images and web fonts change heights after load: measure again so triggers sit in the right place */
-  window.addEventListener('load', function () { ScrollTrigger.refresh(); });
+  function boot() {
+    var mm = gsap.matchMedia();
+    mm.add({ motion: '(prefers-reduced-motion: no-preference)', wide: '(min-width: 901px)' }, function (ctx) {
+      if (!ctx.conditions.motion) return;
+      var wide = ctx.conditions.wide, bar = null, cup = null, offs = [], live = true;
+      root.classList.add('rl-mo');
+      var tasks = [
+        function () { timeline(wide); }, function () { osEngine(wide); }, ladder
+      ].concat(headings(), [
+        rows, function () { bar = progress(); }, glow, outcomes, cardsIn,
+        function () { cup = award(); }, function () { if (wide) offs = tilt(); },
+        function () { ScrollTrigger.refresh(); }
+      ]);
+      (function next(i) {
+        if (!live || i >= tasks.length) return;
+        ctx.add(tasks[i]);
+        idle(function () { next(i + 1); });
+      })(0);
+      return function () {
+        live = false;
+        offs.forEach(function (f) { f(); });
+        if (cup) cup.forEach(function (p) { p.style.strokeDasharray = ''; p.style.strokeDashoffset = ''; });
+        root.classList.remove('rl-mo');
+        if (bar && bar.parentNode) bar.parentNode.removeChild(bar);
+        document.querySelectorAll('.rl-home .tline li.on, .rl-home .os-steps li.on').forEach(function (li) { li.classList.remove('on'); });
+      };
+    });
+  }
+  if (document.readyState === 'complete') idle(boot); else window.addEventListener('load', function () { idle(boot); });
+
+  /* web fonts change heights: measure again so triggers sit in the right place (the last setup task also refreshes) */
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { ScrollTrigger.refresh(); });
 })();
