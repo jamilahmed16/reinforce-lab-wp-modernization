@@ -1,6 +1,6 @@
 [
  {
-  "count": 23,
+  "count": 26,
   "description": "",
   "id": 16,
   "name": "B2B Marketing",
@@ -8,7 +8,7 @@
   "taxonomy": "category"
  },
  {
-  "count": 74,
+  "count": 76,
   "description": "",
   "id": 5,
   "name": "Business",
@@ -16,7 +16,7 @@
   "taxonomy": "category"
  },
  {
-  "count": 0,
+  "count": 2,
   "description": "",
   "id": 21,
   "name": "Church Marketing",
@@ -32,7 +32,7 @@
   "taxonomy": "category"
  },
  {
-  "count": 46,
+  "count": 48,
   "description": "",
   "id": 10,
   "name": "Content Marketing",
@@ -40,7 +40,7 @@
   "taxonomy": "category"
  },
  {
-  "count": 2,
+  "count": 5,
   "description": "",
   "id": 24,
   "name": "Copywriting",
@@ -80,7 +80,7 @@
   "taxonomy": "category"
  },
  {
-  "count": 17,
+  "count": 19,
   "description": "",
   "id": 17,
   "name": "Local SEO",
@@ -88,7 +88,15 @@
   "taxonomy": "category"
  },
  {
-  "count": 34,
+  "count": 1,
+  "description": "",
+  "id": 28,
+  "name": "Real Estate Marketing",
+  "slug": "real-estate-marketing",
+  "taxonomy": "category"
+ },
+ {
+  "count": 37,
   "description": "",
   "id": 12,
   "name": "Search Engine Optimization",
@@ -136,7 +144,7 @@
   "taxonomy": "category"
  },
  {
-  "count": 24,
+  "count": 26,
   "description": "",
   "id": 9,
   "name": "Social Media Marketing",
@@ -176,7 +184,7 @@
   "taxonomy": "category"
  },
  {
-  "count": 17,
+  "count": 19,
   "description": "",
   "id": 19,
   "name": "Web Design",

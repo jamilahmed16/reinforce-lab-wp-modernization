@@ -273,7 +273,7 @@ add_action('wp_head', function () {
 .rl-guide .g-plate-top div:last-child{border-right:0}
 .rl-guide .g-plate-top b{display:block;font-family:var(--f-display);font-size:30px;font-weight:500;color:var(--ink);line-height:1}
 .rl-guide .g-plate-top span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
-.rl-guide .g-plate ol{list-style:none;margin:0;padding:8px 0}
+.rl-guide .g-plate ol{list-style:none;margin:0;padding:8px 0;max-height:440px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--red-line) transparent} /* D-179: long guides (carried posts reach 19 to 40 chapters) keep the cover compact; the full list is also in the sticky contents rail */
 .rl-guide .g-plate li a{display:grid;grid-template-columns:44px minmax(0,1fr) auto;overflow-wrap:anywhere;gap:8px;align-items:baseline;padding:9px 18px;text-decoration:none;color:var(--ink-dim);font-size:14.5px}
 .rl-guide .g-plate li a:hover{background:rgba(255,255,255,.03);color:var(--ink)}
 .rl-guide .g-plate .n{font-family:var(--f-mono);font-size:12px;color:var(--red-3)}
