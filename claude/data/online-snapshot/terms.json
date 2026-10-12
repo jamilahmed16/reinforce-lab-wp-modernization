@@ -1,10 +1,194 @@
 [
  {
+  "count": 23,
+  "description": "",
+  "id": 16,
+  "name": "B2B Marketing",
+  "slug": "b2b-marketing",
+  "taxonomy": "category"
+ },
+ {
+  "count": 74,
+  "description": "",
+  "id": 5,
+  "name": "Business",
+  "slug": "business",
+  "taxonomy": "category"
+ },
+ {
+  "count": 0,
+  "description": "",
+  "id": 21,
+  "name": "Church Marketing",
+  "slug": "church-marketing",
+  "taxonomy": "category"
+ },
+ {
+  "count": 0,
+  "description": "",
+  "id": 26,
+  "name": "Clothing Brand Marketing",
+  "slug": "clothing-brand-marketing",
+  "taxonomy": "category"
+ },
+ {
+  "count": 46,
+  "description": "",
+  "id": 10,
+  "name": "Content Marketing",
+  "slug": "content-marketing",
+  "taxonomy": "category"
+ },
+ {
+  "count": 2,
+  "description": "",
+  "id": 24,
+  "name": "Copywriting",
+  "slug": "copywriting",
+  "taxonomy": "category"
+ },
+ {
+  "count": 48,
+  "description": "",
+  "id": 6,
+  "name": "Digital Marketing",
+  "slug": "digital-marketing",
+  "taxonomy": "category"
+ },
+ {
+  "count": 0,
+  "description": "",
+  "id": 18,
+  "name": "Digital Marketing Competitor",
+  "slug": "digital-marketing-competitor",
+  "taxonomy": "category"
+ },
+ {
+  "count": 1,
+  "description": "",
+  "id": 22,
+  "name": "Healthcare",
+  "slug": "healthcare",
+  "taxonomy": "category"
+ },
+ {
+  "count": 0,
+  "description": "",
+  "id": 27,
+  "name": "Hotel Marketing",
+  "slug": "hotel-marketing",
+  "taxonomy": "category"
+ },
+ {
+  "count": 17,
+  "description": "",
+  "id": 17,
+  "name": "Local SEO",
+  "slug": "local-seo",
+  "taxonomy": "category"
+ },
+ {
+  "count": 34,
+  "description": "",
+  "id": 12,
+  "name": "Search Engine Optimization",
+  "slug": "search-engine-optimization",
+  "taxonomy": "category"
+ },
+ {
+  "count": 33,
+  "description": "",
+  "id": 13,
+  "name": "SEO Tips",
+  "slug": "seo-tips",
+  "taxonomy": "category"
+ },
+ {
+  "count": 58,
+  "description": "",
+  "id": 11,
+  "name": "Small Business",
+  "slug": "small-business",
+  "taxonomy": "category"
+ },
+ {
+  "count": 13,
+  "description": "",
+  "id": 7,
+  "name": "Social Media",
+  "slug": "social-media",
+  "taxonomy": "category"
+ },
+ {
+  "count": 6,
+  "description": "",
+  "id": 20,
+  "name": "Social Media Advertising",
+  "slug": "social-media-advertising",
+  "taxonomy": "category"
+ },
+ {
+  "count": 7,
+  "description": "",
+  "id": 8,
+  "name": "Social Media Management",
+  "slug": "social-media-management",
+  "taxonomy": "category"
+ },
+ {
+  "count": 24,
+  "description": "",
+  "id": 9,
+  "name": "Social Media Marketing",
+  "slug": "social-media-marketing",
+  "taxonomy": "category"
+ },
+ {
+  "count": 49,
+  "description": "",
+  "id": 14,
+  "name": "Strategy",
+  "slug": "strategy",
+  "taxonomy": "category"
+ },
+ {
+  "count": 2,
+  "description": "",
+  "id": 25,
+  "name": "Trends",
+  "slug": "trends",
+  "taxonomy": "category"
+ },
+ {
   "count": 1,
   "description": "",
   "id": 1,
   "name": "Uncategorized",
   "slug": "uncategorized",
+  "taxonomy": "category"
+ },
+ {
+  "count": 1,
+  "description": "",
+  "id": 23,
+  "name": "Video Marketing",
+  "slug": "video-marketing",
+  "taxonomy": "category"
+ },
+ {
+  "count": 17,
+  "description": "",
+  "id": 19,
+  "name": "Web Design",
+  "slug": "web-design",
+  "taxonomy": "category"
+ },
+ {
+  "count": 13,
+  "description": "",
+  "id": 15,
+  "name": "Web Hosting",
+  "slug": "web-hosting",
   "taxonomy": "category"
  }
 ]

@@ -147,7 +147,7 @@ foreach (get_posts(["post_type" => ["page","post","rl_project"], "post_status" =
   $rl = []; foreach (get_post_meta($p->ID) as $k => $v) if (strpos($k, "rl_") === 0) $rl[$k] = maybe_unserialize($v[0]);
   $pages[] = ["id" => $p->ID, "type" => $p->post_type, "status" => $p->post_status, "title" => $p->post_title, "slug" => $p->post_name, "parent" => $p->post_parent,
     "path" => trim(str_replace(home_url("/"), "/", get_permalink($p)), ""), "template" => get_page_template_slug($p) ?: null,
-    "content" => $p->post_content, "excerpt" => $p->post_excerpt, "date" => $p->post_date, "modified" => $p->post_modified, "seo" => $m, "rl_fields" => $rl];
+    "content" => get_post_meta($p->ID, "_rl_carried", true) ? null : $p->post_content, "content_md5" => md5($p->post_content), "carried" => get_post_meta($p->ID, "_rl_carried", true) ?: null, "excerpt" => $p->post_excerpt, "date" => $p->post_date, "modified" => $p->post_modified, "seo" => $m, "rl_fields" => $rl];
 }
 $menus = [];
 foreach (wp_get_nav_menus() as $mn) { $items = [];
@@ -171,6 +171,9 @@ return ["pages" => $pages, "menus" => $menus, "menu_locations" => $locations, "o
         if secret.search(name) and isinstance(o, str) and o.strip():
             return '[redacted]'
         return o
+    if not isinstance(rv, dict):
+        raise SystemExit('snapshot: no data returned (errors: %s)' % errs)
+    # carried posts (D-178): full text lives in claude/data/production-posts/; the snapshot keeps an md5 of the content
     for k in ('yoast', 'rl_options', 'options'):
         rv[k] = redact(rv[k])
     os.makedirs(SNAP, exist_ok=True)
