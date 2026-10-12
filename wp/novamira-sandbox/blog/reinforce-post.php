@@ -111,6 +111,29 @@ function rl_post_data($id) {
     ];
 }
 
+/* D-179: the main category of a post = Yoast's primary category when set (chip, breadcrumb, related posts, blog cards),
+   else the first category that is not the default one. */
+function rl_post_main_cat($id) {
+    $cats = get_the_category($id);
+    if (!$cats) return null;
+    $pri = (int) get_post_meta($id, '_yoast_wpseo_primary_category', true);
+    if ($pri) foreach ($cats as $c) if ((int) $c->term_id === $pri) return $c;
+    foreach ($cats as $c) if ((int) $c->term_id !== (int) get_option('default_category')) return $c;
+    return $cats[0];
+}
+
+/* D-179: posts carried across from production (D-178) often have one H2 (or none) and their sections in H3, so the
+   contents list, chapters and How-To steps (all built from H2) came out as "1 chapter". For those posts only, when the
+   body has at most one H2, H3 becomes H2 and H4 becomes H3 as the page is shown. The stored post is not changed and
+   no words change. */
+add_filter('the_content', function ($html) {
+    $id = get_the_ID();
+    if (!$id || get_post_type($id) !== 'post' || !get_post_meta($id, '_rl_carried', true)) return $html;
+    if (preg_match_all('#<h2\b#i', $html) > 1 || !preg_match('#<h3\b#i', $html)) return $html;
+    $out = preg_replace(['#<(/?)h3\b#i', '#<(/?)h4\b#i'], ['<$1rl-h2', '<$1rl-h3'], $html); // temporary names, so an H3 is not raised twice
+    return $out === null ? $html : str_replace(['<rl-h2', '</rl-h2', '<rl-h3', '</rl-h3'], ['<h2', '</h2', '<h3', '</h3'], $out);
+}, 20);
+
 /* Adds ids to H2/H3 in the article body and returns [html, toc]. Contents list = H2s only. */
 function rl_post_prepare($html) {
     $toc = []; $used = [];
@@ -295,8 +318,7 @@ function rl_post_output() {
         $mins = rl_post_minutes($body);
         $blog = (int) get_option('page_for_posts');
         $blog_url = $blog ? get_permalink($blog) : home_url('/');
-        $cats = get_the_category($id);
-        $cat = null; foreach ($cats as $c) if ((int) $c->term_id !== (int) get_option('default_category')) { $cat = $c; break; }
+        $cat = rl_post_main_cat($id); // D-179
         $aid = (int) get_post_field('post_author', $id);
         $aname = get_the_author_meta('display_name', $aid);
         $founder = function_exists('rl_about_person') && $aname === rl_about_person()['name'] ? rl_about_person() : null;
