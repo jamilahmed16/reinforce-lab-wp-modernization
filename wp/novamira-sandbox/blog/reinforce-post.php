@@ -124,12 +124,16 @@ function rl_post_main_cat($id) {
 
 /* D-179: posts carried across from production (D-178) often have one H2 (or none) and their sections in H3, so the
    contents list, chapters and How-To steps (all built from H2) came out as "1 chapter". For those posts only, when the
-   body has at most one H2, H3 becomes H2 and H4 becomes H3 as the page is shown. The stored post is not changed and
+   real sections are in H3 (at least 4 H3s and at least three times as many H3s as H2s that have text; many old posts
+   also carry empty H2 tags), H3 becomes H2 and H4 becomes H3 as the page is shown. The stored post is not changed and
    no words change. */
 add_filter('the_content', function ($html) {
     $id = get_the_ID();
     if (!$id || get_post_type($id) !== 'post' || !get_post_meta($id, '_rl_carried', true)) return $html;
-    if (preg_match_all('#<h2\b#i', $html) > 1 || !preg_match('#<h3\b#i', $html)) return $html;
+    preg_match_all('#<h2\b[^>]*>(.*?)</h2>#is', $html, $m2);
+    $h2 = count(array_filter($m2[1], function ($t) { return trim(html_entity_decode(wp_strip_all_tags($t), ENT_QUOTES, 'UTF-8')) !== ''; }));
+    $h3 = preg_match_all('#<h3\b#i', $html);
+    if ($h3 < 4 || $h3 < 3 * $h2) return $html;
     $out = preg_replace(['#<(/?)h3\b#i', '#<(/?)h4\b#i'], ['<$1rl-h2', '<$1rl-h3'], $html); // temporary names, so an H3 is not raised twice
     return $out === null ? $html : str_replace(['<rl-h2', '</rl-h2', '<rl-h3', '</rl-h3'], ['<h2', '</h2', '<h3', '</h3'], $out);
 }, 20);
