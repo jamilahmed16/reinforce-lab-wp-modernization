@@ -225,6 +225,22 @@ body.rl-post-page .fl-page-content,body.rl-post-page .fl-content,body.rl-post-pa
 </style>
 <?php }
 
+/* D-178: posts carried across from production show the "Reinforce Lab team" byline until Jamil rewrites them (D-145).
+   A team is not a Person: their Article credits the Organization, and the generic Person node is dropped. */
+add_filter('wpseo_schema_graph', function ($graph) {
+    if (!is_array($graph) || !is_singular('post')) return $graph;
+    $u = get_userdata((int) get_post_field('post_author', get_queried_object_id()));
+    if (!$u || $u->user_login !== 'reinforcelab-team') return $graph;
+    $pid = rl_person_schema_id($u->ID); $org = ['@id' => home_url('/#organization')];
+    $out = [];
+    foreach ($graph as $n) {
+        if (is_array($n) && isset($n['@id']) && ($n['@id'] === $pid || (($n['@type'] ?? '') === 'Person' && ($n['name'] ?? '') === $u->display_name))) continue;
+        if (is_array($n) && !empty($n['author'])) $n['author'] = $org;
+        $out[] = $n;
+    }
+    return $out;
+}, 99);
+
 add_filter('wpseo_schema_graph', function ($graph) {
     if (!is_array($graph) || !rl_is_post_view()) return $graph;
     $id = get_queried_object_id();
