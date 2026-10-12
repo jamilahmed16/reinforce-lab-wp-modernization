@@ -432,10 +432,10 @@ add_action('wp_head', function () {
   .rl-upd .ar p{grid-column:1/-1}
   .rl-upd .official{grid-template-columns:minmax(0,1fr)}
   .rl-upd .official .mk{font-size:48px}
-  .rl-upd .u-icta{grid-template-columns:1fr;padding-left:16px}
+  .rl-upd .u-icta{grid-template-columns:minmax(0,1fr);padding-left:16px}
   .rl-upd .cact{padding-right:16px}
   .rl-upd .u-back,.rl-upd .u-take{grid-template-columns:minmax(0,1fr)}
-  .rl-upd .u-author{grid-template-columns:1fr}
+  .rl-upd .u-author{grid-template-columns:minmax(0,1fr)}
   .rl-upd .u-prose p,.rl-upd .u-prose li{font-size:16.5px}
 }
 @media(prefers-reduced-motion:reduce){.rl-upd .s-rolling i,.rl-upd .u-log .lh b i{animation:none}.rl-upd .go2{transition:none}}

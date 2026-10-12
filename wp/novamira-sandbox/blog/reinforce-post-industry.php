@@ -424,9 +424,9 @@ add_action('wp_head', function () {
   .rl-ind .mv .tags{grid-column:2}
   .rl-ind .wa,.rl-ind .i-back,.rl-ind .indcard,.rl-ind .i-take{grid-template-columns:minmax(0,1fr)}
   .rl-ind .indcard .l{border-right:0;border-bottom:1px solid var(--line-2)}
-  .rl-ind .i-icta{grid-template-columns:1fr;padding-left:16px}
+  .rl-ind .i-icta{grid-template-columns:minmax(0,1fr);padding-left:16px}
   .rl-ind .cact{padding-right:16px}
-  .rl-ind .i-author{grid-template-columns:1fr}
+  .rl-ind .i-author{grid-template-columns:minmax(0,1fr)}
   .rl-ind .i-prose p,.rl-ind .i-prose li{font-size:16.5px}
 }
 @media(prefers-reduced-motion:reduce){.rl-ind .go2{transition:none}}

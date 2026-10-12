@@ -385,8 +385,8 @@ add_action('wp_head', function () {
 .rl-guide .rel .posts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
 .rl-guide .rel .post{background:var(--bg-2);padding:22px;display:flex;flex-direction:column;gap:10px}
 @media(max-width:1000px){
-  .rl-guide .g-cover{grid-template-columns:1fr}
-  .rl-guide .g-book{grid-template-columns:1fr}
+  .rl-guide .g-cover{grid-template-columns:minmax(0,1fr)}
+  .rl-guide .g-book{grid-template-columns:minmax(0,1fr)}
   .rl-guide .g-rail{display:none}
   .rl-guide .g-mbar{display:block;position:sticky;top:64px;z-index:5;background:rgba(18,16,17,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-2);margin-inline:calc(var(--gutter) * -1);padding:10px var(--gutter) 0;margin-bottom:22px}
   .rl-guide .g-mbar .row{display:flex;justify-content:space-between;gap:10px;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);padding-bottom:9px}
@@ -396,15 +396,15 @@ add_action('wp_head', function () {
   .rl-guide .rel .posts{grid-template-columns:1fr 1fr}
 }
 @media(max-width:700px){
-  .rl-guide .g-take,.rl-guide .g-gloss,.rl-guide .g-two,.rl-guide .g-hub,.rl-guide .rel .posts{grid-template-columns:1fr}
+  .rl-guide .g-take,.rl-guide .g-gloss,.rl-guide .g-two,.rl-guide .g-hub,.rl-guide .rel .posts{grid-template-columns:minmax(0,1fr)}
   .rl-guide .g-hub .core{border-right:0;border-bottom:1px solid var(--line-2)}
   .rl-guide .g-hub li a{grid-template-columns:1fr 20px}.rl-guide .g-hub .ty{grid-column:1/-1}
   .rl-guide .g-plate-top b{font-size:24px}
   .rl-guide .g-open{grid-template-columns:minmax(0,1fr);gap:10px}
   .rl-guide .g-num{font-size:64px}
   .rl-guide .g-prose p,.rl-guide .g-prose li{font-size:16.5px}
-  .rl-guide .g-icta{grid-template-columns:1fr;padding-left:16px}.rl-guide .g-icta .act{padding-right:16px}
-  .rl-guide .g-author{grid-template-columns:1fr}
+  .rl-guide .g-icta{grid-template-columns:minmax(0,1fr);padding-left:16px}.rl-guide .g-icta .act{padding-right:16px}
+  .rl-guide .g-author{grid-template-columns:minmax(0,1fr)}
 }
 @media(prefers-reduced-motion:reduce){.rl-guide .g-rail .fill{transition:none}}
 </style>

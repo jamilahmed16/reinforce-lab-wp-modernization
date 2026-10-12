@@ -535,10 +535,10 @@ add_action('wp_head', function () {
   .rl-review .r-log li{grid-template-columns:24px minmax(0,1fr)}
   .rl-review .r-log time{grid-column:2;text-align:left}
   .rl-review .r-log .dot{grid-row:1/3;grid-column:1}
-  .rl-review .r-icta{grid-template-columns:1fr;padding-left:16px}
+  .rl-review .r-icta{grid-template-columns:minmax(0,1fr);padding-left:16px}
   .rl-review .cact{padding-right:16px}
   .rl-review .r-final,.rl-review .r-final.noscore{grid-template-columns:minmax(0,1fr)}
-  .rl-review .r-author{grid-template-columns:1fr}
+  .rl-review .r-author{grid-template-columns:minmax(0,1fr)}
   .rl-review .r-prose p,.rl-review .r-prose li{font-size:16.5px}
 }
 @media(prefers-reduced-motion:reduce){.rl-review .go,.rl-review .go2{transition:none}}

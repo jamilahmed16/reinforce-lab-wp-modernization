@@ -460,13 +460,13 @@ add_action('wp_head', function () {
   .rl-howto .h-track{padding-left:56px}
   .rl-howto .node{left:-56px;width:40px;height:40px;font-size:17px}
   .rl-howto .h-track::before{left:19px}
-  .rl-howto .h-finish{margin-left:0;grid-template-columns:1fr}
-  .rl-howto .h-icta{grid-template-columns:1fr;padding-left:16px}
+  .rl-howto .h-finish{margin-left:0;grid-template-columns:minmax(0,1fr)}
+  .rl-howto .h-icta{grid-template-columns:minmax(0,1fr);padding-left:16px}
   .rl-howto .h-icta .act{padding-right:16px}
-  .rl-howto .h-back,.rl-howto .h-take{grid-template-columns:1fr}
-  .rl-howto .h-author{grid-template-columns:1fr}
+  .rl-howto .h-back,.rl-howto .h-take{grid-template-columns:minmax(0,1fr)}
+  .rl-howto .h-author{grid-template-columns:minmax(0,1fr)}
   .rl-howto .h-prose p,.rl-howto .h-prose li,.rl-howto .h-prose ol>li{font-size:16px}
-  .rl-howto .see{grid-template-columns:1fr;gap:6px}
+  .rl-howto .see{grid-template-columns:minmax(0,1fr);gap:6px}
 }
 @media(prefers-reduced-motion:reduce){.rl-howto .h-prog .bar i,.rl-howto .node,.rl-howto .h-tracker .tbar{transition:none}}
 </style>

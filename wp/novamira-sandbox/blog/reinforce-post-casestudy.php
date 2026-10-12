@@ -544,9 +544,9 @@ add_action('wp_head', function () {
   .rl-cs .plot svg{height:220px}
   .rl-cs .quote{padding:22px 20px}
   .rl-cs .method{grid-template-columns:minmax(0,1fr);gap:6px}
-  .rl-cs .cs-icta{grid-template-columns:1fr;padding-left:16px}
+  .rl-cs .cs-icta{grid-template-columns:minmax(0,1fr);padding-left:16px}
   .rl-cs .cact{padding-right:16px}
-  .rl-cs .cs-author{grid-template-columns:1fr}
+  .rl-cs .cs-author{grid-template-columns:minmax(0,1fr)}
   .rl-cs .cs-prose p,.rl-cs .cs-prose li{font-size:16.5px}
 }
 @media(prefers-reduced-motion:reduce){.rl-cs .go2,.rl-cs .svc,.rl-cs .cs{transition:none}.rl-cs .plot .tip{transition:none}}

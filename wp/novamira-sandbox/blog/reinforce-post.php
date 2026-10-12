@@ -252,7 +252,7 @@ body.rl-post-page .fl-page-content,body.rl-post-page .fl-content,body.rl-post-pa
 .rl-post .rel .post h3 a{color:var(--ink)}
 .rl-post .rel .post h3 a:hover{color:var(--red-3)}
 @media(max-width:1000px){.rl-post .grid{grid-template-columns:minmax(0,1fr)}.rl-post .toc{display:none}.rl-post .toc-m{display:block}.rl-post .rel .posts{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.rl-post .body{font-size:16.5px}.rl-post .answer{padding:18px 16px}.rl-post .answer p{font-size:16.5px}.rl-post .take{padding:16px}.rl-post .author{grid-template-columns:1fr;padding:18px}.rl-post .rel .posts{grid-template-columns:1fr}}
+@media(max-width:560px){.rl-post .body{font-size:16.5px}.rl-post .answer{padding:18px 16px}.rl-post .answer p{font-size:16.5px}.rl-post .take{padding:16px}.rl-post .author{grid-template-columns:minmax(0,1fr);padding:18px}.rl-post .rel .posts{grid-template-columns:minmax(0,1fr)}}
 </style>
 <?php }
 

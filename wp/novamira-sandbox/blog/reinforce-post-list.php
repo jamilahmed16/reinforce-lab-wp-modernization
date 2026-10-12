@@ -568,10 +568,10 @@ add_action('wp_head', function () {
   .rl-list .br .bt{grid-column:1/-1;grid-row:2}
   .rl-list .pc,.rl-list .needs,.rl-list .how,.rl-list .l-back,.rl-list .l-take{grid-template-columns:minmax(0,1fr)}
   .rl-list .spec{grid-template-columns:1fr 1fr}
-  .rl-list .also li{grid-template-columns:1fr;gap:4px}
-  .rl-list .l-icta{grid-template-columns:1fr;padding-left:16px}
+  .rl-list .also li{grid-template-columns:minmax(0,1fr);gap:4px}
+  .rl-list .l-icta{grid-template-columns:minmax(0,1fr);padding-left:16px}
   .rl-list .cact{padding-right:16px}
-  .rl-list .l-author{grid-template-columns:1fr}
+  .rl-list .l-author{grid-template-columns:minmax(0,1fr)}
   .rl-list .l-prose p,.rl-list .l-prose li{font-size:16.5px}
 }
 @media(prefers-reduced-motion:reduce){.rl-list .pd,.rl-list .nd,.rl-list .go2{transition:none}}

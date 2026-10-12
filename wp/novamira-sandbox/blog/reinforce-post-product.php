@@ -349,7 +349,7 @@ add_action('wp_head', function () {
 .rl-pd .p-plate dd a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--red-line);text-underline-offset:4px}
 .rl-pd .p-plate dd a:hover{text-decoration-color:var(--red-3)}
 .rl-pd .p-plate .acts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line-2)}
-.rl-pd .p-plate .acts.one{grid-template-columns:1fr}
+.rl-pd .p-plate .acts.one{grid-template-columns:minmax(0,1fr)}
 .rl-pd .p-plate .acts a{display:flex;align-items:center;justify-content:center;padding:13px 10px;font-family:var(--f-display);font-size:13px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;color:#fff;background:var(--red);transition:background .15s}
 .rl-pd .p-plate .acts a:hover{background:var(--red-2)}
 .rl-pd .p-plate .acts a.sec{background:transparent;color:var(--ink)}
@@ -509,9 +509,9 @@ add_action('wp_head', function () {
   .rl-pd .p-release{grid-template-columns:minmax(0,1fr)}
   .rl-pd .p-log li{grid-template-columns:12px minmax(0,1fr)}
   .rl-pd .p-log li p{grid-column:2}
-  .rl-pd .p-icta{grid-template-columns:1fr;padding-left:16px}
+  .rl-pd .p-icta{grid-template-columns:minmax(0,1fr);padding-left:16px}
   .rl-pd .cact{padding-right:16px}
-  .rl-pd .p-author{grid-template-columns:1fr}
+  .rl-pd .p-author{grid-template-columns:minmax(0,1fr)}
   .rl-pd .p-prose p,.rl-pd .p-prose li{font-size:16.5px}
 }
 @media(prefers-reduced-motion:reduce){.rl-pd .go2,.rl-pd .rr,.rl-pd .p-plate .acts a{transition:none}}

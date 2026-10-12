@@ -419,9 +419,9 @@ add_action('wp_head', function () {
   .rl-cmp .pick .q{border-right:0;border-bottom:1px solid var(--line-2)}
   .rl-cmp .uses,.rl-cmp .c-back,.rl-cmp .c-take{grid-template-columns:minmax(0,1fr)}
   .rl-cmp .both{grid-template-columns:minmax(0,1fr)}
-  .rl-cmp .c-icta{grid-template-columns:1fr;padding-left:16px}
+  .rl-cmp .c-icta{grid-template-columns:minmax(0,1fr);padding-left:16px}
   .rl-cmp .cact{padding-right:16px}
-  .rl-cmp .c-author{grid-template-columns:1fr}
+  .rl-cmp .c-author{grid-template-columns:minmax(0,1fr)}
   .rl-cmp .c-prose p,.rl-cmp .c-prose li{font-size:16.5px}
 }
 @media(prefers-reduced-motion:reduce){.rl-cmp .go2{transition:none}}

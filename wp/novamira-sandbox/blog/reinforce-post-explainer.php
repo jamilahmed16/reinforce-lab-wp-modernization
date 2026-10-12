@@ -465,11 +465,11 @@ add_action('wp_head', function () {
   .rl-exp .map .core{grid-column:1;grid-row:1!important;margin:0 0 6px}
   .rl-exp .map .l1,.rl-exp .map .l2,.rl-exp .map .r1,.rl-exp .map .r2{grid-column:1;grid-row:auto}
   .rl-exp .map .rt::after,.rl-exp .map .rt::before{display:none}
-  .rl-exp .e-icta{grid-template-columns:1fr;padding-left:16px}
+  .rl-exp .e-icta{grid-template-columns:minmax(0,1fr);padding-left:16px}
   .rl-exp .cact{padding-right:16px}
   .rl-exp .cite{grid-template-columns:minmax(0,1fr)}
   .rl-exp .cite .copy{justify-self:start}
-  .rl-exp .e-author{grid-template-columns:1fr}
+  .rl-exp .e-author{grid-template-columns:minmax(0,1fr)}
   .rl-exp .e-info dl div{grid-template-columns:100px minmax(0,1fr)}
   .rl-exp .e-prose p,.rl-exp .e-prose li{font-size:16.5px}
 }
