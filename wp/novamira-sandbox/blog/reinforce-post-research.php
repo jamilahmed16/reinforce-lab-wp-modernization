@@ -275,7 +275,7 @@ function rl_research_render($c) {
     <div class="sec-h"><span>More research</span><h2 id="rel-rs-h">Related studies</h2></div>
     <div class="r-more">
     <?php while ($rq->have_posts()) { $rq->the_post(); $rx = rl_research_data(get_the_ID()); $rc = get_the_category(); $line = implode(' · ', array_filter([$rx['no'] !== '' ? 'Report ' . $rx['no'] : '', $rx['sample']])); ?>
-      <a class="rr" href="<?php the_permalink(); ?>"><?php if ($rc) echo '<span class="k">' . esc_html($rc[0]->name) . '</span>'; ?><b><?php the_title(); ?></b><?php if ($line !== '') echo '<span class="r">' . esc_html($line) . '</span>'; ?></a>
+      <a class="rr" href="<?php the_permalink(); ?>"><?php $mc = rl_post_main_cat(get_the_ID()); if ($mc) echo '<span class="k">' . esc_html($mc->name) . '</span>'; ?><b><?php the_title(); ?></b><?php if ($line !== '') echo '<span class="r">' . esc_html($line) . '</span>'; ?></a>
     <?php } wp_reset_postdata(); ?>
     </div>
   </section>

@@ -152,7 +152,7 @@ function rl_blog_render() {
     <?php if (have_posts()) { ?>
     <ul class="posts">
       <?php while (have_posts()) { the_post();
-          $cat = get_the_category(); $cat = $cat ? $cat[0] : null; ?>
+          $cat = function_exists('rl_post_main_cat') ? rl_post_main_cat(get_the_ID()) : null; /* D-179 */ ?>
       <li class="post">
         <?php if (has_post_thumbnail()) { ?><a class="img" href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true"><?php the_post_thumbnail('medium_large', ['loading' => 'lazy', 'alt' => '']); ?></a><?php } ?>
         <div class="body">
