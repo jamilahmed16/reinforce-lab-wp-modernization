@@ -74,13 +74,6 @@ body.rl-blog-page .fl-page-content,body.rl-blog-page .fl-content,body.rl-blog-pa
 .rl-blog .post .img.ph span{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3)}
 .rl-blog .post .type{color:var(--ink)}
 .rl-blog .cats .n{color:var(--ink-faint);margin-left:6px}
-.rl-blog .more-cats{margin-top:8px}
-.rl-blog .more-cats summary{display:inline-flex;align-items:center;cursor:pointer;list-style:none;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);border:1px dashed var(--line-2);padding:7px 12px}
-.rl-blog .more-cats summary::-webkit-details-marker{display:none}
-.rl-blog .more-cats summary::after{content:"+";margin-left:8px;color:var(--red-3)}
-.rl-blog .more-cats[open] summary::after{content:"\2212"}
-.rl-blog .more-cats summary:hover{color:var(--ink);border-color:var(--red-2)}
-.rl-blog .more-cats .cats{margin-top:8px}
 .rl-blog .post .img img{width:100%;height:100%;object-fit:cover;display:block}
 .rl-blog .post .body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
 .rl-blog .post .meta{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
@@ -174,12 +167,8 @@ function rl_blog_render() {
     if ($cats) {
         $cur = is_category() ? get_queried_object_id() : 0;
         echo '<ul class="cats" aria-label="Categories"><li><a href="' . esc_url($blog_url) . '"' . (is_home() ? ' aria-current="page"' : '') . '>All<span class="n">' . (int) wp_count_posts('post')->publish . '</span></a></li>';
-        $chip = function ($c) use ($cur) { return '<li><a href="' . esc_url(get_category_link($c[0])) . '"' . ($cur === $c[0]->term_id ? ' aria-current="page"' : '') . '>' . esc_html($c[0]->name) . '<span class="n">' . (int) $c[1] . '</span></a></li>'; };
-        $main = array_filter($cats, function ($c) use ($cur) { return $c[1] >= 3 || $c[0]->term_id === $cur; });
-        $more = array_filter($cats, function ($c) use ($main) { return !in_array($c, $main, true); });
-        foreach ($main as $c) echo $chip($c);
+        foreach ($cats as $c) echo '<li><a href="' . esc_url(get_category_link($c[0])) . '"' . ($cur === $c[0]->term_id ? ' aria-current="page"' : '') . '>' . esc_html($c[0]->name) . '<span class="n">' . (int) $c[1] . '</span></a></li>';
         echo '</ul>';
-        if ($more) { echo '<details class="more-cats"><summary>More topics<span class="n">' . count($more) . '</span></summary><ul class="cats">'; foreach ($more as $c) echo $chip($c); echo '</ul></details>'; }
     } ?>
   </div>
 </section>
@@ -193,7 +182,7 @@ function rl_blog_render() {
       <li class="post">
         <?php $tl = function_exists('rl_post_data') ? rl_post_data(get_the_ID())['type_label'] : '';
           if (has_post_thumbnail()) { ?><a class="img" href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true"><?php the_post_thumbnail('medium_large', ['loading' => 'lazy', 'alt' => '']); ?></a><?php }
-          else { ?><a class="img ph" href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true"><span><?php echo esc_html($tl ?: 'Article'); ?></span><b><?php echo esc_html($cat && (int) $cat->term_id !== (int) get_option('default_category') ? $cat->name : 'Reinforce Lab'); ?></b></a><?php } ?>
+          else { ?><a class="img ph" href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true"><span><?php echo esc_html($tl ?: 'Article'); ?></span><b><?php echo esc_html($cat ? $cat->name : 'Reinforce Lab'); ?></b></a><?php } ?>
         <div class="body">
           <span class="meta"><?php if ($tl) echo '<span class="type">' . esc_html($tl) . '</span> · '; ?><time datetime="<?php echo esc_attr(get_the_date('c')); ?>"><?php echo esc_html(get_the_date('j M Y')); ?></time><?php if ($cat && (int) $cat->term_id !== (int) get_option('default_category')) echo ' · <a href="' . esc_url(get_category_link($cat)) . '">' . esc_html($cat->name) . '</a>'; ?></span>
           <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
