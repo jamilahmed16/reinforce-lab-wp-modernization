@@ -25,6 +25,11 @@ function rl_fonts_base() {
     return $base = trailingslashit($up['baseurl']) . 'reinforce-fonts/';
 }
 add_action('wp_head', function () {
+    /* D-177: no first paint until the header is fully parsed. Without render-blocking CSS (D-174 to D-176) the
+       browser could paint the header from the first network chunk with only some menu items, then widen the
+       menu when the rest arrived (layout shift 0.011 on desktop). Browsers without rel=expect ignore it; if the
+       marker is missing, rendering unblocks at the end of parsing. */
+    if (!is_admin()) echo '<link rel="expect" href="#rl-header-end" blocking="render">' . "\n";
     $base = rl_fonts_base();
     foreach (['oswald-latin.woff2', 'ibm-plex-sans-latin.woff2'] as $f) echo '<link rel="preload" href="' . esc_url($base . $f) . '" as="font" type="font/woff2" crossorigin>' . "\n";
     $css = (string) @file_get_contents(__DIR__ . '/reinforce-fonts.css');
@@ -391,6 +396,7 @@ function rl_render_header() {
     <button class="burger" id="rl-burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
+<span id="rl-header-end" hidden></span>
 <div id="rl-mobile">
   <?php foreach ($top as $t):
     $children = isset($kids[$t->ID]) ? $kids[$t->ID] : array();
