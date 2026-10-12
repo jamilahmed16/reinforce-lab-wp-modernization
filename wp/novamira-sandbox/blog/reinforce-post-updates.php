@@ -317,8 +317,8 @@ add_action('wp_head', function () {
 .rl-upd .u-answer{border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px 24px;margin-bottom:24px}
 .rl-upd .u-answer .t,.rl-upd .sec-h span{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 8px}
 .rl-upd .u-answer p{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
-.rl-upd .u-take{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:28px}
-.rl-upd .u-take div{background:var(--bg-2);padding:16px 18px;display:grid;grid-template-columns:28px 1fr;gap:8px;font-size:15px}
+.rl-upd .u-take{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:28px}
+.rl-upd .u-take div{background:var(--bg-2);padding:16px 18px;display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;font-size:15px}
 .rl-upd .u-take b{font-family:var(--f-mono);font-size:11.5px;color:var(--red-3);font-weight:500;padding-top:2px}
 .rl-upd .sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:46px 0 16px;scroll-margin-top:96px}
 .rl-upd .sec-h h2{font-size:clamp(24px,2.8vw,30px);margin:0}
@@ -359,7 +359,7 @@ add_action('wp_head', function () {
 .rl-upd .when.now{border-color:var(--red-line)}
 .rl-upd .when.now .wh{background:linear-gradient(90deg,rgba(153,0,0,.25),transparent)}
 .rl-upd .when ul{list-style:none;margin:0;padding:6px 16px 12px}
-.rl-upd .when li{display:grid;grid-template-columns:18px 1fr;gap:8px;padding:8px 0;margin:0;border-top:1px solid var(--line);font-size:14.5px}
+.rl-upd .when li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:8px;padding:8px 0;margin:0;border-top:1px solid var(--line);font-size:14.5px}
 .rl-upd .when li:first-child{border-top:0}
 .rl-upd .when li::before{content:"";width:12px;height:12px;border:1px solid var(--line-2);margin-top:5px}
 .rl-upd .when.now li::before{border-color:var(--red-3)}
@@ -410,7 +410,7 @@ add_action('wp_head', function () {
 .rl-upd .u-src ol{margin:0;padding-left:1.4em;font-size:14.5px}
 .rl-upd .u-src li{padding:6px 0;color:var(--ink-faint)}
 .rl-upd .u-src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line);word-break:break-word}
-.rl-upd .u-author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.rl-upd .u-author{display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
 .rl-upd .u-author .av{width:72px;height:72px;font-size:28px}
 .rl-upd .u-author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
 .rl-upd .u-author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}

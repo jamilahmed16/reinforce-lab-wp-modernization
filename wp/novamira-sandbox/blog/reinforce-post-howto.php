@@ -355,8 +355,8 @@ add_action('wp_head', function () {
 .rl-howto .h-answer{border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px 24px;margin-bottom:28px}
 .rl-howto .h-answer .t{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 8px}
 .rl-howto .h-answer p{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
-.rl-howto .h-take{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:32px}
-.rl-howto .h-take div{background:var(--bg-2);padding:16px 18px;display:grid;grid-template-columns:28px 1fr;gap:8px;font-size:15px}
+.rl-howto .h-take{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:32px}
+.rl-howto .h-take div{background:var(--bg-2);padding:16px 18px;display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;font-size:15px}
 .rl-howto .h-take b{font-family:var(--f-mono);font-size:11.5px;color:var(--red-3);font-weight:500;padding-top:2px}
 .rl-howto .h-prose>*{margin:0 0 1em}
 .rl-howto .h-prose p,.rl-howto .h-prose li{font-size:17px;line-height:1.75}
@@ -393,7 +393,7 @@ add_action('wp_head', function () {
 .rl-howto .h-step h2{font-size:clamp(24px,2.8vw,32px);margin:0;scroll-margin-top:150px}
 .rl-howto .why{margin:10px 0 16px;color:var(--ink);font-size:16px;border-left:2px solid var(--red-2);padding-left:12px}
 .rl-howto .why b{font-weight:600}
-.rl-howto .see{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;border:1px solid rgba(63,163,107,.45);background:rgba(63,163,107,.07);padding:14px 16px;margin:18px 0 14px;font-size:15.5px;color:var(--ink)}
+.rl-howto .see{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:start;border:1px solid rgba(63,163,107,.45);background:rgba(63,163,107,.07);padding:14px 16px;margin:18px 0 14px;font-size:15.5px;color:var(--ink)}
 .rl-howto .see .lb{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ok);padding-top:3px;white-space:nowrap}
 .rl-howto .h-mark{display:inline-flex;align-items:center;gap:10px;cursor:pointer;font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);border:1px solid var(--line-2);padding:9px 14px;background:var(--bg-2)}
 .rl-howto .h-mark input{margin:0;width:15px;height:15px}
@@ -408,7 +408,7 @@ add_action('wp_head', function () {
 .rl-howto .h-icta .go:hover{background:var(--red-2)}
 .rl-howto .h-icta .alt{font-size:13.5px;color:var(--ink-faint);text-decoration:none;border-bottom:1px solid var(--line-2)}
 .rl-howto .h-icta .alt:hover{color:var(--ink)}
-.rl-howto .h-finish{border:1px solid var(--red-line);background:radial-gradient(80% 140% at 0% 0%,rgba(153,0,0,.25),transparent 60%),var(--panel);padding:26px 28px;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;margin-left:72px}
+.rl-howto .h-finish{border:1px solid var(--red-line);background:radial-gradient(80% 140% at 0% 0%,rgba(153,0,0,.25),transparent 60%),var(--panel);padding:26px 28px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px;align-items:center;margin-left:72px}
 .rl-howto .h-finish .flag{width:56px;height:56px;display:grid;place-items:center;border:2px solid var(--red-2);background:var(--red)}
 .rl-howto .h-finish h2{font-size:26px;margin:0 0 6px}
 .rl-howto .h-finish p{margin:0;color:var(--ink-dim)}
@@ -420,7 +420,7 @@ add_action('wp_head', function () {
 .rl-howto .h-prog span{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint)}
 .rl-howto .avoid{border:1px solid rgba(226,59,59,.45);background:rgba(153,0,0,.08);padding:18px 20px}
 .rl-howto .avoid ul{list-style:none;margin:0;padding:0}
-.rl-howto .avoid li{display:grid;grid-template-columns:18px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--line);font-size:14.5px;color:var(--ink-dim)}
+.rl-howto .avoid li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:10px;padding:9px 0;border-top:1px solid var(--line);font-size:14.5px;color:var(--ink-dim)}
 .rl-howto .avoid li:first-child{border-top:0}
 .rl-howto .avoid svg{width:14px;height:14px;color:var(--red-3);margin-top:4px}
 .rl-howto .trouble{border:1px solid var(--line-2);background:var(--panel);padding:18px 20px}
@@ -438,7 +438,7 @@ add_action('wp_head', function () {
 .rl-howto .h-src ol{margin:0;padding-left:1.4em;font-size:14.5px}
 .rl-howto .h-src li{padding:6px 0;color:var(--ink-faint)}
 .rl-howto .h-src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line);word-break:break-word}
-.rl-howto .h-author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.rl-howto .h-author{display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
 .rl-howto .h-author .av{width:72px;height:72px;font-size:28px}
 .rl-howto .h-author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
 .rl-howto .h-author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}

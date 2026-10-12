@@ -317,8 +317,8 @@ add_action('wp_head', function () {
 .rl-exp .e-answer{border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px 24px;margin-bottom:28px}
 .rl-exp .e-answer .t,.rl-exp .sec-h span{font-family:var(--f-mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 8px}
 .rl-exp .e-answer p{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
-.rl-exp .e-take{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:28px}
-.rl-exp .e-take div{background:var(--bg-2);padding:16px 18px;display:grid;grid-template-columns:28px 1fr;gap:8px;font-size:15px}
+.rl-exp .e-take{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:28px}
+.rl-exp .e-take div{background:var(--bg-2);padding:16px 18px;display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;font-size:15px}
 .rl-exp .e-take b{font-family:var(--f-mono);font-size:11.5px;color:var(--red-3);font-weight:500;padding-top:2px}
 .rl-exp .sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:46px 0 16px;scroll-margin-top:96px}
 .rl-exp .sec-h h2{font-size:clamp(24px,2.8vw,30px);margin:0}
@@ -364,21 +364,21 @@ add_action('wp_head', function () {
 .rl-exp .fs .n{font-family:var(--f-mono);font-size:12px;color:var(--red-3)}
 .rl-exp .fs h3{font-size:20px;margin:6px 0}
 .rl-exp .fs p{margin:0;font-size:16px}
-.rl-exp .isnot{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.rl-exp .isnot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
 .rl-exp .isnot.one{grid-template-columns:minmax(0,1fr)}
 .rl-exp .isnot>div{background:var(--panel);padding:18px 20px}
 .rl-exp .isnot .h{display:flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 8px}
 .rl-exp .is .h{color:var(--ok)}
 .rl-exp .not .h{color:var(--red-3)}
 .rl-exp .isnot ul{list-style:none;margin:0;padding:0}
-.rl-exp .isnot li{display:grid;grid-template-columns:18px 1fr;gap:8px;padding:8px 0;margin:0;border-top:1px solid var(--line);font-size:16px}
+.rl-exp .isnot li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:8px;padding:8px 0;margin:0;border-top:1px solid var(--line);font-size:16px}
 .rl-exp .isnot li:first-child{border-top:0}
 .rl-exp .is .ic{color:var(--ok);margin-top:4px}
 .rl-exp .not .ic{color:var(--red-3);margin-top:4px}
 .rl-exp .ex{border:1px solid var(--line-2);background:var(--bg-2)}
 .rl-exp .ex .eh{display:flex;justify-content:space-between;gap:12px;padding:12px 18px;border-bottom:1px dashed var(--line-2);font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
 .rl-exp .ex .eh b{color:var(--red-3);font-weight:500}
-.rl-exp .ex .ba{display:grid;grid-template-columns:1fr 1fr}
+.rl-exp .ex .ba{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
 .rl-exp .ex .ba.one{grid-template-columns:minmax(0,1fr)}
 .rl-exp .ex .ba>div{padding:18px 20px;min-width:0}
 .rl-exp .ex .ba .after{border-left:1px solid var(--line-2);background:linear-gradient(180deg,rgba(63,163,107,.06),transparent)}
@@ -435,7 +435,7 @@ add_action('wp_head', function () {
 .rl-exp .e-src ol{margin:0;padding-left:1.4em;font-size:16px}
 .rl-exp .e-src li{padding:6px 0;color:var(--ink-faint)}
 .rl-exp .e-src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line);word-break:break-word}
-.rl-exp .e-author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.rl-exp .e-author{display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
 .rl-exp .e-author .av{width:72px;height:72px;font-size:28px}
 .rl-exp .e-author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
 .rl-exp .e-author .role{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}

@@ -446,7 +446,7 @@ add_action('wp_head', function () {
 .rl-rs .r-study dt{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);padding-top:3px}
 .rl-rs .r-study dd{margin:0;color:var(--ink)}
 .rl-rs .r-study dd small{display:block;color:var(--ink-faint);font-size:12.5px}
-.rl-rs .r-study .acts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line-2)}
+.rl-rs .r-study .acts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-top:1px solid var(--line-2)}
 .rl-rs .r-study .acts.one{grid-template-columns:minmax(0,1fr)}
 .rl-rs .r-study .acts a{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 10px;font-family:var(--f-display);font-size:13px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;color:#fff;background:var(--red);transition:background .15s}
 .rl-rs .r-study .acts a:hover{background:var(--red-2)}
@@ -533,7 +533,7 @@ add_action('wp_head', function () {
 .rl-rs .r-defs dt:first-child{margin-top:0}
 .rl-rs .r-defs dd{margin:2px 0 0;font-size:14px}
 .rl-rs .r-lims ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
-.rl-rs .r-lims li{display:grid;grid-template-columns:14px 1fr;gap:8px;font-size:14px;color:var(--ink-dim);margin:0}
+.rl-rs .r-lims li{display:grid;grid-template-columns:14px minmax(0,1fr);gap:8px;font-size:14px;color:var(--ink-dim);margin:0}
 .rl-rs .r-lims li::before{content:"";width:8px;height:8px;border:1.5px solid var(--amber);margin-top:6px}
 .rl-rs .r-means{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
 .rl-rs .r-means.n2{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -589,7 +589,7 @@ add_action('wp_head', function () {
 .rl-rs .r-src ol{margin:0;padding-left:1.4em;font-size:14.5px}
 .rl-rs .r-src li{padding:6px 0;color:var(--ink-faint)}
 .rl-rs .r-src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line);word-break:break-word}
-.rl-rs .r-author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.rl-rs .r-author{display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
 .rl-rs .r-author .av{width:72px;height:72px;font-size:28px}
 .rl-rs .r-author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
 .rl-rs .r-author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}

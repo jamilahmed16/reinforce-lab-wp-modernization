@@ -348,7 +348,7 @@ add_action('wp_head', function () {
 .rl-pd .p-plate dd{margin:0;color:var(--ink)}
 .rl-pd .p-plate dd a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--red-line);text-underline-offset:4px}
 .rl-pd .p-plate dd a:hover{text-decoration-color:var(--red-3)}
-.rl-pd .p-plate .acts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line-2)}
+.rl-pd .p-plate .acts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-top:1px solid var(--line-2)}
 .rl-pd .p-plate .acts.one{grid-template-columns:minmax(0,1fr)}
 .rl-pd .p-plate .acts a{display:flex;align-items:center;justify-content:center;padding:13px 10px;font-family:var(--f-display);font-size:13px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;color:#fff;background:var(--red);transition:background .15s}
 .rl-pd .p-plate .acts a:hover{background:var(--red-2)}
@@ -409,7 +409,7 @@ add_action('wp_head', function () {
 .rl-pd .p-walk p{margin:0;font-size:15px;color:var(--ink)}
 .rl-pd .p-walk .claim{font-family:var(--f-mono);font-size:13px;background:var(--bg-2);border-left:2px solid var(--red-3);padding:8px 12px}
 .rl-pd .p-need{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 22px}
-.rl-pd .p-need li{display:grid;grid-template-columns:18px 1fr;gap:8px;font-size:15px;color:var(--ink);margin:0}
+.rl-pd .p-need li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:8px;font-size:15px;color:var(--ink);margin:0}
 .rl-pd .p-need li::before{content:"";width:12px;height:12px;border:1.5px solid var(--red-3);margin-top:5px}
 .rl-pd .p-plays{list-style:none;margin:0;padding:0;border:1px solid var(--line-2)}
 .rl-pd .play{display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:16px;padding:18px 20px;margin:0;border-top:1px solid var(--line);align-items:start}
@@ -431,7 +431,7 @@ add_action('wp_head', function () {
 .rl-pd .p-release .v small{display:block;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-top:8px}
 .rl-pd .p-release h3{font-size:22px;margin:0 0 8px}
 .rl-pd .p-release ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
-.rl-pd .p-release li{display:grid;grid-template-columns:66px 1fr;gap:10px;font-size:15px;color:var(--ink);margin:0}
+.rl-pd .p-release li{display:grid;grid-template-columns:66px minmax(0,1fr);gap:10px;font-size:15px;color:var(--ink);margin:0}
 .rl-pd .p-release .tag{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line-2);padding:2px 0;text-align:center;align-self:start;margin-top:3px;color:var(--ink-dim)}
 .rl-pd .p-release .tag.new{color:var(--ok);border-color:var(--ok-line)}
 .rl-pd .p-release .tag.fixed{color:var(--amber);border-color:rgba(211,155,58,.5)}
@@ -449,7 +449,7 @@ add_action('wp_head', function () {
 .rl-pd .p-nots .yes .k{color:var(--ok)}
 .rl-pd .p-nots .no .k{color:var(--red-3)}
 .rl-pd .p-nots ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
-.rl-pd .p-nots li{display:grid;grid-template-columns:16px 1fr;gap:10px;font-size:15px;color:var(--ink);margin:0}
+.rl-pd .p-nots li{display:grid;grid-template-columns:16px minmax(0,1fr);gap:10px;font-size:15px;color:var(--ink);margin:0}
 .rl-pd .p-nots li .ic{margin-top:4px;stroke-width:2}
 .rl-pd .p-nots .yes .ic{color:var(--ok)}
 .rl-pd .p-nots .no .ic{color:var(--red-3)}
@@ -480,7 +480,7 @@ add_action('wp_head', function () {
 .rl-pd .p-src ol{margin:0;padding-left:1.4em;font-size:14.5px}
 .rl-pd .p-src li{padding:6px 0;color:var(--ink-faint)}
 .rl-pd .p-src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line);word-break:break-word}
-.rl-pd .p-author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.rl-pd .p-author{display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
 .rl-pd .p-author .av{width:72px;height:72px;font-size:28px}
 .rl-pd .p-author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
 .rl-pd .p-author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}

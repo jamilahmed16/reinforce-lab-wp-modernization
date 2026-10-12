@@ -300,8 +300,8 @@ add_action('wp_head', function () {
 .rl-ind .i-answer{border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px 24px;margin-bottom:24px}
 .rl-ind .i-answer .t,.rl-ind .sec-h span{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 8px}
 .rl-ind .i-answer p{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
-.rl-ind .i-take{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:28px}
-.rl-ind .i-take div{background:var(--bg-2);padding:16px 18px;display:grid;grid-template-columns:28px 1fr;gap:8px;font-size:15px}
+.rl-ind .i-take{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:28px}
+.rl-ind .i-take div{background:var(--bg-2);padding:16px 18px;display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;font-size:15px}
 .rl-ind .i-take b{font-family:var(--f-mono);font-size:11.5px;color:var(--red-3);font-weight:500;padding-top:2px}
 .rl-ind .i-prose>*{margin:0 0 1.1em}
 .rl-ind .i-prose p,.rl-ind .i-prose li{font-size:17.5px;line-height:1.75}
@@ -352,19 +352,19 @@ add_action('wp_head', function () {
 .rl-ind .mv h3{font-family:var(--f-body);text-transform:none;letter-spacing:0;font-size:16.5px;font-weight:600;margin:0 0 3px;line-height:1.35}
 .rl-ind .mv p{margin:0;font-size:14.5px}
 .rl-ind .tags{display:grid;gap:6px}
-.rl-ind .tg{display:grid;grid-template-columns:52px 1fr;align-items:center;gap:8px;font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
+.rl-ind .tg{display:grid;grid-template-columns:52px minmax(0,1fr);align-items:center;gap:8px;font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
 .rl-ind .tg .bar{display:flex;gap:2px}
 .rl-ind .tg .bar i{width:16px;height:6px;background:var(--line-2)}
 .rl-ind .tg.imp .bar i.on{background:var(--ok)}
 .rl-ind .tg.eff .bar i.on{background:var(--amber)}
-.rl-ind .wa{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.rl-ind .wa{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
 .rl-ind .wa.one{grid-template-columns:minmax(0,1fr)}
 .rl-ind .wa>div{background:var(--panel);padding:18px 20px}
 .rl-ind .wa .h{display:flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 8px}
 .rl-ind .wk .h{color:var(--ok)}
 .rl-ind .av2 .h{color:var(--red-3)}
 .rl-ind .wa ul{list-style:none;margin:0;padding:0}
-.rl-ind .wa li{display:grid;grid-template-columns:18px 1fr;gap:8px;padding:8px 0;margin:0;border-top:1px solid var(--line);font-size:15px}
+.rl-ind .wa li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:8px;padding:8px 0;margin:0;border-top:1px solid var(--line);font-size:15px}
 .rl-ind .wa li:first-child{border-top:0}
 .rl-ind .wk .ic{color:var(--ok);margin-top:4px}
 .rl-ind .av2 .ic{color:var(--red-3);margin-top:4px}
@@ -396,7 +396,7 @@ add_action('wp_head', function () {
 .rl-ind .i-src ol{margin:0;padding-left:1.4em;font-size:14.5px}
 .rl-ind .i-src li{padding:6px 0;color:var(--ink-faint)}
 .rl-ind .i-src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line);word-break:break-word}
-.rl-ind .i-author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.rl-ind .i-author{display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
 .rl-ind .i-author .av{width:72px;height:72px;font-size:28px}
 .rl-ind .i-author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
 .rl-ind .i-author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}

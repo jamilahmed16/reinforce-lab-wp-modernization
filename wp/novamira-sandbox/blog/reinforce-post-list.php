@@ -383,8 +383,8 @@ add_action('wp_head', function () {
 .rl-list .l-by .fresh,.rl-list .l-by .fresh b{color:var(--ok)}
 .rl-list .av{width:34px;height:34px;border:1px solid var(--red-line);display:grid;place-items:center;font-family:var(--f-display);font-size:15px;color:var(--ink);background:var(--bg-2);flex:none}
 .rl-list .l-pod-h{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:10px}
-.rl-list .l-podium{display:grid;grid-template-columns:1fr 1.12fr 1fr;align-items:end;gap:8px}
-.rl-list .l-podium.n2{grid-template-columns:1fr 1.12fr}
+.rl-list .l-podium{display:grid;grid-template-columns:minmax(0,1fr) 1.12fr minmax(0,1fr);align-items:end;gap:8px}
+.rl-list .l-podium.n2{grid-template-columns:minmax(0,1fr) 1.12fr}
 .rl-list .l-podium.n1{grid-template-columns:minmax(0,1fr)}
 .rl-list .pd{display:grid;gap:6px;text-decoration:none;border:1px solid var(--line-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:16px;position:relative;transition:border-color .2s;min-width:0}
 .rl-list .pd:hover{border-color:var(--red-line)}
@@ -430,8 +430,8 @@ add_action('wp_head', function () {
 .rl-list .l-answer{border:1px solid var(--red-line);border-left:4px solid var(--red-2);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:22px 24px;margin-bottom:24px}
 .rl-list .l-answer .t,.rl-list .sec-h span{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3);margin:0 0 8px}
 .rl-list .l-answer p{margin:0;color:var(--ink);font-size:18px;line-height:1.6}
-.rl-list .l-take{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:28px}
-.rl-list .l-take div{background:var(--bg-2);padding:16px 18px;display:grid;grid-template-columns:28px 1fr;gap:8px;font-size:15px}
+.rl-list .l-take{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:28px}
+.rl-list .l-take div{background:var(--bg-2);padding:16px 18px;display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;font-size:15px}
 .rl-list .l-take b{font-family:var(--f-mono);font-size:11.5px;color:var(--red-3);font-weight:500;padding-top:2px}
 .rl-list .l-prose>*{margin:0 0 1.1em}
 .rl-list .l-prose p,.rl-list .l-prose li{font-size:17.5px;line-height:1.75}
@@ -489,10 +489,10 @@ add_action('wp_head', function () {
 .rl-list .bt{height:6px;background:var(--line-2)}
 .rl-list .bt i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--red-3))}
 .rl-list .br b{font-family:var(--f-mono);font-weight:500;color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
-.rl-list .pc{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.rl-list .pc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
 .rl-list .lb{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 8px}
 .rl-list .pc ul{list-style:none;margin:0;padding:0}
-.rl-list .pc li{display:grid;grid-template-columns:18px 1fr;gap:8px;padding:7px 0;margin:0;border-top:1px solid var(--line);font-size:14.5px}
+.rl-list .pc li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:8px;padding:7px 0;margin:0;border-top:1px solid var(--line);font-size:14.5px}
 .rl-list .pc li:first-child{border-top:0}
 .rl-list .pros .ic{color:var(--ok);margin-top:4px}
 .rl-list .cons .ic{color:var(--red-3);margin-top:4px}
@@ -516,7 +516,7 @@ add_action('wp_head', function () {
 .rl-list .go2:hover{background:var(--red-2)}
 .rl-list .alt{font-size:13.5px;color:var(--ink-faint);text-decoration:none;border-bottom:1px solid var(--line-2)}
 .rl-list .needs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
-.rl-list .nd{background:var(--bg);padding:18px 20px;text-decoration:none;display:grid;grid-template-columns:auto 1fr auto;gap:4px 12px;align-items:baseline;transition:background .2s}
+.rl-list .nd{background:var(--bg);padding:18px 20px;text-decoration:none;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 12px;align-items:baseline;transition:background .2s}
 .rl-list .nd:hover{background:var(--panel)}
 .rl-list .nd .if{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
 .rl-list .nd .q{color:var(--ink);font-size:15.5px}
@@ -525,7 +525,7 @@ add_action('wp_head', function () {
 .rl-list .nd .pk b{color:var(--ink);font-weight:600}
 .rl-list .nd .why{grid-column:2/4;font-size:13.5px;color:var(--ink-faint)}
 .rl-list .also{list-style:none;margin:0;padding:0;border:1px solid var(--line-2)}
-.rl-list .also li{display:grid;grid-template-columns:200px 1fr;gap:16px;padding:14px 18px;margin:0;border-top:1px solid var(--line);font-size:15px}
+.rl-list .also li{display:grid;grid-template-columns:200px minmax(0,1fr);gap:16px;padding:14px 18px;margin:0;border-top:1px solid var(--line);font-size:15px}
 .rl-list .also li:first-child{border-top:0}
 .rl-list .also b{color:var(--ink);font-weight:500}
 .rl-list .how{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
@@ -537,7 +537,7 @@ add_action('wp_head', function () {
 .rl-list .l-src ol{margin:0;padding-left:1.4em;font-size:14.5px}
 .rl-list .l-src li{padding:6px 0;color:var(--ink-faint)}
 .rl-list .l-src a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line);word-break:break-word}
-.rl-list .l-author{display:grid;grid-template-columns:72px 1fr;gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
+.rl-list .l-author{display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px;border:1px solid var(--line-2);background:var(--panel);padding:22px;margin:36px 0 50px}
 .rl-list .l-author .av{width:72px;height:72px;font-size:28px}
 .rl-list .l-author .nm{font-family:var(--f-display);font-size:22px;text-transform:uppercase;color:var(--ink);margin:0}
 .rl-list .l-author .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3);margin:4px 0 8px}
@@ -567,7 +567,7 @@ add_action('wp_head', function () {
   .rl-list .br{grid-template-columns:minmax(0,1fr) 34px;gap:4px 10px}
   .rl-list .br .bt{grid-column:1/-1;grid-row:2}
   .rl-list .pc,.rl-list .needs,.rl-list .how,.rl-list .l-back,.rl-list .l-take{grid-template-columns:minmax(0,1fr)}
-  .rl-list .spec{grid-template-columns:1fr 1fr}
+  .rl-list .spec{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
   .rl-list .also li{grid-template-columns:minmax(0,1fr);gap:4px}
   .rl-list .l-icta{grid-template-columns:minmax(0,1fr);padding-left:16px}
   .rl-list .cact{padding-right:16px}
