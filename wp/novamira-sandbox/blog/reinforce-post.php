@@ -130,6 +130,8 @@ function rl_post_main_cat($id) {
 add_filter('the_content', function ($html) {
     $id = get_the_ID();
     if (!$id || get_post_type($id) !== 'post' || !get_post_meta($id, '_rl_carried', true)) return $html;
+    /* empty heading tags (no text, only spacing or an empty <strong>) carry no words; dropped so they do not become blank chapters or steps */
+    $html = preg_replace_callback('#<h([2-6])\b[^>]*>(.*?)</h\1>#is', function ($m) { return trim(html_entity_decode(wp_strip_all_tags($m[2]), ENT_QUOTES, 'UTF-8'), " \t\n\r\0\x0B\xC2\xA0") === '' && stripos($m[2], '<img') === false ? '' : $m[0]; }, $html) ?? $html;
     preg_match_all('#<h2\b[^>]*>(.*?)</h2>#is', $html, $m2);
     $h2 = count(array_filter($m2[1], function ($t) { return trim(html_entity_decode(wp_strip_all_tags($t), ENT_QUOTES, 'UTF-8')) !== ''; }));
     $h3 = preg_match_all('#<h3\b#i', $html);

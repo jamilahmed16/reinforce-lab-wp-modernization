@@ -256,9 +256,9 @@ function rl_howto_render($c) {
   var steps=[].slice.call(root.querySelectorAll('.h-step')), links=[].slice.call(root.querySelectorAll('.h-tracker li a')), n=steps.length;
   var boxes=steps.map(function(s){return s.querySelector('input[data-step]');});
   var key='rl-howto-'+root.getAttribute('data-post'), q=function(k){return root.querySelector('[data-h="'+k+'"]');};
-  try{ var saved=JSON.parse(localStorage.getItem(key)||'[]'); boxes.forEach(function(b,i){ b.checked=saved.indexOf(i+1)>-1; }); }catch(e){}
+  try{ var saved=JSON.parse(localStorage.getItem(key)||'[]'); boxes.forEach(function(b,i){ if (b) b.checked=saved.indexOf(i+1)>-1; }); }catch(e){}
   function sync(){
-    var done=boxes.map(function(b){return b.checked;}), c=done.filter(Boolean).length, pct=Math.round(c/n*100)+'%';
+    var done=boxes.map(function(b){return !!(b && b.checked);}), c=done.filter(Boolean).length, pct=Math.round(c/n*100)+'%';
     steps.forEach(function(s,i){ s.classList.toggle('done',done[i]); });
     links.forEach(function(a,i){ a.classList.toggle('done',done[i]); });
     if(q('cnt')) q('cnt').textContent=c+' of '+n+' done'; if(q('ptxt')) q('ptxt').textContent=c+' of '+n+' steps done';
@@ -266,7 +266,7 @@ function rl_howto_render($c) {
     try{ localStorage.setItem(key,JSON.stringify(done.map(function(x,i){return x?i+1:0;}).filter(Boolean))); }catch(e){}
   }
   function cur(){ var c=0; steps.forEach(function(s,i){ if(s.getBoundingClientRect().top<innerHeight*0.4) c=i; }); links.forEach(function(a,i){ a.classList.toggle('on',i===c); if(i===c) a.setAttribute('aria-current','step'); else a.removeAttribute('aria-current'); }); }
-  boxes.forEach(function(b){ b.addEventListener('change',sync); });
+  boxes.forEach(function(b){ if (b) b.addEventListener('change',sync); });
   addEventListener('scroll',cur,{passive:true}); cur(); sync();
 })();
 </script>
