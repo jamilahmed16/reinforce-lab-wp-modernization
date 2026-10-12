@@ -64,9 +64,23 @@ body.rl-blog-page .fl-page-content,body.rl-blog-page .fl-content,body.rl-blog-pa
 .rl-blog .cats a{display:inline-block;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:7px 12px;transition:.15s}
 .rl-blog .cats a:hover,.rl-blog .cats a[aria-current]{color:var(--ink);border-color:var(--red-2)}
 /* hairlines drawn per card (not a grid background), so empty grid cells stay transparent when a row is not full */
-.rl-blog .posts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:1px}
-.rl-blog .post{background:var(--bg-2);display:flex;flex-direction:column;box-shadow:0 0 0 1px var(--line)}
-.rl-blog .post .img{display:block;aspect-ratio:16/9;overflow:hidden;background:var(--panel)}
+.rl-blog .posts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,24px)} /* D-180: cards stand apart */
+.rl-blog .post{background:var(--bg-2);display:flex;flex-direction:column;border:1px solid var(--line-2);transition:border-color .2s,transform .2s}
+.rl-blog .post:hover{border-color:var(--red-line)}
+.rl-blog .post .img{display:block;aspect-ratio:16/9;overflow:hidden;background:var(--panel);border-bottom:1px solid var(--line-2)}
+.rl-blog .post .img.ph{position:relative;display:flex;flex-direction:column;justify-content:flex-end;gap:8px;padding:22px;background:radial-gradient(80% 90% at 85% 10%,rgba(153,0,0,.28),transparent 60%),linear-gradient(180deg,var(--panel),var(--bg-2));text-decoration:none}
+.rl-blog .post .img.ph::before{content:"";position:absolute;left:22px;top:22px;width:44px;height:2px;background:var(--red-2)}
+.rl-blog .post .img.ph b{font-family:var(--f-display);font-size:clamp(22px,2.2vw,28px);text-transform:uppercase;line-height:1.05;color:var(--ink)}
+.rl-blog .post .img.ph span{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3)}
+.rl-blog .post .type{color:var(--ink)}
+.rl-blog .cats .n{color:var(--ink-faint);margin-left:6px}
+.rl-blog .more-cats{margin-top:8px}
+.rl-blog .more-cats summary{display:inline-flex;align-items:center;cursor:pointer;list-style:none;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);border:1px dashed var(--line-2);padding:7px 12px}
+.rl-blog .more-cats summary::-webkit-details-marker{display:none}
+.rl-blog .more-cats summary::after{content:"+";margin-left:8px;color:var(--red-3)}
+.rl-blog .more-cats[open] summary::after{content:"\2212"}
+.rl-blog .more-cats summary:hover{color:var(--ink);border-color:var(--red-2)}
+.rl-blog .more-cats .cats{margin-top:8px}
 .rl-blog .post .img img{width:100%;height:100%;object-fit:cover;display:block}
 .rl-blog .post .body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
 .rl-blog .post .meta{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
@@ -85,10 +99,29 @@ body.rl-blog-page .fl-page-content,body.rl-blog-page .fl-content,body.rl-blog-pa
 .rl-blog .pager .page-numbers.current{border-color:var(--red-2);color:var(--ink);background:rgba(153,0,0,.12)}
 .rl-blog .pager a.page-numbers:hover{border-color:var(--red-2);color:var(--ink)}
 .rl-blog .pager .screen-reader-text{position:absolute;left:-9999px}
-@media(max-width:1000px){.rl-blog .posts{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.rl-blog .posts{grid-template-columns:1fr}}
+@media(max-width:1000px){.rl-blog .posts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.rl-blog .posts{grid-template-columns:minmax(0,1fr)}}
 </style>
 <?php }
+
+/* D-180: the filter row lists main categories only (the category each post is filed under, D-179), busiest first,
+   instead of every production category. */
+function rl_blog_main_cats() {
+    $n = [];
+    foreach (get_posts(['post_type' => 'post', 'post_status' => 'publish', 'numberposts' => -1, 'fields' => 'ids', 'no_found_rows' => true]) as $pid) {
+        $c = function_exists('rl_post_main_cat') ? rl_post_main_cat($pid) : null;
+        if ($c && (int) $c->term_id !== (int) get_option('default_category')) { $n[$c->term_id] = ($n[$c->term_id] ?? 0) + 1; }
+    }
+    arsort($n);
+    $out = [];
+    foreach ($n as $tid => $count) { $t = get_term($tid, 'category'); if ($t && !is_wp_error($t)) $out[] = [$t, $count]; }
+    return $out;
+}
+
+/* D-180: 12 per page on the blog and its category archives (3 columns x 4 rows, or 2 x 6 on tablets). Main query only (F-001). */
+add_action('pre_get_posts', function ($q) {
+    if (!is_admin() && $q->is_main_query() && ($q->is_home() || $q->is_category() || $q->is_tag())) $q->set('posts_per_page', 12);
+});
 
 /* ---------- headings per archive type (each archive gets its own H1 and intro, never a shared text block) ---------- */
 function rl_blog_heading() {
@@ -137,12 +170,16 @@ function rl_blog_render() {
     <h1 class="h1"><?php echo implode('<br>', array_map(function ($l) { return strpos($l, '<r>') === 0 ? '<span class="r">' . esc_html(wp_strip_all_tags($l)) . '</span>' : esc_html($l); }, $h1)); ?></h1>
     <p class="lede"><?php echo is_home() ? wp_kses($lede, ['strong' => []]) : esc_html($lede); ?></p>
     <?php
-    $cats = get_categories(['hide_empty' => true, 'exclude' => [(int) get_option('default_category')]]);
+    $cats = rl_blog_main_cats();
     if ($cats) {
         $cur = is_category() ? get_queried_object_id() : 0;
-        echo '<ul class="cats" aria-label="Categories"><li><a href="' . esc_url($blog_url) . '"' . (is_home() ? ' aria-current="page"' : '') . '>All</a></li>';
-        foreach ($cats as $c) echo '<li><a href="' . esc_url(get_category_link($c)) . '"' . ($cur === $c->term_id ? ' aria-current="page"' : '') . '>' . esc_html($c->name) . '</a></li>';
+        echo '<ul class="cats" aria-label="Categories"><li><a href="' . esc_url($blog_url) . '"' . (is_home() ? ' aria-current="page"' : '') . '>All<span class="n">' . (int) wp_count_posts('post')->publish . '</span></a></li>';
+        $chip = function ($c) use ($cur) { return '<li><a href="' . esc_url(get_category_link($c[0])) . '"' . ($cur === $c[0]->term_id ? ' aria-current="page"' : '') . '>' . esc_html($c[0]->name) . '<span class="n">' . (int) $c[1] . '</span></a></li>'; };
+        $main = array_filter($cats, function ($c) use ($cur) { return $c[1] >= 3 || $c[0]->term_id === $cur; });
+        $more = array_filter($cats, function ($c) use ($main) { return !in_array($c, $main, true); });
+        foreach ($main as $c) echo $chip($c);
         echo '</ul>';
+        if ($more) { echo '<details class="more-cats"><summary>More topics<span class="n">' . count($more) . '</span></summary><ul class="cats">'; foreach ($more as $c) echo $chip($c); echo '</ul></details>'; }
     } ?>
   </div>
 </section>
@@ -154,9 +191,11 @@ function rl_blog_render() {
       <?php while (have_posts()) { the_post();
           $cat = function_exists('rl_post_main_cat') ? rl_post_main_cat(get_the_ID()) : null; /* D-179 */ ?>
       <li class="post">
-        <?php if (has_post_thumbnail()) { ?><a class="img" href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true"><?php the_post_thumbnail('medium_large', ['loading' => 'lazy', 'alt' => '']); ?></a><?php } ?>
+        <?php $tl = function_exists('rl_post_data') ? rl_post_data(get_the_ID())['type_label'] : '';
+          if (has_post_thumbnail()) { ?><a class="img" href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true"><?php the_post_thumbnail('medium_large', ['loading' => 'lazy', 'alt' => '']); ?></a><?php }
+          else { ?><a class="img ph" href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true"><span><?php echo esc_html($tl ?: 'Article'); ?></span><b><?php echo esc_html($cat && (int) $cat->term_id !== (int) get_option('default_category') ? $cat->name : 'Reinforce Lab'); ?></b></a><?php } ?>
         <div class="body">
-          <span class="meta"><time datetime="<?php echo esc_attr(get_the_date('c')); ?>"><?php echo esc_html(get_the_date('j M Y')); ?></time><?php if ($cat && (int) $cat->term_id !== (int) get_option('default_category')) echo ' · <a href="' . esc_url(get_category_link($cat)) . '">' . esc_html($cat->name) . '</a>'; ?></span>
+          <span class="meta"><?php if ($tl) echo '<span class="type">' . esc_html($tl) . '</span> · '; ?><time datetime="<?php echo esc_attr(get_the_date('c')); ?>"><?php echo esc_html(get_the_date('j M Y')); ?></time><?php if ($cat && (int) $cat->term_id !== (int) get_option('default_category')) echo ' · <a href="' . esc_url(get_category_link($cat)) . '">' . esc_html($cat->name) . '</a>'; ?></span>
           <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
           <p><?php echo esc_html(wp_trim_words(get_the_excerpt(), 28)); ?></p>
           <a class="more" href="<?php the_permalink(); ?>" aria-label="<?php echo esc_attr('Read article: ' . get_the_title()); ?>">Read article &rarr;</a>
