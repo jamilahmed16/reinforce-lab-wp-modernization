@@ -315,7 +315,7 @@ add_action('wp_head', function () {
 .rl-guide .g-open{display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:end;border-bottom:1px solid var(--line-2);padding-bottom:20px;margin-bottom:26px}
 .rl-guide .g-num{font-family:var(--f-display);font-weight:700;font-size:clamp(72px,9vw,118px);line-height:.78;color:transparent;-webkit-text-stroke:1.5px var(--red-3)}
 .rl-guide .g-meta{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 10px}
-.rl-guide .g-open h2{font-size:clamp(28px,3.4vw,40px);margin:0;scroll-margin-top:110px}
+.rl-guide .g-open h2{font-size:clamp(28px,3.4vw,40px);margin:0;scroll-margin-top:110px;overflow-wrap:anywhere}
 .rl-guide .g-prose>*{margin:0 0 1.15em}
 .rl-guide .g-prose p,.rl-guide .g-prose li{font-size:17.5px;line-height:1.78}
 .rl-guide .g-prose h3{font-size:22px;margin:1.6em 0 .55em;scroll-margin-top:110px}
@@ -400,7 +400,7 @@ add_action('wp_head', function () {
   .rl-guide .g-hub .core{border-right:0;border-bottom:1px solid var(--line-2)}
   .rl-guide .g-hub li a{grid-template-columns:1fr 20px}.rl-guide .g-hub .ty{grid-column:1/-1}
   .rl-guide .g-plate-top b{font-size:24px}
-  .rl-guide .g-open{grid-template-columns:1fr;gap:10px}
+  .rl-guide .g-open{grid-template-columns:minmax(0,1fr);gap:10px}
   .rl-guide .g-num{font-size:64px}
   .rl-guide .g-prose p,.rl-guide .g-prose li{font-size:16.5px}
   .rl-guide .g-icta{grid-template-columns:1fr;padding-left:16px}.rl-guide .g-icta .act{padding-right:16px}
