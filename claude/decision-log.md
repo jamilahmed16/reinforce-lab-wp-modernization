@@ -21,6 +21,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
 | D-177 | Layout shift after the lean pages: header no longer paints half-built (`rel=expect` render block until the header is parsed; menu widened 234 to 706 px mid-load, 0.011); font stand-ins tuned on measured line breaks across 57 pages and 14 real device setups (Oswald 500 to 600 at 73.4%, Plex Sans at 99.7%; the other two already best). Residual: on a first visit where a web font arrives after the first paint, some lines can still re-wrap (Lighthouse up to 0.03 to 0.05 on two pages, most pages 0 to 0.004). Jamil's rule recorded: never suggest other fonts | 12 Oct | DONE (Jamil: "A ..never suggest any other fonts") | `core/reinforce-header.php`, `core/reinforce-fonts.css` |
+| D-180 | Blog index organised: cards spaced (16 to 24px gap) with their own border and red hover edge; each card shows its article type, date and main category; posts without an image get a brand panel (type and category) instead of an empty box; filter row lists main categories only (8 with 3 or more posts, 8 small ones under "More topics"), with counts; 12 per page (3 x 4), 7 pages. No sideways scroll, axe 0 at 390 and 1440 | 12 Oct | DONE (Jamil, with a screenshot of the blog: "Fist fix the blog. Organize the blog. there is no gap between posts") | `blog/reinforce-blog.php` |
 | D-179 | Carried posts finished for launch: Jamil's approved article type on all 80 (reviews held on Guide until review facts) and main category set as Yoast primary (13 posts gained that category); template: chapters and How-To steps from H3 where the real sections are H3 (median 1 to 14 chapters), empty old heading tags dropped at render, main category drives chip, breadcrumb, related posts and blog cards; all post designs use minmax(0,1fr) grids; long guides keep a compact cover. All 81 posts: no sideways scroll on phone or desktop, no script errors, dates unchanged | 12 Oct | DONE (Jamil: "Approve the list ... Yes", "Keep this", "yes, do both fixes") | `blog/reinforce-post*.php` |
 | D-178 | 80 kept production posts carried across to .online (checklist A3): same slug, title, words, images at the same paths, publish and modified dates, categories, Yoast title and description; "Reinforce Lab team" byline credited to the Organization in schema; structure-only clean-up (old inline scripts and JSON-LD, Divi wrappers, hidden embed frames dropped; links and images made site-relative). Read-only copies in `claude/data/production-posts/`, tool `claude/tools/carry-posts.py`. 2,029 image files copied. All 80 checked: 200, titles and descriptions match production, noindex, every own image loads, no sideways scroll on phone. Must-stay URLs working 16 to 97 of 124 | 12 Oct | DONE (Jamil: "meanwhile start carrying the blog posts across") | `claude/tools/carry-posts.py`, `blog/reinforce-post.php` |
 | D-176 | Lean setup on every other front-end view (all pages, the post template, blog index, search, 404): unused theme files removed, trimmed Bootstrap and skin rebuilt over 57 pages (Bootstrap 106 selectors, 8.7 KB; skin 253, 22 KB). 54 full-page screenshots identical; computed styles identical on 57 pages at 1440 and 390 (114 page-widths); forms, cookie bar, menus, 404 and search status checked. About, Contact, blog post, agents, Portfolio: mobile 98 to 100, desktop 98 to 100 (one 93 outlier) | 12 Oct | DONE (Jamil: "yes, do it") | `core/reinforce-speed.php`, `claude/tools/bs-trim/` |
@@ -247,6 +248,21 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-180 · Blog index organised
+**Date:** 12 October 2026 · **Status:** DONE (Jamil, with a full-page screenshot of `/blog/`: "Fist fix the blog. Organize the blog. there is no gap between posts")
+
+- **Found (VERIFIED from the screenshot and the template):** cards sat edge to edge (`gap:1px` with hairline shadows); the filter row listed all 22 production categories; Jamil's own post has no featured image, so its card was a tall empty box; 10 posts per page in 3 columns left one card alone on the last row.
+- **Changed (`blog/reinforce-blog.php`):**
+  - cards spaced (`clamp(16px,2vw,24px)`), each with its own border and a red edge on hover;
+  - each card's line reads type, date, main category (D-179); the category link is underlined as well as red (axe `link-in-text-block`, WCAG 1.4.1);
+  - a post without a featured image shows a brand panel (type in red mono, main category in Oswald, red rule) instead of an empty area; a post with only the default category shows "Reinforce Lab";
+  - the filter row lists main categories only (`rl_blog_main_cats()`, from each post's main category), busiest first, with counts: the 8 with 3 or more posts in the row, the 8 smaller ones under a "More topics" button (native `<details>`); the current category always shows in the row;
+  - 12 per page on the blog and its category and tag archives (`pre_get_posts`, main query only, F-001): 7 pages. The redirect map only lists `/blog/page/2/` (KEEP-NOINDEX), which still exists; `/blog/page/8/` and later now 404 as expected.
+- **Checks:** `/blog/`, `/blog/page/2/`, `/blog/page/7/` and a category archive 200; 12 cards per page; no sideways scroll at 1440 and 390; no script errors; axe 0 on `/blog/` and `/blog/page/3/` at both widths. Screenshots desktop and phone.
+- **For Jamil later:** his post "What is an AI Growth System?" has no category and no featured image (the brand panel stands in).
 
 ---
 

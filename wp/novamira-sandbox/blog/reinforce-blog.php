@@ -81,6 +81,7 @@ body.rl-blog-page .fl-page-content,body.rl-blog-page .fl-content,body.rl-blog-pa
 .rl-blog .more-cats[open] summary::after{content:"\2212"}
 .rl-blog .more-cats summary:hover{color:var(--ink);border-color:var(--red-2)}
 .rl-blog .more-cats .cats{margin-top:8px}
+.rl-blog .more-cats summary .n{color:var(--ink-faint);margin-left:6px}
 .rl-blog .post .img img{width:100%;height:100%;object-fit:cover;display:block}
 .rl-blog .post .body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
 .rl-blog .post .meta{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
