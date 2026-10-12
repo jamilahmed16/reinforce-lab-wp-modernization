@@ -100,7 +100,7 @@ def copy_media(slug):
         r = php("""require_once ABSPATH . 'wp-admin/includes/file.php';
 $out = ['copied' => 0, 'present' => 0, 'failed' => []];
 foreach (json_decode(base64_decode('%s'), true) as $path) {
-  if (strpos($path, '/wp-content/uploads/') !== 0 || strpos($path, '..') !== false) { $out['failed'][] = $path . ' (bad path)'; continue; }
+  if (strpos($path, '/wp-content/uploads/') !== 0 || preg_match('#(^|/)\\.\\.(/|$)#', $path)) { $out['failed'][] = $path . ' (bad path)'; continue; }
   $dest = untrailingslashit(ABSPATH) . rawurldecode($path);
   if (file_exists($dest)) { $out['present']++; continue; }
   $tmp = download_url('https://reinforcelab.com' . $path, 60);
