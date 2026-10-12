@@ -25,7 +25,7 @@ Nothing on reinforcelab.com changes until the switch itself (Rules 1 and 2). Eve
 
 - [x] Fetch production's sitemaps and crawl its internal links (plain GET from the `.online` server, read-only), so the URL list also contains every URL production itself links to.
 - [x] Production's Yoast redirects (already exported: `claude/data/production-config/yoast-redirects-2026-09-10.csv`) folded into the map, pointed straight at final targets (no chains).
-- [ ] Production media used by kept posts: list of `/wp-content/uploads/...` files to copy, at the same paths.
+- [x] Production media used by kept posts: list of `/wp-content/uploads/...` files to copy, at the same paths. (D-178)
 
 ### A3. Carry the kept posts across (`.online`)
 
@@ -40,11 +40,11 @@ What changes, and why:
 - **Author (D-145):** Jamil Ahmed on every post once he has rewritten it. A post carried across before its rewrite shows "Reinforce Lab team" until then (confirmed). Reviews under his name must be first-hand (product actually used, test dates, paid or not, affiliate relationship stated).
 
 Tasks:
-- [ ] Copy the kept posts (PRESERVE, PRESERVE+REBUILD, PRESERVE-URL+REWRITE, plus HUB-REVIEW posts kept) with the rules above. One controlled import, no new publishing; recorded as the agreed exception to F-003.
+- [x] Copy the kept posts (PRESERVE, PRESERVE+REBUILD, PRESERVE-URL+REWRITE, plus HUB-REVIEW posts kept) with the rules above. One controlled import, no new publishing; recorded as the agreed exception to F-003. **Done 12 Oct (D-178): 80 posts.** Their internal links still point at the old URLs until the redirect sign-off; then they are pointed at final pages.
 - [ ] Posts planned **REBUILD-new** (23): carried across as they are until each rewrite, or redirected now, per the map. **(Jamil decides with the map)**
 - [ ] Every **301 and CONSOLIDATE target** exists and returns 200 before the switch.
 - [ ] **Build the `/reviews/` hub** and its two pillars `/reviews/best-wordpress-hosting/` and `/reviews/best-seo-ai-tools/` (approved new URLs, D-016), so the 20 reviews are linked from the site.
-- [ ] Copy the media files the kept posts use.
+- [x] Copy the media files the kept posts use. **Done 12 Oct (D-178): 2,029 files at the same paths.**
 - [ ] Every carried post passes: copy check on new text only (old wording is not rewritten before launch), schema valid, images load, no layout overflow on phone.
 
 ### A4. Redirect map in code and the zero-failure test (gate)

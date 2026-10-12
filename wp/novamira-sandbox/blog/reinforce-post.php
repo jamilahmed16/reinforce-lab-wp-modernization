@@ -190,6 +190,8 @@ body.rl-post-page .fl-page-content,body.rl-post-page .fl-content,body.rl-post-pa
 .rl-post .body blockquote{margin:1.6em 0;padding:4px 0 4px 22px;border-left:2px solid var(--red-2);color:var(--ink);font-size:19px}
 .rl-post .body img{max-width:100%;height:auto;display:block}
 .rl-post .body figure{margin:1.6em 0}
+/* D-178: carried posts use classic captions with a fixed pixel width in the HTML; keep them inside the column */
+.single-post .wp-caption{max-width:100%!important;width:auto!important;height:auto}.single-post .wp-caption img{max-width:100%;height:auto}
 .rl-post .body figcaption{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);margin-top:8px}
 .rl-post .body .tscroll{overflow-x:auto;max-width:100%}
 .rl-post .body table{width:100%;border-collapse:collapse;font-size:15px}
