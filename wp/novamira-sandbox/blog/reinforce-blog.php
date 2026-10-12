@@ -84,7 +84,7 @@ body.rl-blog-page .fl-page-content,body.rl-blog-page .fl-content,body.rl-blog-pa
 .rl-blog .post .img img{width:100%;height:100%;object-fit:cover;display:block}
 .rl-blog .post .body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
 .rl-blog .post .meta{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
-.rl-blog .post .meta a{color:var(--red-3)}
+.rl-blog .post .meta a{color:var(--red-3);text-decoration:underline;text-decoration-color:var(--red-line);text-underline-offset:3px} /* D-180: told apart from the type label by more than colour (WCAG 1.4.1) */
 .rl-blog .post h2{font-size:21px;line-height:1.15;margin:0}
 .rl-blog .post h2 a{color:var(--ink)}
 .rl-blog .post h2 a:hover{color:var(--red-3)}
