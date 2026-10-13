@@ -231,11 +231,9 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .ind a:hover .ic{border-color:var(--red);background:var(--red);color:#fff}.rl-home .ind a:hover h3{color:var(--red-3)}.rl-home .ind a:hover .ar2{color:var(--red-3);transform:translateX(4px)}
 @media(max-width:900px){.rl-home .ind{grid-template-columns:1fr}}
 /* Clients + recognition in one section */
-.rl-home .rec-sub{margin-top:clamp(56px,7vw,88px);padding-top:clamp(32px,4vw,44px);border-top:1px solid var(--line-2);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:12px clamp(32px,5vw,72px);align-items:end;margin-bottom:28px}
-.rl-home .rec-sub .ey{grid-column:1/-1}
+.rl-home .rec-sub{margin-top:clamp(56px,7vw,88px);padding-top:clamp(32px,4vw,44px);border-top:1px solid var(--line-2);display:grid;grid-template-columns:minmax(0,1fr);gap:12px;justify-items:start;margin-bottom:28px}
 .rl-home .rec-sub h3{font-size:clamp(24px,2.6vw,32px);line-height:1.1;margin:0}
 .rl-home .rec-sub p{margin:0;color:var(--ink-dim);font-size:16px;max-width:60ch}
-@media(max-width:900px){.rl-home .rec-sub{grid-template-columns:1fr}}
 .rl-home .rec .tile{height:160px}
 /* HackerNoon award, featured above the badges (D-161); text from rl_awards_data() on /awards/ */
 .rl-home .hn{display:grid;grid-template-columns:auto minmax(0,1.3fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(28px,4vw,44px);margin-bottom:24px;border:1px solid var(--red-line);background:linear-gradient(120deg,rgba(153,0,0,.18),var(--panel) 60%);box-shadow:0 0 90px -40px var(--red-glow)}
@@ -253,10 +251,8 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 @media(max-width:560px){.rl-home .hn{grid-template-columns:1fr}.rl-home .hn .cup{width:72px;height:72px}}
 /* Blog: heading and button left, posts right as wide cards */
 /* D-185: blog section: heading row across the width, then three equal article cards (same card language as /blog/) */
-.rl-home .bl-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,80px);align-items:end;margin-bottom:clamp(28px,4vw,44px)}
-.rl-home .bl-top .head{margin:0}
-.rl-home .bl-top .side .lede{margin:0 0 20px}
-.rl-home .bl-top .side .cta-row{margin-top:0}
+.rl-home .bl-top{margin-bottom:clamp(28px,4vw,44px)}
+.rl-home .bl-cta{margin-top:clamp(28px,3.5vw,40px)}
 .rl-home .bl-posts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,24px)}
 .rl-home .bl-posts .pcard{display:flex;flex-direction:column;padding:0;border:1px solid var(--line-2);background:var(--bg-2);text-decoration:none;transition:border-color .2s}
 .rl-home .bl-posts .pcard:hover{border-color:var(--red-line)}
@@ -273,7 +269,6 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .bl-posts .more{margin-top:auto;padding-top:6px;font-family:var(--f-display);text-transform:uppercase;letter-spacing:.05em;font-size:14px;color:var(--ink)}
 .rl-home .bl-posts .pcard:hover .more{color:var(--red-3)}
 @media(max-width:1000px){.rl-home .bl-posts{grid-template-columns:repeat(2,minmax(0,1fr))}.rl-home .bl-posts .pcard:nth-child(3){display:none}}
-@media(max-width:860px){.rl-home .bl-top{grid-template-columns:minmax(0,1fr);align-items:start}}
 @media(max-width:600px){.rl-home .bl-posts{grid-template-columns:minmax(0,1fr)}.rl-home .bl-posts .pcard:nth-child(3){display:flex}}
 /* D-158 layout variety (the split headings of step 1 were taken back at Jamil's request, D-159: intro stays under the heading) */
 /* (2) What we do: a numbered index, one row per service */
@@ -659,11 +654,7 @@ function rl_render_home() {
   <!-- BLOG -->
   <section>
     <div class="wrap">
-      <div class="bl-top">
-        <div class="head"><span class="ey"><b>[</b>&nbsp;Insights&nbsp;<b>]</b></span><h2>From the blog.</h2></div>
-        <div class="side"><p class="lede">Field notes on AI Search, GEO, evidence-based content, and building growth systems that keep improving.</p>
-        <div class="cta-row"><a class="btn g" href="<?php echo esc_url(rl_url_by_path('blog')); ?>">Read the blog <span class="ar">&rarr;</span></a></div></div>
-      </div>
+      <div class="head bl-top"><span class="ey"><b>[</b>&nbsp;Insights&nbsp;<b>]</b></span><h2>From the blog.</h2><p class="lede">Field notes on AI Search, GEO, evidence-based content, and building growth systems that keep improving.</p></div>
       <div class="bl-posts">
         <?php
         $bq = new WP_Query(array('post_type'=>'post','posts_per_page'=>3,'post_status'=>'publish','ignore_sticky_posts'=>true));
@@ -703,6 +694,7 @@ function rl_render_home() {
           <?php }
         } ?>
       </div>
+      <div class="cta-row bl-cta"><a class="btn g" href="<?php echo esc_url(rl_url_by_path('blog')); ?>">Read the blog <span class="ar">&rarr;</span></a></div>
     </div>
   </section>
 

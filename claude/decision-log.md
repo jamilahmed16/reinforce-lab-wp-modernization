@@ -21,6 +21,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
 | D-177 | Layout shift after the lean pages: header no longer paints half-built (`rel=expect` render block until the header is parsed; menu widened 234 to 706 px mid-load, 0.011); font stand-ins tuned on measured line breaks across 57 pages and 14 real device setups (Oswald 500 to 600 at 73.4%, Plex Sans at 99.7%; the other two already best). Residual: on a first visit where a web font arrives after the first paint, some lines can still re-wrap (Lighthouse up to 0.03 to 0.05 on two pages, most pages 0 to 0.004). Jamil's rule recorded: never suggest other fonts | 12 Oct | DONE (Jamil: "A ..never suggest any other fonts") | `core/reinforce-header.php`, `core/reinforce-fonts.css` |
+| D-186 | Home blog section: subheadline now under the "From the blog." heading, "Read the blog" button moved below the three cards; Awards and recognition intro text now under its heading on the left (was a right-hand column) | 13 Oct | DONE (Jamil: "keep the sub headline below headline", "Place the button below blog posts", "Place the text of subheading on the awards section on the left as well") | `pages/reinforce-home.php` |
 | D-185 | Home "From the blog." section redone: heading row (title left; lede and "Read the blog" right) above three equal cards, each with a 16:9 image (or a brand panel), type, date, category, title, short excerpt and "Read article"; 2 cards at 1000px, 1 at 600px. Also fixed two sideways-scroll faults on home (Search Authority OS panel at 820 to 940px, testimonials below 820px) and clipped the scroll-in tilt so it cannot widen any kit page | 13 Oct | DONE (Jamil: "First change the Blog section in the home page ... organize it differently so that it looks professional") | `pages/reinforce-home.php`, `core/reinforce-kit.css` |
 | D-184 | Category pages at production's addresses (Yoast "remove /category/ from URLs", as production): `/seo-tips/`, `/digital-marketing/`, `/digital-marketing/search-engine-optimization/` and so on; `/category/...` 301 to them; page 2+ noindex,follow. Careers H1 now "Careers at Reinforce Lab."; Jamil confirmed the CV-data line and the quoting line; "2025" in post titles stays until each rewrite (option C) | 13 Oct | DONE (Jamil: "Category pages ... Yes", "Yes C", "Okay", "Yes", Careers title "should focus on Career") | `wpseo_titles.stripcategorybase`, `pages/reinforce-careers.php` |
 | D-183 | Careers and Legal Statement built fresh at their production addresses (both kept by D-182): Careers says plainly there are no open roles and invites CVs by email (no JobPosting schema); Legal Statement gives the verified company identity (Reinforce Lab Limited, RJSC C-180618/2022, 19 Apr 2022, Dhaka; Reinforce Lab Inc, Katy TX), contact, general-information, copyright, links, affiliate and related policies. Both in the footer. 200, noindex, one H1, axe 0, no sideways scroll | 13 Oct | DONE (Jamil: "No not hiring", "No Start fresh") | `pages/reinforce-careers.php`, `claude/content/legal-statement.html` |
@@ -253,6 +254,15 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-186 · Home: blog and awards intros stacked on the left
+**Date:** 13 October 2026 · **Status:** DONE (Jamil, on screenshots of D-185: "keep the sub headline below headline", "Place the button below blog posts", "Place the text of subheading on the awards section on the left as well")
+
+- **Blog section:** eyebrow, "From the blog." and the one-line intro now stack on the left, like the other home sections; the "Read the blog" button sits below the three cards. The two-column heading row from D-185 is gone.
+- **Awards and recognition (inside Clients):** the intro text sits under the heading on the left instead of in a right-hand column.
+- **Checks:** axe 0 at 390 and 1440; no sideways scroll at 390 and 900.
 
 ---
 
