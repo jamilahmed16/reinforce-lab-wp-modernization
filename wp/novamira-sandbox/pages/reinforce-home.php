@@ -99,7 +99,7 @@ function rl_home_css() {
 .rl-home .src{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;line-height:1.7;color:var(--ink-faint);margin:16px 0 0}
 .rl-home .src a{color:var(--ink-dim);border-bottom:1px solid var(--red-line);text-decoration:none}
 /* full-bleed breakout of theme container + kill content padding on home */
-.rl-home{position:relative;width:100vw;margin-left:calc(50% - 50vw)}
+.rl-home{position:relative;width:100vw;margin-left:calc(50% - 50vw);overflow-x:clip}
 body.home .fl-page-content,body.home .fl-content,body.home .fl-post-content{padding:0!important;margin:0!important;max-width:none!important}
 body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home *{box-sizing:border-box}

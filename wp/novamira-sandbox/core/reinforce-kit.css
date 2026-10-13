@@ -1,6 +1,6 @@
 /* Reinforce Lab - shared page kit (D-044). Served as a cached file for every page whose wrapper has class "rl-page".
    Rules here were byte-identical across the AISO, GEO and LLM pages; page files keep only their own rules. */
-.rl-page{position:relative;width:100vw;margin-left:calc(50% - 50vw);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6}
+.rl-page{position:relative;width:100vw;margin-left:calc(50% - 50vw);overflow-x:clip;color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6}
 .rl-page *{box-sizing:border-box}
 .rl-page a{text-decoration:none;color:inherit}
 .rl-page p{margin:0}
