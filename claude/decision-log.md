@@ -21,6 +21,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
 | D-177 | Layout shift after the lean pages: header no longer paints half-built (`rel=expect` render block until the header is parsed; menu widened 234 to 706 px mid-load, 0.011); font stand-ins tuned on measured line breaks across 57 pages and 14 real device setups (Oswald 500 to 600 at 73.4%, Plex Sans at 99.7%; the other two already best). Residual: on a first visit where a web font arrives after the first paint, some lines can still re-wrap (Lighthouse up to 0.03 to 0.05 on two pages, most pages 0 to 0.004). Jamil's rule recorded: never suggest other fonts | 12 Oct | DONE (Jamil: "A ..never suggest any other fonts") | `core/reinforce-header.php`, `core/reinforce-fonts.css` |
+| D-187 | Company profile PDF rebuilt in the new design (9 pages, A4 landscape, facts already on the site only) and placed on `.online` at production's address `/wp-content/uploads/2022/03/Reinforce-Lab-Company-Profile.pdf` (restore, D-182) | 13 Oct | DONE (Jamil: "finish it") | `claude/content/company-profile/` |
 | D-186 | Home blog section: subheadline now under the "From the blog." heading, "Read the blog" button moved below the three cards; Awards and recognition intro text now under its heading on the left (was a right-hand column) | 13 Oct | DONE (Jamil: "keep the sub headline below headline", "Place the button below blog posts", "Place the text of subheading on the awards section on the left as well") | `pages/reinforce-home.php` |
 | D-185 | Home "From the blog." section redone: heading row (title left; lede and "Read the blog" right) above three equal cards, each with a 16:9 image (or a brand panel), type, date, category, title, short excerpt and "Read article"; 2 cards at 1000px, 1 at 600px. Also fixed two sideways-scroll faults on home (Search Authority OS panel at 820 to 940px, testimonials below 820px) and clipped the scroll-in tilt so it cannot widen any kit page | 13 Oct | DONE (Jamil: "First change the Blog section in the home page ... organize it differently so that it looks professional") | `pages/reinforce-home.php`, `core/reinforce-kit.css` |
 | D-184 | Category pages at production's addresses (Yoast "remove /category/ from URLs", as production): `/seo-tips/`, `/digital-marketing/`, `/digital-marketing/search-engine-optimization/` and so on; `/category/...` 301 to them; page 2+ noindex,follow. Careers H1 now "Careers at Reinforce Lab."; Jamil confirmed the CV-data line and the quoting line; "2025" in post titles stays until each rewrite (option C) | 13 Oct | DONE (Jamil: "Category pages ... Yes", "Yes C", "Okay", "Yes", Careers title "should focus on Career") | `wpseo_titles.stripcategorybase`, `pages/reinforce-careers.php` |
@@ -254,6 +255,17 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-187 · Company profile PDF
+**Date:** 13 October 2026 · **Status:** DONE (Jamil: "WP Engine partner page and company profile PDF rebuilt for as per our new website" (D-182); on the draft: "finish it")
+
+- **What:** a new company profile in the site's design (dark ground, brand red, Oswald, IBM Plex Sans and Mono, square corners), 9 pages, A4 landscape: cover (core message and positioning); who we are (story, facts table); what we build (three jobs, Search Authority OS loop); services (4 groups, 18 services) and the 8 industries; how we work (4 steps, 9-stage method); principles; awards and recognition; the 46 named clients; contact (both offices, email, phones, diagnostic). Every fact is already published on `.online` (About, Awards, Clients, Services, Legal Statement). Copy check 0.
+- **Where:** `/wp-content/uploads/2022/03/Reinforce-Lab-Company-Profile.pdf` on `.online`, the same address production uses (kept by the sign-off list, row 28), so links to it keep working after launch. 623,251 bytes, md5 `51731d2d9787956107d7371ae06c5e38`; answers 200 `application/pdf` with `X-Robots-Tag: noindex, nofollow` (the dev site rule). Nothing was there before (404), so nothing was overwritten.
+- **Source:** `claude/content/company-profile/company-profile.html`; rebuild with `node claude/content/company-profile/render.mjs` (it checks that every font loads and that no page runs into its footer).
+- **Taken as approved with "finish it"** (asked on the draft, no separate answer): the legal-entity line on the contact page (Reinforce Lab Limited, RJSC no., Reinforce Lab Inc), the same exception as the Legal Statement; Jamil's bio line on page 2, taken from the About page; links to `reinforcelab.com/search-authority-diagnostic/` and `/awards/`, which work after launch.
+- **Not done:** no page on `.online` links to the PDF yet.
 
 ---
 
