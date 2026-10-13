@@ -3477,5 +3477,47 @@
    "rl_updated": "20250422",
    "rl_type": "guide"
   }
+ },
+ {
+  "id": 503,
+  "type": "page",
+  "status": "publish",
+  "title": "Legal Statement",
+  "slug": "legal-statement",
+  "parent": 0,
+  "path": "/legal-statement/",
+  "template": null,
+  "content": "[reinforce_legal updated=\"13 October 2026\" lede=\"Who runs this website, how to reach us, and the terms that cover what you read here.\"]\n<h2>Who runs this website</h2>\n<p>This website, reinforcelab.com, is run by <strong>Reinforce Lab Limited</strong>, a private limited company registered in Bangladesh.</p>\n<ul>\n<li><strong>Company registration:</strong> Registrar of Joint Stock Companies and Firms (RJSC), Bangladesh, registration no. C-180618/2022.</li>\n<li><strong>Incorporated:</strong> 19 April 2022, Dhaka, Bangladesh. <a href=\"/wp-content/uploads/2023/09/Certificate-of-Incorporation-Reinforce-Lab-Limited.pdf\">View the Certificate of Incorporation (PDF)</a>.</li>\n<li><strong>Registered office:</strong> Suite #1402, Level-13, Concord Tower, 113 Kazi Nazrul Islam Avenue, Dhaka 1000, Bangladesh.</li>\n<li><strong>Founder and CEO:</strong> Jamil Ahmed.</li>\n</ul>\n<p>Our United States office is run by <strong>Reinforce Lab Inc</strong>, 2511 Pines Pointe Dr, Katy, TX 77493, USA.</p>\n\n<h2>How to contact us</h2>\n<ul>\n<li><strong>Email:</strong> <a href=\"mailto:hello@reinforcelab.com\">hello@reinforcelab.com</a></li>\n<li><strong>Bangladesh:</strong> <a href=\"tel:+8801329657096\">+880 1329-657096</a></li>\n<li><strong>United States:</strong> <a href=\"tel:+18325484553\">+1 832 548 4553</a></li>\n<li><strong>Online:</strong> our <a href=\"/contact-us/\">contact page</a>.</li>\n</ul>\n\n<h2>What you read here</h2>\n<p>The articles, guides and tools on this website give general information about search, AI, websites and marketing. They are not legal, financial, medical or regulatory advice for your situation. Search engines and AI platforms change often, so check the date on each article and the sources it cites.</p>\n<p>Results described on this website belong to the projects they describe. Your results depend on your market, your website and your starting point, and we do not promise rankings, traffic or revenue.</p>\n\n<h2>Copyright and names</h2>\n<p>Unless a page says otherwise, the text, designs and images on this website belong to Reinforce Lab. You may quote a short part of an article if you name Reinforce Lab and link to the page. Please ask us before you copy more than that.</p>\n<p>Names and logos of other companies, such as Google, Semrush, WP Engine and our clients, belong to their owners. Showing them does not mean those companies endorse us, except where a page says so and links to their confirmation.</p>\n\n<h2>Links to other websites</h2>\n<p>We link to other websites when they help explain a point or confirm a fact. We do not control those websites and are not responsible for what they publish or how they handle your data.</p>\n\n<h2>Affiliate links</h2>\n<p>Some links on this website are affiliate links, and each one carries an <strong>Ad</strong> label. Our <a href=\"/ftc-disclosure/\">FTC and Affiliate Disclosure</a> explains which companies they go to and how we decide what to recommend.</p>\n\n<h2>Related policies</h2>\n<ul>\n<li><a href=\"/privacy-policy/\">Privacy Policy</a>: what data this website collects and why.</li>\n<li><a href=\"/terms-conditions/\">Terms and Conditions</a>: the terms for using this website and working with us.</li>\n<li><a href=\"/ftc-disclosure/\">FTC and Affiliate Disclosure</a>: how affiliate links work here.</li>\n</ul>\n[/reinforce_legal]\n",
+  "content_md5": "77cd499780402f2798c2dc2ff3918d37",
+  "carried": null,
+  "excerpt": "",
+  "date": "2026-10-13 10:30:44",
+  "modified": "2026-10-13 10:30:44",
+  "seo": {
+   "_yoast_wpseo_title": "Legal Statement | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Who runs reinforcelab.com: Reinforce Lab Limited (RJSC C-180618/2022, Dhaka) and Reinforce Lab Inc (Katy, Texas), how to contact us, and the terms for what you read here."
+  },
+  "rl_fields": []
+ },
+ {
+  "id": 504,
+  "type": "page",
+  "status": "publish",
+  "title": "Careers",
+  "slug": "careers",
+  "parent": 0,
+  "path": "/careers/",
+  "template": null,
+  "content": "[reinforce_careers]",
+  "content_md5": "3a6a5a2768f1ed1e13c03bb3f342c790",
+  "carried": null,
+  "excerpt": "",
+  "date": "2026-10-13 10:31:48",
+  "modified": "2026-10-13 10:31:48",
+  "seo": {
+   "_yoast_wpseo_title": "Careers | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "Reinforce Lab is not hiring right now. If you work in SEO, AI search, AI automation or WordPress, email your CV and two or three pieces of work to hello@reinforcelab.com."
+  },
+  "rl_fields": []
  }
 ]

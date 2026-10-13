@@ -490,6 +490,7 @@ function rl_render_footer() {
           <li><a href="<?php echo esc_url(rl_url_by_path('services')); ?>">Services</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('portfolio')); ?>">Portfolio</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('clients')); ?>">Clients</a></li>
+          <li><a href="<?php echo esc_url(rl_url_by_path('careers')); ?>">Careers</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('blog')); ?>">Blog</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('contact-us')); ?>">Contact Us</a></li>
         </ul>
@@ -503,6 +504,7 @@ function rl_render_footer() {
           <li><?php echo $rl_pp ? '<a href="' . esc_url($rl_pp) . '">Privacy Policy</a>' : '<span>Privacy Policy</span>'; ?></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('terms-conditions')); ?>">Terms &amp; Conditions</a></li>
           <li><a href="<?php echo esc_url(rl_url_by_path('ftc-disclosure')); ?>">FTC Disclosure</a></li>
+          <li><a href="<?php echo esc_url(rl_url_by_path('legal-statement')); ?>">Legal Statement</a></li>
           <li><a href="<?php echo esc_url(($coi = get_option('rl_coi_attachment')) ? wp_get_attachment_url($coi) : '#'); ?>" target="_blank" rel="noopener">Certificate of Incorporation <span class="screen-reader-text">(PDF)</span></a></li>
         </ul>
       </details>
