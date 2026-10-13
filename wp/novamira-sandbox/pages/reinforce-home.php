@@ -171,8 +171,8 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .icp .who{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
 .rl-home .icp h3{font-size:20px}.rl-home .icp p{color:var(--ink-dim);font-size:16px;margin-top:8px}
 /* flagship callout */
-.rl-home .flagship{border:1px solid var(--red-line);background:linear-gradient(120deg,rgba(153,0,0,.07),transparent 55%),var(--panel);padding:clamp(32px,5vw,56px);display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:center;box-shadow:0 24px 60px -46px rgba(0,0,0,.85)}
-@media(max-width:820px){.rl-home .flagship{grid-template-columns:1fr}}
+.rl-home .flagship{border:1px solid var(--red-line);background:linear-gradient(120deg,rgba(153,0,0,.07),transparent 55%),var(--panel);padding:clamp(32px,5vw,56px);display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:36px;align-items:center;box-shadow:0 24px 60px -46px rgba(0,0,0,.85)}
+@media(max-width:940px){.rl-home .flagship{grid-template-columns:minmax(0,1fr)}}
 .rl-home .flagship .tag{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--red-3);text-transform:uppercase}
 .rl-home .flagship h2{font-size:clamp(26px,3.6vw,40px);margin:12px 0 14px}
 /* D-169 hero diagram direction ("one cycle of growth", core/reinforce-motion.js heroSystem): new layers are invisible
