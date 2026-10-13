@@ -65,7 +65,7 @@
    false
   ],
   "indexing_first_time": true,
-  "indexing_reason": "post_type_made_public",
+  "indexing_reason": "category_base_changed",
   "indexing_started": false,
   "keyword_analysis_active": true,
   "last_known_no_unindexed": {
@@ -311,7 +311,7 @@
   "social-title-tax-category": "%%term_title%% Archives",
   "social-title-tax-post_format": "%%term_title%% Archives",
   "social-title-tax-post_tag": "%%term_title%% Archives",
-  "stripcategorybase": false,
+  "stripcategorybase": true,
   "taxonomy-category-ptparent": 0,
   "taxonomy-post_format-ptparent": 0,
   "taxonomy-post_tag-ptparent": 0,

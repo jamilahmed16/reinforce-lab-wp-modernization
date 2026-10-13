@@ -54,7 +54,7 @@ add_shortcode('reinforce_careers', function () {
 <section class="hero">
   <div class="wrap">
     <span class="ey"><b>[</b>&nbsp;Careers&nbsp;<b>]</b></span>
-    <h1 class="h1">We are not hiring<br><span class="r">right now.</span></h1>
+    <h1 class="h1">Careers at<br><span class="r">Reinforce Lab.</span></h1>
     <p class="lede">There are no open roles at Reinforce Lab at the moment. If you do careful work in search, content, AI automation or WordPress, send us your CV. We keep it on file and get in touch if a role opens that fits your skills.</p>
     <p class="status"><i aria-hidden="true"></i>Open roles: none at the moment</p>
     <div class="cta-row">
