@@ -1,5 +1,7 @@
 # Redirect sign-off list (Jamil)
 
+**APPROVED by Jamil on 13 October 2026 (D-181):** "We can approve this for now and we can redirect later what we don't want right". Any line can still be changed; tell me the line number.
+
 These are the **241 old reinforcelab.com addresses that matter**: live on production today, with Google clicks, with links from other sites, or part of the shop (closed, D-148). Most important first (most clicks, then most impressions).
 
 The other old addresses (about 575) are junk or dead: old page-2 copies, query variants, broken links. They follow fixed rules (removed, or follow their main page) and are approved as one group.

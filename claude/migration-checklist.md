@@ -17,7 +17,7 @@ Nothing on reinforcelab.com changes until the switch itself (Rules 1 and 2). Eve
 - [x] **The store** is closed (D-148): shop, cart and product addresses redirect; customer data is not moved. **(Jamil)** export past orders from production's WooCommerce admin before the switch.
 - [x] **Bylines** (D-145): Jamil will rewrite every old post with new content and images, and each rewritten post carries his name. Titles may change in a rewrite; the URL (slug) stays unless a change is approved for that URL, with a 301.
 - [x] The 14 open redirect decisions (D-146); the draft map has 0 undecided URLs.
-- [ ] **Sign-off of the redirect map** with the 241-line list `claude/redirect-signoff-list.md` (D-149); the rest approved as one group by rule. Was: URL-by-URL sign-off of the final redirect map** (all 631 unique pages, plus anything the backlink export adds). The September dispositions are a plan; Rule 2 needs approval per URL, given on the final map file. **(Jamil)**
+- [x] **Sign-off of the redirect map** (approved 13 Oct, D-181) with the 241-line list `claude/redirect-signoff-list.md` (D-149); the rest approved as one group by rule. Was: URL-by-URL sign-off of the final redirect map** (all 631 unique pages, plus anything the backlink export adds). The September dispositions are a plan; Rule 2 needs approval per URL, given on the final map file. **(Jamil)**
 - [x] Search Console pages, queries and indexing export (10 Sep). GA4 screenshots. WPCode inventory (F-014).
 - [x] Author archives: all 16 production author URLs 301 to `/blog/` (D-139, D-144; supersedes the September plan of `/our-team` and 410).
 
