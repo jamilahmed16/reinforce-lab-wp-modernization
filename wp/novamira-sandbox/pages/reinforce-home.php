@@ -252,13 +252,29 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 @media(max-width:1000px){.rl-home .hn{grid-template-columns:auto minmax(0,1fr)}.rl-home .hn ul{grid-column:1/-1}}
 @media(max-width:560px){.rl-home .hn{grid-template-columns:1fr}.rl-home .hn .cup{width:72px;height:72px}}
 /* Blog: heading and button left, posts right as wide cards */
-.rl-home .bl-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:clamp(40px,6vw,96px);align-items:start}
-.rl-home .bl-split .head{margin-bottom:24px}
-.rl-home .bl-posts{display:grid;gap:16px}
-.rl-home .bl-posts .pcard{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);padding:0}
-.rl-home .bl-posts .pthumb{min-height:220px;height:100%;aspect-ratio:auto}
-@media(max-width:900px){.rl-home .bl-split{grid-template-columns:1fr}}
-@media(max-width:600px){.rl-home .bl-posts .pcard{grid-template-columns:1fr}.rl-home .bl-posts .pthumb{min-height:180px}}
+/* D-185: blog section: heading row across the width, then three equal article cards (same card language as /blog/) */
+.rl-home .bl-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,80px);align-items:end;margin-bottom:clamp(28px,4vw,44px)}
+.rl-home .bl-top .head{margin:0}
+.rl-home .bl-top .side .lede{margin:0 0 20px}
+.rl-home .bl-top .side .cta-row{margin-top:0}
+.rl-home .bl-posts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,24px)}
+.rl-home .bl-posts .pcard{display:flex;flex-direction:column;padding:0;border:1px solid var(--line-2);background:var(--bg-2);text-decoration:none;transition:border-color .2s}
+.rl-home .bl-posts .pcard:hover{border-color:var(--red-line)}
+.rl-home .bl-posts .pthumb{aspect-ratio:16/9;height:auto;min-height:0;border-bottom:1px solid var(--line-2)}
+.rl-home .bl-posts .pthumb.ph{display:flex;flex-direction:column;justify-content:flex-end;gap:8px;padding:22px;background:radial-gradient(80% 90% at 85% 10%,rgba(153,0,0,.28),transparent 60%),linear-gradient(180deg,var(--panel),var(--bg-2))}
+.rl-home .bl-posts .pthumb.ph::before{content:"";position:absolute;left:22px;top:22px;width:44px;height:2px;background:var(--red-2)}
+.rl-home .bl-posts .pthumb.ph span{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3)}
+.rl-home .bl-posts .pthumb.ph b{font-family:var(--f-display);font-size:clamp(22px,2.2vw,28px);text-transform:uppercase;line-height:1.05;color:var(--ink);font-weight:600}
+.rl-home .bl-posts .pbody{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.rl-home .bl-posts .pmeta{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin:0}
+.rl-home .bl-posts .pmeta .t{color:var(--ink)}.rl-home .bl-posts .pmeta .c{color:var(--red-3)}
+.rl-home .bl-posts h3{font-size:20px;line-height:1.15;margin:0;color:var(--ink)}
+.rl-home .bl-posts p{color:var(--ink-dim);font-size:16px;margin:0}
+.rl-home .bl-posts .more{margin-top:auto;padding-top:6px;font-family:var(--f-display);text-transform:uppercase;letter-spacing:.05em;font-size:14px;color:var(--ink)}
+.rl-home .bl-posts .pcard:hover .more{color:var(--red-3)}
+@media(max-width:1000px){.rl-home .bl-posts{grid-template-columns:repeat(2,minmax(0,1fr))}.rl-home .bl-posts .pcard:nth-child(3){display:none}}
+@media(max-width:860px){.rl-home .bl-top{grid-template-columns:minmax(0,1fr);align-items:start}}
+@media(max-width:600px){.rl-home .bl-posts{grid-template-columns:minmax(0,1fr)}.rl-home .bl-posts .pcard:nth-child(3){display:flex}}
 /* D-158 layout variety (the split headings of step 1 were taken back at Jamil's request, D-159: intro stays under the heading) */
 /* (2) What we do: a numbered index, one row per service */
 .rl-home .ix{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-2);counter-reset:ix}
@@ -642,23 +658,29 @@ function rl_render_home() {
 
   <!-- BLOG -->
   <section>
-    <div class="wrap bl-split">
-      <div>
-      <div class="head"><span class="ey"><b>[</b>&nbsp;Insights&nbsp;<b>]</b></span><h2>From the blog.</h2><p class="lede">Field notes on AI Search, GEO, evidence-based content, and building growth systems that keep improving.</p></div>
-      <div class="cta-row"><a class="btn g" href="<?php echo esc_url(rl_url_by_path('blog')); ?>">Read the blog <span class="ar">&rarr;</span></a></div>
+    <div class="wrap">
+      <div class="bl-top">
+        <div class="head"><span class="ey"><b>[</b>&nbsp;Insights&nbsp;<b>]</b></span><h2>From the blog.</h2></div>
+        <div class="side"><p class="lede">Field notes on AI Search, GEO, evidence-based content, and building growth systems that keep improving.</p>
+        <div class="cta-row"><a class="btn g" href="<?php echo esc_url(rl_url_by_path('blog')); ?>">Read the blog <span class="ar">&rarr;</span></a></div></div>
       </div>
       <div class="bl-posts">
         <?php
         $bq = new WP_Query(array('post_type'=>'post','posts_per_page'=>3,'post_status'=>'publish','ignore_sticky_posts'=>true));
         if ($bq->have_posts()) {
           while ($bq->have_posts()) { $bq->the_post();
-            $thumb = get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>
+            $thumb = get_the_post_thumbnail_url(get_the_ID(), 'large');
+            $tl = function_exists('rl_post_data') ? rl_post_data(get_the_ID())['type_label'] : '';
+            $mc = function_exists('rl_post_main_cat') ? rl_post_main_cat(get_the_ID()) : null;
+            $mcn = ($mc && (int) $mc->term_id !== (int) get_option('default_category')) ? $mc->name : ''; ?>
           <a class="cell pcard" href="<?php the_permalink(); ?>">
-            <div class="pthumb<?php echo $thumb ? '' : ' ph-grid'; ?>"<?php echo $thumb ? ' style="background-image:url('.esc_url($thumb).')"' : ''; ?>></div>
+            <?php if ($thumb) { ?><div class="pthumb" style="background-image:url(<?php echo esc_url($thumb); ?>)"></div>
+            <?php } else { ?><div class="pthumb ph" aria-hidden="true"><span><?php echo esc_html($tl ?: 'Article'); ?></span><b><?php echo esc_html($mcn ?: 'Reinforce Lab'); ?></b></div><?php } ?>
             <div class="pbody">
-              <div class="pmeta"><?php echo esc_html(get_the_date()); ?></div>
+              <p class="pmeta"><?php if ($tl) echo '<span class="t">' . esc_html($tl) . '</span> · '; ?><?php echo esc_html(get_the_date('j M Y')); ?><?php if ($mcn) echo ' · <span class="c">' . esc_html($mcn) . '</span>'; ?></p>
               <h3><?php echo esc_html(get_the_title()); ?></h3>
-              <p><?php echo esc_html(wp_trim_words(wp_strip_all_tags(get_the_excerpt()),24)); ?></p>
+              <p><?php echo esc_html(wp_trim_words(wp_strip_all_tags(get_the_excerpt()),22)); ?></p>
+              <span class="more">Read article &rarr;</span>
             </div>
           </a>
           <?php }
