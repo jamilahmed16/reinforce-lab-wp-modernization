@@ -328,12 +328,12 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .rec .what{font-size:16px;line-height:1.35;color:var(--ink-dim)}
 .rl-home .rec:hover .what{color:var(--ink)}
 /* testimonials (D-153): client words as published on production, square photos, no star ratings (no rating source) */
-.rl-home .quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}@media(max-width:820px){.rl-home .quotes{grid-template-columns:1fr}}
+.rl-home .quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}@media(max-width:820px){.rl-home .quotes{grid-template-columns:minmax(0,1fr)}}
 .rl-home .quote{margin:0;display:flex;flex-direction:column;gap:24px;padding:clamp(24px,3vw,36px);background:var(--panel);border:1px solid var(--glass-line);box-shadow:inset 0 1px 0 var(--glass-hi)}
 .rl-home .quote blockquote{margin:0;padding:0;border:0;position:relative}
 .rl-home .quote blockquote::before{content:"\201C";display:block;font-family:var(--f-display);font-size:56px;line-height:.8;color:var(--red-2);margin-bottom:6px}
 .rl-home .quote blockquote p{margin:0;font-size:16px;line-height:1.65;color:var(--ink);max-width:62ch}
-.rl-home .quote figcaption{margin-top:auto;display:flex;align-items:center;gap:16px;padding-top:20px;border-top:1px solid var(--line)}
+.rl-home .quote figcaption{margin-top:auto;display:flex;align-items:center;gap:16px;padding-top:20px;border-top:1px solid var(--line);min-width:0}.rl-home .quote figcaption>span{min-width:0;overflow-wrap:anywhere}
 .rl-home .quote img{width:64px;height:64px;object-fit:cover;flex:none;display:block;border:1px solid var(--line-2)}
 .rl-home .quote .nm{font-family:var(--f-display);text-transform:uppercase;font-size:20px;line-height:1.15;color:var(--ink);display:block}
 .rl-home .quote .rl{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);display:block;margin-top:6px}
