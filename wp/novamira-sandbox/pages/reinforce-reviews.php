@@ -73,8 +73,24 @@ function rl_reviews_faqs($view) {
             ['Do you have a relationship with these companies?', 'We are a Semrush agency partner and affiliate, and our founder is a Semrush Ambassador. Any other paid relationship is stated next to the link and on our FTC and Affiliate Disclosure page.'],
         ],
     ];
+    if ($view === 'tools') return []; /* D-193: the page carries the source post's own FAQs */
     return isset($f[$view]) ? $f[$view] : [];
 }
+
+/* D-193 (Jamil, 14 Oct, option B): /reviews/best-seo-ai-tools/ shows the text of the post "5 Best AI Content Writing Tools" (/ai-content-writing-tools/, post 358), read live so edits to the post show here too. The post keeps its own address and stays the canonical. Returns [html, toc] or null. */
+function rl_reviews_tools_source() {
+    static $out = false;
+    if ($out !== false) return $out;
+    $p = get_page_by_path('ai-content-writing-tools', OBJECT, 'post');
+    if (!$p || $p->post_status !== 'publish') return $out = null;
+    global $post; $keep = $post; $post = $p; setup_postdata($p);
+    $html = apply_filters('the_content', $p->post_content);
+    $post = $keep; if ($keep) setup_postdata($keep); else wp_reset_postdata();
+    $html = preg_replace('#<h1\b([^>]*)>(.*?)</h1>#is', '', $html, 1); // the page has its own H1
+    return $out = function_exists('rl_post_prepare') ? rl_post_prepare($html) : [$html, []];
+}
+function rl_reviews_tools_source_url() { $p = get_page_by_path('ai-content-writing-tools', OBJECT, 'post'); return $p && $p->post_status === 'publish' ? get_permalink($p) : ''; }
+add_filter('wpseo_canonical', function ($c) { return rl_reviews_view() === 'tools' && ($src = rl_reviews_tools_source_url()) ? $src : $c; }, 20);
 
 /* one card per post: the post's own image if it has one, else the brand panel */
 function rl_reviews_card($row, $label = 'Read the review') {
@@ -156,6 +172,24 @@ body.rl-reviews-page .fl-page-content,body.rl-reviews-page .fl-content,body.rl-r
 .rl-reviews .pill .go{margin-top:8px;font-family:var(--f-display);text-transform:uppercase;letter-spacing:.05em;font-size:15px}
 .rl-reviews .note{margin-top:18px;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.04em}
 .rl-reviews .note a{color:var(--ink-dim);border-bottom:1px solid var(--line-2)}
+.rl-reviews .rv-art-wrap{display:grid;grid-template-columns:260px minmax(0,1fr);gap:clamp(28px,4vw,56px);align-items:start}
+.rl-reviews .rv-toc{position:sticky;top:96px;border:1px solid var(--line-2);background:var(--bg-2);padding:18px 20px}
+.rl-reviews .rv-toc .cap{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 10px}
+.rl-reviews .rv-toc ol{margin:0;padding:0 0 0 18px;display:grid;gap:8px;color:var(--ink-faint);font-size:14px}
+.rl-reviews .rv-toc a{color:var(--ink-dim);text-decoration:none}.rl-reviews .rv-toc a:hover{color:var(--red-3)}
+.rl-reviews .rv-art{max-width:780px;color:var(--ink-dim);font-size:17px;line-height:1.7}
+.rl-reviews .rv-art>*+*{margin-top:18px}
+.rl-reviews .rv-art h2{font-size:clamp(24px,2.8vw,32px);color:var(--ink);margin-top:44px;scroll-margin-top:100px}
+.rl-reviews .rv-art h3{font-size:20px;color:var(--ink);margin-top:28px;scroll-margin-top:100px}
+.rl-reviews .rv-art h4{font-family:var(--f-display);text-transform:uppercase;font-size:17px;color:var(--ink);margin-top:22px}
+.rl-reviews .rv-art p{margin:0}.rl-reviews .rv-art p+p{margin-top:16px}
+.rl-reviews .rv-art ul,.rl-reviews .rv-art ol{padding-left:22px}.rl-reviews .rv-art li+li{margin-top:6px}
+.rl-reviews .rv-art a{color:var(--ink);border-bottom:1px solid var(--red-line);text-decoration:none}.rl-reviews .rv-art a:hover{color:var(--red-3)}
+.rl-reviews .rv-art img{max-width:100%;height:auto;display:block;border:1px solid var(--line-2)}
+.rl-reviews .rv-art figure{margin:24px 0;max-width:100%}
+.rl-reviews .rv-art table{width:100%;border-collapse:collapse;font-size:15px}.rl-reviews .rv-art th,.rl-reviews .rv-art td{border:1px solid var(--line-2);padding:10px 12px;text-align:left;vertical-align:top}.rl-reviews .rv-art th{color:var(--ink)}
+.rl-reviews .rv-art .wp-caption{max-width:100%!important}
+@media(max-width:1000px){.rl-reviews .rv-art-wrap{grid-template-columns:minmax(0,1fr)}.rl-reviews .rv-toc{position:static}}
 @media(max-width:1000px){.rl-reviews .rv-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.rl-reviews .pill{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:600px){.rl-reviews .rv-grid{grid-template-columns:minmax(0,1fr)}}
@@ -262,31 +296,35 @@ add_shortcode('reinforce_reviews', function ($atts) {
   </div>
 </section>
 
+<?php } else { $src = rl_reviews_tools_source(); ?>
+<?php if ($src) { /* D-193: Jamil's "5 Best AI Content Writing Tools" text (post 358), rendered live from the post */
+    [$art, $toc] = $src; ?>
+<section class="hero">
+  <div class="wrap">
+    <span class="ey"><b>[</b>&nbsp;Reviews · SEO and AI tools&nbsp;<b>]</b></span>
+    <h1 class="h1">The 5 best AI<br><span class="r">content writing tools.</span></h1>
+    <p class="lede">Writesonic, Jasper, Rytr, Copy AI and Anyword compared, with the pros and cons of each. Then every SEO and AI tool review on the site.</p>
+  </div>
+</section>
+
+<section class="band alt" id="list">
+  <div class="wrap rv-art-wrap">
+    <?php if (count($toc) > 2) { ?><nav class="rv-toc" aria-label="Contents"><p class="cap">Contents</p><ol><?php foreach ($toc as $t) echo '<li><a href="#' . esc_attr($t[0]) . '">' . esc_html($t[1]) . '</a></li>'; ?></ol></nav><?php } ?>
+    <article class="rv-art"><?php echo $art; ?></article>
+  </div>
+</section>
 <?php } else { ?>
 <section class="hero">
   <div class="wrap">
     <span class="ey"><b>[</b>&nbsp;Reviews · SEO and AI tools&nbsp;<b>]</b></span>
-    <h1 class="h1">SEO and AI tools:<br><span class="r">reviews and how to choose.</span></h1>
-    <p class="lede">Reviews of the SEO tools, AI writing tools and work tools that come up in client projects. Tools change their features and prices often, so check the vendor's own site before you buy.</p>
+    <h1 class="h1">SEO and AI tools:<br><span class="r">reviews.</span></h1>
   </div>
 </section>
-
-<section class="band alt" id="choose">
-  <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;How to choose&nbsp;<b>]</b></span><h2>How should you choose an SEO or AI tool?</h2><p class="lede">Start from the job, not the feature list.</p></div>
-    <ul class="ticks">
-      <li><b>Name the job.</b> Keyword research, rank tracking, content briefs and site audits are different jobs. Buy for the one you do every week.</li>
-      <li><b>Check the data for your market.</b> Search volumes and rankings are only useful if the tool covers your country and language well.</li>
-      <li><b>Count the seats.</b> Many tools price per user. Work out the price for your whole team.</li>
-      <li><b>AI drafts need an editor.</b> AI writing tools speed up first drafts; a person still checks every claim before anything is published.</li>
-      <li><b>Try before a year.</b> Use a trial or a monthly plan on a real task before you commit to an annual price.</li>
-      <li><b>Fewer tools, used well.</b> One suite used every day usually beats five tools opened once a month.</li>
-    </ul>
-  </div>
-</section>
+<?php } ?>
 
 <section id="tools">
   <div class="wrap">
+    <div class="head"><span class="ey"><b>[</b>&nbsp;All tool reviews&nbsp;<b>]</b></span><h2>More SEO and AI tool reviews.</h2></div>
     <?php foreach ($d['tools'] as $g => $rows) { ?>
     <h3 class="grp"><?php echo esc_html($g); ?></h3>
     <ul class="rv-grid"><?php foreach ($rows as $r) echo rl_reviews_card($r); ?></ul>
@@ -296,6 +334,7 @@ add_shortcode('reinforce_reviews', function ($atts) {
 </section>
 <?php } ?>
 
+<?php if ($v !== 'tools') { ?>
 <section class="faq band alt" id="faq">
   <div class="wrap" style="max-width:900px">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Questions&nbsp;<b>]</b></span><h2><?php echo $v === 'hub' ? 'About our reviews.' : ($v === 'hosting' ? 'About WordPress hosting.' : 'About SEO and AI tools.'); ?></h2></div>
@@ -304,6 +343,7 @@ add_shortcode('reinforce_reviews', function ($atts) {
     <?php } ?>
   </div>
 </section>
+<?php } ?>
 
 <section id="start">
   <div class="wrap">
