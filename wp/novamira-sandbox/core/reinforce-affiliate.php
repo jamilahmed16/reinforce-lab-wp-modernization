@@ -47,14 +47,14 @@ add_filter('the_content', function ($html) {
         }
         return '<a ' . $attrs . '>' . $m[2] . '</a>' . rl_aff_label();
     }, $html);
-    if ($names) $html = rl_aff_note($names) . $html;
+    if ($names && strpos($html, 'class="rl-adnote"') === false) $html = rl_aff_note($names) . $html; /* D-190: a page may place its own note */
     return $html;
 }, 20);
 
 add_action('wp_head', function () {
     if (!is_singular()) return; ?>
 <style id="rl-aff-css">
-.rl-ad{display:inline-block;margin-left:4px;padding:0 5px;border:1px solid var(--red-line,rgba(226,59,59,.35));font-family:var(--f-mono,monospace);font-size:10.5px;line-height:1.6;letter-spacing:.1em;text-transform:uppercase;color:var(--red-3,#e85050);vertical-align:middle}
+.rl-ad{display:inline-block;margin-left:4px;padding:0 5px;border:1px solid var(--red-line,rgba(226,59,59,.35));font-family:var(--f-mono,monospace);font-size:12px;line-height:1.5;letter-spacing:.1em;text-transform:uppercase;color:var(--red-3,#e85050);vertical-align:middle}
 .rl-adnote{border:1px solid var(--red-line,rgba(226,59,59,.35));background:rgba(153,0,0,.08);padding:12px 14px;font-size:14.5px;color:var(--ink-dim,#b9b0a8);margin:0 0 22px}
 .rl-adnote b{color:var(--red-3,#e85050)}.rl-adnote a{color:var(--ink,#f3ede6)}
 </style>

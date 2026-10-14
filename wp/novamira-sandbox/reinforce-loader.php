@@ -10,6 +10,7 @@ foreach ([
     'pages/reinforce-about.php',
     'pages/reinforce-awards.php',
     'pages/reinforce-careers.php',
+    'pages/reinforce-wpengine.php',
     'pages/reinforce-legal.php',
     'pages/reinforce-portfolio.php',
     'pages/reinforce-clients.php',
