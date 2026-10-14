@@ -21,6 +21,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
 | D-177 | Layout shift after the lean pages: header no longer paints half-built (`rel=expect` render block until the header is parsed; menu widened 234 to 706 px mid-load, 0.011); font stand-ins tuned on measured line breaks across 57 pages and 14 real device setups (Oswald 500 to 600 at 73.4%, Plex Sans at 99.7%; the other two already best). Residual: on a first visit where a web font arrives after the first paint, some lines can still re-wrap (Lighthouse up to 0.03 to 0.05 on two pages, most pages 0 to 0.004). Jamil's rule recorded: never suggest other fonts | 12 Oct | DONE (Jamil: "A ..never suggest any other fonts") | `core/reinforce-header.php`, `core/reinforce-fonts.css` |
+| D-192 | `/reviews/` linked from the site: "Reviews" in the footer (Resources, every page) and a Reviews strip under the topic chips on the blog and every topic page. Blog topic chips and "More topics" raised from 11px to 12px (the minimum) | 14 Oct | DONE (Jamil: "yes, add it to the footer and blog") | `core/reinforce-header.php`, `blog/reinforce-blog.php` |
 | D-191 | `/reviews/` hub and its two pillars built and published (pages 67, 69, 70; the empty drafts from 20 Sep): every one of the 19 carried review and hosting posts plus the WP Engine partner page is now linked. No rankings, scores or prices until the first-hand rewrites; all posts kept | 14 Oct | DONE (Jamil: "yes, build the three pages now nothing will be eliminate keep all the posts we will rewrite later") | `pages/reinforce-reviews.php` |
 | F-033 | **Production is hacked:** every page checked on reinforcelab.com carries a hidden block of 25 spam links (gambling and adult sites, `rel="sponsored"`), placed off-screen (`left:-20914565266523px`) just before the closing scripts. Added by code that runs in the page footer, not in page content. `.online` is clean | 14 Oct | `[VERIFIED]` on 6 pages; source not found (no access, production untouched) | this file |
 | D-190 | WP Engine partner page rebuilt at production's address `/agency-partner-program-wp-engine-landing/` (page 505): hosting explained, what we do, an honest "is it right for you", disclosure, 5 FAQs. No offer or price stated. The partner button and "Ad" note appear only once the WP Engine link is saved; until then the page points to Contact | 14 Oct | DONE; partner link saved 14 Oct (Jamil: "its mine") | `pages/reinforce-wpengine.php`, `core/reinforce-affiliate.php` |
@@ -264,6 +265,16 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 ---
 
+## D-192 · Reviews linked from the footer and the blog
+**Date:** 14 October 2026 · **Status:** DONE (Jamil: "yes, add it to the footer and blog")
+
+- **Footer:** "Reviews" under Resources, after "Get your free diagnostic" (`core/reinforce-header.php`), so every page links to `/reviews/`.
+- **Blog:** a strip under the topic chips on `/blog/` and every topic page: "Reviews: WordPress hosting and SEO tool reviews, in one place", linking to `/reviews/` (`blog/reinforce-blog.php`). It shows only while the hub page exists.
+- **Found while there:** the blog's topic chips and its "More topics" label were 11px, under the 12px minimum (D-139); both now 12px.
+- **Checks:** footer and strip links resolve to `/reviews/` on `/blog/` and `/seo-tips/`; no sideways scroll at 390 and 1440; axe 0 on `/blog/`; no script errors; copy check 0.
+
+---
+
 ## D-191 · Reviews hub and pillars
 **Date:** 14 October 2026 · **Status:** DONE on `.online` (Jamil: "yes, build the three pages now nothing will be eliminate keep all the posts we will rewrite later"; hub approved D-014b, URLs D-016, task D-145)
 
@@ -274,7 +285,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 - **No rankings, scores, prices or "best" claims:** the carried posts are not first-hand yet. Each card shows the product, what kind of product it is, one plain line written for the card, the post type and its last-updated date. The cards do not show the carried titles, which keep old wording ("2025", en dashes) until each rewrite. The hosting posts are labelled as setup guides because that is what they are.
 - **Schema:** WebPage + CollectionPage, ItemList of the linked posts (19, 11, 8), FAQPage; breadcrumbs from Yoast.
 - **Checks:** all 3 pages 200 and noindex on `.online`; one H1 each; 20, 12 and 8 cards, every link 200; all 15 card images 200 (posts without a featured image show the brand panel); no sideways scroll at 390 and 1440; axe 0 on all three at 390 and 1440; no script errors; copy check 0.
-- **Next:** link `/reviews/` from the site (footer Resources and the blog), Jamil's review facts per product, affiliate links other than WP Engine and Semrush.
+- **Next:** (linked from the footer and blog in D-192) Jamil's review facts per product, affiliate links other than WP Engine and Semrush.
 
 ---
 

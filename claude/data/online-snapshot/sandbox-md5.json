@@ -1,6 +1,6 @@
 {
  ".htaccess": "726ba4f4c3f06f1a8b3043758ccc8a41",
- "blog/reinforce-blog.php": "3be39cb7746017d64ebacfcac189a771",
+ "blog/reinforce-blog.php": "e89834025b577ca237be98621a063e8c",
  "blog/reinforce-post-casestudy.php": "88af16aee67d768d44656e4eb2d05c6c",
  "blog/reinforce-post-comparison.php": "b0df4ce89136c743ada7634a8735a230",
  "blog/reinforce-post-explainer.php": "b3ce96dce6de573c1482f1ba5779f631",
@@ -27,7 +27,7 @@
  "core/reinforce-consent.php": "ffd43cdfab3c60ccec1858fef9862e09",
  "core/reinforce-entity.php": "8db27beaeebf3c46e0499f373b3ef301",
  "core/reinforce-fonts.css": "00bf8b467213411a34b089179a2a16dc",
- "core/reinforce-header.php": "35c905624988375f0f43f451a42c16af",
+ "core/reinforce-header.php": "35bad6ed08b48fe39a4e783eef47f86c",
  "core/reinforce-kit.css": "d8cea7847743e920c877ecc74d02e6e4",
  "core/reinforce-kit.php": "36f61883d2b0c1968444ed7195b26451",
  "core/reinforce-mail.php": "bd0f43eaa669acdfac3d123bae007287",

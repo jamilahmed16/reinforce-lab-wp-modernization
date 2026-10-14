@@ -75,10 +75,10 @@ body.rl-blog-page .fl-page-content,body.rl-blog-page .fl-content,body.rl-blog-pa
 .rl-blog .post .type{color:var(--ink)}
 .rl-blog .cats .n{color:var(--ink-faint);margin-left:6px}
 .rl-blog .more-cats{margin-top:8px}
-.rl-blog .rv-strip{display:inline-flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:22px;padding:12px 16px;border:1px solid var(--red-line);background:rgba(153,0,0,.08);color:var(--ink);text-decoration:none;transition:background .2s}
+.rl-blog .rv-strip{display:inline-flex;align-items:center;gap:14px;max-width:100%;margin-top:22px;padding:12px 16px;border:1px solid var(--red-line);background:rgba(153,0,0,.08);color:var(--ink);text-decoration:none;transition:background .2s}
 .rl-blog .rv-strip:hover{background:rgba(153,0,0,.18)}
 .rl-blog .rv-strip .k{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3)}
-.rl-blog .rv-strip .t{font-size:16px}
+.rl-blog .rv-strip .k{flex:none}.rl-blog .rv-strip .t{font-size:16px;min-width:0;line-height:1.4}.rl-blog .rv-strip .ar{flex:none}
 .rl-blog .rv-strip .ar{color:var(--red-3)}
 .rl-blog .more-cats summary{display:inline-flex;align-items:center;cursor:pointer;list-style:none;font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);border:1px dashed var(--line-2);padding:7px 12px}
 .rl-blog .more-cats summary::-webkit-details-marker{display:none}
