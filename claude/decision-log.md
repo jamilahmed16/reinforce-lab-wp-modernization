@@ -21,6 +21,9 @@ Newest month first; within a month, entries are in the order they appear in the 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
 | D-177 | Layout shift after the lean pages: header no longer paints half-built (`rel=expect` render block until the header is parsed; menu widened 234 to 706 px mid-load, 0.011); font stand-ins tuned on measured line breaks across 57 pages and 14 real device setups (Oswald 500 to 600 at 73.4%, Plex Sans at 99.7%; the other two already best). Residual: on a first visit where a web font arrives after the first paint, some lines can still re-wrap (Lighthouse up to 0.03 to 0.05 on two pages, most pages 0 to 0.004). Jamil's rule recorded: never suggest other fonts | 12 Oct | DONE (Jamil: "A ..never suggest any other fonts") | `core/reinforce-header.php`, `core/reinforce-fonts.css` |
+| D-194 | Every affiliate link in the carried posts now gets the "Ad" label, `rel="sponsored"` and the note: the affiliate module recognises Impact (`*.sjv.io`, `*.pxf.io`), ShareASale, DreamHost `aff_id`, `?via=`, `?fpr=` and Bluehost `clickid` (was Semrush and WP Engine only). 15 posts were affected; no link is labelled twice. Logo images inside outside links get the site's name as alt text | 14 Oct | DONE (policy D-122: every affiliate link labelled) | `core/reinforce-affiliate.php`, `blog/reinforce-post.php` |
+| D-193 | `/reviews/best-seo-ai-tools/` shows the text of "5 Best AI Content Writing Tools" (`/ai-content-writing-tools/`, post 358), read live from the post, with a contents list, and the 8 tool review cards below; canonical points to the post, which keeps its address. Title "5 Best AI Content Writing Tools" | 14 Oct | DONE (Jamil: "B") | `pages/reinforce-reviews.php` |
+| F-034 | Carried posts carry other people's affiliate codes: Writesonic `via=rahat10` (3 links) and Rytr `via=md-rahat` (1); Jamil's own codes are `fpr=jamil39` (Jasper), `via=jamil` (Copy.ai), `fpr=jamil70` (Anyword), `fpr=jamil35` (Surfer SEO). Three logos in the AI tools table never reached `.online` | 14 Oct | `[VERIFIED]`; links unchanged, for Jamil | this file |
 | D-192 | `/reviews/` linked from the site: "Reviews" in the footer (Resources, every page) and a Reviews strip under the topic chips on the blog and every topic page. Blog topic chips and "More topics" raised from 11px to 12px (the minimum) | 14 Oct | DONE (Jamil: "yes, add it to the footer and blog") | `core/reinforce-header.php`, `blog/reinforce-blog.php` |
 | D-191 | `/reviews/` hub and its two pillars built and published (pages 67, 69, 70; the empty drafts from 20 Sep): every one of the 19 carried review and hosting posts plus the WP Engine partner page is now linked. No rankings, scores or prices until the first-hand rewrites; all posts kept | 14 Oct | DONE (Jamil: "yes, build the three pages now nothing will be eliminate keep all the posts we will rewrite later") | `pages/reinforce-reviews.php` |
 | F-033 | **Production is hacked:** every page checked on reinforcelab.com carries a hidden block of 25 spam links (gambling and adult sites, `rel="sponsored"`), placed off-screen (`left:-20914565266523px`) just before the closing scripts. Added by code that runs in the page footer, not in page content. `.online` is clean | 14 Oct | `[VERIFIED]` on 6 pages; source not found (no access, production untouched) | this file |
@@ -262,6 +265,35 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-193 · AI writing tools text on /reviews/best-seo-ai-tools/
+**Date:** 14 October 2026 · **Status:** DONE (Jamil: "https://reinforcelab.online/reviews/best-seo-ai-tools/ this is a list post and where is my text"; offered A (a list built from the 8 reviews), B (use the "5 Best AI Content Writing Tools" text), C (another page): "B")
+
+- **Checked first:** production has no page at `/reviews/best-seo-ai-tools/` or any "best SEO AI tools" page (8 Oct inventory; the live check was blocked, F-032 again). The nearest is the list post `/ai-content-writing-tools/` (post 358 on `.online`, carried unchanged in D-178).
+- **The page now:** hero "The 5 best AI content writing tools."; the post's full text, read live from post 358 (so a rewrite of the post shows here too), with its own H1 removed and a contents list of its H2s; then "More SEO and AI tool reviews" with the 8 tool cards. The "how to choose" list and the page's own FAQs were removed: the post has its own FAQs. Yoast title "5 Best AI Content Writing Tools | Reinforce Lab", description 134 characters.
+- **Duplicate text:** the same words now sit at two addresses. This page's canonical points to `/ai-content-writing-tools/` (Yoast `wpseo_canonical`), so the post keeps its ranking and this page does not compete with it. Yoast prints no canonical on `.online` because the whole site is noindex; it will after launch.
+- **Checks:** 200; one H1; 29 affiliate links labelled once each; no sideways scroll at 390 and 1440; axe 0 at both; no script errors.
+
+---
+
+## D-194 · All affiliate links labelled
+**Date:** 14 October 2026 · **Status:** DONE (applies D-122: every affiliate link is marked Ad, `rel="sponsored"`, with a note at the top)
+
+- **Found:** building D-193, the Jasper, Copy.ai, Writesonic, Rytr and Anyword links had no Ad label: the module only knew Semrush and WP Engine formats. A scan of all published posts found referral links in 15 carried posts: Jasper, Copy.ai, Surfer SEO, Anyword, Writesonic, Rytr (`?fpr=`, `?via=`), Bluehost, Hostinger, Namecheap, Nexcess, DigitalOcean, Rank Tracker (Impact `*.sjv.io` / `*.pxf.io`), DreamHost (`aff_id`), Bluehost (`clickid`), ShareASale.
+- **Change (`core/reinforce-affiliate.php`):** those formats are recognised and named (partner name map); labelled links carry `data-aff`, so a page that shows another post's text does not label them twice. Ordinary links, and look-alikes such as Instagram's `ref=igb_carousel`, are not labelled.
+- **Also (`blog/reinforce-post.php`):** in carried posts, a logo image with no alt text that is the only content of a link to another site gets that site's name as alt text (axe `image-alt` and `link-name` on the AI tools table).
+- **Checks:** `/ai-content-writing-tools/`, `/reviews/best-seo-ai-tools/`, `/hostinger-web-hosting/`, `/dreamhost-wordpress-hosting/`, `/surfer-seo-review/`: every referral link labelled, none twice, none missing `sponsored`, one note naming the partners; the Instagram post and `/blog/` unchanged; WP Engine page still 2 labels; axe 0.
+
+---
+
+## F-034 · Other people's affiliate codes in carried posts; missing logos
+**Date:** 14 October 2026 · **Status:** `[VERIFIED]`; nothing changed in the links; for Jamil
+
+- **Codes:** Jamil's: Jasper `fpr=jamil39`, Copy.ai `via=jamil`, Anyword `fpr=jamil70`, Surfer SEO `fpr=jamil35`. Not his (by the code): Writesonic `via=rahat10` (3 links in `/ai-content-writing-tools/`, also in `/writesonic-review/`) and Rytr `via=md-rahat` (1). Commission from those goes to whoever owns those codes. The Impact, DreamHost and Bluehost links carry numeric ids that do not show the owner.
+- **Missing images:** the Writesonic, Jasper and Rytr logos in the AI tools comparison table (`/wp-content/uploads/2022/11/*-logo-reinforce-lab.png`) were never copied to `.online`. To copy with `carry-posts.py media` once production stops refusing the `.online` server.
+- **For Jamil:** which codes to use (replace the Rahat links with his own, or keep), and the WP Engine-style partner links for the hosts if he has them.
 
 ---
 
