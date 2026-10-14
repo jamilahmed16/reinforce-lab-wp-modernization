@@ -43,7 +43,7 @@ Tasks:
 - [x] Copy the kept posts (PRESERVE, PRESERVE+REBUILD, PRESERVE-URL+REWRITE, plus HUB-REVIEW posts kept) with the rules above. One controlled import, no new publishing; recorded as the agreed exception to F-003. **Done 12 Oct (D-178): 80 posts.** Their internal links still point at the old URLs until the redirect sign-off; then they are pointed at final pages.
 - [ ] Posts planned **REBUILD-new** (23): carried across as they are until each rewrite, or redirected now, per the map. **(Jamil decides with the map)**
 - [ ] Every **301 and CONSOLIDATE target** exists and returns 200 before the switch.
-- [ ] **Build the `/reviews/` hub** and its two pillars `/reviews/best-wordpress-hosting/` and `/reviews/best-seo-ai-tools/` (approved new URLs, D-016), so the 20 reviews are linked from the site.
+- [x] **Build the `/reviews/` hub** and its two pillars `/reviews/best-wordpress-hosting/` and `/reviews/best-seo-ai-tools/` (approved new URLs, D-016), so the 20 reviews are linked from the site. Done 14 Oct (D-191): all 19 posts and the WP Engine page linked; no rankings until the first-hand rewrites.
 - [x] Copy the media files the kept posts use. **Done 12 Oct (D-178): 2,029 files at the same paths.**
 - [ ] Every carried post passes: copy check on new text only (old wording is not rewritten before launch), schema valid, images load, no layout overflow on phone.
 

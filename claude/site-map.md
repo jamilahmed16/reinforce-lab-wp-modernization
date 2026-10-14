@@ -13,11 +13,14 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 |---|---|---|---|---|---|
 | 33 | Home | [/](https://reinforcelab.online/) | publish | [`pages/reinforce-home.php`](../wp/novamira-sandbox/pages/reinforce-home.php) | AI Growth Systems for Search & Automation \| Reinforce Lab |
 
-## Company (11)
+## Company (14)
 
 | ID | Page | URL | Status | Renders from | SEO title |
 |---|---|---|---|---|---|
 | 3 | Privacy Policy | [/privacy-policy/](https://reinforcelab.online/privacy-policy/) | publish | [`pages/reinforce-legal.php`](../wp/novamira-sandbox/pages/reinforce-legal.php) | Privacy Policy \| Reinforce Lab |
+| 67 | Reviews | [/reviews/](https://reinforcelab.online/reviews/) | publish | [`pages/reinforce-reviews.php`](../wp/novamira-sandbox/pages/reinforce-reviews.php) | Reviews of WordPress Hosting and SEO Tools \| Reinforce Lab |
+| 69 | Best WordPress Hosting | [/reviews/best-wordpress-hosting/](https://reinforcelab.online/reviews/best-wordpress-hosting/) | publish | [`pages/reinforce-reviews.php`](../wp/novamira-sandbox/pages/reinforce-reviews.php) | WordPress Hosting: Guides and How to Choose \| Reinforce Lab |
+| 70 | Best SEO & AI Tools | [/reviews/best-seo-ai-tools/](https://reinforcelab.online/reviews/best-seo-ai-tools/) | publish | [`pages/reinforce-reviews.php`](../wp/novamira-sandbox/pages/reinforce-reviews.php) | SEO and AI Tools: Reviews and How to Choose \| Reinforce Lab |
 | 218 | About | [/about-us/](https://reinforcelab.online/about-us/) | publish | [`pages/reinforce-about.php`](../wp/novamira-sandbox/pages/reinforce-about.php) | About Reinforce Lab \| AI Growth Systems Company |
 | 219 | Contact | [/contact-us/](https://reinforcelab.online/contact-us/) | publish | [`pages/reinforce-contact.php`](../wp/novamira-sandbox/pages/reinforce-contact.php) | Contact Reinforce Lab \| Dhaka & Katy, Texas |
 | 221 | Awards | [/awards/](https://reinforcelab.online/awards/) | publish | [`pages/reinforce-awards.php`](../wp/novamira-sandbox/pages/reinforce-awards.php) | Awards and Recognition \| Reinforce Lab |
@@ -103,11 +106,3 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 | ID | Page | URL | Status | Renders from | SEO title |
 |---|---|---|---|---|---|
 | 220 | Blog | [/blog/](https://reinforcelab.online/blog/) | publish | [`blog/reinforce-blog.php`](../wp/novamira-sandbox/blog/reinforce-blog.php) | Blog \| SEO, AI Search and Growth Systems \| Reinforce Lab |
-
-## Drafts (3)
-
-| ID | Page | URL | Status | Renders from | SEO title |
-|---|---|---|---|---|---|
-| 67 | Reviews | /?page_id=67 | draft | WordPress editor |  |
-| 69 | Best WordPress Hosting | /?page_id=69 | draft | WordPress editor |  |
-| 70 | Best SEO & AI Tools | /?page_id=70 | draft | WordPress editor |  |
