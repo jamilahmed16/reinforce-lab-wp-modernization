@@ -44,9 +44,7 @@ body.rl-wpe-page .fl-page-content,body.rl-wpe-page .fl-content,body.rl-wpe-page 
 .rl-wpe .rl-adnote{max-width:820px;margin:22px 0 0}
 .rl-wpe .badge{display:inline-flex;align-items:center;gap:10px;margin-top:22px;font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);border:1px solid var(--red-line);padding:9px 14px;background:rgba(153,0,0,.08)}
 .rl-wpe .badge i{width:8px;height:8px;background:var(--red-2);display:block}
-.rl-wpe .aff-btn{display:flex;align-items:center;gap:10px;min-width:0}
-.rl-wpe .aff-btn .btn{flex:1 1 auto}
-.rl-wpe .aff-btn .rl-ad{flex:none;margin:0}
+.rl-wpe .cta-row .rl-ad{flex:0 0 auto!important;width:auto!important;min-width:0!important;align-self:center;margin:0 0 0 -6px}
 .rl-wpe .cell .ico{width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--red-line);color:var(--red-3);margin-bottom:16px}
 .rl-wpe .cell .ico svg{width:20px;height:20px}
 .rl-wpe .src{display:block;margin-top:18px;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.04em}
@@ -60,8 +58,7 @@ add_shortcode('reinforce_wpengine', function () {
     if (!rl_is_wpengine()) return '';
     $u = function ($path, $fallback = '#') { return esc_url(function_exists('rl_url_by_path') ? rl_url_by_path($path, $fallback) : $fallback); };
     $aff = rl_wpengine_link();
-    /* the button and its Ad label (added after </a> by core/reinforce-affiliate.php) share one wrapper, so the site's equal-width button grid treats them as one cell */
-    $offer = function ($label, $cls = 'btn p') use ($aff) { return '<span class="aff-btn"><a class="' . $cls . '" href="' . esc_url($aff) . '" rel="sponsored nofollow noopener" target="_blank">' . $label . ' <span class="ar">&rarr;</span></a></span>'; };
+    $offer = function ($label, $cls = 'btn p') use ($aff) { return '<a class="' . $cls . '" href="' . esc_url($aff) . '" rel="sponsored nofollow noopener" target="_blank">' . $label . ' <span class="ar">&rarr;</span></a>'; };
     $ico = function ($d) { return '<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">' . $d . '</svg></span>'; };
     ob_start(); ?>
 <div class="rl-page rl-wpe">
