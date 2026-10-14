@@ -46,10 +46,11 @@ body.rl-about-page .fl-page-content,body.rl-about-page .fl-content,body.rl-about
 .rl-about .glance dt{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3);padding-top:16px}
 .rl-about .glance dd{color:var(--ink);font-size:16px}
 .rl-about .glance dd a{color:inherit}
-.rl-about .glance .dl{display:flex;align-items:center;gap:8px;margin-top:6px;padding:14px 0 2px;border-top:1px solid var(--red-line);font-family:var(--f-display);text-transform:uppercase;letter-spacing:.05em;font-size:15px;color:var(--ink);text-decoration:none}
-.rl-about .glance .dl span{font-family:var(--f-mono);text-transform:none;letter-spacing:.04em;font-size:12px;color:var(--ink-faint)}
-.rl-about .glance .dl .ar{margin-left:auto;font-family:var(--f-display);font-size:16px;color:var(--red-3)}
-.rl-about .glance .dl:hover,.rl-about .glance .dl:focus-visible{color:var(--red-3)}
+.rl-about .glance .dl{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:6px;padding:14px 0 2px;border-top:1px solid var(--red-line);color:var(--ink);text-decoration:none}
+.rl-about .glance .dl .t{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.05em;font-size:15px;line-height:1.3}
+.rl-about .glance .dl small{display:block;margin-top:4px;font-family:var(--f-mono);text-transform:none;letter-spacing:.04em;font-size:12px;color:var(--ink-faint)}
+.rl-about .glance .dl .ar{flex:none;width:34px;height:34px;padding:8px;border:1px solid var(--red-line);color:var(--red-3);transition:.2s}
+.rl-about .glance .dl:hover .ar,.rl-about .glance .dl:focus-visible .ar{background:var(--red);color:#fff;border-color:var(--red)}
 .rl-about .founder{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,4vw,56px);align-items:start}
 .rl-about .founder .card{border:1px solid var(--line-2);background:var(--panel);padding:26px}
 .rl-about .founder .card .nm{font-family:var(--f-display);font-weight:600;font-size:28px;letter-spacing:.03em;text-transform:uppercase;margin:0 0 4px;color:var(--ink)}
@@ -252,7 +253,7 @@ function rl_render_about() {
         <dt>Recognition</dt><dd>HackerNoon Startups of The Year 2024, winner in Dhaka (<a href="<?php echo $u('awards'); ?>">Awards</a>)</dd>
       </dl>
       <?php $up = wp_upload_dir(); $cp = '/2022/03/Reinforce-Lab-Company-Profile.pdf'; /* D-188: company profile (D-187), at production's address */
-      if (file_exists($up['basedir'] . $cp)) { ?><a class="dl" href="<?php echo esc_url($up['baseurl'] . $cp); ?>" type="application/pdf">Download our company profile <span>(PDF, <?php echo esc_html(size_format(filesize($up['basedir'] . $cp), 0)); ?>)</span> <span class="ar" aria-hidden="true">&darr;</span></a><?php } ?>
+      if (file_exists($up['basedir'] . $cp)) { ?><a class="dl" href="<?php echo esc_url($up['baseurl'] . $cp); ?>" type="application/pdf"><span class="t">Download our company profile<small>PDF, <?php echo esc_html(size_format(filesize($up['basedir'] . $cp), 0)); ?></small></span><svg class="ar" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M8 2v10M3.5 7.5 8 12l4.5-4.5M2.5 14.5h11" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a><?php } ?>
     </aside>
   </div>
 </section>
