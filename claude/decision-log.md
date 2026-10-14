@@ -21,8 +21,9 @@ Newest month first; within a month, entries are in the order they appear in the 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
 | D-177 | Layout shift after the lean pages: header no longer paints half-built (`rel=expect` render block until the header is parsed; menu widened 234 to 706 px mid-load, 0.011); font stand-ins tuned on measured line breaks across 57 pages and 14 real device setups (Oswald 500 to 600 at 73.4%, Plex Sans at 99.7%; the other two already best). Residual: on a first visit where a web font arrives after the first paint, some lines can still re-wrap (Lighthouse up to 0.03 to 0.05 on two pages, most pages 0 to 0.004). Jamil's rule recorded: never suggest other fonts | 12 Oct | DONE (Jamil: "A ..never suggest any other fonts") | `core/reinforce-header.php`, `core/reinforce-fonts.css` |
+| F-033 | **Production is hacked:** every page checked on reinforcelab.com carries a hidden block of 25 spam links (gambling and adult sites, `rel="sponsored"`), placed off-screen (`left:-20914565266523px`) just before the closing scripts. Added by code that runs in the page footer, not in page content. `.online` is clean | 14 Oct | `[VERIFIED]` on 6 pages; source not found (no access, production untouched) | this file |
 | D-190 | WP Engine partner page rebuilt at production's address `/agency-partner-program-wp-engine-landing/` (page 505): hosting explained, what we do, an honest "is it right for you", disclosure, 5 FAQs. No offer or price stated. The partner button and "Ad" note appear only once the WP Engine link is saved; until then the page points to Contact | 14 Oct | DONE; WAITING on Jamil's WP Engine partner link (Jamil: "I will give the link later make it now") | `pages/reinforce-wpengine.php`, `core/reinforce-affiliate.php` |
-| F-032 | Production now refuses reads from the `.online` server: `/` 403, every other address (pages, sitemap, REST API) the theme's 404 page | 14 Oct | `[VERIFIED]` 14 Oct; not worked around | this file |
+| F-032 | Production refused reads from the `.online` server (`/` 403, everything else 404) on 14 Oct | 14 Oct | RESOLVED same day (Jamil: "resolved"); all reads 200 again | this file |
 | D-189 | About, "Who is Reinforce Lab for?": the 8 industries shown as linked cards (number, name, one-line summary from each industry page, arrow) in a 4-column grid, with "See all industries" beside the heading; replaces the row of small chips | 14 Oct | DONE (Jamil: "the industries are presented poorly") | `pages/reinforce-about.php` |
 | D-188 | About: "Download our company profile" link (PDF, size shown) at the foot of the At a glance panel; shows only while the file exists. Company profile to be redesigned after the .com launch: reminder in the migration checklist, B3 | 14 Oct | DONE (Jamil: "Yes"; "after we migrate the website to .com we will redesign the company profile, remind after migration") | `pages/reinforce-about.php`, `claude/migration-checklist.md` |
 | D-187 | Company profile PDF rebuilt in the new design (9 pages, A4 sideways, facts already on the site only) and placed on `.online` at production's address `/wp-content/uploads/2022/03/Reinforce-Lab-Company-Profile.pdf` (restore, D-182) | 13 Oct | DONE (Jamil: "finish it") | `claude/content/company-profile/` |
@@ -262,6 +263,19 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 ---
 
+## F-033 · Production is hacked: hidden spam links on every page
+**Date:** 14 October 2026 · **Status:** `[VERIFIED]` (read-only GETs from the `.online` server); nothing on production changed; reported to Jamil
+
+- **What:** the HTML of `/`, `/about-us/`, `/contact-us/`, `/blog/`, `/services/` and `/agency-partner-program-wp-engine-landing/` all contain the same block: `<div style="position: absolute; left: -20914565266523px; top: 0px;">` holding 25 links, each `rel="sponsored"`, to 25 domains: unyu168a.com, api288a.org, gacoan88a.it.com, idnasia88a.org, topanwin1.org, bighoki1.org, indocair1.org, ledak388a.org, super33a.org, pisang123a.org, wawaslots.com, bidikbets.com, biru777a.com, rajapadi4dd.com, giatsaydanang.net, reisetips.net, barisyildirim.net, 8idd.it.com, livewebcamtwinks.com, sf-g.com, alwaraqalabyad.com, bni789a.it.com, mc777a.org, gg999a.org, vm777a.org (Indonesian gambling, one adult site, others).
+- **Where it comes from (inference from position):** printed in the footer after WordPress's own `speculationrules` script and before WooCommerce's footer script, so it is added by PHP running on the `wp_footer` hook: a plugin, a must-use plugin, the theme's `functions.php`, or code stored in the database. Not in post content.
+- **When:** not known. The 8 October inventory recorded only links inside page content, so it would not have caught it.
+- **Why it matters:** hidden links are against Google's spam policies ("hidden text and links", "link spam") and a hacked site can get a "This site may be hacked" label or a manual action in Search Console. It may also explain part of the traffic collapse: that is INFERENCE, not shown. The server-side block seen on 14 Oct (F-032) may have been the host reacting; also unproven.
+- **`.online`:** clean. No match on 5 rendered pages, and none in the `.online` database (posts, postmeta, options). The carried posts were copied from production's REST API `content` field, which does not include footer output. No match anywhere in the repository.
+- **For Jamil (production is his to change):** run a malware scan with the host or a security plugin; check `wp-content/mu-plugins/`, the theme's `functions.php`, recently changed plugin files and unknown admin users; change all admin, hosting and database passwords; then check Search Console for Security Issues and Manual Actions. After cleaning, the block should be gone from the page source (search for "left: -20914565266523px").
+- **Also found on the same page (not a problem):** the old WP Engine page's partner link is `https://wpengine.com/more/partnerspecialoffer/?w_agcid=kn5tE5th`; it matches the affiliate format `core/reinforce-affiliate.php` accepts. Not saved until Jamil confirms it is his.
+
+---
+
 ## D-190 · WP Engine partner page
 **Date:** 14 October 2026 · **Status:** DONE on `.online`; WAITING on the WP Engine partner link (Jamil: "Rebuild the WP Engine partner page ... I will give the link later make it now"; restore approved in D-182; sign-off: PRESERVE at slug, rel=sponsored, FTC disclosure, keep indexed)
 
@@ -276,7 +290,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## F-032 · Production refuses reads from the `.online` server
-**Date:** 14 October 2026 · **Status:** `[VERIFIED]`, not worked around
+**Date:** 14 October 2026 · **Status:** RESOLVED the same day (Jamil: "resolved"); `/`, `/about-us/`, `/page-sitemap.xml` and the WP Engine page all 200 again
 
 - From the `.online` server (`wp_remote_get`, default and browser user agents), on 14 Oct: `https://reinforcelab.com/` 403; `/about-us/`, `/agency-partner-program-wp-engine-landing/`, `/page-sitemap.xml` and the REST API all return the same 4,511-byte "This Page Does Not Exist" page. The same reads worked on 8 Oct (production inventory) and 13 Oct (carried posts).
 - **Inference:** a firewall or security rule on production now blocks the `.online` server's address; it is not evidence that the pages were removed. Jamil to check in a normal browser and in the host's security settings. Nothing on production was changed.
