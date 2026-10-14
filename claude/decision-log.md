@@ -21,6 +21,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
 | D-177 | Layout shift after the lean pages: header no longer paints half-built (`rel=expect` render block until the header is parsed; menu widened 234 to 706 px mid-load, 0.011); font stand-ins tuned on measured line breaks across 57 pages and 14 real device setups (Oswald 500 to 600 at 73.4%, Plex Sans at 99.7%; the other two already best). Residual: on a first visit where a web font arrives after the first paint, some lines can still re-wrap (Lighthouse up to 0.03 to 0.05 on two pages, most pages 0 to 0.004). Jamil's rule recorded: never suggest other fonts | 12 Oct | DONE (Jamil: "A ..never suggest any other fonts") | `core/reinforce-header.php`, `core/reinforce-fonts.css` |
+| D-190 | WP Engine partner page rebuilt at production's address `/agency-partner-program-wp-engine-landing/` (page 505): hosting explained, what we do, an honest "is it right for you", disclosure, 5 FAQs. No offer or price stated. The partner button and "Ad" note appear only once the WP Engine link is saved; until then the page points to Contact | 14 Oct | DONE; WAITING on Jamil's WP Engine partner link (Jamil: "I will give the link later make it now") | `pages/reinforce-wpengine.php`, `core/reinforce-affiliate.php` |
+| F-032 | Production now refuses reads from the `.online` server: `/` 403, every other address (pages, sitemap, REST API) the theme's 404 page | 14 Oct | `[VERIFIED]` 14 Oct; not worked around | this file |
 | D-189 | About, "Who is Reinforce Lab for?": the 8 industries shown as linked cards (number, name, one-line summary from each industry page, arrow) in a 4-column grid, with "See all industries" beside the heading; replaces the row of small chips | 14 Oct | DONE (Jamil: "the industries are presented poorly") | `pages/reinforce-about.php` |
 | D-188 | About: "Download our company profile" link (PDF, size shown) at the foot of the At a glance panel; shows only while the file exists. Company profile to be redesigned after the .com launch: reminder in the migration checklist, B3 | 14 Oct | DONE (Jamil: "Yes"; "after we migrate the website to .com we will redesign the company profile, remind after migration") | `pages/reinforce-about.php`, `claude/migration-checklist.md` |
 | D-187 | Company profile PDF rebuilt in the new design (9 pages, A4 sideways, facts already on the site only) and placed on `.online` at production's address `/wp-content/uploads/2022/03/Reinforce-Lab-Company-Profile.pdf` (restore, D-182) | 13 Oct | DONE (Jamil: "finish it") | `claude/content/company-profile/` |
@@ -257,6 +259,28 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-190 · WP Engine partner page
+**Date:** 14 October 2026 · **Status:** DONE on `.online`; WAITING on the WP Engine partner link (Jamil: "Rebuild the WP Engine partner page ... I will give the link later make it now"; restore approved in D-182; sign-off: PRESERVE at slug, rel=sponsored, FTC disclosure, keep indexed)
+
+- **Page:** `/agency-partner-program-wp-engine-landing/` (page 505, new module `pages/reinforce-wpengine.php`, `[reinforce_wpengine]`, in loader). Title "WP Engine Agency Partner: Hosting Set Up by Reinforce Lab"; description 131 characters. Breadcrumb Home, WordPress Website Design, WP Engine partner. Sections: hero ("WordPress hosting on WP Engine, set up by Reinforce Lab", partner badge); what WP Engine does (speed, site management, security, WordPress support, the four themes of the old page's icons, sourced to wpengine.com with "plans differ"); what we do (build, move with every URL mapped and redirects tested, look after, grow); "WP Engine is not the cheapest host" (who it suits, and that we do not require it); disclosure (affiliate programme and agency partner, commission at no extra cost, prices and terms on WP Engine's page; same wording as `/ftc-disclosure/`); 5 FAQs; closing call to action. Schema: WebPage about the Organization, mentions WP Engine; FAQPage. No Product or Offer.
+- **No offer or price is stated:** the old page could not be read (F-032), and WP Engine sets and changes its own offer.
+- **The partner link:** read from the option `rl_awards_wpengine_url`, the same one the Awards page waits on, and accepted only if it is a WP Engine affiliate format (`wpengine.com/partnerspecialoffer/`, `w_agcid`, `wpengine.sjv.io`). With no link: the main button is "Ask us about WP Engine hosting" (Contact) and no Ad note shows. With the link: "See WP Engine's partner offer" in the hero and the closing section, each `rel="sponsored nofollow noopener"` with an Ad tag beside it, plus the Ad note under the hero buttons. Saving Jamil's link turns on this page and the WP Engine card on `/awards/` together.
+- **Affiliate module (`core/reinforce-affiliate.php`):** does not add its own top note when the page already carries one; the Ad tag is 12px (was 10.5px, under the 12px minimum).
+- **Fix found while testing:** the site makes any row of two buttons an equal-width grid, which stretched the Ad tag into a full column. The partner button and its tag now share one wrapper.
+- **Checks, both states** (with no link, and with a temporary test link `w_agcid=TEST-RL` that was removed straight after): 200, noindex on `.online`, one H1, no sideways scroll at 390 and 1440, axe 0, no script errors, copy check 0.
+- **Still to do:** save Jamil's partner link; link this page from the `/reviews/` hub when it is built (sign-off); after launch the page is indexed (PRESERVE).
+
+---
+
+## F-032 · Production refuses reads from the `.online` server
+**Date:** 14 October 2026 · **Status:** `[VERIFIED]`, not worked around
+
+- From the `.online` server (`wp_remote_get`, default and browser user agents), on 14 Oct: `https://reinforcelab.com/` 403; `/about-us/`, `/agency-partner-program-wp-engine-landing/`, `/page-sitemap.xml` and the REST API all return the same 4,511-byte "This Page Does Not Exist" page. The same reads worked on 8 Oct (production inventory) and 13 Oct (carried posts).
+- **Inference:** a firewall or security rule on production now blocks the `.online` server's address; it is not evidence that the pages were removed. Jamil to check in a normal browser and in the host's security settings. Nothing on production was changed.
+- **Effect:** read-only checks of production from here (redirect test sources, media copies) will fail until it is lifted.
 
 ---
 

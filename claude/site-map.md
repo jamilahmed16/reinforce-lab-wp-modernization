@@ -13,7 +13,7 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 |---|---|---|---|---|---|
 | 33 | Home | [/](https://reinforcelab.online/) | publish | [`pages/reinforce-home.php`](../wp/novamira-sandbox/pages/reinforce-home.php) | AI Growth Systems for Search & Automation \| Reinforce Lab |
 
-## Company (10)
+## Company (11)
 
 | ID | Page | URL | Status | Renders from | SEO title |
 |---|---|---|---|---|---|
@@ -27,6 +27,7 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 | 277 | Clients | [/clients/](https://reinforcelab.online/clients/) | publish | [`pages/reinforce-clients.php`](../wp/novamira-sandbox/pages/reinforce-clients.php) | Clients: 46 Businesses We Have Worked With \| Reinforce Lab |
 | 503 | Legal Statement | [/legal-statement/](https://reinforcelab.online/legal-statement/) | publish | [`pages/reinforce-legal.php`](../wp/novamira-sandbox/pages/reinforce-legal.php) | Legal Statement \| Reinforce Lab |
 | 504 | Careers | [/careers/](https://reinforcelab.online/careers/) | publish | [`pages/reinforce-careers.php`](../wp/novamira-sandbox/pages/reinforce-careers.php) | Careers \| Reinforce Lab |
+| 505 | WP Engine Agency Partner | [/agency-partner-program-wp-engine-landing/](https://reinforcelab.online/agency-partner-program-wp-engine-landing/) | publish | [`pages/reinforce-wpengine.php`](../wp/novamira-sandbox/pages/reinforce-wpengine.php) | WP Engine Agency Partner: Hosting Set Up by Reinforce Lab |
 
 ## Projects (3)
 
