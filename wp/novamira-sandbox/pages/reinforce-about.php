@@ -93,6 +93,23 @@ body.rl-about-page .fl-page-content,body.rl-about-page .fl-content,body.rl-about
 .rl-about .c4{grid-template-columns:repeat(4,1fr)}
 .rl-about .note{color:var(--ink-dim);font-size:16px;max-width:80ch;margin:22px 0 0}
 .rl-about .links{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px}
+.rl-about .ind-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin:clamp(34px,4vw,48px) 0 18px}
+.rl-about .ind-top .sub{margin:0}
+.rl-about .ind-top .more{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.05em;font-size:15px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--red-line);text-underline-offset:5px}
+.rl-about .ind-top .more:hover{color:var(--red-3)}
+.rl-about .ind-grid{list-style:none;margin:0 0 16px;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.rl-about .ind-grid li{margin:0;display:flex}
+.rl-about .ind{position:relative;display:flex;flex-direction:column;gap:10px;width:100%;padding:22px 22px 52px;border:1px solid var(--glass-line);background:var(--glass);color:var(--ink);text-decoration:none;transition:border-color .2s,background .2s}
+.rl-about .ind::before{content:"";position:absolute;left:0;top:0;width:36px;height:2px;background:var(--red-2);transition:width .3s}
+.rl-about a.ind:hover{border-color:var(--red-line);background:var(--glass-2)}
+.rl-about a.ind:hover::before{width:100%}
+.rl-about .ind .n{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;color:var(--red-3)}
+.rl-about .ind h4{margin:0;font-family:var(--f-display);font-weight:600;text-transform:uppercase;font-size:20px;line-height:1.15;letter-spacing:.01em}
+.rl-about .ind p{margin:0;color:var(--ink-dim);font-size:16px;line-height:1.5}
+.rl-about .ind .go{position:absolute;left:22px;bottom:18px;font-size:18px;color:var(--ink-faint);transition:transform .2s,color .2s}
+.rl-about a.ind:hover .go{color:var(--red-3);transform:translateX(4px)}
+@media(max-width:1000px){.rl-about .ind-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.rl-about .ind-grid{grid-template-columns:minmax(0,1fr)}.rl-about .ind{padding:20px 18px 48px}.rl-about .ind .go{left:18px}}
 .rl-about .reg{margin-top:16px;border:1px solid var(--red-line);background:linear-gradient(180deg,rgba(153,0,0,.08),var(--glass));padding:clamp(20px,3vw,30px)}
 .rl-about .reg h3{margin:0 0 10px}
 .rl-about .reg p{margin:0;color:var(--ink-dim);font-size:16px;max-width:80ch}
@@ -317,10 +334,15 @@ function rl_render_about() {
       <div class="cell"><span class="n">03</span><h3>Too much repetitive work</h3><p>Their team spends hours on marketing and reporting work that a system could do.</p></div>
     </div>
     <?php if ($inds) { ?>
-    <h3 class="sub">Eight industries</h3>
-    <ul class="chips">
-      <?php foreach ($inds as $slug => $d) { $l = $ex('industries/' . $slug); ?>
-      <li><?php echo $l ? '<a href="' . $l . '">' . esc_html($d['name']) . '</a>' : '<span>' . esc_html($d['name']) . '</span>'; ?></li>
+    <div class="ind-top"><h3 class="sub">Eight industries</h3><?php $hub = $ex('industries'); if ($hub) { ?><a class="more" href="<?php echo $hub; ?>">See all industries &rarr;</a><?php } ?></div>
+    <ul class="ind-grid">
+      <?php $i = 0; foreach ($inds as $slug => $d) { $i++; $l = $ex('industries/' . $slug); $tag = $l ? 'a' : 'div'; /* D-189: cards replace the chip row */ ?>
+      <li><<?php echo $tag; ?> class="ind"<?php echo $l ? ' href="' . $l . '"' : ''; ?>>
+        <span class="n"><?php echo sprintf('%02d', $i); ?></span>
+        <h4><?php echo esc_html($d['name']); ?></h4>
+        <p><?php echo esc_html($d['sum']); ?></p>
+        <?php if ($l) { ?><span class="go" aria-hidden="true">&rarr;</span><?php } ?>
+      </<?php echo $tag; ?>></li>
       <?php } ?>
     </ul>
     <?php } ?>

@@ -21,6 +21,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
 | D-177 | Layout shift after the lean pages: header no longer paints half-built (`rel=expect` render block until the header is parsed; menu widened 234 to 706 px mid-load, 0.011); font stand-ins tuned on measured line breaks across 57 pages and 14 real device setups (Oswald 500 to 600 at 73.4%, Plex Sans at 99.7%; the other two already best). Residual: on a first visit where a web font arrives after the first paint, some lines can still re-wrap (Lighthouse up to 0.03 to 0.05 on two pages, most pages 0 to 0.004). Jamil's rule recorded: never suggest other fonts | 12 Oct | DONE (Jamil: "A ..never suggest any other fonts") | `core/reinforce-header.php`, `core/reinforce-fonts.css` |
+| D-189 | About, "Who is Reinforce Lab for?": the 8 industries shown as linked cards (number, name, one-line summary from each industry page, arrow) in a 4-column grid, with "See all industries" beside the heading; replaces the row of small chips | 14 Oct | DONE (Jamil: "the industries are presented poorly") | `pages/reinforce-about.php` |
 | D-188 | About: "Download our company profile" link (PDF, size shown) at the foot of the At a glance panel; shows only while the file exists. Company profile to be redesigned after the .com launch: reminder in the migration checklist, B3 | 14 Oct | DONE (Jamil: "Yes"; "after we migrate the website to .com we will redesign the company profile, remind after migration") | `pages/reinforce-about.php`, `claude/migration-checklist.md` |
 | D-187 | Company profile PDF rebuilt in the new design (9 pages, A4 sideways, facts already on the site only) and placed on `.online` at production's address `/wp-content/uploads/2022/03/Reinforce-Lab-Company-Profile.pdf` (restore, D-182) | 13 Oct | DONE (Jamil: "finish it") | `claude/content/company-profile/` |
 | D-186 | Home blog section: subheadline now under the "From the blog." heading, "Read the blog" button moved below the three cards; Awards and recognition intro text now under its heading on the left (was a right-hand column) | 13 Oct | DONE (Jamil: "keep the sub headline below headline", "Place the button below blog posts", "Place the text of subheading on the awards section on the left as well") | `pages/reinforce-home.php` |
@@ -256,6 +257,15 @@ Newest month first; within a month, entries are in the order they appear in the 
 ---
 
 ## Current month: October 2026
+
+---
+
+## D-189 · About: industries as cards
+**Date:** 14 October 2026 · **Status:** DONE (Jamil, on a screenshot of About: "the industries are presented poorly")
+
+- **Before:** a row of eight small uppercase chips under "Eight industries", with no description.
+- **After:** eight linked cards, 4 columns on desktop, 2 at 1000px and below, 1 on phones. Each card: number, industry name, the one-line summary already used on its industry page (`rl_ind_data()['sum']`), and an arrow; a red top line widens on hover. "See all industries" links to `/industries/` beside the heading. A card without a page renders as plain text, not a dead link.
+- **Checks:** no sideways scroll at 390, 900 and 1440; axe 0 at 390 and 1440; copy check 0.
 
 ---
 
