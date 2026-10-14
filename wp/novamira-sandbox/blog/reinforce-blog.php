@@ -61,7 +61,7 @@ body.rl-blog-page .fl-page-content,body.rl-blog-page .fl-content,body.rl-blog-pa
 .rl-blog .hero{padding-bottom:clamp(20px,3vw,36px)}
 .rl-blog .hero .lede{max-width:760px}
 .rl-blog .cats{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.rl-blog .cats a{display:inline-block;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:7px 12px;transition:.15s}
+.rl-blog .cats a{display:inline-block;font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line-2);padding:7px 12px;transition:.15s}
 .rl-blog .cats a:hover,.rl-blog .cats a[aria-current]{color:var(--ink);border-color:var(--red-2)}
 /* hairlines drawn per card (not a grid background), so empty grid cells stay transparent when a row is not full */
 .rl-blog .posts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,24px)} /* D-180: cards stand apart */
@@ -75,7 +75,12 @@ body.rl-blog-page .fl-page-content,body.rl-blog-page .fl-content,body.rl-blog-pa
 .rl-blog .post .type{color:var(--ink)}
 .rl-blog .cats .n{color:var(--ink-faint);margin-left:6px}
 .rl-blog .more-cats{margin-top:8px}
-.rl-blog .more-cats summary{display:inline-flex;align-items:center;cursor:pointer;list-style:none;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);border:1px dashed var(--line-2);padding:7px 12px}
+.rl-blog .rv-strip{display:inline-flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:22px;padding:12px 16px;border:1px solid var(--red-line);background:rgba(153,0,0,.08);color:var(--ink);text-decoration:none;transition:background .2s}
+.rl-blog .rv-strip:hover{background:rgba(153,0,0,.18)}
+.rl-blog .rv-strip .k{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3)}
+.rl-blog .rv-strip .t{font-size:16px}
+.rl-blog .rv-strip .ar{color:var(--red-3)}
+.rl-blog .more-cats summary{display:inline-flex;align-items:center;cursor:pointer;list-style:none;font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);border:1px dashed var(--line-2);padding:7px 12px}
 .rl-blog .more-cats summary::-webkit-details-marker{display:none}
 .rl-blog .more-cats summary::after{content:"+";margin-left:8px;color:var(--red-3)}
 .rl-blog .more-cats[open] summary::after{content:"\2212"}
@@ -181,7 +186,9 @@ function rl_blog_render() {
         foreach ($main as $c) echo $chip($c);
         echo '</ul>';
         if ($more) { echo '<details class="more-cats"><summary>More topics<span class="n">' . count($more) . '</span></summary><ul class="cats">'; foreach ($more as $c) echo $chip($c); echo '</ul></details>'; }
-    } ?>
+    }
+    $rv = function_exists('rl_url_by_path') ? rl_url_by_path('reviews', '') : ''; /* D-192: the reviews hub, linked from the blog */
+    if ($rv) { ?><a class="rv-strip" href="<?php echo esc_url($rv); ?>"><span class="k">Reviews</span><span class="t">WordPress hosting and SEO tool reviews, in one place</span><span class="ar" aria-hidden="true">&rarr;</span></a><?php } ?>
   </div>
 </section>
 
