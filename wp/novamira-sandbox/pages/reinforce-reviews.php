@@ -73,24 +73,161 @@ function rl_reviews_faqs($view) {
             ['Do you have a relationship with these companies?', 'We are a Semrush agency partner and affiliate, and our founder is a Semrush Ambassador. Any other paid relationship is stated next to the link and on our FTC and Affiliate Disclosure page.'],
         ],
     ];
-    if ($view === 'tools') return []; /* D-193: the page carries the source post's own FAQs */
     return isset($f[$view]) ? $f[$view] : [];
 }
 
-/* D-193 (Jamil, 14 Oct, option B): /reviews/best-seo-ai-tools/ shows the text of the post "5 Best AI Content Writing Tools" (/ai-content-writing-tools/, post 358), read live so edits to the post show here too. The post keeps its own address and stays the canonical. Returns [html, toc] or null. */
-function rl_reviews_tools_source() {
-    static $out = false;
-    if ($out !== false) return $out;
-    $p = get_page_by_path('ai-content-writing-tools', OBJECT, 'post');
-    if (!$p || $p->post_status !== 'publish') return $out = null;
-    global $post; $keep = $post; $post = $p; setup_postdata($p);
-    $html = apply_filters('the_content', $p->post_content);
-    $post = $keep; if ($keep) setup_postdata($keep); else wp_reset_postdata();
-    $html = preg_replace('#<h1\b([^>]*)>(.*?)</h1>#is', '', $html, 1); // the page has its own H1
-    return $out = function_exists('rl_post_prepare') ? rl_post_prepare($html) : [$html, []];
+/* ---------- D-195: the two pillars in the Best / List design, from Jamil's own list posts ---------- */
+function rl_reviews_picks($v) {
+    static $all = null;
+    if ($all === null) { $f = __DIR__ . '/reinforce-reviews-picks.json'; $all = is_readable($f) ? (json_decode(file_get_contents($f), true) ?: []) : []; }
+    $set = isset($all[$v]) ? $all[$v] : ['picks' => [], 'intro' => [], 'from' => ''];
+    /* our own page for each pick, where we have one; WP Engine's link is Jamil's saved partner link (D-190) */
+    $guides = ['WP Engine' => ['page', 'agency-partner-program-wp-engine-landing', 'Our WP Engine partner page'], 'Kinsta' => ['post', 'kinsta-wordpress-hosting', 'Setup guide'], 'Bluehost' => ['post', 'bluehost-wordpress-hosting', 'Setup guide'],
+        'DreamHost' => ['post', 'dreamhost-wordpress-hosting', 'Setup guide'], 'Namecheap' => ['post', 'namecheap-wordpress-hosting', 'Setup guide'], 'Flywheel' => ['post', 'flywheel-wordpress-hosting', 'Setup guide'],
+        'Nexcess' => ['post', 'nexcess-wordpress-hosting', 'Setup guide'], 'A2 Hosting' => ['post', 'a2-wordpress-hosting', 'Setup guide'], 'Hostinger' => ['post', 'hostinger-web-hosting', 'Setup guide'],
+        'Cloudways' => ['post', 'cloudways-hosting', 'Setup guide'], 'Writesonic' => ['post', 'writesonic-review', 'Full review'], 'Jasper' => ['post', 'jasper-review', 'Full review'], 'Copy AI' => ['post', 'copy-ai-review', 'Full review']];
+    foreach ($set['picks'] as $i => &$p) {
+        $p['anchor'] = sanitize_title($p['name']);
+        $p['guide'] = ''; $p['guide_label'] = '';
+        if (isset($guides[$p['name']])) { $g = $guides[$p['name']]; $o = get_page_by_path($g[1], OBJECT, $g[0]); if ($o && $o->post_status === 'publish') { $p['guide'] = get_permalink($o); $p['guide_label'] = $g[2]; } }
+        if ($p['name'] === 'WP Engine' && $p['url'] === '' && function_exists('rl_wpengine_link')) $p['url'] = rl_wpengine_link();
+    }
+    unset($p);
+    $src = $set['from'] ? get_page_by_path($set['from'], OBJECT, 'post') : null;
+    $set['source'] = $src && $src->post_status === 'publish' ? $src : null;
+    return $set;
 }
-function rl_reviews_tools_source_url() { $p = get_page_by_path('ai-content-writing-tools', OBJECT, 'post'); return $p && $p->post_status === 'publish' ? get_permalink($p) : ''; }
-add_filter('wpseo_canonical', function ($c) { return rl_reviews_view() === 'tools' && ($src = rl_reviews_tools_source_url()) ? $src : $c; }, 20);
+
+function rl_reviews_pillar($v, $d, $u, $wpeCard) {
+    $set = rl_reviews_picks($v); $picks = $set['picks']; $n = count($picks);
+    $hub = $u('reviews');
+    $T = $v === 'hosting'
+        ? ['kind' => 'WordPress hosting', 'h1' => 'The 15 best web hosting services<span class="yr">.</span>', 'stand' => 'Our 15 picks for hosting a WordPress or business website, each with what it is best for, its pros and cons, and our setup guide where we have one.', 'label' => 'Host']
+        : ['kind' => 'SEO and AI tools', 'h1' => 'The 5 best AI content writing tools<span class="yr">.</span>', 'stand' => 'Our 5 picks for writing marketing copy and articles with AI, each with why we picked it and who it is for. Then every SEO and AI tool review on the site.', 'label' => 'Tool'];
+    $ok = '<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg>';
+    $x = '<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg>';
+    $names = []; foreach ($picks as $p) if ($p['url'] !== '' && function_exists('rl_aff_partner') && ($pn = rl_aff_partner($p['url'])) !== '') $names[] = $pn;
+    $src = $set['source'];
+    ob_start(); ?>
+<div class="wrap l-hero<?php echo $n ? '' : ' solo'; ?>">
+  <div>
+    <div class="l-kicker"><span class="l-kind">Best / List</span><a class="l-cat" href="<?php echo $hub; ?>">Reviews · <?php echo esc_html($T['kind']); ?></a></div>
+    <h1 class="l-h1"><?php echo $T['h1']; ?></h1>
+    <p class="l-stand"><?php echo esc_html($T['stand']); ?></p>
+    <div class="l-by"><span><b><?php echo (int) $n; ?></b> picks</span><?php if ($src) { ?><span>From our list, updated <time datetime="<?php echo esc_attr(get_the_modified_date('c', $src)); ?>"><b><?php echo esc_html(get_the_modified_date('j M Y', $src)); ?></b></time></span><?php } ?></div>
+  </div>
+  <?php if ($n) { $top = array_slice($picks, 0, 3); ?>
+  <div class="l-pod-wrap">
+    <div class="l-pod-h"><span>Our picks</span></div>
+    <div class="l-podium n<?php echo count($top); ?>">
+      <?php foreach ($top as $k => $p) { ?><a class="pd pd<?php echo $k + 1; ?>" href="#<?php echo esc_attr($p['anchor']); ?>"><?php if ($p['badge'] !== '') { ?><span class="pl"><?php echo esc_html($p['badge']); ?></span><?php } ?><span class="pn"><?php echo esc_html($p['name']); ?></span></a><?php } ?>
+    </div>
+  </div>
+  <?php } ?>
+</div>
+
+<section class="l-method" aria-label="About this list">
+  <div class="wrap"><?php if ($names && function_exists('rl_aff_note')) echo rl_aff_note($names); ?>
+    <p class="disc">No scores or prices yet: we will add them when we rewrite this list from our own testing. Each pick links to our full guide or review where we have one.</p></div>
+</section>
+
+<?php if ($n > 1) { ?>
+<nav class="l-short" aria-label="The shortlist"><div class="wrap"><span class="lbl">Shortlist</span>
+  <ol><?php foreach ($picks as $k => $p) echo '<li><a href="#' . esc_attr($p['anchor']) . '"><b>' . ($k + 1) . '</b><span>' . esc_html($p['name']) . '</span></a></li>'; ?></ol>
+  <a class="cmp" href="#compare">Compare all</a></div></nav>
+<?php } ?>
+
+<div class="wrap">
+  <div class="l-main">
+    <?php if (!empty($set['intro'])) echo '<div class="l-prose l-intro"><p>' . esc_html($set['intro'][0]) . '</p></div>'; ?>
+    <?php if ($n > 1) { ?>
+    <div class="sec-h" id="compare"><span>At a glance</span><h2>Compare all <?php echo (int) $n; ?></h2></div>
+    <div class="tw"><table class="l-table">
+      <thead><tr><th scope="col">#</th><th scope="col"><?php echo esc_html($T['label']); ?></th><th scope="col">Best for</th><th scope="col">Our guide</th></tr></thead>
+      <tbody><?php foreach ($picks as $k => $p) { ?>
+        <tr<?php echo $k === 0 ? ' class="top"' : ''; ?>><td class="rk"><?php echo $k + 1; ?></td><th scope="row"><a href="#<?php echo esc_attr($p['anchor']); ?>"><?php echo esc_html($p['name']); ?></a></th><td><?php echo esc_html(preg_replace('/^Best( Web Hosting)?( For| With)?\s*/i', '', $p['badge']) ?: 'All-round AI writing'); ?></td><td><?php echo $p['guide'] ? '<a href="' . esc_url($p['guide']) . '">' . esc_html($p['guide_label']) . '</a>' : '<span aria-label="none">&middot;</span>'; ?></td></tr>
+      <?php } ?></tbody>
+    </table></div>
+    <?php } ?>
+
+    <?php if ($n) { ?>
+    <div class="sec-h"><span>The list</span><h2>Our picks in detail</h2></div>
+    <?php foreach ($picks as $k => $p) { ?>
+    <article class="pick<?php echo $k === 0 ? ' first' : ''; ?>" id="<?php echo esc_attr($p['anchor']); ?>" aria-labelledby="<?php echo esc_attr($p['anchor']); ?>-h">
+      <div class="rail"><span class="rank" aria-hidden="true"><?php echo $k + 1; ?></span></div>
+      <div class="pbody">
+        <?php if ($p['badge'] !== '') { ?><p class="bdg"><?php echo esc_html($p['badge']); ?></p><?php } ?>
+        <h2 id="<?php echo esc_attr($p['anchor']); ?>-h"><span class="vh"><?php echo $k + 1; ?>. </span><?php echo esc_html($p['name']); ?></h2>
+        <?php if (!empty($p['intro'])) { ?><p class="vd"><?php echo esc_html($p['intro'][0]); ?></p><?php } ?>
+        <?php $more = array_merge(array_slice($p['intro'], 1), $p['verdict'] ?? []);
+        if ($more || $p['why'] || $p['who']) { ?><div class="l-prose more">
+          <?php foreach ($more as $t) echo '<p>' . esc_html($t) . '</p>'; ?>
+          <?php if ($p['why']) { echo '<h3>Why we picked it</h3>'; foreach ($p['why'] as $t) echo '<p>' . esc_html($t) . '</p>'; } ?>
+          <?php if ($p['who']) { echo '<h3>Who it is for</h3>'; foreach ($p['who'] as $t) echo '<p>' . esc_html($t) . '</p>'; } ?>
+        </div><?php } ?>
+        <?php if ($p['pros'] || $p['cons']) { ?><div class="pc">
+          <?php if ($p['pros']) { ?><div><p class="lb">Pros</p><ul class="pros"><?php foreach ($p['pros'] as $t) echo '<li>' . $ok . '<span>' . esc_html($t) . '</span></li>'; ?></ul></div><?php } ?>
+          <?php if ($p['cons']) { ?><div><p class="lb">Cons</p><ul class="cons"><?php foreach ($p['cons'] as $t) echo '<li>' . $x . '<span>' . esc_html($t) . '</span></li>'; ?></ul></div><?php } ?>
+        </div><?php } ?>
+        <?php if ($p['url'] !== '' || $p['guide']) { ?><div class="act">
+          <?php if ($p['url'] !== '') { ?><a class="go" href="<?php echo esc_url($p['url']); ?>" rel="sponsored nofollow noopener" target="_blank">Visit <?php echo esc_html($p['name']); ?> <span aria-hidden="true">&rarr;</span></a><?php } ?>
+          <?php if ($p['guide']) { ?><a class="rv-more" href="<?php echo esc_url($p['guide']); ?>"><?php echo esc_html($p['guide_label']); ?> &rarr;</a><?php } ?>
+        </div><?php } ?>
+      </div>
+    </article>
+    <?php } } ?>
+    <?php if ($src) { ?><p class="rv-src">This list comes from our post <a href="<?php echo esc_url(get_permalink($src)); ?>"><?php echo esc_html(preg_replace('/\s*20\d\d$/', '', get_the_title($src))); ?></a>, which has the full text.</p><?php } ?>
+  </div>
+</div>
+
+<?php if ($v === 'hosting') { ?>
+<section class="band alt" id="choose">
+  <div class="wrap">
+    <div class="head"><span class="ey"><b>[</b>&nbsp;How to choose&nbsp;<b>]</b></span><h2>What matters when you choose a WordPress host?</h2><p class="lede">Six questions that settle most choices.</p></div>
+    <ul class="ticks">
+      <li><b>Shared or managed?</b> Shared hosting is cheaper and leaves more work to you. Managed WordPress hosting handles caching, backups, updates and WordPress support.</li>
+      <li><b>Where are your visitors?</b> Pick a data centre near them, or a host with a content delivery network.</li>
+      <li><b>Backups and staging.</b> Daily backups you can restore yourself, and a staging copy to test changes before they go live.</li>
+      <li><b>Support that knows WordPress.</b> Ask how fast support answers and whether it can fix WordPress problems, not only server ones.</li>
+      <li><b>The renewal price.</b> First-year prices are often much lower than the price you pay after. Compare the renewal price.</li>
+      <li><b>Moving in and out.</b> Check whether the host moves your site for you, and how easy it is to leave.</li>
+    </ul>
+  </div>
+</section>
+<section id="guides">
+  <div class="wrap">
+    <div class="head"><span class="ey"><b>[</b>&nbsp;The guides&nbsp;<b>]</b></span><h2>Every hosting guide on the site.</h2></div>
+    <ul class="rv-grid"><?php echo $wpeCard(); foreach ($d['hosting'] as $r) echo rl_reviews_card($r, 'Read the guide'); ?></ul>
+    <h3 class="grp">Comparison lists</h3>
+    <ul class="rv-grid"><?php foreach ($d['hosting_lists'] as $r) echo rl_reviews_card($r, 'Read the list'); ?></ul>
+  </div>
+</section>
+<?php } else { ?>
+<section class="band alt" id="choose">
+  <div class="wrap">
+    <div class="head"><span class="ey"><b>[</b>&nbsp;How to choose&nbsp;<b>]</b></span><h2>How should you choose an SEO or AI tool?</h2><p class="lede">Start from the job, not the feature list.</p></div>
+    <ul class="ticks">
+      <li><b>Name the job.</b> Keyword research, rank tracking, content briefs and site audits are different jobs. Buy for the one you do every week.</li>
+      <li><b>Check the data for your market.</b> Search volumes and rankings are only useful if the tool covers your country and language well.</li>
+      <li><b>Count the seats.</b> Many tools price per user. Work out the price for your whole team.</li>
+      <li><b>AI drafts need an editor.</b> AI writing tools speed up first drafts; a person still checks every claim before anything is published.</li>
+      <li><b>Try before a year.</b> Use a trial or a monthly plan on a real task before you commit to an annual price.</li>
+      <li><b>Fewer tools, used well.</b> One suite used every day usually beats five tools opened once a month.</li>
+    </ul>
+  </div>
+</section>
+<section id="tools">
+  <div class="wrap">
+    <div class="head"><span class="ey"><b>[</b>&nbsp;All tool reviews&nbsp;<b>]</b></span><h2>Every SEO and AI tool review on the site.</h2></div>
+    <?php foreach ($d['tools'] as $g => $rows) { ?>
+    <h3 class="grp"><?php echo esc_html($g); ?></h3>
+    <ul class="rv-grid"><?php foreach ($rows as $r) echo rl_reviews_card($r); ?></ul>
+    <?php } ?>
+  </div>
+</section>
+<?php }
+    return ob_get_clean();
+}
 
 /* one card per post: the post's own image if it has one, else the brand panel */
 function rl_reviews_card($row, $label = 'Read the review') {
@@ -116,6 +253,7 @@ function rl_reviews_card($row, $label = 'Read the review') {
 
 add_filter('body_class', function ($c) { if (rl_reviews_view()) $c[] = 'rl-reviews-page'; return $c; });
 add_filter('rl_kit_active', function ($on) { return $on || rl_reviews_view() !== ''; });
+add_filter('rl_list_css', function ($on) { return $on || in_array(rl_reviews_view(), ['hosting', 'tools'], true); }); /* D-195: the Best / List styles on the two pillars */
 
 /* ---------- schema: CollectionPage with an ItemList of the linked posts; FAQPage ---------- */
 add_filter('wpseo_schema_graph', function ($graph) {
@@ -128,6 +266,10 @@ add_filter('wpseo_schema_graph', function ($graph) {
     else $rows = array_merge(...array_values($d['tools']));
     $items = []; $i = 0;
     foreach ($rows as $r) { $p = get_page_by_path($r[0], OBJECT, 'post'); if ($p && $p->post_status === 'publish') $items[] = ['@type' => 'ListItem', 'position' => ++$i, 'url' => get_permalink($p), 'name' => $r[1]]; }
+    if ($v !== 'hub') { /* D-195: on a pillar the list is the ranking itself (editorial order, no ratings, as D-086) */
+        $items = []; $i = 0;
+        foreach (rl_reviews_picks($v)['picks'] as $pk) $items[] = ['@type' => 'ListItem', 'position' => ++$i, 'name' => $pk['name'], 'url' => $url . '#' . $pk['anchor']];
+    }
     foreach ($graph as &$n) {
         if (is_array($n) && !empty($n['@type']) && in_array('WebPage', (array) $n['@type'], true) && isset($n['@id']) && strpos($n['@id'], $url) === 0) {
             $n['@type'] = ['WebPage', 'CollectionPage'];
@@ -136,7 +278,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
         }
     }
     unset($n);
-    $graph[] = ['@type' => 'ItemList', '@id' => $url . '#list', 'numberOfItems' => count($items), 'itemListElement' => $items];
+    $graph[] = ['@type' => 'ItemList', '@id' => $url . '#list', 'numberOfItems' => count($items), 'itemListOrder' => 'https://schema.org/ItemListOrderAscending', 'itemListElement' => $items];
     $faqs = rl_reviews_faqs($v);
     if ($faqs) $graph[] = ['@type' => 'FAQPage', '@id' => $url . '#faq', 'isPartOf' => ['@id' => $url], 'mainEntity' => array_map(function ($q) { return ['@type' => 'Question', 'name' => $q[0], 'acceptedAnswer' => ['@type' => 'Answer', 'text' => $q[1]]]; }, $faqs)];
     return $graph;
@@ -172,24 +314,13 @@ body.rl-reviews-page .fl-page-content,body.rl-reviews-page .fl-content,body.rl-r
 .rl-reviews .pill .go{margin-top:8px;font-family:var(--f-display);text-transform:uppercase;letter-spacing:.05em;font-size:15px}
 .rl-reviews .note{margin-top:18px;font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);letter-spacing:.04em}
 .rl-reviews .note a{color:var(--ink-dim);border-bottom:1px solid var(--line-2)}
-.rl-reviews .rv-art-wrap{display:grid;grid-template-columns:260px minmax(0,1fr);gap:clamp(28px,4vw,56px);align-items:start}
-.rl-reviews .rv-toc{position:sticky;top:96px;border:1px solid var(--line-2);background:var(--bg-2);padding:18px 20px}
-.rl-reviews .rv-toc .cap{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 10px}
-.rl-reviews .rv-toc ol{margin:0;padding:0 0 0 18px;display:grid;gap:8px;color:var(--ink-faint);font-size:14px}
-.rl-reviews .rv-toc a{color:var(--ink-dim);text-decoration:none}.rl-reviews .rv-toc a:hover{color:var(--red-3)}
-.rl-reviews .rv-art{max-width:780px;color:var(--ink-dim);font-size:17px;line-height:1.7}
-.rl-reviews .rv-art>*+*{margin-top:18px}
-.rl-reviews .rv-art h2{font-size:clamp(24px,2.8vw,32px);color:var(--ink);margin-top:44px;scroll-margin-top:100px}
-.rl-reviews .rv-art h3{font-size:20px;color:var(--ink);margin-top:28px;scroll-margin-top:100px}
-.rl-reviews .rv-art h4{font-family:var(--f-display);text-transform:uppercase;font-size:17px;color:var(--ink);margin-top:22px}
-.rl-reviews .rv-art p{margin:0}.rl-reviews .rv-art p+p{margin-top:16px}
-.rl-reviews .rv-art ul,.rl-reviews .rv-art ol{padding-left:22px}.rl-reviews .rv-art li+li{margin-top:6px}
-.rl-reviews .rv-art a{color:var(--ink);border-bottom:1px solid var(--red-line);text-decoration:none}.rl-reviews .rv-art a:hover{color:var(--red-3)}
-.rl-reviews .rv-art img{max-width:100%;height:auto;display:block;border:1px solid var(--line-2)}
-.rl-reviews .rv-art figure{margin:24px 0;max-width:100%}
-.rl-reviews .rv-art table{width:100%;border-collapse:collapse;font-size:15px}.rl-reviews .rv-art th,.rl-reviews .rv-art td{border:1px solid var(--line-2);padding:10px 12px;text-align:left;vertical-align:top}.rl-reviews .rv-art th{color:var(--ink)}
-.rl-reviews .rv-art .wp-caption{max-width:100%!important}
-@media(max-width:1000px){.rl-reviews .rv-art-wrap{grid-template-columns:minmax(0,1fr)}.rl-reviews .rv-toc{position:static}}
+.rl-reviews.rl-list .l-method .rl-adnote{margin:0 0 10px}
+.rl-reviews.rl-list .act{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
+.rl-reviews.rl-list .act .rl-ad{margin-left:-12px}
+.rl-reviews .rv-more{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.05em;font-size:14px;color:var(--ink);border-bottom:1px solid var(--red-line);text-decoration:none}
+.rl-reviews .rv-more:hover{color:var(--red-3)}
+.rl-reviews .rv-src{margin-top:28px;font-size:15px;color:var(--ink-faint)}.rl-reviews .rv-src a{color:var(--ink-dim);border-bottom:1px solid var(--line-2);text-decoration:none}
+.rl-reviews.rl-list .l-table td span[aria-label]{color:var(--ink-faint)}
 @media(max-width:1000px){.rl-reviews .rv-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.rl-reviews .pill{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:600px){.rl-reviews .rv-grid{grid-template-columns:minmax(0,1fr)}}
@@ -210,7 +341,7 @@ add_shortcode('reinforce_reviews', function ($atts) {
         return '<li><a class="rv" href="' . esc_url(get_permalink($wpe)) . '"><span class="th ph" aria-hidden="true"><b>WP Engine</b></span><span class="bd"><span class="k">Managed WordPress hosting</span><h3>WP Engine</h3><span class="ln">We are a WP Engine agency partner. What the hosting does, and what we do around it.</span><span class="mt">Partner page</span><span class="go">See the partner page &rarr;</span></span></a></li>';
     };
     ob_start(); ?>
-<div class="rl-page rl-reviews">
+<div class="rl-page rl-reviews<?php echo $v !== 'hub' ? ' rl-post rl-list' : ''; ?>">
 
 <nav class="crumbs wrap" aria-label="Breadcrumb"><ol>
   <li><a href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
@@ -263,78 +394,8 @@ add_shortcode('reinforce_reviews', function ($atts) {
   </div>
 </section>
 
-<?php } elseif ($v === 'hosting') { ?>
-<section class="hero">
-  <div class="wrap">
-    <span class="ey"><b>[</b>&nbsp;Reviews · WordPress hosting&nbsp;<b>]</b></span>
-    <h1 class="h1">WordPress hosting:<br><span class="r">guides and how to choose.</span></h1>
-    <p class="lede">Step-by-step setup guides for nine hosts, two comparison lists, and our WP Engine partner page. Hosts change their plans and prices often, so check the host's own site before you buy.</p>
-  </div>
-</section>
+<?php } else { echo rl_reviews_pillar($v, $d, $u, $wpeCard); } ?>
 
-<section class="band alt" id="choose">
-  <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;How to choose&nbsp;<b>]</b></span><h2>What matters when you choose a WordPress host?</h2><p class="lede">Six questions that settle most choices.</p></div>
-    <ul class="ticks">
-      <li><b>Shared or managed?</b> Shared hosting is cheaper and leaves more work to you. Managed WordPress hosting handles caching, backups, updates and WordPress support.</li>
-      <li><b>Where are your visitors?</b> Pick a data centre near them, or a host with a content delivery network.</li>
-      <li><b>Backups and staging.</b> Daily backups you can restore yourself, and a staging copy to test changes before they go live.</li>
-      <li><b>Support that knows WordPress.</b> Ask how fast support answers and whether it can fix WordPress problems, not only server ones.</li>
-      <li><b>The renewal price.</b> First-year prices are often much lower than the price you pay after. Compare the renewal price.</li>
-      <li><b>Moving in and out.</b> Check whether the host moves your site for you, and how easy it is to leave.</li>
-    </ul>
-  </div>
-</section>
-
-<section id="hosts">
-  <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;The guides&nbsp;<b>]</b></span><h2>WordPress hosts we have written about.</h2></div>
-    <ul class="rv-grid"><?php echo $wpeCard(); foreach ($d['hosting'] as $r) echo rl_reviews_card($r, 'Read the guide'); ?></ul>
-    <h3 class="grp">Comparison lists</h3>
-    <ul class="rv-grid"><?php foreach ($d['hosting_lists'] as $r) echo rl_reviews_card($r, 'Read the list'); ?></ul>
-    <p class="note">The guides are being rewritten one at a time. Some links in them may earn us a commission, each marked Ad. <a href="<?php echo $u('ftc-disclosure'); ?>">How we handle affiliate links</a>.</p>
-  </div>
-</section>
-
-<?php } else { $src = rl_reviews_tools_source(); ?>
-<?php if ($src) { /* D-193: Jamil's "5 Best AI Content Writing Tools" text (post 358), rendered live from the post */
-    [$art, $toc] = $src; ?>
-<section class="hero">
-  <div class="wrap">
-    <span class="ey"><b>[</b>&nbsp;Reviews · SEO and AI tools&nbsp;<b>]</b></span>
-    <h1 class="h1">The 5 best AI<br><span class="r">content writing tools.</span></h1>
-    <p class="lede">Writesonic, Jasper, Rytr, Copy AI and Anyword compared, with the pros and cons of each. Then every SEO and AI tool review on the site.</p>
-  </div>
-</section>
-
-<section class="band alt" id="list">
-  <div class="wrap rv-art-wrap">
-    <?php if (count($toc) > 2) { ?><nav class="rv-toc" aria-label="Contents"><p class="cap">Contents</p><ol><?php foreach ($toc as $t) echo '<li><a href="#' . esc_attr($t[0]) . '">' . esc_html($t[1]) . '</a></li>'; ?></ol></nav><?php } ?>
-    <article class="rv-art"><?php echo $art; ?></article>
-  </div>
-</section>
-<?php } else { ?>
-<section class="hero">
-  <div class="wrap">
-    <span class="ey"><b>[</b>&nbsp;Reviews · SEO and AI tools&nbsp;<b>]</b></span>
-    <h1 class="h1">SEO and AI tools:<br><span class="r">reviews.</span></h1>
-  </div>
-</section>
-<?php } ?>
-
-<section id="tools">
-  <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;All tool reviews&nbsp;<b>]</b></span><h2>More SEO and AI tool reviews.</h2></div>
-    <?php foreach ($d['tools'] as $g => $rows) { ?>
-    <h3 class="grp"><?php echo esc_html($g); ?></h3>
-    <ul class="rv-grid"><?php foreach ($rows as $r) echo rl_reviews_card($r); ?></ul>
-    <?php } ?>
-    <p class="note">The reviews are being rewritten one at a time. We are a Semrush agency partner and affiliate; links that can earn us a commission are marked Ad. <a href="<?php echo $u('ftc-disclosure'); ?>">How we handle affiliate links</a>.</p>
-  </div>
-</section>
-<?php } ?>
-
-<?php if ($v !== 'tools') { ?>
 <section class="faq band alt" id="faq">
   <div class="wrap" style="max-width:900px">
     <div class="head"><span class="ey"><b>[</b>&nbsp;Questions&nbsp;<b>]</b></span><h2><?php echo $v === 'hub' ? 'About our reviews.' : ($v === 'hosting' ? 'About WordPress hosting.' : 'About SEO and AI tools.'); ?></h2></div>
@@ -343,7 +404,6 @@ add_shortcode('reinforce_reviews', function ($atts) {
     <?php } ?>
   </div>
 </section>
-<?php } ?>
 
 <section id="start">
   <div class="wrap">

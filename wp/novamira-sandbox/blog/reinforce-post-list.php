@@ -362,7 +362,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
 
 /* ---------- CSS ---------- */
 add_action('wp_head', function () {
-    if (!rl_is_list_view()) return; ?>
+    if (!rl_is_list_view() && !apply_filters('rl_list_css', false)) return; /* D-195: pages can opt in (the /reviews/ pillars) */ ?>
 <style id="rl-list-css">
 .rl-list{color:var(--ink-dim);--ok:#3fa36b}
 .rl-list h1,.rl-list h2,.rl-list h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);line-height:1.04;letter-spacing:.005em;text-wrap:balance}
