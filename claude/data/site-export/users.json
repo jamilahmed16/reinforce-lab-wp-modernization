@@ -1,0 +1,44 @@
+[
+ {
+  "ID": 1,
+  "user_login": "jadirectives@gmail.com",
+  "user_nicename": "jadirectivesgmail-com",
+  "display_name": "jadirectives@gmail.com",
+  "user_email": "jadirectives@gmail.com",
+  "roles": [
+   "administrator"
+  ],
+  "first_name": "",
+  "last_name": "",
+  "description": "",
+  "user_url": "http://reinforcelab.online"
+ },
+ {
+  "ID": 3,
+  "user_login": "jamilahmed",
+  "user_nicename": "jamilahmed",
+  "display_name": "Jamil Ahmed",
+  "user_email": "hello@jamilahmed.com",
+  "roles": [
+   "administrator"
+  ],
+  "first_name": "Jamil",
+  "last_name": "Ahmed",
+  "description": "Jamil Ahmed is an SEO and AI search consultant, a pharmacist and a Semrush Ambassador. He founded Reinforce Lab in 2021 and leads it as CEO. Jamil builds AI Growth Systems for companies: he connects their website, content and search visibility with AI automation, so they are found on Google and in AI answers and turn that attention into revenue.",
+  "user_url": ""
+ },
+ {
+  "ID": 9,
+  "user_login": "reinforcelab-team",
+  "user_nicename": "reinforcelab-team",
+  "display_name": "Reinforce Lab team",
+  "user_email": "reinforcelab-team@reinforcelab.invalid",
+  "roles": [
+   "contributor"
+  ],
+  "first_name": "Reinforce Lab",
+  "last_name": "team",
+  "description": "",
+  "user_url": ""
+ }
+]

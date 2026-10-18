@@ -8,6 +8,19 @@ Nothing on reinforcelab.com changes until the switch itself (Rules 1 and 2). Eve
 
 ---
 
+## Launch plan changed 18 Oct 2026: clean rebuild (F-033, F-035)
+
+Both sites share one Hostinger account and both are compromised. Nothing is copied from the old servers as files. The new site is a **fresh WordPress on new hosting**: our code from git, plugins and theme fresh from the vendors, content and settings imported as data (`claude/data/site-export/`), media images and PDFs only, each checked. Jamil approved 18 Oct ("Yes I you can start"; `jadirectives@gmail.com` confirmed as his; `.com` and `.online` on the same account).
+
+- [ ] **Step 1 (Jamil and Hostinger):** security ticket for the account (how they got in); every password changed (hosting, Titan mailbox, WordPress, database, FTP, registrar) with two-factor; full offline backups of both sites kept as evidence; WooCommerce orders and Semrush backlinks exported; new hosting chosen (new account, not the compromised one). **(Jamil)**
+- [x] **Step 2.1:** everything built on `.online` exported as data only, scanned (0 risky fields), 2,318 media files listed with checksums (18 Oct).
+- [ ] **Step 2.2:** redirect map in code and the redirect test (A4).
+- [ ] **Step 2.3:** rebuild script: fresh WordPress + vendor plugins + our code from git + data import + media download with signature and checksum checks.
+- [ ] **Step 3:** run the rebuild on the new hosting (noindex staging address), then every check: parity, axe, link scan, redirect test, speed. **(gate)**
+- [ ] **Step 4:** the switch (A6), on the new hosting only; the old account stays offline 30 days as evidence, then is closed.
+
+---
+
 ## Part A: must be done BEFORE the switch
 
 ### A1. Data and decisions (Jamil)
