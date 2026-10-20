@@ -45,22 +45,38 @@ function rl_aigrowth_industries() {
 }
 
 /* hero visual: the four layers feeding three outcomes */
+/* 10 s loop, same pattern as the other hero drawings (F-038 follow-up): layers light top to bottom, links pulse,
+   a red pulse runs the loop line, outcomes light in turn, the approval line brightens, then a soft reset.
+   Overlays start invisible, so with motion off (shared rule) the still drawing shows. */
+function rl_aigrowth_anim_css($p) {
+    $lit = function ($n, $a, $b) { return "@keyframes $n{0%,{$a}%{opacity:0}{$b}%,92%{opacity:1}97%,100%{opacity:0}}"; };
+    $c = "$p .ag-lon{fill:rgba(153,0,0,.12);stroke:var(--red-2);stroke-width:1;opacity:0}$p .ag-kp{stroke:var(--red-3);stroke-width:2;opacity:0}"
+       . "$p .ag-lp{fill:none;stroke:var(--red-3);stroke-width:2.4;stroke-linecap:round;stroke-dasharray:14 100;stroke-dashoffset:14;opacity:0;animation:rlagLp 10s ease-in-out infinite both}"
+       . "$p .ag-oon{fill:rgba(153,0,0,.14);stroke:var(--red-2);stroke-width:1;opacity:0}$p .ag-apon{fill:#fff;opacity:0;animation:rlagAp 10s ease infinite both}"
+       . "$p .ag-lon,$p .ag-kp,$p .ag-oon{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:ease;animation-fill-mode:both}"
+       . "@keyframes rlagLp{0%,46%{stroke-dashoffset:14;opacity:0}47%{opacity:1}60%{opacity:1}61%,100%{stroke-dashoffset:-100;opacity:0}}"
+       . $lit('rlagAp', 80, 83);
+    foreach ([4, 16, 28, 40] as $i => $t) $c .= $lit("rlagL$i", $t, $t + 3) . "$p .ag-lon$i{animation-name:rlagL$i}";
+    foreach ([10, 22, 34] as $i => $t) $c .= "@keyframes rlagK$i{0%,{$t}%{opacity:0}" . ($t + 2) . "%{opacity:1}" . ($t + 6) . "%,100%{opacity:0}}$p .ag-kp$i{animation-name:rlagK$i}";
+    foreach ([62, 68, 74] as $i => $t) $c .= $lit("rlagO$i", $t, $t + 3) . "$p .ag-oon$i{animation-name:rlagO$i}";
+    return $c;
+}
 function rl_aigrowth_svg() {
     /* 520 x 392: same proportions as the other service hero visuals (F-024) */
     $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlAgT"><title id="rlAgT">An AI Growth System: four layers (data, AI models, automated workflows and a dashboard) connected into one loop that produces three outcomes: hours saved, search visibility and qualified pipeline, with people approving what matters.</title>';
     $layers = [['01', 'DATA', 'CRM · ANALYTICS · SEARCH CONSOLE'], ['02', 'AI MODELS', 'RESEARCH · WRITING · CLASSIFYING'], ['03', 'WORKFLOWS', 'MAKE · N8N · YOUR TOOLS'], ['04', 'DASHBOARD', 'OUTCOMES, NOT ACTIVITY']];
     foreach ($layers as $i => $l) {
         $y = 4 + $i * 90;
-        $s .= '<rect class="ag-l' . ($i === 3 ? ' ag-on' : '') . '" x="0" y="' . $y . '" width="300" height="70"/>'
+        $s .= '<rect class="ag-l' . ($i === 3 ? ' ag-on' : '') . '" x="0" y="' . $y . '" width="300" height="70"/><rect class="ag-lon ag-lon' . $i . '" x="0" y="' . $y . '" width="300" height="70"/>'
             . '<text class="ag-n" x="12" y="' . ($y + 31) . '">' . $l[0] . '</text><text class="ag-t" x="44" y="' . ($y + 31) . '">' . $l[1] . '</text>'
             . '<text class="ag-s" x="44" y="' . ($y + 52) . '">' . $l[2] . '</text>';
-        if ($i < 3) $s .= '<line class="ag-k" x1="150" y1="' . ($y + 70) . '" x2="150" y2="' . ($y + 90) . '"/>';
+        if ($i < 3) $s .= '<line class="ag-k" x1="150" y1="' . ($y + 70) . '" x2="150" y2="' . ($y + 90) . '"/><line class="ag-kp ag-kp' . $i . '" x1="150" y1="' . ($y + 70) . '" x2="150" y2="' . ($y + 90) . '"/>';
     }
-    $s .= '<path class="ag-loop" d="M300 309 H320 V39 H300"/><text class="ag-s" x="330" y="174" transform="rotate(90 330 174)" text-anchor="middle">LOOP: TUNED EVERY CYCLE</text>';
-    foreach ([['HOURS SAVED', 66], ['SEARCH VISIBILITY', 174], ['QUALIFIED PIPELINE', 282]] as $o) {
-        $s .= '<line class="ag-k" x1="340" y1="' . $o[1] . '" x2="350" y2="' . $o[1] . '"/><rect class="ag-o" x="350" y="' . ($o[1] - 30) . '" width="170" height="60"/><text class="ag-ot" x="366" y="' . ($o[1] + 4) . '">' . $o[0] . '</text>';
+    $s .= '<path class="ag-loop" d="M300 309 H320 V39 H300"/><path class="ag-lp" pathLength="100" d="M300 309 H320 V39 H300"/><text class="ag-s" x="330" y="174" transform="rotate(90 330 174)" text-anchor="middle">LOOP: TUNED EVERY CYCLE</text>';
+    foreach ([['HOURS SAVED', 66], ['SEARCH VISIBILITY', 174], ['QUALIFIED PIPELINE', 282]] as $oi => $o) {
+        $s .= '<line class="ag-k" x1="340" y1="' . $o[1] . '" x2="350" y2="' . $o[1] . '"/><rect class="ag-o" x="350" y="' . ($o[1] - 30) . '" width="170" height="60"/><rect class="ag-oon ag-oon' . $oi . '" x="350" y="' . ($o[1] - 30) . '" width="170" height="60"/><text class="ag-ot" x="366" y="' . ($o[1] + 4) . '">' . $o[0] . '</text>';
     }
-    $s .= '<line class="ag-rule" x1="0" y1="362" x2="520" y2="362"/><text class="ag-s ag-ap" x="0" y="385">+ PEOPLE APPROVE WHAT MATTERS</text>';
+    $s .= '<line class="ag-rule" x1="0" y1="362" x2="520" y2="362"/><text class="ag-s ag-ap" x="0" y="385">+ PEOPLE APPROVE WHAT MATTERS</text><text class="ag-s ag-apon" x="0" y="385">+ PEOPLE APPROVE WHAT MATTERS</text>';
     return $s . '</svg>';
 }
 
@@ -69,7 +85,7 @@ add_shortcode('reinforce_ag_layers', function () {
     static $css = false;
     $o = '';
     if (!$css) { $css = true; $o .= '<style id="rl-agfig-css">.rl-agfig{margin:26px 0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:18px 18px 12px}.rl-agfig svg{display:block;width:100%;height:auto}.rl-agfig figcaption{font-family:var(--f-mono);font-size:12px;letter-spacing:.04em;color:var(--ink-faint);margin-top:10px}'
-        . '.rl-agfig .ag-l{fill:var(--bg);stroke:var(--line-2);stroke-width:1}.rl-agfig .ag-l.ag-on{fill:rgba(153,0,0,.10);stroke:var(--red-2)}.rl-agfig .ag-n{font-family:var(--f-mono);font-size:12.5px;fill:var(--red-3)}.rl-agfig .ag-t{font-family:var(--f-display);font-size:20px;letter-spacing:.04em;fill:var(--ink)}.rl-agfig .ag-s{font-family:var(--f-mono);font-size:12.5px;letter-spacing:0;fill:var(--ink-faint)}.rl-agfig .ag-k{stroke:var(--line-2);stroke-width:1;stroke-dasharray:3 4}.rl-agfig .ag-loop{fill:none;stroke:var(--red-2);stroke-width:1.4}.rl-agfig .ag-o{fill:var(--bg);stroke:var(--red-line);stroke-width:1}.rl-agfig .ag-ot{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.02em;fill:var(--ink)}.rl-agfig .ag-rule{stroke:var(--line-2);stroke-width:1}.rl-agfig .ag-ap{fill:var(--red-3)}</style>'; }
+        . '.rl-agfig .ag-l{fill:var(--bg);stroke:var(--line-2);stroke-width:1}.rl-agfig .ag-l.ag-on{fill:rgba(153,0,0,.10);stroke:var(--red-2)}.rl-agfig .ag-n{font-family:var(--f-mono);font-size:12.5px;fill:var(--red-3)}.rl-agfig .ag-t{font-family:var(--f-display);font-size:20px;letter-spacing:.04em;fill:var(--ink)}.rl-agfig .ag-s{font-family:var(--f-mono);font-size:12.5px;letter-spacing:0;fill:var(--ink-faint)}.rl-agfig .ag-k{stroke:var(--line-2);stroke-width:1;stroke-dasharray:3 4}.rl-agfig .ag-loop{fill:none;stroke:var(--red-2);stroke-width:1.4}.rl-agfig .ag-o{fill:var(--bg);stroke:var(--red-line);stroke-width:1}.rl-agfig .ag-ot{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.02em;fill:var(--ink)}.rl-agfig .ag-rule{stroke:var(--line-2);stroke-width:1}.rl-agfig .ag-ap{fill:var(--red-3)}' . rl_aigrowth_anim_css('.rl-agfig') . '</style>'; }
     $o .= '<figure class="rl-agfig rl-anim">' . rl_aigrowth_svg();
     if (function_exists('rl_ph')) $o .= rl_ph([['label' => 'Four layers', 'kind' => 'steps', 'items' => ['Data', 'AI models', 'Workflows', 'Dashboard']], ['label' => 'Run as', 'kind' => 'chips', 'items' => ['One loop, tuned every cycle'], 'join' => false], ['label' => 'Outcomes', 'kind' => 'chips', 'items' => [['Hours saved', 'ok'], ['Search visibility', 'ok'], ['Qualified pipeline', 'ok']]], ['label' => 'Control', 'kind' => 'chips', 'items' => ['+ People approve what matters'], 'join' => false]], '');
     return $o . '<figcaption class="cap">The four layers of an AI growth system, run as one loop.</figcaption></figure>';
@@ -96,6 +112,7 @@ body.rl-aigrowth-page .fl-page-content,body.rl-aigrowth-page .fl-content,body.rl
 .rl-aigrowth .ag-rule{stroke:var(--line-2);stroke-width:1}
 .rl-aigrowth .ag-ap{fill:var(--red-3)}
 .rl-aigrowth .ag-ot{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.02em;fill:var(--ink)}
+<?php echo rl_aigrowth_anim_css('.rl-aigrowth'); ?>
 .rl-aigrowth .lay{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0;padding:0;list-style:none}
 .rl-aigrowth .lay li{border:1px solid var(--line-2);background:var(--bg-2);padding:20px;margin:0;display:grid;gap:8px;align-content:start}
 .rl-aigrowth .lay .k{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--red-3)}
