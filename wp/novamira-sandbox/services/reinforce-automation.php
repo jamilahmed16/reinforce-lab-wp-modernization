@@ -48,7 +48,7 @@ function rl_ma_svg() {
     $s .= $box('m-o0', 100, 24, 120, 'FORM FILL') . $box('m-o1', 100, 84, 120, 'EMAIL · GUIDE');
     $s .= '<polygon class="m-b" points="160,148 205,170 160,192 115,170"/><polygon class="m-on m-o2" points="160,148 205,170 160,192 115,170"/><text class="m-t" x="160" y="173.5" text-anchor="middle">CLICKED?</text>';
     $s .= '<text class="m-y" x="214" y="164">YES</text><text class="m-n" x="92" y="164" text-anchor="end">NO</text>';
-    $s .= $box('m-o3', 180, 222, 120, 'EMAIL · CASE STUDY') . '<rect class="m-b m-dim" x="0" y="222" width="120" height="34"/><text class="m-t m-tdim" x="60" y="242.5" text-anchor="middle">WAIT · NEW ANGLE</text>';
+    $s .= $box('m-o3', 164, 222, 152, 'EMAIL · CASE STUDY') . '<rect class="m-b m-dim" x="0" y="222" width="136" height="34"/><text class="m-t m-tdim" x="68" y="242.5" text-anchor="middle">WAIT · NEW ANGLE</text>';
     $s .= $box('m-o4', 180, 290, 120, 'SALES ALERT');
     $s .= '<text class="m-lab" x="350" y="12">LEAD SCORE</text>';
     $s .= '<rect class="m-sc" x="390" y="40" width="44" height="240"/><rect class="m-scon" x="390" y="40" width="44" height="240"/>';
@@ -92,7 +92,7 @@ body.rl-ma-page .fl-page-content,body.rl-ma-page .fl-content,body.rl-ma-page .fl
 .rl-ma .m-dim{stroke-dasharray:3 3}
 .rl-ma .m-on{fill:rgba(153,0,0,.09);stroke:rgba(226,59,59,.65);stroke-width:.8;opacity:0}
 .rl-ma .m-crm{animation-name:rlmaCrm}
-.rl-ma .m-t{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
+.rl-ma .m-t{font-family:var(--f-mono);font-size:12.5px;letter-spacing:0;fill:var(--ink-dim)}
 .rl-ma .m-tdim{fill:var(--ink-faint)}
 .rl-ma .m-y,.rl-ma .m-n{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--red-3)}
 .rl-ma .m-n{fill:var(--ink-faint)}

@@ -105,7 +105,7 @@ body.rl-mt-page .fl-page-content,body.rl-mt-page .fl-content,body.rl-mt-page .fl
 .rl-mt .t-alert{fill:none;stroke:#fff;stroke-width:1.4;opacity:0;animation-name:rlmtAlert}
 .rl-mt .t-b{fill:var(--bg);stroke:rgba(243,237,230,.12);stroke-width:.8}
 .rl-mt .t-on{fill:rgba(153,0,0,.09);stroke:rgba(226,59,59,.6);stroke-width:.8;opacity:0}
-.rl-mt .t-t{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
+.rl-mt .t-t{font-family:var(--f-mono);font-size:12.5px;letter-spacing:0;fill:var(--ink-dim)}
 .rl-mt .t-ar{stroke:rgba(243,237,230,.2);stroke-width:.8}
 .rl-mt .t-st{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
 .rl-mt .t-led{fill:var(--red-2);opacity:0}

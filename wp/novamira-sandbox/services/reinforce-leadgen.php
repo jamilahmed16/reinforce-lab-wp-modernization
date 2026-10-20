@@ -94,7 +94,7 @@ body.rl-lg-page .fl-page-content,body.rl-lg-page .fl-content,body.rl-lg-page .fl
 .rl-lg .lgl svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-lg .g-b{fill:var(--bg);stroke:rgba(243,237,230,.12);stroke-width:.8}
 .rl-lg .g-on{fill:rgba(153,0,0,.09);stroke:rgba(226,59,59,.65);stroke-width:.8;opacity:0}
-.rl-lg .g-t{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
+.rl-lg .g-t{font-family:var(--f-mono);font-size:12.5px;letter-spacing:0;fill:var(--ink-dim)}
 .rl-lg .g-y,.rl-lg .g-n{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--red-3)}
 .rl-lg .g-n{fill:var(--ink-faint)}
 .rl-lg .g-tpaid{fill:#fff;opacity:0;animation:rlgPaidT 10s cubic-bezier(.45,0,.2,1) infinite both}

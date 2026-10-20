@@ -60,7 +60,7 @@ function rl_audit_svg() {
     foreach ($ord as $r => $i) {
         $d = rl_audit_issues()[$i]; $y = 30 + $r * 44;
         $s .= '<g class="u-row u-row' . $r . '"><rect class="u-rb" x="272" y="' . $y . '" width="248" height="36"/><rect class="u-pr u-' . strtolower($d[4]) . '" x="282" y="' . ($y + 10) . '" width="22" height="16"/><text class="u-prt" x="293" y="' . ($y + 21.5) . '" text-anchor="middle">' . $d[4] . '</text>'
-            . '<text class="u-rt" x="314" y="' . ($y + 16) . '">' . $d[3] . '</text><text class="u-eff" x="314" y="' . ($y + 29) . '">EFFORT</text><rect class="u-eb" x="352" y="' . ($y + 25) . '" width="80" height="3"/><rect class="u-ef" x="352" y="' . ($y + 25) . '" width="' . $d[5] . '" height="3"/></g>';
+            . '<text class="u-rt" x="314" y="' . ($y + 16) . '">' . $d[3] . '</text><text class="u-eff" x="314" y="' . ($y + 29) . '">EFFORT</text><rect class="u-eb" x="370" y="' . ($y + 25) . '" width="80" height="3"/><rect class="u-ef" x="370" y="' . ($y + 25) . '" width="' . $d[5] . '" height="3"/></g>';
     }
     $s .= '<line class="u-rule" x1="272" y1="262" x2="520" y2="262"/><text class="u-lab" x="272" y="280">ROADMAP</text>';
     foreach (['30 DAYS', '60 DAYS', '90 DAYS'] as $i => $t) {

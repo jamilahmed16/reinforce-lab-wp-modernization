@@ -142,7 +142,7 @@ body.rl-svc-page .fl-page-content,body.rl-svc-page .fl-content,body.rl-svc-page 
 .rl-svc .cg-hon{fill:var(--red-3);opacity:0}
 .rl-svc .cg-hit{fill:var(--bg);stroke:var(--line-2);stroke-width:1;transition:stroke .2s}
 .rl-svc .cg-tl{fill:rgba(153,0,0,.12);stroke:var(--red-2);stroke-width:1;opacity:0}
-.rl-svc .cg-tx{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim);transition:fill .2s}
+.rl-svc .cg-tx{font-family:var(--f-mono);font-size:12.5px;letter-spacing:0;fill:var(--ink-dim);transition:fill .2s}
 .rl-svc .cg a{cursor:pointer;outline:none}
 .rl-svc .cg a:hover .cg-hit,.rl-svc .cg a:focus-visible .cg-hit{stroke:var(--red-3)}
 .rl-svc .cg a:hover .cg-tx,.rl-svc .cg a:focus-visible .cg-tx{fill:#fff}

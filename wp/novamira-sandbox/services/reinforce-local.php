@@ -42,7 +42,7 @@ function rl_local_industries() {
 function rl_local_svg() {
     $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlLoT"><title id="rlLoT">A nearby customer searches; Google weighs relevance, distance and prominence; your business appears in the local results with a complete profile, genuine reviews and consistent citations.</title>'
         . '<defs><clipPath id="rlloMap"><rect x="0" y="40" width="300" height="260"/></clipPath></defs>';
-    $s .= '<rect class="o-q" x="0" y="0" width="300" height="28"/><text class="o-qt" x="12" y="18">ACCOUNTANT NEAR ME</text><rect class="o-caret" x="152" y="9" width="2" height="11"/>';
+    $s .= '<rect class="o-q" x="0" y="0" width="300" height="28"/><text class="o-qt" x="12" y="18">ACCOUNTANT NEAR ME</text><rect class="o-caret" x="162" y="7" width="2" height="15"/>';
     $s .= '<rect class="o-map" x="0" y="40" width="300" height="260"/><g clip-path="url(#rlloMap)" class="o-streets">';
     foreach ([70, 120, 175, 230, 280] as $y) $s .= '<line x1="0" y1="' . $y . '" x2="300" y2="' . ($y + 6) . '"/>';
     foreach ([40, 105, 165, 225, 275] as $x) $s .= '<line x1="' . $x . '" y1="40" x2="' . ($x - 8) . '" y2="300"/>';
@@ -60,7 +60,7 @@ function rl_local_svg() {
             . '<rect class="o-bar" x="332" y="' . ($r[1] + 28) . '" width="120" height="4"/><rect class="o-bar" x="332" y="' . ($r[1] + 37) . '" width="90" height="4"/></g>';
     }
     $s .= '<rect class="o-you-row" x="320" y="110" width="200" height="60"/><text class="o-you-t" x="332" y="130">YOUR BUSINESS</text>';
-    foreach (['PROFILE', 'REVIEWS', 'CITATIONS'] as $i => $c) $s .= '<text class="o-chk o-chk' . $i . '" x="' . (332 + $i * 62) . '" y="160">+ ' . $c . '</text>';
+    foreach (['PROFILE', 'REVIEWS', 'CITATIONS'] as $i => $c) $s .= '<text class="o-chk o-chk' . $i . '" x="' . [320, 420, 320][$i] . '" y="' . [266, 266, 286][$i] . '">+ ' . $c . '</text>';
     $s .= '<line class="o-rule" x1="0" y1="318" x2="520" y2="318"/>';
     foreach (['RELEVANCE', 'DISTANCE', 'PROMINENCE'] as $i => $f) {
         $x = $i * 178;

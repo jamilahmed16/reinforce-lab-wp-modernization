@@ -53,7 +53,7 @@ function rl_ent_svg() {
         $s .= '<rect class="e-sq" x="182" y="' . ($y - 8) . '" width="9" height="9"/><rect class="e-sqon e-c' . $i . '" x="182" y="' . ($y - 8) . '" width="9" height="9"/><text class="e-ct" x="198" y="' . $y . '">' . $c . '</text>';
     }
     $s .= '<path class="e-e" d="M294 135 H326"/><path class="e-p e-po" pathLength="100" d="M294 135 H326"/>';
-    $s .= '<text class="e-lab" x="330" y="18">EVERY TEMPLATE, EVERY PAGE</text>';
+    $s .= '<text class="e-lab" x="520" y="18" text-anchor="end">EVERY TEMPLATE, EVERY PAGE</text>';
     for ($c = 0; $c < 8; $c++) for ($r = 0; $r < 9; $r++) {
         $x = 330 + $c * 24; $y = 28 + $r * 24;
         $s .= '<rect class="e-cell" x="' . $x . '" y="' . $y . '" width="18" height="18"/><rect class="e-on e-col' . $c . '" x="' . $x . '" y="' . $y . '" width="18" height="18"/>';

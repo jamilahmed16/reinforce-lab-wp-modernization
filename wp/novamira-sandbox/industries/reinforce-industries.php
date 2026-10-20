@@ -146,24 +146,32 @@ function rl_ind_svc_name($path) { $m = ['services/best-search-engine-optimizatio
    The industry's three realities feed an AI Growth System whose four layers fill in turn - search,
    content, AI search, automation; the industry's three guardrails are checked; a growth line draws;
    context · system · guardrails · growth light in turn. 10 s loop, soft fade, reset. */
+function rl_ind_lbl($t, $x, $cy, $cls, $max, $anchor = '') {
+    $t = esc_html($t); $an = $anchor ? ' text-anchor="' . $anchor . '"' : '';
+    if (strlen(html_entity_decode($t)) <= $max || strpos($t, ' ') === false) return '<text class="' . $cls . '" x="' . $x . '" y="' . ($cy + 4.5) . '"' . $an . '>' . $t . '</text>';
+    $sp = []; foreach (str_split($t) as $i => $c) if ($c === ' ') $sp[] = $i;
+    $mid = strlen($t) / 2; usort($sp, function ($a, $b) use ($mid) { return abs($a - $mid) <=> abs($b - $mid); });
+    $a1 = substr($t, 0, $sp[0]); $a2 = substr($t, $sp[0] + 1);
+    return '<text class="' . $cls . '"' . $an . '><tspan x="' . $x . '" y="' . ($cy - 2.5) . '">' . $a1 . '</tspan><tspan x="' . $x . '" y="' . ($cy + 11.5) . '">' . $a2 . '</tspan></text>';
+}
 function rl_ind_svg($a) {
     $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlInT"><title id="rlInT">An AI Growth System for ' . esc_html($a['name']) . ': search, content, AI search and automation layers built around the industry’s realities and guardrails.</title>';
     $s .= '<text class="n-lab" x="0" y="20">CONTEXT</text><text class="n-lab" x="360" y="20">GUARDRAILS</text>';
     foreach ($a['real'] as $i => $t) {
-        $y = 36 + $i * 60; $cy = $y + 17;
+        $y = 34 + $i * 60; $cy = $y + 20;
         $s .= '<path class="n-e" d="M128 ' . $cy . ' C144 ' . $cy . ' 142 115 160 115"/><path class="n-p n-pr' . $i . '" pathLength="100" d="M128 ' . $cy . ' C144 ' . $cy . ' 142 115 160 115"/>'
-            . '<rect class="n-b" x="0" y="' . $y . '" width="128" height="34"/><rect class="n-on n-r' . $i . '" x="0" y="' . $y . '" width="128" height="34"/><text class="n-t" x="64" y="' . ($y + 20.5) . '" text-anchor="middle">' . esc_html($t) . '</text>';
+            . '<rect class="n-b" x="0" y="' . $y . '" width="128" height="40"/><rect class="n-on n-r' . $i . '" x="0" y="' . $y . '" width="128" height="40"/>' . rl_ind_lbl($t, 64, $cy, 'n-t', 15, 'middle');
     }
-    $s .= '<rect class="n-b" x="160" y="30" width="180" height="170"/><rect class="n-on n-core" x="160" y="30" width="180" height="170"/><text class="n-id" x="172" y="50">' . esc_html($a['short']) . '</text><text class="n-h" x="172" y="68">AI GROWTH SYSTEM</text><line class="n-rule" x1="172" y1="78" x2="328" y2="78"/>';
+    $s .= '<rect class="n-b" x="160" y="30" width="180" height="170"/><rect class="n-on n-core" x="160" y="30" width="180" height="170"/><text class="n-id" x="168" y="50">' . esc_html($a['short']) . '</text><text class="n-h" x="168" y="68">AI GROWTH SYSTEM</text><line class="n-rule" x1="172" y1="78" x2="328" y2="78"/>';
     foreach (['SEARCH', 'CONTENT', 'AI SEARCH', 'AUTOMATION'] as $i => $t) {
         $y = 98 + $i * 26;
-        $s .= '<text class="n-ct" x="172" y="' . $y . '">' . $t . '</text><rect class="n-bar" x="252" y="' . ($y - 7) . '" width="76" height="7"/><rect class="n-baron n-l' . $i . '" x="252" y="' . ($y - 7) . '" width="76" height="7"/>';
+        $s .= '<text class="n-ct" x="168" y="' . $y . '">' . $t . '</text><rect class="n-bar" x="264" y="' . ($y - 8) . '" width="64" height="7"/><rect class="n-baron n-l' . $i . '" x="264" y="' . ($y - 8) . '" width="64" height="7"/>';
     }
     foreach ($a['guard'] as $i => $t) {
-        $y = 36 + $i * 60;
-        $s .= '<path class="n-e" d="M340 115 C352 115 348 ' . ($y + 17) . ' 360 ' . ($y + 17) . '"/>'
-            . '<rect class="n-b" x="360" y="' . $y . '" width="160" height="34"/><rect class="n-on n-g' . $i . '" x="360" y="' . $y . '" width="160" height="34"/>'
-            . '<rect class="n-sq" x="372" y="' . ($y + 12) . '" width="10" height="10"/><rect class="n-sqon n-g' . $i . '" x="372" y="' . ($y + 12) . '" width="10" height="10"/><text class="n-gt" x="390" y="' . ($y + 20.5) . '">' . esc_html($t) . '</text>';
+        $y = 34 + $i * 60;
+        $s .= '<path class="n-e" d="M340 115 C352 115 348 ' . ($y + 20) . ' 360 ' . ($y + 20) . '"/>'
+            . '<rect class="n-b" x="360" y="' . $y . '" width="160" height="40"/><rect class="n-on n-g' . $i . '" x="360" y="' . $y . '" width="160" height="40"/>'
+            . '<rect class="n-sq" x="370" y="' . ($y + 15) . '" width="10" height="10"/><rect class="n-sqon n-g' . $i . '" x="370" y="' . ($y + 15) . '" width="10" height="10"/>' . rl_ind_lbl($t, 388, $y + 20, 'n-gt', 16);
     }
     $s .= '<text class="n-lab" x="0" y="238">GROWTH</text><line class="n-rule" x1="0" y1="316" x2="520" y2="316"/>';
     $s .= '<path class="n-gr" pathLength="100" d="M0 306 L60 300 L120 302 L180 288 L240 284 L300 268 L360 262 L420 246 L480 236 L520 226"/>';
@@ -228,9 +236,9 @@ body.rl-indhub-page .fl-page-content,body.rl-indhub-page .fl-content,body.rl-ind
 .rl-ind .inf svg,.rl-indhub .inf svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-ind .n-b{fill:var(--bg);stroke:rgba(243,237,230,.12);stroke-width:.8}
 .rl-ind .n-on{fill:rgba(153,0,0,.09);stroke:rgba(226,59,59,.65);stroke-width:.8;opacity:0}
-.rl-ind .n-t{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
+.rl-ind .n-t{font-family:var(--f-mono);font-size:12.5px;letter-spacing:0;fill:var(--ink-dim)}
 .rl-ind .n-lab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
-.rl-ind .n-id{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--red-3)}
+.rl-ind .n-id{font-family:var(--f-mono);font-size:12.5px;letter-spacing:0;fill:var(--red-3)}
 .rl-ind .n-h{font-family:var(--f-display);font-weight:600;font-size:12.5px;letter-spacing:.06em;fill:var(--ink)}
 .rl-ind .n-rule{stroke:rgba(243,237,230,.1);stroke-width:.8}
 .rl-ind .n-ct{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
@@ -238,7 +246,7 @@ body.rl-indhub-page .fl-page-content,body.rl-indhub-page .fl-content,body.rl-ind
 .rl-ind .n-baron{fill:var(--red-2);transform-box:fill-box;transform-origin:0 50%;transform:scaleX(0)}
 .rl-ind .n-sq{fill:none;stroke:rgba(243,237,230,.25);stroke-width:.8}
 .rl-ind .n-sqon{fill:var(--red-2);opacity:0}
-.rl-ind .n-gt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
+.rl-ind .n-gt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:0;fill:var(--ink-dim)}
 .rl-ind .n-e{fill:none;stroke:rgba(243,237,230,.14);stroke-width:.8}
 .rl-ind .n-p{fill:none;stroke:var(--red-3);stroke-width:1.3;stroke-linecap:round;stroke-dasharray:8 100;stroke-dashoffset:8;opacity:0}
 .rl-ind .n-gr{fill:none;stroke:var(--red-3);stroke-width:1.6;stroke-linejoin:round;stroke-dasharray:100;stroke-dashoffset:100;animation-name:rlinGr}
