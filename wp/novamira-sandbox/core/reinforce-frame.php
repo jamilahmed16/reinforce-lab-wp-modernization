@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name: Reinforce Lab Frame Background (draft)
- * Description: DRAFT background that replaces the removed grid (D-200, D-202). Preview only: it runs when the page address has ?bg=frame, and keeps that on links inside the site so a reviewer can browse. Without it the site is unchanged. Two dashed side rails frame the content, every section join gets a full-width rule with square markers on the rails, the hero ends in a band of cells with red textured tiles, and a red line on the left rail shows reading progress. Scroll effects are off for people who turn off motion.
+ * Plugin Name: Reinforce Lab Frame Background
+ * Description: The site background (D-200, D-202, D-203; replaced the grid). Two dashed side rails frame the content, every section join gets a full-width rule with square markers on the rails that draws in with a red sweep, the hero ends in a band of cells with red textured tiles that light up on scroll (phone too), and a red line on the left rail shows reading progress. On for every front-end page; ?bg=off turns it off for one page view to compare. Scroll effects are off for people who turn off motion.
  */
 if (!defined('ABSPATH')) exit;
 
 function rl_frame_on() {
-    return !is_admin() && isset($_GET['bg']) && $_GET['bg'] === 'frame';
+    return !is_admin() && !(isset($_GET['bg']) && $_GET['bg'] === 'off');
 }
 
 add_action('wp_head', function () {
@@ -43,8 +43,6 @@ add_action('wp_footer', function () {
 <script id="rl-frame-js">
 (function(){
   var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
-  // keep the preview on while browsing the site
-  document.querySelectorAll('a[href^="/"],a[href*="reinforcelab.online"]').forEach(function(a){try{var u=new URL(a.href,location.href);if(u.host!==location.host||u.hash&&u.pathname===location.pathname)return;u.searchParams.set('bg','frame');a.href=u.toString();}catch(e){}});
   var root=document.createElement('div');root.id='rl-frame';root.setAttribute('aria-hidden','true');document.body.insertBefore(root,document.body.firstChild);
   var prog=document.createElement('div');prog.id='rl-prog';prog.setAttribute('aria-hidden','true');document.body.appendChild(prog);
   var joins=[],tiles=[],hero=null,heroTop=0,heroH=1,railL=0,io=null;
@@ -53,7 +51,7 @@ add_action('wp_footer', function () {
     root.textContent='';joins=[];tiles=[];if(io)io.disconnect();
     var secs=sections();if(!secs.length)return;
     var docH=document.documentElement.scrollHeight,vw=document.documentElement.clientWidth;
-    // phone: the hero has no spare room, so give it just enough for the tile band (preview only)
+    // phone: the hero has no spare room, so give it just enough for the tile band 
     if(vw<700){var h0=secs[0];if(!h0.dataset.frPb)h0.dataset.frPb=getComputedStyle(h0).paddingBottom;h0.style.paddingBottom=h0.dataset.frPb;
       var r0=h0.getBoundingClientRect(),lo=r0.top;[].slice.call(h0.querySelectorAll('.wrap > *')).forEach(function(c){var bb=c.getBoundingClientRect().bottom;if(bb>lo)lo=bb;});
       var f0=r0.bottom-lo-12;if(f0<84){h0.style.paddingBottom=(parseFloat(h0.dataset.frPb)+84-Math.max(0,f0))+'px';docH=document.documentElement.scrollHeight;}}

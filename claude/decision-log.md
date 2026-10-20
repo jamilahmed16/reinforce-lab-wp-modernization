@@ -22,6 +22,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 |---|---|---|---|---|
 | D-177 | Layout shift after the lean pages: header no longer paints half-built (`rel=expect` render block until the header is parsed; menu widened 234 to 706 px mid-load, 0.011); font stand-ins tuned on measured line breaks across 57 pages and 14 real device setups (Oswald 500 to 600 at 73.4%, Plex Sans at 99.7%; the other two already best). Residual: on a first visit where a web font arrives after the first paint, some lines can still re-wrap (Lighthouse up to 0.03 to 0.05 on two pages, most pages 0 to 0.004). Jamil's rule recorded: never suggest other fonts | 12 Oct | DONE (Jamil: "A ..never suggest any other fonts") | `core/reinforce-header.php`, `core/reinforce-fonts.css` |
 | F-038 | Hero drawings break the 12px rule on every page that has one (about 25 service and industry pages, D-139): the text inside the drawings shows at 7.8 to 9.5px on a 1440 screen, about 5px on a 1024 tablet (two-column hero), about 7px at 600 wide. The phone version (under 560px) is readable HTML and passes. Earlier audits (D-138, D-140) measured HTML text only and missed text inside drawings | 20 Oct | `[VERIFIED]` measured; fix waits for Jamil | this file |
+| D-203 | **Frame background is now the site background (Jamil approved: red tiles, phone band, side lines as they are, keep the progress line).** `core/reinforce-frame.php` runs on every front-end page; `?bg=off` turns it off for one view to compare. Preview link rewriting removed. Supersedes the DRAFT status of D-202 | 20 Oct | DONE | this file |
 | F-039 | **Our design went off on `.online` for about 2 minutes (10:29 to 10:31 UTC, 20 Oct).** The loader was deployed before the new file it lists (`core/reinforce-frame.php`), Novamira hit the missing file, wrote `.crashed` in the sandbox and switched all our code off, so pages showed the bare theme. Fixed: file deployed, `.crashed` copied to `_backups/crashed-20261020-103057.txt` and removed, cache purged, pages checked. Rule: deploy a new file first, the loader after | 20 Oct | `[VERIFIED]` resolved | this file |
 | D-202 | **Draft frame background (preview only)** from Jamil's reference: dashed side rails, a full-width line and red square markers at every section join that draw in with a red sweep as the section appears, a band of cells under the hero with red textured tiles that light in a wave on scroll, and a red reading-progress line on the left rail. Shows only with `?bg=frame` (kept on links while browsing); the site is unchanged without it. Motion off for people who turn it off. Waits for Jamil's review | 20 Oct | DRAFT | this file |
 | D-201 | F-038 pilot on page 72 (Jamil: A): every label in the AI answer drawing is 12.5 drawing units, layout refitted (markers, cards, checks, caret, typing width), and the drawing only shows when at least 500px wide, so text is 12px or more (measured 12.3 to 16.7px). Narrower, including the two-column tablet hero, gets the readable HTML version. Shared phone-version spacing between groups (16px). Other 24 drawings follow one at a time after Jamil sees this one | 20 Oct | DONE (pilot) | this file |
@@ -281,6 +282,15 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 ---
 
+## D-203 · Frame background made the default
+
+**Date:** 20 Oct 2026 · **Approved by:** Jamil ("Side lines: keep as they are. Red progress line: keep it.") · `[VERIFIED]`
+
+- `rl_frame_on()` is now true on every front-end page; `?bg=off` switches it off for one page view (for comparing). The `?bg=frame` link rewriting is removed.
+- Everything else as built in D-202: dashed side rails, section lines with square markers and a red sweep, red textured tile band under the hero (6 cells desktop, 4 on phone, phone hero gets the room it needs), red reading-progress line on the left rail. Motion off for people who turn it off.
+- Pages without our page wrapper (`.rl-page` or `.rl-home`) get no frame.
+- D-013 now reads: dark ground, brand red, Oswald, IBM Plex Sans and Mono, square corners, glass header, frame background (this entry). No grid.
+
 ## D-202 · Draft frame background (preview only)
 
 **Date:** 20 Oct 2026 · **Asked by:** Jamil ("create a draft version of that and then finalize") · `[VERIFIED]` working, not approved
@@ -294,7 +304,7 @@ File: `core/reinforce-frame.php` (listed in `reinforce-loader.php`). Runs only w
 - Layer sits above content with no pointer events (sections with their own background hid it otherwise), below the header. Off for people who turn off motion: lines static, no sweep, no progress line.
 - Checked on Home and page 72 at 1440 and 390: no script errors, no sideways scroll.
 - Jamil, 20 Oct: "Keep red tiles, show them on phone too, love it." Tiles stay brand red. Phone now shows the band (4 cells): in preview the hero gets just enough extra bottom space (84px of free room) before anything is measured, so section lines stay aligned. Checked on Home and page 72 at 390: 4 tiles, no sideways scroll, no script errors.
-- Still open: strength of the rails, whether to keep the progress line; then make it the default (drop `?bg=frame`).
+- Jamil, 20 Oct: side lines as they are, keep the progress line. Made the default in D-203.
 
 ## F-039 · Design off for 2 minutes after a deploy order mistake
 
