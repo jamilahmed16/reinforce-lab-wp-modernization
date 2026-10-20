@@ -92,11 +92,11 @@ body.rl-ma-page .fl-page-content,body.rl-ma-page .fl-content,body.rl-ma-page .fl
 .rl-ma .m-dim{stroke-dasharray:3 3}
 .rl-ma .m-on{fill:rgba(153,0,0,.09);stroke:rgba(226,59,59,.65);stroke-width:.8;opacity:0}
 .rl-ma .m-crm{animation-name:rlmaCrm}
-.rl-ma .m-t{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.1em;fill:var(--ink-dim)}
+.rl-ma .m-t{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
 .rl-ma .m-tdim{fill:var(--ink-faint)}
-.rl-ma .m-y,.rl-ma .m-n{font-family:var(--f-mono);font-size:8px;letter-spacing:.14em;fill:var(--red-3)}
+.rl-ma .m-y,.rl-ma .m-n{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--red-3)}
 .rl-ma .m-n{fill:var(--ink-faint)}
-.rl-ma .m-lab{font-family:var(--f-mono);font-size:8px;letter-spacing:.2em;fill:var(--ink-faint)}
+.rl-ma .m-lab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-ma .m-e{fill:none;stroke:rgba(243,237,230,.14);stroke-width:.8}
 .rl-ma .m-ed{stroke-dasharray:2 4}
 .rl-ma .m-p{fill:none;stroke:var(--red-3);stroke-width:1.3;stroke-linecap:round;stroke-dasharray:8 100;stroke-dashoffset:8;opacity:0}
@@ -104,10 +104,10 @@ body.rl-ma-page .fl-page-content,body.rl-ma-page .fl-content,body.rl-ma-page .fl
 .rl-ma .m-scon{fill:rgba(194,26,26,.35);stroke:rgba(226,59,59,.7);stroke-width:.8;transform-box:fill-box;transform-origin:50% 100%;transform:scaleY(0);animation-name:rlmaSc}
 .rl-ma .m-mql{stroke:rgba(243,237,230,.3);stroke-width:1;stroke-dasharray:3 3}
 .rl-ma .m-mqlon{stroke:#fff;opacity:0;animation-name:rlmaMql}
-.rl-ma .m-ml{font-family:var(--f-mono);font-size:9px;letter-spacing:.14em;fill:var(--ink-faint)}
+.rl-ma .m-ml{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-ma .m-mlon{fill:#fff;opacity:0;animation-name:rlmaMql}
 .rl-ma .m-rule{stroke:var(--line-2);stroke-width:1}
-.rl-ma .m-ft{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.16em;fill:var(--ink-faint)}
+.rl-ma .m-ft{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-ma .m-fton{fill:var(--ink);opacity:0}
 .rl-ma .m-fb{fill:rgba(255,255,255,.08)}
 .rl-ma .m-fbon{fill:var(--red-2);transform-box:fill-box;transform-origin:0 50%;transform:scaleX(0)}

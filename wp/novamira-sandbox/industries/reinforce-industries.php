@@ -228,22 +228,22 @@ body.rl-indhub-page .fl-page-content,body.rl-indhub-page .fl-content,body.rl-ind
 .rl-ind .inf svg,.rl-indhub .inf svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-ind .n-b{fill:var(--bg);stroke:rgba(243,237,230,.12);stroke-width:.8}
 .rl-ind .n-on{fill:rgba(153,0,0,.09);stroke:rgba(226,59,59,.65);stroke-width:.8;opacity:0}
-.rl-ind .n-t{font-family:var(--f-mono);font-size:8px;letter-spacing:.08em;fill:var(--ink-dim)}
-.rl-ind .n-lab{font-family:var(--f-mono);font-size:8px;letter-spacing:.2em;fill:var(--ink-faint)}
-.rl-ind .n-id{font-family:var(--f-mono);font-size:7.5px;letter-spacing:.14em;fill:var(--red-3)}
-.rl-ind .n-h{font-family:var(--f-display);font-weight:600;font-size:12px;letter-spacing:.06em;fill:var(--ink)}
+.rl-ind .n-t{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
+.rl-ind .n-lab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
+.rl-ind .n-id{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--red-3)}
+.rl-ind .n-h{font-family:var(--f-display);font-weight:600;font-size:12.5px;letter-spacing:.06em;fill:var(--ink)}
 .rl-ind .n-rule{stroke:rgba(243,237,230,.1);stroke-width:.8}
-.rl-ind .n-ct{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.12em;fill:var(--ink-dim)}
+.rl-ind .n-ct{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
 .rl-ind .n-bar{fill:rgba(255,255,255,.06)}
 .rl-ind .n-baron{fill:var(--red-2);transform-box:fill-box;transform-origin:0 50%;transform:scaleX(0)}
 .rl-ind .n-sq{fill:none;stroke:rgba(243,237,230,.25);stroke-width:.8}
 .rl-ind .n-sqon{fill:var(--red-2);opacity:0}
-.rl-ind .n-gt{font-family:var(--f-mono);font-size:8px;letter-spacing:.08em;fill:var(--ink-dim)}
+.rl-ind .n-gt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
 .rl-ind .n-e{fill:none;stroke:rgba(243,237,230,.14);stroke-width:.8}
 .rl-ind .n-p{fill:none;stroke:var(--red-3);stroke-width:1.3;stroke-linecap:round;stroke-dasharray:8 100;stroke-dashoffset:8;opacity:0}
 .rl-ind .n-gr{fill:none;stroke:var(--red-3);stroke-width:1.6;stroke-linejoin:round;stroke-dasharray:100;stroke-dashoffset:100;animation-name:rlinGr}
 .rl-ind .n-rule2{stroke:var(--line-2);stroke-width:1}
-.rl-ind .n-ft{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.16em;fill:var(--ink-faint)}
+.rl-ind .n-ft{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-ind .n-fton{fill:var(--ink);opacity:0}
 .rl-ind .n-fb{fill:rgba(255,255,255,.08)}
 .rl-ind .n-fbon{fill:var(--red-2);transform-box:fill-box;transform-origin:0 50%;transform:scaleX(0)}
@@ -251,11 +251,11 @@ body.rl-indhub-page .fl-page-content,body.rl-indhub-page .fl-content,body.rl-ind
 .rl-ind .n-p{animation-timing-function:ease-in-out}
 .rl-indhub .h-b{fill:var(--bg);stroke:rgba(243,237,230,.12);stroke-width:.8}
 .rl-indhub .h-on{fill:rgba(153,0,0,.09);stroke:rgba(226,59,59,.65);stroke-width:.8;opacity:0}
-.rl-indhub .h-t{font-family:var(--f-mono);font-size:8px;letter-spacing:.1em;fill:var(--ink-dim)}
+.rl-indhub .h-t{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
 .rl-indhub .h-h{font-family:var(--f-display);font-weight:600;font-size:13px;letter-spacing:.08em;fill:var(--ink)}
 .rl-indhub .h-e{fill:none;stroke:rgba(243,237,230,.14);stroke-width:.8}
 .rl-indhub .h-p{fill:none;stroke:var(--red-3);stroke-width:1.3;stroke-linecap:round;stroke-dasharray:8 100;stroke-dashoffset:8;opacity:0}
-.rl-indhub .h-cap{font-family:var(--f-mono);font-size:8px;letter-spacing:.14em;fill:var(--ink-faint)}
+.rl-indhub .h-cap{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-indhub .h-capon{fill:var(--ink);opacity:0}
 .rl-indhub .h-on,.rl-indhub .h-p,.rl-indhub .h-capon{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
 .rl-indhub .h-p{animation-timing-function:ease-in-out}

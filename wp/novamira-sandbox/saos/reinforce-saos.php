@@ -199,12 +199,12 @@ body.rl-saos-page .fl-page-content,body.rl-saos-page .fl-content,body.rl-saos-pa
 .rl-saos .lp-halo{opacity:0;transform-box:fill-box;transform-origin:50% 50%;animation:rlsHalo 10s ease-out infinite both;animation-delay:var(--d)}
 .rl-saos .lp-lit{fill:rgba(153,0,0,.22);stroke:var(--red-2);stroke-width:1}
 .rl-saos .lp-halo{fill:none;stroke:var(--red-line);stroke-width:1}
-.rl-saos .lp-lab{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;fill:var(--ink-dim)}
+.rl-saos .lp-lab{font-family:var(--f-mono);font-size:14.6px;letter-spacing:.04em;fill:var(--ink-dim)}
 .rl-saos .lp-lab-on{fill:#fff}
-.rl-saos .lp-sub{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.04em;fill:var(--ink-faint)}
+.rl-saos .lp-sub{font-family:var(--f-mono);font-size:14.6px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-saos .lp-core{fill:rgba(153,0,0,.08);stroke:var(--red-line);stroke-width:1}
 .rl-saos .lp-core-t{font-family:var(--f-display);font-size:15px;letter-spacing:.05em;fill:var(--ink);font-weight:600}
-.rl-saos .lp-core-s{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.16em;fill:var(--ink-faint)}
+.rl-saos .lp-core-s{font-family:var(--f-mono);font-size:14.6px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-saos .lp-axis{stroke:var(--line-2)}
 .rl-saos .lp-auth{fill:none;stroke:var(--red-3);stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round;stroke-dashoffset:0;animation:rlsAuth 10s cubic-bezier(.45,0,.2,1) infinite both}
 @media(max-width:560px){.rl-saos .lp-sub,.rl-saos .loop .cap span+span{display:none}.rl-saos .lp-lab{font-size:17px;letter-spacing:.06em}.rl-saos .lp-core-t{font-size:17px}.rl-saos .loop{padding:16px 12px 8px}}

@@ -91,7 +91,7 @@ body.rl-wpd-page .fl-page-content,body.rl-wpd-page .fl-content,body.rl-wpd-page 
 .rl-wpd .p-rule{stroke:rgba(243,237,230,.1);stroke-width:.8}
 .rl-wpd .p-dot{fill:rgba(243,237,230,.18)}
 .rl-wpd .p-url{fill:rgba(255,255,255,.04);stroke:rgba(243,237,230,.1);stroke-width:.6}
-.rl-wpd .p-ut{font-family:var(--f-mono);font-size:7px;letter-spacing:.14em;fill:var(--ink-faint)}
+.rl-wpd .p-ut{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-wpd .p-wf{fill:none;stroke:rgba(243,237,230,.35);stroke-width:.8;stroke-dasharray:4 3;opacity:0}
 .rl-wpd .p-fill{fill:rgba(255,255,255,.035);stroke:rgba(243,237,230,.14);stroke-width:.8;opacity:0}
 .rl-wpd .p-d1{fill:rgba(153,0,0,.14);stroke:rgba(226,59,59,.45)}
@@ -100,13 +100,13 @@ body.rl-wpd-page .fl-page-content,body.rl-wpd-page .fl-content,body.rl-wpd-page 
 .rl-wpd .p-h1,.rl-wpd .p-h2{fill:rgba(243,237,230,.85)}
 .rl-wpd .p-tx{fill:rgba(243,237,230,.28)}
 .rl-wpd .p-btn{fill:var(--red-2)}
-.rl-wpd .p-lab{font-family:var(--f-mono);font-size:8px;letter-spacing:.2em;fill:var(--ink-faint)}
+.rl-wpd .p-lab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-wpd .p-row{fill:var(--bg);stroke:rgba(243,237,230,.1);stroke-width:.8}
 .rl-wpd .p-rowon{fill:rgba(153,0,0,.09);stroke:rgba(226,59,59,.55);stroke-width:.8;opacity:0}
 .rl-wpd .p-sq{fill:none;stroke:rgba(243,237,230,.25);stroke-width:.8}
 .rl-wpd .p-sqon{fill:var(--red-2);opacity:0}
-.rl-wpd .p-ct{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.12em;fill:var(--ink-dim)}
-.rl-wpd .p-ft{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.16em;fill:var(--ink-faint)}
+.rl-wpd .p-ct{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
+.rl-wpd .p-ft{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-wpd .p-fton{fill:var(--ink);opacity:0}
 .rl-wpd .p-fb{fill:rgba(255,255,255,.08)}
 .rl-wpd .p-fbon{fill:var(--red-2);transform-box:fill-box;transform-origin:0 50%;transform:scaleX(0)}

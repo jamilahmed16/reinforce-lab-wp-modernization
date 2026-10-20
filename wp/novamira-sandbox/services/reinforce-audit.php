@@ -108,23 +108,23 @@ body.rl-audit-page .fl-page-content,body.rl-audit-page .fl-content,body.rl-audit
 .rl-audit .u-is{opacity:0}
 .rl-audit .u-is circle{fill:var(--red-2);stroke:#fff;stroke-width:1}
 .rl-audit .u-is rect{fill:var(--red-2)}
-.rl-audit .u-is text{font-family:var(--f-mono);font-size:8px;letter-spacing:.08em;fill:#fff}
+.rl-audit .u-is text{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:#fff}
 .rl-audit .u-lens{animation:rlauLens 10s cubic-bezier(.45,0,.2,1) infinite both,rlauLensO 10s linear infinite both}
 .rl-audit .u-glass{fill:rgba(255,255,255,.04);stroke:rgba(243,237,230,.7);stroke-width:1.6}
 .rl-audit .u-handle{stroke:rgba(243,237,230,.7);stroke-width:3.5;stroke-linecap:round}
-.rl-audit .u-lab{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.2em;fill:var(--ink-faint)}
+.rl-audit .u-lab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-audit .u-rule{stroke:var(--line-2);stroke-width:1}
 .rl-audit .u-row{opacity:0}
 .rl-audit .u-rb{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
 .rl-audit .u-pr{fill:none;stroke:var(--line-2)}.rl-audit .u-p1{fill:var(--red-2);stroke:var(--red-2)}.rl-audit .u-p2{fill:rgba(153,0,0,.25);stroke:var(--red-2)}
-.rl-audit .u-prt{font-family:var(--f-mono);font-size:8px;fill:#fff}
-.rl-audit .u-rt{font-family:var(--f-mono);font-size:9px;letter-spacing:.1em;fill:var(--ink)}
-.rl-audit .u-eff{font-family:var(--f-mono);font-size:7px;letter-spacing:.14em;fill:var(--ink-faint)}
+.rl-audit .u-prt{font-family:var(--f-mono);font-size:12.5px;fill:#fff}
+.rl-audit .u-rt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink)}
+.rl-audit .u-eff{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-audit .u-eb{fill:rgba(255,255,255,.08)}.rl-audit .u-ef{fill:var(--ink-faint)}
 .rl-audit .u-rm{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
 .rl-audit .u-rmon{fill:rgba(153,0,0,.14);stroke:var(--red-2);stroke-width:1;opacity:0}
-.rl-audit .u-rmt{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.14em;fill:var(--ink)}
-.rl-audit .u-cap{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.16em;fill:var(--ink-faint)}
+.rl-audit .u-rmt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink)}
+.rl-audit .u-cap{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-audit .u-capon{fill:var(--ink);opacity:0;animation-name:rlauCap}
 .rl-audit .u-is,.rl-audit .u-row,.rl-audit .u-rmon,.rl-audit .u-capon{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
 @media(max-width:560px){.rl-audit .u-is text{font-size:10px;letter-spacing:0}.rl-audit .u-rt{font-size:10.5px;letter-spacing:.02em}.rl-audit .u-rmt{font-size:10px;letter-spacing:.04em}.rl-audit .u-cap{font-size:9.5px;letter-spacing:.02em}.rl-audit .u-lab{font-size:10px;letter-spacing:.08em}.rl-audit .swp .cap span+span{display:none}.rl-audit .swp{padding:16px 10px 10px}}

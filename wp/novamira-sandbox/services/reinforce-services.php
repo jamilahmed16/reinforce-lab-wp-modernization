@@ -138,11 +138,11 @@ body.rl-svc-page .fl-page-content,body.rl-svc-page .fl-content,body.rl-svc-page 
 .rl-svc .cg .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
 .rl-svc .cg .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-svc .cg svg{display:block;width:100%;height:auto;overflow:visible}
-.rl-svc .cg-h{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.16em;fill:var(--ink-faint)}
+.rl-svc .cg-h{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-svc .cg-hon{fill:var(--red-3);opacity:0}
 .rl-svc .cg-hit{fill:var(--bg);stroke:var(--line-2);stroke-width:1;transition:stroke .2s}
 .rl-svc .cg-tl{fill:rgba(153,0,0,.12);stroke:var(--red-2);stroke-width:1;opacity:0}
-.rl-svc .cg-tx{font-family:var(--f-mono);font-size:9px;letter-spacing:.08em;fill:var(--ink-dim);transition:fill .2s}
+.rl-svc .cg-tx{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim);transition:fill .2s}
 .rl-svc .cg a{cursor:pointer;outline:none}
 .rl-svc .cg a:hover .cg-hit,.rl-svc .cg a:focus-visible .cg-hit{stroke:var(--red-3)}
 .rl-svc .cg a:hover .cg-tx,.rl-svc .cg a:focus-visible .cg-tx{fill:#fff}
@@ -154,7 +154,7 @@ body.rl-svc-page .fl-page-content,body.rl-svc-page .fl-content,body.rl-svc-page 
 .rl-svc .cg-ct{font-family:var(--f-display);font-weight:600;font-size:17px;letter-spacing:.06em;fill:var(--ink)}
 .rl-svc .cg-sb{fill:rgba(255,255,255,.08)}
 .rl-svc .cg-sl{fill:var(--red-2);opacity:0}
-.rl-svc .cg-cap{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.18em;fill:var(--ink-faint)}
+.rl-svc .cg-cap{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-svc .cg-cap-on{fill:var(--ink);opacity:0;animation-name:rlcCap}
 .rl-svc .cg-hon,.rl-svc .cg-tl,.rl-svc .cg-p,.rl-svc .cg-cg,.rl-svc .cg-sl,.rl-svc .cg-cap-on{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
 .rl-svc .cg-p{animation-timing-function:ease-in-out}

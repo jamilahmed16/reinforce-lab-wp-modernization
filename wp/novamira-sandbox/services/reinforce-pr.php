@@ -98,20 +98,20 @@ body.rl-pr-page .fl-page-content,body.rl-pr-page .fl-content,body.rl-pr-page .fl
 .rl-pr .p-site{stroke:rgba(226,59,59,.35)}
 .rl-pr .p-on{fill:rgba(153,0,0,.07);stroke:rgba(226,59,59,.6);stroke-width:.8;opacity:0}
 .rl-pr .p-siteon{animation-name:rlprSite}
-.rl-pr .p-lab{font-family:var(--f-mono);font-size:8px;letter-spacing:.18em;fill:var(--ink-faint)}
-.rl-pr .p-st{font-family:var(--f-display);font-weight:600;font-size:12px;letter-spacing:.08em;fill:var(--ink)}
+.rl-pr .p-lab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
+.rl-pr .p-st{font-family:var(--f-display);font-weight:600;font-size:12.5px;letter-spacing:.04em;fill:var(--ink)}
 .rl-pr .p-rule{stroke:rgba(243,237,230,.1);stroke-width:.8}
 .rl-pr .p-bar{fill:rgba(194,26,26,.55);stroke:rgba(226,59,59,.7);stroke-width:.6;transform-box:fill-box;transform-origin:50% 100%;transform:scaleY(0)}
 .rl-pr .p-bar3{fill:var(--red-2)}
 .rl-pr .p-e{fill:none;stroke:rgba(243,237,230,.08);stroke-width:.8}
 .rl-pr .p-ed{stroke-dasharray:2 4}
 .rl-pr .p-p{fill:none;stroke:var(--red-3);stroke-width:1.3;stroke-linecap:round;stroke-dasharray:8 100;stroke-dashoffset:8;opacity:0}
-.rl-pr .p-ot{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.14em;fill:var(--ink-dim)}
+.rl-pr .p-ot{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
 .rl-pr .p-hl{fill:rgba(255,255,255,.14);opacity:0}
-.rl-pr .p-lk{font-family:var(--f-mono);font-size:8px;letter-spacing:.1em;fill:var(--red-3);opacity:0}
+.rl-pr .p-lk{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--red-3);opacity:0}
 .rl-pr .p-seg{fill:rgba(255,255,255,.05);stroke:rgba(243,237,230,.08);stroke-width:.6}
 .rl-pr .p-segon{fill:rgba(194,26,26,.5);stroke:rgba(226,59,59,.7);stroke-width:.6;opacity:0}
-.rl-pr .p-ft{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.16em;fill:var(--ink-faint)}
+.rl-pr .p-ft{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-pr .p-fton{fill:var(--ink);opacity:0}
 .rl-pr .p-fb{fill:rgba(255,255,255,.08)}
 .rl-pr .p-fbon{fill:var(--red-2);transform-box:fill-box;transform-origin:0 50%;transform:scaleX(0)}

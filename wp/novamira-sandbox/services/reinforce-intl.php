@@ -100,14 +100,14 @@ body.rl-intl-page .fl-page-content,body.rl-intl-page .fl-content,body.rl-intl-pa
 .rl-intl .i-sh{fill:none;stroke:#fff;stroke-width:1;stroke-linecap:round;stroke-dasharray:6 100;stroke-dashoffset:6;opacity:0}
 .rl-intl .i-p{fill:none;stroke:var(--red-3);stroke-width:1.3;stroke-linecap:round;stroke-dasharray:8 100;stroke-dashoffset:8;opacity:0}
 .rl-intl .i-core{fill:var(--bg);stroke:rgba(226,59,59,.35);stroke-width:.8}
-.rl-intl .i-ct{font-family:var(--f-mono);font-size:8px;letter-spacing:.14em;fill:var(--ink-dim)}
+.rl-intl .i-ct{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
 .rl-intl .i-n{fill:var(--bg);stroke:rgba(243,237,230,.12);stroke-width:.8}
 .rl-intl .i-lit{fill:rgba(153,0,0,.07);stroke:rgba(226,59,59,.6);stroke-width:.8;opacity:0}
-.rl-intl .i-code{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.12em;fill:var(--red-3)}
-.rl-intl .i-url{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.06em;fill:var(--ink-dim)}
+.rl-intl .i-code{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--red-3)}
+.rl-intl .i-url{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;fill:var(--ink-dim)}
 .rl-intl .i-ok{fill:var(--red-2);opacity:0}
-.rl-intl .i-tag{font-family:var(--f-mono);font-size:8px;letter-spacing:.14em;fill:var(--ink-faint);opacity:0}
-.rl-intl .i-cap{font-family:var(--f-mono);font-size:9px;letter-spacing:.18em;fill:var(--ink-faint)}
+.rl-intl .i-tag{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint);opacity:0}
+.rl-intl .i-cap{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-intl .i-capon{fill:var(--ink);opacity:0;animation-name:rliCap}
 .rl-intl .i-a,.rl-intl .i-sh,.rl-intl .i-p,.rl-intl .i-lit,.rl-intl .i-ok,.rl-intl .i-tag,.rl-intl .i-capon{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
 .rl-intl .i-p{animation-timing-function:ease-in-out}

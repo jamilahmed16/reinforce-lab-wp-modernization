@@ -101,19 +101,19 @@ body.rl-ent-page .fl-page-content,body.rl-ent-page .fl-content,body.rl-ent-page 
 .rl-ent .e-po{animation-name:rlePo}
 .rl-ent .e-t,.rl-ent .e-src{fill:var(--bg);stroke:rgba(243,237,230,.12);stroke-width:.8}
 .rl-ent .e-tl,.rl-ent .e-srcon{fill:rgba(153,0,0,.07);stroke:rgba(226,59,59,.6);stroke-width:.8;opacity:0}
-.rl-ent .e-tt{font-family:var(--f-mono);font-size:9px;letter-spacing:.14em;fill:var(--ink-dim)}
-.rl-ent .e-st{font-family:var(--f-mono);font-size:8px;letter-spacing:.12em;fill:var(--ink-dim)}
+.rl-ent .e-tt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
+.rl-ent .e-st{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
 .rl-ent .e-g{fill:var(--bg);stroke:rgba(226,59,59,.35);stroke-width:.8}
 .rl-ent .e-gl{fill:rgba(153,0,0,.09);stroke:rgba(226,59,59,.7);stroke-width:.8;opacity:0;animation-name:rleG}
-.rl-ent .e-gt{font-family:var(--f-display);font-weight:600;font-size:12px;letter-spacing:.08em;fill:var(--ink)}
+.rl-ent .e-gt{font-family:var(--f-display);font-weight:600;font-size:12.5px;letter-spacing:.04em;fill:var(--ink)}
 .rl-ent .e-rule{stroke:rgba(243,237,230,.1);stroke-width:.8}
 .rl-ent .e-sq{fill:none;stroke:rgba(243,237,230,.2);stroke-width:.8}
 .rl-ent .e-sqon{fill:var(--red-2);opacity:0}
-.rl-ent .e-ct{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.12em;fill:var(--ink-dim)}
-.rl-ent .e-lab{font-family:var(--f-mono);font-size:8px;letter-spacing:.2em;fill:var(--ink-faint)}
+.rl-ent .e-ct{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
+.rl-ent .e-lab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-ent .e-cell{fill:rgba(255,255,255,.035);stroke:rgba(243,237,230,.08);stroke-width:.6}
 .rl-ent .e-on{fill:rgba(194,26,26,.35);stroke:rgba(226,59,59,.55);stroke-width:.6;opacity:0}
-.rl-ent .e-cap{font-family:var(--f-mono);font-size:9px;letter-spacing:.18em;fill:var(--ink-faint)}
+.rl-ent .e-cap{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-ent .e-capon{fill:var(--ink);opacity:0;animation-name:rleCap}
 .rl-ent .e-p,.rl-ent .e-tl,.rl-ent .e-srcon,.rl-ent .e-gl,.rl-ent .e-sqon,.rl-ent .e-on,.rl-ent .e-capon{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
 .rl-ent .e-p{animation-timing-function:ease-in-out}

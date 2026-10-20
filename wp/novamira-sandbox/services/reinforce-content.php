@@ -93,11 +93,11 @@ body.rl-sc-page .fl-page-content,body.rl-sc-page .fl-content,body.rl-sc-page .fl
 .rl-sc .c-on{fill:rgba(153,0,0,.09);stroke:rgba(226,59,59,.65);stroke-width:.8;opacity:0}
 .rl-sc .c-pil{animation-name:rlscPil}
 .rl-sc .c-ar{stroke:rgba(243,237,230,.2);stroke-width:.8}
-.rl-sc .c-t{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.14em;fill:var(--ink-faint)}
+.rl-sc .c-t{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-sc .c-ton{fill:#fff;opacity:0}
 .rl-sc .c-ct{fill:var(--ink-dim)}
-.rl-sc .c-pt{font-family:var(--f-display);font-weight:600;font-size:11.5px;letter-spacing:.08em;fill:var(--ink)}
-.rl-sc .c-lab{font-family:var(--f-mono);font-size:8px;letter-spacing:.2em;fill:var(--ink-faint)}
+.rl-sc .c-pt{font-family:var(--f-display);font-weight:600;font-size:12.5px;letter-spacing:.04em;fill:var(--ink)}
+.rl-sc .c-lab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-sc .c-rft{fill:var(--red-3);opacity:0;animation-name:rlscRft}
 .rl-sc .c-dr{fill:rgba(194,26,26,.35);stroke:var(--red-3);stroke-width:.8}
 .rl-sc .c-dl{fill:rgba(255,255,255,.55)}
@@ -106,7 +106,7 @@ body.rl-sc-page .fl-page-content,body.rl-sc-page .fl-content,body.rl-sc-page .fl
 .rl-sc .c-ed{stroke-dasharray:2 4}
 .rl-sc .c-p{fill:none;stroke:rgba(226,59,59,.75);stroke-width:1;stroke-dasharray:100 100;stroke-dashoffset:100;opacity:0}
 .rl-sc .c-rf{stroke:var(--red-3);stroke-width:1.3;stroke-linecap:round;stroke-dasharray:8 100;stroke-dashoffset:8;animation-name:rlscRf;animation-timing-function:ease-in-out}
-.rl-sc .c-cap{font-family:var(--f-mono);font-size:7.5px;letter-spacing:.12em;fill:var(--ink-faint)}
+.rl-sc .c-cap{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-sc .c-capon{fill:var(--ink);opacity:0;animation-name:rlscCap}
 .rl-sc .c-on,.rl-sc .c-ton,.rl-sc .c-doc,.rl-sc .c-p,.rl-sc .c-rft,.rl-sc .c-capon{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
 @media(max-width:560px){.rl-sc .c-t{font-size:9.5px;letter-spacing:.02em}.rl-sc .c-pt{font-size:12.5px}.rl-sc .c-lab{font-size:9.5px;letter-spacing:.06em}.rl-sc .c-cap{display:none}.rl-sc .csy .cap span+span{display:none}.rl-sc .csy{padding:16px 10px 10px}}

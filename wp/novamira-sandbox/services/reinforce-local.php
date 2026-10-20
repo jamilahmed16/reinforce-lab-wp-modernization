@@ -103,7 +103,7 @@ body.rl-local-page .fl-page-content,body.rl-local-page .fl-content,body.rl-local
 .rl-local .lpk .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-local .lpk svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-local .o-q,.rl-local .o-map{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
-.rl-local .o-qt{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.12em;fill:var(--ink);animation:rlloType 10s linear infinite both}
+.rl-local .o-qt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink);animation:rlloType 10s linear infinite both}
 .rl-local .o-caret{fill:var(--red-3);animation:rlloBlink 1s steps(1) infinite}
 @keyframes rlloBlink{50%{opacity:0}}
 .rl-local .o-streets line{stroke:rgba(243,237,230,.06);stroke-width:6}
@@ -115,20 +115,20 @@ body.rl-local-page .fl-page-content,body.rl-local-page .fl-content,body.rl-local
 .rl-local .o-you{animation:rlloYou 10s cubic-bezier(.45,0,.2,1) infinite both}
 .rl-local .o-halo{fill:none;stroke:var(--red-3);stroke-width:1.2;transform-box:fill-box;transform-origin:50% 50%;opacity:0;animation:rlloHalo 10s ease-out infinite both}
 .rl-local .o-me{fill:#fff}.rl-local .o-me2{fill:none;stroke:rgba(255,255,255,.5);stroke-width:1}
-.rl-local .o-lab{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.2em;fill:var(--ink-faint)}
+.rl-local .o-lab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-local .o-rule{stroke:var(--line-2);stroke-width:1}
 .rl-local .o-row{opacity:0}
 .rl-local .o-rb{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
-.rl-local .o-rn{font-family:var(--f-mono);font-size:9px;letter-spacing:.12em;fill:var(--ink-dim)}
+.rl-local .o-rn{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
 .rl-local .o-bar{fill:rgba(255,255,255,.10)}
 .rl-local .o-you-row{fill:rgba(153,0,0,.12);stroke:var(--red-2);stroke-width:1;opacity:0;animation-name:rlloYr}
-.rl-local .o-you-t{font-family:var(--f-mono);font-size:9px;letter-spacing:.12em;fill:#fff;opacity:0;animation-name:rlloYr}
-.rl-local .o-chk{font-family:var(--f-mono);font-size:8px;letter-spacing:.08em;fill:var(--red-3);opacity:0}
-.rl-local .o-ft{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.16em;fill:var(--ink-faint)}
+.rl-local .o-you-t{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:#fff;opacity:0;animation-name:rlloYr}
+.rl-local .o-chk{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--red-3);opacity:0}
+.rl-local .o-ft{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-local .o-fton{fill:var(--ink);opacity:0}
 .rl-local .o-fb{fill:rgba(255,255,255,.08)}
 .rl-local .o-fbon{fill:var(--red-2);transform-box:fill-box;transform-origin:0 50%;transform:scaleX(0)}
-.rl-local .o-src{font-family:var(--f-mono);font-size:7px;letter-spacing:.1em;fill:var(--ink-faint)}
+.rl-local .o-src{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-local .o-rip,.rl-local .o-c,.rl-local .o-row,.rl-local .o-you-row,.rl-local .o-you-t,.rl-local .o-chk,.rl-local .o-fton,.rl-local .o-fbon{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
 .rl-local .o-rip{animation-timing-function:ease-out}
 @media(max-width:560px){.rl-local .o-qt{font-size:11px;letter-spacing:.04em}.rl-local .o-rn,.rl-local .o-you-t{font-size:10.5px;letter-spacing:.02em}.rl-local .o-chk{font-size:9px;letter-spacing:0}.rl-local .o-ft{font-size:11px;letter-spacing:.04em}.rl-local .o-src{display:none}.rl-local .lpk .cap span+span{display:none}.rl-local .lpk{padding:16px 10px 10px}}

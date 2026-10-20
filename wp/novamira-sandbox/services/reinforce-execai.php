@@ -96,21 +96,21 @@ body.rl-ex-page .fl-page-content,body.rl-ex-page .fl-content,body.rl-ex-page .fl
 .rl-ex .x-on{fill:rgba(153,0,0,.1);stroke:rgba(226,59,59,.6);stroke-width:.8;opacity:0}
 .rl-ex .x-best,.rl-ex .x-qlon{animation-name:rlexBest}
 .rl-ex .x-ax{stroke:rgba(243,237,230,.14);stroke-width:.8;stroke-dasharray:3 3}
-.rl-ex .x-ql{font-family:var(--f-mono);font-size:8px;letter-spacing:.16em;fill:var(--ink-faint)}
+.rl-ex .x-ql{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-ex .x-qlon{fill:var(--red-3);opacity:0}
-.rl-ex .x-axl{font-family:var(--f-mono);font-size:8px;letter-spacing:.16em;fill:var(--ink-faint)}
-.rl-ex .x-lab{font-family:var(--f-mono);font-size:8px;letter-spacing:.2em;fill:var(--ink-faint)}
+.rl-ex .x-axl{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
+.rl-ex .x-lab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-ex .x-u{fill:rgba(255,255,255,.1);stroke:rgba(243,237,230,.35);stroke-width:.8;opacity:0}
 .rl-ex .x-risk{fill:none;stroke:#fff;stroke-width:1.4;stroke-dasharray:3 2;opacity:0;animation-name:rlexRisk}
-.rl-ex .x-rt{font-family:var(--f-mono);font-size:7.5px;letter-spacing:.14em;fill:#fff;opacity:0;animation-name:rlexRt}
+.rl-ex .x-rt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:#fff;opacity:0;animation-name:rlexRt}
 .rl-ex .x-e{fill:none;stroke:rgba(243,237,230,.14);stroke-width:.8}
 .rl-ex .x-p{fill:none;stroke:var(--red-3);stroke-width:1.3;stroke-linecap:round;stroke-dasharray:8 100;stroke-dashoffset:8;opacity:0;animation-name:rlexP;animation-timing-function:ease-in-out}
-.rl-ex .x-qt{font-family:var(--f-mono);font-size:9px;letter-spacing:.14em;fill:var(--ink-faint)}
+.rl-ex .x-qt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-ex .x-lane{fill:rgba(255,255,255,.025);stroke:rgba(243,237,230,.08);stroke-width:.6}
 .rl-ex .x-blk{fill:rgba(153,0,0,.14);stroke:rgba(226,59,59,.7);stroke-width:.8;opacity:0}
-.rl-ex .x-bt{font-family:var(--f-mono);font-size:8px;letter-spacing:.12em;fill:#fff;opacity:0}
+.rl-ex .x-bt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:#fff;opacity:0}
 .rl-ex .x-rule{stroke:var(--line-2);stroke-width:1}
-.rl-ex .x-ft{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.16em;fill:var(--ink-faint)}
+.rl-ex .x-ft{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-ex .x-fton{fill:var(--ink);opacity:0}
 .rl-ex .x-fb{fill:rgba(255,255,255,.08)}
 .rl-ex .x-fbon{fill:var(--red-2);transform-box:fill-box;transform-origin:0 50%;transform:scaleX(0)}

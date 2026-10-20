@@ -118,19 +118,19 @@ body.rl-llm-page .fl-page-content,body.rl-llm-page .fl-content,body.rl-llm-page 
 .rl-llm .l-pd{animation-name:rllDown}
 .rl-llm .l-nb,.rl-llm .l-m{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
 .rl-llm .l-nbon{fill:rgba(153,0,0,.08);stroke:var(--red-2);stroke-width:1;opacity:0}
-.rl-llm .l-nt{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;fill:var(--ink-dim)}
+.rl-llm .l-nt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
 .rl-llm .l-ne{font-family:var(--f-mono);font-size:14px;fill:var(--ink-faint)}
 .rl-llm .l-eq{font-family:var(--f-mono);font-size:14px;fill:var(--red-3);opacity:0}
 .rl-llm .l-c{fill:rgba(153,0,0,.10);stroke:var(--red-line);stroke-width:1}
 .rl-llm .l-cg{fill:none;stroke:var(--red-2);stroke-width:1;opacity:0;animation-name:rllCore}
 .rl-llm .l-ct{font-family:var(--f-display);font-weight:600;font-size:15px;letter-spacing:.06em;fill:var(--ink)}
-.rl-llm .l-cs{font-family:var(--f-mono);font-size:8px;letter-spacing:.2em;fill:var(--ink-faint)}
+.rl-llm .l-cs{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-llm .l-mg{fill:rgba(153,0,0,.08);stroke:var(--red-2);stroke-width:1;opacity:0;animation-name:rllModel}
-.rl-llm .l-ml,.rl-llm .l-mq{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.18em;fill:var(--ink-faint)}
+.rl-llm .l-ml,.rl-llm .l-mq{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-llm .l-mq{letter-spacing:.06em;fill:var(--ink-dim)}
 .rl-llm .l-mb{fill:rgba(255,255,255,.08)}
 .rl-llm .l-mbon{fill:rgba(255,255,255,.34);transform-box:fill-box;transform-origin:0 50%;animation:rllBars 10s cubic-bezier(.45,0,.2,1) infinite both}
-.rl-llm .l-cap{font-family:var(--f-mono);font-size:9px;letter-spacing:.2em;fill:var(--ink-faint)}
+.rl-llm .l-cap{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-llm .l-capon{fill:var(--ink);opacity:0;animation-name:rllCap}
 .rl-llm .l-n,.rl-llm .l-ne,.rl-llm .l-eq,.rl-llm .l-nbon,.rl-llm .l-es,.rl-llm .l-p,.rl-llm .l-cg,.rl-llm .l-mg,.rl-llm .l-capon{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
 .rl-llm .l-p{animation-timing-function:ease-in-out}

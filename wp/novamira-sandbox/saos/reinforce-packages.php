@@ -148,8 +148,8 @@ body.rl-pkg-page .fl-page-content,body.rl-pkg-page .fl-content,body.rl-pkg-page 
 .rl-pkg .pk-seg{stroke:#fff;stroke-opacity:.06}
 .rl-pkg .pk-b.feat .pk-seg{stroke:#e85050;stroke-opacity:.2}
 .rl-pkg .pk-top{stroke:var(--ink-faint);stroke-width:1.5}.rl-pkg .pk-b.feat .pk-top{stroke:var(--red-3)}
-.rl-pkg .pk-name{font-family:var(--f-display);font-size:12px;letter-spacing:.09em;fill:var(--ink);font-weight:500}
-.rl-pkg .pk-price{font-family:var(--f-mono);font-size:10px;fill:var(--ink-faint);letter-spacing:.04em}
+.rl-pkg .pk-name{font-family:var(--f-display);font-size:12.5px;letter-spacing:.04em;fill:var(--ink);font-weight:500}
+.rl-pkg .pk-price{font-family:var(--f-mono);font-size:12.5px;fill:var(--ink-faint);letter-spacing:.04em}
 .rl-pkg .pk-area{animation:rlpAreaL 10s ease infinite both}
 .rl-pkg .pk-curve{fill:none;stroke-width:1.6;stroke-linecap:round;stroke-dashoffset:0;animation:rlpDrawL 10s cubic-bezier(.45,.05,.25,1) infinite both}
 .rl-pkg .pk-shine{fill:none;stroke:#fff;stroke-width:1.6;stroke-linecap:round;opacity:0;animation:rlpShineL 10s cubic-bezier(.45,.05,.55,.95) infinite both}
@@ -157,7 +157,7 @@ body.rl-pkg-page .fl-page-content,body.rl-pkg-page .fl-content,body.rl-pkg-page 
 .rl-pkg .pk-head{animation:rlpHeadL 10s ease infinite both}
 .rl-pkg .pk-dot{fill:var(--red-3)}
 .rl-pkg .pk-halo{fill:none;stroke:var(--red-3);transform-box:fill-box;transform-origin:center;opacity:0;animation:rlpPulse 2.6s ease-out infinite;animation-delay:3s}
-.rl-pkg .pk-lab{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.2em;fill:var(--ink-dim)}
+.rl-pkg .pk-lab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
 @media(max-width:560px){.rl-pkg .stair .cap span+span{display:none}.rl-pkg .pk-name{font-size:15px;letter-spacing:.04em}.rl-pkg .pk-price{font-size:13px}.rl-pkg .pk-lab{font-size:13px}.rl-pkg .stair{padding:16px 12px 8px}}
 /* 10 s loop: build (0-30%) → hold (30-86%) → smooth glide-out (86-94%) → rebuild. No flashes. */
 @keyframes rlpGrowL{0%{transform:scaleY(0);opacity:1}12%{transform:scaleY(1);opacity:1}86%{transform:scaleY(1);opacity:1}94%{transform:scaleY(1);opacity:0}100%{transform:scaleY(0);opacity:0}}

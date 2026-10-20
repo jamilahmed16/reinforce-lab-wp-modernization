@@ -83,20 +83,20 @@ body.rl-agents-page .fl-page-content,body.rl-agents-page .fl-content,body.rl-age
 .rl-agents .agmap .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-agents .agmap svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-agents .ag-guide{stroke:var(--line);stroke-dasharray:2 6}
-.rl-agents .ag-st{font-family:var(--f-mono);font-size:9.5px;fill:var(--red-3);letter-spacing:.14em}
-.rl-agents .ag-sn{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;fill:var(--ink-faint)}
+.rl-agents .ag-st{font-family:var(--f-mono);font-size:12.6px;fill:var(--red-3);letter-spacing:.04em}
+.rl-agents .ag-sn{font-family:var(--f-mono);font-size:12.6px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-agents .ag-sn-on{fill:var(--ink);opacity:0;animation:rlaLit 8s ease infinite both;animation-delay:var(--d)}
 .rl-agents .ag-e{fill:none;stroke:var(--line-2);stroke-width:1}
 .rl-agents .ag-p{fill:none;stroke:var(--red-3);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:8 100;stroke-dashoffset:8;opacity:0;animation:rlaPulse 8s ease-in-out infinite both;animation-delay:var(--d)}
 .rl-agents .ag-p-fb{animation-name:rlaLoop}
 .rl-agents .ag-fb{fill:none;stroke:var(--line-2);stroke-dasharray:3 5}
-.rl-agents .ag-fbl{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.18em;fill:var(--ink-faint)}
+.rl-agents .ag-fbl{font-family:var(--f-mono);font-size:12.6px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-agents .ag-hit{fill:transparent}
 .rl-agents .ag-sq{fill:var(--bg);stroke:var(--ink-faint);transition:stroke .2s}
 .rl-agents .ag-lit{fill:var(--red-2);stroke:var(--red-3);opacity:0;animation:rlaLit 8s ease infinite both;animation-delay:var(--d)}
 .rl-agents .ag-halo{fill:none;stroke:var(--red-line);opacity:0;animation:rlaLit 8s ease infinite both;animation-delay:var(--d)}
-.rl-agents .ag-id{font-family:var(--f-mono);font-size:9.5px;fill:var(--red-3);letter-spacing:.1em}
-.rl-agents .ag-nm{font-family:var(--f-mono);font-size:8.5px;fill:var(--ink-dim);letter-spacing:.08em;transition:fill .2s}
+.rl-agents .ag-id{font-family:var(--f-mono);font-size:12.6px;fill:var(--red-3);letter-spacing:.04em}
+.rl-agents .ag-nm{font-family:var(--f-mono);font-size:12.6px;fill:var(--ink-dim);letter-spacing:.04em;transition:fill .2s}
 .rl-agents .agmap a{cursor:pointer;outline:none}
 .rl-agents .agmap a:hover .ag-sq,.rl-agents .agmap a:focus-visible .ag-sq{stroke:var(--red-3)}
 .rl-agents .agmap a:hover .ag-nm,.rl-agents .agmap a:focus-visible .ag-nm{fill:#fff}

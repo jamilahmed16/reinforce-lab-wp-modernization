@@ -101,21 +101,21 @@ body.rl-aw-page .fl-page-content,body.rl-aw-page .fl-content,body.rl-aw-page .fl
 .rl-aw .awf svg{display:block;width:100%;height:auto;overflow:visible}
 .rl-aw .w-b{fill:var(--bg);stroke:rgba(243,237,230,.12);stroke-width:.8}
 .rl-aw .w-on{fill:rgba(153,0,0,.09);stroke:rgba(226,59,59,.65);stroke-width:.8;opacity:0}
-.rl-aw .w-t{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.1em;fill:var(--ink-dim)}
-.rl-aw .w-h{font-family:var(--f-display);font-weight:600;font-size:11.5px;letter-spacing:.08em;fill:var(--ink)}
+.rl-aw .w-t{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
+.rl-aw .w-h{font-family:var(--f-display);font-weight:600;font-size:12.5px;letter-spacing:.04em;fill:var(--ink)}
 .rl-aw .w-rule{stroke:rgba(243,237,230,.1);stroke-width:.8}
 .rl-aw .w-sq{fill:none;stroke:rgba(243,237,230,.2);stroke-width:.8}
 .rl-aw .w-sqon{fill:var(--red-2);opacity:0}
-.rl-aw .w-ct{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.12em;fill:var(--ink-dim)}
-.rl-aw .w-y,.rl-aw .w-n{font-family:var(--f-mono);font-size:8px;letter-spacing:.14em;fill:var(--red-3)}
+.rl-aw .w-ct{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
+.rl-aw .w-y,.rl-aw .w-n{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--red-3)}
 .rl-aw .w-n{fill:var(--ink-faint)}
-.rl-aw .w-ok{font-family:var(--f-mono);font-size:8px;letter-spacing:.16em;fill:var(--red-3);opacity:0}
-.rl-aw .w-lab{font-family:var(--f-mono);font-size:8px;letter-spacing:.2em;fill:var(--ink-faint)}
+.rl-aw .w-ok{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--red-3);opacity:0}
+.rl-aw .w-lab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-aw .w-e{fill:none;stroke:rgba(243,237,230,.14);stroke-width:.8}
 .rl-aw .w-p{fill:none;stroke:var(--red-3);stroke-width:1.3;stroke-linecap:round;stroke-dasharray:8 100;stroke-dashoffset:8;opacity:0}
 .rl-aw .w-log{fill:rgba(255,255,255,.04);stroke:rgba(243,237,230,.08);stroke-width:.6}
 .rl-aw .w-logon{fill:rgba(194,26,26,.4);stroke:rgba(226,59,59,.6);stroke-width:.6;opacity:0}
-.rl-aw .w-ft{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.16em;fill:var(--ink-faint)}
+.rl-aw .w-ft{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-aw .w-fton{fill:var(--ink);opacity:0}
 .rl-aw .w-fb{fill:rgba(255,255,255,.08)}
 .rl-aw .w-fbon{fill:var(--red-2);transform-box:fill-box;transform-origin:0 50%;transform:scaleX(0)}

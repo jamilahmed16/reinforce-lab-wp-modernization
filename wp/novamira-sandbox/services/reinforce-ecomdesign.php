@@ -99,24 +99,24 @@ body.rl-ec-page .fl-page-content,body.rl-ec-page .fl-content,body.rl-ec-page .fl
 .rl-ec .c-rr{animation-name:rlecRr}
 .rl-ec .c-img{fill:rgba(255,255,255,.07)}
 .rl-ec .c-bar{fill:rgba(243,237,230,.22)}
-.rl-ec .c-rt{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.12em;fill:var(--red-3)}
+.rl-ec .c-rt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--red-3)}
 .rl-ec .c-star{fill:none;stroke:rgba(243,237,230,.4);stroke-width:.8}.rl-ec .c-sf{fill:var(--red-2);stroke:var(--red-3)}
-.rl-ec .c-lab{font-family:var(--f-mono);font-size:8px;letter-spacing:.2em;fill:var(--ink-faint)}
+.rl-ec .c-lab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-ec .c-tile{opacity:0}
 .rl-ec .c-pick{fill:none;stroke:#fff;stroke-width:1.2;opacity:0;animation-name:rlecPick}
 .rl-ec .c-e{fill:none;stroke:rgba(243,237,230,.14);stroke-width:.8}
 .rl-ec .c-p{fill:none;stroke:var(--red-3);stroke-width:1.3;stroke-linecap:round;stroke-dasharray:8 100;stroke-dashoffset:8;opacity:0;animation-name:rlecP;animation-timing-function:ease-in-out}
 .rl-ec .c-f{fill:rgba(255,255,255,.07);stroke:rgba(243,237,230,.12);stroke-width:.6;transform-box:fill-box;transform-origin:0 50%}
-.rl-ec .c-note{font-family:var(--f-mono);font-size:8px;letter-spacing:.16em;fill:var(--red-3);opacity:0;animation-name:rlecNote}
+.rl-ec .c-note{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--red-3);opacity:0;animation-name:rlecNote}
 .rl-ec .c-sq{fill:none;stroke:rgba(243,237,230,.25);stroke-width:.8}
 .rl-ec .c-sqon{fill:var(--red-2);opacity:0}
-.rl-ec .c-ct{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.12em;fill:var(--ink-dim)}
+.rl-ec .c-ct{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
 .rl-ec .c-btn{fill:rgba(255,255,255,.05);stroke:rgba(243,237,230,.2);stroke-width:.8}
 .rl-ec .c-btnon{fill:var(--red-2);opacity:0;animation-name:rlecOk}
-.rl-ec .c-bt{font-family:var(--f-mono);font-size:9px;letter-spacing:.16em;fill:var(--ink);animation-name:rlecPo}
+.rl-ec .c-bt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink);animation-name:rlecPo}
 .rl-ec .c-okt{fill:#fff;opacity:0;animation-name:rlecOk}
 .rl-ec .c-rule{stroke:var(--line-2);stroke-width:1}
-.rl-ec .c-ft{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.16em;fill:var(--ink-faint)}
+.rl-ec .c-ft{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-faint)}
 .rl-ec .c-fton{fill:var(--ink);opacity:0}
 .rl-ec .c-fb{fill:rgba(255,255,255,.08)}
 .rl-ec .c-fbon{fill:var(--red-2);transform-box:fill-box;transform-origin:0 50%;transform:scaleX(0)}
