@@ -232,7 +232,7 @@ body a.fl-screen-reader-text:focus{clip:auto;width:auto;height:auto;overflow:vis
 @media(max-width:440px){.rl-footer .f-main{grid-template-columns:1fr}}
 .rl-footer .f-intro .brand{display:flex;align-items:center;gap:10px;font-family:var(--f-display);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:18px;color:var(--ink);margin-bottom:16px}
 .rl-footer .f-intro .dot{width:11px;height:11px;background:var(--red);box-shadow:0 0 14px var(--red-glow)}
-.rl-footer .f-intro p{color:var(--ink-dim);font-size:14.5px;max-width:42ch;line-height:1.75;margin:0}
+.rl-footer .f-intro p{color:var(--ink-dim);font-size:14.5px;max-width:42ch;line-height:1.75;margin:0;text-wrap:pretty}
 .rl-footer .f-col .f-h{font-family:var(--f-display);text-transform:uppercase;font-size:15px;font-weight:400;line-height:21px;letter-spacing:.07em;color:var(--ink);margin:0 0 18px;position:relative;padding-bottom:10px}
 .rl-footer .f-col .f-h::after{content:"";position:absolute;left:0;bottom:0;width:26px;height:2px;background:var(--red)}
 /* footer columns are <details> (D-142): always open on desktop; on phone they collapse into rows with a chevron, like an app menu */

@@ -112,7 +112,7 @@ body.rl-about-page .fl-page-content,body.rl-about-page .fl-content,body.rl-about
 @media(max-width:560px){.rl-about .ind-grid{grid-template-columns:minmax(0,1fr)}.rl-about .ind{padding:20px 18px 48px}.rl-about .ind .go{left:18px}}
 .rl-about .reg{margin-top:16px;border:1px solid var(--red-line);background:linear-gradient(180deg,rgba(153,0,0,.08),var(--glass));padding:clamp(20px,3vw,30px)}
 .rl-about .reg h3{margin:0 0 10px}
-.rl-about .reg p{margin:0;color:var(--ink-dim);font-size:16px;max-width:65ch}
+.rl-about .reg p{margin:0;color:var(--ink-dim);font-size:16px;max-width:60ch}
 .rl-about a.cell{color:inherit;text-decoration:none;display:flex;flex-direction:column;gap:8px}
 @media(max-width:1000px){.rl-about .c4{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:900px){.rl-about .story{grid-template-columns:1fr}}
@@ -121,7 +121,7 @@ body.rl-about-page .fl-page-content,body.rl-about-page .fl-content,body.rl-about
 .rl-about .cred{margin:0 0 20px;display:grid;grid-template-columns:auto 1fr;column-gap:18px}
 .rl-about .cred dt,.rl-about .cred dd{margin:0;padding:12px 0;border-top:1px solid var(--line)}
 .rl-about .cred dt{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-3);padding-top:15px}
-.rl-about .cred dd{color:var(--ink);font-size:16px}
+.rl-about .cred dd{color:var(--ink);font-size:16px;text-wrap:pretty}
 .rl-about .founder .card .links{margin-top:0}
 .rl-about .founder .txt .sub{margin-top:0}
 .rl-about .founder blockquote small{color:var(--ink-faint);font-size:16px}

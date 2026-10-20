@@ -4,6 +4,8 @@
 **Tool:** Impeccable 4.7.0 (Paul Bakaus, Apache 2.0). The `impeccable detect` scanner (61 fixed rules) ran against the live pages, and the skill's `audit` checklist was used to judge the results. Nothing was installed in the repo: the install route (impeccable.style) is blocked by this container's network policy, so the scanner came from npm and the skill text from a git clone, both kept in the session scratchpad.
 **Raw results:** the six `*.json` files in this folder.
 
+**Update 20 Oct:** items 2 to 5 fixed (D-199). Item 1 turned out to affect every hero drawing on the site (F-038), waiting for Jamil.
+
 Every finding was checked by hand against the page code before it was sorted. Nothing on the site was changed.
 
 ## Real issues (worth fixing)

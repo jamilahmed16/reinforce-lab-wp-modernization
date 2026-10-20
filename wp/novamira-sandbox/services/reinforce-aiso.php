@@ -153,7 +153,7 @@ body.rl-aiso-page .fl-page-content,body.rl-aiso-page .fl-content,body.rl-aiso-pa
 .rl-aiso .ai-ln,.rl-aiso .ai-mk,.rl-aiso .ai-mkon,.rl-aiso .ai-mkton,.rl-aiso .ai-src,.rl-aiso .ai-cardon,.rl-aiso .ai-cton,.rl-aiso .ai-ck,.rl-aiso .ai-sqon,.rl-aiso .ai-mton{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
 @media(max-width:560px){.rl-aiso .ai-tab{font-size:11px;letter-spacing:.02em}.rl-aiso .ai-q{font-size:10.5px;letter-spacing:0}.rl-aiso .ai-ct,.rl-aiso .ai-cton,.rl-aiso .ai-cn{font-size:11px;letter-spacing:.02em}.rl-aiso .ai-ck{font-size:10px;letter-spacing:.02em}.rl-aiso .ai-mt{font-size:11px;letter-spacing:.02em}.rl-aiso .ai-pl{font-size:10px}.rl-aiso .ans .cap span+span{display:none}.rl-aiso .ans{padding:16px 10px 10px}}
 <?php echo rl_aiso_kf(); ?>
-.rl-aiso .note{max-width:65ch;margin:28px 0 0;color:var(--ink-dim);font-size:16px;line-height:1.65}
+.rl-aiso .note{max-width:60ch;margin:28px 0 0;color:var(--ink-dim);font-size:16px;line-height:1.65}
 /* byline */
 .rl-aiso .byl{margin:22px 0 0;font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
 .rl-aiso .byl a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--red-line)}
