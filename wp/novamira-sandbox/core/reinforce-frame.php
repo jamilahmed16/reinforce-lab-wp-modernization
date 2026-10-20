@@ -15,10 +15,13 @@ add_action('wp_head', function () {
     $noise = "data:image/svg+xml;utf8," . rawurlencode('<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .75  0 0 0 0 .05  0 0 0 0 .05  0 0 0 .9 0"/></filter><rect width="160" height="160" filter="url(#n)"/></svg>');
     ?>
 <style id="rl-frame-css">
-#rl-frame{position:absolute;left:0;top:0;right:0;height:0;pointer-events:none;z-index:0;overflow:hidden;contain:strict}
+#rl-frame{position:absolute;left:0;top:0;right:0;height:0;pointer-events:none;z-index:3;overflow:hidden;contain:strict}
 #rl-frame .fr-rail{position:absolute;top:0;bottom:0;width:0;border-left:1px dashed rgba(243,237,230,.13)}
 #rl-frame .fr-h{position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,rgba(243,237,230,.05),rgba(243,237,230,.12) 12%,rgba(243,237,230,.12) 88%,rgba(243,237,230,.05));transform:scaleX(0);transform-origin:50% 50%;transition:transform 1.1s cubic-bezier(.2,.7,.1,1)}
 #rl-frame .fr-h.on{transform:scaleX(1)}
+#rl-frame .fr-h::after{content:"";position:absolute;top:-1px;left:-180px;width:180px;height:3px;background:linear-gradient(90deg,rgba(180,20,20,0),var(--red-2,#b41414),rgba(180,20,20,0));opacity:0}
+#rl-frame .fr-h.on::after{animation:rlFrSweep 1.8s .4s cubic-bezier(.5,0,.3,1) 1 both}
+@keyframes rlFrSweep{0%{left:-180px;opacity:0}12%{opacity:1}85%{opacity:1}100%{left:100%;opacity:0}}
 #rl-frame .fr-sq{position:absolute;width:9px;height:9px;margin:-4px 0 0 -4px;border:1px solid rgba(243,237,230,.3);background:var(--bg,#121011);transition:border-color .6s}
 #rl-frame .fr-sq.on{border-color:var(--red-2,#b41414);animation:rlFrSq 1.4s ease-out 1 both}
 @keyframes rlFrSq{0%{background:var(--bg,#121011)}18%{background:var(--red,#990000)}100%{background:var(--bg,#121011)}}
@@ -29,7 +32,7 @@ add_action('wp_head', function () {
 #rl-frame .fr-tile.k{opacity:.9}
 #rl-prog{position:fixed;top:0;width:1px;height:0;pointer-events:none;z-index:1;background:linear-gradient(180deg,rgba(153,0,0,0),var(--red-2,#b41414))}
 #rl-prog::after{content:"";position:absolute;left:-3px;bottom:-3px;width:7px;height:7px;background:var(--red-2,#b41414)}
-@media(prefers-reduced-motion:reduce){#rl-frame .fr-h{transform:none;transition:none}#rl-frame .fr-sq.on{animation:none}#rl-prog{display:none}}
+@media(prefers-reduced-motion:reduce){#rl-frame .fr-h{transform:none;transition:none}#rl-frame .fr-h.on::after{animation:none}#rl-frame .fr-sq.on{animation:none}#rl-prog{display:none}}
 </style>
 <?php
 }, 99);

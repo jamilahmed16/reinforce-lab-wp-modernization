@@ -22,6 +22,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 |---|---|---|---|---|
 | D-177 | Layout shift after the lean pages: header no longer paints half-built (`rel=expect` render block until the header is parsed; menu widened 234 to 706 px mid-load, 0.011); font stand-ins tuned on measured line breaks across 57 pages and 14 real device setups (Oswald 500 to 600 at 73.4%, Plex Sans at 99.7%; the other two already best). Residual: on a first visit where a web font arrives after the first paint, some lines can still re-wrap (Lighthouse up to 0.03 to 0.05 on two pages, most pages 0 to 0.004). Jamil's rule recorded: never suggest other fonts | 12 Oct | DONE (Jamil: "A ..never suggest any other fonts") | `core/reinforce-header.php`, `core/reinforce-fonts.css` |
 | F-038 | Hero drawings break the 12px rule on every page that has one (about 25 service and industry pages, D-139): the text inside the drawings shows at 7.8 to 9.5px on a 1440 screen, about 5px on a 1024 tablet (two-column hero), about 7px at 600 wide. The phone version (under 560px) is readable HTML and passes. Earlier audits (D-138, D-140) measured HTML text only and missed text inside drawings | 20 Oct | `[VERIFIED]` measured; fix waits for Jamil | this file |
+| F-039 | **Our design went off on `.online` for about 2 minutes (10:29 to 10:31 UTC, 20 Oct).** The loader was deployed before the new file it lists (`core/reinforce-frame.php`), Novamira hit the missing file, wrote `.crashed` in the sandbox and switched all our code off, so pages showed the bare theme. Fixed: file deployed, `.crashed` copied to `_backups/crashed-20261020-103057.txt` and removed, cache purged, pages checked. Rule: deploy a new file first, the loader after | 20 Oct | `[VERIFIED]` resolved | this file |
+| D-202 | **Draft frame background (preview only)** from Jamil's reference: dashed side rails, a full-width line and red square markers at every section join that draw in with a red sweep as the section appears, a band of cells under the hero with red textured tiles that light in a wave on scroll, and a red reading-progress line on the left rail. Shows only with `?bg=frame` (kept on links while browsing); the site is unchanged without it. Motion off for people who turn it off. Waits for Jamil's review | 20 Oct | DRAFT | this file |
 | D-201 | F-038 pilot on page 72 (Jamil: A): every label in the AI answer drawing is 12.5 drawing units, layout refitted (markers, cards, checks, caret, typing width), and the drawing only shows when at least 500px wide, so text is 12px or more (measured 12.3 to 16.7px). Narrower, including the two-column tablet hero, gets the readable HTML version. Shared phone-version spacing between groups (16px). Other 24 drawings follow one at a time after Jamil sees this one | 20 Oct | DONE (pilot) | this file |
 | D-200 | **Grid background removed site-wide (amends D-013, Jamil: "Eliminate the grids from the decision. Remove from everything")**: the two fixed grid layers and their scroll and mouse motion are gone from `core/reinforce-header.php`, the grid on Home blog card placeholders too. Mouse glow kept. A new background is to be drafted from Jamil's reference (Command Code: framed columns, corner marks, tiles) and approved before it goes live. Answer A for F-038: page 72 drawing first | 20 Oct | DONE (removal); draft next | this file |
 | D-199 | F-037 fixes 2 to 5 live: body paragraphs capped at 60 to 65ch (FAQ, honest box, About founder, story and register, page 72 note and next step), `text-wrap: balance` on Home headings, `text-wrap: pretty` on body text site-wide (kit, Home, footer intro, About credentials), source links at 0.02em spacing. Re-scan: line-length, wide-tracking and unbalanced-heading 0 on all 3 pages; one-word endings 45 down to 1. Phone width 390 on 6 pages. Fix 1 (drawing text) became F-038 | 20 Oct | DONE | this file |
@@ -278,6 +280,26 @@ Newest month first; within a month, entries are in the order they appear in the 
 ## Current month: October 2026
 
 ---
+
+## D-202 · Draft frame background (preview only)
+
+**Date:** 20 Oct 2026 · **Asked by:** Jamil ("create a draft version of that and then finalize") · `[VERIFIED]` working, not approved
+
+File: `core/reinforce-frame.php` (listed in `reinforce-loader.php`). Runs only when the address has `?bg=frame`; it then adds that to links inside the site so Jamil can browse in preview. No change for anyone else.
+
+- **Rails:** two dashed lines just outside the content edges, top of page to the footer.
+- **Section joins:** a full-width hairline at the top of each section with 9px square markers on the rails. As a section scrolls into view the line draws out from the centre, a red light sweeps across it once, and the markers flash brand red.
+- **Hero band:** a row of cells (6 on desktop, 4 on phone) in the free space at the bottom of the hero, dashed dividers, two red noise-textured tiles; as you scroll, the tiles light in a wave and drift slightly. Shown only where the hero has at least 44px of free space (not on phone today).
+- **Reading progress:** a red line with a square head runs down the left rail as you read.
+- Layer sits above content with no pointer events (sections with their own background hid it otherwise), below the header. Off for people who turn off motion: lines static, no sweep, no progress line.
+- Checked on Home and page 72 at 1440 and 390: no script errors, no sideways scroll.
+- Open questions for Jamil: tile colour (brand red now; the reference uses blue), strength of the rails, phone band, whether to keep the progress line.
+
+## F-039 · Design off for 2 minutes after a deploy order mistake
+
+**Date:** 20 Oct 2026 · `[VERIFIED]` resolved
+
+`rl.py deploy` refused the new file without `--create`, but the loader that lists it deployed. Novamira caught the fatal "failed opening required" error, wrote `wp-content/novamira-sandbox/.crashed` and stopped loading the sandbox, so every page showed the bare theme with our header, design and page code off. Fixed within about 2 minutes: deployed the file with `--create`, copied `.crashed` to `_backups/crashed-20261020-103057.txt`, removed it, purged the cache, confirmed `rl-header` on Home, About, Blog, Services, Healthcare and page 72. `.online` only; production untouched. Rule from now: a new file goes live before the loader line that includes it.
 
 ## D-201 · Drawing text pilot on page 72 (F-038, option A)
 
