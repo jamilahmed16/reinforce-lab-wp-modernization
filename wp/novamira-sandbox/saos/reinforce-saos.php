@@ -186,7 +186,7 @@ body.rl-saos-page .fl-page-content,body.rl-saos-page .fl-content,body.rl-saos-pa
 @media(max-width:520px){.rl-saos .flow{width:2px!important}}
 /* hero visual: Authority loop (D-039) - unique to SAOS; Home keeps the engine */
 .rl-saos .loop{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 22px 14px;box-shadow:0 30px 80px -50px var(--red-glow);display:flex;flex-direction:column}
-.rl-saos .loop>div:not(.cap){flex:1;display:flex;align-items:center}.rl-saos .loop svg{width:100%;height:auto}
+.rl-saos .loop>div:not(.cap):not(.rl-ph){flex:1;display:flex;align-items:center}.rl-saos .loop svg{width:100%;height:auto}
 .rl-saos .loop .cap{display:flex;justify-content:space-between;gap:12px}
 .rl-saos .loop .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-saos .lp-ring{fill:none;stroke:var(--line-2);stroke-width:1}

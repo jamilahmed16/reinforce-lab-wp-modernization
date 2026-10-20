@@ -22,6 +22,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 |---|---|---|---|---|
 | D-177 | Layout shift after the lean pages: header no longer paints half-built (`rel=expect` render block until the header is parsed; menu widened 234 to 706 px mid-load, 0.011); font stand-ins tuned on measured line breaks across 57 pages and 14 real device setups (Oswald 500 to 600 at 73.4%, Plex Sans at 99.7%; the other two already best). Residual: on a first visit where a web font arrives after the first paint, some lines can still re-wrap (Lighthouse up to 0.03 to 0.05 on two pages, most pages 0 to 0.004). Jamil's rule recorded: never suggest other fonts | 12 Oct | DONE (Jamil: "A ..never suggest any other fonts") | `core/reinforce-header.php`, `core/reinforce-fonts.css` |
 | F-038 | Hero drawings break the 12px rule on every page that has one (about 25 service and industry pages, D-139): the text inside the drawings shows at 7.8 to 9.5px on a 1440 screen, about 5px on a 1024 tablet (two-column hero), about 7px at 600 wide. The phone version (under 560px) is readable HTML and passes. Earlier audits (D-138, D-140) measured HTML text only and missed text inside drawings | 20 Oct | `[VERIFIED]` measured; fix waits for Jamil | this file |
+| F-040 | Search Authority OS and Packages showed the drawing **and** the readable phone list together on desktop (page rule `.loop>div:not(.cap)` and `.stair>div:not(.cap)` set `display:flex` on the phone list too, beating the shared hide rule). Older bug, found while measuring F-038. Fixed with `:not(.rl-ph)`; desktop now shows only the drawing, phone and tablet only the list | 20 Oct | `[VERIFIED]` fixed | this file |
 | D-204 | F-038 page 2, GEO: every drawing label 12.5 units (question, three searches, panel labels, citation chips 18 by 17, caption), spacing tightened to fit. Shared `core/reinforce-phone-hero.php`: every drawing with a readable version now switches to it below 500px of drawing width (was: phone screens only), so the 5px tablet case is gone on all pages at once. Desktop sizes on the other pages still to fix one by one | 20 Oct | DONE | this file |
 | D-203 | **Frame background is now the site background (Jamil approved: red tiles, phone band, side lines as they are, keep the progress line).** `core/reinforce-frame.php` runs on every front-end page; `?bg=off` turns it off for one view to compare. Preview link rewriting removed. Supersedes the DRAFT status of D-202 | 20 Oct | DONE | this file |
 | F-039 | **Our design went off on `.online` for about 2 minutes (10:29 to 10:31 UTC, 20 Oct).** The loader was deployed before the new file it lists (`core/reinforce-frame.php`), Novamira hit the missing file, wrote `.crashed` in the sandbox and switched all our code off, so pages showed the bare theme. Fixed: file deployed, `.crashed` copied to `_backups/crashed-20261020-103057.txt` and removed, cache purged, pages checked. Rule: deploy a new file first, the loader after | 20 Oct | `[VERIFIED]` resolved | this file |
@@ -282,6 +283,15 @@ Newest month first; within a month, entries are in the order they appear in the 
 ## Current month: October 2026
 
 ---
+
+## D-204 · GEO drawing text, and readable version below 500px everywhere (F-038)
+
+**Date:** 20 Oct 2026 · **Approved by:** Jamil ("next", option A) · `[VERIFIED]`
+
+- `services/reinforce-geo.php`: every drawing label 12.5 units, letter spacing reduced to fit, citation chips 18 by 17. Measured 13.9px at 1440.
+- `core/reinforce-phone-hero.php`: every hero figure with a readable version is a size container and switches to it below 500px of drawing width.
+- Full measurement on 20 Oct, all 25 pages with a drawing: tablet (1024) and phone (390) now show the readable version on every page. Desktop (1440) smallest drawing text: fixed on AI Search Optimization and GEO (13.9px); still small on Home 9.1, AI Growth Systems 10.0, Services hub 9.5, Agents 9.4, Pharmaceutical, Executive AI and SEO Content Systems 8.4, Search Authority OS 8.0, Enterprise, International, LLM, Lead Generation, Press Release, Marketing Automation, AI Workflow, Technical SEO and E-commerce Design 8.9, SEO pillar, Local SEO, Audit, Website Maintenance and WordPress Design 7.8. Packages not measured on desktop (load failed). These get the same treatment one page at a time.
+- Found and fixed on the way: F-040.
 
 ## D-203 · Frame background made the default
 

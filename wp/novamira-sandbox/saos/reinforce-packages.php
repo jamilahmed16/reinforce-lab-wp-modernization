@@ -138,7 +138,7 @@ body.rl-pkg-page .fl-page-content,body.rl-pkg-page .fl-content,body.rl-pkg-page 
 .rl-pkg .hero .hero-cta{justify-content:flex-start}
 /* hero visual: rising staircase - refined chart (D-039, rev 2): one-time build, then subtle ambient motion */
 .rl-pkg .stair{margin:0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:20px 22px 12px;box-shadow:0 30px 80px -50px var(--red-glow);display:flex;flex-direction:column}
-.rl-pkg .stair>div:not(.cap){flex:1;display:flex;align-items:center}.rl-pkg .stair svg{width:100%;height:auto}
+.rl-pkg .stair>div:not(.cap):not(.rl-ph){flex:1;display:flex;align-items:center}.rl-pkg .stair svg{width:100%;height:auto}
 .rl-pkg .stair .cap{display:flex;justify-content:space-between;gap:12px}
 .rl-pkg .stair .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-pkg .pk-grid{stroke:var(--line);opacity:.7}
