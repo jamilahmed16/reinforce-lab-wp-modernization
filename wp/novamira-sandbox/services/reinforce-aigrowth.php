@@ -52,13 +52,13 @@ function rl_aigrowth_svg() {
     foreach ($layers as $i => $l) {
         $y = 4 + $i * 90;
         $s .= '<rect class="ag-l' . ($i === 3 ? ' ag-on' : '') . '" x="0" y="' . $y . '" width="300" height="70"/>'
-            . '<text class="ag-n" x="16" y="' . ($y + 31) . '">' . $l[0] . '</text><text class="ag-t" x="52" y="' . ($y + 31) . '">' . $l[1] . '</text>'
-            . '<text class="ag-s" x="52" y="' . ($y + 52) . '">' . $l[2] . '</text>';
+            . '<text class="ag-n" x="12" y="' . ($y + 31) . '">' . $l[0] . '</text><text class="ag-t" x="44" y="' . ($y + 31) . '">' . $l[1] . '</text>'
+            . '<text class="ag-s" x="44" y="' . ($y + 52) . '">' . $l[2] . '</text>';
         if ($i < 3) $s .= '<line class="ag-k" x1="150" y1="' . ($y + 70) . '" x2="150" y2="' . ($y + 90) . '"/>';
     }
     $s .= '<path class="ag-loop" d="M300 309 H320 V39 H300"/><text class="ag-s" x="330" y="174" transform="rotate(90 330 174)" text-anchor="middle">LOOP: TUNED EVERY CYCLE</text>';
     foreach ([['HOURS SAVED', 66], ['SEARCH VISIBILITY', 174], ['QUALIFIED PIPELINE', 282]] as $o) {
-        $s .= '<line class="ag-k" x1="320" y1="' . $o[1] . '" x2="350" y2="' . $o[1] . '"/><rect class="ag-o" x="350" y="' . ($o[1] - 30) . '" width="170" height="60"/><text class="ag-ot" x="366" y="' . ($o[1] + 4) . '">' . $o[0] . '</text>';
+        $s .= '<line class="ag-k" x1="340" y1="' . $o[1] . '" x2="350" y2="' . $o[1] . '"/><rect class="ag-o" x="350" y="' . ($o[1] - 30) . '" width="170" height="60"/><text class="ag-ot" x="366" y="' . ($o[1] + 4) . '">' . $o[0] . '</text>';
     }
     $s .= '<line class="ag-rule" x1="0" y1="362" x2="520" y2="362"/><text class="ag-s ag-ap" x="0" y="385">+ PEOPLE APPROVE WHAT MATTERS</text>';
     return $s . '</svg>';
