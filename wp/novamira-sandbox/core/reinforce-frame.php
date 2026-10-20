@@ -53,6 +53,10 @@ add_action('wp_footer', function () {
     root.textContent='';joins=[];tiles=[];if(io)io.disconnect();
     var secs=sections();if(!secs.length)return;
     var docH=document.documentElement.scrollHeight,vw=document.documentElement.clientWidth;
+    // phone: the hero has no spare room, so give it just enough for the tile band (preview only)
+    if(vw<700){var h0=secs[0];if(!h0.dataset.frPb)h0.dataset.frPb=getComputedStyle(h0).paddingBottom;h0.style.paddingBottom=h0.dataset.frPb;
+      var r0=h0.getBoundingClientRect(),lo=r0.top;[].slice.call(h0.querySelectorAll('.wrap > *')).forEach(function(c){var bb=c.getBoundingClientRect().bottom;if(bb>lo)lo=bb;});
+      var f0=r0.bottom-lo-12;if(f0<84){h0.style.paddingBottom=(parseFloat(h0.dataset.frPb)+84-Math.max(0,f0))+'px';docH=document.documentElement.scrollHeight;}}
     var w=secs[0].querySelector('.wrap')||secs[0];var r=w.getBoundingClientRect();var cs=getComputedStyle(w);
     var inL=r.left+parseFloat(cs.paddingLeft),inR=r.right-parseFloat(cs.paddingRight);var off=Math.max(6,Math.min(28,(inL)*.45));
     railL=Math.round(inL-off);var railR=Math.round(inR+off);
@@ -68,7 +72,8 @@ add_action('wp_footer', function () {
     // hero band: cells in the free space at the bottom of the first section
     hero=secs[0];var hr=hero.getBoundingClientRect();heroTop=hr.top+scrollY;heroH=hr.height;
     var low=hr.top;[].slice.call(hero.querySelectorAll('.wrap > *')).forEach(function(c){var b=c.getBoundingClientRect().bottom;if(b>low)low=b;});
-    var free=hr.bottom-low-12,bandH=Math.min(112,free);
+    var free=hr.bottom-low-12;
+    var bandH=Math.min(112,free);
     if(bandH>=44){
       var n=vw<700?4:6,band=document.createElement('div');band.className='fr-band';
       band.style.cssText='left:'+railL+'px;width:'+(railR-railL)+'px;top:'+Math.round(hr.bottom+scrollY-bandH)+'px;height:'+Math.round(bandH)+'px;grid-template-columns:repeat('+n+',1fr)';

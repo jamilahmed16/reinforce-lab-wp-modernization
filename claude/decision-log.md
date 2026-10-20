@@ -293,7 +293,8 @@ File: `core/reinforce-frame.php` (listed in `reinforce-loader.php`). Runs only w
 - **Reading progress:** a red line with a square head runs down the left rail as you read.
 - Layer sits above content with no pointer events (sections with their own background hid it otherwise), below the header. Off for people who turn off motion: lines static, no sweep, no progress line.
 - Checked on Home and page 72 at 1440 and 390: no script errors, no sideways scroll.
-- Open questions for Jamil: tile colour (brand red now; the reference uses blue), strength of the rails, phone band, whether to keep the progress line.
+- Jamil, 20 Oct: "Keep red tiles, show them on phone too, love it." Tiles stay brand red. Phone now shows the band (4 cells): in preview the hero gets just enough extra bottom space (84px of free room) before anything is measured, so section lines stay aligned. Checked on Home and page 72 at 390: 4 tiles, no sideways scroll, no script errors.
+- Still open: strength of the rails, whether to keep the progress line; then make it the default (drop `?bg=frame`).
 
 ## F-039 · Design off for 2 minutes after a deploy order mistake
 
