@@ -40,7 +40,7 @@ function rl_geo_industries() {
    "retrieved · extracted · cited" lights. 10 s loop, soft fade 92-97 %, reset. */
 function rl_geo_svg() {
     $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlGeoT"><title id="rlGeoT">A buyer question fans out into related searches; the searches retrieve your page; three passages are extracted into the AI-generated answer and each is cited to your page.</title>';
-    $s .= '<rect class="g-box" x="110" y="0" width="300" height="30"/><rect class="g-boxon" x="110" y="0" width="300" height="30"/><text class="g-qt" x="260" y="19" text-anchor="middle">HOW SHOULD WE CHOOSE A PROVIDER?</text>';
+    $s .= '<rect class="g-box" x="110" y="0" width="300" height="30"/><rect class="g-boxon" x="110" y="0" width="300" height="30"/><text class="g-qt" x="260" y="20" text-anchor="middle">HOW SHOULD WE CHOOSE A PROVIDER?</text>';
     $subs = ['SELECTION CRITERIA', 'TYPICAL COSTS', 'RED FLAGS'];
     foreach ([90, 260, 430] as $i => $cx) {
         $f = 'M260 30 C260 42 ' . $cx . ' 38 ' . $cx . ' 52';
@@ -48,21 +48,21 @@ function rl_geo_svg() {
         $s .= '<path class="g-e" d="' . $f . '"/><path class="g-p g-pf' . $i . '" pathLength="100" d="' . $f . '"/>'
             . '<path class="g-e" d="' . $r . '"/><path class="g-p g-pr' . $i . '" pathLength="100" d="' . $r . '"/>'
             . '<rect class="g-pill" x="' . ($cx - 80) . '" y="52" width="160" height="22"/><rect class="g-pillon g-pl' . $i . '" x="' . ($cx - 80) . '" y="52" width="160" height="22"/>'
-            . '<text class="g-st" x="' . $cx . '" y="66" text-anchor="middle">' . $subs[$i] . '</text>';
+            . '<text class="g-st" x="' . $cx . '" y="67" text-anchor="middle">' . $subs[$i] . '</text>';
     }
-    $s .= '<rect class="g-doc" x="0" y="100" width="240" height="250"/><rect class="g-docon" x="0" y="100" width="240" height="250"/><text class="g-lab" x="12" y="116">YOUR PAGE</text><line class="g-rule" x1="0" y1="124" x2="240" y2="124"/>';
+    $s .= '<rect class="g-doc" x="0" y="100" width="240" height="250"/><rect class="g-docon" x="0" y="100" width="240" height="250"/><text class="g-lab" x="12" y="117">YOUR PAGE</text><line class="g-rule" x1="0" y1="124" x2="240" y2="124"/>';
     $hw = [110, 84, 124, 96, 130, 90];
     for ($b = 0; $b < 6; $b++) {
         $y = 132 + $b * 36;
         $s .= '<rect class="g-h" x="12" y="' . $y . '" width="' . $hw[$b] . '" height="4"/><rect class="g-b" x="12" y="' . ($y + 10) . '" width="206" height="3"/><rect class="g-b" x="12" y="' . ($y + 18) . '" width="' . (150 + ($b % 3) * 20) . '" height="3"/>';
     }
-    $s .= '<rect class="g-ans" x="280" y="100" width="240" height="250"/><rect class="g-ansglow" x="280" y="100" width="240" height="250"/><text class="g-lab" x="292" y="116">GENERATED ANSWER</text><line class="g-rule" x1="280" y1="124" x2="520" y2="124"/>';
+    $s .= '<rect class="g-ans" x="280" y="100" width="240" height="250"/><rect class="g-ansglow" x="280" y="100" width="240" height="250"/><text class="g-lab" x="292" y="117">GENERATED ANSWER</text><line class="g-rule" x1="280" y1="124" x2="520" y2="124"/>';
     foreach ([0, 2, 4] as $k => $b) {
         $yb = 132 + $b * 36; $ya = 136 + $k * 62;
         $s .= '<rect class="g-hi g-hi' . $k . '" x="6" y="' . ($yb - 5) . '" width="228" height="30"/>'
             . '<rect class="g-fly g-fly' . $k . '" x="6" y="' . ($yb - 5) . '" width="228" height="30"/>'
             . '<g class="g-seg g-seg' . $k . '"><rect class="g-ah" x="292" y="' . $ya . '" width="196" height="4"/><rect class="g-b" x="292" y="' . ($ya + 10) . '" width="170" height="3"/><rect class="g-b" x="292" y="' . ($ya + 18) . '" width="118" height="3"/></g>'
-            . '<g class="g-chip g-chip' . $k . '"><rect x="416" y="' . ($ya + 13) . '" width="16" height="12"/><text x="424" y="' . ($ya + 22) . '" text-anchor="middle">1</text></g>';
+            . '<g class="g-chip g-chip' . $k . '"><rect x="416" y="' . ($ya + 14) . '" width="18" height="17"/><text x="425" y="' . ($ya + 27) . '" text-anchor="middle">1</text></g>';
     }
     $s .= '<text class="g-cap" x="260" y="380" text-anchor="middle">RETRIEVED · EXTRACTED · CITED</text><text class="g-cap g-capon" x="260" y="380" text-anchor="middle">RETRIEVED · EXTRACTED · CITED</text>';
     return $s . '</svg>';
@@ -108,9 +108,9 @@ body.rl-geo-page .fl-page-content,body.rl-geo-page .fl-content,body.rl-geo-page 
 .rl-geo .g-boxon{animation-name:rlgBox}
 .rl-geo .g-docon{fill:none;animation-name:rlgDoc}
 .rl-geo .g-ansglow{fill:none;stroke:var(--red-2);stroke-width:1;opacity:0;animation-name:rlgAns}
-.rl-geo .g-qt{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.08em;fill:var(--ink)}
-.rl-geo .g-st{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.12em;fill:var(--ink-dim)}
-.rl-geo .g-lab{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.2em;fill:var(--ink-faint)}
+.rl-geo .g-qt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.02em;fill:var(--ink)}
+.rl-geo .g-st{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.02em;fill:var(--ink-dim)}
+.rl-geo .g-lab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.12em;fill:var(--ink-faint)}
 .rl-geo .g-rule{stroke:var(--line-2);stroke-width:1}
 .rl-geo .g-h{fill:rgba(255,255,255,.22)}
 .rl-geo .g-b{fill:rgba(255,255,255,.10)}
@@ -121,12 +121,12 @@ body.rl-geo-page .fl-page-content,body.rl-geo-page .fl-content,body.rl-geo-page 
 .rl-geo .g-fly{fill:rgba(153,0,0,.18);stroke:var(--red-3);stroke-width:1;opacity:0}
 .rl-geo .g-seg,.rl-geo .g-chip{opacity:0}
 .rl-geo .g-chip rect{fill:var(--red-2)}
-.rl-geo .g-chip text{font-family:var(--f-mono);font-size:8.5px;fill:#fff}
-.rl-geo .g-cap{font-family:var(--f-mono);font-size:9px;letter-spacing:.2em;fill:var(--ink-faint)}
+.rl-geo .g-chip text{font-family:var(--f-mono);font-size:12.5px;fill:#fff}
+.rl-geo .g-cap{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.12em;fill:var(--ink-faint)}
 .rl-geo .g-capon{fill:var(--ink);opacity:0;animation-name:rlgCap}
 .rl-geo .g-boxon,.rl-geo .g-pillon,.rl-geo .g-docon,.rl-geo .g-ansglow,.rl-geo .g-p,.rl-geo .g-hi,.rl-geo .g-fly,.rl-geo .g-seg,.rl-geo .g-chip,.rl-geo .g-capon{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
 .rl-geo .g-p{animation-timing-function:ease-in-out}
-@media(max-width:560px){.rl-geo .g-qt{font-size:10.5px;letter-spacing:0}.rl-geo .g-st{font-size:10px;letter-spacing:0}.rl-geo .g-lab{font-size:10px;letter-spacing:.08em}.rl-geo .g-cap{font-size:11px;letter-spacing:.06em}.rl-geo .fan .cap span+span{display:none}.rl-geo .fan{padding:16px 10px 10px}}
+@media(max-width:560px){.rl-geo .fan .cap span+span{display:none}.rl-geo .fan{padding:16px 10px 10px}}
 <?php echo rl_geo_kf(); ?>
 /* before/after + research */
 .rl-geo .ba{display:grid;grid-template-columns:1fr 1fr;gap:16px}

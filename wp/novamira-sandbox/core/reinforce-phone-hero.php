@@ -38,6 +38,9 @@ add_action('wp_head', function () {
 <style id="rl-ph-css">
 .rl-ph{display:none}
 @media(max-width:560px){.rl-anim:has(>.rl-ph)>:not(.rl-ph):not(.cap){display:none!important}.rl-anim>.rl-ph{display:block!important;flex:none;width:100%}}
+/* F-038: below 500px of drawing width the labels drop under 12px, so show the readable version there too (tablet two-column heroes) */
+.rl-anim:has(>.rl-ph){container-type:inline-size}
+@container (max-width:499.9px){.rl-anim:has(>.rl-ph)>:not(.rl-ph):not(.cap){display:none!important}.rl-anim>.rl-ph{display:block!important;flex:none;width:100%}}
 .rl-ph{font-family:var(--f-mono);text-align:left}
 .rl-ph .ph-l{font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase;margin:0 0 8px}
 .rl-ph ul{list-style:none;margin:0;padding:0}
