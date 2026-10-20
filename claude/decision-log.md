@@ -335,6 +335,7 @@ Jamil: "Eliminate the grids from the decision. Remove from everything. However I
 - **Check:** Home, About, page 72, Blog, Healthcare at 1440: no grid layers, glow follows the mouse, no script errors.
 - **Next:** draft the new background as a preview Jamil can open, then finalize. F-038 answer is A, page 72 first.
 - The Novamira design-system record keeps its ID `reinforce-lab-systems-grid`; renaming it is cosmetic and left alone.
+- **Leftover sweep, 20 Oct (Jamil: "is there any traces left ... remove that"):** theme code, live HTML and every linked stylesheet on Home, About, GEO and Blog searched for `rl-grid`, `--grid*`, `grid-fine`, `grid-red` and the parallax code: none left. Only trace was the class name `ph-grid` on Home blog placeholders (now only a red wash), renamed `ph-wash`. Not grid traces: `.grid2` (two-column form layouts), the Novamira design record (its text describes the layout, only its name says grid). Open: the Home signal field (D-165) and diagnostic scan (D-167) are separate animated point fields, kept until Jamil decides.
 
 ## F-038 · Text inside hero drawings is under 12px on every page that has one
 
