@@ -41,21 +41,21 @@ function rl_seo_industries() {
    overview cites it. 10 s loop, soft fade, reset. */
 function rl_seo_svg() {
     $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlSeT"><title id="rlSeT">On a foundation of crawling, indexing and serving, four pillars (technical SEO, on-page SEO, content and authority) rise in turn; with each one your page climbs the search results until it ranks first and is cited in the AI overview.</title>';
-    $s .= '<rect class="s-b" x="0" y="300" width="250" height="28"/><rect class="s-on s-fnd" x="0" y="300" width="250" height="28"/><text class="s-ft" x="125" y="318" text-anchor="middle">CRAWL · INDEX · SERVE</text>';
+    $s .= '<rect class="s-b" x="0" y="300" width="250" height="28"/><rect class="s-on s-fnd" x="0" y="300" width="250" height="28"/><text class="s-ft" x="125" y="319" text-anchor="middle">CRAWL · INDEX · SERVE</text>';
     foreach (['TECHNICAL', 'ON-PAGE', 'CONTENT', 'AUTHORITY'] as $i => $c) {
         $x = 12 + $i * 60; $cx = $x + 20;
         $s .= '<rect class="s-col" x="' . $x . '" y="96" width="40" height="204"/><rect class="s-fill s-c' . $i . '" x="' . $x . '" y="96" width="40" height="204"/>'
-            . '<text class="s-ct" transform="translate(' . ($cx + 3.5) . ' 198) rotate(-90)" text-anchor="middle">' . $c . '</text><text class="s-ct s-cton s-t' . $i . '" transform="translate(' . ($cx + 3.5) . ' 198) rotate(-90)" text-anchor="middle">' . $c . '</text>';
+            . '<text class="s-ct" transform="translate(' . ($cx + 4.5) . ' 198) rotate(-90)" text-anchor="middle">' . $c . '</text><text class="s-ct s-cton s-t' . $i . '" transform="translate(' . ($cx + 4.5) . ' 198) rotate(-90)" text-anchor="middle">' . $c . '</text>';
     }
     $s .= '<rect class="s-b" x="0" y="64" width="250" height="28"/><rect class="s-on s-beam" x="0" y="64" width="250" height="28"/><text class="s-bt" x="125" y="82" text-anchor="middle">SEARCH AUTHORITY</text><text class="s-bt s-bton" x="125" y="82" text-anchor="middle">SEARCH AUTHORITY</text>';
     $s .= '<text class="s-lab" x="0" y="40">THE FOUR PILLARS OF SEO</text>';
-    $s .= '<rect class="s-q" x="290" y="0" width="230" height="28"/><text class="s-qt" x="302" y="18">SEO SERVICES</text><rect class="s-caret" x="392" y="9" width="2" height="11"/>';
-    $s .= '<rect class="s-ai" x="290" y="40" width="230" height="56"/><rect class="s-on s-aion" x="290" y="40" width="230" height="56"/><text class="s-lab" x="302" y="58">AI OVERVIEW</text><rect class="s-bar" x="302" y="66" width="150" height="4"/><text class="s-cite" x="302" y="86">CITED: YOUR PAGE</text>';
+    $s .= '<rect class="s-q" x="290" y="0" width="230" height="28"/><text class="s-qt" x="302" y="19">SEO SERVICES</text><rect class="s-caret" x="406" y="7" width="2" height="15"/>';
+    $s .= '<rect class="s-ai" x="290" y="40" width="230" height="56"/><rect class="s-on s-aion" x="290" y="40" width="230" height="56"/><text class="s-lab" x="302" y="58">AI OVERVIEW</text><rect class="s-bar" x="302" y="66" width="150" height="4"/><text class="s-cite" x="302" y="87">CITED: YOUR PAGE</text>';
     for ($k = 0; $k < 4; $k++) {
         $y = 108 + $k * 52;
-        $s .= '<g class="s-r s-r' . $k . '"><rect class="s-rb" x="290" y="' . $y . '" width="230" height="44"/><text class="s-rn" x="302" y="' . ($y + 17) . '">RESULT</text><rect class="s-bar" x="302" y="' . ($y + 25) . '" width="' . [150, 130, 160, 120][$k] . '" height="4"/><rect class="s-bar" x="302" y="' . ($y + 33) . '" width="96" height="4"/></g>';
+        $s .= '<g class="s-r s-r' . $k . '"><rect class="s-rb" x="290" y="' . $y . '" width="230" height="44"/><text class="s-rn" x="302" y="' . ($y + 18) . '">RESULT</text><rect class="s-bar" x="302" y="' . ($y + 25) . '" width="' . [150, 130, 160, 120][$k] . '" height="4"/><rect class="s-bar" x="302" y="' . ($y + 33) . '" width="96" height="4"/></g>';
     }
-    $s .= '<g class="s-you"><rect class="s-yb" x="290" y="316" width="230" height="44"/><text class="s-yt" x="302" y="333">YOUR PAGE</text><rect class="s-ybar" x="302" y="341" width="150" height="4"/><rect class="s-ybar" x="302" y="349" width="96" height="4"/></g>';
+    $s .= '<g class="s-you"><rect class="s-yb" x="290" y="316" width="230" height="44"/><text class="s-yt" x="302" y="334">YOUR PAGE</text><rect class="s-ybar" x="302" y="341" width="150" height="4"/><rect class="s-ybar" x="302" y="349" width="96" height="4"/></g>';
     $s .= '<text class="s-cap" x="0" y="384">BUILT ON GOOGLE’S THREE STAGES: CRAWL · INDEX · SERVE</text>';
     return $s . '</svg>';
 }
@@ -96,27 +96,27 @@ body.rl-seo-page .fl-page-content,body.rl-seo-page .fl-content,body.rl-seo-page 
 .rl-seo .s-b,.rl-seo .s-q,.rl-seo .s-ai,.rl-seo .s-rb{fill:var(--bg);stroke:rgba(243,237,230,.12);stroke-width:.8}
 .rl-seo .s-on{fill:rgba(153,0,0,.09);stroke:rgba(226,59,59,.65);stroke-width:.8;opacity:0}
 .rl-seo .s-fnd{animation-name:rlseFnd}.rl-seo .s-beam{animation-name:rlseBeam}.rl-seo .s-aion{animation-name:rlseAi}
-.rl-seo .s-ft{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.16em;fill:var(--ink-dim)}
+.rl-seo .s-ft{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
 .rl-seo .s-col{fill:rgba(255,255,255,.03);stroke:rgba(243,237,230,.1);stroke-width:.8}
 .rl-seo .s-fill{fill:rgba(194,26,26,.3);stroke:rgba(226,59,59,.6);stroke-width:.8;transform-box:fill-box;transform-origin:50% 100%;transform:scaleY(0)}
-.rl-seo .s-ct{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.18em;fill:var(--ink-faint)}
+.rl-seo .s-ct{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.1em;fill:var(--ink-faint)}
 .rl-seo .s-cton{fill:#fff;opacity:0}
-.rl-seo .s-bt{font-family:var(--f-display);font-weight:600;font-size:12px;letter-spacing:.1em;fill:var(--ink-faint)}
+.rl-seo .s-bt{font-family:var(--f-display);font-weight:600;font-size:13px;letter-spacing:.1em;fill:var(--ink-faint)}
 .rl-seo .s-bton{fill:var(--ink);opacity:0;animation-name:rlseBeam}
-.rl-seo .s-lab{font-family:var(--f-mono);font-size:8px;letter-spacing:.2em;fill:var(--ink-faint)}
-.rl-seo .s-qt{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.12em;fill:var(--ink)}
+.rl-seo .s-lab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.1em;fill:var(--ink-faint)}
+.rl-seo .s-qt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;fill:var(--ink)}
 .rl-seo .s-caret{fill:var(--red-3);animation:rlseBlink 1s steps(1) infinite}
 @keyframes rlseBlink{50%{opacity:0}}
 .rl-seo .s-bar{fill:rgba(255,255,255,.10)}
-.rl-seo .s-cite{font-family:var(--f-mono);font-size:8px;letter-spacing:.1em;fill:var(--red-3);opacity:0;animation-name:rlseCite}
-.rl-seo .s-rn{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.12em;fill:var(--ink-faint)}
+.rl-seo .s-cite{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.02em;fill:var(--red-3);opacity:0;animation-name:rlseCite}
+.rl-seo .s-rn{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;fill:var(--ink-faint)}
 .rl-seo .s-yb{fill:rgba(153,0,0,.14);stroke:var(--red-2);stroke-width:1}
-.rl-seo .s-yt{font-family:var(--f-mono);font-size:9px;letter-spacing:.12em;fill:#fff}
+.rl-seo .s-yt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;fill:#fff}
 .rl-seo .s-ybar{fill:rgba(255,255,255,.22)}
 .rl-seo .s-you{animation-name:rlseYou}
-.rl-seo .s-cap{font-family:var(--f-mono);font-size:7px;letter-spacing:.1em;fill:var(--ink-faint)}
+.rl-seo .s-cap{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.02em;fill:var(--ink-faint)}
 .rl-seo .s-on,.rl-seo .s-fill,.rl-seo .s-cton,.rl-seo .s-bton,.rl-seo .s-cite,.rl-seo .s-r,.rl-seo .s-you{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
-@media(max-width:560px){.rl-seo .s-ft{font-size:10px;letter-spacing:.04em}.rl-seo .s-ct{font-size:10.5px;letter-spacing:.06em}.rl-seo .s-bt{font-size:13px}.rl-seo .s-lab{font-size:9.5px;letter-spacing:.06em}.rl-seo .s-qt{font-size:11px;letter-spacing:.04em}.rl-seo .s-rn,.rl-seo .s-yt{font-size:10.5px;letter-spacing:.02em}.rl-seo .s-cite{font-size:9.5px;letter-spacing:0}.rl-seo .s-cap{display:none}.rl-seo .pil .cap span+span{display:none}.rl-seo .pil{padding:16px 10px 10px}}
+@media(max-width:560px){.rl-seo .pil .cap span+span{display:none}.rl-seo .pil{padding:16px 10px 10px}}
 <?php echo rl_seo_kf(); ?>
 .rl-seo .quote{margin-top:22px;border-left:2px solid var(--red-2);padding:6px 0 6px 20px;font-size:17px;color:var(--ink);max-width:70ch}
 .rl-seo .factors{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
