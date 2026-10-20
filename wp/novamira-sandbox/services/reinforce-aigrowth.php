@@ -69,7 +69,7 @@ add_shortcode('reinforce_ag_layers', function () {
     static $css = false;
     $o = '';
     if (!$css) { $css = true; $o .= '<style id="rl-agfig-css">.rl-agfig{margin:26px 0;border:1px solid var(--red-line);background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:18px 18px 12px}.rl-agfig svg{display:block;width:100%;height:auto}.rl-agfig figcaption{font-family:var(--f-mono);font-size:12px;letter-spacing:.04em;color:var(--ink-faint);margin-top:10px}'
-        . '.rl-agfig .ag-l{fill:var(--bg);stroke:var(--line-2);stroke-width:1}.rl-agfig .ag-l.ag-on{fill:rgba(153,0,0,.10);stroke:var(--red-2)}.rl-agfig .ag-n{font-family:var(--f-mono);font-size:10px;fill:var(--red-3)}.rl-agfig .ag-t{font-family:var(--f-display);font-size:20px;letter-spacing:.04em;fill:var(--ink)}.rl-agfig .ag-s{font-family:var(--f-mono);font-size:9px;letter-spacing:.12em;fill:var(--ink-faint)}.rl-agfig .ag-k{stroke:var(--line-2);stroke-width:1;stroke-dasharray:3 4}.rl-agfig .ag-loop{fill:none;stroke:var(--red-2);stroke-width:1.4}.rl-agfig .ag-o{fill:var(--bg);stroke:var(--red-line);stroke-width:1}.rl-agfig .ag-ot{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;fill:var(--ink)}.rl-agfig .ag-rule{stroke:var(--line-2);stroke-width:1}.rl-agfig .ag-ap{fill:var(--red-3)}</style>'; }
+        . '.rl-agfig .ag-l{fill:var(--bg);stroke:var(--line-2);stroke-width:1}.rl-agfig .ag-l.ag-on{fill:rgba(153,0,0,.10);stroke:var(--red-2)}.rl-agfig .ag-n{font-family:var(--f-mono);font-size:12.5px;fill:var(--red-3)}.rl-agfig .ag-t{font-family:var(--f-display);font-size:20px;letter-spacing:.04em;fill:var(--ink)}.rl-agfig .ag-s{font-family:var(--f-mono);font-size:12.5px;letter-spacing:0;fill:var(--ink-faint)}.rl-agfig .ag-k{stroke:var(--line-2);stroke-width:1;stroke-dasharray:3 4}.rl-agfig .ag-loop{fill:none;stroke:var(--red-2);stroke-width:1.4}.rl-agfig .ag-o{fill:var(--bg);stroke:var(--red-line);stroke-width:1}.rl-agfig .ag-ot{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.02em;fill:var(--ink)}.rl-agfig .ag-rule{stroke:var(--line-2);stroke-width:1}.rl-agfig .ag-ap{fill:var(--red-3)}</style>'; }
     $o .= '<figure class="rl-agfig rl-anim">' . rl_aigrowth_svg();
     if (function_exists('rl_ph')) $o .= rl_ph([['label' => 'Four layers', 'kind' => 'steps', 'items' => ['Data', 'AI models', 'Workflows', 'Dashboard']], ['label' => 'Run as', 'kind' => 'chips', 'items' => ['One loop, tuned every cycle'], 'join' => false], ['label' => 'Outcomes', 'kind' => 'chips', 'items' => [['Hours saved', 'ok'], ['Search visibility', 'ok'], ['Qualified pipeline', 'ok']]], ['label' => 'Control', 'kind' => 'chips', 'items' => ['+ People approve what matters'], 'join' => false]], '');
     return $o . '<figcaption class="cap">The four layers of an AI growth system, run as one loop.</figcaption></figure>';
@@ -87,15 +87,15 @@ body.rl-aigrowth-page .fl-page-content,body.rl-aigrowth-page .fl-content,body.rl
 .rl-aigrowth .agv svg{display:block;width:100%;height:auto}
 .rl-aigrowth .ag-l{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
 .rl-aigrowth .ag-l.ag-on{fill:rgba(153,0,0,.10);stroke:var(--red-2)}
-.rl-aigrowth .ag-n{font-family:var(--f-mono);font-size:10px;fill:var(--red-3)}
+.rl-aigrowth .ag-n{font-family:var(--f-mono);font-size:12.5px;fill:var(--red-3)}
 .rl-aigrowth .ag-t{font-family:var(--f-display);font-size:20px;letter-spacing:.04em;fill:var(--ink)}
-.rl-aigrowth .ag-s{font-family:var(--f-mono);font-size:9px;letter-spacing:.12em;fill:var(--ink-faint)}
+.rl-aigrowth .ag-s{font-family:var(--f-mono);font-size:12.5px;letter-spacing:0;fill:var(--ink-faint)}
 .rl-aigrowth .ag-k{stroke:var(--line-2);stroke-width:1;stroke-dasharray:3 4}
 .rl-aigrowth .ag-loop{fill:none;stroke:var(--red-2);stroke-width:1.4}
 .rl-aigrowth .ag-o{fill:var(--bg);stroke:var(--red-line);stroke-width:1}
 .rl-aigrowth .ag-rule{stroke:var(--line-2);stroke-width:1}
 .rl-aigrowth .ag-ap{fill:var(--red-3)}
-.rl-aigrowth .ag-ot{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;fill:var(--ink)}
+.rl-aigrowth .ag-ot{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.02em;fill:var(--ink)}
 .rl-aigrowth .lay{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0;padding:0;list-style:none}
 .rl-aigrowth .lay li{border:1px solid var(--line-2);background:var(--bg-2);padding:20px;margin:0;display:grid;gap:8px;align-content:start}
 .rl-aigrowth .lay .k{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--red-3)}
