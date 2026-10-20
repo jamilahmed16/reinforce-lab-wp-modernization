@@ -21,6 +21,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
 | D-177 | Layout shift after the lean pages: header no longer paints half-built (`rel=expect` render block until the header is parsed; menu widened 234 to 706 px mid-load, 0.011); font stand-ins tuned on measured line breaks across 57 pages and 14 real device setups (Oswald 500 to 600 at 73.4%, Plex Sans at 99.7%; the other two already best). Residual: on a first visit where a web font arrives after the first paint, some lines can still re-wrap (Lighthouse up to 0.03 to 0.05 on two pages, most pages 0 to 0.004). Jamil's rule recorded: never suggest other fonts | 12 Oct | DONE (Jamil: "A ..never suggest any other fonts") | `core/reinforce-header.php`, `core/reinforce-fonts.css` |
+| F-037 | Impeccable design audit of Home, About and page 72 (desktop and phone): 5 real issues (illustration text about 7px on phone on page 72, breaking the 12px rule; body lines 88 to 124 characters; one-word heading and paragraph endings; wide spacing on source links). Its flags on mono eyebrows, red glow and the grid background are our locked design (D-013), kept. No contrast, overflow or font failures. Report: `claude/research/impeccable/README.md` | 20 Oct | `[VERIFIED]` read-only; fixes wait for Jamil | this file |
 | D-198 | `.online` clean-up done (Jamil: "go", then "yes" for `adminwp`), through `claude/tools/cleanup-online.py`: 6 attacker admins deleted (`WordPress Support`, `reinforcelab`, `d6bvip8jhrd`, `ogbn0f5ynf`, `root`, and the hidden `adminwp`), all sessions ended; 9 planted items moved to quarantine; `wp-config.php` include line removed and 8 salts rotated; 5 planted cron tasks removed. Final check PASS: 2 admins (both Jamil's), site 200, still noindex, Novamira connected | 20 Oct | DONE | this file |
 | D-197 | Clean-up of `.online` started (Jamil: "2"): evidence saved to `/home/u256952650/quarantine-reinforcelab-online-2026-10-18/` (outside the web folder, access denied): users, usermeta, options as JSON and a copy of `wp-config.php`. Removing the attacker accounts was blocked by this session's safety check; nothing else changed. Remaining steps handed to Jamil (hPanel and wp-admin) or to a later run once he allows it | 18 Oct | DONE in D-198 | this file |
 | F-036 | Sweep of `.online` for ways back in: attacker **actively logs in** as admin `reinforcelab` (`@wp-ads.net`) on 9, 14, 15, 16 Oct from 157.22.72.125, 209.99.185.18, 84.15.184.66; `wp-config.php` line 3 loads a missing file `wp-includes/class-wp-cache.php`; 3 hidden hourly cron tasks with random names. Clean: core (3,782 files), Yoast, Jetpack, LiteSpeed match official checksums; no PHP auto-prepend; root `.htaccess` standard. The Hostinger account holds about 20 sites under one user. `default.php` is Hostinger's parked page (corrects F-035) | 18 Oct | `[VERIFIED]` read-only; nothing changed | this file |
@@ -273,6 +274,17 @@ Newest month first; within a month, entries are in the order they appear in the 
 ## Current month: October 2026
 
 ---
+
+## F-037 · Impeccable design audit (Home, About, AI Search Optimization)
+
+**Date:** 20 Oct 2026 · `[VERIFIED]` read-only, nothing changed
+
+Jamil asked whether Impeccable (open-source design skill for AI coding tools) helps, then approved an audit of 3 pages. Its scanner ran on the live pages at 1440 and 390 wide; each finding was checked against the code. Full report and raw results: `claude/research/impeccable/`.
+
+- **Fix candidates:** (1) text inside the page 72 answer illustration renders about 7px on phone, against D-139; (2) body lines run 88 to 124 characters on desktop, cap near 70ch; (3) `text-wrap: balance` on headings; (4) `text-wrap: pretty` on body text; (5) normal letter spacing on `.src` links.
+- **Kept, locked by D-013:** mono eyebrows above headings, red glow on main buttons and final panel, grid background.
+- **Passed:** contrast, overflow, fonts, no nested cards.
+- Tool not installed in the repo; impeccable.style is blocked by the container network policy, so the npm scanner and a git clone of the skill were used from scratch space.
 
 ## D-198 · .online clean-up completed
 
