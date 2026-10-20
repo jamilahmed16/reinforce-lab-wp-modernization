@@ -4,7 +4,7 @@
 Runs on .online only, through Novamira (rl.php). Never touches reinforcelab.com.
 
 Steps, run one at a time, each followed by its own check:
-  users     delete the 5 attacker admin accounts, give their content to jamilahmed (ID 3),
+  users     delete the 6 attacker admin accounts, give their content to jamilahmed (ID 3),
             then log every user out (all sessions destroyed)
   files     move the planted plugins, mu-plugin, cache file, zip and theme into quarantine
   wpconfig  remove the planted include line, rotate the 8 salts (logs everyone out again)
@@ -38,6 +38,7 @@ ROGUE = [
     (5, 'reinforcelab', 'reinforcelab@wp-ads.net'),
     (6, 'd6bvip8jhrd', 'd6bvip8jhrd@reinforcelab.online'),
     (7, 'ogbn0f5ynf', 'ogbn0f5ynf@reinforcelab.online'),
+    (8, 'adminwp', 'healthcheck@wordpress.local'),  # hidden by the planted mu-plugin, found after step 2
     (10, 'root', 'admin@wordpress.com'),
 ]
 KEEP = {1: 'jadirectives@gmail.com', 3: 'jamilahmed', 9: 'reinforcelab-team'}

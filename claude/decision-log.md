@@ -21,7 +21,8 @@ Newest month first; within a month, entries are in the order they appear in the 
 | ID | Entry | Date | Status | Where |
 |---|---|---|---|---|
 | D-177 | Layout shift after the lean pages: header no longer paints half-built (`rel=expect` render block until the header is parsed; menu widened 234 to 706 px mid-load, 0.011); font stand-ins tuned on measured line breaks across 57 pages and 14 real device setups (Oswald 500 to 600 at 73.4%, Plex Sans at 99.7%; the other two already best). Residual: on a first visit where a web font arrives after the first paint, some lines can still re-wrap (Lighthouse up to 0.03 to 0.05 on two pages, most pages 0 to 0.004). Jamil's rule recorded: never suggest other fonts | 12 Oct | DONE (Jamil: "A ..never suggest any other fonts") | `core/reinforce-header.php`, `core/reinforce-fonts.css` |
-| D-197 | Clean-up of `.online` started (Jamil: "2"): evidence saved to `/home/u256952650/quarantine-reinforcelab-online-2026-10-18/` (outside the web folder, access denied): users, usermeta, options as JSON and a copy of `wp-config.php`. Removing the attacker accounts was blocked by this session's safety check; nothing else changed. Remaining steps handed to Jamil (hPanel and wp-admin) or to a later run once he allows it | 18 Oct | IN PROGRESS | this file |
+| D-198 | `.online` clean-up done (Jamil: "go", then "yes" for `adminwp`), through `claude/tools/cleanup-online.py`: 6 attacker admins deleted (`WordPress Support`, `reinforcelab`, `d6bvip8jhrd`, `ogbn0f5ynf`, `root`, and the hidden `adminwp`), all sessions ended; 9 planted items moved to quarantine; `wp-config.php` include line removed and 8 salts rotated; 5 planted cron tasks removed. Final check PASS: 2 admins (both Jamil's), site 200, still noindex, Novamira connected | 20 Oct | DONE | this file |
+| D-197 | Clean-up of `.online` started (Jamil: "2"): evidence saved to `/home/u256952650/quarantine-reinforcelab-online-2026-10-18/` (outside the web folder, access denied): users, usermeta, options as JSON and a copy of `wp-config.php`. Removing the attacker accounts was blocked by this session's safety check; nothing else changed. Remaining steps handed to Jamil (hPanel and wp-admin) or to a later run once he allows it | 18 Oct | DONE in D-198 | this file |
 | F-036 | Sweep of `.online` for ways back in: attacker **actively logs in** as admin `reinforcelab` (`@wp-ads.net`) on 9, 14, 15, 16 Oct from 157.22.72.125, 209.99.185.18, 84.15.184.66; `wp-config.php` line 3 loads a missing file `wp-includes/class-wp-cache.php`; 3 hidden hourly cron tasks with random names. Clean: core (3,782 files), Yoast, Jetpack, LiteSpeed match official checksums; no PHP auto-prepend; root `.htaccess` standard. The Hostinger account holds about 20 sites under one user. `default.php` is Hostinger's parked page (corrects F-035) | 18 Oct | `[VERIFIED]` read-only; nothing changed | this file |
 | D-196 | Launch plan changed to a clean rebuild: fresh WordPress on new hosting, code from git, plugins from the vendors, content and settings imported as data, media images and PDFs only; nothing copied as files from the compromised Hostinger account. Step 2.1 done: data-only export of `.online` (385 records, 267 settings, 2,318 media files, 0 risky fields) | 18 Oct | APPROVED (Jamil: "Let's do this super step by step within next 24 hours"; "Yes I you can start") | `claude/tools/export-site.py`, `claude/data/site-export/`, `claude/migration-checklist.md` |
 | F-035 | **`.online` is compromised too:** 6 unknown administrator accounts (one hidden by a must-use plugin), an obfuscated fake plugin, a `default.php` in the site root (later found to be Hostinger's parked page, F-036), a PHP file in `wp-content/cache/`, a fake "Event" plugin with a 72 KB payload added 9 Oct, and a dropper zip in uploads. Earliest traces April 2026. Our own code is intact (parity 0). Nothing removed: evidence kept for the host. Corrects F-033 ("`.online` is clean") | 18 Oct | `[VERIFIED]` read-only; for Jamil and the host | this file |
@@ -272,6 +273,24 @@ Newest month first; within a month, entries are in the order they appear in the 
 ## Current month: October 2026
 
 ---
+
+## D-198 · .online clean-up completed
+
+**Date:** 20 Oct 2026 · **Approved by:** Jamil ("go" for the steps, "yes" for `adminwp`) · `[VERIFIED]`
+
+Run with `claude/tools/cleanup-online.py` (dry run by default, `--apply` to change), one step at a time, each with its own check. Jamil allowed only that script in this session's permission settings.
+
+| Step | What changed | Check |
+|---|---|---|
+| users | Deleted `WordPress Support` (4), `reinforcelab` (5), `d6bvip8jhrd` (6), `ogbn0f5ynf` (7), `root` (10). None owned posts. Every login session ended | PASS |
+| files | Moved to `quarantine.../files/wp-content/`: `mu-plugins/health-check-api.php`, plugins `lunar-profiler-ink`, `nimble-router-mod`, `onyx-store-tag`, `pulse-cache-ink`, `event`, `cache/2704f406.php`, `uploads/2026/08/ab5c7c9b.zip`, theme `wise-news` | PASS |
+| wpconfig | Removed `@include_once(__DIR__ . "/wp-includes/class-wp-cache.php");`, rotated the 8 salts. Old file kept as `wp-config.php.pre-cleanup-20261020-065401` (sha1 before c422b17, after f06033d). Parsed before the swap | PASS, Novamira still connected |
+| cron | Removed `_1sgjdxjsuyxct0tzy8`, `h072tqv7v631md8u`, `fxuh8e_9aidtaz1m`, `run_weekly_partner_astra`, `puc_cron_check_updates-hostinger-ai-assistant` | PASS, not back after page loads and a cron run |
+| users (again) | `adminwp` (8, `healthcheck@wordpress.local`, "WP Health Service", created 11 Oct). The planted mu-plugin hid it from user lists, so the first sweep missed it; it showed once the mu-plugin was moved. F-035 counted 6 admins; my step list had only 5. No code re-creates it: the only file changed in 2 days was `wp-config.php` | PASS |
+
+**Final state:** admins `jadirectives@gmail.com` and `jamilahmed`; plugin folders are only the stack plus Novamira; mu-plugins only Hostinger's two; themes `bb-theme` and `twentytwentyfive`; `blog_public` 0; home and login 200. All removed items and the database backups stay in quarantine (outside `public_html`, access denied) as evidence.
+
+**Still open (not done here):** replace premium plugins with fresh vendor copies; Jamil's hPanel steps (password, two-factor login, cron, FTP/SSH users and keys, email password); malware scan of the other sites on the shared Hostinger account; production (F-033) untouched.
 
 ## F-036 · Hidden ways back in on .online, and the shared account
 **Date:** 18 October 2026 · **Status:** `[VERIFIED]` read-only through Novamira; nothing changed (Jamil: "check .online for the hidden ways back in that I can see from inside WordPress")
