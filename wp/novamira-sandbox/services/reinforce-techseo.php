@@ -57,21 +57,21 @@ function rl_techseo_svg() {
         $s .= '<path class="t-e" d="' . $d . '"/><path class="t-p t-p2' . $i . '" pathLength="100" d="' . $d . '"/>';
     }
     $s .= '<path class="t-fixe" pathLength="100" d="M257 115 V237"/>';
-    $s .= '<rect class="t-n" x="205" y="15" width="110" height="30"/><rect class="t-lit t-lit-root" x="205" y="15" width="110" height="30"/><text class="t-tx" x="260" y="34" text-anchor="middle">HOME</text>';
+    $s .= '<rect class="t-n" x="205" y="15" width="110" height="30"/><rect class="t-lit t-lit-root" x="205" y="15" width="110" height="30"/><text class="t-tx" x="260" y="34.5" text-anchor="middle">HOME</text>';
     foreach ($T['l2'] as $i => $n) {
-        $s .= '<rect class="t-n" x="' . ($n[1] - 60) . '" y="85" width="120" height="30"/><rect class="t-lit t-l2' . $i . '" x="' . ($n[1] - 60) . '" y="85" width="120" height="30"/><text class="t-tx" x="' . $n[1] . '" y="104" text-anchor="middle">' . $n[0] . '</text>';
+        $s .= '<rect class="t-n" x="' . ($n[1] - 60) . '" y="85" width="120" height="30"/><rect class="t-lit t-l2' . $i . '" x="' . ($n[1] - 60) . '" y="85" width="120" height="30"/><text class="t-tx" x="' . $n[1] . '" y="104.5" text-anchor="middle">' . $n[0] . '</text>';
     }
     $node3 = function ($cls, $lab, $cx, $cy) {
         return '<rect class="t-n' . ($cls === 'orph' ? ' t-orph' : '') . '" x="' . ($cx - 38) . '" y="' . ($cy - 13) . '" width="76" height="26"/>'
             . '<rect class="t-lit t-' . $cls . '" x="' . ($cx - 38) . '" y="' . ($cy - 13) . '" width="76" height="26"/>'
-            . '<text class="t-tx t-sm" x="' . $cx . '" y="' . ($cy + 3.5) . '" text-anchor="middle">' . $lab . '</text>'
+            . '<text class="t-tx t-sm" x="' . $cx . '" y="' . ($cy + 4.5) . '" text-anchor="middle">' . $lab . '</text>'
             . '<rect class="t-ix t-ix' . $cls . '" x="' . ($cx + 28) . '" y="' . ($cy - 10) . '" width="6" height="6"/>';
     };
     foreach ($T['l3'] as $i => $n) $s .= $node3('l3' . $i, $n[0], $n[1], 180);
     $s .= $node3('orph', '/GUIDE', 257, 250);
     $badge = function ($k, $cx, $y, $bad, $good) {
-        return '<g class="t-bad t-bad' . $k . '"><rect x="' . ($cx - 26) . '" y="' . $y . '" width="52" height="14"/><text x="' . $cx . '" y="' . ($y + 10) . '" text-anchor="middle">' . $bad . '</text></g>'
-            . '<g class="t-good t-good' . $k . '"><rect x="' . ($cx - 26) . '" y="' . $y . '" width="52" height="14"/><text x="' . $cx . '" y="' . ($y + 10) . '" text-anchor="middle">' . $good . '</text></g>';
+        return '<g class="t-bad t-bad' . $k . '"><rect x="' . ($cx - 30) . '" y="' . $y . '" width="60" height="18"/><text x="' . $cx . '" y="' . ($y + 13.5) . '" text-anchor="middle">' . $bad . '</text></g>'
+            . '<g class="t-good t-good' . $k . '"><rect x="' . ($cx - 30) . '" y="' . $y . '" width="60" height="18"/><text x="' . $cx . '" y="' . ($y + 13.5) . '" text-anchor="middle">' . $good . '</text></g>';
     };
     $s .= '<rect class="t-warn t-warn0" x="176" y="167" width="76" height="26"/><rect class="t-warn t-warn1" x="440" y="167" width="76" height="26"/><rect class="t-warn t-warn2" x="219" y="237" width="76" height="26"/>';
     $s .= $badge(0, 214, 198, '404', '200 OK') . $badge(1, 478, 198, 'SLOW', 'FAST') . $badge(2, 331, 243, 'ORPHAN', 'LINKED');
@@ -79,8 +79,8 @@ function rl_techseo_svg() {
     $s .= '<line class="t-rule" x1="0" y1="318" x2="520" y2="318"/>';
     foreach (['CRAWLABLE', 'RENDERABLE', 'INDEXABLE', 'FAST'] as $i => $m) {
         $x = $i * 130;
-        $s .= '<rect class="t-sq" x="' . $x . '" y="340" width="10" height="10"/><rect class="t-sqon t-m' . $i . '" x="' . $x . '" y="340" width="10" height="10"/>'
-            . '<text class="t-mt" x="' . ($x + 18) . '" y="349">' . $m . '</text><text class="t-mt t-mton t-m' . $i . '" x="' . ($x + 18) . '" y="349">' . $m . '</text>';
+        $s .= '<rect class="t-sq" x="' . $x . '" y="339" width="11" height="11"/><rect class="t-sqon t-m' . $i . '" x="' . $x . '" y="339" width="11" height="11"/>'
+            . '<text class="t-mt" x="' . ($x + 18) . '" y="350">' . $m . '</text><text class="t-mt t-mton t-m' . $i . '" x="' . ($x + 18) . '" y="350">' . $m . '</text>';
     }
     return $s . '</svg>';
 }
@@ -129,20 +129,20 @@ body.rl-tseo-page .fl-page-content,body.rl-tseo-page .fl-content,body.rl-tseo-pa
 .rl-tseo .t-n{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
 .rl-tseo .t-n.t-orph{stroke:var(--ink-faint);stroke-dasharray:3 3}
 .rl-tseo .t-lit{fill:rgba(255,255,255,.03);stroke:rgba(243,237,230,.45);stroke-width:1;opacity:0}
-.rl-tseo .t-tx{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;fill:var(--ink-dim)}
-.rl-tseo .t-sm{font-size:8.5px;letter-spacing:.06em}
+.rl-tseo .t-tx{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;fill:var(--ink-dim)}
+.rl-tseo .t-sm{font-size:12.5px;letter-spacing:0}
 .rl-tseo .t-ix{fill:var(--red-2);opacity:0}
 .rl-tseo .t-warn{fill:rgba(153,0,0,.14);stroke:var(--red-3);stroke-width:1;opacity:0}
 .rl-tseo .t-bad,.rl-tseo .t-good{opacity:0}
-.rl-tseo .t-bad rect{fill:var(--red-2)}.rl-tseo .t-bad text{font-family:var(--f-mono);font-size:8px;letter-spacing:.1em;fill:#fff}
-.rl-tseo .t-good rect{fill:none;stroke:var(--ink-faint);stroke-width:1}.rl-tseo .t-good text{font-family:var(--f-mono);font-size:8px;letter-spacing:.1em;fill:var(--ink)}
-.rl-tseo .t-ph{font-family:var(--f-mono);font-size:9px;letter-spacing:.2em;fill:var(--red-3);opacity:0}
+.rl-tseo .t-bad rect{fill:var(--red-2)}.rl-tseo .t-bad text{font-family:var(--f-mono);font-size:12.5px;letter-spacing:0;fill:#fff}
+.rl-tseo .t-good rect{fill:none;stroke:var(--ink-faint);stroke-width:1}.rl-tseo .t-good text{font-family:var(--f-mono);font-size:12.5px;letter-spacing:0;fill:var(--ink)}
+.rl-tseo .t-ph{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.1em;fill:var(--red-3);opacity:0}
 .rl-tseo .t-rule{stroke:var(--line-2);stroke-width:1}
 .rl-tseo .t-sq{fill:none;stroke:var(--line-2);stroke-width:1}.rl-tseo .t-sqon{fill:var(--red-2);opacity:0}
-.rl-tseo .t-mt{font-family:var(--f-mono);font-size:9px;letter-spacing:.14em;fill:var(--ink-faint)}.rl-tseo .t-mton{fill:var(--ink);opacity:0}
+.rl-tseo .t-mt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.02em;fill:var(--ink-faint)}.rl-tseo .t-mton{fill:var(--ink);opacity:0}
 .rl-tseo .t-lit,.rl-tseo .t-p,.rl-tseo .t-fixe,.rl-tseo .t-n.t-orph,.rl-tseo .t-ix,.rl-tseo .t-warn,.rl-tseo .t-bad,.rl-tseo .t-good,.rl-tseo .t-ph,.rl-tseo .t-sqon,.rl-tseo .t-mton{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
 .rl-tseo .t-p{animation-timing-function:ease-in-out}
-@media(max-width:560px){.rl-tseo .t-tx{font-size:11px;letter-spacing:.04em}.rl-tseo .t-sm{font-size:10px;letter-spacing:0}.rl-tseo .t-bad text,.rl-tseo .t-good text{font-size:9.5px;letter-spacing:0}.rl-tseo .t-ph{font-size:10.5px;letter-spacing:.08em}.rl-tseo .t-mt{font-size:10.5px;letter-spacing:.02em}.rl-tseo .crawl .cap span+span{display:none}.rl-tseo .crawl{padding:16px 10px 10px}}
+@media(max-width:560px){.rl-tseo .crawl .cap span+span{display:none}.rl-tseo .crawl{padding:16px 10px 10px}}
 <?php echo rl_techseo_kf(); ?>
 /* four stages */
 .rl-tseo .stages{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:s}
