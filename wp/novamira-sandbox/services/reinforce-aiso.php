@@ -53,37 +53,37 @@ function rl_aiso_industries() {
    Engine tabs step every 10 s (40 s cycle). */
 function rl_aiso_svg() {
     $s = '<svg viewBox="0 0 520 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rlAiT"><title id="rlAiT">A buyer asks an AI search engine a question; the answer cites your brand as source one (crawlable, structured and verified) and the brand is mentioned, cited and described accurately.</title>'
-        . '<defs><clipPath id="rlaiType"><rect class="ai-typ" x="16" y="52" width="352" height="24"/></clipPath></defs>';
+        . '<defs><clipPath id="rlaiType"><rect class="ai-typ" x="16" y="52" width="384" height="24"/></clipPath></defs>';
     $tabs = ['CHATGPT', 'PERPLEXITY', 'GEMINI', 'AI OVERVIEWS'];
-    foreach ($tabs as $i => $t) $s .= '<text class="ai-tab" x="' . (4 + $i * 128) . '" y="16">' . $t . '</text><text class="ai-tab ai-tab-on ai-tab' . $i . '" x="' . (4 + $i * 128) . '" y="16">' . $t . '</text>';
+    foreach ($tabs as $i => $t) $s .= '<text class="ai-tab" x="' . (4 + $i * 128) . '" y="17">' . $t . '</text><text class="ai-tab ai-tab-on ai-tab' . $i . '" x="' . (4 + $i * 128) . '" y="17">' . $t . '</text>';
     $s .= '<line class="ai-rule" x1="0" y1="26" x2="520" y2="26"/><rect class="ai-ul" x="4" y="25" width="92" height="2"/>';
     $s .= '<rect class="ai-box" x="0" y="42" width="520" height="42"/>'
-        . '<text class="ai-q" x="16" y="67" clip-path="url(#rlaiType)">WHO ARE THE MOST TRUSTED PROVIDERS IN OUR CATEGORY?</text><rect class="ai-caret" x="16" y="58" width="2" height="12"/>';
+        . '<text class="ai-q" x="16" y="67" clip-path="url(#rlaiType)">WHO ARE THE MOST TRUSTED PROVIDERS IN OUR CATEGORY?</text><rect class="ai-caret" x="16" y="56" width="2" height="15"/>';
     $s .= '<text class="ai-pl" x="0" y="110">AI ANSWER</text>';
     $w = [470, 430, 452, 300];
     foreach ($w as $i => $ww) $s .= '<rect class="ai-ln ai-ln' . $i . '" x="0" y="' . (122 + $i * 16) . '" width="' . $ww . '" height="5"/>';
-    $s .= '<g class="ai-mk ai-mk1"><rect class="ai-mkb" x="476" y="118" width="16" height="13"/><text class="ai-mkt" x="484" y="128" text-anchor="middle">1</text></g>'
-        . '<g class="ai-mk ai-mk2"><rect class="ai-mkb" x="436" y="134" width="16" height="13"/><text class="ai-mkt" x="444" y="144" text-anchor="middle">2</text></g>'
-        . '<g class="ai-mk ai-mk3"><rect class="ai-mkb" x="306" y="166" width="16" height="13"/><text class="ai-mkt" x="314" y="176" text-anchor="middle">3</text></g>'
-        . '<rect class="ai-mkon" x="476" y="118" width="16" height="13"/><text class="ai-mkton" x="484" y="128" text-anchor="middle">1</text>';
+    $s .= '<g class="ai-mk ai-mk1"><rect class="ai-mkb" x="476" y="115" width="18" height="17"/><text class="ai-mkt" x="485" y="128" text-anchor="middle">1</text></g>'
+        . '<g class="ai-mk ai-mk2"><rect class="ai-mkb" x="436" y="131" width="18" height="17"/><text class="ai-mkt" x="445" y="144" text-anchor="middle">2</text></g>'
+        . '<g class="ai-mk ai-mk3"><rect class="ai-mkb" x="306" y="163" width="18" height="17"/><text class="ai-mkt" x="315" y="176" text-anchor="middle">3</text></g>'
+        . '<rect class="ai-mkon" x="476" y="115" width="18" height="17"/><text class="ai-mkton" x="485" y="128" text-anchor="middle">1</text>';
     $s .= '<text class="ai-pl" x="0" y="210">SOURCES</text>';
     $cards = [['1', 'YOUR BRAND'], ['2', 'SOURCE'], ['3', 'SOURCE']];
     foreach ($cards as $i => $c) {
         $x = $i * 176;
-        $s .= '<g class="ai-src ai-src' . $i . '"><rect class="ai-card" x="' . $x . '" y="218" width="168" height="96"/><text class="ai-cn" x="' . ($x + 12) . '" y="238">[' . $c[0] . ']</text><text class="ai-ct" x="' . ($x + 36) . '" y="238">' . $c[1] . '</text>'
-            . '<rect class="ai-cl" x="' . ($x + 12) . '" y="252" width="' . ($i ? 110 : 120) . '" height="4"/><rect class="ai-cl" x="' . ($x + 12) . '" y="262" width="' . ($i ? 80 : 96) . '" height="4"/></g>';
+        $s .= '<g class="ai-src ai-src' . $i . '"><rect class="ai-card" x="' . $x . '" y="218" width="168" height="104"/><text class="ai-cn" x="' . ($x + 12) . '" y="240">[' . $c[0] . ']</text><text class="ai-ct" x="' . ($x + 40) . '" y="240">' . $c[1] . '</text>'
+            . '<rect class="ai-cl" x="' . ($x + 12) . '" y="250" width="' . ($i ? 110 : 120) . '" height="4"/><rect class="ai-cl" x="' . ($x + 12) . '" y="258" width="' . ($i ? 80 : 96) . '" height="4"/></g>';
     }
-    $s .= '<rect class="ai-cardon" x="0" y="218" width="168" height="96"/><text class="ai-cton" x="36" y="238">YOUR BRAND</text>'
-        . '<path class="ai-e" d="M484 131 V196 Q484 204 476 204 H92 Q84 204 84 212 V218"/><path class="ai-p" pathLength="100" d="M484 131 V196 Q484 204 476 204 H92 Q84 204 84 212 V218"/>';
+    $s .= '<rect class="ai-cardon" x="0" y="218" width="168" height="104"/><text class="ai-cton" x="40" y="240">YOUR BRAND</text>'
+        . '<path class="ai-e" d="M485 132 V196 Q485 204 477 204 H92 Q84 204 84 212 V218"/><path class="ai-p" pathLength="100" d="M485 132 V196 Q485 204 477 204 H92 Q84 204 84 212 V218"/>';
     foreach (['CRAWLABLE', 'STRUCTURED', 'VERIFIED'] as $i => $c) {
-        $y = 282 + $i * 12;
+        $y = 280 + $i * 15;
         $s .= '<text class="ai-ck ai-ck' . $i . '" x="12" y="' . $y . '">+ ' . $c . '</text>';
     }
-    $s .= '<line class="ai-rule" x1="0" y1="338" x2="520" y2="338"/>';
+    $s .= '<line class="ai-rule" x1="0" y1="340" x2="520" y2="340"/>';
     foreach (['MENTIONED', 'CITED', 'DESCRIBED ACCURATELY'] as $i => $m) {
         $x = [0, 150, 290][$i];
-        $s .= '<rect class="ai-sq" x="' . $x . '" y="356" width="10" height="10"/><rect class="ai-sqon ai-m' . $i . '" x="' . $x . '" y="356" width="10" height="10"/>'
-            . '<text class="ai-mt" x="' . ($x + 18) . '" y="365">' . $m . '</text><text class="ai-mt ai-mton ai-m' . $i . '" x="' . ($x + 18) . '" y="365">' . $m . '</text>';
+        $s .= '<rect class="ai-sq" x="' . $x . '" y="358" width="11" height="11"/><rect class="ai-sqon ai-m' . $i . '" x="' . $x . '" y="358" width="11" height="11"/>'
+            . '<text class="ai-mt" x="' . ($x + 18) . '" y="368">' . $m . '</text><text class="ai-mt ai-mton ai-m' . $i . '" x="' . ($x + 18) . '" y="368">' . $m . '</text>';
     }
     return $s . '</svg>';
 }
@@ -91,7 +91,7 @@ function rl_aiso_kf() {
     $lit = function ($n, $s, $r) { return "@keyframes $n{0%,{$s}%{opacity:0}{$r}%,92%{opacity:1}97%,100%{opacity:0}}\n"; };
     $k = "@keyframes rlaiType{0%,2%{transform:scaleX(0)}14%,92%{transform:scaleX(1)}97%,100%{transform:scaleX(1);opacity:0}}\n"
         . "@keyframes rlaiQ{0%,92%{opacity:1}97%,100%{opacity:0}}\n"
-        . "@keyframes rlaiCaret{0%,2%{transform:translateX(0);opacity:1}14%{transform:translateX(350px);opacity:1}15%,100%{transform:translateX(350px);opacity:0}}\n"
+        . "@keyframes rlaiCaret{0%,2%{transform:translateX(0);opacity:1}14%{transform:translateX(378px);opacity:1}15%,100%{transform:translateX(378px);opacity:0}}\n"
         . "@keyframes rlaiP{0%,50%{stroke-dashoffset:10;opacity:0}51%{opacity:1}57%{opacity:1}58%,100%{stroke-dashoffset:-100;opacity:0}}\n"
         . "@keyframes rlaiTabs{0%,23%{transform:translateX(0)}25%,48%{transform:translateX(128px)}50%,73%{transform:translateX(256px)}75%,98%{transform:translateX(384px)}100%{transform:translateX(0)}}\n";
     foreach ([0, 1, 2, 3] as $i) {
@@ -122,36 +122,38 @@ body.rl-aiso-page .fl-page-content,body.rl-aiso-page .fl-content,body.rl-aiso-pa
 .rl-aiso .ans .cap{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
 .rl-aiso .ans .cap span{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
 .rl-aiso .ans svg{display:block;width:100%;height:auto;overflow:visible}
-.rl-aiso .ai-tab{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;fill:var(--ink-faint)}
+.rl-aiso .ans{container-type:inline-size}
+@container (max-width:499.9px){.rl-aiso .ans>svg{display:none!important}.rl-aiso .ans>.rl-ph{display:block!important;width:100%}}
+.rl-aiso .ai-tab{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;fill:var(--ink-faint)}
 .rl-aiso .ai-tab-on{fill:var(--ink);opacity:0}
 .rl-aiso .ai-rule{stroke:var(--line-2);stroke-width:1}
 .rl-aiso .ai-ul{fill:var(--red-2);animation:rlaiTabs 40s cubic-bezier(.45,0,.2,1) infinite both}
 .rl-aiso .ai-box{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
-.rl-aiso .ai-pl{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.2em;fill:var(--ink-faint)}
-.rl-aiso .ai-q{font-family:var(--f-mono);font-size:10px;letter-spacing:.06em;fill:var(--ink);animation:rlaiQ 10s linear infinite both}
+.rl-aiso .ai-pl{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.12em;fill:var(--ink-faint)}
+.rl-aiso .ai-q{font-family:var(--f-mono);font-size:12.5px;letter-spacing:0;fill:var(--ink);animation:rlaiQ 10s linear infinite both}
 .rl-aiso .ai-typ{transform-box:fill-box;transform-origin:0 50%;animation:rlaiType 10s steps(40,end) infinite both}
 .rl-aiso .ai-caret{fill:var(--red-3);animation:rlaiCaret 10s linear infinite both}
 .rl-aiso .ai-ln{fill:rgba(255,255,255,.12);transform-box:fill-box;transform-origin:0 50%;transform:scaleX(0)}
 .rl-aiso .ai-mkb{fill:none;stroke:var(--line-2);stroke-width:1}
-.rl-aiso .ai-mkt{font-family:var(--f-mono);font-size:8.5px;fill:var(--ink-dim)}
+.rl-aiso .ai-mkt{font-family:var(--f-mono);font-size:12.5px;fill:var(--ink-dim)}
 .rl-aiso .ai-mk,.rl-aiso .ai-src,.rl-aiso .ai-ck{opacity:0}
 .rl-aiso .ai-mkon{fill:var(--red-2);opacity:0;animation-name:rlaiOn}
-.rl-aiso .ai-mkton{font-family:var(--f-mono);font-size:8.5px;fill:#fff;opacity:0;animation-name:rlaiOn}
+.rl-aiso .ai-mkton{font-family:var(--f-mono);font-size:12.5px;fill:#fff;opacity:0;animation-name:rlaiOn}
 .rl-aiso .ai-card{fill:var(--bg);stroke:var(--line-2);stroke-width:1}
 .rl-aiso .ai-cardon{fill:rgba(153,0,0,.10);stroke:var(--red-2);stroke-width:1;opacity:0;animation-name:rlaiCard}
-.rl-aiso .ai-cn{font-family:var(--f-mono);font-size:9px;fill:var(--red-3)}
-.rl-aiso .ai-ct{font-family:var(--f-mono);font-size:9px;letter-spacing:.12em;fill:var(--ink-dim)}
-.rl-aiso .ai-cton{font-family:var(--f-mono);font-size:9px;letter-spacing:.12em;fill:#fff;opacity:0;animation-name:rlaiCard}
+.rl-aiso .ai-cn{font-family:var(--f-mono);font-size:12.5px;fill:var(--red-3)}
+.rl-aiso .ai-ct{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;fill:var(--ink-dim)}
+.rl-aiso .ai-cton{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;fill:#fff;opacity:0;animation-name:rlaiCard}
 .rl-aiso .ai-cl{fill:rgba(255,255,255,.08)}
-.rl-aiso .ai-ck{font-family:var(--f-mono);font-size:8.5px;letter-spacing:.12em;fill:var(--red-3)}
+.rl-aiso .ai-ck{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;fill:var(--red-3)}
 .rl-aiso .ai-e{fill:none;stroke:var(--line-2);stroke-width:1;stroke-dasharray:3 4}
 .rl-aiso .ai-p{fill:none;stroke:var(--red-3);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:10 100;stroke-dashoffset:10;opacity:0;animation:rlaiP 10s ease-in-out infinite both}
 .rl-aiso .ai-sq{fill:none;stroke:var(--line-2);stroke-width:1}
 .rl-aiso .ai-sqon{fill:var(--red-2);opacity:0}
-.rl-aiso .ai-mt{font-family:var(--f-mono);font-size:9px;letter-spacing:.14em;fill:var(--ink-faint)}
+.rl-aiso .ai-mt{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;fill:var(--ink-faint)}
 .rl-aiso .ai-mton{fill:var(--ink);opacity:0}
 .rl-aiso .ai-ln,.rl-aiso .ai-mk,.rl-aiso .ai-mkon,.rl-aiso .ai-mkton,.rl-aiso .ai-src,.rl-aiso .ai-cardon,.rl-aiso .ai-cton,.rl-aiso .ai-ck,.rl-aiso .ai-sqon,.rl-aiso .ai-mton{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1);animation-fill-mode:both}
-@media(max-width:560px){.rl-aiso .ai-tab{font-size:11px;letter-spacing:.02em}.rl-aiso .ai-q{font-size:10.5px;letter-spacing:0}.rl-aiso .ai-ct,.rl-aiso .ai-cton,.rl-aiso .ai-cn{font-size:11px;letter-spacing:.02em}.rl-aiso .ai-ck{font-size:10px;letter-spacing:.02em}.rl-aiso .ai-mt{font-size:11px;letter-spacing:.02em}.rl-aiso .ai-pl{font-size:10px}.rl-aiso .ans .cap span+span{display:none}.rl-aiso .ans{padding:16px 10px 10px}}
+@media(max-width:560px){.rl-aiso .ans .cap span+span{display:none}.rl-aiso .ans{padding:16px 10px 10px}}
 <?php echo rl_aiso_kf(); ?>
 .rl-aiso .note{max-width:60ch;margin:28px 0 0;color:var(--ink-dim);font-size:16px;line-height:1.65}
 /* byline */

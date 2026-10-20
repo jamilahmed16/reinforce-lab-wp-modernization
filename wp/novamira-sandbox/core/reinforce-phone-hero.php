@@ -41,6 +41,7 @@ add_action('wp_head', function () {
 .rl-ph{font-family:var(--f-mono);text-align:left}
 .rl-ph .ph-l{font-size:12px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase;margin:0 0 8px}
 .rl-ph ul{list-style:none;margin:0;padding:0}
+.rl-ph .ph-g+.ph-g{margin-top:16px}
 .rl-ph .ph-i{border:1px solid rgba(243,237,230,.16);background:var(--bg);color:var(--ink);font-size:12.5px;line-height:1.35;letter-spacing:.04em;text-transform:uppercase;padding:8px 10px;margin:0}
 .rl-ph .ph-chips{display:flex;flex-wrap:wrap;gap:6px}
 .rl-ph .ph-rows{display:grid;gap:6px}
