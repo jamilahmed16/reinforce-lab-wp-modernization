@@ -152,7 +152,7 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .pmeta{font-family:var(--f-mono);font-size:12px;color:var(--red-3);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
 .rl-home .pcard{padding:0;overflow:hidden;display:flex;flex-direction:column}
 .rl-home .pcard .pthumb{aspect-ratio:16/9;width:100%;background-size:cover;background-position:center;background-color:#0f0c0d;border-bottom:1px solid var(--red-line);position:relative}
-.rl-home .pcard .pthumb.ph-grid{background-image:linear-gradient(var(--grid-fine) 1px,transparent 1px),linear-gradient(90deg,var(--grid-fine) 1px,transparent 1px),radial-gradient(120% 130% at 100% 0%,rgba(153,0,0,.42),transparent 62%);background-size:20px 20px,20px 20px,100% 100%}
+.rl-home .pcard .pthumb.ph-grid{background-image:radial-gradient(120% 130% at 100% 0%,rgba(153,0,0,.42),transparent 62%)}
 .rl-home .pcard .pthumb .ptag{position:absolute;left:16px;bottom:12px;font-family:var(--f-display);text-transform:uppercase;font-size:clamp(20px,2.4vw,30px);font-weight:700;color:rgba(255,255,255,.92);letter-spacing:.01em;text-shadow:0 2px 20px rgba(0,0,0,.6)}
 .rl-home .pcard .pbody{padding:24px}
 /* outcomes */

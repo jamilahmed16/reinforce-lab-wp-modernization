@@ -107,14 +107,12 @@ function rl_header_css() { ?>
   --red:#990000;--red-2:#c11414;--red-3:#e85050;--red-glow:rgba(180,20,20,.55);--red-line:rgba(153,0,0,.50);
   --ink:#f3ede6;--ink-dim:#bcb2a9;--ink-faint:#8f857d;
   --glass:rgba(30,23,25,.45);--glass-2:rgba(44,30,33,.55);--glass-line:rgba(255,255,255,.08);--glass-hi:rgba(255,255,255,.14);
-  --grid:rgba(243,237,230,.035);--grid-red:rgba(180,20,20,.06);--grid-fine:rgba(243,237,230,.014);--grid-red2:rgba(200,30,30,.035);
+  
   --maxw:1440px;--gutter:clamp(16px,4vw,64px);
   --f-display:'Oswald','Oswald Fallback',sans-serif;--f-body:'IBM Plex Sans','Plex Sans Fallback',system-ui,sans-serif;--f-mono:'IBM Plex Mono',ui-monospace,monospace;
 }
 /* dark base (design system D-018) */
 body.rl-dark{background:var(--bg);color:var(--ink);font-family:var(--f-body)}
-body.rl-dark #rl-grid{position:fixed;inset:-18%;z-index:0;pointer-events:none;will-change:transform;background-image:linear-gradient(var(--grid-fine) 1px,transparent 1px),linear-gradient(90deg,var(--grid-fine) 1px,transparent 1px),linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px),linear-gradient(var(--grid-red) 1px,transparent 1px),linear-gradient(90deg,var(--grid-red) 1px,transparent 1px);background-size:22px 22px,22px 22px,66px 66px,66px 66px,330px 330px,330px 330px;background-position:center top}
-body.rl-dark #rl-grid2{position:fixed;inset:-22%;z-index:-1;pointer-events:none;will-change:transform;opacity:.28;background-image:linear-gradient(var(--grid-red2) 1px,transparent 1px),linear-gradient(90deg,var(--grid-red2) 1px,transparent 1px),radial-gradient(120% 90% at 80% -10%,rgba(153,0,0,.14),transparent 55%);background-size:132px 132px,132px 132px,100% 100%;background-position:center top}
 body.rl-dark #rl-glow{position:fixed;left:0;top:0;width:450px;height:450px;transform:translate(-50%,-50%);border-radius:50%;pointer-events:none;z-index:1;mix-blend-mode:screen;opacity:0;transition:opacity .35s;background:radial-gradient(circle,rgba(200,32,32,.16),rgba(200,32,32,.055) 32%,transparent 58%)}
 @media(prefers-reduced-motion:reduce){body.rl-dark #rl-glow{display:none}}
 /* hide the default bb-theme header (we render our own) */
@@ -305,7 +303,7 @@ add_action('fl_before_post_content', function () {
 }, 1);
 
 add_action('wp_body_open', function () {
-    echo '<div id="rl-grid2" aria-hidden="true"></div><div id="rl-grid" aria-hidden="true"></div><div id="rl-glow" aria-hidden="true"></div>';
+    echo '<div id="rl-glow" aria-hidden="true"></div>'; /* grid background removed (D-200) */
     echo do_shortcode('[reinforce_header]');
 }, 5);
 
@@ -531,7 +529,7 @@ set();if(m.addEventListener)m.addEventListener('change',set);})();
     return ob_get_clean();
 }
 
-/* ---------- JS: parallax grid + cursor glow + mobile toggle ---------- */
+/* ---------- JS: cursor glow + mobile toggle ---------- */
 add_action('wp_footer', 'rl_header_js', 30);
 function rl_header_js() { ?>
 <script>
@@ -541,18 +539,14 @@ function rl_header_js() { ?>
   var hd=document.querySelector('.rl-header'),slim=false;
   function hdSlim(){var y=scrollY||0;if(!slim&&y>80){slim=true;hd.classList.add('slim');}else if(slim&&y<40){slim=false;hd.classList.remove('slim');}}
   if(hd){addEventListener('scroll',hdSlim,{passive:true});} /* no check at load: reading scrollY then forced an early layout (D-173); a page restored mid-way fires a scroll event, which sets it */
-  var grid=document.getElementById('rl-grid'),grid2=document.getElementById('rl-grid2'),glow=document.getElementById('rl-glow');
-  var sy=0,mx=.5,my=.5,cx=null,cy=null,gx=null,gy=null,tmx=.5,tmy=.5,raf=false; /* glow position starts at the first mouse move: reading the window size during load forced an early layout (D-173) */
+  var glow=document.getElementById('rl-glow');
+  var cx=null,cy=null,gx=null,gy=null,raf=false; /* glow position starts at the first mouse move: reading the window size during load forced an early layout (D-173) */
   function apply(){
-    // ease mouse tilt for smoothness
-    mx+=(tmx-mx)*.10; my+=(tmy-my)*.10;
-    if(grid){var px=(mx-.5)*42,py=(my-.5)*42+sy*0.14;grid.style.transform='translate3d('+px.toFixed(1)+'px,'+py.toFixed(1)+'px,0)';}
-    if(grid2){var px2=(mx-.5)*78,py2=(my-.5)*78+sy*0.28;grid2.style.transform='translate3d('+px2.toFixed(1)+'px,'+py2.toFixed(1)+'px,0)';}
     if(glow&&gx!==null){gx+=(cx-gx)*.18;gy+=(cy-gy)*.18;glow.style.transform='translate('+gx.toFixed(1)+'px,'+gy.toFixed(1)+'px) translate(-50%,-50%)';}
-    if(Math.abs(gx-cx)>.5||Math.abs(gy-cy)>.5||Math.abs(tmx-mx)>.002||Math.abs(tmy-my)>.002){requestAnimationFrame(apply);}else{raf=false;}
+    if(Math.abs(gx-cx)>.5||Math.abs(gy-cy)>.5){requestAnimationFrame(apply);}else{raf=false;}
   }
   function kick(){if(!raf){raf=true;requestAnimationFrame(apply);}}
-  if(!reduce&&(grid||glow)){addEventListener('scroll',function(){sy=scrollY||0;kick();},{passive:true});addEventListener('mousemove',function(e){tmx=e.clientX/innerWidth;tmy=e.clientY/innerHeight;cx=e.clientX;cy=e.clientY;if(gx===null){gx=cx;gy=cy;}if(glow)glow.style.opacity=1;kick();},{passive:true});addEventListener('mouseleave',function(){if(glow)glow.style.opacity=0;});}
+  if(!reduce&&glow){addEventListener('mousemove',function(e){cx=e.clientX;cy=e.clientY;if(gx===null){gx=cx;gy=cy;}if(glow)glow.style.opacity=1;kick();},{passive:true});addEventListener('mouseleave',function(){if(glow)glow.style.opacity=0;});}
   // pause hero animations when off-screen (D-039)
   var an=document.querySelectorAll('.rl-anim');
   if(an.length&&'IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('is-paused',!e.isIntersecting);});},{rootMargin:'80px'});an.forEach(function(el){io.observe(el);});}

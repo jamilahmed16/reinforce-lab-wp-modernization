@@ -22,6 +22,7 @@ Newest month first; within a month, entries are in the order they appear in the 
 |---|---|---|---|---|
 | D-177 | Layout shift after the lean pages: header no longer paints half-built (`rel=expect` render block until the header is parsed; menu widened 234 to 706 px mid-load, 0.011); font stand-ins tuned on measured line breaks across 57 pages and 14 real device setups (Oswald 500 to 600 at 73.4%, Plex Sans at 99.7%; the other two already best). Residual: on a first visit where a web font arrives after the first paint, some lines can still re-wrap (Lighthouse up to 0.03 to 0.05 on two pages, most pages 0 to 0.004). Jamil's rule recorded: never suggest other fonts | 12 Oct | DONE (Jamil: "A ..never suggest any other fonts") | `core/reinforce-header.php`, `core/reinforce-fonts.css` |
 | F-038 | Hero drawings break the 12px rule on every page that has one (about 25 service and industry pages, D-139): the text inside the drawings shows at 7.8 to 9.5px on a 1440 screen, about 5px on a 1024 tablet (two-column hero), about 7px at 600 wide. The phone version (under 560px) is readable HTML and passes. Earlier audits (D-138, D-140) measured HTML text only and missed text inside drawings | 20 Oct | `[VERIFIED]` measured; fix waits for Jamil | this file |
+| D-200 | **Grid background removed site-wide (amends D-013, Jamil: "Eliminate the grids from the decision. Remove from everything")**: the two fixed grid layers and their scroll and mouse motion are gone from `core/reinforce-header.php`, the grid on Home blog card placeholders too. Mouse glow kept. A new background is to be drafted from Jamil's reference (Command Code: framed columns, corner marks, tiles) and approved before it goes live. Answer A for F-038: page 72 drawing first | 20 Oct | DONE (removal); draft next | this file |
 | D-199 | F-037 fixes 2 to 5 live: body paragraphs capped at 60 to 65ch (FAQ, honest box, About founder, story and register, page 72 note and next step), `text-wrap: balance` on Home headings, `text-wrap: pretty` on body text site-wide (kit, Home, footer intro, About credentials), source links at 0.02em spacing. Re-scan: line-length, wide-tracking and unbalanced-heading 0 on all 3 pages; one-word endings 45 down to 1. Phone width 390 on 6 pages. Fix 1 (drawing text) became F-038 | 20 Oct | DONE | this file |
 | F-037 | Impeccable design audit of Home, About and page 72 (desktop and phone): 5 real issues (illustration text about 7px on phone on page 72, breaking the 12px rule; body lines 88 to 124 characters; one-word heading and paragraph endings; wide spacing on source links). Its flags on mono eyebrows, red glow and the grid background are our locked design (D-013), kept. No contrast, overflow or font failures. Report: `claude/research/impeccable/README.md` | 20 Oct | fixes 2 to 5 done (D-199); fix 1 is F-038 | this file |
 | D-198 | `.online` clean-up done (Jamil: "go", then "yes" for `adminwp`), through `claude/tools/cleanup-online.py`: 6 attacker admins deleted (`WordPress Support`, `reinforcelab`, `d6bvip8jhrd`, `ogbn0f5ynf`, `root`, and the hidden `adminwp`), all sessions ended; 9 planted items moved to quarantine; `wp-config.php` include line removed and 8 salts rotated; 5 planted cron tasks removed. Final check PASS: 2 admins (both Jamil's), site 200, still noindex, Novamira connected | 20 Oct | DONE | this file |
@@ -277,6 +278,19 @@ Newest month first; within a month, entries are in the order they appear in the 
 
 ---
 
+## D-200 · Grid background removed; new background to be drafted
+
+**Date:** 20 Oct 2026 · **Approved by:** Jamil · `[VERIFIED]`
+
+Jamil: "Eliminate the grids from the decision. Remove from everything. However I want some background things like grids ... organized in different way to look more tech savvy and modern with stunning scrolling effects. We will create a draft version of that and then finalize." Reference: five phone screenshots of commandcode.ai (framed page with dashed column rails, small square corner marks where sections meet, dashed cell dividers, textured tiles in the hero, logo wall in ruled cells).
+
+- **D-013 amended:** the "systems grid" background is no longer part of the design system. Everything else in D-013 stands.
+- **Removed:** `#rl-grid` and `#rl-grid2` (markup, CSS, the `--grid*` colour tokens, the scroll and mouse parallax code) from `core/reinforce-header.php`; the 20px grid on Home blog card placeholders (`.ph-grid`, red wash kept).
+- **Kept:** the mouse glow (`#rl-glow`), off for people who turn off motion.
+- **Check:** Home, About, page 72, Blog, Healthcare at 1440: no grid layers, glow follows the mouse, no script errors.
+- **Next:** draft the new background as a preview Jamil can open, then finalize. F-038 answer is A, page 72 first.
+- The Novamira design-system record keeps its ID `reinforce-lab-systems-grid`; renaming it is cosmetic and left alone.
+
 ## F-038 · Text inside hero drawings is under 12px on every page that has one
 
 **Date:** 20 Oct 2026 · `[VERIFIED]` measured in Chromium, nothing changed
@@ -291,7 +305,7 @@ Found while fixing F-037 item 1. The hero drawings are SVG, so their text scales
 | 600 | 510px | 6.9 to 8.3px |
 | under 560 | readable HTML version (`rl_ph`) | passes |
 
-Breaks D-139 (nothing under 12px). The D-138 and D-140 audits checked HTML text only. Options for Jamil: (A) show the readable HTML version whenever the drawing would be narrow and redraw the drawing text to at least 12px at full size, page 72 first as a pilot, then the other pages one at a time; (B) treat drawing labels as decoration and exempt them from D-139. Recommendation: A.
+Breaks D-139 (nothing under 12px). Jamil chose A on 20 Oct (D-200). The D-138 and D-140 audits checked HTML text only. Options for Jamil: (A) show the readable HTML version whenever the drawing would be narrow and redraw the drawing text to at least 12px at full size, page 72 first as a pilot, then the other pages one at a time; (B) treat drawing labels as decoration and exempt them from D-139. Recommendation: A.
 
 ## D-199 · Line length and wrapping fixes (F-037 items 2 to 5)
 
