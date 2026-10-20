@@ -65,7 +65,7 @@ function rl_techseo_svg() {
         return '<rect class="t-n' . ($cls === 'orph' ? ' t-orph' : '') . '" x="' . ($cx - 38) . '" y="' . ($cy - 13) . '" width="76" height="26"/>'
             . '<rect class="t-lit t-' . $cls . '" x="' . ($cx - 38) . '" y="' . ($cy - 13) . '" width="76" height="26"/>'
             . '<text class="t-tx t-sm" x="' . $cx . '" y="' . ($cy + 4.5) . '" text-anchor="middle">' . $lab . '</text>'
-            . '<rect class="t-ix t-ix' . $cls . '" x="' . ($cx + 28) . '" y="' . ($cy - 10) . '" width="6" height="6"/>';
+            . '<rect class="t-ix t-ix' . $cls . '" x="' . ($cx + 30) . '" y="' . ($cy - 11) . '" width="6" height="6"/>';
     };
     foreach ($T['l3'] as $i => $n) $s .= $node3('l3' . $i, $n[0], $n[1], 180);
     $s .= $node3('orph', '/GUIDE', 257, 250);
