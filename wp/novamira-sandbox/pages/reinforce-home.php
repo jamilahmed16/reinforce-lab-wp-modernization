@@ -96,7 +96,7 @@ add_action('wp_head', 'rl_home_css', 22);
 function rl_home_css() {
     if (!is_front_page() && !is_page('home')) return; ?>
 <style id="rl-home-css">
-.rl-home .src{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;line-height:1.7;color:var(--ink-faint);margin:16px 0 0}
+.rl-home .src{font-family:var(--f-mono);font-size:12px;letter-spacing:.02em;line-height:1.7;color:var(--ink-faint);margin:16px 0 0}
 .rl-home .src a{color:var(--ink-dim);border-bottom:1px solid var(--red-line);text-decoration:none}
 /* full-bleed breakout of theme container + kill content padding on home */
 .rl-home{position:relative;width:100vw;margin-left:calc(50% - 50vw);overflow-x:clip}
@@ -111,7 +111,7 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .band.alt{background:radial-gradient(90% 60% at 15% 0%,rgba(153,0,0,.10),transparent 55%),var(--bg-2)}
 .rl-home .ey{font-family:var(--f-mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);display:inline-flex;gap:.5em;align-items:center}
 .rl-home .ey b{color:var(--red-2);font-weight:500}
-.rl-home h1,.rl-home h2,.rl-home h3,.rl-home h4{font-family:var(--f-display);font-weight:600;text-transform:uppercase;margin:0;line-height:1.02;letter-spacing:.01em}
+.rl-home h1,.rl-home h2,.rl-home h3,.rl-home h4{font-family:var(--f-display);font-weight:600;text-transform:uppercase;margin:0;line-height:1.02;letter-spacing:.01em;text-wrap:balance}.rl-home p,.rl-home li{text-wrap:pretty}
 .rl-home .lede{color:var(--ink-dim);font-size:clamp(16px,1.6vw,19px);max-width:60ch}
 .rl-home .head{max-width:64ch;margin-bottom:clamp(32px,5vw,52px)}
 .rl-home .head h2{font-size:clamp(28px,4.2vw,48px);margin-top:14px}.rl-home .head p{margin-top:18px}
@@ -362,7 +362,7 @@ body.home .fl-post-header,body.home .fl-post-thumb{display:none!important}
 .rl-home .faq details{border:1px solid var(--glass-line);background:var(--glass);backdrop-filter:blur(14px);margin-bottom:12px;box-shadow:inset 0 1px 0 var(--glass-hi)}
 .rl-home .faq summary{cursor:pointer;padding:20px 24px;font-family:var(--f-display);text-transform:uppercase;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
 .rl-home .faq summary::-webkit-details-marker{display:none}.rl-home .faq summary::after{content:"+";color:var(--red-2);font-family:var(--f-mono);font-size:20px}.rl-home .faq details[open] summary::after{content:"\2212"}
-.rl-home .faq p{padding:0 24px 22px;color:var(--ink-dim);font-size:16px;max-width:75ch}
+.rl-home .faq p{padding:0 24px 22px;color:var(--ink-dim);font-size:16px;max-width:65ch}
 /* final */
 .rl-home .final{position:relative;overflow:hidden;border:1px solid var(--red-line);background:#0b090a;padding:clamp(48px,7vw,92px) clamp(24px,5vw,64px);text-align:center;box-shadow:inset 0 1px 0 var(--glass-hi),0 0 130px -46px var(--red-glow)}
 .rl-home .final::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(58% 96% at 50% 128%,rgba(226,59,59,.6),rgba(153,0,0,.28) 38%,transparent 70%),linear-gradient(180deg,transparent 40%,rgba(153,0,0,.10))}
