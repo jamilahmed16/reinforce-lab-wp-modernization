@@ -82,14 +82,15 @@ foreach(%s as $u){
   $r=wp_remote_get($u,['timeout'=>20,'user-agent'=>$ua,'redirection'=>0]);
   if(is_wp_error($r)){ $out[]=['u'=>$u,'ua'=>$k,'err'=>$r->get_error_message()]; continue; }
   $b=wp_remote_retrieve_body($r); $lb=strtolower($b); $hits=[];
-  foreach($spam as $s) if(strpos($lb,strtolower($s))!==false) $hits[]=$s;
+  $txt=strtolower(strip_tags($b)); foreach($spam as $s){ $q=preg_quote(strtolower($s),'/'); if(preg_match('/(?<![a-z0-9])'.$q.'(?![a-z0-9])/',$lb.' '.$txt)) $hits[]=$s; }
   $ext=[]; if(preg_match_all('/<(?:script|iframe)[^>]+src=["\']([^"\']+)/i',$b,$m)) foreach($m[1] as $src){ $h=parse_url($src,PHP_URL_HOST); if($h && stripos($h,'reinforcelab.com')===false) $ext[strtolower($h)]=1; }
   $inl=0; $sus=[]; if(preg_match_all('/<script(?![^>]*\bsrc=)[^>]*>(.*?)<\/script>/is',$b,$m2)) foreach($m2[1] as $js){ $inl++;
-     foreach(['eval(','atob(','fromCharCode','unescape(','document.write(','window.location=','location.replace(','\\x6','base64,'] as $p) if(stripos($js,$p)!==false) $sus[$p]=($sus[$p]??0)+1;
+     $jsx=str_replace(['data:image/webp;base64,','data:text/javascript;base64,'],'',$js);
+     foreach(['eval(','atob(','fromCharCode','unescape(','document.write(','window.location=','location.replace(','\\x6','base64,'] as $p) if(stripos($jsx,$p)!==false) $sus[$p]=($sus[$p]??0)+1;
      if(preg_match('/[A-Za-z0-9+\/=]{400,}/',$js)) $sus['long_encoded']=($sus['long_encoded']??0)+1; }
   $loc=wp_remote_retrieve_header($r,'location');
   $out[]=['u'=>$u,'ua'=>$k,'code'=>wp_remote_retrieve_response_code($r),'len'=>strlen($b),'loc'=>$loc?:'',
-   'spam'=>$hits,'offscreen'=>preg_match_all('/(left|top|text-indent):\s*-\d{4,}px/i',$b),'hidden_links'=>preg_match_all('/<div[^>]+(display:\s*none|visibility:\s*hidden)[^>]*>\s*(<a [^>]+>[^<]*<\/a>\s*){3,}/i',$b),
+   'spam'=>$hits,'offscreen'=>preg_match_all('/style=["\'][^"\']*(left|top|text-indent):\s*-\d{4,}px/i',$b),'hidden_links'=>preg_match_all('/<div[^>]+(display:\s*none|visibility:\s*hidden)[^>]*>\s*(<a [^>]+>[^<]*<\/a>\s*){3,}/i',$b),
    'sponsored'=>substr_count($lb,'rel="sponsored'),'meta_refresh'=>preg_match('/<meta[^>]+http-equiv=["\']?refresh/i',$b),'ext'=>array_keys($ext),'inline_scripts'=>$inl,'sus'=>$sus,
    'robots'=>preg_match('/<meta name=.robots. content=.([^"\']*)/',$b,$rm)?$rm[1]:''];
  }
