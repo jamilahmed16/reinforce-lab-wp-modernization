@@ -1,0 +1,47 @@
+{
+ "wordpress_meta": "",
+ "items": [
+  {
+   "item": "plugins/litespeed-cache",
+   "version": "7.9.1",
+   "from": "readme.txt",
+   "latest_on_wordpress_org": "7.9.2"
+  },
+  {
+   "item": "plugins/lunar-profiler-ink",
+   "version": "",
+   "from": "",
+   "latest_on_wordpress_org": ""
+  },
+  {
+   "item": "plugins/woocommerce-paypal-payments",
+   "version": "4.1.3",
+   "from": "readme.txt",
+   "latest_on_wordpress_org": "4.2.0"
+  },
+  {
+   "item": "plugins/wp-file-manager",
+   "version": "8.0.4",
+   "from": "readme.txt",
+   "latest_on_wordpress_org": "8.0.6"
+  },
+  {
+   "item": "plugins/wpforms",
+   "version": "",
+   "from": "",
+   "latest_on_wordpress_org": ""
+  },
+  {
+   "item": "themes/bb-theme",
+   "version": "1.7.20",
+   "from": "style.css",
+   "latest_on_wordpress_org": ""
+  },
+  {
+   "item": "themes/bb-theme-child",
+   "version": "1.0",
+   "from": "style.css",
+   "latest_on_wordpress_org": ""
+  }
+ ]
+}
