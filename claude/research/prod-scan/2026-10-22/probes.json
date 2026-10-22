@@ -1,0 +1,394 @@
+[
+ [
+  "wp-content/plugins/zz-not-a-real-plugin-xyz/",
+  404,
+  450253,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "zz-not-a-real-file-xyz.php",
+  404,
+  402330,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-content/mu-plugins/health-check-api.php",
+  404,
+  450249,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-content/plugins/lunar-profiler-ink/",
+  403,
+  787,
+  " 403 Forbidden @media (prefers-color-scheme:dark){body{background-color:#000!important}} ",
+  ""
+ ],
+ [
+  "wp-content/plugins/nimble-router-mod/",
+  404,
+  450239,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-content/plugins/onyx-store-tag/",
+  404,
+  450233,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-content/plugins/pulse-cache-ink/",
+  404,
+  450235,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-content/plugins/event/",
+  404,
+  450215,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-content/themes/wise-news/",
+  404,
+  450221,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-content/cache/2704f406.php",
+  404,
+  450223,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-includes/class-wp-cache.php",
+  404,
+  402338,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-content/uploads/shell.php",
+  403,
+  31013,
+  "Access Denied:root{color-scheme:light;--bg:#f7f7f7;--card:#fff;--text:#333;--muted:#555;--border:#ddd;--btn-bg:#f0f0f0;--btn-text:#333;--suc",
+  ""
+ ],
+ [
+  "wp-content/uploads/up.php",
+  403,
+  31013,
+  "Access Denied:root{color-scheme:light;--bg:#f7f7f7;--card:#fff;--text:#333;--muted:#555;--border:#ddd;--btn-bg:#f0f0f0;--btn-text:#333;--suc",
+  ""
+ ],
+ [
+  "wp-content/uploads/wp-login.php",
+  404,
+  450227,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-content/x.php",
+  404,
+  402310,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-admin/user/about.php",
+  302,
+  0,
+  "",
+  "https://reinforcelab.com/wp-login.php?redirect_to=https%3A%2F%2Freinforcelab.com%2Fwp-admin%2Fuser%2Fabout.php&reauth=1"
+ ],
+ [
+  "wp-includes/wp-class.php",
+  404,
+  402326,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-content/plugins/wp-file-manager/",
+  200,
+  0,
+  "",
+  ""
+ ],
+ [
+  "wp-content/mu-plugins/",
+  403,
+  787,
+  " 403 Forbidden @media (prefers-color-scheme:dark){body{background-color:#000!important}} ",
+  ""
+ ],
+ [
+  "wp-content/plugins/hello.php",
+  404,
+  450221,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "about.php",
+  404,
+  402296,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "radio.php",
+  404,
+  402296,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-content/plugins/wp-sysadmin/",
+  404,
+  450227,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-content/plugins/core-plugin/",
+  403,
+  31013,
+  "Access Denied:root{color-scheme:light;--bg:#f7f7f7;--card:#fff;--text:#333;--muted:#555;--border:#ddd;--btn-bg:#f0f0f0;--btn-text:#333;--suc",
+  ""
+ ],
+ [
+  "wp-content/plugins/ws-plugin/",
+  404,
+  450223,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-content/plugins/wpcode-helper/",
+  404,
+  450231,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-config.php.bak",
+  403,
+  787,
+  " 403 Forbidden @media (prefers-color-scheme:dark){body{background-color:#000!important}} ",
+  ""
+ ],
+ [
+  "wp-config.php.old",
+  403,
+  787,
+  " 403 Forbidden @media (prefers-color-scheme:dark){body{background-color:#000!important}} ",
+  ""
+ ],
+ [
+  "wp-config.php~",
+  403,
+  787,
+  " 403 Forbidden @media (prefers-color-scheme:dark){body{background-color:#000!important}} ",
+  ""
+ ],
+ [
+  "wp-config.bak",
+  403,
+  787,
+  " 403 Forbidden @media (prefers-color-scheme:dark){body{background-color:#000!important}} ",
+  ""
+ ],
+ [
+  "wp-config.txt",
+  403,
+  787,
+  " 403 Forbidden @media (prefers-color-scheme:dark){body{background-color:#000!important}} ",
+  ""
+ ],
+ [
+  ".env",
+  403,
+  787,
+  " 403 Forbidden @media (prefers-color-scheme:dark){body{background-color:#000!important}} ",
+  ""
+ ],
+ [
+  ".git/config",
+  403,
+  787,
+  " 403 Forbidden @media (prefers-color-scheme:dark){body{background-color:#000!important}} ",
+  ""
+ ],
+ [
+  "backup.zip",
+  404,
+  402298,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "public_html.zip",
+  404,
+  402308,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "reinforcelab.zip",
+  404,
+  402310,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "site.zip",
+  404,
+  402294,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "backup.sql",
+  404,
+  402298,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "database.sql",
+  404,
+  402302,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "db.sql",
+  404,
+  402290,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "dump.sql",
+  404,
+  402294,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-content/debug.log",
+  403,
+  787,
+  " 403 Forbidden @media (prefers-color-scheme:dark){body{background-color:#000!important}} ",
+  ""
+ ],
+ [
+  "error_log",
+  404,
+  402296,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "wp-admin/error_log",
+  404,
+  402314,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "phpinfo.php",
+  404,
+  402300,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "info.php",
+  404,
+  402294,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "readme.html",
+  200,
+  7407,
+  " WordPress &#8250; ReadMe Semantic Personal Publishing Platform First Things First Welcome. WordPress is a ver",
+  ""
+ ],
+ [
+  "license.txt",
+  200,
+  19903,
+  "WordPress - Web publishing software Copyright 2011-2026 by the contributors This program is free software; you can redistribute it and/or mo",
+  ""
+ ],
+ [
+  "xmlrpc.php",
+  405,
+  42,
+  "XML-RPC server accepts POST requests only.",
+  ""
+ ],
+ [
+  "wp-login.php",
+  200,
+  9799,
+  " Log In &lsaquo; Reinforce Lab Ltd &#8212; WordPress ",
+  ""
+ ],
+ [
+  "wp-json/",
+  200,
+  1377033,
+  "{\"name\":\"Reinforce Lab Ltd\",\"description\":\"Your Digital Growth Partner\",\"url\":\"https:\\/\\/reinforcelab.com\",\"home\":\"https:\\/\\/reinforcelab.co",
+  ""
+ ],
+ [
+  "wp-content/uploads/",
+  403,
+  787,
+  " 403 Forbidden @media (prefers-color-scheme:dark){body{background-color:#000!important}} ",
+  ""
+ ],
+ [
+  "wp-content/plugins/",
+  200,
+  0,
+  "",
+  ""
+ ],
+ [
+  "wp-includes/",
+  403,
+  787,
+  " 403 Forbidden @media (prefers-color-scheme:dark){body{background-color:#000!important}} ",
+  ""
+ ],
+ [
+  ".well-known/security.txt",
+  404,
+  402326,
+  "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function()",
+  ""
+ ],
+ [
+  "robots.txt",
+  200,
+  600,
+  "User-agent: * Disallow: /wp-content/uploads/wc-logs/ Disallow: /wp-content/uploads/woocommerce_transient_files/ Disallow: /wp-content/upload",
+  ""
+ ]
+]

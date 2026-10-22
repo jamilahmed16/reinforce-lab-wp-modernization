@@ -1,0 +1,408 @@
+[
+ {
+  "u": "https://reinforcelab.com/blog/",
+  "ua": "browser",
+  "code": 200,
+  "len": 536067,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/blog/",
+  "ua": "googlebot",
+  "code": 200,
+  "len": 0,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [],
+  "inline_scripts": 0,
+  "sus": [],
+  "robots": ""
+ },
+ {
+  "u": "https://reinforcelab.com/a-complete-woocommerce-seo-guide/",
+  "ua": "browser",
+  "code": 200,
+  "len": 479267,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/a-complete-woocommerce-seo-guide/",
+  "ua": "googlebot",
+  "code": 200,
+  "len": 0,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [],
+  "inline_scripts": 0,
+  "sus": [],
+  "robots": ""
+ },
+ {
+  "u": "https://reinforcelab.com/b2b-seo-agencies/",
+  "ua": "browser",
+  "code": 200,
+  "len": 482126,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/surfer-seo-review/",
+  "ua": "browser",
+  "code": 200,
+  "len": 518327,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/bluehost-wordpress-hosting/",
+  "ua": "browser",
+  "code": 200,
+  "len": 482115,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/ecommerce-retargeting-strategies-to-boost-sales/",
+  "ua": "browser",
+  "code": 200,
+  "len": 472945,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/how-to-find-your-target-audience-on-social-media/",
+  "ua": "browser",
+  "code": 200,
+  "len": 470087,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/20-content-marketing-ideas-for-restaurants/",
+  "ua": "browser",
+  "code": 200,
+  "len": 506292,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/social-media-content-ideas-for-nonprofits/",
+  "ua": "browser",
+  "code": 200,
+  "len": 476899,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/real-estate-social-media-posts-ideas/",
+  "ua": "browser",
+  "code": 200,
+  "len": 480809,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/content-marketing-for-banks/",
+  "ua": "browser",
+  "code": 200,
+  "len": 475632,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/seo-mistakes-to-avoid/",
+  "ua": "browser",
+  "code": 200,
+  "len": 476843,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/seo-mistakes-to-avoid/",
+  "ua": "googlebot",
+  "code": 200,
+  "len": 0,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [],
+  "inline_scripts": 0,
+  "sus": [],
+  "robots": ""
+ },
+ {
+  "u": "https://reinforcelab.com/seo-website-design/",
+  "ua": "browser",
+  "code": 200,
+  "len": 469068,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/different-types-of-facebook-ads/",
+  "ua": "browser",
+  "code": 200,
+  "len": 471763,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/invest-in-seo/",
+  "ua": "browser",
+  "code": 200,
+  "len": 474612,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/best-seo-practices/",
+  "ua": "browser",
+  "code": 200,
+  "len": 479264,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/rank-tracker-review/",
+  "ua": "browser",
+  "code": 200,
+  "len": 491860,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/beaver-builder-review/",
+  "ua": "browser",
+  "code": 200,
+  "len": 501367,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [
+   "www.googletagmanager.com",
+   "www.google.com"
+  ],
+  "inline_scripts": 12,
+  "sus": [],
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+ },
+ {
+  "u": "https://reinforcelab.com/beaver-builder-review/",
+  "ua": "googlebot",
+  "code": 200,
+  "len": 0,
+  "loc": "",
+  "spam": [],
+  "offscreen": 0,
+  "hidden_links": 0,
+  "sponsored": 0,
+  "meta_refresh": 0,
+  "ext": [],
+  "inline_scripts": 0,
+  "sus": [],
+  "robots": ""
+ }
+]
