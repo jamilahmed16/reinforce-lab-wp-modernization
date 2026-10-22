@@ -410,7 +410,7 @@ function rl_home_client_slugs() {
 function rl_home_badges() {
     $gf = 'https://www.goodfirms.co/company/reinforce-lab-limited';
     return [
-        ['file' => 'goodfirms-research-partner.svg', 'w' => 209, 'h' => 260, 'who' => 'GoodFirms', 'what' => 'Research partner', 'alt' => 'GoodFirms research partner badge', 'url' => 'https://www.goodfirms.co/resources/app-development-trends-change-how-you-develop-an-app'],
+        ['file' => 'goodfirms-research-partner.svg', 'w' => 209, 'h' => 260, 'who' => 'GoodFirms', 'what' => 'Research partner', 'alt' => 'GoodFirms research partner badge', 'url' => 'https://www.goodfirms.co/resources/ai-adoption-statistics'],
         ['file' => 'goodfirms-top-seo-services-bangladesh.png', 'w' => 221, 'h' => 190, 'who' => 'GoodFirms', 'what' => 'Top SEO services company, Bangladesh', 'alt' => 'GoodFirms badge: Top SEO Services Company Bangladesh', 'url' => $gf],
         ['file' => 'goodfirms-top-digital-marketing.svg', 'w' => 140, 'h' => 146, 'who' => 'GoodFirms', 'what' => 'Top digital marketing company', 'alt' => 'GoodFirms badge: Top Digital Marketing Company', 'url' => 'https://www.goodfirms.co/directory/country/top-digital-marketing-companies/bangladesh'],
         ['file' => 'findbestfirms-wordpress-development-aug-2024.png', 'w' => 560, 'h' => 560, 'who' => 'FindBestFirms', 'what' => 'Top WordPress development, August 2024', 'alt' => 'FindBestFirms badge: Top WordPress Development, August 2024', 'url' => 'https://findbestfirms.com/company/reinforce-lab-limited/'],
