@@ -80,7 +80,7 @@ add_filter('category_link', function ($link, $term_id) {
     }
     if (isset($rules['410'][$path])) return home_url('/blog/');
     return $link;
-}, 10, 2);
+}, 999, 2);
 
 /* 410 Gone with the site's normal not-found page; no "guess a nearby page" redirect afterwards */
 function rl_gone() {
