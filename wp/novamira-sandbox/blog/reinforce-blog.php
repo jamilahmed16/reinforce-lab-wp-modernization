@@ -120,10 +120,7 @@ function rl_blog_main_cats() {
     }
     arsort($n);
     $out = [];
-    foreach ($n as $tid => $count) {
-        if (function_exists('rl_cat_archive_retired') && rl_cat_archive_retired($tid)) continue;  // its archive redirects: no chip (A4 link scan)
-        $t = get_term($tid, 'category'); if ($t && !is_wp_error($t)) $out[] = [$t, $count];
-    }
+    foreach ($n as $tid => $count) { $t = get_term($tid, 'category'); if ($t && !is_wp_error($t)) $out[] = [$t, $count]; }
     return $out;
 }
 
