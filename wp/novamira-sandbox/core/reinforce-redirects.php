@@ -20,6 +20,11 @@ add_action('template_redirect', function () {
     if (is_admin() || wp_doing_ajax() || (defined('REST_REQUEST') && REST_REQUEST)) return;
     $rules = rl_redirect_rules();
     $path = rl_redirect_path();
+    // approved removals that do not depend on one path: /paged-N/ junk anywhere (F-001) and old WooCommerce
+    // checkout calls (?wc-ajax=..., no shop on the new site, D-148)
+    if (preg_match('#/paged-\d+/#', $path) || isset($_GET['wc-ajax'])) {
+        rl_gone();
+    }
     if (isset($rules['301'][$path])) {
         $t = $rules['301'][$path];
         $to = preg_match('#^https?://#', $t) ? $t : home_url($t);
@@ -28,9 +33,17 @@ add_action('template_redirect', function () {
     }
     // 410 only where WordPress has no page; feeds of kept posts are also approved 410 (they exist automatically)
     if ((is_404() || is_feed()) && isset($rules['410'][$path])) {
-        if (is_feed()) { status_header(410); nocache_headers(); header('Content-Type: text/plain; charset=utf-8'); echo 'Gone'; exit; }
-        status_header(410);
-        nocache_headers();
-        // the normal not-found template, with status 410 Gone
+        rl_gone();
     }
-}, 1);
+}, 0);
+
+/* 410 Gone with the site's normal not-found page; no "guess a nearby page" redirect afterwards */
+function rl_gone() {
+    global $wp_query;
+    remove_action('template_redirect', 'redirect_canonical');
+    add_filter('wpseo_premium_redirects_enabled', '__return_false');
+    if ($wp_query) $wp_query->set_404();
+    status_header(410);
+    nocache_headers();
+    if (is_feed() || isset($_GET['wc-ajax'])) { header('Content-Type: text/plain; charset=utf-8'); echo 'Gone'; exit; }
+}
