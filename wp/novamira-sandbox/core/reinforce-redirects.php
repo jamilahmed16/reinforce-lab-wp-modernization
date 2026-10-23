@@ -67,6 +67,21 @@ add_filter('rest_pre_dispatch', function ($result, $server, $request) {
     return new WP_Error('rl_gone', 'Gone', ['status' => 410]);
 }, 999, 3);
 
+/* category links (blog chips, post kickers, breadcrumbs) point straight to where a retired category archive now
+   goes, so the site never links to its own redirect (A4 internal link scan). Live categories are unchanged. */
+add_filter('category_link', function ($link, $term_id) {
+    $path = strtolower('/' . trim((string) wp_parse_url($link, PHP_URL_PATH), '/') . '/');
+    $t = get_term($term_id, 'category');
+    if ($t && !is_wp_error($t) && $t->slug === 'uncategorized') return home_url('/blog/');  // D-144: 301 to /blog/
+    $rules = rl_redirect_rules();
+    if (isset($rules['301'][$path])) {
+        $to = $rules['301'][$path];
+        return preg_match('#^https?://#', $to) ? $to : home_url($to);
+    }
+    if (isset($rules['410'][$path])) return home_url('/blog/');
+    return $link;
+}, 10, 2);
+
 /* 410 Gone with the site's normal not-found page; no "guess a nearby page" redirect afterwards */
 function rl_gone() {
     global $wp_query;
