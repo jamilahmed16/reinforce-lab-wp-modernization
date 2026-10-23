@@ -1,0 +1,9 @@
+# Reinforce Lab site code: only stylesheets, scripts and fonts are served directly.
+# The PHP files here are loaded by WordPress (mu-plugins/reinforce-lab.php), never requested by a browser.
+<IfModule mod_authz_core.c>
+  Require all denied
+  <FilesMatch "\.(css|js|woff2?|svg|png|jpe?g|webp)$">
+    Require all granted
+  </FilesMatch>
+</IfModule>
+Options -Indexes

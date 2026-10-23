@@ -14,8 +14,8 @@ Both sites share one Hostinger account and both are compromised. Nothing is copi
 
 - [ ] **Step 1 (Jamil and Hostinger):** security ticket for the account (how they got in); every password changed (hosting, Titan mailbox, WordPress, database, FTP, registrar) with two-factor; full offline backups of both sites kept as evidence; WooCommerce orders and Semrush backlinks exported; new hosting chosen (new account, not the compromised one). **(Jamil)**
 - [x] **Step 2.1:** everything built on `.online` exported as data only, scanned (0 risky fields), 2,318 media files listed with checksums (18 Oct).
-- [ ] **Step 2.2:** redirect map in code and the redirect test (A4).
-- [ ] **Step 2.3:** rebuild script: fresh WordPress + vendor plugins + our code from git + data import + media download with signature and checksum checks.
+- [x] **Step 2.2:** redirect map in code and the redirect test (A4). 0 failures on `.online` (D-214).
+- [x] **Step 2.3:** rebuild script: fresh WordPress + vendor plugins + our code from git + data import + media download with signature and checksum checks. Written and tested locally 23 Oct (D-217, `claude/rebuild/README.md`); first full run in Step 3.
 - [ ] **Step 3:** run the rebuild on the new hosting (noindex staging address), then every check: parity, axe, link scan, redirect test, speed. **(gate)**
 - [ ] **Step 4:** the switch (A6), on the new hosting only; the old account stays offline 30 days as evidence, then is closed.
 
@@ -54,7 +54,7 @@ What changes, and why:
 
 Tasks:
 - [x] Copy the kept posts (PRESERVE, PRESERVE+REBUILD, PRESERVE-URL+REWRITE, plus HUB-REVIEW posts kept) with the rules above. One controlled import, no new publishing; recorded as the agreed exception to F-003. **Done 12 Oct (D-178): 80 posts.** Their internal links still point at the old URLs until the redirect sign-off; then they are pointed at final pages.
-- [ ] Posts planned **REBUILD-new** (23): carried across as they are until each rewrite, or redirected now, per the map. **(Jamil decides with the map)**
+- [ ] Posts planned **REBUILD-new** (23 in September; 21 open on 23 Oct, the rest became approved redirects): 18 are carried across with their old text, 3 do not exist yet (`/video-seo/`, `/off-page-seo-checklist/`, `/generate-leads-for-business/`). **(Jamil decides: launch with old text and rewrite after, one at a time; and write the 3 now or later)**
 - [ ] Every **301 and CONSOLIDATE target** exists and returns 200 before the switch.
 - [x] **Build the `/reviews/` hub** and its two pillars `/reviews/best-wordpress-hosting/` and `/reviews/best-seo-ai-tools/` (approved new URLs, D-016), so the 20 reviews are linked from the site. Done 14 Oct (D-191): all 19 posts and the WP Engine page linked; no rankings until the first-hand rewrites.
 - [x] Copy the media files the kept posts use. **Done 12 Oct (D-178): 2,029 files at the same paths.**

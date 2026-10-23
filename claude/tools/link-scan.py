@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """A4 gate: internal link scan of every published page, post and project on reinforcelab.online.
 
-  python3 claude/tools/link-scan.py
+  python3 claude/tools/link-scan.py                       # reinforcelab.online (page list from WordPress, via Novamira)
+  python3 claude/tools/link-scan.py https://staging.example  # any other copy (page list from its XML sitemaps)
 
 For every published page, post and project (plus /blog/ pages) it reads the HTML, collects every <a href> and
 <img src> that points inside the site (relative, reinforcelab.online, or reinforcelab.com written out in full),
@@ -26,8 +27,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import rl  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-SITE = 'https://reinforcelab.online'
-HOSTS = ('reinforcelab.online', 'www.reinforcelab.online')
+SITE = (sys.argv[1] if len(sys.argv) > 1 else 'https://reinforcelab.online').rstrip('/')
+DEV = SITE == 'https://reinforcelab.online'
+HOSTS = ('reinforcelab.online', 'www.reinforcelab.online', urllib.parse.urlparse(SITE).netloc)
 PROD = ('reinforcelab.com', 'www.reinforcelab.com')
 SKIP = re.compile(r'^/(wp-admin|wp-login\.php|wp-json|xmlrpc\.php|feed|comments/feed)\b|^/\?|^/cdn-cgi/')
 
@@ -73,8 +75,23 @@ def internal_path(href, page):
     return (path + ('?' + urllib.parse.urlencode(q) if q else '')), kind
 
 
+def sitemap_urls():
+    """Every page, post and project listed in Yoast's sitemaps (staging and live copies; they have no Novamira)."""
+    c, loc, idx = get(SITE + '/sitemap_index.xml', True)
+    maps = [m for m in re.findall(r'<loc>([^<]+)</loc>', idx) if re.search(r'/(page|post|rl_project)-sitemap\d*\.xml', m)]
+    urls = []
+    for m in maps:
+        urls += re.findall(r'<loc>([^<]+)</loc>', get(htmllib.unescape(m), True)[2])
+    if not urls:
+        raise SystemExit('no URLs found in %s/sitemap_index.xml' % SITE)
+    return [htmllib.unescape(u) for u in urls if not re.search(r'\.(jpe?g|png|webp|gif)$', u)]
+
+
 def main():
-    urls, _ = rl.php('return array_values(array_map("get_permalink", get_posts(["post_type" => ["page","post","rl_project"], "post_status" => "publish", "numberposts" => -1, "fields" => "ids"])));', 120)
+    if DEV:
+        urls, _ = rl.php('return array_values(array_map("get_permalink", get_posts(["post_type" => ["page","post","rl_project"], "post_status" => "publish", "numberposts" => -1, "fields" => "ids"])));', 120)
+    else:
+        urls = sitemap_urls()
     urls = sorted(set(urls) | {SITE + '/blog/'})
     pages = {}
     with cf.ThreadPoolExecutor(max_workers=6) as ex:
@@ -114,11 +131,17 @@ def main():
         if 'production' in links[p]['kind']:
             prod.append(rec)
     # links written out as reinforcelab.online inside stored content (they would point at the dev site after the switch)
-    dev, _ = rl.php(r'''global $wpdb;
+    dev = {'posts': [], 'meta_rows': 0, 'note': 'checked on reinforcelab.online only'}
+    if DEV:
+        dev, _ = rl.php(r'''global $wpdb;
 $rows = $wpdb->get_results("SELECT ID, post_type, post_name FROM {$wpdb->posts} WHERE post_status='publish' AND post_type IN ('page','post','rl_project') AND post_content LIKE '%reinforcelab.online%'");
 $meta = $wpdb->get_var("SELECT COUNT(*) FROM {$wpdb->postmeta} pm JOIN {$wpdb->posts} p ON p.ID=pm.post_id WHERE p.post_status='publish' AND pm.meta_value LIKE '%reinforcelab.online%' AND pm.meta_key NOT LIKE '\_%'");
 return ['posts' => $rows, 'meta_rows' => (int) $meta];''', 120)
-    day = datetime.date.today().isoformat()
+    else:  # on another copy, any reinforcelab.online link left in a page is a bad link
+        for u, (c, h) in pages.items():
+            if 'reinforcelab.online' in h and urllib.parse.urlparse(SITE).netloc != 'reinforcelab.online':
+                dev['posts'].append({'page': u, 'count': h.count('reinforcelab.online')})
+    day = datetime.date.today().isoformat() + ('' if DEV else '-' + urllib.parse.urlparse(SITE).netloc)
     out = os.path.join(ROOT, 'claude', 'research', 'link-scan')
     os.makedirs(out, exist_ok=True)
     pages_bad = {u: c for u, (c, h) in pages.items() if str(c) != '200'}
