@@ -83,6 +83,17 @@ add_filter('category_link', function ($link, $term_id) {
     return $link;
 }, 999, 2);
 
+/* true when a category's own archive is retired (redirected or gone), for example /business/ (used by the blog topic row) */
+function rl_cat_archive_retired($term_id) {
+    $t = get_term($term_id, 'category');
+    if (!$t || is_wp_error($t)) return true;
+    if ($t->slug === 'uncategorized') return true;
+    $p = get_category_parents($t->term_id, false, '/', true);
+    $path = is_wp_error($p) ? '/' . $t->slug . '/' : '/' . strtolower($p);
+    $rules = rl_redirect_rules();
+    return isset($rules['301'][$path]) || isset($rules['410'][$path]);
+}
+
 /* 410 Gone with the site's normal not-found page; no "guess a nearby page" redirect afterwards */
 function rl_gone() {
     global $wp_query;
