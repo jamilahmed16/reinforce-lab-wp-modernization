@@ -114,6 +114,7 @@ Note on "100% accuracy": the redirect test guarantees 100% for every URL that ap
 - Remove unused theme scripts on shortcode pages (about 63 KB) and test the phone menu.
 - Convert client logos to WebP.
 - Leftover minor items from the audit (P3).
+- **Remind Jamil (23 Oct): set up promotion.** Merge the build branch into `main` with a pull request, then start a new Claude Code session for promotion only, recording in `claude/marketing/log.md` (M-numbers), not touching `wp/` or the decision log.
 - **Remind Jamil: redesign the company profile PDF** (Jamil, 14 Oct 2026: "after we migrate the website to .com we will redesign the company profile, remind after migration"). The current one (D-187) stays at `/wp-content/uploads/2022/03/Reinforce-Lab-Company-Profile.pdf` until then; source in `claude/content/company-profile/`.
 
 ---
