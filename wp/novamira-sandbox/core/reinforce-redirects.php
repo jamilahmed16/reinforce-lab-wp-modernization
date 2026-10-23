@@ -16,15 +16,22 @@ function rl_redirect_path() {
     return strtolower($path);
 }
 
+/* approved removals that do not depend on one path: /paged-N/ junk anywhere (F-001) and old WooCommerce
+   checkout calls (?wc-ajax=..., no shop on the new site, D-148). Answered as early as possible, before
+   any other plugin (Yoast sends retired author pages home) can redirect them. */
+add_action('wp', function () {
+    if (is_admin() || wp_doing_ajax() || (defined('REST_REQUEST') && REST_REQUEST)) return;
+    if (!preg_match('#/paged-\d+/#', rl_redirect_path()) && !isset($_GET['wc-ajax'])) return;
+    rl_gone();
+    $t = get_query_template('404');
+    if ($t) include $t;
+    exit;
+}, -100);
+
 add_action('template_redirect', function () {
     if (is_admin() || wp_doing_ajax() || (defined('REST_REQUEST') && REST_REQUEST)) return;
     $rules = rl_redirect_rules();
     $path = rl_redirect_path();
-    // approved removals that do not depend on one path: /paged-N/ junk anywhere (F-001) and old WooCommerce
-    // checkout calls (?wc-ajax=..., no shop on the new site, D-148)
-    if (preg_match('#/paged-\d+/#', $path) || isset($_GET['wc-ajax'])) {
-        rl_gone();
-    }
     if (isset($rules['301'][$path])) {
         $t = $rules['301'][$path];
         $to = preg_match('#^https?://#', $t) ? $t : home_url($t);
