@@ -42,6 +42,10 @@ add_action('template_redirect', function () {
     if ((is_404() || is_feed()) && isset($rules['410'][$path])) {
         rl_gone();
     }
+    // kept addresses that production already answers 404 (for example /project/inpace/): stay 404, no guessed redirect
+    if (is_404() && isset($rules['404'][$path])) {
+        remove_action('template_redirect', 'redirect_canonical');
+    }
 }, 0);
 
 /* 410 Gone with the site's normal not-found page; no "guess a nearby page" redirect afterwards */
