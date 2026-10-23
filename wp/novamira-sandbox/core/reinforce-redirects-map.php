@@ -78,7 +78,8 @@ function rl_redirect_rules() {
             '/product/wordpress-web-design-and-development/' => '/services/wordpress-website-design-service/',
             '/product/wordpress-website-design-services-starter/' => '/services/wordpress-website-design-service/',
             '/product/wordpress-website-design-services/' => '/services/wordpress-website-design-service/',
-            '/project/inpace-a-project-of-reinforce-lab/' => '/project/inpace/',
+            '/project/inpace-a-project-of-reinforce-lab/' => '/portfolio/',
+            '/project/inpace/' => '/portfolio/',
             '/project/microinspire-a-project-of-reinforce-lab/' => '/portfolio/',
             '/project/mrco-international-a-project-of-reinforce-lab/' => '/portfolio/',
             '/project/uiu/' => '/clients/',
@@ -288,7 +289,6 @@ function rl_redirect_rules() {
         '404' => [
             '/generate-leads-for-business/' => 1,
             '/off-page-seo-checklist/' => 1,
-            '/project/inpace/' => 1,
             '/services/ai-growth-systems/' => 1,
             '/services/seo-ai-search-audit/' => 1,
             '/video-seo/' => 1,
