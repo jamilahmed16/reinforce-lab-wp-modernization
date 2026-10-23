@@ -48,6 +48,25 @@ add_action('template_redirect', function () {
     }
 }, 0);
 
+/* approved 410 sitemap files of the closed shop (/product-sitemap.xml, D-148): answered before Yoast's sitemap router */
+add_action('parse_request', function () {
+    $path = rl_redirect_path();
+    if (substr($path, -4) !== '.xml') return;
+    $rules = rl_redirect_rules();
+    if (!isset($rules['410'][$path])) return;
+    status_header(410);
+    nocache_headers();
+    header('Content-Type: text/plain; charset=utf-8');
+    echo 'Gone';
+    exit;
+}, 0);
+
+/* the old WooCommerce REST routes (/wp-json/wc/..., no shop on the new site, D-148) answer 410 */
+add_filter('rest_pre_dispatch', function ($result, $server, $request) {
+    if (strpos((string) $request->get_route(), '/wc/') !== 0) return $result;
+    return new WP_Error('rl_gone', 'Gone', ['status' => 410]);
+}, 0, 3);
+
 /* 410 Gone with the site's normal not-found page; no "guess a nearby page" redirect afterwards */
 function rl_gone() {
     global $wp_query;
