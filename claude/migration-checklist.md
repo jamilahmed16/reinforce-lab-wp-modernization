@@ -62,8 +62,8 @@ Tasks:
 
 ### A4. Redirect map in code and the zero-failure test (gate)
 
-- [ ] All approved 301s, 410s and merges implemented in code on `.online` (one source file, versioned in git).
-- [ ] **Redirect test over every known old URL**: the 793-row register, Search Console's 425 pages and link targets, the backlink export, production's sitemaps and internal links, and the Yoast redirects. For each URL it checks: final status as approved (200, 301 to target, or 410), final URL equals the approved target, **at most one redirect hop**, no loops, the target is indexable with a self-canonical, query-string and trailing-slash variants behave the same. **Pass mark: 0 failures.** **(gate)**
+- [x] All approved 301s, 410s and merges implemented in code on `.online` (one source file, versioned in git). `claude/data/redirect-map-draft.csv` builds `core/reinforce-redirects-map.php` (D-214).
+- [ ] **Redirect test over every known old URL**: the 793-row register, Search Console's 425 pages and link targets, the backlink export, production's sitemaps and internal links, and the Yoast redirects. For each URL it checks: final status as approved (200, 301 to target, or 410), final URL equals the approved target, **at most one redirect hop**, no loops, the target is indexable with a self-canonical, query-string and trailing-slash variants behave the same. **Pass mark: 0 failures.** **(gate)** 23 Oct on `.online`: 2,103 requests over 803 addresses, 0 failures (D-214). Re-run on staging and in the first hour after the switch; the 39 old `/wp-content/` files need the server 410 rule from the rebuild.
 - [ ] **Internal link scan** of every page and post on `.online`: 0 links to a 404, 410 or redirect; 0 links to `reinforcelab.online` (all switch to the live domain). **(gate)**
 - [ ] Every URL a backlink points to resolves to a 200 page (directly or by one 301). **(gate)**
 

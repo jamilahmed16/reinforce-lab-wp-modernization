@@ -10,22 +10,20 @@
   "/cloudways-hosting/": 200,
   "/contact-us/": 200,
   "/creative-content-marketing-ideas/": 200,
-  "/google-analytics-behavior-reports/": 404,
   "/guide-to-ux-copywriting/": 200,
   "/industries/b2b-saas/": 200,
   "/industries/healthcare/": 200,
   "/industries/pharmaceutical/": 200,
   "/latest-seo-update-search-engine-updates/": 200,
-  "/logossliderwp/benzinga/": 404,
   "/packages/": 200,
+  "/portfolio/": 200,
   "/portfolio/access-tutor/": 200,
   "/portfolio/iba-alumni-lottery/": 200,
   "/portfolio/inpace-shop/": 200,
-  "/project/inpace/": 301,
-  "/project/microinspire/": 404,
-  "/project/mrco-international/": 404,
+  "/project/inpace/": 404,
   "/real-estate-social-media-posts-ideas/": 200,
   "/reviews/": 200,
+  "/search-authority-diagnostic/": 200,
   "/services/": 200,
   "/services/ai-growth-systems/": 200,
   "/services/ai-search-optimization/": 200,
@@ -43,611 +41,10 @@
   "/social-media-content-ideas-for-clothing-brand/": 200,
   "/social-media-content-ideas-for-hotels/": 200
  },
- "failures": [
-  {
-   "path": "/church-marketing/page/2",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/church-marketing/page/2/",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/church-marketing/page/2/?utm_source=test",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/clothing-brand-marketing/page/2",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/clothing-brand-marketing/page/2/?utm_source=test",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/clothing-brand-marketing/page/2/",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/copywriting/page/2",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/copywriting/page/2/",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/copywriting/page/2/?utm_source=test",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/digital-marketing-competitor/page/2/",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/digital-marketing-competitor/page/2",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/digital-marketing-competitor/page/2/?utm_source=test",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/generate-leads-for-business/",
-   "variant": false,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/generate-leads-for-business",
-   "variant": true,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/generate-leads-for-business/?utm_source=test",
-   "variant": true,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/get-a-free-quote/",
-   "variant": false,
-   "action": "301",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/get-a-free-quote/?utm_source=test",
-   "variant": true,
-   "action": "301",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/google-analytics-behavior-reports-2/",
-   "variant": false,
-   "action": "301",
-   "expect": "301",
-   "target": "/google-analytics-behavior-reports/",
-   "code": 301,
-   "location": "/google-analytics-behavior-reports/",
-   "why": "target answers 404"
-  },
-  {
-   "path": "/google-analytics-behavior-reports-2",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/google-analytics-behavior-reports/",
-   "code": 301,
-   "location": "/google-analytics-behavior-reports/",
-   "why": "target answers 404"
-  },
-  {
-   "path": "/get-a-free-quote",
-   "variant": true,
-   "action": "301",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/google-analytics-behavior-reports-2/?utm_source=test",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/google-analytics-behavior-reports/",
-   "code": 301,
-   "location": "/google-analytics-behavior-reports/",
-   "why": "target answers 404"
-  },
-  {
-   "path": "/hotel-marketing/page/2/",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/hotel-marketing/page/2",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/hotel-marketing/page/2/?utm_source=test",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/logossliderwp/features-logo/",
-   "variant": false,
-   "action": "301",
-   "expect": "301",
-   "target": "/logossliderwp/benzinga/",
-   "code": 301,
-   "location": "/logossliderwp/benzinga/",
-   "why": "target answers 404"
-  },
-  {
-   "path": "/logossliderwp/features-logo",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/logossliderwp/benzinga/",
-   "code": 301,
-   "location": "/logossliderwp/benzinga/",
-   "why": "target answers 404"
-  },
-  {
-   "path": "/logossliderwp/features-logo/?utm_source=test",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/logossliderwp/benzinga/",
-   "code": 301,
-   "location": "/logossliderwp/benzinga/",
-   "why": "target answers 404"
-  },
-  {
-   "path": "/off-page-seo-checklist/",
-   "variant": false,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/off-page-seo-checklist",
-   "variant": true,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/off-page-seo-checklist/?utm_source=test",
-   "variant": true,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/product-sitemap.xml",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/project/inpace-a-project-of-reinforce-lab/",
-   "variant": false,
-   "action": "301",
-   "expect": "301",
-   "target": "/project/inpace/",
-   "code": 301,
-   "location": "/project/inpace/",
-   "why": "target answers 301"
-  },
-  {
-   "path": "/project/inpace-a-project-of-reinforce-lab",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/project/inpace/",
-   "code": 301,
-   "location": "/project/inpace/",
-   "why": "target answers 301"
-  },
-  {
-   "path": "/project/inpace-a-project-of-reinforce-lab/?utm_source=test",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/project/inpace/",
-   "code": 301,
-   "location": "/project/inpace/",
-   "why": "target answers 301"
-  },
-  {
-   "path": "/project/inpace/",
-   "variant": false,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 301,
-   "location": "/portfolio/inpace-shop/"
-  },
-  {
-   "path": "/project/inpace/?utm_source=test",
-   "variant": true,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 301,
-   "location": "/portfolio/inpace-shop/?utm_source=test"
-  },
-  {
-   "path": "/project/microinspire-a-project-of-reinforce-lab/",
-   "variant": false,
-   "action": "301",
-   "expect": "301",
-   "target": "/project/microinspire/",
-   "code": 301,
-   "location": "/project/microinspire/",
-   "why": "target answers 404"
-  },
-  {
-   "path": "/project/inpace",
-   "variant": true,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 301,
-   "location": "/portfolio/inpace-shop/"
-  },
-  {
-   "path": "/project/microinspire-a-project-of-reinforce-lab",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/project/microinspire/",
-   "code": 301,
-   "location": "/project/microinspire/",
-   "why": "target answers 404"
-  },
-  {
-   "path": "/project/microinspire-a-project-of-reinforce-lab/?utm_source=test",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/project/microinspire/",
-   "code": 301,
-   "location": "/project/microinspire/",
-   "why": "target answers 404"
-  },
-  {
-   "path": "/project/mrco-international-a-project-of-reinforce-lab/",
-   "variant": false,
-   "action": "301",
-   "expect": "301",
-   "target": "/project/mrco-international/",
-   "code": 301,
-   "location": "/project/mrco-international/",
-   "why": "target answers 404"
-  },
-  {
-   "path": "/project/mrco-international-a-project-of-reinforce-lab",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/project/mrco-international/",
-   "code": 301,
-   "location": "/project/mrco-international/",
-   "why": "target answers 404"
-  },
-  {
-   "path": "/project/mrco-international-a-project-of-reinforce-lab/?utm_source=test",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/project/mrco-international/",
-   "code": 301,
-   "location": "/project/mrco-international/",
-   "why": "target answers 404"
-  },
-  {
-   "path": "/social-media-advertising/page/2/",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/social-media-advertising/page/2",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/social-media-advertising/page/2/?utm_source=test",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/social-media-content-ideas-for-restaurants/",
-   "variant": false,
-   "action": "301",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/social-media-content-ideas-for-restaurants",
-   "variant": true,
-   "action": "301",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/social-media-content-ideas-for-restaurants/?utm_source=test",
-   "variant": true,
-   "action": "301",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/social-media-management/page/2/",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/social-media-management/page/2",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/social-media-management/page/2/?utm_source=test",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/trends/page/2/",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/trends/page/2/?utm_source=test",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/trends/page/2",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/video-marketing/page/2/",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/video-marketing/page/2",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/video-marketing/page/2/?utm_source=test",
-   "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/video-seo/",
-   "variant": false,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/video-seo",
-   "variant": true,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/video-seo/?utm_source=test",
-   "variant": true,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2024/11/Beyond-Borders-client-of-reinforce-lab-limited.png",
-   "variant": false,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/wp-json/wc/store/v1/cart/",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/wp-json/wc/store/v1/cart",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/wp-json/wc/store/v1/cart/?utm_source=test",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 404,
-   "location": ""
-  }
- ],
+ "failures": [],
  "wp_content_404_not_410": [
   {
-   "path": "/wp-content/uploads/2020/03/Reinforce-Lab-Digital-Pricing-List-2020.pdf",
+   "path": "/wp-content/uploads/2020/02/Best-Sport-Accessories-A-Project-of-Reinforce-Lab-Digital.png",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -656,7 +53,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2020/02/Best-Sport-Accessories-A-Project-of-Reinforce-Lab-Digital.png",
+   "path": "/wp-content/uploads/2020/03/Reinforce-Lab-Digital-Pricing-List-2020.pdf",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -692,6 +89,15 @@
    "location": ""
   },
   {
+   "path": "/wp-content/uploads/2021/07/Creative-Content-Marketing-Ideas-Infographics-3-scaled.jpg.webp",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 404,
+   "location": ""
+  },
+  {
    "path": "/wp-content/uploads/2021/07/Content-marketing-ideas-for-the-healthcare-industry.jpg.webp",
    "variant": false,
    "action": "410",
@@ -710,15 +116,6 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/07/Creative-Content-Marketing-Ideas-Infographics-3-scaled.jpg.webp",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
    "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Infographic-2.jpg.webp",
    "variant": false,
    "action": "410",
@@ -728,7 +125,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-Infographic-2.jpg.webp",
+   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Inforgraphic-4.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -737,7 +134,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Inforgraphic-4.jpg.webp",
+   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-Infographic-2.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -845,15 +242,6 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants-Infographic-1.jpg.webp",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
    "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants-Infographic-2-scaled.jpg.webp",
    "variant": false,
    "action": "410",
@@ -863,7 +251,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants.jpg",
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants-Infographic-1.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -908,15 +296,6 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2022/01/Content-Marketing-vs-Social-Media-Marketing-Infographic-1.jpg.webp",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
    "path": "/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-2-scaled.jpg",
    "variant": false,
    "action": "410",
@@ -927,6 +306,15 @@
   },
   {
    "path": "/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-2-scaled.jpg.webp",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 404,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2022/01/Content-Marketing-vs-Social-Media-Marketing-Infographic-1.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -1081,7 +469,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/09/Content-Marketing-for-Banks.jpg",
+   "path": "/wp-content/uploads/2021/09/Content-Marketing-for-Banks-Infographic-1.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -1090,7 +478,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/09/Content-Marketing-for-Banks-Infographic-1.jpg",
+   "path": "/wp-content/uploads/2021/09/Content-Marketing-for-Banks.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -1117,7 +505,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/10/Real-Estate-Social-Media-Posts-Ideas.jpg",
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Churches.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -1126,7 +514,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Churches.jpg",
+   "path": "/wp-content/uploads/2021/10/Real-Estate-Social-Media-Posts-Ideas.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -1181,6 +569,15 @@
   },
   {
    "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Photographers.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
