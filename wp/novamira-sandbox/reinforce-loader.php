@@ -47,6 +47,7 @@ foreach ([
     'core/reinforce-consent.php',
     'core/reinforce-motion.php',
     'core/reinforce-frame.php',
+    'core/reinforce-redirects.php',
     'core/reinforce-speed.php',
     'services/reinforce-leadgen.php',
     'services/reinforce-llm.php',
