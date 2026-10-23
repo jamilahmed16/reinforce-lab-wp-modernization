@@ -65,7 +65,7 @@ add_action('parse_request', function () {
 add_filter('rest_pre_dispatch', function ($result, $server, $request) {
     if (strpos((string) $request->get_route(), '/wc/') !== 0) return $result;
     return new WP_Error('rl_gone', 'Gone', ['status' => 410]);
-}, 0, 3);
+}, 999, 3);
 
 /* 410 Gone with the site's normal not-found page; no "guess a nearby page" redirect afterwards */
 function rl_gone() {
