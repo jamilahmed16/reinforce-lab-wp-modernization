@@ -69,12 +69,12 @@
   "indexing_started": false,
   "keyword_analysis_active": true,
   "last_known_no_unindexed": {
-   "wpseo_total_unindexed_general_items": 1791895530,
-   "wpseo_total_unindexed_post_type_archives": 1791895530,
+   "wpseo_total_unindexed_general_items": 1792136049,
+   "wpseo_total_unindexed_post_type_archives": 1792136049,
    "wpseo_total_unindexed_posts": 1791895530,
    "wpseo_total_unindexed_terms": 1791794069,
-   "wpseo_unindexed_post_link_count": 1791895530,
-   "wpseo_unindexed_term_link_count": 1791895530
+   "wpseo_unindexed_post_link_count": 1792136049,
+   "wpseo_unindexed_term_link_count": 1792136049
   },
   "last_known_public_post_types": [
    "post",

@@ -1205,8 +1205,8 @@
   "parent": 0,
   "path": "/what-is-an-ai-growth-system/",
   "template": null,
-  "content": "<h2>What does an AI growth system actually do?</h2>\n<p>It takes work that normally passes by hand between people and tools, and connects it. A typical growth team runs five separate activities. Research finds what buyers ask and what competitors miss. Production makes pages, posts and emails. Visibility covers Google and AI search. Conversion covers enquiries and follow-up. Reporting closes the loop. Each usually has its own tool and its own owner. The work moves between them by copy and paste, meetings and spreadsheets, and the lessons from one step rarely reach the others.</p>\n<p>An AI growth system joins those steps so the output of one becomes the input of the next. The questions customers ask in sales calls shape the next brief. The pages that bring in qualified enquiries get refreshed first. The reply to a new lead starts from what the system already knows about the company and the page they read. AI does the reading, sorting, drafting and checking in between; people decide what matters, what is true and what is sent.</p>\n<h2>What are the four layers?</h2>\n<p>Every <a href=\"https://reinforcelab.online/services/ai-growth-systems/\">AI growth system we build</a> has the same four layers. What changes from one business to the next is the data, the workflows and what is measured.</p>\n<ol><li><strong>Data.</strong> Your CRM, website analytics, Google Search Console, content and sales notes. They are connected so each step works from the same facts. This includes signal capture: recording what buyers do so the system can act on their intent. Buyer signals include the searches that bring them in, the pages they read, the forms they fill in and the replies they send. Clean data matters more than lots of data. Without this layer, AI works from guesses.</li><li><strong>AI models.</strong> Models that research, summarise, sort and draft. They work from clear instructions, your approved sources and your standards. They supply capacity, not judgment.</li><li><strong>Workflows.</strong> The automated steps between tools, built on platforms such as Make or n8n and on the software you already pay for. This is where lead scoring, routing and follow-up happen. It is also where most manual hours are removed, and where approval points are placed.</li><li><strong>Reporting.</strong> A dashboard that tracks results the business cares about, not activity counts. Think hours saved, visibility in Google and AI search, qualified pipeline and revenue.</li></ol>\n[reinforce_ag_layers]\n<h2>A worked example: one enquiry, start to finish</h2>\n<p><em>Illustrative example, not a client case.</em> A B2B services firm wants more qualified enquiries from search.</p>\n<ol><li><strong>Research.</strong> The system reads Search Console queries and recent sales-call notes. It finds a question buyers keep asking that no page on the site answers well.</li><li><strong>Brief and draft.</strong> An AI model writes a brief with the sources to use and the claims to avoid. A writer and a subject expert produce the page. The evidence check flags two claims without a source, and they are fixed before publishing.</li><li><strong>Visibility.</strong> The page is published with structured data and internal links. The question joins the set the firm tracks in Google and in AI answers.</li><li><strong>Enquiry.</strong> A visitor reads the page and fills in the form. The workflow records the page and search that brought them in and adds company details. It scores the enquiry against the firm's fit rules, then routes it to the right partner with a drafted reply.</li><li><strong>Follow-up.</strong> The partner edits and sends the reply. If there is no response, a follow-up is scheduled. If the enquiry is not a fit, a polite decline is drafted for approval.</li><li><strong>Learning.</strong> The dashboard links the enquiry to the page and the original question. Next month's research starts from which pages produced qualified conversations, not from which got the most visits.</li></ol>\n<p>The same loop can run across the whole funnel: from the first search to outreach, onboarding and retention. No step here is new on its own. What makes it a system is the connection. Each step hands its result to the next without anyone retyping it, and the results change what happens next.</p>\n<h2>How is it different from AI tools, agents, automation or an agency?</h2>\n<figure class=\"wp-block-table\"><table><thead><tr><th scope=\"col\"><span class=\"sr\" style=\"position:absolute;left:-9999px\">Term</span></th><th scope=\"col\">What it is</th><th scope=\"col\">What it leaves to you</th></tr></thead><tbody><tr><th scope=\"row\">AI chatbot or writing tool</th><td>Answers or drafts on request</td><td>Deciding what to ask, checking it, moving the output anywhere useful</td></tr><tr><th scope=\"row\">AI agent</th><td>Carries out a defined task with some autonomy</td><td>Choosing the task, connecting it to your data and to the next step</td></tr><tr><th scope=\"row\">Marketing automation</th><td>Rule-based emails, scoring and CRM updates</td><td>Content, research, search visibility, and anything the rules did not foresee</td></tr><tr><th scope=\"row\">Agency retainer</th><td>People delivering agreed outputs</td><td>Connecting their outputs to your data, sales and other suppliers</td></tr><tr><th scope=\"row\"><strong>AI growth system</strong></th><td>Your data, AI models, workflows and reporting connected into one loop</td><td>Strategy, approvals, claims and relationships, which should stay human</td></tr></tbody></table></figure>\n<p>Agents, automations and agencies can all work inside an AI growth system. Some systems use several AI agents, each with one narrow job, and a person approves their work. The difference is the connection: shared data, workflows between the parts, and reporting that changes what happens next.</p>\n<h2>What should it measure?</h2>\n<p>Measure the outcomes, not the activity. Useful measures are:</p>\n<ul><li><strong>Hours saved</strong> on repeatable work, measured before and after each workflow goes live.</li><li><strong>Qualified enquiries and pipeline</strong> by source page and search, from your CRM.</li><li><strong>Visibility</strong> in Google: clicks and positions in Search Console. In AI answers: whether you are mentioned, cited and described correctly on a fixed set of questions.</li><li><strong>Speed</strong> from enquiry to first reply.</li><li><strong>Quality</strong>: claims checked, pages passing review, errors caught before publishing.</li></ul>\n<p>Google reports clicks from its AI features inside the normal Search Console performance data. So visibility in AI Overviews is measured with the same tools as the rest of search.</p>\n<h2>What does an AI growth system cost?</h2>\n<p>It depends on scope. Cost grows with the number of workflows, data sources and approval steps, and with how much content the system produces. Regulated fields and multiple markets add more. A single workflow on tools you already use, such as automated enquiry handling, is a small project. A system that researches, produces and monitors content across markets is a large one. Any honest price comes after mapping the current process, which is why it is worth starting with a <a href=\"https://reinforcelab.online/search-authority-diagnostic/\">diagnostic</a> rather than a price list.</p>\n<h2>What goes wrong, and what must stay human?</h2>\n<p>The common failures are predictable:</p>\n<ul><li><strong>Automating a broken process.</strong> If the hand-off was badly designed, automation repeats the mistake faster. Fix the process first.</li><li><strong>No source of truth.</strong> If services, prices and claims are not written down and approved, AI fills the gaps with plausible but wrong text.</li><li><strong>Publishing without review.</strong> Google says it rewards helpful, original content, however it is made. But using automation mainly to game rankings breaks its spam rules.</li><li><strong>No monitoring.</strong> Workflows can stop working without warning when a form, field or tool changes. Someone has to watch the logs.</li><li><strong>Ignoring data rules.</strong> Enquiry and customer data is personal data. Under UK and EU data protection law, you need a lawful reason to use it. In health, pharma and finance, claims also carry extra legal weight.</li></ul>\n<p>What stays human: the strategy, the priorities, the truth of every claim, what is published or sent to customers, and the relationships. The NIST AI Risk Management Framework asks any team using AI to keep people in charge and accountable.</p>\n<h2>How does Reinforce Lab use one itself?</h2>\n<p>We started building our own AI growth system with this website. We followed a structured, data-driven process and wrote down every step and every decision.</p>\n<ul><li><strong>Data first.</strong> We pulled 16 months of Google Search Console data, Google Analytics 4 reports and a Screaming Frog crawl of the old site. That showed what to keep, fix or remove before any page was planned.</li>\n<li><strong>Demand checked.</strong> We use Semrush to see how many people search for a topic before we plan a page for it.</li>\n<li><strong>Research before writing.</strong> We use Exa, an AI search engine, to read the top results for each topic. We list the questions and terms they cover, then write a page that covers them better and in plain words.</li>\n<li><strong>AI that does the build.</strong> Claude Code, the AI coding agent from Anthropic, builds and edits the pages. It connects to our WordPress site, sets the titles and schema in Yoast SEO, and runs our checks.</li>\n<li><strong>Automatic checks.</strong> Every page is tested before it goes live: our writing rules, an 8th-grade reading level, and a 10-point search and AI-search standard. At the time of writing, all 55 published pages pass.</li>\n<li><strong>Sources checked on the day.</strong> Each outside claim links to its source, and each link is opened and read before publishing.</li>\n<li><strong>People decide.</strong> The founder approves every page, every new URL and every change to an existing one. Each decision is logged with the reason.</li>\n<li><strong>One post at a time.</strong> Articles are published singly, never in bulk.</li></ul>\n<p>It uses the same four layers: data (Search Console, Analytics, Semrush), AI models (Claude), workflows and checks, and a record of what changed. This is the first stage of our own system, and we extend it step by step. See how we <a href=\"https://reinforcelab.online/services/ai-growth-systems/\">build these systems for clients</a>.</p>\n<h2>Do you need one? A five-question test</h2>\n<ol><li>Does the same information get retyped between two or more tools every week?</li><li>Do enquiries wait hours or days for a first reply?</li><li>Can you say which pages or searches produce qualified pipeline, as well as traffic?</li><li>Do lessons from sales calls reach your website and content?</li><li>Do you know whether AI tools such as ChatGPT or Google's AI Overviews describe your business correctly?</li></ol>\n<p>A yes to question 1 or 2 is a reason to start. So is a no to two or more of questions 3 to 5. Begin with the hand-off that costs the most time or the most revenue. That is your first system.</p>\n<h2>How do you start?</h2>\n<p>Pick one goal and one path: for example, from a buyer's question in search to a qualified conversation. Map who does what today, find the weakest hand-off, and build the four layers around that path only. Prove it works and is measured, then extend the same foundation to the next goal. <a href=\"https://reinforcelab.online/search-authority-os/\">Search Authority OS</a> is one example of a system built this way, for search and content. Building everything at once is the most common reason these projects stall.</p>",
-  "content_md5": "19e335310f7ad4406e43c655246c7936",
+  "content": "<h2>What does an AI growth system actually do?</h2>\n<p>It takes work that normally passes by hand between people and tools, and connects it. A typical growth team runs five separate activities. Research finds what buyers ask and what competitors miss. Production makes pages, posts and emails. Visibility covers Google and AI search. Conversion covers enquiries and follow-up. Reporting closes the loop. Each usually has its own tool and its own owner. The work moves between them by copy and paste, meetings and spreadsheets, and the lessons from one step rarely reach the others.</p>\n<p>An AI growth system joins those steps so the output of one becomes the input of the next. The questions customers ask in sales calls shape the next brief. The pages that bring in qualified enquiries get refreshed first. The reply to a new lead starts from what the system already knows about the company and the page they read. AI does the reading, sorting, drafting and checking in between; people decide what matters, what is true and what is sent.</p>\n<h2>What are the four layers?</h2>\n<p>Every <a href=\"/services/ai-growth-systems/\">AI growth system we build</a> has the same four layers. What changes from one business to the next is the data, the workflows and what is measured.</p>\n<ol><li><strong>Data.</strong> Your CRM, website analytics, Google Search Console, content and sales notes. They are connected so each step works from the same facts. This includes signal capture: recording what buyers do so the system can act on their intent. Buyer signals include the searches that bring them in, the pages they read, the forms they fill in and the replies they send. Clean data matters more than lots of data. Without this layer, AI works from guesses.</li><li><strong>AI models.</strong> Models that research, summarise, sort and draft. They work from clear instructions, your approved sources and your standards. They supply capacity, not judgment.</li><li><strong>Workflows.</strong> The automated steps between tools, built on platforms such as Make or n8n and on the software you already pay for. This is where lead scoring, routing and follow-up happen. It is also where most manual hours are removed, and where approval points are placed.</li><li><strong>Reporting.</strong> A dashboard that tracks results the business cares about, not activity counts. Think hours saved, visibility in Google and AI search, qualified pipeline and revenue.</li></ol>\n[reinforce_ag_layers]\n<h2>A worked example: one enquiry, start to finish</h2>\n<p><em>Illustrative example, not a client case.</em> A B2B services firm wants more qualified enquiries from search.</p>\n<ol><li><strong>Research.</strong> The system reads Search Console queries and recent sales-call notes. It finds a question buyers keep asking that no page on the site answers well.</li><li><strong>Brief and draft.</strong> An AI model writes a brief with the sources to use and the claims to avoid. A writer and a subject expert produce the page. The evidence check flags two claims without a source, and they are fixed before publishing.</li><li><strong>Visibility.</strong> The page is published with structured data and internal links. The question joins the set the firm tracks in Google and in AI answers.</li><li><strong>Enquiry.</strong> A visitor reads the page and fills in the form. The workflow records the page and search that brought them in and adds company details. It scores the enquiry against the firm's fit rules, then routes it to the right partner with a drafted reply.</li><li><strong>Follow-up.</strong> The partner edits and sends the reply. If there is no response, a follow-up is scheduled. If the enquiry is not a fit, a polite decline is drafted for approval.</li><li><strong>Learning.</strong> The dashboard links the enquiry to the page and the original question. Next month's research starts from which pages produced qualified conversations, not from which got the most visits.</li></ol>\n<p>The same loop can run across the whole funnel: from the first search to outreach, onboarding and retention. No step here is new on its own. What makes it a system is the connection. Each step hands its result to the next without anyone retyping it, and the results change what happens next.</p>\n<h2>How is it different from AI tools, agents, automation or an agency?</h2>\n<figure class=\"wp-block-table\"><table><thead><tr><th scope=\"col\"><span class=\"sr\" style=\"position:absolute;left:-9999px\">Term</span></th><th scope=\"col\">What it is</th><th scope=\"col\">What it leaves to you</th></tr></thead><tbody><tr><th scope=\"row\">AI chatbot or writing tool</th><td>Answers or drafts on request</td><td>Deciding what to ask, checking it, moving the output anywhere useful</td></tr><tr><th scope=\"row\">AI agent</th><td>Carries out a defined task with some autonomy</td><td>Choosing the task, connecting it to your data and to the next step</td></tr><tr><th scope=\"row\">Marketing automation</th><td>Rule-based emails, scoring and CRM updates</td><td>Content, research, search visibility, and anything the rules did not foresee</td></tr><tr><th scope=\"row\">Agency retainer</th><td>People delivering agreed outputs</td><td>Connecting their outputs to your data, sales and other suppliers</td></tr><tr><th scope=\"row\"><strong>AI growth system</strong></th><td>Your data, AI models, workflows and reporting connected into one loop</td><td>Strategy, approvals, claims and relationships, which should stay human</td></tr></tbody></table></figure>\n<p>Agents, automations and agencies can all work inside an AI growth system. Some systems use several AI agents, each with one narrow job, and a person approves their work. The difference is the connection: shared data, workflows between the parts, and reporting that changes what happens next.</p>\n<h2>What should it measure?</h2>\n<p>Measure the outcomes, not the activity. Useful measures are:</p>\n<ul><li><strong>Hours saved</strong> on repeatable work, measured before and after each workflow goes live.</li><li><strong>Qualified enquiries and pipeline</strong> by source page and search, from your CRM.</li><li><strong>Visibility</strong> in Google: clicks and positions in Search Console. In AI answers: whether you are mentioned, cited and described correctly on a fixed set of questions.</li><li><strong>Speed</strong> from enquiry to first reply.</li><li><strong>Quality</strong>: claims checked, pages passing review, errors caught before publishing.</li></ul>\n<p>Google reports clicks from its AI features inside the normal Search Console performance data. So visibility in AI Overviews is measured with the same tools as the rest of search.</p>\n<h2>What does an AI growth system cost?</h2>\n<p>It depends on scope. Cost grows with the number of workflows, data sources and approval steps, and with how much content the system produces. Regulated fields and multiple markets add more. A single workflow on tools you already use, such as automated enquiry handling, is a small project. A system that researches, produces and monitors content across markets is a large one. Any honest price comes after mapping the current process, which is why it is worth starting with a <a href=\"/search-authority-diagnostic/\">diagnostic</a> rather than a price list.</p>\n<h2>What goes wrong, and what must stay human?</h2>\n<p>The common failures are predictable:</p>\n<ul><li><strong>Automating a broken process.</strong> If the hand-off was badly designed, automation repeats the mistake faster. Fix the process first.</li><li><strong>No source of truth.</strong> If services, prices and claims are not written down and approved, AI fills the gaps with plausible but wrong text.</li><li><strong>Publishing without review.</strong> Google says it rewards helpful, original content, however it is made. But using automation mainly to game rankings breaks its spam rules.</li><li><strong>No monitoring.</strong> Workflows can stop working without warning when a form, field or tool changes. Someone has to watch the logs.</li><li><strong>Ignoring data rules.</strong> Enquiry and customer data is personal data. Under UK and EU data protection law, you need a lawful reason to use it. In health, pharma and finance, claims also carry extra legal weight.</li></ul>\n<p>What stays human: the strategy, the priorities, the truth of every claim, what is published or sent to customers, and the relationships. The NIST AI Risk Management Framework asks any team using AI to keep people in charge and accountable.</p>\n<h2>How does Reinforce Lab use one itself?</h2>\n<p>We started building our own AI growth system with this website. We followed a structured, data-driven process and wrote down every step and every decision.</p>\n<ul><li><strong>Data first.</strong> We pulled 16 months of Google Search Console data, Google Analytics 4 reports and a Screaming Frog crawl of the old site. That showed what to keep, fix or remove before any page was planned.</li>\n<li><strong>Demand checked.</strong> We use Semrush to see how many people search for a topic before we plan a page for it.</li>\n<li><strong>Research before writing.</strong> We use Exa, an AI search engine, to read the top results for each topic. We list the questions and terms they cover, then write a page that covers them better and in plain words.</li>\n<li><strong>AI that does the build.</strong> Claude Code, the AI coding agent from Anthropic, builds and edits the pages. It connects to our WordPress site, sets the titles and schema in Yoast SEO, and runs our checks.</li>\n<li><strong>Automatic checks.</strong> Every page is tested before it goes live: our writing rules, an 8th-grade reading level, and a 10-point search and AI-search standard. At the time of writing, all 55 published pages pass.</li>\n<li><strong>Sources checked on the day.</strong> Each outside claim links to its source, and each link is opened and read before publishing.</li>\n<li><strong>People decide.</strong> The founder approves every page, every new URL and every change to an existing one. Each decision is logged with the reason.</li>\n<li><strong>One post at a time.</strong> Articles are published singly, never in bulk.</li></ul>\n<p>It uses the same four layers: data (Search Console, Analytics, Semrush), AI models (Claude), workflows and checks, and a record of what changed. This is the first stage of our own system, and we extend it step by step. See how we <a href=\"/services/ai-growth-systems/\">build these systems for clients</a>.</p>\n<h2>Do you need one? A five-question test</h2>\n<ol><li>Does the same information get retyped between two or more tools every week?</li><li>Do enquiries wait hours or days for a first reply?</li><li>Can you say which pages or searches produce qualified pipeline, as well as traffic?</li><li>Do lessons from sales calls reach your website and content?</li><li>Do you know whether AI tools such as ChatGPT or Google's AI Overviews describe your business correctly?</li></ol>\n<p>A yes to question 1 or 2 is a reason to start. So is a no to two or more of questions 3 to 5. Begin with the hand-off that costs the most time or the most revenue. That is your first system.</p>\n<h2>How do you start?</h2>\n<p>Pick one goal and one path: for example, from a buyer's question in search to a qualified conversation. Map who does what today, find the weakest hand-off, and build the four layers around that path only. Prove it works and is measured, then extend the same foundation to the next goal. <a href=\"/search-authority-os/\">Search Authority OS</a> is one example of a system built this way, for search and content. Building everything at once is the most common reason these projects stall.</p>",
+  "content_md5": "06189bc2e55339a652c517c9de45558f",
   "carried": null,
   "excerpt": "An AI growth system connects your data, AI models, workflows and reporting so research, content, search and follow-up run as one loop.",
   "date": "2026-10-05 21:56:05",
@@ -1224,7 +1224,7 @@
    "rl_e_field": "Marketing operations, search and automation",
    "rl_e_definition": "An AI growth system is a connected set of business data, AI models, automated workflows and outcome reporting that runs research, content, search visibility and lead follow-up as one continuous loop, with people approving the decisions that matter.",
    "rl_e_def_note": "Reinforce Lab definition. \"AI Growth Systems\" is the category Reinforce Lab works in; the term is new and not yet standardised.",
-   "rl_e_facts": "Built from | Four layers: data, AI models, workflows, reporting | https://reinforcelab.online/services/ai-growth-systems/\nReplaces | Manual hand-offs between tools and teams\nMeasured by | Hours saved, qualified pipeline, visibility in Google and AI search\nStays human | Strategy, claims, approvals, relationships\nExample system | Search Authority OS | https://reinforcelab.online/search-authority-os/",
+   "rl_e_facts": "Built from | Four layers: data, AI models, workflows, reporting | /services/ai-growth-systems/\nReplaces | Manual hand-offs between tools and teams\nMeasured by | Hours saved, qualified pipeline, visibility in Google and AI search\nStays human | Strategy, claims, approvals, relationships\nExample system | Search Authority OS | /search-authority-os/",
    "rl_e_tensec": "It links the tools and steps that usually run apart: research, content, search, enquiries and reporting. Each one feeds the next, and AI does the repetitive work in between.",
    "rl_e_onemin": "Most growth work is split across separate tools and people. One person researches, one writes, one checks rankings, one copies enquiries into the CRM and one builds a report. An AI growth system links those steps. Your data (CRM, analytics, Search Console) feeds AI models that research and draft. Automated workflows move the results between tools. A dashboard reports what changed in hours, visibility and pipeline. People stay in charge of what gets published, sent and promised. It is not a single product: it is built around one business goal first, then extended.",
    "rl_e_steps": "Collect | Data from your CRM, analytics, Search Console and sales conversations lands in one place.\nDecide | AI models find the questions, gaps and leads worth acting on; a person sets the priorities.\nProduce | AI drafts briefs, pages, replies and reports from approved sources; a person approves what goes out.\nAct | Workflows publish, route enquiries, update the CRM and send follow-ups at the right moment.\nLearn | The dashboard shows what moved; the next cycle starts from those results.",
@@ -1233,7 +1233,7 @@
    "rl_e_ex_label": "One website enquiry, before and after",
    "rl_e_ex_before": "Before | An enquiry lands in a shared inbox. Someone copies it into the CRM the next morning, looks up the company, guesses who should answer, and replies a day later. Nobody records which page brought it in.",
    "rl_e_ex_after": "After | The enquiry is matched to the page and search that brought it, enriched with company details, scored against agreed fit rules and routed to the right person with a drafted reply. The person checks and sends it. The dashboard counts it against the page that produced it.",
-   "rl_e_related": "Marketing automation | Rule-based emails, scoring and CRM updates triggered by what leads do | Part of it | https://reinforcelab.online/services/marketing-automation/\nAI workflow automation | AI that reads, sorts and drafts inside business processes | Part of it | https://reinforcelab.online/services/ai-workflow-automation/\nAI search optimization | Being found, cited and described correctly in AI answers | Part of it | https://reinforcelab.online/services/ai-search-optimization/\nSearch Authority OS | Reinforce Lab's AI growth system for search and content | Example | https://reinforcelab.online/search-authority-os/",
+   "rl_e_related": "Marketing automation | Rule-based emails, scoring and CRM updates triggered by what leads do | Part of it | /services/marketing-automation/\nAI workflow automation | AI that reads, sorts and drafts inside business processes | Part of it | /services/ai-workflow-automation/\nAI search optimization | Being found, cited and described correctly in AI answers | Part of it | /services/ai-search-optimization/\nSearch Authority OS | Reinforce Lab's AI growth system for search and content | Example | /search-authority-os/",
    "rl_e_cta_service": "services/ai-growth-systems",
    "rl_e_cta_head": "Find the first system worth building",
    "rl_e_cta_sub": "See the systems Reinforce Lab builds, how an engagement runs and where to start.",
@@ -1252,7 +1252,7 @@
   "path": "/top-advantages-and-disadvantages-of-using-social-media/",
   "template": null,
   "content": null,
-  "content_md5": "eb734e6fe6a363194932e31bf94ca120",
+  "content_md5": "1693c3be629fc708ee9b0ee9e43806c8",
   "carried": {
    "prod_id": 215639,
    "from": "https://reinforcelab.com/top-advantages-and-disadvantages-of-using-social-media/",
@@ -1280,7 +1280,7 @@
   "path": "/creative-content-marketing-ideas/",
   "template": null,
   "content": null,
-  "content_md5": "c7a9a9a87095991f86c775f98e3b56d4",
+  "content_md5": "e44a3da35e7eb76d8d1cf291aa716e49",
   "carried": {
    "prod_id": 213285,
    "from": "https://reinforcelab.com/creative-content-marketing-ideas/",
@@ -1337,7 +1337,7 @@
   "path": "/20-content-marketing-ideas-for-restaurants/",
   "template": null,
   "content": null,
-  "content_md5": "990943173e9bdd854e5407ef77db5d7d",
+  "content_md5": "2c04e73a366bc867f835052c1b53219f",
   "carried": {
    "prod_id": 213575,
    "from": "https://reinforcelab.com/20-content-marketing-ideas-for-restaurants/",
@@ -1365,7 +1365,7 @@
   "path": "/a-complete-guide-to-social-media-management/",
   "template": null,
   "content": null,
-  "content_md5": "6df88e354311e1b4366c68bded48f3e9",
+  "content_md5": "699bb8d12caf12336ae09b4ea35c5d09",
   "carried": {
    "prod_id": 215405,
    "from": "https://reinforcelab.com/a-complete-guide-to-social-media-management/",
@@ -1393,7 +1393,7 @@
   "path": "/a2-wordpress-hosting/",
   "template": null,
   "content": null,
-  "content_md5": "4371c48fcad14a1108b5ab9d399c8ef2",
+  "content_md5": "56efd4358cb5156663d44589c0385930",
   "carried": {
    "prod_id": 224911,
    "from": "https://reinforcelab.com/a2-wordpress-hosting/",
@@ -1421,7 +1421,7 @@
   "path": "/ai-content-writing-tools/",
   "template": null,
   "content": null,
-  "content_md5": "375ca223ac4c181eb765b52c91cff048",
+  "content_md5": "35ee1b341f8fc5137961725b3df22f99",
   "carried": {
    "prod_id": 224334,
    "from": "https://reinforcelab.com/ai-content-writing-tools/",
@@ -1449,7 +1449,7 @@
   "path": "/anchor-text-optimization-in-seo/",
   "template": null,
   "content": null,
-  "content_md5": "a73fbb09753a8a848171c51bff39971c",
+  "content_md5": "9e2efebb27072de9f8e026f995b82aa2",
   "carried": {
    "prod_id": 216174,
    "from": "https://reinforcelab.com/anchor-text-optimization-in-seo/",
@@ -1477,7 +1477,7 @@
   "path": "/b2b-seo/",
   "template": null,
   "content": null,
-  "content_md5": "a5ba11ba7774d2e4a7c2ad9b21570ecc",
+  "content_md5": "732d4a1630fdf7875509acf9e036db6b",
   "carried": {
    "prod_id": 227848,
    "from": "https://reinforcelab.com/b2b-seo/",
@@ -1505,7 +1505,7 @@
   "path": "/b2b-seo-agencies/",
   "template": null,
   "content": null,
-  "content_md5": "eaa27aa6076532d0a2cc5e92e6d41093",
+  "content_md5": "a108d50d0552f5bc521c587e22d9bed2",
   "carried": {
    "prod_id": 229462,
    "from": "https://reinforcelab.com/b2b-seo-agencies/",
@@ -1533,7 +1533,7 @@
   "path": "/beaver-builder-review/",
   "template": null,
   "content": null,
-  "content_md5": "9c2794e57b7f9dde157be45544970286",
+  "content_md5": "0283545f6acb33c5185ce32cffcfcf1b",
   "carried": {
    "prod_id": 227440,
    "from": "https://reinforcelab.com/beaver-builder-review/",
@@ -1561,7 +1561,7 @@
   "path": "/best-cloud-web-hosting-services/",
   "template": null,
   "content": null,
-  "content_md5": "4cab198d61abb8e349fe8e4b97abc252",
+  "content_md5": "3e0c2a045988723259042ab483d60e08",
   "carried": {
    "prod_id": 221815,
    "from": "https://reinforcelab.com/best-cloud-web-hosting-services/",
@@ -1589,7 +1589,7 @@
   "path": "/best-digital-marketing-agency-in-dhaka-bangladesh/",
   "template": null,
   "content": null,
-  "content_md5": "b9c79f38fcda69d5c923a8e34345e345",
+  "content_md5": "66acef543b248dabb9f30565c83fa10c",
   "carried": {
    "prod_id": 213959,
    "from": "https://reinforcelab.com/best-digital-marketing-agency-in-dhaka-bangladesh/",
@@ -1617,7 +1617,7 @@
   "path": "/best-examples-of-great-food-copywriting/",
   "template": null,
   "content": null,
-  "content_md5": "1452b9db18fe5c18f61983fa86cf11cf",
+  "content_md5": "f7bcdf309a8e77045801c84ee41f55da",
   "carried": {
    "prod_id": 220982,
    "from": "https://reinforcelab.com/best-examples-of-great-food-copywriting/",
@@ -1645,7 +1645,7 @@
   "path": "/best-seo-practices/",
   "template": null,
   "content": null,
-  "content_md5": "598a197f2e60ee0fd7fe712358cf54eb",
+  "content_md5": "91fab525cd56432a42af52165265ad3b",
   "carried": {
    "prod_id": 221694,
    "from": "https://reinforcelab.com/best-seo-practices/",
@@ -1673,7 +1673,7 @@
   "path": "/best-ways-of-mobile-optimization-to-increase-your-conversions/",
   "template": null,
   "content": null,
-  "content_md5": "951d2df2a947e3a6a6a6588a379c5b9b",
+  "content_md5": "fc0ed7cb12f062d5399b9f3635737bf4",
   "carried": {
    "prod_id": 216208,
    "from": "https://reinforcelab.com/best-ways-of-mobile-optimization-to-increase-your-conversions/",
@@ -1701,7 +1701,7 @@
   "path": "/best-web-hosting-services/",
   "template": null,
   "content": null,
-  "content_md5": "9d697e60c2cd01fb6caf5dd2dc5708ba",
+  "content_md5": "fb0bf3a34327b165ebe549384ac7886f",
   "carried": {
    "prod_id": 221743,
    "from": "https://reinforcelab.com/best-web-hosting-services/",
@@ -1729,7 +1729,7 @@
   "path": "/blog-promotion-ideas/",
   "template": null,
   "content": null,
-  "content_md5": "768906769e88537e0ea6ceff4d017444",
+  "content_md5": "3fa1c9ed684c6f28c39057ce579688e8",
   "carried": {
    "prod_id": 217404,
    "from": "https://reinforcelab.com/blog-promotion-ideas/",
@@ -1757,7 +1757,7 @@
   "path": "/bluehost-wordpress-hosting/",
   "template": null,
   "content": null,
-  "content_md5": "726845e611f2b8c32bfbfa2e8a8ed3f8",
+  "content_md5": "3093e663fdfdd7cde4bd628d54e29dc7",
   "carried": {
    "prod_id": 225790,
    "from": "https://reinforcelab.com/bluehost-wordpress-hosting/",
@@ -1785,7 +1785,7 @@
   "path": "/church-marketing-strategies/",
   "template": null,
   "content": null,
-  "content_md5": "d7ac1a746ce5d4808dc886ed743a82aa",
+  "content_md5": "a51ecef5a0312dccaf9aaceab670dce0",
   "carried": {
    "prod_id": 214540,
    "from": "https://reinforcelab.com/church-marketing-strategies/",
@@ -1813,7 +1813,7 @@
   "path": "/clickup-review/",
   "template": null,
   "content": null,
-  "content_md5": "67e6f56ad06344375761850f0c306749",
+  "content_md5": "eb74d4b1aa2d2821f8a4c12fc82439c4",
   "carried": {
    "prod_id": 227974,
    "from": "https://reinforcelab.com/clickup-review/",
@@ -1841,7 +1841,7 @@
   "path": "/cloudways-hosting/",
   "template": null,
   "content": null,
-  "content_md5": "2f4ac1e469ca645afa6d666cf44c1659",
+  "content_md5": "79ba6d081de8c800319409d168bdde96",
   "carried": {
    "prod_id": 224972,
    "from": "https://reinforcelab.com/cloudways-hosting/",
@@ -1869,7 +1869,7 @@
   "path": "/content-marketing-for-banks/",
   "template": null,
   "content": null,
-  "content_md5": "9b6f8c28fabb58fc875cd2ad4ac6c0e1",
+  "content_md5": "70039fb3b522fc687531cd12992df2c6",
   "carried": {
    "prod_id": 214199,
    "from": "https://reinforcelab.com/content-marketing-for-banks/",
@@ -1897,7 +1897,7 @@
   "path": "/content-marketing-for-plastic-surgeons/",
   "template": null,
   "content": null,
-  "content_md5": "f08e283775831defbaeb09ebb99d9b87",
+  "content_md5": "37da83c9c930589515670f8312debaa9",
   "carried": {
    "prod_id": 224800,
    "from": "https://reinforcelab.com/content-marketing-for-plastic-surgeons/",
@@ -1926,7 +1926,7 @@
   "path": "/content-marketing-ideas-for-healthcare-industry/",
   "template": null,
   "content": null,
-  "content_md5": "f58a51094307e371641cf13b232f12b9",
+  "content_md5": "732b7546a23f6cb2a8f9f69b318bee65",
   "carried": {
    "prod_id": 213568,
    "from": "https://reinforcelab.com/content-marketing-ideas-for-healthcare-industry/",
@@ -1955,7 +1955,7 @@
   "path": "/content-marketing-ideas-for-small-business/",
   "template": null,
   "content": null,
-  "content_md5": "b89d5302a0923f07588562682b0d691f",
+  "content_md5": "2ed6342772de2c8e0b2feaabc2e98992",
   "carried": {
    "prod_id": 213460,
    "from": "https://reinforcelab.com/content-marketing-ideas-for-small-business/",
@@ -1983,7 +1983,7 @@
   "path": "/content-marketing-ideas-for-social-media/",
   "template": null,
   "content": null,
-  "content_md5": "9c6b6d0cc97e3a8e0e97bec123d22537",
+  "content_md5": "420bb366b5082b3dc78f4dcb5937dc87",
   "carried": {
    "prod_id": 214145,
    "from": "https://reinforcelab.com/content-marketing-ideas-for-social-media/",
@@ -2011,7 +2011,7 @@
   "path": "/content-marketing-strategy-for-b2b/",
   "template": null,
   "content": null,
-  "content_md5": "42e3b8622abbd18a30999f5ff1662739",
+  "content_md5": "3fd833e5def0fa31aeeaa42ed289817c",
   "carried": {
    "prod_id": 214106,
    "from": "https://reinforcelab.com/content-marketing-strategy-for-b2b/",
@@ -2039,7 +2039,7 @@
   "path": "/content-marketing-vs-social-media-marketing/",
   "template": null,
   "content": null,
-  "content_md5": "4f1c1157e226d2c1c81a5dc61a6ef0c5",
+  "content_md5": "82937a3334b93551fbff2bfc220036da",
   "carried": {
    "prod_id": 215273,
    "from": "https://reinforcelab.com/content-marketing-vs-social-media-marketing/",
@@ -2095,7 +2095,7 @@
   "path": "/dental-seo/",
   "template": null,
   "content": null,
-  "content_md5": "893b8fd6e2af020fb5b49b4d064aa38f",
+  "content_md5": "252413e623de3f4cfec0473406cf41cc",
   "carried": {
    "prod_id": 227452,
    "from": "https://reinforcelab.com/dental-seo/",
@@ -2124,7 +2124,7 @@
   "path": "/different-types-of-facebook-ads/",
   "template": null,
   "content": null,
-  "content_md5": "1b6c990d3e24e7f1ded317c0351a6042",
+  "content_md5": "483969e819837564716f4acc971e9a4d",
   "carried": {
    "prod_id": 221939,
    "from": "https://reinforcelab.com/different-types-of-facebook-ads/",
@@ -2152,7 +2152,7 @@
   "path": "/dreamhost-wordpress-hosting/",
   "template": null,
   "content": null,
-  "content_md5": "6ff9453f0e629e4ee3efff26bd2bc3dd",
+  "content_md5": "35409d821e2b5dc61b3d7092e20a9c61",
   "carried": {
    "prod_id": 225782,
    "from": "https://reinforcelab.com/dreamhost-wordpress-hosting/",
@@ -2180,7 +2180,7 @@
   "path": "/dynamic-creative-optimization/",
   "template": null,
   "content": null,
-  "content_md5": "671c4d8e88c0b2afad8ed83e0c0e7c33",
+  "content_md5": "685e5fcccd149f4b1ced942ef792b6f5",
   "carried": {
    "prod_id": 226397,
    "from": "https://reinforcelab.com/dynamic-creative-optimization/",
@@ -2237,7 +2237,7 @@
   "path": "/find-competitor-keywords/",
   "template": null,
   "content": null,
-  "content_md5": "86fc8513c8dc4824748538887dce5f5d",
+  "content_md5": "e052093d53546631c22411b446db1b41",
   "carried": {
    "prod_id": 224790,
    "from": "https://reinforcelab.com/find-competitor-keywords/",
@@ -2265,7 +2265,7 @@
   "path": "/flywheel-wordpress-hosting/",
   "template": null,
   "content": null,
-  "content_md5": "646fddd547be773bbb64e99f015cc4c8",
+  "content_md5": "181395c0bd3882f358161b4ba9896765",
   "carried": {
    "prod_id": 225784,
    "from": "https://reinforcelab.com/flywheel-wordpress-hosting/",
@@ -2293,7 +2293,7 @@
   "path": "/google-penalty-recovery/",
   "template": null,
   "content": null,
-  "content_md5": "24e594863c064d937c6ea44f7fd11d08",
+  "content_md5": "c5167a5e44a1c4a0fb572af98a56a497",
   "carried": {
    "prod_id": 218068,
    "from": "https://reinforcelab.com/google-penalty-recovery/",
@@ -2321,7 +2321,7 @@
   "path": "/guide-to-ux-copywriting/",
   "template": null,
   "content": null,
-  "content_md5": "253b167e08156d5309ef1713f09f57ae",
+  "content_md5": "aa1863857660fe3ceea0f3fccd192762",
   "carried": {
    "prod_id": 220872,
    "from": "https://reinforcelab.com/guide-to-ux-copywriting/",
@@ -2349,7 +2349,7 @@
   "path": "/hostinger-web-hosting/",
   "template": null,
   "content": null,
-  "content_md5": "291a3ed070593e6a15a9936aa459ef45",
+  "content_md5": "ec8251592f29be621d29d33959c79261",
   "carried": {
    "prod_id": 225018,
    "from": "https://reinforcelab.com/hostinger-web-hosting/",
@@ -2377,7 +2377,7 @@
   "path": "/how-can-companies-be-socially-responsible-marketers/",
   "template": null,
   "content": null,
-  "content_md5": "c821dce22a0ce6583bb36083072244d5",
+  "content_md5": "081b5b74123ef343ba847deb2c4499cb",
   "carried": {
    "prod_id": 216152,
    "from": "https://reinforcelab.com/how-can-companies-be-socially-responsible-marketers/",
@@ -2405,7 +2405,7 @@
   "path": "/how-to-avoid-zero-click-searches/",
   "template": null,
   "content": null,
-  "content_md5": "5bc4f1372d8b880f2f7fd20885e3d679",
+  "content_md5": "ab1ccd92a940e373797e0092485ae40f",
   "carried": {
    "prod_id": 215527,
    "from": "https://reinforcelab.com/how-to-avoid-zero-click-searches/",
@@ -2433,7 +2433,7 @@
   "path": "/how-to-do-local-seo-audit-11-easy-steps/",
   "template": null,
   "content": null,
-  "content_md5": "b3520fe6fcf826c559cd78090030e7c9",
+  "content_md5": "505c6d0b3004564caed3857a3fe9511c",
   "carried": {
    "prod_id": 216982,
    "from": "https://reinforcelab.com/how-to-do-local-seo-audit-11-easy-steps/",
@@ -2461,7 +2461,7 @@
   "path": "/how-to-find-your-target-audience-on-instagram/",
   "template": null,
   "content": null,
-  "content_md5": "dbb4eb1ccd23c8d3a8a64895eaf0c092",
+  "content_md5": "8fd71b8409a592de5dde4da92a4f5cca",
   "carried": {
    "prod_id": 215104,
    "from": "https://reinforcelab.com/how-to-find-your-target-audience-on-instagram/",
@@ -2489,7 +2489,7 @@
   "path": "/how-to-optimize-linkedin-profile-for-seo/",
   "template": null,
   "content": null,
-  "content_md5": "b9b8ee2395feee5e28da85d690a18f79",
+  "content_md5": "366269e342d6e8eb901c5f328bdf71fe",
   "carried": {
    "prod_id": 217097,
    "from": "https://reinforcelab.com/how-to-optimize-linkedin-profile-for-seo/",
@@ -2517,7 +2517,7 @@
   "path": "/how-to-use-keywords-in-content/",
   "template": null,
   "content": null,
-  "content_md5": "391e1ebf73bf39dad874ac215459d006",
+  "content_md5": "1ad355d9262ca79b13fb2974e202d2f4",
   "carried": {
    "prod_id": 216009,
    "from": "https://reinforcelab.com/how-to-use-keywords-in-content/",
@@ -2545,7 +2545,7 @@
   "path": "/how-to-write-seo-friendly-blog-posts/",
   "template": null,
   "content": null,
-  "content_md5": "edc9604fd2c8d7f3fb22bc6cb193b06e",
+  "content_md5": "25cb08fba376590c09451ef472473506",
   "carried": {
    "prod_id": 215829,
    "from": "https://reinforcelab.com/how-to-write-seo-friendly-blog-posts/",
@@ -2573,7 +2573,7 @@
   "path": "/ideas-for-personal-website-content/",
   "template": null,
   "content": null,
-  "content_md5": "4b37e2d7997d106e46457b3f5cdf3468",
+  "content_md5": "4dec0c70e31cc604477d4bf3c913f60f",
   "carried": {
    "prod_id": 220674,
    "from": "https://reinforcelab.com/ideas-for-personal-website-content/",
@@ -2601,7 +2601,7 @@
   "path": "/invest-in-seo/",
   "template": null,
   "content": null,
-  "content_md5": "67d004d78e3f8040973cc8d55762430d",
+  "content_md5": "121cee51f4d1b4fe1b51e73d731ca827",
   "carried": {
    "prod_id": 227960,
    "from": "https://reinforcelab.com/invest-in-seo/",
@@ -2657,7 +2657,7 @@
   "path": "/kinsta-wordpress-hosting/",
   "template": null,
   "content": null,
-  "content_md5": "6b822e1d27f71278411d8b408311c56d",
+  "content_md5": "4907c300677963e7b016decd2744f04e",
   "carried": {
    "prod_id": 224903,
    "from": "https://reinforcelab.com/kinsta-wordpress-hosting/",
@@ -2685,7 +2685,7 @@
   "path": "/latest-seo-update-search-engine-updates/",
   "template": null,
   "content": null,
-  "content_md5": "d3b580027dcffc8710a24f8b34e46c56",
+  "content_md5": "846bd1cc7c7496ded4d0bd15bd9398a9",
   "carried": {
    "prod_id": 216200,
    "from": "https://reinforcelab.com/latest-seo-update-search-engine-updates/",
@@ -2713,7 +2713,7 @@
   "path": "/marketing-for-websites/",
   "template": null,
   "content": null,
-  "content_md5": "4aea9a7d7aa932fcc36fde87585723b5",
+  "content_md5": "40cffc107a4a50ffd17e2a1564c227fa",
   "carried": {
    "prod_id": 222038,
    "from": "https://reinforcelab.com/marketing-for-websites/",
@@ -2741,7 +2741,7 @@
   "path": "/namecheap-wordpress-hosting/",
   "template": null,
   "content": null,
-  "content_md5": "232961c8fbac7588903debeb78a32b95",
+  "content_md5": "345edb8956b458af9c1a4b8c9da6e015",
   "carried": {
    "prod_id": 225460,
    "from": "https://reinforcelab.com/namecheap-wordpress-hosting/",
@@ -2769,7 +2769,7 @@
   "path": "/nexcess-wordpress-hosting/",
   "template": null,
   "content": null,
-  "content_md5": "5cb7070fe17fc33dc8937c7c50611514",
+  "content_md5": "1a454babdddc42507c3ff70686fe22ef",
   "carried": {
    "prod_id": 225786,
    "from": "https://reinforcelab.com/nexcess-wordpress-hosting/",
@@ -2797,7 +2797,7 @@
   "path": "/rank-tracker-review/",
   "template": null,
   "content": null,
-  "content_md5": "87cdca44f4ba42e1a2345636cc573dd7",
+  "content_md5": "fbbb3700ac26d44727ef05d4357df3d6",
   "carried": {
    "prod_id": 225842,
    "from": "https://reinforcelab.com/rank-tracker-review/",
@@ -2825,7 +2825,7 @@
   "path": "/real-estate-social-media-posts-ideas/",
   "template": null,
   "content": null,
-  "content_md5": "ce3411ba59b980df3bcf43a0214da04b",
+  "content_md5": "417d0303c12d5d2ad396d10963d2108c",
   "carried": {
    "prod_id": 214513,
    "from": "https://reinforcelab.com/real-estate-social-media-posts-ideas/",
@@ -2853,7 +2853,7 @@
   "path": "/robots-txt-for-seo-a-complete-guide/",
   "template": null,
   "content": null,
-  "content_md5": "4cd9ff110e041a2c6229cb31cf388a9a",
+  "content_md5": "766617450b4f36bd7e386541ca094475",
   "carried": {
    "prod_id": 215748,
    "from": "https://reinforcelab.com/robots-txt-for-seo-a-complete-guide/",
@@ -2881,7 +2881,7 @@
   "path": "/semrush-review/",
   "template": null,
   "content": null,
-  "content_md5": "7cda1655674991f6bb9a039ca9b98b6a",
+  "content_md5": "27b5123795d9ef43bb92db923d45a4cb",
   "carried": {
    "prod_id": 226129,
    "from": "https://reinforcelab.com/semrush-review/",
@@ -2909,7 +2909,7 @@
   "path": "/sensory-marketing-know-how-5-senses-marketing-works-best-for-businesses/",
   "template": null,
   "content": null,
-  "content_md5": "c6b85a5eda850bfcaf820904874276c8",
+  "content_md5": "3b60173a4b95fc6c56442054a84b8e54",
   "carried": {
    "prod_id": 217041,
    "from": "https://reinforcelab.com/sensory-marketing-know-how-5-senses-marketing-works-best-for-businesses/",
@@ -2937,7 +2937,7 @@
   "path": "/seo-mistakes-to-avoid/",
   "template": null,
   "content": null,
-  "content_md5": "d3603d51da98119e50b7cb659d9051a7",
+  "content_md5": "420106b59026d4e549e35b332c26d4c7",
   "carried": {
    "prod_id": 228658,
    "from": "https://reinforcelab.com/seo-mistakes-to-avoid/",
@@ -2993,7 +2993,7 @@
   "path": "/simple-digital-marketing-strategies-that-you-need-to-survive-for/",
   "template": null,
   "content": null,
-  "content_md5": "138f3f77c9f8163ece2b6a6808a09f8a",
+  "content_md5": "f10426ac62c26f30e7d59ec41efed65d",
   "carried": {
    "prod_id": 216738,
    "from": "https://reinforcelab.com/simple-digital-marketing-strategies-that-you-need-to-survive-for/",
@@ -3021,7 +3021,7 @@
   "path": "/snapchat-content-ideas/",
   "template": null,
   "content": null,
-  "content_md5": "24f19354f3bb237a486b97bde361adf6",
+  "content_md5": "2b0962db80431406e78a70753ed2601f",
   "carried": {
    "prod_id": 222467,
    "from": "https://reinforcelab.com/snapchat-content-ideas/",
@@ -3077,7 +3077,7 @@
   "path": "/social-media-content-ideas-for-clothing-brand/",
   "template": null,
   "content": null,
-  "content_md5": "a24aced4c085cc006fab4d0eebddbb2c",
+  "content_md5": "0c78f41ecc3514db526243f86493a17f",
   "carried": {
    "prod_id": 214525,
    "from": "https://reinforcelab.com/social-media-content-ideas-for-clothing-brand/",
@@ -3105,7 +3105,7 @@
   "path": "/social-media-content-ideas-for-hotels/",
   "template": null,
   "content": null,
-  "content_md5": "604b2501a1675e09e89cce256f857120",
+  "content_md5": "7a86d5bdc8e9f6e0dd2576e87d75ef37",
   "carried": {
    "prod_id": 214213,
    "from": "https://reinforcelab.com/social-media-content-ideas-for-hotels/",
@@ -3133,7 +3133,7 @@
   "path": "/social-media-content-ideas-for-nonprofits/",
   "template": null,
   "content": null,
-  "content_md5": "3d5665ba48917533c09352d8c9fb0125",
+  "content_md5": "e56a36a686c109333c3f100cc8a2a644",
   "carried": {
    "prod_id": 214520,
    "from": "https://reinforcelab.com/social-media-content-ideas-for-nonprofits/",
@@ -3161,7 +3161,7 @@
   "path": "/social-media-content-ideas-for-photographers/",
   "template": null,
   "content": null,
-  "content_md5": "a4f40111cd4a3a2349bdfe2114fb6266",
+  "content_md5": "e5d7209b1deac8b7babae78c482eee50",
   "carried": {
    "prod_id": 214425,
    "from": "https://reinforcelab.com/social-media-content-ideas-for-photographers/",
@@ -3189,7 +3189,7 @@
   "path": "/successful-digital-marketing-campaign-examples/",
   "template": null,
   "content": null,
-  "content_md5": "5aaed668a2881da80168192fe64577de",
+  "content_md5": "8bfe99b89649b1f67a658fb5d3a22c35",
   "carried": {
    "prod_id": 221345,
    "from": "https://reinforcelab.com/successful-digital-marketing-campaign-examples/",
@@ -3217,7 +3217,7 @@
   "path": "/surfer-seo-review/",
   "template": null,
   "content": null,
-  "content_md5": "895f0414e11de7c0c85f3cd91b13d019",
+  "content_md5": "c74938aed28271213b7816c6bec8c6e6",
   "carried": {
    "prod_id": 226317,
    "from": "https://reinforcelab.com/surfer-seo-review/",
@@ -3245,7 +3245,7 @@
   "path": "/the-anatomy-of-a-website/",
   "template": null,
   "content": null,
-  "content_md5": "9b36a5cd4e08de367f2797aaa14335c5",
+  "content_md5": "ddac218f0df1ab2c403a5fad1c7b6331",
   "carried": {
    "prod_id": 216730,
    "from": "https://reinforcelab.com/the-anatomy-of-a-website/",
@@ -3273,7 +3273,7 @@
   "path": "/ux-writing-vs-copywriting/",
   "template": null,
   "content": null,
-  "content_md5": "454d4e5cd188b23f1ab4ad16e87f4c0b",
+  "content_md5": "0e4741f872794d6db746e6ab71d48721",
   "carried": {
    "prod_id": 220736,
    "from": "https://reinforcelab.com/ux-writing-vs-copywriting/",
@@ -3301,7 +3301,7 @@
   "path": "/what-does-an-seo-consultant-do/",
   "template": null,
   "content": null,
-  "content_md5": "7fc822af92a8618ae85295ccf75a2c01",
+  "content_md5": "a5ad63f6c4dcf4f5afaf5a62b3fd6410",
   "carried": {
    "prod_id": 217285,
    "from": "https://reinforcelab.com/what-does-an-seo-consultant-do/",
@@ -3329,7 +3329,7 @@
   "path": "/what-is-keyword-difficulty-in-seo/",
   "template": null,
   "content": null,
-  "content_md5": "4d6bcbba55e4d530bbb1d12d39d53cf8",
+  "content_md5": "1d3e795e2014f9193dd042534e12a5f5",
   "carried": {
    "prod_id": 216101,
    "from": "https://reinforcelab.com/what-is-keyword-difficulty-in-seo/",
@@ -3357,7 +3357,7 @@
   "path": "/what-is-martech/",
   "template": null,
   "content": null,
-  "content_md5": "2995adb7ccffbbf6504306d1cf64bace",
+  "content_md5": "772eaa9dad42eee485f75e4b442b501a",
   "carried": {
    "prod_id": 222090,
    "from": "https://reinforcelab.com/what-is-martech/",
@@ -3441,7 +3441,7 @@
   "path": "/writesonic-review/",
   "template": null,
   "content": null,
-  "content_md5": "f92f7198344eda466f1b7f029918f064",
+  "content_md5": "ba8bec0b4e53f3135ff8e67fee36003e",
   "carried": {
    "prod_id": 225150,
    "from": "https://reinforcelab.com/writesonic-review/",
@@ -3469,7 +3469,7 @@
   "path": "/youtube-seo/",
   "template": null,
   "content": null,
-  "content_md5": "98502b3e97168746a2557f13ff57c128",
+  "content_md5": "9974dbd8cee72ded6f31f4d358423943",
   "carried": {
    "prod_id": 228638,
    "from": "https://reinforcelab.com/youtube-seo/",
@@ -3549,5 +3549,32 @@
    "_yoast_wpseo_metadesc": "Reinforce Lab is a WP Engine agency partner: we build WordPress sites on WP Engine, move existing sites safely and look after them."
   },
   "rl_fields": []
+ },
+ {
+  "id": 510,
+  "type": "post",
+  "status": "publish",
+  "title": "20 Social Media Content Ideas for Restaurants 2025",
+  "slug": "social-media-content-ideas-for-restaurants",
+  "parent": 0,
+  "path": "/social-media-content-ideas-for-restaurants/",
+  "template": null,
+  "content": null,
+  "content_md5": "2053563ce91783adae142eca72e0b585",
+  "carried": {
+   "prod_id": 214531,
+   "from": "https://reinforcelab.com/social-media-content-ideas-for-restaurants/",
+   "decision": "D-178"
+  },
+  "excerpt": "",
+  "date": "2025-02-19 20:40:50",
+  "modified": "2025-04-13 13:57:21",
+  "seo": {
+   "_yoast_wpseo_title": "20 Social Media Content Ideas for Restaurants | Reinforce Lab Ltd",
+   "_yoast_wpseo_metadesc": "Best social media content ideas for restaurants. Do your restaurant marketing right, and get some extraordinary results for your business."
+  },
+  "rl_fields": {
+   "rl_updated": "20250413"
+  }
  }
 ]
