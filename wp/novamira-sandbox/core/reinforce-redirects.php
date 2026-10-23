@@ -71,6 +71,7 @@ add_filter('rest_pre_dispatch', function ($result, $server, $request) {
    goes, so the site never links to its own redirect (A4 internal link scan). Live categories are unchanged. */
 add_filter('category_link', function ($link, $term_id) {
     $path = strtolower('/' . trim((string) wp_parse_url($link, PHP_URL_PATH), '/') . '/');
+    $path = preg_replace('#^/category/#', '/', $path);  // Yoast strips the category base later (term_link)
     $t = get_term($term_id, 'category');
     if ($t && !is_wp_error($t) && $t->slug === 'uncategorized') return home_url('/blog/');  // D-144: 301 to /blog/
     $rules = rl_redirect_rules();
