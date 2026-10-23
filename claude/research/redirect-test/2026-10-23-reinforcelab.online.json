@@ -4,7 +4,6 @@
  "targets": {
   "/about-us/": 200,
   "/b2b-seo-agencies/": 200,
-  "/basic-on-page-seo-checklist/": 410,
   "/blog/": 200,
   "/church-marketing-strategies/": 200,
   "/clients/": 200,
@@ -15,6 +14,7 @@
   "/guide-to-ux-copywriting/": 200,
   "/industries/b2b-saas/": 200,
   "/industries/healthcare/": 200,
+  "/industries/pharmaceutical/": 200,
   "/latest-seo-update-search-engine-updates/": 200,
   "/logossliderwp/benzinga/": 404,
   "/packages/": 200,
@@ -36,7 +36,6 @@
   "/services/lead-generation-systems/": 200,
   "/services/local-seo/": 200,
   "/services/marketing-automation/": 200,
-  "/services/pharmaceutical-seo/": 404,
   "/services/press-release-services/": 200,
   "/services/seo-content-systems/": 200,
   "/services/wordpress-website-design-service/": 200,
@@ -46,341 +45,8 @@
  },
  "failures": [
   {
-   "path": "/?wc-ajax=ppc-create-order",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/?wc-ajax=ppc-change-cart",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/?wc-ajax=ppc-create-payment-token",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/?wc-ajax=ppc-save-checkout-form",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/?wc-ajax=ppc-create-setup-token",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/?wc-ajax=ppc-vault-paypal",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/?wc-ajax=ppc-update-customer-id",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-2/18/",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-2/18/?utm_source=test",
+   "path": "/church-marketing/page/2",
    "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-2/18",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-2/2/",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-2/2",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-2/2/?utm_source=test",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-2/3/",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-2/3/?utm_source=test",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/18/",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-2/3",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/18/?utm_source=test",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/18",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/2/?utm_source=test",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/2",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/3",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/2/",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/3/",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/3/?utm_source=test",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/4/",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/4",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/4/?utm_source=test",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/5/?utm_source=test",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/5/",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/5",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/6",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/6/",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/6/?utm_source=test",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/7/",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/7/?utm_source=test",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/author/jamilahmed/paged-3/7",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": ""
-  },
-  {
-   "path": "/church-marketing/page/2/",
-   "variant": false,
    "action": "KEEP-NOINDEX",
    "expect": "200",
    "target": "",
@@ -388,8 +54,8 @@
    "location": ""
   },
   {
-   "path": "/church-marketing/page/2",
-   "variant": true,
+   "path": "/church-marketing/page/2/",
+   "variant": false,
    "action": "KEEP-NOINDEX",
    "expect": "200",
    "target": "",
@@ -406,8 +72,8 @@
    "location": ""
   },
   {
-   "path": "/clothing-brand-marketing/page/2/",
-   "variant": false,
+   "path": "/clothing-brand-marketing/page/2",
+   "variant": true,
    "action": "KEEP-NOINDEX",
    "expect": "200",
    "target": "",
@@ -424,8 +90,8 @@
    "location": ""
   },
   {
-   "path": "/clothing-brand-marketing/page/2",
-   "variant": true,
+   "path": "/clothing-brand-marketing/page/2/",
+   "variant": false,
    "action": "KEEP-NOINDEX",
    "expect": "200",
    "target": "",
@@ -487,15 +153,6 @@
    "location": ""
   },
   {
-   "path": "/generate-leads-for-business/?utm_source=test",
-   "variant": true,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
    "path": "/generate-leads-for-business/",
    "variant": false,
    "action": "KEEP",
@@ -506,6 +163,15 @@
   },
   {
    "path": "/generate-leads-for-business",
+   "variant": true,
+   "action": "KEEP",
+   "expect": "200",
+   "target": "",
+   "code": 404,
+   "location": ""
+  },
+  {
+   "path": "/generate-leads-for-business/?utm_source=test",
    "variant": true,
    "action": "KEEP",
    "expect": "200",
@@ -532,13 +198,14 @@
    "location": ""
   },
   {
-   "path": "/get-a-free-quote",
-   "variant": true,
+   "path": "/google-analytics-behavior-reports-2/",
+   "variant": false,
    "action": "301",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
+   "expect": "301",
+   "target": "/google-analytics-behavior-reports/",
+   "code": 301,
+   "location": "/google-analytics-behavior-reports/",
+   "why": "target answers 404"
   },
   {
    "path": "/google-analytics-behavior-reports-2",
@@ -551,14 +218,13 @@
    "why": "target answers 404"
   },
   {
-   "path": "/google-analytics-behavior-reports-2/",
-   "variant": false,
+   "path": "/get-a-free-quote",
+   "variant": true,
    "action": "301",
-   "expect": "301",
-   "target": "/google-analytics-behavior-reports/",
-   "code": 301,
-   "location": "/google-analytics-behavior-reports/",
-   "why": "target answers 404"
+   "expect": "200",
+   "target": "",
+   "code": 404,
+   "location": ""
   },
   {
    "path": "/google-analytics-behavior-reports-2/?utm_source=test",
@@ -608,16 +274,6 @@
    "why": "target answers 404"
   },
   {
-   "path": "/logossliderwp/features-logo/?utm_source=test",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/logossliderwp/benzinga/",
-   "code": 301,
-   "location": "/logossliderwp/benzinga/",
-   "why": "target answers 404"
-  },
-  {
    "path": "/logossliderwp/features-logo",
    "variant": true,
    "action": "301",
@@ -628,8 +284,18 @@
    "why": "target answers 404"
   },
   {
-   "path": "/off-page-seo-checklist",
+   "path": "/logossliderwp/features-logo/?utm_source=test",
    "variant": true,
+   "action": "301",
+   "expect": "301",
+   "target": "/logossliderwp/benzinga/",
+   "code": 301,
+   "location": "/logossliderwp/benzinga/",
+   "why": "target answers 404"
+  },
+  {
+   "path": "/off-page-seo-checklist/",
+   "variant": false,
    "action": "KEEP",
    "expect": "200",
    "target": "",
@@ -637,8 +303,8 @@
    "location": ""
   },
   {
-   "path": "/off-page-seo-checklist/",
-   "variant": false,
+   "path": "/off-page-seo-checklist",
+   "variant": true,
    "action": "KEEP",
    "expect": "200",
    "target": "",
@@ -664,99 +330,8 @@
    "location": ""
   },
   {
-   "path": "/product/search-engine-optimization-service-enterprise-monthly/?add-to-cart=227503",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 301,
-   "location": "/packages/"
-  },
-  {
-   "path": "/product/search-engine-optimization-service-enterprise-yearly/?add-to-cart=229210",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 301,
-   "location": "/packages/"
-  },
-  {
-   "path": "/product/search-engine-optimization-service-enterprise-yearly/?add-to-cart=227503",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 301,
-   "location": "/packages/"
-  },
-  {
-   "path": "/product/search-engine-optimization-service-growth-yearly/?add-to-cart=229277",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 301,
-   "location": "/packages/"
-  },
-  {
-   "path": "/product/search-engine-optimization-service-growth-yearly/?add-to-cart=229279",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 301,
-   "location": "/packages/"
-  },
-  {
-   "path": "/product/search-engine-optimization-service-starter-yearly/?add-to-cart=227503",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 301,
-   "location": "/packages/"
-  },
-  {
-   "path": "/product/wordpress-web-design-and-development-growth/?add-to-cart=231223",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 301,
-   "location": "/services/wordpress-website-design-service/"
-  },
-  {
-   "path": "/product/wordpress-web-design-and-development-starter/?add-to-cart=229278",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 301,
-   "location": "/services/wordpress-website-design-service/"
-  },
-  {
-   "path": "/product/wordpress-website-design-services/?add-to-cart=229278",
-   "variant": false,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 301,
-   "location": "/services/wordpress-website-design-service/"
-  },
-  {
    "path": "/project/inpace-a-project-of-reinforce-lab/",
    "variant": false,
-   "action": "301",
-   "expect": "301",
-   "target": "/project/inpace/",
-   "code": 301,
-   "location": "/project/inpace/",
-   "why": "target answers 301"
-  },
-  {
-   "path": "/project/inpace-a-project-of-reinforce-lab/?utm_source=test",
-   "variant": true,
    "action": "301",
    "expect": "301",
    "target": "/project/inpace/",
@@ -775,17 +350,18 @@
    "why": "target answers 301"
   },
   {
-   "path": "/project/inpace/",
-   "variant": false,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
+   "path": "/project/inpace-a-project-of-reinforce-lab/?utm_source=test",
+   "variant": true,
+   "action": "301",
+   "expect": "301",
+   "target": "/project/inpace/",
    "code": 301,
-   "location": "/portfolio/inpace-shop/"
+   "location": "/project/inpace/",
+   "why": "target answers 301"
   },
   {
-   "path": "/project/inpace",
-   "variant": true,
+   "path": "/project/inpace/",
+   "variant": false,
    "action": "KEEP",
    "expect": "200",
    "target": "",
@@ -812,6 +388,15 @@
    "why": "target answers 404"
   },
   {
+   "path": "/project/inpace",
+   "variant": true,
+   "action": "KEEP",
+   "expect": "200",
+   "target": "",
+   "code": 301,
+   "location": "/portfolio/inpace-shop/"
+  },
+  {
    "path": "/project/microinspire-a-project-of-reinforce-lab",
    "variant": true,
    "action": "301",
@@ -832,8 +417,8 @@
    "why": "target answers 404"
   },
   {
-   "path": "/project/mrco-international-a-project-of-reinforce-lab",
-   "variant": true,
+   "path": "/project/mrco-international-a-project-of-reinforce-lab/",
+   "variant": false,
    "action": "301",
    "expect": "301",
    "target": "/project/mrco-international/",
@@ -842,8 +427,8 @@
    "why": "target answers 404"
   },
   {
-   "path": "/project/mrco-international-a-project-of-reinforce-lab/",
-   "variant": false,
+   "path": "/project/mrco-international-a-project-of-reinforce-lab",
+   "variant": true,
    "action": "301",
    "expect": "301",
    "target": "/project/mrco-international/",
@@ -862,150 +447,9 @@
    "why": "target answers 404"
   },
   {
-   "path": "/robots-txt-for-seo-a-complete-guide/?ref=openzap.com",
+   "path": "/social-media-advertising/page/2/",
    "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/search-engine-optimization/basic-on-page-seo-checklist/",
-   "variant": false,
-   "action": "301",
-   "expect": "301",
-   "target": "/basic-on-page-seo-checklist/",
-   "code": 301,
-   "location": "/basic-on-page-seo-checklist/",
-   "why": "target answers 410"
-  },
-  {
-   "path": "/search-engine-optimization/basic-on-page-seo-checklist",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/basic-on-page-seo-checklist/",
-   "code": 301,
-   "location": "/basic-on-page-seo-checklist/",
-   "why": "target answers 410"
-  },
-  {
-   "path": "/search-engine-optimization/basic-on-page-seo-checklist/?utm_source=test",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/basic-on-page-seo-checklist/",
-   "code": 301,
-   "location": "/basic-on-page-seo-checklist/",
-   "why": "target answers 410"
-  },
-  {
-   "path": "/services/content-/",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": "/content-marketing-for-banks/"
-  },
-  {
-   "path": "/services/content-",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": "/content-marketing-for-banks/"
-  },
-  {
-   "path": "/services/content-/?utm_source=test",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": "/content-marketing-for-banks/?utm_source=test"
-  },
-  {
-   "path": "/services/creative/pharmaceutical-seo-services/",
-   "variant": false,
-   "action": "301",
-   "expect": "301",
-   "target": "/services/pharmaceutical-seo/",
-   "code": 301,
-   "location": "/services/pharmaceutical-seo/",
-   "why": "target answers 404"
-  },
-  {
-   "path": "/services/creative/pharmaceutical-seo-services",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/services/pharmaceutical-seo/",
-   "code": 301,
-   "location": "/services/pharmaceutical-seo/",
-   "why": "target answers 404"
-  },
-  {
-   "path": "/services/creative/pharmaceutical-seo-services/?utm_source=test",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/services/pharmaceutical-seo/",
-   "code": 301,
-   "location": "/services/pharmaceutical-seo/",
-   "why": "target answers 404"
-  },
-  {
-   "path": "/services/ecommerce-",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": "/industries/ecommerce/"
-  },
-  {
-   "path": "/services/ecommerce-/",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": "/industries/ecommerce/"
-  },
-  {
-   "path": "/services/ecommerce-/?utm_source=test",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": "/industries/ecommerce/?utm_source=test"
-  },
-  {
-   "path": "/services/pharmaceutical-seo/",
-   "variant": false,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/services/pharmaceutical-seo/?utm_source=test",
-   "variant": true,
-   "action": "KEEP",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/services/pharmaceutical-seo",
-   "variant": true,
-   "action": "KEEP",
+   "action": "KEEP-NOINDEX",
    "expect": "200",
    "target": "",
    "code": 404,
@@ -1014,15 +458,6 @@
   {
    "path": "/social-media-advertising/page/2",
    "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/social-media-advertising/page/2/",
-   "variant": false,
    "action": "KEEP-NOINDEX",
    "expect": "200",
    "target": "",
@@ -1066,8 +501,8 @@
    "location": ""
   },
   {
-   "path": "/social-media-management/page/2",
-   "variant": true,
+   "path": "/social-media-management/page/2/",
+   "variant": false,
    "action": "KEEP-NOINDEX",
    "expect": "200",
    "target": "",
@@ -1075,8 +510,8 @@
    "location": ""
   },
   {
-   "path": "/social-media-management/page/2/",
-   "variant": false,
+   "path": "/social-media-management/page/2",
+   "variant": true,
    "action": "KEEP-NOINDEX",
    "expect": "200",
    "target": "",
@@ -1091,33 +526,6 @@
    "target": "",
    "code": 404,
    "location": ""
-  },
-  {
-   "path": "/successful-digital-marketing-campaign-examples/1000/",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": "/successful-digital-marketing-campaign-examples/"
-  },
-  {
-   "path": "/successful-digital-marketing-campaign-examples/1000",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": "/successful-digital-marketing-campaign-examples/"
-  },
-  {
-   "path": "/successful-digital-marketing-campaign-examples/1000/?utm_source=test",
-   "variant": true,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 301,
-   "location": "/successful-digital-marketing-campaign-examples/?utm_source=test"
   },
   {
    "path": "/trends/page/2/",
@@ -1147,6 +555,15 @@
    "location": ""
   },
   {
+   "path": "/video-marketing/page/2/",
+   "variant": false,
+   "action": "KEEP-NOINDEX",
+   "expect": "200",
+   "target": "",
+   "code": 404,
+   "location": ""
+  },
+  {
    "path": "/video-marketing/page/2",
    "variant": true,
    "action": "KEEP-NOINDEX",
@@ -1158,15 +575,6 @@
   {
    "path": "/video-marketing/page/2/?utm_source=test",
    "variant": true,
-   "action": "KEEP-NOINDEX",
-   "expect": "200",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/video-marketing/page/2/",
-   "variant": false,
    "action": "KEEP-NOINDEX",
    "expect": "200",
    "target": "",
@@ -1201,294 +609,6 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-1.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-3.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/07/Content-marketing-ideas-for-the-healthcare-industry.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/07/Creative-Content-Marketing-Ideas.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Infographic-2.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-Infographic-3-scaled.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-infographic-1.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media.jpeg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/09/Content-Marketing-for-Banks-Infographic-1.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/09/Content-Marketing-for-Banks.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels-infographic-1.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/10/Real-Estate-Social-Media-Posts-Ideas.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Churches.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-1.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-3-scaled.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-inforgraphic-2.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Nonprofits.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Photographers.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/10/social-media-content-ideas-for-nonprofits-infographic.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/10/social-media-content-ideas-for-photographers-infographic.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2022/02/Sensory-Marketing-Infographic-1.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2022/02/Sensory-Marketing-Infographic-3-scaled.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2022/09/Ideas-for-Personal-Website-Content.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2022/10/10-Successful-Digital-marketing-campaign.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2022/10/Best-Examples-of-Great-Food-Copywriting.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2022/11/Creative-Snapchat-Content-Ideas.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2023/01/Bluehost-01.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2023/02/Copy.-AI-Writer-1024x580.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2023/03/8-Simple-YouTube-SEO-Tips-To-Rank-Your-Videos-Higher-in-Search.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2023/03/Most-Common-SEO-Mistakes-To-Avoid-1.jpg",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 200,
-   "location": ""
-  },
-  {
    "path": "/wp-content/uploads/2024/11/Beyond-Borders-client-of-reinforce-lab-limited.png",
    "variant": false,
    "action": "KEEP",
@@ -1498,8 +618,8 @@
    "location": ""
   },
   {
-   "path": "/wp-json/wc/store/v1/cart",
-   "variant": true,
+   "path": "/wp-json/wc/store/v1/cart/",
+   "variant": false,
    "action": "410",
    "expect": "410",
    "target": "",
@@ -1507,8 +627,8 @@
    "location": ""
   },
   {
-   "path": "/wp-json/wc/store/v1/cart/",
-   "variant": false,
+   "path": "/wp-json/wc/store/v1/cart",
+   "variant": true,
    "action": "410",
    "expect": "410",
    "target": "",
@@ -1527,7 +647,7 @@
  ],
  "wp_content_404_not_410": [
   {
-   "path": "/wp-content/uploads/2020/02/Best-Sport-Accessories-A-Project-of-Reinforce-Lab-Digital.png",
+   "path": "/wp-content/uploads/2020/03/Reinforce-Lab-Digital-Pricing-List-2020.pdf",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -1536,7 +656,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2020/03/Reinforce-Lab-Digital-Pricing-List-2020.pdf",
+   "path": "/wp-content/uploads/2020/02/Best-Sport-Accessories-A-Project-of-Reinforce-Lab-Digital.png",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -1572,6 +692,15 @@
    "location": ""
   },
   {
+   "path": "/wp-content/uploads/2021/07/Content-marketing-ideas-for-the-healthcare-industry.jpg.webp",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 404,
+   "location": ""
+  },
+  {
    "path": "/wp-content/uploads/2021/07/Creative-Content-Marketing-Ideas-Infographics-2.jpg.webp",
    "variant": false,
    "action": "410",
@@ -1590,24 +719,6 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/07/Content-marketing-ideas-for-the-healthcare-industry.jpg.webp",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Inforgraphic-4.jpg.webp",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
    "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Infographic-2.jpg.webp",
    "variant": false,
    "action": "410",
@@ -1618,6 +729,15 @@
   },
   {
    "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-Infographic-2.jpg.webp",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 404,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Inforgraphic-4.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -1788,6 +908,15 @@
    "location": ""
   },
   {
+   "path": "/wp-content/uploads/2022/01/Content-Marketing-vs-Social-Media-Marketing-Infographic-1.jpg.webp",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 404,
+   "location": ""
+  },
+  {
    "path": "/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-2-scaled.jpg",
    "variant": false,
    "action": "410",
@@ -1798,15 +927,6 @@
   },
   {
    "path": "/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-2-scaled.jpg.webp",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2022/01/Content-Marketing-vs-Social-Media-Marketing-Infographic-1.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -1842,15 +962,6 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2022/10/10-Successful-Digital-marketing-campaign.jpg.webp",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
    "path": "/wp-content/uploads/2022/09/Ideas-for-Personal-Website-Content.jpg.webp",
    "variant": false,
    "action": "410",
@@ -1860,7 +971,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2023/01/Flywheel-01.jpg",
+   "path": "/wp-content/uploads/2022/10/10-Successful-Digital-marketing-campaign.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -1878,12 +989,311 @@
    "location": ""
   },
   {
+   "path": "/wp-content/uploads/2023/01/Flywheel-01.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 404,
+   "location": ""
+  },
+  {
    "path": "/wp-content/uploads/2023/03/8-Simple-YouTube-SEO-Tips-To-Rank-Your-Videos-Higher-in-Search-1024x551.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
    "target": "",
    "code": 404,
+   "location": ""
+  }
+ ],
+ "wp_content_kept_d178": [
+  {
+   "path": "/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-1.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-3.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/07/Content-marketing-ideas-for-the-healthcare-industry.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/07/Creative-Content-Marketing-Ideas.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Infographic-2.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-Infographic-3-scaled.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-infographic-1.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media.jpeg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/09/Content-Marketing-for-Banks.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/09/Content-Marketing-for-Banks-Infographic-1.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels-infographic-1.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Real-Estate-Social-Media-Posts-Ideas.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Churches.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-1.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-3-scaled.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-inforgraphic-2.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Nonprofits.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Photographers.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/social-media-content-ideas-for-nonprofits-infographic.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/social-media-content-ideas-for-photographers-infographic.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2022/02/Sensory-Marketing-Infographic-1.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2022/02/Sensory-Marketing-Infographic-3-scaled.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2022/09/Ideas-for-Personal-Website-Content.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2022/10/10-Successful-Digital-marketing-campaign.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2022/11/Creative-Snapchat-Content-Ideas.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2022/10/Best-Examples-of-Great-Food-Copywriting.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2023/01/Bluehost-01.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2023/02/Copy.-AI-Writer-1024x580.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2023/03/8-Simple-YouTube-SEO-Tips-To-Rank-Your-Videos-Higher-in-Search.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2023/03/Most-Common-SEO-Mistakes-To-Avoid-1.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
    "location": ""
   }
  ]
