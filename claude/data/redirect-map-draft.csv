@@ -480,7 +480,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /robots-txt-for-seo-a-complete-guide/?ref=openzap.com,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 — ?ref param dup of preserved canonical
 /robots-txt-for-seo-a-complete-guide/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /search-engine-optimization/,301,/services/best-search-engine-optimization-services/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
-/search-engine-optimization/basic-on-page-seo-checklist/,301,/basic-on-page-seo-checklist/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/search-engine-optimization/basic-on-page-seo-checklist/,410,,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,"Follows its target: /basic-on-page-seo-checklist/ is approved 410 (23 Oct, A4 test)"
 /semrush-review/,KEEP,,register (D-014/015/023),200,,1,6598,,20,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
 /sensory-marketing-know-how-5-senses-marketing-works-best-for-businesses/,KEEP,,register (D-014/015/023),200,,0,519,,18,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
 /seo-content-creator-2/,301,/services/seo-content-systems/,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),200,,0,20000,,23,approved-2026-10 crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012) | slug: build as /seo-content-creator/ (drop -2)
@@ -540,7 +540,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /services/graphics-designing-services/,301,/services/creative/graphic-design-services/,production Yoast redirect (target to re-check) | chain flattened (1),,,,,,0,yoast-redirect,
 /services/link-building-seo-services/,301,/services/press-release-services/,production Yoast redirect (target to re-check) | chain flattened (1),301,/services/best-affordable-seo-link-building-services/,,,,1,crawl linked-from-production yoast-redirect,
 /services/off-page-seo-services/,301,/services/press-release-services/,register (D-014/015/023),200,,12,47499,,12,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /services/press-release-services/ (O-018 Option B; supersedes D-023 enterprise target)
-/services/pharmaceutical-seo/,KEEP,,register (D-014/015/023),,,0,0,,0,register,APPROVED: PRESERVE — approved new service URL (D-003)
+/services/pharmaceutical-seo/,301,/industries/pharmaceutical/,"D-022, D-067 (renamed; .online-only address)",,,0,0,,0,register,"Follows approved rename: pharma page moved to /industries/pharmaceutical/ (23 Oct, A4 test)"
 /services/ppc-management-service/,301,/services/lead-generation-systems/,production Yoast redirect (target to re-check) | chain flattened (1),,,,,,0,yoast-redirect,
 /services/ppc-management-services/,301,/services/lead-generation-systems/,register (D-014/015/023),200,,0,6572,,9,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /services/lead-generation-systems/ (D-023; confirmed F-020)
 /services/press-release-services/,KEEP,,register (D-014/015/023),200,,0,39,,9,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard

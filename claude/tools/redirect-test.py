@@ -61,8 +61,14 @@ def path_of(loc):
     return u.path + (('?' + u.query) if u.query else '')
 
 
+PATHRULE = {}
+
+
 def expected(row):
     act, p = row['action'].strip(), row['old_path']
+    # an address with a query part follows its path's rule (D-148), except old WooCommerce calls (?wc-ajax=)
+    if '?' in p and 'wc-ajax=' not in p and p.split('?')[0] in PATHRULE:
+        return expected(PATHRULE[p.split('?')[0]])
     if p.split('?')[0].startswith('/author/') or '/paged-' in p:
         return ('410', '') if '/paged-' in p else ('301', '/blog/')
     if act.startswith('KEEP'):
@@ -85,6 +91,9 @@ def flatten(target, r301):
 
 def main():
     rows = list(csv.DictReader(open(SRC)))
+    for r in rows:
+        if '?' not in r['old_path']:
+            PATHRULE[r['old_path']] = r
     r301 = {r['old_path']: r['target'].strip() for r in rows if r['action'].startswith('301') and '?' not in r['old_path']}
     jobs = []
     for r in rows:
@@ -110,7 +119,7 @@ def main():
     with cf.ThreadPoolExecutor(max_workers=6) as ex:
         for t, (c, l) in zip(targets, ex.map(lambda t: fetch(BASE + t), targets)):
             tcode[t] = c
-    fails, notes = [], []
+    fails, notes, kept = [], [], []
     for x in results:
         c, e, loc = str(x['code']), x['expect'], x['location'].split('?')[0]
         ok = True
@@ -125,6 +134,9 @@ def main():
             if c == '404' and x['path'].startswith('/wp-content/'):
                 notes.append(x)
                 continue
+            if c == '200' and x['path'].startswith('/wp-content/'):
+                kept.append(x)  # copied on purpose because a kept post uses it (D-178)
+                continue
             ok = c == '410' or (x['variant'] and c == '301' and loc.rstrip('/') == x['path'].split('?')[0].rstrip('/'))
         elif e == 'CONFIG':
             ok = not c.startswith('5') and not c.startswith('ERR')
@@ -133,10 +145,10 @@ def main():
     day = datetime.date.today().isoformat()
     out = os.path.join(ROOT, 'claude', 'research', 'redirect-test')
     os.makedirs(out, exist_ok=True)
-    json.dump({'base': BASE, 'checked': len(results), 'targets': tcode, 'failures': fails, 'wp_content_404_not_410': notes},
+    json.dump({'base': BASE, 'checked': len(results), 'targets': tcode, 'failures': fails, 'wp_content_404_not_410': notes, 'wp_content_kept_d178': kept},
               open(os.path.join(out, '%s-%s.json' % (day, HOST)), 'w'), indent=1)
     print('checked', len(results), 'requests over', len(rows), 'old addresses;', len(targets), 'targets')
-    print('FAILURES:', len(fails), '| /wp-content/ files answering 404 instead of 410 (server rule pending):', len(notes))
+    print('FAILURES:', len(fails), '| /wp-content/ files answering 404 instead of 410 (server rule pending):', len(notes), '| old files kept because kept posts use them (D-178):', len(kept))
     for x in sorted(fails, key=lambda x: x['path'])[:80]:
         print('  ', x['path'], '| expected', x['expect'], x['target'], '| got', x['code'], x['location'], x.get('why', ''))
 
