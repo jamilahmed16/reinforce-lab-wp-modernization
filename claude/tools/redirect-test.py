@@ -6,7 +6,7 @@
 
 For every row of claude/data/redirect-map-draft.csv it requests the address as it is, and (for page
 addresses) without the trailing slash and with a query string, without following redirects, then checks:
-  KEEP*            -> 200 (one canonical hop allowed for the variants)
+  KEEP*            -> 200 (one canonical hop allowed for the variants); 200 or 404 where production answers 404
   301 / 301 (as page) -> one 301 straight to the approved target (variants: one hop to the same target)
   410              -> 410 (missing /wp-content/ files: 404 accepted until the server rule exists, reported)
   /author/...      -> 301 to /blog/ (D-144); /paged-N/ junk -> 410 (F-001)
@@ -62,6 +62,7 @@ def path_of(loc):
 
 
 PATHRULE = {}
+KEPT404 = set()
 
 
 def expected(row):
@@ -72,7 +73,8 @@ def expected(row):
     if p.split('?')[0].startswith('/author/') or '/paged-' in p:
         return ('410', '') if '/paged-' in p else ('301', '/blog/')
     if act.startswith('KEEP'):
-        return ('200', '')
+        # production already answers 404 (future posts not yet published, /project/inpace/): 200 or 404, never a redirect
+        return ('200|404', '') if row['prod_status'].strip() == '404' and '?' not in p else ('200', '')
     if act.startswith('301'):
         t = row['target'].strip()
         return ('301', t) if t != p.split('?')[0] else ('200', '')
@@ -94,6 +96,8 @@ def main():
     for r in rows:
         if '?' not in r['old_path']:
             PATHRULE[r['old_path']] = r
+            if r['action'].startswith('KEEP') and r['prod_status'].strip() == '404':
+                KEPT404.add(r['old_path'])
     r301 = {r['old_path']: r['target'].strip() for r in rows if r['action'].startswith('301') and '?' not in r['old_path']}
     jobs = []
     for r in rows:
@@ -123,11 +127,15 @@ def main():
     for x in results:
         c, e, loc = str(x['code']), x['expect'], x['location'].split('?')[0]
         ok = True
-        if e == '200':
+        if e == '200|404':
+            ok = c in ('200', '404') or (x['variant'] and c == '301' and loc.rstrip('/') == x['path'].split('?')[0].rstrip('/'))
+        elif e == '200':
             ok = c == '200' or (x['variant'] and c == '301' and loc.rstrip('/') == x['path'].split('?')[0].rstrip('/'))
         elif e == '301':
             ok = c == '301' and loc == x['target']
-            if ok and str(tcode.get(x['target'])) != '200':
+            if ok and str(tcode.get(x['target'])) == '404' and x['target'] in KEPT404:
+                pass  # same as production: the old redirect points at an address production answers 404
+            elif ok and str(tcode.get(x['target'])) != '200':
                 ok = False
                 x['why'] = 'target answers %s' % tcode.get(x['target'])
         elif e == '410':

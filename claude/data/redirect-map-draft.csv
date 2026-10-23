@@ -168,7 +168,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /church-marketing-strategies-2021/,301,/church-marketing-strategies/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
 /church-marketing-strategies/,KEEP,,register (D-014/015/023),200,,7,35396,,40,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
 /church-marketing/,301,/social-media-content-ideas-for-churches/,register (D-014/015/023),200,,0,0,,7,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /social-media-content-ideas-for-churches/ (legacy category, not recreated — avoids F-001)"
-/church-marketing/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/church-marketing/page/2/,301,/church-marketing/,Jamil 23 Oct (D-214),200,,0,0,,5,crawl linked-from-production register,"APPROVED: 301 -> /church-marketing/ (Jamil 23 Oct: ""Go to page 1""; the category has one page on the new site)"
 /church-marketing/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
 /church-marketing/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
 /church-marketing/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
@@ -180,7 +180,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /clickup-review/,KEEP,,register (D-014/015/023),200,,5,6149,,22,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
 /clients/,KEEP,,register (D-014/015/023),200,,2,294,,225,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
 /clothing-brand-marketing/,301,/social-media-content-ideas-for-clothing-brand/,register (D-014/015/023),200,,0,0,,7,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /social-media-content-ideas-for-clothing-brand/ (legacy category, not recreated — avoids F-001)"
-/clothing-brand-marketing/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/clothing-brand-marketing/page/2/,301,/clothing-brand-marketing/,Jamil 23 Oct (D-214),200,,0,0,,5,crawl linked-from-production register,"APPROVED: 301 -> /clothing-brand-marketing/ (Jamil 23 Oct: ""Go to page 1""; the category has one page on the new site)"
 /clothing-brand-marketing/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
 /clothing-brand-marketing/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
 /clothing-brand-marketing/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
@@ -206,7 +206,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /content-marketing-vs-social-media-marketing/,KEEP,,register (D-014/015/023),200,,8,47743,,27,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
 /copy-ai-review/,KEEP,,register (D-014/015/023),200,,0,95,,22,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
 /copywriting/,301,/services/seo-content-systems/,register (D-014/015/023),200,,0,0,,11,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /services/seo-content-systems/ (legacy category, not recreated — avoids F-001) [flattened; was -> /services/best-website-copywriting-ser"
-/copywriting/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/copywriting/page/2/,301,/copywriting/,Jamil 23 Oct (D-214),200,,0,0,,5,crawl linked-from-production register,"APPROVED: 301 -> /copywriting/ (Jamil 23 Oct: ""Go to page 1""; the category has one page on the new site)"
 /copywriting/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
 /copywriting/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
 /copywriting/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
@@ -228,7 +228,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /digital-marketing-competitor-analysis/,301,/blog/,register (D-014/015/023),200,,0,0,,24,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /blog/ (legacy category, not recreated — avoids F-001)"
 /digital-marketing-competitor-analysis/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /digital-marketing-competitor/,301,/blog/,register (D-014/015/023),200,,0,1,,7,crawl gsc linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /blog/ (legacy category, not recreated — avoids F-001)"
-/digital-marketing-competitor/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/digital-marketing-competitor/page/2/,301,/digital-marketing-competitor/,Jamil 23 Oct (D-214),200,,0,0,,5,crawl linked-from-production register,"APPROVED: 301 -> /digital-marketing-competitor/ (Jamil 23 Oct: ""Go to page 1""; the category has one page on the new site)"
 /digital-marketing-competitor/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
 /digital-marketing-competitor/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
 /digital-marketing-competitor/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
@@ -304,8 +304,8 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /ftc-disclosure/,KEEP,,register (D-014/015/023),200,,0,0,,2,crawl linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
 /generate-leads-for-business/,KEEP,,register (D-014/015/023),404,,0,0,,6,crawl linked-from-production register,APPROVED: REBUILD candidate (on-strategy lead-gen)
 /get-a-/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 — junk (search-spam / cache / malformed slug)
-/get-a-free-quote/,301,/get-a-free-quote/,register (D-014/015/023) | LOOP,200,,2,1135,1,576,backlinks crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /get-a-free-quote/ (double-slash malformed)
-/google-analytics-behavior-reports-2/,301,/google-analytics-behavior-reports/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/get-a-free-quote/,301,/search-authority-diagnostic/,Jamil 23 Oct (D-214),200,,2,1135,1,576,backlinks crawl gsc linked-from-production register sitemap,"APPROVED: 301 -> /search-authority-diagnostic/ (Jamil 23 Oct: ""Free diagnostic"")"
+/google-analytics-behavior-reports-2/,410,,Jamil 23 Oct (D-214),,,,,,0,yoast-redirect,"APPROVED: 410 (Jamil 23 Oct: junk, its old redirect target no longer exists)"
 /google-my-business-optimization-service/,301,/services/local-seo/,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),200,,0,0,,17,approved-2026-10 crawl linked-from-production register sitemap,APPROVED (HOLD): BUILD fresh on-strategy (big impressions) | slug: /services/google-business-profile-optimization/
 /google-penalty-recovery/,KEEP,,register (D-014/015/023),200,,0,79,,26,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
 /google-penalty-recovery/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
@@ -327,7 +327,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /hostinger-web-hosting/,KEEP,,register (D-014/015/023),200,,0,2,,17,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
 /hostinger-web-hosting/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /hotel-marketing/,301,/social-media-content-ideas-for-hotels/,register (D-014/015/023),200,,0,0,,7,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /social-media-content-ideas-for-hotels/ (legacy category, not recreated — avoids F-001)"
-/hotel-marketing/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/hotel-marketing/page/2/,301,/hotel-marketing/,Jamil 23 Oct (D-214),200,,0,0,,5,crawl linked-from-production register,"APPROVED: 301 -> /hotel-marketing/ (Jamil 23 Oct: ""Go to page 1""; the category has one page on the new site)"
 /hotel-marketing/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
 /hotel-marketing/paged-2/2/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,4,crawl linked-from-production,
 /hotel-marketing/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410
@@ -362,7 +362,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /link-building-tools/,410,,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),404,,,,,1,approved-2026-10 crawl linked-from-production,
 /linkedin-content-ideas-for-businesses/,410,,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),404,,,,,1,approved-2026-10 crawl linked-from-production,
 /liquidweb-wordpress-hosting/,410,,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),404,,,,,12,approved-2026-10 crawl linked-from-production,
-/logossliderwp/features-logo/,301,/logossliderwp/benzinga/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/logossliderwp/features-logo/,410,,Jamil 23 Oct (D-214),,,,,,0,yoast-redirect,"APPROVED: 410 (Jamil 23 Oct: junk, its old redirect target no longer exists)"
 /management-team-2/,301,/our-team/,production Yoast redirect (target to re-check) | chain flattened (1),,,,,,0,yoast-redirect,
 /management-team-3/,301,/our-team/,production Yoast redirect (target to re-check) | chain flattened (1),,,,,,0,yoast-redirect,
 /management-team/,301,/management/,production Yoast redirect (target to re-check),301,/management/,,,,1,crawl linked-from-production yoast-redirect,
@@ -456,9 +456,9 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /product/wordpress-website-design-services/?add-to-cart=229278,KEEP-NOINDEX,,register (D-014/015/023),,,0,0,,0,register,"APPROVED: KEEP-noindex (cart-action URL, param)"
 /product/wordpress-website-design-services/?add-to-cart=229279,301 (as page),/services/wordpress-website-design-service/,inherits /product/wordpress-website-design-services/ | LOOP | chain flattened (1),not fetched (asset or utility),,,,,1,crawl linked-from-production,
 /project/inpace-a-project-of-reinforce-lab/,301,/project/inpace/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
-/project/inpace/,KEEP,,register (D-014/015/023),,,0,0,,0,register,APPROVED: PRESERVE — rebuild to D-012 standard
-/project/microinspire-a-project-of-reinforce-lab/,301,/project/microinspire/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
-/project/mrco-international-a-project-of-reinforce-lab/,301,/project/mrco-international/,production Yoast redirect (target to re-check),,,,,,0,yoast-redirect,
+/project/inpace/,KEEP,,register (D-014/015/023),404,,0,0,,0,register,"APPROVED: PRESERVE — rebuild to D-012 standard | 23 Oct: production answers 404; Jamil: ""Inpace and Inpace shop are different projects"", so it must not go to /portfolio/inpace-shop/. Stays 404 (no change) until Jamil names a page"
+/project/microinspire-a-project-of-reinforce-lab/,301,/portfolio/,Jamil 23 Oct (D-214),,,,,,0,yoast-redirect,"APPROVED: 301 -> /portfolio/ (Jamil 23 Oct: ""Old projects mrco and microinspire 301 to portfolio"")"
+/project/mrco-international-a-project-of-reinforce-lab/,301,/portfolio/,Jamil 23 Oct (D-214),,,,,,0,yoast-redirect,"APPROVED: 301 -> /portfolio/ (Jamil 23 Oct: ""Old projects mrco and microinspire 301 to portfolio"")"
 /project/uiu/,301,/clients/,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),404,,,,,1,approved-2026-10 crawl linked-from-production,
 /projects-sitemap.xml,CONFIG,,register (D-014/015/023),,,0,0,,0,register,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
 /projects/access-tutor-copy/,301,/portfolio/inpace-shop/,approved-redirects-2026-10 (D-126; existing production Yoa),,,,,,0,approved-2026-10 yoast-redirect,
@@ -567,7 +567,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /snapchat-content-ideas/,KEEP,,register (D-014/015/023),200,,0,4324,1,29,backlinks crawl gsc linked-from-production register sitemap,APPROVED (HOLD): PRESERVE money page at slug + rebuild to D-012; re-angle where natural
 /snapchat-content-ideas/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /social-media-advertising/,301,/services/marketing-automation/,register (D-014/015/023),200,,0,0,,30,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /services/marketing-automation/ (legacy category, not recreated — avoids F-001) [flattened; was -> /services/social-media-marketing-serv"
-/social-media-advertising/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/social-media-advertising/page/2/,301,/social-media-advertising/,Jamil 23 Oct (D-214),200,,0,0,,5,crawl linked-from-production register,"APPROVED: 301 -> /social-media-advertising/ (Jamil 23 Oct: ""Go to page 1""; the category has one page on the new site)"
 /social-media-advertising/paged-2/15/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /social-media-advertising/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
 /social-media-advertising/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
@@ -589,7 +589,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /social-media-content-ideas-for-restaurants/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /social-media-management/,301,/services/marketing-automation/,register (D-014/015/023),200,,0,6,,31,crawl gsc linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /services/marketing-automation/ (legacy category, not recreated — avoids F-001) [flattened; was -> /services/social-media-management-ser"
 /social-media-management/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
-/social-media-management/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/social-media-management/page/2/,301,/social-media-management/,Jamil 23 Oct (D-214),200,,0,0,,5,crawl linked-from-production register,"APPROVED: 301 -> /social-media-management/ (Jamil 23 Oct: ""Go to page 1""; the category has one page on the new site)"
 /social-media-management/paged-2/18/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
 /social-media-management/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
 /social-media-management/paged-2/3/,410,,F-001 paged junk rule,not fetched (query or paged junk),,,,,2,crawl linked-from-production,
@@ -632,7 +632,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /top-advantages-and-disadvantages-of-using-social-media/,KEEP,,register (D-014/015/023),200,,105,137540,,40,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
 /top-benefits-of-content-marketing/,410,,register (D-014/015/023),200,,0,0,,43,crawl linked-from-production register sitemap,"APPROVED (HOLD): 410 — thin, 0 clicks / 0 impressions"
 /trends/,301,/blog/,register (D-014/015/023),200,,0,0,,17,crawl linked-from-production register sitemap,"APPROVED (HOLD): 301 -> /blog/ (legacy category, not recreated — avoids F-001)"
-/trends/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/trends/page/2/,301,/trends/,Jamil 23 Oct (D-214),200,,0,0,,5,crawl linked-from-production register,"APPROVED: 301 -> /trends/ (Jamil 23 Oct: ""Go to page 1""; the category has one page on the new site)"
 /trends/paged-2/12/,410,,register (D-014/015/023),,,0,11,,0,gsc register,APPROVED: 410
 /trends/paged-2/16/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /trends/paged-2/17/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
@@ -666,7 +666,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /video-marketing-ideas-for-small-business/,410,,register (D-014/015/023),200,,0,0,,21,crawl linked-from-production register sitemap,"APPROVED (HOLD): 410 — thin, 0 clicks / 0 impressions"
 /video-marketing-ideas-for-small-business/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /video-marketing/,301,/blog/,register (D-014/015/023),200,,0,30,,11,crawl gsc linked-from-production register sitemap,APPROVED: 301 -> /blog/ (consolidate into live pillar)
-/video-marketing/page/2/,KEEP-NOINDEX,,register (D-014/015/023),200,,0,0,,5,crawl linked-from-production register,"APPROVED: KEEP-noindex — archive pagination (new archives follow F-001: proper /page/N/, self-canonical/noindex, no /paged-N/)"
+/video-marketing/page/2/,301,/video-marketing/,Jamil 23 Oct (D-214),200,,0,0,,5,crawl linked-from-production register,"APPROVED: 301 -> /video-marketing/ (Jamil 23 Oct: ""Go to page 1""; the category has one page on the new site)"
 /video-marketing/paged-2/18/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,2,,2,crawl gsc linked-from-production register,APPROVED: 410
 /video-marketing/paged-2/2/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,4,crawl linked-from-production register,APPROVED: 410
 /video-marketing/paged-2/3/,410,,register (D-014/015/023),not fetched (query or paged junk),,0,0,,2,crawl linked-from-production register,APPROVED: 410

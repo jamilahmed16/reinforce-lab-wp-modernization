@@ -11,7 +11,8 @@ Rules:
 - One rule per path. Rows whose old address has a query string (?add-to-cart=...) follow their path's rule.
 - 301 rows go to their target. 410 rows only apply when WordPress would otherwise answer 404
   (reinforce-redirects.php), so a removal can never hide a page that exists.
-- KEEP, KEEP-NOINDEX, CONFIG rows produce nothing.
+- KEEP, KEEP-NOINDEX, CONFIG rows produce nothing, except kept addresses that production already answers 404:
+  they go in a '404' list so WordPress does not guess a nearby page for them (no change from production).
 - Rows whose target is their own path (double slash, missing slash, duplicate slug variants) are left to
   WordPress's canonical redirect.
 - Paths handled elsewhere are left out: /author/... and /paged-N/ junk (blog/reinforce-blog.php).
@@ -40,6 +41,9 @@ def load():
         act = r['action'].strip()
         path = norm(r['old_path'])
         has_query = '?' in r['old_path']
+        if act.startswith('KEEP') and r['prod_status'].strip() == '404' and not has_query:
+            rules.setdefault(path, ('404', ''))  # production already answers 404: no guessed redirect here either
+            continue
         if act.startswith('301'):
             kind, target = '301', norm(r['target']) if r['target'].startswith('/') else r['target'].strip()
         elif act == '410':
@@ -74,6 +78,7 @@ def build():
         sys.exit('Conflicting rules for the same path: fix the CSV first.')
     r301 = {p: t for p, (k, t) in rules.items() if k == '301'}
     r410 = sorted(p for p, (k, t) in rules.items() if k == '410')
+    r404 = sorted(p for p, (k, t) in rules.items() if k == '404')
     # flatten chains: every old address goes straight to its final approved page (one hop)
     flattened = []
     for p in list(r301):
@@ -99,9 +104,12 @@ def build():
     lines += ["        ],", "        '410' => ["]
     for p in r410:
         lines.append('            %s => 1,' % php_str(p))
+    lines += ["        ],", "        '404' => ["]
+    for p in r404:
+        lines.append('            %s => 1,' % php_str(p))
     lines += ["        ],", '    ];', '}', '']
     open(OUT, 'w').write('\n'.join(lines))
-    print('wrote', os.path.relpath(OUT, ROOT), '| 301:', len(r301), '| 410:', len(r410), '| skipped:', dict(skipped))
+    print('wrote', os.path.relpath(OUT, ROOT), '| 301:', len(r301), '| 410:', len(r410), '| 404 kept as on production:', len(r404), '| skipped:', dict(skipped))
     if chains:
         print('WARNING, two hops (target is itself redirected):')
         for c in chains:
