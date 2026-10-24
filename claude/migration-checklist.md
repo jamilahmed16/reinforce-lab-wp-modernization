@@ -12,6 +12,7 @@ Nothing on reinforcelab.com changes until the switch itself (Rules 1 and 2). Eve
 
 Both sites share one Hostinger account and both are compromised. Nothing is copied from the old servers as files. The new site is a **fresh WordPress on new hosting**: our code from git, plugins and theme fresh from the vendors, content and settings imported as data (`claude/data/site-export/`), media images and PDFs only, each checked. Jamil approved 18 Oct ("Yes I you can start"; `jadirectives@gmail.com` confirmed as his; `.com` and `.online` on the same account).
 
+- **24 Oct (D-219): the rebuild runs on the existing Hostinger account for now**, in a fresh folder with a new database at a test address; move host after the first client. Jamil: turn on SSH (hPanel, Advanced, SSH Access), create the test address and an empty database, upload the 6 vendor zips. A separate Hostinger plan for reinforcelab.com alone is open until the hosting research is read.
 - [ ] **Step 1 (Jamil and Hostinger):** security ticket for the account (how they got in); every password changed (hosting, Titan mailbox, WordPress, database, FTP, registrar) with two-factor; full offline backups of both sites kept as evidence; WooCommerce orders and Semrush backlinks exported; new hosting chosen (new account, not the compromised one). **(Jamil)**
 - [x] **Step 2.1:** everything built on `.online` exported as data only, scanned (0 risky fields), 2,318 media files listed with checksums (18 Oct).
 - [x] **Step 2.2:** redirect map in code and the redirect test (A4). 0 failures on `.online` (D-214).
