@@ -54,7 +54,7 @@ What changes, and why:
 
 Tasks:
 - [x] Copy the kept posts (PRESERVE, PRESERVE+REBUILD, PRESERVE-URL+REWRITE, plus HUB-REVIEW posts kept) with the rules above. One controlled import, no new publishing; recorded as the agreed exception to F-003. **Done 12 Oct (D-178): 80 posts.** Their internal links still point at the old URLs until the redirect sign-off; then they are pointed at final pages.
-- [ ] Posts planned **REBUILD-new** (23 in September; 21 open on 23 Oct, the rest became approved redirects): 18 are carried across with their old text, 3 do not exist yet (`/video-seo/`, `/off-page-seo-checklist/`, `/generate-leads-for-business/`). **(Jamil decides: launch with old text and rewrite after, one at a time; and write the 3 now or later)**
+- [x] Posts planned **REBUILD-new** (23 in September; 21 open on 23 Oct, the rest became approved redirects): the 18 carried posts launch with their old text and are rewritten after launch; the 3 not yet written come after launch (D-218).
 - [ ] Every **301 and CONSOLIDATE target** exists and returns 200 before the switch.
 - [x] **Build the `/reviews/` hub** and its two pillars `/reviews/best-wordpress-hosting/` and `/reviews/best-seo-ai-tools/` (approved new URLs, D-016), so the 20 reviews are linked from the site. Done 14 Oct (D-191): all 19 posts and the WP Engine page linked; no rankings until the first-hand rewrites.
 - [x] Copy the media files the kept posts use. **Done 12 Oct (D-178): 2,029 files at the same paths.**
@@ -64,7 +64,7 @@ Tasks:
 
 - [x] All approved 301s, 410s and merges implemented in code on `.online` (one source file, versioned in git). `claude/data/redirect-map-draft.csv` builds `core/reinforce-redirects-map.php` (D-214).
 - [ ] **Redirect test over every known old URL**: the 793-row register, Search Console's 425 pages and link targets, the backlink export, production's sitemaps and internal links, and the Yoast redirects. For each URL it checks: final status as approved (200, 301 to target, or 410), final URL equals the approved target, **at most one redirect hop**, no loops, the target is indexable with a self-canonical, query-string and trailing-slash variants behave the same. **Pass mark: 0 failures.** **(gate)** 23 Oct on `.online`: 2,103 requests over 803 addresses, 0 failures (D-214). Re-run on staging and in the first hour after the switch; the 39 old `/wp-content/` files need the server 410 rule from the rebuild.
-- [ ] **Internal link scan** of every page and post on `.online`: 0 links to a 404, 410 or redirect; 0 links to `reinforcelab.online` (all switch to the live domain). **(gate)** 23 Oct: 3 left, all to 3 approved posts not written yet; they pass when published or get unlinked before launch (D-216).
+- [ ] **Internal link scan** of every page and post on `.online`: 0 links to a 404, 410 or redirect; 0 links to `reinforcelab.online` (all switch to the live domain). **(gate)** 24 Oct: **0** (D-218). Re-run on staging and after every content change.
 - [ ] Every URL a backlink points to resolves to a 200 page (directly or by one 301). **(gate)**
 
 Note on "100% accuracy": the redirect test guarantees 100% for every URL that appears in any of the sources above. A URL that exists nowhere in our data (for example an old link on a third-party site that no export shows) can only be caught after launch, by watching the 404 log (B2).
@@ -98,7 +98,7 @@ Note on "100% accuracy": the redirect test guarantees 100% for every URL that ap
 ### B1. Content, one at a time (F-003 pace)
 
 - Rewrite carried posts to the blog rules (grade 8, top-10 competitor analysis), highest-value first by Search Console data.
-- Write the REBUILD-new posts and the approved new posts (citation analysis, SEO consulting and AI, AI SEO pricing).
+- Write the REBUILD-new posts (rewrite the 18 carried ones, most-shown first; write `/video-seo/`, `/off-page-seo-checklist/`, `/generate-leads-for-business/` and link to them again from the 5 posts that mentioned them, D-218) and the approved new posts (citation analysis, SEO consulting and AI, AI SEO pricing).
 - Case study or first-hand result for the AI Search Optimization page; founder headshot for author boxes and About.
 - Share images for the main service pages (as done for AI Search Optimization).
 

@@ -3,6 +3,7 @@
 
   python3 claude/tools/fix-post-links.py plan     # dry run: what would change, per post (no writes)
   python3 claude/tools/fix-post-links.py apply    # one post at a time, each backed up first
+  python3 claude/tools/fix-post-links.py unlink /path/ [/path/ ...]   # make links to these addresses plain text (words kept)
 
 Input: the latest claude/research/link-scan/<date>.json (run claude/tools/link-scan.py first).
 Only where each link points changes; the words and the post dates do not:
@@ -111,7 +112,14 @@ def run(only=0, apply=False):
 def main():
     global MAP
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'plan'
-    MAP = build_map()
+    if cmd == 'unlink':
+        paths = sys.argv[2:]
+        if not paths:
+            raise SystemExit('give the addresses to unlink')
+        MAP = ('(command line)', {p: '' for p in paths}, [])
+        cmd = 'apply'
+    else:
+        MAP = build_map()
     scan, m, left = MAP
     print('from', os.path.relpath(scan, ROOT), '|', sum(1 for v in m.values() if v), 'to repoint,', sum(1 for v in m.values() if not v), 'to unlink | left alone (not published yet):', left)
     plan = run()
