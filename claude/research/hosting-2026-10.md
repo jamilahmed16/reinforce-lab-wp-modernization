@@ -33,7 +33,7 @@ Asked by Jamil (24 Oct): "I need your research before deciding hosting: what are
 
 ## 3. What matters for our site specifically
 
-- **Traffic is small today** (27 Search Console clicks in Aug 2026, D-001 baseline). Every entry plan above has room; visit caps (Pressable 30k, Kinsta 35k, WP Engine 25k) are far above our level.
+- **Traffic is small today** (27 Search Console clicks in Aug 2026, DISCOVER baseline). Every entry plan above has room; visit caps (Pressable 30k, Kinsta 35k, WP Engine 25k) are far above our level.
 - **LiteSpeed Cache (D-167):** works only on LiteSpeed servers (Hostinger, WPX). On Pressable, Kinsta, Rocket.net or WP Engine we drop that plugin and use the host's own cache. Small change in the rebuild script.
 - **Beaver Builder, Themer, PowerPack, ACF PRO, Yoast Premium:** standard plugins, supported on all of these hosts.
 - **Where visitors are:** Bangladesh and the US office plus international B2B. A strong CDN matters more than the origin city; all candidates include one.
