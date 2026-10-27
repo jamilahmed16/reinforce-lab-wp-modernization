@@ -26,7 +26,7 @@ Both sites share one Hostinger account and both are compromised. Nothing is copi
 
 ### A1. Data and decisions (Jamil)
 
-- [ ] **Backlink export, page by page** (Semrush: Backlinks, export by target URL). Every URL with a backlink must resolve to a live page. **(Jamil)**
+- [x] **Backlink export, page by page** (Semrush, 27 Oct, F-052): every page with a real link stays or has an approved one-step redirect. Open: `/food-content-marketing/` 301 or not, 4 spam-linked images as 410, disavow file. **(Jamil)**
 - [x] **The 20 "HUB-REVIEW" posts** are affiliate reviews, already decided in D-014b (10 Sep): keep all at their URLs under a `/reviews/` hub. Figures and flags: `claude/research/review-posts-proposal-2026-10-07.md`. The 3 weakest (WP Engine partner landing page, Beaver Builder review, Bluehost) stay for now and are redirected later (Jamil).
 - [x] **The store** is closed (D-148): shop, cart and product addresses redirect; customer data is not moved. **(Jamil)** export past orders from production's WooCommerce admin before the switch.
 - [x] **Bylines** (D-145): Jamil will rewrite every old post with new content and images, and each rewritten post carries his name. Titles may change in a rewrite; the URL (slug) stays unless a change is approved for that URL, with a 301.
