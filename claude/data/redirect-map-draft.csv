@@ -300,7 +300,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
 /find-competitor-keywords/,KEEP,,register (D-014/015/023),200,,0,133918,,29,crawl gsc linked-from-production register sitemap,APPROVED: BUILD fresh on-strategy (D-012)
 /flywheel-wordpress-hosting/,KEEP,,register (D-014/015/023),200,,0,7,,5,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
-/food-content-marketing/,410,,approved-redirects-2026-10 (D-146: approved by Jamil 8 Oct),404,,,,,2,approved-2026-10 crawl linked-from-production,
+/food-content-marketing/,301,/20-content-marketing-ideas-for-restaurants/,Jamil 28 Oct (D-221),404,,,,1,2,approved-2026-10 crawl linked-from-production,"APPROVED: 301 -> /20-content-marketing-ideas-for-restaurants/ (Jamil 28 Oct: ""All yes""; one real follow backlink from wanderboat.ai, F-052)"
 /ftc-disclosure/,KEEP,,register (D-014/015/023),200,,0,0,,2,crawl linked-from-production register sitemap,APPROVED: PRESERVE — rebuild to D-012 standard
 /generate-leads-for-business/,KEEP,,register (D-014/015/023),404,,0,0,,6,crawl linked-from-production register,APPROVED: REBUILD candidate (on-strategy lead-gen)
 /get-a-/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410 — junk (search-spam / cache / malformed slug)
@@ -802,3 +802,7 @@ old_path,action,target,decision_source,prod_status,prod_redirect,gsc_clicks,gsc_
 /writesonic-review/,KEEP,,register (D-014/015/023),200,,0,13,,14,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE at slug + link from /reviews/ hub; rel=sponsored + FTC disclosure + D-012; keep indexed
 /youtube-seo/,KEEP,,register (D-014/015/023),200,,0,6,,499,crawl gsc linked-from-production register sitemap,APPROVED: PRESERVE URL + rebuild content to D-012 (re-angle off-core ones to positioning)
 /youtube-seo/feed/,410,,register (D-014/015/023),,,0,0,,0,register,APPROVED: 410
+/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Real-Estate-Infographic-1.jpg,410,,Jamil 28 Oct (D-221),,,,,1,,semrush-backlinks-2026-10-27,"APPROVED: 410 (Jamil 28 Oct: ""All yes""; old image of a retired post, linked only from spam or hacked pages, F-052)"
+/wp-content/uploads/2022/02/The-Ultimate-Guide-to-Branding-Businesses-on-TikTok-infographic-2-989x1024.jpg,410,,Jamil 28 Oct (D-221),,,,,1,,semrush-backlinks-2026-10-27,"APPROVED: 410 (Jamil 28 Oct: ""All yes""; old image of a retired post, linked only from spam or hacked pages, F-052)"
+/wp-content/uploads/2022/02/Best-Ways-of-Using-Content-Marketing-for-Brand-Awareness-infographic.jpg,410,,Jamil 28 Oct (D-221),,,,,1,,semrush-backlinks-2026-10-27,"APPROVED: 410 (Jamil 28 Oct: ""All yes""; old image of a retired post, linked only from spam or hacked pages, F-052)"
+/wp-content/uploads/2022/11/Search-Engine-Marketing-Strategies.jpg,410,,Jamil 28 Oct (D-221),,,,,1,,semrush-backlinks-2026-10-27,"APPROVED: 410 (Jamil 28 Oct: ""All yes""; old image of a retired post, linked only from spam or hacked pages, F-052)"
