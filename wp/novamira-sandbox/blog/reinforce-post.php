@@ -131,7 +131,7 @@ add_filter('the_content', function ($html) {
     $id = get_the_ID();
     if (!$id || get_post_type($id) !== 'post' || !get_post_meta($id, '_rl_carried', true)) return $html;
     /* empty heading tags (no text, only spacing or an empty <strong>) carry no words; dropped so they do not become blank chapters or steps */
-    $html = preg_replace_callback('#<h([2-6])\b[^>]*>(.*?)</h\1>#is', function ($m) { return trim(html_entity_decode(wp_strip_all_tags($m[2]), ENT_QUOTES, 'UTF-8'), " \t\n\r\0\x0B\xC2\xA0") === '' && stripos($m[2], '<img') === false ? '' : $m[0]; }, $html) ?? $html;
+    $html = preg_replace_callback('#<h([1-6])\b[^>]*>(.*?)</h\1>#is', function ($m) { return trim(html_entity_decode(wp_strip_all_tags($m[2]), ENT_QUOTES, 'UTF-8'), " \t\n\r\0\x0B\xC2\xA0") === '' && stripos($m[2], '<img') === false ? '' : $m[0]; }, $html) ?? $html;
     /* D-194: a logo image with no alt text inside a link to another site gets that site's name, so the link has a name for screen readers */
     $html = preg_replace_callback('#(<a\s[^>]*href=["\'](https?://[^"\']+)["\'][^>]*>)(.*?)(</a>)#is', function ($m) {
         if (stripos($m[3], '<img') === false || preg_match('#<img\b[^>]*\balt=["\'][^"\']+["\']#i', $m[3]) || trim(wp_strip_all_tags($m[3])) !== '') return $m[0];
