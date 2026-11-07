@@ -73,7 +73,7 @@ Note on "100% accuracy": the redirect test guarantees 100% for every URL that ap
 ### A5. Pages and site quality (mostly done)
 
 - [x] All built pages pass the SEO/GEO/AEO standard; accessibility (axe) at 0; type scale, buttons, contrast, zero radius, 404 and search pages, consent bar (D-135 to D-143).
-- [ ] **Page parity for the 17 pages kept at the same URL** (Home, Website Maintenance, 15 posts): each one is live on the new site at exactly the same address, returns 200, and still answers what people searched for to find it (topic and main sections kept, nothing that ranks dropped), so Google sees the same page continuing. Checked one by one before the switch. **(gate)** 7 Nov (`parity-check.py`, F-055): the 15 posts match production; Home and Website Maintenance titles and descriptions wait for Jamil.
+- [ ] **Page parity for the 17 pages kept at the same URL** (Home, Website Maintenance, 15 posts): each one is live on the new site at exactly the same address, returns 200, and still answers what people searched for to find it (topic and main sections kept, nothing that ranks dropped), so Google sees the same page continuing. Checked one by one before the switch. **(gate)** 7 Nov (`parity-check.py`, F-055): the 15 posts match production; Home and Website Maintenance titles kept as production, new descriptions approved (D-222).
 - [x] Favicon and site icon (D-147). At the switch, copy the root `favicon.ico` and the site icon attachment with the rest.
 - [ ] SMTP mailbox login for form email (code ready, O-027). **(Jamil)**
 - [ ] GA4 measurement ID, retention 14 months (consent bar ready). **(Jamil)**
