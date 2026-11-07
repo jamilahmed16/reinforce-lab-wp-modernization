@@ -36,8 +36,14 @@ def php(code, timeout=300):
         json.dump({'code': code}, f)
         path = f.name
     try:
-        out = subprocess.run(['novamira', 'run', 'novamira/execute-php', '--yes', '--json', '--quiet', '--input', '@' + path],
-                             capture_output=True, text=True, timeout=timeout)
+        for attempt in range(4):
+            out = subprocess.run(['novamira', 'run', 'novamira/execute-php', '--yes', '--json', '--quiet', '--input', '@' + path],
+                                 capture_output=True, text=True, timeout=timeout)
+            # Hostinger answers an occasional 503 while the CLI reads the site's OAuth metadata ("server_unsupported").
+            # That happens before any PHP runs, so retrying cannot run the code twice. Any other error is not retried.
+            if '"server_unsupported"' not in out.stdout or attempt == 3:
+                break
+            time.sleep(5 * (attempt + 1))
     finally:
         os.unlink(path)
     try:
