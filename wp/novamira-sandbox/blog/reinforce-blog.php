@@ -127,6 +127,18 @@ function rl_blog_main_cats() {
     return $out;
 }
 
+/* Pagination links never carry tracking parameters (utm_*, fbclid, gclid and the like). WordPress copies the current
+   query string into "page 2" links, and LiteSpeed ignores these parameters when it caches, so one visit from a
+   newsletter link would otherwise put "?utm_source=..." links into the cached page every visitor and crawler sees.
+   Other parameters (for example ?s= on search results) are kept. */
+add_filter('paginate_links', function ($link) {
+    $q = (string) wp_parse_url($link, PHP_URL_QUERY);
+    if ($q === '') return $link;
+    parse_str($q, $args);
+    $drop = array_values(array_filter(array_keys($args), function ($k) { return (bool) preg_match('/^(utm_[a-z_]*|fbclid|gclid|gbraid|wbraid|msclkid|_ga|_gl|mc_cid|mc_eid|nc)$/i', $k); }));
+    return $drop ? remove_query_arg($drop, $link) : $link;
+});
+
 /* D-180: 12 per page on the blog and its category archives (3 columns x 4 rows, or 2 x 6 on tablets). Main query only (F-001). */
 add_action('pre_get_posts', function ($q) {
     if (!is_admin() && $q->is_main_query() && ($q->is_home() || $q->is_category() || $q->is_tag())) $q->set('posts_per_page', 12);

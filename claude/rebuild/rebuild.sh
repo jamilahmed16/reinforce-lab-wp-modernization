@@ -113,6 +113,9 @@ step "6. Our code from git (no Novamira: a must-use plugin loads it)"
 rm -rf "$WPPATH/wp-content/novamira-sandbox"
 cp -a "$REPO/wp/novamira-sandbox" "$WPPATH/wp-content/novamira-sandbox"
 cp "$HERE/novamira-sandbox.htaccess" "$WPPATH/wp-content/novamira-sandbox/.htaccess"
+# GSAP animation files (third-party, not in git): official npm release, each file checked by md5
+mkdir -p "$WPPATH/wp-content/novamira-sandbox/core/vendor"
+php -r '$d=json_decode(file_get_contents($argv[1]),true)["vendor_js"]; foreach ($d["files"] as $f=>$md5) { $b=file_get_contents($d["base"].$f); if ($b===false || md5($b)!==$md5) { fwrite(STDERR,"STOP: $f download failed or md5 differs\n"); exit(1);} file_put_contents($argv[2]."/".$f,$b); echo "$f ok\n"; }' "$PJ" "$WPPATH/wp-content/novamira-sandbox/core/vendor"
 cp "$HERE/mu-plugins/reinforce-lab.php" "$WPPATH/wp-content/mu-plugins/reinforce-lab.php"
 echo "code: $(cd "$REPO" && git rev-parse --short HEAD) ($(find "$WPPATH/wp-content/novamira-sandbox" -name '*.php' | wc -l) PHP files)"
 

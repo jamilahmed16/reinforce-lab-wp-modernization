@@ -1,7 +1,7 @@
 {
  "base": "https://reinforcelab.online",
  "posts": 81,
- "with_problems": 1,
+ "with_problems": 0,
  "results": [
   {
    "slug": "20-content-marketing-ideas-for-restaurants",
@@ -414,9 +414,7 @@
   {
    "slug": "social-media-content-ideas-for-restaurants",
    "status": 200,
-   "problems": [
-    "2 H1 headings"
-   ],
+   "problems": [],
    "images": 15
   },
   {

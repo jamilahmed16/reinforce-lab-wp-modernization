@@ -2,7 +2,11 @@
  "_why": "What the new site runs, matching reinforcelab.online on 23 Oct 2026 minus Novamira (Rule 1). Free plugins come from wordpress.org and are checked against wordpress.org checksums. Paid ones are zips Jamil downloads from his vendor accounts into the vendor folder; their sha256 is written to the run log.",
  "wordpress": "7.1.3",
  "php_min": "8.2",
- "free": ["wordpress-seo", "litespeed-cache", "jetpack"],
+ "free": [
+  "wordpress-seo",
+  "litespeed-cache",
+  "jetpack"
+ ],
  "vendor_plugins": {
   "bb-plugin": "Beaver Builder Pro (wpbeaverbuilder.com, My Account, Downloads)",
   "bb-theme-builder": "Beaver Themer (wpbeaverbuilder.com, My Account, Downloads)",
@@ -13,5 +17,20 @@
  "vendor_theme": {
   "bb-theme": "Beaver Builder Theme (wpbeaverbuilder.com, My Account, Downloads)"
  },
- "never": ["novamira", "novamira-pro", "woocommerce", "wp-file-manager", "insert-headers-and-footers"]
+ "never": [
+  "novamira",
+  "novamira-pro",
+  "woocommerce",
+  "wp-file-manager",
+  "insert-headers-and-footers"
+ ],
+ "vendor_js": {
+  "_why": "GSAP 3.15.0 animation files used by our code (core/vendor/), kept out of git as third-party code. Downloaded from the official npm package via jsDelivr; md5 must match the files live on .online (checked 7 Nov 2026).",
+  "base": "https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/",
+  "files": {
+   "gsap.min.js": "bf3fd8ec2a5d9f4531b4c310222361f8",
+   "ScrollTrigger.min.js": "5445d0e95e612449839d2462ba8ab7d0",
+   "SplitText.min.js": "8b363297044e4ded73dc94acb087cbdc"
+  }
+ }
 }

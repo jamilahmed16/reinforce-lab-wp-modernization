@@ -41,35 +41,7 @@
   "/social-media-content-ideas-for-clothing-brand/": 200,
   "/social-media-content-ideas-for-hotels/": 200
  },
- "failures": [
-  {
-   "path": "/food-content-marketing/",
-   "variant": false,
-   "action": "301",
-   "expect": "301",
-   "target": "/20-content-marketing-ideas-for-restaurants/",
-   "code": 410,
-   "location": ""
-  },
-  {
-   "path": "/food-content-marketing",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/20-content-marketing-ideas-for-restaurants/",
-   "code": 410,
-   "location": ""
-  },
-  {
-   "path": "/food-content-marketing/?utm_source=test",
-   "variant": true,
-   "action": "301",
-   "expect": "301",
-   "target": "/20-content-marketing-ideas-for-restaurants/",
-   "code": 410,
-   "location": ""
-  }
- ],
+ "failures": [],
  "wp_content_404_not_410": [
   {
    "path": "/wp-content/uploads/2020/02/Best-Sport-Accessories-A-Project-of-Reinforce-Lab-Digital.png",
@@ -153,7 +125,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Inforgraphic-4.jpg.webp",
+   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-Infographic-2.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -162,7 +134,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-Infographic-2.jpg.webp",
+   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Inforgraphic-4.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -180,7 +152,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media.jpeg.webp",
+   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-infographic-1.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -189,7 +161,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-infographic-1.jpg.webp",
+   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media.jpeg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -270,7 +242,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants-Infographic-1.jpg.webp",
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants-Infographic-2-scaled.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -279,7 +251,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants-Infographic-2-scaled.jpg.webp",
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants-Infographic-1.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -306,7 +278,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-1-scaled.jpg",
+   "path": "/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-1-scaled.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -315,7 +287,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-1-scaled.jpg.webp",
+   "path": "/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-1-scaled.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -396,7 +368,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2022/11/Creative-Snapchat-Content-Ideas.jpg.webp",
+   "path": "/wp-content/uploads/2023/01/Flywheel-01.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -405,7 +377,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2023/01/Flywheel-01.jpg",
+   "path": "/wp-content/uploads/2022/11/Creative-Snapchat-Content-Ideas.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -441,7 +413,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2022/02/Best-Ways-of-Using-Content-Marketing-for-Brand-Awareness-infographic.jpg",
+   "path": "/wp-content/uploads/2022/02/The-Ultimate-Guide-to-Branding-Businesses-on-TikTok-infographic-2-989x1024.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -450,7 +422,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2022/02/The-Ultimate-Guide-to-Branding-Businesses-on-TikTok-infographic-2-989x1024.jpg",
+   "path": "/wp-content/uploads/2022/02/Best-Ways-of-Using-Content-Marketing-for-Brand-Awareness-infographic.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -542,7 +514,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels-infographic-1.jpg",
+   "path": "/wp-content/uploads/2021/09/Content-Marketing-for-Banks.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -551,7 +523,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/09/Content-Marketing-for-Banks.jpg",
+   "path": "/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels-infographic-1.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -587,7 +559,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-1.jpg",
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-3-scaled.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -596,7 +568,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-3-scaled.jpg",
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-1.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
