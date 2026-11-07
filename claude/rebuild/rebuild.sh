@@ -39,15 +39,19 @@ LOG="$HERE/logs/$(date +%Y%m%d-%H%M)-$(echo "$URL" | sed 's#https\?://##; s#/.*#
 exec > >(tee -a "$LOG") 2>&1
 step() { echo; echo "== $* ($(date +%H:%M:%S))"; }
 wp() { command wp --path="$WPPATH" "$@"; }
-ver() { python3 -c "import json;print(json.load(open('$HERE/plugins.json'))['$1'])"; }
+# JSON helpers in PHP (always present on a WordPress host; Python is not guaranteed, e.g. on Hostinger)
+jval() { php -r '$d=json_decode(file_get_contents($argv[1]),true); echo $d[$argv[2]];' "$1" "$2"; }
+jlist() { php -r '$d=json_decode(file_get_contents($argv[1]),true); $o=[]; foreach (array_slice($argv,2) as $k) { $v=$d[$k]; $o=array_merge($o, array_is_list($v)?$v:array_keys($v)); } echo implode(" ",$o);' "$@"; }
+jcount() { php -r 'echo count(json_decode(file_get_contents($argv[1]),true));' "$1"; }
+ver() { jval "$HERE/plugins.json" "$1"; }
+PJ="$HERE/plugins.json"
 
 step "0. Checks before starting"
 command -v wp >/dev/null || { echo "STOP: WP-CLI (wp) not found"; exit 1; }
-command -v python3 >/dev/null || { echo "STOP: python3 not found"; exit 1; }
 php -r 'exit(version_compare(PHP_VERSION, "8.2", ">=") ? 0 : 1);' || { echo "STOP: PHP 8.2 or newer needed"; exit 1; }
 [ -s "$EXPORT/posts.json" ] || { echo "STOP: $EXPORT/posts.json missing"; exit 1; }
-[ "$(python3 -c "import json;print(len(json.load(open('$EXPORT/scan.json'))))")" = "0" ] || { echo "STOP: the export scan lists risky fields"; exit 1; }
-for slug in $(python3 -c "import json;d=json.load(open('$HERE/plugins.json'));print(' '.join(list(d['vendor_plugins'])+list(d['vendor_theme'])))"); do
+[ "$(jcount "$EXPORT/scan.json")" = "0" ] || { echo "STOP: the export scan lists risky fields"; exit 1; }
+for slug in $(jlist "$PJ" vendor_plugins vendor_theme); do
   ls "$VENDOR"/"$slug"*.zip >/dev/null 2>&1 || { echo "STOP: vendor zip for $slug not found in $VENDOR"; exit 1; }
 done
 mkdir -p "$WPPATH"
@@ -55,7 +59,7 @@ if [ -f "$WPPATH/wp-config.php" ] && wp core is-installed 2>/dev/null; then
   n=$(wp db query "SELECT COUNT(*) FROM $(wp db prefix)posts" --skip-column-names)
   [ "$n" -le 10 ] || { echo "STOP: $WPPATH already holds a site with $n posts. This script only builds on an empty install."; exit 1; }
 fi
-echo "ok: WP-CLI $(command wp --version | cut -d' ' -f2), PHP $(php -r 'echo PHP_VERSION;'), export $(python3 -c "import json;print(len(json.load(open('$EXPORT/posts.json'))))") records"
+echo "ok: WP-CLI $(command wp --version | cut -d' ' -f2), PHP $(php -r 'echo PHP_VERSION;'), export $(jcount "$EXPORT/posts.json") records"
 
 step "1. WordPress core from wordpress.org"
 if [ ! -f "$WPPATH/wp-includes/version.php" ]; then
@@ -77,31 +81,31 @@ wp config shuffle-salts
 step "3. Fresh install (indexing off)"
 if ! wp core is-installed 2>/dev/null; then
   wp core install --url="$URL" --title="Reinforce Lab" --admin_user="$ADMIN_EMAIL" --admin_email="$ADMIN_EMAIL" \
-     --admin_password="$(python3 -c 'import secrets;print(secrets.token_urlsafe(24))')" --skip-email
+     --admin_password="$(php -r 'echo bin2hex(random_bytes(18));')" --skip-email
   echo "admin login: $ADMIN_EMAIL. Password: not shown; use 'Lost your password' on $URL/wp-login.php"
 fi
 wp option update blog_public 0
 
 step "4. Free plugins from wordpress.org, checksum-verified"
-for slug in $(python3 -c "import json;print(' '.join(json.load(open('$HERE/plugins.json'))['free']))"); do
+for slug in $(jlist "$PJ" free); do
   wp plugin is-installed "$slug" || wp plugin install "$slug"
   wp plugin verify-checksums "$slug"
 done
 
 step "5. Paid plugins and theme from Jamil's vendor zips"
-for slug in $(python3 -c "import json;print(' '.join(json.load(open('$HERE/plugins.json'))['vendor_plugins']))"); do
+for slug in $(jlist "$PJ" vendor_plugins); do
   zip=$(ls "$VENDOR"/"$slug"*.zip | head -1)
-  top=$(unzip -Z1 "$zip" | head -1 | cut -d/ -f1)
+  top=$(php -r '$z=new ZipArchive; if ($z->open($argv[1])!==true) exit(1); echo explode("/",$z->getNameIndex(0))[0];' "$zip" 2>/dev/null || unzip -Z1 "$zip" | head -1 | cut -d/ -f1)
   [ "$top" = "$slug" ] || { echo "STOP: $zip does not contain the $slug folder (found '$top')"; exit 1; }
-  echo "$slug: $(basename "$zip") sha256 $(sha256sum "$zip" | cut -d' ' -f1)"
+  echo "$slug: $(basename "$zip") sha256 $(php -r 'echo hash_file("sha256",$argv[1]);' "$zip")"
   wp plugin is-installed "$slug" || wp plugin install "$zip"
 done
-for slug in $(python3 -c "import json;print(' '.join(json.load(open('$HERE/plugins.json'))['vendor_theme']))"); do
+for slug in $(jlist "$PJ" vendor_theme); do
   zip=$(ls "$VENDOR"/"$slug"*.zip | head -1)
-  echo "$slug: $(basename "$zip") sha256 $(sha256sum "$zip" | cut -d' ' -f1)"
+  echo "$slug: $(basename "$zip") sha256 $(php -r 'echo hash_file("sha256",$argv[1]);' "$zip")"
   wp theme is-installed "$slug" || wp theme install "$zip"
 done
-for bad in $(python3 -c "import json;print(' '.join(json.load(open('$HERE/plugins.json'))['never']))"); do
+for bad in $(jlist "$PJ" never); do
   if wp plugin is-installed "$bad"; then echo "STOP: $bad must not be on this site"; exit 1; fi
 done
 
@@ -114,7 +118,7 @@ echo "code: $(cd "$REPO" && git rev-parse --short HEAD) ($(find "$WPPATH/wp-cont
 
 step "7. Activate theme and plugins (before the settings import, so imported settings win)"
 wp theme activate bb-theme
-wp plugin activate $(python3 -c "import json;d=json.load(open('$HERE/plugins.json'));print(' '.join(d['free']+list(d['vendor_plugins'])))")
+wp plugin activate $(jlist "$PJ" free vendor_plugins)
 
 step "8. Import content and settings (same IDs)"
 wp eval-file "$HERE/import.php" "$EXPORT" wipe-fresh
@@ -132,16 +136,10 @@ wp eval-file "$HERE/media.php" "$EXPORT" "$SOURCE"
 
 step "11. Server rules: WordPress permalinks + approved 410s for old files"
 wp rewrite structure '/%postname%/' --hard
-python3 "$REPO/claude/tools/redirects.py" htaccess >/dev/null
 HT="$WPPATH/.htaccess"
 touch "$HT"
-python3 - "$HT" "$HERE/htaccess-410.conf" <<'PY'
-import re, sys
-ht, block = sys.argv[1], open(sys.argv[2]).read()
-s = open(ht).read()
-s = re.sub(r'# BEGIN Reinforce Lab 410.*?# END Reinforce Lab 410\n?', '', s, flags=re.S)
-open(ht, 'w').write(block + '\n' + s)  # before the WordPress block, so it is checked first
-PY
+# the 410 rules come from git (claude/rebuild/htaccess-410.conf, made by claude/tools/redirects.py htaccess); put first, replace any older copy
+php -r '$ht=$argv[1]; $s=file_get_contents($ht); $s=preg_replace("/# BEGIN Reinforce Lab 410.*?# END Reinforce Lab 410\\n?/s","",$s); file_put_contents($ht, file_get_contents($argv[2])."\n".$s);' "$HT" "$HERE/htaccess-410.conf"
 grep -c "RewriteRule" "$HT" | xargs echo "rewrite rules in .htaccess:"
 
 step "12. Final checks"
@@ -149,7 +147,7 @@ wp cache flush
 wp option get blog_public | grep -qx 0 && echo "indexing: off (staging)"
 wp plugin list --status=active --field=name | sort | tr '\n' ' '; echo
 wp core verify-checksums
-wp plugin verify-checksums $(python3 -c "import json;print(' '.join(json.load(open('$HERE/plugins.json'))['free']))")
+wp plugin verify-checksums $(jlist "$PJ" free)
 for p in / /blog/ /services/ /about-us/ /contact-us/ /search-authority-diagnostic/ /get-a-free-quote/ /product-sitemap.xml; do
   printf "%-32s %s\n" "$p" "$(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' "$URL$p")"
 done

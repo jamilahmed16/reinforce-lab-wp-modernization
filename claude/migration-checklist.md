@@ -59,7 +59,7 @@ Tasks:
 - [ ] Every **301 and CONSOLIDATE target** exists and returns 200 before the switch.
 - [x] **Build the `/reviews/` hub** and its two pillars `/reviews/best-wordpress-hosting/` and `/reviews/best-seo-ai-tools/` (approved new URLs, D-016), so the 20 reviews are linked from the site. Done 14 Oct (D-191): all 19 posts and the WP Engine page linked; no rankings until the first-hand rewrites.
 - [x] Copy the media files the kept posts use. **Done 12 Oct (D-178): 2,029 files at the same paths.**
-- [ ] Every carried post passes: copy check on new text only (old wording is not rewritten before launch), schema valid, images load, no layout overflow on phone.
+- [ ] Every carried post passes: copy check on new text only (old wording is not rewritten before launch), schema valid, images load, no layout overflow on phone. 7 Nov (`post-check.py`): 81 posts, 1,435 images load, schema parses; empty H1 fix waits for deploy; phone overflow check still to run.
 
 ### A4. Redirect map in code and the zero-failure test (gate)
 
@@ -82,6 +82,8 @@ Note on "100% accuracy": the redirect test guarantees 100% for every URL that ap
 - [x] AI-crawler policy agreed: all AI crawlers allowed (D-150); robots.txt for launch in `claude/data/robots-launch.txt`.
 
 ### A6. The switch itself (runbook, gate)
+
+Full step-by-step for Hostinger, with the first-hour gate and rollback: `claude/rebuild/switch-runbook.md` (7 Nov).
 
 - [ ] Fresh full backup of production (files and database) immediately before; rollback steps written and tested.
 - [ ] **Novamira plugins and AI Abilities removed** from the copy that becomes production (Rule 1). **(gate)**
