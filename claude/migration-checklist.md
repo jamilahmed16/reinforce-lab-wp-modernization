@@ -59,7 +59,7 @@ Tasks:
 - [ ] Every **301 and CONSOLIDATE target** exists and returns 200 before the switch.
 - [x] **Build the `/reviews/` hub** and its two pillars `/reviews/best-wordpress-hosting/` and `/reviews/best-seo-ai-tools/` (approved new URLs, D-016), so the 20 reviews are linked from the site. Done 14 Oct (D-191): all 19 posts and the WP Engine page linked; no rankings until the first-hand rewrites.
 - [x] Copy the media files the kept posts use. **Done 12 Oct (D-178): 2,029 files at the same paths.**
-- [ ] Every carried post passes: copy check on new text only (old wording is not rewritten before launch), schema valid, images load, no layout overflow on phone. 7 Nov (`post-check.py`): 81 posts, 1,435 images load, schema parses; empty H1 fix waits for deploy; phone overflow check still to run.
+- [ ] Every carried post passes: copy check on new text only (old wording is not rewritten before launch), schema valid, images load, no layout overflow on phone. 7 Nov (`post-check.py`): 81 posts, 1,435 images load, schema parses; empty H1 fixed and live; meta descriptions restored to production (F-055); phone overflow check still to run.
 
 ### A4. Redirect map in code and the zero-failure test (gate)
 
@@ -73,7 +73,7 @@ Note on "100% accuracy": the redirect test guarantees 100% for every URL that ap
 ### A5. Pages and site quality (mostly done)
 
 - [x] All built pages pass the SEO/GEO/AEO standard; accessibility (axe) at 0; type scale, buttons, contrast, zero radius, 404 and search pages, consent bar (D-135 to D-143).
-- [ ] **Page parity for the 17 pages kept at the same URL** (Home, Website Maintenance, 15 posts): each one is live on the new site at exactly the same address, returns 200, and still answers what people searched for to find it (topic and main sections kept, nothing that ranks dropped), so Google sees the same page continuing. Checked one by one before the switch. **(gate)**
+- [ ] **Page parity for the 17 pages kept at the same URL** (Home, Website Maintenance, 15 posts): each one is live on the new site at exactly the same address, returns 200, and still answers what people searched for to find it (topic and main sections kept, nothing that ranks dropped), so Google sees the same page continuing. Checked one by one before the switch. **(gate)** 7 Nov (`parity-check.py`, F-055): the 15 posts match production; Home and Website Maintenance titles and descriptions wait for Jamil.
 - [x] Favicon and site icon (D-147). At the switch, copy the root `favicon.ico` and the site icon attachment with the rest.
 - [ ] SMTP mailbox login for form email (code ready, O-027). **(Jamil)**
 - [ ] GA4 measurement ID, retention 14 months (consent bar ready). **(Jamil)**

@@ -142,6 +142,8 @@ def import_post(slug, force=False):
     payload = {
         'slug': p['slug'], 'title': p['title']['rendered'], 'content': clean(p['content']['rendered']),
         'date': p['date'], 'date_gmt': p['date_gmt'], 'modified': p['modified'], 'modified_gmt': p['modified_gmt'],
+        # NOTE (F-055): yoast_head_json 'description' held an automatic excerpt for most posts; production's live <meta description>
+        # matched 'og_description'. The 80 affected posts were corrected on 7 Nov from production's live HTML.
         'prod_id': p['id'], 'yoast_title': y.get('title', ''), 'yoast_desc': y.get('description', ''),
         'cats': categories_for(p), 'featured': fm_payload, 'force': force,
     }
