@@ -21,7 +21,7 @@ ELEMENTS = {
  'process or steps': r'our process|how it works|step 1|phase 1|how we work',
  'FAQ': r'frequently asked|faq',
  'deliverables list': r'deliverable|what you get|what.s included|what is included',
- 'timeline (weeks or months to results)': r'\b\d+\s?(to|-|–)\s?\d+\s(weeks|months)|within \d+ (days|weeks|months)',
+ 'timeline (weeks or months to results)': r'\b\d+\s?(to|-|\u2013)\s?\d+\s(weeks|months)|within \d+ (days|weeks|months)',
  'named tools (Semrush, Ahrefs, GA4, HubSpot ...)': r'semrush|ahrefs|screaming frog|ga4|google analytics|hubspot|search console|n8n|zapier|salesforce',
  'team or named expert': r'our team|years of experience|meet the|founder|certified',
  'comparison (vs, versus, different from)': r'\bvs\.?\b|versus|different from|difference between',
