@@ -164,7 +164,7 @@ function rl_render_enterprise() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Enterprise SEO&nbsp;<b>]</b></span>
-      <h1 class="h1">One SEO standard<br>for every team<br><span class="r">and every page.</span></h1>
+      <h1 class="h1">Enterprise SEO services.<br>One SEO standard for every team <span class="r">and every page.</span></h1>
       <p class="lede"><strong>Enterprise SEO strategy</strong> is search engine optimization for large, complex organisations: many pages, many teams, often many markets. Reinforce Lab sets the standards your templates, releases and migrations must meet, gets fixes shipped through your engineering process, and builds authority within Google's link policies, then reports what it changed by page group, market and revenue.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>

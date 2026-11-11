@@ -167,7 +167,7 @@ function rl_render_ecomdesign() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;E-commerce Website Design&nbsp;<b>]</b></span>
-      <h1 class="h1">Online stores<br>built to be found<br><span class="r">and bought from.</span></h1>
+      <h1 class="h1">E-commerce website design services.<br>Online stores built to be found <span class="r">and bought from.</span></h1>
       <p class="lede"><strong>E-commerce website design services</strong> from Reinforce Lab plan, design and build online stores that show up in Google with price, stock and ratings, make products easy to find, and get shoppers through checkout without friction. We build on WooCommerce by default, with product data, speed and accessibility built in from the start.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>

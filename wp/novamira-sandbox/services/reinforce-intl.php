@@ -166,7 +166,7 @@ function rl_render_intl() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;International SEO&nbsp;<b>]</b></span>
-      <h1 class="h1">Reach every market<br>in its own<br><span class="r">language.</span></h1>
+      <h1 class="h1">International SEO services.<br>Reach every market in its own <span class="r">language.</span></h1>
       <p class="lede"><strong>International SEO</strong> makes sure search engines show the right language and country version of your site to each market, and that every version earns rankings of its own. Reinforce Lab plans the structure, implements hreflang, localizes with native review and reports market by market, following Google's own guidance.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
