@@ -62,7 +62,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-1.jpg.webp",
+   "path": "/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-2.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -71,7 +71,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-2.jpg.webp",
+   "path": "/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-1.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -242,15 +242,6 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants-Infographic-2-scaled.jpg.webp",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
    "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants-Infographic-1.jpg.webp",
    "variant": false,
    "action": "410",
@@ -269,7 +260,25 @@
    "location": ""
   },
   {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants-Infographic-2-scaled.jpg.webp",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 404,
+   "location": ""
+  },
+  {
    "path": "/wp-content/uploads/2021/10/social-media-content-ideas-for-churches-Infographic.jpg.webp",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 404,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-2-scaled.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -296,7 +305,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-2-scaled.jpg",
+   "path": "/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-2-scaled.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -315,15 +324,6 @@
   },
   {
    "path": "/wp-content/uploads/2022/01/Content-Marketing-vs-Social-Media-Marketing-Which-One-is-Best.jpg.webp",
-   "variant": false,
-   "action": "410",
-   "expect": "410",
-   "target": "",
-   "code": 404,
-   "location": ""
-  },
-  {
-   "path": "/wp-content/uploads/2022/01/Advantages-and-Disadvantages-of-using-social-media-Infographic-2-scaled.jpg.webp",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -404,7 +404,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2022/02/The-Ultimate-Guide-to-Branding-Businesses-on-TikTok-infographic-2-989x1024.jpg",
+   "path": "/wp-content/uploads/2022/02/Best-Ways-of-Using-Content-Marketing-for-Brand-Awareness-infographic.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -413,7 +413,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2022/02/Best-Ways-of-Using-Content-Marketing-for-Brand-Awareness-infographic.jpg",
+   "path": "/wp-content/uploads/2022/02/The-Ultimate-Guide-to-Branding-Businesses-on-TikTok-infographic-2-989x1024.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -595,7 +595,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Nonprofits.jpg",
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Photographers.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -604,7 +604,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Photographers.jpg",
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Nonprofits.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -676,7 +676,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2022/10/Best-Examples-of-Great-Food-Copywriting.jpg",
+   "path": "/wp-content/uploads/2022/11/Creative-Snapchat-Content-Ideas.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -685,7 +685,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2022/11/Creative-Snapchat-Content-Ideas.jpg",
+   "path": "/wp-content/uploads/2022/10/Best-Examples-of-Great-Food-Copywriting.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -712,7 +712,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2023/03/Most-Common-SEO-Mistakes-To-Avoid-1.jpg",
+   "path": "/wp-content/uploads/2023/03/8-Simple-YouTube-SEO-Tips-To-Rank-Your-Videos-Higher-in-Search.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
@@ -721,7 +721,7 @@
    "location": ""
   },
   {
-   "path": "/wp-content/uploads/2023/03/8-Simple-YouTube-SEO-Tips-To-Rank-Your-Videos-Higher-in-Search.jpg",
+   "path": "/wp-content/uploads/2023/03/Most-Common-SEO-Mistakes-To-Avoid-1.jpg",
    "variant": false,
    "action": "410",
    "expect": "410",
