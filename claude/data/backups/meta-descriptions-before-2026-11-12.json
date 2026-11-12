@@ -1,0 +1,68 @@
+{
+ "66": {
+  "path": "packages",
+  "old": "Compare Search Authority OS packages: Foundation from $5,000 setup, Growth OS and Enterprise. Scoped to your goals and starting with a free diagnostic.",
+  "new": "SEO packages and pricing for Search Authority OS: Foundation from $5,000 setup, Growth OS and Enterprise. Every plan starts with a free diagnostic.",
+  "modified": "2026-09-29 10:15:41"
+ },
+ "67": {
+  "path": "reviews",
+  "old": "Our guides and reviews of WordPress hosts, SEO tools and AI writing tools, with how we review and how affiliate links are marked.",
+  "new": "Reinforce Lab's guides and reviews of WordPress hosts, SEO tools and AI writing tools, with how we review each one and how affiliate links are marked.",
+  "modified": "2026-10-14 18:32:28"
+ },
+ "70": {
+  "path": "reviews/best-seo-ai-tools",
+  "old": "Writesonic, Jasper, Rytr, Copy AI and Anyword: why we picked each and who it is for, plus our Semrush, Surfer SEO and Rank Tracker reviews.",
+  "new": "Writesonic, Jasper, Rytr, Copy AI and Anyword: why Reinforce Lab picked each and who it suits, plus our Semrush, Surfer SEO and Rank Tracker reviews.",
+  "modified": "2026-10-14 18:32:28"
+ },
+ "74": {
+  "path": "services/seo-ai-search-audit",
+  "old": "A one-time, human-led audit of your technical SEO, content, authority, competitors and AI search visibility, with a prioritised fix register and roadmap.",
+  "new": "SEO audit services from Reinforce Lab: a one-time, human-led audit of technical SEO, content, authority and AI search visibility, with a prioritised plan.",
+  "modified": "2026-09-29 17:53:05"
+ },
+ "98": {
+  "path": "services/enterprise-seo-strategy",
+  "old": "Enterprise SEO strategy for large sites: one SEO standard across teams, template fixes shipped in your sprints, safe migrations and authority you earn.",
+  "new": "Enterprise SEO services for large sites: one SEO standard across teams, template fixes shipped in your sprints, safe migrations and authority you earn.",
+  "modified": "2026-09-29 18:37:36"
+ },
+ "102": {
+  "path": "services/lead-generation-systems",
+  "old": "Lead generation systems that turn demand into qualified pipeline: PPC, landing pages, lead qualification and CRM data that shows which leads became revenue.",
+  "new": "B2B lead generation services that turn demand into qualified pipeline: PPC, landing pages, lead qualification and CRM data that shows what became revenue.",
+  "modified": "2026-09-29 19:28:38"
+ },
+ "103": {
+  "path": "services/ai-consulting-services",
+  "old": "Executive AI consulting for leadership teams: prioritised use cases, business cases, governance, EU AI Act mapping and a roadmap through the first pilots.",
+  "new": "AI consulting services for leadership teams: prioritised use cases, business cases, governance, EU AI Act mapping and a roadmap through the first pilots.",
+  "modified": "2026-09-30 04:37:36"
+ },
+ "104": {
+  "path": "services/local-seo",
+  "old": "Local SEO from Reinforce Lab: Google Business Profile, consistent citations, compliant reviews and location pages, built on Google's local search guidelines.",
+  "new": "Local SEO services from Reinforce Lab: Google Business Profile, consistent citations, compliant reviews and location pages, built on Google's guidelines.",
+  "modified": "2026-09-29 17:45:46"
+ },
+ "503": {
+  "path": "legal-statement",
+  "old": "Who runs reinforcelab.com: Reinforce Lab Limited (RJSC C-180618/2022, Dhaka) and Reinforce Lab Inc (Katy, Texas), how to contact us, and the terms for what you read here.",
+  "new": "Who runs reinforcelab.com: Reinforce Lab Limited (RJSC C-180618/2022, Dhaka) and Reinforce Lab Inc (Katy, Texas), how to contact us and the site terms.",
+  "modified": "2026-10-13 10:30:44"
+ },
+ "504": {
+  "path": "careers",
+  "old": "Reinforce Lab is not hiring right now. If you work in SEO, AI search, AI automation or WordPress, email your CV and two or three pieces of work to hello@reinforcelab.com.",
+  "new": "Reinforce Lab is not hiring right now. If you work in SEO, AI search, AI automation or WordPress, email your CV and work samples to hello@reinforcelab.com.",
+  "modified": "2026-10-13 10:31:48"
+ },
+ "505": {
+  "path": "agency-partner-program-wp-engine-landing",
+  "old": "Reinforce Lab is a WP Engine agency partner: we build WordPress sites on WP Engine, move existing sites safely and look after them.",
+  "new": "Reinforce Lab is a WP Engine agency partner: we build WordPress sites on WP Engine, move existing sites safely and look after them once they are live.",
+  "modified": "2026-10-14 05:44:49"
+ }
+}
