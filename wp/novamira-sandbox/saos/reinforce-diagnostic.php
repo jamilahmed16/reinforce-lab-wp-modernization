@@ -39,6 +39,9 @@ add_action('admin_post_nopriv_rl_diag_request', 'rl_diag_handle');
 add_action('admin_post_rl_diag_request', 'rl_diag_handle');
 function rl_diag_handle() {
     $back = function_exists('rl_url_by_path') ? rl_url_by_path('search-authority-diagnostic', home_url('/')) : home_url('/');
+    /* D-239: requests from the campaign landing page go back to it, and are marked so the two pages can be compared */
+    $from_lp = (isset($_POST['rl_from']) && $_POST['rl_from'] === 'lp');
+    if ($from_lp && function_exists('rl_url_by_path')) { $lp = rl_url_by_path('get-diagnostic', ''); if ($lp) $back = $lp; }
     $go = function ($state) use ($back) { wp_safe_redirect(add_query_arg('diag', $state, $back) . '#request'); exit; };
     $f = wp_unslash($_POST);
 
@@ -76,6 +79,7 @@ function rl_diag_handle() {
     foreach ($d as $k => $v) $save($k, $v);
     $save('submitted_at', current_time('mysql'));
     update_post_meta($id, 'request_type', $type);
+    update_post_meta($id, 'source_page', $from_lp ? 'get-diagnostic (campaign landing page)' : 'search-authority-diagnostic');
     update_post_meta($id, 'consent', 'yes, ' . current_time('mysql') . ', form notice of 5 Oct 2026 (D-123)');
 
     $labels = ['name' => 'Name', 'email' => 'Email', 'company' => 'Company', 'website' => 'Website', 'role' => 'Role', 'industry' => 'Industry', 'challenge' => 'Biggest challenge', 'volume' => 'Monthly content volume', 'outcome' => 'Desired outcome'];

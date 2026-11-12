@@ -31,6 +31,7 @@ foreach ([
     'pages/reinforce-contact.php',
     'services/reinforce-content.php',
     'saos/reinforce-diagnostic.php',
+    'saos/reinforce-lp-diagnostic.php',
     'services/reinforce-ecomdesign.php',
     'services/reinforce-enterprise.php',
     'services/reinforce-execai.php',
