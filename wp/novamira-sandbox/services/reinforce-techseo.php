@@ -197,7 +197,7 @@ function rl_render_techseo() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Technical SEO&nbsp;<b>]</b></span>
       <h1 class="h1"><span class="svc">Technical SEO services.</span> Fix what stops<br>search engines<br><span class="r">and AI crawlers.</span></h1>
-      <p class="lede"><strong>Technical SEO</strong> makes sure search engines and AI crawlers can crawl, render, understand and index the pages that matter, quickly, without errors and without wasting effort on junk URLs. Reinforce Lab finds the root causes, fixes them, and re-crawls to prove the fix worked.</p>
+      <p class="lede"><strong>Technical SEO</strong> makes sure search engines and AI crawlers can crawl, render, understand and index the pages that matter, quickly, without errors and without wasting effort on junk URLs. Reinforce Lab's technical SEO services find the root causes, fix them, and re-crawl to prove the fix worked.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#check">What we check</a>

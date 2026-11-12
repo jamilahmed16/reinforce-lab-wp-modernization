@@ -168,7 +168,7 @@ function rl_render_aiwork() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;AI Workflow Automation&nbsp;<b>]</b></span>
       <h1 class="h1"><span class="svc">AI workflow automation services.</span> Let AI do<br>the busywork.<br><span class="r">Keep control.</span></h1>
-      <p class="lede"><strong>AI workflow automation</strong> uses AI models and integrations to handle repetitive work that involves reading, sorting and writing: triaging emails and tickets, extracting data from documents, drafting replies, updating your CRM, with a person approving anything the AI isn't sure about. Reinforce Lab maps your processes, builds the workflows on the tools you already use, and runs them with testing, logging and human checkpoints built in.</p>
+      <p class="lede"><strong>AI workflow automation</strong> uses AI models and integrations to handle repetitive work that involves reading, sorting and writing: triaging emails and tickets, extracting data from documents, drafting replies, updating your CRM, with a person approving anything the AI isn't sure about. Reinforce Lab's AI workflow automation services map your processes, build the workflows on the tools you already use, and run them with testing, logging and human checkpoints built in.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#guardrails">Our guardrails</a>
