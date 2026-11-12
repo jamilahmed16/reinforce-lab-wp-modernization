@@ -18,6 +18,7 @@ function rl_aigrowth_faqs() {
         ['Where do we start?', 'With the free Search Authority Diagnostic, or a strategy call. We map where time, traffic and revenue are being lost, then recommend the first system to build and what it should measure.'],
         ['How long does it take to build an AI Growth System?', 'It depends on which system comes first and the state of your data. We start with the one system that removes the most manual work or lost revenue, get it running with your team approving the output, and extend from there. The diagnostic sets the order and the scope.'],
         ['How is an AI Growth System different from marketing automation?', 'Marketing automation sends messages and updates records by rules. An AI Growth System connects that automation with your data, AI models, search and content work and a dashboard of outcomes, so the parts inform each other. Marketing automation is one part of the system, not the whole of it.'],
+        ['Is Reinforce Lab an AI growth agency?', 'Not in the usual sense. An agency gives you people and campaigns. Reinforce Lab designs, builds and runs AI Growth Systems: your data, AI models, automated workflows and an outcome dashboard connected into one system. If you are looking for an AI growth agency, the difference is what you are left with: a working system and everything it produced, which you own.'],
     ];
 }
 
