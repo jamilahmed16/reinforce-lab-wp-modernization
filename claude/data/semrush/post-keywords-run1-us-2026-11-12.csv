@@ -1,0 +1,101 @@
+Keyword,Intent,Volume,Trend,Keyword Difficulty,CPC (USD),Competitive Density,SERP Features,Number of Results
+social media management,Informational,27100,"0.81,0.81,0.81,1.00,0.81,0.67,0.54,0.67,0.67,0.54,0.54,0.54",32,7.29,0.38,"AI Overview, Reviews, Video, People also ask, Related searches, Things to know, Ads bottom",
+seo consultant,Informational,18100,"0.54,0.66,1.00,0.81,0.81,0.66,0.54,0.54,0.54,0.54,0.54,0.54",48,16.75,0.03,"Sitelinks, AI Overview, Reviews, Video, People also ask, Local pack, Related searches, Ads bottom",139
+rank tracker,Commercial,8100,"1.00,0.55,0.66,1.00,0.30,0.36,0.43,1.00,0.30,1.00,0.30,0.43",88,6.36,0.06,"AI Overview, Reviews, Image, Image pack, Video, People also ask, Discussions and forums, Related searches",
+robots.txt,Informational,6600,"1.00,0.81,1.00,0.81,1.00,0.31,0.44,0.81,0.81,0.50,0.63,0.50",14,3.03,0.05,"AI Overview, Reviews, People also ask, Things to know",124
+surfer seo,Navigational,6600,"0.81,0.81,1.00,0.66,0.54,0.44,0.81,0.36,0.66,1.00,0.29,0.29",58,8.24,0.50,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",
+digital marketing strategies,Informational,5400,"0.66,0.54,0.81,0.54,0.54,0.54,0.35,1.00,0.54,0.81,0.35,0.44",15,5.05,0.05,"AI Overview, Video, People also ask, Related searches",
+website marketing,Informational,5400,"0.81,1.00,1.00,1.00,0.54,0.66,0.81,1.00,1.00,0.19,0.19,0.19",45,16.07,0.21,"Sitelinks, AI Overview, Reviews, Video, People also ask, Local pack, Discussions and forums, Related searches",
+writesonic,Navigational,5400,"0.80,1.00,0.80,0.50,0.65,0.50,0.50,0.65,0.35,0.20,0.25,0.20",66,18.82,0.37,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",
+youtube seo,Informational,5400,"0.66,0.66,1.00,0.83,0.55,0.28,0.28,0.34,0.45,0.45,0.45,0.45",59,2.59,0.19,"AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",
+b2b content marketing,"Informational, Commercial",4400,"0.44,0.66,0.66,0.66,1.00,0.66,0.44,0.44,0.54,0.16,0.16,0.44",42,12.97,0.04,"Sitelinks, AI Overview, Video, People also ask, Related searches",
+b2b seo agency,Informational,4400,"1.00,0.35,0.54,1.00,1.00,0.81,0.81,0.81,1.00,1.00,1.00,1.00",26,29.64,0.05,"Sitelinks, AI Overview, Reviews, Video, Related searches, Ads bottom",163
+copy ai,Navigational,3600,"1.00,1.00,0.88,0.88,1.00,0.63,0.50,0.63,0.50,0.38,0.38,0.38",67,5.93,0.26,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",76
+seo for small business,Informational,3600,"0.65,0.65,0.81,0.81,0.43,0.54,0.65,1.00,1.00,0.81,1.00,0.29",71,16.07,0.09,"AI Overview, Video, People also ask, Knowledge panel, Related searches",131
+competitor keyword analysis,Informational,2900,"0.54,0.43,1.00,0.54,0.28,0.43,0.36,0.36,0.28,0.24,0.43,0.04",49,10.65,0.01,"Sitelinks, AI Overview, Reviews, Image pack, Video, People also ask, Related searches",114
+online marketing strategies,Informational,2400,"0.66,0.80,0.80,1.00,0.52,0.52,0.44,0.66,0.52,0.27,0.27,0.24",67,6.16,0.02,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",127
+pros and cons of social media,Informational,2400,"0.54,0.65,0.65,0.54,0.81,0.81,1.00,0.65,0.43,0.15,0.13,0.22",36,7.34,0.03,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",
+youtube seo tips,Informational,2400,"0.15,0.01,0.15,0.13,0.05,0.02,0.03,0.66,1.00,0.07,0.07,0.00",62,1.25,0.02,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",104
+healthcare content marketing,Informational,1900,"0.36,0.43,0.54,0.43,0.43,0.29,0.65,0.43,1.00,0.22,0.22,0.02",29,6.21,0.03,"Sitelinks, AI Overview, Image pack, Video, People also ask, Related searches",
+what are seo services,Informational,1900,"0.35,0.53,1.00,0.66,0.18,0.18,0.10,0.16,0.24,0.18,0.18,0.18",40,3.38,0.09,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",113
+b2b content marketing strategy,"Informational, Commercial",1600,"0.34,0.65,1.00,0.34,0.44,0.55,0.55,0.55,0.65,0.16,0.34,0.04",36,11.78,0.01,"Sitelinks, AI Overview, Video, People also ask, Related searches",120
+bluehost wordpress hosting,"Navigational, Transactional",1600,"0.41,0.30,0.41,0.79,0.36,1.00,0.55,0.24,0.36,0.67,0.36,0.41",62,92.76,0.06,"Sitelinks, Reviews, Video, Video carousel, People also ask, Related searches, Ads bottom",123
+martech stack,,1600,"0.66,0.54,0.54,0.54,0.79,0.66,0.54,0.79,1.00,0.66,0.54,0.54",35,10.24,0.16,"Sitelinks, AI Overview, Image pack, Video, People also ask, Related searches",96
+what is martech,Informational,1600,"0.79,0.66,0.54,0.41,0.66,0.54,0.54,1.00,0.79,0.79,0.79,0.79",16,4.67,0.02,"AI Overview, Image pack, Video, Short videos, People also ask, Discussions and forums",96300
+b2b seo agencies,"Informational, Commercial",1300,"0.54,0.24,0.10,1.00,0.66,0.24,0.30,0.41,0.54,0.41,0.66,0.66",25,31.53,0.07,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",100
+content marketing ideas,Informational,1300,"0.36,0.20,0.30,0.79,1.00,0.66,0.66,0.66,0.66,0.04,0.41,0.05",32,3.75,0.12,"Sitelinks, AI Overview, Image pack, Video, People also ask, Discussions and forums, Related searches",133
+find competitor keywords,Informational,1300,"1.00,0.29,0.24,1.00,1.00,0.62,0.36,0.36,1.00,0.55,0.62,0.62",43,13.06,0.02,"AI Overview, Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",123
+how to promote your blog,Informational,1300,"0.79,0.66,1.00,0.79,0.36,0.30,0.20,0.24,0.41,0.24,0.36,0.36",40,4.34,0.25,"Sitelinks, AI Overview, Video, Video carousel, People also ask, Discussions and forums, Related searches",127
+seo blog writing,Informational,1300,"1.00,0.54,0.79,0.66,0.41,0.41,0.20,0.24,0.36,0.30,0.41,0.04",45,6.70,0.11,"Sitelinks, AI Overview, Video, People also ask, Related searches",152
+surfer seo review,Commercial,1300,"0.36,0.52,0.66,1.00,0.27,0.24,0.16,0.10,0.24,0.27,0.27,0.27",34,10.44,0.05,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",120
+church marketing,Informational,1000,"0.79,1.00,0.79,0.79,0.68,0.53,0.53,0.42,0.68,0.53,0.68,0.68",21,4.32,0.44,"Sitelinks, AI Overview, Image pack, Video, Video carousel, People also ask, Related searches",118
+flywheel hosting,Informational,1000,"1.00,0.61,0.82,0.45,0.23,0.45,0.45,0.45,0.82,0.36,0.45,0.36",43,8.12,0.15,"Sitelinks, AI Overview, Reviews, Video, People also ask, Discussions and forums, Related searches",88
+social media content ideas,Informational,1000,"0.55,0.81,0.81,0.62,1.00,0.55,0.55,0.45,0.55,0.45,0.36,0.30",24,4.08,0.11,"AI Overview, Image, Image pack, Video, People also ask, Related searches",136
+content marketing for small business,Informational,880,"0.68,1.00,0.37,0.37,0.68,0.37,0.37,0.30,0.56,0.56,0.44,0.44",35,7.36,0.05,"Sitelinks, AI Overview, Video, People also ask, Related searches",123
+google penalty recovery,Informational,880,"0.34,0.30,0.08,0.30,0.34,0.24,0.30,0.24,0.24,1.00,0.03,0.03",20,0.00,0.01,"Sitelinks, AI Overview, Reviews, Video, People also ask",92
+plastic surgery digital marketing,"Informational, Commercial",880,"1.00,1.00,1.00,1.00,1.00,0.82,0.82,0.82,0.82,0.82,0.82,0.82",23,18.24,0.08,"Sitelinks, AI Overview, Video, People also ask, Related searches, Ads bottom",125
+common seo mistakes,Informational,720,"1.00,0.54,0.15,0.82,0.45,0.82,1.00,1.00,1.00,0.12,0.12,0.12",31,0.00,0.01,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",115
+seo mistakes,Informational,720,"0.44,0.20,0.20,0.77,0.44,0.56,0.44,1.00,0.77,0.07,0.07,0.07",29,0.00,0.33,"AI Overview, Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",116
+types of facebook ads,Informational,720,"0.48,0.72,0.59,1.00,1.00,0.72,0.59,0.59,0.59,0.48,0.48,0.32",56,5.05,0.12,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",109
+content marketing vs social media marketing,Commercial,590,"0.67,0.46,1.00,0.83,1.00,0.83,1.00,0.83,0.67,0.13,0.17,0.13",22,0.00,0.33,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",125
+google penalty removal,Informational,590,"0.81,1.00,0.54,0.81,0.81,0.66,0.66,0.66,0.54,0.15,0.15,0.15",5,0.00,0.01,"Sitelinks, AI Overview, Reviews, Video, People also ask",95
+robots txt seo,"Informational, Commercial",590,"1.00,0.05,0.04,0.46,0.25,0.16,0.07,0.11,0.20,0.25,0.25,0.05",62,2.23,0.01,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",136
+advantages and disadvantages of social media,Informational,480,"1.00,1.00,0.66,0.66,1.00,0.81,0.81,0.66,0.81,0.29,0.36,0.54",41,0.00,0.01,"Sitelinks, AI Overview, Reviews, Image pack, Video, People also ask, Related searches",116
+bluehost review,Commercial,480,"1.00,0.14,0.17,0.17,0.03,0.00,0.10,0.07,0.55,0.07,0.10,0.10",64,6.82,0.39,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",119
+invest in seo,Informational,480,"0.67,0.13,1.00,0.67,0.55,0.44,0.06,0.16,0.30,0.13,0.13,0.13",12,5.03,0.11,"Sitelinks, AI Overview, Reviews, Video, People also ask, Discussions and forums",124
+namecheap wordpress hosting,Informational,480,"0.53,0.53,0.44,0.80,0.80,0.53,0.53,1.00,1.00,0.80,0.67,0.13",58,4.28,0.25,"Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",112
+rank tracker review,Commercial,480,"1.00,0.36,0.45,0.45,0.24,0.20,0.20,0.24,0.30,0.08,0.36,0.08",32,0.00,0.33,"Sitelinks, AI Overview, Reviews, Video, People also ask",118
+real estate social media posts,Informational,480,"0.54,1.00,0.83,0.54,0.83,0.46,0.54,0.67,0.46,0.46,0.33,0.33",25,4.19,0.59,"Sitelinks, AI Overview, Image pack, Video, People also ask, Related searches",140
+bank marketing ideas,Informational,390,"0.44,0.66,0.81,1.00,0.81,0.44,0.54,0.44,0.44,0.15,0.15,0.15",21,4.24,0.37,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",125
+content marketing for plastic surgeons,Informational,390,"0.81,1.00,0.81,0.81,0.81,0.67,0.54,0.54,0.54,0.22,0.22,0.22",12,0.00,0.33,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",133
+how to market a website,Informational,390,"0.67,0.19,0.12,0.54,0.28,0.36,0.19,0.67,1.00,0.19,1.00,0.15",47,8.99,0.25,"Sitelinks, AI Overview, Video, Video carousel, People also ask, Discussions and forums, Related searches",109
+sensory marketing,Informational,390,"1.00,0.81,0.66,0.34,0.43,0.66,0.54,0.66,0.66,0.54,0.54,0.54",49,7.59,0.03,"AI Overview, Reviews, Video, People also ask, Related searches",126
+ux copywriter,Informational,390,"0.53,0.53,1.00,0.67,0.67,0.43,0.43,0.53,0.80,0.67,0.80,0.27",18,4.29,0.06,"AI Overview, Reviews, Image, Image pack, Video, People also ask, Discussions and forums, Related searches",128
+what does an seo consultant do,Informational,390,"1.00,0.15,0.44,0.82,0.65,0.55,0.18,0.15,0.44,0.15,0.15,0.15",31,0.00,0.33,"Sitelinks, AI Overview, Reviews, Video, People also ask, Discussions and forums, Related searches",129
+how to write seo friendly blog posts,Informational,320,"0.81,0.35,0.54,0.43,1.00,1.00,0.43,0.67,1.00,1.00,0.54,0.54",64,0.00,0.01,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",
+a2 hosting review,Commercial,260,"1.00,0.17,0.10,0.17,0.17,0.10,0.43,0.10,0.07,0.03,0.07,0.07",50,4.55,0.08,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",100
+church marketing strategies,Informational,260,"1.00,0.28,0.52,1.00,0.80,0.80,1.00,0.80,0.80,0.34,0.34,0.34",8,2.59,0.09,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",118
+personal website ideas,Informational,260,"0.81,0.81,1.00,0.33,0.65,0.52,0.65,0.65,0.52,0.81,1.00,0.65",38,2.88,0.22,"Sitelinks, AI Overview, Image, Image pack, Video, Related searches, Ads bottom",1210000000
+ux copywriting,Informational,260,"0.65,1.00,0.05,0.50,0.80,0.50,0.50,0.65,0.65,0.65,0.65,0.40",30,2.30,0.06,"AI Overview, Image pack, Video, People also ask, Related searches",134
+digital marketing campaign examples,Informational,210,"1.00,0.53,0.53,0.23,0.66,0.23,0.43,0.66,0.43,0.28,0.23,0.23",33,3.60,0.15,"AI Overview, Reviews, Video, People also ask, Related searches",121
+dreamhost review,Commercial,210,"0.67,1.00,0.10,0.27,0.43,0.17,0.27,0.20,0.43,0.27,0.10,0.10",60,4.42,0.16,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",113
+dreamhost wordpress hosting,"Navigational, Transactional",210,"0.34,0.43,0.34,0.65,0.80,0.80,1.00,1.00,1.00,0.34,0.34,0.21",61,4.64,0.31,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",115
+hotel social media,Informational,210,"1.00,1.00,0.80,0.65,0.80,0.53,0.65,0.65,1.00,0.42,0.42,0.42",22,6.22,0.11,"AI Overview, Image pack, Video, People also ask, Related searches",128
+namecheap hosting review,Commercial,210,"0.67,0.67,1.00,0.20,1.00,0.17,0.67,0.20,1.00,0.33,0.20,0.10",56,4.29,0.21,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",103
+successful digital marketing campaigns,Informational,210,"0.55,0.55,1.00,0.14,0.14,0.55,0.35,0.82,0.55,0.23,0.23,0.23",97,0.00,0.17,"AI Overview, Video, People also ask, Related searches",
+content marketing for banks,Informational,170,"0.80,1.00,0.80,0.53,0.53,0.42,0.53,0.53,0.80,0.42,0.42,0.42",12,0.00,0.33,"AI Overview, Reviews, Video, People also ask, Related searches",134
+social media marketing content,Informational,170,"0.28,0.22,0.18,0.22,0.22,0.43,0.34,0.54,0.34,0.22,1.00,0.10",50,5.77,0.07,"Sitelinks, AI Overview, Image pack, Video, People also ask, Related searches",131
+facebook ad formats,Informational,140,"0.66,0.81,0.53,1.00,1.00,0.43,0.53,0.66,0.66,0.53,0.53,0.43",62,13.66,0.18,"Sitelinks, AI Overview, Reviews, Image pack, Video, People also ask, Related searches",103
+nexcess review,Commercial,140,"0.41,0.41,0.33,0.41,1.00,0.54,0.54,0.54,0.65,0.26,0.19,0.19",32,0.00,0.33,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",77
+sensory marketing examples,Informational,140,"1.00,1.00,0.32,0.52,0.32,0.43,0.82,0.52,0.43,0.52,0.43,0.43",12,0.00,0.33,"Sitelinks, AI Overview, Reviews, Image, Image pack, Video, People also ask, Related searches",
+social media marketing for clothing brands,Informational,140,"1.00,1.00,1.00,0.80,0.66,0.66,0.52,0.33,0.42,0.33,0.19,0.09",21,0.00,0.08,"Sitelinks, AI Overview, Video, Video carousel, People also ask, Related searches",124
+writesonic review,Commercial,140,"0.14,0.09,0.27,1.00,0.20,0.00,0.27,0.27,1.00,0.43,0.20,0.05",39,0.00,0.02,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",116
+real estate social media post ideas,Informational,110,"1.00,0.29,0.82,0.82,1.00,0.82,0.52,0.40,0.65,0.52,0.52,0.65",19,3.24,0.88,"Sitelinks, AI Overview, Image, Image pack, Video, People also ask, Related searches",137
+snapchat story ideas,Informational,110,"1.00,1.00,0.80,0.80,0.80,0.40,0.80,1.00,0.60,0.60,0.80,0.40",24,0.00,0.33,"AI Overview, Image pack, Video, People also ask, Related searches",108
+church social media posts,Informational,90,"0.79,0.65,0.49,0.35,0.79,1.00,0.79,0.79,0.65,0.65,0.65,0.65",1,2.65,0.30,"AI Overview, Video, People also ask, Related searches",123
+content marketing ideas for healthcare,Informational,90,"0.63,0.81,1.00,0.81,0.63,0.81,1.00,1.00,1.00,1.00,0.81,0.81",26,0.00,0.00,"Sitelinks, AI Overview, Video, People also ask, Related searches",137
+copy ai review,Commercial,90,"0.62,0.14,0.14,0.34,1.00,0.07,0.28,0.28,1.00,0.76,0.14,0.28",51,4.00,0.06,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",111
+restaurant social media post ideas,Informational,90,"0.82,1.00,1.00,1.00,1.00,0.64,0.64,0.82,0.82,1.00,0.45,0.64",18,0.00,0.43,"AI Overview, Image, Image pack, Video, People also ask, Related searches",
+content marketing ideas for small business,Informational,70,"0.81,0.63,0.81,0.36,0.45,0.45,0.45,0.63,0.81,0.81,1.00,0.45",32,0.00,0.33,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",128
+flywheel wordpress hosting,Navigational,70,"1.00,0.81,0.64,0.11,0.11,0.11,0.11,0.11,0.40,0.40,0.40,0.64",43,13.92,0.33,"Sitelinks, Reviews, Video, People also ask, Related searches",118
+what do seo services include,Informational,70,"0.17,0.41,1.00,0.23,0.29,0.17,0.41,0.41,0.82,0.52,0.52,0.52",16,0.00,0.33,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",113
+digital marketing agency in dhaka,Commercial,50,"0.33,1.00,0.44,0.55,0.77,0.77,0.55,0.22,0.33,0.33,0.22,0.22",,0.00,0.14,"Reviews, Video, People also ask, Local pack, Related searches",120
+nexcess wordpress hosting,"Informational, Commercial",50,"0.18,0.63,0.45,0.36,0.45,0.45,0.36,0.63,0.81,1.00,0.45,0.27",44,8.70,0.53,"AI Overview, Reviews, Video, People also ask, Related searches",117
+a2 hosting wordpress,Informational,40,"1.00,0.71,0.41,0.41,0.29,0.29,0.29,0.29,0.29,0.71,0.71,0.41",50,0.00,0.48,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask",116
+best digital marketing agency in bangladesh,Commercial,40,"1.00,0.42,0.27,0.27,0.58,0.42,0.27,0.42,0.42,0.58,0.58,0.42",25,0.00,0.29,"AI Overview, Reviews, Video, Video carousel, People also ask, Local pack, Related searches",77
+blog promotion ideas,,20,"1.00,1.00,0.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,0.00,0.00,,
+content marketing ideas for restaurants,,20,"1.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00",,0.00,0.33,,
+creative content marketing ideas,,20,"1.00,0.67,0.67,0.67,0.33,0.67,0.67,0.67,0.67,0.67,0.33,0.33",,0.00,0.00,,
+food copywriting,,20,"1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,13.14,0.18,,
+food copywriting examples,,20,"1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,0.00,0.33,,
+nonprofit social media post ideas,,20,"0.67,0.67,0.67,0.67,1.00,0.67,0.67,0.67,0.67,0.67,0.67,0.67",,0.00,0.05,,
+photography social media posts,,20,"1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,0.00,0.33,,
+snapchat content ideas,,20,"1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,0.00,0.33,,
+social media content ideas for churches,,20,"0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,0.00,0.33,,
+social media content ideas for hotels,,20,"1.00,0.00,0.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,0.00,0.00,,
+social media content ideas for nonprofits,,20,"1.00,0.67,0.67,1.00,1.00,1.00,0.67,0.67,0.67,0.67,0.67,0.67",,0.00,0.07,,
+social media content ideas for photographers,,20,"1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00",,0.00,0.24,,
+social media content ideas for restaurants,,20,"1.00,0.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00",,0.00,0.66,,
+social media management guide,,20,"1.00,0.50,0.50,0.50,0.50,0.50,0.50,0.50,0.50,0.50,0.50,0.50",,2.84,0.23,,
+restaurant content marketing,,10,"0.20,1.00,1.00,0.20,0.00,0.00,0.00,0.20,0.20,0.00,0.39,0.20",,0.00,0.29,,
+social media content ideas for clothing brand,,10,"1.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,0.00",,0.00,0.00,,

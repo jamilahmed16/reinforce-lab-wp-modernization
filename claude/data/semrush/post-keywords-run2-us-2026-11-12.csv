@@ -1,0 +1,57 @@
+Keyword,Intent,Volume,Trend,Keyword Difficulty,CPC (USD),Competitive Density,SERP Features,Number of Results
+what is seo,Informational,40500,"0.44,0.54,0.66,1.00,0.44,0.44,0.44,0.44,0.54,0.36,0.36,0.36",85,2.19,0.06,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",127
+jasper ai,,18100,"1.00,0.65,1.00,0.80,0.65,0.50,0.65,0.50,0.40,0.35,0.30,0.30",77,5.89,0.48,"Sitelinks, Reviews, Video, People also ask, Knowledge panel, Related searches, Ads top, Ads bottom",64
+dental seo,,6600,"0.81,0.66,1.00,0.81,0.66,0.66,0.54,0.54,0.54,0.10,0.66,0.16",35,35.00,0.24,"AI Overview, Video, People also ask, Related searches, Ads bottom",
+keyword difficulty,Informational,6600,"0.44,0.81,0.54,1.00,0.36,0.29,0.19,0.29,0.36,0.00,0.36,0.06",35,4.80,0.08,"Sitelinks, AI Overview, Image pack, Video, People also ask, Related searches",
+seo best practices,Informational,6600,"0.66,0.81,0.66,1.00,0.66,0.36,0.36,0.36,0.36,0.36,0.36,0.36",74,1.88,0.14,"Sitelinks, AI Overview, Video, People also ask, Related searches",2270000000
+b2b seo,,5400,"0.81,0.54,0.81,1.00,0.66,0.54,0.36,0.36,0.44,0.44,0.10,0.01",33,22.36,0.11,"Sitelinks, AI Overview, Video, People also ask, Related searches",
+best web hosting,Commercial,5400,"0.05,0.05,0.03,0.05,0.05,0.05,0.07,0.05,0.10,0.08,0.08,1.00",81,10.91,0.48,"Sitelinks, AI Overview, Video, People also ask, Local pack, Discussions and forums, Related searches, Ads bottom",17090000000
+seo for dentists,Informational,4400,"0.54,0.54,1.00,1.00,0.54,0.54,0.44,0.35,0.54,0.12,0.66,0.12",31,32.00,0.11,"Sitelinks, AI Overview, Video, Video carousel, People also ask, Related searches, Ads middle",124
+hostinger wordpress hosting,"Navigational, Transactional",3600,"0.35,0.23,0.23,0.29,0.29,0.35,1.00,0.66,0.81,0.81,0.29,0.10",55,5.21,0.02,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",
+local seo audit,Informational,3600,"0.66,0.66,1.00,0.81,0.54,0.44,0.29,0.29,0.35,0.12,0.12,0.12",34,9.81,0.06,"Sitelinks, AI Overview, Video, People also ask, Related searches",126
+google algorithm updates,Informational,2900,"1.00,0.65,0.81,0.81,0.81,0.65,0.65,0.65,0.54,0.54,0.43,0.54",89,0.00,0.01,"AI Overview, Reviews, Video, People also ask, Discussions and forums, Related searches",102
+what is technical seo,,2900,"0.66,0.53,1.00,0.81,0.53,0.53,0.66,0.66,0.44,0.18,0.18,0.18",53,1.36,0.06,"AI Overview, Video, People also ask, Related searches",
+woocommerce seo,Informational,2900,"0.54,0.36,1.00,1.00,1.00,0.10,0.28,0.24,0.24,0.15,0.15,0.01",47,8.39,0.03,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",97
+b2b seo strategy,Informational,2400,"0.53,0.44,1.00,0.81,0.44,0.35,0.24,0.29,0.35,0.18,0.35,0.02",32,14.45,0.01,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches, Ads bottom",122
+best ai writing tools,Commercial,2400,"0.08,0.08,0.08,0.05,0.07,0.10,0.13,0.44,1.00,0.29,0.08,0.10",50,5.43,0.50,"Sitelinks, AI Overview, Video, People also ask, Discussions and forums, Related searches",86
+cloud web hosting,Informational,2400,"0.31,0.50,0.13,0.44,0.44,0.50,1.00,0.31,0.25,0.50,0.63,0.50",83,9.75,0.13,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",142
+linkedin seo,,2400,"0.66,0.24,1.00,0.54,0.28,0.15,0.03,0.07,0.15,0.15,0.15,0.10",53,7.33,0.12,"Sitelinks, AI Overview, Video, People also ask, Related searches",
+semrush review,Commercial,2400,"1.00,0.80,1.00,1.00,0.66,0.36,0.27,0.66,0.66,0.27,0.27,0.27",39,8.57,0.24,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",96
+keyword placement,Informational,1900,"0.54,0.65,1.00,0.65,0.36,0.36,0.10,0.16,0.22,0.02,0.02,0.02",15,0.00,0.33,"Sitelinks, AI Overview, Reviews, Image pack, Video, Video carousel, People also ask, Related searches",104
+anchor text seo,"Informational, Commercial",1600,"0.44,0.52,1.00,0.52,0.52,0.36,0.08,0.16,0.16,0.27,0.27,0.03",39,2.88,0.02,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",127
+best cloud hosting,Commercial,1600,"0.08,0.04,0.07,0.03,0.03,0.03,0.04,0.29,1.00,0.07,0.12,0.12",55,11.38,0.13,"AI Overview, Reviews, Image pack, Video, People also ask, Discussions and forums, Related searches",100
+cloudways hosting,Navigational,1600,"0.13,0.10,0.36,0.27,0.52,0.80,1.00,1.00,0.52,0.27,0.27,0.27",58,26.69,0.39,"Sitelinks, Reviews, Video, People also ask, Related searches",116
+mobile optimization,Informational,1600,"0.67,0.41,1.00,0.79,0.67,0.54,0.41,0.54,0.54,0.29,0.37,0.41",50,8.09,0.04,"AI Overview, Video, Video carousel, People also ask, Discussions and forums, Related searches",124
+zero click searches,Informational,1300,"0.81,0.81,1.00,0.81,0.81,0.81,0.81,0.81,0.62,0.62,0.62,0.62",50,9.63,0.07,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",133
+best web hosting services,Commercial,1000,"0.46,1.00,0.15,0.52,0.25,0.31,0.69,0.69,0.69,0.69,0.69,0.85",73,10.33,0.46,"Sitelinks, AI Overview, Video, Video carousel, People also ask, Discussions and forums, Related searches",116
+dynamic creative optimization,Informational,1000,"0.68,1.00,0.77,0.77,0.68,0.68,0.77,0.77,0.68,0.68,0.56,0.56",44,17.42,0.25,"AI Overview, Reviews, Video, People also ask, Related searches",136
+hostinger review,,1000,"0.23,0.00,1.00,0.06,0.23,0.46,0.34,1.00,0.20,0.29,0.14,0.20",69,5.11,0.46,"AI Overview, Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",118
+what is keyword difficulty,Informational,1000,"0.79,1.00,1.00,0.04,0.07,0.04,0.05,0.54,0.79,0.41,0.41,0.41",35,0.00,0.01,"Sitelinks, AI Overview, Reviews, Image pack, Video, People also ask, Related searches",
+clickup review,Commercial,880,"0.68,1.00,0.77,1.00,1.00,0.77,0.37,0.56,0.56,0.37,0.37,0.30",39,7.74,0.52,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",107
+kinsta review,Commercial,720,"0.55,0.45,1.00,0.25,0.45,0.55,1.00,0.25,0.30,0.07,0.55,0.07",50,14.02,0.18,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",114
+cloudways review,Commercial,590,"0.48,0.72,0.59,1.00,0.32,0.59,0.59,0.39,0.72,0.72,0.72,0.14",52,76.27,0.29,"AI Overview, Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",116
+jasper ai review,Commercial,590,"0.88,0.71,1.00,0.21,0.21,0.10,0.15,0.48,0.60,0.71,0.48,0.48",50,5.24,0.17,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",106
+optimize linkedin profile,Informational,590,"0.36,0.55,0.65,0.82,0.65,0.55,0.82,0.55,0.82,1.00,0.82,1.00",40,2.59,0.14,"AI Overview, Reviews, Video, People also ask, Related searches",103
+kinsta wordpress hosting,"Navigational, Transactional",480,"1.00,0.81,0.81,1.00,1.00,1.00,1.00,1.00,1.00,0.81,0.81,0.23",60,9.18,0.09,"Sitelinks, AI Overview, Reviews, Video, People also ask, Discussions and forums, Related searches",117
+zero click search,Informational,480,"0.66,0.66,0.66,0.66,1.00,0.81,1.00,0.81,1.00,0.81,0.81,0.81",50,9.63,0.07,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",87
+parts of a website,Informational,390,"0.16,0.24,0.11,0.20,0.11,0.16,0.16,0.16,0.13,0.03,0.03,1.00",13,0.00,0.08,"AI Overview, Image, Image pack, Video, People also ask",299000
+retargeting strategies,Informational,390,"0.44,0.12,1.00,0.66,0.66,0.23,0.54,0.36,0.29,0.15,0.15,0.15",36,17.17,0.33,"Sitelinks, AI Overview, Reviews, Image pack, Video, People also ask, Related searches",134
+anchor text optimization,Informational,320,"1.00,1.00,0.67,0.67,1.00,1.00,1.00,1.00,0.67,0.27,0.27,0.27",9,0.00,0.01,"AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",
+latest seo updates,Informational,320,"1.00,0.67,0.27,0.67,1.00,0.43,0.81,0.36,1.00,0.27,1.00,0.27",77,3.91,0.04,"Sitelinks, AI Overview, Video, People also ask, Related searches",130
+ux writing vs copywriting,Informational,320,"0.40,1.00,1.00,0.80,0.80,0.50,0.65,0.50,0.65,0.40,0.40,0.40",15,0.00,0.33,"Sitelinks, AI Overview, Image pack, Video, People also ask, Discussions and forums, Related searches",124
+ai content writing tools,Commercial,260,"0.36,0.08,0.03,0.10,0.05,0.08,0.24,0.08,0.45,0.08,0.13,1.00",71,14.92,0.04,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",125
+instagram target audience,Informational,260,"1.00,0.53,0.81,0.22,0.67,0.67,0.81,0.81,0.81,0.27,0.27,0.67",39,0.00,0.02,"AI Overview, Video, People also ask",161000
+mobile conversion optimization,"Informational, Commercial",140,"0.26,0.15,0.19,0.42,0.53,1.00,0.65,0.80,0.80,0.42,0.42,0.42",18,0.00,0.01,"AI Overview, Video, Video carousel, People also ask",130
+what is dynamic creative optimization,Informational,140,"0.35,0.19,0.80,0.65,0.65,0.26,0.19,0.65,1.00,0.42,0.42,0.80",48,0.00,0.33,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches, Ads bottom",139
+anatomy of a website,Informational,110,"0.53,0.42,0.35,0.35,0.35,0.53,0.53,0.42,1.00,0.35,0.35,0.26",13,1.61,0.11,"Sitelinks, AI Overview, Reviews, Image pack, Video, People also ask, Related searches",122
+socially responsible marketing,Informational,110,"1.00,0.83,0.51,0.83,0.51,0.83,0.83,0.63,0.51,0.29,0.29,0.40",27,0.00,0.01,"Sitelinks, AI Overview, Reviews, Video, People also ask",128
+how to use keywords in content,Informational,90,"0.64,1.00,0.64,0.49,0.21,0.64,0.64,0.64,0.64,0.79,0.79,0.79",19,0.00,0.01,"AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",123
+social responsibility in marketing,Informational,70,"0.61,0.82,0.61,0.43,0.36,1.00,0.43,0.61,0.36,0.43,0.25,0.36",7,0.00,0.01,"AI Overview, Reviews, Video, People also ask, Related searches",173000
+beaver builder review,Commercial,50,"0.60,0.40,0.40,0.80,0.40,0.40,1.00,0.60,0.60,1.00,0.60,0.60",18,2.04,0.38,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",122
+ecommerce retargeting,,30,"1.00,0.50,1.00,0.50,0.75,0.75,0.50,0.75,0.50,0.50,0.50,0.50",,0.00,0.02,,
+how to find your target audience on instagram,,20,"0.40,0.40,1.00,0.60,0.40,0.40,0.40,0.80,0.40,0.40,0.40,0.40",,0.00,0.14,,
+personal website content,,20,"1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,0.00,0.07,,
+woocommerce seo guide,,20,"1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,0.00",,0.00,0.00,,
+best wordpress plugins for bloggers,,10,"0.20,0.20,0.00,1.00,0.00,0.00,0.00,0.40,0.20,0.20,0.20,0.40",,3.50,0.29,,
+wordpress plugins for blogs,,10,"0.67,0.00,0.00,1.00,0.33,0.33,0.33,0.33,0.33,0.33,0.33,0.00",,3.03,0.19,,
+how to do a local seo audit,,0,"1.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00",,0.00,0.00,,
