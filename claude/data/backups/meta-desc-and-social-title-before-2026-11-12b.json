@@ -1,0 +1,37 @@
+{
+ "desc": {
+  "76": {
+   "path": "services/agents",
+   "old": "Eight AI agents for search authority: search intelligence, evidence verification, AEO/GEO, competitor and performance. Start with one or run the full OS.",
+   "new": "Eight AI SEO agents for search authority, delivered as a service: research, evidence checks, AEO and GEO, quality control and performance. Start with one."
+  },
+  "85": {
+   "path": "services/seo-content-systems",
+   "old": "SEO content writing run as a system: research, topic maps, expert-led briefs, human-edited pages, internal links and refreshes that rank and get cited.",
+   "new": "SEO content writing services run as a system: research, topic maps, expert-led writing, human editing and refreshes, built to rank and be cited by AI."
+  },
+  "95": {
+   "path": "industries/professional-services",
+   "old": "SEO, local SEO and AI search for law, accounting, finance and consulting firms: practice-area visibility, expert-led content and accurate AI answers.",
+   "new": "Professional services SEO and AI search for law, accounting, finance and consulting firms: practice-area pages, expert content and trust signals."
+  },
+  "96": {
+   "path": "industries/education",
+   "old": "SEO and AI search for universities, colleges and training providers: course pages students trust, accurate AI answers and enquiry-to-application journeys.",
+   "new": "Education SEO and AI search for universities, colleges, schools and training providers: course pages students find, trust and act on when they compare."
+  },
+  "190": {
+   "path": "services/best-search-engine-optimization-services",
+   "old": "SEO services built on Google's guidelines: technical SEO, on-page, content and authority run as one system and extended to AI search for B2B brands.",
+   "new": "Search engine optimization services built on Google's guidelines: technical SEO, on-page, content and authority, run as one system and measured in leads."
+  }
+ },
+ "social_before": {
+  "social-title-page": "%%title%%",
+  "social-title-rl_project": "%%title%%"
+ },
+ "social_after": {
+  "social-title-page": "",
+  "social-title-rl_project": ""
+ }
+}
