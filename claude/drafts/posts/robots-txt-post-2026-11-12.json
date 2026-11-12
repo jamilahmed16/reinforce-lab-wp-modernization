@@ -13,6 +13,11 @@
   "rl_g_glossary": "Crawler | A program a search engine or AI tool uses to read web pages. Also called a bot or spider.\nUser agent | The name a crawler gives itself, such as Googlebot. Rules in robots.txt are addressed to user agents.\nDisallow | A rule that tells a crawler not to open a path.\nSitemap | A file that lists the pages you want search engines to find.\nNoindex | A tag or header that tells search engines not to show a page in results.",
   "_yoast_wpseo_title": "Robots.txt for SEO: A Complete Guide (2026) | Reinforce Lab",
   "_yoast_wpseo_metadesc": "Robots.txt tells search engines and AI crawlers which pages they may crawl. Learn what it does, what it cannot do, how to write one and how to test it.",
-  "_yoast_wpseo_focuskw": "robots.txt"
+  "_yoast_wpseo_focuskw": "robots.txt",
+  "rl_g_cta_service": "services/technical-seo-services",
+  "rl_g_cta_after": "5",
+  "rl_g_cta_head": "Not sure what your robots.txt is blocking?",
+  "rl_g_cta_sub": "Reinforce Lab finds what stops search engines and AI crawlers from reading your pages, fixes it, and re-crawls to prove it.",
+  "rl_g_cta_button": "See technical SEO services"
  }
 }
