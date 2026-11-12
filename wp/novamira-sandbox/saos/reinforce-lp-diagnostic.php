@@ -43,9 +43,9 @@ body.rl-lp-page{padding-top:0!important}
 .rl-lp .top .back:hover{color:var(--ink)}
 .rl-lp .hero{padding-block:clamp(32px,5vw,64px)}
 .rl-lp .hero-grid{align-items:start}
-.rl-lp .ticks{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:10px}
-.rl-lp .ticks li{position:relative;padding-left:22px;color:var(--ink-dim)}
-.rl-lp .ticks li::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;background:var(--red-2)}
+.rl-lp .lp-ticks{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:10px}
+.rl-lp .lp-ticks li{position:relative;padding-left:22px;color:var(--ink-dim)}
+.rl-lp .lp-ticks li::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;background:var(--red-2)}
 .rl-lp .micro{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-top:22px;line-height:1.8}
 .rl-lp .form{background:var(--glass);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--glass-line);box-shadow:inset 0 1px 0 var(--glass-hi),0 30px 70px -44px rgba(0,0,0,.9);padding:clamp(20px,3vw,32px);scroll-margin-top:20px}
 .rl-lp .form .ft{font-family:var(--f-display);text-transform:uppercase;font-size:20px;font-weight:600;color:var(--ink)}
@@ -134,7 +134,7 @@ function rl_render_lp_diagnostic() {
       <span class="ey"><b>[</b>&nbsp;Free&nbsp;<b>/</b>&nbsp;Search Authority Diagnostic&nbsp;<b>]</b></span>
       <h1 class="h1">Find out exactly<br>what's limiting your<br><span class="r">search authority.</span></h1>
       <p class="lede">Get a free, data-backed diagnostic from Reinforce Lab of your Google visibility, AI search presence (ChatGPT, Perplexity, AI Overviews), content authority and competitors, plus a prioritized 90-day action plan.</p>
-      <ul class="ticks">
+      <ul class="lp-ticks">
         <li>Where you stand in Google and in AI answers</li>
         <li>The highest-value demand you are not capturing</li>
         <li>What to create, what to improve and what to stop</li>
