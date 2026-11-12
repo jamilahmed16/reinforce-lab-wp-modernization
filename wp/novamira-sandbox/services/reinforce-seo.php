@@ -172,7 +172,7 @@ function rl_render_seo() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;SEO&nbsp;<b>]</b></span>
-      <h1 class="h1">SEO services<br>that build<br><span class="r">lasting authority.</span></h1>
+      <h1 class="h1"><span class="svc">Search engine optimization services.</span> SEO services<br>that build<br><span class="r">lasting authority.</span></h1>
       <p class="lede"><strong>Search engine optimization (SEO) services</strong> help search engines find, understand and trust your website, so the right customers reach you from Google and from AI answers. Reinforce Lab runs all four pillars (technical SEO, on-page SEO, content and authority) as one system, built to Google's own guidelines and measured in leads and revenue, not rankings alone.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>

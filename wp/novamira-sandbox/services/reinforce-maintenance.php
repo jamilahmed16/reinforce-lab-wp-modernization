@@ -164,7 +164,7 @@ function rl_render_maintenance() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Website Maintenance&nbsp;<b>]</b></span>
-      <h1 class="h1">Website maintenance<br>that keeps you<br><span class="r">secure and fast.</span></h1>
+      <h1 class="h1"><span class="svc">Website maintenance services.</span> Keep your<br>website<br><span class="r">secure and fast.</span></h1>
       <p class="lede"><strong>Website maintenance services</strong> keep your website secure, fast and working: tested updates, off-site backups, security and vulnerability monitoring, uptime checks, speed and SEO health, content changes and support when something breaks. Reinforce Lab maintains WordPress sites on a set schedule and reports every month on what was done and what was found.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>

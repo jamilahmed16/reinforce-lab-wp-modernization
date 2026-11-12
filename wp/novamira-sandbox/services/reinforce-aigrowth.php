@@ -164,7 +164,7 @@ function rl_render_aigrowth() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;AI Growth Systems&nbsp;<b>]</b></span>
-      <h1 class="h1">AI Growth Systems,<br>built and run<br><span class="r">for your business.</span></h1>
+      <h1 class="h1"><span class="svc">AI Growth Systems.</span> Built and run<br>for your<br><span class="r">business.</span></h1>
       <p class="lede"><strong>Reinforce Lab designs, builds and runs AI Growth Systems</strong>: your data, AI models, automated workflows and an outcome dashboard connected into one system that researches, publishes, ranks and follows up, while your team approves what matters. We start with the system that removes the most manual work or lost revenue, then extend it.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
