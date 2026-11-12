@@ -155,7 +155,7 @@ function rl_render_content() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;SEO Content&nbsp;<b>]</b></span>
-      <h1 class="h1">SEO content writing services.<br>Content that ranks, gets cited <span class="r">and converts.</span></h1>
+      <h1 class="h1"><span class="svc">SEO content writing services.</span> Content that ranks,<br>gets cited<br><span class="r">and converts.</span></h1>
       <p class="lede"><strong>SEO content systems</strong> turn SEO content writing into a repeatable process: research, a topic map, briefs, your experts' knowledge, human-edited writing, publishing, internal links and scheduled refreshes. Reinforce Lab builds and runs that system, so every page answers a real search, shows real expertise, and earns its place in Google and in AI answers.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>

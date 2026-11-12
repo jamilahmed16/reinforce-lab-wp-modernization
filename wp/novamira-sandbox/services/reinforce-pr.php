@@ -171,7 +171,7 @@ function rl_render_pr() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Digital PR&nbsp;<b>]</b></span>
-      <h1 class="h1">Digital PR services.<br>Earn coverage and links that <span class="r">build authority.</span></h1>
+      <h1 class="h1"><span class="svc">Digital PR services.</span> Earn coverage<br>and links that<br><span class="r">build authority.</span></h1>
       <p class="lede"><strong>Digital PR</strong> is off-page SEO done in the open. Reinforce Lab builds stories from original data and expert insight, pitches them to the journalists who cover your field, and earns the coverage, links and mentions that build your authority in Google and AI search, with no bought links and no keyword-stuffed press releases.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>

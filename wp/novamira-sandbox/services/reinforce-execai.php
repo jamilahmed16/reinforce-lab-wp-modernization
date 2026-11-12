@@ -161,7 +161,7 @@ function rl_render_execai() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Executive AI Consulting&nbsp;<b>]</b></span>
-      <h1 class="h1">Executive AI consulting.<br>An AI strategy your board <span class="r">can act on.</span></h1>
+      <h1 class="h1"><span class="svc">Executive AI consulting.</span> An AI strategy<br>your board<br><span class="r">can act on.</span></h1>
       <p class="lede"><strong>Executive AI consulting</strong> helps leadership teams decide where AI should (and shouldn't) go in their business: which use cases are worth funding, what data and governance they need, which regulations apply, and how the return will be measured. Reinforce Lab delivers a prioritised roadmap with the guardrails to match, then helps turn the first projects into measured results.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>

@@ -159,7 +159,7 @@ function rl_render_wpdesign() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;WordPress Website Design&nbsp;<b>]</b></span>
-      <h1 class="h1">WordPress website design services.<br>WordPress sites built to rank <span class="r">and convert.</span></h1>
+      <h1 class="h1"><span class="svc">WordPress website design services.</span> WordPress sites<br>built to rank<br><span class="r">and convert.</span></h1>
       <p class="lede"><strong>WordPress website design services</strong> from Reinforce Lab plan, design and build fast, accessible WordPress sites that your team can edit and Google can crawl, with your search rankings protected through every redesign and migration. WordPress runs 40.2% of all websites; we make yours one that brings in qualified leads.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>

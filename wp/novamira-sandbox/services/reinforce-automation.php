@@ -158,7 +158,7 @@ function rl_render_automation() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Marketing Automation&nbsp;<b>]</b></span>
-      <h1 class="h1">Marketing automation services.<br>Follow up with every lead, <span class="r">automatically.</span></h1>
+      <h1 class="h1"><span class="svc">Marketing automation services.</span> Follow up with<br>every lead,<br><span class="r">automatically.</span></h1>
       <p class="lede"><strong>Marketing automation</strong> sends the right message to each lead at the right moment: nurture emails, lead scoring, CRM updates and sales alerts, based on what they actually do. Reinforce Lab designs, builds and runs these workflows on the platforms you already use, with deliverability and consent built in, and measures them in pipeline, not opens.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>

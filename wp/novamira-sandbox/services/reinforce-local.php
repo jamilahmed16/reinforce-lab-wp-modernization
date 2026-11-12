@@ -183,7 +183,7 @@ function rl_render_local() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Local SEO&nbsp;<b>]</b></span>
-      <h1 class="h1">Local SEO services.<br>Get found by customers <span class="r">near you.</span></h1>
+      <h1 class="h1"><span class="svc">Local SEO services.</span> Get found by<br>customers<br><span class="r">near you.</span></h1>
       <p class="lede"><strong>Local SEO</strong> (local search engine optimization) makes your business visible when people nearby search for what you offer: in Google's local results and Maps, on Apple Maps and Bing, and in AI answers. Reinforce Lab builds the profiles, citations, reviews and location pages that local visibility depends on, within Google's own guidelines.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>

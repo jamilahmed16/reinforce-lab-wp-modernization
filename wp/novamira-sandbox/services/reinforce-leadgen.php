@@ -155,7 +155,7 @@ function rl_render_leadgen() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Lead Generation&nbsp;<b>]</b></span>
-      <h1 class="h1">B2B lead generation services.<br>Turn demand into qualified pipeline, <span class="r">not form fills.</span></h1>
+      <h1 class="h1"><span class="svc">B2B lead generation services.</span> Turn demand into<br>qualified pipeline,<br><span class="r">not form fills.</span></h1>
       <p class="lede"><strong>Lead generation systems</strong> connect every step between a buyer's first search and a closed deal: the channels that attract them, the landing pages and forms that convert them, the qualification and routing that get the right leads to sales fast, and the closed-loop data that tells your ads which leads became revenue. Reinforce Lab builds and runs the whole system, including PPC and Google Ads.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>

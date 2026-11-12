@@ -39,6 +39,8 @@
 .rl-page h3{font-size:20px;line-height:1.2}
 .rl-page .h1{font-size:clamp(34px,5.1vw,64px);font-weight:700;letter-spacing:-.01em;margin-top:14px}
 .rl-page .h1 .r{color:var(--red-2)}
+/* service name inside the H1, smaller than the benefit line, so the hero keeps its 3 large lines (D-226) */
+.rl-page .h1 .svc{display:block;font-size:.44em;font-weight:600;line-height:1.1;letter-spacing:.02em;margin-bottom:4px}
 .rl-page .hero .lede{margin-top:18px}
 .rl-page .tscroll{overflow-x:auto;position:relative;border:1px solid var(--glass-line);background:var(--glass)}
 .rl-page table{width:100%;border-collapse:collapse;min-width:760px;font-size:16px}

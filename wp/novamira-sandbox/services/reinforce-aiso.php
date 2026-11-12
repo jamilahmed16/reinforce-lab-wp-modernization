@@ -243,7 +243,7 @@ function rl_render_aiso() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;AI Search Optimization&nbsp;<b>]</b></span>
-      <h1 class="h1">AI Search Optimization Services.<br>Be named in<br><span class="r">AI answers.</span></h1>
+      <h1 class="h1"><span class="svc">AI Search Optimization Services.</span> Be named in<br><span class="r">AI answers.</span></h1>
       <p class="lede">Reinforce Lab's <strong>AI search optimization services</strong> (also called AI SEO services) make your brand visible, accurately described and recommended when buyers ask ChatGPT, Perplexity, Gemini, Copilot or Google AI Overviews and AI Mode about your category. We run it as one program with your SEO, measured engine by engine, on the questions your buyers actually ask.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
