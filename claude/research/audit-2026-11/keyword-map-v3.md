@@ -61,3 +61,21 @@ Notes `[RECOMMENDATION]`:
 - **The Diagnostic cannot win "free seo audit" soon** (KD 82; free seo analysis 78; free website audit 77), and the name would clash with the paid SEO & AI Search Audit. One FAQ answers the question; the page name stays.
 - **Easiest industry openings:** life sciences seo (170, KD 5), pharma seo agency (260, KD 8), saas seo services (1,600, KD 13), seo for professional services (390, KD 14), manufacturing marketing agency (1,900, KD 15), seo for tech companies (590, KD 16), seo for schools (590, KD 17).
 - **Largest industry terms:** ecommerce seo (14,800, KD 52), ecommerce seo services (8,100, KD 30), healthcare seo and medical seo (4,400 each, KD 30 and 28).
+
+## Added 12 Nov (D-233): agent pages
+
+Source: Semrush US export, 12 Nov (`claude/data/semrush/agent-keywords-us-2026-11-12.csv`). `[VERIFIED from the export]` Agent pages keep their names; these keywords are used in FAQs only, because most are searches for software and the pages describe a service (D-224).
+
+| Page | URL | Keywords covered (US volume, KD) |
+|---|---|---|
+| Agents hub | `/services/agents/` | ai seo agents (110, KD 32); ai agents for seo (210, KD 17); seo ai agent (480, KD 39); ai seo agent (390, KD 43); ai seo tools (3,600, KD 74) |
+| SEO Intelligence | `/services/agents/seo-intelligence/` | seo intelligence (170, KD 8); ai keyword research (320, KD 62); ai seo analysis (50, KD 82) |
+| Content Research | `/services/agents/content-research/` | ai research agent (210, KD 44); ai content research (50, KD 57) |
+| Evidence Verification | `/services/agents/evidence-verification/` | ai fact checker (320, KD 37); ai fact checking (210, KD 38) |
+| AEO / GEO Optimization | `/services/agents/aeo-geo-optimization/` | aeo services (1,300, KD 21); answer engine optimization (6,600, KD 60); geo optimization (1,300, KD 48); aeo optimization (880, KD 57) |
+| Social Sentiment | `/services/agents/social-sentiment/` | ai social listening (390, KD 8); social sentiment analysis (320, KD 45); ai sentiment analysis (720, KD 59) |
+| Competitor Intelligence | `/services/agents/competitor-intelligence/` | competitor intelligence (1,300, KD 34); competitor intelligence tools (720, KD 40); ai competitor analysis (140, KD 42) |
+| Content QA | `/services/agents/content-qa/` | content qa (40, KD 7); ai content checker (1,900, KD 94) |
+| Search Performance | `/services/agents/search-performance/` | seo performance tracking (210, KD 24); ai visibility tracking (1,300, KD 57); ai seo reporting (20, KD n/a) |
+
+Notes `[RECOMMENDATION]`: best openings are aeo services (1,300, KD 21, rising), ai social listening (390, KD 8), seo intelligence (170, KD 8), ai agents for seo (210, KD 17). "ai content checker" (1,900, KD 94) means AI-text detectors, a different intent; the Content QA page says so and does not target it. "answer engine optimization" (6,600, KD 60) is informational and better served by a blog post later.

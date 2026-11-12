@@ -28,6 +28,7 @@ function rl_agents_faqs() {
         ['Do the agents replace my team?', 'No. Agents handle research, verification, monitoring and quality checks. Your people keep strategy, approvals and relationships; human review stays in the loop.'],
         ['How do the agents work together?', 'Research agents feed verification, verified content passes optimization and QA, and performance monitoring feeds what the system does next. Combined, they form Search Authority OS.'],
         ['What does an agent cost?', 'Single agents are scoped to your site and goals after the diagnostic. For full-system pricing, see the Search Authority OS packages.'],
+        ['Are these AI SEO agents software or a service?', 'A service. Each agent is a defined job inside Search Authority OS, done by the Reinforce Lab team with AI assistance, and a person reviews every output. If you are comparing AI agents for SEO or AI SEO tools, the difference is that you receive checked findings and finished work, not a login.'],
     ];
 }
 

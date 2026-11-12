@@ -1,0 +1,30 @@
+Keyword,Intent,Volume,Trend,Keyword Difficulty,CPC (USD),Competitive Density,SERP Features,Number of Results
+answer engine optimization,Informational,6600,"0.29,0.24,0.36,0.29,0.36,0.29,0.44,0.54,1.00,0.66,0.81,0.81",60,15.87,0.41,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",134
+ai seo tools,Informational,3600,"0.45,0.83,0.83,0.24,0.17,0.17,0.24,0.55,1.00,0.83,0.83,0.66",74,15.79,0.14,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",127
+ai content checker,Commercial,1900,"0.65,1.00,0.84,0.65,0.65,0.65,0.65,0.65,0.56,0.56,0.65,0.56",94,1.08,0.09,"AI Overview, Reviews, Video, Related searches",129
+aeo services,,1300,"0.37,0.46,0.52,0.68,0.68,0.84,1.00,1.00,1.00,0.52,0.68,0.68",21,21.88,0.31,"AI Overview, Reviews, Video, People also ask, Related searches, Ads bottom",125
+ai visibility tracking,"Informational, Commercial",1300,"0.16,0.30,0.65,0.44,0.34,0.44,0.44,0.55,1.00,0.34,0.34,0.34",57,20.65,0.15,"Sitelinks, AI Overview, Reviews, Image pack, Video, People also ask, Related searches, Ads bottom",129
+competitor intelligence,Informational,1300,"0.20,0.79,0.05,0.24,1.00,0.24,0.08,0.55,0.79,0.67,0.24,1.00",34,9.18,0.30,"Sitelinks, AI Overview, Image pack, Video, People also ask, Related searches, Things to know",137
+geo optimization,Informational,1300,"0.54,0.66,0.66,0.54,0.54,0.66,0.79,0.79,1.00,0.66,0.66,0.54",48,12.48,0.64,"AI Overview, Video, People also ask, Related searches, Things to know",126
+aeo optimization,Informational,880,"0.36,0.24,0.45,0.45,0.55,0.55,0.81,1.00,1.00,1.00,1.00,1.00",57,15.43,0.50,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches, Ads bottom",133
+ai sentiment analysis,"Informational, Commercial",720,"0.30,0.20,0.45,1.00,1.00,0.76,0.30,0.30,0.45,0.67,0.76,1.00",59,11.34,0.29,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",129
+competitor intelligence tools,"Informational, Commercial",720,"0.72,0.88,0.39,0.39,0.72,0.88,0.59,0.47,0.72,0.72,0.11,1.00",40,15.59,0.15,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",132
+seo ai agent,Informational,480,"0.67,0.67,0.36,0.16,0.36,0.82,0.55,0.82,1.00,0.67,0.67,0.13",39,10.39,0.27,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches, Ads top, Ads bottom",121
+ai seo agent,Informational,390,"0.39,0.17,0.39,0.14,0.32,0.59,0.48,0.48,0.72,0.48,0.72,1.00",43,8.98,0.29,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",119
+ai social listening,"Informational, Commercial",390,"0.83,1.00,1.00,0.83,0.08,0.83,0.17,0.21,0.54,0.25,0.25,0.25",8,25.36,0.22,"AI Overview, Reviews, Video, People also ask, Discussions and forums, Related searches",170000
+ai fact checker,Informational,320,"0.54,0.81,0.67,0.44,0.28,0.67,0.36,0.81,1.00,0.44,0.36,0.44",37,1.17,0.17,"Sitelinks, AI Overview, Reviews, Video, People also ask, Discussions and forums, Related searches",692
+ai keyword research,Informational,320,"0.48,0.19,0.11,0.30,0.04,0.30,0.15,0.19,0.30,1.00,1.00,0.11",62,11.63,0.20,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",96
+social sentiment analysis,Commercial,320,"1.00,0.82,0.35,0.67,1.00,0.82,0.67,0.67,0.82,0.35,0.44,0.67",45,13.15,0.27,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches, Ads bottom",129
+ai agents for seo,Informational,210,"0.28,0.12,0.53,0.12,0.23,0.82,1.00,1.00,0.82,0.82,0.28,0.28",17,14.55,0.33,"AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",113
+ai fact checking,Informational,210,"0.81,0.53,0.81,0.53,1.00,0.65,1.00,0.34,0.65,0.53,0.53,0.09",38,1.17,0.17,"AI Overview, Reviews, Video, People also ask, Related searches",1200
+ai research agent,Informational,210,"0.23,0.43,0.53,0.66,1.00,0.53,0.82,0.82,0.23,0.28,0.28,0.28",44,4.61,0.59,"AI Overview, Video, People also ask, Related searches",116
+seo performance tracking,Informational,210,"0.10,0.14,0.10,0.43,0.54,0.35,0.66,0.66,1.00,0.22,0.22,0.22",24,7.70,0.06,"AI Overview, Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",131
+seo intelligence,Informational,170,"0.43,0.82,1.00,0.43,0.23,0.17,0.05,0.28,0.35,0.28,0.28,0.23",8,11.03,0.24,"Sitelinks, AI Overview, Video, People also ask, Related searches",122
+ai competitor analysis,Informational,140,"0.65,0.11,0.40,1.00,0.65,1.00,0.82,1.00,1.00,0.65,0.65,0.65",42,11.02,0.33,"AI Overview, Reviews, Video, People also ask, Related searches",128
+ai seo agents,Informational,110,"0.65,0.43,0.15,0.12,0.34,0.34,0.28,0.34,0.53,0.28,0.34,1.00",32,8.58,0.17,"Sitelinks, AI Overview, Video, Video carousel, People also ask, Related searches",120
+ai content research,Informational,50,"0.33,0.22,0.22,0.33,1.00,0.55,0.55,0.22,0.22,0.55,0.22,0.22",57,0.00,0.33,"Sitelinks, AI Overview, Video, People also ask, Related searches",126
+ai seo analysis,Informational,50,"0.36,0.27,0.27,0.27,0.18,1.00,0.45,0.81,0.45,0.36,0.45,0.63",82,17.57,0.69,"AI Overview, Reviews, Video, People also ask, Related searches",127
+content qa,Informational,40,"0.11,0.11,0.11,0.11,0.11,0.11,1.00,0.64,0.17,0.11,0.11,0.11",7,0.00,0.01,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",125
+ai seo reporting,,20,"0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.28,0.78,1.00",,0.00,0.00,,
+ai fact checking tool,,10,"1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00",,0.00,0.17,,
+ai content quality checker,,0,0.00,,0.00,0.00,,
