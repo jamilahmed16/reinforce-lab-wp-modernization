@@ -102,8 +102,8 @@ function rl_reviews_pillar($v, $d, $u, $wpeCard) {
     $set = rl_reviews_picks($v); $picks = $set['picks']; $n = count($picks);
     $hub = $u('reviews');
     $T = $v === 'hosting'
-        ? ['kind' => 'WordPress hosting', 'h1' => 'The 15 best web hosting services<span class="yr">.</span>', 'stand' => 'Our 15 picks for hosting a WordPress or business website, each with what it is best for, its pros and cons, and our setup guide where we have one.', 'label' => 'Host']
-        : ['kind' => 'SEO and AI tools', 'h1' => 'The 5 best AI content writing tools<span class="yr">.</span>', 'stand' => 'Our 5 picks for writing marketing copy and articles with AI, each with why we picked it and who it is for. Then every SEO and AI tool review on the site.', 'label' => 'Tool'];
+        ? ['kind' => 'WordPress hosting', 'h1' => 'The 15 best web hosting services<span class="yr">.</span>', 'stand' => 'Reinforce Lab’s 15 picks for hosting a WordPress or business website, each with what it is best for, its pros and cons, and our setup guide where we have one.', 'label' => 'Host']
+        : ['kind' => 'SEO and AI tools', 'h1' => 'The 5 best AI content writing tools<span class="yr">.</span>', 'stand' => 'Reinforce Lab’s 5 picks for writing marketing copy and articles with AI, each with why we picked it and who it is for. Then every SEO and AI tool review on the site.', 'label' => 'Tool'];
     $ok = '<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg>';
     $x = '<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg>';
     $names = []; foreach ($picks as $p) if ($p['url'] !== '' && function_exists('rl_aff_partner') && ($pn = rl_aff_partner($p['url'])) !== '') $names[] = $pn;
@@ -354,7 +354,7 @@ add_shortcode('reinforce_reviews', function ($atts) {
   <div class="wrap">
     <span class="ey"><b>[</b>&nbsp;Reviews&nbsp;<b>]</b></span>
     <h1 class="h1">Reviews of WordPress hosting<br><span class="r">and SEO tools.</span></h1>
-    <p class="lede">Our guides and reviews of the WordPress hosts, SEO tools and AI writing tools that come up in client work. We are rewriting each one first-hand; a rewritten review says when we used the product, what we tested and whether we paid for it.</p>
+    <p class="lede">Reinforce Lab’s guides and reviews of the WordPress hosts, SEO tools and AI writing tools that come up in client work. We are rewriting each one first-hand; a rewritten review says when we used the product, what we tested and whether we paid for it.</p>
   </div>
 </section>
 
