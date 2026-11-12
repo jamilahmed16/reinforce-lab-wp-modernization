@@ -1,12 +1,12 @@
 <?php
 /**
  * Plugin Name: Reinforce Lab - Executive AI Consulting
- * Description: /services/executive-ai-consulting/ (D-023 new URL; 301 target for the legacy /services/business-consultancy-service/) - Executive AI Consulting service page. Provides [reinforce_execai]. Uses the shared kit (D-044). Hero animation "Matrix to roadmap" (D-039 Step 3).
+ * Description: /services/ai-consulting-services/ (D-023 new URL; 301 target for the legacy /services/business-consultancy-service/) - Executive AI Consulting service page. Provides [reinforce_execai]. Uses the shared kit (D-044). Hero animation "Matrix to roadmap" (D-039 Step 3).
  * Version: 1.0
  */
 if (!defined('ABSPATH')) exit;
 
-function rl_is_ex() { return is_page('executive-ai-consulting'); }
+function rl_is_ex() { return is_page('ai-consulting-services'); }
 
 /* ---------- single source: FAQ (markup + FAQPage schema) ---------- */
 function rl_ex_faqs() {

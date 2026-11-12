@@ -62,7 +62,7 @@ Summary: Stays at the same address: 106, Moves to the new page: 104, Stays, hidd
 | 48 | `/how-to-find-your-target-audience-on-instagram/` | Stays at the same address |  | 2 | 10492 |  |
 | 49 | `/agency-partner-program-wp-engine-landing/` | Stays at the same address |  | 2 | 7340 |  |
 | 50 | `/ux-writing-vs-copywriting/` | Stays at the same address |  | 2 | 5178 |  |
-| 51 | `/services/business-consultancy-service/` | Moves to the new page | `/services/executive-ai-consulting/` | 2 | 2803 |  |
+| 51 | `/services/business-consultancy-service/` | Moves to the new page | `/services/ai-consulting-services/` | 2 | 2803 |  |
 | 52 | `/get-a-free-quote/` | Moves to the new page | `/get-a-free-quote/` | 2 | 1135 | yes |
 | 53 | `/projects/inpace-shop/` | Moves to the new page | `/portfolio/inpace-shop/` | 2 | 325 |  |
 | 54 | `/clients/` | Stays at the same address |  | 2 | 294 |  |

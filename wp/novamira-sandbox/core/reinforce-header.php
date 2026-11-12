@@ -429,7 +429,7 @@ function rl_render_footer() {
         'LLM Optimization' => 'services/llm-optimization',
         'Lead Generation Systems' => 'services/lead-generation-systems',
         'Marketing Automation' => 'services/marketing-automation',
-        'Executive AI Consulting' => 'services/executive-ai-consulting',
+        'Executive AI Consulting' => 'services/ai-consulting-services',
     );
     $industries = array(
         'Pharmaceutical & Life Sciences' => 'industries/pharmaceutical',

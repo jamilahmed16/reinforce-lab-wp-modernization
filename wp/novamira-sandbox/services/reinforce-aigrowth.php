@@ -29,7 +29,7 @@ function rl_aigrowth_systems() {
         ['services/ai-workflow-automation', 'Operations', 'Operations automation', 'AI reads, sorts and drafts: inbox and ticket triage, data extraction from documents, CRM updates and reports.', 'Hours saved, error rate'],
         ['services/marketing-automation', 'Marketing', 'Marketing automation', 'Nurture emails, lead scoring, CRM updates and sales alerts triggered by what each lead actually does.', 'Response time, conversion'],
         ['services/lead-generation-systems', 'Pipeline', 'Lead generation system', 'Turns organic visibility into qualified, routed and tracked enquiries, from first visit to sales conversation.', 'Qualified leads, pipeline value'],
-        ['services/executive-ai-consulting', 'Leadership', 'AI strategy and governance', 'Decides which processes to automate first, sets the rules for AI use, and keeps people in charge of the decisions that matter.', 'Roadmap, adoption, risk'],
+        ['services/ai-consulting-services', 'Leadership', 'AI strategy and governance', 'Decides which processes to automate first, sets the rules for AI use, and keeps people in charge of the decisions that matter.', 'Roadmap, adoption, risk'],
     ];
 }
 

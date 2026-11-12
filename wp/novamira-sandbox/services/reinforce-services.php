@@ -33,7 +33,7 @@ function rl_services_groups() {
             ['lead-generation-systems', 'Lead Generation Systems', 'Lead Gen', 'Capture, qualify and route demand from search into your pipeline.'],
         ]],
         ['adv', 'Advisory & Web', 'Advisory/Web', 'Leadership direction on AI, and websites built to rank and convert.', [
-            ['executive-ai-consulting', 'Executive AI Consulting', 'Exec AI', 'A practical AI roadmap for leadership: where AI creates value, what to build first and how to measure it.'],
+            ['ai-consulting-services', 'Executive AI Consulting', 'Exec AI', 'A practical AI roadmap for leadership: where AI creates value, what to build first and how to measure it.'],
             ['wordpress-website-design-service', 'WordPress Website Design', 'WordPress', 'Fast, well-structured WordPress sites built for search and AI discoverability.'],
             ['ecommerce-website-design-service', 'E-commerce Website Design', 'E-commerce', 'Online stores designed to rank, load fast and convert.'],
             ['website-maintenance-services', 'Website Maintenance', 'Maintenance', 'Updates, security, backups and performance checks that keep your site healthy.'],
@@ -50,7 +50,7 @@ function rl_services_router() {
         ['Too much manual work in marketing and operations', ['ai-workflow-automation', 'marketing-automation']],
         ['Not enough qualified leads from search', ['lead-generation-systems']],
         ['Expanding into new countries or languages', ['international-seo']],
-        ['Leadership needs a clear AI plan', ['executive-ai-consulting']],
+        ['Leadership needs a clear AI plan', ['ai-consulting-services']],
     ];
 }
 function rl_services_faqs() {

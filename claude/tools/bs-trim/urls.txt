@@ -15,7 +15,7 @@
 /services/best-search-engine-optimization-services/
 /services/ecommerce-website-design-service/
 /services/enterprise-seo-strategy/
-/services/executive-ai-consulting/
+/services/ai-consulting-services/
 /services/generative-engine-optimization/
 /services/international-seo/
 /services/lead-generation-systems/

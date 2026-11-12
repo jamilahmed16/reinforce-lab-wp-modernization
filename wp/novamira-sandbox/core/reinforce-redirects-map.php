@@ -104,7 +104,7 @@ function rl_redirect_rules() {
             '/services/best-search-engine-optimization-services/on-page-seo-services/' => '/services/best-search-engine-optimization-services/',
             '/services/best-seo-content-writing-services/' => '/services/seo-content-systems/',
             '/services/best-website-copywriting-services/' => '/services/seo-content-systems/',
-            '/services/business-consultancy-service/' => '/services/executive-ai-consulting/',
+            '/services/business-consultancy-service/' => '/services/ai-consulting-services/',
             '/services/content-marketing-service/' => '/services/seo-content-systems/',
             '/services/content-marketing-services/' => '/services/seo-content-systems/',
             '/services/creative/' => '/services/',

@@ -279,7 +279,7 @@ function rl_render_automation() {
           ['services/ai-workflow-automation', 'Operations', 'AI Workflow Automation', 'AI-powered workflows beyond marketing: operations, sales and service.'],
           ['services/seo-content-systems', 'Content', 'SEO Content Systems', 'The guides and case studies your nurture journeys send.'],
           ['services/best-search-engine-optimization-services', 'Search', 'Search Engine Optimization', 'Organic visibility that brings buyers to your forms in the first place.'],
-          ['services/executive-ai-consulting', 'Strategy', 'Executive AI Consulting', 'Where AI and automation should (and shouldn’t) go in your business.'],
+          ['services/ai-consulting-services', 'Strategy', 'Executive AI Consulting', 'Where AI and automation should (and shouldn’t) go in your business.'],
           ['search-authority-os', 'System', 'Search Authority OS', 'Search, content and automation run as one operating system.'],
       ] as $r) { $l = $ex($r[0]); $in = '<span class="n">' . esc_html($r[1]) . '</span><h3>' . esc_html($r[2]) . '</h3><p>' . esc_html($r[3]) . '</p>';
           echo $l ? '<a class="cell" href="' . $l . '">' . $in . '<span class="more">Explore &rarr;</span></a>' : '<div class="cell">' . $in . '</div>'; } ?>

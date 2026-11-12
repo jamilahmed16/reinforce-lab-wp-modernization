@@ -299,7 +299,7 @@ function rl_render_aiwork() {
     <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with AI workflow automation?</h2><p class="lede">Automation pays off most when strategy, marketing and sales run on the same system. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
-          ['services/executive-ai-consulting', 'Strategy', 'Executive AI Consulting', 'Where AI should (and shouldn’t) go in your business, and in what order.'],
+          ['services/ai-consulting-services', 'Strategy', 'Executive AI Consulting', 'Where AI should (and shouldn’t) go in your business, and in what order.'],
           ['services/marketing-automation', 'Marketing', 'Marketing Automation', 'Nurture, scoring and sales handoff for every lead.'],
           ['services/lead-generation-systems', 'Sales', 'Lead Generation Systems', 'Channels, landing pages, qualification and routing as one system.'],
           ['services/seo-content-systems', 'Content', 'SEO Content Systems', 'Content workflows where AI assists and people write, edit and approve.'],
