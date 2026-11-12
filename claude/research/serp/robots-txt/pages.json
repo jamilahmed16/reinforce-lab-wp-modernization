@@ -1,0 +1,1094 @@
+[
+ {
+  "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+  "title": "Robots.txt Introduction and Guide | Google Search Central \u00a0|\u00a0 Documentation \u00a0|\u00a0 Google for Developers",
+  "words": 718,
+  "headings": [
+   [
+    "h1",
+    "Introduction to robots.txt"
+   ],
+   [
+    "h2",
+    "What is a robots.txt file used for?"
+   ],
+   [
+    "h2",
+    "Understand the limitations of a robots.txt file"
+   ],
+   [
+    "h2",
+    "Create or update a robots.txt file"
+   ]
+  ],
+  "text": "Send feedback Introduction to robots.txt A robots.txt file tells search engine crawlers which URLs the crawler can access on your site. This is used mainly to avoid overloading your site with requests; it is not a mechanism for keeping a web page out of Google . To keep a web page out of Google, block indexing with noindex or password-protect the page. What is a robots.txt file used for? A robots.txt file is used primarily to manage crawler traffic to your site, and usually to keep a file off Google, depending on the file type: robots.txt effect on different file types Web page You can use a robots.txt file for web pages (HTML, PDF, or other non-media formats that Google can read ), to manage crawling traffic if you think your server will be overwhelmed by requests from Google's crawler, or to avoid crawling unimportant or similar pages on your site. If your web page is blocked with a robots.txt file , its URL can still appear in search results, but the search result won't have a description . Image files, video files, PDFs, and other non-HTML files embedded in the blocked page will be excluded from crawling, too, unless they're referenced by other pages that are allowed for crawling. If you see this search result for your page and want to fix it, remove the robots.txt entry blocking the page. If you want to hide the page completely from Search, use another method . Media file Use a robots.txt file to manage crawl traffic, and also to prevent image, video, and audio files from appearing in Google Search results. This won't prevent other pages or users from linking to your image, video, or audio file. Read more about preventing images from appearing on Google. Read more about how to remove or restrict your video files from appearing on Google. Resource file You can use a robots.txt file to block resource files such as unimportant image, script, or style files, if you think that pages loaded without these resources won't be significantly affected by the loss . However, if the absence of these resources make the page harder for Google's crawler to understand the page, don't block them, or else Google won't do a good job of analyzing pages that depend on those resources. Understand the limitations of a robots.txt file Before you create or edit a robots.txt file, you should know the limits of this URL blocking method. Depending on your goals and situation, you might want to consider other mechanisms to ensure your URLs are not findable on the web. robots.txt rules may not be supported by all search engines. The instructions in robots.txt files cannot enforce crawler behavior to your site; it's up to the crawler to obey them. While Googlebot and other respectable web crawlers obey the instructions in a robots.txt file, other crawlers might not. Therefore, if you want to keep information secure from web crawlers, it's better to use other blocking methods, such as password-protecting private files on your server . Different crawlers interpret syntax differently. Although respectable web crawlers follow the rules in a robots.txt file, each crawler might interpret the rules differently. You should know the proper syntax for addressing different web crawlers as some might not understand certain instructions. A page that's disallowed in robots.txt can still be indexed if linked to from other sites. While Google won't crawl or index the content blocked by a robots.txt file, we might still find and index a disallowed URL if it is linked from other places on the web. As a result, the URL address and, potentially, other publicly available information such as anchor text in links to the page can still appear in Google Search results. To properly prevent your URL from appearing in Google Search results, password-protect the files on your server , use the noindex meta tag or response header , or remove the page entirely. Create or update a robots.txt file If you decided that you need one, learn how to create a robots.txt file . Or if you already have one, learn how to update it . Want to learn more? Check out the following resources: How to write and submit a robots.txt file Update your robots.txt file How Google interprets the robots.txt specification Send feedback"
+ },
+ {
+  "url": "https://yoast.com/ultimate-guide-robots-txt/",
+  "title": "The ultimate guide to robots.txt \u2022 Yoast",
+  "words": 2594,
+  "headings": [
+   [
+    "h2",
+    "Warning!"
+   ],
+   [
+    "h2",
+    "Table of contents"
+   ],
+   [
+    "h2",
+    "What is a robots.txt file?"
+   ],
+   [
+    "h4",
+    "Crawl directives"
+   ],
+   [
+    "h2",
+    "What does the robots.txt file do?"
+   ],
+   [
+    "h4",
+    "Caching"
+   ],
+   [
+    "h2",
+    "Where should I put my robots.txt file?"
+   ],
+   [
+    "h2",
+    "Yoast SEO and robots.txt"
+   ],
+   [
+    "h2",
+    "Pros and cons of using robots.txt"
+   ],
+   [
+    "h3",
+    "Pro: managing crawl budget"
+   ],
+   [
+    "h4",
+    "A note on blocking query parameters"
+   ],
+   [
+    "h3",
+    "Con: not removing a page from search results"
+   ],
+   [
+    "h4",
+    "Noindex directives"
+   ],
+   [
+    "h3",
+    "Con: not spreading link value"
+   ],
+   [
+    "h2",
+    "Robots.txt syntax"
+   ],
+   [
+    "h4",
+    "WordPress robots.txt"
+   ],
+   [
+    "h3",
+    "The user-agent directive"
+   ],
+   [
+    "h4",
+    "The most common user agents for search engine spiders"
+   ],
+   [
+    "h3",
+    "The disallow directive"
+   ],
+   [
+    "h3",
+    "How to use wildcards/regular expressions"
+   ],
+   [
+    "h3",
+    "Non-standard robots.txt crawl directives"
+   ],
+   [
+    "h4",
+    "The allow directive"
+   ],
+   [
+    "h4",
+    "The crawl-delay directive"
+   ],
+   [
+    "h4",
+    "The sitemap directive for XML Sitemaps"
+   ],
+   [
+    "h2",
+    "Don\u2019t block CSS and JS files in robots.txt"
+   ],
+   [
+    "h2",
+    "Test and fix in Google Search Console"
+   ],
+   [
+    "h2",
+    "Validate your robots.txt"
+   ],
+   [
+    "h2",
+    "Behind the scenes of a robots.txt parser"
+   ]
+  ],
+  "text": "The robots.txt file is one of the main ways of telling a search engine where it can and can\u2019t go on your website. All major search engines support its basic functionality, but some respond to additional rules, which can be helpful too. This guide covers all the ways to use robots.txt on your website. Warning! Any mistakes you make in your robots.txt can seriously harm your site, so read and understand this article before diving in. Table of contents What is a robots.txt file? What does the robots.txt file do? Where should I put my robots.txt file? Pros and cons of using robots.txt Robots.txt syntax Don\u2019t block CSS and JS files in robots.txt Test and fix in Google Search Console Validate your robots.txt See the code What is a robots.txt file? Crawl directives The robots.txt file is one of a number of crawl directives. We have guides on all of them and you\u2019ll find them here . A robots.txt file is a plain text document located in a website\u2019s root directory, serving as a set of instructions to search engine bots. Also called the Robots Exclusion Protocol, the robots.txt file results from a consensus among early search engine developers. It\u2019s not an official standard set by any standards organization, although all major search engines adhere to it. Robots.txt specifies which pages or sections should be crawled and indexed and which should be ignored. This file helps website owners control the behavior of search engine crawlers, allowing them to manage access, limit indexing to specific areas, and regulate crawling rate. While it\u2019s a public document, compliance with its directives is voluntary, but it is a powerful tool for guiding search engine bots and influencing the indexing process. A basic robots.txt file might look something like this: User-Agent: * Disallow: Sitemap: https://www.example.com/sitemap_index.xml What does the robots.txt file do? Caching Search engines typically cache the contents of the robots.txt so that they don\u2019t need to keep downloading it, but will usually refresh it several times a day. That means that changes to instructions are typically reflected fairly quickly. Search engines discover and index the web by crawling pages. As they crawl, they discover and follow links. This takes them from site A to site B to site C , and so on. But before a search engine visits any page on a domain it hasn\u2019t encountered, it will open that domain\u2019s robots.txt file. That lets them know which URLs on that site they\u2019re allowed to visit (and which ones they\u2019re not). Read more: Bot traffic: What it is and why you should care about it \u00bb Where should I put my robots.txt file? The robots.txt file should always be at the root of your domain. So if your domain is www.example.com , the crawler should find it at https://www.example.com/robots.txt . It\u2019s also essential that your robots.txt file is called robots.txt. The name is case-sensitive, so get that right, or it won\u2019t work. Yoast SEO and robots.txt Our plugin has sensible defaults, but you can always change things as you see fit. Yoast SEO provides a user-friendly interface to edit the robots.txt file without needing to access it manually. With Yoast SEO, you can access and configure the robots.txt feature through the plugin\u2019s settings. It allows you to include or exclude specific website areas from being crawled by search engines. When used in conjuncture with the crawl settings, Pros and cons of using robots.txt Pro: managing crawl budget It\u2019s generally understood that a search spider arrives at a website with a pre-determined \u201callowance\u201d for how many pages it will crawl (or how much resource/time it\u2019ll spend, based on a site\u2019s authority/size/reputation, and how efficiently the server responds). SEOs call this the crawl budget . If you think your website has problems with crawl budget, blocking search engines from \u2018wasting\u2019 energy on unimportant parts of your site might mean focusing instead on the sections that matter. Use the crawl cleanup settings in Yoast SEO to help Google crawls what matters. It can sometimes be beneficial to block the search engines from crawling problematic sections of your site, especially on sites where a lot of SEO clean-up has to be done. Once you\u2019ve tidied things up, you can let them back in. A note on blocking query parameters One situation where crawl budget is crucial is when your site uses a lot of query string parameters to filter or sort lists. Let\u2019s say you have ten different query parameters, each with different values that can be used in any combination (like t-shirts in multiple colors and sizes). This leads to many possible valid URLs, all of which might get crawled. Blocking query parameters from being crawled will help ensure the search engine only spiders your site\u2019s main URLs and won\u2019t go into the enormous spider trap you\u2019d otherwise create. Con: not removing a page from search results Even though you can use the robots.txt file to tell a crawler where it can\u2019t go on your site, you can\u2019t use it to say to a search engine which URLs not to show in the search results \u2013 in other words, blocking it won\u2019t stop it from being indexed. If the search engine finds enough links to that URL, it will include it; it will just not know what\u2019s on that page. So your result will look like this: Use a meta robots noindex tag if you want to reliably block a page from appearing in the search results. That means that to find the noindex tag, the search engine has to be able to access that page, so don\u2019t block it with robots.txt. Noindex directives It used to be possible to add \u2018noindex\u2019 directives in your robots.txt, to remove URLs from Google\u2019s search results, and to avoid these \u2018fragments\u2019 showing up. This is no longer supported (and technically, never was). Con: not spreading link value If a search engine can\u2019t crawl a page, it can\u2019t spread the link value across the links on that page. It\u2019s a dead-end when you\u2019ve blocked a page in robots.txt. Any link value which might have flowed to (and through) that page is lost. Robots.txt syntax WordPress robots.txt We have an article on how best to setup your robots.txt for WordPress . Don\u2019t forget you can edit your site\u2019s robots.txt file in the Yoast SEO Tools \u2192 File editor section. A robots.txt file consists of one or more blocks of directives, each starting with a user-agent line. The \u201cuser-agent\u201d is the name of the specific spider it addresses. You can have one block for all search engines, using a wildcard for the user-agent, or particular blocks for particular search engines. A search engine spider will always pick the block that best matches its name. These blocks look like this (don\u2019t be scared, we\u2019ll explain below): User-agent: * Disallow: / User-agent: Googlebot Disallow: User-agent: bingbot Disallow: /not-for-bing/ Directives like Allow and Disallow should not be case-sensitive, so it\u2019s up to you to write them in lowercase or capitalize them. The values are case-sensitive, so /photo/ is not the same as /Photo/ . We like capitalizing directives because it makes the file easier (for humans) to read. The user-agent directive The first bit of every block of directives is the user-agent, which identifies a specific spider. The user-agent field matches with that specific spider\u2019s (usually longer) user-agent, so, for instance, the most common spider from Google has the following user-agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) If you want to tell this crawler what to do, a relatively simple User-agent: Googlebot line will do the trick. Most search engines have multiple spiders. They will use a specific spider for their normal index, ad programs, images, videos, etc. Search engines always choose the most specific block of directives they can find. Say you have three sets of directives: one for * , one for Googlebot and one for Googlebot-News . If a bot comes by whose user-agent is Googlebot-Video , it will follow the Googlebot restrictions . A bot with the user-agent Googlebot-News would use more specific Googlebot-News directives. The most common user agents for search engine spiders Here\u2019s a list of the user-agents you can use in your robots.txt file to match the most commonly used search engines: Search engine Field User-agent Baidu General baiduspider Baidu Images baiduspider-image Baidu Mobile baiduspider-mobile Baidu News baiduspider-news Baidu Video baiduspider-video Bing General bingbot Bing General msnbot Bing Images & Video msnbot-media Bing Ads adidxbot Google General Googlebot Google Images Googlebot-Image Google Mobile Googlebot-Mobile Google News Googlebot-News Google Video Googlebot-Video Google Ecommerce Storebot-Google Google AdSense Mediapartners-Google Google AdWords AdsBot-Google Yahoo! General slurp Yandex General yandex The disallow directive The second line in any block of directives is the Disallow line. You can have one or more of these lines, specifying which parts of the site the specified spider can\u2019t access. An empty Disallow line means you\u2019re not disallowing anything so that a spider can access all sections of your site. The example below would block all search engines that \u201clisten\u201d to robots.txt from crawling your site. User-agent: * Disallow: / The example below would allow all search engines to crawl your site by dropping a single character. User-agent: * Disallow: The example below would block Google from crawling the Photo directory on your site \u2013 and everything in it. User-agent: googlebot Disallow: /Photo This means all the subdirectories of the /Photo directory would also not be spidered. It would not block Google from crawling the /photo directory, as these lines are case-sensitive. This would also block Google from accessing URLs containing /Photo , such as /Photography/ . How to use wildcards/regular expressions \u201cOfficially,\u201d the robots.txt standard doesn\u2019t support regular expressions or wildcards; however, all major search engines understand it. This means you can use lines like this to block groups of files: Disallow: /*.php Disallow: /copyrighted-images/*.jpg In the example above, * is expanded to whatever filename it matches. Note that the rest of the line is still case-sensitive, so the second line above will not block a file called /copyrighted-images/example.JPG from being crawled. Some search engines, like Google, allow for more complicated regular expressions but be aware that other search engines might not understand this logic. The most useful feature this adds is the $ , which indicates the end of a URL. In the following example, you can see what this does: Disallow: /*.php$ This means /index.php can\u2019t be indexed, but /index.php?p=1 could be. Of course, this is only useful in very specific circumstances and pretty dangerous: it\u2019s easy to unblock things you didn\u2019t want to. Non-standard robots.txt crawl directives In addition to the commonly used Disallow and User-agent directives, there are a few other crawl directives available for robots.txt files. However, it\u2019s important to note that not all search engine crawlers support these directives, so it\u2019s essential to understand their limitations and considerations before implementing them. The allow directive While not in the original \u201cspecification,\u201d there was early talk of an allow directive. Most search engines seem to understand it, and it allows for simple and very readable directives like this: Disallow: /wp-admin/ Allow: /wp-admin/admin-ajax.php The only other way of achieving the same result without an allow directive, would have been to specifically disallow every single file in the wp-admin folder. The crawl-delay directive Crawl-delay is an unofficial addition to the standard, and few search engines adhere to it. At least Google and Yandex don\u2019t use it, with Bing being unclear. In theory, as crawlers can be pretty crawl-hungry, you could try the crawl-delay direction to slow them down. A line like the one below would instruct those search engines to change how frequently they\u2019ll request pages on your site. crawl-delay: 10 Do take care when using the crawl-delay directive. By setting a crawl delay of ten seconds, you only allow these search engines to access 8,640 pages a day. This might seem plenty for a small site, but it isn\u2019t much for large sites. On the other hand, if you get next to no traffic from these search engines, it might be a good way to save some bandwidth. The sitemap directive for XML Sitemaps Using the sitemap directive, you can tell search engines \u2013 Bing, Yandex, and Google \u2013 where to find your XML sitemap. You can, of course, submit your XML sitemaps to each search engine using their webmaster tools. We strongly recommend you do so because webmaster tools will give you a ton of information about your site. If you don\u2019t want to do that, adding a sitemap line to your robots.txt is a quick alternative. Yoast SEO automatically adds a link to your sitemap if you let it generate a robots.txt file. On an existing robots.txt file, you can add the rule by hand via the file editor in the Tools section. Sitemap: https://www.example.com/my-sitemap.xml Don\u2019t block CSS and JS files in robots.txt Since 2015, Google Search Console has warned site owners not to block CSS and JS files . We\u2019ve told you the same thing for ages: don\u2019t block CSS and JS files in your robots.txt. Let us explain why you shouldn\u2019t block these specific files from Googlebot. By blocking CSS and JavaScript files, you\u2019re preventing Google from checking if your website works correctly. If you block CSS and JavaScript files in your robots.txt file, Google can\u2019t render your website as intended. Now, Google can\u2019t understand your website, which might result in lower rankings. Moreover, even tools like Ahrefs render web pages and execute JavaScript. So, don\u2019t block JavaScript if you want your favorite SEO tools to work. This aligns perfectly with the general assumption that Google has become more \u201chuman.\u201d Google wants to see your website like a human visitor would, so it can distinguish the main elements from the extras. Google wants to know if JavaScript enhances the user experience or ruins it. Test and fix in Google Search Console Google helps you find and fix issues with your robots.txt, for instance, in the Page Indexing section in Google Search Console. Select the Blocked by robots.txt option: Check Search Console to see which URLs are blocked by your robots.txt Unblocking blocked resources comes down to changing your robots.txt file. You need to set that file up so that it doesn\u2019t disallow Google to access your site\u2019s CSS and JavaScript files anymore. If you\u2019re on WordPress and use Yoast SEO, you can do this directly with our Yoast SEO plugin . Validate your robots.txt Various tools can help you validate your robots.txt, but we always prefer to go to the source when validating crawl directives. Google has a robots.txt testing tool in its Google Search Console (under the \u2018Old version\u2019 menu), and we\u2019d highly recommend using that: Testing a robots.txt file in Google Search Console Be sure to test your changes thoroughly before you put them live! You wouldn\u2019t be the first to accidentally use robots.txt to block your entire site and slip into search engine oblivion! Behind the scenes of a robots.txt parser In 2019, Google announced they were making their robots.txt parser open source. If you want to get into the nuts and bolts, you can see how their code works (and even use it yourself or propose modifications). Share this post Share on X Share on LinkedIn Share on WhatsApp Share on Telegram Share on Mastodon Copy to clipboard Share Joost de Valk Joost is an internet entrepreneur and the founder of Yoast. He has a long history in WordPress and digital marketing. On our blog, he has written a lot about SEO in general, technical SEO and important topics related to SEO."
+ },
+ {
+  "url": "https://www.semrush.com/blog/beginners-guide-robots-txt/",
+  "title": "Robots.txt Explained: Syntax, Best Practices, & SEO",
+  "words": 2220,
+  "headings": [
+   [
+    "h2",
+    "What Is a Robots.txt File?"
+   ],
+   [
+    "h3",
+    "Robots.txt vs. Meta Robots vs. X-Robots"
+   ],
+   [
+    "h2",
+    "Why Does Robots.txt Matter?"
+   ],
+   [
+    "h3",
+    "It Optimizes Your Crawl Budget"
+   ],
+   [
+    "h3",
+    "It Can Be Used to Control Search Appearance"
+   ],
+   [
+    "h3",
+    "It Helps Deter Scrapers and Unwanted Bots"
+   ],
+   [
+    "h2",
+    "How to Create a Robots.txt File"
+   ],
+   [
+    "h3",
+    "1. Decide What to Control"
+   ],
+   [
+    "h3",
+    "2. Target Specific Bots (Optional)"
+   ],
+   [
+    "h3",
+    "3. Create a Robots.txt File and Add Directives"
+   ],
+   [
+    "h3",
+    "4. Upload the File to Your Site\u2019s Root Directory"
+   ],
+   [
+    "h3",
+    "5. Confirm the File Was Uploaded Successfully"
+   ],
+   [
+    "h2",
+    "Robots.txt Best Practices"
+   ],
+   [
+    "h3",
+    "Use Wildcards Carefully"
+   ],
+   [
+    "h3",
+    "Avoid Blocking Important Resources"
+   ],
+   [
+    "h3",
+    "Don\u2019t Use Robots.txt to Keep Pages Out of Search Results"
+   ],
+   [
+    "h3",
+    "Add Comments"
+   ],
+   [
+    "h2",
+    "Robots.txt and AI: Should You Block LLMs?"
+   ],
+   [
+    "h2",
+    "Check Your Website for Robots.txt and Other Technical Issues"
+   ]
+  ],
+  "text": "What Is a Robots.txt File? A robots.txt file is a set of rules that tells web crawlers which pages or sections of a website they should crawl and which to avoid. It looks like this: Robots.txt files may look complicated. But the syntax (computer language) is straightforward\u2014\u201cAllow\u201d means the web crawler should crawl it, while \u201cdisallow\u201d means the crawler should not crawl it. But keep in mind: While robots.txt guides crawler behavior, it doesn\u2019t guarantee that a page won\u2019t appear in search results. Other factors (like external links) can still cause it to be indexed by Google . To block indexing, you should use Meta Robots and X-Robots-Tag. Robots.txt vs. Meta Robots vs. X-Robots Robots.txt tells search engines what not to crawl\u2014 meta robots tags and s-tobots-tags tell them what not to index . Knowing the difference helps you apply the right tool for the right situation. Here\u2019s how they compare: Robots.txt : This file is located in the website\u2019s root directory and provides site-wide instructions to search engine crawlers on which areas of the site they should and shouldn\u2019t crawl Meta robots tags : These tags are snippets of code in the <head> sections of individual webpages and provide page-specific instructions to search engines on whether to index (include in search results) and follow (crawl the links on) each page X-robot tags : These code snippets are used primarily for non-HTML files (like PDFs and images) and are implemented in the file\u2019s HTTP header If you want to keep something out of search results, use a noindex meta tag (on a crawlable page) or password-protect the page. Why Does Robots.txt Matter? A robots.txt file helps control how bots interact with your site. SEOs often use it to manage crawl load and improve efficiency by blocking unimportant or duplicate pages. It can also be used to deter scraping and prevent content from being used to train AI models. Here\u2019s a breakdown of why robots.txt files matter specifically for SEO: It Optimizes Your Crawl Budget A robots.txt file helps search engines focus their crawl budgets on your most valuable pages. Blocking low-value pages (like cart, login, or filter pages) helps bots prioritize crawling content that actually drives traffic and rankings, especially on large sites with thousands of URLs. For example: Blocking \u201c/cart/\u201d or \u201c/login/\u201d pages helps bots focus on your blog posts or product pages instead. It Can Be Used to Control Search Appearance Robots.txt gives you some control over how your site appears in search by managing what gets crawled. While it doesn't directly affect indexing, it works with the below to guide search engines toward your important content: Sitemap : A file that lists the important pages on your site to help search engines discover and crawl them more efficiently Canonical tags : An HTML tag that tells search engines which version of a page is the preferred one to index when duplicate or similar content exists Noindex directives : A signal (via a meta tag or HTTP header) that tells search engines not to include a specific page or pages in the index used for search results It Helps Deter Scrapers and Unwanted Bots Robots.txt is the first line of defense against unwanted crawlers, such as scrapers or bots harvesting content for training AI models. For example, many sites now disallow AI bots\u2019 user-agents via robots.txt. This sends a clear signal to bots that respect the protocol and helps reduce server load from non-essential crawlers. We partnered with SEO Consultant Bill Widmer to run a quick experiment and demonstrate how robots.txt rules impact crawler behavior in real-world conditions. Here\u2019s what happened: Bill had a rule in his robots.txt file blocking a number of crawlers. He used Semrush\u2019s Site Audit tool to crawl the entire site, setting the crawl limit high enough to catch all live pages. But his website wasn\u2019t crawled due to the robots.txt directives. After adjusting the robots.txt file, he ran the crawl again. This time, his website was successfully crawled and included in the report. How to Create a Robots.txt File A robots.txt file is easy to create\u2014decide what to block, write your rules in a text file, and upload it to your site\u2019s root directory. Just follow these steps: 1. Decide What to Control Identify which parts of your site should or shouldn\u2019t be crawled. Consider blocking: Login and user account pages (e.g., /login/) that don\u2019t offer public value and can waste crawl budget Cart and checkout pages (e.g., /cart/) you don\u2019t want in search results Thank-you pages or form submission confirmation screens (e.g., /thank-you/) that aren\u2019t useful to searchers If you\u2019re unsure, it\u2019s best to err on the side of allowing rather than disallowing. Incorrect disallow rules can cause search engines to miss important content or fail to render your pages correctly. 2. Target Specific Bots (Optional) You can write rules for all bots (User-agent: *) or target specific ones like Googlebot (User-agent: Googlebot) or Bingbot (User-agent: Bingbot), depending on your specific needs. Here are two situations when this makes sense: Controlling aggressive or less important bots : Some bots crawl frequently and can put an unnecessary load on your server. You might want to limit or block these types of bots. Blocking AI crawlers used for training generative models : If you don\u2019t want your content included in the training data for tools like ChatGPT or other LLMs, you can block their crawlers (e.g., GPTBot) in your robots.txt file. 3. Create a Robots.txt File and Add Directives Use a simple text editor like Notepad (Windows) or TextEdit (Mac) to create your file and save it as \u201crobots.txt.\u201d In this file, you\u2019ll add your directives\u2014the syntax that tells search engine crawlers which parts of your site they should and shouldn\u2019t access. A robots.txt file contains one or more groups of directives, and each group includes multiple lines of instructions. Each group starts with a user-agent and specifies: Which user-agent(s) the group applies to Which directories (pages) or files the user-agent(s) should access Which directories or files the user-agent(s) shouldn\u2019t access Optionally, include a sitemap to tell search engines which pages and files are most important. Just don\u2019t forget to submit your sitemap directly in Google Search Console. Imagine you don\u2019t want Google to crawl your \u201c/clients/\u201d directory because it's primarily for internal use and doesn't provide value for searchers. The first group in your file would look like this block: User-agent: Googlebot Disallow: /clients/ You can add more instructions for Google after that, like this: User-agent: Googlebot Disallow: /clients/ Disallow: /not-for-google Then press enter twice to start a new group of directives. For example, to prevent access to \u201c/archive/\u201d and \u201c/support/\u201d directories for all search engines. Here\u2019s a block preventing access to those directories: User-agent: * Disallow: /archive/ Disallow: /support/ Once you\u2019re finished, add your sitemap: User-agent: Googlebot Disallow: /clients/ Disallow: /not-for-google User-agent: * Disallow: /archive/ Disallow: /support/ Sitemap: https://www.yourwebsite.com/sitemap.xml Feeling unsure? Use a free robots.txt generator to help you generate the text for your robots.txt file. Then, copy and paste the output to a text editor. 4. Upload the File to Your Site\u2019s Root Directory Search engines will only read your robots.txt file if it\u2019s placed in the root directory of your domain. This means the file must be at the top level of your site\u2014not in a subfolder. To upload the file correctly, use your web hosting file manager, FTP client, or CMS settings to upload the file to the root directory (usually called \u201cpublic_html\u201d or \u201c/www\u201d). If you're using WordPress, you can use a plugin like Yoast SEO or Rank Math to upload the file to your site\u2019s root directory for you. Just open the plugin\u2019s settings, navigate to the robots.txt option, and upload your file. 5. Confirm the File Was Uploaded Successfully Use Google\u2019s robots.txt report in Search Console to check for errors and confirm your rules work as intended. In Search Console, navigate to the \u201c Settings \u201d page and click \u201c Open Report \u201d next to \u201crobots.txt.\u201d It should have a green checkmark next to \u201cFetched\u201d under the status column. But if there was an error, you\u2019ll see a red exclamation mark next to \u201cNot Fetched.\u201d In that case, check Google\u2019s guidelines to determine what the error was and how to fix it. It can be difficult to understand Google\u2019s solutions to errors if you\u2019re new to robots.txt. If you want an easier way, run a free SEO check for a quick robots.txt review on your site. For a deeper, site-wide analysis with detailed fix instructions, use the Semrush Site Audit tool. Set up a project and run an audit. When the tool is ready, navigate to the \u201c Issues \u201d tab and search for \u201crobots.txt.\u201d Click \u201c Robots.txt file has format errors \u201d if it appears. View the list of invalid lines to determine exactly what needs to be addressed. Check your robots.txt file regularly. Even small errors can affect your site\u2019s indexability. Robots.txt Best Practices Follow these best practices to ensure your robots.txt file helps your SEO and site performance: Use Wildcards Carefully Wildcards (* and $) let you match broad patterns in URLs, and using them precisely is important to avoid accidentally blocking important pages. * matches any sequence of characters , including slashes. It\u2019s used to block multiple URLs that share a pattern. (Example: \u201cDisallow: /search*\u201d blocks \u201c/search,\u201d \u201c/search?q=shoes,\u201d and \u201c/search/results/page/2.\u201d) $ matches the end of a URL . It\u2019s used when you want to block only URLs that end in a specific way. (Example: \u201cDisallow: /thank-you$\u201d blocks \u201c/thank-you\u201d but not /thank-you/page.) Here are some examples of how not to use them: Disallow: /*.php blocks every URL ending in \u201c.php,\u201d which could include important pages like \u201c/product.php\u201d or \u201c/blog-post.php\u201d Disallow: /.html$ blocks all pages ending in \u201c.html,\u201d which might include all your main site content If you\u2019re unsure, it\u2019s wise to consult a professional before using wildcards in your robots.txt file. Avoid Blocking Important Resources Don\u2019t block CSS, JavaScript, or API endpoints required to render your site. Google needs them to understand layout, functionality, and mobile-readiness. So, let crawlers access: /assets/ /js/ /css/ /api/ Blocking these could cause Google to see a broken version of your pages and hurt your rankings. Always test your site in Google\u2019s URL Inspection Tool to ensure blocked assets aren\u2019t interfering with rendering. Enter a URL you want to test. You should see a green checkmark if it\u2019s done properly. If you see \u201cBlocked by robots.txt,\u201d the page (or an asset it depends on) is blocked from crawling. Don\u2019t Use Robots.txt to Keep Pages Out of Search Results If a URL is linked from elsewhere, Google can still index it and show it in search results\u2014even if you\u2019ve disallowed it in robots.txt. That means you shouldn\u2019t rely on robots.txt to hide: Sensitive or private data (e.g., admin dashboards, internal reports) Duplicate content (e.g., filtered or paginated URLs) Staging or test sites Any page you don\u2019t want appearing in Google Add Comments Use comments to document your rules, so others (or future you) can understand your intentions. Start a comment by adding a \u201c#\u201d. Anything after it on the same line will be ignored by crawlers. For example: # Block internal search results but allow all other pages for all crawlers User-agent: * Disallow: /search/ Allow: / Comments are especially important for growing teams and complex sites. Robots.txt and AI: Should You Block LLMs? AI tools like ChatGPT and those built on other large language models (LLMs) are trained on web content\u2014and your robots.txt file is the primary way for you to manage how they crawl your site. To allow or block AI crawlers used to train models, add user-agent directives to your robots.txt file just like you would for Googlebot. For example, OpenAI\u2019s GPTBot is used to collect publicly available data that can be used for training large language models. To block it, you can include a line like \u201cUser-agent: GPTBot\u201d followed by your chosen disallow rule. When should you allow or block AI crawlers? You should allow AI crawlers if : You want to increase exposure and don't mind your content being used in generative tools You believe the benefits of increased visibility and brand awareness outweigh control over how your content is used to train generative AI tools You should consider blocking AI crawlers if : You\u2019re concerned about your intellectual property You want to maintain full control over how your content is used Note that a new file called llms.txt is being proposed to help AI models understand what your site is about and what content is most important. But it's not exactly a translation of robots.txt for AI models. We wanted to see how many .com websites have an llms.txt file to see how commonly used this new file type is. This rough experiment shows that only ~2,830 of .com websites indexed in Google have an llms.txt file. As new updates come out, llms.txt files may become more important. Only time will tell. Check Your Website for Robots.txt and Other Technical Issues A well-configured robots.txt file is a powerful tool for guiding search engines, protecting your resources, and keeping your site efficient. But it\u2019s important to ensure your file is free from technical errors. Use our free SEO checker to automatically look for robots.txt errors, crawl issues, broken links, and other technical SEO issues."
+ },
+ {
+  "url": "https://ahrefs.com/blog/robots-txt/",
+  "title": "Robots.txt and SEO: Everything You Need to Know",
+  "words": 3209,
+  "headings": [
+   [
+    "h1",
+    "Robots.txt and SEO: Everything You Need to Know"
+   ],
+   [
+    "h2",
+    "What is a robots.txt file?"
+   ],
+   [
+    "h2",
+    "What does a robots.txt file look like?"
+   ],
+   [
+    "h2",
+    "User-agents"
+   ],
+   [
+    "h2",
+    "Directives"
+   ],
+   [
+    "h3",
+    "Supported directives"
+   ],
+   [
+    "h4",
+    "Disallow"
+   ],
+   [
+    "h4",
+    "Allow"
+   ],
+   [
+    "h4",
+    "Sitemap"
+   ],
+   [
+    "h3",
+    "Unsupported directives"
+   ],
+   [
+    "h4",
+    "Crawl-delay"
+   ],
+   [
+    "h4",
+    "Noindex"
+   ],
+   [
+    "h4",
+    "Nofollow"
+   ],
+   [
+    "h2",
+    "Do you need a robots.txt file?"
+   ],
+   [
+    "h2",
+    "How to find your robots.txt file"
+   ],
+   [
+    "h2",
+    "How to create a robots.txt file"
+   ],
+   [
+    "h2",
+    "Where to put your robots.txt file"
+   ],
+   [
+    "h2",
+    "Robots.txt file best practices"
+   ],
+   [
+    "h3",
+    "Use a new line for each directive"
+   ],
+   [
+    "h3",
+    "Use wildcards to simplify instructions"
+   ],
+   [
+    "h3",
+    "Use \"$\" to specify the end of a URL"
+   ],
+   [
+    "h3",
+    "Use each user-agent only once"
+   ],
+   [
+    "h3",
+    "Use specificity to avoid unintentional errors"
+   ],
+   [
+    "h3",
+    "Use comments to explain your robots.txt file to humans"
+   ],
+   [
+    "h3",
+    "Use a separate robots.txt file for each subdomain"
+   ],
+   [
+    "h2",
+    "Example robots.txt files"
+   ],
+   [
+    "h3",
+    "All-Access for all bots"
+   ],
+   [
+    "h3",
+    "No access for all bots"
+   ],
+   [
+    "h3",
+    "Block one subdirectory for all bots"
+   ],
+   [
+    "h3",
+    "Block one subdirectory for all bots (with one file within allowed)"
+   ],
+   [
+    "h3",
+    "Block one file for all bots"
+   ],
+   [
+    "h3",
+    "Block one filetype (PDF) for all bots"
+   ],
+   [
+    "h3",
+    "Block all parameterized URLs for Googlebot only"
+   ],
+   [
+    "h2",
+    "How to audit your robots.txt file for errors"
+   ],
+   [
+    "h3",
+    "Submitted URL blocked by robots.txt"
+   ],
+   [
+    "h3",
+    "Blocked by robots.txt"
+   ],
+   [
+    "h3",
+    "Indexed, though blocked by robots.txt"
+   ],
+   [
+    "h2",
+    "FAQs"
+   ],
+   [
+    "h3",
+    "What's the maximum size of a robots.txt file?"
+   ],
+   [
+    "h3",
+    "Where is robots.txt in WordPress?"
+   ],
+   [
+    "h3",
+    "How do I edit robots.txt in WordPress?"
+   ],
+   [
+    "h3",
+    "What happens if I disallow access to noindexed content in robots.txt?"
+   ],
+   [
+    "h2",
+    "Final thoughts"
+   ]
+  ],
+  "text": "Technical SEO Robots.txt and SEO: Everything You Need to Know By Joshua Hardwick Former Head of Content at Ahrefs Reviewed by Michal Pec\u00e1nek Updated: January 29, 2021 16 min read 143 Organic traffic 149 Linking websites Article performance data from Ahrefs Add Ahrefs as a preferred source on Google Add Ahrefs as a preferred source Add Ahrefs as a preferred source on Google Add Ahrefs as a preferred source Robots.txt is one of the simplest files on a website, but it's also one of the easiest to mess up. Just one character out of place can wreak havoc on your SEO and prevent search engines from accessing important content on your site. This is why robots.txt misconfigurations are extremely common\u2014even amongst experienced SEO professionals. In this guide, you'll learn: What a robots.txt file is What robots.txt looks like Robots.txt user-agents and directives Whether you need a robots.txt file How to find your robots.txt file How to create a robots.txt file Robots.txt best practices Example robots.txt files How to audit your robots.txt file for issues New to technical SEO? Check out our Beginner's guide to technical SEO What is a robots.txt file? A robots.txt file tells search engines where they can and can\u2019t go on your site. Primarily, it lists all the content you want to lock away from search engines like Google. You can also tell some search engines (not Google) how they can crawl allowed content. important note Most search engines are obedient. They aren't in the habit of breaking an entry. That said, some aren't shy about picking a few metaphorical locks. Google isn't one of those search engines. They obey the instructions in a robots.txt file. Just know that some search engines ignore it completely. What does a robots.txt file look like? Here's the basic format of a robots.txt file: Sitemap: [URL location of sitemap] User-agent: [bot identifier] [directive 1] [directive 2] [directive ...] User-agent: [another bot identifier] [directive 1] [directive 2] [directive ...] If you've never seen one of these files before, that might seem daunting. However, the syntax is quite simple. In short, you assign rules to bots by stating their user-agent followed by directives . Let's explore these two components in more detail. User-agents Each search engine identifies itself with a different user-agent. You can set custom instructions for each of these in your robots.txt file. There are hundreds of user-agents , but here are some useful ones for SEO: Google: Googlebot Google Images: Googlebot-Image Bing: Bingbot Yahoo: Slurp Baidu : Baiduspider DuckDuckGo: DuckDuckBot Sidenote All user-agents are case sensitive in robots.txt. You can also use the star (*) wildcard to assign directives to all user-agents. For example, let's say that you wanted to block all bots except Googlebot from crawling your site. Here's how you'd do it: User-agent: * Disallow: / User-agent: Googlebot Allow: / Know that your robots.txt file can include directives for as many user-agents as you like. That said, every time you declare a new user-agent, it acts as a clean slate. In other words, if you add directives for multiple user-agents, the directives declared for the first user-agent don't apply to the second, or third, or fourth, and so on. The exception to that rule is when you declare the same user-agent more than once. In that case, all relevant directives are combined and followed. IMPORTANT NOTE Crawlers only follow the rules declared under the user-agent(s) that most accurately applies to them . That's why the robots.txt file above blocks all bots except Googlebot (and other Google bots) from crawling the site. Googlebot ignores the less specific user-agent declaration. Directives Directives are rules that you want the declared user-agents to follow. Supported directives Here are directives that Google currently supports, along with their uses. Disallow Use this directive to instruct search engines not to access files and pages that fall under a specific path. For example, if you wanted to block all search engines from accessing your blog and all its posts, your robots.txt file might look like this: User-agent: * Disallow: /blog Sidenote If you fail to define a path after the disallow directive, search engines will ignore it. Allow Use this directive to allow search engines to crawl a subdirectory or page\u2014even in an otherwise disallowed directory. For example, if you wanted to prevent search engines from accessing every post on your blog except for one, then your robots.txt file might look like this: User-agent: * Disallow: /blog Allow: /blog/allowed-post In this example, search engines can access /blog/allowed-post . But they can't access: /blog/another-post /blog/yet-another-post /blog/download-me.pdf Both Google and Bing support this directive. Sidenote As with the disallow directive, if you fail to define a path after the allow directive, search engines will ignore it. a note about conflicting rules Unless you're careful, disallow and allow directives can easily conflict with one another. In the example below, we're disallowing access to /blog/ and allowing access to /blog . User-agent: * Disallow: /blog/ Allow: /blog In this case, the URL /blog/post-title/ seems to be both disallowed and allowed. So which wins? For Google and Bing, the rule is that the directive with the most characters wins. Here, that's the disallow directive. Disallow: /blog/ (6 characters) Allow: /blog (5 characters) If the allow and disallow directives are equal in length, then the least restrictive directive wins. In this case, that would be the allow directive. Sidenote Here, /blog (without the trailing slash ) is still accessible and crawlable. Crucially, this is only the case for Google and Bing . Other search engines listen to the first matching directive. In this case, that's disallow. Sitemap Use this directive to specify the location of your sitemap(s) to search engines. If you're unfamiliar with sitemaps, they generally include the pages that you want search engines to crawl and index. Here's an example of a robots.txt file using the sitemap directive: Sitemap: https://www.domain.com/sitemap.xml User-agent: * Disallow: /blog/ Allow: /blog/post-title/ How important is including your sitemap(s) in your robots.txt file? If you've already submitted through Search Console, then it's somewhat redundant for Google. However, it does tell other search engines like Bing where to find your sitemap, so it's still good practice. Note that you don't need to repeat the sitemap directive multiple times for each user-agent. It doesn't apply to only one. So you're best to include sitemap directives at the beginning or end of your robots.txt file. For example: Sitemap: https://www.domain.com/sitemap.xml User-agent: Googlebot Disallow: /blog/ Allow: /blog/post-title/ User-agent: Bingbot Disallow: /services/ Google supports the sitemap directive, as do Ask, Bing, and Yahoo. Sidenote You can include as many sitemaps as you like in your robots.txt file. Unsupported directives Here are the directives that are no longer supported by Google \u2014some of which technically never were. Crawl-delay Previously, you could use this directive to specify a crawl delay in seconds. For example, if you wanted Googlebot to wait 5 seconds after each crawl action, you'd set the crawl-delay to 5 like so: User-agent: Googlebot Crawl-delay: 5 Google no longer supports this directive, but Bing and Yandex do. That said, be careful when setting this directive, especially if you have a big site. If you set a crawl-delay of 5 seconds, then you're limiting bots to crawl a maximum of 17,280 URLs a day. That's not very helpful if you have millions of pages, but it could save bandwidth if you have a small website. Noindex This directive was never officially supported by Google. However, until recently, it's thought that Google had some \"code that handles unsupported and unpublished rules (such as noindex).\" So if you wanted to prevent Google from indexing all posts on your blog, you could use the following directive: User-agent: Googlebot Noindex: /blog/ However, on September 1st, 2019, Google made it clear that this directive is not supported . If you want to exclude a page or file from search engines, use the meta robots tag or x-robots HTTP header instead. Nofollow This is another directive that Google never officially supported, and was used to instruct search engines not to follow links on pages and files under a specific path. For example, if you wanted to stop Google from following all links on your blog, you could use the following directive: User-agent: Googlebot Nofollow: /blog/ Google announced that this directive is officially unsupported on September 1st, 2019. If you want to nofollow all links on a page now, you should use the robots meta tag or x-robots header. If you want to tell Google not to follow specific links on a page, use the rel=\"nofollow\" link attribute. Do you need a robots.txt file? Having a robots.txt file isn't crucial for a lot of websites, especially small ones. That said, there's no good reason not to have one. It gives you more control over where search engines can and can't go on your website, and that can help with things like: Preventing the crawling of duplicate content ; Keeping sections of a website private (e.g., your staging site); Preventing the crawling of internal search results pages; Preventing server overload; Preventing Google from wasting \" crawl budget .\" Preventing images , videos , and resources files from appearing in Google search results. Note that while Google doesn't typically index web pages that are blocked in robots.txt, there's no way to guarantee exclusion from search results using the robots.txt file . Like Google says , if content is linked to from other places on the web, it may still appear in Google search results. How to find your robots.txt file If you already have a robots.txt file on your website, it'll be accessible at domain.com/robots.txt . Navigate to the URL in your browser. If you see something like this, then you have a robots.txt file: How to create a robots.txt file If you don't already have a robots.txt file, creating one is easy. Just open a blank .txt document and begin typing directives. For example, if you wanted to disallow all search engines from crawling your /admin/ directory, it would look something like this: User-agent: * Disallow: /admin/ Continue to build up the directives until you're happy with what you have. Save your file as \"robots.txt.\" Alternatively, you can also use a robots.txt generator like this one . The advantage of using a tool like this is that it minimizes syntax errors. That's good because one mistake could result in an SEO catastrophe for your site\u2014so it pays to err on the side of caution. The disadvantage is that they're somewhat limited in terms of customizability. Where to put your robots.txt file Place your robots.txt file in the root directory of the subdomain to which it applies. For example, to control crawling behavior on domain.com , the robots.txt file should be accessible at domain.com/robots.txt . If you want to control crawling on a subdomain like blog.domain.com , then the robots.txt file should be accessible at blog.domain.com/robots.txt . Robots.txt file best practices Keep these in mind to avoid common mistakes. Use a new line for each directive Each directive should sit on a new line. Otherwise, it'll confuse search engines. Bad: User-agent: * Disallow: /directory/ Disallow: /another-directory/ Good: User-agent: * Disallow: /directory/ Disallow: /another-directory/ Use wildcards to simplify instructions Not only can you use wildcards (*) to apply directives to all user-agents, but also to match URL patterns when declaring directives. For example, if you wanted to prevent search engines from accessing parameterized product category URLs on your site, you could list them out like this: User-agent: * Disallow: /products/t-shirts? Disallow: /products/hoodies? Disallow: /products/jackets? \u2026 But that's not very efficient. It would be better to simplify things with a wildcard like this: User-agent: * Disallow: /products/*? This example blocks search engines from crawling all URLs under the /product/ subfolder that contain a question mark. In other words, any parameterized product category URLs. Use \"$\" to specify the end of a URL Include the \"$\" symbol to mark the end of a URL. For example, if you wanted to prevent search engines accessing all .pdf files on your site, your robots.txt file might look like this: User-agent: * Disallow: /*.pdf$ In this example, search engines can't access any URLs ending with .pdf. That means they can't access /file.pdf, but they can access /file.pdf?id=68937586 because that doesn't end with \".pdf\". Use each user-agent only once If you specify the same user-agent multiple times, Google doesn't mind. It will merely combine all rules from the various declarations into one and follow them all. For example, if you had the following user-agents and directives in your robots.txt file\u2026 User-agent: Googlebot Disallow: /a/ User-agent: Googlebot Disallow: /b/ \u2026 Googlebot wouldn't crawl either of those subfolders. That said, it makes sense to declare each user-agent only once because it's less confusing. In other words, you're less likely to make critical mistakes by keeping things neat and simple. Use specificity to avoid unintentional errors Failure to provide specific instructions when setting directives can result in easily-missed mistakes that can have a catastrophic impact on your SEO. For example, let's assume that you have a multilingual site, and you're working on a German version that will be available under the /de/ subdirectory. Because it isn't quite ready to go, you want to prevent search engines from accessing it. The robots.txt file below will prevent search engines from accessing that subfolder and everything in it: User-agent: * Disallow: /de But it will also prevent search engines from crawling of any pages or files beginning with /de . For example: /designer-dresses/ /delivery-information.html /depeche-mode/t-shirts/ /definitely-not-for-public-viewing.pdf In this instance, the solution is simple: add a trailing slash. User-agent: * Disallow: /de/ Use comments to explain your robots.txt file to humans Comments help explain your robots.txt file to developers\u2014and potentially even your future self. To include a comment, begin the line with a hash (#). # This instructs Bing not to crawl our site. User-agent: Bingbot Disallow: / Crawlers will ignore everything on lines that start with a hash. Use a separate robots.txt file for each subdomain Robots.txt only controls crawling behavior on the subdomain where it's hosted. If you want to control crawling on a different subdomain, you'll need a separate robots.txt file. For example, if your main site sits on domain.com and your blog sits on blog.domain.com , then you would need two robots.txt files. One should go in the root directory of the main domain, and the other in the root directory of the blog. Example robots.txt files Below are a few examples of robots.txt files. These are mainly for inspiration but if one happens to match your requirements, copy-paste it into a text document, save it as \"robots.txt\" and upload it to the appropriate directory. All-Access for all bots User-agent: * Disallow: Sidenote Failing to declare a URL after a directive renders that directive redundant. In other words, search engines ignore it. That's why this disallow directive has no effect on the site. Search engines can still crawl all pages and files. No access for all bots User-agent: * Disallow: / Block one subdirectory for all bots User-agent: * Disallow: /folder/ Block one subdirectory for all bots (with one file within allowed) User-agent: * Disallow: /folder/ Allow: /folder/page.html Block one file for all bots User-agent: * Disallow: /this-is-a-file.pdf Block one filetype (PDF) for all bots User-agent: * Disallow: /*.pdf$ Block all parameterized URLs for Googlebot only User-agent: Googlebot Disallow: /*? How to audit your robots.txt file for errors Robots.txt mistakes can slip through the net fairly easily, so it pays to keep an eye out for issues. To do this, regularly check for issues related to robots.txt in the \"Coverage\" report in Search Console . Below are some of the errors you might see, what they mean, and how you might fix them. Need to check for errors related to a certain page? Paste a URL into Google's URL Inspection tool in Search Console. If it's blocked by robots.txt, you should see something like this: Submitted URL blocked by robots.txt This means that at least one of the URLs in your submitted sitemap(s) are blocked by robots.txt. If you created your sitemap correctly and excluded canonicalized , noindexed, and redirected pages, then no submitted pages should be blocked by robots.txt . If they are, investigate which pages are affected, then adjust your robots.txt file accordingly to remove the block for that page. You can use Google's robots.txt tester to see which directive is blocking the content. Just be careful when doing this. It's easy to make mistakes that affect other pages and files. Blocked by robots.txt This means you have content blocked by robots.txt that isn't currently indexed in Google. If this content is important and should be indexed, remove the crawl block in robots.txt. (It's also worth making sure that the content isn't noindexed). If you've blocked content in robots.txt with the intention of excluding it from Google's index, remove the crawl block and use a robots meta tag or x-robots-header instead. That's the only way to guarantee the exclusion of content from Google's index. Sidenote Removing the crawl block when attempting to exclude a page from the search results is crucial. Fail to do this, and Google won't see the noindex tag or HTTP header\u2014so it will stay indexed. Indexed, though blocked by robots.txt This means that some of the content blocked by robots.txt is still indexed in Google. Once again, if you're trying to exclude this content from Google's search results, robots.txt isn't the correct solution. Remove the crawl block and instead use a meta robots tag or x-robots-tag HTTP header to prevent indexing. If you blocked this content by accident and want to keep it in Google's index, remove the crawl block in robots.txt. This may help to improve the visibility of the content in Google search. Recommended reading: How to Fix \u201cindexed, though blocked by robots.txt\u201d in GSC FAQs Here are a few frequently asked questions that didn't fit naturally elsewhere in our guide. Let us know in the comments if anything is missing, and we'll update the section accordingly. What's the maximum size of a robots.txt file? 500 kilobytes (roughly). Where is robots.txt in WordPress? Same place: domain.com/robots.txt . How do I edit robots.txt in WordPress? Either manually, or using one of the many WordPress SEO plugins like Yoast that let you edit robots.txt from the WordPress backend. What happens if I disallow access to noindexed content in robots.txt? Google will never see the noindex directive because it can't crawl the page. @methode on X Final thoughts Robots.txt is a simple but powerful file. Use it wisely, and it can have a positive impact on SEO. Use it haphazardly and, well, you'll live to regret it. Got more questions? Leave a comment or ping me on Twitter . Post by Joshua Hardwick Joshua Hardwick is the Head of Content at Ahrefs. He's been involved in SEO for 11 years and specializes in link building and outreach. Before working for Ahrefs, Joshua ran an SEO business providing link building and consultancy services. His work has been referenced by many well-known publications including The New York Times, TechCrunch, The Independent and The Verge, and he's spoken at some of the industry's largest conferences including BrightonSEO, Digital Marketer Skill Share, Digital Olympus, and Benchmark Search. Reviewed by Michal Pec\u00e1nek"
+ },
+ {
+  "url": "https://backlinko.com/hub/seo/robots-txt",
+  "title": "Robots.txt and SEO: Complete Guide",
+  "words": 855,
+  "headings": [
+   [
+    "h3",
+    "What Is Robots.txt?"
+   ],
+   [
+    "h3",
+    "Why Is Robots.txt Important?"
+   ],
+   [
+    "h3",
+    "Best Practices"
+   ],
+   [
+    "h3",
+    "Learn More"
+   ]
+  ],
+  "text": "What Is Robots.txt? Robots.txt is a file instructing search engine crawlers which URLs they can access on your website. It\u2019s primarily used to manage crawler traffic and avoid overloading your site with requests. While major search engines like Google, Bing, and Yahoo recognize and respect robots.txt directives, it\u2019s important to note that this file is not a foolproof method for preventing web pages from appearing in search results. Why Is Robots.txt Important? Most websites don\u2019t need a robots.txt file. That\u2019s because Google can usually find and index all of the important pages on your site. And they\u2019ll automatically NOT index pages that aren\u2019t important or duplicate versions of other pages. That said, there are 3 main reasons that you\u2019d want to use a robots.txt file. Block Non-Public Pages: Sometimes, you have pages on your site that you don\u2019t want indexed. For example, you might have a staging version of a page, a login page, or an internal search results page. These pages need to exist, but you don\u2019t want random people landing on them. In this case, you\u2019d use robots.txt to block these pages from search engine crawlers and bots. Maximize Crawl Budget: If you\u2019re having trouble getting all of your pages indexed, you might have a crawl budget problem. By blocking unimportant pages with robots.txt, Googlebot can spend more of your crawl budget on the pages that actually matter. Prevent Search Engine Indexing of Resources: Using meta directives can work just as well as Robots.txt for preventing pages from getting indexed. However, meta directives don\u2019t work well for multimedia resources, like PDFs and images. That\u2019s where robots.txt comes into play. The bottom line? Robots.txt tells search engine spiders not to crawl specific pages on your website. You can check how many pages you have indexed in the Google Search Console . If the number matches the number of pages that you want indexed, you don\u2019t need to bother with a Robots.txt file. But if that number is higher than you expected (and you notice indexed URLs that shouldn\u2019t be indexed), then it\u2019s time to create a robots.txt file for your website. Best Practices Create a Robots.txt File Your first step is to actually create your robots.txt file. Being a text file, you can actually create one using Windows Notepad. And no matter how you ultimately make your robots.txt file, the format is exactly the same: User-agent: X Disallow: Y User-agent is the specific bot that you\u2019re talking to. And everything that comes after \u201cdisallow\u201d are pages or sections that you want to block. Here\u2019s an example: User-agent: googlebot Disallow: /images This rule would tell Googlebot not to index the image folder of your website. You can also use an asterisk (*) to address any search engine bots that stop by your website. Here\u2019s an example: User-agent: * Disallow: /images The \u201c*\u201d tells any and all spiders to NOT crawl your images folder. This is just one of many ways to use a robots.txt file. This helpful guide from Google has more info on the different rules you can use to block or allow bots from crawling different pages of your site. Make Your Robots.txt File Easy to Find Once you have your robots.txt file, it\u2019s time to make it live. You can place your robots.txt file in the root directory of your site. But to increase the odds that your robots.txt file gets found, I recommend placing it at: https://example.com/robots.txt Note: Your robots.txt file is case-sensitive. So make sure to use a lowercase \u201cr\u201d in the filename. Check for Errors and Mistakes It\u2019s REALLY important that your robots.txt file is set up correctly. One mistake and your entire site could get deindexed. Fortunately, you don\u2019t need to hope that your code is set up right. Google has a powerful tool for testing robots that you can use: It shows you your robots.txt file\u2026 and any errors and warnings that it finds. As you can see, we block spiders from crawling our WP admin page. We also use robots.txt to block crawling of WordPress auto-generated tag pages (to limit duplicate content ). Robots.txt vs. Meta Directives Why would you use robots.txt when you can block pages at the page-level with the \u201c noindex \u201d meta tag? As I mentioned earlier, the noindex tag is tricky to implement on multimedia resources like videos and PDFs. Also, if you have thousands of pages that you want to block, it\u2019s sometimes easier to block the entire section of that site with robots.txt instead of manually adding a noindex tag to every single page. There are also edge cases where you don\u2019t want to waste any crawl budget on Google landing on pages with the noindex tag. That said: Outside of those three edge cases, I recommend using meta directives instead of robots.txt. They\u2019re easier to implement. And there\u2019s less chance of a disaster happening (like blocking your entire site). Learn More Learn about robots.txt files : A helpful guide on how they use and interpret robots.txt. What is a Robots.txt File? (An Overview for SEO + Key Insight) : A no-fluff video on different use cases for robots.txt."
+ },
+ {
+  "url": "https://www.searchenginejournal.com/robots-txt-guide/",
+  "title": "A Guide To Robots.txt: Best Practices For SEO",
+  "words": 2535,
+  "headings": [
+   [
+    "h2",
+    "What Is Robots.txt?"
+   ],
+   [
+    "h2",
+    "Order Of Precedence In Robots.txt"
+   ],
+   [
+    "h3",
+    "1. Most Specific Rule"
+   ],
+   [
+    "h3",
+    "2. Least Restrictive Rule"
+   ],
+   [
+    "h2",
+    "Why Is Robots.txt Important In SEO?"
+   ],
+   [
+    "h2",
+    "When To Use Robots.txt"
+   ],
+   [
+    "h3",
+    "1. Block Internal Search Pages"
+   ],
+   [
+    "h3",
+    "2. Block Faceted Navigation URLs"
+   ],
+   [
+    "h4",
+    "What About UTM Parameters?"
+   ],
+   [
+    "h3",
+    "3. Block PDF URLs"
+   ],
+   [
+    "h3",
+    "4. Block A Directory"
+   ],
+   [
+    "h3",
+    "5. Block User Account URLs"
+   ],
+   [
+    "h3",
+    "6. Block Non-Render Related JavaScript Files"
+   ],
+   [
+    "h3",
+    "7. Block AI Chatbots And Scrapers"
+   ],
+   [
+    "h3",
+    "8. Specify Sitemaps URLs"
+   ],
+   [
+    "h3",
+    "9. When To Use Crawl-Delay"
+   ],
+   [
+    "h2",
+    "Troubleshooting Robots.txt"
+   ],
+   [
+    "h3",
+    "1. Google Search Console Robots.txt Validator"
+   ],
+   [
+    "h3",
+    "2. Google Robots.txt Parser"
+   ],
+   [
+    "h2",
+    "Centralized Robots.txt Management"
+   ],
+   [
+    "h2",
+    "Conclusion"
+   ]
+  ],
+  "text": "Understanding how to use the robots.txt file is crucial for any website\u2019s SEO strategy. Mistakes in this file can impact how your website is crawled and your pages\u2019 search appearance. Getting it right, on the other hand, can improve crawling efficiency and mitigate crawling issues. Google recently reminded website owners about the importance of using robots.txt to block unnecessary URLs. Those include add-to-cart, login, or checkout pages. But the question is \u2013 how do you use it properly? In this article, we will guide you into every nuance of how to do just so. What Is Robots.txt? The robots.txt is a simple text file that sits in the root directory of your site and tells crawlers what should be crawled. The table below provides a quick reference to the key robots.txt directives . Directive Description User-agent Specifies which crawler the rules apply to. See user agent tokens . Using * targets all crawlers. Disallow Prevents specified URLs from being crawled. Allow Allows specific URLs to be crawled, even if a parent directory is disallowed. Sitemap Indicates the location of your XML Sitemap by helping search engines to discover it. This is an example of robot.txt from ikea.com with multiple rules. Example of robots.txt from ikea.com Note that robots.txt doesn\u2019t support full regular expressions and only has two wildcards: Asterisks (*), which matches 0 or more sequences of characters. Dollar sign ($), which matches the end of a URL. Also, note that its rules are case-sensitive, e.g., \u201cfilter=\u201d isn\u2019t equal to \u201cFilter=.\u201d Order Of Precedence In Robots.txt When setting up a robots.txt file, it\u2019s important to know the order in which search engines decide which rules to apply in case of conflicting rules. They follow these two key rules: 1. Most Specific Rule The rule that matches more characters in the URL will be applied. For example: User-agent: * Disallow: /downloads/ Allow: /downloads/free/ In this case, the \u201cAllow: /downloads/free/\u201d rule is more specific than \u201cDisallow: /downloads/\u201d because it targets a subdirectory. Google will allow crawling of subfolder \u201c/downloads/free/\u201d but block everything else under \u201c/downloads/.\u201d 2. Least Restrictive Rule When multiple rules are equally specific, for example: User-agent: * Disallow: /downloads/ Allow: /downloads/ Google will choose the least restrictive one. This means Google will allow access to /downloads/. Why Is Robots.txt Important In SEO? Blocking unimportant pages with robots.txt helps Googlebot focus its crawl budget on valuable parts of the website and on crawling new pages. It also helps search engines save computing power, contributing to better sustainability . Imagine you have an online store with hundreds of thousands of pages. There are sections of websites like filtered pages that may have an infinite number of versions. Those pages don\u2019t have unique value, essentially contain duplicate content, and may create infinite crawl space, thus wasting your server and Googlebot\u2019s resources. That is where robots.txt comes in, preventing search engine bots from crawling those pages. If you don\u2019t do that, Google may try to crawl an infinite number of URLs with different (even non-existent) search parameter values, causing spikes and a waste of crawl budget . When To Use Robots.txt As a general rule, you should always ask why certain pages exist, and whether they have anything worth for search engines to crawl and index. If we come from this principle, certainly, we should always block: URLs that contain query parameters such as: Internal search. Faceted navigation URLs created by filtering or sorting options if they are not part of URL structure and SEO strategy. Action URLs like add to wishlist or add to cart. Private parts of the website, like login pages. JavaScript files not relevant to website content or rendering, such as tracking scripts. Blocking scrapers and AI chatbots to prevent them from using your content for their training purposes. Let\u2019s dive into examples of how you can use robots.txt for each case. 1. Block Internal Search Pages The most common and absolutely necessary step is to block internal search URLs from being crawled by Google and other search engines , as almost every website has an internal search functionality. On WordPress websites, it is usually an \u201cs\u201d parameter, and the URL looks like this: https://www.example.com/?s=google Gary Illyes from Google has repeatedly warned to block \u201caction\u201d URLs as they can cause Googlebot to crawl them indefinitely even non-existent URLs with different combinations. Here is the rule you can use in your robots.txt to block such URLs from being crawled: User-agent: * Disallow: *s=* The User-agent: * line specifies that the rule applies to all web crawlers, including Googlebot, Bingbot, etc. The Disallow: *s=* line tells all crawlers not to crawl any URLs that contain the query parameter \u201cs=.\u201d The wildcard \u201c*\u201d means it can match any sequence of characters before or after \u201cs= .\u201d However, it will not match URLs with uppercase \u201cS\u201d like \u201c/?S=\u201d since it is case-sensitive. Here is an example of a website that managed to drastically reduce the crawling of non-existent internal search URLs after blocking them via robots.txt. Screenshot from crawl stats report Note that Google may index those blocked pages , but you don\u2019t need to worry about them as they will be dropped over time. 2. Block Faceted Navigation URLs Faceted navigation is an integral part of every ecommerce website. There can be cases where faceted navigation is part of an SEO strategy and aimed at ranking for general product searches. For example, Zalando uses faceted navigation URLs for color options to rank for general product keywords like \u201cgray t-shirt.\u201d However, in most cases, this is not the case, and filter parameters are used merely for filtering products, creating dozens of pages with duplicate content. Technically, those parameters are not different from internal search parameters with one difference as there may be multiple parameters. You need to make sure you disallow all of them. For example, if you have filters with the following parameters \u201csortby,\u201d \u201ccolor,\u201d and \u201cprice,\u201d you may use this set of rules: User-agent: * Disallow: *sortby=* Disallow: *color=* Disallow: *price=* Based on your specific case, there may be more parameters, and you may need to add all of them. What About UTM Parameters? UTM parameters are used for tracking purposes. As John Mueller stated in his Reddit post , you don\u2019t need to worry about URL parameters that link to your pages externally. John Mueller on UTM parameters Just make sure to block any random parameters you use internally and avoid linking internally to those pages, e.g., linking from your article pages to your search page with a search query page \u201chttps://www.example.com/?s=google.\u201d 3. Block PDF URLs Let\u2019s say you have a lot of PDF documents, such as product guides, brochures, or downloadable papers, and you don\u2019t want them crawled. Here is a simple robots.txt rule that will block search engine bots from accessing those documents: User-agent: * Disallow: /*.pdf$ The \u201cDisallow: /*.pdf$\u201d line tells crawlers not to crawl any URLs that end with .pdf. By using /*, the rule matches any path on the website. As a result, any URL ending with .pdf will be blocked from crawling. If you have a WordPress website and want to disallow PDFs from the uploads directory where you upload them via the CMS, you can use the following rule: User-agent: * Disallow: /wp-content/uploads/*.pdf$ Allow: /wp-content/uploads/2024/09/allowed-document.pdf$ You can see that we have conflicting rules here. In case of conflicting rules, the more specific one takes priority, which means the last line ensures that only the specific file located in folder \u201cwp-content/uploads/2024/09/allowed-document.pdf\u201d is allowed to be crawled. 4. Block A Directory Let\u2019s say you have an API endpoint where you submit your data from the form. It is likely your form has an action attribute like action=\u201d/form/submissions/.\u201d The issue is that Google will try to crawl that URL, /form/submissions/, which you likely don\u2019t want. You can block these URLs from being crawled with this rule: User-agent: * Disallow: /form/ By specifying a directory in the Disallow rule, you are telling the crawlers to avoid crawling all pages under that directory, and you don\u2019t need to use the (*) wildcard anymore, like \u201c/form/*.\u201d Note that you must always specify relative paths and never absolute URLs, like \u201chttps://www.example.com/form/\u201d for Disallow and Allow directives. Be cautious to avoid malformed rules. For example, using /form without a trailing slash will also match a page /form-design-examples/, which may be a page on your blog that you want to index. Read: 8 Common Robots.txt Issues And How To Fix Them 5. Block User Account URLs If you have an ecommerce website, you likely have directories that start with \u201c/myaccount/,\u201d such as \u201c/myaccount/orders/\u201d or \u201c/myaccount/profile/.\u201d With the top page \u201c/myaccount/\u201d being a sign-in page that you want to be indexed and found by users in search, you may want to disallow the subpages from being crawled by Googlebot. You can use the Disallow rule in combination with the Allow rule to block everything under the \u201c/myaccount/\u201d directory (except the /myaccount/ page). User-agent: * Disallow: /myaccount/ Allow: /myaccount/$ And again, since Google uses the most specific rule, it will disallow everything under the /myaccount/ directory but allow only the /myaccount/ page to be crawled. Here\u2019s another use case of combining the Disallow and Allow rules: in case you have your search under the /search/ directory and want it to be found and indexed but block actual search URLs: User-agent: * Disallow: /search/ Allow: /search/$ 6. Block Non-Render Related JavaScript Files Every website uses JavaScript, and many of these scripts are not related to the rendering of content, such as tracking scripts or those used for loading AdSense. Googlebot can crawl and render a website\u2019s content without these scripts. Therefore, blocking them is safe and recommended, as it saves requests and resources to fetch and parse them. Below is a sample line that is disallowing sample JavaScript, which contains tracking pixels. User-agent: * Disallow: /assets/js/pixels.js 7. Block AI Chatbots And Scrapers Many publishers are concerned that their content is being unfairly used to train AI models without their consent, and they wish to prevent this. (Note: The decision to block AI crawlers should be carefully discussed with stakeholders, as it may reduce visibility in AI chatbots\u2014which might not align with the business\u2019s interests .) #ai chatbots User-agent: GPTBot User-agent: Claude-Web User-agent: ClaudeBot User-agent: anthropic-ai User-agent: cohere-ai User-agent: Bytespider User-agent: Google-Extended User-Agent: PerplexityBot User-agent: Applebot-Extended User-agent: Diffbot Disallow: / #scrapers User-agent: Scrapy User-agent: magpie-crawler User-agent: CCBot User-Agent: omgili User-Agent: omgilibot User-agent: Node/simplecrawler Disallow: / Here, each user agent is listed individually, and the rule Disallow: / tells those bots not to crawl any part of the site. This, besides preventing AI training on your content, can help reduce the load on your server by minimizing unnecessary crawling. For ideas on which bots to block, you may want to check your server log files to see which crawlers are exhausting your servers, and remember, robots.txt doesn\u2019t prevent unauthorized access. See also : Complete Crawler List For AI User-Agents Most Major News Publishers Block AI Training & Retrieval Bots 8. Specify Sitemaps URLs Including your sitemap URL in the robots.txt file helps search engines easily discover all the important pages on your website. This is done by adding a specific line that points to your sitemap location, and you can specify multiple sitemaps, each on its own line. Sitemap: https://www.example.com/sitemap/articles.xml Sitemap: https://www.example.com/sitemap/news.xml Sitemap: https://www.example.com/sitemap/video.xml Unlike Allow or Disallow rules, which allow only a relative path, the Sitemap directive requires a full, absolute URL to indicate the location of the sitemap. Ensure the sitemaps\u2019 URLs are accessible to search engines and have proper syntax to avoid errors. Sitemap fetch error in search console 9. When To Use Crawl-Delay The crawl-delay directive in robots.txt specifies the number of seconds a bot should wait before crawling the next page. While Googlebot does not recognize the crawl-delay directive, other bots may respect it. It helps prevent server overload by controlling how frequently bots crawl your site. For example, if you want ClaudeBot to crawl your content for AI training but want to avoid server overload, you can set a crawl delay to manage the interval between requests. User-agent: ClaudeBot Crawl-delay: 60 This instructs the ClaudeBot user agent to wait 60 seconds between requests when crawling the website. Of course, there may be AI bots that don\u2019t respect crawl delay directives. In that case, you may need to use a web firewall to rate limit them. Troubleshooting Robots.txt Once you\u2019ve composed your robots.txt, you can use these tools to troubleshoot if the syntax is correct or if you didn\u2019t accidentally block an important URL. 1. Google Search Console Robots.txt Validator Once you\u2019ve updated your robots.txt, you must check whether it contains any error or accidentally blocks URLs you want to be crawled, such as resources, images, or website sections. Navigate Settings > robots.txt, and you will find the built-in robots.txt validator. Below is the video of how to fetch and validate your robots.txt. https://cdn.searchenginejournal.com/wp-content/uploads/2024/09/google-search-console-how-validate-robots.txt-guide.mp4 2. Google Robots.txt Parser This parser is official Google\u2019s robots.txt parser which is used in Search Console. It requires advanced skills to install and run on your local computer. But it is highly recommended to take time and do it as instructed on that page because you can validate your changes in the robots.txt file before uploading to your server in line with the official Google parser. Centralized Robots.txt Management Each domain and subdomain must have its own robots.txt, as Googlebot doesn\u2019t recognize root domain robots.txt for a subdomain. It creates challenges when you have a website with a dozen subdomains, as it means you should maintain a bunch of robots.txt files separately. However, it is possible to host a robots.txt file on a subdomain , such as https://cdn.example.com/robots.txt, and set up a redirect from https://www.example.com/robots.txt to it. You can do vice versa and host it only under the root domain and redirect from subdomains to the root. Search engines will treat the redirected file as if it were located on the root domain. This approach allows centralized management of robots.txt rules for both your main domain and subdomains. It helps make updates and maintenance more efficient. Otherwise, you would need to use a separate robots.txt file for each subdomain. Conclusion A properly optimized robots.txt file is crucial for managing a website\u2019s crawl budget . It ensures that search engines like Googlebot spend their time on valuable pages rather than wasting resources on unnecessary ones. On the other hand, blocking AI bots and scrapers using robots.txt can significantly reduce server load and save computing resources. Make sure you always validate your changes to avoid unexpected crawability issues. However, remember that while blocking unimportant resources via robots.txt may help increase crawl efficiency, the main factors affecting crawl budget are high-quality content and page loading speed. Happy crawling! More resources: 500 Response on Robots.txt Fetch Can Impact Rich Results Crawler Traps: Causes, Solutions & Prevention \u2013 A Developer\u2019s Deep Dive 8 Common Robots.txt Issues And How To Fix Them 9 Tips to Optimize Crawl Budget for SEO 7 SEO Crawling Tool Warnings & Errors You Can Safely Ignore Featured Image: BestForBest/Shutterstock Previous Chapter How To Use XML Sitemaps To Boost SEO Next Chapter Your Indexed Pages Are Going Down \u2013 5 Possible Reasons Why Category SEO"
+ },
+ {
+  "url": "https://en.wikipedia.org/wiki/Robots.txt",
+  "title": "robots.txt - Wikipedia",
+  "words": 4374,
+  "headings": [
+   [
+    "h2",
+    "History"
+   ],
+   [
+    "h2",
+    "Standard"
+   ],
+   [
+    "h2",
+    "Compliance"
+   ],
+   [
+    "h3",
+    "Search engines"
+   ],
+   [
+    "h3",
+    "Archival sites"
+   ],
+   [
+    "h3",
+    "Artificial intelligence"
+   ],
+   [
+    "h2",
+    "Security"
+   ],
+   [
+    "h2",
+    "Alternatives"
+   ],
+   [
+    "h2",
+    "Examples"
+   ],
+   [
+    "h3",
+    "The use of the wildcard * in rules"
+   ],
+   [
+    "h2",
+    "Nonstandard extensions"
+   ],
+   [
+    "h3",
+    "Crawl-delay directive"
+   ],
+   [
+    "h3",
+    "Sitemap"
+   ],
+   [
+    "h3",
+    "Universal \"*\" match"
+   ],
+   [
+    "h3",
+    "Content-Signal"
+   ],
+   [
+    "h2",
+    "Meta tags and headers"
+   ],
+   [
+    "h3",
+    "A \"noindex\" meta tag"
+   ],
+   [
+    "h3",
+    "A \"noindex\" HTTP response header"
+   ],
+   [
+    "h3",
+    "Maximum size of a robots.txt file"
+   ],
+   [
+    "h2",
+    "See also"
+   ],
+   [
+    "h2",
+    "References"
+   ],
+   [
+    "h2",
+    "Further reading"
+   ],
+   [
+    "h2",
+    "External links"
+   ]
+  ],
+  "text": "Checked From Wikipedia, the free encyclopedia This is the latest accepted revision , reviewed on 2 November 2026 . File indicating parts for web crawling robots.txt Robots Exclusion Protocol Example of a simple robots.txt file, indicating that a user-agent called \"Mallorybot\" is not allowed to crawl any of the website's pages, and that other user-agents cannot crawl more than one page every 20 seconds, and are not allowed to crawl the \"secret\" folder Status Proposed Standard First published 1994 published, formally standardized in 2022 Authors Martijn Koster (original author) Gary Illyes, Henner Zeller, Lizzi Sassman (IETF contributors) Website robotstxt .org , RFC 9309 The Robots Exclusion Protocol (often referred to by the filename used to implement it, robots.txt ) is a standard used by websites to indicate to visiting web crawlers and other web robots which portions of the website they are allowed to visit. The standard, developed in 1994, relies on voluntary compliance . Malicious bots can use the file as a directory of which pages to visit, though standards bodies discourage countering this with security through obscurity . Some archival sites ignore robots.txt. The standard was used in the 1990s to mitigate server overload. In the 2020s, websites began denying bots that collect information for generative AI . The \"robots.txt\" file can be used in conjunction with sitemaps , another robot inclusion standard for websites. History [ edit | edit source ] The standard was proposed by Martijn Koster , [ 1 ] [ 2 ] when working for Nexor [ 3 ] in February 1994 [ 4 ] on the www-talk mailing list, the main communication channel for WWW-related activities at the time. Charles Stross claims to have provoked Koster to suggest robots.txt, after he wrote a badly behaved web crawler that inadvertently caused a denial-of-service attack on Koster's server. [ 5 ] The standard, initially RobotsNotWanted.txt, allowed web developers to specify which bots should not access their website or which pages bots should not access. The internet was small enough in 1994 to maintain a complete list of all bots; server overload was a primary concern. By June 1994 it had become a de facto standard ; [ 6 ] most complied, including those operated by search engines such as WebCrawler , Lycos , and AltaVista . [ 7 ] On July 1, 2019, Google announced the proposal of the Robots Exclusion Protocol as an official standard under Internet Engineering Task Force . [ 8 ] A proposed standard [ 9 ] was published in September 2022 as RFC 9309. Standard [ edit | edit source ] A site owner wishing to give instructions to web robots places a text file called robots.txt in the root of the web site hierarchy (e.g. https://www.example.com/robots.txt ). This text file contains the instructions in a specific format (see examples below). Robots that choose to follow the instructions try to fetch this file and read the instructions before fetching any other file from the website . If this file does not exist, web robots assume that the website owner does not wish to place any limitations on crawling the entire site. A robots.txt file contains instructions for bots indicating which web pages they can and cannot access. Robots.txt files are particularly important for web crawlers from search engines such as Google. A robots.txt file on a website will function as a request that specified robots ignore specified files or directories when crawling a site. This might be, for example, out of a preference for privacy from search engine results, or the belief that the content of the selected directories might be misleading or irrelevant to the categorization of the site as a whole, or out of a desire that an application only operates on certain data. Links to pages listed in robots.txt can still appear in search results if they are linked to from a page that is crawled. [ 10 ] Because compliant crawlers cannot access the blocked page, search results may display only the URL or other information available from external sources, since the crawler cannot retrieve the page's content. [ 11 ] A robots.txt file covers one origin . For websites with multiple subdomains , each subdomain must have its own robots.txt file. If example.com had a robots.txt file but foo.example.com did not, the rules that would apply for example.com would not apply to foo.example.com . In addition, each URI scheme and port needs its own robots.txt file; http://example.com/robots.txt does not apply to pages under http://example.com:8080/ or https://example.com/ . Compliance [ edit | edit source ] The robots.txt protocol is widely complied with by bot operators. [ 6 ] The robots.txt played a role in the 1999 legal case of eBay v. Bidder's Edge , [ 12 ] where eBay attempted to block a bot that did not comply with robots.txt, and in May 2000 a court ordered the company operating the bot to stop crawling eBay's servers using any automatic means, by legal injunction on the basis of trespassing . [ 13 ] [ 14 ] [ 12 ] Bidder's Edge appealed the ruling, but agreed in March 2001 to drop the appeal, pay an undisclosed amount to eBay, and stop accessing eBay's auction information. [ 15 ] [ 16 ] In 2007, Healthcare Advocates v. Harding , a company was sued for accessing protected web pages archived via The Wayback Machine , despite robots.txt rules that prevented those pages from being archived. A Pennsylvania court ruled \"in this situation, the robots.txt file qualifies as a technological measure\" under the DMCA . Due to a malfunction at Internet Archive, Harding could temporarily access these pages from the archive and thus the court found \"the Harding firm did not circumvent the protective measure\". [ 17 ] [ 18 ] [ 19 ] In 2013, Associated Press v. Meltwater U.S. Holdings, Inc. the Associated Press sued Meltwater for copyright infringement and misappropriation over copying of AP news items. Meltwater claimed that they did not require a license and that it was fair use , because the content was freely available and not protected by robots.txt. The court decided in March 2013 that \"Meltwater\u2019s copying is not protected by the fair use doctrine\", mentioning among several factors that \"failure [\u2026] to employ the robots.txt protocol did not give Meltwater [\u2026] license to copy and publish AP content\". [ 20 ] Search engines [ edit | edit source ] Some major search engines following this standard include Google , [ 21 ] Bing , [ 22 ] Yahoo !, [ 23 ] Yandex , [ 24 ] DuckDuckGo , [ 25 ] Baidu , [ 26 ] AOL , [ 27 ] Ask , [ 28 ] and Kagi , [ 29 ] Archival sites [ edit | edit source ] Some web archiving projects ignore robots.txt. Archive Team uses the file to discover more links, such as sitemaps . [ 30 ] Co-founder Jason Scott said that \"unchecked, and left alone, the robots.txt file ensures no mirroring or reference for items that may have general use and meaning beyond the website's context.\" [ 31 ] In 2017, the Internet Archive announced that it would stop complying with robots.txt directives. [ 32 ] [ 6 ] According to Digital Trends , this followed widespread use of robots.txt to remove historical sites from search engine results, and contrasted with the nonprofit's aim to archive \"snapshots\" of the internet as it previously existed. [ 33 ] Artificial intelligence [ edit | edit source ] Starting in the 2020s, web operators began using robots.txt to deny access to bots collecting training data for generative AI . In 2023, Originality.AI found that 306 of the thousand most-visited websites blocked OpenAI 's GPTBot in their robots.txt file and 85 blocked Google 's Google-Extended. Many robots.txt files named GPTBot as the only bot explicitly disallowed on all pages. Denying access to GPTBot was common among news websites such as the BBC and The New York Times . In 2023, blog host Medium announced it would deny access to all artificial intelligence web crawlers as \"AI companies have leached value from writers in order to spam Internet readers\". [ 6 ] GPTBot complies with the robots.txt standard and advises web operators about how to disallow it, but The Verge ' s David Pierce said this only began after \"training the underlying models that made it so powerful\". Also, some bots are used both for search engines and artificial intelligence, and it may be impossible to block only one of these options. [ 6 ] 404 Media reported that companies like Anthropic and Perplexity.ai circumvented robots.txt by renaming or spinning up new scrapers to replace the ones that appeared on popular blocklists . [ 34 ] To help identify the growing number of web crawlers, Cloudflare maintains a public directory of known bot user agents, organized by category and operator. [ 35 ] In 2025, the nonprofit RSL Collective announced the launch of the Really Simple Licensing (RSL) open content licensing standard, allowing web publishers to set terms for AI bots in their robots.txt files. Participating companies at launch included Medium , Reddit , and Yahoo . [ 36 ] [ 37 ] [ 38 ] Security [ edit | edit source ] Despite the use of the terms allow and disallow , the protocol is purely advisory and relies on the compliance of the web robot ; it cannot enforce any of what is stated in the file. [ 39 ] Malicious web robots are unlikely to honor robots.txt; some may even use the robots.txt as a guide to find disallowed links and go straight to them. While this is sometimes claimed to be a security risk, [ 40 ] this sort of security through obscurity is discouraged by standards bodies. The National Institute of Standards and Technology (NIST) in the United States specifically recommends against this practice: \"System security should not depend on the secrecy of the implementation or its components.\" [ 41 ] In the context of robots.txt files, security through obscurity is not recommended as a security technique. [ 42 ] Alternatives [ edit | edit source ] Many robots also pass a special user-agent to the web server when fetching content. [ 43 ] A web administrator could also configure the server to automatically return failure (or pass alternative content ) when it detects a connection using one of the robots. [ 44 ] [ 45 ] Some sites, such as Google , host a humans.txt file that displays information meant for humans to read. [ 46 ] Some sites such as GitHub redirect humans.txt to an About page. [ 47 ] Previously, Google had a joke file hosted at /killer-robots.txt instructing the Terminator not to kill the company founders Larry Page and Sergey Brin . [ 48 ] [ 49 ] Examples [ edit | edit source ] This example tells all robots that they can visit all files because the wildcard * stands for all robots and the Disallow directive has no value, meaning no pages are disallowed. User-agent: * Disallow: This example has the same effect, allowing all files rather than prohibiting none. User-agent: * Allow: / The same result can be accomplished with an empty or missing robots.txt file. This example tells all robots to stay out of a website: User-agent: * Disallow: / This example tells all robots not to enter three directories: User-agent: * Disallow: /cgi-bin/ Disallow: /tmp/ Disallow: /junk/ This example tells all robots to stay away from one specific file: User-agent: * Disallow: /directory/file.html All other files in the specified directory will be processed. Example demonstrating how comments can be used: # Comments appear after the \"#\" symbol at the start of a line, or after a directive User-agent: * # match all bots Disallow: / # keep them out This example tells one specific robot to stay out of a website: User-agent: BadBot # replace 'BadBot' with the actual user-agent of the bot Disallow: / This example tells two specific robots not to enter one specific directory: User-agent: BadBot # replace 'BadBot' with the actual user-agent of the bot User-agent: Googlebot Disallow: /private/ It is also possible to list multiple robots with their own rules. The actual robot string is defined by the crawler. A few robot operators, such as Google , support several user-agent strings that allow the operator to deny access to a subset of their services by using specific user-agent strings. [ 21 ] Example demonstrating multiple user-agents: User-agent: googlebot # all Google services Disallow: /private/ # disallow this directory User-agent: googlebot-news # only the news service Disallow: / # disallow everything User-agent: * # any robot Disallow: /something/ # disallow this directory The use of the wildcard * in rules [ edit | edit source ] The directive Disallow: /something/ blocks all files and subdirectories starting with /something/ . In contrast, using a wildcard (if supported by the crawler) allows for more complex patterns in specifying paths and files to allow or disallow from crawling, for example Disallow: /something/*/other blocks URLs such as: /something/foo/other /something/bar/other It would not prevent the crawling of /something/foo/else , as that would not match the pattern. The wildcard * allows greater flexibility but, although it is part of the Robots Exclusion Protocol (RFC), may not be recognized by all crawlers. [ 50 ] A wildcard at the end of a rule in effect does nothing, as that is the standard behaviour. Nonstandard extensions [ edit | edit source ] Crawl-delay directive [ edit | edit source ] The crawl-delay value is supported by some crawlers to throttle their visits to the host. Since this value is not part of the standard, its interpretation is dependent on the crawler reading it. It is used when the multiple burst of visits from bots is slowing down the host. Yandex interprets the value as the number of seconds to wait between subsequent visits. [ 24 ] Bing defines crawl-delay as the size of a time window (from 1 to 30 seconds) during which BingBot will access a web site only once. [ 51 ] Google ignores this directive, [ 52 ] but provides an interface in its search console for webmasters, to control the Googlebot 's subsequent visits. [ 53 ] User-agent: bingbot Allow: / Crawl-delay: 10 Sitemap [ edit | edit source ] Some crawlers support a Sitemap directive, allowing multiple Sitemaps in the same robots.txt in the form Sitemap: full-url : [ 54 ] [ 55 ] Sitemap: http://www.example.com/sitemap.xml Universal \"*\" match [ edit | edit source ] The Robot Exclusion Standard does not mention the \"*\" character in the Disallow: statement. [ 56 ] Content-Signal [ edit | edit source ] Cloudflare introduced Content-Signal [ 57 ] [ 58 ] as a directive to suggest acceptable crawler behavior by type, ai-train , ai-input , and search with values of yes or no for each. [ 59 ] Content-Signal: ai-train=no, search=yes, ai-input=no Meta tags and headers [ edit | edit source ] In addition to root-level robots.txt files, robots exclusion directives can be applied at a more granular level through the use of Robots meta tags and X-Robots-Tag HTTP headers. The robots meta tag cannot be used for non-HTML files such as images, text files, or PDF documents. On the other hand, the X-Robots-Tag can be added to non-HTML files by using .htaccess and httpd.conf files. [ 60 ] A \"noindex\" meta tag [ edit | edit source ] < meta name = \"robots\" content = \"noindex\" /> A \"noindex\" HTTP response header [ edit | edit source ] X-Robots-Tag: noindex The X-Robots-Tag is only effective after the page has been requested and the server responds, and the robots meta tag is only effective after the page has loaded, whereas robots.txt is effective before the page is requested. Thus if a page is excluded by a robots.txt file, any robots meta tags or X-Robots-Tag headers are effectively ignored because the robot will not see them in the first place. [ 60 ] Maximum size of a robots.txt file [ edit | edit source ] The Robots Exclusion Protocol requires crawlers to parse at least 500 kibibytes (512000 bytes) of robots.txt files, [ 9.1 ] which Google maintains as a 500 kibibyte file size restriction for robots.txt files. [ 61 ] See also [ edit | edit source ] ads.txt , a standard for listing authorized ad sellers security.txt , a file to describe the process for security researchers to follow in order to report security vulnerabilities trust.txt , a standard for news organizations eBay v. Bidder's Edge hiQ Labs v. LinkedIn Automated Content Access Protocol \u2013 A failed proposal to extend robots.txt BotSeer \u2013 Now inactive search engine for robots.txt files Distributed web crawling Focused crawler Internet Archive Meta elements for search engines National Digital Library Program (NDLP) National Digital Information Infrastructure and Preservation Program (NDIIPP) nofollow noindex Perma.cc Really Simple Licensing Sitemaps Spider trap Web archiving References [ edit | edit source ] \u2191 \"Historical\" . Greenhills.co.uk . Archived from the original on 2017-04-03 . Retrieved 2017-03-03 . \u2191 Fielding, Roy (1994). \"Maintaining Distributed Hypertext Infostructures: Welcome to MOMspider's Web\" (PostScript) . First International Conference on the World Wide Web . Geneva. Archived from the original on 2013-09-27 . Retrieved September 25, 2013 . \u2191 \"The Web Robots Pages\" . Robotstxt.org. 1994-06-30. Archived from the original on 2014-01-12 . Retrieved 2013-12-29 . \u2191 Koster, Martijn (25 February 1994). \"Important: Spiders, Robots and Web Wanderers\" . www-talk mailing list . Archived from the original ( Hypermail archived message) on October 29, 2013. \u2191 \"How I got here in the end, part five: \"things can only get better!\" \" . Charlie's Diary . 19 June 2006. Archived from the original on 2013-11-25 . Retrieved 19 April 2014 . 1 2 3 4 5 Pierce, David (14 February 2024). \"The text file that runs the internet\" . The Verge . Retrieved 16 March 2024 . \u2191 Barry Schwartz (30 June 2014). \"Robots.txt Celebrates 20 Years Of Blocking Search Engines\" . Search Engine Land . Archived from the original on 2015-09-07 . Retrieved 2015-11-19 . \u2191 \"Formalizing the Robots Exclusion Protocol Specification\" . Official Google Webmaster Central Blog . Archived from the original on 2019-07-10 . Retrieved 2019-07-10 . \u2191 Koster, M.; Illyes, G.; Zeller, H.; Sassman, L. (September 2022). Robots Exclusion Protocol . Internet Engineering Task Force . doi : 10.17487/RFC9309 . RFC 9309 . Proposed Standard. \u2191 sec. 2.5: \"Limits\" \u2191 \"Uncrawled URLs in search results\" . YouTube. Oct 5, 2009. Archived from the original on 2014-01-06 . Retrieved 2013-12-29 . \u2191 \"How Google interprets the robots.txt specification\" . Google Search Central . 23 May 2024 . Retrieved 2 August 2026 . 1 2 \"EBay Fights Spiders on the Web\" . Wired . 2000-07-31. ISSN 1059-1028 . Retrieved 2024-08-02 . \u2191 eBay v. Bidder's Edge , 100 F. Supp. 2d 1058 ( N.D. Cal. 2000), archived from the original . \u2191 Hoffmann, Jay (2020-09-15). \"Chapter 4: Search\" . The History of the Web . Retrieved 2024-08-02 . \u2191 Berry, Jahna (July 24, 2001). \"Robots in the Hen House\" . law.com . Archived from the original on 2011-06-08 . Retrieved June 20, 2015 . \u2191 \"EBay, Bidder's Edge Settle Suits on Web Access\" . latimes . Retrieved June 20, 2015 . \u2191 \"Use of web archive was not hacking, says US court\" . The Register . Aug 2, 2007 . Retrieved Oct 22, 2025 . \u2191 \"Memorandum - Healthcare Advocates v Harding at all\" (PDF) . govinfo.gov . July 20, 2007 . Retrieved Oct 22, 2025 . \u2191 \"Healthcare Advocates, Inc. v. Harding, Earley, Follmer & Frailey\" . www.courtlistener.com . July 20, 2007 . Retrieved 2025-10-23 . \u2191 \"Associated Press v. Meltwater U.S. Holdings, Inc\" . www.courtlistener.com . March 21, 2013 . Retrieved 2025-10-23 . 1 2 \"Webmasters: Robots.txt Specifications\" . Google Developers . Archived from the original on 2013-01-15 . Retrieved 16 February 2013 . \u2191 \"Robots Exclusion Protocol: joining together to provide better documentation\" . Blogs.bing.com . 3 June 2008. Archived from the original on 2014-08-18 . Retrieved 16 February 2013 . \u2191 \"Submitting your website to Yahoo! Search\" . Archived from the original on 2013-01-21 . Retrieved 16 February 2013 . 1 2 \"Using robots.txt\" . Help.yandex.com . Archived from the original on 2013-01-25 . Retrieved 16 February 2013 . \u2191 \"DuckDuckGo Bot\" . DuckDuckGo.com . Archived from the original on 16 February 2017 . Retrieved 25 April 2017 . \u2191 \"Baiduspider\" . Baidu.com . Archived from the original on 6 August 2013 . Retrieved 16 February 2013 . \u2191 \"About AOL Search\" . Search.aol.com . Archived from the original on 13 December 2012 . Retrieved 16 February 2013 . \u2191 \"About Ask.com: Webmasters\" . About.ask.com . Archived from the original on 27 January 2013 . Retrieved 16 February 2013 . \u2191 \"Kagi Search KagiBot\" . Kagi Search . Archived from the original on 12 April 2024 . Retrieved 20 November 2024 . \u2191 \"ArchiveBot: Bad behavior\" . wiki.archiveteam.org . Archive Team. Archived from the original on 10 October 2022 . Retrieved 10 October 2022 . \u2191 Jason Scott . \"Robots.txt is a suicide note\" . Archive Team. Archived from the original on 2017-02-18 . Retrieved 18 February 2017 . \u2191 \"Robots.txt meant for search engines don't work well for web archives | Internet Archive Blogs\" . blog.archive.org . 17 April 2017. Archived from the original on 2018-12-04 . Retrieved 2018-12-01 . \u2191 Jones, Brad (24 April 2017). \"The Internet Archive Will Ignore Robots.txt Files to Maintain Accuracy\" . Digital Trends . Archived from the original on 2017-05-16 . Retrieved 8 May 2017 . \u2191 Koebler, Jason (2024-07-29). \"Websites are Blocking the Wrong AI Scrapers (Because AI Companies Keep Making New Ones)\" . 404 Media . Retrieved 2024-07-29 . \u2191 \"Bot Directory\" . Cloudflare Radar . Cloudflare . Retrieved 2 August 2026 . {{ cite web }} : CS1 maint: url-status ( link ) \u2191 Brandom, Russell (September 10, 2025). \"RSS co-creator launches new protocol for AI data licensing\" . TechCrunch . Retrieved September 10, 2025 . \u2191 Roth, Emma (September 10, 2025). \"The web has a new system for making AI companies pay up\" . The Verge . Retrieved September 10, 2025 . \u2191 Shanklin, Will (September 10, 2025). \"Reddit, Yahoo, Medium and more are adopting a new licensing standard to get compensated for AI scraping\" . Engadget . Retrieved September 10, 2025 . \u2191 \"Block URLs with robots.txt: Learn about robots.txt files\" . Archived from the original on 2015-08-14 . Retrieved 2015-08-10 . \u2191 \"Robots.txt tells hackers the places you don't want them to look\" . The Register . Archived from the original on 2015-08-21 . Retrieved August 12, 2015 . \u2191 Scarfone, K. A.; Jansen, W.; Tracy, M. (July 2008). \"Guide to General Server Security\" (PDF) . National Institute of Standards and Technology . doi : 10.6028/NIST.SP.800-123 . Archived (PDF) from the original on 2011-10-08 . Retrieved August 12, 2015 . \u2191 Sverre H. Huseby (2004). Innocent Code: A Security Wake-Up Call for Web Programmers . John Wiley & Sons. pp. 91\u2013 92. ISBN 9780470857472 . Archived from the original on 2016-04-01 . Retrieved 2015-08-12 . \u2191 \"List of User-Agents (Spiders, Robots, Browser)\" . User-agents.org. Archived from the original on 2014-01-07 . Retrieved 2013-12-29 . \u2191 \"Access Control - Apache HTTP Server\" . Httpd.apache.org. Archived from the original on 2013-12-29 . Retrieved 2013-12-29 . \u2191 \"Deny Strings for Filtering Rules : The Official Microsoft IIS Site\" . Iis.net. 2013-11-06. Archived from the original on 2014-01-01 . Retrieved 2013-12-29 . \u2191 \"Google humans.txt\" . Archived from the original on January 24, 2017 . Retrieved October 3, 2019 . \u2191 \"Github humans.txt\" . GitHub . Archived from the original on May 30, 2016 . Retrieved October 3, 2019 . \u2191 Newman, Lily Hay (2014-07-03). \"Is This a Google Easter Egg or Proof That Skynet Is Actually Plotting World Domination?\" . Slate Magazine . Archived from the original on 2018-11-18 . Retrieved 2019-10-03 . \u2191 \"/killer-robots.txt\" . 2018-01-10. Archived from the original on 2018-01-10 . Retrieved 2018-05-25 . \u2191 Koster, Martijn; Illyes, Gary; Zeller, Henner; Sassman, Lizzi (September 2022). Robots Exclusion Protocol (Report). Internet Engineering Task Force. \u2191 \"To crawl or not to crawl, that is BingBot's question\" . 3 May 2012. Archived from the original on 2016-02-03 . Retrieved 9 February 2016 . \u2191 \"How Google interprets the robots.txt specification\" . Google Search Central . 2024-05-23 . Retrieved 2024-10-06 . \u2191 \"Change Googlebot crawl rate - Search Console Help\" . support.google.com . Archived from the original on 2018-11-18 . Retrieved 22 October 2018 . \u2191 \"Yahoo! Search Blog - Webmasters can now auto-discover with Sitemaps\" . Archived from the original on 2009-03-05 . Retrieved 2009-03-23 . \u2191 \"FAQ - Common Crawl\" . Retrieved 2025-05-26 . How can I ensure the Common Crawl CCBot can crawl my site effectively? The crawler supports the Sitemap Protocol and utilizes any Sitemap announced in the robots.txt file. \u2191 \"Robots.txt Specifications\" . Google Developers . Archived from the original on November 2, 2019 . Retrieved February 15, 2020 . \u2191 \"ContentSignals website\" . Archived from the original on 2025-09-29 . Retrieved 2025-09-30 . \u2191 \"Cloudflare offers way to block AI Overviews \u2013 will Google comply?\" . Archived from the original on 2025-09-26 . Retrieved 2025-09-30 . \u2191 \"Giving users choice with Cloudflare's new Content Signals Policy\" . Archived from the original on 2025-09-30 . Retrieved 2025-09-30 . 1 2 \"Robots meta tag and X-Robots-Tag HTTP header specifications - Webmasters \u2014 Google Developers\" . Archived from the original on 2013-08-08 . Retrieved 2013-08-17 . \u2191 \"How Google Interprets the robots.txt Specification | Documentation\" . Google Developers . Archived from the original on 2022-10-17 . Retrieved 2022-10-17 . Further reading [ edit | edit source ] Allyn, Bobby (5 July 2024). \"Artificial Intelligence Web Crawlers Are Running Amok\" . All Things Considered . NPR . Archived from the original on 6 July 2024 . Retrieved 6 July 2024 . External links [ edit | edit source ] Official website Categories : Search engine optimization Websites Web scraping Text files Internet bots Hidden categories: Articles with short description Short description is different from Wikidata Wikipedia pending changes protected pages CS1 maint: url-status Pages that use sub-references"
+ },
+ {
+  "url": "https://prerender.io/blog/robots-txt-and-seo/",
+  "title": "Robots.txt Guide to Boost SEO: The Dos, Don\u2019ts, and Examples",
+  "words": 3862,
+  "headings": [
+   [
+    "h1",
+    "Robots.txt Guide to Boost SEO: The Dos, Don\u2019ts, and Examples"
+   ],
+   [
+    "h4",
+    "Table of Contents"
+   ],
+   [
+    "h2",
+    "What is a Robots.txt File?"
+   ],
+   [
+    "h2",
+    "How Does a Robots.txt File Impact My SEO?"
+   ],
+   [
+    "h2",
+    "When to Use a Robots.txt File?"
+   ],
+   [
+    "h2",
+    "Robots.txt Syntax: What Does a Robots.txt File Look Like?"
+   ],
+   [
+    "h2",
+    "10 Robots.txt Best Practices to Boost SEO Performance"
+   ],
+   [
+    "h3",
+    "1. Use a New Line for Each Directive"
+   ],
+   [
+    "h3",
+    "2. Use Wildcards To Simplify Instructions"
+   ],
+   [
+    "h3",
+    "3. Use \u201c$\u201d To Specify the End of a URL"
+   ],
+   [
+    "h3",
+    "4. Use Each User Agent Only Once"
+   ],
+   [
+    "h3",
+    "5. Use Specificity To Avoid Unintentional Errors"
+   ],
+   [
+    "h3",
+    "6. Use Comments to Explain Your robots.txt File to Humans"
+   ],
+   [
+    "h3",
+    "7. Use a Separate robots.txt File for Each Subdomain"
+   ],
+   [
+    "h3",
+    "8. Avoid Blocking Essential Assets"
+   ],
+   [
+    "h3",
+    "9. Place Your Robots.txt File at the Root"
+   ],
+   [
+    "h3",
+    "10. Update Your Robots.txt With Site Changes"
+   ],
+   [
+    "h2",
+    "10 Common Robots.txt Errors and How to Fix Them"
+   ],
+   [
+    "h3",
+    "1. Missing Robots.txt File"
+   ],
+   [
+    "h3",
+    "2. Robots.txt File Not in the Directory"
+   ],
+   [
+    "h3",
+    "3. Omitting the Sitemap URL from Robots.txt"
+   ],
+   [
+    "h3",
+    "4. Blocking CSS and JavaScript"
+   ],
+   [
+    "h3",
+    "5. Using NoIndex in the Robots.txt Files"
+   ],
+   [
+    "h3",
+    "6. Improper Use Of Wildcards"
+   ],
+   [
+    "h3",
+    "7. Wrong File Type Extension"
+   ],
+   [
+    "h3",
+    "8. Overly Complex or Redundant Lines"
+   ],
+   [
+    "h3",
+    "9. Using Unrecognized Directives"
+   ],
+   [
+    "h3",
+    "10. Poorly Structured Wildcard Usage"
+   ],
+   [
+    "h2",
+    "How to Create and Submit Robots.txt Files Based on Google\u2019s Recommendations"
+   ],
+   [
+    "h3",
+    "Step 1: Create a File Named Robots.txt"
+   ],
+   [
+    "h3",
+    "Step 2: Add Rules to the Robots.txt File"
+   ],
+   [
+    "h3",
+    "Step 3: Upload the Robots.txt File to Your Site"
+   ],
+   [
+    "h3",
+    "Step 4: Test Your Robots.txt File"
+   ],
+   [
+    "h3",
+    "Step 5: Use Google\u2019s Open-Source Robots Library"
+   ],
+   [
+    "h2",
+    "Where Should I Put My Robots.txt File?"
+   ],
+   [
+    "h2",
+    "How to Test and Validate Robots.txt Files"
+   ],
+   [
+    "h2",
+    "What Happens to Your SEO if a Robots.txt File Is Broken or Missing?"
+   ],
+   [
+    "h2",
+    "Get Better Indexing and Rankings With Robots.txt Files"
+   ],
+   [
+    "h2",
+    "FAQs \u2013 Robots.txt Files Best Practices"
+   ],
+   [
+    "h3",
+    "1. Can Robots.txt Block My Site from Appearing in Google Search Results?"
+   ],
+   [
+    "h3",
+    "2. How Long Does It Take for Robots.txt Changes to Take Effect?"
+   ],
+   [
+    "h3",
+    "3. Should I Block Images Using Robots.txt?"
+   ],
+   [
+    "h3",
+    "4. What\u2019s the Difference Between robots.txt and Meta Robots Tags?"
+   ],
+   [
+    "h3",
+    "5. Can I Use Robots.txt to Block Specific Search Engines?"
+   ],
+   [
+    "h4",
+    "Leo Rodriguez"
+   ],
+   [
+    "h2",
+    "More From Our Blog"
+   ],
+   [
+    "h4",
+    "News and Updates"
+   ],
+   [
+    "h2",
+    "Prerender.io Partners with Why SEO Serious to Bring JavaScript SEO to High-Growth Platforms"
+   ],
+   [
+    "h4",
+    "Ecommerce SEO"
+   ],
+   [
+    "h2",
+    "The Invisible Catalog: Can AI See Your B2B Products?"
+   ],
+   [
+    "h2",
+    "Unlock Your Site's Potential"
+   ],
+   [
+    "h2",
+    "Find out what ChatGPT\u2019s crawler sees on your site"
+   ]
+  ],
+  "text": "Technical SEO Robots.txt Guide to Boost SEO: The Dos, Don\u2019ts, and Examples Updated on June 11, 2026 min read Table of Contents Did you know that a seemingly small file, called robots.txt , can significantly impact your website\u2019s SEO performance? This simple text file provides instructions to search engine crawlers, guiding them on which pages to index and which to avoid. This means that if you don\u2019t configure your site\u2019s robots.txt files correctly, it can have a serious negative effect on your website\u2019s SEO. In this technical SEO guide, we\u2019ll delve into the intricacies of robots.txt files. You\u2019ll learn what robots.txt is, how it affects your website\u2019s SEO, how to create and submit it, and essential best practices for optimal robots.txt file configuration. What is a Robots.txt File? A robots.txt file is a simple text file located on your web server that provides instructions to search engine crawlers, such as Googlebot. Using \u201cAllow\u201d and \u201cDisallow\u201d directives, you can control which pages they can access and index. Here are some benefits of using a Robots.txt file for your overall web performance: Prioritizing bottom-line pages : by directing search engines to your most valuable pages, you ensure they focus on indexing content that matters most to your business. Disallowing large files: prevent Googlebot from accessing large files that can negatively impact your web performance. Saving crawl budget: prevent search engines from wasting resources on less important content. This way, you can allocate more of their crawl budget to your priority pages. Related : Need to refresh on what a crawl budget is? This crawl optimization guide can help. How Does a Robots.txt File Impact My SEO? If a web crawler tries to crawl a page that is blocked in the robots.txt file, it will be considered a soft 404 error . Although a soft 404 error will not hurt your website\u2019s ranking, it is still considered an error. And too many errors on your website can lead to a slower crawl rate, which can eventually hurt your ranking due to decreased crawling. If your website has a lot of pages that are blocked by the robots.txt files, it can also lead to a wasted crawl budget . The crawl budget is the number of pages Google will crawl on your website during each visit. Another reason why robots.txt files are important in SEO is that they give you more control over the way Googlebot crawls and indexes your website. If you have a website with a lot of pages, you might want to block certain pages from being indexed so they don\u2019t overwhelm search engine web crawlers and hurt your rankings. If you have a blog with hundreds of posts, you might want to only allow Google to index your most recent articles. If you have an eCommerce website with a lot of product pages, you might want to only allow Google to index your main category pages. Configuring your robots.txt file correctly can help you control the way Googlebot crawls and indexes your website, which can eventually help improve your ranking. Top tip : Discover 6 top technical SEO elements that can impact your SEO rankings. When to Use a Robots.txt File? A robots.txt file basically gives search engines a polite heads-up about which parts of your site they should or shouldn\u2019t crawl. They are generally used to hide staging web pages, private pages, or duplicate content that you don\u2019t want cluttering up search results or being indexed by Google. It\u2019s also useful if you\u2019re testing new pages or layouts and prefer to keep them under wraps until they\u2019re ready to go live. In general, you\u2019ll use a robots.txt fil e whenever you need precise control over how search engine bots navigate your site, but you don\u2019t need to hide pages from the public entirely. Robots.txt Syntax: What Does a Robots.txt File Look Like? Here\u2019s a breakdown of the robots.txt syntax and what each directive typically means: User-agent: This directive specifies the search engine crawler(s) to which the rules apply, and you can use a specific user-agent name to target a crawler (e.g., User-agent: Googlebot ) or use an asterisk (*) to target all bots (e.g., User-agent: * ). Disallow: Lists the pages or directories that a user-agent is not allowed to crawl. For example, Disallow: /private means that the crawler should not index or follow any links in the /private folder. Allow: Allow is basically used to override the Disallow directive we just talked about, letting specific paths remain accessible. For instance, if you disallow /blog , but you want the crawler to still access /blog/public , you can use: Disallow: /blog Allow: /blog/public Sitemap (optional but recommended): The sitemap directive crawls your sitemap so it can discover all your most important URLs. To implement this, simply add: Sitemap: https://example.com/sitemap.xml Putting it all together, a classic robots.txt file sitemap example should look like this: Now, let\u2019s break down the robots.txt files and directives above to sump up the robots.txt syntax: User-agent: * : Rules for all crawlers. Disallow: /admin and Disallow: /tmp: Blocks all crawlers from these directories. Allow: /admin/public: Creates an exception for /admin/public even though /admin is disallowed. User-agent: Googlebot : Additional rules specifically for Google\u2019s crawler. Disallow: /old-section : Prevents Googlebot from crawling anything in /old-section. Sitemap: \u2026: Points crawlers to your sitemap. This robots.txt format is straightforward: groups of directives start with a User-agent line, followed by any number of Allow or Disallow lines, and an optional Sitemap reference. When writing your own robots.txt rules, remember that crawlers read them from top to bottom, and specific rules for particular user agents override the general ones. 10 Robots.txt Best Practices to Boost SEO Performance Now that you know the basics of robots.txt files, let\u2019s go over some best practices. These are things you should do to make sure your file is effective and working properly. 1. Use a New Line for Each Directive When you\u2019re adding rules to your robots.txt file, it\u2019s important to use a new line for each directive to avoid confusing search engine crawlers. This includes both Allow and Disallow rules. For example, if you want to disallow web crawlers from crawling your blog and your contact page, you would add the following rules: Disallow: /blog/ Disallow: /contact/ 2. Use Wildcards To Simplify Instructions If you have a lot of pages that you want to block, it can be time-consuming to add a rule for each one. Fortunately, you can use wildcards to simplify your instructions. A wildcard is a character that can represent one or more characters. The most common wildcard is the asterisk (*). For example, if you want to block all files that end in .jpg, you would add the following rule: Disallow: /*.jpg 3. Use \u201c$\u201d To Specify the End of a URL The dollar sign ($) is another wildcard that you can use to specify the end of a URL. This is helpful if you want to block a certain page but not the pages that come after it. For example, if you want to block the contact page but not the contact-success page, you would add the following rule: Disallow: /contact$ 4. Use Each User Agent Only Once Thankfully, when you\u2019re adding rules to your robots.txt file, Google doesn\u2019t mind if you use the same User-agent multiple times. However, it\u2019s considered best practice to use each user agent only once. 5. Use Specificity To Avoid Unintentional Errors When it comes to robots.txt files, specificity is key. The more specific you are with your rules, the less likely you are to make an error that could hurt your website\u2019s SEO. 6. Use Comments to Explain Your robots.txt File to Humans Despite your robots.txt files being crawled by bots, humans will still need to be able to understand, maintain, and manage them. This is especially true if you have multiple people working on your website. You can add comments to your robots.txt file to explain what certain rules do. Comments must be on their line and start with a #. For example, if you want to block all files that end in .jpg, you could add the following comment: Disallow: /*.jpg # Block all files that end in .jpg This would help anyone who needs to manage your robots.txt file understand what the rule is for and why it\u2019s there. 7. Use a Separate robots.txt File for Each Subdomain If you have a website with multiple subdomains, it\u2019s best to create a separate robots.txt file for each one. This helps to keep things organized and makes it easier for search engine crawlers to understand your rules. 8. Avoid Blocking Essential Assets Blocking JavaScript, CSS, or other resources that search engines need to render your pages can seriously harm your SEO. For instance, if Googlebot can\u2019t render your page the way users see it, your rankings could drop. Always double-check that you aren\u2019t disallowing critical assets in your robots.txt file. 9. Place Your Robots.txt File at the Root Search engine crawlers always look for a robots.txt file at the root of a domain (e.g., example.com/robots.txt ). If you place it in a subdirectory or under a different name, crawlers might not find or respect your directives. Keeping your robots.txt file in the correct location ensures your SEO efforts aren\u2019t wasted. 10. Update Your Robots.txt With Site Changes Any time your site structure changes\u2014like adding a new subfolder or updating URL paths\u2014make sure you reflect those changes in your robots.txt file. Regular updates prevent crawlers from being misdirected, which helps keep your content visible and indexed appropriately. 10 Common Robots.txt Errors and How to Fix Them Understanding the most common mistakes people make with their robots.txt files can help you avoid making them yourself. Here are some of the most common mistakes and how to fix these technical SEO issues . 1. Missing Robots.txt File The most common robots.txt file mistake is not having one at all. If you don\u2019t have a robots.txt file, search engine crawlers will assume that they are allowed to crawl your entire website. To fix this, you\u2019ll need to create a robots.txt file and add it to your website\u2019s root directory. 2. Robots.txt File Not in the Directory If you don\u2019t have a robots.txt file in your website\u2019s root directory, search engine crawlers won\u2019t be able to find it. As a result, they will assume that they are allowed to crawl your entire website. It should be a single text file name that should not be placed in subfolders but rather in the root directory. 3. Omitting the Sitemap URL from Robots.txt Your robots.txt file should always include a link to your website\u2019s sitemap. This helps search engine crawlers find and index your pages. Omitting the sitemap URL from your robots.txt file is a common mistake that may not hurt your website\u2019s SEO, but adding it will improve it. 4. Blocking CSS and JavaScript According to John Mueller, you must avoid blocking CSS and JS files as Google search crawlers require them to render the page correctly. Naturally, if the bots can\u2019t render your pages, they won\u2019t be indexed. 5. Using NoIndex in the Robots.txt Files Since 2019, Google has deprecated the noindex robots meta tag and no longer supports it. As a result, you should avoid using it in your robots.txt file. If you\u2019re still using the noindex robots meta tag, you should remove it from your website as soon as possible. Related : Discover the impact of noindex vs. nofollow tags on your site\u2019s crawl budget. 6. Improper Use Of Wildcards Using wildcards incorrectly will only result in restricting access to files and directories that you didn\u2019t intend to. When using wildcards, be as specific as possible. This will help you avoid making any mistakes that could hurt your website\u2019s SEO. Also, stick to the supported wildcards, that is asterisk and dollar symbol. 7. Wrong File Type Extension As the name implies, a robot.txt file must be a text file that ends in.txt. It cannot be an HTML file, image, or any other type of file. It must be created in UTF-8 format. A useful introductory resource is Google\u2019s robots.txt guide and Google Robots.txt FAQ . 8. Overly Complex or Redundant Lines Sometimes, webmasters add a flurry of rules, such as multiple Disallow directives for the same paths or unnecessary wildcard usage. These can confuse both bots and human collaborators. You can simplify your robots.txt file by removing duplicate or overlapping rules and consolidating them where possible. Remember that when implementing robots.txt files, using fewer lines means fewer chances of making mistakes. 9. Using Unrecognized Directives Some directives (like Crawl-delay or Noindex ) are not supported uniformly by all search engines. Relying on them could lead to inconsistent behavior across different crawlers. It\u2019s generally best to stick to the officially recognized robots.txt directives we talked about earlier ( User-agent, Allow, Disallow , and Sitemap )for broad compatibility. For advanced robots.txt directives, rely on meta tags or search engine-specific methods. 10. Poorly Structured Wildcard Usage Even though wildcards can simplify your rules, sloppy usage, such as placing them in the wrong part of a path, can inadvertently block or allow entire sections of your site. For example, Disallow: /images*.jpg might block more than intended. Here\u2019s how to fix it: Carefully test wildcard rules with a validator or in a staging environment. Ensure you fully understand how * (asterisk) and $ (end of URL) function to avoid accidentally blocking critical content. How to Create and Submit Robots.txt Files Based on Google\u2019s Recommendations Now that we\u2019ve gone over why robots.txt files are important for your SEO performance, let\u2019s discuss how to create and submit robots.txt files to your website\u2019s backend. This setup guide is recommended by Google. You can read Google\u2019s Robots.txt implementation tutorial here . Step 1: Create a File Named Robots.txt The first step is to create a file named robots.txt . This file needs to be placed in the root directory of your website \u2013 the highest-level directory that contains all other files and directories on your website. Here\u2019s an example of proper placement of a robots.txt file: on the apple.com site, the root directory would be apple.com/ . You can create a robots.txt file with any text editor, but many CMS\u2019 like WordPress will automatically create it for you. Step 2: Add Rules to the Robots.txt File Once you\u2019ve created the robots.txt file, the next step is to add rules. These rules will tell web crawlers which pages they can and cannot access. There are two types of robot.txt syntax you can add: Allow and Disallow. Allow rules will tell web crawlers that they are allowed to crawl a certain page. Disallow rules will tell web crawlers that they are not allowed to crawl a certain page. For example, if you want to allow web crawlers to crawl your homepage, you would add the following rule: Allow: / If you want to disallow web crawlers from crawling a certain subdomain or subfolder on your blog, you use: Disallow: / Step 3: Upload the Robots.txt File to Your Site After you have added the rules to your robots.txt file, the next step is to upload it to your website. You can do this using an FTP client or your hosting control panel. If you\u2019re not sure how to upload the file, contact your web host and they should be able to help you. Step 4: Test Your Robots.txt File After you have uploaded the robots.txt file to your website, the next step is to test it to make sure it\u2019s working correctly. Google provides a free tool called the robots.txt Tester in Google Search Console that you can use to test your file. It can only be used for robots .txt files that are located in the root directory of your website. To use the robots.txt tester, enter the URL of your website into the robots.txt Tester tool and then test it. Google will then show you the contents of your robots.txt file as well as any errors it found. Step 5: Use Google\u2019s Open-Source Robots Library If you are a more experienced developer, Google also has an open-source robots library that you can use to manage your robots.txt file locally on your computer. Pro tip : Optimizing the robots.txt files for ecommerce has its own challenges. Find out what they are and how to solve them in our robots.txt best practices for ecommerce SEO guide . Where Should I Put My Robots.txt File? The best spot for your robots.txt file is right in your site\u2019s root directory\u2014so, for example, you\u2019d have example.com/robots.txt . That\u2019s where search engines know to look by default. If you drop it into a subfolder, like example.com/blog/robots.txt , there\u2019s a good chance crawlers won\u2019t see it at all. It\u2019s the same story for subdomains: if you\u2019ve got blog.example.com or store.example.com , each one needs its own robots.txt file placed at the root of that subdomain. This setup keeps everything straightforward and helps ensure search engines follow the rules you\u2019ve laid out. How to Test and Validate Robots.txt Files Testing and validating your robots.txt file is a must to ensure you\u2019ve implemented your robots.txt files correctly. To test and validate them, use Google\u2019s Robots Testing Tool in your Google Search Console account. Simply paste in your file\u2019s contents, and the tool will highlight any errors. It\u2019s also super handy for testing specific URLs, so you can see if you accidentally blocked or allowed pages you didn\u2019t intend to. Next, pay attention to your crawl data in Google Search Console\u2019s Coverage report. If you spot pages that are \u201cBlocked by robots.txt\u201d but shouldn\u2019t be (or pages being indexed that you meant to hide), go back and fine-tune your robots.txt file setup. Third-party SEO auditing tools \u2014like Screaming Frog or SEMrush\u2014can also simulate how different search engines read your robots.txt file configuration, helping you catch issues before they become real problems. Finally, if you\u2019re planning big changes, like blocking entire sections of your site, always test them in a staging environment. That way, you can see how crawlers actually behave before rolling out those robots.txt directives to your live site. What Happens to Your SEO if a Robots.txt File Is Broken or Missing? If your robots.txt file is broken or missing, it can cause search engine crawlers to index pages that you don\u2019t want them to. This can eventually lead to those pages being ranked in Google, which is not ideal. It may also result in site overload as crawlers try to index everything on your website. A broken or missing robots.txt file can also cause search engine crawlers to miss important pages on your website. If you have a page that you want to be indexed, but it\u2019s being blocked by a broken or missing robots.txt file, it may never get indexed. In short, it\u2019s important to make sure your robots.txt file is working correctly and that it\u2019s located in the root directory of your website. Rectify this problem by creating new rules or uploading the file to your root directory if it\u2019s missing. Get Better Indexing and Rankings With Robots.txt Files A robots.txt file is a powerful tool that can be used to improve your website\u2019s SEO. However, it\u2019s important to use it correctly. When used properly, a robots.txt file can help you control which pages are indexed by search engines and improve your website\u2019s crawlability. It can also help you avoid duplicate content issues . On the other hand, if used incorrectly, a robots.txt file can do more harm than good. It\u2019s important to avoid common mistakes and follow the best practices that will help you use your robots.txt file to its full potential and improve your website\u2019s SEO. In addition to expertly navigating Robot.txt files, pre-rendering with Prerender.io also offers the opportunity to produce static HTML for complex JavaScript websites. With a one-time integration, you\u2019ll see ongoing results, such as better indexing, faster response times, and a 50% reduction in costs compared to in-house SSR or other top competitors. Curious to see if Prerender.io is right for you? Join 100,000+ businesses worldwide and try it for free today . Start Free 30-Day Trial FAQs \u2013 Robots.txt Files Best Practices Let\u2019s answer some questions about robots.txt files, implementation tips, and how they impact your SEO results. 1. Can Robots.txt Block My Site from Appearing in Google Search Results? While robots.txt prevents crawling, it doesn\u2019t guarantee that pages won\u2019t appear in search results. Google may still index URLs blocked by robots.txt if they\u2019re linked from other pages, though without understanding their content. If you want to prevent indexing for certain pages, stick to the noindex meta tag . 2. How Long Does It Take for Robots.txt Changes to Take Effect? Google typically caches robots.txt files for up to 24 hours. After that, changes take effect when search engines next crawl your site. While you can use Google Search Console to test your robots.txt, this won\u2019t speed up the implementation process. 3. Should I Block Images Using Robots.txt? Generally, no. Blocking images can prevent them from appearing in Google Image search and reduce your visual search traffic. Only block images if they contain sensitive information or are not meant for public viewing. 4. What\u2019s the Difference Between robots.txt and Meta Robots Tags? Robots.txt controls crawler access at the server level and prevents crawling, while meta robots tags control indexing at the page level. Meta robots tags are more precise for controlling individual page indexing. 5. Can I Use Robots.txt to Block Specific Search Engines? Yes! You can specify different rules for different search engines using the User-agent directive. Legitimate search engines like Google, Bing, and Yahoo will respect these directives, but malicious bots may ignore them. Looking for more technical SEO tips? Here are other articles that may interest you: 10 Best Screaming Frog Alternatives (Free and Paid) 10 Ways to Accelerate Web Page Indexing and Its SEO Effects Caching in JavaScript\u2014How it Affects SEO Performance (for Developers) How to Find & Fix Broken Backlinks Before They Destroy SERP Rankings Is AJAX Bad for SEO? Not Necessarily. Here\u2019s Why. Leo Rodriguez Leo is a technical content writer based in Italy with over 4 years of experience in technical SEO. He\u2019s currently working at saas.group as a content marketing manager. Contact him on LinkedIn . More From Our Blog News and Updates 11 Nov, 2026 Prerender.io Partners with Why SEO Serious to Bring JavaScript SEO to High-Growth Platforms Prerender.io and Why SEO Serious partner to make JavaScript-heavy fintech, crypto, and ecommerce sites fully visible in search and AI Read article Ecommerce SEO 5 Nov, 2026 The Invisible Catalog: Can AI See Your B2B Products? Your buyers now build shortlists inside AI assistants. If your products aren\u2019t in the answer, you aren\u2019t in the running. Read article Unlock Your Site's Potential Better crawling means improved indexing, more traffic, and higher sales from every search channel. Try for free. Start Your Free Trial Find out what ChatGPT\u2019s crawler sees on your site If crawlers can\u2019t read your pages, AI assistants can\u2019t recommend them. Check yours in a minute. Check my site Free. No sign-up needed to start."
+ },
+ {
+  "url": "https://seotesting.com/blog/robots-txt/",
+  "title": "Robots.txt and SEO - The Ultimate Guide from the Experts",
+  "words": 2963,
+  "headings": [
+   [
+    "h1",
+    "Robots.txt and SEO"
+   ],
+   [
+    "h2",
+    "What Does the Robots.txt File Do?"
+   ],
+   [
+    "h2",
+    "Robots.txt Syntax and Formatting"
+   ],
+   [
+    "h2",
+    "Robots.txt Directives"
+   ],
+   [
+    "h3",
+    "Sitemap Directive"
+   ],
+   [
+    "h3",
+    "Disallow Directive"
+   ],
+   [
+    "h3",
+    "Allow Directive"
+   ],
+   [
+    "h3",
+    "Crawl-Delay Directive"
+   ],
+   [
+    "h3",
+    "Noindex Directive"
+   ],
+   [
+    "h3",
+    "Nofollow Directive"
+   ],
+   [
+    "h2",
+    "Supported Robots.txt Directives by Google Crawlers"
+   ],
+   [
+    "h3",
+    "How Google Interprets Robots.txt Directives"
+   ],
+   [
+    "h2",
+    "Robots.txt Example Rules"
+   ],
+   [
+    "h3",
+    "Disallow Crawling a Directory"
+   ],
+   [
+    "h3",
+    "Block Access to a Single Crawler"
+   ],
+   [
+    "h3",
+    "Disallow Crawling of a Single Page"
+   ],
+   [
+    "h3",
+    "Block all images on your site from Google Images"
+   ],
+   [
+    "h3",
+    "Block a Specific Image from Google Images"
+   ],
+   [
+    "h3",
+    "Disallow Crawling a Specific File Type"
+   ],
+   [
+    "h2",
+    "Best Practices"
+   ],
+   [
+    "h3",
+    "Using Regex to Simplify Directives"
+   ],
+   [
+    "h3",
+    "Use Each User Agent Only Once"
+   ],
+   [
+    "h3",
+    "Be Specific with Directives"
+   ],
+   [
+    "h2",
+    "FAQs"
+   ],
+   [
+    "h3",
+    "Do you need to use robots.txt?"
+   ],
+   [
+    "h3",
+    "What are the limitations of a robots.txt file?"
+   ],
+   [
+    "h3",
+    "What happens if you don\u2019t use robots.txt?"
+   ],
+   [
+    "h3",
+    "What happens if you disallow a page with a noindex tag?"
+   ],
+   [
+    "h3",
+    "How to find errors on robots.txt on Google Search Console?"
+   ]
+  ],
+  "text": "Robots.txt and SEO Written by Tiago Silva . Updated on 09, March 2026 Your \u201crobots.txt\u201d file, one of the most important files within your website, is a file that lets search engine crawlers know if they should crawl a web page or leave it alone. One of the main aims of a robots.txt file is to ensure your website servers are not overloaded with search engine bots crawling your website at all hours of the day, but did you know that there are also SEO-related benefits that come with a properly optimised robots file? Keep reading this guide to understand more about robots.txt, the best practices, and how this helps your website\u2019s SEO efforts. What Does the Robots.txt File Do? A common misconception is that a robots.txt file prevents a page from getting indexed by search engines. That\u2019s not true. Google says , \u201cIf other pages point to your page with descriptive text, Google could still index the URL without visiting the page\u201d. If Google indexes a page disallowed by robots.txt, it won\u2019t have a description because they weren\u2019t allowed to visit the page. When you want to prevent a page from being indexed, use the noindex tag. Alternatively, lock the page with a password to prevent Google from indexing private information. The default assumption is that crawlers can crawl, index and rank all of the pages on your website unless they are blocked with a disallow directive (more information in therobots.txt syntax and formatting section below). So, if a robots.txt file doesn\u2019t exist or isn\u2019t accessible , search engines will crawl, index and rank every single page they can find on your website as if there were not any restrictions in place. Robots.txt Syntax and Formatting Robots exclusion standard (aka. Robots.txt) should follow a set of rules to be valid and used by search engine crawlers. The structure of a robots.txt file includes: Group : Names the user-agent and directives that it must follow. A robots.txt file can have as many groups as you want, but most user-agents will only follow the first groups that apply to them. User-Agent : The identification of a crawler. Naming the user-agent in the robots.txt the user-agent the directives set for them. For example, you can name Googlebot as one user-agent and name the Pinterest bot as another. Directives : These are the instructions that each user-agent named in the same group has to follow. XML Sitemap : It\u2019s possible and common for robots.txt files to mention the sitemap because it makes it easy for search engine crawlers to find the file. Crawlers usually process groups from top to bottom, but Googlebot and Bingbot will default for the most specific rules as they are usually less restrictive. User agents can only follow one group, and you should avoid having contradictory directives for the same user agent. If a group of directives targets a user-agent more than once, they will likely ignore it, following only the first group they found on the robots.txt. You can also use the robots exclusion file on subdomains (for example, www.mydomain.com/robots.txt or blog.mydomain.com/robots.txt ) or non-standard ports ( mydomain.com:8181/robots.txt ). The main rules of the robots.txt file: Must be UTF-8 encoded. Must be named \u201crobots.txt\u201d. Must be located on the root of the domain. It will only be valid for the same protocol (HTTP or HTTPS) and subdomain (for example, www or non-www) where it\u2019s located. Should use only relative paths (except for the sitemap). Must have only one directive per line. Directives are case-sensitive. Comments start with # and don\u2019t get read by crawlers. Robots.txt Directives Different search engine crawlers, no matter whether it is Googlebot or Bingbot, for example, will follow each directive relevant to them within a robots.txt file to ensure they understand which pages on a website they are allowed to navigate to. This allows them to understand which pages on a website can be crawled, indexed, and ranked. It is worth noting that not all crawlers support the same directives or even interpret the syntax of a directive in the same way. Googlebot is one of those user agents that doesn\u2019t support all directives. But before explaining those in detail, let\u2019s first see the list of all directives: Sitemap. Disallow. Allow. Crawl-delay. Noindex. Nofollow. All directives, except the sitemap, support wildcards from RegEx for the entire string, prefix, or suffix. The directives should start with a slash (\u201c/\u201d) when referring to a page and finish with \u201c/\u201d when referring to a directory. Sitemap Directive The sitemap directive shows the URL where the XML sitemap of a website is, thus making it easier for crawlers to find them. This directive is supported both inside and outside of groups. Unless you have a specific sitemap for a particular bot, it\u2019s better to declare it at the beginning of the robots.txt, so all crawlers can use it. As mentioned in our guide to XML Sitemaps , they aren\u2019t mandatory, and if you\u2019ve already submitted it on Google Search Console this directive can be redundant. However, declaring the XML sitemap doesn\u2019t hurt you and makes it easier for other user agents like Bingbot to find it. Example showing usage for Sitemap directive: Sitemap: https://mydomain.com/sitemap.xml User-agent: * Disallow: /admin Disallow Directive The disallow directive tells crawlers they aren\u2019t allowed to visit the URL or matching expression (when using RegEx). This is the directive you would be using more frequently in your robots.txt file as, by default, there aren\u2019t limitations on pages bots can visit. In the example below the disallow directive is not allowing bots to crawl the admin pages on a WordPress site, and it would look like this: User-agent: * Disallow: /wp-admin/ The reason most (if not all) websites will have this particular directive in place is because site owners, understandably, do not want to have links to their admin login areas indexed and ranked. You can see the problem this may cause, right? Allow Directive The allow directive tells crawlers they can visit and crawl a URL or matching RegEx. This rule is mainly used to overwrite a disallow directive when you want bots to crawl a page from a blocked directory. An example could be allowing crawlers to visit the login page but not all the admin pages of a WordPress site. User-agent: * Disallow: /admin/ Allow: /admin/login Crawl-Delay Directive The crawl-delay directive limits how frequently crawlers visit URLs to avoid overloading servers. Not all crawlers support this directive, and they can interpret the number of the crawl-delay differently. Example: User-agent: * Crawl-delay: 1 In the example above, Bingbot would interpret that they should wait 1 second before crawling a URL. One of the biggest issues caused when this directive is not set up correctly is a particular search engine crawler, like Bingbot for example, may cause too much strain on your website\u2019s server and crash your entire website. Noindex Directive The noindex directive in robots.txt prevents URLs from getting indexed. However, Google ended support for it in 2019 as they never documented it. Gary Illyes mentioned that one of the reasons for the removal was that websites \u201cwere hurting themselves\u201d with the noindex. Don\u2019t believe me? I have seen plenty of examples where websites have noindexed entire sections of their websites, causing them (in almost all cases) to not be ranked on a particular search engine. One of the main reasons for this is staging websites. Naturally, whilst a website is being built in a staging environment, almost all of the pages are noindexed to ensure Google and other search engines leave them alone during the build. Once a website goes live, it\u2019s entirely possible for someone to forget to edit the robots.txt file and leave sections of the website set to noindex. Yes. This really is an SEO professional\u2019s worst nightmare! In practical terms, this directive worked similarly to the noindex tag . The difference is that this directive centralized instructions in one place (robots.txt) instead of having to create a noindex tag on each page. In this example, the robots.txt requests crawlers not to index the about page: User-agent: * Noindex: /about Nofollow Directive The nofollow directive tells crawlers to not follow links in a URL. This is similar to what the nofollow tag does, but instead of doing it for a link, it applies to every URL in the page. Google doesn\u2019t support this directive as they announced in 2019 (same announcement as noindex above). Also, Google employees told people not to use this directive for a long time before that announcement. In this example, the robots.txt requests crawlers not to follow links on the about page: User-agent: * Nofollow: /about Supported Robots.txt Directives by Google Crawlers Googlebot only supports the following robots.txt directives: User-agent. Disallow. Allow. Sitemap (when mentioned outside a group). Per Google documentation , all Adsbot should be explicitly named as a user agent. So, using the wildcard (*) will not include Google Adsbot. How Google Interprets Robots.txt Directives Google has extensive documentation about how its crawlers interpret directives from robots.txt files. Summary of Googlebot interpretation of directives: The robots.txt file should be UTF-8 and smaller than 500kb. The robots.txt file will only be considered valid for the same domain (same protocol, subdomain, host, or port number). They don\u2019t check robots.txt on subdirectories when crawling the root domain. For example, when they are looking at www.amazingcompany.com they won\u2019t look at blog.amazingcompany.com . This is crucial as it will mean you needing a separate robots.txt file for any pages or parts of your site that are utilising a subdomain. When robots.txt returns 4XX codes other than 429, Google considers there aren\u2019t crawling limitations. For 5XX and 429 codes, Google considers the site disallowed but will keep trying \u201cto crawl the robots.txt file until it obtains a non-server-error HTTP status code\u201d. If, after 30 days, the file is still inaccessible, they will consider there aren\u2019t restrictions. When Google thinks the site is configured to send 503 errors for robots.txt location instead of 404s when the file doesn\u2019t exist, they will interpret the 503 as a 404. Google will ignore invalid lines in the file, \u201cincluding the Unicode Byte Order Mark (BOM)\u201d. Spaces at the beginning and end of each line are ignored. However, they are recommended to \u201cimprove readability\u201d. Googlebot will automatically ignore comments. Googlebot will ignore directives without a path. URL paths should be relative to the folder of the robots.txt file (i.e., the root). XML Sitemap directive should use an absolute path. URL paths are case sensitive. It\u2019s allowed to mention more than one XML sitemap directive. Googlebot tries to follow the most specific group of directives. If there\u2019s more than one valid group, the user agent will group it. \u201cUser agent specific groups and global groups (*) are not combined.\u201d. Robots.txt will only pay attention to allow, disallow, and user-agent inside groups. In case of conflicting rules, Google uses the least restrictive directive. Visit the documentation for detailed examples with the order of precedence for these rules. Robots.txt Example Rules Whilst it is entirely possible to create many rules inside one robots.txt file, some rules are a lot more useful than others! This section will focus on some of the most valuable rules you need to learn. Disallow Crawling a Directory User-agent: * Disallow: /grandma-recipes/ In this example, the robots.txt prevents bots from crawling all the pages in the grandma-recipes folder. Block Access to a Single Crawler User-agent: annoying-bot Disallow: / In this example, the user agent called annoying-bot isn\u2019t allowed to crawl any page on the site. Please remember that crawlers aren\u2019t obliged to follow these directives, but the respectable ones will. Disallow Crawling of a Single Page User-agent: * Disallow: /best-grandma-cookies In this example, no crawler is allowed to visit the page titled \u201cBest grandma cookies\u201d. It is also worth noting that this will work in the same way as the directory directive we explained a little earlier, so any page under this path will be blocked too. Block all images on your site from Google Images User-agent: Googlebot-Image Disallow: / This group forbids Google\u2019s image bot from visiting any page on your website, so it is incredibly useful if you do not want any of the images on your website appearing on Google Images. Keep in mind, however, that this is purely Google\u2019s image crawler, so will not stop image bots from other search engines from visiting your images and possibly ranking them. Block a Specific Image from Google Images User-agent: Googlebot-Image Disallow: /images/cookies.jpg It\u2019s possible to block only specific images from getting crawled by bots. To do that, use a disallow directive and the path to the file in the server. Great if particular images display information you do not want listed on Google Images, but are fine with other images on your website being indexed. Disallow Crawling a Specific File Type User-agent: * Disallow: /*.pdf$ Blocking specific file types is also possible. For example, to block 1 file type on the site, use a regular expression with a wildcard (*), mention the file extension (PDF, in this example) and finish the expression with a dollar sign($). The dollar sign indicates the end of the URL. Best Practices My advice is that you should follow the standard structure and formats of robots.txt mentioned in this guide, but below are some tips for using robots.txt more efficiently. Using Regex to Simplify Directives The robots.txt file supports the use of RegEx . This will make declaring the instructions in the file simpler because you can group instructions into one expression instead of writing one directive for each URL. A practical example is search parameters on a site. Without RegEx, you would write the following directives: User-agent: * Disallow: /cookies/chocolate? Disallow: /cookies/cream? Disallow: /cakes/strawberry? Disallow: /cakes/vanilla? With RegEx, the robots.txt file would look more like this: User-agent: * Disallow: /cookies/*? Disallow: /cakes/*? The wildcard (*) will include all the cookies and cakes directory pages in this example. It would become a burden for websites with several directories to maintain the document, thus using RegEx is more efficient. Use Each User Agent Only Once Most crawlers read the robots.txt from top to bottom and follow the first applicable group for their user agent, and those user agents will only follow one group of directives. If you mention a crawler more than once, they will ignore one of the groups. That isn\u2019t the case with Google and Bingbot, as they follow the more specific rules, and in Google\u2019s case, they will bundle the groups as if it\u2019s only one . However, to avoid confusion, it\u2019s better to list the specific user agents at the top and put the group with the wildcard for all non-mentioned crawlers at the bottom. Be Specific with Directives Being specific in the robots.txt pays off and prevents unintentional consequences of bots not crawling essential sections on your site. Imagine you don\u2019t want bots to crawl the cookies folder, and you create the following disallow rule: User-agent: * Disallow: /cookies This disallow rule (\u201c/cookies\u201d) will also prevent bots from crawling the following URLs: /cookies-recipes.html /cookies-best-recipes-for-download.pdf The solution would be to fix the directive and mention /cookies/, like this: User-agent: * Disallow: /cookies/ FAQs Do you need to use robots.txt? Robots.txt isn\u2019t a ranking factor or a requirement for having good organic results, and most websites won\u2019t notice any difference if they don\u2019t use one. However, using a robots.txt file becomes more important as the website grows and has more pages. So for big websites, robots.txt matter more and can have a significant influence! As mentioned above, the robots.txt will help manage traffic from crawlers by managing the crawl budget (internal link) or preventing server overload. What are the limitations of a robots.txt file? The main limitations of robots.txt are the following: Not all search engine crawlers support the same directives. Different crawlers interpret syntax in the file differently. Disallowed pages can still be indexed. Badly behaved bots can ignore the instructions of robots.txt. What happens if you don\u2019t use robots.txt? If you don\u2019t use a robots.txt file, crawlers will interpret that there aren\u2019t limitations on the pages they can visit and index from your site. That\u2019s the default behavior in the absence of a robots.txt file. As Google mentions in their documentation, if a robots.txt is inaccessible, they would act as if the file doesn\u2019t exist and crawl every page on the website. One way to put this, simply, is if there are pages on your website that you do not want search engine bots to visit and crawl, you need to ensure these are all listed within a robots.txt file. What happens if you disallow a page with a noindex tag? Google won\u2019t see a page with the noindex tag if it\u2019s disallowed by robots.txt. So by combining disallow and noindex, you tell Google that you don\u2019t want them to visit the page, but as they can\u2019t visit the page, they won\u2019t see your instruction not to index it. If you don\u2019t want the page indexed, it\u2019s better to use the noindex tag because the instruction is more specific to your goal. How to find errors on robots.txt on Google Search Console? Visit the Coverage report on Google Search Console to find any error or blocked page currently indexed. The pages with errors will be under the Excluded status at \u201cBlocked by robots.txt\u201d. You should look here to see if any pages are unintentionally blocked. You would still find \u201cIndexed, though blocked by robots.txt\u201d on the Valid with warning status. These are potentially the pages that you don\u2019t want Google to index. A solution is to allow the crawling of the pages and use a noindex tag. To fix this solution faster, manually ask Google to crawl the page after putting the noindex tag on it."
+ },
+ {
+  "url": "https://builtin.com/articles/what-is-robots-txt",
+  "title": "What Is Robots.txt? | Built In",
+  "words": 1718,
+  "headings": [
+   [
+    "h2",
+    "Robots.txt Definition"
+   ],
+   [
+    "h2",
+    "What Is a Robots.txt File?"
+   ],
+   [
+    "h2",
+    "Examples of a Robots.txt File"
+   ],
+   [
+    "h3",
+    "Cloudflare"
+   ],
+   [
+    "h3",
+    "YouTube"
+   ],
+   [
+    "h3",
+    "Nike"
+   ],
+   [
+    "h3",
+    "TikTok"
+   ],
+   [
+    "h3",
+    "Google"
+   ],
+   [
+    "h2",
+    "How Does a Robots.txt File Work?"
+   ],
+   [
+    "h4",
+    "How to Find a Robots.tx File"
+   ],
+   [
+    "h2",
+    "Robots.txt Protocols"
+   ],
+   [
+    "h2",
+    "Best Practices for Robots.txt"
+   ],
+   [
+    "h2",
+    "Why Is a Robots.txt File Important?"
+   ],
+   [
+    "h3",
+    "Controls Crawl Budget"
+   ],
+   [
+    "h3",
+    "Protects Sensitive Data"
+   ],
+   [
+    "h3",
+    "Prevents Duplicate Content Issues"
+   ],
+   [
+    "h3",
+    "Optimizes Server Resources"
+   ],
+   [
+    "h2",
+    "Limitations of Robots.txt"
+   ],
+   [
+    "h3",
+    "Do Not Provide Security"
+   ],
+   [
+    "h3",
+    "Can Be Ignored by Malicious Bots"
+   ],
+   [
+    "h3",
+    "May Block Important Web Pages"
+   ],
+   [
+    "h3",
+    "Exclude Certain Rules"
+   ],
+   [
+    "h2",
+    "Alternatives to Robots.txt Files"
+   ],
+   [
+    "h3",
+    "Meta Robot Tags"
+   ],
+   [
+    "h3",
+    "X-Robot Tags"
+   ],
+   [
+    "h2",
+    "Frequently Asked Questions"
+   ],
+   [
+    "h3",
+    "What is robots.txt used for?"
+   ],
+   [
+    "h3",
+    "Is a robots.txt file necessary?"
+   ],
+   [
+    "h3",
+    "What happens if you don\u2019t use a robots.txt file?"
+   ],
+   [
+    "h3",
+    "Is robots.txt legal?"
+   ]
+  ],
+  "text": "Image: Shutterstock A robots.txt file is a simple text file that communicates with web crawlers \u2014 also known as bots or spiders \u2014 about which parts of a website they are and aren\u2019t allowed to access. It serves as a bridge between website owners and automated crawlers, helping to manage traffic , optimize SEO performance and protect sensitive areas of a website. Robots.txt Definition A robots.txt file is a text file instructing web crawlers on which parts of a website they can and cannot access. Robots.txt files are part of the robots exclusion protocol (REP), a standard that web administrators use to control how search engines index and interact with their websites. While not legally required, most reputable bots respect the instructions outlined in these files. What Is a Robots.txt File? Introduced by software engineer Martijn Koster in an early-internet-adopters mailing list in 1994, robots.txt files are text-based files that tell web crawlers which parts of the site they may access. They are located in the source files of most websites, allowing site owners to control how their content is crawled and indexed. Although they are not followed by all crawlers \u2014 such as malicious bots \u2014 most search engines and automated systems adhere to the rules outlined in a robots.txt file. The syntax (or computer language) of a robot.txt file is fairly straightforward, often including terms like: User-agent denotes the specific web crawler being instructed (Googlebot, Bingbot, Yandex Bot etc.). For example, if the instructions are for Google, it would be written as \u201cUser-agent: Googlebot\u201d. Disallow tells the user-agent not to crawl a particular URL. This can be a specific file or page, or an entire section of a website. For example, \u201cDisallow: /checkout/\u201d would prevent a crawler from accessing a site\u2019s checkout page. Allow tells Googlebot specifically it can access a page or subfolder, even if its parent page is disallowed. Sitemap specifies the location of any XML sitemaps associated with the URL, helping crawlers understand the site\u2019s structure and find content more efficiently. For example \u201cSitemap: https://builtin.com/sitemap.xml\u201d points to Built In\u2019s XML sitemap. Crawl-delay specifies how long (in milliseconds) a bot should wait before indexing a page. For example \u201cCrawl-delay: 5\u201d means the crawler should wait 5 milliseconds. This helps prevent the server from being overtaxed, which can slow down a website. While Google does not recognize this command, other search engines do. More on SEO Why Startups Should Invest in SEO Examples of a Robots.txt File Companies customize their robots.txt files to emphasize certain areas of their websites, protect user privacy and highlight their brand identities. Cloudflare Cloudflare\u2019s robots.txt files direct bots to crawl their regional and language-specific pages. This helps the website rank across geographic regions. Image: Cloudflare YouTube YouTube directs bots away from user login pages, chat logs and its age verification page, among others. It also includes a fictional message that addresses robots in a dystopian future in which humans have been \u201cwiped out\u201d by a robot uprising. Image: YouTube Nike Nike\u2019s robots.txt file blocks crawling in areas of its site like individuals\u2019 inboxes, settings and shopping carts. It even uses the \u201c#\u201d symbol \u2014 which tells crawlers to ignore the text that follows \u2014 to include its signature Nike swoop. This is a common practice among developers who want to incorporate notes or easter eggs within their robots.txt files. Image: Nike TikTok TikTok directs bots to crawl its For You page, community guidelines and \u201cshare\u201d page, while disallowing spiders to crawl specific users and their search history. Image: TikTok Google Google\u2019s extensive robots.txt file includes explicit rules for large language model (LLM) bots, barring those powering tools like ChatGPT and Claude AI from scraping the website to collect training data. Image: Google How Does a Robots.txt File Work? Search engine crawlers have two primary objectives: finding content on the web and indexing it so it can appear in search results. They use robots.txt to navigate through websites. This process involves: Locating the robots.txt file: When a crawler visits a website, it looks for a robots.txt file at the root level. Reading the rules: If the file is found, the crawler parses through its instructions line by line, determining which areas of the site it can and cannot access. Accessing the site: The crawler follows the directives (unless it\u2019s been maliciously programmed to ignore them), indexing or skipping parts of the site based on the rules. How to Find a Robots.tx File To locate a website\u2019s robots.txt file, go to the root URL of the domain and add /robots.txt. For example, https://www.builtin.com/robots.txt will direct you to Built In\u2019s robots.txt file . You can open the URL in a browser or use tools like cURL or online robots.txt validators. If a robots.txt file is absent, crawlers will assume they can access all publicly available content. Related Reading Dial in These 4 Parts of Your Website to Boost Your SEO Robots.txt Protocols A protocol is the format for providing instructions in a network setting. Robots.txt files follow several protocols to function correctly, including: Placement: The file must be located at the domain\u2019s root \u2014 https://www.builtin.com/robots.txt , for example. Subdomains require their own file, such as https://builtinaustin.com/robots.txt . Case sensitivity: The file name must be lowercase for crawlers to recognize it. Syntax: Each directive should follow a structured format. Errors like misspellings or misplaced symbols can render the file ineffective. Wildcards: Asterisks (*) are used to denote \u201call,\u201d while the dollar sign ($) is used to mark the end of a URL. These symbols are called \u201cwildcards\u201d within the context of a robots.txt file. Priority: Specific rules for individual crawlers take precedence over general ones. For example, webmasters might specifically include \u201cUser-agent: Googlebot\u201d versus \u201cUser-agent: *\u201d to specifically guide Google\u2019s crawlers through their site. Best Practices for Robots.txt These best practices help web admins manage how bots access their site, optimizing interactions and data security. Test files regularly : Use tools like the robots.txt tester in Google Search Console to ensure directives are functioning correctly. Leverage sitemaps : Include links to sitemaps in the robots.txt file to help search engine crawlers discover and index pages efficiently. Place in the root directory : Always store the robots.txt file in the main folder of the website, where all files needed for the site to run properly are stored. Ensure domain and protocol accuracy : Remember that a robots.txt file applies only to the specific domain and protocol (HTTP or HTTPS) where it resides. Understand search engine behavior : Different search engines interpret directives in their own way. Prioritize specificity in rules, especially for Google, where the most specific directive takes precedence. Avoid Crawl-Delay Directives: Refrain from using the crawl-delay directive, as it can cause unintended issues with search engine crawling. Focus on SEO Value : Make important pages crawlable, and block pages that do not contribute value to search results. Use Correct Capitalization : Pay attention to the capitalization of directory, subdirectory and file names in robots.txt directives, as incorrect capitalization could cause bots to misinterpret or ignore instructions. Name the File Correctly : The file must be named \u201crobots.txt\u201d with no variations. Why Is a Robots.txt File Important? Robots.txt serves several important functions. Controls Crawl Budget Search engines have a limited crawl budget for each site. By implementing a robots.txt file, web admins can make sure the most relevant pages are indexed by blocking less critical sections. If a website has more pages than its crawl budget can handle, important pages might not get indexed and ranked. Protects Sensitive Data Although they shouldn\u2019t be relied upon for security, robots.txt files can dissuade crawlers from accessing sensitive areas like admin dashboards or test environments . Prevents Duplicate Content Issues Crawl bots don\u2019t need to sift through every page of a site because not every page is designed to appear on a search engine results page (SERP). By restricting access to certain duplicate pages, robots.txt files can help web admins improve their SEO and prevent dilution of search rankings. Optimizes Server Resources Blocking unnecessary crawlers can reduce server strain, helping to ensure websites remain accessible to legitimate users. More on Web Development A Guide to Web Development Frameworks Limitations of Robots.txt Do Not Provide Security Robots.txt files provide guidance, not protection. Sensitive areas of a website should be secured using authentication , encryption or other measures to prevent unauthorized access, as relying solely on robots.txt files for protection is not sufficient. Can Be Ignored by Malicious Bots Some bots ignore robots.txt directives, indexing restricted or sensitive areas of a website that are meant to be excluded. To combat this, web admins can enact additional security measures like server-level blocking or CAPTCHA requirements . May Block Important Web Pages Robots.txt files can accidentally block important web pages from being crawled or indexed if the directives are overly broad or incorrectly configured. This can significantly reduce organic traffic by preventing search engines from displaying those pages in search results. Exclude Certain Rules Not all bots interpret robots.txt directives the same way. For example, Google does not support the crawl-delay directive, which may result in pages being crawled more frequently than intended. This inconsistency can lead to unintended crawling behavior, potentially impacting server performance or exposing pages you intended to restrict. Alternatives to Robots.txt Files Robots.txt files aren\u2019t the only tools for guiding search engines \u2014 meta robots tags and x-robots tags also tell search engines how to handle a website\u2019s content in specific contexts. Meta Robot Tags Meta robots tags are snippets of code within the \u201c<head>\u201d section of individual web pages that provide page-specific instructions on whether to index and crawl links within each page. X-Robot Tags Located in the HTTP header of non-HTML files, x-robot tags are code snippets used for files like images and PDFs. Frequently Asked Questions What is robots.txt used for? Robots.txt guides web crawlers on which areas of a website they can access. Is a robots.txt file necessary? No, but robots.txt is highly recommended for managing crawler behavior and optimizing site performance. What happens if you don\u2019t use a robots.txt file? Without a robots.txt file, crawlers may index the entire site. This can strain servers, create security risks and diminish SEO. Is robots.txt legal? Robots.txt is a widely accepted standard, but it is not legally binding. Compliance depends on the web crawler\u2019s integrity."
+ }
+]
