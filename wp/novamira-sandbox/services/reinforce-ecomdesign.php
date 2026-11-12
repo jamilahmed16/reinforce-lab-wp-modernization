@@ -17,6 +17,8 @@ function rl_ecd_faqs() {
         ['How do our products show up in Google?', 'Google can show price, availability, ratings, shipping and returns directly in results when product pages carry product structured data (merchant listings markup for pages where people can buy) and when product data is shared through Google Merchant Center feeds. We set up both, and keep filter pages from wasting Google’s crawl.'],
         ['Does our store have to be accessible?', 'If you sell to consumers in the EU, the European Accessibility Act covers e-commerce services and has applied since 28 June 2025. We design and test to WCAG 2.2 level AA. This is not legal advice.'],
         ['How much does an online store cost?', 'It depends on the size of the catalogue, the number of templates, integrations such as ERP, stock and shipping, and whether products are being migrated from another platform. After a discovery call you get a written scope and quote.'],
+        ['How long does an e-commerce website take to build?', 'It depends on the size of the catalogue, the integrations (stock, shipping, payments, ERP) and whether products are being migrated from another platform. You get a written timeline with the scope, including time to test checkout and redirects before launch.'],
+        ['How do I choose an e-commerce web design agency?', 'Ask how the agency handles product data, checkout testing and search visibility. A good e-commerce web design agency structures products so Google can show price, stock and ratings, tests checkout on phones, protects existing rankings during a migration, and trains your team to run the store.'],
     ];
 }
 
@@ -133,7 +135,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_ecd() || !is_array($graph)) return $graph;
     $url = get_permalink(get_queried_object_id());
     $graph[] = [
-        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'E-commerce Website Design', 'alternateName' => ['E-commerce website design services', 'WooCommerce website design', 'Online store design'],
+        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'E-commerce Website Design', 'alternateName' => 'E-commerce Website Design Services', 'alternateName' => ['E-commerce website design services', 'WooCommerce website design', 'Online store design'],
         'serviceType' => 'E-commerce website design and development', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'E-commerce website design and development: store structure, product pages, search and filters, a shorter checkout, payments and integrations, product structured data and Merchant Center feeds, speed and WCAG 2.2 AA accessibility.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
@@ -278,7 +280,7 @@ function rl_render_ecomdesign() {
 
 <section id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with a new online store?</h2><p class="lede">A store is the start. These services bring shoppers in and keep it running.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with a new online store?</h2><p class="lede">A store is the start. These services bring shoppers in and keep it running. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/wordpress-website-design-service', 'Websites', 'WordPress Website Design', 'Brand and content sites that sit alongside your store.'],

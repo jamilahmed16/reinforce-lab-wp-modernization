@@ -17,6 +17,8 @@ function rl_pr_faqs() {
         ['Do you guarantee a number of links?', 'No. Journalists and editors decide what they cover and link to, so any guaranteed link count is either a guess or a paid placement. We agree targets for relevant outlets and pages, report every piece of coverage and its link status, and adjust the campaign on what journalists respond to.'],
         ['Do press releases help SEO?', 'A press release helps when it carries real news that journalists pick up and write about. Links inside distributed releases should not pass ranking credit. Google lists optimised anchor-text links in press releases distributed on other sites as link spam. We write releases for journalists, not for links.'],
         ['How long does a digital PR campaign take?', 'A data-led campaign usually needs several weeks of research, writing and approval before outreach begins; reactive commentary can go out the same day. Coverage arrives after launch, and its effect on rankings builds over months rather than days.'],
+        ['How much do digital PR services cost?', 'It depends on whether you need one data-led campaign, ongoing reactive commentary or both, and on how much original research each story needs. After a first conversation you get a written scope and price. We do not price by the link, because earned coverage cannot be promised in advance.'],
+        ['How do I choose a digital PR agency?', 'Ask to see the stories, not only the link counts. A good digital PR agency builds campaigns on real data or expertise, pitches journalists who cover your field, never buys links, and reports coverage, links and mentions honestly, including the campaigns that did not land. Be careful with off-page SEO services or link building services that promise a fixed number of links: buying links breaks Google’s spam policies.'],
     ];
 }
 
@@ -137,7 +139,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_pr() || !is_array($graph)) return $graph;
     $url = get_permalink(get_queried_object_id());
     $graph[] = [
-        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Digital PR & Link Building', 'alternateName' => ['Digital PR', 'Off-page SEO', 'Link building services'],
+        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Digital PR & Link Building', 'alternateName' => 'Digital PR Services', 'alternateName' => ['Digital PR', 'Off-page SEO', 'Link building services'],
         'serviceType' => 'Digital PR and off-page SEO', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'Digital PR and off-page SEO that earns coverage, links and mentions from relevant publications through original data, expert commentary and newsworthy stories, within Google’s link policies, with no bought links, to build authority in Google and AI search.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
@@ -172,7 +174,7 @@ function rl_render_pr() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Digital PR&nbsp;<b>]</b></span>
       <h1 class="h1"><span class="svc">Digital PR services.</span> Earn coverage<br>and links that<br><span class="r">build authority.</span></h1>
-      <p class="lede"><strong>Digital PR</strong> is off-page SEO done in the open. Reinforce Lab builds stories from original data and expert insight, pitches them to the journalists who cover your field, and earns the coverage, links and mentions that build your authority in Google and AI search, with no bought links and no keyword-stuffed press releases.</p>
+      <p class="lede"><strong>Digital PR</strong> is off-page SEO done in the open. Reinforce Lab's digital PR services build stories from original data and expert insight, pitch them to the journalists who cover your field, and earn the coverage, links and mentions that build your authority in Google and AI search, with no bought links and no keyword-stuffed press releases.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#rules">Link rules</a>
@@ -309,7 +311,7 @@ function rl_render_pr() {
 
 <section id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with digital PR?</h2><p class="lede">Coverage builds authority. These services make sure it lands on pages that can rank and get cited.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with digital PR?</h2><p class="lede">Coverage builds authority. These services make sure it lands on pages that can rank and get cited. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/enterprise-seo-strategy', 'Scale', 'Enterprise SEO Strategy', 'One SEO standard across teams, templates, releases and markets.'],

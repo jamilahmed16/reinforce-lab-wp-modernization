@@ -17,6 +17,9 @@ function rl_local_faqs() {
         ['How should we get more reviews?', 'Ask every customer, not only the happy ones, and make it easy for them. Google prohibits offering incentives for reviews and selectively asking for positive ones, and the US FTC’s rule on fake reviews, announced in August 2024, bans buying or selling fake reviews. Replying to reviews shows customers you value their feedback.'],
         ['We don’t have a shopfront. Can we still do local SEO?', 'Yes. Google treats you as a service-area business: one profile for your central office with the areas you serve, and your address hidden from customers. You can’t list virtual offices unless they are staffed during business hours, so we build visibility through service-area pages, not fake locations.'],
         ['Does local SEO help in AI search?', 'It can. OpenAI says ChatGPT search can use your location and sometimes works with other search providers for local results, and Google offers Gemini grounding with Google Maps data. Accurate, consistent listings and clear location pages give these tools correct facts to use, though no one controls what an AI answers.'],
+        ['How much do local SEO services cost?', 'It depends on the number of locations, the state of your profiles and listings, and how competitive your area is. Every engagement is scoped after the free Search Authority Diagnostic, and you get a written scope and price before work starts.'],
+        ['How long does local SEO take to work?', 'Profile fixes such as categories, hours and services can show soon after Google accepts the edit. Reviews, citations and location pages build over months. We track your position in local results and Maps for the searches that matter and report the change against a baseline.'],
+        ['How do I choose a local SEO company?', 'Ask what the company does about reviews, listings and your Google Business Profile, and whether it follows Google’s guidelines. A good local SEO company or agency never adds keywords to your business name or creates fake locations, because both can get a profile suspended. It reports calls, direction requests and enquiries, not only rankings.'],
     ];
 }
 
@@ -151,7 +154,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_local() || !is_array($graph)) return $graph;
     $url = get_permalink(get_queried_object_id());
     $graph[] = [
-        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Local SEO', 'alternateName' => 'Local search engine optimization',
+        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Local SEO', 'alternateName' => 'Local SEO Services', 'alternateName' => 'Local search engine optimization',
         'serviceType' => 'Local search engine optimization', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'Local SEO makes a business visible when people nearby search for what it offers (in Google’s local results and Maps, Apple Maps, Bing and AI answers) through Google Business Profile management, consistent citations, compliant reviews, location and service-area pages, LocalBusiness structured data and local links.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
@@ -184,7 +187,7 @@ function rl_render_local() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Local SEO&nbsp;<b>]</b></span>
       <h1 class="h1"><span class="svc">Local SEO services.</span> Get found by<br>customers<br><span class="r">near you.</span></h1>
-      <p class="lede"><strong>Local SEO</strong> (local search engine optimization) makes your business visible when people nearby search for what you offer: in Google's local results and Maps, on Apple Maps and Bing, and in AI answers. Reinforce Lab builds the profiles, citations, reviews and location pages that local visibility depends on, within Google's own guidelines.</p>
+      <p class="lede"><strong>Local SEO</strong> (local search engine optimization) makes your business visible when people nearby search for what you offer: in Google's local results and Maps, on Apple Maps and Bing, and in AI answers. Reinforce Lab's local SEO services build the profiles, citations, reviews and location pages that local visibility depends on, within Google's own guidelines.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#rules">Listing rules</a>
@@ -307,7 +310,7 @@ function rl_render_local() {
 
 <section id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with local SEO?</h2><p class="lede">Local visibility rests on a healthy site and a clear brand. These services cover the rest.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with local SEO?</h2><p class="lede">Local visibility rests on a healthy site and a clear brand. These services cover the rest. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/technical-seo-services', 'Foundation', 'Technical SEO', 'Crawlability, indexation and speed, so location pages get found and indexed.'],

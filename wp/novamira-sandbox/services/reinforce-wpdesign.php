@@ -17,6 +17,8 @@ function rl_wpd_faqs() {
         ['How fast will the site be?', 'We build to Google’s Core Web Vitals: Largest Contentful Paint within 2.5 seconds, Interaction to Next Paint of 200 milliseconds or less, and Cumulative Layout Shift of 0.1 or less, measured at the 75th percentile of real visits. We check against these before launch and monitor them after.'],
         ['Will the site be accessible?', 'We design and test to WCAG 2.2 level AA, the W3C’s current accessibility guidelines. If you sell to consumers online in the EU, the European Accessibility Act has applied to e-commerce services since 28 June 2025. This is not legal advice.'],
         ['How much does a WordPress website cost?', 'It depends on the number of page templates, how much content needs writing or moving, the integrations you need and whether an existing site is being migrated. After a discovery call you get a written scope and quote.'],
+        ['How long does a WordPress website take to build?', 'It depends on the number of page templates, how much content has to be written or moved, and how quickly feedback comes back. You get a written timeline with the scope. A redesign of a site that already ranks includes time for redirect mapping and testing before launch.'],
+        ['How do I choose a WordPress design agency?', 'Ask who will edit the site after launch and what happens to your rankings. A good WordPress design agency builds pages your team can change without a developer, tests speed and accessibility before launch, maps every old URL to a new one, and hands over the site with documentation.'],
     ];
 }
 
@@ -123,7 +125,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_wpd() || !is_array($graph)) return $graph;
     $url = get_permalink(get_queried_object_id());
     $graph[] = [
-        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'WordPress Website Design', 'alternateName' => ['WordPress website design services', 'WordPress web design agency', 'WordPress web development'],
+        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'WordPress Website Design', 'alternateName' => 'WordPress Website Design Services', 'alternateName' => ['WordPress website design services', 'WordPress web design agency', 'WordPress web development'],
         'serviceType' => 'WordPress website design and development', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'WordPress website design and development for B2B and specialist businesses: discovery, UX, custom design, editor-friendly builds, SEO foundations, Core Web Vitals performance, WCAG 2.2 AA accessibility, integrations and SEO-safe redesigns and migrations.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
@@ -271,7 +273,7 @@ function rl_render_wpdesign() {
 
 <section id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with a new WordPress site?</h2><p class="lede">A new site is the start. These services keep it fast, found and converting.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with a new WordPress site?</h2><p class="lede">A new site is the start. These services keep it fast, found and converting. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/website-maintenance-services', 'After launch', 'Website Maintenance', 'Updates, backups, security and speed, month after month.'],

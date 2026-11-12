@@ -397,7 +397,7 @@ if ($imgs) { ?>
 
 <section class="band alt" id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with AI Search Optimization?</h2><p class="lede">AI Search Optimization is strongest when these pieces are in place. Add them as you need them.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with AI Search Optimization?</h2><p class="lede">AI Search Optimization is strongest when these pieces are in place. Add them as you need them. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/generative-engine-optimization', 'Passage level', 'Generative Engine Optimization (GEO)', 'Structures your pages so generative engines extract and cite them.'],

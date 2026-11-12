@@ -17,6 +17,8 @@ function rl_ex_faqs() {
         ['What is AI literacy under the EU AI Act?', 'Article 4 has applied since 2 February 2025. Since the Digital Omnibus on AI took effect on 27 July 2026, providers and deployers of AI systems must take measures to support the development of AI literacy among the staff and others who operate or use AI on their behalf, reflecting their knowledge, experience and the context of use, without having to guarantee a specific level for any individual. Role-based training is part of every engagement.'],
         ['Do you sell or recommend particular AI tools?', 'We are not resellers. We recommend tools only after the use case, data and risks are clear, and we test vendor claims. Gartner warns of “agent washing”, estimating that only about 130 of the thousands of agentic AI vendors are real.'],
         ['How long does an engagement take?', 'An assessment and roadmap usually takes a few weeks, depending on the size of the business and how many teams are involved. We then support the first pilots so the roadmap turns into measured results, not a slide deck.'],
+        ['How much do AI consulting services cost?', 'It depends on the size of the business, the number of teams involved and whether you need an assessment, a full roadmap or support through the first pilots. After a first conversation you get a written scope and price.'],
+        ['How do I choose an AI strategy consulting firm?', 'Ask whether the firm is paid by any AI vendor, how it measures return and what you keep at the end. Good AI strategy consulting gives your leadership a ranked list of use cases, the data and governance each one needs, the regulations that apply and a way to measure results, without tying you to one tool.'],
     ];
 }
 
@@ -126,7 +128,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_ex() || !is_array($graph)) return $graph;
     $url = get_permalink(get_queried_object_id());
     $graph[] = [
-        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Executive AI Consulting', 'alternateName' => ['AI strategy consulting', 'AI advisory for leadership teams', 'Business consultancy'],
+        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Executive AI Consulting', 'alternateName' => 'AI Consulting Services', 'alternateName' => ['AI strategy consulting', 'AI advisory for leadership teams', 'Business consultancy'],
         'serviceType' => 'AI strategy and governance consulting', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'Executive AI consulting for leadership teams: AI opportunity assessment, use-case prioritisation, business cases, data readiness, governance and AI policy, EU AI Act mapping, vendor selection, AI literacy training and a roadmap supported through the first pilots.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
@@ -161,8 +163,8 @@ function rl_render_execai() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Executive AI Consulting&nbsp;<b>]</b></span>
-      <h1 class="h1"><span class="svc">Executive AI consulting.</span> An AI strategy<br>your board<br><span class="r">can act on.</span></h1>
-      <p class="lede"><strong>Executive AI consulting</strong> helps leadership teams decide where AI should (and shouldn't) go in their business: which use cases are worth funding, what data and governance they need, which regulations apply, and how the return will be measured. Reinforce Lab delivers a prioritised roadmap with the guardrails to match, then helps turn the first projects into measured results.</p>
+      <h1 class="h1"><span class="svc">AI consulting services for executives.</span> An AI strategy<br>your board<br><span class="r">can act on.</span></h1>
+      <p class="lede"><strong>Executive AI consulting</strong> helps leadership teams decide where AI should (and shouldn't) go in their business: which use cases are worth funding, what data and governance they need, which regulations apply, and how the return will be measured. Reinforce Lab's AI consulting services deliver a prioritised roadmap with the guardrails to match, then help turn the first projects into measured results.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#ai-act">EU AI Act dates</a>
@@ -290,7 +292,7 @@ function rl_render_execai() {
 
 <section class="band alt" id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What turns the strategy into results?</h2><p class="lede">The roadmap is delivered through these services.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What turns the strategy into results?</h2><p class="lede">The roadmap is delivered through these services. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/ai-workflow-automation', 'Operations', 'AI Workflow Automation', 'The first automations built with human review, logging and testing.'],

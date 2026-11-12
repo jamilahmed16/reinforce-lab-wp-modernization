@@ -17,6 +17,8 @@ function rl_ma_faqs() {
         ['Is our email compliant?', 'We check. Gmail requires every sender to authenticate with SPF or DKIM, and senders of more than 5,000 messages a day to Gmail accounts to use SPF, DKIM and DMARC, offer one-click unsubscribe and keep spam rates below 0.3%. In the US, CAN-SPAM applies to business-to-business email too; in the UK, PECR requires consent before emailing individuals, with a limited exception for existing customers.'],
         ['Why don’t you report open rates?', 'Because they are no longer reliable. Apple’s Mail Privacy Protection hides whether an email was actually opened, and Litmus reported that it accounted for 55% of all opens as of March 2024. We report clicks, replies, conversions, qualified leads and pipeline instead.'],
         ['How long does it take to set up?', 'It depends on the state of your CRM and data. We start with an audit and the journeys that matter most (usually new-lead nurture and sales handoff) and launch those first, then add further workflows once the first ones are working.'],
+        ['How much do marketing automation services cost?', 'It depends on the platform you use, the state of your CRM data and how many journeys need building. The work is scoped after an audit, and you get a written scope and price before the build starts.'],
+        ['How do I choose a marketing automation agency?', 'Ask which platforms the agency has built on, how it handles consent and deliverability, and what it reports. A good marketing automation agency works on the platform you already own where it can, documents every workflow so your team can run it, and measures pipeline and revenue instead of opens and clicks.'],
     ];
 }
 
@@ -124,7 +126,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_ma() || !is_array($graph)) return $graph;
     $url = get_permalink(get_queried_object_id());
     $graph[] = [
-        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Marketing Automation', 'alternateName' => ['Email marketing services', 'Lead nurturing', 'Marketing automation services'],
+        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Marketing Automation', 'alternateName' => 'Marketing Automation Services', 'alternateName' => ['Email marketing services', 'Lead nurturing', 'Marketing automation services'],
         'serviceType' => 'Marketing automation and email marketing', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'Marketing automation services: lead capture, email nurture journeys, lead scoring, CRM workflows, sales handoff, email campaigns and deliverability, built on your existing platform, compliant with sender and consent rules, and measured in pipeline.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
@@ -270,7 +272,7 @@ function rl_render_automation() {
 
 <section id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with marketing automation?</h2><p class="lede">Automation turns leads into pipeline. These services bring the leads in and extend automation across the business.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with marketing automation?</h2><p class="lede">Automation turns leads into pipeline. These services bring the leads in and extend automation across the business. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/lead-generation-systems', 'Leads', 'Lead Generation Systems', 'The campaigns, pages and offers that bring qualified leads in.'],

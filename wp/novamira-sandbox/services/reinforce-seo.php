@@ -17,6 +17,7 @@ function rl_seo_faqs() {
         ['Can you guarantee a first-page or number-one ranking?', 'No, and Google itself says no one can guarantee a #1 ranking on Google, and to beware of anyone who claims to. We commit to the work, to following Google’s guidelines, and to reporting honestly what changed.'],
         ['Do I need an SEO consultant or an SEO agency?', 'If you have a team that can implement changes, a consultant who sets the strategy and standards may be enough. If you need the work done (fixes, content, outreach and reporting), a managed SEO service is usually the better fit. Google notes that small local businesses can often do much of the work themselves.'],
         ['Does SEO still matter with AI search?', 'Yes. AI search tools draw on web pages that can be crawled, understood and trusted: the same foundations SEO builds. We extend SEO with AI search optimization, so your brand is visible and described accurately in AI answers as well as in Google’s results.'],
+        ['How much do SEO services cost?', 'It depends on the size of your site, how competitive your market is and how much of the work your own team does. Every engagement is scoped after the free Search Authority Diagnostic, and you get a written scope and price before work starts. For reference, Search Authority OS packages start from $5,000 setup; the packages page shows the tiers.'],
     ];
 }
 
@@ -343,7 +344,7 @@ function rl_render_seo() {
 
 <section id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Beyond classic SEO&nbsp;<b>]</b></span><h2>What extends SEO into AI search?</h2><p class="lede">Search now includes AI answers. These services carry your SEO into them.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Beyond classic SEO&nbsp;<b>]</b></span><h2>What extends SEO into AI search?</h2><p class="lede">Search now includes AI answers. These services carry your SEO into them. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/generative-engine-optimization', 'Citations', 'GEO', 'Content structured so AI engines can quote and cite it.'],

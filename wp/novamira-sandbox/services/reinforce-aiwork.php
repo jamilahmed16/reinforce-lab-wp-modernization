@@ -17,6 +17,9 @@ function rl_aw_faqs() {
         ['Is our data safe?', 'We design for it: only the data a step needs is sent to an AI model, access is limited to the accounts that need it, and we document where each piece of data goes. Sensitive processes can be kept inside your own environment or given a human review step.'],
         ['What does “human in the loop” mean?', 'It means the workflow sends uncertain or high-stakes cases to a person before anything happens, for example, a refund above a limit or an email the AI isn’t sure how to answer. Confident, routine cases go straight through. The threshold is yours to set and change.'],
         ['Does the EU AI Act apply to us?', 'It depends on what the AI does. The Act bans a small set of practices (in force since February 2025) and puts strict duties on high-risk uses such as CV sorting in recruitment, due from December 2027. It also requires that people are made aware when they are talking to a chatbot. Most back-office automation is lower risk, but we check each use case. This is not legal advice.'],
+        ['How much do AI workflow automation services cost?', 'It depends on how many workflows are in scope, the systems they connect to and how much checking by people each one needs. Automation projects are scoped and priced after the diagnostic, and you get a written scope before the build starts.'],
+        ['How long does an AI workflow automation project take?', 'It depends on the process and the systems involved. We start with one workflow where the manual work is highest, test it on real examples with a person approving the output, and extend to further workflows once the first one runs reliably.'],
+        ['How do I choose an AI automation agency?', 'Ask how the agency tests its workflows, what happens when the AI is unsure, and where your data goes. A good AI automation agency builds on the tools you already use, keeps a person in the loop for anything uncertain, logs every step, and hands over documentation so you are not locked in. The same questions apply to any AI automation services you buy.'],
     ];
 }
 
@@ -133,7 +136,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_aw() || !is_array($graph)) return $graph;
     $url = get_permalink(get_queried_object_id());
     $graph[] = [
-        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'AI Workflow Automation', 'alternateName' => ['AI automation services', 'AI business process automation'],
+        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'AI Workflow Automation', 'alternateName' => 'AI Workflow Automation Services', 'alternateName' => ['AI automation services', 'AI business process automation'],
         'serviceType' => 'AI workflow automation', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'AI workflow automation for operations, sales, marketing and service: triage, document extraction, drafting and system updates built on your existing tools, with human review for uncertain cases, logging, testing and data minimisation.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
@@ -293,7 +296,7 @@ function rl_render_aiwork() {
 
 <section class="band alt" id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with AI workflow automation?</h2><p class="lede">Automation pays off most when strategy, marketing and sales run on the same system.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with AI workflow automation?</h2><p class="lede">Automation pays off most when strategy, marketing and sales run on the same system. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/executive-ai-consulting', 'Strategy', 'Executive AI Consulting', 'Where AI should (and shouldn’t) go in your business, and in what order.'],

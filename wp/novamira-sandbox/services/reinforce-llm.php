@@ -17,6 +17,8 @@ function rl_llm_faqs() {
         ['Should we block AI crawlers?', 'It depends on the crawler. Some collect data for training models, others fetch pages for AI search answers. OpenAI, for example, says sites that opt out of its search crawler will not be shown in ChatGPT search answers, while its separate training crawler can be blocked without that effect. We help you set a policy per crawler, based on what you want.'],
         ['What is llms.txt, and do we need one?', 'llms.txt is a proposal, published by Jeremy Howard in September 2024, for a plain-text file at a site’s root that points AI agents to a site’s most useful pages. It is not an official standard and no major AI company has said it relies on it, so we treat it as a low-cost extra, not a ranking factor.'],
         ['How long does LLM Optimization take?', 'Corrections on your own site and profiles can be picked up quickly by AI tools that search the web. Changes to what a model learned during training take longer, because they depend on the next training cycle. We baseline how each model describes you first, then report changes against that baseline.'],
+        ['What is LLM SEO?', 'LLM SEO is another name for LLM optimization: the work of making large language models describe and recommend your brand accurately. Some agencies sell it as LLM SEO services. It builds on ordinary SEO, because the models learn from and search the same web pages, profiles and mentions that search engines use.'],
+        ['How much do LLM optimization services cost?', 'It depends on how many models and prompts are tracked and how much of your brand information needs correcting across the web. Every engagement is scoped after the free Search Authority Diagnostic, and you get a written scope and price before work starts. For reference, Search Authority OS packages start from $5,000 setup; the packages page shows the tiers.'],
     ];
 }
 /* verified crawler facts (claude/research/llm-optimization-research-2026-09-29.md) */
@@ -188,7 +190,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_llm() || !is_array($graph)) return $graph;
     $url = get_permalink(get_queried_object_id());
     $graph[] = [
-        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'LLM Optimization', 'alternateName' => 'Large language model optimization',
+        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'LLM Optimization', 'alternateName' => 'LLM Optimization Services', 'alternateName' => 'Large language model optimization',
         'serviceType' => 'LLM optimization', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'LLM Optimization shapes how large language models such as those behind ChatGPT, Claude, Gemini and Perplexity understand, describe and recommend a brand, by making brand facts consistent and current across the sources models learn from and look up, setting an AI-crawler policy, and testing what models say.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
@@ -340,7 +342,7 @@ function rl_render_llm() {
 
 <section id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with LLM Optimization?</h2><p class="lede">LLM Optimization fixes the entity. These services make sure the pages and the program behind it are just as strong.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with LLM Optimization?</h2><p class="lede">LLM Optimization fixes the entity. These services make sure the pages and the program behind it are just as strong. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/ai-search-optimization', 'The umbrella', 'AI Search Optimization', 'The full program for being visible, accurately described and recommended across AI search.'],

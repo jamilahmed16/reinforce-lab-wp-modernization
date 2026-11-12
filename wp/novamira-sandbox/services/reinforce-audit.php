@@ -18,6 +18,8 @@ function rl_audit_faqs() {
         ['What do you need from us?', 'Read-only access to Google Search Console and Google Analytics, a list of your main competitors and markets, and a short call about your goals. Access to your CMS is optional and only needed for a deeper technical review.'],
         ['How much does the audit cost, and how long does it take?', 'The SEO & AI Search Audit starts from $2,500 for a standard website and is delivered within 10 business days once access and scope are confirmed, followed by a 60-minute walkthrough. Large, multi-market or very large sites are quoted after scoping. If you start a Search Authority OS package within 60 days, the full audit fee is credited toward it.'],
         ['Do you fix the issues too?', 'The audit is a one-time analysis and plan. You can implement it in-house: the fix register is written for developers and content teams, or we can implement it through our services or a Search Authority OS package.'],
+        ['What is the difference between an SEO audit and an AI search audit?', 'An SEO audit reviews how your site performs in Google: technical health, content, links and competitors. An AI search audit tests how AI engines such as ChatGPT, Perplexity, Gemini and Google AI Overviews describe and cite your brand. Reinforce Lab’s SEO & AI Search Audit covers both in one review.'],
+        ['How do I choose an SEO audit service?', 'Look at who does the work and what you receive. Good SEO audit services are done by people who read your site, not only by a tool. They show evidence for every finding, rank the fixes by impact and effort, cover AI search as well as Google, and walk your team through the plan.'],
     ];
 }
 
@@ -170,7 +172,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_audit() || !is_array($graph)) return $graph;
     $url = get_permalink(get_queried_object_id());
     $graph[] = [
-        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'SEO & AI Search Audit', 'serviceType' => 'SEO and AI search audit',
+        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'SEO & AI Search Audit', 'alternateName' => 'SEO Audit Services', 'serviceType' => 'SEO and AI search audit',
         'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'A one-time, human-led audit of a website’s technical health, content, authority, competitors and visibility in Google and AI search, delivered as a written report, a prioritised fix register and a roadmap.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
@@ -207,7 +209,7 @@ function rl_render_audit() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;SEO &amp; AI Search Audit&nbsp;<b>]</b></span>
       <h1 class="h1"><span class="svc">SEO audit services.</span> See everything<br>holding back your<br><span class="r">search growth.</span></h1>
-      <p class="lede">Reinforce Lab’s <strong>SEO &amp; AI Search Audit</strong> is a one-time, in-depth review of your technical health, content, authority, competitors and visibility in Google and AI search. It is done by people, backed by evidence, and delivered as a prioritised plan your team can act on.</p>
+      <p class="lede">Reinforce Lab’s SEO audit services are delivered as the <strong>SEO &amp; AI Search Audit</strong>: a one-time, in-depth review of your technical health, content, authority, competitors and visibility in Google and AI search. It is done by people, backed by evidence, and delivered as a prioritised plan your team can act on.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $req; ?>">Request an audit <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#covers">What's included</a>
@@ -341,7 +343,7 @@ note   repeat run 2/3 · same result · competitor cited from a comparison page<
 
 <section class="band alt" id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;After the audit&nbsp;<b>]</b></span><h2>Who can fix what the audit finds?</h2><p class="lede">Implement it yourself, or hand any part of the plan to the service built for it.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;After the audit&nbsp;<b>]</b></span><h2>Who can fix what the audit finds?</h2><p class="lede">Implement it yourself, or hand any part of the plan to the service built for it. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/technical-seo-services', 'Technical', 'Technical SEO', 'Crawlability, indexation, speed and structured data, fixed and verified.'],

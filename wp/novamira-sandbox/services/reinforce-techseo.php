@@ -17,6 +17,9 @@ function rl_techseo_faqs() {
         ['Does blocking a page in robots.txt remove it from Google?', 'No. Google’s documentation says robots.txt controls crawling, not indexing. If a page is blocked from crawling, Google cannot see a noindex rule on it, so the URL can still appear in results. To keep a page out of the index, it must be crawlable and carry a noindex rule.'],
         ['Do AI crawlers see the same page as Googlebot?', 'Not necessarily. Google renders JavaScript, but its own guidance notes that not all bots can run JavaScript. The major AI companies do not document whether their crawlers render JavaScript, and a Vercel study observed several that did not. The safe approach is to make important content available in the page’s initial HTML.'],
         ['Will technical fixes put our current rankings at risk?', 'Not with our process. We inventory every URL that earns traffic or links before changing anything, map redirects for any URL that must move, test changes on a staging or development copy, and re-crawl after release. Nothing that already ranks is changed without your approval.'],
+        ['How much do technical SEO services cost?', 'It depends on the size of the site, the platform, how many templates need fixing and whether we implement the fixes or guide your developers. Every engagement is scoped after the free Search Authority Diagnostic, and you get a written scope and price before work starts. For reference, Search Authority OS packages start from $5,000 setup; the packages page shows the tiers.'],
+        ['How long do technical SEO services take to show results?', 'A fix is live as soon as it is tested and released. Search engines then have to re-crawl the pages: Google says some changes take effect in a few hours and others take several months. We re-crawl the site after each release and report which fixes have been picked up.'],
+        ['How do I choose a technical SEO agency?', 'Ask how the agency finds root causes, not only symptoms, and who implements the fixes. A good technical SEO agency or consultant shows you the evidence for each problem (crawl data, server logs, Search Console), explains the fix in plain language, protects the URLs that already earn traffic, and re-crawls to prove the fix worked.'],
     ];
 }
 
@@ -163,7 +166,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_techseo() || !is_array($graph)) return $graph;
     $url = get_permalink(get_queried_object_id());
     $graph[] = [
-        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Technical SEO', 'serviceType' => 'Technical search engine optimization',
+        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Technical SEO', 'alternateName' => 'Technical SEO Services', 'serviceType' => 'Technical search engine optimization',
         'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'Technical SEO makes sure search engines and AI crawlers can crawl, render, understand and index the pages that matter, covering crawlability, indexation, site architecture, Core Web Vitals, structured data and crawler access, with root causes fixed and verified after release.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
@@ -336,7 +339,7 @@ function rl_render_techseo() {
 
 <section id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with technical SEO?</h2><p class="lede">Technical SEO is the foundation. These services build on it.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with technical SEO?</h2><p class="lede">Technical SEO is the foundation. These services build on it. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/seo-ai-search-audit', 'Starting point', 'SEO & AI Search Audit', 'A full review of your Google and AI-search performance with a prioritised fix list.'],

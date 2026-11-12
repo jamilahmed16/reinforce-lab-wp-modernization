@@ -17,6 +17,9 @@ function rl_content_faqs() {
         ['Who writes the content, and how do you get our expertise?', 'Our writers do the writing; your experts supply what only they know. We interview your specialists, sales and customer teams, turn their knowledge into briefs and drafts, and send pages back for technical review, so the expertise on the page is yours.'],
         ['How many articles will you publish each month?', 'As many as can be done well, agreed in the plan, not promised as a volume target. We publish steadily rather than in bulk, because Google treats many pages made mainly to rank as scaled content abuse, however they are produced.'],
         ['Do you update existing content?', 'Yes. Refreshing, merging or removing outdated pages is part of every programme. Google’s starter guide recommends checking older content and updating it, or deleting it if it is no longer relevant.'],
+        ['How much do SEO content writing services cost?', 'It depends on how many pages you publish each month, how much research and expert input each one needs, and whether existing content is being refreshed. Every engagement is scoped after the free Search Authority Diagnostic, and you get a written scope and price before work starts. For reference, Search Authority OS packages start from $5,000 setup; the packages page shows the tiers.'],
+        ['How long does SEO content take to rank?', 'There is no fixed time. Google says some changes take effect in a few hours and others take several months. New pages on a site with little authority tend to take longer than refreshed pages that already rank. We track each page against its target search and report what moved.'],
+        ['How do I choose an SEO content writing service?', 'Ask who writes, who edits and where the expertise comes from. Good SEO content writing services start from research into the search and the reader, interview your experts, have a person edit every page, cite their sources, and report results by page instead of counting words delivered.'],
     ];
 }
 
@@ -121,7 +124,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_content() || !is_array($graph)) return $graph;
     $url = get_permalink(get_queried_object_id());
     $graph[] = [
-        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'SEO Content Systems', 'alternateName' => ['SEO content writing services', 'SEO copywriting', 'Blog writing services'],
+        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'SEO Content Systems', 'alternateName' => 'SEO Content Writing Services', 'alternateName' => ['SEO content writing services', 'SEO copywriting', 'Blog writing services'],
         'serviceType' => 'SEO content writing and content strategy', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'SEO content systems: research, topic maps, briefs, expert input, human-edited writing, publishing, internal linking and scheduled refreshes, people-first content that ranks in Google, gets cited in AI answers and converts.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
@@ -156,7 +159,7 @@ function rl_render_content() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;SEO Content&nbsp;<b>]</b></span>
       <h1 class="h1"><span class="svc">SEO content writing services.</span> Content that ranks,<br>gets cited<br><span class="r">and converts.</span></h1>
-      <p class="lede"><strong>SEO content systems</strong> turn SEO content writing into a repeatable process: research, a topic map, briefs, your experts' knowledge, human-edited writing, publishing, internal links and scheduled refreshes. Reinforce Lab builds and runs that system, so every page answers a real search, shows real expertise, and earns its place in Google and in AI answers.</p>
+      <p class="lede"><strong>SEO content systems</strong> turn SEO content writing into a repeatable process: research, a topic map, briefs, your experts' knowledge, human-edited writing, publishing, internal links and scheduled refreshes. Reinforce Lab’s SEO content writing services build and run that system, so every page answers a real search, shows real expertise, and earns its place in Google and in AI answers.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#ai">Our AI policy</a>
@@ -295,7 +298,7 @@ function rl_render_content() {
 
 <section id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with SEO content?</h2><p class="lede">Content ranks when the site is sound and the brand is trusted. These services cover the rest.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with SEO content?</h2><p class="lede">Content ranks when the site is sound and the brand is trusted. These services cover the rest. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/best-search-engine-optimization-services', 'Pillar', 'Search Engine Optimization', 'All four pillars of SEO (technical, on-page, content and authority) as one system.'],

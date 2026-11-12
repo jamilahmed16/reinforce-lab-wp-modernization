@@ -17,6 +17,9 @@ function rl_intl_faqs() {
         ['Should we redirect visitors to their country version automatically?', 'Google advises against automatically redirecting users to a different language version based on what you think their language is. Googlebot usually crawls from the USA, so automatic redirects can stop it (and users) from reaching every version. A visible language or country selector is the safer choice.'],
         ['Can we use machine translation?', 'As a starting point, yes, but not as the finished page. Google’s spam policies list automated translation that adds little value, produced at scale, as scaled content abuse. We use translation tools for drafts and have native speakers review, adapt and localize every page that matters.'],
         ['Does hreflang control which version ChatGPT or Perplexity shows?', 'No AI company documents how its assistant chooses between country or language versions of a page, so no one can promise that. We implement what Google documents, keep each version clear and consistent, and check what AI tools answer in each market and language.'],
+        ['How much do international SEO services cost?', 'It depends on the number of countries and languages, the site structure and how much content needs localizing with native review. Every engagement is scoped after the free Search Authority Diagnostic, and you get a written scope and price before work starts. For reference, Search Authority OS packages start from $5,000 setup; the packages page shows the tiers.'],
+        ['How long does international SEO take to work?', 'Technical changes such as hreflang take effect as Google re-crawls each language version, which takes time on a large site. Rankings in a new market take longer, because each version has to earn relevance and links of its own. We report market by market against a baseline.'],
+        ['How do I choose an international SEO agency?', 'Ask who reviews each language, how the agency decides on site structure, and how it reports. A good international SEO agency uses native reviewers instead of raw machine translation, follows Google’s guidance on hreflang and regional URLs, and shows results for each market separately. Multilingual SEO services cover languages; international SEO also covers countries, currencies and local search habits.'],
     ];
 }
 
@@ -134,7 +137,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_intl() || !is_array($graph)) return $graph;
     $url = get_permalink(get_queried_object_id());
     $graph[] = [
-        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'International SEO', 'serviceType' => 'International search engine optimization',
+        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'International SEO', 'alternateName' => 'International SEO Services', 'serviceType' => 'International search engine optimization',
         'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'International SEO makes sure search engines show the right language and country version of a website to each market, through site structure, hreflang, native localization, per-market keyword research, local authority and country-level reporting.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
@@ -318,7 +321,7 @@ function rl_render_intl() {
 
 <section id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with international SEO?</h2><p class="lede">International SEO multiplies whatever your core site already does well. These services make sure that's a lot.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with international SEO?</h2><p class="lede">International SEO multiplies whatever your core site already does well. These services make sure that's a lot. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/technical-seo-services', 'Foundation', 'Technical SEO', 'Crawlability, indexation and speed: the base every language version depends on.'],

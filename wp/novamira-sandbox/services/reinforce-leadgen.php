@@ -17,6 +17,8 @@ function rl_lg_faqs() {
         ['Should we chase a better Quality Score?', 'Not directly. Google describes Quality Score as a diagnostic tool, not a key performance indicator, and says it is not an input in the ad auction. Its three components (expected click-through rate, ad relevance and landing page experience) are useful clues about what to improve.'],
         ['Do we need Consent Mode?', 'If you advertise to users in the European Economic Area and use Google’s measurement or personalisation features, Google requires consent signals to be collected and passed on. Consent Mode’s ad_user_data setting is required for measurement uses such as enhanced conversions. We set this up with your consent platform.'],
         ['How is lead generation priced?', 'Scope and pricing are agreed after an audit of your current channels, tracking and CRM. Media spend is paid to the ad platforms and reported separately from management fees, so you can always see what the media itself cost.'],
+        ['How long do B2B lead generation services take to produce pipeline?', 'Paid campaigns can bring enquiries soon after launch, while organic search and content build over months. Either way, the first weeks go to tracking, landing pages and lead routing, so every enquiry can be traced to revenue. We report qualified pipeline, not form fills.'],
+        ['How do I choose a B2B lead generation agency?', 'Ask how the agency defines a qualified lead and whether it reports through to closed revenue. A good B2B lead generation agency connects your ads, landing pages and CRM, shows media spend separately from its fees, and is judged on pipeline your sales team accepts, not on the number of leads.'],
     ];
 }
 
@@ -122,7 +124,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_lg() || !is_array($graph)) return $graph;
     $url = get_permalink(get_queried_object_id());
     $graph[] = [
-        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Lead Generation Systems', 'alternateName' => ['B2B lead generation', 'PPC management services', 'Google Ads management'],
+        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Lead Generation Systems', 'alternateName' => 'B2B Lead Generation Services', 'alternateName' => ['B2B lead generation', 'PPC management services', 'Google Ads management'],
         'serviceType' => 'Lead generation and paid search management', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'Lead generation systems that connect channels, landing pages, forms, qualification, routing and closed-loop measurement, including PPC and Google Ads management bid on the value of leads recorded in your CRM.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
@@ -156,7 +158,7 @@ function rl_render_leadgen() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Lead Generation&nbsp;<b>]</b></span>
       <h1 class="h1"><span class="svc">B2B lead generation services.</span> Turn demand into<br>qualified pipeline,<br><span class="r">not form fills.</span></h1>
-      <p class="lede"><strong>Lead generation systems</strong> connect every step between a buyer's first search and a closed deal: the channels that attract them, the landing pages and forms that convert them, the qualification and routing that get the right leads to sales fast, and the closed-loop data that tells your ads which leads became revenue. Reinforce Lab builds and runs the whole system, including PPC and Google Ads.</p>
+      <p class="lede"><strong>Lead generation systems</strong> connect every step between a buyer's first search and a closed deal: the channels that attract them, the landing pages and forms that convert them, the qualification and routing that get the right leads to sales fast, and the closed-loop data that tells your ads which leads became revenue. Reinforce Lab's B2B lead generation services build and run the whole system, including PPC and Google Ads.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#ppc">PPC management</a>
@@ -287,7 +289,7 @@ function rl_render_leadgen() {
 
 <section id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with lead generation?</h2><p class="lede">Leads need a system on both sides: visibility before, follow-up after.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with lead generation?</h2><p class="lede">Leads need a system on both sides: visibility before, follow-up after. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/marketing-automation', 'Follow-up', 'Marketing Automation', 'Nurture, scoring and sales handoff for every lead the system brings in.'],

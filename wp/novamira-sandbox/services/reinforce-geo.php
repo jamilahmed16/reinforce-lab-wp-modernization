@@ -17,6 +17,9 @@ function rl_geo_faqs() {
         ['Does GEO work for Google AI Overviews and AI Mode?', 'Yes. Google’s AI features draw on pages Google can crawl and index, and AI Mode breaks a question into several related searches, a technique Google calls query fan-out. Pages that clearly answer those related questions, with evidence, give Google more to use.'],
         ['What kind of content gets cited most?', 'Content that answers a question directly and can stand on its own: clear definitions, step-by-step explanations, comparison tables and specific facts with a named source. Vague, promotional copy gives an AI engine nothing reliable to quote.'],
         ['Do you use AI to write GEO content?', 'We use AI for research and drafting support. People set the angle, verify every important claim against its source and approve each page before it is published, which matters most in regulated industries.'],
+        ['How much do generative engine optimization services cost?', 'It depends on how many pages and topics are in scope and how much new evidence (data, sources and expert input) the content needs. Every engagement is scoped after the free Search Authority Diagnostic, and you get a written scope and price before work starts. For reference, Search Authority OS packages start from $5,000 setup; the packages page shows the tiers.'],
+        ['How long do generative engine optimization services take to work?', 'AI engines that search the web can pick up a rewritten page as soon as they re-read it. Earning citations across a full set of prompts takes consistent work over months. We record a baseline first and report citations prompt by prompt against it.'],
+        ['How do I choose a generative engine optimization agency?', 'Ask how the agency measures citations: which engines, which prompts and how often. A sound generative engine optimization agency shows you a baseline before it starts, gives evidence for what it changes, keeps a person editing every page, and does not promise that an AI engine will name you, because nobody controls those answers.'],
     ];
 }
 
@@ -168,7 +171,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_geo() || !is_array($graph)) return $graph;
     $url = get_permalink(get_queried_object_id());
     $graph[] = [
-        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Generative Engine Optimization', 'alternateName' => 'GEO',
+        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Generative Engine Optimization', 'alternateName' => 'Generative Engine Optimization Services', 'alternateName' => 'GEO',
         'serviceType' => 'Generative engine optimization', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'Generative Engine Optimization structures and writes content so AI search engines such as ChatGPT, Perplexity, Gemini and Google AI Overviews can retrieve it, extract a clear passage and cite the page, through answer-first passages, sourced facts, clear structure and structured data.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
@@ -320,7 +323,7 @@ function rl_render_geo() {
 
 <section id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with GEO?</h2><p class="lede">GEO is the content layer. These services make sure the rest of the system supports it.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with GEO?</h2><p class="lede">GEO is the content layer. These services make sure the rest of the system supports it. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/ai-search-optimization', 'The umbrella', 'AI Search Optimization', 'The full program for being visible, accurately described and recommended across AI search.'],

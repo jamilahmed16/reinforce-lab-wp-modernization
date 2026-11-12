@@ -17,6 +17,9 @@ function rl_ent_faqs() {
         ['Will a site migration lose our rankings?', 'Google says to expect temporary fluctuation during a move, and that larger sites can take longer than a few weeks to settle. What protects rankings is the preparation: a complete old-to-new URL map, permanent server-side redirects kept for at least a year, a staged move where possible, and close monitoring afterwards.'],
         ['Does crawl budget matter for our site?', 'It depends on size and how often content changes. Google’s crawl budget guide is aimed at sites with about a million or more pages that change weekly, or 10,000 or more that change daily, and Google calls those rough estimates, not exact thresholds. Below that, index quality usually matters more than crawl budget.'],
         ['How do you work with our in-house teams?', 'Inside your existing process. We write standards and checklists your teams can own, turn fixes into tickets with acceptance criteria, review releases before they ship, and report what shipped, what stalled and what it changed, by page group, market and business outcome.'],
+        ['How much do enterprise SEO services cost?', 'It depends on the number of sites, markets and templates, and on how much of the work your in-house teams carry. Every engagement is scoped after the free Search Authority Diagnostic, and you get a written scope and price before work starts. For reference, Search Authority OS packages start from $5,000 setup; the packages page shows the tiers.'],
+        ['How long does enterprise SEO take to show results?', 'On a large site the limit is usually release cycles, not search engines. Fixes show once they ship and Google re-crawls the affected templates: Google says some changes take effect in a few hours and others take several months. We report by page group, so you can see which releases moved which pages.'],
+        ['How do I choose an enterprise SEO agency?', 'Ask how the agency works with engineering, legal and brand teams, because that is where enterprise SEO stalls. A good enterprise SEO agency or company writes requirements your developers can ship, plans migrations before they happen, builds links within Google’s policies, and reports in revenue as well as rankings.'],
     ];
 }
 
@@ -130,7 +133,7 @@ add_filter('wpseo_schema_graph', function ($graph) {
     if (!rl_is_ent() || !is_array($graph)) return $graph;
     $url = get_permalink(get_queried_object_id());
     $graph[] = [
-        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Enterprise SEO Strategy', 'alternateName' => 'Enterprise SEO',
+        '@type' => 'Service', '@id' => $url . '#service', 'name' => 'Enterprise SEO Strategy', 'alternateName' => 'Enterprise SEO Services', 'alternateName' => 'Enterprise SEO',
         'serviceType' => 'Enterprise search engine optimization', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url],
         'description' => 'Enterprise SEO strategy for large, complex organisations: SEO governance and standards across teams, template-level technical fixes, migration planning, international architecture, content systems, authority building within Google’s link policies, and reporting by page group, market and business outcome.',
         'provider' => ['@id' => home_url('/#organization')], 'areaServed' => 'Worldwide',
@@ -165,7 +168,7 @@ function rl_render_enterprise() {
     <div>
       <span class="ey"><b>[</b>&nbsp;Services&nbsp;<b>/</b>&nbsp;Enterprise SEO&nbsp;<b>]</b></span>
       <h1 class="h1"><span class="svc">Enterprise SEO services.</span> One SEO standard<br>for every team<br><span class="r">and every page.</span></h1>
-      <p class="lede"><strong>Enterprise SEO strategy</strong> is search engine optimization for large, complex organisations: many pages, many teams, often many markets. Reinforce Lab sets the standards your templates, releases and migrations must meet, gets fixes shipped through your engineering process, and builds authority within Google's link policies, then reports what it changed by page group, market and revenue.</p>
+      <p class="lede"><strong>Enterprise SEO strategy</strong> is search engine optimization for large, complex organisations: many pages, many teams, often many markets. Reinforce Lab's enterprise SEO services set the standards your templates, releases and migrations must meet, get fixes shipped through your engineering process, and build authority within Google's link policies, then report what changed by page group, market and revenue.</p>
       <div class="cta-row">
         <a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a>
         <a class="btn g" href="#authority">How we build links</a>
@@ -313,7 +316,7 @@ function rl_render_enterprise() {
 
 <section id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with enterprise SEO?</h2><p class="lede">Enterprise strategy sets the standard. These services deliver the specialist work within it.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with enterprise SEO?</h2><p class="lede">Enterprise strategy sets the standard. These services deliver the specialist work within it. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/technical-seo-services', 'Foundation', 'Technical SEO', 'Crawling, indexing, rendering and speed, fixed at the template level.'],

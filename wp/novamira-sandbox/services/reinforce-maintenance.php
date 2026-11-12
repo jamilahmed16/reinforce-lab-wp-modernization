@@ -304,7 +304,7 @@ function rl_render_maintenance() {
 
 <section id="related">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with website maintenance?</h2><p class="lede">A well-maintained site is the base. These services build on it.</p></div>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;Related services&nbsp;<b>]</b></span><h2>What works with website maintenance?</h2><p class="lede">A well-maintained site is the base. These services build on it. Together they form an <a href="<?php echo $u('services/ai-growth-systems'); ?>">AI Growth System</a>.</p></div>
     <div class="cols c3">
       <?php foreach ([
           ['services/wordpress-website-design-service', 'Websites', 'WordPress Website Design', 'New WordPress sites built to rank and convert.'],
