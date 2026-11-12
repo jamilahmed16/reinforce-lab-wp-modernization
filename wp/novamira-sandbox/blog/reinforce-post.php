@@ -236,9 +236,10 @@ body.rl-post-page .fl-page-content,body.rl-post-page .fl-content,body.rl-post-pa
 .rl-post .body table{width:100%;border-collapse:collapse;font-size:15px}
 .rl-post .body th,.rl-post .body td{border:1px solid var(--line-2);padding:10px 12px;text-align:left;vertical-align:top}
 .rl-post .body th{color:var(--ink);background:var(--panel);font-weight:600}
-.rl-post .body code{font-family:var(--f-mono);font-size:.9em;background:var(--panel);padding:2px 6px;color:var(--ink)}
-.rl-post .body pre{background:var(--panel);border:1px solid var(--line);padding:16px;overflow-x:auto}
-.rl-post .body pre code{padding:0;background:none}
+/* code in every post type, brand colours instead of the theme's pink (D-237) */
+.rl-post code{font-family:var(--f-mono);font-size:.9em;background:var(--panel);padding:2px 6px;color:var(--ink);word-break:break-word}
+.rl-post pre{background:var(--panel);border:1px solid var(--line);border-left:2px solid var(--red-2);padding:16px 18px;overflow-x:auto;font-size:14px;line-height:1.6;color:var(--ink);margin:1.2em 0}
+.rl-post pre code{padding:0;background:none;font-size:inherit;word-break:normal;white-space:pre}
 .rl-post .body hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 .rl-post .faqp{margin-top:48px}
 .rl-post .faqp h2,.rl-post .src h2{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);font-size:clamp(24px,2.8vw,30px);margin:0 0 16px}
