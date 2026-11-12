@@ -18,6 +18,7 @@ function rl_seo_faqs() {
         ['Do I need an SEO consultant or an SEO agency?', 'If you have a team that can implement changes, a consultant who sets the strategy and standards may be enough. If you need the work done (fixes, content, outreach and reporting), a managed SEO service is usually the better fit. Google notes that small local businesses can often do much of the work themselves.'],
         ['Does SEO still matter with AI search?', 'Yes. AI search tools draw on web pages that can be crawled, understood and trusted: the same foundations SEO builds. We extend SEO with AI search optimization, so your brand is visible and described accurately in AI answers as well as in Google’s results.'],
         ['How much do SEO services cost?', 'It depends on the size of your site, how competitive your market is and how much of the work your own team does. Every engagement is scoped after the free Search Authority Diagnostic, and you get a written scope and price before work starts. For reference, Search Authority OS packages start from $5,000 setup; the packages page shows the tiers.'],
+        ['How do I choose an SEO company?', 'Ask what the company will do each month and how it will prove it. A good SEO company or SEO agency follows Google’s guidelines, shows you the work (fixes, content, links earned), reports leads and revenue as well as rankings, and never promises a number-one position. The best SEO services are the ones that fit your site and goals, not the largest package.'],
     ];
 }
 

@@ -29,6 +29,7 @@ function rl_diag_faqs() {
         ['Am I obligated to buy anything afterwards?', 'No. The diagnostic is free with no obligation. If you want help acting on the plan, we will recommend the package that fits, or you can implement it yourself.'],
         ['Is my information confidential?', 'Yes. Your details are used only to prepare your diagnostic and to contact you about it.'],
         ['How is this different from the paid SEO & AI Search Audit?', 'The diagnostic is a free, focused read of where you stand and what to do next. The SEO & AI Search Audit is a paid, one-time deep audit for teams that need the full technical and content analysis.', 'services/seo-ai-search-audit', 'About the SEO &amp; AI Search Audit'],
+        ['Is the diagnostic a free SEO audit?', 'It is a free SEO analysis of where you stand: seven dimensions of search authority, each with its evidence and gap, plus a prioritized 90-day plan. It is not the full audit. If you need the complete technical and content analysis, that is the paid SEO & AI Search Audit.'],
     ];
 }
 define('RL_DIAG_DESC', 'The Search Authority Diagnostic is a free, data-backed review from Reinforce Lab of your Google visibility, AI-search presence, content authority, competitors and demand signals, with a prioritized 90-day plan.');

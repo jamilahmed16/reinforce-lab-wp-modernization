@@ -85,7 +85,7 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 |---|---|---|---|---|---|
 | 64 | Search Authority OS | [/search-authority-os/](https://reinforcelab.online/search-authority-os/) | publish | [`saos/reinforce-saos.php`](../wp/novamira-sandbox/saos/reinforce-saos.php) | Search Authority OS: Evidence-Led SEO \| Reinforce Lab |
 | 65 | Search Authority Diagnostic | [/search-authority-diagnostic/](https://reinforcelab.online/search-authority-diagnostic/) | publish | [`saos/reinforce-diagnostic.php`](../wp/novamira-sandbox/saos/reinforce-diagnostic.php) | Free Search Authority Diagnostic \| Reinforce Lab |
-| 66 | Packages | [/packages/](https://reinforcelab.online/packages/) | publish | [`saos/reinforce-packages.php`](../wp/novamira-sandbox/saos/reinforce-packages.php) | Search Authority OS Packages & Pricing \| Reinforce Lab |
+| 66 | Packages | [/packages/](https://reinforcelab.online/packages/) | publish | [`saos/reinforce-packages.php`](../wp/novamira-sandbox/saos/reinforce-packages.php) | SEO Packages & Pricing: Search Authority OS \| Reinforce Lab |
 
 ## Agents (9)
 

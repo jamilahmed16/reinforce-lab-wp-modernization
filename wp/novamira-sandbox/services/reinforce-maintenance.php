@@ -17,6 +17,8 @@ function rl_mt_faqs() {
         ['Doesn’t our web host handle security?', 'Only part of it. WordPress’s own hardening guide notes that hosts are responsible for the infrastructure, not the application you install on it: your plugins, themes and settings. In Patchstack’s large-scale test of hosting companies, only 26% of vulnerability attacks were blocked.'],
         ['Do you maintain websites you didn’t build?', 'Yes. Every new site starts with an onboarding audit: we take a full backup, check updates, plugins, security, speed and SEO health, fix anything urgent, and then move the site onto the regular maintenance schedule.'],
         ['How much does website maintenance cost?', 'It depends on the size and complexity of the site: a brochure site needs less than a busy online store with many plugins and integrations. After the onboarding audit you get a monthly plan with the scope written down.'],
+        ['What is included in website maintenance packages?', 'Website maintenance packages differ by site, but every plan from Reinforce Lab follows the same routine: uptime and security monitoring, daily off-site backups, weekly updates tested on a staging copy, a monthly speed and SEO health check, and a monthly report. The size and complexity of the site set the price.'],
+        ['How do I choose a website maintenance company?', 'Ask what happens when an update breaks something and how often backups are tested. A good website maintenance company tests updates on a copy of your site first, keeps backups off the server, restores one regularly to prove it works, and tells you each month what was done. For WordPress maintenance services, also ask who checks plugins for known vulnerabilities.'],
     ];
 }
 

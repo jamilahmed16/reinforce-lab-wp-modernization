@@ -29,6 +29,7 @@ function rl_pkg_faqs() {
         ['How fast will we see results?', "Publishing can begin quickly; search authority builds over months and varies by site, topic and competition. We connect GSC and GA4 so you track real movement; we don't promise a ranking date."],
         ['Can we start small and scale up?', 'Yes. Begin with Foundation or a single agent, then move to Growth OS or Enterprise as the system proves out.'],
         ['What makes this different from an agency or a tool?', 'An agency gives you people; a tool gives you software. Search Authority OS gives you an intelligence system (research, evidence, production, QA and self-healing) run by a team, tuned to your industry.'],
+        ['How much do SEO packages cost?', 'Search Authority OS packages start at $5,000 setup plus $1,500 to $2,500 a month (Foundation). Growth OS is $10,000 setup plus $3,500 to $5,000 a month. Enterprise is $20,000 to $35,000 or more for setup plus $7,500 to $15,000 or more a month. SEO pricing depends on your industry, evidence requirements and goals, which is why every engagement starts with the free diagnostic.'],
     ];
 }
 
@@ -241,7 +242,7 @@ function rl_render_packages() {
   <div class="wrap hero-grid">
     <div>
       <span class="ey"><b>[</b>&nbsp;Packages&nbsp;<b>]</b></span>
-      <h1 class="h1">Three ways to build <span class="r">search authority.</span></h1>
+      <h1 class="h1"><span class="svc">SEO packages and pricing.</span> Three ways to build <span class="r">search authority.</span></h1>
       <p class="lede"><a href="<?php echo $u('search-authority-os'); ?>">Search Authority OS</a>, Reinforce Lab’s flagship system, comes in three packages (Foundation, Growth OS and Enterprise), from a focused foundation to a full enterprise intelligence engine. Every engagement starts with a diagnostic, so scope and price fit what you actually need, not a template.</p>
       <div class="hero-cta"><a class="btn p" href="<?php echo $diag; ?>">Get your free diagnostic <span class="ar">&rarr;</span></a><a class="btn g" href="#plans">See the plans</a></div>
       <p class="micro">Setup + monthly retainer · Pricing below is a starting framework, finalized to scope</p>

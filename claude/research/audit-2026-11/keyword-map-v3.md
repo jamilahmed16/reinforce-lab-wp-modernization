@@ -34,3 +34,30 @@ Rule (D-130): one primary keyword per page. The primary is the name in the H1's 
 - **Spelling:** Semrush's keyword is "ecommerce"; the site writes "E-commerce" (the locked industry name). Search engines treat the two as the same word, so nothing was changed.
 
 Not in this export, unchanged: Home ("reinforce lab"), AI Growth Systems ("ai growth systems"), core SEO, Website Maintenance.
+
+## Added 12 Nov (D-231): industries, core pages, Packages and Diagnostic
+
+Source: three more Semrush US exports from Jamil, 12 Nov (`industry-`, `core-` and `packages-diagnostic-keywords-us-2026-11-12.csv` in `claude/data/semrush/`). `[VERIFIED from the exports]`
+
+| Page | URL | Primary keyword (US volume, KD) | Secondary keywords |
+|---|---|---|---|
+| Pharmaceutical & Life Sciences | `/industries/pharmaceutical/` | **pharma seo (390, KD 24)** | pharmaceutical seo (320, KD 17); pharmaceutical marketing agency (480, KD 27); pharma seo agency (260, KD 8); life sciences seo (170, KD 5) |
+| Healthcare | `/industries/healthcare/` | **healthcare seo services (3,600, KD 25)** | healthcare seo (4,400, KD 30); medical seo (4,400, KD 28); healthcare seo agency (3,600, KD 25) |
+| B2B SaaS | `/industries/b2b-saas/` | **b2b saas seo (1,300, KD 20)** | saas seo agency (2,900, KD 35); saas seo services (1,600, KD 13); b2b saas marketing agency (1,600, KD 20) |
+| E-commerce | `/industries/ecommerce/` | **ecommerce seo services (8,100, KD 30)** | ecommerce seo (14,800, KD 52); ecommerce seo agency (6,600, KD 41) |
+| Manufacturing | `/industries/manufacturing/` | **manufacturing seo (1,900, KD 36)** | manufacturing marketing agency (1,900, KD 15); industrial seo (1,600, KD 30); seo for manufacturers (1,300, KD 34) |
+| Technology | `/industries/technology/` | **technology seo (1,000, KD 25)** | seo for it companies (880, KD 43); seo for tech companies (590, KD 16); tech seo agency (590, KD 27) |
+| Professional Services | `/industries/professional-services/` | **seo for professional services (390, KD 14)** | professional services seo (320, KD 29); professional services marketing agency (260, KD 42) |
+| Education | `/industries/education/` | **education seo (720, KD 51)** | higher education seo (590, KD 47); seo for schools (590, KD 17); student recruitment marketing (170, KD 14) |
+| Core SEO | `/services/best-search-engine-optimization-services/` | **search engine optimization services (12,100, KD 54)** | seo services (49,500, KD 47); seo agency (60,500, KD 54); seo company (49,500, KD 49); best seo services (5,400, KD 50) |
+| Website Maintenance | `/services/website-maintenance-services/` | **website maintenance services (4,400, KD 21)** | wordpress maintenance services (1,900, KD 28); website maintenance packages (1,600, KD 21); website maintenance company (1,000, KD 8); best website maintenance services (170, KD 17) |
+| AI Growth Systems | `/services/ai-growth-systems/` | **ai growth systems (20, KD n/a)** | ai growth agency (40, KD 14); ai marketing systems (20, KD n/a) |
+| Packages | `/packages/` | **seo packages (6,600, KD 39)** | seo pricing (8,100, KD 55); ai seo pricing (40, KD n/a) |
+| Search Authority Diagnostic | `/search-authority-diagnostic/` | **free seo analysis (3,600, KD 78)** | free seo audit (5,400, KD 82); free website audit (2,400, KD 77) |
+
+Notes `[RECOMMENDATION]`:
+- **AI Growth Systems is a category term, not a traffic term:** 20 US searches a month, and "ai growth system" shows 0. The pillar and Home build the category; traffic comes from the service and industry terms.
+- **Core SEO terms are the largest and hardest:** seo agency 60,500 (KD 54), seo services 49,500 (KD 47), seo company 49,500 (KD 49). The page keeps its production address and title.
+- **The Diagnostic cannot win "free seo audit" soon** (KD 82; free seo analysis 78; free website audit 77), and the name would clash with the paid SEO & AI Search Audit. One FAQ answers the question; the page name stays.
+- **Easiest industry openings:** life sciences seo (170, KD 5), pharma seo agency (260, KD 8), saas seo services (1,600, KD 13), seo for professional services (390, KD 14), manufacturing marketing agency (1,900, KD 15), seo for tech companies (590, KD 16), seo for schools (590, KD 17).
+- **Largest industry terms:** ecommerce seo (14,800, KD 52), ecommerce seo services (8,100, KD 30), healthcare seo and medical seo (4,400 each, KD 30 and 28).
