@@ -214,11 +214,12 @@ function rl_blog_render() {
       <?php while (have_posts()) { the_post();
           $cat = function_exists('rl_post_main_cat') ? rl_post_main_cat(get_the_ID()) : null; /* D-179 */ ?>
       <li class="post">
-        <?php $tl = function_exists('rl_post_data') ? rl_post_data(get_the_ID())['type_label'] : '';
+        <?php $pdx = function_exists('rl_post_data') ? rl_post_data(get_the_ID()) : array(); $tl = !empty($pdx['type_label']) ? $pdx['type_label'] : '';
+          $pdate = !empty($pdx['updated']) ? 'Updated ' . date_i18n('j M Y', strtotime($pdx['updated'])) : get_the_date('j M Y'); /* last-updated date when set */
           if (has_post_thumbnail()) { ?><a class="img" href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true"><?php the_post_thumbnail('medium_large', ['loading' => 'lazy', 'alt' => '']); ?></a><?php }
           else { ?><a class="img ph" href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true"><span><?php echo esc_html($tl ?: 'Article'); ?></span><b><?php echo esc_html($cat && (int) $cat->term_id !== (int) get_option('default_category') ? $cat->name : 'Reinforce Lab'); ?></b></a><?php } ?>
         <div class="body">
-          <span class="meta"><?php if ($tl) echo '<span class="type">' . esc_html($tl) . '</span> · '; ?><time datetime="<?php echo esc_attr(get_the_date('c')); ?>"><?php echo esc_html(get_the_date('j M Y')); ?></time><?php if ($cat && (int) $cat->term_id !== (int) get_option('default_category')) echo ' · <a href="' . esc_url(get_category_link($cat)) . '">' . esc_html($cat->name) . '</a>'; ?></span>
+          <span class="meta"><?php if ($tl) echo '<span class="type">' . esc_html($tl) . '</span> · '; ?><time datetime="<?php echo esc_attr(!empty($pdx['updated']) ? $pdx['updated'] : get_the_date('c')); ?>"><?php echo esc_html($pdate); ?></time><?php if ($cat && (int) $cat->term_id !== (int) get_option('default_category')) echo ' · <a href="' . esc_url(get_category_link($cat)) . '">' . esc_html($cat->name) . '</a>'; ?></span>
           <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
           <p><?php echo esc_html(wp_trim_words(get_the_excerpt(), 28)); ?></p>
           <a class="more" href="<?php the_permalink(); ?>" aria-label="<?php echo esc_attr('Read article: ' . get_the_title()); ?>">Read article &rarr;</a>

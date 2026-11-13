@@ -665,14 +665,16 @@ function rl_render_home() {
         if ($bq->have_posts()) {
           while ($bq->have_posts()) { $bq->the_post();
             $thumb = get_the_post_thumbnail_url(get_the_ID(), 'large');
-            $tl = function_exists('rl_post_data') ? rl_post_data(get_the_ID())['type_label'] : '';
+            $pdx = function_exists('rl_post_data') ? rl_post_data(get_the_ID()) : array();
+            $tl = !empty($pdx['type_label']) ? $pdx['type_label'] : '';
+            $pdate = !empty($pdx['updated']) ? 'Updated ' . date_i18n('j M Y', strtotime($pdx['updated'])) : get_the_date('j M Y'); /* show the last-updated date when a post has one */
             $mc = function_exists('rl_post_main_cat') ? rl_post_main_cat(get_the_ID()) : null;
             $mcn = ($mc && (int) $mc->term_id !== (int) get_option('default_category')) ? $mc->name : ''; ?>
           <a class="cell pcard" href="<?php the_permalink(); ?>">
             <?php if ($thumb) { ?><div class="pthumb" style="background-image:url(<?php echo esc_url($thumb); ?>)"></div>
             <?php } else { ?><div class="pthumb ph" aria-hidden="true"><span><?php echo esc_html($tl ?: 'Article'); ?></span><b><?php echo esc_html($mcn ?: 'Reinforce Lab'); ?></b></div><?php } ?>
             <div class="pbody">
-              <p class="pmeta"><?php if ($tl) echo '<span class="t">' . esc_html($tl) . '</span> · '; ?><?php echo esc_html(get_the_date('j M Y')); ?><?php if ($mcn) echo ' · <span class="c">' . esc_html($mcn) . '</span>'; ?></p>
+              <p class="pmeta"><?php if ($tl) echo '<span class="t">' . esc_html($tl) . '</span> · '; ?><?php echo esc_html($pdate); ?><?php if ($mcn) echo ' · <span class="c">' . esc_html($mcn) . '</span>'; ?></p>
               <h3><?php echo esc_html(get_the_title()); ?></h3>
               <p><?php echo esc_html(wp_trim_words(wp_strip_all_tags(get_the_excerpt()),22)); ?></p>
               <span class="more">Read article &rarr;</span>
