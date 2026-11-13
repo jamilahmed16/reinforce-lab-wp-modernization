@@ -1,0 +1,90 @@
+Keyword,Intent,Volume,Trend,Keyword Difficulty,CPC (USD),Competitive Density,SERP Features,Number of Results
+generative engine optimization,Informational,9900,"0.66,0.81,0.81,0.66,0.81,0.66,0.81,0.81,0.81,0.81,0.81,1.00",24,15.65,0.54,"Sitelinks, AI Overview, Video, People also ask, Discussions and forums, Related searches, Things to know",
+ai workflow automation,Informational,5400,"0.54,0.54,0.66,0.81,1.00,0.54,0.81,1.00,1.00,1.00,0.66,1.00",73,16.27,0.29,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches, Ads bottom",122
+geo seo,,3600,"0.66,0.81,1.00,1.00,0.53,0.53,0.53,0.53,0.53,0.44,0.44,0.53",62,11.46,0.52,"AI Overview, Reviews, Video, Video carousel, People also ask, Related searches, Ads bottom",
+geo vs seo,Commercial,3600,"0.81,0.66,0.53,0.53,0.66,0.53,1.00,0.81,0.81,0.81,0.81,0.81",44,8.00,0.36,"AI Overview, Reviews, Video, People also ask, Related searches",
+llms.txt,,3600,"0.66,0.82,0.82,0.82,0.66,0.66,0.66,1.00,0.82,0.82,0.82,1.00",65,1.43,0.10,"AI Overview, Video, People also ask",
+aeo seo,"Informational, Commercial",2900,"1.00,1.00,0.17,0.22,0.44,0.53,0.22,0.28,0.53,0.67,0.67,0.53",54,7.98,0.22,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches, Ads bottom",133
+ai lead generation,Informational,2900,"0.80,0.80,1.00,0.80,1.00,1.00,0.80,0.80,0.80,0.80,0.80,0.80",52,15.86,0.37,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",
+saas seo,Informational,2900,"0.66,0.53,0.81,1.00,0.35,0.53,0.44,0.44,0.53,0.18,0.53,0.18",34,17.56,0.11,"AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",133
+what is generative engine optimization,Informational,2900,"0.36,0.36,0.36,0.28,0.43,0.54,0.66,0.66,1.00,0.66,0.36,0.66",52,5.70,0.07,"AI Overview, Reviews, Video, People also ask, Related searches",
+google ai overviews,Informational,2400,"0.81,1.00,0.20,0.81,0.16,0.81,0.22,0.81,0.65,0.09,0.16,0.22",86,2.69,0.01,"AI Overview, Video, People also ask, Discussions and forums, Related searches",91
+seo vs geo,Commercial,2400,"0.65,0.82,0.82,0.55,0.65,0.65,0.82,1.00,1.00,1.00,1.00,0.82",47,8.64,0.42,"AI Overview, Video, People also ask, Related searches",
+ai marketing automation,Informational,1900,"0.52,0.52,1.00,0.52,0.08,0.08,0.80,0.80,0.66,0.27,0.66,0.27",64,18.21,0.19,"Sitelinks, AI Overview, Video, Video carousel, People also ask, Related searches, Ads bottom",
+ai visibility tools,Commercial,1900,"0.24,0.34,0.82,0.55,0.65,0.65,0.65,0.65,1.00,0.82,0.82,1.00",50,21.66,0.23,"Sitelinks, AI Overview, Video, People also ask, Related searches, Ads top, Ads bottom, Ads middle",
+what is llms.txt,Informational,1900,"0.07,0.07,0.05,0.05,0.03,0.04,0.08,0.24,1.00,0.29,0.13,0.03",52,1.28,0.25,"AI Overview, Video, People also ask",122
+chatgpt seo,Informational,1600,"0.68,0.84,1.00,0.84,1.00,0.84,0.68,0.84,0.68,0.52,0.52,0.52",49,11.01,0.22,"Sitelinks, AI Overview, Reviews, Video, People also ask, Discussions and forums, Related searches",97
+ai brand monitoring,Informational,1300,"0.25,0.52,1.00,1.00,0.37,0.46,0.68,0.84,0.68,0.52,0.52,0.52",40,23.25,0.03,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches, Ads bottom",125
+ai brand visibility,Informational,1300,"0.31,0.46,1.00,0.52,0.52,0.68,0.84,0.68,0.84,0.52,0.52,0.52",51,19.88,0.50,"AI Overview, Reviews, Video, People also ask, Related searches",132
+entity seo,Informational,1300,"0.62,0.81,1.00,0.81,0.81,0.81,0.55,0.62,0.81,0.62,0.62,0.81",51,3.56,0.17,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",112
+llmo,Informational,1300,"0.52,0.68,0.31,1.00,0.68,0.68,0.68,0.68,0.68,0.52,0.52,0.52",40,9.77,0.27,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",
+aeo marketing,Informational,1000,"0.46,0.37,0.52,0.46,0.52,0.52,0.68,0.84,1.00,0.68,0.68,0.68",59,9.17,0.64,"Sitelinks, AI Overview, Reviews, Video, People also ask, Discussions and forums, Related searches",133
+ai lead generation tools,Commercial,1000,"1.00,0.76,0.76,0.45,0.67,0.67,0.76,0.76,1.00,0.76,0.76,0.76",49,15.90,0.33,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",125
+chatgpt shopping,Informational,1000,"1.00,0.41,0.67,0.80,0.30,0.24,0.67,0.15,0.15,0.41,0.07,0.30",73,5.81,0.33,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",190
+how to rank in ai overviews,Informational,1000,"0.55,0.62,1.00,0.36,0.36,0.36,0.62,0.81,0.81,0.45,0.62,0.55",43,11.90,0.03,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",
+what is answer engine optimization,,880,"0.31,0.25,0.46,0.31,0.11,0.37,0.46,0.84,1.00,0.52,1.00,1.00",42,6.11,0.07,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",75
+ai search visibility tools,Commercial,720,"0.20,0.68,1.00,0.68,0.25,0.25,0.16,0.37,0.16,0.52,0.46,0.52",50,15.41,0.35,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches, Ads top, Ads bottom",130
+geo agency,Informational,720,"0.16,0.13,0.20,0.20,0.30,0.41,0.36,0.54,1.00,0.79,0.79,0.79",42,15.51,0.20,"Sitelinks, AI Overview, Reviews, Video, People also ask, Local pack, Related searches, Ads top",120
+marketing automation examples,Informational,720,"0.59,0.72,1.00,0.88,0.47,0.59,0.32,0.59,0.47,0.11,0.11,0.11",30,4.08,0.10,"AI Overview, Image pack, Video, People also ask, Related searches",102000000
+geo marketing,Informational,590,"0.59,0.59,0.48,0.59,0.59,0.59,0.88,0.88,1.00,0.59,0.48,0.59",31,5.50,0.33,"AI Overview, Reviews, Video, People also ask, Related searches",126
+how to rank in chatgpt,Informational,590,"0.30,0.45,0.45,0.36,0.45,0.45,0.55,0.55,1.00,0.76,0.76,0.76",36,11.40,0.12,"Sitelinks, AI Overview, Video, Video carousel, Short videos, People also ask, Discussions and forums, Related searches",126
+ai overviews seo,Informational,480,"0.39,0.48,0.59,0.48,0.59,1.00,0.59,0.59,0.59,0.11,0.32,0.11",55,11.71,0.05,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches, Ads bottom",134
+ai visibility score,Informational,480,"0.05,0.10,0.55,0.45,0.36,0.45,0.67,0.76,1.00,0.76,0.67,0.76",40,14.61,0.45,"AI Overview, Reviews, Video, People also ask, Related searches",134
+optimize for ai overviews,Informational,480,"0.12,0.36,0.81,1.00,0.54,0.67,0.67,1.00,1.00,0.12,0.12,0.12",69,11.55,0.04,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",129
+pharma digital marketing,Informational,480,"0.29,0.29,0.67,1.00,0.81,0.54,0.67,0.54,0.67,0.12,0.12,0.12",25,12.76,0.34,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",117
+marketing workflow automation,Informational,390,"0.54,0.66,0.81,0.81,0.35,0.44,0.28,0.54,0.81,1.00,0.81,0.18",37,28.42,0.05,"Sitelinks, AI Overview, Video, Video carousel, People also ask, Related searches",518000000
+pharma seo,Informational,390,"0.54,0.66,1.00,0.66,0.81,0.66,0.81,0.66,0.66,0.18,0.18,0.18",24,0.00,0.05,"Reviews, Video, People also ask, Knowledge panel",119
+seo for professional services,Informational,390,"0.81,0.66,0.34,0.34,0.54,1.00,0.43,0.66,0.54,0.66,0.54,0.22",14,0.00,0.01,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",127
+geo for law firms,"Informational, Commercial",320,"0.23,0.36,0.19,0.36,0.36,0.44,0.81,0.81,1.00,0.15,0.15,0.15",9,42.46,0.17,"Sitelinks, AI Overview, Reviews, Video, People also ask",120
+how to get cited by chatgpt,Informational,320,"0.00,0.02,0.02,0.02,0.03,0.07,0.21,0.39,0.72,1.00,1.00,0.32",29,0.00,0.01,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",89
+perplexity seo,Informational,320,"0.19,0.15,0.15,0.23,0.15,0.23,0.54,0.67,0.81,0.67,0.12,1.00",29,8.92,0.23,"AI Overview, Video, People also ask, Discussions and forums, Related searches",
+pharmaceutical seo,"Informational, Commercial",320,"0.66,0.81,0.81,1.00,1.00,0.66,0.66,0.54,0.66,0.22,0.22,0.22",17,0.00,0.05,"Sitelinks, AI Overview, Reviews, Video, People also ask",119
+zero click seo,Informational,320,"0.66,0.81,0.54,0.35,0.66,0.66,1.00,0.81,0.54,0.22,0.22,0.22",38,0.00,0.07,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",130
+ai visibility audit,Informational,260,"0.06,0.16,0.16,0.08,0.16,0.24,0.36,0.24,0.55,0.62,0.62,1.00",25,18.90,0.66,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",124
+how to optimize content for llms,Informational,260,"0.00,0.02,0.05,0.01,0.00,1.00,0.07,0.07,0.08,0.04,0.04,0.04",33,7.20,0.05,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask",135
+zero click content,Informational,260,"0.54,0.81,1.00,0.66,0.54,0.54,0.29,0.35,0.29,0.22,0.22,0.22",35,0.00,0.09,"AI Overview, Reviews, Image pack, Video, People also ask, Related searches",130
+ai agent for marketing,Informational,210,"0.52,0.28,0.52,0.52,0.43,0.28,0.43,1.00,0.80,0.80,0.65,0.52",34,14.40,0.32,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",126
+ai agents for seo,Informational,210,"0.28,0.12,0.53,0.12,0.23,0.82,1.00,1.00,0.82,0.82,0.28,0.28",17,14.55,0.33,"AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",113
+faq schema seo,Informational,210,"1.00,0.80,0.65,0.65,1.00,0.65,0.52,0.52,0.52,0.34,0.34,0.34",36,0.00,0.03,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",127
+large language model optimization,Informational,210,"1.00,0.15,1.00,0.21,1.00,0.09,0.81,0.81,0.53,0.34,0.34,0.34",39,21.13,0.03,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",122
+brand mentions in ai,Informational,170,"0.17,0.12,0.17,0.53,1.00,0.43,0.82,0.66,0.10,0.28,0.43,0.66",20,0.00,0.00,"Sitelinks, AI Overview, Video, People also ask, Related searches",127
+entity optimization,Informational,170,"0.34,0.53,0.65,0.43,0.43,0.65,0.65,0.65,1.00,1.00,1.00,1.00",14,3.66,0.10,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",117
+life sciences seo,Informational,170,"0.80,0.66,0.66,0.80,0.80,0.80,1.00,1.00,0.80,0.52,0.52,0.52",5,0.00,0.03,"Sitelinks, AI Overview, Reviews, Video, People also ask, Ads bottom",133
+llm tracking tools,Informational,170,"0.06,0.15,0.66,0.23,0.29,0.12,0.36,0.02,0.54,1.00,1.00,0.15",39,19.14,0.22,"Sitelinks, AI Overview, Reviews, People also ask, Related searches",94
+what is entity seo,Informational,170,"0.43,0.65,0.81,0.65,1.00,0.06,0.81,0.43,0.53,0.34,0.34,0.34",49,0.00,0.03,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",112
+ai seo vs traditional seo,Commercial,140,"0.12,0.28,0.07,0.17,0.53,0.12,0.23,0.66,0.82,0.28,0.82,1.00",40,6.28,0.02,"Sitelinks, AI Overview, Video, People also ask, Discussions and forums, Related searches",120
+generative engine optimization vs seo,Commercial,140,"0.22,0.35,0.22,0.14,0.35,0.22,0.35,1.00,0.54,0.18,0.22,0.18",50,3.86,0.34,"Sitelinks, AI Overview, Reviews, Video, People also ask, Discussions and forums, Related searches",133
+pharmaceutical content marketing,Informational,140,"0.53,0.42,0.65,0.65,1.00,0.53,0.53,0.34,0.34,0.26,0.34,0.26",15,0.00,0.12,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",124
+answer engine optimization strategy,Informational,90,"0.21,0.50,0.50,0.50,0.78,0.78,0.78,0.64,1.00,0.78,0.50,0.50",52,16.31,0.21,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",131
+ai growth marketing,Informational,70,"0.29,0.64,0.23,0.23,0.52,1.00,0.64,0.41,0.64,0.41,0.41,0.41",24,14.52,0.31,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches",107
+geo consultant,,70,"0.02,0.02,0.02,0.02,0.06,0.06,0.04,0.02,0.04,0.29,0.14,1.00",,4.12,0.06,,
+geo for saas,Informational,70,"0.00,0.03,0.00,0.26,0.53,0.53,0.80,1.00",18,0.00,0.00,"Sitelinks, AI Overview, Video, People also ask, Related searches",117
+structured data for ai search,,70,"0.03,0.12,0.12,0.12,0.12,0.06,0.15,0.21,0.65,0.65,1.00,1.00",33,0.00,0.00,"Sitelinks, AI Overview, Reviews, Video, Related searches",113
+ai search content strategy,Informational,50,"0.03,0.03,0.03,0.07,0.26,0.11,0.11,0.53,1.00,0.42,0.42,0.42",47,11.19,0.10,"AI Overview, Video, Video carousel, People also ask, Related searches",130
+llm seo strategy,Informational,50,"0.33,0.22,0.22,0.44,0.55,0.55,0.77,0.77,1.00,0.77,1.00,1.00",21,10.66,0.26,"AI Overview, Reviews, Video, Video carousel, People also ask, Discussions and forums, Related searches",126
+schema markup for ai search,Informational,50,"0.18,0.27,0.36,0.18,0.63,0.45,0.63,0.63,1.00,1.00,1.00,1.00",28,7.36,0.09,"Sitelinks, AI Overview, Reviews, Video, Video carousel, People also ask, Related searches",119
+ai agents vs automation,Commercial,40,"0.44,0.55,0.44,0.22,0.22,0.22,0.33,0.77,1.00,0.77,1.00,0.77",26,3.54,0.26,"AI Overview, Reviews, Video, People also ask, Discussions and forums, Related searches",117
+generative engine optimization ecommerce,,40,"0.00,0.00,0.00,0.00,0.00,0.00,0.09,1.00,0.27,0.81,1.00,0.63",,0.00,0.00,,
+how to create llms.txt,,40,"0.71,0.71,0.28,0.28,0.28,0.28,0.14,0.57,0.57,0.57,0.57,1.00",,2.85,0.51,,
+ai automation for marketing,Informational,30,"0.28,0.57,0.57,0.28,0.28,0.28,0.28,0.42,0.57,0.71,0.71,1.00",64,28.25,0.13,"Sitelinks, AI Overview, Video, Video carousel, People also ask, Related searches",130
+ai marketing system,,30,"0.22,0.22,0.22,0.22,0.22,0.22,0.22,0.22,0.44,0.77,0.77,1.00",,16.66,0.52,,
+how to automate marketing with ai,,30,"0.18,0.18,0.18,0.18,0.18,0.18,0.18,0.18,0.18,0.18,1.00,0.18",,0.00,0.03,,
+how to write for ai search,,30,"0.50,0.50,0.50,0.50,0.50,0.50,0.50,0.75,1.00,0.75,0.75,0.75",,4.61,0.70,,
+ai growth engine,,20,"1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,6.47,0.49,,
+ai seo audit checklist,,20,"0.25,0.50,0.50,0.75,0.50,0.00,0.25,1.00,0.75,0.75,0.75,1.00",,0.00,0.00,,
+answer first content,,20,"0.50,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,0.00,0.02,,
+does llms.txt work,,20,"0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,1.62,0.20,,
+evidence based content,,20,"1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,0.00,0.33,,
+generative engine optimization audit,,20,"0.11,0.00,0.00,0.00,0.00,0.00,0.00,0.11,0.22,0.44,0.55,1.00",,0.00,0.33,,
+geo agency pricing,,20,"0.00,0.14,0.14,0.28,0.28,0.28,0.14,0.00,1.00",,0.00,0.00,,
+geo tracking tools,,20,"1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,9.90,0.37,,
+how to choose a geo agency,,20,"0.00,0.00,0.00,0.28,1.00,0.71,0.14",,0.00,0.00,,
+knowledge panel seo,,20,"1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,0.00,0.29,,
+b2b lead generation system,,10,"0.33,0.00,0.00,0.33,0.66,0.33,0.66,0.66,0.33,0.66,0.66,1.00",,0.00,0.00,,
+content for ai overviews,,10,"0.00,1.00,0.60,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00",,0.00,0.00,,
+how to rank products in chatgpt,,10,"0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.66,0.66,1.00,0.66,0.33",,0.00,0.00,,
+ai search professional services,,0,"0.00,0.00,0.00,0.00",,0.00,0.00,,
+best ai seo agents,,0,"1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00",,0.00,0.00,,
+ecommerce seo ai,,0,"0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00",,0.00,0.00,,
+seo automation with ai,,0,"1.00,1.00,1.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00",,0.00,0.00,,
+zero click search examples,,0,"1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00",,0.00,0.00,,
