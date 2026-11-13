@@ -1,10 +1,20 @@
 <p>A robots.txt file is a small text file that tells search engines which parts of your website they may crawl. It sits at the root of your site, for example <code>https://example.com/robots.txt</code>. Every well-behaved crawler reads it before it looks at anything else.</p>
-<p>This guide explains what the file does, what it cannot do, how to write one, and how to check it. Every rule here comes from Google's own documentation, which is linked at the end.</p>
+<p>This robots.txt guide explains what the file does, what it cannot do, how to write one, and how to check it. Every rule here comes from Google's own documentation, which is linked at the end.</p>
 
 <h2>What is a robots.txt file?</h2>
 <p>A robots.txt file is a plain text file with rules for web crawlers. A crawler is the program a search engine uses to read web pages. Search engine crawlers are also called bots or spiders. Googlebot is Google's crawler. Bingbot is Bing's.</p>
 <p>Each rule says which crawler it is for and which paths that crawler may or may not open. Rules are also called directives. Google says the file is used mainly to manage crawler traffic, so your server is not overloaded with requests.</p>
 <p>The rules follow a standard called the Robots Exclusion Protocol. If a site has no robots.txt file, crawlers assume they may crawl everything.</p>
+
+<h2>How does a robots.txt file work?</h2>
+<p>Here is what happens when a search engine visits your site:</p>
+<ol>
+<li>The crawler first asks for <code>https://yourdomain.com/robots.txt</code>.</li>
+<li>If the file loads, the crawler reads it and finds the group of rules that names it. If no group names it, it uses the group for <code>*</code>.</li>
+<li>For each address it wants to visit, it checks the rules. If a <code>Disallow</code> rule matches, it skips that address.</li>
+<li>It then crawls the addresses that are allowed, and uses your <code>Sitemap</code> line to find more.</li>
+</ol>
+<p>The rules are a request, not a lock. Google and other respected web crawlers follow them. Some crawlers do not. That is why robots.txt files are good for managing crawling and poor for keeping things secret.</p>
 
 <h2>Why is robots.txt important for SEO?</h2>
 <p>Search engines do not have unlimited time for your site. SEO people call that time your crawl budget. Robots.txt helps crawlers spend it on the pages that matter.</p>
@@ -14,7 +24,18 @@
 <li><strong>It can keep media files out of Google.</strong> Google says you can use it to stop images, video and audio files from showing in search results.</li>
 <li><strong>It points crawlers to your sitemap.</strong> One line tells them where the list of your important pages is.</li>
 </ul>
-<p>A mistake here can also do real harm. One wrong line can block your entire site from being crawled. That is why this file deserves care.</p>
+<p>A good SEO robots.txt file is short and careful. A mistake here can also do real harm. One wrong line can block your entire site from being crawled. That is why this file deserves care.</p>
+
+<h2>How does robots.txt help with crawl budget?</h2>
+<p>Google cannot crawl every page on the web. It gives each site a limited amount of crawling time and effort. SEO people call this your crawl budget. Google says it depends on two things: how much crawling your server can handle, and how much Google wants to crawl your content.</p>
+<p>Google also says crawl budget matters mainly for two kinds of sites: very large sites (about 1 million pages or more) and medium or large sites (about 10,000 pages or more) whose content changes every day. If you run a small business site, you probably do not need to worry about it.</p>
+<p>For sites where it does matter, Google gives clear advice about robots.txt:</p>
+<ul>
+<li><strong>Block pages you never want crawled.</strong> Good examples are endless internal search results and differently sorted copies of the same page. Blocking them stops Google spending time on them.</li>
+<li><strong>Do not use noindex for this.</strong> Google still has to fetch the page to see the tag, so the crawling time is wasted.</li>
+<li><strong>Do not use robots.txt to move crawl budget around for a short time.</strong> Google will not shift the saved effort to other pages unless it is already hitting your site's limit.</li>
+<li><strong>Return a 404 or 410 for pages you removed for good.</strong> A blocked address stays in the crawl queue much longer than an error page.</li>
+</ul>
 
 <h2>What can robots.txt not do?</h2>
 <p>This is the part most guides get wrong, so read it twice.</p>
@@ -38,7 +59,7 @@ Allow: /
 
 Sitemap: https://www.example.com/sitemap.xml</code></pre>
 <p>In plain words: Googlebot may not crawl any address that starts with <code>/nogooglebot/</code>. Every other crawler may crawl the whole site. The sitemap is at the address shown.</p>
-<p>Google supports four fields in this file:</p>
+<p>Google supports four fields in this file. They are often called robots.txt directives. The <code>Disallow</code> directive blocks a path, and the <code>Allow</code> directive opens one. Together with the user agent and sitemap lines, that is the whole language:</p>
 <table>
 <thead><tr><th>Field</th><th>What it does</th><th>Example</th></tr></thead>
 <tbody>
@@ -48,7 +69,7 @@ Sitemap: https://www.example.com/sitemap.xml</code></pre>
 <tr><td><code>Sitemap</code></td><td>The full address of your sitemap.</td><td><code>Sitemap: https://example.com/sitemap.xml</code></td></tr>
 </tbody>
 </table>
-<p>Google does not support <code>crawl-delay</code>. Lines it does not understand are ignored.</p>
+<p>Google does not support the <code>crawl-delay</code> directive, which some other search engine bots read. Lines it does not understand are ignored.</p>
 
 <h2>How do you create a robots.txt file?</h2>
 <p>Google describes four steps: create the file, add rules, upload it, and test it.</p>
@@ -89,6 +110,20 @@ Disallow: /?s=</code></pre>
 <p>Then open the robots.txt report in Google Search Console. Google lists it as the way to find and fix problems in a file that is already live.</p>
 <p>Check the file again after every site change, launch or migration. Google usually keeps a copy for up to 24 hours, so a change may take a day to be picked up.</p>
 
+<h2>How does Google choose between rules that clash?</h2>
+<p>Sooner or later you will write two rules that both match one address. Google has a clear method. It uses the most specific rule, which is the one with the longest path. If two rules conflict, it uses the least restrictive one, which means the one that allows crawling.</p>
+<p>These examples come from Google's own documentation:</p>
+<table>
+<thead><tr><th>Address</th><th>Your rules</th><th>Rule that applies</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td><code>/page</code></td><td><code>Allow: /p</code> and <code>Disallow: /</code></td><td><code>Allow: /p</code></td><td>It is more specific</td></tr>
+<tr><td><code>/folder/page</code></td><td><code>Allow: /folder</code> and <code>Disallow: /folder</code></td><td><code>Allow: /folder</code></td><td>When rules clash, Google uses the least restrictive one</td></tr>
+<tr><td><code>/page.htm</code></td><td><code>Allow: /page</code> and <code>Disallow: /*.htm</code></td><td><code>Disallow: /*.htm</code></td><td>The path is longer, so it is more specific</td></tr>
+<tr><td><code>/</code> (home page)</td><td><code>Allow: /$</code> and <code>Disallow: /</code></td><td><code>Allow: /$</code></td><td>The dollar sign matches only the home page</td></tr>
+</tbody>
+</table>
+<p>Two symbols help you write exact rules. The star (<code>*</code>) matches any run of characters. The dollar sign (<code>$</code>) marks the end of the address. Use them sparingly and test after every change.</p>
+
 <h2>Robots.txt examples you can copy</h2>
 <p>These are the rules most sites need. Change the paths to match your own site.</p>
 <h3>Allow everything</h3>
@@ -119,6 +154,46 @@ Allow: /</code></pre>
 <pre><code>Sitemap: https://www.example.com/sitemap.xml</code></pre>
 <p>Use the full address. You can list more than one sitemap, each on its own line.</p>
 
+<h2>Robots.txt for WordPress</h2>
+<p>If your site runs on WordPress, you can usually edit robots.txt from an SEO plugin such as Yoast SEO, without touching files on the server. A common starting point looks like this:</p>
+<pre><code>User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Disallow: /?s=
+
+Sitemap: https://www.example.com/sitemap_index.xml</code></pre>
+<p>This keeps crawlers out of the admin area and out of internal search results. It still allows the one admin file that some themes and plugins need on the public site. Do not block the folders that hold your styles and scripts. Google warns that blocking files a page needs can stop it from understanding the page properly.</p>
+
+<h2>Robots.txt examples for different kinds of sites</h2>
+<p>The right rules depend on the site. These are starting points to adapt, not templates to paste.</p>
+<h3>An online store</h3>
+<p>Stores often create thousands of addresses from filters and sorting options, such as <code>?sort=price</code>. These near-copies waste crawl effort.</p>
+<pre><code>User-agent: *
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /*?sort=
+Disallow: /*?filter=</code></pre>
+<p>Keep your category and product pages open. Block only the parameters that create copies, and check them first so you do not block pages that rank.</p>
+<h3>A blog or company site</h3>
+<p>Small sites need very little. Block the admin area and internal search, add the sitemap, and stop there.</p>
+<h3>A site under development</h3>
+<p>Do not use robots.txt to hide a test site. A blocked address can still appear in Google if someone links to it. Protect it with a password. Then, when you launch, check that you did not carry the "block everything" rule across to the live site.</p>
+
+<h2>How do you fix robots.txt problems?</h2>
+<p>When pages are missing from Google or the wrong ones appear, work through this table:</p>
+<table>
+<thead><tr><th>What you see</th><th>Likely cause</th><th>What to do</th></tr></thead>
+<tbody>
+<tr><td>Whole site missing from Google</td><td>A <code>Disallow: /</code> rule for all crawlers</td><td>Remove the rule, then request a recrawl in Search Console</td></tr>
+<tr><td>A blocked page still shows in results, with no description</td><td>Other sites link to it, so Google knows the address</td><td>To remove it, use noindex or a password, and unblock it so Google can see the tag</td></tr>
+<tr><td>Pages look broken in Google's preview</td><td>Styles or scripts are blocked</td><td>Allow the folders those files sit in</td></tr>
+<tr><td>A new rule does not seem to work</td><td>Google keeps a copy of the file for up to 24 hours</td><td>Wait a day, then check again</td></tr>
+<tr><td>The rule blocks too much or too little</td><td>A path is missing a slash, or letters are the wrong case</td><td>Check the path against the real address and test it</td></tr>
+<tr><td>Google cannot read the file</td><td>The server returns an error for robots.txt</td><td>Fix the server so the file returns a normal response</td></tr>
+</tbody>
+</table>
+<p>In Search Console, the robots.txt report shows the file Google found and any lines it could not use. A page marked as blocked by robots.txt in the page indexing report should be one you chose to block.</p>
+
 <h2>What are the most common robots.txt mistakes?</h2>
 <ul>
 <li><strong>Blocking the entire site.</strong> The directive <code>Disallow: /</code> under <code>User-agent: *</code> stops all crawling. This is often left over from a test site.</li>
@@ -138,6 +213,23 @@ Allow: /</code></pre>
 <li><strong>Write a comment above each rule.</strong> Say why it is there, so the next person does not have to guess.</li>
 <li><strong>Check Search Console.</strong> A page marked as blocked by robots.txt there should be one you meant to block.</li>
 <li><strong>Review the file after every launch or migration.</strong> Test sites often carry a rule that blocks everything.</li>
+</ul>
+
+<h2>Robots.txt and your sitemap</h2>
+<p>A robots.txt file tells crawlers where not to go. An XML sitemap tells them what you want found. They work together. Google says sitemaps are a good way to show which content you want crawled, as opposed to which content it can or cannot crawl. Put the full sitemap address in your robots.txt file, and make sure no page in your sitemap is blocked by a <code>Disallow</code> rule. A page that is both listed and blocked sends mixed signals.</p>
+
+<h2>Robots.txt checklist before you publish</h2>
+<p>Run through this list every time you change the file:</p>
+<ul>
+<li>The file is named <code>robots.txt</code> and sits at the root of the site.</li>
+<li>It is plain text in UTF-8, saved from a text editor, not a word processor.</li>
+<li>No rule blocks pages you want to rank, or the style and script files they need.</li>
+<li>There is no <code>Disallow: /</code> under <code>User-agent: *</code> unless you mean it.</li>
+<li>Each path starts with a slash and has the right letter case.</li>
+<li>Your sitemap address is listed in full.</li>
+<li>You decided on purpose whether to allow AI search crawlers.</li>
+<li>You tested the file in a private browser window and in Search Console.</li>
+<li>Each subdomain has its own file.</li>
 </ul>
 
 <h2>Robots.txt and AI crawlers</h2>
