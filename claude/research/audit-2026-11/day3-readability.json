@@ -1,0 +1,317 @@
+[
+ {
+  "path": "/",
+  "grade": 8.8,
+  "words": 1586,
+  "lede": 33,
+  "answer_first": true,
+  "faq": 6,
+  "ext": 8,
+  "inn": 142,
+  "out": 25,
+  "hard": [
+   "28.8   3  Generative Engine Optimization.",
+   "19.8  32  Our flagship AI system that continuously researches your market, verifies every claim against real evidence, produces high-value content, and monitors your visibility across Google and AI search, then improves itself ove"
+  ]
+ },
+ {
+  "path": "services",
+  "grade": 8.8,
+  "words": 848,
+  "lede": 34,
+  "answer_first": true,
+  "faq": 6,
+  "ext": 0,
+  "inn": 38,
+  "out": 32,
+  "hard": [
+   "32.4  62  Reinforce Lab offers services in four groups: search engine optimization (core, technical, enterprise, international and local SEO, plus audits); AI search and content (AI Search Optimization, GEO, LLM Optimization, SEO",
+   "22.0  33  Reinforce Lab services cover search engine optimization, AI search optimization, content systems, marketing automation, lead generation and executive AI consulting, engineered to work together as one AI Growth System , n"
+  ]
+ },
+ {
+  "path": "services/ai-growth-systems",
+  "grade": 7.3,
+  "words": 1384,
+  "lede": 54,
+  "answer_first": true,
+  "faq": 9,
+  "ext": 2,
+  "inn": 22,
+  "out": 19,
+  "hard": [
+   "21.4   4  Technical specifications made findable.",
+   "19.4   5  Content for multi-stakeholder buying committees."
+  ]
+ },
+ {
+  "path": "services/ai-search-optimization",
+  "grade": 7.4,
+  "words": 2060,
+  "lede": 56,
+  "answer_first": true,
+  "faq": 10,
+  "ext": 5,
+  "inn": 26,
+  "out": 24,
+  "hard": [
+   "22.5   7  Separate visibility for healthcare-professional and patient questions.",
+   "21.9  42  AI Search Optimization (AISO), also called AI optimization (AIO) or AI SEO, is the work of making a brand visible, accurately described and recommended when people ask AI search tools (such as ChatGPT, Perplexity, Gemini"
+  ]
+ },
+ {
+  "path": "services/generative-engine-optimization",
+  "grade": 7.3,
+  "words": 1578,
+  "lede": 54,
+  "answer_first": true,
+  "faq": 9,
+  "ext": 1,
+  "inn": 7,
+  "out": 18,
+  "hard": [
+   "24.3   4  Generative engine optimization services.",
+   "21.5  43  Generative Engine Optimization (GEO) is the practice of structuring and writing content so that generative AI search engines (such as ChatGPT, Perplexity, Gemini and Google AI Overviews) can retrieve it, extract a clear"
+  ]
+ },
+ {
+  "path": "services/seo-ai-search-audit",
+  "grade": 7.0,
+  "words": 1507,
+  "lede": 52,
+  "answer_first": true,
+  "faq": 9,
+  "ext": 3,
+  "inn": 13,
+  "out": 18,
+  "hard": [
+   "21.8   5  Catalogue and spec-sheet indexability reviewed.",
+   "17.5  32  Reinforce Lab\u2019s SEO audit services are delivered as the SEO & AI Search Audit : a one-time, in-depth review of your technical health, content, authority, competitors and visibility in Google and AI search."
+  ]
+ },
+ {
+  "path": "services/seo-content-systems",
+  "grade": 7.0,
+  "words": 1629,
+  "lede": 58,
+  "answer_first": true,
+  "faq": 9,
+  "ext": 2,
+  "inn": 50,
+  "out": 18,
+  "hard": [
+   "16.8  27  SEO content systems turn SEO content writing into a repeatable process: research, a topic map, briefs, your experts' knowledge, human-edited writing, publishing, internal links and scheduled refreshes.",
+   "16.5  36  Good SEO content writing services start from research into the search and the reader, interview your experts, have a person edit every page, cite their sources, and report results by page instead of counting words delive"
+  ]
+ },
+ {
+  "path": "services/marketing-automation",
+  "grade": 8.2,
+  "words": 1349,
+  "lede": 58,
+  "answer_first": true,
+  "faq": 8,
+  "ext": 4,
+  "inn": 41,
+  "out": 18,
+  "hard": [
+   "24.1   5  Enquiry-to-application journeys for prospective students.",
+   "21.4   4  Distributor and dealer communications."
+  ]
+ },
+ {
+  "path": "services/ai-workflow-automation",
+  "grade": 7.1,
+  "words": 1555,
+  "lede": 70,
+  "answer_first": true,
+  "faq": 9,
+  "ext": 3,
+  "inn": 9,
+  "out": 18,
+  "hard": [
+   "24.3   4  Service reports summarised automatically.",
+   "22.0  41  AI workflow automation uses AI models and integrations to handle repetitive work that involves reading, sorting and writing: triaging emails and tickets, extracting data from documents, drafting replies, updating your CR"
+  ]
+ },
+ {
+  "path": "services/enterprise-seo-strategy",
+  "grade": 7.9,
+  "words": 1899,
+  "lede": 57,
+  "answer_first": true,
+  "faq": 9,
+  "ext": 1,
+  "inn": 6,
+  "out": 18,
+  "hard": [
+   "21.0   3  Template-level technical SEO.",
+   "18.7  39  Reinforce Lab's enterprise SEO services set the standards your templates, releases and migrations must meet, get fixes shipped through your engineering process, and build authority within Google's link policies, then rep"
+  ]
+ },
+ {
+  "path": "services/technical-seo-services",
+  "grade": 7.3,
+  "words": 1869,
+  "lede": 47,
+  "answer_first": true,
+  "faq": 9,
+  "ext": 2,
+  "inn": 20,
+  "out": 18,
+  "hard": [
+   "19.9  42  Google\u2019s web.dev guidance says a good experience means Largest Contentful Paint within 2.5 seconds, Interaction to Next Paint of 200 milliseconds or less, and Cumulative Layout Shift of 0.1 or less, measured at the 75th",
+   "17.7  40  A good technical SEO agency or consultant shows you the evidence for each problem (crawl data, server logs, Search Console), explains the fix in plain language, protects the URLs that already earn traffic, and re-crawls"
+  ]
+ },
+ {
+  "path": "services/international-seo",
+  "grade": 8.7,
+  "words": 1673,
+  "lede": 51,
+  "answer_first": true,
+  "faq": 9,
+  "ext": 2,
+  "inn": 8,
+  "out": 18,
+  "hard": [
+   "24.1   5  Market-specific comparison and alternatives content.",
+   "18.8  34  Google compares the options: country-code domains send the clearest country signal but cost more to run; subdomains are easy to separate; subdirectories on one domain are the lowest maintenance; URL parameters are not re"
+  ]
+ },
+ {
+  "path": "services/llm-optimization",
+  "grade": 7.1,
+  "words": 1608,
+  "lede": 46,
+  "answer_first": true,
+  "faq": 8,
+  "ext": 4,
+  "inn": 12,
+  "out": 18,
+  "hard": [
+   "19.4   9  Company, plant, certification and capability facts aligned across directories.",
+   "17.5   7  Organization and person markup linking official profiles."
+  ]
+ },
+ {
+  "path": "services/lead-generation-systems",
+  "grade": 7.4,
+  "words": 1448,
+  "lede": 69,
+  "answer_first": true,
+  "faq": 8,
+  "ext": 2,
+  "inn": 14,
+  "out": 18,
+  "hard": [
+   "24.3  58  A lead generation system connects every step between a buyer\u2019s first search and a closed deal: the channels that attract them, the landing pages and forms that convert them, the qualification and routing that get the rig",
+   "22.2  52  Lead generation systems connect every step between a buyer's first search and a closed deal: the channels that attract them, the landing pages and forms that convert them, the qualification and routing that get the right"
+  ]
+ },
+ {
+  "path": "services/ai-consulting-services",
+  "grade": 7.7,
+  "words": 1496,
+  "lede": 61,
+  "answer_first": true,
+  "faq": 8,
+  "ext": 3,
+  "inn": 8,
+  "out": 18,
+  "hard": [
+   "27.0  58  Since the Digital Omnibus on AI took effect on 27 July 2026, providers and deployers of AI systems must take measures to support the development of AI literacy among the staff and others who operate or use AI on their be",
+   "22.3  48  Gartner predicted that at least 30% of generative AI projects would be abandoned after proof of concept by the end of 2025, because of poor data quality, inadequate risk controls, escalating costs or unclear business val"
+  ]
+ },
+ {
+  "path": "services/local-seo",
+  "grade": 8.2,
+  "words": 1627,
+  "lede": 55,
+  "answer_first": true,
+  "faq": 9,
+  "ext": 2,
+  "inn": 18,
+  "out": 18,
+  "hard": [
+   "21.0   3  Location & service-area pages.",
+   "21.0   3  LocalBusiness structured data."
+  ]
+ },
+ {
+  "path": "services/press-release-services",
+  "grade": 7.2,
+  "words": 1669,
+  "lede": 56,
+  "answer_first": true,
+  "faq": 8,
+  "ext": 2,
+  "inn": 13,
+  "out": 18,
+  "hard": [
+   "20.6  47  Reinforce Lab's digital PR services build stories from original data and expert insight, pitch them to the journalists who cover your field, and earn the coverage, links and mentions that build your authority in Google a",
+   "19.8  45  Cision's 2026 survey of 1,899 journalists in 19 markets is the brief we work to. are most likely to engage with a pitch relevant to their beat, audience or coverage area. reject a pitch that isn't relevant to their audie"
+  ]
+ },
+ {
+  "path": "services/best-search-engine-optimization-services",
+  "grade": 7.0,
+  "words": 1860,
+  "lede": 56,
+  "answer_first": true,
+  "faq": 8,
+  "ext": 1,
+  "inn": 38,
+  "out": 23,
+  "hard": [
+   "23.3  42  Google lists the services a good SEO provides: a review of your site content or structure, technical advice on development (hosting, redirects, error pages, JavaScript), content development, keyword research, SEO trainin",
+   "18.7  43  What we can promise is the work that makes rankings likely: a site Google can crawl and index, pages that answer searches better than the alternatives, and authority earned the right way, with every change explained and"
+  ]
+ },
+ {
+  "path": "services/wordpress-website-design-service",
+  "grade": 7.4,
+  "words": 1290,
+  "lede": 49,
+  "answer_first": true,
+  "faq": 8,
+  "ext": 5,
+  "inn": 16,
+  "out": 18,
+  "hard": [
+   "23.8  44  A WordPress website design service plans, designs and builds a website on WordPress: discovery and sitemap, wireframes, visual design, content, development, SEO foundations, performance, accessibility, integrations with",
+   "21.8   5  Accessibility for EU e-commerce requirements."
+  ]
+ },
+ {
+  "path": "services/ecommerce-website-design-service",
+  "grade": 7.4,
+  "words": 1267,
+  "lede": 52,
+  "answer_first": true,
+  "faq": 8,
+  "ext": 2,
+  "inn": 9,
+  "out": 18,
+  "hard": [
+   "24.3   4  Accessibility for every customer.",
+   "22.8  44  E-commerce website design plans, designs and builds an online store: category and navigation structure, product pages, search and filters, cart and checkout, payments, shipping and tax, integrations with stock, ERP and e"
+  ]
+ },
+ {
+  "path": "services/website-maintenance-services",
+  "grade": 8.0,
+  "words": 1363,
+  "lede": 52,
+  "answer_first": true,
+  "faq": 8,
+  "ext": 3,
+  "inn": 8,
+  "out": 18,
+  "hard": [
+   "25.3  53  They cover software updates for WordPress core, plugins and themes; off-site backups and restore tests; security and vulnerability monitoring; uptime monitoring; speed and Core Web Vitals; SEO health such as broken links",
+   "21.0   3  Confidential enquiries protected."
+  ]
+ }
+]
