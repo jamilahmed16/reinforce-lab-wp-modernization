@@ -10,12 +10,12 @@ Batch 1 (seven posts: 1, 2, 6, 8, 11, 21, 22) is written first, in that order of
 | 2 | GEO vs SEO: What Changes and What Stays the Same | geo vs seo (3,600 / KD 44) | seo vs geo (2,400 / KD 47); generative engine optimization vs seo (140 / KD 50); ai seo vs traditional seo (140 / KD 40) | HIGH: 6,000 combined, KD mid 40s | 1 |
 | 3 | What Is Answer Engine Optimization (AEO)? (absorbs post 12) | what is answer engine optimization (880 / KD 42) | aeo seo (2,900 / KD 54); answer engine optimization (6,600 / KD 60); aeo marketing (1,000 / KD 59); aeo services (1,300 / KD 21); answer engine optimization strategy (90 / KD 52) | HIGH but hard head term; write for the question form | 2 |
 | 4 | How to Show Up in Google AI Overviews: A Practical Checklist | how to rank in ai overviews (1,000 / KD 43) | optimize for ai overviews (480 / KD 69); ai overviews seo (480 / KD 55); google ai overviews (2,400 / KD 86) | MEDIUM: head term KD 86, aim at the how-to form | 3 |
-| 5 | ChatGPT SEO: How to Get Cited by ChatGPT and Perplexity | chatgpt seo (1,600 / KD 49) | how to rank in chatgpt (590 / KD 36); how to get cited by chatgpt (320 / KD 29); perplexity seo (320 / KD 29) | HIGH: about 2,800 combined, KD 29 to 49 | 2 |
+| 5 | ChatGPT SEO: How to Use It for SEO and How to Show Up in It | chatgpt seo (1,600 / KD 49) | how to use chatgpt for seo (320 / KD 33); chatgpt seo tool (880 / KD 22); chatgpt for seo (590 / KD 38); how to rank in chatgpt (590 / KD 36); how to get cited by chatgpt (320 / KD 29); perplexity seo (320 / KD 29); is chatgpt bad for seo (110 / KD 20) | HIGH: the term has two meanings (using ChatGPT for SEO, and SEO for ChatGPT), so one post answers both | 2 |
 | 6 | How to Check If AI Tools Mention Your Brand (A 30-Minute Test) | ai brand visibility (1,300 / KD 51) | ai brand monitoring (1,300 / KD 40); ai visibility score (480 / KD 40); brand mentions in ai (170 / KD 20); ai visibility tracking (1,300 / KD 57) | HIGH: CPC near $20; feeds the diagnostic | 1 |
-| 7 | AI Visibility Tools: What They Track and How to Choose One | ai visibility tools (1,900 / KD 50) | ai search visibility tools (720 / KD 50); llm tracking tools (170 / KD 39); ai visibility tracking (1,300 / KD 57) | MEDIUM: commercial, CPC $21.66; buyer guide, no tool claims we cannot check | 3 |
+| 7 | AI Visibility Tools for B2B: What They Track and How to Choose One | ai brand visibility tool (1,900 / KD 6) | ai visibility tools (1,900 / KD 50, CPC $21.66); best ai visibility tools for b2b companies (1,300 / KD 28); ai search visibility tools (720 / KD 50); tools to track ai search visibility chatgpt gemini perplexity (720 / KD 22); best ai search visibility tools (590 / KD 41) | HIGH: KD 6 head variant and a B2B form at KD 28; top 10 are vendor lists, so write a buyer guide with no tool claims we cannot check | 1 |
 | 8 | AI Search Audit: A 10-Step Checklist | ai search audit (480 / KD 16) | ai visibility audit (260 / KD 25); ai seo audit (590 / KD 66) | MEDIUM: small but easy (KD 16 to 25); best fit for the diagnostic | 1 |
 | 9 | Zero-Click Searches: What They Are and How to Win Anyway (update of an existing URL) | zero click searches (1,300 / KD 50) | zero click seo (320 / KD 38); zero click content (260 / KD 35); zero click search (480 / KD 50) | MEDIUM: existing URL, update not new | 3 |
-| 10 | Entity SEO: How AI Tools Learn Who You Are (absorbs post 13) | entity seo (1,300 / KD 51) | what is entity seo (170 / KD 49); entity optimization (170 / KD 14); faq schema seo (210 / KD 36); structured data for ai search (70 / KD 33); schema markup for ai search (50 / KD 28) | MEDIUM: KD 51, schema folded in | 3 |
+| 10 | Entity SEO: How AI Tools Learn Who You Are (absorbs post 13) | entity seo (1,300 / KD 51) | entity based seo (590 / KD 50); entities in seo (390 / KD 46); entity-based seo (390 / KD 36); what are entities in seo (320 / KD 50); how to find entities for seo optimization (210 / KD 8); how to find related entities seo (210 / KD 9); faq schema seo (210 / KD 36) | MEDIUM-HIGH: 8,600 variation volume; two easy how-to questions at KD 8 and 9 become sections | 2 |
 | 11 | LLM Optimization (LLMO): What It Is and How to Start | llm seo (1,900 / KD 42) | llm optimization (880 / KD 41); llmo (1,300 / KD 40); large language model optimization (210 / KD 39); how to optimize content for llms (260 / KD 33) | HIGH: about 4,300 combined, KD 40 to 42 | 1 |
 | 12 | GEO for Law Firms (replaces answer-first content) | geo for law firms (320 / KD 9) | seo for professional services (390 / KD 14) | NEW: tiny but KD 9, CPC $42; the old answer-first idea (about 20 searches) is folded into post 3 | 4 |
 | 13 | (merged into post 10) | faq schema seo (210 / KD 36) | none | DROPPED as a standalone: 50 to 210 searches | dropped |
@@ -30,7 +30,7 @@ Batch 1 (seven posts: 1, 2, 6, 8, 11, 21, 22) is written first, in that order of
 | 22 | Pharma SEO: How Pharmaceutical Companies Get Found | pharma seo (390 / KD 24) | pharmaceutical seo (320 / KD 17); pharma digital marketing (480 / KD 25); life sciences seo (170 / KD 5) | HIGH: about 1,400 combined, KD 5 to 25; your own background | 1 |
 | 23 | AI Visibility Score: What It Measures and How to Calculate One (replaces e-commerce) | ai visibility score (480 / KD 40) | ai brand monitoring (1,300 / KD 40); chatgpt shopping (1,000 / KD 73) | NEW: 480 at KD 40; e-commerce AI search is deferred (chatgpt shopping KD 73, rest about zero) | 4 |
 | 24 | SEO for Professional Services: Winning the "Who Should I Hire" Search | seo for professional services (390 / KD 14) | geo for law firms (320 / KD 9) | MEDIUM: 390 at KD 14 | 4 |
-| 25 | How to Choose a GEO Agency: Services, Cost and Questions to Ask | generative engine optimization agency (1,900 / KD 29) | geo agency (720 / KD 42); geo services (1,300 / KD 34); geo consultant (70 / KD n/a); how to choose a geo agency (20 / KD n/a) | HIGH: about 4,000 combined, KD 29 to 42; commercial | 2 |
+| 25 | How to Choose a GEO Agency: Services, Cost and Questions to Ask | generative engine optimization agency (1,900 / KD 29) | geo agency (720 / KD 42); b2b geo agency (260 / KD 18); geo agency for saas (260 / KD 12); geo services (1,300 / KD 34); how much does a geo agency cost (40); what should i look for when hiring a geo agency (30) | HIGH: say "generative engine optimization" in full, because "geo agency" also pulls geospatial results; top 10 average domain strength is only 35 | 2 |
 
 ## What the data changed
 
@@ -43,3 +43,21 @@ Batch 1 (seven posts: 1, 2, 6, 8, 11, 21, 22) is written first, in that order of
 
 ## Next, for the first batch (1, 2, 6, 8, 11, 21, 22): a Keyword Overview screenshot for each head term, as for pros and cons, so I get the variations, questions and top 10.
 Head terms: generative engine optimization; geo vs seo; ai brand visibility; ai search audit; llm seo; saas seo; pharma seo.
+
+## Keyword Overview data received 14 Nov 2026 (US, desktop; screenshots in `claude/data/semrush/overview-*-2026-11-14.png`)
+
+| Term | Volume | KD | CPC | Intent | Variations (total volume) | Questions (total volume) | Top 10 average domain strength |
+|---|---|---|---|---|---|---|---|
+| ai search visibility tools | 720 | 50 | $15.41 | Commercial | 2.2K (29.0K) | 44 (430) | 59; zapier, tryprofound, exposureninja |
+| geo agency | 720 | 42 | $15.51 | Informational | 2.4K (21.1K) | 118 (590) | 35; thedigitalelevator, geodigital.agency |
+| entity seo | 1,300 | 51 | $3.56 | Informational | 545 (8.6K) | 48 (1.5K) | 60; searchengineland, ahrefs, neilpatel |
+| chatgpt seo | 1,600 | 49 | $11.01 | Informational | 1.7K (27.7K) | 168 (2.2K) | 74; reddit, chatgpt.com, semrush |
+| ai visibility tools | 1,900 | 50 | $21.66 | Commercial | 8.9K (98.8K) | 259 (2.8K) | 50; zapier, frase, tryprofound |
+
+What it changes:
+- **Post 7:** the variation "ai brand visibility tool" has 1,900 searches at KD 6, and "best ai visibility tools for b2b companies" has 1,300 at KD 28. The cluster is the largest in the plan (98.8K variation volume), and the top 10 are vendor lists. Post 7 moves to batch 1.
+- **Post 5:** "chatgpt seo" means two things: using ChatGPT to do SEO (chatgpt seo tool 880, how to use chatgpt for seo 320) and getting found in ChatGPT (how to rank in chatgpt 590). One post covers both in two clear sections.
+- **Post 25:** "geo agency" is mixed with geospatial agencies in the keyword ideas, so the post always says generative engine optimization in full. Top 10 pages are weak (average domain strength 35).
+- **Post 10:** entity seo has 8,600 variation volume, with two easy questions (how to find entities for seo optimization, how to find related entities seo, both about 210 at KD 8 to 9).
+- Terms seen only in the ideas lists (for example "chatgpt seo for roofers", 590 at KD 2) are niche variants, not post topics.
+- Still needed for batch 1: Keyword Overview screenshots for generative engine optimization, geo vs seo, ai brand visibility, ai search audit, llm seo, saas seo, pharma seo.
