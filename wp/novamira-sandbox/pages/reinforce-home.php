@@ -657,7 +657,11 @@ function rl_render_home() {
       <div class="head bl-top"><span class="ey"><b>[</b>&nbsp;Insights&nbsp;<b>]</b></span><h2>From the blog.</h2><p class="lede">Field notes on AI Search, GEO, evidence-based content, and building growth systems that keep improving.</p></div>
       <div class="bl-posts">
         <?php
-        $bq = new WP_Query(array('post_type'=>'post','posts_per_page'=>3,'post_status'=>'publish','ignore_sticky_posts'=>true));
+        /* Featured posts (13 Nov 2026): the three posts that carry the home page message, in this order.
+           Edit this list to change them. If any is missing or unpublished, the latest posts fill the gap. */
+        $feat = array(330, 362, 364); /* What Is an AI Growth System?, B2B SEO strategy, B2B SEO agencies guide */
+        $bq = new WP_Query(array('post_type'=>'post','posts_per_page'=>3,'post_status'=>'publish','ignore_sticky_posts'=>true,'post__in'=>$feat,'orderby'=>'post__in'));
+        if ($bq->post_count < 3) { wp_reset_postdata(); $bq = new WP_Query(array('post_type'=>'post','posts_per_page'=>3,'post_status'=>'publish','ignore_sticky_posts'=>true)); }
         if ($bq->have_posts()) {
           while ($bq->have_posts()) { $bq->the_post();
             $thumb = get_the_post_thumbnail_url(get_the_ID(), 'large');
