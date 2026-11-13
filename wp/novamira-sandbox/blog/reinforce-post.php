@@ -22,6 +22,27 @@ add_action('wp_head', function () { if (!rl_is_post_view()) return; ?>
 <style id="rl-av-img">.av img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 30%}.av:has(img){padding:0;overflow:hidden}</style>
 <?php }, 24);
 
+/* 13 Nov 2026 (Jamil): the author box is the width of one FAQ column, left aligned with the FAQs (their right edge ends where the box ends).
+   Every layout that lists FAQs and sources in two columns gets it. One rule here, not one per layout. Below 901 px the box keeps that width
+   but stacks the photo over the text; below the layout's own breakpoint (where FAQs stack) it is full width. */
+add_action('wp_head', function () { if (!rl_is_post_view()) return; ?>
+<style id="rl-author-half">
+@media(min-width:701px){
+  .rl-guide .g-author,.rl-howto .h-author,.rl-exp .e-author,.rl-list .l-author,.rl-review .r-author{width:calc((100% - clamp(24px,4vw,48px))/2)}
+}
+@media(min-width:761px){
+  .rl-ind .i-author,.rl-cs .cs-author,.rl-cmp .c-author,.rl-pd .p-author,.rl-rs .r-author,.rl-upd .u-author{width:calc((100% - clamp(24px,4vw,48px))/2)}
+}
+@media(min-width:701px) and (max-width:900px){
+  .rl-guide .g-author,.rl-howto .h-author,.rl-exp .e-author,.rl-list .l-author,.rl-review .r-author{grid-template-columns:minmax(0,1fr)}
+}
+@media(min-width:761px) and (max-width:900px){
+  .rl-ind .i-author,.rl-cs .cs-author,.rl-cmp .c-author,.rl-pd .p-author,.rl-rs .r-author,.rl-upd .u-author{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+<?php }, 30);
+
+
 
 /* The approved post types (D-074). Key = stored value. */
 function rl_post_types() {
