@@ -40,12 +40,13 @@ function html(j) {
   return `<!doctype html><html><head><meta charset="utf-8"><style>${css}
 *{box-sizing:border-box;margin:0}
 body{width:1200px;height:630px;background:#121011;color:#f3ede6;font-family:'IBM Plex Sans',sans-serif;position:relative;overflow:hidden}
-.glow{position:absolute;right:-180px;top:-220px;width:720px;height:720px;background:radial-gradient(circle,rgba(153,0,0,.42),rgba(153,0,0,0) 65%)}
+.glow{position:absolute;right:-180px;top:-220px;width:720px;height:720px;background:radial-gradient(circle,rgba(153,0,0,${j.glow ?? .42}),rgba(153,0,0,0) 65%)}
 .rail{position:absolute;left:56px;top:0;bottom:0;border-left:1px dashed #3a3130}.rail2{position:absolute;right:56px;top:0;bottom:0;border-left:1px dashed #3a3130}
 .logo{position:absolute;left:96px;top:44px;height:34px}
 .ey{position:absolute;left:96px;top:122px;font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:.18em;color:#e85050;text-transform:uppercase}
 h1{position:absolute;left:96px;top:168px;width:1010px;height:330px;font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;line-height:1.04;letter-spacing:.005em;overflow:hidden}
 h1 span.r{color:#c11414;display:block}
+h1 span.k{color:#c11414}
 h1 .nb{white-space:nowrap}
 h1,h1 span.r{text-wrap:balance}
 .row{position:absolute;left:96px;right:96px;bottom:52px;height:34px;display:flex;gap:6px}
@@ -53,7 +54,7 @@ h1,h1 span.r{text-wrap:balance}
 .row i.r{background:#990000;border-color:#990000}
 </style></head><body><div class="glow"></div><div class="rail"></div><div class="rail2"></div>
 <img class="logo" src="${logo}"><div class="ey">[ ${esc(j.eyebrow)} ]</div>
-<h1 id="t">${esc(j.white)}${j.red ? `<span class="r">${esc(j.red)}</span>` : ''}</h1>
+<h1 id="t">${j.mono ? esc(j.white + (j.red ? ': ' + j.red : '')) : j.hl ? esc(j.white + (j.red ? ': ' + j.red : '')).replace(esc(j.hl), `<span class="k">${esc(j.hl)}</span>`) : esc(j.white) + (j.red ? `<span class="r">${esc(j.red)}</span>` : '')}</h1>
 <div class="row">${cells(j.id)}</div></body></html>`;
 }
 
