@@ -1,0 +1,79 @@
+{
+ "batch": "b02-433-492-400",
+ "posts": {
+  "433": 432,
+  "492": 491,
+  "400": 399
+ },
+ "old_attachments": [
+  {
+   "attachment_id": 432,
+   "file": "2022/02/How-to-use-keywords-in-Content.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2022/02/How-to-use-keywords-in-Content.jpg",
+   "title": "How to use keywords in Content",
+   "alt": "How to use keywords in Content",
+   "date": "2026-10-12 07:18:45",
+   "parent": 0,
+   "files": [
+    "2022/02/How-to-use-keywords-in-Content.jpg",
+    "2022/02/How-to-use-keywords-in-Content-300x162.jpg",
+    "2022/02/How-to-use-keywords-in-Content-150x150.jpg",
+    "2022/02/How-to-use-keywords-in-Content-768x414.jpg",
+    "2022/02/How-to-use-keywords-in-Content-400x250.jpg",
+    "2022/02/How-to-use-keywords-in-Content-400x284.jpg",
+    "2022/02/How-to-use-keywords-in-Content-510x382.jpg",
+    "2022/02/How-to-use-keywords-in-Content-400x420.jpg",
+    "2022/02/How-to-use-keywords-in-Content-480x258.jpg"
+   ]
+  },
+  {
+   "attachment_id": 491,
+   "file": "2022/11/What-Is-Martech-Why-Need-Digital-Marketing-Technology-Stack.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2022/11/What-Is-Martech-Why-Need-Digital-Marketing-Technology-Stack.jpg",
+   "title": "What Is Martech Why Need Digital Marketing Technology Stack",
+   "alt": "What Is Martech, What Is a Martech Stack, Digital Marketing Technology Stack, Marketing Technology Stack, Marketing Technology Solutions, Technology Marketing Solutions, Technology And Marketing Strategy, Marketing And Information Technology Strategies And Tactics, Martech Marketing Technology, Marketing Technology Martech",
+   "date": "2026-10-12 07:19:21",
+   "parent": 0,
+   "files": [
+    "2022/11/What-Is-Martech-Why-Need-Digital-Marketing-Technology-Stack.jpg",
+    "2022/11/What-Is-Martech-Why-Need-Digital-Marketing-Technology-Stack-300x161.jpg",
+    "2022/11/What-Is-Martech-Why-Need-Digital-Marketing-Technology-Stack-150x150.jpg",
+    "2022/11/What-Is-Martech-Why-Need-Digital-Marketing-Technology-Stack-768x413.jpg",
+    "2022/11/What-Is-Martech-Why-Need-Digital-Marketing-Technology-Stack-610x328.jpg",
+    "2022/11/What-Is-Martech-Why-Need-Digital-Marketing-Technology-Stack-400x250.jpg",
+    "2022/11/What-Is-Martech-Why-Need-Digital-Marketing-Technology-Stack-400x284.jpg",
+    "2022/11/What-Is-Martech-Why-Need-Digital-Marketing-Technology-Stack-510x382.jpg",
+    "2022/11/What-Is-Martech-Why-Need-Digital-Marketing-Technology-Stack-400x420.jpg",
+    "2022/11/What-Is-Martech-Why-Need-Digital-Marketing-Technology-Stack-480x258.jpg",
+    "2022/11/What-Is-Martech-Why-Need-Digital-Marketing-Technology-Stack-300x300.jpg",
+    "2022/11/What-Is-Martech-Why-Need-Digital-Marketing-Technology-Stack-600x323.jpg",
+    "2022/11/What-Is-Martech-Why-Need-Digital-Marketing-Technology-Stack-100x100.jpg"
+   ]
+  },
+  {
+   "attachment_id": 399,
+   "file": "2021/08/Content-Marketing-Strategy-for-B2B.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2021/08/Content-Marketing-Strategy-for-B2B.jpg",
+   "title": "Content Marketing Strategy for B2B",
+   "alt": "Content Marketing Strategy for B2B, Why Content Marketing is important for B2B, B2B Content Marketing Strategy, what is B2B content marketing, B2B content marketing",
+   "date": "2026-10-12 07:18:18",
+   "parent": 0,
+   "files": [
+    "2021/08/Content-Marketing-Strategy-for-B2B.jpg",
+    "2021/08/Content-Marketing-Strategy-for-B2B-300x162.jpg",
+    "2021/08/Content-Marketing-Strategy-for-B2B-150x150.jpg",
+    "2021/08/Content-Marketing-Strategy-for-B2B-768x414.jpg",
+    "2021/08/Content-Marketing-Strategy-for-B2B-400x250.jpg",
+    "2021/08/Content-Marketing-Strategy-for-B2B-400x284.jpg",
+    "2021/08/Content-Marketing-Strategy-for-B2B-510x382.jpg",
+    "2021/08/Content-Marketing-Strategy-for-B2B-400x420.jpg",
+    "2021/08/Content-Marketing-Strategy-for-B2B-480x258.jpg"
+   ]
+  }
+ ],
+ "new": {
+  "433": 545,
+  "492": 546,
+  "400": 547
+ }
+}
