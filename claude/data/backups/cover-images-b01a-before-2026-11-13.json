@@ -1,0 +1,31 @@
+{
+ "batch": "b01a",
+ "posts": {
+  "456": 455
+ },
+ "old_attachments": [
+  {
+   "attachment_id": 455,
+   "file": "2022/01/Robots.txt-for-SEO.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2022/01/Robots.txt-for-SEO.jpg",
+   "title": "Robots.txt for SEO",
+   "alt": "Robots.txt for SEO",
+   "date": "2026-10-12 07:18:58",
+   "parent": 0,
+   "files": [
+    "2022/01/Robots.txt-for-SEO.jpg",
+    "2022/01/Robots.txt-for-SEO-300x162.jpg",
+    "2022/01/Robots.txt-for-SEO-150x150.jpg",
+    "2022/01/Robots.txt-for-SEO-768x414.jpg",
+    "2022/01/Robots.txt-for-SEO-400x250.jpg",
+    "2022/01/Robots.txt-for-SEO-400x284.jpg",
+    "2022/01/Robots.txt-for-SEO-510x382.jpg",
+    "2022/01/Robots.txt-for-SEO-400x420.jpg",
+    "2022/01/Robots.txt-for-SEO-480x258.jpg"
+   ]
+  }
+ ],
+ "new": {
+  "456": 529
+ }
+}

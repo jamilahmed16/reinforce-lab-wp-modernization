@@ -1,0 +1,31 @@
+{
+ "batch": "b01x490",
+ "posts": {
+  "490": 489
+ },
+ "old_attachments": [
+  {
+   "attachment_id": 489,
+   "file": "2022/02/What-is-Keyword-Difficulty.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2022/02/What-is-Keyword-Difficulty.jpg",
+   "title": "What is Keyword Difficulty",
+   "alt": "What is keyword Difficulty?",
+   "date": "2026-10-12 07:19:20",
+   "parent": 0,
+   "files": [
+    "2022/02/What-is-Keyword-Difficulty.jpg",
+    "2022/02/What-is-Keyword-Difficulty-300x162.jpg",
+    "2022/02/What-is-Keyword-Difficulty-150x150.jpg",
+    "2022/02/What-is-Keyword-Difficulty-768x414.jpg",
+    "2022/02/What-is-Keyword-Difficulty-400x250.jpg",
+    "2022/02/What-is-Keyword-Difficulty-400x284.jpg",
+    "2022/02/What-is-Keyword-Difficulty-510x382.jpg",
+    "2022/02/What-is-Keyword-Difficulty-400x420.jpg",
+    "2022/02/What-is-Keyword-Difficulty-480x258.jpg"
+   ]
+  }
+ ],
+ "new": {
+  "490": 539
+ }
+}
