@@ -13,7 +13,7 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 |---|---|---|---|---|---|
 | 33 | Home | [/](https://reinforcelab.online/) | publish | [`pages/reinforce-home.php`](../wp/novamira-sandbox/pages/reinforce-home.php) | Reinforce Lab \| AI Growth Systems, AI Search & SEO |
 
-## Company (14)
+## Company (15)
 
 | ID | Page | URL | Status | Renders from | SEO title |
 |---|---|---|---|---|---|
@@ -31,6 +31,7 @@ Single blog posts: [`blog/reinforce-post.php`](../wp/novamira-sandbox/blog/reinf
 | 503 | Legal Statement | [/legal-statement/](https://reinforcelab.online/legal-statement/) | publish | [`pages/reinforce-legal.php`](../wp/novamira-sandbox/pages/reinforce-legal.php) | Legal Statement \| Reinforce Lab |
 | 504 | Careers | [/careers/](https://reinforcelab.online/careers/) | publish | [`pages/reinforce-careers.php`](../wp/novamira-sandbox/pages/reinforce-careers.php) | Careers \| Reinforce Lab |
 | 505 | WP Engine Agency Partner | [/agency-partner-program-wp-engine-landing/](https://reinforcelab.online/agency-partner-program-wp-engine-landing/) | publish | [`pages/reinforce-wpengine.php`](../wp/novamira-sandbox/pages/reinforce-wpengine.php) | WP Engine Agency Partner: Hosting Set Up by Reinforce Lab |
+| 514 | Get Your Free Diagnostic | [/get-diagnostic/](https://reinforcelab.online/get-diagnostic/) | publish | [`saos/reinforce-lp-diagnostic.php`](../wp/novamira-sandbox/saos/reinforce-lp-diagnostic.php) | Free Search Authority Diagnostic: Request Yours \| Reinforce Lab |
 
 ## Projects (3)
 
