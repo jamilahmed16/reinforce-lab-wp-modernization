@@ -21,7 +21,7 @@ Batch 1 (seven posts: 1, 2, 6, 8, 11, 21, 22) is written first, in that order of
 | 13 | (merged into post 10) | faq schema seo (210 / KD 36) | none | DROPPED as a standalone: 50 to 210 searches | dropped |
 | 14 | What Is llms.txt and Should You Add One? | llms.txt (3,600 / KD 65) | what is llms.txt (1,900 / KD 52); how to create llms.txt (40 / KD n/a); does llms.txt work (20 / KD n/a) | HIGH: 5,500 combined, KD 52 to 65; our own file is a live example | 2 |
 | 15 | Pharmaceutical Content Marketing: Evidence, Review and Visibility | pharmaceutical content marketing (140 / KD 15) | evidence based content (20 / KD n/a); pharma digital marketing (480 / KD 25) | STRATEGIC: 140 searches, KD 15; supports the Pharma page and your positioning | 4 |
-| 16 | AI Growth System Examples: Five Loops You Can Build | ai growth marketing (70 / KD 24) | ai marketing system (30 / KD n/a); ai growth engine (20 / KD n/a) | STRATEGIC ONLY: 70 searches; builds the category, not traffic | 4 |
+| 16 | How to Build an AI Marketing System: Architecture and Human Review (was: AI growth system examples) | how to build ai marketing agent system architecture (260 / KD 26) | ai marketing system (30); how to build a human-in-the-loop ai marketing system (40 / KD 26); ai growth marketing (70 / KD 24) | MEDIUM: the questions cluster has 380 searches in total; fits the category and the agents pages; moved up from batch 4 | 3 |
 | 17 | Marketing Workflow Automation With AI: Where to Start | marketing workflow automation (390 / KD 37) | ai workflow automation (5,400 / KD 73); ai automation for marketing (30 / KD 64); how to automate marketing with ai (30 / KD n/a) | MEDIUM: head term 5,400 but KD 73; target the KD 37 form first | 3 |
 | 18 | Marketing Automation Examples: What to Automate With and Without AI | marketing automation examples (720 / KD 30) | ai marketing automation (1,900 / KD 64); ai agents vs automation (40 / KD 26) | MEDIUM-HIGH: 720 at KD 30 | 2 |
 | 19 | AI Agents for SEO: What They Can and Cannot Do | seo ai agent (480 / KD 39) | ai agents for seo (210 / KD 17); ai seo agent (390 / KD 43); ai agent for marketing (210 / KD 34) | MEDIUM: about 1,300 combined, KD 17 to 43 | 3 |
@@ -61,3 +61,17 @@ What it changes:
 - **Post 10:** entity seo has 8,600 variation volume, with two easy questions (how to find entities for seo optimization, how to find related entities seo, both about 210 at KD 8 to 9).
 - Terms seen only in the ideas lists (for example "chatgpt seo for roofers", 590 at KD 2) are niche variants, not post topics.
 - Still needed for batch 1: Keyword Overview screenshots for generative engine optimization, geo vs seo, ai brand visibility, ai search audit, llm seo, saas seo, pharma seo.
+
+## Keyword Overview data received 14 Nov 2026, second set (US, desktop)
+
+| Term | Volume | KD | CPC | Variations (total volume) | Questions (total volume) | Reading |
+|---|---|---|---|---|---|---|
+| llm seo strategy | 50 | 21 | $10.66 | 45 (330) | 2 (10) | Tiny. Use as a heading phrase in the LLM post (best tool to implement llm seo strategy 90 at KD 26; llm seo strategies 2025, 70 at KD 24). Top 10: reddit, marketermilk, resultfirst; average domain strength 57 |
+| ai marketing system | 30 | n/a | $16.66 | 350 (6.6K) | 21 (380) | The only solid demand is the build questions: how to build ai marketing agent system architecture (260 at KD 26) and how to build a human-in-the-loop ai marketing system (40 at KD 26). The biggest variations (cold email marketing system ai automation platform 2026, 3.6K at KD 34; ai systems integrator niche, 1.0K at KD 4) look like long, odd phrasings tied to other products, so they are not used as post topics |
+| ai search content strategy | 50 | 47 | $11.19 | 182 (1.1K) | 15 (80) | Small. One useful variation: ai search citation content strategy (140 at KD 22), which becomes a section on getting cited. Top 10: storyblok, tryprofound, hubspot, google.com; average domain strength 66. Confirms folding the answer-first idea into post 3 |
+| geo consultant | 70 | n/a | $4.12 | 659 (4.5K) | 19 (50) | Small and noisy: the 1.0K variation is "consultant seo geo paris" (a local French-language query), not our topic. Usable secondary terms for post 25: geo consultants (140 at KD 49), generative engine optimization geo platforms consulting services (140 at KD 31). No top 10 shown, so no competitor read from this one |
+
+What it changes:
+- **Post 16** is retitled around building an AI marketing system, because that is where the real searches are, and moves to batch 3.
+- **Posts 3, 11 and 25** keep their plans; these terms are headings and secondary phrases, not new posts.
+- The screenshot for ai search content strategy arrived twice (identical); one copy is kept.
