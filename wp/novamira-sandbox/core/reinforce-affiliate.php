@@ -43,7 +43,7 @@ function rl_aff_names($names) {
 }
 function rl_aff_note($names) {
     $who = $names ? rl_aff_names($names) : 'our partners';
-    return '<p class="rl-adnote"><b>Ad:</b> this page contains affiliate links to ' . esc_html($who) . ', each marked "Ad". If you buy through them we earn a commission, at no extra cost to you. It does not change what we recommend. <a href="' . esc_url(home_url('/ftc-disclosure/')) . '">How we handle affiliate links</a>.</p>';
+    return '<p class="rl-adnote"><b>Ad:</b> this page contains affiliate links to ' . esc_html($who) . ', each one marked as an affiliate link. If you buy through them we earn a commission, at no extra cost to you. It does not change what we recommend. <a href="' . esc_url(home_url('/ftc-disclosure/')) . '">How we handle affiliate links</a>.</p>';
 }
 
 add_filter('the_content', function ($html) {
@@ -70,9 +70,30 @@ add_filter('the_content', function ($html) {
     return $html;
 }, 20);
 
+/* 13 Nov 2026 (Jamil): the carried review posts end each section with a plain text link ("Get Started Now") followed by an "Ad" chip.
+   Button-type affiliate links (id="single-post-btn", 15 posts, 4 to 7 each) are now drawn as a real button in the brand style with a specific label
+   ("Try <partner>"), the duplicate id becomes a class, and the "Ad" chip is replaced by a plain caption under the button. The disclosure is not
+   dropped: the "Ad:" note at the top of the page stays, rel="sponsored nofollow" stays, and each button says it is an affiliate link. Post text is not edited. */
+add_filter('the_content', function ($html) {
+    if (!is_singular() || is_admin() || strpos($html, 'single-post-btn') === false) return $html;
+    return preg_replace_callback('#<a\s([^>]*\bid=("|\')single-post-btn\2[^>]*)>(.*?)</a>(\s*<span class="rl-ad"[^>]*>Ad</span>)?#is', function ($m) {
+        $attrs = $m[1]; $label = trim(wp_strip_all_tags($m[3]));
+        $partner = preg_match('#data-aff="([^"]+)"#', $attrs, $dm) ? html_entity_decode($dm[1]) : '';
+        $attrs = preg_replace('#\s*\bid=("|\')single-post-btn\1#i', '', $attrs);
+        if (preg_match('#\bclass=("|\')(.*?)\1#i', $attrs, $cm)) $attrs = str_replace($cm[0], 'class="' . esc_attr($cm[2] . ' rl-aff-btn') . '"', $attrs); else $attrs .= ' class="rl-aff-btn"';
+        $text = $partner !== '' ? 'Try ' . $partner : ($label !== '' ? $label : 'Visit the site');
+        return '<a ' . trim($attrs) . '>' . esc_html($text) . ' <span aria-hidden="true">&rarr;</span></a><span class="rl-aff-cap">Affiliate link: we earn a commission if you buy, at no extra cost to you.</span>';
+    }, $html);
+}, 25);
+
 add_action('wp_head', function () {
     if (!is_singular()) return; ?>
 <style id="rl-aff-css">
+.rl-aff-btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;background:var(--bg-2,#171314);border:1px solid var(--red,#990000);color:var(--ink,#f3ede6)!important;font-family:var(--f-display,'Oswald',sans-serif);font-size:16px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;text-decoration:none!important;box-shadow:0 0 22px rgba(153,0,0,.25);transition:background .2s,box-shadow .2s}
+.rl-aff-btn:before{content:'+';color:var(--red-3,#e85050);font-family:var(--f-mono,monospace);font-size:15px}
+.rl-aff-btn:hover{background:var(--red,#990000);box-shadow:0 0 28px rgba(153,0,0,.45)}
+.rl-aff-btn:focus-visible{outline:2px solid var(--red-3,#e85050);outline-offset:3px}
+.rl-aff-cap{display:block;margin-top:8px;font-size:13px;line-height:1.4;color:var(--ink-faint,#8f857d)}
 .rl-ad{display:inline-block;margin-left:4px;padding:0 5px;border:1px solid var(--red-line,rgba(226,59,59,.35));font-family:var(--f-mono,monospace);font-size:12px;line-height:1.5;letter-spacing:.1em;text-transform:uppercase;color:var(--red-3,#e85050);vertical-align:middle}
 .rl-adnote{border:1px solid var(--red-line,rgba(226,59,59,.35));background:rgba(153,0,0,.08);padding:12px 14px;font-size:14.5px;color:var(--ink-dim,#b9b0a8);margin:0 0 22px}
 .rl-adnote b{color:var(--red-3,#e85050)}.rl-adnote a{color:var(--ink,#f3ede6)}
