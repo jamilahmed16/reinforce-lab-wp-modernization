@@ -106,7 +106,7 @@ function rl_industry_render($c) {
       <?php if ($standfirst !== '') { ?><p class="i-stand"><?php echo esc_html($standfirst); ?></p><?php } ?>
       <?php if ($meta) { ?><dl class="i-meta n<?php echo count($meta); ?>"><?php foreach ($meta as $r) echo '<div' . ($r[2] ? ' class="' . $r[2] . '"' : '') . '><dt>' . esc_html($r[0]) . '</dt><dd>' . ($r[2] === 'rev' ? $ok : '') . esc_html($r[1]) . '</dd></div>'; ?></dl><?php } ?>
       <div class="i-by">
-        <span class="who"><span class="av" aria-hidden="true"><?php echo esc_html(mb_substr($c['aname'], 0, 1)); ?></span><?php echo $c['founder'] ? '<a href="' . $c['about'] . '#founder">' . esc_html($c['aname']) . '</a>' : esc_html($c['aname']); ?></span>
+        <span class="who"><span class="av" aria-hidden="true"><?php echo rl_av_inner($c['aname']); ?></span><?php echo $c['founder'] ? '<a href="' . $c['about'] . '#founder">' . esc_html($c['aname']) . '</a>' : esc_html($c['aname']); ?></span>
         <span>Published <time datetime="<?php echo esc_attr(get_the_date('c', $id)); ?>"><b><?php echo esc_html(get_the_date('j M Y', $id)); ?></b></time></span>
         <?php if ($d['updated'] !== '') { ?><span class="fresh">Updated <time datetime="<?php echo esc_attr($d['updated']); ?>"><b><?php echo esc_html(date_i18n('j M Y', strtotime($d['updated']))); ?></b></time></span><?php } ?>
       </div>
@@ -196,7 +196,7 @@ function rl_industry_render($c) {
   <?php } ?>
 
   <aside class="i-author" aria-label="About the author">
-    <span class="av" aria-hidden="true"><?php echo esc_html(mb_substr($c['aname'], 0, 1)); ?></span>
+    <span class="av" aria-hidden="true"><?php echo rl_av_inner($c['aname']); ?></span>
     <div>
       <p class="nm"><?php echo esc_html($c['aname']); ?></p>
       <?php if ($c['founder']) { ?>

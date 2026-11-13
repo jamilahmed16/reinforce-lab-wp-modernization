@@ -8,6 +8,21 @@ if (!defined('ABSPATH')) exit;
 
 function rl_is_post_view() { return !is_admin() && is_singular('post'); }
 
+/* 13 Nov 2026 (Jamil): the author tile shows the founder's photo when one is saved (options rl_about_founder_photo and _id, also used by the
+   About page and the Person schema), and the first letter otherwise. One helper for the byline tile and the author box in every post layout. */
+function rl_av_inner($name) {
+    $id = (int) get_option('rl_about_founder_photo_id');
+    if ($id && function_exists('rl_about_person') && $name === rl_about_person()['name']) {
+        $src = wp_get_attachment_image_url($id, 'medium');
+        if ($src) return '<img src="' . esc_url($src) . '" alt="' . esc_attr($name) . '" width="150" height="152" loading="lazy" decoding="async">';
+    }
+    return esc_html(mb_substr($name, 0, 1));
+}
+add_action('wp_head', function () { if (!rl_is_post_view()) return; ?>
+<style id="rl-av-img">.av img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 30%}.av:has(img){padding:0;overflow:hidden}</style>
+<?php }, 24);
+
+
 /* The approved post types (D-074). Key = stored value. */
 function rl_post_types() {
     return [
@@ -414,7 +429,7 @@ function rl_post_output() {
     <?php } ?>
 
     <aside class="author" aria-label="About the author">
-      <div class="av" aria-hidden="true"><?php echo esc_html(mb_substr($aname, 0, 1)); ?></div>
+      <div class="av" aria-hidden="true"><?php echo rl_av_inner($aname); ?></div>
       <div>
         <p class="nm"><?php echo esc_html($aname); ?></p>
         <?php if ($founder) { ?>

@@ -161,7 +161,7 @@ function rl_research_render($c) {
       <h1 class="r-h1"><?php echo $h1; ?></h1>
       <?php if ($standfirst !== '') { ?><p class="r-stand"><?php echo esc_html($standfirst); ?></p><?php } ?>
       <div class="r-by">
-        <span class="who"><span class="av" aria-hidden="true"><?php echo esc_html(mb_substr($c['aname'], 0, 1)); ?></span><?php echo $c['founder'] ? '<a href="' . $c['about'] . '#founder">' . esc_html($c['aname']) . '</a>' : esc_html($c['aname']); ?></span>
+        <span class="who"><span class="av" aria-hidden="true"><?php echo rl_av_inner($c['aname']); ?></span><?php echo $c['founder'] ? '<a href="' . $c['about'] . '#founder">' . esc_html($c['aname']) . '</a>' : esc_html($c['aname']); ?></span>
         <span>Published <time datetime="<?php echo esc_attr(get_the_date('c', $id)); ?>"><b><?php echo esc_html(get_the_date('j M Y', $id)); ?></b></time></span>
         <?php $upd = $d['updated'] !== '' ? $d['updated'] : (($x['versions'] && $x['versions'][0]['date'] > get_the_date('Y-m-d', $id) && $x['versions'][0]['date'] <= current_time('Y-m-d')) ? $x['versions'][0]['date'] : ''); ?>
         <?php if ($upd !== '') { ?><span>Updated <time datetime="<?php echo esc_attr($upd); ?>"><b><?php echo esc_html(date_i18n('j M Y', strtotime($upd))); ?></b></time></span><?php } ?>
@@ -297,7 +297,7 @@ function rl_research_render($c) {
   <?php } ?>
 
   <aside class="r-author" aria-label="About the author">
-    <span class="av" aria-hidden="true"><?php echo esc_html(mb_substr($c['aname'], 0, 1)); ?></span>
+    <span class="av" aria-hidden="true"><?php echo rl_av_inner($c['aname']); ?></span>
     <div>
       <p class="nm"><?php echo esc_html($c['aname']); ?></p>
       <?php if ($c['founder']) { ?>

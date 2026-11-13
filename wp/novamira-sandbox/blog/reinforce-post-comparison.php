@@ -95,7 +95,7 @@ function rl_cmp_render($c) {
   <h1 class="c-h1"><?php echo esc_html($title); ?></h1>
   <?php if ($standfirst !== '') { ?><p class="c-stand"><?php echo esc_html($standfirst); ?></p><?php } ?>
   <div class="c-by">
-    <span class="who"><span class="av" aria-hidden="true"><?php echo esc_html(mb_substr($c['aname'], 0, 1)); ?></span><?php echo $c['founder'] ? '<a href="' . $c['about'] . '#founder">' . esc_html($c['aname']) . '</a>' : esc_html($c['aname']); ?></span>
+    <span class="who"><span class="av" aria-hidden="true"><?php echo rl_av_inner($c['aname']); ?></span><?php echo $c['founder'] ? '<a href="' . $c['about'] . '#founder">' . esc_html($c['aname']) . '</a>' : esc_html($c['aname']); ?></span>
     <span>Published <time datetime="<?php echo esc_attr(get_the_date('c', $id)); ?>"><b><?php echo esc_html(get_the_date('j M Y', $id)); ?></b></time></span>
     <?php if ($d['updated'] !== '') { ?><span class="fresh">Updated <time datetime="<?php echo esc_attr($d['updated']); ?>"><b><?php echo esc_html(date_i18n('j M Y', strtotime($d['updated']))); ?></b></time></span><?php } ?>
   </div>
@@ -190,7 +190,7 @@ function rl_cmp_render($c) {
   <?php } ?>
 
   <aside class="c-author" aria-label="About the author">
-    <span class="av" aria-hidden="true"><?php echo esc_html(mb_substr($c['aname'], 0, 1)); ?></span>
+    <span class="av" aria-hidden="true"><?php echo rl_av_inner($c['aname']); ?></span>
     <div>
       <p class="nm"><?php echo esc_html($c['aname']); ?></p>
       <?php if ($c['founder']) { ?>
