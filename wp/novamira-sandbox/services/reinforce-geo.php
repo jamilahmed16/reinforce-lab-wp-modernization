@@ -230,6 +230,7 @@ function rl_render_geo() {
       <p class="src">What the research says</p>
       <p>The term GEO comes from a peer-reviewed study by researchers at Princeton University and IIT Delhi, presented at ACM KDD 2024. Testing content changes across a benchmark of diverse queries, they found that GEO methods could boost a source's visibility in generative engine responses by up to 40%, and that the best method varies by domain. Adding citations to credible sources, quotations and statistics were among the strongest methods; keyword stuffing was not.</p>
       <p class="src">Source: Aggarwal et al., "GEO: Generative Engine Optimization", KDD 2024. <a href="https://arxiv.org/abs/2311.09735" rel="noopener" target="_blank">arxiv.org/abs/2311.09735</a></p>
+      <p>New to GEO? Read our plain guide: <a href="<?php echo esc_url(home_url('/generative-engine-optimization/')); ?>">What is generative engine optimization?</a></p>
     </div>
   </div>
 </section>
