@@ -1,0 +1,222 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-14T10:00:00+00:00",
+  "dateModified": "2026-11-14T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "Pharma SEO is search engine optimization for pharmaceutical and life sciences companies. It helps patients, healthcare professionals and business buyers find accurate, approved information, under strict advertising and review rules. Give every search one page owner, map audiences and markets, bring search into medical, legal and regulatory review early, show checkable evidence and measure in stages.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "US FDA: Internet/Social Media Platforms with Character Space Limitations, draft guidance",
+    "url": "https://www.fda.gov/media/88551/download"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "US FDA: Presenting Risk Information in Prescription Drug and Medical Device Promotion",
+    "url": "https://www.fda.gov/media/76269/download"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "US FDA: For Industry, Using Social Media",
+    "url": "https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/industry-using-social-media"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "US FTC: Health Products Compliance Guidance",
+    "url": "https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "UK MHRA: Advertising of medicines, guidance for providers offering medicinal treatment",
+    "url": "https://assets.publishing.service.gov.uk/media/6012d8c9d3bf7f05c2040b4e/Appendix_6.pdf"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "EU Directive 2001/83/EC, Article 88",
+    "url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2001:311:0067:0128:en:PDF"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Creating helpful, reliable, people-first content",
+    "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Google Search's guidance about AI-generated content",
+    "url": "https://developers.google.com/search/blog/2023/02/google-search-and-ai-content"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Spam policies for Google web search",
+    "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Indegene: GEO strategy for pharma, a practical starter guide (reviewed for topics covered)",
+    "url": "https://www.indegene.com/insights/reports/geo-strategy-for-pharma"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Capptoo: SEO for pharma, what is different in regulated industries (reviewed for topics covered)",
+    "url": "https://capptoo.com/articles/seo-for-pharma/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "XDS: Ultimate pharma SEO guide (reviewed for topics covered)",
+    "url": "https://blog.madebyxds.com/pharma-seo"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is pharma SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Pharma SEO is search engine optimization for pharmaceutical and life sciences companies. It helps patients, healthcare professionals and business buyers find accurate, approved information, while following advertising and review rules that are stricter than in most industries."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How is pharma SEO different from healthcare SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Healthcare SEO mostly helps clinics and practices get found by local patients. Pharma SEO serves manufacturers, suppliers, pharmacies and research bodies, speaks to several audiences at once and works under tight rules on claims, risk information and who may see product information."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can pharmaceutical companies do SEO for prescription medicines?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes, within the rules of each market. Rules differ by country, product and audience. In the EU and UK, advertising prescription-only medicines to the public is prohibited, so patient-facing pages focus on disease information and approved material. Your regulatory team decides what each page may say."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How does medical, legal and regulatory review affect SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Review decides what a page may say, so it affects both speed and wording. Bring SEO in early: share the keyword map and page design before drafting, agree approved wording once and publish durable pages first, so small changes do not trigger new approval rounds."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can pharma companies target healthcare professionals with SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Professionals search for mechanism of action, dosing, trial data and prescribing information. Keep a public indexable page that explains what a resource is and who it is for, and gate only the material that needs it, because search engines cannot read gated pages."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What are the best keywords for pharma SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "They depend on the audience. Patients search conditions, symptoms and treatment questions. Professionals search clinical and scientific terms. Business buyers search suppliers and capabilities. Build a keyword map by audience and intent, and record who must approve each page."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can pharma companies use AI to write content?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google says AI use is not against its guidelines when the content is helpful and made for people. For pharma, accuracy and responsibility matter most: give AI approved sources, have a qualified person check every fact, run normal review and name the human author and reviewer."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do AI answer engines cite pharma product pages?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "They can draw on pharma pages, and they can also get facts wrong. Put clear answers at the top, keep facts consistent across pages, cite your sources and check what AI tools say about your key questions every quarter. No method guarantees a citation."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How long does pharma SEO take?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google says some changes show in hours and others take months. Pharma also needs approval time before pages go live. Plan for a few months before the first pages are live and six to twelve months before you judge the program."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I choose a pharma SEO company?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Ask which audiences and markets they know, how they work with your medical, legal and regulatory team, who writes and reviews content, how they report results, how they earn links and what the written scope and exit terms are. Be wary of promised ranking dates."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Pharma SEO: How Pharmaceutical Companies Get Found",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "MLR review",
+    "description": "Medical, legal and regulatory review: the approval step many pharmaceutical companies use before content is published.",
+    "url": "https://reinforcelab.online/preview/#term-mlr-review"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Branded search",
+    "description": "A search that includes a product or company name.",
+    "url": "https://reinforcelab.online/preview/#term-branded-search"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Unbranded search",
+    "description": "A search about a condition, symptom or treatment class that names no brand.",
+    "url": "https://reinforcelab.online/preview/#term-unbranded-search"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "YMYL",
+    "description": "Your Money or Your Life: Google's term for topics that can affect health, money or safety, held to a higher quality standard.",
+    "url": "https://reinforcelab.online/preview/#term-ymyl"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Fair balance",
+    "description": "Presenting risk information with comparable content and prominence to benefit claims in prescription drug promotion.",
+    "url": "https://reinforcelab.online/preview/#term-fair-balance"
+   }
+  ]
+ }
+]
