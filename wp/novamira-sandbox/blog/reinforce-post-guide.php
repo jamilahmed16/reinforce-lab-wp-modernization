@@ -256,14 +256,15 @@ function rl_gloss_base_rows() {
     if (!function_exists('rl_is_post_view') || !rl_is_post_view() || rl_is_guide_view()) return [];
     return rl_guide_rows(get_post_meta(get_queried_object_id(), 'rl_g_glossary', true), 2);
 }
-add_action('rl_post_type_sections_after', function ($type, $id) {
-    if ($type === 'guide' || !rl_gloss_base_rows()) return;
-    $gloss = rl_gloss_base_rows(); ?>
-    <section class="g-back" aria-labelledby="g-gl-h">
+function rl_gloss_render() {
+    $gloss = rl_gloss_base_rows(); if (!$gloss) return; ?>
+    <section class="g-back rlg" aria-labelledby="g-gl-h">
       <div class="g-back-h"><span>Back matter</span><h2 id="g-gl-h">Glossary A to Z</h2></div>
       <dl class="g-gloss"><?php foreach ($gloss as $g) echo '<div class="gl" id="term-' . esc_attr(sanitize_title($g[0])) . '"><span class="l" aria-hidden="true">' . esc_html(mb_strtoupper(mb_substr($g[0], 0, 1))) . '</span><div><dt>' . esc_html($g[0]) . '</dt><dd>' . esc_html($g[1]) . '</dd></div></div>'; ?></dl>
     </section>
-<?php }, 10, 2);
+<?php }
+/* base layout types call it through this hook; the how-to and explainer layouts call rl_gloss_render() themselves */
+add_action('rl_post_type_sections_after', function ($type, $id) { if ($type !== 'guide') rl_gloss_render(); }, 10, 2);
 add_filter('wpseo_schema_graph', function ($graph) {
     if (!is_array($graph) || !rl_gloss_base_rows()) return $graph;
     $id = get_queried_object_id(); $url = get_permalink($id); $gloss = rl_gloss_base_rows();
@@ -274,17 +275,17 @@ add_filter('wpseo_schema_graph', function ($graph) {
 add_action('wp_head', function () {
     if (!rl_gloss_base_rows()) return; ?>
 <style id="rl-gloss-base-css">
-.rl-post .g-back{border-top:1px solid var(--line-2);padding-block:48px 12px;margin-top:40px}
-.rl-post .g-back-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin-bottom:22px}
-.rl-post .g-back-h span{font-family:var(--f-mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3)}
-.rl-post .g-back-h h2{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);font-size:clamp(24px,2.8vw,30px);margin:0}
-.rl-post .g-gloss{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:0}
-.rl-post .g-gloss .gl:last-child:nth-child(odd){grid-column:1/-1}
-.rl-post .g-gloss .gl{background:var(--bg-2);padding:18px 20px;display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;scroll-margin-top:110px}
-.rl-post .g-gloss .l{font-family:var(--f-display);font-size:30px;color:var(--red-3);line-height:1}
-.rl-post .g-gloss dt{font-family:var(--f-display);text-transform:uppercase;font-size:17px;color:var(--ink);margin-bottom:4px}
-.rl-post .g-gloss dd{margin:0;font-size:15px}
-@media(max-width:700px){.rl-post .g-gloss{grid-template-columns:minmax(0,1fr)}}
+.rlg{border-top:1px solid var(--line-2);padding-block:48px 12px;margin-top:40px}
+.rlg .g-back-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin-bottom:22px}
+.rlg .g-back-h span{font-family:var(--f-mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3)}
+.rlg .g-back-h h2{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);font-size:clamp(24px,2.8vw,30px);margin:0}
+.rlg .g-gloss{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:0}
+.rlg .g-gloss .gl:last-child:nth-child(odd){grid-column:1/-1}
+.rlg .g-gloss .gl{background:var(--bg-2);padding:18px 20px;display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;scroll-margin-top:110px}
+.rlg .g-gloss .l{font-family:var(--f-display);font-size:30px;color:var(--red-3);line-height:1}
+.rlg .g-gloss dt{font-family:var(--f-display);text-transform:uppercase;font-size:17px;color:var(--ink);margin-bottom:4px}
+.rlg .g-gloss dd{margin:0;font-size:15px}
+@media(max-width:700px){.rlg .g-gloss{grid-template-columns:minmax(0,1fr)}}
 </style>
 <?php }, 23);
 

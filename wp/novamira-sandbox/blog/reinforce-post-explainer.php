@@ -194,6 +194,7 @@ function rl_explainer_render($c) {
     <?php } ?>
   </div>
 
+  <?php if (function_exists('rl_gloss_render')) rl_gloss_render(); /* A to Z glossary when the post has one */ ?>
   <?php if ($d['faqs'] || $d['sources']) { ?>
   <div class="e-back">
     <?php if ($d['faqs']) { ?>
