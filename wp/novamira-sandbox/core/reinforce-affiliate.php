@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) exit;
 function rl_aff_names_map() {
     return ['semrush' => 'Semrush', 'wpengine' => 'WP Engine', 'bluehost' => 'Bluehost', 'hostinger' => 'Hostinger', 'namecheap' => 'Namecheap', 'nexcess' => 'Nexcess',
         'digitalocean' => 'DigitalOcean', 'proranktracker' => 'Rank Tracker', 'dreamhost' => 'DreamHost', 'jasper' => 'Jasper', 'copy' => 'Copy.ai', 'writesonic' => 'Writesonic',
-        'rytr' => 'Rytr', 'anyword' => 'Anyword', 'surferseo' => 'Surfer SEO', 'shareasale' => 'ShareASale', 'liquidweb' => 'Liquid Web'];
+        'rytr' => 'Rytr', 'clickup' => 'ClickUp', 'wpbeaverbuilder' => 'Beaver Builder', 'anyword' => 'Anyword', 'surferseo' => 'Surfer SEO', 'shareasale' => 'ShareASale', 'liquidweb' => 'Liquid Web'];
 }
 function rl_aff_partner($url) {
     $u = wp_parse_url(html_entity_decode($url));
@@ -28,6 +28,8 @@ function rl_aff_partner($url) {
     if ($h === 'partners.inmotionhosting.com') return 'InMotion Hosting';
     if (preg_match('/(^|\.)kinsta\.com$/', $h) && preg_match('/(^|&)kaid=/', $q)) return 'Kinsta';
     if (preg_match('/(^|\.)cloudways\.com$/', $h) && preg_match('/(^|&)id=\d+/', $q)) return 'Cloudways';
+    if (preg_match('/(^|&)fp_ref=[^&]+/', $q)) return $name(explode('.', preg_replace('/^(www|click|go|app)\./', '', $h))[0]); // FirstPromoter ref (ClickUp), 13 Nov 2026
+    if (preg_match('/(^|\.)wpbeaverbuilder\.com$/', $h) && preg_match('/(^|&)fla=\d+/', $q)) return 'Beaver Builder'; // Beaver Builder affiliate id, 13 Nov 2026
     if (preg_match('/(^|&)(via|fpr)=[^&]+/', $q) || (preg_match('/(^|\.)bluehost\.com$/', $h) && preg_match('/(^|&)clickid=/', $q))) {
         $base = preg_replace('/^(www|click|go|app)\./', '', $h);
         return $name(explode('.', $base)[0]);
