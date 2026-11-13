@@ -1,0 +1,44 @@
+{
+ "batch": "b03-404",
+ "posts": {
+  "404": 403
+ },
+ "old_attachments": [
+  {
+   "attachment_id": 403,
+   "file": "2023/02/Copy.-AI-Writer.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2023/02/Copy.-AI-Writer.jpg",
+   "title": "Copy. AI Writer",
+   "alt": "Copy. AI Writer",
+   "date": "2026-10-12 07:18:21",
+   "parent": 0,
+   "files": [
+    "2023/02/Copy.-AI-Writer.jpg",
+    "2023/02/Copy.-AI-Writer-300x170.jpg",
+    "2023/02/Copy.-AI-Writer-1024x580.jpg",
+    "2023/02/Copy.-AI-Writer-150x150.jpg",
+    "2023/02/Copy.-AI-Writer-768x435.jpg",
+    "2023/02/Copy.-AI-Writer-1536x870.jpg",
+    "2023/02/Copy.-AI-Writer-2048x1161.jpg",
+    "2023/02/Copy.-AI-Writer-610x346.jpg",
+    "2023/02/Copy.-AI-Writer-400x250.jpg",
+    "2023/02/Copy.-AI-Writer-1080x675.jpg",
+    "2023/02/Copy.-AI-Writer-400x284.jpg",
+    "2023/02/Copy.-AI-Writer-510x382.jpg",
+    "2023/02/Copy.-AI-Writer-1080x612.jpg",
+    "2023/02/Copy.-AI-Writer-400x516.jpg",
+    "2023/02/Copy.-AI-Writer-1280x725.jpg",
+    "2023/02/Copy.-AI-Writer-980x555.jpg",
+    "2023/02/Copy.-AI-Writer-480x272.jpg",
+    "2023/02/Copy.-AI-Writer-300x300.jpg",
+    "2023/02/Copy.-AI-Writer-600x340.jpg",
+    "2023/02/Copy.-AI-Writer-100x100.jpg",
+    "2023/02/Copy.-AI-Writer-106x60.jpg",
+    "2023/02/Copy.-AI-Writer-159x90.jpg"
+   ]
+  }
+ ],
+ "new": {
+  "404": 568
+ }
+}

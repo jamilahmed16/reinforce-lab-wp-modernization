@@ -25,6 +25,7 @@ def clean(t):
     t = re.sub(r'\s*[|\u2013\u2014]\s*Reinforce Lab.*$', '', t)
     t = t.replace('\u2013', ':').replace('\u2014', ':')
     t = re.sub(r'\b(20(2[3-6]))\b', '', t)
+    t = re.sub(r'(?:\s+(?:in|for|of|to|on|at|by|with|and|the|a))+\s*$', '', t, flags=re.I)  # a stripped year can leave a dangling word
     t = re.sub(r'\s*:\s*', ': ', t)
     t = re.sub(r'\s+', ' ', t).strip(' :')
     return t
