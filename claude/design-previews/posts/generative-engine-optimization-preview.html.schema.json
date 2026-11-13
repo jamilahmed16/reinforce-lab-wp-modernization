@@ -1,0 +1,203 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-14T10:00:00+00:00",
+  "dateModified": "2026-11-14T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "Generative engine optimization (GEO) is the practice of making your site easy for AI search tools to find, understand and quote, so your brand is named in their written answers. It builds on SEO: allow crawling, get indexed, answer questions clearly, back claims with sources, keep brand facts consistent and test real buyer questions in AI tools each month.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: AI features and your website",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guide to optimizing for generative AI features on Google Search",
+    "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Aggarwal et al.: GEO: Generative Engine Optimization (arXiv, 2023)",
+    "url": "https://arxiv.org/abs/2311.09735"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "ACM KDD 2024: GEO: Generative Engine Optimization",
+    "url": "https://dl.acm.org/doi/10.1145/3637528.3671900"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Semrush: Generative Engine Optimization (GEO): A Practical Guide",
+    "url": "https://www.semrush.com/blog/generative-engine-optimization/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Search Engine Land: Generative Engine Optimization (GEO): What It Is and How to Do It",
+    "url": "https://searchengineland.com/what-is-generative-engine-optimization-geo-444418"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Backlinko: Generative Engine Optimization (GEO): How to Win in AI Search",
+    "url": "https://backlinko.com/generative-engine-optimization-geo"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is generative engine optimization?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Generative engine optimization (GEO) is the practice of improving your content and site so AI search tools such as ChatGPT, Gemini, Perplexity and Google AI Mode find, understand and quote you in the answers they write."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is GEO the same as SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "They overlap a lot. SEO aims to rank pages in a results list. GEO aims to be named or cited inside a written answer. Google says optimizing for its AI features is still SEO, so strong SEO is the base for GEO."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does GEO work?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It can help, but no one can guarantee a result. A 2023 study reported up to 40% higher visibility from some methods in its tests. Results in your market depend on your competitors, your content and the tool."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do AI tools choose which sources to cite?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "They turn a question into searches, retrieve pages from a search index, read the passages and keep those that answer clearly and agree with other trusted sources. Pages that cannot be crawled or indexed cannot be retrieved."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need an llms.txt file?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google says it does not use llms.txt files and that they neither help nor hurt in Google Search. Some other services may read them. Treat the file as optional and fix your pages and facts first."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does structured data help GEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google says structured data is not required for its AI features and no special markup is needed. It still helps with rich results and removes doubt about who you are, so keep it accurate and matched to the visible text."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I measure GEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Run the same 15 to 25 buyer questions each month in several AI tools and record mentions, links and cited pages. Add Search Console data, referral visits from AI tool domains and a lead source question on your forms."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How long does GEO take?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Changes to pages can show up in live AI answers within weeks if the pages are crawled. Brand knowledge built through mentions and consistent facts takes longer. Plan on three months before judging results."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can small businesses do GEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Start with access, a short list of buyer questions and clearer answers on your top pages. Pick questions you can win, such as local or niche ones, instead of general topics that large sites own."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is it safe to buy mentions or mass-produce pages for GEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Google says seeking inauthentic mentions is not helpful and that making many pages mainly to influence AI answers can break its scaled content abuse policy. Earn real coverage and write pages readers need."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: What Is Generative Engine Optimization (GEO)? A Plain Guide",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "GEO",
+    "description": "Generative engine optimization: making your content easy for AI search tools to find and quote.",
+    "url": "https://reinforcelab.online/preview/#term-geo"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "AEO",
+    "description": "Answer engine optimization: writing concise answers that tools can show as the direct answer.",
+    "url": "https://reinforcelab.online/preview/#term-aeo"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "RAG",
+    "description": "Retrieval-augmented generation: a tool looks up pages, then writes an answer from them.",
+    "url": "https://reinforcelab.online/preview/#term-rag"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Query fan-out",
+    "description": "One question split into several related searches to build a fuller answer.",
+    "url": "https://reinforcelab.online/preview/#term-query-fan-out"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Citation",
+    "description": "A link or named source shown with an AI answer.",
+    "url": "https://reinforcelab.online/preview/#term-citation"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Entity",
+    "description": "A clearly identified thing such as your company, a product or a person.",
+    "url": "https://reinforcelab.online/preview/#term-entity"
+   }
+  ]
+ }
+]
