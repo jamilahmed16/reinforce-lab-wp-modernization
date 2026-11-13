@@ -1,0 +1,213 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-14T10:00:00+00:00",
+  "dateModified": "2026-11-14T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "SEO ranks your pages in a list of results. GEO gets your brand named or cited inside an AI written answer. They share one foundation: crawlable, useful, trusted pages. What changes is the result (a mention, not a position), the measures, and the weight of other sites. For most businesses, do SEO first, add GEO habits on top and measure both in one report.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: AI features and your website",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guide to optimizing for generative AI features on Google Search",
+    "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: Update, 38% of AI Overview Citations Pull From The Top 10 (March 2026)",
+    "url": "https://ahrefs.com/blog/ai-overview-citations-top-10/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: 76% of AI Overview Citations Pull From the Top 10 (2025)",
+    "url": "https://ahrefs.com/blog/search-rankings-ai-citations/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: Only 12% of AI Cited URLs Rank in Google's Top 10 for the Original Prompt",
+    "url": "https://ahrefs.com/blog/ai-search-overlap/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Pew Research Center: Google users are less likely to click on links when an AI summary appears (July 2025)",
+    "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: SEO vs. GEO, 5 Key Differences Despite the Similarities",
+    "url": "https://ahrefs.com/blog/seo-vs-geo/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Semrush: GEO vs. SEO, A Comparative Guide for Digital Marketers",
+    "url": "https://www.semrush.com/blog/geo-vs-seo/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Search Engine Land: Measuring GEO, what is trackable now and what is still missing",
+    "url": "https://searchengineland.com/measuring-geo-whats-trackable-now-and-whats-still-missing-461759"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is the difference between GEO and SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "SEO improves your site so it ranks in search results and earns clicks. GEO improves your content and brand so AI tools mention or cite you in the answers they write. They share the same foundation of crawlable, useful, trusted pages."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is GEO replacing SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Google says AI features have no extra technical requirements beyond Search, and SEO remains the base. GEO adds habits for AI answers and a new way to measure."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need to rank in Google to be cited by AI?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Ranking helps but is not required. Ahrefs found that about 38% of pages cited in Google AI Overviews ranked in the top 10 in March 2026, down from about 76% in July 2025, so pages that rank elsewhere or not at all are also cited."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Why did the overlap between rankings and AI citations change?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Ahrefs suggests that query fan-out plays a bigger role, so AI answers cite pages that appear for related sub-questions. Google does not publish fan-out queries, so this is an informed guess, not a confirmed cause."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Should I run GEO and SEO as one program?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "In most cases yes. They share one technical and editorial base, and separate teams can publish pages that compete with each other. You do need a GEO measurement method on top of normal SEO tools."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How is GEO measured differently from SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "SEO uses rankings, clicks and conversions. GEO uses monthly prompt tests of real buyer questions to track mentions, citations, cited pages and competitors, plus referral visits from AI tool domains and brand accuracy."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do AI answers reduce clicks?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Pew found that Google users clicked a result link in 8% of visits when an AI summary appeared and 15% when it did not, and clicked a link inside the summary in 1% of visits. That study covers Google in March 2025 for 900 US adults."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does AI traffic convert better than organic traffic?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Ahrefs reported a large lift on its own site, but that is one company and another study it cites found that not every site sees it. Measure the conversion rate of AI referral visits on your own site."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Which should a local business focus on?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Local businesses usually lean on SEO and local SEO because searches such as near me and emergency still send people to maps and pages. Add GEO for advice questions where you have real expertise."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need llms.txt or special markup for GEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google says it does not use llms.txt files and that no special markup is needed for its AI features. Some other services may read them. Fix your pages, access and brand facts first."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: GEO vs SEO: What Changes and What Stays the Same",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "GEO",
+    "description": "Generative engine optimization: making your content easy for AI tools to find and quote.",
+    "url": "https://reinforcelab.online/preview/#term-geo"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "SEO",
+    "description": "Search engine optimization: improving your site so it ranks in search results.",
+    "url": "https://reinforcelab.online/preview/#term-seo"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Query fan-out",
+    "description": "One question split into several related searches to build a fuller answer.",
+    "url": "https://reinforcelab.online/preview/#term-query-fan-out"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Citation",
+    "description": "A link or named source shown with an AI answer.",
+    "url": "https://reinforcelab.online/preview/#term-citation"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Share of voice",
+    "description": "The share of answers that name your brand out of all tracked answers.",
+    "url": "https://reinforcelab.online/preview/#term-share-of-voice"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Zero-click search",
+    "description": "A search where the person gets what they need without clicking a result.",
+    "url": "https://reinforcelab.online/preview/#term-zero-click-search"
+   }
+  ]
+ }
+]
