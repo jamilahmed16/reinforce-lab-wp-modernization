@@ -1,0 +1,27 @@
+{
+ "batch": "g02-570",
+ "posts": {
+  "570": 572
+ },
+ "old_attachments": [
+  {
+   "attachment_id": 572,
+   "file": "2026/11/cover-pharma-seo.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2026/11/cover-pharma-seo.jpg",
+   "title": "Cover: Pharma SEO: How Pharmaceutical Companies Get Found",
+   "alt": "Cover image: Pharma SEO: How Pharmaceutical Companies Get Found",
+   "date": "2026-11-13 22:43:53",
+   "parent": 570,
+   "files": [
+    "2026/11/cover-pharma-seo.jpg",
+    "2026/11/cover-pharma-seo-300x158.jpg",
+    "2026/11/cover-pharma-seo-1024x538.jpg",
+    "2026/11/cover-pharma-seo-150x150.jpg",
+    "2026/11/cover-pharma-seo-768x403.jpg"
+   ]
+  }
+ ],
+ "new": {
+  "570": 579
+ }
+}
