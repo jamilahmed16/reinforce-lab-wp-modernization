@@ -92,3 +92,20 @@ What it changes:
 - **Post 4 (AI Overviews)** has about 2,100 searches across the how-to forms. Google's own developer blog post on succeeding in AI search ranks in the top 3, so it is read and cited before writing, and the post says what Google documents and what it does not.
 - **Post 20** adds the tools forms (ai lead generation tools 1,000 at KD 49; free ai tools for lead generation 260 at KD 28). The top results include vendors, so tool mentions stay neutral and unverified claims stay out.
 - **Easy section targets:** content marketing for aeo (480 at KD 19); how to rank in ai overviews perplexity chatgpt search (90 at KD 17).
+
+## Keyword Overview data received 14 Nov 2026, fourth set (US, desktop)
+
+| Term | Volume | KD | CPC | Variations (total volume) | Questions (total volume) | Top 10 |
+|---|---|---|---|---|---|---|
+| what is generative engine optimization | 2,900 | 52 | $5.70 | 226 (4.4K) | 191 (4.3K) | wikipedia, coursera, mailchimp; average domain strength 72 |
+| ai workflow automation | 5,400 | 73 | $16.27 | 6.1K (45.7K) | 312 (3.0K) | gumloop (domain strength 48), atlassian, zapier; average 69 |
+| ai lead generation | 2,900 | 52 | $15.86 | 3.3K (40.6K) | 194 (1.7K) | reddit, salesforce, gumloop; average 69 |
+| ai marketing automation | 1,900 | 64 | $18.21 | 4.8K (34.5K) | 190 (1.0K) | hubspot academy, ibm, reddit; average 68 |
+| google ai overviews | 2,400 | 86 | $2.69 | 7.6K (139.9K) | 1.3K (52.4K) | search.google, Google developers (AI features and your website), wikipedia; average 78 |
+
+What it changes:
+- **Post 1 (GEO guide):** the definition form is large on its own (what is generative engine optimization 2,900, and 4,300 across its questions), and the top 10 are strong, general sites (wikipedia, coursera, mailchimp). The post must open with a plain definition and add worked examples and first-hand steps to compete. Related forms worth a heading each: geo vs seo (90), geo tools list (90 at KD 45).
+- **Post 4 (AI Overviews):** most of the 139.9K variation volume is people asking how to turn AI Overviews off (how to turn off ai overview google 4,400 at KD 21; how to disable 3,600 at KD 34). That is consumer intent, not our audience, so it is not targeted. Google's own page "AI features and your website" is in the top 2 and is the primary source to read and cite first.
+- **Post 17 (workflow automation):** the head term is 5,400 at KD 73, but a vendor blog with a domain strength of 48 (gumloop) holds position 1, so a focused, well-made page can compete on the question forms: what is ai agent workflow automation (140 at KD 24), how to automate sdr workflows with ai (50 at KD 10), best ai workflow automation tool (1,600 at KD 49). Marketing workflow automation (390 at KD 37) stays the primary.
+- **Post 18 and post 20:** ai marketing automation (1,900 at KD 64, CPC $18.21) is secondary only for post 18, whose primary stays marketing automation examples (720 at KD 30). Post 20 keeps ai lead generation (2,900 at KD 52); how to use ai for lead generation (210 at KD 54) is a heading.
+- **Phrases not used:** several very long variations show high volume (for example "ai lead generation automation painting trade business workflow", 1,900 at KD 9, and "ai automation agency korea workflow n8n make.com 2025", 1,900 at KD 20). They look like one-off phrasings that Semrush attaches to broad terms, and none matches a page type we would build, so they are ignored.
