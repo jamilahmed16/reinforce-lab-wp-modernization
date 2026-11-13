@@ -248,6 +248,46 @@ add_filter('wpseo_schema_graph', function ($graph) {
     return $graph;
 }, 35);
 
+/* ---------- glossary on the other post types (explainer, how-to, and the rest of the base layout) ----------
+   13 Nov 2026: a glossary saved in rl_g_glossary was only drawn by the Guide layout. The base layout now draws the same
+   A to Z block after the article, with the same DefinedTermSet schema. Same markup and rules as the Guide block: an odd
+   last term spans both columns, so the grid never leaves an empty cell. */
+function rl_gloss_base_rows() {
+    if (!function_exists('rl_is_post_view') || !rl_is_post_view() || rl_is_guide_view()) return [];
+    return rl_guide_rows(get_post_meta(get_queried_object_id(), 'rl_g_glossary', true), 2);
+}
+add_action('rl_post_type_sections_after', function ($type, $id) {
+    if ($type === 'guide' || !rl_gloss_base_rows()) return;
+    $gloss = rl_gloss_base_rows(); ?>
+    <section class="g-back" aria-labelledby="g-gl-h">
+      <div class="g-back-h"><span>Back matter</span><h2 id="g-gl-h">Glossary A to Z</h2></div>
+      <dl class="g-gloss"><?php foreach ($gloss as $g) echo '<div class="gl" id="term-' . esc_attr(sanitize_title($g[0])) . '"><span class="l" aria-hidden="true">' . esc_html(mb_strtoupper(mb_substr($g[0], 0, 1))) . '</span><div><dt>' . esc_html($g[0]) . '</dt><dd>' . esc_html($g[1]) . '</dd></div></div>'; ?></dl>
+    </section>
+<?php }, 10, 2);
+add_filter('wpseo_schema_graph', function ($graph) {
+    if (!is_array($graph) || !rl_gloss_base_rows()) return $graph;
+    $id = get_queried_object_id(); $url = get_permalink($id); $gloss = rl_gloss_base_rows();
+    $graph[] = ['@type' => 'DefinedTermSet', '@id' => $url . '#glossary', 'name' => 'Glossary: ' . get_the_title($id), 'url' => $url . '#g-gl-h',
+        'hasDefinedTerm' => array_map(function ($g) use ($url) { return ['@type' => 'DefinedTerm', 'name' => $g[0], 'description' => $g[1], 'url' => $url . '#term-' . sanitize_title($g[0])]; }, $gloss)];
+    return $graph;
+}, 35);
+add_action('wp_head', function () {
+    if (!rl_gloss_base_rows()) return; ?>
+<style id="rl-gloss-base-css">
+.rl-post .g-back{border-top:1px solid var(--line-2);padding-block:48px 12px;margin-top:40px}
+.rl-post .g-back-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin-bottom:22px}
+.rl-post .g-back-h span{font-family:var(--f-mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3)}
+.rl-post .g-back-h h2{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);font-size:clamp(24px,2.8vw,30px);margin:0}
+.rl-post .g-gloss{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:0}
+.rl-post .g-gloss .gl:last-child:nth-child(odd){grid-column:1/-1}
+.rl-post .g-gloss .gl{background:var(--bg-2);padding:18px 20px;display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;scroll-margin-top:110px}
+.rl-post .g-gloss .l{font-family:var(--f-display);font-size:30px;color:var(--red-3);line-height:1}
+.rl-post .g-gloss dt{font-family:var(--f-display);text-transform:uppercase;font-size:17px;color:var(--ink);margin-bottom:4px}
+.rl-post .g-gloss dd{margin:0;font-size:15px}
+@media(max-width:700px){.rl-post .g-gloss{grid-template-columns:minmax(0,1fr)}}
+</style>
+<?php }, 23);
+
 /* ---------- CSS ---------- */
 add_action('wp_head', function () {
     if (!rl_is_guide_view()) return; ?>
