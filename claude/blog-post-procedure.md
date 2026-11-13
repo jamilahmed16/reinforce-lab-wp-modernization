@@ -12,6 +12,7 @@ Binding for every post on reinforcelab.online. Set by Jamil on 5 Oct 2026: "the 
 3. **Note from the report** (`claude/research/serp/<slug>/report.md`): the terms and entities 3 or more competitors use, the questions in their headings, their structure and length, and what none of them covers (the information gain the post will add: a worked example, first-hand experience, cost drivers, risks, a self-test, sources).
 
 ## 3. Write
+- **Length and depth (D-241, Jamil 13 Nov):** guides are as detailed as possible: the full process, worked examples (marked as illustrative when not real), templates, checklists and tables. Aim for **2,400 words or more in the body**, then add FAQs on top. Do not cut a guide to meet a reading level; shorten the sentences instead. Shorter is fine for non-guide types.
 - Answer first: a quotable definition or direct answer at the top.
 - Use the common terms where they fit naturally. Never stuff.
 - Answer the competitors' questions, in headings or FAQs.
