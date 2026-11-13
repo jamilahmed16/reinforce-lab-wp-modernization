@@ -1359,28 +1359,38 @@
   "id": 355,
   "type": "post",
   "status": "publish",
-  "title": "A Complete Guide to Social Media Management 2025",
+  "title": "Social Media Management: What It Is and How to Do It Step by Step",
   "slug": "a-complete-guide-to-social-media-management",
   "parent": 0,
   "path": "/a-complete-guide-to-social-media-management/",
   "template": null,
   "content": null,
-  "content_md5": "699bb8d12caf12336ae09b4ea35c5d09",
+  "content_md5": "aa3c7908230329452e2886ee1ab767fe",
   "carried": {
    "prod_id": 215405,
    "from": "https://reinforcelab.com/a-complete-guide-to-social-media-management/",
    "decision": "D-178"
   },
-  "excerpt": "",
+  "excerpt": "What social media management is, what a social media manager does and an 8-step plan with worked examples, tools, costs and common mistakes.",
   "date": "2025-01-24 17:02:06",
-  "modified": "2025-04-15 17:06:00",
+  "modified": "2026-11-13 14:01:15",
   "seo": {
-   "_yoast_wpseo_title": "A Complete Guide to Social Media Management 2025 | Reinforce Lab",
-   "_yoast_wpseo_metadesc": "Guide to social media management teaches to nudge potential clients by social media manager with social media profile management strategy"
+   "_yoast_wpseo_title": "Social Media Management: Step-by-Step Guide | Reinforce Lab",
+   "_yoast_wpseo_metadesc": "What social media management is, what a manager does, and an 8-step plan with examples, tools, costs and mistakes to avoid. A free, plain guide."
   },
   "rl_fields": {
-   "rl_updated": "20250415",
-   "rl_type": "guide"
+   "rl_updated": "2026-11-13",
+   "rl_type": "guide",
+   "rl_answer": "Social media management is the daily work of planning, creating, publishing and monitoring content on social platforms and talking with your audience. To start, set one or two goals, know your audience, pick two or three platforms, plan content around a few topics, reply every day and review results each month.",
+   "rl_takeaways": "Social media management is the daily running of your accounts. Social media marketing is the wider plan to reach a business goal.\nStart with one or two goals tied to the business, not follower counts alone.\nChoose two or three platforms where your audience already is and do them well.\nBatch your content with a calendar, but set time each day to reply to people.\nReport on leads and sales as well as reach, and say what you will change.\nPrices vary widely, so add staff time, tool fees and ad spend and get written quotes.\nReview anything an AI tool writes before it is posted.",
+   "rl_faqs": "What is social media management? | Social media management is the process of planning, creating, publishing and monitoring content on social platforms, and engaging with your audience there. It also includes tracking results and changing the plan.\nWhat does a social media manager do? | A social media manager plans and publishes content, replies to comments and messages, watches mentions of the brand, and reports results. In larger teams they also help with paid ads, influencers and crisis replies.\nWhat is the difference between social media management and social media marketing? | Management is the daily running of your accounts: scheduling, replying, monitoring and reporting. Marketing is the wider plan to use social media to reach a business goal, including ads, campaigns and influencer work. Most small teams do both.\nHow do I start managing social media for my business? | Set one or two goals, name your audience, choose two or three platforms, complete your profiles, plan content around a few topics, schedule in batches, reply every day, and review results each month.\nHow often should I post on social media? | Post at a pace you can keep. For many small teams that is two to five times a week per platform. A steady rhythm beats bursts followed by silence. Check your own results to see what your audience responds to.\nWhat is a content calendar? | A content calendar is a plan of what you will post, where and when. Each entry lists the date, platform, topic, text, image or video, link, owner and approval status. Plan two to four weeks ahead.\nDo I need a social media management tool? | Not always. A solo owner can start with each platform's own scheduler and a spreadsheet. A tool helps when you manage several accounts, need a shared inbox, approvals or reports in one place. Try a free plan first.\nHow much does social media management cost? | There is no standard price. Cost depends on how many platforms you use, how often you post, how much video you need, whether ads are included and who does the work. Add staff time, tool fees and any ad spend, and get written quotes.\nShould I hire an agency or manage social media in-house? | In-house gives you control and product knowledge. A freelancer suits small budgets. An agency suits several platforms with video and reporting. Many companies keep strategy and replies in-house and outsource design or video.\nWhat should I measure in social media management? | Measure reach, engagement, click-throughs, response time, and leads or sales that began on social media. Match the numbers to your goals, and report what you will change because of them.\nHow is AI used in social media management? | AI tools can suggest ideas, draft captions, resize images and sort replies. Always review the output, check facts, keep your own voice and do not let a tool answer customers without review.\nWhat is social listening? | Social listening is tracking mentions of your brand, products, rivals and topics across social media, including posts that do not tag you, and acting on what you learn.",
+   "rl_sources": "Sprout Social: Social media management guide (reviewed for topics covered) | https://sproutsocial.com/insights/what-is-social-media-management/\nSemrush: Social media management, the ultimate guide (reviewed for topics covered) | https://www.semrush.com/blog/social-media-management\nCoSchedule: Social media management, the complete guide (reviewed for topics covered) | https://coschedule.com/blog/social-media-management\nNeal Schaffer: What is social media management (reviewed for topics covered) | https://nealschaffer.com/what-is-social-media-management/\nNextiva: Social media management (reviewed for topics covered) | https://www.nextiva.com/blog/social-media-management.html\nInfluencer Marketing Hub: What is social media management (reviewed for topics covered) | https://influencermarketinghub.com/what-is-social-media-management/",
+   "rl_g_glossary": "Content calendar | A plan of what you will post, where and when.\nContent pillar | A main topic your brand posts about on a regular basis.\nSocial listening | Tracking mentions of your brand, products and rivals across social media and acting on them.\nCommunity management | Replying to and building relationships with the people who follow and talk to your brand.\nPaid social | Ads you pay for on social platforms to reach new people.",
+   "rl_g_cta_service": "services/best-search-engine-optimization-services",
+   "rl_g_cta_after": "4",
+   "rl_g_cta_head": "Want your content to be found in search and AI answers too?",
+   "rl_g_cta_sub": "Reinforce Lab starts with a free diagnostic of your Google and AI search visibility and a 90-day plan.",
+   "rl_g_cta_button": "See SEO services"
   }
  },
  {
