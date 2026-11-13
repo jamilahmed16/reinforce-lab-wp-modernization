@@ -1,0 +1,212 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-14T10:00:00+00:00",
+  "dateModified": "2026-11-14T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "Pharma digital marketing uses digital channels to reach patients, healthcare professionals and business buyers within advertising and review rules. Set a goal for each audience, decide audiences and markets first, map the rules, build approved content modules, choose a few sequenced channels, plan safety reporting and privacy, and measure in layers.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "US FDA: FDA Launches Crackdown on Deceptive Drug Advertising, 9 September 2025",
+    "url": "https://www.fda.gov/news-events/press-announcements/fda-launches-crackdown-deceptive-drug-advertising"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "US FDA: Internet/Social Media Platforms with Character Space Limitations, draft guidance",
+    "url": "https://www.fda.gov/media/88551/download"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "US FDA: Presenting Risk Information in Prescription Drug and Medical Device Promotion",
+    "url": "https://www.fda.gov/media/76269/download"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "US FTC: Health Products Compliance Guidance",
+    "url": "https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "UK MHRA: Advertising of medicines, guidance for providers offering medicinal treatment",
+    "url": "https://assets.publishing.service.gov.uk/media/6012d8c9d3bf7f05c2040b4e/Appendix_6.pdf"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "ABPI: Guidance notes on the management of safety information from digital activities",
+    "url": "https://www.abpi.org.uk/media/iupgmopg/abpi-pv-guidance-rmi-0143-0321.pdf"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "EU Directive 2001/83/EC, Article 88",
+    "url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2001:311:0067:0128:en:PDF"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Techsavy Crew: Pharma digital marketing guide (reviewed for topics covered)",
+    "url": "https://techsavycrew.com/blog/pharma-digital-marketing/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Anthill: Pharma digital marketing guide (reviewed for topics covered)",
+    "url": "https://www.anthill.technology/insight/pharma-marketing-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Marzipan: HCP marketing guide (reviewed for topics covered)",
+    "url": "https://wearemarzipan.com/insights/hcp-marketing"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is pharma digital marketing?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Pharma digital marketing uses digital channels such as websites, search, email, social media, paid media and webinars to reach patients, caregivers, healthcare professionals and business buyers with information about conditions, medicines and services, within advertising and review rules."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How is pharma digital marketing different from pharma SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Pharma SEO is one part of it: making accurate pages easy to find in search. Pharma digital marketing also covers email, social media, paid media, events, detailing and measurement across all channels."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is advertising prescription medicines to the public legal?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It depends on the country. In the US, direct-to-consumer advertising is allowed but must present fair balance between benefits and risks. In the UK and the EU, advertising prescription-only medicines to the public is prohibited. Your regulatory team decides what each market allows."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can pharmaceutical companies run Google Ads?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Often yes, for suitable products and content, but Google publishes health and medicines advertising policies that differ by country and may require approval. Check the current policy for each country and ask your regulatory team whether the ad can carry required risk information."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can pharma companies use influencers?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Only with great care. The FDA's 2025 announcement named undisclosed paid influencer promotion as a concern. Disclose every paid relationship, brief creators in writing, review posts before they go live and keep records, and follow the rules for your product and market."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is omnichannel marketing in pharma?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It means channels work as one connected conversation, so each step reflects the one before. Multichannel simply means using several channels. Omnichannel needs shared plans between marketing, field and medical teams, and connected records within consent."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do you measure pharma digital marketing?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Measure in layers: reach, engagement, behavior and business results. Count qualified engagement, not total opens. Because sales happen through doctors and pharmacies, compare engaged segments with similar segments, and agree definitions with finance before launch."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How should companies handle side-effect reports on social media?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Treat any channel the company runs or sponsors as a possible source of safety information. Set up a way to capture it, pass it to the safety team within the required time, and decide who watches comments. ABPI pharmacovigilance guidance treats company-sponsored digital activity, including social media, as in scope."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much do pharmaceutical companies spend on digital marketing?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "There is no standard figure. In its 2025 announcement, the FDA Commissioner said drug companies spend up to 25% of their budget on advertising. That reflects large brands. Set your own budget from goals per audience, review costs and the channels that show qualified engagement."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I choose a pharma digital marketing agency?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Ask which markets and rules they know, when they involve your regulatory team, how they handle safety reports, consent and data, who writes and reviews content, how they report results and what the written scope and exit terms are. Be wary of guaranteed approvals or results."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Pharma Digital Marketing: What Works Within the Rules",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Omnichannel marketing",
+    "description": "Channels that work as one connected conversation, so each step reflects the one before.",
+    "url": "https://reinforcelab.online/preview/#term-omnichannel-marketing"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "HCP",
+    "description": "Healthcare professional, such as a doctor, nurse or pharmacist.",
+    "url": "https://reinforcelab.online/preview/#term-hcp"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Unbranded content",
+    "description": "Information about a condition that does not name a product.",
+    "url": "https://reinforcelab.online/preview/#term-unbranded-content"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Fair balance",
+    "description": "Presenting risk information with comparable content and prominence to benefit claims in prescription drug promotion.",
+    "url": "https://reinforcelab.online/preview/#term-fair-balance"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Pharmacovigilance",
+    "description": "The collection and review of information about side effects and other safety issues with medicines.",
+    "url": "https://reinforcelab.online/preview/#term-pharmacovigilance"
+   }
+  ]
+ }
+]
