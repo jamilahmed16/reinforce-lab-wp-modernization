@@ -1,0 +1,27 @@
+{
+ "batch": "g01-356",
+ "posts": {
+  "356": 533
+ },
+ "old_attachments": [
+  {
+   "attachment_id": 533,
+   "file": "2026/11/cover-a2-wordpress-hosting.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2026/11/cover-a2-wordpress-hosting.jpg",
+   "title": "Cover: How to Make A Website with A2 WordPress Hosting: A Step by Step Guide",
+   "alt": "Cover image: How to Make A Website with A2 WordPress Hosting: A Step by Step Guide",
+   "date": "2026-11-13 19:59:51",
+   "parent": 356,
+   "files": [
+    "2026/11/cover-a2-wordpress-hosting.jpg",
+    "2026/11/cover-a2-wordpress-hosting-300x158.jpg",
+    "2026/11/cover-a2-wordpress-hosting-1024x538.jpg",
+    "2026/11/cover-a2-wordpress-hosting-150x150.jpg",
+    "2026/11/cover-a2-wordpress-hosting-768x403.jpg"
+   ]
+  }
+ ],
+ "new": {
+  "356": 574
+ }
+}

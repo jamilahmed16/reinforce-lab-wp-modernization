@@ -18,6 +18,7 @@ PREV = os.path.join(ROOT, 'claude', 'design-previews', 'covers')
 BACK = os.path.join(ROOT, 'claude', 'data', 'backups')
 TYPES = {'guide': 'Guide', 'explainer': 'Explainer', 'howto': 'How-to', 'list': 'List', 'industry': 'Industry guide', 'checklist': 'Checklist',
          'comparison': 'Comparison', 'opinion': 'Opinion', 'updates': 'Updates', 'review': 'Review', 'research': 'Research', 'casestudy': 'Case study', 'product': 'Product guide'}
+THEMES = {'green': {'c': '#3fae7f', 'e': '#78cfa7', 't': '#23805a', 'g': '35,128,90'}}  # D-266: set COVER_THEME=green
 SAFE = r'''if (get_option('blog_public') !== '0' || home_url() !== 'https://reinforcelab.online') return 'ABORT: not the dev site';'''
 
 
@@ -44,9 +45,22 @@ def posts():
     rv, _ = rl.php(r'''
 $out = []; $q = new WP_Query(array('post_type'=>'post','post_status'=>'publish','posts_per_page'=>-1,'orderby'=>'ID','order'=>'ASC'));
 foreach ($q->posts as $p) { $tid = get_post_thumbnail_id($p->ID); $mc = function_exists('rl_post_main_cat') ? rl_post_main_cat($p->ID) : null;
-  $out[] = array('id'=>$p->ID,'slug'=>$p->post_name,'title'=>$p->post_title,'type'=>(string) get_post_meta($p->ID,'rl_type',true),'cat'=>$mc ? $mc->name : '','thumb'=>(int) $tid,'modified'=>$p->post_modified); }
+  $out[] = array('id'=>$p->ID,'slug'=>$p->post_name,'title'=>$p->post_title,'type'=>(string) get_post_meta($p->ID,'rl_type',true),'cat'=>$mc ? $mc->name : '','thumb'=>(int) $tid,'modified'=>$p->post_modified,'kw'=>(string) get_post_meta($p->ID,'_yoast_wpseo_focuskw',true)); }
 return $out;''')
     return rv
+
+
+def pick_hl(full, kw):
+    f = full.lower()
+    if kw and kw.lower() in f and len(kw) <= 0.7 * len(full):
+        i = f.index(kw.lower()); return full[i:i + len(kw)]
+    if kw and kw.lower() in f:  # the keyword is nearly the whole title: highlight its last three words
+        return ' '.join(full.rstrip('?!.').split()[-3:])
+    if ': ' in full:
+        head = full.split(': ')[0].split()
+        return ' '.join(head if len(head) <= 4 else head[-3:])
+    w = [x for x in full.split() if not x.isdigit()]
+    return ' '.join(w[:3])
 
 
 def jobs_for(ids):
@@ -58,7 +72,10 @@ def jobs_for(ids):
         eb = TYPES.get(p['type'], 'Article').upper()
         if p['cat'] and p['cat'] != 'Uncategorized':
             eb += ' · ' + p['cat'].upper()
-        jobs.append({'id': i, 'eyebrow': eb, 'white': w, 'red': r, 'alt': 'Cover image: ' + clean(p['title']), 'slug': p['slug'], 'old': p['thumb'], 'modified': p['modified']})
+        extra = {}
+        if os.environ.get('COVER_THEME') in THEMES:
+            extra = {'accent': THEMES[os.environ['COVER_THEME']], 'glow': 0.22, 'hl': pick_hl(clean(p['title']), p.get('kw', '')), 'sep': ': ' if ': ' in clean(p['title']) else ' '}
+        jobs.append({**extra, 'id': i, 'eyebrow': eb, 'white': w, 'red': r, 'alt': 'Cover image: ' + clean(p['title']), 'slug': p['slug'], 'old': p['thumb'], 'modified': p['modified']})
     return jobs
 
 

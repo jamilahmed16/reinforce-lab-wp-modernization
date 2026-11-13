@@ -55,7 +55,7 @@ h1,h1 span.r{text-wrap:balance}
 .row i.r{background:${A.t};border-color:${A.t}}
 </style></head><body><div class="glow"></div><div class="rail"></div><div class="rail2"></div>
 <img class="logo" src="${logo}"><div class="ey">[ ${esc(j.eyebrow)} ]</div>
-<h1 id="t">${j.mono ? esc(j.white + (j.red ? ': ' + j.red : '')) : j.hl ? esc(j.white + (j.red ? ': ' + j.red : '')).replace(esc(j.hl), `<span class="k">${esc(j.hl)}</span>`) : esc(j.white) + (j.red ? `<span class="r">${esc(j.red)}</span>` : '')}</h1>
+<h1 id="t">${j.mono ? esc(j.white + (j.red ? (j.sep ?? ': ') + j.red : '')) : j.hl ? esc(j.white + (j.red ? (j.sep ?? ': ') + j.red : '')).replace(esc(j.hl), `<span class="k">${esc(j.hl)}</span>`) : esc(j.white) + (j.red ? `<span class="r">${esc(j.red)}</span>` : '')}</h1>
 <div class="row">${cells(j.id)}</div></body></html>`;
 }
 

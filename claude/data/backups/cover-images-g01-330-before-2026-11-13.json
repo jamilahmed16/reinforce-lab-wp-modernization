@@ -1,0 +1,27 @@
+{
+ "batch": "g01-330",
+ "posts": {
+  "330": 532
+ },
+ "old_attachments": [
+  {
+   "attachment_id": 532,
+   "file": "2026/11/cover-what-is-an-ai-growth-system.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2026/11/cover-what-is-an-ai-growth-system.jpg",
+   "title": "Cover: What Is an AI Growth System?",
+   "alt": "Cover image: What Is an AI Growth System?",
+   "date": "2026-11-13 19:59:51",
+   "parent": 330,
+   "files": [
+    "2026/11/cover-what-is-an-ai-growth-system.jpg",
+    "2026/11/cover-what-is-an-ai-growth-system-300x158.jpg",
+    "2026/11/cover-what-is-an-ai-growth-system-1024x538.jpg",
+    "2026/11/cover-what-is-an-ai-growth-system-150x150.jpg",
+    "2026/11/cover-what-is-an-ai-growth-system-768x403.jpg"
+   ]
+  }
+ ],
+ "new": {
+  "330": 573
+ }
+}
