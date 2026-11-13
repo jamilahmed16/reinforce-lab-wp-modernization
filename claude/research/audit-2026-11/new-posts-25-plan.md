@@ -85,7 +85,7 @@ What it changes:
 | aeo marketing | 1,000 | 59 | $9.17 | 1.8K (14.2K) | 191 (2.6K) | reddit, hubspot, coursera; average 63 |
 | ai lead generation tools | 1,000 | 49 | $15.90 | 611 (4.3K) | 14 (30) | reddit, salesforce, gumloop; average 66 |
 
-(The entity seo screenshot arrived a second time, identical to the first; not kept.)
+(The entity seo screenshot arrived a second time with the same figures as the first; not kept.)
 
 What it changes:
 - **AEO is the second biggest cluster after GEO** (aeo vs seo 3,600, aeo seo 2,900, what is aeo in marketing 1,300, seo aeo 1,300, aeo marketing 1,000). Two intents, so two posts: post 3 compares AEO with SEO, and the new post 13 defines AEO in marketing. Both go in batch 1 or early batch 2, written together with the GEO posts so they link to each other.
