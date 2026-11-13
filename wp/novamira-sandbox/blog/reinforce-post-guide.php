@@ -356,6 +356,7 @@ add_action('wp_head', function () {
 .rl-guide .g-back-h span{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-3)}
 .rl-guide .g-back-h h2{font-size:clamp(26px,3vw,36px);margin:0}
 .rl-guide .g-gloss{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:0}
+.rl-guide .g-gloss .gl:last-child:nth-child(odd){grid-column:1/-1} /* an odd number of terms never leaves an empty cell: the last term spans both columns */
 .rl-guide .g-gloss .gl{background:var(--bg-2);padding:18px 20px;display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;scroll-margin-top:110px}
 .rl-guide .g-gloss .l{font-family:var(--f-display);font-size:30px;color:var(--red-3);line-height:1}
 .rl-guide .g-gloss dt{font-family:var(--f-display);text-transform:uppercase;font-size:17px;color:var(--ink);margin-bottom:4px}
