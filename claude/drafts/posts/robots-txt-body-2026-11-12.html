@@ -179,6 +179,30 @@ Disallow: /*?filter=</code></pre>
 <h3>A site under development</h3>
 <p>Do not use robots.txt to hide a test site. A blocked address can still appear in Google if someone links to it. Protect it with a password. Then, when you launch, check that you did not carry the "block everything" rule across to the live site.</p>
 
+<h2>Do you need a robots.txt file?</h2>
+<p>No. Google says that unless you write rules, every file on your site may be crawled. A site with no robots.txt works, and Google treats it as having no crawl limits. You need the file when you want to keep crawlers away from certain sections, to point to your sitemap, or to set rules for specific bots such as AI crawlers.</p>
+<p>Most sites do have one. The HTTP Archive's Web Almanac 2025 looked at a July 2025 crawl of more than 16 million websites. It found that 85% of requests for robots.txt returned a valid 200 status, up from 84% in 2024, and that about 13% returned a 404, which means no file. The Almanac warns that a 200 only shows that a file exists. It does not show that the rules inside are right.</p>
+
+<h2>What happens if your robots.txt is missing or broken?</h2>
+<p>It depends on the error. Google's documentation sets out how Googlebot treats each status code:</p>
+<table>
+<thead><tr><th>What the server returns</th><th>What Google does</th></tr></thead>
+<tbody>
+<tr><td>200 (success)</td><td>Reads and follows the file as served</td></tr>
+<tr><td>Redirect (3xx)</td><td>Follows at least five hops, then treats the file as a 404</td></tr>
+<tr><td>Client error (4xx, except 429)</td><td>Acts as if no robots.txt exists and assumes there are no crawl limits</td></tr>
+<tr><td>Server error (5xx)</td><td>For the first 12 hours, stops crawling the site and keeps trying to fetch the file. For the next 30 days, uses the last good copy while it keeps trying. After 30 days, if the site is available, it behaves as if there is no file. If the site has general availability problems, it stops crawling</td></tr>
+</tbody>
+</table>
+<p>This is why a 5xx error on robots.txt is more dangerous than a missing file. A missing file means no limits. A server error can pause crawling of the whole site. Google also caches the file for up to 24 hours and may keep an old copy longer when it cannot refresh it.</p>
+<p>Errors are not rare. In the 2024 Web Almanac, Lighthouse audits found that 8.43% of desktop pages and 7.40% of mobile pages failed the check for a valid robots.txt file. Check yours in the robots.txt report in Search Console.</p>
+
+<h2>Is robots.txt a law or a lock?</h2>
+<p>Neither. It is a voluntary standard, published as RFC 9309. Google says that its crawlers and other respectable crawlers follow the rules, but the file cannot force any crawler to obey, and some crawlers do not follow it. Do not use robots.txt to protect private information. Use a password or other access control for that. Also remember that anyone can read your robots.txt, so do not list paths you want to keep secret.</p>
+
+<h2>Should you block images with robots.txt?</h2>
+<p>You can. Google's documentation says that for media files, robots.txt can manage crawl traffic and can keep image, video and audio files out of Google Search results. It will not stop other sites or people from linking to the file. Do not block image, script or style files that Google needs to understand your pages. If the page is harder to render without them, Google may not analyze it well.</p>
+
 <h2>How do you fix robots.txt problems?</h2>
 <p>When pages are missing from Google or the wrong ones appear, work through this table:</p>
 <table>
@@ -244,6 +268,7 @@ Disallow: /*?filter=</code></pre>
 </table>
 <p>Two facts matter here. OpenAI says sites that block <code>OAI-SearchBot</code> will not be shown in ChatGPT search answers. Google says <code>Google-Extended</code> does not affect your place in Google Search.</p>
 <p>So decide on purpose. If you want AI answers to name and cite your business, do not block the search crawlers.</p>
+<p>Many sites now set AI rules. In the Web Almanac 2025, GPTBot was named in the robots.txt files of 4.5% of desktop sites, up from 2.9% in 2024. ClaudeBot rose from 1.9% to 3.6%, CCBot (Common Crawl) was at 3.5% and Google-Extended at 3.4%. The Almanac counts sites that name a crawler, and a rule can allow it as well as block it, so these are not the share of sites that block it. The Almanac's authors called the growth one of the fastest expansions of named user agents in robots.txt in recent memory.</p>
 
 <h2>Robots.txt or a meta robots tag: which one?</h2>
 <p>They do different jobs. Use the one that fits the goal.</p>

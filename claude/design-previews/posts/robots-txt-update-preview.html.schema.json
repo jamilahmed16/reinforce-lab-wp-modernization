@@ -1,0 +1,239 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2025-01-29T17:05:07+00:00",
+  "dateModified": "2026-11-14T00:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "A robots.txt file is a plain text file at the root of your website that tells search engine and AI crawlers which pages and files they may crawl. It manages crawling, not indexing: to keep a page out of Google, use a noindex tag or a password instead.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Introduction to robots.txt",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google: Create and submit a robots.txt file",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google: How Google interprets the robots.txt specification",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google: List of Google's common crawlers (Google-Extended)",
+    "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "OpenAI: Overview of OpenAI crawlers",
+    "url": "https://platform.openai.com/docs/bots"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "IETF: RFC 9309, Robots Exclusion Protocol",
+    "url": "https://www.rfc-editor.org/rfc/rfc9309"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: How Google interprets the robots.txt specification (updated October 2026)",
+    "url": "https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HTTP Archive: Web Almanac 2025, SEO chapter (published January 2026)",
+    "url": "https://almanac.httparchive.org/en/2025/seo"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HTTP Archive: Web Almanac 2024, SEO chapter",
+    "url": "https://almanac.httparchive.org/en/2024/seo"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Do I need a robots.txt file?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Not always. Without one, crawlers assume they may crawl the whole site. A small site with no private or duplicate sections can work without it. Most sites still add one to block admin pages and point to the sitemap."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can robots.txt remove a page from Google?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. It only stops crawling. Google says a blocked page can still appear in results if other pages link to it. To remove a page, use a noindex tag, a password, or delete the page."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Where should I put my robots.txt file?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "At the root of the site it is for, such as https://www.example.com/robots.txt. Crawlers do not look for it in folders. Each subdomain needs its own file."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How long do robots.txt changes take to work?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google usually keeps a copy of the file for up to 24 hours. So a change can take about a day to be noticed. OpenAI also says its search systems can take about 24 hours to adjust."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What happens if robots.txt returns an error?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "If the file is missing (a 404 error), Google treats the site as having no crawl limits. If the server fails (a 5xx error), Google stops crawling the site for the first 12 hours, then uses the last good copy for up to 30 days."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is the maximum size of a robots.txt file?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google reads the first 500 kibibytes of the file. Anything after that is ignored. If your file is close to that size, combine rules or move blocked content into one folder."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Should I block AI crawlers in robots.txt?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It depends on your goal. Blocking OAI-SearchBot keeps your site out of ChatGPT search answers. Blocking GPTBot or Google-Extended only limits use of your content for AI training. If you want AI tools to cite you, allow the search crawlers."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Google support crawl-delay in robots.txt?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Google lists crawl-delay as a field it does not support. Google supports User-agent, Allow, Disallow and Sitemap."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is the best robots.txt for SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "There is no single best file, because the right rules depend on your site. A good robots.txt for SEO is short: it blocks admin areas, internal search and pages that make endless near-copies, leaves everything useful open, and lists your sitemap. Test it after every change."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What does Disallow: / mean in robots.txt?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It tells the crawlers named in that group not to crawl any page on the site. It is useful on a private test site and a serious mistake on a live one. If your live site is missing from Google, check for this line first."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does robots.txt affect crawl budget?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It can, on very large sites. Google says crawl budget matters mainly for sites with about 1 million pages or more, or about 10,000 pages or more that change daily. On those sites, blocking pages you never want crawled saves effort. Small sites usually do not need to worry about it."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need a robots.txt file?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Google says that unless you write rules, all files may be crawled. You need the file to keep crawlers out of certain sections, point to your sitemap or set rules for specific bots. In the Web Almanac 2025, 85% of robots.txt requests returned a valid 200 status."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What happens if my robots.txt returns a server error?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google's documentation says that for the first 12 hours it stops crawling the site and keeps trying to fetch the file. For the next 30 days it uses the last good copy. After 30 days, if the site is available, it acts as if there is no file. A 4xx error, except 429, is treated as no file."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How many sites block AI crawlers in robots.txt?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The Web Almanac 2025 found GPTBot named in 4.5% of desktop sites' robots.txt files, up from 2.9% in 2024, and ClaudeBot in 3.6%, up from 1.9%. These figures count sites that name the crawler, which can mean a block or an allow."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Robots.txt for SEO: A Complete Guide",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Crawler",
+    "description": "A program a search engine or AI tool uses to read web pages. Also called a bot or spider.",
+    "url": "https://reinforcelab.online/preview/#term-crawler"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "User agent",
+    "description": "The name a crawler gives itself, such as Googlebot. Rules in robots.txt are addressed to user agents.",
+    "url": "https://reinforcelab.online/preview/#term-user-agent"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Disallow",
+    "description": "A rule that tells a crawler not to open a path.",
+    "url": "https://reinforcelab.online/preview/#term-disallow"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Sitemap",
+    "description": "A file that lists the pages you want search engines to find.",
+    "url": "https://reinforcelab.online/preview/#term-sitemap"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Noindex",
+    "description": "A tag or header that tells search engines not to show a page in results.",
+    "url": "https://reinforcelab.online/preview/#term-noindex"
+   }
+  ]
+ }
+]
