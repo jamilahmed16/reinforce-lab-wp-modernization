@@ -1,7 +1,7 @@
 # Competitor semantics: ai-brand-visibility
 
 Our page: claude/drafts/posts/ai-brand-visibility-body-2026-11-14.html
-Competitors analysed: 6 of 8 (a term counts as common when 3+ of them use it)
+Competitors analysed: 8 of 8 (a term counts as common when 3+ of them use it)
 
 | # | Page | Words | Headings |
 |---|---|---|---|
@@ -11,22 +11,20 @@ Competitors analysed: 6 of 8 (a term counts as common when 3+ of them use it)
 | 4 | [How to monitor AI search visibility (2026) · Erlin](https://www.erlin.ai/blog/how-to-monitor-ai-search-visibility) | 2345 | 32 |
 | 5 | [How to Check AI Visibility: A Five Platform Audit](https://wellows.com/blog/audit-brand-visibility-on-llms/) | 2621 | 21 |
 | 6 | [How to Audit Your AI Visibility | Presenc AI](https://presenc.ai/guides/how-to-audit-ai-visibility) | 886 | 7 |
+| 7 | [AI Brand Tracker: How to Monitor Your Brand Across AI Search Engines -](https://rankscope.ai/blog/ai-brand-tracker) | 2067 | 15 |
+| 8 | [Are AI Visibility Trackers Reliable? Known Limitations](https://mentionable.ai/en/blog/ai-visibility-tracker-limitations) | 670 | 4 |
 
-**Not fetched (read these with Exa):**
-- https://www.soar.sh/blog/how-to-audit-brand-ai-visibility-step-by-step (200) too little text (script-rendered or blocked)
-- https://rankpearl.com/blog/ai-brand-visibility-guide (402) 
-
-## Common terms our page does NOT use (175)
+## Common terms our page does NOT use (240)
 
 Use the ones that fit naturally; never stuff. Number = competitors using it.
 
-start (6), manual (6), response (6), platform (6), exactly (5), teams (5), types (5), mentioned (5), automatically (5), presence (5), current (5), dashboard (5), prioritize (5), tracks (5), monitor (5), analysis (5), structured (5), benchmarking (5), alongside (5), ai platforms (5), specific (5), directly (5), cadence (5), starting (5), measuring (5), whether your brand (4), entity (4), brand appears (4), identify (4), action (4), positioning (4), query (4), brand name (4), coverage (4), actually (4), listing (4), organic (4), document (4), defined (4), scale (4), instead (4), ongoing (4), core (4), queries (4), models (4), metrics (4), manually (4), major (4), ai platform (4), quick (4), ai responses (4), accurately (4), including (4), stable (4), rather (4), least (4), becomes (4), rank (4), dedicated (4), critical (4), updated (4), names (4), visibility tools (4), hand (4), live (4), growing (3), compared (3), million (3), industry (3), comparable (3), multiple (3), competitive (3), website (3), reddit (3), linking (3), reach (3), working (3), journey (3), among (3), consider (3), earned (3), language (3), attributes (3), define (3), patterns (3), asking (3), benchmarks (3), strategy (3), existing (3), either (3), audits (3), marketing (3), cited domains (3), describes (3), insights (3), incorrect (3), authoritative (3), select (3), authority (3), earning (3), today (3), case (3), signals (3), improve (3), free ai (3), frequently (3), turning (3), accurate (3), customers (3), strongly (3), citation data (3), october (3), recommended (3), users (3), process (3), user (3), outdated (3), primary (3), verify (3), cited instead (3), enough (3), quietly (3), pull (3), one-time (3), non-deterministic (3), minimum (3), measurement (3), llms (3), best ai (3), side by side (3), chat (3), relative (3), cause (3), monitoring (3), daily (3), engines (3), ai visibility tools (3), brand's (3), schedule (3), winning (3), ai citations (3), differently (3), logged (3), visibility data (3), raise (3), traditional (3), invisible (3), watch (3), turns (3), automates prompt (3)
+response (8), exactly (7), specific (7), mentioned (7), automatically (6), actually (6), brand appears (6), ai platforms (6), query (6), models (6), structured (6), dashboard (6), monitor (6), rank (6), cadence (6), live (6), manually (5), alongside (5), benchmarking (5), organic (5), action (5), analysis (5), types (5), prioritize (5), metrics (5), whether your brand (5), teams (5), positioning (5), scale (5), ongoing (5), current (5), listing (5), major (5), document (5), tracks (5), dedicated (5), weekly (5), minimum (5), becomes (5), measuring (5), enough (5), names (5), starting (5), rather (5), hand (5), running (5), stable (5), daily (5), training (5), exist (5), entity (4), signals (4), including (4), multiple (4), either (4), audits (4), identify (4), accurate (4), ai platform (4), process (4), brand name (4), today (4), patterns (4), keyword (4), outdated (4), defined (4), accurately (4), strategy (4), improve (4), existing (4), core (4), coverage (4), competitive (4), ai responses (4), users (4), always (4), reddit (4), frequently (4), updated (4), one-time (4), engines (4), chat (4), surface (4), monitoring (4), versus (4), discover (4), critical (4), comes (4), traditional (4), schedule (4), tracked (4), visibility tools (4), measurement (4), ai-generated (4), least (4), concrete (4), faster (4), single check (4), monitors (4), ai answer (4), signal (4), relevant (4), training data (4), record whether (4), target (4), feature (3), turning (3), case (3), benchmarks (3), consider (3), industry (3), knowledge (3), steps (3), leadership (3), comparable (3), brand is mentioned (3), reporting (3), reach (3), picture (3), checking (3), shifts (3), among (3), beyond (3), compared (3), journey (3), strongly (3), select (3), linking (3), improving (3), october (3), recommended (3), marketing (3), define (3), getting (3), website (3), earned (3), authoritative (3), asking (3), million (3), structure (3), attributes (3), potential (3), chatgpt perplexity (3), working (3), user (3), describes (3), insights (3), deeper (3), earning (3), citation data (3)
 
-## Common terms our page already uses (206)
+## Common terms our page already uses (268)
 
-source (6), content (6), cite (6), citations (6), results (6), share of voice (6), check (6), third-party (6), position (6), ai visibility (6), first (6), best (6), tracking (6), list (6), brand (6), brands (6), whether (6), data (6), search (6), competitors (6), mention (6), note (6), mentions (6), audit (6), need (6), gemini (6), competitor (6), track (6), sources (6), time (6), tool (6), questions (6), often (6), different (6), chatgpt (6), perplexity (6), features (5), domain (5), google (5), site (5), shows (5), cited (5), full (5), information (5), build (5), sentiment (5), point (5), answers (5), change (5), already (5), product (5), pages (5), step (5), clear (5), useful (5), include (5), gaps (5), look (5), create (5), matter (5), ai search (5), measures (5), answer (5), type (5), consistent (5), compare (5), responses (5), work (5), citation (5), name (5), engine (5), record (5), monthly (5), score (5), prompts (5), tells (5), prompt set (5), rate (5), runs (5), spreadsheet (5), category (5), update (5), baseline (5), tools (5), month (5), free (4), measure (4), means (4), research (4), optimization (4), ai search visibility (4), performance (4), report (4), analytics (4), benchmark (4), checks (4), google ai overviews (4), repeat (4), exact (4), generic (4), want (4), show (4), accuracy (4), number (4), brand mentions (4), changes (4), neutral (4), ai answers (4), negative (4), find (4), cites (4), page (4), guide (4), sites (4), model (4), plan (4), reviews (4), appear (4), buyers (4), separate (4), question (4), ai mode (4), buyer (4), percentage (4), usually (4), comparison (4), common (4), single (4), inside (4), five (4), strong (4), citation rate (4), real (4), know (4), pricing (4), right (4), category questions (4), claude (3), example (3), times (3), window (3), ai visibility audit (3), team (3), take (3), lead (3), perplexity and google (3), reports (3), positive neutral (3), close (3), similar (3)
+search (8), tracking (8), whether (8), different (8), questions (8), data (8), check (8), results (8), perplexity (8), citations (8), content (8), ai visibility (8), chatgpt (8), tool (8), platform (8), mentions (8), brand (8), mention (8), track (8), list (7), best (7), often (7), google (7), start (7), first (7), useful (7), look (7), compare (7), full (7), share of voice (7), manual (7), sources (7), third-party (7), gemini (7), need (7), cite (7), competitor (7), source (7), brands (7), audit (7), position (7), time (7), record (7), shows (7), point (7), prompts (7), tells (7), month (7), rate (7), prompt (7), update (7), category (7), score (7), tools (7), product (6), answers (6), monthly (6), pages (6), cited (6), competitors (6), presence (6), google ai overviews (6), measures (6), already (6), name (6), engine (6), checks (6), work (6), responses (6), answer (6), queries (6), ai search (6), show (6), measure (6), citation (6), matter (6), build (6), type (6), information (6), directly (6), sentiment (6), change (6), site (6), note (6), question (6), spreadsheet (6), prompt set (6), runs (6), ai mode (6), real (6), baseline (6), single (6), right (6), page (5), include (5), cites (5), gaps (5), ai answers (5), guide (5), traffic (5), repeat (5), instead (5), features (5), times (5), number (5), step (5), domain (5), changes (5), means (5), analytics (5), model (5), report (5), clear (5), create (5), reviews (5), consistent (5), mention rate (5), percentage (5), separate (5), comparison (5), matters (5), appear (5), invisible (5), buyer (5), good (5), citation rate (5), strong (5), tell (5), buyers (5), trend (5), inside (5), usually (5), common (5), someone (5), google ai mode (5), pricing (5), ones (4), overview (4), find (4), ai search visibility (4), absent (4), visible (4), plan (4), points (4), benchmark (4), exact (4), claude (4), want (4), customers (4), accuracy (4)
 
-## Questions competitors answer in headings (14)
+## Questions competitors answer in headings (15)
 
 - Can Google Analytics track ChatGPT brand mentions?
 - Content Optimization Tool vs Agency: Which Should You Choose?
@@ -36,6 +34,7 @@ source (6), content (6), cite (6), citations (6), results (6), share of voice (6
 - How do I track my brand in ChatGPT, Gemini, and Perplexity (2026)?
 - How does Indexly help with brand tracking in AI search?
 - How often should I re-run my brand visibility checks?
+- What Is an AI Brand Tracker?
 - What counts as a good AI share of voice benchmark?
 - What is AI search monitoring?
 - What is AI share of voice and how is it calculated?
@@ -178,3 +177,26 @@ source (6), content (6), cite (6), citations (6), results (6), share of voice (6
 - H2 Step 5: Identify Root Causes for Gaps
 - H2 Step 6: Automate Ongoing Monitoring
 - H2 Step 7: Build Your Remediation Roadmap
+
+**AI Brand Tracker: How to Monitor Your Brand Across AI Search Engines - RankScope**
+- H1 AI Brand Tracker: How to Monitor Your Brand Across AI Search Engines
+- H2 What Is an AI Brand Tracker?
+- H2 Why This Is a Different Problem Than Rank Tracking
+- H2 The Four Metrics an AI Brand Tracker Should Measure
+- H3 1. Mention Rate
+- H3 2. Share of Voice
+- H3 3. Sentiment and Characterization
+- H3 4. Citation Sources
+- H2 Why Engine-by-Engine Tracking Matters
+- H2 Setting Up AI Brand Tracking: The Manual Version
+- H2 Setting Up AI Brand Tracking: The Automated Version
+- H2 AI Brand Tracking vs. Social Listening
+- H2 What to Do With Tracking Data Once You Have It
+- H2 Frequently Asked Questions
+- H2 Getting Started
+
+**Are AI Visibility Trackers Reliable? Known Limitations**
+- H2 What AI visibility trackers actually measure
+- H2 The real limitations
+- H2 What the skeptics get right
+- H2 How to use the data responsibly

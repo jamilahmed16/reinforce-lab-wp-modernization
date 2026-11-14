@@ -44,6 +44,16 @@
     "@type": "CreativeWork",
     "name": "Search Engine Land: Measuring GEO, what is trackable now and what is still missing",
     "url": "https://searchengineland.com/measuring-geo-whats-trackable-now-and-whats-still-missing-461759"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: Free AI Visibility Checker",
+    "url": "https://ahrefs.com/ai-visibility-checker"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Semrush: Free AI Search Visibility Checker",
+    "url": "https://www.semrush.com/free-tools/ai-search-visibility-checker/"
    }
   ]
  },
@@ -152,6 +162,22 @@
     "acceptedAnswer": {
      "@type": "Answer",
      "text": "The tools know your name but do not link you to your category. Build pages that answer category questions directly and earn mentions on the review sites and lists that the tools already cite."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Are free AI visibility checkers worth using?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes, as a quick second opinion. Ahrefs and Semrush both offer free checkers. They test a limited set of prompts the tool chose, not your buyers' real questions, and both vendors sell paid tools, so use them as a preview and keep a manual test as your baseline."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What if my brand never appears in any AI answer?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Check branded prompts first, then access and indexing, basic brand facts across your site and profiles, presence on the review sites and lists the tools cite, and whether you have a page that answers the main buyer question. New brands with little authority may need much longer than established ones."
     }
    }
   ]
