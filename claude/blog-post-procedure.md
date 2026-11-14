@@ -14,6 +14,7 @@ Binding for every post on reinforcelab.online. Set by Jamil on 5 Oct 2026: "the 
 ## 3. Write
 - **Semantics every time (D-243, Jamil 13 Nov):** for every post, and every extension of a post, find (1) the primary keyword and its close variants, (2) the secondary keywords from Semrush and Search Console queries for that post, and (3) the topic terms, questions and sections the ranking pages cover (`serp-semantics.py`), then work them in where they help the reader. Every addition must be relevant and useful to the reader and aimed at the people who search for the keyword; never padding. Check the coverage again on the finished draft and report it.
 - **Length and depth (D-241, Jamil 13 Nov):** guides are as detailed as possible: the full process, worked examples (marked as illustrative when not real), templates, checklists and tables. Aim for **2,400 words or more in the body**, then add FAQs on top. Do not cut a guide to meet a reading level; shorten the sentences instead. Shorter is fine for non-guide types.
+- **Statistics with valid sources in every post (D-278, Jamil 14 Nov):** every post carries relevant statistics, each with its source, year, sample or method named in the text and listed in the sources block. Read the primary page on the day (publisher, regulator, study), not a blog that repeats it. State the limits (one country, one month, a forecast, a vendor survey). Never use a figure you could not trace, and never invent one. At least 3 sourced statistics in a guide. Where public data does not exist, say so.
 - Answer first: a quotable definition or direct answer at the top.
 - Use the common terms where they fit naturally. Never stuff.
 - Answer the competitors' questions, in headings or FAQs.
@@ -25,6 +26,6 @@ Binding for every post on reinforcelab.online. Set by Jamil on 5 Oct 2026: "the 
 - `python3 claude/tools/readability.py <draft-or-url>`: grade 8.0 or lower.
 - `python3 claude/tools/serp-semantics.py <slug> <draft-or-url> <same urls>`: the important topic terms are covered.
 - `python3 claude/tools/copy-check.py <file>`: 0 issues.
-- Every source link opened and read on the day.
+- Every source link opened and read on the day. Count the statistics: at least 3, each traceable to a page you read.
 - `python3 claude/tools/seo-audit.py`: title 60 characters or less, meta 140 to 160, one H1, schema, FAQ matches schema.
 - Jamil approves, then publish one post at a time (F-003).
