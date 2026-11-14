@@ -1,0 +1,213 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-14T10:00:00+00:00",
+  "dateModified": "2026-11-14T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "Answer engine optimization (AEO) is getting your brand and pages used as the answer in snippets, voice answers and AI tools. It builds on SEO: Google says AI features have no extra technical requirements. AEO adds answer-first writing, question headings, sourced facts, consistent brand facts and mentions on other sites, and it is measured with monthly prompt tests, not rankings alone.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: AI features and your website",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guide to optimizing for generative AI features on Google Search",
+    "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Latest documentation updates (FAQ rich result deprecation, May 2026)",
+    "url": "https://developers.google.com/search/updates"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Featured snippets and your website",
+    "url": "https://developers.google.com/search/docs/appearance/featured-snippets"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: What is Answer Engine Optimization (AEO)?",
+    "url": "https://ahrefs.com/aeo/what-is-aeo"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: Update, 38% of AI Overview Citations Pull From The Top 10 (March 2026)",
+    "url": "https://ahrefs.com/blog/ai-overview-citations-top-10/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: Only 12% of AI Cited URLs Rank in Google's Top 10 for the Original Prompt",
+    "url": "https://ahrefs.com/blog/ai-search-overlap/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Pew Research Center: Google users are less likely to click on links when an AI summary appears (July 2025)",
+    "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Semrush: AEO vs SEO, core differences and how to win visibility in both",
+    "url": "https://www.semrush.com/blog/aeo-vs-seo/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is answer engine optimization (AEO)?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "AEO is the practice of making your content and brand visible and useful to systems that give direct answers, such as Google snippets and AI Overviews, voice assistants and AI chat tools, so you are quoted, named or cited."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is the difference between AEO and SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "SEO ranks pages and earns clicks. AEO aims to be the quoted, named or cited answer, whether or not anyone clicks. They share a foundation of crawlable, useful, trusted pages."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need AEO if I already do SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Good SEO gets you most of the way, since Google says AI features have no extra technical requirements. AEO adds a check that your answers are clear and quotable, your facts are consistent and other sources mention you."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is AEO the same as GEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The names overlap. AEO is the broad idea of being the answer, including snippets and voice. GEO focuses on being cited in answers that AI tools write. The work is almost the same."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does ranking on Google get you cited by AI?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Ranking helps but is not required. Ahrefs found about 38% of pages cited in Google AI Overviews ranked in the top 10 in March 2026, down from about 76% in July 2025, and about 12% of AI assistant citations ranked in Google's top 10."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Should I add FAQ schema for AEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google's FAQ rich result stopped appearing in Google Search on 7 May 2026, and structured data is not required for its AI features. FAQ sections are still useful for readers, and clear question and answer pairs are easy to quote."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need llms.txt for AEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google says it does not use llms.txt files and Ahrefs advises skipping them. Some other services may read them. Fix your pages, access and brand facts first."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I measure AEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Run the same 15 to 25 buyer questions each month in several tools and record mentions, links, cited pages, accuracy and competitors. Add Search Console data, referral visits from AI tool domains and a lead source question."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What content works best for AEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Pages with a direct answer at the top, question headings, specific sourced facts, a clear author and an honest update date. Original data and first-hand experience help, as Google asks for non-commodity content."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does AEO reduce website traffic?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "AI answers can reduce clicks. Pew found Google users clicked a result link in 8% of visits with an AI summary against 15% without one. A mention can still build awareness, so track visits and brand measures together."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: AEO vs SEO: What Answer Engine Optimization Is and What Changes",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "AEO",
+    "description": "Answer engine optimization: being the answer in snippets, voice and AI tools.",
+    "url": "https://reinforcelab.online/preview/#term-aeo"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "GEO",
+    "description": "Generative engine optimization: being cited in answers that AI tools write.",
+    "url": "https://reinforcelab.online/preview/#term-geo"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Featured snippet",
+    "description": "A box that shows answer text first, above the usual results.",
+    "url": "https://reinforcelab.online/preview/#term-featured-snippet"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Entity",
+    "description": "A clearly identified thing such as your company, a product or a person.",
+    "url": "https://reinforcelab.online/preview/#term-entity"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Query fan-out",
+    "description": "One question split into several related searches to build a fuller answer.",
+    "url": "https://reinforcelab.online/preview/#term-query-fan-out"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Citation",
+    "description": "A link or named source shown with an AI answer.",
+    "url": "https://reinforcelab.online/preview/#term-citation"
+   }
+  ]
+ }
+]
