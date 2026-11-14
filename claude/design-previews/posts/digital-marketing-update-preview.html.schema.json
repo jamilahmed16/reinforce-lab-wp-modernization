@@ -202,6 +202,22 @@
      "@type": "Answer",
      "text": "It is an estimate. The DMA's 2026 Marketer Email Tracker, a survey of 250 UK marketers, reported \u00a340.96 per \u00a31 spent. These are marketers' own estimates, not measured revenue, so measure your own return."
     }
+   },
+   {
+    "@type": "Question",
+    "name": "Which digital marketing channel is the most effective?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It depends on the goal. In Gartner's 2025 CMO Spend Survey of 402 marketing leaders, search advertising stood out as high spend and high impact, and email ranked fifth for impact overall and first for customer loyalty. Test channels against your own goals."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How often should you update your digital marketing strategy?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Review results monthly and rework the plan every quarter, moving budget away from weak tactics and setting the next goal."
+    }
    }
   ]
  },
