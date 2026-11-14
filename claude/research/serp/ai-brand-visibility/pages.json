@@ -1,0 +1,566 @@
+[
+ {
+  "url": "https://ahrefs.com/blog/ai-visibility-audit/",
+  "title": "AI Visibility Audit: How to Measure Your Brand\u2019s Presence in AI Search",
+  "words": 2987,
+  "headings": [
+   [
+    "h1",
+    "AI Visibility Audit: How to Measure Your Brand\u2019s Presence in AI Search"
+   ],
+   [
+    "h2",
+    "1. Define the scope of your AI visibility audit"
+   ],
+   [
+    "h2",
+    "2. Benchmark your current brand visibility in AI search"
+   ],
+   [
+    "h2",
+    "3. Analyze branded AI responses for accuracy and sentiment"
+   ],
+   [
+    "h2",
+    "4. Analyze AI visibility for unbranded queries and topic associations"
+   ],
+   [
+    "h2",
+    "5. Find your top-cited pages in AI responses"
+   ],
+   [
+    "h3",
+    "Check your top-cited pages in Ahrefs\u2019 Brand Radar"
+   ],
+   [
+    "h3",
+    "Cross-check the top pages earning AI traffic in your analytics data"
+   ],
+   [
+    "h2",
+    "6. Identify your best brand mentions that enhance AI visibility"
+   ],
+   [
+    "h2",
+    "7. Compare your visibility to competitors to close gaps"
+   ],
+   [
+    "h2",
+    "8. Turn these insights into a strategy for AI visibility"
+   ],
+   [
+    "h2",
+    "Final thoughts"
+   ]
+  ],
+  "text": "AI Search General SEO AI Visibility Audit: How to Measure Your Brand\u2019s Presence in AI Search By Despina Gavoyannis Senior SEO Specialist at Ahrefs Reviewed by Ryan Law October 30, 2025 13 min read 76 Linking websites Article performance data from Ahrefs Contents 1. Define the scope of your AI visibility audit 2. Benchmark your current brand visibility in AI search 3. Analyze branded AI responses for accuracy and sentiment 4. Analyze AI visibility for unbranded queries and topic associations 5. Find your top-cited pages in AI responses 6. Identify your best brand mentions that enhance AI visibility 7. Compare your visibility to competitors to close gaps 8. Turn these insights into a strategy for AI visibility Add Ahrefs as a preferred source on Google Add Ahrefs as a preferred source Add Ahrefs as a preferred source on Google Add Ahrefs as a preferred source An AI visibility audit provides a structured approach for search and brand teams to assess how their brand shows up on platforms like Google\u2019s AI Overviews, ChatGPT, and Perplexity. It measures where the brand is mentioned in AI search platforms, how often, how accurately, and based on which sources. Here\u2019s a step-by-step process for how you audit your brand\u2019s AI visibility today. Want to turn your AI visibility audit into a report for stakeholders? Download the AI Visibility Audit Report Template , a free resource to share visibility gaps, AI mentions, and opportunities for growth with stakeholders. It includes: An executive summary format for leadership reporting Scoring tables for AI + search visibility Competitor insights stakeholders may be interested in An action plan and notes section to document next steps Follow the process below to help you fill out each section with valuable insights. 1. Define the scope of your AI visibility audit Before benchmarking your AI visibility , start by defining exactly what you\u2019re auditing and where. This scope determines how consistent and comparable your data will be across platforms and time periods. Here\u2019s what to clarify: AI platforms : Which platforms will you include in the audit? (e.g., Google AI Overviews, Gemini, ChatGPT, Perplexity, Claude, Copilot) Entities : List all the brand entities and sub-entities to analyze , such as your company, products, authors, thought leaders, or executives. Regions and languages : Define geographic or linguistic scopes, especially if your brand operates internationally. Listing this information upfront avoids inconsistent baselines when comparing visibility across different AI models or reporting cycles. For example, there\u2019s a difference between only tracking mentions of your main brand and tracking all connected sub-brands or entities as well. For Ahrefs, it could include: Entity Type Example Main brand Ahrefs Product brands Site Explorer, Brand Radar, AI Content Helper Proprietary features Patches, Keyword Intents, AI Keyword Translator Proprietary metrics Domain Rating, Traffic Potential Personal brands Tim Soulo, Patrick Stox, Ryan Law, Glen Allsopp Sub-brands Yep, Detailed SEO Once your scope is defined, you\u2019ll have a clear foundation for benchmarking and a repeatable structure you can use for future audits. 2. Benchmark your current brand visibility in AI search The next step is to assess your current brand visibility in search. You can manually check your brand\u2019s search visibility for free by: Asking similar questions as your customers on ChatGPT, Perplexity, and Google. Comparing whether your brand appears in the AI responses, what\u2019s cited, and how results differ. Checking monthly or quarterly to track visibility changes. However, manual checks can\u2019t scale and are easily skewed by model updates or personalized responses. For consistent, comparable data, you can use a tool like Ahrefs\u2019 Brand Radar to track visibility across multiple AI platforms in one go. Enter your brand and select the region you\u2019d like to receive data for: Take note of how metrics like your brand\u2019s mentions, citations, impressions, and Share of Voice change across various AI search platforms: Mentions : The number of times your brand is mentioned in AI responses. Citations : The number of times your brand\u2019s website is cited as a source in AI responses. Impressions : An estimation of exposure based on how often responses containing your brand are shown in search results. AI Share of Voice : How often your brand is mentioned in AI responses compared to competitors. You can also benchmark whether people are searching for your brand in the Search demand tab: This graph shows how branded search interest changes over time. A rise in search volume means more people are actively seeking your brand, while growth in search query count indicates users are asking a wider range of questions about you (from brand-level queries to specific product or feature searches). Check out these metrics periodically to see how your brand\u2019s visibility changes over time and to report the results of your optimization efforts. 3. Analyze branded AI responses for accuracy and sentiment Once you\u2019ve gathered your benchmarks, it\u2019s time to go deeper. Start by looking at all of the AI responses that mention your brand in the platforms you care about. Navigate to the AI responses report, selecting the AI index you care most about to begin your analysis: The responses will look like this in the dashboard, with bolded mentions of your brand: Try using these filters to help make the analysis easier: Use Case Filter Settings See what AI says about you for branded searches Query contains {your brand} See how AI talks about your brand in general Response contains {your brand} Analyze when AI uses your content as a source Citation contains {your domain} You can mix and match filters to deepen your analysis. Here\u2019s a helpful guide with more filter combinations and tips worth trying out. As you go through the responses, you\u2019ll start to notice patterns about how AI mentions your brand. For example, you might notice that your brand appears in a lot of comparative searches, but your content isn\u2019t cited. This means that the AI platform sources information about your brand from competitors or third-party, neutral sites that have compared you to competitors. Other patterns worth paying attention to include: Accuracy : Is your brand information in the response accurate? Sentiment and framing : Is your brand presented in a positive, neutral, or negative light? Differentiation : Are any unique attributes and positioning of your brand present in the response, or is it generic information? Authority : Is your brand presented as the lead mention with the most authority compared to others? Call-to-action: Does the response make you the recommended source to guide the user on the next step in their journey? If you notice incorrect, outdated, or potentially harmful information about your brand, make a list of the queries, responses, and cited sources so you can overcome misinformation and brand inconsistencies . Repeat this process for every AI search platform you want to analyze. You may notice that different patterns emerge for each platform. 4. Analyze AI visibility for unbranded queries and topic associations There are two types of analysis you can do here. The first is to search for your brand and filter out queries that do not contain your brand name. In the filter settings, set it to \u201cQuery doesn\u2019t contain {your brand}\u201d: Then, analyze the Topics report to see what your brand is commonly associated with. You can see the exact responses about the topic that also mention your brand: For example, Ahrefs is closely associated with SEO topics such as keyword research, backlinks, and website traffic. In most cases, if you\u2019re visible in AI responses, the core topics you want to be aligned with will be reflected here. But you can also follow through with the next step to help you identify topics you might be missing. Instead of doing a brand search, this time, only include the main topics you want to be found for: It can help to analyze one topic at a time if there are a few you want to check out. Then use the filters to remove any results that mention your brand in the query, response, and citations. Check out the Topics report again to find sub-themes you may want to connect to your brand. Look for gaps you\u2019d like to close, like where your brand is: Not mentioned, but a competitor is Not strongly associated with important sub-topics in AI responses Missing content formats AI frequently cites (like guides, videos, reviews) Then, you can close the gaps on your website by either publishing new pages or improving the topic coverage of existing ones. You can use AI Content Helper for this. It analyzes your content and helps you identify essential topics to cover on each page. 5. Find your top-cited pages in AI responses Analyzing your brand\u2019s top-cited pages reveals which content AI systems consider most authoritative, helping you understand, replicate, and expand the signals driving your visibility in AI search. There are two ways to find your most popular pages that are cited in AI responses. The first is to use a tool like Brand Radar, which shows you the exact queries and responses you\u2019re cited for. The second is to analyze your page-level traffic from AI by using a tool like Ahrefs\u2019 Web Analytics or GA4. Check your top-cited pages in Ahrefs\u2019 Brand Radar Start typing your brand in Brand Radar and select the option to add variations: This will allow you to add your website as part of your brand entity: You can only see data about citations if you add a domain to track, so always double-check this setting if you can\u2019t see any citation data in the dashboard. Then, navigate to the Citations tab in the dashboard and check out how many citations your brand has earned across different platforms: Clicking these values will take you to the responses that include citations. However, you can also check out the Cited Pages report if you just want to see the list of top-cited pages. In some cases, you\u2019ll see a list of pages from your site and others that are cited in the same responses where your brand is mentioned. Use the filter to show only your domain: You\u2019ll end up with a list of top-cited pages in descending order based on how many responses used the page as a source: Cross-check the top pages earning AI traffic in your analytics data The second method you can try is to check out your web analytics platform and analyze which pages are getting the most traffic from AI. Although you won\u2019t be able to see the exact queries and responses driving these clicks to your website, you can still get an idea of which pages actually earn clicks. Just because a page is well-cited among AI responses does not mean people will click on it. You\u2019ll need to have AI tracking in your analytics tool already set up to get this data. If you use Ahrefs\u2019 Web Analytics, this is set up for you automatically: Look for a list of the top pages visited most from AI platforms: Cross-check these pages against those in Brand Radar. For each one, check the responses the page is cited in: This helps you spot which queries and responses drive the most clicks from AI search results to your site. Repeat the process across different AI platforms (e.g., AI Overviews, ChatGPT, Perplexity) to compare click-through patterns. 6. Identify your best brand mentions that enhance AI visibility A major aspect of earning brand visibility in AI is how others talk about your brand online. You can run a full audit to analyze your brand mentions everywhere people talk about you. Doing this will give you a holistic idea of the language patterns and knowledge about your brand that AI is likely to include in responses about you. If you\u2019re working agency-side or just don\u2019t have time to do the full process, try out this shortcut that will help you prioritize which online mentions to analyze first. Run an empty search in Brand Radar and use the filters to only include the AI responses that mention your brand: Then, check out the Cited pages report. You will get a list of all pages that AI cites for responses that mention your brand. For instance, Zapier and Reddit are frequently cited in responses that mention Ahrefs: You can check out the responses themselves for an idea of how your brand was mentioned. Then check out the content cited on these websites to see exactly if (and how) they mention your brand. This analysis is useful for: Spotting your best web mentions and how they influence the way AI also talks about you Identifying misinformation in AI responses and tracking down the exact source Seeing what content formats are frequently cited in your industry (and publishing similar posts) Partnering with websites that frequently get cited and often mention you favorably Learning how people (and AI) position you against your competitors This provides a prioritized list of web mentions that significantly impact how AI describes your brand. Replicate the best ones for quick-win visibility gains while also reaching out to those that may need updating. Once you\u2019ve identified these influential mentions, the next step is to find gaps you can close or opportunities your competitors have yet to tap into. 7. Compare your visibility to competitors to close gaps To benchmark your brand\u2019s AI visibility against competitors, search your brand and then add one or more competitors like so: You can also try out the AI suggestions to auto-populate your top competitors in AI search. In the Overview tab, you\u2019ll be able to compare your AI visibility directly to each competitor you entered. You can see each brand\u2019s visibility metrics like mentions, impressions, citations, and AI Share of Voice for each AI search platform. Hover over the platforms you care most about until you see this window pop up: Each option will take you to a pre-filtered view of the AI responses report. Only brand : This report will show you queries and AI answers where the only brand mentioned is the one you\u2019ve selected. It is great for assessing brand-specific queries and responses. With others : This report shows queries and/or responses that contain all the brands you\u2019re comparing. It is great for assessing topics that are likely to mention you alongside competitors. Others only : This report shows queries that only mention the other brands you\u2019re comparing against. It is great for finding topics that mention your competitors but not you. Check out these reports periodically for insights into which competitors might be growing their AI visibility quickly. If you add a topic as part of the main search, you can also hone in on any specific topics where competitors are mentioned but your brand isn\u2019t. Pay attention to the AI Share of Voice metrics to see who has the highest visibility share in responses about that topic. It\u2019s also worth checking out the Cited domains and Cited pages reports to identify the top sources mentioning each brand. Look for websites that mention competitors more than you and see how you can increase your mentions within them, too. There are numerous possibilities here, depending on which competitive insights matter most to your stakeholders. 8. Turn these insights into a strategy for AI visibility By this point, you\u2019ll have a clear picture of how your brand appears in AI search: what\u2019s working, where you\u2019re absent, and how you compare to competitors. The final step is turning those insights into action. Use your findings to prioritize next steps based on impact and effort: Fix: Correct misinformation or outdated brand descriptions Build: Expand content coverage for missing topics and formats that AI cites most Influence: Strengthen relationships with authoritative sites that AI relies on for citations Depending on the task, you may need to collaborate with other teams to help you implement these actions. For example, if you have a PR team, they may be able to reach out to publications and correct misinformation about the brand in other people\u2019s content. If you need to seek approval before you can start implementing these actions, take the time to create a report for your stakeholders. Download our free AI Visibility Audit Report Template if you don\u2019t already have one. Replace all the pink sections and summarize your key findings in scorecards and quick snapshots of key points. Finally, turn your audit into an ongoing cycle, ideally monthly if you have the bandwidth. Otherwise, quarterly will do. With AI search platforms changing as quickly as they are, and competitors scrambling to win the largest share of voice, it\u2019s worth checking your visibility frequently. Record the same metrics as you did in step two so you can see how your visibility shifts over time. Final thoughts An AI visibility audit tracks how your brand is presented in AI search over time. It measures the volume of responses that mention your brand name or cite your website as a source. However, it also assesses qualitative signals like how your brand is represented. To improve your visibility in AI search, check out the following guides: Further reading How to Monitor and Win Brand Mentions in AI Answers Answer Engine Optimization: How to Win in AI-Powered Search The Ultimate 82-Point Checklist for SEO & AI Visibility Post by Despina Gavoyannis Despina Gavoyannis is a Senior SEO Specialist at Ahrefs, a leading marketing platform for search, AI, and beyond. She has worked in SEO for over 10 years, specializing in revenue-driven strategies and collaborating closely with cross-functional teams, including UX designers, developers, and marketers. Before joining Ahrefs, Despina worked as an SEO consultant, providing strategic guidance and education to in-house and agency teams. Her work has helped generate more than $125 million in additional annual organic revenue for the brands she\u2019s partnered with. Despina is the author of one book, two SEO courses, and has been featured in publications such as Search Engine Journal, Wix, Crazy Egg, and Learning SEO. Reviewed by Ryan Law"
+ },
+ {
+  "url": "https://indexly.ai/blog/how-to-track-your-brand-in-chatgpt-gemini-and-perplexity-step-by-step-guide/",
+  "title": "How to Track Your Brand in ChatGPT, Gemini, and Perplexity - Step-by-Step Guide (2026)",
+  "words": 2846,
+  "headings": [
+   [
+    "h2",
+    "What You'll Learn"
+   ],
+   [
+    "h2",
+    "Why Tracking Your Brand in AI Search Matters in 2026"
+   ],
+   [
+    "h2",
+    "The Process at a Glance"
+   ],
+   [
+    "h2",
+    "Step 1: Set Up Your Brand Profile and Define Tracking Prompts"
+   ],
+   [
+    "h3",
+    "What You're Doing"
+   ],
+   [
+    "h3",
+    "How to Do It"
+   ],
+   [
+    "h3",
+    "Best Practices"
+   ],
+   [
+    "h3",
+    "What Done Looks Like"
+   ],
+   [
+    "h2",
+    "Step 2: Run a Visibility Scan Across ChatGPT, Gemini, and Perplexity"
+   ],
+   [
+    "h3",
+    "What You're Doing"
+   ],
+   [
+    "h3",
+    "How to Do It"
+   ],
+   [
+    "h3",
+    "Example"
+   ],
+   [
+    "h3",
+    "Common Mistakes"
+   ],
+   [
+    "h3",
+    "What Done Looks Like"
+   ],
+   [
+    "h2",
+    "Step 3: Analyze Citation Share and Sentiment by Engine"
+   ],
+   [
+    "h3",
+    "What You're Doing"
+   ],
+   [
+    "h3",
+    "How to Do It"
+   ],
+   [
+    "h3",
+    "Example"
+   ],
+   [
+    "h3",
+    "What Done Looks Like"
+   ],
+   [
+    "h3",
+    "Find your AI Share of Voice"
+   ],
+   [
+    "h2",
+    "Step 4: Automate Continuous Monitoring Across All Three Engines"
+   ],
+   [
+    "h3",
+    "What You're Doing"
+   ],
+   [
+    "h3",
+    "How to Do It"
+   ],
+   [
+    "h3",
+    "Best Practices"
+   ],
+   [
+    "h3",
+    "What Done Looks Like"
+   ],
+   [
+    "h2",
+    "Step 5: Export Competitive Benchmarks and Close Citation Gaps"
+   ],
+   [
+    "h3",
+    "What You're Doing"
+   ],
+   [
+    "h3",
+    "How to Do It"
+   ],
+   [
+    "h3",
+    "What Done Looks Like"
+   ],
+   [
+    "h2",
+    "What to Do After Completing the Process"
+   ],
+   [
+    "h2",
+    "Resources You'll Need"
+   ],
+   [
+    "h2",
+    "Common Plateaus & How to Break Through"
+   ],
+   [
+    "h3",
+    "Your visibility score looks the same every time you check"
+   ],
+   [
+    "h3",
+    "You rank well on Gemini but you're invisible on Perplexity"
+   ],
+   [
+    "h3",
+    "Your share of voice keeps shifting month to month"
+   ],
+   [
+    "h3",
+    "You're cited, but sentiment or positioning is weak"
+   ],
+   [
+    "h2",
+    "Conclusion"
+   ],
+   [
+    "h3",
+    "Key Takeaways"
+   ],
+   [
+    "h2",
+    "FAQ"
+   ],
+   [
+    "h3",
+    "How do I track my brand in ChatGPT, Gemini, and Perplexity (2026)?"
+   ],
+   [
+    "h3",
+    "What is AI share of voice and how is it calculated?"
+   ],
+   [
+    "h3",
+    "Can Google Analytics track ChatGPT brand mentions?"
+   ],
+   [
+    "h3",
+    "How often should I re-run my brand visibility checks?"
+   ],
+   [
+    "h3",
+    "Why does my brand rank differently on ChatGPT versus Perplexity?"
+   ],
+   [
+    "h3",
+    "What counts as a good AI share of voice benchmark?"
+   ],
+   [
+    "h3",
+    "Do I need a paid tool, or can I track my brand manually?"
+   ],
+   [
+    "h3",
+    "How does Indexly help with brand tracking in AI search?"
+   ]
+  ],
+  "text": "How to Track Your Brand in ChatGPT, Gemini, and Perplexity - Step-by-Step Guide (2026) how to track your brand in ChatGPT | updated October 23, 2026 | Indexly Editorial Team | 2-3 hours initial setup, 30 minutes weekly thereafter | Beginner What You'll Learn This guide walks you through a repeatable, five-step process for tracking your brand in ChatGPT, Gemini, and Perplexity . You'll build a prompt library, run structured visibility scans, calculate your AI share of voice, automate ongoing tracking, and turn citation gaps into content that AI engines actually recommend. By the end, you'll have a baseline visibility score across all three engines and a simple weekly routine. Build a 20 to 30 prompt library that mirrors how real buyers query AI engines about your category. Run and log structured visibility scans across ChatGPT, Gemini, and Perplexity. Calculate your AI share of voice and see which competitors are winning citations. Set up continuous, automated monitoring so you catch visibility drops early. Before you start, you'll need a defined brand name, your domain, and 3 to 5 named competitors. You'll also need free accounts on ChatGPT, Gemini, and Perplexity, plus a spreadsheet or dashboard tool to log results. Why Tracking Your Brand in AI Search Matters in 2026 AI engines have become a primary research layer for buyers , and most of that activity never shows up in Google Analytics. Digital Applied reports that ChatGPT has reached 883 million monthly users, and Gemini grew from 5% to 21% market share year over year. Meanwhile, 93% of AI Mode sessions end without a click, so for many brands, the mention inside the answer is the only impression they get. The gap between brands that track this and brands that don't is already measurable. NetRanks cites AthenaHQ's State of AI Search 2026 report , which found the average brand mention rate across AI answers sits at just 17.2%. HG Insights data shows 73% of B2B buyers now use AI in research, and AI-search traffic converts at 14.2% compared with 2.8% for Google organic. Citations also shift constantly. VerityScore's analysis of 680 million tracked AI citations found that only 11% of domains cited by ChatGPT are also cited by Perplexity, and average cross-platform consistency is 44%. A brand that leads on one engine leads on another less than half the time, so track each engine separately rather than relying on one blended score. Key Takeaway: AI engines are a critical, largely untracked research layer with strong conversion rates. Brand mentions are low and volatile across platforms, so dedicated tracking is necessary. For supporting data, see AI Visibility Tools 2026: Track Your Brand Across LLMs. The Process at a Glance Step Action Time Outcome 1 Set up your brand profile and tracking prompts 30-45 min 20-30 prompts mapped to brand entity 2 Run visibility scans across ChatGPT, Gemini, Perplexity 45-60 min Baseline mention and citation data logged 3 Analyze citation share and sentiment by engine 30-45 min AI share of voice score per platform 4 Automate continuous monitoring 1-2 hours setup Weekly tracking without manual re-runs 5 Export benchmarks and close content gaps Ongoing, weekly Rising citation share against named competitors Plan on roughly 2 to 3 hours for the initial setup, then 30 to 45 minutes a week maintaining the data and acting on it. Step 1: Set Up Your Brand Profile and Define Tracking Prompts Good tracking starts with knowing exactly what you're tracking. If your brand entity is fuzzy, every number you collect later will be fuzzy too. What You're Doing You need a clearly defined entity: your brand name, domain, product names, and 3 to 5 named competitors. You also need a prompt library that reflects how real buyers phrase their questions. How to Do It List your brand name, primary domain, core product names, and 3 to 5 direct competitors. Build prompts across four categories: category discovery (\"best tools for X\"), comparison (\"X vs Y\"), alternatives (\"alternatives to X\"), and problem-based queries (\"how to solve X problem\"). Aim for 20 to 30 prompts, weighted toward buyer-intent phrasing rather than generic keywords. If you're using a platform like Indexly, much of this step is automated. Its prompt research tools analyze trending queries and forum data to surface the questions buyers are asking AI engines in your category. Best Practices Mirror real buyer language rather than SEO keywords. AI engines respond to conversational intent. Include a few long-tail, problem-based prompts. They often reveal citation gaps that broad prompts miss. What Done Looks Like You have a finalized list of 20 to 30 prompts and a defined competitor set, ready to run across all three engines. For a more detailed walkthrough, see ChatGPT: Chat, Work, Create & Code with AI. Step 2: Run a Visibility Scan Across ChatGPT, Gemini, and Perplexity This is where your assumptions meet reality. You may be surprised by where you show up, and where you don't. What You're Doing For each prompt, you're recording whether your brand appears, where it lands, who else gets mentioned, and which sources the engine cites. How to Do It Open ChatGPT, Gemini, and Perplexity in separate tabs and run your full prompt list in each. Run each prompt more than once per engine. Viali's measurement framework recommends at least five runs per query per engine, because AI answers are non-deterministic. For every response, log four data points: whether the brand appeared (yes/no), its position in any list, the competitors named, and the sources cited . Repeat at least monthly if you're doing it by hand, or daily if a dedicated platform handles it. Example Prompt ChatGPT Gemini Perplexity \"Best AI visibility tools\" Not mentioned Mentioned, position 3 Mentioned, position 1, cited \"Alternatives to [Competitor]\" Mentioned, position 2 Not mentioned Mentioned, position 2 Common Mistakes The most common error is treating a single run as the truth. One run per engine tells you almost nothing reliable about your real visibility rate. What Done Looks Like You have a logged spreadsheet or dashboard showing mention data across all three engines for every prompt, with each prompt run multiple times. Step 3: Analyze Citation Share and Sentiment by Engine Raw mention counts don't tell you much on their own. This step answers the question you actually care about: who is winning, and why? What You're Doing You're turning logs into an AI share of voice score and identifying where competitors pull ahead of you. How to Do It Calculate AI share of voice per engine : (your brand's mention count \u00f7 total brand mentions across the category) \u00d7 100. Score sentiment and position separately. A direct recommendation carries more weight than a neutral listing buried at position five. Compare platforms side by side rather than blending them. Passionfruit's research notes ChatGPT has roughly 10x the user base but generates almost no trackable traffic, while Perplexity's visibility translates directly into referral sessions. Note which domains are cited instead of yours. SEO Sandwich data found that a brand's own website isn't cited in 84% of AI answers about that brand, and Reddit accounts for 21.9% of off-site citations. Example Engine Brand Mention Rate Top Cited Competitor Primary Cited Source Type ChatGPT 18% Competitor A Review sites Gemini 24% Competitor A Owned domain Perplexity 31% Competitor C Reddit, forums What Done Looks Like You have an AI share of voice percentage for each engine, plus a ranked list of competitors beating you and the sources they rely on. Key Takeaway: Calculate AI share of voice separately for each engine, then examine which sources your competitors depend on. Find your AI Share of Voice Measure your Share of Voice compared to your competitors Measure your AI SoV Step 4: Automate Continuous Monitoring Across All Three Engines Manual spot-checks are good for a baseline, but they're not sustainable as an ongoing habit. That's where most teams quietly give up. What You're Doing Because AI answers drift constantly, you need automation to keep tracking useful without consuming your team's week. How to Do It Choose a monitoring cadence: weekly at minimum, and daily if your category is competitive or citations are volatile. Once your prompt set grows beyond 20 to 30 queries across three engines, move to a dedicated AI visibility platform. Indexly tracks brand visibility across AI platforms, measures AI visibility score, citation share, and brand sentiment against competitors, and automates prompt research using trending data and forum queries. Set alerts for meaningful drops in mention rate or shifts in sentiment so your team can react in days, not weeks. Best Practices Monthly re-audits aren't enough in volatile categories. Viali's framework notes that low Gemini share of voice on high-intent queries often points to a gap in structured, entity-rich content, while a weak Perplexity score usually signals too few external reference signals. Diagnose by engine, not in aggregate. Citation drift is fast. In active categories, monthly drift can reach 40 to 60% of cited domains, so weekly tracking catches shifts that monthly checks miss. What Done Looks Like Your visibility data refreshes automatically, alerts flag drops, and your team reviews a dashboard instead of re-running prompts by hand. Key Takeaway: Use a dedicated platform to keep up with citation drift, get timely alerts, and diagnose issues engine by engine. Step 5: Export Competitive Benchmarks and Close Citation Gaps Tracking only earns its keep when it changes what you do next. This step turns the data into a content and distribution plan. What You're Doing You're turning citation gaps into a prioritized content and distribution plan aimed at the competitors who win more AI citations than you. How to Do It Export a side-by-side benchmark showing your AI share of voice against each named competitor, per engine. Find queries where competitors get cited and you don't. Note which source types feed those answers, such as review sites, Reddit threads, comparison pages, or your own domain. Start with the highest-volume gaps. Shadow's research found that domains ranking for 4 or more related queries achieve 87-100% citation rates, compared with 33.8% for single-query domains. Topical depth compounds. Use content agents, such as those inside Indexly, to turn gaps into GEO-optimized content , meaning content structured so Generative Engine Optimization (GEO) systems can easily discover and cite it. Pair this with Reddit and LinkedIn presence, since third-party sources are cited most often. Re-run your full prompt set after 4 to 6 weeks to measure movement against your original benchmark. What Done Looks Like You have a dated benchmark report, a prioritized content backlog aimed at your biggest gaps, and a re-audit on the calendar. Key Takeaway: Turn citation data into content work, start with the highest-impact gaps, and use GEO-optimized content to raise your citation rate. What to Do After Completing the Process Phase 1, Weeks 1-4: Run your first re-audit with the identical prompt set to confirm your baseline is stable. If some queries never surface your category, adjust your prompt library. Phase 2, Months 2-3: Shift from measuring to influencing. Publish GEO-optimized content and build third-party presence on forums, comparison sites, and LinkedIn, aimed at your highest-priority gaps. Then track whether your mention rate moves. Phase 3, Ongoing: Treat AI share of voice as a recurring KPI alongside traditional SEO metrics. Review it monthly with leadership and run a quarterly deep dive against named competitors on every engine you track. Resources You'll Need Resource Role Status Price Indexly AI visibility tracking, citation gap analysis, content agents for GEO content Recommended Paid plans, see site ChatGPT Engine to monitor directly for brand mentions Required Free tier available Gemini Engine to monitor directly for brand mentions Required Free tier available Perplexity Engine to monitor directly for brand mentions and citations Required Free tier available Spreadsheet (Google Sheets or similar) Manual baseline logging before automation Recommended Free See also, see Best Tool to Track & Boost Your Brand's Visibility in AI Search . For related guidance, see How To Track Your Brand Mentions In Chatgpt Gemini And Perplexity . Common Plateaus & How to Break Through Your visibility score looks the same every time you check Likely cause: You're running each prompt only once per engine. Given how much AI answers vary, a single run is closer to a coin flip than a measurement. Fix: Run each prompt at least five times per engine and track the percentage of runs where you appear. You rank well on Gemini but you're invisible on Perplexity Likely cause: Each engine retrieves and weights sources differently. Cross-platform consistency sits at roughly 44%. Fix: Diagnose each engine on its own. Weak Perplexity visibility usually means too few external reference signals on forums and review sites. Weak Gemini visibility usually means thin, unstructured on-site content. Your share of voice keeps shifting month to month Likely cause: This is expected behavior, not a measurement error. Citation drift in active categories can reach 40 to 60% of cited domains each month. Fix: Look at trend lines over 8 to 12 weeks instead of reacting to any single week. If your category is highly competitive, move to weekly tracking. You're cited, but sentiment or positioning is weak Likely cause: You appear in neutral, list-style mentions rather than being recommended outright. Competitor content often dominates comparison and alternatives queries. Fix: Prioritize GEO-optimized comparison and alternatives content. Build forum presence, especially on Reddit given its outsized share of off-site citations. Key Takeaway: Most plateaus clear up when you run prompts more often, diagnose each engine separately, watch trends over time, and invest in content that earns stronger recommendations. For more troubleshooting advice, see How to Fix Incorrect AI Brand Information | ziptie.ai Blog . Conclusion Tracking your brand in ChatGPT, Gemini, and Perplexity comes down to five repeatable steps: define your brand profile and prompts, run structured visibility scans, calculate AI share of voice by engine, automate monitoring, and turn citation gaps into targeted content. Treat it as a continuous loop, not a one-time audit. Key Takeaways You now have a repeatable framework for measuring brand visibility separately across ChatGPT, Gemini, and Perplexity. Track AI share of voice per engine, not blended, because cited domains overlap very little across platforms. Run your first full prompt scan this week and log a true baseline before investing in automation or content production. FAQ How do I track my brand in ChatGPT, Gemini, and Perplexity (2026)? Build a library of 20 to 30 prompts around your category and run each one multiple times per engine. Log whether your brand appears, its position, the competitors named, and the sources cited. Calculate an AI share of voice score for each engine, then add automated monitoring through a platform like Indexly to track weekly without manual re-runs. What is AI share of voice and how is it calculated? AI share of voice is the percentage of AI responses that mention your brand, relative to total brand mentions in your category. Calculate it separately for ChatGPT, Gemini, and Perplexity using: (your brand's mention count \u00f7 total category mentions) \u00d7 100. Can Google Analytics track ChatGPT brand mentions? GA4 tracks referral visits from ChatGPT , not every mention of your brand. Unlinked mentions stay mostly invisible to standard analytics, so pair GA4 with dedicated AI visibility monitoring. How often should I re-run my brand visibility checks? Manual checks should happen at least monthly, but weekly is strongly recommended . Monthly citation drift in active categories can reach 40 to 60% of cited domains. Automated platforms typically refresh daily. Why does my brand rank differently on ChatGPT versus Perplexity? Each engine retrieves and weights sources differently, drawing on different indexes and favoring different source types such as owned domains, review sites, and forums. A tactic that earns a citation on one engine can fail completely on another. What counts as a good AI share of voice benchmark? It depends on how crowded your category is. In niche B2B categories with 3 to 5 competitors, leaders typically hold 40-60% share of voice, challengers 15-30%, and new entrants 5-15%. Broader consumer categories with 50+ competitors see leaders at just 10-20%. Do I need a paid tool, or can I track my brand manually? Manual tracking in a spreadsheet is a solid starting point. Once your prompt set grows past 20 to 30 queries across three engines on a recurring schedule, a dedicated platform like Indexly becomes far more efficient for ongoing monitoring and competitive benchmarking. How does Indexly help with brand tracking in AI search? Indexly is an AI search visibility platform. It handles prompt tracking and citation gap analysis, and it analyzes your brand presence and sentiment in AI chatbots. Its Content Agents use citation gaps to shape AI-generated answers through GEO-optimized articles, Reddit signals, and LinkedIn presence. AI Traffic Analytics then attributes the resulting traffic back to that work. This guide draws on published 2026 AI search visibility research, platform documentation from ChatGPT, Gemini, and Perplexity, and current industry benchmarking studies. Visibility rates and citation behavior change often as AI engines update their retrieval models. Treat the benchmarks here as directional, and verify your own numbers through regular tracking."
+ },
+ {
+  "url": "https://toolchase.com/blog/how-to-track-ai-citations/",
+  "title": "How to Track Your Brand's AI Citations (2026) | ToolChase",
+  "words": 2335,
+  "headings": [
+   [
+    "h1",
+    "How to Track Your Brand's AI Citations Across ChatGPT, Gemini, and Perplexity"
+   ],
+   [
+    "h2",
+    "TL;DR"
+   ],
+   [
+    "h2",
+    "What an AI citation is, and why it is the new ranking"
+   ],
+   [
+    "h2",
+    "The four things worth tracking"
+   ],
+   [
+    "h2",
+    "The free manual method (and where it breaks)"
+   ],
+   [
+    "h2",
+    "Tracking at scale with the Semrush AI Visibility Toolkit"
+   ],
+   [
+    "h2",
+    "Independent alternatives, so you can choose on merit"
+   ],
+   [
+    "h2",
+    "A simple monthly tracking workflow"
+   ],
+   [
+    "h2",
+    "Turning tracking into more citations"
+   ],
+   [
+    "h2",
+    "Frequently asked questions"
+   ]
+  ],
+  "text": "How to Track Your Brand's AI Citations Across ChatGPT, Gemini, and Perplexity Last updated: November 2026 \u00b7 9 min read Sponsored, in partnership with Semrush This guide is produced in partnership with Semrush and features its AI Visibility Toolkit. The workflow below works with any tracking tool, and we name the main independent alternatives so you can choose on merit. Links to Semrush are affiliate links. TL;DR An \"AI citation\" is any time an AI answer engine names or links your brand in its response. To track them: pick the prompts your customers actually ask, check how often each engine (ChatGPT, Google AI Overviews and AI Mode, Gemini, Perplexity) mentions or links you, and watch three things over time, citation frequency, share of voice versus competitors, and sentiment. You can spot-check by hand for free, but it does not scale or give you trend data, so most teams move to a dedicated monitor. Semrush's AI Visibility Toolkit (now bundled into every paid Semrush plan) automates prompt tracking, an AI Visibility Score with competitor benchmarking, and citation and sentiment reporting across all four engines; Profound , Peec AI and Otterly.ai are the dedicated-monitor alternatives. What an AI citation is, and why it is the new ranking When someone asks ChatGPT \"what is the best project management tool for agencies\" or types a question into Google's AI Overviews, the model writes a synthesized answer and often names specific brands, sometimes with a linked source. Each of those mentions is an AI citation . It is the generative-engine equivalent of a blue-link ranking: it is how a buyer first hears your name inside the answer itself, before they ever reach a results page. This matters because a growing share of research now ends inside the AI answer. If ChatGPT recommends three tools for a task and you are not one of them, you were effectively invisible for that query, no matter how well you rank in classic search. Optimizing for it is usually called generative engine optimization (GEO), and the first step of any GEO program is measurement: you cannot improve a citation rate you are not tracking. The four things worth tracking Do not try to log every AI mention on the internet. Track a small, honest set of signals that map to real outcomes: Metric The question it answers What good looks like Citation frequency Across a fixed prompt set, how often does each engine mention or link you? This is your baseline. Rising month over month on your priority prompts Share of voice Of all the brands named for those prompts, what percentage are you? Growing faster than your named competitors Sentiment When you are cited, is the framing positive, neutral, or critical? \"The expensive option\" is not the same win as \"best for beginners.\" Positive or neutral framing, no recurring criticism Source pages Which of your URLs (or which third-party pages) the engines actually pull from. Your own pages earning the citation, not a rival's comparison post Pick roughly 20 to 50 prompts that reflect how your buyers actually phrase their problems, a mix of category questions (\"best X for Y\"), comparison questions (\"X vs Y\"), and branded questions (\"is X any good\"). That prompt set becomes your fixed measurement panel; keep it stable so month-over-month numbers stay comparable. The free manual method (and where it breaks) You can start tracking today with nothing but the chat apps themselves. For each engine, run your prompts and record the result in a simple spreadsheet: Engine How to run the check What to log ChatGPT Fresh chat, with memory and personalization turned off so your history does not skew results Named? Linked? Which source? Google AI Overviews / AI Mode Run the query logged out or in an incognito window Brand in the AI answer? Which pages cited? Gemini Repeat the same prompts in a fresh session Mentions and links Perplexity Standard search; numbered sources show inline The exact URL that earned the citation (easiest to see here) Semrush also offers a free AI Search Visibility Checker that gives you a quick, no-signup read on a handful of prompts, a good way to sanity-check before you commit to a paid workflow. The manual method is honest and free, and it is the right way to learn what \"good\" looks like. But it breaks down fast: Where manual tracking breaks Non-deterministic answers: the same prompt returns different brands on different runs, so one manual check is a sample of one. No scale, no trend line: it stalls past a few prompts and cannot show direction over time. No math: share of voice and sentiment have to be computed by hand. Once you care about direction over time, you need a tool that runs the panel repeatedly and aggregates it. Tracking at scale with the Semrush AI Visibility Toolkit Semrush AI Visibility Toolkit Sponsor Bundled into every paid Semrush plan, it tracks how your brand shows up across ChatGPT, Google AI Overviews and AI Mode, Perplexity, and Gemini: prompt tracking, an AI Visibility Score with competitor benchmarking, plus citation and sentiment reporting in one dashboard. Try the AI Visibility Toolkit \u2192 A dedicated toolkit turns the manual spreadsheet into a standing report. With Semrush's, the workflow looks like this: Load your prompt panel. Add the 20 to 50 prompts you defined above. The toolkit runs them across the engines on a schedule, so you are averaging many runs instead of eyeballing one. Read your AI Visibility Score. The headline metric rolls citation frequency and prominence into a single trackable number, and you add competitors so you can benchmark share of voice against them directly. Check prompt-level detail. Prompt tracking shows which specific questions cite you, which cite a rival instead, and which pages the engines pulled from, so you know exactly where to intervene. Watch sentiment. Sentiment analysis flags whether mentions are positive, neutral, or negative across the engines, so a drop in tone gets caught before it becomes a pattern. Run the AI search site audit. The toolkit checks whether your own pages are structured in a way AI engines can parse and cite, which feeds directly into your improvement work. AI Visibility Toolkit at a glance Price Included in every paid Semrush plan, from $139/mo for the SEO tier; Starter ($199/mo) adds 50 prompts tracked daily and 1 domain for AI brand performance, rising to 100 daily on Pro+ ($299/mo) and unlimited on Advanced (custom pricing) Engines covered ChatGPT, Google AI Overviews and AI Mode, Gemini, Perplexity Core reports Prompt tracking, AI Visibility Score, competitor benchmarking, citation and sentiment reporting, AI search site audit Free way to test Free AI Search Visibility Checker (no signup) AI search tracking is no longer sold as a separate add-on, so the free checker and the AI Visibility features on Semrush's permanent $0 plan are the two no-cost ways to take a first look. If you already run Semrush for classic SEO, the main advantage is one roof: AI and traditional search visibility live in the same platform instead of a separate monitor. Independent alternatives, so you can choose on merit Semrush is the all-in-one option, and it is the strongest choice if you want AI visibility living next to your existing keyword, backlink, and rank-tracking work. If AI visibility is all you need, dedicated monitors can go deeper on prompt-level tracking and are often cheaper: Tool Type Choose it when Profound Dedicated monitor (enterprise) You need deep prompt and conversation analytics at scale Peec AI Dedicated monitor You want focused, more affordable AI-visibility analytics for a marketing team Otterly.ai Dedicated monitor You mainly want daily prompt tracking with URL-level citation reporting Ahrefs Brand Radar Separate Ahrefs product (Brand Radar AI from $199/mo) You already live in Ahrefs and want AI mentions inside that ecosystem The honest rule: buy the all-in-one if AI visibility is one job among many, and buy a dedicated monitor if it is your whole job. Either way, the metrics you track, frequency, share of voice, sentiment, and sources, are the same. For a full breakdown, see our roundup of the best AI search visibility tools . A simple monthly tracking workflow Whatever tool you use, keep the cadence boring and consistent: The monthly loop Pull the numbers: citation frequency, share of voice, and sentiment for your fixed prompt panel, logged next to last month's. Note the movers: which prompts newly cite you, which newly dropped you, and which competitor gained where you lost. Trace the source: for prompts you lost, check which page the engine cited instead, that page is your content gap. Ship one improvement: update or create the page that should be earning the citation, then watch that specific prompt next month. A monthly rhythm is enough for most brands. Answer engines change often, but chasing daily noise wastes time; the trend line over three to six months is what tells you whether your GEO work is landing. Turning tracking into more citations Tracking is only half the loop; the point is to raise your citation rate. Once you can see which prompts you are losing, the highest-leverage moves are consistent across engines: Answer the question directly and early. Lead a page with a clear, quotable answer, engines lift concise, self-contained statements far more readily than buried conclusions. Earn third-party mentions. Being named on credible sites, listicles, and reviews you do not control is one of the strongest signals; models cite the wider web, not just your domain. Structure for machines. Clear headings, FAQ blocks, and valid schema make your content easier to parse and quote. An AI search site audit (in the Semrush toolkit or elsewhere) flags where you fall short. Be specific and current. Concrete numbers, named features, and recent dates get pulled into answers more than generic marketing copy. These on-page and off-page tactics are where your tracking data pays off. Track first, then use what you learn to decide exactly which pages to fix, rather than guessing. For the tools that measure it, see our roundup of the best AI SEO tools . The takeaway Fix a prompt panel, measure frequency, share of voice, and sentiment on a monthly rhythm, and repair the specific pages that lose citations. The tool automates the measuring; the panel and the cadence are what make the program work. Frequently asked questions What is an AI citation? An AI citation is any time a generative answer engine like ChatGPT, Google AI Overviews, Gemini, or Perplexity names or links your brand inside its answer to a user's question. It is the generative-search equivalent of a search ranking: it is how a buyer encounters your brand within the AI response itself. Tracking how often you are cited, for which prompts, and with what sentiment is the foundation of any generative engine optimization program. Can I track AI citations for free? Yes, up to a point. You can manually run your key prompts in ChatGPT, Google AI Mode, Gemini, and Perplexity and log the mentions in a spreadsheet, and Semrush offers a free AI Search Visibility Checker for a quick read. But manual tracking does not scale, and because AI answers are non-deterministic, a single check is only a sample of one. To see trends, share of voice, and sentiment over time across many prompts, most teams move to a paid monitor such as the Semrush AI Visibility Toolkit, Profound, Peec AI, or Otterly.ai. How much does the Semrush AI Visibility Toolkit cost? Semrush no longer sells the AI Visibility Toolkit as a $99/mo add-on: AI search tracking is now included in every paid Semrush plan, starting at $139/mo for the SEO tier. Prompt tracking scales with the plan, 50 prompts tracked daily on Starter ($199/mo), 100 on Pro+ ($299/mo) and unlimited on Advanced (custom pricing), and Starter also covers 1 domain for AI brand performance. To test at no cost, use Semrush's free AI Search Visibility Checker, or the permanent $0 plan, which includes AI Visibility features but is capped at 1 demo project and 10 reports a day. Which AI engines should I track? Prioritize the engines your buyers actually use: ChatGPT (the largest by usage), Google's AI Overviews and AI Mode (because of Google's reach), Perplexity (popular for research and easiest to see sources on), and Gemini. A good tracking tool covers all four in one dashboard so you can compare where you are strong and where a competitor is winning. If you only have time for two, start with ChatGPT and Google AI Overviews. How is tracking AI citations different from classic SEO rank tracking? Classic rank tracking checks a deterministic list of blue-link positions for a keyword. AI citation tracking measures whether you are named inside a synthesized answer, which is probabilistic: the same prompt can return different brands on different runs, so you average many runs rather than reading one position. You also track things rank tracking cannot, such as sentiment (how you are described) and share of voice against every brand named in the answer, not just your own listing. How often should I check my AI citations? Monthly is enough for most brands. Answer engines update frequently, but daily fluctuations are mostly noise; the trend over three to six months is what shows whether your GEO work is paying off. Keep a fixed prompt panel and pull the same metrics on the same schedule so your numbers stay comparable, then act on the biggest month-over-month movers rather than every small change. Tracking tells you where you stand. If you want the other half, the work that actually moves those numbers, our 2026 GEO playbook walks through the full workflow: baseline audit, prompt set, content and entity optimization, citation building, and the measurement loop. Disclosure: this article is a sponsored partnership with Semrush and contains affiliate links. Our editorial recommendations, including the independent alternatives named above, are made on merit and are not changed by the partnership. Pricing re-verified on a rolling basis; confirm current figures on the vendor's site."
+ },
+ {
+  "url": "https://www.erlin.ai/blog/how-to-monitor-ai-search-visibility",
+  "title": "How to monitor AI search visibility (2026) \u00b7 Erlin",
+  "words": 2345,
+  "headings": [
+   [
+    "h2",
+    "What is AI search monitoring?"
+   ],
+   [
+    "h2",
+    "Major AI platforms to track"
+   ],
+   [
+    "h3",
+    "ChatGPT and ChatGPT search"
+   ],
+   [
+    "h3",
+    "Perplexity AI"
+   ],
+   [
+    "h3",
+    "Google Gemini and AI Overviews"
+   ],
+   [
+    "h3",
+    "Claude (Anthropic)"
+   ],
+   [
+    "h3",
+    "Microsoft Copilot"
+   ],
+   [
+    "h2",
+    "Key metrics in AI visibility monitoring"
+   ],
+   [
+    "h3",
+    "Prompt coverage"
+   ],
+   [
+    "h3",
+    "Citation rate vs mention rate"
+   ],
+   [
+    "h3",
+    "Share of voice"
+   ],
+   [
+    "h3",
+    "Accuracy rate"
+   ],
+   [
+    "h3",
+    "AI-driven traffic and conversion rate"
+   ],
+   [
+    "h3",
+    "Coverage by prompt type"
+   ],
+   [
+    "h2",
+    "How to monitor AI search visibility"
+   ],
+   [
+    "h3",
+    "Manual monitoring methods"
+   ],
+   [
+    "h4",
+    "Run a prompt audit"
+   ],
+   [
+    "h4",
+    "Document AI responses verbatim"
+   ],
+   [
+    "h4",
+    "Track competitor citations"
+   ],
+   [
+    "h4",
+    "Set a manual review cadence"
+   ],
+   [
+    "h3",
+    "Automated tracking tools"
+   ],
+   [
+    "h4",
+    "What to look for in an AI visibility tool"
+   ],
+   [
+    "h4",
+    "Getting started with Erlin"
+   ],
+   [
+    "h4",
+    "Other tools to consider"
+   ],
+   [
+    "h2",
+    "How to interpret your AI visibility data"
+   ],
+   [
+    "h3",
+    "Low prompt coverage with high accuracy"
+   ],
+   [
+    "h3",
+    "High coverage with low accuracy"
+   ],
+   [
+    "h3",
+    "Strong coverage on awareness prompts, weak on purchase prompts"
+   ],
+   [
+    "h3",
+    "Competitor dominating a specific prompt cluster"
+   ],
+   [
+    "h3",
+    "AI-driven traffic converting at a higher rate than organic"
+   ],
+   [
+    "h3",
+    "Coverage loss month over month"
+   ],
+   [
+    "h2",
+    "Build the system before you need it"
+   ]
+  ],
+  "text": "Quick answer Monitor AI search visibility by tracking a set of buyer prompts across ChatGPT, Perplexity, Gemini, Claude and Copilot, and measuring prompt coverage, citation versus mention rate, share of voice, accuracy and AI-driven traffic. Start manually with 20 to 30 prompts reviewed at least monthly, then move to an automated tool such as Erlin, Scrunch or Peec.ai once you track hundreds of prompts. Most brands know their Google ranking. Few know what ChatGPT says about them when a buyer asks a relevant question. That gap is where AI search monitoring comes in, and right now, most brands have no system for it. Only 16% of brands systematically track AI search performance. (Erlin data, 2026) The other 84% are flying without instruments while AI platforms quietly shape buyer perception of their brand, their competitors, and their category. This guide covers what AI search monitoring is, which platforms to track, the metrics that matter, and how to build a system that tells you what AI says about your brand, and what to do about it. What is AI search monitoring? AI search monitoring is the practice of systematically tracking how your brand appears in responses generated by AI platforms, which prompts surface your brand, how accurately it is described, how often it appears relative to competitors, and whether those appearances drive action. It is different from traditional SEO monitoring in one critical way. SEO monitoring tracks your position on a results page. AI search monitoring tracks whether you exist in the answer at all, and if so, what is being said. When a buyer types \"what's the best project management tool for remote teams\" into Perplexity or ChatGPT, they get a generated answer that cites specific brands. The brands cited get the traffic. The brands not cited are invisible. AI search monitoring tells you which side of that line you are on, and why. Erlin is built specifically for this. It tracks your brand's visibility across ChatGPT, Perplexity, Gemini, and Claude by running thousands of purchase-intent prompts and capturing exactly what each platform says. You see your prompt coverage score, where competitors are being cited instead of you, and what specific content gaps are causing the misses. That combination of coverage, accuracy, and competitive context is what separates AI search monitoring from a manual spot-check. Major AI platforms to track Not all AI platforms behave the same way. Each has a different indexing approach, a different relationship with structured data, and a different user base. Monitoring one and ignoring the others gives you a partial picture. ChatGPT and ChatGPT search ChatGPT is the highest-volume AI platform for consumer and B2B research queries. Its web-browsing mode fetches and parses live pages; its base model draws on training data. Monitoring ChatGPT means tracking both whether your brand appears in generated answers and how it is described. ChatGPT is also where AI errors surface first: wrong pricing, outdated features, competitor misattributions. Perplexity AI Perplexity is the fastest-growing AI search engine for research-oriented queries. It crawls content continuously and cites sources directly in its answers, making it the most transparent platform for understanding why a brand is or is not being cited. Perplexity is particularly active in SaaS and B2B purchase research. If buyers in your category are doing comparison research, a significant portion of it runs through Perplexity. Google Gemini and AI Overviews Google's AI Overviews appear at the top of search results pages for a growing share of queries. For brands already invested in SEO, AI Overviews represent the highest-volume AI surface because it sits inside existing Google search behavior. Gemini's standalone product is a separate monitoring target. Both pull from Google's index but behave differently in terms of citation patterns. Claude (Anthropic) Claude is increasingly used for professional research and complex buyer queries. It draws heavily on third-party validation: Wikipedia, review platforms, and authoritative publications. Brands without a Wikipedia presence or strong G2/Capterra profiles are underrepresented in Claude responses. Monitoring Claude specifically reveals gaps in third-party coverage that other platforms may not surface. Microsoft Copilot Copilot integrates into Microsoft 365 products and Bing search. For enterprise B2B brands, this is a significant surface. Copilot users are often mid-to-senior professionals doing vendor research inside the tools they already use. Citation patterns in Copilot skew toward structured, authoritative content: product pages with schema, comparison tables, and verified review data. Key metrics in AI visibility monitoring Tracking AI search visibility without a clear set of metrics produces noise. These are the core numbers that tell you whether your brand is winning or losing ground in AI search. Prompt coverage The percentage of tracked prompts where your brand is cited in the AI response. This is your primary AI visibility metric. A brand with 50% prompt coverage appears in half of the relevant AI responses you are tracking. The median across Erlin's 500+ brand dataset is 24% for e-commerce and 31% for SaaS. Top performers hit 67 to 78%. (Erlin data, 2026) Citation rate vs mention rate Being cited and being mentioned are not the same thing. A citation means the AI platform presents your brand as an answer or recommendation. A mention means your brand appears in a response but is not being recommended; it might even appear in a negative context or a comparison that favors a competitor. Track both, and track the ratio between them. Share of voice Among all the brands cited for a given set of prompts, what percentage of citations go to your brand versus competitors? Share of voice tells you how dominant you are within your category. A brand that appears in 60% of prompts but always appears third behind two competitors has a share of voice problem, not a coverage problem. Accuracy rate How often does AI describe your brand correctly? Factual errors in AI responses, such as wrong pricing, deprecated features, and incorrect positioning, erode buyer trust before you ever get a chance to correct them. Unmonitored brands take an average of 67 days to discover AI errors. Monitored brands catch them in 14 days. (Erlin data, 2026) AI-driven traffic and conversion rate The downstream metric that connects AI visibility to revenue. Because an AI answer has already narrowed their options, AI-referred visitors tend to convert better than people arriving from a standard search result. Tracking which traffic comes from AI platforms, via UTM parameters, GA4 referral source analysis, or a dedicated monitoring tool, shows whether your AI visibility is producing commercial outcomes. Coverage by prompt type Not all prompts are equal. A brand might appear strongly for awareness-stage queries (\"what is [category]\") but be absent from purchase-stage queries (\"best [category] tool for [use case]\"). Breaking down coverage by prompt type reveals where in the buyer journey your AI visibility is strong or weak. How to monitor AI search visibility Manual monitoring methods Manual monitoring is the starting point for teams without a dedicated tool. It is time-consuming and does not scale, but it builds intuition for how AI platforms describe your brand and your category. Run a prompt audit Pick 20 to 30 prompts that represent how buyers search for your category. Include awareness queries (\"what is [category]\"), comparison queries (\"best [category] for [use case]\"), and purchase queries (\"[specific product] vs [competitor]\"). Run each prompt in ChatGPT, Perplexity, and Gemini. Record whether your brand appears, what position it appears in, and how it is described. Document AI responses verbatim Copy the AI response in full, including any sources cited. Highlight where your brand is mentioned versus cited. Note any factual errors. This creates a baseline you can return to in 30 and 60 days to measure change. Track competitor citations Run the same prompts and record which competitors appear when you do not. Competitor citation data tells you which brands own the prompts you are missing, and what content or attributes they have that you do not. Set a manual review cadence Monthly is the minimum for manual monitoring. High-traffic prompts churn at 23% month-over-month. (Erlin data, 2026) A prompt where you appear today may be lost to a competitor next month if you are not tracking. Manual monitoring is useful for getting started and for deep-dive audits. For ongoing tracking across multiple platforms and hundreds of prompts, you need automated tooling. Automated tracking tools What to look for in an AI visibility tool Not all tools are built for the same job. A tool that monitors brand mentions on social media is not the same as a tool that tracks AI citation rates across LLMs. When evaluating AI visibility tools, prioritize: prompt coverage tracking across multiple platforms, citation versus mention differentiation, competitor benchmarking, accuracy monitoring for factual errors, and integration with your existing analytics stack. Getting started with Erlin Erlin is built specifically for AI search visibility monitoring. Here is how to go from zero to a working tracking setup. Sign up and add your domain. During setup, select up to five competitors; these will be tracked alongside your brand across all prompts so you can see share of voice directly. Erlin provides a library of high-intent prompt suggestions tailored to your category, so you are not starting from scratch building a prompt set. Once your domain and competitors are configured, your snapshot is immediate. You see your AI Visibility Rank: your prompt coverage score across ChatGPT, Perplexity, Gemini, and Claude, your Traffic Rank, and a side-by-side competitor comparison showing where you appear together, where you appear alone, and where competitors are cited without you. Connect GA4 and Google Search Console to unlock the traffic layer. After connecting, Erlin shows AI-driven traffic and non-AI traffic side by side, including the conversion rate difference between the two channels. This is where the revenue case for AI visibility becomes concrete: you can see exactly how many sessions are coming from AI referrals and what those sessions convert at. Under AI Visibility, then Prompts, you can view the exact AI-generated answers for each prompt Erlin tracks. This is where you check not just whether you appear, but whether you are being cited as a recommendation or mentioned in passing. Y ou can read the full AI response, see the citation context, and flag factual errors directly from the dashboard. Other tools to consider Several platforms offer partial AI visibility functionality. Scrunch monitors brand mentions across AI platforms with a focus on sentiment. Peec.ai provides citation tracking with a particular focus on Perplexity and Google AI Overviews. For teams that want to build their own tracking setup, running the Anthropic, OpenAI, and Gemini APIs against a custom prompt set and logging outputs to a spreadsheet is a functional, low-cost option. It requires engineering time but gives full control over prompt selection and response capture. The limitation of manual API tracking is that it captures a point-in-time snapshot. AI platforms update their responses continuously. Consistent monitoring requires running prompts on a regular schedule and storing historical data, which is what purpose-built tools handle automatically. How to interpret your AI visibility data Data without interpretation produces a dashboard, not a strategy. Here is how to read your AI visibility metrics and connect them to action. Low prompt coverage with high accuracy Your brand appears in fewer prompts than it should, but when it does appear, the description is correct. This is a coverage problem, not an accuracy problem. The fix is content: more structured content covering more prompts, better fact density on existing pages, and stronger third-party presence on the platforms AI relies on: Reddit, G2, and Wikipedia. High coverage with low accuracy Your brand appears frequently, but AI is describing it incorrectly. This is an accuracy problem. It usually means your structured data is incomplete or contradictory, your Organization schema is missing key attributes, or third-party sources are propagating outdated information. Fix the schema first, then address the source content on review platforms. Strong coverage on awareness prompts, weak on purchase prompts AI platforms cite you when someone asks general category questions, but not when someone asks which specific tool to buy. This is a funnel-stage coverage gap. It means your brand has category presence but not purchase-intent presence. The fix is content targeting purchase-stage queries: comparison tables, use-case-specific pages, and review-rich product pages. Competitor dominating a specific prompt cluster One competitor appears in every prompt related to a specific use case or buyer type, while you do not. This is a share-of-voice gap in a specific segment. Identify what content or attributes the competitor has that you lack. In most cases, it is either a structured attribute you have not published (pricing, integration list, customer segment) or a third-party source that covers that use case explicitly (a case study, a Reddit thread, a category guide). AI-driven traffic converting at a higher rate than organic This is the signal that AI visibility investment is working. AI referral traffic arrives with higher purchase intent because the buyer has already received a recommendation from the AI platform before they click. When this conversion rate difference is visible in your GA4 data, it is the business case for doubling down on prompt coverage. Coverage loss month over month If your prompt coverage drops between tracking periods, the most common causes are: a competitor publishing new content that displaces yours, an AI platform update that changes how it sources information for a prompt cluster, or your own content becoming stale. Recovery time after losing a citation averages 45 days. (Erlin data, 2026) The faster you detect the loss, the faster you can address it. Build the system before you need it The brands that win AI search in 2026 are not the ones who start monitoring after they lose ground. They are the ones who know their prompt coverage score today, track the prompts that matter to buyers, and fix gaps before competitors lock them in. Start with a baseline. Check your AI visibility in Erlin to see your current coverage across ChatGPT, Perplexity, Claude, Google AI Mode, Gemini, and Copilot, your AI Visibility Rank, your competitor comparison, and the specific gaps reducing your citations. Check your AI visibility"
+ },
+ {
+  "url": "https://wellows.com/blog/audit-brand-visibility-on-llms/",
+  "title": "How to Check AI Visibility: A Five Platform Audit",
+  "words": 2621,
+  "headings": [
+   [
+    "h1",
+    "How to Check AI Visibility: A Five-Platform Audit You Can Run This Week"
+   ],
+   [
+    "h2",
+    "What Is AI Brand Visibility? (Explained in Simple Terms)"
+   ],
+   [
+    "h2",
+    "Why Bother Checking at All?"
+   ],
+   [
+    "h2",
+    "What is an LLM audit tool?"
+   ],
+   [
+    "h2",
+    "How do I see which LLMs mention my company or product?"
+   ],
+   [
+    "h2",
+    "How to audit brand visibility in Perplexity"
+   ],
+   [
+    "h2",
+    "How do I monitor my brand\u2019s visibility across AI search?"
+   ],
+   [
+    "h2",
+    "How Wellows runs an AI visibility audit, step by step"
+   ],
+   [
+    "h3",
+    "What a useful log looks like"
+   ],
+   [
+    "h3",
+    "Platform by platform: what to watch for"
+   ],
+   [
+    "h2",
+    "How to Read What You Find"
+   ],
+   [
+    "h2",
+    "Wellows AI visibility audit checklist"
+   ],
+   [
+    "h2",
+    "Running the Same Audit in Wellows"
+   ],
+   [
+    "h2",
+    "Conclusion"
+   ],
+   [
+    "h2",
+    "Related Articles"
+   ],
+   [
+    "h3",
+    "AI Citation Gap Analysis: How to Find Gaps and Pick Which to Fix First"
+   ],
+   [
+    "h3",
+    "Search Console Generative AI Report: What It Shows and What It Hides"
+   ],
+   [
+    "h3",
+    "How AI Sees Your Brand: Read the Story AI Tells Your Buyers"
+   ],
+   [
+    "h3",
+    "Content Optimization Tool vs Agency: Which Should You Choose?"
+   ],
+   [
+    "h3",
+    "Best AI Visibility Tools for Ecommerce Product Visibility (2026)"
+   ],
+   [
+    "h3",
+    "The Best GEO Tools and Trackers in 2026, Compared"
+   ]
+  ],
+  "text": "Wellows Blog GEO AUDIT BRAND VISIBILITY ON LLMS How to Check AI Visibility: A Five-Platform Audit You Can Run This Week Written by Sharmeen Saleem Sharmeen Saleem I'm a Content Strategist at Wellows, an AI visibility platform that helps brands track how they're cited across ChatGPT, Gemini, Perplexity, and Google's AI features. I create the content that explains AI search in plain language and helps brands understand how to show up in AI-generated answers. Read Full Bio Updated by Rayyan Jawed Rayyan Jawed I'm the Organic Growth Lead at Wellows, an AI visibility platform that helps brands track how they're cited across ChatGPT, Gemini, Perplexity, and Google's AI features. I have 8 years of experience in organic marketing. When I'm not working, I love gaming. Read Full Bio 6 min read October 12, 2026 November 3, 2026 TL;DR 1 Checking AI visibility means asking the questions your buyers ask, on all five AI platforms, and writing down what comes back. 2 Log three things per answer: were you named, was your site linked as a source, and what did the answer say about you. 3 That third one gets skipped most, and it\u2019s where the nasty surprises live. 4 One round proves very little. Answers change, so run the same prompts weekly for a month. 5 A spreadsheet is enough to start. Automate once you know which prompts matter. For testing AI visibility, list the real questions that your buyers have asked, ask them to ChatGPT, Gemini, Perplexity, Google AI Overviews, and Google AI Mode, and document three things each time \u2013 whether you were mentioned, whether your website was quoted, and what the response revealed about you. Repeat the process next week since one-time performance shows little. You don\u2019t need a tool to start. A spreadsheet, a private browser window and two focused hours will tell you more than most dashboards, and you\u2019ll know exactly where every number came from. What Is AI Brand Visibility? (Explained in Simple Terms) Wellows defines AI visibility as how often AI platforms name a brand, cite its pages as sources, and describe it accurately in answers to buyer questions. This audit separates three checks: whether the brand is named, whether its pages are cited, and whether its description is accurate. The plain English test: if a buyer asked ChatGPT for a recommendation tonight, would you be in the answer, and would it get you right? Definition AI visibility: the Wellows audit definition Wellows defines AI visibility as how often AI platforms name a brand, cite its pages as sources, and describe it accurately in answers to buyer questions. What Wellows checks in this audit What it looks like in an answer Why it matters Presence Your brand is named Buyers can\u2019t shortlist a name they never see Proof Your page is linked as a source Citations send visitors and signal trust Portrayal How the answer describes you An outdated or wrong description costs deals quietly Why Bother Checking at All? Because AI answers sound sure of themselves even when they\u2019re wrong, and nobody emails you to say so. % Key stat Over 60% of searches received an inaccurate response when Columbia Journalism Review\u2019s Tow Center tested eight AI search engines using 1,600 queries. In the same test, over 50% of Gemini\u2019s responses contained made-up or broken hyperlinks. Source: Tow Center, Columbia Journalism Review That test used news articles, not brands, so treat it as a warning rather than a measurement of your category. However, consider the following that might be found in the answers to your category: last year\u2019s prices, a feature that was discontinued, and a comparison page of your competitor. Every brand has a shadow reputation inside these answers, pieced together from pages it didn\u2019t write. An audit is how you read it . What is an LLM audit tool? Wellows is an LLM audit tool for checking whether AI answers name your brand, cite your pages and represent your offering accurately. The useful output is a record of the prompt, engine, answer, cited URLs and competitors, followed by a specific page or source to investigate. How do I see which LLMs mention my company or product? In Wellows, track the same company, product and category questions across the engines you want to compare. Inspect the answer text as well as the linked sources: your company may be named while another website receives the citation. Record exact brand variants, the date and the market, then repeat the checks before judging a trend. How to audit brand visibility in Perplexity Start in Wellows with a fixed set of buyer questions and inspect the Perplexity results separately. For each answer, log whether the brand is named, whether your domain is cited and which other pages are linked. Open those sources to distinguish a missing answer on your own site from a third-party coverage gap. Use the Perplexity visibility checker for an initial baseline. How do I monitor my brand\u2019s visibility across AI search? Use Wellows to repeat the same prompt set across ChatGPT, Gemini, Perplexity, AI Overviews and AI Mode. Keep market, language and cadence consistent, separate mentions from citations, and compare results by engine. Assign content and source investigations to an owner, then document the edit date before measuring subsequent runs. How Wellows runs an AI visibility audit, step by step The first round takes an afternoon, and every round after that goes faster. How to A seven-step AI visibility audit with Wellows 1 Write 25 to 40 prompts These should include four kinds of questions: categorization, problem, comparative, and brand. The phrases will be used from our sales interactions and Google Search Console. Use these buyer questions as the starting prompt set for your Wellows audit. 2 Create a new test environment Use a private browser window or log out, select your primary target market, and document the date. Make sure that the wording is the same each time. Record the date and market alongside your Wellows results so later comparisons use the same context. 3 Run every prompt on all five platforms Same prompt, five places. The table below covers the quirks of each one. When comparing these observations with Wellows, match the prompt, engine, and market. 4 Log four columns per answer In a Wellows audit, record whether the brand is named and whether its URL is cited. Log position and sentiment separately, then verify factual claims against current product information. A negative opinion is not the same as a factual error. 5 Copy every cited URL Yours, your competitors\u2019, and every third-party page. This list turns into your outreach and correction plan. Use this source list when reviewing citation gaps and potential outreach opportunities in Wellows. 6 Score it Work out mention rate, citation rate, and share of voice against your top three competitors, per platform. When reviewing Wellows results, keep brand mentions and cited URLs separate and compare a consistent prompt set. 7 Repeat weekly for a month Answers shift between runs. Use Wellows Performance History to compare observations for a consistent prompt set over time. Keep the engine, market, and collection settings comparable; four weekly rounds are a starting sample, not proof of a stable trend. What a useful log looks like Keep it boring and consistent. Here\u2019s an illustrative example for a payroll brand, so you can see the columns in action. Prompt Platform Named Cited Position Tone Best payroll tool for a 20-person company ChatGPT Yes No Third Neutral Best payroll tool for a 20 person company Perplexity Yes Yes First Positive Payroll tools that handle multi-state tax Google AI Overviews No No Absent None Is [your brand] good for contractors? Gemini Yes No First Wrong: quotes old pricing That last row is the one to act on first. A wrong answer about your own brand does more damage than a missing one. Platform by platform: what to watch for Platform How to test it Watch for ChatGPT Ask in a fresh chat and check that it searched the web (sources appear under the answer) Answers without sources come from training data, so log those separately Gemini Ask in a fresh chat and open any linked sources Links that look right but lead nowhere, given the Tow Center findings Perplexity Ask once and read the numbered sources The easiest to log, since every claim is tied to a source Google AI Overviews Search in a private window on Google No Overview at all is a result too, so write it down Google AI Mode Open the AI Mode tab in Google Search Longer answers pulling from more sources, so citations spread thinner How to Read What You Find Wellows\u2019 analysis of 20.5 million scored AI citations , collected from 8 March to 31 July 2026, found that 301 domains with Domain Authority scores of 90 or higher received 17% of citations. Wellows reviews brand mentions, cited URLs, and descriptions separately. The five patterns below are practical audit checks; they do not establish why an engine selected a source. Pattern What it usually means What to do next How to review it in Wellows Named, never cited The sampled answer names the brand without linking an owned page Rewrite key pages answer first and earn mentions on the sites it does cite Compare named brands with cited URLs; inspect owned-page coverage separately. Cited, never named The sampled answer links your page without naming the brand in the passage Make your brand and expertise obvious on those pages Open the cited URL in Wellows and check whether its passage names the brand. Strong on one platform, missing on another The sampled engines show different coverage; the cause needs investigation Check robots.txt and CDN settings for that engine\u2019s crawler Compare the same prompt and market across engines before checking technical access. Described wrongly The description may contain a factual error, stale information, or an opinion Trace the claim to its URL and get it corrected at the source Review the answer and cited passage against current first-party information; separate errors from opinions. Missing everywhere No appearance was observed in the sample; check the prompts and collection conditions Narrow the prompts and test crawler access first Check prompt relevance, collection status, and engine coverage before treating an absence as a brand-wide finding. ? Did you know? Sources are local. Wellows\u2019 20.5 million citation study found 386,000 distinct cited domains across 42 markets. If you sell in more than one country, audit each market on its own. Source: Wellows Wellows AI visibility audit checklist Copy this into your workflow Run it once this week, then repeat weekly for a month. Prepare 25 to 40 real buyer prompts written Four question types covered: categorization, problem, comparative, brand Private window or logged-out browser, target market set, date noted Run Every prompt asked on all five platforms Same wording every time ChatGPT checked for web sources, Google AI Overviews noted even when absent Log Named or not Cited or not (URL linked) Position: first, middle, last, or absent Tone: positive, neutral, negative or wrong Every cited URL copied Act Mention rate, citation rate, and share of voice scored per platform Same prompts repeated weekly for a month One fix made, usually a wrong description or a missing platform Running the Same Audit in Wellows The manual audit works. It also eats an afternoon every week, and the spreadsheet gets messy by round three. Here\u2019s how each step maps to Wellows. Audit step By hand In Wellows Build the prompt set An afternoon of brainstorming The free ChatGPT visibility tracker builds 40 intent-based prompts from your own site Run five platforms Hours per round Runs daily across ChatGPT, Gemini, Perplexity, AI Overviews and AI Mode Named vs cited Your judgment, answer by answer Separates explicit citations from implicit ones, where your domain is used but your name isn\u2019t Tone and accuracy Reading every answer Sourced Sentiment links each description back to the page that caused it Competitors Extra columns you\u2019ll stop filling in Citation Score, Citation Rank and competitor share, side by side More than one market A separate run per country Projects split by region The column that matters most in your spreadsheet is the one with URLs in it. A mention means you came up. A citation means the AI sent someone to you. Wellows keeps those apart and shows which pages are behind each one, including the ones quietly shaping a negative answer. Start with the free check ; no signup needed. If you want to see the full daily view first, there\u2019s a sample report you can open. Run the free ChatGPT visibility check on your domain. It takes a few minutes and shows where you\u2019re cited, named, or missing. Run the free check Conclusion Block two hours this week. Create 25 prompts. Test all five platforms, and keep track of name, citation, positioning, and tone. And then fix one thing you discover; it is usually an inaccurate description or the fact that you do not exist on one of the platforms. How do I check AI visibility for my brand? Write 25 to 40 questions your buyers ask and run each one on ChatGPT, Gemini, Perplexity, Google AI Overviews, and Google AI Mode. For every answer, note whether you\u2019re named, whether your site is linked, where you appear, and how you\u2019re described. Repeat weekly for a month before establishing a baseline. What is AI brand visibility? It\u2019s how often AI assistants bring up your brand, link to your site, and describe you accurately when people ask about your category. Being featured in generated answers with accurate branding is what AI brand visibility measures. Can I check AI visibility for free? Yes. A spreadsheet and a private browser window are enough for a manual audit across all major platforms. You can also use free AI visibility tracking tools that automatically generate buyer-style prompts from your site to highlight where you\u2019re cited, named, or missing. How often should I check AI visibility? Weekly, at least at first. The same prompt can yield a different answer from one day to the next, making a single check unreliable. Four weekly rounds establish a reliable trend, after which teams often transition to daily tracking for high-priority prompts. Why does ChatGPT mention my brand but not link to my site? Usually because the model recognizes your brand name but does not view your specific pages as the primary source for that answer. Rewrite key pages so direct answers sit near the top, and earn mentions on the third-party sites ChatGPT already cites for your topic. What should I do if an AI tool describes my brand wrongly? Identify the source by checking which URLs the AI answer cites or which indexed pages contain the inaccuracy. Update your own pages, request corrections on cited third-party sites, and publish a clear dedicated page that answers the question accurately. Do I need to check each AI platform separately? Yes. Platforms like ChatGPT, Gemini, Perplexity, and Google AI Overviews retrieve and weigh sources differently. It is common to appear strong on one surface while being missing from another, so tracking them separately avoids misleading combined averages. Related Articles \u2039 \u203a Blog November 5, 2026 AI Citation Gap Analysis: How to Find Gaps and Pick Which to Fix First GEO November 4, 2026 Search Console Generative AI Report: What It Shows and What It Hides Blog November 3, 2026 How AI Sees Your Brand: Read the Story AI Tells Your Buyers Blog October 26, 2026 Content Optimization Tool vs Agency: Which Should You Choose? Blog October 26, 2026 Best AI Visibility Tools for Ecommerce Product Visibility (2026) Blog October 26, 2026 The Best GEO Tools and Trackers in 2026, Compared"
+ },
+ {
+  "url": "https://presenc.ai/guides/how-to-audit-ai-visibility",
+  "title": "How to Audit Your AI Visibility | Presenc AI",
+  "words": 886,
+  "headings": [
+   [
+    "h2",
+    "Step 1: Define Your Audit Scope"
+   ],
+   [
+    "h2",
+    "Step 2: Run Manual Prompt Tests"
+   ],
+   [
+    "h2",
+    "Step 3: Score Your Visibility Across Six Factors"
+   ],
+   [
+    "h2",
+    "Step 4: Benchmark Against Competitors"
+   ],
+   [
+    "h2",
+    "Step 5: Identify Root Causes for Gaps"
+   ],
+   [
+    "h2",
+    "Step 6: Automate Ongoing Monitoring"
+   ],
+   [
+    "h2",
+    "Step 7: Build Your Remediation Roadmap"
+   ]
+  ],
+  "text": "Step 1: Define Your Audit Scope Before querying a single AI platform, you need to establish what you're measuring. An effective AI visibility audit begins with three inputs: your target keywords (the topics and categories your customers search), your competitor set (the brands you expect to appear alongside), and your platform list (which AI assistants matter for your audience). Start by listing 20\u201330 prompts that a prospective customer might type into an AI assistant. These should span the buying journey, from awareness (\"what is [category]?\") to consideration (\"best [category] tools for [use case]\") to decision (\"compare [brand A] vs [brand B]\"). The specificity of your prompt set determines the quality of your audit; generic prompts yield generic insights. For most B2B brands, the platform list should include at minimum ChatGPT, Claude, Perplexity, and Gemini. B2C brands should add Siri and any vertical-specific assistants relevant to their industry. Step 2: Run Manual Prompt Tests With your prompt set defined, systematically query each AI platform. For each prompt, record: whether your brand appears in the response, where it appears (first mention, middle of list, or footnote), how accurately the AI describes your brand, and whether competitors appear alongside you. Use a consistent format, a spreadsheet works for manual audits. Create columns for the prompt, platform, brand mentioned (yes/no), position, accuracy score (1\u20135), and competitor mentions. Run each prompt on each platform without being logged into any account to avoid personalization bias. Critical nuance: run each prompt at least three times on each platform. AI responses are non-deterministic, meaning the same prompt can produce different outputs. If your brand appears in one of three runs, that's inconsistent visibility, very different from appearing in all three. Step 3: Score Your Visibility Across Six Factors Raw mention data is useful but insufficient. A proper audit evaluates six distinct visibility factors that together form your GEO score: Factor What It Measures How to Test Knowledge Presence Does the AI know your brand exists? Ask \"What is [brand]?\" directly Semantic Authority Does the AI associate you with the right topics? Ask category questions, check if you appear Entity Linking Can the AI distinguish you from similar names? Ask about your brand in ambiguous contexts Citations & Mentions Does the AI cite your content as a source? Check Perplexity and Gemini source links RAG Fetchability Can AI crawlers access your site? Check robots.txt, test live retrieval Contextual Integrity Is the information about you accurate? Verify facts, pricing, features in responses Rate each factor on a 0\u2013100 scale based on your prompt test results. A brand might score 80 on Knowledge Presence but only 20 on RAG Fetchability if they've blocked AI crawlers. Step 4: Benchmark Against Competitors An audit in isolation tells you your absolute visibility. Benchmarking against competitors tells you your relative position, which is what actually determines whether customers find you or a rival. Run the same prompt set with a focus on tracking which competitors appear and how often. Calculate share of voice : for each prompt, note which brands are mentioned, then calculate the percentage of category-relevant prompts where each brand appears. If your competitor appears in 80% of \"best [category] tool\" prompts and you appear in 30%, you have a concrete gap to close. Step 5: Identify Root Causes for Gaps With scores and benchmarks in hand, diagnose why gaps exist. Common root causes include: Thin web presence: Few authoritative third-party mentions, limited Wikipedia or directory presence Inconsistent entity data: Your brand name, description, or category differs across sources Blocked AI crawlers: robots.txt rules preventing GPTBot, ClaudeBot, or PerplexityBot from accessing your content Weak content depth: Surface-level content that doesn't establish topical authority Competitor dominance: Rivals have invested heavily in PR, structured data, and authoritative content Each root cause maps to specific remediation strategies. A robots.txt issue is a 10-minute fix; building semantic authority through content and PR is a 6-month campaign. Step 6: Automate Ongoing Monitoring A one-time audit is a snapshot. AI models update their knowledge continuously, Perplexity in real time, ChatGPT and Claude with periodic training updates. Your visibility can shift without warning as models retrain or competitors improve their presence. This is where Presenc AI transforms the audit from a manual project into a continuous intelligence system. Presenc automates prompt testing across all major AI platforms, tracks your six-factor GEO score over time, monitors competitor visibility, and alerts you to changes. What took days of manual spreadsheet work becomes a live dashboard updated automatically. Set a cadence for reviewing your AI visibility data, weekly for fast-moving categories, monthly for stable industries. Track trendlines rather than point-in-time scores, and tie visibility changes back to specific actions (content published, PR coverage earned, technical fixes deployed). Step 7: Build Your Remediation Roadmap Prioritize fixes by impact and effort. Quick wins like unblocking AI crawlers or fixing inconsistent entity data should come first. Then invest in medium-term plays like earning authoritative citations and building topical content clusters. The audit isn't the end, it's the starting point for a systematic GEO strategy. Document your baseline scores and set targets for each factor. A realistic 90-day goal might be: increase Knowledge Presence from 40 to 65, improve RAG Fetchability from 10 to 90 (by fixing robots.txt), and raise share of voice from 15% to 30% in your top five category prompts."
+ }
+]

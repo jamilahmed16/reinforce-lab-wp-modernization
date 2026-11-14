@@ -1,0 +1,203 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-14T10:00:00+00:00",
+  "dateModified": "2026-11-14T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "AI brand visibility is how often AI tools such as ChatGPT, Gemini and Perplexity name, describe or link to your brand. Check it in about 30 minutes: write 10 buyer prompts, run them in three tools in fresh sessions, log six fields per answer and score mention rate, citation rate, share of voice and accuracy. Repeat monthly, because AI answers change from run to run.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "SparkToro and Gumshoe: AIs are highly inconsistent when recommending brands or products (January 2026)",
+    "url": "https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: AI Visibility Audit, How to Measure Your Brand's Presence in AI Search",
+    "url": "https://ahrefs.com/blog/ai-visibility-audit/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: What is Answer Engine Optimization (AEO)?",
+    "url": "https://ahrefs.com/aeo/what-is-aeo"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: AI features and your website",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guide to optimizing for generative AI features on Google Search",
+    "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Pew Research Center: Google users are less likely to click on links when an AI summary appears (July 2025)",
+    "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Search Engine Land: Measuring GEO, what is trackable now and what is still missing",
+    "url": "https://searchengineland.com/measuring-geo-whats-trackable-now-and-whats-still-missing-461759"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is AI brand visibility?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "AI brand visibility is how often AI tools such as ChatGPT, Gemini, Perplexity and Google AI Mode name, describe or link to your brand when people ask questions about your market. It is measured with mention rate, citation rate, share of voice and accuracy."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I check if ChatGPT mentions my brand?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Write 10 buyer questions, run each in a fresh ChatGPT session with memory off, and record whether your brand is named, linked and described correctly. Repeat in other tools and run the same prompts each month."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How long does an AI visibility check take?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "A first baseline takes about 30 minutes with 10 prompts in three tools. A reliable trend takes repeated runs over several weeks, because AI answers change between runs."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Why do AI tools give different answers each time?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "They generate each answer fresh. SparkToro and Gumshoe found less than a 1 in 100 chance that ChatGPT or Google's AI would give the same list of brands twice for the same prompt, so measure the share of runs in which you appear."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is AI share of voice?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Your brand mentions divided by all brand mentions across the answers in your test. It shows how you compare with competitors for the same questions."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need a paid tool to track AI visibility?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Not to start. A spreadsheet and three tools give a baseline. A paid tool helps once you track more than about 30 to 40 prompts or several markets. Avoid tools that sell a ranking position in AI answers, because list order is close to random."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can Google Analytics show visits from AI tools?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It can show referral visits from AI tool domains such as chatgpt.com or perplexity.ai if those tools send a referrer. Check your own data to see which domains appear. Google also reports its AI feature traffic in Search Console."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How often should I re-run the test?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Monthly is a sensible minimum for manual testing. Keep the same prompts and tools, and report an average and range over at least four rounds before drawing conclusions."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What do I do if an AI tool says something wrong about my brand?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Note the prompt, the answer and the cited sources. Update your own page, correct or contact the third-party page the tool relies on, and add a clear, dated statement of the fact on your site."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Why am I named for branded questions but not for category questions?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The tools know your name but do not link you to your category. Build pages that answer category questions directly and earn mentions on the review sites and lists that the tools already cite."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: AI Brand Visibility: How to Check If AI Tools Mention Your Brand",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "AI brand visibility",
+    "description": "How often AI tools name, describe or link to your brand.",
+    "url": "https://reinforcelab.online/preview/#term-ai-brand-visibility"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Mention rate",
+    "description": "The share of answers that name your brand.",
+    "url": "https://reinforcelab.online/preview/#term-mention-rate"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Citation rate",
+    "description": "The share of answers that link to a page of yours.",
+    "url": "https://reinforcelab.online/preview/#term-citation-rate"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Share of voice",
+    "description": "Your brand mentions divided by all brand mentions in the test.",
+    "url": "https://reinforcelab.online/preview/#term-share-of-voice"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Prompt",
+    "description": "The question or request you type into an AI tool.",
+    "url": "https://reinforcelab.online/preview/#term-prompt"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Baseline",
+    "description": "The first set of results you compare later tests against.",
+    "url": "https://reinforcelab.online/preview/#term-baseline"
+   }
+  ]
+ }
+]
