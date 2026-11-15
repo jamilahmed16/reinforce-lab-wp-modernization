@@ -1,7 +1,7 @@
 # Competitor semantics: black-friday-hosting-deals
 
-Our page: -
-Competitors analysed: 3 of 4 (a term counts as common when 3+ of them use it)
+Our page: claude/drafts/hosting/black-friday-web-hosting-deals-body-2026-11-15.html
+Competitors analysed: 3 of 3 (a term counts as common when 3+ of them use it)
 
 | # | Page | Words | Headings |
 |---|---|---|---|
@@ -9,12 +9,15 @@ Competitors analysed: 3 of 4 (a term counts as common when 3+ of them use it)
 | 2 | [Black Friday Web Hosting Deals 2026 | Hostinger](https://www.hostinger.com/black-friday-web-hosting-deals) | 764 | 3 |
 | 3 | [Black Friday 2026 Hosting Deals: Our Lowest Prices of the Year](https://hosting.com/black-friday/) | 1423 | 8 |
 
-**Not fetched (read these with Exa):**
-- https://www.techradar.com/pro/black-friday/black-friday-web-hosting-deals (200) too little text (script-rendered or blocked)
+## Common terms our page does NOT use (9)
 
-## Common terms (23)
+Use the ones that fit naturally; never stuff. Number = competitors using it.
 
-black friday (3), site (3), code (3), website (3), wordpress (3), day money-back guarantee (3), deal (3), free ssl (3), premium (3), plan (3), savings (3), web hosting (3), need (3), months (3), domain free (3), small (3), cyber monday (3), builder (3), support (3), choose (3), year (3), discounts (3), websites (3)
+code (3), day money-back guarantee (3), support (3), websites (3), small (3), choose (3), free ssl (3), need (3), savings (3)
+
+## Common terms our page already uses (14)
+
+site (3), discounts (3), plan (3), domain free (3), black friday (3), web hosting (3), deal (3), cyber monday (3), months (3), year (3), website (3), wordpress (3), premium (3), builder (3)
 
 ## Questions competitors answer in headings (1)
 

@@ -1,0 +1,205 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Best / List",
+  "abstract": "Black Friday 2026 is on 27 November. Hostinger, hosting.com, ScalaHosting, Kinsta and Cloudways list sales on their own pages. Compare the renewal price, not only the sale price.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Hostinger: Black Friday web hosting deals (read 15 Nov 2026)",
+    "url": "https://www.hostinger.com/black-friday-web-hosting-deals"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "hosting.com: Black Friday hosting deals (read 15 Nov 2026)",
+    "url": "https://hosting.com/black-friday/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "ScalaHosting: Black Friday web hosting 2026 (read 15 Nov 2026)",
+    "url": "https://www.scalahosting.com/blog/black-friday-web-hosting-2026/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Kinsta: pricing (read 15 Nov 2026)",
+    "url": "https://kinsta.com/pricing/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Cloudways: pricing (read 15 Nov 2026)",
+    "url": "https://www.cloudways.com/en/pricing.php"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Spaceship: The Not Black Friday Sale (read 15 Nov 2026)",
+    "url": "https://www.spaceship.com/black-friday-cyber-monday-deals/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Spaceship: web hosting (read 15 Nov 2026)",
+    "url": "https://www.spaceship.com/web-hosting/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "BigScoots: Why Doesn't BigScoots Do Black Friday?",
+    "url": "https://www.bigscoots.com/blog/why-doesnt-bigscoots-do-black-friday/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "All About Cookies: Hostinger review (updated 9 Nov 2026)",
+    "url": "https://allaboutcookies.org/hostinger-web-hosting-review"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingAdvice: hosting.com review (updated 12 Nov 2026)",
+    "url": "https://www.hostingadvice.com/hosting-review/hosting-com/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingAdvice: ScalaHosting review (modified 12 Oct 2026)",
+    "url": "https://www.hostingadvice.com/hosting-review/scalahosting/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "EXPERTE: Kinsta review (updated 10 Aug 2026)",
+    "url": "https://www.experte.com/wordpress-hosting/kinsta"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "When is Black Friday 2026?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Black Friday is on 27 November 2026, the day after US Thanksgiving. Cyber Monday is on 30 November."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Are Black Friday web hosting deals worth it?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "They can be, if you can accept the term and the renewal price. Check the price you will pay after the first term, and the money-back window."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do Black Friday hosting prices apply when I renew?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Usually not. The sale price covers the first term. The host's page shows the renewal price, which is often several times higher."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can I use a Black Friday deal on a host I already use?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Often not. Kinsta limits its offer to new customers, and ScalaHosting limits its offer to new plans and upgrades."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Which host has the lowest Black Friday price?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "hosting.com lists the lowest sale prices here, from $1.49 a month on a 12-month plan, but it also has the biggest renewal jump."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Which of these hosts list AI features?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Hostinger, hosting.com, Cloudways, ScalaHosting and Spaceship list AI features on their pages. We have not tested them."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How long do Black Friday hosting deals last?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It varies. In the pages we read, offers ended on 1 December (ScalaHosting, Kinsta) or 14 December (Hostinger, hosting.com). Cloudways showed no end date."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "ItemList",
+  "@id": "https://reinforcelab.online/preview/#list",
+  "name": "Black Friday Web Hosting Deals 2026: Offers We Checked on Host Pages",
+  "numberOfItems": 6,
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+   {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Hostinger",
+    "url": "https://reinforcelab.online/preview/#pick-1"
+   },
+   {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "hosting.com",
+    "url": "https://reinforcelab.online/preview/#pick-2"
+   },
+   {
+    "@type": "ListItem",
+    "position": 3,
+    "name": "Cloudways",
+    "url": "https://reinforcelab.online/preview/#pick-3"
+   },
+   {
+    "@type": "ListItem",
+    "position": 4,
+    "name": "ScalaHosting",
+    "url": "https://reinforcelab.online/preview/#pick-4"
+   },
+   {
+    "@type": "ListItem",
+    "position": 5,
+    "name": "Kinsta",
+    "url": "https://reinforcelab.online/preview/#pick-5"
+   },
+   {
+    "@type": "ListItem",
+    "position": 6,
+    "name": "Spaceship",
+    "url": "https://reinforcelab.online/preview/#pick-6"
+   }
+  ]
+ }
+]
