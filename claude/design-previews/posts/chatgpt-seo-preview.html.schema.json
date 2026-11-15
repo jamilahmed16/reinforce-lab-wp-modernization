@@ -1,0 +1,223 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "ChatGPT SEO means two things: using ChatGPT to speed up SEO tasks, and doing SEO so ChatGPT search names and cites you. To show up, allow OAI-SearchBot, be indexed in Bing and Google, answer questions first with sources, build honest mentions on sites it cites, and test with a fixed prompt list. To use it for SEO, treat output as a draft and check every fact.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "OpenAI Help Center: Searching the web with ChatGPT",
+    "url": "https://help.openai.com/en/articles/9237897-searching-the-web-with-chatgpt"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "OpenAI: Overview of OpenAI crawlers",
+    "url": "https://developers.openai.com/api/docs/bots"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "OpenAI: Introducing ChatGPT search (October 2024)",
+    "url": "https://openai.com/index/introducing-chatgpt-search/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Aggarwal et al.: GEO, Generative Engine Optimization (KDD 2024)",
+    "url": "https://arxiv.org/abs/2311.09735"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "SparkToro: AIs are highly inconsistent when recommending brands or products (2026)",
+    "url": "https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: What we actually know about optimizing for LLM search (2025)",
+    "url": "https://ahrefs.com/blog/llm-search/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: 43 B2B SEO statistics (November 2025)",
+    "url": "https://ahrefs.com/blog/b2b-seo-statistics/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guidance on generative AI content on your website",
+    "url": "https://developers.google.com/search/docs/fundamentals/using-gen-ai-content"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Spam policies for Google web search",
+    "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guide to optimizing for generative AI features on Google Search",
+    "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Perplexity: Perplexity crawlers",
+    "url": "https://docs.perplexity.ai/docs/resources/perplexity-crawlers"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is ChatGPT SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It means two things: using ChatGPT as a tool to do SEO tasks faster, and doing SEO so that ChatGPT search finds, names and cites your brand and pages in its answers."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I use ChatGPT for SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Use it for drafts and sorting: keyword ideas and clusters, intent labels, outlines, title and meta options, JSON-LD, redirect patterns and FAQ ideas. It has no search volume data, so confirm keywords in a keyword tool and check every fact before you publish."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I use ChatGPT for keyword research?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Ask it to expand a seed topic, group keywords by intent and suggest questions, then validate each term in a keyword tool and in the live search results. ChatGPT does not have search volume or difficulty data."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How does ChatGPT help with SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It speeds up first drafts of outlines, titles, meta descriptions and structured data, and helps sort long lists. It does not replace search data, expert knowledge or review. Google asks you to fact-check AI-assisted content."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I do SEO for ChatGPT?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Allow OAI-SearchBot, check your CDN and firewall, be indexed in Bing and Google, rank for short searches, answer questions first with sources, build honest third-party mentions, keep facts consistent and fresh, and test with a fixed prompt list."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I rank in ChatGPT search?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No one controls ChatGPT's ranking, and OpenAI says placement is not guaranteed. Make your pages crawlable and indexed, write clear sourced answers, and earn mentions on the review sites, lists and directories that ChatGPT cites for your questions."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I get cited by ChatGPT?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Be retrievable and worth citing: allow OAI-SearchBot, answer the question in the first sentence, add specific facts and named sources, and appear on third-party pages the answers already use. Test monthly, since answers vary run to run."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is ChatGPT bad for SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Not by itself. Google says appropriate use of AI is not against its guidelines. The risk is publishing many unchecked pages, which Google's spam policy can treat as scaled content abuse, or publishing wrong facts. Add original value and review everything."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Are there ChatGPT SEO tools worth using?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Custom GPTs, add-ons and SEO suite features can save drafting time, but they add no data that ChatGPT lacks unless they connect to a real data source. Ask what data a tool uses, and test any tracker against a hand baseline."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does ChatGPT send much traffic?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Less than Google. Ahrefs reported in 2025 that Google sends about 345 times more traffic to sites than ChatGPT, Gemini and Perplexity combined, and that ChatGPT is over 80% of AI referral traffic. Being named and trusted can matter beyond clicks."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: ChatGPT SEO: How to Use It for SEO and How to Show Up in It",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "ChatGPT search",
+    "description": "The part of ChatGPT that searches the web and shows answers with source links.",
+    "url": "https://reinforcelab.online/preview/#term-chatgpt-search"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "OAI-SearchBot",
+    "description": "OpenAI's crawler that finds pages to show in ChatGPT search.",
+    "url": "https://reinforcelab.online/preview/#term-oai-searchbot"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Query rewriting",
+    "description": "ChatGPT turning a user's question into shorter search queries.",
+    "url": "https://reinforcelab.online/preview/#term-query-rewriting"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Citation",
+    "description": "A link to your page shown as a source in an AI answer.",
+    "url": "https://reinforcelab.online/preview/#term-citation"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Scaled content abuse",
+    "description": "Making many pages mainly to manipulate search results, which Google treats as spam.",
+    "url": "https://reinforcelab.online/preview/#term-scaled-content-abuse"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Prompt set",
+    "description": "A fixed list of buyer questions you run through the tool.",
+    "url": "https://reinforcelab.online/preview/#term-prompt-set"
+   }
+  ]
+ }
+]

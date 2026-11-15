@@ -1,0 +1,115 @@
+<p>"ChatGPT SEO" means two different things. The first is using ChatGPT as a tool to do SEO work faster, such as ideas, outlines, title tags and structured data. The second is doing SEO for ChatGPT: making your brand and pages easy for ChatGPT search to find and cite in its answers. This guide covers both. The short version is that ChatGPT helps with SEO tasks if you check its output, and showing up in ChatGPT depends on crawler access, being found in the search results it uses, clear answers with sources, and what other sites say about you.</p>
+<p>We cite only sources we could read at the publisher. We say when a figure is a test, a survey or one vendor's data, and when something is our own recommendation. Nobody outside OpenAI knows exactly how ChatGPT picks sources, and OpenAI does not publish a ranking formula.</p>
+
+<h2>Part 1: How does ChatGPT search choose what to show?</h2>
+<p>OpenAI's Help Center describes the process in plain terms. When ChatGPT decides that a question needs fresh information, it can turn your question into one or more targeted search queries. It says ChatGPT search sometimes partners with other search providers, and it names Microsoft in its privacy notes. It may also use your general location from your IP address, so "restaurants near me" can become "top restaurants" plus the city. After reviewing results, it may send further, more specific queries.</p>
+<p>OpenAI says ChatGPT ranks search results using multiple factors meant to help people find relevant, reliable information, and that placement is not guaranteed. It also warns that results and citations can be incomplete, outdated or incorrect. For publishers, it says to allow OAI-SearchBot to crawl the site and to make sure your host or CDN allows traffic from OpenAI's published IP addresses.</p>
+<p>Three practical points follow from this:</p>
+<ul>
+<li>ChatGPT often searches with short rewritten queries, so ranking in regular search for those phrases helps you get read.</li>
+<li>The search partner's index matters. Being indexed in Bing, as well as Google, is a sensible step.</li>
+<li>Location can change the answer, so test local prompts with a city in them.</li>
+</ul>
+
+<h2>Part 2: How do you show up in ChatGPT?</h2>
+<p>This is our recommended order. Steps 1 to 3 make you findable. Steps 4 to 7 make you worth citing.</p>
+
+<h3>Step 1: Let OpenAI's crawlers in</h3>
+<p>Open <code>yoursite.com/robots.txt</code> and check that OAI-SearchBot is not blocked on the pages you want cited. OpenAI says sites that opt out of OAI-SearchBot will not be shown in ChatGPT search answers, though they can still appear as navigational links, and that a robots.txt change can take about 24 hours to apply. Then check your CDN, firewall and bot protection, because they can block a bot that robots.txt allows. OpenAI publishes the IP ranges to allow.</p>
+<p>Keep the other OpenAI names straight. GPTBot is for model training, and allowing or blocking it is a separate choice. ChatGPT-User visits a page when a user's question needs it, and OpenAI says robots.txt rules may not apply to it. Our <a href="/robots-txt-for-seo-a-complete-guide/">robots.txt guide</a> explains the file.</p>
+
+<h3>Step 2: Get indexed in Bing and Google</h3>
+<p>Because ChatGPT search draws on search partners, check that your key pages are indexed in both Bing and Google. Use Bing Webmaster Tools and Google Search Console, submit your sitemap and fix blocked or noindexed pages.</p>
+
+<h3>Step 3: Rank for the short searches ChatGPT runs</h3>
+<p>Take each long question your buyers ask and write the short search ChatGPT is likely to run: the category, a qualifier and a place. Then look at those phrases in Google and Bing. If you do not appear for them, ChatGPT is less likely to read your page, however good it is. This is our reading of how the process works, based on OpenAI's description of query rewriting, and it is not a published rule.</p>
+
+<h3>Step 4: Answer the question first, with evidence</h3>
+<p>Write pages that answer the question in the first sentence or two, then add detail. Give facts a model can quote: prices or ranges, who it is for, how it works, how it compares. Back claims with named sources. A Princeton-led team tested nine content changes on a 10,000-query benchmark and reported that adding citations, quotations and statistics lifted visibility by up to 40%, and by up to 37% on Perplexity. It is a 2024 study and the effect varied by domain, but it is the best controlled evidence we have.</p>
+
+<h3>Step 5: Build real mentions on other sites</h3>
+<p>Answers often rely on third-party pages: review sites, "best of" lists, directories, forums and news. Run your prompts, list the sites ChatGPT cites, and ask how you can appear there honestly. Claim and complete profiles, earn real reviews, and contribute useful answers. Do not buy reviews or hide ads in forums. Google's guidance for its own AI features says seeking inauthentic mentions is not as useful as it might seem, and the same sense applies here.</p>
+
+<h3>Step 6: Keep your facts the same everywhere</h3>
+<p>Use one name, one description, one set of prices and one set of locations across your site, directories and social profiles. A model that sees conflicting facts may repeat the wrong one or skip you.</p>
+
+<h3>Step 7: Keep key pages fresh</h3>
+<p>Ahrefs analyzed 17 million citations across seven AI search platforms and found that content cited in AI answers was 25.7% fresher than content in regular results. That is a correlation from one vendor's data set, but it fits common sense: update pages when prices, features or rules change, and show a real update date.</p>
+
+<h3>Step 8: Measure with a fixed prompt list</h3>
+<p>Write 10 to 15 buyer questions without your brand name. Run each three times in ChatGPT with search on, in a fresh chat, and record whether you are named, whether your page is cited, how you are described and who else appears. Variation is large. SparkToro had 600 volunteers run 12 prompts through ChatGPT, Claude and Google's AI features 2,961 times, and found less than a 1 in 100 chance of getting the same list of brands twice. So look at a rate across many runs, not a rank. Our guides to <a href="/ai-brand-visibility/">checking if AI tools mention your brand</a> and <a href="/ai-brand-visibility-tools/">AI brand visibility tools</a> go deeper.</p>
+<p>Also look at traffic. Ahrefs reported that Google sends about 345 times more traffic to websites than ChatGPT, Gemini and Perplexity combined, and that ChatGPT accounts for over 80% of AI referral traffic. These are Ahrefs figures from 2025 and they will change, but they show that the main value today is often being named and trusted, with clicks a smaller part.</p>
+
+<h2>How is ChatGPT search different from Google?</h2>
+<table>
+<thead><tr><th>Area</th><th>Google Search</th><th>ChatGPT search</th></tr></thead>
+<tbody>
+<tr><td>Output</td><td>A list of links, sometimes with an AI summary</td><td>A written answer with citations and a sources panel</td></tr>
+<tr><td>Query</td><td>What the user typed</td><td>Often rewritten into one or more targeted searches</td></tr>
+<tr><td>Crawler control</td><td>Googlebot and Google's controls</td><td>OAI-SearchBot for search, GPTBot for training, ChatGPT-User for user visits</td></tr>
+<tr><td>Measurement</td><td>Search Console shows clicks and impressions</td><td>No OpenAI report for site owners that we found, so you test prompts and read analytics</td></tr>
+<tr><td>Placement</td><td>Ranking position</td><td>OpenAI says placement is not guaranteed</td></tr>
+</tbody>
+</table>
+<p>The practical result is that you cannot track a position the way you track a rank. You track how often you are named and cited across a fixed list of prompts.</p>
+
+<h2>Part 3: How do you use ChatGPT for SEO?</h2>
+<p>ChatGPT is a fast assistant for drafting and sorting. It is not a source of search data. Treat its output as a first draft that you check. The table shows common uses and the check that each needs.</p>
+<table>
+<thead><tr><th>Task</th><th>How ChatGPT helps</th><th>What you must check</th></tr></thead>
+<tbody>
+<tr><td>Keyword ideas</td><td>Expands a seed topic into related subtopics and questions</td><td>It has no search volume data. Confirm in a keyword tool.</td></tr>
+<tr><td>Clustering and intent</td><td>Groups a long list by topic and labels intent</td><td>Check the live results, since intent is shown by what ranks.</td></tr>
+<tr><td>Outlines and briefs</td><td>Drafts headings that cover a topic</td><td>Add your own angle, examples and internal links.</td></tr>
+<tr><td>Title tags and meta descriptions</td><td>Gives many options at once</td><td>Count the characters yourself, and make sure they match the page.</td></tr>
+<tr><td>Structured data</td><td>Writes JSON-LD for an article, product or FAQ</td><td>Validate it, and make sure it matches the visible page.</td></tr>
+<tr><td>Redirect maps and patterns</td><td>Helps match old and new URLs, and writes regex</td><td>Test on a sample before you deploy.</td></tr>
+<tr><td>Content refresh ideas</td><td>Compares your page with a list of subtopics and suggests gaps</td><td>Check facts and sources yourself.</td></tr>
+<tr><td>FAQ and question lists</td><td>Suggests questions your readers may ask</td><td>Use real questions from sales calls and Search Console first.</td></tr>
+</tbody>
+</table>
+<p>Good prompts give context: the audience, the page goal, the target keyword, the tone and the format of the answer you want. Ask for options, not one answer, and ask it to list what it is unsure about.</p>
+
+<h2>Six prompts to start with for SEO tasks</h2>
+<p>These are examples. Fill in the brackets, and check every output.</p>
+<ol>
+<li><strong>Topic map:</strong> "Act as an SEO strategist. For a [type of business] that sells to [audience], list 20 subtopics a buyer researches before buying, grouped by buying stage. Mark any you are unsure about."</li>
+<li><strong>Intent labels:</strong> "Label each keyword in this list as informational, commercial, transactional or navigational, and give a one-line reason."</li>
+<li><strong>Brief:</strong> "Write an outline for a page that answers [question] for [audience]. Put a direct answer in the first sentence of each section. List the facts I must source."</li>
+<li><strong>Title options:</strong> "Give 10 title tags under 60 characters for a page about [topic]. Include [keyword] and no hype words."</li>
+<li><strong>Structured data:</strong> "Write FAQPage JSON-LD for these questions and answers exactly as written. Do not add any content."</li>
+<li><strong>Gap check:</strong> "Here is my page and a list of questions buyers ask. Which questions does my page not answer?"</li>
+</ol>
+<p>Always ask the tool to say what it is unsure about, and never paste private client data into a tool you have not approved.</p>
+
+<h2>Is ChatGPT bad for SEO?</h2>
+<p>Not by itself. Google says appropriate use of AI or automation is not against its guidelines, and that using AI does not give content any special gain. It says content is judged on whether it is helpful, original and trustworthy. The risk is how you use it. Google's spam policy lists using generative AI tools to generate many pages without adding value for users as scaled content abuse. Google also warns that generative models predict likely words rather than retrieve facts, so outputs can be wrong, and it asks you to fact-check and review AI content, including titles, descriptions and structured data, before you publish.</p>
+<p>The safe rule is simple. Use ChatGPT to help you think and draft. Add what only you can: first-hand experience, real data, named sources and a point of view. Have a person check every fact.</p>
+
+<h2>What about ChatGPT SEO tools?</h2>
+<p>You will see "ChatGPT SEO tools" in three forms: custom GPTs, browser add-ons and features inside SEO suites. They can save time on drafting. They do not add data that ChatGPT lacks, such as search volume or backlinks, unless they connect to a real data source. Ask what data a tool uses before you pay for it. For tracking how you appear in ChatGPT, see our guide to <a href="/ai-brand-visibility-tools/">AI brand visibility tools</a>.</p>
+
+<h2>Does the same work help with Perplexity and Gemini?</h2>
+<p>Largely, yes. Perplexity has its own crawler, PerplexityBot, which it says surfaces and links sites in its results, and a user-triggered fetcher that generally ignores robots.txt. Gemini and Google's AI features rely on Google's index. The base work, which is access, indexing, answer-first pages, evidence and third-party presence, helps all of them. Our guide to <a href="/how-to-rank-in-ai-overviews/">ranking in AI Overviews</a> covers Google's side.</p>
+
+<h2>Worked example: a small accounting firm tests ChatGPT</h2>
+<p>This is an illustration, not a client result. Imagine a four-person accounting firm in a mid-sized city. It writes 12 prompts, such as "accountant for a small restaurant in [city]" and "how much does bookkeeping cost for a small business". It runs each three times in ChatGPT with search on, which gives 36 answers, and is named in 3.</p>
+<p>The answers cite a local directory, a "best accountants" article from a local news site and a competitor's guide to bookkeeping costs. The firm is on the directory with an old phone number and is not in the article. Its own services page says "full-service accounting" and gives no prices or areas.</p>
+<p>Its plan has five parts. It fixes the phone number everywhere. It rewrites its services page to say who it serves, where and a price range. It adds one page with a sourced answer on bookkeeping costs. It asks the news site's editor whether a list update is possible, and asks three clients for honest reviews on the directory. It repeats the same 36 runs after 60 days. The point is a fair comparison, not a promise.</p>
+
+<h2>What are the common mistakes?</h2>
+<ul>
+<li><strong>Blocking OAI-SearchBot by accident.</strong> A security plugin or CDN setting often does it.</li>
+<li><strong>Treating ChatGPT as a keyword tool.</strong> It does not know search volumes.</li>
+<li><strong>Publishing unreviewed AI content.</strong> Google asks you to fact-check it, and scaled content abuse is a spam policy.</li>
+<li><strong>Chasing a rank in answers.</strong> Lists change from run to run.</li>
+<li><strong>Testing once.</strong> One answer is a clue, not a result.</li>
+<li><strong>Ignoring Bing.</strong> ChatGPT search draws on search partners as well as its own crawler.</li>
+<li><strong>Only fixing your own site.</strong> Answers often rely on third-party pages.</li>
+</ul>
+
+<h2>Our interest in this topic</h2>
+<p>Reinforce Lab sells search and AI search services. Nothing here is paid placement. Jamil Ahmed, who wrote this guide, is a Semrush Ambassador, and Reinforce Lab uses affiliate links for some tools. Read our <a href="/ftc-disclosure/">FTC and affiliate disclosure</a>. Our <a href="/services/ai-search-optimization/">AI search optimization service</a> follows the steps above, and you can <a href="/get-diagnostic/">get your free diagnostic</a> to see how ChatGPT and other tools describe your site.</p>
+
+<h2>Final thoughts</h2>
+<p>Use ChatGPT as a quick assistant and check every output. To show up in it, let its crawler in, be indexed in Bing and Google, answer questions first with sources, build honest mentions on the sites it cites and test with a fixed prompt list. Nobody can promise a place in ChatGPT answers, but each step makes you easier to find, to trust and to quote.</p>
