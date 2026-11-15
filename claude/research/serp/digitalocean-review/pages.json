@@ -1,0 +1,242 @@
+[
+ {
+  "url": "https://diyai.io/ai-tools/hosting/reviews/digitalocean-review/",
+  "title": "DigitalOcean Review 2026: Is It Worth It for Developers?",
+  "words": 4307,
+  "headings": [
+   [
+    "h1",
+    "DigitalOcean Review 2026: Is It Worth It for Developers?"
+   ],
+   [
+    "h2",
+    "DigitalOcean review: quick verdict"
+   ],
+   [
+    "h2",
+    "How we evaluated DigitalOcean"
+   ],
+   [
+    "h2",
+    "DigitalOcean\u2019s strongest feature is the middle ground it occupies"
+   ],
+   [
+    "h2",
+    "Droplets are excellent when you want a server, not when you want managed hosting."
+   ],
+   [
+    "h3",
+    "Shared CPU is fine until the workload needs predictable CPU time."
+   ],
+   [
+    "h2",
+    "App Platform is often the better DigitalOcean product for small software teams."
+   ],
+   [
+    "h2",
+    "Managed databases are where DigitalOcean starts to feel like a platform rather than a VPS host."
+   ],
+   [
+    "h2",
+    "DigitalOcean Kubernetes is useful once you genuinely need Kubernetes"
+   ],
+   [
+    "h2",
+    "Spaces and block storage make cleaner application architecture possible"
+   ],
+   [
+    "h2",
+    "Performance is predictable only when you choose the right CPU class"
+   ],
+   [
+    "h2",
+    "Reliability depends heavily on what you build above the VM"
+   ],
+   [
+    "h2",
+    "Backups are useful, but they are not a complete recovery strategy"
+   ],
+   [
+    "h2",
+    "DigitalOcean support: response time is not a recovery plan"
+   ],
+   [
+    "h2",
+    "Security is good at the infrastructure layer, but Droplets follow a shared-responsibility model."
+   ],
+   [
+    "h2",
+    "Is DigitalOcean good for WordPress?"
+   ],
+   [
+    "h2",
+    "Is DigitalOcean good for SaaS and AI applications?"
+   ],
+   [
+    "h2",
+    "Cost summary: predictable entry pricing, separate operating costs"
+   ],
+   [
+    "h2",
+    "DigitalOcean developer complaints: check email delivery before migrating"
+   ],
+   [
+    "h2",
+    "Where DigitalOcean falls short"
+   ],
+   [
+    "h2",
+    "DigitalOcean vs Railway: control or lower operational burden?"
+   ],
+   [
+    "h2",
+    "Other DigitalOcean alternatives worth considering"
+   ],
+   [
+    "h2",
+    "Who should use DigitalOcean?"
+   ],
+   [
+    "h3",
+    "DigitalOcean is a strong choice for"
+   ],
+   [
+    "h3",
+    "DigitalOcean is a weak choice for"
+   ],
+   [
+    "h2",
+    "Practical DigitalOcean setup checklist"
+   ],
+   [
+    "h2",
+    "DigitalOcean review verdict for 2026"
+   ],
+   [
+    "h2",
+    "DigitalOcean FAQs"
+   ],
+   [
+    "h3",
+    "Is DigitalOcean good for developers?"
+   ],
+   [
+    "h3",
+    "Is DigitalOcean good for beginners?"
+   ],
+   [
+    "h3",
+    "Is DigitalOcean good for WordPress?"
+   ],
+   [
+    "h3",
+    "Is DigitalOcean managed hosting?"
+   ],
+   [
+    "h3",
+    "Is DigitalOcean reliable enough for production?"
+   ],
+   [
+    "h3",
+    "Does DigitalOcean manage backups for Droplets?"
+   ],
+   [
+    "h3",
+    "DigitalOcean or Railway: which is better?"
+   ],
+   [
+    "h2",
+    "You Might Also Like:"
+   ],
+   [
+    "h2",
+    "Railway Hosting Review 2026"
+   ],
+   [
+    "h2",
+    "Best AI Hosting"
+   ],
+   [
+    "h2",
+    "Best Gpu Hosting For AI"
+   ],
+   [
+    "h2",
+    "Writer: Steven Jones"
+   ],
+   [
+    "h2",
+    "Leave a Comment On: Digitalocean Review 2026 Cancel reply"
+   ]
+  ],
+  "text": "We are supported by our readers , and may earn a commission when you purchase products linked throughout our site. DigitalOcean Review 2026: Is It Worth It for Developers? Updated on November 5, 2026 by Steven Jones DigitalOcean is one of the easiest Cloud platforms to understand if you want more control than managed hosting provides without taking on the full-service sprawl of AWS, Azure, or Google Cloud. This DigitalOcean review focuses on the question that matters after the pricing page has done its job: is the platform actually good to build and operate on? We evaluated DigitalOcean on deployment control, operational burden, Droplet flexibility, App Platform, managed databases, Kubernetes, storage, support, regional coverage, and suitability for WordPress, SaaS, and AI-backed applications. We have deliberately reduced the pricing material in this review. For current Droplet costs, backups, bandwidth and realistic monthly bills, use our DigitalOcean pricing guide . DigitalOcean review: quick verdict Review area DIY AI verdict Best for Developers, small engineering teams, SaaS products, APIs, staging environments and technically managed WordPress sites Main strength A clear control panel and useful managed Cloud products without hyperscaler-level complexity Main weakness Droplets are unmanaged infrastructure, so patching, hardening, application support and recovery remain your responsibility Deployment flexibility Strong \u2013 choose raw VMs, App Platform, Kubernetes or managed services as the product matures Support Useful for platform issues, but faster production response and deeper access require paid support Overall recommendation Recommended for technical users who value control and predictable infrastructure. Poor fit for beginners expecting a managed web host Our verdict: DigitalOcean\u2019s appeal is not that it wins every benchmark or offers the cheapest raw server. It gives small technical teams a coherent path from one Linux VM to managed databases, object storage, a PaaS deployment layer, and Kubernetes, without forcing them into an enterprise Cloud on day one. The trade-off is operational ownership. If nobody on the team can secure, monitor and recover a server, the simplicity of the control panel will not make the workload manageable. View DigitalOcean options How we evaluated DigitalOcean This review uses an operational framework rather than a synthetic \u201cfastest VPS\u201d score. Cloud VM performance changes with CPU class, region, storage layout, application stack and neighbour contention on shared CPU plans. A single speed test would create a false sense of precision. We instead assessed the platform against seven questions: how quickly a developer can deploy, how much of the stack DigitalOcean manages, how easily a project can move from one server to a more resilient architecture, what recovery work remains with the customer, how support behaves during production problems, whether regional availability constrains deployment, and where specialist providers are a better fit. DigitalOcean\u2019s strongest feature is the middle ground it occupies DigitalOcean is more than a VPS seller but less sprawling than a hyperscaler. That middle ground is useful. A small team can begin with a Droplet, add Spaces for object storage, move the database to a managed service, put multiple app nodes behind a load balancer, or shift deployment to App Platform, all without immediately changing providers. The control panel reinforces that positioning. Common infrastructure tasks are presented in a way that a competent developer can follow without first learning dozens of product families. The API, command-line tooling and Terraform support are there when repeatability matters, but the platform does not punish you for starting manually. This is also where DigitalOcean can be misunderstood. Easier Cloud infrastructure is still Cloud infrastructure. The platform reduces interface complexity. It does not remove responsibility for what runs inside a Droplet. Droplets are excellent when you want a server, not when you want managed hosting. A Droplet is a Linux virtual machine. You choose the image, region, CPU plan, memory, authentication and optional services, then receive a server you can access and configure. DigitalOcean provides the compute, network and storage layer. You own the operating system and application stack. That model works well for Docker services, APIs, self-hosted tools, staging environments, small SaaS backends and WordPress installations managed by someone comfortable with Linux. It is also flexible enough for unusual stacks that would be awkward on a more opinionated PaaS. The operational bill is the catch. Someone still needs to patch packages, harden SSH, configure the firewall, rotate secrets, monitor disk and memory, manage the web server, investigate failed deployments and prove that backups can actually be restored. A one-click WordPress or Docker image removes installation steps, not that ongoing work. Shared CPU is fine until the workload needs predictable CPU time. Basic Droplets use a shared CPU. The plan defines RAM, disk and bandwidth allocations, but CPU time is shared with other workloads on the host. That makes Basic plans sensible for bursty applications that spend much of their time below peak load. It also means you shouldn\u2019t treat them as equivalent to dedicated CPU instances just because the vCPU count looks similar. If an API becomes latency-sensitive, background jobs keep CPUs busy, or a database needs consistent processing time, the right fix may be moving to a dedicated CPU class rather than simply adding more shared vCPUs. The cheapest-looking plan isn\u2019t automatically the best value once inconsistent CPU time starts affecting user-facing performance. App Platform is often the better DigitalOcean product for small software teams. App Platform is DigitalOcean\u2019s managed Platform-as-a-Service layer. It builds and deploys applications from Git repositories or container images and handles the underlying host infrastructure. For teams that want Git-based deployment but do not want to maintain Linux directly, it removes a meaningful amount of work. The workflow is closer to Railway, Render or Heroku than to managing a Droplet over SSH. You define web services, workers, jobs and environment variables, then let the platform rebuild and replace instances during deployments and scaling. The hidden implementation constraint is the filesystem. App Platform instances are ephemeral. Local changes disappear when an instance is replaced, and horizontally scaled instances don\u2019t share a filesystem. User uploads, generated media and other durable state therefore belong in object storage or a database. Teams moving an application from a single VPS often discover this only after the deployment model changes. App Platform is not always cheaper than a well-run VM, but cost is only half the comparison. If removing operating-system maintenance saves engineering time and reduces deployment risk, the managed route can be the better deal even when the infrastructure line is higher. Managed databases are where DigitalOcean starts to feel like a platform rather than a VPS host. Managed PostgreSQL, MySQL, MongoDB, Valkey, OpenSearch, and Kafka services, letting teams move state out of the application server. DigitalOcean takes on routine platform maintenance, managed backups, and much of the database infrastructure work that would otherwise fall to whoever maintains the VM. This is a useful transition point for growing products. A self-managed database on the same Droplet as the application is efficient early on, but it couples compute, storage, deployment, and recovery to a single machine. Moving the database out lets the app server become more disposable and makes multi-instance application architectures easier. Managed does not mean responsibility disappears. Teams still need sensible schemas, indexes, connection limits, access controls, migration discipline and application-aware recovery planning. The provider manages the database service; it does not know whether a bad deployment deleted the wrong rows. DigitalOcean Kubernetes is useful once you genuinely need Kubernetes DigitalOcean Kubernetes provides a managed control plane and integrates with Droplets, load balancers, volumes and the rest of the platform. The control plane is included by default, while high-availability control-plane configuration is an additional option. This lowers some of the platform work compared with running Kubernetes entirely yourself. Kubernetes is still a poor upgrade path for a small product simply because it sounds more production-ready. A web service, worker and database can be easier to operate on App Platform or a small set of VMs. Kubernetes becomes justified when scheduling, service discovery, workload isolation, repeatable multi-service deployment and cluster-level scaling solve real problems the team already has. The operational maturity requirement is also higher. Container orchestration moves complexity rather than deleting it. If no one owns resource requests, probes, rollouts, secrets, networking, and observability, a managed control plane will not make the cluster simple. Spaces and block storage make cleaner application architecture possible Spaces is S3-compatible object storage suited to user uploads, generated media, downloads and static assets. The practical advantage is architectural separation. You can replace a Droplet or App Platform instance without taking persistent files with it, making rebuilds and horizontal scaling less fragile. Volumes provide network-attached block storage for workloads that need a filesystem-style disk separate from the Droplet. They are useful for data that needs to outlive a VM but does not fit an object-storage access pattern. The trade-off is that volumes introduce their own backup and recovery requirements rather than being automatically covered by a Droplet backup. Performance is predictable only when you choose the right CPU class DigitalOcean offers both shared and dedicated CPU plans, so any blanket claim that \u201cDigitalOcean is fast\u201d or \u201cDigitalOcean is slow\u201d is too crude. The useful question is whether the plan class matches the workload. Basic shared CPU Droplets suit websites and services with periods of idleness and occasional traffic bursts. Dedicated CPU plans are the better choice for sustained application load, encoding, data processing, busy databases or latency-sensitive services. Premium variants add newer CPU options and, where available, NVMe storage. Region choice is the other obvious variable. DigitalOcean\u2019s regional availability documentation listed 16 active data centres across 13 regions in August 2026, including London, Amsterdam, Frankfurt, New York, San Francisco, Singapore, Toronto, Bangalore and Sydney. That is enough for many small- and medium-sized applications, but it is still narrower than that of the largest hyperscalers and some specialist infrastructure providers. Reliability depends heavily on what you build above the VM DigitalOcean can support production workloads, but a single Droplet is a single server. If the application cannot tolerate the server disappearing, you must design reliability into the architecture with multiple instances, health checks, load balancing, protected state, and a tested recovery process. Many \u201cDigitalOcean reliability\u201d complaints are actually responsibility-boundary problems. A provider can keep the hypervisor healthy while Nginx is misconfigured, a database fills the disk, an application leaks memory, or a WordPress plugin breaks the site. DigitalOcean support can help establish whether the underlying service is at fault, but the customer still owns most application-level diagnosis on a Droplet. Shared CPU adds another wrinkle. A small plan can feel perfectly responsive under light traffic but becomes less consistent under sustained CPU load. The right response isn\u2019t necessarily to abandon the provider. It may be to use a plan with a dedicated CPU or to separate workloads that are fighting for the same small server. Backups are useful, but they are not a complete recovery strategy DigitalOcean\u2019s automated Droplet backups are crash-consistent system images. They help restore a server or create a replacement Droplet, but they don\u2019t automatically protect attached block-storage volumes. DigitalOcean also stores the backups in the same data centre as the associated Droplet. For a low-risk project, that may be enough. For a business system, use database-aware exports or managed database backups; protect volume data separately; keep at least one recovery copy outside the same failure domain; and test the restore procedure. A backup configuration is not proof of recoverability until someone has successfully restored it. DigitalOcean support: response time is not a recovery plan DigitalOcean\u2019s support plans publish different response windows and contact channels. The less obvious detail is that its documentation ties response times to the plan, rather than offering a faster response simply because the customer labels an incident critical. Check that policy against how long your application can remain unavailable before choosing a support tier. A promised first response also says little about how long it will take to restore service. Prepare a short incident record: affected resource and region, when the problem started, recent changes, relevant error logs, and whether the failure occurs from more than one network. Redact credentials. This makes the handover more useful while your own team checks application health and its recovery options. Support complaints should be read with the workload and plan attached. A slow first reply, an unresolved provider network problem and a broken application deployment are different failures. Buyers need to know who diagnoses each one, and what they can restore while a ticket remains open. Provider support does not cover Linux patching, application debugging, or WordPress plugin repairs. Assign an owner for those operations and for out-of-hours recovery before launch. Security is good at the infrastructure layer, but Droplets follow a shared-responsibility model. DigitalOcean provides Cloud firewalls, VPC networking, SSH key authentication, team permissions, monitoring and managed services that reduce some infrastructure risk. Those controls are useful because they let a small team build a sensible baseline without stitching together a large security product catalogue. On a Droplet, the customer is still responsible for the operating system and application. A strong baseline includes SSH keys, multi-factor authentication on the account, a default-deny Cloud firewall, private networking between internal services, regular patching, protected secrets, off-server backups and alerts for CPU, memory, disk and service health. The common mistake is assuming a one-click application image is hardened and maintained indefinitely. It is a deployment shortcut. Once the server exists, normal Linux and application security work resumes. Is DigitalOcean good for WordPress? Yes, if someone can administer the server. DigitalOcean gives WordPress owners more control over PHP, the web server, caching, the database and deployment than a typical shared host. That can help agencies, custom membership sites, and technically managed WooCommerce installations. It is a weaker fit for a business owner who wants WordPress kept online. The owner still needs to handle operating-system updates, caching, mail delivery, malware response, TLS, backups and recovery. A managed WordPress host costs more partly because it takes ownership of more of those jobs. For sizing, memory pressure matters more than a simplistic page-view number. A light cached site may run acceptably on a small Droplet, while WooCommerce, heavy plugins, background queues or uncached traffic can require significantly more RAM and CPU. Leave headroom for updates, cron jobs and traffic spikes instead of sizing the server to its quietest hour. Is DigitalOcean good for SaaS and AI applications? DigitalOcean is particularly sensible for SaaS products that combine conventional web infrastructure with managed services. A team can host an API on Droplets or App Platform, move state to a managed database, store uploads in Spaces, and add load balancing as traffic grows. That progression is easier to reason about than jumping straight into dozens of hyperscaler services. For AI applications, separate the web stack from the model-compute decision. DigitalOcean offers GPU infrastructure and inference products, but a product does not need to keep every workload with one provider. A common architecture can use DigitalOcean for the web app, database, and storage, while sending bursty GPU jobs to a specialist service if the hardware, queueing, or regional economics are better there. This is one of the strongest reasons to choose DigitalOcean: the general-purpose application layer is easy to understand. You can optimise the expensive AI compute separately rather than forcing the whole product onto a GPU-centric platform. Cost summary: predictable entry pricing, separate operating costs DigitalOcean\u2019s entry pricing remains easy to understand: Basic Droplets start at $4 per month, App Platform has paid container options from around $5, and managed databases start around $15. Those figures are useful for orientation, not for a production budget. Service Starting point What to remember Basic Droplet $4/month Unmanaged VM; backups and other services are separate App Platform Paid web containers from about $5/month You pay more for managed deployment and less server administration Managed database About $15/month Can cost more than the app VM but removes substantial database infrastructure work The review decision should not be reduced to those numbers. DigitalOcean is good value when the team wants control and can handle the remaining operational work. If you need the detailed cost model, including backups, snapshots, Spaces, bandwidth and realistic configurations, keep that analysis on the dedicated pricing page rather than treating a review as a giant tariff sheet. DigitalOcean developer complaints: check email delivery before migrating A website can load correctly after a migration while account confirmations, password resets and receipts silently fail. DigitalOcean\u2019s current Droplet documentation says SMTP ports 25, 465 and 587 are blocked by default, including traffic through Reserved IPs. That makes transactional email a migration requirement, not a task to leave until after changing DNS. For WordPress or a SaaS application, check how the application actually sends messages. A plugin configured to use a blocked SMTP port will not be fixed by adding more server memory. Plan a supported delivery service, check its HTTPS API option, and test account creation, password recovery and order notifications from staging. Keep delivery logs so you can separate an application failure from a delivery failure. Do not base a production migration on an assumption that support will remove the restriction. Verify the current policy and a working delivery route first. Check DigitalOcean\u2019s SMTP policy for the current product rules and limitations. Your search, your sources Make DIY AI a preferred source See more of our reporting in Google Top Stories, AI Overviews and AI Mode. Add DIY AI on Google Where DigitalOcean falls short Droplets are unmanaged: beginners can deploy a server faster than they can operate one safely. Shared CPU can vary: Basic plans are not suitable for sustained CPU-intensive workloads. Support does not manage your application: paying for faster response improves access to the provider, not ownership of your stack. Built-in backups are not a full disaster-recovery plan: volumes need separate protection, and same-datacenter backup storage leaves a shared failure domain. App Platform has an ephemeral filesystem; you must move persistent state to object storage or a database. The regional footprint is good rather than enormous: some specialised hardware and services are not available everywhere. The platform can become expensive if you buy every managed layer: convenience, redundancy and managed state add cost quickly, even though the first Droplet is cheap. DigitalOcean vs Railway: control or lower operational burden? Railway is a more natural alternative for developers who like DigitalOcean\u2019s simplicity but don\u2019t want to manage a server. Railway centres the workflow on deploying applications and services, while a DigitalOcean Droplet starts from infrastructure and gives you more direct control over the operating system. Choose DigitalOcean when you need SSH access, custom networking, unusual services, predictable VM shapes or a path into managed databases and Kubernetes while retaining infrastructure control. Choose Railway when application deployment speed matters more than owning the VM, and the workload fits its PaaS model. Our Railway hosting review goes deeper into that trade-off. Other DigitalOcean alternatives worth considering Hetzner is a strong comparison if raw compute value is the priority and you are happy to assemble more of the platform around the VM. AWS, Azure and Google Cloud are better choices when you need a much broader global service catalogue, enterprise controls or specialised managed services. RunPod is more relevant when GPU compute dominates the workload than when you need a complete general-purpose application platform. The key is to compare the layer you actually want to buy. A cheaper VPS is not automatically a better Cloud platform, and a convenient PaaS is not automatically overpriced because its RAM-per-pound figure looks worse than a VM. The question is how much infrastructure work you want the provider to absorb. Who should use DigitalOcean? DigitalOcean is a strong choice for Developers comfortable with Linux, SSH and basic Cloud networking. Small SaaS teams that want a simpler Cloud than AWS, Azure or Google Cloud. Agencies with repeatable server-management and backup processes. Projects that may grow from one VM into managed databases, object storage or Kubernetes. Custom WordPress sites with a technical owner. Teams that want conventional app hosting alongside separate AI or GPU workloads. UK-facing projects that benefit from the London region. DigitalOcean is a weak choice for Beginners expecting cPanel-style managed hosting. Businesses with nobody responsible for server patching and recovery. Simple brochure websites where infrastructure control has little business value. Applications that need the broadest possible global service footprint. Teams that expect provider support to diagnose and maintain their custom application. Workloads where a specialist GPU or edge platform is the dominant requirement. Practical DigitalOcean setup checklist Choose Droplet, App Platform or Kubernetes based on the amount of infrastructure you actually want to manage. Select a region close to users and confirm that every required managed service is available in that region. Use shared CPU for genuinely bursty workloads and dedicated CPU where sustained performance matters. Size RAM for deployments, workers and traffic spikes, not just idle usage. Use SSH keys, multi-factor authentication and a default-deny Cloud firewall. Keep persistent uploads and generated media outside disposable compute where possible. Protect databases with application-aware backups, not only VM images. Back up attached volumes separately. Keep at least one recovery copy of critical systems outside the same data centre. Set monitoring and alerts before the service becomes important. Test a complete restore and document who responds to incidents. Destroy unused resources rather than assuming powered-off infrastructure stops billing. DigitalOcean review verdict for 2026 DigitalOcean is worth it for developers and small technical teams who want understandable Cloud infrastructure without sacrificing the ability to grow into a more complete architecture. Droplets are straightforward; App Platform provides a lower-maintenance route; and the managed database, storage, and Kubernetes products let a project mature without an early provider migration. The platform is less convincing when the buyer is really looking for managed hosting. A cheap VM does not include an administrator, a recovery engineer or someone to debug the application at 2 am. DigitalOcean makes infrastructure easier to buy and operate; it does not remove the need to operate it. Choose DigitalOcean when control is valuable, and someone on the team owns the stack. Choose App Platform or a PaaS alternative when server administration is a distraction. Choose a managed website host when the business wants to publish and sell rather than maintain infrastructure. DigitalOcean FAQs Is DigitalOcean good for developers? Yes. DigitalOcean is particularly well suited to developers who want direct infrastructure control without the product complexity of a hyperscaler. The control panel is clear; API and Terraform support enable repeatable infrastructure; and projects can move from Droplets to managed databases, object storage, App Platform, or Kubernetes as requirements grow. Is DigitalOcean good for beginners? App Platform can be approachable for a developer new to deployment. Droplets are less suitable for complete hosting beginners because the customer manages Linux, security, updates and application recovery. Easy provisioning should not be confused with managed hosting. Is DigitalOcean good for WordPress? DigitalOcean can run WordPress very well when a developer or administrator owns the server. It is a poor fit for site owners who expect the host to manage operating-system updates, caching, malware recovery, backups and application troubleshooting. Is DigitalOcean managed hosting? Droplets are unmanaged virtual machines. DigitalOcean also sells managed products such as App Platform, managed databases and Kubernetes, but a standard Droplet leaves the operating system and application with the customer. Is DigitalOcean reliable enough for production? Yes, as long as the architecture matches the required level of availability. A single Droplet remains a single point of failure. Production systems that cannot tolerate a single server failure need multiple instances, a protected state, monitoring, and tested recovery, rather than relying on the provider name alone. Does DigitalOcean manage backups for Droplets? DigitalOcean offers automated Droplet backups, but they are crash-consistent server images rather than a complete application recovery plan. Attached block-storage volumes need separate protection, and critical databases should have application-aware backups and tested restores. DigitalOcean or Railway: which is better? DigitalOcean is better when you want more infrastructure control and a broader path from VMs into managed Cloud services. Railway is better when the main goal is deploying applications quickly without managing the underlying server. The right choice depends on whether the team values control or reduced operational work more. Liked this content? Give us a share! You Might Also Like: Railway Hosting Review 2026 By: Steven Jones On: July 1, 2026 Updated on: November 5, 2026 Railway is a developer-focused platform for deploying web applications, APIs, workers, databases and scheduled jobs without managing a virtual server.\u2026 Best AI Hosting By: Steven Jones On: June 7, 2026 Updated on: July 2, 2026 The best AI hosting in 2026 depends on what you are actually deploying. A Next.js chat interface, a retrieval-augmented generation\u2026 Best Gpu Hosting For AI By: Steven Jones On: July 2, 2026 Updated on: November 13, 2026 The best GPU hosting for AI inference depends less on the headline GPU price than on how the workload behaves.\u2026 Writer: Steven Jones AI Tools Reviewer and Technical Analyst Steven Jones is a technology analyst specialising in artificial intelligence, machine learning workflows, and emerging automation tools. At DIY AI , he focuses on clear, practical guidance for people comparing AI tools in the real world. His work covers text generation, image generation, video tools, data platforms, developer-focused AI products, and the automation workflows that connect them. Steven's reviews are built around hands-on testing, practical benchmarks, and transparent scoring rather than vendor claims. He looks closely at where each tool performs well, where it falls short, and what those trade-offs mean for creators, teams, and businesses trying to make sensible AI adoption decisions. He has a particular interest in safety, reliability, output quality, performance metrics, and dataset quality. When he is not reviewing the latest AI model updates, he experiments with prompt engineering techniques and contributes to DIY AI ongoing work on fair, explainable scoring frameworks for AI tools. Contact Leave a Comment On: Digitalocean Review 2026 Cancel reply"
+ },
+ {
+  "url": "https://www.vpsbenchmarks.com/hosters/digitalocean",
+  "title": "DigitalOcean Review | VPSBenchmarks",
+  "words": 1549,
+  "headings": [
+   [
+    "h1",
+    "DigitalOcean Review"
+   ],
+   [
+    "h2",
+    "DigitalOcean in its own words"
+   ],
+   [
+    "h4",
+    "Best VPS Awards"
+   ],
+   [
+    "h2",
+    "Considering other providers?"
+   ],
+   [
+    "h2",
+    "DigitalOcean VPS Features"
+   ],
+   [
+    "h2",
+    "DigitalOcean Extra Services"
+   ],
+   [
+    "h2",
+    "VPS Instance Provisioning Time"
+   ],
+   [
+    "h2",
+    "Control Panel Screenshots"
+   ],
+   [
+    "h2",
+    "Cloud Storage Prices"
+   ],
+   [
+    "h2",
+    "Network Bandwidth Prices"
+   ],
+   [
+    "h2",
+    "DigitalOcean Coupons"
+   ],
+   [
+    "h2",
+    "Recent Performance Trials"
+   ],
+   [
+    "h2",
+    "DigitalOcean Instance Types and Plans"
+   ],
+   [
+    "h3",
+    "Cloud Server Plans"
+   ],
+   [
+    "h3",
+    "GPU Plans"
+   ]
+  ],
+  "text": "Provider News: my.host performance in Ireland \u00d7 DigitalOcean Review Go to DigitalOcean Last updated on September 16th 2025 DigitalOcean in its own words DigitalOcean, Inc. is an American cloud infrastructure provider headquartered in New York City with data centers worldwide. DigitalOcean provides developers cloud services that help to deploy and scale applications that run simultaneously on multiple computers. As of January 2018, DigitalOcean was the third-largest hosting company in the world in terms of web-facing computers. DigitalOcean also marked its presence in Deloitte Technology Fast 500 List in 2018. DigitalOcean was founded as a VPS provider in 2012 . It is headquartered in the USA. It offers VPS, Database, Storage and Networking hosting products. It has data centers in: Canada Germany India Netherlands Singapore United Kingdom United States Best VPS Awards 3rd Best VPS May 2022 2nd Best VPS 2021 under $5 (old revision) 2nd Best VPS 2020 under $5 (old revision) 2nd Best Value October 2020 3rd Best VPS June 2020 Quick Links DigitalOcean plans specs and prices Plans DigitalOcean instance types Instance Types How fast are DigitalOcean servers? Check them out in the Screener Screener List of DigitalOcean trials Trials Review CPU models found in DigitalOcean trials CPUs List of DigitalOcean yabs.sh results Yabs Considering other providers? Compare DigitalOcean with featured VPS providers that have similar locations, prices and plans. See alternatives to DigitalOcean DigitalOcean VPS Features Features not included in VPS prices or that can't be managed from the provider control panel are marked as missing in the table below. Feature Value Comment Hourly Billing Yes DDOS Protection No DigitalOcean recommends using the services of CloudFlare to mitigate DDOS attacks. Backups No Backups are available for a fee. Snapshots are available for a fee. Control Panel Builtin SSH Keys Setup Yes Total number of data centers 12 Number of data center continents 3 Monitoring Charts Yes Network bandwidth, CPU usage, disk I/O. Admin REST API Yes URL: https://developers.digitalocean.com/documentation/v2/ Upgrade VPS from admin console Yes Mobile Friendly UI Yes Reverse DNS No Accepted Forms of Payment Credit cards, Paypal Hidden CPU Model No Affiliate Program Yes Firewall No Shelving No Compare Features DigitalOcean Extra Services In addition to features included in VPS plans, DigitalOcean also sells the services marked green in the following table: Backups Block storage Object storage Load balancer Floating IP addresses Team Management Managed databases Serverless DDoS protection Kubernetes GPU instances Private network Go to DigitalOcean VPS Instance Provisioning Time For each DigitalOcean VPS trial, we measured how long it took to provision the server from the moment it was ordered to the moment it accepted SSH connections. See also VPS provisioning times for all providers . Average Provisioning Time Median Provisioning Time Min Provisioning Time Max Provisioning Time Number of VPS Samples 45s 45s 45s 45s 1 Control Panel Screenshots Cloud Storage Prices For a comparison of storage features and prices from all providers, please check the Cloud Storage Prices page. Storage Type Price / GB / month & Request Pricing Description Restriction Extra capacity provisioning Object $0.020 Object storage is called \"Spaces\" at DO. $5 for 250GB/month that include 1TB of outbound transfer (CDN included) DigitalOcean object storage 250GB minimum Block $0.100 Volumes are encrypted at rest, replicated multiple times and can be resized live. DigitalOcean block storage Snapshots $0.050 Snapshots are created on users requests and are images of block storage disk volumes. DigitalOcean snapshots storage Backups $0.050 Prices vary depending on droplet size: backups are 20% of droplet total price. Therefore backup prices are considerably more expansive on General Purpose droplets. When backups are enabled, DO will create a disk image of the droplet once per week and will keep it for 4 weeks. DigitalOcean backups storage Prices vary depending on droplet monthly price. Network Bandwidth Prices These are the network bandwidth prices charged by DigitalOcean for outbound transfers from VPS to the internet. For a comparison of bandwidth prices from all providers, go to the Network Bandwitdh Prices page. Description Price / GB Pricing model: Allowance Then Charged ( the provider gives a free bandwidth allowance with each server. Bandwidth above the free allowance is charged by the provider. ) Free allowance: 4 TB / month ( for a 2 core 4GB instance or closest available ) Transfer pool: yes DigitalOcean networking Flat pricing: $0.010 / GB DigitalOcean Coupons This provider offers the following coupon: Link: https://m.do.co/c/f6f1f383e46f Value: $200 Sign up using the following link and get $200 credit over 60 days. Recent Performance Trials Instance Type Plan Date Score PW Score Basic / Regular Basic Regular 2GB 1 core Sep 16 2025 27 47 Basic / Premium AMD Basic Premium AMD 2GB 1core Jul 24 2024 25 41 Compute optimized / CPU-Optimized Droplets Regular CPU Optimized 4GB Jan 24 2024 37 31 Basic / Regular Basic Regular 4GB 2 cores Apr 03 2023 34 45 DigitalOcean Instance Types and Plans How fast are DigitalOcean servers? Screen all DigitalOcean VPS Plans All DigitalOcean instance types Note: All VPS prices reported at VPSBenchmarks are for one month without any further commitment and before promotions unless noted otherwise. The IPv4 charge is added to the VPS monthly price in case the provider doesn't include it by default. Cloud Server Plans Note: This is not an exhaustive list of plans and instance types offered by DigitalOcean. Only plans that have been tested by VPSBenchmarks or may be tested in the future are included. Plan Number of CPU cores RAM Storage Monthly Price Family: Basic Instance Type: Regular Basic Droplets have the most efficient CPU usage at a lower cost for workloads that underuse dedicated threads. They\u2019re ideal for bursty applications that can handle variable levels of CPU. Provider page for instance type Basic Regular 1GB 1 core 1 1.0GB 25GB $6.00 / month Basic Regular 2GB 1 core 1 2.0GB 50GB $12.00 / month Basic Regular 4GB 2 cores 2 4.0GB 80GB $24.00 / month Instance Type: Premium Intel Basic Droplets have the most efficient CPU usage at a lower cost for workloads that underuse dedicated threads. They\u2019re ideal for bursty applications that can handle variable levels of CPU. Provider page for instance type Basic Premium Intel 4GB 2cores 2 4.0GB 120GB $32.00 / month Instance Type: Premium AMD Basic Droplets have the most efficient CPU usage at a lower cost for workloads that underuse dedicated threads. They\u2019re ideal for bursty applications that can handle variable levels of CPU. Provider page for instance type Basic Premium AMD 1GB 1core 1 1.0GB 25GB $7.00 / month Basic Premium AMD 2GB 1core 1 2.0GB 50GB $14.00 / month Basic Premium AMD 4GB 2cores 2 4.0GB 80GB $28.00 / month Family: General purpose Instance Type: General Purpose Droplets General Purpose Droplets have a balanced ratio of memory to dedicated CPU, suitable for a wide variety of production workloads. They\u2019re best for general purpose workloads that require dedicated computer power. Around 25GB storage per vCPU. Double the storage for 8% more. Provider page for instance type General Purpose 2 cores 2 8.0GB 50GB $68.00 / month Family: Memory optimized Instance Type: Memory-optimized Droplets provide 8GB RAM for each vCPU. The additional memory can help you avoid excessively swapping to disk or getting out-of-memory errors, both of which significantly impact your application's performance and stability. Around 50GB storage per vCPU. Provider page for instance type VPSBenchmarks has not tested any plan for this instance type yet. Family: Compute optimized Instance Type: CPU-Optimized Droplets Regular CPU-Optimized Droplets provide a 2:1 ratio of memory to CPU. This configuration is optimal for applications that demand fast, consistent performance from dedicated vCPUs, but are not so memory-intensive that they require the additional RAM provided by General Purpose Droplets. Around 25GB storage per vCPU. Double the storage for 8% more. Provider page for instance type CPU Optimized 4GB 2 4.0GB 50GB $47.00 / month Family: Compute Optimized Instance Type: CPU-Optimized Droplets Premium Intel CPU-Optimized Droplets provide a 2:1 ratio of memory to CPU. This configuration is optimal for applications that demand fast, consistent performance from dedicated vCPUs, but are not so memory-intensive that they require the additional RAM provided by General Purpose Droplets. Around 25GB storage per vCPU. Double the storage for 8% more. Provider page for instance type VPSBenchmarks has not tested any plan for this instance type yet. Family: Other GPU Plans Plan GPU Number of CPU cores RAM Storage Price Family: GPU Droplets Instance Type: H100 Reliably run training and inference on AI/ML models, process large data sets and complex neural networks for deep learning use cases, and serve additional use cases like high-performance computing (HPC) Provider page for instance type NVIDIA H100 1 x NVIDIA H100 80GB GPU RAM 20 240.0GB 5720GB $3.39/hr NVIDIA H100x8 8 x NVIDIA H100 640GB GPU RAM 160 1920.0GB 42000GB $23.92/hr Family: GPU Instances Instance Type: NVIDIA HGX H200 The NVIDIA HGX H200 Droplet is a state-of-the-art GPU instance designed for high-performance AI workloads, including large language model training and real-time inference. Built on the Hopper architecture, it features 141GB of HBM3e memory and 4.8 TB/s of bandwidth, delivering up to 2x faster inference speeds than the H100. Provider page for instance type NVIDIA H200 1 x NVIDIA H200 141GB GPU RAM 24 240.0GB 5720GB $3.44/hr Go to DigitalOcean Be the first to learn about new Best VPS rankings. Subscribe to our newsletter."
+ }
+]
