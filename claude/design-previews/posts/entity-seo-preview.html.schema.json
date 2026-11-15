@@ -1,0 +1,208 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "Entity SEO makes it clear what your brand, people, products and topics are, and how they relate, so search engines and AI tools identify you correctly. An entity is a uniquely identifiable thing, not a keyword. The work is a fact sheet, a clear entity home, accurate Organization and Person markup, matching profiles, clear internal links and honest mentions on other sites.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: An analysis of AI Overview brand visibility factors, 75K brands studied (May 2025)",
+    "url": "https://ahrefs.com/blog/ai-overview-brand-correlation/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Organization structured data",
+    "url": "https://developers.google.com/search/docs/appearance/structured-data/organization"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Knowledge Panel Help: About knowledge panels",
+    "url": "https://support.google.com/knowledgepanel/answer/9163198?hl=en"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: AI features and your website",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guide to optimizing for generative AI features on Google Search",
+    "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Search Engine Journal: Entities in SEO, what are they and why do they matter? (Dixon Jones, 2023)",
+    "url": "https://www.searchenginejournal.com/entity-seo/492947/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Search Engine Journal: What does entity optimization mean? Ask an SEO (June 2026)",
+    "url": "https://www.searchenginejournal.com/ask-an-seo-what-does-entity-optimization-mean/575597/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: Stop overcomplicating things, entity SEO is just SEO (2024)",
+    "url": "https://ahrefs.com/blog/entity-seo/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is entity SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Entity SEO is making it clear what your brand, people, products and topics are, and how they relate, so search engines and AI tools identify you correctly. It focuses on facts, structured data, internal links, profiles and mentions."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What are entities in SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Entities are uniquely identifiable things such as companies, people, places, products and concepts. Catalogs such as Google's Knowledge Graph and Wikidata record them with identifiers, facts and relationships."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is the difference between entities and keywords?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "A keyword is a word or phrase people type. An entity is a thing with an identifier and facts. Many entities have names that look like keywords, which is why they are confused. Both matter."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I find entities for SEO optimization?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "List your own brand, products, people and topics. Then check knowledge panels, People also ask and related searches, Wikipedia and Wikidata, competitor pages, Google's Natural Language API and what AI tools say when asked about you."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I find related entities for SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Look at the people, tools, terms and concepts that appear around your topic on several top pages and in the questions people ask. Include the ones a reader would expect, and avoid stuffing pages with names."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need schema markup for entity SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It helps but is not required. Google says Organization markup can help it disambiguate your organization and that no properties are required. Keep markup accurate, matched to the page and validated."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does entity SEO help with AI search?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It can help models describe you correctly. Ahrefs found branded web mentions correlated 0.664 with AI Overview brand visibility across 75,000 brands, but that is a correlation. Google lists no special markup requirement for its AI features."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I get a Google knowledge panel?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Knowledge panels are generated automatically from information across the web for entities in the Knowledge Graph. You cannot order one. Publish clear facts, build independent coverage and keep profiles consistent."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is entity SEO just SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Partly. Ahrefs argued in 2024 that entity SEO is just SEO. Much of the work is ordinary good practice, but the entity lens gives a short checklist that many sites fail, such as old directory facts or no clear About page."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Should I create a Wikipedia or Wikidata entry for my company?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Only if it meets their notability rules, and ideally written by an independent editor from reliable sources. Self-promotional edits break their policies. Build independent coverage first and never create fake sources."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Entity SEO: How Search and AI Tools Learn Who You Are",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Entity",
+    "description": "A uniquely identifiable thing, such as a company, person, product or concept.",
+    "url": "https://reinforcelab.online/preview/#term-entity"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Knowledge Graph",
+    "description": "Google's database of entities and the links between them.",
+    "url": "https://reinforcelab.online/preview/#term-knowledge-graph"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Knowledge panel",
+    "description": "An information box Google shows for an entity in the Knowledge Graph.",
+    "url": "https://reinforcelab.online/preview/#term-knowledge-panel"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Entity home",
+    "description": "The main page on your site that states the facts about an entity.",
+    "url": "https://reinforcelab.online/preview/#term-entity-home"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "sameAs",
+    "description": "A structured data property that lists pages about the same entity on other sites.",
+    "url": "https://reinforcelab.online/preview/#term-sameas"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Structured data",
+    "description": "Code on a page that states facts in a format machines can read.",
+    "url": "https://reinforcelab.online/preview/#term-structured-data"
+   }
+  ]
+ }
+]

@@ -1,0 +1,470 @@
+[
+ {
+  "url": "https://ahrefs.com/blog/entity-seo/",
+  "title": "Stop Overcomplicating Things. Entity SEO is Just SEO",
+  "words": 1407,
+  "headings": [
+   [
+    "h1",
+    "Stop Overcomplicating Things. Entity SEO is Just SEO"
+   ],
+   [
+    "h2",
+    "Entity SEO, briefly explained"
+   ],
+   [
+    "h2",
+    "Why you don\u2019t have to \u2018do\u2019 entity SEO"
+   ],
+   [
+    "h2",
+    "Final thoughts"
+   ]
+  ],
+  "text": "General SEO Stop Overcomplicating Things. Entity SEO is Just SEO By Si Quan Ong SEO & Marketing Educator at Ahrefs Reviewed by Ryan Law Despina Gavoyannis September 11, 2024 6 min read 72 Linking websites Article performance data from Ahrefs Contents Entity SEO, briefly explained Why you don\u2019t have to \u2018do\u2019 entity SEO Add Ahrefs as a preferred source on Google Add Ahrefs as a preferred source Add Ahrefs as a preferred source on Google Add Ahrefs as a preferred source \u201cEntity SEO\u201d. Sounds scary, doesn\u2019t it? Not only does the word \u201centity\u201d sound foreign, it feels like yet another thing to add to your never-ending SEO to-do list. You\u2019re barely afloat when it comes to SEO , but ohgawd here comes one more new thing to dedicate your scarce resources. I have good news for you though: You don\u2019t have to do entity SEO. Why? Because you\u2019re probably already doing it. Let\u2019s start from the beginning. Contents Entity SEO, briefly explained Why you don\u2019t have to \u2018do\u2019 entity SEO Entity SEO, briefly explained In 2012, Google announced the Knowledge Graph. The Knowledge Graph is a knowledge base of entities and the relationships between them. An entity is any object or concept that can be distinctly identified. This includes tangibles like people, places, and organizations, and intangibles like colors, concepts, and feelings. For example, the footballer Federico Chiesa is an entity: So is the famous British-Indian restaurant Dishoom: Entities are connected by edges, which describe the relationships between them. Introducing the Knowledge Graph helped improve Google\u2019s search results because: Google could better understand search intent \u2014 People search for the same thing but describe it in different ways. Google can now understand this and serve the same results. It reduced reliance on keyword matching \u2014 Matching the number of keywords on a page doesn\u2019t guarantee relevance; also it prevents crafty SEOs from keyword stuffing . It reduced Google\u2019s computational load \u2014 The Internet is virtually infinite and Google simply cannot understand the meaning of every word, paragraph, webpage, and website. Entities provide a structure where Google can improve understanding while minimizing load. For example, even though we didn\u2019t mention the actor\u2019s name, Google can understand we\u2019re looking for Harrison Ford and therefore shows his filmography: That\u2019s because Hans Solo and Harrison Ford are closely connected entities in the Knowledge Graph. Google shows Knowledge Graph data in SERP features like Knowledge Panels and Knowledge Cards. With this knowledge, we can then define entity SEO as optimizing your website or webpages for such entities. Why you don\u2019t have to \u2018do\u2019 entity SEO If Google has moved to entity-oriented search, then entity SEO is just SEO. As my colleague Patrick Stox says, \u201cThe entity identification part is more on Google's end than on our end.\u201d I mean, if you look at the \u2018entity SEO\u2019 tactics you find in blog posts, you\u2019ll discover that they\u2019re mostly just SEO tactics: Earn a Wikipedia page Create a Google Business Profile Add internal links Create all digital assets Google is representing on the page (e.g., videos, images, Twitter) Develop topical authority Include semantically related words on a page Add schema markup Let\u2019s be honest. If you\u2019re serious about SEO and are investing in it, then it\u2019s likely you\u2019re already doing most of the above. Regardless of entities, wouldn\u2019t you want a Wikipedia page ? After all, it confers benefits beyond \u201centity SEO\u201d. Brand recognition, backlinks from one of the world\u2019s most authoritative sites (albeit nofollow )\u2014any company would want that. If you\u2019re a local business, you\u2019ve probably created a Google Business Profile . Adding internal links is just SEO 101. And billions of blistering barnacles, creating all digital assets Google wants to see, like images and videos, is practically marketing 101 . If you\u2019re a Korean recipe site and want to be associated with the kimchi jjigae entity , wouldn\u2019t you already know you need to make a video and have photos of the cooking process? When I started my breakdance site years ago, I knew nothing about SEO and content marketing but I still knew I needed to make YouTube videos. Because guess what? It\u2019s hard to learn breakdancing from words. I don\u2019t think I needed an entity SEO to tell me that. Topical authority is an SEO concept where a website aims to become the go-to authority on one or more topics. Call me crazy, but it feels like blogging 101. Read most guides on how to start a blog and I\u2019m sure you\u2019ll find a subheading called \u201cniche down\u201d. And once you niche down, it\u2019s inevitable you\u2019ll create content surrounding that one topic. If I start a breakdance site, what are the chances I\u2019ll write about contemporary dance or pop art? Pretty low. In fact, topical authority is similar to the Wiki Strategy , which Nat Eliason wrote about in 2017. There wasn\u2019t a single mention of entities. It was just the right way to make content for the Internet. I think the biggest problem here isn\u2019t entities versus keywords or that topical authority is a brand-new strategy. It\u2019s simply that many SEOs are driven by short-sightedness or the wrong incentives. You can target a whole bunch of unrelated keywords that have high search volume, gain incredible amounts of search traffic, and brag about how successful you are as an SEO. Some of the pages sending HubSpot the most search traffic has barely anything to do with their core product. A page on how to type the shrug emoji? The most famous quotes? This is not to single out HubSpot\u2014I\u2019m sure they have their reasons, as explored by Ryan here \u2014but to illustrate that many companies do the exact same thing. And when Google stops rewarding this behavior, all of a sudden companies realise they do need to write about their core competencies. They need to \u201cbuild topical authority\u201d. I don\u2019t want to throw the baby out with the bathwater because I do see value in the last two \u2018entity SEO tactics\u2019. But again, if you\u2019re doing something similar to the Wiki Strategy for your site, chances are you would have naturally included entities or semantically relevant words without thinking too much about it. It\u2019s difficult to create content about kimchi jjigae without mentioning kimchi, pork, or gochujang . However, to prevent the curse of knowledge or simply to avoid blindspots, checking for important subtopics you might have missed is useful. At Ahrefs, we run a page-level content gap analysis and look out for subtopics: For example, if we ran a content gap analysis on \u201cinbound marketing\u201d for the top three ranking pages, we see that we might need to include these subtopics: What is inbound marketing Inbound marketing strategy Inbound marketing examples Inbound marketing tools Finally, adding schema markup makes the most sense because it\u2019s how Google recognizes entities and better understands the content of web pages. But if it\u2019s just one new tactic\u2014which I believe is already part of \u2018standard\u2019 SEO and you might already be doing it\u2014then there\u2019s no need to create a category to define the \u201cnew era\u201d (voice SEO, where art thou?) Final thoughts Two years ago, someone on Reddit asked for an SEO workflow that utilized super advanced SEO methodologies: The top answer: None of the above. When our Chief Marketing Officer Tim Soulo tweeted about this Reddit thread , he got similar replies too: And even though I don\u2019t know him, this is a person after my own heart: You don\u2019t have to worry about entity SEO. If you have passion for a topic and are creating high-quality content that fulfills what people are looking for, then you\u2019re likely already doing \u201centity SEO\u201d. Just follow this meme: Make stuff people like. Post by Si Quan Ong Si Quan is a content marketer at Ahrefs. He has been involved in digital and content marketing for the past 5 years. Before he joined Ahrefs, he was content marketer at ReferralCandy, a 7-figure ARR SaaS company. Si Quan has spoken at some of the industry\u2019s largest conferences in the Asia region, which includes TIECon and Digital Marketing Skill Share. He has also written for some of the industry\u2019s most popular blogs like Sumo and SmartBlogger. His earliest work was marketing a product on Kickstarter , which eventually raised $150,000, more than double the original funding goal. The product was also featured on prominent tech websites, including Engadget, CNET and Digital Trends. Reviewed by Ryan Law Despina Gavoyannis"
+ },
+ {
+  "url": "https://www.searchenginejournal.com/entity-seo/492947/",
+  "title": "Entities In SEO: What Are They And Why Do They Matter?",
+  "words": 2545,
+  "headings": [
+   [
+    "h2",
+    "What Are Entities?"
+   ],
+   [
+    "h2",
+    "What Is \u201cThe Knowledge Graph\u201d?"
+   ],
+   [
+    "h2",
+    "A Brief History Of Entities In Search"
+   ],
+   [
+    "h3",
+    "Metaweb"
+   ],
+   [
+    "h2",
+    "Wikidata"
+   ],
+   [
+    "h2",
+    "How Entities Work And How They Are Used For Ranking"
+   ],
+   [
+    "h3",
+    "Entities In The Core Algorithm"
+   ],
+   [
+    "h3",
+    "Language Agnostic"
+   ],
+   [
+    "h3",
+    "Connections Between Entities"
+   ],
+   [
+    "h2",
+    "Examples Of Entities In Google"
+   ],
+   [
+    "h3",
+    "Entities In Image Search"
+   ],
+   [
+    "h3",
+    "Entities In Google Discover"
+   ],
+   [
+    "h2",
+    "How To Optimize For Entities"
+   ],
+   [
+    "h3",
+    "Some Research From A Googler"
+   ],
+   [
+    "h4",
+    "1st-loc"
+   ],
+   [
+    "h4",
+    "Head-count"
+   ],
+   [
+    "h4",
+    "Mentions"
+   ],
+   [
+    "h4",
+    "Headline"
+   ],
+   [
+    "h4",
+    "Head-lex"
+   ],
+   [
+    "h4",
+    "Entity Centrality"
+   ],
+   [
+    "h2",
+    "Putting These Entity Signals Together In SEO"
+   ],
+   [
+    "h3",
+    "Is This Enough For Entity SEO?"
+   ],
+   [
+    "h2",
+    "Using Schema To Help Define Entities"
+   ]
+  ],
+  "text": "There is a lot of confusion about how SEO pros should both understand and, more importantly, leverage \u201centities\u201d in SEO. I understand where this comes from, especially with the traditional approach to SEO being around words and phrases. Indeed, most of the algorithms that the first wave of SEO pros (like me) grew up with had no concept of an \u201centity\u201d in search. SEO principals \u2013 from content writing to anchor text in links to SERPs tracking \u2013 were (and largely still are) keyword-driven, and many people still find it hard to understand what has changed. But over the last decade, all search has been moving towards understanding the world as a string of words and as a series of interconnected entities. Working with entities in SEO is the foundation for a future-proof search strategy . They are also important for a future with generative AI and ChatGPT . This article talks about why. It covers: What are entities? What is the Knowledge Graph? A brief history of entities in search: Freebase, Wikidata, and entities. How entities work and how they are used for ranking. Examples of entities in Google. How to optimize for entities. Using Schema to help define entities. What Are Entities? SEOs often confuse entities with keywords . An entity (in search terms) is a record in a database. An entity generally has a specific record identify. In Google, that might be: \u201cMREID=/m/23456\u201d or \u201cKGMID=/g/121y50m4.\u201d It is certainly not a \u201cword\u201d or \u201cphrase.\u201d I believe that the confusion with keywords stems from two root causes: The first is that SEO pros learned their craft pre-2010 in terms of keywords and phrases. Many still do. The second is that every entity comes with a label \u2013 which is generally a keyword or descriptor. So while \u201cEiffel Tower\u201d might seem like a perfectly identifiable \u201centity\u201d to us as humans, Google sees it as \u201cKGMID=/m/02j81\u201d and really doesn\u2019t care if you call it \u201cEiffel Tower,\u201d or \u201c Torre Eiffel,\u201d or \u201c\u0627\u06cc\u0641\u0644 \u0628\u0648\u0631\u062c\u0648\u201d (Which is Azerbaijan for \u201cEiffel Tower\u201d). It knows that you are probably referring to that underlying entity in its Knowledge Graph. This comes on to the next point: What Is \u201cThe Knowledge Graph\u201d? There are subtle but important differences between \u201ca knowledge graph,\u201d \u201cThe Knowledge Graph,\u201d and \u201cThe Knowledge Panel.\u201d A knowledge graph is a semi-structured database containing entities. The Knowledge Graph is generally the name given to Google\u2019s Knowledge Graph, although thousands of others exist. Wikidata (itself a knowledge graph) attempts to cross-reference identifiers from different reputable data sources. The Knowledge Panel is a specific representation of results from Google\u2019s Knowledge Graph. It is the pane often showing on the right of the results (SERPs) in a desktop search, giving more details about a person, place, event, or other entity. A Brief History Of Entities In Search Metaweb In 2005, Metaweb started to build out a database, then called Freebase , which it described as an \u201copen, shared database of the world\u2019s knowledge.\u201d I would describe it as a semi-structured encyclopedia. It gave every \u201centity\u201d (or article, to extend the metaphor) its own unique ID number \u2013 and from there, instead of a traditional article in words, the system tried to connect articles through their relationships with other ID numbers in the system. Some $50 million dollars in capital funding, and 5 years later, the project was sold to Google. No commercial product was ever built, but the foundation was set for a 10-year transition, for Google, from a keyword-based search engine to an entity-based one. Wikidata In 2016 \u2013 some six years after the purchase \u2013 Google formally closed down Freebase because it had migrated and developed the ideas into its own \u201cknowledge graph,\u201d the modern term for these databases. At that time, it is useful to note that Google publicly stated that it had synced much of its entity data with Wikidata and that, moving forward, Wikidata (which underpins the data used in Wikipedia) was one way in which Google\u2019s Knowledge Graph could interface with the outside world. How Entities Work And How They Are Used For Ranking Entities In The Core Algorithm Entities are primarily used to disambiguate ideas, not to rank pages with the same ideas. That is not to say that clever use of entities can\u2019t help your site\u2019s content rank more effectively. It can. But when Google tries to serve up results to a user search, it aims first and foremost for an accurate answer. Not necessarily the most deserving. Therefore, Google spends considerable time converting text passages into underlying entities. This happens both when indexing your site and when analyzing a user query. For example, if I type in \u201cThe names of the restaurants underneath the Eiffel Tower,\u201d Google knows that the searcher is not looking for \u201cnames\u201d or the \u201cEiffel Tower.\u201d They are looking for restaurants. Not any restaurant, but ones in a specific location. The two relevant entities in this search are \u201crestaurant\u201d in the context of \u201cChamp de Mars, 5 Av. Anatole France, Paris\u201d (The address of the Eiffel Tower). This helps Google to decide how to blend its various search results \u2013 images, Maps, Google businesses, adverts, and organic web pages, to name a few. Most importantly, for the SEO pro, it is very important for (say) the Jules Verne restaurant\u2019s site to talk about its spectacular view of the Eiffel Tower if it wants Google to recognize that the page is relevant to this search query. This might be tricky since the Jules Verne restaurant is inside the Eiffel Tower. Language Agnostic Entities are great for search engines because they are language-agnostic. Moreover, that idea means that an entity can be described through multiple media. An image would be an obvious way to describe the Eiffel Tower since it is so iconic. It might also be a speech file or the official page for the tower. These all represent valid labels for the entity and, in some cases, valid identifiers in other knowledge graphs. Connections Between Entities The interplay between entities allows an SEO pro to develop coherent strategies for developing relevant organic traffic . Naturally, the most \u201c authoritative \u201d page for the Eiffel Tower is likely to be the official page or Wikipedia. Unless you are literally the SEO pro for the Eiffel Tower, there is little that you can do to challenge this fact. However, the interplay between entities allows you to write content that will rank. We already mentioned \u201crestaurants\u201d and \u201cEiffel Tower\u201d \u2013 but what about \u201cMetro\u201d and \u201cEiffel Tower,\u201d or \u201cDiscounts\u201d and \u201cEiffel Tower\u201d? As soon as two entities come into play, the number of relevant search results drops dramatically. By the time you get to \u201cDiscounted Eiffel Tower tickets when you travel by Metro,\u201d you become one of just a tiny selection of pages focusing on the juxtaposition between Metro tickets, Eiffel Tower tickets, and discounts. Many fewer people type in this phrase, but the conversion rate will be much higher. It may also prove a more monetizable concept for you! (This example is to explain the principle. I do not know if such discounts exist. But they should.) This concept can be scaled to create exceptionally strong pages by first breaking all the competing pages for a search phrase into a table showing the underlying entities and their relative importance to the main query. This can then act as a content plan for a writer to build up a new piece of content that is more authoritative than any of the other competing pieces. So although a search engine may claim that entities are not a ranking factor, the strategy goes to the heart of the philosophy that \u201cIf you write good content, they will come.\u201d Examples Of Entities In Google Entities In Image Search Screenshot from search for [dog on a skateboard], Google, August 2023 Entities can also be very helpful in optimizing images . Google has worked very hard to analyze images using machine learning. So typically, Google knows the main imagery in most photos. So take [ a dog on a skateboard ] as a search term\u2026making sure that your content fully supports the image can help your content be more visible, just when the user is searching for it. Entities In Google Discover One of the most underrated traffic sources for SEO professionals is Google Discover . Google provides a feed of interesting pages for users, even when they are not actively looking for something. This happens on Android phones and also in the Google app on iPhones. Whilst news heavily influences this feed, non-news sites can get traffic from \u201cDiscover.\u201d How? Well \u2013 I believe that entities play a big factor! Screenshot from Google Search Console, August 2023 Don\u2019t be disheartened if you do not see a \u201cDiscover\u201d tab in your Google Search Console. But when you do, it can be a welcome sign that at least one of your web pages has aligned with entities enough that at least one person\u2019s interests overlap with your content enough to have the page in a feed targeted specifically to the user. In the example above, even though \u201cDiscover\u201d results are not displayed at the exact time that a user is searching, there is still a 4.2% click-through rate. This is because Google can align the interests and habits of many of its users to the content on the Internet by mapping entities. Where a strong correlation occurs, Google can offer up a page for a user. How To Optimize For Entities Some Research From A Googler In 2014, a paper came out that I find quite helpful in demonstrating that Google (or at least, its researchers) were keen to separate out the ideas of using keywords to understand topics vs. using entities. In this paper, Dunietz and Gillick note how NLP systems moved towards entity-based processing. They highlight how a binary \u201csalience\u201d system can be used on large data sets to define the entities in a document (webpage). A \u201cbinary scoring system\u201d suggests that Google might decide that a document either IS or ISN\u2019T about any given entity. Later clues suggest that \u201csalience\u201d is now measured by Google on a sliding scale from 0 to 1 (for example, the scoring given in its NLP API). Even so, I find this paper really helpful in seeing where Google\u2019s research thinks \u201centities\u201d should appear on a page to \u201ccount\u201d as being salient. I recommend reading the paper for serious research, but they list how they classified \u201csalience as a study of \u2018New York Times\u2019 articles.\u201d Specifically, they cited: 1st-loc This was the first sentence in which a mention of an entity first appears. The suggestion is that mentioning the entity early in your web page might increase the chances of an entity being seen as \u201csalient\u201d to the article. Head-count This is basically the number of times the \u201chead\u201d word of the entity\u2019s first mention appears. \u201cHead word\u201d is not specifically defined in the article, but I take it to mean the word concatenated to its simplest form. Mentions This refers not just to the words/labels of the entity, but also to other factors, such as referrals of the entity (he/she/it) Headline Where when an entity appears in a headline. Head-lex Described as the \u201clowercased head word of the first mention.\u201d Entity Centrality The paper also talks about using a variation of PageRank \u2013 where they switched out web pages for Freebase articles! The example they shared was a Senate floor debate involving FEMA, the Republican Party, (President) Obama, and a Republican senator. After applying a PageRank-like iterative algorithm to these entities and their proximity to each other in the knowledge graph, they were able to change the weightings of the importance of those entities in the document. Putting These Entity Signals Together In SEO Without being specific to Google, here, an algorithm would create values for all the above variables for every entity that an NLP or named entity extraction program (NEEP) finds on a page of text (or, for that matter, all the entities recognized in an image). Then a weighting would be applied to each variable to give a score. In the paper discussed, this score turns into a 1 or 0 (salient or not salient), but a value from 0-1 is more likely. Google will never share the details of those weightings, but what the paper also shows is that the weightings are determined only after hundreds of millions of pages are \u201cread.\u201d This is the nature of large language learning models. But here are some top tips for SEO pros who want to rank content around two or more entities. Returning to the example \u201crestaurants near the Eiffel Tower\u201d: Decide on a \u201cdead\u201d term for each entity. I might choose \u201crestaurant,\u201d \u201cEiffel Tower,\u201d and \u201cdistance\u201d because distance has a valid meaning and article in Wikipedia . Cafe might be a suitable synonym for restaurant, as might \u201crestaurants\u201d in the plural. Aim to have all three entities in the header and first sentence. For example: \u201cRestaurants a small distance from the Eiffel Tower.\u201d Aim in the text to talk about the inter-relationship between these entities. For example: \u201cThe Jules-Verne restaurant is literally inside it.\u201d Assuming \u201cit\u201d clearly refers to the Eiffel Tower in the context of the writing, it does not need to be written out every time. Keep the language natural. Is This Enough For Entity SEO? No. Probably not. (You are welcome to read my book!) However, not all factors are in your control as a writer or website owner. Two ideas that do seem to have an impact, though, are linking content from other pages in context and adding schema to help with the definitions. Using Schema To Help Define Entities Further clarity might be given to search engines by using the \u201cabout\u201d and \u201cmentions\u201d schema to help a search engine disambiguate content. These two schema types help to describe what a page is talking about. By making a page \u201cabout\u201d one or two entities and \u201cmentions\u201d of maybe a few more, an SEO professional can quickly summarize a long piece of content into its key areas in a way that is ready-made for knowledge graphs to consume. It should be noted, though, that Google has not expressly stated one way or another whether it uses this schema in its core algorithms. I would probably add this schema to my article: <script type=\u201dapplication/ld+json\u201d> { \u201c@context\u201d: \u201chttps://schema.org\u201d, \u201c@type\u201d: \u201cWebPage\u201d, \u201c@id\u201d: \u201chttps://www.yoursite.com/yourURL#ContentSchema\u201d, \u201cheadline\u201d: \u201cRestaurants a small distance from the Eiffel Tower\u201d, \u201curl\u201d: \u201chttps://www.yoursite.com/yourURL\u201d, \u201cabout\u201d: [ {\u201c@type\u201d: \u201cThing\u201d, \u201cname\u201d: \u201cRestaurant\u201d, \u201csameAs\u201d: \u201chttps://en.wikipedia.org/wiki/Restaurant\u201d}, {\u201c@type\u201d: \u201cPlace\u201d, \u201cname\u201d: \u201cEiffel Tower\u201d, \u201csameAs\u201d: \u201chttps://en.wikipedia.org/wiki/Eiffel_Tower\u201d} ], \u201cmentions\u201d: [ {\u201c@type\u201d: \u201cThing\u201d, \u201cname\u201d: \u201cdistance\u201d, \u201csameAs\u201d: \u201chttps://en.wikipedia.org/wiki/Distance\u201d}, {\u201c@type\u201d: \u201cPlace\u201d, \u201cname\u201d: \u201cParis\u201d, \u201csameAs\u201d: \u201chttps://en.wikipedia.org/wiki/Paris\u201d} ] } </script> The exact choice of schema is as much a philosophical question as an SEO question. But think of the schema you use as \u201cdisambiguating\u201d your content rather than \u201coptimizing your content,\u201d and you will hopefully end up with more targeted search traffic. Editor\u2019s note: Dixon Jones is the author of Entity SEO: Moving from Strings to Things . More resources: Ranked Entities in Search Results at Google Patent Reveals How Google May Interpret Queries Based On Entity Information How Search Engines Work Featured Image: optimarc/Shutterstock Category SEO Technical SEO"
+ },
+ {
+  "url": "https://www.semrush.com/blog/entity-based-seo-strategy/",
+  "title": "What Are Entities & Why Do They Matter for SEO?",
+  "words": 2330,
+  "headings": [
+   [
+    "h2",
+    "What Is an Entity?"
+   ],
+   [
+    "h2",
+    "Why Are Entities Important in SEO & AI Search?"
+   ],
+   [
+    "h2",
+    "What\u2019s the Difference Between Entities and Keywords?"
+   ],
+   [
+    "h2",
+    "How to Optimize for Entities"
+   ],
+   [
+    "h3",
+    "1. Map Out Your Core Entities and Start Using Them"
+   ],
+   [
+    "h3",
+    "2. Build Out Topic Clusters"
+   ],
+   [
+    "h3",
+    "3. Add Schema Markup"
+   ],
+   [
+    "h3",
+    "4. Run an Entity Analysis"
+   ],
+   [
+    "h3",
+    "5. Avoid Common Pitfalls"
+   ],
+   [
+    "h2",
+    "Entity SEO in Action: End-to-End Example"
+   ],
+   [
+    "h2",
+    "Start Optimizing for Entities"
+   ]
+  ],
+  "text": "Have you ever noticed that Google correctly answers questions even when you\u2019re being vague or indirect? Just look at the result for this query: Despite not mentioning the specific building name, Google knew that we were asking about the Burj Khalifa\u2014and mentioned the exact year it was completed. Google\u2019s understanding of entities makes this possible. In this post, you'll learn what entities are, how they're used by search engines and LLMs, and how you can leverage entity optimization to improve your visibility in search results. What Is an Entity? An entity is a thing or concept that is singular, unique, well-defined, and distinguishable, such as a person, place, organization, or event. Continuing from our earlier example, the Burj Khalifa is an entity. Google knows that it\u2019s a building, and also knows other attributes like: Its status as the world\u2019s tallest building Its completion date Its location Its height When we asked \u201cwhen was the tallest building in the world built,\u201c Google connected all the pieces it knows about the Burj Khalifa to answer our question. In practice, Google maintains a massive database of entities called the Knowledge Graph \u2014a collection of billions of entities and the relationships between them. This helps Google understand the query whenever you search for something to surface the right information (or sources). Large language model tools (LLMs) like ChatGPT learn about entities through their training data.This helps them correctly associate brands, their products/services , and their expertise with relevant topics. Why Are Entities Important in SEO & AI Search? Entities are important because they\u2019re the foundation of how modern search engines and AI systems surface content based on what those systems know about the people, places, things, and concepts behind the words searchers use. When a user searches for something, the search engine or AI platform isn't simply looking for pages that contain their exact keywords. It's figuring out what they actually want to know, then finding content that covers that information well. Here's how strategically incorporating entities in your content benefits your site: Increases topical authority : When you signal relevant entities through your site, search engines and LLMs start recognizing your site as an authority for those topics. Which makes it easier to rank for relevant queries. Ensures accurate brand representation : When search engines and LLMs understand your brand as an entity with specific attributes and relationships, they're more likely to describe and represent your brand accurately in their responses. If you want to know how you\u2019re being mentioned in AI search, try Semrush's AI Visibility Toolkit . It tracks your visibility in Google\u2019s AI Mode, ChatGPT, Perplexity, and other AI platforms. What\u2019s the Difference Between Entities and Keywords? Entities and keywords might seem similar, but they're fundamentally different in SEO. A keyword is just a string of text\u2014the actual words someone types into a search bar. It's the surface-level language. An entity is the underlying concept or thing that a keyword refers to. It's the meaning behind the words. Entities also have three defining characteristics that keywords don't: Entities are unique and distinguishable : There's Tesla the car company and (Nikola) Tesla the inventor. New York the state and New York the city. Each is a separate entity that search engines can differentiate through context and attributes. Entities have attributes that describe them : A product has a manufacturer, price, and features. A person has a profession, location, and affiliations. A company has a CEO, a founding date, and industry. These attributes help search engines understand not just what an entity is, but also how it relates to other entities. Entities exist independently of language : Nintendo is the same company whether you search in English, Spanish, or Japanese Let\u2019s use a practical example to see how entities differ from keywords. Suppose you're writing a travel guide for Paris. Here are the keywords you might target: \u201cparis travel guide\u201d \u201cthings to do in paris\u201d \u201cparis vacation itinerary\u201d \u201cbest attractions in paris\u201d \u201cparis trip planning\u201d And here are the entities that could appear in that content: Paris Eiffel Tower Louvre France Seine River Croissant Paris Metro The Paris-related keywords are different variations of how someone might search for the same information\u2014they're the specific phrases you're trying to rank for. The entities are the actual landmarks, places, and concepts that are mentioned in your content. They tell search engines what your article is fundamentally about: a travel guide covering major attractions, transportation, and experiences in Paris. Including entities means your content has a better chance of ranking for related searches. How to Optimize for Entities Now that you understand what entities are and why they matter, let's cover how to actually optimize your website for them. 1. Map Out Your Core Entities and Start Using Them Start by making a list of the most important entities related to your business: Your brand entity : Your company name Product/service entities : The specific offerings you provide Primary topic entities : The topics you want to be an authority on Nice topic entities : Entities related to the specific content pieces present on your site For example, here's how this might look for Semrush: Brand entity : Semrush Product entities : AI Visibility Toolkit (for tracking visibility in LLMs), SEO Toolkit (for improving a website\u2019s rankings in search engines), Keyword Magic Tool (for researching keywords), etc. Primary topic entities : SEO, AI visibility, keyword research, backlink analysis , content marketing, competitive analysis, etc. Niche topic entities : Broken links, 404 errors, redirects, redirect chains, Google Search Console, crawl budget, etc. Listing out all these entities will help you understand which ones you should be reinforcing throughout your site. Once you've mapped out your core entities, integrate them strategically across key pages: On your homepage & about page , clearly establish your brand entity and what you do On your product/service pages , detail your product and service entities with specific attributes and use cases In your blog content , reinforce primary topic and niche topic entities where relevant 2. Build Out Topic Clusters One of the best ways to establish important primary topic and niche topic entities on your site is by creating topic clusters . A topic cluster is a collection of interlinked content pieces organized around a central topic (pillar page) with supporting articles (cluster pages) that dive deeper into specific subtopics. Your pillar page covers the broad topic comprehensively and introduces all the key entities related to that topic. For example, a pillar page on the basics of SEO would mention primary topic entities like \"keyword research,\" \"link building,\" \"local SEO,\" and \"technical SEO.\" Then, each supporting cluster page goes deep on a specific subtopic and covers niche topic entities. For example: A keyword research guide will cover entities like search volume, keyword difficulty, Keyword Magic Tool , and long-tail keywords A link building article will explore entities like backlinks, domain authority, guest posting, and broken link building A local SEO piece will mention entities like Google Business Profile, local citations, NAP consistency, and local pack A technical SEO guide will cover entities like site speed, crawl budget, XML sitemap, and robots.txt Also, make sure to link every pillar page to its cluster pages and vice versa. This internal linking shows search engines what topics your brand wants to be associated with. 3. Add Schema Markup Schema markup is structured data that explicitly tells search engines what entities are on your page and what their attributes are. For example, it would be easier for Google to extract meaning from structured data like this: [\u2026] Product: iPhone 17 Pro Brand: Apple Price: $1,199 Availability: In Stock Rating: 4.8/5 Description: Apple\u2019s Latest flagship smartphone with advanced camera system [\u2026] Than from natural language like this: You can buy the iPhone 17 Pro from Apple for just $1,199, and the good news is it's currently available for immediate shipping. This is Apple's latest flagship smartphone featuring an advanced camera system. Customers love it, giving it an average rating of 4.8 out of 5 stars. Benefits of using schema markup include: Faster and more accurate entity recognition Better chances of appearing in rich results (e.g., recipe cards) Stronger associations in Google's Knowledge Graph\u2014meaning Google can better understand and connect your brand, products, and topics, Higher likelihood of being cited by AI systems Here are some schema types you can use to establish entities on your site: Organization schema : Defines your brand entity with attributes like name, logo, social profiles, and contact information. This goes on your homepage and helps search engines understand who you are as an entity. Product schema : Marks up your product entities with details like name, price, availability, ratings, and reviews. Product schema is mostly relevant for ecommerce sites. This helps your products appear as distinct entities in search results and shopping features. Article schema : Identifies your content as articles with attributes like headline, author, publish date, and featured image. This helps search engines understand some of your topic entities. Breadcrumb schema : Shows the hierarchical structure of your site, helping search engines understand how your content and entities are organized If you're on WordPress, you can use plugins like Yoast or RankMath to automatically add schema to your pages and posts with just a few clicks. If your website is custom-built, get help from a developer on your team to implement schema markup. Run a free SEO audit for a quick check on your schema. For a full review, use Semrush Site Audit \u2014 the \"Markup\" report shows any invalid items to address. 4. Run an Entity Analysis Run an entity analysis to see which entities are present in your content\u2014and whether those match your intended focus. If you notice that some important entities are missing, you can tweak your content to include them. You can use either Google's Natural Language API or TextRazor for entity analysis. I prefer TextRazor because I find the way it formats the results to be very user-friendly. It shows entities and the sentences they appear in. Here's how to use TextRazor for entity analysis: Go to textrazor.com Scroll all the way down to find a text box Paste the content you want to analyze Click \u201c Analyze \u201d Once the analysis is complete, you'll see individual sentences that contain entities, with each entity highlighted. And a \"Topics\" section to the right that shows the main topics detected across your entire content excerpt. Review this list to see if your target entities are present. If your entities are missing or barely mentioned, that's a signal you need to revise your content. Consider adding new sections, including those missing entities, and discussing their attributes. 5. Avoid Common Pitfalls Entity optimization is straightforward in theory, but there are a few common mistakes that can actually hurt your efforts: Stuffing entities unnaturally : Just like keyword stuffing , cramming entity names into every sentence makes your content unreadable. Mention entities where they naturally fit within the context of what you're discussing. Adding irrelevant entities :More entities doesn't automatically mean better optimization. Including irrelevant entities can dilute focus and confuse search engines. Stick to entities that genuinely matter for the topic. Inconsistent entity naming : Use consistent names for your brand, products, and other key entities across all online properties. If you're \"ABC Marketing\" on your homepage but \"ABC Marketing Agency\" on LinkedIn and \"ABC Mktg\" on Twitter, you're making it harder for search engines to recognize you. Entity SEO in Action: End-to-End Example Let\u2019s go through an example to see how a business can optimize for entities step by step. Imagine you run a wellness company called Mindfulness that conducts meditation sessions, yoga classes, and sells wellness products (yoga equipment, meditation cushions, and aromatherapy supplies) through your website. The problem? When people search for \"online yoga classes\" or \"how to meditate properly,\" your company barely shows up\u2014even though you've been in business for five years. Here's how you can use entity SEO to help Google and AI systems understand who you are, what you do, and what topics you\u2019re an expert on. So you're far more likely to be cited or ranked for queries about relevant topics.: First, you\u2019ll start by identifying the key entities related to your business:. Brand entity : Mindfulness Product/service entities : Online yoga classes, guided meditation sessions, yoga mats, meditation cushions, aromatherapy diffusers, essential oils, etc. Primary topic entities : Meditation, mindfulness, yoga, stress relief, wellness routine, breathing techniques, etc. Niche topic entities : Chakra balancing, posture correction, sound healing, relaxation exercises, etc. After mapping out your core entities, you\u2019ll weave them naturally throughout your site: On your homepage and about page, reinforce your brand entity and what you do On your service pages, incorporate service entities with specific benefits and what makes your approach unique On your product pages, weave in product entities, along with images, price, descriptions, and use cases On your blog, build topic clusters around primary topic and niche topic entities to signal your authority for those topics Once you\u2019ve incorporated entities into your content, you can reinforce your entities further by: Adding Organization, Product, and Event schema markup to more clearly identify certain entities Running an entity analysis with TextRazor to check that your target entities are actually used on your site Maintaining consistent entity information (brand, products, services, and topics) across your website and social media Start Optimizing for Entities As we move into an AI-driven search era, visibility isn\u2019t only about keywords anymore. It\u2019s about helping Google and LLMs understand who you are, what you do, and how you connect to the topics users care about. The steps we\u2019ve covered in this article are simple to implement. So what are you waiting for? Get started with entity optimization today. Start by checking how you\u2019re being mentioned in AI answers with our free AI visibility tool. To see how AI platforms describe your brand over time, Semrush\u2019s AI Visibility Toolkit adds sentiment analysis and prompt-level monitoring."
+ },
+ {
+  "url": "https://www.searchenginejournal.com/ask-an-seo-what-does-entity-optimization-mean/575597/",
+  "title": "What Does 'Entity Optimization' Mean? \u2013 Ask An SEO",
+  "words": 2095,
+  "headings": [
+   [
+    "h2",
+    "The Goal Of Entity Optimization"
+   ],
+   [
+    "h3",
+    "To Create A Stable, Unambiguous Identity"
+   ],
+   [
+    "h3",
+    "To Strengthen Machine-Readable Identity Across The Internet"
+   ],
+   [
+    "h3",
+    "So When Someone Searches For Your Brand, They Receive Info About Your Whole Brand, Or What Is Linked To It"
+   ],
+   [
+    "h3",
+    "It Creates A Graph Of Data Points Where Everything Connects To Each Other And To The Main Brand"
+   ],
+   [
+    "h2",
+    "Why Schema Is Often The First Thought When Looking At Technical Entity Optimization Improvements"
+   ],
+   [
+    "h3",
+    "Schema Should Be Used To Reinforce Identity And Relationships"
+   ],
+   [
+    "h2",
+    "What You Can Do To Optimize Your Entities"
+   ],
+   [
+    "h3",
+    "Technical Identifiers"
+   ],
+   [
+    "h4",
+    "Co-Occurrence Patterns"
+   ],
+   [
+    "h3",
+    "Entity-First Website Architecture"
+   ],
+   [
+    "h4",
+    "Taxonomy"
+   ],
+   [
+    "h4",
+    "Internal Linking"
+   ],
+   [
+    "h4",
+    "Breadcrumbs"
+   ],
+   [
+    "h4",
+    "Feeds"
+   ],
+   [
+    "h4",
+    "Entity homes"
+   ],
+   [
+    "h2",
+    "Make It Easy To Crawl And Render"
+   ],
+   [
+    "h2",
+    "Where Do You Start With Entity Optimization?"
+   ]
+  ],
+  "text": "For this week\u2019s Ask An SEO, the question asked was: \u201cFrom a technical standpoint, what does \u2018entity optimization\u2019 actually mean beyond adding schema?\u201d To answer this, first of all, let\u2019s establish, in information retrieval, that an entity is a uniquely identifiable \u201cthing\u201d that exists independently of the words used to describe it. Entity optimization is about building connections and relationships between those concepts and \u201cthings\u201d using an ecosystem called the Knowledge Graph , and ensuring your digital footprint is aligning with your brand and products in a way that removes any ambiguity from the search engines or large language models. This is increasingly important now LLMs are trying to build a picture of your company. Remember, LLMs likely rely on language modeling and relationships between concepts to generate responses. By strengthening your brands\u2019 entities, you are increasing the likelihood of those responses being about your related products or services. The Goal Of Entity Optimization Entity optimization is critical for improving online discovery in our modern search world. To make sure you are optimizing your brands for bots and algorithms to understand them, you need to keep in mind the goals of entity optimization. To Create A Stable, Unambiguous Identity The primary goal of entity optimization is to create certainty around what an entity is and how it relates to other entities. It is important that when a website refers to a brand, and so does an online directory, the bots can tell they are definitely the same entity. This means keeping references to brands and their products consistent across the internet. To Strengthen Machine-Readable Identity Across The Internet Whereas it might be easy for humans to infer that a website referencing a brand but spelling the name wrong doesn\u2019t refer to a completely different entity, that isn\u2019t necessarily the case for search engines. Equally, a company only updating their address on their website after a move, but leaving the old address on their suppliers\u2019 websites, might be enough for the bots to consider them two different businesses, or with two offices concurrently. The goal of entity optimization is to make it easy for the bots to determine a brand\u2019s identity online. So When Someone Searches For Your Brand, They Receive Info About Your Whole Brand, Or What Is Linked To It Entity optimization raises the likelihood that searchers of your brand will be given a full and complete picture of your organization. It will help the bots know that an \u201ciPad\u201d is a product of \u201cApple.\u201d So when searchers look for [Apple products], the search engines and LLMs are confident that an iPad fits that criteria. It Creates A Graph Of Data Points Where Everything Connects To Each Other And To The Main Brand Essentially, entity optimization at its heart is about creating a graph of data points that are related to each other. Each of the \u201cnodes\u201d is a facet of your brand, i.e. the owners, the products, the office address, the blog authors. Entity optimization is about creating a spider web of all of the critical entities that are involved in your brand, connecting them to each other and to the main node that is your brand entity. Why Schema Is Often The First Thought When Looking At Technical Entity Optimization Improvements Given what we\u2019ve identified entity optimization to be about, it\u2019s easy to see why schema is often the first thought. Schema.org structured data markup is essentially a machine-readable labeling system. It gives context and meaning to words and media on a page. It shows what type of entity they refer to and can show what other entities they are linked to. It\u2019s also easy to implement. There are many guides online, or even CMS plug-ins that help with applying schema markup to websites and tests to show if it has been implemented properly. On the face of it, it is a critical way of strengthening an entity\u2019s identity. However, it might not be pulling the weight you think it is. Google doesn\u2019t simply trust schema declarations; it cross-verifies them against off-site signals. Schema Should Be Used To Reinforce Identity And Relationships Schema markup is very helpful in entity optimization, but the key to utilizing it effectively for this is in the relationships it portrays. Many schema types allow you to show how an entity is related to another. For example, \u201cThing\u201d schema has a property called \u201csameAs\u201d which is the \u201c URL of a reference Web page that unambiguously indicates the item\u2019s identity, e.g., the URL of the item\u2019s Wikipedia page, Wikidata entry, or official website.\u201d For example, if you are trying to communicate that an author \u201cJessica Smith\u201d on your blog post and the \u201cJessica Smith\u201d of a LinkedIn profile are, in fact, the same person. You could use the sameAs property to link to Jessica Smith\u2019s LinkedIn profile. You could also do this to reference her biography page on another website, or write up in a journal. For entity optimization, the key is to use schema to mirror a real knowledge graph. The purpose of it is to show connections and alternatives between entities. Yes, schema is helpful for generating rich results, but for entities, the purpose needs to be demonstrating relationships. What You Can Do To Optimize Your Entities So, if schema isn\u2019t the be-all of entity optimization, what else can you do to help? Modern search systems attempt to reconcile multiple references into a single canonical entity. Whereas a lot of entity optimization happens external to your website, like through social profiles and third-party mentions, we\u2019re going to look at what you can do specifically through the technical implementation of your site. Technical Identifiers Consistency is key both on- and off-site. From a tech standpoint, this can mean consistency in how objects or elements are referred to in the code, especially if they relate to the same entity. For example, always referring to the things your ecommerce site sells as \u201cproducts\u201d \u2013 whether in content or code \u2013 reinforces that they are, in fact, products and are referencing the same entity. For example, using identifying codes like SKUs, ISBNs, and GTINs can help the search engines see the uniqueness of your different products. Using them consistently across your site, wherever your product is referenced, can aid in disambiguating products. Codes like these are unique to each product, whereas the words you use to describe them might not be. Co-Occurrence Patterns Search engines are trying to identify if multiple references across the web are referring to the same entity. They compare signals such as names, addresses, social profiles, topical context, and co-occurrence patterns to verify identity. In entity optimization, co-occurrence refers to the repeated appearance of two or more entities within the same contextual environment. Modern search engines and LLMs are understood to rely on \u201c embeddings \u201d to understand relationships between entities. Instead of looking only for exact keyword matches, they map concepts into \u201cvector spaces\u201d where related topics naturally sit closely together. If a website consistently discusses phones alongside memory, camera specs, and battery life, the search engines will begin to link those entities semantically. Consider how often related entities occur near each other in your content or site architecture. Place entities in contexts that clearly describe their relationship. For example, \u201cSamsung is a well-respected phone manufacturer, and its newest model, the Samsung Galaxy S26 series, is the flagship line-up for 2026.\u201d Also, place highly related entity names within the same pages, tables, and lists. By showing that these two subjects are often referred to together, it denotes a relationship between the two. For example, if you always refer to two of your products together, the yellow version and the blue version, it can help cement the idea that they are the same product just in different colorways. Although it may sound a bit like SEO 101, the hierarchy of page content can be useful for the bots to understand relationships between concepts. The heading hierarchy signals relationships between entities and topics. For example, something being referenced in the <h1> could indicate that it is key to the other entities that are nested under the <h2> or <h3>. Entity-First Website Architecture When looking at optimizing your website to aid with entity recognition, look at the foundation of how the site is structured. Taxonomy The structural hierarchy of a website can really reinforce the relationships between entities. Introducing a taxonomy to your site \u2013 essentially classifying elements like products or blog posts in their relationship to each other \u2013 can be a good method of showing the discrete entities in your site and their topical hierarchy. A taxonomy replaces keyword targeting with a more comprehensive topical framework. By systematically linking subtopics back to a main category, you signal to search engines that your website possesses deep, structured expertise on a specific entity. Internal Linking Having a taxonomy in place makes internal linking a lot easier to plan. It enables you to reinforce relationships between entities by linking their pages together. For example, a clothing store may have a taxonomy that lists all T-shirts under \u201cclothing\u201d and all dresses under \u201cclothing.\u201d By linking both the \u201cClothing\u201d homepage to the \u201cT-shirts\u201d and \u201cDresses\u201d pages, you are showing that they are both children of \u201cClothing\u201d and siblings of each other. Breadcrumbs This structural hierarchy can also be reinforced through breadcrumb links and schema. This clearly defines the hierarchy between parent and children entities. Feeds Feeds, such as a Google Merchant Feed , structure information about your products in an easily machine-readable format. As long as the information for a product contained in the feed matches the information for that product on the site, and elsewhere, it is another way of encouraging certainty. The feeds are a known quantity. They are structured data that the search engines are primed to receive and digest. As with everything SEO, entity optimization is about small, impactful signals. For ecommerce sites, a feed containing your product data is another nudge towards understanding the products as entities. Entity homes Search engines often look for a canonical \u201centity home\u201d that acts as the primary source of truth for a specific entity. A final way to technically aid in entity optimization is by creating these entity homes for your core entities on your site. Set up pages full of information about these entities, whether they are products, brands, or people. This shows they are important in their own right and enables the structural linking we mentioned earlier. For example, author pages can help to demonstrate that each writer for the blog is a real, separate person. Linking up their articles to their author page can show the relationship between them and their works. Equally, linking their page to items on the site that speak to their area of expertise can help reinforce their specialisms \u2013 think linking your sports writer to the sports section of the site. Similarly, linking them to their external profile on social media or other journalism sites can show what else they have written. Make It Easy To Crawl And Render Remember, the key to ensuring your technical SEO aids entity optimization lies in whether the bots can access the content you need them to find. This includes choosing Server-Side Rendering (SSR) for your important content to ensure LLMs can easily access your content. Although Googlebot can render JavaScript , it can be good practice to keep content easily accessible and not use JavaScript. By keeping content easily accessible, it also means faster server response times so AI search bots can fully crawl and map your entire entity ecosystem. Where Do You Start With Entity Optimization? Entity optimization isn\u2019t a single tactic. It\u2019s an ongoing process of making it easier for search engines and LLMs to understand who you are, what you offer, and how everything connects. Schema is a good starting point, but it\u2019s only one piece. The real work is in consistency across your code, your content, your site architecture, and your presence across the web. The more coherent and verifiable your entity signals are, the less ambiguity the bots have to deal with. Start with the basics: consistent identifiers, clear taxonomy, entity homes for your core pages. Then look at how your content places related entities in context with each other. Small, deliberate signals add up. More Resources: Entities In SEO: What Are They And Why Do They Matter? Merging SEO And Content Using Your Knowledge Graph To AI-Proof Content Key Patterns Reveal The Future Of AI Discovery [Data Study] Featured Image: Paulo Bobita/Search Engine Journal Category SEO Ask an SEO"
+ },
+ {
+  "url": "https://sitebulb.com/resources/guides/understanding-entity-seo-enhancing-your-search-visibility-through-entities/",
+  "title": "Entity SEO: Enhancing Search Visibility With Entities | Sitebulb",
+  "words": 3836,
+  "headings": [
+   [
+    "h1",
+    "Understanding Entity SEO: Enhancing Your Search Visibility Through Entities"
+   ],
+   [
+    "h2",
+    "Contents:"
+   ],
+   [
+    "h2",
+    "What Actually Is an Entity?"
+   ],
+   [
+    "h3",
+    "What Doesn\u2019t Qualify as An Entity?"
+   ],
+   [
+    "h4",
+    "An Adjective without a noun"
+   ],
+   [
+    "h4",
+    "A number without context"
+   ],
+   [
+    "h4",
+    "Exceptions to the rule"
+   ],
+   [
+    "h3",
+    "Entities within entities"
+   ],
+   [
+    "h3",
+    "Entities aren\u2019t finite"
+   ],
+   [
+    "h2",
+    "Okay, But What Is a Topic?"
+   ],
+   [
+    "h2",
+    "The Relationship Between Topics and Entities"
+   ],
+   [
+    "h3",
+    "My SEO Advice:"
+   ],
+   [
+    "h2",
+    "Entities in SEO"
+   ],
+   [
+    "h3",
+    "The role of entities in today\u2019s search algorithm"
+   ],
+   [
+    "h3",
+    "How entities have evolved: The Google Knowledge Graph"
+   ],
+   [
+    "h4",
+    "1. As a database"
+   ],
+   [
+    "h4",
+    "2. As a SERP feature"
+   ],
+   [
+    "h3",
+    "My SEO Advice:"
+   ],
+   [
+    "h3",
+    "Semantic search"
+   ],
+   [
+    "h3",
+    "Did you know?"
+   ],
+   [
+    "h3",
+    "Semantic relationships"
+   ],
+   [
+    "h2",
+    "How to Create Semantic Relationships Between Your Entities Using On-Page SEO and Content"
+   ],
+   [
+    "h3",
+    "Keyword research & usage"
+   ],
+   [
+    "h3",
+    "Content structure"
+   ],
+   [
+    "h4",
+    "Strategic placement of keywords"
+   ],
+   [
+    "h3",
+    "My SEO Advice:"
+   ],
+   [
+    "h3",
+    "Internal Linking"
+   ],
+   [
+    "h3",
+    "My SEO Advice:"
+   ],
+   [
+    "h3",
+    "Anchor text"
+   ],
+   [
+    "h3",
+    "My SEO Advice:"
+   ],
+   [
+    "h3",
+    "Multimedia"
+   ],
+   [
+    "h3",
+    "Pro Tip:"
+   ],
+   [
+    "h3",
+    "Reinforcing Your Entities with Technical SEO"
+   ],
+   [
+    "h4",
+    "Structured data for entity seo"
+   ],
+   [
+    "h4",
+    "SERP features/rich results and entity SEO"
+   ],
+   [
+    "h3",
+    "My SEO Advice:"
+   ],
+   [
+    "h3",
+    "Reinforcing entities with off-page SEO"
+   ],
+   [
+    "h4",
+    "Backlinks"
+   ],
+   [
+    "h2",
+    "Using AI for Entity SEO"
+   ],
+   [
+    "h2",
+    "It All Comes Together: User Intent"
+   ],
+   [
+    "h3",
+    "Starters (Informational Intent)"
+   ],
+   [
+    "h3",
+    "Mains (Navigational, Commercial and Informational Intent)"
+   ],
+   [
+    "h3",
+    "My SEO Advice:"
+   ],
+   [
+    "h3",
+    "Desserts (Transactional Intent)"
+   ],
+   [
+    "h2",
+    "Conclusion"
+   ],
+   [
+    "h3",
+    "Final Author's Note: Not all Entities are Known"
+   ],
+   [
+    "h2",
+    "You might also like:"
+   ],
+   [
+    "h2",
+    "Articles for every stage in your SEO journey . Jump on board ."
+   ],
+   [
+    "h2",
+    "Related Articles"
+   ],
+   [
+    "h3",
+    "Sitebulb Desktop"
+   ],
+   [
+    "h3",
+    "Sitebulb Cloud"
+   ]
+  ],
+  "text": "New The Sitebulb MCP is live. Bring your crawl data into Claude & ChatGPT. The Sitebulb MCP is live. See how it works \u2192 SEO Structured Data Understanding Entity SEO: Enhancing Your Search Visibility Through Entities Izzy Brand Published November 4, 2024 We\u2019ve been looking forward to this one\u2026 Thank you Izzy Brand for sharing her guide to entity SEO, complete with SEO advice and food analogies. What\u2019s not to love?! If you\u2019ve been working in SEO, there are some terms you\u2019ve probably come across: \u201cTopical Authority\u201d, \u201cSilos\u201d, \u201c Topic Clusters \u201d, \u201cSemantic Search\u201d - and the dreaded \u201cEntities\u201d. All of these encompass the topic of Entity SEO. The concept of Entity SEO is not a simple one and can drive you quite mad if you\u2019re trying to figure it out through bits of information found scouring the web. I\u2019m hoping to make that a little less frustrating with this article - and much more rewarding. (There\u2019s only room for one crazy SEO in this industry - thank you very much!) For us to delve into Entity SEO we need to break down exactly what an entity is - and is not. Contents: What actually is an entity? What doesn\u2019t qualify as an entity? What is a topic? The relationship between topics and entities The role of entities in today\u2019s search algorithm How to create semantic relationships between your entities Using AI for entity SEO User intent What Actually Is an Entity? An entity \u2013 is a \u201cthing\u201d. Am I going to elaborate further? (No, just kidding - it\u2019s my job). The definition of an entity is: A thing (told you) or concept that is singular , unique , well-defined, and distinguishable from other entities . Some examples of entities in everyday context: A person - Patrick Swayze A place - Your Mom\u2019s House (I couldn\u2019t help myself here) Brown University An organisation - Google An event - Brighton SEO A concept - Quantum Physics A thing (here we go again) - Brown Bear Granted, this one can be a bit tricky as it can refer to almost anything ; such as an animal, a product or an item, but this also covers a wide range of other entities, too. This makes it a good default for situations where you\u2019re unsure of how to classify your entity (try to keep the details as accurate as possible, where you can). What Doesn\u2019t Qualify as An Entity? As mentioned above, an entity is a specific, identifiable piece of information that is well-defined and distinguishable. So this a broad list \u2013 it might be easier to start from, what isn\u2019t an entity. The list is probably just as endless, but a good rule of thumb is that an entity isn\u2019t: An adjective without a noun A number without context An Adjective without a noun Adjectives are used to describe qualities or characteristics but do not stand as entities on their own. For example: \u201cbrown\u201d This word describes a colour but does not refer to a specific, identifiable object, person or concept . \u201cBrown\u201d can become part of an entity when paired with a noun . For example, \u201cbrown bear\u201d (thing) or \u201cBrown University\u201d (place) A number without context Numbers on their own do not qualify as entities unless they are given context, which identifies them as specific or meaningful concepts. For example: 3 By itself, 3 does not provide any specific, identifiable information. But when given context, for example: \u201c3 Blind Mice\u201d, the information becomes identifiable as a beloved, if not slightly morbid, children's rhyme. Exceptions to the rule As with all rules, there are exceptions. When a number is used frequently enough within context, it becomes identifiable outside of context. Prime examples are our beloved status codes: 200, 404, 301 and so forth. 404s in particular are a great example, as we often say \u201cI visited the page and got a 404\u201d - the number itself suffices and the whole entity \u201c404 status error\u201d does not need to be defined. The number has been used so frequently, it\u2019s an entity in itself: Entities within entities That\u2019s right, it\u2019s called entity-ception (in my mind, anyway). An entity is not necessarily a standalone concept - it can be composed of multiple additional entities. For example, a 2013 MacBook has the following specs: MacBook Pro (Retina, 13-inch, Late 2013) Year : 2013 Processor : 2.4 GHz Dual-Core Intel Core i5 Memory : 8 GB 1600 MHz DDR3 Storage : 256 GB SSD Display : 13.3-inch Retina Display Display Technology : Samsung PLS (Plane-to-Line Switching) Graphics : Intel Iris 5100 Battery Life : 9 hours Weight : 3.46 pounds From the specs alone, 2 additional entities Samsung and Intel can be seen, but this doesn\u2019t change the MacBook being classified as an Apple Product . In the context of the MacBook, it is a defined entity, composed of multiple other defined entities. Entities aren\u2019t finite The list of entities out there is not finite, as new ideas and concepts are thought up and technology advances - the list of entities continues to grow and evolve. Take our MacBook example above, and compare the specs to a newer model: MacBook Pro (16-inch, 2023) Year : 2023 Processor : 2.6 GHz 6-Core Intel Core i7 Memory : 16 GB 2666 MHz DDR4 Storage : 512 GB SSD Display : 16-inch Retina Display Display Technology : LG IPS (In-Plane Switching) Graphics : AMD Radeon Pro 5300M Battery Life : 11 hours Weight : 4.3 pounds We now see three additional entities: Intel , LG and AMD , but this still remains an Apple product . This newer entity also does not replace the previous one , they are each an individual entity in their own right, as they have definable differences . As can be seen by the difference in specifications alone. A great example of this in SEO is trends . When you categorise trends in SEO, they often start out as topics - encompassing related ideas and discussions. As these discussions become more specific, the idea around the topics becomes more distinct, identifying these trends as distinct entities. Okay, But What Is a Topic? A topic, by definition, is a subject or theme that something is about. It is quite broad and can encompass various subtopics. The Relationship Between Topics and Entities Topics are broad subjects that are comprised of various entities. Entities are specific, identifiable pieces of information within those topics. For Example, SEO can be classified as both a topic and an entity, depending on which context it\u2019s used in. As a topic, it is considered a broad discipline that involves various strategies, techniques and practices - entities such as Google (company), Brighton SEO (event), Keyword Research (thing) and Backlinks (thing) are examples of entities that make up this topic. As an entity , SEO can be defined as a specific, identifiable field of study or a profession that is globally recognised. My SEO Advice: By leveraging the relationship between topics and entities, you can create well-structured, informative content that is both optimised for users and search engines. Entities in SEO Entities play a crucial role in today\u2019s search landscape, as they help search engines like Google better understand and categorise content more effectively. The role of entities in today\u2019s search algorithm As mentioned above, search engines use entities to better understand the content on a webpage. Using recognised entities allows search engines to comprehend the context and relevance of the information, this enables it to match content to user queries, more easily and accurately. This feat is made possible thanks to the Google Knowledge Graph. How entities have evolved: The Google Knowledge Graph Now there are two versions of the \u201cGoogle Knowledge Graph\u201d: 1. As a database The Google Knowledge graph exists as a database composed of an extensive collection of interconnected entities, their attributes and their relationships between each other. Imagine a giant spiderweb - with the threads connecting related entities \u2013 this brings a new perspective to the World Wide Web, doesn\u2019t it? It\u2019s the Google Knowledge Graph that maps out and connects entities to serve their related content to users based on the search queries entered. 2. As a SERP feature I\u2019m sure you\u2019ve come across the Knowledge Panel in your search adventures. Here\u2019s an example of what it looks like: The information present in the above example is the information present in the knowledge graph around the entity Ahrefs . Under the \u201cPeople Also Search For\u201d, you can see all the similar entities that the knowledge graph has associated with Ahrefs. The best way to achieve this search result is to establish your site\u2019s entities using structured data , which we\u2019ll cover a little later. My SEO Advice: Creating a Google Business Profile (formerly known as Google My Business) allows you to cover additional entities within your knowledge panel, such as ratings and physical address (useful for eCommerce sites with a physical location). Semantic search Another great example of something that can be considered both a topic and an entity : semantic search. This refers to both the range of strategies, techniques and advancements in Search Engines aimed at improving search results (topic) AND the process whereby search engines such as Google aim to improve relevance of search results, by understanding the intent behind a user\u2019s query. By taking contextual meaning into consideration - this makes it a specific and identifiable concept (entity). The latter is done by creating semantic relationships between the content on your pages. Did you know? The concept of a search engine with semantic search capabilities has been around since Google\u2019s inception, with the concept of PageRank being present since incubation. You can read the full paper on this here . Semantic relationships Semantic relationships are the connections between words, phrases and entities, which help define their meaning by providing context (very much like how numbers cannot be an entity without context - this emphasises that). In SEO, semantic relationships refer to the connections between different entities and concepts within a website\u2019s content and across the World Wide Web (think of our spider web analogy). The possibility for semantic relationships can be very broad - essentially anything can be semantically related, depending on context . Here is where we head back to our topics ; a good rule of thumb is that any entities within the same topic are semantically related to each other . How to Create Semantic Relationships Between Your Entities Using On-Page SEO and Content Keyword research & usage Identify key entities and topics by using keyword research tools to find relevant entities & topics related to your content. Sort these keywords into their corresponding topics - this where you\u2019ll have heard the term Content Silo. A content silo is, as its name implies - a section or category of content pieces that are focused around the same topic . From here, further categorise and sort your keywords into the individual entities they cover - this is what is referred to as a \u201c Keyword Cluster \u201d We can take our \u201cSEO as a topic\u201d as an example: Content Silo Topic: SEO Entity 1: Internal Linking Entity 2: Backlinks Entity 3: Anchor Text The idea here is to take this information and create content around the silo topic (SEO) that includes information around the entities within the cluster. Content structure Strategic placement of keywords Incorporate your keywords naturally into titles, headings, meta descriptions, and throughout the body content. Use your headings (H1, H2, H3) to define the entities you wish to address to reinforce your topic. If you find there are too many entities you need to cover, and including them all would be overwhelming or just too long and affect readability, this is where separate content pieces around the topic, covering a different set of entities, can be created. You can then create relationships between those entities by using Internal Linking. My SEO Advice: Connect your GSC to Sitebulb to extract all the keywords your site is already ranking for, by enabling keyword analysis. You can use this list to identify which entities search engines have associated you with and ask yourself: are they relevant to your site?If yes: Are you adequately providing supporting information for these entities by incorporating them into topics or themes for content? If no: Review your site's content to determine what could be giving this impression. Bonus SEO Advice from Me (Winner winner, chicken dinner):The Keywords Report in Sitebulb allows you to review which URLs are ranking for which terms. If you notice a specific page ranking for the wrong term, then you know where to start your investigation! Internal Linking Link to content that is conceptually relevant to your topic and entities. This creates a relationship between those topics & entities, helping both users and search engines navigate and understand the relationship between them. My SEO Advice: You can use Sitebulb to look for opportunities to optimise existing internal linking . Anchor text Good anchor text can make or break an internal link, and as a rule should: Be descriptive Include relevant keywords & entities Be located in a contextually relevant location Having descriptive anchor text is all good and well, but having it placed willy-nilly renders all benefits moot. Make sure it's placed in a place that makes sense and gives a clear indication of the \"destination\" of the link. For example, if your content is promoting a product, and you have a link such as \"buy this super cool t-shirt here\" but when you click it does not take you to a place where you can perform the implied action (buying the super cool t-shirt), it will not provide any benefit and may be detrimental to the overall distribution of topical authority on your site. Also, no one likes that guy. Don't be that guy. :) My SEO Advice: You can analyse internal links and their associated anchor text using Sitebulb\u2019s Link Explorer . Multimedia Use multimedia such as images, videos, and infographics.This not only helps illustrate concepts and entities but makes the content more engaging.You can even instruct search engines what your media is about by including alt text. Pro Tip: Learn how to audit your on-page content, including headings and alt tags, with Sitebulb Reinforcing Your Entities with Technical SEO Structured data for entity seo Structured data , such as Schema markup, helps search engines understand the entities and relationships within your content. It achieves this by literally informing search engines on what entities you are covering . For example, let\u2019s have a look at Patrick Swayze from our initial list of every day entities as an entity in Schema markup: Depending on your entity \u2013 use appropriate types such as \"article,\" \"person,\" \"product,\" \"event,\" \"thing,\" and so on. The more variables you include in your Schema, the more \"instructions\" you are essentially providing to search engines. In theory, the better your instructions, the more knowledgeable you are deemed around that entity, and in turn, the broader topic you are referring to within your content. This also increases the potential for rich results. SERP features/rich results and entity SEO These are enhanced search results with \"rich snippets\" that display additional information (they are \"information rich\"). For example, implementing event Schema can potentially result in ranking for an \"Event\" rich result - let\u2019s have a look at brightonSEO as an example from our entity list: My SEO Advice: Learn how to audit the structured data on your site with Sitebulb Reinforcing entities with off-page SEO Backlinks If you read the paper I shared about Google\u2019s inception, you\u2019ll understand exactly how backlinks help create relevance and context around entities. If you didn\u2019t read it, that\u2019s also fine \u2013 I\u2019ve got you. Backlinks and backlinking anchor text play a very similar role to internal linking and anchor text in the sense of creating and reinforcing relationships between entities - except the entities in question are located on a different site. Backlinks are a sign of topical authority - in layman's terms, someone has deemed your site\u2019s information valuable and accurate enough around that entity to link back to it. Using AI for Entity SEO Advancements in AI have allowed for many SEO tasks to be streamlined, but is especially useful for entity SEO - because at the core of it, AI serves almost the same purpose as a semantic search engine - providing results based on contextual interpretation of a query. Thus, its database of entities is already quite vast. You simply need to log on to ChatGPT and ask it to provide you with related entities to your topic . If you ask nicely, it will even provide the recommended Schema markup type for your entities and help you produce the code. (2024; what a time to be alive!). It All Comes Together: User Intent Let\u2019s take everything we\u2019ve learned above and round it up into an easy to remember example: Food. Think of your website as a restaurant. When you think of a restaurant, what entities pop up? Food (of course), consider this your content, product or service A Chef (entity type: person) who cooks the food. Consider this your site\u2019s authors, contributors, or admin Different courses, such as starters, mains, desserts and sides - these would be your content or topic silos Individual dishes within each of your silos, these are your individual topics Ingredients for each individual dish, these are your entities Now, one thing about cooking is that the same ingredients often appear in different dishes. It\u2019s the order in which these ingredients are combined that produces the final dish. Entities also follow the same concept. Each ingredient is a unique, identifiable thing (entity), and the sequence in which you combine these entities (context) forms the final dish (topic) . And combining those same entities in a different sequence (different context) produces a different final dish. Now, because those dishes use the same or similar ingredients (contain the same entities ), those dishes (topics) are semantically related. How blown is your mind right now? We can take this metaphor even further by classifying our courses by intent. In a restaurant, different courses cater to the various stages of the diner\u2019s meal (user journey). For example: Starters (Informational Intent) The purpose of a starter is to whet the diner\u2019s appetite and provide a light introduction to the meal. Informational content aims to educate users at the beginning of their journey by addressing queries where a user is searching for answers to specific questions. On your website, these could be blog posts, how-to guides, or informational articles that explain basic concepts or provide introductory information. Example: a starter of nachos could be compared to a beginner's guide to keyword research. Mains (Navigational, Commercial and Informational Intent) The main course is the heart of the meal and satisfies the diner\u2019s \u201cprimary hunger\u201d. Navigational content helps users to find specific information they are actively searching for. In the context of commercial intent, your main content would aim to convert users by providing more in-depth information about products or services. In the context of mains for informational content - similar to how starters on a menu are often a half-portion of the main course version, \u201cstarter\u201d informational content could be briefer pieces of information, which then link to the main course version .Building on our example above, a full portion of nachos would be an advanced guide to keyword research. My SEO Advice: This is where your internal linking comes in, to create the relationship between the starters and the mains. Desserts (Transactional Intent) Desserts conclude the meal and should leave the diner feeling as though they\u2019ve got what they wanted. This is exactly how transactional intent content works to conclude the user journey once they\u2019ve had their fill of information (starters and mains), by targeting users who are ready to take action. Conclusion In the dynamic world of Search, understanding the concept of entities and their relationships is crucial if you wish to enhance your search visibility through relevance . By leveraging entity-based SEO, you can create well-structured, informative content that aligns with how search engines interpret and categorise information. Much like a restaurant menu, your website's content should cater to various user intents, guiding visitors through their journey from initial curiosity to final action. As you continue to develop your SEO strategy, remember that the landscape is continually evolving; similarly, there is an ever-expanding list of entities in our world. Stay curious, keep learning, and adapt to new trends and technologies. By doing so, you\u2019ll maintain your site\u2019s topical authority and enhance its visibility in the competitive search environment. Final Author's Note: Not all Entities are Known What we\u2019ve learned here about the relationships between entities and their contextual meanings applies to many aspects of life. Just as in SEO, where the significance of entities and their connections must be understood, the same principle holds true for real-world interactions. Some events and their connections to entities may not always be immediately apparent. So, be kind and be patient. There is always a reason or context behind every action, much like there is a purpose behind every search term. You might also like: How We Automated Schema on Sitebulb.com How to Optimize for Different Types of Featured Snippets Node Identifiers: From Structured Data to Linked Data With over 10 years of experience in the SEO field, Izzy has enough knowledge to fill a book and then some\u2026 Izzy is a bright, happy-to-help person who is always willing to lend her expansive know-how to those still learning how to do this thing we call SEO, and has both taught and created SEO courses for those of multiple skill-levels. by Izzy Brand Follow on LinkedIn Articles for every stage in your SEO journey . Jump on board . Related Articles Structured Data Tech SEO AI Search How to Audit the Entity Signals That Shape Brand Understanding in AI Search Learn how to audit entity signals with Sitebulb to uncover hidden gaps that affect brand understanding in AI search. Chioma Anunobi Audits Structured Data Tech SEO The Brand-First Technical Audit: Why Your Entity Health Is a Technical SEO Problem A broken brand signal is now a technical fault. Read the crawl you already run for the entity-health problems costing you visibility in Google and AI search. David Carrasco Pamies Structured Data Tech SEO AI Search Why Structured Data is Even More Important in AI SEO Discover why structured data is now essential for AI SEO and Google AI Overviews, especially in YMYL niches, and how schema helps Google trust your site. Sei Kato Sitebulb Desktop Find, fix and communicate technical issues with easy visuals, in-depth insights, & prioritized recommendations across 300+ SEO issues. Ideal for SEO professionals, consultants & marketing agencies. Sitebulb Cloud Get all the capability of Sitebulb Desktop, accessible via your web browser. Crawl at scale without project, crawl credit, or machine limits. Perfect for collaboration, remote teams & extreme scale."
+ }
+]

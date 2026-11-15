@@ -1,0 +1,125 @@
+<p>Entity SEO is the work of making it clear what your brand, your people, your products and your topics are, and how they relate, so search engines and AI tools identify you correctly. An entity is a uniquely identifiable thing, such as a company, a person, a place or an idea. It is not a keyword. The practical work is plain: use one name and one description everywhere, state the facts on a clear home page, add accurate structured data, link related pages with clear anchors and earn honest mentions on other sites.</p>
+<p>This guide explains what entities are, why they matter for search and AI answers, how to find the entities for your site, and a nine-step plan with a sample of Organization markup. We cite only sources we could read at the publisher, and we say when a finding is a correlation or when a claim is our own view.</p>
+
+<h2>What is an entity in SEO?</h2>
+<p>An entity is a thing or concept that is singular, unique, well defined and distinguishable from other things. Google's Knowledge Graph and Wikidata are two large catalogs of them. Examples are a company such as Reinforce Lab, a person such as an author, a product, a city or a concept such as "robots.txt". An entity has a name, a type, facts about it and links to other entities.</p>
+<p>Search Engine Journal's Dixon Jones puts the difference between an entity and a keyword this way: an entity is a record in a database, with an identifier, while a keyword is a word or phrase. Many entities carry a label that looks like a keyword, which is why the two are often mixed up. Google's Knowledge Panel Help says knowledge panels are information boxes that appear for entities in the Knowledge Graph, that they are generated automatically from information across the web, and that they update as information changes.</p>
+
+<h2>Entity SEO vs keyword SEO</h2>
+<table>
+<thead><tr><th>Area</th><th>Keyword SEO</th><th>Entity SEO</th></tr></thead>
+<tbody>
+<tr><td>Unit of work</td><td>A phrase people type</td><td>A thing, and its facts and links to other things</td></tr>
+<tr><td>Question</td><td>Does the page contain the phrase?</td><td>Is it clear which thing the page is about?</td></tr>
+<tr><td>Main risk</td><td>Missing a phrase</td><td>Being confused with another thing, or described wrongly</td></tr>
+<tr><td>Typical tasks</td><td>Titles, headings, copy</td><td>Facts, structured data, internal links, profiles, mentions</td></tr>
+<tr><td>Measure</td><td>Rankings and traffic</td><td>Correct descriptions, knowledge panels, AI answers, branded search</td></tr>
+</tbody>
+</table>
+<p>Both matter. Entity work does not replace keyword research. It adds a check on whether the systems reading your site can tell who you are.</p>
+
+<h2>Why do entities matter for SEO and AI search?</h2>
+<p>Search engines and language models both work with meaning, not only matching words. If your name matches another company, or your pages describe you in several ways, a system may attach the wrong facts to you or skip you. Three pieces of evidence help set expectations.</p>
+<ul>
+<li><strong>Brand mentions correlate with AI visibility.</strong> Ahrefs studied 75,000 brands and found that branded web mentions had the strongest correlation with brand visibility in Google AI Overviews, at 0.664, against 0.218 for backlinks. The next two were branded anchors (0.527) and branded search volume (0.392). Ahrefs also found that 26% of brands had zero AI Overview mentions. This is a correlation, not proof of cause, and Ahrefs says so. The sample was domains with a Domain Rating above 40 and a top keyword of at least 800 searches a month, and the study covers Google AI Overviews only.</li>
+<li><strong>Google uses organization data to tell organizations apart.</strong> Its Organization structured data documentation says adding the markup to your home page can help Google understand your organization's details and disambiguate it in search results. It also says some properties influence the logo shown in Search results and in your knowledge panel.</li>
+<li><strong>Google says AI features need no special markup.</strong> Google lists no extra technical requirements beyond being indexed and eligible to show with a snippet. So entity markup is not a trick for AI answers. It is a way to state facts clearly.</li>
+</ul>
+<p>There is a fair counter view. In a 2024 article titled "Stop overcomplicating things. Entity SEO is just SEO," Ahrefs argues that you do not need to treat entity work as a separate discipline. We agree with part of that. Most of the plan below is ordinary good practice. We still find the entity lens useful, because it points to a short list of checks that many sites fail, such as an old company description on a directory or no clear About page.</p>
+
+<h2>How do you find the entities for your site?</h2>
+<p>Start with what you already know, then use tools to find what you missed. This answers a common question: how to find entities for SEO optimization.</p>
+<ol>
+<li><strong>List your own entities.</strong> Your company, its legal and short names, your products and services, your leaders and authors, your locations and your main topics.</li>
+<li><strong>Check what search shows.</strong> Search your brand and your topics. Note any knowledge panel, the "People also ask" questions and the related searches. These show the things Google links to your topic.</li>
+<li><strong>Look at public catalogs.</strong> See whether Wikipedia or Wikidata has an entry for your topics. Note the standard names they use for each concept. Use the same names where they fit.</li>
+<li><strong>Read what competitors cover.</strong> Open the top pages for your topic and list the people, tools, terms and concepts they mention. Our semantics check does this for every post we write.</li>
+<li><strong>Use an entity tool.</strong> Google's Cloud Natural Language API can list the entities it finds in a text. Run your own page through it and see whether the main entity is the one you meant.</li>
+<li><strong>Ask AI tools.</strong> Ask "What is [brand]?" and "Who is [person]?" in ChatGPT, Gemini and Perplexity. Compare each answer with your facts.</li>
+</ol>
+<p>To find related entities, look at the terms and concepts that appear around your topic on several top pages, and at the questions people ask. Include the ones a reader would expect to see, and skip the rest. Do not stuff a page with names.</p>
+
+<h2>A nine-step entity SEO plan</h2>
+<h3>Step 1: Write your fact sheet</h3>
+<p>Write one page of facts: your legal name, trading name, a one-sentence description, what you sell, who you serve, locations, founding date, leaders and official profile links. Every later step uses this sheet.</p>
+
+<h3>Step 2: Build a clear entity home</h3>
+<p>SEO practitioners describe an "entity home": a main page that acts as the source of truth for an entity, which Helen Pollitt says search engines often look for. This is practitioner advice, not a Google rule. For a company, that is usually the About page or the home page. Put the facts from your sheet there in plain text. For each person who writes for you, build an author page with a short bio, credentials and profile links.</p>
+
+<h3>Step 3: Add Organization structured data</h3>
+<p>Google's documentation says there are no required properties, and it recommends adding as many relevant ones as you can. Useful ones include <code>name</code>, <code>alternateName</code>, <code>url</code>, <code>logo</code>, <code>description</code>, <code>address</code>, <code>contactPoint</code>, <code>legalName</code>, <code>foundingDate</code> and <code>sameAs</code>. Google says to use the same name and alternate name that you use for your site name, and that <code>sameAs</code> can list pages about your organization on other sites, such as social or review profiles. Here is a short sample with a made-up company:</p>
+<pre><code>{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Example Co",
+  "legalName": "Example Company Limited",
+  "url": "https://www.example.com/",
+  "logo": "https://www.example.com/logo.png",
+  "description": "Example Co builds scheduling software for clinics.",
+  "foundingDate": "2018",
+  "sameAs": [
+    "https://www.linkedin.com/company/example-co",
+    "https://www.crunchbase.com/organization/example-co"
+  ]
+}</code></pre>
+<p>The markup must match what the page shows. Validate it before you publish.</p>
+
+<h3>Step 4: Mark up people and connect them</h3>
+<p>Use Person markup for authors and leaders, with <code>sameAs</code> links to their real profiles, and connect each person to the organization with a property such as <code>worksFor</code>. Describe real relationships only.</p>
+
+<h3>Step 5: Make your profiles match</h3>
+<p>Compare your website, Google Business Profile, LinkedIn, directories and review sites against your fact sheet. Fix old names, addresses, phone numbers and descriptions. AI answers often repeat an old directory line, so a wrong listing can cost more than a weak page.</p>
+
+<h3>Step 6: Handle Wikipedia and Wikidata with care</h3>
+<p>These catalogs feed knowledge systems, but you cannot simply add yourself. Wikipedia has notability rules, and self-promotional edits break its policies. If your company or a person meets the rules, an independent editor can write the entry from reliable sources. Otherwise, build the independent coverage first. Never create fake pages or sources.</p>
+
+<h3>Step 7: Write pages that make the entity clear</h3>
+<p>Define each core term in the first sentence of its page. Use the standard name for each concept, and use it the same way throughout. Place related entities in context, for example "Reinforce Lab" with its founder, "Jamil Ahmed". Link related pages with descriptive anchor text, and keep one main topic for each page. Our guide to <a href="/generative-engine-optimization/">generative engine optimization</a> shows how this carries into AI answers.</p>
+
+<h3>Step 8: Earn real mentions</h3>
+<p>Given the Ahrefs correlation, honest mentions on other sites matter. Good sources are press, industry sites, partner pages, reviews, podcasts and communities where you help people. Do not buy mentions or post fakes. Google's guidance for AI features says seeking inauthentic mentions is not as helpful as it might seem.</p>
+
+<h3>Step 9: Test and repeat</h3>
+<p>Every quarter, ask AI tools what they say about your brand, your key people and your products, and compare with your fact sheet. Check your branded search results and any knowledge panel. Our guide on <a href="/ai-brand-visibility/">checking if AI tools mention your brand</a> gives a 30-minute test, and our list of <a href="/ai-brand-visibility-tools/">AI brand visibility tools</a> covers tracking at scale.</p>
+
+<h2>Worked example: a company with a shared name</h2>
+<p>This is an illustration, not a client result. Imagine a nine-person analytics firm called "Apex Data". Another company, a data-center operator, uses a similar name. When the firm asks AI tools "What is Apex Data?", two of three answers describe the data-center operator.</p>
+<p>The firm writes its fact sheet and puts a clear description on its About page, starting with "Apex Data is a nine-person analytics firm that builds dashboards for restaurants." It adds Organization markup with its LinkedIn and Crunchbase profiles in <code>sameAs</code>. It fixes its directory listings, which gave an older name. It adds author pages for its two writers. It earns a feature in a restaurant trade publication and two customer reviews on a software review site. After 60 days it repeats its test. It keeps the results either way, because the goal is a fair comparison, not a promise.</p>
+
+<h2>How does entity SEO work for local and service firms?</h2>
+<p>For a local or service firm, the main entities are the business, its locations and its people. Use the same business name, address format and phone number on your site, your Google Business Profile and every directory. Give each lawyer, doctor, consultant or engineer a page with credentials, and link each person to the services they provide. Add LocalBusiness or a more specific type in your markup if it fits, and keep the address in the markup the same as the address on the page. Check that your name does not collide with another business nearby, and if it does, add a clear descriptor, such as the type of work, in your profiles and your About text.</p>
+
+<h2>How does entity SEO work for online stores?</h2>
+<p>For a store, products are the key entities. Search Engine Journal's Helen Pollitt notes that identifying codes such as SKUs, ISBNs and GTINs help search engines see that products are different from each other, and that using them consistently across the site helps. Keep product names, brand names and categories the same across your pages, your feed and marketplaces. Link each product to its brand and category, and keep prices and availability current. Our <a href="/services/technical-seo-services/">technical SEO service</a> includes this kind of data check.</p>
+
+<h2>How do you measure entity SEO?</h2>
+<p>There is no single score. Use a short list of checks and record them with dates:</p>
+<ul>
+<li><strong>Accuracy test.</strong> Ask ChatGPT, Gemini and Perplexity "What is [brand]?", "Who runs [brand]?" and "What does [brand] sell?" three times each. Count answers with a material error.</li>
+<li><strong>Consistency audit.</strong> Compare your fact sheet with your site, profiles and directories. Count mismatches and fix them.</li>
+<li><strong>Branded search.</strong> Watch branded impressions and clicks in Search Console, and see which pages show for your brand name.</li>
+<li><strong>Knowledge panel and rich results.</strong> Search your brand and note whether a panel appears, and whether its facts are right. Use Google's Rich Results Test to check markup.</li>
+<li><strong>Mentions.</strong> Track new, honest mentions on other sites, and check which sites AI answers cite for your category.</li>
+<li><strong>AI impressions.</strong> In Search Console's Generative AI performance report, check impressions for pages that state your core facts.</li>
+</ul>
+<p>Treat changes as signs, not proof. Answers vary from run to run, so repeat each test and compare rates over time.</p>
+
+<h2>Does entity SEO help with AI search?</h2>
+<p>It can help models describe you correctly, because models learn about brands from text that mentions them. The Ahrefs data fits that idea, though it is a correlation. Remember the limits: Google says no special markup is required for its AI features, and no one outside the AI companies knows exactly how they choose sources. So use entity work to remove confusion, not to chase a trick.</p>
+
+<h2>What are the common mistakes?</h2>
+<ul>
+<li><strong>Treating entities as keywords.</strong> Repeating a name many times does not clarify it.</li>
+<li><strong>Using different names.</strong> A short name on the site and a legal name on a directory, with no link between them, makes a system unsure.</li>
+<li><strong>Over-marking pages.</strong> Markup that does not match the page can be ignored or cause problems.</li>
+<li><strong>Chasing a knowledge panel.</strong> Panels are generated automatically. Focus on clear facts and independent coverage.</li>
+<li><strong>Faking Wikipedia or Wikidata entries.</strong> It breaks their rules and risks your reputation.</li>
+<li><strong>Ignoring old listings.</strong> Wrong facts on third-party sites often feed wrong answers.</li>
+<li><strong>Stopping after the markup.</strong> Mentions, profiles and clear pages do most of the work.</li>
+</ul>
+
+<h2>Our interest in this topic</h2>
+<p>Reinforce Lab sells search and AI search services. Nothing here is paid placement. Jamil Ahmed, who wrote this guide, is a Semrush Ambassador, and Reinforce Lab uses affiliate links for some tools. Read our <a href="/ftc-disclosure/">FTC and affiliate disclosure</a>. Our <a href="/services/technical-seo-services/">technical SEO service</a> covers structured data, and you can <a href="/get-diagnostic/">get your free diagnostic</a>.</p>
+
+<h2>Final thoughts</h2>
+<p>Entity SEO is mostly clarity. Know your entities, state the facts once and use them everywhere, mark them up accurately, link related pages clearly and earn honest mentions. Then test what search and AI tools say about you, fix what is wrong and repeat each quarter.</p>
