@@ -1,21 +1,19 @@
 # Competitor semantics: hosting-com-review
 
 Our page: -
-Competitors analysed: 4 of 5 (a term counts as common when 3+ of them use it)
+Competitors analysed: 5 of 5 (a term counts as common when 3+ of them use it)
 
 | # | Page | Words | Headings |
 |---|---|---|---|
-| 1 | [Hosting.com (Formerly A2 Hosting) Review: Tested in 2026](https://www.websiteplanet.com/web-hosting/hosting-com/) | 4235 | 36 |
-| 2 | [Hosting.com 2026 Review: Fast, Reliable Hosting for Experienced Websit](https://www.cnet.com/tech/services-and-software/hosting-dot-com-review/) | 2871 | 19 |
-| 3 | [Hosting.com Review (2026) – “Formerly A2 Hosting”](https://webhostingcat.com/hosting-com-review/) | 1352 | 15 |
-| 4 | [A2 Hosting (Now Hosting.com) Review for 2026 (Tested)](https://www.isitwp.com/a2-hosting-review/) | 4071 | 20 |
+| 1 | [Hosting.com Review: The Results of My 2-Week Test](https://www.hostingadvice.com/hosting-review/hosting-com/) | 357 | 9 |
+| 2 | [Hosting.com (Formerly A2 Hosting) Review: Tested in 2026](https://www.websiteplanet.com/web-hosting/hosting-com/) | 4235 | 36 |
+| 3 | [Hosting.com 2026 Review: Fast, Reliable Hosting for Experienced Websit](https://www.cnet.com/tech/services-and-software/hosting-dot-com-review/) | 2871 | 19 |
+| 4 | [Hosting.com Review (2026) – “Formerly A2 Hosting”](https://webhostingcat.com/hosting-com-review/) | 1352 | 15 |
+| 5 | [A2 Hosting (Now Hosting.com) Review for 2026 (Tested)](https://www.isitwp.com/a2-hosting-review/) | 4071 | 20 |
 
-**Not fetched (read these with Exa):**
-- https://www.hostingadvice.com/hosting-review/hosting-com/ (403) 
+## Common terms (287)
 
-## Common terms (274)
-
-hosting com customer (4), things (4), re looking (4), cost (4), features (4), offer (4), area (4), helpful (4), performance (4), installed (4), test (4), server (4), since (4), option (4), support (4), overall (4), provides (4), services (4), faster (4), wordpress hosting (4), experience (4), best (4), price (4), time (4), uptime guarantee (4), sites (4), live chat (4), loading (4), tool (4), good (4), users (4), installation (4), easily (4), testing (4), pricing (4), hosting plans (4), plan (4), shared hosting (4), high (4), plus (4), security (4), based (4), results (4), choose (4), options (4), great (4), access (4), plugins (4), locations (4), free (4), hosting com website (4), reviews (4), plugin (4), account (4), need (4), hosts (4), wordpress plans (4), cpanel (4), page (4), domain (4), still (4), site (4), keep (4), images (4), backups (4), speed (4), host (4), websites (4), full (4), resources (4), always (4), managed wordpress (4), load (4), found (4), servers (4), response times (4), speeds (4), web hosting (4), protection (4), phone (4), caching (4), data center (4), however (4), choice (4), location (4), software (4), name (4), including (4), world (4), com formerly a2 (3), essential (3), force (3), shared hosting plans (3), power (3), com live chat (3), downtime (3), tools (3), hosting com support (3), easier (3), last (3), beginners (3), web host (3), visitors (3), tried (3), initial (3), running (3), type (3), impressive (3), basic (3), industry (3), give (3), hosting provider (3), service (3), issues (3), better (3), quickly (3), information (3), hosting com formerly (3), online (3), anything (3), help (3), image (3), long-term (3), traffic (3), recommend (3), required (3), hostinger (3), hosting com provides (3), stores (3), cpanel hosting (3), something (3), pros (3), selection (3), hosting com hosting (3), user (3), doesn (3), whole (3), minutes (3), around (3), hosting hosting com (3), know (3), cloudflare (3), find (3), agent (3), improved (3), cons (3), experienced (3), less (3), domain name (3), simple (3), test site (3), handy (3), ease (3), wordpress site (3), worth (3), small (3), settings (3), response time (3), content (3), wordpress installation (3), creating (3), check (3), platforms (3), though (3), blogs (3), reseller hosting (3), storage (3), feature (3), keep in mind (3), process (3), provide (3), management (3), building (3), admin (3), litespeed (3), knowledge base (3), making (3), little (3), businesses (3), formerly a2 hosting (3), place (3), wordpress sites (3), plans hosting com (3), want (3), another (3), australia (3), specific (3), team (3), improve (3), started (3), year (3), web hosts (3), thing (3), point (3), default (3), hosting com pricing (3), understand (3), extra (3), money back guarantee (3), seconds (3)
+features (5), caching (5), pricing (5), data center (5), free (5), managed wordpress (5), hosting com website (5), test (5), experience (5), access (5), domain (5), tool (5), shared hosting (5), cpanel (5), servers (5), customer (5), site (5), support (5), times (5), wordpress hosting (5), load (5), performance (5), content (4), unlimited (4), vps hosting (4), turbo servers (4), service (4), staging (4), dashboard (4), customer support (4), cons (4), storage (4), settings (4), hosting com hosting (4), litespeed (4), migration (4), hosting com wordpress (4), data centers (4), pros (4), wordpress plans (4), software (4), always (4), account (4), high (4), results (4), speed (4), time (4), speeds (4), based (4), images (4), helpful (4), plugin (4), cost (4), full (4), found (4), uptime guarantee (4), re looking (4), faster (4), location (4), server (4), overall (4), including (4), host (4), hosts (4), things (4), good (4), since (4), installed (4), installation (4), plan (4), protection (4), best (4), services (4), option (4), response times (4), area (4), websites (4), backups (4), page (4), hosting com customer (4), keep (4), price (4), resources (4), world (4), need (4), offer (4), phone (4), loading (4), name (4), security (4), plugins (4), choice (4), sites (4), choose (4), still (4), locations (4), web hosting (4), users (4), hosting plans (4), reviews (4), live chat (4), great (4), provides (4), easily (4), testing (4), options (4), plus (4), however (4), databases (3), com wordpress hosting (3), com hosting com (3), real (3), advanced (3), dedicated (3), deal (3), malware (3), renewal (3), global (3), free domain (3), cloudflare (3), optimized (3), starting price (3), another (3), worth (3), tried (3), stores (3), online (3), specific (3), essential (3), control (3), days (3), configure (3), default (3), place (3), beginners (3), started (3), domain name (3), links (3), number (3), singapore (3), doesn (3), better (3), london (3), traffic (3), wordpress installation (3), australia (3), minutes (3), check (3), take look (3), experienced (3), feature (3), businesses (3), able (3), automatic (3), initial (3), small (3), test site (3), image (3), platforms (3), support ticket (3), solution (3), less (3), selection (3), know (3), agent (3), web hosts (3), nameservers (3), running (3), change (3), com live chat (3), formerly a2 hosting (3), shared hosting plans (3), creating (3), business (3), hosting hosting com (3), wordpress website (3), hosting com support (3), linux (3), web hosting plan (3), com formerly a2 (3), reseller hosting (3), tested (3), fact (3), average (3), provide (3), admin (3), little (3), making (3), hosting com provides (3), working (3), long-term (3), types (3), separate (3), improved (3), thing (3), team (3), web host (3), tools (3), hosting provider (3), response time (3)
 
 ## Questions competitors answer in headings (12)
 
@@ -33,6 +31,17 @@ hosting com customer (4), things (4), re looking (4), cost (4), features (4), of
 - Why the Change from A2 Hosting to Hosting.com?
 
 ## Headings by page
+
+**Hosting.com Review: The Results of My 2-Week Test**
+- H2 Key Takeaways
+- H2 My Experience Using hosting.com Cheap Hosting Service
+- H2 My Experience Using hosting.com WordPress Hosting Service
+- H2 My Experience Using hosting.com Website Builder
+- H2 My Experience Using hosting.com VPS Hosting Service
+- H2 hosting.com Dedicated Hosting Service
+- H2 Customer Support
+- H2 Pros and Cons of hosting.com
+- H2 hosting.com Is the Real Deal
 
 **Hosting.com (Formerly A2 Hosting) Review: Tested in 2026**
 - H1 Hosting.com (Formerly A2 Hosting) Review: Tested in 2026

@@ -1,19 +1,17 @@
 # Competitor semantics: nexcess-review
 
 Our page: -
-Competitors analysed: 2 of 3 (a term counts as common when 3+ of them use it)
+Competitors analysed: 3 of 3 (a term counts as common when 3+ of them use it)
 
 | # | Page | Words | Headings |
 |---|---|---|---|
-| 1 | [Managed Liquid Web (Formerly Nexcess) Review [2026 UPDATE]](https://www.websiteplanet.com/web-hosting/nexcess/) | 5035 | 38 |
-| 2 | [Liquid Web (Formerly Nexcess) Review: Premium Hosting for Average Pric](https://www.cnet.com/tech/services-and-software/nexcess-review/) | 5731 | 25 |
+| 1 | [Nexcess review | TechRadar](https://www.techradar.com/reviews/nexcess) | 277 | 9 |
+| 2 | [Managed Liquid Web (Formerly Nexcess) Review [2026 UPDATE]](https://www.websiteplanet.com/web-hosting/nexcess/) | 5035 | 38 |
+| 3 | [Liquid Web (Formerly Nexcess) Review: Premium Hosting for Average Pric](https://www.cnet.com/tech/services-and-software/nexcess-review/) | 5731 | 25 |
 
-**Not fetched (read these with Exa):**
-- https://www.techradar.com/reviews/nexcess (200) too little text (script-rendered or blocked)
+## Common terms (27)
 
-## Common terms (0)
-
-
+liquid web (3), woocommerce (3), staging (3), site (3), shared (3), server (3), free (3), customer support (3), pricing (3), nexcess performance (3), guarantee (3), managed hosting (3), brand (3), security (3), speed (3), builder (3), autoscaling (3), live chat (3), updates (3), cloud (3), uptime (3), plans nexcess (3), magento (3), features (3), sites (3), wordpress (3), dedicated (3)
 
 ## Questions competitors answer in headings (7)
 
@@ -26,6 +24,17 @@ Competitors analysed: 2 of 3 (a term counts as common when 3+ of them use it)
 - What type of hosting does Nexcess offer?
 
 ## Headings by page
+
+**Nexcess review | TechRadar**
+- H2 TechRadar Verdict
+- H2 Reasons to buy
+- H2 Reasons to avoid
+- H2 Recent updates
+- H2 Nexcess features
+- H2 Nexcess pricing and plans
+- H2 Nexcess performance
+- H2 Nexcess support
+- H2 Final verdict
 
 **Managed Liquid Web (Formerly Nexcess) Review [2026 UPDATE]**
 - H1 Managed Liquid Web (Formerly Nexcess) Review [2026 UPDATE]

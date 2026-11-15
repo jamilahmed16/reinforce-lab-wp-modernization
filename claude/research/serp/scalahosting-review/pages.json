@@ -34,5 +34,111 @@
    ]
   ],
   "text": "I\u2019m always hunting for the fastest hosting at the lowest price. So when ScalaHosting added AMD EPYC 9474F CPUs ranked 38th/1245 fastest in PassMark (top ~3%) with DDR5 RAM + PCIe 5.0 NVMe SSDs , this was a massive upgrade over Rocket.net\u2019s Intel Xeon CPUs which rank 440th , are from 2013 , and only support up to DDR3 RAM + PCIe 3.0 NVMe SSDs (which are ~4x slower). This is why my website/admin weren\u2019t fast despite a 100ms global TTFB with Cloudflare Enterprise. Faster CPUs/RAM/storage + Cloudflare Enterprise = Yep! By replacing Rocket.net\u2019s Cloudflare Enterprise with FlyingCDN (which costs up to 10x less in bandwidth), I could now use a host with newer/faster hardware while still getting a 50ms global latency and all those powerful features from Gijo\u2019s Cloudflare Enterprise. Check your host\u2019s CPU model in my spreadsheet (often listed on their website or machine family if they use Google Cloud like SiteGround + WP Engine) and I\u2019ll bet AMD EPYC 9474F CPUs outperform them in PassMark While Rocket.net and other \u201cpremium\u201d hosts charge $100/mo for 300GB bandwidth and are backed by private equity ( hosting.com buying Rocket.net was my final straw), ScalaHosting\u2019s VPS has no extra limits outside of CPU cores/RAM/storage and they\u2019re independently owned. This costs me $42/mo ($27/mo for Scala\u2019s Build #1 VPS + ~$15/mo for FlyingCDN). I could also host more websites without being limited by arbitrary website/bandwidth/visit limits because ScalaHosting\u2019s VPS has no extra limits and SPanel requires ~2x less resources than cPanel (and is nearly visually identical ). Which explains why after moving, my resource usage averaged ~4% . From $100/mo to a $27/mo VPS with 5% resource usage shows how overpriced \u201cpremium\u201d hosts are Every benchmark improved and my site/admin load faster than ever . I recommend the Hosting Benchmark Tool plugin which tests CPU/RAM/storage performance instead of TTFB (time to first byte doesn\u2019t isolate hosting performance because it also tests CDN and caching). But even my global TTFB is averaging ~50ms (as always, test 3 times to ensure resources are cached and served from the closest Cloudflare data center). Scores in PHP Vitals also improved. Source: web.dev Rocket.net Rocket.net (PHP Vitals) ScalaHosting\u2019s Build #1 VPS ScalaHosting (PHP Vitals) 50ms global TTFB is easy when FlyingCDN lets you prioritize fast CPUs/RAM/storage from your host https://onlinemediamasters.com/wp-content/uploads/2025/07/ScalaHosting-wp-admin-speed.mp4 They let me give my readers an extra 10% off (or just use code OMM10 at checkout) Chris and Vlad are the guys behind ScalaHosting who are night and day compared to other hosts/CEOs I\u2019ve previously worked with. I\u2019ve probably emailed them 200 times (+Google Meets) after bombarding them with technical questions, many of which you\u2019ll see in my spreadsheets. Key Things To Know (TLDR) Entry Cloud plan is identical to their VPS but has 2 CPU cores + 2GB RAM which costs slightly less, but isn\u2019t scalable like a VPS. This is mainly if you\u2019re upgrading from shared hosting or using a ~$25/mo Starter plan on Rocket.net, Kinsta, WPE, etc. Your FlyingCDN bandwidth will probably be $10/mo so the total is about the same, but with better performance and you can host multiple sites without limits. If your host only measures bandwidth, the formula for moving to cores/RAM is 1 CPU core + 2GB RAM for every 250,000 monthly pageviews ; closer to 150,000 for dynamic/resource-hungry sites or 350,000 for more static/well-optimized sites. Their VPS is managed and just as easy as \u201cpremium managed\u201d hosts . SPanel, converting pageviews to cores/RAM, setting up a backup plugin, and adding two DNS records for FlyingCDN isn\u2019t hard. \u201cPremium managed hosts\u201d are infamous for overcharging for low limits and less transparency of resources/hardware (which is called ignorance tax in this industry, and after switching, I agree). A VPS isn\u2019t hard. If you\u2019re coming from another VPS like Cloudways or SiteGround\u2019s cloud hosting, a 4 CPU core + 8GB RAM server is $118/mo on Cloudways Vultr High HF, $100/mo on SiteGround cloud, or $35.95/mo on Scala\u2019s Build #2. You also shouldn\u2019t have to constantly upgrade from 100% CPU usage or 503 errors caused by Hostinger\u2019s CPU limits , SiteGround\u2019s disk I/O limits , or Cloudways\u2019 bloat + half-baked performance integrations which cause poor performance . With SPanel and free malware scans , you also don\u2019t have to pay for a cPanel license or malware scans like on many VPS\u2019. For web servers , if you\u2019re using their VPS with FlyingPress + FlyingCDN, I recommend Apache (although SPanel supports Nginx/ OpenLiteSpeed if you choose). Shared plans use LiteSpeed Enterprise, in which case use LiteSpeed Cache with QUIC.cloud\u2019s standard plan, Cloudflare APO, or Super Page Cache. No matter which plan you use , you\u2019ll want to ask support to install Redis. You should also configure a backup plugin like UpdraftPlus (especially on VPS plans which only include 1 free backup). Also watch their SPanel YouTube tutorials and finally, monitor your resource usage to ensure it doesn\u2019t exceed 20% consistently. ScalaHosting\u2019s VPS has higher renewals like shared hosting, but even after it renews, it still costs slightly less than Cloudways and SiteGround\u2019s cloud hosting. FlyingCDN\u2019s pricing: $10/month for 100GB bandwidth + $5 per additional 100GB. VPS vs. Entry Cloud plan Set up your VPS in 8 steps Don\u2019t sleep on shared plans AMD EPYC 9474F CPUs on all plans SPanel is similar to cPanel but ~2x lighter Independently owned by Chris and Vlad (not private equity) Price breakdown (higher renewals are the biggest downside) 1. VPS vs. Entry Cloud Plan VPS plans can scale CPU cores/RAM/storage while Entry Cloud has 2 CPU cores + 2GB RAM and can only scale storage. Be sure to remove any storage you don\u2019t need and use the 10% off code . Build a VPS (like Cloudways) but with better performance, pricing, scaling flexibility, and lightweight SPanel VPS + Entry Cloud have no limits besides the CPU cores/RAM/storage you choose. This is huge because shared plans have CPU limits (like all shared hosting), some VPS\u2019 do have hidden limits (like SiteGround\u2019s + Hostinger\u2019s), and Rocket.net/Kinsta/WPE have different (but still low) limits. Why Hostinger\u2019s VPS is so cheap 2. Set Up Your VPS In 8 Steps Summary: Plan : Build #1 VPS is usually plenty for sites under 500,000 monthly pageviews. Web Server : Apache (but OpenLiteSpeed and Nginx are both available in SPanel). Cache Plugin : FlyingPress (not only is their plugin better, but you get FlyingCDN). CDN : FlyingCDN is especially good for dynamic sites. Small sites that don\u2019t need Cloudflare Enterprise can use Cloudflare APO ($5/mo) or Super Page Cache (free). Object Cache : Redis Object Cache plugin (you\u2019ll ask support to set this up for you). Before & After Benchmarks : Hosting Benchmark Tool to test CPU/RAM/storage performance, Flying TTFB to test global TTFB, PHP Vitals to test PHP performance. Backups : UpdraftPlus is free and connects to several third-party storage services. Step 1 : Choose your plan, data center, and customize resources at checkout. You shouldn\u2019t need add-ons with a free backup plugin and the LiteSpeed add-on is for LiteSpeed Enterprise . They do a 30-day money back guarantee (full refund) and anytime guarantee (partial refund). All data centers use AMD EPYC 9474F CPUs Step 2 : Once signed up, you\u2019ll get an email to set up SPanel . SPanel is similar to cPanel without bloat, more features , and has been in development since 2018 In SPanel, create an account and add your domain/login details. If you\u2019re taking them up on free migrations (I did and it went smooth), open a ticket and provide them with your old host\u2019s login details. Get familiar with SPanel while you\u2019re waiting for ScalaHosting to move your site, watch their SPanel YouTube tutorials or you can request an SPanel demo if you\u2019re still deciding. If you\u2019re migrating your site(s) yourself, nameservers are found under Server Information . Step 3: Request Redis from ScalaHosting\u2019s support (or use Memcached which is installed automatically by default). If you\u2019re doing this yourself, use the Redis Object Cache plugin for FlyingPress or LiteSpeed Cache (Cache \u2192 Object \u2192 Object Cache). Select Redis and use port 6379 . If you have multiple sites, each one should have a unique Redis Database ID (0, 1, 2, etc). Once Redis is set up, purge the object cache and ensure the plugin you used shows it\u2019s working. Step 4: Run a benchmark in Hosting Benchmark Tool to test CPU/RAM/storage performance (storage performance is reflected in filesystem) and object cache. You should see a noticeable difference when clicking through your site/admin even before setting up FlyingCDN thanks to ScalaHosting\u2019s CPUs/RAM/storage. The plugin developer (Anton Aleksandrov who is a reader ) updated it after my initial tests comparing Rocket.net \u2014 I believe based on George\u2019s feedback from ScalaHosting when he was running tests for me (this is why my new report is even better). Step 5: I recommend keeping your web server as Apache (works great with FlyingPress + FlyingCDN) but you can switch to OpenLiteSpeed (or Nginx) in the Web Server Manager . Add the code to your .htaccess file, then restart the server in SPanel (Server Management \u2192 Restart Server). This is required to manually clear the cache, otherwise you\u2019ll get 404 errors. <IfModule mod_rewrite.c> RewriteEngine On RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}] RewriteBase / RewriteRule ^/index\\.php$ - [L] RewriteCond %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d RewriteRule . /index.php [L] </IfModule> Step 6: Configure FlyingPress (the #1 cache plugin for optimizing core web vitals ) and FlyingCDN which is better than Cloudways\u2019 Cloudflare Enterprise and Kinsta/SiteGround\u2019s CDN. Gijo makes Cloudflare Enterprise affordable despite barely earning a profit Once done, test TTFB in Flying TTFB or KeyCDN . Always run 3 tests to ensure accurate results. Been trying to tell ya Step 7: Configure UpdraftPlus so you don\u2019t have to pay for premium backups. Step 8: If you have multiple sites you want to host on the same server, you\u2019ll be able to set custom resource limits, disable certain features, and add users to SPanel with limited access . 3. Don\u2019t Sleep On Shared Plans I couldn\u2019t tell you a single shared host who uses fast processors with DDR5 RAM and PCIe 5.0 NVMe SSDs, besides maybe MechanicWeb. Most hosts (especially shared hosts) don\u2019t disclose hardly anything about their CPUs + specs, so Scala\u2019s stack (along with LiteSpeed Enterprise and SPanel) is definitely one of the best options and why I put them #1 in my shared hosting sheet . I either recommend the Start plan or moving from shared hosting to Entry Cloud\u2019s small VPS Compared to most shared hosts, they have generous limits and got a bump in CPU usage . These use LiteSpeed Enterprise, so you\u2019ll use my LiteSpeed Cache tutorial to configure the settings with your CDN of choice (e.g. QUIC.cloud\u2019s standard plan , APO, or Super Page Cache ). 4. AMD EPYC 9474F CPUs On All Plans Around the same time Rocket.net was acquired by hosting.com, Chris (ScalaHosting\u2019s CEO) emailed me saying they added AMD EPYC 9474F CPUs with DDR5 RAM + PCIe 5.0 NVMe SSDs which are now used on all data centers. With PassMark ranking them 38th/1245 fastest server CPUs , we can already assume these are much faster than the high majority of WordPress hosts. Including Hostinger\u2019s AMD EPYC 9354P CPUs , SiteGround\u2019s Intel Xeon Gold 6268CL CPUs (if using Google\u2019s default N2 CPUs ), WP Engine and Elementor\u2019s Intel Xeon Gold 6253CL (if using Google\u2019s default C2 CPUs ), Rocket.net\u2019s dual Intel Xeon E5-2667 v2 CPUs , ChemiCloud\u2019s AMD EPYC 9354 CPUs , HostGator\u2019s AMD Opteron 6376 CPUs , and NameCheap\u2019s AMD EPYC 7742 CPUs . DigitalOcean + Vultr High Frequency are usually fast , but not when you put them on Cloudways . Just like shopping for any computer , fast WordPress hosting means shopping for fast CPUs/RAM/storage with plenty of resources (and no throttling from hidden resource limits). I\u2019ve already done the research in my spreadsheets , but feel free to do your own! View specs on AMD PassMark is the industry standard for testing CPU performance What These Actually Mean 38th/1245 fastest server CPUs is the main thing to know if this is confusing. 102255 multithread rating determines concurrency (e.g. visitors, checkouts, plugin background tasks) and this is the highest I\u2019ve seen of any WordPress host. 3155 single thread rating determines more TTFB, load time, and wp-admin speed . ScalaHosting\u2019s single thread rating is ~55% higher than Rocket.net\u2019s CPUs. 4.1 GHz clock speed is slightly higher than Vultr High Frequency which is 3.8 GHz . 48 CPU cores doesn\u2019t matter much since VPS/shared plans get a \u201cslice,\u201d but if it did, 48 CPU cores is higher than most host\u2019s. Many hosts list threads and not cores. DDR5 RAM with PC5-38400R at 4800Mhz is great! Many hosts use CPUs that only support DDR3/DDR5, and just because they support it\u2026 doesn\u2019t mean they use it. PCIe 5.0 NVMe SSDs (2457 MB/s read + 2000MB/s write speed) is also great! Both DDR5 RAM + PCIe 5.0 NVMe SSDs are about 4x faster compared to DDR3/PCIe 3.0. 2022 release date is above average, but this doesn\u2019t matter much while specs do. As long as you\u2019re not using CPUs from 2013 like Rocket.net or 2012 like HostGator. SPanel shows base CPU clock speed (3.6 GHz) while turbo clock speed is 4.1 GHz 5. SPanel Is Similar To cPanel But ~2x Lighter SPanel is similar to cPanel, except it: Supports full root access. Supports OpenLiteSpeed. Is free with unlimited users. Requires ~8x less ram vs. cPanel Is constantly updated based on user feedback . Has built-in security and free malware scans via SShield . Less resources wasted on your control panel = more resources powering your sites Their YouTube playlist has a lot of tutorials or request a demo . Some VPS\u2019 don\u2019t include a control panel, so you\u2019ll need a cPanel license (careful, some hosts mark these up) 6. Independently Owned By Chris And Vlad (Not Private Equity) With World Host Group and Newfold Digital buying out hosts left and right (more recently, Rocket.net, A2, and FastComet), ScalaHosting\u2019s independence is honestly my favorite thing about them. It was co-founded by Chris, Vlad, and Lyubomir who I\u2019m in close touch with and not only genuinely care about the business, but don\u2019t appear to be selling out anytime soon . I don\u2019t need to explain why I don\u2019t like private equity. Most popular hosts are backed by it (including Cloudways, Hostinger, Kinsta, WP Engine) which is probably why they\u2019re \u201cpopular.\u201d 7. Price Breakdown (Higher Renewals Are The Biggest Downside) Their hosting (including VPS plans) have a shared hosting pricing model with cheap intro prices for 1 or 3 years, then about 200% higher renewals . Can\u2019t complain about this too much though considering even after renewal, it should be less than Cloudways/SiteGround. On SiteGround cloud , a 4 CPU core + 8GB RAM server is $100/mo and adding just 1GB RAM costs a whopping $10/month. You\u2019ll pay ~$4/mo for malware scans, $14.99/mo for their CDN which is inferior to Cloudflare , $30/site migrations, and $5/mo if you want premium backups. On Cloudways , a 3 vCPU + 8GB RAM Vultr High Frequency server is $118/mo. You get a lot of storage, but a waste of money if you don\u2019t need it since you can\u2019t scale resources individually. Cloudways has lots of complaints about 100% CPU usage, so if you wanted a CPU Optimized server with 4 vCPUs + 8GB RAM, it\u2019s actually $141/mo. Add the cost of add-ons like $4/mo per site for malware scans via Imunify360 and $5/mo per site for a restricted Cloudflare Enterprise. Hostinger\u2019s VPS is so cheap because of low CPU limits and is unmanaged. Plus, scam reports ! MechanicWeb\u2019s VPS includes cPanel Solo and OpenLiteSpeed, but not a security solution, so you\u2019ll need Imunify360 . KnownHost\u2019s VPS doesn\u2019t include cPanel/OpenLiteSpeed/Imunify360, so you\u2019ll need 2-3 extra licenses. And neither VPS lets you scale cores, RAM, storage individually. If you need help setting things up or run into any issues, feel free to reach me at [email protected] . I take my recommendations seriously and want to make sure you\u2019re happy with them and getting better performance than your old host. Here\u2019s the promo code again for +10% off: OMM10 Cheers, Tom Related:"
+ },
+ {
+  "url": "https://www.hostingadvice.com/hosting-review/scalahosting/",
+  "title": "ScalaHosting Review: We Tested 3 Plans",
+  "words": 367,
+  "headings": [
+   [
+    "h2",
+    "Key Takeaways"
+   ],
+   [
+    "h2",
+    "My Experience Using ScalaHosting's Cheap Hosting Plan"
+   ],
+   [
+    "h3",
+    "Plans & Pricing"
+   ],
+   [
+    "h3",
+    "Performance"
+   ],
+   [
+    "h2",
+    "My Experience Using ScalaHosting's WordPress Hosting Plan"
+   ],
+   [
+    "h3",
+    "Using SPanel to Build My WordPress Site"
+   ],
+   [
+    "h2",
+    "My Experience Using ScalaHosting's Cloud VPS Hosting Plan"
+   ],
+   [
+    "h3",
+    "Standard VPS Plans"
+   ],
+   [
+    "h3",
+    "Standard Cloud VPS Plans"
+   ],
+   [
+    "h3",
+    "Support Is Actually Supportive"
+   ],
+   [
+    "h2",
+    "Pros and Cons of ScalaHosting"
+   ],
+   [
+    "h2",
+    "My Final Thoughts"
+   ]
+  ],
+  "text": "Key Takeaways . My Experience Using ScalaHosting's Cheap Hosting Plan . Plans & Pricing . Performance . My Experience Using ScalaHosting's WordPress Hosting Plan . Using SPanel to Build My WordPress Site . My Experience Using ScalaHosting's Cloud VPS Hosting Plan . Standard VPS Plans . Standard Cloud VPS Plans . Support Is Actually Supportive . Pros and Cons of ScalaHosting . My Final Thoughts . scalahosting . wordpress . spanel . cloud . vps . hosting . plan . spectra . website . builder . softaculous . nextcloud . gtmetrix . cheap . plan . entry . cloud . mini . plan . shared . hosting . build . 1 . support . chat . temporary . domain . own . domain . control . panel . performance . checker . web . hosting . shared . plans . customer . support . invoiceplane . firewall . manager . backups . nvme . ssds . bandwidth . cpu . cores . ram . ssl . certificates . cdn . integration . object . cache . pci-compliant . daily . backups . nameservers . Key Takeaways . My Experience Using ScalaHosting's Cheap Hosting Plan . Plans & Pricing . Performance . My Experience Using ScalaHosting's WordPress Hosting Plan . Using SPanel to Build My WordPress Site . My Experience Using ScalaHosting's Cloud VPS Hosting Plan . Standard VPS Plans . Standard Cloud VPS Plans . Support Is Actually Supportive . Pros and Cons of ScalaHosting . My Final Thoughts . scalahosting . wordpress . spanel . cloud . vps . hosting . plan . spectra . website . builder . softaculous . nextcloud . gtmetrix . cheap . plan . entry . cloud . mini . plan . shared . hosting . build . 1 . support . chat . temporary . domain . own . domain . control . panel . performance . checker . web . hosting . shared . plans . customer . support . invoiceplane . firewall . manager . backups . nvme . ssds . bandwidth . cpu . cores . ram . ssl . certificates . cdn . integration . object . cache . pci-compliant . daily . backups . nameservers",
+  "source": "manual"
+ },
+ {
+  "url": "https://www.techradar.com/reviews/scalahosting",
+  "title": "ScalaHosting web hosting review | TechRadar",
+  "words": 273,
+  "headings": [
+   [
+    "h2",
+    "TechRadar Verdict"
+   ],
+   [
+    "h2",
+    "Reasons to buy"
+   ],
+   [
+    "h2",
+    "Reasons to avoid"
+   ],
+   [
+    "h2",
+    "Pricing & plans"
+   ],
+   [
+    "h2",
+    "ScalaHosting shared hosting"
+   ],
+   [
+    "h2",
+    "ScalaHosting WordPress hosting"
+   ],
+   [
+    "h2",
+    "Speed & performance"
+   ],
+   [
+    "h2",
+    "In use"
+   ],
+   [
+    "h2",
+    "Support"
+   ],
+   [
+    "h2",
+    "Final verdict"
+   ]
+  ],
+  "text": "TechRadar Verdict . Reasons to buy . Reasons to avoid . Pricing & plans . ScalaHosting shared hosting . ScalaHosting WordPress hosting . Speed & performance . In use . Support . Final verdict . scalahosting . spanel . cpanel . whm . managed . cloud . hosting . entry . cloud . mini . start . advanced . shared . hosting . wordpress . self-managed . vps . nvme . storage . dedicated . ip . dedicated . cpu . cores . daily . backups . security . tools . malware . protection . ssl . certificates . free . domain . renewal . prices . rise . sharply . data . center . dallas . bulgaria . support . responsive . hands-on . one . website . first . year . monthly . billing . TechRadar Verdict . Reasons to buy . Reasons to avoid . Pricing & plans . ScalaHosting shared hosting . ScalaHosting WordPress hosting . Speed & performance . In use . Support . Final verdict . scalahosting . spanel . cpanel . whm . managed . cloud . hosting . entry . cloud . mini . start . advanced . shared . hosting . wordpress . self-managed . vps . nvme . storage . dedicated . ip . dedicated . cpu . cores . daily . backups . security . tools . malware . protection . ssl . certificates . free . domain . renewal . prices . rise . sharply . data . center . dallas . bulgaria . support . responsive . hands-on . one . website . first . year . monthly . billing",
+  "source": "manual"
  }
 ]

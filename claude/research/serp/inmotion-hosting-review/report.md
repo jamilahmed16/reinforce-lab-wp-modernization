@@ -1,23 +1,24 @@
 # Competitor semantics: inmotion-hosting-review
 
 Our page: -
-Competitors analysed: 1 of 4 (a term counts as common when 3+ of them use it)
+Competitors analysed: 3 of 4 (a term counts as common when 3+ of them use it)
 
 | # | Page | Words | Headings |
 |---|---|---|---|
 | 1 | [InMotion Hosting Review 2026: Hosting for Tech-Savvy Users, Not for Ev](https://www.cnet.com/tech/services-and-software/inmotion-hosting-review/) | 3064 | 20 |
+| 2 | [InMotion Hosting Review 2026: Hands-On Testing](https://www.hostingadvice.com/hosting-review/inmotion/) | 307 | 10 |
+| 3 | [InMotion Hosting review | TechRadar](https://www.techradar.com/reviews/inmotion-hosting) | 263 | 9 |
 
 **Not fetched (read these with Exa):**
-- https://www.hostingadvice.com/hosting-review/inmotion/ (403) 
 - https://www.top10-websitehosting.co.uk/inmotion-review/ (0) cURL error 56: Connection closed abruptly
-- https://www.techradar.com/reviews/inmotion-hosting (200) too little text (script-rendered or blocked)
 
-## Common terms (0)
+## Common terms (16)
 
+bandwidth (3), support (3), dedicated (3), guarantee (3), performance (3), core (3), plan (3), wordpress hosting (3), power (3), domain (3), cpanel (3), inmotion hosting (3), renewal (3), vps hosting (3), launch (3), storage (3)
 
+## Questions competitors answer in headings (1)
 
-## Questions competitors answer in headings (0)
-
+- What types of hosting does InMotion Hosting offer?
 
 ## Headings by page
 
@@ -42,3 +43,26 @@ Competitors analysed: 1 of 4 (a term counts as common when 3+ of them use it)
 - H3 Reputation is mostly good, with some concerns
 - H2 InMotion can work for tech-savvy users, but it’s not the best choice
 - H3 The Latest from Dianna
+
+**InMotion Hosting Review 2026: Hands-On Testing**
+- H2 Key Takeaways
+- H2 My Experience Using InMotion's Cheap Hosting Plan
+- H3 Performance
+- H2 My Experience Using InMotion's WordPress Hosting Service
+- H2 My Experience Using InMotion's VPS Hosting Service
+- H3 Deploying and Managing My Server
+- H2 My Experience Using InMotion's Dedicated Hosting Service
+- H2 Customer Support
+- H2 Pros and Cons of InMotion
+- H2 My Final Thoughts
+
+**InMotion Hosting review | TechRadar**
+- H2 TechRadar Verdict
+- H2 What types of hosting does InMotion Hosting offer?
+- H2 Shared hosting
+- H2 Managed WordPress hosting
+- H2 VPS hosting
+- H2 Dedicated servers
+- H2 Performance
+- H2 Support
+- H2 Final verdict

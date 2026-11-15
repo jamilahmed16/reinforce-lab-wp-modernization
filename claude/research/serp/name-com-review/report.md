@@ -1,11 +1,12 @@
 # Competitor semantics: name-com-review
 
 Our page: -
-Competitors analysed: 1 of 2 (a term counts as common when 3+ of them use it)
+Competitors analysed: 2 of 3 (a term counts as common when 3+ of them use it)
 
 | # | Page | Words | Headings |
 |---|---|---|---|
 | 1 | [Name.com Review: Honest Analysis of Its Web Hosting [2026]](https://www.websiteplanet.com/web-hosting/name-com/) | 4411 | 37 |
+| 2 | [Name.com Review](https://larryludwig.com/name-com-review/) | 227 | 14 |
 
 **Not fetched (read these with Exa):**
 - https://www.techradar.com/reviews/namecom (200) too little text (script-rendered or blocked)
@@ -63,3 +64,19 @@ Competitors analysed: 1 of 2 (a term counts as common when 3+ of them use it)
 - H3 How beginner-friendly is Name.com for creating a business or personal site?
 - H3 Does Name.com offer any advanced hosting solutions, such as VPS or dedicated servers?
 - H3 Can users easily transfer domains to or from Name.com?
+
+**Name.com Review**
+- H2 Name.com Pricing
+- H2 Domain.com Alternatives
+- H2 Pros of Name.com
+- H2 Complementary Products
+- H2 Sophisticated Search
+- H2 TLD Selection
+- H2 Simple Transfer Process
+- H2 Inexpensive Upfront Pricing
+- H2 Cons of Name.com
+- H2 Domain Search / Purchasing Process
+- H2 Pricing
+- H2 Upsells / Cross Sells
+- H2 Support
+- H2 Next Steps

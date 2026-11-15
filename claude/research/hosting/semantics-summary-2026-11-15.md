@@ -45,3 +45,36 @@ Tool: `claude/tools/serp-semantics.py`. Reports: `claude/research/serp/<slug>/re
 1. Re-fetch blocked pages with Exa `web_fetch_exa` (CNET, TechRadar, Website Planet) and rerun the tool for: namecheap, nexcess, scalahosting, domain-com, network-solutions, liquid-web, inmotion, digitalocean, plesk, spaceship, name-com, ssls, crazy-domains, bigscoots.
 2. Get volumes, keyword difficulty, related and question keywords from Semrush or DataForSEO for each "[host] review", plus "[host] pricing", "[host] coupon", "[host] vs [other]", "is [host] good".
 3. Replace the Firecrawl result order with the true Google top 10.
+
+
+## Update: rerun with pages read through Exa and Firecrawl (15 Nov, later)
+The tool now accepts manual pages saved in `claude/research/serp/<slug>/manual/`. Manual pages hold exact headings and an approximate key-phrase list (not full text), so term counts for those pages are indicative.
+
+| Report | Pages | Common terms | Note |
+|---|---|---|---|
+| hostinger-review | 5 of 5 | 152 | good |
+| hosting-com-review | 5 of 5 | 287 | good |
+| namecheap-review | 3 of 3 | 18 | indicative |
+| nexcess-review | 3 of 3 | 27 | indicative |
+| scalahosting-review | 3 of 4 | 15 | indicative |
+| bigscoots-review | 4 of 4 | 23 | two sources are old (2020, 2021) |
+| inmotion-hosting-review | 3 of 4 | 16 | indicative |
+| digitalocean-review | 3 of 3 | 17 | indicative |
+| domain-com-review | 3 of 4 | 7 | indicative |
+| network-solutions-review | 3 of 3 | 8 | indicative |
+| spaceship-review | 3 of 3 | 6 | indicative |
+| liquid-web-review | 2 of 3 | 0 | needs a third page |
+| crazy-domains-review | 2 of 2 | 0 | too few competitor articles found |
+| name-com-review | 2 of 3 | 0 | needs a third page |
+| plesk-review | 1 of 3 | 0 | needs more pages; Plesk is a control panel, so the intent is different |
+
+## What the competitor pages have in common (the standard review structure)
+Verdict or "at a glance" box; pros and cons; pricing and plans with renewal prices; performance tests (speed, uptime, stress test); ease of use; security; customer support; alternatives or "X vs Y"; FAQ. Most testers use GTmetrix, Grafana, Loader.io or WebPageTest and report LCP, response time and uptime.
+
+## Gaps that none of the top pages fill (our differentiators)
+1. AI features that are real and documented (Hostinger Agent, Cloudways Copilot and AI agents, hosting.com Orbi and MCP, Namecheap AI for WordPress, Spaceship AI builder). Most reviews mention the AI builder only briefly.
+2. Renewal pricing in one table, with the first-term and renewal price side by side. Reviewers warn about it but rarely tabulate it.
+3. A dated "checked on" offer box with the real end date.
+4. Who should avoid the host, with evidence (for example Namecheap "weak hosting", hosting.com high renewals, Hostinger not PCI compliant).
+5. Ownership and brand facts (Nexcess absorbed into Liquid Web, hosting.com is A2 Hosting, Domain.com and Network Solutions share the same service).
+6. Our own test results, if Jamil has accounts.
