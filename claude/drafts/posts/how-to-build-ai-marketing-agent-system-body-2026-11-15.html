@@ -14,6 +14,8 @@
 <li>Scoring and routing new leads by rules you write down.</li>
 <li>Drafting briefs, outlines and first drafts for a person to edit.</li>
 <li>Checking campaign setup, tags and links before launch.</li>
+<li>Drafting personalized outreach for a person to review, using fields from your CRM.</li>
+<li>Summarizing campaign performance and suggesting what to test next.</li>
 </ul>
 <p>Start with bounded, repeatable, measurable tasks. Keep customer-facing content, budgets and claims behind a person's approval. The nine-step plan below shows how.</p>
 <h3>How do you use an AI agent for marketing?</h3>
@@ -50,6 +52,21 @@
 </tbody>
 </table>
 <p>One principle holds across the sources we read: your CRM and warehouse stay the systems of record. If identity is messy, every agent repeats the mess faster. Keep decisions and actions separate. An agent or rule proposes a change with a reason, and the tool that owns the setting carries it out after an approval that matches the risk, with a log of who approved it.</p>
+
+<h2>What technical stack do you need to build an AI marketing agent?</h2>
+<p>You do not need a big stack to start. An autonomous AI marketing agent usually has the same few parts, whether you build it or buy it:</p>
+<table>
+<thead><tr><th>Part</th><th>What it does</th><th>Keep it simple by</th></tr></thead>
+<tbody>
+<tr><td>Model</td><td>Reads the task and writes or decides.</td><td>Starting with one model and one task.</td></tr>
+<tr><td>Orchestration</td><td>Runs the steps in order, calls tools and handles retries.</td><td>Using a workflow tool before writing your own code.</td></tr>
+<tr><td>Tools and connections</td><td>Lets the agent read your CRM, ad account, analytics and CMS.</td><td>Giving read access first and write access later.</td></tr>
+<tr><td>Knowledge store</td><td>Holds brand rules, approved facts and past results.</td><td>Starting with a short, approved document set.</td></tr>
+<tr><td>Review queue</td><td>Sends drafts and actions to a person for approval.</td><td>Requiring approval for anything that goes public or spends money.</td></tr>
+<tr><td>Logs and measures</td><td>Records what the agent did and what happened next.</td><td>Logging every action from day one.</td></tr>
+</tbody>
+</table>
+<p>This matches the six layers above. The stack is the set of tools you choose for each layer. Pick the smallest set that does one job well, then add parts when a real need appears.</p>
 
 <h2>How should human review work?</h2>
 <p>Design review before you build the agent. Set each gate by what a mistake would cost, not by how confident the model sounds, because models are often wrong in fluent prose. One practitioner framework sorts actions into three levels, which we find useful:</p>
