@@ -1,0 +1,228 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "An AI brand visibility tool runs a fixed list of buyer questions through AI tools such as ChatGPT, Gemini and Perplexity and records whether your brand is named, linked or described correctly. Good tools show full answers, sources and history. No tool can give a reliable rank inside AI answers, because answers change from run to run. Test by hand first, then buy on what you can verify.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Forrester: B2B Buyers Make Zero-Click Buying Number One (January 2026)",
+    "url": "https://www.forrester.com/blogs/b2b_buyers_make_zero_click_buying_number_one/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Gartner: Survey Finds 69% of B2B Buyers Turn to Sales Reps to Validate AI-Generated Insights (May 2026)",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-05-20-gartner-survey-finds-sixty-nine-percent-of-b-two-b-buyers-turn-to-sales-reps-to-validate-ai-generated-insights"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "6sense: 2026 Global B2B Buyer Experience Report (November 2026)",
+    "url": "https://6sense.com/news/6sense-research-finds-that-vendors-need-to-be-known-and-preferred-before-the-buying-journey-begins"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "SparkToro and Gumshoe: AIs are highly inconsistent when recommending brands or products (January 2026)",
+    "url": "https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guide to optimizing for generative AI features on Google Search",
+    "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: AI Visibility Audit",
+    "url": "https://ahrefs.com/blog/ai-visibility-audit/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: Free AI Visibility Checker",
+    "url": "https://ahrefs.com/ai-visibility-checker"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Semrush: Free AI Search Visibility Checker",
+    "url": "https://www.semrush.com/free-tools/ai-search-visibility-checker/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Peec AI: Pricing (read November 2026)",
+    "url": "https://peec.ai/pricing"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Otterly.AI: Pricing (read November 2026)",
+    "url": "https://otterly.ai/pricing"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Search Atlas: How to choose an AI visibility tracking tool",
+    "url": "https://searchatlas.com/blog/choose-ai-visibility-tracking-tool/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Visilay: How to choose an AI visibility tool, 10 criteria",
+    "url": "https://www.visilay.com/blog/how-to-choose-ai-visibility-tool/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is an AI brand visibility tool?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Software that runs a fixed list of buyer questions through AI tools such as ChatGPT, Gemini, Perplexity and Google's AI Overviews on a schedule and records whether your brand is named, linked or described correctly, compared with competitors."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What do AI visibility tools track?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Most report mentions, citations, share of voice, sources cited, sentiment and history. Ahrefs and Semrush both list mentions, citations and share of voice or a visibility score. Check that a tool keeps mentions and citations separate."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much do AI visibility tools cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It varies. In November 2026, Peec AI listed $95, $245 and $495 a month for 50, 150 and 350 prompts, and Otterly listed $29, $189 and $489 a month. Both offer custom enterprise plans. Prompts, engines, markets and staff time decide the real cost."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Are AI visibility scores accurate?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "They are directional. SparkToro and Gumshoe found less than a 1 in 100 chance that ChatGPT or Google's AI would give the same list of brands twice for one prompt, so a score from one day is a snapshot. Look for repeated runs and a trend."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need a paid AI visibility tool?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Not to start. Test 20 to 30 buyer questions by hand, use Search Console's Generative AI report and the free Ahrefs and Semrush checkers. Buy software when your prompt list or markets outgrow a spreadsheet."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can an AI visibility tool show my rank in AI answers?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Some report a position, but the order of brands in AI answers is close to random, so it is not a reliable measure. Use the share of runs in which you appear instead."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do AI visibility tools fix problems automatically?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. They show gaps. Someone still has to correct facts, write pages and earn mentions, so decide who owns that work before you buy."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Which AI engines should a B2B tool cover?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The ones your buyers use, on the plan you would buy. For most B2B teams that means ChatGPT, Google AI Overviews and AI Mode, Perplexity and Gemini. Entry plans often cover only some engines, so check the plan."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How many B2B buyers use AI to research vendors?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It depends on the question asked. Forrester found 94% use AI somewhere in buying, Gartner 45% on a recent purchase, and 6sense 81% use an LLM in an evaluation but only 26% to discover vendors."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I test an AI visibility tool before buying?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Write 20 to 30 buyer prompts without your brand name, run a hand baseline, trial each tool with the same prompts and competitors, compare the tool with your baseline, open ten answers to confirm the sources are real, and score each tool on a fixed checklist."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: AI Brand Visibility Tools for B2B: What They Track and How to Choose",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Prompt",
+    "description": "The question you type into an AI tool.",
+    "url": "https://reinforcelab.online/preview/#term-prompt"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Mention",
+    "description": "An answer that names your brand.",
+    "url": "https://reinforcelab.online/preview/#term-mention"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Citation",
+    "description": "An answer that links to a page of yours.",
+    "url": "https://reinforcelab.online/preview/#term-citation"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Share of voice",
+    "description": "Your brand mentions divided by all brand mentions in the test.",
+    "url": "https://reinforcelab.online/preview/#term-share-of-voice"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Proof of value",
+    "description": "A short trial that checks a tool against your own hand test.",
+    "url": "https://reinforcelab.online/preview/#term-proof-of-value"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Engine",
+    "description": "An AI search product such as ChatGPT, Gemini or Perplexity.",
+    "url": "https://reinforcelab.online/preview/#term-engine"
+   }
+  ]
+ }
+]
