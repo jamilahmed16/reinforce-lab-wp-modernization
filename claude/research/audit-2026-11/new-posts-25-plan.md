@@ -129,3 +129,23 @@ What it changes:
 - **Post 12 (GEO for law firms)** stays small but has the highest CPC ($42.46) and a weak top 10, so it moves to batch 2.
 - **Post 7 (AI visibility tools)** gains a Perplexity tracking section (about 2,000 more searches at KD 8 to 36); **post 5** gains "how to rank in chatgpt search" (390 at KD 28).
 - CPC is $0 on the two SEO-for-industry terms (no advertisers), so their value is authority and fit, not ad cost.
+
+
+## Keyword Overview data received 15 Nov 2026 (US, desktop; screenshots in `claude/data/semrush/overview-*-2026-11-15.*`) `[VERIFIED from the screenshots]`
+
+| Term | Volume | KD | CPC | Intent | Variations (total volume) | Questions (total volume) | Top 10 weakness | Post |
+|---|---|---|---|---|---|---|---|---|
+| marketing automation examples | 720 | 30 | $4.08 | Informational | 324 (2.5K) | 13 (50) | Top page Page AS 11 (braze.com), a Reddit thread at 2nd | 18 |
+| chatgpt seo (refresh of the 14 Nov data) | 1,600 | 49 | $11.01 | Informational | 1.7K (27.7K) | 168 (2.2K) | Reddit thread first (Page AS 26), chatgpt.com second | 5 |
+| llm seo | 1,900 | 42 | $13.21 | Informational | 1.2K (29.9K) | 59 (570) | Reddit thread first (Page AS 23), vercel and yoast follow | 11 |
+| saas seo | 2,900 | 34 | $17.56 | Informational | 3.4K (60.5K) | 236 (1.6K) | Page AS 7 to 16 at the top (marketermilk, saas-seo.com, backlinko) | 21 |
+| marketing workflow automation | 390 | 37 | $28.42 | Informational | 1.2K (11.3K) | 91 (290) | Page AS 2 to 9 on six of the top 10; Salesforce 43 and HubSpot 54 are the strong ones | 17 |
+
+What it changes:
+- **Post 21 (SaaS SEO):** the head term has the weakest top 10 in the plan (Page AS 7 to 16 at the top) and 60.5K variation volume. Variations with buyer intent (saas seo agency 2,900 at KD 35, saas seo consultant 1,600 at KD 9, saas seo services 1,600 at KD 13, enterprise saas seo 1,600 at KD 15) support a "how to choose help" section. Questions: how to improve seo for saas companies (110), what is saas seo (110), how important is seo in a saas business (50), how to create a seo strategy for a saas product (50).
+- **Post 11 (LLM SEO):** variations llm seo tool (1,300 at KD 21), llm seo for service businesses (720 at KD 13) and llm seo agency (590 at KD 16) are easier than the head term. Questions: what is llm seo optimization (110), what is llm seo (50), what is llm-seo (40).
+- **Post 5 (ChatGPT SEO):** chatgpt seo for roofers (590 at KD 2) is a local niche signal, not a post of its own yet. Questions: how to use chatgpt for seo (320 at KD 33), how to do seo for chatgpt (110), is chatgpt bad for seo (110 at KD 20).
+- **Post 17 (marketing workflow automation):** CPC $28.42 is the highest in the plan, the top 10 is weak, and the 290-volume question list is small. Most variation volume is odd long phrases (for example email marketing automation workflow drip campaign data structure, 1,900); the real term is marketing automation workflow (880 at KD 38).
+- **Post 18 (marketing automation examples):** 720 at KD 30 with a weak top page (Page AS 11); the question list is tiny (50). Variations: b2b marketing automation examples (110 at KD 29), automated nurturing journeys email marketing examples (110 at KD 28).
+
+**Keyword Overview screenshots still missing (5):** ai search audit (post 8), zero click searches (post 9), llms.txt (post 14), seo ai agent (post 19), ai visibility score (post 23).
