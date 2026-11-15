@@ -13,9 +13,12 @@ Rule: cite these only as "tested by [publisher]" with method, period and date. O
 | Nexcess / Liquid Web | Website Planet, updated 23 Mar 2026 | Spark plan test site, 1 week | No downtime in the test week; load 1 to 1.5 s at peak, 0.5 to 1 s quiet; live chat connected immediately; ticket answered in 15 minutes. Says Liquid Web "fully absorbed Nexcess into its brand"; 30-day money-back; no free domain, no DDoS protection (as stated by Website Planet). |
 | Network Solutions | HostingAdvice, 3 weeks, GTmetrix | cheap plan, WordPress plan, eCommerce plan | Cheap plan: grade B, 86%, LCP up to 2.0 s; WordPress: grade C, 2.6 s; eCommerce: grade A, LCP 1.2 s. Support B+, human reply in a minute after an AI intro. Cons: slower than rivals, no CDN or NVMe, sign-up pages lack plan detail. Renewals: Starter $2.39 then more; builder plans $15.99 to $28.99 renewal. AI website builder praised. |
 | InMotion | Top10 Website Hosting, updated 11 Mar 2025 (OLD) | Launch plan, Pingdom every minute | 100% uptime; average response 553 ms (peak 861 ms); 95/100, load 1.67 s. 90-day money-back stated. Old test, do not present as current. |
-| ScalaHosting | TechRadar page fetched (modified 16 Oct 2026) but the text did not return; Website Planet page errored | not captured | NOT YET: need another independent source (HostingAdvice "We Tested 3 Plans", Oct 2026) |
-| BigScoots | Skipblast (2021, old) | not captured | NOT YET |
-| DigitalOcean, Crazy Domains, Spaceship, Name.com, SSLs.com, Plesk, Domain.com | not collected | | NOT YET (review-site ratings only, see serp file) |
+| ScalaHosting | HostingAdvice, modified 12 Oct 2026 | Tested Mini shared plan, Entry Cloud (WordPress) and Build #1 VPS; SPanel, Softaculous, GTmetrix | Cheap plan GTmetrix B (FCP 1.9 s, speed index 2.8 s); WordPress plan A, 97% performance, LCP 983 ms, TBT 0 ms, CLS 0; VPS B, 76%, LCP 1.3 s, TBT 376 ms. Support real person, ticket fixed in 15 to 20 minutes. 99.99% uptime is a guarantee, not measured. Cons: two sites to use (account and SPanel), cheap plan has little storage; promo price jumps about $7 per month at renewal. |
+| BigScoots | HostingPill, updated 17 Jan 2025 (OLD); Skipblast 2021 (OLD) | no method or numbers on the page | Only qualitative: live chat first reply within about a minute; pros: good performance, flexible prices, independently owned; cons: little storage, entry shared plan has no domain, non-shared plans monthly only. Treat as weak evidence; need a newer test or our own. |
+| Domain.com | HostAdvice, 8 May 2026 | Signed up, checkout, support test with a technical pre-sales question | No uptime or speed numbers. Support: chat starts with five bot prompts, human accurate; support surfaces under the Network Solutions brand. Pros: free SSL, AI website builder on all plans, privacy on by default. Cons: no VPS, renewal rates steep. NOTE: Domain.com and Network Solutions share support infrastructure. |
+| DigitalOcean | vpsbenchmarks.com page fetched, text not returned | | NOT YET |
+| Liquid Web (own products) | liquidweb.com homepage returned no prices | | NOT YET |
+| Crazy Domains, Spaceship, Name.com, SSLs.com, Plesk | not collected | | NOT YET (ratings only in serp file) |
 
 ## Offers as stated by the hosts (read 15 Nov 2026)
 | Host | Offer | Dates | Code | Source page |
@@ -36,3 +39,9 @@ CONFLICT TO RESOLVE: Jamil's table says hosting.com runs to 30 Nov with an extra
 - "best ai web hosting": webhostmost.com blog "Best AI Web Hosting in 2026", Hostinger AI builder page, Cybernews AI builders, Zapier, Wix. No clear authority on hosts' AI features, which is our gap to fill.
 - "best wordpress hosting 2026": hostingstep, wpbeginner (Hostinger best overall), zdnet (Hostinger best overall), themeisle, zonelight, wpexpertlab.
 - Related existing posts to update later: /best-web-hosting-services/ (378), /best-cloud-web-hosting-services/ (368), and the nine tutorials.
+
+## Still open after round 3
+- InMotion prices: page is blocked behind a chat widget in the scrape. Need Jamil's affiliate dashboard or a browser screenshot of the plans. Independent test is from Mar 2025 (old).
+- Liquid Web own products (VPS, bare metal, cloud) and AI features: not captured; homepage gave no prices.
+- DigitalOcean independent benchmark, Spaceship, Crazy Domains, Name.com, SSLs.com, Plesk: no independent tests collected. These reviews will be "from the host's documentation" unless Jamil has accounts.
+- Cloudways, Namecheap, Domain.com, Network Solutions offer end dates: use Jamil's dates and re-check on publish day.
