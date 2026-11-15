@@ -140,7 +140,7 @@ Notes (INFERENCE):
 - InMotion review (KD 56, needs about 90 referring domains): top 10 is authority sites (HostingAdvice, CNET, Tom's Hardware, CrazyEgg). Harder; its Reddit thread title says "going into 2026 honest", so current-year freshness matters.
 - Cloudways pricing: the SERP is garbage (spam subdomains), Cloudways itself is missing, and the top domain authority averages 5. A real, dated Cloudways pricing section or page could take this. VERIFY the real prices from Cloudways first and do not copy the spam results.
 - MCP server hosting (KD 32, 170 US): mix of developer docs (Cloudflare, Microsoft, Render) and tiny sites (AS 7 mcphosting.io). Pair with "cloudways mcp" 210 and "hostinger mcp" 110 for an AI-hosting guide.
-- Still missing Semrush SERPs: hostinger review, cloudways review, hosting.com review, best wordpress hosting. (Kinsta review is now in.)
+- (Hostinger review and hosting.com review were later added in batch 12, partly cropped.) (Kinsta review is now in.)
 
 ## Batch 10 (5 keywords)
 | Keyword | Vol | KD | Intent | Top 10 (order) |
@@ -172,3 +172,14 @@ Notes (INFERENCE):
 - Kinsta vs WP Engine, Cloudways vs WP Engine and Kinsta vs SiteGround: three low-volume (110 to 260) but very high-CPC ($40 to $133) comparison pages with KD 15 to 20. They are the cheapest wins per effort in the CPC sense. A single "managed WordPress hosting comparison" page could cover all three plus Kinsta vs Cloudways, if you prefer fewer pages (brand-safe).
 - Spaceship promo code (CPC $50.52, KD 37): Spaceship's own promos page ranks first; small coupon sites rank 4 to 8, and an unrelated WADA page ranks #10, so the SERP is thin. Keep as a section in the Spaceship review plus the deals hub.
 - SERP data now collected for all Tier 1 review keywords except hostinger review and hosting.com review.
+
+## Batch 12 (2 screenshots, both cropped: only the first 2 SERP rows are visible)
+| Keyword | Vol | KD | CPC | What is visible |
+|---|---|---|---|---|
+| hostinger review | 1,000 | 69 | $5.11 | Global 4.3K (India 590). Needs about 150 referring domains. Average top-10 authority 72. Variations 607, 6.1K total: "hostinger reviews" 1.3K (KD 66), "hostinger review 2026" 480 (KD 60), "hostinger website builder review" 480 (KD 25), "hostinger horizons review" 210 (KD 26). Questions 3, 20 total. Cluster: is hostinger good, hostinger hosting review, rating hosting. SERP visible: #1 Reddit (r/Hostinger, "hostinger reviews or experience from real users"), #2 Trustpilot. Rest cut off. |
+| hosting.com review | 140 | 12 | $6.12 | Very easy. Global 180. The 293 variations total 52.6K but are Semrush noise ("hosting reviews by uploadblogreview com" 33.1K and similar spam strings); do not use. Average top-10 authority 61. SERP visible: #1 Reddit (r/HostingReport, "hosting.com is trash as well as their management"), #2 HostingAdvice (hosting-com-vs-greengeeks). Rest cut off. |
+
+Notes (INFERENCE):
+- Both SERPs are incomplete (screenshots cut off after row 2). Enough to confirm difficulty and the headline variants. For the exact top 10, a full-page screenshot is still needed, but it does not block writing.
+- Hostinger review: the 480 "website builder review" (KD 25) and 210 "horizons review" (KD 26) are easier sub-angles that belong in the review as sections and link to the AI builder page.
+- hosting.com review: the Reddit thread title shows real complaints; a balanced page should address support and management complaints directly.
