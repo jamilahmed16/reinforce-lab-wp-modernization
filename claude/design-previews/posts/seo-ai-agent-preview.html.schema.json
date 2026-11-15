@@ -1,0 +1,218 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "An SEO AI agent is software that uses a language model plus tools, such as SEO data, a crawler or Search Console, to carry out a multi-step search task. It works best on bounded, repeatable jobs with real data and a person approving the result. Without real data it can invent numbers, and publishing pages at scale risks Google's spam policy. It does not guarantee rankings.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: AI agents for SEO, what they are, how they work and how to build one (May 2026)",
+    "url": "https://ahrefs.com/blog/ai-agents-for-seo/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Semrush: How to build your first AI SEO agent (September 2026)",
+    "url": "https://www.semrush.com/blog/seo-ai-agent/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Gartner: Gartner predicts over 40% of agentic AI projects will be canceled by end of 2027 (June 2025)",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Gartner: Marketing Technology Survey data snapshots (2025)",
+    "url": "https://emt.gartnerweb.com/ngw/globalassets/en/marketing/documents/marketing-technology-survey-data-snapshots.pdf"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guidance on generative AI content on your website",
+    "url": "https://developers.google.com/search/docs/fundamentals/using-gen-ai-content"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Spam policies for Google web search",
+    "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central Blog: Google Search's guidance about AI-generated content (February 2023)",
+    "url": "https://developers.google.com/search/blog/2023/02/google-search-and-ai-content"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Total Authority: AI SEO agents, what they can and can't do in 2026 (July 2026)",
+    "url": "https://totalauthority.com/ai-seo-agents"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Krater: AI SEO agent, audits, workflows and limits (November 2026)",
+    "url": "https://krater.ai/blog/ai-seo-agent"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "WebYes: AI SEO agents, what they can do and what needs a human (October 2026)",
+    "url": "https://www.webyes.com/blogs/ai-seo-agents/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What are AI SEO agents?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Software that uses a language model plus tools, such as SEO data, a crawler or Search Console, to carry out a multi-step search task, such as keyword clustering, a technical audit or a refresh list. A person should approve the result."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What are AI-powered SEO agents?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "They are agents that connect AI models to live SEO data through an API or an MCP connection. Ahrefs and Semrush both describe agents built on their data for research, audits, internal linking and reporting."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How can I use AI agents for SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Pick one narrow job, connect real data, start read-only, require evidence for each finding, use a staging copy for edits, add approval gates for the brief, draft and publish steps, and compare results with a baseline."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How to use AI agents in SEO safely?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Give the agent a narrow outcome, real data and read-only access first. Require it to quote the page, query or row behind each finding, protect credentials and personal data, log actions and approve anything that changes the live site."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do AI agents write SEO content?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "They draft from a brief and sources, often in several steps. Google says AI use is not against its guidelines but that generative models predict likely words and do not retrieve facts. Add first-hand experience and sources, and check every fact."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What can an SEO AI agent do well?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Bounded repeatable work: keyword research and clustering with live data, briefs, refresh lists from Search Console, crawl-based audits, internal link suggestions, monitoring and report drafts."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What can an SEO AI agent not do?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It cannot know search volumes or page content it has not been given, judge your brand and strategy, or guarantee rankings. It can invent data, repeat stale facts and cause harm if given unchecked write access."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Will AI agents replace SEO specialists?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Not on the evidence we found. Agents take over data collection and first drafts. People still set strategy, judge brand fit, check facts, earn mentions and decide what to publish."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is using AI agents for SEO against Google's rules?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Not by itself. Google says appropriate use of AI is not against its guidelines. Generating many pages without adding value for users is listed as scaled content abuse in its spam policy."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I choose an SEO AI agent?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Ask what it can see, what it can change, whether it cites evidence, what approval controls and logs exist, and how you will measure it against real search data. Test one workflow before a long contract."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: SEO AI Agent: What AI Agents for SEO Can and Cannot Do",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "AI agent",
+    "description": "Software that uses a language model and tools to plan and carry out a multi-step task toward a goal.",
+    "url": "https://reinforcelab.online/preview/#term-ai-agent"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "MCP",
+    "description": "Model Context Protocol, a way for AI tools to connect to data providers and other tools.",
+    "url": "https://reinforcelab.online/preview/#term-mcp"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Agent washing",
+    "description": "Rebranding existing products, such as chatbots, as AI agents without real agent features.",
+    "url": "https://reinforcelab.online/preview/#term-agent-washing"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Scaled content abuse",
+    "description": "Making many pages mainly to manipulate search rankings, which Google treats as spam.",
+    "url": "https://reinforcelab.online/preview/#term-scaled-content-abuse"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Human gate",
+    "description": "A point where a named person must approve before work moves on.",
+    "url": "https://reinforcelab.online/preview/#term-human-gate"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Shadow mode",
+    "description": "Running an AI step alongside a person doing the same task, and comparing outputs.",
+    "url": "https://reinforcelab.online/preview/#term-shadow-mode"
+   }
+  ]
+ }
+]
