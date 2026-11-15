@@ -1,0 +1,650 @@
+[
+ {
+  "url": "https://www.mailjet.com/blog/email-best-practices/email-automation-examples/",
+  "title": "15 Email Automation Examples For Your Next Workflow (2025) | Mailjet",
+  "words": 3142,
+  "headings": [
+   [
+    "h1",
+    "15 email automation examples for your next workflow"
+   ],
+   [
+    "h2",
+    "What is an automated email workflow?"
+   ],
+   [
+    "h2",
+    "1. Welcome email examples"
+   ],
+   [
+    "h2",
+    "2. Onboarding email examples"
+   ],
+   [
+    "h2",
+    "3. Abandoned cart email examples"
+   ],
+   [
+    "h2",
+    "4. Referral email examples"
+   ],
+   [
+    "h2",
+    "5. Transactional email examples"
+   ],
+   [
+    "h2",
+    "6. Order confirmation email examples"
+   ],
+   [
+    "h2",
+    "7. Birthday email examples"
+   ],
+   [
+    "h2",
+    "8. Post-purchase email examples"
+   ],
+   [
+    "h2",
+    "9. Feedback email examples"
+   ],
+   [
+    "h2",
+    "10. Back-in-stock email examples"
+   ],
+   [
+    "h2",
+    "11. B2B lead-nurturing email examples"
+   ],
+   [
+    "h2",
+    "12. Re-engagement email examples"
+   ],
+   [
+    "h2",
+    "13. Upsell and cross-sell examples"
+   ],
+   [
+    "h2",
+    "14. Anniversary email examples"
+   ],
+   [
+    "h2",
+    "15. Milestone email examples"
+   ],
+   [
+    "h2",
+    "Build email automation workflows with Mailjet"
+   ]
+  ],
+  "text": "Email best practices 15 email automation examples for your next workflow Looking to make a bigger impact with your small team? Email automation is how modern marketers punch above their weight. They\u2019re doing more with less, and looking good doing it. June 13, 2025 We\u2019ve all been there \u2013 late-night panic emails you forgot to send, manually tracking new signups one by one, chasing down stock re-suppliers\u2026 Well, automation says no to all of that. These 15 common email automation examples do the heavy lifting, so you can focus on strategy (or sleep). Ready to give it a go? Below you\u2019ll find exactly what to send \u2013 and when to send it \u2013 to turn your email strategy into a scalable, always-on revenue driver. Plus, Mailjet\u2019s email automation tools make it easy to build, send, and monitor your workflows \u2013 so you can finally get your beauty sleep. What is an automated email workflow? Think of it as your inbox autopilot. Automated email workflows are triggered by real customer actions, not your to-do list. Someone signs up? They\u2019re kindly welcomed aboard. New customer makes a purchase? They receive a timely receipt. A regular e-commerce shopper goes quiet? You check in. Once set up, these email campaigns run automatically in the background so you can stop chasing one-off sends and start scaling real relationships. With that said, here are 15 of the most common types of email automation you can set up as part for your long-term strategy: 1. Welcome email examples A welcome email is the first impression your brand makes after someone signs up. It sets the tone, establishes expectations, and guides your new user on what to do next \u2013 explore the product, claim an offer, or complete their profile. Brand: ClassPass Subject line: <first_name>, Welcome to ClassPass! Let\u2019s get started. Why it works: This email strikes the balance between excitement and clarity. The message is energetic (it\u2019s go time), visually engaging, and tailored to the user; thanks to email personalization parameters like <first_name> . It shows clearly what to do, where to go, and why it\u2019s worth sticking around. With one clear CTA and minimal distractions, it\u2019s easy for the reader to take action fast. How to make this work for your brand: Use a strong opener with a clear benefit. Your reader just said yes; now show them it was the right move. Add immediate value with personalized content, using dynamic fields like <first_name>, <location> , or <signup_source> . Keep your CTA bold and focused. One action is plenty. When to automate this email: Send immediately after signup . This is your first touchpoint, so timing is critical. Use automation to trigger this first email as soon as the new contact is added to your list. 2. Onboarding email examples Onboarding emails help your user take their first meaningful action (e.g., setting up their account). Think of them as a gentle nudge that says, \u201c You\u2019re here\u2026 so let\u2019s get started. \u201d Brand: Dropbox Subject line: Setup required: You haven\u2019t set up your folders yet\u2026 Why it works: This email cuts straight to the point. It flags an incomplete setup \u2013 a classic onboarding hurdle \u2013 and guides the user toward the fix with a bold CTA and a few helpful tips. The headline is urgent but not pushy, the value is clear, and the bonus storage offer adds a little extra motivation. Simple, focused, and actionable. How to make this work for your brand: Identify the user\u2019s next most important step. Now, make it the hero. Guide them toward action using clear, benefit-led copy. Add a timely incentive to sweeten the deal: discount, bonus, freebie. When to automate this email: Trigger 1\u20132 days after signup or product activation. Use behavior-based automation to nudge new subscribers who haven\u2019t yet taken a key action. 3. Abandoned cart email examples Abandoned cart emails are designed to bring your user back and help them cross the finish line. They recover lost sales, remind shoppers of what they left behind, and gently encourage them to complete their purchase. Brand: Cult Beauty Subject line: You left something in your basket \u2013 can we help? Why it works: It\u2019s personalized, visually focused, and product-led. It reminds the shopper what they left behind, showcasing items with images and pricing. Importantly, it repeats the CTA in multiple places. The added \u201c Just for You \u201d section is a smart play, suggesting alternative product recommendations if the original items no longer feel urgent. How to make this work for your brand: Highlight the abandoned products visually with images, prices, or ratings. Use persuasive but friendly language. Keep the tone helpful, not pushy. Offer curated alternatives or a discount. Just enough to tempt them back. When to automate this email: Send within 1\u20133 hours of cart abandonment . This way, you stay top-of-mind while intent is still high. Automation should be triggered by uncompleted checkout events. 4. Referral email examples Referral emails turn satisfied customers into your most persuasive marketing channel. They incentivize word-of-mouth by offering a win\u2013win \u2013 rewards for both referrer and referee. Brand: PayPal Subject line: Refer a friend. Earn a \u00a310 reward. Why it works: This email nails the basics \u2013 clear incentive, simple steps, repeat CTAs. The headline makes the value immediately evident, while the clean, numbered instructions remove any friction. The emphasis on ease of use ( \u201cinvite\u2013join\u2013earn\u201d ) keeps the reader focused on what they\u2019ll gain \u2013 and how fast. How to make this work for your brand: Lead with a bold headline that highlights the reward tangibly. Break down the process into clear steps to reduce friction. Repeat your CTA in key spots to keep the action front and center. When to automate this email: Trigger email once a customer has completed a purchase or shown engagement (e.g., after a second order). Schedule email sequences based on customer activity or lifecycle stage. 5. Transactional email examples Transactional emails confirm or inform. They\u2019re functional by nature, but still an opportunity to reinforce clarity and trust. Think receipts, shipping updates, password resets, and subscription confirmations. Brand: Apple Subject line: Your subscription confirmation Why it works: This email does exactly what it needs to do \u2013 it confirms the subscription with essential details (price, date, renewal terms), offers a clear path to manage or cancel, and reinforces trust with brand authority . The layout is clean and scannable; it optimizes the user experience and makes it easy to get the info needed at a glance. How to make this work for your brand: Prioritize clarity and accuracy. This isn\u2019t the place to be clever. Keep layout simple and readable: lists, bold labels, short paragraphs. Include next steps or support links to reduce user anxiety and prevent confusion. When to automate this email: Send in real-time as part of a backend system trigger. These emails must be immediate, so they\u2019re typically integrated via system events rather than delayed workflows. 6. Order confirmation email examples Order confirmation emails are one of the most common types of transactional emails, sent automatically after a purchase to confirm the details of an order. They\u2019re not just a receipt; they\u2019re a chance to reassure the customer, set expectations, and reinforce trust. Brand: Glossier Subject line: Order <order_number> confirmed Why it works: This email does the essentials well: confirms the order, shows what was purchased, and outlines what happens next. But it also brings the brand to life; from the product imagery to the warm, conversational tone. It blends utility with personality, making the post-purchase moment feel just as considered as the sale. How to make this work for your brand: Confirm the key details clearly: order number, items, total, and shipping info. Use branded design and tone to make the email feel like part of your customer experience. Reassure with next steps by letting your customer know what to expect and when. When to automate this email: A core transactional flow; send instantly after purchase . Should be triggered via API or automation platform webhook to ensure reliability and real-time delivery. 7. Birthday email examples Birthday emails are a feel-good, high-converting automation that reward your customers and strengthen brand loyalty. A well-timed gift, coupon, or discount turns a nice gesture into repeat revenue. Brand: Dec\u00e1ntalo Subject line: Your birthday is coming, here is your first gift! Why it works: This promotional email hits the mark with preemptive timing and a clear reward. The subject line is direct and enticing, the offer is front and center, and the visuals feel celebratory without going overboard. Bonus points: Dec\u00e1ntalo sent a second, follow-up email before the code expired \u2013 a smart tactic to boost conversion rates. How to make this work for your brand: Use birthday data to personalize the experience and surprise your customer. Keep the offer simple: one reward, one CTA, no confusion. Extend the flow with a follow-up email . Urgency begets clicks. When to automate this email: Schedule for a few days before the customer\u2019s birth date (or day of). Automate your marketing efforts using a dynamic date field in your CRM or ESP. 8. Post-purchase email examples A post-purchase email doesn\u2019t always need to confirm shipping or upsell. Sometimes, the email marketing strategy simply involves delighting the customer and fostering the relationship. Brand: Starface Subject line: planning our next hang \ud83d\udc9b Why it works: This email doubles as a customer love letter \u2013 a post-purchase message designed to make you smile. It\u2019s bold, bizarre, and unmistakably Starface. There\u2019s no hard sell here, just strong brand identity, interactive content , and a tone that\u2019s as memorable as it is on-brand. E-commerce businesses take note! How to make this work for your brand: Reinforce your brand identity, especially when there\u2019s no immediate CTA. Make it personal and unexpected . Use creative content to stay top-of-mind, not just top-of-inbox. When to automate this email: Send 3\u20135 days after the item ships or arrives. Use automation to follow up with useful tips, product care info, or friendly check-ins. 9. Feedback email examples Feedback email templates help close the loop with your audience, whether you\u2019re asking for a review, survey response, or product rating. They\u2019re a vital part of email workflow automation , turning passive customers into active contributors. Brand: Graza Subject line: We\u2019ll trade ya Why it works: This email is a masterclass in voice and tone. It feels handwritten, not templated \u2013 from \u201c Hello lovely person \u201d to \u201c I\u2019M THE BEST. \u201d The message is short, benefit-led, and framed as a fun exchange \u2013 Graza gains insight, you get 12% off. It\u2019s a playful, on-brand reminder that feedback can be more than just functional. How to make this work for your brand: Lead with personality. Make your request feel like a conversation, not a chore. Offer a small but meaningful incentive, like a discount or early access. Keep the CTA friendly and direct . When to automate this email: This type of feedback email works well when sent 7\u201310 days after purchase or delivery. Your customer has had time to try the product but the experience is still fresh. 10. Back-in-stock email examples Back-in-stock emails come in two flavors: product-specific alerts (triggered when a user asks to be notified) and broader campaigns for popular or restocked items. Both create a sense of urgency, but the first delivers pinpoint relevance, making it a prime candidate for email automation workflows . Brand: Because of Alice Subject line: Your request: V Neck Plunge Bodysuit \u2013 Black is now available! Why it works: This email is straight to the point \u2013 as a great back-in-stock alert should be. The subject line confirms it\u2019s responding directly to the user\u2019s request, the product is clearly displayed, and the copy urges immediate action ( \u201cbefore supplies run out\u201d ). How to make this work for your brand: Identify high-demand items and enable \u2018Notify me\u2019 options , then build automations to fire when stock returns. Use urgency wisely to remind users that the item won\u2019t be available for long. Keep the layout clean and focused . When to automate this email: Trigger this email the moment an item is restocked . For product-specific alerts, sync with your inventory system so it fires automatically when availability changes. For general marketing campaigns, schedule sends based on popularity or seasonal demand. 11. B2B lead-nurturing email examples B2B lead nurturing emails help guide prospects toward conversion over time, offering timely, relevant content based on interest, industry, or behavior. Unlike cold sales pitches, these emails aim to educate, support, build trust, and improve those metrics. Brand: Loom Subject line: Introducing Loom AI for meetings Why it works: This email is a great example of lead nurturing done right. It educates without overwhelming. The modular layout makes it easy to scan, while multiple CTAs invite different types of engagement: product adoption, learning, and deeper product exploration. How to make this work for your brand: Identify key value props and frame them as solutions to common user pain points. Add supporting content like quick tips, webinars, or real-life use cases. Include multiple engagement options , so the reader can take the next step that suits them. When to automate this email: 5\u20137 days after signup or product engagement, especially if the lead hasn\u2019t yet converted. Consider segmenting by industry or use case to personalize emails even further. 12. Re-engagement email examples We all need a little reminder, sometimes! Re-engagement emails are designed to win back users who haven\u2019t opened, clicked, or purchased in a while. Whether you\u2019re prompting a dormant subscriber or checking in with a past customer, these campaigns help reignite interest and keep your email list healthy. Brand: Season Subject line: We Miss You in the Kitchen, <first_name> Why it works: Season get personal without overdoing it. The message acknowledges that time has passed, references the existing customer\u2019s purchase history, and shows off beautiful, relevant new products. It\u2019s an elegant reminder that feels helpful, not pushy; the kind of message that makes a user feel remembered, not just marketed to. How to make this work for your brand: Personalize your message. Include names, purchase history, or specific categories they browsed. Reference the gap. A gentle reminder that it\u2019s been a while makes the email feel timely. Highlight what\u2019s new: product drops, features, or updates that give them a reason to return. When to automate this email: Send 30\u201390 days after a user becomes inactive , depending on your product lifecycle. Use behavior-based automation to tailor the message to past activity or purchases. 13. Upsell and cross-sell examples Upsell and cross-sell emails increase order value by encouraging customers toward higher-commitment purchases like buying more, upgrading, or adding on. Brand: OUAI Subject line: Buy 2 Refills, get a Travel Bottle Kit FREE Why it works: This is upselling done right. A potential customer thinking of buying one refill gets a reason to grab two instead, doubling the order value in exchange for a free gift. The offer feels like a reward, not a push. The clean layout, clear benefit, and countdown timer drive just enough urgency to act now. How to make this work for your brand: Pair refill or repeat-purchase items with a gift to boost AOV and click-through rates. Show the incentive visually so the value feels real. Use urgency (like a 48-hour timer) to drive faster decisions. When to automate this email: Post-purchase or during replenishment windows. According to email marketing automation best practices , upsell flows like this can lift repeat order rates without heavy discounting. 14. Anniversary email examples Anniversary emails are a feel-good staple in any automation strategy. They either celebrate the customer\u2019s time with your brand (like a signup or purchase anniversary) or your brand\u2019s own milestone (like a store opening or company launch). Either way, they\u2019re a moment to pause, connect, and say thanks, with or without a discount attached. Brand: Duolingo Subject line: \ud83e\udd73 Happy First Duoversary, <first_name>! Why it works: Duolingo strikes a fun, personal tone while quietly flexing its data chops. The message makes the user feel proud\u2013look how far you\u2019ve come! \u2013 while encouraging next steps. There\u2019s no hard sell here, just a gentle prod to keep learning and a recap of all the progress made so far. How to make this work for your brand: Personalize with a name, date, or stat to celebrate the customer\u2019s journey . Highlight progress with a visual recap to make them feel seen. Tie it to a timely CTA: shop, re-engage, or upgrade while they\u2019re feeling good. When to automate this email: Send on the exact day of a key customer start point , e.g., signup or first purchase. Use date-based automation to schedule annual sends. For brand anniversaries, time it around your founding date, then build buzz with drip campaigns, a limited-time offer, and/or memory-lane content. 15. Milestone email examples Milestone emails celebrate your customers\u2019 progress and achievements, things like 100 workouts, their 500th order, or a year of consistent engagement. These emails fuel retention and increase open rates by recognizing effort, affirming progress, and giving users a reason to keep going. Brand: Peloton Subject line: This is MAJOR: You just joined the Century Club Why it works: This hits all the right notes. Peloton\u2019s email celebrates a specific action (100 workouts), ties it to a branded achievement (\u201cCentury Club\u201d), and uses bold visuals to drive emotional impact. Add to that, the messaging is affirming, enthusiastic, and directly linked to the user\u2019s hard work. Win win. How to make this work for your brand: Identify customer behavior milestones that matter. Not just purchases, but actions that signal value and loyalty. Use email to reward consistency , not just one-off wins. Encourage sharing on social media to amplify recognition and build community momentum. When to automate this email: Trigger email immediately after your customer hits a predetermined milestone. Use behavior-based automation rules to fire the right email at exactly the right time. In the end, that\u2019s what email marketing automation is all about. Build email automation workflows with Mailjet Email automation isn\u2019t just about saving time \u2013 it\u2019s about building meaningful, long-term relationships with your subscribers at scale. By following these best practices, you\u2019ll not only send better emails but also become the kind of brand people love hearing from. If you\u2019re just starting or looking to refine your approach, take a look at Mailjet\u2019s new automations experience improved capabilities, making it easier for marketers to build sophisticated email workflows. The user-friendly drag-and-drop builder can now be used alongside a suite of customizable workflow blocks. Author: Matthias Mehner Matthias \u201cMatze\u201d Mehner is a marketing expert focused on email and digital marketing. As VP of Marketing at Sinch Mailjet, he leads global content strategy and data driven growth. He is also a founder, author, and speaker with a passion for smart communication that truly resonates."
+ },
+ {
+  "url": "https://www.brevo.com/blog/marketing-automation-workflow-examples/",
+  "title": "11 Most Effective Marketing Automation Examples",
+  "words": 1518,
+  "headings": [
+   [
+    "h2",
+    "Why use marketing automation"
+   ],
+   [
+    "h3",
+    "Save time and effort"
+   ],
+   [
+    "h3",
+    "Boost return on investment (ROI)"
+   ],
+   [
+    "h3",
+    "Improve customer engagement"
+   ],
+   [
+    "h2",
+    "11 marketing automation examples"
+   ],
+   [
+    "h3",
+    "1. Welcome email"
+   ],
+   [
+    "h3",
+    "2. Onboarding email series"
+   ],
+   [
+    "h3",
+    "3. Birthday or anniversary greeting"
+   ],
+   [
+    "h3",
+    "4. Cross-selling or upselling"
+   ],
+   [
+    "h3",
+    "5. Abandoned cart emails"
+   ],
+   [
+    "h3",
+    "6. Post-purchase emails"
+   ],
+   [
+    "h3",
+    "7. Surveys or feedback requests"
+   ],
+   [
+    "h3",
+    "8. VIP offers"
+   ],
+   [
+    "h3",
+    "9. Re-engagement campaigns"
+   ],
+   [
+    "h3",
+    "10. Product updates or launches"
+   ],
+   [
+    "h3",
+    "11. Gated content"
+   ],
+   [
+    "h2",
+    "Tips for using marketing automation platforms"
+   ],
+   [
+    "h3",
+    "Set up a lead scoring model"
+   ],
+   [
+    "h3",
+    "Go multichannel"
+   ],
+   [
+    "h3",
+    "Integrate with a CRM"
+   ],
+   [
+    "h2",
+    "Try Brevo\u2019s marketing automation tools"
+   ]
+  ],
+  "text": "Marketing automation is a lifesaver for time-strapped teams. This article will cover some of the most effective marketing automation examples to win back hours. You probably already know what marketing automation is, as well as its main benefits. In sum, marketing automation refers to the use of technology to streamline marketing processes. It can help you scale your efforts, strengthen customer relationships, and drive conversions. However, you may still be wondering what marketing automation looks like concretely. Here are a few examples of marketing automation workflows for your marketing strategy. Welcome email Onboarding email series Birthday or anniversary greeting Cross-selling or upselling Abandoned cart emails Post-purchase emails Surveys or feedback requests VIP offers Re-engagement campaigns Product updates or launches Gated content Why use marketing automation Marketing automation benefits the entire customer journey \u2014 from lead nurturing all the way to customer retention. Here are a few reasons why you should have a marketing automation strategy. Save time and effort Marketing automation lets you streamline repetitive tasks. This includes sending automated email campaigns, updating customer data, and segmenting email lists. Simply set up the workflows in your marketing automation platform. From there, you\u2019ll be able to send relevant content to your target audience without any added effort. This frees up your marketing team to work on other tasks. Boost return on investment (ROI) Marketing automation helps you scale your marketing efforts. Trigger marketing campaigns so that they reach the right customers at the right time. This will help you increase conversion rates while saving on repeat marketing tasks. Improve customer engagement With marketing automation, it\u2019s easier to engage customers with relevant content. Automation also helps you personalize your marketing campaigns at scale. This can boost open rates, enhance the customer experience, and encourage brand loyalty. Further reading : 16 Key Benefits of Marketing Automation 11 marketing automation examples Ready to drive results with marketing automation? Here are our top 11 marketing automation examples. 1. Welcome email An effective welcome email is a great way to greet new customers. They also help you lay the foundations for lasting customer relationships. Source Welcome emails are one of the simplest automations to set up. In your marketing automation software, define the trigger (e.g. when someone signs up for your newsletter). Then add a wait time before sending the welcome email. Now, let\u2019s explore some of the best marketing automation workflows and how you can put them into practice. For more information, see our tutorial on how to send welcome emails in Brevo. 2. Onboarding email series Onboarding emails are key to reducing churn and encouraging customer loyalty. You can trigger onboarding emails after a customer signs up or makes a purchase. The onboarding series should give them tips on how to get started with your products or services. That way, you can guide customers right from the beginning of their journey. Onboarding emails also help you create a smoother customer experience. Source 3. Birthday or anniversary greeting Birthday emails are effective examples of marketing automation. With marketing automation tools, you can automate birthday emails easily. You might even send customers a discount for their birthday or join date anniversary. Birthday emails are a type of personalized email marketing campaign. They\u2019re a great way to build customer loyalty, stand out in a crowded inbox, and keep your brand top of mind. Source With email automation software , it\u2019s simple to automate birthday emails. All you need is the date of birth as a contact attribute. Usually, you can ask new customers to provide their date of birth when they sign up on your website. For more information, see our tutorial on how to send birthday emails in Brevo. 4. Cross-selling or upselling Use marketing automation to cross- or upsell your products. One way is to share personalized recommendations. This includes similar items or products that are frequently bought together. That way, you can recommend products based on each customer\u2019s purchase history. This marketing automation example is effective for encouraging new customers to buy again. This can both boost revenue and enhance the customer experience. Source 5. Abandoned cart emails Cart abandonment can be a big problem for ecommerce companies. You can avoid this by sending automatic notifications such as abandoned cart emails . Abandoned cart emails remind customers about products left in their online shopping carts. In the email, you might offer an extra discount to encourage them to finish their purchase. Source Adding an item to an online shopping cart will trigger the automation. If customers don\u2019t buy within the wait time, they\u2019ll receive an abandoned cart email. For more information, see our tutorial on how to create an abandoned cart email in Brevo. 6. Post-purchase emails Post-purchase emails are highly effective at customer retention. With marketing automation tools, it\u2019s easy to send follow-up emails. You can trigger these messages after a customer makes a purchase. Use this opportunity to give product use or maintenance tips. Or, ask customers to leave a review. Source 7. Surveys or feedback requests Marketing automation software makes it easier to gather feedback from your customers. Instead of manually sending survey emails, trigger them at key touchpoints. You can automate feedback requests each time a customer makes a purchase or speaks with a customer service rep. This can help you improve your services moving forward. Source In service industries, these workflows are especially powerful \u2014 HVAC email marketing , for example, is built almost entirely on automated annual reminders, contract renewals, and post-service follow-ups. The same is true for dental email marketing , where recall sequences and appointment reminders run automatically from a single date-based workflow. 8. VIP offers VIP offers are a great way to encourage customer loyalty. And marketing automation helps you identify your most valuable customers for VIP rewards. From there, you can target them with relevant content. This might include early access sales or exclusive discounts. Source 9. Re-engagement campaigns Re-engagement or reactivation emails can help you renew interest in your brand. This can mean: Asking email subscribers with poor engagement if they still want to hear from you Luring back a customer who hasn\u2019t bought in a while with a discount Reaching out to users who haven\u2019t logged in or used your product in a while To set this up in your marketing automation tool, you first need to define what an inactive subscriber is. This then triggers a campaign or series of win-back emails. Bonus tip: you can also use re-engagement emails for automated email list cleaning . If a contact doesn\u2019t engage, they are removed from your email list. 10. Product updates or launches Use marketing automation to share news about product releases, launches, or other updates. For instance, you can use automation to segment existing customers. That way, you\u2019ll identify those who would be most interested in your new products. This will help you drive sales and get more out of your marketing efforts. Source 11. Gated content Gated content is an effective lead-generation tactic. That\u2019s because it attracts those who are most interested in your company. Offer something like an ebook or a webinar. Then ask customers to provide their name, email address, and other contact details. Subscribers usually sign up via a website pop-up or landing page. From there, share the content they signed up for automatically. You can then nurture leads by following up with more content tailored to their interests. Source Tips for using marketing automation platforms Marketing automation platforms give you the tools to streamline your marketing efforts. Here are a few tips to help you get more out of your marketing automation software. Set up a lead scoring model Marketing automation software simplifies the lead scoring process. A lead scoring model assigns points to customers based on behavior (e.g. website interactions, purchase history). This lets you focus your marketing efforts on those who are most likely to convert. Lead scoring can also be used to segment your email list based on the score of each contact. Go multichannel Email marketing is a common marketing automation example. But nowadays, it\u2019s easy to automate campaigns across digital marketing channels. For example, you might automate social media posts, SMS messages, WhatsApp campaigns, and more. Integrate with a CRM Some of the most powerful marketing automation tools offer CRM integrations. Usually, this allows you to automate contact management and store interaction data. This makes it easier to move leads through the purchase funnel. It also streamlines communication between your marketing and sales teams. Further reading : The Best B2B Marketing Automation Platforms to Use in 2024 Try Brevo\u2019s marketing automation tools Now you\u2019re more familiar with the most effective marketing automation examples. Ready to give marketing automation a try? Brevo lets you create automations for up to 2,000 contacts \u2014 all for free. Get started with automation templates for welcome emails, abandoned cart messages, and more. Or, create automations from scratch with Brevo\u2019s easy-to-use automation editor. Learn more in our free marketing automation ebook About the author Brevo Brevo is an all-in-one CRM suite that helps you build customer relationships across email, SMS, WhatsApp, chat, and more."
+ },
+ {
+  "url": "https://zapier.com/blog/marketing-automation-examples-for-lead-nurture/",
+  "title": "12 essential marketing automation examples | Zapier",
+  "words": 1739,
+  "headings": [
+   [
+    "h2",
+    "What is marketing automation?"
+   ],
+   [
+    "h2",
+    "Components of marketing automations"
+   ],
+   [
+    "h2",
+    "12 marketing automation examples"
+   ],
+   [
+    "h3",
+    "1. Internal marketing team notifications"
+   ],
+   [
+    "h3",
+    "2. Automated lead capture data entry"
+   ],
+   [
+    "h3",
+    "3. AI chatbots for lead qualification"
+   ],
+   [
+    "h3",
+    "4. Sentiment analysis for social media monitoring"
+   ],
+   [
+    "h3",
+    "5. A/B test analysis and implementation"
+   ],
+   [
+    "h3",
+    "6. Inbound message routing"
+   ]
+  ],
+  "text": "You want to put your best foot forward to nurture leads, but using your human brain and time for every task isn't scalable. Marketing automation is a fuzzy term for the solution to that problem, but it means different things to different marketers. Depending on your role and industry, you might use marketing automation to leverage the information you have about prospects to deliver personalized marketing at scale, or you might use it to streamline tedious internal processes so you have more time to focus on big swings. Here, we'll look at a whole range of marketing automation examples: everything from simple automations within a single marketing platform all the way to full-on AI orchestration with Zapier , connecting your entire marketing tech stack. Table of contents: What is marketing automation? Components of marketing automations 12 marketing automation examples Automate all your marketing apps What is marketing automation? Marketing automation is about using software to handle repetitive marketing tasks so teams can focus on the stuff that requires a human brain. Instead of manually sending every follow-up email, tagging each lead, or logging campaign data, automation tools take care of those processes behind the scenes. It saves time, ensures consistency, and allows marketers to scale efforts without sacrificing personalization. Marketing automation typically falls into two broad categories: Customer-facing automation. This includes things like triggered email sequences, personalized website experiences, social media scheduling, and lead nurturing workflows. For example, when someone downloads an eBook, they might automatically receive a series of emails tailored to their interests. The goal here is to deliver the right message to the right person at the right time with no manual intervention. Internal process automation. Just as powerful (though less visible to customers) are automations that help marketing teams work more efficiently. These could include syncing data across CRMs and analytics platforms, notifying sales teams when a lead hits a certain threshold, or auto-generating reports. The specifics will look different depending on your company size, industry, and tech stack\u2014but the underlying goal of marketing automation is to make marketing more efficient and effective. Components of marketing automations To set up marketing automations, you need to understand their two components: a trigger and an action. A trigger is an event or condition that lets the automation know it's time to start. For example, when a lead: Fills out a lead generation form Downloads a piece of gated content Subscribes to your email list Adds an item to their cart but doesn't check out Signs up for a free trial Requests a product demo or meeting time Purchases something from your website Opens your app An action is the event that the trigger sets in motion. For example: Sending an email Adding a lead to a new drip sequence Sending an SMS Updating your CRM Sending a push notification Creating an in-app message Adding the lead to a direct mail list Notifying the marketing or sales team Your team can also trigger actions if you have internal marketing automations set up. For example, internal triggers could fire when someone on your team: Updates a lead's status in the CRM Marks a project as complete in the project management tool Submits a feedback form or internal survey Schedules a new meeting or event in the calendar Uploads an assignment to a shared folder or drive This could lead to actions like: Automatically notifying the sales rep assigned to a specific lead Sending a project summary email to all stakeholders Creating a follow-up task for a manager to review employee feedback Adding meeting details to a shared team calendar or agenda Tagging relevant stakeholders and updating file permissions 12 marketing automation examples Any seasoned marketer could likely rattle off dozens of marketing automations they have set up, so heading to a Slack community and learning from other people in your industry and role is definitely your best bet for inspiration. But as an introduction, I'll share some marketing automation examples you can work from. Some are customer-facing classics (like welcome emails that actually make you excited about a brand), while others are marketing automation workflow examples that keep your operations running smoothly. 1. Internal marketing team notifications Trigger: A marketing campaign reaches a new milestone Action: The next marketing team member gets a notification While most apps have basic internal notifications built in, the real magic happens when you coordinate across all the apps in your tech stack. Zapier connects to 9,000+ apps, so it can keep your internal marketing workflows running without constant manual oversight. For example, instead of marketing managers chasing updates, Zapier can automatically track campaign milestones across project management tools, alert stakeholders to changes, and create follow-up tasks. And with built-in AI tools, Zapier can also generate summaries or reports and deliver them automatically to stakeholders at a set cadence. This kind of AI orchestration gives teams more visibility and agility, reducing the time lost to status checks and bottlenecks. Here's a template to work from. Project management stakeholder communications Submit project updates in a form and let AI Agents create intelligent status update emails. Try it 2. Automated lead capture data entry Trigger: A lead fills out a form, makes a purchase, or interacts with your website Action: Customer data automatically syncs across all your marketing tools Of course I like seeing new leads filter in after a successful event or campaign. But manually entering and scoring the data of 200+ unique prospects makes me feel\u2026 less enthused. What should be a victory lap turns into three hours of copy-pasting email addresses and hoping I don't accidentally put someone named \"Jennifer\" into a sequence for \"Jonathan.\" Zapier can pull lead data from every source and then send it wherever you want it to go, whether that's your CRM , email marketing platform, or even just a spreadsheet. It can even add each lead to the right email sequence, tag them by source, and create a follow-up task for your sales team. Because everything syncs automatically, your data stays consistent across platforms. Get started with this marketing automation template. Unified lead capture Easily channel leads from multiple sources into your CRM. Try it 3. AI chatbots for lead qualification Trigger: A website visitor starts a conversation with your chatbot Action: The AI chatbot qualifies the lead and routes them to the appropriate next step Not every website visitor is ready to talk to a sales rep, but many are likely asking the same questions. Qualifying and capturing leads used to be a hands-on task. With Zapier Chatbots , you can automate those early conversations and qualify leads in real time. No manual screening required. To set up your custom chatbot, give it clear instructions and connect it to your knowledge sources. This helps it answer common questions, collect contact details, and ask qualifying questions. Based on the visitor\u2019s responses, the chatbot automatically triggers different workflows, like scheduling a demo for qualified leads, sending follow-up content to nurture others, and enriching lead data and logging the interaction data in your CRM. AI Chat for Business Template Use your business content to resolve support and lead questions with a customized chatbot. Try it 4. Sentiment analysis for social media monitoring Trigger: Your brand is mentioned on social media or in online reviews Action: AI analyzes the sentiment and alerts your team to the feedback Social media is both my best friend and worst nightmare. One minute I'm celebrating a successful campaign, and the next I'm frantically responding to an angry customer who's tagging our account in increasingly creative ways across three different platforms. Monitoring every mention of a brand across multiple platforms isn't realistic for human teams (and honestly, it's not great for anyone's mental health). You can use Zapier Agents to keep tabs on customer sentiment across multiple platforms, automatically analyzing mentions of your brand and routing insights to the right team members. This automation uses natural language processing (NLP) to scan social media mentions, reviews, and comments for emotional tone. When it detects negative sentiment about your brand, it can automatically create a task for your social media team, send an alert to your customer service department, or even escalate urgent issues to management. The flip side is just as valuable: positive sentiment can trigger automations, too. Glowing reviews might automatically get shared to your marketing team's Slack channel, or particularly enthusiastic customers could get added to a list for potential case study outreach. Try the template 5. A/B test analysis and implementation Trigger: One of your A/B tests reaches statistical significance Action: AI sends test completion alerts and creates follow-up tasks A/B testing delivers valuable insights, but manually monitoring multiple tests and coordinating follow-up actions can create campaign bottlenecks. Most, if not all, email marketing platforms can automatically pause tests when they reach statistical significance, but the real time-saver comes from automating what happens next. Instead of manually checking test status and coordinating with your team, you can set up automated workflows that spring into action the moment a test concludes. This might look like automatically sending campaign report details to relevant team members via Slack, creating a task in your project management tool to implement the winning variation, or reminding you to log results for future reference. This helps reduce manual monitoring and ensures no completed test results slip through the cracks. 6. Inbound message routing Trigger: A customer message arrives via email, social media, or contact form Action: AI categorizes the message and routes it to the appropriate team Customer messages can pour in from every direction (emails, social media mentions, contact forms, chat widgets), and someone has to play traffic cop, figuring out which team should handle what. This is a time-consuming bottleneck that delays responses and risks important communications falling through the cracks. Instead of having a human manually sort through every inquiry to determine if it's a sales lead, support ticket, or partnership request, inbound message routing uses AI to instantly categorize incoming messages and send them directly to the right team. Beyond adding the right labels for each conversation, the automation can also assess message urgency, prioritize responses, and maintain visibility across teams, making sure every inquiry is handled quickly and nothing slips through the cracks. Here's a template you can start with. Intelligent multi-channel inbound message routing Route new emails, form submissions, and social messages from multiple channels to the right teams with intelligent categorization and routing."
+ },
+ {
+  "url": "https://amplitude.com/explore/digital-marketing/marketing-automation-explained",
+  "title": "What Is Marketing Automation?",
+  "words": 2283,
+  "headings": [
+   [
+    "h1",
+    "What Is Marketing Automation?"
+   ],
+   [
+    "h2",
+    "Marketing automation definition"
+   ],
+   [
+    "h2",
+    "Why use marketing automation?"
+   ],
+   [
+    "h3",
+    "Saves time"
+   ],
+   [
+    "h3",
+    "Personalizes communication at scale"
+   ],
+   [
+    "h3",
+    "Increases conversions"
+   ],
+   [
+    "h3",
+    "Aligns marketing and sales"
+   ],
+   [
+    "h2",
+    "How does marketing automation work?"
+   ],
+   [
+    "h2",
+    "Marketing automation vs. personalization"
+   ],
+   [
+    "h2",
+    "Top use cases for marketing automation"
+   ],
+   [
+    "h3",
+    "Lead nurturing"
+   ],
+   [
+    "h3",
+    "Abandoned cart recovery"
+   ],
+   [
+    "h3",
+    "Welcome and onboarding"
+   ],
+   [
+    "h3",
+    "Re-engagement campaigns"
+   ],
+   [
+    "h3",
+    "Upsell and cross-sell"
+   ],
+   [
+    "h2",
+    "Examples of marketing automation workflows"
+   ],
+   [
+    "h3",
+    "Welcome series\u2014turning signups into active users"
+   ],
+   [
+    "h3",
+    "Abandoned cart recovery\u2014rescuing lost sales"
+   ],
+   [
+    "h3",
+    "Post-purchase nurturing\u2014building lifetime value"
+   ],
+   [
+    "h2",
+    "Measuring marketing automation effectiveness"
+   ],
+   [
+    "h2",
+    "Common automation mistakes (and how to avoid them)"
+   ],
+   [
+    "h3",
+    "Over-automating"
+   ],
+   [
+    "h3",
+    "Poor segmentation"
+   ],
+   [
+    "h3",
+    "No testing"
+   ],
+   [
+    "h3",
+    "Ignoring compliance"
+   ],
+   [
+    "h2",
+    "Top marketing automation platforms"
+   ],
+   [
+    "h2",
+    "Create smarter marketing campaigns with Amplitude"
+   ],
+   [
+    "h2",
+    "Explore related content"
+   ]
+  ],
+  "text": "Understanding digital marketing automation What Is Marketing Automation? Discover what marketing automation is, how it works, and how businesses use it to save time, boost conversions, and personalize digital campaigns at scale. Table of Contents Marketing automation definition Why use marketing automation? How does marketing automation work? Marketing automation vs. personalization Top use cases for marketing automation Examples of marketing automation workflows Measuring marketing automation effectiveness Common automation mistakes (and how to avoid them) Top marketing automation platforms Create smarter marketing campaigns with Amplitude Marketing moves fast, and trying to keep up manually just doesn\u2019t scale anymore. That\u2019s why many leading companies turn to marketing automation\u2014but what exactly does that mean, and why is it worth the investment? Learn what marketing automation is, why it matters, and how businesses use it to grow efficiently without losing the personal touch . Browse this guide Marketing automation definition Why use marketing automation? Saves time Personalizes communication at scale Increases conversions Aligns marketing and sales How does marketing automation work? Marketing automation vs. personalization Top use cases for marketing automation Lead nurturing Abandoned cart recovery Welcome and onboarding Re-engagement campaigns Upsell and cross-sell Examples of marketing automation workflows Welcome series\u2014turning signups into active users Abandoned cart recovery\u2014rescuing lost sales Post-purchase nurturing\u2014building lifetime value Measuring marketing automation effectiveness Common automation mistakes (and how to avoid them) Top marketing automation platforms Create smarter marketing campaigns with Amplitude Marketing automation definition Marketing automation uses software to automate customer outreach while keeping interactions personal and relevant. It tracks what your customers do, then automatically sends them the right message or takes the right action at the right time\u2014whether you\u2019re connecting with 10 people or 10,000. Tools can handle tasks such as: Sending welcome emails when someone joins your list Guiding potential customers through personalized journeys Reaching out when someone views your pricing page but doesn\u2019t purchase Reminding shoppers about items left in their cart Keeping your contact database clean and up to date Showing relevant ads to visitors who\u2019ve already interacted with your site With automation taking care of the repetitive work, tasks are less likely to slip through the cracks. Your marketing stays consistent, even when things get busy. Why use marketing automation? With marketing automation revenue expected to reach $21 billion by 2032, there\u2019s a reason (or reasons) why teams are using it. Let\u2019s look at some of them. Saves time When you manually handle every email, social post, and lead follow-up, you eventually hit a growth ceiling. Marketing automation frees up time for strategy , creativity, and building genuine connections, giving you back hours previously spent on routine work. Personalizes communication at scale Without automation, you might have to choose between reaching more people with generic messages or fewer people with personalized ones. Automation lets you send tailored communications based on individual behaviors and preferences to your entire audience. Increases conversions Stronger personalization drives better results. When messages arrive at the perfect moment with relevant content, people pay attention and have a better experience . They click more, engage more, and convert more often. Aligns marketing and sales Automation bridges the gap between marketing and sales. No more dropped leads or salespeople lacking context about a prospect\u2019s journey. The system tracks interactions, scores leads , and ensures everyone works from the same data . How does marketing automation work? Most marketing automation systems operate on a three-part sequence: trigger, action, and result. Trigger : Any customer action, such as visiting your pricing page, opening an email, clicking a link , or filling out a form Action : The system responds automatically by sending an email, adding the person to a specific list, adjusting their lead score, or alerting a sales rep Result : The outcome of that interaction, such as more engagement , scheduled demos, completed purchases, or simply valuable data for your team An example of that marketing automation workflow in action might look like this: Someone browses a product on your website three times in one week (trigger) Your system automatically sends them a case study about that product (action) They book a demo after reading (result) Or, perhaps this: A customer adds items to their cart but leaves without a purchase (trigger) Four hours later, they receive an email with their items and a 10% discount code (action) They return and complete the purchase (result) These sequences can be as simple or complex as needed. You can create paths that branch based on how people respond, creating natural and human-like conversational journeys. Marketing automation vs. personalization Some marketers mistakenly believe that automation means sacrificing personalization. However, they can work together. Personalization is about what you say\u2014it tailors content based on who someone is and what they care about Automation determines when and how that content reaches them, without requiring a marketer to press \u201csend\u201d each time For instance, a streaming service might recommend shows based on what you\u2019ve watched ( personalization ), and those recommendations automatically appear when you log in (automation). Top use cases for marketing automation The most common areas for using marketing automation are email, social media, management, and paid ads . Systems can be applied in any industry at every stage of the funnel. Lead nurturing Keep the conversation going when potential customers show interest but aren\u2019t ready to buy yet. After someone downloads a guide, they might automatically receive helpful follow-up content based on their interests. Abandoned cart recovery When someone adds products to their cart but then disappears, automation sends a reminder (often with an offer) to encourage them to return and complete the sale. Amazon does this exceptionally well. Welcome and onboarding After a customer signs up, marketing automation sends them a warm welcome, guides them through the setup process, and ensures they feel comfortable using your product. Re-engagement campaigns When a customer becomes inactive, automation sends relevant content to rekindle their interest, typically through a special offer, product announcement, or a friendly check-in. Upsell and cross-sell After a purchase, marketing automation suggests complementary products based on what others typically buy together or what makes sense as a next step. This tactic also increases your average order value (AOV) . Examples of marketing automation workflows Let\u2019s look at three examples of how marketing automation works in real life. Each workflow solves a specific business challenge through a series of automated steps. Welcome series\u2014turning signups into active users Day One : A new user receives an introductory email with quick-start tips and one clear action to take Day Three : A second email showcases popular features or resources based on what others have found valuable Day Seven : The final email shares success stories and invites the user to take the next step in their journey with you This automated path turns curious visitors into engaged users by delivering the right information at moments when they\u2019re most receptive. Instead of overwhelming them with everything at once, you guide them step by step. Abandoned cart recovery\u2014rescuing lost sales Four hours after abandonment : A reminder email with the items they left behind and offering help with any questions 24 hours later : If they still haven't purchased, a second email offers a limited-time discount code to create urgency Three days later : A final message suggests alternative products that might better match their needs This sequence recovers sales that would otherwise be lost, while respecting the customer\u2019s decision process. The timing and messaging acknowledge their interest without becoming pushy. Post-purchase nurturing\u2014building lifetime value Immediately after purchase : An order confirmation with thanks and useful next steps Three days later: Tips on getting the most out of their purchase Seven days later : Personalized recommendations (based on what they bought) for complementary products 14 days later : A feedback request to show you value their opinion and improve the experience This flow takes one-time buyers and turns them into repeat customers by continuing the relationship beyond the transaction. Each communication adds value while naturally introducing opportunities for additional purchases. Measuring marketing automation effectiveness Measuring the impact of marketing automation tells you whether or not it\u2019s working. Some key performance indicators (KPIs) and metrics to track include: Open and click-through rates : Low open rates may indicate issues with timing or subject lines. Poor click-through rates often indicate content problems or unclear calls to action (CTAs). Conversion rate per flow : How many people complete the desired action? Compare conversion rates across different automation paths to see which performs best. Unsubscribes and spam reports : Spikes either suggest that your automation is too frequent, poorly timed, or not relevant enough. Revenue from automated campaigns : Which workflows drive actual revenue , versus the ones only driving surface-level engagement? Customer lifetime value (CLV) : Do automated sequences create customers who stay for longer or spend more over time? Most automation platforms include built-in analytics dashboards to help you track these metrics at a top level. However, you can also connect to specialized tools for even deeper insights . Common automation mistakes (and how to avoid them) Explore some of the most common pitfalls businesses fall into when using marketing automation (and more importantly, how to avoid them), so your campaigns stay effective and your audience stays engaged. Over-automating Not every click needs to trigger another email. Sending too many messages too quickly turns your helpful automation into annoying noise. Map out all your automated touchpoints to avoid overlap Use frequency caps (e.g., maximum two emails per week) Create a \u201cmaster pause\u201d that temporarily stops all automated messages when someone converts Ask yourself if you\u2019d want to receive that many messages\u2026 Poor segmentation Treating everyone the same, despite their different needs and behaviors, means new visitors and loyal customers might receive identical messaging. This blanket communication might not work. Start with basic segments (new vs. returning, active vs. inactive) Use behavior and engagement data to refine and hyper-personalize your approach Audit your segments regularly to ensure they still make sense Create content for specific segments, rather than trying to make one-size-fits-all messages No testing Launching marketing automation (or anything, for that matter) without proper testing can lead to broken links, personalization errors, and timing issues. Send test versions to yourself and colleagues first Create a small test segment before full deployment (i.e., canary testing ) Use A/B testing to see which approach works best Check how your emails display across different formats Walk through the entire customer journey to spot disconnects Ignoring compliance Overlooking legal requirements, such as GDPR or CAN-SPAM, risks fines and a damaged brand reputation. Include clear unsubscribe options in every automated message Document when and how contacts opted in to your communications Review automation flows whenever regulations change Be especially careful with location-specific rules when messaging international audiences Consider consulting with a compliance expert when setting up your marketing automation system Top marketing automation platforms With so many options available, looking for the right marketing automation tool can feel overwhelming. You\u2019ll need to consider: Your budget Integration needs The team\u2019s technical knowledge Reporting capabilities Customer support To help, here\u2019s a straightforward breakdown of some of the leading marketing automation solutions and what they\u2019re best at. Platform What it does Who it\u2019s best for Drawbacks HubSpot All-in-one marketing, sales, and service hub. Companies that want comprehensive customer data from both platforms without manual reports. Full functionality gets expensive as you scale. Marketo Enterprise-level capabilities and advanced segmentation. Larger organizations with dedicated analytics teams. Significant investment in both cost and implementation time. MailChimp Email-centric automation with an accessible interface. Small businesses that want to analyze campaign performance against product usage. Limited advanced segmentation compared to enterprise platforms. Braze Cross-channel campaign orchestration, focused on mobile and web. Mobile-focused companies needing sophisticated engagement analytics. Primarily designed for larger businesses with substantial user bases. Iterable Customer journey orchestration with strong experimentation features. Growth-focused teams that rely heavily on testing and optimization. Less comprehensive CRM capabilities than all-in-one solutions. Salesforce Marketing Cloud Enterprise marketing suite with Salesforce CRM integration. Organizations heavily invested in the Salesforce ecosystem. Complex implementation that requires specialized expertise. Create smarter marketing campaigns with Amplitude Marketing automation helps you scale while keeping that all-important personalization. But to make the most of it, you need the right data. With real-time behavioral insights and easy integrations with your favorite marketing tools and channels, Amplitude helps you trigger smarter campaigns based on what your users are doing. The analytics tool enables you to identify: What actions your highest-value customer take early on Where users drop off before converting Which nurture flows convert best Which messages drive product adoption Which segments respond to specific content Whether you\u2019re sending emails, launching in-app messages , or retargeting users with ads, Amplitude gives your marketing automation strategy the intelligence it needs to work harder and smarter. Next steps Turn your data into answers. Contact Amplitude today to learn how . Amplitude is the leading all-in-one analytics platform for building better products. Product and engineering teams use Amplitude to connect product analytics and web analytics with session replay , heatmaps , experimentation , feature flags , and guides and surveys in one unified workflow, with AI agents working across all of it. Learn how Amplitude is building self-improving products with Wave , helping teams turn product data into PRs. Explore related content Explore What Is Digital Marketing? Explore B2C Marketing Explained: Tactics, Trends, & Tools Explore A Simple Guide to Lifecycle Marketing Explore Building a Digital Marketing Strategy: The Key to Unlocking Your Brand\u2019s Potential Explore Understanding B2B Marketing: Challenges, Opportunities, & Future Trends Explore What Is Data Visualization? Benefits & Techniques Explore Cross-Channel Marketing: The Complete Guide Explore What is Martech? Full Guide & How To Build Your Stack"
+ },
+ {
+  "url": "https://insiderone.com/marketing-automation-workflows/",
+  "title": "9 Easy Marketing Automation Workflows for 2026 | Insider One",
+  "words": 2695,
+  "headings": [
+   [
+    "h1",
+    "9 Marketing Automation Workflows and Templates to Use in 2026"
+   ],
+   [
+    "h2",
+    "9 simple and powerful marketing automation workflows"
+   ],
+   [
+    "h3",
+    "1. Workflow for welcoming new email leads"
+   ],
+   [
+    "h3",
+    "2. Workflows for recovering abandoned carts"
+   ],
+   [
+    "h3",
+    "3. Workflows for confirming orders and purchases"
+   ],
+   [
+    "h3",
+    "4. Workflows for sending targeted price drop and inventory alerts"
+   ],
+   [
+    "h3",
+    "5. Workflows for upsells and cross-sells"
+   ],
+   [
+    "h3",
+    "6. Workflows for pre- and post-purchase feedback"
+   ],
+   [
+    "h2",
+    "Advanced marketing automation workflows for cross-channel use cases (with examples)"
+   ],
+   [
+    "h3",
+    "7. Lead validation and promotion workflows across web, email, web push, and SMS"
+   ],
+   [
+    "h3",
+    "8. Cart abandonment and price drop workflows across email, SMS, and web push"
+   ],
+   [
+    "h3",
+    "9. Promotional workflows across web, mobile, email, push notifications, and SMS"
+   ],
+   [
+    "h2",
+    "How to maximize marketing workflow automation with Insider One"
+   ],
+   [
+    "h2",
+    "Keep Reading"
+   ],
+   [
+    "h4",
+    "Join the community"
+   ]
+  ],
+  "text": "9 Marketing Automation Workflows and Templates to Use in 2026 Chris Baldwin - VP Marketing, Brand and Communications 13 min. Updated on 5 Oct 2026 13 min. Marketing automation workflows are sets of rules used to automate different steps of the marketing process. For years, they\u2019ve helped teams streamline time-consuming marketing tasks, mainly around sending emails, managing leads, and sharing data between systems. However, many teams are still only scratching the surface of standard email marketing automation . At the same time, there are plenty of ways to use marketing automation to achieve strategic goals across other channels and use cases , like: Delivering relevant content and product recommendations that drive revenue at each brand touchpoint. Improving lead generation and nurturing potential customers down the sales funnel. Promoting new products in a relevant and engaging way. Recovering abandoned shopping carts. And much more. In this guide, we\u2019ll explore nine proven marketing automation workflows that can help you do these things (and more). The first six are simple but powerful workflows that span one or two channels, while the last three are complex custom workflows, which our customers have used to improve revenue, ROI, and other key results. 9 simple and powerful marketing automation workflows We\u2019ll begin this list with some well-known but essential workflows that most online businesses should implement and optimize. Before we dive in, note that you can build all of these workflows with Insider One \u2014 our AI-native platform for individualized, cross-channel customer experiences. Our solution offers: A flexible marketing automation tool for 12+ channels. You can use it to build automated workflows with a simple drag-and-drop editor across your web s ite , mobile app , email , SMS , WhatsApp , and more. AI-powered features that save you time and optimize your workflows. These include send-time optimization, next-best channel selection, A/B test winner auto-selection, and more. A plethora of workflow templates for tons of use cases and industries. Each template can be easily customized to your needs without any coding. 1. Workflow for welcoming new email leads Pretty much every online brand has some type of automated welcome email sequence for new leads. However, few brands actually make the most out of these workflows as they just send one standard message to their entire email list. At the same time, a good welcome workflow can do so much more \u2014 like guiding users to their first purchase quickly and efficiently. This can be done by creating an automated sequence of emails (instead of sending just one) and personalizing it based on users\u2019 actions. For instance, Remix used a three-step email marketing campaign for their lead nurturing needs: If new subscribers don\u2019t make a purchase one week after registering, Remix sent an email prompting them to save their preferred search filters. After a few days, a follow-up email is triggered. Its goal is to showcase a list of brands available on the site and how to mark one as a favorite. The last email offers details on how to save money by combining orders. This drip email campaign resulted in a 104% jump in first purchases compared to the previous quarter . You can take the same idea and apply it to your unique business needs by: Starting with an email survey to gather first-party data and continuing the workflow in different ways depending on the answers. Creating different flows depending on the source that led new leads to your site (e.g., social media, email newsletters, and so on). Building a distinct onboarding journey for users who browsed a specific category on your site. 2. Workflows for recovering abandoned carts Cart abandonment remains one of the biggest problems in the world of eCommerce. Any marketing team that\u2019s looking to maximize their budget and revenue should constantly be looking for ways to get cart abandoners to complete their purchase. Insider One helps you do this by automatically creating segments of cart abandoners and letting you easily add cart items to your emails, push notifications, and messaging channel communications. You also have ready-made cart recovery templates for different channels. These templates are easily customizable, so you can adjust their colors, branding, and other elements without any coding (or even changing the HTML). Here are a few of the channels that our clients use to recover lost carts: Email and SMS, which is the most widely-used combination of channels by retail brands worldwide. Slazenger used both channels to build cart recovery campaigns that produced a 49x ROI in eight weeks (we\u2019ll discuss their use cases later in this guide). WhatsApp , which is an underutilized but extremely powerful channel for recovering potentially lost revenue. Picniq used it to achieve an 80% open rate and a 5x ROI on their cart abandonment campaigns Web push notifications , which can be incredibly powerful and cost-effective compared to traditional channels like email and SMS. Marks & Spencer used push notifications to achieve a 15.1% cart recovery rate, compared to the 3% industry average for abandoned cart emails. 3. Workflows for confirming orders and purchases Transactional flows are a must for any online business. That\u2019s why most eCommerce platforms and content management systems (CMSs) have built-in automated email workflows that trigger immediately after a successful transaction. However, you don\u2019t need to limit yourself to email. For example, with Insider One, you can also send confirmation messages on channels like SMS and WhatsApp. Again, we have plenty of templates to make the process easier, like the WhatsApp message template shown below. All you need to do is set our journey builder to trigger your emails or messaging channel communications immediately after a successful purchase event. Then, you can build strategic follow-ups for promoting other products after a set amount of time, as we\u2019ll discuss in a bit. 4. Workflows for sending targeted price drop and inventory alerts These workflows are powerful for targeting users on the verge of making their first purchase, as well as those with a high discount affinity. Since Insider One automatically collects data about each user\u2019s interests and preferences , you can use that information to trigger emails, push notifications, or SMS and WhatsApp messages whenever: Products that users have been browsing are back in stock. Products that users have shown interest in get a price reduction. In both cases, your messages have a much higher chance of engaging new customers as they\u2019re based on their needs, interests, and preferences. At the same time, you can get even more targeted with our AI-powered predictive segmentation. Specifically, you can use our platform to only target customers with a high discount affinity who are much more likely to respond to a price drop alert. This tactic also guarantees that you\u2019re not wasting discounts on people who might\u2019ve bought a product at its regular price. 5. Workflows for upsells and cross-sells Upsells and cross-sells can help you drastically increase key metrics like average order value (AOV), customer lifetime value (CLTV), and customer retention. That\u2019s why you should find strategic places during the customer lifecycle to implement upsell and cross-sell workflows. For example, you can build marketing automation workflows that automatically: Suggest products that are frequently purchased with the one currently in the customer\u2019s cart. This can be done with a good product recommendation engine that analyzes browsing and purchase history, as well as real-time behaviors, to deliver relevant recommendations across landing pages and channels like email. Employ this same strategy but on a channel like SMS or WhatsApp a few days or weeks after a customer has completed their first purchase. Generate upsell and cross-sell opportunities by offering discounts on customers\u2019 registration anniversaries, birthdays, or other important events. 6. Workflows for pre- and post-purchase feedback With the cookieless marketing era upon us, teams need to rely much more heavily on zero- and first-party data gathered directly from customers. That\u2019s why it\u2019s crucial to have workflows for collecting that information at different stages of the customer journey . The classic way to do this is by sending a post-purchase email survey that asks customers to rate your product and the overall experience . This can also be done on messaging channels like SMS or WhatsApp, depending on your customers\u2019 preferences. One way to take this tactic to the next level is by using AMP emails . The AMP technology lets customers answer surveys directly in the email, without having to go to your site or app. This removes a lot of friction from the process and ensures you get more answers from your customer base. At the same time, you can also use AMP emails to gather valuable customer data pre-purchase. For example, you can ask them what content or products they\u2019re interested in, so you can tailor your follow-up communications to their interests. Advanced marketing automation workflows for cross-channel use cases (with examples) The workflow examples we explored up to this point are relatively simple in the sense that they span only one or two channels and use cases. However, things get trickier when dealing with custom workflows in the context of omnichannel marketing automation . Below, we\u2019ll look at three examples of companies using custom automation workflows that span across multiple channels. All three automation examples are powered by Architect \u2014 our customer journey builder and marketing automation platform . 7. Lead validation and promotion workflows across web, email, web push, and SMS Generali is one of the world\u2019s largest insurance and asset management companies in the world. After using Insider One to integrate their customer data and increase leads by 3x, they needed to build an automated lead validation workflow. This workflow\u2019s goal was to give each lead a score based on their website visits. That would allow the sales team to focus on the leads with the highest purchase intent. It would also make it possible to send each lead relevant information at the right time. Our local support team helped Generali build this lead-scoring project from scratch . Now, each lead in their system automatically accumulates points based on their interactions with the website. From here, Generali also started using Insider One\u2019s marketing automation capabilities to send personalized, timely offers across email, SMS , and web push to each lead, based on what they showed interest in. On top of the big increase in leads, Generali\u2019s new automated workflows also led to a 20% reduction in sales cycle length . 8. Cart abandonment and price drop workflows across email, SMS, and web push Slazenger is one of the world\u2019s most established sports brands. They started working with Insider One with the goal of delivering exceptional, personalized customer experiences across key brand touchpoints. This included the creation of different marketing automation workflows, including: Cross-channel cart abandonment workflows. Slazenger\u2019s first marketing campaign was aimed at sending reminder emails and follow-up communications to nudge cart abandoners to return and complete their purchases. With Insider One, they were able to target shoppers with automated notifications on their preferred channel \u2014 on-site, web push, or email \u2014 and send them a follow-aup coupon code via SMS. These marketing automation workflows delivered a 49x ROI in just eight weeks. Price drop notification workflows. Slazenger also wanted to improve its email CTR and conversion rate via timely communication and personalization. To do that, they started using Architect to send targeted price drop emails and web push notifications to customers who viewed the product or added to their wishlist (or cart). This helped Slazenger drive more conversions and increase email CTR by 12.1% compared to their other campaigns. As a next step, Slazenger will experiment with another popular workflow automation strategy \u2014 automated back-in-stock campaigns. 9. Promotional workflows across web, mobile, email, push notifications, and SMS NA-KD is a fast-growing fashion brand operating across Europe. After consolidating their customer data with our eCommerce CDP , the company needed to redefine their marketing strategy to create better customer experiences and drive more sales. They had used standard campaigns and coupon-based techniques that didn\u2019t produce the desired results. That\u2019s why they started building new automated workflows that were personalized to each customer. Using Architect, they were able to implement these flows across five channels \u2014 their website, mobile app, email, push notifications, and SMS. These new automated and personalized campaigns resulted in a 25% increase in CLTV and helped the brand drive a 72x ROI in 12 months. How to maximize marketing workflow automation with Insider One Insider One can help you build and automate all kinds of marketing workflows that serve your and your customers\u2019 needs. Thanks to our platform\u2019s broad channel access and versatile marketing automation software , you can create automated journeys across 12+ channels \u2014 including websites, mobile apps, email, push notifications, SMS, WhatsApp, and others. Plus, Insider One is much more than just an automation solution. Our robust enterprise marketing platform can also help you: Unify your customer data \u2014 from APIs, CRMs, content management systems (CMSs), analytics tools, and any other online or offline source \u2014 into a central database. This helps you overcome data silos and powers your marketing efforts with reliable insights. Learn more: 8 Best customer data platforms (by category). Segment your target audiences using standard, predefined, and predictive characteristics. For example, our platform\u2019s AI-powered algorithms can predict how much customers are projected to spend and how likely they are to buy or engage on a specific channel. Tap into the full potential of AI and machine learning. Insider One brings together a unique mix of predictive, generative, and conversational AI capabilities under one roof. You can use them to streamline or completely automate repetitive tasks, anticipate future behaviors, and engage in unstructured two-way conversations across messaging channels. Personalize every customer touchpoint. Our industry-leading personali z ation engine can tailor content, messaging, and product recommendations to each customer\u2019s interests, needs, and preferences. This can help you form long-term, profitable customer relationships and improve key metrics like customer engagement , conversion rates, revenue, and more. Finally, our easy channel integrations, experienced support team, and versatile templates will help you set up effective marketing automation workflows as quickly as possible. Schedule a demo with our team to learn how Insider One can benefit your business specifically. Chris Baldwin - VP Marketing, Brand and Communications Chris is an award-winning marketing leader with more than 12 years experience in the marketing and customer experience space. As VP of Marketing, Brand and Communications, Chris is responsible for Insider One's brand strategy, and overseeing the global marketing team. Fun fact: Chris recently attended a clay-making workshop to make his own coffee cup\u2026let's just say that he shouldn't give up the day job just yet. Read more from Chris Baldwin Keep Reading Products 4 min. Insider One Native Integration with Shopify Markets Insider One Announces Native Integration with Shopify Markets Why Shopify Markets matters for global ecommerce teams Shopify Markets allows brands to manage multiple regions, currencies, languages, and domains from a single Shopify store. For global ecommerce teams, this simplifies storefront operations, but for marketing teams, could introduce complexity across how to activate and manage customer [\u2026] Chris Baldwin 3 Feb 2026 Products 9 mins. How to prevent over-messaging in omnichannel marketing without losing reach Summary Over-messaging in omnichannel marketing is what happens when email, push, SMS, and in-app teams each hit their own weekly send target without knowing the same customer already received three messages from someone else\u2019s channel that day. No single team did anything wrong by their own metrics, yet the customer experienced a pile-up. This article [\u2026] Chris Baldwin 11 Nov 2026 Products 11 mins. Omnichannel Retail Marketing: What It Really Takes to Unify the Experience Summary A retailer can run email, SMS, app push, and in-store promotions every week and still fall short of omnichannel retail marketing if those channels do not share one customer record and timely signals from connected commerce, inventory, loyalty, and point-of-sale systems. Omnichannel retail marketing means every touchpoint, digital or physical, can use a unified [\u2026] Chris Baldwin 11 Nov 2026 See more Join the community Join more than 200,000 marketing, customer engagement, and ecommerce professionals. Get the latest insights, trends, and success stories to get ahead, delivered to your inbox."
+ },
+ {
+  "url": "https://tajo.io/blog/email-workflow-guide/",
+  "title": "Email Workflow: The Complete Guide to Building Automated Email Sequences",
+  "words": 3228,
+  "headings": [
+   [
+    "h2",
+    "What Is an Email Workflow?"
+   ],
+   [
+    "h3",
+    "How Email Workflows Function"
+   ],
+   [
+    "h3",
+    "Email Workflows vs. Manual Campaigns"
+   ],
+   [
+    "h3",
+    "Why Email Workflows Outperform Manual Sends"
+   ],
+   [
+    "h2",
+    "Types of Email Workflows"
+   ],
+   [
+    "h3",
+    "Acquisition Workflows"
+   ],
+   [
+    "h3",
+    "Conversion Workflows"
+   ],
+   [
+    "h3",
+    "Retention Workflows"
+   ],
+   [
+    "h3",
+    "Loyalty Workflows"
+   ],
+   [
+    "h3",
+    "Transactional Workflows"
+   ],
+   [
+    "h2",
+    "Designing Effective Email Workflows"
+   ],
+   [
+    "h3",
+    "Strategic Planning"
+   ],
+   [
+    "h3",
+    "Workflow Structure"
+   ],
+   [
+    "h3",
+    "Content Development"
+   ],
+   [
+    "h2",
+    "Implementation Best Practices"
+   ],
+   [
+    "h3",
+    "Technical Setup"
+   ],
+   [
+    "h3",
+    "Testing Protocol"
+   ],
+   [
+    "h3",
+    "Monitoring and Optimization"
+   ],
+   [
+    "h2",
+    "Email Workflow Examples"
+   ],
+   [
+    "h3",
+    "Welcome Series Example"
+   ],
+   [
+    "h3",
+    "Abandoned Cart Recovery Example"
+   ],
+   [
+    "h3",
+    "Post-Purchase Sequence Example"
+   ],
+   [
+    "h3",
+    "Win-Back Campaign Example"
+   ],
+   [
+    "h2",
+    "Advanced Workflow Strategies"
+   ],
+   [
+    "h3",
+    "Predictive Workflows"
+   ],
+   [
+    "h3",
+    "Cross-Channel Sequences"
+   ],
+   [
+    "h3",
+    "Behavioral Scoring Workflows"
+   ],
+   [
+    "h3",
+    "Lifecycle Stage Automation"
+   ],
+   [
+    "h2",
+    "Conclusion"
+   ],
+   [
+    "h2",
+    "Where Tajo fits"
+   ],
+   [
+    "h2",
+    "Frequently Asked Questions"
+   ],
+   [
+    "h3",
+    "Check your email to confirm"
+   ],
+   [
+    "h2",
+    "Related Articles"
+   ],
+   [
+    "h3",
+    "Email Marketing Campaigns: The Complete Guide to Planning, Executing, and Optimizing"
+   ],
+   [
+    "h3",
+    "Email Marketing KPIs: The Complete Guide to Measuring Campaign Success"
+   ],
+   [
+    "h3",
+    "Email Marketing Metrics: The Complete Guide to Measuring Campaign Success"
+   ]
+  ],
+  "text": "email workflow How does an email workflow work? A workflow is defined by its trigger and its exit, not by the emails inside it. Diagram the branch conditions before writing any copy, keep each path short enough to follow, and make certain a subscriber who converts or unsubscribes leaves the workflow immediately. Learn more On This Page What Is an Email Workflow? Types of Email Workflows Designing Effective Email Workflows Implementation Best Practices Email Workflow Examples Advanced Workflow Strategies Conclusion Where Tajo fits An email workflow is an automated sequence of emails triggered by specific user actions or time-based conditions. Unlike manual email campaigns sent to entire lists, workflows deliver personalized messages at exactly the right moment in each subscriber\u2019s journey. For e-commerce businesses, email workflows represent the most efficient path to consistent revenue. They work around the clock, nurturing leads, recovering abandoned carts, and building customer loyalty without requiring daily manual intervention. This comprehensive guide covers everything you need to know about email workflows: what they are, how to design them, which types deliver the best results, and how to implement them effectively using modern marketing automation platforms. What Is an Email Workflow? An email workflow (also called an automated email sequence, drip campaign, or automation flow) is a series of pre-written emails that send automatically based on triggers you define. These triggers can be actions subscribers take, data changes in your system, or time-based conditions. How Email Workflows Function The basic mechanics of an email workflow involve three components: 1. Trigger Event Something happens that starts the workflow. Examples include: A visitor subscribes to your newsletter A customer abandons their cart An order ships A specific date arrives (birthday, anniversary) A customer reaches a spending threshold 2. Workflow Logic Rules that determine what happens next: Time delays between emails Conditional branches based on subscriber behavior Exit conditions that stop the sequence Goal tracking to measure success 3. Email Content The actual messages sent at each step: Pre-written content with dynamic personalization Product recommendations based on behavior Triggered calls-to-action relevant to the subscriber\u2019s context Email Workflows vs. Manual Campaigns Aspect Email Workflows Manual Campaigns Trigger Automatic (behavior/event-based) Manual (marketer decides) Timing Personalized to each subscriber Same time for all recipients Personalization Individual-level Segment-level Setup Effort One-time creation Every campaign Maintenance Periodic optimization Ongoing creation Scalability Handles any list size Limited by time/resources Revenue Consistent, predictable Variable Why Email Workflows Outperform Manual Sends The data consistently shows automated email workflows deliver superior results: Automated emails generate 320% more revenue than non-automated promotional emails Welcome workflows achieve 4x higher open rates than standard campaigns Abandoned cart sequences recover 5-15% of otherwise lost sales Automated emails drive 29% of email marketing revenue from just 2% of sends The efficiency gains are equally compelling. Once built, a workflow runs indefinitely, handling hundreds or thousands of subscribers simultaneously with zero incremental effort. Types of Email Workflows Different workflow types serve different purposes in the customer lifecycle. Below are the essential categories every e-commerce business should consider implementing. Acquisition Workflows These workflows convert new subscribers into customers. Welcome Series The most fundamental workflow. Triggered when someone subscribes, this sequence introduces your brand, builds trust, and encourages the first purchase. Typical structure: Immediate: Welcome message + brand introduction Day 2: Brand story or mission Day 4: Social proof (reviews, testimonials) Day 6: Welcome offer or incentive Day 8: Urgency reminder Lead Nurture Sequence For longer sales cycles, this workflow educates prospects over time, gradually moving them toward a purchase decision through valuable content and strategic offers. Conversion Workflows These workflows target subscribers who have shown purchase intent but haven\u2019t completed a transaction. Abandoned Cart Recovery Triggered when items are added to cart but checkout isn\u2019t completed. Typically includes: Hour 1: Simple reminder Day 1: Product benefits or reviews Day 2: Incentive offer (optional) Day 3: Final urgency message Browse Abandonment Targets visitors who viewed products but didn\u2019t add to cart. Lower intent than cart abandonment, so messaging focuses on re-engagement rather than recovery. Price Drop Alert Notifies subscribers when products they\u2019ve viewed or carted decrease in price. High conversion rates due to demonstrated interest plus new incentive. Back-in-Stock Notification Alerts subscribers when previously out-of-stock items become available again. Captures pent-up demand with urgency built in. Retention Workflows These workflows keep existing customers engaged and drive repeat purchases. Post-Purchase Sequence Follows successful orders with: Order confirmation Shipping notification Product usage tips Review request Cross-sell recommendations Replenishment Reminder For consumable products, sends purchase reminders based on typical consumption cycles. Highly effective for supplements, skincare, pet food, and similar categories. Win-Back Campaign Re-engages customers who haven\u2019t purchased within their typical buying cycle. Usually includes escalating incentives. Loyalty Workflows These workflows recognize and reward your best customers. VIP Recognition Celebrates milestone achievements like tier upgrades, spending thresholds, or anniversary dates. Makes customers feel valued and encourages continued engagement. Birthday/Anniversary Personal touch that builds emotional connection. Usually includes special offers exclusive to the occasion. Referral Program Encourages satisfied customers to refer friends through structured incentives for both parties. Transactional Workflows These workflows communicate essential order information while creating marketing opportunities. Order Status Updates Confirmation, shipping, and delivery notifications. High open rates make these prime real estate for cross-sell messaging. Review Collection Post-delivery requests for product reviews, timed to allow adequate product usage. Designing Effective Email Workflows Creating workflows that perform requires thoughtful design across multiple dimensions: strategy, structure, content, and optimization. Strategic Planning Before building any workflow, answer these fundamental questions: What is the primary goal? Each workflow needs a clear, measurable objective: Welcome series: First purchase within 30 days Abandoned cart: Cart recovery within 7 days Win-back: Reactivation within 90 days Who is the audience? Define the specific segment entering this workflow: New subscribers who haven\u2019t purchased Customers with 2+ previous orders High-value customers in the top 20% What triggers entry? Identify the specific event or condition: Form submission Behavioral event (cart abandonment, product view) Date-based (birthday, subscription anniversary) Segment membership change What ends the workflow? Define exit conditions clearly: Goal achieved (purchase made, review submitted) Sequence completed Subscriber enters higher-priority workflow Unsubscribe or complaint Workflow Structure Timing and Cadence The intervals between emails significantly impact performance: Workflow Type Recommended Timing Welcome Series Days 0, 2, 4, 6, 8 Abandoned Cart 1hr, 24hr, 48hr, 72hr Browse Abandonment 2hr, 24hr, 72hr Post-Purchase Order + shipping (event-based), then 7, 14, 21 days Win-Back 60, 75, 90, 105 days since last purchase Replenishment Product cycle - 7 days, then +7, +14 Branching Logic Sophisticated workflows use conditional logic to personalize paths: If customer has previous purchases, skip introductory content If cart value exceeds threshold, offer percentage discount If email opened but not clicked, send follow-up with different subject line If product category is X, recommend complementary products from Y Overlap Management Subscribers may qualify for multiple workflows simultaneously. Establish priority rules: Transactional (highest priority - always send) Abandoned cart Browse abandonment Win-back Regular marketing (lowest priority) Limit concurrent workflows to prevent email fatigue. Most platforms allow frequency caps and suppression rules. Content Development Subject Lines Workflow emails need subject lines that: Create curiosity or urgency Feel personal, not promotional Match the email\u2019s specific purpose Examples by workflow type: Welcome: \u201cWelcome to [Brand] - here\u2019s something special\u201d Abandoned Cart: \u201cYou left something behind\u201d Post-Purchase: \u201cGet the most from your [Product]\u201d Win-Back: \u201cWe miss you, [Name]\u201d Email Body Structure Each workflow email should follow a clear structure: Hook : Opening line that connects to the trigger event Value : Why this email matters to the recipient Content : Information, education, or offer CTA : Single, clear action to take Footer : Required links plus secondary options Personalization Elements Dynamic content dramatically improves performance: First name in subject and greeting Product images from cart or browse history Purchase history references Loyalty points balance Location-based content Visual Design Workflow emails should: Reflect brand identity consistently Prioritize mobile responsiveness Use product imagery strategically Maintain adequate white space Feature prominent, contrasting CTAs Implementation Best Practices Building effective workflows requires attention to technical implementation, testing, and ongoing management. Technical Setup Data Requirements Workflows only work with proper data infrastructure: Customer profiles with purchase history Real-time event tracking (page views, cart actions) Product catalog with images and attributes Loyalty/points data if applicable Integration Architecture Your marketing platform needs reliable connections to: E-commerce platform (Shopify, WooCommerce, etc.) Customer data platform or CRM Product recommendation engine Loyalty program system This data foundation enables sophisticated workflows without custom development. Testing Protocol Pre-Launch Testing Before activating any workflow: Trigger Test : Verify the workflow starts correctly Content Review : Check personalization, links, images Mobile Preview : Confirm responsive design Timer Verification : Confirm delays work as configured Exit Condition Test : Ensure proper workflow termination Integration Test : Verify data flows correctly A/B Testing Continuously improve workflows through testing: Subject line variations Send time optimization Content length and format Offer type and value Number of emails in sequence Monitoring and Optimization Key Metrics by Workflow Type Workflow Primary Metric Secondary Metrics Welcome Conversion rate Open rate, time to first purchase Abandoned Cart Recovery rate Revenue recovered, AOV Browse Abandonment Browse-to-purchase rate Cart add rate Post-Purchase Review submission rate Repeat purchase rate Win-Back Reactivation rate Revenue from reactivated Replenishment Reorder rate Time between orders Optimization Cadence Review workflows regularly: Weekly: Check key metrics for anomalies Monthly: Analyze trends and test results Quarterly: Full content refresh and strategy review Annually: Complete workflow audit and restructure Common Issues and Solutions Issue Likely Cause Solution Low open rates Poor subject lines A/B test variations Low click rates Weak CTAs or irrelevant content Improve personalization, clarify offers High unsubscribes Too many emails or poor targeting Reduce frequency, tighten entry criteria Low conversions Wrong timing or weak offers Test send times, evaluate incentives No workflow entries Trigger misconfiguration Audit trigger conditions and data flow Email Workflow Examples Below are detailed workflow examples you can adapt for your business. Welcome Series Example Trigger : Newsletter signup (non-purchaser) Email 1: Immediate Subject: \u201cWelcome to [Brand] - your 15% discount inside\u201d Content: Thank you, brand intro, discount code, bestsellers CTA: Shop Now Email 2: Day 2 Subject: \u201cThe story behind [Brand]\u201d Content: Origin story, mission, values, founder message CTA: Learn More Email 3: Day 4 Subject: \u201cWhy 50,000+ customers choose [Brand]\u201d Content: Reviews, testimonials, star ratings CTA: See What Others Are Buying Email 4: Day 6 Subject: \u201cYour discount expires soon\u201d Content: Discount reminder, product picks, urgency CTA: Use Your Discount Email 5: Day 8 Subject: \u201cLast chance: 15% off ends today\u201d Content: Final reminder, fear of missing out messaging CTA: Claim Before Midnight Exit Conditions : Subscriber makes a purchase (move to post-purchase) Completes sequence (move to regular newsletter) Abandoned Cart Recovery Example Trigger : Items added to cart, no checkout completion within 60 minutes Email 1: Hour 1 Subject: \u201cDid you forget something?\u201d Content: Cart contents with images, simple reminder, no discount CTA: Complete Your Order Email 2: Hour 24 Subject: \u201cStill thinking about [Product Name]?\u201d Content: Product reviews, benefits highlight, cart contents CTA: Return to Your Cart Email 3: Hour 48 Subject: \u201cGood news: 10% off to complete your order\u201d Content: Discount offer, urgency, cart contents CTA: Claim Your Discount Email 4: Hour 72 Subject: \u201cYour cart is about to expire\u201d Content: Final reminder, low stock warning if applicable CTA: Complete Before It\u2019s Gone Exit Conditions : Purchase completed Cart emptied 5 days elapsed without action Cart abandoned, no checkout within 60 minutes Hour 1 Email 1: Simple reminder Cart contents with images, no discount Hour 24 Email 2: Reviews and benefits Still thinking about [Product Name]? Hour 48 Email 3: 10% off Discount offer, urgency, cart contents Hour 72 Email 4: Cart about to expire Low stock warning if applicable Exit on purchase, emptied cart, or 5 days without action Post-Purchase Sequence Example Trigger : First order placed Email 1: Order Confirmation (Immediate) Subject: \u201cOrder confirmed - here\u2019s what happens next\u201d Content: Order summary, timeline, complementary products CTA: Track Your Order Email 2: Shipped (Event-based) Subject: \u201cYour order is on the way\u201d Content: Tracking information, estimated delivery, what to expect CTA: Track Package Email 3: Delivery + 5 Days Subject: \u201cHow to get the best results from your [Product]\u201d Content: Usage tips, care instructions, video tutorial CTA: Watch Guide Email 4: Delivery + 12 Days Subject: \u201cQuick question about your [Product]\u201d Content: Review request, incentive offer (points or discount) CTA: Leave a Review Email 5: Delivery + 21 Days Subject: \u201cBased on your purchase, you might love\u2026\u201d Content: Personalized product recommendations CTA: Shop Recommendations Exit Conditions : Completed sequence Second purchase made (move to repeat customer flow) Win-Back Campaign Example Trigger : No purchase in 60 days (adjust based on your typical purchase cycle) Email 1: Day 60 Subject: \u201cIt\u2019s been a while, [Name]\u201d Content: \u201cWe noticed you haven\u2019t visited\u201d message, what\u2019s new, popular products CTA: See What\u2019s New (no discount yet) Email 2: Day 75 Subject: \u201cA lot has changed since your last visit\u201d Content: New arrivals, improvements, customer favorites CTA: Browse New Arrivals Email 3: Day 90 Subject: \u201cWe want you back - here\u2019s 20% off\u201d Content: Exclusive discount, bestsellers, limited time CTA: Claim Your Offer Email 4: Day 105 Subject: \u201cLast chance before we say goodbye\u201d Content: Final offer, \u201ccleaning our list\u201d messaging CTA: Click to Stay / Use Your Discount Exit Conditions : Purchase made (move back to active customer flows) No engagement after Day 105 (suppress or remove from list) No purchase in 60 days Day 60 Email 1: It's been a while What's new, popular products, no discount yet Day 75 Email 2: What has changed New arrivals, customer favorites Day 90 Email 3: 20% off Exclusive discount, limited time Day 105 Email 4: Last chance Final offer, click to stay Purchase returns them to active flows; no engagement means suppress Advanced Workflow Strategies Once you\u2019ve mastered fundamental workflows, consider these advanced approaches. Predictive Workflows Use purchase pattern data to anticipate customer needs: Predict replenishment timing based on individual purchase history Identify customers likely to churn before it happens Recommend products based on similar customer behavior Cross-Channel Sequences Combine email with other channels for maximum impact: Email + SMS for abandoned carts (SMS for urgency) Email + push notification for flash sales Email + direct mail for VIP customers Behavioral Scoring Workflows Adjust messaging based on engagement scores: High engagement: More frequent communication, early access Medium engagement: Standard cadence, re-engagement content Low engagement: Reduced frequency, win-back focus Lifecycle Stage Automation Create workflows that adapt as customers progress: Prospect to first-time buyer First-time buyer to repeat customer Repeat customer to VIP VIP to brand advocate Conclusion Email workflows represent the most scalable, efficient approach to email marketing. While manual campaigns require continuous effort, workflows run automatically, delivering personalized messages based on each subscriber\u2019s behavior and lifecycle stage. The workflows that matter most for e-commerce: Start with these essentials: Welcome series (convert subscribers to buyers) Abandoned cart recovery (recover lost revenue) Post-purchase sequence (build loyalty, collect reviews) Then expand to: 4. Browse abandonment (capture interested visitors) 5. Win-back campaign (reactivate lapsed customers) 6. Replenishment reminders (drive repeat purchases) 7. VIP recognition (retain best customers) Success requires more than just setting up workflows. Invest in proper data infrastructure, test continuously, and optimize based on performance metrics. The combination of thoughtful strategy and reliable automation creates sustainable, predictable email revenue. Ready to build workflows that work while you sleep? Where Tajo fits Tajo is the agentic integration builder. Keep your providers. Agents connect everything else, and you approve each sync. Tajo is in early access. Request early access Frequently Asked Questions How do I get started with email workflow? Start with the fundamentals: understand core concepts, choose the right tools, and implement step by step. This guide covers everything from beginner to advanced. What are the best tools for email workflow? The best tools depend on your budget and needs. Brevo offers a comprehensive free tier covering email, SMS, CRM, and automation. See this guide for detailed recommendations. How many emails should be in a workflow? The optimal number depends on the workflow type and your audience. Welcome series typically perform well with 4-6 emails. Abandoned cart sequences usually max out at 3-4 emails. Post-purchase flows can extend to 5-6 emails over several weeks. Test different lengths and monitor unsubscribe rates to find your optimal number. What is the best time to send workflow emails? For time-sensitive workflows like abandoned cart, the timing is relative to the trigger event (1 hour, 24 hours, etc.). For other workflows, test different send times. Generally, weekday mornings (9-11 AM recipient time) perform well for B2C e-commerce. Use your platform's send time optimization if available. How do I prevent subscribers from receiving too many emails? Implement frequency caps at the account level (e.g., no more than 4 emails per week). Use priority rules to suppress lower-priority workflows when higher-priority ones are active. Set proper exit conditions so subscribers don't remain in workflows indefinitely. Should I include discounts in every workflow? No. Discount dependency trains customers to wait for offers. Use discounts strategically - welcome series and win-back campaigns often warrant incentives. Abandoned cart recovery can test with and without discounts. Post-purchase and loyalty workflows should focus on value rather than discounts. How long should I wait before starting a win-back workflow? This depends on your typical purchase cycle. For consumables (supplements, skincare), start at 45-60 days past expected repurchase date. For fashion or general merchandise, 90 days is common. For high-ticket items, 120+ days may be appropriate. Analyze your customer purchase patterns to determine the right timing. Can customers be in multiple workflows simultaneously? Yes, but limit concurrent workflows to prevent overwhelming subscribers. Establish clear priority rules - transactional emails always send, then abandoned cart, then browse abandonment, then general marketing. Most platforms allow you to suppress lower-priority workflows when higher-priority ones are active. How do I measure workflow ROI? Track revenue directly attributed to workflow emails using your platform's reporting. Calculate ROI by comparing revenue generated to the cost of the platform plus time invested in workflow creation and management. For many businesses, a single workflow like abandoned cart recovery can generate enough revenue to justify the entire investment. How often should I update workflow content? Review and refresh workflow content quarterly at minimum. Update subject lines, test new approaches, and refresh product recommendations. Monitor performance metrics monthly to catch declines early. Annual audits should evaluate whether the overall workflow strategy still aligns with business goals. What is the difference between a drip campaign and a workflow? The terms are often used interchangeably, but technically: a drip campaign is a simple time-based sequence (Email 1 on Day 0, Email 2 on Day 3, etc.). A workflow includes conditional logic, branching, and multiple trigger types. Modern marketing automation typically refers to everything as workflows since even simple sequences benefit from conditional exit conditions. Share this article: share on Twitter share on Facebook share on Linkedin Back to all posts Check your email to confirm Related Articles Email Marketing Campaigns: The Complete Guide to Planning, Executing, and Optimizing Mar 8, 2026 \u00b7 10 min read 4 steps 4 steps Email Marketing KPIs: The Complete Guide to Measuring Campaign Success Mar 8, 2026 \u00b7 10 min read 5 steps 5 steps Email Marketing Metrics: The Complete Guide to Measuring Campaign Success Mar 8, 2026 \u00b7 10 min read 4 steps 4 steps"
+ },
+ {
+  "url": "https://www.codewords.ai/blog/marketing-automation-workflow-examples",
+  "title": "5 marketing automation workflow examples - CodeWords",
+  "words": 1285,
+  "headings": [
+   [
+    "h2",
+    "1. What email workflows drive engagement and recovery?"
+   ],
+   [
+    "h3",
+    "Email welcome series automation"
+   ],
+   [
+    "h3",
+    "Cart abandonment recovery automation"
+   ],
+   [
+    "h2",
+    "2. How can lead scoring and feedback loops accelerate conversion?"
+   ],
+   [
+    "h3",
+    "Lead scoring and nurturing workflow"
+   ],
+   [
+    "h3",
+    "Feedback and survey automation campaigns"
+   ],
+   [
+    "h2",
+    "3. Which personalization and milestone automations boost loyalty?"
+   ],
+   [
+    "h3",
+    "Personalized product recommendation workflows"
+   ],
+   [
+    "h3",
+    "Birthday and milestone event marketing automation"
+   ],
+   [
+    "h2",
+    "4. How do multichannel journeys unify touchpoints?"
+   ],
+   [
+    "h3",
+    "Content marketing and educational drip campaigns"
+   ],
+   [
+    "h3",
+    "Multi-channel customer journey automation"
+   ],
+   [
+    "h2",
+    "5. Why use behavioral triggers and re-engagement sequences?"
+   ],
+   [
+    "h3",
+    "Behavioral trigger email campaigns"
+   ],
+   [
+    "h3",
+    "Re-engagement and win-back campaigns"
+   ],
+   [
+    "h2",
+    "FAQs: Marketing Automation Workflow Examples (2026)"
+   ],
+   [
+    "h3",
+    "What is marketing automation?"
+   ],
+   [
+    "h3",
+    "How do you automate marketing?"
+   ],
+   [
+    "h3",
+    "What are examples of marketing automation?"
+   ],
+   [
+    "h3",
+    "What are the top 5 marketing automation tools?"
+   ],
+   [
+    "h3",
+    "What are examples of a workflow automation tool?"
+   ]
+  ],
+  "text": "On this page \u25be 1. What email workflows drive engagement and recovery? 2. How can lead scoring and feedback loops accelerate conversion? 3. Which personalization and milestone automations boost loyalty? 4. How do multichannel journeys unify touchpoints? 5. Why use behavioral triggers and re-engagement sequences? FAQs: Marketing Automation Workflow Examples (2026) Imagine you\u2019re a builder assembling an automated growth engine \u2014 each trigger sets the next in motion, and your marketing hums without manual oversight. These 10 workflows deliver measurable boosts in engagement, revenue, and lead acceleration. Forrester (2024) reports 76% of marketers see over 30% revenue lift from automation. Unlike generic AI automation posts, this guide shows real CodeWords workflows \u2014 not theoretical advice. Learn an email welcome series via Lead Scoring and Nurturing Workflow on codewords.ai in minutes. Many teams struggle with scattered tools and manual processes that waste time and miss opportunities. \u2014 to automate 10 sequences and lift engagement by at least 20%. You might be surprised that simple triggers often outperform complex sequences. This article outlines 10 specific workflows \u2014 email, cart recovery, lead scoring, personalization, multichannel journeys, content drip, triggers, re-engagement, milestone events, feedback loops. Each section provides triggers, step-by-step actions, integrations, and metrics so operators, tinkerers, and founders can move from manual tasks to data-driven growth. With CodeWords, you cut launch time by 50% and drive conversion lifts of 15\u201330%. 1. What email workflows drive engagement and recovery? A marketing automation workflow is a set of marketing steps that run in order after a trigger, such as a signup or a cart add. Each step waits, checks a condition or sends a message. The examples below show the trigger and each step. Email welcome series automation An Email Welcome Series triggers when a visitor subscribes. It sends timed, prewritten messages to introduce your brand and guide subscribers toward action. How it works Trigger: submission of email signup form Email 1 (immediate): greeting + core value Wait 2 days \u2192 Email 2: educational resource Wait 2 days \u2192 Email 3: social proof Final email: clear CTA (trial, demo, discount) Integrations: HubSpot, Mailchimp, Zapier, ActiveCampaign. CodeWords Workflow: Email welcome Prompt: \u201cautomate welcome series for new subscribers\u201d Output: complete sequence with delays and personalization tokens Impact: cuts setup time from days to minutes Cart abandonment recovery automation Recover lost revenue when shoppers leave items in cart. Step-by-step Trigger: cart addition without purchase Email 1 (1 hr): reminder + product image Email 2 (24 hr): small incentive (free shipping) Email 3 (72 hr): urgency + up to 15% discount Integrations: Shopify, Klaviyo, Mailchimp, Make . Expected outcomes: recover 15\u201330% of carts, open rates 40%+, ROI ~45:1. Learn more at codewords.ai/blog/how-to-send-scheduled-emails-in-gmail . 2. How can lead scoring and feedback loops accelerate conversion? Lead scoring and nurturing workflow Assign points to interactions\u2014email clicks, page views, downloads\u2014and trigger targeted content or sales alerts. Steps Trigger: prospect action (click, form) Assign points based on rules At threshold A \u2192 send educational email At threshold B \u2192 alert sales or demo invite Weekly score decay Route qualified leads to CRM Integrations: Salesforce CRM, HubSpot, Marketo, CodeWords Feedback and survey automation campaigns Collect NPS and qualitative feedback right after purchase or support resolution. Steps Trigger: order delivered or ticket closed Wait 24\u201348 hr \u2192 send 3\u20135 question survey If NPS \u22659 \u2192 thank-you + referral link If NPS \u22646 \u2192 assign to customer success Log feedback in CRM for product teams Integrations: SurveyMonkey, Typeform, HubSpot, Pipedream . Learn more: Lead Scoring and Nurturing Workflow on codewords.ai 3. Which personalization and milestone automations boost loyalty? Personalized product recommendation workflows Analyze browsing and purchase history to suggest next buys via email or on-site widgets. Steps Trigger: view or purchase Capture clickstream + purchase data Run collaborative/content filtering Deliver via preferred channel Track clicks + purchases to refine model Integrations: Dynamic Yield, Segment, Klaviyo. Birthday and milestone event marketing automation Celebrate dates\u2014birthdays, anniversaries\u2014to deepen relationships. Steps Trigger: date field matches event Email 1 (7 days before): exclusive offer SMS or push on event date Wait 7 days \u2192 \u201clast chance\u201d email Update loyalty score in CRM 4. How do multichannel journeys unify touchpoints? Content marketing and educational drip campaigns A sequence of webinars, whitepapers, and case studies tailored to early-stage leads. Steps Trigger: gated asset download Email 1 (immediate): asset + summary Wait 2 days \u2192 share blog or case study Wait 3 days \u2192 invite on-demand webinar Wait 2 days \u2192 send whitepaper Final email: CTA for demo or consultation Integrations: HubSpot, Pardot, Marketo. Multi-channel customer journey automation Sequence personalized touchpoints across email, SMS, push, social, and direct mail. Embedded content Steps Trigger: signup or milestone Email welcome + relevant content Wait 1 day \u2192 SMS reminder If email clicked \u2192 push notification After 3 days no action \u2192 social ad retargeting Direct mail postcard to high-value segments Integrations: Salesforce, Adobe Experience, Iterable, Twilio, CodeWords. 5. Why use behavioral triggers and re-engagement sequences? Behavioral trigger email campaigns Send in-the-moment messages when users take (or don\u2019t take) key actions. Steps Trigger: product view or cart add Send email within 10 min Wait 1 day \u2192 if no click send social proof If clicked but no purchase \u2192 discount offer Integrations: Braze, SendGrid, ActiveCampaign, Slack. Re-engagement and win-back campaigns Reconnect dormant subscribers or customers with timed sequences. Steps Tag users with no activity after X days Email 1: friendly \u201cwe miss you\u201d note Wait 3 days \u2192 highlight new features Wait 5 days \u2192 special offer Preference center invite + sunset removal Integrations: Mailchimp, Klaviyo, ActiveCampaign. Most believe complex sequences drive the best results \u2192 the opposite is often true \u2192 simple, well-timed triggers outperform heavy-handed campaigns. You might think heavy customization is required \u2192 here\u2019s why not \u2192 many top brands use templated modules to scale faster (HubSpot \u2192 18% lift in MQLs \u2192 2023). However, there\u2019s a problem most tools ignore\u2026 they lack transparent performance loops. Implications By treating each module as a reusable component, you turn complexity into clarity and accelerate ROI. In Singapore, 63% of ops teams report automation as a top priority (Forrester 2024). FAQs: Marketing Automation Workflow Examples (2026) What is marketing automation? Marketing automation is software that runs repeat marketing tasks, such as emails, lead scoring and follow-ups, when a set trigger fires. You set the rules once, and the software sends each step on time. How do you automate marketing? You automate marketing by turning one repeat task into a trigger and a set of timed steps. Pick a task you do every week, such as welcome emails. Choose the trigger, such as a form signup. Write each step and the wait between steps. Connect your email, CRM and form tools. Test on a small segment, then measure opens and clicks. What are examples of marketing automation? Common marketing automation examples are timed sequences that start from one customer action. A welcome series for new email subscribers. Cart abandonment emails for shoppers who leave without buying. Lead scoring that alerts sales at a set score. Win-back emails for inactive customers. Birthday and milestone offers sent from a date field. What are the top 5 marketing automation tools? The marketing automation tools used in the workflows in this post include HubSpot, Mailchimp, Klaviyo, ActiveCampaign and Marketo. HubSpot: welcome series, lead scoring and educational drip campaigns. Mailchimp: welcome series, cart recovery and win-back emails. Klaviyo: cart recovery and product recommendations. ActiveCampaign: behavioral triggers. Marketo: lead scoring. What are examples of a workflow automation tool? Examples of a workflow automation tool include Zapier, Make, n8n and CodeWords. Each one connects your apps and runs steps when a trigger fires. CodeWords is workflow automation you describe instead of build: you tell Cody the job, and Cody builds it."
+ }
+]

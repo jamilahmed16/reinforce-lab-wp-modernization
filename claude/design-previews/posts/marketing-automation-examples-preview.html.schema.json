@@ -1,0 +1,208 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "Marketing automation examples are rules that send the right message or action when something happens: a signup, an abandoned cart, a form, a booked demo or silence. Common ones are welcome series, cart recovery, lead nurturing, lead scoring with alerts, post-purchase follow-up and re-engagement. AI helps with drafting, scoring and personalization inside the rules, and a person still decides offers and limits.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Klaviyo: 2026 email marketing benchmarks by industry",
+    "url": "https://www.klaviyo.com/products/email-marketing/benchmarks"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Klaviyo: Email marketing benchmarks 2026, open, click and conversion rates",
+    "url": "https://www.klaviyo.com/uk/blog/email-marketing-benchmarks-open-click-and-conversion-rates"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Klaviyo: What is revenue per recipient (RPR)?",
+    "url": "https://www.klaviyo.com/blog/revenue-per-recipient"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Baymard Institute: Cart abandonment rate, 50 statistics (October 2026)",
+    "url": "https://baymard.com/blog/cart-abandonment-rate"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Federal Trade Commission: CAN-SPAM Act, a compliance guide for business",
+    "url": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Mailjet: 15 email automation examples for your next workflow",
+    "url": "https://www.mailjet.com/blog/email-best-practices/email-automation-examples/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Amplitude: What is marketing automation?",
+    "url": "https://amplitude.com/explore/digital-marketing/marketing-automation-explained"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Brevo: 11 most effective marketing automation examples",
+    "url": "https://www.brevo.com/blog/marketing-automation-workflow-examples/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What are examples of marketing automation?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Welcome series, abandoned cart emails, lead magnet delivery and nurturing, lead scoring with sales alerts, demo reminders, post-purchase follow-up, re-engagement, renewal messages and routing form leads into a CRM."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is an example of marketing automation?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "An abandoned cart flow: when a shopper adds items and does not check out, the system sends a reminder, then a follow-up with reviews or help, then a final message, and stops when the person buys."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What are examples of B2B marketing automation?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Lead magnet delivery followed by a short nurture, lead scoring that alerts a salesperson, demo reminders and no-show follow-up, webinar follow-up, onboarding emails for trials and automatic routing of form leads into the CRM."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What are marketing automation workflow examples?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "A workflow has a trigger, steps with waits, and an exit. Examples are a welcome series, a cart recovery flow, a lead nurture sequence, a scoring workflow with a sales alert and a re-engagement flow that removes quiet contacts."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is AI marketing automation?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The same workflows with AI added in some steps, such as drafting content for segments, scoring leads from free text, predicting who is likely to buy or leave, and summarizing results. Rules still define triggers and limits."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do automated flows perform better than campaigns?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "In Klaviyo's 2026 benchmarks of 183,000+ customers, flows earned nearly 41% of email revenue from 5.3% of sends, with a 5.58% click rate against 1.69% for campaigns. It is one vendor's mostly online store data."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much cart abandonment is normal?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Baymard averaged 50 studies from 2006 to 2025 and found a documented rate of 70.22%, with studies ranging from 55% to 84%. Your best benchmark is your own rate trending down."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is AI marketing automation affordable for small businesses?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Often at a small scale. Many platforms have free plans or trials and include basic flows. We found no independent cost data, so check current vendor pages and start with two or three flows."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I measure a marketing automation flow?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Compare the revenue or meetings a flow produces with the messages it sends, as revenue per recipient, plus click rate, conversions, unsubscribes and complaints. Compare with your own earlier results and review monthly."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is marketing automation email legal?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "In the US, CAN-SPAM covers all commercial email, including business email. You need accurate sender details, honest subject lines, an ad disclosure, a postal address and a working opt-out honored within 10 business days. EU and UK rules differ, so take advice."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Marketing Automation Examples: What to Automate With and Without AI",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Marketing automation",
+    "description": "Software that runs marketing tasks by rules, started by triggers.",
+    "url": "https://reinforcelab.online/preview/#term-marketing-automation"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Trigger",
+    "description": "An event that starts a workflow, such as a signup or an abandoned cart.",
+    "url": "https://reinforcelab.online/preview/#term-trigger"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Flow or workflow",
+    "description": "A set of steps, waits and exits that runs after a trigger.",
+    "url": "https://reinforcelab.online/preview/#term-flow-or-workflow"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Revenue per recipient",
+    "description": "Total revenue from a flow or campaign divided by the messages sent.",
+    "url": "https://reinforcelab.online/preview/#term-revenue-per-recipient"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Lead scoring",
+    "description": "Giving points to actions and traits to rank how ready a lead is.",
+    "url": "https://reinforcelab.online/preview/#term-lead-scoring"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Suppression list",
+    "description": "A list of people you must not contact, such as those who opted out.",
+    "url": "https://reinforcelab.online/preview/#term-suppression-list"
+   }
+  ]
+ }
+]
