@@ -66,10 +66,17 @@ All figures were read on the host's own page on 15 Nov 2026 and must be re-read 
 ## Plesk (https://www.plesk.com/pricing/)
 - Web Admin $16.99/mo ($15.57 on 12 months), 10 domains; Web Pro $29.99 ($27.49), 30 domains; Web Host $62.99 ($57.74), unlimited. Free 2-week trial, no card. 24/7 support. AI: only a third-party chat assistant on the site. 20% off first month on monthly licenses (limited time).
 
+## Round 2 additions (15 Nov)
+- **hosting.com = A2 Hosting rebrand (VERIFIED).** hosting.com's own blog post "A new chapter begins: A2 hosting evolves into hosting" says "A2 hosting is now hosting.com"; announced April 2025. So the existing A2 tutorial (`/a2-wordpress-hosting/`, 26,373 impressions) is the same company: link it from `/hosting-com-review/` and mention the old name. A2 is therefore effectively one of your 18 (via hosting.com).
+- **Hostinger AI (documented on hostinger.com):** AI Builder (formerly Horizons), AI credits, "Hostinger Agent" (formerly Kodee) that uses MCP, about 200 VPS management actions via chat, Hostinger API MCP server, "Hostinger Connector" to publish from Claude Code, Cursor or Codex, auto-created llms.txt, sitemap.xml and robots.txt on custom domains. Vendor claims to label as claims: "85% of issues solved without a human"; blog says 914,000 conversations analysed and 7% needed a human. AI Builder runs on a mix of models (Hostinger blog, Dec 2025 update).
+- **Namecheap AI (documented):** Sitejet AI Builder and AI in WordPress for NEW WordPress installs only; an "AI Agent" via the Extendify plugin lets you edit a site in plain language (Namecheap knowledgebase "Extendify Overview").
+- **Kinsta AI:** no built-in AI assistant found on the pricing page. Kinsta has a REST API and publishes tutorials for building your own MCP server and for WordPress MCP with the Abilities API; there is a kinsta.com/ai/ section. Angle: "AI-ready API, not an AI feature set". Must not present the demo MCP server as a Kinsta product.
+- **InMotion:** blog says three shared plans (Launch, Power, Pro) with a "90-day money-back guarantee", free domain credit, SSL, migration, WAF, cPanel, data centers in Virginia, California, Amsterdam; chat widget is an AI bot. A comparison page says 45 days: CONFLICT, resolve on the live pricing page. Prices not captured (JS-rendered).
+- **Crazy Domains (Australia page, $ prices):** Economy $7.50/mo (10 GB NVMe, 1 site), Premium $11.50 (25 GB, 5 sites), Ultimate $17.50 (50 GB, 10 sites). 60-day money-back, 99.9% uptime guarantee, 24x7 support, Sydney data centres. No AI features on page. Page changes by country (a Norway-style kr price also seen), so state the region.
+- **Spaceship shared hosting (https://www.spaceship.com/web-hosting/):** Essential $19.88/yr first year ($1.66/mo; renews $28.88/yr), 1 CPU, 20 GB SSD, 5 hosted domains; Pro $28.88/yr (renews $48.88), 2 CPU, 50 GB; Supreme $38.88/yr (renews $68.88), 4 CPU, unmetered SSD; 30-day free trial; AI Website Builder; WordPress AI tools on Pro and Supreme. Also Spaceship Cloud (VPS) pay-as-you-go. Guarantee not on page.
+
 ## STILL TO GET
-- InMotion Hosting (shared and WordPress pricing pages did not return data; try BoldGrid, VPS pages or search).
-- Crazy Domains (hosting page 404; find current URL; region AU/NZ).
-- Spaceship (hosting URL 404; find current URL).
+- InMotion prices (pages are JS-rendered; use a rendered screenshot or Jamil's affiliate dashboard).
 - Liquid Web own product plans (bare metal, VPS, cloud) and AI features.
 - AI feature details from each host's docs: Hostinger (Kodee, AI builder), Namecheap (AI for WordPress), Kinsta (any AI), Nexcess/Liquid Web, ScalaHosting.
 - Independent evidence for reliability and speed (third-party tests with method), or Jamil's own tests.
