@@ -1,0 +1,162 @@
+[
+ {
+  "id": 600,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "LLM SEO",
+  "red": "What It Is and How to Optimize for LLMs (LLMO)",
+  "alt": "Cover image: LLM SEO: What It Is and How to Optimize for LLMs (LLMO)",
+  "slug": "llm-seo",
+  "old": 0,
+  "modified": "2026-10-16 10:20:00"
+ },
+ {
+  "id": 601,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "ChatGPT SEO",
+  "red": "How to Use It for SEO and How to Show Up in It",
+  "alt": "Cover image: ChatGPT SEO: How to Use It for SEO and How to Show Up in It",
+  "slug": "chatgpt-seo",
+  "old": 0,
+  "modified": "2026-10-18 09:35:00"
+ },
+ {
+  "id": 602,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "Entity SEO",
+  "red": "How Search and AI Tools Learn Who You Are",
+  "alt": "Cover image: Entity SEO: How Search and AI Tools Learn Who You Are",
+  "slug": "entity-seo",
+  "old": 0,
+  "modified": "2026-10-22 11:05:00"
+ },
+ {
+  "id": 603,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "What Is llms.txt and",
+  "red": "Should You Add One?",
+  "alt": "Cover image: What Is llms.txt and Should You Add One?",
+  "slug": "llms-txt",
+  "old": 0,
+  "modified": "2026-10-23 14:10:00"
+ },
+ {
+  "id": 604,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "What Is AEO in Marketing? A Plain",
+  "red": "Definition and How to Do It",
+  "alt": "Cover image: What Is AEO in Marketing? A Plain Definition and How to Do It",
+  "slug": "what-is-aeo-in-marketing",
+  "old": 0,
+  "modified": "2026-10-25 10:45:00"
+ },
+ {
+  "id": 605,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "GEO for Law Firms",
+  "red": "How to Get Found and Recommended by AI Tools",
+  "alt": "Cover image: GEO for Law Firms: How to Get Found and Recommended by AI Tools",
+  "slug": "geo-for-law-firms",
+  "old": 0,
+  "modified": "2026-10-28 09:50:00"
+ },
+ {
+  "id": 606,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "SaaS SEO",
+  "red": "A Practical Guide for B2B Software Companies",
+  "alt": "Cover image: SaaS SEO: A Practical Guide for B2B Software Companies",
+  "slug": "saas-seo",
+  "old": 0,
+  "modified": "2026-10-29 13:25:00"
+ },
+ {
+  "id": 607,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "AI Search Audit",
+  "red": "A 10-Step Checklist for Your Website",
+  "alt": "Cover image: AI Search Audit: A 10-Step Checklist for Your Website",
+  "slug": "ai-search-audit",
+  "old": 0,
+  "modified": "2026-10-30 10:00:00"
+ },
+ {
+  "id": 608,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "AI Lead Generation",
+  "red": "How It Works, Tools and How to Build a System",
+  "alt": "Cover image: AI Lead Generation: How It Works, Tools and How to Build a System",
+  "slug": "ai-lead-generation",
+  "old": 0,
+  "modified": "2026-11-01 11:30:00"
+ },
+ {
+  "id": 609,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "Marketing Automation Examples",
+  "red": "What to Automate With and Without AI",
+  "alt": "Cover image: Marketing Automation Examples: What to Automate With and Without AI",
+  "slug": "marketing-automation-examples",
+  "old": 0,
+  "modified": "2026-11-03 09:15:00"
+ },
+ {
+  "id": 610,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "SEO for Professional Services",
+  "red": "How Firms Win the Who Should I Hire Search",
+  "alt": "Cover image: SEO for Professional Services: How Firms Win the Who Should I Hire Search",
+  "slug": "seo-for-professional-services",
+  "old": 0,
+  "modified": "2026-11-04 14:40:00"
+ },
+ {
+  "id": 611,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "SEO AI Agent",
+  "red": "What AI Agents for SEO Can and Cannot Do",
+  "alt": "Cover image: SEO AI Agent: What AI Agents for SEO Can and Cannot Do",
+  "slug": "seo-ai-agent",
+  "old": 0,
+  "modified": "2026-11-05 10:25:00"
+ },
+ {
+  "id": 612,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "AI Visibility Score",
+  "red": "What It Measures and How to Calculate One",
+  "alt": "Cover image: AI Visibility Score: What It Measures and How to Calculate One",
+  "slug": "ai-visibility-score",
+  "old": 0,
+  "modified": "2026-11-06 12:05:00"
+ },
+ {
+  "id": 613,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "Generative Engine Optimization Agency",
+  "red": "How to Choose One",
+  "alt": "Cover image: Generative Engine Optimization Agency: How to Choose One",
+  "slug": "generative-engine-optimization-agency",
+  "old": 0,
+  "modified": "2026-11-08 10:10:00"
+ },
+ {
+  "id": 614,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "How to Build an AI Marketing Agent System",
+  "red": "Architecture and Human Review",
+  "alt": "Cover image: How to Build an AI Marketing Agent System: Architecture and Human Review",
+  "slug": "how-to-build-ai-marketing-agent-system",
+  "old": 0,
+  "modified": "2026-11-10 09:40:00"
+ },
+ {
+  "id": 615,
+  "eyebrow": "GUIDE \u00b7 DIGITAL MARKETING",
+  "white": "Marketing Workflow Automation With AI",
+  "red": "Where to Start",
+  "alt": "Cover image: Marketing Workflow Automation With AI: Where to Start",
+  "slug": "marketing-workflow-automation",
+  "old": 0,
+  "modified": "2026-11-14 11:15:00"
+ }
+]
