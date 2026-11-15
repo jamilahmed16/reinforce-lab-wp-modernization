@@ -81,3 +81,10 @@ All figures were read on the host's own page on 15 Nov 2026 and must be re-read 
 - AI feature details from each host's docs: Hostinger (Kodee, AI builder), Namecheap (AI for WordPress), Kinsta (any AI), Nexcess/Liquid Web, ScalaHosting.
 - Independent evidence for reliability and speed (third-party tests with method), or Jamil's own tests.
 - Semrush volumes and top 10 per "[host] review".
+
+## Round 4 additions from independent pages read with Exa (15 Nov)
+- TechRadar (updated 7 Oct 2025): "Nexcess is now fully absorbed into Liquid Web... the brand no longer exists and potential customers will need to go to Liquid Web." Nexcess founded 2000, Southfield, Michigan. So treat `/nexcess-review/` as "Nexcess, now Liquid Web".
+- TechRadar ScalaHosting (updated 16 Oct 2026): Mini shared $35.40 first year ($2.95/mo), $11.95 monthly; 10 GB NVMe, one website. Start from $5.95, renews $14.95 (50 GB, unlimited sites). Advanced from $9.95, renews $19.95 (100 GB). Entry Cloud from $14.95/mo, renews $39.95 (2 dedicated cores, 2 GB RAM, 50 GB NVMe, dedicated IP, SPanel). Verdict: strong for growing sites; renewal prices rise sharply; limited first-party data centers. Based in Dallas, 18 years.
+- TechRadar Domain.com (updated 2 Jul 2026): "the same service that Network Solutions offers"; now part of Network Solutions; heavy upselling; free domain privacy not included; phone support; domain lock included.
+- TechRadar InMotion (updated 22 Jan 2026): founded 2001; 90-day money-back guarantee on shared and WordPress plans; shared Core plan from $3.19/mo on a 3-year term (1 site, 100 GB SSD, unlimited bandwidth, free domain, 10 email addresses); Launch 2 sites; Power 10 sites; Pro 40 sites; no backups included on shared; VPS 8 GB and up use Gen 4 NVMe. (The 90-day figure resolves the earlier 90 versus 45 conflict in favour of 90 for shared and WordPress; confirm on the live page.)
+- Hostinger (Cybernews, All About Cookies): Hostinger Agent/Kodee, AI Troubleshooter, Hostinger Connector and Hostinger Reach are named features; All About Cookies notes it is not PCI compliant.

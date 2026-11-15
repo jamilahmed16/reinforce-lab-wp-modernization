@@ -79,9 +79,23 @@ def main():
     if len(sys.argv) < 4: print(__doc__); sys.exit(2)
     slug, ours, urls = sys.argv[1], sys.argv[2], sys.argv[3:]
     outdir = os.path.join(ROOT, 'claude', 'research', 'serp', slug); os.makedirs(outdir, exist_ok=True)
-    got = fetch_remote(urls)
+    # Manual pages: pages the server cannot fetch can be read with Exa or Firecrawl and saved as
+    # claude/research/serp/<slug>/manual/<name>.json = {"url","title","headings":[["h2","text"],...],"text":"..."}.
+    # A URL with a manual page is not fetched remotely.
+    manual = {}
+    mdir = os.path.join(outdir, 'manual')
+    if os.path.isdir(mdir):
+        for fn in sorted(os.listdir(mdir)):
+            if fn.endswith('.json'):
+                m = json.load(open(os.path.join(mdir, fn)))
+                manual[m['url']] = m
+    got = fetch_remote([u for u in urls if u not in manual])
     pages, failed = [], []
     for u in urls:
+        if u in manual:
+            m = manual[u]
+            pages.append({'url': u, 'title': m.get('title', u), 'words': len(m['text'].split()), 'headings': [tuple(h) for h in m.get('headings', [])], 'text': m['text'], 'source': 'manual'})
+            continue
         r = got.get(u, {})
         html = base64.b64decode(r.get('html') or b'').decode('utf-8', 'replace') if r.get('html') else ''
         if r.get('status') != 200 or len(html) < 2000:
