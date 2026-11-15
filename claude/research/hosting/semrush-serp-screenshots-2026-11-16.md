@@ -39,3 +39,19 @@ Notes (INFERENCE):
 - Hostinger vs Namecheap: the SERP is weak (Medium, forums, videos, a 15-authority site at #10). Easy win. The "domain transfer cost" variant (320) is a section worth including.
 - How much does web hosting cost: KD 55 with big brands (GoDaddy, Forbes, Wix, CNET). A guide needs real price data. Lower priority.
 - Still missing Semrush SERPs for: hostinger review, cloudways review, kinsta review, namecheap review, hosting.com review, best wordpress hosting.
+
+## Batch 4 (5 keywords)
+| Keyword | Vol | KD | Intent | Top 10 (order) |
+|---|---|---|---|---|
+| namecheap hosting review | 210 | 56 | Commercial | 1 Reddit (r/Hosting namecheap reviews), 2 Trustpilot (namecheap.com), 3 WebHostMost (namecheap-review-2026), 4 HostDean, 5 Magnifyi (also #9), 6 HostAdvice, 7 HostingCanada, 8 Quora, 10 YouTube. Variations 72, 750 total: "namecheap hosting reviews" 170, "namecheap email hosting review" 90 (KD 26), "namecheap web hosting review" 70. Global 1.2K (RU 90). Needs about 99 referring domains. |
+| host n8n | 90 | 51 | Informational | 1 hostinger.com/self-hosted-n8n, 2 n8n.io docs (host-n8n), 3 Reddit, 4 xCloud, 5 Northflank, 6 GitHub, 7 n8n.io docs (deploy to AWS), 8 flaviusdinu.com, 9 HostAdvice (vps/n8n-hosting), 10 elest.io. 3.5K variations, 21.2K total: "n8n self hosted" 1.3K (KD 59), "n8n self hosting" 720, "n8n hosting" 590 (KD 49), "n8n self host" 480, "n8n self host postgresql schema" 480 (KD 17). Questions 113, 1.7K total: "how to self host n8n" 260 (KD 37), "can i self host n8n" 170. Ad from ishosting.com. |
+| spaceship hosting review | 30 | 13 | Commercial | 1 Reddit, 2 Trustpilot, 3 YouTube, 4 spaceship.com/web-hosting, 5 HostAdvice, 6 TechRadar (Dec 2025 update), 7 WebHostingTalk, 8 HostSearch, 9 DevProblems, 10 LowEndTalk. |
+| digitalocean droplet pricing | 1,600 | 70 | Navigational | 6 of top 10 are digitalocean.com (pricing/droplets, products/droplets, calculator, pricing, docs, community). Others: Reddit (#5), Fluence.ai (#6), Zapro.ai (#8), Facebook (#10). Variations 263, 2.3K total: "digitalocean droplets pricing" 320, "digitalocean gpu droplet pricing" 90 (KD 30), "digitalocean pricing droplets" 50 (KD 9). Needs 133 referring domains. |
+| plesk vs cpanel | 110 | 26 | Commercial | Dropped (Plesk). Not used. |
+
+Notes (INFERENCE):
+- Host n8n is the best AI-hosting opening found: 21.2K total variation volume, with Hostinger's own page #1 and a mixed field (n8n docs, forums, small blogs). It fits "hosting for AI agents" and Hostinger's n8n VPS template. A strong, sourced guide with real setup steps and costs is realistic. Needs verification of each host's n8n offer before writing.
+- DigitalOcean pricing is brand-owned; do not target "droplet pricing" head-on. Cover pricing inside the review with a dated price table instead.
+- Namecheap hosting review (KD 56, needs about 99 referring domains) is harder than the Namecheap vs GoDaddy and Hostinger vs Namecheap comparisons. Order accordingly.
+- Spaceship is a thin, easy SERP (30 searches), so a short page is enough.
+- Still missing Semrush SERPs for: hostinger review, cloudways review, kinsta review, namecheap review (head term), hosting.com review, best wordpress hosting.
