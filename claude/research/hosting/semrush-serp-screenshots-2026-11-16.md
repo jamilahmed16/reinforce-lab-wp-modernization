@@ -55,3 +55,20 @@ Notes (INFERENCE):
 - Namecheap hosting review (KD 56, needs about 99 referring domains) is harder than the Namecheap vs GoDaddy and Hostinger vs Namecheap comparisons. Order accordingly.
 - Spaceship is a thin, easy SERP (30 searches), so a short page is enough.
 - Still missing Semrush SERPs for: hostinger review, cloudways review, kinsta review, namecheap review (head term), hosting.com review, best wordpress hosting.
+
+## Batch 5 (5 keywords)
+| Keyword | Vol | KD | Intent | Top 10 (order) |
+|---|---|---|---|---|
+| namecheap review | 390 | 59 | Commercial | 1 Reddit (r/Hosting namecheap_reviews), 2 Trustpilot, 3 CrazyEgg, 4 HostDean, 5 WebHostMost (namecheap-review-2026), 6 Cybernews, 7 HostAdvice, 8 Quora, 9 HostingCanada, 10 DevProblems. Variations 297, 2.6K total: "namecheap reviews" 480 (KD 60), "namecheap hosting review" 210, "namecheap vpn review" 110 (KD 46, off-topic). Global 1.7K. Needs about 89 referring domains. Related clusters: "is namecheap good for hosting", "is namecheap a good domain registrar". |
+| name.com review | 10 | n/a | n/a | No SERP data. Variations 141, 220 total ("name.com reviews" 30, KD 34; "name com hosting reviews" 20). |
+| namecheap ai website builder | 50 | 33 | Informational | namecheap.com owns #1, #2, #3, #5, #7 (press release on free AI website tools with shared hosting, Site Maker, guide, knowledgebase). Others: Reddit (#4), YouTube (#6), NewOaks (#8), Elementor (#9, alternatives), WowSlider (#10). Variations 5, 90 total. |
+| gpu hosting | 590 | 74 | Informational | 1 vast.ai, 2 OVHcloud, 3 RunPod, 4 Reddit, 5 Google Cloud, 6 Hetzner, 7 TensorDock, 8 Lambda, 9 CloudTweaks, 10 DigitalOcean (best-cloud-gpu-platforms). Variations 593, 5.4K total: "gpu server hosting" 590 (KD 50), "dedicated gpu server hosting" 480 (KD 41), "gpu vps hosting" 320 (KD 42), "gpu dedicated server hosting" 260. Global 2.0K. Needs 298 referring domains. |
+| network solutions review | 90 | 29 | Commercial | 1 Reddit (r/sysadmin), 2 Trustpilot, 3 ConsumerAffairs, 4 Yelp, 5 HostingAdvice, 6 AllAboutCookies, 7 LarryLudwig, 8 HostDean, 9 YouTube, 10 NamePros. Variations 326, 2.6K total: "network solutions reviews" 880 (KD 50), "who owns network solutions" and "is network solutions legit" cluster. Global 390. |
+
+Notes (INFERENCE):
+- Namecheap review (KD 59, about 89 referring domains needed) is hard. The SERP leads with Reddit, Trustpilot, CrazyEgg and Cybernews. Do not expect a fast win; its value is the affiliate link and the "namecheap reviews" 480 variant.
+- Network Solutions review is an easy SERP (KD 29) with a reputation angle: ratings sites (Trustpilot, ConsumerAffairs, Yelp) rank, which means searchers want the honest complaints and the "who owns / is it legit" answers. A balanced page that covers both is the gap.
+- Namecheap AI website builder: Namecheap owns most of the SERP. Only a short section inside the review; do not build a page.
+- GPU hosting (KD 74, 298 referring domains) is too hard for a first-year page. Fold into the AI hosting hub and the DigitalOcean review. Verify any GPU offer from host pages first.
+- Name.com has no SERP. A short page or a section is enough.
+- Semrush SERPs now collected for all Tier 1 keywords except: hostinger review, cloudways review, kinsta review, hosting.com review, best wordpress hosting.
