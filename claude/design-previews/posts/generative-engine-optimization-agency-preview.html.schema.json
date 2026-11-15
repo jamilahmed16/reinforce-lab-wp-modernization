@@ -1,0 +1,208 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "A generative engine optimization agency helps AI tools find, understand and cite your brand. Choose one whose method you can inspect: a prompt list you approve, a baseline before work starts, named changes, honest limits and clear ownership of your data. Avoid any firm that guarantees citations or rankings, because no one controls AI answers.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Do you need an SEO? Tips for hiring an SEO",
+    "url": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guide to optimizing for generative AI features on Google Search",
+    "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Console Help: Generative AI performance report (Search)",
+    "url": "https://support.google.com/webmasters/answer/16984139"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Bing Webmaster Blog: Introducing AI Performance in Bing Webmaster Tools (February 2026)",
+    "url": "https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "OpenServed: How to choose a GEO agency in 2026, 142 case studies",
+    "url": "https://openserved.com/blog/how-to-choose-a-geo-agency"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "SparkToro: AIs are highly inconsistent when recommending brands or products (2026)",
+    "url": "https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "OpenAI: Overview of OpenAI crawlers",
+    "url": "https://developers.openai.com/api/docs/bots"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Onely: How to choose a GEO agency",
+    "url": "https://www.onely.com/blog/how-to-choose-a-geo-agency/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What does a generative engine optimization agency do?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It helps AI tools such as ChatGPT, Gemini, Perplexity and Google's AI Overviews find, understand and cite your brand. Typical services are a baseline audit, technical fixes, content work, off-site work and repeated measurement."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I choose a GEO agency?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Ask every candidate the same questions and compare written answers: how prompts are chosen, what the baseline is, what will change on your site, which outside sources they will work on, what they cannot promise and what you own if you leave."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What should I look for when hiring a GEO agency?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Look for an inspectable method: a prompt list you approve, raw answers, mentions and citations reported separately, named changes, dated case studies with caveats, and clear ownership of your data and content."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does a GEO agency cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found no independent data on typical fees, and published ranges from agencies disagree. OpenServed found that none of 142 GEO case studies stated a budget. Compare deliverables, scope, tool fees and your team's time, not the monthly number."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I compare GEO services agencies?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Send each the same request: a sample report, a dated case study, a first-month plan, an owner list and a proposed scope. Score method, fit, delivery, proof and terms in one table, and add the hours your own team will spend."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What are the red flags when hiring a GEO agency?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Guarantees of citations or rankings, no baseline, prompts you cannot see or that contain your brand name, one AI tool only, a score with no method, a price with no deliverables and a contract that locks your data in their tool."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What does a GEO consultant do?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "A consultant reviews your baseline, advises on a plan and checks the work, while your team does the writing and fixes. An agency also does the work. Ask both the same questions."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can an agency guarantee citations in ChatGPT or Google AI Overviews?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Google says no one can guarantee a number one ranking, and AI answers vary. SparkToro found under a 1 in 100 chance of the same brand list twice. Treat any guarantee as a red flag."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How long does GEO take to show results?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Access and fact fixes can change retrieval-based answers within weeks, and OpenAI says robots.txt changes can take about 24 hours to apply. Content and off-site work take longer. OpenServed found a six-month median in published agency case studies."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Which GEO platform lets agencies manage multiple client accounts?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Several AI visibility tools offer agency or multi-client plans. Check prompts, engines and exports before you buy, and test any tool against a hand baseline. Our guide to AI brand visibility tools compares what they track and what they cost."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Generative Engine Optimization Agency: How to Choose One",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "GEO",
+    "description": "Generative engine optimization: work that helps AI tools cite and recommend your content.",
+    "url": "https://reinforcelab.online/preview/#term-geo"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Baseline",
+    "description": "A measurement of where you stand before any work starts.",
+    "url": "https://reinforcelab.online/preview/#term-baseline"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Prompt set",
+    "description": "A fixed list of buyer questions run through each AI tool.",
+    "url": "https://reinforcelab.online/preview/#term-prompt-set"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Citation",
+    "description": "A link to your page shown as a source in an AI answer.",
+    "url": "https://reinforcelab.online/preview/#term-citation"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Retainer",
+    "description": "A fixed monthly fee for ongoing work.",
+    "url": "https://reinforcelab.online/preview/#term-retainer"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Source map",
+    "description": "A count of the sites AI answers cite for your prompts.",
+    "url": "https://reinforcelab.online/preview/#term-source-map"
+   }
+  ]
+ }
+]

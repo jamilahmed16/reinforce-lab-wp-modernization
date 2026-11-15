@@ -3,3 +3,4 @@
 - llm-seo: link 'AI search audit' to /ai-search-audit/ (step 1); link llms.txt mention to /llms-txt/ (post 14) when live
 - saas-seo: after post 8 is live, link 'AI search audit' in step 8 to /ai-search-audit/
 - geo-for-law-firms: no pending links
+- generative-engine-optimization-agency: after posts 8 and 21 are live, link 'AI search audit guide' to /ai-search-audit/ and 'SaaS SEO guide' to /saas-seo/

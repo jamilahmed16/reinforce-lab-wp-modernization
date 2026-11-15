@@ -1,0 +1,910 @@
+[
+ {
+  "url": "https://thegrowingai.com/how-to-choose-a-geo-agency/",
+  "title": "How to Choose a GEO Agency: 12 Questions and Red Flags",
+  "words": 3782,
+  "headings": [
+   [
+    "h2",
+    "Why is choosing a GEO agency harder than choosing an SEO agency?"
+   ],
+   [
+    "h2",
+    "What should a GEO agency actually do for you?"
+   ],
+   [
+    "h2",
+    "Which 12 questions should you ask any GEO agency?"
+   ],
+   [
+    "h3",
+    "1. How do you decide which prompts matter?"
+   ],
+   [
+    "h3",
+    "2. How do you measure results, and how often do you retest?"
+   ],
+   [
+    "h3",
+    "3. What exactly will you change on my site?"
+   ],
+   [
+    "h3",
+    "4. How do you handle AI crawlers?"
+   ],
+   [
+    "h3",
+    "5. What do you not control, and what do you not promise?"
+   ],
+   [
+    "h3",
+    "6. Who will do the work, and how senior are they?"
+   ],
+   [
+    "h3",
+    "7. What is in scope, what is out and what does it cost?"
+   ],
+   [
+    "h3",
+    "8. Can you show real work, and what can you tell me about it?"
+   ],
+   [
+    "h3",
+    "9. How do you work with my existing team and vendors?"
+   ],
+   [
+    "h3",
+    "10. How do you handle compliance and accuracy?"
+   ],
+   [
+    "h3",
+    "11. What do I own at the end, and how do I leave?"
+   ],
+   [
+    "h3",
+    "12. What would make you tell me not to buy?"
+   ],
+   [
+    "h4",
+    "Method"
+   ],
+   [
+    "h4",
+    "Work"
+   ],
+   [
+    "h4",
+    "Terms"
+   ],
+   [
+    "h4",
+    "Honesty"
+   ],
+   [
+    "h2",
+    "What are the red flags when hiring a GEO agency?"
+   ],
+   [
+    "h2",
+    "How can you test a GEO agency's claims yourself?"
+   ],
+   [
+    "h2",
+    "What does fair proof of GEO results look like?"
+   ],
+   [
+    "h3",
+    "From weak to strong evidence"
+   ],
+   [
+    "h2",
+    "How do GEO agency pricing models work?"
+   ],
+   [
+    "h2",
+    "Should you hire an agency, a freelancer, an in house person or buy a tool?"
+   ],
+   [
+    "h4",
+    "Fixed project first"
+   ],
+   [
+    "h4",
+    "Retainer first"
+   ],
+   [
+    "h2",
+    "What should a written scope or contract include?"
+   ],
+   [
+    "h2",
+    "Example, hypothetical: how a buyer might run the process"
+   ],
+   [
+    "h2",
+    "When should you not hire a GEO agency, including us?"
+   ],
+   [
+    "h2",
+    "What should you do this week?"
+   ],
+   [
+    "h2",
+    "Sources"
+   ]
+  ],
+  "text": "Key takeaways Choose on method and transparency, not on promises. A credible GEO agency shows how it picks prompts, what it will change on your site, how it measures and what it cannot control. Test claims yourself. Run the buyer prompts in several engines, repeat them, and ask for a dated baseline and retest. One screenshot proves nothing. Get scope, exclusions, access, measurement and exit terms in writing. Walk away from anyone who promises citations or rankings. Why is choosing a GEO agency harder than choosing an SEO agency? Because the field is young, results are less certain, and there is no shared standard for what the work includes. In SEO you can check rankings. In GEO the answer you see may not be the answer your buyer sees, and no agency controls what AI engines say. You have to judge method and honesty instead of outcomes. Three facts explain the difficulty. First, answers vary. SparkToro and Gumshoe.ai found in January 2026, across nearly 3,000 runs of 12 prompts by 600 volunteers, that the odds of getting the same list of brands twice were under 1 in 100 ( AI recommendation lists rarely repeat , Search Engine Land, January 2026). A single \"we got you into ChatGPT \" screenshot is close to meaningless. Second, definitions differ. One agency means a report, another means page rewrites, another means digital PR. Third, tools are marketed as services, and services as tools, so the label tells you little. Google adds a caution that applies to everyone selling in this space. Its guidance, updated in July 2026, says no third party tool has access to Google's internal ranking or AI systems, so any tool's claims should be checked against official guidance, and it calls optimizing for generative AI search still SEO ( Optimizing your website for generative AI features on Google Search , Google Search Central, July 2026). You do not need to agree with every word. But it tells you that the honest position is modest. We are a GEO agency, so read this with that in mind. We wrote it as we would want a buyer to read it: to help you filter out weak offers, including ours if ours is weak for you. For context on what the work is, see the generative engine optimization overview, and for what a typical engagement contains, what a GEO company does. What should a GEO agency actually do for you? It should do six things: measure where you stand, fix access and technical issues, make priority pages answer ready, align your brand facts, work on credible mentions beyond your site, and report honestly. If an agency covers fewer, ask which ones it expects you to do. Baseline. Test a set of real buyer prompts across several engines, repeated, with dates. Without it there is nothing to compare against. Technical access. Check that the crawlers behind AI answers can reach your pages: OAI-SearchBot, PerplexityBot, Claude-SearchBot, Googlebot, Bingbot and others, at robots.txt and CDN level. See technical GEO . Page rewrites. Restructure priority pages with direct answers, headings that match real questions, evidence and accurate FAQs. Entity and facts. Make names, addresses, services and claims consistent everywhere. Authority. Reviews, directories, press and communities that engines draw on. Slow and category specific. Reporting. Repeated measurement, mentions and citations separately, and a next step list. A useful test: ask for a description of week one, week two and week three. A real provider can say what happens on each day. A vague one answers in adjectives. Our own scope for the GEO Pilot is written that way on purpose: week 1 baseline and audit, week 2 technical fixes, week 3 up to 10 priority pages made answer ready, week 4 retest, report and a 90 day roadmap. Which 12 questions should you ask any GEO agency? Ask all twelve, in writing if you can, and compare the answers between providers. What you want is specific answers with named steps. Evasion is also information. 1. How do you decide which prompts matter? Good answer: they collect real buyer questions from your sales calls, support tickets, search data and customers, group them by intent, and agree the list with you before testing. They freeze the list and version any change. Poor answer: they run \"your keywords\" through a tool, or generate prompts by asking a model. See how to research buyer prompts for what good looks like. 2. How do you measure results, and how often do you retest? Good answer: a baseline on the same prompts, repeated runs per engine, an appearance rate with the numerator and denominator, mentions and citations reported separately, and dated notes of engine changes. SparkToro's work suggests position is unreliable and share of responses is steadier. Poor answer: one score, one screenshot, or \"we monitor continuously\" with no method. Our GEO reporting template shows a defensible layout. 3. What exactly will you change on my site? Good answer: a written list by item, such as robots.txt rules, sitemap, canonicals, structured data, specific pages and sections, with the approval path. Poor answer: \"optimise your content for AI\". Ask whether they edit your site or send recommendations, because the price and your workload differ. 4. How do you handle AI crawlers? Good answer: they name the bots and their purposes, and separate search from training. OpenAI documents OAI-SearchBot for ChatGPT search and GPTBot for training, and says each setting is independent ( Overview of OpenAI crawlers , OpenAI, accessed October 2026). Anthropic separates ClaudeBot, Claude-SearchBot and Claude-User. Perplexity separates PerplexityBot from Perplexity-User. An agency that tells you to block or allow \"all AI bots\" without that distinction is guessing. See what to allow in robots.txt . 5. What do you not control, and what do you not promise? Good answer: they say plainly that they do not control engine answers, cannot promise citations, rankings or traffic, and that engines change. Google's John Mueller said in 2025 that if an SEO promises rankings or search traffic, \"that's usually a red flag\" ( Google's advice on hiring an SEO , Search Engine Journal, July 2025). The same applies to AI answers. Poor answer: any guarantee. 6. Who will do the work, and how senior are they? Good answer: named people, their roles, and who you talk to each week. Ask who writes the page rewrites and who reviews technical changes. Poor answer: a pitch from a senior person and delivery by juniors you never meet, or a pipeline of unreviewed machine generated copy. 7. What is in scope, what is out and what does it cost? Good answer: a written scope list, written exclusions, a price tied to scope and a clear statement of how ongoing work is priced. Poor answer: a number with no scope. The article on how much GEO costs goes through the factors that should move a price. 8. Can you show real work, and what can you tell me about it? Good answer: a client case with the market, the starting point, what was changed, what was measured and what the limits of the evidence are. Names may be confidential. The method should not be. Poor answer: logos, vague percentages, or screenshots with no dates. For reference, our public proof is limited to two cases: Emtech , a Dubai IT company cited for IT AMC queries across five engines, and Sudarshan Stoneix , a marble and granite company with a six month result measured by a third party tool. One client and one market each. Not a promise. 9. How do you work with my existing team and vendors? Good answer: they describe a workflow with your developers, content team and any SEO provider, including how they avoid contradicting each other. Poor answer: they want exclusive control of your site, or they dismiss your other vendors. 10. How do you handle compliance and accuracy? Good answer: a review step for regulated claims, a process for subject matter sign off, and a rule against inventing statistics or testimonials. Ask about health, finance and legal content in particular. Poor answer: no review, or \"AI writes it, we publish it\". 11. What do I own at the end, and how do I leave? Good answer: you own the prompt set, reports, page edits and any content created, with exports in usable formats and a notice period. Poor answer: your data lives in their tool, or the contract auto renews with penalties. 12. What would make you tell me not to buy? Good answer: a real list. For example, your buyers do not use AI tools to research your category, your site has serious basic problems, or you have no clear offer. An agency that can never say no is selling, not advising. The 12 questions Method Prompts, measurement, retests How do you pick prompts? How do you measure and retest? How do you handle AI crawlers? Work What actually changes What will you change on my site? Who does the work? How do you work with my team? Terms What you get and keep What is in and out of scope? What do I own at the end? How do I leave? Honesty Limits and proof What do you not control? Can you show real work? When would you tell me not to buy? The twelve questions in this article, grouped. What are the red flags when hiring a GEO agency? Ten red flags, each with the reason it matters. One alone may be a misunderstanding. Three together is a pattern. Promised citations, rankings or traffic. Nobody controls AI answers. A \"proprietary\" method that cannot be explained. Real GEO work is mostly access, structure, facts and credible mentions. A single AI visibility score. If the formula is hidden you cannot audit it. Proof from one screenshot. Answers change run to run. Long contracts before any baseline. Twelve months of commitment on trust alone. Mass produced content. Hundreds of near identical pages. Google's July 2026 guide asks for original, non commodity content. Fake mentions or link schemes. Google says seeking artificial mentions across the web is not effective, and it can create risk. No technical work. If they never mention crawler access, indexing or rendering, they may skip the layer everything else depends on. Blocking or allowing every bot. It shows the agency does not separate search from training. Pressure. \"The window is closing\" is a sales line. Engines change, but not in a week. A fair caution about red flags. A single odd answer is not proof of bad faith. Some agencies use different words for the same good practice. Ask a follow up before you rule anyone out. How can you test a GEO agency's claims yourself? You can test most claims in an afternoon, with no special tools. This is the strongest protection you have. Write your own prompts. Take 10 real questions your buyers ask. Do not use the agency's list. Run them in several engines. ChatGPT with search on, Google AI Mode, Perplexity, Gemini, Claude and Copilot if relevant. Use a clean session and note the location. Run each three times. Save the answer text and the sources shown, with the date. Check the claim against your data. If an agency says a client is \"cited in ChatGPT\", run the prompt yourself three times. Do the same for any reference account you can access. Check access. Use the AI crawler access checker on your own site and ask the agency to explain each result. Check the sources they cite. Do the studies exist, are they dated, and do they say what the agency claims? For instance, the GEO research paper by Aggarwal and colleagues (KDD 2024) reports visibility gains of up to 40 percent in its tests and that keyword stuffing underperformed a baseline ( GEO: Generative Engine Optimization , Aggarwal et al., KDD 2024, August 2024). That is a research result under defined conditions, not a promise for your site. An agency that quotes \"40 percent\" as a guaranteed uplift misreads it. Ask for a free baseline sample. A short sample of five prompts shows how they think. The free AI Visibility Checker gives you a first look to compare against. Pay attention to how the agency reacts to being tested. Good providers welcome it. They know answers vary and they want you to understand why. What does fair proof of GEO results look like? Fair proof is dated, specific, repeatable and honest about its limits. It does not claim that the agency alone caused the result. Look for these five elements: A named prompt set and the engines tested. A baseline and a retest on the same prompts, with dates and run counts. Mentions and citations separately. Semrush's 2026 AI Visibility Index found that fewer than half of the top 100 mentioned brands also appeared in the matching top 100 cited domains, so reports that blur them hide information (Semrush, October 2026). See the mention and citation gap . A change log. What was altered and when, so you can see what might explain a shift. A limits statement. Other things changed at the same time, engines update, and the sample is a sample. Be careful with traffic claims. Conductor's 2026 benchmark found AI referral traffic was 1.08 percent of total website traffic across 10 industries, with ChatGPT driving 87.4 percent of AI referrals (Conductor, 2026). An agency promising big traffic from AI is promising something the averages do not support. And Pew Research Center found users clicked a link inside a Google AI summary in only 1 percent of visits to pages with one (Pew Research Center, July 2025). Influence without a click is real but hard to prove, so honest reports use leads with self reported source and brand search alongside visits. Beware of attributing too neatly. Ahrefs found branded web mentions correlated with AI Overview brand visibility at 0.664 in a study of 75,000 brands, and states correlation is not causation (Ahrefs, May 2025). A before and after chart does not show cause. Good proof says so. Reading proof From weak to strong evidence Weak proof Strong proof One screenshot Logos and vague percentages Dated baseline and retest Repeated runs plus a change log and limits A guide to weighing proof, not measured data. How do GEO agency pricing models work? Three models cover most offers: a fixed project, a monthly retainer and tools you run yourself. The right one depends on your capacity and how sure you are about the work needed. A fixed project suits a first engagement: a known cost, a known end date, and a baseline you can judge. A retainer suits ongoing content, authority and monitoring work, once a baseline shows what is worth continuing. Tools alone suit teams with skill and time who need measurement. We cover the logic of each, the hidden costs and a staged budget in how much GEO costs, and the options by job in types of AI visibility tools. Two rules of thumb. Do not pay a large retainer before a baseline exists. And do not choose purely on the lowest price: a low fee for vague work costs more than a higher fee for clear work. Our own entry offer is the GEO Pilot , $999 USD, one time, inside 30 days. Ongoing work after it is quoted, and the pricing page shows how. Should you hire an agency, a freelancer, an in house person or buy a tool? It depends on your capacity, speed and risk. There is no universal winner. Use these decision rules. Hire an agency if you need the technical, content and measurement work done together, you lack in house capacity, and you want a defined scope and timeline. Skip the agency if you have an experienced technical SEO lead, developers who respond and content writers who can do answer first writing. Add a tool for measurement. Hire a freelancer if the scope is narrow, for example a schema and robots.txt fix, or a few page rewrites, and you can manage the work. Hire in house if GEO will be a permanent function across many markets and you can recruit someone senior. Buy a tool if you only need measurement and you have someone to act on the findings. Do not buy one hoping it will do the fixing. Option Strength Risk Best when Agency Combined skills, defined scope Variable quality, cost You lack capacity Freelancer Flexible, lower cost Narrow skill, single point of failure Scope is small In house Deep context, permanent Slow to build, hard to hire Many markets, long term Tool only Cheap, always on Needs someone to act You have skilled staff Pricing choices Fixed project first Known cost and end date Baseline before any commitment Evidence decides the next step \u2192 Retainer first Spreads cost over months Suits ongoing content and authority work Risky before a baseline exists Both can be fair. Ask for written deliverables either way. What should a written scope or contract include? Eight items. Ask for them whatever you buy. They protect both sides. Scope list. Named deliverables, such as number of pages, audits, fixes and reports. \"Optimisation\" is not a line item. Exclusions. What is not included, such as a rebuild, link building, paid media or extra languages. Access and approvals. What access is needed, who approves changes and the expected response time. Measurement method. Engines, prompts, run counts, report dates and who keeps the raw answers. Ownership. You own the prompt set, reports, edits and new content. Term and exit. A short initial term, a notice period and no penalties for leaving. Accuracy and compliance. Sign off for regulated claims, no invented statistics or testimonials. No outcome promise. The contract should state that no ranking, citation or traffic result is promised. If the contract promises one, the contract is wrong. Example, hypothetical: how a buyer might run the process This is an invented scenario to show the steps, not a client result. A Dubai based B2B software firm wants to appear in AI answers for \"compliance software for UAE banks\". The marketing director shortlists three providers and sends each the same one page brief: the domain, the market, 15 buyer prompts, the engines that matter, the pages that matter most, and a request for a scope and price. Week 1. She reads the replies against the twelve questions. Provider A sends a long deck and a guarantee of \"top citations in 90 days\". She crosses it off. Provider B replies with a scoped plan: baseline, crawler audit, ten page rewrites, a retest, an itemised exclusion list, and no guarantee. Provider C is a tool vendor offering a dashboard and no implementation. Week 2. She runs her own 15 prompts three times in four engines and saves the results. She then asks Provider B to explain, for two of her pages, what they would change and why. The answers are specific: the pricing page has no figures, the robots.txt blocks an AI search bot, and two product names differ across the site. Week 3. She asks for the contract. It lists scope, exclusions, a 30 day term, report dates and her ownership of all outputs. Her legal team adds a review step for compliance claims. The agency agrees. Week 4 onward. Work starts. At day 30 she receives a before and after report on her own 15 prompts. It shows mentions and citations separately, notes what else changed, and lists next steps. She decides, with evidence, whether to continue. Notice that she never relied on a promise, and that the most useful steps cost her only a few hours: her own prompts, a clear brief and a written scope. When should you not hire a GEO agency, including us? Not yet if any of these apply. We would rather tell you than sell you. Your buyers do not use AI tools to research what you sell. Ask recent customers how they found you. Forrester reported in January 2026 that 94 percent of business buyers use AI in their buying process, and G2 found in April 2026 that 51 percent of B2B software buyers start research with an AI assistant more often than with Google (Forrester, January 2026; G2, April 2026). That is strong for software and business buying. It may be far weaker in your category. Your site has basic failures: it is often down, blocked or has no clear offer. Fix those first. You cannot approve changes in reasonable time. You want a promised outcome. You have one narrow need, such as a robots.txt fix. A freelancer or a free tool may be enough. Start with the robots.txt generator if so. If you are small, is GEO worth it for a small business helps you decide. What should you do this week? Do these before talking to any agency, including us. They take a few hours and improve every conversation. Write 10 to 15 real buyer questions. Use sales calls and support tickets. Run them in at least three engines, three times each. Save the results with dates. Run the free AI Visibility Checker and the AI crawler access checker. Write a one page brief: domain, markets, languages, key pages, who approves changes, and your budget range. Send it to two or three providers with the twelve questions. Compare in writing. Ask each for a sample baseline on five of your prompts. Choose on method and transparency. Sign a short first term. If you would like us to be one of the providers you compare, see the GEO Pilot, $999 USD, one time, inside 30 days, done for you on any platform, with a before and after report. You can also request an LLM visibility audit . We do not promise rankings, citations or traffic, and we would not trust anyone who does. Sources AI recommendation lists rarely repeat , Search Engine Land (SparkToro and Gumshoe.ai), January 2026 Optimizing your website for generative AI features on Google Search , Google Search Central, July 2026 Google's advice on hiring an SEO , Search Engine Journal, July 2025 Overview of OpenAI crawlers , OpenAI, accessed October 2026 About Claude's web crawler , Anthropic, accessed October 2026 Perplexity crawlers , Perplexity, accessed October 2026 GEO: Generative Engine Optimization , Aggarwal et al., KDD 2024, August 2024 Asda ranks 606th in ChatGPT citations as Tesco sits 25th, Semrush finds , PPC Land reporting Semrush, October 2026 AEO and GEO benchmarks report , Conductor, 2026 Google users are less likely to click on links when an AI summary appears , Pew Research Center, July 2025 AI Overview brand visibility correlation study , Ahrefs, May 2025 B2B buyers make zero click buying number one , Forrester, January 2026"
+ },
+ {
+  "url": "https://www.onely.com/blog/how-to-choose-a-geo-agency/",
+  "title": "How to Choose a GEO Agency: What to Check | Onely",
+  "words": 3548,
+  "headings": [
+   [
+    "h2",
+    "How do you shortlist a GEO agency?"
+   ],
+   [
+    "h3",
+    "Which five criteria should you apply to every candidate?"
+   ],
+   [
+    "h3",
+    "Which agencies belong on a GEO shortlist?"
+   ],
+   [
+    "h2",
+    "What should you prepare before talking to agencies?"
+   ],
+   [
+    "h3",
+    "Which buyer questions belong in the first prompt set?"
+   ],
+   [
+    "h3",
+    "What counts as a useful result for your business?"
+   ],
+   [
+    "h2",
+    "How do you test an agency\u2019s AI visibility evidence?"
+   ],
+   [
+    "h3",
+    "How do you audit one sample report down to the answer?"
+   ],
+   [
+    "h3",
+    "What does a case study establish, and what does it not?"
+   ],
+   [
+    "h3",
+    "What if dashboards and analytics disagree?"
+   ],
+   [
+    "h2",
+    "Can the agency get the proposed work shipped across your teams?"
+   ],
+   [
+    "h3",
+    "What would the agency change on your site?"
+   ],
+   [
+    "h3",
+    "Which outside sources shape the answer?"
+   ],
+   [
+    "h3",
+    "How do you follow one change from recommendation to verification?"
+   ],
+   [
+    "h2",
+    "Which questions and contract terms should you check before signing?"
+   ],
+   [
+    "h3",
+    "Which commercial questions should you ask every finalist?"
+   ],
+   [
+    "h3",
+    "How do you compare a GEO agency\u2019s fee against the work and your internal effort?"
+   ],
+   [
+    "h3",
+    "Which review, change, and exit terms should you agree?"
+   ],
+   [
+    "h2",
+    "What are the red flags, and how will you check the hire worked?"
+   ],
+   [
+    "h3",
+    "Which claims should stop a pitch?"
+   ],
+   [
+    "h3",
+    "What should the first review establish?"
+   ],
+   [
+    "h2",
+    "Who should hire Onely as its GEO agency?"
+   ],
+   [
+    "h2",
+    "How do you choose the agency whose evidence and delivery plan hold up?"
+   ],
+   [
+    "h2",
+    "What else do people ask about choosing a GEO agency?"
+   ],
+   [
+    "h3",
+    "Is a best-GEO-agencies list enough to build a shortlist?"
+   ],
+   [
+    "h3",
+    "Can an anonymous GEO case study still be useful?"
+   ],
+   [
+    "h3",
+    "Which GEO agencies offer a paid pilot before a long contract?"
+   ],
+   [
+    "h3",
+    "How do you check that a GEO agency is brand-safe and compliant before it publishes for you?"
+   ],
+   [
+    "h3",
+    "What happens during GEO agency onboarding?"
+   ],
+   [
+    "h3",
+    "Will GEO replace SEO?"
+   ],
+   [
+    "h3",
+    "How does a GEO agency work alongside your current SEO agency and digital PR team?"
+   ],
+   [
+    "h3",
+    "Should an agency guarantee a place in ChatGPT or Google AI Overviews?"
+   ]
+  ],
+  "text": "2 November 2026 In Conductor\u2019s US benchmark , AI referrals accounted for 1.08% of all website visits across the industries studied. An agency\u2019s impressive citation chart is therefore worth investigating, not accepting as evidence of business impact. Shortlist GEO agencies in three passes: verify their AI-answer evidence, audit how they measure questions your buyers ask, and test whether they can get changes approved and shipped. Compare contracts only after those capabilities are clear. No agency can promise a particular AI answer, so give every candidate the same requests and compare what you can inspect. GEO, short for generative engine optimization, is the work of getting a brand described accurately, cited and recommended in the answers of AI assistants such as ChatGPT, Gemini, Perplexity, Copilot, Google AI Overviews and Google AI Mode. Onely, the AI search agency founded by Bartosz G\u00f3ralewicz, uses AI search to connect brands to their audience and drive sales, so this Onely guide judges a GEO agency by whether its work reaches the people asking, not only by citation counts. We believe AI search is not about keywords anymore: it is about connecting to the audience across the questions they ask before they buy, and most agencies miss that because they are stuck in keywords. Our view at Onely is that a GEO agency earns the job by solving the customer journey, because AI search turned searching into a conversation instead of a keyword lookup. Onely is not the right hire for every company: we think it is the strongest choice for enterprises that want international AI search, and the conditions are set out in the section on who should hire Onely. Onely wrote and publishes this guide, so we are an interested party. The checks on this page work for judging any GEO agency, Onely included. How do you shortlist a GEO agency? Apply three gates before comparing pitches. First, request dated AI-answer results with the underlying prompts and responses. Second, examine the platforms, scoring rules, and buyer questions behind those results. Third, ask the agency to show how a recommendation would pass through your teams to publication and verification. Advance candidates that pass all three. In the first meeting, ask each GEO agency to define GEO in its own words: which AI surfaces it covers, such as ChatGPT, Claude, Copilot, Gemini and Perplexity, how the work relates to SEO and AEO (answer engine optimization), and what it will measure. A vague answer such as \u201cwe do everything for AI\u201d, or a narrow one that reduces GEO to content writing or structured data alone, signals an immature service. Which five criteria should you apply to every candidate? Apply the same five criteria to every candidate, and record what each agency provides , not what it says it can provide. Criterion Ask each agency to provide What to check Past AI-answer results Dated baseline, follow-up, prompts, change log Do observations support the claim? Measurement Sample prompts, answers, citations, mentions Can you inspect scoring? Buyer fit Priority questions, competitors, success definitions Do prompts reflect decisions? Enterprise delivery Owners, approvals, access, verification Can changes ship and be checked? Commercial terms Scope, exclusions, review, handover Does the fee match the work? Send everyone the same request: a case-study evidence packet, a sample report, an initial on-site and off-site plan, a responsibility outline, and a proposed scope. Compare the buyer questions behind each prompt set and the actual answers and cited sources, rather than report rankings, mention totals, or polished screenshots. Ask to inspect how the report groups brands, topics, and prompts, and which answers and cited pages sit behind its totals. Conductor, which sells search software, documents those configurable elements in its AI Search Performance tool . An agency using another tool should explain its method just as clearly. A confidential case study can still qualify: request redacted answers, dates, methods, and a permitted reference or live method review. Then test delivery. One published comparison of enterprise SEO agencies, written by an agency that sells SEO services, scores each candidate on how it handles decisions and approvals across marketing, engineering, product, legal, brand and regional teams. Your shortlist should include agencies whose proposed work can move through your approval process. Which agencies belong on a GEO shortlist? The agencies that belong on a GEO shortlist are the ones that pass all three gates, whichever list or referral brought them to you. Many published lists of the best GEO and AI SEO agencies are written by agencies that place themselves on the list, so a high place on a list tells you who wrote it before it tells you who can do the work. What should you prepare before talking to agencies? Bring buyer questions, relevant competitors, accurate product claims, applicable compliance rules, and your definition of a qualified opportunity. Give candidates the same material and ask which questions they would test first. Which buyer questions belong in the first prompt set? Start with discovery, comparison, use-case, and purchase questions drawn from sales conversations, site search, and research your teams already have. In G2\u2019s 2026 survey of B2B software buyers , comparing vendor strengths and weaknesses was the leading reason respondents used AI chatbots for software research. G2 sells software marketplace services; its finding gives you a practical test: will the prompt set reveal how an assistant compares you with a real alternative? Ask agencies to justify their choices. A question your buyers routinely ask deserves attention even if your brand performs poorly on it. For multiple markets, request market-specific questions as well as translations: buyers may compare different options or raise different concerns. What counts as a useful result for your business? Define what a good answer must get right. Does it describe your capabilities accurately and recommend you for a fitting use case? Does it merely mention you, or cite your page while recommending a competitor? Track those distinctions alongside visits and sales outcomes. One agency that sells GEO services proposes three separate measures: how often the brand is mentioned in AI answers for its category, how accurately those answers represent the brand, and how well AI-influenced sessions convert. Agree on the CRM stages and sales feedback you will use to identify qualified demand. Tell candidates which product, legal, and regional approvers must review claims before publication. How do you test an agency\u2019s AI visibility evidence? Have each finalist walk through a dated baseline and follow-up for the same disclosed prompts and platforms. Inspect the responses, cited URLs, competitors, and scoring rules. Ask what changed on the site or elsewhere, when it changed, and what other activity coincided with the reported gain. How do you audit one sample report down to the answer? Audit one sample report by choosing one claimed improvement and following it back to the answers. Request the raw prompt, full responses, run dates, platform and model details where available, and cited URLs. Have the agency classify examples as brand mentions, AI citations, favorable recommendations, or competitor recommendations. Include ChatGPT, Perplexity, Gemini, Google AI Overviews, or Google AI Mode where they matter to your buyers. Ask why the prompts were chosen and how often checks repeat. Rerun selected questions during diligence; compare the new answers with the report. Botify, which sells AI visibility software, treats changing AI answers and unavailable query-volume data as reasons AI visibility reports are signals, not exhaustive market-share measurements . Require a justified schedule and a consistent comparison method. What does a case study establish, and what does it not? A case study can demonstrate an agency\u2019s method. A useful one states the measured change, the period it covers, and how the agency mapped prompts and read the analytics behind it. Request the dated change log and answers alongside other marketing activity to assess what the agency\u2019s work may have contributed. Accept necessary redaction, but require enough detail to examine the claim. Most published GEO case studies cannot pass that test. One agency directory studied 142 GEO case studies from 68 agencies: 66% named no AI platform, 27% reported no AI metric, only 5.6% gave before-and-after numbers, and only 13% tied AI search to leads or revenue. At Onely we read that as the gap to test for: a case study that never reaches leads or revenue shows that a brand was named, not that the work connected it to its audience and drove sales. Controlled GEO experiments by Aggarwal and coauthors found improved visibility for optimized sources against controls on Perplexity. The experiments support testing proposed changes and checking the resulting answers. What if dashboards and analytics disagree? Inspect the answers, then check each tool\u2019s prompt coverage and referral classification. Semrush, which sells AI visibility software, describes share of voice, mention sentiment, and competitor coverage as distinct measures . seoClarity, which sells search software, reports that AI search traffic remains a small share of organic traffic in its client sample . Check absolute visits alongside visibility trends, then investigate whether either connects to qualified demand. A cited page that supports a competitor recommendation should not be scored like an answer that recommends your brand. Can the agency get the proposed work shipped across your teams? Ask for a short audit of your site and the outside sources shaping relevant answers. Botify and DemandSphere\u2019s 2024 study of more than 120,000 keywords across 22 sites found AI Overviews could appear for up to 47% of the keywords studied, using methods that encouraged them to show; have the agency sample your relevant searches before prioritizing fixes. Trace one recommendation through owner, access, approval, publication, and verification to test cross-team delivery. What would the agency change on your site? Request prioritized findings on crawlability, accessible content, structured information, and whether key pages answer buyer questions clearly. For each finding, require a deliverable, an owner, and an acceptance check. One SEO agency\u2019s published case study describes marking up questions and answers with FAQPage structured data. A usable recommendation would specify the page, proposed markup, publishing owner, and check of the live version. Ask which changes strengthen SEO foundations and which AI-answer hypotheses the agency will test afterward. BrightEdge, which sells search software, reports that the share of consideration-stage citations going to brand-owned pages differs across industries . The audit should reflect your sector and existing content rather than prescribe a publishing quota. Which outside sources shape the answer? Have the agency identify third-party pages that describe or compare your brand, check their accuracy, and prioritize sources your buyers use. In Ranqo\u2019s observational audit across AI platforms , produced by the vendor, 2.9% of recorded citations pointed to the studied brand\u2019s own site. Inspect the external sources in your answers before setting off-site priorities. Ask for the agency\u2019s plan to keep the brand, its founders and its services described accurately and consistently across directories, wikis and the other knowledge sources AI answers draw on. Inconsistent entity information gives an assistant conflicting facts to choose between. Ask which corrections or legitimate earned mentions the agency would pursue through digital PR, who would contact each source, and how it would check the resulting answer. Microsoft describes prominent citations and linked passages in Copilot Search ; evaluate where those links lead and what the answer says about you. How do you follow one change from recommendation to verification? Follow one change by naming everyone it passes through: the agency lead; internal SEO, web, content, PR, and analytics owners; and the final approver. Ask who has CMS and measurement access, where approvals are recorded, who deploys the change, and how the report separates blocked work from published work. Approval delays can be the real bottleneck. One agency-selection guide, from a vendor that sells related services, recommends a paid pilot of four to six weeks with two or three finalists and puts analytics ownership and AI governance into the contract terms. Use a pilot to test handoffs through launch. Onely runs that route from the questions real customers ask: Audience Insights and Discovery finds those questions, Content Strategy for AI decides what each answer needs, and AI Optimization and Implementation makes the changes on the site and off it. Ask every candidate to demonstrate that full route. Which questions and contract terms should you check before signing? Compare what proposals include and what your teams must do. Put implementation responsibilities, review points, changes, termination, and handover in writing. Which commercial questions should you ask every finalist? Ask every finalist for an itemized scope covering the audit, prompt tracking, content, technical fixes, off-site work, reporting, and implementation. Identify exclusions and the access or approvals your teams must supply. Give each deliverable an observable acceptance check: an approved page, deployed fix, recorded answer check, or accessible report. One SEO agency\u2019s guide to contracts advises specifying verifiable activities, implementation responsibilities, approvals, change control, and reporting rather than guaranteed positions. Pay for defined work the agency can perform and you can inspect. How do you compare a GEO agency\u2019s fee against the work and your internal effort? Compare fees by setting implementation hours, tool costs, review demands, and exclusions alongside each one. A public price tells you what one offer includes; it gives little basis for comparing two different enterprise plans. A lower retainer may also leave more deployment and measurement work with your team. Onely has no rate card, and what we charge depends on how much audience research the brand needs, how new its problem is, and how many countries it sells in. Which review, change, and exit terms should you agree? Agree the first review point before work starts. Specify what happens when approval is delayed, how new work is priced, and what notice is required and what handover includes. Establish who retains the prompt set, raw answers, reporting access, produced assets, and implementation documentation after termination. Agiled, which sells business management software, includes deliverables, measurement tools, reporting, and handover in its SEO contract template . Analytics accounts, Search Console, business profiles and directory listings should be held in the brand\u2019s name, and the contract should state that they stay with the brand if it parts ways with the agency. Before signing, ask: What is the success condition for the first phase? The answer should name shipped work and measurements you can inspect, even if AI answers do not move. Judge the first 90 days against a plan the agency commits to in writing: a baseline of AI answers in the first weeks, fixes shipping by around week four, and prompt-level movement reported by week twelve. A 90-day initial term, rather than a 12-month lock-in, keeps that plan testable before a long commitment. What are the red flags, and how will you check the hire worked? Challenge guaranteed placements, rankings-only reports, unexplained visibility scores, and plans built around a single tactic. Ask what each tactic adds to SEO foundations and which buyer-question answers will be checked afterward. Which claims should stop a pitch? BrightEdge, which sells SEO software, finds overlap between AI Overview citations and organic rankings . Ask a candidate showing rankings to demonstrate what the AI answer actually says. If it promises placement, ask which observed result would cause it to change its plan; controlled experiments show possible visibility improvements, not a guarantee for your brand. Stop a GEO pitch that relies on any of these claims: a special relationship with OpenAI or Google, a secret method the agency will not explain, mass production of low-quality pages, llms.txt or structured data sold as the whole GEO service, prompt injection or hidden manipulation, undisclosed paid coverage, a proprietary score with no raw data behind it, or instant placement, when citation growth typically takes two to three months of iterative work. Agency-selection advice differs on proof of success. One list of AI SEO agencies, written by an agency that sells AI SEO services, treats documented appearances and citations as the evidence of capability. Another, written by a content and SEO agency that ranks itself first, puts attributable pipeline and revenue ahead of screenshots. Require both answer-level proof and downstream measures where available. Review the work linking them before attributing a referral or opportunity to agency work. What should the first review establish? Return to the agreed prompts and change log. Separate published work from work awaiting approval; compare repeated answers with the baseline; and check accuracy, recommendation context, referrals, and sales feedback. If answers vary or qualified demand has not moved, record that result and choose the next hypothesis to test. Who should hire Onely as its GEO agency? Onely fits enterprises that want AI search to connect them to their audience in several countries, and it is not the best match for every company that runs these checks. Three conditions decide the fit. You need to connect to your audience. The prompt set should come from the questions your customers really ask in each market, not from a keyword list translated into questions. You need work built around your specific challenge. Your approvers, markets and existing content decide what can ship, so the plan has to be made for them rather than copied from another client. You need results, not old-school SEO metrics. The first review should show whether AI answers moved qualified demand, not only whether a visibility score went up. Onely is an AI search agency founded by Bartosz G\u00f3ralewicz, with headquarters in Austin, Texas, and an office in Wroc\u0142aw, Poland. Onely solves a bigger problem than GEO, a problem AI search created: brands show up in answers and still do not connect to their audience. Onely goes beyond keywords and beyond content optimization, towards the customer connection that drives sales. Onely is not focused on small businesses, local search or paid media. How do you choose the agency whose evidence and delivery plan hold up? Choose the agency whose dated answers, measurement method and delivery plan survive your checks, and confirm the choice with one real test. Send each finalist one real buyer question and request a dated AI answer, a proposed change, its owner, and a date to check the result. Verify the AI-answer evidence down to the raw prompts and responses. Inspect how the agency measures the questions your buyers ask. Trace one change through your approvals to the live page. Sign only for work you can inspect, with a first review and a clean exit. The agency worth hiring is the one that connects your brand to the people asking, and can show you the answers that prove it. What else do people ask about choosing a GEO agency? Is a best-GEO-agencies list enough to build a shortlist? Use a list to find candidates, then request answer-level evidence, measurement methods, a delivery plan, and scope from each. Check whether they can work through your approvals. Can an anonymous GEO case study still be useful? An anonymous case study can qualify if you can inspect dates, methods, changes, and redacted observations or speak to a permitted reference. Which GEO agencies offer a paid pilot before a long contract? Ask every finalist whether it will run a paid pilot before a long contract, because a short, scoped engagement shows how its work moves through your approvals before you commit for a year. Agree the pilot\u2019s prompts, deliverables and review date in writing. How do you check that a GEO agency is brand-safe and compliant before it publishes for you? Check brand safety by asking the agency to show where your product, legal and regional approvers sign off, and to run one draft through that chain during the pilot. Nothing should reach your site or an outside source without a recorded approval. What happens during GEO agency onboarding? Onboarding for a GEO agency should cover access to your CMS and analytics, an agreed prompt set, a dated baseline of AI answers, and a named approver for each kind of change. Ask for that list in the proposal so the first weeks are spent measuring, not waiting for access. Will GEO replace SEO? Keep technical accessibility and useful content in the plan. Add checks of what AI answers say, which sources they cite, and whether they represent your brand accurately. How does a GEO agency work alongside your current SEO agency and digital PR team? A GEO agency should work inside the same data and messaging framework as your SEO agency, content team and digital PR, with a written split of who owns each task. Ask every finalist how its work ties into your current SEO and PR, which changes your in-house team must make, and who reports which result when GEO comes from a second provider, so two agencies never claim the same gain. Should an agency guarantee a place in ChatGPT or Google AI Overviews? Ask for verifiable work and repeated measurement. The agency can try to influence inclusion in an AI answer, but cannot control it. Hi! I\u2019m Bartosz, founder and Head of Innovation @ Onely. Thank you for trusting us with your valuable time and I hope that you found the answers to your questions in this blogpost. In case you are still wondering how to exactly move forward with your organic growth \u2013 check out our services page and schedule a free discovery call where we will do all the heavylifting for you. Hope to talk to you soon! Check out our services!"
+ },
+ {
+  "url": "https://www.thrad.ai/content/generative-engine-optimization-agency",
+  "title": "Generative Engine Optimization Agency Guide: Services, Prices, Questions | Thrad",
+  "words": 2023,
+  "headings": [
+   [
+    "h2",
+    "What is a GEO or AEO agency?"
+   ],
+   [
+    "h2",
+    "Organic or sponsored: which should you be doing?"
+   ],
+   [
+    "h2",
+    "What does a GEO agency actually do?"
+   ],
+   [
+    "h2",
+    "How much does a GEO agency cost?"
+   ],
+   [
+    "h2",
+    "How do you read an agency's claims?"
+   ],
+   [
+    "h2",
+    "What should you ask before signing?"
+   ],
+   [
+    "h2",
+    "When do you need an agency, and when don't you?"
+   ],
+   [
+    "h2",
+    "What no GEO agency can sell you"
+   ],
+   [
+    "h3",
+    "Considering paid placements alongside organic visibility?"
+   ],
+   [
+    "h2",
+    "A GEO agency checklist"
+   ],
+   [
+    "h2",
+    "Sources"
+   ],
+   [
+    "h2",
+    "Keep reading"
+   ],
+   [
+    "h3",
+    "What Is AEO? Answer Engine Optimization, Explained From the Platforms' Own Rules"
+   ],
+   [
+    "h3",
+    "AEO Tools in 2026: What They Measure, What's Free, and How to Choose"
+   ],
+   [
+    "h3",
+    "GEO vs SEO: What Actually Changes When AI Answers Replace Search Results"
+   ],
+   [
+    "h2",
+    "Common questions"
+   ],
+   [
+    "h2",
+    "Explore paid reach inside AI conversations."
+   ]
+  ],
+  "text": "A generative engine optimization agency sells five things: an audit of where you appear in AI answers, a map of what AI systems should know about you, rewritten pages, digital PR, and monitoring. The PR is the part most in-house teams lack; much of the rest you can do with free reports, a writer and a monitoring tool. Search for an agency and you mostly find agency sales pages and \"top 10 agencies\" lists, usually published by an agency that ranks itself first. Thrad is not a GEO or AEO agency. We sell sponsored, paid placements inside AI conversations, which is a different product, so this is not another list. What is a GEO or AEO agency? A generative engine optimization (GEO) agency, also sold as an answer engine optimization (AEO) agency or AI search agency, works to get a business mentioned, cited and recommended when AI assistants and AI search features answer a buyer's question. Clutch, which lists 30 of them, describes the job as getting businesses \"cited and recommended when large language models answer a buyer's question.\" The labels are interchangeable; our GEO vs SEO and what is AEO guides cover the terms. Judge the agency on its work, not its acronym. Organic or sponsored: which should you be doing? A note on where we stand: Thrad sells sponsored placements inside AI conversations, not agency services. The case for starting with sponsored rests on what the platforms publish, not on our preference. OpenAI states that ads do not influence ChatGPT's answers and that advertisers cannot shape or rank them. Google says there are no special optimizations for AI Overviews or AI Mode beyond being indexed and eligible for a snippet. Nobody can buy a citation. That leaves two separate ways to be present in an AI conversation: Organic: earned and never guaranteed. The model decides, the data you get back is a sample, and movement is measured in months. Sponsored: present the moment the question is asked, in the conversations you choose, labeled as sponsored, with a budget, a schedule and a report you control. Organic work is worth doing, and the rest of this guide covers it straight. But if the question is how to show up in AI conversations this quarter, the controllable answer is sponsored placement. Thrad lets you run one budget across the AI apps your customers already use. Launch a campaign from self-serve . What does a GEO agency actually do? The service pages of Percepture, Directive and Go Fish Digital, three agencies that rank for the term, each describe some version of the same five deliverables: Deliverable What it means In-house? AI visibility audit What it means Where you appear today In-house? Yes, with free reports Entity and topic map What it means What AI should know about you In-house? Partly Page restructuring What it means Direct answers, schema, FAQs In-house? Yes, if you have writers Digital PR What it means Mentions on sites AI cites In-house? Hardest to do alone Monitoring What it means Prompt tracking, reporting In-house? Yes, with a tool Scroll to compare all columns The standard GEO agency scope, from agency service pages observed October 12, 2026. Audit: Percepture describes an audit of current AI visibility, entity presence and content structure. Most of this now comes free from Google Search Console's generative AI reports and Bing Webmaster Tools' AI Performance report. Entity and topic mapping: Directive's process starts here; Go Fish says \"we semantically map your entire site to identify how AI systems interpret your authority on key topics.\" It is keyword research with the question flipped from \"what ranks\" to \"what gets cited.\" Content restructuring: pages rebuilt with schema, FAQ formatting and direct-answer blocks. Google's guidance is that content should be available in text form and that structured data should match the visible text; there is no AI-specific markup. Digital PR: earning mentions on the sources answer engines draw from. Go Fish states that \"citation frequency is one of the strongest predictors of inclusion in AI Overviews.\" Monitoring: tracking AI mentions, referral traffic and sentiment across a prompt set, usually through the same AEO tools you could subscribe to directly. How much does a GEO agency cost? Most agencies do not publish prices. Those that do, and the guides that survey them, cluster as follows, all as observed on October 12, 2026: Tier Monthly Source Productized packages Monthly $500 to $2,500 Source Digital Elevator guide Mid-market retainers Monthly $2,000 to $10,000 Source Digital Elevator guide Focus Digital Monthly $3,000 to $5,000 Source First Page Sage list First Page Sage Monthly $6,000 to $12,000 Source Its own list Graphite Monthly From $10,000 Source First Page Sage list Enterprise programs Monthly $10,000 to $30,000+ Source Digital Elevator guide Scroll to compare all columns Published GEO and AEO agency prices, October 12, 2026. Digital Elevator's pricing guide says that \"most credible AEO/GEO retainers for mid-market businesses land in the $2,000 to $10,000 per month range,\" with entry-level programs \"around $1,000 to $2,500 for basic monitoring and foundational optimization.\" On Clutch, minimum project sizes run from $1,000 to $50,000 or more, with hourly rates from under $25 to over $300. Hold those against two other numbers: monitoring software costs $50 to $99 a month, and Google and Microsoft's AI reports are free. A retainer should be buying the work those tools cannot do, chiefly content and PR, not the dashboard. Digital Elevator puts citation improvements at three to six months and meaningful results on a six- to twelve-month horizon, so budget for at least two quarters. How do you read an agency's claims? Agency pages lean on numbers. Three tests sort them: Who ranked them? NoGood's list of the best AEO agencies places NoGood first; First Page Sage's list places First Page Sage first, scoring itself on a rubric that rewards publishing prices. A self-published ranking is a brochure. Is the client named? \"A tech client saw a 3000% increase in AI mentions in 3 months\" cannot be checked. Directive's claim that a named client, Case Status, \"went from zero LLM presence to a dominant position across 39+ tracked prompts\" within nine months at least gives you the prompt count and the timeframe. Ask for the prompt set. Does it contradict the platforms? Google says of AI Overviews and AI Mode that \"there are no additional requirements to appear in AI Overviews or AI Mode, nor other special optimizations necessary.\" OpenAI says placement in ChatGPT search is not guaranteed . An agency promising proprietary AI placement is selling something the platforms say does not exist. The one controlled study, the 2023 GEO paper , found that adding citations, quotations and statistics lifted visibility in generative answers by 30 to 40 percent on its main metric, that keyword stuffing often made things worse, and that lower-ranked sites gained the most. Any agency's method should be recognizable in that list. What should you ask before signing? Which platforms do you optimize for, and which do you report on? Google AI features and Copilot have free first-party reports; ChatGPT, Gemini and Perplexity require sampling. Who writes the prompt set, how many prompts, and can we see the raw answers rather than a score? What will you do that our SEO team does not already do? If the answer is schema and FAQs, you may be paying GEO prices for SEO. Which third-party sites will you pitch for mentions, and what have you placed for other clients? How will results show up in Search Console and Bing Webmaster Tools, not only in your dashboard? What is the minimum term, and what happens to the content and prompt data if we leave? What can you not promise? The right answer includes placement in any specific assistant. When do you need an agency, and when don't you? If you already have an SEO owner, a writer and the free reports, you probably do not. Add a monitoring tool, apply the GEO study's findings to your top pages, and review quarterly. You probably do if nobody owns search, if your category depends on third-party reviews and forums where you have no relationships, or if you operate across several markets and languages. In between, a fixed-scope project, an audit plus a content plan, costs less than a retainer and tells you whether the retainer is worth it. What no GEO agency can sell you Every GEO deliverable earns organic presence over months. None of it can put you in a conversation this week, and none of it is guaranteed. That gap is what sponsored placement fills, and it is the only thing Thrad sells: we are not an AEO or GEO agency and we do not optimize your site. Launch a campaign from self-serve , or read our conversational advertising overview . Considering paid placements alongside organic visibility? Thrad places sponsored ads inside AI conversations. Explore that option separately from work to earn organic citations. Explore sponsored placements A GEO agency checklist Open the free Google and Bing AI reports before taking any agency's audit. Get three proposals and compare scope, not price: platforms, prompts, content volume, PR targets. Discount any ranking the agency published about itself and any result without a named client. Require reporting that lands in your Search Console and analytics, with raw answer text. Start with a fixed-scope audit and content plan; move to a retainer only when it shows movement. Budget sponsored placements inside AI conversations separately for the questions you must win now. Sources Clutch, \"Top Generative Engine Optimization (GEO) Companies,\" accessed October 12, 2026. https://clutch.co/seo-firms/generative-engine-optimization First Page Sage, \"The Best Generative Engine Optimization (GEO) Agencies,\" October 8, 2026. https://firstpagesage.com/seo-blog/the-best-generative-engine-optimization-geo-agencies/ Digital Elevator, \"AEO and GEO Pricing Guide,\" updated July 23, 2026. https://thedigitalelevator.com/blog/aeo-and-geo-pricing-guide/ Percepture, \"Generative Engine Optimization Services,\" accessed October 12, 2026. https://percepture.com/services/geo-services/ Directive, \"Generative Engine Optimization (GEO) Agency for B2B,\" accessed October 12, 2026. https://directiveconsulting.com/services/generative-engine-optimization-agency/ Go Fish Digital, \"Generative Engine Optimization (GEO) Services,\" accessed October 12, 2026. https://gofishdigital.com/services/owned/generative-engine-optimization/ NoGood, \"Best Answer Engine Optimization (AEO) Agencies in 2026,\" accessed October 12, 2026. https://nogood.io/blog/best-answer-engine-optimization-agencies/ Google Search Central, \"AI features and your website,\" accessed October 11, 2026. OpenAI Help Center, \"Searching the web with ChatGPT,\" accessed September 28, 2026. Aggarwal et al., \"GEO: Generative Engine Optimization,\" arXiv:2311.09735, 2023, revised 2024. Keep reading What Is AEO? Answer Engine Optimization, Explained From the Platforms' Own Rules AEO Tools in 2026: What They Measure, What's Free, and How to Choose GEO vs SEO: What Actually Changes When AI Answers Replace Search Results Common questions What is a generative engine optimization agency? An agency that works to get a business mentioned, cited and recommended in AI-generated answers from assistants and AI search features. The same service is sold as answer engine optimization (AEO) or AI search optimization. Is an AEO agency different from a GEO agency? No. The labels describe the same scope: audits, entity and topic mapping, content restructuring, digital PR and monitoring. Compare agencies on deliverables, prices and evidence rather than on the acronym. How much does a GEO or AEO agency cost? Published figures as of October 2026 range from $500 to $2,500 a month for productized packages, $2,000 to $10,000 for mid-market retainers, and $10,000 to $30,000 or more for enterprise programs. Agencies that publish prices include First Page Sage ($6,000 to $12,000) and Focus Digital ($3,000 to $5,000). How long does GEO take to show results? Agency guides put citation improvements at three to six months and meaningful results on a six- to twelve-month horizon. No platform publishes a timeline, so treat these as agency estimates. Can an agency guarantee placement in ChatGPT or AI Overviews? No. OpenAI says placement in ChatGPT search is not guaranteed, and Google says there are no special optimizations for AI Overviews or AI Mode beyond being indexed and eligible for a snippet. Do I need a GEO agency if I already do SEO? Often not. Google says no additional requirements apply to AI features, and the research-backed tactics, adding citations, quotes and statistics, are content work. Agencies add the most where you lack writers, PR relationships or coverage across markets. Next step Explore paid reach inside AI conversations. See how self-serve works"
+ },
+ {
+  "url": "https://www.earleads.com/blog/how-to-choose-a-geo-agency/",
+  "title": "How to Choose a GEO Agency and Spot a Bad One | Earleads",
+  "words": 3597,
+  "headings": [
+   [
+    "h2",
+    "What does a GEO agency actually do?"
+   ],
+   [
+    "h2",
+    "Before you talk to a GEO agency, write down 3 things"
+   ],
+   [
+    "h3",
+    "The 10 to 20 questions your buyers ask before they buy"
+   ],
+   [
+    "h3",
+    "The 2 or 3 numbers that would make this worth it"
+   ],
+   [
+    "h3",
+    "Who on your side approves content fast"
+   ],
+   [
+    "h2",
+    "12 questions to ask a GEO agency (and what good and bad answers sound like)"
+   ],
+   [
+    "h3",
+    "1. Which questions will you track, and who approves the list?"
+   ],
+   [
+    "h3",
+    "2. What is our baseline today, by engine?"
+   ],
+   [
+    "h3",
+    "3. Which engines do you measure, and how often do you rerun the checks?"
+   ],
+   [
+    "h3",
+    "4. Which sources outside our site will you work on?"
+   ],
+   [
+    "h3",
+    "5. What will you change on our site first, and why?"
+   ],
+   [
+    "h3",
+    "6. Who writes the content, and who checks it?"
+   ],
+   [
+    "h3",
+    "7. How do you connect a citation to pipeline or sales?"
+   ],
+   [
+    "h3",
+    "8. What can you promise, and what can\u2019t you?"
+   ],
+   [
+    "h3",
+    "9. What would make you change the plan?"
+   ],
+   [
+    "h3",
+    "10. Show me one case. What changed, when, and what else happened at the same time?"
+   ],
+   [
+    "h3",
+    "11. What do you need from us each week?"
+   ],
+   [
+    "h3",
+    "12. What do we keep if we stop?"
+   ],
+   [
+    "h2",
+    "Red flags that should end the call with a GEO agency"
+   ],
+   [
+    "h2",
+    "Vanity prompts vs buyer prompts"
+   ],
+   [
+    "h2",
+    "How much does a GEO agency cost?"
+   ],
+   [
+    "h2",
+    "What a good GEO engagement looks like over 6 months"
+   ],
+   [
+    "h3",
+    "Week 0 to 1: a diagnosis you keep"
+   ],
+   [
+    "h3",
+    "Days 1 to 60: a sprint on 2 or 3 baselined numbers"
+   ],
+   [
+    "h3",
+    "Months 3 to 6: the loops compound"
+   ],
+   [
+    "h3",
+    "A weekly view you\u2019ll actually open"
+   ],
+   [
+    "h2",
+    "B2B vs B2C: what changes when you hire"
+   ],
+   [
+    "h3",
+    "B2B: committees and comparisons"
+   ],
+   [
+    "h3",
+    "B2C and ecommerce: products and reviews"
+   ],
+   [
+    "h2",
+    "GEO agency, SEO agency or in-house?"
+   ],
+   [
+    "h2",
+    "Should you trust \u201cbest GEO agency\u201d lists?"
+   ],
+   [
+    "h2",
+    "Get a personalised case study"
+   ],
+   [
+    "h2",
+    "Frequently asked questions"
+   ],
+   [
+    "h2",
+    "Keep reading"
+   ]
+  ],
+  "text": "Summary Choose a generative engine optimization agency by how it picks the questions it tracks, which sources it works on beyond your site, and whether it can show what AI visibility did for pipeline. Good agencies baseline before they promise anything, track the questions buyers really ask, and never guarantee a spot in ChatGPT or AI Overviews. What does a GEO agency actually do? A generative engine optimization agency gets your brand named and linked in the answers ChatGPT, Claude, Gemini, Perplexity and Google AI Overviews give when buyers ask about your category. A GEO agency, also sold as an AEO agency, an LLM SEO agency or an AI search optimization agency, does that by working on the pages and sources those engines read, then measuring which questions you win. A word on who\u2019s writing this. Earleads is a GEO agency, so we sell the thing this guide helps you buy. We don\u2019t rank anyone here. Read it as a rubric, and hold us to it as hard as anyone else on your shortlist, starting with our own generative engine optimization agency page, which answers the same questions. Two facts from Google frame the job. Google says \u201cthere are no additional requirements to appear in AI Overviews or AI Mode, nor other special optimizations necessary,\u201d and that a supporting link must be \u201cindexed and eligible to be shown in Google Search with a snippet\u201d ( Google Search Central, AI features ). The same page says AI Overviews and AI Mode \u201cmay use a \u2018query fan-out\u2019 technique, issuing multiple related searches across subtopics and data sources.\u201d So a GEO agency\u2019s work starts with ordinary search foundations, then widens to every source a fan-out can land on. In practice, AI answers draw on five kinds of sources, and a serious agency will tell you which of the five it touches. We wrote up how AI agents pick what to recommend separately. For choosing an agency, the map below is enough. Five sources feed the answer. Most agencies stop at the answer, before the visit ever reaches your CRM. The bottom half of that picture is where buyers get burned. A citation is a line in a chat window. It isn\u2019t revenue until someone clicks, gets identified, lands in your CRM with an owner, and buys. Before you talk to a GEO agency, write down 3 things If you show up to the first call empty-handed, you\u2019ll leave with the agency\u2019s prompt list, success metric and timeline. Three short notes flip that. The 10 to 20 questions your buyers ask before they buy Pull them from sales call notes, support tickets, review sites, and the threads where buyers compare options. A B2B payroll vendor might write \u201cbest payroll software for a 50 person team.\u201d A skincare brand might write \u201cfragrance free moisturizer for sensitive skin.\u201d None of them should contain your brand name. This list is yours, and every agency you talk to should be measured against it, not against a list it wrote. The 2 or 3 numbers that would make this worth it Pick numbers you already track. For a sales-led B2B company that\u2019s often AI-referred demo requests and meetings. For a B2C app or store it\u2019s accounts created or orders. Write today\u2019s value next to each one, even if it\u2019s zero. An agency that can\u2019t say how its work would move one of those numbers is selling you a dashboard. Who on your side approves content fast Every good GEO engagement stalls on approvals at some point. Name one person who can say yes to a draft within a few days. If nobody can, fix that before you sign with any generative engine optimization agency, because the fee keeps running while drafts wait. If you\u2019d rather not build the baseline alone, our free AI visibility audit maps 5 conversion queries in 7 days, shows who wins each one on every engine, and lists the pages and threads the engines read. Bring it to every agency call, ours included. 12 questions to ask a GEO agency (and what good and bad answers sound like) Every guide on how to choose a GEO agency lists questions. Few tell you what a good answer sounds like, which is the only part that helps on a live call. Google\u2019s own page on hiring an SEO is a good template. It suggests asking for past work, asking \u201cWhat results and timeframe should I expect, and how do you measure success?\u201d, and asking whether every change will be communicated with reasoning. We\u2019ve adapted that to AI answers. 1. Which questions will you track, and who approves the list? A good answer sounds like \u201cWe\u2019ll draft the list from your sales calls, reviews, community threads and search data, then you approve every question before we measure anything.\u201d A red flag answer sounds like \u201cWe use our standard prompt set,\u201d or a sample list where half the prompts include your brand name. 2. What is our baseline today, by engine? A good answer sounds like \u201cHere\u2019s a citation map per question and per engine, built before we sent the proposal.\u201d A red flag answer sounds like a single AI visibility score with no questions behind it. 3. Which engines do you measure, and how often do you rerun the checks? A good answer sounds like \u201cChatGPT, Gemini, Claude, Perplexity and AI Overviews, rerun on a fixed schedule, because answers change week to week.\u201d A red flag answer sounds like one engine, or one screenshot from last month. 4. Which sources outside our site will you work on? A good answer sounds like a named list of the practitioner sites, communities, videos and pages the engines already read for your questions. A red flag answer sounds like \u201cWe\u2019ll publish more blog posts.\u201d 5. What will you change on our site first, and why? A good answer sounds like \u201cCrawler access and indexing first, then the few pages closest to buying questions.\u201d A red flag answer sounds like a site-wide rewrite, or \u201cschema everywhere\u201d as the whole plan. 6. Who writes the content, and who checks it? A good answer sounds like named writers with domain knowledge, and you approve every piece before it goes live. A red flag answer sounds like a volume promise with unnamed writers and AI-only drafts. 7. How do you connect a citation to pipeline or sales? A good answer sounds like \u201cTagged AI referrals, identified visits, CRM records with an owner, and revenue reported by engine.\u201d A red flag answer sounds like \u201cCitations are the KPI.\u201d 8. What can you promise, and what can\u2019t you? A good answer sounds like \u201cWe promise the work, the cadence and the reporting. Nobody can guarantee placement in an AI answer.\u201d A red flag answer sounds like guaranteed citations, guaranteed rankings or \u201cposition 1 in ChatGPT.\u201d 9. What would make you change the plan? A good answer sounds like a stated rule, for example \u201cIf a question hasn\u2019t moved after a set number of weeks, we switch to a different source.\u201d A red flag answer sounds like \u201cTrust the process.\u201d 10. Show me one case. What changed, when, and what else happened at the same time? A good answer sounds like dated changes, before and after per question, and honest caveats about what else moved. A red flag answer sounds like a percentage with no baseline and no timeframe. 11. What do you need from us each week? A good answer sounds like a named approver, a short weekly review, and access to analytics and the CRM. A red flag answer sounds like \u201cNothing, we handle it all.\u201d 12. What do we keep if we stop? A good answer sounds like \u201cThe audit, the question list, the content and the tracking setup are yours.\u201d A red flag answer sounds like everything living inside their tool and disappearing with the contract. Questions 1, 7 and 12 do the most work. If a GEO agency answers those three well, the rest of the call is usually detail. If it fumbles question 1, stop there, because every number it reports afterward depends on that list. Red flags that should end the call with a GEO agency Google\u2019s guidance for hiring an SEO is blunt. \u201cNo one can guarantee a #1 ranking on Google,\u201d and its warning signs include refusing to explain methods and keeping changes secret ( Google Search Central ). Even agencies that publish rankings agree. Digital Elevator writes that \u201cno agency can guarantee that a brand will appear in a specific AI answer, because the platforms control their own models and citation logic and change them frequently\u201d ( Digital Elevator ). End the call, or at least stop taking it seriously, when you hear any of these: Guaranteed citations, rankings or \u201cposition 1 in ChatGPT\u201d No baseline before the proposal They chose the prompts and won\u2019t show them, or the prompts contain your brand name One engine only Reporting that ends at mentions or a visibility score A method they can\u2019t explain in plain words, or changes they won\u2019t name in advance Tactics only on your own site, nothing on the sources answers are built from Pricing with no deliverables attached Results promised inside 30 days No exit, with your data and content locked in their platform One more, quieter flag. Watch for a GEO agency that has one playbook for every market. The KDD 2024 GEO paper from Princeton and IIT researchers found GEO methods \u201ccan boost visibility by up to 40% in generative engine responses,\u201d and in the same abstract that \u201cthe efficacy of these strategies varies across domains, underscoring the need for domain-specific optimization methods\u201d ( Aggarwal et al., KDD 2024 ). The 40% is a research ceiling, not a promise anyone can sell you. The second sentence is the useful one. What works for developer tools won\u2019t automatically work for pet food. Vanity prompts vs buyer prompts A vanity prompt is one written so the dashboard looks good. \u201cIs [Brand] a good tool?\u201d \u201cWhat does [Brand] do?\u201d \u201c[Brand] reviews.\u201d An engine asked about you by name will usually talk about you, so a report built on those prompts shows high visibility from week one. It also predicts nothing, because buyers who already know your name aren\u2019t the ones you\u2019re trying to reach. A buyer prompt is the question someone asks before they know you exist. \u201cBest payroll tool for a 50 person team.\u201d \u201cAlternative to [incumbent] for ecommerce.\u201d \u201cIs [category] worth it for a small team?\u201d Your share of answers on those questions is low at first and hard to move. That\u2019s exactly why it\u2019s the number worth paying for. If your brand name is in the prompt, the test is rigged. The test takes two minutes. Ask every finalist for the exact prompt list they\u2019d track, then count how many contain your brand name. Our rule is simple. Branded prompts belong in a separate reputation check, and they shouldn\u2019t count toward any visibility number an AI SEO agency reports to you. How much does a GEO agency cost? Published ranges for GEO agency pricing run from about $1,500 a month for small companies to $10,000 a month for most mid-market teams, with enterprise retainers well above that. Three agencies publish numbers on their own pages: WebFX\u2019s GEO pricing guide gives $1,500 to $5,000 a month for small businesses, $5,000 to $25,000 and up for mid-size companies, and $25,000 to $50,000 and up for enterprise. It says its own AI Search Optimization service starts at $3,000 a month. Direct Online Marketing publishes GEO tiers at $3,500 a month, from $6,500 and from $9,500, with working media included in the upper two. Digital Elevator states that most credible mid-market GEO retainers land between $2,000 and $10,000 a month. Five things move the price inside those ranges. How many engines get tracked. How much content gets written, and by whom. Whether community and video work is included or left to you. How much technical fixing your site needs. And whether attribution to your CRM is part of the scope or an extra. Compare fees only after you normalize them. Put each proposal\u2019s deliverables side by side, add the hours your own team will spend approving and supplying input, and divide. A cheaper retainer that eats several hours a week of your head of marketing can cost more than a pricier one that runs on a short weekly review. If a proposal lists a price without deliverables, you can\u2019t run that math at all, which is why it\u2019s on the red flag list. What a good GEO engagement looks like over 6 months A good GEO engagement has a diagnosis you keep, a short sprint against numbers baselined on day one, and a renewal decision made on evidence. Use the timeline below as a buyer\u2019s checklist. It\u2019s also how we run our own engagements, so judge us by it too. Diagnose, sprint on 2 or 3 numbers, decide at day 60, then let the loops compound. Week 0 to 1: a diagnosis you keep The citation map, the sources the engines read for each question, and the question list for your approval. At Earleads this is a paid audit, and you own it whether or not you hire us. Whoever runs it, insist the diagnosis is yours. Days 1 to 60: a sprint on 2 or 3 baselined numbers Not a long list of goals. Two or three, each with a day-one value. A sprint that short forces the agency to pick the few pages, threads and fixes most likely to move them, and it gives you a clean decision point at day 60. Months 3 to 6: the loops compound Checks get rerun every week and the plan adjusts. Our own term is six months, renewable, because month three is the earliest the loops start compounding. A contract much longer than that, with no evidence checkpoint, asks you to pay for faith. A weekly view you\u2019ll actually open One page, every Monday. What shipped, what\u2019s queued, what\u2019s waiting on you. Ours is put together by a GTM engineer, a copywriter and AI agents working the account together, and it\u2019s the same page the client sees. B2B vs B2C: what changes when you hire Search results for this topic split into B2B SaaS lists and ecommerce lists. The questions to ask a GEO agency are the same for both, but the prompts, the sources and the success metric aren\u2019t. B2B: committees and comparisons B2B buyers ask committee questions and comparison questions. \u201cAlternative to [incumbent] for a mid-size sales team.\u201d \u201cDoes [category] integrate with Salesforce?\u201d A good B2B GEO agency works the practitioner articles and communities where those comparisons happen, and it measures success in pipeline and meetings, not traffic. Ask it to show you how an AI-referred visit becomes a named account in your CRM. B2C and ecommerce: products and reviews B2C buyers ask product, review and \u201cbest for me\u201d questions. \u201cBest running shoes for flat feet.\u201d \u201cIs [brand] worth it?\u201d Communities and video carry more weight here, and so does product feed readiness. A good GEO agency for ecommerce reports accounts created and orders, and it can talk about your product data, not just your blog. GEO agency, SEO agency or in-house? Pick on two things. Who already owns your search foundations, and whether anyone on your side can work off-site sources and attribution every week. Google\u2019s point that AI features run on the same foundations as search means a strong SEO setup isn\u2019t wasted. It\u2019s the floor, not the whole job. Option Pick it when Watch for GEO agency You need multi-engine tracking, off-site source work and attribution, and nobody in-house has time for all three Vanity prompts, reporting that stops at citations, no exit terms SEO agency adding GEO Your SEO agency already performs and will commit to buyer questions and multi-engine reporting in writing GEO as a relabeled SEO retainer with an AI visibility score bolted on In-house team You have a writer with domain depth, someone who can participate in communities, and analytics access Nobody owning the reruns, so measurement quietly stops after a few months Whichever you choose, the technical floor is the same. OpenAI says \u201cOAI-SearchBot is used to surface websites in search results in ChatGPT\u2019s search features\u201d and that \u201csites that are opted out of OAI-SearchBot will not be shown in ChatGPT search answers\u201d ( OpenAI, bots ). GPTBot, the training crawler, is separate. Perplexity says PerplexityBot \u201cis designed to surface and link websites in search results on Perplexity\u201d and isn\u2019t used to train foundation models ( Perplexity, bots ). Check your robots.txt for both before you pay anyone. Measurement has a floor too. ChatGPT adds utm_source=chatgpt.com to the links it sends from search results, according to OpenAI\u2019s publishers and developers FAQ , so ChatGPT referrals are easy to separate in your analytics. Google is different. Sites in AI features \u201care included in the overall search traffic in Search Console,\u201d inside the normal Web report ( Google Search Central ). So when an agency shows you \u201cAI Overview traffic from Search Console,\u201d ask how it was separated out, because Google doesn\u2019t split it for you. Should you trust \u201cbest GEO agency\u201d lists? Use them to build a longlist, not to decide. Most ranked lists of the best GEO agencies on page one are published by an agency, and the publisher usually sits in first place. Some of those lists are well researched, but a ranking written by a vendor can\u2019t tell you which generative engine optimization agency fits your buyers. The 12 questions and the scorecard below work better, because they apply the same test to every agency, including whoever wrote the list you found them on. Fill one column per finalist after each call. What to compare Strong answer Weak answer Agency A Agency B Prompt selection Drafted from your buyers, approved by you Their standard set, or branded prompts Baseline Citation map per question and engine before the proposal A single visibility score Engines ChatGPT, Gemini, Claude, Perplexity, AI Overviews One engine Off-site sources Named communities, sites and videos \u201cMore blog posts\u201d Content team Named writers, you approve Unnamed writers, AI-only drafts Attribution to CRM AI referrals traced to records and revenue by engine Citations as the KPI Reporting cadence Weekly, one page Monthly deck, or on request What you keep Audit, question list, content, tracking Everything stays in their tool Published price Price tied to deliverables Price with no scope Guarantee language Promises work and reporting only Guarantees citations or rankings An agency that wins most rows on the strong side is worth a second call. An agency that lands on the weak side for prompt selection or guarantee language isn\u2019t, whatever it scores elsewhere. Get a personalised case study Pick your industry and we'll email you the case closest to your business, numbers included. Sent. Your case study is on its way. Frequently asked questions How much does a GEO agency cost? Published ranges start around $1,500 a month for small companies and reach $25,000 to $50,000 and up for enterprise, according to WebFX's own GEO pricing guide. Digital Elevator puts most credible mid-market retainers between $2,000 and $10,000 a month. The fee alone tells you little, so ask each agency what every tier delivers and how much of your team's time it needs. Can a GEO agency guarantee I get cited in ChatGPT? No. OpenAI, Google, Perplexity and Anthropic decide what their engines cite, and they change how they do it. Google's own advice on hiring an SEO says no one can guarantee a #1 ranking, and the same logic applies to AI answers. A good GEO agency promises the work, the cadence and the reporting, never a placement. How long until a GEO agency shows results? Ask for a baseline on day one and 2 or 3 numbers to move within the first 60 days. That's enough time to see whether the work is landing on the questions you picked. Compounding usually takes months, because off-site sources and new pages take time to be read and reused, so treat any promise of results inside 30 days with caution. Is a GEO agency different from an SEO agency? Partly. Google says its AI features rely on the same foundations as search, with no special optimization required, so solid SEO still matters. A GEO agency adds three things most SEO agencies don't run by default. It tracks buyer questions across several AI engines, works on the off-site sources answers draw from, and reports on citations and AI referral traffic. What should a GEO agency deliver? A GEO agency should deliver a baseline citation map per question and engine, a question list you approve, technical fixes so crawlers like OAI-SearchBot and PerplexityBot can read your pages, content and off-site work on the sources answers draw on, and a weekly report that ties AI referrals to visits, CRM records and pipeline. What is the best GEO agency for B2B SaaS or ecommerce? The best GEO agency for B2B SaaS or ecommerce is the one that tracks your buyers' real questions and can show dated results on similar ones. Most ranked lists of GEO agencies are written by an agency that places itself first. Run every finalist through the same 12 questions and the scorecard instead, including the agency that wrote the list. Keep reading Buyer's guides AI Brand Tracking: Tools vs a Managed Service Buyer's guides GEO Agency vs In-House: A Decision Framework Buyer's guides GEO Pricing: What Enterprise GEO Costs and What Drives It"
+ },
+ {
+  "url": "https://scaile.tech/blog/vendor-choice/agencies/how-to-choose-a-geo-agency",
+  "title": "How to Choose a GEO Agency: Questions and Red Flags | scaile",
+  "words": 1746,
+  "headings": [
+   [
+    "h2",
+    "How do you choose a GEO agency?"
+   ],
+   [
+    "h2",
+    "Your baseline before the first call"
+   ],
+   [
+    "h2",
+    "Which questions should you ask a GEO agency?"
+   ],
+   [
+    "h2",
+    "Red flags that should end the conversation"
+   ],
+   [
+    "h2",
+    "Why can nobody guarantee first place in ChatGPT?"
+   ],
+   [
+    "h2",
+    "How do you verify an agency\u2019s case studies?"
+   ],
+   [
+    "h2",
+    "A scoring sheet for your shortlist"
+   ],
+   [
+    "h2",
+    "FAQ"
+   ],
+   [
+    "h2",
+    "Sources"
+   ]
+  ],
+  "text": "In short Choose a GEO agency by what it can show you, not by what it promises. Ask which prompts it tracks, what it changes on your site each month and who approves it. A promised top spot in AI answers is a red flag. scaile does Managed GEO, which makes it more than an agency: it combines the agility and personal service of an agency with software and analytics tools, and shows you all of it. Published Nov 3, 2026 Reading time 8 min Dora Pruteanu Founding Engineer Dora is a founding engineer at scaile. She studied computer science, psychology and neuroscience at TUM, which is the perfect fit for GEO: she has a deep understanding of technology and of the human side, and knows how to write and produce content that leads humans to buy and AI to show you in its answers. Key takeaways Count only what an agency can show you: the prompts it measures, a visibility share across many runs and every change it made to your site. Measure your own starting point before the first call. Without it, you cannot judge any answer you hear. A promised top spot in ChatGPT is a reason to leave, because AI answers change from one run to the next. Verify a case study by re-running a sample of its prompts yourself, not by reading the screenshot. Score every agency on your shortlist on the same sheet, with execution weighted highest, and put scaile through it too. How do you choose a GEO agency? You choose a GEO agency by testing whether it can show its work. A pitch deck shows outcomes. A good agency also shows the method: the buyer questions it measures, how often you appear across many runs, the pages it will change and who approves them. What it cannot show you, you cannot check later. That test works because GEO is mostly execution. The paper that named generative engine optimization reports that changing what a page says and how raised visibility in generative engine responses by up to 40% on its own benchmark. It is an arXiv preprint, not peer reviewed. [1] So the useful question is which agency will change the right pages on your site every month and prove what moved. This article assumes you have a shortlist. Whether you need an agency at all is covered in agency vs tool vs in-house vs DIY , and a month of agency work in what a GEO agency does . Your baseline before the first call Measure where you stand before you talk to anyone. Write down ten to twenty questions your buyers ask right before they choose a provider in your category, then check which brands AI answers name for them. The free AI Visibility Check runs ten real buying questions through ChatGPT, Gemini and Perplexity. You can also check your AI visibility by hand . The baseline you take before the first call is used twice: to judge the answers in the call and as the yardstick when you re-run a case study. With that baseline you can see whether a sample audit found the same competitors you did, and any promised growth has a number to be measured against. Also decide how many hours a week your team can give to reviews and approvals, then ask each agency how much time it needs from you. Which questions should you ask a GEO agency? Ask questions that force the agency to describe work, not results. Google\u2019s own advice for hiring an SEO is a useful base. It suggests asking for examples of previous work, the results to expect in what timeframe and how success is measured. [2] It also suggests asking whether the agency will share every change it makes to your site, with the reasoning behind it. [2] For GEO, sharpen them like this: Which prompts would you track for us, and why those? A good answer names buyer questions from your category, says where they come from (search data, sales calls, AI fan-out queries) and separates questions that bring buyers from questions that bring impressions. How do you measure visibility? A good answer is a share of answers across many runs and several AI assistants, over time. A single position or one screenshot is a weak answer. What will you change on our site in the first month? A good answer names pages, page types and fixes. Who approves each change, and how? A good answer shows where you review content and sources before anything goes live. What happens to the content and data if we stop? A good answer: the pages, briefs and knowledge base stay yours. In regulated categories, also ask how the agency checks every claim before it goes live. Reviews on Clutch or Trustpilot show how clients felt about the service, not whether AI answers changed. Red flags that should end the conversation Some answers end the evaluation on the spot. Google\u2019s guidance for SEO applies one to one: \u201cNo one can guarantee a #1 ranking on Google.\u201d It warns against anyone who claims to guarantee rankings or a \u201cspecial relationship\u201d with Google. [2] Five red flags for GEO: A guaranteed top spot in ChatGPT or any other AI answer. The next section explains why nobody can promise it. A secret method. Google advises caution if a company \u201cis secretive or won\u2019t clearly explain what they intend to do\u201d. [2] GEO work can be explained in plain words. A special markup for AI Overviews. Google says there are \u201cno additional requirements to appear in AI Overviews or AI Mode, nor other special optimizations necessary\u201d. [3] An agency selling one sells something Google says is not needed. Results you cannot reproduce. No prompt list, no dates, no assistant named: the number cannot be checked. Work that ends at the report. If nobody changes your pages, AI answers have no new reason to change. For what the main agencies actually offer, compare them in the scored list of GEO agencies and the DACH ranking . Why can nobody guarantee first place in ChatGPT? Nobody can guarantee first place because AI answers have no fixed positions. Google says AI Overviews and AI Mode may run several related searches across subtopics and data sources to build one response. It adds that the responses and links they show will vary. [3] The answer is assembled again for every request. SparkToro measured how much that varies. In its study, 600 volunteers ran 12 prompts through ChatGPT, Claude and Google\u2019s AI a combined 2,961 times. [4] The chance that ChatGPT or Google\u2019s AI gave the same list of brands in any two of 100 responses was below 1 in 100. Rand Fishkin\u2019s conclusion: visibility share across many prompts, run many times, is a reasonable metric. Any tool that reports a \u201cranking position in AI\u201d is not. [4] A screenshot is one answer out of many. Count how often a brand appears across many runs instead. So an honest agency promises work and a way to measure it, never a place. It reports how often your brand appeared across a fixed set of prompts, and how that share moved. A good AI visibility score is built the same way. How do you verify an agency\u2019s case studies? Verify a case study by repeating part of it yourself. The four questions to put to every number are in how to check an AI SEO agency\u2019s results . These five steps test the answers: 1 Ask for the prompt list Get the prompts behind the result, the assistants and the date range. Your part Pick five to ten prompts from the list 2 Re-run a sample Ask those prompts in a clean session, several times each, in each assistant named. Your part Count how often the client\u2019s brand appears 3 Compare the share Your count will not match the agency\u2019s figure exactly, because answers vary. It should land in the same range. Your part Note large gaps and ask about them 4 Check the site Look at the client\u2019s pages the agency says it changed. The work should be visible and live. Your part Ask what changed and when 5 Talk to the client Ask for a reference call with the person who approved the work. Your part Ask what their team had to do each week A case study that cannot share its prompts is a story, not evidence. A scoring sheet for your shortlist Score every agency from 1 to 5 on the same criteria, with weights fixed before the first call. Execution weighs most because it is the part that changes AI answers. Criterion Suggested weight What earns a 5 Execution on your site 25% Names the pages and fixes for month one; publishes with your approval Prompt selection 20% Buyer questions from data, with reasons; you see the full list Measurement 20% Visibility share across runs and assistants; you can re-run it Verifiable case studies 15% Prompt lists, live pages and a reference call Fit with your team 10% Clear weekly time from you; approval flow you can live with Ownership and exit 10% Content, briefs and data stay yours Prices belong next to this sheet, not in it: compare them with what generative engine optimization costs once the scores are in. The best GEO agency for you is the one whose work you can see, check and own. Take your baseline, your questions and this sheet into every call, and drop the agencies that cannot answer. If nobody on your team has the hours to run GEO, talk to scaile about We run it : put the same questions to scaile first. FAQ Should I hire my existing SEO agency for GEO? Only if it passes the same questions and the same scoring sheet as a specialist. Some SEO agencies already do this work; others relabel their existing reports. How long should I give an agency before judging it? Agree on the prompts and the measurement first, then review the share every month. Expect visible work on your site within the first month, even if the share moves later. Sources 2311.09735 GEO: Generative Engine Optimization Do You Need an SEO? Tips for Hiring an SEO | Google Search Central | Documentation | Google for Developers AI Features and Your Website | Google Search Central | Documentation | Google for Developers NEW Research: AIs are highly inconsistent when recommending brands or products; marketers should take care whe"
+ },
+ {
+  "url": "https://www.asklantern.com/blogs/how-to-choose-an-aeo-agency",
+  "title": "How to Choose an AEO Agency: Costs, Red Flags, 18 Questions | Lantern",
+  "words": 3127,
+  "headings": [
+   [
+    "h2",
+    "What does an AEO agency do?"
+   ],
+   [
+    "h2",
+    "How much does an AEO agency cost?"
+   ],
+   [
+    "h2",
+    "Red flags when hiring an AEO agency"
+   ],
+   [
+    "h2",
+    "Green flags: what a good AEO agency looks like"
+   ],
+   [
+    "h2",
+    "18 questions to ask an AEO agency before you sign"
+   ],
+   [
+    "h2",
+    "How to score an AEO agency"
+   ],
+   [
+    "h2",
+    "AEO agency vs in-house vs platform: which do you need?"
+   ],
+   [
+    "h3",
+    "When is a platform like Lantern enough?"
+   ],
+   [
+    "h2",
+    "How to run a 90-day AEO agency trial"
+   ],
+   [
+    "h2",
+    "How to work with an AEO agency well"
+   ],
+   [
+    "h2",
+    "Where to find an AEO agency"
+   ],
+   [
+    "h2",
+    "Where Lantern fits"
+   ],
+   [
+    "h2",
+    "Frequently asked questions"
+   ],
+   [
+    "h3",
+    "What is an AEO agency?"
+   ],
+   [
+    "h3",
+    "Is AEO legit?"
+   ],
+   [
+    "h3",
+    "Can you pay for AEO?"
+   ],
+   [
+    "h3",
+    "How much does an AEO agency cost?"
+   ],
+   [
+    "h3",
+    "What's the difference between an AEO agency, a GEO agency and an AI SEO agency?"
+   ],
+   [
+    "h3",
+    "What is the best AEO agency for B2B?"
+   ]
+  ],
+  "text": "Answer Engine Optimization On this page + What does an AEO agency do? How much does an AEO agency cost? Red flags when hiring an AEO agency Green flags: what a good AEO agency looks like 18 questions to ask an AEO agency before you sign How to score an AEO agency AEO agency vs in-house vs platform: which do you need? When is a platform like Lantern enough? How to run a 90-day AEO agency trial How to work with an AEO agency well Where to find an AEO agency Where Lantern fits Frequently asked questions What is an AEO agency? Is AEO legit? Can you pay for AEO? How much does an AEO agency cost? What's the difference between an AEO agency, a GEO agency and an AI SEO agency? What is the best AEO agency for B2B? An AEO agency (answer engine optimization agency) helps your brand get mentioned, cited and recommended in AI answers from ChatGPT, Google AI Overviews and AI Mode, Gemini, Perplexity and Claude. What does an AEO agency do? An AEO agency measures how AI answers describe your brand, fixes what stops AI systems from finding or trusting your pages, creates content worth citing, and earns mentions on the third-party sites AI already relies on. GEO (generative engine optimization) agencies and AI SEO agencies sell the same work. Much of it overlaps with SEO. Google's guide to optimizing for generative AI features says optimizing for generative AI search \"is optimizing for the search experience, and thus still SEO.\" What's new is measuring answers platform by platform; our explainer on what AEO is covers the basics. What a real AEO engagement delivers Deliverable What good looks like AI visibility baseline Results per platform, with the prompt list attached Prompt research 100 or more prompts from sales calls, support tickets and Search Console Technical access AI crawler rules, indexing and rendering checked and fixed Answer-ready content Comparison, use-case and FAQ pages, plus refreshes of stale ones Off-site evidence Digital PR, real reviews, expert quotes and accurate listings Brand accuracy A log of wrong AI facts found, traced to a source and fixed Reporting Per-platform trends tied to the work shipped What a real AEO engagement delivers Off-site work matters more than most teams expect. In our study of where new brands earn AI authority , independent sources such as publications, directories, reviews and communities made up 67.7% of ChatGPT and 77.6% of Google AI citation activity. The brands' own sites made up 1.1% and 0.5%. How much does an AEO agency cost? As of October 2026, agencies that publish prices charge about $1,000 to more than $15,000 a month, and one-off audits cost a few hundred to several thousand dollars. There's no independent benchmark yet, so be wary of any single \"average\" price. Four agencies we read publish AEO or GEO pricing on their own sites. We're not naming them, but this is what their pricing pages said on 26 October 2026. Published AEO and GEO agency pricing, as of 26 October 2026 Agency type Entry offer Monthly price Term Price scales with Productized AI visibility and SEO service $299 diagnostic $999 to $3,999 Month to month Pages optimized, assets, outreach, prompts tracked B2B content and SEO agency Monthly plans only $3,000 to $15,000 Month to month; discounts for 6 or 12 months Articles, refreshes, depth of AI citation tracking AI search agency in Europe \u20ac4,370 diagnostic, credited if you sign within 14 days From \u20ac6,995 (6-month rate) to \u20ac15,995 and up Month to month with 30 days' notice Content volume, landing pages, team size Full-service digital agency Two-month setup, $8,600 to $21,400 $2,900 to $9,200 after setup 6-month commitment Keywords, prompts targeted (100 to 250), pages Published AEO and GEO agency pricing, as of 26 October 2026 All four bundle AI search work with SEO and content work, and none offers pay-for-results pricing. Three other agencies we read publish no prices at all. These are the engagement models you'll see most: Audit or diagnostic: a one-off baseline and roadmap, sometimes credited to month one if you sign quickly. Monthly retainer: the most common model, priced by output such as articles, refreshes and outreach. Project or advisory: a fixed scope, such as a technical clean-up, or strategy time while your team does the work. Agency plus platform: ask whose name the account is in and whether tool fees are marked up. To compare quotes, list each one's monthly deliverables side by side. A cheaper retainer that ships half as much isn't cheaper. Red flags when hiring an AEO agency Walk away from guarantees, secret methods and manufactured mentions. Google, OpenAI and the FTC have each spelled out why. Guaranteed placement in AI answers. Google's advice on hiring an SEO says \"No one can guarantee a #1 ranking on Google,\" and its AI guide adds that \"No third-party tool has access to our internal ranking or AI systems.\" OpenAI says advertisers have no ability to shape, rank, or alter ChatGPT's responses, so doubt any agency that claims it can. Claimed inside access. Google warns about SEOs who claim a \"special relationship\" with Google. Apply the same test to claims about any AI company. No per-platform reporting. In our AI Recognition Gap research , ChatGPT correctly identified the tracked brands in 95.0% of answers that named them, while Google AI did so in 56.8%. A blended score hides both. Black-box \"AI hacks.\" Google says that for Google Search you can ignore \"chunking\" content, unnecessary AI text files like llms.txt, and pursuing inauthentic mentions. If an agency can't explain its method plainly, you can't judge it. Fake mentions and seeded posts. Google's spam policies define spam to include \"attempting to manipulate generative AI responses in Google Search.\" They also list paying for links or for posts that contain links, and spammy forum posts, as spam. Bought or fake reviews. The FTC's final rule on fake reviews and testimonials bans fake reviews, paying for reviews that must be positive or negative, undisclosed insider reviews and fake social media indicators. Mass AI-written pages. Google counts \"using generative AI tools or other similar tools to generate many pages without adding value for users\" as scaled content abuse. Secrecy and lock-in. No change log, a request for write access to Search Console, a prompt set you never see, or 12 months with no exit. One question that filters fast: Ask every agency: \"What won't you do?\" Good agencies answer right away: no guarantees, no fake reviews, no seeded forum posts, no paid links passed off as editorial. Green flags: what a good AEO agency looks like Good agencies are specific about the work, honest about the overlap with SEO, and happy to be measured. They ask about your buyers, sales calls and support tickets before pitching. They back their advice with official documentation, as Google's hiring page suggests you check. They start off-site work from the sources AI already cites in your category. They hand over the prompt set, data and accounts in writing, and propose a short trial. 18 questions to ask an AEO agency before you sign Ask these early, then score the answers with the rubric below. Several come from Google's own hiring checklist, which now names \"AEO\" and \"GEO\" services. 18 questions to ask before hiring an AEO agency # Question A good answer 1 Which AI platforms will you track, and will you report each separately? The platforms your buyers use, one line each 2 How many prompts will you track, and do we own the list? 100 or more real buyer questions, exportable 3 How do you handle answers that change from run to run? Repeated sampling and trends, not screenshots 4 How will you tell a platform change from a brand problem? Compares competitors over the same period 5 How will you measure AI referral traffic and pipeline? Analytics segments by platform, plus CRM fields 6 What will you use from Search Console and Bing Webmaster Tools? Both AI reports, in the baseline 7 What exactly will you ship each month? Named counts of pages, refreshes, fixes and pitches 8 How do you pick which third-party sites to pursue? Sources AI already cites for your category 9 How do you earn mentions, and what won't you do? Digital PR and real reviews; no seeded posts 10 How do you find and fix wrong facts AI states about us? A real example from a past client 11 What will you do that our SEO work doesn't already? An honest account of the overlap 12 Do you use AI to write content, and who reviews it? Human editing and fact-checking on every page 13 Will you share every change you make, and why? Yes, in a running change log 14 Can you walk me through one engagement, baseline to result? Per-platform before and after, plus a reference 15 Can I see a sample monthly report? Per-platform and prompt-level, linked to shipped work 16 What access do you need? Read-only Search Console to start 17 Who owns the prompts, data, content and accounts if we part ways? You do, in the contract 18 Can we start with a 90-day trial, and what if nothing moves? A short term, a new plan, a clear exit 18 questions to ask before hiring an AEO agency How to score an AEO agency Score each agency from 1 to 5 on six criteria, multiply by the weight, and add up the results. The maximum is 100, and any guarantee of placement is an automatic fail. AEO agency scoring rubric (maximum 100 points) Criterion Weight Scores 1 when Scores 5 when Measurement 5 One blended score, few prompts Per-platform results, 100 or more prompts you own Monthly deliverables 4 Vague \"optimization\" Named counts you can check Off-site evidence 3 Volume of links or posts Sources AI already cites, within Google's policies Reporting and attribution 3 Mentions only AI referrals and Search Console tied to pipeline Transparency and proof 3 No references or change log Case walk-through, references, full change log Terms and data 2 Long lock-in, they keep the data Short trial, clear exit, you own everything AEO agency scoring rubric (maximum 100 points) Our suggested cut-offs: 80 or more makes the shortlist, 60 to 79 means negotiate the weak spots first, and under 60 is a pass. Worked example: an agency scores 4 on measurement (20 points), 4 on deliverables (16), 3 on off-site evidence (9), 3 on reporting (9), 4 on transparency (12) and 2 on terms (4). That's 70, so push for a shorter term and data ownership in writing before signing. AEO agency vs in-house vs platform: which do you need? Decide by who will do the work every week. An agency sells people's time, while a platform sells data and capacity your team still has to direct and approve. AEO agency vs in-house team with a platform vs hybrid Your situation Best fit Why Nobody can ship AEO work weekly Agency You're buying hands, not software A content or SEO person has a few hours a week In-house with a platform Tracking and drafting are automated; your person approves You need PR and outreach you can't staff Agency for PR, platform for tracking Relationships are the hardest part to build Your site has serious technical problems Agency or consultant, as a project A fixed scope beats an open-ended retainer Your budget is below a typical retainer Platform Entry plans cost a fraction of the lowest published retainer You already have an SEO agency Your current agency, if it passes the 18 questions Added scope can cost less than a second agency You want outside help but your own data Hybrid The agency works in an account you can see AEO agency vs in-house team with a platform vs hybrid Prefer to run the technical checks yourself first? Our AEO audit guide walks through them. When is a platform like Lantern enough? A platform is enough when someone on your team can review and approve work every week. Lantern tracks how AI answers describe your brand, connects that to Search Console and Google Analytics, and has agents research gaps, write briefs and drafts, and refresh pages, with a person approving anything that gets published. As of October 2026, our pricing starts with a free plan (ChatGPT only, 10 Agent Runs a month). Pro is $89 a month for ChatGPT, Claude, Google and Gemini, with three brands, three seats and 100 Agent Runs. Our roundups of AEO tools and SEO agents compare the other options, and our AI visibility tools buyer's guide covers tracking quality if you only need measurement. How to run a 90-day AEO agency trial Agree on the prompts and metrics before day 1, take a per-platform baseline in the first two weeks, let the agency ship for about two months, and judge day 90 against that baseline. Put all of it in the contract. Judge the agency on what it shipped and on per-platform movement against your day-14 baseline. Before day 1: agree on the rules. Fix the prompt set (100 or more, branded and unbranded), platforms, metrics, read-only access and data ownership. In our research, growing a tracked set from 10 to 100 questions cut variation in reported brand coverage by about 73%. Days 1 to 14: take a baseline. Record mentions, citations, share of voice and answer accuracy for each platform. Run a free AI visibility report too, as a second view on the agency's numbers. Days 15 to 30: plan and fix. Expect a roadmap, technical fixes and corrections to wrong brand facts, but not big movement: one agency's pricing page says onboarding alone typically takes 30 to 45 days. Days 31 to 75: ship the work. Check shipped pages, refreshes and outreach against the plan every week. Days 76 to 90: read and decide. Compare each platform with its baseline, separate platform-wide shifts from brand problems, then continue, change scope or stop. Use first-party data wherever it exists. Search Console's Generative AI performance reports , live for all websites since August 31, 2026, show impressions, pages, countries, devices and dates for AI Overviews, AI Mode and Discover. Bing's AI Performance report , in public preview, shows citations across Microsoft Copilot and Bing's AI summaries. For ChatGPT, OpenAI's publisher and developer FAQ says it adds utm_source=chatgpt.com to referral URLs, so you can split that traffic out in analytics. Our guide to AI referral traffic and GA4 tracking shows the setup. 90-day AEO trial scorecard Metric Source What to check at day 90 Mentions Prompt tracking Share of prompts that name you, per platform Citations Prompt tracking Answers linking to your site or pages about you Share of voice Prompt tracking Your mentions against named competitors, same prompts Answer accuracy Branded prompts Errors found, fixed and still showing AI referral traffic Analytics and CRM Sessions and leads by AI platform Google AI visibility Search Console Generative AI impressions and pages Copilot and Bing citations Bing Webmaster Tools Total citations and cited pages Work shipped Agency change log Delivered against what was promised 90-day AEO trial scorecard Set targets together before day 1, and judge process and outcomes separately. If the agency shipped everything and nothing moved, ask for a diagnosis and a new plan; if it didn't ship, that's on the agency. In our research, Google AI recognition fell at about the same time for several unrelated brands, so check competitors before you blame or credit anyone. How to work with an AEO agency well Treat the agency as part of your team: give it access, context and fast approvals. Budget your own time. One agency's pricing page estimates 6 to 8 hours of client time in the first 30 days, then about 2 to 3 hours a month. Name one owner who can approve work within an agreed time, such as two working days. Share raw inputs like sales call notes, support tickets and Search Console queries. That's where the best prompts come from. Don't pay twice for tools. If the agency runs a platform, agree who pays and who owns the account. Where to find an AEO agency Build a shortlist of three to five, then run each through the 18 questions and the rubric. Lantern's GEO and AI Search Agency Directory is one place to start. If you work at an agency yourself, our guide to AI search visibility for agencies covers tracking and reporting across many clients. Where Lantern fits Lantern is a platform, not an agency. In-house teams use it to track AI visibility per platform and have agents turn gaps into review-ready content that a person approves. It's built for agencies too. Lantern for agencies includes multi-client dashboards and white-label reports, and the Agency plan is $399 a month for three client workspaces, five agency seats and 1,000 Agent Runs, with more available as add-ons. To see where you stand before you talk to any agency, get a free AI Visibility Report . If you'd rather try a platform first, Lantern's free plan gives you ChatGPT tracking and 10 Agent Runs a month at $0. Frequently asked questions What is an AEO agency? An AEO agency works to get your brand mentioned, cited and recommended in AI answers. Typical services include AI visibility tracking, technical fixes for AI crawlers, answer-ready content, digital PR and per-platform reporting. Is AEO legit? Yes, if you treat it as an extension of SEO rather than a bag of tricks. Google says optimizing for its AI features is still SEO. The genuinely new parts are measuring AI answers per platform and building evidence on third-party sites. Can you pay for AEO? You can pay an agency or a platform to do AEO work, and you can buy clearly labeled ads in ChatGPT. You can't pay to be placed inside the answer itself: OpenAI says ads don't influence ChatGPT's answers. How much does an AEO agency cost? Among agencies that publish prices, retainers ran from about $1,000 to more than $15,000 a month as of October 2026. Price mostly tracks output, so compare quotes by deliverables, not the headline fee. What's the difference between an AEO agency, a GEO agency and an AI SEO agency? Mostly the label. Google describes AEO and GEO as terms for work focused on visibility in AI search experiences, and AI SEO is used the same way. Judge an agency by its deliverables and reporting, not its acronym. What is the best AEO agency for B2B? There's no single best one, only the best fit for your category, budget and team. For B2B, look for experience with long sales cycles, comparison and use-case content, and reporting that ties AI referral visits to pipeline in your CRM."
+ },
+ {
+  "url": "https://openserved.com/blog/how-to-choose-a-geo-agency",
+  "title": "How to Choose a GEO Agency in 2026: 142 Case Studies | OpenServed",
+  "words": 3706,
+  "headings": [
+   [
+    "h1",
+    "How to Choose a GEO Agency in 2026: 142 Case Studies"
+   ],
+   [
+    "h2",
+    "The short answer"
+   ],
+   [
+    "h2",
+    "1. Decide how GEO fits with your SEO"
+   ],
+   [
+    "h2",
+    "2. Choose the AI platforms that matter to you"
+   ],
+   [
+    "h2",
+    "3. Ask what the agency measures, and how"
+   ],
+   [
+    "h2",
+    "4. Ask what AI visibility turned into"
+   ],
+   [
+    "h2",
+    "5. Know what a realistic result looks like"
+   ],
+   [
+    "h2",
+    "6. Ask where each result started"
+   ],
+   [
+    "h2",
+    "7. Check how much GEO the agency has done"
+   ],
+   [
+    "h2",
+    "8. Get the fee and what it covers in writing"
+   ],
+   [
+    "h2",
+    "9. Plan for about six months"
+   ],
+   [
+    "h2",
+    "10. Vet the case studies"
+   ],
+   [
+    "h2",
+    "Before you sign"
+   ],
+   [
+    "h2",
+    "10 questions to ask a GEO agency"
+   ],
+   [
+    "h2",
+    "Red flags when hiring a GEO agency"
+   ],
+   [
+    "h2",
+    "When not to hire a GEO agency"
+   ],
+   [
+    "h2",
+    "Find a GEO agency"
+   ],
+   [
+    "h2",
+    "Related guides"
+   ],
+   [
+    "h2",
+    "Methodology"
+   ],
+   [
+    "h2",
+    "FAQs"
+   ],
+   [
+    "h2",
+    "About the author"
+   ]
+  ],
+  "text": "\u2190 Back to Blog How to Choose a GEO Agency in 2026: 142 Case Studies By Le Tuan Binh 16 min read \u00b7 Last updated November 7, 2026 On this page \u25be The short answer 1. Decide how GEO fits with your SEO 2. Choose the AI platforms that matter to you 3. Ask what the agency measures, and how 4. Ask what AI visibility turned into 5. Know what a realistic result looks like 6. Ask where each result started 7. Check how much GEO the agency has done 8. Get the fee and what it covers in writing 9. Plan for about six months 10. Vet the case studies Before you sign 10 questions to ask a GEO agency Red flags when hiring a GEO agency When not to hire a GEO agency Find a GEO agency Related guides Methodology FAQs Generative engine optimization (GEO) is the work of getting a brand cited and recommended in AI answers: Google AI Overviews and AI Mode, ChatGPT, Perplexity, Gemini and the rest. It is new, the tools that measure it are new, and many agencies have only just started selling it. That makes it harder than usual to tell good proof from a good pitch. This guide shows what to check, in 10 steps. Each step comes from 142 GEO case studies published by 68 agencies and indexed in OpenServed's directory. We counted what agencies report, what they leave out, what a typical published result looks like and how long it took, so every piece of advice comes with evidence. Data as of November 2026. The full numbers are in GEO Statistics 2026 . The short answer Decide how GEO fits with your SEO. 90% of GEO case studies also list SEO, and only one of 142 lists GEO alone. Choose the AI platforms that matter to your customers. 25% of case studies name Google AI Overviews and 10% ChatGPT; 66% name no platform at all. Ask what the agency measures, and how. 27% of GEO case studies report no AI metric, and only 2 of 142 say how many prompts were tracked. Ask what AI visibility turned into. Only 13% tie AI search to leads or revenue. Know what a realistic result looks like. The median published case study reports a 188% increase in AI referral traffic and 158% in AI visibility, from small starting points. Ask where each result started. 16% of AI gains are 1,000% or more, and only 5.6% of case studies give an AI number before and after. Check how much GEO the agency has done. 40 of the 68 agencies have published one GEO case study, and only one has ten or more. Get the fee and what it covers in writing. None of the 142 case studies states a budget. Plan for about six months. The median GEO result is measured over 6 months, the same as SEO, and only 15% within 3 months. Vet the case studies. 34% carry none of five basic trust signals, and 16% are Client-verified, the highest share of any service we've studied. 1. Decide how GEO fits with your SEO GEO is sold as part of SEO. 90% of GEO case studies also list SEO, and only one of the 142 lists GEO alone. The average GEO case study lists 2.8 services, more than for any other service we've studied. Content is the next most common partner. Content marketing appears alongside GEO in 25% of case studies, PPC in 19% and local SEO in 11%. The two share most of the work. AI answers draw heavily on pages that already rank and on content that answers questions clearly. That is why most agencies treat GEO as an extension of SEO and content, not a separate product. What to do: decide first whether you want GEO from your current SEO agency or team, or from a second agency. If it's a second one, ask how the work will fit together and who owns what: technical fixes, content, digital PR and tracking. Be wary of GEO sold as a separate product that ignores your existing search work. 2. Choose the AI platforms that matter to you Google AI Overviews dominate. 25% of GEO case studies name Google AI Overviews or AI Mode in their results. ChatGPT appears in 10%, Perplexity and Gemini in 4% each, Claude in 2% and Copilot in 1%. Two in three name no platform. 66% of GEO case studies report AI results without saying which AI tool they come from, using terms like \"AI visibility\" or \"AI referral traffic\". What to do: before you talk to agencies, find out where your customers ask questions. Then ask each agency which platforms it will report on separately. Being cited in Google AI Overviews and being recommended in ChatGPT are different results, won in different ways. 3. Ask what the agency measures, and how 27% of GEO case studies report no AI metric at all. 38 of the 142 list GEO as a service but report only traditional SEO results, such as organic traffic or rankings. There is no standard measure yet. Only 45% of AI search results state a percentage change. The rest are counts or levels, such as a number of appearances in AI Overviews or a visibility score across a set of prompts, each from the agency's own tool. The method is rarely shown. GEO is measured by running a fixed set of prompts (the questions your customers ask an AI tool) and checking whether your brand appears. Only 5 of the 142 case studies mention tracked prompts, and only 2 say how many: one more than 180, the other more than 1,500. 0.7% report share of voice in AI answers. What to do: ask which tool the agency uses, which prompts it will track and how they were chosen, how often it checks, and how it will measure AI referral traffic in your analytics. Get a baseline before the work starts, and ask for the prompt list in writing. 4. Ask what AI visibility turned into Most GEO case studies stop at visibility. 37% report AI visibility, citations or mentions and no AI traffic or AI-driven result. 27% report AI referral traffic. Only 13% tie AI search to leads or revenue. 19 of the 142 report leads, sign-ups or sales attributed to AI. Among case studies that report any AI metric, 44% also report leads, conversions or revenue of any kind. Leads and revenue from AI are too few to measure. Only 8 case studies state a percentage gain in leads or revenue attributed to AI, too few for a reliable median. What to do: ask how the agency will connect AI visibility to traffic, then to leads or sales: how it tags AI referral traffic, and how it attributes enquiries that started in an AI answer. A citation that sends no one to your site is hard to value. 5. Know what a realistic result looks like The median GEO case study reports a 188% increase in AI referral traffic. Among the 25 case studies that state one, half fall between 78% and 720%. The median increase in AI visibility, citations or mentions is 158% (30 case studies). AI gains are large because the starting point is small. AI referral traffic barely registered for most sites a year or two ago, so even a few extra visits show up as a big percentage. Traditional search results are more modest. The median reported increase in organic traffic is 82% (34 case studies). The median gain in conversions or leads is 164% (36), and those results aren't attributed to AI. These are the wins. Agencies publish the programs that went well, and GEO is new, so these figures rest on few data points. Treat them as early signals, not benchmarks. What to do: ask an agency what result it expects, from what starting point, and what that estimate is based on. Be wary of a promised percentage, or a guarantee that AI tools will cite you: no one controls what an AI model says. 6. Ask where each result started Starting points are almost never shown. Only 5.6% of GEO case studies give an AI number before and after, and 2.8% say the starting point was zero. A 1,000% gain from 10 visits a month is 110 visits, and 16% of AI gains are 1,000% or more. The method behind the number is missing too. 3.5% mention the prompts they tracked, 1.4% say how many, and none say how long the program ran or what it cost. What to do: for any AI result an agency shows you, ask for the number before and after, not only the percentage, and the dates of each. Ask to see the prompts behind a visibility score. 7. Check how much GEO the agency has done GEO is new for almost every agency. 68 of the 330 agencies in our directory have published a GEO case study. 40 of them have published one, 52 two or fewer, and only one has ten or more. GEO is a small part of most agencies' work. Of the 59 agencies that have ten or more case studies in total and list GEO, 3 have it in at least a quarter of them. The proof is spread thin. Coalition Technologies, TripleDart Digital and WebFX account for 20% of the GEO case studies, with 16, 7 and 6. What to do: ask how many GEO programs the agency has run, for how long, and to see the results of more than one. An agency with strong SEO work and one early GEO case study may still be a good choice, but know that you are part of its learning. 8. Get the fee and what it covers in writing None of the 142 GEO case studies states a budget, so we can't tell you what a fair price is. The price ranges on other guides are not sourced, and they disagree: one lists $7,000 to $15,000 a month for mid-market programs, another \u00a33,000 to \u00a310,000. GEO is usually sold in three ways: A one-off audit, which checks how often AI tools mention you today, for which prompts, and what to fix. A monthly retainer, which covers tracking, content, technical fixes and digital PR over time. A project, such as rebuilding key pages so AI tools can read and quote them. Tracking tools are a separate cost. Many agencies use a paid AI visibility tool; ask whether its fee is included and whether you keep access if you leave. What to do: compare quotes on what they cover, not on the monthly figure. Ask each agency to list the prompts and platforms it will track, the content and fixes it will deliver each month, how often you get a report, and the notice period. 9. Plan for about six months The median GEO result is measured over 6 months. 26 of the 142 case studies state a period in days, weeks, months or years, and the median is 6 months, the same as for SEO. Fast results are rare. Only 15% of those results came within 3 months. 73% came within 6 months, and 27% took longer. This is longer than some guides promise. Competitor pages quote 60 to 120 days for a lift in AI citations, without a source. In published case studies, most results are reported after three months or more. What to do: agree on a baseline in month one and a review at about month six, with milestones in between: prompts tracked, pages fixed, first citations. Be wary of citations promised within weeks. 10. Vet the case studies We checked each GEO case study for five trust signals: a business result (such as leads, sales or revenue), a number before and after, a time period, a client quote, and Client-verified status. 34% carry none of the five. That is fewer than the 41% across all services, but it still means one in three GEO case studies gives you nothing to check. Only 9.9% carry three or more. 16% of GEO case studies are Client-verified. That is 23 of 142, from 18 agencies, the highest share of any service we've studied. On OpenServed, Client-verified means the client has confirmed the results. Everything else is as reported by the agency. Verified case studies are more likely to report an AI metric. 83% of verified GEO case studies report one, against 71% of agency-reported ones. What to do: ask whether you can speak with the client behind a case study. Then test it yourself: run a few of the tracked prompts in the AI tools that matter to you and see whether the client appears. Before you sign Get these in writing, and make sure you own them: The prompt list: the questions that will be tracked, on which platforms, and how often. The baseline: where you stand today on each prompt, and your AI referral traffic. Tracking access: logins to the AI visibility tool, or an export of the data each month. Analytics: AI referral traffic tagged in your own analytics account, not only in the agency's reports. Content: the pages and articles the agency writes are yours, including after the contract ends. 10 questions to ask a GEO agency Each question below comes from one of the 10 steps. A good answer is specific; a warning sign is a claim with nothing behind it. How does GEO fit with our SEO? A good answer is one plan, with clear roles if another agency runs SEO. A warning sign is GEO sold as a separate product that ignores SEO. Which AI platforms will you report on? A good answer names them and reports each separately. A warning sign is \"AI search\" with no platform. What will you measure, and how? A good answer names the tool, the tracked prompt list, how often it checks, and a baseline. A warning sign is a visibility score with no method behind it. What did AI visibility turn into? A good answer shows AI referral traffic, leads or sales, tracked. A warning sign is mentions and citations on their own. What result should we expect? A good answer is a range tied to clients like you, with the starting point. A warning sign is a guaranteed citation or a promised percentage. Where did each result start? A good answer gives a number before and after, with dates. A warning sign is a four-digit percentage with no starting point. How many GEO programs have you run? A good answer is several, with results you can check. A warning sign is one case study, or none, behind the pitch. What will we pay, and what does it cover? A good answer is a written fee with the prompts, platforms, content and reports it covers. A warning sign is a cheap \"unlimited GEO\" package. How long until we see results? A good answer is a baseline in month one and a verdict by about month six. A warning sign is citations promised within weeks. Can we check a result ourselves? A good answer is prompts you can run and a client you can call. A warning sign is no prompts to test and no reference. Red flags when hiring a GEO agency A guaranteed citation or ranking in AI answers. No one controls what an AI model says. GEO with no AI metric. 27% of GEO case studies report only SEO results. Visibility with nothing after it. 37% report AI visibility and no traffic or leads from AI. A four-digit percentage with no starting point. 16% of AI gains are 1,000% or more, and only 5.6% of case studies show the before and after. \"AI search\" with no platform. 66% of case studies name no AI platform. A score you can't check. Only 2 of 142 case studies say how many prompts were tracked. Citations promised within weeks. The median published result is measured over 6 months. A tool or prompt list you can't access. If you leave, you should keep your baseline and your data. When not to hire a GEO agency GEO builds on SEO, so a GEO agency may not be your first hire: If your site has weak SEO basics, such as pages that don't rank or can't be crawled, fix those first. AI answers draw heavily on pages that already rank. If you already have a good SEO agency, ask it to add AI tracking and GEO before hiring a second agency. 90% of GEO case studies come from agencies that also do SEO. If your customers don't use AI tools to choose a provider like you, check that first: run your customers' questions in AI tools and see what comes back. A GEO specialist makes more sense when AI answers already shape your market, your SEO is in good shape, and you want someone to own AI visibility and its tracking. Find a GEO agency OpenServed's GEO agency directory lists agencies by the case studies they have published, so you can check each of the steps above before you make contact. You can narrow it to small business or enterprise . Look for the Client-verified badge on results the client has confirmed. Related guides How to choose an SEO agency , since most GEO is sold with SEO. How to choose a content marketing agency , since AI answers draw on content. GEO Statistics 2026 , for the full data behind this guide. Methodology Source: the 142 case studies in OpenServed's directory that list GEO as a service, from 68 agencies, as of November 2026. Comparisons across services use all 7,721 case studies from 330 agencies. AI search metrics: a stat counts as an AI search metric when it mentions AI, AI Overviews, AI Mode, ChatGPT, Perplexity, Gemini, Claude, Copilot, LLMs, generative or answer engines. We split these into AI referral traffic, AI visibility (citations, mentions, appearances or answers) and leads or revenue from AI. Medians: medians use stats that state a percentage change, one per case study (the first listed). The middle half runs from the 25th to the 75th percentile. Time period: a case study states a period when it says the result came in, within, after or over a number of days, weeks, months or years. When it gives several, we use the shortest. Trust signals: a business result (leads, sales, revenue, conversions, bookings, orders, sign-ups, calls or customers), a number before and after, a time period, a client quote, and Client-verified status. Bundled services: almost all of these case studies list other services alongside GEO, most often SEO, so results can't be attributed to GEO alone. Pricing: no case study states a budget. Price ranges mentioned in this guide come from other published guides and are not sourced. Selection bias: agencies publish their wins, and the directory is not a random sample. Agency-reported: except for the 23 Client-verified case studies, results are as published by each agency. Cite this data: OpenServed, \"How to Choose a GEO Agency in 2026: 142 Case Studies\", November 2026, https://openserved.com/blog/how-to-choose-a-geo-agency FAQs How do I choose a GEO agency? Check 10 things: how GEO fits with your SEO, which AI platforms it reports on, what it measures and how, what AI visibility turned into, whether its expected result is realistic, where each result started, how much GEO it has done, what the fee covers, the timeline, and whether its case studies can be checked. What does a GEO agency do? It works to get your brand cited and recommended in AI answers, such as Google AI Overviews, ChatGPT, Perplexity and Gemini. The work usually covers tracking a set of prompts, fixing pages so AI tools can read and quote them, writing content that answers questions clearly, and earning mentions on other sites. Is GEO different from SEO? The work overlaps heavily. 90% of GEO case studies also list SEO, and only one of 142 lists GEO alone. GEO adds tracking and optimizing for AI answers on top of search and content work. Should I hire a GEO specialist or ask my SEO agency? If you already have a good SEO agency, ask it to add AI tracking and GEO first. A specialist makes more sense when AI answers already shape your market, your SEO is in good shape, and you want someone to own AI visibility. What results should I expect from a GEO agency? The median published case study reports a 188% increase in AI referral traffic and a 158% increase in AI visibility. These gains start from small numbers and come from agencies' best work, so a typical program is likely to land lower. How long does GEO take to work? The median published GEO result is measured over 6 months, the same as SEO. Only 15% of results that state a period came within 3 months. How much does a GEO agency cost? None of the 142 case studies we analyzed states a budget, and published price ranges are unsourced and disagree. Ask each agency for its fee in writing, with the prompts, platforms, content and reports it covers, and whether tracking tools are included. Which AI platforms should GEO target? The ones your customers use. In published case studies, Google AI Overviews are named most (25%), followed by ChatGPT (10%). Ask the agency to report each platform separately. How do you measure GEO results? With a tracked set of prompts, AI visibility or citation counts, and AI referral traffic in your analytics, all against a baseline. There is no standard yet: only 2 of 142 GEO case studies say how many prompts they tracked. Can a GEO agency guarantee my brand appears in ChatGPT? No. AI answers change by question, user and model version, and no one controls them. Be wary of any guarantee. About the author Le Tuan Binh Founder of OpenServed Le Tuan Binh is the founder of OpenServed, a directory that ranks marketing agencies by the case studies they publish rather than by star ratings. Le Tuan Binh built and maintains the OpenServed dataset of 7,727 case studies from 332 agencies, which every statistic on this blog comes from. More about Le Tuan Binh \u2192"
+ },
+ {
+  "url": "https://www.webfx.com/blog/ai/how-to-outsource-geo/",
+  "title": "How to Outsource Generative Engine Optimization the Right Way",
+  "words": 175,
+  "headings": [
+   [
+    "h1",
+    "How to Outsource Generative Engine Optimization Without Wasting Budget"
+   ],
+   [
+    "h3",
+    "What to read next"
+   ],
+   [
+    "h3",
+    "Related Resources"
+   ],
+   [
+    "h3",
+    "AI Search Case Studies"
+   ]
+  ],
+  "text": "How to Outsource Generative Engine Optimization Without Wasting Budget Published: Apr 22, 2026 14 min. read Add WebFX as a preferred source on Google More information about adding WebFX as a preferred source on Google Marketing moves fast. Add WebFX as a preferred source on Google and get our latest insights when you search. Summarize in ChatGPT Author Maria Carpena Lead Content Specialist What to read next Multi-Location Google Business Profile Management: 6 Common Problems (+ How to Fix Each One) 17 minute read Industrial SEO: From Basics to Business Growth Strategies 14 minute read 30+ AI Overview Statistics From WebFX\u2019s 2.37M-Query Study 16 minute read How to Choose a Plumbing Marketing Agency in 7 Steps 12 minute read Related Resources How to Choose a GEO Agency: Red Flags, Questions, and Considerations 12 minute read How to Tell If Your GEO Agency Is Actually Doing a Good Job 15 minute read In-House GEO vs. Agency GEO: Which Is Better for AI Visibility? 11 minute read AI Search Case Studies IGX Solutions RC Mowers Explore More"
+ },
+ {
+  "url": "https://www.getmentioned.co/blog/geo-agencies-and-services-how-to-choose",
+  "title": "GEO Agencies & Services: How to Choose a Generative Engine Optimization Partner | GetMentioned",
+  "words": 909,
+  "headings": [
+   [
+    "h1",
+    "GEO Agencies & Services: How to Choose a Generative Engine Optimization Partner"
+   ],
+   [
+    "h3",
+    "What GEO Services Actually Cover"
+   ],
+   [
+    "h3",
+    "Agency, In-House, or Tooling?"
+   ],
+   [
+    "h3",
+    "Red Flags When Evaluating GEO Providers"
+   ],
+   [
+    "h3",
+    "Questions That Sort the Field Quickly"
+   ],
+   [
+    "h3",
+    "Where to Find Agencies That Already Do This"
+   ],
+   [
+    "h3",
+    "Frequently Asked Questions"
+   ],
+   [
+    "h3",
+    "What does GEO cost compared to SEO?"
+   ],
+   [
+    "h3",
+    "Do I need a GEO agency if I already have an SEO agency?"
+   ],
+   [
+    "h3",
+    "How long until GEO work shows results?"
+   ],
+   [
+    "h3",
+    "Start With the Baseline"
+   ],
+   [
+    "h2",
+    "Related articles"
+   ],
+   [
+    "h3",
+    "Introducing My Domain: See Exactly How Your Content Performs in AI Search"
+   ],
+   [
+    "h3",
+    "Free AI Visibility Report: Check Your Brand in AI Search"
+   ],
+   [
+    "h3",
+    "GEO vs SEO: The Complete Guide (2026)"
+   ]
+  ],
+  "text": "Jul 16, 2026 GEO Agencies & Services: How to Choose a Generative Engine Optimization Partner Generative engine optimization has crossed the line from experiment to service category. Brands are hiring agencies to get them mentioned by ChatGPT, Gemini, and Perplexity the way they once hired agencies for Google rankings, and a wave of providers has appeared to meet the demand, ranging from excellent to purely opportunistic. This guide covers what GEO services actually include, when hiring an agency beats doing it in-house, and how to tell the serious providers from the ones selling repackaged SEO. What GEO Services Actually Cover A complete generative engine optimization engagement has four parts: Measurement. Establishing where the brand stands: which prompts mention it, at what rate, against which competitors, across which AI engines. Everything else depends on this baseline, which is why serious providers start here rather than with content. Source strategy. Identifying the pages AI models cite in the category (review platforms, comparison sites, communities, editorial rankings) and building a plan to earn presence on them. In most categories, a small set of heavily-cited pages controls the answers. Content work. Creating and restructuring content so models can extract and cite it: direct answers to buyer questions, comparison pages, structured data, and coverage of the topics where the measurement shows gaps. Ongoing tracking. AI answers shift with model updates and new content. Monthly reporting on mention rates, competitor movement, and source changes is what separates a program from a one-off project. If a proposal is missing the first or last part, you're buying content production, not GEO. Agency, In-House, or Tooling? The honest answer is that the measurement layer is a platform problem, not a people problem: no agency can hand-check hundreds of prompts across three engines and multiple markets every day. The real question is who acts on the data. In-house with a platform fits teams that already own SEO and content. AI visibility tracking plugs into the existing workflow, and the platform's weekly reporting replaces the agency retainer. Agency plus platform fits teams without content capacity, or agencies already running the brand's SEO. The agency executes the source and content strategy; the platform keeps both sides honest about whether it's working. Agency alone , without measurement, is the arrangement to avoid. Neither side can tell whether the work moved anything. Red Flags When Evaluating GEO Providers Guaranteed placement. Nobody can guarantee that ChatGPT will recommend a brand. Answers are probabilistic and change with model updates. A provider promising \"#1 in ChatGPT\" is promising something they don't control. No baseline measurement. If the engagement starts with content deliverables instead of an audit of current visibility, sources, and competitors, the strategy is generic by construction. SEO deliverables with new labels. Keyword rankings and domain authority are not AI visibility metrics. The relevant numbers are mention rate, position in answers, competitor share, and citation sources. One-time optimization. A brand's AI visibility a month after the project ends is the only result that matters, and it requires ongoing tracking by definition. Questions That Sort the Field Quickly Which prompts will you track for us, and how did you choose them? Which sources currently drive AI answers in our category? How do you measure results, and can we see the dashboard ourselves? What happened to your other clients' mention rates over six months? Strong providers answer all four with specifics. Weak ones pivot to content volume and publishing cadence. Where to Find Agencies That Already Do This We maintain a partner directory of agencies and consultants who run their clients' AI visibility programs on GetMentioned, which means they work measurement-first by default: every recommendation they make is tested against real prompt-level tracking across ChatGPT, Gemini, and Perplexity. If you're a brand, it's a shortlist of providers whose work you can verify in the data. If you're an agency building a GEO practice, the partner program is how you get listed. Frequently Asked Questions What does GEO cost compared to SEO? Engagements currently mirror SEO retainers, typically from around \u20ac1,000 per month for a consultant-led program to five figures for multi-market enterprise work. The tooling layer is separate and comparatively cheap; AI visibility tracking starts at \u20ac89 per month, which is also why measurement is worth owning even if you outsource execution. Do I need a GEO agency if I already have an SEO agency? Often your SEO agency can become your GEO provider, since the disciplines overlap heavily on content and authority building. What they need is the measurement layer and category source data. Pointing them at the answers your buyers actually see is a faster path than hiring a second agency. How long until GEO work shows results? Source-level wins (getting added to a heavily-cited comparison page, for example) can show up in answers within weeks. Category-level visibility shifts typically take one to two quarters of consistent work. Anyone quoting days is measuring something other than AI answers. Start With the Baseline Whether you hire a partner or build in-house, the first step is the same: generate a free AI visibility report to see where your brand stands today, then decide who closes the gaps. If you'd rather have help, browse the partner directory . Related articles Apr 7, 2026 Introducing My Domain: See Exactly How Your Content Performs in AI Search Apr 5, 2026 Free AI Visibility Report: Check Your Brand in AI Search Apr 3, 2026 GEO vs SEO: The Complete Guide (2026)"
+ },
+ {
+  "url": "https://sentic.io/blog/how-to-choose-an-ai-seo-agency/",
+  "title": "How to Choose an AI SEO Agency: 12 Questions | Sentic",
+  "words": 2749,
+  "headings": [
+   [
+    "h2",
+    "Are AEO, GEO and AI SEO different services?"
+   ],
+   [
+    "h2",
+    "What should an AI SEO agency actually deliver?"
+   ],
+   [
+    "h2",
+    "What are the 12 questions to ask an AI SEO agency?"
+   ],
+   [
+    "h2",
+    "What red flags should end the conversation?"
+   ],
+   [
+    "h3",
+    "Guaranteed citations or placements"
+   ],
+   [
+    "h3",
+    "\u201cSecret\u201d or proprietary AI files"
+   ],
+   [
+    "h3",
+    "No baseline, no competitors"
+   ],
+   [
+    "h3",
+    "Activity dressed as outcome"
+   ],
+   [
+    "h3",
+    "Shotgun off-site tactics"
+   ],
+   [
+    "h2",
+    "How do you compare AI SEO agency proposals?"
+   ],
+   [
+    "h2",
+    "What results should you expect from an AI SEO agency, and when?"
+   ],
+   [
+    "h2",
+    "Frequently asked questions"
+   ],
+   [
+    "h3",
+    "Is an AI SEO agency different from a regular SEO agency?"
+   ],
+   [
+    "h3",
+    "Can an agency guarantee my brand will appear in ChatGPT?"
+   ],
+   [
+    "h3",
+    "How long does AI SEO take to show results?"
+   ],
+   [
+    "h3",
+    "Do I need special AI files or schema to show up in AI Overviews?"
+   ],
+   [
+    "h3",
+    "What should I give an agency access to during evaluation?"
+   ],
+   [
+    "h2",
+    "Want to see where you stand first?"
+   ],
+   [
+    "h4",
+    "Marcus O'Dell"
+   ],
+   [
+    "h2",
+    "Keep reading."
+   ],
+   [
+    "h3",
+    "How We Moved sentic.io From Webflow to WordPress Without Losing Search"
+   ],
+   [
+    "h3",
+    "Copilot SEO: How to Get Your Brand Cited by Microsoft Copilot"
+   ],
+   [
+    "h3",
+    "Gemini SEO: How to Get Your Brand Cited by Google Gemini"
+   ],
+   [
+    "h2",
+    "Like this thinking? See how it shows up in client work."
+   ]
+  ],
+  "text": "On this page Hire an AI SEO agency that can show you exactly how it measures brand mentions and citations in ChatGPT, Gemini, Perplexity and Google AI Overviews, explains every change it makes to your site, and refuses to guarantee placement. Google\u2019s own hiring guidance says no one can guarantee a #1 ranking, and AI answers are even less predictable than rankings. Nearly every agency has added \u201cAI\u201d to its homepage lately, so the label tells you very little. I run the AI search practice at Sentic, and we\u2019re an AI search optimization agency , so read this knowing that. I\u2019ve tried to write the questions so they work just as well on us as on anyone else. Below you\u2019ll find what the service should include, 12 questions to ask on the sales call, the red flags that should end the conversation, a scorecard you can copy into a spreadsheet, and a realistic timeline for results. Are AEO, GEO and AI SEO different services? No, for buying purposes they\u2019re the same service with different names. Answer engine optimization (AEO), generative engine optimization (GEO), AI SEO, LLM optimization and AI visibility all describe the work of getting your brand named and cited in answers generated by AI tools. The terms came from different places. GEO comes from academic research: a 2023 paper by Aggarwal and colleagues, \u201cGEO: Generative Engine Optimization\u201d , found that GEO methods can boost visibility by up to 40% in generative engine responses. AEO grew out of the featured snippet and voice search era. AI SEO is mostly what buyers type into Google. If an agency tells you GEO and AEO are fundamentally different disciplines and you need both, ask what changes in the actual deliverables. In my experience the answer is usually \u201cthe invoice.\u201d Our AI search glossary covers the vocabulary if you want to check whether a proposal is using terms precisely or decoratively. What matters more than the label is the relationship to traditional SEO. On the Google side especially, AI search is SEO with extra steps. Google states plainly that there are no additional requirements to appear in AI Overviews or AI Mode , nor other special optimizations necessary, beyond being indexed and eligible to show with a snippet. So an AI SEO agency that can\u2019t do solid technical and content SEO is building on sand. Our guide on how to choose an SEO agency covers that side of the evaluation. What should an AI SEO agency actually deliver? An AI SEO agency should deliver four things: a measured baseline of your AI visibility, a prioritized plan tied to the questions your buyers ask, the on-site and off-site work to execute that plan, and recurring reporting that separates mentions from citations. If any of those four is missing, you\u2019re buying part of a service. Here\u2019s what each piece looks like in practice. Deliverable What good looks like What weak looks like Baseline A fixed prompt set run across named AI engines, with your mention and citation share recorded against competitors before any work starts A few screenshots of ChatGPT answers, no competitors, no repeatable method Prompt and keyword research Questions mapped to real buyer stages, refreshed each quarter A keyword list from three years ago with \u201cAI\u201d added to the title On-site work Fixing thin pages, heading structure, internal links, indexation, and rewriting key pages so they answer questions directly Adding new files or schema types and calling it optimization Off-site work Earning accurate coverage in the third-party sources AI tools already cite for your category Mass posting on forums or buying listicle placements Reporting Mentions, citations, AI referral traffic and leads or revenue, with the change log next to the numbers Activity counts: \u201cwe made 140 optimizations this month\u201d The distinction between mentions and citations matters more than most proposals admit. A mention is when the AI names your brand in the answer. A citation is when it links to your site as a source. You can have plenty of one and almost none of the other, which is why our State of AI Visibility 2026 study tracks them separately across 55 brands. For a worked example of how we structure this: our AEO program tracks five AI engines (ChatGPT, Gemini, Perplexity, Google AI Overviews and AI Mode) and two metrics (mentions and citations), benchmarked against that 55-brand dataset. You don\u2019t need to copy our setup. You should expect any agency to describe its own setup with the same level of specificity. What are the 12 questions to ask an AI SEO agency? Ask these 12 questions on the first or second call, and pay attention to how specific the answers are. Vague answers to measurement questions are the most reliable warning sign I know of. Several of these are adapted from Google\u2019s own advice on hiring an SEO , which still holds up well for AI search. Which AI engines do you track, and how? A good answer names the engines and explains the method: a fixed set of prompts, run on a schedule, with results stored so they can be compared over time. A weak answer is \u201cwe monitor AI search.\u201d Do you report mentions and citations separately? They behave differently and need different fixes. An agency that lumps them into one \u201cAI visibility score\u201d can\u2019t tell you which problem you have. How do you build the prompt set, and how often does it change? Prompts should come from real buyer questions, sales calls and search data, not from the agency\u2019s imagination. They should be reviewed at least quarterly, because the questions people ask keep moving. What will my baseline look like before you start? Ask to see a sample baseline report. If they can\u2019t show one, they probably don\u2019t build one, and without a baseline any later \u201cimprovement\u201d is unverifiable. Do you follow Google Search Essentials? This one comes straight from Google\u2019s hiring guidance. Since AI Overviews and AI Mode draw on the same index as Search, anything that breaks Google\u2019s rules puts your AI visibility at risk too. What results do you expect, and in what timeframe? Also from Google\u2019s list. You want a range and a reason, not a promise. We tell clients to expect directional wins in roughly six to eight weeks and measurable impact by around month three, and we explain what drives each. Will you share every change you make to my site? Google suggests asking this directly. The answer should be an unqualified yes, with a change log you can read without a login to the agency\u2019s own tool. What access do you need during the audit? Google recommends giving read-only Search Console access while you evaluate an agency. If they need full admin rights to your site before you\u2019ve signed anything, ask why. What does your off-site work actually involve? Ask for specifics: which kinds of publications, directories or communities, and how they earn placement. \u201cWe get you mentioned on Reddit\u201d is not a plan. How do you connect AI visibility to leads or revenue? Citations are useful, but you\u2019re paying for business outcomes. Ask how they track AI referral traffic and what they do about the visits that never click through. Can I talk to current clients? Google\u2019s advice is to ask for examples and check references. Talk to someone who has been with them for at least two quarters, and ask whether reporting ever got uncomfortable and how the agency handled it. What happens to my data and accounts if we part ways? Every account, dashboard and tracking setup should be in your name or transferable to you. If the agency owns your analytics property, you\u2019re renting your own history. Write the answers down. You\u2019ll use them in the scorecard further down. What red flags should end the conversation? Walk away from any agency that guarantees citations or placements, sells \u201csecret\u201d AI files as the core of its service, or can\u2019t show you a baseline. Each of those tells you something about how the agency will report to you later. Guaranteed citations or placements Google is direct about this: \u201cNo one can guarantee a #1 ranking on Google.\u201d AI answers are generated fresh, vary by user and phrasing, and change as models update. An agency promising \u201cguaranteed ChatGPT placement\u201d is either measuring something trivial, like your brand name typed as the prompt, or setting up a report that flatters itself. \u201cSecret\u201d or proprietary AI files Some agencies sell special markup, hidden text, or AI-only files as the thing that gets you into AI answers. Google says no special optimizations are needed for AI Overviews and AI Mode. Files like llms.txt can be a reasonable low-cost addition for other AI tools, which we cover in our guide to llms.txt , but they are not a strategy and nobody should be charging you a premium for them. No baseline, no competitors If the first report shows you \u201cnow appearing in AI answers\u201d without a before picture, there\u2019s no way to know what the agency caused. The same goes for reports with no competitor context. Your mention share means one thing when your top competitor trails you and something very different when it\u2019s named in nearly every answer. Activity dressed as outcome \u201cWe published 12 articles and made 200 optimizations\u201d describes effort, not results. Reports should lead with what changed in mentions, citations, traffic and leads, then show the work that plausibly caused it. Shotgun off-site tactics Posting across forums for the sake of volume, sockpuppet accounts, invented author credentials and review schema on content that doesn\u2019t contain reviews all fall in this bucket. Beyond the ethical problem, manufactured signals poison the measurement. If the agency created the citations, the report can\u2019t tell you whether your brand actually earned visibility. How do you compare AI SEO agency proposals? Score each proposal on the same criteria, weight measurement and transparency most heavily, and don\u2019t let price or polish override a weak score on either. The table below is built to paste into a spreadsheet: score each agency 1 to 5 on each line and multiply by the weight. Criterion Weight What a 5 looks like Agency A Agency B Agency C Named AI engines tracked 3 Lists each engine and explains the method Mentions and citations reported separately 3 Separate metrics, with competitor share Baseline before work starts 3 Sample baseline report provided Prompt set refreshed regularly 2 Quarterly review built into the plan Technical and content SEO depth 3 Specific examples of fixing site infrastructure Change log shared with you 3 Every change listed, readable by you Off-site plan is specific 2 Names source types and how placement is earned Ties visibility to leads or revenue 3 Shows AI referral tracking and conversion reporting Realistic timeline with reasoning 2 Ranges, not promises, with the why You own all accounts and data 3 Written into the agreement References from current clients 2 Two or more, willing to take a call No guarantees of placement 3 Says plainly that nobody can guarantee it Two quick notes on using it. First, any agency that scores a 1 on \u201cno guarantees\u201d or \u201cyou own all accounts\u201d should be out regardless of the total. Second, score after the call, not during it, because a confident presenter can make a vague answer sound specific in the moment. It also helps to ask each agency which tools it uses for tracking and why. There are good options at different budgets, and we compare several in our roundup of the best AEO tools. An agency that can explain why it picked its stack, including the limits of that stack, usually understands the measurement problem well. What results should you expect from an AI SEO agency, and when? Expect early directional movement in mentions and citations within a couple of months and clearer business impact around the end of the first quarter, assuming the site\u2019s technical foundation is in reasonable shape. Anyone promising dramatic results in two weeks is guessing, and anyone telling you to wait a full year before you see anything is padding the runway. In our AEO engagements, we typically see directional wins in about six to eight weeks and measurable impact by around month three. That\u2019s a pattern, not a promise. It depends on how much infrastructure work the site needs, how competitive the category is, and how quickly changes can get published. Here\u2019s how I\u2019d think about the first 90 days. Period What should happen What you should see Weeks 1 to 2 Baseline across engines, prompt set agreed, technical and content audit A baseline report and a ranked list of fixes Weeks 3 to 6 Priority technical fixes, rewrites of the pages that should answer your top questions, first off-site outreach A change log and early shifts on specific prompts Weeks 7 to 12 Second wave of content, expanded off-site work, first quarterly review of prompts Mention and citation trends against baseline, AI referral traffic and leads Because AI answers vary, a single run of a single prompt tells you almost nothing. Look for trends across the full prompt set over several weeks. A good agency will tell you which movements it thinks are noise, which is the opposite of a report built to flatter. One last thing: the boring work is usually what moves the numbers. Fixing thin pages, cleaning up heading structure, making each page serve one clear purpose and rewriting key pages to answer questions directly will do more for your AI visibility than any new tactic you saw on LinkedIn this week. If an agency\u2019s plan skips straight to the novel stuff, ask what it plans to do about the foundation. Frequently asked questions Is an AI SEO agency different from a regular SEO agency? It should be a regular SEO agency that also measures and works on AI visibility. AI search on Google uses the same index and the same eligibility rules as Search, so the skills overlap heavily; the differences are in prompt research, mention and citation tracking, and off-site work. Can an agency guarantee my brand will appear in ChatGPT? No. AI answers vary by phrasing, user and model version, and Google\u2019s own hiring advice says no one can guarantee a top ranking. Treat any guarantee as a red flag about how the agency will report to you. How long does AI SEO take to show results? In our engagements, directional wins usually show up in about six to eight weeks, with measurable impact around month three. Sites that need heavy technical cleanup first can take longer. Do I need special AI files or schema to show up in AI Overviews? No. Google says there are no additional requirements or special optimizations needed for AI Overviews or AI Mode beyond being indexed and eligible to show with a snippet. What should I give an agency access to during evaluation? Read-only Search Console access is enough for an audit, which is what Google recommends. Save broader access for after you\u2019ve signed and know who will be making changes. Want to see where you stand first? If you\u2019d like a baseline before you talk to anyone, including us, request a free growth audit . You\u2019ll get 3 to 5 ranked opportunities and a 90-day roadmap in about five business days, and it\u2019s yours to keep whichever agency you choose. MO Marcus O'Dell Director of SEO and AI Search at Sentic Marcus O'Dell is Director of SEO and AI Search at Sentic, where he specializes in answer engine optimization (AEO). He joined Sentic as a paid media manager in 2022 and went on to build the agency's SEO, analytics, web development, and AEO practices. He leads organic and AI search strategy for 35+ client accounts across healthcare, senior living, hospitality, B2B SaaS, and ecommerce, with a focus on technical SEO, structured data, and GA4 measurement. marcusodell.com \u00b7 LinkedIn More from Sentic Keep reading. SEO & AEO How We Moved sentic.io From Webflow to WordPress Without Losing Search November 12, 2026 SEO & AEO Copilot SEO: How to Get Your Brand Cited by Microsoft Copilot November 11, 2026 5 min read SEO & AEO Gemini SEO: How to Get Your Brand Cited by Google Gemini November 11, 2026 6 min read Like this thinking? See how it shows up in client work. Get a free growth audit. A senior strategist will analyze your current marketing and send a teardown with 3 to 5 specific opportunities. Request your free audit Or schedule a call"
+ }
+]
