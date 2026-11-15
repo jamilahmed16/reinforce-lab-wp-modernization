@@ -141,3 +141,19 @@ Notes (INFERENCE):
 - Cloudways pricing: the SERP is garbage (spam subdomains), Cloudways itself is missing, and the top domain authority averages 5. A real, dated Cloudways pricing section or page could take this. VERIFY the real prices from Cloudways first and do not copy the spam results.
 - MCP server hosting (KD 32, 170 US): mix of developer docs (Cloudflare, Microsoft, Render) and tiny sites (AS 7 mcphosting.io). Pair with "cloudways mcp" 210 and "hostinger mcp" 110 for an AI-hosting guide.
 - Still missing Semrush SERPs: hostinger review, cloudways review, hosting.com review, best wordpress hosting. (Kinsta review is now in.)
+
+## Batch 10 (5 keywords)
+| Keyword | Vol | KD | Intent | Top 10 (order) |
+|---|---|---|---|---|
+| hostinger vs bluehost | 480 | 24 | Commercial | Easy. 1 Reddit (r/Hosting), 2 OnlineMediaMasters, 3 hostinger.com/compare, 4 Cybernews, 5 WPBeginner, 6 HostAdvice, 7 MyBestWebsiteBuilder (AS 29), 8 Reddit, 9 WebsiteBuilderExpert, 10 ThemeIsle. Variations 133, 1.3K total: "bluehost vs hostinger" 480 (KD 28), "bluehost vs hostinger for wordpress" 20. CPC $25.30 (highest of the comparison pages). Bluehost runs an ad "Hostinger vs Bluehost: Complete 2026 Comparison Guide". Global 1.4K. |
+| best managed wordpress hosting | 2,400 | 59 | Commercial | 1 Reddit (r/managedwphost), 2 HostingAdvice, 3 WPBeginner, 4 hostinger.com/wordpress-hosting, 5 HostingStep, 6 GoDaddy, 7 G2, 8 WebHostingCat, 9 wordpress.org/download (irrelevant), 10 Docker Hub (irrelevant). Variations 468, 4.1K total: "best wordpress managed hosting" 210 (KD 69), "best managed wordpress hosting australia" 140 (KD 47), "providers" 90. Questions 5, 60 total. CPC $26.27. Needs 153 referring domains. 11 ads, Hostinger among them. |
+| best wordpress hosting | 4,400 | 60 | Commercial | 1 HostingStep (AS 38), 2 hostinger.com/wordpress-hosting, 3 Reddit (r/ProWordPress), 4 WPBeginner, 5 ThemeIsle (cheap-wordpress-hosting), 6 Experte, 7 CNET, 8 YouTube, 9 Pantheon (learning-center), 10 YouTube. Variations 2.8K, 37.6K total: "best managed wordpress hosting" 2.4K, "best web hosting for wordpress" 1.6K (KD 71), "best hosting for wordpress" 1.3K (KD 21), "best hosting company for wordpress" 720. Questions 109, 1.1K total. Needs 149 referring domains. CPC $26.40. 20 ads ("Recommended by WordPress.org", Hostinger). Global 8.6K. |
+| liquid web review | 390 | 61 | Commercial | 1 Trustpilot, 2 Reddit ("liquid web: it's a hedge fund with a router"), 3 CatsWhoCode (coupon spam site, AS 36), 4 HostingAdvice, 5 G2, 6 YouTube, 7 WebsitePlanet, 8 HostAdvice, 9 WhoIsHostingThis, 10 PCMag. Variations 126, 1.9K total: "liquid web reviews" 320, "liquid web hosting review" 90. CPC $37.21 (highest in the set). Needs 83 referring domains. |
+| cloudways mcp | 210 | 12 | Informational | Very easy. Cloudways owns #1 (support article), #2 (what-is-mcp), #3 (mcp-cloud-agency-use-cases) and #8. Others: mcpmarket.com, mcpservers.org, x.com, AlohaPixel, LobeHub (x2). Only 3 variations, 220 total. CPC $38.95 (very high). Hostinger runs an ad "MCP VPS hosting". |
+
+Notes (INFERENCE):
+- All 4 Tier 1 review keywords are now in except hostinger review, cloudways review, hosting.com review.
+- Hostinger vs Bluehost: CPC $25.30 means advertisers pay heavily. Easy KD 24 with a thin top 10. High value for the effort.
+- Best WordPress hosting is the biggest commercial prize (4.4K US, 8.6K global, 37.6K variation volume, CPC $26.40) but needs 149 referring domains; a long-term target. Hostinger ranks at #2 with its own page.
+- Liquid Web review is a CPC outlier ($37.21): hard to rank (needs 83 domains) but the Reddit "hedge fund with a router" thread shows people want an honest take. Page should cover the managed hosting positioning and the Nexcess merger plainly.
+- Cloudways MCP: Cloudways dominates. Only a short section; the AI-hosting hub is the right home.
