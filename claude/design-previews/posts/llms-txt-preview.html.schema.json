@@ -1,0 +1,213 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "llms.txt is a proposed Markdown file at the root of a website that gives language models a short guide to the site and links to its best pages. It is not a standard. Google says Search does not use it, Ahrefs found 97% of llms.txt files got no requests in a month, and SE Ranking found no link to citations. It is cheap to add, but do access, readable pages and clear answers first.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "llmstxt.org: The /llms.txt file (Jeremy Howard, 2024, updated 2026)",
+    "url": "https://llmstxt.org/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guide to optimizing for generative AI features on Google Search",
+    "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: We analyzed 137K sites, 97% of llms.txt files never get read (June 2026)",
+    "url": "https://ahrefs.com/blog/llmstxt-study/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "SE Ranking: LLMs.txt, why brands rely on it and why it doesn't work (2025)",
+    "url": "https://seranking.com/blog/llms-txt/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Search Engine Journal: LLMs.txt does not boost AI citations, new analysis finds (November 2025)",
+    "url": "https://www.searchenginejournal.com/llms-txt-shows-no-clear-effect-on-ai-citations-based-on-300k-domains/561542/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "OpenAI: Overview of OpenAI crawlers",
+    "url": "https://developers.openai.com/api/docs/bots"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Vercel: The rise of the AI crawler (December 2024)",
+    "url": "https://vercel.com/blog/the-rise-of-the-ai-crawler"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Aggarwal et al.: GEO, Generative Engine Optimization (KDD 2024)",
+    "url": "https://arxiv.org/abs/2311.09735"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "SparkToro: AIs are highly inconsistent when recommending brands or products (2026)",
+    "url": "https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is llms.txt?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "llms.txt is a proposed plain-text file, written in Markdown and placed at /llms.txt, that gives language models a short summary of a site and links to its most useful pages. Jeremy Howard proposed it in September 2024. It is not an official web standard."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is llms.txt a standard?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. It is a proposal published at llmstxt.org. No major AI platform has committed to reading it, and Google says Google Search does not use it."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does llms.txt work?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found no evidence that it improves citations. SE Ranking's analysis of nearly 300,000 domains found no link, and Ahrefs found that 97% of llms.txt files in a 137,210-domain sample received no requests in May 2026. Both have limits, so test it yourself."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do ChatGPT, Claude and Gemini read llms.txt?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Evidence is thin. Ahrefs saw some requests from GPTBot and Claude Code, but a fetch is not a read, and AI bots did not look for missing files. Google says Search ignores it. OpenAI's documentation focuses on OAI-SearchBot access."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I create an llms.txt file?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Pick 10 to 30 useful pages, write a one or two sentence summary, list links under clear headings with short notes, keep it accurate, publish it at yoursite.com/llms.txt and update it when facts change. A generator can draft it, but read the output."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Where do I put llms.txt?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "At the root of your site, for example yoursite.com/llms.txt, or at a subpath such as /docs/llms.txt to cover only that section. It should return a normal 200 response and show as plain text."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does llms.txt replace robots.txt?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. llms.txt guides content discovery, but it does not allow or block crawlers. Use robots.txt and your firewall settings for access."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Will llms.txt hurt my SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google says that having an llms.txt file will neither help nor harm your visibility in Google Search. The main risk is a stale file that lists wrong prices or removed pages."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Should I use an llms.txt generator?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "You can, since the file is short and tools can draft it from your sitemap. Read the result and remove thin, old or private pages. Writing it by hand takes little time and lets you choose the pages that matter."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Who should add llms.txt?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Documentation and API sites are the best candidates, since coding tools may read it. For most marketing sites it is optional. Fix crawler access, readable HTML, answer-first pages, consistent facts and mentions first."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: What Is llms.txt and Should You Add One?",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "llms.txt",
+    "description": "A proposed Markdown file that gives language models a short guide to a site and links to its best pages.",
+    "url": "https://reinforcelab.online/preview/#term-llms-txt"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Markdown",
+    "description": "A simple text format that uses symbols such as # and - for headings and lists.",
+    "url": "https://reinforcelab.online/preview/#term-markdown"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Crawler",
+    "description": "A program that fetches web pages for a search index or an AI tool.",
+    "url": "https://reinforcelab.online/preview/#term-crawler"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "robots.txt",
+    "description": "A file that tells crawlers which parts of a site they may fetch.",
+    "url": "https://reinforcelab.online/preview/#term-robots-txt"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Agent",
+    "description": "An AI tool that takes actions or reads pages on a user's behalf.",
+    "url": "https://reinforcelab.online/preview/#term-agent"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Citation",
+    "description": "A link to your page shown as a source in an AI answer.",
+    "url": "https://reinforcelab.online/preview/#term-citation"
+   }
+  ]
+ }
+]

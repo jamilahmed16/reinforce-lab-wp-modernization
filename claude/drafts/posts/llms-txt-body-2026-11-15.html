@@ -1,0 +1,140 @@
+<p>llms.txt is a proposed plain-text file, written in Markdown and placed at the root of a website, that gives language models a short guide to the site and links to its most useful pages. It is not a web standard, and the evidence so far shows that few AI tools read it. Google says Google Search does not use it, a 2026 Ahrefs study found that 97% of llms.txt files received no requests in a month, and an SE Ranking study found no link between having the file and being cited. Adding one is cheap and harmless, but it should come after the basics that do move results.</p>
+<p>This guide explains what llms.txt is, who reads it, what the data shows, whether you should add one, and how to write one if you decide to. It includes a sample file, a way to test it and a worked example. We cite only sources we could read at the publisher, and we state the limits of each study.</p>
+
+<h2>What is llms.txt?</h2>
+<p>The llms.txt file was proposed by Jeremy Howard in September 2024. The proposal calls for a Markdown file at <code>/llms.txt</code> on a website, or at a subpath such as <code>/docs/llms.txt</code>, that offers brief background, guidance and links to detailed pages. The idea is to give an AI model or agent a clean, short map of the site, so it does not have to wade through navigation, scripts and ads in ordinary HTML pages.</p>
+<p>The proposal also suggests that pages with information agents might need provide a clean Markdown version at the same address with <code>.md</code> added, and that sites use standard link relations to point to those files. The proposal was updated in 2026, so check the current text at llmstxt.org if you build one.</p>
+
+<h2>What does an llms.txt file contain?</h2>
+<p>The proposed format is simple. It has these parts, in order:</p>
+<ul>
+<li>A heading of level one with the name of the site or project. This is the only required part.</li>
+<li>A quote block with a short summary of the site, containing the key facts needed to understand the rest of the file.</li>
+<li>Optional paragraphs or lists with more detail on how to read the files.</li>
+<li>Optional sections, each with a level-two heading, that hold lists of links. Each list item has a Markdown link and, if you like, a colon and a short note.</li>
+<li>An optional section named "Optional" for secondary links that an agent can skip when it needs less context.</li>
+</ul>
+<p>Here is a short sample for a made-up company:</p>
+<pre><code># Example Co
+
+&gt; Example Co makes scheduling software for medical clinics in the United States. Plans start at a fixed monthly price per location.
+
+Key facts: founded in 2018, based in Austin, Texas. Support is available on weekdays.
+
+## Product
+
+- [Features](https://www.example.com/features/): What the software does and who it is for
+- [Pricing](https://www.example.com/pricing/): Plans, prices and what each includes
+- [Integrations](https://www.example.com/integrations/): Systems it connects to
+
+## Help
+
+- [Setup guide](https://www.example.com/help/setup/): Step-by-step setup for a new clinic
+- [Security](https://www.example.com/security/): How patient data is protected
+
+## Optional
+
+- [Blog](https://www.example.com/blog/): Articles and updates</code></pre>
+
+<h2>Who reads llms.txt?</h2>
+<p>This is the key question, and the answer today is "very few tools." We found three sources.</p>
+<ul>
+<li><strong>Google says Google Search does not use it.</strong> In its guide to generative AI features, Google lists llms.txt files among things you do not need, because Google Search itself does not use them. It adds that creating one is fine for other services that use it, and will neither harm nor help your visibility in Google Search.</li>
+<li><strong>Almost no one requests it.</strong> Ahrefs studied 137,210 domains in its Web Analytics product that received traffic in May 2026. It found that 28% published an llms.txt file, and that 97% of those files received no requests at all that month. Of the requests that did arrive, 96% came from bots. Among named AI tools, GPTBot made the most requests, and Claude Code was second. Ahrefs also found that AI bots never asked for llms.txt files that did not exist, so publishing one does not put you on an AI radar. Limits: Ahrefs customers skew technical, so the 28% adoption is an upper bound, a fetch does not prove a read, and the study did not check whether files followed the specification.</li>
+<li><strong>No measurable link to citations.</strong> SE Ranking analyzed nearly 300,000 domains. It found llms.txt on 10.13% of them, with adoption about the same across low, mid and high traffic sites. It reported no correlation between having the file and how often a domain was cited by AI tools, and its model got slightly more accurate when it removed the llms.txt factor. Limits: it is an observational study of one dataset, it has no crawler logs, and the authors call the results context-dependent. It bounds the size of any effect and does not prove that no effect exists for any site.</li>
+</ul>
+<p>The two studies used different methods and data, and they point the same way. Neither one shows that major AI search tools use the file to decide what to cite.</p>
+
+<h2>Does llms.txt help you get cited by AI tools?</h2>
+<p>We found no evidence that it does. OpenAI's documentation tells site owners to allow OAI-SearchBot and to allow requests from its published IP addresses. It does not mention llms.txt as a factor. ChatGPT search, Google's AI features and Perplexity retrieve pages through their own search systems, and a separate file that lists your best pages does not change which pages those systems retrieve. That is our reading, and the studies fit it, but no one outside the AI companies can say for certain.</p>
+<p>There is one group where the file may have more use: tools that read documentation. Ahrefs found that Claude Code was the second most frequent named AI fetcher of llms.txt files, ahead of the AI search bots. That suggests developer tools and coding agents may look for the file when working with documentation. This is an inference from request counts, so treat it as a lead to test on a documentation site, not as proof.</p>
+
+<h2>How is llms.txt different from robots.txt and a sitemap?</h2>
+<p>The three files do different jobs, and only two of them are well established.</p>
+<table>
+<thead><tr><th>File</th><th>Job</th><th>Who reads it</th></tr></thead>
+<tbody>
+<tr><td>robots.txt</td><td>Tells crawlers which parts of a site they may fetch</td><td>Search and AI crawlers that honor it, such as Googlebot, OAI-SearchBot and ClaudeBot</td></tr>
+<tr><td>XML sitemap</td><td>Lists the URLs you want search engines to find</td><td>Search engines such as Google and Bing</td></tr>
+<tr><td>llms.txt</td><td>Offers a short guide and curated links for language models</td><td>No major AI platform has committed to it. A few bots and tools fetch it.</td></tr>
+</tbody>
+</table>
+<p>If a page is blocked in robots.txt, listing it in llms.txt does not open it. If a page is missing from your sitemap, listing it in llms.txt does not make a search engine index it. So the file cannot fix access or indexing problems. Those need their own checks.</p>
+
+<h2>What do the studies prove, and what do they not?</h2>
+<p>It helps to read the two studies with care, since each answers a different question.</p>
+<ul>
+<li><strong>Ahrefs measured requests.</strong> It asked who fetches llms.txt files. The answer was almost no one in the month it studied. It could not say whether a fetch changed an answer, and it noted that its figures are ceilings on real use.</li>
+<li><strong>SE Ranking measured an outcome.</strong> It asked whether domains with the file were cited more. It found no link. It could not look at crawler logs, so it could not say whether retrieval bots ever requested the files. A fair reading is that any effect is too small to see in that data.</li>
+<li><strong>Neither covers the future.</strong> AI platforms may change what they read. The proposal itself was updated in 2026. If a major platform announces support, the advice here should change, and we would update this guide.</li>
+</ul>
+<p>The honest summary is that the file has no proven benefit today and a small, easy cost.</p>
+
+<h2>What about Markdown versions of your pages?</h2>
+<p>The proposal goes further than a single file. It suggests that pages with information agents might need offer a clean Markdown copy, at the same address with <code>.md</code> added, and that sites point to those copies with standard link relations or HTTP headers. This helps most when a page is hard to read, for example when it is full of scripts, tabs or widgets. For ordinary articles that already render clean HTML, the benefit is smaller. If you try it, serve the same content as the page, since showing a model different facts from what people see risks trust problems. Test on a small set of pages first, and check logs to see whether anything fetches them.</p>
+
+<h2>Should you add an llms.txt file?</h2>
+<table>
+<thead><tr><th>Type of site</th><th>Our view</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>Developer documentation or API site</td><td>Worth trying</td><td>Coding tools and agents may read it, and docs are already structured</td></tr>
+<tr><td>Software company marketing site</td><td>Optional</td><td>Low cost, no proven effect. Do access, answers and facts first.</td></tr>
+<tr><td>Local or service business</td><td>Low priority</td><td>AI answers rely more on listings, reviews and clear pages</td></tr>
+<tr><td>Online store</td><td>Low priority</td><td>Product data, feeds and reviews matter more</td></tr>
+<tr><td>Publisher or blog</td><td>Optional</td><td>No evidence of a citation effect</td></tr>
+</tbody>
+</table>
+<p>If you add one, the risks are small: a few hours of work, and the file can go out of date. A stale file that points to removed pages or old prices adds wrong facts to a place that tools may read. So add it only if someone will keep it current.</p>
+
+<h2>How do you create an llms.txt file?</h2>
+<ol>
+<li><strong>Pick your most useful pages.</strong> Choose 10 to 30 pages that explain who you are, what you offer, prices, help and key policies.</li>
+<li><strong>Write the summary.</strong> One or two plain sentences with the key facts. Use the same name and description you use everywhere else.</li>
+<li><strong>List the links.</strong> Group them under clear headings, with a short note for each that says what the page contains.</li>
+<li><strong>Keep it short and true.</strong> Do not add claims you would not put on your site. Do not stuff it with keywords.</li>
+<li><strong>Publish it at the root.</strong> Make it available at <code>yoursite.com/llms.txt</code> with a normal 200 response. Open it in a browser to check that it shows as plain text.</li>
+<li><strong>Keep it current.</strong> Review it whenever you change prices, services or key pages.</li>
+</ol>
+<p>Many "llms.txt generator" tools can draft a file from your sitemap. Because the file is short, writing it by hand takes little time, and it lets you choose which pages matter. If you use a generator, read the output and remove pages you do not want promoted, such as thin or outdated ones.</p>
+<p>The file does not control access. It is not a replacement for robots.txt. To allow or block AI crawlers, use robots.txt and your firewall settings. Our <a href="/robots-txt-for-seo-a-complete-guide/">robots.txt guide</a> explains the file.</p>
+
+<h2>How do you test whether llms.txt does anything on your site?</h2>
+<p>Treat it as an experiment with a clear test.</p>
+<ol>
+<li><strong>Check your logs.</strong> After you publish, look at your server or CDN logs for requests to <code>/llms.txt</code>. Note the user agents. If nothing asks for it in a month, you have your answer for now.</li>
+<li><strong>Run a prompt baseline first.</strong> Before you publish, run 10 to 15 buyer questions three times in ChatGPT, Gemini and Perplexity, and record whether you are named and cited. Repeat after 60 days. SparkToro found less than a 1 in 100 chance that the same prompt returns the same list of brands twice, so a change must be large and repeated to mean anything.</li>
+<li><strong>Change one thing at a time.</strong> If you also rewrite pages in the same month, you cannot tell which change did what.</li>
+</ol>
+<p>Our guide to <a href="/ai-brand-visibility/">checking if AI tools mention your brand</a> gives a 30-minute version of this test.</p>
+
+<h2>What should you do before llms.txt?</h2>
+<p>These steps have better support:</p>
+<ol>
+<li><strong>Let search crawlers in.</strong> OpenAI says sites that opt out of OAI-SearchBot will not be shown in ChatGPT search answers.</li>
+<li><strong>Make pages readable in HTML.</strong> In December 2024, Vercel found that none of the major AI crawlers it tested rendered JavaScript.</li>
+<li><strong>Answer questions first, with sources.</strong> A Princeton-led test of nine content changes found that adding citations, quotations and statistics lifted visibility by up to 40%.</li>
+<li><strong>Keep your facts consistent</strong> across your site and your profiles.</li>
+<li><strong>Earn honest mentions</strong> on the sites that AI answers cite.</li>
+</ol>
+<p>Our guides to <a href="/generative-engine-optimization/">generative engine optimization</a> and <a href="/how-to-rank-in-ai-overviews/">ranking in AI Overviews</a> cover these steps in detail.</p>
+
+<h2>Worked example: a software company with a docs site</h2>
+<p>This is an illustration, not a client result. Imagine a company with a marketing site and a separate documentation site for its API. Its docs site has 300 pages, and developers often ask coding assistants how to use it.</p>
+<p>The team first checks that crawlers can reach the docs, and that pages render as HTML. It then writes an llms.txt file for <code>/docs/</code> with a two-sentence summary and 25 links in four groups: quick start, authentication, API reference and troubleshooting. It adds Markdown versions of the 25 pages. For the marketing site, it decides not to add a file yet, because it has no evidence that the file would help there.</p>
+<p>After 30 days the team reads its logs for requests to the docs file and notes which user agents asked. It also asks three coding assistants the same 10 setup questions before and after, and records whether the answers use the right steps. It keeps the sheet whatever the result. The file stays only if the logs and tests show that something uses it.</p>
+
+<h2>What are the common mistakes?</h2>
+<ul>
+<li><strong>Expecting a ranking or citation boost.</strong> No study we found shows one.</li>
+<li><strong>Treating it as robots.txt.</strong> It does not allow or block crawlers.</li>
+<li><strong>Listing everything.</strong> A long file defeats the purpose of a short guide.</li>
+<li><strong>Letting it go stale.</strong> Old prices and removed pages add wrong facts.</li>
+<li><strong>Publishing a generator's output without a check.</strong> Remove thin, old or private pages.</li>
+<li><strong>Doing it before the basics.</strong> Access, readable pages and clear answers come first.</li>
+</ul>
+
+<h2>Our interest in this topic</h2>
+<p>Reinforce Lab sells search and AI search services. We keep an llms.txt file on our own test site as a low-cost experiment, and we do not expect it to move results. Nothing here is paid placement. Jamil Ahmed, who wrote this guide, is a Semrush Ambassador, and Reinforce Lab uses affiliate links for some tools. Read our <a href="/ftc-disclosure/">FTC and affiliate disclosure</a>. Our <a href="/services/ai-search-optimization/">AI search optimization service</a> focuses on the steps with better support, and you can <a href="/get-diagnostic/">get your free diagnostic</a>.</p>
+
+<h2>Final thoughts</h2>
+<p>llms.txt is a small, optional idea with little proof behind it so far. Google says it does not use the file, and two large studies found it either unread or unrelated to citations. If you run a documentation site, try it and test it. For most other sites, fix access, readable pages, clear answers and honest mentions first, and revisit llms.txt if the evidence changes.</p>
