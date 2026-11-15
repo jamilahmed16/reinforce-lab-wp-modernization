@@ -1,0 +1,223 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "LLM SEO is the work of making your brand and pages easy for large language models to find, understand and cite. For Google it is ordinary SEO plus clear facts, answer-first pages with sourced evidence, a presence on the sites AI answers cite, and a monthly check of what the models say about you. No one can promise a place in AI answers.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guide to optimizing for generative AI features on Google Search",
+    "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: AI features and your website",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Console Help: Generative AI performance report (Search)",
+    "url": "https://support.google.com/webmasters/answer/16984139"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Aggarwal et al.: GEO, Generative Engine Optimization (KDD 2024)",
+    "url": "https://arxiv.org/abs/2311.09735"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: What we actually know about optimizing for LLM search (2025)",
+    "url": "https://ahrefs.com/blog/llm-search/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "SparkToro: AIs are highly inconsistent when recommending brands or products (2026)",
+    "url": "https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Vercel: The rise of the AI crawler (December 2024)",
+    "url": "https://vercel.com/blog/the-rise-of-the-ai-crawler"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "OpenAI: Overview of OpenAI crawlers",
+    "url": "https://developers.openai.com/api/docs/bots"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Anthropic: Does Anthropic crawl data from the web, and how can site owners block the crawler?",
+    "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Bing Webmaster Blog: Introducing AI Performance in Bing Webmaster Tools (February 2026)",
+    "url": "https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Semrush: LLM optimization (LLMO)",
+    "url": "https://www.semrush.com/blog/llm-optimization/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is LLM SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "LLM SEO is improving how often and how accurately large language models mention your brand, recommend your products and cite your pages. For Google it is ordinary SEO plus clear facts, sourced evidence and a presence on sites that AI answers cite."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is LLM optimization (LLMO)?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "LLMO is another name for the same work. Writers also use GEO and AEO. Google says that, from its point of view, optimizing for generative AI search is still SEO."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How is LLM SEO different from traditional SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Traditional SEO aims for rankings and clicks. LLM SEO aims to be named and cited in an answer. They share the same base: crawlable pages, clear content and trust. LLM SEO adds fact consistency, third-party mentions and measurement across AI tools."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do LLMs choose which sources to cite?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The companies do not publish the rules. Google says its AI features use retrieval and query fan-out, where one question is split into related searches. In practice, pages that can be crawled, answer the question clearly, carry sources and are backed by other sites seem to do better."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does adding statistics and sources help?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "In one controlled test it did. Princeton-led researchers tested nine content changes on a 10,000-query benchmark and reported that adding citations, quotations and statistics raised visibility by up to 40%. It is a 2024 study and results varied by domain."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need an llms.txt file?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google says Search does not use llms.txt and that having one will neither help nor harm your Google visibility. Other services may read it, so adding one is optional. Fix access, facts and content first."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How long does LLM SEO take to work?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No study we found gives a reliable time. Access and fact fixes can show up in retrieval-based answers within weeks, while outside mentions and new content take longer. Judge progress by repeating the same prompt test."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What are the best LLM SEO tools?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "You can start with no paid tool: a prompt spreadsheet, Search Console's Generative AI performance report and Bing Webmaster Tools' AI Performance report. SEO suites and stand-alone trackers help at scale. Test any tool against a hand baseline."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is LLM SEO useful for service businesses?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes, when buyers ask specific questions such as who does a job in their area or what it costs. Clear pages with who you serve, where, what you do and a price range, plus accurate directory listings, give models something to quote."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need an LLM SEO agency?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Not to start. Hire one when you lack time, need developer fixes or need outreach. Ask for the prompt list, raw answers, a source map and a ranked list of fixes, and be wary of promises of placement."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: LLM SEO: What It Is and How to Optimize for LLMs (LLMO)",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "LLM",
+    "description": "A large language model, the kind of AI behind ChatGPT, Gemini and Claude.",
+    "url": "https://reinforcelab.online/preview/#term-llm"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "LLM SEO (LLMO)",
+    "description": "Work that helps language models find, understand and cite your brand and pages.",
+    "url": "https://reinforcelab.online/preview/#term-llm-seo-llmo"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Retrieval",
+    "description": "When a model searches the web for fresh pages before it writes an answer.",
+    "url": "https://reinforcelab.online/preview/#term-retrieval"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Query fan-out",
+    "description": "One question split into several related searches to build a fuller answer.",
+    "url": "https://reinforcelab.online/preview/#term-query-fan-out"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Citation",
+    "description": "A link to your page shown as a source in an AI answer.",
+    "url": "https://reinforcelab.online/preview/#term-citation"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Entity",
+    "description": "A clearly named thing, such as a company, person or product, that a model can recognize.",
+    "url": "https://reinforcelab.online/preview/#term-entity"
+   }
+  ]
+ }
+]
