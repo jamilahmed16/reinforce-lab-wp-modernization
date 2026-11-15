@@ -1,0 +1,208 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "An AI visibility score is a single number, usually 0 to 100, built from how often AI answers name your brand, link to your site and place you ahead of competitors. There is no standard formula, so scores from different tools cannot be compared. Report the parts with their denominators, repeat runs because answers vary, and read the score as a trend from one tool.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "RankRaft docs: Visibility score and metric formulas",
+    "url": "https://docs.rankraft.ai/analytics/visibility/visibility-score"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "AnswerixAI docs: How the AI Visibility score works",
+    "url": "https://answerixai.com/docs/concepts/visibility-scoring"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "cloro: Leaderboard methodology",
+    "url": "https://cloro.dev/ai-visibility/methodology/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "BugViso: AI visibility score, how to measure it, parts and weights (October 2026)",
+    "url": "https://bugviso.com/blog/ai-visibility-score"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Am I Cited: How is an AI visibility score actually calculated? (August 2026)",
+    "url": "https://www.amicited.com/blog/how-ai-visibility-score-is-calculated/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Verticality: How to measure AI visibility (October 2026)",
+    "url": "https://www.verticality.co/blog/how-to-measure-ai-visibility/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "MentionOwl: Understanding your AI visibility score (October 2026)",
+    "url": "https://www.mentionowl.com/blog/understanding-your-ai-visibility-score-a-metric-by-metric-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "SparkToro: AIs are highly inconsistent when recommending brands or products (2026)",
+    "url": "https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is an AI visibility score?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "A single number, usually 0 to 100, that a tool builds from how often AI answers name your brand, link to your site and place you ahead of competitors, across a fixed set of questions. Each tool uses its own formula."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is the AI brand visibility score?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It is another name for the AI visibility score. It summarizes mentions, citations and sometimes share of voice, position and sentiment for your brand across AI answers to a fixed prompt list."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How is an AI visibility score calculated?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Tools count the answers that name you, the answers that cite your domain and the prompts where you appear, then weight them. RankRaft publishes 0.45 mention rate, 0.35 citation rate and 0.20 prompt coverage. AnswerixAI publishes 0.6, 0.25 and 0.15 for position."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is there a standard formula for an AI visibility score?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Vendors choose their own inputs and weights, and some do not publish them. A 40 from one tool is not the same measurement as a 40 from another, so only compare scores from the same tool and prompt set."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is a good visibility score on AI platforms?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found no reliable public benchmark. A good score depends on the prompts, engines, formula and competitors. Compare yourself with competitors in your own test and with your own baseline over time."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is AI visibility?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "How often and how accurately AI tools such as ChatGPT, Gemini, Perplexity and Google's AI Overviews name your brand, link to your site and describe you when people ask questions about your field."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How accurate is an AI visibility score?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It is directional. SparkToro found under a 1 in 100 chance of the same brand list twice for one prompt. RankRaft's formula gives about a 6 point margin at a 30% mention rate and 210 answers, and real uncertainty may be larger."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Should branded prompts count in an AI visibility score?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Usually not. A question that names you is answered with your name almost every time. BugViso reports that all 120 branded answers in its data named the brand, so it counts unbranded prompts only."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I calculate my own AI visibility score?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Write 10 to 15 unbranded buyer questions, run each three times in each engine, record mentions, citations and competitors, then count the parts with denominators. Combine them only if you publish fixed weights."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is AI brand monitoring?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Software that runs your prompts on a schedule, stores the answers and shows trends and alerts. It helps when a spreadsheet is no longer enough, and still needs a person to act on the findings."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: AI Visibility Score: What It Measures and How to Calculate One",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "AI visibility score",
+    "description": "A number, usually 0 to 100, that summarizes how often AI answers name or cite your brand.",
+    "url": "https://reinforcelab.online/preview/#term-ai-visibility-score"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Mention rate",
+    "description": "The share of answers that name your brand.",
+    "url": "https://reinforcelab.online/preview/#term-mention-rate"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Citation rate",
+    "description": "The share of answers that link to your site as a source.",
+    "url": "https://reinforcelab.online/preview/#term-citation-rate"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Prompt coverage",
+    "description": "The share of prompts where your brand appears at least once.",
+    "url": "https://reinforcelab.online/preview/#term-prompt-coverage"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Share of voice",
+    "description": "Your mentions divided by all brand mentions in your set.",
+    "url": "https://reinforcelab.online/preview/#term-share-of-voice"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Margin",
+    "description": "The range within which a measured rate may move because of chance.",
+    "url": "https://reinforcelab.online/preview/#term-margin"
+   }
+  ]
+ }
+]

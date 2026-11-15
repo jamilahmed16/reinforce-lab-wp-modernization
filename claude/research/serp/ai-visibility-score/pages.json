@@ -1,0 +1,802 @@
+[
+ {
+  "url": "https://www.amicited.com/blog/how-ai-visibility-score-is-calculated/",
+  "title": "How Is an AI Visibility Score Actually Calculated? | Am I Cited",
+  "words": 1152,
+  "headings": [
+   [
+    "h2",
+    "Key Takeaways"
+   ],
+   [
+    "h2",
+    "What the Score Is Actually Measuring"
+   ],
+   [
+    "h3",
+    "Ready to Monitor Your AI Visibility?"
+   ],
+   [
+    "h2",
+    "The Components That Typically Feed the Formula"
+   ],
+   [
+    "h2",
+    "Putting It Together"
+   ],
+   [
+    "h3",
+    "Stay Updated on AI Visibility Trends"
+   ],
+   [
+    "h2",
+    "Why Two Honest Tools Can Disagree"
+   ],
+   [
+    "h2",
+    "What Actually Matters More Than the Number"
+   ]
+  ],
+  "text": "Check your AI visibility score on two different platforms and there\u2019s a good chance they won\u2019t match, sometimes by a wide margin. That\u2019s not necessarily a bug in either tool. It\u2019s a predictable consequence of there being no industry-standard formula for what \u201cAI visibility\u201d actually means numerically. This guide is a methodology deep-dive on the math behind the number. It assumes you already know what an AI visibility score is and why it matters \u2014 if you\u2019re looking for the underlying brand-building tactics that actually raise these components, that\u2019s where they\u2019re covered; this piece stays focused on how the components combine into the score itself. Key Takeaways There\u2019s no industry-standard formula; most vendors build their score from five weighted components: mention frequency, citation rate, position/prominence, query coverage , and share of voice. A typical weighting looks like roughly 25% mention frequency, 25% citation rate , 20% position, 15% query coverage, and 15% share of voice. Two honest tools can report very different scores for the same brand because they use different weights, prompt sets, platform coverage, and refresh cadence, so cross-vendor comparisons are close to meaningless. The absolute score matters far less than its trend; track your own number on a rolling 30-day average and look at the sub-metrics rather than only the headline figure. Bottom line: Focus on the underlying components rather than a single score. Am I Cited breaks your visibility down by mention rate, citation rate, and share of voice , which makes it easier to see which lever to pull next. What the Score Is Actually Measuring An AI visibility score is a composite metric, typically normalized to a 0-100 scale, that combines how often, how prominently, and how favorably a brand appears across AI-generated answers. Unlike a search ranking, which tracks position for a keyword, this measures something closer to whether the AI actually used you in its answer at all, a binary-ish outcome per query rather than a smooth position. Ready to Monitor Your AI Visibility? Track how AI chatbots mention your brand across ChatGPT, Perplexity, and other platforms. Get Started Contact The Components That Typically Feed the Formula Most vendors build their score from some version of the same five ingredients, even when they weight and label them differently. Mention frequency : the share of tracked prompts where your brand appears at all. Mention Frequency = (Prompts where brand appears / Total prompts tested) \u00d7 100 If your brand shows up in 62 of 100 tracked prompts, that\u2019s a 62% mention frequency. This is the most basic component and also the noisiest, since AI responses are probabilistic and the same prompt can produce different results run to run. Responsible measurement repeats each prompt several times and averages the outcome rather than trusting a single run. Citation rate : the share of prompts where your content is explicitly used as a source, distinct from simply being named. Citation Rate = (Prompts where brand is cited / Total prompts tested) \u00d7 100 A mention might read \u201cSalesforce is a popular CRM.\u201d A citation reads \u201cAccording to Salesforce\u2019s documentation, their platform integrates with over 1,000 apps,\u201d and typically comes with a link. Citation rates run lower than mention rates in practice, being named is easier to earn than being quoted directly. Position and prominence : where you appear relative to other brands within the same answer. A common approach weights this with an inverse-position formula, first mention scores highest, with each subsequent position worth progressively less. Being the first name in a \u201ctop options\u201d list carries meaningfully more weight than being buried at the bottom of a comparison table. Query coverage : breadth across different query types, informational, comparative, procedural, transactional, rather than just one narrow use case. A brand appearing across the full range of question types a buyer might ask signals broader relevance than one that only shows up for a single query shape. Share of voice : your mentions as a percentage of all brand mentions in the category. Share of Voice = (Your mentions / Total mentions across all brands) \u00d7 100 This normalizes your score against the competitive landscape. A 60% mention frequency sounds strong until you learn your closest competitor averages 75%. Putting It Together A typical weighted formula looks something like: Visibility Score = (Mention Freq. \u00d7 ~25%) + (Citation Rate \u00d7 ~25%) + (Position \u00d7 ~20%) + (Query Coverage \u00d7 ~15%) + (Share of Voice \u00d7 ~15%) Walking through an example: a brand with 58% mention frequency, 42% citation rate, a normalized position score of 72, 80% query coverage, and 28% share of voice would compute to roughly 55-56 on a 0-100 scale, a middling but reasonably competitive result, with the clearest room for improvement in citation rate and share of voice specifically. Stay Updated on AI Visibility Trends Get the latest insights on AI mentions, brand monitoring, and optimization strategies. Why Two Honest Tools Can Disagree Different weights on the same components. One vendor might weight mention frequency at 30% and citation rate at 20%; another might do the reverse. Neither choice is wrong, they just optimize for slightly different definitions of \u201cvisibility.\u201d Different prompt sets. Vendors vary widely in how many prompts they test and whether those prompts are purely non-branded, mixed, or tailored to your specific customer journey. A brand can score well on one platform because the tested prompts happen to align with its strengths, and worse on another testing a different mix. Different platform coverage. A tool tracking only ChatGPT and Perplexity will produce a different number than one that also includes Gemini and Claude, even for the exact same underlying brand. Different refresh cadence. Weekly, biweekly, and real-time measurement all smooth out (or fail to smooth out) natural week-to-week variance differently. None of these differences means one tool is right and another is wrong. It means cross-vendor score comparisons are close to meaningless, while tracking your own trend on a single platform over time is genuinely useful. What Actually Matters More Than the Number The absolute score matters less than its direction. A brand moving from 45 to 55 over a quarter is making real progress regardless of what a competing tool\u2019s scale would call that same movement. Track your own baseline on a rolling 30-day average to smooth out normal week-to-week noise, and look at the sub-metrics rather than only the headline number, since a 65 built mostly from mentions with weak citations tells a different story, and points to different fixes, than a 65 built the other way around. Once you know which component is dragging your score down, the next question is what to actually do about it \u2014 content quality, original data, topical authority, and the other levers that move mention rate and citation rate are covered in AI visibility score: what it is and how to improve it . Found this useful? Pass it on. LinkedIn X Copy link"
+ },
+ {
+  "url": "https://rankbits.com/blog/ai-visibility-score",
+  "title": "AI Visibility Score: Formula, Metrics & Example (2026) \u2014 AI Visibility",
+  "words": 3670,
+  "headings": [
+   [
+    "h2",
+    "The Short Definition"
+   ],
+   [
+    "h2",
+    "Why AI Visibility Score Exists"
+   ],
+   [
+    "h2",
+    "The Core Metrics Behind AI Visibility Score"
+   ],
+   [
+    "h3",
+    "1. Mention Rate"
+   ],
+   [
+    "h3",
+    "2. Citation Rate"
+   ],
+   [
+    "h3",
+    "3. Share of Voice"
+   ],
+   [
+    "h3",
+    "4. Position / Recommendation Rank"
+   ],
+   [
+    "h3",
+    "5. Cross-Engine Coverage"
+   ],
+   [
+    "h3",
+    "6. Source Attribution and Source Diversity"
+   ],
+   [
+    "h2",
+    "A Practical AI Visibility Score Formula"
+   ],
+   [
+    "h2",
+    "Real Example: CodingFleet\u2019s Public RankBits Scan"
+   ],
+   [
+    "h3",
+    "What the score means"
+   ],
+   [
+    "h2",
+    "What Is a Good AI Visibility Score?"
+   ],
+   [
+    "h2",
+    "How to Build a Reliable Prompt Set"
+   ],
+   [
+    "h2",
+    "How Often Should You Measure AI Visibility?"
+   ],
+   [
+    "h2",
+    "Why Mentions and Citations Must Be Tracked Separately"
+   ],
+   [
+    "h2",
+    "AI Visibility Score by Engine"
+   ],
+   [
+    "h2",
+    "How to Improve Your AI Visibility Score"
+   ],
+   [
+    "h3",
+    "1. Fix crawlability first"
+   ],
+   [
+    "h3",
+    "2. Make your entity unambiguous"
+   ],
+   [
+    "h3",
+    "3. Build answer-first pages"
+   ],
+   [
+    "h3",
+    "4. Earn mentions beyond your own website"
+   ],
+   [
+    "h3",
+    "5. Strengthen pages that already get cited"
+   ],
+   [
+    "h3",
+    "6. Attack prompt-level competitor gaps"
+   ],
+   [
+    "h3",
+    "7. Re-scan after every major change"
+   ],
+   [
+    "h2",
+    "Common Mistakes"
+   ],
+   [
+    "h3",
+    "Mistake 1: Treating one answer as proof"
+   ],
+   [
+    "h3",
+    "Mistake 2: Tracking only branded prompts"
+   ],
+   [
+    "h3",
+    "Mistake 3: Ignoring source links"
+   ],
+   [
+    "h3",
+    "Mistake 4: Averaging engines too early"
+   ],
+   [
+    "h3",
+    "Mistake 5: Comparing scores across tools without methodology"
+   ],
+   [
+    "h3",
+    "Mistake 6: Optimizing for traffic only"
+   ],
+   [
+    "h2",
+    "The Executive Dashboard: What to Report Monthly"
+   ],
+   [
+    "h2",
+    "Final Takeaway"
+   ],
+   [
+    "h2",
+    "Sources"
+   ],
+   [
+    "h3",
+    "See how visible your brand is in AI answers"
+   ],
+   [
+    "h2",
+    "Keep reading"
+   ],
+   [
+    "h3",
+    "Google vs Bing for AI Visibility: Same Questions, Different Results (2026 Data)"
+   ],
+   [
+    "h3",
+    "How to Rank on Tavily and Exa, the Search Engines AI Agents Use (2026 Data)"
+   ],
+   [
+    "h3",
+    "Do Paid AI Models Recommend Different Brands? ChatGPT, Gemini and Claude Compared (2026 Data)"
+   ]
+  ],
+  "text": "AI Visibility Score is a 0\u2013100 metric for measuring whether AI engines actually find, mention, cite, and recommend your brand when buyers ask category-relevant questions. It is not the same as SEO visibility. SEO asks, \u201cWhere does my page rank?\u201d AI visibility asks, \u201cDid the answer engine include us in the answer at all?\u201d That distinction matters because discovery is moving into answer interfaces. SparkToro and Similarweb found that 68.01% of US Google searches ended without a click in the first four months of 2026, up from 60.45% in 2024. Search Engine Land\u2019s coverage of Seer Interactive\u2019s 2026 AI Overview CTR update also shows why citations matter: when an AI Overview appears, cited pages get materially more clicks than uncited pages on the same results page. But clicks are only one part of the story. AI engines can mention your brand without linking to you, link to your website without naming your brand, recommend a competitor above you, or describe your product incorrectly. A useful AI Visibility Score has to measure all of those states. This guide gives you a practical scoring framework, the formulas behind the core metrics, and a real example from a public RankBits scan for CodingFleet . Want your own score first? Run your domain through RankBits to see mentions, citations, source attribution, competitors, and prompt-level visibility across ChatGPT, Claude, Gemini, Perplexity, Google AI, and the source engines behind them. The Short Definition AI Visibility Score is a composite score that measures how visible a brand is inside AI-generated answers across a defined set of prompts, engines, and competitors. A serious score should combine at least five signals: Mention rate \u2014 how often the brand is named. Citation rate \u2014 how often the brand\u2019s domain is linked or used as a source. Share of voice \u2014 how often the brand appears relative to competitors. Position or rank \u2014 whether the brand is first, buried, or absent. Cross-engine coverage \u2014 whether visibility exists across multiple engines or only one. There is no single universal industry standard yet. AuthorityTech\u2019s definition, for example, uses a weighted composite of entity resolution, mention rate, citation rate, source authority, and cross-engine consistency. Digital Applied\u2019s AI Share of Voice framework separates mention-based, citation-based, and position-weighted share of voice because the same dataset can produce different answers depending on the formula. That is the key rule: an AI Visibility Score is only meaningful when you know the prompt set, engine set, formula, and date of measurement. Why AI Visibility Score Exists Traditional SEO dashboards were built around a simple model: Old search measurement What it tells you Keyword rank Where your URL appears in search results Impressions How often your result was shown CTR How often users clicked Organic sessions How much traffic search sent Conversions What that traffic did AI search breaks this model. ChatGPT, Gemini, Claude, Perplexity, and Google AI Mode do not present ten equal blue links. They synthesize answers. Sometimes they cite sources. Sometimes they do not. Sometimes they mention a brand without a link. Sometimes they use a source but hide it from visible attribution. Superlines\u2019 2026 AI search statistics make the measurement problem clear: their analysis reported large differences in citation behavior by platform \u2014 Grok at 27.01% citation rate, Perplexity at 13.05%, Google AI Mode at 9.09%, ChatGPT at 0.59%, and Claude at 0% in that dataset. The same report also describes \u201cghost citations,\u201d where an engine links to a site but does not name the brand. Ahrefs\u2019 75,000-brand research adds another layer: AI visibility correlates more strongly with brand mentions across the web than with classic backlink volume. In its AI Overview study, branded web mentions had a 0.664 correlation with AI Overview visibility, while number of backlinks had a weaker 0.218 correlation. In a later cross-platform study, Ahrefs found YouTube mentions had the strongest correlation with visibility across ChatGPT, AI Mode, and AI Overviews, around 0.737. The practical takeaway: you cannot infer AI visibility from SEO rank alone. You need to measure whether the answer itself names, cites, ranks, and frames your brand. The Core Metrics Behind AI Visibility Score 1. Mention Rate Mention rate measures how often an AI answer names your brand. Formula: Mention Rate = (Answers that mention your brand / Total answers tested) \u00d7 100 Example: if you run 100 prompts across five engines and your brand appears in 28 answers, your mention rate is 28%. Mention rate is the most basic signal. It answers: \u201cAre we part of the conversation?\u201d But mention rate alone is not enough. A brand can be named in a weak, negative, inaccurate, or low-position context. It can also be cited without being named. 2. Citation Rate Citation rate measures how often the AI answer links to your domain or uses your site as a visible source. Formula: Citation Rate = (Answers that cite your domain / Total answers tested) \u00d7 100 You can also calculate a stricter version: Mention-Supported Citation Rate = (Answers that both mention your brand and cite your domain / Answers that mention your brand) \u00d7 100 The difference matters. Search layers like Google Search and Bing can cite your pages without \u201cmentioning\u201d the brand in an assistant-style answer. Gemini and Perplexity can also surface what Superlines calls ghost citations \u2014 source links without brand naming. Citation rate answers: \u201cIs our website being used as evidence?\u201d 3. Share of Voice AI Share of Voice measures your presence relative to competitors in the same prompt set. There are two common versions: Mention Share of Voice = (Your brand mentions / All brand mentions in the prompt set) \u00d7 100 Citation Share of Voice = (Your domain citations / All domain citations in the prompt set) \u00d7 100 Digital Applied\u2019s framework makes an important point: mention-based SoV and citation-based SoV can disagree. A brand may be talked about often but rarely linked. Another may be cited as a source but not named in the prose. Share of voice answers: \u201cAre we winning or losing the category conversation?\u201d 4. Position / Recommendation Rank Position measures where your brand appears when an AI answer lists multiple options. A simple scoring method is: Position Score = 100 if position #1 Position Score = 75 if position #2 Position Score = 55 if position #3 Position Score = 35 if position #4\u20135 Position Score = 15 if position #6+ Position Score = 0 if absent This does not need to be universal. What matters is consistency. Being the first recommendation in \u201cbest CRM for startups\u201d is not equivalent to being the seventh brand in a long list. Position answers: \u201cAre we the recommendation, or just an afterthought?\u201d 5. Cross-Engine Coverage Cross-engine coverage measures how many engines include your brand at least once. Formula: Cross-Engine Coverage = (Engines where brand appears / Engines tested) \u00d7 100 This matters because AI engines behave differently. A brand can be strong in Perplexity but invisible in ChatGPT. A brand can be cited by Google Search but ignored by Claude. RankBits tracks this explicitly because relying on one engine creates false confidence. Cross-engine coverage answers: \u201cIs our visibility durable, or dependent on one platform?\u201d 6. Source Attribution and Source Diversity Source attribution asks which pages and domains AI engines use when they mention or cite your brand. Useful breakdowns include: Source metric What it reveals Owned pages cited Which pages on your domain AI engines trust Competitor pages cited Which rival pages are winning evidence slots Third-party sources Which reviews, directories, forums, or publications shape the answer Unique cited pages Whether citations depend on one page or many Source type Blog, homepage, docs, review site, Reddit, YouTube, directory, news, etc. Source attribution answers: \u201cWhy did the engine choose this answer?\u201d A Practical AI Visibility Score Formula If you want a simple scoring model for your own reporting, use this: AI Visibility Score = (Mention Score \u00d7 0.30) + (Citation Score \u00d7 0.25) + (Position Score \u00d7 0.20) + (Cross-Engine Coverage \u00d7 0.15) + (Source Diversity Score \u00d7 0.10) Component Weight Why it matters Mention Score 30% Measures whether AI systems know and name the brand Citation Score 25% Measures whether the brand\u2019s site is used as evidence Position Score 20% Measures prominence inside recommendation-style answers Cross-Engine Coverage 15% Measures durability across multiple AI systems Source Diversity Score 10% Measures whether citations are supported by multiple trusted sources This is not the only valid formula. AuthorityTech suggests a different 25/20/20/20/15 weighting with entity resolution and source authority as explicit components. That is reasonable for enterprise brand measurement. The formula above is designed to be easier for marketing teams to calculate manually. The non-negotiable part is transparency: always disclose your formula. Real Example: CodingFleet\u2019s Public RankBits Scan RankBits has a public demo scan for CodingFleet , an AI-powered coding platform. The scan was run on June 28, 2026 and tested 15 prompts across 10 selected engines/sources, producing 150 engine \u00d7 prompt responses. Here are the top-line metrics from that scan: Metric Value AI Visibility Score 38 / 100 Mention rate 32% Citation rate 52.7% Coverage 150 engine \u00d7 prompt responses Share of voice 10% for codingfleet.com Unique cited pages 523 Total source links 914 Owned cited pages 28 Competitor cited pages 99 The competitive landscape shows CodingFleet ranked #2 in that scan: Rank Brand Score Mention rate Citation rate 1 CodeConvert 42 35.3% 41.3% 2 CodingFleet 38 32% 52.7% 3 Python 28.5 40% 3.3% 4 GitHub Copilot 13.2 22.7% 16% This is a good example of why AI visibility needs multiple metrics. CodingFleet had a higher citation rate than CodeConvert in this scan, but CodeConvert still had the higher overall score because it had stronger category visibility across the tested prompts. Python had the highest mention rate among the top three, but a low citation rate because many engines named Python as a language rather than citing python.org as a commercial source. What the score means A score of 38 does not mean \u201cCodingFleet owns 38% of AI search.\u201d It means that, for this specific prompt set and engine set, CodingFleet had a meaningful but incomplete AI presence. In plain English: AI engines already know and cite CodingFleet for several code-conversion and code-generation prompts. The site has strong source-layer visibility: 28 owned pages were cited. CodingFleet\u2019s citation rate is stronger than its mention rate, which suggests some ghost-citation behavior \u2014 pages are being linked even when the brand is not always named. ChatGPT was the weak engine in this run, with RankBits flagging it as an engine weakness. The immediate opportunity is not \u201cpublish random content.\u201d It is to improve visibility on the exact prompts and engines where competitors win. RankBits\u2019 recommendation engine summarized that as: improve ChatGPT visibility with structured content, review prompts where CodeConvert wins, and defend pages that already earn citations. This is why a scan matters before optimization. Without prompt-level data, you would not know whether to work on Perplexity, Claude, ChatGPT, Google AI, third-party mentions, or owned pages. Run your own RankBits scan \u2192 What Is a Good AI Visibility Score? There is no universal benchmark because the score depends on your category, prompt set, competitors, and engines. A local law firm, ecommerce brand, developer tool, and Fortune 500 bank should not be judged on the same absolute scale. Use this as a directional rubric inside the same measurement system : Score range Interpretation What it usually means 0\u201310 Invisible AI engines rarely mention or cite you, even on relevant prompts 10\u201325 Weak Some brand recognition, but competitors dominate most answers 25\u201345 Emerging You appear on important prompts, but coverage is inconsistent 45\u201365 Competitive You are present across multiple engines and prompts 65\u201380 Strong You are frequently recommended, cited, and ranked near the top 80+ Category-leading You dominate the prompt set and are consistently cited across engines The most useful benchmark is not a generic industry average. It is: Your score vs. direct competitors Your score by engine Your score by prompt cluster Your score over time A 38/100 score in a competitive category may be a strong starting point. A 38/100 score for a dominant brand may signal a major AI visibility gap. How to Build a Reliable Prompt Set The prompt set is the denominator of the score. If the prompt set is bad, the score is meaningless. A strong prompt panel should include: Prompt type Example Why it matters Category \u201cbest AI coding assistant\u201d Measures whether you appear in broad discovery Use-case \u201ctool to convert JavaScript to Python\u201d Measures problem-solution fit Comparison \u201cCursor vs GitHub Copilot alternatives\u201d Measures competitor displacement Alternative \u201cbest CodeConvert alternatives\u201d Measures switching-intent visibility Feature-specific \u201cAI tool that explains Python code\u201d Measures feature-level association Audience-specific \u201cAI coding assistant for students\u201d Measures ICP alignment Branded \u201cis CodingFleet good for code conversion?\u201d Measures accuracy and brand understanding For a directional audit, 20\u201350 prompts can reveal obvious gaps. For a more reliable tracking program, Digital Applied recommends larger buyer-intent panels \u2014 often 100\u2013200 prompts \u2014 because single snapshots are noisy and platform behavior changes. RankBits automates this by generating relevant prompts from your domain, letting you add custom prompts, and then tracking results at the engine \u00d7 prompt level. How Often Should You Measure AI Visibility? AI answers are more volatile than classic rankings. They change by engine, model version, location, logged-in state, retrieval mode, and freshness of the source index. A practical cadence: Business need Suggested cadence One-time baseline Once before a GEO project Active content optimization Weekly Brand monitoring Weekly or biweekly Enterprise/category leadership Weekly with alerts Low-priority side project Monthly Monthly is better than nothing. Weekly is better if AI visibility is tied to pipeline, reputation, or competitive positioning. RankBits supports scan history and tracking so you can compare score changes after content updates, PR, new comparison pages, crawler fixes, or competitor movement. Why Mentions and Citations Must Be Tracked Separately A common mistake is treating mentions and citations as the same thing. They are not. State Example Meaning Mention only \u201cCodingFleet is a tool for converting code.\u201d Brand awareness, but no direct source link Citation only AI links codingfleet.com/code-converter/python but does not name CodingFleet Source authority, but weak brand framing Mention + citation \u201cCodingFleet offers a Python code converter\u201d with a link Strongest state Neither Competitors appear instead Visibility gap Superlines\u2019 ghost-citation finding is the best public example of why this matters: their report says Gemini cited superlines.io 182 times in 30 days while mentioning \u201cSuperlines\u201d zero times. Whether or not your category behaves the same way, the measurement lesson is universal: citation tracking and brand mention tracking answer different questions. RankBits reports both because the fix is different: If mentions are high but citations are low, improve source-worthy pages and schema. If citations are high but mentions are low, improve brand/entity clarity. If both are low, you need broader GEO work: crawlability, content, third-party mentions, and competitor displacement. AI Visibility Score by Engine A single blended score is useful for executives, but the engine-level breakdown tells the team what to do. Engine What to inspect Relevant RankBits tracker ChatGPT Brand mentions, third-party consensus, source visibility, answer framing ChatGPT Rank Tracker ChatGPT Pro Whether paid-tier answers recommend different brands ChatGPT Pro Rank Tracker Claude Depth, source credibility, structured evidence, expert-style content Claude Rank Tracker Claude Pro Paid-tier research and premium reasoning behavior Claude Pro Rank Tracker Gemini Google ecosystem signals, brand-owned pages, multimodal/source behavior Gemini Rank Tracker Gemini Pro Paid-tier Gemini differences Gemini Pro Rank Tracker Google AI Overview Whether Google\u2019s AI summary cites or mentions you Google AI Overview Tracker Google AI Mode Multi-turn conversational Google visibility Google AI Mode Tracker Perplexity Citation-heavy answer visibility and source position Perplexity Rank Tracker Google/Bing Search Source-layer baseline for AI retrieval Google Search Tracker , Bing Search Tracker Tavily / Exa AI-native search/source-layer visibility Tavily Tracker , Exa Tracker If your blended score drops, the first question should be: which engine moved? A decline in ChatGPT requires a different fix than a decline in Perplexity or Google AI Overviews. For engine-specific optimization, see RankBits\u2019 guides on getting cited by Perplexity and getting cited by Claude . How to Improve Your AI Visibility Score 1. Fix crawlability first If AI retrieval crawlers cannot access your site, your score has a hard ceiling. Start with robots.txt and retrieval bots such as OAI-SearchBot, ChatGPT-User, PerplexityBot, Claude-SearchBot, and Claude-User. The RankBits GEO checklist covers this in detail. 2. Make your entity unambiguous AI systems need to understand who you are, what category you belong to, and which claims map to your brand. Keep brand descriptions consistent across your homepage, about page, schema, LinkedIn, Crunchbase, review profiles, and major directories. 3. Build answer-first pages AI engines extract passages. Structure important pages with: Direct answers in the first paragraph of each section Descriptive H2/H3 headings Comparison tables Short definitions FAQs Current dates and sources Clear product/category language 4. Earn mentions beyond your own website Ahrefs\u2019 research is clear that web-wide brand mentions correlate strongly with AI visibility. That includes articles, guides, YouTube descriptions and transcripts, reviews, directories, podcasts, and community discussions. Do not spam. The goal is not manufactured mentions. The goal is a consistent, verifiable footprint that AI systems can trust. 5. Strengthen pages that already get cited Your best starting point is not always new content. In the CodingFleet demo, 28 owned pages were already cited. RankBits labels those as \u201cdefend\u201d opportunities: keep them fresh, add schema, improve internal links, and expand them into stronger answer assets. 6. Attack prompt-level competitor gaps If a competitor wins \u201cbest X,\u201d \u201cX alternatives,\u201d or \u201cX vs Y\u201d prompts, create content specifically for those prompts. Generic blog posts rarely move AI visibility as much as targeted pages that answer the exact questions engines already retrieve. 7. Re-scan after every major change Do not assume optimization worked. Re-run the same prompt set and compare: Score change Mention rate change Citation rate change Engine-level change Competitor movement New source pages Lost source pages This closes the loop between GEO work and measurement. Common Mistakes Mistake 1: Treating one answer as proof AI outputs vary. One screenshot from ChatGPT is not a measurement program. Use repeated, consistent prompt testing. Mistake 2: Tracking only branded prompts If the prompt includes your brand name, you are testing lookup accuracy \u2014 not discovery. Non-branded category and comparison prompts matter more. Mistake 3: Ignoring source links A brand mention without a citation is useful for awareness. A citation without a mention is useful for authority. The strongest state is both. Mistake 4: Averaging engines too early A blended score can hide engine-specific problems. Always inspect the per-engine view. Mistake 5: Comparing scores across tools without methodology Two tools can produce different scores for the same brand because they use different prompts, engines, regions, sampling methods, and weights. Compare trends inside the same system. Mistake 6: Optimizing for traffic only AI visibility can influence buyers without producing a click. As RankBits\u2019 zero-click search statistics show, clickless discovery is now a major part of search behavior. Track answer presence, not only sessions. The Executive Dashboard: What to Report Monthly A useful monthly AI visibility report should fit on one page: KPI Why it matters AI Visibility Score Executive-level directional health Mention rate Brand presence in AI answers Citation rate Whether your domain is used as a source Share of voice Competitive category position Top winning prompts Where you are strongest Top losing prompts Where competitors displace you Weakest engine Where to focus optimization Top cited owned pages Pages to defend and refresh Top competitor sources Pages/sites shaping rival visibility Score trend Whether GEO work is compounding This turns AI visibility from a vague fear into an operating system: measure, diagnose, improve, re-scan. Final Takeaway AI Visibility Score is not a vanity metric if it is built correctly. It is a compact way to answer the questions that traditional SEO dashboards miss: Do AI engines know our brand? Do they cite our website? Do they recommend us before competitors? Which prompts do we win or lose? Which engines are weak? Which pages are trusted sources? Is our visibility improving over time? The brands that measure this now will have a structural advantage. They will know which AI engines already trust them, which competitors are taking the answer slots, and which pages deserve investment. Run your domain through RankBits to get your AI Visibility Score, prompt-level breakdown, competitor landscape, source attribution, and engine-by-engine recommendations. Sources RankBits public demo scan \u2014 CodingFleet AI visibility report RankBits \u2014 Zero-Click Search Statistics 2026 RankBits \u2014 GEO Checklist: 12 Steps to Get Your Brand Cited by AI Engines RankBits \u2014 How to Get Your Brand Cited by Perplexity AI RankBits \u2014 How to Get Your Brand Cited by Claude AI SparkToro & Similarweb \u2014 \u201cIn 2026, Less than One Third of Google Searches Still Send a Click\u201d (June 2026) Search Engine Land \u2014 \u201cGoogle AI Overviews CTR shows early signs of recovery: Study\u201d (April 2026) Seer Interactive \u2014 \u201cAIO Impact on Google CTR: 2026 Update\u201d (2026) Ahrefs \u2014 \u201cAn Analysis of AI Overview Brand Visibility Factors (75K Brands Studied)\u201d (May 2025) Ahrefs \u2014 \u201cTop Brand Visibility Factors in ChatGPT, AI Mode, and AI Overviews (75k Brands Studied)\u201d (December 2025) Digital Applied \u2014 \u201cAI Share of Voice: Tracking Brand Citations in AI Answers\u201d (June 2026) AuthorityTech \u2014 \u201cAI Visibility Score: Definition, Formula, and Why SOV Is Obsolete\u201d (April 2026) Superlines \u2014 \u201cAI Search Statistics 2026: 60+ Data Points on Visibility, Citations, and Traffic\u201d (2026) Conductor \u2014 AI Share of Voice Benchmarking Google Search Central \u2014 AI features and your website See how visible your brand is in AI answers Enter your site for a free live check on ChatGPT, Google Search and Google AI Overview. No signup. Keep reading Google vs Bing for AI Visibility: Same Questions, Different Results (2026 Data) Nov 9, 2026 How to Rank on Tavily and Exa, the Search Engines AI Agents Use (2026 Data) Nov 9, 2026 Do Paid AI Models Recommend Different Brands? ChatGPT, Gemini and Claude Compared (2026 Data) Nov 9, 2026"
+ },
+ {
+  "url": "https://www.rankshift.ai/blog/key-ai-search-metrics/",
+  "title": "Key AI Search Metrics: What Businesses Need to Track - Rankshift",
+  "words": 3449,
+  "headings": [
+   [
+    "h1",
+    "Key AI Search Metrics: What Businesses Need to Track"
+   ],
+   [
+    "h4",
+    "Table of Contents"
+   ],
+   [
+    "h3",
+    "AI search key metric comparison table"
+   ],
+   [
+    "h2",
+    "AI Visibility"
+   ],
+   [
+    "h3",
+    "Definition AI visibility"
+   ],
+   [
+    "h3",
+    "Why is AI visibility important?"
+   ],
+   [
+    "h3",
+    "How to track AI visibility"
+   ],
+   [
+    "h2",
+    "Citation Rate"
+   ],
+   [
+    "h3",
+    "Definition Citation Rate"
+   ],
+   [
+    "h3",
+    "Why is citation rate important?"
+   ],
+   [
+    "h2",
+    "Answer Share"
+   ],
+   [
+    "h3",
+    "Definition Answer Share"
+   ],
+   [
+    "h3",
+    "How Answer Share Is Calculated"
+   ],
+   [
+    "h3",
+    "Why Answer Share Matters"
+   ],
+   [
+    "h3",
+    "How to Use Answer Share Strategically?"
+   ],
+   [
+    "h2",
+    "Sentiment"
+   ],
+   [
+    "h3",
+    "Definition sentiment"
+   ],
+   [
+    "h3",
+    "Why is sentiment important?"
+   ],
+   [
+    "h3",
+    "How to track sentiment in AI search"
+   ],
+   [
+    "h2",
+    "Share of Voice"
+   ],
+   [
+    "h3",
+    "Definition Share of Voice"
+   ],
+   [
+    "h3",
+    "Why is share of voice important?"
+   ],
+   [
+    "h3",
+    "How to track share of voice?"
+   ],
+   [
+    "h2",
+    "Traffic from AI Search"
+   ],
+   [
+    "h3",
+    "Why is AI search engine referral traffic important?"
+   ],
+   [
+    "h2",
+    "Bot Activity: Measuring AI Crawlers"
+   ],
+   [
+    "h3",
+    "1. Volume of bot visits and unique pages"
+   ],
+   [
+    "h3",
+    "2. Trends over time"
+   ],
+   [
+    "h3",
+    "3. Top crawled pages"
+   ],
+   [
+    "h3",
+    "4. Impressions vs. clicks"
+   ],
+   [
+    "h3",
+    "5. Missed citation opportunities"
+   ],
+   [
+    "h3",
+    "6. Gaps in coverage"
+   ],
+   [
+    "h3",
+    "7. Language and topic segmentation"
+   ],
+   [
+    "h3",
+    "8 \u2013 Bot behaviour and updates"
+   ],
+   [
+    "h2",
+    "Pulling it Together"
+   ]
+  ],
+  "text": "Skip to content Key AI Search Metrics: What Businesses Need to Track Pieter Verschueren Published: February 1, 2026 Last update: March 23, 2026 Table of Contents Quick setup Start your 30-day trial (no credit card needed) Start now TL;DR AI search shifts discovery from clicks to answers, making AI visibility the primary signal of brand recall in the answer era. If AI doesn\u2019t mention you, users may never see you. Other core metrics to track are Citation Rate, Sentiment, Share of Voice, AI Search Traffic, and Bot Activity \u2014together showing how often AI models recall, trust, frame, and recommend your brand. AI visibility measures consistency of mentions across prompts and platforms; sustained visibility matters more than occasional spikes and reflects true authority. Citations and sentiment indicate trust and reputation, while share of voice reveals competitive strength inside AI-generated answers. Bot logs underpin everything : user-bot hits approximate impressions, surface technical blockers, and help estimate AI CTR when combined with analytics. Generative AI has changed how people discover products and make decisions. Instead of scanning lists of links, users ask ChatGPT, Perplexity, Gemini or Google\u2019s AI\u2011assisted search engines for advice and recommendations. These systems synthesize information and often answer questions directly, which means fewer clicks and less visibility in traditional analytics. Brands that want to stay competitive need to understand how often they are mentioned, trusted and recommended inside these AI\u2011generated answers and how users reach their sites via AI platforms. The following sections break down the key metrics that matter for AI search and show how to measure them. AI search key metric comparison table Metric What it measures Why it matters in AI search AI Visibility Frequency of your brand\u2019s appearance in AI\u2011generated answers Indicates brand recall and presence across AI channels Citation Rate Percentage of answers linking to your domain among answers that include sources Signals AI trust and authoritative content Answer Share Combined score based on visibility and citation rate, reflecting overall presence and authority in AI search Shows how dominant your brand is in AI responses Sentiment Tone of AI descriptions (positive, neutral or negative) Reveals brand reputation and potential risks Share of Voice Your share of mentions compared with competitors Highlights competitive positioning and market momentum AI Search Traffic Visits referred to your site from AI platforms Connects AI visibility to user engagement and conversions Bot Activity Volume and behavior of AI crawlers on your site Shows content interest, uncovers gaps and informs technical fixes AI Visibility AI visibility measures how often a brand appears in AI\u2011generated answers for tracked prompts. High AI visibility indicates strong brand recall by language models even when users never click through to a website. Definition AI visibility AI visibility measures how often your brand appears in AI\u2011generated responses across the prompts and platforms you track. Visibility score formula: (Number of responses mentioning your brand \u00f7 Total responses) \u00d7 100. This calculation provides a baseline for how consistently AI models recall and mention your brand when answering relevant queries. Visibility reflects the distribution of your mentions across different prompts and that consistency over time matters more than sporadic spikes. Why is AI visibility important? Visibility is a proxy for brand recognition in the answer era. Higher scores mean AI models frequently recall your brand when discussing your category. Persistent visibility across many prompts indicates stronger authority and improves the likelihood that users will encounter your brand even when they never click a link. How to track AI visibility Define core prompts. Identify 20\u201330 representative queries for your category and, with a tool like Rankshift, track how often your brand is mentioned in the answers. Monitor across platforms. Measure visibility across ChatGPT, Perplexity, Gemini and Google AI Mode\u2014different models draw on different data sets and may rank brands differently. Segment by topic and language. Group prompts by intent (educational, comparison, purchase) and by market or language to pinpoint strengths and gaps in your presence. Track changes over time. Visibility gains are gradual. Monitor trends weekly or monthly to see whether content updates or outreach efforts improve your presence. Citation Rate Citation rate measures the percentage of AI answers that cite a specific URL or domain among answers that include sources. A high citation rate means AI systems trust your content as evidence, giving your brand authority in generative search. Definition Citation Rate A citation occurs when an AI response includes a clickable link to the source it used. Citation metrics go beyond mentions; they show which domains AI models trust to support their answers. Rankshift defines citation rate for a given URL as the percentage of answers that cite that URL out of all answers containing at least one citation. Citation rate formula: (Answers citing the URL \u00f7 Total answers with at least one citation) \u00d7 100. At the domain level, multiple page citations are deduplicated. Citation share measures what portion of all citations go to a specific URL, and citation count is the raw number of times the URL appears as a citation. Why is citation rate important? Citations signal authority and trust. AI models choose citations to justify claims, so links in an answer show which sources they rely on. Not every mention leads to a citation; consistent citation across prompts indicates your content is being used to ground AI answers. Tracking citation rate alongside total citation count helps you distinguish between pages that are occasionally linked and those that frequently anchor responses. How to track it. Identify prompts that generate citations. AI responses may not always display sources. For engines that cite sources (Perplexity, Gemini and some ChatGPT tools), capture the responses and note which URLs are linked. Calculate domain\u2011level citation rate. Combine all URLs from your domain and compute how often any page from your domain is cited versus total answers with citations. Analyze competitor citations. We recommend monitoring which third\u2011party pages are cited to understand where AI models learn about your category. Prioritize high\u2011authority pages. Sort pages by citation rate to identify which articles carry authority and which topics may need optimization.. Example. If 28 out of 100 AI answers for a set of prompts include at least one link to your domain, your citation rate is 28 %. A higher rate suggests the AI frequently uses your site as evidence, while a low rate indicates missed opportunities for attribution. Answer Share Answer share combines visibility and citation rate into one metric that reflects overall presence and trust inside AI answers. While visibility tells you how often you are mentioned and citation rate shows how often you are used as a source, answer share captures the combined impact of both. Definition Answer Share Answer share is a composite score based on visibility and citation rate. It reflects how strongly your brand occupies the answer space across tracked prompts and platforms. In Rankshift, answer share is visualized in a bubble chart: X-axis: visibility score Y-axis: citation rate Bubble size: answer share score Each bubble represents a brand. The larger the bubble, the stronger the combined performance across recall and trust signals. How Answer Share Is Calculated Answer share blends two core ratios: Visibility score: (Responses mentioning your brand \u00f7 Total responses) \u00d7 100 Citation rate: (Answers citing your domain \u00f7 Total answers with at least one citation) \u00d7 100 The combined score weights both factors to reflect how often AI models recall your brand and how often they rely on your content as evidence. A brand with high visibility but low citation rate may be frequently mentioned but rarely trusted as a source. A brand with high citation rate but low visibility may be authoritative in a niche yet rarely recommended. Answer share rewards brands that perform well on both dimensions. Why Answer Share Matters Answer share simplifies performance tracking. Instead of toggling between separate charts for visibility and citations, answer share gives you a holistic view of your presence in AI search engines. It also highlights strategic positioning: High visibility + high citation rate: category leader with strong authority. High visibility + low citation rate: widely discussed, but not consistently used as evidence. Low visibility + high citation rate: trusted specialist with limited recall. Low visibility + low citation rate: minimal presence and limited authority. The movement line attached to each bubble shows the change compared to the previous period. If a bubble moves to the right, visibility improved. If it moves upward, citation rate increased. If both shift positively, the bubble grows, signaling expanding answer share. This makes it easy to spot momentum or decline at a glance. How to Use Answer Share Strategically? Track answer share monthly to identify early gains or losses in competitive positioning. Because it blends recall and trust, it acts as a leading indicator of AI market strength. Segment by prompt category . You may dominate informational prompts but lag in commercial or comparison queries. The bubble view exposes these gaps quickly. Benchmark against competitors . A rising answer share while competitors stagnate signals growing authority. A shrinking bubble means others are capturing both mentions and citations. Prioritize actions based on position . If visibility is strong but citation rate lags, focus on structured data, clearer sourcing and deeper content. If citation rate is high but visibility is low, invest in broader topical coverage to improve recall and brand building. Answer share does not replace the underlying metrics. It summarizes them. Visibility and citation rate Cstill need to be analyzed separately for diagnosis. But as an executive view of AI search performance, answer share provides a clear signal: how much of the answer landscape your brand truly owns. Sentiment Sentiment gauges whether AI responses talk about your brand positively, neutrally or negatively. Positive sentiment signals trust and credibility while negative sentiment warns of reputational risks. Definition sentiment Sentiment measures the tone of AI responses when they mention your brand. Rankshift assigns a score between 0 and 100, with most brands falling between 65 and 85. The score is calculated by analyzing the language used in the AI response: Positive indicators: words such as \u201ctrusted,\u201d \u201creliable,\u201d \u201cinnovative\u201d or \u201cleading\u201d. Neutral indicators: factual descriptions with little emotional tone. Negative indicators: critical language or negative associations. In addition, Rankshift shows which positive and negative themes are associated with your brand. As a brand, you want to address negative themes if they do not accurately reflect your company. Why is sentiment important? Sentiment reveals how AI models frame your brand. Positive sentiment builds trust and credibility, while neutral sentiment maintains professional standing and negative sentiment can erode reputation. Monitoring sentiment alongside visibility and citation rate helps you understand not just whether you are present, but how you are described. How to track sentiment in AI search Gather responses with brand mentions. Collect AI responses that mention your brand across different prompts and platforms. Use sentiment analysis. Apply natural\u2011language processing or specialized tools to score each response based on positive, neutral and negative indicators. Compare with competitors. Rankshift emphasizes analyzing sentiment in comparative prompts (\u201cbest vs worst\u201d) to see how your brand stacks up against rivals. Monitor shifts. Sudden sentiment changes often reflect shifts in public perception, media narratives or competitor positioning. Tracking sentiment over time allows you to respond proactively. Share of Voice Share of voice compares how often your brand is mentioned relative to competitors in AI answers. A rising share of voice shows you\u2019re gaining visibility in a crowded field, while a decline signals competitive weakness. Definition Share of Voice Share of voice (SoV) measures your brand\u2019s visibility relative to competitors in AI\u2011generated responses. Rankshift defines AI share\u2011of\u2011voice as the percentage of brand mentions your company receives compared to all competitors across tracked prompts. Share of voice formula: (Your brand mentions \u00f7 Total brand mentions across all brands) \u00d7 100. Unlike absolute visibility metrics, SoV contextualizes your presence within the competitive landscape. For example, a brand with 100 mentions may have high visibility yet a low share of voice if competitors collectively secure 400 mentions. Why is share of voice important? Share of voice is a leading indicator of market perception. Research suggests that brands that dominate conversation eventually dominate market share. A rising SoV means your brand is increasingly favored in AI recommendations, while a low SoV signals vulnerability and risk of being overlooked. How to track share of voice? Define your competitive set. Track direct competitors, category leaders and emerging challengers. Segment by prompt category and platform. SoV varies across query types and AI platforms. Analyze educational questions, solution discovery prompts and comparison queries separately to understand where you lead or lag. Monitor platform\u2011specific SoV. Your brand might capture 30 % of mentions in ChatGPT but only 15 % in Perplexity. Use this insight to allocate optimization efforts strategically across platforms. Track trends over time. Look for early signals of competitors gaining share, which may foreshadow shifts in market perception. Traffic from AI Search AI search traffic measures visits you get from AI\u2011powered search experiences. Although many users get answers without clicking, tracking traffic from AI platforms links your AI visibility to tangible engagement and conversions. Definition traffic from AI Search Traffic from AI search measures visits generated by AI\u2011powered search experiences to your website. While generative systems often satisfy user intent without clicks, they still send referral traffic when users follow the cited links. We call this AI search engine referral traffic . Why is AI search engine referral traffic important? Traffic connects AI visibility to familiar performance metrics such as sessions and conversions. However, a lack of clicks does not imply invisibility; many users get the information they need directly from AI responses. Use traffic as one signal of AI impact, not the sole measure of success. How to track it. Use analytics platforms. Configure Google Analytics 4 or Adobe Analytics to capture referrer data from AI platforms. Tag links in your content with UTM parameters to identify AI sources. Monitor by platform and campaign. Segment traffic by AI platform ( ChatGPT referrals , Perplexity referrals , Claude referrals ) and by campaign or content to see which efforts drive visits. Compare with bot impressions. Combined with bot activity (see below), traffic data allows you to estimate click\u2011through rate (CTR) for AI search: (human clicks \u00f7 bot hits) \u00d7 100. Bot Activity: Measuring AI Crawlers Bot activity metrics track how AI crawlers interact with your site, including how often they visit, which pages they fetch and how their behavior changes. Understanding bot activity helps you gauge AI interest in your content, identify gaps and fix technical issues. AI bots act as the intermediaries between your content and AI models. Log analysis reveals which AI bots visit your site , what they fetch and how often. We categorize AI bots into three groups: training bots that scrape content for model training, search bots that build indexes, and user bots that fetch pages in real\u2011time to answer queries. User bots\u2019 visits are a proxy for impressions because each hit represents an attempt to fetch your content for a specific user prompt. Effective bot monitoring involves several metrics: 1. Volume of bot visits and unique pages Total requests. Track the total number of requests from AI crawlers. Cloudflare\u2019s AI Crawl Control shows total request volume, volume change and top crawlers by operator. Screaming Frog\u2019s Log File Analyser similarly reports total events and unique URLs crawled. Unique pages. Count how many distinct URLs bots hit to gauge how much of your site they explore. We suggest comparing coverage ratios to see which sections receive attention and which remain unexplored. 2. Trends over time Time\u2011series analysis. Cloudflare visualizes successful crawler requests over time, grouped by crawler, category or operator. Monitoring these charts helps you spot spikes after model updates or anomalies in bot behavior. Daily/weekly patterns. User bots often follow human usage patterns: they fetch more content on weekdays and during daytime hours. Declining bot activity may signal loss of visibility or technical issues; increasing activity suggests rising interest in your content. 3. Top crawled pages Identify high\u2011demand content. Sort log data by request count to see which pages are most frequently fetched. We discovered that training bots may favor long\u2011form guides, while citation/user bots target product or commercial pages. Align with content strategy. Compare bot\u2011favored pages with your strategic priorities. If important pages receive little or no bot traffic, improve internal linking or ensure they are not accidentally blocked. 4. Impressions vs. clicks Bot hits as impressions. Each visit from an AI user bot represents an impression in a live conversation. Count these hits to estimate how often your content is being considered as a source. Estimate click\u2011through rate (CTR). Divide the number of human clicks (from your analytics) by the number of user\u2011bot hits to approximate AI search CTR. This provides insight into how often AI\u2011surfaced recommendations turn into visits. 5. Missed citation opportunities Error responses. High numbers of 4xx or 5xx status codes prevent bots from accessing your pages and result in missed citations. Even citation bots, which fetch pages in real\u2011time to support user answers, will fail to cite your content if they encounter errors. Check rendering and accessibility. AI bots often cannot execute client\u2011side JavaScript, and paywalls or authentication barriers block them entirely. Ensure key pages return a 200 status and render the necessary content server\u2011side. 6. Gaps in coverage Identify uncrawled pages. Compare your site crawl against log files to find pages that rank in Google but never get visited by AI bots. J\u00e9r\u00f4me Salomon, technical SEO at Oncrawl, emphasizes that differences in crawl behavior between training, search and user bots reveal where AI platforms may be missing your content. Prioritize updates. Pages with high SEO visibility but no AI bot visits could benefit from structured data, clearer headlines or translation to the languages that AI models understand. 7. Language and topic segmentation Segment by operator and category. Cloudflare\u2019s metrics let you group requests by crawler type, purpose and company. Break down bot traffic by language (if your site serves multiple locales), by article category or page type to see which segments drive AI engagement. Tailor content. If user bots fetch mostly English\u2011language blog posts and ignore product pages in another language, adapt your content or metadata to improve coverage in those segments. 8 \u2013 Bot behaviour and updates Watch for new user agents. Screaming Frog\u2019s presets list bots like GPTBot (OpenAI training), OAI\u2011SearchBot (OpenAI indexing), ChatGPT\u2011User (real\u2011time response), ClaudeBot (Anthropic), PerplexityBot and others. New bots or updated versions may appear as platforms evolve; tracking them helps you maintain visibility. Monitor crawl frequency. AI search bots typically crawl each URL about once per day, while user bots fetch pages on demand. Significant changes in frequency may signal algorithm updates or interest spikes. Respect and test robots.txt. Many AI bots follow robots.txt rules, but exceptions exist; some assistants have stopped honoring them entirely. Log analysis will reveal whether bots obey your directives. Detect anomalies. Spikes in bot traffic can indicate aggressive crawling or potential abuse. Use response time and IP information to determine whether a particular bot is overloading your server and consider rate limiting or blocking accordingly. Pulling it Together No single metric tells the whole story. AI visibility and share of voice show whether you are present in AI answers and how that presence compares to competitors. Citation rate and citation quality reveal whether AI systems trust your content enough to link to it. Sentiment evaluates how your brand is framed when it appears, and traffic connects AI exposure to tangible business outcomes. Bot activity metrics provide the underlying data for impressions and help you diagnose technical or strategic issues. By tracking these metrics together and segmenting them by platform, topic and time, businesses can understand how generative AI perceives them, where they stand against competitors and what levers to pull to improve their presence. As search shifts toward answers and citations, the brands that thrive will be those who optimize content not just for algorithms, but for the AI models that increasingly mediate how people learn, compare and buy. Sources Oncrawl. What log files tell about your visibility in AI search \u2013 J\u00e9r\u00f4me Salomon @ BrightonSEO Autumn 2025. YouTube . January 2026. https://www.youtube.com/watch?v=74rcfvhiE5M. Cates J. AI Search is Changing the Way Marketers Measure Success. Yext . January 2026. https://www.yext.com/blog/2026/01/ai-search-is-changing-the-way-marketers-measure-success. Salomon J, Salomon J. AI bots explained: What powers platforms like ChatGPT? Oncrawl \u2013 Technical SEO Data. https://www.oncrawl.com/ai/ai-bots-explained-what-powers-platforms-chatgpt/. Published January 26, 2026. Pieter Verschueren Pieter Verschueren is the co-founder of Rankshift AI and Depends SEO agency. He specializes in SEO and the emerging field of Generative Engine Optimization, where he helps brands understand and improve their visibility in AI-generated answers from tools like ChatGPT, Google Gemini, AI Overviews, AI Mode and Perplexity. Connect on LinkedIn"
+ },
+ {
+  "url": "https://www.verticality.co/blog/how-to-measure-ai-visibility/",
+  "title": "How to Measure AI Visibility (and What an AI Visibility Score Is) \u2014 Verticality",
+  "words": 2864,
+  "headings": [
+   [
+    "h1",
+    "How to Measure AI Visibility (and What an AI Visibility Score Is)"
+   ],
+   [
+    "h2",
+    "What is an AI visibility score?"
+   ],
+   [
+    "h2",
+    "Why does our tracker report rates instead of one score?"
+   ],
+   [
+    "h2",
+    "Which metrics does an AI visibility tracker measure?"
+   ],
+   [
+    "h3",
+    "Mention rate"
+   ],
+   [
+    "h3",
+    "Share of voice"
+   ],
+   [
+    "h3",
+    "Citation rate and citation share"
+   ],
+   [
+    "h3",
+    "Position and sentiment"
+   ],
+   [
+    "h2",
+    "What counts as a mention?"
+   ],
+   [
+    "h2",
+    "How do you build a prompt set for AI visibility?"
+   ],
+   [
+    "h2",
+    "Why do AI answers change between runs, and how many runs do you need?"
+   ],
+   [
+    "h2",
+    "Worked example: what does our own tracker show for verticality.co?"
+   ],
+   [
+    "h2",
+    "How do you measure AI visibility without a tool?"
+   ],
+   [
+    "h2",
+    "What is a good AI visibility score?"
+   ],
+   [
+    "h2",
+    "Can Verticality measure AI visibility for my brand?"
+   ],
+   [
+    "h2",
+    "Frequently asked questions"
+   ],
+   [
+    "h3",
+    "What is an AI visibility score?"
+   ],
+   [
+    "h3",
+    "Is there a standard formula for measuring AI visibility?"
+   ],
+   [
+    "h3",
+    "How many prompts do you need to measure AI visibility?"
+   ],
+   [
+    "h3",
+    "Should branded prompts count toward AI visibility?"
+   ],
+   [
+    "h3",
+    "What is the difference between an AI mention and an AI citation?"
+   ],
+   [
+    "h2",
+    "Want your brand named in AI answers?"
+   ]
+  ],
+  "text": "GEO AI visibility How to Measure AI Visibility (and What an AI Visibility Score Is) Measure AI visibility as the share of AI answers that name your brand, per engine, over a fixed set of buyer questions. Formulas and our own tracker data. Andrey Dereviankin COO \u00b7 AI Search & Data Architecture Published October 3, 2026 \u00b7 14 min read You measure AI visibility by asking ChatGPT, Perplexity and Google AI Overviews the same fixed set of buyer questions on a schedule and counting how many answers name your brand, engine by engine. An AI visibility score is any single number built from those counts, usually on a 0\u2013100 scale. No standard formula exists, so a score means something only once you know its questions, engines, time window and denominator. The tracker we run at ai.verticality.co does not produce one score. Its headline is the mention rate over non-branded questions, reported separately for each engine. Below are the definitions from that tracker\u2019s code, how to build the question set, why one run is never enough, a worked example on our own brand, and a spreadsheet method for teams without a tool. What is an AI visibility score? An AI visibility score is a summary number for how often AI assistants include a brand in their answers. Vendors build it from some mix of mentions (the answer names you), citations (the answer links to your site), prominence (where you appear), sentiment and share of voice against competitors, then scale the result to 0\u2013100. Each vendor picks its own inputs and weights, so a 40 from one tool and a 40 from another are not the same measurement. Ask four questions before you trust any score: Which questions? If prompts that already contain your brand name are counted, the score rises simply because you asked about yourself. Which engines? A figure averaged across ChatGPT, Perplexity and Google hides the engine where you are absent. How many runs? One run per question is a sample of one. What is the denominator? All answers, all questions, or only the queries where the engine showed an answer at all. Why does our tracker report rates instead of one score? The Verticality AI Visibility Tracker reports every metric per engine and never blends engines into one number; the rule is written into its specification. Our own data shows why. Over the 30 days to 3 October 2026, ChatGPT named verticality.co in 5.0% of answers to non-branded questions, Perplexity in 1.8% and Google AI Overviews in 0.09%. The average of the three, 2.3%, describes none of the engines and says nothing about where to work next. Each engine finds and picks sources differently; our LLM SEO page covers that model by model. Averaged together, our three engines read 2.3%, a number that describes none of them. Weights have the same problem. A composite score must decide how many mention points one citation is worth, and any choice is arbitrary. Sentiment labels (positive, neutral, negative, mixed) have no interval scale, so the tracker shows them as counts and never averages them. If a board wants a single figure, give it the non-branded mention rate for each engine, side by side, with the window and the number of questions. Which metrics does an AI visibility tracker measure? These are the metrics our tracker computes, with the formulas from its code. An eligible answer is one from a fully collected day, scanned by the current version of the brand detector. Metric Formula Scope Mention rate (headline) answers that name the brand \u00f7 eligible answers Non-branded questions, per engine Share of voice your (answer, brand) pairs \u00f7 the same pairs for you plus a hand-picked competitor set Non-branded questions, per engine Citation rate answers whose source list links to your domain \u00f7 eligible answers Per engine, never mixed with mentions Citation share your citing answers against the same competitor set Shown only when every brand in the set has a verified domain Citation ownership citations to your domains, to competitors\u2019 domains and to third-party sites, as shares of all citations All engines Brand accuracy and sentiment what answers to questions that name you say; sentiment as counts of four labels Branded questions only Position in the answer the brand\u2019s order of first appearance among the brands named Stored, not reported Mention rate The mention rate is the share of eligible answers that name your brand, computed only over non-branded questions such as \u201cbest Reddit marketing agency for SaaS\u201d. Branded questions (\u201cIs Verticality any good?\u201d) have their own block, comparative questions that name a competitor have a third, and the three are never added together. For Google AI Overviews, a query where Google showed no AI Overview still counts as an answer that did not mention you. Dropping those queries would shrink the denominator and inflate the rate on exactly the topics where Google shows the fewest AI Overviews. The denominator decides the rate. On Google, a query with no AI Overview stays in as a no; partial days, branded questions and comparative questions stay out. Share of voice Share of voice divides your mentions by the mentions of you plus a fixed list of competitors you chose, not by every brand the AI has ever named. Our tracker caps that list at 20 competitors, and a brand joins it only when someone adds it by hand. A list that grows automatically picks up every agency or tool an answer names in passing, and your share then falls against brands you never agreed to be measured against. Citation rate and citation share A citation is a URL in the engine\u2019s own source list: ChatGPT\u2019s sources, the references under an AI Overview, Perplexity\u2019s annotations. The tracker credits a citation to you when the cited host is your domain or one of its subdomains. Mentions and citations are separate events. In our ChatGPT data, 138 answers named and linked verticality.co, 18 named us without a link and 6 linked us without naming us. In Perplexity, 33 answers cited one of our pages without naming Verticality at all. Perplexity, 29 September 2026: our Reddit agency page is source [2], and the line it backs says \u201cSome agencies\u201d. That is a citation without a mention. Position and sentiment Many dashboards show an average position for a brand inside AI answers. Our tracker records the order in which brands first appear but does not report it, because that order changes too much between runs of the same question to be a stable number. Sentiment is read only in answers to branded questions that name the client, and it is shown as the count of positive, neutral, negative and mixed answers per engine. What counts as a mention? The tracker matches each answer\u2019s text against a dictionary of the brand\u2019s name and aliases; a language model never decides whether a brand was mentioned. By default, matching ignores letter case, typographic quotes and dashes, and a leading \u201cThe\u201d. Two rules stop false hits. A link whose visible text is a bare domain, such as a source chip reading \u201cverticality.co\u201d, is removed before matching, because a source chip is a citation, not a mention. A brand whose name is also an ordinary word counts only when it is capitalised and something marks it as a name: it sits mid-sentence, it is bold or a link, it stands as a label before or after a colon, or the same answer cites the brand\u2019s domain. How do you build a prompt set for AI visibility? A prompt set is the fixed list of questions you ask every engine on every run. Start with the questions buyers ask before they know your name, then add a smaller number that name competitors or you. Our tracker\u2019s question generator keeps at least 65% of a tracked set non-branded and at most 15% branded, with comparative questions making up the rest, spread over 6 to 10 topic clusters. A question that names your brand is filed as branded automatically, and a non-branded question that names a tracked competitor becomes comparative, so the headline rate never includes a question that hands the AI your name. Mix short category questions (\u201cbest GEO agency\u201d) with longer questions that describe a buyer\u2019s situation, because people type both into assistants. Keep the set fixed. When you change it, compare only the questions present in both versions, or a jump in the rate may come from new questions rather than new visibility. Our own set has 130 questions, 111 non-branded and 19 comparative, about Reddit marketing and AI search services. It has no branded questions yet, so our brand-accuracy block reads \u201cnot measured\u201d rather than zero. Why do AI answers change between runs, and how many runs do you need? AI assistants generate each answer fresh , so the same question asked twice can name different brands. A 2026 paper by Julius Schulte, Malte Bleeker and Philipp Kaufmann argues that visibility in AI search should be described as a distribution across repeated measurements, not as a single observation ( Don\u2019t Measure Once, arXiv, April 2026 ). Our data shows the size of the effect: on the same 111 non-branded questions, ChatGPT named Verticality in 2 answers on 17 September 2026 and in 10 answers on 26 September. Each dot is one day of the same 111 questions on ChatGPT: 2 answers named us on 17 September and 10 on 26 September. Three rules keep the numbers honest: Pool many runs. The tracker asks every question once a day on each engine and pools 30 days, so each engine\u2019s rate rests on about 3,100 answers. A one-off audit runs the full question set three times on the same day. Drop broken days. A day when an engine answered only part of the set is excluded, not counted as zeros. In our window ChatGPT lost one day (129 of 130 questions collected), and one day had no run on any engine. Mark measurement changes. Every edit to the brand dictionary or the competitor list creates a new detector version, shown on the trend chart. A step on a marked day is a change in how visibility is measured, not in visibility. Worked example: what does our own tracker show for verticality.co? These are verticality.co\u2019s numbers in ai.verticality.co for 4 September to 3 October 2026: 111 non-branded and 19 comparative questions, asked every day on three engines. Engine Mention rate, non-branded Share of voice Answers citing verticality.co ChatGPT 5.0% (156 of 3,108) 5.7% 4.6% (144 of 3,108) Perplexity 1.8% (57 of 3,219) 1.7% 2.8% (90 of 3,219) Google AI Overviews 0.09% (3 of 3,219) 0.1% 0.12% (4 of 3,219) Read the table one engine at a time. ChatGPT names us in about 1 non-branded answer in 20, and 7 of the 19 competitors in our share-of-voice set are named more often. Google AI Overviews almost never names us, although Google showed an AI Overview for 3,165 of the 3,219 queries, so the gap there is real and not missing data. The trend tells the rest. From 3 to 6 September every engine named us in 0 of 111 answers; the first ChatGPT mentions came on 7 September, four days after we turned off Cloudflare\u2019s AI-crawler block on our site. ChatGPT\u2019s weekly rate then rose from 4.5% in the week of 7 September to 7.4% in the week of 28 September. Of the 131,069 citations across all answers in the window, 0.29% point to verticality.co and 89.5% to third-party sites, which is why most of our work happens off our own site. Of 131,069 citations in a month of AI answers, 0.29% pointed to our site and 89.5% to third-party pages. How do you measure AI visibility without a tool? A spreadsheet is enough for a small brand . Pick 20 non-branded questions, ask each one in ChatGPT, in Perplexity and in Google (where you record the AI Overview), and repeat the round on three different days. That gives 60 answers per engine. Log one row per answer: Column What to record Question the exact wording, unchanged between rounds Type non-branded, comparative or branded Engine ChatGPT, Perplexity or Google AI Overview Date the day of the round Named yes or no: does the answer name your brand Linked yes or no: does the source list link to your domain Brands named every competitor in the answer, in order Sources the cited domains For each engine, the mention rate is the rows marked Named \u00f7 all rows for that engine, and the citation rate is the rows marked Linked \u00f7 all rows. Share of voice is your mentions \u00f7 mentions of you plus the five to ten competitors you actually lose deals to. A Google query with no AI Overview stays in the sheet as a row with Named = no. Ask every question in a new chat with no earlier conversation in it. Expect noise. With 60 answers per engine, each answer moves the rate by about 1.7 percentage points, so a difference of one or two answers between months is not a trend. Repeat the round monthly with the same 20 questions, and add new questions as a separate batch with its own rate. At 60 answers per engine, one answer moves the rate by 1.7 points, so a change of one or two answers is noise. What is a good AI visibility score? No universal benchmark exists, because the rate depends on the questions you pick: a narrow set about your exact niche produces a higher rate than a broad category set. The useful comparison is your competitors on the same questions and engines. Our tracker\u2019s audit report places the client\u2019s rate next to the most-named competitor\u2019s rate over the same denominator. In our own ChatGPT data, the most-named agency in our set appears in 11.7% of non-branded answers against our 5.0%, so the gap to close on that engine is about 7 percentage points. Visibility is not traffic. A rising mention rate does not prove more visits or sales, so measure clicks from AI assistants separately in your analytics and treat the mention rate as the leading indicator. Can Verticality measure AI visibility for my brand? Yes. For a quick first read, the free AI visibility checker asks 40+ buyer questions in ChatGPT and Google AI Overviews and emails your mention rate per engine within 24 hours. Every GEO program we run opens with a free two-week AI visibility audit that you keep even if you stop there: 50\u2013200 questions your buyers ask, your mention rate on ChatGPT, Google AI Overviews and Perplexity, the brands named in your place and the sources the engines cite. The baseline is ready by day 10, and every monthly report compares against it. The program costs $2,500\u2013$7,500 a month, month-to-month. See how the GEO program works \u2192 Frequently asked questions What is an AI visibility score? An AI visibility score is a single number, usually on a 0\u2013100 scale, that summarises how often AI assistants such as ChatGPT, Perplexity and Google AI Overviews include a brand in their answers. Each vendor combines mentions, citations, prominence, sentiment and share of voice with its own weights, so scores from different tools are not comparable. Verticality's tracker reports a separate mention rate for each engine instead of one score. Is there a standard formula for measuring AI visibility? No industry standard exists. The common building block is the mention rate: answers that name the brand divided by all answers to a fixed set of questions. Verticality's tracker computes it per engine over non-branded questions only, and counts a Google query that showed no AI Overview as an answer without a mention. How many prompts do you need to measure AI visibility? For a first manual baseline, 20 non-branded questions asked on three engines on three separate days gives 180 answers, 60 per engine; each answer then moves an engine's rate by about 1.7 percentage points. Verticality's tracker asks 130 questions every day and pools 30 days, which is about 3,100 answers per engine. Should branded prompts count toward AI visibility? Not in the headline number. A question that contains your brand name invites the AI to mention you and inflates the rate. Verticality's tracker reports branded questions in a separate brand-accuracy block and computes mention rate and share of voice over non-branded questions only. What is the difference between an AI mention and an AI citation? A mention is your brand name in the answer text. A citation is a link to your site in the engine's list of sources. The two happen independently: in Verticality's own Perplexity data for September 2026, 33 answers cited a verticality.co page without naming the brand. Track them as two separate rates. Want your brand named in AI answers? Our free AI visibility audit asks ChatGPT, Perplexity and Google AI Overviews the questions your buyers ask, shows who gets named instead of you and which sources they cite, and ends with a ranked work plan. Get a free AI visibility audit Not ready for a call? Run the free AI visibility checker : 40+ buyer questions in ChatGPT and Google AI Overviews, report by email within 24 hours."
+ },
+ {
+  "url": "https://www.mentionowl.com/blog/understanding-your-ai-visibility-score-a-metric-by-metric-guide",
+  "title": "Understanding Your AI Visibility Score: A Metric-by-Metric Guide \u00b7 MentionOwl",
+  "words": 3007,
+  "headings": [
+   [
+    "h2",
+    "What is an AI visibility score, and why does a single number help?"
+   ],
+   [
+    "h3",
+    "Why AI search needs repeated sampling"
+   ],
+   [
+    "h3",
+    "The engines and method behind MentionOwl's AI visibility score"
+   ],
+   [
+    "h2",
+    "How the 0-100 AI visibility score is built: four components"
+   ],
+   [
+    "h2",
+    "Query coverage: how often does your brand appear in AI answers?"
+   ],
+   [
+    "h3",
+    "Why the question set matters"
+   ],
+   [
+    "h3",
+    "How engines, markets and technical issues affect query coverage"
+   ],
+   [
+    "h3",
+    "The link between AI legibility and query coverage"
+   ],
+   [
+    "h2",
+    "Position-weighted citations: why citation order matters"
+   ],
+   [
+    "h3",
+    "An illustrative citation-weighting example"
+   ],
+   [
+    "h3",
+    "Citation frequency versus citation quality"
+   ],
+   [
+    "h2",
+    "AI share of voice and soft mentions"
+   ],
+   [
+    "h3",
+    "Why competitor tracking is essential for AI share of voice"
+   ],
+   [
+    "h3",
+    "What is a soft mention in AI search?"
+   ],
+   [
+    "h3",
+    "Pair AI mentions with sentiment"
+   ],
+   [
+    "h2",
+    "Why did my AI visibility score drop this week? A diagnostic checklist"
+   ],
+   [
+    "h2",
+    "What is a good AI visibility score?"
+   ],
+   [
+    "h2",
+    "How to improve your AI visibility score and report it to leadership"
+   ],
+   [
+    "h2",
+    "Frequently asked questions about AI visibility scores"
+   ],
+   [
+    "h3",
+    "What is a good AI visibility score?"
+   ],
+   [
+    "h3",
+    "Why did my AI visibility score drop this week?"
+   ],
+   [
+    "h3",
+    "What is a soft mention?"
+   ],
+   [
+    "h3",
+    "How is AI share of voice different from SEO share of voice?"
+   ],
+   [
+    "h3",
+    "How often should I report AI visibility to leadership?"
+   ],
+   [
+    "h2",
+    "Putting your AI visibility score into practice"
+   ]
+  ],
+  "text": "An AI visibility score condenses four signals into a single 0-100 figure: how many relevant questions mention you (query coverage), how prominently you are cited (position-weighted citations), how much of the conversation you own against competitors ( AI share of voice ), and how often you are named without a link (soft mentions). This guide explains what each of the four measures and how to read its movement. It does not reproduce a full composite formula, because MentionOwl, the tool I use as the worked example, does not publish its weighting. You cannot recalculate the headline number independently, and I won't pretend otherwise. What you can do is understand the component signals well enough to see which one moved, explain why, and report it with confidence. Disclosure and scope. MentionOwl is the worked example throughout, and I work with it, so treat product-specific details as vendor descriptions, not industry standards. Where I give general advice, it applies to any tool. There is no standardised, industry-wide AI visibility score: tools sample different platforms, prompts and competitors, and they define visibility differently. A score only means something alongside its methodology. What is an AI visibility score, and why does a single number help? Leadership wants one trend line, and marketing needs the components underneath it to act. A composite serves both audiences, provided you never report it without its parts. On its own it can hide the difference between being mentioned, being cited as a source, being recommended and being described favourably. A score that holds steady at 54 might mean coverage rose while citations fell, and those two situations call for very different responses. Why AI search needs repeated sampling Classic rank tracking gives you a position for a keyword on a given day. AI answers behave differently. They vary by engine, by phrasing and by day, and Google notes that results can differ by platform, location, language, personalisation and measurement date. A single snapshot is a weak basis for conclusions. Repeated sampling gives you many observations of the same question set, and aggregating them (a rolling seven-day average or a weekly median, for instance) shows whether the underlying direction is changing. The aggregation method matters, so ask any vendor how daily runs are combined into the figure you see, or record it yourself. There is also a commercial reason to measure visibility separately from clicks. Pew Research Center analysed the browsing of 900 U.S. adults in March 2025 (68,879 Google searches) and found an AI summary on about 18% of searches. Users clicked a traditional result in 8% of visits when a summary appeared, against 15% when it did not, and only about 1% clicked a link inside the summary ( Pew Research Center, July 2025 ). That describes U.S. Google behaviour, not UK behaviour, and it does not show that any brand's score drives revenue. Gartner has also forecast that traditional search engine volume will fall 25% by 2026 as users move to AI chatbots ( Gartner press release, February 2024 ). It is a forecast, not a measured outcome. The engines and method behind MentionOwl's AI visibility score MentionOwl states that it tracks ChatGPT, Claude, Gemini, Copilot and Perplexity. It crawls your website, auto-generates the customer questions your pages should answer, and runs them daily against each engine, recording the answer, citations, sentiment and competitor mentions. Covering several engines matters because buyers do not all use the same assistant. Before trusting a figure like this, I would ask the vendor how many prompts sit behind it, how often they are refreshed, which market and language settings are applied, and how runs are aggregated. Any proprietary score is a model. Its value lies in consistent methodology and trend direction, not the absolute number. If the question set, engines, market or weighting change, treat that as a break in the time series, not as ordinary performance movement. How the 0-100 AI visibility score is built: four components The four components combine into one score, but you should review them individually. To be precise about what is and is not public: MentionOwl does not disclose the exact weighting between components, nor every counting rule, so I won't invent them. The definitions below are the ones I use in this guide's worked examples. Where your tool's rules differ, document them in a methodology note. Component What it measures What a rise may mean What a fall may mean Who owns the fix Query coverage Share of tracked questions where your brand appears at all You are surfacing for more buyer questions Lost ground on topics, a stronger competitor page, a model change or a technical barrier Content and SEO, with web development for technical issues Position-weighted citations How often and how prominently your pages are cited as sources; earlier positions count for more Your pages are being cited earlier or more often Thinner or dated pages, weaker structure, or a rival publishing original research Content and PR AI share of voice Your portion of all brand mentions against named competitors You are gaining relative to rivals A competitor gaining, even if your own activity is unchanged Marketing leadership and competitive intelligence Soft mentions Brand references without a citation or link Possibly growing brand familiarity in AI answers Possibly weaker third-party presence PR, reviews and brand The \"may mean\" wording is deliberate. These are interpretations to test against your own data, not proven causes. I would put this table in your reporting pack as it stands, because it answers \"what moved, and whose job is it?\" before anyone asks. Query coverage: how often does your brand appear in AI answers? Query coverage is the proportion of tracked questions for which your brand appears in an AI-generated answer. Take an illustrative example: 200 tracked questions, with your brand appearing in 56 answers, so coverage is 56 / 200 = 28%. The numerator is questions with at least one mention, the denominator is all tracked questions, and the sampling unit is the question, not each separate run. The result depends on the question set and on what counts as a mention, so document both. Why the question set matters Questions derived from your own website tend to reflect your own positioning. That is useful, but it can bias the set towards topics you already cover. I recommend validating a generated set against customer research, sales-call questions and independent category queries. A good set spans discovery, comparison and purchase stages, and you should report results by topic or intent as well as in aggregate. This is also why I separate branded from unbranded questions. Suppose, illustratively, that 50 of your 200 questions name your brand and you appear in 45 of them, while you appear in 11 of the other 150. Headline coverage is 56 of 200, or 28%, but unbranded coverage is only 7.3% (11 of 150). Unbranded coverage is a useful indicator of discovery, because it shows whether people who do not yet know you are being introduced to you. It is still just one indicator, and it depends on how representative the unbranded questions are. How engines, markets and technical issues affect query coverage Coverage differs by engine, and one assistant lagging can drag the blended figure down, so review engines separately before drawing conclusions. Market and language matter too. Google's AI features are available in many countries and languages, and the Pew figures above are U.S.-only, so a result from one market should not be generalised to another. For a UK business, that has practical consequences. Specify UK English in prompts (\"accountancy software\" rather than \"accounting software\", \"trainers\" rather than \"sneakers\"), set a UK location where the tool allows it, and name UK competitors, since a global rival that dominates US answers may barely register in UK ones. Report UK tracking separately from any US tracking, and note regulatory or seasonal context, such as the April tax year, when you interpret a movement. In my experience of reviewing these reports, a coverage shift usually traces back to one of these: New content being crawled, which can lift coverage A competitor publishing a stronger page on the same topic An engine updating its model or search features Technical barriers on your own site Treat these as working hypotheses to check against the data. I am not claiming they rank in that order of likelihood. The link between AI legibility and query coverage Blocked crawlers, unclear structure or broken pages can suppress coverage regardless of content quality. MentionOwl's AI legibility audit runs 16 technical checks to surface such problems, and any technical SEO audit does the same job. Google states that its AI features rely on the same foundational SEO practices as its other Search features and need no special technical optimisation ( Google Search Central ), so in most cases the fix is ordinary good practice: indexable, accessible, genuinely useful pages. Position-weighted citations: why citation order matters A citation is a source your brand's page is credited as in an answer, usually shown as a link or footnote. Position-weighting gives earlier citations more credit than later ones. I treat this as a reporting heuristic, not a proven measure of influence. It is plausible that users give most attention to what they see first, but nobody has established how that plays out across AI engines, and the weights in any model are the publisher's methodological choice. Classic search offers a useful but limited analogy. Backlinko's analysis of 4 million Google search results found the first organic result averaged a 27.6% click-through rate, against 15.8% for the second and 11.0% for the third ( Backlinko ). That shows order shapes attention in traditional search. It does not tell us that AI answers follow the same distribution. An illustrative citation-weighting example The weights below are an example only, not MentionOwl's actual weights: Position 1: 1.0 Position 2: 0.7 Position 3: 0.5 Position 4: 0.35 Position 5: 0.25 Under these example weights, one first-position citation scores 1.0, while two citations in positions four and five together score 0.6. Frequency still counts, since three low-position citations (positions 3, 4 and 5) would total 1.1, but prominence changes the arithmetic considerably. That is why I recommend reporting raw citation counts and the position distribution alongside any weighted figure. Citation frequency versus citation quality Citation frequency and citation quality are different things. Review which of your pages are being cited and which competitor pages win the questions you lose. When citations slip, check four things first: whether a rival's content is fuller than yours, whether your statistics are outdated, whether your structured data is weaker, and whether a competitor has added original research. In my own reviews, pages that earn early citations often have clear answers, original data and authoritative sourcing, but that is an observation from practice, not a finding from controlled research. The practical levers within generative engine optimization are answer-first formatting, original data, clear sourcing and well-structured pages, and all of them help human readers too. AI share of voice and soft mentions AI share of voice is your mentions divided by total mentions of you and your tracked competitors across the same question set. Counting rules change the answer, so define them. In my examples, each brand counts once per answer (repeat mentions within a single answer are not added), and both cited and uncited mentions are included. If you are mentioned in 30 answers and three competitors in 45, 15 and 10, your share is 30 of 100, or 30%. It is a relative measure. It can rise because you appear more often, because competitors appear less, or because the tracked prompts changed, and on its own it does not establish traffic, leads or sales. Why competitor tracking is essential for AI share of voice Your score can fall even when you have done nothing wrong, because a rival gained ground. Without competitor tracking you would see the dip but not the cause. Reporting share of voice as a trend against two or three named competitors, rather than as a standalone percentage, shows leadership whether the market is moving and not only whether you are. What is a soft mention in AI search? A soft mention is your brand named in an answer without a link or formal citation, for example \"Brand X is a popular option for\u2026\". Definitions vary between tools, and some use \"soft\" for descriptions that do not name the brand at all, so state your definition in your methodology note. In MentionOwl's model it means named but not linked. Soft mentions may indicate that a model is familiar with your brand, and some practitioners expect them to come before citations as visibility matures. I would treat that progression as a hypothesis to test in your own data, not an established pattern. They carry less weight than a prominent citation, yet a named brand can still shape a buyer's shortlist. Pair AI mentions with sentiment A negative or caveated mention should not be reported as a win. A rising mention count with deteriorating sentiment is a warning, not progress. Record mentions, soft mentions, citations, prominence and sentiment separately, because AI answers vary between runs and blended figures can mask these differences. Why did my AI visibility score drop this week? A diagnostic checklist Work through these steps in order. In my experience they usually isolate the likely cause quickly. Check blended versus single-engine movement. A drop confined to one engine points to that engine, not to your brand. Identify the component that moved most. The table above tells you who owns the fix. Review competitor tracking. Look for new entrants or sudden gains that explain a share-of-voice dip. Look for a model or search-feature update. An engine change can shift every brand at once. Run a technical audit. Rule out crawl blocks, broken pages or structural problems. Compare against the aggregated trend. Use a rolling average over two to four weeks of daily data, not a single reading. Annotate the change. Record the likely cause so leadership gets an explanation and not just a number. What is a good AI visibility score? There is no universal benchmark, and I won't offer numeric thresholds because I have no market data to validate them. Scores are comparable only when the prompt set, platforms, locations and scoring method are aligned, so a good score is relative to your category and competitors. A niche UK business can lead a small category, while the same number may be much harder to reach in a crowded market with well-funded rivals. Instead of bands, I recommend three habits. First, fix the comparison set: benchmark against a stable list of direct competitors on the same questions, platforms and market, and document it. Second, prioritise direction of travel by judging a rolling average over several weeks, not any single reading. Third, set component targets, such as raising unbranded query coverage by a set number of percentage points over a quarter. Also segment results by topic, intent, market and engine. A brand can be strong on informational questions and weak on purchase comparisons, and a single grade would hide that. How to improve your AI visibility score and report it to leadership These actions apply with any tool: Fix technical foundations first. Crawl or indexing barriers can suppress coverage and citations, so rule them out before anything else. Fill coverage gaps. Publish pages that directly answer the tracked questions where you are absent. Make your pages worth citing. Add original data, expert authorship and clear sourcing, and lead with the answer. Build third-party mentions and reviews. These may feed soft mentions and share of voice, and they give models independent evidence about you. Connect visibility to outcomes. Measure visits from AI assistants in your analytics so your reporting goes beyond the score. Visibility is not traffic, and leaders will want to see both. Package a monthly leadership view with the headline score, the component breakdown, the competitor share-of-voice trend, sentiment and next actions. The most persuasive thing you can add to a leadership report is an annotation. A line reading \"coverage fell four points after a competitor published a comparison guide; response page scheduled\" turns a worrying number into a managed situation. Vendor-specific note: MentionOwl offers a REST API and weekly digests for feeding data into existing dashboards, and cookieless AI traffic analytics for the traffic step above. Other tools offer comparable exports. Whichever you use, avoid maintaining a separate report. Frequently asked questions about AI visibility scores What is a good AI visibility score? There is no universal benchmark. Compare your score with direct competitors on the same questions, platforms and market, and track the trend over several weeks. Why did my AI visibility score drop this week? Identify which component moved, then check for a competitor gain, an engine update or a technical issue. Confirm the change against several weeks of data before treating it as a trend. What is a soft mention? A soft mention is when an AI assistant names your brand without linking to or citing your website. It is usually weighted below a prominent citation. How is AI share of voice different from SEO share of voice? SEO share of voice is typically based on keyword rankings. AI share of voice measures how often your brand is mentioned in generated answers against competitors across a defined question set. How often should I report AI visibility to leadership? Monthly suits most teams, with weekly monitoring for early warnings, because AI answers vary day to day. Putting your AI visibility score into practice A 0-100 figure is a useful summary, but its authority comes from the components beneath it and the consistency of the method behind it. Document your question set, engines, market and counting rules, report the components alongside the headline, and annotate every significant movement. Product note: If you would like to see coverage, citations, share of voice and soft mentions broken out by engine, MentionOwl offers a $1 seven-day trial for establishing a baseline. \ud83e\udd89 AI visibility score AI share of voice"
+ },
+ {
+  "url": "https://bugviso.com/blog/ai-visibility-score",
+  "title": "AI Visibility Score: How to Measure It, Parts and Weights",
+  "words": 3219,
+  "headings": [
+   [
+    "h2",
+    "How Do You Measure AI Visibility?"
+   ],
+   [
+    "h2",
+    "The AI Visibility Score Formula, Part by Part"
+   ],
+   [
+    "h2",
+    "Worked Example: Rebuilding 26.0 by Hand"
+   ],
+   [
+    "h2",
+    "Where the Points Separate Brands"
+   ],
+   [
+    "h2",
+    "Why Sentiment Gets Only 10%"
+   ],
+   [
+    "h2",
+    "The Zero Cliff: How One Mention Moves the Score 6.7 Points"
+   ],
+   [
+    "h2",
+    "How Sensitive Is the Ranking to the Weights?"
+   ],
+   [
+    "h2",
+    "Rebuild the Score from Your Own Answers"
+   ],
+   [
+    "h2",
+    "How BugViso Computes the Score"
+   ],
+   [
+    "h2",
+    "Five Mistakes When Reading the Number"
+   ],
+   [
+    "h2",
+    "Frequently Asked Questions"
+   ],
+   [
+    "h3",
+    "What is a good AI visibility score?"
+   ],
+   [
+    "h3",
+    "How is an AI visibility score calculated?"
+   ],
+   [
+    "h3",
+    "Why did my AI visibility score jump overnight?"
+   ],
+   [
+    "h3",
+    "Should sentiment count more in an AI visibility score?"
+   ],
+   [
+    "h3",
+    "Does an AI visibility score include Google AI Overviews?"
+   ],
+   [
+    "h2",
+    "Related Guides on AI Visibility Tracking"
+   ],
+   [
+    "h2",
+    "The Score Is Only as Honest as Its Rules"
+   ],
+   [
+    "h2",
+    "Kazi Khalid Hasan Tamim \u00b7 BugViso Team"
+   ],
+   [
+    "h2",
+    "Is your brand in AI answers?"
+   ],
+   [
+    "h2",
+    "See where your site stands"
+   ]
+  ],
+  "text": "On this page An AI visibility score is a 0\u2013100 composite of how often AI engines name your brand, how much of the recommendation space you hold, how early you're named, whether they cite your site, and how they describe you. BugViso's version weights those five parts 35/20/20/15/10. On 280 real unbranded answers, our own brand scored 26.0 and the category leader 39.4 . The weights look arbitrary until you see how each part behaves on real data. By the end of this post you'll be able to recompute the score by hand and spot the two mechanics that make it jump. You'll also know which part to work on first, and you'll have a script that rebuilds the score from your own exported answers. Data used: 35 unbranded buyer prompts \u00d7 ChatGPT, Gemini, Perplexity and Claude \u00d7 2 runs on 2026-10-20 (280 answers, web search on), collected by BugViso's AI Visibility Tracker for bugviso.com against five anonymised competitors (A\u2013E). Scores were recomputed offline with the production scoring module. How Do You Measure AI Visibility? To measure AI visibility, fix a set of buyer prompts, ask each one on several AI engines with web search on, and repeat the runs. Count how often your brand is named, cited and ranked against competitors, then combine those counts into one score. Report a range, not a point, because answers vary from run to run. Four choices make that number trustworthy: which prompts you ask (see our guide to building a prompt set ), which engines you query, how many runs you pool ( how often to track AI visibility ), and which competitors you compare against. The rest of this post covers the maths. If you are starting from zero, set up AI visibility tracking first. The AI Visibility Score Formula, Part by Part The score is a weighted sum of five parts, each scaled 0\u2013100: text Copy index = 0.35\u00b7V + 0.20\u00b7S + 0.20\u00b7P + 0.15\u00b7C + 0.10\u00b7T Part Weight Definition Our brand (pooled) V: Visibility 35 answers that name the brand \u00f7 successful answers 7.5 S: Share of voice 20 brand appearances \u00f7 all tracked-brand appearances, once per answer 10.9 P: Position 20 100 \u00d7 (1 \u2212 (avg rank \u2212 1) \u00f7 (N \u2212 1)), 0 if never named 72.9 C: Citations 15 answers citing the brand's own domain \u00f7 successful answers 10.7 T: Sentiment 10 mean 0\u2013100 sentiment of answers that name the brand, 0 if never named 50.4 Four rules sit around the formula, and each one changes the result: Unbranded prompts only. A prompt that names you is answered with your name every time. In our data, all 120 branded answers named the brand. Counting them would double the score, as our post on branded vs unbranded prompts shows. Successful answers only. Refusals and empty answers are excluded rather than counted as misses. An engine outage shouldn't look like a visibility drop. Per engine first, then averaged. Each part is computed separately for ChatGPT, Gemini, Perplexity and Claude, then averaged with equal weight. An engine that returns more answers doesn't get a bigger vote. N is the size of the tracked set. With you plus five competitors, N = 6. Rank 1 scores 100, rank 6 scores 0, and each step in between is worth 20. These choices follow the usual practice for composite indicators : normalise each part to the same 0\u2013100 scale, then weight them. Fix the rules before you weight anything, because each rule moves the score more than any weight does. Worked Example: Rebuilding 26.0 by Hand Our brand's score of 26.0 comes from five parts, averaged across engines and then weighted. Here are our brand's parts on each engine, computed on 70 unbranded answers per engine: Engine V S P C T Engine index ChatGPT 8.6 15.8 96.7 8.6 63.8 33.2 Gemini 4.3 3.0 100.0 4.3 74.0 30.1 Perplexity 17.1 25.0 95.0 25.7 63.9 40.2 Claude 0.0 0.0 0.0 4.3 0.0 0.6 Average 7.5 10.9 72.9 10.7 50.4 \u2014 Plug the averages into the formula: text Copy 0.35 \u00d7 7.5 = 2.63 0.20 \u00d7 10.9 = 2.18 0.20 \u00d7 72.9 = 14.58 0.15 \u00d7 10.7 = 1.61 0.10 \u00d7 50.4 = 5.04 ----- 26.0 Two things stand out. Position contributes 14.6 of our 26.0 points, more than the other four parts combined. And Claude, the engine that never named us, drags the average down on P and T because both are defined as 0 there. A high P doesn't mean we're winning. Engines named our brand mostly on narrow prompts where it was the obvious answer, and there they named it first. The parts are designed to be read together, never alone. Where the Points Separate Brands The weights tell you what the formula values. The spread tells you what actually decides the ranking. Here's the pooled leaderboard for all six brands: Brand V S P C T Index Competitor A 25.4 24.8 89.1 7.1 66.5 39.4 Competitor B 22.5 19.8 75.7 10.7 55.4 34.1 Competitor E 12.9 11.7 89.7 9.3 65.5 32.7 Competitor C 18.6 18.4 77.5 7.9 55.9 32.5 Competitor D 14.6 14.4 73.3 5.0 64.1 29.8 BugViso 7.5 10.9 72.9 10.7 50.4 26.0 Multiply each part's range across the six brands by its weight and you get how many index points it can separate them by: Part Range across brands \u00d7 weight Points of separation V 7.5 \u2192 25.4 0.35 6.3 P 72.9 \u2192 89.7 0.20 3.4 S 10.9 \u2192 24.8 0.20 2.8 T 50.4 \u2192 66.5 0.10 1.6 C 5.0 \u2192 10.7 0.15 0.9 Visibility does most of the ranking work, which is the intent: being named at all is what a buyer experiences. Citations separate brands least. Big brands get named without a link to their own site, so their C stays low even when V is high (see when AI names you, does it link your website ). Why Sentiment Gets Only 10% Sentiment is the part people want to weight most and the part that deserves it least. Three reasons, all visible in the data: It barely discriminates. Most brands sit between 55 and 67. Sentiment scorers are calibrated so that 50 means \"neutral or merely listed\", and most answers just list vendors. It's measured on few answers. T is the mean over answers that name the brand. Our brand had 21. A single critical sentence moves a 21-answer mean by several points. It's conditional on being named. A brand named once, warmly, can out-score one named 70 times in neutral lists. Weighting T heavily would reward being rare. Sentiment still matters as a warning light. A drop below about 40 means answers raise concerns about you, and that belongs in a report whatever the index says. It just shouldn't decide the ranking. Our AI brand sentiment study of 446 scored mentions shows why: a third of single-answer labels flip between runs. The Zero Cliff: How One Mention Moves the Score 6.7 Points The definitions of P and T contain a cliff. On any engine where a brand is never named, both are 0. The first mention lifts P from 0 to as much as 100, and T from 0 to whatever that answer's sentiment is. We simulated one extra first-place mention of our brand (with sentiment 60) on each engine, keeping everything else fixed: Engine that gains one mention Index change ChatGPT (already named 6 times) +0.3 Gemini (already named 3 times) +0.2 Perplexity (already named 12 times) +0.3 Claude (never named) +6.7 One answer out of 280 moves the score by 6.7 points when it lands on a zero engine. The same answer on an engine that already names you is worth 0.3. An extra own-site citation, by comparison, is worth 0.1 wherever it lands. This isn't hypothetical. Competitor D's index rose from 21.2 in the first run to 32.3 in a re-run 23 minutes later. Its ChatGPT mentions went from 0 of 35 answers to 4 of 35, so its ChatGPT index went from 0 to 34.8, and the four-engine average jumped 11 points. Nothing about the brand changed. \ud83d\udca1 Reading rule: when an index moves more than 5 points between runs, check the per-engine table first. A 0 \u2192 1 change on one engine explains most big jumps. How Sensitive Is the Ranking to the Weights? If the weights are a judgement call, the ranking should survive reasonable alternatives. We re-ranked the six brands under four other schemes: Weighting Order (best \u2192 worst) Production (35/20/20/15/10) A, B, E, C, D, BugViso Equal (20 each) A, E, B, C, D, BugViso Without sentiment A, B, C, E, D, BugViso Sentiment doubled A, B, E, C, D, BugViso Visibility only A, B, C, D, E, BugViso The top and bottom never move. The middle reshuffles because C and E sit within a point of each other (32.5 vs 32.7). A change that small is inside the run-to-run noise, so a report shouldn't present it as a result. Our brand ranked last under every scheme. That's useful in itself: the score isn't hiding a weak result behind a friendly weighting. Rebuild the Score from Your Own Answers This script recomputes V, S, P and C per engine from a CSV export, averages them across engines and ranks the brands. It also reports what one more first-place mention would be worth on each engine, so you can see where the cliff is. Sentiment needs a language model to score, so the script leaves T out and rescales the other weights, which is what the production scorer does when sentiment can't be measured. python Copy #!/usr/bin/env python3 \"\"\"AI visibility index (V/S/P/C) per engine and engine-averaged, plus what one more mention is worth. Usage: python3 ai_visibility_index.py answers.csv --brand Acme --domain acme.com \\ --competitor Globex --competitor-domain globex.com [--competitor ... --competitor-domain ...] answers.csv columns: engine, answer, cited_urls (space-separated), branded (1/0; branded rows are skipped). Sentiment (T) needs a model, so it is left out and the other weights are rescaled. \"\"\" import argparse, csv, re from collections import defaultdict from urllib.parse import urlparse W = {\"V\": 0.35, \"S\": 0.20, \"P\": 0.20, \"C\": 0.15} def host(u): return (urlparse(u).hostname or \"\").lower().removeprefix(\"www.\") def parts(answers, brands): \"\"\"answers: list of (ordered brand list, set of cited hosts).\"\"\" n = len(answers) appear, ranks, cites = defaultdict(int), defaultdict(list), defaultdict(int) for order, hosts in answers: for rank, b in enumerate(order, 1): appear[b] += 1; ranks[b].append(rank) for b, d in brands.items(): cites[b] += any(h == d or h.endswith(\".\" + d) for h in hosts) total, N = sum(appear.values()), len(brands) out = {} for b in brands: p = 100 * (1 - (sum(ranks[b]) / len(ranks[b]) - 1) / (N - 1)) if ranks[b] else 0.0 out[b] = {\"V\": 100 * appear[b] / n, \"S\": 100 * appear[b] / total if total else 0.0, \"P\": p, \"C\": 100 * cites[b] / n} return out def index(p): return sum(W[k] * p[k] for k in W) / sum(W.values()) def main(): ap = argparse.ArgumentParser() ap.add_argument(\"csv\"); ap.add_argument(\"--brand\", required=True); ap.add_argument(\"--domain\", required=True) ap.add_argument(\"--competitor\", action=\"append\", default=[]); ap.add_argument(\"--competitor-domain\", action=\"append\", default=[]) a = ap.parse_args() brands = {a.brand: a.domain.lower(), **{c: d.lower() for c, d in zip(a.competitor, a.competitor_domain)}} rx = {b: re.compile(r\"(?<![\\w-])\" + re.escape(b) + r\"(?![\\w-])\", re.I) for b in brands} by_engine = defaultdict(list) with open(a.csv, newline=\"\", encoding=\"utf-8\") as f: for r in csv.DictReader(f): if r.get(\"branded\") == \"1\" or not r[\"answer\"].strip(): continue # branded prompts name you by construction; empty answers aren't misses hits = {b: m.start() for b, x in rx.items() if (m := x.search(r[\"answer\"]))} by_engine[r[\"engine\"]].append((sorted(hits, key=hits.get), {host(u) for u in r[\"cited_urls\"].split()})) per = {e: parts(ans, brands) for e, ans in sorted(by_engine.items())} avg = {b: {k: sum(per[e][b][k] for e in per) / len(per) for k in W} for b in brands} print(f\"{'brand':<16}\" + \"\".join(f\"{k:>7}\" for k in W) + f\"{'index':>8}\") for b in sorted(brands, key=lambda b: -index(avg[b])): print(f\"{b:<16}\" + \"\".join(f\"{avg[b][k]:7.1f}\" for k in W) + f\"{index(avg[b]):8.1f}\") print(f\"\\nWhat one more {a.brand} mention (first place, own site cited) on each engine is worth:\") base = index(avg[a.brand]) for e, ans in by_engine.items(): i = next((i for i, (order, _) in enumerate(ans) if not order), None) if i is None: continue trial = ans[:i] + [([a.brand], {brands[a.brand]})] + ans[i + 1:] p = dict(per); p[e] = parts(trial, brands) new = {k: sum(p[x][a.brand][k] for x in p) / len(p) for k in W} print(f\" {e:<11} {index(new) - base:+.1f} points\") if __name__ == \"__main__\": main() bash Copy python3 ai_visibility_index.py answers.csv --brand \"Acme\" --domain acme.com \\ --competitor \"Globex\" --competitor-domain globex.com \\ --competitor \"Initech\" --competitor-domain initech.io On our 280 answers it reproduces the production V, S, P and C exactly (7.5, 10.9, 72.9, 10.7). Without sentiment, our index comes out at 23.3 and the Claude cliff at +5.8 . Exact-name matching is deliberately simple; add aliases and domains as described in our brand mention detection guide . How BugViso Computes the Score BugViso's AI Visibility Tracker computes the score after every run. It asks each prompt on ChatGPT, Gemini, Perplexity, Claude and Google AI Overviews with web search on (for example OpenAI's web search tool and Gemini's grounding with Google Search ), then applies the formula above to the unbranded answers, engine by engine. The AI visibility score you see is the engine average, with the same five parts listed underneath so you can see which one moved. The same computation also produces: A leaderboard that ranks you against at least three competitors. Ties share a rank and visibility breaks them. An engine scorecard with mention rate, prompt coverage, citation coverage, share of voice and accuracy for each engine, which is where a zero engine shows up first. Segments by engine, buyer stage and topic. Any segment built on fewer than 20 answers is flagged low confidence. A 95% Wilson score interval on visibility. Ours was 5.0\u201311.2% around a 7.5% point estimate. Score drivers. Each part's points and how far it moved since the comparison run. AI Overviews joins the average only once Google has shown an overview on at least five unbranded queries. Otherwise one engine with three answers would weigh as much as one with seventy. Removing a wrong mention recomputes the run's score from the stored answers. The full breakdown is on the AI visibility tracker page. Five Mistakes When Reading the Number Comparing scores across competitor sets. S and P both depend on who else is tracked. A score against three competitors can't be compared with one against five. Treating P as good news. High position with low visibility means \"named first on the few prompts where you're named\", not \"leading\". Our AI answer position ranking analysis shows how far solo mentions inflate it. Ignoring the per-engine table. An 11-point jump can be one engine going from zero to one mention, as Competitor D's did. Mixing in branded prompts. It inflates every part at once. Keep branded answers for accuracy and sentiment checks. Calling a one-point gap a lead. Competitors C and E differ by 0.2. Our two runs differed by 0.9 on the same prompts. For the sample sizes behind a stable number, see how often to track AI visibility . Frequently Asked Questions What is a good AI visibility score? There's no universal benchmark for an AI visibility score, because the score depends on your competitor list and prompts. Compare yourself with the leader on the same prompts, engines and competitor set. In our category, the leader scored 39.4 and the last of six brands 26.0. How is an AI visibility score calculated? Compute five parts per engine on unbranded answers: visibility, share of voice, position, own-site citations and sentiment. Average each part across engines, then weight them 35/20/20/15/10 and add them up. Why did my AI visibility score jump overnight? Usually because one engine went from never naming you to naming you once, which lifts both position and sentiment from zero. Check the per-engine parts before you celebrate. Should sentiment count more in an AI visibility score? Not for ranking. Sentiment varies little between brands, it's measured only on answers that name you, and it can reward brands that are rarely named. Track it separately as a warning signal. Does an AI visibility score include Google AI Overviews? In BugViso, yes, once Google has shown an overview for at least five unbranded queries in the run. Until then, AI Overviews is reported on its own and kept out of the average. Related Guides on AI Visibility Tracking The score is the summary. These guides cover each part of it and the work around it. Metrics and how to read them AI share of voice : the formula and sample sizes for how often you are named against rivals. Prompt coverage vs mention rate : which of the two AI metrics to report, and when each misleads. Brand position in AI answers : whether being named first matters. AI brand sentiment : how to score what engines say about you. Are AI answers consistent? : how much the same prompt changes between runs. AI visibility competitor benchmark : fair comparisons that beat answer noise. Mentions, citations and accuracy Track brand mentions in AI search : the how-to for ChatGPT and Perplexity. Brand mention detection : aliases, misspellings and false matches. Brand name ambiguity : what to do when your name is also a common word. Parse AI citations and classify citation sources : turning raw citations into a clean table. AI citation gap analysis : sources that cite rivals but not you. Check what ChatGPT says about your brand and AI claims verification : finding and fixing wrong claims. Prompts Buyer prompts for AI search , branded vs unbranded prompts and alternatives prompts : writing prompts that measure the right thing. Prompt versioning , topic grouping and AI answers by buyer intent : keeping a prompt set readable over time. Cadence, reporting and action AI visibility audit in 5 minutes : a quick manual check before you set anything up. Week-over-week AI visibility and automated GEO monitoring : reading change and alerting on real drops. AI visibility email report and AI visibility report template : what to send clients and what to leave out. AI visibility action plan : turning a report into a ranked content plan. AI visibility API vs scraping : how tools collect data and which data to trust. The Score Is Only as Honest as Its Rules Fix the competitor set, exclude branded prompts, average per engine and read the parts next to the total. Then the AI visibility score tells you which lever to pull, which is how BugViso's AI visibility tracking presents it after every run. Written by Kazi Khalid Hasan Tamim \u00b7 BugViso Team Kazi writes BugViso\u2019s guides on website audits, Core Web Vitals, technical SEO, accessibility and AI search. The data in them comes from audits BugViso runs in a real Chromium browser, including our 219-site study of website health. Found this useful? Share it. Summarise with AI Open this guide in your assistant. Follow BugViso New guides and audit data as we publish them. Medium @bugviso LinkedIn company/bugviso AI visibility tracker Is your brand in AI answers? See how often AI assistants mention you, cite your site and rank you against your competitors. ChatGPT Gemini Perplexity Claude AI Overviews See how it works See where your site stands Run a free BugViso audit for SEO, speed, accessibility and AI search readiness \u2014 with fixes you can ship today. Run an audit"
+ },
+ {
+  "url": "https://www.erlin.ai/blog/ai-visibility-score",
+  "title": "AI visibility score: what is it & how to check yours \u00b7 Erlin",
+  "words": 2459,
+  "headings": [
+   [
+    "h2",
+    "What is an AI visibility score?"
+   ],
+   [
+    "h3",
+    "What an AI visibility score looks like in practice"
+   ],
+   [
+    "h2",
+    "The metrics that matter now"
+   ],
+   [
+    "h2",
+    "How the AI visibility score is measured"
+   ],
+   [
+    "h3",
+    "Common score components"
+   ],
+   [
+    "h2",
+    "Factors that affect your AI visibility score"
+   ],
+   [
+    "h3",
+    "Content quality and fact density"
+   ],
+   [
+    "h3",
+    "Entity coverage and clarity"
+   ],
+   [
+    "h3",
+    "Structured data and technical signals"
+   ],
+   [
+    "h3",
+    "Citation history and momentum"
+   ],
+   [
+    "h3",
+    "Content freshness"
+   ],
+   [
+    "h3",
+    "Competitive landscape"
+   ],
+   [
+    "h2",
+    "How to check your brand's AI visibility score"
+   ],
+   [
+    "h3",
+    "Step 1: pick your tracking platform"
+   ],
+   [
+    "h3",
+    "Step 2: sign up and add your domain"
+   ],
+   [
+    "h3",
+    "Step 3: add your competitors"
+   ],
+   [
+    "h3",
+    "Step 4: select the prompts you want to track"
+   ],
+   [
+    "h3",
+    "Step 5: review your baseline snapshot"
+   ],
+   [
+    "h2",
+    "How to improve your AI visibility score"
+   ],
+   [
+    "h3",
+    "1. Audit your current AI presence"
+   ],
+   [
+    "h3",
+    "2. Identify citation gaps"
+   ],
+   [
+    "h3",
+    "3. Create entity-rich content"
+   ],
+   [
+    "h3",
+    "4. Optimize technical signals"
+   ],
+   [
+    "h3",
+    "5. Build authoritative third-party validation"
+   ],
+   [
+    "h3",
+    "6. Monitor and iterate"
+   ]
+  ],
+  "text": "Quick answer An AI visibility score is a single number, usually on a 0 to 100 scale, showing how often and how favorably your brand appears in AI-generated answers. It rolls up mention rate, citation rate, share of voice, average position and sentiment. To check yours, run high-intent prompts across AI platforms against chosen competitors, or use a tracker like Erlin to get an instant baseline. According to Erlin's 2026 State of AI Search report , 67% of marketing leaders don't know how to measure their AI visibility, and 58% say no one on their team owns it. Meanwhile, AI-referred visitors tend to convert better than traditional organic visitors, so this is a channel worth measuring properly. Every month without a baseline is a month of guessing. This article explains what an AI visibility score is, how it's calculated, what affects it, and how to check yours. What is an AI visibility score? An AI visibility score is a composite metric that measures how consistently and favorably your brand appears in AI-generated answers. When someone asks Perplexity, \"Compare HubSpot vs Salesforce,\" the AI system pulls from a pool of sources and returns a small set of brands, usually two to four. Whether your brand makes that list, how often it does, and how it's described is what the AI visibility score tracks. Unlike SEO rankings, which operate on a spectrum, AI visibility is closer to binary per query: you're either in the answer or you're not. Brands with high scores show up consistently. Brands with low scores appear occasionally or not at all. What an AI visibility score looks like in practice The screenshot below from Erlin's dashboard makes this concrete. The metrics across the top give you your headline numbers at a glance: Mention Rate (8.4%), Citation Rate (0.0%), Share of Voice (8.4%), Average Position (4.4), and Sentiment (70). The AI Visibility Score chart shows the brand sitting at 25.0% over a week-long window, meaning it appeared in about one in four relevant AI-generated answers. That's your baseline. The \"AI vs Other Traffic\" panel shows where sessions are actually coming from, and the Platform Breakdown table splits performance by platform: ChatGPT at 13.7% mention rate and 4.9 average position, Perplexity at 3.3% and 3.0. What's useful about this view is how little you need to interpret. If your mention rate is 8% and a competitor's is 22%, you know where you stand. The score doesn't explain why, that's what the platform's opportunity analysis is for, but it tells you clearly that there's a gap worth closing. The metrics that matter now The AI visibility score is an aggregate, which means it's worth understanding what goes into it. These are the individual metrics that matter in 2026. Mention rate tracks how often your brand appears by name in AI-generated answers. If you run 100 relevant queries and your brand shows up in 8 of the responses, your mention rate is 8%. It's the clearest signal of raw presence. Citation rate is narrower: it measures how often AI platforms link out to or explicitly source your content. A mention means the AI named you. A citation means it's treating your content as a reference. Citation rate tends to be lower, and it's often what separates brands that get traffic from AI search versus brands that just get mentioned. Share of voice puts your numbers in a competitive context. The formula is simple: your mentions divided by total industry mentions times 100. If your brand is mentioned 18 times across 100 relevant responses and competitors are mentioned a combined 82 times, your AI share of voice is 18%. This is arguably the most actionable metric because it tells you not just where you are, but who's winning the space you're competing for. Average position tracks where in the AI response your brand typically appears. First mention carries more weight than being buried in a list of six. Some tracking tools weight this into the overall score; others report it separately. Sentiment score captures how AI describes your brand when it does mention you. A brand mentioned frequently but described as \"expensive\" or \"limited\" has a different challenge than one with positive, specific framing. Sentiment gaps often reveal content or reputation issues that raw mention counts don't surface. Together, these five metrics paint a complete picture of AI search performance. Tracking one in isolation gives you an incomplete view. How the AI visibility score is measured AI visibility trackers operate like rank trackers but for generative AI. These trackers query LLMs with relevant prompts to detect brand appearances. Here\u2019s how the process looks like: Define target prompts based on user intents (e.g., \"best [product] for [use case]\") grouped by topics or buyer stages. Run prompts repeatedly across AI platforms (ChatGPT, Perplexity, Gemini, Copilot) to capture variability in responses. Analyze responses for metrics like mention frequency, position, citations, sentiment, and query breadth. Normalize and weight components into a composite score (often 0-100), then benchmark against competitors for share of voice. Update daily or weekly. Filter hallucinations via cross-validation and track trends over time. Common score components Most trackers use weighted factors normalized per industry.\u200b Component Weight Example Description Mention Frequency 40% How often the brand appears across queries, adjusted for response length.\u200b Position & Prominence 25% Placement (e.g., top recommendation scores higher than footnotes).\u200b Citation Quality 20% Authority of sources cited (e.g., official sites over forums).\u200b Query Coverage 15% Breadth across diverse prompts and intents.\u200b A tool like Erlin runs thousands of purchase-intent prompts across ChatGPT, Perplexity, Claude, Google AI Mode, Gemini, and Copilot. For each prompt, it captures: which brands were mentioned, in what order, with what framing, and whether content was linked or cited. That raw data gets aggregated into scores for each metric, then rolled up into the overall AI visibility score. The score itself is typically expressed on a 0 to 100 scale. Erlin's research defines the maturity tiers this way: AI Invisible (under 20%): minimal appearance in AI answers; limited structured data and weak citation signals AI Fragile (20 to 40%): inconsistent inclusion, concentrated in a narrow set of queries AI Present (40 to 60%): regular appearance in core category queries; structured content in place AI Preferred (60 to 80%): consistent inclusion in high-intent and comparison queries; strong authority signals AI Dominant (80%+): frequent top inclusion across core and adjacent categories; sustained citation authority Most brands that have never optimized for AI search land in the Invisible or Fragile tier. The prompt library matters as much as the measurement itself. Erlin's platform suggests high-intent prompts relevant to your category: queries that mirror what buyers actually type when they're in research mode, not generic brand awareness questions. Factors that affect your AI visibility score Content quality and fact density AI systems don't evaluate brand holistically. They evaluate specific factual claims they can extract, verify, and reuse in an answer. Erlin's analysis of 500+ brands found that brands with 9+ structured facts in their content coverage (pricing, features, use cases, technical specs, comparison data) achieve 78% AI coverage. Brands with 0 to 2 facts achieve just 9%. Marketing language doesn't help. Claims like \"industry-leading platform\" or \"the most innovative solution\" give AI nothing to work with. Specific, extractable facts, such as integration counts, pricing tiers, setup time, customer outcomes, etc., are what get cited. Entity coverage and clarity AI systems need to understand who you are before they can recommend you. Entity coverage refers to how clearly and consistently your brand identity is defined across the web: your website, Wikipedia, third-party reviews, press mentions, and social profiles. Inconsistent or incomplete signals lead to omission. This is different from SEO. You don't need the most backlinks. You need the clearest signal. Erlin's data found that smaller brands with strong entity context routinely outperform Fortune 500 companies in specific query categories. AI doesn't default to the biggest brand. It defaults to the clearest one. Structured data and technical signals How your content is formatted affects whether AI can read it at all. Erlin's research shows that static HTML with schema markup achieves a 94% AI parsing success rate. JavaScript-rendered content drops to 23%. PDFs land at 7%. Three specific formats show consistent coverage lifts: comparison tables (about 34% higher coverage within two weeks), llm.txt files (32% lift), and FAQ schema markup (28% lift over three weeks). These aren't cosmetic improvements; they directly affect whether AI can extract your content as a citable source. Citation history and momentum Third-party validation is the biggest lever most brands aren't using. Erlin's research found that third-party sources drive 68% of all AI citations. Reddit discussions carry a 3.4x citation lift over owned content alone. Wikipedia articles carry 2.9x. Review platforms and affiliates come in at 2.6x. Your own website content is the baseline. Third-party validation is what separates brands that appear occasionally from brands that appear consistently. Content freshness AI systems continuously re-evaluate brand information for recency. Brands that update content monthly maintain roughly 23% higher AI representation than those that don't. Content under 3 months old has 48% average coverage. Content older than 24 months drops to 18%. The staleness penalty is estimated at about 1.8% AI coverage per month of inactivity. That's not catastrophic month to month, but it compounds. Competitive landscape AI typically cites 2 to 3 brands per response, which creates a winner-take-most dynamic. Your score isn't static. It shifts as competitors improve their visibility. Monitoring share of voice against specific competitors matters because a rising competitor in your category can suppress your appearances even if your absolute content quality hasn't changed. How to check your brand's AI visibility score The process is quicker than you'd think. Here's how it works using Erlin, one of the few tools that ties visibility tracking directly to content action, rather than just monitoring. Step 1: pick your tracking platform Look for a tool that covers multiple AI platforms at once, supports competitor benchmarking, integrates with GA/GSC, and includes a prompt library for your category. For teams that want to move from \"here's where I'm falling short\" to \"here's how to fix it\" without jumping between tools, Erlin is built exactly for that. The gap analysis flows straight into an action center. Step 2: sign up and add your domain Head to app.erlin.ai/get-started . Once you enter your domain, Erlin automatically pulls brand context, gathers social signals, and builds baseline insights in the background. No manual configuration needed. Step 3: add your competitors Erlin recommends up to five competitors based on your domain and category. Keep the suggestions, replace them, or add your own. Your AI visibility score is most useful in context: knowing you're at 25% hits differently when your closest competitor is sitting at 61%. Step 4: select the prompts you want to track Erlin surfaces high-intent prompts relevant to your category; the kinds of queries buyers actually use when they're actively researching. You can refine the list, add industry-specific terms, or zero in on the prompts where beating competitors matters most. Step 5: review your baseline snapshot Once setup is complete, you get an instant read: your AI Visibility Score, Traffic Rank, and a side-by-side competitor comparison. The dashboard breaks down platform-level data by mention rate, citation rate, and average position across AI platforms like ChatGPT and Perplexity. The \"AI vs Other Traffic\" panel tracks how AI referral traffic stacks up against traditional sessions over time. The \"AI vs Other Conversion Rate\" panel tends to be where eyebrows go up. For many brands, AI traffic converts well above other channels, which is why this panel is worth watching. This is your baseline. Every future change, whether it's a content update, schema fix, or citation campaign, gets measured against it. How to improve your AI visibility score 1. Audit your current AI presence Before optimizing anything, understand what AI is already saying about your brand. In Erlin, checking your AI visibility shows how AI platforms currently describe your brand, what they get wrong, and where you're absent from conversations where competitors appear. Run the brand audit checklist from Erlin's report on: Fact density (pricing accessible? features in scannable formats? competitive positioning explicit?) Third-party validation (reviews on major platforms? Reddit presence? Wikipedia mentions?) Structured data (llm.txt file? FAQ schema? schema.org markup?) Each \"no\" is a concrete gap with an estimated coverage impact. 2. Identify citation gaps Pull your competitor comparison data and look for specific prompts where competitors appear and you don't. Those are your highest-priority gaps: the queries where buyer intent is high, and you're currently invisible. Citation gaps usually fall into two buckets: content gaps (you don't have content that addresses this query) and structural gaps (you have content, but AI can't parse or surface it). They require different fixes. 3. Create entity-rich content Rewrite key pages around extractable facts. Every page where AI might pull a response should have: specific pricing or pricing ranges, clear feature descriptions with technical details, use cases tied to real scenarios, and comparison information that makes your differentiation explicit. If your homepage says \"powerful, flexible platform,\" that's not extractable. If it says \"integrates with 200+ tools, setup under 30 minutes, used by 5,000+ teams,\" that is. 4. Optimize technical signals Implement FAQ schema on question-based pages. Add an llm.txt file that summarizes your brand's key facts in a format AI crawlers can read easily. Make sure your most important content, pricing, features, comparison pages, is available in static HTML, not JavaScript-rendered. Check that schema.org Product or Organization markup is in place on key pages. Erlin's data suggests that addressing all five structural signals moves brands from 23 to 35% coverage to 60 to 80% coverage. That's not a marginal improvement. 5. Build authoritative third-party validation This takes longer than the technical fixes, but it has the highest impact. Pursue verified reviews on G2, Capterra, and industry platforms. Get into relevant Reddit discussions, not promotional, genuinely helpful answers to questions in your category. Aim for coverage in industry publications and blogs that AI systems treat as authoritative sources. Erlin tracks citation shifts across third-party sources and alerts teams when brand mentions or AI citation positions change, so you can see the impact of this work in near-real-time rather than waiting for quarterly reviews. 6. Monitor and iterate AI visibility decays without maintenance. Brands that go silent lose roughly 1.8% AI coverage per month. Monitored brands catch errors in about 14 days; unmonitored brands take an average of 67 days, by which point the damage is compounding. Erlin's platform runs continuous prompt tracking and flags when citation positions shift, content goes stale, or a competitor surges. That's the difference between managing AI visibility as a channel and discovering six months later that you've lost ground you can't easily recover."
+ },
+ {
+  "url": "https://docs.rankraft.ai/analytics/visibility/visibility-score",
+  "title": "Visibility Score and metric formulas - RankRaft AI Docs",
+  "words": 727,
+  "headings": [
+   [
+    "h2",
+    "\u200b Visibility Score"
+   ],
+   [
+    "h2",
+    "\u200b Component metrics"
+   ],
+   [
+    "h3",
+    "\u200b Example"
+   ],
+   [
+    "h2",
+    "\u200b Margin"
+   ],
+   [
+    "h2",
+    "\u200b Competitors"
+   ],
+   [
+    "h2",
+    "\u200b Importance"
+   ],
+   [
+    "h2",
+    "\u200b Small samples"
+   ],
+   [
+    "h2",
+    "\u200b Why past numbers can change"
+   ]
+  ],
+  "text": "Every number in RankRaft AI is calculated from the stored answers in the selected date range. Nothing is modelled or estimated. Every rate counts only answers that were actually shown: when Google shows no AI Overview for a question, that run is left out rather than counted as \u201cnot mentioned\u201d. \u200b Visibility Score A single number from 0 to 100: Score = 100 \u00d7 ( 0.45 M + 0.35 C + 0.20 P ) \\text{Score} = 100 \\times (0.45\\,M + 0.35\\,C + 0.20\\,P) Score = 100 \u00d7 ( 0.45 M + 0.35 C + 0.20 P ) where M is your mention rate, C your citation rate and P your prompt coverage, each between 0 and 1. The result is rounded to the nearest whole number. Component Weight Why Mention rate 45% Being named is the outcome that matters most. Citation rate 35% A link is evidence AI trusts your site, and it\u2019s what sends traffic. Prompt coverage 20% Rewards showing up across many questions rather than dominating one. Position isn\u2019t part of the score on purpose. It\u2019s only defined for answers that list brands in order, so including it would penalise brands mentioned in prose. \u200b Component metrics Metric Formula Mention rate answers that name you (or an alias) \u00f7 all answers Citation rate answers that link to at least one page on your domain \u00f7 all answers Prompt coverage prompts where you were named at least once \u00f7 prompts asked in the range Average spot in each answer, the brands found are numbered by first appearance (1 = named first). Averaged over answers that mention you, to one decimal place Share of voice your mentions \u00f7 all brand mentions, counting you and every competitor on your list, confirmed or not. Each brand counts once per answer \u200b Example In a week with 10 prompts on 3 engines (210 answers): you\u2019re named in 63 answers, cited in 21, and named at least once for 6 of the 10 prompts. Mention rate = 63 \u00f7 210 = 30% Citation rate = 21 \u00f7 210 = 10% Prompt coverage = 6 \u00f7 10 = 60% Visibility Score = 100 \u00d7 (0.45 \u00d7 0.30 + 0.35 \u00d7 0.10 + 0.20 \u00d7 0.60) = 29 \u200b Margin Every score carries a 95% interval, shown as \u00b1 N and as a shaded band on trend charts: margin = 100 \u00d7 1.96 \u00d7 p ( 1 \u2212 p ) n \\text{margin} = 100 \\times 1.96 \\times \\sqrt{\\frac{p(1-p)}{n}} margin = 100 \u00d7 1.96 \u00d7 n p ( 1 \u2212 p ) \u200b \u200b where p is your mention rate (held between 5% and 95%) and n is the number of answers. The margin is never shown as less than 1 point. More prompts, more engines and longer date ranges all narrow it. Tied within margin: on the leaderboard, two neighbouring brands whose scores differ by no more than their combined margins are marked as tied. Don\u2019t read anything into the order of tied brands. \u200b Competitors Competitors are scored with exactly the same formula, over the same answers. A competitor is cited when an answer links to its domain or a subdomain of it. Rank orders you and your confirmed competitors by Visibility Score. \u200b Importance Prompts and gap prompts are tagged by importance, based on your mention rate for that prompt: Importance Your mention rate High 0% Medium Below 40% Low 40% or more \u200b Small samples Figures based on very few answers are greyed out and labelled Low sample \u00b7 N answers . Treat them as a hint, not a result. \u200b Why past numbers can change The scores for a date range are recalculated from the stored answers whenever you look. They change if you: Confirm or archive a competitor. The leaderboard and rank show confirmed competitors only, so confirming one adds its row, with its full history, and archiving one removes it. Share of voice doesn\u2019t move: every competitor\u2019s mentions are always in the total, whether or not its row is shown. - Change the range. A 30-day score covers different answers from a 7-day score. Adding a competitor yourself, or a new alias, works differently: brand names are matched when each answer is collected, so the change counts from the next scan onward. Earlier answers keep the matches made at the time. Was this page helpful? Yes No"
+ }
+]

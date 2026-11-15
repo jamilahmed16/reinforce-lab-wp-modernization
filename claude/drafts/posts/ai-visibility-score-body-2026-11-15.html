@@ -1,0 +1,139 @@
+<p>An AI visibility score is a single number, usually from 0 to 100, that a tool builds from how often AI answers name your brand, link to your site and place you ahead of competitors. There is no standard formula. Each tool picks its own inputs and weights, so a score of 40 from one tool is not the same as a 40 from another. The useful way to read a score is as a trend from one tool, with the parts shown separately and an honest margin for noise.</p>
+<p>This guide explains what the score measures, shows the formulas that several tools publish, and applies two of them to the same sample data so you can see how the numbers differ. It also covers how to calculate your own, what a "good" score means, and how to report it. We cite only pages we could read at the publisher, and we state when a source is a vendor's own documentation.</p>
+
+<h2>What is an AI visibility score?</h2>
+<p>An AI visibility score is a composite metric. It condenses several counts from a fixed set of AI answers into one figure. The counts come from running a list of buyer questions through tools such as ChatGPT, Gemini, Perplexity and Google's AI Overviews, then recording what each answer says. The goal is to show, in one number, whether AI tools include your brand when buyers ask about your category.</p>
+<p>You may also see the phrases "AI brand visibility score" and "AI visibility". They mean the same idea. Our guide to <a href="/ai-brand-visibility/">checking if AI tools mention your brand</a> shows how to run the underlying test by hand.</p>
+
+<h2>What goes into an AI visibility score?</h2>
+<p>Most tools use some mix of the following parts. The names differ, but the ideas are alike.</p>
+<table>
+<thead><tr><th>Part</th><th>What it measures</th><th>Simple formula</th></tr></thead>
+<tbody>
+<tr><td>Mention rate</td><td>How often an answer names your brand</td><td>Answers that name you divided by all answers</td></tr>
+<tr><td>Citation rate</td><td>How often an answer links to your site as a source</td><td>Answers that cite your domain divided by all answers</td></tr>
+<tr><td>Prompt coverage</td><td>How many different questions name you at least once</td><td>Prompts where you appear divided by prompts asked</td></tr>
+<tr><td>Position</td><td>How early you are named in an answer that lists brands</td><td>Often 1 for first, 1/2 for second, 1/3 for third</td></tr>
+<tr><td>Share of voice</td><td>Your mentions compared with all brand mentions in your set</td><td>Your mentions divided by mentions of you and your competitors</td></tr>
+<tr><td>Sentiment</td><td>How the answer describes you</td><td>A positive, neutral or negative label</td></tr>
+</tbody>
+</table>
+<p>A mention and a citation are different. An answer can name you without a link, or link to your page without naming you. Keep them in separate columns. They need different fixes.</p>
+
+<h2>How do different tools calculate it?</h2>
+<p>Several vendors publish their formulas. Reading them shows that "AI visibility score" is a label, not a shared standard. The table uses each vendor's own documentation.</p>
+<table>
+<thead><tr><th>Tool</th><th>Formula, as published</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>RankRaft</td><td>100 × (0.45 × mention rate + 0.35 × citation rate + 0.20 × prompt coverage)</td><td>Leaves position out on purpose. Shows a 95% margin.</td></tr>
+<tr><td>AnswerixAI</td><td>100 × (0.6 × mention rate + 0.25 × citation rate + 0.15 × position factor)</td><td>Scales the position factor down when few answers name you.</td></tr>
+<tr><td>cloro</td><td>100 × (0.6 × mention rate + 0.25 × citation rate + 0.15 × position factor)</td><td>Same weights as AnswerixAI. Position is the mean of 1 divided by position.</td></tr>
+<tr><td>BugViso</td><td>0.35 × visibility + 0.20 × share of voice + 0.20 × position + 0.15 × citations + 0.10 × sentiment</td><td>Counts unbranded prompts only, and averages engines equally.</td></tr>
+<tr><td>MentionOwl</td><td>Not published</td><td>Its guide says you cannot recompute the headline number.</td></tr>
+</tbody>
+</table>
+<p>Am I Cited's guide describes a "typical" weighting of about 25% for mention frequency, 25% for citation rate, 20% for position, 15% for query coverage and 15% for share of voice, and says there is no industry-standard formula. Verticality makes the same point: a score means something only once you know its questions, engines, time window and denominator.</p>
+
+<h2>Worked example: one set of answers, different scores</h2>
+<p>This example uses the sample data in RankRaft's documentation. It shows 10 prompts run across 3 engines in a week, which gives 210 answers. You are named in 63 answers, cited in 21 answers, and named at least once for 6 of the 10 prompts. The arithmetic below is ours.</p>
+<ul>
+<li><strong>Mention rate:</strong> 63 divided by 210 is 30%.</li>
+<li><strong>Citation rate:</strong> 21 divided by 210 is 10%.</li>
+<li><strong>Prompt coverage:</strong> 6 divided by 10 is 60%.</li>
+</ul>
+<p>Now apply two published formulas.</p>
+<ul>
+<li><strong>RankRaft:</strong> 100 × (0.45 × 0.30 + 0.35 × 0.10 + 0.20 × 0.60) = 100 × (0.135 + 0.035 + 0.12) = <strong>29</strong>.</li>
+<li><strong>AnswerixAI:</strong> this formula needs a position factor, which the sample does not give. We assume that on average you are named at position 2, so the raw factor is 0.5. AnswerixAI scales it by mentions divided by mentions plus 20, which is 63 divided by 83, or 0.76, so the factor becomes about 0.38. The score is 100 × (0.6 × 0.30 + 0.25 × 0.10 + 0.15 × 0.38) = 100 × (0.18 + 0.025 + 0.057), which is about <strong>26</strong>.</li>
+</ul>
+<p>The same 210 answers give a mention rate of 30%, a score of 29 from one tool and about 26 from another. Neither is wrong. They weight the parts differently, and the second uses a position input we assumed. This is why you should never compare a score from one tool with a score from another.</p>
+
+<h2>How noisy is the score?</h2>
+<p>Answers vary from run to run. SparkToro had 600 volunteers run 12 prompts through ChatGPT, Claude and Google's AI features 2,961 times, and found less than a 1 in 100 chance of getting the same list of brands twice for the same prompt. So a score from one run is a snapshot.</p>
+<p>RankRaft shows the effect in its own formula. It gives a 95% margin of 100 × 1.96 × the square root of p(1 − p) divided by n, where p is the mention rate and n is the number of answers. With a 30% mention rate and 210 answers, that is about plus or minus 6 points, by our arithmetic. The formula treats every answer as independent, so the true uncertainty may be larger, since answers to the same prompt are related. The lesson is that small changes in a score may be noise. Use more prompts, repeat runs and read trends over weeks.</p>
+
+<h2>Why do two honest tools show different scores?</h2>
+<ul>
+<li><strong>Different weights.</strong> One tool may weight mentions at 60% and another at 45%.</li>
+<li><strong>Different prompts.</strong> A prompt set built from your sales calls gives a different result from a generic set.</li>
+<li><strong>Branded prompts.</strong> A question that names you is answered with your name almost every time. BugViso reports that all 120 branded answers in its data named the brand, and so it counts unbranded prompts only.</li>
+<li><strong>Different engines.</strong> A tool that tracks two engines gives a different number from one that tracks five.</li>
+<li><strong>Different counting rules.</strong> Some tools leave out failed or empty answers. RankRaft leaves out runs where Google shows no AI Overview, instead of counting them as misses.</li>
+<li><strong>Different timing.</strong> Weekly, daily and one-off checks smooth noise in different ways.</li>
+</ul>
+
+<h2>How do you calculate your own AI visibility score?</h2>
+<ol>
+<li><strong>Write 10 to 15 buyer questions</strong> in your customers' words, mostly without your brand name.</li>
+<li><strong>Pick your engines</strong> and run each prompt three times in each, in a fresh session. Save the full answers.</li>
+<li><strong>Record, for each answer,</strong> whether you are named, whether your site is cited, who else is named and in what order.</li>
+<li><strong>Count the parts.</strong> Mention rate, citation rate and prompt coverage are easy to compute in a spreadsheet. Add share of voice against three to five named competitors.</li>
+<li><strong>Report the parts first.</strong> Show each number with its denominator, for example "named in 63 of 210 answers".</li>
+<li><strong>Only then combine them,</strong> if you must have one number. Publish the weights, keep them fixed and note the date and the prompt set.</li>
+</ol>
+<p>A simple sheet is enough. Our guide to <a href="/ai-brand-visibility-tools/">AI brand visibility tools</a> compares software that does this at scale.</p>
+
+<h2>What is a good AI visibility score?</h2>
+<p>We found no reliable public benchmark. A score depends on the prompts, engines and formula, so a "good" number for one tool says nothing about another. Share of voice also depends on how many brands the tools name in your market. If the tools name three brands per answer, a share near 33% is average. If they name 15, a share near 7% is average.</p>
+<p>So judge yourself in three ways. Compare with the competitors in your own test, with the same tool and prompts. Compare with your own baseline over time. And look at the parts, because a rising mention rate with a flat citation rate tells a different story from the reverse. Be wary of any vendor that offers a grade such as "good" or "excellent" without showing its method.</p>
+
+<h2>What is AI brand monitoring?</h2>
+<p>AI brand monitoring is the ongoing version of this test. Software runs your prompts on a schedule, stores each answer and shows the trend, often with alerts when something changes, such as a new competitor or a wrong fact. It is useful when your prompt list or your markets outgrow a spreadsheet. A tool still needs a person to act on what it finds. Test any tool against a hand baseline before you rely on it.</p>
+
+<h2>How do you improve a low score?</h2>
+<p>Read the parts and fix the weakest one.</p>
+<table>
+<thead><tr><th>If this is low</th><th>It may mean</th><th>Start with</th></tr></thead>
+<tbody>
+<tr><td>Mention rate</td><td>AI tools do not know you, or rarely pick you</td><td>Clear facts, answer-first pages and honest mentions on other sites</td></tr>
+<tr><td>Citation rate</td><td>Your pages are not used as sources</td><td>Crawler access, readable HTML, sourced answers. See <a href="/how-to-rank-in-ai-overviews/">how to rank in AI Overviews</a>.</td></tr>
+<tr><td>Prompt coverage</td><td>You appear for few questions</td><td>Pages for the questions you miss, built from sales calls</td></tr>
+<tr><td>Share of voice</td><td>Competitors are named far more often</td><td>Study the sources the answers cite, and earn a place on them</td></tr>
+<tr><td>Sentiment</td><td>The description is old or negative</td><td>Fix the pages and profiles the answers use</td></tr>
+</tbody>
+</table>
+<p>Our guide to <a href="/generative-engine-optimization/">generative engine optimization</a> explains the method in more detail.</p>
+
+<h2>How should you report it to leadership?</h2>
+<p>Keep the report short and honest. Show the three or four parts with their denominators, the trend over at least three periods, the margin or the number of runs, and the list of actions taken. Say which tool and prompt set you used. Avoid a single headline number without the parts behind it, and never compare it with a score from another tool. Add the link to business results, such as demo requests from pages you updated, when you can measure them.</p>
+
+<h2>What does a simple scoring sheet look like?</h2>
+<p>You do not need software to start. This layout gives you every part of the score. The three rows are made up to show the format.</p>
+<table>
+<thead><tr><th>Prompt ID</th><th>Engine</th><th>Run</th><th>Named</th><th>Cited</th><th>Order named</th><th>Competitors named</th></tr></thead>
+<tbody>
+<tr><td>P-03</td><td>ChatGPT</td><td>1</td><td>Yes</td><td>No</td><td>3 of 5</td><td>A, B, C, D</td></tr>
+<tr><td>P-03</td><td>ChatGPT</td><td>2</td><td>No</td><td>No</td><td>none</td><td>A, B, E</td></tr>
+<tr><td>P-03</td><td>Perplexity</td><td>1</td><td>Yes</td><td>Yes</td><td>1 of 4</td><td>A, C, F</td></tr>
+</tbody>
+</table>
+<p>From this sheet you can count mention rate, citation rate, prompt coverage and share of voice with simple formulas. Add a date and the exact prompt text in another tab. Keep the sheet after every test. In six months, the history is more useful than any single score.</p>
+
+<h2>How does the score differ for different businesses?</h2>
+<ul>
+<li><strong>B2B software:</strong> Comparison and "best for" questions drive shortlists, so include them. Citations from review sites and your own comparison pages matter.</li>
+<li><strong>Local and service firms:</strong> Include questions with a city name. Answers often depend on listings and reviews, so check those sources.</li>
+<li><strong>Online stores:</strong> Include product and "is it worth it" questions. Product data and reviews on other sites matter.</li>
+<li><strong>Publishers and educators:</strong> Citation rate may matter more than mention rate, since the aim is to be the source.</li>
+</ul>
+<p>In every case, build the prompt set from real buyer questions. A score based on questions your buyers never ask tells you nothing.</p>
+
+<h2>What questions will leaders ask about the score?</h2>
+<p>Be ready for these three. "Is it going up?" Show the trend, the number of runs and the margin. "Why is a competitor higher?" Show the source map: which sites the answers cite for them and not for you. "What did we do about it?" Show the list of fixes, with dates and the pages changed. If you cannot answer the third question, the score is a dashboard and not a program.</p>
+
+<h2>What are the common mistakes?</h2>
+<ul>
+<li><strong>Trusting one number.</strong> Keep mentions, citations and share of voice separate.</li>
+<li><strong>Comparing tools.</strong> Scores from different formulas are not the same measure.</li>
+<li><strong>Counting branded prompts.</strong> They inflate the result.</li>
+<li><strong>Running each prompt once.</strong> The same prompt gives different answers.</li>
+<li><strong>Ignoring the margin.</strong> A move of a few points can be noise.</li>
+<li><strong>Changing prompts between periods.</strong> You can no longer compare.</li>
+<li><strong>Chasing the score.</strong> The goal is accurate, useful presence, not a number.</li>
+</ul>
+
+<h2>Our interest in this topic</h2>
+<p>Reinforce Lab sells search and AI search services. We do not sell an AI visibility score or a tracking tool, and nothing here is paid placement. Jamil Ahmed, who wrote this guide, is a Semrush Ambassador, and Reinforce Lab uses affiliate links for some tools. Read our <a href="/ftc-disclosure/">FTC and affiliate disclosure</a>. Our free diagnostic reports the parts with their denominators. You can <a href="/get-diagnostic/">get your free diagnostic</a> or read about our <a href="/services/seo-ai-search-audit/">SEO and AI search audit</a>.</p>
+
+<h2>Final thoughts</h2>
+<p>An AI visibility score is a summary, not a measurement of the truth. Read the parts, know the formula, repeat the runs and watch the trend. Use the score to decide what to fix next, and judge the work by accurate answers and by the leads that follow.</p>
