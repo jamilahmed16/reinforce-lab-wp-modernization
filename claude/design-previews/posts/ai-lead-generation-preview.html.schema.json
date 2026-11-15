@@ -1,0 +1,213 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "AI lead generation uses AI to find, qualify, reach and follow up with prospects: building lists, adding data, scoring fit and intent, drafting first messages, routing leads and nurturing the rest. It works best as a system with five layers and a person reviewing output, and it must follow email and privacy law. Measure qualified leads and customers, not volume.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Federal Trade Commission: CAN-SPAM Act, a compliance guide for business",
+    "url": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Oldroyd, McElheran and Elkington: The short life of online sales leads, Harvard Business Review (March 2011)",
+    "url": "https://hbr.org/2011/03/the-short-life-of-online-sales-leads"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "First Page Sage: B2B SaaS funnel conversion benchmarks",
+    "url": "https://firstpagesage.com/seo-blog/b2b-saas-funnel-conversion-benchmarks-fc/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "G2: How AI is redefining the buyer journey, 2025 Buyer Behavior Report (May 2025)",
+    "url": "https://company.g2.com/news/buyer-behavior-in-2025"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Semrush: How AI tools shape the B2B buying process, a survey of 600+ US business professionals (July 2026)",
+    "url": "https://www.semrush.com/blog/how-ai-shapes-b2b-buying/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Hunter: AI lead generation, how it works and how to run it",
+    "url": "https://hunter.io/ai-lead-generation"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Clay: AI lead generation tools and workflows",
+    "url": "https://www.clay.com/blog/ai-lead-generation"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "WebPeak: How to build an AI lead generation system for your business (October 2026)",
+    "url": "https://webpeak.org/blog/build-ai-lead-generation-system-business"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ergini: Build an AI lead generation tool, not another scraper (April 2026)",
+    "url": "https://ergini.com/blog/ai-lead-generation-tool"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is AI lead generation?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Using AI to find, qualify, reach and follow up with prospects: building lists, adding company data, scoring fit and intent, drafting first messages, routing leads and nurturing the rest. People still review messages and talk to buyers."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How does AI lead generation work?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "A system captures leads from forms, chat and lists, enriches them with company and role data, scores them against your ideal customer, routes them to an owner or sequence, drafts a first reply for review and nurtures lower-priority leads."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I use AI for lead generation?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Write your ideal customer profile, pick one CRM, connect capture points, add enrichment, build simple scoring, set routing rules, use AI to draft reviewed first replies, build nurture paths and measure qualified leads and customers."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What are the best AI tools for lead generation?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "There is no single best tool. Vendors describe a stack with tools for data, verification, orchestration, sending and a CRM. Examples they name include Apollo, Clay, Hunter, Zapier, n8n, HubSpot and Instantly. Test a small plan and check current terms."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Are there free AI tools for lead generation?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Many tools offer a free tier or a trial, and you can run a small system with one CRM and one automation tool. Check each vendor's current terms, since features and limits change."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Are AI lead generation tools GDPR compliant?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "A tool does not make you compliant by itself. You are responsible for where contact data came from, your legal basis, consent rules for email and keeping a suppression list. Rules in the EU and UK differ from the US, so take legal advice for your markets."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is cold email legal for B2B in the US?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The FTC says CAN-SPAM covers all commercial email and makes no exception for business email. You need accurate headers, honest subject lines, an ad disclosure, a postal address and a working opt-out honored within 10 business days. Penalties can reach $53,088 per email."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do AI-generated leads convert better than organic search leads?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found no study that shows it. A lead is a lead whatever its source. One SEO agency's B2B SaaS client data shows SEO leads reaching sales at 51% against 26% for paid search, but it is not a test of AI. Compare your own results by source."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How fast should you respond to a new lead?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "As fast as you can. A 2011 HBR study of 1.25 million leads found that contact within an hour made a lead nearly seven times likelier to qualify than contact an hour later. The data is old, but it supports fast, reviewed first replies."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What are the risks of AI lead generation?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Wrong facts in messages, damaged sender reputation, breaches of email and privacy law, poor data and brand damage. Reduce them with human review, small sends, authenticated domains, source records and a shared suppression list."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: AI Lead Generation: How It Works, Tools and How to Build a System",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Lead",
+    "description": "A person or company that has shown interest or fits your target and may become a customer.",
+    "url": "https://reinforcelab.online/preview/#term-lead"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "ICP",
+    "description": "Ideal customer profile: a written description of the customers you want most.",
+    "url": "https://reinforcelab.online/preview/#term-icp"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Enrichment",
+    "description": "Adding data, such as company size and role, to a lead record.",
+    "url": "https://reinforcelab.online/preview/#term-enrichment"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "MQL and SQL",
+    "description": "A marketing-qualified lead fits your market, and a sales-qualified lead has shown real buying interest.",
+    "url": "https://reinforcelab.online/preview/#term-mql-and-sql"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "CRM",
+    "description": "Customer relationship management software that stores every lead and contact.",
+    "url": "https://reinforcelab.online/preview/#term-crm"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Suppression list",
+    "description": "A list of people you must not contact, such as those who opted out.",
+    "url": "https://reinforcelab.online/preview/#term-suppression-list"
+   }
+  ]
+ }
+]
