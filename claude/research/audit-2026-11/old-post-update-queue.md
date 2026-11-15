@@ -4,16 +4,16 @@ Jamil, 15 Nov 2026: update 2 old posts a day, starting 17 Nov 2026, until the la
 
 | Slot | Date | Post ID | Slug | Clicks 16m | Proposed type | Current title | Status |
 |---|---|---|---|---|---|---|---|
-| 1 | 2026-11-17 | 347 | top-advantages-and-disadvantages-of-using-social-media | 105 | Explainer | 20 Advantages and Disadvantages About Social Media: Merits, Demerits & Real Impact | queued |
-| 2 | 2026-11-17 | 392 | content-marketing-for-plastic-surgeons | 29 | Industry | 10 Best Ways of Content Marketing for Plastic Surgeons 2025 | queued |
-| 3 | 2026-11-18 | 396 | content-marketing-ideas-for-small-business | 20 | Guide | 16 Content Marketing Ideas for Small Business 2025 | queued |
-| 4 | 2026-11-18 | 398 | content-marketing-ideas-for-social-media | 18 | Guide | 40 Content Marketing Ideas for Social Media 2025 | queued |
-| 5 | 2026-11-19 | 462 | seo-mistakes-to-avoid | 13 | Checklist | 10 Most Common SEO Mistakes To Avoid 2025 | queued |
+| 1 | 2026-11-17 | 347 | top-advantages-and-disadvantages-of-using-social-media | 105 | Explainer | 20 Advantages and Disadvantages About Social Media: Merits, Demerits & Real Impact | rewritten earlier; statistics pass only; date applied at slot |
+| 2 | 2026-11-17 | 392 | content-marketing-for-plastic-surgeons | 29 | Industry | 10 Best Ways of Content Marketing for Plastic Surgeons 2025 | REWRITTEN 15 Nov (Exa and Firecrawl; Semrush re-run pending); date applied at slot |
+| 3 | 2026-11-18 | 396 | content-marketing-ideas-for-small-business | 20 | Guide | 16 Content Marketing Ideas for Small Business 2025 | REWRITTEN 15 Nov (Exa and Firecrawl; Semrush re-run pending); date applied at slot |
+| 4 | 2026-11-18 | 398 | content-marketing-ideas-for-social-media | 18 | Guide | 40 Content Marketing Ideas for Social Media 2025 | REWRITTEN 15 Nov (Exa and Firecrawl; Semrush re-run pending); date applied at slot |
+| 5 | 2026-11-19 | 462 | seo-mistakes-to-avoid | 13 | Checklist | 10 Most Common SEO Mistakes To Avoid 2025 | REWRITTEN 15 Nov (Exa and Firecrawl; Semrush re-run pending); date applied at slot |
 | 6 | 2026-11-19 | 409 | dreamhost-wordpress-hosting | 11 | How-To | How to Make A Website with DreamHost WordPress Hosting: A Step by Step Guide | queued |
 | 7 | 2026-11-20 | 449 | namecheap-wordpress-hosting | 10 | How-To | How to Make A Website with Namecheap WordPress Hosting: A Step by Step Guide | queued |
 | 8 | 2026-11-20 | 441 | jasper-review | 10 | Review | Jasper Review: How To Use Jasper AI Writer To Generate Better Content | queued |
-| 9 | 2026-11-21 | 355 | a-complete-guide-to-social-media-management | 10 | Guide | A Complete Guide to Social Media Management 2025 | queued |
-| 10 | 2026-11-21 | 435 | how-to-write-seo-friendly-blog-posts | 9 | How-To | How to write SEO friendly blog posts 2025 | queued |
+| 9 | 2026-11-21 | 355 | a-complete-guide-to-social-media-management | 10 | Guide | A Complete Guide to Social Media Management 2025 | rewritten earlier; statistics pass only; date applied at slot |
+| 10 | 2026-11-21 | 435 | how-to-write-seo-friendly-blog-posts | 9 | How-To | How to write SEO friendly blog posts 2025 | REWRITTEN 15 Nov (Exa and Firecrawl; Semrush re-run pending); date applied at slot |
 | 11 | 2026-11-22 | 484 | the-anatomy-of-a-website | 8 | Explainer | The Anatomy of a Website 2025 | queued |
 | 12 | 2026-11-22 | 447 | marketing-for-websites | 8 | Guide | 10 Perfect Ways of Marketing for Websites 2025 | queued |
 | 13 | 2026-11-23 | 402 | content-marketing-vs-social-media-marketing | 8 | Comparison | Content Marketing vs Social Media Marketing: Which One is Best? | queued |
@@ -22,10 +22,10 @@ Jamil, 15 Nov 2026: update 2 old posts a day, starting 17 Nov 2026, until the la
 | 16 | 2026-11-24 | 443 | kinsta-wordpress-hosting | 5 | How-To | How to Make A Website with Kinsta WordPress Hosting: A Step by Step Guide | queued |
 | 17 | 2026-11-25 | 386 | clickup-review | 5 | Review | ClickUp Review: How to Use ClickUp to Manage Your Projects Effectively | queued |
 | 18 | 2026-11-25 | 488 | what-does-an-seo-consultant-do | 4 | Explainer | What does an SEO Consultant do? Know the best ways to be an SEO Specialist! | queued |
-| 19 | 2026-11-26 | 364 | b2b-seo-agencies | 4 | Best / List | Top 10 B2B SEO Agencies for Leading Businesses in 2025 | queued |
+| 19 | 2026-11-26 | 364 | b2b-seo-agencies | 4 | Best / List | Top 10 B2B SEO Agencies for Leading Businesses in 2025 | rewritten earlier; statistics pass only; date applied at slot |
 | 20 | 2026-11-26 | 492 | what-is-martech | 3 | Explainer | What Is Martech? Why Need Digital Marketing Technology Stack? | queued |
 | 21 | 2026-11-27 | 368 | best-cloud-web-hosting-services | 3 | Best / List | 13 Best Cloud Web Hosting Services 2025 | queued |
-| 22 | 2026-11-27 | 362 | b2b-seo | 3 | Guide | Critical Elements of A B2B SEO Strategy In 2025 | queued |
+| 22 | 2026-11-27 | 362 | b2b-seo | 3 | Guide | Critical Elements of A B2B SEO Strategy In 2025 | rewritten earlier; statistics pass only; date applied at slot |
 | 23 | 2026-11-28 | 486 | ux-writing-vs-copywriting | 2 | Comparison | UX Writing vs Copywriting: Which One Is Best? | queued |
 | 24 | 2026-11-28 | 482 | surfer-seo-review | 2 | Review | Surfer SEO Review: How To Grow Your Business with Surfer SEO Tool | queued |
 | 25 | 2026-11-29 | 452 | rank-tracker-review | 2 | Review | Rank Tracker Review: How to Use Rank Tracker for Effective SEO In 2025 | queued |
@@ -54,7 +54,7 @@ Jamil, 15 Nov 2026: update 2 old posts a day, starting 17 Nov 2026, until the la
 | 48 | 2026-12-10 | 439 | invest-in-seo | 0 | Opinion | 5 Reasons Why You Should Invest In SEO For Small Business | queued |
 | 49 | 2026-12-11 | 437 | ideas-for-personal-website-content | 0 | Guide | Best 5 Ideas for Personal Website Content 2025 | queued |
 | 50 | 2026-12-11 | 433 | how-to-use-keywords-in-content | 0 | How-To | How to use keywords in Content | queued |
-| 51 | 2026-12-12 | 428 | how-to-do-local-seo-audit-11-easy-steps | 0 | How-To | How to do Local SEO Audit : 11 Easy steps | queued |
+| 51 | 2026-12-12 | 428 | how-to-do-local-seo-audit-11-easy-steps | 0 | How-To | How to do Local SEO Audit : 11 Easy steps | rewritten earlier; statistics pass only; date applied at slot |
 | 52 | 2026-12-12 | 424 | how-can-companies-be-socially-responsible-marketers | 0 | Opinion | How Can Companies Be Socially Responsible Marketers in 2025 | queued |
 | 53 | 2026-12-13 | 422 | hostinger-web-hosting | 0 | How-To | How to Build a Website with Hostinger Web Hosting – A Step by Step Guide | queued |
 | 54 | 2026-12-13 | 420 | guide-to-ux-copywriting | 0 | Guide | The Ultimate Guide to UX Copywriting 2025 | queued |
@@ -63,7 +63,7 @@ Jamil, 15 Nov 2026: update 2 old posts a day, starting 17 Nov 2026, until the la
 | 57 | 2026-12-15 | 415 | find-competitor-keywords | 0 | Guide | 10 Best Ways to Find Competitor Keywords 2025 | queued |
 | 58 | 2026-12-15 | 413 | ecommerce-retargeting-strategies-to-boost-sales | 0 | Industry | E-Commerce Retargeting Strategies to Boost Sales | queued |
 | 59 | 2026-12-16 | 408 | different-types-of-facebook-ads | 0 | Explainer | 10 Different Types of Facebook Ads for 2025 | queued |
-| 60 | 2026-12-16 | 406 | dental-seo | 0 | Industry | Dental SEO: How to Get More Patients with SEO for Dentists | queued |
+| 60 | 2026-12-16 | 406 | dental-seo | 0 | Industry | Dental SEO: How to Get More Patients with SEO for Dentists | rewritten earlier; statistics pass only; date applied at slot |
 | 61 | 2026-12-17 | 349 | creative-content-marketing-ideas | 0 | Guide | 35 Creative Content Marketing Ideas 2025 | queued |
 | 62 | 2026-12-17 | 404 | copy-ai-review | 0 | Review | Copy.AI Review: How To Use Copy.AI To Generate Better Content For Your Site | queued |
 | 63 | 2026-12-18 | 400 | content-marketing-strategy-for-b2b | 0 | Guide | 25 Content Marketing Strategy for B2B 2025 | queued |

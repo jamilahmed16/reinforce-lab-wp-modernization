@@ -1,0 +1,212 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "To write SEO friendly blog posts, pick one topic people search for, check what already ranks and what it misses, then write a clear, original answer with a unique title, short sections, proof, useful links and a plain description. Put the answer first, name the author, cite sources you have read, and update the post when facts change.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: 96.55% of content gets no traffic from Google (study of about 14 billion pages)",
+    "url": "https://ahrefs.com/blog/search-traffic-study/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: 107 SEO statistics for 2026",
+    "url": "https://ahrefs.com/blog/seo-statistics/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Creating helpful, reliable, people-first content",
+    "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: SEO Starter Guide",
+    "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: SEO link best practices",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guidance on using generative AI content on your website",
+    "url": "https://developers.google.com/search/docs/fundamentals/using-gen-ai-content"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guidance about AI-generated content (February 2023)",
+    "url": "https://developers.google.com/search/blog/2023/02/google-search-and-ai-content"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Spam policies for Google web search",
+    "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Semrush: How to write an SEO blog post, 13 key tips",
+    "url": "https://www.semrush.com/blog/seo-blog-post/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: 11 tips to optimize your blog posts for SEO",
+    "url": "https://ahrefs.com/blog/how-to-optimize-blog-posts-for-seo/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is an SEO friendly blog post?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It is a post that helps a reader and is easy for search engines to find and understand: one clear topic, a unique title, a direct answer, original value, clear headings, trust signals, good links and images, and a fast page."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How long should an SEO friendly blog post be?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google says it has no preferred word count. Write as long as the topic needs, and check the top results to see how deep they go. Depth and usefulness matter more than length."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How many keywords should a blog post target?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Choose one primary keyword for each post, plus a few related phrases and questions that fit naturally. Do not repeat a keyword to force it."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does reading level affect SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Ahrefs found no correlation between Flesch Reading Ease scores and ranking position. Plain writing still helps readers, so use short sentences and everyday words."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is a meta description a ranking factor?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found no Google statement that it is. It can shape the snippet. Ahrefs found Google showed the written meta description 37.22% of the time, so write a good one but expect rewrites."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Will Google use my title exactly as I write it?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Not always. Ahrefs found Google rewrote title tags 33.4% of the time in its study, and was more likely to rewrite long titles. Write a clear, accurate title and keep the H1 consistent with it."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can I use AI to write blog posts?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes, with care. Google says appropriate use of AI is not against its guidelines, but using it to mass-produce pages without value may violate its spam policy. Fact-check everything and add original value."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How often should I update blog posts?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Update when facts change, a better source appears or traffic drops. Make real changes and show a date that reflects them. Google lists changing dates without substantial changes as a warning sign."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How many internal links should a blog post have?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google says there is no magic number. Every page you care about should have a link from at least one other page, with descriptive link text. If it feels like too many, it probably is."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Why does my blog post get no traffic?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Common causes are a topic with no real search demand, content that does not match the search intent, little original value, no links, and a page that is not indexed. Check Search Console and compare your post with the top results."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: How to Write SEO Friendly Blog Posts: 12 Steps That Work",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Primary keyword",
+    "description": "The main phrase a post is built to rank for.",
+    "url": "https://reinforcelab.online/preview/#term-primary-keyword"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Search intent",
+    "description": "What a person wants to do when they type a search, such as learn, compare or buy.",
+    "url": "https://reinforcelab.online/preview/#term-search-intent"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Meta description",
+    "description": "A short summary of the page that may appear under the title in search results.",
+    "url": "https://reinforcelab.online/preview/#term-meta-description"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Alt text",
+    "description": "A short description of an image for screen readers and search engines.",
+    "url": "https://reinforcelab.online/preview/#term-alt-text"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Internal link",
+    "description": "A link from one page on your site to another page on your site.",
+    "url": "https://reinforcelab.online/preview/#term-internal-link"
+   }
+  ]
+ }
+]

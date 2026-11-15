@@ -1,0 +1,207 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "The best content marketing ideas for social media teach something useful, show how you work, prove your results, start a conversation and sometimes ask for the sale. Short video under 60 seconds is the format people say they interact with most on most networks. Use a steady mix, match it to the platform your customers use, and measure results that matter.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Pew Research Center: Which social media platforms are most popular (2012 to 2026)",
+    "url": "https://www.pewresearch.org/chart/which-social-media-platforms-are-most-popular-2/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Pew Research Center: Americans' Social Media Use 2025",
+    "url": "https://www.pewresearch.org/internet/2025/11/20/americans-social-media-use-2025/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Sprout Social: The 2026 Social Media Content Strategy Report",
+    "url": "https://brandfolder.sproutsocial.com/VXTUTVL1/at/pkp7t7kq3xqz54ffv2qc97q/social-media-content-strategy-report_2026.pdf"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Sprout Social: Q1 2026 Pulse Survey analysis",
+    "url": "https://media.sproutsocial.com/uploads/2026/03/Sprout-Social-Q1-2026-Pulse-Survey-Analysis.pdf"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "eCFR: 16 CFR 255.5, Disclosure of material connections",
+    "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "eCFR: 16 CFR Part 465, Rule on the Use of Consumer Reviews and Testimonials",
+    "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Crowell & Moring: FTC final rule on deceptive reviews and testimonials (August 2024)",
+    "url": "https://www.crowell.com/en/insights/client-alerts/final-rule-announced-the-ftc-strengthens-its-enforcement-capacity-against-deceptive-reviews-and-testimonials"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Later: 50 social media content ideas for every industry (July 2026)",
+    "url": "https://later.com/blog/social-media-content-ideas/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Sprout Social: 27 social media post ideas",
+    "url": "https://sproutsocial.com/insights/social-media-ideas/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What are good content marketing ideas for social media?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Teach with how-tos and answers to common questions, show behind-the-scenes work and your team, prove results with customer stories and reviews, start conversations with polls and live questions, and make clear offers now and then."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is the most popular type of social media content?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Short video under 60 seconds is the brand content people say they interact with most on TikTok, Instagram, Facebook and X in Sprout Social's 2026 survey. On LinkedIn, text posts lead."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How often should I post on social media?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found no reliable independent benchmark. Pick a rhythm you can keep for three months, such as three to five posts a week on your main platform, and put quality first."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is a good mix of promotional and useful content?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Give most posts to teaching and showing, and keep selling to a minority. This is a rule of thumb, not research. Adjust after a month of your own results."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Should I post the same content on every platform?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Keep the idea and change the format for each platform, for example a short video for Reels, a text post for LinkedIn and a carousel for both."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Should my business follow social media trends?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Only when the trend fits your audience and tone, you can add something original, and the post will still make sense later. Skip trends tied to sensitive news."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I come up with content ideas consistently?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Keep an idea bank fed by customer questions, comments, support tickets and your own analytics. Plan a month at a time and reuse each idea in several formats."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I have to label AI-generated content?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Labeling is a good practice. In Sprout's Q1 2026 survey, unlabeled AI-generated content was what consumers most wished brands would stop doing. Check each platform's current rules."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need to disclose sponsored posts?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. The FTC's Endorsement Guides say a material connection, such as payment or free products, must be disclosed clearly and conspicuously, in the same medium as the post."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I measure social media content?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Judge each post by its job: saves and shares for teaching, replies for conversation, profile visits and clicks for proof, and clicks or sales for offers. Compare against your own recent average."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Content Marketing Ideas for Social Media: 30 Ideas That Work",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Carousel",
+    "description": "A post made of several swipeable images or slides.",
+    "url": "https://reinforcelab.online/preview/#term-carousel"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Reel or Short",
+    "description": "A short vertical video format on Instagram, Facebook or YouTube.",
+    "url": "https://reinforcelab.online/preview/#term-reel-or-short"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "User-generated content",
+    "description": "Posts made by customers about your brand, shared with permission.",
+    "url": "https://reinforcelab.online/preview/#term-user-generated-content"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Material connection",
+    "description": "A payment, free product or other link between a brand and a person who endorses it.",
+    "url": "https://reinforcelab.online/preview/#term-material-connection"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Content mix",
+    "description": "The balance of post types you publish, such as teaching, showing, proving, joining and selling.",
+    "url": "https://reinforcelab.online/preview/#term-content-mix"
+   }
+  ]
+ }
+]

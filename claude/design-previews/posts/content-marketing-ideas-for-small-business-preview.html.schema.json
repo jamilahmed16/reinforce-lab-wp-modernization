@@ -1,0 +1,217 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "The best content marketing ideas for a small business answer real customer questions, show proof of your work and fit your time. Start with your 10 most common questions, honest pricing and comparison pages, reviews and a short email. Then add video, templates and local content one at a time, and measure calls and quotes.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Constant Contact: Small Businesses Double Down for 2026, Q1 2026 Small Business Now report (February 2026)",
+    "url": "https://news.constantcontact.com/2026-02-11-Small-Businesses-Double-Down-for-2026-Majority-Plan-to-Increase-Marketing-Budgets-to-Combat-Inflation"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Salesforce: 3 key takeaways for SMBs from the State of Marketing report (April 2026)",
+    "url": "https://www.salesforce.com/blog/small-business/smb-takeaways-from-the-state-of-marketing/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "BrightLocal: Local Consumer Review Survey 2026",
+    "url": "https://www.brightlocal.com/research/local-consumer-review-survey/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "BrightLocal: Local SEO statistics for 2026",
+    "url": "https://www.brightlocal.com/resources/local-seo-statistics/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Content Marketing Institute: B2B content and marketing trends, insights for 2026",
+    "url": "https://contentmarketinginstitute.com/b2b-research/b2b-content-marketing-trends-research-2026"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Content Marketing Institute: 2027 B2B content marketing trends report (November 2026)",
+    "url": "https://contentmarketinginstitute.com/b2b-research/b2b-content-marketing-trends-research"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Creating helpful, reliable, people-first content",
+    "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "eCFR: 16 CFR Part 465, Rule on the Use of Consumer Reviews and Testimonials",
+    "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "FTC: CAN-SPAM Act, a compliance guide for business",
+    "url": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: 13 content marketing ideas for small businesses",
+    "url": "https://ahrefs.com/blog/content-marketing-for-small-business/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "one.com: Content marketing ideas for small businesses",
+    "url": "https://www.one.com/en-us/academy/content-marketing-ideas/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What are good content marketing ideas for a small business?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Answer your most common customer questions, publish honest pricing and comparison pages, share case studies and reviews, keep your Google Business Profile current, send a short email, post phone videos and offer a free checklist or template."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What type of content should a small business start with?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Start with a page or post for each of the 10 questions customers ask most, a complete Google Business Profile and a way to collect reviews. These cost little and match what buyers look for."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How often should a small business publish content?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found no reliable independent benchmark. Choose a pace you can keep for six months, such as one useful post or video every one to two weeks and one email a month."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does a small business need a content marketing strategy?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes, but a short one: who you help, the questions they ask, the proof you hold, three ideas to start with and how you will measure calls and quotes."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does content marketing cost for a small business?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It depends on how much you do yourself. A phone, free Google tools and a few hours a week can start it. We found no reliable independent cost benchmark, so compare quotes by deliverables, not promises."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do you measure content marketing?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Track calls, form fills, quote requests and bookings by page or source, new Google reviews, Search Console clicks and email sign-ups. Record a baseline for four to eight weeks first."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can I use AI to write my business content?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes for outlines and first drafts, with a person checking every fact, price and claim. Add your own photos, numbers and experience. Never use AI to write reviews or invent customers."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do reviews count as content marketing?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Real customer reviews and stories are trust content. Ask every customer the same way, reply to all reviews and follow the FTC rules against fake or hidden reviews."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What free tools help with small business content marketing?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google Search Console, Google Business Profile, Google Analytics or your site's own reports, a phone camera and a simple spreadsheet cover most needs."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How long does content marketing take to work?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found no reliable independent timeline. Expect early signs in impressions and reviews first, then clicks, then inquiries. Judge progress against your own baseline."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Content Marketing Ideas for Small Business: 16 Ideas That Work",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Content marketing",
+    "description": "Creating useful material so the right people find and trust your business.",
+    "url": "https://reinforcelab.online/preview/#term-content-marketing"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Google Business Profile",
+    "description": "Your free listing on Google Search and Maps, with hours, photos, reviews and posts.",
+    "url": "https://reinforcelab.online/preview/#term-google-business-profile"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Case study",
+    "description": "A short story of a customer problem, what you did and the result.",
+    "url": "https://reinforcelab.online/preview/#term-case-study"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Lead magnet",
+    "description": "A free, useful item given in exchange for an email address.",
+    "url": "https://reinforcelab.online/preview/#term-lead-magnet"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Baseline",
+    "description": "Your starting numbers before a change, used to judge what moved.",
+    "url": "https://reinforcelab.online/preview/#term-baseline"
+   }
+  ]
+ }
+]
