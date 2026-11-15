@@ -139,7 +139,7 @@ What it changes:
 | chatgpt seo (refresh of the 14 Nov data) | 1,600 | 49 | $11.01 | Informational | 1.7K (27.7K) | 168 (2.2K) | Reddit thread first (Page AS 26), chatgpt.com second | 5 |
 | llm seo | 1,900 | 42 | $13.21 | Informational | 1.2K (29.9K) | 59 (570) | Reddit thread first (Page AS 23), vercel and yoast follow | 11 |
 | saas seo | 2,900 | 34 | $17.56 | Informational | 3.4K (60.5K) | 236 (1.6K) | Page AS 7 to 16 at the top (marketermilk, saas-seo.com, backlinko) | 21 |
-| marketing workflow automation | 390 | 37 | $28.42 | Informational | 1.2K (11.3K) | 91 (290) | Page AS 2 to 9 on six of the top 10; Salesforce 43 and HubSpot 54 are the strong ones | 17 |
+| marketing workflow automation | 390 | 37 | $28.42 | Informational | 1.2K (11.3K) | 91 (290) | Page AS 13 or lower on six of the top 10 (four are 9 or lower: marketingmary 2, stepper 7, moxo 8, aprimo 9); Reddit 22 and Mailchimp 18 are mid; Salesforce 43 and HubSpot 54 are the strong ones | 17 |
 
 What it changes:
 - **Post 21 (SaaS SEO):** the head term has the weakest top 10 in the plan (Page AS 7 to 16 at the top) and 60.5K variation volume. Variations with buyer intent (saas seo agency 2,900 at KD 35, saas seo consultant 1,600 at KD 9, saas seo services 1,600 at KD 13, enterprise saas seo 1,600 at KD 15) support a "how to choose help" section. Questions: how to improve seo for saas companies (110), what is saas seo (110), how important is seo in a saas business (50), how to create a seo strategy for a saas product (50).
@@ -153,7 +153,7 @@ What it changes:
 | Term | Volume | KD | CPC | Intent | Variations (total volume) | Questions (total volume) | Top 10 weakness | Post |
 |---|---|---|---|---|---|---|---|---|
 | ai search audit | 480 | 16 (Easy) | $19.59 | Informational | 346 (4.0K) | 74 (480) | Page AS 0 to 4 on the top three (aisearchaudit.ai, eyefulmedia, outreachbloom): the weakest top 10 in the plan | 8 |
-| ai visibility score | 480 | 40 | $14.61 | Informational | 216 (2.8K) | 32 (640) | Semrush's free checker (AS 49) and Amplitude (AS 51) lead, then seoreviewtools (AS 14) | 23 |
+| ai visibility score | 480 | 40 | $14.61 | Informational | 216 (2.8K) | 32 (640) | a page labelled semrush.com (AS 49, served from the address semrush2.faisalitebtools.com, so not Semrush's own address) and Amplitude (AS 51) lead, then seoreviewtools (AS 14) | 23 |
 | seo ai agent | 480 | 39 | $10.39 | Informational | 400 (4.7K) | 21 (420) | Reddit thread (AS 30), frase (AS 12), nightwatch (AS 33) | 19 |
 
 What it changes:
