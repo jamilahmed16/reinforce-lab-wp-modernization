@@ -2,7 +2,7 @@
 
 Built from the Semrush Keyword Overview screenshots in `claude/data/semrush/` (US, desktop, 14 and 15 Nov 2026) and the bulk export. Volume is US searches a month, KD is Semrush keyword difficulty. `[VERIFIED from the screenshots]` unless marked. How to use it: each post takes the secondary keywords as phrases inside its sections and the questions as FAQ headings, each answered with a sourced answer (D-278). A question with 0 volume is kept only if it is a real buyer question.
 
-Missing screenshots (2): zero click searches (post 9) and llms.txt (post 14).
+Missing screenshots (1): the Keyword Overview for exactly "llms.txt" (post 14). Zero click searches arrived 15 Nov (see section D).
 
 ## A. Per post: secondary keywords and FAQ questions
 
@@ -50,3 +50,12 @@ Items 1 to 4 are my recommended next ideas after the 25. Item 6 needs your decis
 2. Back each answer with a source we read (D-278). If a question holds a claim (for example "why do AI-generated leads convert better"), test the claim against a study before answering, and say so if no study supports it.
 3. Skip questions that name a vendor, a city or a PDF unless they are real buyer questions.
 4. Do not add a page for every wording of a question (Google's scaled content abuse policy).
+
+## D. Added 15 Nov 2026
+
+| Post | Secondary keywords (volume / KD) | FAQ questions (volume / KD) |
+|---|---|---|
+| 9 Zero click searches | zero-click searches 590 / 7; zero click search 480 / 50; zero-click search 170 / 56; zero click marketing; zero click seo; zero click content | what is zero click search 140 / 45; how to measure roi from zero-click searches 90 / 11; how to optimize for zero-click searches in 2025 90 / 20 (write without the year); why do zero click searches happen 70 / 18; what are zero click searches 50 / 49 |
+| 14 llms.txt (partial) | llms.txt 3,600 / 65 (head, from the bulk table); llms.txt generator 2,400 / 48 | what is llms.txt 1,900 / 52 |
+
+Note: the third screenshot was the term "llms" (22.2K, KD 88), not "llms.txt". It is not used for post 14.

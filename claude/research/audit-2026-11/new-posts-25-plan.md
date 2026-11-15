@@ -162,3 +162,10 @@ What it changes:
 - **Post 19 (SEO AI agent):** variations ai agent for seo (210 at KD 23), ai agents for seo (210 at KD 17). Questions are how and what: how ai agents write seo content (90), how can i use ai agents for seo (90), what are ai seo agents (90).
 
 **Keyword Overview screenshots still missing (2):** zero click searches (post 9) and llms.txt (post 14).
+
+## Zero click searches and llms.txt received 15 Nov 2026 (three screenshots)
+
+**Zero click searches (post 9)** [VERIFIED from the screenshot, US, desktop, 15 Nov]: volume 1.3K (global 2.7K), KD 50, CPC $9.63, intent informational, competitive density 0.07. 976 variations (5.9K total volume), 88 questions (890 total volume). Top variations: zero-click searches 590 / KD 7; zero click search 480 / 50; zero-click search 170 / 56; what is zero click search 140 / 45. Questions: what is zero click search 140 / 45; how to measure roi from zero-click searches 90 / 11; how to optimize for zero-click searches in 2025 90 / 20; why do zero click searches happen 70 / 18; what are zero click searches 50 / 49.
+Top 10, Page AS: bain.com 61, a page labelled semrush.com 53 (mirror address again), forbes.com 42, siteimprove 13, searchengineland 26, wikipedia 60, youtube 28, within.co 6, hubspot 17, hallam.agency 8. Strong: four (42 to 61). Mid: three (26 to 28 plus hubspot 17). Weak: three (6 to 13). Medium difficulty, but a strong publisher set at the top. Features: AI Overview present.
+
+**llms.txt (post 14), PARTIAL.** The bulk table gives: llms.txt 3,600 volume, KD 65, CPC $1.43, intent n/a (a warning icon shows next to the term). The second overview screenshot Jamil sent is for the keyword **"llms"** (22.2K, KD 88), not "llms.txt", because Semrush searched "llms txt" as "llms". It is a different term and is not used for post 14's top 10. From its lists we can still read: llms.txt generator 2.4K / KD 48 (variation); what is llms.txt 1.9K / KD 52 (question). **Still missing: the Keyword Overview for exactly "llms.txt" (top 10 pages, Page AS, questions).** Jamil to search "llms.txt" with the dot and send it.
