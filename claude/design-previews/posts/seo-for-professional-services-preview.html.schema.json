@@ -1,0 +1,218 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "SEO for professional services helps law, accounting, consulting, engineering and advisory firms be found and trusted when buyers search for expert help. Build a page for each practice, make partners visible and verifiable, keep facts and claims consistent and inside your professional rules, earn honest mentions, plan for AI search and measure qualified inquiries by practice.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "VML: The Future Buyer, Professional Services Report 2026",
+    "url": "https://www.vml.com/insight/the-future-buyer-professional-services-report-b2b-2026"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Semrush: How AI tools shape the B2B buying process, a survey of 600+ US business professionals (July 2026)",
+    "url": "https://www.semrush.com/blog/how-ai-shapes-b2b-buying/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Clio: 2025 Legal Trends Report (PDF)",
+    "url": "https://www.clio.com/wp-content/uploads/2025/09/2025-Legal-Trends-Report.pdf"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Clio: Legal Trends Report",
+    "url": "https://www.clio.com/resources/legal-trends/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "American Bar Association: Model Rule 7.1, Communications Concerning a Lawyer's Services",
+    "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_7_1_communication_concerning_a_lawyer_s_services/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: AI features and your website",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Spam policies for Google web search",
+    "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Do you need an SEO? Tips for hiring an SEO",
+    "url": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Console Help: Generative AI performance report (Search)",
+    "url": "https://support.google.com/webmasters/answer/16984139"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "B2B SEO Services: SEO for professional services, UK",
+    "url": "https://www.b2bseoservices.co.uk/industries/professional-services/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is SEO for professional services?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It is search engine optimization for firms that sell expertise, such as law, accounting, consulting and engineering. It combines normal SEO with proof of expertise, accurate profiles and a clear path to an inquiry."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do professional services firms get clients from search?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Build a page for each practice, make partner profiles strong, keep Google Business Profiles and listings accurate, publish partner-led guides and case studies, and measure inquiries by practice."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do buyers choose a professional services firm?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Most engagements start with a trigger and a short list, often from referrals. Buyers then check each name online. VML's 2026 agency survey reports 58% of professional services buyers start research on generative AI tools."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do AI tools matter for professional services SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Semrush's 2026 survey found 66% of AI-using B2B professionals regularly use AI to research vendors, and 92% said it shaped their shortlist. Clio found 46% of US adults would consult AI before contacting a lawyer."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What pages does a professional services website need?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "A page for each practice or service, partner and team profiles, industry pages, insight articles, case studies and real location pages. Each practice page needs who it is for, the process, proof, fees and a next step."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can professional services firms name clients in case studies?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Only with clear consent and within your professional body's rules. Anonymized examples with dates, the situation, the work and the result are a safer start. Never overstate a result."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do professional services firms need local SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Firms with offices do. Each office needs its own Google Business Profile, the same name, address and phone number everywhere, and honest reviews. Build location pages only for real offices or markets."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do you measure SEO for professional services?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Track consultation and proposal requests by practice, the share that become clients, clicks on practice pages, Google Business Profile actions and branded search. Add a how-did-you-hear question that includes AI tools."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can an SEO agency guarantee results for a professional services firm?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Google says no one can guarantee a number one ranking, and AI answers vary. Ask for deliverables, a sample report tied to inquiries and a statement of who approves each page."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How long does SEO for professional services take?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found no reliable independent timeline. Profile and listing fixes can show first, while competitive practice searches take longer. Judge progress by impressions, then clicks, then qualified inquiries."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: SEO for Professional Services: How Firms Win the Who Should I Hire Search",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Practice page",
+    "description": "A page about one service or area of work, who it is for and how it works.",
+    "url": "https://reinforcelab.online/preview/#term-practice-page"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Entity",
+    "description": "A clearly named thing, such as a firm or a partner, that search and AI tools can recognize.",
+    "url": "https://reinforcelab.online/preview/#term-entity"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Qualified inquiry",
+    "description": "A contact request from someone who fits your services and could become a client.",
+    "url": "https://reinforcelab.online/preview/#term-qualified-inquiry"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Google Business Profile",
+    "description": "Your free listing on Google Search and Maps.",
+    "url": "https://reinforcelab.online/preview/#term-google-business-profile"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Thought leadership",
+    "description": "Content that shares your firm's own expertise and view.",
+    "url": "https://reinforcelab.online/preview/#term-thought-leadership"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Source map",
+    "description": "A count of the sites AI answers cite for your questions.",
+    "url": "https://reinforcelab.online/preview/#term-source-map"
+   }
+  ]
+ }
+]
