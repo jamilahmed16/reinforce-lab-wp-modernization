@@ -1,0 +1,109 @@
+<p>The most common SEO mistakes are not clever tricks gone wrong. They are basic problems that stop a page from being found, understood or chosen: a stray noindex tag, content that loads only in the browser, duplicate or missing titles, thin pages that repeat what others say, weak internal links and slow pages. Check access and indexing first, then relevance and content, then speed and polish.</p>
+<p>This checklist covers 12 mistakes in the order we would fix them. For each, you get how to spot it, how to fix it and the data behind it. We cite only sources we could read at the publisher, and we say when a figure comes from a vendor's own audits. It replaces our older post on the same topic.</p>
+
+<h2>What data shows how common SEO mistakes are?</h2>
+<p>Two public data sets help. They measure different things, so do not mix them.</p>
+<ul>
+<li><strong>The 2025 Web Almanac (HTTP Archive).</strong> It analyzes millions of web pages. It found title tags on 98.6% of desktop pages, but meta descriptions on only 67.7%, H1 headings on 71%, and canonical tags on 68%. It found a noindex directive on 3.5% of desktop pages and 2.4% of mobile pages, and structured data on 50% of pages. These are page-level facts for the crawled sample, mostly home pages, and a noindex on some pages is often intended.</li>
+<li><strong>SE Ranking's audit data.</strong> SE Ranking, an SEO software vendor, published the share of audited websites with each issue. It reported that 74.43% had images without descriptions, 53.69% had duplicate titles, 65.38% had missing meta descriptions, 54.67% had missing H1 headings and 50.58% had pages blocked by noindex. These are sites that ran an audit with its tool, which may skew toward sites with problems, so read them as a guide to what audits find, not as the share of all sites.</li>
+</ul>
+<p>The pattern is that basic elements are widespread, and still often missing or wrong. That is why a plain checklist pays.</p>
+
+<h2>Mistake 1: Optimizing for a keyword, not for the search task</h2>
+<p><strong>How to spot it:</strong> the page gets impressions but few clicks, people leave quickly, or the top results are a different kind of page. <strong>The problem:</strong> a page can use the right phrase and still answer the wrong question. Someone searching for a checklist wants steps. Someone searching for a service wants scope, proof and price.</p>
+<p><strong>The fix:</strong> before you write or update a page, classify the task: learn, compare, diagnose, do or buy. Look at the kinds of pages that rank for the query, and match the format and depth. Then answer the main question first and the natural follow-up questions after it. Our guide to <a href="/how-to-rank-in-ai-overviews/">ranking in AI Overviews</a> shows the same answer-first approach.</p>
+
+<h2>Mistake 2: A noindex tag or a robots block you did not mean</h2>
+<p><strong>How to spot it:</strong> a page is missing from Google even though it is live. Open Search Console's Page Indexing report and look for "Excluded by noindex tag" and "Blocked by robots.txt". In WordPress, check Settings, Reading, "Discourage search engines" and the robots setting in your SEO plugin.</p>
+<p><strong>The fix:</strong> remove the tag or rule on pages that should be found, then request indexing. This is the most costly mistake, because nothing else helps while it is there. A noindex on 3.5% of desktop pages in the Web Almanac sample is often right, for example on thank-you pages, so check page by page. Our <a href="/robots-txt-for-seo-a-complete-guide/">robots.txt guide</a> explains what the file can and cannot do.</p>
+
+<h2>Mistake 3: Content that search engines cannot see</h2>
+<p><strong>How to spot it:</strong> use the URL Inspection tool in Search Console and compare the rendered HTML with what you see in the browser. Or fetch the page without a browser and look for the main text in the response.</p>
+<p><strong>The fix:</strong> make the main text, links and headings available in the HTML that is served, or reliably rendered. Google can process JavaScript, but other crawlers may not. In December 2024, Vercel reported that none of the major AI crawlers it tested rendered JavaScript. Avoid "load more" buttons for content you want indexed, and use normal links.</p>
+
+<h2>Mistake 4: Duplicate pages and mixed canonical signals</h2>
+<p><strong>How to spot it:</strong> several URLs show the same content, such as with and without "www", with tracking parameters or in print versions. In Search Console, look for "Duplicate without user-selected canonical".</p>
+<p><strong>The fix:</strong> pick one preferred URL for each page. Link to it, list it in your sitemap, and point canonical tags to it. The Web Almanac describes canonical tags as strong hints, not commands, and found them on 68% of desktop pages in 2025. Do not send mixed signals, such as a page that is in your sitemap, canonicalized to another URL and blocked from crawling at once. Use redirects for old duplicate URLs.</p>
+
+<h2>Mistake 5: Weak titles and meta descriptions</h2>
+<p><strong>How to spot it:</strong> run a crawl and sort by title. Look for repeated titles, missing ones and titles that are too long or empty of meaning. The Web Almanac found titles on almost every page, so the issue is quality, not presence. SE Ranking's audits found duplicate titles on 53.69% of sites, and missing meta descriptions on 65.38%.</p>
+<p><strong>The fix:</strong> write a distinct, accurate title for each page that names its subject, and a description that states what the reader gets. Google may rewrite either one if it does not match the page, so keep both honest. Avoid stuffing keyword lists.</p>
+
+<h2>Mistake 6: A messy heading structure</h2>
+<p><strong>How to spot it:</strong> check each page for one clear H1, then H2s for the main sections and H3s for parts of them. The Web Almanac found an H1 on 71% of desktop pages, and only 66% had a non-empty H1, so many pages lack a clear main heading. SE Ranking's audits found missing H1s on 54.67% of sites and multiple H1s on 54.52%.</p>
+<p><strong>The fix:</strong> use one H1 that names the page's subject, then a logical outline. Use headings as a table of contents, not as places to repeat the keyword. A clear outline helps readers scan and helps systems pull the right passage for an answer.</p>
+
+<h2>Mistake 7: Thin or copycat content</h2>
+<p><strong>How to spot it:</strong> the page says what the top results say, in fewer words, with nothing new. It has few links and no examples, data or experience.</p>
+<p><strong>The fix:</strong> add something others lack: first-hand experience, a worked example, a template, original data, an expert quote or a clear decision rule. Google's guidance for AI features says unique, expert-led content with a point of view will likely matter more over time than other tips. Make fewer, stronger pages instead of many thin ones. Google's spam policy on scaled content abuse lists using generative AI tools to produce many pages without adding value as an example.</p>
+
+<h2>Mistake 8: Keyword stuffing and pages that compete with each other</h2>
+<p><strong>How to spot it:</strong> the same phrase appears in every heading and alt text, or two pages of your own alternate in results for the same query.</p>
+<p><strong>The fix:</strong> use the keyword where it fits and write for the reader. For pages that compete, merge them into the strongest page, redirect the weaker ones and update links. Pick one page for each main intent.</p>
+
+<h2>Mistake 9: Weak internal links and orphan pages</h2>
+<p><strong>How to spot it:</strong> crawl your site and list pages with no or one internal link, and links whose text says "read more" or "click here". SE Ranking's audits found internal linking issues on a large share of sites, including 69.32% with pages that have no inbound links.</p>
+<p><strong>The fix:</strong> link new pages from related older pages as soon as you publish, use clear, short anchor text and link to the final URL, not a redirect. Keep important pages within a few clicks of the home page. Our guide to <a href="/entity-seo/">entity SEO</a> shows how clear links and names also help machines understand your topics.</p>
+
+<h2>Mistake 10: Slow, unstable pages</h2>
+<p><strong>How to spot it:</strong> check field data in Search Console's Core Web Vitals report and in PageSpeed Insights. Google's web.dev gives these recommended thresholds, measured at the 75th percentile of page loads: Largest Contentful Paint within 2.5 seconds, Interaction to Next Paint of 200 milliseconds and Cumulative Layout Shift of 0.1.</p>
+<p><strong>The fix:</strong> find the biggest cause for each template. Common ones are oversized images, render-blocking scripts, many third-party tags and images without set dimensions that make the layout jump. Speed does not replace relevance, but a very slow page can block the task.</p>
+
+<h2>Mistake 11: Images without useful descriptions, and heavy files</h2>
+<p><strong>How to spot it:</strong> list images with missing alt text and files over a few hundred kilobytes. SE Ranking's audits found images without descriptions on 74.43% of sites.</p>
+<p><strong>The fix:</strong> write alt text that says what the image shows, in plain words, for people who cannot see it. Leave it empty for purely decorative images. Compress files and set width and height. Do not fill alt text with keywords.</p>
+
+<h2>Mistake 12: Markup that does not match the page, and no measuring</h2>
+<p><strong>How to spot it:</strong> run key pages through Google's Rich Results Test. Check that the markup matches what the page shows. The Web Almanac found structured data on 50% of pages, mostly as JSON-LD in the HTML.</p>
+<p><strong>The fix:</strong> mark up only what is visible and true, such as Article, Organization and Product, and keep it current. Google says structured data is not required for its AI features, though it helps with rich results. Then measure. Use Search Console for impressions, clicks, indexing and, for AI features, the Generative AI performance report. Skipping measurement lets old problems return unseen. Our <a href="/ai-search-audit/">AI search audit guide</a> covers the AI side of the check.</p>
+
+<h2>Why does Google show a different title or description than mine?</h2>
+<p>Google builds title links and snippets from the page and may replace what you supplied when it does not describe the page well. The Web Almanac notes that title rewrites in search results are widespread, yet title tags are still present on almost every page. So write titles that match the visible page, give the main heading, title and opening answer the same purpose, and put a clear definition or answer near the top of the page. If Google keeps changing your title, compare it with your H1 and with how other sites link to the page. The rewrite is often a sign that your title promises something the page does not deliver.</p>
+
+<h2>A bonus mistake: blocking the bots that feed AI answers</h2>
+<p>Security plugins and CDN settings sometimes block crawlers without anyone noticing. OpenAI says sites that opt out of OAI-SearchBot will not be shown in ChatGPT search answers, and that a robots.txt change can take about 24 hours to apply. Check that the search bots you want, such as Googlebot, Bingbot and OAI-SearchBot, are not blocked on pages you want found. Training bots such as GPTBot are a separate choice. Our <a href="/ai-search-audit/">AI search audit guide</a> shows how to test each bot.</p>
+
+<h2>Which free tools help you find these mistakes?</h2>
+<table>
+<thead><tr><th>Tool</th><th>What it finds</th></tr></thead>
+<tbody>
+<tr><td>Search Console, Page Indexing report</td><td>Noindex, robots blocks, duplicates, soft 404 errors, pages not indexed</td></tr>
+<tr><td>Search Console, URL Inspection</td><td>What Google fetched and rendered, and the chosen canonical</td></tr>
+<tr><td>Search Console, Core Web Vitals report</td><td>Field data on loading, responsiveness and layout shift by URL group</td></tr>
+<tr><td>PageSpeed Insights</td><td>Lab and field speed data and the largest causes</td></tr>
+<tr><td>Rich Results Test</td><td>Markup errors and eligibility for rich results</td></tr>
+<tr><td>A site crawler</td><td>Titles, headings, status codes, redirects, orphan pages and link anchors</td></tr>
+<tr><td>Bing Webmaster Tools</td><td>Indexing in Bing, which matters for tools that use Bing, and AI citation data</td></tr>
+</tbody>
+</table>
+<p>Any basic crawler will do for a small site. Paid suites help at scale, such as when you have thousands of pages, but they do not replace a person who reads the results and decides what matters.</p>
+
+<h2>How should you order the fixes?</h2>
+<table>
+<thead><tr><th>Priority</th><th>Mistakes</th><th>Why first</th></tr></thead>
+<tbody>
+<tr><td>1. Access and indexing</td><td>2, 3, 4</td><td>If a page cannot be crawled or indexed, nothing else matters.</td></tr>
+<tr><td>2. Relevance and content</td><td>1, 7, 8</td><td>The page must answer the right question better than others.</td></tr>
+<tr><td>3. Structure and signals</td><td>5, 6, 9</td><td>Clear titles, headings and links help people and systems understand the page.</td></tr>
+<tr><td>4. Experience and polish</td><td>10, 11, 12</td><td>Speed, images and markup support a good page. They do not rescue a weak one.</td></tr>
+</tbody>
+</table>
+
+<h2>A free 60-minute audit</h2>
+<ol>
+<li><strong>10 minutes:</strong> open Search Console's Page Indexing report and fix noindex and robots problems on pages that matter.</li>
+<li><strong>10 minutes:</strong> inspect three key pages with URL Inspection and compare the rendered text with the live page.</li>
+<li><strong>15 minutes:</strong> crawl the site with any crawler, and sort by title, H1, status code and inbound links.</li>
+<li><strong>10 minutes:</strong> read the Core Web Vitals report and pick the worst template.</li>
+<li><strong>10 minutes:</strong> review your top five pages against the search task and write what is missing.</li>
+<li><strong>5 minutes:</strong> list the first three fixes, with an owner and a date.</li>
+</ol>
+
+<h2>Worked example: a small services site</h2>
+<p>This is an illustration, not a client result. Imagine a 40-page site for a local accounting firm. The audit finds a noindex tag left on its services page after a redesign, a blog that loads posts only after a "load more" click, 12 pages with the same title, and a home page with three H1s. The team fixes access first by removing the noindex tag and adding normal links to blog posts. It then rewrites 12 titles and merges two competing posts. In week four it adds internal links from the blog to the services page, and compresses the largest images. It tracks indexed pages, impressions and inquiries against a baseline taken before the work. The result may be small or large, and it is measured, not assumed.</p>
+
+<h2>Our interest in this topic</h2>
+<p>Reinforce Lab sells SEO and AI search services. Nothing here is paid placement. Jamil Ahmed, who wrote this guide, is a Semrush Ambassador, and Reinforce Lab uses affiliate links for some tools. Read our <a href="/ftc-disclosure/">FTC and affiliate disclosure</a>. Our <a href="/services/technical-seo-services/">technical SEO service</a> covers these checks, and you can <a href="/get-diagnostic/">get your free diagnostic</a>.</p>
+
+<h2>Final thoughts</h2>
+<p>Fix what stops a page from being found first, then what makes it worth choosing, then what makes it pleasant and fast. Keep a short audit habit, since a stray tag or a redesign can undo months of work. Measure the result in Search Console and in leads, not only in rankings.</p>

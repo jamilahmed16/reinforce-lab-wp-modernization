@@ -1,0 +1,706 @@
+[
+ {
+  "url": "https://seos.co/learn-seo/on-page-seo-mistakes/",
+  "title": "On-page SEO Mistakes to Avoid in 2026",
+  "words": 3496,
+  "headings": [
+   [
+    "h1",
+    "On-page SEO Mistakes to Avoid"
+   ],
+   [
+    "h2",
+    "Key Takeaways"
+   ],
+   [
+    "h2",
+    "The mistakes that cause the most damage"
+   ],
+   [
+    "h2",
+    "Mistake 1: Optimizing for a keyword instead of the search task"
+   ],
+   [
+    "h3",
+    "A practical intent test"
+   ],
+   [
+    "h2",
+    "Mistake 2: Publishing content with no information gain"
+   ],
+   [
+    "h2",
+    "Mistake 3: Treating titles, headings and snippets as keyword containers"
+   ],
+   [
+    "h2",
+    "Mistake 4: Building pages that the site graph does not support"
+   ],
+   [
+    "h2",
+    "Mistake 5: Ignoring rendering, mobile content and indexation signals"
+   ],
+   [
+    "h3",
+    "Technical diagnostic sequence"
+   ],
+   [
+    "h2",
+    "Mistake 6: Polishing content while neglecting experience, images and schema"
+   ],
+   [
+    "h2",
+    "Mistake 7: Applying old SEO tactics to AI answer systems"
+   ],
+   [
+    "h2",
+    "A priority framework for diagnosing and fixing a page"
+   ],
+   [
+    "h3",
+    "Recommended implementation order"
+   ],
+   [
+    "h2",
+    "What is proven, what is consensus and what remains uncertain"
+   ],
+   [
+    "h2",
+    "When to use tools, specialists or an SEO agency"
+   ],
+   [
+    "h2",
+    "On-page SEO: Questions and Answers"
+   ],
+   [
+    "h2",
+    "Sources and Verification"
+   ],
+   [
+    "h2",
+    "Questions to Explore Next"
+   ],
+   [
+    "h2",
+    "Related SEO Guides and Rankings"
+   ],
+   [
+    "h2",
+    "Ready to Find the SEO Partner That Can Win Your Market?"
+   ]
+  ],
+  "text": "On-page SEO guide On-page SEO Mistakes to Avoid The most damaging on-page SEO mistakes are targeting the wrong search intent, publishing derivative content, using vague titles and headings, hiding important information from rendered HTML, weakening internal links, and allowing duplicate URLs or stale pages to compete. Fix relevance and indexability before polishing keywords. Then improve information gain, page structure, media, structured data and user experience. Measure results through impressions, qualified clicks, conversions, indexation, engagement and visibility in AI-generated answers, not rankings alone. Updated August 11, 2026 SEOS.co Editorial Research TL;DR Key Takeaways Intent mismatch and weak information gain usually matter more than minor keyword placement. Every important page needs a distinct purpose, useful original material and crawlable internal links. Google can rewrite title links and snippets, so metadata must align closely with visible page content. Critical mobile content should exist in rendered HTML without requiring a click, swipe or script failure to reveal it. Canonical tags, redirects, sitemaps and internal links must send consistent consolidation signals. Structured data can enable richer presentation, but it cannot compensate for weak or invisible content. AI search visibility depends on clear, extractable answers and corroborated entities, not a separate secret optimization method. Prioritize fixes by business impact, affected URLs, technical certainty and measurement quality. The mistakes that cause the most damage On-page SEO is the optimization of page-level content, HTML, media, metadata, internal links and user experience so search systems can understand, retrieve and present a page while visitors complete their task. It is not simply placing a keyword in a title. Use this matrix to distinguish high-impact failures from cosmetic issues. A page that cannot be indexed, does not satisfy intent or duplicates another URL should be fixed before its alt text or wording receives minor refinements. Mistake Typical evidence Business risk First action Wrong search intent Impressions without clicks, rapid returns to results, weak conversions High Compare the page format and task with the current result set Derivative or incomplete content Ranking stagnation, few links, no unique citations High Add first-hand evidence, decisions, examples or original data Blocked or failed rendering Missing content in rendered HTML, crawling errors Critical Restore accessible server-rendered or reliably rendered content Duplicate URL competition Several URLs alternate for the same queries High Consolidate content and align canonical, redirect and link signals Weak internal linking Orphan pages, deep click paths, generic anchors Medium to high Add relevant crawlable links from authoritative pages Overwritten metadata Search title differs repeatedly from the title tag Medium Align the title, main heading and dominant page purpose Slow or unstable experience Poor field Core Web Vitals, abandonment on mobile Variable Fix the largest template-level cause first Mistake 1: Optimizing for a keyword instead of the search task A page can mention the right phrase and still answer the wrong question. A person searching for an on-page SEO checklist may want an implementation sequence, while someone searching for an audit service may want scope, deliverables, proof and pricing guidance. Combining both into an unfocused page can satisfy neither. Before writing or refreshing, classify the task: learn, compare, diagnose, implement, validate or buy. Inspect which page types consistently appear, but do not copy them mechanically. Identify the required entities, questions, proof and next actions. Query fanout matters because search and answer systems can expand one query into related subquestions. A strong page therefore answers the immediate question and natural follow-ups without drifting into unrelated topics. A practical intent test State the visitor\u2019s job in one sentence. Identify the expected format, such as guide, tool, category, service or comparison. List the decisions the visitor must make after reading. Check whether the opening provides a usable answer before background material. Separate materially different tasks into linked pages when one page cannot serve them cleanly. Do not force a prescribed word count. Google\u2019s people-first content guidance explicitly warns against writing to an assumed preferred length. Mistake 2: Publishing content with no information gain Rephrasing the leading results creates little reason to rank, link to or cite the new page. Useful information gain can come from original measurements, annotated examples, first-hand experience, expert review, decision rules, failure analysis, templates or a clearer synthesis of conflicting evidence. For a product page, it may be precise specifications and compatibility details. For a service page, it may be a transparent process, exclusions, deliverables and accountable authorship. Build semantic coverage around relationships, not a bag of related words. Explain how a canonical affects duplicates, how internal links influence discovery, and how rendering affects indexable content. Those explicit relationships are more useful to people and retrieval systems than repeated synonyms. When a topic cluster becomes repetitive, consolidate rather than adding another near-duplicate spoke. Preserve the strongest URL, merge unique material, redirect retired pages where appropriate and update hub links. For link demand, create genuinely referenceable assets such as statistics pages with primary citations, original datasets, comparison tools or expert contribution programs. Link-intersect research and unlinked brand mentions can reveal outreach opportunities, but they cannot rescue a page that adds no value. A Semrush analysis of 42,000 blog pages reported that pages classified as fully human-written occupied position one about 80.5 percent of the time, compared with about 9 percent for AI-classified pages. This is correlation based on detector classification, not proof that authorship method caused rankings. The defensible lesson is to prioritize originality, verification and editorial value rather than a production label. Mistake 3: Treating titles, headings and snippets as keyword containers Title tags should be distinctive, compact and accurate. Common failures include repeated boilerplate, several pages with nearly identical titles, exaggerated claims, and titles that promise a checklist while the page delivers a sales pitch. Google generates title links and snippets automatically, so supplied metadata can be replaced when it does not represent the visible page well. Use one clear main heading that names the page\u2019s subject. Organize subsequent headings as a logical outline, not as opportunities to repeat the exact query. A clean structure helps readers scan and gives extracted passages enough context to stand alone. The title, main heading, opening answer and primary internal anchors should describe the same core purpose without being mechanically identical. Meta descriptions are not guaranteed to appear, but they remain useful persuasion assets. Describe the concrete outcome, differentiator or scope. Avoid stuffing lists of keyword variants. For snippet engineering, place concise definitions, steps, comparison criteria and factual qualifications close to the heading they answer. Keep URLs readable and stable. Changing a functioning URL merely to insert a keyword creates migration risk with little likely benefit. If a change is necessary, use a direct permanent redirect, update internal links, update the sitemap and avoid redirect chains. Mistake 4: Building pages that the site graph does not support An important page should not depend on an XML sitemap alone. Google recommends crawlable HTML links and descriptive anchor text. Links embedded only in nonstandard interactions, scripts that fail, images without an accessible link, or fragments that do not resolve to distinct pages can weaken discovery. Design a hub-and-spoke graph around user journeys. A broad on-page SEO hub might link to focused resources on titles, internal linking, JavaScript rendering, image optimization and audits. Each spoke should link back to the hub and to genuinely related siblings. This communicates relationships while helping visitors continue their task. Find orphan URLs by comparing crawl data, sitemap URLs, analytics landing pages and backlink targets. Find deep pages that require too many clicks from a relevant hub. Replace generic anchors such as read more with concise descriptions. Point recurring links to the canonical URL, not redirected or parameterized versions. Do not add dozens of context-free links merely to distribute authority. Crawl prioritization matters most on large sites. Log-file analysis can show whether search crawlers repeatedly spend requests on filters, calendars, parameters or obsolete URLs while valuable pages receive little attention. Correct the underlying navigation and indexation rules instead of relying only on a larger sitemap. Mistake 5: Ignoring rendering, mobile content and indexation signals Google uses mobile content for indexing. Primary copy, links, images and structured information should be available on the mobile version and should not depend on an interaction that a crawler may never perform. JavaScript content needs to appear in rendered HTML to be indexable. Server-side rendering or reliable pre-rendering can reduce failure points, especially for essential content. Indexation control also fails when teams send conflicting signals. A URL should not be internally linked as primary, listed in a sitemap, canonicalized elsewhere and blocked from crawling at the same time. Canonical tags are consolidation hints, not guaranteed commands. Use redirects for truly retired duplicates, self-referencing canonicals for preferred indexable pages where appropriate, and noindex for accessible pages that should not appear in search. Technical diagnostic sequence Confirm the URL returns the intended HTTP status. Check robots directives and whether crawling is required to observe them. Compare source HTML with rendered HTML on mobile. Verify the primary text, links and media are present. Inspect canonical tags, redirects, hreflang and sitemap inclusion for consistency. Compare Google\u2019s selected canonical with the declared preference. Test a sample across templates, not just one URL. Do not use a canonical as a substitute for fixing uncontrolled faceted navigation, copied templates or inconsistent internal links. Mistake 6: Polishing content while neglecting experience, images and schema Page experience is not a substitute for relevance, but severe slowness, layout movement or interaction delay can obstruct the task. Google\u2019s recommended Core Web Vitals thresholds are LCP under 2.5 seconds, INP under 200 milliseconds and CLS under 0.1. These are useful targets, not standalone ranking guarantees. Diagnose field data by template and device, then fix shared causes such as oversized hero media, render-blocking resources, third-party scripts or unstable ad slots. Images need contextual placement, descriptive filenames when practical, responsive delivery and useful alt text. Alt text should communicate the image\u2019s purpose to someone who cannot see it. Repeating keywords or describing decorative images adds noise. Compress assets without destroying necessary detail and reserve dimensions to reduce layout shifts. Structured data should match visible, current content. Valid markup can make a page eligible for rich results, but display is never guaranteed. Marking up fabricated reviews, hidden FAQs, stale prices or unsupported claims creates policy and trust risk. Schema clarifies entities and attributes; it does not make an unhelpful page authoritative. Accessibility and conversion clarity belong in the audit. Descriptive controls, readable contrast, keyboard access and explicit next steps help real users complete the page\u2019s intended task. Measure qualified actions, not only visits. Mistake 7: Applying old SEO tactics to AI answer systems Google AI Overviews and AI Mode, Bing and Copilot, and ChatGPT can synthesize information from several sources and reformulate a query into subquestions. There is no dependable special tag that guarantees inclusion. The durable approach is to make passages accurate, self-contained, attributable and easy to retrieve. Open sections with a direct answer, then provide evidence and qualifications. Name entities and explain their relationships explicitly. Use tables for comparisons and ordered lists for procedures. Attach dates, units, definitions and source context to numerical claims. Keep important facts in visible HTML rather than images alone. Maintain consistent organization, author and product information across the site. An Ahrefs study associated AI Overview presence with a 34.5 percent lower click-through rate for the top organic result across 300,000 keywords. The effect is directional and cannot predict every query. It means success measurement should include conversions, branded demand, cited visibility and assisted discovery, not only blue-link clicks. Google permits AI-assisted content when it is useful and accurate. Mass-producing low-value pages can violate scaled-content-abuse policy regardless of whether a human or software produced them. Human review should verify claims, remove invented details, add first-hand value and ensure each URL has a distinct purpose. A priority framework for diagnosing and fixing a page Do not begin an audit with a hundred-item checklist. Score each issue on four dimensions: business value of the affected page, severity of the failure, number of URLs affected and confidence that the proposed change addresses the cause. A template defect affecting revenue pages outranks a cosmetic edit on one low-demand article. Recommended implementation order Access: Resolve status, crawling, rendering, mobile parity and accidental noindex problems. Consolidation: Correct duplicate intent, canonicals, redirects and URL variants. Relevance: Align format, title, headings and opening answer with the search task. Value: Add evidence, examples, decision support and missing entity relationships. Discovery: Strengthen contextual internal links and hub placement. Experience: Improve media, accessibility, Core Web Vitals and conversion paths. Enhancement: Add compliant structured data and snippet-ready passages. Record the changed URLs, date, hypothesis and expected metric before deployment. Use Search Console query and page data, analytics conversions, crawl reports, field performance data and server logs. Compare appropriate periods and account for seasonality, demand changes, migrations and algorithm updates. Controlled title or intent testing is useful on sufficiently similar page groups, but changing several major variables at once makes attribution difficult. For decay remediation, separate demand loss from ranking loss. Refresh evidence and dates where facts changed, merge cannibalizing pages, repair broken links and preserve sections that still earn queries or links. A refresh should improve the answer, not merely change the publication date. What is proven, what is consensus and what remains uncertain Supported by official documentation: Search systems need crawlable links and accessible rendered content. Google uses mobile content for indexing, can generate title links and snippets independently, treats canonical declarations as signals, and requires structured data to represent visible content. Google also rejects the idea of a universal preferred word count. Strong practitioner consensus: Intent alignment, differentiated evidence, coherent internal linking, content consolidation and clear authorship tend to produce more durable outcomes than keyword repetition. Practitioners also commonly report that template-level technical fixes can outperform isolated copy edits. These are sensible operating principles, but impact varies by site and query. Still uncertain or context dependent: No public formula specifies how often a phrase should appear, how much each Core Web Vital changes rankings, or what reliably earns an AI citation. Correlations involving AI-generated content, AI Overview click loss or answer-system mentions do not prove universal causation. Community discussions increasingly emphasize entity consistency, extractable answers and monitoring citations. Treat those observations as anecdotal leads for testing, not established ranking factors. Avoid gray-area tactics such as expired-domain republishing, aggressive parasite pages or scaled near-duplicates. Even when short-term visibility appears possible, loss of control, policy exposure and weak brand value usually make the risk unattractive. When to use tools, specialists or an SEO agency A small editorial site can diagnose many on-page issues with Search Console, analytics, browser inspection and a crawler. Specialist help becomes more valuable when JavaScript rendering, faceted navigation, internationalization, migrations, enterprise templates or large-scale duplicate control are involved. Ask a prospective provider for a sample diagnosis tied to evidence, not a guaranteed ranking. Clarify whether the engagement includes implementation, quality assurance, log analysis, analytics setup, content consolidation and post-launch measurement. Require change logs and ownership of accounts and data. Google advises businesses to assess third-party SEO providers carefully and warns that nobody can guarantee a number one ranking. Reject vendors proposing doorway pages, hidden text, fabricated reviews, cloaking, deceptive redirects, hacked links or schema unsupported by visible content. A credible plan explains tradeoffs, prioritizes durable fixes and defines success through qualified organic outcomes rather than a long list of completed tasks. FREQUENTLY ASKED QUESTIONS On-page SEO: Questions and Answers What is the biggest on-page SEO mistake? The biggest mistake is publishing a page that does not satisfy the searcher\u2019s actual task. Perfect metadata cannot compensate for the wrong format, incomplete information or a page designed around a keyword instead of a decision. Does every page need an exact-match keyword in the title? No. The title should clearly describe the page and may use the natural query wording, but forced exact-match repetition can reduce clarity. Keep the title distinct, accurate and aligned with the visible heading and content. How long should an SEO page be? There is no universal target. Use enough depth to complete the task, answer important follow-ups and support claims without padding. A concise product answer can outperform a long guide when it better matches intent. Can duplicate content cause a penalty? Ordinary duplication is usually a consolidation and efficiency problem rather than an automatic penalty. Search engines may select one representative URL. Manipulative scaled duplication can create broader spam-policy risk. Why does Google rewrite a page title? Google may generate a different title link when the supplied title is repetitive, outdated, inaccurate or inconsistent with prominent page content. Align the title tag, main heading, visible copy and page purpose. How many internal links should a page have? There is no useful universal number. Add links that help discovery or support the next user task. Important pages should receive contextual links from relevant hubs, while repetitive and context-free links should be avoided. Does schema markup improve rankings? Structured data can clarify content and create eligibility for supported rich results, but it does not guarantee display or rankings. The markup must be accurate, current and consistent with visible content. Can AI-written content rank? Yes, authorship method is not the core issue. Content must be accurate, useful, original enough to justify the page and compliant with spam policies. Scaled low-value publishing remains risky regardless of how it was produced. How quickly do on-page SEO fixes work? Technical access fixes can be reflected after recrawling, while intent and content changes may require longer evaluation. Timing depends on crawl frequency, competition, demand and the scale of the change. Annotate releases and measure several relevant metrics. Should an underperforming page be updated, merged or deleted? Update it when the intent remains valuable and the URL has useful signals. Merge it when another page serves the same task better. Delete or noindex it when it has no distinct purpose, demand, links, conversions or necessary user function. RESEARCH SOURCES Sources and Verification Google Search Central, SEO Starter Guide Official foundation for how SEO helps search engines understand content and users discover pages. Semrush, Does AI Content Rank in Search? April 2026 analysis of 42,000 blog pages, with detector and correlation limitations. Ahrefs, AI Overviews and Organic Click-Through Rate Study Independent analysis associating AI Overview presence with lower top-result click-through rate. On-Page.ai Information Gain Study Practitioner research resource focused on information gain and differentiated content. RankNibbler, State of SEO 2026 Current practitioner report useful for contextual observations, not a substitute for primary documentation. Le Monde, The New Era of AI-Powered Search Independent reporting on AI-powered search and its implications for web publishing. arXiv Research Record 2509.08919 Recent academic research record relevant to generative search and information retrieval. Reddit Marketing Advice Hub, On-Page SEO Actions Discussion Community discussion included only as anecdotal practitioner context. Google Search Central, Creating Helpful, Reliable, People-First Content Official guidance on usefulness, original value, expertise, authorship and the absence of a preferred word count. arXiv Research Record 2601.16858 2026 academic research record relevant to evolving AI retrieval systems. Google Search Central, Title Links Official explanation of title link generation and title quality. Google Search Central, Crawlable Links Official requirements and recommendations for discoverable HTML links and descriptive anchors. Google Search Central, Mobile-First Indexing Best Practices Official guidance on mobile content parity and mobile indexing. Google Search Central, JavaScript SEO Basics Official technical guidance on rendered HTML and JavaScript content. Google Search Central, Core Web Vitals Official definitions and recommended LCP, INP and CLS thresholds. Google Search Central, Structured Data Policies Official eligibility and quality policies for structured data. Google Search Central, Google Images SEO Official image guidance covering context, filenames, alt text and responsive delivery. Google Search Central, Generative AI Content Official distinction between useful AI-assisted work and scaled low-value content. Google Search Central, AI Features and Your Website Official source concerning website visibility in Google's AI search features. Google Search Central, Do You Need an SEO? Official advice for evaluating third-party SEO services and avoiding guarantees. RELATED QUESTIONS Questions to Explore Next on-page SEO checklist how to audit on-page SEO technical SEO vs on-page SEO how to fix keyword cannibalization why Google rewrites title tags internal linking best practices SEOS.CO TOPIC GRAPH Related SEO Guides and Rankings What Is On-page SEO? Complete Guide Explore this topic in more detail How Does On-page SEO Work? A Practical 2026 Guide Explore this topic in more detail On-Page SEO Checklist: A Complete Guide for 2026 Explore this topic in more detail How to Improve On-page SEO: A Practical Guide for 2026 Explore this topic in more detail On-page SEO Best Practices: A Practical Guide for 2026 Explore this topic in more detail SEOS.CO EXPERT MATCH Ready to Find the SEO Partner That Can Win Your Market? Tell us your market, goals and growth targets. SEOS.co will help narrow the field and connect you with a serious SEO partner built for the opportunity. Research-backed guidance Built around your market No canned shortlist Get My Free SEO Agency Recommendation Tell us what you need. We will help narrow the field."
+ },
+ {
+  "url": "https://www.semrush.com/blog/biggest-seo-mistakes/",
+  "title": "SEO mistakes: Common SEO issues & how to fix them",
+  "words": 3381,
+  "headings": [
+   [
+    "h2",
+    "1. Duplicate content"
+   ],
+   [
+    "h3",
+    "How to fix duplicate content"
+   ],
+   [
+    "h2",
+    "2. Under-optimized meta tags"
+   ],
+   [
+    "h3",
+    "How to fix under-optimized meta tags"
+   ],
+   [
+    "h2",
+    "3. Image issues"
+   ],
+   [
+    "h3",
+    "How to fix image issues"
+   ],
+   [
+    "h4",
+    "Add alt text"
+   ],
+   [
+    "h4",
+    "Compress and resize images"
+   ],
+   [
+    "h4",
+    "Fix broken images"
+   ],
+   [
+    "h2",
+    "4. Slow load speed"
+   ],
+   [
+    "h3",
+    "How to fix slow load speed"
+   ],
+   [
+    "h2",
+    "5. Poor crawlability"
+   ],
+   [
+    "h3",
+    "How to fix poor crawlability"
+   ],
+   [
+    "h2",
+    "6. Lack of mobile optimization"
+   ],
+   [
+    "h3",
+    "How to fix a lack of mobile optimization"
+   ],
+   [
+    "h2",
+    "7. Assuming AI search optimization is the same as SEO"
+   ],
+   [
+    "h3",
+    "How to fix AI search optimization mistakes"
+   ],
+   [
+    "h2",
+    "8. Neglecting local SEO"
+   ],
+   [
+    "h3",
+    "How to fix local SEO issues"
+   ],
+   [
+    "h2",
+    "9. Ignoring search intent"
+   ],
+   [
+    "h3",
+    "How to fix search intent misalignment"
+   ],
+   [
+    "h2",
+    "10. Low-quality content"
+   ],
+   [
+    "h3",
+    "How to fix low-quality content"
+   ],
+   [
+    "h2",
+    "11. Keyword stuffing"
+   ],
+   [
+    "h3",
+    "How to fix keyword stuffing"
+   ],
+   [
+    "h2",
+    "12. Keyword cannibalization"
+   ],
+   [
+    "h3",
+    "How to fix keyword cannibalization"
+   ],
+   [
+    "h2",
+    "13. Over-optimized anchor text"
+   ],
+   [
+    "h3",
+    "How to fix over-optimized anchor text"
+   ],
+   [
+    "h2",
+    "14. Not tracking performance"
+   ],
+   [
+    "h3",
+    "How to fix your performance tracking"
+   ],
+   [
+    "h2",
+    "Avoid common mistakes and improve your SEO"
+   ]
+  ],
+  "text": "Appearing prominently in search results comes down to avoiding SEO mistakes that are easy to fix once you know what to look for. Here are the biggest SEO mistakes people make, how to spot them, and how to fix each one. 1. Duplicate content Duplicate content is when one webpage has the same or nearly the same content as another webpage. When your own site contains duplicate content, it can cause poor or chaotic page rankings and potentially prioritize the wrong page on search engine results pages (SERPs) or AI search results. Duplicate content can be an exact copy of a page or a near-identical version with minor variations.Think of templated pages with a few words changed. Or a U.S. and a U.K. version of the same page. How to fix duplicate content Fix duplicate content on your site by finding duplicate pages, then either making each page unique or using redirects and canonical tags (HTML that specifies a \u201cmain\u201d version) to point search engines to the right page. To find duplicate content on your site, enter your domain into Semrush\u2019s Site Audit tool and set up your crawl. Once your audit is complete, click on the \u201c Issues \u201d tab. Enter \u201cduplicate content\u201d in the search bar in the upper left. If Site Audit has detected duplicate pages, you\u2019ll see \u201c# pages have duplicate content issues.\u201d Click the number to see the affected pages. Possible solutions to your duplicate content issues include: Making the content on one of the duplicate pages unique Using rel=\"canonical\" tags to tell search engines which page is your preferred version Adding a 301 redirect from a duplicate page to the original one if the duplicate version isn\u2019t needed For a more detailed breakdown of when and how to address duplicate content issues, read our duplicate content guide . 2. Under-optimized meta tags Under-optimized meta tags (snippets of HTML that give users and search system crawlers more information about your website) are missed opportunities to improve your site\u2019s performance and can affect the way search systems and users interpret your pages. Two common meta tags are meta descriptions and title tags (title tags aren\u2019t technically meta tags, but most SEOs include them in this category). Title tags can show in search results (displayed below) and influence whether users click your result: Meta descriptions can also appear in search results. While they don\u2019t directly affect your ability to appear in search results, they can influence whether users click your results. Here\u2019s what a meta description looks like on a search engine results page (SERP): Common causes of meta tag under-optimization include: Missing tags Tags that are too long or too short Duplicate tags on different pages How to fix under-optimized meta tags To find missing tags quickly, run a free SEO audit . To address under-optimized tags across your entire site, use Semrush Site Audit. Go to the tool, click on the \u201c Issues \u201d tab, and search for the term \u201ctag.\u201d If Site Audit shows that you have missing or duplicate tags, you can easily fix the problems by adding tags where needed or altering duplicates to be original. To avoid common meta tag issues, optimize them from the beginning. For example, a page\u2019s title tag and meta description should: Contain your primary keyword Be unique to that page Summarize what a user can expect to find on the page Stick to recommended length limits (50-60 characters for title tags and 105 characters or fewer for meta descriptions) 3. Image issues Image issues (like overly large image files) can hurt the user experience (UX), slow down your site, and lessen your chances of appearing in search \u2014 so you should optimize images on your site . Common SEO image issues include: Lack of alt text : Alt text is HTML that briefly explains what the image is showing. It allows screen readers to convey what the image depicts to users who may be unable to see. And provide additional image context for crawlers. Oversized images : Oversized images can slow down your site\u2019s page speed \u2014 and that can impact your search visibility Broken images : Broken images are images on your site that can\u2019t be displayed because the image no longer exists, the URL is missing or incorrect, or the file path is invalid. Broken images undermine the user experience and signal a poor-quality webpage. How to fix image issues Here\u2019s how to fix three of the most common image issues: Add alt text Add alt text to each image within your content management system (like WordPress) or website platform. To quickly find missing alt text, use our free website SEO checker . To catch duplicates across your entire site, use Semrush Site Audit. Moving forward, assign alt text to every image you publish on your site. Best practices for alt text include being descriptive, unique, and natural (that is, don\u2019t try to stuff in keywords). Compress and resize images Compressing and resizing images makes images load faster, and you can usually resize and compress without compromising quality. Start by resizing your image using a free tool like Squoosh . Turn on \u201cResize\u201d and adjust the dimensions. Then, drag the slider under the \u201cCompress\u201d section. View the before/after version of your image side-by-side to check its quality. Fix broken images Address broken images to provide a better experience for users and convey to search systems that your site is well-maintained. To find broken images on your site, go back to the \u201c Issues \u201d tab in Site Audit and search \u201cimage\u201d to find notices about broken images. Once you\u2019ve found the broken images, there are a few ways you can fix them, such as: Changing the image URL Replacing the image Simply removing the image from the page 4. Slow load speed Slow page speed harms your chances of appearing in search results \u2014 load speed is a confirmed Google ranking factor and also likely to impact your appearance in AI tools. Load speed measures how quickly your webpage\u2019s content loads andaffects how likely a user is to engage with your site. Users are much more likely to abandon a page that takes a long time to load, whereas fast loading pages can keep users on your site for longer. How to fix slow load speed Fix slow load speed by addressing the most common culprits like large image files, bloated code, and server performance. Start by opening Site Audit . Scroll down to \u201cThematic Reports\u201d and locate the \u201cSite Performance\u201d box. Click on \u201c View details .\u201d This report will highlight issues with your website\u2019s load speed and performance. Prioritize fixing anything listed as an \u201cError.\u201d Then, focus on \u201cWarnings\u201d and \u201cNotices.\u201d Some common solutions for resolving slow load speed include: Compressing your images Optimizing your HTML code Moving to a different hosting service (if the problem is coming from your web server) Minimizing your files or code through minification (ask a developer if you need help with this) Enabling browser caching You can find more information about fixing your load speed issues directly in Site Audit by clicking \u201c Learn more \u201d or \u201c How to fix .\u201d 5. Poor crawlability Poor crawlability is when bots struggle to access your website, and it can prevent you from showing in traditional and AI search results. Basically, your site needs to be crawled to be eligible for indexing. So, you need to make sure Googlebot, OAI-SearchBot, and other crawlers are able to access your important pages. Bad crawlability can be the result of different SEO issues, including: Pages blocked in a robots.txt file Link issues (like broken links, nofollow links, and lack of internal links ) Redirect loops (when Page A redirects to Page B, which redirects back to Page A, and so on) 4xx errors (a page cannot be accessed) 5xx errors (a server cannot perform a request) Poor site architecture How to fix poor crawlability You can fix poor crawlability by updating broken links, improving your site architecture , and fixing broken pages. Go to Site Audit and scroll down to \u201cThematic Reports.\u201d Here, you\u2019ll see your site\u2019s \u201cCrawlability\u201d score. Click on \u201c View details \u201d under your score. This report shows where crawl budget (the amount of time and resources crawlers will devote to your website within a specific timeframe before moving on) is being wasted. You can also click over to the \u201c Issues \u201d tab and select \u201c Crawlability \u201d to see a breakdown of crawl-related errors affecting your site. Usually, these problems are easy to fix. 6. Lack of mobile optimization If your site isn\u2019t optimized for mobile, it\u2019s less likely to show in search results and also isn\u2019t suitable for the majority of users who are browsing on their phones. There are three primary methods of making a site mobile-friendly: Responsive design : This lets you serve the same page to desktop and mobile users. The link stays the same, but the page displays differently depending on the device. Responsive design is Google\u2019s recommended method. Dynamic serving : The URL stays the same, but the HTML changes based on the device Separate URLs : The URL changes depending on the device (generally not recommended) How to fix a lack of mobile optimization Fix a lack of mobile optimization by establishing a mobile-friendly site using one of the methods mentioned above \u2014 ideally by opting for responsive design. But your mobile efforts shouldn\u2019t end there. To assess your mobile-friendliness, start with a free SEO check . For deeper mobile analysis across your site, use Semrush Site Audit. Go to the \" Issues \" report, and search for \"mobile.\" The tool will then show issues relating to mobile performance. Like missing viewport tags. There are also non-technical ways to optimize your site for mobile: Writing shorter paragraphs (for enhanced mobile readability) Using white space Avoiding intrusive pop-ups Ensuring buttons are easy to tap 7. Assuming AI search optimization is the same as SEO Relying exclusively on SEO techniques for AI search optimization hurts your chances of appearing in AI-generated responses within tools like ChatGPT. SEO and AI search optimization \u2014 also called answer engine optimization (AEO) \u2014 have many overlapping best practices Like creating unique content. But SEO and AEO have differences that you need to consider if you want to gain visibility in large language model tools (LLMs). How to fix AI search optimization mistakes One of the simplest AI search optimization mistakes to fix is to structure your content for chunk-level retrieval, where each section opens with a direct answer to its heading. Here are some additional tips: Build entity context throughout your content by naming your brand, your tools, and your areas of expertise consistently Optimize for the conversational queries AI systems handle (i.e., \u201cwhat is the best laptop for graphic design students on a budget?\u201d instead of \u201cbest laptop for students\u201d) Build a positive reputation online through reviews and testimonials Then, measure your AI visibility with our free tool to see whether your efforts are working. For ongoing tracking, prompt-level monitoring, and sentiment analysis over time, use Semrush\u2019s AI Visibility Toolkit . Here\u2019s what the Visibility Overview report looks like, where you can track if your AI visibility is growing. 8. Neglecting local SEO Neglecting local SEO can prevent your business from appearing in local search results, including in Google Maps and the local pack that appears at the top of Google results for many location-based searches. And local searches can be highly valuable to businesses, as people tend to perform local searches when they\u2019re ready to buy. How to fix local SEO issues Fix local SEO issues by keeping your business information consistent online. Start by optimizing your Google Business Profile and adding your business to other business directories. And ensure your listings include the following whenever possible: Accurate business name, address, and phone number Complete business hours (including special hours for holidays) High-quality photos of your business, products, or services Detailed business description with relevant local keywords Correct business category and attributes Use Semrush's Listing Management tool to make sure your business details are consistent across directories. Even small variations \u2014 like including a suite number in some places but not others \u2014 can mislead both users and search systems. After entering your business name, you\u2019ll get an assessment that grades your online presence. Click \u201c Continue setup \u201d and follow the prompts. Make sure your business information is correct, as the tool will update and distribute your business information across a range of directories. You should also create location-specific content for multiple service areas. For example, if you're a plumber serving three cities, build a dedicated landing page for each one with unique copy and city-specific keywords. This helps you appear in more local searches. 9. Ignoring search intent Ignoring search intent (the goal behind a query) hurts search visibility as search systems are unlikely to prioritize content that doesn\u2019t match what the user is looking for. There are four main types of search intent: Informational : The user wants to learn something (e.g., \"how to change a tire\" and \"what is seo\") Navigational : The user wants to find a specific website or page (e.g., \"facebook login\" and \"semrush blog\") Commercial : The user is researching products or services before making a decision (e.g., \"best running shoes\" and \"mailchimp vs brevo\") Transactional : The user is ready to take action or make a purchase (e.g., \"buy iphone 15\" and \"plumber near me\") For example, creating an informational blog post for a transactional keyword wastes your effort. Because you almost certainly won\u2019t appear. How to fix search intent misalignment Fix search intent misalignment by analyzing a keyword\u2019s search intent before creating content. Analyze an individual query\u2019s intent by searching for the keyword and reviewing the top content that appears. If you\u2019re using Google, also review which SERP features (non-traditional elements of the search results) are present: Featured snippets and \"People Also Ask\" boxes indicate informational intent Product listings and shopping ads signal transactional intent Review sites and comparison articles suggest commercial intent Brand-specific results point to navigational intent Use our keyword research tool to identify search intent at scale. Enter your seed keyword and click \u201c Search .\u201d You\u2019ll get a list of related keywords, their intent, and other useful information. Reviewing search intent before you create helps you plan content that matches intent from the start, rather than discovering the mismatch after your content fails to show in search results. 10. Low-quality content Low-quality content is unlikely to rank well on Google and be cited in AI tools like ChatGPT, as those systems are designed to deliver relevant and authoritative content to users. Whereas good content can improve conversion rates, increase search visibility, and attract more high-quality backlinks . Low-quality content generally includes some or all of the following: Misinformation Outdated facts Grammatical/spelling errors Misalignment with search intent Like other aspects of SEO, what\u2019s considered high-quality content can evolve based on changing search algorithms and user needs. How to fix low-quality content Fix low-quality content by producing high-quality content that\u2019s accurate, relevant, useful, error-free, and credible. One framework to help you create quantity content is Google\u2019s Experience, Expertise, Authoritativeness, and Trustworthiness ( E-E-A-T ) framework. As you create content, consider the ways in which you can convey these four elements. Some ideas include: Adding author bios that highlight credentials, years of experience, and relevant expertise Citing credible sources like original research, industry reports, and recognized experts Including first-hand experience such as original data, case studies, screenshots, or personal testing Ensuring facts, statistics, and examples reflect current information Earning backlinks from authoritative sites in your niche, which signals credibility to Google Building a consistent publishing record that demonstrates ongoing topical authority over time Displaying trust signals like clear authorship, an about page, contact information, and transparent editorial standards Writing content with the above practices can also help AI visibility, as AI systems want to cite reputable sources. 11. Keyword stuffing Keyword stuffing is overusing keywords unnaturally in your content in an attempt to manipulate your way to higher search visibility. In reality, keyword stuffing makes your content difficult to read and can send negative signals to Google.It can even result in a Google penalty that may lead to some or all of your webpages being removed from search results. Because many AI tools rely on Google to select and display results, keyword stuffing that impacts your presence on Google can also impact your AI visibility. How to fix keyword stuffing Fix keyword stuffing by using keywords naturally, rather than trying to force them into your content. For example, your target keyword can appear in your page\u2019s: Title Meta description Opening paragraph Body (when it naturally comes up) Alt tags Headers (some but not all) Don\u2019t be afraid to use keyword variations, either. For example, \u201chow to bake a gluten-free cake\u201d sounds more natural than \u201chow to bake a cake gluten free\u201d and still conveys the same meaning. Semrush\u2019s On Page SEO Checker highlights any content that has keyword stuffing. 12. Keyword cannibalization Keyword cannibalization is when you have a page on your website targeting the same keyword as another page, which can hurt your rankings for one or both pages. Keyword cannibalization can happen when you have duplicate content or if you\u2019ve published similar content over time. It can even be caused by subcategory pages that aren\u2019t distinct enough from their parent pages. How to fix keyword cannibalization Fix keyword cannibalization by creating unique pages that each serve a distinct purpose. To uncover keyword cannibalization you may not know exists on your site, go to Semrush\u2019s Position Tracking tool. Configure the tool for your site. When Position Tracking is ready, click the \u201c Cannibalization \u201d tab to view a report of pages that are possibly cannibalizing each other. If you find pages that are competing for keywords with the same intent, choose a page to serve as the main version and use canonical tags to indicate your main version. Or redirect other pages to your preferred version if you don\u2019t need the duplicates. If the competing pages could each serve a distinct purpose, adjust the content on each to target a unique angle. 13. Over-optimized anchor text Over-optimized anchor text (the clickable text that links to another webpage) usually isn\u2019t descriptive or helpful for users or bots \u2014 and it can hurt your SEO. Here\u2019s an example of over-optimized anchor text directly from Google: This anchor text over-optimization is an attempt to associate the original page with the linked keywords with the hopes of gaining better search visibility. However, over-optimized anchor text can confuse search systems if it doesn\u2019t appropriately represent the linked pages. It\u2019s also confusing for users. How to fix over-optimized anchor text Fix over-optimized anchor text by keeping it natural, descriptive, and concise. In its guidelines on best linking practices, Google says : \u201cTry reading only the anchor text (out of context) and check if it's specific enough to make sense by itself. If you don't know what the page could be about, you need more descriptive anchor text.\u201d 14. Not tracking performance Not tracking your site\u2019s performance means you can\u2019t identify what\u2019s working, what\u2019s failing, or where to focus your efforts. Without proper tracking, you risk wasting time and resources on tactics that don't help you reach your goals. How to fix your performance tracking Fix performance tracking by outlining clear goals and setting up an analytics platform to help you monitor the metrics that support your goals. Use a tool like Google Analytics 4 to track website analytics. Look at metrics like: Traffic volume and trends User behavior (bounce rate, time on page, pages per session, etc.) Conversion rates Traffic sources Audience demographics And use Google Search Console monitor: Which queries drive impressions and clicks Your average position for important keywords Click-through rates for different pages Indexing issues Avoid common mistakes and improve your SEO Fixing SEO mistakes (like ignoring search intent and publishing low-quality content) gives your content a better chance of ranking in search engines. And although SEO and AEO have different approaches, strong foundational SEO can help you appear in AI-generated answers. Start addressing SEO mistakes today with a free trial of Semrush\u2019s SEO Toolkit."
+ },
+ {
+  "url": "https://blog.rabbitseo.com/how-to-optimize-web-pages-for-seo-mistakes-to-avoid/",
+  "title": "How to Optimize Web Pages for SEO: 10 Mistakes to Avoid \u2013 Rabbit SEO Blog",
+  "words": 2144,
+  "headings": [
+   [
+    "h2",
+    "How to Optimize Web Pages for SEO Starts With the Right Priorities"
+   ],
+   [
+    "h2",
+    "10 Mistakes to Avoid When Learning How to Optimize Web Pages for SEO"
+   ],
+   [
+    "h3",
+    "1. Optimizing for keywords instead of search intent"
+   ],
+   [
+    "h3",
+    "2. Writing weak title tags and meta descriptions"
+   ],
+   [
+    "h3",
+    "3. Using a confusing heading structure"
+   ],
+   [
+    "h3",
+    "4. Publishing thin, duplicated, or stale content"
+   ],
+   [
+    "h3",
+    "5. Ignoring crawlability, indexability, and canonical signals"
+   ],
+   [
+    "h3",
+    "6. Treating page speed optimization as optional"
+   ],
+   [
+    "h3",
+    "7. Neglecting internal linking and leaving pages orphaned"
+   ],
+   [
+    "h3",
+    "8. Overlooking image optimization and media efficiency"
+   ],
+   [
+    "h3",
+    "9. Skipping structured data where it adds clear meaning"
+   ],
+   [
+    "h3",
+    "10. Publishing once and never reviewing again"
+   ],
+   [
+    "h2",
+    "A Practical Checklist for How to Optimize Web Pages for SEO"
+   ],
+   [
+    "h2",
+    "Make Page Optimization Easier With Rabbit SEO"
+   ],
+   [
+    "h2",
+    "Final Thoughts on How to Optimize Web Pages for SEO"
+   ]
+  ],
+  "text": "If you want to learn how to optimize web pages for SEO , the first step is not adding more tactics. It is removing the mistakes that hold pages back. Many pages fail to perform not because the topic is weak, but because the fundamentals are misaligned: the page targets the wrong intent, sends mixed indexing signals, loads too slowly, or gives search engines a poor content structure to interpret. That is why strong on-page SEO and strong technical execution have to work together. A beautifully written page can still underperform if it is hard to crawl, poorly linked, or accidentally canonicalized away. On the other side, a technically clean page will still struggle if the content does not satisfy the query behind the search. In this guide, we will break down the most common mistakes to avoid, explain why they matter, and show what to do instead. If your goal is to understand how to optimize web pages for SEO in a way that improves visibility and supports conversions, this is where to focus. How to Optimize Web Pages for SEO Starts With the Right Priorities Page optimization is often treated like a checklist of isolated tasks: add a keyword, shorten the title, compress images, and move on. In reality, high-performing pages are built around four connected priorities: Relevance: the page matches search intent . Clarity: the content structure helps users and search engines understand the topic. Accessibility: the page supports healthy crawlability and indexability . Usability: the page loads quickly, works well on mobile, and guides the next action. Most optimization mistakes happen when one of those priorities is ignored. Before diving into the details, here is a quick summary of the errors that most often undermine otherwise good pages. Mistake Why It Hurts Better Direction Targeting the wrong intent Rankings fail to stick and engagement is weak Map the page to the actual query purpose Weak titles and meta descriptions Lower relevance and fewer clicks Write specific, useful SERP copy Messy heading structure Poor topical clarity Use a logical hierarchy from H1 to H3 Thin or duplicate content Low distinct value Create unique, complete page coverage Bad indexation signals Important pages are ignored or consolidated incorrectly Review noindex, robots, and canonical tags Slow page performance Weak user experience and inefficient rendering Improve assets, layout stability, and delivery Poor internal linking Pages become hard to discover and prioritize Strengthen internal linking paths Unoptimized media Slower loads and weak image context Compress files and add descriptive alt text Missing structured context Reduced search result clarity Use relevant schema where appropriate No ongoing QA Problems return unnoticed Build reviews into your workflow 10 Mistakes to Avoid When Learning How to Optimize Web Pages for SEO 1. Optimizing for keywords instead of search intent The most common mistake is treating optimization as keyword placement rather than problem solving. A page can mention a phrase in all the expected locations and still miss the mark if it does not match what the searcher wants. Start by asking what the query is really asking for. Is the user comparing options, trying to complete a task, looking for a definition, or ready to buy? If your page format does not align with that purpose, everything else becomes less effective. This is especially important for competitive pages where search engines already understand the dominant intent pattern. Good optimization means matching the page type, depth, and angle to the query. In practice, that may mean turning a broad article into a step-by-step guide, expanding a thin service page with decision-making details, or separating one mixed page into clearer topic-specific pages. 2. Writing weak title tags and meta descriptions Your title tag remains one of the clearest signals of topical focus. Yet many pages waste it with vague wording, duplicated templates, or keyword stuffing. The result is lower clarity for search engines and less appeal in the search results. A strong title tag should state the topic plainly, include the primary phrase naturally, and communicate a reason to click. Meta descriptions do not directly control rankings, but they still matter for click-through behavior because they frame the value of the page. Avoid titles that are too generic, too long, or too similar across multiple pages. If every page in a section sounds nearly identical, you create unnecessary ambiguity. Each important URL should have a distinct purpose reflected in its title and description. 3. Using a confusing heading structure Headings do more than break up text visually. They help define the topic hierarchy of the page. When headings are skipped, duplicated awkwardly, or used only for styling, the page becomes harder to interpret. Each page should usually have one clear H1 that reflects the primary topic. H2s should divide major sections, and H3s should organize subpoints within those sections. That structure helps both users scan the page and search engines understand how the content is grouped. This does not mean forcing keywords into every heading. It means creating a logical outline. If a page feels disorganized when viewed only by its headings, it likely needs restructuring. 4. Publishing thin, duplicated, or stale content One of the easiest ways to weaken a page is to publish content that offers little unique value. Thin pages, lightly reworded duplicates, and outdated articles send a poor quality signal even when the technical setup is fine. For commercial pages, thin content often shows up as short service descriptions with no explanation of fit, process, scope, or next steps. For informational pages, it appears as surface-level writing that answers the topic too briefly or repeats what users can find everywhere else. Optimization should improve usefulness, not just density. Expand pages where depth is missing, consolidate overlapping content, and refresh stale sections that no longer reflect current products, processes, or terminology. If two pages target the same topic from nearly the same angle, review them for overlap before they compete with each other. 5. Ignoring crawlability, indexability, and canonical signals This is where technical SEO becomes decisive. You may know exactly how to optimize web pages for SEO from a content perspective, but the page still will not perform if search engines cannot crawl it reliably or are being told not to index it. Common issues include accidental noindex tags, blocked resources, broken internal discovery paths, and misused canonical tags . Canonicals are especially risky when applied carelessly, because they can tell search engines to treat another URL as the preferred version even when the current page should stand on its own. During a technical SEO audit , review whether the page is indexable, self-canonical where appropriate, linked from relevant sections, and free from contradictory signals. Also verify that parameter versions, faceted URLs, or alternate variants are not creating unnecessary duplication or confusion. 6. Treating page speed optimization as optional Fast pages are easier to use, easier to render, and generally easier to maintain. Slow pages create friction at every stage, from loading assets to interacting with the content. While performance is not the only factor behind rankings, it affects how effectively a page serves the user. Page speed optimization usually starts with practical fixes: compress oversized images, reduce unnecessary scripts, defer noncritical resources, and simplify bloated templates. Mobile performance deserves special attention because design decisions that feel acceptable on desktop can become disruptive on smaller devices and weaker connections. Technical SEO is not just about whether a page exists. It is about whether that page can be accessed, rendered, and used without friction. If performance problems are severe, they can undermine otherwise strong content. 7. Neglecting internal linking and leaving pages orphaned Many teams publish good pages and then fail to give them a strong place within the site architecture. Without clear internal linking , pages receive less contextual relevance, weaker discovery signals, and fewer pathways for users to continue their journey. Important pages should be linked from other relevant pages using natural, descriptive anchor text. They should also sit inside a logical hierarchy, not depend on one buried pathway or a temporary promotional link. Orphan pages are especially problematic because they may exist in the XML sitemap but remain difficult for users and crawlers to find through normal navigation. Internal links are not just a distribution mechanism. They are part of how search engines understand topic relationships. Strong linking patterns reinforce your site structure and help prioritize the pages that matter most. 8. Overlooking image optimization and media efficiency Images often create two avoidable problems at once: they slow the page down and fail to contribute useful context. Large, uncompressed files hurt performance, while generic filenames and empty alt text miss an opportunity to improve accessibility and descriptive clarity. Optimize media by choosing appropriate dimensions, compressing files, and loading the right format for the use case. Alt text should describe the image when it adds meaning, not stuff keywords unnaturally. Product, category, and instructional pages especially benefit from media that is purposeful rather than decorative. For SEO, image work is rarely the main driver of success, but it often removes unnecessary drag. On high-value pages, those details add up. 9. Skipping structured data where it adds clear meaning Structured data does not compensate for weak content, but it can help search engines interpret page elements more clearly. The mistake is not that every page lacks schema; it is that relevant pages are published without the markup that supports their content type. Depending on the page, that may include article, product, FAQ, breadcrumb, or organization markup. The goal is not to chase every possible enhancement. The goal is to add accurate, relevant structure that matches what is visibly present on the page. Keep the implementation clean and truthful. Marking up content that users cannot actually see, or using a schema type that does not match the page, creates more risk than value. 10. Publishing once and never reviewing again Even well-optimized pages decline if they are never reviewed. Templates change, scripts accumulate, links break, competitors improve, and search behavior evolves. Optimization is not a one-time task; it is ongoing quality control. Build recurring checks into your workflow. Review indexing status, core page elements, internal links, content freshness, and engagement signals. If a page drops in visibility, do not assume the problem is only external. Recheck the basics first: intent match, technical health, page structure, and differentiation from related URLs. The best page optimization processes are repeatable. They make quality easier to maintain across the full site, not just on a few showcase pages. A Practical Checklist for How to Optimize Web Pages for SEO Once you know the mistakes, the work becomes much clearer. Use this streamlined review before publishing or refreshing any important page: Confirm the page matches the dominant search intent for its target query. Write a unique title tag that includes the primary topic naturally. Create a meta description that accurately previews the page value. Use one clear H1 and a logical H2 to H3 structure. Make sure the content is complete, specific, and meaningfully different from similar pages. Check crawlability and indexability , including noindex, robots, and canonical setup. Review URLs for cleanliness and consistency. Improve page speed optimization basics such as image compression and script discipline. Add relevant internal linking from related pages and key navigation pathways. Optimize images with appropriate sizes, filenames, and alt text where useful. Apply structured data only when it matches visible page content. Revisit important pages regularly as part of your technical SEO workflow. This is the practical side of how to optimize web pages for SEO : not chasing every tactic, but systematically removing the blockers that reduce discoverability, relevance, and usability. Make Page Optimization Easier With Rabbit SEO Knowing what to fix is one challenge. Keeping dozens or hundreds of pages healthy over time is another. Rabbit SEO helps teams stay on top of the issues that quietly erode performance, from technical signals and page structure to internal link gaps and ongoing optimization opportunities. If you want a more efficient way to review important URLs, prioritize fixes, and maintain consistent SEO standards across your site, Rabbit SEO can help turn scattered audits into a repeatable workflow. Final Thoughts on How to Optimize Web Pages for SEO The best answer to how to optimize web pages for SEO is usually not more complexity. It is better discipline. Avoid the mistakes that confuse search engines, frustrate users, or dilute page relevance, and many rankings problems become far easier to solve. Focus on intent, structure, technical clarity, and usability. Make sure your pages can be crawled, indexed, understood, and acted on. Then keep reviewing them as your site grows. That is how strong technical SEO supports stronger page performance over the long term. Tags # how to optimize web pages for SEO # Indexability # Internal Linking # On-Page SEO # SEO Mistakes # technical SEO # Website Optimization"
+ },
+ {
+  "url": "https://devdiggers.com/on-page-seo-checklist/",
+  "title": "On-Page SEO Checklist: 18 Checks for Every Page",
+  "words": 4538,
+  "headings": [
+   [
+    "h1",
+    "On-Page SEO Checklist: 18 Checks to Run Before You Publish"
+   ],
+   [
+    "h2",
+    "What Is an On-Page SEO Checklist?"
+   ],
+   [
+    "h2",
+    "Keyword and Search Intent Checks"
+   ],
+   [
+    "h3",
+    "1. Pick One Primary Keyword per Page"
+   ],
+   [
+    "h3",
+    "2. Match the Search Intent"
+   ],
+   [
+    "h3",
+    "3. Place the Keyword in Key Spots"
+   ],
+   [
+    "h2",
+    "Title Tag, Meta Description and URL Checks"
+   ],
+   [
+    "h3",
+    "4. Write a Unique Title Tag"
+   ],
+   [
+    "h3",
+    "5. Write a Meta Description That Sells the Click"
+   ],
+   [
+    "h3",
+    "6. Keep the URL Slug Short and Readable"
+   ],
+   [
+    "h2",
+    "Content and Heading Checks"
+   ],
+   [
+    "h3",
+    "7. Use Exactly One H1 With the Topic"
+   ],
+   [
+    "h3",
+    "8. Build a Logical H2 and H3 Outline"
+   ],
+   [
+    "h3",
+    "9. Answer the Question Early"
+   ],
+   [
+    "h3",
+    "10. Cover the Topic Fully and Show How You Know It"
+   ],
+   [
+    "h2",
+    "Image and Link Checks"
+   ],
+   [
+    "h3",
+    "11. Name Images and Write Alt Text"
+   ],
+   [
+    "h3",
+    "12. Set Image Size and Lazy Loading"
+   ],
+   [
+    "h3",
+    "13. Add Internal Links With Clear Anchors"
+   ],
+   [
+    "h3",
+    "14. Link Out to Primary Sources"
+   ],
+   [
+    "h2",
+    "Page Experience Checks"
+   ],
+   [
+    "h3",
+    "15. Pass the Core Web Vitals"
+   ],
+   [
+    "h3",
+    "16. Check the Page on a Phone"
+   ],
+   [
+    "h2",
+    "Schema and Trust Checks"
+   ],
+   [
+    "h3",
+    "17. Add Valid Structured Data"
+   ],
+   [
+    "h3",
+    "18. Show the Author, the Date and the Sources"
+   ],
+   [
+    "h2",
+    "How to Run an SEO On-Page Checklist in WordPress"
+   ],
+   [
+    "h2",
+    "What My On-Page SEO Test Found on Three Live Posts"
+   ],
+   [
+    "h2",
+    "Common On-Page SEO Mistakes to Avoid"
+   ],
+   [
+    "h2",
+    "Conclusion"
+   ],
+   [
+    "h2",
+    "Frequently Asked Questions (FAQs)"
+   ],
+   [
+    "h3",
+    "Q1. How many items should an on-page SEO checklist have?"
+   ],
+   [
+    "h3",
+    "Q2. Is an SEO on-page checklist the same as a technical SEO audit?"
+   ],
+   [
+    "h3",
+    "Q3. How often should I run an on-page optimization checklist?"
+   ],
+   [
+    "h3",
+    "Q4. Does keyword density still matter for on-page SEO?"
+   ],
+   [
+    "h3",
+    "Q5. What tools do I need for an SEO on-page optimization checklist?"
+   ],
+   [
+    "h3",
+    "Q6. Can on-page SEO alone get a page to rank?"
+   ],
+   [
+    "h3",
+    "Q7. Why does Google show a different title or description than mine?"
+   ],
+   [
+    "h3",
+    "Leave a Reply Cancel reply"
+   ]
+  ],
+  "text": "On-Page SEO Checklist: 18 Checks to Run Before You Publish Yash Kapoor June 8, 2025 \u2022 Updated on: November 13, 2026 \u2022 22 Mins Read An on-page SEO checklist is a short list of checks you run on one page before it goes live. It helps search engines and readers understand the page fast. It covers titles, descriptions, headings, URLs, content, images, links, speed and schema, and each check takes a minute or two. This version is built from tests and every rule is traced to its source. In October 2026 I ran every check below on three live DevDiggers posts with curl and Chrome and measured the titles in pixels. I also matched each rule to Google Search Central or web.dev to show where it comes from. You get 18 checks grouped by area, the real numbers from that test, and the mistakes it turned up. You also get a quick routine for running the list in WordPress with Rank Math, plus answers to the questions people ask most. What Is an On-Page SEO Checklist? An on-page SEO checklist is a repeatable list of the elements you control on a single page. It covers the words, the HTML tags, the images and the links that sit inside that page. You run it before publishing and again whenever a page drops in search results or gets a major edit. On-page SEO is one of three parts of search work. Technical SEO covers the whole site, such as crawling, sitemaps and HTTPS. Off-page SEO covers signals from other sites, mostly links and mentions. To see how the two sides differ and which one to fix first, read technical SEO vs content SEO . A slow server is a technical problem, and a missing link from a trade site is an off-page problem. A vague title on one post is an on-page problem. On-page is the part you can fix today, in the editor, without anyone else. That is why a checklist works so well here. The items rarely change, and missing one is usually a simple slip in the editor. The list also works as an on-page optimization checklist for old content. Most sites have posts that rank on page five for a phrase they barely mention, and those are the cheapest wins you have. Here is the whole list on one screen. The sections below explain each line, show the source and give the number I measured. Note: Google\u2019s SEO Starter Guide says it does not use the keywords meta tag. So that old checklist item is gone from this list, and you can leave the field empty. Keyword and Search Intent Checks Keyword and intent checks decide what the page is about before you touch a single tag. Pick one main phrase and confirm the page type matches what searchers want. Then place the phrase where it counts. Get this wrong and every later check polishes a page aimed at the wrong query. 1. Pick One Primary Keyword per Page Every page needs one main phrase that sums up what it answers. Two pages on your site chasing the same phrase compete with each other, and both usually rank lower. Search your own site for the phrase before you write. If an older post already targets it, update that post instead of starting a new one. Add two to four close variants as secondary keywords, and use each one once where it reads naturally. Once the keyword is set, write a blog post outline that maps each heading to one question. 2. Match the Search Intent Search intent is what the person wants when they type the query. Some want a definition, some want steps, some want to compare options, and some want to buy. Look at the first page of results for your keyword before you write. If every result is a numbered checklist, a long essay will struggle. If every result is a product page, a blog post will struggle too. Match the format that already wins. Then do it better. For this keyword, two of the three top pages I checked were checklists: 3. Place the Keyword in Key Spots The primary keyword belongs in a few places that carry weight. Put it in the title tag, the H1, the first sentence and one H2. Add it to the URL slug and one image alt text as well. Outside those spots, use natural variations. Google\u2019s starter guide warns that keyword stuffing is against its spam policies. Repeating the same phrase in every paragraph makes a page tiring to read, and readers leave. There is no density target worth chasing. Title Tag, Meta Description and URL Checks The title tag, meta description and URL are what a searcher sees before they click. Google uses the title for the blue link, often uses the meta description for the snippet and shows the URL above both. Each one needs to be unique, readable and short enough to show in full. 4. Write a Unique Title Tag The title tag is the HTML title element, and Google mostly uses it for the clickable title link in results. Google\u2019s title link guidelines ask for descriptive, concise text and warn against keyword stuffing and boilerplate. Source: Google Search Central Google sets no character limit, but it cuts long titles to fit the screen. So I measure titles in pixels instead of characters. My checker renders the text in Arial at 20 px and fails anything over 565 px, which leaves room on a desktop result. You can run the same pixel measurement on your own titles with a free title and meta description checker . In the test, the three live titles measured 458 px, 541 px and 561 px. All three fit. The 561 px one was \u201cHow to Submit Your Website to Google News in 7 Steps (2026)\u201d at 59 characters. A title that long is close to the edge. Put the keyword at the start where it never gets cut. A good title tag for this check reads like this: Keyword first: \u201cOn-Page SEO Checklist: 18 Checks\u201d puts the phrase where a cut title still shows it. One page, one title: Never reuse a title across two pages or even product variants. No brand stuffing: One short brand name at the end is fine when space allows. 5. Write a Meta Description That Sells the Click A meta description is a short summary in the page head that Google may show under the title. Google\u2019s snippet guide says there is no length limit, but the snippet is cut to fit the device width. Source: Google Search Central The same guide asks for unique descriptions on each page. Repeated descriptions across a site help nobody when two of your pages show up in one result. I keep descriptions under 900 px at Arial 14 px, with the keyword and the main point in the first 120 characters. The three live posts in my test had descriptions of 133, 135 and 139 characters. The old version of this very page had a 146 character description that measured 908 px. Its last words were at risk of being cut. Google rewrites descriptions when it finds a better match in the page text. That is normal, and you cannot force your version. A clear, specific description still wins the snippet more often than a vague one. 6. Keep the URL Slug Short and Readable The URL slug is the last part of the address, such as /on-page-seo-checklist/ . Google\u2019s URL structure guide recommends readable words and hyphens between them instead of underscores. Source: Google Search Central In WordPress, this starts with the permalink setting. If your addresses still look like ?p=123 , follow our guide to setting up pretty permalinks in WordPress first. Then trim each slug to the keyword. Drop stop words like \u201cthe\u201d and \u201ca\u201d when the slug still reads well. Never put a year in a slug you plan to update. Changing a slug later breaks old links unless you add a 301 redirect. Decide once. Content and Heading Checks Content and heading checks look at what the reader sees once they land. The page needs one clear H1, headings that map the topic and answers that come early. Google\u2019s helpful content guidance is the measure, and it favors pages written for people first. 7. Use Exactly One H1 With the Topic The H1 is the main visible title on the page. In WordPress it comes from the post title field. You rarely add it by hand. Every page in my test had exactly one H1. That is the theme doing its job, but page builders and copied blocks often add a second one. Check the page source or the outline view in the block editor before publishing. The H1 and the title tag can differ. The title tag is written for the result page, and the H1 is written for the reader who already clicked. Keep the keyword in both. 8. Build a Logical H2 and H3 Outline Headings split the page into sections a reader can scan. The H2s should cover the main questions, and the H3s should sit inside them. Google\u2019s SEO Starter Guide says heading order is great for screen readers but does not matter to Google Search. So the reason to keep order is the reader, plus anyone using assistive tech. On the posts I tested, the outlines ran from 7 to 12 H2s and 24 to 34 H3s. A quick test works well here. Read only the headings from top to bottom. If they tell the story of the page without the paragraphs, the outline is good. If two headings say the same thing, merge them. 9. Answer the Question Early Readers decide in seconds whether a page has their answer. Put the direct answer in the first paragraph. Then explain. The same goes for every section. Open each H2 with two or three sentences that answer its heading on their own. A reader who jumps in from the table of contents should not need the paragraph above. This check also catches padding. If the first paragraph under a heading only restates the heading, cut it and start with the answer. 10. Cover the Topic Fully and Show How You Know It Depth means answering every question a reader has on the topic. Google\u2019s SEO Starter Guide says content length alone does not matter for ranking. A word count is never the goal. Look at the top results and list the subtopics they all cover. Then look for what none of them cover, and add that. Real test results, screenshots of real screens and worked numbers are the gaps competitors leave most often. Google\u2019s helpful content guidance asks whether content shows first-hand expertise. It also asks you to think about \u201cWho, How, and Why\u201d for every page. That is why each section in this checklist names its source and the test behind it. Image and Link Checks Image and link checks make sure every picture and every link helps the page instead of slowing it or confusing it. Images need clear file names, alt text and set dimensions. Links need descriptive anchor text, internal links to related pages and outbound links to the sources behind your claims. 11. Name Images and Write Alt Text Google reads the page around an image, the file name and the alt text to understand it. Its image SEO guide gives my-new-black-kitten.jpg as a better name than IMG00023.JPG . Source: Google Search Central Rename files before you upload them, because WordPress keeps the original name in the URL. Our post on how to name images for SEO covers the pattern I use. Alt text describes the image for people who cannot see it. Keep it short and specific. Put the keyword in one alt text on the page and describe the rest plainly. If you need the steps, see adding alt tags to images in WordPress . 12. Set Image Size and Lazy Loading Every image tag should carry width and height. Without them, the browser does not know how much space to reserve, and the text jumps when the image arrives. In my test, every image on all three posts had width and height set, from 17 of 17 up to 21 of 21. Layout shift came out at 0 on each one. Lazy loading was on for 13 to 17 images per page, with the top images loading right away. WordPress adds width, height and lazy loading to images in post content by default. Problems usually come from images added by page builders or custom HTML. Compress large files too, which our WordPress image optimization guide covers step by step. 13. Add Internal Links With Clear Anchors Internal links help readers find the next page and help Google find and understand your other pages. Google\u2019s link guidance says anchor text tells people and Google what the linked page is about. Source: Google Search Central Use the name of the destination\u2019s topic as the anchor. \u201cSubmit your website to Google\u201d beats \u201cclick here\u201d every time. For example, once a page is finished, you still have to get it found. Our guide on how to submit your website to Google Search walks through Search Console. For news content, the steps to submit your website to Google News are different. After launch, a monthly SEO report shows whether these checks moved traffic. Link only to pages that are indexed. A link to a page marked noindex spends the reader\u2019s click on a page that will never rank. Pages that no other page links to count as orphans, and you can find and fix orphaned content in WordPress with Rank Math. 14. Link Out to Primary Sources Outbound links show where a claim comes from. Link the official documentation, the original study or the vendor page, and skip other blogs that repeat them. Three or more sources on a guide like this is a good floor. Every rule in this checklist links to the Google or web.dev page behind it, which lets you check my reading. Never link a competitor\u2019s article on the same topic. It sends your reader away for the exact answer you wrote. Page Experience Checks Page experience checks measure how the page loads and behaves on a real phone. The three Core Web Vitals cover loading, response to input and layout stability. A page can pass every content check and still lose readers if it takes four seconds to show its main text on mobile. 15. Pass the Core Web Vitals Core Web Vitals are three metrics Google defines for user experience. The web.dev Core Web Vitals page sets the good thresholds below. Source: web.dev Largest Contentful Paint (LCP): 2.5 seconds or less. Interaction to Next Paint (INP): 200 milliseconds or less. Cumulative Layout Shift (CLS): 0.1 or less. The same page says to measure at the 75th percentile of page loads, on mobile and desktop. Field data from real visitors comes from Search Console or PageSpeed Insights. For a quick lab check, I loaded each test post in Chrome with a Pixel 7 profile, 4x CPU slowdown and a 1.6 Mbps connection. LCP came out at 1.13 s, 1.15 s and 1.32 s, all under the 2.5 second line. HTML size ran from 112 KB to 126 KB, and the server answered in under 0.1 seconds from cache. A Lighthouse 12.8 mobile run on the Submit to Google post, with its default throttling, showed 2.1 s LCP and 0 CLS: Lab numbers are a guide only. Real visitors on slower phones can see slower results. Check the field data once the page has traffic. For a store, our list of ways to speed up a WooCommerce website covers the usual fixes. 16. Check the Page on a Phone Most searches happen on phones. Read the page on one before publishing. Check that text is readable without zooming and buttons are easy to tap. Watch for wide tables and code blocks that force sideways scrolling. A table with five columns often fits on a laptop and breaks on a phone. Test the widest one on the page. Also check that pop-ups do not cover the content the reader came for. Every page I tested had a viewport meta tag and a language attribute set to en-US . Both are small, but a missing viewport tag makes a page render like a desktop site shrunk onto a phone. Schema and Trust Checks Schema and trust checks tell search engines who wrote the page, what it is and when it changed. Structured data describes the page in a format machines read. Author names, dates and sources show readers and Google that a real person stands behind the content. 17. Add Valid Structured Data Structured data is code in the page, usually JSON-LD, that labels what the content is. Google\u2019s structured data introduction says Google uses it to understand the content of the page. On WordPress, an SEO plugin such as Rank Math writes this for you. Each post in my test output BlogPosting, BreadcrumbList, Organization, Person and WebSite types, plus Question and Answer types for the FAQ block. Nobody wrote that code by hand. Schema only describes what is already on the page. Google\u2019s structured data guidelines ask that marked-up content be visible to readers. Never mark up a rating or a price the page does not show. So the check is validation. Run the URL through the Rich Results Test and fix any errors. If you need a type your plugin skips, such as a local business, our guide to adding local business schema to WordPress shows one way. The free Schema.org validator runs the same kind of check and lists every type it finds: Source: Schema.org validator 18. Show the Author, the Date and the Sources Trust signals answer the \u201cWho\u201d in Google\u2019s helpful content guidance . A reader should see who wrote the page, when it was last updated and where its facts come from. Source: Google Search Central A byline only helps when it leads somewhere real. Link each author name to a bio page that lists what that person works on, and keep it current when roles change. Put a real author byline on every post, linked to a bio page. Show the published and updated dates. Never move the updated date without a real change, because a date that moves on its own is fake freshness. How to Run an SEO On-Page Checklist in WordPress Running the checklist in WordPress takes about ten minutes per page with Rank Math and a browser. Set the title, description and keyword in the Rank Math panel and check the outline and images in the editor. Then test the live URL. Save the results so the next audit starts from a baseline. Here is the routine I follow on each page: Set the SEO fields: Open the post and its Rank Math panel and fill in the title, description and focus keyword. Check the outline: Open the List View in the block editor and read the headings top to bottom. Check every image: Click each image block and confirm the alt text. Then check the file name in the Media Library. Check every link: Hover each link and confirm the target is a live, indexed page. Test the live page: Run the URL through PageSpeed Insights and the Rich Results Test after publishing. Submit the URL: Request indexing for the page in Search Console once the checks pass. For product pages, run the same list on the description too. Our guide on writing product descriptions using ChatGPT shows how to draft them quickly. This checklist is how you review the draft before it goes live. Keep a simple record of each audit in a spreadsheet. Note the date, the URL, the checks that failed and what you changed. When rankings move a month later, you can match the change to the edit. Rank Math also shows a score out of 100 in the editor. Treat it as a reminder list. It makes no ranking promise because it only counts what it can read in the post. If you would rather hand the audit to someone else, our WordPress SEO services team runs these checks across a whole site. For store-wide issues, the WooCommerce SEO guide covers category and product pages in more depth. What My On-Page SEO Test Found on Three Live Posts My on-page SEO test checked three live DevDiggers guides with curl and Chrome on 9 October 2026. All three passed the title, meta, H1, image size and layout shift checks. The biggest lesson came from the older version of this checklist page, which failed two checks of its own list. These are the numbers from that test: Check Submit to Google Google News ChatGPT descriptions Title width 458 px 561 px 541 px Meta length 139 characters 135 characters 133 characters H1 tags 1 1 1 Images with width and height 19 of 19 21 of 21 17 of 17 Mobile LCP (lab) 1.32 s 1.15 s 1.13 s Layout shift 0 0 0 Internal links on page 91 92 89 The internal link counts look high because they include the menu, footer and related posts. Only a handful sit inside the article body, which is the number that matters for this check. The older version of this page was the real lesson. Its meta description measured 908 px, past my 900 px cap, and it used a filler word my checker blocks. It also carried a noindex tag while it waited for this rewrite. That tag keeps a page out of search no matter how good the rest is. The test also showed what a checklist cannot judge. A page can pass every mechanical check and still lose to a better answer. Content quality, competition and links decide the rest, which is why the content checks in this list matter as much as the tags. Older posts need checks too, because content decay slowly drops clicks on pages that once ranked well. The tag checks were the fast part. My script fetched each page and read its tags in under a second per URL. The slow work in an audit is reading the content. Worth checking: Search your page source for noindex before you blame any other check. A single robots tag overrides every item on this list. Common On-Page SEO Mistakes to Avoid The most common on-page SEO mistakes are small and easy to miss in the editor. Titles run too long, descriptions repeat across pages, images ship without alt text and a stray noindex tag hides a page. Each one takes a minute to fix once you know to look for it. These are the ones I see most often in audits: A forgotten noindex: A page set to noindex during drafting never gets switched back. Duplicate titles: Product variants and paginated archives share one title tag. Keyword stuffing: The same phrase appears in every heading and alt text. Generic anchors: Links say \u201cclick here\u201d or \u201cread more\u201d instead of the topic. Unsized images: Images from page builders arrive without width and height, and the layout jumps. Stale dates: The updated date moves while the content stays the same. A forgotten noindex is the costliest of the six because nothing else on the list matters while it is there. In WordPress it hides in two places: the Search engine visibility box under Settings > Reading and the robots setting in your SEO plugin. Duplicate titles are the most common on stores. A shop with 40 variations of one product can end up with 40 pages that share one title. A searcher then sees the same blue link twice and cannot tell the pages apart. Keyword stuffing usually comes from good intentions. A writer hears that the keyword must appear in headings. So it goes into every heading. Read the headings aloud. If they sound like a robot, rewrite them. Stale dates are the quiet one. A plugin that bumps the modified date on every save makes a page look fresh while nothing changed. Readers notice when the screenshots are two years old. The fix for most of them is the same habit. Run the checklist on every page before it goes live and again when traffic drops. Conclusion An on-page SEO checklist works because it turns a fuzzy goal into 18 checks you can tick in one sitting. Start with the keyword and intent. Next come the title, description and URL. Finish with the content, images, links, speed and schema. My test showed that a solid theme and Rank Math handle much of the list for you. The checks that still fail are the human ones: a description that runs long, a noindex left on, a heading that says nothing. Run the list before every publish and you catch those before Google does. Frequently Asked Questions (FAQs) Q1. How many items should an on-page SEO checklist have? There is no fixed number. This list has 18 checks because each one covers a separate element on the page. Fewer items usually means some elements, such as image size or schema, get skipped. Q2. Is an SEO on-page checklist the same as a technical SEO audit? No, they cover different layers. An SEO on-page checklist reviews one page at a time, while a technical audit covers site-wide items such as crawling, sitemaps and redirects. Most sites need both. Q3. How often should I run an on-page optimization checklist? Run it before you publish any page, and again when a page loses traffic or gets a major edit. A quarterly pass on your top 20 pages catches most problems early. Q4. Does keyword density still matter for on-page SEO? No. Google\u2019s SEO Starter Guide warns that keyword stuffing is against its spam policies and it names no density target. Place the keyword in the title, H1, first sentence and one heading. Then write naturally. Q5. What tools do I need for an SEO on-page optimization checklist? A free set covers it. Rank Math or a similar plugin handles titles, descriptions and schema, and PageSpeed Insights covers speed. The Rich Results Test checks structured data, and Search Console shows how the page performs. Q6. Can on-page SEO alone get a page to rank? Sometimes for low competition queries, but rarely for competitive ones. On-page work makes a page clear and useful, while links from other sites and a healthy technical setup do the rest. Q7. Why does Google show a different title or description than mine? Google rewrites titles and snippets when it thinks other text on the page fits the query better. Clear, accurate titles and descriptions get rewritten less often, but no setting forces Google to use yours. Yash Kapoor Yash Kapoor is the founder and WordPress expert at DevDiggers, where he builds WordPress and WooCommerce plugins for loyalty programs, point-of-sale systems, digital wallets and affiliate management. He writes about developer tools, site performance and the technical side of running a WordPress store. He draws on years of building and maintaining production plugin codebases. X LinkedIn Leave a Reply Cancel reply"
+ },
+ {
+  "url": "https://seranking.com/blog/seo-issues/",
+  "title": "33 Technical SEO Issues Affecting Most Websites",
+  "words": 5745,
+  "headings": [
+   [
+    "h1",
+    "33+ technical SEO issues that affect most websites"
+   ],
+   [
+    "h2",
+    "1. Missing alt text"
+   ],
+   [
+    "h2",
+    "2. One or missing inbound internal links"
+   ],
+   [
+    "h2",
+    "3. External links to 3XX"
+   ],
+   [
+    "h2",
+    "4. Internal and external links without anchors"
+   ],
+   [
+    "h2",
+    "5. Title and description length issues"
+   ],
+   [
+    "h2",
+    "6. 3\u0425\u0425 HTTP status code"
+   ],
+   [
+    "h2",
+    "7. Missing description"
+   ],
+   [
+    "h2",
+    "8. Internal links to 3XX redirect pages"
+   ],
+   [
+    "h2",
+    "9. CSS file issues"
+   ],
+   [
+    "h2",
+    "10. H1 tag issues"
+   ],
+   [
+    "h2",
+    "11. Duplicate content in page titles and meta descriptions"
+   ],
+   [
+    "h2",
+    "12. Blocked by noindex"
+   ],
+   [
+    "h2",
+    "13. JavaScript file issues"
+   ],
+   [
+    "h2",
+    "14. External links to 4XX"
+   ],
+   [
+    "h2",
+    "15. Nofollow external and internal links"
+   ],
+   [
+    "h2",
+    "16. Image is too big"
+   ],
+   [
+    "h2",
+    "17. 4XX HTTP status codes"
+   ],
+   [
+    "h2",
+    "18. Slow page speed"
+   ],
+   [
+    "h2",
+    "19. Largest Contentful Paint"
+   ],
+   [
+    "h2",
+    "20. XML sitemap issues"
+   ],
+   [
+    "h2",
+    "21. Redirect chain"
+   ],
+   [
+    "h2",
+    "22. Cumulative Layout Shift"
+   ],
+   [
+    "h2",
+    "23. 4XX images (Not Found)"
+   ],
+   [
+    "h2",
+    "24. Time to Interactive (TTI)"
+   ],
+   [
+    "h2",
+    "25. 3XX images"
+   ],
+   [
+    "h2",
+    "26. Confirmation (return) links missing in hreflang"
+   ],
+   [
+    "h2",
+    "27. Redirect to 4xx or 5xx"
+   ],
+   [
+    "h2",
+    "28. External JavaScript and CSS files with 3XX, 4XX or 5XX"
+   ],
+   [
+    "h2",
+    "29. 4XX or 5XX JavaScript file"
+   ],
+   [
+    "h2",
+    "30. External JavaScript with 3XX, 4XX or 5XX"
+   ],
+   [
+    "h2",
+    "31. Missing title tag"
+   ],
+   [
+    "h2",
+    "32. Hreflang to non-canonical"
+   ],
+   [
+    "h2",
+    "33. Duplicate content"
+   ],
+   [
+    "h2",
+    "Other technical SEO issues to avoid on your website"
+   ],
+   [
+    "h3",
+    "302, 303, 307 temporary redirects"
+   ],
+   [
+    "h3",
+    "Missing redirect between www and non-www"
+   ],
+   [
+    "h3",
+    "The H1 tag is empty"
+   ],
+   [
+    "h3",
+    "Fixed width value in viewport meta tag"
+   ],
+   [
+    "h3",
+    "Blocked by nofollow"
+   ],
+   [
+    "h3",
+    "Blocked by robots.txt"
+   ],
+   [
+    "h3",
+    "Uncompressed content"
+   ],
+   [
+    "h3",
+    "Total Blocking Time (TBT)"
+   ],
+   [
+    "h3",
+    "X-default hreflang attribute missing"
+   ],
+   [
+    "h2",
+    "Summing it up"
+   ]
+  ],
+  "text": "Blog / Technical SEO / 33+ technical SEO issues that affect most websites 33+ technical SEO issues that affect most websites Written by Anna Postol SEO and Content Marketing Expert at SE Ranking. Anna combines industry experience and platform expertise to create actionable content on tech SEO, strategic growth, and AI in search. Reviewed by Olena Karpova SEO Specialist at SE Ranking. Olena has expertise in market research, website performance improving, investigating and fixing technical SEO issues Mar 07, 2025 29 min read Summarize this blog post with: ChatGPT Claude Grok Wise people learn from other people\u2019s SEO mistakes. To make it easier to find the top errors made by many sites, we analyzed 418,125 unique site audits from our Website Audit tool over the past year. It allows us to detect common SEO issues and order them by prevalence and severity. We included a section at the end that discusses less critical but commonly occurring technical SEO errors that deserve your attention. We strongly encourage you to read to the end. Key takeaways Alt text: 74.43% of websites have images that lack descriptions. Internal linking issues: 69.32% have no inbound links, 68.09% lack descriptive anchors, 67.11% only have one inbound link, and 63.87% redirect to other pages. External link issues: 68.54% redirect to other pages, 54.58% lack descriptive anchors, 43.40% lead to broken pages. Title issues: 67.52% too long, 53.69% duplicate, 49.36% too short, 5.93% missing. Meta description issues: 63.53% too long, 65.38% missing, 50.31% duplicate. 3XX HTTP status codes: 67.42% use redirects that hurt performance. CSS files: 57.72% too large, 48.66% uncompressed, 43.66% not minified, 17.64% not cached. Headings: 57.37% duplicate H1s, 54.67% missing H1s, 54.52% multiple H1s. Crawling & indexing: 50.58% blocked by noindex, 35.73% have pages that return 4XX status codes. JavaScript files: 50.21% not minified, 29.82% uncompressed, 27.07% not cached, 19.69% too many, 6.84% contain broken external files, and 7.16% fail to load properly. Links with nofollow attributes: 36.87% external and 20.74% have internal links that hurt the flow of natural link juice. Image size issues: 36.26% oversized, increasing load time. Speed and performance issues: 34.54% slow loading, 26.89% high LCP in lab environment and 9.46% in real-world conditions, 18.27% high CLS in lab environment and 9.03% in real-world conditions, 17.65% have long TTI. XML sitemaps: 23.17% are missing from robots.txt, 17.68% have redirects, 14.78% are missing entirely, 11.22% list noindex pages, 11.11% contain non-canonical URLs, and 5.71% include 4XX pages. Redirect issues: 21.58% create chains wasting crawl budget, 8.23% lead to error pages. Images: 18.07% return 4XX errors, 10.80% have pages with redirects. Localization issues: 10.29% have missing return links, and 5.24% have hreflang tags pointing to non-canonicals. Duplicate content issues: 5.04% of sites show identical content across different pages. Disclaimer : The percentages show the share of unique website reports we found each issue on. We arranged technical issues in descending order based on occurrence frequency and their severity across all audits. We grouped issues with similar solutions to help you see common to-do steps and how to fix them. 1. Missing alt text The most common technical problem spotted during our site analysis relates to images. 74.43% of websites have missing alt tags in images . The alt text (alternative text) is an HTML element designed to explain the meaning of images to search robots and make them more accessible to users. It\u2019s among the main image optimization elements, and helps search engines like Google better rank and understand your picture. Alt attributes for images also come in handy when (for whatever reason) the picture doesn\u2019t load up. They can also help individuals with impaired vision. How to approach : Run website audits regularly to identify images with missing alt text. If you want to make the most out of your images, add helpful, informative, and contextual alt text to them. You can also use keywords but avoid keyword stuffing as it causes a negative experience for your users and signals spam to search bots. 2. One or missing inbound internal links 7 out of 10 analyzed websites ( 69.32%) have pages with no internal links . The problem goes even further, with ( 67.11%) of websites whose pages have only one link connecting them to other pages . This is a major issue because inbound internal links enable users and search bots to navigate your website. Links structure the website content hierarchy and help distribute link juice. Some of your pages may not have internal links\u2014for example, a promo landing page. This page might only exist for the duration of the sale and only enable access via a link posted on social media or a newsletter. Beyond exceptional cases like this, it doesn\u2019t make sense from an SEO perspective to have isolated pages. Search engines can\u2019t find them while scanning your website, and users can\u2019t visit them when browsing your site. How to approach: If you have isolated pages on your website, determine the page\u2019s value. If you determine it\u2019s worth the effort, revise your website structure and figure out how to build relevant links to this page from your site\u2019s other sections and pages. By \u2018the best way,\u2019 we mean the most convenient way for users and Google to reach the page. 3. External links to 3XX 68.54% of websites analyzed have links to other resources that redirect users to other pages (not the ones you initially linked out to). If this new page is thematically related to the old one, or the transition is just as logical, there\u2019s no problem. But if the link leads visitors to a page that doesn\u2019t contain the necessary information, it can negatively impact your site\u2019s user experience and SEO. How to approach : Get in the habit of checking your link structure regularly and determining if you need to replace or delete the link. Another option is to use SE Ranking\u2019s Webpage Monitor tool to track these changes automatically. The tool monitors your external links and alerts you if anything changes, and if broken links need fixing. 4. Internal and external links without anchors Two more widespread issues include internal and external links without anchors attached . This happens to 68.09% and 54.58% of websites, respectively . It occurs when internal or external links have empty or \u201cnaked\u201d anchors, meaning they display a raw URL. These links make the site harder to navigate while making it more difficult for search engines to understand what the page in the link is about. This hurts user experience and detracts from search engine optimization. How to approach : Go through the links flagged in the report. Add clear, descriptive anchor texts where needed. Keep the text looking natural, concise, relevant to the target page, and straightforward. You can also use the Keyword Research Tool to find terms for your anchor texts. 5. Title and description length issues Meta tags are critical on-page SEO elements. They tell search engines and users important information about the web page. They also help search engines better understand how to present pages in SERPs. One of the most common SEO issues involves meta title and description lengths. 67.52% of the websites we scanned have overly long title tags, 63.53% have lengthy descriptions, and 49.36% have titles that are too short . This SEO mistake is two-sided: A too-short title can\u2019t fully describe your page. A too-long title and description can get cut by the search engine in the snippet. How to approach : The general recommendation is to keep your page titles between 20-65 characters and page descriptions under 158 characters. You can also use our Title and Meta Description Checker to review character limits and get a preview of their appearance in mobile or desktop SERPs. 6. 3\u0425\u0425 HTTP status code Our analysis shows that 67.42% of the websites contained pages with 3XX status codes. The 3XX status code means pages have redirects. It\u2019s okay to have redirects, but not if they are located in the incorrect spot. How to approach : We recommend handling redirects thoughtfully. Use them to manage duplicate pages, remove content, and other scenarios. But try to prevent them from leading to broken pages or creating endless loops and redirect chains. 7. Missing description This issue occurs on 65.38% of websites . But why is it so critical, given that Google doesn\u2019t confirm or refute that meta descriptions affect search rankings? The answer is that Google can still use them for search result snippets. If you don\u2019t specify a page description, Google will use the available content on that page to generate a description. How to approach : SE Ranking\u2019s Website Audit tool is really useful here. Just go to the Issues Report and review the Meta Tags section. You\u2019ll see the number of pages where a description should be added, and by clicking on that number, you\u2019ll get the list of pages. Add unique descriptions to each page, explaining what your page is about to people and search engines. 8. Internal links to 3XX redirect pages This problem, occurring in 63.87% of analyzed websites , is similar to its external links counterpart, but happens on your site. The negative effect for both cases is the same. If the page isn\u2019t relevant, it hurts your user\u2019s UX, which can be a bad signal for Google. It also wastes your crawl budget, which can prevent important new content from being crawled and reduce the budget for future crawls. How to approach : Go through the internal links highlighted in the report and update them with correct, active URLs. Keeping your internal links up-to-date helps users and search engines navigate your site. 9. CSS file issues The CSS file is responsible for the visual design of page elements. Unoptimized CSS files can slow page loading, hurting user experience and search engine rankings. Here is how SEO issues are distributed in this category: CSS file too large: 57.72% Uncompressed CSS files: 48.66% CSS files not minified: 43.66% Uncached CSS files: 17.64% How to approach : Compress and minify CSS files to reduce their size and improve page load time. Also enable caching to store CSS file copies. The next time the user visits that page, the browser will serve them the saved copy instead of sending additional server requests. 10. H1 tag issues HTML heading tags help people and search engines quickly understand page content. They outline the structure of the content and can affect page rankings. The H1 tag is the top-level page heading. It briefly describes page content and helps readers determine if the page has what they need. Many related common issues can arise: Duplicate content in H1 57.37% of websites have pages with duplicate H1 tags . Like other duplicate items, repeat H1 headings make it more challenging for search engines to determine which site page to display in search results for search queries. Duplicate H1s can also cause several of your pages to compete for the same keyword . This results in page cannibalization, which makes duplicated H1 tags one of the most problematic SEO issues. Missing H1 tag 54.67% of websites have pages with no H1 tag . The H1 tag is the most important heading on the page and usually serves as the title for that content (don\u2019t mix it up with the title tag!). Without it, the page is less reader-friendly and more difficult for Google crawlers to scan. Multiple H1 tags 54.52% of websites use multiple H1 tags on their pages . Given that Google\u2019s John Mueller said you can use H1 tags on a page as often as you want, it is technically not an issue. However, double check them to see if they have multiple H1 headings. Having multiple H1s can sometimes bring more good than harm to users as long as they don\u2019t destroy usability or look spammy. How to approach : Apply the same approach as with meta tag errors. Run a website audit to identify pages with multiple H1 headings and consider page structure improvements where needed. 11. Duplicate content in page titles and meta descriptions Slightly more than half of the analyzed websites have duplicate title tags ( 53.69% ) and duplicate descriptions ( 50.31% ). Having multiple pages with duplicate titles and descriptions can confuse search engines, making it difficult to determine which page is the primary option for search queries. These pages are less likely to rank well, so try to make their titles and descriptions unique. How to approach : First, ensure there are no pages with duplicate intent. If there are, handle the duplicates accordingly. Then, update the remaining pages\u2019 titles. The Issue report will help you identify pages with duplicate titles and descriptions. All you need to do is rephrase duplicate content using your target keywords. If you\u2019re struggling, use the AI Writer feature in SE Ranking\u2019s Content Marketing Module to generate new titles and descriptions from scratch. It can also generate different types of quality content and is a quick way to build SEO-friendly content. 12. Blocked by noindex We found that 50.58% of sites block some of their pages from search indexing by adding the noindex directive to the page\u2019s <head> section. Search bot will drop these pages and won\u2019t display them in the SERPs. While it\u2019s okay to block some pages from indexing (like pages with filtered results for ecommerce sites or pages with personal user data or checkout pages), it\u2019s not okay if it causes search engines to ignore your important pages. The indexing issues outlined in this article are the most critical. How to approach : First, review all your noindexed pages to confirm each tag is being used intentionally. Make sure you didn\u2019t accidentally block all the pages you want to have appear in search results. It\u2019s also crucial to check that noindexed pages aren\u2019t blocked by robots.txt. This prevents search engines from seeing the noindex directive altogether. If other sites link to these pages, they might still appear in search results. 13. JavaScript file issues JavaScript adds dynamism and interactivity to your website. JavaScript file-related issues are almost the same as with CSS\u2013they are \u201cheavy\u201d and affect page loading. Here are the issues you should pay attention to and their occurrence rate: Not minified JavaScript: 50.21% Not compressed JavaScript: 29.82% Not cached JavaScript: 27.07% Too many JavaScript files: 19.69% Another SEO mistake that we didn\u2019t observe in the CSS category is using too many JavaScript files. Since the browser sends a separate request for these files, loading the page can take longer. The consequences of this issue are obvious: pages with poor UX, higher bounce rates, and possibly lower rankings. How to approach : Since JavaScript files are just as large as CSS files, you should compress and minify them. Also, if you have a JS-based website, enable JS (client) rendering in SE Ranking\u2019s Website Audit tool. This can help you audit JS websites effectively and capture any related issues. 14. External links to 4XX 43.40% of analyzed sites have broken links to other resources . When following a link, the user expects to see the next page but instead lands on a non-existent page. This is a poor user experience. How to approach : Review all external links flagged in your audit and either remove or replace broken ones. Every outbound link should lead to a live page (returning a 200 OK response code). 15. Nofollow external and internal links Our analysis shows that nofollow attributes are present in both external (detected in 36.87% of websites) and internal (20.74%) links . For external links, using nofollow prevents link juice from passing to other sites. This is sometimes intentional but generally misapplied. But the larger issue here is with internal nofollow links, which can disrupt your site\u2019s natural link flow and create indexing challenges. How to approach : For internal links, only use nofollow attributes when necessary. To control how Googlebots crawl your website, use the Disallow rule in the robots.txt file instead. For external links, apply nofollow in specific cases. Use precise attributes like rel=\u201dsponsored\u201d for paid links or rel=\u201dugc\u201d for user-generated content. 16. Image is too big Images are often too resource-heavy, which can cause website speed issues that hurt your SEO and UX . Our inspection showed that this problem occurs with 36.26% of websites . The image file size can affect page speed. The chain of logic here is simple: the bigger the size, the longer it takes to load, the longer the user has to wait, the worse the user experience is, and the lower the page\u2019s position in search results. How to approach : One way to reduce the image file size is to compress it but maintain the image\u2019s quality. The ideal compression level depends on the image\u2019s format, dimension, and pixels, but you should keep them under 100 KB or less whenever possible. 17. 4XX HTTP status codes More than a third of the analyzed websites ( 35.73% ) have pages with a 4XX response . In most cases, a 4XX response appears in response to a 404 error. Having pages with the 404 error isn\u2019t that terrible in itself. However, you should take care of every internal link to such pages because linking to dead pages provides a poor user experience. In addition, it drains your crawl budget. This means you should manage every internal link that goes to these pages. How to approach : You can delete internal links to 404 pages and/or set up a 301 redirect. You should also get rid of any backlinks to them. 18. Slow page speed 34.54% of websites indicate problems with low page loading speed s . These websites are likely to notice negative behavioral signals. For example, users might go to other sites instead of waiting for the page to load. Page load speed is a Google ranking factor. It\u2019s a staple of Core Web Vitals . How to approach : Optimize your HTML code to prevent slow page speeds. If your pages still load slowly after optimizing their code, check your server performance. You may need to upgrade to a faster web server. 19. Largest Contentful Paint The Largest Contentful Paint (LCP) measures the primary content\u2019s loading speed. It looks at how fast the largest images, text blocks, videos, etc, load on the page and become visible to the user. LCP is measured in real-world conditions based on data from the Chromium browser and in a lab environment based on data from the Lighthouse report. Although you should generally strive to load the largest elements in under 2.5 seconds , our research shows that it\u2019s not always a realistic goal for some websites. 26.89% of websites have LCP higher than 2.5 seconds when measured in a lab environment. 9.46% of websites have LCP higher than 2.5 seconds when measured in real-world conditions. How to approach : To improve performance, use preloading on pages with static content, optimize the top-of-page code, reduce image file sizes, and get rid of render-blocking JavaScript and CSS. 20. XML sitemap issues An XML sitemap is a file with a list of a website\u2019s URLs. It helps search engines like Google spot the most important pages on your website, even isolated pages, or pages without external links. And although it plays a vital role in crawling, some XML-related issues still occur. 23.17% of websites don\u2019t include a link to their XML sitemap to the robots.txt file. However, including one is ideal because it can help Google determine your sitemap\u2019s location. 17.68% of websites have sitemaps containing redirecting URLs (3XX). This wastes the crawl budget and forces search engines to follow redirects to find the actual content. 14.78% of websites have no XML sitemap. This can hinder crawling effectiveness. Without a sitemap , it can be more difficult for search bots to find and access isolated pages of the site. 11.22% of websites have pages that feature the noindex meta tag in their XML sitemaps. This is confusing to Google. Your XML sitemap should only include URLs that you want search engines to crawl and index. 11.11% of websites show non-canonical pages in XML sitemaps. Your sitemap should only include canonical URLs to avoid confusing search engines about which version to index. 5.71% of websites contain broken pages (4XX) in XML sitemaps . Including non-existent pages misleads search engines and wastes the crawl budget. How to approach : Create an XML sitemap and add it to your website. Then, send the link with its location to search engines. You can also create separate XML sitemaps for URLs, images, videos, news, and mobile content. Add your XML sitemap file link to the robots.txt file. Replace redirecting URLs in the XML sitemap with their destination URLs. If the destination URL is already listed, remove the URLs with 3XX redirects from the sitemap. Remove pages with the noindex meta tag from your XML sitemap, or remove the noindex tag from these pages. The decision depends on your goals. Make sure your XML sitemap only contains canonical URLs. Take out any URLs with 4xx errors from your XML sitemap. Ensure it only includes URLs that return a 200 OK response. 21. Redirect chain Hardly any site can operate without redirects, but if they aren\u2019t implemented correctly, they can hurt your SEO. Redirect chains, which our tool detected in 21.58% of the websites in our study (i.e., redirects from one page to the second, third, fourth, and so on) can waste your crawl budget and create unnecessary load on the server. Remember that the longer the chain, the longer users must wait for the page to load. How to approach : Remove unnecessary steps in the chain by directly redirecting each URL in the chain to the final target. 22. Cumulative Layout Shift The Cumulative Layout Shift (CLS) measures how long it takes for your web page to stabilize. It looks at how long it takes for all elements on the page to appear if fresh content, like an image, loads longer than other page elements. It\u2019s also measured in real-world and lab environments. The goal here is to maintain a CLS of 0.1 or less . Our research shows that: 18.27% of websites exceed this value in a lab environment. 9.03% of websites exceed this value in real-world conditions. How to approach : One possible solution to this issue is to use size attributes for images and videos. It\u2019ll help you book space for them in the final layout rendering. 23. 4XX images (Not Found) Pages aren\u2019t the only elements that can return 4XX HTTP errors. It also applies to images and files. We noticed that 18.07% of websites contain broken images . And beyond the fact that broken images hurt user experience, Google can\u2019t index them. How to approach : Replace the URLs of all the broken images with working ones, or remove the links to the broken images from your website. 24. Time to Interactive (TTI) Our analysis shows that 17.65% of sites have common issues around TTI . This metric measures the time it takes for a page to become fully interactive after loading. Long TTI frustrates users who try to interact with elements that aren\u2019t ready to respond. How to approach : Optimize your JavaScript code by removing unnecessary JavaScript libraries and splitting code into smaller bundles. Load only the portions necessary first. 25. 3XX images We found that 10.80% of websites use redirects to load their images . This means browsers and search engines have to send an additional HTTP request to download the image instead of directly landing on the site. Every redirect adds loading time, and delays add up quickly when you have tons of files like this on your website. How to approach : Specify the direct path to the image files instead of redirects. If you\u2019re using images from external sources and can\u2019t avoid redirects, keep the images uploaded through the new URL relevant to your content. SE Ranking\u2019s Website Audit spots these image redirects so you can fix them and improve your site speed. 26. Confirmation (return) links missing in hreflang Hreflang tags are important if you\u2019re running a multilingual website. They tell search engines which language version to show to visitors from particular regions. Our analysis shows 10.29% of sites neglecting to use confirmation (return) links on hreflang pages . When using hreflang to indicate a page\u2019s language or regional versions, all versions must link back to each other. So if Page A links to Page B, Page B must link back to Page A. Otherwise, search engines may ignore or misinterpret these attributes, and hurt your local SEO. How to approach : Use the same set of URL, rel=\u201dalternate\u201d and hreflang values on all language or regional versions of your pages. This keeps each version properly linked back to all other versions. 27. Redirect to 4xx or 5xx 8.23% of scanned sites redirect users to pages that don\u2019t exist (4XX) or have server errors (5XX) . This means leading visitors to a dead end and causing search engines to hit a wall. This prevents search engines from crawling them and frustrates users, making them more likely to leave your site. How to approach : For 4XX errors (like 404s), update the target redirect page address so that it points to relevant pages. If you\u2019re seeing 5XX server errors, check your server logs. These errors might be temporary due to maintenance, but if they persist, you\u2019ll need to identify and fix the underlying server problem. 28. External JavaScript and CSS files with 3XX, 4XX or 5XX We found that 7.73% of sites have external JavaScript and CSS files that return redirect or error codes (3XX, 4XX, or 5XX) . While this might seem like a minor technical issue, broken JS code on your website can lower its rankings. This is because it results in improperly displayed pages that search engines can\u2019t index. How to approach : Check all external JavaScript and CSS files to ensure they\u2019re loading correctly. Use SE Ranking\u2019s Website Audit to identify problematic external JS and CSS files and either fix their paths or host the files directly on your server for better control. 29. 4XX or 5XX JavaScript file About 7.16% of sites have improperly loaded JavaScript files . When JavaScript breaks, your pages don\u2019t respond properly to user actions, resulting in buttons that don\u2019t click and forms that don\u2019t submit. As a result, they can\u2019t fully interact with the page. Search engines also struggle to understand these pages. How to approach : Verify that the paths to your JavaScript files are correct, and ensure your server is responding as expected. 30. External JavaScript with 3XX, 4XX or 5XX About 6.84% of sites have external JavaScript files that return error codes. But they must load correctly to function. Broken JS code on your pages hurts user experience and tanks your rankings. It causes your pages to appear improperly in the browser. Not only that, search engines still index them even if important parts of content are missing. How to approach : Verify all external JavaScript files are accessible and return proper response codes. 31. Missing title tag A rare but still existing issue ( 5.93% ) is the full exclusion of the title tag . This prevents you from being able to tell search engines and users what your page is about. Google will try to solve this issue by using your page content to create its own title. And it may not always match your goals or your keywords. How to approach : Add unique, relevant titles to your pages based on your target keywords. You can identify these pages with the help of website audit tools. After that you can write titles yourself or use content tools. 32. Hreflang to non-canonical One in twenty sites (5.20%) risk confusing search engines by pointing the site\u2019s hreflang tags to non-canonical pages . The set of rel=\u201dalternate\u201d hreflang=\u201dx\u201d values in these instances tells search engines \u201cshow this local version of the page,\u201d but the rel=\u201dcanonical\u201d attribute says \u201canother page is more important than this one\u201d. This confuses search engines about which instruction to follow. How to approach : Send clear signals to search engines: change your hreflang attributes by pointing the URL to canonical (main) versions of your pages. If you find conflicts, you can either update the hreflang so that it points to the canonical version, or change the canonical attribute if the URL that the hreflang attribute points to is canonical. Both the hreflang and rel=\u201dcanonical\u201d attributes should agree on the primary version. If the page doesn\u2019t have alternative versions, point the canonical attribute to the page itself. 33. Duplicate content About 5.04% of sites have duplicate content issues. Though the number may appear low, this is a serious issue. When you have the same content on different pages , search engines can\u2019t figure out which version to index and display in search results. It causes your pages to compete with each other, which leads to cannibalization issues. How to approach : Set up 301 redirects to send users from duplicate pages to the original version. Add rel=canonical tags to tell search engines which page is the preferred version. Use noindex, nofollow tags to prevent search engines from crawling duplicate pages, or use the noindex/follow tags to enable crawling. Make content unique by rewriting duplicate pages or adding fresh information to them. Check for technical issues that may cause unintended duplication (URL parameters, pagination, etc.) Other technical SEO issues to avoid on your website After solving the SEO issues described above, your chances of reaching the top of the SERP will be much higher. Fixing the following technical SEO issues, which appeared in around 15.37% of scanned reports, will further strengthen your site\u2019s performance. 302, 303, 307 temporary redirects Temporary redirects send your users and search bots to different pages. These pages tell users (and search engines) that the pages they are trying to get to are temporarily unavailable. These redirects can\u2019t transfer link juice from the old page to the new one. Given their temporary nature, it\u2019s best to avoid using them for extended periods. Missing redirect between www and non-www Many websites use both www and non-www in their address to indicate the existence of two versions of the same page. This can lead to duplicate content problems that lower page rankings. It\u2019s better to set up redirects to the main version. The H1 tag is empty Your H1 tag is the top-level page heading. Users see it first when they land on your page. Search engines also use H1 to understand what your page is about. It is the second most important tag after the title, so it needs clear, relevant text to communicate the topic of your content effectively. While some pages might have multiple H1s, it\u2019s much less convenient for users if you have empty ones. Plus, you\u2019re missing an opportunity to give search engines an extra signal about your page\u2019s relevance. Fixed width value in viewport meta tag When your viewport meta tag doesn\u2019t include the device-width value, your pages can\u2019t properly adapt to different screen sizes. This downgrades user satisfaction. Users might even end up seeing a zoomed-out version of your desktop site instead of a properly scaled mobile view. To fix this, set your viewport meta tag to keep your site working well on all devices. Blocked by nofollow A nofollow directive in the head section of the page\u2019s HTML code prevents search engines from following any links on that page. While this might be ideal in some cases, double-check its intentionality. Also, make sure your robots.txt isn\u2019t blocking them. If it is, search engines won\u2019t see your nofollow instruction, which could lead to inappropriate crawling. Blocked by robots.txt Robots.txt provides crawling recommendations. If it blocks your page, search bots can\u2019t access or index it. It\u2019s similar to how the noindex directive works, albeit one caveat. If other pages or resources link to the page blocked by the robots.txt , bots can still index it. Make sure it only blocks unnecessary or private parts of your site, not essential pages that you intend to have indexed. Uncompressed content When your page\u2019s response header doesn\u2019t include Content-Encoding, your pages are being served without compression. Uncompressed pages mean larger file sizes, which slow loading times. Slow-loading pages frustrate users and hurt your search engine rankings, as page speed is a key ranking factor. Enable compression by properly setting the Content-Encoding entity, so your pages load faster. Total Blocking Time (TBT) Total Blocking Time measures how long users are unable to interact with your page because it\u2019s busy processing scripts. A high TBT means visitors face delays when trying to click, type, or scroll. This typically occurs due to large or heavy scripts. Splitting these scripts into smaller chunks and loading them incrementally can help reduce these delays. X-default hreflang attribute missing When running a multilingual site, you need a backup page for visitors whose language isn\u2019t supported on the canonical version. The x-default hreflang tag serves this purpose: it tells search engines which version to show when there\u2019s no match for a visitor\u2019s language preference. While x-default tag is optional, it gives users from different regions a better experience. Summing it up Remember that the biggest errors in SEO are always the ones you don\u2019t know about. Combat this by auditing your website regularly. This helps you keep even minor health problems in check while also preventing them from becoming bigger issues later on. Beyond technical factors, content quality plays a pivotal role in SEO performance. Google\u2019s Page Quality Guidelines highlight the importance of E-E-A-T\u2014Experience, Expertise, Authoritativeness, and Trustworthiness\u2014in evaluating web pages. Ensuring your content aligns with these principles can significantly impact your site\u2019s search rankings. For a comprehensive understanding, refer to our article about Page Quality Rating Guidelines . By the way, you can check any website\u2019s SEO and see how well-optimized it is for both search engines and users with our SEO Analyzer tool. 4119 views Written by Anna Postol Anna is an SEO and Content Marketing Expert at SE Ranking, where she finds joy in creating content for SEO, digital marketing, and social media. Her focus is on writing accurate, easy-to-digest, informative pieces that turn complex topics into engaging narratives that resonate with readers. Outside of work, she enjoys stretching exercises, workouts, planning her next travel adventure, and spending time with her beloved cat-daughter."
+ },
+ {
+  "url": "https://www.cacheplex.com/blog/on-page-seo-mistakes-killing-your-rankings",
+  "title": "10 On-Page SEO Mistakes That Are Silently Killing Your Rankings | CachePlex",
+  "words": 772,
+  "headings": [
+   [
+    "h1",
+    "10 On-Page SEO Mistakes That Are Silently Killing Your Rankings"
+   ],
+   [
+    "h2",
+    "1. A Missing or Duplicate Title Tag"
+   ],
+   [
+    "h2",
+    "2. Meta Descriptions Longer Than 160 Characters"
+   ],
+   [
+    "h2",
+    "3. Multiple H1 Tags on a Single Page"
+   ],
+   [
+    "h2",
+    "4. Skipping the Heading Hierarchy"
+   ],
+   [
+    "h2",
+    "5. Images Without Alt Text"
+   ],
+   [
+    "h2",
+    "6. Thin Content (Under 300 Words)"
+   ],
+   [
+    "h2",
+    "7. No Canonical Tag (or the Wrong Canonical)"
+   ],
+   [
+    "h2",
+    "8. Keyword Cannibalization"
+   ],
+   [
+    "h2",
+    "9. Slow Page Load (Render-Blocking Resources)"
+   ],
+   [
+    "h2",
+    "10. Missing or Misconfigured Robots Meta Tag"
+   ],
+   [
+    "h2",
+    "Find All These Issues Instantly"
+   ]
+  ],
+  "text": "On-Page SEO 8 min read 12 May 2025 10 On-Page SEO Mistakes That Are Silently Killing Your Rankings You could have brilliant content and still rank on page 3. These ten fixable on-page errors are the most common reason well-written pages never reach page one. SEO Analyzer Team Good content alone won't rank. Google rewards pages that communicate their intent clearly through proper technical and on-page signals. Yet even seasoned marketers publish pages riddled with fixable mistakes that silently suppress rankings month after month. Here are the ten most common \u2014 and how to fix each one. 1. A Missing or Duplicate Title Tag The title tag is the single most important on-page SEO element. It tells search engines and users exactly what a page is about, and it's the headline displayed in search results. Despite this, an alarming number of sites either leave title tags blank, duplicate the same title across multiple pages, or stuff keywords in a way that makes the snippet unreadable. The fix: Every page needs a unique, descriptive title between 50\u201360 characters. Front-load the primary keyword and end with your brand name. Example: Beginner's Guide to Keyword Research | SEO Analyzer . 2. Meta Descriptions Longer Than 160 Characters Meta descriptions don't directly influence ranking, but they dramatically affect click-through rate. When Google truncates your description mid-sentence, the snippet looks incomplete and users click elsewhere. The fix: Keep meta descriptions between 120\u2013155 characters. Treat them like ad copy: include your primary keyword naturally, lead with the value the page delivers, and end with a subtle call to action. 3. Multiple H1 Tags on a Single Page Having two or more H1 tags dilutes the topical signal you're sending to search engines, making it harder for them to identify the primary subject of your page. The fix: Use exactly one H1 per page, matching or closely echoing the page's title tag. Reserve H2\u2013H6 for subheadings in descending order of importance. 4. Skipping the Heading Hierarchy Jumping from H1 directly to H4 breaks the logical document outline that crawlers use to understand page structure. It's also an accessibility failure. The fix: Think of headings as a table of contents. H2 for major sections, H3 for subsections, H4 for supporting points. Never skip a level. 5. Images Without Alt Text Search engines can't see images \u2014 they read alt attributes. Pages with dozens of images lacking alt text waste significant keyword and relevance signals. The fix: Write descriptive alt text for every meaningful image. If the image is purely decorative, use an empty alt attribute ( alt=\"\" ). 6. Thin Content (Under 300 Words) Pages with very little content give search engines almost nothing to evaluate. Google's Helpful Content guidelines explicitly favour pages that demonstrate E-E-A-T \u2014 all of which require substance. The fix: Aim to cover your topic comprehensively. Answer the questions users actually have. A 1,500-word article that answers ten related questions will typically outperform a 200-word stub. 7. No Canonical Tag (or the Wrong Canonical) If your site serves the same content at multiple URLs, search engines may split ranking signals across duplicate pages. The fix: Add <link rel=\"canonical\" href=\"https://yourdomain.com/page/\"> to every page. Ensure your CMS applies canonicals automatically. 8. Keyword Cannibalization When multiple pages on your site target the same keyword, they compete against each other. Google has to choose which to rank \u2014 and often picks neither. The fix: Audit your content for keyword overlap. Merge similar pages, redirect the weaker to the stronger, or differentiate them clearly. 9. Slow Page Load (Render-Blocking Resources) Page speed is a confirmed Google ranking factor. Render-blocking CSS and JavaScript are the most common culprit behind slow First Contentful Paint scores. The fix: Load non-critical CSS asynchronously, defer JavaScript that isn't needed for initial render, and inline critical CSS. 10. Missing or Misconfigured Robots Meta Tag A single <meta name=\"robots\" content=\"noindex\"> tag is enough to de-index a page entirely \u2014 and these tags are surprisingly easy to leave on accidentally. The fix: Audit every page's robots meta tag. Index pages you want ranked. Apply noindex, follow to utility pages. Find All These Issues Instantly The fastest way to discover which of these ten issues affect your site is to run a free SEO scan. Our engine checks every one of these signals automatically and tells you exactly what to fix \u2014 in plain English, in seconds. Run a Free SEO Scan \u2192 No account required \u00b7 Results in seconds Try Our Free SEO Tools Analyze your site, check robots.txt, verify SSL, generate favicons and QR codes \u2014 all free. SEO Analyzer SSL Checker Robots Checker Back to all articles"
+ }
+]

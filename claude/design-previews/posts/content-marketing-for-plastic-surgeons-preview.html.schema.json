@@ -1,0 +1,226 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Industry",
+  "abstract": "Content marketing for plastic surgeons means publishing accurate, useful material that helps patients decide: deep procedure pages, recovery guides, surgeon videos, consented before-and-after galleries and email follow-up. Get written HIPAA authorization for every patient photo or story, follow FTC rules on testimonials, and measure consultations, not clicks.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "American Society of Plastic Surgeons: 2024 Plastic Surgery Statistics Report",
+    "url": "https://www.plasticsurgery.org/documents/news/statistics/2024/plastic-surgery-statistics-report-2024.pdf"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HHS: Marketing under the HIPAA Privacy Rule",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/marketing/index.html"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HHS: Physical therapy provider settles violations over patient testimonials",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/complete-pt/index.html"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "eCFR: 16 CFR 255.2, Consumer endorsements",
+    "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.2"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "eCFR: 16 CFR Part 465, Rule on the Use of Consumer Reviews and Testimonials",
+    "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Crowell & Moring: FTC final rule on deceptive reviews and testimonials (August 2024)",
+    "url": "https://www.crowell.com/en/insights/client-alerts/final-rule-announced-the-ftc-strengthens-its-enforcement-capacity-against-deceptive-reviews-and-testimonials"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Meta Transparency Center: Health and wellness ad policy",
+    "url": "https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Creating helpful, reliable, people-first content",
+    "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Fan et al.: The public's preferences on plastic surgery social media engagement and professionalism (2019)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30688911/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Shiah et al.: What plastic surgery social media content is most effective? (2021)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9555978/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Al Qurashi et al.: Influential factors for selecting a plastic surgeon, national survey in Saudi Arabia (2022)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9362866/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Khosla et al.: Marketing a plastic surgery practice (2026)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13542058/"
+   }
+  ],
+  "about": {
+   "@type": "Thing",
+   "name": "Healthcare"
+  }
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is content marketing for plastic surgeons?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It is publishing useful, accurate material, such as procedure pages, recovery guides, videos, consented results and email, that helps patients decide, so the right people find your practice, trust it and ask for a consultation."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can plastic surgeons post before-and-after photos online?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes, with limits. A photo used to promote the practice needs the patient's written HIPAA authorization, and results should be real, consistent and not presented as typical unless you can show that. Ad platforms add their own rules."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is a patient's written authorization required for testimonials?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes for testimonials the practice publishes. HHS says marketing uses of protected health information need written authorization with limited exceptions. A text message or verbal yes is not enough."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What does the FTC say about plastic surgery testimonials and reviews?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The Endorsement Guides expect an advertiser to show that a featured experience is typical or to state typical results clearly. The 2024 rule on reviews bans fake reviews, bought reviews and incentives tied to positive reviews."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do patients choose a plastic surgeon?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Surveys point to qualifications, recommendations, real results and online research. In a 2019 online survey, 46% would start with Google. In a 2021 Saudi survey, qualifications ranked first and followers last. Samples are small or regional."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does SEO work for plastic surgeons?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Patients search for procedures, recovery and cost, and Google gives health topics extra scrutiny. Deep procedure pages, named surgeon bylines, accurate local profiles and helpful answers give search engines and patients reasons to trust you."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much content does a plastic surgery practice need?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Start with one deep page per procedure you want to grow and 10 short answers to consultation questions. Add video and email next. Quality and accuracy matter more than volume."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can I use AI to create content for my practice?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "For drafts and education, yes, with surgeon review. Do not use AI to create or alter results imagery, to invent reviews or to recreate a patient. AI-written reviews are covered by the FTC rule."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How long does content marketing take to bring consultations?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found no reliable independent timeline. Record a baseline for four to eight weeks, then judge progress by impressions, clicks and qualified inquiries rather than rankings alone."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Should plastic surgeons use social media ads?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "They can, but cosmetic procedure ads on Meta must target adults and have rules on before-and-after images that have changed over time. Check the live policy and your state board's rules before each campaign."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Content Marketing for Plastic Surgeons: 10 Ideas That Build Trust",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "HIPAA authorization",
+    "description": "A signed form that lets a practice use a patient's health information for a stated purpose, such as marketing.",
+    "url": "https://reinforcelab.online/preview/#term-hipaa-authorization"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Covered entity",
+    "description": "A health care provider, plan or clearinghouse that must follow the HIPAA Privacy Rule.",
+    "url": "https://reinforcelab.online/preview/#term-covered-entity"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Endorsement",
+    "description": "A message that consumers see as reflecting someone's own opinion or experience, such as a testimonial.",
+    "url": "https://reinforcelab.online/preview/#term-endorsement"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "YMYL",
+    "description": "Your Money or Your Life: topics that can affect health, money or safety, which Google holds to a higher bar.",
+    "url": "https://reinforcelab.online/preview/#term-ymyl"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Board certification",
+    "description": "A credential from a recognized medical specialty board, which should be named accurately.",
+    "url": "https://reinforcelab.online/preview/#term-board-certification"
+   }
+  ]
+ }
+]

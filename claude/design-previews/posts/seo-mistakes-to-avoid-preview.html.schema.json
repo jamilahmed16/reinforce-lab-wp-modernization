@@ -1,0 +1,208 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Checklist",
+  "abstract": "The most common SEO mistakes are basic: a stray noindex tag, content search engines cannot see, duplicate or missing titles and headings, thin copycat pages, weak internal links and slow pages. Fix access and indexing first, then relevance and content, then structure, speed and polish, and measure the result in Search Console and in leads.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "HTTP Archive: The 2025 Web Almanac, SEO chapter",
+    "url": "https://almanac.httparchive.org/en/2025/seo"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "SE Ranking: 33 technical SEO issues affecting most websites (March 2025)",
+    "url": "https://seranking.com/blog/seo-issues/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "web.dev: Web Vitals, essential metrics for a healthy site",
+    "url": "https://web.dev/articles/vitals"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guide to optimizing for generative AI features on Google Search",
+    "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Spam policies for Google web search",
+    "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Vercel: The rise of the AI crawler (December 2024)",
+    "url": "https://vercel.com/blog/the-rise-of-the-ai-crawler"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: AI features and your website",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Search Engine Land: What is on-page SEO? Key elements and best practices",
+    "url": "https://searchengineland.com/guide/what-is-on-page-seo"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What are the most common SEO mistakes?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Blocking or noindexing pages by accident, content that search engines cannot see, duplicate or missing titles and headings, thin or copycat content, weak internal links, keyword stuffing, slow pages, images without descriptions and markup that does not match the page."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is the biggest SEO mistake?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "An unintended noindex tag or robots block, because nothing else helps while a page cannot be indexed. Check Search Console's Page Indexing report for pages excluded by noindex or blocked by robots.txt."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I find SEO mistakes on my website?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Use Search Console for indexing, URL Inspection for rendering, a crawler for titles, headings, status codes and internal links, PageSpeed Insights or the Core Web Vitals report for speed, and the Rich Results Test for markup."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How common are missing meta descriptions and H1 tags?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The 2025 Web Almanac found meta descriptions on 67.7% of desktop pages and an H1 on 71%. SE Ranking's audited sites showed missing meta descriptions on 65.38% and missing H1s on 54.67%. The two data sets measure different things."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does keyword stuffing still hurt SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Google's spam policies list keyword stuffing as a manipulation technique. Use the keyword where it fits and write for the reader's question."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What are the Core Web Vitals thresholds?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google's web.dev recommends LCP within 2.5 seconds, INP of 200 milliseconds and CLS of 0.1, measured at the 75th percentile of page loads and segmented by mobile and desktop."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do duplicate titles matter?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "They make pages hard to tell apart in results and can signal thin or duplicated content. SE Ranking found duplicate titles on 53.69% of audited sites. Give each page a distinct, accurate title."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is AI-written content an SEO mistake?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Not by itself. Google says appropriate AI use is not against its guidelines. Generating many pages without adding value for users is listed as scaled content abuse. Add original value and check every fact."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How often should I run an SEO audit?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Run a short check monthly and a fuller audit each quarter and after any redesign, migration or plugin change, since a stray tag or setting can undo months of work."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need paid tools to avoid SEO mistakes?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Not to start. Search Console, URL Inspection, PageSpeed Insights, the Rich Results Test and any basic crawler cover most checks. Paid tools help at scale."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: SEO Mistakes to Avoid: 12 Common Errors and How to Fix Them",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Noindex",
+    "description": "A tag that tells search engines not to show a page in results.",
+    "url": "https://reinforcelab.online/preview/#term-noindex"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Canonical tag",
+    "description": "A hint that names the preferred URL when several pages have the same content.",
+    "url": "https://reinforcelab.online/preview/#term-canonical-tag"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Crawl",
+    "description": "When a program visits your pages to find content and links.",
+    "url": "https://reinforcelab.online/preview/#term-crawl"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Orphan page",
+    "description": "A page that no other page on your site links to.",
+    "url": "https://reinforcelab.online/preview/#term-orphan-page"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Core Web Vitals",
+    "description": "Google's measures of loading speed, responsiveness and visual stability.",
+    "url": "https://reinforcelab.online/preview/#term-core-web-vitals"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Information gain",
+    "description": "New, useful material that a page adds beyond what others already say.",
+    "url": "https://reinforcelab.online/preview/#term-information-gain"
+   }
+  ]
+ }
+]
