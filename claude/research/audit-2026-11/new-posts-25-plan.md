@@ -148,4 +148,17 @@ What it changes:
 - **Post 17 (marketing workflow automation):** CPC $28.42 is the highest in the plan, the top 10 is weak, and the 290-volume question list is small. Most variation volume is odd long phrases (for example email marketing automation workflow drip campaign data structure, 1,900); the real term is marketing automation workflow (880 at KD 38).
 - **Post 18 (marketing automation examples):** 720 at KD 30 with a weak top page (Page AS 11); the question list is tiny (50). Variations: b2b marketing automation examples (110 at KD 29), automated nurturing journeys email marketing examples (110 at KD 28).
 
-**Keyword Overview screenshots still missing (5):** ai search audit (post 8), zero click searches (post 9), llms.txt (post 14), seo ai agent (post 19), ai visibility score (post 23).
+### Three more received later on 15 Nov `[VERIFIED from the screenshots]`
+
+| Term | Volume | KD | CPC | Intent | Variations (total volume) | Questions (total volume) | Top 10 weakness | Post |
+|---|---|---|---|---|---|---|---|---|
+| ai search audit | 480 | 16 (Easy) | $19.59 | Informational | 346 (4.0K) | 74 (480) | Page AS 0 to 4 on the top three (aisearchaudit.ai, eyefulmedia, outreachbloom): the weakest top 10 in the plan | 8 |
+| ai visibility score | 480 | 40 | $14.61 | Informational | 216 (2.8K) | 32 (640) | Semrush's free checker (AS 49) and Amplitude (AS 51) lead, then seoreviewtools (AS 14) | 23 |
+| seo ai agent | 480 | 39 | $10.39 | Informational | 400 (4.7K) | 21 (420) | Reddit thread (AS 30), frase (AS 12), nightwatch (AS 33) | 19 |
+
+What it changes:
+- **Post 8 (AI search audit):** the best chance in the plan: KD 16 and a top 10 with Page AS 0 to 4. Variations: ai search audit tool (320 at KD 21), brand ai search audit (140 at KD 24), ai search brand audit (110 at KD 19). Questions: how to run an ai search audit (70), how to run an ai search audit for my website (40 at KD 12), what agencies offer ai powered search visibility audit services (40 at KD 0). The CPC of $19.59 means advertisers value it.
+- **Post 23 (AI visibility score):** most of the question volume is definition and benchmark questions: what is the ai visibility score (170 at KD 34), what is the ai brand visibility score (90 at KD 21), what is a good visibility score on ai platforms (70 at KD 14), what is ai visibility (70 at KD 21). "surfaced score ai visibility salt lake city" (260 at KD 4) is a local brand-name query and is not used. Note: post 591 already answers "no reliable public benchmark" for share of voice; post 23 must link to it and not repeat it.
+- **Post 19 (SEO AI agent):** variations ai agent for seo (210 at KD 23), ai agents for seo (210 at KD 17). Questions are how and what: how ai agents write seo content (90), how can i use ai agents for seo (90), what are ai seo agents (90).
+
+**Keyword Overview screenshots still missing (2):** zero click searches (post 9) and llms.txt (post 14).
