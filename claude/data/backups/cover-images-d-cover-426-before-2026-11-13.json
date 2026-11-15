@@ -1,0 +1,31 @@
+{
+ "batch": "d-cover-426",
+ "posts": {
+  "426": 425
+ },
+ "old_attachments": [
+  {
+   "attachment_id": 425,
+   "file": "2022/01/Zero-click-Searches.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2022/01/Zero-click-Searches.jpg",
+   "title": "Zero click Searches",
+   "alt": "zero click searches",
+   "date": "2026-10-12 07:18:41",
+   "parent": 0,
+   "files": [
+    "2022/01/Zero-click-Searches.jpg",
+    "2022/01/Zero-click-Searches-300x162.jpg",
+    "2022/01/Zero-click-Searches-150x150.jpg",
+    "2022/01/Zero-click-Searches-768x414.jpg",
+    "2022/01/Zero-click-Searches-400x250.jpg",
+    "2022/01/Zero-click-Searches-400x284.jpg",
+    "2022/01/Zero-click-Searches-510x382.jpg",
+    "2022/01/Zero-click-Searches-400x420.jpg",
+    "2022/01/Zero-click-Searches-480x258.jpg"
+   ]
+  }
+ ],
+ "new": {
+  "426": 633
+ }
+}
