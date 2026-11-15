@@ -1,0 +1,244 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "An AI search audit checks whether AI tools can reach your pages, read them, and name or cite your brand for the questions buyers ask. Check eligibility, bot access, HTML content and your facts, then run a fixed list of 10 to 15 buyer questions several times in each engine and map the sources behind the answers. Fix access and facts first, save a dated baseline and repeat each quarter.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "SparkToro: New research, AIs are highly inconsistent when recommending brands or products (2026)",
+    "url": "https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Pew Research Center: Google users are less likely to click on links when an AI summary appears (July 2025)",
+    "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Vercel: The rise of the AI crawler (December 2024)",
+    "url": "https://vercel.com/blog/the-rise-of-the-ai-crawler"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "OpenAI: Overview of OpenAI crawlers",
+    "url": "https://developers.openai.com/api/docs/bots"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Anthropic: Does Anthropic crawl data from the web, and how can site owners block the crawler?",
+    "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Perplexity: Perplexity crawlers",
+    "url": "https://docs.perplexity.ai/docs/resources/perplexity-crawlers"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Perplexity Help Center: How does Perplexity follow robots.txt?",
+    "url": "https://www.perplexity.ai/help-center/en/articles/10354969-how-does-perplexity-follow-robots-txt"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: AI features and your website",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Console Help: Generative AI performance report (Search)",
+    "url": "https://support.google.com/webmasters/answer/16984139"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Console Help: Search generative AI control",
+    "url": "https://support.google.com/webmasters/answer/16908024"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central Blog: Introducing Search Generative AI performance reports (June 2026)",
+    "url": "https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Bing Webmaster Blog: Introducing AI Performance in Bing Webmaster Tools, public preview (February 2026)",
+    "url": "https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: AI Visibility Audit, how to measure your brand's presence in AI search",
+    "url": "https://ahrefs.com/blog/ai-visibility-audit/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Semrush: How to conduct an AI visibility audit with Semrush",
+    "url": "https://www.semrush.com/blog/ai-visibility-audit-with-semrush-one/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is an AI search audit?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "A structured check of whether AI answer tools such as ChatGPT, Gemini, Claude, Perplexity and Google's AI Overviews can reach your pages, read them, and name or cite your brand for the questions buyers ask. It has a technical part (access, rendering, clear facts) and an observation part (a fixed prompt list run through each tool)."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do you run an AI search audit for your website?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Follow ten steps: check eligibility, bot access, HTML content, your facts and your pages, then build a fixed prompt list, run each prompt several times in each engine, check accuracy, map the cited sources, and record a dated baseline. Fix the access and facts problems first."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do you audit AI search visibility for a brand?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Write 10 to 15 buyer questions, run each three times in each engine you care about, and record whether your brand is mentioned, whether a page of yours is cited, how you are described and which competitors appear. Keep mentions and citations in separate columns."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How long does an AI search audit take?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "A basic audit takes about a day. That is our estimate: 10 prompts run three times in three engines is 90 answers to save and score, plus the technical checks. A larger prompt list, several markets or a full source map takes longer."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How many prompts should an AI search audit include?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Use 10 to 15 for a first audit. That is our recommendation, and published guides range from 5 to 30. Keep the list fixed so you can compare later audits, and use mostly questions that do not contain your brand name."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Why run each prompt more than once?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Answers vary. SparkToro asked 600 volunteers to run 12 prompts through ChatGPT, Claude and Google's AI features, 2,961 times in total. It found less than a 1 in 100 chance of getting the same list of brands twice and about a 1 in 1,000 chance of the same list in the same order."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is an AI search audit the same as an SEO audit?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No, but they overlap. An SEO audit asks whether pages can rank. An AI search audit asks whether pages can be used as sources and whether your brand is described correctly in the answer. A blocked or empty page fails both."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Which tools can run an AI search audit?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "You can do it by hand with a spreadsheet, the AI tools, Search Console's Generative AI performance report and Bing Webmaster Tools' AI Performance report. SEO suites such as Ahrefs Brand Radar and the Semrush AI Visibility Toolkit and stand-alone trackers can repeat it at scale. Test by hand first so you can judge their numbers."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How often should you repeat an AI search audit?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Every quarter, and after any robots.txt, CDN, firewall, template or rebrand change. That is our recommendation. Keep every run's sheet so you can tell a real change from noise."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What does an agency AI search audit include?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It should give you the prompt list, the raw answers, a map of the sources behind them, a ranked list of fixes and a date to repeat the test. Be wary of a report that is only a score or that promises placement in AI answers, because the AI companies do not publish how they choose sources."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: AI Search Audit: A 10-Step Checklist for Your Website",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "AI search audit",
+    "description": "A check of whether AI tools can reach your pages and whether they name or cite your brand.",
+    "url": "https://reinforcelab.online/preview/#term-ai-search-audit"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Prompt set",
+    "description": "A fixed list of buyer questions you run through each AI tool.",
+    "url": "https://reinforcelab.online/preview/#term-prompt-set"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Mention",
+    "description": "Your brand named in the text of an AI answer, with or without a link.",
+    "url": "https://reinforcelab.online/preview/#term-mention"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Citation",
+    "description": "A link to one of your pages shown as a source in an AI answer.",
+    "url": "https://reinforcelab.online/preview/#term-citation"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Grounding query",
+    "description": "A phrase an AI system used to find pages to base its answer on.",
+    "url": "https://reinforcelab.online/preview/#term-grounding-query"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Crawler",
+    "description": "A program that fetches web pages for a search index or an AI tool.",
+    "url": "https://reinforcelab.online/preview/#term-crawler"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Source map",
+    "description": "A count of the sites that AI answers cite for your prompts.",
+    "url": "https://reinforcelab.online/preview/#term-source-map"
+   }
+  ]
+ }
+]

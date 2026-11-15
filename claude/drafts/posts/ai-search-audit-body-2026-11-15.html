@@ -1,0 +1,161 @@
+<p>An AI search audit checks three things: can AI search tools reach your pages, can they read and use what is on them, and do they name or cite you when buyers ask questions in your field. You can run a basic one in a day with free tools, a robots.txt file and a spreadsheet. The result is a baseline you can repeat, not a rank or a score you can trust on its own.</p>
+<p>This guide gives you a 10-step checklist for your website, a way to score it, and a sheet for recording what you find. It also covers the tools you can use, two worked examples, and when it makes sense to hire help. Every statistic comes from a page we read at the source, and we say what each study can and cannot show.</p>
+
+<h2>What is an AI search audit?</h2>
+<p>An AI search audit is a structured check of how AI answer tools such as ChatGPT, Gemini, Claude, Perplexity and Google's AI Overviews treat your site and your brand. It has two parts. The first is technical: access, rendering and clear facts on your pages. The second is observation: you run a fixed list of buyer questions through the tools and record whether you are named, linked and described correctly.</p>
+<p>You will also see the names "AI visibility audit" and "GEO audit". They describe the same kind of work. Ahrefs and Semrush both publish their own versions, and the steps overlap. Ahrefs frames it around mentions, citations, impressions and share of voice. Semrush lists six steps, from a baseline to a check of site-level issues that affect AI access.</p>
+
+<h2>How is an AI search audit different from an SEO audit?</h2>
+<p>An SEO audit asks if your pages can rank. An AI search audit asks if your pages can be used as sources, and if your brand is described correctly in the answer. They share a base. A page that is blocked, not indexed or empty to a crawler fails both. But a page can rank well and still be missing from AI answers.</p>
+<p>The Pew Research Center shows why the second question matters. It tracked the browsing of 900 US adults in March 2025, and studied 68,879 Google searches, of which 12,593 produced an AI summary. People clicked a regular result link in 8% of visits to pages with an AI summary and 15% of visits to pages without one. They clicked a link inside the summary in 1% of visits. Google disputes the study's method and says it directs billions of clicks to sites each day. Even so, the data suggests that being named in the answer matters as much as being linked below it.</p>
+
+<h2>Before you start: set the scope</h2>
+<p>Write down four things before you run a single test. This keeps your baseline fair and lets you repeat the audit later.</p>
+<ul>
+<li><strong>Engines.</strong> Pick the tools your buyers use. For most B2B teams that is ChatGPT, Google AI Overviews and AI Mode, Gemini and Perplexity. Claude is worth adding if your buyers are technical.</li>
+<li><strong>Market and language.</strong> Use one prompt list and one baseline for each country.</li>
+<li><strong>Brand names.</strong> List your company name, product names and the names of the founders or experts who should be linked to you.</li>
+<li><strong>Competitors.</strong> Pick three to five. You need them to see what "good" looks like.</li>
+</ul>
+
+<h2>The 10-step AI search audit checklist</h2>
+<p>Do the steps in order. Steps 1 to 5 are about your site. Steps 6 to 10 are about what the AI tools say. If a step in the first group fails, fix it before you spend time on the second group, because a tool that cannot read your page cannot cite it. Score each step pass or fail. A partial pass is a fail until it is fixed.</p>
+
+<h3>Step 1: Check that your pages are eligible and not excluded</h3>
+<p><strong>What to check.</strong> For Google, Google says a page must be indexed and eligible to show in Search with a snippet to appear as a supporting link in AI Overviews or AI Mode, and that there are no additional technical requirements. So check three things. First, the page is indexed, has one clear canonical URL and is in your sitemap. Second, it has no <code>nosnippet</code> or tight <code>max-snippet</code> setting you did not intend. Third, open Search Console and look at Settings, then "Search generative AI". Google offers a control there with three choices: include your site, exclude it, or inherit from a parent property. The default is to include. If someone chose "exclude", your site receives no impressions or traffic from those features.</p>
+<p><strong>Pass</strong> if key pages are indexed, snippets are allowed and the control says include. <strong>Fix</strong> by removing the stray tag or changing the setting. Google lists no extra files or markup as a requirement for these features, so do not mark a missing llms.txt file as a failure for Google. That is our reading of Google's page, not a promise about other tools.</p>
+
+<h3>Step 2: Check crawler access, bot by bot</h3>
+<p><strong>What to check.</strong> Open <code>yoursite.com/robots.txt</code>. Then check your CDN, firewall and bot protection. AI companies run different bots for different jobs, and the rules are not the same for each. The table shows what each company says on its own pages.</p>
+<table>
+<thead><tr><th>Bot</th><th>Job, per its owner</th><th>What the owner says about robots.txt</th></tr></thead>
+<tbody>
+<tr><td>OAI-SearchBot (OpenAI)</td><td>Shows sites in ChatGPT search results</td><td>Sites that opt out are not shown in ChatGPT search answers, though they can still appear as navigational links. A change can take about 24 hours to apply.</td></tr>
+<tr><td>GPTBot (OpenAI)</td><td>Collects content that may train models</td><td>Disallowing it says your content should not be used for training. It is a separate setting from OAI-SearchBot.</td></tr>
+<tr><td>ChatGPT-User (OpenAI)</td><td>Visits a page when a user's question needs it</td><td>OpenAI says robots.txt rules may not apply, because a user starts the visit.</td></tr>
+<tr><td>Claude-SearchBot, Claude-User, ClaudeBot (Anthropic)</td><td>Search quality, user questions, model training</td><td>Anthropic says its bots honor robots.txt. Blocking the first two may reduce your visibility in Claude answers.</td></tr>
+<tr><td>PerplexityBot, Perplexity-User (Perplexity)</td><td>Search index, and user-requested visits</td><td>PerplexityBot follows robots.txt. Perplexity says Perplexity-User generally ignores it because a user asked for the fetch.</td></tr>
+</tbody>
+</table>
+<p><strong>Pass</strong> if none of the search bots is blocked on pages you want cited, and your firewall lets verified requests through without a challenge page. <strong>Fix</strong> the robots.txt rule first. Then check the CDN, because a rule there can block a bot that robots.txt allows. OpenAI and Perplexity both publish IP ranges you can allow. Blocking training bots is a separate choice. For OpenAI, allowing OAI-SearchBot while disallowing GPTBot is a setting OpenAI describes. If you need a refresher on the file itself, read our <a href="/robots-txt-for-seo-a-complete-guide/">robots.txt guide</a>.</p>
+
+<h3>Step 3: Check that the content is in the HTML</h3>
+<p><strong>What to check.</strong> Fetch a key page without a browser and look for the main heading and body text in the raw response. A command such as <code>curl -s https://yoursite.com/page/ | grep -i "your heading"</code> works. Do not trust the rendered view in browser tools, because it runs scripts that crawlers may not run.</p>
+<p>Here is why this step matters. In December 2024, Vercel studied the crawlers hitting its network and the sites it hosts. It found that none of the major AI crawlers it tested rendered JavaScript, including OpenAI's, Anthropic's and Perplexity's. ChatGPT's crawler fetched JavaScript files in 11.50% of its requests and Claude's in 23.84%, but did not run them. Googlebot, which Gemini uses, does render JavaScript. That is a snapshot from one network and one month, so test your own pages and do not rely on the number.</p>
+<p><strong>Pass</strong> if the main text is in the first HTML response. <strong>Fix</strong> by server-rendering the key pages or serving them as static HTML.</p>
+
+<h3>Step 4: Check your facts and your entity</h3>
+<p><strong>What to check.</strong> Write a one-page list of facts: legal and brand name, a one-sentence description, services, locations, leaders, prices or price ranges. Compare it with your home page, About page, LinkedIn page and the directories that matter in your field. Check that your structured data, such as Organization schema, if you use it, is valid and matches the visible text.</p>
+<p><strong>Pass</strong> if the name and description match in at least three or four places and nothing contradicts your list. <strong>Fix</strong> the source that is wrong. AI answers often repeat an old directory line, so a wrong listing can cost you more than a weak page.</p>
+
+<h3>Step 5: Check that your pages answer the question fast</h3>
+<p><strong>What to check.</strong> Take your five most important pages. For each, ask what a buyer would type: "what is it", "who is it for", "how much does it cost", "how does it compare". Look at the first two paragraphs. Is there one clear sentence that answers the question? Are there named sources, dates and real numbers where a claim needs proof? Is the author named? Is there a date?</p>
+<p><strong>Pass</strong> if a short passage on the page answers the question without the rest of the page. <strong>Fix</strong> by moving the answer to the top and cutting the lead-in. Our guide on <a href="/how-to-rank-in-ai-overviews/">how to rank in AI Overviews</a> has the full writing checklist.</p>
+
+<h3>Step 6: Build a fixed prompt list</h3>
+<p><strong>What to do.</strong> Write 10 to 15 questions a real buyer would ask, in the words they would use. Do not use your brand name in most of them. Mix three kinds: category questions ("best way to automate X"), comparison questions ("A vs B") and a few brand questions ("what is [brand]"). Pull the wording from sales calls, support tickets and your site search. Give each prompt an ID and freeze the list. If you change a prompt later, record it as a new one, or you will not be able to compare audits.</p>
+<p>The range of 10 to 15 is our recommendation for a first audit. Published guides range from 5 to 30. The point is a list small enough to finish and large enough to see a pattern.</p>
+
+<h3>Step 7: Run every prompt several times, in each engine</h3>
+<p><strong>What to do.</strong> Run each prompt three times in each engine, in a fresh session, on the same day. Save the full answer and the sources it shows. Note the date, the engine and the mode.</p>
+<p>The reason is variation. SparkToro asked 600 volunteers to run 12 prompts through ChatGPT, Claude and Google's AI features, a combined 2,961 times. It found less than a 1 in 100 chance that two responses to the same prompt gave the same list of brands, and about a 1 in 1,000 chance that two gave the same list in the same order. The lists also varied in length. SparkToro wrote that any tool reporting a "ranking position in AI" should not be trusted, and that visibility across dozens to hundreds of prompts, run many times, is a reasonable metric.</p>
+<p>Three runs is a compromise. It will not give you a precise rate. It will show you if a brand is named almost every time, sometimes, or never, and that is enough for a first baseline.</p>
+<p>Record each result in a sheet with these fields:</p>
+<table>
+<thead><tr><th>Field</th><th>What to write</th></tr></thead>
+<tbody>
+<tr><td>Prompt ID and text</td><td>The exact wording</td></tr>
+<tr><td>Engine, mode and date</td><td>So the run can be repeated</td></tr>
+<tr><td>Mentioned</td><td>Is your brand named in the text? Yes or no</td></tr>
+<tr><td>Cited</td><td>Is one of your pages shown as a source? Yes or no, with the URL</td></tr>
+<tr><td>Description</td><td>The words used about you, and whether the tone is positive, neutral or negative</td></tr>
+<tr><td>Competitors named</td><td>Which rivals appear in the same answer</td></tr>
+<tr><td>Other sources</td><td>The other sites the answer links to</td></tr>
+<tr><td>Notes</td><td>Wrong facts, old facts, odd claims</td></tr>
+</tbody>
+</table>
+<p>Keep "mentioned" and "cited" in separate columns. A brand can be named without a link, or linked without being named, and each needs a different fix.</p>
+
+<h3>Step 8: Check accuracy and tone</h3>
+<p><strong>What to do.</strong> Ask each engine direct questions about you: "What is [brand]?", "What does [brand] cost?", "Who is [brand] for?" Compare each answer with your list of facts from step 4. Log every mistake and note the source the engine gave for it, if it gave one.</p>
+<p><strong>Pass</strong> if there is no material error, such as a wrong price, a retired service or the wrong audience. <strong>Fix</strong> by correcting the source the engine used. Do not argue with the engine. Fix the page, listing or article it reads from, then test again after a few weeks.</p>
+
+<h3>Step 9: Map the sources behind the answers</h3>
+<p><strong>What to do.</strong> From your sheet, list every domain the engines cited for your prompts, and count how often each appears. Sort them into four groups: your own pages, third-party review and directory sites, community sites such as Reddit, and competitor pages. This map shows where the answers come from, and it is often not your site.</p>
+<p>Pew's data on Google shows the same pattern at scale. In its sample, Wikipedia, YouTube and Reddit were the most cited sources in AI summaries and in regular results, and together made up 15% of the sources in AI summaries. For your field the mix will differ, so build your own map.</p>
+<p><strong>Pass</strong> if you appear on at least two or three of the sources that keep showing up. <strong>Fix</strong> by earning a real place there: a complete profile, a customer review, a useful answer in a community thread, or a mention in an article the engines already cite. Do not post fake reviews or hide ads in forums.</p>
+
+<h3>Step 10: Find the gaps, set a baseline and measure</h3>
+<p><strong>What to do.</strong> Compare your sheet with your competitors. Sort every gap into one of four types:</p>
+<ul>
+<li><strong>Absent:</strong> you are not named or cited and the prompt matters to your sales.</li>
+<li><strong>Mention only:</strong> you are named but no page of yours is cited.</li>
+<li><strong>Wrong or weak:</strong> you are named, but with old facts or a poor description.</li>
+<li><strong>Competitor edge:</strong> a rival is cited on a prompt where your page is as good or better.</li>
+</ul>
+<p>Then add the first-party data you can get for free. Google's Generative AI performance report in Search Console shows how often links to your site were shown in AI Overviews and AI Mode, by page, country, device and date. Google says it reports impressions, and that this data is already counted in the main Performance report, so do not add the two. Bing Webmaster Tools has an AI Performance report, in public preview since February 2026, that shows total citations, average cited pages and page-level citation counts across Copilot and Bing's AI summaries. Bing says its "grounding queries" are a sample and not the full set. Neither report covers ChatGPT, Claude or Perplexity, so your prompt sheet is still needed.</p>
+<p><strong>Pass</strong> if you now have a dated baseline for each engine, whatever it shows. The step is to have something to compare with next time.</p>
+
+<h2>How do you score the audit and decide what to fix first?</h2>
+<p>Count your passes out of ten. Treat the first five and the last five differently.</p>
+<table>
+<thead><tr><th>Result</th><th>What it means</th><th>What to do</th></tr></thead>
+<tbody>
+<tr><td>Any fail in steps 1 to 3</td><td>Tools may not be able to reach or read your pages</td><td>Fix these first. Nothing else matters until they pass.</td></tr>
+<tr><td>Fail in step 4 or 8</td><td>Your facts are wrong or inconsistent</td><td>Correct the source pages and listings. These are quick wins.</td></tr>
+<tr><td>Fail in step 5</td><td>Your pages are hard to quote</td><td>Rewrite the top of each key page. Start with the ones that sell.</td></tr>
+<tr><td>Fail in steps 6, 7, 9 or 10</td><td>You are missing from answers or from the sources that feed them</td><td>Plan new content and outside mentions. This is slow work. Start now and expect weeks, not days.</td></tr>
+</tbody>
+</table>
+<p>A simple way to rank fixes is by effort and reach. Fix first what takes little work and touches many prompts. Ahrefs sorts its findings into three actions: fix wrong information, build missing content, and influence the outside sources the AI relies on. That is a useful frame for your plan.</p>
+
+<h2>Worked example 1: a consulting firm finds a gap in the sources</h2>
+<p>This is an illustration, not a client result. Imagine a 20-person firm that sells compliance consulting to clinics. It passes steps 1 to 5. Its pages are indexed, the text is in the HTML and the facts match.</p>
+<p>It then builds 12 prompts and runs each three times in three engines, which gives 108 answers. It is named in 17 of them, about 16%. Its closest competitor is named in 41, about 38%. In the source map, the answers keep citing two directories and one trade site. The firm is not listed on any of them.</p>
+<p>The plan has three parts. The firm completes its profile on both directories in week one. It asks three clients to leave honest reviews in week two. It pitches the trade site a short article using its own data in week four. It repeats the same 108 runs 60 days later. The numbers will not be a promise, but the same prompts and the same method make the change readable.</p>
+
+<h2>Worked example 2: a site blocks the bot it wanted</h2>
+<p>Again, this is an illustration. Imagine a software company whose robots.txt allows OAI-SearchBot. Yet its pages never appear as sources in ChatGPT search. In step 2 the team checks its CDN and finds a bot-protection rule that returns a 403 error to unknown crawlers. The rule blocks OAI-SearchBot even though robots.txt allows it.</p>
+<p>The team adds an allow rule for the IP ranges OpenAI publishes and checks its server logs for the bot. OpenAI says a robots.txt change can take about 24 hours to apply, so the team waits a few days and runs its prompts again. This is the kind of silent failure that steps 1 to 3 exist to catch. A crawler visit in the logs does not prove a page will be cited. It only shows the page can be read.</p>
+
+<h2>Which tools can run an AI search audit?</h2>
+<p>You can do the whole audit by hand. The tools save time when you have many prompts, many markets or a need to repeat it each month. There are three groups.</p>
+<ul>
+<li><strong>Free and manual.</strong> A spreadsheet, the AI tools themselves, Search Console's Generative AI report, Bing Webmaster Tools, your server logs and a validator for your markup.</li>
+<li><strong>SEO suites.</strong> Ahrefs Brand Radar and the Semrush AI Visibility Toolkit track mentions, citations and share of voice across several engines. Both companies publish their own audit method, so read it as a vendor's view.</li>
+<li><strong>Stand-alone trackers.</strong> Tools built for AI visibility. We compare what they track and what they cost in our guide to <a href="/ai-brand-visibility-tools/">AI brand visibility tools</a>.</li>
+</ul>
+<p>Test by hand first. A hand baseline lets you judge whether a tool's numbers are right. And because answers vary, treat any tool that reports a precise rank inside AI answers with caution.</p>
+
+<h2>How often should you repeat the audit?</h2>
+<p>Repeat it every quarter, and after any change that can flip a pass to a fail: a new robots.txt, a CDN or firewall change, a site rebuild, a rebrand or a new template. Keep each run's sheet instead of overwriting it, so you can see if a gap is closing or if the change is noise. Quarterly is our recommendation. Competing guides suggest monthly for active programs and quarterly for slower ones.</p>
+
+<h2>What else do people ask?</h2>
+<h3>Does structured data matter for AI search?</h3>
+<p>Not as a requirement for Google's AI features. Google lists no extra technical requirement beyond being indexed and eligible to show with a snippet. Structured data still helps with clear facts and rich results, so check that it is valid and matches the page. Do not expect it to guarantee a citation.</p>
+<h3>Should you block GPTBot?</h3>
+<p>It is a separate choice from being in ChatGPT search. OpenAI says each setting is independent. A site can allow OAI-SearchBot to appear in search results and disallow GPTBot to signal that its content should not be used for training. Decide based on your policy, not on fear of losing visibility.</p>
+<h3>Can an AI tool audit itself?</h3>
+<p>Be careful. An AI tool can describe how a site ought to be set up. It cannot see your server logs, your firewall or what other users are shown. Use it to draft prompts and sort notes, and use real tests for the findings.</p>
+<h3>What if everything passes and you are still not cited?</h3>
+<p>Then the gap is probably outside your site. Look at the source map from step 9. If the engines lean on directories, reviews and community threads where you are absent, more pages on your own site will not close the gap.</p>
+
+<h2>When should you hire an agency for an AI search audit?</h2>
+<p>Hire help when you lack the time to run the prompts, when the technical steps need a developer, or when the audit shows gaps in outside sources that need a plan. Ask any agency what it will deliver. A useful audit gives you the prompt list, the raw answers, the source map, a ranked list of fixes and a date to repeat the test. Be wary of a report that is only a score, or that promises to get you into AI answers. The AI companies do not publish how they pick sources, so nobody can guarantee a result.</p>
+
+<h2>What are the common mistakes?</h2>
+<ul>
+<li><strong>Auditing only your own site.</strong> The answers often come from other sites.</li>
+<li><strong>Running each prompt once.</strong> One answer is a clue, not a result.</li>
+<li><strong>Testing only brand questions.</strong> You will look better than you are. Add category and comparison questions.</li>
+<li><strong>Changing the prompts between audits.</strong> You can no longer compare.</li>
+<li><strong>Marking llms.txt or extra markup as a failure for Google.</strong> Google lists no such requirement.</li>
+<li><strong>Treating a crawler visit as proof of citation.</strong> A visit shows access. It does not show use.</li>
+<li><strong>Stopping at the report.</strong> An audit has value only when someone fixes the findings.</li>
+</ul>
+
+<h2>Our interest in this topic</h2>
+<p>Reinforce Lab sells search and AI search services, including an audit. Nothing here is paid placement. Jamil Ahmed, who wrote this guide, is a Semrush Ambassador, and Reinforce Lab uses affiliate links for some tools. Read our <a href="/ftc-disclosure/">FTC and affiliate disclosure</a>. Our free diagnostic follows the steps above with a larger prompt set, repeated runs and a written plan. You can read about our <a href="/services/seo-ai-search-audit/">SEO and AI search audit</a> or <a href="/get-diagnostic/">get your free diagnostic</a>. For the wider picture, see our guides on <a href="/ai-brand-visibility/">AI brand visibility</a> and <a href="/generative-engine-optimization/">generative engine optimization</a>.</p>
+
+<h2>Final thoughts</h2>
+<p>Start with access, because a blocked or empty page cannot be cited. Then fix your facts. Then test with a fixed prompt list, run each prompt more than once, and map the sources behind the answers. Save a dated sheet, fix the biggest gaps and run it again in a quarter. The audit does not promise a result. It shows you where you stand, what to fix first and whether the fixes worked.</p>
