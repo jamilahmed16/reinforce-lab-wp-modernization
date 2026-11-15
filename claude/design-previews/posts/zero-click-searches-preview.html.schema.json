@@ -1,0 +1,213 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "A zero click search is a search that ends without a click on any result. Roughly 58.5% of US Google searches ended that way in SparkToro's 2024 study, and AI summaries make it more likely. You cannot avoid them. Be the source of the answer, give people a reason to visit, aim at searches where a visit pays, build your name across the web and measure impressions, mentions and leads.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "SparkToro: 2024 zero-click search study, for every 1,000 US Google searches only 374 clicks go to the open web",
+    "url": "https://sparktoro.com/blog/2024-zero-click-search-study-for-every-1000-us-google-searches-only-374-clicks-go-to-the-open-web-in-the-eu-its-360/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Search Engine Land: Nearly 60% of Google searches end without a click in 2024 (July 2024)",
+    "url": "https://searchengineland.com/google-search-zero-click-study-2024-443869"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Pew Research Center: Google users are less likely to click on links when an AI summary appears (July 2025)",
+    "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Bain and Company: Goodbye clicks, hello AI, zero-click search redefines marketing (February 2025)",
+    "url": "https://www.bain.com/insights/goodbye-clicks-hello-ai-zero-click-search-redefines-marketing/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "SparkToro: AIs are highly inconsistent when recommending brands or products (2026)",
+    "url": "https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: AI features and your website",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Console Help: Generative AI performance report (Search)",
+    "url": "https://support.google.com/webmasters/answer/16984139"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "OpenAI Help Center: Searching the web with ChatGPT",
+    "url": "https://help.openai.com/en/articles/9237897-searching-the-web-with-chatgpt"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Spam policies for Google web search",
+    "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is a zero click search?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "A search that ends without the person clicking any result. It includes searches answered on the page, searches where the person gave up and searches where they changed the query. SparkToro defines it as ending without clicking any presented result."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How common are zero click searches?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "SparkToro and Datos found 58.5% of US and 59.7% of EU Google searches had zero clicks between September 2022 and May 2024. Pew and Bain report similar direction with different methods. Numbers vary by method, country and query type."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do zero click searches hurt SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "They reduce clicks on simple questions and change what SEO is worth. Buying and comparison searches still produce visits, and being named in an answer can add awareness. Check which of your pages depend on clicks from simple queries."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Are zero click searches bad for users?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Often not: a quick answer saves time for simple questions. They are a problem when the answer is wrong, thin or hides its source. OpenAI says ChatGPT search results and citations can be incomplete, outdated or incorrect, so open a source when accuracy matters."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do AI Overviews affect clicks?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Pew tracked 900 US adults in March 2025: people clicked a regular result in 8% of visits with an AI summary and 15% without, and clicked a link inside the summary in 1% of visits. Google disputes the study's method."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do you optimize for zero click searches?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Put a clear answer in the first sentence under a question heading, keep facts current and sourced, make pages indexable and snippet-eligible, add something worth a visit, and build mentions on other sites. No one can guarantee a snippet or AI citation."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is there value in zero click searches?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Being named in an answer can raise branded search and direct visits, and local answers such as map packs bring calls and direction requests. Measure impressions, branded search, mentions and leads, not clicks alone."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do you measure zero click performance?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Track impressions and click-through rate in Search Console, Google's Generative AI performance report, branded search, mentions and citations across a fixed prompt list, and leads or calls by source with a how-did-you-hear question."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "When should you not chase zero click visibility?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "When a page only gives away something you earn from per click and you cannot benefit from awareness. It is worth chasing when buyers who see your name later contact you, or when you need to be known in a market."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can you avoid zero click searches?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. You cannot control what Google shows. Aim to be the source of the answer, give people a reason to visit and target searches where a visit creates value."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Zero Click Searches: What They Are and How to Win Anyway",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Zero click search",
+    "description": "A search that ends without a click on any result.",
+    "url": "https://reinforcelab.online/preview/#term-zero-click-search"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Featured snippet",
+    "description": "An answer box that Google shows at the top of some results.",
+    "url": "https://reinforcelab.online/preview/#term-featured-snippet"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "AI Overview",
+    "description": "A short AI-written summary at the top of some Google results, with links.",
+    "url": "https://reinforcelab.online/preview/#term-ai-overview"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Clickstream data",
+    "description": "Records of the pages people visit and the clicks they make, collected from a panel.",
+    "url": "https://reinforcelab.online/preview/#term-clickstream-data"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Branded search",
+    "description": "A search that includes your company or product name.",
+    "url": "https://reinforcelab.online/preview/#term-branded-search"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Impression",
+    "description": "One showing of your page in search results, whether or not it is clicked.",
+    "url": "https://reinforcelab.online/preview/#term-impression"
+   }
+  ]
+ }
+]

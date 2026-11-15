@@ -1,0 +1,218 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "To build an AI marketing agent system, start with one narrow task and a written list of steps. Connect only the data and tools it needs, add checks between steps, and put a named person at every gate that could reach a customer or cost money. Build a fixed workflow first and use autonomous agents only where the path cannot be known. Measure value and control quality, then widen scope.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Anthropic: Building effective AI agents (December 2024)",
+    "url": "https://www.anthropic.com/research/building-effective-agents"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Gartner: Gartner predicts over 40% of agentic AI projects will be canceled by end of 2027 (June 2025)",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Gartner: 2026 CMO Spend Survey finds CMOs allocate 15.3% of marketing budgets to AI, but only 30% are ready to scale AI capabilities (May 2026)",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-05-11-gartner-2026-cmo-spend-survey-finds-cmos-allocate-15-point-3-percent-of-marketing-budgets-to-ai-but-only-30-percent-are-ready-to-scale-ai-capabilities"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Gartner: Marketing Technology Survey data snapshots (2025)",
+    "url": "https://emt.gartnerweb.com/ngw/globalassets/en/marketing/documents/marketing-technology-survey-data-snapshots.pdf"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Cosmic AI: Agentic marketing platform architecture (October 2026)",
+    "url": "https://jakebauman.io/articles/agentic-marketing-platform-architecture"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "aiworkaudit: How to build an AI marketing agent system architecture in 9 steps (November 2026)",
+    "url": "https://aiworkaudit.net/guides/how-to-build-ai-marketing-agent-system-architecture/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "House of MarTech: AI agent orchestration framework for marketing stacks (May 2026)",
+    "url": "https://houseofmartech.com/blog/ai-agent-orchestration-framework-for-marketing-stacks"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "BusySeed: Building an agentic marketing architecture, what to automate and what to protect (October 2026)",
+    "url": "https://busyseed.com/building-an-agentic-marketing-architecture-what-to-automate-and-what-to-protect"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "MarTech: How to architect AI agents in your martech stack (February 2026)",
+    "url": "https://martech.org/how-to-architect-ai-agents-in-your-martech-stack/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Cogny: Marketing automation architecture, data, agents and measurement",
+    "url": "https://cogny.com/blog/architecture-ai-marketing-automation"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "How do you build an AI marketing agent system?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Start with one narrow task and its written steps, connect only the tools it needs, load approved brand facts, add code checks between steps, gate anything public or paid behind a person, log every run, and measure before widening scope."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is the architecture of an AI marketing system?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "A common design has six layers: data and identity, knowledge such as approved claims, tools and connectors, orchestration, controls with human approval, and observability with logs. There is no industry standard, so treat this as a practitioner framework."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is the difference between a workflow and an agent?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Anthropic defines workflows as systems where models and tools follow predefined code paths, and agents as systems where the model directs its own process and tool use. It advises the simplest solution and adding complexity only when needed."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do you build a human-in-the-loop AI marketing system?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Design review first. Always require approval for published content, launches, budget changes, email sends, price or results claims and use of customer data. Spot-check internal drafts, and automate formatting and scheduling. Make reviewers real and track their changes."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Which marketing tasks should an AI agent do first?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Bounded, repeatable, measurable ones such as report preparation, lead routing, tagging, data-quality checks, anomaly alerts and scheduling approved assets. Avoid starting with customer-facing content or budget control."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do you keep an AI marketing agent safe?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Give it least-privilege access, start read-only, run it under its own identity, enforce rules in code, require approval for high-impact actions, log every action and guard against instructions hidden in web content."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is AI growth marketing?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The phrase describes search, content and automation working together as one engine, with AI doing repetitive work and people reviewing what matters. Reinforce Lab calls this approach AI Growth Systems."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Are marketing teams ready to scale AI agents?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Surveys of large companies suggest not yet. Gartner's 2026 CMO survey found 70% say marketing processes are not mature enough to scale AI, and its 2025 martech survey found 45% of those with agents said vendor agents missed expectations."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do you measure an AI marketing system?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Track value measures such as cycle time, qualified leads and cost per asset, and control measures such as reviewer change rate, factual-error rate, policy violations and incidents. Record a baseline of 4 to 8 weeks first."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Should you build or buy an AI marketing system?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Buy platforms for standard jobs and build the glue and controls for jobs that depend on your own data and approvals. We found no independent cost data. Audit tools you own and ask vendors what their agents can see, change and log."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: How to Build an AI Marketing Agent System: Architecture and Human Review",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Workflow",
+    "description": "A system where models and tools follow predefined code paths.",
+    "url": "https://reinforcelab.online/preview/#term-workflow"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Agent",
+    "description": "A system where a model directs its own process and tool use in a loop.",
+    "url": "https://reinforcelab.online/preview/#term-agent"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "System of record",
+    "description": "The main database for a type of data, such as the CRM for contacts.",
+    "url": "https://reinforcelab.online/preview/#term-system-of-record"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Human gate",
+    "description": "A point where a named person must approve before work moves on.",
+    "url": "https://reinforcelab.online/preview/#term-human-gate"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Prompt injection",
+    "description": "Instructions hidden in content that try to steer an AI tool that reads it.",
+    "url": "https://reinforcelab.online/preview/#term-prompt-injection"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Shadow mode",
+    "description": "Running an AI step alongside a person doing the same task, and comparing outputs.",
+    "url": "https://reinforcelab.online/preview/#term-shadow-mode"
+   }
+  ]
+ }
+]
