@@ -1,0 +1,213 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "To rank in Google AI Overviews, a page must be indexed and eligible to show with a snippet. Google says there are no extra technical requirements. Answer the question early, cover the related questions, back claims with named sources, earn real mentions on other sites and check your results monthly. Ranking in normal results helps, but Ahrefs found only about 38% of cited pages ranked in the top 10 in March 2026.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: AI features and your website",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guide to optimizing for generative AI features on Google Search",
+    "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central Blog: Top ways to ensure your content performs well in Google's AI experiences (May 2025)",
+    "url": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Latest documentation updates (FAQ rich result, May 2026)",
+    "url": "https://developers.google.com/search/updates"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: How to Rank in AI Overviews, What Actually Works (updated 2026)",
+    "url": "https://ahrefs.com/blog/how-to-rank-in-ai-overviews/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: Update, 38% of AI Overview Citations Pull From The Top 10 (March 2026)",
+    "url": "https://ahrefs.com/blog/ai-overview-citations-top-10/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Ahrefs: 76% of AI Overview Citations Pull From the Top 10 (2025)",
+    "url": "https://ahrefs.com/blog/search-rankings-ai-citations/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Pew Research Center: Google users are less likely to click on links when an AI summary appears (July 2025)",
+    "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Search Engine Land: AI Overviews optimization guide",
+    "url": "https://searchengineland.com/guide/how-to-optimize-for-ai-overviews"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "How do you rank in Google AI Overviews?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Make sure the page is indexed and eligible to show with a snippet, answer the question early, cover the related questions, add named sources and real expertise, earn real mentions on other sites, and check results monthly. Google says there are no extra technical requirements."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do you need to rank on page one to appear in AI Overviews?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It helps but is not required. Ahrefs found about 76% of cited pages ranked in the top 10 in July 2025 and about 38% in March 2026, so pages ranking lower or not at all are also cited."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is query fan-out?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google says its AI features may split one question into several related searches and gather supporting pages for each. A page that answers a related sub-question can be cited even if it does not rank first for the main phrase."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How often do AI Overviews appear?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It depends on the sample. Ahrefs found them on 21% of keywords in 146 million results and on 57.9% of question searches. Pew found about 18% of Google searches in March 2025 produced an AI summary, and 53% of searches of ten words or more."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need special schema or llms.txt for AI Overviews?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Google says there is no special schema.org markup to add and that it does not use llms.txt files. Keep any structured data matched to the visible text."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does page length affect AI Overviews?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Ahrefs found a near-zero correlation of about 0.04 between word count and AI citations, and Google says there is no ideal page length. Write until the question is answered."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do brand mentions help?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Ahrefs found correlations of 0.664 for branded web mentions and 0.70 for mentions on highly linked pages with AI Overview visibility. These are correlations, not proof, and Google says seeking fake mentions is not as helpful as it might seem."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I check if AI Overviews cite my site?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "List 20 to 30 searches, run them logged out in your target country, and record whether an AI Overview appears, whether you are cited, which page, and who is cited instead. Repeat monthly and use Search Console's Generative AI performance report."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can I stop my content being used in AI Overviews?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Google says preview controls such as nosnippet, data-nosnippet, max-snippet and noindex apply to its AI formats. More restrictive settings limit how your content is featured."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How long does it take to see changes in AI Overviews?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "There is no reliable public figure. Pages need to be recrawled and answers vary from run to run, so check monthly for several months and read the trend."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: How to Rank in AI Overviews: A Practical Checklist for Google",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "AI Overview",
+    "description": "A short AI-written summary shown at the top of some Google results, with links to the pages it used.",
+    "url": "https://reinforcelab.online/preview/#term-ai-overview"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Query fan-out",
+    "description": "One question split into several related searches to build a fuller answer.",
+    "url": "https://reinforcelab.online/preview/#term-query-fan-out"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Citation",
+    "description": "A link to a page shown with an AI answer.",
+    "url": "https://reinforcelab.online/preview/#term-citation"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Snippet",
+    "description": "The text Google shows for a page in its results.",
+    "url": "https://reinforcelab.online/preview/#term-snippet"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Eligible",
+    "description": "A page that is indexed and allowed to show with a snippet.",
+    "url": "https://reinforcelab.online/preview/#term-eligible"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Correlation",
+    "description": "Two things that move together, which does not prove that one causes the other.",
+    "url": "https://reinforcelab.online/preview/#term-correlation"
+   }
+  ]
+ }
+]
