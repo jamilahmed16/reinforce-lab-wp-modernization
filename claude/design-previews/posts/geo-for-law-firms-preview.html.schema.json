@@ -1,0 +1,218 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "GEO for law firms is generative engine optimization applied to legal services. It means letting crawlers in, fixing firm facts, writing practice pages that answer first and cite the law, showing the lawyers behind them, keeping directory profiles honest and testing monthly what AI tools say. Every claim must stay inside your advertising rules, and no one can promise a place in AI answers.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Clio: 2025 Legal Trends Report (PDF)",
+    "url": "https://www.clio.com/wp-content/uploads/2025/09/2025-Legal-Trends-Report.pdf"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Clio: Legal Trends Report",
+    "url": "https://www.clio.com/resources/legal-trends/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "American Bar Association: Model Rule 7.1, Communications Concerning a Lawyer's Services",
+    "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_7_1_communication_concerning_a_lawyer_s_services/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Aggarwal et al.: GEO, Generative Engine Optimization (KDD 2024)",
+    "url": "https://arxiv.org/abs/2311.09735"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "SparkToro: AIs are highly inconsistent when recommending brands or products (2026)",
+    "url": "https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "OpenAI: Overview of OpenAI crawlers",
+    "url": "https://developers.openai.com/api/docs/bots"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: AI features and your website",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Central: Guide to optimizing for generative AI features on Google Search",
+    "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Google Search Console Help: Generative AI performance report (Search)",
+    "url": "https://support.google.com/webmasters/answer/16984139"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "American Bar Association, Law Practice Today: Law firm visibility in generative AI (August 2025)",
+    "url": "https://www.americanbar.org/groups/law_practice/resources/law-practice-today/2025/august-2025/law-firm-visibility-generative-ai/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is GEO for law firms?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "GEO, or generative engine optimization, helps AI tools such as ChatGPT, Gemini, Perplexity and Google's AI Overviews find, understand and accurately name your firm when people ask legal questions. For a firm it adds clear facts, answer-first practice pages, strong lawyer bios and honest profiles to good SEO."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Why does GEO matter for lawyers?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Clients use AI before they call. Clio's 2025 survey of 1,000 US adults found 24% had used AI for a legal question and 46% would consult AI before contacting a lawyer. If tools shape the shortlist, your firm needs to be described correctly in the answer."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do the advertising rules apply to AI answers?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "They apply to what you publish. ABA Model Rule 7.1 bars false or misleading communications about a lawyer's services, and states add rules on results, testimonials and specialist claims. An AI tool may repeat your page, so keep every claim accurate and supportable."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How can my law firm appear in ChatGPT?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Let OAI-SearchBot crawl your pages, keep firm facts consistent, publish answer-first practice pages that cite the law, show lawyer credentials and keep directory profiles complete. OpenAI says sites that opt out of OAI-SearchBot are not shown in ChatGPT search answers."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need schema markup for AI search?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Not as a requirement. Google lists no extra technical requirements for AI Overviews beyond being indexed and eligible to show with a snippet. Accurate LegalService and Person markup can make your facts clearer, but it does not guarantee a citation."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Should my firm have city pages?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Only where you have an office or regularly handle matters, and only if each page is useful, with local courts, procedures and how to meet you. Google warns that making pages mainly to manipulate results breaks its scaled content abuse policy."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I check if AI tools mention my firm?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Write 15 to 25 client questions by practice area and city, run each three times in ChatGPT, Google and Perplexity, and record whether you are named, linked and described correctly. SparkToro found answers rarely repeat, so look at rates across many runs."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How long does GEO take for a law firm?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found no reliable study. Access and fact fixes can show up in retrieval-based answers within weeks, while reviews, mentions and new content take longer. Judge progress by repeating the same prompt test."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can a law firm pay to be cited by AI tools?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found no paid placement for organic AI answers. Be wary of any agency that promises one. Focus on accurate pages, honest profiles and the sources the answers already cite."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I choose a GEO agency for a law firm?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Choose one that understands legal advertising rules and has a lawyer at your firm approve each page. Ask for the prompt list, raw answers, a source map and a ranked fix list, and avoid promises of placement."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: GEO for Law Firms: How to Get Found and Recommended by AI Tools",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "GEO",
+    "description": "Generative engine optimization: work that helps AI tools cite and recommend your content.",
+    "url": "https://reinforcelab.online/preview/#term-geo"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Model Rule 7.1",
+    "description": "The ABA rule against false or misleading communications about a lawyer's services.",
+    "url": "https://reinforcelab.online/preview/#term-model-rule-7-1"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Practice area page",
+    "description": "A page that explains one area of law you handle, who you serve and how the process works.",
+    "url": "https://reinforcelab.online/preview/#term-practice-area-page"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Entity",
+    "description": "A clearly named thing, such as a firm or a lawyer, that an AI tool can recognize.",
+    "url": "https://reinforcelab.online/preview/#term-entity"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "LegalService markup",
+    "description": "Structured data that describes a law firm to search engines.",
+    "url": "https://reinforcelab.online/preview/#term-legalservice-markup"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Source map",
+    "description": "A count of the sites AI answers cite for your prompts.",
+    "url": "https://reinforcelab.online/preview/#term-source-map"
+   }
+  ]
+ }
+]
