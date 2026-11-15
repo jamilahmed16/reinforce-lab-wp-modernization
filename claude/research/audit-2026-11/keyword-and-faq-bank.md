@@ -2,7 +2,7 @@
 
 Built from the Semrush Keyword Overview screenshots in `claude/data/semrush/` (US, desktop, 14 and 15 Nov 2026) and the bulk export. Volume is US searches a month, KD is Semrush keyword difficulty. `[VERIFIED from the screenshots]` unless marked. How to use it: each post takes the secondary keywords as phrases inside its sections and the questions as FAQ headings, each answered with a sourced answer (D-278). A question with 0 volume is kept only if it is a real buyer question.
 
-Missing screenshots (1): the Keyword Overview for exactly "llms.txt" (post 14). Zero click searches arrived 15 Nov (see section D).
+No screenshots missing. For post 14, Semrush cannot run "llms.txt" as a keyword (it reads it as a domain); the bulk row and the "llms" overview are the data we use (see section D and the plan).
 
 ## A. Per post: secondary keywords and FAQ questions
 
@@ -106,3 +106,5 @@ seo professional services 1,300 / 50; seo consultant for small business 170 / 29
 | 15 | SEO for small business | best seo company for small business 1,300 / 35; seo services small business 1,600 / 33; seo agency small business 480 / 43 | Skip as a blog post. Better as a change to the Local SEO service page, which needs your approval |
 | 16 | SEM and paid search | sem agency 3,600 / 26; search engine marketing services 3,600 / 33; sem services 2,400 / 16 | Skip. Paid search is not one of the 12 locked services |
 Google Ads and Keyword Planner terms (several thousand a month, KD 80 to 90) are off topic and skipped.
+
+Post 14 note (Jamil, 15 Nov): use the bulk row llms.txt 3,600 / KD 65 and the related terms from the "llms" overview (llms.txt generator 2,400 / 48; what is llms.txt 1,900 / 52). The "llms" top 10 is about large language models, so competitors for post 14 come from Exa and Firecrawl, not from that screenshot.
