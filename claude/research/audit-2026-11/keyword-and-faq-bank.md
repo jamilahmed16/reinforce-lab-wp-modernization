@@ -59,3 +59,50 @@ Items 1 to 4 are my recommended next ideas after the 25. Item 6 needs your decis
 | 14 llms.txt (partial) | llms.txt 3,600 / 65 (head, from the bulk table); llms.txt generator 2,400 / 48 | what is llms.txt 1,900 / 52 |
 
 Note: the third screenshot was the term "llms" (22.2K, KD 88), not "llms.txt". It is not used for post 14.
+
+## E. Keyword Magic Tool, "saas seo" (five screenshots, 15 Nov 2026)
+
+Source: Semrush Keyword Magic Tool, US database, all keywords for "saas seo": 74,682 keywords (the 10.2M "total volume" and 53% average KD in the header are inflated by Google Ads and Keyword Planner terms, so I do not use them). Screenshots saved as `claude/data/semrush/magic-saas-seo-sorted-*-2026-11-15.webp`: relevance sort page 1, and CPC sort pages 1 to 4 (of 747 pages). Read from enlarged crops; volume and KD below are [VERIFIED from the screenshots] except where marked. **Limits:** only 5 pages out of 747 were sent. The CPC-sorted pages are mostly Google Ads noise (keyword planner, adwords, SEM); I read pages 2 to 4 row by row and only skimmed page 1, which is that noise. Top-10 pages for these terms were not shown.
+
+**Topic clusters shown on the left (number of keywords in each, not volume):** saas seo agencies 826; saas marketing agencies 900; generative ai seo agencies 1.5K; saas content 530; saas content marketing 444; b2b seo agencies 454; b2b seo 348; saas marketing 343; b2b seo 2025 trends 266; saas seo 234; enterprise seo saas 218; saas seo roadmap 191; saas case studies 161; saas keyword research 126; saas marketing blogs 124; specialized saas marketing agency 121; fintech content marketing 119; technical seo for saas 92.
+
+### Post 21 (SaaS SEO): the head term is bigger than the bank said
+| Keyword | Volume / KD |
+|---|---|
+| **saas seo** (best primary) | **2,900 / 34** |
+| seo for saas | 1,300 / 33 |
+| seo saas | 880 / 30 |
+| saas seo strategy | 590 / 27 |
+| saas marketing seo | 480 / 34 |
+| seo for saas company | 210 / 33 |
+| best saas seo agencies | 320 / 0 (CPC $42.33, shown as 0 KD) and 210 / 15 for the 2026 variant |
+| marketing saas seo | 110 / 27 |
+| seo for saas platforms | 110 / 32 |
+| seo services for saas companies | 70 / 13 |
+| seo agency for saas / seo agencies for saas | 720 / 17; 210 / 14 |
+| saas seo consulting agencies | 140 / 13 |
+| saas seo results | 50 / 16 |
+| who is the best seo expert for saas | 50 / 6 |
+| how to rank for saas | 40 / 1 |
+| saas seo roadmap / b2b saas seo roadmap | 40 / 6 |
+Use "SaaS SEO" as the exact title and keyword, and work "SEO for SaaS", "SaaS SEO strategy", "SaaS marketing SEO" and "SaaS SEO results" into sections. Add a section on how to choose an agency or consultant (agency terms below).
+
+### Buyer terms around SaaS and B2B (for post 21, post 24 and the B2B SaaS industry page)
+saas marketing agency 3,600 / 38; b2b saas marketing agency 1,600 / 20; b2b saas marketing 1,000 / 32; digital marketing agency for saas 480 / 22; b2b saas marketing agencies 390 / 18; saas marketing firm 260 / 25; saas growth agency 260 / 29; b2b saas agency 260 / 21; saas marketing consultants 210 / 14; b2b seo company 1,600 / 30; b2b seo agencies 1,300 / 25; b2b seo specialist 880 / 13; b2b seo consultants 720 / 20; seo for b2b companies 590 / 30; best b2b seo agency 590 / 26; b2b seo companies 390 / 22; b2b search engine optimization agency 590 / 9; best b2b saas marketing agencies 170 / 18; seo tools for b2b 260 / 14; seo for b2c 90 / 11. Changing the B2B SaaS industry page to target these needs your approval for that URL, so I only list them.
+
+### Post 25 (generative engine optimization agency) and post 12
+Long questions at 20 searches a month appear in the relevance list: "agencies that offer generative engine optimization services for saas companies", "best agencies for improving chatgpt visibility for saas", "best answer engine optimization strategies for saas companies", "best ai seo agency for saas startups". Use them as H3 wording inside post 25's "how to choose" and SaaS sections, not as separate pages. The cluster "generative ai seo agencies" has 1.5K keywords, which supports that post.
+
+### Post 24 (SEO for professional services)
+seo professional services 1,300 / 50; seo consultant for small business 170 / 29; local seo for financial advisor 110 / 16; seo services for b2b businesses 50 / 24. Use as phrases only.
+
+### Possible future articles from this data
+| # | Idea | Evidence | View |
+|---|---|---|---|
+| 11 | Enterprise SEO: what it is, tools, and how to hire a consultant | enterprise seo tools 2,900 / 23; enterprise seo consultant 2,400 / 18; enterprise seo consulting 1,900 / 26; enterprise seo platform 1,600 / 40; best enterprise seo agencies 260 / 15; enterprise seo software company in us 480 / 27 | **Write.** Large volume and low KD, and it matches the locked Enterprise SEO Strategy service. Needs a decision on tool names (we name no tool we cannot source) |
+| 12 | How to hire an SEO consultant | hire seo consultant 1,300 / 40; hire an seo consultant 480 / 53; hiring an seo consultant 480 / 35; seo management services 1,900 / 53; independent seo consultants 90 / 17 | **Write.** Buyer intent. Cover cost, questions to ask, red flags, and what a good report shows |
+| 13 | SaaS content marketing and SaaS keyword research (two small guides) | topic clusters of 444 and 126 keywords; volumes not shown | Hold until we see volumes. Ask for the cluster export |
+| 14 | Technical SEO for SaaS | cluster of 92 keywords; volume not shown | Hold, same reason |
+| 15 | SEO for small business | best seo company for small business 1,300 / 35; seo services small business 1,600 / 33; seo agency small business 480 / 43 | Skip as a blog post. Better as a change to the Local SEO service page, which needs your approval |
+| 16 | SEM and paid search | sem agency 3,600 / 26; search engine marketing services 3,600 / 33; sem services 2,400 / 16 | Skip. Paid search is not one of the 12 locked services |
+Google Ads and Keyword Planner terms (several thousand a month, KD 80 to 90) are off topic and skipped.
