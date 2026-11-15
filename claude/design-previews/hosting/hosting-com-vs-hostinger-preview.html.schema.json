@@ -1,0 +1,140 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-11-15T10:00:00+00:00",
+  "dateModified": "2026-11-15T10:00:00+00:00",
+  "genre": "Comparison",
+  "abstract": "hosting.com has the lower sale price ($1.49 a month on 12 months) and the shorter commitment. Hostinger has the lower renewal price ($10.99 against $13.99 a month). Pick by how long you plan to stay.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Hostinger: web hosting plans and prices (read 15 Nov 2026)",
+    "url": "https://www.hostinger.com/web-hosting"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Hostinger: Black Friday web hosting deals (read 15 Nov 2026)",
+    "url": "https://www.hostinger.com/black-friday-web-hosting-deals"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "hosting.com: Black Friday hosting deals (read 15 Nov 2026)",
+    "url": "https://hosting.com/black-friday/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "hosting.com: A2 Hosting evolves into hosting.com",
+    "url": "https://hosting.com/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "All About Cookies: Hostinger review (updated 9 Nov 2026)",
+    "url": "https://allaboutcookies.org/hostinger-web-hosting-review"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingAdvice: hosting.com review (updated 12 Nov 2026)",
+    "url": "https://www.hostingadvice.com/hosting-review/hosting-com/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is hosting.com the same as A2 Hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. A2 Hosting announced on its own blog in April 2025 that it is now hosting.com."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is hosting.com cheaper than Hostinger?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "For the first term, yes: hosting.com Starter is $1.49 a month on a 12-month plan, and Hostinger Premium is $1.99 a month on a 48-month plan. At renewal, Hostinger is lower."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Which has the lower renewal price?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Hostinger Premium renews at $10.99 a month. hosting.com Starter renews at $13.99 a month, as each host lists on its own page."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do both hosts list AI features?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Both list an AI website builder, an AI assistant and an MCP server. We have not tested them."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do both offer a money-back guarantee?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Both list a 30-day money-back guarantee on their pages."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Which host should I pick for a new WordPress site?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Pick the one that fits how long you plan to stay. hosting.com suits a short first term, and Hostinger suits a long one."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "ItemList",
+  "@id": "https://reinforcelab.online/preview/#options",
+  "name": "hosting.com vs Hostinger: Which Costs Less After Year 1?",
+  "numberOfItems": 2,
+  "itemListElement": [
+   {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Hostinger"
+   },
+   {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "hosting.com"
+   }
+  ]
+ }
+]

@@ -1,0 +1,45 @@
+{
+ "title": "hosting.com vs Hostinger: Which Costs Less After Year 1?",
+ "excerpt": "hosting.com vs Hostinger on sale price, renewal price, AI features and independent tests, from each host's own pages read on 15 November 2026.",
+ "body_file": "claude/drafts/hosting/hosting-com-vs-hostinger-body-2026-11-15.html",
+ "date": "2026-11-15 10:00:00",
+ "meta": {
+  "_yoast_wpseo_title": "hosting.com vs Hostinger: Which Costs Less After Year 1?",
+  "_yoast_wpseo_metadesc": "hosting.com vs Hostinger compared on sale price, renewal price, AI features and independent tests, using each host's own pages read on 15 Nov 2026.",
+  "_yoast_wpseo_focuskw": "hosting.com vs hostinger",
+  "rl_type": "comparison",
+  "rl_updated": "2026-11-15",
+  "rl_answer": "hosting.com has the lower sale price ($1.49 a month on 12 months) and the shorter commitment. Hostinger has the lower renewal price ($10.99 against $13.99 a month). Pick by how long you plan to stay.",
+  "rl_c_a_name": "Hostinger",
+  "rl_c_a_desc": "Low sale price on a 48-month term",
+  "rl_c_a_choose": "you plan to stay for years and want the lower renewal price.",
+  "rl_c_b_name": "hosting.com",
+  "rl_c_b_desc": "The new name of A2 Hosting",
+  "rl_c_b_choose": "you want the lowest first-year bill and a short commitment.",
+  "rl_c_rounds": "Sale price | B | $1.99 a month (Premium, 48 months) | $1.49 a month (Starter, 12 months)\nCommitment | B | 48 months for the sale price | 12 months for the sale price\nRenewal price | A | $10.99 a month | $13.99 a month\nAI features listed | Tie | AI builder, AI credits, Hostinger Agent, MCP server | Orbi assistant, AI builder, MCP server, Claude Skills Pack\nMoney-back guarantee | Tie | 30 days | 30 days\nIndependent testing | Tie | 100% uptime, 138 ms average response (All About Cookies) | 579 ms LCP, replies in seconds (HostingAdvice)",
+  "rl_c_rows": "Entry plan | Premium | Starter\nSale price | $1.99 a month | $1.49 a month\nTerm | 48 months | 12 months\nDue today | $95.52 | $17.88\nRenewal | $10.99 a month | $13.99 a month\nOffer window | 19 Oct to 14 Dec 2026 | 2 Nov to 14 Dec 2026\nFree domain | 1 year, listed | 1 year, listed\nMoney-back | 30 days | 30 days",
+  "rl_c_winners": "You want the lowest first-year bill | B | $17.88 due today against $95.52.\nYou will stay four years or more | A | The lower renewal price and a locked sale price.\nYou want a short commitment | B | 12 months for the sale price.\nYou care most about AI tools | Tie | Both list builders, assistants and MCP servers.",
+  "rl_c_both": "You can use both. Many people start on a cheap one-year plan and move later. hosting.com lists free migration, so moving in is simple.",
+  "rl_c_verdict": "Neither host wins on every round. hosting.com wins the first year. Hostinger wins renewals. Check the plan size and the renewal price before you buy, and do not choose on the sale price alone.",
+  "rl_c_cta_service": "services/website-maintenance-services",
+  "rl_c_cta_head": "Moving a live site to a new host?",
+  "rl_c_cta_sub": "Reinforce Lab can copy, test and switch your WordPress site without lost rankings.",
+  "rl_c_cta_button": "See website maintenance",
+  "rl_takeaways": "hosting.com is the new name of A2 Hosting.\nhosting.com has the lower sale price and the shorter commitment.\nHostinger has the lower renewal price.\nThe two were tested by different publishers, so the numbers do not line up.",
+  "rl_faqs": "Is hosting.com the same as A2 Hosting? | Yes. A2 Hosting announced on its own blog in April 2025 that it is now hosting.com.\nIs hosting.com cheaper than Hostinger? | For the first term, yes: hosting.com Starter is $1.49 a month on a 12-month plan, and Hostinger Premium is $1.99 a month on a 48-month plan. At renewal, Hostinger is lower.\nWhich has the lower renewal price? | Hostinger Premium renews at $10.99 a month. hosting.com Starter renews at $13.99 a month, as each host lists on its own page.\nDo both hosts list AI features? | Yes. Both list an AI website builder, an AI assistant and an MCP server. We have not tested them.\nDo both offer a money-back guarantee? | Both list a 30-day money-back guarantee on their pages.\nWhich host should I pick for a new WordPress site? | Pick the one that fits how long you plan to stay. hosting.com suits a short first term, and Hostinger suits a long one.",
+  "rl_sources": "Hostinger: web hosting plans and prices (read 15 Nov 2026) | https://www.hostinger.com/web-hosting\nHostinger: Black Friday web hosting deals (read 15 Nov 2026) | https://www.hostinger.com/black-friday-web-hosting-deals\nhosting.com: Black Friday hosting deals (read 15 Nov 2026) | https://hosting.com/black-friday/\nhosting.com: A2 Hosting evolves into hosting.com | https://hosting.com/\nAll About Cookies: Hostinger review (updated 9 Nov 2026) | https://allaboutcookies.org/hostinger-web-hosting-review\nHostingAdvice: hosting.com review (updated 12 Nov 2026) | https://www.hostingadvice.com/hosting-review/hosting-com/"
+ },
+ "categories": [
+  "Web Hosting"
+ ],
+ "slug": "hosting-com-vs-hostinger",
+ "author": 3,
+ "blockers": [
+  "Affiliate links (none placed)",
+  "Disclosure wording is a draft",
+  "Re-read prices on publish day",
+  "hosting.com Starter storage and site limits not found on the page read; add from live pricing page",
+  "Find the exact URL of hosting.com's A2 rebrand blog post (source line uses the homepage)",
+  "Pace and publish date"
+ ]
+}

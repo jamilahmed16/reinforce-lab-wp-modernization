@@ -11,3 +11,12 @@ Drafts live in `claude/drafts/hosting/`. Previews in `claude/design-previews/hos
 ## Page 1: black-friday-web-hosting-deals (drafted 15 Nov)
 - Cloudways end date unconfirmed. hosting.com date: host page (14 Dec) used, not the newsletter (30 Nov) code.
 - InMotion, Liquid Web, Network Solutions left in "also considered" because their pages gave no usable hosting prices or had stale dates.
+
+## Page 2 (order #4): hosting-com-vs-hostinger (drafted 15 Nov)
+- hosting.com Starter storage and site limits not on the page read; add from the live pricing page.
+- Exact URL of hosting.com's A2 rebrand post still needed for the source line.
+
+## Drafting status (15 Nov)
+Drafted: #1 deals hub (list), #4 hosting.com vs Hostinger (comparison). Not published.
+Ready to draft from facts already collected: Cloudways vs Kinsta (#6), ScalaHosting review (#7), Cloudways review (#8), Kinsta review (#9), hosting.com review (#10), Hostinger review (#11), Cloudways coupon (#12), Hostinger coupon (#13).
+Need new research first: Namecheap vs GoDaddy (#2: GoDaddy facts), Hostinger vs Bluehost (#3: Bluehost facts), Hostinger vs Namecheap (#5: Hostinger and Namecheap facts exist, but need the domain transfer cost page), Best AI web hosting (#14: verify each AI claim).
