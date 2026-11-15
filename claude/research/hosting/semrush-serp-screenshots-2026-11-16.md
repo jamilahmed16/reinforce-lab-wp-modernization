@@ -111,3 +111,18 @@ Notes (INFERENCE):
 - Web hosting deals (KD 73) is hard; the black friday term (KD 50) is the realistic target. A "2024"-style variant has volume 110 at KD 8, so a dated "2026" page may capture the equivalent when the year term gets volume.
 - Best cloud hosting (KD 55, 58 referring domains): medium-hard; 9.1K variation volume.
 - Still missing Semrush SERPs: hostinger review, cloudways review, kinsta review, hosting.com review, best wordpress hosting.
+
+## Batch 8 (5 keywords)
+| Keyword | Vol | KD | Intent | Top 10 (order) |
+|---|---|---|---|---|
+| scalahosting review | 140 | 7 | Commercial | Very easy. 1 GoogieHost, 2 CloudZat, 3 Reddit (r/PPC), 4 HostAdvice (AU), 5 YouTube, 6 BitCatcha, 7 WebHostingTalk, 8 ThemeIsle, 9 Reddit (r/HostingReport), 10 MasteringWebHosting (authority 2). Variations 11, 250 total: "scalahosting reviews" 90 (KD 31). CPC $11.41. Global 510. |
+| digitalocean promo code | 390 | 12 | Info/Transactional | Very easy. 1 HostDean, 2 Discoup, 3 DigitalOcean docs (signup-credit), 4 CostGoat, 5 Reddit, 6 GitHub gist, 7 DevOpsCube, 8 DigitalOcean community, 9 LinkedIn showcase, 10 DigitalOcean community. Variations 173, 900 total: "digitalocean promo codes" 70, "promo code digitalocean" 50, "digitalocean promo code 2026" 30 (KD 8), "$200 credit promo code" 20. CPC $11.66. |
+| cheapest web hosting | 1,900 | 74 | Commercial | Hard (199 referring domains). 1 Reddit, 2 Namecheap, 3 HoboHost, 4 ThemeIsle, 5 GoDaddy, 6 WhoIsHostingThis, 7 YouTube, 8 Cybernews, 9 Hostinger, 10 Quora. Variations 439, 8.5K total: "cheapest web site hosting" 1.6K (KD 70), "who is the cheapest web host with ftp access" 320 (KD 45). Global 12.8K (India 3.6K). CPC $12.04. |
+| best web hosting for small business | 1,900 | 82 | Commercial | Very hard (507 referring domains). 1 HostingStep (AS 38), 2 WebsitePlanet, 3 Reddit, 4 HostingAdvice, 5 Quora, 6 01net, 7 Quora, 8 MageMonkeys (AS 13), 9 Quora, 10 Scalesta (AS 20). Variations 233, 5.7K total. Hostinger runs a Black Friday ad. |
+| cloudways vs siteground | 320 | 26 | Commercial | Easy. 1 HostingStep, 2 Reddit, 3 cloudways.com (siteground-alternative), 4 WebsitePlanet, 5 TheWebGeeks (AS 16), 6 OnlineMediaMasters, 7 WebHostingCat, then irrelevant pages at #8 to #10 (NYTimes, hyperlitemountaingear, Medium: SERP has only 7 relevant results). Variations 37, 450 total: siteground vs cloudways 110 (KD 19). CPC $13.22. |
+
+Notes (INFERENCE):
+- ScalaHosting review (KD 7, authority-2 site at #10) and DigitalOcean promo code (KD 12) are the easiest of all hosting terms collected so far. Both are small, but both are almost free wins.
+- Cloudways vs SiteGround has only 7 relevant results on page 1 (three filler pages: NYTimes, outdoor gear, Medium), so the SERP is weak and high CPC ($13.22).
+- Cheapest web hosting (KD 74) and best web hosting for small business (KD 82) are too hard now. Their variants (for example "who is the cheapest web host with ftp access", 320, KD 45) are more reachable inside a larger guide later.
+- Semrush SERPs collected: 36 hosting keywords. Still missing: hostinger review, cloudways review, kinsta review, hosting.com review, best wordpress hosting.
