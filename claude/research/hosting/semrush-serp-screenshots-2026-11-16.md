@@ -72,3 +72,18 @@ Notes (INFERENCE):
 - GPU hosting (KD 74, 298 referring domains) is too hard for a first-year page. Fold into the AI hosting hub and the DigitalOcean review. Verify any GPU offer from host pages first.
 - Name.com has no SERP. A short page or a section is enough.
 - Semrush SERPs now collected for all Tier 1 keywords except: hostinger review, cloudways review, kinsta review, hosting.com review, best wordpress hosting.
+
+## Batch 6 (5 screenshots, 4 distinct keywords; hostinger vs siteground appears twice)
+| Keyword | Vol | KD | Intent | Top 10 (order) |
+|---|---|---|---|---|
+| cloudways coupon code | 1,300 | 49 | Transactional | 1 cloudways.com/en/promo-code.php, 2 TheBlogMetrics, 3 DevOpsCube, 4 SimplyCodes, 5 HostDean, 6 Reddit (r/DigitalMarketing), 7 WebsitePlanet, 8 HostAdvice, 9 HostingExplorers, 10 Cybernews. Variations 19, 1.8K total: "cloudways coupon code 2026" 110 (KD 39), "cloudways coupon code 2026 woblogger" 90, "woblogger cloudways coupon code" 90. Global 3.6K (IN 1.0K). Needs no big authority: several small sites (TheBlogMetrics AS 19, HostingExplorers AS 8) rank. |
+| hostinger vs siteground | 390 | 31 | Commercial | 1 Reddit (r/Hosting), 2 siteground.com/siteground-vs-hostinger, 3 hostinger.com/compare, 4 Cybernews, 5 Reddit (r/webhosting), 6 Gizmodo, 7 OliveVirtual (AS 6), 8 OnlineMediaMasters, 9 01net.com, 10 Elementor. Variations 111, 760 total: siteground vs hostinger 210 (KD 37), "hostinger vs bluehost vs siteground" 20. Both brands run a comparison page. |
+| best vps hosting | 2,900 | 71 | Commercial | 1 Reddit (r/SelfHosting), 2 DigitalOcean (vps-hosting), 3 TechRadar, 4 Namecheap (hosting/vps), 5 VPSBenchmarks, 6 OVHcloud, 7 Reddit (r/VPS), 8 YouTube, 9 Quora, 10 Reddit. Variations 880, 12.4K total: "best vps web hosting" 720 (KD 80), "best vps for web hosting" 590 (KD 81), "best offshore vps hosting" 390 (KD 6), "best managed vps hosting" 320 (KD 63). Needs 193 referring domains. Hostinger runs a Black Friday ad. |
+| liquid web coupon | 320 | 54 | Transactional | 1 liquidweb.com/hosting-coupons, 2 TechRadar, 3 CouponFollow, 4 Saver, 5 Rakuten, 6 UpdatedReviews.in, 7 SimplyCodes, 8 WorthThePenny, 9 eCoupon.io (AS 14), 10 WPBeginner. Variations 16, 510 total. Needs 102 referring domains. |
+
+Notes (INFERENCE):
+- Cloudways coupon code (1.3K US, 3.6K global): Cloudways ranks #1 with its own page, but small blogs rank #2 to #10 (AS 8 to 36 appear). It is the most beatable coupon SERP. Fits the Cloudways offer you already hold (BFCM802, to be verified against the affiliate terms before it is published).
+- Hostinger vs SiteGround: Reddit and both brands plus Cybernews and Gizmodo; AS 6 site at #7 means thin pages rank. Moderate. Good Tier 2 comparison.
+- Best VPS hosting (KD 71, 193 referring domains): too hard for now; target "best managed vps hosting" and offshore variants later, or fold into the AI hosting hub.
+- Liquid Web coupon is mid-hard and Liquid Web's own page ranks first; keep it as a section in the Liquid Web review.
+- Still missing Semrush SERPs: hostinger review, cloudways review, kinsta review, hosting.com review, best wordpress hosting.
