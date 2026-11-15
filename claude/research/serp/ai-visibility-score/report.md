@@ -1,6 +1,6 @@
 # Competitor semantics: ai-visibility-score
 
-Our page: -
+Our page: claude/drafts/posts/ai-visibility-score-body-2026-11-15.html
 Competitors analysed: 8 of 8 (a term counts as common when 3+ of them use it)
 
 | # | Page | Words | Headings |
@@ -12,11 +12,17 @@ Competitors analysed: 8 of 8 (a term counts as common when 3+ of them use it)
 | 5 | [Understanding Your AI Visibility Score: A Metric-by-Metric Guide · Men](https://www.mentionowl.com/blog/understanding-your-ai-visibility-score-a-metric-by-metric-guide) | 3007 | 25 |
 | 6 | [AI Visibility Score: How to Measure It, Parts and Weights](https://bugviso.com/blog/ai-visibility-score) | 3219 | 21 |
 | 7 | [AI visibility score: what is it & how to check yours · Erlin](https://www.erlin.ai/blog/ai-visibility-score) | 2459 | 25 |
-| 8 | [Visibility Score and metric formulas - RankRaft AI Docs](https://docs.rankraft.ai/analytics/visibility/visibility-score) | 727 | 8 |
+| 8 | [Visibility Score and metric formulas - RankRaft AI Docs](https://docs.rankraft.ai/analytics/visibility/visibility-score) | 719 | 8 |
 
-## Common terms (577)
+## Common terms our page does NOT use (311)
 
-example (8), scores (8), number (8), share of voice (8), answer (8), rate (8), shows (8), whether (8), cited (8), prompts (8), single (8), brand (8), citation (8), formula (8), prompt (8), visibility score (8), position (8), link (8), list (8), time (8), mention (8), competitor (8), answers (8), mentions (8), appear (7), result (7), different (7), data (7), times (7), comparison (7), tool (7), first (7), often (7), category (7), matters (7), brand mentions (7), coverage (7), differently (7), search (7), chatgpt (7), composite (7), tools (7), ai visibility (7), citations (7), average (7), named (7), means (7), brands (7), tells (7), track (7), rather (7), perplexity (7), name (7), total (7), competitors (7), change (7), google (7), page (7), questions (7), appears (6), move (6), tracked (6), claude (6), ai visibility score (6), weekly (6), baseline (6), source (6), report (6), weights (6), real (6), look (6), mention rate (6), already (6), check (6), actually (6), together (6), found (6), citation rate (6), content (6), useful (6), query (6), build (6), metric (6), gemini (6), table (6), weight (6), know (6), five (6), monitoring (6), built (6), tracking (6), nothing (6), least (6), measure (6), frequently (6), compare (6), engines (6), benchmark (6), domain (6), rank (6), ai search (6), language (6), site (6), metrics (6), sources (6), separately (6), want (6), traffic (6), show (6), ai answers (6), never (6), weak (5), improve (5), points (5), prominence (5), signals (5), platform (5), fixes (5), less (5), responses (5), weighted (5), absolute (5), measuring (5), rate citation rate (5), buyer (5), combine (5), definitions (5), several (5), common (5), another (5), good (5), measurement (5), worth (5), brand appears (5), narrow (5), trend (5), measures (5), strong (5), scale (5), competitive (5), component (5), authority (5), call (5), full (5), ai-generated (5), question (5), includes (5), depends (5), covers (5), still (5), usually (5), linked (5), citing (5), high (5), analysis (5), work (5), monthly (5), pages (5), engine (5), third (5), gives (5), google ai (5), consistent (5), point (5), four (5), inside (5), shown (5), keep (5), audit (5), need (5), best (5), present (5), website (5), names (5), defined (5), asks (5), ai share (5), changes (5), model (5), reports (5), described (5), queries (5), combined (5), mentioned (5), sentiment (5), order (5), small (5), counts (5), behind (4), relative (4), wrong (4), percentage (4), platforms (4), pull (4), quality (4), around (4), exact (4), frequency (4), version (4), trends (4)
+Use the ones that fit naturally; never stuff. Number = competitors using it.
+
+total (7), track (7), rather (7), matters (7), change (7), tracked (6), actually (6), content (6), together (6), already (6), appears (6), metrics (6), frequently (6), traffic (6), want (6), language (6), call (5), brand appears (5), narrow (5), includes (5), authority (5), component (5), signals (5), definitions (5), weighted (5), measuring (5), absolute (5), strong (5), ai-generated (5), responses (5), platform (5), weak (5), prominence (5), competitive (5), present (5), analysis (5), consistent (5), citing (5), website (5), ai share (5), defined (5), google ai (5), high (5), asks (5), linked (5), model (5), monthly (5), queries (5), mentioned (5), combined (5), described (5), around (4), ai-generated answers (4), chatgpt perplexity (4), range (4), breaks (4), directly (4), typically (4), relative (4), specific (4), platforms (4), practice (4), differences (4), line (4), competitive landscape (4), percentage (4), components (4), linkedin (4), pull (4), movement (4), quality (4), citation rate answers (4), descriptions (4), gaps (4), absent (4), crawlers (4), clicks (4), update (4), surface (4), conversation (4), research (4), owns (4), signal (4), cites (4), describe (4), treating (4), core (4), structured (4), relevant (4), recommend (4), trust (4), tracker (4), zero (4), name the brand (4), universal benchmark (4), traditional (4), difference (4), understand (4), third-party (4), composite score (4), teams (4), lost (4), claims (4), measures how often (4), type (4), marketing (4), positioning (4), later (4), reported (4), evidence (4), lose (4), definition (4), industry (4), domains (4), breakdown (4), calculated (4), lead (4), hits (4), technical (4), appearance (4), quick (4), intent (4), often your brand (4), topics (4), assistants (4), moves (4), measured (4), works (4), treat (4), averaged (4), step (4), exactly (4), anything (4), lower (3), chatgpt and perplexity (3), tracked prompts (3), lever (3), highest (3), explicitly (3), keyword (3), comes (3), optimize (3), shape (3), customer (3), produce (3), methodology (3), sets (3), moving (3), coverage share (3), monitor (3)
+
+## Common terms our page already uses (266)
+
+number (8), brand (8), single (8), shows (8), position (8), visibility score (8), whether (8), mention (8), competitor (8), answers (8), prompt (8), rate (8), formula (8), mentions (8), prompts (8), scores (8), list (8), share of voice (8), answer (8), citation (8), cited (8), example (8), time (8), link (8), chatgpt (7), appear (7), average (7), citations (7), perplexity (7), ai visibility (7), tools (7), tool (7), comparison (7), search (7), often (7), different (7), means (7), category (7), composite (7), differently (7), name (7), named (7), data (7), result (7), brands (7), first (7), brand mentions (7), tells (7), times (7), coverage (7), page (7), google (7), questions (7), competitors (7), monitoring (6), move (6), tracking (6), five (6), source (6), table (6), ai visibility score (6), baseline (6), mention rate (6), weight (6), useful (6), weights (6), query (6), gemini (6), real (6), know (6), claude (6), metric (6), weekly (6), report (6), citation rate (6), build (6), found (6), built (6), look (6), check (6), show (6), domain (6), site (6), engines (6), compare (6), sources (6), least (6), benchmark (6), ai search (6), measure (6), nothing (6), separately (6), ai answers (6), rank (6), never (6), fixes (5), combine (5), less (5), rate citation rate (5), worth (5), buyer (5), question (5), good (5), improve (5), measurement (5), common (5), several (5), another (5), points (5), trend (5), full (5), scale (5), measures (5), four (5), engine (5), need (5), changes (5), names (5), still (5), keep (5), usually (5), gives (5), work (5), point (5), reports (5), pages (5), third (5), shown (5), covers (5), inside (5), depends (5), best (5), audit (5), sentiment (5), counts (5), small (5), order (5), optimization (4), score is composite (4), version (4), exact (4), mention rate citation (4), weighting (4), frequency (4), guide (4), headline (4), vary (4), wrong (4), behind (4), trends (4)
 
 ## Questions competitors answer in headings (39)
 
@@ -253,11 +259,11 @@ example (8), scores (8), number (8), share of voice (8), answer (8), rate (8), s
 - H3 6. Monitor and iterate
 
 **Visibility Score and metric formulas - RankRaft AI Docs**
-- H2 ​ Visibility Score
-- H2 ​ Component metrics
-- H3 ​ Example
-- H2 ​ Margin
-- H2 ​ Competitors
-- H2 ​ Importance
-- H2 ​ Small samples
-- H2 ​ Why past numbers can change
+- H2 Visibility Score
+- H2 Component metrics
+- H3 Example
+- H2 Margin
+- H2 Competitors
+- H2 Importance
+- H2 Small samples
+- H2 Why past numbers can change

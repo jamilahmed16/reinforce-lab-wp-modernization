@@ -762,41 +762,41 @@
  {
   "url": "https://docs.rankraft.ai/analytics/visibility/visibility-score",
   "title": "Visibility Score and metric formulas - RankRaft AI Docs",
-  "words": 727,
+  "words": 719,
   "headings": [
    [
     "h2",
-    "\u200b Visibility Score"
+    "Visibility Score"
    ],
    [
     "h2",
-    "\u200b Component metrics"
+    "Component metrics"
    ],
    [
     "h3",
-    "\u200b Example"
+    "Example"
    ],
    [
     "h2",
-    "\u200b Margin"
+    "Margin"
    ],
    [
     "h2",
-    "\u200b Competitors"
+    "Competitors"
    ],
    [
     "h2",
-    "\u200b Importance"
+    "Importance"
    ],
    [
     "h2",
-    "\u200b Small samples"
+    "Small samples"
    ],
    [
     "h2",
-    "\u200b Why past numbers can change"
+    "Why past numbers can change"
    ]
   ],
-  "text": "Every number in RankRaft AI is calculated from the stored answers in the selected date range. Nothing is modelled or estimated. Every rate counts only answers that were actually shown: when Google shows no AI Overview for a question, that run is left out rather than counted as \u201cnot mentioned\u201d. \u200b Visibility Score A single number from 0 to 100: Score = 100 \u00d7 ( 0.45 M + 0.35 C + 0.20 P ) \\text{Score} = 100 \\times (0.45\\,M + 0.35\\,C + 0.20\\,P) Score = 100 \u00d7 ( 0.45 M + 0.35 C + 0.20 P ) where M is your mention rate, C your citation rate and P your prompt coverage, each between 0 and 1. The result is rounded to the nearest whole number. Component Weight Why Mention rate 45% Being named is the outcome that matters most. Citation rate 35% A link is evidence AI trusts your site, and it\u2019s what sends traffic. Prompt coverage 20% Rewards showing up across many questions rather than dominating one. Position isn\u2019t part of the score on purpose. It\u2019s only defined for answers that list brands in order, so including it would penalise brands mentioned in prose. \u200b Component metrics Metric Formula Mention rate answers that name you (or an alias) \u00f7 all answers Citation rate answers that link to at least one page on your domain \u00f7 all answers Prompt coverage prompts where you were named at least once \u00f7 prompts asked in the range Average spot in each answer, the brands found are numbered by first appearance (1 = named first). Averaged over answers that mention you, to one decimal place Share of voice your mentions \u00f7 all brand mentions, counting you and every competitor on your list, confirmed or not. Each brand counts once per answer \u200b Example In a week with 10 prompts on 3 engines (210 answers): you\u2019re named in 63 answers, cited in 21, and named at least once for 6 of the 10 prompts. Mention rate = 63 \u00f7 210 = 30% Citation rate = 21 \u00f7 210 = 10% Prompt coverage = 6 \u00f7 10 = 60% Visibility Score = 100 \u00d7 (0.45 \u00d7 0.30 + 0.35 \u00d7 0.10 + 0.20 \u00d7 0.60) = 29 \u200b Margin Every score carries a 95% interval, shown as \u00b1 N and as a shaded band on trend charts: margin = 100 \u00d7 1.96 \u00d7 p ( 1 \u2212 p ) n \\text{margin} = 100 \\times 1.96 \\times \\sqrt{\\frac{p(1-p)}{n}} margin = 100 \u00d7 1.96 \u00d7 n p ( 1 \u2212 p ) \u200b \u200b where p is your mention rate (held between 5% and 95%) and n is the number of answers. The margin is never shown as less than 1 point. More prompts, more engines and longer date ranges all narrow it. Tied within margin: on the leaderboard, two neighbouring brands whose scores differ by no more than their combined margins are marked as tied. Don\u2019t read anything into the order of tied brands. \u200b Competitors Competitors are scored with exactly the same formula, over the same answers. A competitor is cited when an answer links to its domain or a subdomain of it. Rank orders you and your confirmed competitors by Visibility Score. \u200b Importance Prompts and gap prompts are tagged by importance, based on your mention rate for that prompt: Importance Your mention rate High 0% Medium Below 40% Low 40% or more \u200b Small samples Figures based on very few answers are greyed out and labelled Low sample \u00b7 N answers . Treat them as a hint, not a result. \u200b Why past numbers can change The scores for a date range are recalculated from the stored answers whenever you look. They change if you: Confirm or archive a competitor. The leaderboard and rank show confirmed competitors only, so confirming one adds its row, with its full history, and archiving one removes it. Share of voice doesn\u2019t move: every competitor\u2019s mentions are always in the total, whether or not its row is shown. - Change the range. A 30-day score covers different answers from a 7-day score. Adding a competitor yourself, or a new alias, works differently: brand names are matched when each answer is collected, so the change counts from the next scan onward. Earlier answers keep the matches made at the time. Was this page helpful? Yes No"
+  "text": "Every number in RankRaft AI is calculated from the stored answers in the selected date range. Nothing is modelled or estimated. Every rate counts only answers that were actually shown: when Google shows no AI Overview for a question, that run is left out rather than counted as \u201cnot mentioned\u201d. Visibility Score A single number from 0 to 100: Score = 100 \u00d7 ( 0.45 M + 0.35 C + 0.20 P ) \\text{Score} = 100 \\times (0.45\\,M + 0.35\\,C + 0.20\\,P) Score = 100 \u00d7 ( 0.45 M + 0.35 C + 0.20 P ) where M is your mention rate, C your citation rate and P your prompt coverage, each between 0 and 1. The result is rounded to the nearest whole number. Component Weight Why Mention rate 45% Being named is the outcome that matters most. Citation rate 35% A link is evidence AI trusts your site, and it\u2019s what sends traffic. Prompt coverage 20% Rewards showing up across many questions rather than dominating one. Position isn\u2019t part of the score on purpose. It\u2019s only defined for answers that list brands in order, so including it would penalise brands mentioned in prose. Component metrics Metric Formula Mention rate answers that name you (or an alias) \u00f7 all answers Citation rate answers that link to at least one page on your domain \u00f7 all answers Prompt coverage prompts where you were named at least once \u00f7 prompts asked in the range Average spot in each answer, the brands found are numbered by first appearance (1 = named first). Averaged over answers that mention you, to one decimal place Share of voice your mentions \u00f7 all brand mentions, counting you and every competitor on your list, confirmed or not. Each brand counts once per answer Example In a week with 10 prompts on 3 engines (210 answers): you\u2019re named in 63 answers, cited in 21, and named at least once for 6 of the 10 prompts. Mention rate = 63 \u00f7 210 = 30% Citation rate = 21 \u00f7 210 = 10% Prompt coverage = 6 \u00f7 10 = 60% Visibility Score = 100 \u00d7 (0.45 \u00d7 0.30 + 0.35 \u00d7 0.10 + 0.20 \u00d7 0.60) = 29 Margin Every score carries a 95% interval, shown as \u00b1 N and as a shaded band on trend charts: margin = 100 \u00d7 1.96 \u00d7 p ( 1 \u2212 p ) n \\text{margin} = 100 \\times 1.96 \\times \\sqrt{\\frac{p(1-p)}{n}} margin = 100 \u00d7 1.96 \u00d7 n p ( 1 \u2212 p ) \u200b \u200b where p is your mention rate (held between 5% and 95%) and n is the number of answers. The margin is never shown as less than 1 point. More prompts, more engines and longer date ranges all narrow it. Tied within margin: on the leaderboard, two neighbouring brands whose scores differ by no more than their combined margins are marked as tied. Don\u2019t read anything into the order of tied brands. Competitors Competitors are scored with exactly the same formula, over the same answers. A competitor is cited when an answer links to its domain or a subdomain of it. Rank orders you and your confirmed competitors by Visibility Score. Importance Prompts and gap prompts are tagged by importance, based on your mention rate for that prompt: Importance Your mention rate High 0% Medium Below 40% Low 40% or more Small samples Figures based on very few answers are greyed out and labelled Low sample \u00b7 N answers . Treat them as a hint, not a result. Why past numbers can change The scores for a date range are recalculated from the stored answers whenever you look. They change if you: Confirm or archive a competitor. The leaderboard and rank show confirmed competitors only, so confirming one adds its row, with its full history, and archiving one removes it. Share of voice doesn\u2019t move: every competitor\u2019s mentions are always in the total, whether or not its row is shown. - Change the range. A 30-day score covers different answers from a 7-day score. Adding a competitor yourself, or a new alias, works differently: brand names are matched when each answer is collected, so the change counts from the next scan onward. Earlier answers keep the matches made at the time. Was this page helpful? Yes No"
  }
 ]
