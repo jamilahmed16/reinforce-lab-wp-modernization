@@ -1,0 +1,34 @@
+{
+ "title": "Kinsta Review 2026: Pricing, Speed Test Results and Black Friday Offer",
+ "excerpt": "A Kinsta review from the host's own pages and one named independent test, with plan prices, the Black Friday offer and AI features.",
+ "body_file": "claude/drafts/hosting/kinsta-review-body-2026-11-15.html",
+ "date": "2026-10-01 10:00:00",
+ "meta": {
+  "_yoast_wpseo_title": "Kinsta Review 2026: Pricing, Speed and Black Friday",
+  "_yoast_wpseo_metadesc": "Kinsta review for 2026: plan prices, the Black Friday offer to 1 Dec, a six-week test from EXPERTE, support, AI features, pros and cons, from named sources.",
+  "_yoast_wpseo_focuskw": "kinsta review",
+  "rl_type": "guide",
+  "rl_updated": "2026-11-15",
+  "rl_answer": "Kinsta is a premium managed WordPress host. EXPERTE measured 99.977% uptime over 6 weeks. The Black Friday offer is for new customers and ends 1 December.",
+  "rl_faqs": "Is Kinsta worth it? | It can be for a business site that needs speed and support. EXPERTE measured 99.977% uptime over 6 weeks. The cost is the main con.\nHow much does Kinsta cost? | The Launch plan lists at $35 a month. Larger plans run to $299 a month, agency plans to $675, and enterprise from $500.\nDoes Kinsta have a Black Friday deal? | Yes: 50% off for 3 months on monthly plans, or 3 months free on annual billing. It is for new customers and ends on 1 December 2026.\nDoes Kinsta have phone support? | EXPERTE reports AI and live chat support, with no phone line.\nDoes Kinsta have a money-back guarantee? | Kinsta lists a 30-day money-back guarantee on its pricing page.\nDoes Kinsta have AI features? | We found no built-in AI assistant on the pricing page. Kinsta has an API and an APM tool, and it publishes tutorials on building an MCP server.",
+  "rl_sources": "Kinsta: pricing (read 15 Nov 2026) | https://kinsta.com/pricing/\nKinsta: APM tool | https://kinsta.com/apm-tool/\nEXPERTE: Kinsta review (updated 10 Aug 2026) | https://www.experte.com/wordpress-hosting/kinsta",
+  "rl_takeaways": "The Launch plan lists at $35 a month, with 75,000 visits and 15 GB.\nEXPERTE measured 99.977% uptime and a 0.23 second time to first byte over 6 weeks.\nThe Black Friday offer ends on 1 December 2026 and is for new customers.\nNo built-in AI assistant on the pricing page.",
+  "rl_g_glossary": "Time to first byte | How long a server takes to start sending a page.\nManaged WordPress hosting | Hosting set up and looked after for WordPress only.\nAPM | Application performance monitoring, a tool that shows what slows a site down.",
+  "rl_g_cta_service": "services/website-maintenance-services",
+  "rl_g_cta_head": "Moving a live site to a new host?",
+  "rl_g_cta_sub": "Reinforce Lab can copy, test and switch your WordPress site without lost rankings.",
+  "rl_g_cta_button": "See website maintenance"
+ },
+ "categories": [
+  "Web Hosting"
+ ],
+ "slug": "kinsta-review",
+ "author": 3,
+ "blockers": [
+  "Confirm the Kinsta APM URL still works",
+  "Find a second independent test",
+  "Affiliate links not placed",
+  "Disclosure wording is a draft",
+  "Re-read prices and offers on publish day"
+ ]
+}

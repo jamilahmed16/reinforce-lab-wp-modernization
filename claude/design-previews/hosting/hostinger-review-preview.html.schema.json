@@ -1,0 +1,139 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-29T10:00:00+00:00",
+  "dateModified": "2026-11-15T00:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "Hostinger is a low-cost host with fast results in a named test and a long AI list. It needs a 48-month term for the sale price, and renewals cost more.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Hostinger: web hosting (read 15 Nov 2026)",
+    "url": "https://www.hostinger.com/web-hosting"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Hostinger: Black Friday web hosting deals (read 15 Nov 2026)",
+    "url": "https://www.hostinger.com/black-friday-web-hosting-deals"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "All About Cookies: Hostinger review (updated 9 Nov 2026)",
+    "url": "https://allaboutcookies.org/hostinger-web-hosting-review"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is Hostinger good?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "All About Cookies reported 100% uptime over 9 days and a 138 ms average response time. It also noted that Hostinger is not PCI compliant and that renewals cost more."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does Hostinger cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Premium is $1.99 a month on a 48-month term and renews at $10.99 a month, according to Hostinger's own pages."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Hostinger good for WordPress?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "In the All About Cookies test, a paid plan scored 99 out of 100 on page speed from three locations."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Hostinger legit?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Hostinger is an established host with a 30-day money-back guarantee listed. Read the term and renewal price before you buy."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Hostinger have AI features?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It lists an AI website builder, AI credits, an AI assistant called Hostinger Agent and an MCP server. We did not test them."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Hostinger good for an online store?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "All About Cookies notes that Hostinger is not PCI compliant. If you take card payments on the site, check how your payment provider handles that."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Hostinger Review 2026: Pricing, Speed Test, AI Tools and Renewal Costs",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "MCP",
+    "description": "A standard way for AI tools to connect to other software.",
+    "url": "https://reinforcelab.online/preview/#term-mcp"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "PCI compliance",
+    "description": "A security standard for taking card payments.",
+    "url": "https://reinforcelab.online/preview/#term-pci-compliance"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "llms.txt",
+    "description": "A file that describes a site for AI tools.",
+    "url": "https://reinforcelab.online/preview/#term-llms-txt"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "VPS",
+    "description": "A virtual private server, a slice of a server you control.",
+    "url": "https://reinforcelab.online/preview/#term-vps"
+   }
+  ]
+ }
+]

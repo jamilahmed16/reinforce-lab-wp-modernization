@@ -20,3 +20,10 @@ Drafts live in `claude/drafts/hosting/`. Previews in `claude/design-previews/hos
 Drafted: #1 deals hub (list), #4 hosting.com vs Hostinger (comparison). Not published.
 Ready to draft from facts already collected: Cloudways vs Kinsta (#6), ScalaHosting review (#7), Cloudways review (#8), Kinsta review (#9), hosting.com review (#10), Hostinger review (#11), Cloudways coupon (#12), Hostinger coupon (#13).
 Need new research first: Namecheap vs GoDaddy (#2: GoDaddy facts), Hostinger vs Bluehost (#3: Bluehost facts), Hostinger vs Namecheap (#5: Hostinger and Namecheap facts exist, but need the domain transfer cost page), Best AI web hosting (#14: verify each AI claim).
+
+
+## Drafted 15 Nov (second batch, all unpublished, all pass copy-check 0 and grade 8 or below)
+- #6 cloudways-vs-kinsta (comparison, 4 Oct), #7 scalahosting-review (3 Oct), #8 cloudways-review (2 Oct), #9 kinsta-review (1 Oct), #10 hosting-com-review (30 Sep), #11 hostinger-review (29 Sep), #12 cloudways-coupon-code (28 Sep), #13 hostinger-coupon (27 Sep).
+- Review pages use the guide design, not the lab-test Review design, because we did not test the hosts (the Review design shows test conditions and a scorecard).
+- Per-page blockers are in the `blockers` list inside each JSON spec.
+- Still to write for Wave 1: #2 Namecheap vs GoDaddy, #3 Hostinger vs Bluehost, #5 Hostinger vs Namecheap, #14 Best AI web hosting.

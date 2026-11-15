@@ -1,0 +1,133 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-10-01T10:00:00+00:00",
+  "dateModified": "2026-11-15T00:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "Kinsta is a premium managed WordPress host. EXPERTE measured 99.977% uptime over 6 weeks. The Black Friday offer is for new customers and ends 1 December.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Kinsta: pricing (read 15 Nov 2026)",
+    "url": "https://kinsta.com/pricing/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Kinsta: APM tool",
+    "url": "https://kinsta.com/apm-tool/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "EXPERTE: Kinsta review (updated 10 Aug 2026)",
+    "url": "https://www.experte.com/wordpress-hosting/kinsta"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is Kinsta worth it?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It can be for a business site that needs speed and support. EXPERTE measured 99.977% uptime over 6 weeks. The cost is the main con."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does Kinsta cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The Launch plan lists at $35 a month. Larger plans run to $299 a month, agency plans to $675, and enterprise from $500."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Kinsta have a Black Friday deal?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes: 50% off for 3 months on monthly plans, or 3 months free on annual billing. It is for new customers and ends on 1 December 2026."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Kinsta have phone support?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "EXPERTE reports AI and live chat support, with no phone line."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Kinsta have a money-back guarantee?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Kinsta lists a 30-day money-back guarantee on its pricing page."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Kinsta have AI features?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found no built-in AI assistant on the pricing page. Kinsta has an API and an APM tool, and it publishes tutorials on building an MCP server."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Kinsta Review 2026: Pricing, Speed Test Results and Black Friday Offer",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Time to first byte",
+    "description": "How long a server takes to start sending a page.",
+    "url": "https://reinforcelab.online/preview/#term-time-to-first-byte"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Managed WordPress hosting",
+    "description": "Hosting set up and looked after for WordPress only.",
+    "url": "https://reinforcelab.online/preview/#term-managed-wordpress-hosting"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "APM",
+    "description": "Application performance monitoring, a tool that shows what slows a site down.",
+    "url": "https://reinforcelab.online/preview/#term-apm"
+   }
+  ]
+ }
+]

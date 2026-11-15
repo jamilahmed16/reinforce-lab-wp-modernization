@@ -1,0 +1,133 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-30T10:00:00+00:00",
+  "dateModified": "2026-11-15T00:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "hosting.com is A2 Hosting under a new name. It has the lowest sale prices here and a long AI list, but the renewal prices are high.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "hosting.com: Black Friday hosting deals (read 15 Nov 2026)",
+    "url": "https://hosting.com/black-friday/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "hosting.com: home page (read 15 Nov 2026)",
+    "url": "https://hosting.com/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingAdvice: hosting.com review (updated 12 Nov 2026)",
+    "url": "https://www.hostingadvice.com/hosting-review/hosting-com/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is hosting.com the same as A2 Hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. A2 Hosting announced on its own blog in April 2025 that it is now hosting.com."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is hosting.com good?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "HostingAdvice reported fast speeds and quick live chat replies. Renewal prices are among the highest it saw, so check them before you buy."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does hosting.com cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Starter is $1.49 a month, Pro $3.49 and Max $5.99 on 12-month plans. They renew at $13.99, $19.99 and $27.99 a month."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does hosting.com have AI features?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It lists an AI assistant called Orbi, an AI website builder for WordPress and an MCP server. We did not test them."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does hosting.com have a money-back guarantee?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It lists a 30-day money-back guarantee on its Black Friday page."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "When does the hosting.com Black Friday offer end?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The page we read says 14 December 2026. Check the page before you buy."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: hosting.com Review 2026: A2 Hosting&#8217;s New Name, Prices and AI Tools",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Orbi",
+    "description": "hosting.com's AI assistant, as listed by the host.",
+    "url": "https://reinforcelab.online/preview/#term-orbi"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "MCP server",
+    "description": "A way for AI tools to use a service directly.",
+    "url": "https://reinforcelab.online/preview/#term-mcp-server"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "SLA",
+    "description": "A written uptime promise, not a measurement.",
+    "url": "https://reinforcelab.online/preview/#term-sla"
+   }
+  ]
+ }
+]

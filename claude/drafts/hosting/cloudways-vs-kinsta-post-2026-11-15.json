@@ -1,0 +1,44 @@
+{
+ "title": "Cloudways vs Kinsta: Price, Speed Tests, AI and Black Friday Offers",
+ "excerpt": "Cloudways vs Kinsta on entry price, speed tests, AI features, support and Black Friday offers, from each host's own pages and named tests.",
+ "body_file": "claude/drafts/hosting/cloudways-vs-kinsta-body-2026-11-15.html",
+ "date": "2026-10-04 10:00:00",
+ "meta": {
+  "_yoast_wpseo_title": "Cloudways vs Kinsta: Price, Speed and Offers (2026)",
+  "_yoast_wpseo_metadesc": "Cloudways vs Kinsta compared on entry price, speed tests, AI features, support and Black Friday offers, using each host's own pages and named tests from 2026.",
+  "_yoast_wpseo_focuskw": "cloudways vs kinsta",
+  "rl_type": "comparison",
+  "rl_updated": "2026-11-15",
+  "rl_answer": "Cloudways costs less to start and lists more AI tools. Kinsta costs more and lists a money-back guarantee and human support.",
+  "rl_faqs": "Is Cloudways better than Kinsta? | Neither wins every round. Cloudways costs less to start and lists more AI tools. Kinsta lists human support and a 30-day money-back guarantee.\nWhich is cheaper, Cloudways or Kinsta? | Cloudways' entry plan lists at $14 a month and Kinsta's at $35 a month. The plans are not the same size.\nWhich has the better Black Friday deal? | Cloudways offers 80% off for 2 months with no end date shown. Kinsta offers 50% off for 3 months, or 3 months free on annual billing, ending 1 December 2026.\nIs Kinsta faster than Cloudways? | The tests used different servers and methods. EXPERTE measured 99.977% uptime for Kinsta, and DevOpsCube measured a GTmetrix grade of A for Cloudways. They are not directly comparable.\nDo both host WordPress? | Yes. Kinsta hosts WordPress only. Cloudways hosts WordPress and other apps.",
+  "rl_sources": "Cloudways: pricing (read 15 Nov 2026) | https://www.cloudways.com/en/pricing.php\nKinsta: pricing (read 15 Nov 2026) | https://kinsta.com/pricing/\nDevOpsCube: Cloudways review (updated 5 Jan 2026) | https://devopscube.com/cloudways-review/\nEXPERTE: Kinsta review (updated 10 Aug 2026) | https://www.experte.com/wordpress-hosting/kinsta",
+  "rl_takeaways": "Cloudways lists at $14 a month and Kinsta at $35.\nCloudways lists a 5-day free trial. Kinsta lists a 30-day money-back guarantee.\nKinsta's Black Friday offer ends 1 December. Cloudways shows no end date.\nThe two tests used different methods and are not a race.",
+  "rl_c_a_name": "Cloudways",
+  "rl_c_a_desc": "Managed cloud hosting with a choice of providers",
+  "rl_c_a_choose": "you want a cloud server, a low start and AI tools.",
+  "rl_c_b_name": "Kinsta",
+  "rl_c_b_desc": "Managed WordPress-only hosting",
+  "rl_c_b_choose": "you want WordPress-only hosting with strong support and can pay for it.",
+  "rl_c_rounds": "Entry price | A | $14 a month (Micro, DigitalOcean) | $35 a month (Launch)\nFree trial | A | 5 days on Flexible plans, no card | No trial listed on the pricing page\nMoney-back guarantee | B | None listed on the pricing page we read | 30 days\nSupport | Tie | 24/7 support listed | 24/7 human support in 8 languages listed\nAI features listed | A | Copilot and AI Agents plans | No built-in AI assistant listed\nIndependent testing | Tie | GTmetrix grade A (DevOpsCube) | 99.977% uptime over 6 weeks (EXPERTE)",
+  "rl_c_rows": "Entry plan | Flexible Micro | Launch\nList price | $14 a month | $35 a month\nVisits and storage | Set by server size | 75,000 visits, 15 GB\nBlack Friday | 80% off for 2 months | 50% off for 3 months, or 3 months free on annual\nOffer end | Not shown on the page | 1 Dec 2026\nFree trial | 5 days | None listed\nMoney-back | Not listed | 30 days",
+  "rl_c_winners": "You want the lowest start | A | $14 a month at list price.\nYou want a guarantee | B | A 30-day money-back guarantee is listed.\nYou want AI tools with your hosting | A | Copilot and AI Agents plans are listed.\nYou run a business site and want support | B | 24/7 human support in 8 languages is listed.",
+  "rl_c_both": "Some people use Cloudways for small projects and Kinsta for a key client site. Both let you try the service on a new site first.",
+  "rl_c_verdict": "Cloudways costs less to start and lists more AI tools. Kinsta costs more and lists a money-back guarantee and human support. Neither host was tested by us.",
+  "rl_c_cta_service": "services/website-maintenance-services",
+  "rl_c_cta_head": "Moving a live site to a new host?",
+  "rl_c_cta_sub": "Reinforce Lab can copy, test and switch your WordPress site without lost rankings.",
+  "rl_c_cta_button": "See website maintenance"
+ },
+ "categories": [
+  "Web Hosting"
+ ],
+ "slug": "cloudways-vs-kinsta",
+ "author": 3,
+ "blockers": [
+  "Cloudways money-back guarantee not on the page read; confirm",
+  "Kinsta free trial: confirm none exists",
+  "Affiliate links not placed",
+  "Disclosure wording is a draft",
+  "Re-read prices and offers on publish day"
+ ]
+}

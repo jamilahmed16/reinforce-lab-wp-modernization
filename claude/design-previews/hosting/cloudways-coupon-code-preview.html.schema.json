@@ -1,0 +1,109 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-28T10:00:00+00:00",
+  "dateModified": "2026-11-15T00:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "Cloudways shows 80% off for 2 months with code BFCM802 on its pricing page. The discount lasts two months, and the page shows no end date.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Cloudways: pricing and Black Friday offer (read 15 Nov 2026)",
+    "url": "https://www.cloudways.com/en/pricing.php"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is the Cloudways coupon code?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Cloudways' pricing page shows 80% off for 2 months with the code BFCM802. We read it on 15 November 2026."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How long does the Cloudways offer last?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The discount covers the first 2 months of a plan. The page we read shows no end date for the offer, so check it before you buy."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much is Cloudways with the 80% off?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "A Micro plan on DigitalOcean is $2.80 a month for 2 months, then $14. Small is $5.60, Medium $10.80 and Large $19.80 for the first 2 months."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Cloudways have a free trial?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes, 5 days on Flexible plans with no card and 3 days on Autonomous plans."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does the code work for existing customers?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We could not confirm that. The offer is shown for plans on the pricing page. Ask Cloudways support if you already have an account."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Cloudways Coupon Code: 80% Off for 2 Months (Checked Nov 2026)",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Promo code",
+    "description": "A code that lowers the price when you pay.",
+    "url": "https://reinforcelab.online/preview/#term-promo-code"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Flexible plan",
+    "description": "A Cloudways plan on the cloud provider you choose.",
+    "url": "https://reinforcelab.online/preview/#term-flexible-plan"
+   }
+  ]
+ }
+]

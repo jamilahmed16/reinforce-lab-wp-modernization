@@ -1,0 +1,144 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-10-03T10:00:00+00:00",
+  "dateModified": "2026-11-15T00:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "ScalaHosting is a solid managed cloud host. HostingAdvice scored its WordPress cloud plan an A. Renewal prices rise sharply, and the Black Friday deal is on cloud plans only.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "ScalaHosting: Black Friday web hosting 2026 (read 15 Nov 2026)",
+    "url": "https://www.scalahosting.com/blog/black-friday-web-hosting-2026/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "ScalaHosting: home page and plans (read 15 Nov 2026)",
+    "url": "https://www.scalahosting.com/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "TechRadar: ScalaHosting review (updated 16 Oct 2026)",
+    "url": "https://www.techradar.com/reviews/scalahosting"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingAdvice: ScalaHosting review (modified 12 Oct 2026)",
+    "url": "https://www.hostingadvice.com/hosting-review/scalahosting/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is ScalaHosting good?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It is a solid managed cloud host. HostingAdvice scored its WordPress cloud plan an A on GTmetrix. Renewal prices rise sharply, and it has limited AI features."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is ScalaHosting good for WordPress?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "HostingAdvice tested a cloud WordPress plan and reported an A on GTmetrix with a largest contentful paint of 983 ms."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does ScalaHosting cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Shared plans start at $2.95 a month on a 1-year term, according to TechRadar. Entry Cloud is $11.21 a month on a 1-year term during the Black Friday offer, against a $39.95 standard price."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does ScalaHosting have a Black Friday deal?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes, on cloud plans only, from 19 October to 1 December 2026. There is no shared hosting deal this year."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is SPanel?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "SPanel is ScalaHosting's own control panel for managing sites, email and backups."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does ScalaHosting have AI features?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It lists SShield, which it describes as AI-powered security. We did not find an AI builder or assistant on the pages we read."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: ScalaHosting Review 2026: Plans, Speed Tests and Black Friday Price",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "SPanel",
+    "description": "ScalaHosting's own control panel.",
+    "url": "https://reinforcelab.online/preview/#term-spanel"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "SShield",
+    "description": "ScalaHosting's security tool, which it describes as AI-powered.",
+    "url": "https://reinforcelab.online/preview/#term-sshield"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Managed cloud",
+    "description": "A cloud server that the host sets up and looks after.",
+    "url": "https://reinforcelab.online/preview/#term-managed-cloud"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Largest contentful paint",
+    "description": "How long the biggest item on a page takes to appear.",
+    "url": "https://reinforcelab.online/preview/#term-largest-contentful-paint"
+   }
+  ]
+ }
+]

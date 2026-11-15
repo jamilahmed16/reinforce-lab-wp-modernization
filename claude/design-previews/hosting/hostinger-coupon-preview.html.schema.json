@@ -1,0 +1,114 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-27T10:00:00+00:00",
+  "dateModified": "2026-11-15T00:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "The Hostinger Black Friday offer runs to 14 December 2026 and shows no code on the page we read. Premium is $1.99 a month on a 48-month term.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Hostinger: Black Friday web hosting deals (read 15 Nov 2026)",
+    "url": "https://www.hostinger.com/black-friday-web-hosting-deals"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Hostinger: web hosting plans (read 15 Nov 2026)",
+    "url": "https://www.hostinger.com/web-hosting"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is there a Hostinger coupon code?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The Black Friday page we read lists the offer as automatic and shows no code. Check Hostinger's page on the day you buy."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "When does the Hostinger Black Friday offer end?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The page we read says 14 December 2026. It started on 19 October."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much is Hostinger with the Black Friday offer?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Premium is $1.99 a month on a 48-month term, with $95.52 due today. Unlimited is $2.79 and Cloud Startup is $7.99."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What does Hostinger cost after the offer?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Premium renews at $10.99 a month, Unlimited at $16.99 and Cloud Startup at $25.99."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does a Hostinger coupon work with the sale price?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We could not confirm that a code stacks with the sale price. Compare the price at checkout."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Hostinger Coupon: Black Friday 2026 Offer, Prices and Renewal Costs",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Promo code",
+    "description": "A code that lowers the price when you pay.",
+    "url": "https://reinforcelab.online/preview/#term-promo-code"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Renewal price",
+    "description": "What you pay after the first term ends.",
+    "url": "https://reinforcelab.online/preview/#term-renewal-price"
+   }
+  ]
+ }
+]

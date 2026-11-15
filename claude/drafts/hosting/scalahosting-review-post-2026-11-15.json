@@ -1,0 +1,34 @@
+{
+ "title": "ScalaHosting Review 2026: Plans, Speed Tests and Black Friday Price",
+ "excerpt": "A ScalaHosting review from the host's own pages and two named independent tests, with plan prices, the Black Friday cloud deal and AI features.",
+ "body_file": "claude/drafts/hosting/scalahosting-review-body-2026-11-15.html",
+ "date": "2026-10-03 10:00:00",
+ "meta": {
+  "_yoast_wpseo_title": "ScalaHosting Review 2026: Prices, Speed, Black Friday",
+  "_yoast_wpseo_metadesc": "ScalaHosting review for 2026: plan prices, Black Friday cloud deal, speed tests from HostingAdvice, AI features, pros and cons, from the host and named testers.",
+  "_yoast_wpseo_focuskw": "scalahosting review",
+  "rl_type": "guide",
+  "rl_updated": "2026-11-15",
+  "rl_answer": "ScalaHosting is a solid managed cloud host. HostingAdvice scored its WordPress cloud plan an A. Renewal prices rise sharply, and the Black Friday deal is on cloud plans only.",
+  "rl_faqs": "Is ScalaHosting good? | It is a solid managed cloud host. HostingAdvice scored its WordPress cloud plan an A on GTmetrix. Renewal prices rise sharply, and it has limited AI features.\nIs ScalaHosting good for WordPress? | HostingAdvice tested a cloud WordPress plan and reported an A on GTmetrix with a largest contentful paint of 983 ms.\nHow much does ScalaHosting cost? | Shared plans start at $2.95 a month on a 1-year term, according to TechRadar. Entry Cloud is $11.21 a month on a 1-year term during the Black Friday offer, against a $39.95 standard price.\nDoes ScalaHosting have a Black Friday deal? | Yes, on cloud plans only, from 19 October to 1 December 2026. There is no shared hosting deal this year.\nWhat is SPanel? | SPanel is ScalaHosting's own control panel for managing sites, email and backups.\nDoes ScalaHosting have AI features? | It lists SShield, which it describes as AI-powered security. We did not find an AI builder or assistant on the pages we read.",
+  "rl_sources": "ScalaHosting: Black Friday web hosting 2026 (read 15 Nov 2026) | https://www.scalahosting.com/blog/black-friday-web-hosting-2026/\nScalaHosting: home page and plans (read 15 Nov 2026) | https://www.scalahosting.com/\nTechRadar: ScalaHosting review (updated 16 Oct 2026) | https://www.techradar.com/reviews/scalahosting\nHostingAdvice: ScalaHosting review (modified 12 Oct 2026) | https://www.hostingadvice.com/hosting-review/scalahosting/",
+  "rl_takeaways": "Entry Cloud is $11.21 a month on a 1-year term in the Black Friday offer, against a $39.95 standard price.\nHostingAdvice scored the WordPress cloud plan an A, with a largest contentful paint of 983 ms.\nThere is no shared hosting deal this year, and the offer ends 1 December 2026.\nRenewal prices rise sharply.",
+  "rl_g_glossary": "SPanel | ScalaHosting's own control panel.\nSShield | ScalaHosting's security tool, which it describes as AI-powered.\nManaged cloud | A cloud server that the host sets up and looks after.\nLargest contentful paint | How long the biggest item on a page takes to appear.",
+  "rl_g_cta_service": "services/website-maintenance-services",
+  "rl_g_cta_head": "Moving a live site to a new host?",
+  "rl_g_cta_sub": "Reinforce Lab can copy, test and switch your WordPress site without lost rankings.",
+  "rl_g_cta_button": "See website maintenance"
+ },
+ "categories": [
+  "Web Hosting"
+ ],
+ "slug": "scalahosting-review",
+ "author": 3,
+ "blockers": [
+  "Mini shared renewal price not found",
+  "Managed Cloud standard prices not read",
+  "Affiliate links not placed",
+  "Disclosure wording is a draft",
+  "Re-read prices and offers on publish day"
+ ]
+}

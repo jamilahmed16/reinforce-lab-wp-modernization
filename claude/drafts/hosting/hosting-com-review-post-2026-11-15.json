@@ -1,0 +1,36 @@
+{
+ "title": "hosting.com Review 2026: A2 Hosting's New Name, Prices and AI Tools",
+ "excerpt": "A hosting.com review from the host's own pages and one named independent test, covering the A2 rebrand, prices, AI tools and the Black Friday offer.",
+ "body_file": "claude/drafts/hosting/hosting-com-review-body-2026-11-15.html",
+ "date": "2026-09-30 10:00:00",
+ "meta": {
+  "_yoast_wpseo_title": "hosting.com Review 2026: Prices, Speed, AI, A2 Rebrand",
+  "_yoast_wpseo_metadesc": "hosting.com review for 2026: A2 Hosting's new name, plan and renewal prices, a HostingAdvice speed test, AI tools, the Black Friday offer, pros and cons.",
+  "_yoast_wpseo_focuskw": "hosting.com review",
+  "rl_type": "guide",
+  "rl_updated": "2026-11-15",
+  "rl_answer": "hosting.com is A2 Hosting under a new name. It has the lowest sale prices here and a long AI list, but the renewal prices are high.",
+  "rl_faqs": "Is hosting.com the same as A2 Hosting? | Yes. A2 Hosting announced on its own blog in April 2025 that it is now hosting.com.\nIs hosting.com good? | HostingAdvice reported fast speeds and quick live chat replies. Renewal prices are among the highest it saw, so check them before you buy.\nHow much does hosting.com cost? | Starter is $1.49 a month, Pro $3.49 and Max $5.99 on 12-month plans. They renew at $13.99, $19.99 and $27.99 a month.\nDoes hosting.com have AI features? | It lists an AI assistant called Orbi, an AI website builder for WordPress and an MCP server. We did not test them.\nDoes hosting.com have a money-back guarantee? | It lists a 30-day money-back guarantee on its Black Friday page.\nWhen does the hosting.com Black Friday offer end? | The page we read says 14 December 2026. Check the page before you buy.",
+  "rl_sources": "hosting.com: Black Friday hosting deals (read 15 Nov 2026) | https://hosting.com/black-friday/\nhosting.com: home page (read 15 Nov 2026) | https://hosting.com/\nHostingAdvice: hosting.com review (updated 12 Nov 2026) | https://www.hostingadvice.com/hosting-review/hosting-com/",
+  "rl_takeaways": "hosting.com is the new name of A2 Hosting.\nStarter is $1.49 a month on a 12-month plan and renews at $13.99.\nHostingAdvice measured a 579 ms largest contentful paint on the cheap plan.\nAI tools are listed, but we did not test them.",
+  "rl_g_glossary": "Orbi | hosting.com's AI assistant, as listed by the host.\nMCP server | A way for AI tools to use a service directly.\nSLA | A written uptime promise, not a measurement.",
+  "rl_g_cta_service": "services/website-maintenance-services",
+  "rl_g_cta_head": "Moving a live site to a new host?",
+  "rl_g_cta_sub": "Reinforce Lab can copy, test and switch your WordPress site without lost rankings.",
+  "rl_g_cta_button": "See website maintenance"
+ },
+ "categories": [
+  "Web Hosting"
+ ],
+ "slug": "hosting-com-review",
+ "author": 3,
+ "blockers": [
+  "Starter storage and site limits missing",
+  "Exact URL for the A2 rebrand blog post",
+  "Read a recent Reddit thread before saying anything about complaints",
+  "Page date for the offer: host says 14 Dec, Jamil table said 30 Nov",
+  "Affiliate links not placed",
+  "Disclosure wording is a draft",
+  "Re-read prices and offers on publish day"
+ ]
+}

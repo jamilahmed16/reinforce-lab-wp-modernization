@@ -1,0 +1,35 @@
+{
+ "title": "Cloudways Review 2026: Plans, Pricing, AI Features and Black Friday Offer",
+ "excerpt": "A Cloudways review from the host's own pages and one named independent test, with plan prices, the Black Friday offer and AI features.",
+ "body_file": "claude/drafts/hosting/cloudways-review-body-2026-11-15.html",
+ "date": "2026-10-02 10:00:00",
+ "meta": {
+  "_yoast_wpseo_title": "Cloudways Review 2026: Pricing, AI Features, Offer",
+  "_yoast_wpseo_metadesc": "Cloudways review for 2026: plan prices, the Black Friday 80% offer, a GTmetrix test from DevOpsCube, AI Copilot and AI Agents plans, pros and cons.",
+  "_yoast_wpseo_focuskw": "cloudways review",
+  "rl_type": "guide",
+  "rl_updated": "2026-11-15",
+  "rl_answer": "Cloudways is a good managed cloud host. DevOpsCube measured a GTmetrix grade of A. The Black Friday discount lasts only 2 months.",
+  "rl_faqs": "Is Cloudways good? | It is a good managed cloud host for people who want a cloud server without server work. DevOpsCube measured a GTmetrix grade of A on a WordPress test.\nIs Cloudways good for WordPress? | DevOpsCube tested WordPress on a 2 GB DigitalOcean server and reported a GTmetrix grade of A with Core Web Vitals passed.\nHow much does Cloudways cost? | Flexible plans on DigitalOcean start at $14 a month at list price. Autonomous plans start at $99 a month. AI Agents plans start at $9.99 a month.\nDoes Cloudways have a free trial? | Yes. Cloudways lists a 5-day free trial on Flexible plans with no card needed, and a 3-day trial on Autonomous plans.\nWhat is the Cloudways Black Friday offer? | 80% off for 2 months on all plans, with code BFCM802 shown on the pricing page. The page we read shows no end date.\nDoes Cloudways have AI features? | It lists Cloudways Copilot, AI Agents plans and an MCP integration. We did not test them.",
+  "rl_sources": "Cloudways: pricing (read 15 Nov 2026) | https://www.cloudways.com/en/pricing.php\nCloudways support: how to use the Cloudways MCP server | https://support.cloudways.com/en/articles/14654372-how-to-use-cloudways-mcp-server-for-ai-based-server-management\nDevOpsCube: Cloudways review (updated 5 Jan 2026) | https://devopscube.com/cloudways-review/",
+  "rl_takeaways": "Flexible plans start at $14 a month at list price, with a 5-day free trial.\nDevOpsCube measured a GTmetrix grade of A, and edge caching made pages 66% faster.\nThe Black Friday offer is 80% off for 2 months, and the page shows no end date.\nCloudways lists Copilot and AI Agents plans. We did not test them.",
+  "rl_g_glossary": "Managed cloud hosting | A cloud server that the host sets up and looks after.\nMCP | A standard way for AI tools to connect to other software.\nEdge caching | Storing copies of pages near visitors so they load faster.\nGTmetrix | A tool that grades page speed.",
+  "rl_g_cta_service": "services/website-maintenance-services",
+  "rl_g_cta_head": "Moving a live site to a new host?",
+  "rl_g_cta_sub": "Reinforce Lab can copy, test and switch your WordPress site without lost rankings.",
+  "rl_g_cta_button": "See website maintenance"
+ },
+ "categories": [
+  "Web Hosting"
+ ],
+ "slug": "cloudways-review",
+ "author": 3,
+ "blockers": [
+  "Cloudways offer end date unconfirmed",
+  "Check that the support article URL still works",
+  "Find a second independent test (HostingAdvice or similar)",
+  "Affiliate links not placed",
+  "Disclosure wording is a draft",
+  "Re-read prices and offers on publish day"
+ ]
+}
