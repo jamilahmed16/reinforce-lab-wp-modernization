@@ -1,0 +1,46 @@
+{
+ "title": "Namecheap vs GoDaddy: Price, Renewals and Test Results (2026)",
+ "excerpt": "Namecheap vs GoDaddy hosting on promo and renewal prices, Cybernews test numbers, AI features and guarantees.",
+ "body_file": "claude/drafts/hosting/namecheap-vs-godaddy-body-2026-11-15.html",
+ "date": "2026-10-08 10:00:00",
+ "meta": {
+  "_yoast_wpseo_title": "Namecheap vs GoDaddy: Hosting Price and Tests (2026)",
+  "_yoast_wpseo_metadesc": "Namecheap vs GoDaddy hosting compared on promo and renewal prices, uptime and speed numbers from Cybernews tests, AI features and guarantees, as of Nov 2026.",
+  "_yoast_wpseo_focuskw": "namecheap vs godaddy",
+  "rl_type": "comparison",
+  "rl_updated": "2026-11-15",
+  "rl_answer": "Namecheap is cheaper and GoDaddy has stronger test numbers in Cybernews tests. Check the term and renewal price for each plan.",
+  "rl_faqs": "Is Namecheap better than GoDaddy? | Namecheap is cheaper. GoDaddy has stronger test numbers in Cybernews tests. Neither wins every round.\nWhich is cheaper, Namecheap or GoDaddy? | Namecheap Stellar is $2.28 a month and renews at $5.88. GoDaddy Economy is $5.99 on a 3-year term and renews at $11.99.\nWhich is faster? | In Cybernews tests, GoDaddy had a 822 ms largest contentful paint and 100% uptime. Namecheap had 1,135 ms and 99.29%. The tests were on different dates.\nDo both offer a money-back guarantee? | Both list 30 days. Namecheap excludes customers on its free trial.\nDoes either host have a Black Friday sale? | We could not confirm one for either host on the pages we read.",
+  "rl_sources": "Namecheap: shared hosting (read 15 Nov 2026) | https://www.namecheap.com/hosting/shared/\nGoDaddy: web hosting (read 15 Nov 2026) | https://www.godaddy.com/hosting/web-hosting\nCybernews: Namecheap review (updated 15 May 2026) | https://cybernews.com/best-web-hosting/namecheap-review/\nCybernews: GoDaddy review | https://cybernews.com/best-web-hosting/godaddy-review/",
+  "rl_takeaways": "Namecheap Stellar is $2.28 a month and GoDaddy Economy is $5.99.\nCybernews measured 99.29% uptime for Namecheap and 100% for GoDaddy.\nLargest contentful paint was 1,135 ms for Namecheap and 822 ms for GoDaddy.\nThe tests were on different dates.",
+  "rl_c_a_name": "Namecheap",
+  "rl_c_a_desc": "Low price, 3 sites on the entry plan",
+  "rl_c_a_choose": "price matters most and you want 3 sites.",
+  "rl_c_b_name": "GoDaddy",
+  "rl_c_b_desc": "Higher price, stronger test numbers",
+  "rl_c_b_choose": "you want the stronger test numbers and can commit for 3 years.",
+  "rl_c_rounds": "Promo price | A | $2.28 a month (Stellar) | $5.99 a month (Economy, 3-year term)\nRenewal price | A | $5.88 a month, or $55.88 a year | $11.99 a month\nSites and storage | Tie | 3 sites, 20 GB SSD | 1 site, 25 GB NVMe\nUptime in Cybernews tests | B | 99.29% | 100%\nLargest contentful paint | B | 1,135 ms | 822 ms\nAI features listed | A | AI for WordPress and AI builder | None listed in the hosting section we read\nMoney-back guarantee | Tie | 30 days | 30 days",
+  "rl_c_rows": "Entry plan | Stellar | Economy\nPromo price | $2.28 a month | $5.99 a month\nRenewal | $5.88 a month | $11.99 a month\nSites | 3 | 1\nStorage | 20 GB SSD | 25 GB NVMe\nMoney-back | 30 days | 30 days\nCybernews uptime | 99.29% | 100%",
+  "rl_c_winners": "You want the lowest price | A | Lower promo and renewal prices.\nYou want the strongest test numbers | B | 100% uptime and 822 ms LCP in Cybernews tests.\nYou want 3 sites on the entry plan | A | GoDaddy Economy has 1 site.\nYou want AI tools listed | A | Namecheap lists them on every plan.",
+  "rl_c_both": "Many people register a domain at one and host at the other. Both let you transfer a domain.",
+  "rl_c_verdict": "Namecheap is cheaper. GoDaddy has stronger test numbers. Neither was tested by us.",
+  "rl_c_cta_service": "services/website-maintenance-services",
+  "rl_c_cta_head": "Moving a live site to a new host?",
+  "rl_c_cta_sub": "Reinforce Lab can copy, test and switch your WordPress site without lost rankings.",
+  "rl_c_cta_button": "See website maintenance"
+ },
+ "categories": [
+  "Web Hosting"
+ ],
+ "slug": "namecheap-vs-godaddy",
+ "author": 3,
+ "blockers": [
+  "Namecheap promo term not confirmed",
+  "Free domain on Namecheap not on the page read",
+  "Read the GoDaddy Cybernews page fully and its date",
+  "GoDaddy \"AI features\" (it has Airo elsewhere): check before saying none",
+  "Affiliate links not placed",
+  "Disclosure wording is a draft",
+  "Re-read prices and offers on publish day"
+ ]
+}

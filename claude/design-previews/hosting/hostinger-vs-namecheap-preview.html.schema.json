@@ -1,0 +1,122 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-10-05T10:00:00+00:00",
+  "dateModified": "2026-11-15T00:00:00+00:00",
+  "genre": "Comparison",
+  "abstract": "The entry plans are the same size. Hostinger has the lower sale price and faster test numbers. Namecheap has the lower renewal price.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Hostinger: web hosting (read 15 Nov 2026)",
+    "url": "https://www.hostinger.com/web-hosting"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Namecheap: shared hosting (read 15 Nov 2026)",
+    "url": "https://www.namecheap.com/hosting/shared/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "All About Cookies: Hostinger review (updated 9 Nov 2026)",
+    "url": "https://allaboutcookies.org/hostinger-web-hosting-review"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Cybernews: Namecheap review (updated 15 May 2026)",
+    "url": "https://cybernews.com/best-web-hosting/namecheap-review/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is Hostinger better than Namecheap?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Hostinger has the lower sale price and faster test numbers. Namecheap has the lower renewal price."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Which is cheaper, Hostinger or Namecheap?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Hostinger Premium is $1.99 a month on a 48-month term and renews at $10.99. Namecheap Stellar is $2.28 a month and renews at $5.88."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Are the entry plans the same size?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Both list 3 sites and 20 GB of SSD storage."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Which has better test results?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "All About Cookies measured 100% uptime for Hostinger. Cybernews measured 99.29% for Namecheap. The tests used different methods and dates."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Namecheap have a Black Friday sale?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found none on its pages. Its Black Friday page referred to 2025."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "ItemList",
+  "@id": "https://reinforcelab.online/preview/#options",
+  "name": "Hostinger vs Namecheap: Price, Renewal Costs and Tests (2026)",
+  "numberOfItems": 2,
+  "itemListElement": [
+   {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Hostinger"
+   },
+   {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Namecheap"
+   }
+  ]
+ }
+]

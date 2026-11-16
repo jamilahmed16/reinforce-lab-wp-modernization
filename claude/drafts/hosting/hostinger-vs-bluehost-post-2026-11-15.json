@@ -1,0 +1,45 @@
+{
+ "title": "Hostinger vs Bluehost: Price, Renewals, AI and Black Friday (2026)",
+ "excerpt": "Hostinger vs Bluehost on sale and renewal prices, sites, AI tools, Black Friday offers and independent tests.",
+ "body_file": "claude/drafts/hosting/hostinger-vs-bluehost-body-2026-11-15.html",
+ "date": "2026-10-07 10:00:00",
+ "meta": {
+  "_yoast_wpseo_title": "Hostinger vs Bluehost: Price, Renewals and Offers (2026)",
+  "_yoast_wpseo_metadesc": "Hostinger vs Bluehost compared on sale and renewal prices, sites, AI tools, Black Friday offers and independent tests from All About Cookies and Gizmodo.",
+  "_yoast_wpseo_focuskw": "hostinger vs bluehost",
+  "rl_type": "comparison",
+  "rl_updated": "2026-11-15",
+  "rl_answer": "Hostinger is cheaper to start and lists more AI tools. Bluehost is cheaper to keep and has more sites on the entry plan.",
+  "rl_faqs": "Is Hostinger better than Bluehost? | Hostinger is cheaper to start and lists more AI tools. Bluehost is cheaper to keep and has more sites on the entry plan.\nWhich is cheaper, Hostinger or Bluehost? | Hostinger Premium is $1.99 a month and renews at $10.99. Bluehost Starter is $3.99 and renews at $9.99.\nDoes Bluehost have a Black Friday sale? | Yes: 15% off one product, 20% off two or 25% off three or more, first 12-month term only, to 30 November 2026.\nWhich has more sites on the entry plan? | Bluehost Starter lists 10 sites. Hostinger Premium lists 3.\nDo both offer a money-back guarantee? | Both list a 30-day money-back guarantee.",
+  "rl_sources": "Hostinger: web hosting (read 15 Nov 2026) | https://www.hostinger.com/web-hosting\nHostinger: Black Friday web hosting deals (read 15 Nov 2026) | https://www.hostinger.com/black-friday-web-hosting-deals\nBluehost: web hosting (read 14 Nov 2026) | https://www.bluehost.com/web-hosting\nAll About Cookies: Hostinger review (updated 9 Nov 2026) | https://allaboutcookies.org/hostinger-web-hosting-review\nGizmodo: Bluehost review | https://gizmodo.com/best-web-hosting/bluehost\n01net: Bluehost review | https://www.01net.com/en/web-hosting/bluehost/",
+  "rl_takeaways": "Hostinger Premium is $1.99 a month and Bluehost Starter is $3.99.\nBluehost renews lower: $9.99 against $10.99.\nBluehost's offer ends 30 November. Hostinger's ends 14 December.\nThe independent tests used different methods.",
+  "rl_c_a_name": "Hostinger",
+  "rl_c_a_desc": "Lowest sale price, long AI list",
+  "rl_c_a_choose": "you want the lowest price and can commit for 4 years.",
+  "rl_c_b_name": "Bluehost",
+  "rl_c_b_desc": "More sites, lower renewal",
+  "rl_c_b_choose": "you want 10 sites on the entry plan and a lower renewal price.",
+  "rl_c_rounds": "Sale price | A | $1.99 a month (48 months) | $3.99 a month (36 months)\nRenewal price | B | $10.99 a month | $9.99 a month\nSites on the entry plan | B | 3 | 10\nStorage on the entry plan | A | 20 GB SSD | 10 GB NVMe\nAI features listed | A | Builder, credits, Agent, MCP server | AI site creation tools, malware detection on higher plans\nOffer window | A | To 14 Dec 2026 | To 30 Nov 2026\nIndependent testing | Tie | 100% uptime, 138 ms average (All About Cookies) | 99.9% uptime held, 1.9 s load (Gizmodo, 01net)\nSupport | B | 24/7 support listed | 24/7 chat, phone on Business",
+  "rl_c_rows": "Entry plan | Premium | Starter\nSale price | $1.99 a month | $3.99 a month\nTerm | 48 months | 36 months\nRenewal | $10.99 a month | $9.99 a month\nSites | 3 | 10\nStorage | 20 GB SSD | 10 GB NVMe\nMoney-back | 30 days | 30 days\nBlack Friday | To 14 Dec | 15 to 25% off first 12 months, to 30 Nov",
+  "rl_c_winners": "You want the lowest sale price | A | $1.99 against $3.99 a month.\nYou want 10 sites on the entry plan | B | Starter has 10, Premium has 3.\nYou want the lower renewal | B | $9.99 against $10.99.\nYou want more AI tools | A | The longer list.",
+  "rl_c_both": "Some people use Hostinger for a first project and move later. Both offer a 30-day money-back guarantee.",
+  "rl_c_verdict": "Hostinger is cheaper to start and Bluehost is cheaper to keep. Neither host was tested by us.",
+  "rl_c_cta_service": "services/website-maintenance-services",
+  "rl_c_cta_head": "Moving a live site to a new host?",
+  "rl_c_cta_sub": "Reinforce Lab can copy, test and switch your WordPress site without lost rankings.",
+  "rl_c_cta_button": "See website maintenance"
+ },
+ "categories": [
+  "Web Hosting"
+ ],
+ "slug": "hostinger-vs-bluehost",
+ "author": 3,
+ "blockers": [
+  "Read the Gizmodo and 01net pages fully for dates and method",
+  "Bluehost page read from a 14 Nov cached copy; re-read",
+  "Hostinger vs Bluehost SERP is easy (KD 24) but Bluehost runs an ad on it",
+  "Affiliate links not placed",
+  "Disclosure wording is a draft",
+  "Re-read prices and offers on publish day"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "title": "Hostinger vs Namecheap: Price, Renewal Costs and Tests (2026)",
+ "excerpt": "Hostinger vs Namecheap hosting on sale and renewal prices, same-size entry plans, tests, AI tools and Black Friday offers.",
+ "body_file": "claude/drafts/hosting/hostinger-vs-namecheap-body-2026-11-15.html",
+ "date": "2026-10-05 10:00:00",
+ "meta": {
+  "_yoast_wpseo_title": "Hostinger vs Namecheap: Price, Renewals, Tests (2026)",
+  "_yoast_wpseo_metadesc": "Hostinger vs Namecheap hosting on promo and renewal prices, same-size entry plans, uptime and speed tests, AI tools and Black Friday offers.",
+  "_yoast_wpseo_focuskw": "hostinger vs namecheap",
+  "rl_type": "comparison",
+  "rl_updated": "2026-11-15",
+  "rl_answer": "The entry plans are the same size. Hostinger has the lower sale price and faster test numbers. Namecheap has the lower renewal price.",
+  "rl_faqs": "Is Hostinger better than Namecheap? | Hostinger has the lower sale price and faster test numbers. Namecheap has the lower renewal price.\nWhich is cheaper, Hostinger or Namecheap? | Hostinger Premium is $1.99 a month on a 48-month term and renews at $10.99. Namecheap Stellar is $2.28 a month and renews at $5.88.\nAre the entry plans the same size? | Yes. Both list 3 sites and 20 GB of SSD storage.\nWhich has better test results? | All About Cookies measured 100% uptime for Hostinger. Cybernews measured 99.29% for Namecheap. The tests used different methods and dates.\nDoes Namecheap have a Black Friday sale? | We found none on its pages. Its Black Friday page referred to 2025.",
+  "rl_sources": "Hostinger: web hosting (read 15 Nov 2026) | https://www.hostinger.com/web-hosting\nNamecheap: shared hosting (read 15 Nov 2026) | https://www.namecheap.com/hosting/shared/\nAll About Cookies: Hostinger review (updated 9 Nov 2026) | https://allaboutcookies.org/hostinger-web-hosting-review\nCybernews: Namecheap review (updated 15 May 2026) | https://cybernews.com/best-web-hosting/namecheap-review/",
+  "rl_takeaways": "The entry plans are the same size: 3 sites and 20 GB.\nHostinger is $1.99 a month and Namecheap is $2.28.\nNamecheap renews at $5.88 a month against $10.99 for Hostinger.\nTest results come from different publishers and dates.",
+  "rl_c_a_name": "Hostinger",
+  "rl_c_a_desc": "Lower sale price and tested faster",
+  "rl_c_a_choose": "you want the lowest price and the faster test numbers.",
+  "rl_c_b_name": "Namecheap",
+  "rl_c_b_desc": "Lower renewal and domain tools",
+  "rl_c_b_choose": "you want a lower renewal price or manage domains there.",
+  "rl_c_rounds": "Sale price | A | $1.99 a month (48 months) | $2.28 a month\nRenewal price | B | $10.99 a month | $5.88 a month, or $55.88 a year\nCommitment | B | 48 months for the sale price | Yearly or two-year billing\nSites and storage | Tie | 3 sites, 20 GB SSD | 3 sites, 20 GB SSD\nIndependent testing | A | 100% uptime, 138 ms average | 99.29% uptime, 1,135 ms LCP\nAI features listed | A | Builder, credits, Agent, MCP server | AI for WordPress and AI builder\nMoney-back guarantee | Tie | 30 days | 30 days, not with the trial",
+  "rl_c_rows": "Entry plan | Premium | Stellar\nPromo price | $1.99 a month | $2.28 a month\nRenewal | $10.99 a month | $5.88 a month\nSites | 3 | 3\nStorage | 20 GB SSD | 20 GB SSD\nUptime in tests | 100% | 99.29%\nBlack Friday | To 14 Dec | None found",
+  "rl_c_winners": "You want the lowest sale price | A | $1.99 against $2.28 a month.\nYou want the lower renewal | B | $5.88 against $10.99 a month.\nYou want the faster test numbers | A | 100% uptime and 138 ms.\nYou manage domains already | B | Namecheap is a registrar first.",
+  "rl_c_both": "Some people keep domains at Namecheap and host at Hostinger. Both allow it.",
+  "rl_c_verdict": "Hostinger is cheaper first and tested faster. Namecheap is cheaper to keep. Neither host was tested by us.",
+  "rl_c_cta_service": "services/website-maintenance-services",
+  "rl_c_cta_head": "Moving a live site to a new host?",
+  "rl_c_cta_sub": "Reinforce Lab can copy, test and switch your WordPress site without lost rankings.",
+  "rl_c_cta_button": "See website maintenance"
+ },
+ "categories": [
+  "Web Hosting"
+ ],
+ "slug": "hostinger-vs-namecheap",
+ "author": 3,
+ "blockers": [
+  "Namecheap promo term to confirm",
+  "Domain transfer cost variant (320 searches): not researched yet",
+  "Affiliate links not placed",
+  "Disclosure wording is a draft",
+  "Re-read prices and offers on publish day"
+ ]
+}
