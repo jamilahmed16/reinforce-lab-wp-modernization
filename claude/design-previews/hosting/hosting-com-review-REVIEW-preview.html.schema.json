@@ -1,0 +1,170 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-30T10:00:00+00:00",
+  "dateModified": "2026-11-16T00:00:00+00:00",
+  "genre": "Review",
+  "abstract": "hosting.com, the new name of A2 Hosting, has fast servers and very low first-year prices from $1.49 a month. Renewals are about 9.4 times higher on Starter, and CNET does not recommend it for beginners.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "hosting.com: Black Friday and plans (read 15 Nov 2026)",
+    "url": "https://hosting.com/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "hosting.com: A2 Hosting plans and ratings",
+    "url": "https://hosting.com/a2-vs-hosting-com/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingAdvice: hosting.com review (updated 12 Nov 2026)",
+    "url": "https://www.hostingadvice.com/hosting-review/hosting-com/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "CNET: hosting.com review (updated 2 Oct 2026)",
+    "url": "https://www.cnet.com/tech/services-and-software/hosting-dot-com-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Website Planet: hosting.com (formerly A2 Hosting) review",
+    "url": "https://www.websiteplanet.com/web-hosting/hosting-com/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "web.dev: Largest Contentful Paint (2.5 seconds or less is good)",
+    "url": "https://web.dev/articles/lcp"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is hosting.com good?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It has fast servers and low first-year prices. CNET recommends it only for experienced users, and renewal prices are high."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is hosting.com the same as A2 Hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. A2 Hosting said on its own blog in April 2025 that it was now hosting.com."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does hosting.com cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Starter is $1.49 a month on a 12-month plan and renews at $13.99 a month. Pro is $3.49 and Max is $5.99 on sale."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is hosting.com good for beginners?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "CNET says no and calls setup overly complicated. HostingAdvice found live chat fast, so test support early."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How fast is hosting.com?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "HostingAdvice measured a Largest Contentful Paint of 579 ms on the cheap plan and an A grade on WordPress hosting."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does hosting.com have hidden fees?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found none. The cost to plan for is the high renewal price."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does hosting.com have a money-back guarantee?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. hosting.com lists a 30-day money-back guarantee."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does hosting.com have AI features?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. It lists Orbi, an AI website builder, an MCP server and a Claude Skills Pack. We did not test them."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can hosting.com handle high-traffic websites?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Performance Plus load balancing is listed on all plans. For a busy site, test during the refund window or compare Cloudways and Kinsta."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does hosting.com offer free migration?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. The Black Friday page lists free migration and a free domain for 1 year."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is hosting.com better than Hostinger?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Its first-year price is lower. Hostinger's sale price lasts 48 months and its renewal is lower."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Who should avoid hosting.com?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Beginners, people who want a low price for years and anyone who wants a simple setup."
+    }
+   }
+  ]
+ }
+]
