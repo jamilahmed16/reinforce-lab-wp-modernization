@@ -24,6 +24,7 @@ add_action('acf/init', function () {
             $f('rl_r_version', 'Version tested', 'text'),
             $f('rl_r_period', 'Test period', 'text', ['instructions' => 'e.g. August to September 2026']),
             $f('rl_r_plan', 'Plan tested', 'text', ['instructions' => 'e.g. Pro. The pricing plan with this name is marked "Plan we tested".']),
+            $f('rl_r_tested', 'We used the product ourselves', 'true_false', ['ui' => 1, 'default_value' => 1, 'instructions' => 'Off = research-based review (the vendor\'s own pages and named independent tests). The disclosure says we did not test it, and the log becomes an evidence log.']),
             $f('rl_r_paid', 'We paid for it ourselves', 'true_false', ['ui' => 1, 'default_value' => 1, 'instructions' => 'Off = the vendor gave us access. The disclosure says so.']),
             $f('rl_r_setup', 'Test site or setup', 'text', ['instructions' => 'e.g. 12,000 URLs, WordPress']),
             $f('rl_r_affiliate', 'Contains affiliate links', 'true_false', ['ui' => 1, 'instructions' => 'Shows the disclosure and marks visit links as sponsored.']),
@@ -77,7 +78,7 @@ function rl_review_data($id) {
     $pd = function_exists('rl_pt_date') ? rl_pt_date($m('rl_r_price_date')) : '';
     return $cache[$id] = [
         'product' => $product, 'kind' => in_array($m('rl_r_kind'), ['SoftwareApplication', 'Product', 'Service'], true) ? $m('rl_r_kind') : 'SoftwareApplication',
-        'version' => $m('rl_r_version'), 'period' => $m('rl_r_period'), 'plan' => $m('rl_r_plan'), 'paid' => get_post_meta($id, 'rl_r_paid', true) !== '0', 'setup' => $m('rl_r_setup'),
+        'version' => $m('rl_r_version'), 'period' => $m('rl_r_period'), 'plan' => $m('rl_r_plan'), 'paid' => get_post_meta($id, 'rl_r_paid', true) !== '0', 'tested' => get_post_meta($id, 'rl_r_tested', true) !== '0', 'setup' => $m('rl_r_setup'),
         'aff' => (bool) get_post_meta($id, 'rl_r_affiliate', true), 'word' => rl_review_words()[$m('rl_r_word')] ?? '', 'verdict' => $m('rl_r_verdict'),
         'buy' => rl_post_lines(get_post_meta($id, 'rl_r_buy', true)), 'skip' => rl_post_lines(get_post_meta($id, 'rl_r_skip', true)),
         'crit' => $crit, 'scores' => $scores, 'score' => $score,
@@ -115,7 +116,7 @@ function rl_review_render($c) {
     $visit = function ($cls = 'go') use ($r, $rel) { return $r['url'] !== '' ? '<a class="' . $cls . '" href="' . esc_url($r['url']) . '" rel="' . esc_attr($rel) . '" target="_blank">' . esc_html($r['button']) . ' <span aria-hidden="true">&rarr;</span></a>' . ($r['aff'] && function_exists('rl_aff_label') ? rl_aff_label() : '') : ''; };
     $meter = '';
     if ($r['score'] !== null) { $full = (int) floor($r['score']); $frac = $r['score'] - $full; for ($i = 1; $i <= 10; $i++) $meter .= '<i' . ($i <= $full ? ' class="on"' : ($i === $full + 1 && $frac > 0.001 ? ' class="half"' : '')) . '></i>'; }
-    $jump = array_filter(['log' => $r['log'] ? 'Test log' : '', 'scores' => $r['crit'] ? 'Scorecard' : '', 'pricing' => $r['plans'] ? 'Pricing' : '', 'alts' => $r['alts'] ? 'Alternatives' : '']);
+    $jump = array_filter(['log' => $r['log'] ? ($r['tested'] ? 'Test log' : 'Evidence log') : '', 'scores' => $r['crit'] ? 'Scorecard' : '', 'pricing' => $r['plans'] ? 'Pricing' : '', 'alts' => $r['alts'] ? 'Alternatives' : '']);
     $card = $r['score'] !== null || $r['url'] !== '' || $r['price'] !== '';
     ?>
 <div class="rl-page rl-post rl-review">
@@ -139,7 +140,7 @@ function rl_review_render($c) {
   <?php if ($cond) { ?>
   <dl class="r-cond c<?php echo count($cond); ?>" aria-label="Test conditions"><?php foreach ($cond as $x) echo '<div><dt>' . esc_html($x[0]) . '</dt><dd>' . esc_html($x[1]) . '</dd></div>'; ?></dl>
   <?php } ?>
-  <p class="r-disc<?php echo $cond ? ' under' : ''; ?>"><b>Disclosure:</b> <?php echo $r['paid'] ? 'we paid for our own access.' : 'the vendor gave us free access for this test, and did not see the review before it was published.'; ?><?php echo $r['aff'] ? ' The "Visit" links marked "Ad" are affiliate links: if you buy through them we earn a commission, at no extra cost to you. It does not change the score. <a href="' . esc_url(home_url('/ftc-disclosure/')) . '">How we handle affiliate links</a>.' : ' We earn nothing if you buy.'; ?></p>
+  <p class="r-disc<?php echo $cond ? ' under' : ''; ?>"><b>Disclosure:</b> <?php echo !$r['tested'] ? 'we did not test this product ourselves. This review uses the vendor\'s own pages and named independent tests, listed under Sources.' : ($r['paid'] ? 'we paid for our own access.' : 'the vendor gave us free access for this test, and did not see the review before it was published.'); ?><?php echo $r['aff'] ? ' The "Visit" links marked "Ad" are affiliate links: if you buy through them we earn a commission, at no extra cost to you. It does not change the score. <a href="' . esc_url(home_url('/ftc-disclosure/')) . '">How we handle affiliate links</a>.' : ' We earn nothing if you buy.'; ?></p>
 
   <?php if ($r['score'] !== null || $r['verdict'] !== '' || $r['buy'] || $r['skip']) { ?>
   <section class="r-verdict<?php echo $r['score'] === null ? ' noscore' : ''; ?>" aria-label="Our verdict">
@@ -167,7 +168,7 @@ function rl_review_render($c) {
       <?php if (trim($c['body']) !== '') echo '<div class="r-prose">' . $c['body'] . '</div>'; ?>
 
       <?php if ($r['log']) { ?>
-      <section class="sec" id="log" aria-labelledby="log-h"><div class="sec-h"><span>Test log</span><h2 id="log-h">What happened when we used it</h2></div>
+      <section class="sec" id="log" aria-labelledby="log-h"><div class="sec-h"><span><?php echo $r['tested'] ? 'Test log' : 'Evidence log'; ?></span><h2 id="log-h"><?php echo $r['tested'] ? 'What happened when we used it' : 'What we checked, and what independent tests found'; ?></h2></div>
         <ol class="r-log"><?php foreach ($r['log'] as $l) {
             $key = strpos($l[0], '*') === 0; $dt = function_exists('rl_pt_date') ? rl_pt_date(ltrim($l[0], '* ')) : '';
             echo '<li' . ($key ? ' class="key"' : '') . '><time' . ($dt ? ' datetime="' . esc_attr($dt) . '"' : '') . '>' . esc_html($dt ? date_i18n('j M Y', strtotime($dt)) : ltrim($l[0], '* ')) . '</time><span class="dot" aria-hidden="true"></span><div><h3>' . esc_html($l[1]) . '</h3><p>' . esc_html($l[2]) . '</p>' . (!empty($l[3]) ? '<span class="m">' . esc_html($l[3]) . '</span>' : '') . '</div></li>';
