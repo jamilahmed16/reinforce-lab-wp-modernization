@@ -51,6 +51,8 @@ add_action('acf/init', function () {
             $f('rl_r_alt_this', 'Alternatives: extra column value for this product', 'text'),
             $f('rl_r_url', 'Visit link', 'url'),
             $f('rl_r_button', 'Visit button text', 'text', ['instructions' => 'Empty = "Visit" plus the product name.']),
+            $f('rl_r_endhead', 'Closing banner: headline', 'text', ['instructions' => 'Big call to action after the final verdict. Needs the visit link. Leave empty for none.']),
+            $f('rl_r_endsub', 'Closing banner: one line', 'text'),
             $f('rl_r_final', 'Final verdict', 'textarea', ['rows' => 2, 'instructions' => 'One or two sentences at the end, above the visit button.']),
             $f('rl_r_cta_service', 'In-article CTA: service', 'select', ['choices' => $services, 'allow_null' => 1, 'instructions' => 'Shown after the pros and cons. Leave empty for none.']),
             $f('rl_r_cta_head', 'In-article CTA: headline', 'text'),
@@ -90,7 +92,7 @@ function rl_review_data($id) {
         'renewal' => $m('rl_r_renewal'), 'guarantee' => $m('rl_r_guarantee'), 'method' => rl_review_rows(get_post_meta($id, 'rl_r_method', true), 2), 'price' => $m('rl_r_price'), 'checked' => $pd ? date_i18n('j M Y', strtotime($pd)) : '', 'trial' => $m('rl_r_trial'), 'best' => $m('rl_r_best'),
         'plans' => rl_review_rows(get_post_meta($id, 'rl_r_plans', true), 2), 'alts' => rl_review_rows(get_post_meta($id, 'rl_r_alts', true), 2),
         'alt_col' => $m('rl_r_alt_col'), 'alt_this' => $m('rl_r_alt_this'),
-        'url' => esc_url_raw($m('rl_r_url')), 'button' => $m('rl_r_button') ?: ($product !== '' ? 'Visit ' . $product : 'Visit site'), 'final' => $m('rl_r_final'),
+        'url' => esc_url_raw($m('rl_r_url')), 'button' => $m('rl_r_button') ?: ($product !== '' ? 'Visit ' . $product : 'Visit site'), 'final' => $m('rl_r_final'), 'endhead' => $m('rl_r_endhead'), 'endsub' => $m('rl_r_endsub'),
     ];
 }
 function rl_review_num($x) { return number_format((float) $x, 1); }
@@ -263,6 +265,7 @@ function rl_review_render($c) {
   </div>
 
   <?php if ($d['faqs'] || $d['sources']) { ?>
+  <?php if ($r['endhead'] !== '') { $eo = $octa($r['endhead'], $r['endsub']); if ($eo !== '') echo '<div class="r-end">' . $eo . '</div>'; } ?>
   <section class="r-back" aria-label="Questions and sources">
     <?php if ($d['faqs']) { ?>
     <div class="faq" id="faq"><div class="sec-h"><span>Questions</span><h2>FAQs</h2></div>
@@ -350,6 +353,12 @@ add_action('wp_head', function () {
 .rl-review .r-octa .os{margin:6px 0 0;color:var(--ink-dim);font-size:16px}
 .rl-review .r-octa .oa{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
 .rl-review .op{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-mute)}
+.rl-review .r-end{margin:48px 0 0}
+.rl-review .r-end .r-octa{margin:0;padding:34px 36px;border-left-width:4px;background:linear-gradient(90deg,rgba(153,0,0,.28),rgba(153,0,0,.05))}
+.rl-review .r-end .r-octa .oh{font-size:34px}
+.rl-review .r-end .r-octa .os{font-size:18px;max-width:640px}
+.rl-review .r-end .r-octa .go{padding:16px 28px;font-size:18px}
+@media (max-width:640px){.rl-review .r-end .r-octa{padding:22px 18px}.rl-review .r-end .r-octa .oh{font-size:26px}}
 .rl-review .vcta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding:18px 24px;border-top:1px solid var(--red-line)}
 .rl-review .plan .go.sm{display:inline-block;margin-top:14px;font-size:15px;padding:10px 16px}
 @media (max-width:640px){.rl-review .r-octa{grid-template-columns:minmax(0,1fr);padding:16px}.rl-review .r-octa .oh{font-size:20px}}
