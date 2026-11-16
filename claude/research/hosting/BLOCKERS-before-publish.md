@@ -27,3 +27,10 @@ Need new research first: Namecheap vs GoDaddy (#2: GoDaddy facts), Hostinger vs 
 - Review pages use the guide design, not the lab-test Review design, because we did not test the hosts (the Review design shows test conditions and a scorecard).
 - Per-page blockers are in the `blockers` list inside each JSON spec.
 - Still to write for Wave 1: #2 Namecheap vs GoDaddy, #3 Hostinger vs Bluehost, #5 Hostinger vs Namecheap, #14 Best AI web hosting.
+
+## best-ai-web-hosting (added 16 Nov 2026)
+- Re-read DigitalOcean on publish day (last read 15 Nov).
+- Hostinger MCP: Hostinger's AI page does not mention MCP. Cite its docs before claiming it.
+- Title keyword has no Semrush volume ("ai web hosting" shows 30).
+- Look for an independent test of AI hosting features.
+- Corrected after verification (16 Nov): Hostinger AI credits (250 to 1,000, one-time, doubled in the Black Friday offer), hosting.com plan tiers.
