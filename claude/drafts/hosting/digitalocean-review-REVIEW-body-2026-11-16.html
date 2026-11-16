@@ -1,0 +1,104 @@
+<p>DigitalOcean is a cloud provider for developers. You rent a virtual server, called a Droplet, from $4 a month, and you run it yourself. It is not a hosting company that sets up and looks after your WordPress site. This DigitalOcean review reads DigitalOcean's own pricing and billing pages, five independent reports with real numbers and the top-ranking reviews. The pattern is clear. Prices are fair and steady, network speed is excellent, and WordPress speed depends on caching and on which Droplet you pick. Here are the details.</p>
+<h2>What did we find? The short version</h2>
+<ul>
+<li><strong>Prices are simple and do not rise.</strong> A $4 Droplet stays $4. There is no intro discount and no renewal jump, according to WPThinker.</li>
+<li><strong>WordPress needs caching.</strong> A $6 Droplet took 1.66 seconds to first byte without a cache and 0.40 seconds with WP Super Cache in one test.</li>
+<li><strong>It is not managed.</strong> You handle updates, security and backups, and backups cost 20% to 30% extra.</li>
+<li><strong>Support is free by ticket.</strong> Chat starts at $99 a month, per WPThinker.</li>
+<li><strong>New accounts get a $5 credit.</strong> It applies by itself for 90 days, and no code is needed.</li>
+</ul>
+<p>[[cta: Start with DigitalOcean's $5 credit | New accounts get a $5 credit that applies automatically and lasts 90 days.]]</p>
+<h2>What is DigitalOcean, and is it a WordPress host?</h2>
+<p>DigitalOcean sells cloud servers, managed databases, App Platform and GPU servers. A Droplet is a virtual server. A 1-Click App can set up WordPress on a Droplet, and you pay for the Droplet, not the app. WPThinker lists 16 data centers in 13 cities, 6 of them in the US. It is a server you run yourself, not a managed WordPress host. If you want a managed service on DigitalOcean servers, <a href="/cloudways-review/">Cloudways</a> runs on DigitalOcean and manages the server for you.</p>
+<h2>DigitalOcean pricing: how much does a Droplet cost?</h2>
+<p>These Basic Droplet prices are from DigitalOcean's own page, read on 16 November 2026.</p>
+<table>
+<thead><tr><th>Basic Droplet</th><th>vCPU</th><th>SSD</th><th>Transfer</th><th>Price a month</th></tr></thead>
+<tbody>
+<tr><td>512 MiB RAM</td><td>1</td><td>10 GiB</td><td>500 GiB</td><td>$4</td></tr>
+<tr><td>1 GiB RAM</td><td>1</td><td>25 GiB</td><td>1,000 GiB</td><td>$6</td></tr>
+<tr><td>2 GiB RAM</td><td>1</td><td>50 GiB</td><td>2,000 GiB</td><td>$12</td></tr>
+<tr><td>2 GiB RAM</td><td>2</td><td>60 GiB</td><td>3,000 GiB</td><td>$18</td></tr>
+<tr><td>4 GiB RAM</td><td>2</td><td>80 GiB</td><td>4,000 GiB</td><td>$24</td></tr>
+<tr><td>8 GiB RAM</td><td>4</td><td>160 GiB</td><td>5,000 GiB</td><td>$48</td></tr>
+</tbody>
+</table>
+<p>WPThinker says the $4 size is too small for WordPress and calls the $6 size the smallest it would use for a WordPress blog. It suggests $12 for a small business site and $24 for a small WooCommerce store. Since 1 January 2026, Droplets bill per second, with a one-minute minimum, and Basic plans stop billing after 672 hours in a month, according to WebPickr. A powered-off Droplet still bills. Only deleting it stops the charge.</p>
+<h2>What does DigitalOcean really cost with backups?</h2>
+<p>Backups are not free. DigitalOcean lists weekly backups at 20% of the Droplet price and daily backups at 30%. We worked out the monthly cost with daily backups. This is our own arithmetic.</p>
+<table>
+<thead><tr><th>Droplet</th><th>Price</th><th>With daily backups (30%)</th><th>Per year with daily backups</th></tr></thead>
+<tbody>
+<tr><td>2 GiB RAM, 1 vCPU</td><td>$12.00</td><td>$15.60</td><td>$187.20</td></tr>
+<tr><td>4 GiB RAM, 2 vCPU</td><td>$24.00</td><td>$31.20</td><td>$374.40</td></tr>
+<tr><td>8 GiB RAM, 4 vCPU</td><td>$48.00</td><td>$62.40</td><td>$748.80</td></tr>
+</tbody>
+</table>
+<p>Snapshots, the manual kind, cost $0.06 per GB a month, according to WPThinker. Our <a href="/digitalocean-promo-code/">DigitalOcean promo code</a> page explains the $5 credit and what it buys.</p>
+<p>[[cta: See DigitalOcean Droplet prices | From $4 a month, with per-second billing and no renewal increase.]]</p>
+<h2>How fast is DigitalOcean? Performance test results</h2>
+<table>
+<thead><tr><th>Source</th><th>Method</th><th>Result</th></tr></thead>
+<tbody>
+<tr><td>ProfileTree (June 2026)</td><td>WordPress on 2 GB Droplets in London with server-level caching, a 50-user stress test and 99.99% uptime monitoring</td><td>TTFB 120 ms. LCP 1.2 s. Uncached page 670 ms. 50 users for 48 hours with CPU under 5% and no timeouts.</td></tr>
+<tr><td>WebPickr</td><td>$6 Droplet in Singapore, Geekbench and WordPress tests from Dhaka</td><td>Geekbench single-core 462, about a third of a rival at 1,453. TTFB 1.66 s without a cache and 0.40 s with WP Super Cache. Rating 3.5 out of 5.</td></tr>
+<tr><td>Better Stack</td><td>$24 Droplet (2 vCPU, 4 GB) in Santa Clara</td><td>Geekbench 772. Disk 54.2k IOPS. Network to Los Angeles 8.06 Gbit/s at 11.6 ms. Server ready in about 55 seconds.</td></tr>
+<tr><td>WebHostingAdvices (November 2026)</td><td>Load test of two live sites on DigitalOcean, from Ashburn</td><td>A Laravel site: 226 ms and grade B. A WordPress site in Toronto: 1,177 ms uncached, grade E, stopped at 25 users.</td></tr>
+</tbody>
+</table>
+<p>The reports agree on three things. Network speed is excellent. The cheap Regular CPU is slow when PHP builds a page. And a page cache fixes most of the problem. WebPickr measured that a cache cut first-byte time from 1.66 seconds to 0.40 seconds, which matched a much faster rival. The Toronto WordPress site that WebHostingAdvices tested shows what happens without good caching. Google treats a Largest Contentful Paint of 2.5 seconds or less as good, and ProfileTree's 1.2 seconds is well under it.</p>
+<h2>What is the DigitalOcean uptime SLA?</h2>
+<p>DigitalOcean promises 99.99% monthly uptime for each Droplet, which allows about four minutes of downtime in a 30-day month. If it falls short, you can claim a credit of 100% of that Droplet's charges for the month. You must email DigitalOcean within two billing cycles, and the credit only applies to future Droplet charges. Scheduled maintenance, your own configuration errors and third-party outages are excluded. ProfileTree's monitoring recorded 99.99%. Treat the SLA as a promise about the platform, not measured uptime for your site.</p>
+<h2>Is DigitalOcean good for WordPress? Do you need to be a developer?</h2>
+<p>It is good if you can run a server. You install updates, set up caching, configure security and manage backups. WPThinker says DigitalOcean suits developers, tinkerers and growing sites that want a cheap, fast server and do not mind running it. Beginners are better served by a managed host. If you want an expert to set up and keep your DigitalOcean WordPress server running, our <a href="/services/website-maintenance-services/">website maintenance team</a> can help.</p>
+<h2>What is DigitalOcean support like?</h2>
+<p>Support by ticket is free. WPThinker says tickets are answered within a day, and Better Stack lists a 24-hour response. Live chat and Slack support need a paid tier: from $99 a month in WPThinker's listing, and up to $999 a month in Better Stack's. That is a big difference from managed hosts that include 24/7 human support. If you want help, check the support plan price first.</p>
+<p>[[cta: Not sure you want to run a server? | Cloudways manages DigitalOcean servers for you. Compare both before you decide.]]</p>
+<h2>Does DigitalOcean have AI features?</h2>
+<p>DigitalOcean lists Gradient AI Platform for inference, agents and evaluations, and GPU Droplets from $1.91 per GPU hour on a contract or $0.76 on demand, as shown on its pricing page. These are for developers who build AI apps, not for a normal website. See our <a href="/best-ai-web-hosting/">best AI web hosting</a> guide for how AI hosting compares.</p>
+<h2>How do you set up WordPress on a DigitalOcean Droplet?</h2>
+<ol>
+<li>Create a Droplet from the 1-Click WordPress app. WebPickr and Better Stack both saw a server ready in about 55 seconds.</li>
+<li>Pick a data center close to your visitors. DigitalOcean has 16 in 13 cities.</li>
+<li>Point your domain at the Droplet, and install an SSL certificate.</li>
+<li>Turn on a page cache, and check that it works. Without one, WebPickr saw 1.66 seconds to first byte.</li>
+<li>Switch on backups, and add the 20% or 30% to your budget.</li>
+<li>Set up updates and security, because the server is yours to look after.</li>
+</ol>
+<p>If you would rather not do these steps, our <a href="/services/website-maintenance-services/">website maintenance team</a> can set up and look after a WordPress server for you.</p>
+<h2>DigitalOcean vs Hetzner and other alternatives: how does it compare?</h2>
+<p>WebPickr compared its $6 DigitalOcean Droplet in Singapore with a Hetzner server at $9.59. DigitalOcean was cheaper and included twice the traffic. The Hetzner server was much faster at raw computing: a Geekbench single-core score of 1,453 against 462. With a page cache, the two matched at 0.40 and 0.41 seconds. That is the trade-off: DigitalOcean wins on price, ecosystem and documentation, and loses on cheap CPU. Better Stack lists the ecosystem, managed databases and documentation as DigitalOcean's strengths, and lists European audiences and CPU-heavy workloads on a budget as weaker fits. For a managed alternative, read our <a href="/cloudways-review/">Cloudways review</a>, and for lower-cost shared hosting, our <a href="/hostinger-review/">Hostinger review</a>.</p>
+<h2>What else does DigitalOcean sell besides Droplets?</h2>
+<p>DigitalOcean also sells App Platform from $0, managed databases from $15 a month and GPU Droplets. Better Stack says the managed databases are a reason to pick DigitalOcean. Support plans start at $0. Storage, bandwidth and compute are billed as part of the Droplet or product you choose, so read the pricing page for each product before you build.</p>
+<h2>What are the disadvantages of DigitalOcean?</h2>
+<ul>
+<li>You manage the server yourself.</li>
+<li>Backups cost 20% to 30% extra.</li>
+<li>WordPress is slow without caching on the cheap Regular CPU.</li>
+<li>Support by chat costs extra.</li>
+<li>A powered-off Droplet still bills.</li>
+</ul>
+<h2>Who should choose DigitalOcean, and who should avoid it?</h2>
+<p><strong>Choose it if</strong> you are a developer or agency, you want predictable prices and strong network speed, and you can run a server.</p>
+<p><strong>Avoid it if</strong> you want a managed WordPress host, human help in chat or a simple setup.</p>
+<h2>Where do the reviewers agree, and where do they differ?</h2>
+<table>
+<thead><tr><th>Topic</th><th>What reviewers agree on</th><th>Where they differ</th></tr></thead>
+<tbody>
+<tr><td>Network</td><td>Network speed is excellent.</td><td>Higher latency to Asia from US servers.</td></tr>
+<tr><td>WordPress speed</td><td>Caching is essential.</td><td>1.66 s uncached on a $6 Droplet and 120 ms TTFB on a cached 2 GB Droplet.</td></tr>
+<tr><td>Price</td><td>Simple and steady.</td><td>Whether the cheap CPU is good value.</td></tr>
+<tr><td>Support</td><td>Tickets are free.</td><td>Chat tiers start at $99 in one review and higher in another.</td></tr>
+<tr><td>Fit</td><td>Developers and agencies.</td><td>Whether beginners should try it.</td></tr>
+</tbody>
+</table>
+<h2>How do you get the best price?</h2>
+<ul>
+<li>Use the $5 credit to test a small Droplet.</li>
+<li>Start with a $12 Droplet for a small business WordPress site.</li>
+<li>Turn on caching, and check that it works.</li>
+<li>Add backups, and include their price.</li>
+<li>Delete test Droplets, because powered-off ones still bill.</li>
+</ul>
+<h2>Our interest in this topic</h2>
+<p>Reinforce Lab builds and maintains WordPress sites. We may earn a commission when you buy hosting through links on this page. We do not host our websites with DigitalOcean and we do not sell hosting. The research panel above shows where our information comes from.</p>
