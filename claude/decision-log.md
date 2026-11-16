@@ -2671,3 +2671,10 @@ Jamil (16 Nov): review articles must use the Review template, not the guide layo
 Jamil rejected the first sample: too short, "evidence log" is jargon, sourcing wording made us sound weak. Research in `claude/research/hosting/review-template-research-2026-11-16.md` (Cybernews, All About Cookies, Crazy Egg, BearHost; SERP report `claude/research/serp/hostinger-review/`).
 **Template changes (deployed to .online):** research-based reviews show an at-a-glance strip (starting price, renews at, money-back, best for, price checked); the evidence log is not used; a "How we researched this review" panel replaces it; new fields `rl_r_renewal`, `rl_r_guarantee`, `rl_r_method`; disclosure reworded to "this is a research-based review ... We have not run our own hosting test."
 **Sample:** https://reinforcelab.online/hostinger-review-template-preview/ (post 664, temporary, delete after approval). About 2,550 words in the body plus 10 FAQs; grade 5.3; copy-check 0; six independent sources plus web.dev for the LCP threshold.
+
+## D-322 · Host reviews rebuilt on the Review template (batch 1 of 3)
+**Date:** 16 November 2026 · **Status:** DRAFTS, not published
+Jamil approved the Review template sample ("Go ahead", 16 Nov) and asked that every review get the full SEO pass (competitor semantics, Semrush keywords, FAQs, AEO and schema checks) before it goes to him ("Yes definitely always").
+**Built so far (files `claude/drafts/hosting/<slug>-REVIEW-*-2026-11-16`, previews `claude/design-previews/hosting/<slug>-REVIEW-preview.html`):** Hostinger, Cloudways, Kinsta, hosting.com, Namecheap, ScalaHosting. Each uses research from 4 to 7 independent sources with method and date, first-year or multi-year cost tables (our arithmetic), a "How we researched" panel, 12 to 18 FAQs, 6 inline calls to action and a closing banner.
+**Still to build:** InMotion, Liquid Web, Network Solutions, DigitalOcean, Spaceship, BigScoots, Domain.com.
+**Rules kept:** nothing published, affiliate links empty, our own-use disclosure only where true (Hostinger).
