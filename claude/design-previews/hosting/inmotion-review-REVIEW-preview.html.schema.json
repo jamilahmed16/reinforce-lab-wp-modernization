@@ -1,0 +1,180 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-24T10:00:00+00:00",
+  "dateModified": "2026-11-16T00:00:00+00:00",
+  "genre": "Review",
+  "abstract": "InMotion shared hosting is fast for small sites, with a 90-day money-back guarantee reported by TechRadar. Core renews at about 4.4 times its sale price, and WooCommerce checkout was slower in tests.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "InMotion Hosting: homepage and Black Friday banner (read 15 Nov 2026)",
+    "url": "https://www.inmotionhosting.com/shared-hosting"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "TechRadar: InMotion Hosting review (updated 22 Jan 2026)",
+    "url": "https://www.techradar.com/reviews/inmotion-hosting"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingAdvice: InMotion review (Oct 2026)",
+    "url": "https://www.hostingadvice.com/hosting-review/inmotion/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Webhostingcat: InMotion Hosting performance scorecard (tested 27 Apr 2026)",
+    "url": "https://webhostingcat.com/inmotion-hosting-performance-scorecard/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "SimonHosting: InMotion Hosting review (Oct 2026)",
+    "url": "https://simonhosting.com/inmotion-hosting-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Tom's Hardware: InMotion Hosting review (Feb 2025)",
+    "url": "https://www.tomshardware.com/service-providers/web-hosting/inmotion-hosting-vps-and-shared-hosting-review"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "PCMag UK: InMotion Web Hosting review (Jun 2026)",
+    "url": "https://uk.pcmag.com/web-hosting/568/inmotion-web-hosting"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "web.dev: Largest Contentful Paint (2.5 seconds or less is good)",
+    "url": "https://web.dev/articles/lcp"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is InMotion Hosting good?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes for small and medium sites. Webhostingcat measured a 100% GTmetrix score, and SimonHosting measured 99.99% uptime."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does InMotion cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Core is $2.29 a month in SimonHosting's October 2026 review and renews at $10.00. TechRadar lists $3.19 on a 3-year term."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does InMotion have a money-back guarantee?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "TechRadar and Tom's Hardware report 90 days on shared and WordPress plans. Confirm on the live page."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How fast is InMotion?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Webhostingcat measured a 135 ms time to first byte and a 333 ms Largest Contentful Paint on a Los Angeles shared plan."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is InMotion good for WooCommerce?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "For small stores, yes. Webhostingcat saw a 775 ms time to first byte at checkout, and advises a managed host for heavy traffic."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does InMotion include backups?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "TechRadar says backups are not included on shared plans."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does InMotion include a free domain?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Reviewers list a free domain for the first year and free SSL on shared plans."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does InMotion have AI features?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found no AI builder or assistant. The chat widget on its site is an AI bot."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How steep is the InMotion renewal price?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Core renews at $10.00 a month in SimonHosting's review, about 4.4 times the $2.29 sale price."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does InMotion have a Black Friday sale?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Its homepage shows up to 70% off, valid through 1 December 2026, 12 p.m. ET."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is InMotion better than Hostinger?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "InMotion has a longer money-back window. Hostinger has a lower entry price, a lower renewal and more AI tools."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Who should avoid InMotion?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Owners of busy stores, people who want AI tools and anyone who wants the lowest price for years."
+    }
+   }
+  ]
+ }
+]

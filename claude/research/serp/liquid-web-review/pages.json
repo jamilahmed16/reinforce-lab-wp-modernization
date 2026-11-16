@@ -1,128 +1,326 @@
 [
  {
-  "url": "https://allaboutcookies.org/liquid-web-review",
-  "title": "Liquid Web Review 2026: Is It Right for Your Business Site?",
-  "words": 441,
+  "url": "https://webhostingcat.com/liquid-web-performance-scorecard/",
+  "title": "Liquid Web Speed and Performance Test Results",
+  "words": 369,
   "headings": [
    [
     "h2",
-    "At a glance"
+    "Performance Rating: 88/100"
    ],
    [
     "h2",
-    "How we test web hosting services"
+    "Quick Summary"
    ],
    [
     "h2",
-    "Our experience"
+    "Benchmark Results"
+   ],
+   [
+    "h3",
+    "Speed Benchmark"
+   ],
+   [
+    "h4",
+    "GTmetrix Results"
+   ],
+   [
+    "h3",
+    "Load Testing"
+   ],
+   [
+    "h3",
+    "WooCommerce Performance"
+   ],
+   [
+    "h4",
+    "Home Page"
+   ],
+   [
+    "h4",
+    "Product Page"
+   ],
+   [
+    "h4",
+    "Checkout Page"
    ],
    [
     "h2",
-    "Liquid Web plans and pricing"
+    "Performance Pros and Cons"
+   ],
+   [
+    "h3",
+    "Pros:"
+   ],
+   [
+    "h3",
+    "Cons:"
    ],
    [
     "h2",
-    "Liquid Web hosting features"
+    "Compare Liquid Web with Other Web Hosts"
    ],
    [
     "h2",
-    "Types of web hosting available"
-   ],
-   [
-    "h2",
-    "WordPress integration"
-   ],
-   [
-    "h2",
-    "Liquid Web performance"
-   ],
-   [
-    "h2",
-    "Speed test"
-   ],
-   [
-    "h2",
-    "Uptime and response"
-   ],
-   [
-    "h2",
-    "Stress tests"
-   ],
-   [
-    "h2",
-    "Liquid Web security features"
-   ],
-   [
-    "h2",
-    "Liquid Web customer support and reputation"
-   ],
-   [
-    "h2",
-    "Top Liquid Web alternatives"
-   ],
-   [
-    "h2",
-    "Bottom line: Is Liquid Web good?"
-   ],
-   [
-    "h2",
-    "Does Liquid Web offer VPS hosting?"
-   ],
-   [
-    "h2",
-    "Is Liquid Web good for ecommerce?"
-   ],
-   [
-    "h2",
-    "Is Liquid Web good for WordPress hosting?"
+    "Final Verdict"
    ]
   ],
-  "text": "At a glance . How we test web hosting services . Our experience . Liquid Web plans and pricing . Liquid Web hosting features . Types of web hosting available . WordPress integration . Liquid Web performance . Speed test . Uptime and response . Stress tests . Liquid Web security features . Liquid Web customer support and reputation . Top Liquid Web alternatives . Bottom line: Is Liquid Web good? . Does Liquid Web offer VPS hosting? . Is Liquid Web good for ecommerce? . Is Liquid Web good for WordPress hosting? . liquid web . hosting plans . web hosting . wordpress hosting . customer support . money back . refund policy . free ssl . monthly visits . uptime guarantee . spark launch . dedicated servers . cloud hosting . magento hosting . staging site . cloudflare enterprise . ddos protection . web application firewall . security features . performance score . response time . stress tests . speed test . trustpilot rating . bluehost . hostinger . ionos . ecommerce . pci compliant . hipaa compliant . vps hosting . shared hosting . gpu hosting . reseller hosting . nexcess subsidiary . migration assistance . daily backups . bandwidth . storage . renewals . small business . high traffic . advanced users . beginners . malware . At a glance . How we test web hosting services . Our experience . Liquid Web plans and pricing . Liquid Web hosting features . Types of web hosting available . WordPress integration . Liquid Web performance . Speed test . Uptime and response . Stress tests . Liquid Web security features . Liquid Web customer support and reputation . Top Liquid Web alternatives . Bottom line: Is Liquid Web good? . Does Liquid Web offer VPS hosting? . Is Liquid Web good for ecommerce? . Is Liquid Web good for WordPress hosting? . liquid web . hosting plans . web hosting . wordpress hosting . customer support . money back . refund policy . free ssl . monthly visits . uptime guarantee . spark launch . dedicated servers . cloud hosting . magento hosting . staging site . cloudflare enterprise . ddos protection . web application firewall . security features . performance score . response time . stress tests . speed test . trustpilot rating . bluehost . hostinger . ionos . ecommerce . pci compliant . hipaa compliant . vps hosting . shared hosting . gpu hosting . reseller hosting . nexcess subsidiary . migration assistance . daily backups . bandwidth . storage . renewals . small business . high traffic . advanced users . beginners . malware",
-  "source": "manual"
+  "text": "Performance Rating: 88/100 Last Tested: April 2026 Want to know how we tested this host? Read our [ Testing Methodology ]. Quick Summary Best For: Business Sites, WordPress Agencies, WordPress Developers Starting Price: $9 mo. Test Date: 4/23/2026 Test Server: Managed WordPress Data Center: Phoenix, AZ WordPress Version: 6.9.4 PHP Version: 8.4 Theme: Astra Pro Benchmark Results Speed Benchmark GTmetrix Results Metric Results Rating Performance 100% Outstanding Structure 95% Excellent TTFB 202ms Excellent FCP 433ms Excellent LCP 433ms Excellent CLS 0 Outstanding Fully Loaded 435ms Excellent Load Testing Concurrent Clients: 250 Avg. Response: 476ms Error Rate: 0.0% Result: PASSED Concurrent Clients: 500 Avg. Response: 497ms Error Rate: 0.0% Result: PASSED Concurrent Clients: 1000 Avg. Response: 606ms Error Rate: 0.0% Result: PASSED WooCommerce Performance Home Page Metric Results Rating Performance 100% Outstanding LCP 557ms Excellent TTFB 61ms Outstanding Fully Loaded 2.1s Fair Product Page Metric Results Rating Performance 100% Outstanding LCP 674ms Excellent TTFB 73ms Outstanding Fully Loaded 2.6s Fair Checkout Page Metric Results Rating Performance 65% Poor LCP 3.2s Poor TTFB 2.8s Poor Fully Loaded 5.5s Poor Performance Pros and Cons Pros: Excellent Loading Speed Excellent Core Web Vitals Good Server Load Management Cons: WooCommerce Checkout Speed Needs Improvement Compare Liquid Web with Other Web Hosts Liquid Web vs Bluehost Liquid Web vs Kinsta Liquid Web vs SiteGround Liquid Web vs WP Engine Liquid Web vs WPX Hosting Final Verdict Who should buy Liquid Web? Liquid Web continues to be an excellent choice for mission-critical business sites with the exception of large WooCommerce stores (see below). Liquid Web\u2019s speed and performance make it a good fit for experienced WordPress users, as well as WordPress agencies. However, be aware that Liquid Web has recently changed their hosting plan structure so that lower level plans do not include certain features such as staging and extended daily backups. Who shouldn\u2019t buy Liquid Web? As you can see from our test results above, Liquid Web performed poorly during the WooCommerce checkout phase. Page loading times were very disappointing. For that reason, only lighter traffic smaller WooCommerce site owners should consider using Liquid Web. Also, beginners can find a better fit for their WordPress sites. > Download Full Test Report > Try Liquid Web"
  },
  {
-  "url": "https://www.hostingadvice.com/hosting-review/liquid-web/",
-  "title": "Liquid Web Review: 2 Weeks of Hands-On Testing",
-  "words": 341,
+  "url": "https://sayansamanta.com/liquid-web-review/",
+  "title": "Liquid Web Review 2026: Best Hosting for WooCommerce Site?",
+  "words": 3691,
   "headings": [
    [
     "h2",
-    "Key Takeaways"
+    "Quick Summary (TL;DR)"
+   ],
+   [
+    "h3",
+    "Pros & Cons Of Using Liquid Web Hosting"
    ],
    [
     "h2",
-    "My Experience Using Liquid Web VPS Hosting Plan"
+    "How I Tested Liquid Web Hosting"
    ],
    [
     "h2",
-    "Liquid Web VPS Plans"
+    "Liquid Web Performance (Stress Test Data)"
+   ],
+   [
+    "h3",
+    "Loader.io Stress Test (1,000 Concurrent Users, 1 Minute, Uncached)"
+   ],
+   [
+    "h3",
+    "GTmetrix Core Web Vitals (Seattle Server)"
+   ],
+   [
+    "h3",
+    "What Makes Liquid Web Different: The Honest Version"
+   ],
+   [
+    "h4",
+    "1: No Arbitrary Monthly Visits Limit (This Is a Big Deal)"
+   ],
+   [
+    "h4",
+    "2: 10 PHP Workers Per Site + Free Auto-Scaling"
+   ],
+   [
+    "h4",
+    "3. Free Redis Object Cache Pro (Worth $79/Month)"
+   ],
+   [
+    "h4",
+    "4. Free Solid Security Pro (Now Kadence Security)"
+   ],
+   [
+    "h4",
+    "5. Visual Plugin Update Comparison"
+   ],
+   [
+    "h4",
+    "6. Free White-Glove Site Migration"
+   ],
+   [
+    "h4",
+    "7: Free Premium Email Address"
+   ],
+   [
+    "h3",
+    "Where Liquid Web Falls Short (The Honest Problems)"
+   ],
+   [
+    "h4",
+    "\u26a0\ufe0f Problem 1: The Cloudflare Integration Is Half-baked"
+   ],
+   [
+    "h4",
+    "\u26a0\ufe0f Problem 2: Staging Sites Are Locked Behind the Most Expensive Plan"
+   ],
+   [
+    "h4",
+    "\u26a0\ufe0f Problem 3: No Asian Servers (A Real Problem for Indian and SEA Users)"
+   ],
+   [
+    "h4",
+    "\u26a0\ufe0f Problem 4: Average Customer Support"
    ],
    [
     "h2",
-    "Configuring My Server"
+    "Liquid Web Pricing: What You Actually Get at Each Tier?"
+   ],
+   [
+    "h3",
+    "How Liquid Web Compares to the Competition?"
+   ],
+   [
+    "h3",
+    "FAQs about Liquid Web Hosting"
    ],
    [
     "h2",
-    "Performance"
+    "Liquid Web Review: My Honest Verdict"
    ],
    [
-    "h2",
-    "My Experience Using Liquid Web Dedicated Hosting Plan"
+    "h3",
+    "About Sayan Samanta"
    ],
    [
-    "h2",
-    "Customer Support"
+    "h3",
+    "Recent Blog Posts"
    ],
    [
-    "h2",
-    "Pros and Cons of Liquid Web"
+    "h4",
+    "Jetpack Security Review 2026: Backups, Scans, & Speed Test"
    ],
    [
-    "h2",
-    "Liquid Web Is a Developer Dream"
+    "h4",
+    "Cloudways Vultr HF Review 2026: Real Speed & Uptime Data"
+   ],
+   [
+    "h4",
+    "ScalaHosting VPS Review 2026: TTFB, Stress Test, Pros, & Cons"
+   ],
+   [
+    "h4",
+    "ScalaHosting Review 2026: I Tested Shared Hosting For 1 Year"
    ]
   ],
-  "text": "Key Takeaways . My Experience Using Liquid Web VPS Hosting Plan . Liquid Web VPS Plans . Configuring My Server . Performance . My Experience Using Liquid Web Dedicated Hosting Plan . Customer Support . Pros and Cons of Liquid Web . Liquid Web Is a Developer Dream . liquid web . vps hosting . dedicated hosting . server performance . root access . dedicated ip . ddos protection . control panel . cpanel . plesk . interworx . managed support . unmanaged vps . operating system . data center . linux server . windows server . ubuntu . almalinux . rocky linux . sitejet . wordpress . docker . ssh . ssl certificate . backups and images . cloud backups . gtmetrix test . web vitals . largest contentful paint . vcpu . ram . pricing plans . introductory price . renewal price . ionos . interserver . kamatera . hostinger . inmotion . hostwinds . bare metal . hardware configurations . security add-ons . customer support . upsells . Key Takeaways . My Experience Using Liquid Web VPS Hosting Plan . Liquid Web VPS Plans . Configuring My Server . Performance . My Experience Using Liquid Web Dedicated Hosting Plan . Customer Support . Pros and Cons of Liquid Web . Liquid Web Is a Developer Dream . liquid web . vps hosting . dedicated hosting . server performance . root access . dedicated ip . ddos protection . control panel . cpanel . plesk . interworx . managed support . unmanaged vps . operating system . data center . linux server . windows server . ubuntu . almalinux . rocky linux . sitejet . wordpress . docker . ssh . ssl certificate . backups and images . cloud backups . gtmetrix test . web vitals . largest contentful paint . vcpu . ram . pricing plans . introductory price . renewal price . ionos . interserver . kamatera . hostinger . inmotion . hostwinds . bare metal . hardware configurations . security add-ons . customer support . upsells",
-  "source": "manual"
+  "text": "I bought the Liquid Web Spark: Elevate plan with my own money. For the last 6 months, I have run a 1,000-user stress test on my WooCommerce site to see whether their \u201cno-visit limit\u201d and \u201cauto-scaling\u201d promises hold up under real pressure. I did not get a free account, a review discount, or early access to write this Liquid Web Review . Liquid Web Managed WordPress Hosting Dashboard Quick Summary (TL;DR) Platform: Liquid Web Managed WordPress hosting run on the Nexcess infrastructure and client portal. Stress Test: Liquid Web handled 1,000 concurrent uncached users with a 0% error rate and an average 489ms response time. Performance: On a GTmetrix test, the Liquid Web server backend takes only 91ms to respond, and my site fully loaded in 957ms. TTFB: In the US, UK, and Australia, Liquid Web\u2019s average TTFB is under 100ms. But in the Asian region, TTFB reaches up to 1.6 seconds. Best Features: 10 PHP workers per site, no monthly page-view limits, free White-Glove Site Migration, a Free Object Cache Pro subscription, email hosting, and the built-in Kadence Security Pro plugin. Worst Features: Liquid Web Cloudflare Enterprise integration has no full-page edge caching. No asian data centers, and staging sites are only available on the most expensive plan. Quick Verdict: Liquid Web is best for high-traffic WooCommerce stores & Dynamic Membership sites based in the US, UK, or Australia. Overall Rating: 4.3 / 5 Pros & Cons Of Using Liquid Web Hosting Pros: 10 PHP workers per site. No monthly visitor limits or overage fees Free automatic Auto-Scaling (for 24 hours) Free Redis Object Cache Pro & Kadence Security Pro subscription. Native business Email Hosting included. Active DDOS and Firewall protection. Can handle 1k concurrent users in under 1 minute without server crashing. Cons: Lack of Asian & African Data centers. Cloudflare Enterprise CDN has no full-page edge caching & load balancing. Average customer support. Staging site is only available on the Sprak: Elevate plan. Explore Liquid Web WordPress Hosting How I Tested Liquid Web Hosting To get actual performance data, I migrated my resource-heavy WooCommerce site to the Liquid Web Elevate plan. Here\u2019s my own WooCommerce site configuration: Web server: Nginx reverse proxy + PHP-FPM Page builder: Elementor Pro (v4.2.3) + WooCommerce Theme: Kadence WP Theme Caching: FlyingPress + Redis Object Cache Pro PHP version: 8.4 Note: This site configuration is deliberately the hardest WordPress environment to optimize because of heavy database queries from both WooCommerce and Elementor . If this site performs well in my Liquid Web stress test, it\u2019ll perform well for your site as well. To see how Liquid Web\u2019s infrastructure actually holds up, I ran two distinct tests: Frontend Speed Test (using GTmetrix): To measure cached load times, TTFB, and Core Web Vitals metrics. Backend Stress Test (using Loader.io): To bypass the cache and hit the server with concurrent users, testing how Liquid Web\u2019s PHP workers handle real, uncached database queries. So, let\u2019s see how Liquid Web performs under heavy real pressure. Here\u2019s my complete testing methodology . Liquid Web Performance (Stress Test Data) Liquid Web relies on AMD EPYC server infrastructure and uses Nginx as a reverse proxy to handle thousands of concurrent connections with minimal resource usage. Before anything else, here\u2019s what the numbers actually say: Loader.io Stress Test (1,000 Concurrent Users, 1 Minute, Uncached) When you run a WooCommerce store or a membership site, your users are constantly logging in, adding items to carts, and bypassing the cache entirely. This requires raw server power and high PHP worker limits. To test this, I used Loader.io to simulate a real traffic spike. I sent 1000 concurrent visitors to my test site\u2019s uncache page (cart/checkout) over 1 minute, forcing the server to process dynamic requests simultaneously. Here\u2019s the result: Metric Result Test Type 1,000 concurrent users over 60 seconds Average Response Time 489ms Valid Responses 1,000 / 1,000 Error Rate 0% 502/503 Errors None Stress Test analysis: No crashes. No errors. Zero dropped requests under 1,000 simultaneous uncached users. Most shared hosting collapses under 10 concurrent uncached visitors. This is the core reason Liquid Web exists. If you have a flash sale or a post goes viral, the server won\u2019t choke and drop your hard-earned sales. GTmetrix Core Web Vitals (Seattle Server) I ran the test site through GTmetrix (testing from Seattle, WA) to measure real-world Core Web Vitals and total website loading time. Here\u2019s the result: Metric Result Google Threshold Largest Contentful Paint (LCP) 779ms Under 2.5s \u2705 First Contentful Paint (FCP) 549ms Under 1.8s \u2705 Total Blocking Time (TBT) 34ms Under 200ms \u2705 Time to First Byte (TTFB) 126ms Under 200ms \u2705 Cumulative Layout Shift 0 Under 0.1 \u2705 Full Page Load Time 957ms Under 2.5s \u2705 Speed Test Analysis: As you can see on the GTmetrix test, my demo WooCommerce site passes all Core Web Vitals metrics and fully loads the site in under 1 second, which is impressive. It\u2019s just a static site speed test. Now, let\u2019s see Liquid Web handle uncache speed under 1k concurrent users. What Makes Liquid Web Different: The Honest Version As I said earlier, I have been using Liquid Web for 6 months. Here are the Top WooCommerce features that actually matter. 1: No Arbitrary Monthly Visits Limit (This Is a Big Deal) Kinsta charges you based on monthly visits. WP Engine does too. If a product goes viral and your traffic spikes 3x in one month, they send you an invoice for overages. Kinsta Overage Fees: $.50 per 1,000 extra visitors WP Engine Overage Fees: $2 per 1,000 extra monthly visitors Liquid Web Overage Fees: None Liquid Web prices by bandwidth (2TB) and disk space (15GB) usage. A well-optimized WooCommerce store that averages 2 MB per page could theoretically serve 1 million monthly visitors without hitting the 2 TB bandwidth cap. For 99% of static WordPress sites, this is effectively unlimited. Why this matters: You stop making business decisions around fear of your overage hosting bill. Liquid Web server won\u2019t penalize you for success. So run your flash sale and let the post go viral. 2: 10 PHP Workers Per Site + Free Auto-Scaling PHP workers are the processes that handle uncached requests. Every logged-in WooCommerce customer, every cart update, every checkout, all uncached, all hitting PHP workers directly. Why it matters: If all PHP workers are busy and a new visitor requests an uncached page, that request has to wait in line until a PHP worker becomes free. This can slow down your site or, worse, show a 502/504 error. Most managed hosts, like Kinsta and WP Engine , give you 2 PHP workers per site. Liquid Web gives you 10 PHP workers per site on all plans. If you hit that PHP limit during a traffic surge, auto-scaling kicks in for free and doubles your PHP workers for 24 hours. After 24 hours, it\u2019s $0.60/hour billed in 30-minute increments. That\u2019s a reasonable price to pay during a Black Friday spike. The alternative: your site showing 504 errors during your biggest sale of the year \u2014 is far more expensive. 3. Free Redis Object Cache Pro (Worth $79/Month) Redis Object Cache Pro sits between WordPress and the database. It stores the results of database queries in memory. When a customer updates their cart, instead of querying the database again, the server fetches the result from RAM: nearly instant. This reduces server load, lowers CPU usage, and improves page load times \u2013 especially for dynamic sites like WooCommerce stores, membership sites, or a high-traffic blog. On dynamic WooCommerce stores, this makes checkout pages load 2\u20133x faster and dramatically reduces server load during traffic spikes. The commercial license for the Object Cache Pro plugin costs $79/month . Liquid Web includes it on every plan, pre-configured by their team, so it actually works out of the box. 4. Free Solid Security Pro (Now Kadence Security) Most managed WordPress hosting relies on a server-level firewall. That protects the server, not WordPress itself. Liquid Web includes the Kadence Security Pro plugin licence on all plans for free. For a WooCommerce store, this is meaningful. Customer data lives in your database. Kadence Security Pro protects it at the application layer, not just at the server perimeter. Here are some important solid security pro plugin features: Automatic virtual patches for vulnerable plugins via Patchstack (before the developer releases an official fix) Two-factor authentication and passkey support Database integrity monitoring Network-level IP blocking Block unauthorized login attempts Automatic blocking of bad bots before they drain your PHP workers 5. Visual Plugin Update Comparison Before Liquid Web pushes any plugin update to your live site, it takes a screenshot of key pages, applies the update to a copy of your site, and then takes screenshots again. If anything looks different, it holds the update, flags the exact plugin, and gives you the chance to review it yourself. Visual comparison features run automatically every 4 days. During my 3-month test, no update caused a visual regression \u2014 but I\u2019ve seen this save sites from the \u201cWhite Screen of Death\u201d errors. 6. Free White-Glove Site Migration Migrating a high-traffic, dynamic WooCommerce site can be terrifying without technical support. A simple WordPress migration plugin (like All-in-One WP Migration or Blogvault ) will often time out or fail entirely on large databases. Liquid Web\u2019s migration team logs in with the credentials you provide, migrates your files and database to a staging environment, scans for malware during the transfer, and only goes live after you\u2019ve reviewed the staging site and pointed your DNS. For large WooCommerce databases where migration plugins time out, this is worth real money. No DIY risk, no \u201cmigration failed at 3 am\u201d anxiety. If you want to do it yourself, they have the \u201cMigrate To Liquid Web & Nexcess\u201d plugin for quick migration . You need to enter the FTPS or SFTP/SSH details of your Liquid server, and this plugin takes care of everything else. 7: Free Premium Email Address Almost every managed WordPress hosting (like Kinsta , Cloudways , or Rocket.net ) requires you to pay extra for email hosting (usually $6/mo per user for Google Workspace). However, Liquid Web includes a free business Email (like: info@yourdomain.com) service with plans. It supports IMAP, POP3, and has a webmail interface (via Roundcube ). Liquid Web email hosting comes with antispam protection, antivirus, custom email filtering, free user aliases, etc. For a small business with 5 employees, this saves you $30/month compared to other managed hosting. Where Liquid Web Falls Short (The Honest Problems) Below are a few problems I noticed during my Liquid Web stress testing. \u26a0\ufe0f Problem 1: The Cloudflare Integration Is Half-baked Liquid Web markets its high-tier Cloudflare Enterprise integration as \u201c Performance Shield \u201c. In theory: enterprise WAF, DDoS protection, Argo Smart Routing, image polish. On paper, it\u2019s a $200/month feature included for free . But in my experience, the Cloudflare execution feels significantly half-baked compared to the seamless setups I found at Rocket.net or Kinsta. In practice, here\u2019s what happened during my 3-month test: During initial setup, I repeatedly hit Cloudflare \u201c Activation Failed \u201d errors with no clear reason. The Liquid Web portal showed Cloudflare CDN as active. But HTTP response headers proved it wasn\u2019t serving traffic at all. When I disabled the Nexcess Edge CDN to test Cloudflare separately, reactivating Cloudflare failed completely. I opened a support ticket regarding activation failure. It took over 48 hours to resolve a CDN/DNS conflict on \u201cManaged\u201d hosting. The activation process requires specific CNAME changes handled by Liquid Web: there\u2019s no one-click toggle (at least for me). Why is it fundamentally half-baked compared to Rocket.net or Kinsta Integration? Liquid Web\u2019s default headers instruct Cloudflare not to cache HTML files. This means Cloudflare is checking the origin server on every single request \u2014 completely negating the \u201cEnterprise\u201d performance advantage. Here\u2019s my demo site TTFB result across different global locations. Here\u2019s a Cloudflare Enterprise CDN integration comparison between Liquid Web, Kinsta, and Rocket.net. Features Liquid Web CF Rocket.net CF Kinsta CF Total locations 330 Pops 330 Pops 330 Pops Full-Page Edge Caching \u274c No \u2705 Yes \u2705 Yes Smart Routing Argo Argo \u274c No TTFB 65-150ms 50-100ms 65-130ms Image Optimization Polish Polish Polish Load balancing \u274c No \u2705 Yes \u274c No DDOs Protection Enterprise Grade Enterprise Grade Enterprise Grade Custom Page Rules \u274c No \u274c No \u274c No One-Click Activation \u274c No \u2705 Yes \u2705 Yes My advice : If Cloudflare performance is your primary goal, Liquid Web is not your host. Either manage your own Cloudflare Pro account in front of Liquid Web, or choose Rocket.net/Kinsta, where the Cloudflare integration actually works. \u26a0\ufe0f Problem 2: Staging Sites Are Locked Behind the Most Expensive Plan A staging/development environment is considered a standard utility \u2013 not a luxury in 2026. It is a baseline requirement for safely updating plugins, testing PHP upgrades, and reviewing major design changes before they hit your live site. Kinsta includes staging on its $35/month entry plan. Cloudways includes it across the board. Even budget-shared hosts like Hostinger include one-click staging sites on all plans. However, Liquid Web restricts staging sites to the Elevate plan only. If you\u2019re on Launch or Thrive \u2014 the two cheaper plans \u2014 you don\u2019t get it. This is an unnecessary paywall that penalizes smaller site owners who need a staging environment the most. \u26a0\ufe0f Problem 3: No Asian Servers (A Real Problem for Indian and SEA Users) Liquid Web\u2019s data centers cover the US, UK, and Australia. There are no servers on the Asian continent. When I tested TTFB from India using FlyingTTFB across 22 global locations, the result was clear: TTFB from Indian servers exceeded 1.9 seconds. Google\u2019s threshold is under 200ms. You are failing Core Web Vitals for every Indian visitor, even while passing them for US visitors. This is not a minor footnote. If your WooCommerce store sells to Indian customers, or if you are an Indian Web agency recommending hosting to local clients, Liquid Web\u2019s raw server performance is practically irrelevant \u2014 because the origin server is 8,000km away. The fix: You must configure Cloudflare\u2019s full-page caching in front of Liquid Web to serve Indian visitors from a CDN edge node. But as mentioned above, Liquid Web\u2019s built-in Cloudflare integration doesn\u2019t support full-page caching . So you\u2019re managing your own Cloudflare account on top of your hosting, which defeats the point of paying for \u201cmanaged\u201d hosting. For Indian users specifically, Cloudways on a Vultr VPS Mumbai or Bangalore server, or Kinsta with its Google Cloud Mumbai region, will give you dramatically better TTFB for Indian audiences. \u26a0\ufe0f Problem 4: Average Customer Support Liquid Web support staff are actual sysadmins. Red Hat Linux-certified technicians who understand Nginx, PHP-FPM, and WordPress infrastructure. This is genuinely better than the Tier 1 script-readers you get at most shared hosting. But \u201cbetter than bad\u201d isn\u2019t the same as good. My real-world experience: Chat delays of 5\u20137 minutes after initial response on minor issues. The 48-hour CDN ticket is already mentioned. Compared to Kinsta\u2019s typically sub-30-minute resolution on complex issues, this feels slow for a premium managed hosting provider. Note: If you need deep technical help, Liquid Web\u2019s team is more capable than most. However, in terms of sheer speed and efficiency, they feel average compared to the white-glove speed of Kinsta or Rocket.net. Liquid Web Pricing: What You Actually Get at Each Tier? Liquid Web has three plans: Spark \u2013 Launch, Thrive, & Elevate. Their pricing is tiered based on the number of sites. As you scale to more sites, Liquid Web adds more hosting resources like SSD storage, bandwidth, number of PHP workers, etc. Feature Launch Thrive Elevate Sites 1 1 1 SSD Storage 15GB 15GB 15GB Bandwidth 2TB 2TB 2TB PHP Workers 10/site 10/site 10/site Cloudflare CDN \u274c \u2705 \u2705 DDoS Protection \u274c \u2705 \u2705 WAF \u274c \u2705 \u2705 Staging Sites \u274c \u274c \u2705 Daily Backups \u2705 \u2705 \u2705 Redis Object Cache Pro \u2705 \u2705 \u2705 Solid Security Pro \u2705 \u2705 \u2705 Free Email \u2705 \u2705 \u2705 Price (single site) $4\u20136/mo $8\u201312/mo $16\u201324/mo If you want to host more than one website, the same plan with 3 sites hosting costs between $10-40/month, and it comes with 25GB storage, 2.5 TB bandwidth, and 15 PHP workers per site. My recommendation on plan selection: Don\u2019t buy the Launch plan. You get no Cloudflare, no WAF, no DDoS protection. For a live WooCommerce store, these aren\u2019t optional. Start at the Thrive plan. If you need staging environments (you should), go to the Elevate plan. Check Liquid Web WordPress Hosting Pricing How Liquid Web Compares to the Competition? I\u2019ve personally tested Kinsta, Cloudways, Rocket.net, and Liquid Web. Here\u2019s where each hosting actually wins: Features Liquid Web Rocket.net CloudWays Kinsta Pricing $4-20/Month $30/Month $11-40/Month $35/Month Primary Focus WooCommerce & Stability Raw TTFB Speed DIY Control Premium UI/UX PHP Workers High Very High Variable Low (Strict) Email Hosting Yes NO NO NO Daily Backups Yes Yes Yes Yes Monthly visit No limit Yes NO Yes Free Redis cache Yes Yes NO NO WAF Yes Yes Yes Yes Dashboard Traditional Modern/Simple Technical Best in Class Support Phone/Chat Chat Only Chat Only Chat Only Tech Stack Nginx/Apache Niginx Vultr/DO/AWS Google C3D Best Feature Free 24hr Auto-Scaling Cloudflare Ent. built-in Choice of Cloud Hosting MyKinsta Dashboard Ideal User WooCommerce site Speed Obsessives Tech-Savvy Devs High-Budget Brands For Indian WordPress developers and agencies: Cloudways on DigitalOcean Mumbai is the pragmatic choice for local audience sites. Liquid Web is the right choice when your customers are US/EU-based, and you need WooCommerce reliability without overage anxiety. FAQs about Liquid Web Hosting Does Liquid Web (Nexcess) use cPanel? No. Liquid Web uses its own proprietary portal called the \u201cNexcess Client Portal.\u201d However, for their VPS & dedicated server plans (not WordPress), you can still get cPanel/InterWorx. Is Liquid Web bandwidth really unlimited? Not technically \u2014 the base plan caps at 2TB. In practice, an average 2MB WordPress page would need 1 million monthly visitors to approach that limit. For 99% of sites, it\u2019s functionally unlimited. Can I host email with Liquid Web? Yes. This is a major advantage compared to other managed WordPress hosting. Liquid Web hosting plans come with free email hosting via Roundcube. You can create your custom email like name@yourdomain.com without paying extra for Google Workspace or Zoho. Is Liquid Web good for Indian users? No, TTFB from India exceeds 1.9 seconds due to the lack of Asian data centers. You can mitigate this with your own Cloudflare full-page caching setup, but Liquid Web\u2019s built-in Cloudflare integration doesn\u2019t support this natively. Will Liquid Web help me pass the Core Web Vitals metric? Yes. Liquid Web comes with built-in Object Cache Pro and Cloudflare enterprise CDN. You still need a cache plugin like WP Rocket or FlyingPress for Core Web Vitals metrics (CLS, INP, & LCP) optimization. How does the free migration work on Liquid Web? You need to create a site migration ticket with your current host\u2019s login details. Their team migrates everything, tests it, and asks you to point your DNS to Liquid Web. In my experience, the Liquid Web support team helps you at every step during site migration. Is Liquid Web fast for WooCommerce sites? Yes. Liquid Web is arguably the fastest managed host for WooCommerce sites due to their heavy use of Redis Object Caching and specific database optimization rules. Is Liquid Web worth it over Kinsta? Yes, Liquid Web wins on: PHP workers, no visit limits, Redis included, free email, auto-scaling, and price. Kinsta wins on: dashboard quality, support speed, and Google Cloud infrastructure. For WooCommerce stores under a $50/month budget, Liquid Web wins clearly. Liquid Web Review: My Honest Verdict In my experience, Liquid Web\u2019s Managed WordPress hosting bridges the gap between traditional VPS hosting and restrictive managed WordPress environments. It is particularly well-suited for WooCommerce stores, an LMS site (LearnDash), or high-traffic blog owners who cannot afford downtime, or web developers who need a flexible, unrestricted environment. Buy Liquid Web if: You run a WooCommerce store with a US/EU audience, you hate overage fees, and you want Redis Object Cache Pro and auto-scaling without paying Kinsta prices. Avoid Liquid Web if: Your customers are in India or Asia, you need Cloudflare edge caching to work out of the box, or you\u2019re a beginner who needs hand-holding through the setup process. Here are my overall Liquid Web ratings based on my last 6 months of experience: Category Rating Why? Server Power 5/5 10 PHP workers + Auto-scaling handled 1k users without a single crash. Speed (US/EU) 5/5 126ms TTFB from Seattle; excellent AMD EPYC hardware performance. Global Reach 3/5 No Asian data center; TTFB in India/Asia fails Core Web Vitals (1.9s+). Features 5/5 Includes free Object Cache Pro ($95/mo) and free premium email hosting. Support 3/5 Highly technical staff, but activation issues took 48+ hours to resolve. Overall Score 4.2 / 5 Recommended for US, UK, and Australia-based WooCommerce Stores. Explore Liquid Web Managed WordPress Hosting Thank you for reading my Liquid Web review. If you have any other questions related to Liquid Web or any other hosting-related issues, let me know in the comments section. Have a nice day. \u2013 Sayan Samanta Liquid Web Liquid Web (Nexcess) is a powerhouse for dynamic, database-heavy, & a high-traffic WordPress and WooCommerce sites. It trades a slightly steeper learning curve for raw server power, offering significantly higher PHP worker limits, no arbitrary monthly visitor caps, and auto-scaling for traffic spikes. Price: 4/Month Price Currency: USD Operating System: WordPress Application Category: Hosting Editor's Rating: 4.2 About Sayan Samanta Sayan Samanta is a WordPress expert with over 7 years of hands-on experience. He specializes in high-level speed optimization, security hardening, and rigorous hosting performance testing. Unlike generic review sites, He pays for every hosting plan he reviews, publishes his test data and prices, and updates posts when his numbers change. Read more about him and his testing process . Recent Blog Posts Jetpack Security Review 2026: Backups, Scans, & Speed Test Cloudways Vultr HF Review 2026: Real Speed & Uptime Data ScalaHosting VPS Review 2026: TTFB, Stress Test, Pros, & Cons ScalaHosting Review 2026: I Tested Shared Hosting For 1 Year"
+ },
+ {
+  "url": "https://cloudzat.com/liquid-web-hosting-review/",
+  "title": "Liquid Web Hosting Review - WordPress Managed Hosting",
+  "words": 2604,
+  "headings": [
+   [
+    "h2",
+    "What is Liquid Web?"
+   ],
+   [
+    "h2",
+    "Liquid Web Features"
+   ],
+   [
+    "h3",
+    "SSD Storage"
+   ],
+   [
+    "h3",
+    "Full Server Access"
+   ],
+   [
+    "h3",
+    "Automatic Backups \u2013 Daily"
+   ],
+   [
+    "h3",
+    "Automatic SSL"
+   ],
+   [
+    "h3",
+    "Staging Site"
+   ],
+   [
+    "h3",
+    "No Traffic or Pageview Limits"
+   ],
+   [
+    "h3",
+    "Server Stack"
+   ],
+   [
+    "h3",
+    "Temporary URL"
+   ],
+   [
+    "h3",
+    "Developer Tools"
+   ],
+   [
+    "h3",
+    "CDN"
+   ],
+   [
+    "h3",
+    "Emails"
+   ],
+   [
+    "h3",
+    "Stencils"
+   ],
+   [
+    "h2",
+    "Website Speed with Liquid Web Hosting"
+   ],
+   [
+    "h3",
+    "Google PageSpeed Insights"
+   ],
+   [
+    "h3",
+    "GTmetrix Test"
+   ],
+   [
+    "h2",
+    "The Liquid Web Interface"
+   ],
+   [
+    "h2",
+    "Liquid Web Hosting Customer Support"
+   ],
+   [
+    "h2",
+    "Liquid Web Managed WordPress Hosting Plans and Prices"
+   ],
+   [
+    "h3",
+    "Spark: $19 per month"
+   ],
+   [
+    "h3",
+    "Maker: $79 per month"
+   ],
+   [
+    "h3",
+    "Designer: $109 per month"
+   ],
+   [
+    "h3",
+    "Builder: $149 per month"
+   ],
+   [
+    "h3",
+    "Producer: $299 per month"
+   ],
+   [
+    "h3",
+    "Executive: $549 per month"
+   ],
+   [
+    "h3",
+    "Enterprise: $999 per month"
+   ],
+   [
+    "h2",
+    "Liquid Web Pros and Cons"
+   ],
+   [
+    "h3",
+    "The Pros"
+   ],
+   [
+    "h3",
+    "The Cons"
+   ],
+   [
+    "h2",
+    "Conclusion and Verdict"
+   ]
+  ],
+  "text": "Home \u00bb Web Hosting \u00bb Liquid Web Hosting Review \u2013 WordPress Hosting Share WhatsApp X Facebook Reddit Copy URL What is Liquid Web? Liquid Web is a hosting company specializing in managed WordPress hosting, managed VPS hosting, and managed cloud hosting and dedicated servers. The company promises 99.999% uptime and 59-second support response in what they call \u2018Heroic Support.\u2019 Liquid Web came into existence in 1997, and today, it boasts over 45,000 customers and over 500,000 websites under management worldwide. The company has 10 data centers spread globally. All their hosting servers are highly tuned for security, performance, and speed. The company hosts websites and applications of some big brands like Red Bull, Motorola, FedEx, Audi, and ESPN. If you are looking for managed WordPress hosting with high-performance servers and unbelievably brilliant customer support, Liquid Web should be one of your most preferred destinations. Headquartered in Lansing, Michigan, the company specializes in offering various types of managed hosting services. The company has garnered quite some attention because of their extraordinary support. They promise to and actually respond within 59 seconds. Their support team is well-trained and skilled. As far as managed WordPress hosting is concerned, they offer fully-managed hosting solutions that are optimized specifically for running WordPress-powered websites. Unlike other managed WordPress hosting solution, Liquid web doesn\u2019t put a limit on traffic or pageviews on your website. All WordPress plans they offer run on high-performance cloud servers that allow room for scalability whenever needed. Having said that, let\u2019s find out what to expect from managed WordPress hosting solutions of Liquid Web. Yes We Recommend Liquid Web Visit Liquid Web Hosting Liquid Web Features Liquid Web offers a range of interesting features for its managed WordPress hosting solution. Some of the most important features include: SSD Storage The company offers SSD or Solid State Drive storage for its managed hosting plans. SSD storage is faster than the traditional spinning drives. The speed comes from the absence of any moving parts. This allows for higher input/output operations per second, making the servers fast. Full Server Access You will have full access to the server and the database. This means that you can run scripts, make changes to the database or even build a house of cards (just kidding). You get the idea, right? Will full server and database access, you can do whatever you want. No one is going to ask you a damn question. On the flipside, if you don\u2019t know anything about server management or database management, it is better that you don\u2019t tamper with those things. Automatic Backups \u2013 Daily You don\u2019t have to worry about losing your site. The company will take full backup of your website everyday and store those backups offsite. There will be no additional cost for backups. You can download or restore the backups anytime you want. Automatic SSL You don\u2019t have to do anything to enable SSL certificate on your website. It will be done automatically by the company everytime you create a plan or add a site. You will get a site with SSL already installed. Staging Site You want to make changes to your website without impacting the live site? Not a problem! Create a staging site and make changes to that. Once you are happy with the changes, you can roll out the changes to the live environment. No Traffic or Pageview Limits There are no pageviews or traffic limit and hence, you will not face any overcharge fees while using Liquid Web hosting. Server Stack Liquid Web promises to give blazing fast websites using PHP7, Nginx and SSL. While I always advocate using LiteSpeed web server instead of Nginx, you don\u2019t have the choice with Liquid Web. They only offer Nginx. However, they do keep their promise of blazing fast websites. You can optimize everything even more using caching and CDN. Temporary URL When you purchase a managed WordPress hosting plan with Liquid Web, the company will automatically create a server and install WordPress on it and even provide a temporary URL to instantly access the website. Developer Tools Liquid Web will also offer access to developer tools that include SSH access, WP-CLI and Git. If you are in need of custom development, your developer can use all those features to have unabated access to the server. CDN With Liquid Web, you will get integrated CDN. However, the CDN is not enabled by default. You should not enable it until you point your domain to Liquid Web server. However, you are free to never use their CDN service. You can use a third-party CDN provider like Cloudflare. If you use their CDN, you will get 250 GB of bandwidth without any charges. If bandwidth exceeds 250 GB you will be charged at 0.10 dollars per GB. Emails Unlike many other managed WordPress hosting providers where you have to set up emails using third-party providers, Liquid Web will create emails for you by default. You can access webmail from within Liquid Web dashboard. You can add additional mail boxes, too! Stencils Suppose you have created a site after long hours of designing and experimenting, and you are pretty impressed with what you have created. You want to use the same template for developing other websites. What do you do? You can use the existing design and create a Stencil site. You can reuse the Stencil site to deploy another website using the same design template without going through the hard work! Website Speed with Liquid Web Hosting This is the most dreadful part of any web hosting. It might be a hit or a miss. All hosting providers say that they offer superfast website hosting. The term they use may be different. Some will use the word Ultrafast, while others will use the word Blazing fast. Anyway, the point is, to get a fast-loading website. Even liquid web promises the same. Does it deliver? I put the test website I created with the hosting provider to test. Here are the test results: Google PageSpeed Insights Mobile Test Results That\u2019s an incredible result for mobile devices. It tested the site multiple times and each time, the speed score achieved was either 98 or 99. Things to note here: It uses the default WordPress Twenty Twenty theme. Four plugins installed but two enabled (Akismet \u2013 disabled, Cache Enabler \u2013 enabled, CDN Enabler \u2013 disabled, WP Redis \u2013 Enabled). The site contains only the default post generated during WordPress installation. There is nothing else on the site. When you start adding themes and plugins or start posting articles and rich media or add scripts like Google Analytics or AdSense, things will change. The score will drop. It all depends on how you optimize things from your end. Desktop Test Results The score remains the same as in the case of mobile. However, you can see changes in the Lab Data values. As I mentioned earlier, the score will change when you start putting in content, scripts, plugins, and themes on your site. You have to carry out optimization from your end. The best thing I recommend is using a premium plan of Cloudflare that will not only take care of caching and CDN, but will also give you WAF or Web Application Firewall. If you want, you may go through my guide on how to speed up a WordPress site . Of course, you can ditch the part where I discussed about choosing Cloud Hosting that offers LiteSpeed server. You can carry on with the remaining recommendations to achieve extraordinary speed. GTmetrix Test The same website tested with GTmetrix gives the same astonishing result. That\u2019s great! What\u2019s interesting to note here is that with other managed web hosting companies, even the most rudimentary installations show a score of less than 90 on mobile using Google PageSpeed Insights. I have to accept the fact that LIQUID WEB INDEED KEEPS THE PROMISE OF DELIVERING FAST WEBSITE LOAD TIMES . In short, I am impressed with the results. The Liquid Web Interface The interface of Liquid Web dashboard is brilliant. It is simple with smartly-arranged navigation. You will not feel lost. Once you purchase a plan and sign up, the system will automatically take you to the dashboard where you can see the installation in progress. It will take a while. Be patient! The reason for such long wait (about 3-4 minutes) is that the system will do everything from WordPress installation to FTP account creation, email account creation, enabling cache, etc. These tasks take a while and it is worth the wait. The first thing you see is after the installation is complete is this: In the above screen you can see the name \u201cHoly Crap For You.\u201d That\u2019s the name I used for identifying the plan. I had to provide the name during the signup process. You can use any name that you want. You will also see the plan details which include the plan name, price, expiry date, etc. Clicking on the plan name will give you the list of sites. This is what you will see: You will notice that Liquid Wen provides a temporary URL and a temporary domain name. Clicking on the Temporary Domain Name will take you to the frontend of the site. If you want to reach the controls, you have to click on the option below Domain. Once you click on the option you see under Domain, this is what you will see: You can now click on each menu option on the left to configure things or check out the already configured options. To add a domain, you need to go to the Domain Options tab on the left menu. You can configure email accounts from the Email menu on the left. To create Stencil sites, you have to click on the Stencils menu on the left. You can even create a development environment of a staging environment by clicking on Dev Environment option you see in the menu on the left. Overall, the who dashboard is neatly arranged and makes navigation super easy. You can even access customer support from the dashboard. This brings us to the next point\u2026 Liquid Web Hosting Customer Support Liquid Web is known for what they call the \u2018Heroic Support.\u2019 What it means that they promise to make the first response within 59 seconds. When you start a chat, you will be greeted with a chat bot that will ask for your account ID and your support pin. It will also ask about the issue you are facing. Once you have provided the issue, it will immediately connect you to a human representative who will respond to your query for the first time within 59 seconds. Following the first response, the time taken to respond will vary depending on your questions and the severity of the issue. The support members seem to be quite knowledgeable and well-informed. I had a quick chat with a support staff who was quick enough to provide me with the resolution and even answered by queries. I have nothing to complain, technically! Of course, if I want to bring out issues, what I can say is that the staff was quite mundane. His words didn\u2019t reflect a jovial nature. But hey, who cares? Eventually, it is all about getting your issues resolved quickly. Here is the chat transcript: You may be wondering about the name Nexcess. This has come up again and again. You have seen it in the screenshots and even in the chat transcript. What is Nexcess? Nexcess is a brand of Liquid Web. Liquid Web uses the Nexcess high performance cloud to provide both managed WordPress hosting and managed WooCommerce hosting. Liquid Web Managed WordPress Hosting Plans and Prices Liquid Web offers multiple managed WordPress hosting plans. You can select the one that suits you the most. Here is a quick list of the plans and their prices: Spark: $19 per month Only 1 site allowed. 15 GB SSD storage. 2 TB bandwidth. Automatic backups for 30 days. Unlimited email accounts. iThemes Security Pro. iThemes Sync. Beaver Builder Lite. Maker: $79 per month Maximum 5 sites allowed. 40 GB SSD storage. 3 TB bandwidth. Automatic backups for 30 days. Unlimited email accounts. iThemes Security Pro. iThemes Sync. Beaver Builder Lite. Designer: $109 per month Maximum 10 sites allowed. 60 GB SSD storage. 4 TB bandwidth. Automatic backups for 30 days. Unlimited email accounts. iThemes Security Pro. iThemes Sync. Beaver Builder Lite. Builder: $149 per month Maximum 25 sites allowed. 100 GB SSD storage. 5 TB bandwidth. Automatic backups for 30 days. Unlimited email accounts. iThemes Security Pro. iThemes Sync. Beaver Builder Lite. Producer: $299 per month Maximum 50 sites allowed. 300 GB SSD storage. 5 TB bandwidth. Automatic backups for 30 days. Unlimited email accounts. iThemes Security Pro. iThemes Sync. Beaver Builder Lite. Executive: $549 per month Maximum 100 sites allowed. 500 GB SSD storage. 10 TB bandwidth. Automatic backups for 30 days. Unlimited email accounts. iThemes Security Pro. iThemes Sync. Beaver Builder Lite. Enterprise: $999 per month Maximum 250 sites allowed. 800 GB SSD storage. 10 TB bandwidth. Automatic backups for 30 days. Unlimited email accounts. iThemes Security Pro. iThemes Sync. Beaver Builder Lite. All plans will get access to Free SSL, Free CDN (chargeable after a certain bandwidth is hit), and full access to the server and database. It is rare to see to many plan options in a managed hosting provider, but Liquid Web caters to everyone from individual bloggers and freelancers to large enterprises that manage multiple websites. This explains the large collection of plans that the company has to offer. Liquid Web Pros and Cons Every service in this world has its strengths and weaknesses. Liquid Web is not a different one. Even it has its advantages and disadvantages. Let\u2019s take a quick look into the pros and cons. The Pros Extremely user-friendly. Fast website loading speeds. Great support. 99.999% uptime guarantee. No limit on plugins. You can install any plugin you want. No cap on traffic or pageviews. Offers CDN and email. Offers server-side caching using Redis and Varnish. Provides full server access. Allows staging and development environments. Allows saving website templates as Stencil sites. Provides automatic backups. Provides free SSL. Supports latest PHP version (7.4). Allows auto-scaling. The Cons Pretty expensive. Shared hosting not available. There is no money-back guarantee. However, if you cancel your account, you can intimate them one month ahead of cancelation to prevent billing. If you selected yearly billing cycle, you can cancel to get the refund for the unused month. Conclusion and Verdict I have reviewed several managed WordPress hosting provides include Flywheel , Kinsta , Rocket , WP Engine , etc. However, if I were to compare all these options with Liquid Web, my vote will always go for Liquid Web. Yes, I recommend Liquid Web managed WordPress hosting above every other managed WordPress hosting solution. Here is my ranking in terms of preference: #1. Liquid Web #2. Flywheel #3. Kinsta #4. Rocket #5. WP Engine The type of control you get when you use Liquid Web is absent in all other managed hosting providers I have see so for. My years of experience with WordPress and various hosting solutions say that you can blindly trust Liquid Web to meet your hosting requirements. The most important thing is the website speed and Liquid Web keeps the promise! I really don\u2019t care about their Heroic Support. Even if they take time to respond, I am fine with that as long as my issues are resolved! Yes We Recommend Liquid Web Visit Liquid Web Hosting"
  }
 ]

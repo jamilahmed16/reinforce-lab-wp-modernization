@@ -1,0 +1,70 @@
+[
+ {
+  "url": "https://webhostingcat.com/inmotion-hosting-performance-scorecard/",
+  "title": "InMotion Hosting Speed and Performance Test Results",
+  "words": 378,
+  "headings": [
+   [
+    "h2",
+    "Performance Rating: 99/100"
+   ],
+   [
+    "h2",
+    "Quick Summary"
+   ],
+   [
+    "h2",
+    "Benchmark Results"
+   ],
+   [
+    "h3",
+    "Speed Benchmark"
+   ],
+   [
+    "h4",
+    "GTmetrix Results"
+   ],
+   [
+    "h3",
+    "Load Testing"
+   ],
+   [
+    "h3",
+    "WooCommerce Performance"
+   ],
+   [
+    "h4",
+    "Home Page"
+   ],
+   [
+    "h4",
+    "Product Page"
+   ],
+   [
+    "h4",
+    "Checkout Page"
+   ],
+   [
+    "h2",
+    "Performance Pros and Cons"
+   ],
+   [
+    "h3",
+    "Pros:"
+   ],
+   [
+    "h3",
+    "Cons:"
+   ],
+   [
+    "h2",
+    "Compare InMotion Hosting with Other Web Hosts"
+   ],
+   [
+    "h2",
+    "Final Verdict"
+   ]
+  ],
+  "text": "Performance Rating: 99/100 Last Tested: April 2026 Want to know how we tested this host? Read our [ Testing Methodology ]. Quick Summary Best For: Small to Medium Business Sites, Light to Moderate Traffic WordPress Sites, Bloggers Starting Price: $4.59 mo. Test Date: 4/27/2026 Test Server: Shared Hosting Data Center: Los Angeles, CA WordPress Version: 6.9.4 PHP Version: 8.4 Theme: Astra Pro Benchmark Results Speed Benchmark GTmetrix Results Metric Results Rating Performance 100% Outstanding Structure 94% Excellent TTFB 135ms Excellent FCP 320ms Excellent LCP 333ms Excellent CLS 0 Outstanding Fully Loaded 333ms Outstanding Load Testing Concurrent Clients: 250 Avg. Response: 220ms Error Rate: 0.0% Result: PASSED Concurrent Clients: 500 Avg. Response: 407ms Error Rate: 0.0% Result: PASSED Concurrent Clients: 1000 Avg. Response: 433ms Error Rate: 0.0% Result: PASSED WooCommerce Performance Home Page Metric Results Rating Performance 96% Excellent LCP 1.1s Good TTFB 639ms Fair Fully Loaded 1.7s Good Product Page Metric Results Rating Performance 97% Excellent LCP 1.1s Good TTFB 477ms Good Fully Loaded 1.6s Good Checkout Page Metric Results Rating Performance 94% Excellent LCP 1.2s Good TTFB 775ms Fair Fully Loaded 2.1s Fair Performance Pros and Cons Pros: Outstanding Loading Speed Excellent Core Web Vitals Excellent Server Load Management Good WooCommerce Performance Cons: WooCommerce Checkout Speed Could be Faster Compare InMotion Hosting with Other Web Hosts InMotion Hosting vs Bluehost InMotion Hosting vs GoDaddy InMotion Hosting vs GreenGeeks InMotion Hosting vs Hosting.com InMotion Hosting vs Hostinger InMotion Hosting vs InterServer InMotion Hosting vs SiteGround InMotion Hosting vs WP Engine Final Verdict Who should buy InMotion Hosting? InMotion Hosting is ideal for small to medium size business websites with light to moderate traffic. WordPress bloggers will also be highly impressed with InMotion Hosting\u2019s speed and performance. InMotion Hosting is our top ranking Shared Hosting option. InMotion\u2019s speed test results were equal to (and sometimes actually better than) some of the top managed WordPress hosts that we\u2019ve tested. Who shouldn\u2019t buy InMotion Hosting? Although InMotion Hosting posted good load testing numbers, performance did decline with heavier traffic loads. Also, WooCommerce performance could have been better\u2014especially with advanced traffic stores. For these reasons, if you expect heavy traffic or frequent traffic spikes, we would recommend managed WordPress hosting or Cloud VPS. > Download Full Test Report > Try InMotion Hosting"
+ }
+]
