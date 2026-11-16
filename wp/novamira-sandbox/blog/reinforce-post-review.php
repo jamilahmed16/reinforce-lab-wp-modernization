@@ -117,6 +117,12 @@ function rl_review_render($c) {
     $ok = '<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg>';
     $no = '<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg>';
     $visit = function ($cls = 'go') use ($r, $rel) { return $r['url'] !== '' ? '<a class="' . $cls . '" href="' . esc_url($r['url']) . '" rel="' . esc_attr($rel) . '" target="_blank">' . esc_html($r['button']) . ' <span aria-hidden="true">&rarr;</span></a>' . ($r['aff'] && function_exists('rl_aff_label') ? rl_aff_label() : '') : ''; };
+    $chip = trim(($r['price'] !== '' ? 'From ' . $r['price'] : '') . ($r['guarantee'] !== '' ? ($r['price'] !== '' ? ' · ' : '') . $r['guarantee'] . ' money-back' : ''));
+    $octa = function ($head, $sub) use ($r, $visit, $chip) {
+        if ($r['url'] === '' || trim($head) === '') return '';
+        return '<aside class="r-octa" aria-label="Offer"><div class="ot"><p class="oh">' . esc_html(trim($head)) . '</p>' . (trim($sub) !== '' ? '<p class="os">' . esc_html(trim($sub)) . '</p>' : '') . '</div><div class="oa">' . ($chip !== '' ? '<span class="op">' . esc_html($chip) . '</span>' : '') . $visit('go') . '</div></aside>';
+    };
+    $bodyx = preg_replace_callback('/<p>\s*\[\[cta:\s*([^\]|]*?)\s*(?:\|\s*([^\]]*?))?\s*\]\]\s*<\/p>/', function ($mm) use ($octa) { return $octa($mm[1], $mm[2] ?? ''); }, (string) $c['body']);
     $meter = '';
     if ($r['score'] !== null) { $full = (int) floor($r['score']); $frac = $r['score'] - $full; for ($i = 1; $i <= 10; $i++) $meter .= '<i' . ($i <= $full ? ' class="on"' : ($i === $full + 1 && $frac > 0.001 ? ' class="half"' : '')) . '></i>'; }
     $jump = array_filter(['log' => $r['log'] ? ($r['tested'] ? 'Test log' : 'Evidence log') : '', 'scores' => $r['crit'] ? 'Scorecard' : '', 'pricing' => $r['plans'] ? 'Pricing' : '', 'alts' => $r['alts'] ? 'Alternatives' : '', 'method' => (!$r['tested'] && $r['method']) ? 'How we researched' : '']);
@@ -157,6 +163,7 @@ function rl_review_render($c) {
       <?php if ($r['skip']) { ?><div class="skip"><p class="h"><?php echo $no; ?>Skip it if</p><ul><?php foreach ($r['skip'] as $x) echo '<li>' . esc_html($x) . '</li>'; ?></ul></div><?php } ?>
     </div>
     <?php } ?>
+    <?php if ($r['url'] !== '') { ?><div class="vcta"><?php if ($chip !== '') echo '<span class="op">' . esc_html($chip) . '</span>'; echo $visit('go'); ?></div><?php } ?>
   </section>
   <?php } ?>
 </div>
@@ -168,7 +175,7 @@ function rl_review_render($c) {
     <article class="r-text">
       <?php if ($d['answer'] !== '') { ?><div class="r-answer"><p class="t">Short answer</p><p><?php echo esc_html($d['answer']); ?></p></div><?php } ?>
       <?php if ($d['takeaways']) { ?><div class="r-take"><?php foreach ($d['takeaways'] as $i => $k) echo '<div><b>' . sprintf('%02d', $i + 1) . '</b><span>' . esc_html($k) . '</span></div>'; ?></div><?php } ?>
-      <?php if (trim($c['body']) !== '') echo '<div class="r-prose">' . $c['body'] . '</div>'; ?>
+      <?php if (trim($c['body']) !== '') echo '<div class="r-prose">' . $bodyx . '</div>'; ?>
 
       <?php if ($r['log']) { ?>
       <section class="sec" id="log" aria-labelledby="log-h"><div class="sec-h"><span><?php echo $r['tested'] ? 'Test log' : 'Evidence log'; ?></span><h2 id="log-h"><?php echo $r['tested'] ? 'What happened when we used it' : 'What we checked, and what independent tests found'; ?></h2></div>
@@ -208,7 +215,7 @@ function rl_review_render($c) {
       <section class="sec" id="pricing" aria-labelledby="pr-h"><div class="sec-h"><span>Pricing</span><h2 id="pr-h">Plans and what they cost</h2></div>
         <div class="plans n<?php echo min(4, count($r['plans'])); ?>"><?php foreach ($r['plans'] as $pl) {
             $tested = $r['plan'] !== '' && stripos($r['plan'], $pl[0]) === 0;
-            echo '<div class="plan' . ($tested ? ' tested' : '') . '">' . ($tested ? '<span class="tg">Plan we tested</span>' : '') . '<h3>' . esc_html($pl[0]) . '</h3><p class="pr">' . esc_html($pl[1]) . '</p>' . (!empty($pl[2]) ? '<p>' . esc_html($pl[2]) . '</p>' : '') . '</div>';
+            echo '<div class="plan' . ($tested ? ' tested' : '') . '">' . ($tested ? '<span class="tg">Plan we tested</span>' : '') . '<h3>' . esc_html($pl[0]) . '</h3><p class="pr">' . esc_html($pl[1]) . '</p>' . (!empty($pl[2]) ? '<p>' . esc_html($pl[2]) . '</p>' : '') . ($r['url'] !== '' ? '<a class="go sm" href="' . esc_url($r['url']) . '" rel="' . esc_attr($rel) . '" target="_blank">Get ' . esc_html($pl[0]) . ' <span aria-hidden="true">&rarr;</span></a>' : '') . '</div>';
         } ?></div>
         <p class="pnote"><?php echo $r['checked'] ? 'Prices from the vendor site, checked ' . esc_html($r['checked']) . '. ' : ''; ?>Prices change; check before you buy.</p>
       </section>
@@ -338,10 +345,18 @@ add_action('wp_head', function () {
     if (!rl_is_review_view()) return; ?>
 <style id="rl-review-css">
 .rl-review{color:var(--ink-dim);--ok:#3fa36b}
+.rl-review .r-octa{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 24px;align-items:center;margin:32px 0;padding:20px 22px;border:1px solid var(--red-line);border-left:3px solid var(--red-2);background:linear-gradient(90deg,rgba(153,0,0,.16),rgba(153,0,0,.03))}
+.rl-review .r-octa .oh{font-family:var(--f-display);font-size:22px;line-height:1.2;text-transform:uppercase;color:var(--ink);margin:0}
+.rl-review .r-octa .os{margin:6px 0 0;color:var(--ink-dim);font-size:16px}
+.rl-review .r-octa .oa{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.rl-review .op{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-mute)}
+.rl-review .vcta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding:18px 24px;border-top:1px solid var(--red-line)}
+.rl-review .plan .go.sm{display:inline-block;margin-top:14px;font-size:15px;padding:10px 16px}
+@media (max-width:640px){.rl-review .r-octa{grid-template-columns:minmax(0,1fr);padding:16px}.rl-review .r-octa .oh{font-size:20px}}
 .rl-review .r-method{margin:0;border:1px solid var(--line-2);background:var(--bg-2)}
 .rl-review .r-method div{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:16px;padding:14px 18px;border-bottom:1px dashed var(--line-2)}
 .rl-review .r-method div:last-child{border-bottom:0}
-.rl-review .r-method dt{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute)}
+.rl-review .r-method dt{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute)}
 .rl-review .r-method dd{margin:0;color:var(--ink)}
 @media (max-width:640px){.rl-review .r-method div{grid-template-columns:minmax(0,1fr);gap:4px}}
 .rl-review h1,.rl-review h2,.rl-review h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);line-height:1.04;letter-spacing:.005em;text-wrap:balance}
