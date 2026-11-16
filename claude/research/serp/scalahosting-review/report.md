@@ -1,57 +1,96 @@
 # Competitor semantics: scalahosting-review
 
 Our page: -
-Competitors analysed: 3 of 4 (a term counts as common when 3+ of them use it)
+Competitors analysed: 2 of 4 (a term counts as common when 3+ of them use it)
 
 | # | Page | Words | Headings |
 |---|---|---|---|
-| 1 | [ScalaHosting Review 2026: VPS With Top 3% Fastest CPUs](https://onlinemediamasters.com/scalahosting-review/) | 2701 | 7 |
-| 2 | [ScalaHosting Review: We Tested 3 Plans](https://www.hostingadvice.com/hosting-review/scalahosting/) | 367 | 12 |
-| 3 | [ScalaHosting web hosting review | TechRadar](https://www.techradar.com/reviews/scalahosting) | 273 | 10 |
+| 1 | [ScalaHosting Review 2026 – Managed Cloud-Based VPS Hosting](https://www.wpbeginner.com/hosting/scala-hosting/) | 3057 | 15 |
+| 2 | [ScalaHosting Review 2026: Pricing, Performance, SPanel](https://digitalprahlad.com/review/scalahosting/) | 5879 | 44 |
 
 **Not fetched (read these with Exa):**
-- https://wpjohnny.com/scalahosting-review-traditional-shared-hosting-custom-panel/ (200) too little text (script-rendered or blocked)
+- https://simonhosting.com/scalahosting-review/ (200) too little text (script-rendered or blocked)
+- https://cybernews.com/best-web-hosting/scalahosting-review/ (403) 
 
-## Common terms (15)
+## Common terms (0)
 
-shared hosting (3), wordpress hosting (3), website (3), entry cloud (3), scalahosting (3), pricing (3), cpu cores (3), support (3), final (3), spanel (3), performance (3), domain (3), nvme (3), plans (3), backups (3)
 
-## Questions competitors answer in headings (0)
 
+## Questions competitors answer in headings (15)
+
+- Does ScalaHosting have data centers in Asia?
+- Does ScalaHosting offer phone support?
+- Does the money-back guarantee cover everything I buy?
+- Final Verdict – Is ScalaHosting the Right Choice for You?
+- Final Verdict: Is ScalaHosting Worth It?
+- How much does ScalaHosting cost?
+- How steep is ScalaHosting’s renewal price increase?
+- Is SPanel actually free, or is there a hidden cost?
+- Is ScalaHosting good?
+- Is ScalaHosting’s migration service really free for unlimited sites?
+- Quick Answer – Is ScalaHosting Worth It?
+- ScalaHosting vs. Hostinger: Which Should You Actually Choose?
+- What Is ScalaHosting?
+- What’s the actual uptime guarantee?
+- Who’s Behind ScalaHosting?
 
 ## Headings by page
 
-**ScalaHosting Review 2026: VPS With Top 3% Fastest CPUs**
-- H3 1. VPS vs. Entry Cloud Plan
-- H3 2. Set Up Your VPS In 8 Steps
-- H3 3. Don’t Sleep On Shared Plans
-- H3 4. AMD EPYC 9474F CPUs On All Plans
-- H3 5. SPanel Is Similar To cPanel But ~2x Lighter
-- H3 6. Independently Owned By Chris And Vlad (Not Private Equity)
-- H3 7. Price Breakdown (Higher Renewals Are The Biggest Downside)
+**ScalaHosting Review 2026 – Managed Cloud-Based VPS Hosting**
+- H4 Quick Answer – Is ScalaHosting Worth It?
+- H4 ScalaHosting at a Glance
+- H4 About ScalaHosting
+- H4 Pros and Cons of ScalaHosting
+- H4 How I Tested ScalaHosting (Methodology)
+- H4 ScalaHosting Performance Test Results
+- H4 How ScalaHosting Compares to Other Hosts We Tested
+- H4 ScalaHosting’s Infrastructure and Technology
+- H4 ScalaHosting Plans and Pricing
+- H4 ScalaHosting for Growing WordPress Sites
+- H4 ScalaHosting Customer Support
+- H4 Who Should Use ScalaHosting and Who Should Look Elsewhere
+- H4 Final Verdict – Is ScalaHosting the Right Choice for You?
+- H4 FAQs About ScalaHosting
+- H4 Changelog
 
-**ScalaHosting Review: We Tested 3 Plans**
-- H2 Key Takeaways
-- H2 My Experience Using ScalaHosting's Cheap Hosting Plan
-- H3 Plans & Pricing
-- H3 Performance
-- H2 My Experience Using ScalaHosting's WordPress Hosting Plan
-- H3 Using SPanel to Build My WordPress Site
-- H2 My Experience Using ScalaHosting's Cloud VPS Hosting Plan
-- H3 Standard VPS Plans
-- H3 Standard Cloud VPS Plans
-- H3 Support Is Actually Supportive
-- H2 Pros and Cons of ScalaHosting
-- H2 My Final Thoughts
-
-**ScalaHosting web hosting review | TechRadar**
-- H2 TechRadar Verdict
-- H2 Reasons to buy
-- H2 Reasons to avoid
-- H2 Pricing & plans
-- H2 ScalaHosting shared hosting
-- H2 ScalaHosting WordPress hosting
-- H2 Speed & performance
-- H2 In use
-- H2 Support
-- H2 Final verdict
+**ScalaHosting Review 2026: Pricing, Performance, SPanel**
+- H2 What Is ScalaHosting?
+- H4 Feature Ratings
+- H4 Pros
+- H4 Cons
+- H4 Summary
+- H2 ScalaHosting Key Features at a Glance
+- H2 Who’s Behind ScalaHosting?
+- H2 SPanel: The Control Panel That’s Actually Free
+- H3 ScalaHosting’s SPanel Requirements
+- H2 ScalaHosting Pricing: Shared, Managed Cloud, and the Renewal Jump
+- H3 Shared Hosting Plans
+- H3 Shared Hosting Abuse Policy: No Suspensions, No Inode Limits
+- H3 Managed Cloud (VPS) Plans
+- H3 Business Email Hosting: A Separate Product Worth Knowing About
+- H2 Performance, Uptime, and the Guarantee ScalaHosting Doesn’t State Uniformly
+- H3 Redis Object Cache: Confirmed Working, Not Just a Checkbox
+- H3 Real-World Performance: WP Benchmark Tool Results
+- H3 Global TTFB Test: 22 Locations, All Cache Hits
+- H3 ScalaHosting Performance Test: Quick Reference
+- H2 Security: SShield and What’s Included by Default
+- H2 Free Migration: What’s Actually Included
+- H2 Data Centers: Where ScalaHosting Actually Runs
+- H2 Money-Back Guarantee: The Fine Print Nobody Else Reads
+- H2 Customer Support: What to Actually Expect
+- H2 Beyond the Marketing: Real User Sentiment and What’s Actually New
+- H3 What Reddit Actually Says
+- H3 Skai: A Free AI Agent Coming to SPanel
+- H3 The Renewal Price Gap Worth Watching
+- H2 ScalaHosting Pros and Cons
+- H2 Who Should (and Shouldn’t) Choose ScalaHosting
+- H2 ScalaHosting vs. cPanel-Based Hosts
+- H2 ScalaHosting vs. Hostinger: Which Should You Actually Choose?
+- H2 Frequently Asked Questions About ScalaHosting
+- H3 Is SPanel actually free, or is there a hidden cost?
+- H3 How steep is ScalaHosting’s renewal price increase?
+- H3 Does the money-back guarantee cover everything I buy?
+- H3 What’s the actual uptime guarantee?
+- H3 Does ScalaHosting have data centers in Asia?
+- H3 Is ScalaHosting’s migration service really free for unlimited sites?
+- H3 Does ScalaHosting offer phone support?

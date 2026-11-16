@@ -1,0 +1,180 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-25T10:00:00+00:00",
+  "dateModified": "2026-11-16T00:00:00+00:00",
+  "genre": "Review",
+  "abstract": "Namecheap hosting is a cheap, good fit for small sites near the US. Independent tests measured 99.29% to 100% uptime, slower speeds in Asia and a renewal price about double the promo.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Namecheap: shared hosting (read 15 and 16 Nov 2026)",
+    "url": "https://www.namecheap.com/hosting/shared/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Cybernews: Namecheap review (updated 15 May 2026)",
+    "url": "https://cybernews.com/best-web-hosting/namecheap-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "TopSiteHosters: Namecheap review (Apr 2026)",
+    "url": "https://topsitehosters.com/providers/namecheap/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingGuider: Namecheap review (12 May 2026)",
+    "url": "https://hostingguider.com/reviews/namecheap-hosting/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Cyber Naira: Namecheap hosting review (20 Jul 2026)",
+    "url": "https://cybernaira.com/namecheap-hosting-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Kripesh Adwani: Namecheap hosting review",
+    "url": "https://kripeshadwani.com/namecheap-hosting-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingTestLab: Namecheap hosting review (16 Oct 2026)",
+    "url": "https://hostingtestlab.com/namecheap-hosting-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "web.dev: Largest Contentful Paint (2.5 seconds or less is good)",
+    "url": "https://web.dev/articles/lcp"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is Namecheap good for hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It is good for a small site near the US. Cybernews called it a great domain provider and weak web hosting."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Namecheap fast?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Close to the US, yes: TopSiteHosters measured a 232 ms time to first byte. Far from the US it is slower: Cyber Naira measured 1.1 seconds in Asia Pacific without a CDN."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does Namecheap hosting cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Stellar starts at $2.28 a month. It renews at $55.88 a year, or $5.88 a month on monthly billing."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Namecheap offer a free trial?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. It lists 30 days free on shared hosting. The 30-day money-back guarantee does not apply with the free period."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How reliable is Namecheap hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Independent tests measured between 99.29% and 100% uptime. Namecheap advertises 100%."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Namecheap have phone support?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Namecheap lists 24/7 live chat and tickets. HostingGuider could not confirm phone support."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Namecheap have email hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Stellar includes 30 mailboxes. Stellar Plus and Business include unlimited mailboxes."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can I host more than three sites on Stellar?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Stellar covers 3 sites. Stellar Plus and Business allow unlimited sites."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Namecheap include a free domain?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "HostingGuider reports it does not. Check the plan page at checkout."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Namecheap good for WordPress?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes for small sites. WordPress installs in one click, and Namecheap lists AI for WordPress. Use a CDN for visitors far from the US."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Namecheap have AI tools?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. It lists AI for WordPress and Sitejet AI Website Builder on every shared plan."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Namecheap better than Hostinger?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Hostinger measured faster and more consistent in tests, with a lower renewal price. Namecheap keeps domains and hosting in one account."
+    }
+   }
+  ]
+ }
+]
