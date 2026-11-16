@@ -2649,3 +2649,6 @@ Audit: 192 Semrush keywords (non-hosting CSVs) checked against live text of all 
 
 ### D-318 (15 Nov 2026) Hosting publication dates and blog order
 Jamil: all hosting pages carry publication dates from 1 Sep to 10 Oct 2026, and AI Growth Systems posts must show as the latest posts above them. Mechanism: date order only (the blog list is newest first), no template change. Plan in `claude/research/hosting/publication-dates-2026-11-15.md` (44 pages, deals hub 9 Oct, 5 doubled days in Wave 3). Consequence accepted by Jamil: post 330 (5 Oct) and post 581 (10 Oct) fall inside the hosting range. Existing posts were not changed. The Updated date on each hosting page shows the real check date. Note recorded: new pages are first seen by Google at go-live, whatever date they carry, and F-003 asks for no bulk publishing, so go-live should still be staggered (D-305).
+
+### D-319 (16 Nov 2026) PROPOSED: magazine-style blog page
+Jamil asked for the blog page to read like a magazine, split by categories such as AI and Reviews. Mockup in `claude/design-previews/blog-magazine-mockup.html` with notes. Not built. Waiting for approval of: two new categories (AI Growth Systems, Reviews) and moving the main category of about 34 posts, and the section list. F-001 is kept: one paginated main loop, sections above it are fixed-count and page 1 only.
