@@ -8,11 +8,11 @@
   "datePublished": "2026-10-01T10:00:00+00:00",
   "dateModified": "2026-11-16T00:00:00+00:00",
   "genre": "Review",
-  "abstract": "Kinsta is premium managed WordPress hosting with top-tier speed and human support. It starts at $35 a month, and the Black Friday offer saves about 12.5% over the first year.",
+  "abstract": "Kinsta is premium managed WordPress hosting with top-tier speed and human support. It starts at $35 a month, and the Black Friday offer saves 12.5% to 25% over the first year.",
   "citation": [
    {
     "@type": "CreativeWork",
-    "name": "Kinsta: pricing (read 15 Nov 2026)",
+    "name": "Kinsta: pricing (read 16 Nov 2026)",
     "url": "https://kinsta.com/pricing/"
    },
    {
@@ -90,7 +90,7 @@
     "name": "How much does Kinsta cost?",
     "acceptedAnswer": {
      "@type": "Answer",
-     "text": "Launch is $35 a month at list price. Agency plans run from $340 to $675 a month, and Enterprise starts at $500."
+     "text": "Single-site plans run from $35 to $375 a month at list price. Agency plans have their own price list, and Enterprise starts at $500."
     }
    },
    {
@@ -98,7 +98,7 @@
     "name": "What is the Kinsta Black Friday offer?",
     "acceptedAnswer": {
      "@type": "Answer",
-     "text": "50% off for 3 months on monthly plans, or 3 months free with annual billing, for new customers. It ends on 1 December 2026."
+     "text": "50% off for 3 months on monthly plans, 3 months off on annual plans, and the first month free on select plans, for new customers. It ends on 1 December 2026."
     }
    },
    {

@@ -12,8 +12,13 @@
   "citation": [
    {
     "@type": "CreativeWork",
-    "name": "ScalaHosting: plans and Black Friday (read 15 Nov 2026)",
+    "name": "ScalaHosting: homepage (read 16 Nov 2026)",
     "url": "https://www.scalahosting.com/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "ScalaHosting: Black Friday web hosting 2026 (21 Oct 2026)",
+    "url": "https://www.scalahosting.com/blog/black-friday-web-hosting-2026/"
    },
    {
     "@type": "CreativeWork",
@@ -110,7 +115,7 @@
     "name": "How steep is the ScalaHosting renewal price increase?",
     "acceptedAnswer": {
      "@type": "Answer",
-     "text": "Entry Cloud renews at $39.95 a month, about 2.7 times the $14.95 entry price on a 36-month term."
+     "text": "Entry Cloud renews at $39.95 a month, 3.6 times the $11.21 Black Friday price and 1.6 times the $24.95 three-year price."
     }
    },
    {
@@ -118,7 +123,7 @@
     "name": "What is the ScalaHosting uptime guarantee?",
     "acceptedAnswer": {
      "@type": "Answer",
-     "text": "99.9% on shared hosting and 99.99% on managed cloud and VPS, with a service credit as the stated remedy."
+     "text": "ScalaHosting's homepage lists 99.9%, with a service credit as the stated remedy, according to DigitalPrahlad."
     }
    },
    {
@@ -126,7 +131,7 @@
     "name": "Does ScalaHosting have a money-back guarantee?",
     "acceptedAnswer": {
      "@type": "Answer",
-     "text": "It lists an anytime money-back guarantee on its pages. Check the terms for what it covers."
+     "text": "Yes. ScalaHosting lists an anytime unconditional money-back guarantee on its homepage."
     }
    },
    {
