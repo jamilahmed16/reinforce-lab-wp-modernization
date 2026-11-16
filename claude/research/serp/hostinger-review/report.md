@@ -1,19 +1,21 @@
 # Competitor semantics: hostinger-review
 
 Our page: -
-Competitors analysed: 5 of 5 (a term counts as common when 3+ of them use it)
+Competitors analysed: 4 of 5 (a term counts as common when 3+ of them use it)
 
 | # | Page | Words | Headings |
 |---|---|---|---|
-| 1 | [Hostinger Review - The Good and Bad (Updated for 2026)](https://crazyegg.com/blog/hostinger-review/) | 2510 | 10 |
-| 2 | [Hostinger review 2026: is it worth it?](https://cybernews.com/best-web-hosting/hostinger-review/) | 415 | 12 |
-| 3 | [Hostinger Review 2026: Honest Pros, Cons & Verdict | BearHost](https://bearhost.com/blogs/hostinger-review) | 1702 | 32 |
-| 4 | [Hostinger Review 2026: Is This The Best Web Host For Beginners?](https://allaboutcookies.org/hostinger-web-hosting-review) | 483 | 22 |
-| 5 | [Hostinger Review: Good Hosting Tools and Value, Underwhelming Customer](https://www.cnet.com/tech/services-and-software/hostinger-review/) | 3526 | 21 |
+| 1 | [Hostinger review 2026: is it worth it?](https://cybernews.com/best-web-hosting/hostinger-review/) | 415 | 12 |
+| 2 | [Hostinger Review - The Good and Bad (Updated for 2026)](https://www.crazyegg.com/blog/hostinger-review/) | 2510 | 10 |
+| 3 | [Hostinger Review 2026: Is This The Best Web Host For Beginners?](https://allaboutcookies.org/hostinger-web-hosting-review) | 483 | 22 |
+| 4 | [Hostinger Review 2026: Honest Pros, Cons & Verdict | BearHost](https://bearhost.com/blogs/hostinger-review) | 1702 | 32 |
 
-## Common terms (152)
+**Not fetched (read these with Exa):**
+- https://www.techradar.com/reviews/hostinger (200) too little text (script-rendered or blocked)
 
-migration (5), good (5), time (5), builder (5), hpanel (5), backups (5), vps hosting (5), cloud hosting (5), shared (5), customer support (5), web hosting (5), hostinger (5), uptime (5), protection (5), daily (5), performance (5), price (5), renewal (5), wordpress (5), page (5), plans (5), prices (4), malware (4), speed (4), pros (4), included (4), tests (4), review (4), cons (4), guarantee (4), live chat (4), weekly backups (4), wordpress hosting (4), store (4), plan (4), business (4), domain (4), features (4), woocommerce (4), website builder (4), ease (4), shared hosting (4), storage (4), response (4), daily backups (4), siteground (4), plans hostinger (4), reviews (4), ddos protection (4), cache (3), competitors (3), still (3), bandwidth (3), excellent (3), online store (3), work (3), dedicated (3), server (3), want (3), premium (3), uptime page (3), help (3), site (3), hosting hostinger (3), value (3), litespeed (3), access (3), great (3), quickly (3), simple (3), options (3), phone (3), first year (3), cpanel (3), hosting plans (3), ai assistant (3), professional (3), code (3), domains (3), tight budget (3), problem (3), blog (3), hostinger offers (3), basic (3), switch (3), sites (3), tools (3), resources (3), best (3), plans include (3), month (3), really (3), solid (3), hostinger provides (3), core (3), pros and cons (3), servers (3), experience (3), pages (3), elsewhere (3), full (3), users (3), choice (3), nvme (3), knowledge base (3), free (3), strong (3), data center (3), whois (3), hosting vps hosting (3), higher (3), specific (3), need (3), tier (3), dashboard (3), harder (3), offer (3), times (3), rates (3), cloud startup (3), setup (3), option (3), hostinger pricing (3), registration (3), load (3), long-term (3), hostinger plans (3), fast (3), host (3), four (3), serious (3), plus (3), reliable (3), including (3), control panel (3), starts (3), traffic (3), questions (3), ionos (3), overall (3), beginners (3), trustpilot (3), bluehost (3), starting price (3), hostinger pros (3), hosting shared (3), hosting wordpress (3), cost (3), security (3), hostinger customer support (3), monthly (3), small (3)
+## Common terms (60)
+
+backups (4), page (4), cloud hosting (4), vps hosting (4), uptime (4), performance (4), price (4), customer support (4), wordpress (4), hostinger (4), renewal (4), time (4), daily (4), plans (4), builder (4), migration (4), protection (4), web hosting (4), good (4), hpanel (4), shared (4), tests (3), speed (3), control panel (3), daily backups (3), ease (3), bluehost (3), strong (3), nvme (3), bandwidth (3), store (3), response (3), ddos protection (3), pros and cons (3), malware (3), business (3), live chat (3), hosting wordpress (3), reviews (3), review (3), uptime page (3), prices (3), website builder (3), plans hostinger (3), storage (3), domain (3), wordpress hosting (3), included (3), shared hosting (3), siteground (3), hosting vps hosting (3), whois (3), ai assistant (3), plan (3), premium (3), woocommerce (3), guarantee (3), features (3), weekly backups (3), cloud startup (3)
 
 ## Questions competitors answer in headings (17)
 
@@ -37,18 +39,6 @@ migration (5), good (5), time (5), builder (5), hpanel (5), backups (5), vps hos
 
 ## Headings by page
 
-**Hostinger Review - The Good and Bad (Updated for 2026)**
-- H2 Hostinger: The Good and The Bad
-- H3 The Good
-- H3 The Bad
-- H2 Hostinger Pricing and Options
-- H3 Hostinger Premium
-- H3 Hostinger Business
-- H3 Cloud Hosting
-- H3 VPS Hosting
-- H3 Minecraft Hosting
-- H2 Expanding Your Hostinger Knowledge
-
 **Hostinger review 2026: is it worth it?**
 - H2 Hostinger review: my verdict
 - H2 Hostinger pros and cons 2026
@@ -62,6 +52,42 @@ migration (5), good (5), time (5), builder (5), hpanel (5), backups (5), vps hos
 - H2 Support is good, but not as good as it used to be
 - H2 Hostinger reviews online are mixed
 - H2 FAQ
+
+**Hostinger Review - The Good and Bad (Updated for 2026)**
+- H2 Hostinger: The Good and The Bad
+- H3 The Good
+- H3 The Bad
+- H2 Hostinger Pricing and Options
+- H3 Hostinger Premium
+- H3 Hostinger Business
+- H3 Cloud Hosting
+- H3 VPS Hosting
+- H3 Minecraft Hosting
+- H2 Expanding Your Hostinger Knowledge
+
+**Hostinger Review 2026: Is This The Best Web Host For Beginners?**
+- H2 At a glance
+- H2 Why You Can Trust Our Web Hosting Reviews
+- H2 Hostinger web hosting prices and plans
+- H2 Hostinger web hosting performance
+- H2 Speed test
+- H2 Uptime and response
+- H2 Stress tests
+- H2 AI Troubleshooter
+- H2 Hostinger web building and migration
+- H2 Kodee: Hostinger AI assistant
+- H2 Hostinger Connector
+- H2 Hostinger Reach
+- H2 Hostinger security features
+- H2 Hostinger customer support and reputation
+- H2 Hostinger vs. GoDaddy
+- H2 Hostinger vs. Bluehost
+- H2 Hostinger vs. IONOS
+- H2 Bottom line: Is Hostinger web hosting good?
+- H2 Is Hostinger legit?
+- H2 Are WordPress and Hostinger the same?
+- H2 What is the disadvantage of Hostinger?
+- H2 Is Hostinger safe?
 
 **Hostinger Review 2026: Honest Pros, Cons & Verdict | BearHost**
 - H1 Hostinger Review 2026: Honest Verdict After Studying Every Plan
@@ -96,50 +122,3 @@ migration (5), good (5), time (5), builder (5), hpanel (5), backups (5), vps hos
 - H3 Is Hostinger's domain registration any good?
 - H3 Does Hostinger offer a money-back guarantee?
 - H2 Conclusion
-
-**Hostinger Review 2026: Is This The Best Web Host For Beginners?**
-- H2 At a glance
-- H2 Why You Can Trust Our Web Hosting Reviews
-- H2 Hostinger web hosting prices and plans
-- H2 Hostinger web hosting performance
-- H2 Speed test
-- H2 Uptime and response
-- H2 Stress tests
-- H2 AI Troubleshooter
-- H2 Hostinger web building and migration
-- H2 Kodee: Hostinger AI assistant
-- H2 Hostinger Connector
-- H2 Hostinger Reach
-- H2 Hostinger security features
-- H2 Hostinger customer support and reputation
-- H2 Hostinger vs. GoDaddy
-- H2 Hostinger vs. Bluehost
-- H2 Hostinger vs. IONOS
-- H2 Bottom line: Is Hostinger web hosting good?
-- H2 Is Hostinger legit?
-- H2 Are WordPress and Hostinger the same?
-- H2 What is the disadvantage of Hostinger?
-- H2 Is Hostinger safe?
-
-**Hostinger Review: Good Hosting Tools and Value, Underwhelming Customer Support - CNET**
-- H2 Hostinger
-- H3 Pros & Cons
-- H2 Value: Solid prices for long-term hosting
-- H3 Shared hosting and WordPress hosting
-- H3 WooCommerce hosting
-- H3 VPS and cloud hosting
-- H2 Ease of use: Perfect for first-time website owners
-- H3 A mostly streamlined purchase process
-- H3 Account management is intuitive
-- H3 Website and server management
-- H2 Performance: Reliable uptime, inconsistent site speed
-- H3 Uptime was great
-- H3 Site speed was great with optimization tools, but underwhelming without
-- H3 Performance tools may be able to compensate for sluggish server speeds
-- H2 Security: Above average, but it could still be better
-- H2 Customer service: Great self-serve support and a well-trained AI support bot, but poor human support
-- H3 Hostinger knowledge base and tutorials
-- H3 Direct communication (email, live chat, phone, social media)
-- H3 Reputation
-- H2 Hostinger is a solid web host for most folks, but its sluggish server speeds and customer service issues may hold it back
-- H3 The Latest from Dianna

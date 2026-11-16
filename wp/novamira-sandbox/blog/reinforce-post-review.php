@@ -42,6 +42,9 @@ add_action('acf/init', function () {
             $f('rl_r_price_date', 'Price checked on', 'date_picker', ['display_format' => 'j M Y', 'return_format' => 'Y-m-d']),
             $f('rl_r_trial', 'Free trial', 'text', ['instructions' => 'e.g. 14 days. Leave empty to hide.']),
             $f('rl_r_best', 'Best for', 'text'),
+            $f('rl_r_renewal', 'Renews at', 'text', ['instructions' => 'At a glance strip on research-based reviews, e.g. $10.99 a month.']),
+            $f('rl_r_guarantee', 'Money-back guarantee', 'text', ['instructions' => 'At a glance strip, e.g. 30 days.']),
+            $f('rl_r_method', 'How we researched this review', 'textarea', ['rows' => 5, 'instructions' => 'Research-based reviews only. One per line: Label | Detail. Example: Independent tests | 2 tests with published numbers']),
             $f('rl_r_plans', 'Pricing plans', 'textarea', ['rows' => 4, 'instructions' => 'One per line: Plan | Price | What you get. Example: Pro | $49 a month | Up to 100,000 URLs']),
             $f('rl_r_alts', 'Alternatives', 'textarea', ['rows' => 4, 'instructions' => 'One per line: Name | Best for | From | Extra column value | URL (URL optional)']),
             $f('rl_r_alt_col', 'Alternatives: extra column heading', 'text', ['instructions' => 'e.g. JavaScript pages. Leave empty for no extra column.']),
@@ -84,7 +87,7 @@ function rl_review_data($id) {
         'crit' => $crit, 'scores' => $scores, 'score' => $score,
         'log' => rl_review_rows(get_post_meta($id, 'rl_r_log', true), 3),
         'pros' => rl_post_lines(get_post_meta($id, 'rl_r_pros', true)), 'cons' => rl_post_lines(get_post_meta($id, 'rl_r_cons', true)),
-        'price' => $m('rl_r_price'), 'checked' => $pd ? date_i18n('j M Y', strtotime($pd)) : '', 'trial' => $m('rl_r_trial'), 'best' => $m('rl_r_best'),
+        'renewal' => $m('rl_r_renewal'), 'guarantee' => $m('rl_r_guarantee'), 'method' => rl_review_rows(get_post_meta($id, 'rl_r_method', true), 2), 'price' => $m('rl_r_price'), 'checked' => $pd ? date_i18n('j M Y', strtotime($pd)) : '', 'trial' => $m('rl_r_trial'), 'best' => $m('rl_r_best'),
         'plans' => rl_review_rows(get_post_meta($id, 'rl_r_plans', true), 2), 'alts' => rl_review_rows(get_post_meta($id, 'rl_r_alts', true), 2),
         'alt_col' => $m('rl_r_alt_col'), 'alt_this' => $m('rl_r_alt_this'),
         'url' => esc_url_raw($m('rl_r_url')), 'button' => $m('rl_r_button') ?: ($product !== '' ? 'Visit ' . $product : 'Visit site'), 'final' => $m('rl_r_final'),
@@ -105,7 +108,7 @@ function rl_review_render($c) {
     $tw = array_sum(array_column($r['crit'], 1));
     $p = $r['product'];
     $h1 = ($p !== '' && stripos($title, $p) === 0) ? '<span class="pn">' . esc_html(mb_substr($title, 0, mb_strlen($p) + (mb_substr($title, mb_strlen($p), 1) === ':' ? 1 : 0))) . '</span>' . esc_html(mb_substr($title, mb_strlen($p) + (mb_substr($title, mb_strlen($p), 1) === ':' ? 1 : 0))) : esc_html($title);
-    $cond = array_filter([['Version tested', $r['version']], ['Test period', $r['period']], ['Plan tested', $r['plan'] !== '' ? $r['plan'] . ($r['paid'] ? ', paid by us' : ', access from the vendor') : ''], ['Test site', $r['setup']], ['Price checked', $r['checked']]], function ($x) { return $x[1] !== ''; });
+    $cond = !$r['tested'] ? array_filter([['Starting price', $r['price']], ['Renews at', $r['renewal']], ['Money-back', $r['guarantee']], ['Best for', $r['best']], ['Price checked', $r['checked']]], function ($x) { return $x[1] !== ''; }) : array_filter([['Version tested', $r['version']], ['Test period', $r['period']], ['Plan tested', $r['plan'] !== '' ? $r['plan'] . ($r['paid'] ? ', paid by us' : ', access from the vendor') : ''], ['Test site', $r['setup']], ['Price checked', $r['checked']]], function ($x) { return $x[1] !== ''; });
     $cta = null; $svc = (string) get_post_meta($id, 'rl_r_cta_service', true); $head = trim((string) get_post_meta($id, 'rl_r_cta_head', true));
     if ($svc !== '' && $head !== '' && function_exists('rl_pt_services') && isset(rl_pt_services()[$svc])) {
         $cta = ['name' => rl_pt_services()[$svc], 'url' => $u($svc), 'head' => $head, 'sub' => trim((string) get_post_meta($id, 'rl_r_cta_sub', true)), 'btn' => trim((string) get_post_meta($id, 'rl_r_cta_button', true)) ?: 'See how it works'];
@@ -116,7 +119,7 @@ function rl_review_render($c) {
     $visit = function ($cls = 'go') use ($r, $rel) { return $r['url'] !== '' ? '<a class="' . $cls . '" href="' . esc_url($r['url']) . '" rel="' . esc_attr($rel) . '" target="_blank">' . esc_html($r['button']) . ' <span aria-hidden="true">&rarr;</span></a>' . ($r['aff'] && function_exists('rl_aff_label') ? rl_aff_label() : '') : ''; };
     $meter = '';
     if ($r['score'] !== null) { $full = (int) floor($r['score']); $frac = $r['score'] - $full; for ($i = 1; $i <= 10; $i++) $meter .= '<i' . ($i <= $full ? ' class="on"' : ($i === $full + 1 && $frac > 0.001 ? ' class="half"' : '')) . '></i>'; }
-    $jump = array_filter(['log' => $r['log'] ? ($r['tested'] ? 'Test log' : 'Evidence log') : '', 'scores' => $r['crit'] ? 'Scorecard' : '', 'pricing' => $r['plans'] ? 'Pricing' : '', 'alts' => $r['alts'] ? 'Alternatives' : '']);
+    $jump = array_filter(['log' => $r['log'] ? ($r['tested'] ? 'Test log' : 'Evidence log') : '', 'scores' => $r['crit'] ? 'Scorecard' : '', 'pricing' => $r['plans'] ? 'Pricing' : '', 'alts' => $r['alts'] ? 'Alternatives' : '', 'method' => (!$r['tested'] && $r['method']) ? 'How we researched' : '']);
     $card = $r['score'] !== null || $r['url'] !== '' || $r['price'] !== '';
     ?>
 <div class="rl-page rl-post rl-review">
@@ -225,6 +228,12 @@ function rl_review_render($c) {
       </section>
       <?php } ?>
 
+      <?php if (!$r['tested'] && $r['method']) { ?>
+      <section class="sec" id="method" aria-labelledby="mt-h"><div class="sec-h"><span>Our research</span><h2 id="mt-h">How we researched this review</h2></div>
+        <dl class="r-method"><?php foreach ($r['method'] as $mrow) echo '<div><dt>' . esc_html($mrow[0]) . '</dt><dd>' . esc_html($mrow[1]) . '</dd></div>'; ?></dl>
+      </section>
+      <?php } ?>
+
       <?php if ($r['final'] !== '' || $r['score'] !== null) { ?>
       <section class="r-final<?php echo $r['score'] === null ? ' noscore' : ''; ?>" aria-label="Final verdict">
         <?php if ($r['score'] !== null) { ?><div class="fs"><?php echo esc_html(rl_review_num($r['score'])); ?><small>out of 10</small></div><?php } ?>
@@ -329,6 +338,12 @@ add_action('wp_head', function () {
     if (!rl_is_review_view()) return; ?>
 <style id="rl-review-css">
 .rl-review{color:var(--ink-dim);--ok:#3fa36b}
+.rl-review .r-method{margin:0;border:1px solid var(--line-2);background:var(--bg-2)}
+.rl-review .r-method div{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:16px;padding:14px 18px;border-bottom:1px dashed var(--line-2)}
+.rl-review .r-method div:last-child{border-bottom:0}
+.rl-review .r-method dt{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute)}
+.rl-review .r-method dd{margin:0;color:var(--ink)}
+@media (max-width:640px){.rl-review .r-method div{grid-template-columns:minmax(0,1fr);gap:4px}}
 .rl-review h1,.rl-review h2,.rl-review h3{font-family:var(--f-display);font-weight:600;text-transform:uppercase;color:var(--ink);line-height:1.04;letter-spacing:.005em;text-wrap:balance}
 .rl-review .ic{width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square}
 .rl-review .r-hero{padding-block:clamp(24px,4vw,40px) 0}
