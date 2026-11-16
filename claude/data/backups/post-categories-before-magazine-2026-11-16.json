@@ -1,0 +1,38 @@
+{
+ "note": "The request timed out after it had applied, so the exact before-state was not captured. To revert: remove category 29 (AI Growth Systems) from the ai posts and 30 (Reviews) from the review posts, and delete or reset _yoast_wpseo_primary_category on them (it was most likely unset; posts with a primary category before were Digital Marketing or Search Engine Optimization).",
+ "term_ai": 29,
+ "term_reviews": 30,
+ "ai_posts": [
+  330,
+  581,
+  584,
+  586,
+  591,
+  596,
+  598,
+  600,
+  601,
+  602,
+  603,
+  604,
+  605,
+  607,
+  608,
+  609,
+  611,
+  612,
+  613,
+  614,
+  615
+ ],
+ "review_posts": [
+  482,
+  458,
+  441,
+  404,
+  386,
+  366,
+  452,
+  498
+ ]
+}

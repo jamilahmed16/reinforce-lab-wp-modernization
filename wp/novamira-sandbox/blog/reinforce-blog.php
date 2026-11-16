@@ -107,8 +107,30 @@ body.rl-blog-page .fl-page-content,body.rl-blog-page .fl-content,body.rl-blog-pa
 .rl-blog .pager .screen-reader-text{position:absolute;left:-9999px}
 @media(max-width:1000px){.rl-blog .posts{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.rl-blog .posts{grid-template-columns:minmax(0,1fr)}}
+/* D-319 magazine sections (blog page 1 only). Read-only fixed-count lists; the paginated list below stays the one main loop (F-001). */
+.rl-blog .mag-sec{padding:clamp(30px,4.5vw,56px) 0;border-top:1px solid var(--line-2)}
+.rl-blog .mag-sec.alt{background:var(--bg-2)}
+.rl-blog .mag-sh{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-bottom:24px;padding-bottom:14px;border-bottom:2px solid var(--red-2)}
+.rl-blog .mag-sh h2{margin:0;font-size:clamp(28px,3.2vw,42px)}
+.rl-blog .mag-sh p{margin:6px 0 0;color:var(--ink-dim);max-width:640px}
+.rl-blog .mag-sh .all{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-3)}
+.rl-blog .mag-g3,.rl-blog .mag-g4{list-style:none;margin:0;padding:0;display:grid;gap:clamp(16px,2vw,24px)}
+.rl-blog .mag-g3{grid-template-columns:repeat(3,minmax(0,1fr))}.rl-blog .mag-g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.rl-blog .mag-feat{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(16px,2vw,24px)}
+.rl-blog .mag-stack{list-style:none;margin:0;padding:0;display:grid;gap:14px;align-content:start}
+.rl-blog .mag-stack li{display:grid;grid-template-columns:190px minmax(0,1fr);gap:16px;align-items:center;background:var(--bg-2);border:1px solid var(--line-2)}
+.rl-blog .mag-stack .img{aspect-ratio:16/9;border:0}
+.rl-blog .mag-stack .body{padding:12px 16px 12px 0;gap:6px}
+.rl-blog .mag-stack h3{font-size:18px;line-height:1.15;margin:0}
+.rl-blog .mag-stack h3 a,.rl-blog .post h3 a{color:var(--ink)}
+.rl-blog .post h3{font-size:20px;line-height:1.15;margin:0}
+.rl-blog .post.big h3{font-size:clamp(24px,2.5vw,34px)}
+.rl-blog .mag-all{padding-top:clamp(30px,4.5vw,56px)}
+@media(max-width:1000px){.rl-blog .mag-g4,.rl-blog .mag-g3{grid-template-columns:repeat(2,minmax(0,1fr))}.rl-blog .mag-feat{grid-template-columns:1fr}}
+@media(max-width:600px){.rl-blog .mag-g3,.rl-blog .mag-g4{grid-template-columns:minmax(0,1fr)}.rl-blog .mag-stack li{grid-template-columns:120px minmax(0,1fr)}}
 </style>
 <?php }
+
 
 /* D-180: the filter row lists main categories only (the category each post is filed under, D-179), busiest first,
    instead of every production category. */
@@ -163,6 +185,66 @@ function rl_blog_heading() {
     return ['Blog', ['Insights on AI', 'growth systems', '<r>and search.</r>'], '<strong>The Reinforce Lab blog</strong> covers SEO, AI search, content systems and automation: practical articles for growth-stage founders and B2B teams who want search to drive revenue.'];
 }
 
+/* D-319: magazine sections on page 1 of /blog/. Order set by Jamil (16 Nov 2026): AI, SEO, Marketing, Content, Reviews, Hosting.
+   Each section lists posts whose MAIN category (D-179) is that category, newest first, no post twice, at least 3 or the section is skipped. */
+function rl_mag_card($p, $big = false) {
+    $id = $p->ID; $cat = function_exists('rl_post_main_cat') ? rl_post_main_cat($id) : null;
+    $pdx = function_exists('rl_post_data') ? rl_post_data($id) : array();
+    $pdate = !empty($pdx['updated']) ? 'Updated ' . date_i18n('j M Y', strtotime($pdx['updated'])) : get_the_date('j M Y', $id);
+    $tl = !empty($pdx['type_label']) ? $pdx['type_label'] : '';
+    $link = get_permalink($id); $cname = $cat ? $cat->name : 'Reinforce Lab';
+    ob_start(); ?>
+<li class="post<?php echo $big ? ' big' : ''; ?>">
+  <?php if (has_post_thumbnail($id)) { ?><a class="img" href="<?php echo esc_url($link); ?>" tabindex="-1" aria-hidden="true"><?php echo get_the_post_thumbnail($id, 'medium_large', array('loading' => 'lazy', 'alt' => '')); ?></a><?php }
+  else { ?><a class="img ph" href="<?php echo esc_url($link); ?>" tabindex="-1" aria-hidden="true"><span><?php echo esc_html($tl ?: 'Article'); ?></span><b><?php echo esc_html($cname); ?></b></a><?php } ?>
+  <div class="body">
+    <span class="meta"><?php if ($tl) echo '<span class="type">' . esc_html($tl) . '</span> · '; ?><time datetime="<?php echo esc_attr(!empty($pdx['updated']) ? $pdx['updated'] : get_the_date('c', $id)); ?>"><?php echo esc_html($pdate); ?></time></span>
+    <h3><a href="<?php echo esc_url($link); ?>"><?php echo esc_html(get_the_title($id)); ?></a></h3>
+    <?php if ($big) { ?><p><?php echo esc_html(wp_trim_words(get_the_excerpt($id), 30)); ?></p><?php } ?>
+  </div>
+</li>
+<?php return ob_get_clean();
+}
+function rl_blog_magazine() {
+    $secs = array(
+        array('ai-growth-systems', 'AI Growth Systems', 'How AI, content and search visibility work together as one growth engine.', 'feat', 5),
+        array('search-engine-optimization', 'SEO', 'Technical SEO, content and zero-click search.', 'g3', 3),
+        array('digital-marketing', 'Marketing', 'Digital marketing strategy, channels and industry guides.', 'g3', 3),
+        array('content-marketing', 'Content', 'Content ideas, writing and social media for small business.', 'g3', 3),
+        array('reviews', 'Reviews', 'Reviews of SEO, content and WordPress tools and hosts.', 'g4', 4),
+        array('web-hosting', 'Hosting', 'WordPress hosting guides, comparisons and deals.', 'g4', 4),
+    );
+    $shown = array(); $i = 0;
+    foreach ($secs as $s) {
+        list($slug, $title, $sub, $layout, $cnt) = $s;
+        $term = get_term_by('slug', $slug, 'category'); if (!$term || is_wp_error($term)) continue;
+        $pool = get_posts(array('category' => $term->term_id, 'numberposts' => 60, 'post_status' => 'publish', 'orderby' => 'date', 'order' => 'DESC', 'no_found_rows' => true));
+        $pick = array();
+        foreach ($pool as $p) {
+            if (in_array($p->ID, $shown, true)) continue;
+            $mc = function_exists('rl_post_main_cat') ? rl_post_main_cat($p->ID) : null;
+            if (!$mc || (int) $mc->term_id !== (int) $term->term_id) continue;
+            $pick[] = $p; if (count($pick) >= $cnt) break;
+        }
+        if (count($pick) < 3) continue;
+        foreach ($pick as $p) $shown[] = $p->ID;
+        $i++; $alt = ($i % 2 === 0) ? ' alt' : '';
+        $all = ($slug === 'reviews' && function_exists('rl_url_by_path') && rl_url_by_path('reviews', '')) ? array(rl_url_by_path('reviews', ''), 'Reviews hub') : array(get_category_link($term), 'All ' . $title . ' articles');
+        echo '<section class="mag-sec' . $alt . '" id="sec-' . esc_attr($slug) . '"><div class="wrap"><header class="mag-sh"><div><span class="ey"><b>[</b>&nbsp;' . sprintf('%02d', $i) . '&nbsp;<b>]</b></span><h2>' . esc_html($title) . '</h2><p>' . esc_html($sub) . '</p></div><a class="all" href="' . esc_url($all[0]) . '">' . esc_html($all[1]) . ' &rarr;</a></header>';
+        if ($layout === 'feat') {
+            echo '<div class="mag-feat"><ul class="posts" style="grid-template-columns:1fr">' . rl_mag_card($pick[0], true) . '</ul><ul class="mag-stack">';
+            foreach (array_slice($pick, 1) as $p) echo rl_mag_card($p);
+            echo '</ul></div>';
+        } else {
+            echo '<ul class="' . ($layout === 'g4' ? 'mag-g4' : 'mag-g3') . ' posts">';
+            foreach ($pick as $p) echo rl_mag_card($p);
+            echo '</ul>';
+        }
+        echo '</div></section>';
+    }
+    return $i;
+}
+
 /* ---------- render: one loop, the main query, core pagination ---------- */
 add_action('template_redirect', 'rl_blog_render', 99);
 function rl_blog_render() {
@@ -207,8 +289,10 @@ function rl_blog_render() {
   </div>
 </section>
 
-<section class="band alt" id="articles">
+<?php $mag = (is_home() && $paged === 1) ? rl_blog_magazine() : 0; ?>
+<section class="band alt<?php echo $mag ? ' mag-all' : ''; ?>" id="articles">
   <div class="wrap">
+    <?php if ($mag) { ?><header class="mag-sh"><div><h2>All articles</h2><p>Every article, newest first.</p></div></header><?php } ?>
     <?php if (have_posts()) { ?>
     <ul class="posts">
       <?php while (have_posts()) { the_post();
