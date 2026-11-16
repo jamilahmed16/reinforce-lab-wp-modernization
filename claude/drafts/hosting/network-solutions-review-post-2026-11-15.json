@@ -1,0 +1,35 @@
+{
+ "title": "Network Solutions Review 2026: Plans, Prices and Speed Test",
+ "excerpt": "A Network Solutions hosting review from its own pages and a three-week HostingAdvice test, with prices, renewals, speed, AI builder and pros and cons.",
+ "body_file": "claude/drafts/hosting/network-solutions-review-body-2026-11-15.html",
+ "date": "2026-09-21 10:00:00",
+ "meta": {
+  "_yoast_wpseo_title": "Network Solutions Review 2026: Prices, Speed",
+  "_yoast_wpseo_metadesc": "Network Solutions hosting review for 2026: plan prices and renewals, a three-week HostingAdvice speed test, support, AI builder, pros and cons.",
+  "_yoast_wpseo_focuskw": "network solutions review",
+  "rl_type": "guide",
+  "rl_updated": "2026-11-15",
+  "rl_answer": "Network Solutions is easy for beginners and slower than most rivals. Renewal is about three times the promo price on Starter.",
+  "rl_faqs": "Is Network Solutions good for hosting? | It is easy for beginners. HostingAdvice found speed a bit below average and no CDN.\nHow much does Network Solutions hosting cost? | Starter is $2.99 a month at the promo price and $8.83 a month at renewal.\nHow fast is Network Solutions? | HostingAdvice measured grade B on the cheap plan, grade C on the WordPress plan and grade A on the eCommerce plan.\nDoes Network Solutions have a money-back guarantee? | We did not find one on the hosting page.\nDoes Network Solutions have a Black Friday deal? | Its blog lists SITEWIDE30 for 30% off an AI All-Access Pack from 23 November to 7 December 2026. It is not a hosting discount.",
+  "rl_sources": "Network Solutions: hosting (read 15 Nov 2026) | https://www.networksolutions.com/hosting\nHostingAdvice: Network Solutions review (Nov 2026, 3 weeks of testing) | https://www.hostingadvice.com/hosting-review/network-solutions/",
+  "rl_takeaways": "Starter is $2.99 a month promo and $8.83 at renewal.\nHostingAdvice measured grades B, C and A across three plans.\nThere is no CDN or NVMe storage, per HostingAdvice.\nSITEWIDE30 is not a hosting discount.",
+  "rl_g_glossary": "Renewal price | The price after the promo term ends.\nGTmetrix | A tool that grades page speed.\nCDN | A network that serves your pages from nearby servers.\nNVMe | A fast type of storage.",
+  "rl_g_cta_service": "services/website-maintenance-services",
+  "rl_g_cta_head": "Moving a live site to a new host?",
+  "rl_g_cta_sub": "Reinforce Lab can copy, test and switch your WordPress site without lost rankings.",
+  "rl_g_cta_button": "See website maintenance"
+ },
+ "categories": [
+  "Web Hosting"
+ ],
+ "slug": "network-solutions-review",
+ "author": 3,
+ "blockers": [
+  "Confirm money-back terms on the live page",
+  "Offer dates 23 Nov to 7 Dec from Jamil: re-check on publish day",
+  "Check wording about the Domain.com link before publish",
+  "Affiliate links not placed",
+  "Disclosure wording is a draft",
+  "Re-read prices and offers on publish day"
+ ]
+}

@@ -1,0 +1,126 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-23T10:00:00+00:00",
+  "dateModified": "2026-11-15T00:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "Liquid Web is a managed host for busy sites. Pro WordPress starts at $19 a month, and Nexcess is now part of Liquid Web.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Liquid Web: managed WordPress hosting (read 15 and 16 Nov 2026)",
+    "url": "https://www.liquidweb.com/wordpress-hosting/managed-wordpress/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Website Planet: Liquid Web (formerly Nexcess) review",
+    "url": "https://www.websiteplanet.com/web-hosting/nexcess/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is Liquid Web good?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Website Planet saw no downtime in a one-week test of the entry plan. The test was short."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Nexcess the same as Liquid Web?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "TechRadar said Nexcess is now fully absorbed into Liquid Web."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does Liquid Web managed WordPress cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Pro WordPress starts at $19 a month for 50,000 visits. Elite starts at $29 a month."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Liquid Web have a money-back guarantee?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The managed WordPress page we read did not show one. Check the live terms."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Liquid Web have AI features?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The page we read did not list any."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Liquid Web Review 2026: Managed WordPress, Nexcess and Pricing",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Managed WordPress",
+    "description": "Hosting where the host handles updates, backups and security.",
+    "url": "https://reinforcelab.online/preview/#term-managed-wordpress"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Staging",
+    "description": "A private copy of your site for testing changes.",
+    "url": "https://reinforcelab.online/preview/#term-staging"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Object cache",
+    "description": "Memory that stores database results to speed up pages.",
+    "url": "https://reinforcelab.online/preview/#term-object-cache"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "SLA",
+    "description": "A promise about service levels.",
+    "url": "https://reinforcelab.online/preview/#term-sla"
+   }
+  ]
+ }
+]

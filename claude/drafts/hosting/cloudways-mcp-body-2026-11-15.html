@@ -1,0 +1,40 @@
+<p><strong>Affiliate disclosure (draft wording, needs approval).</strong> Some links on this page are affiliate links. If you buy through one, Reinforce Lab may earn a commission. It does not change the price you pay. We use each host's own pages for prices and features, and we say when we did not test something.</p>
+<p>Cloudways has an MCP server. It lets an AI tool such as Claude or Cursor work on your Cloudways servers when you ask in plain language. This guide uses Cloudways' own help article, read on 16 November 2026. We did not test the server.</p>
+<h2>What is the Cloudways MCP server?</h2>
+<p>MCP stands for Model Context Protocol. It is a standard way for AI tools to connect to other software. Cloudways says its MCP server connects your AI assistant to your Cloudways account and turns your requests into real actions on your servers and apps.</p>
+<h2>What can it do?</h2>
+<p>Cloudways lists tools for account, server, app, service, monitoring, DNS, Cloudflare, Git and security tasks. Examples from the help article:</p>
+<table>
+<thead><tr><th>You ask for</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>See your servers</td><td>List servers and inspect one</td></tr>
+<tr><td>Scale up for traffic</td><td>Change the server size</td></tr>
+<tr><td>Clear the cache</td><td>Purge all caches for an app</td></tr>
+<tr><td>Create a staging copy</td><td>Clone an app</td></tr>
+<tr><td>Back up before a deploy</td><td>Back up an app</td></tr>
+<tr><td>Diagnose high CPU</td><td>Read the server monitoring graph</td></tr>
+<tr><td>Find slow pages or slow queries</td><td>Read PHP and MySQL analytics</td></tr>
+<tr><td>Security check</td><td>Refresh and list vulnerabilities</td></tr>
+<tr><td>Create or delete a server</td><td>Spin up a new server, or delete one</td></tr>
+</tbody>
+</table>
+<h2>How do you set it up?</h2>
+<ol>
+<li><strong>Get credentials.</strong> Log in to the Cloudways platform and open API Integration from your profile. Cloudways says the old API key method is deprecated by 15 October 2026 and tells you to use an access token instead.</li>
+<li><strong>Add the server to your AI client.</strong> The MCP address is https://mcp.cloudways.com/mcp/. Each request needs two headers, X-Access-Token and X-Mcp-Host. The help article has steps for Cursor, Claude Desktop, Claude Code, VS Code, Gemini CLI and Codex.</li>
+<li><strong>Check the link.</strong> Ask "Show me all my servers". You should see your servers with their status, provider, region and IP address.</li>
+</ol>
+<h2>What do you need?</h2>
+<ul>
+<li>A Cloudways account with access to the servers you want to manage.</li>
+<li>An MCP-compatible AI client.</li>
+<li>Node.js 24.14.1 or higher for some clients, such as the Claude Desktop bridge.</li>
+</ul>
+<h2>How to use it safely</h2>
+<p>This part is our advice, not from Cloudways. The tool list includes deleting servers and apps. Start with a test server. Ask for read-only things first, such as listing servers and checking monitoring. Keep a backup before any change.</p>
+<h2>What about Cloudways AI Agents plans?</h2>
+<p>Cloudways also sells AI Agents plans from $9.99 a month at list price. They include isolated instances and a Cloudways MCP integration. You bring your own AI model keys. The MCP server above is for managing your Cloudways servers. The AI Agents plans are for running agents. Read our <a href="/cloudways-review/">Cloudways review</a> and <a href="/best-ai-web-hosting/">best AI web hosting</a> guide for more.</p>
+<h2>Our interest in this topic</h2>
+<p>Reinforce Lab builds and maintains WordPress sites. We may earn a commission when you buy hosting through the links on this page. We do not host sites ourselves, and we did not test this host. We use the host's own pages and named independent tests.</p>
+<h2>Final thoughts</h2>
+<p>The Cloudways MCP server saves clicks for tasks you repeat. Treat it like a staff login. Test on a spare server first.</p>

@@ -1,0 +1,35 @@
+{
+ "title": "DigitalOcean Review 2026: Droplet Prices, WordPress and AI Tools",
+ "excerpt": "A DigitalOcean review from the provider's own pages: Droplet prices, backups, WordPress setup, the $5 credit and AI products.",
+ "body_file": "claude/drafts/hosting/digitalocean-review-body-2026-11-15.html",
+ "date": "2026-09-20 10:00:00",
+ "meta": {
+  "_yoast_wpseo_title": "DigitalOcean Review 2026: Droplets, Prices, AI",
+  "_yoast_wpseo_metadesc": "DigitalOcean review for 2026: Droplet prices from $4 a month, backup costs, WordPress on a Droplet, the $5 credit, GPU and AI products, pros and cons.",
+  "_yoast_wpseo_focuskw": "digitalocean review",
+  "rl_type": "guide",
+  "rl_updated": "2026-11-15",
+  "rl_answer": "DigitalOcean is a developer cloud with Droplets from $4 a month. You manage the server, and backups cost extra.",
+  "rl_faqs": "Is DigitalOcean good for WordPress? | Only if you can run a server. DigitalOcean sells the server, and you manage updates, caching and security.\nHow much does DigitalOcean cost? | Basic Droplets start at $4 a month for 512 MiB RAM. A 2 GiB RAM Droplet is $12 a month.\nDoes DigitalOcean charge for backups? | Yes. It lists 20% of the Droplet price for weekly backups and 30% for daily.\nDoes DigitalOcean have AI products? | Yes. It lists Gradient AI Platform and GPU Droplets.\nIs there a DigitalOcean free credit? | New accounts get a $5 credit for 90 days. No code is needed.",
+  "rl_sources": "DigitalOcean: Droplet pricing (read 16 Nov 2026) | https://www.digitalocean.com/pricing/droplets\nDigitalOcean: pricing (read 15 Nov 2026) | https://www.digitalocean.com/pricing\nDigitalOcean docs: signup credit | https://docs.digitalocean.com/platform/billing/signup-credit/",
+  "rl_takeaways": "Droplets start at $4 a month.\nBackups cost 20% or 30% extra.\nNew accounts get a $5 credit for 90 days.\nYou manage the server yourself.",
+  "rl_g_glossary": "Droplet | A virtual server at DigitalOcean.\n1-Click App | A pre-built app you can add to a Droplet.\nGPU | A chip used for AI work.\nManaged host | A host that looks after the server for you.",
+  "rl_g_cta_service": "services/website-maintenance-services",
+  "rl_g_cta_head": "Moving a live site to a new host?",
+  "rl_g_cta_sub": "Reinforce Lab can copy, test and switch your WordPress site without lost rankings.",
+  "rl_g_cta_button": "See website maintenance"
+ },
+ "categories": [
+  "Web Hosting"
+ ],
+ "slug": "digitalocean-review",
+ "author": 3,
+ "blockers": [
+  "No independent test found: find one with method and numbers",
+  "Re-read pricing on publish day",
+  "Uptime SLA not on the pricing page: check the SLA page",
+  "Affiliate links not placed",
+  "Disclosure wording is a draft",
+  "Re-read prices and offers on publish day"
+ ]
+}

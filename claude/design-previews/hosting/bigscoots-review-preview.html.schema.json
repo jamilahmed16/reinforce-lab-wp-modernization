@@ -1,0 +1,126 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-17T10:00:00+00:00",
+  "dateModified": "2026-11-15T00:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "BigScoots is a managed WordPress host from $35 a month. It says it runs no Black Friday sale, and we found no recent independent test.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "BigScoots (read 15 Nov 2026)",
+    "url": "https://www.bigscoots.com/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "BigScoots: customer reviews page",
+    "url": "https://www.bigscoots.com/reviews/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is BigScoots good?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "On paper it is a fair managed WordPress host. We found no recent independent test with numbers."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does BigScoots cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Essential 75 is $35 a month, or $29.17 a month billed yearly."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does BigScoots have a Black Friday sale?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "BigScoots says on its blog that it does not run Black Friday or Cyber Monday sales."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does BigScoots offer a money-back guarantee?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It lists a 45-day money-back guarantee."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does BigScoots migrate sites for free?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It lists free migrations."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: BigScoots Review 2026: Plans, Prices, Guarantee and Black Friday",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Managed WordPress",
+    "description": "Hosting where the host handles updates, backups and security.",
+    "url": "https://reinforcelab.online/preview/#term-managed-wordpress"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Migration",
+    "description": "Moving a site from one host to another.",
+    "url": "https://reinforcelab.online/preview/#term-migration"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Bandwidth",
+    "description": "The data a site sends to visitors.",
+    "url": "https://reinforcelab.online/preview/#term-bandwidth"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "CDN",
+    "description": "A network that serves pages from nearby servers.",
+    "url": "https://reinforcelab.online/preview/#term-cdn"
+   }
+  ]
+ }
+]

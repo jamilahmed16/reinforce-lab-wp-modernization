@@ -1,0 +1,126 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-16T10:00:00+00:00",
+  "dateModified": "2026-11-15T00:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "Domain.com is simple to start and costly to keep. Renewal is about three times the first-year price.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Domain.com: web hosting (read 15 Nov 2026)",
+    "url": "https://www.domain.com/web-hosting"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostAdvice: Domain.com review (8 May 2026)",
+    "url": "https://hostadvice.com/hosting-company/domain-com-reviews/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is Domain.com good for hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It is simple to start. Renewal is about three times the first-year price, and we found no speed test."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does Domain.com hosting cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Starter is $35.88 for the first year and $105.99 a year at renewal."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Domain.com have a free trial or guarantee?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The hosting page lists a 99% uptime guarantee. We did not find a money-back guarantee."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Domain.com the same as Network Solutions?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "HostAdvice noted that Domain.com support appears under the Network Solutions brand."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Domain.com have an AI website builder?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "HostAdvice lists one on all plans. Our read of the hosting page did not. Check the live page."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Domain.com Hosting Review 2026: Plans, Prices and Renewals",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Renewal price",
+    "description": "The price after the first term.",
+    "url": "https://reinforcelab.online/preview/#term-renewal-price"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Uptime guarantee",
+    "description": "A promise about how often the site is online.",
+    "url": "https://reinforcelab.online/preview/#term-uptime-guarantee"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Drag and drop builder",
+    "description": "A tool where you place items on a page with the mouse.",
+    "url": "https://reinforcelab.online/preview/#term-drag-and-drop-builder"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "VPS",
+    "description": "A virtual private server with its own resources.",
+    "url": "https://reinforcelab.online/preview/#term-vps"
+   }
+  ]
+ }
+]

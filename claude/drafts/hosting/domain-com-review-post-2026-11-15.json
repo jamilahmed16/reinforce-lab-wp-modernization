@@ -1,0 +1,36 @@
+{
+ "title": "Domain.com Hosting Review 2026: Plans, Prices and Renewals",
+ "excerpt": "A Domain.com hosting review from its own pages and HostAdvice: plan prices, renewals, support findings, builder and pros and cons.",
+ "body_file": "claude/drafts/hosting/domain-com-review-body-2026-11-15.html",
+ "date": "2026-09-16 10:00:00",
+ "meta": {
+  "_yoast_wpseo_title": "Domain.com Hosting Review 2026: Plans, Renewals",
+  "_yoast_wpseo_metadesc": "Domain.com hosting review for 2026: plan prices and renewals, HostAdvice findings on support, builder and AI claims, pros and cons, and who it suits.",
+  "_yoast_wpseo_focuskw": "domain.com review",
+  "rl_type": "guide",
+  "rl_updated": "2026-11-15",
+  "rl_answer": "Domain.com is simple to start and costly to keep. Renewal is about three times the first-year price.",
+  "rl_faqs": "Is Domain.com good for hosting? | It is simple to start. Renewal is about three times the first-year price, and we found no speed test.\nHow much does Domain.com hosting cost? | Starter is $35.88 for the first year and $105.99 a year at renewal.\nDoes Domain.com have a free trial or guarantee? | The hosting page lists a 99% uptime guarantee. We did not find a money-back guarantee.\nIs Domain.com the same as Network Solutions? | HostAdvice noted that Domain.com support appears under the Network Solutions brand.\nDoes Domain.com have an AI website builder? | HostAdvice lists one on all plans. Our read of the hosting page did not. Check the live page.",
+  "rl_sources": "Domain.com: web hosting (read 15 Nov 2026) | https://www.domain.com/web-hosting\nHostAdvice: Domain.com review (8 May 2026) | https://hostadvice.com/hosting-company/domain-com-reviews/",
+  "rl_takeaways": "Starter is $35.88 for the first year and $105.99 at renewal.\nRenewal is 2.7 to 3.1 times the first-year price.\nHostAdvice found chat starts with bot prompts, then a human.\nWe found no speed or uptime test.",
+  "rl_g_glossary": "Renewal price | The price after the first term.\nUptime guarantee | A promise about how often the site is online.\nDrag and drop builder | A tool where you place items on a page with the mouse.\nVPS | A virtual private server with its own resources.",
+  "rl_g_cta_service": "services/website-maintenance-services",
+  "rl_g_cta_head": "Moving a live site to a new host?",
+  "rl_g_cta_sub": "Reinforce Lab can copy, test and switch your WordPress site without lost rankings.",
+  "rl_g_cta_button": "See website maintenance"
+ },
+ "categories": [
+  "Web Hosting"
+ ],
+ "slug": "domain-com-review",
+ "author": 3,
+ "blockers": [
+  "AI builder claim conflicts between HostAdvice and the hosting page: check live",
+  "Domain.com and Network Solutions link needs a citable source before stating ownership",
+  "No speed test found",
+  "Jamil offers (23 Nov to 7 Dec) unconfirmed online",
+  "Affiliate links not placed",
+  "Disclosure wording is a draft",
+  "Re-read prices and offers on publish day"
+ ]
+}

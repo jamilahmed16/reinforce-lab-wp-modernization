@@ -1,0 +1,35 @@
+{
+ "title": "Cloudways MCP Server: What It Does and How to Set It Up",
+ "excerpt": "A Cloudways MCP server guide from Cloudways' own help article: what it can do, setup steps, requirements and safe use.",
+ "body_file": "claude/drafts/hosting/cloudways-mcp-body-2026-11-15.html",
+ "date": "2026-09-14 10:00:00",
+ "meta": {
+  "_yoast_wpseo_title": "Cloudways MCP Server: What It Does, How to Set Up",
+  "_yoast_wpseo_metadesc": "Cloudways MCP server guide: what it can do, how to connect Claude, Cursor or VS Code in three steps, what you need, and how to use it safely.",
+  "_yoast_wpseo_focuskw": "cloudways mcp",
+  "rl_type": "guide",
+  "rl_updated": "2026-11-15",
+  "rl_answer": "Cloudways MCP lets AI tools manage your Cloudways servers. Set it up with an access token and test on a spare server first.",
+  "rl_faqs": "What is the Cloudways MCP server? | It lets MCP-compatible AI tools run actions on your Cloudways servers from plain-language requests.\nWhich AI tools work with Cloudways MCP? | Cloudways lists Claude, Cursor, VS Code Copilot, ChatGPT, Gemini CLI and Codex, among others.\nHow do I connect Cloudways MCP? | Get an access token, add https://mcp.cloudways.com/mcp/ with the X-Access-Token and X-Mcp-Host headers, then ask for your server list.\nIs the Cloudways API key method still supported? | Cloudways says the API key method is deprecated by 15 October 2026. Use an access token.\nIs Cloudways MCP safe to use? | Its tools include deleting servers. Start with a test server and read-only requests.",
+  "rl_sources": "Cloudways support: how to use the Cloudways MCP server | https://support.cloudways.com/en/articles/14654372-how-to-use-cloudways-mcp-server-for-ai-based-server-management\nCloudways: pricing (read 15 Nov 2026) | https://www.cloudways.com/en/pricing.php",
+  "rl_takeaways": "The MCP server lets AI tools manage your Cloudways servers in plain language.\nSetup is three steps: credentials, client configuration, a test request.\nUse an access token. The API key method is deprecated by 15 October 2026.\nStart with a test server, because the tools include deleting servers.",
+  "rl_g_glossary": "MCP | A standard way for AI tools to connect to other software.\nAccess token | A key that proves who you are to a service.\nMCP client | An AI tool that can connect to MCP servers.\nStaging | A private copy of a site for testing.",
+  "rl_g_cta_service": "services/website-maintenance-services",
+  "rl_g_cta_head": "Moving a live site to a new host?",
+  "rl_g_cta_sub": "Reinforce Lab can copy, test and switch your WordPress site without lost rankings.",
+  "rl_g_cta_button": "See website maintenance"
+ },
+ "categories": [
+  "Web Hosting"
+ ],
+ "slug": "cloudways-mcp",
+ "author": 3,
+ "blockers": [
+  "Re-read the help article on publish day: the token rules change",
+  "Test the setup on a spare account if Jamil has one",
+  "Check that the support article URL still works",
+  "Affiliate links not placed",
+  "Disclosure wording is a draft",
+  "Re-read prices and offers on publish day"
+ ]
+}

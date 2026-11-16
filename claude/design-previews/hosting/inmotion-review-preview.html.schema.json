@@ -1,0 +1,131 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-24T10:00:00+00:00",
+  "dateModified": "2026-11-15T00:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "InMotion is a steady host with a long guarantee. The best shared price needs a 3-year term.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "TechRadar: InMotion Hosting review (updated 22 Jan 2026)",
+    "url": "https://www.techradar.com/reviews/inmotion-hosting"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingAdvice: InMotion review (Oct 2026)",
+    "url": "https://www.hostingadvice.com/hosting-review/inmotion/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "InMotion Hosting: shared hosting (read 15 Nov 2026)",
+    "url": "https://www.inmotionhosting.com/shared-hosting"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is InMotion Hosting good?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "TechRadar said its shared plans held up better than most it has tested. Pricing is middle of the road, per HostingAdvice."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does InMotion cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "TechRadar reported the Core shared plan from $3.19 a month on a 3-year term."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does InMotion have a money-back guarantee?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "TechRadar reported 90 days on shared and WordPress plans. Confirm it on the live page."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does InMotion include backups?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "TechRadar said backups are not included on shared plans."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does InMotion have a Black Friday sale?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Its homepage shows up to 70% off, valid through 1 December 2026."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: InMotion Hosting Review 2026: Plans, Prices, Speed and Guarantee",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Shared hosting",
+    "description": "Many sites share one server.",
+    "url": "https://reinforcelab.online/preview/#term-shared-hosting"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "VPS",
+    "description": "A virtual private server with its own share of resources.",
+    "url": "https://reinforcelab.online/preview/#term-vps"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "cPanel",
+    "description": "A control panel for managing a hosting account.",
+    "url": "https://reinforcelab.online/preview/#term-cpanel"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Money-back guarantee",
+    "description": "A refund window after you buy.",
+    "url": "https://reinforcelab.online/preview/#term-money-back-guarantee"
+   }
+  ]
+ }
+]

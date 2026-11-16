@@ -34,3 +34,11 @@ Need new research first: Namecheap vs GoDaddy (#2: GoDaddy facts), Hostinger vs 
 - Title keyword has no Semrush volume ("ai web hosting" shows 30).
 - Look for an independent test of AI hosting features.
 - Corrected after verification (16 Nov): Hostinger AI credits (250 to 1,000, one-time, doubled in the Black Friday offer), hosting.com plan tiers.
+
+## Wave 2 batch 1 (10 drafts, 16 Nov 2026)
+namecheap-review, inmotion-review, liquid-web-review, network-solutions-review, digitalocean-review, digitalocean-promo-code, spaceship-hosting-review, bigscoots-review, domain-com-review, cloudways-mcp. Each JSON has its own `blockers` list. Common to all: affiliate links empty, disclosure wording a draft, offers re-read on publish day.
+- InMotion prices come from TechRadar (22 Jan 2026) because InMotion's page did not load prices. Need a rendered read or Jamil's dashboard.
+- Liquid Web: Website Planet read from a search excerpt; Black Friday page has stale 2025 dates; VPS and bare metal plans not read in full. Nexcess gets no separate page (link to Liquid Web). Jamil to confirm.
+- BigScoots, Spaceship, DigitalOcean: no independent test with method found. Pages say so.
+- Domain.com: AI builder claim differs between HostAdvice and the hosting page.
+- Not yet drafted from Wave 2: Hostinger AI builder review, Host n8n, Hostinger vs SiteGround, Cloudways alternatives, Kinsta vs WP Engine, Nexcess.

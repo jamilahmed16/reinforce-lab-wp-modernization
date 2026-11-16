@@ -1,0 +1,35 @@
+{
+ "title": "DigitalOcean Promo Code 2026: The $5 Credit and How It Works",
+ "excerpt": "The DigitalOcean promo code answer: an automatic $5 signup credit, how long it lasts, what it buys and what we could not verify.",
+ "body_file": "claude/drafts/hosting/digitalocean-promo-code-body-2026-11-15.html",
+ "date": "2026-09-19 10:00:00",
+ "meta": {
+  "_yoast_wpseo_title": "DigitalOcean Promo Code 2026: The $5 Credit",
+  "_yoast_wpseo_metadesc": "DigitalOcean promo code for 2026: the automatic $5 signup credit, how long it lasts, what it buys and what we could not verify, with a managed option.",
+  "_yoast_wpseo_focuskw": "digitalocean promo code",
+  "rl_type": "guide",
+  "rl_updated": "2026-11-15",
+  "rl_answer": "DigitalOcean gives new accounts a $5 credit automatically. It lasts 90 days and needs no code.",
+  "rl_faqs": "Is there a DigitalOcean promo code? | DigitalOcean's billing page lists a $5 signup credit that applies automatically. It says no promo code is required.\nHow long does the DigitalOcean credit last? | It expires 90 days after signup.\nWhat does the DigitalOcean credit cover? | All products except SaaS Add-Ons.\nHow much is the cheapest Droplet? | $4 a month for 512 MiB RAM, 1 vCPU and 10 GiB SSD.\nAre there bigger DigitalOcean credits? | We could not verify any on DigitalOcean's own pages.",
+  "rl_sources": "DigitalOcean docs: signup credit (read 15 Nov 2026) | https://docs.digitalocean.com/platform/billing/signup-credit/\nDigitalOcean: Droplet pricing (read 16 Nov 2026) | https://www.digitalocean.com/pricing/droplets",
+  "rl_takeaways": "The $5 signup credit applies automatically.\nIt expires 90 days after signup.\nNo promo code is required.\nWe could not verify larger credits.",
+  "rl_g_glossary": "Signup credit | Free account balance given to new users.\nDroplet | A virtual server at DigitalOcean.\nPromo code | A short code that applies a discount.\nSaaS Add-Ons | Third-party software sold in the DigitalOcean marketplace.",
+  "rl_g_cta_service": "services/website-maintenance-services",
+  "rl_g_cta_head": "Moving a live site to a new host?",
+  "rl_g_cta_sub": "Reinforce Lab can copy, test and switch your WordPress site without lost rankings.",
+  "rl_g_cta_button": "See website maintenance"
+ },
+ "categories": [
+  "Web Hosting"
+ ],
+ "slug": "digitalocean-promo-code",
+ "author": 3,
+ "blockers": [
+  "Re-read the credit page on publish day",
+  "Look for a partner or referral credit on DigitalOcean's own pages",
+  "Cloudways offer end date unconfirmed",
+  "Affiliate links not placed",
+  "Disclosure wording is a draft",
+  "Re-read prices and offers on publish day"
+ ]
+}

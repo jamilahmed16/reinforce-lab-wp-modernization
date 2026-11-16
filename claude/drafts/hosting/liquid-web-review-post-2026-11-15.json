@@ -1,0 +1,36 @@
+{
+ "title": "Liquid Web Review 2026: Managed WordPress, Nexcess and Pricing",
+ "excerpt": "A Liquid Web review covering the Nexcess merger, managed WordPress prices, a Website Planet speed test, pros and cons.",
+ "body_file": "claude/drafts/hosting/liquid-web-review-body-2026-11-15.html",
+ "date": "2026-09-23 10:00:00",
+ "meta": {
+  "_yoast_wpseo_title": "Liquid Web Review 2026: Managed WordPress Prices",
+  "_yoast_wpseo_metadesc": "Liquid Web review for 2026: managed WordPress prices, the Nexcess merger, a Website Planet speed test, support, pros and cons, and who it suits.",
+  "_yoast_wpseo_focuskw": "liquid web review",
+  "rl_type": "guide",
+  "rl_updated": "2026-11-15",
+  "rl_answer": "Liquid Web is a managed host for busy sites. Pro WordPress starts at $19 a month, and Nexcess is now part of Liquid Web.",
+  "rl_faqs": "Is Liquid Web good? | Website Planet saw no downtime in a one-week test of the entry plan. The test was short.\nIs Nexcess the same as Liquid Web? | TechRadar said Nexcess is now fully absorbed into Liquid Web.\nHow much does Liquid Web managed WordPress cost? | Pro WordPress starts at $19 a month for 50,000 visits. Elite starts at $29 a month.\nDoes Liquid Web have a money-back guarantee? | The managed WordPress page we read did not show one. Check the live terms.\nDoes Liquid Web have AI features? | The page we read did not list any.",
+  "rl_sources": "Liquid Web: managed WordPress hosting (read 15 and 16 Nov 2026) | https://www.liquidweb.com/wordpress-hosting/managed-wordpress/\nWebsite Planet: Liquid Web (formerly Nexcess) review | https://www.websiteplanet.com/web-hosting/nexcess/",
+  "rl_takeaways": "Pro WordPress starts at $19 a month for 50,000 visits.\nNexcess is now part of Liquid Web, per TechRadar.\nWebsite Planet saw no downtime in a one-week test.\nThe page we read lists no money-back guarantee and no AI features.",
+  "rl_g_glossary": "Managed WordPress | Hosting where the host handles updates, backups and security.\nStaging | A private copy of your site for testing changes.\nObject cache | Memory that stores database results to speed up pages.\nSLA | A promise about service levels.",
+  "rl_g_cta_service": "services/website-maintenance-services",
+  "rl_g_cta_head": "Moving a live site to a new host?",
+  "rl_g_cta_sub": "Reinforce Lab can copy, test and switch your WordPress site without lost rankings.",
+  "rl_g_cta_button": "See website maintenance"
+ },
+ "categories": [
+  "Web Hosting"
+ ],
+ "slug": "liquid-web-review",
+ "author": 3,
+ "blockers": [
+  "Website Planet page text read from a search excerpt: read the full test before publish",
+  "Liquid Web Black Friday page has stale 2025 dates",
+  "Liquid Web managed VPS and bare metal plans not read in full",
+  "Decide whether a separate Nexcess page is needed (recommended: no, link here)",
+  "Affiliate links not placed",
+  "Disclosure wording is a draft",
+  "Re-read prices and offers on publish day"
+ ]
+}

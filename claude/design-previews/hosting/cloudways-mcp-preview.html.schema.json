@@ -1,0 +1,126 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-14T10:00:00+00:00",
+  "dateModified": "2026-11-15T00:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "Cloudways MCP lets AI tools manage your Cloudways servers. Set it up with an access token and test on a spare server first.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Cloudways support: how to use the Cloudways MCP server",
+    "url": "https://support.cloudways.com/en/articles/14654372-how-to-use-cloudways-mcp-server-for-ai-based-server-management"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Cloudways: pricing (read 15 Nov 2026)",
+    "url": "https://www.cloudways.com/en/pricing.php"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is the Cloudways MCP server?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It lets MCP-compatible AI tools run actions on your Cloudways servers from plain-language requests."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Which AI tools work with Cloudways MCP?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Cloudways lists Claude, Cursor, VS Code Copilot, ChatGPT, Gemini CLI and Codex, among others."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I connect Cloudways MCP?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Get an access token, add https://mcp.cloudways.com/mcp/ with the X-Access-Token and X-Mcp-Host headers, then ask for your server list."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is the Cloudways API key method still supported?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Cloudways says the API key method is deprecated by 15 October 2026. Use an access token."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Cloudways MCP safe to use?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Its tools include deleting servers. Start with a test server and read-only requests."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Cloudways MCP Server: What It Does and How to Set It Up",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "MCP",
+    "description": "A standard way for AI tools to connect to other software.",
+    "url": "https://reinforcelab.online/preview/#term-mcp"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Access token",
+    "description": "A key that proves who you are to a service.",
+    "url": "https://reinforcelab.online/preview/#term-access-token"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "MCP client",
+    "description": "An AI tool that can connect to MCP servers.",
+    "url": "https://reinforcelab.online/preview/#term-mcp-client"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Staging",
+    "description": "A private copy of a site for testing.",
+    "url": "https://reinforcelab.online/preview/#term-staging"
+   }
+  ]
+ }
+]

@@ -1,0 +1,121 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-18T10:00:00+00:00",
+  "dateModified": "2026-11-15T00:00:00+00:00",
+  "genre": "Guide",
+  "abstract": "Spaceship is cheap and simple, with a 30-day trial. We found no independent test of its speed or uptime.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Spaceship: web hosting (read 15 Nov 2026)",
+    "url": "https://www.spaceship.com/web-hosting/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is Spaceship hosting good?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It is cheap and simple, but we found no independent speed or uptime test with a method."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does Spaceship hosting cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Essential is $19.88 for the first year and $28.88 a year at renewal."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is there a Spaceship promo code?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Its sale page lists COM67 for a .com at $3.60 for the first year, for new registrations."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Spaceship have a free trial?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. It lists a 30-day free trial on shared hosting."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Spaceship have an AI website builder?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. It lists an AI Website Builder, and WordPress AI tools on Pro and Supreme."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "DefinedTermSet",
+  "@id": "https://reinforcelab.online/preview/#glossary",
+  "name": "Glossary: Spaceship Hosting Review 2026: Prices, Promo Codes and AI Builder",
+  "url": "https://reinforcelab.online/preview/#g-gl-h",
+  "hasDefinedTerm": [
+   {
+    "@type": "DefinedTerm",
+    "name": "Shared hosting",
+    "description": "Many sites share one server.",
+    "url": "https://reinforcelab.online/preview/#term-shared-hosting"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Promo code",
+    "description": "A short code that applies a discount.",
+    "url": "https://reinforcelab.online/preview/#term-promo-code"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "AI website builder",
+    "description": "A tool that builds a site from a prompt.",
+    "url": "https://reinforcelab.online/preview/#term-ai-website-builder"
+   },
+   {
+    "@type": "DefinedTerm",
+    "name": "Renewal",
+    "description": "The price after the first term.",
+    "url": "https://reinforcelab.online/preview/#term-renewal"
+   }
+  ]
+ }
+]
