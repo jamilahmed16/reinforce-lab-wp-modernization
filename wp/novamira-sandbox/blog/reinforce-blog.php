@@ -117,7 +117,10 @@ body.rl-blog-page .fl-page-content,body.rl-blog-page .fl-content,body.rl-blog-pa
 .rl-blog .mag-g3,.rl-blog .mag-g4{list-style:none;margin:0;padding:0;display:grid;gap:clamp(16px,2vw,24px)}
 .rl-blog .mag-g3{grid-template-columns:repeat(3,minmax(0,1fr))}.rl-blog .mag-g4{grid-template-columns:repeat(4,minmax(0,1fr))}
 .rl-blog .mag-feat{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(16px,2vw,24px)}
-.rl-blog .mag-stack{list-style:none;margin:0;padding:0;display:grid;gap:14px;align-content:start}
+.rl-blog .mag-feat{align-items:stretch}
+.rl-blog .mag-feat>.posts{display:grid;grid-auto-rows:1fr;margin:0}
+.rl-blog .mag-feat>.posts>li{height:100%}
+.rl-blog .mag-stack{list-style:none;margin:0;padding:0;display:grid;gap:14px;grid-auto-rows:1fr;align-content:stretch}
 .rl-blog .mag-stack li{display:grid;grid-template-columns:190px minmax(0,1fr);gap:16px;align-items:center;background:var(--bg-2);border:1px solid var(--line-2)}
 .rl-blog .mag-stack .img{aspect-ratio:16/9;border:0}
 .rl-blog .mag-stack .body{padding:12px 16px 12px 0;gap:6px}
