@@ -2665,3 +2665,9 @@ Jamil (16 Nov): review articles must use the Review template, not the guide layo
 **Open for Jamil:** approve the layout and wording; verdict word (our pick: Good, with limits); affiliate links; disclosure wording; hosting section; go-live pace.
 
 **D-320 addendum (16 Nov):** temporary preview page created on .online so Jamil can view the template: post 664, https://reinforcelab.online/hostinger-review-template-preview/ (published on the noindex dev site, dated 31 Aug so it sits at the bottom of lists). DELETE after approval; the real `hostinger-review` is published later through the normal batch.
+
+## D-321 · Review template v2 (research-based) after competitor research
+**Date:** 16 November 2026 · **Status:** SAMPLE BUILT, waiting for Jamil's approval
+Jamil rejected the first sample: too short, "evidence log" is jargon, sourcing wording made us sound weak. Research in `claude/research/hosting/review-template-research-2026-11-16.md` (Cybernews, All About Cookies, Crazy Egg, BearHost; SERP report `claude/research/serp/hostinger-review/`).
+**Template changes (deployed to .online):** research-based reviews show an at-a-glance strip (starting price, renews at, money-back, best for, price checked); the evidence log is not used; a "How we researched this review" panel replaces it; new fields `rl_r_renewal`, `rl_r_guarantee`, `rl_r_method`; disclosure reworded to "this is a research-based review ... We have not run our own hosting test."
+**Sample:** https://reinforcelab.online/hostinger-review-template-preview/ (post 664, temporary, delete after approval). About 2,550 words in the body plus 10 FAQs; grade 5.3; copy-check 0; six independent sources plus web.dev for the LCP threshold.
