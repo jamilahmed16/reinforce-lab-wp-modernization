@@ -2681,3 +2681,9 @@ Jamil approved the Review template sample ("Go ahead", 16 Nov) and asked that ev
 
 ## F-068 · Day 6 of the 7-day plan: re-check (scheduled task, 16 Nov)
 **Status:** DONE, nothing built. No approval for any Day 4 mockup (F-067) is recorded, so no change was made. Re-ran `seo-audit.py` (167 pages), `rl.py parity` (3 known vendor-file differences), `rl.py crawl` (59 flagged, all en or em dashes in old carried posts), `copy-check.py` on the hosting drafts (0). Before and after figures and the two regressions (images without alt 62 to 82, pages with no internal links in 11 to 16) are in `claude/research/audit-2026-11/day6-recheck.md`. `serp-compare.py` and `link-scan.py` were not re-run.
+
+## D-323 · One best web hosting page: /best-web-hosting-services/ on the Best / List template (16 Nov 2026)
+**Decided by Jamil:** `/best-web-hosting-services/` is the single page, written on the Best / List template. Post 378 was updated in place (same URL, original date 29 Jan 2025 kept). Backup: `claude/data/backups-378-pre-list-2026-11-16.json`.
+**Content:** 12 picks, renewal table, shared/VPS/dedicated guide, 10 FAQs, six "also considered" hosts (Domain.com, Bluehost, SiteGround, WP Engine, GoDaddy, IONOS). Sources are described as "researched", with no source count (Jamil).
+**Held:** per-pick review links are blank because the 12 reviews are not live yet (they would 404). Affiliate links empty. Page 69 `/reviews/best-wordpress-hosting/` is a shortcode hub page (hosting view), not a copy of the article: NOT retired, awaiting Jamil (redirect or keep).
+Copy-check 0 issues, readability grade 3.9, site stays noindex.
