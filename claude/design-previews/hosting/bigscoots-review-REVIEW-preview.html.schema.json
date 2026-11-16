@@ -1,0 +1,170 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-17T10:00:00+00:00",
+  "dateModified": "2026-11-16T00:00:00+00:00",
+  "genre": "Review",
+  "abstract": "BigScoots is managed WordPress hosting from $35 a month. A crawl of 5,779 live sites found a 153 ms median time to first byte, and 82% pass Core Web Vitals. It runs no Black Friday sale.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "BigScoots: WordPress pricing",
+    "url": "https://www.bigscoots.com/wordpress-pricing/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "TheWeb.Report: BigScoots review, 5,779 sites (6 Nov 2026)",
+    "url": "https://theweb.report/hosting/bigscoots"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostProdigy: BigScoots review (20 Aug 2026)",
+    "url": "https://hostprodigy.com/host/bigscoots/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "CompareBestAI: BigScoots managed WordPress review (Jul 2026)",
+    "url": "https://comparebestai.com/articles/bigscoots-managed-wp-review"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Hostalog: BigScoots review",
+    "url": "https://hostalog.com/company/bigscoots"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "web.dev: Largest Contentful Paint (2.5 seconds or less is good)",
+    "url": "https://web.dev/articles/lcp"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is BigScoots good?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes for professional WordPress sites. A crawl of 5,779 BigScoots sites found a 153 ms median time to first byte, fourth of 13 managed hosts."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does BigScoots cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Essential 75 is $35 a month, or $350 a year. Core 1000 is $350 a month."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does BigScoots have a Black Friday sale?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. BigScoots says on its own blog that it runs no Black Friday or Cyber Monday sales."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does BigScoots offer a money-back guarantee?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "HostProdigy lists a 45-day money-back guarantee. Confirm on the live page."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does BigScoots migrate sites for free?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. It lists free, zero-downtime migrations by its own team."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is the BigScoots uptime guarantee?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "99.99% on marketing pages and 99.9% in the formal agreement, according to CompareBestAI."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How fast is BigScoots?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "82% of WordPress sites on BigScoots pass Core Web Vitals, against a typical 59%, according to TheWeb.Report."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does BigScoots have 24/7 support?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. It lists 24/7/365 human support with an average reply of about 90 seconds, which is its own claim."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does BigScoots include backups and staging?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Daily backups are kept for 30 days, and staging is included."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does BigScoots have data centers outside the US?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. HostProdigy lists Chicago and Ashburn, Virginia."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does BigScoots have AI features?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We found none on the pages we read."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Who should avoid BigScoots?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Hobby sites on a tight budget, sites with mostly far-away visitors and people who want AI tools built in."
+    }
+   }
+  ]
+ }
+]
