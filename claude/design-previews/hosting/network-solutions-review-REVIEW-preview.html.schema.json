@@ -127,7 +127,7 @@
     "name": "Does Network Solutions have a free domain?",
     "acceptedAnswer": {
      "@type": "Answer",
-     "text": "Essential and Premium include a free domain and SSL on annual plans, according to HostDean. Starter does not include free SSL."
+     "text": "Yes, for one domain on an annual term. The free SSL certificate covers one annual term on Essential and Premium. Starter has no free SSL."
     }
    },
    {
@@ -143,7 +143,7 @@
     "name": "Does Network Solutions have AI features?",
     "acceptedAnswer": {
      "@type": "Answer",
-     "text": "HostingAdvice praised its AI website builder. Our read of the hosting page found no AI tools listed."
+     "text": "Yes. Its hosting page lists a drag-and-drop AI Website Builder, and HostingAdvice praised it."
     }
    },
    {
