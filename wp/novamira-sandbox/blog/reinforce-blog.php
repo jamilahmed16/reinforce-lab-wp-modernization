@@ -211,7 +211,7 @@ function rl_blog_magazine() {
         array('search-engine-optimization', 'SEO', 'Technical SEO, content and zero-click search.', 'g3', 3),
         array('digital-marketing', 'Marketing', 'Digital marketing strategy, channels and industry guides.', 'g3', 3),
         array('content-marketing', 'Content', 'Content ideas, writing and social media for small business.', 'g3', 3),
-        array('reviews', 'Reviews', 'Reviews of SEO, content and WordPress tools and hosts.', 'g4', 4),
+        array('review-articles', 'Reviews', 'Reviews of SEO, content and WordPress tools and hosts.', 'g4', 4),
         array('web-hosting', 'Hosting', 'WordPress hosting guides, comparisons and deals.', 'g4', 4),
     );
     $shown = array(); $i = 0;
@@ -229,7 +229,7 @@ function rl_blog_magazine() {
         if (count($pick) < 3) continue;
         foreach ($pick as $p) $shown[] = $p->ID;
         $i++; $alt = ($i % 2 === 0) ? ' alt' : '';
-        $all = ($slug === 'reviews' && function_exists('rl_url_by_path') && rl_url_by_path('reviews', '')) ? array(rl_url_by_path('reviews', ''), 'Reviews hub') : array(get_category_link($term), 'All ' . $title . ' articles');
+        $all = ($slug === 'review-articles' && function_exists('rl_url_by_path') && rl_url_by_path('reviews', '')) ? array(rl_url_by_path('reviews', ''), 'Reviews hub') : array(get_category_link($term), 'All ' . $title . ' articles');
         echo '<section class="mag-sec' . $alt . '" id="sec-' . esc_attr($slug) . '"><div class="wrap"><header class="mag-sh"><div><span class="ey"><b>[</b>&nbsp;' . sprintf('%02d', $i) . '&nbsp;<b>]</b></span><h2>' . esc_html($title) . '</h2><p>' . esc_html($sub) . '</p></div><a class="all" href="' . esc_url($all[0]) . '">' . esc_html($all[1]) . ' &rarr;</a></header>';
         if ($layout === 'feat') {
             echo '<div class="mag-feat"><ul class="posts" style="grid-template-columns:1fr">' . rl_mag_card($pick[0], true) . '</ul><ul class="mag-stack">';

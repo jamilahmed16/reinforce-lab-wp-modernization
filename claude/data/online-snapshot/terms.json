@@ -1,5 +1,13 @@
 [
  {
+  "count": 21,
+  "description": "Articles on AI Growth Systems: how AI, content and search visibility work together as one growth engine.",
+  "id": 29,
+  "name": "AI Growth Systems",
+  "slug": "ai-growth-systems",
+  "taxonomy": "category"
+ },
+ {
   "count": 26,
   "description": "",
   "id": 16,
@@ -48,7 +56,7 @@
   "taxonomy": "category"
  },
  {
-  "count": 52,
+  "count": 73,
   "description": "",
   "id": 6,
   "name": "Digital Marketing",
@@ -96,7 +104,15 @@
   "taxonomy": "category"
  },
  {
-  "count": 39,
+  "count": 8,
+  "description": "Reviews of SEO, content and WordPress tools and hosts.",
+  "id": 30,
+  "name": "Reviews",
+  "slug": "review-articles",
+  "taxonomy": "category"
+ },
+ {
+  "count": 60,
   "description": "",
   "id": 12,
   "name": "Search Engine Optimization",
