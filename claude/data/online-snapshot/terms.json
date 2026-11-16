@@ -40,7 +40,7 @@
   "taxonomy": "category"
  },
  {
-  "count": 48,
+  "count": 50,
   "description": "",
   "id": 10,
   "name": "Content Marketing",
@@ -184,7 +184,7 @@
   "taxonomy": "category"
  },
  {
-  "count": 1,
+  "count": 0,
   "description": "",
   "id": 1,
   "name": "Uncategorized",
@@ -208,7 +208,7 @@
   "taxonomy": "category"
  },
  {
-  "count": 13,
+  "count": 15,
   "description": "",
   "id": 15,
   "name": "Web Hosting",
