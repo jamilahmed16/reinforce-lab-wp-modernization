@@ -117,7 +117,7 @@ function rl_review_render($c) {
     $ok = '<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg>';
     $no = '<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg>';
     $visit = function ($cls = 'go') use ($r, $rel) { return $r['url'] !== '' ? '<a class="' . $cls . '" href="' . esc_url($r['url']) . '" rel="' . esc_attr($rel) . '" target="_blank">' . esc_html($r['button']) . ' <span aria-hidden="true">&rarr;</span></a>' . ($r['aff'] && function_exists('rl_aff_label') ? rl_aff_label() : '') : ''; };
-    $chip = trim(($r['price'] !== '' ? 'From ' . $r['price'] : '') . ($r['guarantee'] !== '' ? ($r['price'] !== '' ? ' · ' : '') . $r['guarantee'] . ' money-back' : ''));
+    $chip = trim(($r['price'] !== '' ? 'From ' . $r['price'] : '') . ($r['guarantee'] !== '' ? ($r['price'] !== '' ? ' · ' : '') . (preg_match('/^(\d+)\s*days?$/i', $r['guarantee'], $gm) ? $gm[1] . '-day money-back guarantee' : $r['guarantee'] . ' money-back') : ''));
     $octa = function ($head, $sub) use ($r, $visit, $chip) {
         if ($r['url'] === '' || trim($head) === '') return '';
         return '<aside class="r-octa" aria-label="Offer"><div class="ot"><p class="oh">' . esc_html(trim($head)) . '</p>' . (trim($sub) !== '' ? '<p class="os">' . esc_html(trim($sub)) . '</p>' : '') . '</div><div class="oa">' . ($chip !== '' ? '<span class="op">' . esc_html($chip) . '</span>' : '') . $visit('go') . '</div></aside>';
