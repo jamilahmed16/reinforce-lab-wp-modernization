@@ -100,7 +100,7 @@ All 111 published posts on production were dated into a 9-week window in early 2
 - **58 real content pages holding 383 clicks have never been crawled** by Google.
 - 337 of 438 URLs known to Search Console have **zero internal links**.
 
-**URL approvals so far:** 17 `APPROVED — PRESERVE` · 5 `APPROVED — NEW URL` · **765 PENDING**
+**URL approvals (updated 18 Nov 2026):** the redirect map covers 803 old URLs with **0 undecided** (approved D-146 and D-181; see `claude/data/redirect-map-draft.csv`). The earlier "765 PENDING" figure was the September register and is out of date.
 
 **Solutions = 12 locked capabilities** (D-023 · 28 Sep 2026; `AI Growth Systems` = umbrella pillar, not a peer):
 AI Workflow Automation · AI Search Optimization (AISO) · Enterprise SEO Strategy · Technical SEO · International SEO · SEO Content Systems (`/services/seo-content-systems/`) · GEO · LLM Optimization · Lead Generation Systems · Marketing Automation · Executive AI Consulting.
@@ -112,7 +112,7 @@ AI Workflow Automation · AI Search Optimization (AISO) · Enterprise SEO Strate
 
 **Build the remaining Home page sections on `.online`** (hero + dark glass header are done), then **About** and the **5 approved service pages** — each to the SEO/GEO/AEO build standard (D-012). `/paged-N/` root cause is CONFIRMED (F-001); Novamira is correctly connected to reinforcelab.online (F-006); WP-CLI shell exec is disabled on the host, use `novamira/execute-php`.
 
-**Blocking the MIGRATION (not the build)** — Jamil to export: URL-level **backlinks**, full **GSC** pages+queries, **GSC Page Indexing**, **GA4** landing/conversions, and the production **WPCode/Code Snippets** inventory. See `claude/migration-and-data-requirements.md`. **Do not schedule the `.online → .com` migration** until these land and the 787-URL redirect map is complete and tested. 765 of 787 URLs are still PENDING.
+**Blocking the MIGRATION (updated 18 Nov 2026):** the five data exports have landed and the redirect map is complete (0 failures on 2,107 requests). What still blocks the switch is in `claude/launch-readiness-2026-11-18.md` and `claude/migration-checklist.md`: Jamil's Step 1 (Hostinger security case, new passwords with two-factor, offline backups, WooCommerce order export, hosting for the rebuild), launch inputs (SMTP, GA4 ID, VAT/BIN, affiliate formats) and the rebuild plus full gate run on the new copy. **Do not schedule the `.online → .com` migration** until those are done. `.online` had a new intrusion on 17 Nov (F-072): fresh rebuild only, never restore old backups.
 
 ---
 
