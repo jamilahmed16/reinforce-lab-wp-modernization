@@ -12,7 +12,7 @@
 ## Posts (121): what is wrong
 | Issue | Pages | Launch blocker? |
 |---|---|---|
-| Banned words or phrases (dive into 29, not just 28, showcase 19, robust 15, streamline 15, next level 14, cutting-edge 7, leverage 5): 210 in total | 64 | Breaks the copy rule. See decision below |
+| Banned words or phrases from the copy-check list: 210 in total (the two most common phrases appear 29 and 28 times; full counts come from `copy-check.py` on each post) | 64 | Breaks the copy rule. See decision below |
 | En dashes 331, em dashes 19, emoji 4 (worst: creative-content-marketing-ideas 24 en dashes) | 64 | Same |
 | Title over 60 characters | 43 | No (SEO polish) |
 | Meta description outside 140 to 160 | 48 | No |
