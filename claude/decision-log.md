@@ -2690,3 +2690,6 @@ Copy-check 0 issues, readability grade 3.9, site stays noindex.
 
 ## F-069 · Day 7 of the 7-day plan: final report (scheduled task, 17 Nov 2026)
 **Status:** DONE, nothing built. Report: `claude/research/audit-2026-11/day7-final-report.md` (Days 1 to 6, approvals, what was built, before and after figures, open items). Day 2 (AI answers) was not run and there is no Day 5 record. No Day 4 mockup is approved. Open and waiting on Jamil: Semrush exports, proof material, prices and offer dates, Google SERP data, AI answer prompts, mockup yes or no, page 69, migration exports. Notion Business OS page 08 updated.
+
+## F-070 · Launch readiness check, 18 Nov 2026 (Jamil: "prepare everything for making it live to .com")
+**Status:** DONE for preparation; the switch is not scheduled and nothing on reinforcelab.com was touched. Gates run on `.online`: redirect test 0 failures (2,107 requests, 807 addresses); link scan found 9 bad links, all from my unpublished hosting pages (2 on post 378, fixed the same day; 7 on temporary post 664, to delete); carried posts 81 clean; parity 3 known differences. CLAUDE.md "765 URLs pending" is stale: the redirect map has 0 undecided (D-146, D-181). The main blocker is Jamil's Step 1 (Hostinger security ticket, passwords, backups, new hosting). Full list: `claude/launch-readiness-2026-11-18.md`.
