@@ -1,0 +1,291 @@
+{
+ "base": "https://reinforcelab.online",
+ "checked": 2107,
+ "targets": {
+  "/20-content-marketing-ideas-for-restaurants/": 200,
+  "/about-us/": 200,
+  "/b2b-seo-agencies/": 200,
+  "/blog/": 200,
+  "/church-marketing-strategies/": 200,
+  "/clients/": 200,
+  "/cloudways-hosting/": 200,
+  "/contact-us/": 200,
+  "/creative-content-marketing-ideas/": 200,
+  "/guide-to-ux-copywriting/": 200,
+  "/industries/b2b-saas/": 200,
+  "/industries/healthcare/": 200,
+  "/industries/pharmaceutical/": 200,
+  "/latest-seo-update-search-engine-updates/": 200,
+  "/packages/": 200,
+  "/portfolio/": 200,
+  "/portfolio/access-tutor/": 200,
+  "/portfolio/iba-alumni-lottery/": 200,
+  "/portfolio/inpace-shop/": 200,
+  "/real-estate-social-media-posts-ideas/": 200,
+  "/reviews/": 200,
+  "/search-authority-diagnostic/": 200,
+  "/services/": 200,
+  "/services/ai-consulting-services/": 200,
+  "/services/ai-growth-systems/": 200,
+  "/services/ai-search-optimization/": 200,
+  "/services/best-search-engine-optimization-services/": 200,
+  "/services/ecommerce-website-design-service/": 200,
+  "/services/generative-engine-optimization/": 200,
+  "/services/lead-generation-systems/": 200,
+  "/services/local-seo/": 200,
+  "/services/marketing-automation/": 200,
+  "/services/press-release-services/": 200,
+  "/services/seo-content-systems/": 200,
+  "/services/wordpress-website-design-service/": 200,
+  "/social-media-content-ideas-for-churches/": 200,
+  "/social-media-content-ideas-for-clothing-brand/": 200,
+  "/social-media-content-ideas-for-hotels/": 200
+ },
+ "failures": [],
+ "wp_content_404_not_410": [],
+ "wp_content_kept_d178": [
+  {
+   "path": "/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-1.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/07/Content-Marketing-Ideas-for-Small-Business-Infographics-3.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Restaurants-Infographic-2.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/07/Creative-Content-Marketing-Ideas.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-Infographic-3-scaled.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media-infographic-1.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/08/Content-Marketing-Ideas-for-Social-Media.jpeg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/09/Content-Marketing-for-Banks-Infographic-1.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/09/Content-Marketing-for-Banks.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels-infographic-1.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Real-Estate-Social-Media-Posts-Ideas.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Churches.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/09/Social-Media-Content-Ideas-for-Hotels.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-1.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-Infographic-3-scaled.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand-inforgraphic-2.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Clothing-Brand.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Photographers.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Nonprofits.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/Social-Media-Content-Ideas-for-Restaurants.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/social-media-content-ideas-for-photographers-infographic.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2021/10/social-media-content-ideas-for-nonprofits-infographic.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2022/02/Sensory-Marketing-Infographic-1.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2022/02/Sensory-Marketing-Infographic-3-scaled.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2022/09/Ideas-for-Personal-Website-Content.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2022/10/Best-Examples-of-Great-Food-Copywriting.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  },
+  {
+   "path": "/wp-content/uploads/2023/01/Bluehost-01.jpg",
+   "variant": false,
+   "action": "410",
+   "expect": "410",
+   "target": "",
+   "code": 200,
+   "location": ""
+  }
+ ]
+}

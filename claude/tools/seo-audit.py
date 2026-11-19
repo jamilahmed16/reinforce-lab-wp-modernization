@@ -95,8 +95,12 @@ def audit(p):
     r['words'] = words
     h1 = main.find('h1'); lede = ''
     if h1:
-        nx = h1.find_next('p')
-        lede = nx.get_text(' ', strip=True) if nx else ''
+        # skip page chrome that the post templates print before the article: read time, affiliate
+        # disclosure and the "Short answer" label; the lede is the first real paragraph after them
+        for nx in h1.find_all_next('p'):
+            t = nx.get_text(' ', strip=True)
+            if re.match(r'^(About \d+ min|Ad:|Short answer$|Updated\b|By\b|Published\b)', t) or len(t.split()) < 8: continue
+            lede = t; break
     r['lede'] = lede[:240]; r['lede_words'] = len(lede.split())
     r['answer_first'] = bool(re.search(r'\b(is|are|was|has|have|helps?|makes?|builds?|gives?|means|turns?|connects?|runs?|sends?|keeps?|uses?|structures?|shows?|finds?|brings?|checks?|covers?|comes|tells?|sells?|won|reviews?|email|call|how|which|what)\b', ' '.join(lede.split()[:30]), re.I))
     r['brand_early'] = 'Reinforce Lab' in ' '.join(text.split()[:200])
