@@ -1,0 +1,27 @@
+url,production_title,primary_keyword,gsc_clicks,gsc_impressions,backlinks,production_status,decision
+/basic-on-page-seo-checklist/,(not in the production crawl),none: no search data,0,0,0,404,
+/benefits-of-digital-marketing-for-small-businesses/,(not in the production crawl),none: no search data,0,0,0,404,
+/best-examples-of-great-food-copywriting/chern--the-name-of-the-dish-or-restaurant-you-are-writing-about/,(not in the production crawl),none: no search data,0,1,0,,APPROVED: 410 — junk (search-spam / cache / malformed slug)
+/digital-content-/,(not in the production crawl),none: no search data,0,2,0,,APPROVED: 410 — junk (search-spam / cache / malformed slug)
+/get-a-/,(not in the production crawl),none: no search data,0,0,0,,APPROVED: 410 — junk (search-spam / cache / malformed slug)
+/google-analytics-behavior-reports-2/,(not in the production crawl),none: no search data,0,0,0,,"APPROVED: 410 (Jamil 23 Oct: junk, its old redirect target no longer exists)"
+/how-much-facebook-advertising-cost/,How Much Does Facebook Advertising Cost 2025? | Reinforce Lab,none: no search data,0,0,0,200,"APPROVED (HOLD): 410 — thin, 0 clicks / 0 impressions"
+/how-to-find-your-target-audience-on-social-media/,How to Find Your Target Audience on Social Media | Reinforce Lab,none: no search data,0,0,0,200,"APPROVED (HOLD): 410 — thin, 0 clicks / 0 impressions"
+/know-a-to-z-of-conversational-marketing-to-increase-your-sales/,A-Z Of Conversational Marketing to Increase Sales | Reinforce Lab,none: no search data,0,0,0,200,"APPROVED (HOLD): 410 — thin, 0 clicks / 0 impressions"
+/landing/,(not in the production crawl),none: no search data,0,0,0,404,APPROVED: 410
+/link-building-tools/,(not in the production crawl),none: no search data,0,0,0,404,
+/linkedin-content-ideas-for-businesses/,(not in the production crawl),none: no search data,0,0,0,404,
+/liquidweb-wordpress-hosting/,(not in the production crawl),none: no search data,0,0,0,404,
+/logossliderwp/features-logo/,(not in the production crawl),none: no search data,0,0,0,,"APPROVED: 410 (Jamil 23 Oct: junk, its old redirect target no longer exists)"
+/product-category/uncategorized/,Uncategorized Archives | Reinforce Lab Ltd,none: no search data,0,0,0,200,APPROVED: KEEP-noindex (empty taxonomy archive)
+/product-sitemap.xml,(not in the production crawl),none: no search data,0,0,0,,APPROVED: config-managed (Yoast sitemap / robots) — no redirect
+/product-tag/wordpress-web-design/,(not in the production crawl),none: no search data,0,1,0,,APPROVED: KEEP-noindex (empty taxonomy archive)
+/search-engine-optimization/basic-on-page-seo-checklist/,(not in the production crawl),none: no search data,0,0,0,,"Follows its target: /basic-on-page-seo-checklist/ is approved 410 (23 Oct, A4 test)"
+/services/content-/,(not in the production crawl),none: no search data,0,0,0,,APPROVED: 410
+/services/ecommerce-/,(not in the production crawl),none: no search data,0,0,0,,APPROVED: 410 (malformed/truncated slug)
+/step/landing-page/,(not in the production crawl),none: no search data,0,17,0,,APPROVED: 410
+/successful-digital-marketing-campaign-examples/1000/,(not in the production crawl),none: no search data,0,0,0,,APPROVED: 410 — junk (search-spam / cache / malformed slug)
+/top-benefits-of-content-marketing/,25 Top Benefits of Content Marketing 2025 | Reinforce Lab Ltd.,none: no search data,0,0,0,200,"APPROVED (HOLD): 410 — thin, 0 clicks / 0 impressions"
+/video-marekting/,Video Marekting Archives | Reinforce Lab Ltd,none: no search data,0,0,0,200,APPROVED: 410
+/video-marketing-ideas-for-small-business/,10 Video Marketing Ideas for Small Business 2025 | Reinforce Lab,none: no search data,0,0,0,200,"APPROVED (HOLD): 410 — thin, 0 clicks / 0 impressions"
+/wp-json/wc/store/v1/cart/,(not in the production crawl),none: no search data,0,0,0,,APPROVED: 410
