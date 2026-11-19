@@ -1,0 +1,20 @@
+# BEGIN Reinforce Lab security (claude/rebuild/security.htaccess; migration checklist A6)
+# Hide version and setup files, stop directory listings, add basic response headers. xmlrpc.php is left alone because Jetpack uses it.
+Options -Indexes
+<FilesMatch "^(readme\.html|license\.txt|wp-config\.php|wp-config-sample\.php)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Strict-Transport-Security "max-age=31536000" "expr=%{HTTPS} == 'on'"
+  Header always unset X-Powered-By
+</IfModule>
+# END Reinforce Lab security

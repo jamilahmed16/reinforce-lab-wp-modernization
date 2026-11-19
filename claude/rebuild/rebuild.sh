@@ -143,6 +143,8 @@ HT="$WPPATH/.htaccess"
 touch "$HT"
 # the 410 rules come from git (claude/rebuild/htaccess-410.conf, made by claude/tools/redirects.py htaccess); put first, replace any older copy
 php -r '$ht=$argv[1]; $s=file_get_contents($ht); $s=preg_replace("/# BEGIN Reinforce Lab 410.*?# END Reinforce Lab 410\\n?/s","",$s); file_put_contents($ht, file_get_contents($argv[2])."\n".$s);' "$HT" "$HERE/htaccess-410.conf"
+# security rules (hide readme and license files, no directory listings, response headers): from git, replace any older copy
+php -r '$ht=$argv[1]; $s=file_get_contents($ht); $s=preg_replace("/# BEGIN Reinforce Lab security.*?# END Reinforce Lab security\\n?/s","",$s); file_put_contents($ht, $s."\n".file_get_contents($argv[2]));' "$HT" "$HERE/security.htaccess"
 grep -c "RewriteRule" "$HT" | xargs echo "rewrite rules in .htaccess:"
 
 step "12. Final checks"
