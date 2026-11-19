@@ -1,0 +1,346 @@
+[
+ {
+  "url": "https://wpschool.com/reviews/dreamhost-review/",
+  "title": "DreamHost Review 2026: Honest Speed Tests and Support...",
+  "words": 2759,
+  "headings": [
+   [
+    "h3",
+    "Pros"
+   ],
+   [
+    "h3",
+    "Cons"
+   ],
+   [
+    "h1",
+    "DreamHost Review 2026: Honest Speed Tests and Support Experience"
+   ],
+   [
+    "h2",
+    "Pros and Cons at a Glance"
+   ],
+   [
+    "h2",
+    "How Fast Is DreamHost in 2026?"
+   ],
+   [
+    "h3",
+    "Our Test Setup"
+   ],
+   [
+    "h3",
+    "Speed Benchmark Results"
+   ],
+   [
+    "h3",
+    "DreamPress (Managed WordPress) Speed"
+   ],
+   [
+    "h2",
+    "What\u2019s DreamHost\u2019s Uptime Like?"
+   ],
+   [
+    "h2",
+    "Is DreamHost\u2019s Control Panel Easy to Use?"
+   ],
+   [
+    "h2",
+    "How Good Is DreamHost Support?"
+   ],
+   [
+    "h3",
+    "Support Channels"
+   ],
+   [
+    "h3",
+    "Our Support Test"
+   ],
+   [
+    "h2",
+    "DreamHost Pricing: Every Plan Compared"
+   ],
+   [
+    "h3",
+    "Shared Hosting"
+   ],
+   [
+    "h3",
+    "DreamPress (Managed WordPress)"
+   ],
+   [
+    "h3",
+    "VPS Hosting"
+   ],
+   [
+    "h2",
+    "DreamHost Features Worth Knowing About"
+   ],
+   [
+    "h3",
+    "Free Domain Privacy (WHOIS Protection)"
+   ],
+   [
+    "h3",
+    "Automated Backups"
+   ],
+   [
+    "h3",
+    "Free SSL Certificates"
+   ],
+   [
+    "h3",
+    "WordPress Website Builder (BoldGrid)"
+   ],
+   [
+    "h3",
+    "97-Day Money-Back Guarantee"
+   ],
+   [
+    "h2",
+    "DreamHost for WooCommerce: Does It Work?"
+   ],
+   [
+    "h2",
+    "DreamHost vs the Competition"
+   ],
+   [
+    "h2",
+    "Who Should Buy DreamHost (and Who Should Skip It)"
+   ],
+   [
+    "h2",
+    "FAQ"
+   ],
+   [
+    "h2",
+    "Related reading"
+   ],
+   [
+    "h2",
+    "Our Verdict"
+   ]
+  ],
+  "text": "Pros \u2705 97-day money-back guarantee \u2705 Free domain for the first year on annual plans \u2705 Transparent renewal pricing with no surprise jumps (Shared Starter renews at $6.99/mo, not double) \u2705 Unlimited bandwidth on all plans \u2705 Free automated daily backups on DreamPress (managed WordPress) \u2705 Custom-built control panel that's cleaner than cPanel for beginners Cons \u274c No live chat 24/7 \u274c Shared hosting TTFB averaged 487ms in our tests \u274c No built-in server-level caching on shared plans (you need a plugin like WP Super Cache) \u274c No free email on the cheapest Shared Starter plan \u274c Data centers limited to US only (Ashburn, VA and Hillsboro, OR) \u274c No staging environment on shared plans DreamHost Review 2026: Honest Speed Tests and Support Experience DreamHost has been selling WordPress hosting since 2003 and remains one of only three hosts officially recommended by WordPress.org in 2026. We signed up for a Shared Starter plan, installed a stock WordPress site with WooCommerce and seven common plugins, and ran speed tests over 30 days to find out whether DreamHost still holds up against hosts charging two to three times more. Quick verdict: DreamHost delivers respectable performance for the price\u2014our test site averaged 1.68s fully loaded time and 99.97% uptime over 30 days. It\u2019s a strong pick for budget-conscious site owners who value a generous 97-day money-back guarantee and transparent renewal pricing. It falls short on server response times compared to managed hosts like Kinsta or Cloudways , and live chat support is limited to callback hours. Who this is for: Beginners on a budget launching a business site, freelancers who need affordable multi-site hosting, and small WooCommerce stores processing under 500 orders per month. Disclosure: WPSchool earns a commission if you purchase through our links. This doesn\u2019t affect our ratings or testing methodology. We buy every hosting plan with our own money. Last verified: April 2026 Pros and Cons at a Glance What we liked: \u2705 97-day money-back guarantee\u2014longest in the industry by a wide margin (most hosts offer 30 days) \u2705 Free domain for the first year on annual plans \u2705 Transparent renewal pricing with no surprise jumps (Shared Starter renews at $6.99/mo, not double) \u2705 Unlimited bandwidth on all plans \u2705 Free automated daily backups on DreamPress (managed WordPress) \u2705 Custom-built control panel that\u2019s cleaner than cPanel for beginners \u2705 100% uptime guarantee with service credits\u2014unique among budget hosts What we didn\u2019t: \u274c No live chat 24/7\u2014support is callback-based outside business hours \u274c Shared hosting TTFB averaged 487ms in our tests\u2014slower than SiteGround (312ms) and Hostinger (298ms) \u274c No built-in server-level caching on shared plans (you need a plugin like WP Super Cache) \u274c No free email on the cheapest Shared Starter plan\u2014email is a $1.67/mo add-on \u274c Data centers limited to US only (Ashburn, VA and Hillsboro, OR)\u2014no European or Asian PoPs \u274c No staging environment on shared plans How Fast Is DreamHost in 2026? DreamHost\u2019s shared hosting delivers acceptable speed for a budget host, but it won\u2019t compete with managed WordPress platforms. Our test site averaged a fully loaded time of 1.68 seconds and a server response time (TTFB) of 487ms across 30 days of monitoring. That TTFB puts DreamHost behind SiteGround (312ms) and Hostinger (298ms) but ahead of Bluehost (623ms) on shared plans. Our Test Setup We installed WordPress 6.7 on a DreamHost Shared Unlimited plan ($13.99/mo billed monthly, $4.95/mo on a 3-year term). The test site ran: GeneratePress theme (lightweight, no page builder bloat) WooCommerce with 50 sample products WPForms Lite Rank Math Free Wordfence Free WP Super Cache (since DreamHost shared lacks server-level caching) Smush for image compression MonsterInsights Lite We used GTmetrix (Vancouver server), Pingdom (San Francisco), and UptimeRobot (5-minute checks) for 30 consecutive days starting March 10, 2026. Speed Benchmark Results Metric DreamHost Shared SiteGround StartUp Hostinger Premium Bluehost Basic TTFB (avg) 487 ms 312 ms 298 ms 623 ms Fully Loaded 1.68 s 1.32 s 1.41 s 2.14 s LCP 2.1 s 1.6 s 1.7 s 2.8 s FCP 1.4 s 0.9 s 1.0 s 1.9 s Uptime (30d) 99.97% 99.99% 99.95% 99.93% The 487ms TTFB is the number that matters most here. That\u2019s the time before WordPress even starts rendering your page. On managed hosting like Kinsta ($35/mo), we typically measure 180\u2013220ms TTFB. You\u2019re paying less with DreamHost, and you feel it in that first-byte delay. One finding competitors won\u2019t tell you: DreamHost\u2019s TTFB spiked to 800\u2013950ms during our simulated traffic tests (50 concurrent users via Loader.io). Under normal traffic (1\u20135 concurrent), it stayed in the 420\u2013520ms range. If you expect traffic bursts\u2014product launches, social media spikes\u2014the shared plan will struggle. DreamPress (Managed WordPress) Speed We also tested DreamPress, DreamHost\u2019s managed WordPress tier, at $16.95/month. The numbers improved: TTFB: 268ms (44% faster than shared) Fully loaded: 1.12s LCP: 1.5s Built-in Varnish caching eliminated the need for WP Super Cache DreamPress closes the gap with SiteGround and delivers performance closer to what you\u2019d expect from a $15\u201320/mo managed host. If speed matters to your business, skip Shared and go straight to DreamPress. Try DreamHost \u2192 What\u2019s DreamHost\u2019s Uptime Like? DreamHost recorded 99.97% uptime during our 30-day test\u2014that translates to roughly 13 minutes of total downtime. DreamHost is the only budget host offering a 100% uptime guarantee with actual service credits. If your site goes down, you receive one day of free hosting credit per hour of downtime, per DreamHost\u2019s official uptime guarantee policy . In our monitoring logs, we tracked two incidents: March 18: 8-minute outage at 3:12 AM EST (server maintenance window) March 29: 5-minute blip at 11:47 AM EST (no explanation in status page) Neither incident would have triggered the credit policy since both were under one hour. But the guarantee itself signals confidence, and 99.97% is solid for a host at this price point. For comparison, Bluehost delivered 99.93% in the same period\u2014nearly triple the downtime. Is DreamHost\u2019s Control Panel Easy to Use? DreamHost uses a custom-built control panel instead of cPanel or Plesk. For beginners building a first WordPress site, it\u2019s actually simpler. The panel organizes everything into clear categories\u2014Domains, WordPress, Email, Databases\u2014without the 70+ icon grid that makes cPanel overwhelming. The trade-off: if you\u2019ve used cPanel for years, you\u2019ll spend 15\u201320 minutes relearning where things live. We timed common tasks in both panels: Task DreamHost Panel cPanel (SiteGround) Install WordPress 2 clicks, 90 seconds 3 clicks, 120 seconds Add domain 4 clicks 3 clicks Create email account 5 clicks + $1.67/mo 3 clicks (free) Access phpMyAdmin 3 clicks 2 clicks Set up SSL Automatic (Let\u2019s Encrypt) Automatic WordPress installation is genuinely faster on DreamHost\u2014the one-click installer pre-configures permalink structure and removes default bloat plugins. In our testing, a fresh DreamHost WordPress install came with zero pre-installed partner plugins, unlike Bluehost which bundles five. How Good Is DreamHost Support? DreamHost support is competent but not always available when you need it. This is the weakest area for DreamHost in 2026, and it\u2019s worth understanding before you buy. Support Channels Live chat: Available 5:30 AM \u2013 9:30 PM PT daily. Outside those hours, you submit a callback request. Email tickets: 24/7 with typical response in 4\u20138 hours. Phone: Callback only, no direct dial-in number. Available on paid plans. Knowledge base: Extensive, well-written, covers most common WordPress issues. Our Support Test We submitted three tickets during our review period: Ticket 1 (live chat, 2:15 PM PT): Asked how to enable OPcache on shared hosting. Response time: 3 minutes. The agent confirmed OPcache is enabled by default on all shared plans and sent a link to the relevant docs. Rating: Excellent. Ticket 2 (email, 11:30 PM PT): Reported a 502 error on our test site. First response: 6 hours and 14 minutes. The agent identified a plugin conflict, provided specific steps, and followed up the next day. Rating: Good answer, slow delivery. Ticket 3 (callback request, 8:45 AM PT): Asked about migrating from shared to DreamPress. Callback came in 47 minutes. The agent walked through the process and offered to handle the migration for free. Rating: Good. The pattern across WordPress.org reviews matches our experience: users consistently praise DreamHost\u2019s technical competence but report frustration with availability gaps. If your site breaks at midnight Eastern time, you\u2019re waiting until morning Pacific for a human response. For a freelancer managing client sites across time zones, that\u2019s a real limitation. Compared to SiteGround\u2019s 24/7 live chat with typical 2-minute response times, or Kinsta\u2019s expert-level 24/7 support, DreamHost\u2019s support hours feel dated for 2026. Try DreamHost \u2192 DreamHost Pricing: Every Plan Compared DreamHost\u2019s pricing is more transparent than most budget hosts. Renewal prices are visible before checkout, and the jump from intro to renewal is smaller than competitors. Here\u2019s the full breakdown as of April 2026: Shared Hosting Plan Intro Price (3yr) Intro Price (monthly) Renewal Price Websites Storage Email Shared Starter $2.95/mo $6.99/mo $6.99/mo 1 50 GB SSD Add-on ($1.67/mo) Shared Unlimited $3.95/mo $13.99/mo $13.99/mo Unlimited Unlimited SSD Free DreamPress (Managed WordPress) Plan Monthly Price Websites Storage Visitors/mo Staging DreamPress $16.95/mo 1 30 GB SSD ~100K Yes DreamPress Plus $24.95/mo 1 60 GB SSD ~300K Yes DreamPress Pro $71.95/mo 1 120 GB SSD ~1M Yes VPS Hosting Plan Price RAM Storage Websites VPS Basic $13.75/mo 1 GB 30 GB SSD Unlimited VPS Business $27.50/mo 2 GB 60 GB SSD Unlimited VPS Professional $55.00/mo 4 GB 120 GB SSD Unlimited VPS Enterprise $110.00/mo 8 GB 240 GB SSD Unlimited Pricing reality check: DreamHost\u2019s Shared Starter at $2.95/mo requires a 3-year commitment. The honest monthly cost is $6.99 if you don\u2019t want to lock in for 36 months. That\u2019s still competitive\u2014Hostinger\u2019s comparable plan is $2.99/mo (48-month lock-in, renews at $7.99), and SiteGround starts at $2.99/mo (renews at $17.99/mo, nearly triple). DreamHost\u2019s renewal pricing is its underrated advantage. The Shared Starter plan renews at $6.99/mo\u2014the same as the monthly rate. SiteGround\u2019s StartUp renews at $17.99/mo, a 500% increase from the intro price. Over three years, DreamHost costs $251.64 at renewal versus SiteGround\u2019s $647.64. That\u2019s $396 in savings. DreamHost Features Worth Knowing About Free Domain Privacy (WHOIS Protection) Every domain registered through DreamHost includes free WHOIS privacy. Most budget hosts charge $10\u201315/year for this. Over 5 years, that\u2019s $50\u201375 saved per domain. Automated Backups DreamPress plans include free daily backups with one-click restore. Shared plans get weekly backups, but restore requires a support ticket. For shared hosting, we recommend adding UpdraftPlus (free) for daily automated backups to Google Drive or Dropbox. Free SSL Certificates All plans include free Let\u2019s Encrypt SSL with automatic renewal. Installation is automatic\u2014no manual configuration needed. In our testing, SSL provisioned within 4 minutes of adding a domain. WordPress Website Builder (BoldGrid) DreamHost bundles BoldGrid, a free WordPress page builder, on shared plans. It\u2019s functional for basic sites but lacks the template library and polish of Elementor or Divi . We wouldn\u2019t recommend it over either of those options for a client-facing business site. 97-Day Money-Back Guarantee This is DreamHost\u2019s standout policy. You get over three months to test the service\u2014enough time to build a real site, test speed under actual traffic, and evaluate support. The industry standard is 30 days. Hostinger offers 30 days, SiteGround offers 30 days, and Kinsta offers 30 days. No other major host comes close to 97 days. The catch: The refund applies only to shared hosting plans. DreamPress, VPS, and dedicated server plans have a 30-day refund window. Domain registration fees are non-refundable. DreamHost for WooCommerce: Does It Work? DreamHost shared hosting runs WooCommerce, but it\u2019s not where we\u2019d put a store expecting growth. Our WooCommerce test site (50 products, Storefront theme, Stripe checkout) loaded product pages in 2.3 seconds on shared hosting and 1.4 seconds on DreamPress. The critical metric for stores is checkout speed. We measured Add to Cart \u2192 Order Confirmation: Shared hosting: 4.8 seconds average DreamPress: 2.9 seconds average Kinsta (for comparison): 1.7 seconds average For a store processing under 100 orders per month, DreamHost shared will work. Between 100\u2013500 orders, DreamPress is the minimum. Above 500 orders monthly, consider Kinsta or Cloudways where server-level caching and PHP worker pools handle concurrent checkout sessions without queuing. Try DreamHost for WooCommerce \u2192 DreamHost vs the Competition Feature DreamHost Shared SiteGround StartUp Hostinger Premium Bluehost Basic Intro price $2.95/mo (3yr) $2.99/mo (1yr) $2.99/mo (4yr) $2.95/mo (1yr) Renewal price $6.99/mo $17.99/mo $7.99/mo $11.99/mo TTFB (our test) 487 ms 312 ms 298 ms 623 ms Uptime (30d) 99.97% 99.99% 99.95% 99.93% Free email No (Unlimited plan only) Yes Yes Yes Money-back window 97 days 30 days 30 days 30 days Support hours Limited 24/7 24/7 24/7 Data centers 2 (US) 6 (global) 7 (global) 1 (US) Server caching No (shared) Yes (SuperCacher) Yes (LiteSpeed) No Our take: DreamHost wins on renewal value and refund policy. SiteGround wins on speed and support. Hostinger wins on raw performance per dollar. Bluehost loses across the board in 2026. Who Should Buy DreamHost (and Who Should Skip It) Buy DreamHost if you: Want predictable hosting costs without renewal shock\u2014DreamHost\u2019s pricing transparency is unmatched among budget hosts Need time to evaluate\u2014the 97-day guarantee removes purchase anxiety entirely Run 1\u20133 small business or portfolio sites that don\u2019t need sub-second load times Value privacy\u2014free WHOIS protection on every domain saves $10\u201315/year per domain Prefer a cleaner control panel over traditional cPanel Skip DreamHost if you: Need 24/7 live support\u2014DreamHost\u2019s limited chat hours are a dealbreaker for anyone managing sites across time zones Run a WooCommerce store above 500 orders/month\u2014upgrade to Kinsta or Cloudways instead Target European or Asian audiences\u2014US-only data centers add 200\u2013400ms latency for overseas visitors Want server-level caching included on shared plans\u2014SiteGround and Hostinger include this; DreamHost doesn\u2019t Manage client sites where downtime at midnight means a 6 AM support response Bottom line: DreamHost earns a 7.4/10 for budget WordPress hosting. It\u2019s honest, affordable, and reliable enough for personal sites and small businesses. It\u2019s not fast enough or well-supported enough for stores, agencies, or anyone who needs help outside Pacific business hours. Try DreamHost \u2192 FAQ Is DreamHost good for beginners? Yes. The custom control panel is simpler than cPanel, WordPress installs in 90 seconds, and the 97-day refund window gives you three months to learn without risk. How much does DreamHost cost per month? Shared hosting starts at $2.95/month on a 3-year plan or $6.99/month billed monthly. DreamPress managed WordPress starts at $16.95/month. All prices exclude domain registration. Does DreamHost offer free email? Only on the Shared Unlimited plan ($3.95/mo introductory). The Shared Starter plan charges $1.67/month per mailbox as an add-on. Is DreamHost faster than Bluehost? Yes. In our 30-day test, DreamHost averaged 487ms TTFB versus Bluehost\u2019s 623ms\u201428% faster. DreamHost also recorded better uptime (99.97% vs 99.93%). Does DreamHost have a money-back guarantee? DreamHost offers a 97-day money-back guarantee on shared hosting plans\u2014the longest in the industry. DreamPress and VPS plans have a 30-day refund window. Can I use DreamHost for WooCommerce? DreamHost shared hosting runs WooCommerce but loads product pages in 2.3 seconds. For stores above 100 orders/month, upgrade to DreamPress ($16.95/mo) for 1.4-second product page loads and built-in caching. Does DreamHost include SSL? Yes. All plans include free Let\u2019s Encrypt SSL certificates with automatic installation and renewal. No manual configuration required. Where are DreamHost\u2019s data centers? DreamHost operates two US data centers: Ashburn, Virginia and Hillsboro, Oregon. There are no international data center options, which adds latency for non-US visitors. Related reading SiteGround Review 2026: Speed, Support, and the 2025 Price Hike Verdict Hostinger vs SiteGround: Which WordPress Host Actually Delivers in 2026? SiteGround vs Bluehost (2026): Which Budget Host Is Better? WooCommerce Review 2026: The Real Cost of Free Ecommerce on WordPress WooCommerce vs Shopify (2026): Which E-Commerce Platform to Choose? Bluehost Review 2026: Why I Stopped Recommending the Official WordPress Host Hostinger Review 2026: Real Speed Tests, Uptime Data, and Is It Worth It? Kinsta Review 2026: Premium WordPress Hosting Worth $35/Month? Cloudways vs Kinsta (2026): Cloud Hosting Compared Kinsta vs WP Engine (2026): Premium Managed Hosting Compared What Is cPanel? The WordPress Beginner\u2019s Guide Cloudways Review 2026: The Managed Cloud Hosting That Changed My Mind Rank Math Review 2026: Better Than Yoast for Free? What Is WordPress Hosting? Types, Costs, and What Beginners Actually Need Divi Review 2026: Still the Best Theme Builder After 10 Years? WordPress.com vs WordPress.org (2026): Which Should You Use? Yoast SEO vs Rank Math (2026): Which SEO Plugin Wins? Astra vs GeneratePress (2026): Fastest WordPress Theme? plugin theme permalink 4 Our Verdict DreamHost delivers respectable performance for the price\u2014our test site averaged 1.68s fully loaded time and 99.97% uptime over 30 days Comparison table will appear here when alternatives are linked."
+ },
+ {
+  "url": "https://rankplot.com/dreamhost-review-2026/",
+  "title": "DreamHost Review 2026: Plans, Pricing & Best Fit",
+  "words": 4131,
+  "headings": [
+   [
+    "h2",
+    "Quick Verdict: DreamHost in 2026"
+   ],
+   [
+    "h2",
+    "What Is DreamHost? The 30-Second Briefing"
+   ],
+   [
+    "h2",
+    "DreamHost Plans & Pricing \u2014 Current 2026 Lineup"
+   ],
+   [
+    "h3",
+    "Launch vs. Growth vs. Scale"
+   ],
+   [
+    "h3",
+    "DreamPress: Current Managed WordPress Plans"
+   ],
+   [
+    "h2",
+    "Performance Benchmarks \u2014 My 3-Month Test Results"
+   ],
+   [
+    "h4",
+    "\ud83d\udd2c Testing Methodology"
+   ],
+   [
+    "h3",
+    "TTFB (Time to First Byte)"
+   ],
+   [
+    "h3",
+    "Core Web Vitals Scorecard"
+   ],
+   [
+    "h3",
+    "Uptime \u2014 90-Day Monitoring Results"
+   ],
+   [
+    "h2",
+    "DreamHost Security in 2026 \u2014 The Honest Picture, Including the 2025 Breach"
+   ],
+   [
+    "h3",
+    "Standard Security Stack"
+   ],
+   [
+    "h4",
+    "\ud83d\udee1\ufe0f Do This Immediately After Signing Up \u2014 5-Step Security Hardening"
+   ],
+   [
+    "h3",
+    "What\u2019s Still Missing vs. Managed Alternatives"
+   ],
+   [
+    "h2",
+    "WordPress Hosting \u2014 Shared vs. DreamPress, Head-to-Head"
+   ],
+   [
+    "h3",
+    "DreamPress in 2026: What the Managed Upgrade Buys"
+   ],
+   [
+    "h3",
+    "The Liftoff AI Website Builder \u2014 What It Can and Can\u2019t Do"
+   ],
+   [
+    "h3",
+    "Developer Tools \u2014 SSH, WP-CLI, Git, Staging"
+   ],
+   [
+    "h2",
+    "Ease of Use \u2014 DreamHost\u2019s Custom Panel vs. cPanel"
+   ],
+   [
+    "h3",
+    "Onboarding Flow \u2014 Tested Cold"
+   ],
+   [
+    "h3",
+    "Custom Dashboard Navigation"
+   ],
+   [
+    "h3",
+    "Email Setup & Management"
+   ],
+   [
+    "h2",
+    "Customer Support \u2014 Callbacks, Live Chat, and the No-Phone Policy"
+   ],
+   [
+    "h3",
+    "My Live Chat Test Results"
+   ],
+   [
+    "h4",
+    "\ud83d\udcac What Real Users Are Saying (Trustpilot & G2, April 2026)"
+   ],
+   [
+    "h3",
+    "Knowledge Base Depth"
+   ],
+   [
+    "h2",
+    "How to Sign Up for DreamHost \u2014 Step-by-Step"
+   ],
+   [
+    "h2",
+    "DreamHost vs. Competitors \u2014 The Honest Comparison"
+   ],
+   [
+    "h2",
+    "Best DreamHost Alternatives in 2026"
+   ],
+   [
+    "h2",
+    "Who Should Use DreamHost \u2014 And Who Absolutely Shouldn\u2019t"
+   ],
+   [
+    "h3",
+    "\u2705 DreamHost Is The Right Call If You Are:"
+   ],
+   [
+    "h3",
+    "\u274c DreamHost Is The Wrong Call If You Are:"
+   ],
+   [
+    "h2",
+    "My Final Verdict \u2014 DreamHost 2026 Score"
+   ],
+   [
+    "h2",
+    "Frequently Asked Questions"
+   ]
+  ],
+  "text": "Disclosure: This post contains affiliate links. If you buy through them, I may earn a commission at no extra cost to you. I only recommend products I\u2019d actually use. My opinions are my own. Table of Contents Toggle Quick Verdict: DreamHost in 2026 Overall fit: DreamHost is a strong value pick for US-focused WordPress sites, privacy-conscious bloggers, small business sites, and teams that want transparent renewal pricing without a private-equity hosting stack. It is less compelling for global audiences, cPanel-first users, and teams that require 24/7 phone support. Best for: US bloggers, small business WordPress sites, privacy-conscious domain owners, and budget-managed DreamPress users. Skip if: your audience is mostly APAC/LATAM, your team depends on cPanel, or phone support is part of your operating requirements. Watch closely: renewal price, paid email after the three-month trial on Web Hosting plans, optional CDN costs, and the 2025 security incident discussed below. Compare first: see how DreamHost fits inside the broader Rankplot web hosting services hub . View Current DreamHost Web Hosting Plans DreamHost has been hosting websites since before Google existed. That\u2019s either reassuring or a red flag, depending on what you actually test. I spent three months running DreamHost through its paces \u2014 shared hosting, DreamPress, live uptime monitoring, support tickets at odd hours, and a cold-start onboarding with zero prior account history. If you are still building your shortlist, start with the Rankplot hosting hub first, then use this review to judge DreamHost specifically. What I found surprised me in both directions. This DreamHost Review 2026 isn\u2019t based on a spec sheet. It\u2019s based on data. TTFB numbers, Core Web Vitals scores, a real TCO table showing what you spend in year three (not year one), and a frank look at a 2025 security incident that most reviewers quietly ignored. By the end, you\u2019ll know exactly whether DreamHost is the right call for your use case \u2014 or whether you should look elsewhere. What Is DreamHost? The 30-Second Briefing Four students at Harvey Mudd College founded DreamHost in 1996. They called it New Dream Network. Back then, there was no WordPress, no Google, and no one-click anything. The fact that they survived all three waves of internet disruption \u2014 dot-com bust, the social web, and the AI era \u2014 tells you something meaningful about the business. Today, DreamHost powers over 1.5 million websites across 100+ countries and serves around 400,000 customers globally . More importantly, it\u2019s one of only three web hosts officially recommended by WordPress.org . That recommendation isn\u2019t handed out because someone paid for placement. WordPress evaluates hosts on performance benchmarks, security posture, and customer support quality. DreamHost has held that spot for years. One detail I genuinely respect: DreamHost is independently owned . It\u2019s not part of the EIG (Endurance International Group) or Newfold Digital conglomerates that quietly own Bluehost, HostGator, iPage, and roughly a dozen other brands. Independent ownership means product decisions don\u2019t get made by a private equity firm optimizing for exit multiples. That matters for long-term service quality. \ud83c\udf31 Green Hosting: DreamHost operates energy-efficient data centers and maintains commitments to renewable energy usage across its infrastructure. If your brand values sustainability \u2014 NGOs, B Corps, eco-conscious businesses \u2014 that\u2019s a real, verifiable alignment, not greenwashing. Few competitors at this price point can make the same claim. DreamHost Plans & Pricing \u2014 Current 2026 Lineup Updated June 30, 2026: DreamHost retired Shared Starter and Shared Unlimited for new purchases in October 2025. Existing customers can keep those legacy plans, but new buyers now choose Web Hosting Launch, Growth, or Scale. The prices below are a point-in-time snapshot from DreamHost\u2019s official US pages; promotions and billing terms can change. Plan Websites Storage Email trial Backups Best for Launch 25 25 GB NVMe 20 mailboxes for 3 months Daily New sites and small portfolios Growth 50 50 GB 40 mailboxes for 3 months Daily Growing businesses Scale 100 100 GB 60 mailboxes for 3 months Daily Larger multi-site portfolios At the June 30 check, Web Hosting Launch showed .89/month for the first year and .99/month on renewal . That is about .68 for year one and 1.88 for a 12-month renewal, before tax and optional services. DreamHost lists unmetered bandwidth, unlimited free SSL, daily backups, 24/7 support, a first-year domain on eligible annual plans, and a 30-day money-back guarantee across the new web-hosting lineup. Email caveat: Launch, Growth, and Scale include a limited number of mailboxes free for the first three months. DreamHost says a paid email plan is automatically added after that period if service continues. Budget for month four rather than treating email as permanently free. Launch vs. Growth vs. Scale Launch is enough for most readers of this review. Growth and Scale primarily increase site, storage, database, subdomain, and mailbox limits. They also add security capacity such as included DreamShield scans. Do not pay for a higher tier only because the plan name sounds faster; match the tier to the number and resource profile of the sites you actually operate. DreamPress: Current Managed WordPress Plans Plan First year Renewal Sites NVMe storage Monthly visits DreamPress 1 .99/mo .99/mo 1 15 GB 40,000 DreamPress 2 .99/mo .99/mo 2 25 GB 80,000 DreamPress 3 .99/mo .99/mo 3 30 GB 125,000 DreamPress is the managed option: WordPress-specific caching, staging, daily and on-demand backups, professional migration, Bunny CDN, failover protection, and unlimited mailboxes are part of the current product positioning. Larger DreamPress 5, 10, and 20 plans extend the same model for agencies. Prices and limits were checked on DreamHost\u2019s official managed WordPress page on June 30, 2026. For a broader price and feature comparison, use the Rankplot hosting hub and the Best WordPress Hosting in 2026 guide before checkout. Performance Benchmarks \u2014 My 3-Month Test Results Historical-test note: The benchmark below was recorded on legacy Shared Unlimited and DreamPress Basic plans from January through March 2026. DreamHost no longer sells those plan names to new customers. These results describe the tested legacy environments and must not be read as benchmarks for Launch, Growth, Scale, or the current DreamPress lineup. \ud83d\udd2c Testing Methodology Test period: January \u2013 March 2026 | Plans tested: Shared Unlimited & DreamPress Basic | Test theme: GeneratePress (clean install) | Plugins: Yoast SEO + WooCommerce demo data only | Speed tools: GTmetrix + WebPageTest | Uptime monitor: UptimeRobot (90-day window, 5-min checks) | Test locations: East Coast (Ashburn, VA), West Coast (Los Angeles, CA), London (UK) TTFB (Time to First Byte) Plan TTFB (East Coast) TTFB (West Coast) TTFB (London) Shared Unlimited ~310ms ~385ms ~720ms DreamPress Basic ~180ms ~210ms ~490ms Industry Target <200ms <200ms <200ms DreamPress hits the sub-200ms TTFB target for US East Coast visitors. Competitive. Shared hosting runs slower \u2014 310ms East Coast is acceptable but not exciting. The London latency on both plans reflects DreamHost\u2019s primarily US-based data center footprint. Their server locations are Ashburn, VA , Hillsboro, OR , and Amsterdam . If your audience is in Southeast Asia, South America, or Australia, you\u2019ll need a CDN to close that gap. Core Web Vitals Scorecard Metric Shared Unlimited DreamPress Basic Google \u201cGood\u201d Threshold LCP (Largest Contentful Paint) 2.8s 1.9s < 2.5s CLS (Cumulative Layout Shift) 0.04 0.02 < 0.1 INP (Interaction to Next Paint) 185ms 140ms < 200ms DreamPress passes all three Core Web Vitals thresholds on a clean WordPress setup. Shared Unlimited passes LCP on a clean install \u2014 add heavier plugins and imagery, and you\u2019ll start cutting it close. The CLS and INP scores are solid across the board. DreamHost\u2019s server-side caching does real work here. Uptime \u2014 90-Day Monitoring Results DreamHost advertises a 100% uptime guarantee. Over my 90-day monitoring window, I logged 99.97% uptime on Shared Unlimited \u2014 two brief incidents totaling under 13 minutes of downtime. DreamPress had zero logged downtime events. Both results are industry-competitive. Not best-in-class like Kinsta\u2019s 99.99%, but well above the threshold where outages start affecting real business. DreamHost Security in 2026 \u2014 The Honest Picture, Including the 2025 Breach I\u2019m going to say what most reviews quietly skipped over: DreamHost had a security incident in 2025. A hacker accessed unencrypted FTP and shell account passwords. DreamHost responded with a forced full password reset across affected accounts. No new breaches have been reported through Q1 2026, and their status page shows all services operational. Does that incident disqualify DreamHost? No. But it raises a specific question about their password storage practices \u2014 specifically, why FTP/shell passwords were stored in a recoverable format. Modern security standards call for hashed credentials that can\u2019t be reversed. DreamHost has not published a public post-mortem on the architectural changes made after that event. That opacity is a legitimate concern if you\u2019re running a site that handles sensitive user data. Standard Security Stack Free SSL/TLS certificates on every plan via Let\u2019s Encrypt \u2014 automatic issuance and renewal Free WHOIS privacy on all supported TLDs \u2014 competitors like GoDaddy charge $10\u2013$15/year for this Multi-factor authentication (MFA) available on all accounts Daily automated backups with one-click restore on DreamPress plans SSH/SFTP access included \u2014 no extra charge, on all plans Malware scanning via DreamShield add-on ($3/month per site) \ud83d\udee1\ufe0f Do This Immediately After Signing Up \u2014 5-Step Security Hardening Enable MFA on your DreamHost account \u2014 Account \u2192 Security \u2192 Two-Factor Authentication Switch from FTP to SFTP/SSH in every FTP client you use \u2014 disable plain FTP entirely from the panel Generate SSH key pair authentication \u2014 replace password-based SSH login with key-based access Activate DreamShield ($3/mo) if you handle any user data, logins, or payment-adjacent forms Install Wordfence Free on your WordPress install \u2014 adds firewall rules and login protection that DreamHost\u2019s baseline stack doesn\u2019t include What\u2019s Still Missing vs. Managed Alternatives WP Engine and Kinsta include proprietary malware scanning, automated threat blocking, and enterprise-grade WAF (Web Application Firewall) baked into their base plans. DreamHost\u2019s baseline security is solid for shared hosting. It\u2019s not at that managed-hosting tier without adding DreamShield and a third-party firewall plugin. Factor in those add-on costs when you\u2019re comparing true price-to-value. For a full side-by-side breakdown, see our Best WordPress Hosting in 2026 comparison. WordPress Hosting \u2014 Shared vs. DreamPress, Head-to-Head WordPress powers 43%+ of the web. DreamHost\u2019s entire product line is built around it. Here\u2019s what the experience actually looks like on both tiers.Not sure which tier suits your needs? See our shared vs. managed WordPress hosting guide DreamPress in 2026: What the Managed Upgrade Buys DreamPress 1 currently starts at .99/month for the first year and renews at .99/month. It supports one site, 15 GB of NVMe storage, about 40,000 monthly visits, 14 days of backup retention, one professional migration, unlimited mailboxes, staging, and CDN service. Higher plans add sites, storage, visit capacity, and scheduled callbacks. The upgrade makes sense when staging, managed caching, professional migration, backup controls, and WordPress-specialist support reduce operational risk. It is not automatically the best value for a low-traffic brochure site. Compare it with current managed hosts using the shared vs. managed WordPress hosting guide ; do not compare current DreamPress pricing against discontinued DreamPress Basic or Plus tiers. The Liftoff AI Website Builder \u2014 What It Can and Can\u2019t Do DreamHost\u2019s Liftoff tool uses AI to spin up a WordPress site in under 60 seconds. I tested it cold: entered a business name, selected a site type, picked a color palette. The output was a functional WordPress install with a pre-configured theme, basic page structure, and placeholder content. Not bad for 60 seconds. The ceiling is low, though. AI-generated content is generic and will need to be entirely rewritten. The theme options are limited to DreamHost\u2019s curated set. Anyone with a specific design vision or custom brand identity will bypass Liftoff entirely. Think of it as a \u201cget online fast\u201d tool for absolute beginners \u2014 not a replacement for a real site builder or developer. Developer Tools \u2014 SSH, WP-CLI, Git, Staging This is where DreamHost earns real points with the technical crowd. SSH access, WP-CLI, and Git integration are available on all plans \u2014 not locked behind a VPS tier like some hosts. Staging environments are included on DreamPress. One-click push from staging to production works cleanly. The one gap: multisite staging on shared hosting isn\u2019t supported. And if you need a CI/CD pipeline or Docker-based deploy workflow, you\u2019ll want VPS or dedicated. For a typical WordPress developer managing client sites, the DreamPress developer toolkit is more than enough. Ease of Use \u2014 DreamHost\u2019s Custom Panel vs. cPanel DreamHost doesn\u2019t use cPanel. Full stop. For veterans who\u2019ve spent years inside cPanel\u2019s cluttered interface, this is a jarring adjustment. For everyone else, it\u2019s actually a feature. Onboarding Flow \u2014 Tested Cold I timed my onboarding from payment confirmation to a live WordPress site. The clock stopped at 11 minutes, 40 seconds . That includes domain registration, WordPress auto-install via Liftoff, and SSL provisioning. The setup wizard is step-by-step, zero ambiguity. Custom Dashboard Navigation The DreamHost panel organizes functions under five main nav sections: Websites, Domains, WordPress, Billing, and Account. Everything you\u2019d expect is accessible within two clicks. File Manager, MySQL databases, SFTP credentials, email management \u2014 all logically grouped. The panel doesn\u2019t suffer from legacy cruft. No buried \u201cAdvanced\u201d menus full of options you\u2019ll never touch. The downside is muscle memory. If you manage client sites across multiple hosts, switching between cPanel and DreamHost\u2019s panel is a cognitive tax. There\u2019s no workaround for that except time. Email Setup & Management Creating a mailbox takes under two minutes. Each mailbox gets 25 GB of storage with IMAP access, spam filtering, and webmail via a clean browser interface. DreamHost also supports optional integration with Titan Email and Google Workspace for teams that need more horsepower. The current distinction is plan type. Web Hosting Launch, Growth, and Scale include 20, 40, or 60 mailboxes free for the first three months; a paid email plan is added afterward if service continues. Current DreamPress plans list unlimited mailboxes. Confirm the post-trial email charge in checkout because it can change independently of hosting prices. Customer Support \u2014 Callbacks, Live Chat, and the No-Phone Policy Let\u2019s call it like it is: DreamHost doesn\u2019t offer free phone support on entry-level plans. You can request a callback on higher-tier plans, or pay for it as an add-on on Shared hosting. If you need to call someone at 2am and have someone pick up, look at Nexcess or WP Engine. That\u2019s a real limitation. My Live Chat Test Results I ran five separate live chat sessions over my three-month test window, at varying times (business hours, late night, weekend morning). Average first-response time: 4 minutes, 20 seconds . Resolution rate on first contact: 4 out of 5 issues resolved without escalation. The one escalation \u2014 a DreamPress staging push conflict \u2014 was resolved within 18 hours via ticket. Quality was consistent. Agents understood WordPress at a technical level and didn\u2019t flinch at questions about PHP version configs or WP-CLI commands. \ud83d\udcac What Real Users Are Saying (Trustpilot & G2, April 2026) \u2b50\u2b50\u2b50\u2b50\u2b50 \u201cI have been hosting my domains with Dreamhost since 2005\u2026 every time I run into trouble their customer service is so responsive and helpful. They don\u2019t just tell me how to fix something, they go ahead and fix it for me!\u201d \u2014 JEJenny, Trustpilot \u2b50\u2b50\u2b50 \u201cDreamhost servers can be a bit slow, which affects load times on the websites.\u201d \u2014 G2 reviewer (shared hosting plan, peak-traffic period) Reviews sourced from Trustpilot and G2 public listings. Shared for informational context \u2014 not compensated placements. Knowledge Base Depth DreamHost\u2019s documentation library is genuinely excellent \u2014 over 700 articles covering everything from basic DNS setup to NGINX configuration and Python virtual environments. Search works. Articles are maintained. I didn\u2019t encounter any docs referencing deprecated UI. For self-sufficient users, you can solve most issues without ever opening a chat window. How to Sign Up for DreamHost \u2014 Step-by-Step The whole process took me under 12 minutes from landing on DreamHost.com to having a live WordPress site. Here\u2019s exactly how it goes: Choose your plan \u2014 For shared hosting, compare Launch, Growth, and Scale . For managed WordPress, compare the current DreamPress 1\u201320 lineup . Shared Starter, Shared Unlimited, DreamPress Basic, and DreamPress Plus are legacy names, not current new-customer choices. Register or transfer a domain \u2014 Annual and longer plans include one free domain for the first year. Free WHOIS privacy is included automatically \u2014 no opt-in required. Select your billing term \u2014 3-year locks in the lowest promotional rate. Monthly billing is available at a slight premium but with zero long-term commitment. Complete checkout \u2014 No hidden fees at this stage. Add-ons (DreamShield, professional email, domain privacy extras) are clearly listed. Skip anything you don\u2019t need. Access your DreamHost panel \u2014 Login link arrives in your confirmation email within 2 minutes. The panel URL is panel.dreamhost.com. Install WordPress \u2014 From the panel, click WordPress \u2192 Install WordPress . The Liftoff AI builder launches. If you prefer a manual install, that option is available too. WordPress is live in 5\u201310 minutes including server-side provisioning. Harden your account immediately \u2014 Enable MFA, switch to SFTP, generate SSH keys. See the security checklist above. Start Your DreamHost Setup \u2192 DreamHost vs. Competitors \u2014 The Honest Comparison Factor DreamHost Bluehost SiteGround Hostinger WP Engine Ownership \u2705 Independent \u274c Newfold (PE) \u2705 Independent \u2705 Independent \u2705 Independent Entry price (promo) $2.89/mo $4.99/mo ~$3.99/mo ~$1.99/mo ~$20/mo Free WHOIS privacy \u2705 Always free \u274c Paid add-on \u2705 Free \u2705 Free N/A Month-to-month billing \u2705 Competitive \u26a0\ufe0f Major markup \u2705 Available \u2705 Available \u2705 Available WP.org recommended \u2705 Yes \u2705 Yes \u274c No \u274c No \u274c No Money-back guarantee \u2705 30 days \u2705 30 days \u2705 30 days \u2705 30 days \u2705 60 days Control panel Custom (clean) cPanel Custom Custom Custom Phone support \u26a0\ufe0f Callback only \u2705 24/7 \u2705 Priority tier \u274c No \u2705 24/7 US TTFB (avg) 180\u2013310ms 230\u2013420ms 160\u2013250ms 140\u2013220ms 150\u2013200ms Green hosting \u2705 Yes \u274c No \u26a0\ufe0f Partial \u26a0\ufe0f Partial \u274c No \ud83c\udfc6 Bottom-Line Winner by Use Case: Price-sensitive US bloggers and small businesses \u2192 DreamHost . Speed-obsessed global sites \u2192 Hostinger . Enterprise-grade SLA + phone support \u2192 WP Engine . cPanel loyalists who also want WordPress \u2192 Bluehost . Best performance-per-dollar in EU \u2192 SiteGround . Read Our Full Bluehost Review \u2192 Read Our Full SiteGround Review \u2192 Compare Managed WordPress Hosting Options \u2192 Best DreamHost Alternatives in 2026 DreamHost is strongest when the buyer values WordPress-first hosting, privacy, and US performance. If your constraints are different, these are the alternatives I would check before buying: Bluehost: better fit if you want cPanel, beginner onboarding, and 24/7 phone support. Read the Bluehost Review 2026 . SiteGround: better fit if support quality and managed WordPress polish matter more than lowest renewal cost. Read the SiteGround Review 2026 . Hostinger: better fit if first-year price and global speed are the main buying criteria. Read the Hostinger Review 2026 . Hosting.com: better fit if you want low-cost cPanel hosting with LiteSpeed and a controlled first-year bill. Read the Hosting.com Review 2026 . For the broader shortlist, return to the Rankplot hosting hub . Who Should Use DreamHost \u2014 And Who Absolutely Shouldn\u2019t \u2705 DreamHost Is The Right Call If You Are: A WordPress-first creator or blogger in the US who values a clean panel, solid uptime, and no conglomerate overhead A small business running WooCommerce with under 100,000 monthly pageviews \u2014 DreamPress Basic handles this workload at a price WP Engine can\u2019t touch A privacy-conscious site owner who doesn\u2019t want to pay extra for WHOIS protection or worry about data broker exposure A developer managing multiple WordPress client sites who needs SSH, WP-CLI, Git, and staging without enterprise hosting overhead Someone who hates long-term contracts \u2014 DreamHost\u2019s month-to-month pricing is legitimately competitive, not punitive An eco-conscious brand that wants hosting aligned with sustainability values \u274c DreamHost Is The Wrong Call If You Are: Running a high-traffic site with a global audience in APAC or LATAM \u2014 two US data centers and one in Amsterdam won\u2019t keep TTFB under 200ms without serious CDN investment A team or agency requiring 24/7 phone support as an SLA \u2014 the callback-only model is a genuine operational risk for client-facing agencies A sysadmin who lives in cPanel \u2014 the muscle memory cost is real; retraining friction will eat the cost savings An enterprise site handling sensitive PII or e-commerce at scale \u2014 the 2025 security incident and lack of a public post-mortem warrant more scrutiny A site that needs advanced multisite staging, enterprise SSO, or CI/CD pipelines \u2014 those require VPS or Dedicated, which shifts the price bracket entirely My Final Verdict \u2014 DreamHost 2026 Score Category Score (/ 10) Notes \ud83d\ude80 Performance 7.5 Strong for US audiences; limited global reach without CDN \ud83d\udcb0 Price / Value 9.0 Best-in-class TCO for US WordPress users; transparent renewal rates \ud83d\udd12 Security 7.0 Solid standard stack; 2025 breach and missing post-mortem dock points \ud83d\udedf Support 7.5 Live chat quality is strong; no phone support on base plans \ud83d\udda5\ufe0f Ease of Use 8.5 Custom panel is cleaner than cPanel; smooth 12-min onboarding Overall 7.8 / 10 Top pick for US-based WordPress sites in the value tier My bottom line: for a US-based WordPress site in the $3\u2013$20/month budget range, DreamHost is hard to beat on straight value metrics. The independent ownership, 30-day guarantee, free WHOIS privacy, and genuinely competitive month-to-month pricing are real advantages \u2014 not marketing copy. The performance benchmarks hold up for domestic audiences. The gaps are real too. Global performance requires CDN work. Phone support doesn\u2019t exist on entry plans. The 2025 security incident deserves more public transparency. Eyes open on all three before you sign up. \ud83d\ude80 View Current DreamHost Plans and Terms Still comparing providers? Start with the Rankplot hosting hub , or use the Best WordPress Hosting in 2026 guide to compare the full shortlist. Frequently Asked Questions Is DreamHost good for beginners? Yes. The onboarding process takes under 12 minutes from payment to a live WordPress site. The custom control panel is clean and logically organized \u2014 I\u2019d argue it\u2019s easier to navigate than cPanel for someone with no prior hosting experience. The Liftoff AI builder adds another ramp for absolute newcomers, though its output needs heavy customization before it\u2019s publish-ready. Does DreamHost offer a money-back guarantee? Current Web Hosting and DreamPress pages list a 30-day money-back guarantee . Review the current terms before purchase because domain registrations, add-ons, and payment methods can have separate refund conditions. Is DreamHost good for WordPress? It\u2019s one of three hosts officially recommended by WordPress.org \u2014 that endorsement reflects a genuine technical evaluation, not a paid placement. For managed WordPress specifically, DreamPress delivers strong performance benchmarks, built-in caching, staging environments, and WP-CLI support. It\u2019s a legitimate managed WP option at a competitive price point. How does DreamHost compare to Bluehost? On paper, they\u2019re similar. In practice, the ownership difference matters. Bluehost is owned by Newfold Digital, while DreamHost is independent. DreamHost wins on free WHOIS privacy, the current 30-day guarantee, and more flexible monthly billing. Bluehost is easier if you want cPanel and phone support. For the full provider breakdown, read the Bluehost Review 2026 . Is DreamHost secure in 2026? For most use cases, yes. Free SSL, free WHOIS privacy, MFA, SSH/SFTP access, and daily backups on DreamPress are all solid baseline security features. The caveat is the 2025 FTP/shell password breach \u2014 DreamHost responded with a forced password reset, and no new incidents have been reported through Q1 2026. I\u2019d recommend enabling MFA immediately after sign-up and adding DreamShield malware scanning if you\u2019re running any kind of e-commerce or user-facing application. Does DreamHost have a coupon code? DreamHost typically doesn\u2019t require a coupon code \u2014 its promotional pricing activates automatically at checkout when you select a longer billing term (1-year or 3-year). The biggest discounts are on 3-year shared hosting plans. If you want to verify the current best available price, check DreamHost\u2019s homepage directly \u2014 promotional banners update frequently. What are the best DreamHost alternatives? The best DreamHost alternative depends on what you are trying to avoid. Choose Bluehost for cPanel and phone support, SiteGround for stronger managed WordPress support, Hostinger for low-cost global performance, or Hosting.com for low-cost LiteSpeed cPanel hosting. Is DreamHost eco-friendly? Yes. DreamHost operates energy-efficient data centers and maintains commitments to renewable energy usage. This is a real, verifiable position \u2014 not a marketing claim tacked onto a carbon-heavy infrastructure. For brands where sustainability alignment matters (NGOs, B Corps, eco-conscious businesses), this is a legitimate differentiator over most competitors in the same price tier. For a price-first shortlist, see DreamHost in the cheap WordPress hosting comparison , including first-term costs, renewal rates, backups, and the best option by use case. See how it compares directly in the Bluehost vs DreamHost comparison ."
+ },
+ {
+  "url": "https://www.serverpicks.com/dreamhost-review/",
+  "title": "DreamHost Review 2026: Pricing, Speed & Verdict - ServerPicks",
+  "words": 951,
+  "headings": [
+   [
+    "h2",
+    "The privacy-first, no-surprises host"
+   ],
+   [
+    "h2",
+    "Who DreamHost is (and isn\u2019t) for"
+   ],
+   [
+    "h2",
+    "DreamHost pricing: the honest version"
+   ],
+   [
+    "h2",
+    "Speed & uptime"
+   ],
+   [
+    "h2",
+    "DreamHost for WordPress"
+   ],
+   [
+    "h2",
+    "Specs at a glance"
+   ],
+   [
+    "h3",
+    "\u2713 What we like"
+   ],
+   [
+    "h3",
+    "\u2717 What to watch"
+   ],
+   [
+    "h2",
+    "How DreamHost compares"
+   ],
+   [
+    "h2",
+    "DreamHost FAQ"
+   ],
+   [
+    "h3",
+    "Is DreamHost good for WordPress?"
+   ],
+   [
+    "h3",
+    "How much does DreamHost cost after renewal?"
+   ],
+   [
+    "h3",
+    "Does DreamHost offer phone support?"
+   ],
+   [
+    "h3",
+    "What is DreamHost\u2019s money-back guarantee?"
+   ],
+   [
+    "h3",
+    "Is DreamHost fast?"
+   ],
+   [
+    "h2",
+    "Bottom line"
+   ],
+   [
+    "h2",
+    "Related on ServerPicks"
+   ]
+  ],
+  "text": "Home / WordPress Hosting / DreamHost ct By ctzpj , hosting analyst Updated Jul 2026 How we rank \u2192 Verdict \u00b7 Most transparent The privacy-first, no-surprises host DreamHost is independently owned, WordPress.org-recommended, and the most upfront host on pricing we\u2019ve reviewed \u2014 with a 97-day guarantee to match. The trade-offs are an Apache stack and US-only data centres that leave it behind faster rivals. Best for: privacy-minded, US-audience WordPress sites that value transparency. 8.5 / 10 Overall See current DreamHost pricing \u2192 97-day money-back guarantee Starts at $2.95/mo Renews at $7.99/mo Money-back 97 days Speed 8.2 Uptime 8.7 Support 8.5 Value 8.8 \u24d8 Disclosure: if you buy through our links we may earn a commission, at no extra cost to you. Rankings come from aggregated independent testing and never depend on those payouts. On this page Who it\u2019s for Pricing Speed DreamHost for WordPress Specs Pros & cons Alternatives FAQ Who DreamHost is (and isn\u2019t) for DreamHost is for privacy-minded, budget-conscious WordPress owners \u2014 bloggers, portfolios, and small US-audience sites \u2014 who value transparent pricing and a long safety net over raw speed. It\u2019s independently owned, one of only three hosts WordPress.org officially recommends, and refreshingly free of aggressive upsells. Look elsewhere if your visitors are largely outside the US (all data centres are US-based), you want a LiteSpeed stack, or you need phone support and built-in caching on a shared plan. Hostinger is faster and global; SiteGround bundles more on shared. DreamHost pricing: the honest version Credit where it\u2019s due: DreamHost shows the renewal price next to the intro price, which almost no host does. Rates still climb after term one, but there are no nasty surprises. Plan Intro / mo Renews / mo Sites Notes Shared Starter $2.95 $7.99 1 Email is a paid add-on Shared Unlimited $3.95 $10.99 Unlimited Email included DreamPress (managed) $16.95 $19.99 1 Staging + caching Best rates need a longer term. Free domain and free domain privacy on annual plans. Backed by a 97-day money-back guarantee \u2014 the longest in the industry. Prices are promotional; verify the live rate before buying. Our take: Shared Starter is fine for one site, but budget for the email add-on. If you want built-in caching and staging for WordPress, DreamPress is the tier that actually delivers a managed experience. Check today\u2019s DreamHost price \u2192 Speed & uptime DreamHost runs an Apache-based stack on NVMe storage with US-only data centres. Independent monitoring puts average TTFB in the ~240ms range and uptime consistently at 99.9%+, backed by a 100% uptime guarantee with service credits. That\u2019s solid for US-audience content sites, but the Apache stack and single-region footprint mean it trails LiteSpeed hosts and anything with a global CDN \u2014 and shared plans have no built-in caching, so you\u2019ll lean on a plugin. Figures aggregated from independent 2026 benchmarks and each host\u2019s published SLA, not a first-party lab test. DreamHost for WordPress WordPress comes pre-installed, so you land in the dashboard rather than an installer. The control panel is DreamHost\u2019s own \u2014 cleaner than cPanel once you learn it, but a small adjustment for cPanel veterans. In 2026 DreamHost leans into AI: Remixer generates a full site from a prompt, and Liftoff builds a WordPress-native site you fully own. Free domain privacy, a built-in WAF and free migrations round it out; note that email is an add-on on Shared Starter. Specs at a glance Storage NVMe SSD Control panel Custom (not cPanel) Web stack Apache Free SSL Yes Free domain Year 1 + privacy Caching DreamPress only (Varnish) Backups Daily Data centres US only Support 24/7 chat (phone is paid) Money-back 97 days \u2713 What we like 97-day money-back \u2014 by far the longest in hosting Shows renewal pricing upfront; no bait-and-switch One of three WordPress.org-recommended hosts Free domain privacy and independent, privacy-first ownership Unmetered bandwidth and no pushy upsells \u2717 What to watch Apache stack trails LiteSpeed rivals on speed US-only data centres hurt international audiences No built-in caching or staging on shared plans Phone support is a paid add-on, not included Email is an add-on on the entry Starter plan Start with DreamHost \u2192 How DreamHost compares Host From Renews Panel Best for DreamHost $2.95 $7.99 Custom Privacy / no lock-in Hostinger $2.99 $10.99 hPanel Budget SiteGround $2.99 $17.99 Site Tools Support See our full ranking \u2192 DreamHost FAQ Is DreamHost good for WordPress? Yes \u2014 WordPress comes pre-installed, it\u2019s officially recommended by WordPress.org, and DreamPress adds managed caching and staging. It\u2019s a dependable, honest choice for US-focused WordPress sites. How much does DreamHost cost after renewal? Shared Starter renews at $7.99/mo and Shared Unlimited at $10.99 \u2014 increases you can see upfront, which is unusually transparent for the industry. Does DreamHost offer phone support? Not for free. Support is 24/7 via chat and tickets; phone callbacks are a paid add-on. That\u2019s a real gap if you prefer talking to someone. What is DreamHost\u2019s money-back guarantee? 97 days \u2014 the longest in hosting by a wide margin, so you get more than three months to properly test the service. Is DreamHost fast? It\u2019s fine for US-audience content sites (~240ms TTFB, 99.9%+ uptime), but the Apache stack and US-only data centres put it behind LiteSpeed and global-CDN hosts. Bottom line DreamHost is the pick for privacy-first, US-focused WordPress owners who want honest pricing and a genuinely long trial window. It won\u2019t win a speed test against LiteSpeed rivals, and international audiences should look elsewhere \u2014 but for the right site, it\u2019s one of the most trustworthy hosts around. See current DreamHost pricing \u2192 \u00d7 DreamHost \u00b7 8.5 from $2.95/mo See pricing \u2192 Keep reading Related on ServerPicks SP Ranking Best WordPress hosting in 2026 Review Bluehost Review GreenGeeks Review ChemiCloud"
+ }
+]
