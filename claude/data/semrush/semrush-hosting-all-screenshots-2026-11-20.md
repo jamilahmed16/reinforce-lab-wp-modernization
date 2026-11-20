@@ -214,7 +214,7 @@ Review terms: hostinger 1,000; kinsta 720; cloudways 590; bluehost 480; namechea
 Pricing terms: kinsta 1,900; hostinger 1,000; bluehost 720; cloudways 590; dreamhost 480; namecheap 260; flywheel 110; a2 70; nexcess 30.
 
 ---
-## 7. Brand-term screenshots (21 unique screenshots)
+## 7. Brand-term screenshots (26 unique screenshots)
 
 | Keyword | US vol | Global | KD | Domains needed | CPC | Intent |
 |---|---|---|---|---|---|---|
@@ -390,3 +390,39 @@ Repeats ignored (same numbers as already recorded): dreamhost pricing (twice, on
 ### Readings (INFERENCE)
 1. **Nothing here changes the plan.** The bare "bluehost hosting" term (480, KD 68) is navigational and owned by Bluehost, Wikipedia and Reddit. The useful part is again the "[host] wordpress hosting" family (1,600 plus 1,300) that the existing Bluehost guide post covers, and the questions "is bluehost a good hosting company" and "is bluehost a good web host" (30 each, KD 56 to 57), which a short verdict section can answer.
 2. "bluehost hosting login" (880) and "bluehost web hosting" (880, KD 87) are not for us.
+
+---
+### Sixth batch of brand-term screenshots, 20 Nov 2026 (five screenshots, all new, VERIFIED from Jamil's images)
+
+| Keyword | US vol | Global | KD | CPC | Intent |
+|---|---|---|---|---|---|
+| flywheel review | 110 | 200 | **29% (easy)** | $0 | Commercial |
+| flywheel wordpress hosting | 70 | 250 | 43% | $13.92 | Navigational |
+| a2 hosting pricing | 70 | 620 | 43% | $3.57 | Transactional, navigational |
+| nexcess wordpress hosting | 50 | 130 | 44% | $8.70 | Informational, commercial |
+| nexcess pricing | 30 | 170 | n/a | $1.36 | n/a |
+
+### flywheel review
+- Variations (643, 1.8K): flywheel hosting review 110 (29), flywheel review 110 (29), flywheel hosting reviews 90 (32), flywheel reviews 90 (37), flywheel web hosting reviews 70 (44). Questions: 1 (a review of flywheel, 0).
+- SERP (91 results): 1 a Reddit r/Wordpress thread "flywheel a cautionary tale" (AS 0, 0 domains, 9 traffic, 71 keywords); video carousel; 2 imdb.com/title/tt0425027 (AS 67, 190 domains), which is a film, not hosting; 3 a personal blog post "fly anywhere review flywheel at home" (AS 6, 12 domains), also unrelated hosting. The first page has almost no real hosting review pages.
+
+### flywheel wordpress hosting
+- Variations (29, 200): flywheel wordpress hosting 70 (43), flywheel managed wordpress hosting 40, flywheel wordpress hosting review 30, flywheel managed wordpress hosting features 20, "...for designers and agencies" 10. Questions (3, 0): is flywheel better than bluehost for hosting wordpress, is flywheel managed wordpress hosting.
+- SERP: 1 getflywheel.com (AS 81, 52.3K domains); 2 karveldigital.com/flywheel-managed-wordpress-hosting (AS 2, 170 domains, 31 traffic); 3 a Reddit r/webhosting thread "flywheel hosting is great but ive found a" (AS 0, 0 domains).
+
+### a2 hosting pricing
+- Variations (49, 160): a2 hosting pricing 70 (43), "...2026" 10, "...plans" 10, "...plans 2026" 10, "a2 hosting reseller hosting plans pricing" 10. Questions: 1 (how much is a2 hosting email pricing, 0). The brand is now hosting.com (hosting.com holds position 1).
+- SERP (92 results): AI Overview; 1 hosting.com (AS 76, 43.6K domains, 1.9M backlinks, 15.9K traffic, 644 keywords); 2 a Reddit r/webhosting thread "hosting.com formerly a2 hosting raised my annual" (AS 21, 5 domains, 5 backlinks); 3 top10-websitehosting.co.uk a2 hosting review (AS 9, 172 domains).
+
+### nexcess wordpress hosting
+- Variations (10, 60): nexcess wordpress hosting 50 (44), nexcess managed wordpress hosting free trial 10, then four at 0 (managed wordpress hosting, its review, wordpress hosting review). No questions.
+- SERP (117 results): AI Overview; 1 nexcess.com/platform/sites-stores (AS 14, 26 domains, 57 traffic); 2 liquidweb.com/managed-hosting-services (AS 0, 14.1K domains, 725.9K backlinks, 32 traffic); 3 nexcess.com (AS 78, 2.7K domains). Nexcess and its parent Liquid Web fill the top.
+
+### nexcess pricing
+- Volume 30 (global 170: AU, BR, CA, IN, PK 20 each). Variations: 18, 30 total. Questions: 1 (what are the nexcess pricing options, 0). SERP: "Nothing found" (no data until metrics are updated).
+
+### Readings (INFERENCE)
+1. **"flywheel review" (110, KD 29) has a very weak page one:** a Reddit thread with no authority, a film page and an unrelated blog. This is the easiest review term in all the data, even though it is small. Together with "flywheel hosting review" (110), "flywheel hosting reviews" (90) and "flywheel reviews" (90), the Flywheel review wordings total about 400 a month at KD 29 to 44.
+2. **A2 Hosting is now hosting.com.** Searches still use the old name (70 for pricing, 260 for "a2 hosting review" from the CSV). The Reddit thread "hosting.com formerly a2 hosting raised my annual" shows readers care about renewal price rises, a theme our renewal arithmetic fits.
+3. **Nexcess and A2 volumes are tiny** (Nexcess pricing 30, Nexcess WordPress hosting 50, A2 pricing 70). They justify a short section each, not a page. Confirms the earlier call.
+4. **"flywheel wordpress hosting" (70)** is a small, navigational term. Our existing Flywheel guide post already matches it.
