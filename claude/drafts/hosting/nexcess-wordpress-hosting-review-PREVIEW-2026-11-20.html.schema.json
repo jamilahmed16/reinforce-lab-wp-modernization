@@ -1,0 +1,193 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-15T10:00:00+00:00",
+  "dateModified": "2026-11-20T00:00:00+00:00",
+  "genre": "Review",
+  "abstract": "Nexcess is managed WordPress hosting, now part of Liquid Web. Plans start at $19 a month for one site and include email, staging and migration. There are no data centers in Asia.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Nexcess: managed hosting for WordPress (read 20 Nov 2026)",
+    "url": "https://www.nexcess.com/managed-wordpress/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Liquid Web: managed WordPress hosting",
+    "url": "https://www.liquidweb.com/wordpress-hosting/managed-wordpress/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingEngines: Nexcess review (updated 5 Nov 2026)",
+    "url": "https://hostingengines.com/nexcess-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Real Tool Stack: Nexcess review (13 Nov 2026)",
+    "url": "https://realtoolstack.com/nexcess-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HowToHosting: Nexcess customer review analysis (Sep 2026)",
+    "url": "https://howtohosting.guide/nexcess-customer-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Webhostingcat: Liquid Web performance scorecard (tested 23 Apr 2026)",
+    "url": "https://webhostingcat.com/liquid-web-performance-scorecard/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Sayan Samanta: Liquid Web review (Feb 2026)",
+    "url": "https://sayansamanta.com/liquid-web-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Website Planet: Nexcess review (updated 23 Mar 2026)",
+    "url": "https://www.websiteplanet.com/web-hosting/nexcess/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "web.dev: Largest Contentful Paint (2.5 seconds or less is good)",
+    "url": "https://web.dev/articles/lcp"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is Nexcess now Liquid Web?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "In practice, yes. Nexcess and Liquid Web announced in February 2024 that they would become one brand, and in April 2026 the hosting arm was renamed Liquid Web by Nexcess. The managed WordPress plans are the same product on both sites."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does Nexcess hosting cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "On Nexcess's plan page on 20 November 2026, Pro WordPress was from $19 a month and Elite from $29, for one site with up to 50,000 visits. Annual billing takes 10% off. Prices rise with each visit tier."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What resources are included with Nexcess hosting plans?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Every plan has a firewall, Object Cache Pro, an edge CDN, a staging site and a development site, free SSL, email hosting and 24/7/365 support. Pro has 20 GB for one site and 14 days of backups. Elite has 40 GB and 30 days."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Nexcess include email hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Nexcess lists email hosting in the included features of every managed WordPress plan."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Nexcess offer WooCommerce hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Its Sites and Stores pages list WooCommerce, Magento and Shopware hosting, and its managed WordPress plans run WooCommerce. Test checkout on your own data, because Webhostingcat saw a slow checkout on Liquid Web."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What are the best Nexcess plans for Magento hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Nexcess lists Magento hosting on its Sites and Stores pages, but HostingEngines found no public prices, only a chat button. Ask Nexcess for a quote based on your catalog and traffic."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What kind of cloud hosting does Nexcess offer?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Its parent, Liquid Web, sells managed WordPress, VPS, cloud, dedicated and bare metal hosting. This page covers the managed WordPress plans."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Nexcess have a money-back guarantee?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The plan page does not state one. Website Planet reported 30 days. Ask Nexcess in chat before you buy and read the terms in your cart."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Nexcess cost more at renewal?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The plan page shows one price and no renewal figure. Real Tool Stack notes that the terms allow price increases with 30 days' notice. Read the renewal terms in your order summary."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Nexcess fast?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes in independent tests. Webhostingcat measured a 202 ms time to first byte and a 433 ms Largest Contentful Paint, and two testers saw 0% errors at 1,000 concurrent users. First-byte times reached 1.9 seconds from India."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Nexcess good for WordPress?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes for business sites and stores with visitors in the US, UK or Australia. It includes staging, Object Cache Pro, an edge CDN and human-assisted migration."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Nexcess have phone support?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The plan page lists 24/7/365 support but no phone line. Website Planet reported chat connecting immediately and a ticket answered in 15 minutes."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Nexcess better than Kinsta?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Nexcess costs less, at $19 against $35 for one site, and includes email. Kinsta has a renewal price that stays the same and a free first month for new customers. Compare them at your own traffic."
+    }
+   }
+  ]
+ }
+]

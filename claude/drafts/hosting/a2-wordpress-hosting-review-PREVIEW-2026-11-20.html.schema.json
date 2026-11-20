@@ -1,0 +1,195 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-15T10:00:00+00:00",
+  "dateModified": "2026-11-20T00:00:00+00:00",
+  "genre": "Review",
+  "abstract": "A2 Hosting is now hosting.com. Starter is $1.49 a month on a 12-month Black Friday term and renews at $13.99, 9.4 times higher. The refund window is 30 days.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "hosting.com: money-back guarantee",
+    "url": "https://hosting.com/about/money-back-guarantee/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "hosting.com: web hosting plans",
+    "url": "https://hosting.com/hosting/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "hosting.com: A2 plans comparison",
+    "url": "https://hosting.com/a2-vs-hosting-com/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "ScaleHostReview: hosting.com review (updated 20 Nov 2026)",
+    "url": "https://scalehostreview.com/hosting-com-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostDecider: hosting.com review (5 Oct 2026)",
+    "url": "https://hostdecider.com/hosting/hosting-com-review-2026/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "WPThinker: hosting.com review (6 Nov 2026)",
+    "url": "https://wpthinker.com/hosting-com-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingPickers: A2 Hosting renewal prices (13 Oct 2026)",
+    "url": "https://hostingpickers.com/blog/a2-hosting-renewal-prices"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingAdvice: hosting.com review (12 Nov 2026)",
+    "url": "https://www.hostingadvice.com/hosting-review/hosting-com/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "CNET: hosting.com review (2 Oct 2026)",
+    "url": "https://www.cnet.com/tech/services-and-software/hosting-dot-com-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Website Planet: hosting.com review",
+    "url": "https://www.websiteplanet.com/web-hosting/hosting-com/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "web.dev: Largest Contentful Paint (2.5 seconds or less is good)",
+    "url": "https://web.dev/articles/lcp"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is A2 Hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "A2 Hosting was a web host that is now called hosting.com. World Host Group bought it in January 2025, and the new name was announced in April 2025. The plans are sold under hosting.com."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is A2 Hosting now hosting.com?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. hosting.com's own blog says A2 Hosting is now hosting.com, and a2hosting.com now points to hosting.com. Plan names changed too: Startup became Starter, Drive became Plus, Turbo Boost became Pro and Turbo Max became Max."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is A2 Hosting good?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It tests well on speed and uptime. HostingAdvice measured a 579 ms Largest Contentful Paint, and Website Planet measured 100% uptime. CNET found setup complicated and support poor, and the renewal price is high."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does A2 Hosting cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "In the November 2026 Black Friday offer, Starter was $1.49 a month on a 12-month term, Pro $3.49 and Max $5.99. A 48-month Starter was $1.99. Managed WordPress plans start at $4.49 a month."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does A2 Hosting cost after renewal?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Starter renews at $13.99 a month, Pro at $19.99 and Max at $27.99. That is 9.4 times the 12-month Starter price. WordPress Small renews at $9.99 and Medium at $17.99."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does A2 Hosting offer WordPress hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. WordPress runs on every plan with one-click install, and hosting.com sells managed WordPress plans from $4.49 a month. They include a CDN, WP Rocket, two firewalls and a 99.99% uptime guarantee."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does A2 Hosting have a money-back guarantee?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes, 30 days on shared, WordPress, email and reseller hosting. It does not cover domains, renewals, VPS plans, dedicated servers or SSL certificates. A2's older anytime guarantee is gone."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How do I cancel A2 Hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Contact support within 30 days of buying for a refund. After that, cancel before the renewal date, because plans renew automatically and a saved payment method may be charged three days before it."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is there an A2 Hosting coupon code?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "hosting.com's Black Friday page applies the deal automatically. One affiliate newsletter listed an extra code, so check the cart. Promotional prices apply to the first term only."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is A2 Hosting fast?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes in tests. HostingAdvice measured 579 ms Largest Contentful Paint, and Website Planet measured pages loading in 0.8 to 2.2 seconds. Speeds were slower in Singapore and Australia."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does hosting.com have phone support?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "hosting.com lists 24/7/365 support. HostingAdvice found live chat replies in seconds, and CNET rated support poor. Check which channels your plan includes."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is hosting.com better than Hostinger?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "hosting.com allows 5 sites and daily backups on its entry plan against 3 sites and weekly backups on Hostinger Premium. Hostinger renews lower, at $10.99 against $13.99."
+    }
+   }
+  ]
+ }
+]
