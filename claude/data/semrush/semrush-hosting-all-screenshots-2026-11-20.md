@@ -214,7 +214,7 @@ Review terms: hostinger 1,000; kinsta 720; cloudways 590; bluehost 480; namechea
 Pricing terms: kinsta 1,900; hostinger 1,000; bluehost 720; cloudways 590; dreamhost 480; namecheap 260; flywheel 110; a2 70; nexcess 30.
 
 ---
-## 7. Brand-term screenshots (20 screenshots)
+## 7. Brand-term screenshots (21 unique screenshots)
 
 | Keyword | US vol | Global | KD | Domains needed | CPC | Intent |
 |---|---|---|---|---|---|---|
@@ -376,3 +376,17 @@ Pricing terms: kinsta 1,900; hostinger 1,000; bluehost 720; cloudways 590; dream
 3. **"cloudways wordpress hosting review 2025 or 2026"** and related wordings have KD 17 to 20 at 50 searches each. Putting "2026" in the Cloudways review title costs nothing and matches them.
 4. **The "[host] wordpress hosting" family matches the existing guide posts for Cloudways (320), Kinsta (480), Namecheap (480), Bluehost (1,600), Hostinger (3,600) and DreamHost (210).** This is the strongest evidence yet for Option B (keep those URLs).
 5. **Three data points for pricing sections:** Bluehost (KD 14, weak rows), Cloudways (AS 0 rows) and DreamHost (36 domains, modest third-party rows) have beatable pricing results. Kinsta and Hostinger pricing results belong to the hosts.
+
+---
+### Fifth batch of brand-term screenshots, 20 Nov 2026 (one new screenshot; nine in the batch repeated earlier ones)
+
+Repeats ignored (same numbers as already recorded): dreamhost pricing (twice, one a full-page version of the same top 10), cloudways review, cloudways pricing, kinsta review, bluehost pricing, hostinger review, hostinger pricing, flywheel hosting.
+
+### bluehost hosting (new, VERIFIED from Jamil's image, US)
+- Volume 480, global 1.9K (IN 210, UK 50, NL 40), KD 68% (78 referring domains needed), CPC $161.80, navigational, competitive density 0.36.
+- Variations (2.4K, 16.5K total): bluehost wordpress hosting 1.6K (62), **wordpress hosting on bluehost 1.3K (59)**, bluehost hosting plans 1.0K (68), bluehost hosting login 880 (62), bluehost web hosting 880 (87). Questions (363, 550 total): is bluehost a good hosting company 30 (57), is bluehost a good web host 30 (56), can bluehost host wix 20, how is bluehost as a web host 20, how many websites can i host on bluehost 20.
+- Top 3: 1 bluehost.com (AS 80, 28.4K domains, 265.5K backlinks, 10.6K traffic, 691 keywords); 2 en.wikipedia.org/wiki/Bluehost (AS 48, 296 domains, 209 traffic); 3 a Reddit r/webhosting thread "is bluehost really that bad" (AS 23, 4 domains, 15 backlinks).
+
+### Readings (INFERENCE)
+1. **Nothing here changes the plan.** The bare "bluehost hosting" term (480, KD 68) is navigational and owned by Bluehost, Wikipedia and Reddit. The useful part is again the "[host] wordpress hosting" family (1,600 plus 1,300) that the existing Bluehost guide post covers, and the questions "is bluehost a good hosting company" and "is bluehost a good web host" (30 each, KD 56 to 57), which a short verdict section can answer.
+2. "bluehost hosting login" (880) and "bluehost web hosting" (880, KD 87) are not for us.
