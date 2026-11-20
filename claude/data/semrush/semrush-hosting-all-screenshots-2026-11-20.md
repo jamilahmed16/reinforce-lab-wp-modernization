@@ -7,7 +7,7 @@ Source: screenshots Jamil sent on 20 Nov 2026 (US database, desktop), plus his t
 | Keyword | Volume | KD | Domains | Where it fits |
 |---|---|---|---|---|
 | best web hosting | 5,400 | 81% | 216 | Out of reach now |
-| best web hosting services | 1,000 | 73% | 157 | Post 378 (weak top 10, see section 4) |
+| best web hosting services | 1,000 | 73% | 157 | Post 378 (weak top 10, see section 2) |
 | best web hosting 2026 | 90 | 66% | 200 | Put "2026" in post 378 title and H1 |
 | best wordpress hosting | 4,400 | 60% | 149 | Page 69 (WordPress list) |
 | best managed wordpress hosting | 2,400 | 59% | 153 | Page 69 section |
@@ -38,7 +38,7 @@ Source: screenshots Jamil sent on 20 Nov 2026 (US database, desktop), plus his t
 | best vps hosting | 2,900 | 71% | 193 | Out of reach for now |
 | shared hosting vs vps | 260 | 63% | 149 | Possible section in post 378 |
 
-Brand terms (US): see section 9.
+Brand terms (US): see section 6.
 
 ---
 ## 2. Screenshot sets 1 to 4 (head terms, variations, questions, who ranks, readings)
@@ -207,7 +207,7 @@ Volume 30, KD n/a, CPC $9.17, competitive density 0.75. 58 variations, 210 total
 | best web hosting for beginners | 140 | 55% | 75 | "best web hosting sites for beginners" 90 KD 54; "...2026" 40 KD 49. 65 variations, 390 total; 5 questions. Top: WebsitePlanet (131 domains), Reddit (AS 33), HostingStep. Section in post 378 |
 
 ---
-## 9. Brand-term volumes (from the CSV export)
+## 6. Brand-term volumes (from the CSV export)
 
 Brand-term volumes (US): hostinger hosting 12,100; hostinger wordpress hosting 3,600; kinsta pricing 1,900; bluehost wordpress hosting 1,600; cloudways, dreamhost, namecheap hosting 1,600 each; kinsta hosting 1,300; flywheel hosting 1,000; hostinger pricing 1,000; hostinger review 1,000.
 Review terms: hostinger 1,000; kinsta 720; cloudways 590; bluehost 480; namecheap 390; a2 260; dreamhost 210; nexcess 140; flywheel 110.
