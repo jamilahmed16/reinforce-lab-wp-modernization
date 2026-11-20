@@ -111,3 +111,52 @@
 3. **Review terms are mid-size and Reddit-led.** Reddit threads with 2 to 7 referring domains hold position 1 for "cloudways review" (590), "hostinger review" (1,000) and "kinsta review" (720, position 2). Trustpilot (AS 83) and thin review sites follow. A first-hand, sourced review page can fit. Hostinger is the only host we can honestly write about first-hand (D-321); the other eight must be marked as research-based.
 4. **Hostinger website builder review (480, KD 25) and Horizons review (210, KD 26)** are easy but are different Hostinger products. Cover them only if we have used them first-hand; I do not know that yet, so it is a question for Jamil.
 5. **Combined review demand:** "hostinger reviews" 1,300 plus "hostinger review" 1,000 plus "hostinger review 2026" 480 are three wordings of one need, so a single page serves all three.
+
+---
+# Fourth batch of brand-term screenshots, 20 Nov 2026 (five screenshots, VERIFIED from Jamil's images)
+
+| Keyword | US vol | Global | KD | Domains needed | CPC | Intent |
+|---|---|---|---|---|---|---|
+| cloudways wordpress hosting | 320 | 980 (AU 70) | 52% | 50 | $27.59 | Informational, navigational |
+| namecheap review | 390 | 1.7K (CA 140) | 59% | 89 | $5.77 | Commercial |
+| namecheap wordpress hosting | 480 | 1.7K (UK 90) | 58% | 94 | $4.28 | Informational |
+| kinsta wordpress hosting | 480 | 870 (CA 50) | 60% | 125 | $9.18 | Transactional, navigational |
+| **dreamhost pricing** | 480 | 1.3K | 55% | **36** | $3.02 | Transactional, navigational |
+
+## cloudways wordpress hosting
+- Variations (105, 810): cloudways wordpress hosting 320 (52), "...review" 70 (38), "...review catswhocode" 70 (17), "...review 2025 2026" 50 (**18**), "...review 2025 or 2026" 50 (**20**). Questions: 1 (is it wordpress hosting cloudways, 0).
+- SERP: AI Overview; 1 cloudways.com/en/wordpress-hosting.php (AS 51, 725 domains, 1.7K backlinks, 315 traffic, 267 keywords); 2 a Reddit r/Wordpress thread "cloudways feedback" (AS 41, 7 domains, 9 backlinks); 3 cloudways.com/en (row cut off).
+
+## namecheap review
+- Variations (297, 2.6K): namecheap reviews 480 (60), namecheap review 390 (59), namecheap hosting review 210 (56), namecheap hosting reviews 170 (51), namecheap vpn review 110 (46). Related: is namecheap good for hosting, namecheap web hosting reviews, is namecheap a good domain registrar, is namecheap hosting good. No questions data.
+- SERP: AI Overview; 1 a Reddit r/Hosting thread "namecheap reviews" (AS 29, 23 domains, 23 backlinks, 310 traffic, 152 keywords); 2 trustpilot.com/review/www.namecheap.com (AS 87, 123 domains, 982 backlinks, 269 traffic, 223 keywords); a discussions block.
+
+## namecheap wordpress hosting
+- Variations (86, 1.1K): namecheap wordpress hosting 480 (58), namecheap hosting wordpress 110 (57), namecheap wordpress hosting pricing official 110 (84), namecheap shared hosting wordpress 50, namecheap wordpress hosting review 50 (62). Questions (10, 20 total): is namecheap hosting good for wordpress 20; can i use wordpress on shared hosting namecheap, can you get wordpress hosting for free namecheap, does namecheap host work with wordpress, does namecheap hosting have wordpress (0 each).
+- SERP: 1 a Reddit r/webdev thread "webbuilding hosting namecheap with wordpress" (AS 0, 1 domain, 1 backlink, 288 traffic, 20 keywords); 2 namecheap.com/wordpress (AS 61, 816 domains, 8.1K backlinks, 1.5K traffic, 720 keywords); 3 easywp.com (AS 55, 2.4K domains, 17.9K backlinks); video carousel.
+
+## kinsta wordpress hosting
+- Variations (183, 1.4K): kinsta wordpress hosting 480 (60), kinsta managed wordpress hosting 210 (58), "...review catswhocode" 70 (34), "...catswhocode" 50 (50), kinsta wordpress hosting review 50 (47). No questions data. Related: kinsta reviews, my.kinsta.com, premium wordpress hosting, wordpress blog hosting reviews.
+- SERP: AI Overview; 1 kinsta.com/wordpress-hosting (AS 46, 2.5K domains, 5.6K backlinks, 269 traffic, 87 keywords); 2 a Reddit r/ProWordPress thread (AS 22, 8 domains, 11 backlinks); 3 a kinsta.com page (row cut off).
+
+## dreamhost pricing (full top 10 visible)
+- Variations (57, 1.0K): dreamhost pricing 480 (55), dreamhost domain pricing 210 (52), dreamhost email pricing 140 (70), dreamhost vps pricing 110 (59), dreamhost pricing plans 30. Questions: 1 (how does dreamhost keep their pricing down, 0). Related: domain email hosting, wordpress hosting service, web hosting and domain.
+- Top 10 (Page AS, referring domains, backlinks, search traffic, URL keywords):
+  1. dreamhost.com/hosting (50, 568, 3.3K, 990, 171)
+  2. dreamhost.com/pricing (14, 246, 2.7K, 135, 96)
+  3. help.dreamhost.com, "what types of hosting plans are available" (10, 51, 161, 3.0K, 43)
+  4. a Reddit r/dreamhost thread on the shared hosting price increase (0, 0, 0, 34, 5)
+  5. dreamhost.com/domains/pricing (36, 64, 7.8K, 181, 44)
+  6. cybernews.com/best-web-hosting/dreamhost-review/pricing (15, 25, 29, 7, 39)
+  7. help.dreamhost.com hosting plans category (10, 60, 151, 4, 26)
+  8. websitebuilderexpert.com/web-hosting/dreamhost-pricing (10, 46, 63, 9, 29)
+  9. dreamhost.com home (73, 366.7K, 52.4M, 9.4K, 267)
+  10. forbes.com/advisor/business/software/dreamhost-review (41, 76, 592, 95, 106)
+  DreamHost holds 6 of the 10; the four others are a Reddit thread, Cybernews, Website Builder Expert and Forbes. No ads shown.
+
+## Readings (INFERENCE)
+1. **"dreamhost pricing" is reachable.** Semrush says only 36 referring domains are needed, and the third-party rows are modest: Cybernews at position 6 (25 domains, 7 traffic), Website Builder Expert at 8 (46 domains, 9 traffic), Forbes at 10. A sourced pricing section in the DreamHost post, with plan prices and the renewal jump, can compete for positions 4 to 8. DreamHost's own pages still hold the top 3, so the target is the first page, not position 1.
+2. **Namecheap review (390 plus "namecheap reviews" 480 plus "namecheap hosting review" 210)** is led by a Reddit thread with 23 referring domains and Trustpilot (AS 87), harder than the Cloudways or Kinsta review terms. The Namecheap post needs an EasyWP section, since easywp.com holds position 3 for "namecheap wordpress hosting" and people searching it may want EasyWP.
+3. **"cloudways wordpress hosting review 2025 or 2026"** and related wordings have KD 17 to 20 at 50 searches each. Putting "2026" in the Cloudways review title costs nothing and matches them.
+4. **The "[host] wordpress hosting" family matches the existing guide posts for Cloudways (320), Kinsta (480), Namecheap (480), Bluehost (1,600), Hostinger (3,600) and DreamHost (210).** This is the strongest evidence yet for Option B (keep those URLs).
+5. **Three data points for pricing sections:** Bluehost (KD 14, weak rows), Cloudways (AS 0 rows) and DreamHost (36 domains, modest third-party rows) have beatable pricing results. Kinsta and Hostinger pricing results belong to the hosts.
