@@ -467,7 +467,7 @@ add_action('wp_head', function () {
 .rl-list .mini i{display:block;height:100%;background:var(--red-3)}
 .rl-list .l-table td.num{font-family:var(--f-mono);color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
 .rl-list .tnote{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-faint);margin:8px 0 0}
-.rl-list .pick{display:grid;grid-template-columns:120px minmax(0,1fr);border:1px solid var(--line-2);background:var(--panel);margin-top:22px;scroll-margin-top:140px}
+.rl-list .pick{max-width:none;display:grid;grid-template-columns:120px minmax(0,1fr);border:1px solid var(--line-2);background:var(--panel);margin-top:22px;scroll-margin-top:140px}
 .rl-list .pick.first{border-color:var(--red-line);box-shadow:0 30px 80px -60px rgba(226,59,59,.6)}
 .rl-list .rail{border-right:1px solid var(--line-2);background:var(--bg-2);display:flex;flex-direction:column;align-items:center;padding:22px 10px;gap:18px}
 .rl-list .rank{font-family:var(--f-display);font-weight:700;font-size:84px;line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--red-3)}
