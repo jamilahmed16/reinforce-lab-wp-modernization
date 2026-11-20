@@ -13,7 +13,7 @@ R = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')) + '/'
 a = [x for x in sys.argv[1:] if not x.startswith('--')]
 flags = sys.argv[1:]
 src, pid = a[0], int(a[1])
-author = int(flags[flags.index('--author') + 1]) if '--author' in flags else 0
+author = int(flags[flags.index('--author') + 1]) if '--author' in flags else 3  # Jamil Ahmed, approved 20 Nov 2026
 if author and str(author) == a[-1]: a = a[:-1]
 d = json.load(open(R + src if not os.path.isabs(src) else src))
 today = datetime.date.today().isoformat()
