@@ -1,0 +1,55 @@
+{
+ "batch": "hosting-2026-11-20-e",
+ "posts": {
+  "368": 367,
+  "450": 536
+ },
+ "old_attachments": [
+  {
+   "attachment_id": 367,
+   "file": "2022/10/Best-Cloud-Web-Hosting-Services.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2022/10/Best-Cloud-Web-Hosting-Services.jpg",
+   "title": "Best Cloud Web Hosting Services",
+   "alt": "Best Cloud Hosting Services Preferred by Reinforce Lab Limited",
+   "date": "2026-10-12 07:17:57",
+   "parent": 0,
+   "files": [
+    "2022/10/Best-Cloud-Web-Hosting-Services.jpg",
+    "2022/10/Best-Cloud-Web-Hosting-Services-300x161.jpg",
+    "2022/10/Best-Cloud-Web-Hosting-Services-150x150.jpg",
+    "2022/10/Best-Cloud-Web-Hosting-Services-768x413.jpg",
+    "2022/10/Best-Cloud-Web-Hosting-Services-610x328.jpg",
+    "2022/10/Best-Cloud-Web-Hosting-Services-400x250.jpg",
+    "2022/10/Best-Cloud-Web-Hosting-Services-400x284.jpg",
+    "2022/10/Best-Cloud-Web-Hosting-Services-510x382.jpg",
+    "2022/10/Best-Cloud-Web-Hosting-Services-400x420.jpg",
+    "2022/10/Best-Cloud-Web-Hosting-Services-480x258.jpg",
+    "2022/10/Best-Cloud-Web-Hosting-Services-300x300.jpg",
+    "2022/10/Best-Cloud-Web-Hosting-Services-600x323.jpg",
+    "2022/10/Best-Cloud-Web-Hosting-Services-100x100.jpg",
+    "2022/10/Best-Cloud-Web-Hosting-Services-112x60.jpg",
+    "2022/10/Best-Cloud-Web-Hosting-Services-167x90.jpg"
+   ]
+  },
+  {
+   "attachment_id": 536,
+   "file": "2026/11/cover-nexcess-wordpress-hosting.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2026/11/cover-nexcess-wordpress-hosting.jpg",
+   "title": "Cover: How to Make A Website with Nexcess WordPress Hosting: A Step by Step Guide",
+   "alt": "Cover image: How to Make A Website with Nexcess WordPress Hosting: A Step by Step Guide",
+   "date": "2026-11-13 19:59:58",
+   "parent": 450,
+   "files": [
+    "2026/11/cover-nexcess-wordpress-hosting.jpg",
+    "2026/11/cover-nexcess-wordpress-hosting-300x158.jpg",
+    "2026/11/cover-nexcess-wordpress-hosting-1024x538.jpg",
+    "2026/11/cover-nexcess-wordpress-hosting-150x150.jpg",
+    "2026/11/cover-nexcess-wordpress-hosting-768x403.jpg"
+   ]
+  }
+ ],
+ "new": {
+  "368": 685,
+  "450": 686
+ }
+}
