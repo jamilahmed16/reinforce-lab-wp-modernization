@@ -1,0 +1,65 @@
+{
+ "batch": "hosting-2026-11-20-a",
+ "posts": {
+  "422": 421,
+  "382": 381
+ },
+ "old_attachments": [
+  {
+   "attachment_id": 421,
+   "file": "2022/12/Hostinger-01-01.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2022/12/Hostinger-01-01.jpg",
+   "title": "Hostinger WordPress Hosting",
+   "alt": "Hostinger WordPress Hosting",
+   "date": "2026-10-12 07:18:38",
+   "parent": 0,
+   "files": [
+    "2022/12/Hostinger-01-01.jpg",
+    "2022/12/Hostinger-01-01-300x161.jpg",
+    "2022/12/Hostinger-01-01-150x150.jpg",
+    "2022/12/Hostinger-01-01-768x413.jpg",
+    "2022/12/Hostinger-01-01-610x328.jpg",
+    "2022/12/Hostinger-01-01-400x250.jpg",
+    "2022/12/Hostinger-01-01-400x284.jpg",
+    "2022/12/Hostinger-01-01-510x382.jpg",
+    "2022/12/Hostinger-01-01-400x420.jpg",
+    "2022/12/Hostinger-01-01-480x258.jpg",
+    "2022/12/Hostinger-01-01-300x300.jpg",
+    "2022/12/Hostinger-01-01-600x323.jpg",
+    "2022/12/Hostinger-01-01-100x100.jpg",
+    "2022/12/Hostinger-01-01-112x60.jpg",
+    "2022/12/Hostinger-01-01-167x90.jpg"
+   ]
+  },
+  {
+   "attachment_id": 381,
+   "file": "2023/01/Bluehost-01.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2023/01/Bluehost-01.jpg",
+   "title": "Bluehost Web Hosting | Reinforce Lab",
+   "alt": "Bluehost Web Hosting",
+   "date": "2026-10-12 07:18:06",
+   "parent": 0,
+   "files": [
+    "2023/01/Bluehost-01.jpg",
+    "2023/01/Bluehost-01-300x161.jpg",
+    "2023/01/Bluehost-01-150x150.jpg",
+    "2023/01/Bluehost-01-768x413.jpg",
+    "2023/01/Bluehost-01-610x328.jpg",
+    "2023/01/Bluehost-01-400x250.jpg",
+    "2023/01/Bluehost-01-400x284.jpg",
+    "2023/01/Bluehost-01-510x382.jpg",
+    "2023/01/Bluehost-01-400x420.jpg",
+    "2023/01/Bluehost-01-480x258.jpg",
+    "2023/01/Bluehost-01-300x300.jpg",
+    "2023/01/Bluehost-01-600x323.jpg",
+    "2023/01/Bluehost-01-100x100.jpg",
+    "2023/01/Bluehost-01-112x60.jpg",
+    "2023/01/Bluehost-01-167x90.jpg"
+   ]
+  }
+ ],
+ "new": {
+  "422": 677,
+  "382": 678
+ }
+}

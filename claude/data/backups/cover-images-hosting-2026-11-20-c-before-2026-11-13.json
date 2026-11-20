@@ -1,0 +1,65 @@
+{
+ "batch": "hosting-2026-11-20-c",
+ "posts": {
+  "388": 387,
+  "443": 442
+ },
+ "old_attachments": [
+  {
+   "attachment_id": 387,
+   "file": "2023/01/Cloudways-01-1.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2023/01/Cloudways-01-1.jpg",
+   "title": "Cloudways Web Hosting | Reinforce Lab",
+   "alt": "Cloudways Web Hosting",
+   "date": "2026-10-12 07:18:10",
+   "parent": 0,
+   "files": [
+    "2023/01/Cloudways-01-1.jpg",
+    "2023/01/Cloudways-01-1-300x161.jpg",
+    "2023/01/Cloudways-01-1-150x150.jpg",
+    "2023/01/Cloudways-01-1-768x413.jpg",
+    "2023/01/Cloudways-01-1-610x328.jpg",
+    "2023/01/Cloudways-01-1-400x250.jpg",
+    "2023/01/Cloudways-01-1-400x284.jpg",
+    "2023/01/Cloudways-01-1-510x382.jpg",
+    "2023/01/Cloudways-01-1-400x420.jpg",
+    "2023/01/Cloudways-01-1-480x258.jpg",
+    "2023/01/Cloudways-01-1-300x300.jpg",
+    "2023/01/Cloudways-01-1-600x323.jpg",
+    "2023/01/Cloudways-01-1-100x100.jpg",
+    "2023/01/Cloudways-01-1-112x60.jpg",
+    "2023/01/Cloudways-01-1-167x90.jpg"
+   ]
+  },
+  {
+   "attachment_id": 442,
+   "file": "2023/01/Kinsta-01-1.jpg",
+   "url": "https://reinforcelab.online/wp-content/uploads/2023/01/Kinsta-01-1.jpg",
+   "title": "Kinsta WordPress Hosting | Reinforce Lab",
+   "alt": "Kinsta WordPress Hosting",
+   "date": "2026-10-12 07:18:52",
+   "parent": 0,
+   "files": [
+    "2023/01/Kinsta-01-1.jpg",
+    "2023/01/Kinsta-01-1-300x161.jpg",
+    "2023/01/Kinsta-01-1-150x150.jpg",
+    "2023/01/Kinsta-01-1-768x413.jpg",
+    "2023/01/Kinsta-01-1-610x328.jpg",
+    "2023/01/Kinsta-01-1-400x250.jpg",
+    "2023/01/Kinsta-01-1-400x284.jpg",
+    "2023/01/Kinsta-01-1-510x382.jpg",
+    "2023/01/Kinsta-01-1-400x420.jpg",
+    "2023/01/Kinsta-01-1-480x258.jpg",
+    "2023/01/Kinsta-01-1-300x300.jpg",
+    "2023/01/Kinsta-01-1-600x323.jpg",
+    "2023/01/Kinsta-01-1-100x100.jpg",
+    "2023/01/Kinsta-01-1-112x60.jpg",
+    "2023/01/Kinsta-01-1-167x90.jpg"
+   ]
+  }
+ ],
+ "new": {
+  "388": 681,
+  "443": 682
+ }
+}
