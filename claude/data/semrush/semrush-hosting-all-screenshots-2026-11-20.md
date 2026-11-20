@@ -214,7 +214,7 @@ Review terms: hostinger 1,000; kinsta 720; cloudways 590; bluehost 480; namechea
 Pricing terms: kinsta 1,900; hostinger 1,000; bluehost 720; cloudways 590; dreamhost 480; namecheap 260; flywheel 110; a2 70; nexcess 30.
 
 ---
-## 7. Brand-term screenshots (33 unique screenshots)
+## 7. Brand-term screenshots (35 unique screenshots)
 
 | Keyword | US vol | Global | KD | Domains needed | CPC | Intent |
 |---|---|---|---|---|---|---|
@@ -474,3 +474,28 @@ Repeats ignored (same numbers as already recorded): dreamhost pricing (twice, on
 4. **Namecheap pricing's head term is hard (KD 76),** and the easy openings are other products: private email pricing 480 (KD 23), domain pricing, EasyWP pricing 320. EasyWP pricing (320, KD 51) is the one that fits a WordPress-hosting page, so the Namecheap post should have an EasyWP section with the pricing. The Reddit thread "renewal price going up over 120" repeats the renewal-price theme seen for A2 and DreamHost.
 5. **A2 WordPress hosting (20) is negligible.** Skip.
 6. **Renewal prices are a theme across hosts.** Three separate Reddit threads (A2, DreamHost, Namecheap) are about price rises at renewal. A clear "first term price vs renewal price" table in every post answers what readers are worried about.
+
+---
+### Eighth batch, 20 Nov 2026 (four screenshots: three new, one duplicate; VERIFIED from Jamil's images)
+
+Duplicate ignored: bluehost review (sent twice, identical).
+
+### bluehost review (US)
+- Volume 480, global 2.0K (AU 210, UK 170, IN 110), KD 64% (149 referring domains needed), CPC $6.82, commercial.
+- Variations (526, 3.5K): bluehost reviews 590 (62), bluehost review 480 (64), bluehost hosting review 260 (60), reviews bluehost 210 (59), bluehost review affiliate link 70 (20). Questions (3, 0): how to add review plugin to bluehost email, how to get wordpress reviews with a bluehost email, why does bluehost have negative reviews. Related: is bluehost a good website builder, is bluehost a good hosting company.
+- SERP (119 results): AI Overview; 1 a Reddit r/HostingHostel thread "why are bluehost reviews so bad, here's why" (AS 28, 3 domains, 7 backlinks, 186 traffic, 20 keywords); 2 trustpilot.com/review/www.bluehost.com (AS 65, 197 domains, 38.0K backlinks, 551 traffic, 103 keywords); then a discussions block.
+
+### a2 hosting hosting (US)
+- Volume 20, global 80 (NL 40, IT 20, US 20), KD n/a, CPC $0. SERP: "Nothing found" (needs a metrics update).
+- Variations (2.9K, 17.6K total): a2 hosting 5.4K (66), a2 hosting login 880 (45), a2 hosting coupon 720 (27), a2 web hosting 590 (47), a2 hosting promo code 480 (32). Questions (200, 220 total): is a2 hosting good 40 (47), what is a2 hosting 40 (17), how to cancel a2 hosting 20, how to create subdomain in a2 hosting 20, is a2 hosting down 20.
+
+### flywheel hosting, Keyword Magic Tool list (US, broad match)
+All keywords 285, total volume 2,400, average KD 38%. Topic groups on the left: local 37, wordpress 29, review 16, management 15, vs 15, file 13, site 11, web 10, code 9, website 9, 2026 8, pricing 8. Rows I could read (volume, KD, CPC):
+- flywheels hosting 50 (42, $15.29); **flywheel website hosting 170 (38, $14.26)**; flywheel hosting pricing 30 (22, $14.05); flywheel wordpress hosting 70 (43, $13.92); flywheel wp hosting 20; flywheel hosting plans 30 (37, $8.41); flywheel host 40 (45, $8.19); **flywheel web hosting 260 (51, $8.17)**; flywheel hosting 1,000 (43, $8.12); flywheel hosting price 10; flywheel domain hosting 20; flywheel hosting email hosting 20; flywheel hosting alternative 10; flywheel hosting cost 20; flywheel hosting coupon code 20; flywheel hosting discount code 20; flywheel hosting login 20. The remaining rows are 0 to 10 a month with no metrics.
+- The list is long (3 pages) but almost all rows are tiny. The text in this screenshot is very small, so rows below the first ten are less certain.
+
+### Readings (INFERENCE)
+1. **Bluehost review (480, KD 64) is hard.** Page one is a Reddit thread (3 referring domains) and Trustpilot (AS 65, 197 domains). Combined "bluehost reviews" (590) and "bluehost hosting review" (260), the family is about 1,300 a month. Reachable for position 2 to 5, not position 1, and only with first-hand-quality content. Bluehost is a host we have not used first-hand (D-321), so the page must be labelled research-based. Its reputation signals (a Reddit thread titled "why are bluehost reviews so bad") mean readers want a balanced view, which the renewal and upsell facts support.
+2. **A2 hosting hosting is negligible** (20). The brand "a2 hosting" itself has 5.4K, but those are login, coupon and navigation searches, not ours. "is a2 hosting good" (40) is a small question.
+3. **Flywheel:** the variations add little beyond what I already have. The two biggest extras are "flywheel web hosting" (260, KD 51) and "flywheel website hosting" (170, KD 38). Both fit a Flywheel post.
+4. **Still missing:** only "a2 hosting review" (CSV: 260, KD 50).
