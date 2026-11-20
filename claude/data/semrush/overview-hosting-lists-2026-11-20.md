@@ -29,3 +29,38 @@ Read from five screenshots Jamil sent on 20 Nov 2026. Numbers are as shown on sc
 2. **"best hosting for wordpress" (1,300 a month, KD 21)** is the most reachable head term for a WordPress list page, ahead of "best wordpress hosting" (4,400, KD 60).
 3. "cloud hosting" and "best web hosting" are out of reach now. Post 368's "best cloud hosting" (1,600, KD 55) is the better target; "what is cloud hosting software" (390, KD 18) is a possible section.
 4. Questions with volume to answer in a WordPress list: how to choose the best WordPress hosting, best for enterprise, best for high traffic, best for agencies.
+
+---
+# Second set of screenshots, 20 Nov 2026 (read from images)
+
+| Keyword | Volume (US) | Global | KD | CPC | Intent | Referring domains needed |
+|---|---|---|---|---|---|---|
+| **best cloud hosting** | 1.6K | 3.2K | **55%** | $11.38 | Commercial | **58** (the lowest of all terms checked) |
+| cloud hosting providers | 1.3K | 3.6K | 63% | $10.90 | Informational | 95 |
+| managed cloud hosting | 1.9K | 4.9K | 55% | $19.03 | Informational | 133 |
+| cheapest web hosting | 1.9K | 12.8K (India 3.6K, US 1.9K) | 74% | $12.04 | Commercial | 199 |
+| best web hosting for small business | 1.9K | 4.4K | 82% | $12.61 | Commercial | 507 |
+
+## Variations and questions
+- best cloud hosting: best cloud hosting companies 390 (57), best cloud hosting services 320 (61), best cloud hosting providers 260 (57), best cloud web hosting 260 (53). Questions (49, 100 total): which cloud hosting service is best 20, which is best between enterprise cloud hosting and dedicated servers 20, how to choose the best private cloud hosting provider 10, best providers for startups 10.
+- cloud hosting providers: cloud based hosting providers 720 (73), cloud web hosting providers 720 (77), cloud computing hosting providers 480 (26), cloud hosting provider 480 (71). Questions (48, 140 total): what is a cloud hosting provider 20, which providers offer a free trial 20.
+- managed cloud hosting: managed cloud hosting services 590 (62), managed private cloud hosting 390 (50), cloud managed hosting 320 (57). Questions (29, 200 total): what is managed cloud hosting 40 (52), where to buy managed cloud hosting with 24/7 monitoring 40 (0), how does it make a site faster 30, how does it handle traffic spikes 20, how does it improve performance 20.
+- cheapest web hosting: cheapest web site hosting 1.6K (70), cheapest web hosting service 320 (67), who is the cheapest web host with ftp access 320 (45), best and cheapest web hosting service 260 (69). Questions (18, 440 total).
+- best web hosting for small business: best web hosting services for small business 720 (69), best web host for small business 320 (65), best web hosting site for small business 260 (63), best web hosting sites for small business 260 (56). Questions (4, 200 total): what is the best web hosting site for small business 110 (51), which web hosting is best for small businesses 30.
+
+## Who ranks (positions 1 to 3)
+- best cloud hosting: 1 a Reddit thread (AS 22, 3 referring domains, 687 visits); 2 top10-websitehosting.co.uk (AS 9, 173 domains); 3 digitalocean.com/resources/cloud-service-providers-how-to-choose (AS 14, 83 domains, 762 visits).
+- cloud hosting providers: 1 top10-websitehosting.co.uk (AS 9); 2 aws.amazon.com (AS 41); 3 a Reddit thread.
+- managed cloud hosting: 1 hostinger.com/cloud-hosting (AS 52, 539 domains); 2 ibm.com (AS 30); 3 northflank.com blog (AS 9, 169 domains).
+- cheapest web hosting: 1 a Reddit thread (AS 77); 2 namecheap.com/hosting (AS 78, 1.5K domains); 3 hobohost.com (AS 58).
+- best web hosting for small business: 1 hostingstep.com/best-web-hosting (AS 11, 203 domains, 28.3K visits, 1.8K keywords); 2 websiteplanet.com/web-hosting (AS 56); 3 a Reddit thread.
+
+## Competitor read: hostingstep.com (ranks 1 or 2 for best wordpress hosting, best web hosting, best web hosting for small business)
+Fetched 20 Nov 2026 (pages updated 18 Nov 2026). What it does: "35 tested, 5 recommended" with 12 months of its own monitoring data (Nov 2025 to Oct 2026) from accounts it bought, scored for speed, uptime, load handling, global TTFB and server hardware; a ranked table at the top with price and the Black Friday deal with an end date; a short verdict per host. Its Black Friday notes (third-party, via its own coupon links): Hostinger "valid until Dec 2" (Premium $1.79, Unlimited $2.51 with its coupon), Hosting.com $1.29 against $1.49 on hosting.com's own page, ScalaHosting 72% off and HostPapa 90% off both "until Dec 2", Cloudways 80% off for 2 months with code BFCM802, WordPress.com $1.93 until 30 Nov.
+Implication: it wins on its own long test history and an offer table. We cannot copy the test claim (we run no such tests). We can match the structure (ranked table first, offer and end date, short verdict) with sourced figures, our renewal arithmetic and the checked official prices.
+
+## Readings (INFERENCE)
+1. **best cloud hosting is the most winnable term we have:** only 58 referring domains needed, and the top 3 are a Reddit thread, a small AS 9 site and a vendor guide. Post 368 targets it.
+2. The "providers" and "managed" variants (cloud hosting providers 1.3K, managed cloud hosting 1.9K, best cloud hosting companies 390) can be covered in 368 as sections and headings.
+3. **cheapest web hosting** and **best web hosting for small business** (507 domains needed) are not for us now.
+4. For the WordPress list (page 69), study hostingstep's page: the winners there are the ones showing measured data. Our angle must be sourced synthesis, checked prices and first-hand Hostinger notes.
