@@ -1,0 +1,188 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-15T10:00:00+00:00",
+  "dateModified": "2026-11-20T00:00:00+00:00",
+  "genre": "Review",
+  "abstract": "Flywheel is managed WordPress hosting for designers and agencies, owned by WP Engine. Plans start at $25 a month on annual billing for one site, with nightly backups, free migrations and 24/7 chat support. It suits client work and costs more than shared hosting.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Flywheel: pricing and plans (read 20 Nov 2026)",
+    "url": "https://getflywheel.com/pricing/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Flywheel: managed WordPress hosting (read 20 Nov 2026)",
+    "url": "https://getflywheel.com/managed-wordpress-hosting/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Flywheel: nightly backups (read 20 Nov 2026)",
+    "url": "https://getflywheel.com/why-flywheel/backups/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Flywheel: home page, migrations and guarantee (read 20 Nov 2026)",
+    "url": "https://getflywheel.com/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Kripesh Adwani: Flywheel review (updated 2 Nov 2026)",
+    "url": "https://kripeshadwani.com/flywheel-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostWise: Flywheel review (2026)",
+    "url": "https://www.host-wise.net/en/providers/flywheel/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "PVY Empire: Flywheel review (2026)",
+    "url": "https://pvyempire.com/flywheel-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "VettedSaaS: Flywheel pricing explained (updated Apr 2026)",
+    "url": "https://vettedsaas.com/reviews/flywheel/pricing/"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is Flywheel hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Flywheel is managed WordPress hosting for designers and agencies, owned by WP Engine. It runs the servers, caching, backups and security, and adds tools for client work such as Blueprints and billing transfer."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does Flywheel cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "On Flywheel's pricing page on 20 November 2026, Starter was $25 a month on annual billing ($30 monthly) for one site with 25,000 visits. Freelance was $96 ($115 monthly) for up to 10 sites. Agency was $242 ($290 monthly) for up to 30 sites."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Flywheel raise its price at renewal?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The pricing page shows one price per plan. A third-party review says Flywheel does not raise prices at renewal. Check your order summary to be sure."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Flywheel good for hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes for freelancers and agencies. Independent tests saw load times near one second and uptime above 99.9%. It costs more than shared hosting for one small site."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Flywheel have a money-back guarantee?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Flywheel's home page lists a 60-day money-back guarantee. Read the terms at checkout."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Will Flywheel move my site for free?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Flywheel migrates your sites for free, and it says the copy is usually ready to review in 24 to 48 hours."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can I host multiple WordPress sites on one Flywheel account?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Freelance covers up to 10 sites and Agency up to 30. Extra sites cost $20 a month or $200 a year."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Flywheel include email hosting or domain names?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Flywheel is WordPress hosting only. Buy a domain from a registrar and use a separate email service."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Flywheel have caching?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Every plan includes FlyCache, which Flywheel tunes for common plugins and themes, and a Fastly CDN."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can I install premium plugins on Flywheel?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes, with some limits. Flywheel runs managed WordPress, so a short list of plugins that clash with its caching or security is blocked. Check its help docs for the current list."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Local by Flywheel the same as Flywheel hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Local is a free tool that runs WordPress on your computer. It works with any host and connects to Flywheel to push a site live. Flywheel hosting is the paid plan."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What happens if my Flywheel site gets more visits than my plan allows?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Flywheel does not shut the site off. It charges $1 for each 1,000 extra visits and $1 for each extra GB of storage."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Who should avoid Flywheel?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Owners of one small blog who want the lowest price, people who need email hosting in the same plan, and anyone who wants a published uptime guarantee."
+    }
+   }
+  ]
+ }
+]

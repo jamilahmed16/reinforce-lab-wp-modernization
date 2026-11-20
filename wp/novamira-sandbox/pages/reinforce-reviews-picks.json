@@ -119,450 +119,250 @@
   ]
  },
  "hosting": {
-  "from": "best-web-hosting-services",
+  "from": "",
   "intro": [
-   "With over 338,561 options, finding your company’s best web hosting service can be challenging.",
-   "If you want to pick the right web host for your company, it’s important to remember these features."
+   "Reinforce Lab ranks WordPress hosts by who each one suits, then lists the entry price, the renewal price and the refund window. Prices come from each host's own page, read on 20 November 2026, and each pick links to our full review."
   ],
   "picks": [
    {
-    "name": "WP Engine",
-    "badge": "Best For Dedicated WordPress Hosting",
+    "name": "Kinsta",
+    "badge": "Best For Business WordPress sites that want everything managed",
     "best": "",
     "intro": [
-     "If you’re looking for the best hosting for website that is well-suited to WordPress sites, go no further than WP Engine Web Hosting.",
-     "Since WP Engine solely serves WordPress sites, its infrastructure is explicitly tailored to the needs of the WordPress community."
+     "Entry price: $35 a month. Renewal: $35 a month, no jump. Refund or trial: 30 days. Read on 20 November 2026.",
+     "Kinsta is worth the price for a WordPress site that earns money or runs a business and needs to be managed, fast and steady. It is not worth it for a hobby site. Use the first month free and the 30-day guarantee to test it."
     ],
     "why": [],
     "who": [],
     "pros": [
-     "Quick Refreshing Rate",
-     "Premium WordPress Help From Industry Professionals",
-     "Technologies of the Future for Safety",
-     "Easily set up WordPress with a single click",
-     "SSL, Content Delivery Network, and Site Automatic Backups, All at No Cost",
-     "Fast and Simple Setup",
-     "Superhuman quickness and efficiency",
-     "Themes that can be customized in-app",
-     "Totally supervised operation",
-     "Integral WordPress Updates"
+     "Fully managed WordPress with a clear dashboard.",
+     "Fast, consistent results in independent tests.",
+     "No renewal price jump.",
+     "Free, unlimited migrations and free malware removal."
     ],
     "cons": [
-     "Expensive in comparison to alternative hosting options",
-     "There are currently no open domains",
-     "Doesn’t Provide Email Hosting Space",
-     "The Use of Unauthorized Plugins"
+     "A high price for one site and 10 GB.",
+     "Overage fees and pricey add-ons such as Redis.",
+     "No email, no domain and no phone support.",
+     "One site per Single plan."
     ],
     "verdict": [],
     "url": ""
    },
    {
-    "name": "Kinsta",
-    "badge": "Best For Faster Web Hosting",
+    "name": "WP Engine",
+    "badge": "Best For Agencies On Managed WordPress",
     "best": "",
     "intro": [
-     "Kinsta’s hosting services are supported by Google Cloud’s premium network, providing them an edge over the competition.",
-     "This best web hosting services for small and large businesses; Kinsta is an excellent option because of all its benefits, including lightning-fast hosting, latest technology, and friendly customer service."
+     "WP Engine is managed WordPress hosting, and Reinforce Lab is a WP Engine agency partner. We list no price here because we have not read its current plan page.",
+     "See our partner page for how we use it and what it suits."
     ],
     "why": [],
     "who": [],
-    "pros": [
-     "Scalable, lightning-fast cloud computing",
-     "Guaranteed availability of 99.9%",
-     "It requires little to no input from you.",
-     "What a fantastic technical support team",
-     "Easy installation and data transfer",
-     "Excellent for times of high demand",
-     "Options and Locations for Servers",
-     "Enhanced for online transactions",
-     "Without restrictions on movement",
-     "Control panel for a personalized web host"
-    ],
-    "cons": [
-     "Lack of an Email Hosting Service",
-     "Inadequate phone support",
-     "Price higher than others"
-    ],
-    "verdict": [],
-    "url": "https://kinsta.com/?kaid=YGSRROXSCWXM"
-   },
-   {
-    "name": "Liquid Web",
-    "badge": "Best For Managed Hosting",
-    "best": "",
-    "intro": [
-     "Shared hosting, WordPress-optimized hosting, dedicated servers, cloud hosting, domains, and more are just a few of the hosting options offered by Liquid Web, another excellent web host.",
-     "You won’t have to worry about performing routine server maintenance, scanning for malware, or performing other technical tasks to keep your website online."
-    ],
-    "why": [],
-    "who": [],
-    "pros": [
-     "Guaranteed Uptime of 100%",
-     "Availability of knowledgeable help at any time",
-     "Legal Under HIPAA and PCI Standards",
-     "Powerful reselling, cloud, VPS, and dedicated server plans",
-     "Pricing for Virtual Private Servers that is prorated",
-     "Server hardware specifications at the latest of power and performance.",
-     "Great assistance to customers",
-     "Outstanding reliability during testing"
-    ],
-    "cons": [
-     "Crafted for the tech-savvy (not beginners)",
-     "This hosting service is not the cheapest available"
-    ],
-    "verdict": [],
-    "url": "https://liquidweb.i3f2.net/zaEy6W"
-   },
-   {
-    "name": "Bluehost",
-    "badge": "Best For Small Business Hosting",
-    "best": "",
-    "intro": [
-     "If you’re looking for an affordable and trustworthy web host, go no further than Bluehost.",
-     "It provides a tremendous entry-level shared hosting plan for as little as $2.75 per month, including one free domain name for an entire year, free SSL certification, and 24/7/365 access to helpful customer support."
-    ],
-    "why": [],
-    "who": [],
-    "pros": [
-     "Installing WordPress with a single click",
-     "Availability All The Time",
-     "There are special offers available for over $175.",
-     "A Guaranteed Rate of Server Availability",
-     "Integrating WordPress is a Breeze",
-     "Value for money",
-     "Superior Safety",
-     "Exceptional and Quick Customer Service",
-     "Super-Fast Data Center Servers"
-    ],
-    "cons": [
-     "Nonstop Upselling",
-     "Absence of an Availability Promise",
-     "Planned minimal storage space"
-    ],
-    "verdict": [],
-    "url": "https://bluehost.sjv.io/qnbVJy"
-   },
-   {
-    "name": "DreamHost",
-    "badge": "Best For Cloud Hosting",
-    "best": "",
-    "intro": [
-     "DreamHost should be one of your first stops if you want to create a website that runs on the Linux operating system.",
-     "The web host provides a wide range of features, including shared, WordPress, VPS, cloud, and dedicated web hosting plans, to meet the diverse needs of their customers in the realms of both personal and commercial web hosting."
-    ],
-    "why": [],
-    "who": [],
-    "pros": [
-     "One-Click WordPress Setup",
-     "A free SSL Certificate",
-     "Provided at no cost to you",
-     "Longer than average refund policy.",
-     "Monthly Web Hosting",
-     "Excellent Core Benefits",
-     "Uniquely Designed User Interface",
-     "WordPress Website Transfer, Free of Charge"
-    ],
-    "cons": [
-     "Effective but Confined Live Help Desk",
-     "There is no telephone assistance available.",
-     "Lacks email support"
-    ],
-    "verdict": [],
-    "url": "https://click.dreamhost.com/aff_c?offer_id=8&aff_id=8620"
-   },
-   {
-    "name": "InMotion Hosting",
-    "badge": "Best For Money-Back Guarantee",
-    "best": "",
-    "intro": [
-     "You won’t find a better hosting service than InMotion Hosting. Excellent customer service, strong hardware, and rock-solid dependability come at a price, but the industry’s overall product value is unmatched.",
-     "Sites of all sizes will benefit from InMotion Hosting’s dependable speed and enough power."
-    ],
-    "why": [],
-    "who": [],
-    "pros": [
-     "Guaranteed availability at all times of the day and night",
-     "Uptime Guarantee of 99.9 percent",
-     "BoldGrid is included a professional site builder",
-     "Websites with no registration fees",
-     "Free Secure Sockets Layer (SSL)",
-     "Continuous Data Protection (Datensicherung)",
-     "Hacker Safety",
-     "Guaranteed refund if not satisfied within 90 days",
-     "There’s a 90-day refund policy if you’re not satisfied.",
-     "Website relocation with no cost"
-    ],
-    "cons": [
-     "More costly than alternative hosting choices",
-     "Monthly payments aren’t an option with the vast majority of shared hosting services"
-    ],
-    "verdict": [],
-    "url": "https://partners.inmotionhosting.com/Aobxqj"
-   },
-   {
-    "name": "Namecheap",
-    "badge": "Best For Cheap Web Hosting",
-    "best": "",
-    "intro": [
-     "Namecheap has been in business for almost 20 years, making it a hosting industry veteran.",
-     "Namecheap must be doing something right since it now serves over 3 million hosting clients."
-    ],
-    "why": [],
-    "who": [],
-    "pros": [
-     "Give your customers a choice of several different hosting plans.",
-     "Simple cPanel navigation",
-     "Keep the lines of communication open around the clock",
-     "Affordable prices are a significant selling point."
-    ],
-    "cons": [
-     "With no phone support,",
-     "Limited hosting options",
-     "Insufficient space for even the most fundamental of designs"
-    ],
-    "verdict": [],
-    "url": "https://namecheap.pxf.io/WDn4xZ"
-   },
-   {
-    "name": "SiteGround",
-    "badge": "Best Web Hosting With Security",
-    "best": "",
-    "intro": [
-     "SiteGround is a more expensive alternative for web hosting, but it makes a compelling argument for its dependability owing to its lightning-fast page loads and 99.99% uptime guarantee.",
-     "The essential features of the base design are sufficient for newcomers without becoming overkill."
-    ],
-    "why": [],
-    "who": [],
-    "pros": [
-     "No Cost to Switch Websites",
-     "The Risk Is On Us! 100% Refund in the First 30 Days",
-     "Free Cloudflare Content Delivery Network (CDN) SSL Certificate",
-     "Quick Reaction Time from the Server",
-     "Offsite backups",
-     "Assistance to Clients",
-     "Domain Name System With Premium Features",
-     "The Use of Several Separate Server Facilities",
-     "The Use of Several Separate Server Facilities"
-    ],
-    "cons": [
-     "Not Enough Room",
-     "Costs Associated with a Domain Name",
-     "Cap on Monthly Resources"
-    ],
+    "pros": [],
+    "cons": [],
     "verdict": [],
     "url": ""
    },
    {
     "name": "Flywheel",
-    "badge": "Best Web Hosting For Developers",
+    "badge": "Best For Freelancers and agencies hosting client WordPress sites",
     "best": "",
     "intro": [
-     "Flywheel gives your WordPress site the speed, performance, and support it needs to thrive.",
-     "Website creation is a breeze with Flywheel’s free demo sites and one-click staging features."
+     "Entry price: $25 a month. Renewal: Same price (third-party report). Refund or trial: 60 days. Read on 20 November 2026.",
+     "Flywheel is a good fit for freelancers and agencies that host client sites and want managed care, backups and billing transfer. It costs more than shared hosting for one small site, and it has no email hosting. Check the plan, the visit limit and the refund terms before you pay."
     ],
     "why": [],
     "who": [],
     "pros": [
-     "Online SSL Certificates Without the Hassle",
-     "Automatically restrict the number of failed login attempts",
-     "Secured WordPress networks",
-     "Threat detection scans",
-     "Malware eradication is on the house if anything gets past the cracks.",
-     "The inclusion of Google Cloud Platform in all packages",
-     "Integrated CDN for delivering media",
-     "Total safety measures",
-     "Assurance of a full refund",
-     "IP blocking service of the highest quality, with assistance available around the clock",
-     "An extremely responsive and reliable server"
+     "Billing transfer, Blueprints, staging and cloning for client work.",
+     "Nightly backups kept 30 days, with one-click restore.",
+     "Free migrations and 24/7 chat support.",
+     "A 60-day money-back guarantee listed on the home page."
     ],
     "cons": [
-     "Due to controlled security, SSH access is denied",
-     "WordPress is the sole platform that offers hosting",
-     "Has no pre-existing deployment mechanism"
+     "Costs more than shared hosting for one small site.",
+     "No email hosting and no domain names.",
+     "Overage fees of $1 per 1,000 extra visits.",
+     "No published uptime guarantee."
+    ],
+    "verdict": [],
+    "url": ""
+   },
+   {
+    "name": "Cloudways",
+    "badge": "Best For Growing WordPress sites, stores and agencies",
+    "best": "",
+    "intro": [
+     "Entry price: $11 a month. Renewal: No renewal jump. Refund or trial: 5-day free trial. Read on 20 November 2026.",
+     "Cloudways is a strong choice for a growing WordPress site that needs cloud speed and control without running a server. Budget for the extras, use the free trial before you pay, and skip it if you want the simplest all-in-one host."
+    ],
+    "why": [],
+    "who": [],
+    "pros": [
+     "Pay as you go with no contract or renewal jump.",
+     "Five cloud providers and many locations.",
+     "Staging, cloning and backups in a clear dashboard.",
+     "Fast results in independent tests and quick support."
+    ],
+    "cons": [
+     "No bundled domain, email or cPanel.",
+     "Backups, email, CDN and malware protection cost extra.",
+     "No conventional money-back guarantee.",
+     "More technical than a beginner host."
     ],
     "verdict": [],
     "url": ""
    },
    {
     "name": "Nexcess",
-    "badge": "Best For Managed Hosting Services",
+    "badge": "Best For Business sites and stores with US, UK or Australian visitors",
     "best": "",
     "intro": [
-     "If you’re looking for a web host, go no further than Liquid Web’s sibling firm, Nexcess.",
-     "It focuses on fully managed hosting for eCommerce platforms and content management systems like WordPress, WooCommerce, and Magento."
+     "Entry price: $19 a month. Renewal: Not stated on the page. Refund or trial: Not stated. Read on 20 November 2026.",
+     "Nexcess is a good fit for business sites and stores that serve the US, UK or Australia and want email, staging and migration included. Check the renewal terms and refund window before you pay. Look elsewhere if your visitors are mostly in Asia."
     ],
     "why": [],
     "who": [],
     "pros": [
-     "Fully-managed server hosting",
-     "Free and unlimited email storage",
-     "Offsite storage with backups for 30 days",
-     "Supported plugins are part of the package (Astra Pro, Elementor, WP Forms, and more)",
-     "Allow unrestricted immigration",
-     "Website Hosting Capacity Scalability",
-     "Server Administration",
-     "Fantastic Safety Measures",
-     "Website Host in the Cloud",
-     "Auto-Scaling",
-     "Astonishing Helpfulness",
-     "A bargain of the highest quality"
+     "Email, staging, Object Cache Pro and an edge CDN on every plan.",
+     "0% errors at 1,000 users in two tests.",
+     "Human-assisted migration on every plan.",
+     "30 days of backups on Elite."
     ],
     "cons": [
-     "Improved documentation is always welcome.",
-     "Unfortunately, there are no low-cost hosting options",
-     "Free domain name registration is not available"
-    ],
-    "verdict": [],
-    "url": "http://nexcess.pxf.io/n1GN99"
-   },
-   {
-    "name": "GreenGeeks",
-    "badge": "Best For Eco-Friendly Web Hosting",
-    "best": "",
-    "intro": [
-     "At GreenGeeks, we generate three times as much renewable energy as we need, making us the world’s most environmentally responsible web server.",
-     "The infrastructure of the best hosting site available today was built with efficiency in mind."
-    ],
-    "why": [],
-    "who": [],
-    "pros": [
-     "The choice that is gentler on the planet",
-     "Cost-effective",
-     "Liberated Immigration",
-     "Refunds are available within 30 days.",
-     "A free domain name and unrestricted storage space and data transport are provided.",
-     "Service for transferring sites, free of charge",
-     "Scheduled overnight backups of all data",
-     "LSCache-caching LiteSpeed servers",
-     "Servers optimized for speed (SSD storage, HTTP/1.1, QUIC, PHP7, in-memory caching, and more).",
-     "Free Cloudflare Content Delivery Network (CDN) with SSL Certificate"
-    ],
-    "cons": [
-     "Unfortunately, customer service over the phone support is not available at all times",
-     "The domain registration and setup fees are non-refundable"
-    ],
-    "verdict": [],
-    "url": ""
-   },
-   {
-    "name": "A2 Hosting",
-    "badge": "Best For Stellar Customer Service",
-    "best": "",
-    "intro": [
-     "Faster server speeds than you could have dreamed of are what A2 web hosting has provided.",
-     "If you’re looking for a reliable hosting provider, go no further than A2 web hosting, which has a 99.9% uptime guarantee."
-    ],
-    "why": [],
-    "who": [],
-    "pros": [
-     "You can save as many files as you like with most plans.",
-     "There is always someone to help, day or night.",
-     "Multi-platform compatibility",
-     "Free Website Transfer",
-     "Cloudflare’s Content Delivery Network is Free to Use",
-     "Private, secluded web hosting",
-     "Ability to relocate freely",
-     "Funds-back Guarantee"
-    ],
-    "cons": [
-     "Compared to alternatives, it’s pretty pricey",
-     "Premium Renewal Costs",
-     "The turbo boost feature is not included in the basic plan."
-    ],
-    "verdict": [],
-    "url": ""
-   },
-   {
-    "name": "Wix",
-    "badge": "Best Web Hosting For Solopreneurs",
-    "best": "",
-    "intro": [
-     "Wix’s multi-cloud hosting is available to everyone who creates a website with them.",
-     "Wix provides a website creator and reliable hosting for businesses of all sizes, from solopreneurs to agencies to multinational conglomerates."
-    ],
-    "why": [],
-    "who": [],
-    "pros": [
-     "An intuitive drag-and-drop interface makes coding unnecessary",
-     "Improve your site with widgets from the Wix App Market and Wix Events",
-     "Adding in support for online transactions is a breeze",
-     "A fantastic method for quickly and cheaply constructing modest websites",
-     "The Editor X user interface is straightforward to use.",
-     "Plenty of little gadgets",
-     "Multiple hundreds of business and other purpose-built templates",
-     "Tools that make it easy to create mobile-friendly websites",
-     "Extensive support for online shopping",
-     "Uninterrupted service and kind staff",
-     "Numerous opportunities for making and taking money"
-    ],
-    "cons": [
-     "There are no free analytics and tracking",
-     "Limited data portability",
-     "A lack of search engine optimization features"
+     "No data centers in Asia.",
+     "No renewal price or refund window on the plan page.",
+     "Checkout was slow in one store test.",
+     "Prices rise with each visit tier."
     ],
     "verdict": [],
     "url": ""
    },
    {
     "name": "Hostinger",
-    "badge": "Best For Startups",
+    "badge": "Best For Beginners, blogs and small business sites",
     "best": "",
     "intro": [
-     "Hostinger is one of the most affordable options, with plans for shared hosting, WordPress hosting, and cloud hosting starting at just $2.95 per month.",
-     "This is all in addition to the company’s 99.9% uptime guarantee, free migrations to another host, and faster-than-average page loads."
+     "Entry price: $1.99 a month. Renewal: $10.99 a month. Refund or trial: 30 days. Read on 20 November 2026.",
+     "Hostinger is one of the strongest low-price starting points for a WordPress site. Independent tests show fast response and near-perfect uptime, and the sale price is hard to beat. Budget for the renewal, pick Unlimited if you want staging, and look elsewhere if you need phone support."
     ],
     "why": [],
     "who": [],
     "pros": [
-     "Price points that are low for newcomers",
-     "Promising performance in the tests",
-     "Numerous functionalities",
-     "Colocation facilities in seven countries",
-     "Top-Notch, Tailored Control Panel",
-     "Service Availability Anytime, Anyday, Everyday",
-     "Free SSL encryption for long term users",
-     "Speed up WordPress at no extra cost.",
-     "Service Level Agreement of 99.9 Percent Availability",
-     "Daily backups are done if necessary"
+     "Black Friday prices from $1.99 a month on a 48-month term.",
+     "227 to 447 ms server response and 99.96% to 100% uptime in independent tests.",
+     "One-click WordPress, LiteSpeed Cache, WP-CLI and SSH on every plan.",
+     "30-day money-back guarantee and free SSL."
     ],
     "cons": [
-     "Limits on basic plans’ storage capacities",
-     "A lack of phone assistance",
-     "The basic plan does not come with a free domain.",
-     "There is no dedicated hosting available"
+     "The sale price needs a 48-month prepayment.",
+     "Renewal is 3.3 to 6.1 times the offer price.",
+     "Premium has weekly backups and no staging.",
+     "No phone support, and chat starts with an AI assistant."
     ],
     "verdict": [],
-    "url": "https://hostinger.sjv.io/KenL6y"
+    "url": ""
    },
    {
-    "name": "Cloudways",
-    "badge": "Best For Managed Cloud Hosting",
+    "name": "Bluehost",
+    "badge": "Best For First WordPress sites with a US audience",
     "best": "",
     "intro": [
-     "Everyone knows that Cloudways is a safe bet for their WordPress site.",
-     "If you’re not technically savvy, don’t worry; Cloudways can handle even the most complicated WordPress tasks, such as SSL installations, HTTPS redirection, backups, and more."
+     "Entry price: $3.99 a month. Renewal: $11.49 a month. Refund or trial: 30 days. Read on 20 November 2026.",
+     "Bluehost is one of the easiest starting points for a first WordPress site. Pick the term carefully, read the renewal price, and use the 30-day window to test it. Look elsewhere if speed is your top priority or your visitors are outside the United States."
     ],
     "why": [],
     "who": [],
     "pros": [
-     "Colocation in the Cloud",
-     "A controlled setting",
-     "Variety of cloud service companies from which to choose",
-     "Excellent scalability",
-     "Super-Fast Servers",
-     "Simple Admin Screen",
-     "Always-On Service with Real-Time Chat",
-     "Cost-Free Secure Sockets Layer Certificates",
-     "Quick and Easy WordPress Staging",
-     "Open Source WordPress Caching Plugin"
+     "Guided setup that suits a first WordPress site.",
+     "Recommended by WordPress.org, according to Bluehost.",
+     "Staging, SSH, WP-CLI and a firewall on every plan.",
+     "99.99% uptime guarantee and a 30-day money-back guarantee."
     ],
     "cons": [
-     "Sometimes costs more than alternate strategies",
-     "Simply put, there is no such thing as a free domain name.",
-     "Without email"
+     "Lowest prices need a 36-month term paid up front.",
+     "Renewal is 1.7 to 4.6 times the first price.",
+     "Weekly backups only on shared plans.",
+     "Slower than LiteSpeed hosts in WPBeginner's tests."
     ],
     "verdict": [],
-    "url": "https://www.cloudways.com/en/?id=1260055"
+    "url": ""
+   },
+   {
+    "name": "DreamHost",
+    "badge": "Best For Several small WordPress sites on one plan",
+    "best": "",
+    "intro": [
+     "Entry price: $2.89 a month. Renewal: $10.99 a month. Refund or trial: 30 days. Read on 20 November 2026.",
+     "DreamHost is a good low-cost home for several small WordPress sites. Pick the 4-year term only if you are sure, budget for email after three months, and use the 30-day window to test it. Look elsewhere if you need phone support or the fastest speed."
+    ],
+    "why": [],
+    "who": [],
+    "pros": [
+     "25 websites and 25 GB NVMe on the cheapest plan.",
+     "Daily backups, free SSL and a free domain for the first year.",
+     "A 100% uptime guarantee with hosting credits.",
+     "Renewal prices shown next to first-term prices."
+    ],
+    "cons": [
+     "The cheapest price needs a 4-year term.",
+     "Renewal is 3.8 to 4.0 times the first price.",
+     "Email is free for 3 months only.",
+     "No staging or CDN on shared plans."
+    ],
+    "verdict": [],
+    "url": ""
+   },
+   {
+    "name": "Namecheap",
+    "badge": "Best For Small WordPress sites on a budget",
+    "best": "",
+    "intro": [
+     "Entry price: $2.28 a month. Renewal: $55.88 a year. Refund or trial: 30 days. Read on 20 November 2026.",
+     "Namecheap is a good low-cost home for small WordPress sites, especially if you want your domain and email in one account. Choose shared hosting for several sites and EasyWP for one managed site, read the renewal price, and use the 30-day window to test it."
+    ],
+    "why": [],
+    "who": [],
+    "pros": [
+     "Low first-year prices and a smaller renewal jump than many hosts.",
+     "Two routes: shared hosting for several sites and EasyWP for one.",
+     "Email included on shared hosting.",
+     "100% uptime promise on shared hosting and a 30-day money-back guarantee."
+    ],
+    "cons": [
+     "Apache shared hosting trails LiteSpeed hosts.",
+     "Slower for far-away visitors.",
+     "EasyWP hosts one site per plan.",
+     "Twice-a-week backups on shared plans."
+    ],
+    "verdict": [],
+    "url": ""
+   },
+   {
+    "name": "A2 Hosting",
+    "badge": "Best For The lowest first-year bill and several small sites",
+    "best": "",
+    "intro": [
+     "Entry price: $1.49 a month. Renewal: $13.99 a month. Refund or trial: 30 days. Read on 20 November 2026.",
+     "hosting.com, formerly A2 Hosting, gives a very low first-year bill and good speed in tests. The renewal is much higher, so plan to move or change plans after the first term. Look elsewhere if you want low prices for years."
+    ],
+    "why": [],
+    "who": [],
+    "pros": [
+     "The lowest first-year price among the hosts we compare.",
+     "5 sites, daily backups and free migration on the cheapest plan.",
+     "Good speed in independent tests.",
+     "Managed WordPress plans with a 99.99% uptime guarantee."
+    ],
+    "cons": [
+     "Renewal is 4.7 to 9.4 times higher on shared plans.",
+     "The sale price needs a 12-month or longer term.",
+     "CNET calls setup complicated and support poor.",
+     "The refund window is only 30 days."
+    ],
+    "verdict": [],
+    "url": ""
    }
   ]
  }
