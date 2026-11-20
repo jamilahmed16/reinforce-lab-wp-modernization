@@ -1,0 +1,193 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-15T10:00:00+00:00",
+  "dateModified": "2026-11-20T00:00:00+00:00",
+  "genre": "Review",
+  "abstract": "Namecheap has two WordPress routes: shared hosting for several sites and EasyWP for one managed site. Stellar is $2.28 a month billed yearly and renews at $55.88 a year.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Namecheap: shared hosting (read 20 Nov 2026)",
+    "url": "https://www.namecheap.com/hosting/shared/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Namecheap: EasyWP pricing (read 20 Nov 2026)",
+    "url": "https://www.namecheap.com/wordpress/pricing/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Namecheap help: managed WordPress hosting vs shared hosting",
+    "url": "https://www.namecheap.com/support/knowledgebase/article.aspx/10065/2279/whats-the-difference-between-managed-wordpress-hosting-and-shared-hosting/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "WPThinker: Namecheap hosting review (9 Nov 2026)",
+    "url": "https://wpthinker.com/namecheap-hosting-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingStep: EasyWP review (updated 22 Jul 2026)",
+    "url": "https://hostingstep.com/hosting-reviews/easywp/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingGuider: Namecheap review (12 May 2026)",
+    "url": "https://hostingguider.com/reviews/namecheap-hosting/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "TopSiteHosters: Namecheap review (1 Apr 2026)",
+    "url": "https://topsitehosters.com/providers/namecheap/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "BearHost: Namecheap pricing (2 Aug 2026)",
+    "url": "https://bearhost.com/blogs/namecheap-pricing"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "web.dev: Largest Contentful Paint (2.5 seconds or less is good)",
+    "url": "https://web.dev/articles/lcp"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Is Namecheap hosting good?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes for small sites on a budget. Independent tests measured 99.95% to 99.98% uptime and 232 to 462 ms time to first byte in the US. Visitors far from its servers see slower responses."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Namecheap hosting good for WordPress?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes, on either route. Shared hosting installs WordPress with Softaculous in cPanel. EasyWP is a managed WordPress plan with a simpler dashboard. Shared hosting runs on Apache, which trails LiteSpeed hosts on first-byte time."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Namecheap host websites?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Namecheap sells shared hosting (Stellar, Stellar Plus and Stellar Business), EasyWP managed WordPress, VPS and dedicated servers, and it is also a domain registrar."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Namecheap hosting have WordPress?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. On shared hosting you install WordPress with Softaculous in cPanel. On EasyWP, WordPress is set up for you when you create the site."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can I use WordPress on shared hosting at Namecheap?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Shared hosting supports WordPress and other systems such as Joomla and Drupal, plus custom PHP and HTML sites. Stellar allows 3 websites, and Stellar Plus and Business allow unlimited."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can you get WordPress hosting for free at Namecheap?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Not permanently. Namecheap offers a free 30-day trial on shared hosting, and WPThinker says EasyWP Starter has a free first month on monthly billing. After that you pay."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Namecheap offer a free trial?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Namecheap lists a free 30-day trial on shared hosting, according to WPThinker and BearHost. WPThinker says the 30-day money-back guarantee does not apply if you started with the trial, so read the terms."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does Namecheap hosting cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "On Namecheap's pages on 20 November 2026, Stellar was $2.28 a month billed yearly, Stellar Plus $2.98 and Stellar Business $4.98. EasyWP Starter was $1.48 in the sale. The sale ends 4 December 2026."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does Namecheap hosting cost after renewal?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Stellar renews at $55.88 a year, about $4.66 a month. Stellar Plus renews at $85.44 and Stellar Business at $128.88 a year. EasyWP Starter renews at $68.88 a year."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is the difference between EasyWP and shared hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "EasyWP hosts one WordPress site per plan on a cloud platform with its own dashboard. Shared hosting uses cPanel, hosts several sites and includes email. Namecheap's help article lists the details."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does EasyWP have automatic backups?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The sources disagree. Namecheap's help article lists website backups among the features, and WPThinker lists automatic backups. HostingStep reported none on Starter in its 2026 test. Check the backup option in your dashboard."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Namecheap good for beginners?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Both routes have simple setup, and Namecheap keeps your domain and hosting in one account. Shared hosting uses cPanel, which takes a little learning."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Namecheap include email with hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Shared hosting does. Stellar includes 30 mailboxes, and Stellar Plus and Business include unlimited. EasyWP does not bundle email on every plan, so you may need a separate email service."
+    }
+   }
+  ]
+ }
+]
