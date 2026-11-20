@@ -210,3 +210,51 @@ Repeats ignored (same numbers as already recorded): dreamhost pricing (twice, on
 2. **A2 Hosting is now hosting.com.** Searches still use the old name (70 for pricing, 260 for "a2 hosting review" from the CSV). The Reddit thread "hosting.com formerly a2 hosting raised my annual" shows readers care about renewal price rises, a theme our renewal arithmetic fits.
 3. **Nexcess and A2 volumes are tiny** (Nexcess pricing 30, Nexcess WordPress hosting 50, A2 pricing 70). They justify a short section each, not a page. Confirms the earlier call.
 4. **"flywheel wordpress hosting" (70)** is a small, navigational term. Our existing Flywheel guide post already matches it.
+
+---
+# Seventh batch of brand-term screenshots, 20 Nov 2026 (seven screenshots, all new, VERIFIED from Jamil's images)
+
+| Keyword | US vol | Global | KD | CPC | Intent |
+|---|---|---|---|---|---|
+| flywheel pricing | 110 | 1.5K (IN 480, ZA 260) | **16% (easy)** | $13.28 | Transactional, navigational |
+| nexcess review | 140 | 200 | 32% | $0 | Commercial |
+| nexcess hosting | 210 | 610 | **15% (easy)** | $4.83 | Informational |
+| dreamhost wordpress hosting | 210 | 440 | 61% (125 domains) | $4.64 | Transactional, navigational |
+| dreamhost review | 210 | 1.0K (AU 70, NL 70) | 60% (125 domains) | $4.42 | Commercial |
+| namecheap pricing | 260 | 1.6K | 76% (155 domains) | $3.89 | Transactional, navigational |
+| a2 hosting wordpress hosting | 20 | 100 | n/a | $7.22 | n/a |
+
+## flywheel pricing
+- Variations (51, 180): flywheel pricing 110 (16), flywheel hosting pricing 30 (22), flywheel pricing plans 20, local by flywheel pricing 20, flywheel agency pricing 0. No questions data.
+- SERP: 1 getflywheel.com/pricing (AS 53, 359 domains, 1.5K backlinks, 96 traffic, 19 keywords); 2 getflywheel.com home (AS 81); AI Overview; 3 a Reddit r/webhosting thread "what happened to flywheels 15 tiny plan" (AS 0, 0 domains).
+
+## nexcess review
+- Variations (31, 430): nexcess review 140 (32), nexcess reviews 70 (51), nexcess hosting reviews 50 (48), nexcess hosting review 40 (51), nexcess review 2022 30. Questions: 1 (what kind of customer reviews does nexcess have, 0).
+- SERP (77 results): AI Overview; 1 cnet.com/tech/services-and-software/nexcess-review (AS 18, 172 domains, 18 traffic, 41 keywords); a discussions block; 2 a Reddit r/Magento thread "nexcess shared hosting thoughts" (AS 23, 2 domains, 3 backlinks, 34 traffic).
+
+## nexcess hosting
+- Variations (95, 800): nexcess hosting 210 (15), nexcess web hosting 140 (58), nexcess magento hosting 110 (20), nexcess hosting reviews 50 (48), nexcess wordpress hosting 50 (44). Questions (5, 0): does nexcess offer woocommerce hosting, best nexcess plans for magento hosting, what is the host from nexcess ftp, what kind of cloud hosting does nexcess offer, what resources are included with nexcess hosting plans.
+- SERP (32.8K results): AI Overview; 1 nexcess.com/blog/category/hosting-insights (AS 0, 0 domains, 5 traffic); 2 hostadvice.com nexcess cloud hosting review (AS 0, 0 domains, 2 traffic); 3 a docs.nexcess.com page. Page one is thin and mostly Nexcess's own material.
+
+## dreamhost wordpress hosting
+- Variations (70, 310): dreamhost wordpress hosting 210 (61), dreamhost managed wordpress hosting 50 (39), dreamhost wordpress hosting review 20, wordpress hosting dreamhost 20, dreamhost wordpress hosting features 10. Questions (4, 0): can i use wordpress plugins on dreamhost shared hosting, how many wordpress sites does dreamhost host, how to host wordpress site with dreamhost domain, why host wordpress on dreamhost.
+- SERP: 1 dreamhost.com/wordpress (AS 53, 925 domains, 3.0K backlinks, 518 traffic, 156 keywords); 2 a Reddit r/Wordpress thread "any experience with dreamhost wordpress basic" (AS 0, 0 domains, 10 traffic); 3 dreamhost.com/hosting (AS 50, 568 domains).
+
+## dreamhost review
+- Variations (145, 1.2K): dreamhost reviews 390 (57), dreamhost review 210 (60), dreamhost hosting review 90 (58), dreamhost dreampress review 40, dreamhost web hosting review 40 (51). No questions data.
+- SERP (113 results): 1 cnet.com/tech/services-and-software/dreamhost-review (AS 18, 164 domains, 96 traffic, 91 keywords); AI Overview; 2 a Reddit r/webhosting thread "opinions on dreamhost" (AS 28, 5 domains, 30 backlinks); 3 trustpilot.com/review/www.dreamhost.com (AS 63, 120 domains, 2.4K backlinks, 70 traffic).
+
+## namecheap pricing
+- Variations (239, 2.8K): namecheap private email pricing 480 (**23**), namecheap domain pricing 390 (56), namecheap easywp pricing official 320 (51), namecheap api pricing 260 (41), namecheap pricing 260 (76). No questions data. One ad shown.
+- SERP (91 results): 1 namecheap.com/domains (AS 63, 3.5K domains, 6.0K traffic, 1.8K keywords); 2 namecheap.com/hosting/shared (AS 53, 2.1K domains, 4.1K traffic, 349 keywords); AI Overview; 3 a Reddit r/NameCheap thread "renewal price going up over 120" (AS 24, 2 domains, 31 backlinks, 72 traffic). Namecheap's own domain and hosting pages hold the top.
+
+## a2 hosting wordpress hosting
+- Volume 20 (global 100: AU, CA, UK, US 20 each). Variations (174, 290): a2 hosting wordpress 40 (50), a2 hosting wordpress login 30, a2 hosting for wordpress 20, a2 hosting good for wordpress 20, a2 hosting managed wordpress 20. Questions (22, 0): does a2 hosting have one click wordpress install, how do i find my wordpress password a2 hosting, and similar how-to searches. SERP: "Nothing found" (needs a metrics update).
+
+## Readings (INFERENCE)
+1. **Nexcess is easy but tiny.** "nexcess hosting" is 210 a month at KD 15 and its page one is thin (a Nexcess blog category with 0 authority, a HostAdvice page with 0 domains). With "nexcess review" 140 (KD 32) and "nexcess hosting reviews" 50, the whole Nexcess family is about 500 a month at low difficulty. A short, honest Nexcess section or review is reasonable. It is not worth a dedicated big page.
+2. **Flywheel is easy everywhere:** pricing 110 (KD 16), review 110 (KD 29), hosting 1,000 (KD 43). Of the nine hosts, Flywheel has the lowest difficulty across all its terms. The existing Flywheel URL is worth upgrading with pricing and review sections, after Jamil's approval.
+3. **DreamHost review (210, KD 60)** is led by CNET (AS 18), a Reddit thread and Trustpilot. Reachable but not easy. DreamHost WordPress hosting (210, KD 61) has a Reddit thread (AS 0) at position 2.
+4. **Namecheap pricing's head term is hard (KD 76),** and the easy openings are other products: private email pricing 480 (KD 23), domain pricing, EasyWP pricing 320. EasyWP pricing (320, KD 51) is the one that fits a WordPress-hosting page, so the Namecheap post should have an EasyWP section with the pricing. The Reddit thread "renewal price going up over 120" repeats the renewal-price theme seen for A2 and DreamHost.
+5. **A2 WordPress hosting (20) is negligible.** Skip.
+6. **Renewal prices are a theme across hosts.** Three separate Reddit threads (A2, DreamHost, Namecheap) are about price rises at renewal. A clear "first term price vs renewal price" table in every post answers what readers are worried about.
