@@ -22,19 +22,19 @@ function rl_reviews_view() {
 function rl_reviews_data() {
     return [
         'hosting' => [
-            ['a2-wordpress-hosting', 'A2 Hosting', 'Shared and managed WordPress', 'A2 Hosting review: entry price, the renewal jump and who it suits.'],
-            ['bluehost-wordpress-hosting', 'Bluehost', 'Shared WordPress hosting', 'Bluehost review: plans, renewal prices and who it suits.'],
-            ['cloudways-hosting', 'Cloudways', 'Managed cloud hosting', 'Cloudways review: pricing, servers and who it suits.'],
-            ['dreamhost-wordpress-hosting', 'DreamHost', 'Shared and managed WordPress', 'DreamHost review: pricing, WordPress plans and the verdict.'],
-            ['flywheel-wordpress-hosting', 'Flywheel', 'Managed WordPress hosting', 'Flywheel review: plans, prices and who it suits.'],
-            ['hostinger-web-hosting', 'Hostinger', 'Shared and cloud hosting', 'Hostinger review: pricing, plans and the renewal price.'],
-            ['kinsta-wordpress-hosting', 'Kinsta', 'Managed WordPress hosting', 'Kinsta review: pricing, speed and who should pay for it.'],
-            ['namecheap-wordpress-hosting', 'Namecheap', 'Shared and WordPress hosting', 'Namecheap review: shared and EasyWP plans compared.'],
-            ['nexcess-wordpress-hosting', 'Nexcess', 'Managed WordPress and WooCommerce', 'Nexcess review: now Liquid Web, plans and pricing.'],
+            ['a2-wordpress-hosting', 'A2 Hosting', 'Shared and managed WordPress', 'How to build a WordPress site on A2 Hosting, step by step.'],
+            ['bluehost-wordpress-hosting', 'Bluehost', 'Shared WordPress hosting', 'How to build a WordPress site on Bluehost, step by step.'],
+            ['cloudways-hosting', 'Cloudways', 'Managed cloud hosting', 'How to build a website on Cloudways, step by step.'],
+            ['dreamhost-wordpress-hosting', 'DreamHost', 'Shared and managed WordPress', 'How to build a WordPress site on DreamHost, step by step.'],
+            ['flywheel-wordpress-hosting', 'Flywheel', 'Managed WordPress hosting', 'How to build a WordPress site on Flywheel, step by step.'],
+            ['hostinger-web-hosting', 'Hostinger', 'Shared and cloud hosting', 'How to build a website on Hostinger, step by step.'],
+            ['kinsta-wordpress-hosting', 'Kinsta', 'Managed WordPress hosting', 'How to build a WordPress site on Kinsta, step by step.'],
+            ['namecheap-wordpress-hosting', 'Namecheap', 'Shared and WordPress hosting', 'How to build a WordPress site on Namecheap, step by step.'],
+            ['nexcess-wordpress-hosting', 'Nexcess', 'Managed WordPress and WooCommerce', 'How to build a WordPress site on Nexcess, step by step.'],
         ],
         'hosting_lists' => [
-            ['best-web-hosting-services', 'Web hosting services', 'Comparison list', 'A list of 14 web hosts, with prices and who each one suits.'],
-            ['best-cloud-web-hosting-services', 'Cloud web hosting', 'Comparison list', 'A list of 7 cloud hosts, with prices and who each one suits.'],
+            ['best-web-hosting-services', 'Web hosting services', 'Comparison list', 'A list of 15 web hosts, with what each one offers.'],
+            ['best-cloud-web-hosting-services', 'Cloud web hosting', 'Comparison list', 'A list of 13 cloud hosts, with what each one offers.'],
         ],
         'tools' => [
             'SEO tools' => [
@@ -64,8 +64,6 @@ function rl_reviews_faqs($view) {
         ],
         'hosting' => [
             ['What is the difference between shared and managed WordPress hosting?', 'Shared hosting puts many sites on one server and leaves updates, speed and security largely to you. Managed WordPress hosting is set up for WordPress only, with the host handling caching, backups, platform updates and WordPress support.'],
-            ['How much does WordPress hosting cost?', 'In our reviews, shared plans start at about $1.49 to $3.99 a month on a long first term and renew at about $10.99 to $13.99. Managed WordPress hosts start higher, at $19 to $35 a month, and several keep the same price at renewal. Read the renewal price before you pay.'],
-            ['How do I choose the best WordPress hosting?', 'Pick shared hosting for a small site on a tight budget. Pick managed WordPress hosting when speed, backups and support matter more than price. Then compare the renewal price, the refund window and where the data centres are.'],
             ['Which host do you use for client sites?', 'It depends on the site. For business sites where speed and uptime matter we often recommend WP Engine, where we are an agency partner. For small sites a lower-cost host can be enough.'],
             ['Can you move my site to a new host?', 'Yes. We map every URL first, move the site, and test the redirects before switching, so pages that earn traffic keep their place in search.'],
         ],
@@ -84,10 +82,10 @@ function rl_reviews_picks($v) {
     if ($all === null) { $f = __DIR__ . '/reinforce-reviews-picks.json'; $all = is_readable($f) ? (json_decode(file_get_contents($f), true) ?: []) : []; }
     $set = isset($all[$v]) ? $all[$v] : ['picks' => [], 'intro' => [], 'from' => ''];
     /* our own page for each pick, where we have one; WP Engine's link is Jamil's saved partner link (D-190) */
-    $guides = ['WP Engine' => ['page', 'agency-partner-program-wp-engine-landing', 'Our WP Engine partner page'], 'Kinsta' => ['post', 'kinsta-wordpress-hosting', 'Full review'], 'Bluehost' => ['post', 'bluehost-wordpress-hosting', 'Full review'],
-        'DreamHost' => ['post', 'dreamhost-wordpress-hosting', 'Full review'], 'Namecheap' => ['post', 'namecheap-wordpress-hosting', 'Full review'], 'Flywheel' => ['post', 'flywheel-wordpress-hosting', 'Full review'],
-        'Nexcess' => ['post', 'nexcess-wordpress-hosting', 'Full review'], 'A2 Hosting' => ['post', 'a2-wordpress-hosting', 'Full review'], 'Hostinger' => ['post', 'hostinger-web-hosting', 'Full review'],
-        'Cloudways' => ['post', 'cloudways-hosting', 'Full review'], 'Writesonic' => ['post', 'writesonic-review', 'Full review'], 'Jasper' => ['post', 'jasper-review', 'Full review'], 'Copy AI' => ['post', 'copy-ai-review', 'Full review']];
+    $guides = ['WP Engine' => ['page', 'agency-partner-program-wp-engine-landing', 'Our WP Engine partner page'], 'Kinsta' => ['post', 'kinsta-wordpress-hosting', 'Setup guide'], 'Bluehost' => ['post', 'bluehost-wordpress-hosting', 'Setup guide'],
+        'DreamHost' => ['post', 'dreamhost-wordpress-hosting', 'Setup guide'], 'Namecheap' => ['post', 'namecheap-wordpress-hosting', 'Setup guide'], 'Flywheel' => ['post', 'flywheel-wordpress-hosting', 'Setup guide'],
+        'Nexcess' => ['post', 'nexcess-wordpress-hosting', 'Setup guide'], 'A2 Hosting' => ['post', 'a2-wordpress-hosting', 'Setup guide'], 'Hostinger' => ['post', 'hostinger-web-hosting', 'Setup guide'],
+        'Cloudways' => ['post', 'cloudways-hosting', 'Setup guide'], 'Writesonic' => ['post', 'writesonic-review', 'Full review'], 'Jasper' => ['post', 'jasper-review', 'Full review'], 'Copy AI' => ['post', 'copy-ai-review', 'Full review']];
     foreach ($set['picks'] as $i => &$p) {
         $p['anchor'] = sanitize_title($p['name']);
         $p['guide'] = ''; $p['guide_label'] = '';
@@ -104,7 +102,7 @@ function rl_reviews_pillar($v, $d, $u, $wpeCard) {
     $set = rl_reviews_picks($v); $picks = $set['picks']; $n = count($picks);
     $hub = $u('reviews');
     $T = $v === 'hosting'
-        ? ['kind' => 'WordPress hosting', 'h1' => 'The ' . (int) $n . ' best WordPress hosting services<span class="yr">.</span>', 'stand' => 'Reinforce Lab’s ' . (int) $n . ' picks for hosting a WordPress site, each with its entry price, renewal price, refund window, pros and cons, and our full review.', 'label' => 'Host']
+        ? ['kind' => 'WordPress hosting', 'h1' => 'The 15 best web hosting services<span class="yr">.</span>', 'stand' => 'Reinforce Lab’s 15 picks for hosting a WordPress or business website, each with what it is best for, its pros and cons, and our setup guide where we have one.', 'label' => 'Host']
         : ['kind' => 'SEO and AI tools', 'h1' => 'The 5 best AI content writing tools<span class="yr">.</span>', 'stand' => 'Reinforce Lab’s 5 picks for writing marketing copy and articles with AI, each with why we picked it and who it is for. Then every SEO and AI tool review on the site.', 'label' => 'Tool'];
     $ok = '<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg>';
     $x = '<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg>';
@@ -130,7 +128,7 @@ function rl_reviews_pillar($v, $d, $u, $wpeCard) {
 
 <section class="l-method" aria-label="About this list">
   <div class="wrap"><?php if ($names && function_exists('rl_aff_note')) echo rl_aff_note($names); ?>
-    <p class="disc">Prices come from each host’s own page, read on 20 November 2026, and can change. We did not run our own speed tests. Each pick links to our full review, which lists its sources.</p></div>
+    <p class="disc">No scores or prices yet: we will add them when we rewrite this list from our own testing. Each pick links to our full guide or review where we have one.</p></div>
 </section>
 
 <?php if ($n > 1) { ?>
@@ -198,8 +196,8 @@ function rl_reviews_pillar($v, $d, $u, $wpeCard) {
 </section>
 <section id="guides">
   <div class="wrap">
-    <div class="head"><span class="ey"><b>[</b>&nbsp;The guides&nbsp;<b>]</b></span><h2>Every hosting review on the site.</h2></div>
-    <ul class="rv-grid"><?php echo $wpeCard(); foreach ($d['hosting'] as $r) echo rl_reviews_card($r, 'Read the review'); ?></ul>
+    <div class="head"><span class="ey"><b>[</b>&nbsp;The guides&nbsp;<b>]</b></span><h2>Every hosting guide on the site.</h2></div>
+    <ul class="rv-grid"><?php echo $wpeCard(); foreach ($d['hosting'] as $r) echo rl_reviews_card($r, 'Read the guide'); ?></ul>
     <h3 class="grp">Comparison lists</h3>
     <ul class="rv-grid"><?php foreach ($d['hosting_lists'] as $r) echo rl_reviews_card($r, 'Read the list'); ?></ul>
   </div>
@@ -363,7 +361,7 @@ add_shortcode('reinforce_reviews', function ($atts) {
 <section>
   <div class="wrap">
     <div class="pill">
-      <a href="<?php echo $host; ?>"><span class="n"><?php echo (int) $nHost; ?> guides</span><h2>WordPress hosting</h2><p>Reviews of nine hosts, two comparison lists and our WP Engine partner page, with how to choose a host.</p><span class="go">See WordPress hosting &rarr;</span></a>
+      <a href="<?php echo $host; ?>"><span class="n"><?php echo (int) $nHost; ?> guides</span><h2>WordPress hosting</h2><p>Setup guides for nine hosts, two comparison lists and our WP Engine partner page, with how to choose a host.</p><span class="go">See WordPress hosting &rarr;</span></a>
       <a href="<?php echo $tools; ?>"><span class="n"><?php echo (int) $nTools; ?> reviews</span><h2>SEO and AI tools</h2><p>Reviews of SEO tools, AI writing tools, project management and the page builder we use, with how to choose.</p><span class="go">See SEO and AI tools &rarr;</span></a>
     </div>
   </div>
