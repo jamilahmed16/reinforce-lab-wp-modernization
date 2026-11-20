@@ -1,0 +1,240 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-15T10:00:00+00:00",
+  "dateModified": "2026-11-20T00:00:00+00:00",
+  "genre": "Best / List",
+  "abstract": "Black Friday 2026 is on 27 November. Bluehost ends 30 November, Kinsta 1 December, Cloudways 4 December and Hostinger 14 December. Compare the renewal price, not only the sale price.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Hostinger: Black Friday web hosting deals (read 20 Nov 2026)",
+    "url": "https://www.hostinger.com/black-friday-web-hosting-deals"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Bluehost: pricing and shared hosting (read 20 Nov 2026)",
+    "url": "https://www.bluehost.com/pricing"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "DreamHost: pricing (read 20 Nov 2026)",
+    "url": "https://www.dreamhost.com/pricing/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Namecheap: shared hosting and EasyWP pricing (read 20 Nov 2026)",
+    "url": "https://www.namecheap.com/wordpress/pricing/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Cloudways: home page and offer (read 20 Nov 2026)",
+    "url": "https://www.cloudways.com/en/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Kinsta: first month free (read 20 Nov 2026)",
+    "url": "https://kinsta.com/first-month-free/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "hosting.com: Black Friday (read via ScaleHostReview, updated 20 Nov 2026)",
+    "url": "https://scalehostreview.com/hosting-com-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "ScalaHosting: Black Friday web hosting 2026 (read 15 Nov 2026)",
+    "url": "https://www.scalahosting.com/blog/black-friday-web-hosting-2026/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "InMotion Hosting: deals (read 15 Nov 2026)",
+    "url": "https://www.inmotionhosting.com/deals"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "When is Black Friday 2026?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Black Friday is on 27 November 2026 and Cyber Monday is on 30 November. Most hosting sales start earlier and end between 30 November and 14 December."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Which host has the best Black Friday web hosting deal?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The lowest first-term prices are hosting.com Starter at $1.49 a month on 12 months and Hostinger Premium at $1.99 on 48 months. Compare the renewal price too: hosting.com renews at $13.99 and Hostinger at $10.99. Cloudways and Kinsta have no renewal increase."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "When do the Black Friday hosting deals end?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Bluehost ends on 30 November at 11:59 p.m. Eastern time. Kinsta, ScalaHosting and InMotion end on 1 December. Cloudways and Namecheap end on 4 December. Hostinger runs to 14 December. Check each host's page."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need a coupon code for Black Friday hosting deals?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Mostly no. Hostinger and hosting.com apply the deal in the order, and Bluehost's Buy More Save More applies at checkout. Cloudways needs code BFCM802 on a new account."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Are there Black Friday hosting deals for WordPress?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Bluehost, Hostinger, Namecheap (EasyWP), hosting.com, Kinsta and Cloudways all show offers that run WordPress. Check the renewal price, because it applies after the first term."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do Black Friday hosting deals apply to renewals?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. The deals apply to the first term only. Hostinger, Bluehost and hosting.com renew at the regular price after it. Cloudways and Kinsta have no first-term discount to lose at renewal."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can existing customers get Black Friday hosting deals?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It depends. Kinsta's first month free and Cloudways' code are for new customers. Hostinger says you can claim its deal when you upgrade from hPanel. Ask the host's chat if you already have an account."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Black Friday a good time to buy web hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It can be if the deal lowers a price you would pay anyway. Hosting prices move all year, and the renewal price matters more over time. Buy because the plan fits your site."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Which hosts have no Black Friday sale?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "BigScoots says it does not run Black Friday or Cyber Monday sales, and DigitalOcean showed no offer, only a $5 credit for new accounts. Nexcess showed no sale on its plan page."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is the cheapest web hosting deal over several years?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Over five years, DreamHost Launch on a 4-year term averages about $3.19 a month and Hostinger Premium about $3.79. Both need a long term. See our best web hosting services page for the five-year table."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is a 1-year or a 3-year Black Friday deal better?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "A longer term saves more over time. At Bluehost, a 36-month Starter term costs $143.64 against about $381.84 for a 12-month deal plus two renewals, our arithmetic. The long term needs full payment up front, so use the 30-day refund window to test it."
+    }
+   }
+  ]
+ },
+ {
+  "@type": "ItemList",
+  "@id": "https://reinforcelab.online/preview/#list",
+  "name": "Black Friday Web Hosting Deals 2026: Offers We Checked on Host Pages",
+  "numberOfItems": 9,
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+   {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Bluehost",
+    "url": "https://reinforcelab.online/preview/#pick-1"
+   },
+   {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Kinsta",
+    "url": "https://reinforcelab.online/preview/#pick-2"
+   },
+   {
+    "@type": "ListItem",
+    "position": 3,
+    "name": "Cloudways",
+    "url": "https://reinforcelab.online/preview/#pick-3"
+   },
+   {
+    "@type": "ListItem",
+    "position": 4,
+    "name": "Namecheap",
+    "url": "https://reinforcelab.online/preview/#pick-4"
+   },
+   {
+    "@type": "ListItem",
+    "position": 5,
+    "name": "Hostinger",
+    "url": "https://reinforcelab.online/preview/#pick-5"
+   },
+   {
+    "@type": "ListItem",
+    "position": 6,
+    "name": "hosting.com",
+    "url": "https://reinforcelab.online/preview/#pick-6"
+   },
+   {
+    "@type": "ListItem",
+    "position": 7,
+    "name": "DreamHost",
+    "url": "https://reinforcelab.online/preview/#pick-7"
+   },
+   {
+    "@type": "ListItem",
+    "position": 8,
+    "name": "ScalaHosting",
+    "url": "https://reinforcelab.online/preview/#pick-8"
+   },
+   {
+    "@type": "ListItem",
+    "position": 9,
+    "name": "InMotion",
+    "url": "https://reinforcelab.online/preview/#pick-9"
+   }
+  ]
+ }
+]
