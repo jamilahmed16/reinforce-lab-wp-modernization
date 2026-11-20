@@ -145,17 +145,20 @@ def cmd_parity(args):
 
 # ---------------------------------------------------------------- snapshot
 def cmd_snapshot(args):
-    rv, errs = php(r'''
+    # the export is fetched in pages: one big return value is dropped when it is too large (20 Nov 2026)
+    PAGES = r'''
 $keys = ["_yoast_wpseo_title","_yoast_wpseo_metadesc","_yoast_wpseo_schema_page_type","_yoast_wpseo_meta-robots-noindex","_yoast_wpseo_canonical"];
 $pages = [];
-foreach (get_posts(["post_type" => ["page","post","rl_project"], "post_status" => ["publish","draft","private","pending","future"], "numberposts" => -1, "orderby" => "ID", "order" => "ASC"]) as $p) {
+foreach (get_posts(["post_type" => ["page","post","rl_project"], "post_status" => ["publish","draft","private","pending","future"], "numberposts" => __LIM__, "offset" => __OFF__, "orderby" => "ID", "order" => "ASC"]) as $p) {
   $m = []; foreach ($keys as $k) { $v = get_post_meta($p->ID, $k, true); if ($v !== "") $m[$k] = $v; }
   $rl = []; foreach (get_post_meta($p->ID) as $k => $v) if (strpos($k, "rl_") === 0) $rl[$k] = maybe_unserialize($v[0]);
   $pages[] = ["id" => $p->ID, "type" => $p->post_type, "status" => $p->post_status, "title" => $p->post_title, "slug" => $p->post_name, "parent" => $p->post_parent,
     "path" => trim(str_replace(home_url("/"), "/", get_permalink($p)), ""), "template" => get_page_template_slug($p) ?: null,
     "content" => get_post_meta($p->ID, "_rl_carried", true) ? null : $p->post_content, "content_md5" => md5($p->post_content), "carried" => get_post_meta($p->ID, "_rl_carried", true) ?: null, "excerpt" => $p->post_excerpt, "date" => $p->post_date, "modified" => $p->post_modified, "seo" => $m, "rl_fields" => $rl];
 }
-$menus = [];
+return $pages;
+'''
+    REST = r'''$menus = [];
 foreach (wp_get_nav_menus() as $mn) { $items = [];
   foreach (wp_get_nav_menu_items($mn->term_id) as $i) $items[] = ["id" => $i->ID, "parent" => (int) $i->menu_item_parent, "order" => (int) $i->menu_order, "title" => $i->title, "type" => $i->type, "object" => $i->object, "object_id" => (int) $i->object_id, "url" => $i->url, "classes" => array_values(array_filter((array) $i->classes))];
   $menus[] = ["id" => $mn->term_id, "name" => $mn->name, "slug" => $mn->slug, "items" => $items]; }
@@ -166,8 +169,19 @@ $terms = []; foreach (["category","post_tag"] as $tx) foreach (get_terms(["taxon
 $plugins = get_option("active_plugins");
 $layouts = []; foreach (get_posts(["post_type" => "fl-theme-layout", "post_status" => "any", "numberposts" => -1]) as $l) $layouts[] = ["id" => $l->ID, "title" => $l->post_title, "status" => $l->post_status, "type" => get_post_meta($l->ID, "_fl_theme_layout_type", true), "locations" => get_post_meta($l->ID, "_fl_theme_builder_locations", true)];
 $rlopts = []; global $wpdb; foreach ($wpdb->get_col("SELECT option_name FROM {$wpdb->options} WHERE option_name LIKE 'rl\\_%'") as $k) $rlopts[$k] = get_option($k);
-return ["pages" => $pages, "menus" => $menus, "menu_locations" => $locations, "options" => $opts, "yoast" => $yoast, "terms" => $terms, "active_plugins" => $plugins, "themer_layouts" => $layouts, "rl_options" => $rlopts];
-''')
+return ["menus" => $menus, "menu_locations" => $locations, "options" => $opts, "yoast" => $yoast, "terms" => $terms, "active_plugins" => $plugins, "themer_layouts" => $layouts, "rl_options" => $rlopts];
+'''
+    pages, errs = [], []
+    for off in range(0, 2000, 25):
+        part, e = php(PAGES.replace('__LIM__', '25').replace('__OFF__', str(off)))
+        errs += e or []
+        if not isinstance(part, list):
+            raise SystemExit('snapshot: page batch at offset %d returned no data (errors: %s)' % (off, errs))
+        pages += part
+        if len(part) < 25: break
+    rv, e2 = php(REST)
+    errs += e2 or []
+    if isinstance(rv, dict): rv['pages'] = pages
     secret = re.compile(r'(key|token|secret|pass|licen[cs]e|oauth|auth|webhook)', re.I)
     def redact(o, name=''):
         if isinstance(o, dict):
