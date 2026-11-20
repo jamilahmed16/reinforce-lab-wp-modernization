@@ -1,0 +1,188 @@
+[
+ {
+  "@type": [
+   "Article",
+   "BlogPosting"
+  ],
+  "@id": "x#article",
+  "datePublished": "2026-09-15T10:00:00+00:00",
+  "dateModified": "2026-11-20T00:00:00+00:00",
+  "genre": "Review",
+  "abstract": "Cloudways is managed cloud hosting with pay as you go prices from $11 a month and no renewal jump. Backups, email and a CDN cost extra. A 5-day free trial needs no card.",
+  "citation": [
+   {
+    "@type": "CreativeWork",
+    "name": "Cloudways: pricing (read 20 Nov 2026)",
+    "url": "https://www.cloudways.com/en/pricing.php"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Cloudways: home page, trial and offer (read 20 Nov 2026)",
+    "url": "https://www.cloudways.com/en/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "TechRadar: Cloudways review (updated 20 Oct 2026)",
+    "url": "https://www.techradar.com/reviews/cloudways"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Expertah: Cloudways review (10 Nov 2026)",
+    "url": "https://expertah.com/cloudways-review/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Few Servers: the $11 plan, measured (5 Oct 2026)",
+    "url": "https://www.fewservers.com/posts/cloudways-review-we-timed-the-11-server/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "Experte: Cloudways review",
+    "url": "https://www.experte.com/wordpress-hosting/cloudways"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "HostingStep: Cloudways monitoring (Oct 2025 to May 2026)",
+    "url": "https://hostingstep.com/"
+   },
+   {
+    "@type": "CreativeWork",
+    "name": "web.dev: Largest Contentful Paint (2.5 seconds or less is good)",
+    "url": "https://web.dev/articles/lcp"
+   }
+  ]
+ },
+ {
+  "@type": "Person",
+  "@id": "https://reinforcelab.online/#/schema/person/ef1eb1badd0929b35150bfb4e863f931",
+  "name": "Jamil Ahmed",
+  "jobTitle": "Founder and CEO",
+  "description": "Founder and CEO of Reinforce Lab. Pharmacist, SEO and AI search consultant, and Semrush Ambassador.",
+  "knowsAbout": [
+   "Search engine optimization",
+   "AI search optimization",
+   "AI automation",
+   "Pharmacy"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/ahmedjamil16/"
+  ],
+  "worksFor": {
+   "@id": "https://reinforcelab.online/#organization"
+  },
+  "url": "https://reinforcelab.online/about-us/"
+ },
+ {
+  "@type": "FAQPage",
+  "@id": "https://reinforcelab.online/preview/#faq",
+  "isPartOf": {
+   "@id": "https://reinforcelab.online/preview/"
+  },
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is Cloudways hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Cloudways is managed cloud hosting. It sets up servers on providers such as DigitalOcean, Vultr, Linode, AWS and Google Cloud, tunes them for WordPress and looks after them. You manage the site, and Cloudways manages the server."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Cloudways shared hosting?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Cloudways gives your site its own cloud server resources and bills by server size. Shared hosting puts many sites on one server for a fixed price."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much does Cloudways cost?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Flexible starts at $11 a month for a 1 GB DigitalOcean server, with $14, $28, $54 and $99 Premium sizes above it. Autonomous is $99, $199 or $399 a month. Billing is by the hour, with no contract."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Cloudways have a free trial?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Cloudways lists a 5-day free trial on Flexible and a 3-day trial on Autonomous, with no credit card. TechRadar describes a 3-day trial, so check the length when you sign up."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Cloudways have a money-back guarantee?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "TechRadar says there is no conventional money-back guarantee, and the free trial is the safest way to inspect the platform. Check Cloudways' terms before you pay."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is the Cloudways Black Friday offer?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Create a new account with code BFCM802 by 4 December 2026 for 80% off the first 2 months, up to $200 off a month. Over a first year that saves about 13%."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Cloudways good for WordPress?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes for growing sites, stores and agencies. It has staging, cloning, backups, Object Cache Pro on 4 GB servers and above, and a server firewall. There is no cPanel and no bundled domain or email."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What server does Cloudways recommend?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "TechRadar says Cloudways suggests 2 GB or more for a production or low-traffic site. The 1 GB server is a starting point, best tested on the free trial."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What are the hidden costs of Cloudways?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Off-site backups cost $0.033 per GB a month, business email $1.50 per mailbox, Cloudflare Enterprise CDN from $4.99 per domain and malware protection from $4 per app. Advanced support is $100 a month."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Cloudways increase prices at renewal?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Cloudways bills as you go with no contract, so there is no first-term discount that expires. The price you see is the price you keep paying, apart from add-ons."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Cloudways fast?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes in independent tests. TechRadar measured a 903 ms Largest Contentful Paint and an A grade on GTmetrix. Experte measured a 0.266 s first response and 100% uptime. These used lightweight test sites."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does Cloudways include a domain or email?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Cloudways does not sell domains. Email is a paid add-on through Rackspace at $1.50 per mailbox a month."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is Cloudways better than Kinsta for a small WooCommerce store?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It depends on size and extras. Expertah priced a store on a Medium server with a CDN and malware protection at about $63 a month. Kinsta's entry plan was $35 a month after its first-month offer. Compare them at your own traffic."
+    }
+   }
+  ]
+ }
+]
