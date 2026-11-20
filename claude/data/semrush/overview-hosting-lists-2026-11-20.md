@@ -95,3 +95,26 @@ Variations (168, 3.1K total): best cheap web hosting 720 (66), best and cheap we
 1. **The "best web hosting services" results are weak for a term Semrush calls hard (KD 73):** positions 4 to 6 are pages with 0 or 1 referring domains (a small site, a Quora thread, a Medium post), and positions 8 to 10 are not hosting pages at all. Even position 1 has only 32 referring domains. This looks like a winnable term for a well-built list, even though Semrush says 157 domains are needed. Post 378 targets it.
 2. The wording "best web hosting services" mixes searches for web hosting with searches for other services, which explains the off-topic results. A page that is clearly about web hosting, with the questions answered (what is the best web hosting service, how to choose), fits.
 3. "best cheap web hosting" is smaller (720) and dominated by a Reddit thread; cover it as a section of the lists, not a page.
+
+---
+# Fourth set of screenshots, 20 Nov 2026 (read from images)
+
+| Keyword | Volume (US) | Global | KD | CPC | Intent | Referring domains needed |
+|---|---|---|---|---|---|---|
+| **black friday web hosting deals** | 590 | 2.1K | **50%** | $0 | Commercial | **52** |
+| best web hosting for ecommerce | 320 | 920 | 59% | $10.89 | n/a | 94 |
+| best cloud hosting services | 320 | 1.1K | 61% | $9.82 | Commercial | 95 |
+| what is cloud hosting | 590 | 1.8K | 72% | $2.76 | Informational | 98 |
+| cheap cloud hosting | 720 | 2.7K | 58% | $6.69 | Informational | 110 |
+
+## Variations, questions and the top results
+- **black friday web hosting deals:** variations (128, 1.2K total): black friday web hosting deals 2024 110 (KD 8), web hosting black friday deals 110 (50), best black friday web hosting deals 50 (51), black friday deals web hosting 50 (50), cyber monday web hosting deals. Questions: none. Top 3: hostinger.com/black-friday-web-hosting-deals (AS 34, 124 domains, 1.5K backlinks, 190 visits, 58 keywords); bloggingx.com (AS 12, 176 domains, 209 backlinks); techradar.com/pro/website-building/best-black-friday-web-hosting-deals (AS 17, 16 domains, 45 backlinks). The trend chart shows a sharp seasonal peak.
+- **best web hosting for ecommerce:** variations (43, 900 total): best web hosting service for ecommerce 260 (59), best web hosting for small business ecommerce 110 (48), best web host for ecommerce 90 (51). Questions: none. Top 2: a Reddit thread (AS 0, 2 domains, 233 visits); cnet.com best-web-hosting-for-e-commerce (AS 18, 23 domains, 617 visits, 141 keywords).
+- **best cloud hosting services:** variations (106, 1.0K): best cloud web hosting services 170 (64), best cloud hosting service 110 (54), best free cloud hosting services 40 (49). Questions (5, 40 total). Top 3: hostingadvice.com/best/cloud-hosting (AS 10, 168 domains, 1.1K visits, 219 keywords); a Reddit thread (AS 22, 3 domains); hostinger.com/cloud-hosting (AS 52, 539 domains).
+- **what is cloud hosting:** variations (211, 2.3K): what is cloud hosting software 390 (18), what is cloud based web hosting 140 (66), what is cloud hosting services 140 (74), what is a cloud hosting company 110 (54). Questions (204, 2.3K total). Top 3: aws.amazon.com (AS 41), cloud.google.com (AS 46), a Reddit explain-like-I'm-five thread (AS 0, 0 domains, 78 visits).
+- **cheap cloud hosting:** variations (155, 1.6K): cheap cloud web hosting 170 (63), cheap cloud hosting providers 110 (56), cloud hosting cheap 90 (55), cheap cloud vps hosting 70 (57). Questions (7, no volume). Top 3: a Reddit thread (AS 23, 7 domains, 368 visits); hetzner.com/cloud (AS 63, 2.6K domains, 5.9K visits); hostingadvice.com/how-to/cloud-hosting-costs (AS 10, 172 domains, 122 visits).
+
+## Readings (INFERENCE)
+1. **Black Friday:** 52 referring domains needed is the lowest of any term checked, and the top 3 are Hostinger's own page, a small AS 12 site and TechRadar with only 16 domains. A well-sourced deals page can compete, but only inside the sale window (ends about 30 Nov to 2 Dec). A 2024 variation has difficulty 8, so a dated page for 2026 may also catch the "2026" version of the search.
+2. **Ecommerce hosting:** the top results are a Reddit thread (AS 0) and CNET (AS 18, 23 domains). A short, sourced section in the lists, using Liquid Web and the WooCommerce notes, fits better than a page.
+3. **Post 368's terms:** "best cloud hosting services" (320, KD 61) and "cheap cloud hosting" (720, KD 58) both have a Reddit thread and small sites near the top. They belong in 368 as sections and headings; "what is cloud hosting" is led by AWS and Google, so keep it as a short definition section, and use the low-difficulty variation "what is cloud hosting software" (390, KD 18) only if it fits the topic.
