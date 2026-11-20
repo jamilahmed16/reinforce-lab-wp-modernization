@@ -73,3 +73,41 @@
 3. **"flywheel hosting" (1,000, KD 43) is the second-easiest brand term** after Hostinger. Part of its audience is looking for Local by Flywheel (a free local WordPress tool). A short, clear line in our Flywheel post separating the two may help match intent. This is a RECOMMENDATION, and the post is an existing URL, so it needs Jamil's approval.
 4. **"dreamhost nonprofit hosting" (170, KD 25)** is a small, easy variation that a DreamHost section can cover.
 5. **Namecheap** has the hardest head terms of the nine hosts so far (KD 78 to 79). Our Namecheap post should aim at "wordpress hosting" and "is namecheap hosting good", not "namecheap hosting".
+
+---
+# Third batch of brand-term screenshots: review and pricing, 20 Nov 2026 (five screenshots, VERIFIED from Jamil's images)
+
+| Keyword | US vol | Global | KD | Domains needed | CPC | Intent |
+|---|---|---|---|---|---|---|
+| cloudways review | 590 | 1.7K (IN 140, UK 110) | 52% | 86 | $76.27 | Commercial |
+| cloudways pricing | 590 | 2.7K (IN 210, UK 210) | 56% | 71 | $20.74 | Navigational |
+| kinsta review | 720 | 4.7K (NL 1.0K, AU 880, BE 720) | 50% | 110 | $14.02 | Commercial |
+| **bluehost pricing** | 720 | 2.9K | **14% (very easy)** | none | $171.80 | Transactional, navigational |
+| hostinger review | 1.0K | 4.3K (IN 590, CA 260) | 69% | 150 | $5.11 | n/a |
+
+## cloudways review
+- Variations (455, 4.7K): cloudways hosting review catswhocode 1.0K (27), cloudways review 590 (52), cloudways review catswhocode 320 (38), cloudways hosting review 170 (48), cloudways reviews 170 (50). "catswhocode" is the name of a review site people add to the search; ignore those rows. Questions: 1 (a review of cloudways shared hosting, 0).
+- SERP: AI Overview; 1 a Reddit r/webdevelopment thread "cloudways review good or bad" (AS 47, 7 referring domains, 17 backlinks, 271 traffic, 43 keywords); a discussions block; 2 catswhocode.com/hosting/reviews/cloudways (AS 8, 65 domains, 227 backlinks).
+
+## cloudways pricing
+- Variations (160, 1.0K): cloudways pricing 590 (56), cloudways vs kinsta pricing for a small woocommerce store 40 (**15**), cloudways pricing promo code for new account 30, cloudways autonomous pricing 20, cloudways backup pricing 20. Questions: 1 (how does cloudways pricing work, 0).
+- SERP (visible rows): 1 hostinghandoff.pages.dev/cloudways-pricing (AS 0, 0 domains, 146 traffic, 5 keywords); AI Overview; 2 a casadeempeno.us subdomain page (AS 0, 0 domains); 3 another casadeempeno.us subdomain page (AS 0, 20 traffic, 1 keyword). The top rows are pages with no authority at all.
+
+## kinsta review
+- Variations (240, 3.8K): kinsta review catswhocode 880 (55), kinsta review 720 (50), kinsta reviews 320 (60), kinsta reviews catswhocode 320 (56), kinsta hosting review 210 (49). Related clusters: kinsta vs shopify, wordpress hosting sites reviews. No questions data.
+- SERP: AI Overview; 1 mattreport.com/kinsta (AS 5, 162 domains, 166 backlinks, 157 traffic, 25 keywords); 2 a Reddit r/webhosting thread "thinking about moving to kinsta, whats the" (AS 37, 5 domains, 7 backlinks); video carousel.
+
+## bluehost pricing
+- Variations (200, 1.7K): bluehost pricing 720 (**14**), bluehost pricing plans 260 (61), bluehost domain pricing 40, bluehost shared hosting pricing 30, bluehost vps pricing 30. Questions (3, 0 volume): how does bluehost pricing charge, is bluehost or hostgator pricing, what is bluehost pricing. One ad shown.
+- SERP: AI Overview and a discussions block; 1 thecmo.com/tools/bluehost-review (AS 0, 0 domains, 25 traffic, 3 keywords); 2 capterra.com/p/229168/Bluehost (AS 14, 10 domains, 22 traffic, 4 keywords). Both are review pages, not Bluehost's own pricing page.
+
+## hostinger review
+- Variations (607, 6.1K): hostinger reviews 1.3K (66), hostinger review 1.0K (69), hostinger review 2026 480 (60), hostinger website builder review 480 (25), hostinger horizons review 210 (26). Questions (3, 20 total): how to add google reviews to hostinger website 20, is hostinger good for hosting reviews, is hostinger vps worth it reviews 2025 2026 (0). Related: is hostinger good, hostinger hosting review, is hostinger good for minecraft, rating hosting.
+- SERP: AI Overview; 1 a Reddit r/Hostinger thread "hostinger reviews or experience from real users" (AS 23, 2 domains, 12 backlinks, 286 traffic, 77 keywords); 2 trustpilot.com/review/hostinger.com (AS 83, 328 domains, 275.9K backlinks); video carousel.
+
+## Readings (INFERENCE)
+1. **"bluehost pricing" is an easy opening.** 720 a month at KD 14 (very easy), and the two top rows visible are third-party review pages with 0 and 10 referring domains. This corrects my earlier reading that host-owned pricing pages take every pricing term: Kinsta and Hostinger do own theirs, but Bluehost and Cloudways do not in the rows visible here. A clear Bluehost pricing section (plan prices, the renewal jump, what the first-term price needs) in the existing Bluehost post is the natural fit, and the high CPC ($171.80) shows the term has commercial value.
+2. **"cloudways pricing" (590, KD 56) has a weak top.** Visible rows are AS 0 pages (a pages.dev site and spam-looking subdomains). Semrush still says 71 referring domains, but the page-one competition looks poor. A reliable, sourced pricing section can compete. "cloudways vs kinsta pricing for a small woocommerce store" (40, KD 15) appears in both the Cloudways and Kinsta data and is a ready-made comparison section.
+3. **Review terms are mid-size and Reddit-led.** Reddit threads with 2 to 7 referring domains hold position 1 for "cloudways review" (590), "hostinger review" (1,000) and "kinsta review" (720, position 2). Trustpilot (AS 83) and thin review sites follow. A first-hand, sourced review page can fit. Hostinger is the only host we can honestly write about first-hand (D-321); the other eight must be marked as research-based.
+4. **Hostinger website builder review (480, KD 25) and Horizons review (210, KD 26)** are easy but are different Hostinger products. Cover them only if we have used them first-hand; I do not know that yet, so it is a question for Jamil.
+5. **Combined review demand:** "hostinger reviews" 1,300 plus "hostinger review" 1,000 plus "hostinger review 2026" 480 are three wordings of one need, so a single page serves all three.
