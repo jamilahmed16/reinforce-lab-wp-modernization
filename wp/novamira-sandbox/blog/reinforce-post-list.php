@@ -496,8 +496,8 @@ add_action('wp_head', function () {
 .rl-list .pc li:first-child{border-top:0}
 .rl-list .pros .ic{color:var(--ok);margin-top:4px}
 .rl-list .cons .ic{color:var(--red-3);margin-top:4px}
-.rl-list .spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:20px 0 0}
-.rl-list .spec div{background:var(--bg-2);padding:12px 14px}
+.rl-list .spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line);margin:20px 0 0}
+.rl-list .spec div{background:var(--bg-2);padding:12px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
 .rl-list .spec dt{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
 .rl-list .spec dd{margin:4px 0 0;color:var(--ink);font-size:15px}
 .rl-list .skip{margin:16px 0 0;font-size:14.5px;border-left:2px solid var(--line-2);padding-left:12px}
