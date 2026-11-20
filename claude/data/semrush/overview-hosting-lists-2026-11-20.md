@@ -64,3 +64,34 @@ Implication: it wins on its own long test history and an offer table. We cannot 
 2. The "providers" and "managed" variants (cloud hosting providers 1.3K, managed cloud hosting 1.9K, best cloud hosting companies 390) can be covered in 368 as sections and headings.
 3. **cheapest web hosting** and **best web hosting for small business** (507 domains needed) are not for us now.
 4. For the WordPress list (page 69), study hostingstep's page: the winners there are the ones showing measured data. Our angle must be sourced synthesis, checked prices and first-hand Hostinger notes.
+
+---
+# Third set of screenshots, 20 Nov 2026 (read from images)
+
+| Keyword | Volume (US) | Global | KD | CPC | Intent | Referring domains needed |
+|---|---|---|---|---|---|---|
+| **best web hosting services** (post 378's keyword) | 1.0K | 4.0K | 73% | $10.33 | Commercial | 157 |
+| best cheap web hosting | 720 | 2.7K | 66% | $11.51 | Commercial | 139 |
+
+## best web hosting services: variations, questions and the full top 10
+- Variations (623, 9.0K total): best web hosting services for small business 720 (69), best wordpress web hosting service 720 (67), best and cheapest web hosting service 260 (69). Questions (38, 520 total): what is the best web hosting service 210 (78), what are the best web hosting services 70 (71), best web hosting service for small business 40 (53), which is the best web hosting service 30, how to choose the best web hosting service 20.
+- Top 10 (Page AS, referring domains, backlinks, search traffic, URL keywords):
+  1. hostingadvice.com/how-to/best-web-hosting (13, 32, 447, 153, 104)
+  2. a Quora thread (21, 23, 40, 1.1K, 443)
+  3. techradar.com/web-hosting/best-managed-web-hosting (21, 208, 6.3K, 211, 122)
+  4. sitesaga.com/best-web-hosting-services (0, 0, 0, 23, 468)
+  5. a Quora thread (0, 1, 3, 94, 178)
+  6. a Medium post, top 10 cheap web hosting services (0, 0, 0, 126, 334)
+  7. hostdean.com/web-hosting (8, 46, 70, 146, 513)
+  8. owasp.org web security testing guide (17, 226, 873, 3.8K, 18.1K), **not about hosting**
+  9. ca.gov, **not about hosting**
+  10. dunkindonuts.com, **not about hosting**
+  The SERP also shows AI Overview, discussions and forums, and a video carousel.
+
+## best cheap web hosting
+Variations (168, 3.1K total): best cheap web hosting 720 (66), best and cheap web hosting 110 (67); several terms carry the word "catswhocode", which is a brand-like add-on, ignore. Questions (2, 20 total). Top: 1 a Reddit thread (AS 77, 7 domains, 7.2K traffic), 2 whoishostingthis.com/best-web-hosting/cheap-web-hosting (AS 8, 174 domains, 1.3K traffic).
+
+## Readings (INFERENCE)
+1. **The "best web hosting services" results are weak for a term Semrush calls hard (KD 73):** positions 4 to 6 are pages with 0 or 1 referring domains (a small site, a Quora thread, a Medium post), and positions 8 to 10 are not hosting pages at all. Even position 1 has only 32 referring domains. This looks like a winnable term for a well-built list, even though Semrush says 157 domains are needed. Post 378 targets it.
+2. The wording "best web hosting services" mixes searches for web hosting with searches for other services, which explains the off-topic results. A page that is clearly about web hosting, with the questions answered (what is the best web hosting service, how to choose), fits.
+3. "best cheap web hosting" is smaller (720) and dominated by a Reddit thread; cover it as a section of the lists, not a page.
